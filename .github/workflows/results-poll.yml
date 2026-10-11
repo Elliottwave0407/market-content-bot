@@ -1,7 +1,7 @@
 name: results-poll
 on:
   schedule:
-    - cron: "*/15 3-18 * * *"
+    - cron: "*/15 3-17 * * 1-6"
   workflow_dispatch:
     inputs:
       send:

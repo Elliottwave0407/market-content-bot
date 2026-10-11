@@ -7,9 +7,9 @@ import results_fetcher as rf
 import card
 
 SEND = os.environ.get("POLL_SEND", "0") == "1"
-MAX_POSTS = int(os.environ.get("POLL_MAX", "8"))
+MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
 DAYS_BACK = int(os.environ.get("POLL_DAYS", "1"))
-MIN_CR = float(os.environ.get("POLL_MIN_CR", "250"))
+MIN_CR = float(os.environ.get("POLL_MIN_CR", "0"))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 STATE = "state/seen.json"
 OUTDIR = "drafts/poll"
@@ -69,6 +69,13 @@ def fetch_filings(bse):
     out.sort(key=lambda r: r.get("NEWS_DT") or "")
     return out
 
+def stub(name, code, qlabel_, reason, lk, key):
+    os.makedirs(OUTDIR, exist_ok=True)
+    png = os.path.join(OUTDIR, f"stub_{code}_{qlabel_ or 'unknown'}.png")
+    card.render_stub(name, f"BSE {code}", fy_label(qlabel_) if qlabel_ else "Result", reason, png)
+    cap = f"{name} {fy_label(qlabel_) if qlabel_ else ''} results filed. Numbers not shown ({reason}).\nFiling: {lk}\n\n{DISC}"
+    return ("photo", cap, png, key)
+
 def build(bse, rec):
     """Return (kind, text, png_path or None, key) or None to skip silently."""
     code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
@@ -78,24 +85,24 @@ def build(bse, rec):
     res = rf.results_for_filing(bse, code, name, headline, filed)
     st = res["status"]
     if st == "quarter_unverified":
-        return ("line", f"{name} (BSE {code}): result-related filing, quarter could not be identified from the headline, so no numbers shown.  | {lk}", None, f"{code}|unverified|{rec['NEWSID']}")
+        return stub(name, code, None, "quarter not identified from the filing headline", lk, f"{code}|unverified|{rec['NEWSID']}")
     if st == "not_available":
-        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but structured numbers are not available from BSE for this format (e.g. insurer/bank/NBFC format). No numbers shown.  | {lk}", None, f"{code}|{res['quarter']}|na")
+        return stub(name, code, res["quarter"], "structured data not available from BSE for this format", lk, f"{code}|{res['quarter']}|na")
     if st == "ok_limited":
         s = res["snapshot"]
-        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: limited data only (standalone snapshot, QoQ). Open the filing for full numbers.  | {lk}", None, f"{code}|{res['quarter']}|limited")
+        return stub(name, code, res["quarter"], "only limited data available from BSE for this format", lk, f"{code}|{res['quarter']}|limited")
     basis = "consolidated" if res["consolidated"] else "standalone"
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
     if not quarters[0]["m"] or not quarters[1]["m"]:
-        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but the comparison data is incomplete. No numbers shown.  | {lk}", None, f"{code}|{res['quarter']}|incomplete")
+        return stub(name, code, res["quarter"], "comparison data incomplete", lk, f"{code}|{res['quarter']}|incomplete")
     for qq in quarters:
         if qq["m"] is None:
             qq["m"] = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
     cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
     r0, r1 = cur.get("revenue"), prev.get("revenue")
     if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
-        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: sales changed more than 50x versus the previous quarter, so the numbers look inconsistent. Not shown - please check the filing.  | {lk}", None, f"{code}|{res['quarter']}|anomaly")
+        return stub(name, code, res["quarter"], "figures look inconsistent with the previous quarter - please verify", lk, f"{code}|{res['quarter']}|anomaly")
     sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
     sd = 0 if sales and sales >= 100 else 1
     pd_ = 0 if pat and pat >= 100 else 1
@@ -142,7 +149,7 @@ def main():
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):
                     continue
-                time.sleep(1.5)
+                time.sleep(3.2)
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
             posted += 1
