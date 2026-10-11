@@ -22,12 +22,13 @@ jobs:
       - name: Poll BSE result filings
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POLL_SEND: ${{ github.event.inputs.send || '0' }}
         run: python scripts/results_poller.py
       - name: Save state and previews
         run: |
           git config user.name "market-content-bot"
           git config user.email "bot@users.noreply.github.com"
-          mkdir -p state drafts/poll
-          git add state drafts/poll
+          mkdir -p state
+          git add state
           git diff --cached --quiet || (git commit -m "Poller state and previews" && git pull --rebase -q origin main && git push -q origin main)

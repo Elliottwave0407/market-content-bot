@@ -119,7 +119,7 @@ def build(bse, rec):
 def main():
     os.makedirs(OUTDIR, exist_ok=True)
     st = load_state()
-    chat = json.load(open("config/telegram.json"))["drafts_chat_id"]
+    chat = os.environ["TELEGRAM_CHAT_ID"].strip()
     posted = 0
     with BSE(download_folder="./") as bse:
         filings = fetch_filings(bse)

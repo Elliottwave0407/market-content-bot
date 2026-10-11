@@ -29,7 +29,7 @@ def main():
     if not TOKEN:
         p("TELEGRAM_BOT_TOKEN is not set")
         return
-    chat_id = json.load(open("config/telegram.json"))["drafts_chat_id"]
+    chat_id = os.environ["TELEGRAM_CHAT_ID"].strip()
     messages = json.load(open(sys.argv[1]))
     sent = 0
     for i, text in enumerate(messages, 1):
