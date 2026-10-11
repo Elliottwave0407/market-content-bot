@@ -9,6 +9,7 @@ import card
 SEND = os.environ.get("POLL_SEND", "0") == "1"
 MAX_POSTS = int(os.environ.get("POLL_MAX", "8"))
 DAYS_BACK = int(os.environ.get("POLL_DAYS", "1"))
+MIN_CR = float(os.environ.get("POLL_MIN_CR", "250"))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 STATE = "state/seen.json"
 OUTDIR = "drafts/poll"
@@ -90,13 +91,20 @@ def build(bse, rec):
     for qq in quarters:
         if qq["m"] is None:
             qq["m"] = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
-    cur, yago = quarters[0]["m"], quarters[4]["m"]
+    cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
+    r0, r1 = cur.get("revenue"), prev.get("revenue")
+    if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
+        return ("text", f"{name} (BSE {code}) {fy_label(res['quarter'])}: sales changed more than 50x versus the previous quarter, so the numbers look inconsistent. Not shown - please check the filing.\nFiling: {lk}", None, f"{code}|{res['quarter']}|anomaly")
+    sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
+    sd = 0 if sales and sales >= 100 else 1
+    pd_ = 0 if pat and pat >= 100 else 1
+    sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
+    if sales is None or sales < MIN_CR:
+        return ("line", f"{name} {fy_label(res['quarter'])} {basis[:4]}: Sales {card.fmt_num(sales, sd)} Cr ({sy} YoY), PAT {card.fmt_num(pat, pd_)} Cr ({py} YoY) | {lk}", None, f"{code}|{res['quarter']}|{basis}")
     png = os.path.join(OUTDIR, f"{code}_{res['quarter']}_{basis}.png")
     card.render(name, f"BSE {code}", basis, quarters, png)
-    sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
-           f"Sales Rs {card.fmt_num(sales, 0 if sales and sales >= 100 else 1)} Cr ({card.fmt_pct(card.pct(cur['revenue'], yago['revenue']))} YoY), "
-           f"net profit Rs {card.fmt_num(pat, 0 if pat and pat >= 100 else 1)} Cr ({card.fmt_pct(card.pct(cur['pat'], yago['pat']))} YoY).\n"
+           f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
            f"Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
@@ -109,20 +117,24 @@ def main():
         filings = fetch_filings(bse)
         new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
+        lines = []
         for rec in new:
-            if posted >= MAX_POSTS:
-                break
             try:
                 out = build(bse, rec)
             except Exception as e:
                 p(f"ERROR {rec.get('SLONGNAME')}: {redact(repr(e))[:200]}")
                 continue
             kind, text, png, key = out
+            if kind != "line" and posted >= MAX_POSTS:
+                continue
             if key in st["posted"]:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
                 continue
             p(f"[{kind}] {key} :: {text[:160]!r}")
+            if kind == "line":
+                lines.append((rec["NEWSID"], key, text))
+                continue
             if SEND:
                 r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024]}, files={"photo": open(png, "rb")}) if kind == "photo" \
                     else tg("sendMessage", json={"chat_id": chat, "text": text[:4000], "disable_web_page_preview": True})
@@ -133,6 +145,19 @@ def main():
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
             posted += 1
+        # one digest message for smaller companies
+        lines = lines[:40]
+        if lines:
+            body = f"Smaller results (sales below Rs {MIN_CR:.0f} Cr), consolidated if available, else standalone. Filed numbers; verify with filing.\n\n" + "\n".join(l[2] for l in lines)
+            p(f"[digest] {len(lines)} lines")
+            ok = True
+            if SEND:
+                r = tg("sendMessage", json={"chat_id": chat, "text": body[:4000], "disable_web_page_preview": True})
+                ok = r.get("ok")
+                p(f"  digest sent ok={ok} {redact(r.get('description', ''))}")
+            if ok:
+                for nid, key, _ in lines:
+                    st["ids"].append(nid); st["posted"].append(key)
     if SEND:
         save_state(st)
     p(f"done: {posted} {'sent' if SEND else 'would send'}")
