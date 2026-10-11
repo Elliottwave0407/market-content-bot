@@ -25,6 +25,7 @@ def load_state():
         return {"ids": [], "posted": []}
 
 def save_state(st):
+    os.makedirs("state", exist_ok=True)
     st["ids"] = st["ids"][-5000:]
     st["posted"] = st["posted"][-5000:]
     json.dump(st, open(STATE, "w"), indent=0)
