@@ -1,34 +1,29 @@
 import sys
-import time
 from bse import BSE
 from ci_out import p, publish
 
-def call(bse, code, name, q):
-    r = bse.session.get(f"{bse.api_url}/Corp_BSEDnBResults_SEBI_Consolidated_Res_ng/w", params={"type1": "c", "strtype": f"{q:.2f}", "strscripcd": code, "strscripname": name, "strresultType": "", "action": "show"}, timeout=30)
-    try:
-        d = r.json()
-    except Exception:
-        return f"status {r.status_code} non-json len {len(r.text)}"
-    rows = [x.get("Description") for x in d] if isinstance(d, list) else []
-    return f"status {r.status_code} len {len(r.text)} rows {len(rows)} has_eps {'Basic EPS for continuing operation' in rows} last={rows[-1] if rows else None}"
+def rows(bse, code, name, q, extra=None):
+    prm = {"type1": "c", "strtype": f"{q:.2f}", "strscripcd": code, "strscripname": name, "strresultType": "", "action": "show"}
+    if extra:
+        prm.update(extra)
+    r = bse.session.get(f"{bse.api_url}/Corp_BSEDnBResults_SEBI_Consolidated_Res_ng/w", params=prm, timeout=30)
+    d = r.json()
+    return [(" ".join(str(x.get("Description")).split()), x.get("Amount"), x.get("RowType")) for x in d]
 
 def main():
     with BSE(download_folder="./") as bse:
-        p("-- same session, HUL q130 x6 no sleep")
-        for i in range(6):
-            p(i, call(bse, "500696", "HUL", 130))
-        p("-- alternate companies")
-        for code, name in [("500820", "ASIANPAINT"), ("532540", "TCS"), ("500696", "HUL"), ("500325", "RELIANCE"), ("500696", "HUL")]:
-            p(name, call(bse, code, name, 130))
-        p("-- after 8s sleep")
-        time.sleep(8)
-        p("HUL", call(bse, "500696", "HUL", 130))
-    with BSE(download_folder="./") as bse2:
-        p("-- fresh session")
-        p("HUL", call(bse2, "500696", "HUL", 130))
-        p("ASIANPAINT", call(bse2, "500820", "ASIANPAINT", 130))
-        p("-- fresh session, strscripname blank")
-        p("HUL blank name", call(bse2, "500696", "", 130))
+        short = rows(bse, "500696", "HUL", 130)
+        full = rows(bse, "500820", "ASIANPAINT", 130)
+        p("HUL rows", len(short), "ASIAN rows", len(full))
+        sd = {x[0] for x in short}
+        p("In ASIAN-style full list but NOT in HUL response:", [x[0] for x in full if x[0] not in sd])
+        p("HUL response descriptions with RowType:", [(a, c) for a, b, c in short])
+        for q in (129, 128, 127):
+            r = rows(bse, "500696", "HUL", q)
+            p(f"HUL q{q}: rows {len(r)} has_eps {any('Basic EPS' in x[0] for x in r)}")
+        p("HUL with resultType 'U':", len(rows(bse, "500696", "HUL", 130, {"strresultType": "U"})))
+        p("HUL with resultType 'A':", len(rows(bse, "500696", "HUL", 130, {"strresultType": "A"})))
+        p("HUL with action blank:", len(rows(bse, "500696", "HUL", 130, {"action": ""})))
 
 try:
     main()
