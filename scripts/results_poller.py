@@ -153,6 +153,8 @@ def main():
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
             posted += 1
+            if SEND:
+                save_state(st)
         # one digest message for smaller companies
         lines = lines[:40]
         if lines:
@@ -169,10 +171,12 @@ def main():
     if SEND:
         save_state(st)
     p(f"done: {posted} {'sent' if SEND else 'would send'}")
+    return posted
 
-try:
-    main()
-except Exception as e:
-    p("Caught error:", redact(repr(e))[:300])
-publish()
-sys.exit(0)
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as e:
+        p("Caught error:", redact(repr(e))[:300])
+    publish()
+    sys.exit(0)

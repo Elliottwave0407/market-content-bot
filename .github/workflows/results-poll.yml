@@ -5,30 +5,37 @@ on:
       send:
         description: "1 = post to Telegram group, 0 = dry run"
         default: "0"
+      minutes:
+        description: "how long this run keeps polling (max ~345)"
+        default: "345"
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: results-poll
   cancel-in-progress: false
 jobs:
   poll:
     runs-on: ubuntu-latest
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install bse requests matplotlib
-      - name: Poll BSE result filings
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Poll BSE result filings (loop)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POLL_SEND: ${{ github.event.inputs.send || '0' }}
-        run: python scripts/results_poller.py
-      - name: Save state and previews
-        run: |
-          git config user.name "market-content-bot"
-          git config user.email "bot@users.noreply.github.com"
-          mkdir -p state
-          git add state
-          git diff --cached --quiet || (git commit -m "Poller state and previews" && git pull --rebase -q origin main && git push -q origin main)
+          POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
+          POLL_INTERVAL: "40"
+        run: python scripts/poll_loop.py
+      - name: Start the next run (chain)
+        if: always() && github.event.inputs.send == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST repos/${{ github.repository }}/actions/workflows/results-poll.yml/dispatches -f ref=main -f 'inputs[send]=1' -f 'inputs[minutes]=345'
