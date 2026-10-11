@@ -1,5 +1,7 @@
 import json
+import re
 import time
+from datetime import datetime
 
 REV_KEYS = ["Net Sales/Revenue From Operations", "Net Sales", "Interest Earned/Net Income from sales/services"]
 PBT_KEYS = ["Profit (+)/ Loss (-) from Ordinary Activities before Tax"]
@@ -130,8 +132,28 @@ def pct(a, b):
 def cr(v):
     return None if v is None else v / 10.0
 
-def results(bse, code, name, basis, start=131):
-    q, cur = latest(bse, code, name, basis, start)
+QTR_WORDS = [
+    (r"\bq1\b|first quarter|quarter ended 30\D{0,6}jun|30\.06|30/06|jun(e)?\s*30", 6),
+    (r"\bq2\b|second quarter|half[\s-]*year|quarter ended 30\D{0,6}sep|30\.09|30/09|sep(tember)?\s*30", 9),
+    (r"\bq3\b|third quarter|nine months|quarter ended 31\D{0,6}dec|31\.12|31/12|dec(ember)?\s*31", 12),
+    (r"\bq4\b|fourth quarter|quarter ended 31\D{0,6}mar|31\.03|31/03|mar(ch)?\s*31|year ended 31\D{0,6}mar", 3),
+]
+
+def expected_quarter(text, filed):
+    """Quarter code a filing refers to, from its headline; None if it cannot be determined."""
+    t = (text or "").lower()
+    months = {m for pat, m in QTR_WORDS if re.search(pat, t)}
+    if len(months) != 1:
+        return None
+    m = months.pop()
+    y = filed.year if datetime(filed.year, m, 28) <= filed else filed.year - 1
+    return qcode(y, m)
+
+def results(bse, code, name, basis, start=131, exact=None):
+    if exact is not None:
+        q, cur = exact, fetch(bse, code, name, basis, exact)
+    else:
+        q, cur = latest(bse, code, name, basis, start)
     if not cur:
         return None
     prev = fetch(bse, code, name, basis, q - 1)
@@ -153,7 +175,7 @@ def results(bse, code, name, basis, start=131):
 def fmt(v, eps=False):
     if v is None:
         return "NA"
-    return f"{v:,.2f}" if eps else f"{v:,.0f}"
+    return f"{v:,.2f}" if (eps or abs(v) < 100) else f"{v:,.0f}"
 
 def render(r):
     if not r:
