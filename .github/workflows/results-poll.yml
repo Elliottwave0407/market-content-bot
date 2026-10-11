@@ -12,7 +12,7 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: results-poll
+  group: results-poll-${{ github.event.inputs.send == '1' && 'live' || 'dry' }}
   cancel-in-progress: false
 jobs:
   poll:
@@ -32,7 +32,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POLL_SEND: ${{ github.event.inputs.send || '0' }}
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
-          POLL_INTERVAL: "40"
+          POLL_INTERVAL: "10"
         run: python scripts/poll_loop.py
       - name: Start the next run (chain)
         if: always() && github.event.inputs.send == '1'

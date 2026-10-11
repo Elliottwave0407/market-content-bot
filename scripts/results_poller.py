@@ -1,6 +1,7 @@
 import os, sys, json, re, time
 from datetime import datetime, timedelta
 import requests
+from contextlib import nullcontext
 from bse import BSE
 from ci_out import p, publish
 import results_fetcher as rf
@@ -47,9 +48,13 @@ def link(rec):
     a = rec.get("ATTACHMENTNAME")
     return f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{a}" if a else rec.get("NSURL", "")
 
-def fetch_filings(bse):
+def fetch_filings(bse, known=None, fast=False):
+    """Result filings. known: set of every NEWSID seen so far (updated here).
+    fast=True: only the newest page(s) of today, stopping once an already-seen item appears."""
+    prior = set(known) if known is not None else set()
+    days = [0] if fast else list(range(DAYS_BACK, -1, -1))
     rows = []
-    for back in range(DAYS_BACK, -1, -1):
+    for back in days:
         d = datetime.now() - timedelta(days=back)
         pg, total_seen = 1, 0
         while pg <= 40:
@@ -59,6 +64,10 @@ def fetch_filings(bse):
                 break
             total_seen += len(t)
             rows += [r for r in t if r.get("CATEGORYNAME") == "Result"]
+            if known is not None:
+                known.update(r["NEWSID"] for r in t)
+            if fast and any(r["NEWSID"] in prior for r in t):
+                break
             if total_seen >= data.get("Table1", [{}])[0].get("ROWCNT", 0):
                 break
             pg += 1
@@ -116,13 +125,14 @@ def build(bse, rec):
            f"Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
-def main():
+def main(bse_in=None, known=None, fast=False):
     os.makedirs(OUTDIR, exist_ok=True)
     st = load_state()
     chat = os.environ["TELEGRAM_CHAT_ID"].strip()
     posted = 0
-    with BSE(download_folder="./") as bse:
-        filings = fetch_filings(bse)
+    ctx = nullcontext(bse_in) if bse_in is not None else BSE(download_folder="./")
+    with ctx as bse:
+        filings = fetch_filings(bse, known, fast)
         new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
         lines = []
