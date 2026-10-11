@@ -114,7 +114,7 @@ def eps_pct(eps_a, eps_b, pat_a, pat_b):
     e = pct(eps_a, eps_b)
     p = pct(pat_a, pat_b)
     try:
-        if abs(float(e[:-1]) - float(p[:-1])) > 8:
+        if abs(float(e[:-1]) - float(p[:-1])) > 5:
             return "NC"
     except Exception:
         pass
