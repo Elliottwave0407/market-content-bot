@@ -1,5 +1,7 @@
 name: results-poll
 on:
+  schedule:
+    - cron: "*/15 3-18 * * *"
   workflow_dispatch:
     inputs:
       send:
@@ -22,7 +24,7 @@ jobs:
       - name: Poll BSE result filings
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          POLL_SEND: ${{ github.event.inputs.send || '0' }}
+          POLL_SEND: ${{ (github.event_name == 'schedule' && '1') || github.event.inputs.send || '0' }}
         run: python scripts/results_poller.py
       - name: Save state and previews
         run: |

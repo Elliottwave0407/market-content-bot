@@ -77,30 +77,30 @@ def build(bse, rec):
     res = rf.results_for_filing(bse, code, name, headline, filed)
     st = res["status"]
     if st == "quarter_unverified":
-        return ("text", f"{name} (BSE {code}): result-related filing, quarter could not be identified from the headline, so no numbers shown.\nFiling: {lk}", None, f"{code}|unverified|{rec['NEWSID']}")
+        return ("line", f"{name} (BSE {code}): result-related filing, quarter could not be identified from the headline, so no numbers shown.  | {lk}", None, f"{code}|unverified|{rec['NEWSID']}")
     if st == "not_available":
-        return ("text", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but structured numbers are not available from BSE for this format (e.g. insurer/bank/NBFC format). No numbers shown.\nFiling: {lk}", None, f"{code}|{res['quarter']}|na")
+        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but structured numbers are not available from BSE for this format (e.g. insurer/bank/NBFC format). No numbers shown.  | {lk}", None, f"{code}|{res['quarter']}|na")
     if st == "ok_limited":
         s = res["snapshot"]
-        return ("text", f"{name} (BSE {code}) {fy_label(res['quarter'])}: limited data only (standalone snapshot, QoQ). Open the filing for full numbers.\nFiling: {lk}", None, f"{code}|{res['quarter']}|limited")
+        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: limited data only (standalone snapshot, QoQ). Open the filing for full numbers.  | {lk}", None, f"{code}|{res['quarter']}|limited")
     basis = "consolidated" if res["consolidated"] else "standalone"
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
     if not quarters[0]["m"] or not quarters[1]["m"]:
-        return ("text", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but the comparison data is incomplete. No numbers shown.\nFiling: {lk}", None, f"{code}|{res['quarter']}|incomplete")
+        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: filed, but the comparison data is incomplete. No numbers shown.  | {lk}", None, f"{code}|{res['quarter']}|incomplete")
     for qq in quarters:
         if qq["m"] is None:
             qq["m"] = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
     cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
     r0, r1 = cur.get("revenue"), prev.get("revenue")
     if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
-        return ("text", f"{name} (BSE {code}) {fy_label(res['quarter'])}: sales changed more than 50x versus the previous quarter, so the numbers look inconsistent. Not shown - please check the filing.\nFiling: {lk}", None, f"{code}|{res['quarter']}|anomaly")
+        return ("line", f"{name} (BSE {code}) {fy_label(res['quarter'])}: sales changed more than 50x versus the previous quarter, so the numbers look inconsistent. Not shown - please check the filing.  | {lk}", None, f"{code}|{res['quarter']}|anomaly")
     sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
     sd = 0 if sales and sales >= 100 else 1
     pd_ = 0 if pat and pat >= 100 else 1
     sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
     if sales is None or sales < MIN_CR:
-        return ("line", f"{name} {fy_label(res['quarter'])} {basis[:4]}: Sales {card.fmt_num(sales, sd)} Cr ({sy} YoY), PAT {card.fmt_num(pat, pd_)} Cr ({py} YoY) | {lk}", None, f"{code}|{res['quarter']}|{basis}")
+        return ("line", f"{name} {fy_label(res['quarter'])} {"cons" if basis=="consolidated" else "stand"}: Sales {card.fmt_num(sales, sd)} Cr ({sy} YoY), PAT {card.fmt_num(pat, pd_)} Cr ({py} YoY) | {lk}", None, f"{code}|{res['quarter']}|{basis}")
     png = os.path.join(OUTDIR, f"{code}_{res['quarter']}_{basis}.png")
     card.render(name, f"BSE {code}", basis, quarters, png)
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
