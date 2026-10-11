@@ -26,7 +26,9 @@ def main():
         return
     b = me["result"]
     p(f"bot: @{b.get('username')} id={b.get('id')} can_join_groups={b.get('can_join_groups')} can_read_all_group_messages={b.get('can_read_all_group_messages')}")
-    up = api("getUpdates", limit=100, timeout=0)
+    wh = api("getWebhookInfo").get("result", {})
+    p("webhook url set:", bool(wh.get("url")), "| pending_update_count:", wh.get("pending_update_count"), "| last_error:", redact(wh.get("last_error_message")))
+    up = api("getUpdates", limit=100, timeout=40, allowed_updates=["message", "my_chat_member", "edited_message", "channel_post", "callback_query"])
     if not up.get("ok"):
         p("getUpdates failed:", redact(up.get("description")))
         return
