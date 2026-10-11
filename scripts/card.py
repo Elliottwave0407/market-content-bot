@@ -11,9 +11,13 @@ def cr(v):
     return None if v is None else v / 10.0
 
 def pct(a, b):
+    # values are in Rs million; a base under Rs 1 crore (10) or a change above 1000% is not meaningful
     if a is None or b is None or b == 0 or a < 0 or b < 0:
         return None
-    return (a - b) / b * 100
+    if abs(b) < 10:
+        return None
+    v = (a - b) / b * 100
+    return None if abs(v) > 1000 else v
 
 def fmt_pct(v):
     return "NA" if v is None else f"{v:+.1f}%"
