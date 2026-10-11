@@ -61,18 +61,29 @@ def raw_standalone(bse, code, q):
         time.sleep(1)
     return out
 
-def raw_consolidated(bse, code, name, q):
+def _cons_call(bse, code, name, q, rtype):
+    d = _get(bse, "Corp_BSEDnBResults_SEBI_Consolidated_Res_ng", {"type1": "c", "strtype": f"{q:.2f}", "strscripcd": str(code), "strscripname": name, "strresultType": rtype, "action": "show"})
     out = {}
-    for attempt in range(3):
-        d = _get(bse, "Corp_BSEDnBResults_SEBI_Consolidated_Res_ng", {"type1": "c", "strtype": f"{q:.2f}", "strscripcd": str(code), "strscripname": name, "strresultType": "", "action": "show"})
-        out = {}
-        for x in (d if isinstance(d, list) else []):
-            out.setdefault(_tidy(x.get("Description")), x.get("Amount"))
-        if complete(out):
-            break
-        LOG.append(f"retry consolidated {code} q{q} attempt {attempt + 1}")
-        time.sleep(1)
+    for x in (d if isinstance(d, list) else []):
+        out.setdefault(_tidy(x.get("Description")), x.get("Amount"))
     return out
+
+def raw_consolidated(bse, code, name, q):
+    base = _cons_call(bse, code, name, q, "")
+    if complete(base):
+        return base
+    for rtype in ("A", "U"):
+        alt = _cons_call(bse, code, name, q, rtype)
+        if not complete(alt):
+            continue
+        for k in ("Net Sales", "Interest Earned/Net Income from sales/services", "Net Profit", "Profit (+)/ Loss (-) from Ordinary Activities before Tax"):
+            if k in base and k in alt and num(base[k]) != num(alt[k]):
+                LOG.append(f"CONFLICT {code} q{q} mode {rtype} {k}: {base[k]} vs {alt[k]} -> not trusted")
+                return base
+        LOG.append(f"used mode {rtype} for consolidated {code} q{q}")
+        return alt
+    LOG.append(f"INCOMPLETE consolidated {code} q{q}")
+    return base
 
 def metrics(raw, basis):
     rev = first(raw, REV_KEYS)
