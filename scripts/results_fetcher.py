@@ -1,4 +1,5 @@
 import json
+import time
 
 REV_KEYS = ["Net Sales/Revenue From Operations", "Net Sales", "Interest Earned/Net Income from sales/services"]
 PBT_KEYS = ["Profit (+)/ Loss (-) from Ordinary Activities before Tax"]
@@ -36,18 +37,41 @@ def _get(bse, path, params):
     except Exception:
         return None
 
+LOG = []
+
+def complete(raw):
+    has_rev = first(raw, REV_KEYS) is not None
+    if not has_rev:
+        return True
+    return first(raw, EPS_KEYS) is not None and ("Expenditure" in raw or "Interest Earned/Net Income from sales/services" in raw)
+
+def _tidy(k):
+    return " ".join(str(k).split()) if k else k
+
 def raw_standalone(bse, code, q):
-    d = _get(bse, "Corp_detailedResult_Transpose_ng", {"Scrip_cd": str(code), "Qtr": f"{q:.2f}"})
     out = {}
-    for x in (d.get("table1", []) if isinstance(d, dict) else []):
-        out.setdefault(x.get("fld_desc"), x.get("Value"))
+    for attempt in range(3):
+        d = _get(bse, "Corp_detailedResult_Transpose_ng", {"Scrip_cd": str(code), "Qtr": f"{q:.2f}"})
+        out = {}
+        for x in (d.get("table1", []) if isinstance(d, dict) else []):
+            out.setdefault(_tidy(x.get("fld_desc")), x.get("Value"))
+        if complete(out):
+            break
+        LOG.append(f"retry standalone {code} q{q} attempt {attempt + 1}")
+        time.sleep(1)
     return out
 
 def raw_consolidated(bse, code, name, q):
-    d = _get(bse, "Corp_BSEDnBResults_SEBI_Consolidated_Res_ng", {"type1": "c", "strtype": f"{q:.2f}", "strscripcd": str(code), "strscripname": name, "strresultType": "", "action": "show"})
     out = {}
-    for x in (d if isinstance(d, list) else []):
-        out.setdefault(x.get("Description"), x.get("Amount"))
+    for attempt in range(3):
+        d = _get(bse, "Corp_BSEDnBResults_SEBI_Consolidated_Res_ng", {"type1": "c", "strtype": f"{q:.2f}", "strscripcd": str(code), "strscripname": name, "strresultType": "", "action": "show"})
+        out = {}
+        for x in (d if isinstance(d, list) else []):
+            out.setdefault(_tidy(x.get("Description")), x.get("Amount"))
+        if complete(out):
+            break
+        LOG.append(f"retry consolidated {code} q{q} attempt {attempt + 1}")
+        time.sleep(1)
     return out
 
 def metrics(raw, basis):
@@ -75,6 +99,16 @@ def latest(bse, code, name, basis, start=131):
             return q, m
     return None, None
 
+def eps_pct(eps_a, eps_b, pat_a, pat_b):
+    e = pct(eps_a, eps_b)
+    p = pct(pat_a, pat_b)
+    try:
+        if abs(float(e[:-1]) - float(p[:-1])) > 8:
+            return "NC"
+    except Exception:
+        pass
+    return e
+
 def pct(a, b):
     if a is None or b is None or b == 0:
         return "NA"
@@ -97,7 +131,12 @@ def results(bse, code, name, basis, start=131):
         pv = prev.get(key) if prev else None
         yv = yago.get(key) if yago else None
         scale = (lambda v: v) if key == "eps" else cr
-        rows.append({"item": label, "cur": scale(c), "qoq": pct(c, pv), "yoy": pct(c, yv), "prev": scale(pv), "yago": scale(yv)})
+        if key == "eps":
+            qoq = eps_pct(c, pv, cur.get("pat"), prev.get("pat") if prev else None)
+            yoy = eps_pct(c, yv, cur.get("pat"), yago.get("pat") if yago else None)
+        else:
+            qoq, yoy = pct(c, pv), pct(c, yv)
+        rows.append({"item": label, "cur": scale(c), "qoq": qoq, "yoy": yoy, "prev": scale(pv), "yago": scale(yv)})
     return {"code": code, "name": name, "basis": basis, "quarter": qlabel(q), "prev_q": qlabel(q - 1), "yago_q": qlabel(q - 4), "unit": "Rs Cr (EPS in Rs)", "rows": rows, "bank": cur["bank"]}
 
 def fmt(v, eps=False):
