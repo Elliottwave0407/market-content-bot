@@ -1,23 +1,16 @@
 import sys
-import json
 from bse import BSE
 from ci_out import p, publish
 import results_fetcher as rf
 
-COMPANIES = {"532540": "TCS", "500325": "RELIANCE", "500180": "HDFCBANK", "500696": "HUL", "500820": "ASIANPAINT"}
-
 def main():
     with BSE(download_folder="./") as bse:
-        for code, name in COMPANIES.items():
-            p(f"\n=== {name} {code}")
+        for code, name, q in [("500325", "RELIANCE", 130), ("500696", "HUL", 130), ("500820", "ASIANPAINT", 129)]:
             for basis in ("consolidated", "standalone"):
-                p(rf.render(rf.results(bse, code, name, basis)))
-            try:
-                s = bse.resultsSnapshot(code)
-                d = {r[0]: r[1:] for r in s["results_in_crores"]["data"]}
-                p("check vs BSE snapshot (standalone) revenue/net profit:", d.get("Revenue"), d.get("Net Profit"), "periods", s.get("periods"))
-            except Exception as e:
-                p("snapshot error:", e)
+                raw = rf.raw_consolidated(bse, code, name, q) if basis == "consolidated" else rf.raw_standalone(bse, code, q)
+                p(f"\n=== {name} q{q} {basis}")
+                for k, v in raw.items():
+                    p(f"{k} = {v}")
 
 try:
     main()
