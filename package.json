@@ -1,0 +1,11 @@
+{
+  "name": "market-content-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "debug-results": "node scripts/debugResultsScraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

@@ -1,0 +1,57 @@
+name: Debug Results Scraper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug-scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run debug scraper
+        run: npm run debug-results
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install bse python library
+        run: pip install bse
+
+      - name: Install requests and beautifulsoup4
+        run: pip install requests beautifulsoup4
+
+      - name: Run BSE announcements debug script
+        run: python scripts/debug_bse_announcements.py
+
+      - name: Run BSE all-announcements breadth test
+        run: python scripts/debug_bse_all_announcements.py
+
+      - name: Run FII/DII scraper
+        run: python scripts/debug_fii_dii.py
+
+      - name: Run bulk/block deals scraper
+        run: python scripts/debug_bulk_deals.py
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-results-output
+          path: |
+            debug-results-output.json
+            debug-bse-announcements-output.json
+            debug-all-announcements-output.json
+            debug-company-updates-output.json
+            debug-fii-dii-output.json
+            debug-bulk-deals-output.json
