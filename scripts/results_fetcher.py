@@ -187,3 +187,46 @@ def render(r):
         e = x["item"] == "EPS"
         lines.append(f"  {x['item']}: {fmt(x['cur'], e)} | QoQ {x['qoq']} | YoY {x['yoy']}  (prev {fmt(x['prev'], e)}, yago {fmt(x['yago'], e)})")
     return "\n".join(lines)
+
+
+def snapshot_results(bse, code, q):
+    """Limited fallback for NBFC/housing finance etc.: BSE snapshot is STANDALONE only, no year-ago.
+    Used only when the snapshot's first column is exactly the quarter the filing refers to."""
+    try:
+        s = bse.resultsSnapshot(str(code))
+        periods = s.get("periods") or []
+        data = {r[0]: r[1:] for r in s["results_in_crores"]["data"]}
+    except Exception:
+        return None
+    if not periods or periods[0] != qlabel(q):
+        return None
+    def col(key, i):
+        row = data.get(key)
+        return num(row[i]) if row and len(row) > i else None
+    prev_ok = len(periods) > 1 and periods[1] == qlabel(q - 1)
+    rows = []
+    for key, label in [("Revenue", "Revenue"), ("Net Profit", "Net profit"), ("EPS", "EPS")]:
+        c = col(key, 0)
+        pv = col(key, 1) if prev_ok else None
+        if key == "EPS":
+            qoq = eps_pct(c, pv, col("Net Profit", 0), col("Net Profit", 1) if prev_ok else None)
+        else:
+            qoq = pct(c, pv)
+        rows.append({"item": label, "cur": c, "qoq": qoq, "yoy": "NA", "prev": pv, "yago": None})
+    if rows[0]["cur"] is None:
+        return None
+    return {"code": code, "name": "", "basis": "standalone (BSE snapshot, limited)", "quarter": qlabel(q), "prev_q": qlabel(q - 1), "yago_q": qlabel(q - 4), "unit": "Rs Cr", "rows": rows, "bank": False}
+
+def results_for_filing(bse, code, name, headline, filed):
+    q = expected_quarter(headline, filed)
+    if q is None:
+        return {"status": "quarter_unverified", "quarter": None}
+    cons = results(bse, code, name, "consolidated", exact=q)
+    std = results(bse, code, name, "standalone", exact=q)
+    if cons or std:
+        return {"status": "ok", "quarter": qlabel(q), "consolidated": cons, "standalone": std, "snapshot": None}
+    snap = snapshot_results(bse, code, q)
+    if snap:
+        snap["name"] = name
+        return {"status": "ok_limited", "quarter": qlabel(q), "consolidated": None, "standalone": None, "snapshot": snap}
+    return {"status": "not_available", "quarter": qlabel(q)}

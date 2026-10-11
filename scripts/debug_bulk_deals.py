@@ -35,25 +35,13 @@ def main():
         for r in res:
             code, name = str(r["SCRIP_CD"]), (r.get("SLONGNAME") or "").strip()
             filed = datetime.fromisoformat(r["DT_TM"][:19])
-            text = f"{r.get('NEWSSUB')} {r.get('HEADLINE')}"
-            q = rf.expected_quarter(text, filed)
-            p(f"\n{name} ({code}) filing says: {str(r.get('NEWSSUB'))[len(name) + 10:][:95]} -> quarter {rf.qlabel(q) if q else 'UNKNOWN'}")
-            if q is None:
-                p("  -> quarter unverified: link filing only")
-                continue
-            c = rf.results(bse, code, name, "consolidated", exact=q)
-            s = rf.results(bse, code, name, "standalone", exact=q)
-            if not (c or s):
-                p("  -> BSE data for this quarter not available (yet) or format unsupported")
-                try:
-                    snap = bse.resultsSnapshot(code)
-                    d = {x[0]: x[1:] for x in snap["results_in_crores"]["data"]}
-                    p("  snapshot fallback (standalone, Cr):", snap.get("periods"), d.get("Revenue"), d.get("Net Profit"))
-                except Exception as e:
-                    p("  snapshot fallback failed:", str(e)[:80])
-                continue
-            p(line(c, "CONS"))
-            p(line(s, "STD "))
+            out = rf.results_for_filing(bse, code, name, f"{r.get('NEWSSUB')} {r.get('HEADLINE')}", filed)
+            p(f"\n{name} ({code}) -> {out['status']} {out.get('quarter')}")
+            if out["status"] == "ok":
+                p(line(out["consolidated"], "CONS"))
+                p(line(out["standalone"], "STD "))
+            elif out["status"] == "ok_limited":
+                p(line(out["snapshot"], "SNAP"))
         p("\nLOG:", rf.LOG if rf.LOG else "none")
 
 try:
