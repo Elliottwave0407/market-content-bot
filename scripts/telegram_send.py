@@ -17,6 +17,14 @@ def send(chat_id, text):
     except Exception:
         return {"ok": False, "description": f"non-json status {r.status_code}"}
 
+def send_photo(chat_id, path, caption):
+    with open(path, "rb") as fh:
+        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data={"chat_id": chat_id, "caption": caption[:1024]}, files={"photo": fh}, timeout=60)
+    try:
+        return r.json()
+    except Exception:
+        return {"ok": False, "description": f"non-json status {r.status_code}"}
+
 def main():
     if not TOKEN:
         p("TELEGRAM_BOT_TOKEN is not set")
@@ -25,6 +33,12 @@ def main():
     messages = json.load(open(sys.argv[1]))
     sent = 0
     for i, text in enumerate(messages, 1):
+        if isinstance(text, dict):
+            r = send_photo(chat_id, text["photo"], text.get("caption", ""))
+            p(f"photo {i}: ok={r.get('ok')} {redact(r.get('description', ''))}")
+            sent += 1 if r.get("ok") else 0
+            time.sleep(1.5)
+            continue
         if len(text) > 4000:
             p(f"message {i} too long ({len(text)} chars), skipped")
             continue
