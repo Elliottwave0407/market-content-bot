@@ -4,6 +4,12 @@ import os, sys, time, subprocess
 sys.path.insert(0, os.path.dirname(__file__))
 import ci_out
 import results_poller as rp
+try:
+    import market_posts as mp
+    mp.SEND = os.environ.get('POLL_SEND', '0') == '1'
+except Exception as _e:
+    mp = None
+    print('market_posts unavailable:', repr(_e)[:120])
 
 LOOP_MIN = float(os.environ.get("POLL_LOOP_MINUTES", "345"))
 INTERVAL = int(os.environ.get("POLL_INTERVAL", "10"))
@@ -48,6 +54,15 @@ def main():
                         keep += [f"[poll {n} {time.strftime('%H:%M:%S')}] "] + ci_out.OUT
                         if posted > 0:
                             commit_state()
+                    if mp is not None:
+                        try:
+                            mchanged, mlines = mp.tick()
+                            if mlines:
+                                keep += [f"[market {time.strftime('%H:%M:%S')}] "] + mlines
+                            if mchanged:
+                                commit_state()
+                        except Exception as e:
+                            keep.append("market tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:

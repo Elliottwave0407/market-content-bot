@@ -31,7 +31,7 @@ jobs:
       - name: Build and (optionally) post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
           POST_SEND: ${{ github.event.inputs.send || '0' }}
           POST_FORCE: ${{ github.event.inputs.force || '0' }}
         run: python scripts/market_posts.py "${{ github.event.inputs.mode || 'both' }}"
