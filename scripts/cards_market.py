@@ -142,7 +142,10 @@ def render_fii_dii(d, out_path, note=""):
 def render_news(it, out_path, note=""):
     """it = {"tag": "ORDER WIN", "company": ..., "meta": "BSE 500325 | 12 Oct 2026, 16:20 IST", "headline": ..., "detail": optional text as filed, "source": "BSE announcement"}"""
     head = textwrap.wrap(it["headline"], 74)[:4]
-    det = textwrap.wrap(it.get("detail") or "", 120)[:5] if it.get("detail") else []
+    det = textwrap.wrap(it.get("detail") or "", 120) if it.get("detail") else []
+    if len(det) > 5:
+        det = det[:5]
+        det[-1] = det[-1].rstrip(" .,;") + " ..."
     H = 3.3 + 0.62 * len(head) + (0.5 + 0.36 * len(det) if det else 0.2)
     fig = T.new_fig(16, H)
     fy = lambda inch: 1 - inch / H

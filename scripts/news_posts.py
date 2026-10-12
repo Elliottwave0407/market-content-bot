@@ -27,7 +27,10 @@ def sub_of(rec):
 def title_of(rec):
     t = (rec.get("NEWSSUB") or "").strip()
     m = re.match(r"^(.*?)\s*-\s*\d{5,6}\s*-\s*(.*)$", t)
-    return (m.group(2) if m else t).strip()
+    t = (m.group(2) if m else t).strip()
+    t = re.sub(r"^Announcement under Regulation 30 \(LODR\)\s*-\s*", "", t, flags=re.I)
+    t = re.sub(r"^Corporate Action\s*-\s*", "", t, flags=re.I)
+    return t.replace("_", " ").replace("  ", " ").strip()
 
 def classify(rec):
     """Return a card tag, or None if this announcement is not newsworthy enough."""
