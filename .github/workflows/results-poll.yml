@@ -35,6 +35,7 @@ jobs:
           POLL_INTERVAL: "10"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          NEWS_LIVE: "1"
         run: python scripts/poll_loop.py
       - name: Start the next run (chain)
         if: always() && github.event.inputs.send == '1'

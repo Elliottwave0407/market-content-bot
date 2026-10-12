@@ -52,8 +52,6 @@ def classify(rec):
         return "CORPORATE ACTION"
     if any(k in sub for k in ("insolvency", "cirp", "default", "fraud", "action(s) initiated", "regulatory action")):
         return "RISK"
-    if "earnings call transcript" in sub or ("analyst / investor meet" in sub and CONCALL_RX.search(text)):
-        return "CONCALL"
     if MGMT_RX.search(sub) or (sub in ("change in management", "change in directorate", "cessation", "resignation of director") and MGMT_RX.search(text)):
         return "MANAGEMENT"
     return None
@@ -156,6 +154,12 @@ def fetch_today(bse, seen):
         pg += 1
     return rows
 
+SEBI_ALLOW = re.compile(r"circular|consultation paper|framework|regulations|amendment|board meeting|guidelines|master circular|interim order|discussion paper|norms|margin|f&o|derivative|mutual fund|ipo|disclosure", re.I)
+SEBI_DENY = re.compile(r"recovery certificate|remittance|exemption order|attachment|adjudication order|settlement order|in the matter of|appeal|corrigendum|tender|empanelment|vacancy|recruitment", re.I)
+
+def sebi_ok(title):
+    return bool(SEBI_ALLOW.search(title)) and not SEBI_DENY.search(title)
+
 RSS = (("RBI", "https://www.rbi.org.in/pressreleases_rss.xml", re.compile(r"auction|treasury bill|ways and means|money market operation|state development loan|indicative calendar|weekly statistical|result of", re.I)),
        ("SEBI", "https://www.sebi.gov.in/sebirss.xml", None))
 
@@ -168,7 +172,7 @@ def fetch_rss(tag, url, skip_rx):
     out = []
     for it in root.iter("item"):
         title = re.sub(r"\s+", " ", unescape((it.findtext("title") or "").strip()))
-        if not title or (skip_rx and skip_rx.search(title)):
+        if not title or (skip_rx and skip_rx.search(title)) or (tag == "SEBI" and not sebi_ok(title)):
             continue
         desc = re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", it.findtext("description") or ""))).strip()
         out.append({"id": f"{tag}:{it.findtext('guid') or it.findtext('link') or title}", "tag": tag, "title": title, "link": it.findtext("link") or "", "desc": desc if desc.lower() != title.lower() else "", "date": (it.findtext("pubDate") or "").strip()})
