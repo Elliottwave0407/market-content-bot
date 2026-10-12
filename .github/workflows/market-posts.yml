@@ -1,0 +1,43 @@
+name: market-posts
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "fii, deals or both"
+        default: "both"
+      send:
+        description: "1 = post to Telegram group, 0 = dry run (PNGs only)"
+        default: "0"
+      force:
+        description: "1 = ignore the already-posted check (preview)"
+        default: "0"
+permissions:
+  contents: write
+concurrency:
+  group: market-posts
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Build and (optionally) post
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POST_SEND: ${{ github.event.inputs.send || '0' }}
+          POST_FORCE: ${{ github.event.inputs.force || '0' }}
+        run: python scripts/market_posts.py "${{ github.event.inputs.mode || 'both' }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: market-cards
+          path: out/*.png
+          if-no-files-found: ignore

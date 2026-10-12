@@ -18,8 +18,8 @@ def norm(s):
     s = re.sub(r"[^A-Z0-9]", "", s.upper())
     return re.sub(r"(LIMITED|LTD|L)$", "", s)
 
-def nse_rows():
-    r = requests.get("https://nsearchives.nseindia.com/content/equities/bulk.csv", headers=UA, timeout=20)
+def nse_rows(url="https://nsearchives.nseindia.com/content/equities/bulk.csv"):
+    r = requests.get(url, headers=UA, timeout=20)
     out = []
     for x in csv.DictReader(io.StringIO(r.text)):
         if not x.get("Symbol"):
@@ -167,9 +167,9 @@ def main():
         json.dump([{k: v for k, v in x.items() if k != "rec"} for x in kept], f, indent=2)
     print("\nDone.")
 
-try:
-    main()
-except Exception as e:
-    print(f"\nCaught error: {e}")
-
-sys.exit(0)
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as e:
+        print(f"\nCaught error: {e}")
+    sys.exit(0)
