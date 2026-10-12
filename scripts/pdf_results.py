@@ -136,7 +136,7 @@ def _field(label):
         return "pbt"
     if re.search(r"total tax|tax expense", l) and "before" not in l:
         return "tax"
-    if re.search(r"(net )?(profit|loss).*(for the|after tax)|profit after tax|^net profit", l) and not re.search(r"before|attributable|comprehensive|owners|non controlling|minority|other", l):
+    if re.search(r"(net )?(profit|loss).*(for the|after tax)|profit after tax|^net profit", l) and not re.search(r"before|attributable|comprehensive|owners|non controlling|minority|other|discontinued|associate|joint venture|share of|tax expense", l):
         return "pat"
     if l.startswith("basic") or re.search(r"basic.*(eps|per share)|earnings per share.*basic", l):
         return "eps"
@@ -145,10 +145,11 @@ def _field(label):
 def parse(rows):
     """-> list of tables: {basis, unit, vals{field:[(v,decs)x<=3]}}. Side-by-side standalone|consolidated tables are split."""
     tables, curs, basis, unit = [], None, None, None
-    recent = []
+    recent, ridx, bidx = [], 0, -999
     for r in rows:
         if r == ["<<PAGE>>"]:
             continue
+        ridx += 1
         text = " ".join(r)
         low = text.lower()
         recent.append(low)
@@ -157,9 +158,9 @@ def parse(rows):
         if u:
             unit = u
         if re.search(r"consolidated (unaudited |audited )?(financial )?results|statement of (unaudited |audited )?consolidated|consolidated unaudited|consolidated financial results", low):
-            basis = "consolidated"
+            basis, bidx = "consolidated", ridx
         elif re.search(r"standalone (unaudited |audited )?(financial )?results|statement of (unaudited |audited )?standalone|standalone unaudited|standalone financial results", low):
-            basis = "standalone"
+            basis, bidx = "standalone", ridx
         label, nums = _split(r)
         f = _field(label) if nums else None
         if f in ("rev", "rev_total") and (curs is None or ("rev" in curs[0]["vals"] and f == "rev" and curs[0]["rowcount"] > 25)):
@@ -171,7 +172,7 @@ def parse(rows):
                 curs = [{"basis": order[0], "unit": unit, "vals": {}, "rowcount": 0, "split": True},
                         {"basis": order[1], "unit": unit, "vals": {}, "rowcount": 0, "split": True}]
             else:
-                curs = [{"basis": basis, "unit": unit, "vals": {}, "rowcount": 0, "split": False}]
+                curs = [{"basis": basis if ridx - bidx <= 25 else None, "unit": unit, "vals": {}, "rowcount": 0, "split": False}]
             tables.extend(curs)
         if curs is not None:
             for c in curs:
@@ -193,7 +194,18 @@ def parse(rows):
                         c["vals"]["rev"] = nums[:3]
                     elif f not in c["vals"]:
                         c["vals"][f] = nums[:3]
-    return [t for t in tables if "rev" in t["vals"]]
+    tables = [t for t in tables if "rev" in t["vals"]]
+    unk = [t for t in tables if t["basis"] is None]
+    if unk:
+        known = {t["basis"] for t in tables if t["basis"]}
+        if len(tables) == 2 and not known:
+            tables[0]["basis"], tables[1]["basis"] = "standalone", "consolidated"
+            tables[0]["guess"] = tables[1]["guess"] = True
+        elif len(tables) == 2 and len(known) == 1:
+            other = "standalone" if "consolidated" in known else "consolidated"
+            for t in unk:
+                t["basis"], t["guess"] = other, True
+    return tables
 
 def checks(t):
     """Arithmetic checks on the current-quarter column. -> dict of bool/None"""
