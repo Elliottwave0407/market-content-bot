@@ -12,6 +12,8 @@ MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
 DAYS_BACK = int(os.environ.get("POLL_DAYS", "1"))
 MIN_CR = float(os.environ.get("POLL_MIN_CR", "0"))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "24"))   # how long to wait for BSE numbers before posting a no-numbers card
+RETRY_SEC = int(os.environ.get("POLL_RETRY_SEC", "90"))
 STATE = "state/seen.json"
 OUTDIR = "drafts/poll"
 DISC = "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice."
@@ -85,25 +87,40 @@ def stub(name, code, qlabel_, reason, lk, key):
     cap = f"{name} {fy_label(qlabel_) if qlabel_ else ''} results filed. Numbers not shown ({reason}).\nFiling: {lk}\n\n{DISC}"
     return ("photo", cap, png, key)
 
-def build(bse, rec):
-    """Return (kind, text, png_path or None, key) or None to skip silently."""
+def inferred_qend(filed):
+    """Quarter end implied by the filing date, used only when the headline names no quarter."""
+    m, y = filed.month, filed.year
+    if m in (10, 11, 12): return f"30.09.{y}"
+    if m in (1, 2, 3): return f"31.12.{y - 1}"
+    if m in (4, 5, 6): return f"31.03.{y}"
+    return f"30.06.{y}"
+
+def build(bse, rec, final=False):
+    """Return (kind, text, png_path or None, key). kind 'wait' = BSE numbers not there yet, retry later."""
     code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
     headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
     filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
     lk = link(rec)
     res = rf.results_for_filing(bse, code, name, headline, filed)
+    inferred = False
+    if res["status"] == "quarter_unverified":
+        headline = headline + " quarter ended " + inferred_qend(filed)
+        res = rf.results_for_filing(bse, code, name, headline, filed)
+        inferred = True
     st = res["status"]
     if st == "quarter_unverified":
         return stub(name, code, None, "quarter not identified from the filing headline", lk, f"{code}|unverified|{rec['NEWSID']}")
-    if st == "not_available":
-        return stub(name, code, res["quarter"], "structured data not available from BSE for this format", lk, f"{code}|{res['quarter']}|na")
-    if st == "ok_limited":
-        s = res["snapshot"]
-        return stub(name, code, res["quarter"], "only limited data available from BSE for this format", lk, f"{code}|{res['quarter']}|limited")
+    if st in ("not_available", "ok_limited"):
+        if not final:
+            return ("wait", "numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
+        reason = "BSE has not published structured numbers for this filing" if st == "not_available" else "only limited data available from BSE for this format"
+        return stub(name, code, res["quarter"], reason, lk, f"{code}|{res['quarter']}|na")
     basis = "consolidated" if res["consolidated"] else "standalone"
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
     if not quarters[0]["m"] or not quarters[1]["m"]:
+        if not final:
+            return ("wait", "comparison data incomplete", None, f"{code}|{res['quarter']}|wait")
         return stub(name, code, res["quarter"], "comparison data incomplete", lk, f"{code}|{res['quarter']}|incomplete")
     for qq in quarters:
         if qq["m"] is None:
@@ -122,7 +139,7 @@ def build(bse, rec):
     card.render(name, f"BSE {code}", basis, quarters, png)
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-           f"Filing: {lk}\n\n{DISC}")
+           f"{'(Quarter inferred from filing date.) ' if inferred else ''}Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
 def main(bse_in=None, known=None, fast=False):
@@ -136,18 +153,30 @@ def main(bse_in=None, known=None, fast=False):
         new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
         lines = []
-        for rec in new:
+        now = time.time()
+        pend = st.setdefault("pending", {})
+        new_ids = {r["NEWSID"] for r in new}
+        retry = [v["rec"] for k, v in list(pend.items()) if k not in new_ids and now - v["last"] >= RETRY_SEC]
+        for rec in new + retry:
+            nid = rec["NEWSID"]
+            first = pend.get(nid, {}).get("first", now)
             try:
-                out = build(bse, rec)
+                out = build(bse, rec, final=(now - first) > WAIT_H * 3600)
             except Exception as e:
                 p(f"ERROR {rec.get('SLONGNAME')}: {redact(repr(e))[:200]}")
                 continue
             kind, text, png, key = out
+            if kind == "wait":
+                if nid not in pend:
+                    p(f"[wait] {rec.get('SLONGNAME')} ({key}) - BSE numbers not published yet, will retry")
+                pend[nid] = {"rec": rec, "first": first, "last": now}
+                continue
             if kind != "line" and posted >= MAX_POSTS:
                 continue
             if key in st["posted"]:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
+                pend.pop(nid, None)
                 continue
             p(f"[{kind}] {key} :: {text[:160]!r}")
             if kind == "line":
@@ -162,6 +191,11 @@ def main(bse_in=None, known=None, fast=False):
                 time.sleep(3.2)
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
+            if nid in pend:
+                st.setdefault("lag", []).append([rec.get("SLONGNAME"), round((now - pend[nid]["first"]) / 60)])
+                st["lag"] = st["lag"][-300:]
+                p(f"  resolved after {round((now - pend[nid]['first']) / 60)} min wait")
+                pend.pop(nid, None)
             posted += 1
             if SEND:
                 save_state(st)
