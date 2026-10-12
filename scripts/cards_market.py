@@ -66,7 +66,7 @@ def _deals_page(items, date_label, page, pages, out_path, note=""):
     T.brand(fig, fy(H - 0.3))
     T.save(fig, out_path)
 
-def render_deals(rows, date_label, out_prefix, note="", per_card=20):
+def render_deals(rows, date_label, out_prefix, note="", per_card=22):
     """ALL deals of the day, buyers then sellers (each by value, largest first), split over as many cards as needed. Returns list of PNG paths."""
     buys = sorted([r for r in rows if r["side"] == "B"], key=lambda r: -r["cr"])
     sells = sorted([r for r in rows if r["side"] == "S"], key=lambda r: -r["cr"])

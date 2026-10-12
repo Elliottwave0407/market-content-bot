@@ -35,6 +35,17 @@ jobs:
           POST_SEND: ${{ github.event.inputs.send || '0' }}
           POST_FORCE: ${{ github.event.inputs.force || '0' }}
         run: python scripts/market_posts.py "${{ github.event.inputs.mode || 'both' }}"
+      - name: Publish preview PNGs (dry runs only)
+        if: always() && github.event.inputs.send != '1'
+        run: |
+          set -e
+          [ -d out ] || exit 0
+          mkdir /tmp/pv && cp out/*.png /tmp/pv/ 2>/dev/null || exit 0
+          cd /tmp/pv
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "preview cards"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards
       - uses: actions/upload-artifact@v4
         if: always()
         with:
