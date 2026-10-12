@@ -109,6 +109,9 @@ def try_pdf(bse, rec, st, headline, filed):
         d = out.get(basis)
         if not d or val(d, "revenue", 0) is None or val(d, "pat", 0) is None:
             continue
+        if basis == "standalone" and out.get("consolidated") and val(out["consolidated"], "pat", 0) is not None:
+            LOG.append(f"pdf has consolidated but it failed checks: not falling back to standalone {rec.get('SLONGNAME')}")
+            return None
         ok, n = arith_ok(d)
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
