@@ -33,6 +33,7 @@ jobs:
           POLL_SEND: ${{ github.event.inputs.send || '0' }}
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
           POLL_INTERVAL: "10"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/poll_loop.py
       - name: Start the next run (chain)
         if: always() && github.event.inputs.send == '1'

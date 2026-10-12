@@ -6,6 +6,7 @@ from bse import BSE
 from ci_out import p, publish
 import results_fetcher as rf
 import card
+import pdf_card
 
 SEND = os.environ.get("POLL_SEND", "0") == "1"
 MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
@@ -15,6 +16,8 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "24"))   # how long to wait for BSE numbers before posting a no-numbers card
 RETRY_SEC = int(os.environ.get("POLL_RETRY_SEC", "90"))
 STATE = "state/seen.json"
+_ST = None
+PDF_AUDIT = {}
 OUTDIR = "drafts/poll"
 DISC = "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice."
 
@@ -101,6 +104,29 @@ def build(bse, rec, final=False):
     headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
     filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
     lk = link(rec)
+    pc = pdf_card.try_pdf(bse, rec, _ST, headline, filed) if _ST is not None else None
+    if pc:
+        basis, q, quarters = pc["basis"], pc["qcode"], pc["quarters"]
+        ql = rf.qlabel(q)
+        cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
+        sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
+        sd = 0 if sales and sales >= 100 else 1
+        pd_ = 0 if pat and pat >= 100 else 1
+        sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
+        png = os.path.join(OUTDIR, f"{code}_{ql}_{basis}.png")
+        card.render(name, f"BSE {code}", basis, quarters, png, filed_note="Read from the filing PDF; arithmetic-checked.")
+        cap = (f"{name} {fy_label(ql)} | {basis.capitalize()}\n"
+               f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
+               f"Read from the filing PDF ({pc['note']}). {'(Quarter taken from the PDF.) ' if pc['inferred'] else ''}Filing: {lk}\n\n{DISC}")
+        key = f"{code}|{ql}|{basis}"
+        PDF_AUDIT[key] = {"code": code, "name": name, "basis": basis, "q": q, "rev": cur["revenue"], "pat": cur["pat"], "t": time.time(), "last": 0}
+        try:
+            m = rf.fetch(bse, code, name, basis, q)
+            if m and m.get("revenue") is not None:
+                p(f"[audit-now] {name}: pdf rev={cur['revenue']:.1f} pat={cur['pat']:.1f} | bse rev={m['revenue']:.1f} pat={(m.get('pat') or 0):.1f} (Rs mn)")
+        except Exception:
+            pass
+        return ("photo", cap, png, key)
     res = rf.results_for_filing(bse, code, name, headline, filed)
     inferred = False
     if res["status"] == "quarter_unverified":
@@ -142,9 +168,40 @@ def build(bse, rec, final=False):
            f"{'(Quarter inferred from filing date.) ' if inferred else ''}Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
+def audit(bse, st, chat):
+    """Compare PDF-based cards with BSE's table once it appears; warn the group on a real difference."""
+    now = time.time()
+    done = 0
+    for key, info in list(st.get("pdfposted", {}).items()):
+        if now - info["t"] > 48 * 3600:
+            st["pdfposted"].pop(key, None); continue
+        if now - info.get("last", 0) < 300 or done >= 4:
+            continue
+        info["last"] = now
+        done += 1
+        try:
+            m = rf.fetch(bse, info["code"], info["name"], info["basis"], info["q"])
+        except Exception:
+            continue
+        if not m or m.get("revenue") is None:
+            continue
+        rev_ok = abs(info["rev"] - m["revenue"]) <= max(0.6, 0.005 * abs(m["revenue"]))
+        pat_ok = m.get("pat") is None or abs(info["pat"] - m["pat"]) <= max(1.0, 0.03 * abs(m["pat"]))
+        st.setdefault("audit", []).append([info["name"], "ok" if rev_ok and pat_ok else "diff"])
+        st["audit"] = st["audit"][-300:]
+        p(f"[audit] {info['name']}: {'match' if rev_ok and pat_ok else 'DIFF'}")
+        if not (rev_ok and pat_ok) and SEND:
+            c = lambda v: f"{v / 10:,.1f}"
+            tg("sendMessage", json={"chat_id": chat, "text": f"Check needed: {info['name']} card was read from the filing PDF (Sales {c(info['rev'])} Cr, PAT {c(info['pat'])} Cr) but BSE's table now shows Sales {c(m['revenue'])} Cr, PAT {c(m.get('pat') or 0)} Cr. Please verify against the filing."})
+        st["pdfposted"].pop(key, None)
+
 def main(bse_in=None, known=None, fast=False):
+    global _ST
     os.makedirs(OUTDIR, exist_ok=True)
     st = load_state()
+    _ST = st
+    pdf_card.new_poll()
+    PDF_AUDIT.clear()
     chat = os.environ["TELEGRAM_CHAT_ID"].strip()
     posted = 0
     ctx = nullcontext(bse_in) if bse_in is not None else BSE(download_folder="./")
@@ -191,6 +248,8 @@ def main(bse_in=None, known=None, fast=False):
                 time.sleep(3.2)
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
+            if key in PDF_AUDIT and SEND:
+                st.setdefault("pdfposted", {})[key] = PDF_AUDIT[key]
             if nid in pend:
                 st.setdefault("lag", []).append([rec.get("SLONGNAME"), round((now - pend[nid]["first"]) / 60)])
                 st["lag"] = st["lag"][-300:]
@@ -212,8 +271,16 @@ def main(bse_in=None, known=None, fast=False):
             if ok:
                 for nid, key, _ in lines:
                     st["ids"].append(nid); st["posted"].append(key)
+        if SEND:
+            try:
+                audit(bse, st, chat)
+            except Exception as e:
+                p(f"audit error {redact(repr(e))[:120]}")
     if SEND:
         save_state(st)
+    for x in pdf_card.LOG:
+        p("[pdf]", x)
+    pdf_card.LOG.clear()
     p(f"done: {posted} {'sent' if SEND else 'would send'}")
     return posted
 

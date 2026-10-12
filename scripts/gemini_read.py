@@ -7,7 +7,7 @@ PROMPT = """You are reading an Indian listed company's quarterly financial resul
 Extract the 'Statement of Unaudited/Audited Financial Results' table. Return ONLY JSON:
 {"unit":"lakh|crore|million|thousand|actual",
  "quarter_end_columns":["<current quarter end date>","<previous quarter end date>","<year-ago quarter end date>"],
- "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
+ "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"finance_costs":[c,p,y],"depreciation":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
  "standalone": {same keys} or null}
 Rules: c = current quarter, p = immediately preceding quarter, y = same quarter last year (the first three numeric columns; ignore half-year and full-year columns).
 revenue = 'Revenue from operations' (total, incl. other operating income). pbt = profit before tax (after exceptional items). pat = net profit/(loss) for the period (before minority/attributable split, after tax).
@@ -18,12 +18,12 @@ def list_models(key):
     r.raise_for_status()
     return [m["name"].split("/")[-1] for m in r.json().get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])]
 
-def read_pdf(key, model, pdf_bytes, tries=4):
+def read_pdf(key, model, pdf_bytes, tries=4, timeout=180):
     body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf_bytes).decode()}}, {"text": PROMPT}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     last = None
     for i in range(tries):
-        r = requests.post(f"{BASE}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=180)
+        r = requests.post(f"{BASE}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
         if r.status_code == 429 or r.status_code >= 500:
             last = f"HTTP {r.status_code}"
             time.sleep(15 * (i + 1)); continue
