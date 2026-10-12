@@ -29,6 +29,14 @@ def close(parsed, k, decs, truth):
     tol = max(0.51 * (10 ** -decs) * k, 2e-4 * abs(truth), 0.011)
     return abs(parsed * k - truth) <= tol
 
+def ann(bse, **kw):
+    for i in range(5):
+        try:
+            return bse.announcements(**kw)
+        except Exception:
+            time.sleep(5 * (i + 1))
+    return {}
+
 def main():
     t_end = time.time() + BUDGET_MIN * 60
     S, wrong, rows = {}, [], []
@@ -38,7 +46,7 @@ def main():
         for d in DAYS:
             day, pg, tot = [], 1, 0
             while pg <= 40:
-                data = bse.announcements(page_no=pg, from_date=d, to_date=d)
+                data = ann(bse, page_no=pg, from_date=d, to_date=d)
                 t = data.get("Table", [])
                 if not t:
                     break
