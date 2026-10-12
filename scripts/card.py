@@ -2,10 +2,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
-
-BG, PANEL, TEXT, MUTED = "#0f1722", "#18222f", "#e8eef5", "#8fa1b5"
-GREEN, RED, AMBER, BLUE = "#3fb68b", "#ef6b6b", "#e6b450", "#5aa9e6"
-RATING_COLORS = {"Excellent": "#3fb68b", "Great": "#6cc08b", "Good": "#a3c86b", "OK": "#e6b450", "Weak": "#ef6b6b"}
+from theme import BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS
 
 def cr(v):
     return None if v is None else v / 10.0
@@ -15,6 +12,13 @@ def pct(a, b):
     if a is None or b is None or b == 0 or a < 0 or b < 0:
         return None
     if abs(b) < 10:
+        return None
+    v = (a - b) / b * 100
+    return None if abs(v) > 1000 else v
+
+def pct_eps(a, b):
+    # EPS is in rupees (not Rs million): no tiny-base rule, only sign and sanity checks
+    if a is None or b is None or b <= 0 or a < 0:
         return None
     v = (a - b) / b * 100
     return None if abs(v) > 1000 else v
@@ -47,7 +51,7 @@ def _has_nc(cur, prev, yago):
     for base in (prev, yago):
         if not base:
             continue
-        e, pt = pct(cur.get("eps"), base.get("eps")), pct(cur.get("pat"), base.get("pat"))
+        e, pt = pct_eps(cur.get("eps"), base.get("eps")), pct(cur.get("pat"), base.get("pat"))
         if e is not None and pt is not None and abs(e - pt) > 5:
             return True
     return False
@@ -62,13 +66,13 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
     fig.text(0.04, 0.875, f"{ticker}  |  {quarters[0]['q']} results  |  {basis.capitalize()}  |  ₹ Crore", color=MUTED, fontsize=15, va="center")
     # rating badge
     fig.patches.append(FancyBboxPatch((0.74, 0.86), 0.22, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
-    fig.text(0.85, 0.905, rate.upper(), color="#0b1118", fontsize=24, fontweight="bold", ha="center", va="center")
-    fig.text(0.85, 0.868, "RATING (draft rule)", color="#0b1118", fontsize=9, ha="center", va="center")
+    fig.text(0.85, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
+    fig.text(0.85, 0.868, "RATING (draft rule)", color="#ffffff", fontsize=9, ha="center", va="center")
     # table
     cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "QoQ", "YoY"]
     xs = [0.04, 0.32, 0.46, 0.60, 0.75, 0.88]
     top = 0.78
-    fig.patches.append(FancyBboxPatch((0.03, 0.40), 0.94, 0.41, boxstyle="round,pad=0.003,rounding_size=0.01", transform=fig.transFigure, facecolor=PANEL, edgecolor="none"))
+    fig.patches.append(FancyBboxPatch((0.03, 0.40), 0.94, 0.41, boxstyle="round,pad=0.003,rounding_size=0.01", transform=fig.transFigure, facecolor=PANEL, edgecolor=BORDER, linewidth=1))
     for x, c in zip(xs, cols):
         fig.text(x if x == xs[0] else x + 0.05, top, c, color=MUTED, fontsize=15, fontweight="bold", ha="left" if x == xs[0] else "right", va="center")
     money = [cr(m.get(k)) for m in (cur, prev, yago) if m for k in ("revenue", "ebitda", "pat") if m.get(k) is not None]
@@ -94,7 +98,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                 chg = None if c is None or base is None else c - base
                 txt, col = ("NA", MUTED) if chg is None else (f"{chg:+.1f} pp", GREEN if chg > 0.05 else RED if chg < -0.05 else MUTED)
             else:
-                chg = pct(c, base)
+                chg = pct_eps(c, base) if key == "eps" else pct(c, base)
                 if key == "eps":
                     pc, pb = (cur.get("pat"), (prev if base is p else yago) or {})
                     pat_chg = pct(pc, pb.get("pat") if isinstance(pb, dict) else None)
@@ -113,9 +117,9 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         ax = fig.add_axes([0.05 + i * 0.315, 0.09, 0.27, 0.23], facecolor=BG)
         vals = [(r["m"] or {}).get(key) for r in rows]
         vals = [None if v is None else (v if key == "eps" else cr(v)) for v in vals]
-        bars = ax.bar(range(len(vals)), [v or 0 for v in vals], color=[BLUE if j == len(vals) - 1 else "#3b4d63" for j in range(len(vals))])
+        bars = ax.bar(range(len(vals)), [v or 0 for v in vals], color=[BLUE if j == len(vals) - 1 else BAR_OLD for j in range(len(vals))])
         for j, v in enumerate(vals):
-            ax.text(j, (v or 0), "NA" if v is None else fmt_num(v, 2 if key == "eps" else md), ha="center", va="bottom", color=TEXT, fontsize=10)
+            ax.text(j, (v or 0), "NA" if v is None else fmt_num(v, 2 if key == "eps" else md), ha="center", va="top" if (v is not None and v < 0) else "bottom", color=TEXT, fontsize=10)
         ax.set_xticks(range(len(labels)))
         ax.set_xticklabels(labels, color=MUTED, fontsize=10)
         ax.set_yticks([])
@@ -135,7 +139,7 @@ def render_stub(name, ticker, quarter, reason, out_path):
     fig = plt.figure(figsize=(16, 6), dpi=100, facecolor=BG)
     fig.text(0.04, 0.80, name, color=TEXT, fontsize=30, fontweight="bold", va="center")
     fig.text(0.04, 0.68, f"{ticker}  |  {quarter} results filed", color=MUTED, fontsize=15, va="center")
-    fig.patches.append(FancyBboxPatch((0.03, 0.18), 0.94, 0.38, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=PANEL, edgecolor="none"))
+    fig.patches.append(FancyBboxPatch((0.03, 0.18), 0.94, 0.38, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=PANEL, edgecolor=BORDER, linewidth=1))
     fig.text(0.05, 0.37, "Numbers not shown: " + reason, color=AMBER, fontsize=18, va="center")
     fig.text(0.04, 0.07, "Source: BSE filings. Open the filing link in the caption for the figures. Not investment advice.", color=MUTED, fontsize=12, va="center")
     fig.savefig(out_path, facecolor=BG)
