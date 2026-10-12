@@ -42,7 +42,8 @@ def main():
                     except Exception as e:
                         ci_out.p("Caught error:", rp.redact(repr(e))[:300])
                         posted = -1
-                    if posted != 0:
+                    interesting = any(not x.startswith(("mode=", "done:")) for x in ci_out.OUT)
+                    if posted != 0 or interesting:
                         sent += max(posted, 0)
                         keep += [f"[poll {n} {time.strftime('%H:%M:%S')}] "] + ci_out.OUT
                         if posted > 0:
