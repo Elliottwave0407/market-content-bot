@@ -52,7 +52,7 @@ def _deals_page(items, date_label, page, pages, out_path, note=""):
         yy = y + 1.15
         for r, _ in rs:
             ex = "NSE" if r.get("ex") == "N" else "BSE"
-            fig.text(0.045, fy(yy), f"{r['name'][:24]}", color=TEXT, fontsize=13, fontweight="bold", va="center")
+            fig.text(0.045, fy(yy), f"{r['name'][:19]}", color=TEXT, fontsize=13, fontweight="bold", va="center")
             fig.text(0.215, fy(yy), ex, color=MUTED, fontsize=9, fontweight="bold", ha="right", va="center")
             fig.text(0.235, fy(yy), f"{r['client'][:30]}", color=TEXT, fontsize=12.5, fontweight="bold", va="center")
             fig.text(0.60, fy(yy), indian(r["qty"]), color=TEXT, fontsize=13, fontweight="bold", ha="right", va="center")

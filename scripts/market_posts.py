@@ -156,6 +156,8 @@ def do_deals():
     except Exception as e:
         p("block.csv failed:", repr(e)[:120])
         block = []
+    seen = {(x["sym"], x["client"], x["side"], x["qty"], x["price"], x["date"]) for x in bulk}
+    block = [x for x in block if (x["sym"], x["client"], x["side"], x["qty"], x["price"], x["date"]) not in seen]  # same trade can sit in both files
     nse = bulk + block
     if not nse:
         p("No NSE rows.")
