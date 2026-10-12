@@ -26,6 +26,11 @@ def ann(bse, **kw):
         except Exception: time.sleep(5 * (i + 1))
     return {}
 
+HB = []
+def col(d, k, i):
+    v = (d or {}).get(k)
+    return v[i] if isinstance(v, list) and len(v) > i and isinstance(v[i], (int, float)) else None
+
 def col0(d, k):
     v = (d or {}).get(k)
     return v[0] if isinstance(v, list) and v else None
@@ -108,6 +113,20 @@ def main():
                     ok = close(col0(d, "revenue"), tr["revenue"], k) and close(col0(d, "pat"), tr["pat"], k)
                     ck = checks(d)
                     cp = bool(ck) and all(ck.values()); cf = bool(ck) and not all(ck.values())
+                    hv = {"rev": [], "pat": []}
+                    for off, idx in ((1, 1), (4, 2)):
+                        try:
+                            h = rf.fetch(bse, code, name, basis, q - off)
+                        except Exception:
+                            h = None
+                        if not h:
+                            continue
+                        if h.get("revenue") is not None and col(d, "revenue", idx) is not None:
+                            hv["rev"].append(abs(col(d, "revenue", idx) * k - h["revenue"]) <= max(0.6, 0.005 * abs(h["revenue"])))
+                        if h.get("pat") is not None and col(d, "pat", idx) is not None:
+                            hv["pat"].append(abs(col(d, "pat", idx) * k - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"])))
+                    ruleB = len(hv["rev"]) >= 1 and all(hv["rev"]) and all(hv["pat"]) and len(hv["pat"]) >= 1
+                    HB.append((name[:22], basis[:4], ok, cp, cf, ruleB, len(hv["rev"]), len(hv["pat"])))
                     tag = ("ok" if ok else "WRONG") + ("_chk_pass" if cp else "_chk_fail" if cf else "_chk_na")
                     if res is None or ok: res = tag
                     if not ok and res and res.startswith("WRONG") and len(bad) < 25:
@@ -121,7 +140,17 @@ def main():
     ok = sum(v for k, v in S.items() if k.startswith("ok"))
     p("SUMMARY:", S)
     p(f"compared {n}: correct {ok} ({100 * ok / max(n, 1):.0f}%), calls {ncalls}")
-    for x in bad[:40]: p(x)
+    T = {}
+    best = {}
+    for nm, b, ok_, cp, cf, rb, nr, np_ in HB:
+        best.setdefault(nm, []).append((ok_, cp, cf, rb, nr, np_))
+    for nm, lst in best.items():
+        ok_, cp, cf, rb, nr, np_ = max(lst, key=lambda x: (x[0], x[1], x[3]))
+        k2 = f"arith={'pass' if cp else 'fail' if cf else 'n/a'} history={'strong' if rb else 'no'} -> {'CORRECT' if ok_ else 'WRONG'}"
+        T[k2] = T.get(k2, 0) + 1
+    p("RULE TABLE (one row per filing, best basis):")
+    for k2 in sorted(T): p("  ", k2, T[k2])
+    for x in bad[:30]: p(x)
 
 try:
     main()
