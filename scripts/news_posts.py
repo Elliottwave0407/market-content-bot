@@ -271,8 +271,8 @@ def _rss_tick():
     return changed, lines
 
 def tick(bse):
-    """Called by the poll loop (live only). Returns (changed, lines)."""
-    if not (SEND and CHAT):
+    """Called by the poll loop (live only). Returns (changed, lines). Off unless NEWS_LIVE=1 (switched on only after Mayank approves the dry run)."""
+    if not (SEND and CHAT) or os.environ.get("NEWS_LIVE", "0") != "1":
         return False, []
     a, la = False, []
     try:
