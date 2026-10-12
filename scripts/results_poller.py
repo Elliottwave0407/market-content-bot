@@ -118,7 +118,7 @@ def build(bse, rec, final=False):
     basis = "consolidated" if res["consolidated"] else "standalone"
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
-    if not quarters[0]["m"] or not quarters[1]["m"]:
+    if not quarters[0]["m"]:
         if not final:
             return ("wait", "comparison data incomplete", None, f"{code}|{res['quarter']}|wait")
         return stub(name, code, res["quarter"], "comparison data incomplete", lk, f"{code}|{res['quarter']}|incomplete")
