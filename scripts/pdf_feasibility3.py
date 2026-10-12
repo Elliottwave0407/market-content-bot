@@ -11,6 +11,8 @@ DAYS = [datetime(2026, 8, d) for d in (4, 6, 7, 11, 12, 13, 14)]
 PER_DAY = int(os.environ.get("PER_DAY", "22"))
 BUDGET_MIN = float(os.environ.get("BUDGET_MIN", "32"))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Referer": "https://www.bseindia.com/"}
+DIAG = ("Safari Ind", "Alembic", "Advent Hotels", "Medi Caps", "PG Electro", "Belrise", "Tavexia", "Gopal Snacks")
+DONE = set()
 C = ".pdfcache"
 os.makedirs(C, exist_ok=True)
 
@@ -94,6 +96,14 @@ def main():
                     bump("pdf_error"); continue
                 cached = {"pages": pages, "ocr": ocrp, "rows": rows_}
                 jsave(rf_, cached)
+            if any(k in name for k in DIAG) and name not in DONE:
+                DONE.add(name)
+                rr = cached["rows"]
+                idx = [i for i, x in enumerate(rr) if any(w in " ".join(x).lower() for w in ("revenue from op", "total income", "net sales"))][:1]
+                i0 = idx[0] if idx else 0
+                p(f"## RAW {name[:28]} pages={cached['pages']} ocr={cached['ocr']} nrows={len(rr)}")
+                for x in rr[max(0, i0 - 4): i0 + 14]:
+                    p("   ", " | ".join(x)[:150])
             tables = pr.parse(cached["rows"])
             if cached["ocr"]: bump("ocr_files")
             good = [t for t in tables if "rev" in t["vals"] and "pat" in t["vals"]]
