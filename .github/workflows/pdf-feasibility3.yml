@@ -1,0 +1,20 @@
+name: pdf-feasibility3
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: .pdfcache
+          key: pdfcache-${{ github.run_id }}
+          restore-keys: pdfcache-
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr
+      - run: pip install bse requests pymupdf
+      - run: python scripts/pdf_feasibility3.py
