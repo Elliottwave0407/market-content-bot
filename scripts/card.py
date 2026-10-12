@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
-from theme import BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS
+from theme import HEAD, BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS
 
 def cr(v):
     return None if v is None else v / 10.0
@@ -74,7 +74,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
     top = 0.78
     fig.patches.append(FancyBboxPatch((0.03, 0.40), 0.94, 0.41, boxstyle="round,pad=0.003,rounding_size=0.01", transform=fig.transFigure, facecolor=PANEL, edgecolor=BORDER, linewidth=1))
     for x, c in zip(xs, cols):
-        fig.text(x if x == xs[0] else x + 0.05, top, c, color=MUTED, fontsize=15, fontweight="bold", ha="left" if x == xs[0] else "right", va="center")
+        fig.text(x if x == xs[0] else x + 0.05, top, c, color=HEAD, fontsize=15, fontweight="bold", ha="left" if x == xs[0] else "right", va="center")
     money = [cr(m.get(k)) for m in (cur, prev, yago) if m for k in ("revenue", "ebitda", "pat") if m.get(k) is not None]
     md = 0 if money and max(abs(v) for v in money) >= 1000 else 1
     items = [("Sales", "revenue", md), ("Operating profit", "ebitda", md), ("OPM %", "opm", 1), ("Net profit (PAT)", "pat", md), ("EPS (₹)", "eps", 2)]
@@ -90,9 +90,9 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         c, p, yy = val(cur), val(prev), val(yago)
         if c is None and key in ("ebitda", "opm"):
             continue
-        fig.text(xs[0], y, label, color=TEXT, fontsize=18, va="center")
+        fig.text(xs[0], y, label, color=TEXT, fontsize=18, fontweight="bold", va="center")
         for x, v in ((xs[1], c), (xs[2], p), (xs[3], yy)):
-            fig.text(x + 0.05, y, fmt_num(v, d) if key != "opm" else ("NA" if v is None else f"{v:.1f}%"), color=TEXT, fontsize=18, ha="right", va="center")
+            fig.text(x + 0.05, y, fmt_num(v, d) if key != "opm" else ("NA" if v is None else f"{v:.1f}%"), color=TEXT, fontsize=18, fontweight="bold", ha="right", va="center")
         for x, base in ((xs[4], p), (xs[5], yy)):
             if key == "opm":
                 chg = None if c is None or base is None else c - base
@@ -119,13 +119,13 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         vals = [None if v is None else (v if key == "eps" else cr(v)) for v in vals]
         bars = ax.bar(range(len(vals)), [v or 0 for v in vals], color=[BLUE if j == len(vals) - 1 else BAR_OLD for j in range(len(vals))])
         for j, v in enumerate(vals):
-            ax.text(j, (v or 0), "NA" if v is None else fmt_num(v, 2 if key == "eps" else md), ha="center", va="top" if (v is not None and v < 0) else "bottom", color=TEXT, fontsize=10)
+            ax.text(j, (v or 0), "NA" if v is None else fmt_num(v, 2 if key == "eps" else md), ha="center", va="top" if (v is not None and v < 0) else "bottom", color=TEXT, fontsize=11, fontweight="bold")
         ax.set_xticks(range(len(labels)))
-        ax.set_xticklabels(labels, color=MUTED, fontsize=10)
+        ax.set_xticklabels(labels, color=HEAD, fontsize=11, fontweight="bold")
         ax.set_yticks([])
         for sp in ax.spines.values():
             sp.set_visible(False)
-        ax.set_title(title, color=TEXT, fontsize=14, loc="left")
+        ax.set_title(title, color=TEXT, fontsize=15, fontweight="bold", loc="left")
         ax.margins(y=0.2)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
     fig.text(0.04, 0.035, "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice." + (f"  {filed_note}" if filed_note else ""), color=MUTED, fontsize=11, va="center")

@@ -16,18 +16,25 @@ q2[0] = {"q": "Sep-26", "m": m(88.0, None, -12.5, -1.4)}
 q2[1] = {"q": "Jun-26", "m": m(95.0, None, 3.0, 0.3)}
 card.render("Loss Making Co Ltd", "BSE 500001", "standalone", q2, f"{out}/results_loss_light.png", filed_note=S)
 card.render_stub("Sample Insurance Ltd", "BSE 500002", "Q2 FY27", "BSE has not published structured numbers for this filing", f"{out}/stub_light.png")
-deals = [
- {"name": "Awfis Space Solutions", "client": "Peak XV Partners Investments", "side": "S", "qty": 1250000, "price": 412.5, "cr": 51.56, "stake": 1.78, "mcap": 2890, "ex": "N"},
- {"name": "Awfis Space Solutions", "client": "Peak XV Partners Investments", "side": "S", "qty": 380000, "price": 411.9, "cr": 15.65, "stake": 0.54, "mcap": 2890, "ex": "B"},
- {"name": "Jindal Supreme", "client": "Sample Fund A", "side": "B", "qty": 268700, "price": 145.2, "cr": 3.9, "stake": 1.12, "mcap": 350, "ex": "N"},
- {"name": "Paramount Syntex", "client": "Share India Securities", "side": "B", "qty": 4500000, "price": 12.4, "cr": 5.58, "stake": 16.08, "mcap": 35, "ex": "B"},
- {"name": "Anthem Biosciences", "client": "Sample Mutual Fund B", "side": "B", "qty": 800000, "price": 640.0, "cr": 51.2, "stake": 0.53, "mcap": 9650, "ex": "N"},
- {"name": "Tourism Finance Corp", "client": "Sample Trust C", "side": "B", "qty": 1500000, "price": 150.0, "cr": 22.5, "stake": 0.6, "mcap": 3750, "ex": "N"},
- {"name": "Vans Chemistry", "client": "Sample Investor D", "side": "S", "qty": 500000, "price": 38.0, "cr": 1.9, "stake": 3.99, "mcap": None, "ex": "B"},
-]
-cm.render_deals(deals, "09 Oct 2026", f"{out}/deals_light.png", note=S)
-cm.render_fii_dii({"date": "09 Oct 2026", "fii": {"buy": 14250.4, "sell": 16810.2, "net": -2559.8}, "dii": {"buy": 13120.7, "sell": 10480.1, "net": 2640.6},
-                   "history": [{"date": "03 Oct", "fii": -1200, "dii": 1800}, {"date": "06 Oct", "fii": 450, "dii": 900}, {"date": "07 Oct", "fii": -3100, "dii": 2900}, {"date": "08 Oct", "fii": -800, "dii": 1500}, {"date": "09 Oct", "fii": -2559.8, "dii": 2640.6}]},
+import random
+rnd = random.Random(3)
+names = ["Anthem Biosciences", "Tourism Finance Corp", "Paramount Syntex", "Jindal Supreme", "Awfis Space Solutions", "Vans Chemistry", "Sample Textiles", "Alpha Engineering", "Beta Pharma", "Gamma Foods", "Delta Infra", "Omega Polymers"]
+clients = ["Sample Mutual Fund", "Sample Trust", "Sample Investor", "Sample Securities", "Sample Fund", "Sample Partners"]
+deals = []
+for i in range(52):
+    price = round(rnd.uniform(10, 900), 2)
+    qty = rnd.randint(40, 2000) * 1000
+    deals.append({"name": names[i % len(names)], "client": f"{clients[i % len(clients)]} {chr(65 + i % 26)}", "side": "B" if i % 5 else "S", "qty": qty, "price": price,
+                  "cr": qty * price / 1e7, "stake": None if i % 13 == 0 else round(rnd.uniform(0.1, 6), 2), "mcap": None if i % 13 == 0 else rnd.randint(30, 12000), "ex": "N" if i % 3 else "B"})
+paths = cm.render_deals(deals, "09 Oct 2026", f"{out}/deals_light", note=S)
+print(paths)
+days = ["01 Oct", "03 Oct", "06 Oct", "07 Oct", "08 Oct", "09 Oct"]
+mt = []
+for dname in days:
+    fb, fs, db, ds = rnd.uniform(9000, 16000), rnd.uniform(9000, 16000), rnd.uniform(9000, 16000), rnd.uniform(9000, 16000)
+    mt.append({"date": dname, "fii_buy": fb, "fii_sell": fs, "fii_net": fb - fs, "dii_buy": db, "dii_sell": ds, "dii_net": db - ds})
+last = mt[-1]
+cm.render_fii_dii({"date": "09 Oct 2026", "month": "Oct 2026", "fii": {"buy": last["fii_buy"], "sell": last["fii_sell"], "net": last["fii_net"]}, "dii": {"buy": last["dii_buy"], "sell": last["dii_sell"], "net": last["dii_net"]}, "mtd": mt},
                   f"{out}/fii_dii_light.png", note=S)
 cm.render_news({"tag": "ORDER WIN", "company": "Sample Engineering Ltd", "meta": "BSE 500003  |  12 Oct 2026, 16:20 IST",
                 "headline": "Sample Engineering receives order worth Rs 245 crore from a state power utility",

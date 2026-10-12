@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 
 BG, PANEL, BORDER = "#ffffff", "#f3f6fa", "#dde4ec"
-TEXT, MUTED = "#0f1722", "#556577"
-GREEN, RED, AMBER, BLUE = "#0f7a4b", "#c62f2f", "#a86a00", "#2a78d6"
+TEXT, MUTED, HEAD = "#03070c", "#4a596a", "#1d2937"
+GREEN, RED, AMBER, BLUE = "#0a6a40", "#b3201c", "#8f5700", "#1f66c1"
 BAR_OLD = "#b9c6d6"
 RATING_COLORS = {"Excellent": "#0f7a4b", "Great": "#3a9a5b", "Good": "#7d9b1a", "OK": "#b97400", "Weak": "#c62f2f"}
 TAGS = {"ORDER WIN": "#2a78d6", "ACQUISITION": "#6250d6", "CREDIT RATING": "#b97400", "DIVIDEND": "#0f7a4b",
