@@ -2,7 +2,7 @@
 import os, re, subprocess, tempfile
 
 NUMTOK = re.compile(r"^\(?-?[\d,]*\d(\.\d+)?\)?$")
-DASHES = {"-", "–", "—", "--", "nil", "Nil", "NIL"}
+DASHES = {"-", "–", "—", "--", "nil", "Nil", "NIL", "=", "_"}
 UNIT_RE = re.compile(r"(lakhs?|lacs?|crores?|millions?|mn|thousands?)", re.I)
 UNIT_MILLION = {"lakh": 0.1, "lac": 0.1, "crore": 10.0, "million": 1.0, "mn": 1.0, "thousand": 0.001}
 
@@ -63,6 +63,30 @@ def extract_rows(content, ocr_max=8, max_pages=14):
         out.append(["<<PAGE>>"])
     return len(doc), ocrp, out
 
+def _fix(tok):
+    """Repair common text-layer glitches: '149,77' -> '149.77'; '1.710.72' -> '1,710.72'."""
+    if re.match(r"^\(?-?\d{1,3}(,\d{2,3})*,\d{2}\)?$", tok) and not re.match(r"^\(?-?\d{1,3}(,\d{2})+,\d{3}\)?$", tok):
+        m = re.match(r"^(\(?-?)([\d,]+),(\d{2})(\)?)$", tok)
+        if m and (len(m.group(2).split(",")[-1]) in (1, 2, 3)) and "," in tok and tok.count(",") >= 1:
+            # decimal comma only if the last group has exactly 2 digits AND the token is not valid Indian/western grouping
+            if not re.match(r"^\(?-?\d{1,3}(,\d{3})*\)?$", tok) and not re.match(r"^\(?-?\d{1,2}(,\d{2})*,\d{3}\)?$", tok):
+                return m.group(1) + m.group(2) + "." + m.group(3) + m.group(4)
+    if re.match(r"^\(?-?\d{1,3}(\.\d{3})+\.\d{2}\)?$", tok):
+        m = re.match(r"^(\(?-?)([\d.]+)\.(\d{2})(\)?)$", tok)
+        return m.group(1) + m.group(2).replace(".", ",") + "." + m.group(3) + m.group(4)
+    return tok
+
+def _merge(row):
+    out, i = [], 0
+    while i < len(row):
+        t = row[i]
+        if i + 1 < len(row) and re.match(r"^\(?-?[\d,]*\d[,.]$", t) and re.match(r"^[\d,]*\d(\.\d+)?\)?$", row[i + 1].lstrip("(")):
+            out.append(t + row[i + 1]); i += 2; continue
+        if t in ("(", "(-") and i + 1 < len(row) and re.match(r"^[\d,]*\d(\.\d+)?\)?$", row[i + 1]):
+            out.append("(" + row[i + 1]); i += 2; continue
+        out.append(t); i += 1
+    return [_fix(x) for x in out]
+
 def _num(tok):
     if tok in DASHES:
         return 0.0, 0
@@ -80,6 +104,7 @@ def _num(tok):
 
 def _split(row):
     """-> (label, [(value,decs),...]); numbers = trailing numeric tokens after last alphabetic token."""
+    row = _merge(row)
     last_alpha = -1
     for i, t in enumerate(row):
         if _num(t) is None:
@@ -118,13 +143,16 @@ def _field(label):
     return None
 
 def parse(rows):
-    """-> list of tables: {basis, unit, unit_name, vals{field:[(v,decs)x<=3]}}"""
-    tables, cur, basis, unit = [], None, None, None
+    """-> list of tables: {basis, unit, vals{field:[(v,decs)x<=3]}}. Side-by-side standalone|consolidated tables are split."""
+    tables, curs, basis, unit = [], None, None, None
+    recent = []
     for r in rows:
         if r == ["<<PAGE>>"]:
             continue
         text = " ".join(r)
         low = text.lower()
+        recent.append(low)
+        recent = recent[-14:]
         u = _unit_of(text) if re.search(r"rs|₹|inr|in (lakh|lac|crore|million|mn|thousand)", low) else None
         if u:
             unit = u
@@ -134,18 +162,38 @@ def parse(rows):
             basis = "standalone"
         label, nums = _split(r)
         f = _field(label) if nums else None
-        if f in ("rev", "rev_total") and (cur is None or ("rev" in cur["vals"] and f == "rev" and cur["rowcount"] > 25)):
-            cur = {"basis": basis, "unit": unit, "vals": {}, "rowcount": 0}
-            tables.append(cur)
-        if cur is not None:
-            cur["rowcount"] += 1
-            if f and nums and f not in cur["vals"]:
-                cur["vals"][f] = nums[:3]
-            elif f == "rev_total" and nums:
-                cur["vals"]["rev"] = nums[:3]
-            if cur["unit"] is None and unit:
-                cur["unit"] = unit
-    return [t for t in tables if "rev" in t["vals"] or "rev_total" in t["vals"]]
+        if f in ("rev", "rev_total") and (curs is None or ("rev" in curs[0]["vals"] and f == "rev" and curs[0]["rowcount"] > 25)):
+            hdr = " ".join(recent)
+            ps, pc = hdr.find("standalone"), hdr.find("consolidated")
+            n = len(nums)
+            if ps >= 0 and pc >= 0 and n >= 6 and n % 2 == 0:
+                order = ["standalone", "consolidated"] if ps < pc else ["consolidated", "standalone"]
+                curs = [{"basis": order[0], "unit": unit, "vals": {}, "rowcount": 0, "split": True},
+                        {"basis": order[1], "unit": unit, "vals": {}, "rowcount": 0, "split": True}]
+            else:
+                curs = [{"basis": basis, "unit": unit, "vals": {}, "rowcount": 0, "split": False}]
+            tables.extend(curs)
+        if curs is not None:
+            for c in curs:
+                c["rowcount"] += 1
+                if c["unit"] is None and unit:
+                    c["unit"] = unit
+            if f and nums:
+                n = len(nums)
+                if curs[0]["split"] and n >= 6 and n % 2 == 0:
+                    parts = [nums[: n // 2][:3], nums[n // 2:][:3]]
+                    for c, part in zip(curs, parts):
+                        if f == "rev_total":
+                            c["vals"]["rev"] = part
+                        elif f not in c["vals"]:
+                            c["vals"][f] = part
+                else:
+                    c = curs[0]
+                    if f == "rev_total":
+                        c["vals"]["rev"] = nums[:3]
+                    elif f not in c["vals"]:
+                        c["vals"][f] = nums[:3]
+    return [t for t in tables if "rev" in t["vals"]]
 
 def checks(t):
     """Arithmetic checks on the current-quarter column. -> dict of bool/None"""

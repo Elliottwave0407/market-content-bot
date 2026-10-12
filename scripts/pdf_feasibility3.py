@@ -11,8 +11,19 @@ DAYS = [datetime(2026, 8, d) for d in (4, 6, 7, 11, 12, 13, 14)]
 PER_DAY = int(os.environ.get("PER_DAY", "22"))
 BUDGET_MIN = float(os.environ.get("BUDGET_MIN", "32"))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Referer": "https://www.bseindia.com/"}
-DIAG = ("Safari Ind", "Alembic", "Advent Hotels", "Medi Caps", "PG Electro", "Belrise", "Tavexia", "Gopal Snacks")
-DONE = set()
+NDUMP = [0]
+def rawdump(name, cached, why):
+    if NDUMP[0] >= 9:
+        return
+    rr = cached["rows"]
+    idx = [i for i, x in enumerate(rr) if any(w in " ".join(x).lower() for w in ("revenue from op", "total income", "income from op", "net sales"))][:1]
+    if not idx:
+        return
+    NDUMP[0] += 1
+    i0 = idx[0]
+    p(f"## RAW[{why}] {name[:28]} pages={cached['pages']} ocr={cached['ocr']}")
+    for x in rr[max(0, i0 - 2): i0 + 12]:
+        p("   ", " | ".join(x)[:140])
 C = ".pdfcache"
 os.makedirs(C, exist_ok=True)
 
@@ -96,19 +107,11 @@ def main():
                     bump("pdf_error"); continue
                 cached = {"pages": pages, "ocr": ocrp, "rows": rows_}
                 jsave(rf_, cached)
-            if any(k in name for k in DIAG) and name not in DONE:
-                DONE.add(name)
-                rr = cached["rows"]
-                idx = [i for i, x in enumerate(rr) if any(w in " ".join(x).lower() for w in ("revenue from op", "total income", "net sales"))][:1]
-                i0 = idx[0] if idx else 0
-                p(f"## RAW {name[:28]} pages={cached['pages']} ocr={cached['ocr']} nrows={len(rr)}")
-                for x in rr[max(0, i0 - 4): i0 + 14]:
-                    p("   ", " | ".join(x)[:150])
             tables = pr.parse(cached["rows"])
             if cached["ocr"]: bump("ocr_files")
             good = [t for t in tables if "rev" in t["vals"] and "pat" in t["vals"]]
             if not good:
-                bump("not_parsed"); rows.append(f"{name[:24]:24} NOT_PARSED tables={len(tables)} ocr={cached['ocr']}"); continue
+                bump("not_parsed"); rawdump(name, cached, "noparse"); rows.append(f"{name[:24]:24} NOT_PARSED tables={len(tables)} ocr={cached['ocr']}"); continue
             sel = next((t for t in good if t["basis"] == "consolidated"), None) or next((t for t in good if t["basis"] == "standalone"), None) or good[0]
             ck = pr.checks(sel)
             ck_pass = bool(ck) and all(ck.values())
@@ -137,6 +140,7 @@ def main():
             tag = ("ok" if res else "WRONG") + ("_chk_pass" if ck_pass else ("_chk_fail" if ck_fail else "_chk_na"))
             bump(tag)
             if not res:
+                rawdump(name, cached, "wrong")
                 tr = truth[sel["basis"]]
                 wrong.append(f"{name[:22]} {sel['basis']} unit={sel['unit'] and sel['unit'][0]} ocr={cached['ocr']} parsed rev={sel['vals']['rev'][0][0]} pat={sel['vals']['pat'][0][0]} truth(mn) rev={tr['revenue']} pat={tr['pat']} {ck}")
     n = sum(v for k, v in S.items() if k.startswith(("ok", "WRONG", "basis_")))
