@@ -80,8 +80,18 @@ def main():
                 stats["no_bse_table"] = stats.get("no_bse_table", 0) + 1
                 continue
             try:
-                resp = requests.get("https://www.bseindia.com/xml-data/corpfiling/AttachLive/" + r["ATTACHMENTNAME"], headers=UA, timeout=60)
-                pages, txt = pdf_text(resp.content)
+                content, src = b"", ""
+                for folder in ("AttachLive", "AttachHis"):
+                    resp = requests.get(f"https://www.bseindia.com/xml-data/corpfiling/{folder}/" + r["ATTACHMENTNAME"], headers=UA, timeout=60)
+                    if resp.content[:4] == b"%PDF":
+                        content, src = resp.content, folder
+                        break
+                if not content:
+                    stats["download_not_pdf"] = stats.get("download_not_pdf", 0) + 1
+                    rows.append(f"{name[:26]:26} NOT A PDF (last status {resp.status_code}, {len(resp.content)} bytes, starts {resp.content[:30]!r})")
+                    continue
+                stats["src_" + src] = stats.get("src_" + src, 0) + 1
+                pages, txt = pdf_text(content)
             except Exception as e:
                 stats["pdf_error"] = stats.get("pdf_error", 0) + 1
                 rows.append(f"{name[:26]:26} PDF_ERROR {repr(e)[:60]}")
@@ -101,7 +111,7 @@ def main():
             stats[key] = stats.get(key, 0) + 1
             rows.append(f"{name[:26]:26} pages={pages} chars={len(txt.strip())} -> {key} {hit or ''}")
     p("SUMMARY:", stats)
-    done = sum(stats.get(k, 0) for k in ("match", "text_but_no_match", "scanned_or_no_text", "pdf_error"))
+    done = sum(stats.get(k, 0) for k in ("match", "text_but_no_match", "scanned_or_no_text", "pdf_error", "download_not_pdf"))
     if done:
         p(f"tested {done} PDFs: match {stats.get('match', 0)} ({100 * stats.get('match', 0) / done:.0f}%), scanned {stats.get('scanned_or_no_text', 0)}, text-but-no-match {stats.get('text_but_no_match', 0)}")
     for x in rows[:120]:
