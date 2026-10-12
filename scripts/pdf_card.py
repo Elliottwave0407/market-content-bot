@@ -110,20 +110,26 @@ def try_pdf(bse, rec, st, headline, filed):
         if not d or val(d, "revenue", 0) is None or val(d, "pat", 0) is None:
             continue
         ok, n = arith_ok(d)
-        if not ok:
-            LOG.append(f"pdf checks failed {rec.get('SLONGNAME')} {basis}")
-            continue
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
-        hist, note = {}, ""
+        hist, hpat = {}, {}
         for off, m in ((1, prev), (4, yago)):
             h = rf.fetch(bse, code, name, basis, q - off)
             if h and h.get("revenue") is not None and m["revenue"] is not None:
                 hist[off] = close(m["revenue"], h["revenue"])
+            if h and h.get("pat") is not None and m["pat"] is not None:
+                hpat[off] = abs(m["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))
         if hist and not all(hist.values()):
             LOG.append(f"pdf history mismatch {name} {basis}")
-            return None
-        note = "history-verified" if hist else "no BSE history (arithmetic-checked only)"
+            continue
+        strong = len(hist) == 2 and len(hpat) == 2 and all(hpat.values())
+        if not ok and not strong:
+            LOG.append(f"pdf checks failed {name} {basis}")
+            continue
+        if ok:
+            note = "history-verified" if hist else "no BSE history (arithmetic-checked only)"
+        else:
+            note = "verified against BSE's previous quarters"
         r0, r1 = cur["revenue"], prev["revenue"]
         if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
             return None
