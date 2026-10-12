@@ -153,7 +153,7 @@ def parse(rows):
         low = text.lower()
         recent.append(low)
         recent = recent[-14:]
-        u = _unit_of(text) if re.search(r"rs|₹|inr|in (lakh|lac|crore|million|mn|thousand)", low) else None
+        u = _unit_of(text) if (len(r) <= 12 and re.search(r"rs|₹|inr|in (lakh|lac|crore|million|mn|thousand)|amount|figures", low)) else None
         if u:
             unit = u
         if re.search(r"consolidated (unaudited |audited )?(financial )?results|statement of (unaudited |audited )?consolidated|consolidated unaudited|consolidated financial results", low):

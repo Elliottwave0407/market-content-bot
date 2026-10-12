@@ -13,16 +13,18 @@ BUDGET_MIN = float(os.environ.get("BUDGET_MIN", "32"))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Referer": "https://www.bseindia.com/"}
 NDUMP = [0]
 def rawdump(name, cached, why):
-    if NDUMP[0] >= 9:
+    if NDUMP[0] >= 12:
         return
     rr = cached["rows"]
-    idx = [i for i, x in enumerate(rr) if any(w in " ".join(x).lower() for w in ("revenue from op", "total income", "income from op", "net sales"))][:1]
+    pat = why == "wrong"
+    keys = ("profit after tax", "net profit", "profit for the", "profit/(loss) for", "profit / (loss) for") if pat else ("revenue from op", "total income", "income from op", "net sales")
+    idx = [i for i, x in enumerate(rr) if any(w in " ".join(x).lower() for w in keys)][:1]
     if not idx:
         return
     NDUMP[0] += 1
     i0 = idx[0]
     p(f"## RAW[{why}] {name[:28]} pages={cached['pages']} ocr={cached['ocr']}")
-    for x in rr[max(0, i0 - 2): i0 + 12]:
+    for x in rr[max(0, i0 - 4): i0 + 5]:
         p("   ", " | ".join(x)[:140])
 C = ".pdfcache"
 os.makedirs(C, exist_ok=True)
