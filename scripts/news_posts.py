@@ -293,7 +293,12 @@ def tick(bse):
         lb = [f"news rss error: {repr(e)[:150]}"]
     return a or b, la + lb
 
-def preview(day=None, per_tag=2):
+def send_text(txt):
+    import requests
+    r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", json={"chat_id": CHAT, "text": txt}, timeout=30)
+    return r.json()
+
+def preview(day=None, per_tag=2, send=False):
     """Dry run: render sample cards (real filings of a past day) into OUT_DIR. No sending, no state."""
     from bse import BSE
     day = day or datetime.now(IST).replace(tzinfo=None)
@@ -308,6 +313,8 @@ def preview(day=None, per_tag=2):
             if len(rows) >= (d.get("Table1") or [{}])[0].get("ROWCNT", 0):
                 break
             pg += 1
+    if send and TOKEN and CHAT:
+        send_text(f"TEST BATCH - sample news cards built from real filings of {day:%d %b %Y}. Please share feedback on content and format (what is useful, what is noise, anything missing). Live cards start soon.")
     by = {}
     for r in rows:
         tg = classify(r)
@@ -318,17 +325,20 @@ def preview(day=None, per_tag=2):
         for r in v[:per_tag]:
             path, cap = build_card(r, tg)
             p("card", tg, company_of(r), "->", path)
-            p("   caption:", cap.replace("\n", " | ")[:200])
+            if send and TOKEN and CHAT:
+                p("   sent:", send_photo(path, cap).get("ok")); time.sleep(3.2)
     for tag, url, rx in RSS:
         try:
             for x in fetch_rss(tag, url, rx)[:2]:
                 path, cap = build_rss_card(x)
                 p("card", tag, x["title"][:60], "->", path)
+                if send and TOKEN and CHAT:
+                    p("   sent:", send_photo(path, cap).get("ok")); time.sleep(3.2)
         except Exception as e:
             p(tag, "feed error", repr(e)[:100])
 
 if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "preview":
     from ci_out import publish
     d = datetime.strptime(sys.argv[2], "%Y-%m-%d") if len(sys.argv) > 2 else None
-    preview(d)
+    preview(d, send=os.environ.get("NEWS_TEST_SEND", "0") == "1")
     publish()

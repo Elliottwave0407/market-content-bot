@@ -5,6 +5,9 @@ on:
       day:
         description: "YYYY-MM-DD announcements day to sample (default today)"
         default: "2026-10-12"
+      send:
+        description: "1 = send the sample cards to the market group as a test"
+        default: "0"
 permissions:
   contents: write
 jobs:
@@ -17,7 +20,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python scripts/news_posts.py preview "${{ github.event.inputs.day }}"
+      - name: Build sample cards
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          NEWS_TEST_SEND: ${{ github.event.inputs.send || '0' }}
+        run: python scripts/news_posts.py preview "${{ github.event.inputs.day }}"
       - name: Publish preview PNGs
         if: always()
         run: |
