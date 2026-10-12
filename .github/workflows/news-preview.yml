@@ -1,0 +1,31 @@
+name: news-preview
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "YYYY-MM-DD announcements day to sample (default today)"
+        default: "2026-10-12"
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/news_posts.py preview "${{ github.event.inputs.day }}"
+      - name: Publish preview PNGs
+        if: always()
+        run: |
+          set -e
+          [ -d out ] || exit 0
+          mkdir /tmp/pv && cp out/*.png /tmp/pv/ 2>/dev/null || exit 0
+          cd /tmp/pv
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "news preview"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards

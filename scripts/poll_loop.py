@@ -13,6 +13,12 @@ except Exception as _e:
 
 LOOP_MIN = float(os.environ.get("POLL_LOOP_MINUTES", "345"))
 INTERVAL = int(os.environ.get("POLL_INTERVAL", "10"))
+try:
+    import news_posts as npst
+    npst.SEND = os.environ.get('POLL_SEND', '0') == '1'
+except Exception as _e:
+    npst = None
+    print('news_posts unavailable:', repr(_e)[:120])
 from bse import BSE
 
 def git(*a):
@@ -63,6 +69,15 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("market tick error: " + rp.redact(repr(e))[:200])
+                    if npst is not None:
+                        try:
+                            nchanged, nlines = npst.tick(bse)
+                            if nlines:
+                                keep += [f"[news {time.strftime('%H:%M:%S')}] "] + nlines
+                            if nchanged:
+                                commit_state()
+                        except Exception as e:
+                            keep.append("news tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:

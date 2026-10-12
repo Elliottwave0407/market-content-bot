@@ -68,6 +68,33 @@ def parse_dt(rec):
     except Exception:
         return None
 
+GENERIC_RX = re.compile(r"^(as enclosed|please find( the)? enclosed|enclosed|intimation|please find attached|attached|kindly find|as attached|pursuant to)", re.I)
+
+def pdf_excerpt(rec, limit=650):
+    """First meaningful text of the filing PDF (as filed, no rewriting). None if unreadable/scanned."""
+    import requests, io
+    url = link(rec)
+    if not url.lower().endswith(".pdf"):
+        return None
+    try:
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        if r.status_code != 200 or len(r.content) > 6_000_000:
+            return None
+        from pypdf import PdfReader
+        rd = PdfReader(io.BytesIO(r.content))
+        txt = " ".join((rd.pages[i].extract_text() or "") for i in range(min(2, len(rd.pages))))
+    except Exception:
+        return None
+    txt = re.sub(r"\s+", " ", txt).strip()
+    if len(txt) < 80:
+        return None
+    m = re.search(r"\b(sub(ject)?|re|ref)\s*[:\-\.]\s*", txt, re.I)
+    if m and m.start() < len(txt) * 0.6:
+        txt = txt[m.start():]
+    else:
+        txt = re.sub(r"^(to,?\s*)?(the\s+)?(manager|secretary|general manager|listing)[^.]{0,200}?(mumbai|exchange|limited)[^.]{0,120}?(dear sir[^,.]*[,.]?|sir[^,.]*[,.])?\s*", "", txt, count=1, flags=re.I)
+    return txt[:limit].rstrip() + ("..." if len(txt) > limit else "")
+
 def build_card(rec, tag):
     dt = parse_dt(rec)
     when = dt.strftime("%d %b %Y, %H:%M IST") if dt else ""
@@ -77,6 +104,10 @@ def build_card(rec, tag):
         body = ""
     more = re.sub(r"\s+", " ", (rec.get("MORE") or "").strip())
     detail = (body or more)[:700] or None
+    if not detail or len(detail) < 70 or GENERIC_RX.match(detail):
+        ex = pdf_excerpt(rec)
+        if ex:
+            detail = ex
     it = {"tag": tag, "company": company_of(rec)[:48], "meta": f"BSE {rec.get('SCRIP_CD')}  |  {when}", "headline": head, "detail": detail, "source": "BSE announcement"}
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f"news_{rec['NEWSID']}.png")
@@ -122,10 +153,36 @@ def fetch_today(bse, seen):
         pg += 1
     return rows
 
-_last = [0.0]
+RSS = (("RBI", "https://www.rbi.org.in/pressreleases_rss.xml", re.compile(r"auction|treasury bill|ways and means|money market operation|state development loan|indicative calendar|weekly statistical|result of", re.I)),
+       ("SEBI", "https://www.sebi.gov.in/sebirss.xml", None))
 
-def tick(bse):
-    """Called by the poll loop (live only). Returns (changed, lines)."""
+def fetch_rss(tag, url, skip_rx):
+    import requests
+    import xml.etree.ElementTree as ET
+    from html import unescape
+    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+    root = ET.fromstring(r.content.decode("utf-8-sig", "ignore").encode("utf-8"))
+    out = []
+    for it in root.iter("item"):
+        title = re.sub(r"\s+", " ", unescape((it.findtext("title") or "").strip()))
+        if not title or (skip_rx and skip_rx.search(title)):
+            continue
+        desc = re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", it.findtext("description") or ""))).strip()
+        out.append({"id": f"{tag}:{it.findtext('guid') or it.findtext('link') or title}", "tag": tag, "title": title, "link": it.findtext("link") or "", "desc": desc if desc.lower() != title.lower() else "", "date": (it.findtext("pubDate") or "").strip()})
+    return out
+
+def build_rss_card(x):
+    os.makedirs(OUT, exist_ok=True)
+    org = "Reserve Bank of India" if x["tag"] == "RBI" else "SEBI"
+    it = {"tag": x["tag"], "company": org, "meta": f"Press release  |  {x['date']}"[:90], "headline": x["title"], "detail": (x["desc"] or None) and x["desc"][:650], "source": f"{org} website"}
+    path = os.path.join(OUT, f"news_{abs(hash(x['id']))}.png")
+    CM.render_news(it, path)
+    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nSource: {org} website. Text as published. Not investment advice."
+
+_last = [0.0]
+_last_rss = [0.0]
+
+def _bse_tick(bse):
     if not (SEND and CHAT):
         return False, []
     if time.time() - _last[0] < 20:
@@ -169,3 +226,102 @@ def tick(bse):
     if changed:
         jsave(st)
     return changed, lines
+
+
+def _rss_tick():
+    if time.time() - _last_rss[0] < 60:
+        return False, []
+    _last_rss[0] = time.time()
+    st = jload()
+    seen = set(st["ids"])
+    lines, changed, posted = [], False, 0
+    for tag, url, rx in RSS:
+        try:
+            items = [x for x in fetch_rss(tag, url, rx) if x["id"] not in seen]
+        except Exception as e:
+            lines.append(f"{tag} feed error: {repr(e)[:100]}")
+            continue
+        if not items:
+            continue
+        if not st.get(f"init_{tag}"):
+            st["ids"] += [x["id"] for x in items]
+            st[f"init_{tag}"] = True
+            changed = True
+            lines.append(f"{tag} baseline set ({len(items)})")
+            continue
+        for x in reversed(items):          # feeds list newest first
+            if posted >= 4:
+                break
+            try:
+                path, cap = build_rss_card(x)
+                res = send_photo(path, cap)
+            except Exception as e:
+                lines.append(f"{tag} card error: {repr(e)[:100]}")
+                continue
+            if not res.get("ok"):
+                lines.append(f"{tag} send failed: {str(res.get('description'))[:80]}")
+                continue
+            st["ids"].append(x["id"])
+            changed = True
+            posted += 1
+            lines.append(f"news posted {tag}: {x['title'][:50]}")
+            time.sleep(3.2)
+    if changed:
+        jsave(st)
+    return changed, lines
+
+def tick(bse):
+    """Called by the poll loop (live only). Returns (changed, lines)."""
+    if not (SEND and CHAT):
+        return False, []
+    a, la = False, []
+    try:
+        a, la = _bse_tick(bse)
+    except Exception as e:
+        la = [f"news bse error: {repr(e)[:150]}"]
+    b, lb = False, []
+    try:
+        b, lb = _rss_tick()
+    except Exception as e:
+        lb = [f"news rss error: {repr(e)[:150]}"]
+    return a or b, la + lb
+
+def preview(day=None, per_tag=2):
+    """Dry run: render sample cards (real filings of a past day) into OUT_DIR. No sending, no state."""
+    from bse import BSE
+    day = day or datetime.now(IST).replace(tzinfo=None)
+    rows, pg = [], 1
+    with BSE(download_folder="./") as bse:
+        while pg <= 60:
+            d = bse.announcements(page_no=pg, from_date=day, to_date=day)
+            t = d.get("Table", [])
+            if not t:
+                break
+            rows += t
+            if len(rows) >= (d.get("Table1") or [{}])[0].get("ROWCNT", 0):
+                break
+            pg += 1
+    by = {}
+    for r in rows:
+        tg = classify(r)
+        if tg:
+            by.setdefault(tg, []).append(r)
+    for tg, v in by.items():
+        v.sort(key=lambda r: -len(r.get("HEADLINE") or ""))
+        for r in v[:per_tag]:
+            path, cap = build_card(r, tg)
+            p("card", tg, company_of(r), "->", path)
+            p("   caption:", cap.replace("\n", " | ")[:200])
+    for tag, url, rx in RSS:
+        try:
+            for x in fetch_rss(tag, url, rx)[:2]:
+                path, cap = build_rss_card(x)
+                p("card", tag, x["title"][:60], "->", path)
+        except Exception as e:
+            p(tag, "feed error", repr(e)[:100])
+
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "preview":
+    from ci_out import publish
+    d = datetime.strptime(sys.argv[2], "%Y-%m-%d") if len(sys.argv) > 2 else None
+    preview(d)
+    publish()
