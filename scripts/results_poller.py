@@ -32,6 +32,8 @@ def load_state():
     except Exception:
         return {"ids": [], "posted": []}
 
+_TEST_SEEN = set()
+
 def save_state(st):
     if ONLY:
         return
@@ -237,6 +239,10 @@ def main(bse_in=None, known=None, fast=False):
                 continue
             if kind != "line" and posted >= MAX_POSTS:
                 continue
+            if ONLY:
+                if key in _TEST_SEEN:
+                    continue
+                _TEST_SEEN.add(key)
             if key in st["posted"] and not ONLY:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
