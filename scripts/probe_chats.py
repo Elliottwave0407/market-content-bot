@@ -1,15 +1,10 @@
-import os, requests
+import os, requests, json
 from ci_out import p, publish
 tok = os.environ["TELEGRAM_BOT_TOKEN"]
 r = requests.get(f"https://api.telegram.org/bot{tok}/getUpdates", params={"timeout": 0}, timeout=30).json()
-seen = {}
+p("ok:", r.get("ok"), "updates:", len(r.get("result", [])), r.get("description"))
 for u in r.get("result", []):
-    for k in ("message", "edited_message", "my_chat_member", "channel_post"):
-        m = u.get(k)
-        if m and m.get("chat"):
-            c = m["chat"]
-            seen[c["id"]] = (c.get("title"), c.get("type"))
-p("ok:", r.get("ok"), "updates:", len(r.get("result", [])))
-for cid, (t, ty) in seen.items():
-    p("CHAT", cid, "|", t, "|", ty)
+    p("UPDATE", u["update_id"], [k for k in u if k != "update_id"], json.dumps(u.get("callback_query", {}).get("data")))
+wh = requests.get(f"https://api.telegram.org/bot{tok}/getWebhookInfo", timeout=30).json()
+p("webhook:", json.dumps(wh.get("result", {}))[:300])
 publish()
