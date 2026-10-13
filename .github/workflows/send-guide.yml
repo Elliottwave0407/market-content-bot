@@ -10,7 +10,4 @@ jobs:
           T: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           A: ${{ secrets.TELEGRAM_CHAT_ID }}
           B: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
-        run: |
-          for c in "$A" "$B"; do
-            curl -s -X POST "https://api.telegram.org/bot$T/sendMessage" --data-urlencode "chat_id=$c" --data-urlencode "text@drafts/button_guide.txt" | python3 -c "import sys,json; print('ok', json.load(sys.stdin).get('ok'))"
-          done
+        run: pip install requests -q && python scripts/send_guide.py
