@@ -12,4 +12,5 @@ jobs:
       - run: pip install requests
       - env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
         run: python scripts/probe_chats.py

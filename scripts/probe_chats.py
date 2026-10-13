@@ -1,10 +1,11 @@
-import os, requests, json
+import os, sys, json
+sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
-tok = os.environ["TELEGRAM_BOT_TOKEN"]
-r = requests.get(f"https://api.telegram.org/bot{tok}/getUpdates", params={"timeout": 0}, timeout=30).json()
-p("ok:", r.get("ok"), "updates:", len(r.get("result", [])), r.get("description"))
-for u in r.get("result", []):
-    p("UPDATE", u["update_id"], [k for k in u if k != "update_id"], json.dumps(u.get("callback_query", {}).get("data")))
-wh = requests.get(f"https://api.telegram.org/bot{tok}/getWebhookInfo", timeout=30).json()
+import xbuttons as xb
+p("TOKEN set:", bool(xb.TOKEN), "| CHAT:", xb.CHAT)
+r = xb._call("getUpdates", offset=0, timeout=0, allowed_updates=json.dumps(["callback_query"]))
+p("getUpdates ->", json.dumps(r)[:400])
+import requests
+wh = requests.get(f"{xb.API}/getWebhookInfo", timeout=30).json()
 p("webhook:", json.dumps(wh.get("result", {}))[:300])
 publish()
