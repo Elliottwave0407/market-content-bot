@@ -100,6 +100,22 @@ def try_pdf(bse, rec, st, headline, filed):
     if not k or qe is None:
         LOG.append(f"pdf unusable {rec.get('SLONGNAME')}: unit/date missing")
         return None
+    # Some filings list the columns as current | year-ago | previous. If the model reported the column dates in that order, swap the number columns to match.
+    try:
+        ms = []
+        for c in cols[:3]:
+            pq = parse_qend(c)
+            ms.append(pq[0] * 12 + pq[1] if pq else None)
+        if len(ms) == 3 and None not in ms and (ms[0] - ms[1]) >= 9 and 1 <= (ms[0] - ms[2]) <= 5:
+            for b_ in ("consolidated", "standalone"):
+                d_ = out.get(b_)
+                if isinstance(d_, dict):
+                    for kk, vv in list(d_.items()):
+                        if isinstance(vv, list) and len(vv) >= 3:
+                            vv[1], vv[2] = vv[2], vv[1]
+            LOG.append(f"pdf columns were current|year-ago|previous: swapped {rec.get('SLONGNAME')}")
+    except Exception as e_:
+        LOG.append(f"pdf column-order check failed: {repr(e_)[:60]}")
     q_pdf = rf.qcode(qe[0], qe[1])
     if q_head is not None and q_head != q_pdf:
         LOG.append(f"pdf quarter mismatch {rec.get('SLONGNAME')}")
@@ -124,7 +140,7 @@ def try_pdf(bse, rec, st, headline, filed):
             if h and h.get("pat") is not None and m["pat"] is not None:
                 hpat[off] = abs(m["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))
         if hist and not all(hist.values()):
-            LOG.append(f"pdf history mismatch {name} {basis} :: " + "; ".join(det))
+            LOG.append(f"pdf history mismatch {name} {basis} cols={cols[:3]} :: " + "; ".join(det))
             continue
         strong = len(hist) == 2 and len(hpat) == 2 and all(hpat.values())
         if not ok and not strong:
