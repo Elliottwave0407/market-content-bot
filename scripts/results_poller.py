@@ -7,6 +7,7 @@ from ci_out import p, publish
 import results_fetcher as rf
 import card
 import pdf_card
+import xbuttons
 
 SEND = os.environ.get("POLL_SEND", "0") == "1"
 MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
@@ -240,7 +241,7 @@ def main(bse_in=None, known=None, fast=False):
                 lines.append((rec["NEWSID"], key, text))
                 continue
             if SEND:
-                r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024]}, files={"photo": open(png, "rb")}) if kind == "photo" \
+                r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024], "reply_markup": xbuttons.markup(text)}, files={"photo": open(png, "rb")}) if kind == "photo" \
                     else tg("sendMessage", json={"chat_id": chat, "text": text[:4000], "disable_web_page_preview": True})
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):

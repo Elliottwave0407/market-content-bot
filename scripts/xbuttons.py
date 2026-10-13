@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 IST = timezone(timedelta(hours=5, minutes=30))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("MARKET_CHAT_ID", "").strip()
+CHATS = {c for c in (CHAT, os.environ.get("TELEGRAM_CHAT_ID", "").strip()) if c}
 API = f"https://api.telegram.org/bot{TOKEN}"
 _offset = [0]
 
@@ -26,7 +27,7 @@ def _call(method, **data):
 
 def poll():
     """Returns list of log lines (empty when nothing happened)."""
-    if not TOKEN or not CHAT:
+    if not TOKEN or not CHATS:
         return []
     r = _call("getUpdates", offset=_offset[0], timeout=0, allowed_updates=json.dumps(["callback_query"]))
     lines = []
@@ -36,7 +37,7 @@ def poll():
         if not cq:
             continue
         msg = cq.get("message") or {}
-        if str((msg.get("chat") or {}).get("id")) != CHAT:
+        if str((msg.get("chat") or {}).get("id")) not in CHATS:
             continue
         who = (cq.get("from") or {}).get("first_name") or "Someone"
         cap = msg.get("caption") or ""
@@ -47,7 +48,7 @@ def poll():
         stamp = datetime.now(IST).strftime("%d %b, %H:%M")
         tag = f"✅ Posted on X by {who} · {stamp}" if cq["data"] == "xp" else f"⏭ Skipped by {who} · {stamp}"
         new_cap = cap[: 1024 - len(tag) - 3].rstrip() + "\n\n" + tag
-        e = _call("editMessageCaption", chat_id=CHAT, message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": []}))
+        e = _call("editMessageCaption", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": []}))
         _call("answerCallbackQuery", callback_query_id=cq["id"], text="Marked ✅" if cq["data"] == "xp" else "Skipped")
         lines.append(f"x-button: {tag} (edit ok={e.get('ok')})")
     return lines
