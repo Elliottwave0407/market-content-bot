@@ -15,6 +15,7 @@ DAYS_BACK = int(os.environ.get("POLL_DAYS", "1"))
 MIN_CR = float(os.environ.get("POLL_MIN_CR", "0"))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "24"))   # how long to wait for BSE numbers before posting a no-numbers card
+ONLY = [x.strip().upper() for x in os.environ.get("POLL_ONLY", "").split(",") if x.strip()]   # test mode: only these companies, ignores/does not touch saved state
 RETRY_SEC = int(os.environ.get("POLL_RETRY_SEC", "90"))
 STATE = "state/seen.json"
 _ST = None
@@ -32,6 +33,8 @@ def load_state():
         return {"ids": [], "posted": []}
 
 def save_state(st):
+    if ONLY:
+        return
     os.makedirs("state", exist_ok=True)
     st["ids"] = st["ids"][-5000:]
     st["posted"] = st["posted"][-5000:]
@@ -208,7 +211,10 @@ def main(bse_in=None, known=None, fast=False):
     ctx = nullcontext(bse_in) if bse_in is not None else BSE(download_folder="./")
     with ctx as bse:
         filings = fetch_filings(bse, known, fast)
-        new = [r for r in filings if r["NEWSID"] not in st["ids"]]
+        if ONLY:
+            new = [r for r in filings if any(k in (r.get("SLONGNAME") or "").upper() for k in ONLY)]
+        else:
+            new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
         lines = []
         now = time.time()
@@ -231,7 +237,7 @@ def main(bse_in=None, known=None, fast=False):
                 continue
             if kind != "line" and posted >= MAX_POSTS:
                 continue
-            if key in st["posted"]:
+            if key in st["posted"] and not ONLY:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
                 pend.pop(nid, None)
@@ -241,12 +247,15 @@ def main(bse_in=None, known=None, fast=False):
                 lines.append((rec["NEWSID"], key, text))
                 continue
             if SEND:
-                r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024], "reply_markup": xbuttons.markup(text)}, files={"photo": open(png, "rb")}) if kind == "photo" \
+                r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024], "reply_markup": xbuttons.markup("\n".join(text.split("\n")[:2]) + "\n#Results #StockMarketIndia")}, files={"photo": open(png, "rb")}) if kind == "photo" \
                     else tg("sendMessage", json={"chat_id": chat, "text": text[:4000], "disable_web_page_preview": True})
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):
                     continue
                 time.sleep(3.2)
+            if ONLY:
+                posted += 1
+                continue
             st["ids"].append(rec["NEWSID"])
             st["posted"].append(key)
             if key in PDF_AUDIT and SEND:
