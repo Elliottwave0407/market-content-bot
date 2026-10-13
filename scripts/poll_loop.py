@@ -38,6 +38,7 @@ def main():
     git("config", "user.email", "bot@users.noreply.github.com")
     end = time.time() + LOOP_MIN * 60
     keep, n, sent = [], 0, 0
+    news_dirty, last_news_commit = False, 0.0
     known = set()
     while time.time() < end:
         try:
@@ -75,7 +76,10 @@ def main():
                             if nlines:
                                 keep += [f"[news {time.strftime('%H:%M:%S')}] "] + nlines
                             if nchanged:
+                                news_dirty = True
+                            if news_dirty and time.time() - last_news_commit > 180:   # news state: commit at most every 3 min
                                 commit_state()
+                                news_dirty, last_news_commit = False, time.time()
                         except Exception as e:
                             keep.append("news tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
