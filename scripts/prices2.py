@@ -21,7 +21,7 @@ def _f(x):
     except Exception: return 0.0
 
 def _equity_isin(i):
-    return len(i) == 12 and i.startswith("INE") and i[8:10] == "01"
+    return len(i) == 12 and i.startswith("INE") and i[7:9] == "01"
 
 def _rows(rd, exch):
     out = []
@@ -86,6 +86,10 @@ def ensure(days_back=430, max_new=700, log=print):
                 break
             if os.path.exists(_p(d, "skip")):
                 continue
+            for tag in ("nse", "bse"):   # header-only files = written by a buggy earlier filter; refetch
+                fp = _p(d, tag + ".csv.gz")
+                if os.path.exists(fp) and os.path.getsize(fp) < 200:
+                    os.remove(fp)
             if not os.path.exists(_p(d, "nse.csv.gz")):
                 res = fetch_nse(d, s)
                 if res == "nofile":
