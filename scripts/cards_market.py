@@ -302,3 +302,83 @@ def render_mood2(b, out_path, note=""):
         fig.text(0.04, fy(9.2 + 0.32 * k), t, color=MUTED, fontsize=11, va="center")
     T.brand(fig, fy(9.2 + 0.32 * 2))
     T.save(fig, out_path)
+
+# ---------------------------------------------------------------- market breadth v3: headline box + 3 segment boxes
+def render_mood3(b, out_path, note=""):
+    """b = prices2.breadth_segments() output (no liquidity floor by default)."""
+    from datetime import datetime
+    from matplotlib.patches import Rectangle as Rect
+    H = 11.6
+    fig = T.new_fig(16, H)
+    fy = lambda inch: 1 - inch / H
+    try:
+        dl = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
+    except Exception:
+        dl = str(b["date"])
+    A, S = b["all"], b["seg"]
+    fig.text(0.04, fy(0.55), "Market Breadth", color=TEXT, fontsize=32, fontweight="bold", va="center")
+    fig.text(0.04, fy(1.05), f"{dl}  |  NSE + BSE, each company counted once  |  {A['n']:,} stocks traded today", color=MUTED, fontsize=15, va="center")
+
+    def ud_bar(x, w, yin, st, h=0.34, fs=15):
+        tot = max(st["adv"] + st["dec"] + st["unch"], 1)
+        wa, wd, wu = w * st["adv"] / tot, w * st["dec"] / tot, w * st["unch"] / tot
+        for xx, ww, c in ((x, wa, GREEN), (x + wa, wu, "#9aa7b6"), (x + wa + wu, wd, RED)):
+            fig.patches.append(Rect((xx, fy(yin + h)), ww, h / H, transform=fig.transFigure, facecolor=c, edgecolor="none"))
+        fig.text(x, fy(yin + h + 0.28), f"{st['adv']:,} up  ({100 * st['adv'] / tot:.0f}%)", color=GREEN, fontsize=fs, fontweight="bold", va="center")
+        fig.text(x + w, fy(yin + h + 0.28), f"{st['dec']:,} down  ({100 * st['dec'] / tot:.0f}%)", color=RED, fontsize=fs, fontweight="bold", ha="right", va="center")
+
+    # ---- headline box
+    y0, hh = 1.45, 2.85
+    label, mcol = mood_of(A.get("above_50"))
+    T.panel(fig, 0.03, fy(y0 + hh), 0.94, hh / H)
+    fig.patches.append(Rect((0.03, fy(y0 + 0.09)), 0.94, 0.09 / H, transform=fig.transFigure, facecolor=mcol, edgecolor="none"))
+    fig.text(0.05, fy(y0 + 0.5), "Whole market", color=TEXT, fontsize=22, fontweight="bold", va="center")
+    T.chip(fig, 0.755, fy(y0 + 0.72), 0.19, 0.46 / H, f"MOOD: {label}", mcol, 16)
+    ud_bar(0.05, 0.90, y0 + 0.9, A)
+    stats = [("Above 20-day", f"{A['above_20']:.0f}%" if A["above_20"] is not None else "NA"), ("Above 50-day", f"{A['above_50']:.0f}%" if A["above_50"] is not None else "NA"),
+             ("Above 200-day", f"{A['above_200']:.0f}%" if A["above_200"] is not None else "NA"), ("52-week highs", f"{A['new_high']:,}"), ("52-week lows", f"{A['new_low']:,}")]
+    for i, (lab, val) in enumerate(stats):
+        cx = 0.05 + 0.90 * (i + 0.5) / 5
+        col = TEXT
+        if lab.startswith("Above") and val != "NA":
+            v = float(val[:-1]); col = GREEN if v >= 60 else AMBER if v >= 40 else RED
+        elif "highs" in lab: col = GREEN
+        elif "lows" in lab: col = RED
+        fig.text(cx, fy(y0 + 2.05), val, color=col, fontsize=30, fontweight="bold", ha="center", va="center")
+        fig.text(cx, fy(y0 + 2.5), lab, color=HEAD, fontsize=13, fontweight="bold", ha="center", va="center")
+
+    # ---- three segment boxes
+    boxes = [("Large & Mid", "Market cap above ₹10,000 Cr", S["Large & Mid"]),
+             ("Small & Micro", "Market cap below ₹10,000 Cr", S["Small & Micro"]),
+             ("SME", "NSE Emerge + BSE SME", S["SME"])]
+    by, bh, bw = 4.55, 6.0, 0.30
+    for k, (name, sub, st) in enumerate(boxes):
+        x = 0.03 + k * 0.32
+        lab, c = mood_of(st.get("above_50"))
+        T.panel(fig, x, fy(by + bh), bw, bh / H)
+        fig.patches.append(Rect((x, fy(by + 0.09)), bw, 0.09 / H, transform=fig.transFigure, facecolor=c, edgecolor="none"))
+        fig.text(x + 0.015, fy(by + 0.5), name, color=TEXT, fontsize=21, fontweight="bold", va="center")
+        fig.text(x + 0.015, fy(by + 0.88), f"{sub}  |  {st['n']:,} stocks", color=MUTED, fontsize=11, va="center")
+        T.chip(fig, x + 0.015, fy(by + 1.5), bw - 0.03, 0.46 / H, f"MOOD: {lab}", c, 15)
+        ud_bar(x + 0.015, bw - 0.03, by + 1.8, st, h=0.30, fs=13)
+        for i, (k2, lbl) in enumerate((("above_20", "20-day"), ("above_50", "50-day"), ("above_200", "200-day"))):
+            v = st.get(k2)
+            yy = by + 3.0 + i * 0.52
+            fig.text(x + 0.015, fy(yy), lbl, color=HEAD, fontsize=13, fontweight="bold", va="center")
+            fig.patches.append(Rect((x + 0.085, fy(yy + 0.13)), 0.14, 0.26 / H, transform=fig.transFigure, facecolor="#dde4ec", edgecolor="none"))
+            if v is not None:
+                col = GREEN if v >= 60 else AMBER if v >= 40 else RED
+                fig.patches.append(Rect((x + 0.085, fy(yy + 0.13)), 0.14 * v / 100, 0.26 / H, transform=fig.transFigure, facecolor=col, edgecolor="none"))
+                fig.text(x + bw - 0.012, fy(yy), f"{v:.0f}%", color=col, fontsize=16, fontweight="bold", ha="right", va="center")
+        fig.text(x + 0.015, fy(by + 2.72), "Above their average", color=MUTED, fontsize=11, va="center")
+        for i, (val, lbl, col) in enumerate(((st["new_high"], "52-wk highs", GREEN), (st["new_low"], "52-wk lows", RED), (st["up4"], "Up 4%+", GREEN), (st["down4"], "Down 4%+", RED))):
+            cx = x + bw * (i % 2 * 0.5 + 0.25)
+            cy = by + 4.75 + (i // 2) * 0.72
+            fig.text(cx - 0.012, fy(cy), f"{val:,}", color=col, fontsize=22, fontweight="bold", ha="right", va="center")
+            fig.text(cx - 0.006, fy(cy), lbl, color=HEAD, fontsize=11, fontweight="bold", ha="left", va="center")
+    f1 = "Mood rule: share of stocks above their 50-day average. 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak. Every stock that traded on NSE or BSE today is included, once."
+    f2 = f"{b.get('unclassified', 0)} stocks without a market cap are counted in the whole-market box only. Derived from NSE and BSE end-of-day data. Not investment advice.{(' ' + note) if note else ''}"
+    for k, t in enumerate((f1, f2)):
+        fig.text(0.04, fy(10.85 + 0.3 * k), t, color=MUTED, fontsize=10.5, va="center")
+    T.brand(fig, fy(10.85 + 0.3))
+    T.save(fig, out_path)

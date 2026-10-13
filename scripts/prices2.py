@@ -13,8 +13,8 @@ BSE_GRP = {"A", "B", "T", "X", "XT", "Z", "M", "MT", "MS"}
 BSE_SME = {"M", "MT", "MS"}
 COLS = ["exch", "isin", "sym", "series", "prev", "open", "high", "low", "close", "vol", "val"]
 # draft segment rules (printed on the card): market cap in Rs Cr (main board, current BSE market cap), liquidity floor = traded value that day in Rs lakh
-SEGMENTS = [("Large & Mid", 10000, None, 100.0), ("Small", 2000, 10000, 10.0), ("Micro", 0, 2000, 10.0)]
-SME_FLOOR = 5.0
+SEGMENTS = [("Large & Mid", 10000, None), ("Small & Micro", 0, 10000)]   # main board by current BSE market cap (Rs Cr)
+FLOOR_LAKH = float(os.environ.get("BREADTH_FLOOR_LAKH", "0"))   # 0 = every stock that traded today
 
 def _f(x):
     try: return float(x)
@@ -171,14 +171,12 @@ def breadth_segments(df, mc):
     t = df[(df["date"] == last) & (df["val"] > 0)].copy()
     t["mc"] = t["isin"].map(mc)
     sme = ((t["exch"] == "NSE") & t["series"].isin(NSE_SME)) | ((t["exch"] == "BSE") & t["series"].isin(BSE_SME))
-    parts, seg_stats = [], {}
-    for name, lo, hi, floor in SEGMENTS:
-        m = (~sme) & t["mc"].notna() & (t["mc"] >= lo) & ((t["mc"] < hi) if hi else True) & (t["turn"] >= floor)
-        parts.append(t[m]); seg_stats[name] = _stats(t[m])
-    m = sme & (t["turn"] >= SME_FLOOR)
-    parts.append(t[m]); seg_stats["SME"] = _stats(t[m])
-    import pandas as pd
-    allp = pd.concat(parts)
-    unclassified = int(((~sme) & t["mc"].isna()).sum())
-    return {"date": last, "all": _stats(allp), "seg": seg_stats, "unclassified": unclassified,
-            "traded_total": int(len(t)), "floors": {n: f for n, _, _, f in SEGMENTS} | {"SME": SME_FLOOR}}
+    seg_stats = {}
+    ok = t["turn"] >= FLOOR_LAKH
+    for name, lo, hi in SEGMENTS:
+        m = (~sme) & t["mc"].notna() & (t["mc"] >= lo) & ((t["mc"] < hi) if hi else True) & ok
+        seg_stats[name] = _stats(t[m])
+    seg_stats["SME"] = _stats(t[sme & ok])
+    unclassified = int(((~sme) & t["mc"].isna() & ok).sum())
+    return {"date": last, "all": _stats(t[ok]), "seg": seg_stats, "unclassified": unclassified,
+            "traded_total": int(len(t)), "floor_lakh": FLOOR_LAKH}

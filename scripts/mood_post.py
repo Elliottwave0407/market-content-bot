@@ -11,13 +11,13 @@ A, S = b["all"], b["seg"]
 p(json.dumps(b))
 os.makedirs("out", exist_ok=True)
 png = "out/mood.png"
-cm.render_mood2(b, png)
+cm.render_mood3(b, png)
 label, _ = cm.mood_of(A.get("above_50"))
 from datetime import datetime
 d = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
-cap = (f"Market breadth - {d} (NSE + BSE, {A['n']:,} stocks counted)\n"
+cap = (f"Market breadth - {d} (NSE + BSE, {A['n']:,} stocks traded)\n"
        f"Up {A['adv']:,} | Down {A['dec']:,} | {A['above_50']:.0f}% above 50-day average | Mood: {label}\n"
-       + "\n".join(f"{n}: {S[n]['above_50']:.0f}% above 50-day, up {S[n]['adv']:,} / down {S[n]['dec']:,}" for n in ("Large & Mid", "Small", "Micro", "SME")))
+       + "\n".join(f"{n}: {S[n]['above_50']:.0f}% above 50-day, up {S[n]['adv']:,} / down {S[n]['dec']:,}" for n in ("Large & Mid", "Small & Micro", "SME")))
 tweet = cap + "\n#StockMarketIndia #Nifty"
 p("caption:", cap.replace("\n", " / "))
 if SEND:
