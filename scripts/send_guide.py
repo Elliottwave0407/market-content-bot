@@ -1,6 +1,6 @@
 import os, requests
 T = os.environ["T"].strip()
-text = open("drafts/button_guide.txt", encoding="utf-8").read()
+text = open("messages/button_guide.txt", encoding="utf-8").read()
 for name in ("A", "B"):
     c = os.environ.get(name, "").strip()
     if not c:
