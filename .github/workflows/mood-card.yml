@@ -5,6 +5,8 @@ on:
       send:
         description: "1 = send to the market group, 0 = dry run (preview branch)"
         default: "0"
+permissions:
+  contents: write
 jobs:
   mood:
     runs-on: ubuntu-latest
