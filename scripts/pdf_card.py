@@ -115,15 +115,16 @@ def try_pdf(bse, rec, st, headline, filed):
         ok, n = arith_ok(d)
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
-        hist, hpat = {}, {}
+        hist, hpat, det = {}, {}, []
         for off, m in ((1, prev), (4, yago)):
             h = rf.fetch(bse, code, name, basis, q - off)
+            det.append(f"q-{off}: pdf rev {m.get('revenue')} pat {m.get('pat')} | bse rev {h and h.get('revenue')} pat {h and h.get('pat')} (Rs mn)")
             if h and h.get("revenue") is not None and m["revenue"] is not None:
                 hist[off] = close(m["revenue"], h["revenue"])
             if h and h.get("pat") is not None and m["pat"] is not None:
                 hpat[off] = abs(m["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))
         if hist and not all(hist.values()):
-            LOG.append(f"pdf history mismatch {name} {basis}")
+            LOG.append(f"pdf history mismatch {name} {basis} :: " + "; ".join(det))
             continue
         strong = len(hist) == 2 and len(hpat) == 2 and all(hpat.values())
         if not ok and not strong:
