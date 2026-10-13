@@ -29,9 +29,27 @@ def poll():
     """Returns list of log lines (empty when nothing happened)."""
     if not TOKEN or not CHATS:
         return []
-    r = _call("getUpdates", offset=_offset[0], timeout=0, allowed_updates=json.dumps(["callback_query"]))
+    try:
+        import feedback_store as fs
+    except Exception:
+        fs = None
+    keep_msgs = bool(fs and fs.enabled())
+    allowed = ["callback_query", "message", "edited_message"] if keep_msgs else ["callback_query"]
+    r = _call("getUpdates", offset=_offset[0], timeout=0, allowed_updates=json.dumps(allowed))
     lines = []
-    for u in r.get("result", []) or []:
+    ups = r.get("result", []) or []
+    if keep_msgs and ups:
+        labels = {}
+        if CHAT: labels[CHAT] = "market"
+        rc = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+        if rc: labels[rc] = "results"
+        try:
+            n = fs.ingest(ups, TOKEN, labels)
+            if n:
+                lines.append(f"feedback: saved {n} message(s) (encrypted)")
+        except Exception as e:
+            lines.append("feedback error: " + repr(e)[:80].replace(TOKEN, "***"))
+    for u in ups:
         _offset[0] = max(_offset[0], u["update_id"] + 1)
         cq = u.get("callback_query")
         if not cq:

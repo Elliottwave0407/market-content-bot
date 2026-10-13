@@ -30,7 +30,7 @@ def git(*a):
     return subprocess.run(["git", *a], capture_output=True, text=True)
 
 def commit_state():
-    git("add", "state")
+    git("add", "state", "feedback")
     if git("diff", "--cached", "--quiet").returncode != 0:
         git("commit", "-q", "-m", "Poller state")
         for _ in range(3):
@@ -78,8 +78,11 @@ def main():
                     if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
                         try:
                             xlines = xb.poll()
-                            if xlines:
-                                keep += [f"[x {time.strftime('%H:%M:%S')}] "] + xlines
+                            if any(z.startswith('feedback: saved') for z in xlines):
+                                commit_state()
+                            rest = [z for z in xlines if not z.startswith('feedback: saved')]
+                            if rest:
+                                keep += [f"[x {time.strftime('%H:%M:%S')}] "] + rest
                         except Exception as e:
                             keep.append("x-button error: " + rp.redact(repr(e))[:200])
                     if npst is not None:
