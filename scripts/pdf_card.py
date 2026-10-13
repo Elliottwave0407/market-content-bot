@@ -131,14 +131,28 @@ def try_pdf(bse, rec, st, headline, filed):
         ok, n = arith_ok(d)
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
-        hist, hpat, det = {}, {}, []
+        hist, hpat, det, hs = {}, {}, [], {}
         for off, m in ((1, prev), (4, yago)):
             h = rf.fetch(bse, code, name, basis, q - off)
+            hs[off] = h
             det.append(f"q-{off}: pdf rev {m.get('revenue')} pat {m.get('pat')} | bse rev {h and h.get('revenue')} pat {h and h.get('pat')} (Rs mn)")
             if h and h.get("revenue") is not None and m["revenue"] is not None:
                 hist[off] = close(m["revenue"], h["revenue"])
             if h and h.get("pat") is not None and m["pat"] is not None:
                 hpat[off] = abs(m["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))
+        if hist and not all(hist.values()) and len(hist) == 2 and hs.get(1) and hs.get(4):
+            # the filing may list year-ago before previous quarter: accept the swap only if BSE history matches the swapped columns on revenue AND profit
+            a, b2 = hs[1], hs[4]
+            if None not in (a.get("revenue"), a.get("pat"), b2.get("revenue"), b2.get("pat"), prev["revenue"], prev["pat"], yago["revenue"], yago["pat"]) \
+                    and close(prev["revenue"], b2["revenue"]) and close(yago["revenue"], a["revenue"]) \
+                    and abs(prev["pat"] - b2["pat"]) <= max(1.0, 0.03 * abs(b2["pat"])) and abs(yago["pat"] - a["pat"]) <= max(1.0, 0.03 * abs(a["pat"])):
+                for kk, vv in list(d.items()):
+                    if isinstance(vv, list) and len(vv) >= 3:
+                        vv[1], vv[2] = vv[2], vv[1]
+                cur, prev, yago = (to_m(d, i, k) for i in range(3))
+                hist = {1: True, 4: True}
+                hpat = {1: True, 4: True}
+                LOG.append(f"pdf previous/year-ago columns were swapped vs BSE history: corrected {name} {basis}")
         if hist and not all(hist.values()):
             LOG.append(f"pdf history mismatch {name} {basis} cols={cols[:3]} :: " + "; ".join(det))
             continue
