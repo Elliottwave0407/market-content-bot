@@ -230,3 +230,75 @@ def render_mood(b, out_path, note=""):
     T.footer(fig, f"Mood rule: % of these stocks above their 50-day average (65+ Strong, 50+ Positive, 35+ Mixed, 20+ Weak). Derived from NSE end-of-day data. Not investment advice.{(' ' + note) if note else ''}", fy(H - 0.35))
     T.brand(fig, fy(H - 0.35))
     T.save(fig, out_path)
+
+# ---------------------------------------------------------------- market breadth v2: aggregated + segregated (one card)
+def render_mood2(b, out_path, note=""):
+    """b = prices2.breadth_segments() output. Columns: All counted + each segment."""
+    from datetime import datetime
+    cols = [("All", b["all"], None)] + [(n, b["seg"][n], b["floors"][n]) for n in ("Large & Mid", "Small", "Micro", "SME")]
+    H = 10.45
+    fig = T.new_fig(16, H)
+    fy = lambda inch: 1 - inch / H
+    Rect = __import__("matplotlib.patches", fromlist=["Rectangle"]).Rectangle
+    try:
+        dl = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
+    except Exception:
+        dl = str(b["date"])
+    A = b["all"]
+    label, mcol = mood_of(A.get("above_50"))
+    fig.text(0.04, fy(0.55), "Market Breadth: All Segments", color=TEXT, fontsize=30, fontweight="bold", va="center")
+    fig.text(0.04, fy(1.05), f"{dl}  |  NSE + BSE, each stock counted once  |  {A['n']:,} stocks counted of {b['traded_total']:,} traded", color=MUTED, fontsize=15, va="center")
+    T.chip(fig, 0.745, fy(0.95), 0.215, 0.62 / H, f"OVERALL: {label}", mcol, 19)
+    T.panel(fig, 0.03, fy(8.95), 0.94, 7.7 / H)
+    xl = 0.045
+    xs = [0.36 + i * 0.123 for i in range(5)]       # right edges of the 5 value columns
+    y_head = 1.9
+    fig.text(xl, fy(y_head), "", fontsize=12)
+    for (name, st, floor), x in zip(cols, xs):
+        fig.text(x, fy(y_head - 0.12), name, color=TEXT, fontsize=16, fontweight="bold", ha="right", va="center")
+        fig.text(x, fy(y_head + 0.28), "all counted" if floor is None else ("min ₹%g Cr/day" % (floor / 100) if floor >= 100 else "min ₹%g L/day" % floor), color=MUTED, fontsize=11, ha="right", va="center")
+    rows = [
+        ("Stocks counted", lambda s: f"{s['n']:,}", None),
+        ("Up", lambda s: f"{s['adv']:,}", GREEN),
+        ("Down", lambda s: f"{s['dec']:,}", RED),
+        ("Up share", lambda s: f"{100 * s['adv'] / max(s['n'], 1):.0f}%", "pct_up"),
+        ("Above 20-day average", lambda s: "NA" if s["above_20"] is None else f"{s['above_20']:.0f}%", "pct"),
+        ("Above 50-day average", lambda s: "NA" if s["above_50"] is None else f"{s['above_50']:.0f}%", "pct"),
+        ("Above 200-day average", lambda s: "NA" if s["above_200"] is None else f"{s['above_200']:.0f}%", "pct"),
+        ("52-week highs", lambda s: f"{s['new_high']:,}", GREEN),
+        ("52-week lows", lambda s: f"{s['new_low']:,}", RED),
+        ("Up 4%+ today", lambda s: f"{s['up4']:,}", GREEN),
+        ("Down 4%+ today", lambda s: f"{s['down4']:,}", RED),
+    ]
+    y = 2.75
+    step = 0.50
+    for i, (lab, fn, col) in enumerate(rows):
+        yy = y + i * step
+        if i % 2 == 0:
+            fig.patches.append(Rect((0.04, fy(yy + step / 2)), 0.92, step / H, transform=fig.transFigure, facecolor="#e9eff6", edgecolor="none"))
+        fig.text(xl, fy(yy), lab, color=HEAD, fontsize=15, fontweight="bold", va="center")
+        for (name, st, floor), x in zip(cols, xs):
+            txt = fn(st)
+            c = TEXT
+            if col == "pct":
+                v = float(txt[:-1]) if txt != "NA" else None
+                c = MUTED if v is None else GREEN if v >= 60 else AMBER if v >= 40 else RED
+            elif col == "pct_up":
+                v = float(txt[:-1]); c = GREEN if v >= 55 else AMBER if v >= 45 else RED
+            elif col:
+                c = col
+            fig.text(x, fy(yy), txt, color=c, fontsize=16, fontweight="bold", ha="right", va="center")
+    yy = y + len(rows) * step + 0.12
+    fig.text(xl, fy(yy), "Mood (50-day rule)", color=HEAD, fontsize=15, fontweight="bold", va="center")
+    for (name, st, floor), x in zip(cols, xs):
+        lab, c = mood_of(st.get("above_50"))
+        T.chip(fig, x - 0.105, fy(yy + 0.2), 0.108, 0.40 / H, lab, c, 11)
+    # right-hand side: advance/decline mini bars per segment
+    for (name, st, floor), x in zip(cols, xs):
+        pass
+    f1 = "Segments: Large & Mid = market cap above ₹10,000 Cr; Small ₹2,000-10,000 Cr; Micro below ₹2,000 Cr (main board); SME = NSE Emerge + BSE SME."
+    f2 = f"Mood: 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak (stocks above their 50-day average). {b.get('unclassified', 0)} stocks without market cap are left out.{(' ' + note) if note else ''}"
+    for k, t in enumerate((f1, f2, "Derived from NSE and BSE end-of-day data. Not investment advice.")):
+        fig.text(0.04, fy(9.2 + 0.32 * k), t, color=MUTED, fontsize=11, va="center")
+    T.brand(fig, fy(9.2 + 0.32 * 2))
+    T.save(fig, out_path)

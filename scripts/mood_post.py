@@ -2,22 +2,22 @@
 import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
-import prices, cards_market as cm
+import prices2, cards_market as cm
 
 SEND = os.environ.get("MOOD_SEND", "0") == "1"
-prices.ensure(days_back=430, log=p)
-b = prices.breadth(prices.load())
-L = b["liquid"]
-p(json.dumps(L))
+prices2.ensure(days_back=430, log=p)
+b = prices2.breadth_segments(prices2.load(), prices2.mcaps())
+A, S = b["all"], b["seg"]
+p(json.dumps(b))
 os.makedirs("out", exist_ok=True)
 png = "out/mood.png"
-cm.render_mood(b, png)
-label, _ = cm.mood_of(L.get("above_50"))
+cm.render_mood2(b, png)
+label, _ = cm.mood_of(A.get("above_50"))
 from datetime import datetime
 d = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
-cap = (f"Market breadth - {d}\n{L['adv']:,} stocks up vs {L['dec']:,} down (NSE stocks traded above Rs 1 Cr)\n"
-       f"{L['above_20']:.0f}% above 20-day | {L['above_50']:.0f}% above 50-day | {L['above_200']:.0f}% above 200-day average\n"
-       f"52-week highs {L['new_high']} | lows {L['new_low']}\nMood: {label}")
+cap = (f"Market breadth - {d} (NSE + BSE, {A['n']:,} stocks counted)\n"
+       f"Up {A['adv']:,} | Down {A['dec']:,} | {A['above_50']:.0f}% above 50-day average | Mood: {label}\n"
+       + "\n".join(f"{n}: {S[n]['above_50']:.0f}% above 50-day, up {S[n]['adv']:,} / down {S[n]['dec']:,}" for n in ("Large & Mid", "Small", "Micro", "SME")))
 tweet = cap + "\n#StockMarketIndia #Nifty"
 p("caption:", cap.replace("\n", " / "))
 if SEND:

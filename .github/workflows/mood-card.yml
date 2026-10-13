@@ -10,7 +10,7 @@ permissions:
 jobs:
   mood:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -19,9 +19,9 @@ jobs:
       - run: pip install -r requirements.txt pandas numpy
       - uses: actions/cache@v4
         with:
-          path: data/prices
-          key: nse-prices-${{ github.run_id }}
-          restore-keys: nse-prices-
+          path: data/prices2
+          key: univ-prices-${{ github.run_id }}
+          restore-keys: univ-prices-
       - env:
           MOOD_SEND: ${{ github.event.inputs.send }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
