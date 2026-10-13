@@ -11,6 +11,9 @@ on:
       force:
         description: "1 = ignore the already-posted check (preview)"
         default: "0"
+      xbutton:
+        description: "1 = add a Post to X button under cards"
+        default: "0"
 permissions:
   contents: write
 concurrency:
@@ -34,6 +37,7 @@ jobs:
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
           POST_SEND: ${{ github.event.inputs.send || '0' }}
           POST_FORCE: ${{ github.event.inputs.force || '0' }}
+          X_BUTTON: ${{ github.event.inputs.xbutton || '0' }}
         run: python scripts/market_posts.py "${{ github.event.inputs.mode || 'both' }}"
       - name: Publish preview PNGs (dry runs only)
         if: always() && github.event.inputs.send != '1'

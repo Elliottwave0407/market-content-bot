@@ -16,6 +16,7 @@ FORCE = os.environ.get("POST_FORCE", "0") == "1"
 OUT = os.environ.get("OUT_DIR", "out")
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("MARKET_CHAT_ID", "").strip()   # the separate market/news group (NOT the results group)
+X_BUTTON = os.environ.get("X_BUTTON", "0") == "1"   # attach a "Post to X" button under cards that have a tweet text
 COMMIT = True      # False when run inside the poll loop (the loop commits state itself)
 QUIET = False
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36", "Accept": "*/*", "Accept-Language": "en-US,en;q=0.9"}
@@ -47,9 +48,16 @@ def commit_state():
                 return
             time.sleep(2)
 
-def send_photo(path, caption):
+def x_url(text):
+    from urllib.parse import quote
+    return "https://x.com/intent/tweet?text=" + quote(text[:270])
+
+def send_photo(path, caption, tweet=None):
+    data = {"chat_id": CHAT, "caption": caption[:1024]}
+    if tweet and X_BUTTON:
+        data["reply_markup"] = json.dumps({"inline_keyboard": [[{"text": "Post to X", "url": x_url(tweet)}]]})
     with open(path, "rb") as fh:
-        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data={"chat_id": CHAT, "caption": caption[:1024]}, files={"photo": fh}, timeout=60)
+        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
         return r.json()
     except Exception:
@@ -61,8 +69,9 @@ def post(paths_captions):
         p("DRY RUN (send off or no market group set) - not sent:", [pc[0] for pc in paths_captions])
         return False
     ok = True
-    for path, cap in paths_captions:
-        r = send_photo(path, cap)
+    for item in paths_captions:
+        path, cap = item[0], item[1]
+        r = send_photo(path, cap, item[2] if len(item) > 2 else None)
         p("sent", path, r.get("ok"), (r.get("description") or "")[:80])
         ok = ok and bool(r.get("ok"))
         time.sleep(3.2)
@@ -153,7 +162,11 @@ def do_fii():
            f"DII: bought {d['dii']['buy']:,.0f} | sold {d['dii']['sell']:,.0f} | net {dd:+,.0f}\n"
            f"Month to date: FII {tot('fii_net'):+,.0f} | DII {tot('dii_net'):+,.0f}\n"
            f"Source: NSE provisional data.")
-    if post([(path, cap)]) and SEND:
+    tweet = (f"FII/DII activity - {card['date']} (cash, ₹ Cr)\n"
+             f"FII net {f:+,.0f} | DII net {dd:+,.0f}\n"
+             f"Month to date: FII {tot('fii_net'):+,.0f} | DII {tot('dii_net'):+,.0f}\n"
+             f"#FIIDII #Nifty #StockMarketIndia")
+    if post([(path, cap, tweet)]) and SEND:
         hist = {"days": [x for x in days if x["date"][:7] >= (day - timedelta(days=100)).strftime("%Y-%m")], "posted": iso}
         jsave(HIST, hist)
         if COMMIT:
