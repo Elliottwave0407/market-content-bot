@@ -168,3 +168,65 @@ def render_news(it, out_path, note=""):
     T.footer(fig, f"Source: {it.get('source', 'BSE announcement')}. Text as filed; read the full filing for details. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
     T.brand(fig, fy(H - 0.3))
     T.save(fig, out_path)
+
+# ---------------------------------------------------------------- market breadth / mood
+def mood_of(pct50):
+    """Draft rule, printed on the card: % of liquid stocks closing above their 50-day average."""
+    if pct50 is None:
+        return "NA", MUTED
+    if pct50 >= 65: return "STRONG", "#0f7a4b"
+    if pct50 >= 50: return "POSITIVE", "#3a9a5b"
+    if pct50 >= 35: return "MIXED", "#b97400"
+    if pct50 >= 20: return "WEAK", "#c62f2f"
+    return "VERY WEAK", "#8e1b1b"
+
+def render_mood(b, out_path, note=""):
+    """b = prices.breadth() output; uses the liquid universe."""
+    from datetime import datetime
+    L = b["liquid"]
+    H = 9.4
+    fig = T.new_fig(16, H)
+    fy = lambda inch: 1 - inch / H
+    Rect = __import__("matplotlib.patches", fromlist=["Rectangle"]).Rectangle
+    try:
+        dl = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
+    except Exception:
+        dl = str(b["date"])
+    label, mcol = mood_of(L.get("above_50"))
+    fig.text(0.04, fy(0.55), "Market Breadth", color=TEXT, fontsize=30, fontweight="bold", va="center")
+    fig.text(0.04, fy(1.05), f"{dl}  |  NSE stocks traded above ₹1 Cr  |  {L['n']:,} stocks", color=MUTED, fontsize=15, va="center")
+    T.chip(fig, 0.74, fy(0.95), 0.22, 0.62 / H, f"MOOD: {label}", mcol, 20)
+    # advance / decline
+    T.panel(fig, 0.03, fy(3.35), 0.94, 1.95 / H)
+    fig.text(0.045, fy(1.75), "Advancing vs declining", color=TEXT, fontsize=18, fontweight="bold", va="center")
+    tot = max(L["adv"] + L["dec"] + L["unch"], 1)
+    x0, wfull = 0.045, 0.91
+    wa, wd, wu = wfull * L["adv"] / tot, wfull * L["dec"] / tot, wfull * L["unch"] / tot
+    yb = fy(2.35)
+    for x, w, c in ((x0, wa, GREEN), (x0 + wa, wu, "#9aa7b6"), (x0 + wa + wu, wd, RED)):
+        fig.patches.append(Rect((x, yb), w, 0.42 / H, transform=fig.transFigure, facecolor=c, edgecolor="none"))
+    fig.text(x0, fy(2.95), f"{L['adv']:,} up ({100 * L['adv'] / tot:.0f}%)", color=GREEN, fontsize=17, fontweight="bold", va="center")
+    fig.text(0.5, fy(2.95), f"{L['unch']:,} unchanged", color=MUTED, fontsize=15, fontweight="bold", ha="center", va="center")
+    fig.text(0.955, fy(2.95), f"{L['dec']:,} down ({100 * L['dec'] / tot:.0f}%)", color=RED, fontsize=17, fontweight="bold", ha="right", va="center")
+    # % above moving averages
+    T.panel(fig, 0.03, fy(6.35), 0.94, 2.75 / H)
+    fig.text(0.045, fy(3.85), "Stocks trading above their moving average", color=TEXT, fontsize=18, fontweight="bold", va="center")
+    for i, (k, lab) in enumerate((("above_20", "20-day"), ("above_50", "50-day"), ("above_200", "200-day"))):
+        v = L.get(k)
+        yy = 4.55 + i * 0.68
+        fig.text(0.045, fy(yy), lab, color=HEAD, fontsize=16, fontweight="bold", va="center")
+        fig.patches.append(Rect((0.15, fy(yy + 0.16)), 0.62, 0.32 / H, transform=fig.transFigure, facecolor="#dde4ec", edgecolor="none"))
+        if v is not None:
+            col = GREEN if v >= 60 else AMBER if v >= 40 else RED
+            fig.patches.append(Rect((0.15, fy(yy + 0.16)), 0.62 * v / 100, 0.32 / H, transform=fig.transFigure, facecolor=col, edgecolor="none"))
+            fig.text(0.79, fy(yy), f"{v:.0f}%", color=col, fontsize=20, fontweight="bold", va="center")
+    # highs / lows and big movers
+    T.panel(fig, 0.03, fy(8.55), 0.94, 1.95 / H)
+    items = (("52-week highs", L["new_high"], GREEN), ("52-week lows", L["new_low"], RED), ("Up 4%+ today", L["up4"], GREEN), ("Down 4%+ today", L["down4"], RED))
+    for i, (lab, val, col) in enumerate(items):
+        cx = 0.03 + 0.94 * (i + 0.5) / 4
+        fig.text(cx, fy(6.95), f"{val:,}", color=col, fontsize=38, fontweight="bold", ha="center", va="center")
+        fig.text(cx, fy(7.65), lab, color=HEAD, fontsize=15, fontweight="bold", ha="center", va="center")
+    T.footer(fig, f"Mood rule: % of these stocks above their 50-day average (65+ Strong, 50+ Positive, 35+ Mixed, 20+ Weak). Derived from NSE end-of-day data. Not investment advice.{(' ' + note) if note else ''}", fy(H - 0.35))
+    T.brand(fig, fy(H - 0.35))
+    T.save(fig, out_path)
