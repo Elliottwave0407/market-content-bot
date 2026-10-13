@@ -16,7 +16,7 @@ FORCE = os.environ.get("POST_FORCE", "0") == "1"
 OUT = os.environ.get("OUT_DIR", "out")
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("MARKET_CHAT_ID", "").strip()   # the separate market/news group (NOT the results group)
-X_BUTTON = os.environ.get("X_BUTTON", "0") == "1"   # attach a "Post to X" button under cards that have a tweet text
+X_BUTTON = os.environ.get("X_BUTTON", "1") == "1"   # attach a "Post to X" button under cards that have a tweet text
 COMMIT = True      # False when run inside the poll loop (the loop commits state itself)
 QUIET = False
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36", "Accept": "*/*", "Accept-Language": "en-US,en;q=0.9"}
@@ -55,7 +55,8 @@ def x_url(text):
 def send_photo(path, caption, tweet=None):
     data = {"chat_id": CHAT, "caption": caption[:1024]}
     if tweet and X_BUTTON:
-        data["reply_markup"] = json.dumps({"inline_keyboard": [[{"text": "Post to X", "url": x_url(tweet)}]]})
+        import xbuttons
+        data["reply_markup"] = xbuttons.markup(tweet)
     with open(path, "rb") as fh:
         r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
@@ -230,7 +231,9 @@ def do_deals():
     for i, path in enumerate(paths, 1):
         cap = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells), card {i}/{len(paths)}\n"
                f"Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed.\nSource: NSE & BSE.") if i == 1 else f"Bulk & block deals - {label}, card {i}/{len(paths)}"
-        pc.append((path, cap))
+        tw = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells). "
+              f"Biggest: " + ", ".join(f"{x['name'][:22]} {x['cr']:,.0f} Cr" for x in sorted(kept, key=lambda z: -z['cr'])[:3]) + " #BulkDeals #StockMarketIndia") if i == 1 else None
+        pc.append((path, cap, tw))
     if post(pc) and SEND:
         posted["deals"] = iso
         jsave(POSTED, posted)

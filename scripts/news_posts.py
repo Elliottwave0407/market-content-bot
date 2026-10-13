@@ -114,7 +114,8 @@ def build_card(rec, tag):
     path = os.path.join(OUT, f"news_{rec['NEWSID']}.png")
     CM.render_news(it, path)
     cap = f"{tag.title()}: {it['company']} (BSE {rec.get('SCRIP_CD')})\n{head}\nFiling: {link(rec)}\n\n{DISC}"
-    return path, cap
+    tw = f"{tag.title()}: {it['company']} - {head}"[:230] + " #StockMarketIndia"
+    return path, cap, tw
 
 # ------------------------------------------------------------------ state / telegram
 def jload():
@@ -128,10 +129,13 @@ def jsave(st):
     os.makedirs(os.path.dirname(STATE), exist_ok=True)
     json.dump(st, open(STATE, "w"))
 
-def send_photo(path, cap):
-    import requests
+def send_photo(path, cap, tweet=None):
+    import requests, xbuttons
+    data = {"chat_id": CHAT, "caption": cap[:1024]}
+    if tweet:
+        data["reply_markup"] = xbuttons.markup(tweet)
     with open(path, "rb") as fh:
-        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data={"chat_id": CHAT, "caption": cap[:1024]}, files={"photo": fh}, timeout=60)
+        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
         return r.json()
     except Exception:
@@ -184,7 +188,7 @@ def build_rss_card(x):
     it = {"tag": x["tag"], "company": org, "meta": f"Press release  |  {x['date']}"[:90], "headline": x["title"], "detail": (x["desc"] or None) and x["desc"][:650], "source": f"{org} website"}
     path = os.path.join(OUT, f"news_{abs(hash(x['id']))}.png")
     CM.render_news(it, path)
-    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nSource: {org} website. Text as published. Not investment advice."
+    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nSource: {org} website. Text as published. Not investment advice.", f"{x['tag']}: {x['title']}"[:260]
 
 _last = [0.0]
 _last_rss = [0.0]
@@ -215,8 +219,8 @@ def _bse_tick(bse):
         fresh = dt is not None and now - dt <= timedelta(hours=MAX_AGE_H)
         if tag and fresh and posted < MAX_PER_TICK:
             try:
-                path, cap = build_card(r, tag)
-                res = send_photo(path, cap)
+                path, cap, tw = build_card(r, tag)
+                res = send_photo(path, cap, tw)
             except Exception as e:
                 lines.append(f"news card error {r['NEWSID']}: {repr(e)[:120]}")
                 res = {"ok": False}
@@ -260,8 +264,8 @@ def _rss_tick():
             if posted >= 4:
                 break
             try:
-                path, cap = build_rss_card(x)
-                res = send_photo(path, cap)
+                path, cap, tw = build_rss_card(x)
+                res = send_photo(path, cap, tw)
             except Exception as e:
                 lines.append(f"{tag} card error: {repr(e)[:100]}")
                 continue
@@ -323,17 +327,17 @@ def preview(day=None, per_tag=2, send=False):
     for tg, v in by.items():
         v.sort(key=lambda r: -len(r.get("HEADLINE") or ""))
         for r in v[:per_tag]:
-            path, cap = build_card(r, tg)
+            path, cap, tw = build_card(r, tg)
             p("card", tg, company_of(r), "->", path)
             if send and TOKEN and CHAT:
-                p("   sent:", send_photo(path, cap).get("ok")); time.sleep(3.2)
+                p("   sent:", send_photo(path, cap, tw).get("ok")); time.sleep(3.2)
     for tag, url, rx in RSS:
         try:
             for x in fetch_rss(tag, url, rx)[:2]:
-                path, cap = build_rss_card(x)
+                path, cap, tw = build_rss_card(x)
                 p("card", tag, x["title"][:60], "->", path)
                 if send and TOKEN and CHAT:
-                    p("   sent:", send_photo(path, cap).get("ok")); time.sleep(3.2)
+                    p("   sent:", send_photo(path, cap, tw).get("ok")); time.sleep(3.2)
         except Exception as e:
             p(tag, "feed error", repr(e)[:100])
 

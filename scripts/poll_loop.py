@@ -19,6 +19,11 @@ try:
 except Exception as _e:
     npst = None
     print('news_posts unavailable:', repr(_e)[:120])
+try:
+    import xbuttons as xb
+except Exception as _e:
+    xb = None
+    print('xbuttons unavailable:', repr(_e)[:120])
 from bse import BSE
 
 def git(*a):
@@ -70,6 +75,13 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("market tick error: " + rp.redact(repr(e))[:200])
+                    if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
+                        try:
+                            xlines = xb.poll()
+                            if xlines:
+                                keep += [f"[x {time.strftime('%H:%M:%S')}] "] + xlines
+                        except Exception as e:
+                            keep.append("x-button error: " + rp.redact(repr(e))[:200])
                     if npst is not None:
                         try:
                             nchanged, nlines = npst.tick(bse)
