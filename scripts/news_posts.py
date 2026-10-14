@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p
 import cards_market as CM
+import tags
 
 IST = timezone(timedelta(hours=5, minutes=30))
 STATE = "state/news_state.json"
@@ -114,7 +115,8 @@ def build_card(rec, tag):
     path = os.path.join(OUT, f"news_{rec['NEWSID']}.png")
     CM.render_news(it, path)
     cap = f"{tag.title()}: {it['company']} (BSE {rec.get('SCRIP_CD')})\n{head}\nFiling: {link(rec)}\n\n{DISC}"
-    tw = f"{tag.title()}: {it['company']} - {head}"[:230] + " #StockMarketIndia"
+    topic = {"ORDER WIN": "#OrderWin", "ACQUISITION": "#Acquisition", "CREDIT RATING": "#CreditRating", "DIVIDEND": "#Dividend", "CORPORATE ACTION": "#CorporateAction", "MANAGEMENT": "#Management", "RISK": "#StockMarketIndia"}.get(tag, "#StockMarketIndia")
+    tw = f"{tag.title()}: {it['company']} - {head}"[:215] + "\n" + tags.join(tags.company_tag(code=rec.get("SCRIP_CD"), name=it["company"]), topic)
     return path, cap, tw
 
 # ------------------------------------------------------------------ state / telegram
@@ -131,9 +133,10 @@ def jsave(st):
 
 def send_photo(path, cap, tweet=None):
     import requests, xbuttons
+    cap, flink = xbuttons.split_link(cap)
     data = {"chat_id": CHAT, "caption": cap[:1024]}
     if tweet:
-        data["reply_markup"] = xbuttons.markup(tweet)
+        data["reply_markup"] = xbuttons.markup(tweet, flink)
     with open(path, "rb") as fh:
         r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
@@ -188,7 +191,7 @@ def build_rss_card(x):
     it = {"tag": x["tag"], "company": org, "meta": f"Press release  |  {x['date']}"[:90], "headline": x["title"], "detail": (x["desc"] or None) and x["desc"][:650], "source": f"{org} website"}
     path = os.path.join(OUT, f"news_{abs(hash(x['id']))}.png")
     CM.render_news(it, path)
-    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nSource: {org} website. Text as published. Not investment advice.", f"{x['tag']}: {x['title']}"[:260]
+    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nSource: {org} website. Text as published. Not investment advice.", f"{x['tag']}: {x['title']}"[:230] + "\n#" + x["tag"] + " #StockMarketIndia"
 
 _last = [0.0]
 _last_rss = [0.0]

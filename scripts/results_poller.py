@@ -8,6 +8,7 @@ import results_fetcher as rf
 import card
 import pdf_card
 import xbuttons
+import tags
 
 SEND = os.environ.get("POLL_SEND", "0") == "1"
 MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
@@ -253,8 +254,15 @@ def main(bse_in=None, known=None, fast=False):
                 lines.append((rec["NEWSID"], key, text))
                 continue
             if SEND:
-                r = tg("sendPhoto", data={"chat_id": chat, "caption": text[:1024], "reply_markup": xbuttons.markup("\n".join(text.split("\n")[:2]) + "\n#Results #StockMarketIndia")}, files={"photo": open(png, "rb")}) if kind == "photo" \
-                    else tg("sendMessage", json={"chat_id": chat, "text": text[:4000], "disable_web_page_preview": True})
+                if kind == "photo":
+                    cap_clean, flink = xbuttons.split_link(text)
+                    nm = (rec.get("SLONGNAME") or "").strip()
+                    parts = key.split("|")
+                    ql = parts[1] if len(parts) > 1 else ""
+                    tweet = "\n".join(text.split("\n")[:2]).replace(" | Consolidated", "").replace(" | Standalone", "") + "\n" + tags.join(tags.company_tag(code=rec.get("SCRIP_CD"), name=nm), tags.quarter_tag(ql), "#Results")
+                    r = tg("sendPhoto", data={"chat_id": chat, "caption": cap_clean[:1024], "reply_markup": xbuttons.markup(tweet, flink)}, files={"photo": open(png, "rb")})
+                else:
+                    r = tg("sendMessage", json={"chat_id": chat, "text": text[:4000], "disable_web_page_preview": True})
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):
                     continue

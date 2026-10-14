@@ -1,7 +1,7 @@
 """'Post to X' / 'Posted' / 'Skip' buttons for the market group.
 - markup(tweet): inline keyboard to put under a card.
 - poll(): called from the poll loop; handles button taps (callback queries) and edits the card so everybody sees who posted it."""
-import os, json, time, requests
+import os, re, json, time, requests
 from urllib.parse import quote
 from datetime import datetime, timedelta, timezone
 
@@ -13,11 +13,32 @@ API = f"https://api.telegram.org/bot{TOKEN}"
 _offset = [0]
 
 def x_url(text):
-    return "https://x.com/intent/tweet?text=" + quote(text[:270])
+    if len(text) > 270:    # shorten the body, never the hashtags on the last line
+        head, _, last = text.rpartition("\n")
+        if last.startswith("#") and head:
+            text = head[: max(0, 268 - len(last))].rstrip() + "\n" + last
+        else:
+            text = text[:270]
+    return "https://x.com/intent/tweet?text=" + quote(text)
 
-def markup(tweet):
-    return json.dumps({"inline_keyboard": [[{"text": "📤 Post to X", "url": x_url(tweet)}],
-                                           [{"text": "✅ Posted", "callback_data": "xp"}, {"text": "⏭ Skip", "callback_data": "xs"}]]})
+_LINK_RX = re.compile(r"\s*Filing:\s*(https?://\S+)")
+_LINE_RX = re.compile(r"\n(https?://\S+)(?=\n|$)")
+
+def split_link(caption):
+    """-> (caption without the visible link, url or None). The link moves behind a '📄 Filing' button."""
+    m = _LINK_RX.search(caption)
+    if m:
+        return (caption[:m.start()] + caption[m.end():]).replace(" .", ".").strip(), m.group(1)
+    m = _LINE_RX.search(caption)
+    if m:
+        return (caption[:m.start()] + caption[m.end():]).strip(), m.group(1)
+    return caption, None
+
+def markup(tweet, link=None):
+    row1 = [{"text": "📤 Post to X", "url": x_url(tweet)}]
+    if link:
+        row1.append({"text": "📄 Filing", "url": link})
+    return json.dumps({"inline_keyboard": [row1, [{"text": "✅ Posted", "callback_data": "xp"}, {"text": "⏭ Skip", "callback_data": "xs"}]]})
 
 def _call(method, **data):
     try:
@@ -63,10 +84,12 @@ def poll():
         if done or cq.get("data") not in ("xp", "xs"):
             _call("answerCallbackQuery", callback_query_id=cq["id"], text="Already marked." if done else "")
             continue
+        keep_rows = [[b for row in ((msg.get("reply_markup") or {}).get("inline_keyboard") or []) for b in row if str(b.get("text", "")).startswith("📄")]]
+        keep_rows = [r for r in keep_rows if r]
         stamp = datetime.now(IST).strftime("%d %b, %H:%M")
         tag = f"✅ Posted on X by {who} · {stamp}" if cq["data"] == "xp" else f"⏭ Skipped by {who} · {stamp}"
         new_cap = cap[: 1024 - len(tag) - 3].rstrip() + "\n\n" + tag
-        e = _call("editMessageCaption", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": []}))
+        e = _call("editMessageCaption", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": keep_rows}))
         _call("answerCallbackQuery", callback_query_id=cq["id"], text="Marked ✅" if cq["data"] == "xp" else "Skipped")
         lines.append(f"x-button: {tag} (edit ok={e.get('ok')})")
     return lines

@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 sys.path.insert(0, os.path.dirname(__file__))
+import tags
 from ci_out import p, publish
 import cards_market as CM
 
@@ -232,7 +233,7 @@ def do_deals():
         cap = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells), card {i}/{len(paths)}\n"
                f"Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed.\nSource: NSE & BSE.") if i == 1 else f"Bulk & block deals - {label}, card {i}/{len(paths)}"
         tw = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells). "
-              f"Biggest: " + ", ".join(f"{x['name'][:22]} {x['cr']:,.0f} Cr" for x in sorted(kept, key=lambda z: -z['cr'])[:3]) + " #BulkDeals #StockMarketIndia") if i == 1 else None
+              f"Biggest: " + ", ".join(f"{x['name'][:22]} {x['cr']:,.0f} Cr" for x in sorted(kept, key=lambda z: -z['cr'])[:3]) + "\n" + tags.join("#BulkDeals", *[tags.company_tag(code=(x["rec"]["SCRIP_CD"] if x.get("rec") else None), name=x["name"], symbol=x.get("sym") or None) for x in sorted(kept, key=lambda z: -z['cr'])[:2]], "#StockMarketIndia")) if i == 1 else None
         pc.append((path, cap, tw))
     if post(pc) and SEND:
         posted["deals"] = iso
