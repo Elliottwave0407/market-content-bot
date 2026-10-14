@@ -9,10 +9,10 @@ MODEL = os.environ.get("GEMINI_MODEL", "").strip() or "gemini-flash-lite-latest"
 PROMPT = """You write a short brief for an Indian stock-market news card from a company's exchange filing text.
 Return ONLY JSON: {"headline":"<=70 chars, plain, punchy, no hype, no emojis","sub":"<=90 chars: the single most important fact WITH its number (amount, quantity, rating, date, %) or null if the text has no number","bullets":["3 to 5 bullets, each <=95 chars, one fact each"]}
 Rules: use ONLY facts stated in the text. Do not add numbers, names or opinions. Keep numbers exactly as written (units included, e.g. Rs 245 crore). No advice, no predictions. Bullets cover who/what, value, timeline/conditions, counterparty, any next step - only if present.
-Category: %s | Company: %s
-Filing title: %s
+Category: @TAG | Company: @CO
+Filing title: @TITLE
 Filing text:
-%s"""
+@TEXT"""
 
 def _nums(s):
     return set(re.sub(r"[,\s]", "", m) for m in re.findall(r"\d[\d,]*\.?\d*", s or ""))
@@ -43,9 +43,9 @@ def brief(tag, company, title, detail, key=None):
     src = f"{title}\n{detail or ''}"
     if not key or not detail or len(detail) < 60:
         return fallback(title, detail), "rule"
-    body = {"contents": [{"parts": [{"text": PROMPT % (tag, company, title, (detail or "")[:3500])}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     try:
+        prompt = PROMPT.replace("@TAG", tag).replace("@CO", company).replace("@TITLE", title).replace("@TEXT", (detail or "")[:3500])
+        body = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
         r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=40)
         if r.status_code != 200:
             return fallback(title, detail), f"rule (HTTP {r.status_code})"
