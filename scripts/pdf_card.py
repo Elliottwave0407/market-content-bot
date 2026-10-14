@@ -142,6 +142,16 @@ def try_pdf(bse, rec, st, headline, filed):
         LOG.append(f"pdf current col {rec.get('SLONGNAME')} {basis} ok={ok}/{n}: " + ", ".join(f"{x}={val(d, x, 0)}" for x in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat", "eps")))
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
+        cur_bse = False   # BSE's own table for THIS quarter (if already published) independently confirms the PDF's current column
+        try:
+            h0 = rf.fetch(bse, code, name, basis, q)
+            if h0 and h0.get("revenue") is not None and h0.get("pat") is not None and cur["revenue"] is not None and cur["pat"] is not None:
+                cur_bse = close(cur["revenue"], h0["revenue"]) and abs(cur["pat"] - h0["pat"]) <= max(1.0, 0.03 * abs(h0["pat"]))
+        except Exception:
+            pass
+        if cur_bse and not ok:
+            LOG.append(f"pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored {name} {basis}")
+        ok = ok or cur_bse
         hist, hpat, det, hs = {}, {}, [], {}
         for off, m in ((1, prev), (4, yago)):
             h = rf.fetch(bse, code, name, basis, q - off)
