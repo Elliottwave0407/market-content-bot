@@ -116,8 +116,6 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                         chg = "NC"
                 if chg == "NC":
                     txt, col = "NC*", AMBER
-                elif key in ("pat", "eps") and c is not None and base is not None and base < 0 and c > 0:
-                    txt, col = "Turnaround", GREEN   # loss -> profit: a % would overstate it
                 else:
                     txt, col = ("NA", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
