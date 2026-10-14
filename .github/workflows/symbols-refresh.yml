@@ -1,0 +1,25 @@
+name: symbols-refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 20 * * 0-4"     # about 02:10 IST, Mon-Fri
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install bse requests
+      - run: python scripts/symbols_refresh.py
+      - name: Commit if changed
+        run: |
+          git config user.name "market-content-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state/symbols.json
+          git diff --cached --quiet || git commit -q -m "Refresh symbol map"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && break; sleep 5; done
