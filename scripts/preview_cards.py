@@ -12,8 +12,8 @@ q = [{"q": "Sep-26", "m": m(1250.4, 262.0, 148.2, 9.8)}, {"q": "Jun-26", "m": m(
      {"q": "Mar-26", "m": m(1150.2, 228.0, 120.4, 8.0)}, {"q": "Dec-25", "m": m(1090.0, 210.3, 98.7, 6.5)}, {"q": "Sep-25", "m": m(1010.5, 196.0, 105.9, 7.0)}]
 card.render("Mangalore Refinery and Petrochemicals Ltd", "BSE 500000", "consolidated", q, f"{out}/results_light.png", filed_note=S)
 q2 = [dict(x) for x in q]
-q2[0] = {"q": "Sep-26", "m": m(88.0, None, -12.5, -1.4)}
-q2[1] = {"q": "Jun-26", "m": m(95.0, None, 3.0, 0.3)}
+q2[0] = {"q": "Sep-26", "m": m(88.0, 4.0, -12.5, -1.4)}
+q2[1] = {"q": "Jun-26", "m": m(95.0, 9.0, 3.0, 0.3)}
 card.render("Loss Making Co Ltd", "BSE 500001", "standalone", q2, f"{out}/results_loss_light.png", filed_note=S)
 card.render_stub("Sample Insurance Ltd", "BSE 500002", "Q2 FY27", "BSE has not published structured numbers for this filing", f"{out}/stub_light.png")
 import random
@@ -43,4 +43,17 @@ cm.render_news({"tag": "ORDER WIN", "company": "Sample Engineering Ltd", "meta":
 cm.render_news({"tag": "RBI", "company": "Reserve Bank of India", "meta": "Press release  |  12 Oct 2026, 10:30 IST",
                 "headline": "RBI announces results of 14-day variable rate repo auction", "detail": None, "source": "RBI press release feed"},
                f"{out}/news_rbi_light.png", note=S)
+
+cm.render_news({"tag": "CREDIT RATING", "company": "Sample Chemicals Ltd", "meta": "BSE 500004  |  12 Oct 2026, 15:45 IST",
+                "headline": "CRISIL upgrades Sample Chemicals long-term rating to AA-", "sub": "Rating upgraded to CRISIL AA-/Stable from A+/Positive",
+                "bullets": ["Rating action covers bank facilities of Rs 850 crore", "Outlook on the long-term rating is Stable", "Short-term rating reaffirmed at CRISIL A1+", "Rating communicated on 11 October 2026"], "source": "BSE announcement"},
+               f"{out}/news_rating_light.png", note=S)
+cm.render_news({"tag": "MANAGEMENT", "company": "Sample Software Ltd", "meta": "BSE 500005  |  12 Oct 2026, 16:13 IST",
+                "headline": "Sample Software announces change in CEO", "sub": None,
+                "bullets": ["Mr. A. Sample resigned as CEO with effect from 31 October 2026", "Ms. B. Example appointed as the new CEO from 1 November 2026", "Appointment approved by the Board on 11 October 2026"], "source": "BSE announcement"},
+               f"{out}/news_mgmt_light.png", note=S)
+cm.render_news({"tag": "CORPORATE ACTION", "company": "Sample Foods Ltd", "meta": "BSE 500006  |  12 Oct 2026, 17:02 IST",
+                "headline": "Sample Foods announces bonus issue and stock split", "sub": "Bonus 1:2 | Split Rs 10 to Rs 2 | Record date 24 Oct 2026",
+                "bullets": ["Bonus shares in the ratio 1 for every 2 held", "Face value of Rs 10 to be sub-divided into five shares of Rs 2", "Record date fixed as 24 October 2026", "Subject to shareholders' approval"], "source": "BSE announcement"},
+               f"{out}/news_corpact_light.png", note=S)
 print("done")
