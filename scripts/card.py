@@ -10,18 +10,18 @@ def cr(v):
 
 def pct(a, b):
     # values are in Rs million; a base under Rs 1 crore (10) or a change above 1000% is not meaningful
-    if a is None or b is None or b <= 0:
+    if a is None or b is None or b == 0:
         return None
     if abs(b) < 10:
         return None
-    v = (a - b) / b * 100
+    v = (a - b) / abs(b) * 100      # abs(): a loss of 10 growing to 20 is -100%, 20 shrinking to 10 is +50%
     return None if abs(v) > 1000 else v
 
 def pct_eps(a, b):
     # EPS is in rupees (not Rs million): no tiny-base rule, only sign and sanity checks
-    if a is None or b is None or b <= 0:
+    if a is None or b is None or b == 0:
         return None
-    v = (a - b) / b * 100
+    v = (a - b) / abs(b) * 100
     return None if abs(v) > 1000 else v
 
 def fmt_pct(v):
@@ -116,8 +116,8 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                         chg = "NC"
                 if chg == "NC":
                     txt, col = "NC*", AMBER
-                elif chg is None and c is not None and base is not None and base < 0 and key in ("pat", "eps"):
-                    txt, col = ("Turnaround", GREEN) if c > 0 else ("Loss", MUTED)   # base was a loss: a % change is not meaningful
+                elif key in ("pat", "eps") and c is not None and base is not None and base < 0 and c > 0:
+                    txt, col = "Turnaround", GREEN   # loss -> profit: a % would overstate it
                 else:
                     txt, col = ("NA", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
