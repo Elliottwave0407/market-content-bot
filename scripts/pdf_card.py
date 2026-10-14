@@ -11,7 +11,7 @@ DAILY_CAP = int(os.environ.get("GEMINI_DAILY_CAP", "450"))
 PER_POLL = int(os.environ.get("PDF_PER_POLL", "6"))
 K = {"lakh": 0.1, "lakhs": 0.1, "lac": 0.1, "lacs": 0.1, "crore": 10.0, "crores": 10.0, "million": 1.0, "thousand": 0.001, "actual": 1e-6}
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
-TRIES, STATE_ = {}, {"backoff": 0.0, "calls": 0}
+TRIES, STATE_, LAST_TRY = {}, {"backoff": 0.0, "calls": 0}, {}
 LOG = []
 
 def new_poll():
@@ -67,7 +67,7 @@ def try_pdf(bse, rec, st, headline, filed):
     nid = rec["NEWSID"]
     if not key or not att or os.environ.get("PDF_FAST", "1") != "1":
         return None
-    if TRIES.get(nid, 0) >= 2 or time.time() < STATE_["backoff"] or STATE_["calls"] >= PER_POLL:
+    if TRIES.get(nid, 0) >= 8 or time.time() < STATE_["backoff"] or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < 240:
         return None
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
@@ -75,6 +75,7 @@ def try_pdf(bse, rec, st, headline, filed):
         return None
     q_head = rf.expected_quarter(headline, filed)
     TRIES[nid] = TRIES.get(nid, 0) + 1
+    LAST_TRY[nid] = time.time()
     content = b""
     for folder in ("AttachLive", "AttachHis"):
         try:
@@ -102,6 +103,13 @@ def try_pdf(bse, rec, st, headline, filed):
             if len(ce) > 600:
                 for k_ in list(ce)[:100]:
                     ce.pop(k_, None)
+        s_ = out.get("standalone")
+        if not (isinstance(c_, dict) and val(c_, "pat", 0) is not None) and isinstance(s_, dict) and val(s_, "revenue", 0) is not None and val(s_, "pat", 0) is not None:
+            so_ = st.setdefault("standalone_only", {})   # the PDF itself shows no consolidated statement: standalone is the real basis
+            so_[str(nid)] = 1
+            if len(so_) > 600:
+                for k_ in list(so_)[:100]:
+                    so_.pop(k_, None)
     except Exception:
         pass
     k = K.get(str(out.get("unit", "")).lower())
@@ -183,7 +191,8 @@ def try_pdf(bse, rec, st, headline, filed):
                 if hist.get(off) is False and hpat.get(off) is True and h_ and h_.get("revenue") is not None:
                     LOG.append(f"pdf q-{off} revenue typo: pdf {m_['revenue']} -> BSE history {h_['revenue']} (profit matched) {name}")
                     m_["revenue"] = h_["revenue"]
-                    m_["ebitda"] = h_.get("ebitda")
+                    ex_, dp_, fn_ = (val(d, x_, off) for x_ in ("total_expenses", "depreciation", "finance_costs"))
+                    m_["ebitda"] = (h_["revenue"] / k - ex_ + dp_ + fn_) * k if None not in (ex_, dp_, fn_) else h_.get("ebitda")
                     hist[off] = True
                     fixed.append(off)
             if fixed:
@@ -201,6 +210,13 @@ def try_pdf(bse, rec, st, headline, filed):
             note = "verified against BSE's previous quarters"
         r0, r1 = cur["revenue"], prev["revenue"]
         if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
+            return None
+        rv0, fc0 = val(d, "revenue", 0), val(d, "finance_costs", 0)
+        fin_heavy = bool(rv0 and fc0 is not None and fc0 / rv0 >= 0.25)   # banks / NBFCs: no operating-profit row
+        need = ("revenue", "pat", "eps") + (() if fin_heavy else ("ebitda",))
+        miss = sorted({kk for m_ in (cur, prev, yago) for kk in need if m_.get(kk) is None})
+        if miss:
+            LOG.append(f"pdf incomplete {name} {basis}: missing {miss} - not posting from PDF")
             return None
         quarters = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 1), "m": prev}, None, None, {"q": rf.qlabel(q - 4), "m": yago}]
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}

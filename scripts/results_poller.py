@@ -105,7 +105,7 @@ def inferred_qend(filed):
     if m in (4, 5, 6): return f"31.03.{y}"
     return f"30.06.{y}"
 
-def build(bse, rec, final=False):
+def build(bse, rec, final=False, age_min=0):
     """Return (kind, text, png_path or None, key). kind 'wait' = BSE numbers not there yet, retry later."""
     code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
     headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
@@ -151,11 +151,15 @@ def build(bse, rec, final=False):
     basis = "consolidated" if res["consolidated"] else "standalone"
     cons_expected = bool((_ST or {}).get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
     cons_missing = False
-    if basis == "standalone" and cons_expected:
-        # the filing has consolidated numbers but BSE has only published the standalone table so far: wait for consolidated (standing rule)
-        if not final:
-            return ("wait", "consolidated numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
-        cons_missing = True
+    if basis == "standalone":
+        # STANDING RULE: never post standalone while a consolidated result exists or may exist.
+        so = bool((_ST or {}).get("standalone_only", {}).get(str(rec["NEWSID"])))
+        if cons_expected:
+            if age_min < 72 * 60:
+                return ("wait", "consolidated numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
+            return stub(name, code, res["quarter"], "consolidated numbers not yet published on BSE", lk, f"{code}|{res['quarter']}|nocons")
+        if not so and age_min < 120:
+            return ("wait", "confirming that no consolidated statement exists", None, f"{code}|{res['quarter']}|wait")
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
     if not quarters[0]["m"]:
@@ -166,6 +170,12 @@ def build(bse, rec, final=False):
         if qq["m"] is None:
             qq["m"] = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
     cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
+    # STANDING RULE: a result card carries all 5 rows (sales, operating profit, OPM, net profit, EPS) - banks/NBFCs have no operating-profit row.
+    need = ("revenue", "pat", "eps") + (() if cur.get("bank") else ("ebitda",))
+    miss = sorted({k_ for qq in (quarters[0], quarters[1], quarters[4]) for k_ in need if qq["m"].get(k_) is None})
+    incomplete = bool(miss)
+    if incomplete and not final and ((cur.get("revenue") or 0) / 10.0) >= MIN_CR:   # smaller companies only appear as one digest line (sales + profit), no card
+        return ("wait", f"incomplete metrics {miss}; retrying the PDF read", None, f"{code}|{res['quarter']}|wait")
     r0, r1 = cur.get("revenue"), prev.get("revenue")
     if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
         return stub(name, code, res["quarter"], "figures look inconsistent with the previous quarter - please verify", lk, f"{code}|{res['quarter']}|anomaly")
@@ -179,7 +189,7 @@ def build(bse, rec, final=False):
     card.render(name, f"BSE {code}", basis, quarters, png)
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-           f"{'(Quarter inferred from filing date.) ' if inferred else ''}{'(Consolidated figures were not on BSE after 24 h - standalone shown.) ' if cons_missing else ''}Filing: {lk}\n\n{DISC}")
+           f"{'(Quarter inferred from filing date.) ' if inferred else ''}{('(Not available from BSE after 24 h: ' + ', '.join(miss) + '.) ') if incomplete else ''}Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
 def audit(bse, st, chat):
@@ -235,7 +245,7 @@ def main(bse_in=None, known=None, fast=False):
             nid = rec["NEWSID"]
             first = pend.get(nid, {}).get("first", now)
             try:
-                out = build(bse, rec, final=(now - first) > WAIT_H * 3600)
+                out = build(bse, rec, final=(now - first) > WAIT_H * 3600, age_min=(10**6 if ONLY else (now - first) / 60))
             except Exception as e:
                 p(f"ERROR {rec.get('SLONGNAME')}: {redact(repr(e))[:200]}")
                 continue
