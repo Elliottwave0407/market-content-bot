@@ -24,6 +24,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          NEWS_PER_TAG: "1"
           NEWS_TEST_SEND: ${{ github.event.inputs.send || '0' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/news_posts.py preview "${{ github.event.inputs.day }}"

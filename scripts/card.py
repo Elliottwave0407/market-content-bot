@@ -63,12 +63,21 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
     yago = quarters[4]["m"] if len(quarters) > 4 else None
     rate = rating(quarters)
     fig = plt.figure(figsize=(16, 10), dpi=100, facecolor=BG)
-    fig.text(0.04, 0.925, name, color=TEXT, fontsize=30, fontweight="bold", va="center")
+    nfs = 30
+    rend = fig.canvas.get_renderer()
+    while nfs > 20:
+        tt = fig.text(0.04, 0.925, name, fontsize=nfs, fontweight="bold")
+        wd = tt.get_window_extent(rend).width / fig.dpi
+        tt.remove()
+        if wd <= 0.54 * 16:
+            break
+        nfs -= 1
+    fig.text(0.04, 0.925, name, color=TEXT, fontsize=nfs, fontweight="bold", va="center")
     fig.text(0.04, 0.875, f"{ticker}  |  {quarters[0]['q']} results  |  {basis.capitalize()}  |  ₹ Crore", color=MUTED, fontsize=15, va="center")
     # rating badge
-    fig.patches.append(FancyBboxPatch((0.74, 0.86), 0.22, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
-    fig.text(0.85, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
-    fig.text(0.85, 0.868, "RATING (draft rule)", color="#ffffff", fontsize=9, ha="center", va="center")
+    fig.patches.append(FancyBboxPatch((0.625, 0.86), 0.20, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
+    fig.text(0.725, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
+    fig.text(0.725, 0.868, "RATING (draft rule)", color="#ffffff", fontsize=9, ha="center", va="center")
     # table
     cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "QoQ", "YoY"]
     xs = [0.04, 0.32, 0.46, 0.60, 0.75, 0.88]
@@ -130,7 +139,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         ax.margins(y=0.2)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
     fig.text(0.04, 0.035, "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice." + (f"  {filed_note}" if filed_note else ""), color=MUTED, fontsize=11, va="center")
-    theme.brand(fig, x_right=0.715, top=0.985, h_in=1.0)
+    theme.brand(fig, x_right=0.968, top=0.985, h_in=1.0)
     theme.frame(fig)
     fig.savefig(out_path, facecolor=BG)
     plt.close(fig)

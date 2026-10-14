@@ -10,7 +10,7 @@ def m(rev, ebitda, pat, eps):
     return {"revenue": rev * 10, "ebitda": None if ebitda is None else ebitda * 10, "pbt": None, "pat": pat * 10, "eps": eps, "bank": False}
 q = [{"q": "Sep-26", "m": m(1250.4, 262.0, 148.2, 9.8)}, {"q": "Jun-26", "m": m(1190.0, 240.5, 131.0, 8.7)},
      {"q": "Mar-26", "m": m(1150.2, 228.0, 120.4, 8.0)}, {"q": "Dec-25", "m": m(1090.0, 210.3, 98.7, 6.5)}, {"q": "Sep-25", "m": m(1010.5, 196.0, 105.9, 7.0)}]
-card.render("Sample Industries Ltd", "BSE 500000", "consolidated", q, f"{out}/results_light.png", filed_note=S)
+card.render("Mangalore Refinery and Petrochemicals Ltd", "BSE 500000", "consolidated", q, f"{out}/results_light.png", filed_note=S)
 q2 = [dict(x) for x in q]
 q2[0] = {"q": "Sep-26", "m": m(88.0, None, -12.5, -1.4)}
 q2[1] = {"q": "Jun-26", "m": m(95.0, None, 3.0, 0.3)}

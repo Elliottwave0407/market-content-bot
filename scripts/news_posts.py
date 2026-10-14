@@ -325,7 +325,7 @@ def preview(day=None, per_tag=2, send=False):
                 break
             pg += 1
     if send and TOKEN and CHAT:
-        send_text(f"TEST BATCH - sample news cards built from real filings of {day:%d %b %Y}. Please share feedback on content and format (what is useful, what is noise, anything missing). Live cards start soon.")
+        send_text(f"TEST BATCH - new portrait news cards (bullet summaries) built from real filings of {day:%d %b %Y}. Please share feedback: is the text readable on your phone, what is useful, what is noise?")
     by = {}
     for r in rows:
         tg = classify(r)
@@ -352,7 +352,7 @@ if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "preview":
     from ci_out import publish
     d = datetime.strptime(sys.argv[2], "%Y-%m-%d") if len(sys.argv) > 2 else None
     try:
-        preview(d, send=os.environ.get("NEWS_TEST_SEND", "0") == "1")
+        preview(d, per_tag=int(os.environ.get("NEWS_PER_TAG", "2")), send=os.environ.get("NEWS_TEST_SEND", "0") == "1")
     except Exception:
         import traceback
         p("ERROR", traceback.format_exc()[-900:])
