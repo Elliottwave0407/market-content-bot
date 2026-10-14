@@ -38,7 +38,7 @@ cm.render_fii_dii({"date": "09 Oct 2026", "month": "Oct 2026", "fii": {"buy": la
                   f"{out}/fii_dii_light.png", note=S)
 cm.render_news({"tag": "ORDER WIN", "company": "Sample Engineering Ltd", "meta": "BSE 500003  |  12 Oct 2026, 16:20 IST",
                 "headline": "Sample Engineering receives order worth Rs 245 crore from a state power utility",
-                "detail": "The Company has received a Letter of Award for supply and installation of transmission equipment. The order is to be executed within 18 months from the date of the award.", "source": "BSE announcement"},
+                "sub": "Order value Rs 245 crore | 18 months to execute", "bullets": ["Letter of Award received from a state power utility", "Scope: supply and installation of transmission equipment", "To be executed within 18 months from the date of the award", "Order size is about 22% of last year's revenue (sample)"], "source": "BSE announcement"},
                f"{out}/news_order_light.png", note=S)
 cm.render_news({"tag": "RBI", "company": "Reserve Bank of India", "meta": "Press release  |  12 Oct 2026, 10:30 IST",
                 "headline": "RBI announces results of 14-day variable rate repo auction", "detail": None, "source": "RBI press release feed"},

@@ -131,6 +131,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
     fig.text(0.04, 0.035, "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice." + (f"  {filed_note}" if filed_note else ""), color=MUTED, fontsize=11, va="center")
     theme.brand(fig, x_right=0.715, top=0.985, h_in=1.0)
+    theme.frame(fig)
     fig.savefig(out_path, facecolor=BG)
     plt.close(fig)
     return rate
@@ -145,5 +146,6 @@ def render_stub(name, ticker, quarter, reason, out_path):
     fig.text(0.05, 0.37, "Numbers not shown: " + reason, color=AMBER, fontsize=18, va="center")
     fig.text(0.04, 0.07, "Source: BSE filings. Open the filing link in the caption for the figures. Not investment advice.", color=MUTED, fontsize=12, va="center")
     theme.brand(fig, h_in=0.9)
+    theme.frame(fig)
     fig.savefig(out_path, facecolor=BG)
     plt.close(fig)

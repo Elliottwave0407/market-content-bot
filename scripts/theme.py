@@ -45,8 +45,20 @@ def brand(fig, y=None, h_in=0.95, x_right=0.975, top=0.975):
     except Exception:
         fig.text(0.96, 0.035, "FinGod", color=MUTED, fontsize=12, fontweight="bold", ha="right", va="center")
 
+NAVY, GOLD = "#12263f", "#c8962b"
+
+def frame(fig):
+    """Professional border: navy outer line + gold hairline inside."""
+    if getattr(fig, "_framed", False):
+        return
+    from matplotlib.patches import Rectangle
+    fig.patches.append(Rectangle((0.004, 0.004), 0.992, 0.992, transform=fig.transFigure, facecolor="none", edgecolor=NAVY, linewidth=5, zorder=20))
+    fig.patches.append(Rectangle((0.0105, 0.0105), 0.979, 0.979, transform=fig.transFigure, facecolor="none", edgecolor=GOLD, linewidth=1.4, zorder=20))
+    fig._framed = True
+
 def save(fig, path):
     if not getattr(fig, "_branded", False):
         brand(fig)
+    frame(fig)
     fig.savefig(path, facecolor=BG)
     plt.close(fig)

@@ -110,7 +110,11 @@ def build_card(rec, tag):
         ex = pdf_excerpt(rec)
         if ex:
             detail = ex
-    it = {"tag": tag, "company": company_of(rec)[:48], "meta": f"BSE {rec.get('SCRIP_CD')}  |  {when}", "headline": head, "detail": detail, "source": "BSE announcement"}
+    import news_brief
+    br, how = news_brief.brief(tag, company_of(rec)[:48], head, detail)
+    p("   brief via", how)
+    head = br.get("headline") or head
+    it = {"tag": tag, "company": company_of(rec)[:48], "meta": f"BSE {rec.get('SCRIP_CD')}  |  {when}", "headline": head, "sub": br.get("sub"), "bullets": br.get("bullets") or [], "detail": None if br.get("bullets") else detail, "source": "BSE announcement"}
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f"news_{rec['NEWSID']}.png")
     CM.render_news(it, path)

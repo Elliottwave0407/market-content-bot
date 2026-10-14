@@ -139,34 +139,93 @@ def render_fii_dii(d, out_path, note=""):
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- news / announcements / macro
+def _wrap(fig, text, fs, weight, max_in, max_lines=None):
+    """Wrap text to a width in inches using real glyph measurement."""
+    r = fig.canvas.get_renderer()
+    dpi = fig.dpi
+    def w(s):
+        tx = fig.text(0, 0, s, fontsize=fs, fontweight=weight)
+        v = tx.get_window_extent(r).width / dpi
+        tx.remove()
+        return v
+    lines, cur = [], ""
+    for word in str(text).split():
+        trial = (cur + " " + word).strip()
+        if cur and w(trial) > max_in:
+            lines.append(cur); cur = word
+        else:
+            cur = trial
+    if cur:
+        lines.append(cur)
+    if max_lines and len(lines) > max_lines:
+        lines = lines[:max_lines]
+        lines[-1] = lines[-1].rstrip(" .,;") + " ..."
+    return lines
+
 def render_news(it, out_path, note=""):
-    """it = {"tag": "ORDER WIN", "company": ..., "meta": "BSE 500325 | 12 Oct 2026, 16:20 IST", "headline": ..., "detail": optional text as filed, "source": "BSE announcement"}"""
-    head = textwrap.wrap(it["headline"], 74)[:4]
-    det = textwrap.wrap(it.get("detail") or "", 120) if it.get("detail") else []
-    if len(det) > 5:
-        det = det[:5]
-        det[-1] = det[-1].rstrip(" .,;") + " ..."
-    H = 3.3 + 0.62 * len(head) + (0.5 + 0.36 * len(det) if det else 0.2)
-    fig = T.new_fig(16, H)
-    fy = lambda inch: 1 - inch / H
+    """Portrait news card (10.8 x up to 13.5 in). it = {tag, company, meta, headline, sub (optional key-figure line), bullets (list), source}.
+    Falls back to it['detail'] text as one bullet-less paragraph if no bullets are given."""
+    from matplotlib.patches import Rectangle as Rect
+    W = 10.8
+    tmp = T.new_fig(W, 13.5)
+    L, R = 0.75, W - 0.75
+    mw = R - L
     color = T.TAGS.get(it["tag"], T.TAGS["UPDATE"])
-    T.chip(fig, 0.04, fy(0.95), 0.012 * len(it["tag"]) + 0.07, 0.5 / H, it["tag"], color, 15)
-    fig.text(0.04, fy(1.45), it["company"], color=TEXT, fontsize=30, fontweight="bold", va="center")
-    fig.text(0.04, fy(1.95), it["meta"], color=MUTED, fontsize=14, fontweight="bold", va="center")
-    y = 2.7
-    for ln in head:
-        fig.text(0.04, fy(y), ln, color=TEXT, fontsize=25, va="center")
+    comp = _wrap(tmp, it["company"], 40, "bold", mw, 2)
+    head = _wrap(tmp, it["headline"], 33, "bold", mw, 4)
+    sub = _wrap(tmp, it["sub"], 26, "bold", mw - 0.7, 3) if it.get("sub") else []
+    bl = list(it.get("bullets") or [])
+    if not bl and it.get("detail"):
+        bl = [it["detail"]]
+    bl_lines = [_wrap(tmp, b, 24, "normal", mw - 0.7, 3) for b in bl]
+    plt = T.plt
+    plt.close(tmp)
+    def total(nb):
+        h = 2.9 + 0.62 * len(comp) + 0.58 * len(head) + 0.35
+        if sub:
+            h += 0.5 + 0.46 * len(sub) + 0.4
+        h += sum(0.5 + 0.42 * len(x) for x in bl_lines[:nb]) + (0.2 if nb else 0)
+        return h + 1.5
+    nb = len(bl_lines)
+    while nb > 0 and total(nb) > 13.5:
+        nb -= 1
+    H = min(13.5, max(10.0, total(nb)))
+    fig = T.new_fig(W, H)
+    fy = lambda inch: 1 - inch / H
+    fx = lambda inch: inch / W
+    fig.patches.append(Rect((fx(0.06), fy(0.45)), 1 - 2 * fx(0.06), 0.35 / H, transform=fig.transFigure, facecolor=color, edgecolor="none", zorder=1))
+    T.chip(fig, fx(L), fy(1.55), fx(0.30 * len(it["tag"]) + 0.7), 0.55 / H, it["tag"], color, 20)
+    y = 2.35
+    for ln in comp:
+        fig.text(fx(L), fy(y), ln, color=TEXT, fontsize=40, fontweight="bold", va="center")
         y += 0.62
-    if det:
-        h = 0.5 + 0.36 * len(det)
-        T.panel(fig, 0.03, fy(y + 0.1 + h), 0.94, h / H)
-        fig.text(0.05, fy(y + 0.38), "AS FILED", color=MUTED, fontsize=11, fontweight="bold", va="center")
-        yy = y + 0.72
-        for ln in det:
-            fig.text(0.05, fy(yy), ln, color=TEXT, fontsize=14, va="center")
-            yy += 0.36
-    T.footer(fig, f"Source: {it.get('source', 'BSE announcement')}. Text as filed; read the full filing for details. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, h_in=0.85)
+    fig.text(fx(L), fy(y), it["meta"], color=MUTED, fontsize=17, fontweight="bold", va="center")
+    y += 0.4
+    fig.patches.append(Rect((fx(L), fy(y)), mw / W, 0.03 / H, transform=fig.transFigure, facecolor=T.BORDER, edgecolor="none"))
+    y += 0.5
+    for ln in head:
+        fig.text(fx(L), fy(y), ln, color=T.HEAD, fontsize=33, fontweight="bold", va="center")
+        y += 0.58
+    y += 0.05
+    if sub:
+        h = 0.5 + 0.46 * len(sub)
+        T.panel(fig, fx(L - 0.15), fy(y + h), (mw + 0.3) / W, h / H, fc=T.PANEL, ec=T.BORDER)
+        fig.patches.append(Rect((fx(L - 0.15), fy(y + h)), 0.1 / W, h / H, transform=fig.transFigure, facecolor=color, edgecolor="none", zorder=5))
+        yy = y + 0.25 + 0.23
+        for ln in sub:
+            fig.text(fx(L + 0.15), fy(yy), ln, color=color, fontsize=26, fontweight="bold", va="center")
+            yy += 0.46
+        y += h + 0.4
+    for lines in bl_lines[:nb]:
+        fig.patches.append(Rect((fx(L + 0.02), fy(y - 0.04) - 0.085 / H), 0.17 / W, 0.17 / H, transform=fig.transFigure, facecolor=color, edgecolor="none"))
+        for k, ln in enumerate(lines):
+            fig.text(fx(L + 0.5), fy(y - 0.04 + 0.42 * k), ln, color=TEXT, fontsize=24, va="center")
+        y += 0.5 + 0.42 * (len(lines) - 1) + 0.0
+        y += 0.0
+    ft = f"{it.get('source', 'BSE announcement')}  |  Facts as filed - open the filing for details. Not investment advice." + (f"  {note}" if note else "")
+    for k, ln in enumerate(_wrap(fig, ft, 13, "normal", mw, 2)):
+        fig.text(fx(L), fy(H - 0.75 + 0.3 * k), ln, color=MUTED, fontsize=13, va="center")
+    T.brand(fig, h_in=1.15, x_right=fx(R) + 0.0, top=fy(0.62) + 0.0)
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- market breadth / mood
