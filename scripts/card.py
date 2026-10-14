@@ -12,23 +12,19 @@ def pct(a, b):
     # values are in Rs million; a base under Rs 1 crore (10) or a change above 1000% is not meaningful
     if a is None or b is None or b == 0:
         return None
-    if abs(b) < 10:
-        return None
-    v = (a - b) / abs(b) * 100      # abs(): a loss of 10 growing to 20 is -100%, 20 shrinking to 10 is +50%
-    return None if abs(v) > 1000 else v
+    return (a - b) / abs(b) * 100      # abs(): a loss of 10 growing to 20 is -100%, 20 shrinking to 10 is +50%. Always the real figure (no small-base / size caps).
 
 def pct_eps(a, b):
     # EPS is in rupees (not Rs million): no tiny-base rule, only sign and sanity checks
     if a is None or b is None or b == 0:
         return None
-    v = (a - b) / abs(b) * 100
-    return None if abs(v) > 1000 else v
+    return (a - b) / abs(b) * 100
 
 def fmt_pct(v):
-    return "NA" if v is None else f"{v:+.1f}%"
+    return "-" if v is None else f"{v:+,.1f}%"
 
 def fmt_num(v, d=0):
-    return "NA" if v is None else f"{v:,.{d}f}"
+    return "-" if v is None else f"{v:,.{d}f}"
 
 def opm(m):
     return None if not m or m.get("ebitda") is None or not m.get("revenue") else m["ebitda"] / m["revenue"] * 100
@@ -102,11 +98,11 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
             continue
         fig.text(xs[0], y, label, color=TEXT, fontsize=18, fontweight="bold", va="center")
         for x, v in ((xs[1], c), (xs[2], p), (xs[3], yy)):
-            fig.text(x + 0.05, y, fmt_num(v, d) if key != "opm" else ("NA" if v is None else f"{v:.1f}%"), color=TEXT, fontsize=18, fontweight="bold", ha="right", va="center")
+            fig.text(x + 0.05, y, fmt_num(v, d) if key != "opm" else ("-" if v is None else f"{v:.1f}%"), color=TEXT, fontsize=18, fontweight="bold", ha="right", va="center")
         for x, base in ((xs[4], p), (xs[5], yy)):
             if key == "opm":
                 chg = None if c is None or base is None else c - base
-                txt, col = ("NA", MUTED) if chg is None else (f"{chg:+.1f} pp", GREEN if chg > 0.05 else RED if chg < -0.05 else MUTED)
+                txt, col = ("-", MUTED) if chg is None else (f"{chg:+.1f} pp", GREEN if chg > 0.05 else RED if chg < -0.05 else MUTED)
             else:
                 chg = pct_eps(c, base) if key == "eps" else (None if c is None or base is None else pct(c * 10, base * 10))   # pct() expects Rs million (small-base rule = Rs 1 crore)
                 if key == "eps":
@@ -117,7 +113,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                 if chg == "NC":
                     txt, col = "NC*", AMBER
                 else:
-                    txt, col = ("NA", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
+                    txt, col = ("-", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
         y -= 0.062
     # trend bars (oldest -> newest)
