@@ -351,5 +351,9 @@ def preview(day=None, per_tag=2, send=False):
 if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "preview":
     from ci_out import publish
     d = datetime.strptime(sys.argv[2], "%Y-%m-%d") if len(sys.argv) > 2 else None
-    preview(d, send=os.environ.get("NEWS_TEST_SEND", "0") == "1")
+    try:
+        preview(d, send=os.environ.get("NEWS_TEST_SEND", "0") == "1")
+    except Exception:
+        import traceback
+        p("ERROR", traceback.format_exc()[-900:])
     publish()
