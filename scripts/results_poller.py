@@ -149,6 +149,13 @@ def build(bse, rec, final=False):
         reason = "BSE has not published structured numbers for this filing" if st == "not_available" else "only limited data available from BSE for this format"
         return stub(name, code, res["quarter"], reason, lk, f"{code}|{res['quarter']}|na")
     basis = "consolidated" if res["consolidated"] else "standalone"
+    cons_expected = bool((_ST or {}).get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
+    cons_missing = False
+    if basis == "standalone" and cons_expected:
+        # the filing has consolidated numbers but BSE has only published the standalone table so far: wait for consolidated (standing rule)
+        if not final:
+            return ("wait", "consolidated numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
+        cons_missing = True
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
     if not quarters[0]["m"]:
@@ -172,7 +179,7 @@ def build(bse, rec, final=False):
     card.render(name, f"BSE {code}", basis, quarters, png)
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-           f"{'(Quarter inferred from filing date.) ' if inferred else ''}Filing: {lk}\n\n{DISC}")
+           f"{'(Quarter inferred from filing date.) ' if inferred else ''}{'(Consolidated figures were not on BSE after 24 h - standalone shown.) ' if cons_missing else ''}Filing: {lk}\n\n{DISC}")
     return ("photo", cap, png, f"{code}|{res['quarter']}|{basis}")
 
 def audit(bse, st, chat):

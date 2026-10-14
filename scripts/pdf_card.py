@@ -94,6 +94,16 @@ def try_pdf(bse, rec, st, headline, filed):
             STATE_["backoff"] = time.time() + 120
         LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:80]}")
         return None
+    try:   # remember that this filing HAS consolidated figures, so the BSE-table fallback never posts standalone for it
+        c_ = out.get("consolidated")
+        if isinstance(c_, dict) and val(c_, "revenue", 0) is not None and val(c_, "pat", 0) is not None:
+            ce = st.setdefault("cons_expected", {})
+            ce[str(nid)] = 1
+            if len(ce) > 600:
+                for k_ in list(ce)[:100]:
+                    ce.pop(k_, None)
+    except Exception:
+        pass
     k = K.get(str(out.get("unit", "")).lower())
     cols = out.get("quarter_end_columns") or []
     qe = parse_qend(cols[0]) if cols else None
