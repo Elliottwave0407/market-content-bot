@@ -22,7 +22,7 @@ STATE = "state/seen.json"
 _ST = None
 PDF_AUDIT = {}
 OUTDIR = "drafts/poll"
-DISC = "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice."
+DISC = "For educational purpose only."
 
 def redact(s):
     return str(s).replace(TOKEN, "<token>") if TOKEN else str(s)

@@ -10,7 +10,7 @@ def cr(v):
 
 def pct(a, b):
     # values are in Rs million; a base under Rs 1 crore (10) or a change above 1000% is not meaningful
-    if a is None or b is None or b == 0 or a < 0 or b < 0:
+    if a is None or b is None or b <= 0:
         return None
     if abs(b) < 10:
         return None
@@ -19,7 +19,7 @@ def pct(a, b):
 
 def pct_eps(a, b):
     # EPS is in rupees (not Rs million): no tiny-base rule, only sign and sanity checks
-    if a is None or b is None or b <= 0 or a < 0:
+    if a is None or b is None or b <= 0:
         return None
     v = (a - b) / b * 100
     return None if abs(v) > 1000 else v
@@ -108,7 +108,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                 chg = None if c is None or base is None else c - base
                 txt, col = ("NA", MUTED) if chg is None else (f"{chg:+.1f} pp", GREEN if chg > 0.05 else RED if chg < -0.05 else MUTED)
             else:
-                chg = pct_eps(c, base) if key == "eps" else pct(c, base)
+                chg = pct_eps(c, base) if key == "eps" else (None if c is None or base is None else pct(c * 10, base * 10))   # pct() expects Rs million (small-base rule = Rs 1 crore)
                 if key == "eps":
                     pc, pb = (cur.get("pat"), (prev if base is p else yago) or {})
                     pat_chg = pct(pc, pb.get("pat") if isinstance(pb, dict) else None)
@@ -116,6 +116,8 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
                         chg = "NC"
                 if chg == "NC":
                     txt, col = "NC*", AMBER
+                elif chg is None and c is not None and base is not None and base < 0 and key in ("pat", "eps"):
+                    txt, col = ("Turnaround", GREEN) if c > 0 else ("Loss", MUTED)   # base was a loss: a % change is not meaningful
                 else:
                     txt, col = ("NA", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
@@ -138,7 +140,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         ax.set_title(title, color=TEXT, fontsize=15, fontweight="bold", loc="left")
         ax.margins(y=0.2)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
-    fig.text(0.04, 0.035, "Source: BSE filings. Auto-generated from filed numbers - verify with official filings. Not investment advice." + (f"  {filed_note}" if filed_note else ""), color=MUTED, fontsize=11, va="center")
+    fig.text(0.04, 0.035, "For educational purpose only." + (f"  {filed_note}" if filed_note else ""), color=MUTED, fontsize=11, va="center")
     theme.brand(fig, x_right=0.968, top=0.985, h_in=1.0)
     theme.frame(fig)
     fig.savefig(out_path, facecolor=BG)
@@ -153,7 +155,7 @@ def render_stub(name, ticker, quarter, reason, out_path):
     fig.text(0.04, 0.68, f"{ticker}  |  {quarter} results filed", color=MUTED, fontsize=15, va="center")
     fig.patches.append(FancyBboxPatch((0.03, 0.18), 0.94, 0.38, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=PANEL, edgecolor=BORDER, linewidth=1))
     fig.text(0.05, 0.37, "Numbers not shown: " + reason, color=AMBER, fontsize=18, va="center")
-    fig.text(0.04, 0.07, "Source: BSE filings. Open the filing link in the caption for the figures. Not investment advice.", color=MUTED, fontsize=12, va="center")
+    fig.text(0.04, 0.07, "For educational purpose only.", color=MUTED, fontsize=12, va="center")
     theme.brand(fig, h_in=0.9)
     theme.frame(fig)
     fig.savefig(out_path, facecolor=BG)
