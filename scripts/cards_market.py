@@ -23,51 +23,68 @@ def indian(n, d=0):
 def money(v, d=1):
     return "NA" if v is None else f"{v:,.{d}f}" if abs(v) < 1000 else indian(v, 0)
 
-# ---------------------------------------------------------------- bulk / block deals (ALL deals, paged)
+# ---------------------------------------------------------------- portrait helpers
+def _hdr(fig, W, H, title, sub, accent=None, page=None):
+    """Top accent strip + title + sub line (logo is added by T.save / T.brand)."""
+    from matplotlib.patches import Rectangle as Rect
+    fx = lambda i: i / W
+    fy = lambda i: 1 - i / H
+    fig.patches.append(Rect((fx(0.06), fy(0.45)), 1 - 2 * fx(0.06), 0.35 / H, transform=fig.transFigure, facecolor=accent or T.NAVY, edgecolor="none", zorder=1))
+    fig.text(fx(0.75), fy(1.25), title, color=TEXT, fontsize=40, fontweight="bold", va="center")
+    fig.text(fx(0.75), fy(1.85), sub, color=MUTED, fontsize=17, fontweight="bold", va="center")
+    if page:
+        fig.text(fx(W - 0.75), fy(2.35), page, color=HEAD, fontsize=20, fontweight="bold", ha="right", va="center")
+
+def _foot(fig, W, H, text, note=""):
+    L, mw = 0.75, W - 1.5
+    for k, ln in enumerate(_wrap(fig, text + (f"  {note}" if note else ""), 13, "normal", mw, 3)):
+        fig.text(L / W, 1 - (H - 0.8 + 0.3 * k) / H, ln, color=MUTED, fontsize=13, va="center")
+
+# ---------------------------------------------------------------- bulk / block deals (ALL deals, paged, portrait)
 def _deals_page(items, date_label, page, pages, out_path, note=""):
-    """items: list of (section, row, index_in_section). One card."""
+    """items: list of (section, row, index_in_section). One portrait card, 3 lines per deal."""
+    from matplotlib.patches import Rectangle as Rect
+    W = 10.8
     sections = []
     for sec, r, i in items:
         if not sections or sections[-1][0] != sec:
             sections.append([sec, []])
         sections[-1][1].append((r, i))
-    H = 1.45 + sum(1.04 + 0.46 * len(rs) + 0.18 for _, rs in sections) + 0.9
-    fig = T.new_fig(16, H)
-    fy = lambda inch: 1 - inch / H
-    fig.text(0.04, fy(0.55), "Bulk & Block Deals", color=TEXT, fontsize=30, fontweight="bold", va="center")
-    if pages > 1:
-        fig.text(0.96, fy(0.55), f"{page}/{pages}", color=HEAD, fontsize=22, fontweight="bold", ha="right", va="center")
-    fig.text(0.04, fy(1.05), f"{date_label}  |  NSE + BSE  |  net per client  |  ₹ Crore", color=MUTED, fontsize=15, va="center")
-    cols = [("Stock", 0.045, "left"), ("Client", 0.235, "left"), ("Qty", 0.60, "right"), ("Price ₹", 0.685, "right"), ("Value ₹Cr", 0.78, "right"), ("Stake %", 0.865, "right"), ("Mcap ₹Cr", 0.955, "right")]
-    y = 1.45
+    RH = 1.12
+    H = 2.6 + sum(0.95 + RH * len(rs) + 0.25 for _, rs in sections) + 1.4
+    fig = T.new_fig(W, H)
+    fx = lambda i: i / W
+    fy = lambda i: 1 - i / H
+    _hdr(fig, W, H, "Bulk & Block Deals", f"{date_label}  |  NSE + BSE  |  net per client  |  ₹ Crore", page=f"{page}/{pages}" if pages > 1 else None)
+    y = 2.6
     for sec, rs in sections:
         color, title = (GREEN, "NET BUYERS") if sec == "B" else (RED, "NET SELLERS")
         if rs[0][1] > 0:
             title += " (continued)"
-        h = 1.04 + 0.46 * len(rs)
-        T.panel(fig, 0.03, fy(y + h), 0.94, h / H)
-        fig.text(0.045, fy(y + 0.30), title, color=color, fontsize=16, fontweight="bold", va="center")
-        for t, x, ha in cols:
-            fig.text(x, fy(y + 0.74), t, color=HEAD, fontsize=12.5, fontweight="bold", ha=ha, va="center")
+        h = 0.95 + RH * len(rs)
+        T.panel(fig, fx(0.45), fy(y + h), (W - 0.9) / W, h / H)
+        fig.patches.append(Rect((fx(0.45), fy(y + 0.1)), (W - 0.9) / W, 0.1 / H, transform=fig.transFigure, facecolor=color, edgecolor="none", zorder=5))
+        fig.text(fx(0.8), fy(y + 0.55), title, color=color, fontsize=22, fontweight="bold", va="center")
         yy = y + 1.15
-        for r, _ in rs:
+        for k, (r, _) in enumerate(rs):
             ex = "NSE" if r.get("ex") == "N" else "BSE"
-            fig.text(0.045, fy(yy), f"{r['name'][:19]}", color=TEXT, fontsize=13, fontweight="bold", va="center")
-            fig.text(0.215, fy(yy), ex, color=MUTED, fontsize=9, fontweight="bold", ha="right", va="center")
-            fig.text(0.235, fy(yy), f"{r['client'][:30]}", color=TEXT, fontsize=12.5, fontweight="bold", va="center")
-            fig.text(0.60, fy(yy), indian(r["qty"]), color=TEXT, fontsize=13, fontweight="bold", ha="right", va="center")
-            fig.text(0.685, fy(yy), f"{r['price']:,.2f}", color=TEXT, fontsize=13, fontweight="bold", ha="right", va="center")
-            fig.text(0.78, fy(yy), f"{r['cr']:,.2f}", color=color, fontsize=13.5, fontweight="bold", ha="right", va="center")
-            fig.text(0.865, fy(yy), "NA" if r.get("stake") is None else f"{r['stake']:.2f}", color=TEXT, fontsize=13, fontweight="bold", ha="right", va="center")
-            fig.text(0.955, fy(yy), "NA" if r.get("mcap") is None else indian(r["mcap"]), color=TEXT, fontsize=13, fontweight="bold", ha="right", va="center")
-            yy += 0.46
-        y += h + 0.18
-    T.footer(fig, "Source: NSE & BSE bulk/block disclosures. Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, h_in=0.75)
+            if k:
+                fig.patches.append(Rect((fx(0.8), fy(yy - 0.2)), (W - 1.6) / W, 0.015 / H, transform=fig.transFigure, facecolor=BORDER, edgecolor="none"))
+            fig.text(fx(0.8), fy(yy), r["name"][:24], color=TEXT, fontsize=21, fontweight="bold", va="center")
+            fig.text(fx(W - 0.8), fy(yy), f"₹{r['cr']:,.2f} Cr", color=color, fontsize=21, fontweight="bold", ha="right", va="center")
+            fig.text(fx(0.8), fy(yy + 0.38), r["client"][:34], color=HEAD, fontsize=14.5, fontweight="bold", va="center")
+            fig.text(fx(W - 0.8), fy(yy + 0.38), f"{indian(r['qty'])} @ ₹{r['price']:,.2f}", color=TEXT, fontsize=14.5, ha="right", va="center")
+            st = "Stake NA" if r.get("stake") is None else f"Stake {r['stake']:.2f}%"
+            mc = "Mcap NA" if r.get("mcap") is None else f"Mcap ₹{indian(r['mcap'])} Cr"
+            fig.text(fx(0.8), fy(yy + 0.72), f"{ex}   |   {st}   |   {mc}", color=MUTED, fontsize=13, va="center")
+            yy += RH
+        y += h + 0.25
+    _foot(fig, W, H, "Source: NSE & BSE bulk/block disclosures. Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed. Not investment advice.", note)
+    T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)
 
-def render_deals(rows, date_label, out_prefix, note="", per_card=22):
-    """ALL deals of the day, buyers then sellers (each by value, largest first), split over as many cards as needed. Returns list of PNG paths."""
+def render_deals(rows, date_label, out_prefix, note="", per_card=10):
+    """ALL deals of the day, buyers then sellers (each by value, largest first), split over as many portrait cards as needed. Returns list of PNG paths."""
     buys = sorted([r for r in rows if r["side"] == "B"], key=lambda r: -r["cr"])
     sells = sorted([r for r in rows if r["side"] == "S"], key=lambda r: -r["cr"])
     flat = [("B", r, i) for i, r in enumerate(buys)] + [("S", r, i) for i, r in enumerate(sells)]
@@ -82,60 +99,60 @@ def render_deals(rows, date_label, out_prefix, note="", per_card=22):
         paths.append(path)
     return paths
 
-# ---------------------------------------------------------------- FII / DII (today + month-to-date table)
+# ---------------------------------------------------------------- FII / DII (portrait: today + month-to-date nets)
 def render_fii_dii(d, out_path, note=""):
-    """d = {"date": "09 Oct 2026", "month": "Oct 2026", "fii": {"buy","sell","net"}, "dii": {...},
-            "mtd": [ {"date": "01 Oct", "fii_buy","fii_sell","fii_net","dii_buy","dii_sell","dii_net"} ... ] (every trading day this month, oldest first, today last)}"""
+    """d = {"date", "month", "fii": {"buy","sell","net"}, "dii": {...}, "mtd": [ {"date","fii_buy","fii_sell","fii_net","dii_buy","dii_sell","dii_net"} ... ] oldest first, today last}"""
+    from matplotlib.patches import Rectangle as Rect
+    W = 10.8
     mtd = d.get("mtd") or []
-    H = 6.2 + (1.9 + 0.40 * (len(mtd) + 1) if mtd else 0)
-    fig = T.new_fig(16, H)
-    fy = lambda inch: 1 - inch / H
-    fig.text(0.04, fy(0.55), "FII / DII Activity", color=TEXT, fontsize=30, fontweight="bold", va="center")
-    fig.text(0.04, fy(1.05), f"{d['date']}  |  Cash segment  |  ₹ Crore", color=MUTED, fontsize=15, va="center")
-    Rect = __import__("matplotlib.patches", fromlist=["Rectangle"]).Rectangle
+    shown = mtd[-14:]
+    H = 2.6 + 4.7 + 1.0 + ((1.3 + 0.5 * (len(shown) + 1) + 0.4) if mtd else 0) + 1.4
+    fig = T.new_fig(W, H)
+    fx = lambda i: i / W
+    fy = lambda i: 1 - i / H
+    _hdr(fig, W, H, "FII / DII Activity", f"{d['date']}  |  Cash segment  |  ₹ Crore")
+    pw = (W - 0.9 - 0.3) / 2
     for i, (key, label) in enumerate((("fii", "FII / FPI"), ("dii", "DII"))):
-        x0 = 0.03 + i * 0.48
+        x0 = 0.45 + i * (pw + 0.3)
         v = d[key]
-        T.panel(fig, x0, fy(1.45 + 3.6), 0.46, 3.6 / H)
         net = v["net"]
         color = GREEN if net > 0 else RED if net < 0 else MUTED
         word = "NET BUYERS" if net > 0 else "NET SELLERS" if net < 0 else "FLAT"
-        fig.text(x0 + 0.02, fy(1.95), label, color=TEXT, fontsize=22, fontweight="bold", va="center")
-        T.chip(fig, x0 + 0.30, fy(2.15), 0.14, 0.40 / H, word, color, 14)
-        fig.text(x0 + 0.02, fy(2.85), f"{'+' if net > 0 else '-' if net < 0 else ''}₹{abs(net):,.0f} Cr", color=color, fontsize=44, fontweight="bold", va="center")
+        y0 = 2.6
+        T.panel(fig, fx(x0), fy(y0 + 4.7), pw / W, 4.7 / H)
+        fig.patches.append(Rect((fx(x0), fy(y0 + 0.1)), pw / W, 0.1 / H, transform=fig.transFigure, facecolor=color, edgecolor="none", zorder=5))
+        fig.text(fx(x0 + 0.3), fy(y0 + 0.6), label, color=TEXT, fontsize=24, fontweight="bold", va="center")
+        T.chip(fig, fx(x0 + 0.3), fy(y0 + 1.5), (pw - 0.6) / W, 0.5 / H, word, color, 17)
+        fig.text(fx(x0 + pw / 2), fy(y0 + 2.25), f"{'+' if net > 0 else '-' if net < 0 else ''}₹{abs(net):,.0f}", color=color, fontsize=44, fontweight="bold", ha="center", va="center")
+        fig.text(fx(x0 + pw / 2), fy(y0 + 2.8), "Crore (net)", color=MUTED, fontsize=15, fontweight="bold", ha="center", va="center")
         mx = max(v["buy"], v["sell"], 1)
         for j, (lab, val, col) in enumerate((("Buy", v["buy"], GREEN), ("Sell", v["sell"], RED))):
-            yy = 3.75 + j * 0.62
-            fig.text(x0 + 0.02, fy(yy), lab, color=HEAD, fontsize=15, fontweight="bold", va="center")
-            wbar = 0.26 * val / mx
-            fig.patches.append(Rect((x0 + 0.075, fy(yy + 0.14)), wbar, 0.28 / H, transform=fig.transFigure, facecolor=col, edgecolor="none"))
-            fig.text(x0 + 0.075 + wbar + 0.008, fy(yy), f"₹{val:,.0f} Cr", color=TEXT, fontsize=15, fontweight="bold", va="center")
+            yy = y0 + 3.3 + j * 0.65
+            fig.text(fx(x0 + 0.3), fy(yy), f"{lab} ₹{val:,.0f} Cr", color=TEXT, fontsize=14, fontweight="bold", va="center")
+            fig.patches.append(Rect((fx(x0 + 0.3), fy(yy + 0.36)), (pw - 0.6) * val / mx / W, 0.12 / H, transform=fig.transFigure, facecolor=col, edgecolor="none"))
     comb = d["fii"]["net"] + d["dii"]["net"]
-    fig.text(0.04, fy(5.4), f"Combined FII + DII net: {'+' if comb > 0 else '-' if comb < 0 else ''}₹{abs(comb):,.0f} Cr  ({'net buying' if comb > 0 else 'net selling' if comb < 0 else 'flat'})", color=TEXT, fontsize=17, fontweight="bold", va="center")
+    fig.text(fx(0.75), fy(2.6 + 4.7 + 0.55), f"Combined FII + DII net: {'+' if comb > 0 else '-' if comb < 0 else ''}₹{abs(comb):,.0f} Cr  ({'net buying' if comb > 0 else 'net selling' if comb < 0 else 'flat'})", color=TEXT, fontsize=20, fontweight="bold", va="center")
     if mtd:
-        y0 = 6.05
-        h = 1.9 + 0.40 * (len(mtd) + 1) - 0.3
-        T.panel(fig, 0.03, fy(y0 + h), 0.94, h / H)
-        fig.text(0.045, fy(y0 + 0.35), f"Month to date  |  {d.get('month', '')}  |  ₹ Crore", color=TEXT, fontsize=17, fontweight="bold", va="center")
-        cols = [("Date", 0.045, "left"), ("FII Buy", 0.26, "right"), ("FII Sell", 0.36, "right"), ("FII Net", 0.47, "right"),
-                ("DII Buy", 0.64, "right"), ("DII Sell", 0.74, "right"), ("DII Net", 0.85, "right"), ("FII+DII", 0.955, "right")]
-        for t, x, ha in cols:
-            fig.text(x, fy(y0 + 0.85), t, color=HEAD, fontsize=13, fontweight="bold", ha=ha, va="center")
-        def row(yy, lab, fb, fs, fn, db, ds, dn, bold_bg=False):
-            if bold_bg:
-                fig.patches.append(Rect((0.04, fy(yy + 0.19)), 0.92, 0.38 / H, transform=fig.transFigure, facecolor="#e3eaf3", edgecolor="none"))
-            sgn = lambda v: GREEN if v > 0 else RED if v < 0 else TEXT
-            fig.text(0.045, fy(yy), lab, color=TEXT, fontsize=13, fontweight="bold", va="center")
-            for x, v, colr in ((0.26, fb, TEXT), (0.36, fs, TEXT), (0.47, fn, sgn(fn)), (0.64, db, TEXT), (0.74, ds, TEXT), (0.85, dn, sgn(dn)), (0.955, fn + dn, sgn(fn + dn))):
-                fig.text(x, fy(yy), (f"{v:+,.0f}" if x in (0.47, 0.85, 0.955) else f"{v:,.0f}"), color=colr, fontsize=13, fontweight="bold", ha="right", va="center")
-        yy = y0 + 1.3
-        for r in mtd:
-            row(yy, r["date"], r["fii_buy"], r["fii_sell"], r["fii_net"], r["dii_buy"], r["dii_sell"], r["dii_net"])
-            yy += 0.40
-        tot = lambda k: sum(r[k] for r in mtd)
-        row(yy, "MTD total", tot("fii_buy"), tot("fii_sell"), tot("fii_net"), tot("dii_buy"), tot("dii_sell"), tot("dii_net"), True)
-    T.footer(fig, "Source: exchange-reported provisional FII/DII cash-market data. Net = buy - sell. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, h_in=0.85)
+        y0 = 2.6 + 4.7 + 1.0
+        h = 1.3 + 0.5 * (len(shown) + 1) + 0.2
+        T.panel(fig, fx(0.45), fy(y0 + h), (W - 0.9) / W, h / H)
+        fig.text(fx(0.8), fy(y0 + 0.45), f"Month to date  |  {d.get('month', '')}  |  net ₹ Cr", color=TEXT, fontsize=20, fontweight="bold", va="center")
+        cx = {"d": 0.8, "f": 5.0, "i": 7.3, "t": W - 0.8}
+        for t, key, ha in (("Date", "d", "left"), ("FII Net", "f", "right"), ("DII Net", "i", "right"), ("FII+DII", "t", "right")):
+            fig.text(fx(cx[key]), fy(y0 + 1.0), t, color=HEAD, fontsize=16, fontweight="bold", ha=ha, va="center")
+        sgn = lambda v: GREEN if v > 0 else RED if v < 0 else TEXT
+        def row(yy, lab, fn, dn, shade=False):
+            if shade:
+                fig.patches.append(Rect((fx(0.6), fy(yy + 0.24)), (W - 1.2) / W, 0.48 / H, transform=fig.transFigure, facecolor="#e3eaf3", edgecolor="none"))
+            fig.text(fx(cx["d"]), fy(yy), lab, color=TEXT, fontsize=17, fontweight="bold", va="center")
+            for key, v in (("f", fn), ("i", dn), ("t", fn + dn)):
+                fig.text(fx(cx[key]), fy(yy), f"{v:+,.0f}", color=sgn(v), fontsize=17, fontweight="bold", ha="right", va="center")
+        yy = y0 + 1.5
+        for r in shown:
+            row(yy, r["date"], r["fii_net"], r["dii_net"]); yy += 0.5
+        row(yy, "MTD total", sum(r["fii_net"] for r in mtd), sum(r["dii_net"] for r in mtd), True)
+    _foot(fig, W, H, "Source: exchange-reported provisional FII/DII cash-market data. Net = buy - sell. Not investment advice.", note)
+    T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- news / announcements / macro
@@ -440,4 +457,68 @@ def render_mood3(b, out_path, note=""):
     for k, t in enumerate((f1, f2)):
         fig.text(0.04, fy(10.85 + 0.3 * k), t, color=MUTED, fontsize=10.5, va="center")
     T.brand(fig, h_in=0.85)
+    T.save(fig, out_path)
+
+
+# ---------------------------------------------------------------- market breadth v4: portrait
+def render_mood4(b, out_path, note=""):
+    """b = prices2.breadth_segments() output. Portrait: headline box + 3 stacked segment boxes."""
+    from datetime import datetime
+    from matplotlib.patches import Rectangle as Rect
+    W = 10.8
+    SEGH, TOPH = 3.75, 3.6
+    H = 2.5 + TOPH + 0.3 + 3 * (SEGH + 0.25) + 1.5
+    fig = T.new_fig(W, H)
+    fx = lambda i: i / W
+    fy = lambda i: 1 - i / H
+    try:
+        dl = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
+    except Exception:
+        dl = str(b["date"])
+    A, S = b["all"], b["seg"]
+    _hdr(fig, W, H, "Market Breadth", f"{dl}  |  NSE + BSE  |  {A['n']:,} stocks, each counted once")
+    colr = lambda v: GREEN if v >= 60 else AMBER if v >= 40 else RED
+    def pc(v):
+        return "NA" if v is None else f"{v:.0f}%"
+    def ud_bar(x, w, yin, st, h=0.4, fs=17):
+        tot = max(st["adv"] + st["dec"] + st["unch"], 1)
+        wa, wd, wu = w * st["adv"] / tot, w * st["dec"] / tot, w * st["unch"] / tot
+        for xx, ww, c in ((x, wa, GREEN), (x + wa, wu, "#9aa7b6"), (x + wa + wu, wd, RED)):
+            fig.patches.append(Rect((fx(xx), fy(yin + h)), ww / W, h / H, transform=fig.transFigure, facecolor=c, edgecolor="none"))
+        fig.text(fx(x), fy(yin + h + 0.32), f"{st['adv']:,} up ({100 * st['adv'] / tot:.0f}%)", color=GREEN, fontsize=fs, fontweight="bold", va="center")
+        fig.text(fx(x + w), fy(yin + h + 0.32), f"{st['dec']:,} down ({100 * st['dec'] / tot:.0f}%)", color=RED, fontsize=fs, fontweight="bold", ha="right", va="center")
+    # headline
+    y0 = 2.5
+    label, mcol = mood_of(A.get("above_50"))
+    T.panel(fig, fx(0.45), fy(y0 + TOPH), (W - 0.9) / W, TOPH / H)
+    fig.patches.append(Rect((fx(0.45), fy(y0 + 0.1)), (W - 0.9) / W, 0.1 / H, transform=fig.transFigure, facecolor=mcol, edgecolor="none", zorder=5))
+    fig.text(fx(0.8), fy(y0 + 0.6), "Whole market", color=TEXT, fontsize=26, fontweight="bold", va="center")
+    T.chip(fig, fx(W - 0.8 - 3.3), fy(y0 + 0.88), 3.3 / W, 0.55 / H, f"MOOD: {label}", mcol, 20)
+    ud_bar(0.8, W - 1.6, y0 + 1.1, A)
+    stats = [("20-day", pc(A.get("above_20")), A.get("above_20")), ("50-day", pc(A.get("above_50")), A.get("above_50")), ("200-day", pc(A.get("above_200")), A.get("above_200"))]
+    for i, (lab, val, v) in enumerate(stats):
+        cx = 0.8 + (W - 1.6) * (i + 0.5) / 3
+        fig.text(fx(cx), fy(y0 + 2.55), val, color=colr(v) if v is not None else TEXT, fontsize=40, fontweight="bold", ha="center", va="center")
+        fig.text(fx(cx), fy(y0 + 3.0), f"above {lab}", color=HEAD, fontsize=16, fontweight="bold", ha="center", va="center")
+    fig.text(fx(0.8), fy(y0 + 3.4), f"52-week highs {A['new_high']:,}   |   lows {A['new_low']:,}", color=HEAD, fontsize=16, fontweight="bold", va="center")
+    # segments
+    boxes = [("Large & Mid", "Market cap above ₹10,000 Cr", S["Large & Mid"]), ("Small & Micro", "Market cap below ₹10,000 Cr", S["Small & Micro"]), ("SME", "NSE Emerge + BSE SME", S["SME"])]
+    by = y0 + TOPH + 0.3
+    for name, sub, st in boxes:
+        lab, c = mood_of(st.get("above_50"))
+        T.panel(fig, fx(0.45), fy(by + SEGH), (W - 0.9) / W, SEGH / H)
+        fig.patches.append(Rect((fx(0.45), fy(by + 0.1)), (W - 0.9) / W, 0.1 / H, transform=fig.transFigure, facecolor=c, edgecolor="none", zorder=5))
+        fig.text(fx(0.8), fy(by + 0.55), name, color=TEXT, fontsize=25, fontweight="bold", va="center")
+        fig.text(fx(0.8), fy(by + 0.98), f"{sub}  |  {st['n']:,} stocks", color=MUTED, fontsize=14, va="center")
+        T.chip(fig, fx(W - 0.8 - 3.0), fy(by + 0.82), 3.0 / W, 0.5 / H, f"MOOD: {lab}", c, 18)
+        ud_bar(0.8, W - 1.6, by + 1.3, st, h=0.34, fs=16)
+        for i, (k2, lbl) in enumerate((("above_20", "20-day"), ("above_50", "50-day"), ("above_200", "200-day"))):
+            v = st.get(k2)
+            cx = 0.8 + (W - 1.6) * (i + 0.5) / 3
+            fig.text(fx(cx), fy(by + 2.7), pc(v), color=colr(v) if v is not None else TEXT, fontsize=30, fontweight="bold", ha="center", va="center")
+            fig.text(fx(cx), fy(by + 3.08), f"above {lbl}", color=HEAD, fontsize=14, fontweight="bold", ha="center", va="center")
+        fig.text(fx(0.8), fy(by + 3.48), f"52-wk highs {st['new_high']:,}  |  lows {st['new_low']:,}  |  up 4%+ {st['up4']:,}  |  down 4%+ {st['down4']:,}", color=HEAD, fontsize=14, fontweight="bold", va="center")
+        by += SEGH + 0.25
+    _foot(fig, W, H, f"Mood rule: share of stocks above their 50-day average - 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak. Every stock that traded on NSE or BSE today is counted once; {b.get('unclassified', 0)} without a market cap are in the whole-market box only. Not investment advice.", note)
+    T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)

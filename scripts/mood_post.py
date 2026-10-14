@@ -11,7 +11,7 @@ A, S = b["all"], b["seg"]
 p(json.dumps(b))
 os.makedirs("out", exist_ok=True)
 png = "out/mood.png"
-cm.render_mood3(b, png)
+cm.render_mood4(b, png)
 label, _ = cm.mood_of(A.get("above_50"))
 from datetime import datetime
 d = datetime.strptime(b["date"], "%Y-%m-%d").strftime("%d %b %Y")
