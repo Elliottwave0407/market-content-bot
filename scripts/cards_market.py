@@ -189,7 +189,7 @@ def render_news(it, out_path, note=""):
     nb = len(bl_lines)
     while nb > 0 and total(nb) > 13.5:
         nb -= 1
-    H = min(13.5, max(10.0, total(nb)))
+    H = min(13.5, max(8.8, total(nb)))
     fig = T.new_fig(W, H)
     fy = lambda inch: 1 - inch / H
     fx = lambda inch: inch / W

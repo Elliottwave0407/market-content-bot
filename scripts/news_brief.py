@@ -50,6 +50,8 @@ def brief(tag, company, title, detail, key=None):
         if r.status_code != 200:
             return fallback(title, detail), f"rule (HTTP {r.status_code})"
         out = json.loads(re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()))
+        if isinstance(out, list) and out:
+            out = out[0]
         out["bullets"] = [str(b).strip() for b in out["bullets"] if str(b).strip()][:5]
         if _ok(out, src):
             return out, "gemini"
