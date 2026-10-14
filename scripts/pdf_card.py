@@ -139,6 +139,7 @@ def try_pdf(bse, rec, st, headline, filed):
             LOG.append(f"pdf has consolidated but it failed checks: not falling back to standalone {rec.get('SLONGNAME')}")
             return None
         ok, n = arith_ok(d)
+        LOG.append(f"pdf current col {rec.get('SLONGNAME')} {basis} ok={ok}/{n}: " + ", ".join(f"{x}={val(d, x, 0)}" for x in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat", "eps")))
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
         hist, hpat, det, hs = {}, {}, [], {}
