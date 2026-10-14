@@ -38,7 +38,7 @@ def _hdr(fig, W, H, title, sub, accent=None, page=None):
 def _foot(fig, W, H, text, note=""):
     L, mw = 0.75, W - 1.5
     for k, ln in enumerate(_wrap(fig, text + (f"  {note}" if note else ""), 13, "normal", mw, 3)):
-        fig.text(L / W, 1 - (H - 0.8 + 0.3 * k) / H, ln, color=MUTED, fontsize=13, va="center")
+        fig.text(L / W, 1 - (H - 1.0 + 0.3 * k) / H, ln, color=MUTED, fontsize=13, va="center")
 
 # ---------------------------------------------------------------- bulk / block deals (ALL deals, paged, portrait)
 def _deals_page(items, date_label, page, pages, out_path, note=""):
@@ -467,7 +467,7 @@ def render_mood4(b, out_path, note=""):
     from matplotlib.patches import Rectangle as Rect
     W = 10.8
     SEGH, TOPH = 3.75, 3.6
-    H = 2.5 + TOPH + 0.3 + 3 * (SEGH + 0.25) + 1.5
+    H = 2.5 + TOPH + 0.3 + 3 * (SEGH + 0.25) + 1.9
     fig = T.new_fig(W, H)
     fx = lambda i: i / W
     fy = lambda i: 1 - i / H
@@ -476,7 +476,7 @@ def render_mood4(b, out_path, note=""):
     except Exception:
         dl = str(b["date"])
     A, S = b["all"], b["seg"]
-    _hdr(fig, W, H, "Market Breadth", f"{dl}  |  NSE + BSE  |  {A['n']:,} stocks, each counted once")
+    _hdr(fig, W, H, "Market Breadth", f"{dl}  |  NSE + BSE  |  {A['n']:,} stocks")
     colr = lambda v: GREEN if v >= 60 else AMBER if v >= 40 else RED
     def pc(v):
         return "NA" if v is None else f"{v:.0f}%"
