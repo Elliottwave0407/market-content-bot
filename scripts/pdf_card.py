@@ -163,6 +163,20 @@ def try_pdf(bse, rec, st, headline, filed):
                 hist = {1: True, 4: True}
                 hpat = {1: True, 4: True}
                 LOG.append(f"pdf previous/year-ago columns were swapped vs BSE history: corrected {name} {basis}")
+        if hist and not all(hist.values()) and ok:
+            # The previous/year-ago cell of the PDF may carry a typo (digit slip): if PROFIT matches BSE's filed history for that column but
+            # revenue does not, trust BSE's history for that column and keep the PDF's current quarter (its own arithmetic already checked).
+            fixed = []
+            for off, m_ in ((1, prev), (4, yago)):
+                h_ = hs.get(off)
+                if hist.get(off) is False and hpat.get(off) is True and h_ and h_.get("revenue") is not None:
+                    LOG.append(f"pdf q-{off} revenue typo: pdf {m_['revenue']} -> BSE history {h_['revenue']} (profit matched) {name}")
+                    m_["revenue"] = h_["revenue"]
+                    m_["ebitda"] = h_.get("ebitda")
+                    hist[off] = True
+                    fixed.append(off)
+            if fixed:
+                LOG.append(f"pdf history cells corrected from BSE for q-{fixed}: {name} {basis}")
         if hist and not all(hist.values()):
             LOG.append(f"pdf history mismatch {name} {basis} cols={cols[:3]} :: " + "; ".join(det))
             continue
