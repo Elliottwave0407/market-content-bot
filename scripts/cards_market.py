@@ -63,7 +63,7 @@ def _deals_page(items, date_label, page, pages, out_path, note=""):
             yy += 0.46
         y += h + 0.18
     T.footer(fig, "Source: NSE & BSE bulk/block disclosures. Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, fy(H - 0.3))
+    T.brand(fig, h_in=0.75)
     T.save(fig, out_path)
 
 def render_deals(rows, date_label, out_prefix, note="", per_card=22):
@@ -135,7 +135,7 @@ def render_fii_dii(d, out_path, note=""):
         tot = lambda k: sum(r[k] for r in mtd)
         row(yy, "MTD total", tot("fii_buy"), tot("fii_sell"), tot("fii_net"), tot("dii_buy"), tot("dii_sell"), tot("dii_net"), True)
     T.footer(fig, "Source: exchange-reported provisional FII/DII cash-market data. Net = buy - sell. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, fy(H - 0.3))
+    T.brand(fig, h_in=0.85)
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- news / announcements / macro
@@ -166,7 +166,7 @@ def render_news(it, out_path, note=""):
             fig.text(0.05, fy(yy), ln, color=TEXT, fontsize=14, va="center")
             yy += 0.36
     T.footer(fig, f"Source: {it.get('source', 'BSE announcement')}. Text as filed; read the full filing for details. Not investment advice." + (f"  {note}" if note else ""), fy(H - 0.3))
-    T.brand(fig, fy(H - 0.3))
+    T.brand(fig, h_in=0.85)
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- market breadth / mood
@@ -228,7 +228,7 @@ def render_mood(b, out_path, note=""):
         fig.text(cx, fy(6.95), f"{val:,}", color=col, fontsize=38, fontweight="bold", ha="center", va="center")
         fig.text(cx, fy(7.65), lab, color=HEAD, fontsize=15, fontweight="bold", ha="center", va="center")
     T.footer(fig, f"Mood rule: % of these stocks above their 50-day average (65+ Strong, 50+ Positive, 35+ Mixed, 20+ Weak). Derived from NSE end-of-day data. Not investment advice.{(' ' + note) if note else ''}", fy(H - 0.35))
-    T.brand(fig, fy(H - 0.35))
+    T.brand(fig, h_in=0.85)
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- market breadth v2: aggregated + segregated (one card)
@@ -300,7 +300,7 @@ def render_mood2(b, out_path, note=""):
     f2 = f"Mood: 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak (stocks above their 50-day average). {b.get('unclassified', 0)} stocks without market cap are left out.{(' ' + note) if note else ''}"
     for k, t in enumerate((f1, f2, "Derived from NSE and BSE end-of-day data. Not investment advice.")):
         fig.text(0.04, fy(9.2 + 0.32 * k), t, color=MUTED, fontsize=11, va="center")
-    T.brand(fig, fy(9.2 + 0.32 * 2))
+    T.brand(fig, h_in=0.85)
     T.save(fig, out_path)
 
 # ---------------------------------------------------------------- market breadth v3: headline box + 3 segment boxes
@@ -380,5 +380,5 @@ def render_mood3(b, out_path, note=""):
     f2 = f"{b.get('unclassified', 0)} stocks without a market cap are counted in the whole-market box only. Derived from NSE and BSE end-of-day data. Not investment advice.{(' ' + note) if note else ''}"
     for k, t in enumerate((f1, f2)):
         fig.text(0.04, fy(10.85 + 0.3 * k), t, color=MUTED, fontsize=10.5, va="center")
-    T.brand(fig, fy(10.85 + 0.3))
+    T.brand(fig, h_in=0.85)
     T.save(fig, out_path)

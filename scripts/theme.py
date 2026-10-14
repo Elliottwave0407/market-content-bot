@@ -1,4 +1,5 @@
 """Shared light theme + drawing helpers for every card (results, deals, FII/DII, news)."""
+import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -26,9 +27,26 @@ def chip(fig, x, y, w, h, text, color, fs=15):
 def footer(fig, text, y=0.035):
     fig.text(0.04, y, text, color=MUTED, fontsize=11, va="center")
 
-def brand(fig, y=0.035):
-    fig.text(0.96, y, "FinGod", color=MUTED, fontsize=12, fontweight="bold", ha="right", va="center")
+_LOGO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "fingod_logo.png")
+
+def brand(fig, y=None, h_in=0.95, x_right=0.975, top=0.975):
+    """FinGod logo in the header, top-right (falls back to plain text if the file is missing)."""
+    if getattr(fig, "_branded", False):
+        return
+    try:
+        img = plt.imread(_LOGO)
+        W, H = fig.get_size_inches()
+        hh = h_in / H
+        ww = hh * (img.shape[1] / img.shape[0]) * H / W
+        ax = fig.add_axes([x_right - ww, top - hh, ww, hh], zorder=10)
+        ax.imshow(img)
+        ax.axis("off")
+        fig._branded = True
+    except Exception:
+        fig.text(0.96, 0.035, "FinGod", color=MUTED, fontsize=12, fontweight="bold", ha="right", va="center")
 
 def save(fig, path):
+    if not getattr(fig, "_branded", False):
+        brand(fig)
     fig.savefig(path, facecolor=BG)
     plt.close(fig)
