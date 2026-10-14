@@ -28,6 +28,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PDF_TRIES: "4"
           POLL_SEND: ${{ github.event.inputs.send }}
           POLL_ONLY: ${{ github.event.inputs.only }}
           POLL_DAYS: ${{ github.event.inputs.days }}

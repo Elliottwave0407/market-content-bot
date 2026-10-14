@@ -88,7 +88,7 @@ def try_pdf(bse, rec, st, headline, filed):
         return None
     STATE_["calls"] += 1
     use[day] = use.get(day, 0) + 1
-    out, err = gr.read_pdf(key, MODEL, content, tries=1, timeout=90)
+    out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
     if out is None:
         if err and "429" in err:
             STATE_["backoff"] = time.time() + 120
