@@ -63,7 +63,8 @@
 "01719543-48d8-45f3-8bc1-16a1b055a9b7",
 "d7ae2b1a-eede-46dc-9bed-415c739363ee",
 "2e1cc57b-73b8-45d3-b44a-c49c27cab012",
-"e7aefb8b-96e9-428f-8165-8d39e5222e30"
+"e7aefb8b-96e9-428f-8165-8d39e5222e30",
+"c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -128,7 +129,8 @@
 "537820|Sep-26|standalone",
 "514236|Sep-26|standalone",
 "500109|Sep-26|standalone",
-"532483|Sep-26|standalone"
+"532483|Sep-26|standalone",
+"500790|Sep-26|consolidated"
 ],
 "pending": {
 "8b8a2608-3e39-4007-b2ab-bfbf76469c53": {
@@ -392,7 +394,7 @@
 "gem_use": {
 "2026-10-12": 16,
 "2026-10-13": 74,
-"2026-10-14": 118
+"2026-10-14": 119
 },
 "pdfposted": {
 "514440|Sep-26|standalone": {
@@ -474,6 +476,16 @@
 "pat": 0.21600000000000003,
 "t": 1791989880.378885,
 "last": 1792047889.1651592
+},
+"500790|Sep-26|consolidated": {
+"code": "500790",
+"name": "Nestle India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 67883.4,
+"pat": 10096.1,
+"t": 1792048006.6755545,
+"last": 1792048012.3605628
 }
 },
 "audit": [
@@ -584,5 +596,8 @@
 ],
 "standalone_only": {
 "0858da18-234b-4096-a7de-152bd6013bb4": 1
+},
+"cons_expected": {
+"c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1
 }
 }
