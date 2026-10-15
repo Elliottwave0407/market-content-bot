@@ -65,7 +65,8 @@
 "2e1cc57b-73b8-45d3-b44a-c49c27cab012",
 "e7aefb8b-96e9-428f-8165-8d39e5222e30",
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3",
-"880e99bc-b13a-435b-901c-3b2bee137437"
+"880e99bc-b13a-435b-901c-3b2bee137437",
+"c889a388-3ab5-40f1-b72e-9e40bfc04db6"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -132,7 +133,8 @@
 "500109|Sep-26|standalone",
 "532483|Sep-26|standalone",
 "500790|Sep-26|consolidated",
-"542652|Sep-26|consolidated"
+"542652|Sep-26|consolidated",
+"532814|Sep-26|consolidated"
 ],
 "pending": {
 "8b8a2608-3e39-4007-b2ab-bfbf76469c53": {
@@ -170,7 +172,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1791982130.5172892,
-"last": 1792050068.7625337
+"last": 1792050204.4411564
 },
 "0858da18-234b-4096-a7de-152bd6013bb4": {
 "rec": {
@@ -207,7 +209,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1791983525.2649505,
-"last": 1792050068.7625337
+"last": 1792050204.4411564
 },
 "f44c250b-1ef4-40d3-9ffe-0e2925ec1507": {
 "rec": {
@@ -244,44 +246,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1791990084.1666758,
-"last": 1792050068.7625337
-},
-"c889a388-3ab5-40f1-b72e-9e40bfc04db6": {
-"rec": {
-"NEWSID": "c889a388-3ab5-40f1-b72e-9e40bfc04db6",
-"SCRIP_CD": 532814,
-"XML_NAME": "ANN_532814_C889A388-3AB5-40F1-B72E-9E40BFC04DB6",
-"NEWSSUB": "Indian Bank - 532814 - Approval Of Unaudited (Reviewed) Standalone And Consolidated Financial Results Of The Bank For The Second Quarter And Half Year Of FY 2026-27 Ended On September 30, 2026 And Fund Raising Plan Other Than Equity Capital",
-"DT_TM": "2026-10-15T13:00:18.773",
-"NEWS_DT": "2026-10-15T13:00:18.773",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5b789a8c-d2ff-4e70-85f2-92d143fdb7c3.pdf",
-"MORE": "Approval of Unaudited (Reviewed) Standalone and Consolidated Financial Results of the Bank for the Second Quarter and Half Year of FY 2026-27 ended on September 30, 2026 and Fund Raising Plan other than Equity Capital",
-"HEADLINE": "Approval of Unaudited (Reviewed) Standalone and Consolidated Financial Results of the Bank for the Second Quarter and Half Year of FY 2026-27 ended on September 30, 2026 and Fund Raising ....",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/indian-bank/indianb/532814/",
-"SLONGNAME": "Indian Bank",
-"AGENDA_ID": 30,
-"TotalPageCnt": 4,
-"News_submission_dt": "2026-10-15T13:00:18",
-"DissemDT": "2026-10-15T13:00:18.773",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 13698381,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1792049453.622066,
-"last": 1792050138.7621148
+"last": 1792050204.4411564
 }
 },
 "lag": [
@@ -428,12 +393,16 @@
 [
 "Canara Bank",
 590
+],
+[
+"Indian Bank",
+13
 ]
 ],
 "gem_use": {
 "2026-10-12": 16,
 "2026-10-13": 74,
-"2026-10-14": 123
+"2026-10-14": 124
 },
 "pdfposted": {
 "514440|Sep-26|standalone": {
@@ -524,7 +493,7 @@
 "rev": 67883.4,
 "pat": 10096.1,
 "t": 1792048006.6755545,
-"last": 1792049884.2352011
+"last": 1792050239.5179436
 },
 "542652|Sep-26|consolidated": {
 "code": "542652",
@@ -534,7 +503,17 @@
 "rev": 98989.01,
 "pat": 9899.97,
 "t": 1792049833.7221117,
-"last": 1792049845.9072495
+"last": 1792050148.8024957
+},
+"532814|Sep-26|consolidated": {
+"code": "532814",
+"name": "Indian Bank",
+"basis": "consolidated",
+"q": 131,
+"rev": 191489.90000000002,
+"pat": 34468.6,
+"t": 1792050233.6963446,
+"last": 1792050239.5179436
 }
 },
 "audit": [
@@ -648,6 +627,7 @@
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
-"880e99bc-b13a-435b-901c-3b2bee137437": 1
+"880e99bc-b13a-435b-901c-3b2bee137437": 1,
+"c889a388-3ab5-40f1-b72e-9e40bfc04db6": 1
 }
 }
