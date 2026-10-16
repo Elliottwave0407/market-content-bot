@@ -24,7 +24,7 @@ def _rows(items, tmp, show):
 def render_recap(d, out_path, note=""):
     from matplotlib.patches import Rectangle as Rect
     tmp = T.new_fig(W, 13.5)
-    pos_n, neg_n = (9, 6)
+    pos_n, neg_n = (7, 4)
     def height(pr, nr):
         h = 3.0 + 1.55 + 0.95 + 1.1
         for rows in (pr, nr):
@@ -32,11 +32,12 @@ def render_recap(d, out_path, note=""):
                 h += 0.85 + sum(0.62 + 0.36 * len(r[2]) for r in rows)
         return h + 1.4
     pr, nr = _rows(d["pos"], tmp, pos_n), _rows(d["neg"], tmp, neg_n)
-    while height(pr, nr) > 17 and (len(pr) > 4 or len(nr) > 3):
+    while height(pr, nr) > 16 and (len(pr) > 4 or len(nr) > 3):
         if len(pr) > 4 and len(pr) - 4 >= len(nr) - 3: pr = pr[:-1]
         else: nr = nr[:-1]
+    more_p, more_n = len(d["pos"]) - len(pr), len(d["neg"]) - len(nr)
     T.plt.close(tmp)
-    H = max(9.0, height(pr, nr))
+    H = max(9.0, height(pr, nr) + (0.5 if more_p else 0) + (0.5 if more_n else 0))
     fig = T.new_fig(W, H)
     fx = lambda i: i / W
     fy = lambda i: 1 - i / H
@@ -85,10 +86,15 @@ def render_recap(d, out_path, note=""):
             _pips(fig, fx, fy, R - 1.05, y + h / 2, abs(x["score"]), col)
             y += h
         return y + 0.25
+    def more(txt, y):
+        fig.text(fx(L), fy(y + 0.05), txt, color=MUTED, fontsize=16, fontweight="bold", va="center")
+        return y + 0.5
     if pr:
-        y = section("POSITIVE CATALYSTS", pr, GREEN, y)
+        y = section("POSITIVE CATALYSTS", pr, GREEN, y) - 0.25
+        y = more(f"+ {more_p} more positive filings (lower scores)", y) if more_p else y + 0.25
     if nr:
-        y = section("NEGATIVES / WATCH", nr, RED, y)
+        y = section("NEGATIVES / WATCH", nr, RED, y) - 0.25
+        y = more(f"+ {more_n} more negative filings", y) if more_n else y + 0.25
     # mix + legend
     mix = "  |  ".join(f"{k.title()} {v}" for k, v in sorted(d["mix"].items(), key=lambda kv: -kv[1]))
     for k, ln in enumerate(_wrap(fig, "Filings by type:  " + mix, 15, "normal", MW, 2)):

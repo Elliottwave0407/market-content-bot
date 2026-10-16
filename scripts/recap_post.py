@@ -60,7 +60,7 @@ def rule_score(tag, head, d):
 def gemini_score(batch, key):
     items = "\n".join(f"{n}. [{x['tag']}] {x['company']}: {x['head']} | {x['detail'][:420]}" for n, x in enumerate(batch, 1))
     body = {"contents": [{"parts": [{"text": PROMPT.replace("@ITEMS", items)}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
-    for k in range(3):
+    for k in range(5):
         try:
             r = requests.post(f"{NB.BASE}/models/{NB.MODEL}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=60)
             if r.status_code == 200:
@@ -69,7 +69,7 @@ def gemini_score(batch, key):
             p("gemini HTTP", r.status_code)
         except Exception as e:
             p("gemini error", repr(e)[:80])
-        time.sleep(4)
+        time.sleep(6 * (k + 1))
     return {}
 
 def build(day, max_items=60):
@@ -91,8 +91,8 @@ def build(day, max_items=60):
         items.append({"tag": tag, "company": NP.company_of(r)[:44], "code": r.get("SCRIP_CD"), "head": head, "detail": d or head, "url": NP.link(r), "id": r["NEWSID"]})
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     scored = 0
-    for i in range(0, len(items), 25):
-        batch = items[i:i + 25]
+    for i in range(0, len(items), 15):
+        batch = items[i:i + 15]
         res = gemini_score(batch, key) if key else {}
         for n, x in enumerate(batch, 1):
             o = res.get(n)
