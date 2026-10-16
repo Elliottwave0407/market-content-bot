@@ -17,27 +17,27 @@ def _rows(items, tmp, show):
     out = []
     for x in items[:show]:
         nm = _wrap(tmp, x["company"], 22, "bold", MW - 1.6, 1)[0]
-        ln = _wrap(tmp, x["line"], 20, "normal", MW - 1.6, 2)
+        ln = _wrap(tmp, x["line"], 18, "normal", MW - 1.3, 2)
         out.append((x, nm, ln))
     return out
 
 def render_recap(d, out_path, note=""):
     from matplotlib.patches import Rectangle as Rect
     tmp = T.new_fig(W, 13.5)
-    pos_n, neg_n = (7, 4)
+    pos_n, neg_n = (8, 4)
     def height(pr, nr):
         h = 3.0 + 1.55 + 0.95 + 1.1
         for rows in (pr, nr):
             if rows:
-                h += 0.85 + sum(0.62 + 0.36 * len(r[2]) for r in rows)
+                h += 0.85 + sum(0.58 + 0.33 * len(r[2]) for r in rows)
         return h + 1.4
     pr, nr = _rows(d["pos"], tmp, pos_n), _rows(d["neg"], tmp, neg_n)
-    while height(pr, nr) > 16 and (len(pr) > 4 or len(nr) > 3):
+    while height(pr, nr) > 20 and (len(pr) > 4 or len(nr) > 3):
         if len(pr) > 4 and len(pr) - 4 >= len(nr) - 3: pr = pr[:-1]
         else: nr = nr[:-1]
     more_p, more_n = len(d["pos"]) - len(pr), len(d["neg"]) - len(nr)
     T.plt.close(tmp)
-    H = max(9.0, height(pr, nr) + (0.5 if more_p else 0) + (0.5 if more_n else 0))
+    H = max(9.0, height(pr, nr) + (0.65 if more_p else 0) + (0.65 if more_n else 0))
     fig = T.new_fig(W, H)
     fx = lambda i: i / W
     fy = lambda i: 1 - i / H
@@ -74,7 +74,7 @@ def render_recap(d, out_path, note=""):
         T.chip(fig, fx(L), fy(y + 0.6), fx(0.2 * len(title) + 1.0), 0.55 / H, title, col, 17)
         y += 0.85
         for k, (x, nm, ln) in enumerate(rows):
-            h = 0.62 + 0.36 * len(ln)
+            h = 0.58 + 0.33 * len(ln)
             if k % 2 == 0:
                 fig.patches.append(Rect((fx(L - 0.1), fy(y + h)), (MW + 0.2) / W, h / H, transform=fig.transFigure, facecolor="#f3efe6", edgecolor="none", zorder=0))
             fig.patches.append(Rect((fx(L - 0.1), fy(y + h)), 0.07 / W, h / H, transform=fig.transFigure, facecolor=col, edgecolor="none", zorder=1))
@@ -82,13 +82,13 @@ def render_recap(d, out_path, note=""):
             tg = x["tag"].title() + (f" (+{x['n'] - 1} more)" if x.get("n", 1) > 1 else "")
             fig.text(fx(R - 1.3), fy(y + 0.3), tg, color=MUTED, fontsize=13, fontweight="bold", ha="right", va="center")
             for j, l in enumerate(ln):
-                fig.text(fx(L + 0.1), fy(y + 0.66 + 0.36 * j), l, color=TEXT, fontsize=20, va="center")
+                fig.text(fx(L + 0.1), fy(y + 0.64 + 0.33 * j), l, color=TEXT, fontsize=18, va="center")
             _pips(fig, fx, fy, R - 1.05, y + h / 2, abs(x["score"]), col)
             y += h
         return y + 0.25
     def more(txt, y):
-        fig.text(fx(L), fy(y + 0.05), txt, color=MUTED, fontsize=16, fontweight="bold", va="center")
-        return y + 0.5
+        fig.text(fx(L), fy(y + 0.25), txt, color=MUTED, fontsize=16, fontweight="bold", va="center")
+        return y + 0.65
     if pr:
         y = section("POSITIVE CATALYSTS", pr, GREEN, y) - 0.25
         y = more(f"+ {more_p} more positive filings (lower scores)", y) if more_p else y + 0.25
