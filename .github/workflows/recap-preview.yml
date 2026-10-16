@@ -1,0 +1,40 @@
+name: recap-preview
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "date YYYY-MM-DD (IST)"
+        default: "2026-10-16"
+      send:
+        description: "1 = send a SAMPLE to the Market group, 0 = dry run (preview branch)"
+        default: "0"
+permissions:
+  contents: write
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/recap_post.py "${{ github.event.inputs.day }}" "${{ github.event.inputs.send }}"
+      - name: Publish preview PNG to the preview-cards branch
+        if: always() && github.event.inputs.send != '1'
+        run: |
+          set -e
+          [ -d out ] || exit 0
+          mkdir /tmp/pv && cp out/*.png /tmp/pv/ 2>/dev/null || exit 0
+          cd /tmp/pv
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "preview cards"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards
