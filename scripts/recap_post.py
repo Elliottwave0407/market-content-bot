@@ -11,10 +11,10 @@ from ci_out import p, publish
 IST = timezone(timedelta(hours=5, minutes=30))
 OUT = os.environ.get("OUT_DIR", "out")
 PROMPT = """You rate Indian stock-market exchange filings for a daily recap. For EACH item return a score and a one-line summary.
-Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"<=85 chars, plain, the key fact WITH its number if the text has one"}]
-Score = likely importance for the company's shareholders, judged from the filing text only:
-+5 major positive (very large order vs the company's size, merger/approval completed, big rating upgrade, large fund raise at premium) ... +1 minor positive; 0 routine/neutral;
--1 minor negative ... -5 major negative (default, fraud, insolvency, rating cut to junk, regulatory action).
+Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"<=70 chars, plain, what happened","k":"<=16 chars key figure exactly as in the text (e.g. Rs 198 Cr, AA+ from AA, 70% stake) or empty"}]
+Score = likely impact on the company's shareholders, judged from the filing text only. Be selective and use the full range:
+0 = routine/procedural (copies of orders, meeting adjournments, intimations); +-1 = minor; +-2 = noticeable; +-3 = meaningful (sizeable order, rating upgrade/downgrade by a notch, completed acquisition); +-4 = large; +-5 = rare and major (default, fraud, insolvency, rating to junk, very large order or merger vs company size).
+Rating upgrades are positive, downgrades negative; a dividend is +1 or +2; a resignation of a CFO/CEO is -1 or -2; order wins score by size.
 Rules: use ONLY facts in the text; do not add numbers or opinions; keep numbers exactly as written; no advice or predictions.
 Items:
 @ITEMS"""
@@ -72,7 +72,7 @@ def gemini_score(batch, key):
         time.sleep(6 * (k + 1))
     return {}
 
-def build(day, max_items=60):
+def build(day, max_items=80):
     rows = fetch_day(day)
     cands, tagcount = [], {}
     for r in rows:
@@ -97,8 +97,9 @@ def build(day, max_items=60):
         for n, x in enumerate(batch, 1):
             o = res.get(n)
             src = f"{x['head']} {x['detail']}"
-            if o and isinstance(o.get("s"), (int, float)) and o.get("t") and NB._ok({"headline": o["t"], "bullets": ["x"]}, src):
+            if o and isinstance(o.get("s"), (int, float)) and o.get("t") and NB._ok({"headline": o["t"], "sub": str(o.get("k") or ""), "bullets": ["x"]}, src):
                 x["score"], x["line"], x["how"] = int(max(-5, min(5, round(o["s"])))), str(o["t"]).strip(), "ai"
+                x["key"] = str(o.get("k") or "").strip()[:18]
                 scored += 1
             else:
                 x["score"], x["line"], x["how"] = rule_score(x["tag"], x["head"], x["detail"]), x["head"], "rule"
@@ -113,13 +114,15 @@ def build(day, max_items=60):
         else:
             c["n"] = c.get("n", 1) + 1
     each = list(best.values())
+    for x in each:
+        x.setdefault("key", "")
     pos = sorted([x for x in each if x["score"] > 0], key=lambda x: -x["score"])
     neg = sorted([x for x in each if x["score"] < 0], key=lambda x: x["score"])
     neu = [x for x in each if x["score"] == 0]
     mix = {}
     for x in items:
         mix[x["tag"]] = mix.get(x["tag"], 0) + 1
-    return {"date": day.strftime("%d %b %Y"), "scanned": len(rows), "notable": len(each), "pos": pos, "neg": neg, "neu": len(neu), "mix": mix,
+    return {"date": day.strftime("%d %b %Y"), "scanned": len(rows), "notable": len(each), "pos": pos, "neg": neg, "neu": len(neu), "neu_items": neu, "mix": mix,
             "ai": scored >= len(items) * 0.5}
 
 def main():
