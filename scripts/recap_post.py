@@ -11,7 +11,7 @@ from ci_out import p, publish
 IST = timezone(timedelta(hours=5, minutes=30))
 OUT = os.environ.get("OUT_DIR", "out")
 PROMPT = """You rate Indian stock-market exchange filings for a daily recap. For EACH item return a score and a one-line summary.
-Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"<=70 chars, plain, what happened","k":"<=16 chars key figure exactly as in the text (e.g. Rs 198 Cr, AA+ from AA, 70% stake) or empty"}]
+Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"<=88 chars, plain, what happened with who/what/how much","k":"<=16 chars key figure exactly as in the text (e.g. Rs 198 Cr, AA+ from AA, 70% stake) or empty"}]
 Score = likely impact on the company's shareholders, judged from the filing text only. Be selective and use the full range:
 0 = routine/procedural (copies of orders, meeting adjournments, intimations); +-1 = minor; +-2 = noticeable; +-3 = meaningful (sizeable order, rating upgrade/downgrade by a notch, completed acquisition); +-4 = large; +-5 = rare and major (default, fraud, insolvency, rating to junk, very large order or merger vs company size).
 Rating upgrades are positive, downgrades negative; a dividend is +1 or +2; a resignation of a CFO/CEO is -1 or -2; order wins score by size.
