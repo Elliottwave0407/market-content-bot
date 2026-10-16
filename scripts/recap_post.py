@@ -113,7 +113,7 @@ def build(day, max_items=80):
             src = f"{x['head']} {x['detail']}"
             if o and isinstance(o.get("s"), (int, float)) and o.get("t") and NB._ok({"headline": o["t"], "sub": str(o.get("k") or ""), "bullets": ["x"]}, src):
                 x["score"], x["line"], x["how"] = int(max(-5, min(5, round(o["s"])))), str(o["t"]).strip(), "ai"
-                x["key"] = str(o.get("k") or "").strip()[:18]
+                x["key"] = str(o.get("k") or "").strip()[:24]
                 scored += 1
             else:
                 x["score"], x["how"] = rule_score(x["tag"], x["head"], x["detail"]), "rule"

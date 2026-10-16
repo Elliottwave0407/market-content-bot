@@ -9,7 +9,7 @@ MW = R - L
 N_SHOW = 20
 MAX_NEG = 7
 SHORT = {"ORDER WIN": "ORDER", "ACQUISITION": "DEAL", "CREDIT RATING": "RATING", "CORPORATE ACTION": "ACTION", "DIVIDEND": "DIVIDEND", "MANAGEMENT": "MGMT", "RISK": "RISK"}
-SF, SL = 16, 0.34      # sentence font, line step
+SF, SL = 15, 0.31
 
 def pick(d, n=N_SHOW):
     pos, neg = list(d["pos"]), list(d["neg"])
@@ -27,8 +27,8 @@ def render_recap(d, out_path, note=""):
     for x in fp + fn:
         wrapped[id(x)] = _wrap(tmp, x["line"], SF, "normal", MW - 0.85, 3)
     T.plt.close(tmp)
-    rowh = lambda x: 0.52 + SL * len(wrapped[id(x)]) + 0.1
-    top, tiles_h, tone_h, blk = 2.35, 1.05, 0.95, 0.62
+    rowh = lambda x: 0.5 + SL * len(wrapped[id(x)]) + 0.06
+    top, tiles_h, tone_h, blk = 2.2, 1.0, 0.9, 0.58
     H = top + tiles_h + tone_h + (blk if fp else 0) + (blk if fn else 0) + sum(rowh(x) for x in fp + fn) + 1.45
     H = max(9.0, H)
     fig = T.new_fig(W, H)
@@ -78,7 +78,7 @@ def render_recap(d, out_path, note=""):
             nm = _wrap(fig, x["company"] + more, 17, "bold", right - (L + 0.7), 1)[0]
             fig.text(fx(L + 0.7), fy(y + 0.27), nm, color=TEXT, fontsize=17, fontweight="bold", va="center")
             for j, ln in enumerate(wrapped[id(x)]):
-                fig.text(fx(L + 0.7), fy(y + 0.64 + SL * j), ln, color="#2c3b4c", fontsize=SF, va="center")
+                fig.text(fx(L + 0.7), fy(y + 0.62 + SL * j), ln, color="#2c3b4c", fontsize=SF, va="center")
             y += h
         return y
     if fp:
