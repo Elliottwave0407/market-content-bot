@@ -64,7 +64,13 @@ def gemini_score(batch, key):
         try:
             r = requests.post(f"{NB.BASE}/models/{NB.MODEL}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=60)
             if r.status_code == 200:
-                out = json.loads(re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()))
+                txt = re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip())
+                try:
+                    out = json.loads(txt)
+                except Exception:
+                    out = [{"i": m.group(1), "s": m.group(2), "t": m.group(3), "k": m.group(4)} for m in re.finditer(
+                        r'"i"\s*:\s*(\d+)\s*,\s*"s"\s*:\s*(-?\d+)\s*,\s*"t"\s*:\s*"(.*?)"\s*,\s*"k"\s*:\s*"(.*?)"\s*[,}]', txt, re.S)]
+                    p("gemini json repaired:", len(out))
                 return {int(o["i"]): o for o in out if isinstance(o, dict) and "i" in o and "s" in o}
             p("gemini HTTP", r.status_code)
         except Exception as e:
@@ -94,6 +100,14 @@ def build(day, max_items=80):
     for i in range(0, len(items), 15):
         batch = items[i:i + 15]
         res = gemini_score(batch, key) if key else {}
+        if key and len(res) < len(batch):
+            miss = [n for n in range(1, len(batch) + 1) if n not in res]
+            for h in range(0, len(miss), 5):
+                sub = [batch[n - 1] for n in miss[h:h + 5]]
+                r2 = gemini_score(sub, key)
+                for j, n in enumerate(miss[h:h + 5], 1):
+                    if j in r2:
+                        res[n] = r2[j]
         for n, x in enumerate(batch, 1):
             o = res.get(n)
             src = f"{x['head']} {x['detail']}"
@@ -102,7 +116,9 @@ def build(day, max_items=80):
                 x["key"] = str(o.get("k") or "").strip()[:18]
                 scored += 1
             else:
-                x["score"], x["line"], x["how"] = rule_score(x["tag"], x["head"], x["detail"]), x["head"], "rule"
+                x["score"], x["how"] = rule_score(x["tag"], x["head"], x["detail"]), "rule"
+                gen = re.search(r"receipt of order|award of order|^acquisition$|^intimation|^announcement", x["head"], re.I) or len(x["head"]) < 25
+                x["line"] = (x["detail"] if gen and len(x["detail"]) > 30 else x["head"])[:90]
     p(f"scored by AI {scored}/{len(items)}")
     # one entry per company (strongest), remember how many filings
     best = {}
