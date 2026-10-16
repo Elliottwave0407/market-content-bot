@@ -1,4 +1,4 @@
-"""One-card evening recap, dense: tone strip, then every notable filing ranked by signed impact score (-5..+5)."""
+"""One-card evening recap: the 20 most important filings (positives and negatives) as full sentences, with a signed impact score (-5..+5)."""
 import theme as T
 from theme import TEXT, MUTED, GREEN, RED, BORDER, PANEL
 from cards_market import _wrap, _hdr
@@ -6,40 +6,35 @@ from cards_market import _wrap, _hdr
 W = 10.8
 L, R = 0.75, W - 0.75
 MW = R - L
-ROW = 0.64
-MAXH = 25.0
+N_SHOW = 20
+MAX_NEG = 7
 SHORT = {"ORDER WIN": "ORDER", "ACQUISITION": "DEAL", "CREDIT RATING": "RATING", "CORPORATE ACTION": "ACTION", "DIVIDEND": "DIVIDEND", "MANAGEMENT": "MGMT", "RISK": "RISK"}
+SF, SL = 16, 0.34      # sentence font, line step
+
+def pick(d, n=N_SHOW):
+    pos, neg = list(d["pos"]), list(d["neg"])
+    k_neg = min(len(neg), MAX_NEG, max(n - len(pos), (n * 3) // 10))
+    k_pos = min(len(pos), n - k_neg)
+    k_neg = min(len(neg), n - k_pos)
+    return pos[:k_pos], neg[:k_neg]
 
 def render_recap(d, out_path, note=""):
     from matplotlib.patches import Rectangle as Rect, Ellipse
-    pos, neg, neu = d["pos"], d["neg"], d.get("neu_items", [])
-    top = 2.35
-    tiles_h, tone_h, blk = 1.05, 0.95, 0.62
-    base = top + tiles_h + tone_h + 1.3
+    fp, fn = pick(d)
+    pos, neg = d["pos"], d["neg"]
     tmp = T.new_fig(W, 10)
-    # names of everything that does not get a full row go into one wrapped paragraph at the bottom
-    def para_lines(names):
-        if not names:
-            return []
-        return _wrap(tmp, "Also filed (score 0 / lower impact):  " + "  ·  ".join(names), 15, "normal", MW, 6)
-    full_pos, full_neg = list(pos), list(neg)
-    def height(fp, fn, rest):
-        pl = para_lines(rest)
-        return base + (blk if fp else 0) + (blk if fn else 0) + (len(fp) + len(fn)) * ROW + (0.35 + 0.3 * len(pl) if pl else 0)
-    rest = [x["company"] for x in neu]
-    while height(full_pos, full_neg, rest) > MAXH and (full_pos or full_neg):
-        # push the weakest row into the paragraph
-        cand = ([(abs(full_pos[-1]["score"]), "p")] if full_pos else []) + ([(abs(full_neg[-1]["score"]), "n")] if full_neg else [])
-        w = min(cand)[1]
-        x = full_pos.pop() if w == "p" else full_neg.pop()
-        rest.insert(0, x["company"])
-    pl = para_lines(rest)
-    H = max(9.0, height(full_pos, full_neg, rest))
+    wrapped = {}
+    for x in fp + fn:
+        wrapped[id(x)] = _wrap(tmp, x["line"], SF, "normal", MW - 0.85, 3)
     T.plt.close(tmp)
+    rowh = lambda x: 0.52 + SL * len(wrapped[id(x)]) + 0.1
+    top, tiles_h, tone_h, blk = 2.35, 1.05, 0.95, 0.62
+    H = top + tiles_h + tone_h + (blk if fp else 0) + (blk if fn else 0) + sum(rowh(x) for x in fp + fn) + 1.45
+    H = max(9.0, H)
     fig = T.new_fig(W, H)
     fx = lambda i: i / W
     fy = lambda i: 1 - i / H
-    _hdr(fig, W, H, "Filings Recap", f"Major announcements  |  {d['date']}")
+    _hdr(fig, W, H, "Filings Recap", f"Top announcements  |  {d['date']}")
     y = top
     sp = sum(x["score"] for x in pos); sn = -sum(x["score"] for x in neg)
     tiles = [("scanned", f"{d['scanned']:,}", T.NAVY), ("notable", str(d["notable"]), T.NAVY), ("positive", str(len(pos)), GREEN), ("negative", str(len(neg)), RED)]
@@ -64,39 +59,34 @@ def render_recap(d, out_path, note=""):
         T.chip(fig, fx(L), fy(y + 0.5), fx(0.2 * len(title) + 0.8), 0.46 / H, title, col, 15)
         y += blk
         for k, x in enumerate(rows):
+            h = rowh(x)
             if k % 2 == 0:
-                fig.patches.append(Rect((fx(L - 0.1), fy(y + ROW)), (MW + 0.2) / W, ROW / H, transform=fig.transFigure, facecolor="#f3efe6", edgecolor="none", zorder=0))
+                fig.patches.append(Rect((fx(L - 0.1), fy(y + h)), (MW + 0.2) / W, h / H, transform=fig.transFigure, facecolor="#f3efe6", edgecolor="none", zorder=0))
             sc = x["score"]
             c = GREEN if sc > 0 else RED if sc < 0 else "#7a8794"
-            cx, cy = L + 0.3, y + ROW / 2
+            cx, cy = L + 0.3, y + 0.3
             fig.patches.append(Ellipse((fx(cx), fy(cy)), 0.52 / W, 0.52 / H, transform=fig.transFigure, facecolor=c, edgecolor="none", zorder=3))
             fig.text(fx(cx), fy(cy), f"{sc:+d}".replace("-", "−"), color="#ffffff", fontsize=15, fontweight="bold", ha="center", va="center", zorder=4)
-            tg = SHORT.get(x["tag"], x["tag"])
-            tcol_ = T.TAGS.get(x["tag"], T.NAVY)
             right = R
-            tt = fig.text(fx(right), fy(y + 0.2), tg, color=tcol_, fontsize=12, fontweight="bold", ha="right", va="center")
+            tt = fig.text(fx(right), fy(y + 0.27), SHORT.get(x["tag"], x["tag"]), color=T.TAGS.get(x["tag"], T.NAVY), fontsize=12, fontweight="bold", ha="right", va="center")
             right -= tt.get_window_extent(rend).width / fig.dpi + 0.2
             key = x.get("key") or ""
             if key:
-                kt = fig.text(fx(right), fy(y + 0.2), key, color=c, fontsize=15, fontweight="bold", ha="right", va="center")
+                kt = fig.text(fx(right), fy(y + 0.27), key, color=c, fontsize=15, fontweight="bold", ha="right", va="center")
                 right -= kt.get_window_extent(rend).width / fig.dpi + 0.2
             more = f" (+{x['n'] - 1})" if x.get("n", 1) > 1 else ""
-            nm = _wrap(fig, x["company"] + more, 16, "bold", right - (L + 0.7), 1)[0]
-            fig.text(fx(L + 0.7), fy(y + 0.2), nm, color=TEXT, fontsize=16, fontweight="bold", va="center")
-            ln = _wrap(fig, x["line"], 14, "normal", MW - 0.8, 1)[0]
-            fig.text(fx(L + 0.7), fy(y + 0.47), ln, color="#2c3b4c", fontsize=14, va="center")
-            y += ROW
+            nm = _wrap(fig, x["company"] + more, 17, "bold", right - (L + 0.7), 1)[0]
+            fig.text(fx(L + 0.7), fy(y + 0.27), nm, color=TEXT, fontsize=17, fontweight="bold", va="center")
+            for j, ln in enumerate(wrapped[id(x)]):
+                fig.text(fx(L + 0.7), fy(y + 0.64 + SL * j), ln, color="#2c3b4c", fontsize=SF, va="center")
+            y += h
         return y
-    if full_pos:
-        y = block("POSITIVE", full_pos, GREEN, y)
-    if full_neg:
-        y = block("NEGATIVE / WATCH", full_neg, RED, y + 0.05)
-    if pl:
-        y += 0.2
-        for k, ln in enumerate(pl):
-            fig.text(fx(L), fy(y + 0.15 + 0.3 * k), ln, color=MUTED, fontsize=15, va="center")
+    if fp:
+        y = block("POSITIVE", fp, GREEN, y)
+    if fn:
+        y = block("NEGATIVE / WATCH", fn, RED, y + 0.05)
     how = "AI-read from the filing text" if d.get("ai") else "rule-based from filing keywords"
-    ft = f"Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only." + (f"  {note}" if note else "")
+    ft = f"Top {len(fp) + len(fn)} of {d['notable']} notable filings. Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only." + (f"  {note}" if note else "")
     for k, ln in enumerate(_wrap(fig, ft, 13, "normal", MW, 3)):
         fig.text(fx(L), fy(H - 0.9 + 0.3 * k), ln, color=MUTED, fontsize=13, va="center")
     T.save(fig, out_path)
