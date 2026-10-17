@@ -33,5 +33,9 @@ def main():
     open(f"out/{NAME}_whisper_{SIZE}.txt", "w").write(text)
     os.remove(path)
 
-main()
+import traceback
+try:
+    main()
+except Exception:
+    p('ERR', traceback.format_exc()[-1500:])
 publish()
