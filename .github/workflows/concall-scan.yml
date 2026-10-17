@@ -1,0 +1,46 @@
+name: concall-scan
+on:
+  workflow_dispatch:
+    inputs:
+      from_day:
+        description: "YYYY-MM-DD"
+        default: "2026-10-06"
+      to_day:
+        description: "YYYY-MM-DD"
+        default: "2026-10-16"
+      max_n:
+        description: "max transcripts to score (Gemini calls)"
+        default: "15"
+      mcap_max:
+        description: "max market cap Rs Cr (focus small caps)"
+        default: "25000"
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FROM_DAY: ${{ github.event.inputs.from_day }}
+          TO_DAY: ${{ github.event.inputs.to_day }}
+          MAX_N: ${{ github.event.inputs.max_n }}
+          MCAP_MAX: ${{ github.event.inputs.mcap_max }}
+        run: python scripts/concall_scan.py
+      - name: Publish shortlist to the preview-cards branch
+        if: always()
+        run: |
+          set -e
+          ls out/scan* >/dev/null 2>&1 || exit 0
+          mkdir /tmp/pv && cp out/scan* /tmp/pv/
+          cd /tmp/pv
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "scan shortlist"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards
