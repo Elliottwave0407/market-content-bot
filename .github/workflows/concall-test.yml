@@ -8,6 +8,9 @@ on:
       name:
         description: "Short name, e.g. E2E_Q2FY27"
         default: "call"
+      model:
+        description: "Gemini model for audio"
+        default: "gemini-flash-lite-latest"
 permissions:
   contents: write
 jobs:
@@ -24,6 +27,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AUDIO_URL: ${{ github.event.inputs.url }}
           AUDIO_NAME: ${{ github.event.inputs.name }}
+          GEMINI_AUDIO_MODEL: ${{ github.event.inputs.model }}
         run: python scripts/concall_transcribe.py
       - name: Publish transcript to the preview-cards branch
         if: always()
