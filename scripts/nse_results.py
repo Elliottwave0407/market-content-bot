@@ -26,6 +26,7 @@ DESCS = ("outcome of board meeting", "financial results", "updates")
 RES_RX = re.compile(r"financial results|results for the (quarter|period|half|year)|(un)?audited .*results", re.I)
 NOT_RX = re.compile(r"earnings call|conference call|investor meet|newspaper|press release|presentation", re.I)
 MAX_AGE_H = 36
+BSE_WAIT_MIN = 20
 FINAL_H = 24
 _S = {"sess": None, "at": 0.0, "bse": None, "bse_at": 0.0, "last_tick": 0.0}
 TRY_AT, TRIES = {}, {}
@@ -65,24 +66,53 @@ def fetch_day(day):
         time.sleep(3)
     return []
 
-def bse_isins():
-    """ISINs listed on BSE (all groups), refreshed every 12 h."""
+def norm_name(n):
+    n = re.sub(r"[^a-z0-9 ]", " ", (n or "").lower())
+    return " ".join(w for w in n.split() if w not in ("limited", "ltd", "pvt", "private", "the", "co", "company"))
+
+def bse_maps():
+    """-> dict(sym: scrip_id->code, name: norm name->code, isin: isin->code). Refreshed every 12 h. None if the list could not be read."""
     if _S["bse"] is not None and time.time() - _S["bse_at"] < 12 * 3600:
         return _S["bse"]
     from bse import BSE
-    out = set()
+    sym, nm, isn = {}, {}, {}
     with BSE(download_folder=tempfile.mkdtemp()) as b:
         for g in ("A", "B", "T", "X", "XT", "Z", "M", "MT", "MS", "P", "R", "ZP", "IP", "TS", "Y"):
             try:
                 for x in b.listSecurities(group=g):
+                    code = str(x.get("SCRIP_CD") or "").strip()
+                    if not code:
+                        continue
+                    if x.get("scrip_id"):
+                        sym[x["scrip_id"].strip().upper()] = code
+                    for k_ in ("Issuer_Name", "Scrip_Name"):
+                        if x.get(k_):
+                            nm[norm_name(x[k_])] = code
                     if x.get("ISIN_NUMBER"):
-                        out.add(x["ISIN_NUMBER"].strip())
+                        isn[x["ISIN_NUMBER"].strip()] = code
             except Exception:
                 continue
-    if len(out) > 1000:
+    out = {"sym": sym, "name": nm, "isin": isn}
+    if len(isn) > 1000:
         _S["bse"], _S["bse_at"] = out, time.time()
-    p("BSE ISINs known:", len(out))
-    return out if len(out) > 1000 else None
+        p("BSE listing known:", len(isn))
+        return out
+    return None
+
+def bse_code(x, maps):
+    return maps["isin"].get((x.get("sm_isin") or "").strip()) or maps["sym"].get((x.get("symbol") or "").upper()) or maps["name"].get(norm_name(x.get("sm_name")))
+
+def bse_has_result(b, code, day):
+    """True if BSE already carries a 'Result'-category filing for this scrip within the last 2 days (the normal results path then handles it)."""
+    for back in (0, 1):
+        d = day - timedelta(days=back)
+        try:
+            data = b.announcements(page_no=1, from_date=d.replace(tzinfo=None), to_date=d.replace(tzinfo=None), scripcode=str(code))
+        except Exception:
+            continue
+        if any(r.get("CATEGORYNAME") == "Result" for r in data.get("Table", [])):
+            return True
+    return False
 
 def result_rows(rows):
     out = []
@@ -108,7 +138,7 @@ def arith_col(d, i):
     if None not in (pbt, tax, pat): res.append(tol(pbt - tax, pat))
     return bool(res) and all(res)
 
-def read_card(content, name):
+def read_card(content, name, bse=None, code=None):
     """-> (dict(basis, q, quarters) or None, reason)"""
     key = pc.geminikey()
     out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "2")), timeout=120)
@@ -156,8 +186,29 @@ def read_card(content, name):
         if miss:
             return None, f"missing {miss}"
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
+        note = "arithmetic-checked"
         quarters = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 1), "m": prev}, {"q": rf.qlabel(q - 2), "m": empty}, {"q": rf.qlabel(q - 3), "m": empty}, {"q": rf.qlabel(q - 4), "m": yago}]
-        return {"basis": basis, "q": q, "quarters": quarters}, "ok"
+        if bse is not None and code:
+            try:
+                bad, good = [], 0
+                for off, m_ in ((1, prev), (4, yago)):
+                    h = rf.fetch(bse, code, name, basis, q - off)
+                    if h and h.get("revenue") is not None and m_["revenue"] is not None:
+                        if pc.close(m_["revenue"], h["revenue"]) and (h.get("pat") is None or m_["pat"] is None or abs(m_["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))):
+                            good += 1
+                        else:
+                            bad.append(off)
+                if bad:
+                    return None, f"history mismatch with BSE for q-{bad}"
+                for j in (2, 3):
+                    h = rf.fetch(bse, code, name, basis, q - j)
+                    if h:
+                        quarters[j]["m"] = h
+                if good:
+                    note = "history-verified"
+            except Exception as e_:
+                p(f"  history check skipped: {repr(e_)[:60]}")
+        return {"basis": basis, "q": q, "quarters": quarters, "note": note}, "ok"
     return None, "no usable statement"
 
 def fy_label(ql):
@@ -191,7 +242,23 @@ def post_card(x, res, png, ql):
     tweet = "\n".join(cap.split("\n")[:2]).replace(" | Consolidated", "").replace(" | Standalone", "") + "\n" + tags.join(tags.company_tag(symbol=sym, name=name), tags.quarter_tag(ql), "#Results")
     return cap, tweet
 
-def process(x, st, final):
+def _seen_posted():
+    try:
+        return set(json.load(open("state/seen.json")).get("posted", []))
+    except Exception:
+        return set()
+
+def _mark_seen(bkey):
+    """Tell the BSE results path this company/quarter/basis is already posted (same process, run sequentially)."""
+    try:
+        s_ = json.load(open("state/seen.json"))
+        if bkey not in s_.get("posted", []):
+            s_.setdefault("posted", []).append(bkey)
+            json.dump(s_, open("state/seen.json", "w"))
+    except Exception as e:
+        p("could not mark BSE key:", repr(e)[:60])
+
+def process(x, st, final, maps=None):
     sym, isin = x["symbol"], x.get("sm_isin") or ""
     sid = str(x.get("seq_id"))
     name = (x.get("sm_name") or sym).strip()
@@ -207,19 +274,27 @@ def process(x, st, final):
     if r.content[:4] != b"%PDF" or len(r.content) > 15_000_000:
         p(f"  {sym}: file is not a readable PDF ({r.status_code}, {len(r.content)} bytes)")
         return "wait"
-    res, why = read_card(r.content, name)
+    code = bse_code(x, maps) if maps else None
+    if code:
+        from bse import BSE
+        with BSE(download_folder=tempfile.mkdtemp()) as b_:
+            res, why = read_card(r.content, name, b_, code)
+    else:
+        res, why = read_card(r.content, name)
     if res is None:
         p(f"  {sym}: not postable yet - {why}")
         return "wait" if not final else "stub:" + why
     ql = rf.qlabel(res["q"])
     key = f"NSE|{isin or sym}|{ql}|{res['basis']}"
-    if key in st["posted"] and not ONLY:
+    bkey = f"{code}|{ql}|{res['basis']}" if code else None
+    if (key in st["posted"] or (bkey and bkey in _seen_posted())) and not ONLY:
         p(f"  dup skip {key}")
         return "done"
     os.makedirs(OUTDIR, exist_ok=True)
     png = os.path.join(OUTDIR, f"nse_{sym}_{ql}_{res['basis']}.png")
-    card.render(name, f"NSE {sym}", res["basis"], res["quarters"], png, filed_note="Read from the filing PDF; arithmetic-checked.")
+    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, filed_note=f"Read from the filing PDF; {res.get('note', 'arithmetic-checked')}.")
     cap, tweet = post_card(x, res, png, ql)
+    cap = cap.replace("(NSE; arithmetic-checked)", f"(NSE filing; {res.get('note', 'arithmetic-checked')})")
     p(f"  [card] {key} :: {cap.splitlines()[1]}")
     if SEND and CHAT:
         import xbuttons
@@ -232,6 +307,8 @@ def process(x, st, final):
         time.sleep(3.2)
     if not ONLY:
         st["posted"].append(key)
+        if bkey:
+            _mark_seen(bkey)
     return "done"
 
 def run_once(day=None, maxn=3):
@@ -242,16 +319,13 @@ def run_once(day=None, maxn=3):
     rows = []
     for d in days:
         rows += result_rows(fetch_day(d))
-    bse = bse_isins()
-    if bse is None:
-        p("BSE ISIN list unavailable - skipping this pass")
+    maps = bse_maps()
+    if maps is None:
+        p("BSE listing unavailable - skipping this pass")
         return False
     todo = []
     for x in rows:
         sid = str(x.get("seq_id"))
-        isin = (x.get("sm_isin") or "").strip()
-        if not isin or isin in bse:
-            continue
         if ONLY and "*" not in ONLY and x["symbol"].upper() not in ONLY:
             continue
         if not ONLY and sid in st["done"]:
@@ -278,7 +352,16 @@ def run_once(day=None, maxn=3):
             continue
         if n >= maxn:
             break
-        out = process(x, st, final=age_h >= FINAL_H)
+        code = bse_code(x, maps)
+        if code and not ONLY:
+            if age_h * 60 < BSE_WAIT_MIN:
+                continue                      # give BSE's own 'Result' filing time to appear first
+            if bse_has_result_cached(code, st, str(x.get("seq_id")), now):
+                p(f"  {x['symbol']}: BSE carries a Result filing - normal path handles it")
+                st["done"].append(str(x.get("seq_id")))
+                changed = True
+                continue
+        out = process(x, st, final=age_h >= FINAL_H, maps=maps)
         if out == "skip":
             continue
         n += 1
@@ -301,6 +384,15 @@ def run_once(day=None, maxn=3):
         p("[pdf]", line)
     pc.LOG.clear()
     return changed
+
+def bse_has_result_cached(code, st, sid, now):
+    from bse import BSE
+    try:
+        with BSE(download_folder=tempfile.mkdtemp()) as b_:
+            return bse_has_result(b_, code, now)
+    except Exception as e:
+        p("  BSE check failed:", repr(e)[:60])
+        return True        # when unsure, stay quiet (BSE path is the default)
 
 def tick():
     """Called by the poll loop (live only). Every ~60 s. Returns (changed, lines)."""
