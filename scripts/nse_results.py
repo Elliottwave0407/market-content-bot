@@ -252,7 +252,7 @@ def run_once(day=None, maxn=3):
         isin = (x.get("sm_isin") or "").strip()
         if not isin or isin in bse:
             continue
-        if ONLY and x["symbol"].upper() not in ONLY:
+        if ONLY and "*" not in ONLY and x["symbol"].upper() not in ONLY:
             continue
         if not ONLY and sid in st["done"]:
             continue
@@ -320,7 +320,7 @@ if __name__ == "__main__":
     from ci_out import publish
     d = os.environ.get("NSE_DAY", "").strip()
     try:
-        run_once(datetime.strptime(d, "%Y-%m-%d").replace(tzinfo=IST) if d else None)
+        run_once(datetime.strptime(d, "%Y-%m-%d").replace(tzinfo=IST) if d else None, maxn=12 if ONLY else 3)
     except Exception:
         import traceback
         p("ERROR", traceback.format_exc()[-900:])
