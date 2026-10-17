@@ -23,7 +23,11 @@ def main():
     m = WhisperModel(SIZE, device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 2)
     p("model loaded", SIZE, round(time.time() - t0), "s; cpus", os.cpu_count())
     t1 = time.time()
-    segs, info = m.transcribe(path, language="en", beam_size=1, vad_filter=True, initial_prompt=PROMPT, condition_on_previous_text=False)
+    import subprocess, numpy as np
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-i", path, "-f", "f32le", "-ac", "1", "-ar", "16000", "-"], capture_output=True).stdout
+    audio = np.frombuffer(raw, dtype=np.float32)
+    p("decoded minutes", round(len(audio) / 16000 / 60, 1))
+    segs, info = m.transcribe(audio, language="en", beam_size=1, vad_filter=True, initial_prompt=PROMPT, condition_on_previous_text=False)
     p("audio duration min", round(info.duration / 60, 1))
     out = []
     for s in segs:
