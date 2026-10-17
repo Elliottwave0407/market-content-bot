@@ -26,22 +26,18 @@ def get(url, **kw):
 today = datetime.now()
 fr = (today - timedelta(days=4)).strftime("%d-%m-%Y"); to = today.strftime("%d-%m-%Y")
 B = "https://www.nseindia.com/api/"
-def dtp(x):
-    try: return datetime.strptime(x["filingDate"], "%d-%b-%Y %H:%M")
-    except Exception: return datetime(2000, 1, 1)
-for a_, b_ in (("01-10-2026", "17-10-2026"), ("01-09-2026", "17-10-2026"), ("01-07-2026", "17-10-2026")):
-    rs = get(B + "corporates-financial-results?index=equities&period=Quarterly&from_date=%s&to_date=%s" % (a_, b_))
-    if isinstance(rs, list) and rs:
-        rs.sort(key=dtp, reverse=True)
-        p("window", a_, b_, "rows", len(rs), "newest", rs[0]["filingDate"], rs[0]["companyName"], rs[0]["relatingTo"], "E2E:", [x["relatingTo"] for x in rs if x["symbol"] == "E2E"])
-    else:
-        p("window", a_, b_, "rows", rs if rs is None else len(rs))
-rs = get(B + "corporates-financial-results?index=equities&period=Half-Yearly&from_date=01-10-2026&to_date=17-10-2026")
-p("half-yearly rows:", len(rs) if isinstance(rs, list) else rs)
-ann = get(B + "corporate-announcements?index=equities&symbol=E2E&from_date=15-10-2026&to_date=17-10-2026")
-if isinstance(ann, list):
-    for x in ann:
-        if x["desc"] == "Outcome of Board Meeting":
-            p("E2E outcome:", json.dumps({k: x[k] for k in ("an_dt", "attchmntText", "attchmntFile", "hasXbrl", "sm_isin")})[:700])
-            break
+for sym in ("E2E", "SGFIN", "IXIGO"):
+    for per in ("Quarterly", "Half-Yearly"):
+        rs = get(B + "corporates-financial-results?index=equities&period=%s&symbol=%s" % (per, sym))
+        if isinstance(rs, list):
+            rows = sorted(((x["toDate"], x["consolidated"], x["filingDate"], bool(x.get("xbrl"))) for x in rs), key=lambda t: datetime.strptime(t[0], "%d-%b-%Y"), reverse=True)
+            p(sym, per, len(rs), rows[:4])
+b = get(B + "corporate-announcements?index=equities&from_date=16-10-2026&to_date=16-10-2026")
+if isinstance(b, list):
+    import re
+    res = [x for x in b if re.search(r"financial results|results for the (quarter|period|half)", x.get("attchmntText") or "", re.I)]
+    p("announcements 16 Oct:", len(b), "| results-like:", len(res))
+    from collections import Counter
+    p("desc of results-like:", Counter(x["desc"] for x in res).most_common(6))
+    p("sample results-like:", [(x["symbol"], x["desc"], (x["attchmntText"] or "")[:90]) for x in res[:4]])
 publish()
