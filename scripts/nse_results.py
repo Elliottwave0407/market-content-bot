@@ -234,7 +234,7 @@ def process(x, st, final):
         st["posted"].append(key)
     return "done"
 
-def run_once(day=None):
+def run_once(day=None, maxn=3):
     """One pass. Returns True if state changed."""
     st = load()
     now = datetime.now(IST)
@@ -276,7 +276,7 @@ def run_once(day=None):
             st["done"].append(str(x.get("seq_id")))
             changed = True
             continue
-        if n >= 3:
+        if n >= maxn:
             break
         out = process(x, st, final=age_h >= FINAL_H)
         if out == "skip":
@@ -310,7 +310,7 @@ def tick():
     import ci_out
     n0 = len(ci_out.OUT)
     try:
-        ch = run_once()
+        ch = run_once(maxn=1)
     except Exception as e:
         p("nse results ERROR:", repr(e)[:200].replace(TOKEN, "<token>") if TOKEN else repr(e)[:200])
         ch = False

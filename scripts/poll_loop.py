@@ -20,6 +20,12 @@ except Exception as _e:
     npst = None
     print('news_posts unavailable:', repr(_e)[:120])
 try:
+    import nse_results as nse
+    nse.SEND = os.environ.get('POLL_SEND', '0') == '1'
+except Exception as _e:
+    nse = None
+    print('nse_results unavailable:', repr(_e)[:120])
+try:
     import xbuttons as xb
 except Exception as _e:
     xb = None
@@ -97,6 +103,15 @@ def main():
                                 news_dirty, last_news_commit = False, time.time()
                         except Exception as e:
                             keep.append("news tick error: " + rp.redact(repr(e))[:200])
+                    if nse is not None:
+                        try:
+                            schanged, slines = nse.tick()
+                            if slines:
+                                keep += [f"[nse {time.strftime('%H:%M:%S')}] "] + slines
+                            if schanged:
+                                commit_state()
+                        except Exception as e:
+                            keep.append("nse tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:
