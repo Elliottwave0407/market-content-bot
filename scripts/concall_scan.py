@@ -146,7 +146,7 @@ def score(f, ok):
     # margin
     mg = 0
     em = f.get("ebitda_margin")
-    if good(em) and isinstance(em.get("current_pct"), (int, float)) and isinstance(em.get("compare_pct"), (int, float)):
+    if good(em) and isinstance(em.get("current_pct"), (int, float)) and isinstance(em.get("compare_pct"), (int, float)) and 0 < em["current_pct"] < 100 and 0 < em["compare_pct"] < 100:
         d = em["current_pct"] - em["compare_pct"]
         mg += 15 if d >= 5 else 12 if d >= 3 else 8 if d >= 1 else 4 if d >= 0 else 0
     mo = f.get("margin_outlook")
