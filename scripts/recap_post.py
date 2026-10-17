@@ -180,6 +180,10 @@ def build(day, max_items=80):
     short = 0
     for x in items:
         x["key"] = nodec(x.get("key") or "")
+        if x["key"] and not re.search(r"\u20b9|%|\bCr\b|lakh|stake|equity|\b[A-D]{1,3}[+-]|crore", x["key"], re.I):
+            x["key"] = ""
+        if x["tag"] == "ORDER WIN" and x["score"] < 0:
+            x["tag"] = "RISK"
         ln = nodec(strip_co(x["line"], x["company"]))
         if not CR.fits(ln):
             short += 1

@@ -71,7 +71,11 @@ def render_recap(d, out_path, note=""):
         fig.text(fx(L + 0.15), fy(y + 0.3), f"FII / DII  {f['date']}", color=MUTED, fontsize=15, fontweight="bold", va="center")
         def cr(v):
             return ("+" if v >= 0 else "-") + f"\u20b9{abs(round(v)):,} Cr"
-        fig.text(fx(R - 0.15), fy(y + 0.3), f"FII {cr(f['fii'])}    DII {cr(f['dii'])}", color=GREEN if f["fii"] + f["dii"] >= 0 else RED, fontsize=17, fontweight="bold", ha="right", va="center")
+        col_f = GREEN if f["fii"] >= 0 else RED
+        col_d = GREEN if f["dii"] >= 0 else RED
+        t2 = fig.text(fx(R - 0.15), fy(y + 0.3), f"DII {cr(f['dii'])}", color=col_d, fontsize=17, fontweight="bold", ha="right", va="center")
+        wd = t2.get_window_extent(fig.canvas.get_renderer()).width / fig.dpi
+        fig.text(fx(R - 0.15 - wd - 0.4), fy(y + 0.3), f"FII {cr(f['fii'])}", color=col_f, fontsize=17, fontweight="bold", ha="right", va="center")
         y += fii_h
     rend = fig.canvas.get_renderer()
     def block(title, rows, col, y):
