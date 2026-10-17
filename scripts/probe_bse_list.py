@@ -1,14 +1,18 @@
 import sys, os, tempfile
+from datetime import datetime
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 from bse import BSE
-names = ("ANGEL", "CCL PRODUCTS", "ELECON", "KABRA", "TECH MAHINDRA", "E2E", "SBC EXPORT", "KARUR VYSYA", "ORIENTAL HOTELS", "BOMBAY SUPER")
 with BSE(download_folder=tempfile.mkdtemp()) as b:
-    allrows = []
-    for g in ("A", "B", "T", "X", "XT", "Z", "M", "MT", "MS", "P", "R", "ZP", "IP", "TS", "Y"):
-        allrows += b.listSecurities(group=g)
-    p("rows:", len(allrows), "with isin:", sum(1 for x in allrows if (x.get("ISIN_NUMBER") or "").strip()))
-    for n in names:
-        hit = [(x.get("Issuer_Name"), x.get("scrip_id"), x.get("SCRIP_CD"), x.get("ISIN_NUMBER"), x.get("GROUP"), x.get("Status")) for x in allrows if n in (x.get("Issuer_Name") or "").upper() or n in (x.get("Scrip_Name") or "").upper()]
-        p(n, "->", hit[:3])
+    for code in ("544783",):
+        for pg in (1, 2):
+            try:
+                d = b.announcements(page_no=pg, from_date=datetime(2026, 10, 15), to_date=datetime(2026, 10, 17), scripcode=code)
+            except Exception as e:
+                p("error", repr(e)[:100]); break
+            t = d.get("Table", [])
+            p("page", pg, "rows", len(t))
+            for x in t:
+                p(x.get("NEWS_DT"), "|", x.get("CATEGORYNAME"), "|", x.get("SUBCATNAME"), "|", (x.get("NEWSSUB") or "")[:110], "|", (x.get("HEADLINE") or "")[:80])
+            if not t: break
 publish()
