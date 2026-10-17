@@ -26,33 +26,22 @@ def get(url, **kw):
 today = datetime.now()
 fr = (today - timedelta(days=4)).strftime("%d-%m-%Y"); to = today.strftime("%d-%m-%Y")
 B = "https://www.nseindia.com/api/"
-rs = get(B + "corporates-financial-results?index=equities&period=Quarterly")
-if isinstance(rs, list):
-    def dt(x):
-        try: return datetime.strptime(x["filingDate"], "%d-%b-%Y %H:%M")
-        except Exception: return datetime(2000, 1, 1)
-    rs.sort(key=dt, reverse=True)
-    p("newest filing dates:", [x["filingDate"] for x in rs[:5]], "| count since 10 Oct:", sum(1 for x in rs if dt(x) >= datetime(2026, 10, 10)))
-    p("sample newest:", json.dumps(rs[0])[:600])
-    e = [x for x in rs if x["symbol"] == "E2E"]
-    p("E2E result filings:", [(x["relatingTo"], x["toDate"], x["consolidated"], x["filingDate"]) for x in e[:6]])
-    x = rs[0]
-    if x.get("xbrl"):
-        try:
-            r = s.get(x["xbrl"], timeout=30)
-            p("xbrl", r.status_code, len(r.content))
-            import re
-            tags = re.findall(r"<(?:in-bse-fin|[a-z\-]+):([A-Za-z]+)[ >]", r.text)
-            from collections import Counter
-            p("xbrl sample tags:", [t for t, _ in Counter(tags).most_common(60)])
-            m = re.findall(r"<in-bse-fin:(RevenueFromOperations|ProfitLossForPeriod|ProfitBeforeTax|BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations|OtherIncome|FinanceCosts|DepreciationDepletionAndAmortisationExpense|Income)[^>]*>([^<]*)<", r.text)
-            p("xbrl key values:", m[:12])
-        except Exception as e2:
-            p("xbrl error", repr(e2)[:100])
-ann = get(B + "corporate-announcements?index=equities&from_date=%s&to_date=%s" % (fr, to))
+def dtp(x):
+    try: return datetime.strptime(x["filingDate"], "%d-%b-%Y %H:%M")
+    except Exception: return datetime(2000, 1, 1)
+for a_, b_ in (("01-10-2026", "17-10-2026"), ("01-09-2026", "17-10-2026"), ("01-07-2026", "17-10-2026")):
+    rs = get(B + "corporates-financial-results?index=equities&period=Quarterly&from_date=%s&to_date=%s" % (a_, b_))
+    if isinstance(rs, list) and rs:
+        rs.sort(key=dtp, reverse=True)
+        p("window", a_, b_, "rows", len(rs), "newest", rs[0]["filingDate"], rs[0]["companyName"], rs[0]["relatingTo"], "E2E:", [x["relatingTo"] for x in rs if x["symbol"] == "E2E"])
+    else:
+        p("window", a_, b_, "rows", rs if rs is None else len(rs))
+rs = get(B + "corporates-financial-results?index=equities&period=Half-Yearly&from_date=01-10-2026&to_date=17-10-2026")
+p("half-yearly rows:", len(rs) if isinstance(rs, list) else rs)
+ann = get(B + "corporate-announcements?index=equities&symbol=E2E&from_date=15-10-2026&to_date=17-10-2026")
 if isinstance(ann, list):
-    from collections import Counter
-    p("ann desc counts:", Counter(x["desc"] for x in ann).most_common(12))
-    e = [x for x in ann if x["symbol"] == "E2E"]
-    p("E2E ann desc/time:", [(x["desc"], x["an_dt"]) for x in e])
+    for x in ann:
+        if x["desc"] == "Outcome of Board Meeting":
+            p("E2E outcome:", json.dumps({k: x[k] for k in ("an_dt", "attchmntText", "attchmntFile", "hasXbrl", "sm_isin")})[:700])
+            break
 publish()
