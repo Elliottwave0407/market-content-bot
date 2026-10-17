@@ -1,0 +1,41 @@
+name: concall-whisper
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Audio recording URL (mp3)"
+        required: true
+      name:
+        description: "Short name"
+        default: "call"
+      model:
+        description: "Whisper model: tiny, base, small, medium"
+        default: "small"
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests faster-whisper
+      - env:
+          AUDIO_URL: ${{ github.event.inputs.url }}
+          AUDIO_NAME: ${{ github.event.inputs.name }}
+          WHISPER_MODEL: ${{ github.event.inputs.model }}
+        run: python scripts/concall_whisper.py
+      - name: Publish transcript to the preview-cards branch
+        if: always()
+        run: |
+          set -e
+          ls out/*.txt >/dev/null 2>&1 || exit 0
+          mkdir /tmp/pv && cp out/*.txt /tmp/pv/
+          cd /tmp/pv
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "whisper transcript"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards
