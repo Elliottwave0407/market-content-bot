@@ -76,6 +76,26 @@ def gem(text):
             return None, "parse " + repr(e)[:60]
     return None, "rate/5xx"
 
+def sanitize(f):
+    """Gemini sometimes returns one item as a bare object, or a list where an object is expected."""
+    for k in ("guidance", "capex", "capacity", "mix", "moat", "catalysts", "risks"):
+        v = f.get(k)
+        if isinstance(v, dict):
+            f[k] = [v]
+        elif not isinstance(v, list):
+            f[k] = []
+        else:
+            f[k] = [x for x in v if isinstance(x, dict)]
+    for k in ("ebitda_margin", "margin_outlook", "order_book", "rev_yoy_pct", "pat_yoy_pct"):
+        v = f.get(k)
+        if isinstance(v, list):
+            f[k] = v[0] if v and isinstance(v[0], dict) else None
+        elif not isinstance(v, dict):
+            f[k] = None
+    if not isinstance(f.get("not_said"), list):
+        f["not_said"] = []
+    return f
+
 def mcaps():
     from bse import BSE
     out = {}
@@ -187,6 +207,8 @@ def main():
         toks = norm(txt)
         grams = set(" ".join(toks[i:i + 4]) for i in range(len(toks) - 3))
         f, err = gem(txt)
+        if f:
+            f = sanitize(f) if isinstance(f, dict) else None
         if f and os.environ.get("DEBUG_Q") and "Asset" in name:
             p("RAW", json.dumps(f)[:1800])
         if not f:
@@ -211,7 +233,7 @@ def main():
         for k, tag in (("ebitda_margin", "MARGIN"), ("margin_outlook", "MARGIN OUTLOOK"), ("capex", "CAPEX"), ("mix", "MIX"), ("moat", "MOAT")):
             for it in fa[k][:2]:
                 if k == "ebitda_margin":
-                    lines.append(f"   + {tag}: {it.get('current_pct')}% vs {it.get('compare_pct')}% ({it.get('compare_basis')})")
+                    lines.append(f"   + {tag}: {it.get('current_pct')}% vs {it.get('compare_pct')}% ({it.get('compare_basis')})" if it.get('compare_pct') is not None else f"   + {tag}: {it.get('current_pct')}% (no comparison given)")
                 else:
                     lines.append(f"   + {tag}: {it.get('detail')}" + (f" [funding: {it.get('funding')}]" if k == "capex" else ""))
         for k in fa["risks"][:2]:
