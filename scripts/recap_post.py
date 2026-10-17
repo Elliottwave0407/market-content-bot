@@ -11,11 +11,11 @@ from ci_out import p, publish
 IST = timezone(timedelta(hours=5, minutes=30))
 OUT = os.environ.get("OUT_DIR", "out")
 PROMPT = """You rate Indian stock-market exchange filings for a daily recap. For EACH item return a score and a one-line summary.
-Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"ONE complete plain sentence, <=130 chars, who did what and how much (never cut off mid-sentence)","k":"<=16 chars key figure exactly as in the text (e.g. Rs 198 Cr, AA+ from AA, 70% stake) or empty"}]
+Return ONLY a JSON list: [{"i":<item number>,"s":<integer -5..5>,"t":"ONE short plain sentence, MAX 55 characters, WITHOUT the company name, e.g. \"Wins Rs 198 Cr order from State Bank of India\" - what happened and how much","k":"<=16 chars key figure exactly as in the text (e.g. Rs 198 Cr, AA+ from AA, 70% stake) or empty"}]
 Score = likely impact on the company's shareholders, judged from the filing text only. Be selective and use the full range:
 0 = routine/procedural (copies of orders, meeting adjournments, intimations); +-1 = minor; +-2 = noticeable; +-3 = meaningful (sizeable order, rating upgrade/downgrade by a notch, completed acquisition); +-4 = large; +-5 = rare and major (default, fraud, insolvency, rating to junk, very large order or merger vs company size).
 Insolvency/NCLT proceedings against the company, creditors' committee meetings, lenders' defaults, NCLAT/court appeals by or against the company, regulatory or tax demands are NEGATIVE (-2 to -5), not 0. Rating upgrades are positive, downgrades negative; a dividend is +1 or +2; a resignation of a CFO/CEO is -1 or -2; order wins score by size.
-Rules: use ONLY facts in the text; do not add numbers or opinions; keep numbers exactly as written; no advice or predictions.
+Rules: the sentence must be complete and fit in 55 characters (rephrase to be shorter, never cut); use ONLY facts in the text; do not add numbers or opinions; keep numbers exactly as written; no advice or predictions.
 Items:
 @ITEMS"""
 
@@ -57,6 +57,19 @@ def rule_score(tag, head, d):
     if tag == "CREDIT RATING" and re.search(r"downgrad|negative|default", t, re.I): s -= 3
     return max(-5, min(5, s))
 
+def gemini_shorten(x, key):
+    prompt = ("Rewrite as ONE complete plain sentence of MAX 45 characters, without the company name, keeping the key fact and number exactly as written. "
+              "Return ONLY the sentence.\nSentence: " + x["line"] + "\nFiling text: " + x["detail"][:400])
+    try:
+        r = requests.post(f"{NB.BASE}/models/{NB.MODEL}:generateContent", headers={"x-goog-api-key": key}, json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0}}, timeout=40)
+        if r.status_code == 200:
+            t = r.json()["candidates"][0]["content"]["parts"][0]["text"].strip().strip('"')
+            if NB._ok({"headline": t, "bullets": ["x"]}, x["head"] + " " + x["detail"]):
+                return t
+    except Exception:
+        pass
+    return None
+
 def gemini_score(batch, key):
     items = "\n".join(f"{n}. [{x['tag']}] {x['company']}: {x['head']} | {x['detail'][:420]}" for n, x in enumerate(batch, 1))
     body = {"contents": [{"parts": [{"text": PROMPT.replace("@ITEMS", items)}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
@@ -77,6 +90,49 @@ def gemini_score(batch, key):
             p("gemini error", repr(e)[:80])
         time.sleep(6 * (k + 1))
     return {}
+
+
+MONEY = re.compile(r"(?:Rs\.?|INR|\u20b9)\s*([\d,]+(?:\.\d+)?)(?:\s*(crores?|crs?\b|million|mn\b|billion|bn\b|lakhs?|lacs?)\b)?", re.I)
+
+def _money(m):
+    try:
+        v = float(m.group(1).replace(",", ""))
+    except ValueError:
+        return m.group(0)
+    u = (m.group(2) or "").lower()
+    if u.startswith("cr"): c = v
+    elif u.startswith(("mill", "mn")): c = v / 10
+    elif u.startswith(("bill", "bn")): c = v * 100
+    elif u.startswith(("lakh", "lac")): c = v / 100
+    else: c = v / 1e7
+    if c >= 0.995: return f"\u20b9{round(c):,} Cr"
+    if c * 100 >= 0.995: return f"\u20b9{round(c * 100):,} lakh"
+    return f"\u20b9{round(c * 1e7):,}"
+
+def nodec(t):
+    t = MONEY.sub(_money, t or "")
+    return re.sub(r"(\d[\d,]*)\.\d+", lambda m: f"{round(float(m.group(0).replace(',', ''))):,}", t)
+
+def strip_co(line, company):
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    cw = [x for x in company.split() if norm(x) not in ("ltd", "limited", "pvt", "private", "")]
+    lw = line.strip().split()
+    cut = 0
+    for j in range(1, min(len(lw), 7) + 1):
+        a = norm("".join(lw[:j]))
+        if any(a == norm("".join(cw[:k])) for k in range(1, len(cw) + 1)):
+            cut = j
+    rest = lw[cut:]
+    while rest and norm(rest[0]) in ("ltd", "limited", "has", "have", "had", "is", "was", "announced", "informed", "that", "the", "company", "pvt", "private"):
+        rest = rest[1:]
+    if rest and norm(rest[0]) in ("its", "companys"):
+        rest = rest[1:]
+    ln = " ".join(rest)
+    return (ln[:1].upper() + ln[1:]) if ln else line
+
+def synth(x):
+    k = x.get("key") or ""
+    return {"ORDER WIN": f"Order received: {k}" if k else "New order received", "ACQUISITION": "Acquisition / scheme announced", "CREDIT RATING": "Credit rating action", "RISK": "Risk event disclosed"}.get(x["tag"], x["head"][:50])
 
 def build(day, max_items=80):
     rows = fetch_day(day)
@@ -120,6 +176,20 @@ def build(day, max_items=80):
                 gen = re.search(r"receipt of order|award of order|^acquisition$|^intimation|^announcement", x["head"], re.I) or len(x["head"]) < 25
                 x["line"] = (x["detail"] if gen and len(x["detail"]) > 30 else x["head"])[:90]
     p(f"scored by AI {scored}/{len(items)}")
+    import cards_recap as CR
+    short = 0
+    for x in items:
+        x["key"] = nodec(x.get("key") or "")
+        ln = nodec(strip_co(x["line"], x["company"]))
+        if not CR.fits(ln):
+            short += 1
+            ln2 = None
+            if key and x.get("how") == "ai":
+                r = gemini_shorten(x, key)
+                ln2 = nodec(strip_co(r, x["company"])) if r else None
+            ln = ln2 if ln2 and CR.fits(ln2) else synth(x)
+        x["line"] = ln
+    p(f"lines needing shortening: {short}")
     # one entry per company (strongest), remember how many filings
     best = {}
     for x in items:
@@ -129,7 +199,8 @@ def build(day, max_items=80):
             best[x["company"]] = x
         else:
             c["n"] = c.get("n", 1) + 1
-    each = list(best.values())
+    each = [c for c in best.values() if c["tag"] in ("ORDER WIN", "ACQUISITION") or abs(c["score"]) >= 3]
+    p(f"kept {len(each)} of {len(best)} companies (orders, deals, and big rating/risk moves)")
     for x in each:
         x.setdefault("key", "")
     pos = sorted([x for x in each if x["score"] > 0], key=lambda x: -x["score"])
@@ -138,7 +209,15 @@ def build(day, max_items=80):
     mix = {}
     for x in items:
         mix[x["tag"]] = mix.get(x["tag"], 0) + 1
-    return {"date": day.strftime("%d %b %Y"), "scanned": len(rows), "notable": len(each), "pos": pos, "neg": neg, "neu": len(neu), "neu_items": neu, "mix": mix,
+    fii = None
+    try:
+        import market_posts as mpx
+        f = mpx.fetch_fii_dii()
+        fii = {"date": f["date"].strftime("%d %b"), "fii": f["fii"]["net"], "dii": f["dii"]["net"]}
+    except Exception as e:
+        p("fii/dii unavailable:", repr(e)[:80])
+    cnt = {"orders": sum(1 for x in each if x["tag"] == "ORDER WIN"), "deals": sum(1 for x in each if x["tag"] == "ACQUISITION"), "alerts": sum(1 for x in each if x["tag"] not in ("ORDER WIN", "ACQUISITION"))}
+    return {"fii": fii, "cnt": cnt, "date": day.strftime("%d %b %Y"), "scanned": len(rows), "notable": len(each), "pos": pos, "neg": neg, "neu": len(neu), "neu_items": neu, "mix": mix,
             "ai": scored >= len(items) * 0.5}
 
 def main():

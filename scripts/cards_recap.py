@@ -9,7 +9,20 @@ MW = R - L
 N_SHOW = 20
 MAX_NEG = 7
 SHORT = {"ORDER WIN": "ORDER", "ACQUISITION": "DEAL", "CREDIT RATING": "RATING", "CORPORATE ACTION": "ACTION", "DIVIDEND": "DIVIDEND", "MANAGEMENT": "MGMT", "RISK": "RISK"}
-SF, SL = 15, 0.31
+SF, SL = 16, 0.31
+
+_FIG = [None]
+LINE_W = MW - 0.85 - 0.1
+
+def fits(text, fs=None):
+    """True if the sentence fits on one line from the text margin to the right border."""
+    if _FIG[0] is None:
+        _FIG[0] = T.new_fig(W, 10)
+    fig = _FIG[0]
+    t = fig.text(0, 0, text, fontsize=fs or SF)
+    w = t.get_window_extent(fig.canvas.get_renderer()).width / fig.dpi
+    t.remove()
+    return w <= LINE_W
 
 def pick(d, n=N_SHOW):
     pos, neg = list(d["pos"]), list(d["neg"])
@@ -22,14 +35,11 @@ def render_recap(d, out_path, note=""):
     from matplotlib.patches import Rectangle as Rect, Ellipse
     fp, fn = pick(d)
     pos, neg = d["pos"], d["neg"]
-    tmp = T.new_fig(W, 10)
-    wrapped = {}
-    for x in fp + fn:
-        wrapped[id(x)] = _wrap(tmp, x["line"], SF, "normal", MW - 0.85, 3)
-    T.plt.close(tmp)
-    rowh = lambda x: 0.5 + SL * len(wrapped[id(x)]) + 0.06
+    wrapped = {id(x): [x["line"]] for x in fp + fn}
+    rowh = lambda x: 0.84
     top, tiles_h, tone_h, blk = 2.2, 1.0, 0.9, 0.58
-    H = top + tiles_h + tone_h + (blk if fp else 0) + (blk if fn else 0) + sum(rowh(x) for x in fp + fn) + 1.45
+    fii_h = 0.75 if d.get('fii') else 0
+    H = top + tiles_h + tone_h + fii_h + (blk if fp else 0) + (blk if fn else 0) + sum(rowh(x) for x in fp + fn) + 1.45
     H = max(9.0, H)
     fig = T.new_fig(W, H)
     fx = lambda i: i / W
@@ -37,7 +47,8 @@ def render_recap(d, out_path, note=""):
     _hdr(fig, W, H, "Filings Recap", f"Top announcements  |  {d['date']}")
     y = top
     sp = sum(x["score"] for x in pos); sn = -sum(x["score"] for x in neg)
-    tiles = [("scanned", f"{d['scanned']:,}", T.NAVY), ("notable", str(d["notable"]), T.NAVY), ("positive", str(len(pos)), GREEN), ("negative", str(len(neg)), RED)]
+    c = d.get("cnt") or {}
+    tiles = [("filings scanned", f"{d['scanned']:,}", T.NAVY), ("orders", str(c.get("orders", 0)), "#2a78d6"), ("deals", str(c.get("deals", 0)), "#6250d6"), ("risk / rating", str(c.get("alerts", 0)), RED)]
     tw = (MW - 0.25 * 3) / 4
     for k, (lab, val, col) in enumerate(tiles):
         x0 = L + k * (tw + 0.25)
@@ -54,6 +65,14 @@ def render_recap(d, out_path, note=""):
     fig.patches.append(Rect((fx(L), fy(y + 0.78)), MW * sp / tot / W, 0.26 / H, transform=fig.transFigure, facecolor=GREEN, edgecolor="none"))
     fig.patches.append(Rect((fx(L + MW * sp / tot), fy(y + 0.78)), MW * sn / tot / W, 0.26 / H, transform=fig.transFigure, facecolor=RED, edgecolor="none"))
     y += tone_h
+    if d.get("fii"):
+        f = d["fii"]
+        T.panel(fig, fx(L - 0.05), fy(y + 0.6), (MW + 0.1) / W, 0.6 / H, fc=PANEL, ec=BORDER)
+        fig.text(fx(L + 0.15), fy(y + 0.3), f"FII / DII  {f['date']}", color=MUTED, fontsize=15, fontweight="bold", va="center")
+        def cr(v):
+            return ("+" if v >= 0 else "-") + f"\u20b9{abs(round(v)):,} Cr"
+        fig.text(fx(R - 0.15), fy(y + 0.3), f"FII {cr(f['fii'])}    DII {cr(f['dii'])}", color=GREEN if f["fii"] + f["dii"] >= 0 else RED, fontsize=17, fontweight="bold", ha="right", va="center")
+        y += fii_h
     rend = fig.canvas.get_renderer()
     def block(title, rows, col, y):
         T.chip(fig, fx(L), fy(y + 0.5), fx(0.2 * len(title) + 0.8), 0.46 / H, title, col, 15)
@@ -74,7 +93,7 @@ def render_recap(d, out_path, note=""):
             if key:
                 kt = fig.text(fx(right), fy(y + 0.27), key, color=c, fontsize=15, fontweight="bold", ha="right", va="center")
                 right -= kt.get_window_extent(rend).width / fig.dpi + 0.2
-            more = f" (+{x['n'] - 1})" if x.get("n", 1) > 1 else ""
+            more = ""
             nm = _wrap(fig, x["company"] + more, 17, "bold", right - (L + 0.7), 1)[0]
             fig.text(fx(L + 0.7), fy(y + 0.27), nm, color=TEXT, fontsize=17, fontweight="bold", va="center")
             for j, ln in enumerate(wrapped[id(x)]):
@@ -86,7 +105,7 @@ def render_recap(d, out_path, note=""):
     if fn:
         y = block("NEGATIVE / WATCH", fn, RED, y + 0.05)
     how = "AI-read from the filing text" if d.get("ai") else "rule-based from filing keywords"
-    ft = f"Top {len(fp) + len(fn)} of {d['notable']} notable filings. Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only." + (f"  {note}" if note else "")
+    ft = f"Top {len(fp) + len(fn)} of {len(d['pos']) + len(d['neg'])} important filings. Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only." + (f"  {note}" if note else "")
     for k, ln in enumerate(_wrap(fig, ft, 13, "normal", MW, 3)):
         fig.text(fx(L), fy(H - 0.9 + 0.3 * k), ln, color=MUTED, fontsize=13, va="center")
     T.save(fig, out_path)
