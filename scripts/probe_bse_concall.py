@@ -2,20 +2,21 @@ import sys, os, tempfile
 from datetime import datetime
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
+import nse_results as nse
 from bse import BSE
 with BSE(download_folder=tempfile.mkdtemp()) as b:
-    for pg in (1, 2, 3):
-        try:
-            d = b.announcements(page_no=pg, from_date=datetime(2026, 10, 1), to_date=datetime(2026, 10, 17), scripcode="544783")
-        except Exception as e:
-            p("error", repr(e)[:100]); break
+    for pg in (1, 2):
+        d = b.announcements(page_no=pg, from_date=datetime(2026, 10, 10), to_date=datetime(2026, 10, 17), scripcode="544783")
         t = d.get("Table", [])
-        p("page", pg, "rows", len(t))
         for x in t:
-            p(x.get("NEWS_DT"), "|", x.get("CATEGORYNAME"), "|", x.get("SUBCATNAME"), "|", (x.get("NEWSSUB") or "")[:90], "| att:", bool(x.get("ATTACHMENTNAME")), "|", (x.get("HEADLINE") or "")[:70].replace("\n", " "))
-        for x in t:
-            if "Analyst" in (x.get("SUBCATNAME") or ""):
-                p("--- keys:", ",".join(k for k in x.keys()))
-                p("ATT:", x.get("ATTACHMENTNAME"), "| MORE:", (x.get("MORE") or "")[:700].replace("\n", " "), "| NEWSSUB:", (x.get("NEWSSUB") or "")[:300], "| HEAD:", (x.get("HEADLINE") or "")[:700].replace("\n", " "))
+            p("BSE", x.get("NEWS_DT"), "|", x.get("SUBCATNAME"), "| AV:", x.get("AUDIO_VIDEO_FILE"), "| IP:", x.get("Investor_Presentation"), "| ATT:", x.get("ATTACHMENTNAME"), "| NSURL:", (x.get("NSURL") or "")[:80])
         if not t: break
+s = nse.sess()
+for dd in ("16-10-2026", "17-10-2026"):
+    try:
+        r = s.get("https://www.nseindia.com/api/corporate-announcements", params={"index": "equities", "symbol": "E2E", "from_date": dd, "to_date": dd}, timeout=30)
+        for x in r.json():
+            p("NSE", x.get("an_dt"), "|", x.get("desc"), "|", (x.get("attchmntText") or "")[:140].replace("\n", " "), "|", x.get("attchmntFile"))
+    except Exception as e:
+        p("nse err", repr(e)[:100])
 publish()
