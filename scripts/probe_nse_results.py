@@ -25,25 +25,24 @@ def get(url, **kw):
 
 today = datetime.now()
 fr = (today - timedelta(days=4)).strftime("%d-%m-%Y"); to = today.strftime("%d-%m-%Y")
-d = get(f"https://www.nseindia.com/api/corporates-financial-results?index=equities&from_date={fr}&to_date={to}&period=Quarterly")
-if isinstance(d, list):
-    p("results rows:", len(d))
-    if d:
-        p("keys:", sorted(d[0].keys()))
-        p("sample:", json.dumps(d[0])[:700])
-    e = [x for x in d if "E2E" in json.dumps(x).upper()]
-    p("E2E rows:", len(e))
-    for x in e[:2]:
-        p("E2E:", json.dumps(x)[:900])
-    p("distinct symbols:", len({x.get("symbol") for x in d}), "| consolidated values:", sorted({str(x.get("consolidated")) for x in d}))
-elif isinstance(d, dict):
-    p("dict keys", list(d.keys())[:10], json.dumps(d)[:300])
-a = get(f"https://www.nseindia.com/api/corporate-announcements?index=equities&from_date={fr}&to_date={to}&subject=Financial%20Results")
-if isinstance(a, list):
-    p("ann rows:", len(a))
-    if a:
-        p("ann keys:", sorted(a[0].keys()))
-        p("ann sample:", json.dumps(a[0])[:600])
-    e = [x for x in a if "E2E" in json.dumps(x).upper()]
-    p("ann E2E:", len(e), json.dumps(e[0])[:600] if e else "")
+B = "https://www.nseindia.com/api/"
+variants = [
+  "corporates-financial-results?index=equities&period=Quarterly",
+  "corporates-financial-results?index=equities&period=Quarterly&from_date=%s&to_date=%s" % (fr, to),
+  "corporates-financial-results?index=equities&period=Quarterly&symbol=E2E",
+  "corporates-financial-results?index=equities&symbol=E2E",
+  "corporate-announcements?index=equities&from_date=%s&to_date=%s" % (fr, to),
+  "corporate-announcements?index=equities&symbol=E2E",
+  "corporate-announcements?index=equities&from_date=%s&to_date=%s&symbol=E2E" % (fr, to),
+  "corporate-announcements?index=equities",
+]
+for v in variants:
+    d = get(B + v)
+    n = len(d) if isinstance(d, list) else (list(d.keys())[:6] if isinstance(d, dict) else None)
+    p("  ->", v[:110], "|", n)
+    if isinstance(d, list) and d:
+        p("     keys:", sorted(d[0].keys()))
+        e = [x for x in d if "E2E" in json.dumps(x).upper()]
+        p("     E2E rows:", len(e), (json.dumps(e[0])[:800] if e else ""))
+        p("     sample:", json.dumps(d[0])[:500])
 publish()
