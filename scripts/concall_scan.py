@@ -19,15 +19,21 @@ BASE = "https://generativelanguage.googleapis.com/v1beta"
 PROMPT = """You read the transcript of an Indian listed company's earnings conference call. Extract ONLY what management actually said. Never infer or add outside knowledge.
 Return ONLY JSON:
 {"company":"","quarter":"",
+ "ebitda_margin":{"current_pct":number,"compare_pct":number,"compare_basis":"yoy|qoq","quote":""} or null,
+ "margin_outlook":{"direction":"expand|stable|contract","detail":"","quote":""} or null,
  "rev_yoy_pct":{"value":number,"quote":""} or null,
  "pat_yoy_pct":{"value":number,"quote":""} or null,
  "guidance":[{"metric":"","detail":"","quote":""}],
  "order_book":{"detail":"","quote":""} or null,
- "catalysts":[{"type":"order|capex|capacity|acquisition|launch|other","detail":"","quote":""}],
+ "capex":[{"detail":"amount and purpose","funding":"internal accruals|debt|equity|mixed|not stated","timeline":"","quote":""}],
+ "capacity":[{"detail":"","quote":""}],
+ "mix":[{"detail":"share of premium / value-added / new products and how it is changing","direction":"premium_up|premium_down|neutral","quote":""}],
+ "moat":[{"type":"only_player|licence_approval|ip_technology|backward_integration|switching_cost|scale|brand|other","detail":"why competitors cannot easily copy it, as management said","quote":""}],
+ "catalysts":[{"type":"order|acquisition|launch|other","detail":"","quote":""}],
  "risks":[{"type":"working_capital|margin|concentration|debt|other_income|regulatory|execution|other","detail":"","quote":""}],
  "not_said":["important things an investor would want that management did not give, e.g. no margin guidance"],
- "tone":"confident|neutral|cautious","one_line":"<=20 words: the single most important takeaway"}
-Rules: every quote is VERBATIM from the transcript, at most 25 words, and must support the item. detail is plain English, one short line, numbers exactly as spoken. Max 5 items per list. yoy values only if management said the growth figure or it is stated plainly; otherwise null."""
+ "one_line":"<=20 words: the single most important takeaway"}
+Rules: every quote is VERBATIM from the transcript, at most 25 words, and must support the item. detail is plain English, one short line, numbers exactly as spoken. Max 4 items per list. Fill ebitda_margin only if management gave the margin numbers; do not compute it yourself. moat only if management described a real barrier (not just 'we are good')."""
 
 def norm(s):
     return re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split()
@@ -105,29 +111,46 @@ def find_transcripts():
     return out
 
 def score(f, ok):
-    """ok(q)->bool verifies a quote. Returns (total, parts, verified facts)."""
+    """ok(q)->bool verifies a quote. 100 pts: margin 25, capex/capacity 20, mix 20, moat 15, growth+visibility 15, clarity 5; risks subtract up to 20."""
     def good(item):
         return isinstance(item, dict) and ok(item.get("quote"))
+    def lst(k):
+        return [x for x in (f.get(k) or []) if good(x)]
+    # margin
+    mg = 0
+    em = f.get("ebitda_margin")
+    if good(em) and isinstance(em.get("current_pct"), (int, float)) and isinstance(em.get("compare_pct"), (int, float)):
+        d = em["current_pct"] - em["compare_pct"]
+        mg += 15 if d >= 5 else 12 if d >= 3 else 8 if d >= 1 else 4 if d >= 0 else 0
+    mo = f.get("margin_outlook")
+    if good(mo):
+        mg += {"expand": 10, "stable": 5}.get(mo.get("direction"), 0)
+    mg = min(25, mg)
+    # capex & capacity
+    cx, cp = lst("capex"), lst("capacity")
+    internal = any("internal" in str(x.get("funding", "")).lower() for x in cx)
+    cpx = min(20, 6 * len(cx) + 5 * len(cp) + (4 if internal else 0))
+    # product mix
+    mx = min(20, sum({"premium_up": 8, "neutral": 3}.get(x.get("direction"), 0) for x in lst("mix")))
+    # moat
+    mt = min(15, 5 * len(lst("moat")))
+    # growth + visibility
+    ys = [it["value"] for it in (f.get("rev_yoy_pct"), f.get("pat_yoy_pct")) if good(it) and isinstance(it.get("value"), (int, float))]
     g = 0
-    ys = []
-    for k in ("rev_yoy_pct", "pat_yoy_pct"):
-        it = f.get(k)
-        if good(it) and isinstance(it.get("value"), (int, float)):
-            ys.append(it["value"])
     if ys:
         m = max(ys)
-        g = 25 if m >= 100 else 20 if m >= 50 else 14 if m >= 25 else 8 if m >= 10 else 3 if m >= 0 else 0
-    gd = [x for x in (f.get("guidance") or []) if good(x)]
+        g = 8 if m >= 50 else 6 if m >= 25 else 4 if m >= 10 else 2 if m >= 0 else 0
+    gd = lst("guidance")
     ob = f.get("order_book") if good(f.get("order_book")) else None
-    vis = min(25, 8 * min(len(gd), 2) + (9 if ob else 0))
-    cat = [x for x in (f.get("catalysts") or []) if good(x)]
-    cats = min(25, 7 * len(cat))
-    clar = min(15, 5 * len(gd) + (5 if ob else 0))
-    tone = {"confident": 10, "neutral": 5, "cautious": 0}.get(f.get("tone"), 5) if ok(f.get("tone_quote", "x" * 40)) or True else 5
-    rk = [x for x in (f.get("risks") or []) if good(x)]
+    vis = min(7, 3 * min(len(gd), 2) + (3 if ob else 0))
+    gv = g + vis
+    clar = min(5, len(gd) + (1 if ob else 0) + (1 if em and good(em) else 0))
+    rk = lst("risks")
     pen = min(20, 4 * len(rk))
-    total = max(0, g + vis + cats + clar + tone - pen)
-    return total, {"growth": g, "visibility": vis, "catalysts": cats, "clarity": clar, "tone": tone, "risk_penalty": -pen}, {"guidance": gd, "order_book": ob, "catalysts": cat, "risks": rk}
+    total = max(0, mg + cpx + mx + mt + gv + clar - pen)
+    parts = {"margin": mg, "capex": cpx, "mix": mx, "moat": mt, "growth_visibility": gv, "clarity": clar, "risk_penalty": -pen}
+    facts = {"ebitda_margin": [em] if good(em) else [], "margin_outlook": [mo] if good(mo) else [], "capex": cx, "capacity": cp, "mix": lst("mix"), "moat": lst("moat"), "guidance": gd, "order_book": [ob] if ob else [], "catalysts": lst("catalysts"), "risks": rk}
+    return total, parts, facts
 
 def main():
     os.makedirs("out", exist_ok=True)
@@ -161,22 +184,26 @@ def main():
             p("gemini fail", name[:25], err); continue
         ok = lambda q: quote_ok(q, grams)
         total, parts, facts = score(f, ok)
-        nclaims = sum(len(f.get(k) or []) for k in ("guidance", "catalysts", "risks")) + (1 if f.get("order_book") else 0)
-        nver = sum(len(v) if isinstance(v, list) else (1 if v else 0) for v in facts.values())
+        nclaims = sum(len(f.get(k) or []) for k in ("guidance", "catalysts", "risks", "capex", "capacity", "mix", "moat")) + sum(1 for k in ("order_book", "ebitda_margin", "margin_outlook") if f.get(k))
+        nver = sum(len(v) for k, v in facts.items() if k in ("guidance", "catalysts", "risks", "capex", "capacity", "mix", "moat", "order_book", "ebitda_margin", "margin_outlook"))
         res.append({"name": name, "code": x.get("SCRIP_CD"), "mcap": x["_mc"], "grp": x["_g"], "total": total, "parts": parts, "facts": facts, "f": f, "claims": nclaims, "verified": nver, "words": len(txt.split())})
         p("scored", name[:30], total)
         time.sleep(4)
     res.sort(key=lambda r: -r["total"])
     lines = []
     for i, r in enumerate(res, 1):
-        pt = r["parts"]
+        pt = r["parts"]; fa = r["facts"]
         lines.append(f"#{i} {r['name']} ({r['code']}) | mcap Rs {int(r['mcap']):,} Cr | SCORE {r['total']}/100")
-        lines.append(f"   growth {pt['growth']}/25 | visibility {pt['visibility']}/25 | catalysts {pt['catalysts']}/25 | clarity {pt['clarity']}/15 | tone {pt['tone']}/10 | risks {pt['risk_penalty']}")
+        lines.append(f"   margin {pt['margin']}/25 | capex {pt['capex']}/20 | mix {pt['mix']}/20 | moat {pt['moat']}/15 | growth+visibility {pt['growth_visibility']}/15 | clarity {pt['clarity']}/5 | risks {pt['risk_penalty']}")
         lines.append(f"   facts verified in transcript: {r['verified']} of {r['claims']} claimed")
         lines.append(f"   story: {r['f'].get('one_line')}")
-        for c in r["facts"]["catalysts"][:2]:
-            lines.append(f"   + {c.get('detail')}")
-        for k in r["facts"]["risks"][:2]:
+        for k, tag in (("ebitda_margin", "MARGIN"), ("margin_outlook", "MARGIN OUTLOOK"), ("capex", "CAPEX"), ("mix", "MIX"), ("moat", "MOAT")):
+            for it in fa[k][:2]:
+                if k == "ebitda_margin":
+                    lines.append(f"   + {tag}: {it.get('current_pct')}% vs {it.get('compare_pct')}% ({it.get('compare_basis')})")
+                else:
+                    lines.append(f"   + {tag}: {it.get('detail')}" + (f" [funding: {it.get('funding')}]" if k == "capex" else ""))
+        for k in fa["risks"][:2]:
             lines.append(f"   - {k.get('type')}: {k.get('detail')}")
         for n in (r["f"].get("not_said") or [])[:2]:
             lines.append(f"   ? not said: {n}")
