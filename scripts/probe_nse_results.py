@@ -26,23 +26,33 @@ def get(url, **kw):
 today = datetime.now()
 fr = (today - timedelta(days=4)).strftime("%d-%m-%Y"); to = today.strftime("%d-%m-%Y")
 B = "https://www.nseindia.com/api/"
-variants = [
-  "corporates-financial-results?index=equities&period=Quarterly",
-  "corporates-financial-results?index=equities&period=Quarterly&from_date=%s&to_date=%s" % (fr, to),
-  "corporates-financial-results?index=equities&period=Quarterly&symbol=E2E",
-  "corporates-financial-results?index=equities&symbol=E2E",
-  "corporate-announcements?index=equities&from_date=%s&to_date=%s" % (fr, to),
-  "corporate-announcements?index=equities&symbol=E2E",
-  "corporate-announcements?index=equities&from_date=%s&to_date=%s&symbol=E2E" % (fr, to),
-  "corporate-announcements?index=equities",
-]
-for v in variants:
-    d = get(B + v)
-    n = len(d) if isinstance(d, list) else (list(d.keys())[:6] if isinstance(d, dict) else None)
-    p("  ->", v[:110], "|", n)
-    if isinstance(d, list) and d:
-        p("     keys:", sorted(d[0].keys()))
-        e = [x for x in d if "E2E" in json.dumps(x).upper()]
-        p("     E2E rows:", len(e), (json.dumps(e[0])[:800] if e else ""))
-        p("     sample:", json.dumps(d[0])[:500])
+rs = get(B + "corporates-financial-results?index=equities&period=Quarterly")
+if isinstance(rs, list):
+    def dt(x):
+        try: return datetime.strptime(x["filingDate"], "%d-%b-%Y %H:%M")
+        except Exception: return datetime(2000, 1, 1)
+    rs.sort(key=dt, reverse=True)
+    p("newest filing dates:", [x["filingDate"] for x in rs[:5]], "| count since 10 Oct:", sum(1 for x in rs if dt(x) >= datetime(2026, 10, 10)))
+    p("sample newest:", json.dumps(rs[0])[:600])
+    e = [x for x in rs if x["symbol"] == "E2E"]
+    p("E2E result filings:", [(x["relatingTo"], x["toDate"], x["consolidated"], x["filingDate"]) for x in e[:6]])
+    x = rs[0]
+    if x.get("xbrl"):
+        try:
+            r = s.get(x["xbrl"], timeout=30)
+            p("xbrl", r.status_code, len(r.content))
+            import re
+            tags = re.findall(r"<(?:in-bse-fin|[a-z\-]+):([A-Za-z]+)[ >]", r.text)
+            from collections import Counter
+            p("xbrl sample tags:", [t for t, _ in Counter(tags).most_common(60)])
+            m = re.findall(r"<in-bse-fin:(RevenueFromOperations|ProfitLossForPeriod|ProfitBeforeTax|BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations|OtherIncome|FinanceCosts|DepreciationDepletionAndAmortisationExpense|Income)[^>]*>([^<]*)<", r.text)
+            p("xbrl key values:", m[:12])
+        except Exception as e2:
+            p("xbrl error", repr(e2)[:100])
+ann = get(B + "corporate-announcements?index=equities&from_date=%s&to_date=%s" % (fr, to))
+if isinstance(ann, list):
+    from collections import Counter
+    p("ann desc counts:", Counter(x["desc"] for x in ann).most_common(12))
+    e = [x for x in ann if x["symbol"] == "E2E"]
+    p("E2E ann desc/time:", [(x["desc"], x["an_dt"]) for x in e])
 publish()
