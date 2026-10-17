@@ -41,7 +41,8 @@ def ingest(updates, token, chat_labels):
         cid = str((m.get("chat") or {}).get("id"))
         if cid not in chat_labels:
             continue
-        who = (m.get("from") or {}).get("first_name", "?")
+        fr = m.get("from") or {}
+        who = fr.get("first_name", "?") + f" [id {fr.get('id')}" + (f" @{fr['username']}" if fr.get("username") else "") + "]"
         txt = m.get("text") or m.get("caption") or ""
         file_id, ext = None, "jpg"
         if m.get("photo"):

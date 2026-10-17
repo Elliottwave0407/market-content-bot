@@ -207,7 +207,15 @@ def build(day, max_items=80):
     p(f"kept {len(each)} of {len(best)} companies (orders, deals, and big rating/risk moves)")
     for x in each:
         x.setdefault("key", "")
-    pos = sorted([x for x in each if x["score"] > 0], key=lambda x: -x["score"])
+    def crv(x):
+        m = re.search(r"\u20b9([\d,]+)\s*(Cr|lakh)", x.get("key") or "")
+        if not m:
+            return 0.0
+        v = float(m.group(1).replace(",", ""))
+        return v if m.group(2) == "Cr" else v / 100
+    for x in each:
+        x["val"] = crv(x)
+    pos = sorted([x for x in each if x["score"] > 0], key=lambda x: (-x["score"], -x["val"], x["company"]))
     neg = sorted([x for x in each if x["score"] < 0], key=lambda x: x["score"])
     neu = [x for x in each if x["score"] == 0]
     mix = {}
@@ -224,6 +232,23 @@ def build(day, max_items=80):
     return {"fii": fii, "cnt": cnt, "date": day.strftime("%d %b %Y"), "scanned": len(rows), "notable": len(each), "pos": pos, "neg": neg, "neu": len(neu), "neu_items": neu, "mix": mix,
             "ai": scored >= len(items) * 0.5}
 
+def tag_friend(first, token, chat):
+    """Tag a group member (needs an admin entry or a known user id); falls back to the plain name. Never prints ids."""
+    api = f"https://api.telegram.org/bot{token}"
+    ent, uid = [], None
+    try:
+        for a in requests.get(api + "/getChatAdministrators", params={"chat_id": chat}, timeout=20).json().get("result", []):
+            u = a.get("user", {})
+            if u.get("first_name", "").lower().startswith(first.lower()):
+                uid = u["id"]
+    except Exception:
+        pass
+    text = f"{first} - sample recap card above, please look and share feedback: layout, wording, what to add or remove."
+    if uid:
+        ent = [{"type": "text_mention", "offset": 0, "length": len(first), "user": {"id": uid}}]
+    r = requests.post(api + "/sendMessage", data={"chat_id": chat, "text": text, **({"entities": json.dumps(ent)} if ent else {})}, timeout=30)
+    p("tag message sent:", r.json().get("ok"), "(real tag)" if uid else "(plain name; no user id known)")
+
 def main():
     day = datetime.strptime(sys.argv[1], "%Y-%m-%d") if len(sys.argv) > 1 else datetime.now(IST).replace(tzinfo=None)
     send = len(sys.argv) > 2 and sys.argv[2] == "1"
@@ -237,7 +262,10 @@ def main():
         import market_posts as mp
         mp.SEND = True
         cap = f"SAMPLE - evening filings recap built from real BSE filings of {d['date']} (AI-read scores; format under review).\nFor educational purpose only."
-        p("sent:", mp.post([(path, cap, None)]))
+        ok = mp.post([(path, cap, None)])
+        p("sent:", ok)
+        if ok:
+            tag_friend("Abhimanyu", mp.TOKEN, mp.CHAT)
     publish()
 
 if __name__ == "__main__":
