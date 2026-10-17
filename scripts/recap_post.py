@@ -23,6 +23,15 @@ KW_POS = re.compile(r"upgrade|positive|approv|award|received order|secure|win|ac
 KW_NEG = re.compile(r"downgrad|default|fraud|insolv|cirp|penalt|regulatory action|resign|cessation|delist|negative|suspend|rejected", re.I)
 
 def fetch_day(day):
+    for k in range(3):
+        try:
+            return _fetch_day(day)
+        except Exception as e:
+            p('bse fetch retry', k + 1, repr(e)[:60])
+            time.sleep(10)
+    return _fetch_day(day)
+
+def _fetch_day(day):
     from bse import BSE
     rows, pg = [], 1
     with BSE(download_folder="./") as bse:
@@ -225,7 +234,10 @@ def build(day, max_items=80):
     try:
         import market_posts as mpx
         f = mpx.fetch_fii_dii()
-        fii = {"date": f["date"].strftime("%d %b"), "fii": f["fii"]["net"], "dii": f["dii"]["net"]}
+        if f["date"].date() == day.date():
+            fii = {"date": f["date"].strftime("%d %b"), "fii": f["fii"]["net"], "dii": f["dii"]["net"]}
+        else:
+            p("FII/DII on NSE is for", f["date"].strftime("%d %b"), "- not shown")
     except Exception as e:
         p("fii/dii unavailable:", repr(e)[:80])
     cnt = {"orders": sum(1 for x in each if x["tag"] == "ORDER WIN"), "deals": sum(1 for x in each if x["tag"] == "ACQUISITION"), "alerts": sum(1 for x in each if x["tag"] not in ("ORDER WIN", "ACQUISITION"))}
@@ -250,22 +262,44 @@ def tag_friend(first, token, chat):
     p("tag message sent:", r.json().get("ok"), "(real tag)" if uid else "(plain name; no user id known)")
 
 def main():
-    day = datetime.strptime(sys.argv[1], "%Y-%m-%d") if len(sys.argv) > 1 else datetime.now(IST).replace(tzinfo=None)
+    arg = sys.argv[1] if len(sys.argv) > 1 else "today"
+    now = datetime.now(IST).replace(tzinfo=None)
+    day = now if arg == "today" else datetime.strptime(arg, "%Y-%m-%d")
     send = len(sys.argv) > 2 and sys.argv[2] == "1"
+    daily = len(sys.argv) > 3 and sys.argv[3] == "daily"
+    ST = "state/recap_posted.json"
+    if daily:
+        if day.weekday() >= 5:
+            p("weekend - no recap"); publish(); return
+        last = (json.load(open(ST)) if os.path.exists(ST) else {}).get("last", "")
+        if last == day.strftime("%Y-%m-%d") and os.environ.get("FORCE") != "1":
+            p("recap already posted today"); publish(); return
     d = build(day)
     import cards_recap as CR
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f"recap_{day:%Y%m%d}.png")
     CR.render_recap(d, path)
-    p("card:", path, "pos", len(d["pos"]), "neg", len(d["neg"]), "neu", d["neu"])
+    shown = len(CR.pick(d)[0]) + len(CR.pick(d)[1])
+    p("card:", path, "pos", len(d["pos"]), "neg", len(d["neg"]), "neu", d["neu"], "rows", shown)
     if send:
         import market_posts as mp
         mp.SEND = True
-        cap = f"SAMPLE - evening filings recap built from real BSE filings of {d['date']} (AI-read scores; format under review).\nFor educational purpose only."
-        ok = mp.post([(path, cap, None)])
-        p("sent:", ok)
-        if ok:
-            tag_friend("Abhimanyu", mp.TOKEN, mp.CHAT)
+        if daily:
+            if shown < 3:
+                p("fewer than 3 important filings - nothing posted")
+            else:
+                cap = f"Filings Recap - {d['date']}\nToday's top orders, deals and risk items from BSE filings.\nFor educational purpose only."
+                tw = f"Filings recap {d['date']}: top orders and deals from today's BSE filings\n#StockMarketIndia #Orders #Stocks"
+                if mp.post([(path, cap, tw)]):
+                    os.makedirs("state", exist_ok=True)
+                    json.dump({"last": day.strftime("%Y-%m-%d")}, open(ST, "w"))
+                    p("posted")
+        else:
+            cap = f"SAMPLE - evening filings recap built from real BSE filings of {d['date']} (AI-read scores; format under review).\nFor educational purpose only."
+            ok = mp.post([(path, cap, None)])
+            p("sent:", ok)
+            if ok:
+                tag_friend("Abhimanyu", mp.TOKEN, mp.CHAT)
     publish()
 
 if __name__ == "__main__":
