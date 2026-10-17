@@ -35,6 +35,8 @@ Return ONLY JSON:
  "one_line":"<=20 words: the single most important takeaway"}
 Rules: every quote is VERBATIM from the transcript, at most 25 words, and must support the item. detail is plain English, one short line, numbers exactly as spoken. Max 4 items per list. Fill ebitda_margin only if management gave the margin numbers; do not compute it yourself. moat only if management described a real barrier (not just 'we are good')."""
 
+DBG = []
+
 def norm(s):
     return re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split()
 
@@ -44,7 +46,10 @@ def quote_ok(q, text_tokens_set4):
         return False
     grams = [" ".join(t[i:i + 4]) for i in range(len(t) - 3)]
     hit = sum(1 for g in grams if g in text_tokens_set4)
-    return hit / len(grams) >= 0.7
+    r = hit / len(grams)
+    if r < 0.7 and os.environ.get("DEBUG_Q") and len(DBG) < 14:
+        DBG.append(f"{round(r, 2)} | {q[:140]}")
+    return r >= 0.7
 
 def pdf_text(url):
     from pypdf import PdfReader
@@ -189,6 +194,8 @@ def main():
         res.append({"name": name, "code": x.get("SCRIP_CD"), "mcap": x["_mc"], "grp": x["_g"], "total": total, "parts": parts, "facts": facts, "f": f, "claims": nclaims, "verified": nver, "words": len(txt.split())})
         p("scored", name[:30], total)
         time.sleep(4)
+    for d_ in DBG:
+        p("FAILQ", d_)
     res.sort(key=lambda r: -r["total"])
     lines = []
     for i, r in enumerate(res, 1):

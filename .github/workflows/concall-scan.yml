@@ -32,6 +32,7 @@ jobs:
           TO_DAY: ${{ github.event.inputs.to_day }}
           MAX_N: ${{ github.event.inputs.max_n }}
           MCAP_MAX: ${{ github.event.inputs.mcap_max }}
+          DEBUG_Q: "1"
         run: python scripts/concall_scan.py
       - name: Publish shortlist to the preview-cards branch
         if: always()
