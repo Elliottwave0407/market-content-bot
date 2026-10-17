@@ -43,6 +43,8 @@ def norm(s):
 def quote_ok(q, text_tokens_set4):
     t = norm(q)
     if len(t) < 4:
+        if os.environ.get("DEBUG_Q") and len(DBG) < 14:
+            DBG.append(f"short/empty quote: {str(q)[:60]!r}")
         return False
     grams = [" ".join(t[i:i + 4]) for i in range(len(t) - 3)]
     hit = sum(1 for g in grams if g in text_tokens_set4)
@@ -185,6 +187,8 @@ def main():
         toks = norm(txt)
         grams = set(" ".join(toks[i:i + 4]) for i in range(len(toks) - 3))
         f, err = gem(txt)
+        if f and os.environ.get("DEBUG_Q") and "Asset" in name:
+            p("RAW", json.dumps(f)[:1800])
         if not f:
             p("gemini fail", name[:25], err); continue
         ok = lambda q: quote_ok(q, grams)
