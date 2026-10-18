@@ -12,6 +12,14 @@
   [
    "call",
    "28-Jul-2026"
+  ],
+  [
+   "presentation",
+   "21-Jul-2026"
+  ],
+  [
+   "presentation",
+   "16-Oct-2026"
   ]
  ],
  "extract_model": "gemini-flash-lite-latest",
@@ -19,56 +27,43 @@
  "facts": [
   {
    "audit": {
-    "id": "2",
-    "reason": "The passage explicitly identifies the company as an AI/ML cloud GPU player and infrastructure services platform in India.",
+    "id": "0",
+    "reason": "The passage explicitly states the binding term sheet details, value, and validity period as claimed.",
     "supports": "yes"
    },
    "fact": {
-    "fact": "Cloud computing and AI/ML infrastructure services platform in India.",
-    "quote": "E2E was founded in 2009 and is amongst one of the largest AI/ML cloud GPU players in India currently."
+    "detail": "Entered into a binding term sheet worth ~₹1,000 Cr (excl. taxes) with an India-based Sovereign AI company for NVIDIA Blackwell cloud GPUs and allied services valid up to June 2029.",
+    "quote": "Entered into a binding term sheet worth ~₹1,000 Cr (excl. taxes) with an India-based Sovereign AI company for NVIDIA Blackwell cloud GPUs and allied services valid up to June 2029."
    },
-   "path": "/sector[0]"
+   "path": "/contracted_demand"
   },
   {
    "audit": {
-    "id": "3",
-    "reason": "Management confirms global supply chain impacts are causing hardware delivery delays.",
+    "id": "2",
+    "reason": "The passage explicitly mentions full stack in-house engineering and the proprietary platforms TIR and Jarvislabs.ai.",
     "supports": "yes"
    },
    "fact": {
-    "quote": "Global supply chains have been impacted somewhat. The delays are always for want of a horseshoe nail.",
-    "text": "Global supply chain constraints impacting hardware delivery timings.",
-    "type": "supply"
+    "barrier": "Full stack in-house engineering and proprietary sovereign AI platforms (TIR and Jarvislabs.ai)",
+    "quote": "Full stack, in-house — 100+ engineers build our compute, networking, orchestration & AI software. Own AI platforms — two in-house platforms: TIR (training, fine-tuning, RAG & model endpoints) and Jarvislabs.ai (developer friendly GPU cloud)."
    },
-   "path": "/risks[0]"
+   "path": "/moat[0]"
   }
  ],
- "n_extracted": 4,
+ "n_extracted": 3,
  "rejected": [
   {
    "audit": {
-    "id": "0",
-    "reason": "The passage confirms the 5,100 GPU count and 1,024 B200s, but does not mention the 80% utilization percentage.",
+    "id": "1",
+    "reason": "The passage confirms the GPU count but does not mention the 80% utilization percentage.",
     "supports": "partly"
    },
    "fact": {
-    "detail": "5,100 GPUs live on our platform today (plus another 1,024 B200 expected soon)",
-    "quote": "Yes. So nearly 5,100 is the current capacity, which is live on our platform today. That's the number of GPUs which are live today. So that does not include another 1,024 B200 we are expecting soon.",
-    "utilization_pct": 80.0
+    "detail": "5,100 approx. cloud GPUs live at Q1 FY27 exit",
+    "quote": "5100 approx. cloud GPUs live at Q1 FY27 exit",
+    "utilization_pct": 80
    },
    "path": "/capacity"
-  },
-  {
-   "audit": {
-    "id": "1",
-    "reason": "The passage mentions in-house capabilities across five layers, but does not explicitly list sovereign AI or open-source integration.",
-    "supports": "partly"
-   },
-   "fact": {
-    "barrier": "Sovereign AI platform, in-house capabilities across five layers of the stack, open-source integration, and end-to-end project management capabilities.",
-    "quote": "This is a testament to the strengthening of our technology and talent, which has been used to build very deep in-house capabilities across the entire five layers of the stack."
-   },
-   "path": "/moat[0]"
   }
  ]
 }
