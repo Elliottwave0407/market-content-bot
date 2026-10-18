@@ -358,21 +358,16 @@
      "quote": "So, we have spoken about we are going to overall go and deploy almost like Rs. 150 to 200 crores of hardware over next say 12 months. So, 12 could become 15 but broadly that number remains the same.",
      "topic": "capex",
      "verdict": {
-      "evidence_quote": "For the CAPEX done, is already deployed on our cloud platform, how quickly can we sell is like something that we do not make a statement on , that is something we like to look in the past once we have done it.",
+      "audit": null,
+      "audit_model": null,
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
       "judged_on": "2026-10-18",
-      "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed the 150 crore capex is already deployed on their cloud platform.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "label": "unverifiable (audit unavailable)",
+      "method": "strong-context+audit",
+      "reason": "Management confirmed that the Rs. 150-185 crore capex completed in FY24 was already deployed on their cloud platform well within 12-15 months.",
+      "source_filed": "30-May-2024",
+      "v2_label": "delivered"
      }
     },
     {
@@ -383,21 +378,16 @@
      "quote": "For the current plans, basically debt and internal cash approvals make it possible for us to be able to do that without raising additional equity.",
      "topic": "funding",
      "verdict": {
-      "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
+      "audit": null,
+      "audit_model": null,
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
       "judged_on": "2026-10-18",
-      "label": "missed",
-      "method": "retrieval+consensus",
-      "reason": "Management promised no additional equity in the short term, but raised INR 4,056 million via equity shares.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "missed"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "missed"
-       }
-      ]
+      "label": "unverifiable (audit unavailable)",
+      "method": "strong-context+audit",
+      "reason": "Instead of relying solely on debt and internal accruals, the company raised equity via preferential allotment in the short term to fund infrastructure.",
+      "source_filed": "04-Nov-2024",
+      "v2_label": "missed"
      }
     },
     {
@@ -431,21 +421,16 @@
      "quote": "I think in this quarter itself, out of the 30%-35% about 70%-75% should come in within this quarter itself.",
      "topic": "launch",
      "verdict": {
+      "audit": null,
+      "audit_model": null,
       "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
       "judged_on": "2026-10-18",
       "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts do not contain management statements regarding the delivery of the 70% to 75% capex orders promised on 16-Nov-2023.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The transcripts do not mention whether 70% to 75% of the existing capex orders were delivered within the quarter ending December 2023.",
+      "source_filed": null,
+      "v2_label": "unverifiable"
      }
     }
    ]
