@@ -53,6 +53,21 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "FY26 revenue 245.6 vs FY25 164.0 = 1.5x (target 1.5-1.7x)",
+      "spec": {
+       "base_fy": null,
+       "by": [
+        "fy",
+        2026
+       ],
+       "high": 1.7,
+       "low": 1.5,
+       "metric": "fy_revenue_x"
+      },
+      "verdict": "delivered"
+     },
      "deadline": "FY26",
      "firmness": "firm",
      "id": "1befbef873de-1",
@@ -80,6 +95,26 @@
    "model": "gemini-flash-lite-latest",
    "promises": [
     {
+     "code_check": {
+      "basis": "filed quarterly numbers (quarterly average used as proxy for monthly run-rate)",
+      "detail": "Mar-26 quarterly-average monthly revenue 31.9 < 35.0; exit run-rate is not in filings (needs call/judge evidence)",
+      "spec": {
+       "by": [
+        "q",
+        [
+         2026,
+         3
+        ]
+       ],
+       "high": 40.0,
+       "low": 35.0,
+       "metric": "monthly_revenue",
+       "proxy": true,
+       "tolerance": null
+      },
+      "value": 31.9,
+      "verdict": "inconclusive"
+     },
      "deadline": "March 2026",
      "firmness": "firm",
      "id": "e6c67c6b30dc-0",
@@ -107,6 +142,21 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "undated/long-term; latest quarters [76.6, 75.2] vs target 65.0-75.0",
+      "spec": {
+       "by": [
+        null,
+        null
+       ],
+       "high": 75.0,
+       "low": 65.0,
+       "metric": "ebitda_margin",
+       "tolerance": "+/-5 pts assumed for 'plus/minus'"
+      },
+      "verdict": "delivered"
+     },
      "deadline": null,
      "firmness": "firm",
      "id": "e6c67c6b30dc-3",
@@ -134,6 +184,20 @@
    "model": "gemini-flash-lite-latest",
    "promises": [
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "FY24->FY26 CAGR 61.2% (target 40.0-50.0%)",
+      "spec": {
+       "by": [
+        "fy",
+        2026
+       ],
+       "high": 50.0,
+       "low": 40.0,
+       "metric": "fy_cagr_pct"
+      },
+      "verdict": "delivered"
+     },
      "deadline": "next couple of years",
      "firmness": "soft",
      "id": "6520f735f528-0",
@@ -161,6 +225,20 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "undated/long-term; latest quarters [32.5, 28.0] vs target 15.0-20.0",
+      "spec": {
+       "by": [
+        null,
+        null
+       ],
+       "high": 20.0,
+       "low": 15.0,
+       "metric": "pat_margin"
+      },
+      "verdict": "delivered"
+     },
      "deadline": "long term",
      "firmness": "soft",
      "id": "6520f735f528-3",
@@ -269,6 +347,26 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers (quarterly average used as proxy for monthly run-rate)",
+      "detail": "Mar-26 monthly_revenue 31.9 vs target 31.5-38.5",
+      "spec": {
+       "by": [
+        "q",
+        [
+         2026,
+         3
+        ]
+       ],
+       "high": 38.5,
+       "low": 31.5,
+       "metric": "monthly_revenue",
+       "proxy": true,
+       "tolerance": "+/-10% assumed for 'plus/minus' or 'close to'"
+      },
+      "value": 31.9,
+      "verdict": "delivered"
+     },
      "deadline": "March 2026",
      "firmness": "firm",
      "id": "873453b6130f-2",
@@ -278,6 +376,25 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "Mar-26 60.7 < 65.0; reached 75.2 in Jun-26 (+1q)",
+      "spec": {
+       "by": [
+        "q",
+        [
+         2026,
+         3
+        ]
+       ],
+       "high": 75.0,
+       "low": 65.0,
+       "metric": "ebitda_margin",
+       "tolerance": "+/-5 pts assumed for 'plus/minus'"
+      },
+      "value": 60.7,
+      "verdict": "delayed"
+     },
      "deadline": "March 2026",
      "firmness": "firm",
      "id": "873453b6130f-3",
@@ -341,6 +458,26 @@
    "model": "gemini-flash-lite-latest",
    "promises": [
     {
+     "code_check": {
+      "basis": "filed quarterly numbers (quarterly average used as proxy for monthly run-rate)",
+      "detail": "Sep-24 monthly_revenue 15.8 vs target 14.0-16.0",
+      "spec": {
+       "by": [
+        "q",
+        [
+         2024,
+         9
+        ]
+       ],
+       "high": 16.0,
+       "low": 14.0,
+       "metric": "monthly_revenue",
+       "proxy": true,
+       "tolerance": null
+      },
+      "value": 15.8,
+      "verdict": "delivered"
+     },
      "deadline": "next couple of months",
      "firmness": "firm",
      "id": "183dfeab1385-0",
@@ -350,6 +487,15 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "hypothetical",
+      "spec": {
+       "by": null,
+       "skip": "hypothetical"
+      },
+      "verdict": "excluded"
+     },
      "deadline": "next 12 months",
      "firmness": "soft",
      "id": "183dfeab1385-1",
@@ -386,6 +532,15 @@
    "model": "gemini-flash-lite-latest",
    "promises": [
     {
+     "code_check": {
+      "basis": "filed quarterly numbers",
+      "detail": "hypothetical",
+      "spec": {
+       "by": null,
+       "skip": "hypothetical"
+      },
+      "verdict": "excluded"
+     },
      "deadline": "next 12 months",
      "firmness": "soft",
      "id": "30e98b9562cd-0",
@@ -395,6 +550,26 @@
      "verdict": null
     },
     {
+     "code_check": {
+      "basis": "filed quarterly numbers (quarterly average used as proxy for monthly run-rate)",
+      "detail": "Sep-24 monthly_revenue 15.8 vs target 14.0-16.0",
+      "spec": {
+       "by": [
+        "q",
+        [
+         2024,
+         9
+        ]
+       ],
+       "high": 16.0,
+       "low": 14.0,
+       "metric": "monthly_revenue",
+       "proxy": true,
+       "tolerance": null
+      },
+      "value": 15.8,
+      "verdict": "delivered"
+     },
      "deadline": "next couple of months",
      "firmness": "firm",
      "id": "30e98b9562cd-1",
