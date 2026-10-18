@@ -5,18 +5,16 @@ import nse_results as nse
 s = nse.sess()
 H = {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}
 try:
-    for idx in ("sme", "equities"):
-        for per in ("Quarterly", "Annual", "Half-Yearly"):
-            r = s.get("https://www.nseindia.com/api/corporates-financial-results", params={"index": idx, "symbol": "E2E", "period": per}, headers=H, timeout=40)
-            try: j = r.json()
-            except Exception: j = []
-            p(idx, per, "n=", len(j), [(x.get("toDate"), x.get("consolidated")[:4]) for x in j[:6]])
-    r = s.get("https://www.nseindia.com/api/corporate-announcements", params={"index": "equities", "symbol": "E2E", "from_date": "01-01-2025", "to_date": "18-10-2026"}, headers=H, timeout=40)
-    j = r.json(); p("announcements", len(j))
-    for x in j:
-        d = (x.get("desc") or "")
-        if "result" in d.lower() or "financial" in d.lower():
-            p(x.get("an_dt"), d[:50], (x.get("attchmntText") or "")[:90])
+    for u, prm in (("https://www.nseindia.com/api/integrated-filing-results", {"index": "equities", "symbol": "E2E", "period_ended": "all", "type": "Integrated Filing- Financial"}),
+                   ("https://www.nseindia.com/api/integrated-filing-results", {"index": "equities", "symbol": "E2E"})):
+        r = s.get(u, params=prm, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-integrated-filing"}, timeout=40)
+        p(r.status_code, r.text[:200].replace("\n", " "))
+        try:
+            j = r.json(); d = j.get("data", j) if isinstance(j, dict) else j
+            p("n=", len(d)); 
+            if d: p("KEYS", list(d[0].keys()))
+            for x in d[:8]: p(json.dumps({k: str(v)[:70] for k, v in x.items()})[:420])
+        except Exception as e: p("json err", repr(e)[:60])
 except Exception:
     import traceback; p("ERR", traceback.format_exc()[-600:])
 publish()
