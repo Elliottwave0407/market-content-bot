@@ -90,7 +90,7 @@ def main(sym):
     for dd in TD:
         if dd["desc"] not in ("Cessation", "Resignation", "Resignation of Director/KMP/SMP") or D(dd["date"]) < y2: continue
         t = dd["text"]
-        rs = re.search(r"(?:citing|due to|on account of)\s+[\u201c\"]?\s*([^.\u201d\"]{5,70})", t)
+        rs = re.search(r"(?:citing|due to|on account of)\s+[\u201c\"]?\s*([^.,\u201d\"]{5,70})", t)
         reasons[dd["date"]] = rs.group(1).strip() if rs else "reason only in attached letter"
         if IND.search(t): ind[dd["date"]] = re.search(r"(?:Mr\.|Ms\.|Mrs\.)\s+[A-Z][\w\.]*(?:\s+[A-Z][\w\.]*){0,3}", t[t.find("Dear"):] or t).group(0) if re.search(r"(?:Mr\.|Ms\.|Mrs\.)\s+[A-Z]", t) else "n/a"
         elif re.search(r"Senior Management Personnel|Chief Revenue Officer|Chief Financial Officer[^.]{0,60}resign", t) and re.search(r"resign", t, re.I): smp[dd["date"]] = "senior management"
@@ -117,7 +117,7 @@ def main(sym):
     if fall and pg: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" SAST shows {len(pg)} promoter-family acquisitions on 21-SEP-2024 alongside the preferential allotment.")
     big = next((d_ for d_ in TD if d_["date"] == "04-Dec-2024" and "Larsen" in d_["text"]), None)
     if big and fall:
-        m_ = re.search(r"Allotment of ([\d,]+) Equity Shares.*?aggregat\w* a\s*mount of INR ([\d,\.]+)", big["text"], re.S)
+        m_ = re.search(r"Allotment of ([\d,]+) Equity Shares.*?INR\s*([\d,]+\.\d\d)\s*\(Rupees", big["text"], re.S)
         if m_: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" CONFIRMED from allotment filing: 04-Dec-2024 preferential allotment of {m_.group(1)} shares to Larsen & Toubro (non-promoter) for Rs {float(m_.group(2).replace(',',''))/1e7:,.0f} Cr, i.e. dilution from new shares, not promoter selling.")
     sig.append(("pledge", "not_verified", "NSE pledge feed returned no records; cannot confirm either way."))
     sig.append(("insider_trading", "not_verified", "NSE insider (PIT) feed returned no records."))
