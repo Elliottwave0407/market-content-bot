@@ -2,7 +2,7 @@
 over the latest 3 earnings calls + latest 2 investor presentations, then ONE audit call by a different model.
 Every fact needs a verbatim quote verified in code; audit must confirm. Writes companydata/<SYM>/pillars.json.
 Quota use per company: 1 extraction + 1-2 audit calls. DRY=1 uses canned output for local tests."""
-import os, sys, re, json, time, hashlib, traceback
+import os, sys, re, io, json, time, hashlib, traceback
 from datetime import datetime
 import requests
 sys.path.insert(0, os.path.dirname(__file__))
