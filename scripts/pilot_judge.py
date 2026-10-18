@@ -4,7 +4,14 @@ import os, sys, re, io, json, time, traceback
 from datetime import datetime
 import requests
 sys.path.insert(0, os.path.dirname(__file__))
-from ci_out import p, publish
+import ci_out
+from ci_out import publish
+_n = [0]; _t0 = time.time()
+def p(*a):
+    ci_out.p(*a)
+    m = (" ".join(str(x) for x in a)).replace("%", "%25").replace("\r", "").replace("\n", "%0A")[:3000]
+    _n[0] += 1
+    print(f"::notice title=j{_n[0]:03d} t={int(time.time()-_t0)}s::" + m, flush=True)
 import nse_results as nse, fin_data as fd
 src = open(os.path.join(os.path.dirname(__file__), "concall_scan.py")).read()
 exec(src[src.index("KEY = "):src.index("DBG = []")])
@@ -24,11 +31,11 @@ For each promise return a verdict: "delivered" (met in time), "delayed" (met but
 Return ONLY JSON: {{"verdicts":[{{"n":1,"verdict":"","evidence_type":"quote|table","evidence":"if quote: VERBATIM sentence from the LATER transcripts (max 30 words); if table: the exact figures used, e.g. 'Mar-26 EBITDA margin 60.7%'","note":"one short line"}}]}}
 Rules: never use outside knowledge. Use only the filed numbers or the later transcripts. A later-call quote can prove a delay (e.g. it says something is still not live). If the due date has not yet passed, verdict is "unverifiable"."""
 def gj(prompt, text):
-    body = {"contents": [{"parts": [{"text": prompt + "\n\nTEXT:\n" + text[:600000]}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
+    body = {"contents": [{"parts": [{"text": prompt + "\n\nTEXT:\n" + text[:300000]}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     for i in range(4):
-        r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=300)
+        r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
         if r.status_code == 429 or r.status_code >= 500:
-            time.sleep(25 * (i + 1)); continue
+            time.sleep(15 * (i + 1)); p('  gemini retry', r.status_code); continue
         if r.status_code != 200: return None
         try:
             t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
