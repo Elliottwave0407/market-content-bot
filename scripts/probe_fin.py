@@ -1,18 +1,25 @@
-import os, sys, json, requests
+import os, sys, re, json, collections
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
-KEY = os.environ.get("GEMINI_API_KEY", "").strip()
-B = "https://generativelanguage.googleapis.com/v1beta"
-for m in ("gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.1-pro-preview", "gemini-3.5-flash", "gemini-3.1-flash-lite"):
-    try:
-        r = requests.post(f"{B}/models/{m}:generateContent", headers={"x-goog-api-key": KEY}, json={"contents": [{"parts": [{"text": "Say OK"}]}]}, timeout=60)
-        msg = ""
-        try:
-            e = r.json().get("error", {}); msg = e.get("message", "")[:260]
-            det = [d for d in e.get("details", []) if "violations" in d]
-            if det: msg += " | " + json.dumps([ (v.get("quotaMetric","")[-60:], v.get("quotaId","")[-50:]) for v in det[0]["violations"]])[:300]
-        except Exception: msg = r.text[:200]
-        p(m, r.status_code, msg.replace("\n", " "))
-    except Exception as ex:
-        p(m, "err", repr(ex)[:80])
+import nse_results as nse
+s = nse.sess()
+try:
+    d = s.get("https://www.nseindia.com/api/integrated-filing-results", params={"index": "equities", "symbol": "E2E"}, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-integrated-filing"}, timeout=40).json()["data"]
+    for x in d:
+        if "Financial" in (x.get("type") or "") and x.get("consolidated") == "Consolidated" and x.get("qe_Date") == "30-SEP-2026" and x.get("xbrl") not in (None, "None"):
+            t = s.get(x["xbrl"], headers={"Referer": "https://www.nseindia.com/"}, timeout=60).text
+            tags = collections.OrderedDict()
+            for m in re.finditer(r"<[A-Za-z0-9\-]+:([A-Za-z0-9]+) ([^>]*contextRef=\"([^\"]+)\"[^>]*)>([^<]+)<", t):
+                if re.match(r"^-?[0-9.]+$", m.group(4).strip()):
+                    tags.setdefault(m.group(1), []).append((m.group(3), m.group(4).strip()))
+            p("distinct numeric tags:", len(tags))
+            for k, v in tags.items():
+                if re.search(r"Borrow|Cash|Inventor|Receivable|Payable|Equity|Asset|Liabilit|Debt|Capital|Reserves|Property|Depreciation|Finance|Loan|Lease|Invest", k):
+                    p(k, v[:3])
+            break
+    # also what other doc types exist for balance sheet
+    d2 = s.get("https://www.nseindia.com/api/corporates-financial-results", params={"index": "equities", "symbol": "E2E", "period": "Half-Yearly"}, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}, timeout=40).json()
+    p("half-yearly legacy rows:", len(d2))
+except Exception:
+    import traceback; p("ERR", traceback.format_exc()[-700:])
 publish()
