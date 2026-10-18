@@ -14,6 +14,9 @@ on:
       judge:
         description: "Run the (quota-costly) judge step: 1 or 0"
         default: "0"
+      script:
+        description: "Script to run"
+        default: "pilot_build.py"
 permissions:
   contents: write
 jobs:
@@ -32,7 +35,7 @@ jobs:
           SCRIP: ${{ github.event.inputs.scrip }}
           CNAME: ${{ github.event.inputs.cname }}
           JUDGE: ${{ github.event.inputs.judge }}
-        run: python scripts/pilot_build.py
+        run: python scripts/${{ github.event.inputs.script }}
       - name: save data
         run: |
           git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
