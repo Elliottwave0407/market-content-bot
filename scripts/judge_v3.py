@@ -29,6 +29,7 @@ def ask(model, prompt, timeout=300):
             ERR.append(f"{model} exc {type(e).__name__}"); time.sleep(20); continue
         if r.status_code == 429:
             if "PerDay" in r.text:
+                ERR.append(f"{model} PERDAY {re.sub(chr(10), ' ', r.text)[:160]}")
                 DEAD.add(model); return None, "dead"
             ERR.append(f"{model} 429 {re.sub(chr(10), ' ', r.text)[:120]}")
             time.sleep(65); continue
