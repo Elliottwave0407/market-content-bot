@@ -12,9 +12,9 @@ exec(src[src.index("def norm"):src.index("def mcaps")])
 SYM = os.environ.get("SYMBOL", "E2E").strip().upper(); CODE = os.environ.get("SCRIP", "").strip(); NAME = os.environ.get("CNAME", "").strip()
 JUDGE = os.environ.get("JUDGE", "0") == "1"; FROM = os.environ.get("FROM_DATE", "01-06-2023")
 NOW = datetime.utcnow().strftime("%Y-%m-%d")
-EXTRACTOR = "v2"
+EXTRACTOR = "v3"
 QX = """You read an Indian company's earnings-call transcript. Extract ONLY firm forward-looking commitments MANAGEMENT made that can later be checked: numeric targets (margin, revenue, capex, capacity, utilisation, order book, run-rate), timelines (go-live, commissioning, launch), fund-raise or debt plans.
-EXCLUDE: hypotheticals and wishes ("in an ideal world", "if we had the money"), anything management says is not a guidance/announcement, vague hopes, and statements about the past.
+EXCLUDE only: pure hypotheticals ("in an ideal world", "if we had the money"), things management explicitly says are NOT a guidance/announcement, and statements about the past. Mark firmness "soft" for tentative language ("hopefully", "we would like to"), "firm" otherwise.
 Return ONLY JSON: {"promises":[{"topic":"margin|revenue|capex|capacity|launch|funding|customer|other","promise":"plain English, numbers exactly as spoken","deadline":"when due, as spoken, or null","firmness":"firm|soft","quote":"VERBATIM from transcript, max 25 words"}]}
 Max 8 promises, most checkable first."""
 QJ = """You are auditing whether management kept its promises. CALL DATE: {date}. PROMISES made on that call (numbered):
@@ -140,7 +140,7 @@ def main():
         e, m = gj(QX, txt, LADDER_X)
         if isinstance(e, list): e = {"promises": e}
         if not e: p(i["filed"], "extract failed"); continue
-        ok = [dict(x, id=f"{i['key']}-{k}", verdict=None) for k, x in enumerate(e.get("promises") or []) if isinstance(x, dict) and quote_ok(x.get("quote"), G) and x.get("firmness") != "soft"]
+        ok = [dict(x, id=f"{i['key']}-{k}", verdict=None) for k, x in enumerate(e.get("promises") or []) if isinstance(x, dict) and quote_ok(x.get("quote"), G)]
         pdb["calls"][i["url"]] = {"filed": i["filed"], "key": i["key"], "extractor": EXTRACTOR, "model": m, "extracted_on": NOW, "promises": ok}
         p(f"extracted {i['filed']}: {len(ok)} promises via {m}")
     store.save(SYM, "promises.json", pdb)

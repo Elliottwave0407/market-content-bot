@@ -1,7 +1,7 @@
 """Per-company data store (JSON in the repo, versioned by git; a website can read it as-is).
-data/<SYMBOL>/profile.json quarters.json filings.json holding.json sast.json transcripts.json promises.json score.json raw/<key>.txt.gz"""
+companydata/<SYMBOL>/profile.json quarters.json filings.json holding.json sast.json transcripts.json promises.json score.json raw/<key>.txt.gz"""
 import os, json, gzip
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "companydata")
 
 def _p(sym, name):
     d = os.path.join(ROOT, sym.upper()); os.makedirs(d, exist_ok=True)
