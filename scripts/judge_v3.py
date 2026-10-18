@@ -140,6 +140,8 @@ try:
             else: label = "unverifiable (audit rejected)"
             note = a
         old = (x.get("verdict") or {})
+        if "unavailable" in label:
+            p(f"{c['filed']} | kept previous verdict (audit unavailable) | {x['promise'][:60]}"); continue
         x["verdict"] = {"label": label, "method": "strong-context+audit", "evidence_quote": q if label == v else "", "source_filed": dict(order)[src_u]["filed"] if src_u else None,
                         "reason": rs, "judge_model": used, "audit_model": audit_model, "audit": note, "v2_label": old.get("label") if old.get("method") != "strong-context+audit" else old.get("v2_label"), "judged_on": NOW}
         tally[label] = tally.get(label, 0) + 1

@@ -358,16 +358,21 @@
      "quote": "So, we have spoken about we are going to overall go and deploy almost like Rs. 150 to 200 crores of hardware over next say 12 months. So, 12 could become 15 but broadly that number remains the same.",
      "topic": "capex",
      "verdict": {
-      "audit": null,
-      "audit_model": null,
-      "evidence_quote": "",
-      "judge_model": "gemini-3.5-flash",
+      "evidence_quote": "For the CAPEX done, is already deployed on our cloud platform, how quickly can we sell is like something that we do not make a statement on , that is something we like to look in the past once we have done it.",
       "judged_on": "2026-10-18",
-      "label": "unverifiable (audit unavailable)",
-      "method": "strong-context+audit",
-      "reason": "Management confirmed adding Rs. 185 crore in FY24 and Rs. 107 crore in H1 FY25, delivering on the Rs. 150-200 crore deployment promise.",
-      "source_filed": "04-Nov-2024",
-      "v2_label": "delivered"
+      "label": "delivered",
+      "method": "retrieval+consensus",
+      "reason": "Management confirmed the 150 crore capex is already deployed on their cloud platform.",
+      "votes": [
+       {
+        "model": "gemini-flash-lite-latest",
+        "verdict": "delivered"
+       },
+       {
+        "model": "gemini-3.1-flash-lite",
+        "verdict": "delivered"
+       }
+      ]
      }
     },
     {
@@ -378,16 +383,21 @@
      "quote": "For the current plans, basically debt and internal cash approvals make it possible for us to be able to do that without raising additional equity.",
      "topic": "funding",
      "verdict": {
-      "audit": null,
-      "audit_model": null,
-      "evidence_quote": "",
-      "judge_model": "gemini-3.5-flash",
+      "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
       "judged_on": "2026-10-18",
-      "label": "unverifiable (audit unavailable)",
-      "method": "strong-context+audit",
-      "reason": "The company raised Rs. 405.6 crore via equity preferential issue within a year, missing the commitment to avoid equity raising short-term.",
-      "source_filed": "04-Nov-2024",
-      "v2_label": "missed"
+      "label": "missed",
+      "method": "retrieval+consensus",
+      "reason": "Management promised no additional equity in the short term, but raised INR 4,056 million via equity shares.",
+      "votes": [
+       {
+        "model": "gemini-flash-lite-latest",
+        "verdict": "missed"
+       },
+       {
+        "model": "gemini-3.1-flash-lite",
+        "verdict": "missed"
+       }
+      ]
      }
     },
     {
@@ -660,7 +670,7 @@
      "firmness": "firm",
      "id": "873453b6130f-2",
      "promise": "Exit MRR in March '26 targeted at somewhere around 35 crores plus/minus something.",
-     "quote": "Year-end MRR, we are targeting in March ‘26, is like somewhere between (+/-35) something.",
+     "quote": "Year-end MRR, we are targeting in March \u201826, is like somewhere between (+/-35) something.",
      "topic": "revenue",
      "verdict": null
     },
@@ -814,7 +824,7 @@
      "firmness": "firm",
      "id": "183dfeab1385-2",
      "promise": "Fundraise through financing from banks, leasing partners, vendor financing, and some equity raise",
-     "quote": "It’s will have to be a combination of things including like financing from banks and leasing partners and vendor financing and some equity raise.",
+     "quote": "It\u2019s will have to be a combination of things including like financing from banks and leasing partners and vendor financing and some equity raise.",
      "topic": "funding",
      "verdict": {
       "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
