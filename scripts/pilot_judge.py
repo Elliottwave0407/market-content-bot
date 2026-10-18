@@ -22,7 +22,7 @@ FILED NUMBERS (Rs Cr, from exchange filings; quarter labels are quarter-end mont
 LATER CALL TRANSCRIPTS (text follows after the marker) may confirm or contradict timelines.
 For each promise return a verdict: "delivered" (met in time), "delayed" (met but later than promised), "missed" (not met), "partly", or "unverifiable" (not enough evidence).
 Return ONLY JSON: {{"verdicts":[{{"n":1,"verdict":"","evidence_type":"quote|table","evidence":"if quote: VERBATIM sentence from the LATER transcripts (max 30 words); if table: the exact figures used, e.g. 'Mar-26 EBITDA margin 60.7%'","note":"one short line"}}]}}
-Rules: never use outside knowledge. Use only the filed numbers or the later transcripts. A later-call quote can prove a delay (e.g. it says something is still not live). If the due date has not yet passed, verdict is "unverifiable"."""
+Rules: never use outside knowledge. Use only the filed numbers or the later transcripts. A later-call quote can prove a delay (e.g. it says something is still not live). If the due date has not yet passed, verdict is "unverifiable". Growth targets over a stated number of years are judged on the fiscal-year totals and growth percentages given. 'Medium/long term' promises with no data yet are unverifiable."""
 def gj(prompt, text):
     body = {"contents": [{"parts": [{"text": prompt + "\n\nTEXT:\n" + text[:300000]}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     for i in range(4):
@@ -49,9 +49,13 @@ def table_text(rows):
     for lab, m in rows:
         d = datetime.strptime("01-" + lab, "%d-%b-%y"); y = d.year + (1 if d.month > 3 else 0)
         fy.setdefault(y, []).append(m)
+    prev = None
     for y, ms in sorted(fy.items()):
         if len(ms) == 4:
-            L.append(f"FY{str(y)[2:]} total: revenue {round(sum(x['revenue'] for x in ms),1)}, EBITDA {round(sum(x['ebitda'] for x in ms),1)}, PAT {round(sum(x['pat'] for x in ms),1)}")
+            rv = round(sum(x['revenue'] for x in ms), 1)
+            g = f", revenue growth vs prior FY {round(100*(rv/prev-1),1)}%" if prev else ""
+            L.append(f"FY{str(y)[2:]} total (Apr-Mar): revenue {rv}{g}, EBITDA {round(sum(x['ebitda'] for x in ms),1)}, PAT {round(sum(x['pat'] for x in ms),1)}, PAT margin {round(100*sum(x['pat'] for x in ms)/rv,1)}%")
+            prev = rv
     return "\n".join(L)
 def nums(s): return [float(x) for x in re.findall(r"\d+(?:\.\d+)?", (s or "").replace(",", ""))]
 try:
@@ -84,6 +88,7 @@ try:
     for i, (d, txt) in enumerate(docs):
         G = grams(txt)
         e = gj(QX, txt) or {}
+        if isinstance(e, list): e = {"promises": e}
         pr = [x for x in (e.get("promises") or []) if isinstance(x, dict) and quote_ok(x.get("quote"), G)]
         if not pr: p(d, "no verified promises"); continue
         later = docs[i + 1:i + 3]
@@ -92,6 +97,7 @@ try:
         LG = grams(" ".join(t for _, t in later))
         plist = "\n".join(f"{k+1}. [{x.get('topic')}] {x.get('promise')} (due: {x.get('deadline')})" for k, x in enumerate(pr))
         v = gj(QJ.format(date=d, plist=plist, table=TT), "\n\n".join(f"--- LATER CALL filed {dd} ---\n{tt}" for dd, tt in later)) or {}
+        if isinstance(v, list): v = {"verdicts": v}
         p(f"== {d}: {len(pr)} promises")
         got = {x.get("n"): x for x in (v.get("verdicts") or []) if isinstance(x, dict)}
         for k, x in enumerate(pr):
