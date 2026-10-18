@@ -20,3 +20,6 @@ Promoter holding 51.6% (Sep-24) -> 39.45% (Jun-26) coincides with fresh issuance
 Lessons: quote-exists check does not prove the quote supports the verdict; strong judging model matters; exclude hypothetical remarks from promises.
 ## Gemini free-tier facts (measured 18 Oct)
 Limits are per model per day (error code GenerateRequestsPerDayPerProjectPerModel-FreeTier). gemini-flash-latest (3.8) exhausted by repeated test runs; gemini-3.5-flash allowed ~9 calls/day; flash-lite models still available. Use a model ladder, cache extractions, compute numeric promises in code, avoid repeated full-test reruns.
+
+## Data store (18 Oct)
+Everything per company is saved under `companydata/<SYMBOL>/` in the repo (website-ready JSON): profile, quarters, filings (all NSE announcements), holding, sast, transcripts (+ gz raw text cache), promises (with verdicts, evidence, model, date), score (to come). Built by `scripts/pilot_build.py` (workflow pilot-collect; JUDGE=1 runs the quota-costly judge). Extraction cached per transcript (extractor version v3). Note: the repo is public, so stored company data/analysis is public; revisit if the analysis should be private.
