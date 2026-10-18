@@ -1,21 +1,18 @@
-import os, sys, json
+import os, sys, json, requests
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
-import nse_results as nse
-s = nse.sess()
-H = {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-announcements"}
-try:
-    seen = set()
-    for a, z in (("01-01-2023", "31-12-2023"), ("01-01-2024", "31-12-2024"), ("01-01-2025", "31-12-2025"), ("01-01-2026", "18-10-2026")):
-        j = s.get("https://www.nseindia.com/api/corporate-announcements", params={"index": "equities", "symbol": "E2E", "from_date": a, "to_date": z}, headers=H, timeout=40).json()
-        p("window", a, len(j))
-        for x in j:
-            d = (x.get("desc") or ""); t = (x.get("attchmntText") or "")
-            k = (x.get("an_dt"), d)
-            if k in seen: continue
-            if "transcript" in t.lower() or "transcript" in d.lower() or "Investor Meet" in d or "Recording" in t:
-                seen.add(k)
-                p((x.get("an_dt") or "")[:11], "|", d[:45], "|", t[:80].replace("\n", " "), "|", (x.get("attchmntFile") or "")[-45:])
-except Exception:
-    import traceback; p("ERR", traceback.format_exc()[-600:])
+KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+B = "https://generativelanguage.googleapis.com/v1beta"
+for m in ("gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"):
+    try:
+        r = requests.post(f"{B}/models/{m}:generateContent", headers={"x-goog-api-key": KEY}, json={"contents": [{"parts": [{"text": "Say OK"}]}]}, timeout=60)
+        msg = ""
+        try:
+            e = r.json().get("error", {}); msg = e.get("message", "")[:260]
+            det = [d for d in e.get("details", []) if "violations" in d]
+            if det: msg += " | " + json.dumps([ (v.get("quotaMetric","")[-60:], v.get("quotaId","")[-50:]) for v in det[0]["violations"]])[:300]
+        except Exception: msg = r.text[:200]
+        p(m, r.status_code, msg.replace("\n", " "))
+    except Exception as ex:
+        p(m, "err", repr(ex)[:80])
 publish()
