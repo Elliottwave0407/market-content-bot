@@ -84,19 +84,21 @@ def main(sym):
     sast = S.get("sast", [])
     sells = [x for x in sast if x.get("acqSaleType") == "Sale" and x.get("acquirerDate") and re.match(r"\d\d-[A-Z]{3}-\d{4}", x["acquirerDate"]) and datetime.strptime(x["acquirerDate"][:11].title(), "%d-%b-%Y") >= y2]
     put("insider_largeholder", 2 if not sells else 0, 3, f"{len(sells)} large-holder SALE disclosures in last 24 months; insider-trading (PIT) feed returned no records so capped at 2/3.")
-    # ---------- Governance events (4)
-    ex = [f for f in F if f["desc"] in ("Cessation", "Resignation", "Resignation of Director/KMP/SMP") and D(f["date"]) >= y2]
-    seen = set(); evs = []
-    for f in ex:
-        k = (f["date"], re.sub(r"\W", "", (f["text"] or "")[:90]))
-        if f["desc"] == "Resignation of Director/KMP/SMP": continue          # duplicate generic row of a named filing
-        if k in seen: continue
-        seen.add(k); evs.append(f)
-    dirs = [f for f in evs if re.search(r"director", f["text"] or "", re.I)]
-    kmp = [f for f in evs if not re.search(r"director", f["text"] or "", re.I)]
+    # ---------- Governance events (4): classified from the text of the filings (trust_docs.json)
+    IND = re.compile(r"(?:resign\w*[^.]{0,160}(?<!Non-)(?<!Non )Independent Director|(?<!Non-)(?<!Non )Independent Director[^.]{0,120}tendered (?:his|her) resignation|Resignation of[^.]{0,120}\(DIN[^)]*\)[^.]{0,40}(?<!Non-)(?<!Non )Independent Director)", re.I)
+    ind, smp, nominee, reasons = {}, {}, [], {}
+    for dd in TD:
+        if dd["desc"] not in ("Cessation", "Resignation", "Resignation of Director/KMP/SMP") or D(dd["date"]) < y2: continue
+        t = dd["text"]
+        rs = re.search(r"(?:citing|due to|on account of)\s+[\u201c\"]?\s*([^.\u201d\"]{5,70})", t)
+        reasons[dd["date"]] = rs.group(1).strip() if rs else "reason only in attached letter"
+        if IND.search(t): ind[dd["date"]] = re.search(r"(?:Mr\.|Ms\.|Mrs\.)\s+[A-Z][\w\.]*(?:\s+[A-Z][\w\.]*){0,3}", t[t.find("Dear"):] or t).group(0) if re.search(r"(?:Mr\.|Ms\.|Mrs\.)\s+[A-Z]", t) else "n/a"
+        elif re.search(r"Senior Management Personnel|Chief Revenue Officer|Chief Financial Officer[^.]{0,60}resign", t) and re.search(r"resign", t, re.I): smp[dd["date"]] = "senior management"
+        elif re.search(r"nominat\w+ by Larsen|Nominee Director on the Board of the Company in place", t): nominee.append(dd["date"])
     orders = [f for f in F if f["desc"].startswith("Action(s) initiated") and D(f["date"]) >= y2]
-    g = 4 - (1 if len(dirs) >= 3 else 0) - (1 if len(kmp) >= 2 else 0) - (1 if orders else 0)
-    put("governance_events", max(g, 0), 4, f"Last 24m: {len(dirs)} director exits, {len(kmp)} KMP/senior-management exits, {len(orders)} Reg-30 order(s). Reasons (term end vs resignation) not read.")
+    g = 4 - (1 if len(ind) >= 3 else 0) - (1 if len(smp) >= 2 else 0) - (1 if orders else 0)
+    put("governance_events", max(g, 0), 4, f"Last 24m: {len(ind)} independent-director resignation(s) on {', '.join(sorted(ind, key=D))}; {len(smp)} senior-management exit(s); {len(nominee)} routine promoter-nominee swap(s) ignored; {len(orders)} Reg-30 order(s). Stated reasons: " + "; ".join(f"{k}: {reasons.get(k)}" for k in sorted(list(ind) + list(smp), key=D)) + ".")
+    dirs, kmp = list(ind), list(smp)
     # ---------- Use of funds (2)
     mon = [f for f in F if f["desc"] == "Monitoring Agency Report"]; dev = [d for d in TD if d["desc"].startswith("Statement of dev")]
     nodev = [d for d in dev if re.search(r"no deviation|there is no deviation|Deviation / Variation .{0,40}No", d["text"], re.I)]
@@ -113,10 +115,14 @@ def main(sym):
     sig.append(("promoter_holding", "watch" if fall else "ok", f"Promoter holding fell >=3 pts in one quarter {len(fall)} time(s): " + "; ".join(f"{a[0]} {a[1]}% -> {b[0]} {b[1]}%" for a, b in fall) + ". Fresh-share allotment filings in window: " + ", ".join(f"{i['date']} ({i['desc'][:20]})" for i in issues if i['desc'] != 'Stock split') if fall else "No quarter fall >=3 pts."))
     pg = [x for x in sast if x.get("acqSaleType") == "Acquisition" and x.get("acquirerDate", "").startswith("21-SEP-2024")]
     if fall and pg: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" SAST shows {len(pg)} promoter-family acquisitions on 21-SEP-2024 alongside the preferential allotment.")
+    big = next((d_ for d_ in TD if d_["date"] == "04-Dec-2024" and "Larsen" in d_["text"]), None)
+    if big and fall:
+        m_ = re.search(r"Allotment of ([\d,]+) Equity Shares.*?aggregat\w* a\s*mount of INR ([\d,\.]+)", big["text"], re.S)
+        if m_: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" CONFIRMED from allotment filing: 04-Dec-2024 preferential allotment of {m_.group(1)} shares to Larsen & Toubro (non-promoter) for Rs {float(m_.group(2).replace(',',''))/1e7:,.0f} Cr, i.e. dilution from new shares, not promoter selling.")
     sig.append(("pledge", "not_verified", "NSE pledge feed returned no records; cannot confirm either way."))
     sig.append(("insider_trading", "not_verified", "NSE insider (PIT) feed returned no records."))
     sig.append(("regulatory_order", "watch" if orders else "ok", "; ".join(f"{o['date']}: Reg-30 order disclosed" for o in orders) + " (see trust_docs.json for text)" if orders else "None in 24m."))
-    sig.append(("board_kmp_exits", "watch" if len(dirs) >= 3 else "ok", f"{len(dirs)} director exits and {len(kmp)} KMP exits in 24m."))
+    sig.append(("board_kmp_exits", "watch" if len(dirs) >= 3 else "ok", notes["governance_events"]))
     sig.append(("use_of_funds", "ok" if pts["use_of_funds"] == 2 else "watch", notes["use_of_funds"]))
     rat = [re.search(r"ICRA\s*\]?\s*([A-Z+\-]+)\s*\(([A-Za-z ]+)\)", d["text"]) for d in TD if d["desc"] == "Credit Rating"]; rat = [r for r in rat if r]
     sig.append(("credit_rating", "ok" if rat else "na", f"ICRA {rat[-1].group(1)} ({rat[-1].group(2)}) per filing" if rat else "No rating filing found."))
