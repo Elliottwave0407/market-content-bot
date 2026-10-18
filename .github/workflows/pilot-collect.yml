@@ -11,8 +11,11 @@ on:
       cname:
         description: "Company name"
         default: "E2E Networks Limited"
+      judge:
+        description: "Run the (quota-costly) judge step: 1 or 0"
+        default: "0"
 permissions:
-  contents: read
+  contents: write
 jobs:
   collect:
     runs-on: ubuntu-latest
@@ -25,8 +28,14 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_SCAN_MODEL: gemini-flash-lite-latest
           SYMBOL: ${{ github.event.inputs.symbol }}
           SCRIP: ${{ github.event.inputs.scrip }}
           CNAME: ${{ github.event.inputs.cname }}
-        run: python scripts/pilot_judge.py
+          JUDGE: ${{ github.event.inputs.judge }}
+        run: python scripts/pilot_build.py
+      - name: save data
+        run: |
+          git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -qm "data: refresh ${{ github.event.inputs.symbol }}"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep 5; done
