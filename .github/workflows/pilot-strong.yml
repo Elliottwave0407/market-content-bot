@@ -1,0 +1,41 @@
+name: pilot-strong
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "NSE symbol"
+        default: "E2E"
+      cname:
+        description: "Company name"
+        default: "E2E Networks Limited"
+permissions:
+  contents: write
+jobs:
+  strong:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      SYMBOL: ${{ github.event.inputs.symbol }}
+      CNAME: ${{ github.event.inputs.cname }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: judge (strong models, few big calls)
+        run: python scripts/judge_v3.py
+      - name: pillars extraction
+        if: always()
+        run: python scripts/pillars_extract.py
+      - name: score report
+        if: always()
+        run: python scripts/strong_report.py
+      - name: save data
+        if: always()
+        run: |
+          git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
+          git add companydata
+          git diff --cached --quiet || git commit -qm "data: strong run ${{ github.event.inputs.symbol }}"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep 5; done
