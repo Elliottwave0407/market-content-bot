@@ -25,8 +25,12 @@ def retrieve(promise, docs, k=7):
             if not ov: continue
             sc = ov / (len(pt) ** 0.5) + 1.5 * len(pn & set(re.findall(r"\d[\d,\.]*", s_)))
             cand.append((sc, filed, i))
-    cand.sort(reverse=True); out = []; seen = set()
-    for sc, filed, i in cand[:k]:
+    cand.sort(reverse=True); out = []; seen = set(); per = {}; pick = []
+    for sc, filed, i in cand:
+        if per.get(filed, 0) >= 3: continue
+        per[filed] = per.get(filed, 0) + 1; pick.append((sc, filed, i))
+        if len(pick) >= 9: break
+    for sc, filed, i in pick:
         ss = dict(docs)[filed]; txt = " ".join(ss[max(0, i - 1):i + 2])
         if (filed, i) in seen: continue
         seen.add((filed, i)); out.append((filed, txt))
@@ -34,7 +38,10 @@ def retrieve(promise, docs, k=7):
 def ask(model, prompt):
     body = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     for i in range(3):
-        r = requests.post(f"{BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=90)
+        try:
+            r = requests.post(f"{BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=60)
+        except Exception:
+            time.sleep(5); continue
         if r.status_code == 429:
             if "PerDay" in r.text: DEAD.add(model); return None
             time.sleep(15 * (i + 1)); continue
@@ -69,7 +76,8 @@ try:
             cc = (x.get("code_check") or {}).get("verdict")
             if cc and cc not in ("inconclusive",): continue
             if x.get("verdict") and x["verdict"].get("method") == "retrieval+consensus": continue
-            ex = retrieve(x["promise"] + " " + str(x.get("deadline") or ""), later)
+            hint = " live delayed deployed operational went online received" if x.get("topic") in ("launch", "capacity") else (" raised allotment preferential equity" if x.get("topic") == "funding" else "")
+            ex = retrieve(x["promise"] + " " + str(x.get("deadline") or "") + hint, later)
             if not ex: continue
             exs = "\n".join(f"[{f}] {t}" for f, t in ex); G = {" ".join(norm(exs)[i:i + 4]) for i in range(len(norm(exs)) - 3)}
             pr = PROMPT.format(date=c["filed"], promise=x["promise"], deadline=x.get("deadline"), table=tab, ex=exs)
@@ -91,6 +99,7 @@ try:
             best = next((r for r in res if r["verdict"] == label and r["quote"]), res[0] if res else {})
             x["verdict"] = {"label": label, "method": "retrieval+consensus", "evidence_quote": best.get("quote", ""), "reason": best.get("reason"), "votes": [{"model": r["model"], "verdict": r["verdict"]} for r in res], "judged_on": NOW}
             tally[label] = tally.get(label, 0) + 1; n_done += 1
+            if n_done % 5 == 0: store.save(SYM, 'promises.json', db)
             p(f"{c['filed']} | {label.upper()[:16]:16} | {x['promise'][:80]} | votes {[r['verdict'][:5] for r in res]} | {str(best.get('quote',''))[:100]}")
     store.save(SYM, "promises.json", db)
     p("TALLY", json.dumps(tally), "| calls:", json.dumps(USED), "| dead:", sorted(DEAD))
