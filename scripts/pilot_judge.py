@@ -4,14 +4,7 @@ import os, sys, re, io, json, time, traceback
 from datetime import datetime
 import requests
 sys.path.insert(0, os.path.dirname(__file__))
-import ci_out
-from ci_out import publish
-_n = [0]; _t0 = time.time()
-def p(*a):
-    ci_out.p(*a)
-    m = (" ".join(str(x) for x in a)).replace("%", "%25").replace("\r", "").replace("\n", "%0A")[:3000]
-    _n[0] += 1
-    print(f"::notice title=j{_n[0]:03d} t={int(time.time()-_t0)}s::" + m, flush=True)
+from ci_out import p, publish
 import nse_results as nse, fin_data as fd
 src = open(os.path.join(os.path.dirname(__file__), "concall_scan.py")).read()
 exec(src[src.index("KEY = "):src.index("DBG = []")])
@@ -35,7 +28,7 @@ def gj(prompt, text):
     for i in range(4):
         r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
         if r.status_code == 429 or r.status_code >= 500:
-            time.sleep(15 * (i + 1)); p('  gemini retry', r.status_code); continue
+            time.sleep(15 * (i + 1)); continue
         if r.status_code != 200: return None
         try:
             t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
