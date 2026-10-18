@@ -4,10 +4,9 @@
  "grade": null,
  "grade_note": "No grade until all components are scored and >=80% of facts verified.",
  "latest_quarter": "Sep-26",
- "max_for_scored": 40,
+ "max_for_scored": 53,
  "pending_components": [
   "walk_the_talk (judge)",
-  "balance_sheet_cash 13",
   "visibility 8",
   "capex_capacity 8",
   "mix_valueadd 8",
@@ -16,6 +15,11 @@
   "risk_penalty up to -15"
  ],
  "points": {
+  "balance_sheet_cash": {
+   "max": 13,
+   "note": "As of 30-SEP-2026 (consolidated): debt 450 Cr, cash+bank 734 Cr => net cash 284 Cr (net debt/TTM EBITDA -0.73; score 3/3); debt/equity 0.25 (2/2); receivable days ~14 (3/3); other income 14% of PBT (1/2); operating cash flow 396 vs EBITDA 289 = 1.37x (3/3). Capex 420 Cr in the period, free cash flow -23 Cr, interest cover 14.2x. Debt rose from 160 Cr a year earlier.",
+   "score": 12
+  },
   "governance_events": {
    "max": 4,
    "note": "Last 24m: 5 director exits, 1 KMP/senior-management exits, 1 Reg-30 order(s). Reasons (term end vs resignation) not read.",
@@ -52,7 +56,7 @@
    "score": null
   }
  },
- "scored_so_far": 34,
+ "scored_so_far": 46,
  "trust_gate": {
   "credibility_signals_available": 6,
   "enough_data": true,

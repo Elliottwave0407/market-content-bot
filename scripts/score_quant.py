@@ -41,6 +41,29 @@ def main(sym):
         rv = [Q[l]["revenue"] for l in labs[-4:]]; qoq = sum(1 for i in range(1, len(rv)) if rv[i] > rv[i - 1]); g3 = 3 if qoq == 3 else 2 if qoq == 2 else 1 if qoq == 1 else 0
         flag = " LOW-BASE EFFECT: prior-year revenue only Rs %.1f Cr" % prev_y["revenue"] if gr > 200 else ""
         put("growth", g1 + g2 + g3, 10, f"Revenue YoY {gr:.0f}% ({g1}/4); PAT {prev_y['pat']:.1f} -> {Q[last]['pat']:.1f} ({g2}/3); revenue up in {qoq} of last 3 quarter steps ({g3}/3).{flag}")
+    # ---------- Balance sheet & cash quality (13) from filed half-yearly statements
+    B = (store.load(sym, "balance.json") or {}).get("periods", {})
+    if B:
+        key = max(B, key=lambda k: datetime.strptime(k.title(), "%d-%b-%Y")); b = B[key]
+        debt = (b["borrowings_noncurrent"] or 0) + (b["borrowings_current"] or 0); cash = (b["cash"] or 0) + (b["other_bank_balances"] or 0)
+        nd = debt - cash; ttm = sum(Q[l]["ebitda"] for l in labs[-4:])
+        de = debt / b["equity"] if b["equity"] else None
+        l1 = 3 if nd <= 0 else 2 if nd / ttm < 1 else 1 if nd / ttm < 2 else 0
+        l2 = None if de is None else 2 if de <= 0.5 else 1 if de <= 1 else 0
+        days = None
+        if b["revenue_ytd"]:
+            nd_days = 183 if key[3:6] in ("SEP",) else 365
+            days = b["trade_receivables"] / b["revenue_ytd"] * nd_days
+        w = None if days is None else 3 if days <= 45 else 2 if days <= 75 else 1 if days <= 120 else 0
+        oi = (b["other_income_ytd"] / b["pbt_ytd"] * 100) if b["pbt_ytd"] else None
+        o = None if oi is None else 2 if oi < 10 else 1 if oi < 25 else 0
+        eb_ytd = (b["pbt_ytd"] + b["finance_cost_ytd"] + b["dep_ytd"] - b["other_income_ytd"]) if b["pbt_ytd"] is not None else None
+        cc_ = (b["cfo_ytd"] / eb_ytd) if eb_ytd else None
+        cf = None if cc_ is None else 3 if cc_ >= 0.8 else 2 if cc_ >= 0.5 else 1 if cc_ >= 0.3 else 0
+        fcf = (b["cfo_ytd"] or 0) - (b["capex_ytd"] or 0); icov = (eb_ytd / b["finance_cost_ytd"]) if b["finance_cost_ytd"] else None
+        parts = [x for x in (l1, l2, w, o, cf) if x is not None]
+        put("balance_sheet_cash", sum(parts), 3 + (2 if l2 is not None else 0) + (3 if w is not None else 0) + (2 if o is not None else 0) + (3 if cf is not None else 0),
+            f"As of {key} ({b['basis']}): debt {debt:.0f} Cr, cash+bank {cash:.0f} Cr => net {'cash' if nd <= 0 else 'debt'} {abs(nd):.0f} Cr (net debt/TTM EBITDA {nd/ttm:.2f}; score {l1}/3); debt/equity {de:.2f} ({l2}/2); receivable days ~{days:.0f} ({w}/3); other income {oi:.0f}% of PBT ({o}/2); operating cash flow {b['cfo_ytd']:.0f} vs EBITDA {eb_ytd:.0f} = {cc_:.2f}x ({cf}/3). Capex {b['capex_ytd']:.0f} Cr in the period, free cash flow {fcf:+.0f} Cr, interest cover {icov:.1f}x. Debt rose from {((B.get('30-SEP-2025') or {}).get('borrowings_noncurrent') or 0)+((B.get('30-SEP-2025') or {}).get('borrowings_current') or 0):.0f} Cr a year earlier.")
     # ---------- Promoter holding & pledge (6)
     hr = sorted([r for r in H if r.get("promoter_pct") not in (None, "-")], key=lambda r: D(r["date"].title()) if "-" in r["date"] else now)
     hist = [(r["date"], float(r["promoter_pct"])) for r in hr]
@@ -105,7 +128,7 @@ def main(sym):
            "points": {k: {"score": pts[k], "max": avail[k], "note": notes[k]} for k in pts},
            "walk_the_talk_provisional": wt_prov,
            "scored_so_far": round(sum(v for v in pts.values() if v is not None), 1), "max_for_scored": sum(avail[k] for k in pts if pts[k] is not None),
-           "pending_components": ["walk_the_talk (judge)", "balance_sheet_cash 13", "visibility 8", "capex_capacity 8", "mix_valueadd 8", "moat_future 8", "sector 5", "risk_penalty up to -15"],
+           "pending_components": ["walk_the_talk (judge)", "visibility 8", "capex_capacity 8", "mix_valueadd 8", "moat_future 8", "sector 5", "risk_penalty up to -15"],
            "trust_gate": {"status": gate, "signals": [{"id": a, "status": b, "fact": c} for a, b, c in sig], "credibility_signals_available": avail_n, "enough_data": avail_n >= 3},
            "grade": None, "grade_note": "No grade until all components are scored and >=80% of facts verified."}
     store.save(sym, "score.json", out)

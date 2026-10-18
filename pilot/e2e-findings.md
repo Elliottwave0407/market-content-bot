@@ -30,3 +30,7 @@ Governance watch items: 5 director exits + 1 senior-management exit in 24 months
 Gate: AMBER-WATCH (no red). Pledge and insider (PIT) feeds returned nothing: marked not verified, not clean.
 Scored so far (v0 rules): profitability 15/15, growth 10/10 (low-base flag: prior-year revenue only Rs 43.8 Cr), promoter holding/pledge 3/6, insider/large-holder 2/3, governance 2/4, use of funds 2/2 = 34/40; walk-the-talk provisional 9.4/10 from code-checked promises only. Pending: balance sheet 13, visibility 8, capex 8, mix 8, moat 8, sector 5, risk penalty. No grade yet.
 Caveat: extreme-high scores on margin/growth show the v0 thresholds are generous at the top; recalibrate after a second company (not before the E2E process is finished).
+
+## Balance sheet pillar (code only, 18 Oct) - `companydata/E2E/balance.json`
+NSE half-yearly integrated filings (Mar/Sep) carry full balance sheet + cash flow (XBRL). E2E Sep-26 (consolidated): debt Rs 450 Cr (Rs 160 Cr a year earlier), cash+bank Rs 734 Cr => net cash Rs 284 Cr; D/E 0.25; receivable days ~14; other income 14% of PBT; H1 operating cash flow Rs 396 Cr = 1.37x EBITDA; H1 capex Rs 420 Cr, free cash flow about -Rs 23 Cr; interest cover 14x. Score 12/13. Scored so far 46/53 (+ walk-the-talk provisional 9.4/10). Pending: visibility, capex/capacity, mix, moat, sector, risk penalty (all need presentation/call extraction = Gemini quota).
+Caveat: Sep-26 is consolidated, earlier periods standalone (company added subsidiaries) - comparisons across bases are flagged.
