@@ -117,7 +117,7 @@ def main(sym):
     if fall and pg: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" SAST shows {len(pg)} promoter-family acquisitions on 21-SEP-2024 alongside the preferential allotment.")
     big = next((d_ for d_ in TD if d_["date"] == "04-Dec-2024" and "Larsen" in d_["text"]), None)
     if big and fall:
-        m_ = re.search(r"Allotment of ([\d,]+) Equity Shares.*?INR\s*([\d,]+\.\d\d)\s*\(Rupees", big["text"], re.S)
+        m_ = re.search(r"A\s*llotment of ([\d,]+) Equity Shares.*?INR\s*([\d,]+\.\d\d)\s*\(Rupees", big["text"], re.S)
         if m_: sig[0] = (sig[0][0], sig[0][1], sig[0][2] + f" CONFIRMED from allotment filing: 04-Dec-2024 preferential allotment of {m_.group(1)} shares to Larsen & Toubro (non-promoter) for Rs {float(m_.group(2).replace(',',''))/1e7:,.0f} Cr, i.e. dilution from new shares, not promoter selling.")
     sig.append(("pledge", "not_verified", "NSE pledge feed returned no records; cannot confirm either way."))
     sig.append(("insider_trading", "not_verified", "NSE insider (PIT) feed returned no records."))

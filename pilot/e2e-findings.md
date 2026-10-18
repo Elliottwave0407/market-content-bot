@@ -34,3 +34,8 @@ Caveat: extreme-high scores on margin/growth show the v0 thresholds are generous
 ## Balance sheet pillar (code only, 18 Oct) - `companydata/E2E/balance.json`
 NSE half-yearly integrated filings (Mar/Sep) carry full balance sheet + cash flow (XBRL). E2E Sep-26 (consolidated): debt Rs 450 Cr (Rs 160 Cr a year earlier), cash+bank Rs 734 Cr => net cash Rs 284 Cr; D/E 0.25; receivable days ~14; other income 14% of PBT; H1 operating cash flow Rs 396 Cr = 1.37x EBITDA; H1 capex Rs 420 Cr, free cash flow about -Rs 23 Cr; interest cover 14x. Score 12/13. Scored so far 46/53 (+ walk-the-talk provisional 9.4/10). Pending: visibility, capex/capacity, mix, moat, sector, risk penalty (all need presentation/call extraction = Gemini quota).
 Caveat: Sep-26 is consolidated, earlier periods standalone (company added subsidiaries) - comparisons across bases are flagged.
+
+## Governance facts read from filings (18 Oct)
+- Dec-24: promoter-holding drop confirmed as dilution: 04-Dec-2024 preferential allotment of 29,79,579 shares to Larsen & Toubro (non-promoter) for Rs 1,079 Cr; Sep-24 preferential (Rs 405.66 Cr) with promoter-family acquisitions (SAST 21-Sep-24). Not promoter selling.
+- Independent-director resignations in 24m: Dec-24, Mar-25, Aug-25, Jan-26 (4). Reasons: Dec-24/Mar-25/Aug-25 only in attached letters; Jan-26 "personal and professional commitments" (director had been appointed 28-Aug-25). CRO (senior management) resigned Jun-26, personal commitments. Oct-26 exit = L&T nominee replaced by another L&T nominee (routine, ignored).
+- Gate stays AMBER-WATCH on board turnover + the stamp-duty order; no red.
