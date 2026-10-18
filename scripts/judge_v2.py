@@ -16,7 +16,7 @@ STOP = set("a an the and or of to in on for with by at from is are was were be b
 def D(s): return datetime.strptime(s, "%d-%b-%Y")
 def ctoks(t): return {w for w in norm(t) if w not in STOP and len(w) > 2}
 def sentences(t): return [x.strip() for x in re.split(r"(?<=[.?!])\s+", t) if len(x.strip()) > 25]
-def retrieve(promise, docs, k=7):
+def retrieve(promise, docs, k=7, per_doc=3, cap=9):
     pt = ctoks(promise); pn = set(re.findall(r"\d[\d,\.]*", promise))
     cand = []
     for filed, ss in docs:
@@ -27,9 +27,9 @@ def retrieve(promise, docs, k=7):
             cand.append((sc, filed, i))
     cand.sort(reverse=True); out = []; seen = set(); per = {}; pick = []
     for sc, filed, i in cand:
-        if per.get(filed, 0) >= 3: continue
+        if per.get(filed, 0) >= per_doc: continue
         per[filed] = per.get(filed, 0) + 1; pick.append((sc, filed, i))
-        if len(pick) >= 9: break
+        if len(pick) >= cap: break
     for sc, filed, i in pick:
         ss = dict(docs)[filed]; txt = " ".join(ss[max(0, i - 1):i + 2])
         if (filed, i) in seen: continue
@@ -54,7 +54,7 @@ def ask(model, prompt):
             return j[0] if isinstance(j, list) and j else j
         except Exception: return None
     return None
-PROMPT = """Today is 18 Oct 2026. On {date} management of an Indian company made this promise: "{promise}" (due: {deadline}).
+PROMPT = """Today is 18 Oct 2026. Ignore analysts' questions; use only statements by company management or the filed numbers. On {date} management of an Indian company made this promise: "{promise}" (due: {deadline}).
 FILED QUARTERLY NUMBERS (Rs Cr): {table}
 EXCERPTS from LATER earnings calls (labelled by filing date):
 {ex}
@@ -75,28 +75,35 @@ try:
         for x in c["promises"]:
             cc = (x.get("code_check") or {}).get("verdict")
             if cc and cc not in ("inconclusive",): continue
-            if x.get("verdict") and x["verdict"].get("method") == "retrieval+consensus": continue
+            if x.get("verdict") and x["verdict"].get("method") == "retrieval+consensus" and os.environ.get("REJUDGE") != "1": continue
             hint = " live delayed deployed operational went online received" if x.get("topic") in ("launch", "capacity") else (" raised allotment preferential equity" if x.get("topic") == "funding" else "")
             ex = retrieve(x["promise"] + " " + str(x.get("deadline") or "") + hint, later)
             if not ex: continue
-            exs = "\n".join(f"[{f}] {t}" for f, t in ex); G = {" ".join(norm(exs)[i:i + 4]) for i in range(len(norm(exs)) - 3)}
-            pr = PROMPT.format(date=c["filed"], promise=x["promise"], deadline=x.get("deadline"), table=tab, ex=exs)
-            res = []
-            for m in MODELS:
-                if m in DEAD: continue
-                j = ask(m, pr)
-                if isinstance(j, dict):
-                    v = str(j.get("verdict") or "unverifiable").lower().split("|")[0].strip()
-                    q = j.get("quote") or ""
-                    ok = bool(q) and quote_ok(q, G)
-                    if v != "unverifiable" and not ok: v = "unverifiable"
-                    res.append({"model": m, "verdict": v, "quote": q if ok else "", "reason": j.get("reason")})
-                if len(res) == 2: break
-                time.sleep(0.5)
-            if len(res) < 2: label = "unjudged (models unavailable)"
-            elif res[0]["verdict"] == res[1]["verdict"]: label = res[0]["verdict"]
-            else: label = "unverifiable (models disagree)"
-            best = next((r for r in res if r["verdict"] == label and r["quote"]), res[0] if res else {})
+            def judge(ex):
+                exs = "\n".join(f"[{f}] {t}" for f, t in ex); G = {" ".join(norm(exs)[i:i + 4]) for i in range(len(norm(exs)) - 3)}
+                pr = PROMPT.format(date=c["filed"], promise=x["promise"], deadline=x.get("deadline"), table=tab, ex=exs)
+                res = []
+                for m in MODELS:
+                    if m in DEAD: continue
+                    j = ask(m, pr)
+                    if isinstance(j, dict):
+                        v = str(j.get("verdict") or "unverifiable").lower().split("|")[0].strip()
+                        q = j.get("quote") or ""
+                        ok = bool(q) and quote_ok(q, G) and "?" not in q and not re.search(r"\bquestion\b|\bif you\b|\bcould you\b|\bcan you\b", q, re.I)
+                        if v != "unverifiable" and not ok: v = "unverifiable"
+                        res.append({"model": m, "verdict": v, "quote": q if ok else "", "reason": j.get("reason")})
+                    if len(res) == 2: break
+                    time.sleep(0.5)
+                if len(res) < 2: label = "unjudged (models unavailable)"
+                elif res[0]["verdict"] == res[1]["verdict"]: label = res[0]["verdict"]
+                else: label = "unverifiable (models disagree)"
+                return label, res
+            label, res = judge(ex)
+            if label.startswith("unverifiable"):
+                ex2 = retrieve(x["promise"] + " " + str(x.get("deadline") or "") + hint, later, per_doc=6, cap=16)
+                if ex2 != ex:
+                    l2, r2 = judge(ex2)
+                    if not l2.startswith("unverifiable") and not l2.startswith("unjudged"): label, res = l2, r2
             x["verdict"] = {"label": label, "method": "retrieval+consensus", "evidence_quote": best.get("quote", ""), "reason": best.get("reason"), "votes": [{"model": r["model"], "verdict": r["verdict"]} for r in res], "judged_on": NOW}
             tally[label] = tally.get(label, 0) + 1; n_done += 1
             if n_done % 5 == 0: store.save(SYM, 'promises.json', db)

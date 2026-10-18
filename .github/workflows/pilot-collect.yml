@@ -35,6 +35,7 @@ jobs:
           SCRIP: ${{ github.event.inputs.scrip }}
           CNAME: ${{ github.event.inputs.cname }}
           JUDGE: ${{ github.event.inputs.judge }}
+          REJUDGE: ${{ github.event.inputs.judge }}
         run: python scripts/${{ github.event.inputs.script }}
       - name: save data
         run: |
