@@ -13,7 +13,7 @@ exec(src[src.index("KEY = "):src.index("DBG = []")])
 exec(src[src.index("def norm"):src.index("def mcaps")])
 SYM = os.environ.get("SYMBOL", "E2E").strip().upper(); CNAME = os.environ.get("CNAME", SYM); NOW = datetime.utcnow().strftime("%Y-%m-%d")
 DRY = os.environ.get("DRY") == "1"
-STRONG = ["gemini-flash-latest", "gemini-3.5-flash"]; DEAD = set(); USED = {}; ERR = []
+STRONG = os.environ.get("MODELS", "gemini-flash-latest,gemini-3.5-flash").split(","); DEAD = set(); USED = {}; ERR = []
 def D(s): return datetime.strptime(s, "%d-%b-%Y")
 def clean(t): return re.sub(r"\s+", " ", t or "")
 def grams(t):
