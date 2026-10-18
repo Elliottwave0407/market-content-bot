@@ -3,7 +3,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 B = "https://generativelanguage.googleapis.com/v1beta"
-for m in ("gemini-flash-latest", "gemini-flash-lite-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"):
+for m in ("gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.1-pro-preview", "gemini-3.5-flash", "gemini-3.1-flash-lite"):
     try:
         r = requests.post(f"{B}/models/{m}:generateContent", headers={"x-goog-api-key": KEY}, json={"contents": [{"parts": [{"text": "Say OK"}]}]}, timeout=60)
         msg = ""
