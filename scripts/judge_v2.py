@@ -104,6 +104,7 @@ try:
                 if ex2 != ex:
                     l2, r2 = judge(ex2)
                     if not l2.startswith("unverifiable") and not l2.startswith("unjudged"): label, res = l2, r2
+            best = next((r for r in res if r["verdict"] == label and r["quote"]), res[0] if res else {})
             x["verdict"] = {"label": label, "method": "retrieval+consensus", "evidence_quote": best.get("quote", ""), "reason": best.get("reason"), "votes": [{"model": r["model"], "verdict": r["verdict"]} for r in res], "judged_on": NOW}
             tally[label] = tally.get(label, 0) + 1; n_done += 1
             if n_done % 5 == 0: store.save(SYM, 'promises.json', db)
