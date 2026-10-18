@@ -1,22 +1,21 @@
-import os, sys, json, re
+import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 import nse_results as nse
 s = nse.sess()
-H = {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}
+H = {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-announcements"}
 try:
-    r = s.get("https://www.nseindia.com/api/integrated-filing-results", params={"index": "equities", "symbol": "E2E"}, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-integrated-filing"}, timeout=40)
-    d = r.json()["data"]; pick = None
-    for x in d:
-        p(x.get("qe_Date"), x.get("type"), x.get("type_Sub"), x.get("consolidated"), x.get("audited"), (x.get("broadcast_Date") or "")[:11], "xbrl" if x.get("xbrl") not in (None, "None") else "-", (x.get("xbrl") or "")[-50:])
-        if not pick and x.get("consolidated") == "Consolidated" and x.get("xbrl") not in (None, "None"): pick = x
-    p("PICK", pick and pick["qe_Date"], pick and pick["xbrl"])
-    t = s.get(pick["xbrl"], headers={"Referer": "https://www.nseindia.com/"}, timeout=60).text
-    p("len", len(t))
-    seen = 0
-    for m in re.finditer(r"<([A-Za-z0-9\-]+):([A-Za-z0-9]+) ([^>]*contextRef=\"([^\"]+)\"[^>]*)>([^<]+)<", t):
-        if re.match(r"^-?[0-9.]+$", m.group(5).strip()) and seen < 70:
-            p(m.group(2), m.group(4), m.group(5).strip()); seen += 1
+    seen = set()
+    for a, z in (("01-01-2023", "31-12-2023"), ("01-01-2024", "31-12-2024"), ("01-01-2025", "31-12-2025"), ("01-01-2026", "18-10-2026")):
+        j = s.get("https://www.nseindia.com/api/corporate-announcements", params={"index": "equities", "symbol": "E2E", "from_date": a, "to_date": z}, headers=H, timeout=40).json()
+        p("window", a, len(j))
+        for x in j:
+            d = (x.get("desc") or ""); t = (x.get("attchmntText") or "")
+            k = (x.get("an_dt"), d)
+            if k in seen: continue
+            if "transcript" in t.lower() or "transcript" in d.lower() or "Investor Meet" in d or "Recording" in t:
+                seen.add(k)
+                p((x.get("an_dt") or "")[:11], "|", d[:45], "|", t[:80].replace("\n", " "), "|", (x.get("attchmntFile") or "")[-45:])
 except Exception:
     import traceback; p("ERR", traceback.format_exc()[-600:])
 publish()
