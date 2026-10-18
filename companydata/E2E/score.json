@@ -1,0 +1,100 @@
+{
+ "as_of": "2026-10-18",
+ "company": "E2E",
+ "grade": null,
+ "grade_note": "No grade until all components are scored and >=80% of facts verified.",
+ "latest_quarter": "Sep-26",
+ "max_for_scored": 40,
+ "pending_components": [
+  "walk_the_talk (judge)",
+  "balance_sheet_cash 13",
+  "visibility 8",
+  "capex_capacity 8",
+  "mix_valueadd 8",
+  "moat_future 8",
+  "sector 5",
+  "risk_penalty up to -15"
+ ],
+ "points": {
+  "governance_events": {
+   "max": 4,
+   "note": "Last 24m: 5 director exits, 1 KMP/senior-management exits, 1 Reg-30 order(s). Reasons (term end vs resignation) not read.",
+   "score": 2
+  },
+  "growth": {
+   "max": 10,
+   "note": "Revenue YoY 411% (4/4); PAT -13.5 -> 72.7 (3/3); revenue up in 3 of last 3 quarter steps (3/3). LOW-BASE EFFECT: prior-year revenue only Rs 43.8 Cr",
+   "score": 10
+  },
+  "insider_largeholder": {
+   "max": 3,
+   "note": "0 large-holder SALE disclosures in last 24 months; insider-trading (PIT) feed returned no records so capped at 2/3.",
+   "score": 2
+  },
+  "profitability_margin": {
+   "max": 15,
+   "note": "EBITDA margin Sep-26 76.6% (level 5/5); vs year ago +35.5 pts (trend 5/5); PAT margin 32.5% (5/5); margin rose in 3 of last 3 quarter steps",
+   "score": 15
+  },
+  "promoter_holding_pledge": {
+   "max": 6,
+   "note": "Promoter holding 39.45% (30-JUN-2026), -1.16 pts vs 30-JUN-2025 (trend 2/3, level 1/2). Pledge: NSE pledge feed returned no records, so NOT VERIFIED (0/1).",
+   "score": 3
+  },
+  "use_of_funds": {
+   "max": 2,
+   "note": "9 monitoring-agency reports filed; 3 of 3 Reg-32 deviation statements read say no deviation.",
+   "score": 2
+  },
+  "walk_the_talk": {
+   "max": 10,
+   "note": "PROVISIONAL (code-checked numeric promises only): 7 delivered, 1 delayed, 0 missed, 1 inconclusive; judge pending for event promises (0 judged).",
+   "score": null
+  }
+ },
+ "scored_so_far": 34,
+ "trust_gate": {
+  "credibility_signals_available": 6,
+  "enough_data": true,
+  "signals": [
+   {
+    "fact": "Promoter holding fell >=3 pts in one quarter 2 time(s): 30-JUN-2024 59.66% -> 21-SEP-2024 51.56%; 30-SEP-2024 51.56% -> 04-DEC-2024 43.83%. Fresh-share allotment filings in window: 19-Aug-2024 (Preferential issue), 21-Sep-2024 (Allotment of Securit), 05-Nov-2024 (Issue of Securities), 05-Nov-2024 (Issue of Securities), 04-Dec-2024 (Allotment of Securit) SAST shows 5 promoter-family acquisitions on 21-SEP-2024 alongside the preferential allotment.",
+    "id": "promoter_holding",
+    "status": "watch"
+   },
+   {
+    "fact": "NSE pledge feed returned no records; cannot confirm either way.",
+    "id": "pledge",
+    "status": "not_verified"
+   },
+   {
+    "fact": "NSE insider (PIT) feed returned no records.",
+    "id": "insider_trading",
+    "status": "not_verified"
+   },
+   {
+    "fact": "19-May-2026: Reg-30 order disclosed (see trust_docs.json for text)",
+    "id": "regulatory_order",
+    "status": "watch"
+   },
+   {
+    "fact": "5 director exits and 1 KMP exits in 24m.",
+    "id": "board_kmp_exits",
+    "status": "watch"
+   },
+   {
+    "fact": "9 monitoring-agency reports filed; 3 of 3 Reg-32 deviation statements read say no deviation.",
+    "id": "use_of_funds",
+    "status": "ok"
+   },
+   {
+    "fact": "ICRA A- (Stable) per filing",
+    "id": "credit_rating",
+    "status": "ok"
+   }
+  ],
+  "status": "AMBER-WATCH"
+ },
+ "version": "v0",
+ "walk_the_talk_provisional": 9.4
+}

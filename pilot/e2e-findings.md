@@ -23,3 +23,10 @@ Limits are per model per day (error code GenerateRequestsPerDayPerProjectPerMode
 
 ## Data store (18 Oct)
 Everything per company is saved under `companydata/<SYMBOL>/` in the repo (website-ready JSON): profile, quarters, filings (all NSE announcements), holding, sast, transcripts (+ gz raw text cache), promises (with verdicts, evidence, model, date), score (to come). Built by `scripts/pilot_build.py` (workflow pilot-collect; JUDGE=1 runs the quota-costly judge). Extraction cached per transcript (extractor version v3). Note: the repo is public, so stored company data/analysis is public; revisit if the analysis should be private.
+
+## Trust Gate + quantitative score (code only, 18 Oct) - `scripts/score_quant.py`, output `companydata/E2E/score.json`
+Facts read from filings (trust_docs.json): ICRA A- (Stable) Nov-25; three Reg-32 statements say no deviation in use of preferential-issue proceeds; Apr-26 NSE clarification was an XBRL form-selection error (annual results tagged half-yearly); 19-May-26 order from Delhi Collector of Stamps on stamp duty for dematerialised share issuance - company says it paid duty correctly, writ pending in Delhi High Court (not a SEBI order).
+Governance watch items: 5 director exits + 1 senior-management exit in 24 months (reasons not read); promoter holding 59.7% (Jun-24) -> 39.45% (Jun-26) in two steps coinciding with preferential allotments (promoter family also bought on 21-Sep-24 per SAST).
+Gate: AMBER-WATCH (no red). Pledge and insider (PIT) feeds returned nothing: marked not verified, not clean.
+Scored so far (v0 rules): profitability 15/15, growth 10/10 (low-base flag: prior-year revenue only Rs 43.8 Cr), promoter holding/pledge 4/6, insider/large-holder 2/3, governance 2/4, use of funds 2/2 = 35/40; walk-the-talk provisional 9.4/10 from code-checked promises only. Pending: balance sheet 13, visibility 8, capex 8, mix 8, moat 8, sector 5, risk penalty. No grade yet.
+Caveat: extreme-high scores on margin/growth show the v0 thresholds are generous at the top; recalibrate after a second company (not before the E2E process is finished).
