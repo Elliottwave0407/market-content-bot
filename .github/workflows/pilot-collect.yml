@@ -1,0 +1,30 @@
+name: pilot-collect
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "NSE symbol"
+        default: "E2E"
+      scrip:
+        description: "BSE scrip code"
+        default: "544783"
+      cname:
+        description: "Company name"
+        default: "E2E Networks Limited"
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          SYMBOL: ${{ github.event.inputs.symbol }}
+          SCRIP: ${{ github.event.inputs.scrip }}
+          CNAME: ${{ github.event.inputs.cname }}
+        run: python scripts/pilot_collect.py
