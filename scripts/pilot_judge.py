@@ -23,18 +23,31 @@ LATER CALL TRANSCRIPTS (text follows after the marker) may confirm or contradict
 For each promise return a verdict: "delivered" (met in time), "delayed" (met but later than promised), "missed" (not met), "partly", or "unverifiable" (not enough evidence).
 Return ONLY JSON: {{"verdicts":[{{"n":1,"verdict":"","evidence_type":"quote|table","evidence":"if quote: VERBATIM sentence from the LATER transcripts (max 30 words); if table: the exact figures used, e.g. 'Mar-26 EBITDA margin 60.7%'","note":"one short line"}}]}}
 Rules: never use outside knowledge. Use only the filed numbers or the later transcripts. A later-call quote can prove a delay (e.g. it says something is still not live). If the due date has not yet passed, verdict is "unverifiable". Growth targets over a stated number of years are judged on the fiscal-year totals and growth percentages given. 'Medium/long term' promises with no data yet are unverifiable."""
-def gj(prompt, text):
+DEAD = set()
+LADDER_X = ["gemini-flash-lite-latest", "gemini-3.1-flash-lite", "gemini-3.5-flash-lite"]
+LADDER_J = ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
+USED = {}
+def gj(prompt, text, ladder=None):
+    ladder = ladder or LADDER_X
     body = {"contents": [{"parts": [{"text": prompt + "\n\nTEXT:\n" + text[:300000]}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
-    for i in range(4):
-        r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
-        if r.status_code == 429 or r.status_code >= 500:
-            p('  gemini retry', r.status_code); time.sleep(15 * (i + 1)); continue
-        if r.status_code != 200:
-            p('  gemini http', r.status_code, r.text[:80].replace(chr(10),' ')); return None
-        try:
-            t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(re.sub(r"^```json|```$", "", t.strip()))
-        except Exception: return None
+    for m in ladder:
+        if m in DEAD: continue
+        for i in range(3):
+            r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
+            if r.status_code == 429:
+                if "PerDay" in r.text:
+                    DEAD.add(m); p("  model out of daily quota:", m); break
+                time.sleep(20 * (i + 1)); continue
+            if r.status_code >= 500:
+                time.sleep(15 * (i + 1)); continue
+            if r.status_code != 200:
+                p("  gemini http", m, r.status_code); DEAD.add(m); break
+            try:
+                t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+                USED[m] = USED.get(m, 0) + 1
+                return json.loads(re.sub(r"^```json|```$", "", t.strip()))
+            except Exception:
+                return None
     return None
 def grams(t):
     n = norm(t); return {" ".join(n[i:i + 4]) for i in range(len(n) - 3)}
@@ -96,7 +109,7 @@ try:
             p(f"== {d}: {len(pr)} promises, no later call yet -> unverifiable (too recent)"); continue
         LG = grams(" ".join(t for _, t in later))
         plist = "\n".join(f"{k+1}. [{x.get('topic')}] {x.get('promise')} (due: {x.get('deadline')})" for k, x in enumerate(pr))
-        v = gj(QJ.format(date=d, plist=plist, table=TT), "\n\n".join(f"--- LATER CALL filed {dd} ---\n{tt}" for dd, tt in later)) or {}
+        v = gj(QJ.format(date=d, plist=plist, table=TT), "\n\n".join(f"--- LATER CALL filed {dd} ---\n{tt}" for dd, tt in later), LADDER_J) or {}
         if isinstance(v, list): v = {"verdicts": v}
         p(f"== {d}: {len(pr)} promises")
         got = {x.get("n"): x for x in (v.get("verdicts") or []) if isinstance(x, dict)}
@@ -109,7 +122,7 @@ try:
             tally[verdict] = tally.get(verdict, 0) + 1
             ledger.append({"date": d, "promise": x.get("promise"), "verdict": verdict})
             p(f"  {verdict.upper()[:14]:14} | {x.get('promise')[:95]} | due {x.get('deadline')} | {et}: {ev[:110]} | {jv.get('note','')[:80]}")
-    p("TALLY", json.dumps(tally))
+    p("TALLY", json.dumps(tally), "| calls by model:", json.dumps(USED))
 except Exception:
     p("ERR", traceback.format_exc()[-800:])
 publish()
