@@ -29,7 +29,7 @@ def ask(model, prompt, timeout=300):
             ERR.append(f"{model} exc {type(e).__name__}"); time.sleep(20); continue
         if r.status_code == 429:
             if "PerDay" in r.text:
-                ERR.append(f"{model} PERDAY {re.sub(chr(10), ' ', r.text)[:160]}")
+                ERR.append(f"{model} PERDAY {re.sub(r'\s+', ' ', r.text)[:700]}")
                 DEAD.add(model); return None, "dead"
             ERR.append(f"{model} 429 {re.sub(chr(10), ' ', r.text)[:120]}")
             time.sleep(65); continue
@@ -79,7 +79,8 @@ try:
         for x in c["promises"]:
             cc = (x.get("code_check") or {}).get("verdict")
             if cc and cc != "inconclusive": continue
-            if (x.get("verdict") or {}).get("method", "").startswith("strong-context"): continue
+            vv = x.get("verdict") or {}
+            if vv.get("method", "").startswith("strong-context") and "unavailable" not in str(vv.get("label")): continue
             todo.append(x)
         if not todo: continue
         if not alive(): p("no strong model left; stopping at", c["filed"]); break
@@ -144,7 +145,7 @@ try:
         tally[label] = tally.get(label, 0) + 1
         p(f"{c['filed']} | {label.upper()[:26]:26} | v2={str(x['verdict']['v2_label'])[:14]:14} | {x['promise'][:70]} | {q[:90]}")
     store.save(SYM, "promises.json", db)
-    p("TALLY", json.dumps(tally), "| calls:", json.dumps(USED), "| dead:", sorted(DEAD), "| errors:", ERR[:6])
+    p("TALLY", json.dumps(tally), "| calls:", json.dumps(USED), "| dead:", sorted(DEAD), "| errors:", ERR[:4])
 except Exception:
     p("ERR", traceback.format_exc()[-900:])
 publish()
