@@ -28,8 +28,9 @@ def gj(prompt, text):
     for i in range(4):
         r = requests.post(f"{BASE}/models/{MODEL}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
         if r.status_code == 429 or r.status_code >= 500:
-            time.sleep(15 * (i + 1)); continue
-        if r.status_code != 200: return None
+            p('  gemini retry', r.status_code); time.sleep(15 * (i + 1)); continue
+        if r.status_code != 200:
+            p('  gemini http', r.status_code, r.text[:80].replace(chr(10),' ')); return None
         try:
             t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(re.sub(r"^```json|```$", "", t.strip()))
