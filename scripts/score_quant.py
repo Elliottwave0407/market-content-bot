@@ -121,7 +121,7 @@ def main(sym):
     cnt = {k: sum(1 for r in sc_ if r[3] == k) for k in W}
     if len(sc_) >= 8:
         wtt = round(10 * sum(r[0] for r in sc_) / len(sc_), 1)
-        put("walk_the_talk", wtt, 10, f"{len(sc_)} verifiable promises across {len(P['calls'])} calls: {cnt['delivered']} delivered, {cnt['delayed']} delayed, {cnt['partly']} partly, {cnt['missed']} missed (delivered=1, delayed/partly=0.5, missed=0). {len(unk)} promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises by two cheap models agreeing with a verbatim quote.")
+        put("walk_the_talk", wtt, 10, f"{len(sc_)} verifiable promises across {len(P['calls'])} calls: {cnt['delivered']} delivered, {cnt['delayed']} delayed, {cnt['partly']} partly, {cnt['missed']} missed (delivered=1, delayed/partly=0.5, missed=0). {len(unk)} promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).")
     else:
         pts["walk_the_talk"] = None; avail["walk_the_talk"] = 10; notes["walk_the_talk"] = f"only {len(sc_)} verifiable promises; need >=8"
     wt_prov = pts.get("walk_the_talk")
