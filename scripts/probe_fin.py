@@ -5,16 +5,18 @@ import nse_results as nse
 s = nse.sess()
 H = {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}
 try:
-    for u, prm in (("https://www.nseindia.com/api/integrated-filing-results", {"index": "equities", "symbol": "E2E", "period_ended": "all", "type": "Integrated Filing- Financial"}),
-                   ("https://www.nseindia.com/api/integrated-filing-results", {"index": "equities", "symbol": "E2E"})):
-        r = s.get(u, params=prm, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-integrated-filing"}, timeout=40)
-        p(r.status_code, r.text[:200].replace("\n", " "))
-        try:
-            j = r.json(); d = j.get("data", j) if isinstance(j, dict) else j
-            p("n=", len(d)); 
-            if d: p("KEYS", list(d[0].keys()))
-            for x in d[:8]: p(json.dumps({k: str(v)[:70] for k, v in x.items()})[:420])
-        except Exception as e: p("json err", repr(e)[:60])
+    r = s.get("https://www.nseindia.com/api/integrated-filing-results", params={"index": "equities", "symbol": "E2E"}, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-integrated-filing"}, timeout=40)
+    d = r.json()["data"]; pick = None
+    for x in d:
+        p(x.get("qe_Date"), x.get("type"), x.get("type_Sub"), x.get("consolidated"), x.get("audited"), (x.get("broadcast_Date") or "")[:11], "xbrl" if x.get("xbrl") not in (None, "None") else "-", (x.get("xbrl") or "")[-50:])
+        if not pick and x.get("consolidated") == "Consolidated" and x.get("xbrl") not in (None, "None"): pick = x
+    p("PICK", pick and pick["qe_Date"], pick and pick["xbrl"])
+    t = s.get(pick["xbrl"], headers={"Referer": "https://www.nseindia.com/"}, timeout=60).text
+    p("len", len(t))
+    seen = 0
+    for m in re.finditer(r"<([A-Za-z0-9\-]+):([A-Za-z0-9]+) ([^>]*contextRef=\"([^\"]+)\"[^>]*)>([^<]+)<", t):
+        if re.match(r"^-?[0-9.]+$", m.group(5).strip()) and seen < 70:
+            p(m.group(2), m.group(4), m.group(5).strip()); seen += 1
 except Exception:
     import traceback; p("ERR", traceback.format_exc()[-600:])
 publish()
