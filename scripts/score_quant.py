@@ -103,13 +103,28 @@ def main(sym):
     mon = [f for f in F if f["desc"] == "Monitoring Agency Report"]; dev = [d for d in TD if d["desc"].startswith("Statement of dev")]
     nodev = [d for d in dev if re.search(r"no deviation|there is no deviation|Deviation / Variation .{0,40}No", d["text"], re.I)]
     put("use_of_funds", 2 if mon and len(nodev) == len(dev) else 1 if mon else 0, 2, f"{len(mon)} monitoring-agency reports filed; {len(nodev)} of {len(dev)} Reg-32 deviation statements read say no deviation.")
-    # ---------- Walk the talk (10) - code-checked part only, provisional
-    cc = [x["code_check"]["verdict"] for c in P["calls"].values() for x in c["promises"] if x.get("code_check")]
-    jv = [x["verdict"]["label"] for c in P["calls"].values() for x in c["promises"] if x.get("verdict")]
-    dl, dy, ms = cc.count("delivered"), cc.count("delayed"), cc.count("missed")
-    notes["walk_the_talk"] = f"PROVISIONAL (code-checked numeric promises only): {dl} delivered, {dy} delayed, {ms} missed, {cc.count('inconclusive')} inconclusive; judge pending for event promises ({len(jv)} judged)."
-    pts["walk_the_talk"] = None; avail["walk_the_talk"] = 10
-    wt_prov = round(10 * (dl + 0.5 * dy) / max(dl + dy + ms, 1), 1) if (dl + dy + ms) >= 5 else None
+    # ---------- Walk the talk (10): code-checked numeric promises + retrieval/consensus-judged event promises
+    seen_k = set(); rows_w = []
+    for c in sorted(P["calls"].values(), key=lambda c: D(c["filed"])):
+        for x in c["promises"]:
+            lab = (x.get("code_check") or {}).get("verdict")
+            src_ = "code"
+            if lab in (None, "inconclusive"):
+                lab = (x.get("verdict") or {}).get("label"); src_ = "judge"
+            if not lab: continue
+            key = (c["filed"][3:], " ".join(sorted(re.findall(r"[a-z]{4,}", x["promise"].lower()))[:6]))
+            if key in seen_k: continue
+            seen_k.add(key); rows_w.append((c["filed"], x["promise"][:70], lab, src_))
+    W = {"delivered": 1.0, "delayed": 0.5, "partly": 0.5, "missed": 0.0}
+    sc_ = [(W[l], f, t, l, sr) for f, t, l, sr in rows_w if l in W]
+    unk = [r for r in rows_w if r[2] not in W]
+    cnt = {k: sum(1 for r in sc_ if r[3] == k) for k in W}
+    if len(sc_) >= 8:
+        wtt = round(10 * sum(r[0] for r in sc_) / len(sc_), 1)
+        put("walk_the_talk", wtt, 10, f"{len(sc_)} verifiable promises across {len(P['calls'])} calls: {cnt['delivered']} delivered, {cnt['delayed']} delayed, {cnt['partly']} partly, {cnt['missed']} missed (delivered=1, delayed/partly=0.5, missed=0). {len(unk)} promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises by two cheap models agreeing with a verbatim quote.")
+    else:
+        pts["walk_the_talk"] = None; avail["walk_the_talk"] = 10; notes["walk_the_talk"] = f"only {len(sc_)} verifiable promises; need >=8"
+    wt_prov = pts.get("walk_the_talk")
     # ---------- Trust gate (facts only)
     sig = []
     sig.append(("promoter_holding", "watch" if fall else "ok", f"Promoter holding fell >=3 pts in one quarter {len(fall)} time(s): " + "; ".join(f"{a[0]} {a[1]}% -> {b[0]} {b[1]}%" for a, b in fall) + ". Fresh-share allotment filings in window: " + ", ".join(f"{i['date']} ({i['desc'][:20]})" for i in issues if i['desc'] != 'Stock split') if fall else "No quarter fall >=3 pts."))
@@ -126,15 +141,15 @@ def main(sym):
     sig.append(("use_of_funds", "ok" if pts["use_of_funds"] == 2 else "watch", notes["use_of_funds"]))
     rat = [re.search(r"ICRA\s*\]?\s*([A-Z+\-]+)\s*\(([A-Za-z ]+)\)", d["text"]) for d in TD if d["desc"] == "Credit Rating"]; rat = [r for r in rat if r]
     sig.append(("credit_rating", "ok" if rat else "na", f"ICRA {rat[-1].group(1)} ({rat[-1].group(2)}) per filing" if rat else "No rating filing found."))
-    avail_n = sum(1 for s in sig if s[1] in ("ok", "watch")) + (1 if cc else 0)
+    avail_n = sum(1 for s in sig if s[1] in ("ok", "watch")) + (1 if pts.get("walk_the_talk") is not None else 0)
     red = []
     amber = [s[0] for s in sig if s[1] == "watch"]
     gate = "RED" if red else "AMBER-WATCH" if amber else "CLEAR"
     out = {"version": VER, "company": sym, "as_of": now.strftime("%Y-%m-%d"), "latest_quarter": last,
            "points": {k: {"score": pts[k], "max": avail[k], "note": notes[k]} for k in pts},
-           "walk_the_talk_provisional": wt_prov,
+           "walk_the_talk_ledger": [{"call": f, "promise": t, "verdict": l, "by": sr} for f, t, l, sr in rows_w],
            "scored_so_far": round(sum(v for v in pts.values() if v is not None), 1), "max_for_scored": sum(avail[k] for k in pts if pts[k] is not None),
-           "pending_components": ["walk_the_talk (judge)", "visibility 8", "capex_capacity 8", "mix_valueadd 8", "moat_future 8", "sector 5", "risk_penalty up to -15"],
+           "pending_components": ["visibility 8", "capex_capacity 8", "mix_valueadd 8", "moat_future 8", "sector 5", "risk_penalty up to -15"],
            "trust_gate": {"status": gate, "signals": [{"id": a, "status": b, "fact": c} for a, b, c in sig], "credibility_signals_available": avail_n, "enough_data": avail_n >= 3},
            "grade": None, "grade_note": "No grade until all components are scored and >=80% of facts verified."}
     store.save(sym, "score.json", out)
@@ -143,6 +158,6 @@ def main(sym):
 if __name__ == "__main__":
     o = main(sys.argv[1] if len(sys.argv) > 1 else "E2E")
     for k, v in o["points"].items(): print(f"{k:26} {str(v['score']):>5}/{v['max']:<3} {v['note']}")
-    print("scored so far:", o["scored_so_far"], "of", o["max_for_scored"], "| WTT provisional:", o["walk_the_talk_provisional"])
+    print("scored so far:", o["scored_so_far"], "of", o["max_for_scored"])
     print("TRUST GATE:", o["trust_gate"]["status"], "| signals available:", o["trust_gate"]["credibility_signals_available"])
     for s in o["trust_gate"]["signals"]: print(f"  [{s['status']}] {s['id']}: {s['fact'][:230]}")
