@@ -29,4 +29,4 @@ jobs:
           SYMBOL: ${{ github.event.inputs.symbol }}
           SCRIP: ${{ github.event.inputs.scrip }}
           CNAME: ${{ github.event.inputs.cname }}
-        run: python scripts/probe_fin.py
+        run: python scripts/pilot_collect2.py
