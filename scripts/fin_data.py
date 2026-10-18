@@ -101,3 +101,50 @@ def show(rows, p):
         rev, eb, pat = m.get("revenue"), m.get("ebitda"), m.get("pat")
         em = round(100 * eb / rev, 1) if rev and eb is not None else None
         p(f"{lab} {m['basis'][:4]} {m['src']} | rev {rev} | ebitda {eb} | ebitda% {em} | pat {pat} | eps {m.get('eps')}")
+
+# ---------------- balance sheet + cash flow (half-yearly integrated filings) ----------------
+def _ctx(t, tag, ctx_pref):
+    for m in re.finditer(r"<[A-Za-z0-9\-]+:%s\b([^>]*)>([^<]+)<" % tag, t):
+        v = m.group(2).strip()
+        if re.match(r"^-?[0-9.]+$", v) and re.search(r'contextRef="%s"' % ctx_pref, m.group(1)):
+            return float(v)
+    return None
+
+def parse_balance(t):
+    cr = lambda v: None if v is None else round(v / 1e7, 2)
+    I = lambda tag: _ctx(t, tag, "OneI"); F = lambda tag: _ctx(t, tag, "FourD")
+    if I("Assets") is None:
+        return None
+    return {"assets": cr(I("Assets")), "equity": cr(I("Equity")),
+            "borrowings_noncurrent": cr(I("BorrowingsNoncurrent")), "borrowings_current": cr(I("BorrowingsCurrent")),
+            "cash": cr(I("CashAndCashEquivalents")), "other_bank_balances": cr(I("BankBalanceOtherThanCashAndCashEquivalents")),
+            "trade_receivables": cr(I("TradeReceivablesCurrent")), "trade_payables": cr(I("TradePayablesCurrent")),
+            "inventories": cr(I("Inventories")), "ppe": cr(I("PropertyPlantAndEquipment")), "cwip": cr(I("CapitalWorkInProgress")),
+            "cfo_ytd": cr(F("CashFlowsFromUsedInOperatingActivities")), "cfi_ytd": cr(F("CashFlowsFromUsedInInvestingActivities")),
+            "cff_ytd": cr(F("CashFlowsFromUsedInFinancingActivities")), "capex_ytd": cr(F("PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities")),
+            "borrowings_raised_ytd": cr(F("ProceedsFromBorrowingsClassifiedAsFinancingActivities")),
+            "revenue_ytd": cr(F("RevenueFromOperations")), "other_income_ytd": cr(F("OtherIncome")), "pbt_ytd": cr(F("ProfitBeforeTax")),
+            "finance_cost_ytd": cr(F("FinanceCosts")), "dep_ytd": cr(F("DepreciationDepletionAndAmortisationExpense"))}
+
+def balance_sheets(s, sym):
+    out = {}
+    try:
+        d = s.get("https://www.nseindia.com/api/integrated-filing-results", params={"index": "equities", "symbol": sym}, headers=REF_I, timeout=40).json().get("data", [])
+    except Exception:
+        d = []
+    for x in d:
+        if "Financial" not in (x.get("type") or "") or x.get("xbrl") in (None, "None"):
+            continue
+        try:
+            t = s.get(x["xbrl"], headers={"Referer": "https://www.nseindia.com/"}, timeout=60).text
+        except Exception:
+            continue
+        b = parse_balance(t)
+        if not b:
+            continue
+        basis = "consolidated" if x.get("consolidated") == "Consolidated" else "standalone"
+        k = x.get("qe_Date"); rank = (1 if basis == "consolidated" else 0, (x.get("creation_Date") or "")[:11])
+        if k not in out or rank >= out[k]["_rank"]:
+            out[k] = dict(b, basis=basis, _rank=rank, source=x.get("xbrl"))
+    for v in out.values(): v.pop("_rank", None)
+    return out
