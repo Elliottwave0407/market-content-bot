@@ -2,21 +2,60 @@
  "_note": "Reviewed wording for the E2E card. Numbers on the card are computed from the data files; this file holds only the narrative, each line tied to a verified filing/call.",
  "tagline": "Cloud & AI infrastructure",
  "thesis_tail": "A ₹1,000 Cr multi-year deal adds visibility, but customer concentration is <b>not disclosed</b>.",
- "holding_note": {"label": "L&T ₹1,079 Cr"},
+ "holding_note": {
+  "label": "L&T ₹1,079 Cr"
+ },
  "ledger": [
-  {"c": "g", "t": "Revenue 1.5–1.7x next year · May-25 call → 1.5x met"},
-  {"c": "g", "t": "Equity raise within a couple of quarters · May-24 call → ₹406 Cr"},
-  {"c": "g", "t": "EBITDA margin 65–75% by Mar-26 · Jul-25 call → in range 1 quarter later"},
-  {"c": "a", "t": "Second south site by Mar-25 · Jan-25 call → live 1 Aug-25 (4 months late)"},
-  {"c": "r", "t": "4,096 Blackwell by Mar-26 · Nov-25 call → first 1,024 live mid-May"}
+  {
+   "c": "g",
+   "t": "Revenue 1.5–1.7x next year · May-25 call → 1.5x met"
+  },
+  {
+   "c": "g",
+   "t": "Equity raise within a couple of quarters · May-24 call → ₹406 Cr"
+  },
+  {
+   "c": "g",
+   "t": "EBITDA margin 65–75% by Mar-26 · Jul-25 call → in range 1 quarter later"
+  },
+  {
+   "c": "a",
+   "t": "Second south site by Mar-25 · Jan-25 call → live 1 Aug-25 (4 months late)"
+  },
+  {
+   "c": "r",
+   "t": "4,096 Blackwell by Mar-26 · Nov-25 call → first 1,024 live mid-May"
+  }
  ],
- "pattern": "Financial and capacity promises hold; product and site launches slip",
- "trust": ["Promoter 60% → 39%: <b>new shares</b> to L&T, not selling", "4 independent directors left in 24m", "Stamp-duty order (May-26): company disputes, writ pending", "ICRA A- Stable · pledge, insider data <b>not verified</b>"],
+ "pattern": "Revenue and margin targets hold; capacity, funding and site launches are mixed",
+ "trust": [
+  "Promoter 60% → 39%: <b>new shares</b> to L&T, not selling",
+  "4 independent directors left in 24m",
+  "Stamp-duty order (May-26): company disputes, writ pending",
+  "ICRA A- Stable · pledge, insider data <b>not verified</b>"
+ ],
  "beyond": [
-  {"h": "₹1,000 Cr multi-year deal", "d": "Binding term sheet with an India-based sovereign customer (Oct-26 deck)", "w": "Adds contracted visibility"},
-  {"h": "1,024 Blackwell GPUs live", "d": "Went online and on revenue in Q1 FY27 (Jul-26 call). H1 cash capex ₹420 Cr", "w": "Capacity is converting to revenue"},
-  {"h": "Full-stack, in-house", "d": "100+ engineers build compute, network and orchestration (Oct-26 deck)", "w": "Moat is the company's own claim"}
+  {
+   "h": "₹1,000 Cr multi-year deal",
+   "d": "Binding term sheet with an India-based sovereign customer (Oct-26 deck)",
+   "w": "Adds contracted visibility"
+  },
+  {
+   "h": "1,024 Blackwell GPUs live",
+   "d": "Went online and on revenue in Q1 FY27 (Jul-26 call). H1 cash capex ₹420 Cr",
+   "w": "Capacity is converting to revenue"
+  },
+  {
+   "h": "Full-stack, in-house",
+   "d": "100+ engineers build compute, network and orchestration (Oct-26 deck)",
+   "w": "Moat is the company's own claim"
+  }
  ],
  "undisclosed_src": "Jul-26 call and Oct-26 deck",
- "undisclosed": ["Customer concentration", "Recurring-revenue share", "MRR guidance: <b>“we don't provide” it</b>", "FY28–29 capacity roadmap"]
+ "undisclosed": [
+  "Customer concentration",
+  "Recurring-revenue share",
+  "MRR guidance: <b>“we don't provide” it</b>",
+  "FY28–29 capacity roadmap"
+ ]
 }
