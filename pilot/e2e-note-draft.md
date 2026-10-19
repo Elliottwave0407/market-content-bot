@@ -4,8 +4,8 @@
 E2E has turned new GPU capacity into revenue and margin quickly: revenue ₹224 Cr (₹44 Cr a year ago), EBITDA margin 77% (41%), net profit ₹73 Cr (loss of ₹13 Cr). A ₹1,000 Cr multi-year contract adds visibility. The open question is not demand, it is how much of this is contracted and how concentrated it is.
 
 **2. Results and margin bridge**
-• Revenue grew 43% on the quarter (₹157 Cr in Q1). EBITDA rose from ₹118 Cr to ₹171 Cr, so the extra ₹67 Cr of revenue came with ₹54 Cr of EBITDA: an incremental margin of about 80%, consistent with the 75% to 80% management guided for new GPUs on the Q4 FY26 call.
-• Quality of earnings, H1 FY27: depreciation ₹135 Cr takes 47% of EBITDA of ₹289 Cr, so EBIT margin is about 41%, not 77%. Other income ₹21 Cr is 14% of pre-tax profit ₹156 Cr. Finance cost ₹20 Cr.
+• Revenue grew 43% on the quarter (₹157 Cr in Q1 FY27). EBITDA rose from ₹118 Cr to ₹171 Cr, so the extra ₹67 Cr of revenue came with ₹54 Cr of EBITDA: an incremental margin of about 80%, consistent with the 75% to 80% management guided for new GPUs on the Q4 FY26 call.
+• Quality of earnings, H1 FY27: depreciation ₹135 Cr takes 47% of EBITDA of ₹289 Cr, so EBIT margin is about 41%, not 76%. Other income ₹21 Cr is 14% of pre-tax profit ₹156 Cr. Finance cost ₹20 Cr.
 • Basis: Sep-25 comparatives are standalone and Sep-26 is consolidated, so year-on-year growth is best read alongside the quarter-on-quarter trend.
 
 **3. Cash and balance sheet**
@@ -26,7 +26,7 @@ Pattern: revenue and margin targets hold; capacity and timing slip.
 • Governance: four independent directors resigned in 24 months (Dec-24, Mar-25, Aug-25, Jan-26). The company disputes a May-26 stamp-duty order. ICRA A- Stable. Trust gate: Amber, watch.
 • Moat: a proprietary in-house cloud software platform built since 2014 and 100+ engineers building compute, network and orchestration. This is the company's own claim.
 
-**6. What is not disclosed (Q2 call and deck)**
+**6. What is not disclosed**
 • Customer concentration: management gave the share of one customer (13 to 15% of Q2 revenue). Top-customer and top-10 shares were not given.
 • Contracted versus short-term mix: no target.
 • MRR guidance: "we don't provide" it.
