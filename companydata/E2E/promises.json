@@ -670,7 +670,7 @@
      "firmness": "firm",
      "id": "873453b6130f-2",
      "promise": "Exit MRR in March '26 targeted at somewhere around 35 crores plus/minus something.",
-     "quote": "Year-end MRR, we are targeting in March \u201826, is like somewhere between (+/-35) something.",
+     "quote": "Year-end MRR, we are targeting in March ‘26, is like somewhere between (+/-35) something.",
      "topic": "revenue",
      "verdict": null
     },
@@ -824,24 +824,19 @@
      "firmness": "firm",
      "id": "183dfeab1385-2",
      "promise": "Fundraise through financing from banks, leasing partners, vendor financing, and some equity raise",
-     "quote": "It\u2019s will have to be a combination of things including like financing from banks and leasing partners and vendor financing and some equity raise.",
+     "quote": "It’s will have to be a combination of things including like financing from banks and leasing partners and vendor financing and some equity raise.",
      "topic": "funding",
      "verdict": {
-      "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
-      "judged_on": "2026-10-18",
-      "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management promised an equity raise and subsequently announced successfully raising INR 4,056 million via preferential issue.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "audit": null,
+      "audit_model": null,
+      "evidence_quote": "",
+      "judge_model": "gemini-3.5-flash",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable",
+      "method": "strong-context+audit",
+      "reason": "No management statement directly confirms completing fundraising across all specified sources including banks, leasing partners, and vendor financing.",
+      "source_filed": null,
+      "v2_label": "delivered"
      }
     },
     {

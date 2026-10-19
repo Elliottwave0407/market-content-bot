@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-18",
+ "as_of": "2026-10-19",
  "company": "E2E",
  "grade": null,
  "grade_note": "No grade until all components are scored and >=80% of facts verified.",
@@ -51,11 +51,13 @@
   },
   "walk_the_talk": {
    "max": 10,
-   "note": "18 verifiable promises across 11 calls: 14 delivered, 3 delayed, 0 partly, 1 missed (delivered=1, delayed/partly=0.5, missed=0). 14 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises by two cheap models agreeing with a verbatim quote.",
-   "score": 8.6
+   "note": "17 verifiable promises across 11 calls: 13 delivered, 3 delayed, 0 partly, 1 missed (delivered=1, delayed/partly=0.5, missed=0). 15 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
+   "score": 8.5
   }
  },
- "scored_so_far": 54.6,
+ "provisional_max": 100,
+ "provisional_total": 60.0,
+ "scored_so_far": 54.5,
  "trust_gate": {
   "credibility_signals_available": 6,
   "enough_data": true,
@@ -146,7 +148,7 @@
    "by": "judge",
    "call": "30-May-2024",
    "promise": "Fundraise through financing from banks, leasing partners, vendor finan",
-   "verdict": "delivered"
+   "verdict": "unverifiable"
   },
   {
    "by": "judge",

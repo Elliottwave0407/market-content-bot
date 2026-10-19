@@ -1,0 +1,41 @@
+{
+ "from": {
+  "audit_model": "gemini-3.1-flash-lite",
+  "extract_model": "gemini-flash-lite-latest",
+  "extracted_on": "2026-10-18"
+ },
+ "pillars_facts_confirmed": 2,
+ "points": {
+  "capex_capacity": {
+   "max": 8,
+   "note": "no quantified capex plan verified (0/2); funding: operating cash flow covers 94% of period capex (Rs 396.49 vs 419.6 Cr), net cash +284 Cr (2/2); capacity promises delivered on time: 75% of 8 verifiable (2/2); no utilisation or returns disclosure verified (0/2)",
+   "score": 4
+  },
+  "moat_roadmap": {
+   "max": 8,
+   "note": "1 verified barrier statement(s) (2 each, max 3): Full stack in-house engineering and proprietary so; 0 dated long-term target(s) verified (0/2). Barriers are management's own claims, shown as such.",
+   "score": 2
+  },
+  "product_mix": {
+   "max": 8,
+   "note": "segment mix not verified (0/2); no value-added share verified (0/2); no segment-margin evidence verified (0/2)",
+   "score": 0
+  },
+  "risk_penalty": {
+   "max": -15,
+   "note": "free cash flow negative in latest period (-2)",
+   "score": -2
+  },
+  "sector_positioning": {
+   "max": 5,
+   "note": "0 verified sector/positioning statement(s) (1 each up to 3; +2 if >=3).",
+   "score": 0
+  },
+  "visibility": {
+   "max": 8,
+   "note": "recurring share not disclosed (0/3); customer concentration not disclosed (0/2); contracted / committed demand stated (1.5/1.5); no quantified guidance verified (0/1.5)",
+   "score": 1.5
+  }
+ },
+ "version": "v0"
+}
