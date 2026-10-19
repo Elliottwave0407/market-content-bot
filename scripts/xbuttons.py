@@ -64,6 +64,13 @@ def poll():
         if CHAT: labels[CHAT] = "market"
         rc = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
         if rc: labels[rc] = "results"
+        ac = os.environ.get("TELEGRAM_ANALYSIS_CHAT_ID", "").strip()
+        if ac: labels[ac] = "analysis"
+        for u_ in ups:   # unknown group (e.g. a newly created one): keep an ENCRYPTED line with its title and id so setup can read it
+            m_ = u_.get("message") or u_.get("edited_message") or {}
+            c_ = m_.get("chat") or {}
+            if c_.get("type") in ("group", "supergroup") and str(c_.get("id")) not in labels:
+                labels[str(c_.get("id"))] = "UNKNOWN-GROUP[" + str(c_.get("title")) + "|" + str(c_.get("id")) + "]"
         try:
             n = fs.ingest(ups, TOKEN, labels)
             if n:
