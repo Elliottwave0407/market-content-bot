@@ -47,15 +47,17 @@ for i, sym in enumerate(syms):
         j = get(s, "https://www.nseindia.com/api/corporate-announcements", {"index": "equities", "symbol": sym, "from_date": a, "to_date": z}, H_ANN) or []
         for x in j:
             n_ann += 1
-            if os.environ.get("DEBUG") == "1" and "analysts/institutional" in (x.get("desc") or "").lower():
-                p("  DBG", sym, (x.get("an_dt") or "")[:11], "|", (x.get("attchmntText") or "")[:90].replace("\n", " "), "|", (x.get("attchmntFile") or "")[-60:])
             t = ((x.get("attchmntText") or "") + " " + (x.get("desc") or "")).lower(); f = (x.get("attchmntFile") or "").lower()
             if "analysts/institutional" in (x.get("desc") or "").lower() and "transcript" in t and f.endswith(".pdf") and "intimation" not in f:
                 dates.append((x.get("an_dt") or "")[:11])
     d = get(s, "https://www.nseindia.com/api/integrated-filing-results", {"index": "equities", "symbol": sym}, H_INT) or {}
     fin = [x for x in (d.get("data") or []) if "Financial" in (x.get("type") or "")]
     qe = {x.get("qe_Date") for x in fin if x.get("qe_Date")}
+    lg = get(s, "https://www.nseindia.com/api/corporates-financial-results", {"index": "equities", "symbol": sym, "period": "Quarterly"}, {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}) or []
+    qe |= {x.get("toDate") for x in lg if x.get("toDate") and x.get("cumulative") in (None, "Non-cumulative")}
     h = get(s, "https://www.nseindia.com/api/corporate-share-holdings-master", {"index": "equities", "symbol": sym}, {"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-shareholding-pattern"}) or []
+    if n_ann == 0 and not qe and not h:      # nothing came back at all: treat as a failed fetch (wrong symbol or blocked), not as "no data"
+        res.append({"symbol": sym, "mcap_cr": round(mc_of.get(sym, 0)), "error": "no data returned", "readiness": -1}); continue
     tr_unique = sorted({x for x in dates if x})
     last_tr = None
     try: last_tr = max(datetime.strptime(x, "%d-%b-%Y") for x in tr_unique) if tr_unique else None
@@ -68,7 +70,9 @@ res.sort(key=lambda r: (-r["readiness"], -r["mcap_cr"]))
 os.makedirs(os.path.join(ROOT, "companydata", "_readiness"), exist_ok=True)
 json.dump({"asof": today.strftime("%Y-%m-%d"), "band_cr": [MIN, MAX], "rows": res}, open(os.path.join(ROOT, "companydata", "_readiness", "screen.json"), "w"), indent=1)
 p("symbol | mcap Cr | transcripts 3y | quarters | last call | score")
-for r in res[:40]: p(f"{r['symbol']:<12}{r['mcap_cr']:>8,} {r['transcripts_3y']:>4} {r['quarters_filed']:>4}  {r['last_transcript'] or '-':<12}{r['readiness']:>4}")
-ok = sum(1 for r in res if r["transcripts_3y"] >= 8 and r["quarters_filed"] >= 8)
+for r in [x for x in res if x["readiness"] >= 0][:40]: p(f"{r['symbol']:<12}{r['mcap_cr']:>8,} {r['transcripts_3y']:>4} {r['quarters_filed']:>4}  {r['last_transcript'] or '-':<12}{r['readiness']:>4}")
+ok = sum(1 for r in res if r.get("transcripts_3y", 0) >= 8 and r.get("quarters_filed", 0) >= 8)
+bad = [r["symbol"] for r in res if r["readiness"] < 0]
+if bad: p("no data returned for:", ", ".join(bad))
 p(f"ready (>=8 transcripts and >=8 quarters): {ok} of {len(res)}")
 publish()
