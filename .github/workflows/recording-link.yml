@@ -1,0 +1,21 @@
+name: recording-link
+on:
+  workflow_dispatch:
+    inputs:
+      pdf_url:
+        description: "NSE filing PDF with the recording link"
+permissions:
+  contents: read
+jobs:
+  link:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PDF_URL: ${{ github.event.inputs.pdf_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: cd scripts && python recording_link.py
