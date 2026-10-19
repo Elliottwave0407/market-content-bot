@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 IST = timezone(timedelta(hours=5, minutes=30))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("MARKET_CHAT_ID", "").strip()
-CHATS = {c for c in (CHAT, os.environ.get("TELEGRAM_CHAT_ID", "").strip()) if c}
+CHATS = {c for c in (CHAT, os.environ.get("TELEGRAM_CHAT_ID", "").strip(), os.environ.get("TELEGRAM_ANALYSIS_CHAT_ID", "").strip()) if c}
 API = f"https://api.telegram.org/bot{TOKEN}"
 _offset = [0]
 
@@ -34,11 +34,15 @@ def split_link(caption):
         return (caption[:m.start()] + caption[m.end():]).strip(), m.group(1)
     return caption, None
 
-def markup(tweet, link=None):
-    row1 = [{"text": "📤 Post to X", "url": x_url(tweet)}]
+def markup(tweet, link=None, fix=False):
+    """fix=True adds a '🛠 Needs fix' button (analysis group). tweet=None -> no Post-to-X link (text-only items)."""
+    row1 = [{"text": "📤 Post to X", "url": x_url(tweet)}] if tweet else []
     if link:
         row1.append({"text": "📄 Filing", "url": link})
-    return json.dumps({"inline_keyboard": [row1, [{"text": "✅ Posted", "callback_data": "xp"}, {"text": "⏭ Skip", "callback_data": "xs"}]]})
+    row2 = [{"text": "✅ Posted", "callback_data": "xp"}, {"text": "⏭ Skip", "callback_data": "xs"}]
+    if fix:
+        row2.append({"text": "🛠 Needs fix", "callback_data": "xf"})
+    return json.dumps({"inline_keyboard": ([row1] if row1 else []) + [row2]})
 
 def _call(method, **data):
     try:
@@ -86,17 +90,22 @@ def poll():
         if str((msg.get("chat") or {}).get("id")) not in CHATS:
             continue
         who = (cq.get("from") or {}).get("first_name") or "Someone"
-        cap = msg.get("caption") or ""
-        done = ("✅ Posted on X by" in cap) or ("⏭ Skipped by" in cap)
-        if done or cq.get("data") not in ("xp", "xs"):
+        is_text = "text" in msg and "caption" not in msg
+        cap = (msg.get("text") if is_text else msg.get("caption")) or ""
+        done = ("✅ Posted on X by" in cap) or ("⏭ Skipped by" in cap) or ("🛠 Needs fix by" in cap)
+        if done or cq.get("data") not in ("xp", "xs", "xf"):
             _call("answerCallbackQuery", callback_query_id=cq["id"], text="Already marked." if done else "")
             continue
         keep_rows = [[b for row in ((msg.get("reply_markup") or {}).get("inline_keyboard") or []) for b in row if str(b.get("text", "")).startswith("📄")]]
         keep_rows = [r for r in keep_rows if r]
         stamp = datetime.now(IST).strftime("%d %b, %H:%M")
-        tag = f"✅ Posted on X by {who} · {stamp}" if cq["data"] == "xp" else f"⏭ Skipped by {who} · {stamp}"
-        new_cap = cap[: 1024 - len(tag) - 3].rstrip() + "\n\n" + tag
-        e = _call("editMessageCaption", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": keep_rows}))
-        _call("answerCallbackQuery", callback_query_id=cq["id"], text="Marked ✅" if cq["data"] == "xp" else "Skipped")
+        tag = {"xp": f"✅ Posted on X by {who} · {stamp}", "xs": f"⏭ Skipped by {who} · {stamp}", "xf": f"🛠 Needs fix by {who} · {stamp}"}[cq["data"]]
+        lim = 4096 if is_text else 1024
+        new_cap = cap[: lim - len(tag) - 3].rstrip() + "\n\n" + tag
+        if is_text:
+            e = _call("editMessageText", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], text=new_cap, reply_markup=json.dumps({"inline_keyboard": keep_rows}))
+        else:
+            e = _call("editMessageCaption", chat_id=(msg.get("chat") or {}).get("id"), message_id=msg["message_id"], caption=new_cap, reply_markup=json.dumps({"inline_keyboard": keep_rows}))
+        _call("answerCallbackQuery", callback_query_id=cq["id"], text={"xp": "Marked ✅", "xs": "Skipped", "xf": "Marked: needs fix"}[cq["data"]])
         lines.append(f"x-button: {tag} (edit ok={e.get('ok')})")
     return lines
