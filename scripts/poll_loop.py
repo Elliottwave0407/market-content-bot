@@ -44,10 +44,27 @@ def commit_state():
                 return
             time.sleep(2)
 
+XB_LINES, XB_FLAGS = [], {"dirty": False}
+
+def xb_thread(end):
+    """Button taps are handled in their own thread every ~2 s, so a tap shows up fast even when a main-loop pass is slow."""
+    while time.time() < end:
+        try:
+            xlines = xb.poll()
+            if any(z.startswith('feedback: saved') for z in xlines):
+                XB_FLAGS["dirty"] = True
+            XB_LINES.extend(f"[x {time.strftime('%H:%M:%S')}] " + z for z in xlines if not z.startswith('feedback: saved'))
+        except Exception as e:
+            XB_LINES.append("x-button error: " + rp.redact(repr(e))[:200])
+        time.sleep(2)
+
 def main():
     git("config", "user.name", "market-content-bot")
     git("config", "user.email", "bot@users.noreply.github.com")
     end = time.time() + LOOP_MIN * 60
+    if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
+        import threading
+        threading.Thread(target=xb_thread, args=(end,), daemon=True).start()
     keep, n, sent = [], 0, 0
     news_dirty, last_news_commit = False, 0.0
     known = set()
@@ -81,16 +98,11 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("market tick error: " + rp.redact(repr(e))[:200])
-                    if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
-                        try:
-                            xlines = xb.poll()
-                            if any(z.startswith('feedback: saved') for z in xlines):
-                                commit_state()
-                            rest = [z for z in xlines if not z.startswith('feedback: saved')]
-                            if rest:
-                                keep += [f"[x {time.strftime('%H:%M:%S')}] "] + rest
-                        except Exception as e:
-                            keep.append("x-button error: " + rp.redact(repr(e))[:200])
+                    if XB_FLAGS["dirty"]:
+                        XB_FLAGS["dirty"] = False
+                        commit_state()
+                    while XB_LINES:
+                        keep.append(XB_LINES.pop(0))
                     if npst is not None:
                         try:
                             nchanged, nlines = npst.tick(bse)
