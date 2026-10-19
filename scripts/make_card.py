@@ -93,8 +93,8 @@ def bars():
         s, m = allp[k]; pc = 100 * s / m; col = "var(--g)" if pc >= 75 else "var(--a)" if pc >= 50 else "var(--r)"
         h += f'<div class="bar"><div class="n">{lab}</div><div class="tr"><div class="fi" style="width:{pc}%;background:{col}"></div></div><div class="v">{s:g}/{m}</div></div>'
     h += f'<div class="bar"><div class="n" style="color:var(--r)">Risk penalty</div><div class="tr"><div class="fi" style="width:{100*abs(pen)/15}%;background:var(--r)"></div></div><div class="v" style="color:var(--r)">−{abs(pen):g}</div></div>'
-    return h + '<div class="pend">Management claims count only when quoted verbatim and audited</div>'
-def chart(W=520, H=330):
+    return h
+def chart(W=520, H=215):
     mxr = max(rev[l] for l in L8); bw = W / 8; s = f'<svg width="{W}" height="{H+42}" viewBox="0 0 {W} {H+42}">'; pl = []
     for i, l in enumerate(L8):
         h = H * 0.50 * rev[l] / mxr; x = i * bw + 7; y = H - h
@@ -144,7 +144,7 @@ def by_type():
         seg = "".join(f'<div style="width:{k*26}px;background:{col};height:20px"></div>' for k, col in ((a, "var(--g)"), (b_, "var(--a)"), (c, "var(--r)")) if k)
         h += f'<div class="bar" style="margin:6px 0"><div class="n" style="width:236px;white-space:nowrap;font-size:20px">{lab}</div><div style="display:flex;gap:2px;width:215px">{seg}</div><div style="flex:1;font-size:19px;color:var(--mut);white-space:nowrap;font-weight:600">{a} on time{(" · "+str(b_)+" late") if b_ else ""}{(" · "+str(c)+" missed") if c else ""}</div></div>'
     return h
-def qoq(W=330, H_=118):
+def qoq(W=520, H_=92):
     ls = L8[-7:]; g = W / len(ls); gr = [100 * (rev[l] / rev[labs[labs.index(l) - 1]] - 1) for l in ls]; m = max(abs(x) for x in gr); s = f'<svg width="{W}" height="{H_+72}" viewBox="0 -18 {W} {H_+72}">'; base = H_ * 0.66
     for i, (l, v) in enumerate(zip(ls, gr)):
         h_ = abs(v) / m * base * 0.82; x = i * g + 6; y = base - h_ if v >= 0 else base
@@ -165,14 +165,12 @@ html = f"""<html><head><meta charset=utf-8><style>{CSS}</style></head><body>{wm}
 <div class="grade"><div class="t">FinGod Quality Grade</div>{grade_html}</div><img class="mark" src="{MARK}"></div>
 <div class="band">{band}</div>
 <div class="kp">{kph}</div>
-<div class="row"><div class="p" style="flex:1.12"><div class="t">Revenue ₹Cr · EBITDA % · Jun-26 on consolidated</div>{chart()}</div><div class="p" style="flex:.88"><div class="t">Pillar scores</div>{bars()}</div></div>
-<div class="row"><div class="p"><div class="t">Promoter holding %</div>{line_hold()}</div><div class="p"><div class="t">Cash conversion · ₹Cr</div>{cash_bars()}</div><div class="p"><div class="t">Debt vs cash · ₹Cr</div>{debt_cash()}</div></div>
-<div class="row"><div class="p" style="flex:1.12"><div class="t">Walk the talk · {n} checkable promises since Nov-23</div><div class="dots">{dots}</div><div style="font-size:19px;font-weight:700;margin-bottom:3px">{nd} on time · {nl} late · {nm} missed · {len(unk)} not verifiable</div>{lh}</div>
-<div class="p" style="flex:.88"><div class="t">Trust gate</div><span class="pill">{gate.replace('-', ' · ')}</span><ul style="margin-top:4px">{trust}</ul></div></div>
-<div class="row"><div class="p" style="flex:1.5"><div class="t">Promises by type · on time / late / missed</div>{by_type()}<div class="pend">{COPY.get('pattern','')}</div></div><div class="p"><div class="t">QoQ revenue growth % · Jun-26 consol.</div>{qoq()}</div></div>
+<div class="row"><div style="flex:1.12;display:flex;flex-direction:column;gap:8px;min-width:0"><div class="p" style="flex:none"><div class="t">Revenue ₹Cr · EBITDA %</div>{chart()}</div><div class="p" style="flex:1"><div class="t">QoQ revenue growth %</div>{qoq()}</div></div><div class="p" style="flex:.88"><div class="t">Pillar scores</div>{bars()}</div></div>
+<div class="row"><div class="p"><div class="t">Promoter holding %</div>{line_hold()}</div><div class="p"><div class="t">Cash conversion · ₹Cr</div>{cash_bars()}</div><div class="p"><div class="t"><span style="color:#c0392b">Debt</span> vs <span style="color:#3b5b92">Cash</span> · ₹Cr</div>{debt_cash()}</div></div>
+<div class="row"><div class="p" style="flex:1.12"><div class="t">Walk the talk · {n} checkable promises</div><div class="dots">{dots}</div><div style="font-size:19px;font-weight:700;margin-bottom:3px">{nd} on time · {nl} late · {nm} missed · {len(unk)} not verifiable</div>{lh}<div class="t" style="margin-top:8px">By type · on time / late / missed</div>{by_type()}<div class="pend">{COPY.get('pattern','')}</div></div>
+<div style="flex:.88;display:flex;flex-direction:column;gap:8px;min-width:0"><div class="p" style="flex:none"><div class="t">Trust gate</div><span class="pill">{gate.replace('-', ' · ')}</span><ul style="margin-top:4px">{trust}</ul></div><div class="p miss" style="flex:1"><div class="t" style="color:var(--r)">Not disclosed</div><ul>{und}</ul></div></div></div>
 <div class="row">{bn}</div>
-<div class="p miss"><div class="t" style="color:var(--r)">Not disclosed · checked {COPY.get('undisclosed_src','')}</div><ul style="display:grid;grid-template-columns:1fr 1fr;column-gap:16px">{und}</ul></div>
-<div class="foot">Delays up to 3 months count as on time. Oct-26 call facts: company recording, two transcriptions agree. Source: company filings (NSE/BSE). For educational purpose only.</div></body></html>"""
+<div class="foot">For educational purpose only.</div></body></html>"""
 out = os.path.join(ROOT, "cards", SYM); os.makedirs(out, exist_ok=True)
 open(os.path.join(out, "card.html"), "w").write(html)
 try:
