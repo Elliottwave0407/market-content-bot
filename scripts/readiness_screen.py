@@ -47,6 +47,8 @@ for i, sym in enumerate(syms):
         j = get(s, "https://www.nseindia.com/api/corporate-announcements", {"index": "equities", "symbol": sym, "from_date": a, "to_date": z}, H_ANN) or []
         for x in j:
             n_ann += 1
+            if os.environ.get("DEBUG") == "1" and "analysts/institutional" in (x.get("desc") or "").lower():
+                p("  DBG", sym, (x.get("an_dt") or "")[:11], "|", (x.get("attchmntText") or "")[:90].replace("\n", " "), "|", (x.get("attchmntFile") or "")[-60:])
             t = ((x.get("attchmntText") or "") + " " + (x.get("desc") or "")).lower(); f = (x.get("attchmntFile") or "").lower()
             if "analysts/institutional" in (x.get("desc") or "").lower() and "transcript" in t and f.endswith(".pdf") and "intimation" not in f:
                 dates.append((x.get("an_dt") or "")[:11])

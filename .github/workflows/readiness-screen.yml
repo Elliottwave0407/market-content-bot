@@ -9,6 +9,8 @@ on:
         default: "2000"
       mcap_max:
         default: "60000"
+      debug:
+        default: "0"
       top:
         description: "How many candidates (largest first)"
         default: "120"
@@ -29,6 +31,7 @@ jobs:
           MCAP_MIN: ${{ github.event.inputs.mcap_min }}
           MCAP_MAX: ${{ github.event.inputs.mcap_max }}
           TOP: ${{ github.event.inputs.top }}
+          DEBUG: ${{ github.event.inputs.debug }}
         run: python scripts/readiness_screen.py
       - name: save result
         if: always()
