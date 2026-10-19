@@ -108,20 +108,27 @@ def main(sym):
     for c in sorted(P["calls"].values(), key=lambda c: D(c["filed"])):
         for x in c["promises"]:
             lab = (x.get("code_check") or {}).get("verdict")
-            src_ = "code"
+            src_ = "code"; lag = None
             if lab in (None, "inconclusive"):
                 lab = (x.get("verdict") or {}).get("label"); src_ = "judge"
+                lag = (x.get("verdict") or {}).get("lag_months")
+            else:
+                m_ = re.search(r"\+(\d+)q", str((x.get("code_check") or {}).get("detail") or ""))
+                if m_: lag = 3 * int(m_.group(1))
             if not lab: continue
             key = (c["filed"][3:], " ".join(sorted(re.findall(r"[a-z]{4,}", x["promise"].lower()))[:6]))
             if key in seen_k: continue
-            seen_k.add(key); rows_w.append((c["filed"], x["promise"][:70], lab, src_))
+            seen_k.add(key); rows_w.append((c["filed"], x["promise"][:70], lab, src_, lag))
     W = {"delivered": 1.0, "delayed": 0.5, "partly": 0.5, "missed": 0.0}
-    sc_ = [(W[l], f, t, l, sr) for f, t, l, sr in rows_w if l in W]
+    TOL = 3   # months: a delay of up to 3 months is within normal business variance and earns full credit (shown separately in the ledger)
+    def wt(l, lag): return 1.0 if (l == "delayed" and lag is not None and lag <= TOL) else W[l]
+    sc_ = [(wt(l, lag), f, t, l, sr) for f, t, l, sr, lag in rows_w if l in W]
     unk = [r for r in rows_w if r[2] not in W]
+    n_tol = sum(1 for f, t, l, sr, lag in rows_w if l == "delayed" and lag is not None and lag <= TOL)
     cnt = {k: sum(1 for r in sc_ if r[3] == k) for k in W}
     if len(sc_) >= 8:
         wtt = round(10 * sum(r[0] for r in sc_) / len(sc_), 1)
-        put("walk_the_talk", wtt, 10, f"{len(sc_)} verifiable promises across {len(P['calls'])} calls: {cnt['delivered']} delivered, {cnt['delayed']} delayed, {cnt['partly']} partly, {cnt['missed']} missed (delivered=1, delayed/partly=0.5, missed=0). {len(unk)} promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).")
+        put("walk_the_talk", wtt, 10, f"{len(sc_)} verifiable promises across {len(P['calls'])} calls: {cnt['delivered']} delivered, {cnt['delayed']} delayed ({n_tol} of them within {TOL} months, counted as on time), {cnt['partly']} partly, {cnt['missed']} missed (delivered=1, delayed over {TOL} months/partly=0.5, missed=0). {len(unk)} promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).")
     else:
         pts["walk_the_talk"] = None; avail["walk_the_talk"] = 10; notes["walk_the_talk"] = f"only {len(sc_)} verifiable promises; need >=8"
     wt_prov = pts.get("walk_the_talk")
@@ -147,7 +154,7 @@ def main(sym):
     gate = "RED" if red else "AMBER-WATCH" if amber else "CLEAR"
     out = {"version": VER, "company": sym, "as_of": now.strftime("%Y-%m-%d"), "latest_quarter": last,
            "points": {k: {"score": pts[k], "max": avail[k], "note": notes[k]} for k in pts},
-           "walk_the_talk_ledger": [{"call": f, "promise": t, "verdict": l, "by": sr} for f, t, l, sr in rows_w],
+           "walk_the_talk_ledger": [{"call": f, "promise": t, "verdict": l, "by": sr, "lag_months": lag} for f, t, l, sr, lag in rows_w],
            "scored_so_far": round(sum(v for v in pts.values() if v is not None), 1), "max_for_scored": sum(avail[k] for k in pts if pts[k] is not None),
            "pending_components": ["visibility 8", "capex_capacity 8", "mix_valueadd 8", "moat_future 8", "sector 5", "risk_penalty up to -15"],
            "trust_gate": {"status": gate, "signals": [{"id": a, "status": b, "fact": c} for a, b, c in sig], "credibility_signals_available": avail_n, "enough_data": avail_n >= 3},

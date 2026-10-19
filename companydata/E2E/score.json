@@ -51,13 +51,13 @@
   },
   "walk_the_talk": {
    "max": 10,
-   "note": "15 verifiable promises across 11 calls: 11 delivered, 2 delayed, 0 partly, 2 missed (delivered=1, delayed/partly=0.5, missed=0). 17 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
-   "score": 8.0
+   "note": "15 verifiable promises across 11 calls: 11 delivered, 2 delayed (1 of them within 3 months, counted as on time), 0 partly, 2 missed (delivered=1, delayed over 3 months/partly=0.5, missed=0). 17 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
+   "score": 8.3
   }
  },
  "provisional_max": 100,
- "provisional_total": 71.0,
- "scored_so_far": 54.0,
+ "provisional_total": 71.3,
+ "scored_so_far": 54.3,
  "trust_gate": {
   "credibility_signals_available": 6,
   "enough_data": true,
@@ -105,192 +105,224 @@
   {
    "by": "code",
    "call": "16-Nov-2023",
+   "lag_months": null,
    "promise": "Grow anywhere between 40% to 50% over the medium term over next couple",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "16-Nov-2023",
+   "lag_months": null,
    "promise": "Deploy almost Rs. 150 to 200 crores of hardware over next 12 to 15 mon",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "16-Nov-2023",
+   "lag_months": null,
    "promise": "Fund infrastructure capex through debt and internal accruals without r",
    "verdict": "missed"
   },
   {
    "by": "code",
    "call": "16-Nov-2023",
+   "lag_months": null,
    "promise": "Targeting 15% to 20% PAT over the long term",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "16-Nov-2023",
+   "lag_months": null,
    "promise": "Take delivery of 70% to 75% of the already placed 30% to 35% capex ord",
    "verdict": "unverifiable"
   },
   {
    "by": "code",
    "call": "30-May-2024",
+   "lag_months": null,
    "promise": "MRR potential with current capex of 14 to 16 crores from current MRR o",
    "verdict": "delivered"
   },
   {
    "by": "code",
    "call": "30-May-2024",
+   "lag_months": null,
    "promise": "Add another $100 million or about Rs.800 crores over next 12 months in",
    "verdict": "excluded"
   },
   {
    "by": "judge",
    "call": "30-May-2024",
+   "lag_months": null,
    "promise": "Fundraise through financing from banks, leasing partners, vendor finan",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "30-May-2024",
+   "lag_months": null,
    "promise": "Work on equity fundraise over next couple of quarters",
    "verdict": "delivered"
   },
   {
    "by": "code",
    "call": "31-May-2024",
+   "lag_months": null,
    "promise": "Raise around Rs.800 crores over the next 12 months as ideal capex expa",
    "verdict": "excluded"
   },
   {
    "by": "code",
    "call": "31-May-2024",
+   "lag_months": null,
    "promise": "Achieve an MRR potential of 14 to 16 crores from current capex over ne",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "04-Nov-2024",
+   "lag_months": null,
    "promise": "75% of the funds raised will go towards augmenting infrastructure capa",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "04-Nov-2024",
+   "lag_months": null,
    "promise": "Establish at least one new major cloud zone south of India, which will",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "04-Nov-2024",
+   "lag_months": null,
    "promise": "Do more capex than INR 800 crores over the next couple of years.",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "28-Jan-2025",
+   "lag_months": 4,
    "promise": "Get the second new location in the south near Chennai operational duri",
    "verdict": "delayed"
   },
   {
    "by": "judge",
    "call": "06-May-2025",
+   "lag_months": null,
    "promise": "Hit an MRR of INR35 crores to INR40 crores by end of March '26 or a qu",
    "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "code",
    "call": "06-May-2025",
+   "lag_months": null,
    "promise": "Improve revenue next year to about 1.5x to 1.7x of the current number.",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "06-May-2025",
+   "lag_months": null,
    "promise": "Target anywhere close to 10,000 GPUs plus overall on the platform in t",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "24-Jul-2025",
+   "lag_months": null,
    "promise": "Achieve an exit MRR anywhere between Rs. 32 crores to Rs. 38 crores by",
    "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",
    "call": "24-Jul-2025",
+   "lag_months": null,
    "promise": "Get the Chennai facility operational up and running by end of July.",
    "verdict": "unverifiable (audit rejected)"
   },
   {
    "by": "code",
    "call": "24-Jul-2025",
+   "lag_months": null,
    "promise": "Exit MRR in March '26 targeted at somewhere around 35 crores plus/minu",
    "verdict": "delivered"
   },
   {
    "by": "code",
    "call": "24-Jul-2025",
+   "lag_months": 3,
    "promise": "Achieve an EBITDA margin of 65% to 75% by March exit month in this fin",
    "verdict": "delayed"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
+   "lag_months": null,
    "promise": "Meet monthly run rate of 35 to 40 crores per month potentially much ea",
    "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
+   "lag_months": null,
    "promise": "Acquire nearly 2,048 Blackwell, majorly B200",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
+   "lag_months": null,
    "promise": "Potentially double Blackwell capacity all the way to 4,096 before Marc",
    "verdict": "missed"
   },
   {
    "by": "code",
    "call": "14-Nov-2025",
+   "lag_months": null,
    "promise": "Hit EBITDA margin close to 70% plus/minus something from an overall co",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
+   "lag_months": null,
    "promise": "Fully utilize the Rs 450 crores debt facility by end of March or earli",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "19-Jan-2026",
+   "lag_months": null,
    "promise": "Hit MRR close to INR35 crores to INR40 crores around March 2026 or the",
    "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "19-Jan-2026",
+   "lag_months": null,
    "promise": "Go live with the procured Blackwell capacity before the end of Q4.",
    "verdict": "unverifiable (audit rejected)"
   },
   {
    "by": "judge",
    "call": "22-Apr-2026",
+   "lag_months": null,
    "promise": "Cluster 1 B200 1024 to go live somewhere in the mid-May",
    "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "22-Apr-2026",
+   "lag_months": null,
    "promise": "Deploy another cluster of 1024 in a couple of months",
    "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",
    "call": "22-Apr-2026",
+   "lag_months": null,
    "promise": "Deploy 2,048 B200 in the financial year",
    "verdict": "unverifiable"
   }
