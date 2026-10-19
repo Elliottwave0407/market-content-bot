@@ -116,9 +116,9 @@ def main(sym):
                 m_ = re.search(r"\+(\d+)q", str((x.get("code_check") or {}).get("detail") or ""))
                 if m_: lag = 3 * int(m_.group(1))
             if not lab: continue
-            key = (c["filed"][3:], " ".join(sorted(re.findall(r"[a-z]{4,}", x["promise"].lower()))[:6]))
-            if key in seen_k: continue
-            seen_k.add(key); rows_w.append((c["filed"], x["promise"][:70], lab, src_, lag))
+            ws = set(re.findall(r"[a-z0-9]{3,}", x["promise"].lower()))
+            if any(m_ == c["filed"][3:] and l_ == lab and len(ws & w_) / max(len(ws | w_), 1) >= 0.45 for m_, l_, w_ in seen_k): continue   # same promise recorded twice (e.g. original + revised transcript)
+            seen_k.add((c["filed"][3:], lab, frozenset(ws))); rows_w.append((c["filed"], x["promise"][:70], lab, src_, lag))
     W = {"delivered": 1.0, "delayed": 0.5, "partly": 0.5, "missed": 0.0}
     TOL = 3   # months: a delay of up to 3 months is within normal business variance and earns full credit (shown separately in the ledger)
     def wt(l, lag): return 1.0 if (l == "delayed" and lag is not None and lag <= TOL) else W[l]

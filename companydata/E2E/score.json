@@ -51,13 +51,13 @@
   },
   "walk_the_talk": {
    "max": 10,
-   "note": "15 verifiable promises across 11 calls: 11 delivered, 2 delayed (1 of them within 3 months, counted as on time), 0 partly, 2 missed (delivered=1, delayed over 3 months/partly=0.5, missed=0). 17 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
-   "score": 8.3
+   "note": "14 verifiable promises across 11 calls: 10 delivered, 2 delayed (1 of them within 3 months, counted as on time), 0 partly, 2 missed (delivered=1, delayed over 3 months/partly=0.5, missed=0). 17 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
+   "score": 8.2
   }
  },
  "provisional_max": 100,
- "provisional_total": 71.3,
- "scored_so_far": 54.3,
+ "provisional_total": 70.2,
+ "scored_so_far": 54.2,
  "trust_gate": {
   "credibility_signals_available": 6,
   "enough_data": true,
@@ -171,13 +171,6 @@
    "lag_months": null,
    "promise": "Raise around Rs.800 crores over the next 12 months as ideal capex expa",
    "verdict": "excluded"
-  },
-  {
-   "by": "code",
-   "call": "31-May-2024",
-   "lag_months": null,
-   "promise": "Achieve an MRR potential of 14 to 16 crores from current capex over ne",
-   "verdict": "delivered"
   },
   {
    "by": "judge",
