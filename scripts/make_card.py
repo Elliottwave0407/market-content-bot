@@ -144,10 +144,10 @@ def by_type():
         h += f'<div class="bar" style="margin:6px 0"><div class="n" style="width:236px;white-space:nowrap;font-size:20px">{lab}</div><div style="display:flex;gap:2px;width:215px">{seg}</div><div style="flex:1;font-size:19px;color:var(--mut);white-space:nowrap;font-weight:600">{a} on time{(" · "+str(b_)+" late") if b_ else ""}{(" · "+str(c)+" missed") if c else ""}</div></div>'
     return h
 def qoq(W=330, H_=118):
-    ls = L8[-7:]; g = W / len(ls); gr = [100 * (rev[l] / rev[labs[labs.index(l) - 1]] - 1) for l in ls]; m = max(abs(x) for x in gr); s = f'<svg width="{W}" height="{H_+50}" viewBox="0 -18 {W} {H_+50}">'; base = H_ * 0.66
+    ls = L8[-7:]; g = W / len(ls); gr = [100 * (rev[l] / rev[labs[labs.index(l) - 1]] - 1) for l in ls]; m = max(abs(x) for x in gr); s = f'<svg width="{W}" height="{H_+72}" viewBox="0 -18 {W} {H_+72}">'; base = H_ * 0.66
     for i, (l, v) in enumerate(zip(ls, gr)):
         h_ = abs(v) / m * base * 0.82; x = i * g + 6; y = base - h_ if v >= 0 else base
-        s += f'<rect x="{x}" y="{y}" width="{g-12}" height="{h_}" fill="{"#0e8f63" if v>=0 else "#c0392b"}"/><text x="{x+(g-12)/2}" y="{(y-5) if v>=0 else (y+h_+17)}" text-anchor="middle" font-size="17" font-weight="700" fill="#14213a">{"−" if v<0 else "+"}{r0(abs(v))}%</text><text x="{x+(g-12)/2}" y="{H_+26}" text-anchor="middle" font-size="17" font-weight="600" fill="#5b6b82">{l[:3]}</text>'
+        s += f'<rect x="{x}" y="{y}" width="{g-12}" height="{h_}" fill="{"#0e8f63" if v>=0 else "#c0392b"}"/><text x="{x+(g-12)/2}" y="{(y-5) if v>=0 else (y+h_+17)}" text-anchor="middle" font-size="17" font-weight="700" fill="#14213a">{"−" if v<0 else "+"}{r0(abs(v))}%</text><text x="{x+(g-12)/2}" y="{H_+26}" text-anchor="middle" font-size="17" font-weight="600" fill="#5b6b82">{l[:3]}</text><text x="{x+(g-12)/2}" y="{H_+46}" text-anchor="middle" font-size="16" font-weight="500" fill="#8090a6">{l[4:]}</text>'
     return s + "</svg>"
 dots = "".join(f'<div class="dot" style="background:var(--{c})"></div>' for c, k in [("g", nd), ("a", nl), ("r", nm)] for _ in range(k))
 lh = "".join(f'<div class="lg"><i style="background:var(--{r["c"]})"></i><span>{r["t"]}</span></div>' for r in COPY.get("ledger", []))
