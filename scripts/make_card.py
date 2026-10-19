@@ -106,13 +106,13 @@ def chart(W=520, H=215):
 hd_ = lambda r: datetime.strptime(r["date"], "%d-%b-%Y")
 hs = sorted([r for r in HOLD if hd_(r) >= datetime(2024, 6, 1)], key=hd_)
 def line_hold(W=296, H_=136):
-    vals = [float(r["promoter_pct"]) for r in hs]; lo, hi = min(vals) - 5, max(vals) + 12; n_ = len(vals)
+    vals = [float(r["promoter_pct"]) for r in hs]; lo, hi = min(vals) - 5, max(vals) + 16; n_ = len(vals)
     pt = [(14 + i * (W - 28) / (n_ - 1), H_ - (v - lo) / (hi - lo) * H_) for i, v in enumerate(vals)]
     drops = [(vals[i - 1] - vals[i], i) for i in range(1, n_)]; ki = max(drops)[1] if drops else 2
     s = f'<svg width="{W}" height="{H_+42}" viewBox="0 0 {W} {H_+42}"><polyline fill="none" stroke="#3b5b92" stroke-width="3" points="' + " ".join(f"{a},{b}" for a, b in pt) + '"/>'
     for i, ((a, b), v) in enumerate(zip(pt, vals)):
         s += f'<circle cx="{a}" cy="{b}" r="4" fill="#3b5b92"/>'
-        if i in (0, ki, n_ - 1): s += f'<text x="{a+(8 if i==0 else 0)}" y="{b-9}" text-anchor="{"start" if i==0 else "end" if i==n_-1 else "middle"}" font-size="19" font-weight="700" fill="#14213a">{round(v)}%</text>'
+        if i in (0, ki, n_ - 1): s += f'<text x="{a+(8 if i in (0, ki) else 0)}" y="{b-9}" text-anchor="{"start" if i in (0, ki) else "end"}" font-size="19" font-weight="700" fill="#14213a">{round(v)}%</text>'
     ia = pt[ki]; lab = (COPY.get("holding_note") or {}).get("label", "")
     s += f'<line x1="{ia[0]}" y1="{ia[1]+6}" x2="{ia[0]}" y2="{H_+4}" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3 3"/><text x="{ia[0]+6}" y="{H_-4}" font-size="17" font-weight="600" fill="#c0392b">{lab}</text>'
     s += f'<text x="0" y="{H_+34}" font-size="17" font-weight="500" fill="#8090a6">{hd_(hs[0]).strftime("%b %y")}</text><text x="{W}" y="{H_+34}" text-anchor="end" font-size="17" font-weight="500" fill="#8090a6">{hd_(hs[-1]).strftime("%b %y")}</text></svg>'
