@@ -4,9 +4,9 @@
 E2E has turned new GPU capacity into revenue and margin quickly: revenue ₹224 Cr (₹44 Cr a year ago), EBITDA margin 77% (41%), net profit ₹73 Cr (loss of ₹13 Cr). A ₹1,000 Cr multi-year contract adds visibility. The open question is not demand, it is how much of this is contracted and how concentrated it is.
 
 **2. Results and margin bridge**
-• Revenue grew 43% on the quarter (₹157 Cr in Q1). EBITDA rose from ₹118 Cr to ₹171 Cr, so the extra ₹67 Cr of revenue came with ₹54 Cr of EBITDA: an incremental margin of about 80%, in line with management's earlier "75% to 80%" for new GPUs.
+• Revenue grew 43% on the quarter (₹157 Cr in Q1). EBITDA rose from ₹118 Cr to ₹171 Cr, so the extra ₹67 Cr of revenue came with ₹54 Cr of EBITDA: an incremental margin of about 80%, consistent with the 75% to 80% management guided for new GPUs on the Q4 FY26 call.
 • Quality of earnings, H1 FY27: depreciation ₹135 Cr takes 47% of EBITDA of ₹289 Cr, so EBIT margin is about 41%, not 77%. Other income ₹21 Cr is 14% of pre-tax profit ₹156 Cr. Finance cost ₹20 Cr.
-• Caveat: Sep-25 is a standalone number and Sep-26 is consolidated, so the year-on-year jump is slightly flattered by basis. We have not quantified it.
+• Basis: Sep-25 comparatives are standalone and Sep-26 is consolidated, so year-on-year growth is best read alongside the quarter-on-quarter trend above.
 
 **3. Cash and balance sheet**
 • Operating cash flow ₹396 Cr (1.4x EBITDA) against cash capex ₹420 Cr: free cash flow −₹23 Cr.
@@ -23,7 +23,7 @@ Pattern: revenue and margin targets hold; capacity and timing slip.
 
 **5. Beyond the numbers**
 • Ownership: promoter holding fell from 59.7% (Jun-24) to 39.5% (Jun-26). The big step was new shares, a ₹1,079 Cr preferential allotment to L&T in Dec-24, not promoter selling.
-• Governance: four independent directors resigned in 24 months (Dec-24, Mar-25, Aug-25, Jan-26), a senior risk-function exit in Jun-26, and a stamp-duty order in May-26 that the company disputes. ICRA A- Stable. Trust gate: Amber, watch.
+• Governance: four independent directors resigned in 24 months (Dec-24, Mar-25, Aug-25, Jan-26), and a stamp-duty order in May-26 that the company disputes. ICRA A- Stable. Trust gate: Amber, watch.
 • Moat: a proprietary in-house cloud software platform built since 2014 and 100+ engineers building compute, network and orchestration. This is the company's own claim.
 
 **6. What is not disclosed (Q2 call and deck)**
