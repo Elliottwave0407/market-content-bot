@@ -1,0 +1,25 @@
+name: Analysis Send
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "Company symbol"
+        default: "E2E"
+      send:
+        description: "1 = send to FinGod_Research_Desk, 0 = dry run (render only)"
+        default: "0"
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests playwright && playwright install --with-deps chromium
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ANALYSIS_CHAT_ID: ${{ secrets.TELEGRAM_ANALYSIS_CHAT_ID }}
+          SEND: ${{ github.event.inputs.send }}
+          SYM: ${{ github.event.inputs.symbol }}
+        run: python scripts/analysis_send.py
