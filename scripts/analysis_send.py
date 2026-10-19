@@ -4,6 +4,12 @@ import os, sys, subprocess, re, requests
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SYM = os.environ.get("SYM", "E2E").upper(); SEND = os.environ.get("SEND") == "1"
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", ""); CHAT = os.environ.get("TELEGRAM_ANALYSIS_CHAT_ID", "").strip()
+if os.environ.get("TEST") == "1":     # three sample messages to try the buttons
+    sys.path.insert(0, os.path.join(ROOT, "scripts")); import xbuttons as xb
+    for i in (1, 2, 3):
+        r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", data={"chat_id": CHAT, "text": f"Button test {i}: E2E Networks Q2 FY27 sample text. Tap a button.", "reply_markup": xb.markup("Button test " + str(i), fix=True)}, timeout=30).json()
+        print("test", i, r.get("ok"), (r.get("description") or "")[:80])
+    sys.exit(0)
 subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "make_card.py"), SYM, "--final"], check=True)
 subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "make_note.py"), SYM], check=True, stdout=subprocess.DEVNULL)
 png = os.path.join(ROOT, "cards", SYM, "card.png"); note = open(os.path.join(ROOT, "cards", SYM, "note.md")).read()
