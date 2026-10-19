@@ -1,5 +1,5 @@
 {
- "audit_model": "gemini-3.1-flash-lite",
+ "audit_model": "gemini-3.5-flash",
  "docs": [
   [
    "call",
@@ -22,48 +22,236 @@
    "16-Oct-2026"
   ]
  ],
- "extract_model": "gemini-flash-lite-latest",
- "extracted_on": "2026-10-18",
+ "extract_model": "gemini-flash-latest",
+ "extracted_on": "2026-10-19",
  "facts": [
   {
    "audit": {
     "id": "0",
-    "reason": "The passage explicitly states the binding term sheet details, value, and validity period as claimed.",
+    "reason": "Directly stated in the company presentation.",
     "supports": "yes"
    },
    "fact": {
-    "detail": "Entered into a binding term sheet worth ~₹1,000 Cr (excl. taxes) with an India-based Sovereign AI company for NVIDIA Blackwell cloud GPUs and allied services valid up to June 2029.",
+    "detail": "Binding term sheet worth ~₹1,000 Cr (excl. taxes) with an India-based Sovereign AI company for NVIDIA Blackwell cloud GPUs and allied services valid up to June 2029.",
     "quote": "Entered into a binding term sheet worth ~₹1,000 Cr (excl. taxes) with an India-based Sovereign AI company for NVIDIA Blackwell cloud GPUs and allied services valid up to June 2029."
    },
    "path": "/contracted_demand"
   },
   {
    "audit": {
-    "id": "2",
-    "reason": "The passage explicitly mentions full stack in-house engineering and the proprietary platforms TIR and Jarvislabs.ai.",
+    "id": "1",
+    "reason": "Directly stated by management in the transcript.",
     "supports": "yes"
    },
    "fact": {
-    "barrier": "Full stack in-house engineering and proprietary sovereign AI platforms (TIR and Jarvislabs.ai)",
-    "quote": "Full stack, in-house — 100+ engineers build our compute, networking, orchestration & AI software. Own AI platforms — two in-house platforms: TIR (training, fine-tuning, RAG & model endpoints) and Jarvislabs.ai (developer friendly GPU cloud)."
+    "detail": "Targeting INR 35 crores to INR 40 crores of MRR around March 2026",
+    "metric": "Exit MRR",
+    "quote": "And we continue to hold our target of being able to hit somewhere close to INR35 crores to INR40 crores of MRR around March 2026 or thereabouts."
+   },
+   "path": "/quantified_guidance[0]"
+  },
+  {
+   "audit": {
+    "id": "2",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "detail": "Estimated ~INR 250 crores ARR from 1,024 Blackwell GPUs",
+    "metric": "Annual Recurring Revenue (ARR)",
+    "quote": "From an ARR perspective, we are looking at somewhere close to maybe about INR250-odd crores per year or so with 1,024 Blackwell."
+   },
+   "path": "/quantified_guidance[1]"
+  },
+  {
+   "audit": {
+    "id": "6",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "name": "International",
+    "quote": "And international was closer to 37% or so.",
+    "share_pct": 37
+   },
+   "path": "/segments[0]"
+  },
+  {
+   "audit": {
+    "id": "7",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "name": "India AI",
+    "quote": "Now from a revenue composition in the previous quarter, I think India AI revenue was about 20%, 21%.",
+    "share_pct": 21
+   },
+   "path": "/segments[1]"
+  },
+  {
+   "audit": {
+    "id": "8",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "detail": "Incremental EBITDA margin for newly deployed GPU assets breaks even quickly and reaches 75% to 80%.",
+    "quote": "From an overall perspective, the additional EBITDA for the new GPU would tend to around 75% to 80%."
+   },
+   "path": "/segment_margin"
+  },
+  {
+   "audit": {
+    "id": "9",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "barrier": "Proprietary in-house cloud software platform developed since 2014",
+    "quote": "So we remain one of the unique businesses in India, who has built infrastructure software product. Sitting here in India with a team, which has the experience of building these products all the way back since 2014 onwards since when we started the development of our cloud platform."
    },
    "path": "/moat[0]"
+  },
+  {
+   "audit": {
+    "id": "10",
+    "reason": "Directly stated in the company presentation.",
+    "supports": "yes"
+   },
+   "fact": {
+    "barrier": "Full-stack in-house engineering team building compute, networking, and orchestration software",
+    "quote": "Full stack, in-house — 100+ engineers build our compute, networking, orchestration & AI software."
+   },
+   "path": "/moat[1]"
+  },
+  {
+   "audit": {
+    "id": "11",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "barrier": "Data residency and complete sovereign legal jurisdiction over compute inside India",
+    "quote": "So obviously, as a cloud-based out of India and headquartered in India, we provide a complete sovereignty over there to our customers."
+   },
+   "path": "/moat[2]"
+  },
+  {
+   "audit": {
+    "id": "13",
+    "reason": "Directly stated by management in the transcript.",
+    "supports": "yes"
+   },
+   "fact": {
+    "by": "FY27",
+    "metric": "Capacity utilization",
+    "quote": "But then given the fact that we are very, very focused on increasing the utilization so we continue to target somewhere between 80% to 90% of the utilization to be done at some point of time in the -- in the course of the next financial year.",
+    "value": "80% to 90%"
+   },
+   "path": "/long_term_targets[1]"
+  },
+  {
+   "audit": {
+    "id": "14",
+    "reason": "Directly stated in the company presentation.",
+    "supports": "yes"
+   },
+   "fact": {
+    "fact": "Global GPU demand for AI training and inference outstrips hyperscale capacity, accelerating neocloud providers.",
+    "quote": "GPU demand for AI training and inference continues to outstrip hyperscale capacity — pulling capital into purpose-built neocloud providers worldwide"
+   },
+   "path": "/sector[0]"
   }
  ],
- "n_extracted": 3,
+ "n_extracted": 19,
  "rejected": [
   {
    "audit": {
-    "id": "1",
-    "reason": "The passage confirms the GPU count but does not mention the 80% utilization percentage.",
+    "id": "3",
+    "reason": "Management specified a range of INR 600 to 650 crores rather than exactly 600 crores.",
     "supports": "partly"
    },
    "fact": {
-    "detail": "5,100 approx. cloud GPUs live at Q1 FY27 exit",
-    "quote": "5100 approx. cloud GPUs live at Q1 FY27 exit",
+    "amount_cr": 600,
+    "period": "Procurement of 1,024 Blackwell series GPUs",
+    "quote": "So for the Blackwell series, roughly the capex would be in the range of INR600 crores to INR650 crores, part of which is funded through a term loan, which would we have taken from the Axis and HDFC Bank."
+   },
+   "path": "/capex_plan"
+  },
+  {
+   "audit": {
+    "id": "4",
+    "reason": "Passage confirms 80% utilization, but does not state 5,100 GPUs or 1,024 B200s.",
+    "supports": "partly"
+   },
+   "fact": {
+    "detail": "~5,100 cloud GPUs live including 1,024 NVIDIA B200s, with 1,024+ B200s planned in deployment",
+    "quote": "So this is closer to overall capacity utilization of around 80% in the March month.",
     "utilization_pct": 80
    },
    "path": "/capacity"
+  },
+  {
+   "audit": {
+    "id": "5",
+    "reason": "The 20% figure was introduced in an analyst's question, though management agreed with the premise.",
+    "supports": "partly"
+   },
+   "fact": {
+    "detail": "Management views ROE expectations north of 20% as standard for technology businesses over the long run.",
+    "quote": "Broadly, that's the way we look at any technology business. So yes, absolutely."
+   },
+   "path": "/returns_disclosed"
+  },
+  {
+   "audit": {
+    "id": "12",
+    "reason": "The 6,000 figure was introduced by an analyst, though management agreed it is the minimum.",
+    "supports": "partly"
+   },
+   "fact": {
+    "by": "FY27 end",
+    "metric": "Capacity",
+    "quote": "I would not want to place a limiting number over there, but you could say that that is the minimum number.",
+    "value": "Minimum 6,000 GPUs"
+   },
+   "path": "/long_term_targets[0]"
+  },
+  {
+   "audit": null,
+   "fact": {
+    "fact": "India's total data center pipeline stands at 8.33 GW, over five times the live capacity.",
+    "quote": "8.33 GW India’s total data-centre pipeline — over 5× today’s ~1.6 GW live capacity"
+   },
+   "path": "/sector[1]"
+  },
+  {
+   "audit": null,
+   "fact": {
+    "quote": "Global supply chains have been impacted somewhat.",
+    "text": "Global supply chain disruptions impacting delivery of critical hardware components for GPU deployments.",
+    "type": "supply"
+   },
+   "path": "/risks[0]"
+  },
+  {
+   "audit": null,
+   "fact": {
+    "quote": "On the software and operational side, we have made quite a few changes in terms of increasing the investments into site reliability engineering and working with some of the back-end vendors to strengthen our overall infrastructure.",
+    "text": "Site reliability and infrastructure downtime risks across operating data center locations.",
+    "type": "execution"
+   },
+   "path": "/risks[1]"
+  },
+  {
+   "audit": null,
+   "fact": {
+    "quote": "These factors include, but are not limited to, changes in economic and market conditions, demand for AI and cloud infrastructure services, competitive dynamics, technology advancements, availability and pricing of GPU infrastructure, execution of expansion plans, customer adoption, regulatory developments, cybersecurity risks, access to capital, and other risks beyond the Company's control.",
+    "text": "Capital access and financing risks necessary to scale GPU infrastructure.",
+    "type": "funding"
+   },
+   "path": "/risks[2]"
   }
  ]
 }

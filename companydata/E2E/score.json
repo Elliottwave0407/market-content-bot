@@ -51,13 +51,13 @@
   },
   "walk_the_talk": {
    "max": 10,
-   "note": "17 verifiable promises across 11 calls: 13 delivered, 3 delayed, 0 partly, 1 missed (delivered=1, delayed/partly=0.5, missed=0). 15 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
-   "score": 8.5
+   "note": "15 verifiable promises across 11 calls: 11 delivered, 2 delayed, 0 partly, 2 missed (delivered=1, delayed/partly=0.5, missed=0). 17 promises could not be verified from filings/calls and are not scored. Numeric promises settled by code from filed numbers; event promises judged by a strong model reading the later calls in full, with a verbatim quote verified in code and audited by a second model (older cheap-model verdicts used only where the strong judge has not run yet).",
+   "score": 8.0
   }
  },
  "provisional_max": 100,
- "provisional_total": 60.0,
- "scored_so_far": 54.5,
+ "provisional_total": 72.0,
+ "scored_so_far": 54.0,
  "trust_gate": {
   "credibility_signals_available": 6,
   "enough_data": true,
@@ -184,7 +184,7 @@
    "by": "judge",
    "call": "04-Nov-2024",
    "promise": "Do more capex than INR 800 crores over the next couple of years.",
-   "verdict": "delivered"
+   "verdict": "unverifiable"
   },
   {
    "by": "judge",
@@ -196,7 +196,7 @@
    "by": "judge",
    "call": "06-May-2025",
    "promise": "Hit an MRR of INR35 crores to INR40 crores by end of March '26 or a qu",
-   "verdict": "unverifiable"
+   "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "code",
@@ -214,13 +214,13 @@
    "by": "judge",
    "call": "24-Jul-2025",
    "promise": "Achieve an exit MRR anywhere between Rs. 32 crores to Rs. 38 crores by",
-   "verdict": "unverifiable"
+   "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",
    "call": "24-Jul-2025",
    "promise": "Get the Chennai facility operational up and running by end of July.",
-   "verdict": "unverifiable"
+   "verdict": "unverifiable (audit rejected)"
   },
   {
    "by": "code",
@@ -238,19 +238,19 @@
    "by": "judge",
    "call": "14-Nov-2025",
    "promise": "Meet monthly run rate of 35 to 40 crores per month potentially much ea",
-   "verdict": "unverifiable (models disagree)"
+   "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
    "promise": "Acquire nearly 2,048 Blackwell, majorly B200",
-   "verdict": "delivered"
+   "verdict": "unverifiable"
   },
   {
    "by": "judge",
    "call": "14-Nov-2025",
    "promise": "Potentially double Blackwell capacity all the way to 4,096 before Marc",
-   "verdict": "unverifiable"
+   "verdict": "missed"
   },
   {
    "by": "code",
@@ -262,7 +262,7 @@
    "by": "judge",
    "call": "14-Nov-2025",
    "promise": "Fully utilize the Rs 450 crores debt facility by end of March or earli",
-   "verdict": "unverifiable (models disagree)"
+   "verdict": "unverifiable"
   },
   {
    "by": "judge",
@@ -274,19 +274,19 @@
    "by": "judge",
    "call": "19-Jan-2026",
    "promise": "Go live with the procured Blackwell capacity before the end of Q4.",
-   "verdict": "delayed"
+   "verdict": "unverifiable (audit rejected)"
   },
   {
    "by": "judge",
    "call": "22-Apr-2026",
    "promise": "Cluster 1 B200 1024 to go live somewhere in the mid-May",
-   "verdict": "unverifiable"
+   "verdict": "delivered"
   },
   {
    "by": "judge",
    "call": "22-Apr-2026",
    "promise": "Deploy another cluster of 1024 in a couple of months",
-   "verdict": "delivered"
+   "verdict": "unverifiable (weak evidence)"
   },
   {
    "by": "judge",

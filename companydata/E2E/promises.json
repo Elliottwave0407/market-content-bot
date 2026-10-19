@@ -15,21 +15,16 @@
      "quote": "broadly, I think like 75% of the funds will at least go towards augmenting the infrastructure capacity, which majorly includes the GPUs. And for the remaining 25%, we have taken that in the general corporate corpus",
      "topic": "funding",
      "verdict": {
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts discuss GPU capacity and infrastructure generally, but do not provide verifiable proof of fund utilization percentages.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The transcripts show fund utilization figures but never confirm the final 75% infrastructure and 25% general corporate/software allocation breakdown.",
+      "source_filed": null,
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -40,21 +35,20 @@
      "quote": "we do intend to establish at least like one new major cloud zone, south of India. So, that would also include GPUs.",
      "topic": "capacity",
      "verdict": {
-      "evidence_quote": "Like in Chennai we are more confident because of the partnership that we have that we should be able to ramp up to whatever capacity we need.",
-      "judged_on": "2026-10-18",
+      "audit": {
+       "id": "3c74d2946ded-1",
+       "reason": "Management confirms that the Chennai location went live on August 1st and capacity is online.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "So, our Chennai location went live from 1st of August. Now, all of our capacity today is completely online and available for use by our customers.",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed capacity in Chennai, establishing the promised cloud zone south of India.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The Chennai cloud zone in South India, housing a GPU cluster, went live and operational on August 1, 2025.",
+      "source_filed": "14-Nov-2025",
+      "v2_label": "delivered"
      }
     },
     {
@@ -65,21 +59,16 @@
      "quote": "over the next couple of years we should definitely do more capex than INR800 crores.",
      "topic": "capacity",
      "verdict": {
-      "evidence_quote": "So, we have deployed 2,017 million till December.",
-      "judged_on": "2026-10-18",
-      "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management deployed over INR 800 crores by December 2024, fulfilling the capex promise early.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable",
+      "method": "strong-context+audit",
+      "reason": "Management discusses various capex items and cluster investments across calls, but no statement directly confirms cumulative capex exceeding INR 800 crores.",
+      "source_filed": null,
+      "v2_label": "delivered"
      }
     }
    ]
@@ -99,21 +88,20 @@
      "quote": "where we are targeting this number to be by end of say March '26 or maybe a quarter here or there",
      "topic": "revenue",
      "verdict": {
+      "audit": {
+       "id": "1befbef873de-0",
+       "reason": "Management generically mentions meeting guidance, but provides no specific MRR numbers.",
+       "supports": "partly"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "The excerpts do not provide the final MRR outcome achieved in March 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (weak evidence)",
+      "method": "strong-context+audit",
+      "reason": "Management confirmed at the end of Q4 FY26 (March 2026) that they met and exceeded their exit MRR target.",
+      "source_filed": "22-Apr-2026",
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -148,21 +136,16 @@
      "quote": "So, if we look at like , say next 2-3 years, we would be targeting anywhere close to 10,000 GPUs plus overall on our platform. Today we are at 3,700. So, anywhere next 2 years we should be to add anywhere between 6,000 or so GPUs maybe even more.",
      "topic": "capacity",
      "verdict": {
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts do not confirm the complete delivery of the targeted GPUs within the two-year timeframe.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The 2-year deadline (May 2027) has not passed as of October 2026, and platform capacity reached 5,100 GPUs.",
+      "source_filed": null,
+      "v2_label": "unverifiable"
      }
     }
    ]
@@ -202,21 +185,20 @@
      "quote": "So, with these two orders, it looks like potentially we should be able to meet our monthly run rate number hopefully much earlier than March.",
      "topic": "revenue",
      "verdict": {
+      "audit": {
+       "id": "e6c67c6b30dc-0",
+       "reason": "Management generically mentions meeting guidance, but provides no specific monthly run rate figures.",
+       "supports": "partly"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable (models disagree)",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts do not explicitly confirm whether the monthly run rate of 35-40 crores was achieved by March 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (weak evidence)",
+      "method": "strong-context+audit",
+      "reason": "Management confirmed that by the end of Q4 FY26 (March 2026), they met and exceeded their target MRR guidance.",
+      "source_filed": "22-Apr-2026",
+      "v2_label": "unverifiable (models disagree)"
      }
     },
     {
@@ -227,21 +209,16 @@
      "quote": "we are already in very advanced stages of placing the orders for nearly 2,048 Blackwell, majorly B200.",
      "topic": "capacity",
      "verdict": {
-      "evidence_quote": "We have already received in our Chennai location 1,024 B200 GPUs.",
-      "judged_on": "2026-10-18",
-      "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed receipt of initial B200 GPUs with further deployment ongoing as promised.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable",
+      "method": "strong-context+audit",
+      "reason": "By July 2026, 1,024 B200s were received and the remaining 1,024 were expected soon, leaving final acquisition status unverifiable as of October 2026.",
+      "source_filed": null,
+      "v2_label": "delivered"
      }
     },
     {
@@ -252,21 +229,20 @@
      "quote": "we might decide to kind of like double up that number all the way to 4,096 before March.",
      "topic": "capacity",
      "verdict": {
-      "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "The provided excerpts do not contain any direct statements regarding whether the Blackwell capacity was doubled to 4,096 by March 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "audit": {
+       "id": "e6c67c6b30dc-2",
+       "reason": "In April 2026, management confirms 1,024 Blackwell goes live mid-May, confirming 4,096 was missed by March.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "We expect our Cluster 1 B200 1024 to go live somewhere in the mid-May, and in a couple of months, we are expecting to be able to deploy another cluster of 1024 which has already been planned.",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "missed",
+      "method": "strong-context+audit",
+      "reason": "By March 2026, the first cluster of 1,024 Blackwell GPUs was only going live in mid-May, missing the 4,096 capacity target.",
+      "source_filed": "22-Apr-2026",
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -301,21 +277,16 @@
      "quote": "by end of March or earlier April, that completely should be utilized.",
      "topic": "funding",
      "verdict": {
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable (models disagree)",
-      "method": "retrieval+consensus",
-      "reason": "The excerpts do not explicitly confirm whether the Rs 450 crores debt facility was fully utilized by April 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable",
+      "method": "strong-context+audit",
+      "reason": "The call mentions loan levels as of July 2026, but does not confirm full utilization of the facility by March or early April 2026.",
+      "source_filed": null,
+      "v2_label": "unverifiable (models disagree)"
      }
     }
    ]
@@ -358,21 +329,20 @@
      "quote": "So, we have spoken about we are going to overall go and deploy almost like Rs. 150 to 200 crores of hardware over next say 12 months. So, 12 could become 15 but broadly that number remains the same.",
      "topic": "capex",
      "verdict": {
-      "evidence_quote": "For the CAPEX done, is already deployed on our cloud platform, how quickly can we sell is like something that we do not make a statement on , that is something we like to look in the past once we have done it.",
-      "judged_on": "2026-10-18",
+      "audit": {
+       "id": "6520f735f528-1",
+       "reason": "Management explicitly states deploying Rs. 201 crores (2,017 million) of CAPEX by December.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "So, we have deployed 2,017 million till December. That is Rs. 201 crores.",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed the 150 crore capex is already deployed on their cloud platform.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "Management confirmed deploying Rs. 201 crores by December 2024, fulfilling the capex deployment target within 12 to 15 months.",
+      "source_filed": "28-Jan-2025",
+      "v2_label": "delivered"
      }
     },
     {
@@ -383,21 +353,20 @@
      "quote": "For the current plans, basically debt and internal cash approvals make it possible for us to be able to do that without raising additional equity.",
      "topic": "funding",
      "verdict": {
+      "audit": {
+       "id": "6520f735f528-2",
+       "reason": "Management confirms raising INR 405 crores through a preferential equity issue, confirming equity was raised.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "missed",
-      "method": "retrieval+consensus",
-      "reason": "Management promised no additional equity in the short term, but raised INR 4,056 million via equity shares.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "missed"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "missed"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The company raised Rs. 405.6 crore through equity shares by September 2024, failing to fund capex without equity dilution in the short term.",
+      "source_filed": "04-Nov-2024",
+      "v2_label": "missed"
      }
     },
     {
@@ -460,21 +429,16 @@
      "quote": "And we continue to hold our target of being able to hit somewhere close to INR35 crores to INR40 crores of MRR around March 2026 or thereabouts.",
      "topic": "revenue",
      "verdict": {
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts do not contain management statements about MRR reaching INR35-40 crores by March 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "Management never explicitly states the March 2026 MRR figure in their remarks, and analyst figures cannot be used as evidence.",
+      "source_filed": null,
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -485,21 +449,20 @@
      "quote": "So we are expecting in the -- hopefully, before the end of Q4, we should be able to go live with the Blackwell that we have already procured",
      "topic": "launch",
      "verdict": {
-      "evidence_quote": "So in this quarter we have had a couple of milestones, major amongst those being that we went live with our Blackwell.",
-      "judged_on": "2026-10-18",
-      "label": "delayed",
-      "method": "retrieval+consensus",
-      "reason": "Promised by end of Q4 FY26, but management confirmed it went live in the subsequent quarter (Q1 FY27).",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delayed"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delayed"
-       }
-      ]
+      "audit": {
+       "id": "83caf23ca23a-1",
+       "reason": "Management states 1,024 Blackwell went online during the quarter, contradicting the verdict of delayed.",
+       "supports": "no"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (audit rejected)",
+      "method": "strong-context+audit",
+      "reason": "The Blackwell capacity went live in Q1 FY27 (mid-May 2026) instead of before the end of Q4 FY26.",
+      "source_filed": "28-Jul-2026",
+      "v2_label": "delayed"
      }
     }
    ]
@@ -519,21 +482,20 @@
      "quote": "We expect our Cluster 1 B200 1024 to go live somewhere in the mid-May",
      "topic": "launch",
      "verdict": {
-      "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed on 28-Jul-2026 that the B200 deployed mid-May achieved maximal utilization.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "audit": {
+       "id": "bdf33da5118f-0",
+       "reason": "Management explicitly confirms that 1,024 Blackwell GPUs went online and were put on revenue.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "So in this quarter we have had a couple of milestones, major amongst those being that we went live with our Blackwell. So, 1,024 Blackwell that we received during last few months went online, and they were put on revenue.",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "delivered",
+      "method": "strong-context+audit",
+      "reason": "Management confirmed that the cluster of 1,024 Blackwell GPUs went online and began generating revenue during the quarter.",
+      "source_filed": "28-Jul-2026",
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -544,21 +506,20 @@
      "quote": "in a couple of months, we are expecting to be able to deploy another cluster of 1024 which has already been planned",
      "topic": "capacity",
      "verdict": {
-      "evidence_quote": "So, 1,024 Blackwell that we received during last few months went online, and they were put on revenue.",
-      "judged_on": "2026-10-18",
-      "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management confirmed on 28-Jul-2026 that the cluster of 1,024 went live, fulfilling the April promise.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "audit": {
+       "id": "bdf33da5118f-1",
+       "reason": "Management states 1,024 B200 GPUs are expected soon, discussing the status without explicitly proving a missed deadline.",
+       "supports": "partly"
+      },
+      "audit_model": "gemini-3.5-flash",
+      "evidence_quote": "",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (weak evidence)",
+      "method": "strong-context+audit",
+      "reason": "Three months after the promise, the second cluster of 1,024 B200 GPUs had not been deployed and was still only expected soon.",
+      "source_filed": "28-Jul-2026",
+      "v2_label": "delivered"
      }
     },
     {
@@ -569,21 +530,16 @@
      "quote": "2,048 plus some spares that we are planning to deploy in this financial year",
      "topic": "capacity",
      "verdict": {
+      "audit": null,
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts do not confirm whether the full target of 2,048 B200 units was deployed.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The target is for the full financial year FY27, which remains ongoing as of the Q1 FY27 earnings call.",
+      "source_filed": null,
+      "v2_label": "unverifiable"
      }
     }
    ]
@@ -603,21 +559,20 @@
      "quote": "We believe that we are on track to achieve an exit MRR anywhere between, say, Rs. 32 crores to Rs. 38 crores by the end of the year in March.",
      "topic": "revenue",
      "verdict": {
+      "audit": {
+       "id": "873453b6130f-0",
+       "reason": "Management generically mentions meeting guidance, but provides no specific MRR figures.",
+       "supports": "partly"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "Excerpts discuss targets and guidance but do not directly confirm the final exit MRR achieved in March 2026.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (weak evidence)",
+      "method": "strong-context+audit",
+      "reason": "Management confirmed that they met and exceeded their March 2026 target for the end of the year.",
+      "source_filed": "22-Apr-2026",
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -628,21 +583,20 @@
      "quote": "We are currently working along with our technology partners for the GPUs very, very closely to kind of resolve large cluster related issues to get the Chennai operational up and running hopefully by end of July.",
      "topic": "launch",
      "verdict": {
+      "audit": {
+       "id": "873453b6130f-1",
+       "reason": "The passage is merely a stock exchange filing cover letter containing no operational details.",
+       "supports": "no"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "",
-      "judged_on": "2026-10-18",
-      "label": "unverifiable",
-      "method": "retrieval+consensus",
-      "reason": "The provided excerpts do not contain any statements regarding the operational status of the Chennai facility.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "unverifiable"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "unverifiable"
-       }
-      ]
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
+      "label": "unverifiable (audit rejected)",
+      "method": "strong-context+audit",
+      "reason": "The Chennai facility opening was delayed past the end of July due date, becoming operational on August 1st.",
+      "source_filed": "14-Nov-2025",
+      "v2_label": "unverifiable"
      }
     },
     {
@@ -719,21 +673,20 @@
      "quote": "We are trying to do it as soon as possible. I guess like during the next quarter, it would get operationalized",
      "topic": "launch",
      "verdict": {
+      "audit": {
+       "id": "7786f4a5692e-0",
+       "reason": "Management explicitly confirms that the Chennai location was delayed before going live on August 1st.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "Now, we spoke about like how the Chennai location had become a bit delayed. So, our Chennai location went live from 1st of August.",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "delayed",
-      "method": "retrieval+consensus",
-      "reason": "Management promised the Chennai location operational next quarter (Q1 2025), but it went live on August 1, 2025.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delayed"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delayed"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The Chennai location became operational on 1 August 2025, later than the promised next quarter timeline.",
+      "source_filed": "14-Nov-2025",
+      "v2_label": "delayed"
      }
     }
    ]
@@ -847,21 +800,20 @@
      "quote": "Now, we are working on it, like over like next couple of quarters, I guess.",
      "topic": "funding",
      "verdict": {
+      "audit": {
+       "id": "183dfeab1385-3",
+       "reason": "Management confirms successfully raising INR 4,056 million through a preferential issue of equity shares.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management promised an equity fundraise over the next couple of quarters and successfully completed it by November 2024.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The company successfully worked on and completed an equity fundraise of INR 405.6 crore via preferential issue within two quarters.",
+      "source_filed": "04-Nov-2024",
+      "v2_label": "delivered"
      }
     }
    ]
@@ -928,21 +880,20 @@
      "quote": "Now, we are working on it, like over like next couple of quarters, I guess.",
      "topic": "funding",
      "verdict": {
+      "audit": {
+       "id": "30e98b9562cd-2",
+       "reason": "Management confirms successfully raising INR 4,056 million through a preferential issue of equity shares.",
+       "supports": "yes"
+      },
+      "audit_model": "gemini-3.5-flash",
       "evidence_quote": "Additionally, I am pleased to announce that we successfully raised INR 4,056 million through preferential issue of equity shares, which position us well for future growth and investment opportunities.",
-      "judged_on": "2026-10-18",
+      "judge_model": "gemini-flash-latest",
+      "judged_on": "2026-10-19",
       "label": "delivered",
-      "method": "retrieval+consensus",
-      "reason": "Management successfully raised equity through a preferential issue within the promised timeframe.",
-      "votes": [
-       {
-        "model": "gemini-flash-lite-latest",
-        "verdict": "delivered"
-       },
-       {
-        "model": "gemini-3.1-flash-lite",
-        "verdict": "delivered"
-       }
-      ]
+      "method": "strong-context+audit",
+      "reason": "The company successfully completed an equity fundraise via a preferential issue of equity shares within the promised timeframe of a couple of quarters.",
+      "source_filed": "04-Nov-2024",
+      "v2_label": "delivered"
      }
     }
    ]
