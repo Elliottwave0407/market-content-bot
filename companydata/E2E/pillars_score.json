@@ -4,7 +4,7 @@
   "extract_model": "gemini-flash-latest",
   "extracted_on": "2026-10-19"
  },
- "pillars_facts_confirmed": 11,
+ "pillars_facts_confirmed": 13,
  "points": {
   "capex_capacity": {
    "max": 8,
@@ -23,13 +23,13 @@
   },
   "risk_penalty": {
    "max": -15,
-   "note": "free cash flow negative in latest period (-2)",
-   "score": -2
+   "note": "supply risk stated (-2); free cash flow negative in latest period (-2)",
+   "score": -4
   },
   "sector_positioning": {
    "max": 5,
-   "note": "1 verified sector/positioning statement(s) (1 each up to 3; +2 if >=3).",
-   "score": 1
+   "note": "2 verified sector/positioning statement(s) (1 each up to 3; +2 if >=3).",
+   "score": 2
   },
   "visibility": {
    "max": 8,

@@ -1,4 +1,5 @@
 {
+ "audit_missing_model": "gemini-3.5-flash",
  "audit_model": "gemini-3.5-flash",
  "docs": [
   [
@@ -162,6 +163,31 @@
     "quote": "GPU demand for AI training and inference continues to outstrip hyperscale capacity — pulling capital into purpose-built neocloud providers worldwide"
    },
    "path": "/sector[0]"
+  },
+  {
+   "audit": {
+    "id": "0",
+    "reason": "The passage explicitly states India's total data center pipeline is 8.33 GW, over 5x live capacity.",
+    "supports": "yes"
+   },
+   "fact": {
+    "fact": "India's total data center pipeline stands at 8.33 GW, over five times the live capacity.",
+    "quote": "8.33 GW India’s total data-centre pipeline — over 5× today’s ~1.6 GW live capacity"
+   },
+   "path": "/sector[1]"
+  },
+  {
+   "audit": {
+    "id": "1",
+    "reason": "Management explicitly states global supply chains are impacted, delaying deployment due to critical hardware components.",
+    "supports": "yes"
+   },
+   "fact": {
+    "quote": "Global supply chains have been impacted somewhat.",
+    "text": "Global supply chain disruptions impacting delivery of critical hardware components for GPU deployments.",
+    "type": "supply"
+   },
+   "path": "/risks[0]"
   }
  ],
  "n_extracted": 19,
@@ -219,24 +245,11 @@
    "path": "/long_term_targets[0]"
   },
   {
-   "audit": null,
-   "fact": {
-    "fact": "India's total data center pipeline stands at 8.33 GW, over five times the live capacity.",
-    "quote": "8.33 GW India’s total data-centre pipeline — over 5× today’s ~1.6 GW live capacity"
+   "audit": {
+    "id": "2",
+    "reason": "Management discusses past outages and steps taken for site reliability engineering, but does not state the risk directly.",
+    "supports": "partly"
    },
-   "path": "/sector[1]"
-  },
-  {
-   "audit": null,
-   "fact": {
-    "quote": "Global supply chains have been impacted somewhat.",
-    "text": "Global supply chain disruptions impacting delivery of critical hardware components for GPU deployments.",
-    "type": "supply"
-   },
-   "path": "/risks[0]"
-  },
-  {
-   "audit": null,
    "fact": {
     "quote": "On the software and operational side, we have made quite a few changes in terms of increasing the investments into site reliability engineering and working with some of the back-end vendors to strengthen our overall infrastructure.",
     "text": "Site reliability and infrastructure downtime risks across operating data center locations.",
@@ -245,7 +258,11 @@
    "path": "/risks[1]"
   },
   {
-   "audit": null,
+   "audit": {
+    "id": "3",
+    "reason": "The disclaimer lists access to capital and GPU infrastructure availability as risk factors, but not in one combined statement.",
+    "supports": "partly"
+   },
    "fact": {
     "quote": "These factors include, but are not limited to, changes in economic and market conditions, demand for AI and cloud infrastructure services, competitive dynamics, technology advancements, availability and pricing of GPU infrastructure, execution of expansion plans, customer adoption, regulatory developments, cybersecurity risks, access to capital, and other risks beyond the Company's control.",
     "text": "Capital access and financing risks necessary to scale GPU infrastructure.",
