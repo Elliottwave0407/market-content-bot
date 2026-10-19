@@ -172,7 +172,7 @@ html = f"""<html><head><meta charset=utf-8><style>{CSS}</style></head><body>{wm}
 <div class="row"><div class="p" style="flex:1.5"><div class="t">Promises by type · on time / late / missed</div>{by_type()}<div class="pend">{COPY.get('pattern','')}</div></div><div class="p"><div class="t">QoQ revenue growth % · Jun-26 consol.</div>{qoq()}</div></div>
 <div class="row">{bn}</div>
 <div class="p miss"><div class="t" style="color:var(--r)">Not disclosed · checked {COPY.get('undisclosed_src','')}</div><ul style="display:grid;grid-template-columns:1fr 1fr;column-gap:16px">{und}</ul></div>
-<div class="foot">Delays up to 3 months count as on time. Source: company filings (NSE/BSE). For educational purpose only.</div></body></html>"""
+<div class="foot">Delays up to 3 months count as on time. Oct-26 call facts: company recording, two transcriptions agree. Source: company filings (NSE/BSE). For educational purpose only.</div></body></html>"""
 out = os.path.join(ROOT, "cards", SYM); os.makedirs(out, exist_ok=True)
 open(os.path.join(out, "card.html"), "w").write(html)
 try:
