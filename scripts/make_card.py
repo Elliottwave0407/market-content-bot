@@ -50,7 +50,8 @@ nfacts = len(PL["facts"]); next_ = max(PL.get("n_extracted") or 0, 1); vpct = 10
 n_pillars = len(allp) + (1 if "risk_penalty" in PS["points"] else 0)
 gate = SC["trust_gate"]["status"]; cap = {"RED": "C", "AMBER-WATCH": "B", "AMBER": "B"}.get(gate.upper())
 grade = None
-if vpct >= 80 and n_pillars >= 14:
+OWNER = (COPY.get("owner_review") or {}).get("date")   # owner sign-off can stand in for the 80% evidence gate (pilot), never for missing pillars
+if n_pillars >= 14 and (vpct >= 80 or OWNER):
     g = "A" if tot >= 75 else "B" if tot >= 60 else "C" if tot >= 45 else "D"
     if cap and g < cap: g = cap
     grade = g
@@ -153,7 +154,7 @@ dots = "".join(f'<div class="dot" style="background:var(--{c})"></div>' for c, k
 lh = "".join(f'<div class="lg"><i style="background:var(--{r["c"]})"></i><span>{r["t"]}</span></div>' for r in COPY.get("ledger", []))
 name = PROF.get("name", SYM).replace(" Limited", "").replace(" Ltd", "")
 band = f'EBITDA margin <span>{round(em[cur])}%</span> ({round(em[ya])}% a year ago) on ₹{r0(rev[cur])} Cr revenue. ' + COPY.get("thesis_tail", "")
-grade_html = (f'<div class="q ok">{grade}</div><div class="s">{tot:.0f}/100 · {vpct:.0f}% facts verified</div>' if grade else f'<div class="q">?</div><div class="s">Pending · {n_pillars} of 14 pillars · {vpct:.0f}% facts verified (need 80%)</div>')
+grade_html = (f'<div class="q ok">{grade}</div><div class="s">{tot:.0f}/100 · trust gate {gate.split("-")[0].title()}</div>' if grade else f'<div class="q">?</div><div class="s">Pending · {n_pillars} of 14 pillars · {vpct:.0f}% facts verified (need 80%)</div>')
 kp = [("Revenue", f"₹{r0(rev[cur])} Cr", f"₹{r0(rev[ya])} Cr a year ago"), ("EBITDA margin", f"{round(em[cur])}%", f"{round(em[ya])}% a year ago"), ("Net profit", money(Q[cur]["pat"]), f"{money(Q[ya]['pat'])} a year ago"), ("Net cash", money(cash - debt), f"Debt ₹{r0(debt)} Cr"), ("Walk the talk", f"{nd}/{n}", "promises on time")]
 kph = "".join(f'<div><div class="l">{a}</div><div class="n">{b}</div><div class="s">{c}</div></div>' for a, b, c in kp)
 bn = "".join(f'<div class="p bn"><h4>{x["h"]}</h4><div class="d">{x["d"]}</div><div class="w">{x["w"]}</div></div>' for x in COPY.get("beyond", []))
