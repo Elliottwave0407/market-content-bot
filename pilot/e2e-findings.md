@@ -51,3 +51,11 @@ Walk-the-talk now scored 8.6/10 from 18 verifiable promises (14 delivered, 3 del
 - New scripts: judge_v3.py (strong judge + evidence audit by a different model; resumable; keeps old verdict as v2_label; keeps previous verdict if audit is unavailable), pillars_extract.py (visibility, capex/capacity, mix, moat, sector, risks: one extraction call over latest 3 calls + 2 presentations, quotes verified in code, audit by second model), score_pillars.py (v0 code rules), strong_report.py, workflow pilot-strong.yml (separate steps so annotations are not capped), probe_quota.py.
 - First strong run was cut off by the per-day cap after 1-2 calls; two sample observations: the strong model also quoted ANALYST statements as evidence (so the audit stage is needed), and its first-pass quotes for the Nov-23 capex promise were weak.
 - Scheduled: full strong run on 19 Oct ~06:45 IST.
+
+## 19 Oct 2026 - strong run attempt (06:46 IST)
+- Workflow pilot-strong dispatched right after the scheduled time; no test runs first.
+- Result: BOTH strong models returned per-day 429 ("limit: 20, model: gemini-3.8-flash / gemini-3.6-flash") after only 1 successful call each. Retry hint "22h41m" from 01:17 UTC = about 05:28 IST on 20 Oct.
+- So the daily quota was already used up before the run started, although nothing of ours ran between the 18 Oct evening runs and this one. Cause unknown (to check: AI Studio usage page ai.dev/rate-limit; whether the same Google project/key is used by another bot; whether failed or retried calls count).
+- What the run did get: 4 promises re-judged (16-Nov-2023 x2 kept previous verdict, audit unavailable; 30-May-2024 fundraise promise: strong judge said unverifiable, was "delivered" by cheap judge). Pillars extraction: no answer (quota). Pillars facts unchanged (2 confirmed of 3).
+- Scores now (partial, NOT a grade): walk-the-talk 8.5/10 (17 verifiable: 13 delivered, 3 delayed, 1 missed; 15 unverifiable). Code-scored pillars with the old sparse facts: visibility 1.5/8, capex 4/8, product mix 0/8, moat 2/8, sector 0/5, risk -2. Provisional 60.0 of 100 is meaningless until pillar facts are extracted by a strong model.
+- Lesson: free tier = 20 requests/day/model and a failed day cannot be recovered; do not schedule more than one strong attempt per day, and check usage on the AI Studio page first.
