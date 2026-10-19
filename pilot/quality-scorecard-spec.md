@@ -46,3 +46,8 @@ Data gate: fewer than 3 of 5 credibility signals available -> "not enough data",
 1. Card generator (scripts/make_card.py, data-driven, tall 1080 wide, 2x PNG) done for E2E; written research note generator next (6 sections: thesis, results & margin bridge, cash & balance sheet, walk-the-talk, beyond the numbers, not disclosed).
 2. Free-tier Gemini plan: 20 requests/day/model, resets midnight Pacific; one strong pass per company per day; incremental per quarter.
 3. Telegram analysis group, then second company only after the E2E process is finished.
+
+## Calibration decision (19 Oct 2026)
+- Amber cap (max B) and Red cap (max C) are kept as is.
+- v0 score thresholds are provisional. After ~50 company report cards, grade bands move to percentiles of our own population.
+- Under consideration: grade words next to the letter; separate business-quality and disclosure/governance sub-scores.

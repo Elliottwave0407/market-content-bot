@@ -78,3 +78,5 @@ Walk-the-talk now scored 8.6/10 from 18 verifiable promises (14 delivered, 3 del
 - Fixed: similar-promise de-dup (MRR 14-16 Cr promise was counted twice from original + revised May-24 transcripts) -> walk-the-talk 8.2/10 on 14 promises (11 on time, 1 late, 2 missed, 17 unverifiable).
 
 - 19 Oct 2026: Owner listened to the Oct-26 (Q2 FY27) call recording and confirmed both quotes used on card/note: "we don't provide" (MRR guidance) and "we never make any forward-looking predictions" (FY28-29). Card and draft note (pilot/e2e-note-draft.md) approved as sample.
+
+- 19 Oct 2026 (grade calibration): Owner agreed the Amber/Red caps stay and thresholds are not relaxed on one company. Once ~50 companies have report cards, grade bands will be set by percentile within our own population (best of the population earns A). Until then v0 thresholds (A>=75, B 60-74, C 45-59, D<45) stay. Open ideas not yet decided: a word next to the letter (e.g. "B · Strong") and showing business quality vs disclosure/governance as two sub-scores.
