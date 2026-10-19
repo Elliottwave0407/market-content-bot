@@ -3,7 +3,8 @@ import os, re, json, requests
 from ci_out import p, publish
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 BASE = "https://generativelanguage.googleapis.com/v1beta"
-for m in ["gemini-flash-latest", "gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-pro-preview", "gemini-pro-latest"]:
+MODELS = [x for x in os.environ.get("MODELS", "").split(",") if x.strip()] or ["gemini-flash-latest", "gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-pro-preview", "gemini-pro-latest"]
+for m in MODELS:
     try:
         r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": KEY},
                           json={"contents": [{"parts": [{"text": "Reply with the single word OK"}]}], "generationConfig": {"temperature": 0, "maxOutputTokens": 20}}, timeout=60)
