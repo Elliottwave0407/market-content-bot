@@ -1,7 +1,7 @@
 **E2E Networks (NSE: E2E) · Q2 FY27 · FinGod Quality Grade B (70/100)**
 
 **1. The thesis**
-E2E has turned GPU capacity into revenue and margin faster than almost any listed Indian infra name: revenue ₹224 Cr (₹44 Cr a year ago), EBITDA margin 77% (41%), net profit ₹73 Cr (loss of ₹13 Cr). A ₹1,000 Cr multi-year contract adds visibility. The open question is not demand, it is how much of this is contracted and how concentrated it is.
+E2E has turned new GPU capacity into revenue and margin quickly: revenue ₹224 Cr (₹44 Cr a year ago), EBITDA margin 77% (41%), net profit ₹73 Cr (loss of ₹13 Cr). A ₹1,000 Cr multi-year contract adds visibility. The open question is not demand, it is how much of this is contracted and how concentrated it is.
 
 **2. Results and margin bridge**
 • Revenue grew 43% on the quarter (₹157 Cr in Q1). EBITDA rose from ₹118 Cr to ₹171 Cr, so the extra ₹67 Cr of revenue came with ₹54 Cr of EBITDA: an incremental margin of about 80%, in line with management's earlier "75% to 80%" for new GPUs.
@@ -22,7 +22,7 @@ E2E has turned GPU capacity into revenue and margin faster than almost any liste
 Pattern: revenue and margin targets hold; capacity and timing slip.
 
 **5. Beyond the numbers**
-• Ownership: promoter holding fell from 59.7% to 39.5% between Jun-24 and Dec-24. This was new shares (₹1,079 Cr preferential allotment to L&T, Dec-24), not promoter selling.
+• Ownership: promoter holding fell from 59.7% (Jun-24) to 39.5% (Jun-26). The big step was new shares, a ₹1,079 Cr preferential allotment to L&T in Dec-24, not promoter selling.
 • Governance: four independent directors resigned in 24 months (Dec-24, Mar-25, Aug-25, Jan-26), a senior risk-function exit in Jun-26, and a stamp-duty order in May-26 that the company disputes. ICRA A- Stable. Trust gate: Amber, watch.
 • Moat: a proprietary in-house cloud software platform built since 2014 and 100+ engineers building compute, network and orchestration. This is the company's own claim.
 
