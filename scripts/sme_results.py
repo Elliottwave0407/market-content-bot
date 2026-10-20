@@ -13,6 +13,7 @@ OUTDIR = os.environ.get("OUT_DIR", "out")
 SEND = os.environ.get("POLL_SEND", os.environ.get("SME_SEND", "0")) == "1"
 DAILY_CAP = int(os.environ.get("SME_DAILY_CAP", "40"))      # PDF reads per day (free Gemini quota is shared with the main route)
 LIVE = os.environ.get("SME_LIVE", "0") == "1"      # the poll loop only runs this route when SME_LIVE=1 is set in results-poll.yml (off until dry runs are approved)
+ONLY = [x.strip() for x in os.environ.get("SME_ONLY", "").split(",") if x.strip()]      # manual run: only these BSE scrip codes (latest result filing)
 _S = {"last_tick": 0.0, "scan_at": 0.0, "cands": []}
 TRY = {}
 
@@ -113,7 +114,16 @@ def run_once(day=None, maxn=1):
     start, end = ((day, day) if day else (now - timedelta(days=1), now))
     st = load(); changed = False
     with BSE(download_folder=tempfile.mkdtemp()) as b:
-        if day or time.time() - _S["scan_at"] > 600:
+        if ONLY:
+            _S["cands"] = []
+            for c in ONLY:
+                for t in range(4):
+                    try:
+                        rows = [r for r in b.announcements(scripcode=c, from_date=now.replace(tzinfo=None) - timedelta(days=10), to_date=now.replace(tzinfo=None), category="Result").get("Table", []) if r.get("ATTACHMENTNAME")]
+                        _S["cands"] += sorted(rows, key=lambda r: r.get("NEWS_DT", ""))[-1:]; break
+                    except Exception: time.sleep(5)
+            p(f"manual run for {ONLY}: {len(_S['cands'])} filing(s)")
+        elif day or time.time() - _S["scan_at"] > 600:
             _S["cands"] = scan(b, start.replace(tzinfo=None), end.replace(tzinfo=None)); _S["scan_at"] = time.time()
             try:      # half-yearly filings that the quarterly route spotted (any exchange group) join the queue
                 _S["cands"] += [v for v in json.load(open("state/seen.json")).get("half_q", {}).values() if v.get("ATTACHMENTNAME") and v.get("NEWSID")]
@@ -126,7 +136,7 @@ def run_once(day=None, maxn=1):
             if out == "done": st["done"].append(str(r["NEWSID"])); changed = True
             if out != "skip": n += 1
             if n >= maxn: break
-    if changed and not day: save(st)
+    if changed and (not day or ONLY): save(st)
     return changed
 
 def tick():
