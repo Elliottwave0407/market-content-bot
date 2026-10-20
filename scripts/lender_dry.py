@@ -11,7 +11,7 @@ os.makedirs("out", exist_ok=True)
 with BSE(download_folder=tempfile.mkdtemp()) as b:
     for code in codes:
         for basis in ("consolidated", "standalone"):
-            q, m = rf.latest(b, code, str(code), basis, start=132)
+            q, m = rf.latest(b, code, str(code), basis, start=131)
             if m: break
         if not m: p(code, "no BSE table data"); continue
         qs = [{"q": rf.qlabel(q - i), "m": rf.fetch(b, code, str(code), basis, q - i) or {}} for i in range(5)]
