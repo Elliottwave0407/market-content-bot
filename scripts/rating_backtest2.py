@@ -26,19 +26,21 @@ for f in sorted(glob.glob(os.path.join(ROOT, "companydata", "_hist", "*.json")))
             if cur and pr and ya: break
         else: continue
         rec = {"symbol": sym, "q": q.strftime("%b-%y"), "basis": b, "latest": q == newest}
-        for v in ("V2", "V4"):
-            r = qr.rate(cur, pr, ya, v, d[b].get(shift(q, 15))); rec[v] = {k: r.get(k) for k in ("tier", "score", "caps", "why")}
+        for v in ("V2", "V4", "V5", "V6"):
+            r = qr.rate6(cur, pr, ya, d[b].get(shift(q, 15))) if v == "V6" else qr.rate(cur, pr, ya, v, d[b].get(shift(q, 15))); rec[v] = {k: r.get(k) for k in ("tier", "score", "caps", "why")}
             if v == "V2": rec["m"] = r.get("m")
             if v == "V4": rec["m4"] = r.get("m")
+            if v == "V5": rec["m5"] = r.get("m")
+            if v == "V6": rec["m6"] = r.get("m"); rec["V6"]["parts"] = r.get("parts")
         out.append(rec)
 json.dump(out, open(os.path.join(ROOT, "companydata", "_readiness", "rating_test2.json"), "w"))
 ok = [r for r in out if r["V2"]["tier"]]
 p(f"{len(set(r['symbol'] for r in out))} companies, {len(ok)} like-for-like company-quarters; basis used: {dict(Counter(r['basis'] for r in ok))}")
-for v in ("V2", "V4"):
+for v in ("V2", "V4", "V6"):
     c = Counter(r[v]["tier"] for r in ok); n = len(ok)
     p(v, " | ".join(f"{t} {c.get(t,0)} ({100*c.get(t,0)/n:.0f}%)" for t in qr.TIERS))
 lat = [r for r in ok if r["latest"]]
-for v in ("V2", "V4"):
+for v in ("V2", "V4", "V6"):
     c = Counter(r[v]["tier"] for r in lat); n = len(lat)
     p(v, f"newest quarter only (n={n}):", " | ".join(f"{t} {c.get(t,0)}" for t in qr.TIERS))
 p("caps applied:", dict(Counter(cp for r in ok for cp in (r["V4"]["caps"] or []))))
