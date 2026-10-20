@@ -82,7 +82,7 @@ def process(bse, r, st, final=False):
         p(f"  {name}: not postable - {why}")
         return "wait" if TRY[nid][0] < 3 else "done"
     ql = rf.qlabel(res["q"]); key = f"SME|{code}|{ql}|{res['basis']}"; bkey = f"{code}|{ql}|{res['basis']}"
-    if key in st["posted"] or bkey in nse._seen_posted():
+    if (key in st["posted"] and not ONLY) or (bkey in nse._seen_posted() and not ONLY):      # a manual run (SME_ONLY) deliberately re-sends
         p(f"  dup skip {key}"); return "done"
     os.makedirs(OUTDIR, exist_ok=True)
     png = os.path.join(OUTDIR, f"sme_{code}_{ql}_{res['basis']}.png")
