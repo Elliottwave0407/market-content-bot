@@ -19,7 +19,7 @@ SEND = os.environ.get("NSE_SEND", "0") == "1"
 ONLY = [x.strip().upper() for x in os.environ.get("NSE_ONLY", "").split(",") if x.strip()]
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-DISC = "For educational purpose only."
+DISC = "For educational purpose only. Not an investment advice."
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
 REF = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
 DESCS = ("outcome of board meeting", "financial results", "updates")
@@ -254,7 +254,7 @@ def post_card(x, res, png, ql):
     lk = x["attchmntFile"]
     cap = (f"{name} {fy_label(ql)} | {res['basis'].capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-           f"Read from the filing PDF (NSE; arithmetic-checked). Filing: {lk}\n\n{DISC}")
+           f"Filing: {lk}\n\n{DISC}")
     tweet = "\n".join(cap.split("\n")[:2]).replace(" | Consolidated", "").replace(" | Standalone", "") + "\n" + tags.join(tags.company_tag(symbol=sym, name=name), tags.quarter_tag(ql), "#Results")
     return cap, tweet
 
@@ -308,9 +308,8 @@ def process(x, st, final, maps=None):
         return "done"
     os.makedirs(OUTDIR, exist_ok=True)
     png = os.path.join(OUTDIR, f"nse_{sym}_{ql}_{res['basis']}.png")
-    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, filed_note=f"Read from the filing PDF; {res.get('note', 'arithmetic-checked')}.", yprev=res.get("yprev"))
+    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, yprev=res.get("yprev"))
     cap, tweet = post_card(x, res, png, ql)
-    cap = cap.replace("(NSE; arithmetic-checked)", f"(NSE filing; {res.get('note', 'arithmetic-checked')})")
     p(f"  [card] {key} :: {cap.splitlines()[1]}")
     if SEND and CHAT:
         import xbuttons

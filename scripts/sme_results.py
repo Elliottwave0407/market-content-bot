@@ -86,7 +86,7 @@ def process(bse, r, st, final=False):
         p(f"  dup skip {key}"); return "done"
     os.makedirs(OUTDIR, exist_ok=True)
     png = os.path.join(OUTDIR, f"sme_{code}_{ql}_{res['basis']}.png")
-    v = card.render(name, f"BSE {code}", res["basis"], res["quarters"], png, filed_note="Half-yearly results, read from the filing PDF; arithmetic-checked.", half=True)
+    v = card.render(name, f"BSE {code}", res["basis"], res["quarters"], png, half=True)
     cur, yago = res["quarters"][0]["m"], res["quarters"][4]["m"]
     sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
     sd, pd_ = (0 if sales and sales >= 100 else 1), (0 if pat and pat >= 100 else 1)
@@ -94,7 +94,7 @@ def process(bse, r, st, final=False):
     lk = f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{r['ATTACHMENTNAME']}"
     cap = (f"{name} {half_label(ql)} (half-year) | {res['basis'].capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-           f"Read from the filing PDF (BSE SME half-yearly; arithmetic-checked). Filing: {lk}\n\n{nse.DISC}")
+           f"Filing: {lk}\n\n{nse.DISC}")
     tweet = "\n".join(cap.split("\n")[:2]).replace(" | Consolidated", "").replace(" | Standalone", "") + "\n" + tags.join(tags.company_tag(code=code, name=name), "#Results", "#HalfYearlyResults")
     p(f"  [sme card] {key} verdict={v} :: {cap.splitlines()[1]}")
     if SEND and nse.CHAT:

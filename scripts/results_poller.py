@@ -22,7 +22,7 @@ STATE = "state/seen.json"
 _ST = None
 PDF_AUDIT = {}
 OUTDIR = "drafts/poll"
-DISC = "For educational purpose only."
+DISC = "For educational purpose only. Not an investment advice."
 
 def redact(s):
     return str(s).replace(TOKEN, "<token>") if TOKEN else str(s)
@@ -123,10 +123,10 @@ def build(bse, rec, final=False, age_min=0):
         png = os.path.join(OUTDIR, f"{code}_{ql}_{basis}.png")
         try: yprev = rf.fetch(bse, code, name, basis, q - 5)
         except Exception: yprev = None
-        card.render(name, f"BSE {code}", basis, quarters, png, filed_note="Read from the filing PDF; arithmetic-checked.", yprev=yprev)
+        card.render(name, f"BSE {code}", basis, quarters, png, yprev=yprev)
         cap = (f"{name} {fy_label(ql)} | {basis.capitalize()}\n"
                f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
-               f"Read from the filing PDF ({pc['note']}). {'(Quarter taken from the PDF.) ' if pc['inferred'] else ''}Filing: {lk}\n\n{DISC}")
+               f"{'(Quarter taken from the PDF.) ' if pc['inferred'] else ''}Filing: {lk}\n\n{DISC}")
         key = f"{code}|{ql}|{basis}"
         PDF_AUDIT[key] = {"code": code, "name": name, "basis": basis, "q": q, "rev": cur["revenue"], "pat": cur["pat"], "t": time.time(), "last": 0}
         try:
