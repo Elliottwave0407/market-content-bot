@@ -11,8 +11,12 @@ import store
 
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 MODEL = os.environ.get("GEMINI_SCAN_MODEL", "").strip() or "gemini-flash-lite-latest"
-D0 = os.environ.get("FROM_DAY", "2026-10-06")
-D1 = os.environ.get("TO_DAY", "2026-10-16")
+_IST = datetime.utcnow() + timedelta(hours=5, minutes=30)
+if os.environ.get("DAYS_BACK"):       # scheduled mode: a rolling window ending today (IST)
+    D0 = (_IST - timedelta(days=int(os.environ["DAYS_BACK"]))).strftime("%Y-%m-%d"); D1 = _IST.strftime("%Y-%m-%d")
+else:
+    D0 = os.environ.get("FROM_DAY", "2026-10-06")
+    D1 = os.environ.get("TO_DAY", "2026-10-16")
 MAX_N = int(os.environ.get("MAX_N", "15"))
 MCAP_MAX = float(os.environ.get("MCAP_MAX", "100000000"))   # Rs Cr; default = every company (smallest are extracted first)
 BASE = "https://generativelanguage.googleapis.com/v1beta"
