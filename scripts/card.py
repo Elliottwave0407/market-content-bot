@@ -146,14 +146,13 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     ser = [((LBL[0] if LBL else "Sales"), [g(r, "revenue") for r in rows], BLUE, "top"),
            ((LBL[1] if LBL else "Operating profit"), [g(r, "ebitda") for r in rows], AMBER, "top"),
            ("Net profit", [g(r, "pat") for r in rows], GREEN, "bottom")]
-    ax = fig.add_axes([0.07, 0.075, 0.89, 0.245], facecolor=BG)
+    ax = fig.add_axes([0.07, 0.075, 0.68, 0.245], facecolor=BG)
     allv = [0.0]
-    legx = 0.07
     for k, (title, vals, col, where) in enumerate(ser):
         pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-        fig.patches.append(FancyBboxPatch((legx, 0.357), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
-        fig.text(legx + 0.018, 0.3655, title, color=TEXT, fontsize=14, fontweight="bold", va="center")
-        legx += 0.018 + 0.0105 * len(title) + 0.03
+        ly = 0.322 - k * 0.058
+        fig.patches.append(FancyBboxPatch((0.775, ly - 0.009), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
+        fig.text(0.794, ly, title, color=TEXT, fontsize=12.5, fontweight="bold", va="center")
         if not pts:
             continue
         allv += [v for _, v in pts]
