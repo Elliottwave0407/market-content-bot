@@ -35,5 +35,8 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
                     out[key][qdate(q)] = {"revenue": m["revenue"] / 100, "ebitda": m["ebitda"] / 100, "pbt": (m["pbt"] or 0) / 100, "pat": m["pat"] / 100}
                     have[key].append(rf.qlabel(q)[:3])
         p(s, code, "C:", "".join(x[0] for x in have["C"]) or "-", "S:", "".join(x[0] for x in have["S"]) or "-", "nC", len(out["C"]), "nS", len(out["S"]))
+        k = "C" if out["C"] else "S"
+        if out[k]: d = max(out[k]); p("   latest", d, {a: round(v, 2) for a, v in out[k][d].items()})
+        if os.path.exists(os.path.join(HIST, s + ".json")): p("   (exists - not overwritten)"); continue
         if out["C"] or out["S"]: json.dump(out, open(os.path.join(HIST, s + ".json"), "w"))
 publish()
