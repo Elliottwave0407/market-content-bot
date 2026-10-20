@@ -20,7 +20,7 @@ S_REV = [(25, 15), (15, 11), (5, 7), (0, 3)]
 def g(a, b):
     return None if b is None or a is None or b <= 0 else (a - b) / b * 100
 
-def rate(cur, prev, yago, variant="V1"):
+def rate(cur, prev, yago, variant="V1", yprev=None):
     """returns dict(score, tier, caps, parts, metrics) or dict(tier=None, why=...) when not ratable"""
     for q in (cur, prev, yago):
         if not q or q.get("revenue") in (None, 0) or q.get("ebitda") is None: return {"tier": None, "why": "missing data"}
@@ -28,6 +28,17 @@ def rate(cur, prev, yago, variant="V1"):
     m = lambda q: 100 * q["ebitda"] / q["revenue"]
     ey, eq, ry, rq = g(cur["ebitda"], yago["ebitda"]), g(cur["ebitda"], prev["ebitda"]), g(cur["revenue"], yago["revenue"]), g(cur["revenue"], prev["revenue"])
     my, mq = m(cur) - m(yago), m(cur) - m(prev)
+    my_raw, mq_raw, eq_raw = my, mq, eq
+    if variant == "V4":
+        # (1) seasonality: remove half of last year's same-quarter QoQ move (QoQ vs same quarter last year correlates ~0.5), when the quarter before year-ago is available
+        if yprev and yprev.get("revenue") not in (None, 0) and yprev.get("ebitda") is not None and yprev.get("basis") == cur.get("basis"):
+            eq_ly, mq_ly = g(yago["ebitda"], yprev["ebitda"]), m(yago) - m(yprev)
+            if eq is not None and eq_ly is not None: eq = eq - 0.5 * max(-40, min(40, eq_ly))      # clipped: one odd year must not swing the result
+            mq = mq - 0.5 * max(-6, min(6, mq_ly))
+        # (2) headroom: a company already at a high margin has less room to expand, so margin gains are scaled to a 20%-margin starting point (never reduced)
+        hp, hy = min(3.0, max(1.0, 80 / (100 - min(m(prev), 95)))), min(3.0, max(1.0, 80 / (100 - min(m(yago), 95))))   # factor capped at 3x
+        if mq > 0: mq *= hp
+        if my > 0: my *= hy
     caps, turnaround = [], False
     if ey is None:     # YoY base is zero/negative: growth % is meaningless
         turnaround = cur["ebitda"] > 0
@@ -61,4 +72,4 @@ def rate(cur, prev, yago, variant="V1"):
     else:
         if t == 0 and not all(conds.values()): t = 1
     for tier, _ in caps: t = max(t, TIERS.index(tier))
-    return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my, 1), "margin_qoq_pts": round(mq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
+    return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq_raw, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my_raw, 1), "margin_qoq_pts": round(mq_raw, 1), "adj_margin_yoy": round(my, 1), "adj_margin_qoq": round(mq, 1), "adj_ebitda_qoq": None if eq is None else round(eq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
