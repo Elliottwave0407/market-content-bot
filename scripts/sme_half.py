@@ -18,17 +18,20 @@ revenue = 'Revenue from operations' (total, incl. other operating income). pbt =
 Numbers exactly as printed, in the printed unit; negatives for losses. Use null for any value not present. Do not compute or guess."""
 gr.PROMPT = HALF
 codes = [x.strip() for x in (os.environ.get("CODES") or "").split(",") if x.strip()]
-since = datetime.strptime(os.environ.get("FROM") or "2025-10-01", "%Y-%m-%d")
+since = datetime.strptime(os.environ.get("FROM") or "2026-01-01", "%Y-%m-%d")
 os.makedirs("out", exist_ok=True)
 key = pc.geminikey()
 def hlabel(d):  # 'dd-mm-yyyy' style date -> Mar/Sep label; returns (label, year, month)
     pq = pc.parse_qend(d); return pq
 with BSE(download_folder=tempfile.mkdtemp()) as b:
     for c in codes:
-        try:
-            rows = b.announcements(scripcode=c, from_date=since, to_date=datetime.now(), category="Result").get("Table", [])
-        except Exception as e:
-            p(c, "announcements failed", repr(e)[:60]); continue
+        rows = []
+        for tries in range(4):
+            try:
+                rows = b.announcements(scripcode=c, from_date=since, to_date=datetime.now(), category="Result").get("Table", []); break
+            except Exception as e:
+                p(c, "announcements retry", tries, repr(e)[:50]); time.sleep(5 * (tries + 1))
+        p(c, "result rows", len(rows), "with PDF", sum(1 for r in rows if r.get("ATTACHMENTNAME")))
         rows = [r for r in rows if r.get("ATTACHMENTNAME")]
         if not rows: p(c, "no result PDF"); continue
         r = sorted(rows, key=lambda r: r.get("NEWS_DT", ""))[-1]
