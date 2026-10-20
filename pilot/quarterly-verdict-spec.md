@@ -61,7 +61,7 @@ Lenders (HDBFS, HUDCO, IREDA, LICHSGFIN, M&MFIN, MANAPPURAM, PNBHOUSING, POONAWA
 
 # v2.0 (live from 20-Oct-2026) - revenue, margins and PAT carry equal weight
 Owner's direction: revenue, margins and PAT matter equally (margins drive price action).
-- Weights out of 96, each pillar 32: **Revenue** = YoY 24 + QoQ 8. **PAT** = YoY 26 + QoQ 6. **Margins** = margin change YoY 14 + QoQ 8 + EBITDA growth YoY 7 + QoQ 3. (v1.x: revenue 30, PAT 28, EBITDA 22, margin 16.)
+- Weights out of 96: **Revenue 29** = YoY 22 + QoQ 7. **PAT 29** = YoY 23 + QoQ 6. **Operating profit and margin 38** = margin % change YoY 14 + QoQ 8 (22) and EBITDA growth YoY 11 + QoQ 5 (16). (v1.x: revenue 30, PAT 28, EBITDA 22, margin 16.) A 32/32/32 split was tested too and gave the same results; 29/38/29 keeps margins at least as heavy as before.
 - New gate: margin fell QoQ (beyond a small tolerance) AND is not above last year's: Steady at best (Blockbuster explosive-growth route is exempt, as before).
 - Cut-offs unchanged (70 / 48 / 36 / 20). Owner's 13 calls: 12 of 13 (HFCL known exception). Large/mid mix: 6 / 10 / 11 / 37 / 20 / 16 percent (Strong falls and Steady grows because falling margins now cap at Steady).
 # Banks and insurers (live in the rating; live card flow not wired yet)

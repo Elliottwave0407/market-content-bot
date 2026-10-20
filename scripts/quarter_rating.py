@@ -118,6 +118,8 @@ BB_SCORE6 = 80
 # shareholders' PBT / net premium for insurers. Margins of such businesses move in much smaller steps, so margin changes are scaled up and a tiny dip is tolerated.
 KIND_PARAMS = {"bank": {"mscale": 1.5, "mtol": 1.0}, "life": {"mscale": 4.0, "mtol": 0.3}, "general": {"mscale": 1.0, "mtol": 1.0}}
 
+V2_SC = {"rev_yoy": 22 / 22, "rev_qoq": 7 / 8, "pat_yoy": 23 / 22, "pat_qoq": 1.0, "m_yoy": 14 / 10, "m_qoq": 8 / 6, "eb_yoy": 11 / 16, "eb_qoq": 5 / 6}      # points out of 96: revenue 22+7=29, PAT 23+6=29, operating side 38 = margin % 14+8 and EBITDA growth 11+5
+
 def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False, v12=False, v2=False):
     """half=True: half-yearly results (SME). prev = the preceding half-year, yago = the same half last year; the sequential (HoH) changes cover six months, so they are halved to a per-quarter equivalent before scoring, and no seasonality adjustment is applied. v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
     cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
@@ -183,8 +185,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         pat_reliable = not pat_noise
     if cur.get("kind") in ("life", "general") and not seas: P["rev_qoq"] = 3      # insurers' premium is strongly seasonal (e.g. life: Mar high, Jun low, Sep rebound): without the seasonal history a QoQ jump says nothing
     if v2:      # v2.0: revenue, margins and PAT carry equal weight (32 of 96 each). Margins pillar = margin level change (YoY 14, QoQ 8) + EBITDA growth (YoY 7, QoQ 3)
-        SC = {"rev_yoy": 24 / 22, "rev_qoq": 1.0, "pat_yoy": 26 / 22, "pat_qoq": 1.0, "m_yoy": 14 / 10, "m_qoq": 8 / 6, "eb_yoy": 7 / 16, "eb_qoq": 3 / 6}
-        P = {k: v * SC[k] for k, v in P.items()}
+        P = {k: v * V2_SC[k] for k, v in P.items()}
     score = round(sum(P.values()) * 100 / 96, 1)
     pat_reliable = locals().get('pat_reliable', True)
     # gates (from the owner's calls)
