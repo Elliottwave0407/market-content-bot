@@ -35,3 +35,21 @@ Route B (explosive growth): revenue, EBITDA and PAT all up 50%+ YoY, revenue not
 - Possible merger/consolidation distortions (e.g. Schaeffler Jun-26, revenue +127%) are not detected.
 - No price-action or expected-vs-actual input (planned separate engine feature).
 - Recalibrate only as a numbered release; the owner may revisit after more labelled results.
+
+---
+
+# v1.1 (live on cards from 20-Oct-2026) - size-aware and noise-aware additions
+Everything in v1.0 above still applies. v1.1 adds:
+- **Abnormal quarter-ago base:** if the previous quarter had zero/negative EBITDA, a margin below -20%, or a big loss, the QoQ pillars (EBITDA, margin, PAT) score neutral. QoQ means nothing after an exceptional quarter.
+- **Tiny profit base:** if year-ago PAT is under Rs 1 Cr or under 1.5% of revenue, PAT YoY scores neutral and cannot unlock the "revenue growth under 15%" exemptions.
+- **Sharp sequential fall:** EBITDA or PAT down 30%+ QoQ (normal base): Steady at best.
+- **Two-year seasonality:** when last year's and the year before's same-quarter QoQ moves point the same way, 80% of their average is removed (instead of 50% of one year). Needs the two-year-old quarters; the live card does not fetch them yet, so this part is inactive on live cards.
+- Tiny-base Blockbuster stays capped at Excellent (year-ago revenue under Rs 25 Cr or EBITDA under Rs 2 Cr), as in v1.0.
+- Backtest mix (v1.1): large/mid 1,881 quarters: 6/10/14/33/21/16 percent; small 1,026 quarters: 5/11/9/26/24/25; micro 765: 2/9/10/24/28/26. Owner's 13 calls: still 12 of 13.
+
+# Half-yearly mode (SME companies) - dry run only, not live
+SMEs file half-yearly (about Nov and May) as PDFs on BSE; NSE and BSE results tables do not carry them. `scripts/sme_half.py` reads the PDF, columns = current half | preceding half | same half last year, labels Mar/Sep only. A filing is accepted only if the column dates are exactly 6 and 12 months apart and end in Mar/Sep (quarterly filers such as Asarfi Hospital are rejected and belong to the normal route). SME arithmetic check: total income minus expenses must equal PBT; PAT must be sane versus PBT (tax lines often exclude deferred tax). `rate6(half=True)`: the HoH changes are halved to a per-quarter equivalent and no seasonality is applied. Cards show an "HoH" column.
+Open: Route B Blockbuster allows a large margin fall (CWD Mar-26: revenue +286%, margin -13 pts, still Blockbuster); the live poller does not pick up SME filings yet.
+
+# Finance model (draft v0, not live)
+Lenders (HDBFS, HUDCO, IREDA, LICHSGFIN, M&MFIN, MANAPPURAM, PNBHOUSING, POONAWALLA, SBICARD): NII (revenue minus finance costs) replaces EBITDA, so "margin" is the spread kept. Capital-market firms (360ONE, ABSLAMC, ANANDRATHI, ANGELONE, NUVAMA) use the normal model. Banks and insurers: not covered (different XBRL). Mix on 95 lender quarters: 6/14/31/25/19/5 percent; 51 capital-market quarters: 4/24/33/20/18/2.
