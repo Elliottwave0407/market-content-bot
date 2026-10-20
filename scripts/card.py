@@ -1,6 +1,7 @@
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.ticker
 from matplotlib.patches import FancyBboxPatch
 import theme
 from theme import HEAD, BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS, BADGE_NAME
@@ -141,37 +142,39 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     rows = list(reversed(quarters))
     labels = [r["q"] for r in rows]
     n = len(rows)
-    ser = [((LBL[0] if LBL else "Sales"), [None if (r["m"] or {}).get("revenue") is None else cr(r["m"]["revenue"]) for r in rows], BLUE, lambda v: fmt_num(v, md)),
-           ((LBL[2] if LBL else "Operating margin"), [opm(r["m"]) for r in rows], AMBER, lambda v: f"{v:.1f}%"),
-           ("Net profit", [None if (r["m"] or {}).get("pat") is None else cr(r["m"]["pat"]) for r in rows], GREEN, lambda v: fmt_num(v, md))]
-    ax = fig.add_axes([0.07, 0.075, 0.86, 0.245], facecolor=BG)
-    allx = []
+    g = lambda r, k: None if (r["m"] or {}).get(k) is None else cr(r["m"][k])
+    ser = [((LBL[0] if LBL else "Sales"), [g(r, "revenue") for r in rows], BLUE, "top"),
+           ((LBL[1] if LBL else "Operating profit"), [g(r, "ebitda") for r in rows], AMBER, "top"),
+           ("Net profit", [g(r, "pat") for r in rows], GREEN, "bottom")]
+    ax = fig.add_axes([0.07, 0.075, 0.89, 0.245], facecolor=BG)
+    allv = [0.0]
     legx = 0.07
-    for k, (title, vals, col, f) in enumerate(ser):
+    for k, (title, vals, col, where) in enumerate(ser):
         pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-        base = next((v for i, v in pts if i == 0), None)
         fig.patches.append(FancyBboxPatch((legx, 0.357), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
         fig.text(legx + 0.018, 0.3655, title, color=TEXT, fontsize=14, fontweight="bold", va="center")
         legx += 0.018 + 0.0105 * len(title) + 0.03
-        if not base or base <= 0:       # a line indexed to a zero or negative start is not meaningful: not drawn
+        if not pts:
             continue
-        idx = [(i, 100.0 * v / base, v) for i, v in pts]
-        allx += [y for _, y, _ in idx]
-        ax.plot([i for i, _, _ in idx], [y for _, y, _ in idx], color=col, linewidth=3.2, marker="o", markersize=8, markerfacecolor=col, markeredgecolor=BG, markeredgewidth=1.5, zorder=3)
-        i0, y0, v0 = idx[0]; i1, y1, v1 = idx[-1]
-        ax.text(i1 + 0.1, y1, f(v1), ha="left", va="center", color=col, fontsize=12, fontweight="bold")
-    fig.text(0.93, 0.3655, "Indexed: first quarter = 100", color=MUTED, fontsize=11, ha="right", va="center")
-    if allx:
-        lo, hi = min(allx + [100]), max(allx + [100]); pad = max((hi - lo) * 0.18, 2)
-        ax.set_ylim(lo - pad, hi + pad)
-    ax.set_xlim(-0.7, n - 0.3)
-    ax.axhline(100, color=BORDER, linewidth=1.2, linestyle=(0, (4, 4)), zorder=1)
+        allv += [v for _, v in pts]
+        ax.plot([i for i, _ in pts], [v for _, v in pts], color=col, linewidth=3.2, marker="o", markersize=8, markerfacecolor=col, markeredgecolor=BG, markeredgewidth=1.5, zorder=3)
+    top = max(allv); bot = min(allv); span = (top - bot) or 1
+    for title, vals, col, where in ser:
+        for i, v in enumerate(vals):
+            if v is None:
+                continue
+            ax.annotate(fmt_num(v, md), (i, v), xytext=(0, 11 if where == "top" else -11), textcoords="offset points", ha="center", va="bottom" if where == "top" else "top", color=col, fontsize=12, fontweight="bold", zorder=4)
+    fig.text(0.96, 0.3655, "Rs Crore", color=MUTED, fontsize=11, ha="right", va="center")
+    ax.set_ylim(min(0, bot - span * 0.12), top + span * 0.16)
+    ax.set_xlim(-0.4, n - 0.6)
+    ax.axhline(0, color=BORDER, linewidth=1.2, zorder=1)
     ax.grid(axis="y", color=BORDER, linewidth=0.6, alpha=0.7)
     ax.set_axisbelow(True)
     ax.set_xticks(range(n))
     ax.set_xticklabels(labels, color=HEAD, fontsize=12, fontweight="bold")
     ax.tick_params(axis="y", colors=MUTED, labelsize=10, length=0)
     ax.tick_params(axis="x", length=0)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:,.0f}"))
     for sp in ax.spines.values():
         sp.set_visible(False)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
