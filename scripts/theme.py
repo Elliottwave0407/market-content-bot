@@ -9,7 +9,8 @@ BG, PANEL, BORDER = "#ffffff", "#f3f6fa", "#dde4ec"
 TEXT, MUTED, HEAD = "#03070c", "#4a596a", "#1d2937"
 GREEN, RED, AMBER, BLUE = "#0a6a40", "#b3201c", "#8f5700", "#1f66c1"
 BAR_OLD = "#b9c6d6"
-RATING_COLORS = {"Excellent": "#0f7a4b", "Great": "#3a9a5b", "Good": "#7d9b1a", "OK": "#b97400", "Weak": "#c62f2f"}
+RATING_COLORS = {"Blockbuster": "#0a5c3a", "Excellent": "#0f7a4b", "Strong": "#3a9a5b", "Steady": "#5f7ea3", "Weak": "#c9792b", "Poor": "#c62f2f"}
+BADGE_NAME = "QUARTERLY VERDICT"
 TAGS = {"ORDER WIN": "#2a78d6", "ACQUISITION": "#6250d6", "CREDIT RATING": "#b97400", "DIVIDEND": "#0f7a4b",
         "CORPORATE ACTION": "#0f7a4b", "CONCALL": "#52606f", "MANAGEMENT": "#8a4fa0", "RISK": "#c62f2f",
         "RBI": "#1f3a8a", "SEBI": "#1f3a8a", "UPDATE": "#52606f"}

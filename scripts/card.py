@@ -3,7 +3,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 import theme
-from theme import HEAD, BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS
+from theme import HEAD, BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS, BADGE_NAME
+import quarter_rating as qr
 
 def cr(v):
     return None if v is None else v / 10.0
@@ -29,20 +30,14 @@ def fmt_num(v, d=0):
 def opm(m):
     return None if not m or m.get("ebitda") is None or not m.get("revenue") else m["ebitda"] / m["revenue"] * 100
 
-def rating(q):
-    """Draft rule - to be tuned by the author. Score from growth direction and strength."""
-    cur, prev, yago = q[0]["m"], q[1]["m"], q[4]["m"] if len(q) > 4 else None
-    s = 0
-    ry, py, pq = pct(cur["revenue"], yago["revenue"]) if yago else None, pct(cur["pat"], yago["pat"]) if yago else None, pct(cur["pat"], prev["pat"]) if prev else None
-    for v, hi in ((ry, 10), (py, 15)):
-        if v is not None:
-            s += 1 if v >= hi else (-1 if v < 0 else 0)
-    if pq is not None:
-        s += 1 if pq > 0 else -1
-    o, oy = opm(cur), opm(yago)
-    if o is not None and oy is not None:
-        s += 1 if o - oy > 0.25 else (-1 if o - oy < -0.25 else 0)
-    return "Excellent" if s >= 3 else "Great" if s == 2 else "Good" if s == 1 else "OK" if s == 0 else "Weak"
+def rating(q, basis, yprev=None):
+    """Quarter rating (Quarterly Verdict v1.0 = quarter_rating.rate6): Blockbuster / Excellent / Strong / Steady / Weak / Poor, or None when not ratable
+    (missing numbers, no operating-profit row e.g. banks/NBFCs). q: newest-first quarters; basis: the one basis used for every quarter on the card."""
+    mk = lambda i: dict(q[i]["m"], basis=basis) if len(q) > i and q[i].get("m") else None
+    cur, prev, yago = mk(0), mk(1), mk(4)
+    yprev = dict(yprev, basis=basis) if yprev else None      # the quarter before the year-ago one, for the seasonality adjustment (optional)
+    if not (cur and prev and yago): return None
+    return qr.rate6(cur, prev, yago, yprev).get("tier")
 
 def _has_nc(cur, prev, yago):
     for base in (prev, yago):
@@ -53,11 +48,11 @@ def _has_nc(cur, prev, yago):
             return True
     return False
 
-def render(name, ticker, basis, quarters, out_path, filed_note=""):
+def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None):
     """quarters: list of {'q': label, 'm': metrics-dict} newest first (index 0 = latest, 1 = QoQ base, 4 = YoY base)."""
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
-    rate = rating(quarters)
+    rate = rating(quarters, basis, yprev)
     fig = plt.figure(figsize=(16, 10), dpi=100, facecolor=BG)
     nfs = 30
     rend = fig.canvas.get_renderer()
@@ -70,10 +65,11 @@ def render(name, ticker, basis, quarters, out_path, filed_note=""):
         nfs -= 1
     fig.text(0.04, 0.925, name, color=TEXT, fontsize=nfs, fontweight="bold", va="center")
     fig.text(0.04, 0.875, f"{ticker}  |  {quarters[0]['q']} results  |  {basis.capitalize()}  |  ₹ Crore", color=MUTED, fontsize=15, va="center")
-    # rating badge
-    fig.patches.append(FancyBboxPatch((0.625, 0.86), 0.20, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
-    fig.text(0.725, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
-    fig.text(0.725, 0.868, "RATING (draft rule)", color="#ffffff", fontsize=9, ha="center", va="center")
+    # rating badge (omitted when the quarter is not ratable)
+    if rate:
+        fig.patches.append(FancyBboxPatch((0.625, 0.86), 0.20, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
+        fig.text(0.725, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
+        fig.text(0.725, 0.868, BADGE_NAME, color="#ffffff", fontsize=10, ha="center", va="center")
     # table
     cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "QoQ", "YoY"]
     xs = [0.04, 0.32, 0.46, 0.60, 0.75, 0.88]

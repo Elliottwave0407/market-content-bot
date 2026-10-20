@@ -121,7 +121,9 @@ def build(bse, rec, final=False, age_min=0):
         pd_ = 0 if pat and pat >= 100 else 1
         sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
         png = os.path.join(OUTDIR, f"{code}_{ql}_{basis}.png")
-        card.render(name, f"BSE {code}", basis, quarters, png, filed_note="Read from the filing PDF; arithmetic-checked.")
+        try: yprev = rf.fetch(bse, code, name, basis, q - 5)
+        except Exception: yprev = None
+        card.render(name, f"BSE {code}", basis, quarters, png, filed_note="Read from the filing PDF; arithmetic-checked.", yprev=yprev)
         cap = (f"{name} {fy_label(ql)} | {basis.capitalize()}\n"
                f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
                f"Read from the filing PDF ({pc['note']}). {'(Quarter taken from the PDF.) ' if pc['inferred'] else ''}Filing: {lk}\n\n{DISC}")
@@ -162,6 +164,8 @@ def build(bse, rec, final=False, age_min=0):
             return ("wait", "confirming that no consolidated statement exists", None, f"{code}|{res['quarter']}|wait")
     q = rf.expected_quarter(headline, filed)
     quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
+    try: yprev = rf.fetch(bse, code, name, basis, q - 5)      # quarter before the year-ago one: only used by the rating's seasonality adjustment
+    except Exception: yprev = None
     if not quarters[0]["m"]:
         if not final:
             return ("wait", "comparison data incomplete", None, f"{code}|{res['quarter']}|wait")
@@ -186,7 +190,7 @@ def build(bse, rec, final=False, age_min=0):
     if sales is None or sales < MIN_CR:
         return ("line", f"{name} {fy_label(res['quarter'])} {"cons" if basis=="consolidated" else "stand"}: Sales {card.fmt_num(sales, sd)} Cr ({sy} YoY), PAT {card.fmt_num(pat, pd_)} Cr ({py} YoY) | {lk}", None, f"{code}|{res['quarter']}|{basis}")
     png = os.path.join(OUTDIR, f"{code}_{res['quarter']}_{basis}.png")
-    card.render(name, f"BSE {code}", basis, quarters, png)
+    card.render(name, f"BSE {code}", basis, quarters, png, yprev=yprev)
     cap = (f"{name} {fy_label(res['quarter'])} | {basis.capitalize()}\n"
            f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
            f"{'(Quarter inferred from filing date.) ' if inferred else ''}{('(Not available from BSE after 24 h: ' + ', '.join(miss) + '.) ') if incomplete else ''}Filing: {lk}\n\n{DISC}")

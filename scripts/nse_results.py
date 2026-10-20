@@ -208,7 +208,11 @@ def read_card(content, name, bse=None, code=None):
                     note = "history-verified"
             except Exception as e_:
                 p(f"  history check skipped: {repr(e_)[:60]}")
-        return {"basis": basis, "q": q, "quarters": quarters, "note": note}, "ok"
+        yprev = None
+        if bse is not None and code:
+            try: yprev = rf.fetch(bse, code, name, basis, q - 5)      # for the rating's seasonality adjustment only
+            except Exception: yprev = None
+        return {"basis": basis, "q": q, "quarters": quarters, "note": note, "yprev": yprev}, "ok"
     return None, "no usable statement"
 
 def fy_label(ql):
@@ -292,7 +296,7 @@ def process(x, st, final, maps=None):
         return "done"
     os.makedirs(OUTDIR, exist_ok=True)
     png = os.path.join(OUTDIR, f"nse_{sym}_{ql}_{res['basis']}.png")
-    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, filed_note=f"Read from the filing PDF; {res.get('note', 'arithmetic-checked')}.")
+    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, filed_note=f"Read from the filing PDF; {res.get('note', 'arithmetic-checked')}.", yprev=res.get("yprev"))
     cap, tweet = post_card(x, res, png, ql)
     cap = cap.replace("(NSE; arithmetic-checked)", f"(NSE filing; {res.get('note', 'arithmetic-checked')})")
     p(f"  [card] {key} :: {cap.splitlines()[1]}")
