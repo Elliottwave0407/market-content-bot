@@ -134,8 +134,11 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
     raw = dict(rev_yoy=ry, rev_qoq=rq, eb_yoy=ey, eb_qoq=eq, pat_yoy=pyo, pat_qoq=pqo, m_yoy=my, m_qoq=mq, margin=m(cur))
     # seasonality: remove part of last year's same-quarter QoQ move (clipped), when the quarter before year-ago is known
     sf = lambda x, c: max(-c, min(c, x))
+    seas = False
     if yprev and yprev.get("revenue") not in (None, 0) and yprev.get("ebitda") is not None and yprev.get("basis") == cur.get("basis"):
         rq_ly, eq_ly, mq_ly = g(yago["revenue"], yprev["revenue"]), g(yago["ebitda"], yprev["ebitda"]), m(yago) - m(yprev)
+        seas = True
+        ins = cur.get("kind") in ("life", "general")      # insurers: premium is strongly seasonal, remove the whole of last year's same-quarter move
         w_r = w_e = w_m = 0.5
         rq_ly2 = eq_ly2 = mq_ly2 = None
         if v11 and older and older[0] and older[1] and older[0].get("revenue") not in (None, 0) and older[1].get("revenue") not in (None, 0) and older[0].get("ebitda") is not None and older[1].get("ebitda") is not None:
@@ -143,8 +146,8 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         def adj(cur_v, ly, ly2, clip, floor):
             if cur_v is None or ly is None: return cur_v
             if v11 and ly2 is not None and (ly > 0) == (ly2 > 0) and min(abs(ly), abs(ly2)) >= floor:      # same-direction move in both past years = a real seasonal pattern: correct harder
-                return cur_v - 0.8 * sf((ly + ly2) / 2, clip)
-            return cur_v - 0.5 * sf(ly, clip)
+                return cur_v - (1.0 if ins else 0.8) * sf((ly + ly2) / 2, clip)
+            return cur_v - (1.0 if ins else 0.5) * sf(ly, clip)
         rq = adj(rq, rq_ly, rq_ly2, 30, 5); eq = adj(eq, eq_ly, eq_ly2, 40, 5); mq = adj(mq, mq_ly, mq_ly2, 6, 1)
     if half:
         rq, eq, mq = (None if x is None else x * 0.5 for x in (rq, eq, mq)); pqo = None if pqo is None else pqo * 0.5
@@ -178,6 +181,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         pat_noise = yp is not None and 0 < yp < max(1.0, 0.015 * yago["revenue"])
         if pat_noise: P["pat_yoy"] = 7
         pat_reliable = not pat_noise
+    if cur.get("kind") in ("life", "general") and not seas: P["rev_qoq"] = 3      # insurers' premium is strongly seasonal (e.g. life: Mar high, Jun low, Sep rebound): without the seasonal history a QoQ jump says nothing
     score = round(sum(P.values()) * 100 / 96, 1)
     pat_reliable = locals().get('pat_reliable', True)
     # gates (from the owner's calls)
