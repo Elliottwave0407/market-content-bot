@@ -3,7 +3,7 @@ Tiers (best->worst): Blockbuster, Excellent, Strong, Steady, Weak, Poor.
 Variants (for the design test): V1 as first drafted; V2 'Excellent' minimums moved to the midpoint; V3 softer Blockbuster (EBITDA YoY>=40 plus 3 of the other 4 conditions); V4 owner-approved Blockbuster rule (see rate()).
 Pure function of 3 quarters' filed numbers: cur, prev (QoQ base), yago (YoY base). Each is {revenue, ebitda, pat} in Rs Cr."""
 TIERS = ["Blockbuster", "Excellent", "Strong", "Steady", "Weak", "Poor"]
-CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10], "V4": [999, 74, 55, 32, 12]}      # score minimum for tiers 0..4 (Poor below the last)
+CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10], "V4": [999, 76, 60, 35, 16]}      # score minimum for tiers 0..4 (Poor below the last)
 
 def band(v, steps):
     """steps: [(min_value, points), ...] descending by min_value"""
@@ -16,6 +16,18 @@ S_QOQ = [(20, 15), (10, 10), (0, 5)]
 S_MYOY = [(4, 20), (2, 14), (0, 8)]
 S_MQOQ = [(2, 15), (1, 10), (0, 5)]
 S_REV = [(25, 15), (15, 11), (5, 7), (0, 3)]
+
+def interp(v, anchors):
+    """piecewise-linear points: anchors [(value, points), ...] ascending by value; flat beyond both ends. No cliffs: 24.8% revenue growth is worth almost what 25% is."""
+    if v <= anchors[0][0]: return anchors[0][1]
+    for (x0, y0), (x1, y1) in zip(anchors, anchors[1:]):
+        if v <= x1: return y0 + (y1 - y0) * (v - x0) / (x1 - x0)
+    return anchors[-1][1]
+A_YOY = [(-10, 0), (0, 6), (10, 12), (20, 18), (30, 24), (40, 30)]
+A_QOQ = [(-10, 0), (0, 5), (10, 10), (20, 15)]
+A_MYOY = [(-2, 0), (0, 8), (2, 14), (4, 20)]
+A_MQOQ = [(-1, 0), (0, 5), (1, 10), (2, 15)]
+A_REV = [(-5, 0), (0, 3), (5, 7), (15, 11), (25, 15)]
 
 def g(a, b):
     return None if b is None or a is None or b <= 0 else (a - b) / b * 100
@@ -44,11 +56,12 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
         turnaround = cur["ebitda"] > 0
         p_ey = 18 if turnaround else 0
         if turnaround: caps.append(("Excellent", "turnaround from a loss/zero EBITDA base"))
-    else: p_ey = band(ey, S_YOY)
+    else: p_ey = interp(ey, A_YOY) if variant == "V4" else band(ey, S_YOY)
     if eq is None: p_eq = 5 if cur["ebitda"] > 0 else 0
-    else: p_eq = band(eq, S_QOQ)
-    p_my, p_mq = band(my, S_MYOY), band(mq, S_MQOQ)
-    p_rv = band(ry, S_REV) if ry is not None else 0
+    else: p_eq = interp(eq, A_QOQ) if variant == "V4" else band(eq, S_QOQ)
+    if variant == "V4": p_my, p_mq = interp(my, A_MYOY), interp(mq, A_MQOQ)
+    else: p_my, p_mq = band(my, S_MYOY), band(mq, S_MQOQ)
+    p_rv = (interp(ry, A_REV) if variant == "V4" else band(ry, S_REV)) if ry is not None else 0
     pat_up = (cur.get("pat") is not None and yago.get("pat") is not None and cur["pat"] > yago["pat"])
     p_pat = 5 if pat_up else 0
     if cur.get("pat") is not None and yago.get("pat") is not None and not pat_up:
@@ -60,7 +73,7 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
             elif drop >= 30: caps.append(("Steady", "net profit down 30%+ YoY"))
             elif drop >= 10: caps.append(("Strong", "net profit down 10-30% YoY"))
     if yago["revenue"] < 25 or yago["ebitda"] < 2: caps.append(("Excellent", "small base"))
-    score = p_ey + p_eq + p_my + p_mq + p_rv + p_pat
+    score = round(p_ey + p_eq + p_my + p_mq + p_rv + p_pat, 1)
     conds = {"yoy40": ey is not None and ey >= 40, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4, "rev20": ry is not None and ry >= 20}
     cuts = CUTS[variant]
     t = next((i for i, c in enumerate(cuts) if score >= c), 5)
