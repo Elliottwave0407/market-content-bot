@@ -48,6 +48,9 @@ def fetch(sym):
     return out, stats, (d is not None)
 
 syms = [x.strip().upper() for x in os.environ.get("SYMBOLS", "").split(",") if x.strip()]
+if not syms and os.environ.get("SYMFILE"):      # JSON of {band: [{symbol,...}]} from universe_bands.py
+    u = json.load(open(os.path.join(ROOT, os.environ["SYMFILE"])))
+    syms = [r["symbol"] for band in u.values() for r in band]
 if not syms:
     syms = [r["symbol"] for r in json.load(open(os.path.join(ROOT, "companydata", "_readiness", "screen.json")))["rows"]]
 sh, ns = int(os.environ.get("SHARD", "0")), int(os.environ.get("NSHARDS", "1"))

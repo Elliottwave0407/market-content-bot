@@ -5,6 +5,9 @@ on:
       symbols:
         description: "Optional comma list (blank = all screened companies)"
         default: ""
+      symfile:
+        description: "optional: repo path of a universe json (e.g. companydata/_readiness/universe_smallcap.json)"
+        default: ""
       nshards:
         default: "4"
 permissions:
@@ -25,6 +28,7 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           SYMBOLS: ${{ github.event.inputs.symbols }}
+          SYMFILE: ${{ github.event.inputs.symfile }}
           SHARD: ${{ matrix.shard }}
           NSHARDS: "4"
         run: python scripts/quarter_history.py
