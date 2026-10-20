@@ -65,3 +65,15 @@ def log_post(route, caption, resp, extra=None):
 
 def log_fii_dii(iso, row):
     put("fii_dii", iso, dict(row), month=iso[:7])
+
+def put_text(kind, name, text):
+    """Large raw text (e.g. a concall transcript), gzipped: store/<kind>/<name>.txt.gz. Returns the relative path or None."""
+    try:
+        import gzip, re
+        name = re.sub(r"[^A-Za-z0-9_.-]+", "_", name)
+        d = os.path.join(ROOT, kind); os.makedirs(d, exist_ok=True)
+        f = os.path.join(d, name + ".txt.gz")
+        with gzip.open(f, "wt", encoding="utf-8") as fh: fh.write(text)
+        return os.path.relpath(f, os.path.dirname(ROOT))
+    except Exception:
+        return None

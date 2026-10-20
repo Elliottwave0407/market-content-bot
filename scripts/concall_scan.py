@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 import recap_post as rp
 import news_posts as NP
+import store
 
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 MODEL = os.environ.get("GEMINI_SCAN_MODEL", "").strip() or "gemini-flash-lite-latest"
@@ -194,6 +195,11 @@ def main():
             continue
         cand.append(x)
     p("after size filter (<= Rs", int(MCAP_MAX), "Cr or unknown):", len(cand))
+    for x in tr:       # every transcript filing seen is kept, scored or not
+        try:
+            store.put("concall_filings", f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}", {"code": str(x.get("SCRIP_CD")).strip(), "name": (x.get("SLONGNAME") or "").strip(), "filed": (x.get("NEWS_DT") or "")[:19], "headline": (x.get("HEADLINE") or x.get("NEWSSUB") or "")[:300], "link": NP.link(x), "mcap_cr": x.get("_mc"), "group": x.get("_g")}, month=(x.get("NEWS_DT") or "")[:7] or None)
+        except Exception:
+            pass
     cand = cand[:MAX_N]
     res = []
     for x in cand:
@@ -219,6 +225,13 @@ def main():
         nver = sum(len(v) for k, v in facts.items() if k in ("guidance", "catalysts", "risks", "capex", "capacity", "mix", "moat", "order_book", "ebitda_margin", "margin_outlook"))
         res.append({"name": name, "code": x.get("SCRIP_CD"), "mcap": x["_mc"], "grp": x["_g"], "total": total, "parts": parts, "facts": facts, "f": f, "claims": nclaims, "verified": nver, "words": len(txt.split())})
         p("scored", name[:30], total)
+        try:
+            day = (x.get("NEWS_DT") or "")[:10]; code = str(x.get("SCRIP_CD")).strip()
+            tp = store.put_text("concall_text", f"{code}_{day}", txt)
+            store.put("concalls", f"{code}|{day}", {"code": code, "name": name, "filed": (x.get("NEWS_DT") or "")[:19], "link": NP.link(x), "mcap_cr": x["_mc"], "group": x["_g"], "words": len(txt.split()),
+                      "model": MODEL, "score": total, "score_parts": parts, "claims": nclaims, "verified_claims": nver, "extracted": f, "verified_facts": facts, "transcript_file": tp}, month=day[:7] or None)
+        except Exception as e:
+            p("store err", repr(e)[:60])
         time.sleep(4)
     for d_ in DBG:
         p("FAILQ", d_)
