@@ -97,7 +97,7 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq_raw, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my_raw, 1), "margin_qoq_pts": round(mq_raw, 1), "adj_margin_yoy": round(my, 1), "adj_margin_qoq": round(mq, 1), "adj_ebitda_qoq": None if eq is None else round(eq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
 
 
-RATING_VERSION = "v1.0"      # live card still uses v1.0 until v1.1 is approved      # Quarterly Verdict. Any later change is a numbered release (v1.1, v2.0) so older cards stay comparable.
+RATING_VERSION = "v1.1"  # Quarterly Verdict. Any later change is a numbered release (v1.2, v2.0) so older cards stay comparable.
 
 # ======================= V6 (= v1.0): fitted to the owner's own ratings of 13 borderline results (Oct 2026) =======================
 # Reading order the owner uses: revenue growth first, then profit (PAT), then EBITDA, then margins. Gates and tolerances come from his comments card by card.

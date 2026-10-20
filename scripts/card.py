@@ -31,13 +31,13 @@ def opm(m):
     return None if not m or m.get("ebitda") is None or not m.get("revenue") else m["ebitda"] / m["revenue"] * 100
 
 def rating(q, basis, yprev=None):
-    """Quarter rating (Quarterly Verdict v1.0 = quarter_rating.rate6): Blockbuster / Excellent / Strong / Steady / Weak / Poor, or None when not ratable
+    """Quarter rating (Quarterly Verdict v1.1 = quarter_rating.rate6(v11=True)): Blockbuster / Excellent / Strong / Steady / Weak / Poor, or None when not ratable
     (missing numbers, no operating-profit row e.g. banks/NBFCs). q: newest-first quarters; basis: the one basis used for every quarter on the card."""
     mk = lambda i: dict(q[i]["m"], basis=basis) if len(q) > i and q[i].get("m") else None
     cur, prev, yago = mk(0), mk(1), mk(4)
     yprev = dict(yprev, basis=basis) if yprev else None      # the quarter before the year-ago one, for the seasonality adjustment (optional)
     if not (cur and prev and yago): return None
-    return qr.rate6(cur, prev, yago, yprev).get("tier")
+    return qr.rate6(cur, prev, yago, yprev, v11=True).get("tier")
 
 def _has_nc(cur, prev, yago):
     for base in (prev, yago):
