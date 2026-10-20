@@ -26,7 +26,7 @@ def parse_xbrl(t):
     if rev is None or pbt is None:
         return None
     eps = _val(t, "BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations")
-    return {"revenue": cr(rev), "ebitda": cr(pbt + fin + dep - oth), "pbt": cr(pbt), "pat": cr(pat), "eps": eps}
+    return {"revenue": cr(rev), "ebitda": cr(pbt + fin + dep - oth), "pbt": cr(pbt), "pat": cr(pat), "eps": eps, "fin": cr(fin), "oth": cr(oth)}   # fin/oth: extra keys used by the finance rating
 
 def _dt(s):
     for f in ("%d-%b-%Y", "%d-%B-%Y"):
