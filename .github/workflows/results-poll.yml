@@ -38,6 +38,7 @@ jobs:
           TELEGRAM_ANALYSIS_CHAT_ID: ${{ secrets.TELEGRAM_ANALYSIS_CHAT_ID }}
           NEWS_LIVE: "1"
           SME_LIVE: "1"
+          FIN_LIVE: "1"
         run: python scripts/poll_loop.py
       - name: Start the next run (chain)
         if: always() && github.event.inputs.send == '1'
