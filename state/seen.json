@@ -182,7 +182,9 @@
 "668f0cbe-e208-49d6-87bd-93bb81f119e4",
 "de732b2d-db10-48ea-99fa-4e9b06b986af",
 "1c7e5728-6599-4b2b-844d-8424558c0ecc",
-"a533b0c5-9477-4d70-986a-9c304ea2db56"
+"a533b0c5-9477-4d70-986a-9c304ea2db56",
+"f1e78363-f3de-47be-834d-a3917eaf7947",
+"e7660cc3-55e6-4e54-9b6e-856000cf4b14"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -362,7 +364,9 @@
 "532477|Sep-26|consolidated",
 "532726|Sep-26|consolidated",
 "544942|Jun-26|consolidated",
-"544945|Jun-26|consolidated"
+"544945|Jun-26|consolidated",
+"544942|Sep-26|consolidated",
+"512393|Sep-26|consolidated"
 ],
 "pending": {
 "b64e3fbf-c636-46a0-a7e3-36b59ac26685": {
@@ -400,7 +404,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792404570.79454,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "8473c498-47d8-4a46-a80d-cb5672c02979": {
 "rec": {
@@ -437,7 +441,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792406546.7214055,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "35bf242b-58db-4820-9ded-2d759a71d9f8": {
 "rec": {
@@ -474,7 +478,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792411801.083317,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "a6953830-4ed4-4d4c-bda9-e27677e7aac0": {
 "rec": {
@@ -511,7 +515,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792412949.3432,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "2e97d0c3-f421-4615-b4f6-b69e42e332bd": {
 "rec": {
@@ -548,7 +552,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792414831.1916986,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "a99a7fa4-b287-46b0-b9e5-ae87184bd638": {
 "rec": {
@@ -585,7 +589,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792421611.5796509,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 },
 "9db26713-9ebe-4268-8d44-9e035e32bc2d": {
 "rec": {
@@ -622,44 +626,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792421658.524467,
-"last": 1792483360.240798
-},
-"f1e78363-f3de-47be-834d-a3917eaf7947": {
-"rec": {
-"NEWSID": "f1e78363-f3de-47be-834d-a3917eaf7947",
-"SCRIP_CD": 544942,
-"XML_NAME": "ANN_544942_F1E78363-F3DE-47BE-834D-A3917EAF7947",
-"NEWSSUB": "Varmora Granito Ltd - 544942 - Outcome Of Board Meeting Dated October 19, 2026 Pursuant To Reg 30 And Other Applicable Provisions Of SEBI (Listing Obligations And Disclosure Requirements) Regulations,\r\n2015 For Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-19T22:59:00.807",
-"NEWS_DT": "2026-10-19T22:59:00.807",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8f30e0c4-97c5-44cf-8c70-a312da8e8c5b.pdf",
-"MORE": "",
-"HEADLINE": "Outcome of Board Meeting dated October 19, 2026 pursuant to Reg 30 and 33 of SEBI (LODR) Reg, 2015",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/varmora-granito-ltd/varmora/544942/",
-"SLONGNAME": "Varmora Granito Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-10-19T22:59:00",
-"DissemDT": "2026-10-19T22:59:00.807",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 13113228,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1792430994.1837933,
-"last": 1792483360.240798
+"last": 1792485888.5697434
 }
 },
 "lag": [
@@ -1022,6 +989,10 @@
 [
 "Elevate Campuses Ltd",
 305
+],
+[
+"Varmora Granito Ltd",
+904
 ]
 ],
 "gem_use": {
@@ -1033,9 +1004,20 @@
 "2026-10-17": 105,
 "2026-10-18": 27,
 "2026-10-19": 349,
-"2026-10-20": 6
+"2026-10-20": 56
 },
-"pdfposted": {},
+"pdfposted": {
+"512393|Sep-26|consolidated": {
+"code": "512393",
+"name": "Shardul Securities Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": -262.868,
+"pat": -328.14200000000005,
+"t": 1792485918.8480773,
+"last": 1792485924.216356
+}
+},
 "audit": [
 [
 "Kallam Textiles Ltd-$",
@@ -1408,6 +1390,10 @@
 [
 "Elevate Campuses Ltd",
 "ok"
+],
+[
+"Varmora Granito Ltd",
+"ok"
 ]
 ],
 "standalone_only": {
@@ -1519,6 +1505,8 @@
 "de732b2d-db10-48ea-99fa-4e9b06b986af": 1,
 "f1e78363-f3de-47be-834d-a3917eaf7947": 1,
 "668f0cbe-e208-49d6-87bd-93bb81f119e4": 1,
-"a533b0c5-9477-4d70-986a-9c304ea2db56": 1
+"a533b0c5-9477-4d70-986a-9c304ea2db56": 1,
+"2e97d0c3-f421-4615-b4f6-b69e42e332bd": 1,
+"e7660cc3-55e6-4e54-9b6e-856000cf4b14": 1
 }
 }
