@@ -46,7 +46,7 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
     my_raw, mq_raw, eq_raw = my, mq, eq
     if variant in ("V4", "V5"):
         # (1) seasonality: remove half of last year's same-quarter QoQ move (QoQ vs same quarter last year correlates ~0.5), when the quarter before year-ago is available
-        if yprev and yprev.get("revenue") not in (None, 0) and yprev.get("ebitda") is not None and yprev.get("basis") == cur.get("basis"):
+        if not half and yprev and yprev.get("revenue") not in (None, 0) and yprev.get("ebitda") is not None and yprev.get("basis") == cur.get("basis"):
             eq_ly, mq_ly = g(yago["ebitda"], yprev["ebitda"]), m(yago) - m(yprev)
             if eq is not None and eq_ly is not None: eq = eq - 0.5 * max(-40, min(40, eq_ly))      # clipped: one odd year must not swing the result
             mq = mq - 0.5 * max(-6, min(6, mq_ly))
@@ -114,8 +114,8 @@ W6 = {   # component: (max points, anchors)
 CUTS6 = [999, 70, 48, 36, 20]
 BB_SCORE6 = 80
 
-def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None):
-    """v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
+def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False):
+    """half=True: half-yearly results (SME). prev = the preceding half-year, yago = the same half last year; the sequential (HoH) changes cover six months, so they are halved to a per-quarter equivalent before scoring, and no seasonality adjustment is applied. v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
     cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
     for q in (cur, prev, yago):
         if not q or q.get("revenue") in (None, 0) or q.get("ebitda") is None: return {"tier": None, "why": "missing data"}
@@ -142,6 +142,8 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
                 return cur_v - 0.8 * sf((ly + ly2) / 2, clip)
             return cur_v - 0.5 * sf(ly, clip)
         rq = adj(rq, rq_ly, rq_ly2, 30, 5); eq = adj(eq, eq_ly, eq_ly2, 40, 5); mq = adj(mq, mq_ly, mq_ly2, 6, 1)
+    if half:
+        rq, eq, mq = (None if x is None else x * 0.5 for x in (rq, eq, mq)); pqo = None if pqo is None else pqo * 0.5
     # margin level: a small dip is tolerated when the margin is already high; gains are scaled to the room left (capped 3x)
     tol = min(2.5, 1.0 + max(0.0, m(cur) - 20) * 0.05) if m(cur) >= 20 else 0.0
     if my < 0: my = min(0.0, my + tol)

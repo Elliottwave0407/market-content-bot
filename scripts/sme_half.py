@@ -76,7 +76,7 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
             qs = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 2), "m": prev}, {"q": " ", "m": empty}, {"q": " ", "m": empty}, {"q": rf.qlabel(q - 4), "m": yago}]
             png = f"out/sme_{name.replace(' ', '_')[:20]}_{rf.qlabel(q)}_{basis}.png"
             card.render(name, c, basis, qs, png, "", half=True)
-            rt = card.rating(qs, basis)
+            rt = card.rating(qs, basis, None, True)
             p("  rendered", png, "verdict", rt, {x: (round(v, 1) if isinstance(v, float) else v) for x, v in cur.items() if x in ("revenue", "ebitda", "pat")})
             break
 publish()
