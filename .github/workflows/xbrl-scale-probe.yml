@@ -1,0 +1,32 @@
+name: XBRL Scale Probe
+on:
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: "Optional comma list (blank = all screened companies)"
+        default: ""
+      maxn:
+        default: "12"
+permissions:
+  contents: write
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          SYMBOLS: ${{ github.event.inputs.symbols }}
+          MAXN: ${{ github.event.inputs.maxn }}
+        run: python scripts/xbrl_scale_probe.py
+      - name: save result
+        if: always()
+        run: |
+          git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f companydata/_readiness
+          git diff --cached --quiet || git commit -qm "data: xbrl probe"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep 5; done
