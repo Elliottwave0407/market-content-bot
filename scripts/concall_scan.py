@@ -185,7 +185,9 @@ def main():
     tr = find_transcripts()
     p("transcript filings found", len(tr), D0, "->", D1)
     mc = mcaps()
-    p("market-cap list", len(mc))
+    p("market-cap list", len(mc), "nonzero", sum(1 for v, _ in mc.values() if v > 0))
+    for x in tr[:8]:
+        k = str(x.get("SCRIP_CD")).strip(); p("  mcap check", k, (x.get("SLONGNAME") or "")[:22], mc.get(k))
     cand = []
     for x in tr:
         code = str(x.get("SCRIP_CD")).strip()
