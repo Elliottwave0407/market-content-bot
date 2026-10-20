@@ -1,5 +1,5 @@
 """Quarter history for companies NSE's results API does not serve (BSE-only / SME), straight from BSE's results tables.
-Writes companydata/_hist/<SYM>.json in the same shape as quarter_history.py (values in Rs Crore; BSE tables are Rs lakh, so /100).
+Writes companydata/_hist/<SYM>.json in the same shape as quarter_history.py (values in Rs Crore; BSE tables are in Rs million, so /10 (SHALBY check: 331 Cr)).
 Also logs which quarter-ends actually have data (to see whether a company files quarterly or half-yearly).
 Env: SYMBOLS, SYMFILE, SHARD/NSHARDS, QFROM (default 114 = Jun-22), QTO (default 133)."""
 import os, sys, json, tempfile, time
@@ -32,7 +32,7 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
                 try: m = rf.fetch(b, code, s, basis, q)
                 except Exception as e: m = None; time.sleep(2)
                 if m and m.get("ebitda") is not None and m.get("pat") is not None:
-                    out[key][qdate(q)] = {"revenue": m["revenue"] / 100, "ebitda": m["ebitda"] / 100, "pbt": (m["pbt"] or 0) / 100, "pat": m["pat"] / 100}
+                    out[key][qdate(q)] = {"revenue": m["revenue"] / 10, "ebitda": m["ebitda"] / 10, "pbt": (m["pbt"] or 0) / 10, "pat": m["pat"] / 10}
                     have[key].append(rf.qlabel(q)[:3])
         p(s, code, "C:", "".join(x[0] for x in have["C"]) or "-", "S:", "".join(x[0] for x in have["S"]) or "-", "nC", len(out["C"]), "nS", len(out["S"]))
         k = "C" if out["C"] else "S"
