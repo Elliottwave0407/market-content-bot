@@ -179,3 +179,17 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None):
         t = max(t, TIERS.index(tier))
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "parts": {k: round(v, 1) for k, v in P.items()},
             "m": {"ebitda_yoy": ey, "ebitda_qoq": eq, "rev_yoy": ry, "rev_qoq": rq, "pat_yoy": pyo, "pat_qoq": pqo, "margin_yoy_pts": round(raw["m_yoy"], 1), "margin_qoq_pts": round(raw["m_qoq"], 1), "margin": round(m(cur), 1)}}
+
+
+# ======================= Finance companies (draft v0, Oct 2026) =======================
+LENDERS = set("HDBFS HUDCO IREDA LICHSGFIN M&MFIN MANAPPURAM PNBHOUSING POONAWALLA SBICARD".split())          # lenders: net interest income (revenue - finance costs) stands in for EBITDA
+CAPMARKET = set("360ONE ABSLAMC ANANDRATHI ANGELONE NUVAMA".split())                                         # brokers/AMCs/wealth: the normal operating-profit model fits
+def to_lender(m):
+    if not m or m.get("revenue") in (None, 0) or m.get("fin") is None: return None
+    return dict(m, ebitda=round(m["revenue"] - m["fin"], 2))
+def rate_fin(kind, cur, prev, yago, yprev=None):
+    """kind: 'lender' or 'capmarket'. Same rulebook as rate6, but a lender's 'EBITDA' is its net interest income, so its 'margin' is the spread kept after funding cost."""
+    if kind == "lender":
+        cur, prev, yago, yprev = to_lender(cur), to_lender(prev), to_lender(yago), to_lender(yprev)
+        if not (cur and prev and yago): return {"tier": None, "why": "missing finance cost"}
+    return rate6(cur, prev, yago, yprev)
