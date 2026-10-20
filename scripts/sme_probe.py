@@ -3,7 +3,7 @@ import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 import nse_results as nse, fin_data as fd
-syms = [x.strip().upper() for x in os.environ.get("SYMBOLS", "SUNRAKSHAK,BEEZAASAN,GENUSPRIME,KVTOYS,CWD,INVPRECQ").split(",") if x.strip()]
+syms = [x.strip().upper() for x in (os.environ.get("SYMBOLS") or "SUNRAKSHAK,BEEZAASAN,GENUSPRIME,KVTOYS,CWD,INVPRECQ").split(",") if x.strip()]
 s = nse.sess()
 def get(url, params, ref):
     try:
