@@ -48,7 +48,7 @@ def _has_nc(cur, prev, yago):
             return True
     return False
 
-def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None):
+def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, half=False):
     """quarters: list of {'q': label, 'm': metrics-dict} newest first (index 0 = latest, 1 = QoQ base, 4 = YoY base)."""
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
@@ -71,7 +71,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None):
         fig.text(0.725, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
         fig.text(0.725, 0.868, BADGE_NAME, color="#ffffff", fontsize=10, ha="center", va="center")
     # table
-    cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "QoQ", "YoY"]
+    cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "HoH" if half else "QoQ", "YoY"]
     xs = [0.04, 0.32, 0.46, 0.60, 0.75, 0.88]
     top = 0.78
     fig.patches.append(FancyBboxPatch((0.03, 0.40), 0.94, 0.41, boxstyle="round,pad=0.003,rounding_size=0.01", transform=fig.transFigure, facecolor=PANEL, edgecolor=BORDER, linewidth=1))
