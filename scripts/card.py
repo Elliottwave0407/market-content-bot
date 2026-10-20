@@ -144,27 +144,34 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     ser = [((LBL[0] if LBL else "Sales"), [None if (r["m"] or {}).get("revenue") is None else cr(r["m"]["revenue"]) for r in rows], BLUE, lambda v: fmt_num(v, md)),
            ((LBL[2] if LBL else "Operating margin"), [opm(r["m"]) for r in rows], AMBER, lambda v: f"{v:.1f}%"),
            ("Net profit", [None if (r["m"] or {}).get("pat") is None else cr(r["m"]["pat"]) for r in rows], GREEN, lambda v: fmt_num(v, md))]
-    ax = fig.add_axes([0.05, 0.075, 0.91, 0.29], facecolor=BG)
-    ax.set_xlim(-1.15, n - 0.5)
-    ax.set_ylim(0, 3)
+    ax = fig.add_axes([0.07, 0.075, 0.86, 0.245], facecolor=BG)
+    allx = []
+    legx = 0.07
     for k, (title, vals, col, f) in enumerate(ser):
-        base = 2 - k                      # sales on top, margin in the middle, net profit at the bottom
         pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-        if not pts:
+        base = next((v for i, v in pts if i == 0), None)
+        fig.patches.append(FancyBboxPatch((legx, 0.357), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
+        fig.text(legx + 0.018, 0.3655, title, color=TEXT, fontsize=14, fontweight="bold", va="center")
+        legx += 0.018 + 0.0105 * len(title) + 0.03
+        if not base or base <= 0:       # a line indexed to a zero or negative start is not meaningful: not drawn
             continue
-        lo, hi = min(v for _, v in pts), max(v for _, v in pts)
-        yy = lambda v: base + 0.12 + (0.5 * (v - lo) / (hi - lo) if hi > lo else 0.25)
-        ax.plot([i for i, _ in pts], [yy(v) for _, v in pts], color=col, linewidth=3, marker="o", markersize=9, markerfacecolor=col, markeredgecolor=BG, markeredgewidth=2, zorder=3)
-        ax.plot([pts[-1][0]], [yy(pts[-1][1])], marker="o", markersize=14, color=col, markeredgecolor=BG, markeredgewidth=2, zorder=5)
-        for i, v in pts:
-            ax.text(i, yy(v) + 0.1, f(v), ha="center", va="bottom", color=TEXT, fontsize=12, fontweight="bold", zorder=4)
-        ax.text(-1.12, base + 0.42, title.replace(" ", "\n", 1) if len(title) > 17 else title, ha="left", va="center", color=col, fontsize=13, fontweight="bold", linespacing=1.15)
-        if k:
-            ax.plot([-1.15, n - 0.5], [base + 1] * 2, color=BORDER, linewidth=1, zorder=1)
+        idx = [(i, 100.0 * v / base, v) for i, v in pts]
+        allx += [y for _, y, _ in idx]
+        ax.plot([i for i, _, _ in idx], [y for _, y, _ in idx], color=col, linewidth=3.2, marker="o", markersize=8, markerfacecolor=col, markeredgecolor=BG, markeredgewidth=1.5, zorder=3)
+        i0, y0, v0 = idx[0]; i1, y1, v1 = idx[-1]
+        ax.text(i1 + 0.1, y1, f(v1), ha="left", va="center", color=col, fontsize=12, fontweight="bold")
+    fig.text(0.93, 0.3655, "Indexed: first quarter = 100", color=MUTED, fontsize=11, ha="right", va="center")
+    if allx:
+        lo, hi = min(allx + [100]), max(allx + [100]); pad = max((hi - lo) * 0.18, 2)
+        ax.set_ylim(lo - pad, hi + pad)
+    ax.set_xlim(-0.7, n - 0.3)
+    ax.axhline(100, color=BORDER, linewidth=1.2, linestyle=(0, (4, 4)), zorder=1)
+    ax.grid(axis="y", color=BORDER, linewidth=0.6, alpha=0.7)
+    ax.set_axisbelow(True)
     ax.set_xticks(range(n))
     ax.set_xticklabels(labels, color=HEAD, fontsize=12, fontweight="bold")
-    ax.set_yticks([])
-    ax.tick_params(length=0)
+    ax.tick_params(axis="y", colors=MUTED, labelsize=10, length=0)
+    ax.tick_params(axis="x", length=0)
     for sp in ax.spines.values():
         sp.set_visible(False)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
