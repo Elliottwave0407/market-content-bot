@@ -97,7 +97,7 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq_raw, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my_raw, 1), "margin_qoq_pts": round(mq_raw, 1), "adj_margin_yoy": round(my, 1), "adj_margin_qoq": round(mq, 1), "adj_ebitda_qoq": None if eq is None else round(eq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
 
 
-RATING_VERSION = "v1.2"  # Quarterly Verdict. Any later change is a numbered release (v1.2, v2.0) so older cards stay comparable.
+RATING_VERSION = "v2.0"  # Quarterly Verdict. Any later change is a numbered release (v1.2, v2.0) so older cards stay comparable.
 
 # ======================= V6 (= v1.0): fitted to the owner's own ratings of 13 borderline results (Oct 2026) =======================
 # Reading order the owner uses: revenue growth first, then profit (PAT), then EBITDA, then margins. Gates and tolerances come from his comments card by card.
@@ -118,7 +118,7 @@ BB_SCORE6 = 80
 # shareholders' PBT / net premium for insurers. Margins of such businesses move in much smaller steps, so margin changes are scaled up and a tiny dip is tolerated.
 KIND_PARAMS = {"bank": {"mscale": 1.5, "mtol": 1.0}, "life": {"mscale": 4.0, "mtol": 0.3}, "general": {"mscale": 1.0, "mtol": 1.0}}
 
-def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False, v12=False):
+def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False, v12=False, v2=False):
     """half=True: half-yearly results (SME). prev = the preceding half-year, yago = the same half last year; the sequential (HoH) changes cover six months, so they are halved to a per-quarter equivalent before scoring, and no seasonality adjustment is applied. v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
     cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
     for q in (cur, prev, yago):
@@ -182,6 +182,9 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         if pat_noise: P["pat_yoy"] = 7
         pat_reliable = not pat_noise
     if cur.get("kind") in ("life", "general") and not seas: P["rev_qoq"] = 3      # insurers' premium is strongly seasonal (e.g. life: Mar high, Jun low, Sep rebound): without the seasonal history a QoQ jump says nothing
+    if v2:      # v2.0: revenue, margins and PAT carry equal weight (32 of 96 each). Margins pillar = margin level change (YoY 14, QoQ 8) + EBITDA growth (YoY 7, QoQ 3)
+        SC = {"rev_yoy": 24 / 22, "rev_qoq": 1.0, "pat_yoy": 26 / 22, "pat_qoq": 1.0, "m_yoy": 14 / 10, "m_qoq": 8 / 6, "eb_yoy": 7 / 16, "eb_qoq": 3 / 6}
+        P = {k: v * SC[k] for k, v in P.items()}
     score = round(sum(P.values()) * 100 / 96, 1)
     pat_reliable = locals().get('pat_reliable', True)
     # gates (from the owner's calls)
@@ -198,6 +201,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         elif pyo is not None and pyo >= 30 and grows and pat_reliable: caps.append(("Strong", "revenue growth under 15% YoY"))
         else: caps.append(("Steady", "revenue growth under 15% YoY without 30%+ profit growth"))
     if raw["m_qoq"] < -kp.get("mtol", 0): caps.append(("Strong", "margin fell QoQ"))
+    if v2 and raw["m_qoq"] < -kp.get("mtol", 0) and raw["m_yoy"] <= 0.05: caps.append(("Steady", "margin fell QoQ and is not up YoY"))      # margins drive the price: a falling margin that is not above last year's caps the verdict at Steady
     if v11 and not (prev["ebitda"] <= 0 or m(prev) < -20):
         if (eq is not None and eq <= -30) or (pqo is not None and pqo <= -30 and (pp or 0) > 0): caps.append(("Steady", "EBITDA or profit fell 30%+ QoQ"))     # an Excellent quarter should not show falling margins
     if (yago["revenue"] < 25) or (yago["ebitda"] < 2): caps.append(("Excellent", "small base"))
@@ -207,7 +211,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
     pathB = all(v is not None and v >= 50 for v in (ry, ey, pyo)) and rq is not None and rq >= 0 and (not v12 or raw["m_yoy"] >= -3)      # v1.2: margin may not fall more than 3 pts YoY. explosive all-round growth (e.g. revenue, EBITDA and PAT all more than +50% YoY), margin not required
     t = 0 if (pathA or pathB) else max(t, 1)
     for tier, why in caps:
-        if pathB and why == "margin fell QoQ": continue      # explosive growth is judged on growth, not on a flat margin
+        if pathB and why.startswith("margin fell QoQ"): continue      # explosive growth is judged on growth, not on a flat margin
         t = max(t, TIERS.index(tier))
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "parts": {k: round(v, 1) for k, v in P.items()},
             "m": {"ebitda_yoy": ey, "ebitda_qoq": eq, "rev_yoy": ry, "rev_qoq": rq, "pat_yoy": pyo, "pat_qoq": pqo, "margin_yoy_pts": round(raw["m_yoy"], 1), "margin_qoq_pts": round(raw["m_qoq"], 1), "margin": round(m(cur), 1)}}

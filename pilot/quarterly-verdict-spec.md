@@ -58,3 +58,14 @@ Lenders (HDBFS, HUDCO, IREDA, LICHSGFIN, M&MFIN, MANAPPURAM, PNBHOUSING, POONAWA
 - Blockbuster route B (explosive growth) now also needs margin not down more than 3 pts YoY (CWD-type cases: revenue +286%, margin -13 pts, are no longer Blockbuster). Effect on backtest: large/mid unchanged, small caps 4 quarters moved.
 - Lenders: finance cost is carried through the live card flows (BSE tables are empty for lenders, so they come through the filing-PDF path). Cards show Net interest income and NII margin %; verdict uses the finance draft (NII replaces EBITDA). Capital-market firms use the normal model. Dry runs: SBICARD Steady, LICHSGFIN Weak, POONAWALLA Blockbuster (Sep-26).
 - SME half-yearly route: `scripts/sme_results.py`, hooked into the poll loop but OFF unless `SME_LIVE=1` is set in results-poll.yml. Dry-run workflow: sme-results-test (by day). Half-year cards say HALF-YEARLY VERDICT with HoH column; Mar/Sep labels only.
+
+# v2.0 (live from 20-Oct-2026) - revenue, margins and PAT carry equal weight
+Owner's direction: revenue, margins and PAT matter equally (margins drive price action).
+- Weights out of 96, each pillar 32: **Revenue** = YoY 24 + QoQ 8. **PAT** = YoY 26 + QoQ 6. **Margins** = margin change YoY 14 + QoQ 8 + EBITDA growth YoY 7 + QoQ 3. (v1.x: revenue 30, PAT 28, EBITDA 22, margin 16.)
+- New gate: margin fell QoQ (beyond a small tolerance) AND is not above last year's: Steady at best (Blockbuster explosive-growth route is exempt, as before).
+- Cut-offs unchanged (70 / 48 / 36 / 20). Owner's 13 calls: 12 of 13 (HFCL known exception). Large/mid mix: 6 / 10 / 11 / 37 / 20 / 16 percent (Strong falls and Steady grows because falling margins now cap at Steady).
+# Banks and insurers (live in the rating; live card flow not wired yet)
+- Banks: revenue = net total income (interest earned + other income - interest expended), "EBITDA" = pre-provision operating profit, margin = pre-provision profit / net total income. Life insurers: net premium and shareholders' profit before tax. General/health insurers: net premium earned and profit before tax.
+- Margins of these businesses move in small steps: margin change scaled (bank x1.5, life x4, general x1) and a small dip tolerated (bank 1.0, life 0.3, general 1.0 pt).
+- Insurers: all of last year's same-quarter QoQ move is removed (premium is strongly seasonal); with no seasonal history, premium QoQ scores neutral.
+- Backtest: banks 534 quarters 4 / 11 / 19 / 38 / 18 / 10 percent. Insurers: only about 26 quarters of history, mix not meaningful yet.
