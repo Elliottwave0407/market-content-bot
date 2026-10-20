@@ -11,12 +11,21 @@ HALF = """You are reading an Indian SME-listed company's HALF-YEARLY financial r
 Extract the 'Statement of Audited/Unaudited Financial Results' table. Return ONLY JSON:
 {"unit":"lakh|crore|million|thousand|actual",
  "quarter_end_columns":["<current half-year end date>","<preceding half-year end date>","<same half-year end date last year>"],
+ "column_headings":["<exact heading text printed above column c>","<heading above p>","<heading above y>"],
  "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"finance_costs":[c,p,y],"depreciation":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
  "standalone": {same keys} or null}
 Rules: c = the current HALF-YEAR column (six months), p = the immediately preceding half-year column, y = the same half-year one year earlier. Use only half-year columns; ignore full-year ('year ended') columns. If the filing shows 'Half year ended 30.09.2025 | Half year ended 31.03.2025 | Half year ended 30.09.2024', those are c, p, y.
 revenue = 'Revenue from operations' (total, incl. other operating income). pbt = profit before tax (after exceptional items). pat = net profit/(loss) for the period (after tax).
 Numbers exactly as printed, in the printed unit; negatives for losses. Use null for any value not present. Do not compute or guess."""
 gr.PROMPT = HALF
+def sme_ok(d, i):
+    """SME statements: total income - expenses must equal PBT; PAT must be sane versus PBT (tax lines often exclude deferred tax, so PBT - tax is NOT required to equal PAT)."""
+    ti, ex, pbt, pat = (pc.val(d, x, i) for x in ("total_income", "total_expenses", "pbt", "pat"))
+    if None in (ti, ex, pbt, pat): return False
+    if abs((ti - ex) - pbt) > max(1.5, 0.002 * max(abs(ti), abs(ex))): return False
+    if pbt > 0 and not (-0.3 * pbt <= pat <= 1.1 * pbt): return False
+    if pbt <= 0 and pat > 0.5 * abs(pbt) + 1.5: return False
+    return True
 codes = [x.strip() for x in (os.environ.get("CODES") or "").split(",") if x.strip()]
 since = datetime.strptime(os.environ.get("FROM") or "2026-01-01", "%Y-%m-%d")
 os.makedirs("out", exist_ok=True)
@@ -47,6 +56,9 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
         if out is None: p("  read failed", str(err)[:80]); continue
         k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
         p("  unit", out.get("unit"), "columns", cols)
+        hd = [str(x or "") for x in (out.get("column_headings") or [])[:3]]
+        p("  headings", hd)
+        if len(hd) < 3 or not all(("half" in h.lower() or "six" in h.lower()) for h in hd): p("  columns are not all half-year columns"); continue
         qe = [pc.parse_qend(x) for x in cols[:3]]
         if not k or len(qe) < 3 or None in qe: p("  unit/columns unreadable"); continue
         mon = [x[0] * 12 + x[1] for x in qe]
@@ -56,7 +68,7 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
         for basis in ("consolidated", "standalone"):
             d = out.get(basis)
             if not isinstance(d, dict) or pc.val(d, "revenue", 0) is None or pc.val(d, "pat", 0) is None: continue
-            oks = [nse.arith_col(d, i) for i in range(3)]
+            oks = [sme_ok(d, i) for i in range(3)]
             p(" ", basis, "arithmetic by column:", oks)
             for kk in ("revenue","other_income","total_income","total_expenses","finance_costs","depreciation","pbt","tax","pat","eps"): p("     ", kk, d.get(kk))
             if not all(oks): p("  failed arithmetic checks"); break
