@@ -20,6 +20,12 @@ except Exception as _e:
     npst = None
     print('news_posts unavailable:', repr(_e)[:120])
 try:
+    import sme_results as sme
+    sme.SEND = os.environ.get('POLL_SEND', '0') == '1'
+except Exception as _e:
+    sme = None
+    print('sme_results unavailable:', repr(_e)[:120])
+try:
     import nse_results as nse
     nse.SEND = os.environ.get('POLL_SEND', '0') == '1'
 except Exception as _e:
@@ -124,6 +130,15 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("nse tick error: " + rp.redact(repr(e))[:200])
+                    if sme is not None:
+                        try:
+                            mchanged2, mlines2 = sme.tick()
+                            if mlines2:
+                                keep += [f"[sme {time.strftime('%H:%M:%S')}] "] + mlines2
+                            if mchanged2:
+                                commit_state()
+                        except Exception as e:
+                            keep.append("sme tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:

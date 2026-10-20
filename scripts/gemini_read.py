@@ -18,8 +18,8 @@ def list_models(key):
     r.raise_for_status()
     return [m["name"].split("/")[-1] for m in r.json().get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])]
 
-def read_pdf(key, model, pdf_bytes, tries=4, timeout=180):
-    body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf_bytes).decode()}}, {"text": PROMPT}]}],
+def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
+    body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf_bytes).decode()}}, {"text": prompt or PROMPT}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     last = None
     for i in range(tries):
