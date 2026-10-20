@@ -26,6 +26,11 @@ except Exception as _e:
     sme = None
     print('sme_results unavailable:', repr(_e)[:120])
 try:
+    import fin_results as fin
+except Exception as _e:
+    fin = None
+    print('fin_results unavailable:', repr(_e)[:120])
+try:
     import nse_results as nse
     nse.SEND = os.environ.get('POLL_SEND', '0') == '1'
 except Exception as _e:
@@ -139,6 +144,15 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("sme tick error: " + rp.redact(repr(e))[:200])
+                    if fin is not None:
+                        try:
+                            fch, flines = fin.tick()
+                            if flines:
+                                keep += [f"[fin {time.strftime('%H:%M:%S')}] "] + flines
+                            if fch:
+                                commit_state()
+                        except Exception as e:
+                            keep.append("fin tick error: " + rp.redact(repr(e))[:200])
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:

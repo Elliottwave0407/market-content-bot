@@ -247,6 +247,14 @@ def main(bse_in=None, known=None, fast=False):
         retry = [v["rec"] for k, v in list(pend.items()) if k not in new_ids and now - v["last"] >= RETRY_SEC]
         for rec in new + retry:
             nid = rec["NEWSID"]
+            try:      # banks/insurers: the NSE XBRL route (fin_results) posts them; this route only steps in after YIELD_H hours
+                import fin_results as _fr
+                if _fr.is_fin_code(rec.get("SCRIP_CD")):
+                    _age = (datetime.now() - datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])).total_seconds() / 3600
+                    if _age < _fr.YIELD_H:
+                        continue
+            except Exception:
+                pass
             first = pend.get(nid, {}).get("first", now)
             try:
                 out = build(bse, rec, final=(now - first) > WAIT_H * 3600, age_min=(10**6 if ONLY else (now - first) / 60))
