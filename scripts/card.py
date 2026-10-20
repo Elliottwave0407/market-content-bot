@@ -46,6 +46,9 @@ def fmt_num(v, d=0):
 def opm(m):
     return None if not m or m.get("ebitda") is None or not m.get("revenue") else m["ebitda"] / m["revenue"] * 100
 
+_RAW = {}
+LAST = {}
+
 def rating(q, basis, yprev=None, half=False):
     """Quarter rating (Quarterly Verdict v2.0 = quarter_rating.rate6(v11, v12, v2)): Blockbuster / Excellent / Strong / Steady / Weak / Poor, or None when not ratable
     (missing numbers, no operating-profit row e.g. banks/NBFCs). q: newest-first quarters; basis: the one basis used for every quarter on the card."""
@@ -53,7 +56,10 @@ def rating(q, basis, yprev=None, half=False):
     cur, prev, yago = mk(0), mk(1), mk(4)
     yprev = dict(yprev, basis=basis) if yprev else None      # the quarter before the year-ago one, for the seasonality adjustment (optional)
     if not (cur and prev and yago): return None
-    return qr.rate6(cur, prev, yago, yprev, v11=True, half=half, v12=True, v2=True).get("tier")
+    r = qr.rate6(cur, prev, yago, yprev, v11=True, half=half, v12=True, v2=True)
+    global _RAW
+    _RAW = r
+    return r.get("tier")
 
 def _has_nc(cur, prev, yago):
     for base in (prev, yago):
@@ -76,7 +82,10 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
             q_["m"] = dict(m_, ebitda=None)
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
+    global _RAW
+    _RAW = {}
     rate = rating(quarters, basis, yprev, half)
+    LAST.clear(); LAST.update({"name": name, "ticker": ticker, "basis": basis, "half": half, "quarters": quarters, "yprev": yprev, "rating": dict(_RAW or {}), "rating_version": qr.RATING_VERSION})
     fig = plt.figure(figsize=(16, 10), dpi=100, facecolor=BG)
     nfs = 30
     rend = fig.canvas.get_renderer()

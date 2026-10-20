@@ -144,9 +144,12 @@ def send_photo(path, cap, tweet=None):
     with open(path, "rb") as fh:
         r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
-        return r.json()
+        j = r.json()
     except Exception:
         return {"ok": False}
+    if j.get("ok"):
+        import store; store.log_post("news", cap, j)
+    return j
 
 def fetch_today(bse, seen):
     rows, pg, total = [], 1, 0

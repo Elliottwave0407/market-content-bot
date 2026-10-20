@@ -1,40 +1,67 @@
-"""Per-company data store (JSON in the repo, versioned by git; a website can read it as-is).
-companydata/<SYMBOL>/profile.json quarters.json filings.json holding.json sast.json transcripts.json promises.json score.json raw/<key>.txt.gz"""
-import os, json, gzip
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "companydata")
+"""Append-only data store (free, lives in the repo under store/). One JSON-lines file per kind per month: store/<kind>/<YYYY-MM>.jsonl
+Kinds: results (every result card posted: all numbers, verdict, caption, telegram message id), fii_dii (one row per trading day), posts (every other Telegram post).
+put() upserts by key, so a corrected re-post replaces its own row. Never raises: storing must never stop a post."""
+import os, json, time
+from datetime import datetime, timezone, timedelta
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "store")
+IST = timezone(timedelta(hours=5, minutes=30))
 
-def _p(sym, name):
-    d = os.path.join(ROOT, sym.upper()); os.makedirs(d, exist_ok=True)
-    return os.path.join(d, name)
+def _now():
+    return datetime.now(IST).strftime("%Y-%m-%d %H:%M:%S")
 
-def load(sym, name, default=None):
+def put(kind, key, rec, month=None):
     try:
-        return json.load(open(_p(sym, name), encoding="utf-8"))
+        month = month or datetime.now(IST).strftime("%Y-%m")
+        d = os.path.join(ROOT, kind); os.makedirs(d, exist_ok=True)
+        f = os.path.join(d, f"{month}.jsonl")
+        rows = []
+        if os.path.exists(f):
+            for ln in open(f, encoding="utf-8"):
+                ln = ln.strip()
+                if ln:
+                    try: rows.append(json.loads(ln))
+                    except Exception: pass
+        row = {"key": key, "ts": _now(), **rec}
+        rows = [r for r in rows if r.get("key") != key] + [row]
+        tmp = f + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            for r in rows: fh.write(json.dumps(r, ensure_ascii=False, default=str) + "\n")
+        os.replace(tmp, f)
+        return True
     except Exception:
-        return default
+        return False
 
-def save(sym, name, obj):
-    """write only when content changed (keeps git history clean)"""
-    new = json.dumps(obj, indent=1, sort_keys=True, ensure_ascii=False) + "\n"
-    f = _p(sym, name)
+def _mid(resp):
     try:
-        if open(f, encoding="utf-8").read() == new:
-            return False
+        r = (resp or {}).get("result") or {}
+        return {"msg_id": r.get("message_id"), "chat_id": (r.get("chat") or {}).get("id")}
+    except Exception:
+        return {}
+
+def _cr(m):
+    if not m: return None
+    return {k: (v if k in ("eps", "kind", "bank") else (None if v is None else round(v / 10.0, 2))) for k, v in m.items() if k in ("revenue", "ebitda", "pbt", "pat", "eps", "kind", "nii", "prov")}
+
+def log_result(route, caption, resp, card_last=None):
+    """After a result card was accepted by Telegram. card_last = card.LAST (set by card.render)."""
+    try:
+        L = card_last or {}
+        qs = L.get("quarters") or []
+        key = f"{L.get('ticker', '?')}|{qs[0]['q'] if qs else '?'}|{L.get('basis', '?')}"
+        rt = L.get("rating") or {}
+        put("results", key, {"route": route, "name": L.get("name"), "ticker": L.get("ticker"), "basis": L.get("basis"), "half_yearly": bool(L.get("half")),
+                             "unit": "INR_crore (eps in INR)", "quarters": [{"q": q["q"], **(_cr(q.get("m")) or {})} for q in qs],
+                             "yprev": _cr(L.get("yprev")), "verdict": rt.get("tier"), "score": rt.get("score"), "rating_version": L.get("rating_version"),
+                             "rating_detail": {k: v for k, v in rt.items() if k not in ("tier",)}, "caption": caption, **_mid(resp)})
     except Exception:
         pass
-    open(f, "w", encoding="utf-8").write(new)
-    return True
 
-def save_raw(sym, key, text):
-    d = os.path.join(os.path.dirname(_p(sym, "x")), "raw"); os.makedirs(d, exist_ok=True)
-    f = os.path.join(d, key + ".txt.gz")
-    if not os.path.exists(f):
-        with open(f, "wb") as fh, gzip.GzipFile(fileobj=fh, mode="wb", mtime=0) as g:
-            g.write(text.encode("utf-8"))
-
-def load_raw(sym, key):
-    f = os.path.join(os.path.dirname(_p(sym, "x")), "raw", key + ".txt.gz")
+def log_post(route, caption, resp, extra=None):
     try:
-        return gzip.open(f, "rt", encoding="utf-8").read()
+        mid = _mid(resp)
+        put("posts", f"{route}|{mid.get('msg_id') or int(time.time())}", {"route": route, "caption": caption, **mid, **(extra or {})})
     except Exception:
-        return None
+        pass
+
+def log_fii_dii(iso, row):
+    put("fii_dii", iso, dict(row), month=iso[:7])

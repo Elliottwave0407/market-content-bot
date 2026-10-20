@@ -104,6 +104,7 @@ def process(bse, r, st, final=False):
             rs = nse.tg("sendPhoto", data={"chat_id": nse.CHAT, "caption": cc[:1024], "reply_markup": xbuttons.markup(tweet, flink)}, files={"photo": fh})
         p(f"  sent ok={rs.get('ok')}")
         if not rs.get("ok"): return "wait"
+        import store; store.log_result("sme", cap, rs, card.LAST)
         time.sleep(3.2)
     st["posted"].append(key); nse._mark_seen(bkey)
     return "done"

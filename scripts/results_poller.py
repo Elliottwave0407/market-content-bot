@@ -295,6 +295,12 @@ def main(bse_in=None, known=None, fast=False):
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):
                     continue
+                try:
+                    import store
+                    if kind == "photo": store.log_result("bse", text, r, card.LAST)
+                    else: store.log_post("bse-text", text, r)
+                except Exception:
+                    pass
                 time.sleep(3.2)
             if ONLY:
                 posted += 1

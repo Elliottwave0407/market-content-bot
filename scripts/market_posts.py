@@ -41,7 +41,7 @@ def git(*a):
 def commit_state():
     git("config", "user.name", "market-content-bot")
     git("config", "user.email", "bot@users.noreply.github.com")
-    git("add", "state")
+    git("add", "state", "store")
     if git("diff", "--cached", "--quiet").returncode != 0:
         git("commit", "-q", "-m", "Market posts state")
         for _ in range(4):
@@ -61,9 +61,12 @@ def send_photo(path, caption, tweet=None):
     with open(path, "rb") as fh:
         r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data, files={"photo": fh}, timeout=60)
     try:
-        return r.json()
+        j = r.json()
     except Exception:
         return {"ok": False}
+    if j.get("ok"):
+        import store; store.log_post("market", caption, j)
+    return j
 
 def post(paths_captions):
     """Returns True only if every photo was accepted."""
@@ -171,6 +174,7 @@ def do_fii():
     if post([(path, cap, tweet)]) and SEND:
         hist = {"days": [x for x in days if x["date"][:7] >= (day - timedelta(days=100)).strftime("%Y-%m")], "posted": iso}
         jsave(HIST, hist)
+        import store; store.log_fii_dii(iso, today)
         if COMMIT:
             commit_state()
         p("FII/DII posted; history saved.")

@@ -47,7 +47,7 @@ def git(*a):
     return subprocess.run(["git", *a], capture_output=True, text=True)
 
 def commit_state():
-    git("add", "state", "feedback")
+    git("add", "state", "feedback", "store")
     if git("diff", "--cached", "--quiet").returncode != 0:
         git("commit", "-q", "-m", "Poller state")
         for _ in range(3):

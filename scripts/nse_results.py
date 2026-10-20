@@ -319,6 +319,7 @@ def process(x, st, final, maps=None):
         p(f"  sent ok={rr.get('ok')}")
         if not rr.get("ok"):
             return "wait"
+        import store; store.log_result("nse", cap, rr, card.LAST)
         time.sleep(3.2)
     if not ONLY:
         st["posted"].append(key)
