@@ -97,7 +97,7 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq_raw, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my_raw, 1), "margin_qoq_pts": round(mq_raw, 1), "adj_margin_yoy": round(my, 1), "adj_margin_qoq": round(mq, 1), "adj_ebitda_qoq": None if eq is None else round(eq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
 
 
-RATING_VERSION = "v1.1"  # Quarterly Verdict. Any later change is a numbered release (v1.2, v2.0) so older cards stay comparable.
+RATING_VERSION = "v1.2"  # Quarterly Verdict. Any later change is a numbered release (v1.2, v2.0) so older cards stay comparable.
 
 # ======================= V6 (= v1.0): fitted to the owner's own ratings of 13 borderline results (Oct 2026) =======================
 # Reading order the owner uses: revenue growth first, then profit (PAT), then EBITDA, then margins. Gates and tolerances come from his comments card by card.
@@ -114,7 +114,7 @@ W6 = {   # component: (max points, anchors)
 CUTS6 = [999, 70, 48, 36, 20]
 BB_SCORE6 = 80
 
-def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False):
+def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False, v12=False):
     """half=True: half-yearly results (SME). prev = the preceding half-year, yago = the same half last year; the sequential (HoH) changes cover six months, so they are halved to a per-quarter equivalent before scoring, and no seasonality adjustment is applied. v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
     cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
     for q in (cur, prev, yago):
@@ -194,7 +194,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
     t = next((i for i, c in enumerate(cuts) if score >= c), 5)
     conds = {"yoy40": ey is not None and ey >= 40, "rev20": ry is not None and ry >= 20, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4}
     pathA = conds["yoy40"] and conds["rev20"] and my >= 0 and sum(conds[k] for k in ("qoq20", "mq2", "my4")) >= 2 and score >= bb_score
-    pathB = all(v is not None and v >= 50 for v in (ry, ey, pyo)) and rq is not None and rq >= 0      # explosive all-round growth (e.g. revenue, EBITDA and PAT all more than +50% YoY), margin not required
+    pathB = all(v is not None and v >= 50 for v in (ry, ey, pyo)) and rq is not None and rq >= 0 and (not v12 or raw["m_yoy"] >= -3)      # v1.2: margin may not fall more than 3 pts YoY. explosive all-round growth (e.g. revenue, EBITDA and PAT all more than +50% YoY), margin not required
     t = 0 if (pathA or pathB) else max(t, 1)
     for tier, why in caps:
         if pathB and why == "margin fell QoQ": continue      # explosive growth is judged on growth, not on a flat margin
@@ -209,9 +209,9 @@ CAPMARKET = set("360ONE ABSLAMC ANANDRATHI ANGELONE NUVAMA".split())            
 def to_lender(m):
     if not m or m.get("revenue") in (None, 0) or m.get("fin") is None: return None
     return dict(m, ebitda=round(m["revenue"] - m["fin"], 2))
-def rate_fin(kind, cur, prev, yago, yprev=None):
+def rate_fin(kind, cur, prev, yago, yprev=None, **kw):
     """kind: 'lender' or 'capmarket'. Same rulebook as rate6, but a lender's 'EBITDA' is its net interest income, so its 'margin' is the spread kept after funding cost."""
     if kind == "lender":
         cur, prev, yago, yprev = to_lender(cur), to_lender(prev), to_lender(yago), to_lender(yprev)
         if not (cur and prev and yago): return {"tier": None, "why": "missing finance cost"}
-    return rate6(cur, prev, yago, yprev)
+    return rate6(cur, prev, yago, yprev, **kw)

@@ -99,7 +99,7 @@ def metrics(raw, basis):
     if not bank and None not in (exp, dep, fin):
         ebitda = rev + exp - dep - fin
     pat = first(raw, PAT_STANDALONE if basis == "standalone" else PAT_CONSOLIDATED)
-    return {"revenue": rev, "ebitda": ebitda, "pbt": first(raw, PBT_KEYS), "pat": pat, "eps": first(raw, EPS_KEYS), "bank": bank}
+    return {"revenue": rev, "ebitda": ebitda, "pbt": first(raw, PBT_KEYS), "pat": pat, "eps": first(raw, EPS_KEYS), "bank": bank, "fin": fin}
 
 def fetch(bse, code, name, basis, q):
     raw = raw_standalone(bse, code, q) if basis == "standalone" else raw_consolidated(bse, code, name, q)

@@ -52,7 +52,7 @@ def to_m(d, i, k):
     if None not in (rev, exp, dep, fin) and rev and fin / rev < 0.25:
         ebitda = (rev - exp + dep + fin) * k
     sc = lambda v: None if v is None else v * k
-    return {"revenue": sc(rev), "ebitda": ebitda, "pbt": sc(pbt), "pat": sc(pat), "eps": eps, "bank": False}
+    return {"revenue": sc(rev), "ebitda": ebitda, "pbt": sc(pbt), "pat": sc(pat), "eps": eps, "bank": False, "fin": sc(fin)}
 
 def close(a, b):
     return abs(a - b) <= max(0.6, 0.005 * abs(b))

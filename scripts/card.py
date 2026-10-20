@@ -5,6 +5,21 @@ from matplotlib.patches import FancyBboxPatch
 import theme
 from theme import HEAD, BG, PANEL, BORDER, TEXT, MUTED, GREEN, RED, AMBER, BLUE, BAR_OLD, RATING_COLORS, BADGE_NAME
 import quarter_rating as qr
+import json, os
+_CODE2SYM = None
+def fin_kind(ticker):
+    """'lender' / 'capmarket' / None from the card's ticker string ('NSE SYM' or 'BSE code')."""
+    global _CODE2SYM
+    try:
+        kind, ref = str(ticker).split(" ", 1)
+        if kind == "BSE":
+            if _CODE2SYM is None:
+                _CODE2SYM = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "state", "symbols.json")))["m"]
+            ref = _CODE2SYM.get(ref.strip(), "")
+        ref = ref.strip().upper()
+    except Exception:
+        return None
+    return "lender" if ref in qr.LENDERS else "capmarket" if ref in qr.CAPMARKET else None
 
 def cr(v):
     return None if v is None else v / 10.0
@@ -37,7 +52,7 @@ def rating(q, basis, yprev=None, half=False):
     cur, prev, yago = mk(0), mk(1), mk(4)
     yprev = dict(yprev, basis=basis) if yprev else None      # the quarter before the year-ago one, for the seasonality adjustment (optional)
     if not (cur and prev and yago): return None
-    return qr.rate6(cur, prev, yago, yprev, v11=True, half=half).get("tier")
+    return qr.rate6(cur, prev, yago, yprev, v11=True, half=half, v12=True).get("tier")
 
 def _has_nc(cur, prev, yago):
     for base in (prev, yago):
@@ -50,6 +65,10 @@ def _has_nc(cur, prev, yago):
 
 def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, half=False):
     """quarters: list of {'q': label, 'm': metrics-dict} newest first (index 0 = latest, 1 = QoQ base, 4 = YoY base)."""
+    lender = fin_kind(ticker) == "lender"
+    if lender:      # a lender's net interest income (revenue - finance costs) stands in for operating profit
+        quarters = [dict(q, m=(qr.to_lender(q.get("m")) or q.get("m"))) for q in quarters]
+        yprev = qr.to_lender(yprev) or yprev
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
     rate = rating(quarters, basis, yprev, half)
@@ -79,7 +98,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
         fig.text(x if x == xs[0] else x + 0.05, top, c, color=HEAD, fontsize=15, fontweight="bold", ha="left" if x == xs[0] else "right", va="center")
     money = [cr(m.get(k)) for m in (cur, prev, yago) if m for k in ("revenue", "ebitda", "pat") if m.get(k) is not None]
     md = 0 if money and max(abs(v) for v in money) >= 1000 else 1
-    items = [("Sales", "revenue", md), ("Operating profit", "ebitda", md), ("OPM %", "opm", 1), ("Net profit (PAT)", "pat", md), ("EPS (₹)", "eps", 2)]
+    items = [("Sales", "revenue", md), ("Net interest income" if lender else "Operating profit", "ebitda", md), ("NII margin %" if lender else "OPM %", "opm", 1), ("Net profit (PAT)", "pat", md), ("EPS (₹)", "eps", 2)]
     y = top - 0.065
     for label, key, d in items:
         def val(m):
