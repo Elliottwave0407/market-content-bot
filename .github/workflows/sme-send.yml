@@ -26,7 +26,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          PDF_TRIES: "3"
+          PDF_TRIES: "6"
           SME_SEND: ${{ github.event.inputs.send }}
           SME_ONLY: ${{ github.event.inputs.codes }}
         run: python scripts/sme_results.py
