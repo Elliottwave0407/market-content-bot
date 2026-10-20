@@ -58,7 +58,6 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
         p("  unit", out.get("unit"), "columns", cols)
         hd = [str(x or "") for x in (out.get("column_headings") or [])[:3]]
         p("  headings", hd)
-        if len(hd) < 3 or not all(("half" in h.lower() or "six" in h.lower()) for h in hd): p("  columns are not all half-year columns"); continue
         qe = [pc.parse_qend(x) for x in cols[:3]]
         if not k or len(qe) < 3 or None in qe: p("  unit/columns unreadable"); continue
         mon = [x[0] * 12 + x[1] for x in qe]
