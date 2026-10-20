@@ -95,3 +95,85 @@ def rate(cur, prev, yago, variant="V1", yprev=None):
         if t == 0 and not all(conds.values()): t = 1
     for tier, _ in caps: t = max(t, TIERS.index(tier))
     return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "m": {"ebitda_yoy": ey, "ebitda_qoq": eq_raw, "rev_yoy": ry, "rev_qoq": rq, "margin_yoy_pts": round(my_raw, 1), "margin_qoq_pts": round(mq_raw, 1), "adj_margin_yoy": round(my, 1), "adj_margin_qoq": round(mq, 1), "adj_ebitda_qoq": None if eq is None else round(eq, 1), "margin": round(m(cur), 1), "pat_up": pat_up}}
+
+
+# ======================= V6: fitted to the owner's own ratings of 13 borderline results (Oct 2026) =======================
+# Reading order the owner uses: revenue growth first, then profit (PAT), then EBITDA, then margins. Gates and tolerances come from his comments card by card.
+W6 = {   # component: (max points, anchors)
+    "rev_yoy": [(-5, 0), (0, 3), (10, 10), (20, 16), (30, 22)],
+    "rev_qoq": [(-10, 0), (0, 3), (10, 6), (20, 8)],
+    "eb_yoy": [(-10, 0), (0, 4), (10, 8), (20, 12), (40, 16)],
+    "eb_qoq": [(-10, 0), (0, 2), (10, 4), (20, 6)],
+    "pat_yoy": [(-10, 0), (0, 5), (15, 12), (30, 17), (60, 22)],
+    "pat_qoq": [(-10, 0), (0, 2), (10, 4), (25, 6)],
+    "m_yoy": [(-2, 0), (0, 4), (2, 7), (4, 10)],
+    "m_qoq": [(-1, 0), (0, 2), (1, 4), (2, 6)],
+}
+CUTS6 = [999, 70, 48, 36, 20]
+BB_SCORE6 = 80
+
+def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None):
+    cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
+    for q in (cur, prev, yago):
+        if not q or q.get("revenue") in (None, 0) or q.get("ebitda") is None: return {"tier": None, "why": "missing data"}
+    if len({q.get("basis") for q in (cur, prev, yago)}) > 1: return {"tier": None, "why": "basis mismatch"}
+    m = lambda q: 100 * q["ebitda"] / q["revenue"]
+    ey, eq = g(cur["ebitda"], yago["ebitda"]), g(cur["ebitda"], prev["ebitda"])
+    ry, rq = g(cur["revenue"], yago["revenue"]), g(cur["revenue"], prev["revenue"])
+    cp, pp, yp = cur.get("pat"), prev.get("pat"), yago.get("pat")
+    pyo = None if cp is None or yp is None or yp <= 0 else (cp - yp) / yp * 100
+    pqo = None if cp is None or pp is None or pp <= 0 else (cp - pp) / pp * 100
+    my, mq = m(cur) - m(yago), m(cur) - m(prev)
+    raw = dict(rev_yoy=ry, rev_qoq=rq, eb_yoy=ey, eb_qoq=eq, pat_yoy=pyo, pat_qoq=pqo, m_yoy=my, m_qoq=mq, margin=m(cur))
+    # seasonality: remove half of last year's same-quarter QoQ move (clipped), when the quarter before year-ago is known
+    if yprev and yprev.get("revenue") not in (None, 0) and yprev.get("ebitda") is not None and yprev.get("basis") == cur.get("basis"):
+        rq_ly, eq_ly, mq_ly = g(yago["revenue"], yprev["revenue"]), g(yago["ebitda"], yprev["ebitda"]), m(yago) - m(yprev)
+        if rq is not None and rq_ly is not None: rq = rq - 0.5 * max(-30, min(30, rq_ly))
+        if eq is not None and eq_ly is not None: eq = eq - 0.5 * max(-40, min(40, eq_ly))
+        mq = mq - 0.5 * max(-6, min(6, mq_ly))
+    # margin level: a small dip is tolerated when the margin is already high; gains are scaled to the room left (capped 3x)
+    tol = min(2.5, 1.0 + max(0.0, m(cur) - 20) * 0.05) if m(cur) >= 20 else 0.0
+    if my < 0: my = min(0.0, my + tol)
+    if mq < 0: mq = min(0.0, mq + tol)
+    if mq > 0: mq *= min(3.0, max(1.0, 80 / (100 - min(m(prev), 95))))
+    if my > 0: my *= min(3.0, max(1.0, 80 / (100 - min(m(yago), 95))))
+    caps = []
+    P = {}
+    P["rev_yoy"] = interp(ry, W6["rev_yoy"]) if ry is not None else 0
+    P["rev_qoq"] = interp(rq, W6["rev_qoq"]) if rq is not None else 0
+    if ey is None:
+        P["eb_yoy"] = 10 if cur["ebitda"] > 0 else 0
+        if cur["ebitda"] > 0: caps.append(("Excellent", "turnaround from a loss/zero EBITDA base"))
+    else: P["eb_yoy"] = interp(ey, W6["eb_yoy"])
+    P["eb_qoq"] = interp(eq, W6["eb_qoq"]) if eq is not None else (4 if cur["ebitda"] > 0 else 0)
+    if cp is None or yp is None: P["pat_yoy"] = 0
+    elif yp > 0: P["pat_yoy"] = interp(pyo, W6["pat_yoy"])
+    else: P["pat_yoy"] = 12 if cp > 0 else 0
+    P["pat_qoq"] = interp(pqo, W6["pat_qoq"]) if pqo is not None else (4 if cp is not None and cp > 0 else 0)
+    P["m_yoy"], P["m_qoq"] = interp(my, W6["m_yoy"]), interp(mq, W6["m_qoq"])
+    score = round(sum(P.values()) * 100 / 96, 1)
+    # gates (from the owner's calls)
+    if cp is not None and cp <= 0: caps.append(("Weak", "net loss"))
+    elif pyo is not None and pyo <= -30: caps.append(("Weak", "net profit down 30%+ YoY"))
+    elif pyo is not None and pyo <= -5: caps.append(("Steady", "net profit down YoY"))
+    elif pyo is not None and pyo < 0: caps.append(("Strong", "net profit slightly down YoY"))
+    rq_raw = raw["rev_qoq"]
+    if rq is not None and rq < -5: caps.append(("Steady", "revenue fell more than 5% QoQ (seasonally adjusted)"))
+    if rq_raw is not None and rq_raw < 0 and pqo is not None and pqo < 0 and pyo is not None and pyo < 10: caps.append(("Weak", "revenue and profit both fell QoQ with profit barely up YoY"))
+    if ry is not None and ry < 15:        # revenue is the gate: weak top-line growth needs exceptional profit growth to rise
+        grows = rq_raw is not None and rq_raw >= 0      # the profit exception only applies when the top line is not shrinking QoQ
+        if pyo is not None and pyo >= 50 and grows: pass
+        elif pyo is not None and pyo >= 30 and grows: caps.append(("Strong", "revenue growth under 15% YoY"))
+        else: caps.append(("Steady", "revenue growth under 15% YoY without 30%+ profit growth"))
+    if raw["m_qoq"] < 0: caps.append(("Strong", "margin fell QoQ"))     # an Excellent quarter should not show falling margins
+    if yago["revenue"] < 25 or yago["ebitda"] < 2: caps.append(("Excellent", "small base"))
+    t = next((i for i, c in enumerate(cuts) if score >= c), 5)
+    conds = {"yoy40": ey is not None and ey >= 40, "rev20": ry is not None and ry >= 20, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4}
+    pathA = conds["yoy40"] and conds["rev20"] and my >= 0 and sum(conds[k] for k in ("qoq20", "mq2", "my4")) >= 2 and score >= bb_score
+    pathB = all(v is not None and v >= 50 for v in (ry, ey, pyo)) and rq is not None and rq >= 0      # explosive all-round growth (e.g. revenue, EBITDA and PAT all more than +50% YoY), margin not required
+    t = 0 if (pathA or pathB) else max(t, 1)
+    for tier, why in caps:
+        if pathB and why == "margin fell QoQ": continue      # explosive growth is judged on growth, not on a flat margin
+        t = max(t, TIERS.index(tier))
+    return {"tier": TIERS[t], "score": score, "caps": [c[1] for c in caps], "parts": {k: round(v, 1) for k, v in P.items()},
+            "m": {"ebitda_yoy": ey, "ebitda_qoq": eq, "rev_yoy": ry, "rev_qoq": rq, "pat_yoy": pyo, "pat_qoq": pqo, "margin_yoy_pts": round(raw["m_yoy"], 1), "margin_qoq_pts": round(raw["m_qoq"], 1), "margin": round(m(cur), 1)}}
