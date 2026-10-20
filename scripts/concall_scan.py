@@ -14,7 +14,7 @@ MODEL = os.environ.get("GEMINI_SCAN_MODEL", "").strip() or "gemini-flash-lite-la
 D0 = os.environ.get("FROM_DAY", "2026-10-06")
 D1 = os.environ.get("TO_DAY", "2026-10-16")
 MAX_N = int(os.environ.get("MAX_N", "15"))
-MCAP_MAX = float(os.environ.get("MCAP_MAX", "25000"))   # Rs Cr; focus = SME / micro / small
+MCAP_MAX = float(os.environ.get("MCAP_MAX", "100000000"))   # Rs Cr; default = every company (smallest are extracted first)
 BASE = "https://generativelanguage.googleapis.com/v1beta"
 
 PROMPT = """You read the transcript of an Indian listed company's earnings conference call. Extract ONLY what management actually said. Never infer or add outside knowledge.
@@ -200,6 +200,30 @@ def main():
             store.put("concall_filings", f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}", {"code": str(x.get("SCRIP_CD")).strip(), "name": (x.get("SLONGNAME") or "").strip(), "filed": (x.get("NEWS_DT") or "")[:19], "headline": (x.get("HEADLINE") or x.get("NEWSSUB") or "")[:300], "link": NP.link(x), "mcap_cr": x.get("_mc"), "group": x.get("_g")}, month=(x.get("NEWS_DT") or "")[:7] or None)
         except Exception:
             pass
+    # raw transcript text is kept for EVERY company's call (cheap, no Gemini); extraction below is limited by the free quota
+    nraw = 0
+    for x in tr:
+        code = str(x.get("SCRIP_CD")).strip(); day = (x.get("NEWS_DT") or "")[:10]
+        if not day or os.path.exists(os.path.join(store.ROOT, "concall_text", f"{code}_{day}.txt.gz")):
+            continue
+        try:
+            t_ = pdf_text(NP.link(x))
+            if t_ and len(t_) >= 5000 and store.put_text("concall_text", f"{code}_{day}", t_):
+                nraw += 1
+        except Exception:
+            pass
+    p("raw transcripts newly saved:", nraw)
+    done_keys = set()
+    try:
+        import glob
+        for fp in glob.glob(os.path.join(store.ROOT, "concalls", "*.jsonl")):
+            for ln in open(fp, encoding="utf-8"):
+                try: done_keys.add(json.loads(ln)["key"])
+                except Exception: pass
+    except Exception:
+        pass
+    cand = [x for x in cand if f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}" not in done_keys]
+    cand.sort(key=lambda x: x["_mc"] or 0)       # smallest companies first (unknown size first)
     cand = cand[:MAX_N]
     res = []
     for x in cand:

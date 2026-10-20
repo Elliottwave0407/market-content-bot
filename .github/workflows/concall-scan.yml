@@ -12,8 +12,8 @@ on:
         description: "max transcripts to score (Gemini calls)"
         default: "15"
       mcap_max:
-        description: "max market cap Rs Cr (focus small caps)"
-        default: "25000"
+        description: "max market cap Rs Cr (default: every company)"
+        default: "100000000"
 permissions:
   contents: write
 jobs:
