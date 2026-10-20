@@ -150,9 +150,9 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     allv = [0.0]
     for k, (title, vals, col, where) in enumerate(ser):
         pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-        ly = 0.322 - k * 0.058
-        fig.patches.append(FancyBboxPatch((0.775, ly - 0.009), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
-        fig.text(0.794, ly, title, color=TEXT, fontsize=12.5, fontweight="bold", va="center")
+        ly = 0.295 - k * 0.055
+        fig.patches.append(FancyBboxPatch((0.805, ly - 0.009), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
+        fig.text(0.824, ly, title, color=TEXT, fontsize=12.5, fontweight="bold", va="center")
         if not pts:
             continue
         allv += [v for _, v in pts]
