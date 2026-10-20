@@ -58,6 +58,7 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
             if not isinstance(d, dict) or pc.val(d, "revenue", 0) is None or pc.val(d, "pat", 0) is None: continue
             oks = [nse.arith_col(d, i) for i in range(3)]
             p(" ", basis, "arithmetic by column:", oks)
+            for kk in ("revenue","other_income","total_income","total_expenses","finance_costs","depreciation","pbt","tax","pat","eps"): p("     ", kk, d.get(kk))
             if not all(oks): p("  failed arithmetic checks"); break
             cur, prev, yago = (pc.to_m(d, i, k) for i in range(3))
             empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
