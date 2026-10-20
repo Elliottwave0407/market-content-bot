@@ -137,23 +137,36 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
                     txt, col = ("-", MUTED) if chg is None else (fmt_pct(chg), GREEN if chg > 0 else RED if chg < 0 else MUTED)
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
         y -= 0.062
-    # trend bars (oldest -> newest)
+    # trend lines (oldest -> newest): sales, operating margin and net profit in ONE chart, each line in its own band so labels never collide
     rows = list(reversed(quarters))
     labels = [r["q"] for r in rows]
-    for i, (title, key) in enumerate((((LBL[0] if LBL else "Sales"), "revenue"), ("Net profit", "pat"), ("EPS (₹)", "eps"))):
-        ax = fig.add_axes([0.05 + i * 0.315, 0.09, 0.27, 0.23], facecolor=BG)
-        vals = [(r["m"] or {}).get(key) for r in rows]
-        vals = [None if v is None else (v if key == "eps" else cr(v)) for v in vals]
-        bars = ax.bar(range(len(vals)), [v or 0 for v in vals], color=[BLUE if j == len(vals) - 1 else BAR_OLD for j in range(len(vals))])
-        for j, v in enumerate(vals):
-            ax.text(j, (v or 0), "NA" if v is None else fmt_num(v, 2 if key == "eps" else md), ha="center", va="top" if (v is not None and v < 0) else "bottom", color=TEXT, fontsize=11, fontweight="bold")
-        ax.set_xticks(range(len(labels)))
-        ax.set_xticklabels(labels, color=HEAD, fontsize=11, fontweight="bold")
-        ax.set_yticks([])
-        for sp in ax.spines.values():
-            sp.set_visible(False)
-        ax.set_title(title, color=TEXT, fontsize=15, fontweight="bold", loc="left")
-        ax.margins(y=0.2)
+    n = len(rows)
+    ser = [((LBL[0] if LBL else "Sales"), [None if (r["m"] or {}).get("revenue") is None else cr(r["m"]["revenue"]) for r in rows], BLUE, lambda v: fmt_num(v, md)),
+           ((LBL[2] if LBL else "Operating margin"), [opm(r["m"]) for r in rows], AMBER, lambda v: f"{v:.1f}%"),
+           ("Net profit", [None if (r["m"] or {}).get("pat") is None else cr(r["m"]["pat"]) for r in rows], GREEN, lambda v: fmt_num(v, md))]
+    ax = fig.add_axes([0.05, 0.075, 0.91, 0.29], facecolor=BG)
+    ax.set_xlim(-1.15, n - 0.5)
+    ax.set_ylim(0, 3)
+    for k, (title, vals, col, f) in enumerate(ser):
+        base = 2 - k                      # sales on top, margin in the middle, net profit at the bottom
+        pts = [(i, v) for i, v in enumerate(vals) if v is not None]
+        if not pts:
+            continue
+        lo, hi = min(v for _, v in pts), max(v for _, v in pts)
+        yy = lambda v: base + 0.12 + (0.5 * (v - lo) / (hi - lo) if hi > lo else 0.25)
+        ax.plot([i for i, _ in pts], [yy(v) for _, v in pts], color=col, linewidth=3, marker="o", markersize=9, markerfacecolor=col, markeredgecolor=BG, markeredgewidth=2, zorder=3)
+        ax.plot([pts[-1][0]], [yy(pts[-1][1])], marker="o", markersize=14, color=col, markeredgecolor=BG, markeredgewidth=2, zorder=5)
+        for i, v in pts:
+            ax.text(i, yy(v) + 0.1, f(v), ha="center", va="bottom", color=TEXT, fontsize=12, fontweight="bold", zorder=4)
+        ax.text(-1.12, base + 0.42, title.replace(" ", "\n", 1) if len(title) > 17 else title, ha="left", va="center", color=col, fontsize=13, fontweight="bold", linespacing=1.15)
+        if k:
+            ax.plot([-1.15, n - 0.5], [base + 1] * 2, color=BORDER, linewidth=1, zorder=1)
+    ax.set_xticks(range(n))
+    ax.set_xticklabels(labels, color=HEAD, fontsize=12, fontweight="bold")
+    ax.set_yticks([])
+    ax.tick_params(length=0)
+    for sp in ax.spines.values():
+        sp.set_visible(False)
     fig.text(0.05, 0.425, "* NC = EPS growth not comparable (share count changed between the periods)", color=AMBER, fontsize=12, ha="left", va="center") if _has_nc(cur, prev, yago) else None
     fig.text(0.04, 0.035, "For educational purpose only. Not an investment advice.", color=MUTED, fontsize=11, va="center")
     theme.brand(fig, x_right=0.968, top=0.985, h_in=1.0)
