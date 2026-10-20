@@ -30,11 +30,12 @@ def fmt_num(v, d=0):
 def opm(m):
     return None if not m or m.get("ebitda") is None or not m.get("revenue") else m["ebitda"] / m["revenue"] * 100
 
-def rating(q, basis):
+def rating(q, basis, yprev=None):
     """Quarter rating (FinGod rating v1.0 candidate, variant V4): Blockbuster / Excellent / Strong / Steady / Weak / Poor, or None when not ratable
     (missing numbers, no operating-profit row e.g. banks/NBFCs). q: newest-first quarters; basis: the one basis used for every quarter on the card."""
     mk = lambda i: dict(q[i]["m"], basis=basis) if len(q) > i and q[i].get("m") else None
-    cur, prev, yago, yprev = mk(0), mk(1), mk(4), mk(5)
+    cur, prev, yago = mk(0), mk(1), mk(4)
+    yprev = dict(yprev, basis=basis) if yprev else None      # the quarter before the year-ago one, for the seasonality adjustment (optional)
     if not (cur and prev and yago): return None
     return qr.rate(cur, prev, yago, "V4", yprev).get("tier")
 
@@ -47,11 +48,11 @@ def _has_nc(cur, prev, yago):
             return True
     return False
 
-def render(name, ticker, basis, quarters, out_path, filed_note=""):
+def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None):
     """quarters: list of {'q': label, 'm': metrics-dict} newest first (index 0 = latest, 1 = QoQ base, 4 = YoY base)."""
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
-    rate = rating(quarters, basis)
+    rate = rating(quarters, basis, yprev)
     fig = plt.figure(figsize=(16, 10), dpi=100, facecolor=BG)
     nfs = 30
     rend = fig.canvas.get_renderer()
