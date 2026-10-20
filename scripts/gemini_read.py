@@ -30,8 +30,16 @@ def _num(x):
         return -v if neg else v
     return x
 
+def _unit(u):
+    """'In Lacs', 'Rs. in Lakhs', 'Crores', 'INR Millions' ... -> lakh / crore / million / thousand / actual (unknown text is left as is)."""
+    t = str(u or "").lower()
+    for word, canon in (("lac", "lakh"), ("lakh", "lakh"), ("crore", "crore"), ("crs", "crore"), ("million", "million"), ("thousand", "thousand"), ("actual", "actual"), ("rupee", "actual")):
+        if word in t: return canon
+    return u
+
 def _clean(out):
     if isinstance(out, dict):
+        out["unit"] = _unit(out.get("unit"))
         for b in ("consolidated", "standalone"):
             d = out.get(b)
             if isinstance(d, dict):
