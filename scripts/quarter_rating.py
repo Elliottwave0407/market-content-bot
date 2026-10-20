@@ -3,7 +3,7 @@ Tiers (best->worst): Blockbuster, Excellent, Strong, Steady, Weak, Poor.
 Variants (for the design test): V1 as first drafted; V2 'Excellent' minimums moved to the midpoint; V3 softer Blockbuster (EBITDA YoY>=40 plus 3 of the other 4 conditions); V4 owner-approved Blockbuster rule (see rate()).
 Pure function of 3 quarters' filed numbers: cur, prev (QoQ base), yago (YoY base). Each is {revenue, ebitda, pat} in Rs Cr."""
 TIERS = ["Blockbuster", "Excellent", "Strong", "Steady", "Weak", "Poor"]
-CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10], "V4": [999, 74, 60, 38, 15]}      # score minimum for tiers 0..4 (Poor below the last)
+CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10], "V4": [999, 74, 55, 32, 12]}      # score minimum for tiers 0..4 (Poor below the last)
 
 def band(v, steps):
     """steps: [(min_value, points), ...] descending by min_value"""
@@ -40,7 +40,14 @@ def rate(cur, prev, yago, variant="V1"):
     p_rv = band(ry, S_REV) if ry is not None else 0
     pat_up = (cur.get("pat") is not None and yago.get("pat") is not None and cur["pat"] > yago["pat"])
     p_pat = 5 if pat_up else 0
-    if cur.get("pat") is not None and yago.get("pat") is not None and not pat_up: caps.append(("Strong", "net profit down YoY"))
+    if cur.get("pat") is not None and yago.get("pat") is not None and not pat_up:
+        if variant != "V4": caps.append(("Strong", "net profit down YoY"))
+        else:   # graded: small dips are tolerated, bigger falls cap harder
+            cp, yp = cur["pat"], yago["pat"]
+            drop = (yp - cp) / yp * 100 if yp > 0 else 100
+            if cp <= 0: caps.append(("Weak", "net loss"))
+            elif drop >= 30: caps.append(("Steady", "net profit down 30%+ YoY"))
+            elif drop >= 10: caps.append(("Strong", "net profit down 10-30% YoY"))
     if yago["revenue"] < 25 or yago["ebitda"] < 2: caps.append(("Excellent", "small base"))
     score = p_ey + p_eq + p_my + p_mq + p_rv + p_pat
     conds = {"yoy40": ey is not None and ey >= 40, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4, "rev20": ry is not None and ry >= 20}

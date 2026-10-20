@@ -11,9 +11,11 @@ def shift(d, months):
     y, m = divmod(d.year * 12 + d.month - 1 - months, 12); m += 1
     nm = (31 if m in (1, 3, 5, 7, 8, 10, 12) else 30 if m != 2 else 28)
     return datetime(y, m, nm)
+FIN = set("360ONE ABSLAMC ANANDRATHI ANGELONE HDBFS HUDCO IREDA LICHSGFIN M&MFIN MANAPPURAM MFSL NUVAMA PNBHOUSING POONAWALLA SBICARD TATAINVEST".split())   # lenders/insurers/capital-market: no real EBITDA -> separate model later
 out, nofile = [], 0
 for f in sorted(glob.glob(os.path.join(ROOT, "companydata", "_hist", "*.json"))):
     d = json.load(open(f)); sym = d["symbol"]
+    if sym in FIN: continue
     for b in ("C", "S"):
         d[b] = {datetime.strptime(k, "%Y-%m-%d"): dict(v, basis=b) for k, v in d[b].items()}
     qs = sorted(set(d["C"]) | set(d["S"]))
