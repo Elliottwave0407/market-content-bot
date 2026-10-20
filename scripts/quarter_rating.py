@@ -188,7 +188,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
     if raw["m_qoq"] < 0: caps.append(("Strong", "margin fell QoQ"))
     if v11 and not (prev["ebitda"] <= 0 or m(prev) < -20):
         if (eq is not None and eq <= -30) or (pqo is not None and pqo <= -30 and (pp or 0) > 0): caps.append(("Steady", "EBITDA or profit fell 30%+ QoQ"))     # an Excellent quarter should not show falling margins
-    if (yago["revenue"] < (10 if v11 else 25)) or (yago["ebitda"] < (1 if v11 else 2)): caps.append(("Excellent", "small base"))
+    if (yago["revenue"] < 25) or (yago["ebitda"] < 2): caps.append(("Excellent", "small base"))
     t = next((i for i, c in enumerate(cuts) if score >= c), 5)
     conds = {"yoy40": ey is not None and ey >= 40, "rev20": ry is not None and ry >= 20, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4}
     pathA = conds["yoy40"] and conds["rev20"] and my >= 0 and sum(conds[k] for k in ("qoq20", "mq2", "my4")) >= 2 and score >= bb_score
