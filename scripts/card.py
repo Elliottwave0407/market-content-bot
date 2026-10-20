@@ -146,13 +146,13 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     ser = [((LBL[0] if LBL else "Sales"), [g(r, "revenue") for r in rows], BLUE, "top"),
            ((LBL[1] if LBL else "Operating profit"), [g(r, "ebitda") for r in rows], AMBER, "top"),
            ("Net profit", [g(r, "pat") for r in rows], GREEN, "bottom")]
-    ax = fig.add_axes([0.07, 0.075, 0.68, 0.245], facecolor=BG)
+    ax = fig.add_axes([0.105, 0.075, 0.70, 0.245], facecolor=BG)
     allv = [0.0]
     for k, (title, vals, col, where) in enumerate(ser):
         pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-        ly = 0.295 - k * 0.055
-        fig.patches.append(FancyBboxPatch((0.805, ly - 0.009), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
-        fig.text(0.824, ly, title, color=TEXT, fontsize=12.5, fontweight="bold", va="center")
+        ly = 0.215 - k * 0.058
+        fig.patches.append(FancyBboxPatch((0.845, ly - 0.009), 0.012, 0.017, boxstyle="round,pad=0,rounding_size=0.004", transform=fig.transFigure, facecolor=col, edgecolor="none"))
+        fig.text(0.863, ly, title, color=TEXT, fontsize=12.5, fontweight="bold", va="center")
         if not pts:
             continue
         allv += [v for _, v in pts]
@@ -171,7 +171,9 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     ax.set_axisbelow(True)
     ax.set_xticks(range(n))
     ax.set_xticklabels(labels, color=HEAD, fontsize=12, fontweight="bold")
-    ax.tick_params(axis="y", colors=MUTED, labelsize=10, length=0)
+    ax.tick_params(axis="y", colors=TEXT, labelsize=12.5, length=0)
+    for tl in ax.get_yticklabels():
+        tl.set_fontweight("bold")
     ax.tick_params(axis="x", length=0)
     ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:,.0f}"))
     for sp in ax.spines.values():
