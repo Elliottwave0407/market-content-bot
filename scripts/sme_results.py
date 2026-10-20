@@ -131,7 +131,7 @@ def run_once(day=None, maxn=1):
             p(f"SME result filings with PDF in window: {len(_S['cands'])}")
         n = 0
         for r in sorted(_S["cands"], key=lambda r: r.get("NEWS_DT", "")):
-            if str(r["NEWSID"]) in st["done"]: continue
+            if str(r["NEWSID"]) in st["done"] and not ONLY: continue
             out = process(b, r, st)
             if out == "done": st["done"].append(str(r["NEWSID"])); changed = True
             if out != "skip": n += 1
