@@ -53,3 +53,8 @@ Open: Route B Blockbuster allows a large margin fall (CWD Mar-26: revenue +286%,
 
 # Finance model (draft v0, not live)
 Lenders (HDBFS, HUDCO, IREDA, LICHSGFIN, M&MFIN, MANAPPURAM, PNBHOUSING, POONAWALLA, SBICARD): NII (revenue minus finance costs) replaces EBITDA, so "margin" is the spread kept. Capital-market firms (360ONE, ABSLAMC, ANANDRATHI, ANGELONE, NUVAMA) use the normal model. Banks and insurers: not covered (different XBRL). Mix on 95 lender quarters: 6/14/31/25/19/5 percent; 51 capital-market quarters: 4/24/33/20/18/2.
+
+# v1.2 (live from 20-Oct-2026)
+- Blockbuster route B (explosive growth) now also needs margin not down more than 3 pts YoY (CWD-type cases: revenue +286%, margin -13 pts, are no longer Blockbuster). Effect on backtest: large/mid unchanged, small caps 4 quarters moved.
+- Lenders: finance cost is carried through the live card flows (BSE tables are empty for lenders, so they come through the filing-PDF path). Cards show Net interest income and NII margin %; verdict uses the finance draft (NII replaces EBITDA). Capital-market firms use the normal model. Dry runs: SBICARD Steady, LICHSGFIN Weak, POONAWALLA Blockbuster (Sep-26).
+- SME half-yearly route: `scripts/sme_results.py`, hooked into the poll loop but OFF unless `SME_LIVE=1` is set in results-poll.yml. Dry-run workflow: sme-results-test (by day). Half-year cards say HALF-YEARLY VERDICT with HoH column; Mar/Sep labels only.

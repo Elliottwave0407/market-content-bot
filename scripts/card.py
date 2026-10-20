@@ -88,7 +88,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     if rate:
         fig.patches.append(FancyBboxPatch((0.625, 0.86), 0.20, 0.09, boxstyle="round,pad=0.005,rounding_size=0.02", transform=fig.transFigure, facecolor=RATING_COLORS[rate], edgecolor="none"))
         fig.text(0.725, 0.905, rate.upper(), color="#ffffff", fontsize=24, fontweight="bold", ha="center", va="center")
-        fig.text(0.725, 0.868, BADGE_NAME, color="#ffffff", fontsize=10, ha="center", va="center")
+        fig.text(0.725, 0.868, "HALF-YEARLY VERDICT" if half else BADGE_NAME, color="#ffffff", fontsize=10, ha="center", va="center")
     # table
     cols = ["", quarters[0]["q"], quarters[1]["q"], quarters[4]["q"] if yago else "YoY base", "HoH" if half else "QoQ", "YoY"]
     xs = [0.04, 0.32, 0.46, 0.60, 0.75, 0.88]
