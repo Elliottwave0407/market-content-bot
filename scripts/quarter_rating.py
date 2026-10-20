@@ -1,9 +1,9 @@
 """FinGod quarter rating (draft v1): score 0-100 from EBITDA growth, margin change and revenue growth, then a six-tier label.
 Tiers (best->worst): Blockbuster, Excellent, Strong, Steady, Weak, Poor.
-Variants (for the design test): V1 as first drafted; V2 'Excellent' minimums moved to the midpoint; V3 softer Blockbuster (EBITDA YoY>=40 plus 3 of the other 4 conditions).
+Variants (for the design test): V1 as first drafted; V2 'Excellent' minimums moved to the midpoint; V3 softer Blockbuster (EBITDA YoY>=40 plus 3 of the other 4 conditions); V4 owner-approved Blockbuster rule (see rate()).
 Pure function of 3 quarters' filed numbers: cur, prev (QoQ base), yago (YoY base). Each is {revenue, ebitda, pat} in Rs Cr."""
 TIERS = ["Blockbuster", "Excellent", "Strong", "Steady", "Weak", "Poor"]
-CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10]}      # score minimum for tiers 0..4 (Poor below the last)
+CUTS = {"V1": [90, 65, 45, 25, 10], "V2": [90, 74, 60, 38, 15], "V3": [90, 65, 45, 25, 10], "V4": [999, 74, 60, 38, 15]}      # score minimum for tiers 0..4 (Poor below the last)
 
 def band(v, steps):
     """steps: [(min_value, points), ...] descending by min_value"""
@@ -46,7 +46,10 @@ def rate(cur, prev, yago, variant="V1"):
     conds = {"yoy40": ey is not None and ey >= 40, "qoq20": eq is not None and eq >= 20, "mq2": mq >= 2, "my4": my >= 4, "rev20": ry is not None and ry >= 20}
     cuts = CUTS[variant]
     t = next((i for i, c in enumerate(cuts) if score >= c), 5)
-    if variant == "V3":
+    if variant == "V4":     # Blockbuster by rule only: EBITDA YoY>=40, revenue YoY>=20, margin YoY>=0, 2 of {EBITDA QoQ>=20, margin QoQ>=2, margin YoY>=4}, score>=85
+        bb = conds["yoy40"] and conds["rev20"] and my >= 0 and sum(conds[k] for k in ("qoq20", "mq2", "my4")) >= 2 and score >= 85
+        t = 0 if bb else max(t, 1)
+    elif variant == "V3":
         t = 0 if (conds["yoy40"] and sum(conds[k] for k in ("qoq20", "mq2", "my4", "rev20")) >= 3 and score >= 85) else max(t, 1) if t == 0 else t
     else:
         if t == 0 and not all(conds.values()): t = 1

@@ -1,0 +1,22 @@
+name: Rating Backtest 2
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/rating_backtest2.py
+      - name: save result
+        if: always()
+        run: |
+          git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -f companydata/_readiness
+          git diff --cached --quiet || git commit -qm "data: rating test 2"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep 5; done
