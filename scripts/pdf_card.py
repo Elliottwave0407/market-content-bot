@@ -51,6 +51,8 @@ def to_m(d, i, k):
     ebitda = None
     if None not in (rev, exp, dep, fin) and rev and fin / rev < 0.25:
         ebitda = (rev - exp + dep + fin) * k
+        if rev > 0 and not (-100 <= 100 * ebitda / (rev * k) <= 100):      # a margin outside +-100% means a mis-read line: show no margin rather than a wrong one
+            ebitda = None
     sc = lambda v: None if v is None else v * k
     return {"revenue": sc(rev), "ebitda": ebitda, "pbt": sc(pbt), "pat": sc(pat), "eps": eps, "bank": False, "fin": sc(fin)}
 
@@ -191,6 +193,13 @@ def try_pdf(bse, rec, st, headline, filed):
                 hist[off] = close(m["revenue"], h["revenue"])
             if h and h.get("pat") is not None and m["pat"] is not None:
                 hpat[off] = abs(m["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))
+        for off_, m_ in ((1, prev), (4, yago)):      # operating margin must agree with BSE's own filed history; if not, show NO margin (and no verdict) instead of a wrong one
+            h_ = hs.get(off_)
+            if h_ and hist.get(off_) and h_.get("ebitda") is not None and h_.get("revenue") and m_.get("ebitda") is not None and m_.get("revenue"):
+                gap_ = abs(100 * m_["ebitda"] / m_["revenue"] - 100 * h_["ebitda"] / h_["revenue"])
+                if gap_ > 3.0:
+                    LOG.append(f"pdf margin q-{off_} differs from BSE history by {gap_:.1f} pts: margin withheld {name} {basis}")
+                    m_["ebitda"] = None
         if hist and not all(hist.values()) and len(hist) == 2 and hs.get(1) and hs.get(4):
             # the filing may list year-ago before previous quarter: accept the swap only if BSE history matches the swapped columns on revenue AND profit
             a, b2 = hs[1], hs[4]

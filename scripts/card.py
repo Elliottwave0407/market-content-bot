@@ -69,6 +69,10 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     if lender:      # a lender's net interest income (revenue - finance costs) stands in for operating profit
         quarters = [dict(q, m=(qr.to_lender(q.get("m")) or q.get("m"))) for q in quarters]
         yprev = qr.to_lender(yprev) or yprev
+    for q_ in quarters:      # margin sanity: a margin beyond +-100% of sales is a data error, never show it
+        m_ = q_.get("m") or {}
+        if m_.get("ebitda") is not None and m_.get("revenue") and m_["revenue"] > 0 and abs(100 * m_["ebitda"] / m_["revenue"]) > 100:
+            q_["m"] = dict(m_, ebitda=None)
     cur, prev = quarters[0]["m"], quarters[1]["m"]
     yago = quarters[4]["m"] if len(quarters) > 4 else None
     rate = rating(quarters, basis, yprev, half)

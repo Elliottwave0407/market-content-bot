@@ -205,6 +205,9 @@ def read_card(content, name, bse=None, code=None):
                     if h and h.get("revenue") is not None and m_["revenue"] is not None:
                         if pc.close(m_["revenue"], h["revenue"]) and (h.get("pat") is None or m_["pat"] is None or abs(m_["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))):
                             good += 1
+                            if h.get("ebitda") is not None and m_.get("ebitda") is not None and h["revenue"] and m_["revenue"] and abs(100 * m_["ebitda"] / m_["revenue"] - 100 * h["ebitda"] / h["revenue"]) > 3.0:
+                                p(f"  margin q-{off} differs from BSE history: margin withheld")
+                                m_["ebitda"] = None
                         else:
                             bad.append(off)
                 if bad:
