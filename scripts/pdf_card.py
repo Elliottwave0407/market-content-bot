@@ -118,6 +118,28 @@ def try_pdf(bse, rec, st, headline, filed):
     if not k or qe is None:
         LOG.append(f"pdf unusable {rec.get('SLONGNAME')}: unit/date missing")
         return None
+    # Column dates must form a QUARTERLY layout: previous = 3 months earlier and year-ago = 12 months earlier (in either order).
+    # A half-yearly filing (SME: current | year-ago half | previous half, or current | previous half | year-ago half) must never be read as quarters.
+    try:
+        ms0 = []
+        for c in cols[:3]:
+            pq0 = parse_qend(c)
+            ms0.append(pq0[0] * 12 + pq0[1] if pq0 else None)
+        if len(ms0) == 3 and None not in ms0:
+            d1_, d2_ = ms0[0] - ms0[1], ms0[0] - ms0[2]
+            if (d1_, d2_) in ((6, 12), (12, 6)):
+                hq = st.setdefault("half_q", {})
+                hq[str(nid)] = {k_: rec.get(k_) for k_ in ("NEWSID", "SCRIP_CD", "SLONGNAME", "ATTACHMENTNAME", "NEWS_DT")}
+                for k_ in list(hq)[:-200]:
+                    hq.pop(k_, None)
+                TRIES[nid] = 99      # stop retrying this filing as quarters
+                LOG.append(f"pdf is a HALF-YEARLY filing (column dates {cols[:3]}): not read as quarters, queued for the half-yearly route {rec.get('SLONGNAME')}")
+                return None
+            if (d1_, d2_) not in ((3, 12), (12, 3)):
+                LOG.append(f"pdf column dates {cols[:3]} are not a quarterly layout: not used {rec.get('SLONGNAME')}")
+                return None
+    except Exception as e_:
+        LOG.append(f"pdf column-date check failed: {repr(e_)[:60]}")
     # Some filings list the columns as current | year-ago | previous. If the model reported the column dates in that order, swap the number columns to match.
     try:
         ms = []

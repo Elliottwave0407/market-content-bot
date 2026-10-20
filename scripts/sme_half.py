@@ -34,6 +34,14 @@ def read_half_card(content, key, name=""):
     qe = [pc.parse_qend(x) for x in cols[:3]]
     if not k or len(qe) < 3 or None in qe: return None, "unit or columns unreadable"
     mon = [x[0] * 12 + x[1] for x in qe]
+    swapped = (mon[0] - mon[1], mon[0] - mon[2]) == (12, 6)      # filing lists current | same half last year | preceding half (e.g. Aptus Pharma)
+    if swapped:
+        for b_ in ("consolidated", "standalone"):
+            d_ = out.get(b_)
+            if isinstance(d_, dict):
+                for kk, vv in list(d_.items()):
+                    if isinstance(vv, list) and len(vv) >= 3: vv[1], vv[2] = vv[2], vv[1]
+        mon[1], mon[2] = mon[2], mon[1]
     if not (mon[0] - mon[1] == 6 and mon[0] - mon[2] == 12): return None, "not a half-yearly filing (columns are not 6 and 12 months apart)"
     if qe[0][1] not in (3, 9): return None, "half-year end month is not Mar/Sep"
     q = rf.qcode(qe[0][0], qe[0][1])

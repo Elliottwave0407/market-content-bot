@@ -150,6 +150,15 @@ def read_card(content, name, bse=None, code=None):
     if not k or qe is None:
         return None, "unit or quarter not readable"
     try:
+        ms0 = []
+        for c in cols[:3]:
+            pq0 = pc.parse_qend(c)
+            ms0.append(pq0[0] * 12 + pq0[1] if pq0 else None)
+        if len(ms0) == 3 and None not in ms0 and (ms0[0] - ms0[1], ms0[0] - ms0[2]) not in ((3, 12), (12, 3)):
+            return None, f"column dates {cols[:3]} are not a quarterly layout (half-yearly filing?)"
+    except Exception:
+        pass
+    try:
         ms = []
         for c in cols[:3]:
             pq = pc.parse_qend(c)

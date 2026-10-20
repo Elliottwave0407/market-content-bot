@@ -115,6 +115,9 @@ def run_once(day=None, maxn=1):
     with BSE(download_folder=tempfile.mkdtemp()) as b:
         if day or time.time() - _S["scan_at"] > 600:
             _S["cands"] = scan(b, start.replace(tzinfo=None), end.replace(tzinfo=None)); _S["scan_at"] = time.time()
+            try:      # half-yearly filings that the quarterly route spotted (any exchange group) join the queue
+                _S["cands"] += [v for v in json.load(open("state/seen.json")).get("half_q", {}).values() if v.get("ATTACHMENTNAME") and v.get("NEWSID")]
+            except Exception: pass
             p(f"SME result filings with PDF in window: {len(_S['cands'])}")
         n = 0
         for r in sorted(_S["cands"], key=lambda r: r.get("NEWS_DT", "")):
