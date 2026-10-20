@@ -102,19 +102,36 @@ def sanitize(f):
     return f
 
 def mcaps():
+    """BSE scrip code -> (market cap Rs Cr, group). Each group is retried (BSE sometimes drops a group), and the last good values are cached in state/mcap_cache.json as a fallback."""
     from bse import BSE
+    CF = "state/mcap_cache.json"
+    try: cache = json.load(open(CF))
+    except Exception: cache = {}
     out = {}
     with BSE(download_folder=tempfile.mkdtemp()) as b:
         for g in ("A", "B", "T", "X", "XT", "Z", "M", "MT", "MS", "P", "R", "ZP", "IP", "TS", "Y"):
-            try:
-                for x in b.listSecurities(group=g):
-                    try:
-                        v = float(str(x.get("Mktcap") or "0").replace(",", ""))
-                    except Exception:
-                        v = 0
-                    out[str(x.get("SCRIP_CD")).strip()] = (v, g)
-            except Exception:
-                continue
+            for attempt in range(3):
+                try:
+                    rows = b.listSecurities(group=g)
+                    if not rows and attempt < 2:
+                        time.sleep(3); continue
+                    for x in rows:
+                        try:
+                            v = float(str(x.get("Mktcap") or "0").replace(",", ""))
+                        except Exception:
+                            v = 0
+                        out[str(x.get("SCRIP_CD")).strip()] = (v, g)
+                    break
+                except Exception:
+                    time.sleep(3)
+    fresh = {k: v for k, v in out.items() if v[0] > 0}
+    for k, v in cache.items():
+        if k not in fresh:
+            out[k] = (v[0], v[1])
+    try:
+        json.dump({**cache, **{k: [v[0], v[1]] for k, v in fresh.items()}}, open(CF, "w"))
+    except Exception:
+        pass
     return out
 
 def find_transcripts():
