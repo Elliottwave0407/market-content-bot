@@ -30,6 +30,7 @@ def read_half_card(content, key, name=""):
     out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "3")), timeout=120, prompt=HALF)
     if out is None: return None, "pdf read failed: " + str(err)[:70]
     k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
+    p("  columns read:", cols, out.get("column_headings"), "unit", out.get("unit"))
     qe = [pc.parse_qend(x) for x in cols[:3]]
     if not k or len(qe) < 3 or None in qe: return None, "unit or columns unreadable"
     mon = [x[0] * 12 + x[1] for x in qe]
