@@ -26,10 +26,11 @@ for f in sorted(glob.glob(os.path.join(ROOT, "companydata", "_hist", "*.json")))
             if cur and pr and ya: break
         else: continue
         rec = {"symbol": sym, "q": q.strftime("%b-%y"), "basis": b, "latest": q == newest}
-        for v in ("V2", "V4"):
+        for v in ("V2", "V4", "V5"):
             r = qr.rate(cur, pr, ya, v, d[b].get(shift(q, 15))); rec[v] = {k: r.get(k) for k in ("tier", "score", "caps", "why")}
             if v == "V2": rec["m"] = r.get("m")
             if v == "V4": rec["m4"] = r.get("m")
+            if v == "V5": rec["m5"] = r.get("m")
         out.append(rec)
 json.dump(out, open(os.path.join(ROOT, "companydata", "_readiness", "rating_test2.json"), "w"))
 ok = [r for r in out if r["V2"]["tier"]]
