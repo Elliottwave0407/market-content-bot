@@ -18,8 +18,31 @@ def _val(t, tag):
             best = float(v)
     return best
 
+def _special(t, cr):
+    """Banks and insurers file a different taxonomy. Mapped so the normal rating can run: revenue = what the business earns before its main cost of doing business,
+    ebitda = the operating profit that matches (see quarter_rating.KIND_PARAMS). kind marks the record."""
+    if _val(t, "InterestEarned") is not None and _val(t, "OperatingProfitBeforeProvisionAndContingencies") is not None:      # bank: net total income (interest earned + other income - interest expended); profit before provisions
+        inc, iex, ie = _val(t, "Income"), _val(t, "InterestExpended"), _val(t, "InterestEarned")
+        ppop, prov = _val(t, "OperatingProfitBeforeProvisionAndContingencies"), _val(t, "ProvisionsOtherThanTaxAndContingencies")
+        pat = _val(t, "ProfitLossAfterTaxesMinorityInterestAndShareOfProfitLossOfAssociates")
+        pat = pat if pat is not None else _val(t, "ProfitLossForThePeriod")
+        if inc is None or iex is None or pat is None: return None
+        return {"revenue": cr(inc - iex), "ebitda": cr(ppop), "pbt": cr(_val(t, "ProfitLossFromOrdinaryActivitiesBeforeTax")), "pat": cr(pat), "eps": _val(t, "BasicEarningsPerShareAfterExtraordinaryItems"), "kind": "bank", "nii": cr(ie - iex), "prov": cr(prov or 0)}
+    if _val(t, "NetPremiumIncome") is not None and _val(t, "ProfitLossBeforeTax") is not None:      # life insurer: net premium income; shareholders' profit before tax
+        pat = _val(t, "ProfitLossAfterTaxAndExtraordinaryItems")
+        pat = pat if pat is not None else _val(t, "ProfitLossAfterTaxBeforeExtraordinaryItems")
+        if pat is None: return None
+        return {"revenue": cr(_val(t, "NetPremiumIncome")), "ebitda": cr(_val(t, "ProfitLossBeforeTax")), "pbt": cr(_val(t, "ProfitLossBeforeTax")), "pat": cr(pat), "eps": _val(t, "BasicAndDilutedEPSAfterExtraordinaryItemsNetOfTaxExpenseForThePeriodNotToBeAnnualized"), "kind": "life"}
+    if _val(t, "PremiumEarned") is not None and _val(t, "ProfitOrLossBeforeTax") is not None:      # general / health insurer: net premium earned; profit before tax
+        pat = _val(t, "ProfitLossAfterTax")
+        if pat is None: return None
+        return {"revenue": cr(_val(t, "PremiumEarned")), "ebitda": cr(_val(t, "ProfitOrLossBeforeTax")), "pbt": cr(_val(t, "ProfitOrLossBeforeTax")), "pat": cr(pat), "eps": None, "kind": "general"}
+    return None
+
 def parse_xbrl(t):
     cr = lambda v: None if v is None else round(v / 1e7, 2)
+    sp = _special(t, cr)
+    if sp: return sp
     rev, oth = _val(t, "RevenueFromOperations"), _val(t, "OtherIncome") or 0
     pbt, fin, dep = _val(t, "ProfitBeforeTax"), _val(t, "FinanceCosts") or 0, _val(t, "DepreciationDepletionAndAmortisationExpense") or 0
     pat = _val(t, "ProfitLossForPeriod")

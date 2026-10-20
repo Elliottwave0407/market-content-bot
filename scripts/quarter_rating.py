@@ -114,6 +114,10 @@ W6 = {   # component: (max points, anchors)
 CUTS6 = [999, 70, 48, 36, 20]
 BB_SCORE6 = 80
 
+# Banks and insurers (records carry kind = bank / life / general, see fin_data._special). Margin = pre-provision profit / net total income for banks (1 - cost-to-income);
+# shareholders' PBT / net premium for insurers. Margins of such businesses move in much smaller steps, so margin changes are scaled up and a tiny dip is tolerated.
+KIND_PARAMS = {"bank": {"mscale": 1.5, "mtol": 1.0}, "life": {"mscale": 4.0, "mtol": 0.3}, "general": {"mscale": 1.0, "mtol": 1.0}}
+
 def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, older=None, half=False, v12=False):
     """half=True: half-yearly results (SME). prev = the preceding half-year, yago = the same half last year; the sequential (HoH) changes cover six months, so they are halved to a per-quarter equivalent before scoring, and no seasonality adjustment is applied. v1.0 when v11=False (frozen). v11=True adds the size-aware / noise-aware rules (see RATING_NOTES_V11). older=(yago2, yprev2): the same two quarters one year earlier, for the two-year seasonality check."""
     cuts, bb_score = cuts or CUTS6, bb_score if bb_score is not None else BB_SCORE6
@@ -144,6 +148,8 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         rq = adj(rq, rq_ly, rq_ly2, 30, 5); eq = adj(eq, eq_ly, eq_ly2, 40, 5); mq = adj(mq, mq_ly, mq_ly2, 6, 1)
     if half:
         rq, eq, mq = (None if x is None else x * 0.5 for x in (rq, eq, mq)); pqo = None if pqo is None else pqo * 0.5
+    kp = KIND_PARAMS.get(cur.get("kind"), {})
+    if kp: my, mq = my * kp["mscale"], mq * kp["mscale"]
     # margin level: a small dip is tolerated when the margin is already high; gains are scaled to the room left (capped 3x)
     tol = min(2.5, 1.0 + max(0.0, m(cur) - 20) * 0.05) if m(cur) >= 20 else 0.0
     if my < 0: my = min(0.0, my + tol)
@@ -187,7 +193,7 @@ def rate6(cur, prev, yago, yprev=None, cuts=None, bb_score=None, v11=False, olde
         if pyo is not None and pyo >= 50 and grows and pat_reliable: pass
         elif pyo is not None and pyo >= 30 and grows and pat_reliable: caps.append(("Strong", "revenue growth under 15% YoY"))
         else: caps.append(("Steady", "revenue growth under 15% YoY without 30%+ profit growth"))
-    if raw["m_qoq"] < 0: caps.append(("Strong", "margin fell QoQ"))
+    if raw["m_qoq"] < -kp.get("mtol", 0): caps.append(("Strong", "margin fell QoQ"))
     if v11 and not (prev["ebitda"] <= 0 or m(prev) < -20):
         if (eq is not None and eq <= -30) or (pqo is not None and pqo <= -30 and (pp or 0) > 0): caps.append(("Steady", "EBITDA or profit fell 30%+ QoQ"))     # an Excellent quarter should not show falling margins
     if (yago["revenue"] < 25) or (yago["ebitda"] < 2): caps.append(("Excellent", "small base"))
