@@ -102,7 +102,9 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
         fig.text(x if x == xs[0] else x + 0.05, top, c, color=HEAD, fontsize=15, fontweight="bold", ha="left" if x == xs[0] else "right", va="center")
     money = [cr(m.get(k)) for m in (cur, prev, yago) if m for k in ("revenue", "ebitda", "pat") if m.get(k) is not None]
     md = 0 if money and max(abs(v) for v in money) >= 1000 else 1
-    items = [("Sales", "revenue", md), ("Net interest income" if lender else "Operating profit", "ebitda", md), ("NII margin %" if lender else "OPM %", "opm", 1), ("Net profit (PAT)", "pat", md), ("EPS (₹)", "eps", 2)]
+    kind_ = (cur or {}).get("kind")
+    LBL = {"bank": ("Net total income", "Pre-provision profit", "PPOP margin %"), "life": ("Net premium", "Profit before tax", "PBT margin %"), "general": ("Net premium earned", "Profit before tax", "PBT margin %")}.get(kind_)
+    items = [(LBL[0] if LBL else "Sales", "revenue", md), (LBL[1] if LBL else "Net interest income" if lender else "Operating profit", "ebitda", md), (LBL[2] if LBL else "NII margin %" if lender else "OPM %", "opm", 1), ("Net profit (PAT)", "pat", md), ("EPS (₹)", "eps", 2)]
     y = top - 0.065
     for label, key, d in items:
         def val(m):
@@ -138,7 +140,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
     # trend bars (oldest -> newest)
     rows = list(reversed(quarters))
     labels = [r["q"] for r in rows]
-    for i, (title, key) in enumerate((("Sales", "revenue"), ("Net profit", "pat"), ("EPS (₹)", "eps"))):
+    for i, (title, key) in enumerate((((LBL[0] if LBL else "Sales"), "revenue"), ("Net profit", "pat"), ("EPS (₹)", "eps"))):
         ax = fig.add_axes([0.05 + i * 0.315, 0.09, 0.27, 0.23], facecolor=BG)
         vals = [(r["m"] or {}).get(key) for r in rows]
         vals = [None if v is None else (v if key == "eps" else cr(v)) for v in vals]
