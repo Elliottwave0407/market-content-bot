@@ -8,7 +8,7 @@ import gemini_read as gr
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Referer": "https://www.bseindia.com/"}
 MODEL = os.environ.get("GEMINI_MODEL", "").strip() or "gemini-flash-lite-latest"
 DAILY_CAP = int(os.environ.get("GEMINI_DAILY_CAP", "450"))
-PER_POLL = int(os.environ.get("PDF_PER_POLL", "6"))
+PER_POLL = int(os.environ.get("PDF_PER_POLL", "10"))
 K = {"lakh": 0.1, "lakhs": 0.1, "lac": 0.1, "lacs": 0.1, "crore": 10.0, "crores": 10.0, "million": 1.0, "thousand": 0.001, "actual": 1e-6}
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
 TRIES, STATE_, LAST_TRY = {}, {"backoff": 0.0, "calls": 0}, {}
@@ -62,8 +62,10 @@ def close(a, b):
 def geminikey():
     return os.environ.get("GEMINI_API_KEY", "").strip()
 
-def try_pdf(bse, rec, st, headline, filed):
-    """-> dict(basis, qcode, quarters, verified_note, raw) or None."""
+PREREAD = {}      # nid -> result of the download+Gemini stage, prepared in parallel threads by prefetch()
+
+def _read_stage(rec, st, headline, filed):
+    """Download the filing PDF and read it with Gemini. -> (out, q_head) or None (gated / failed). Thread-safe enough: only dict and counter updates."""
     key = geminikey()
     att = rec.get("ATTACHMENTNAME")
     nid = rec["NEWSID"]
@@ -97,6 +99,34 @@ def try_pdf(bse, rec, st, headline, filed):
             STATE_["backoff"] = time.time() + 120
         LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:80]}")
         return None
+    return out, q_head
+
+def prefetch(recs, st, workers=4):
+    """Run the download+Gemini stage for several filings at the same time (it is network wait, not CPU), so a burst of results does not queue up one by one."""
+    todo = []
+    for rec in recs:
+        nid = rec.get("NEWSID")
+        if nid is None or nid in PREREAD or not rec.get("ATTACHMENTNAME"): continue
+        todo.append(rec)
+    if len(todo) < 2: return
+    from concurrent.futures import ThreadPoolExecutor
+    def one(rec):
+        try:
+            headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
+            filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
+            PREREAD[rec["NEWSID"]] = _read_stage(rec, st, headline, filed)
+        except Exception as e:
+            LOG.append(f"prefetch error: {repr(e)[:80]}")
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        list(ex.map(one, todo))
+
+def try_pdf(bse, rec, st, headline, filed):
+    """-> dict(basis, qcode, quarters, verified_note, raw) or None."""
+    nid = rec["NEWSID"]
+    res_ = PREREAD.pop(nid) if nid in PREREAD else _read_stage(rec, st, headline, filed)
+    if res_ is None:
+        return None
+    out, q_head = res_
     try:   # remember that this filing HAS consolidated figures, so the BSE-table fallback never posts standalone for it
         c_ = out.get("consolidated")
         if isinstance(c_, dict) and val(c_, "revenue", 0) is not None and val(c_, "pat", 0) is not None:

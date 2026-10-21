@@ -42,7 +42,16 @@ def _cr(m):
     if not m: return None
     return {k: (v if k in ("eps", "kind", "bank") else (None if v is None else round(v / 10.0, 2))) for k, v in m.items() if k in ("revenue", "ebitda", "pbt", "pat", "eps", "kind", "nii", "prov")}
 
-def log_result(route, caption, resp, card_last=None):
+def _mins(filed):
+    try:
+        if isinstance(filed, str):
+            filed = datetime.fromisoformat(filed[:19])
+        if filed.tzinfo is None: filed = filed.replace(tzinfo=IST)
+        return round((datetime.now(IST) - filed).total_seconds() / 60.0, 1)
+    except Exception:
+        return None
+
+def log_result(route, caption, resp, card_last=None, filed=None):
     """After a result card was accepted by Telegram. card_last = card.LAST (set by card.render)."""
     try:
         L = card_last or {}
@@ -52,7 +61,7 @@ def log_result(route, caption, resp, card_last=None):
         put("results", key, {"route": route, "name": L.get("name"), "ticker": L.get("ticker"), "basis": L.get("basis"), "half_yearly": bool(L.get("half")),
                              "unit": "INR_crore (eps in INR)", "quarters": [{"q": q["q"], **(_cr(q.get("m")) or {})} for q in qs],
                              "yprev": _cr(L.get("yprev")), "verdict": rt.get("tier"), "score": rt.get("score"), "rating_version": L.get("rating_version"),
-                             "rating_detail": {k: v for k, v in rt.items() if k not in ("tier",)}, "caption": caption, **_mid(resp)})
+                             "rating_detail": {k: v for k, v in rt.items() if k not in ("tier",)}, "caption": caption, "filed_at": (str(filed)[:19] if filed else None), "latency_min": (_mins(filed) if filed else None), **_mid(resp)})
     except Exception:
         pass
 

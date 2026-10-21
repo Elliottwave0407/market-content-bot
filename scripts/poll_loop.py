@@ -56,6 +56,7 @@ def commit_state():
             time.sleep(2)
 
 XB_LINES, XB_FLAGS = [], {"dirty": False}
+LOOPT = []
 
 def xb_thread(end):
     """Button taps are handled in their own thread every ~2 s, so a tap shows up fast even when a main-loop pass is slow."""
@@ -153,6 +154,10 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("fin tick error: " + rp.redact(repr(e))[:200])
+                    LOOPT.append(time.time() - t0)
+                    if len(LOOPT) >= 40:
+                        keep.append(f"[loop] last 40 passes: avg {sum(LOOPT)/len(LOOPT):.0f}s, max {max(LOOPT):.0f}s per pass (the BSE results feed is read once per pass)")
+                        LOOPT.clear()
                     keep = keep[-150:]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:

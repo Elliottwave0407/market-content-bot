@@ -245,6 +245,19 @@ def main(bse_in=None, known=None, fast=False):
         pend = st.setdefault("pending", {})
         new_ids = {r["NEWSID"] for r in new}
         retry = [v["rec"] for k, v in list(pend.items()) if k not in new_ids and now - v["last"] >= RETRY_SEC]
+        try:      # read several filings' PDFs at the same time (a burst of results no longer queues one by one)
+            def _skip_fin(r_):
+                import fin_results as _fr
+                return _fr.is_fin_code(r_.get("SCRIP_CD")) and (datetime.now() - datetime.fromisoformat((r_.get("NEWS_DT") or "")[:19])).total_seconds() / 3600 < _fr.YIELD_H
+            _batch = []
+            for r_ in new + retry:
+                try:
+                    if not _skip_fin(r_): _batch.append(r_)
+                except Exception:
+                    _batch.append(r_)
+            pdf_card.prefetch(_batch[:12], st)
+        except Exception as e:
+            p(f"prefetch skipped: {redact(repr(e))[:100]}")
         for rec in new + retry:
             nid = rec["NEWSID"]
             try:      # banks/insurers: the NSE XBRL route (fin_results) posts them; this route only steps in after YIELD_H hours
@@ -297,7 +310,7 @@ def main(bse_in=None, known=None, fast=False):
                     continue
                 try:
                     import store
-                    if kind == "photo": store.log_result("bse", text, r, card.LAST)
+                    if kind == "photo": store.log_result("bse", text, r, card.LAST, rec.get("NEWS_DT"))
                     else: store.log_post("bse-text", text, r)
                 except Exception:
                     pass
