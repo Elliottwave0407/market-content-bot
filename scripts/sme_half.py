@@ -9,13 +9,16 @@ import gemini_read as gr, pdf_card as pc, results_fetcher as rf, card
 HALF = """You are reading an Indian SME-listed company's HALF-YEARLY financial results filing (PDF, may be scanned).
 Extract the 'Statement of Audited/Unaudited Financial Results' table. Return ONLY JSON:
 {"unit":"lakh|crore|million|thousand|actual",
- "quarter_end_columns":["<current half-year end date>","<preceding half-year end date>","<same half-year end date last year>"],
- "column_headings":["<exact heading text printed above column c>","<heading above p>","<heading above y>"],
+ "quarter_end_columns":["<current half-year end date>","<preceding half-year end date, or null if no such column is printed>","<same half-year end date last year>"],
+ "column_headings":["<exact heading text printed above column c>","<heading above p, or null>","<heading above y>"],
  "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"finance_costs":[c,p,y],"depreciation":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
- "standalone": {same keys} or null}
-Rules: c = the current HALF-YEAR column (six months), p = the immediately preceding half-year column, y = the same half-year one year earlier. Use only half-year columns; ignore full-year ('year ended') columns. If the filing shows 'Half year ended 30.09.2025 | Half year ended 31.03.2025 | Half year ended 30.09.2024', those are c, p, y.
+ "standalone": {same keys} or null,
+ "year_ended_column": {"end_date":"<date the full year ended>","consolidated":{"revenue":v,"other_income":v,"total_income":v,"total_expenses":v,"finance_costs":v,"depreciation":v,"pbt":v,"tax":v,"pat":v} or null,"standalone":{same keys} or null} or null}
+Rules: c = the current HALF-YEAR column (six months), p = the immediately preceding half-year column, y = the same half-year one year earlier. If the filing shows 'Half year ended 30.09.2025 | Half year ended 31.03.2025 | Half year ended 30.09.2024', those are c, p, y.
+Some filings print only two half-year columns (current half-year and the same half-year last year) plus a 'Year ended' (full year) column. Then p is NOT printed: use null for the p date and null for every p value, and put the full-year column's values in year_ended_column. Never put a full-year figure in p.
 revenue = 'Revenue from operations' (total, incl. other operating income). pbt = profit before tax (after exceptional items). pat = net profit/(loss) for the period (after tax).
 Numbers exactly as printed, in the printed unit; negatives for losses. Use null for any value not present. Do not compute or guess."""
+
 def sme_ok(d, i):
     """SME statements: total income - expenses must equal PBT; PAT must be sane versus PBT (tax lines often exclude deferred tax, so PBT - tax is NOT required to equal PAT)."""
     ti, ex, pbt, pat = (pc.val(d, x, i) for x in ("total_income", "total_expenses", "pbt", "pat"))
@@ -32,6 +35,23 @@ def read_half_card(content, key, name=""):
     k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
     p("  columns read:", cols, out.get("column_headings"), "unit", out.get("unit"))
     qe = [pc.parse_qend(x) for x in cols[:3]]
+    derived = False
+    ye = out.get("year_ended_column") if isinstance(out.get("year_ended_column"), dict) else None
+    if k and len(qe) >= 3 and qe[1] is None and qe[0] and qe[2] and ye:
+        # no preceding half-year column is printed: it is the full year minus the first half of that year (the same-half-last-year column)
+        qy = pc.parse_qend(ye.get("end_date"))
+        m0, m2 = qe[0][0] * 12 + qe[0][1], qe[2][0] * 12 + qe[2][1]
+        if qy and qy[0] * 12 + qy[1] == m0 - 6 and m2 == m0 - 12:
+            qe[1] = (qy[0], qy[1]); derived = True
+            for b_ in ("consolidated", "standalone"):
+                d_, y_ = out.get(b_), ye.get(b_)
+                if isinstance(d_, dict) and isinstance(y_, dict):
+                    for kk in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat"):
+                        v_, h_ = y_.get(kk), (d_.get(kk) or [None, None, None])[2] if isinstance(d_.get(kk), list) and len(d_.get(kk)) >= 3 else None
+                        if isinstance(v_, (int, float)) and isinstance(h_, (int, float)):
+                            d_[kk][1] = round(v_ - h_, 4)
+                    if isinstance(d_.get("eps"), list) and len(d_["eps"]) >= 3: d_["eps"][1] = None
+            p("  preceding half-year derived as full year minus the first half (no separate column printed)")
     if not k or len(qe) < 3 or None in qe: return None, "unit or columns unreadable"
     mon = [x[0] * 12 + x[1] for x in qe]
     swapped = (mon[0] - mon[1], mon[0] - mon[2]) == (12, 6)      # filing lists current | same half last year | preceding half (e.g. Aptus Pharma)
