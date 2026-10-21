@@ -1,0 +1,29 @@
+name: pdf-pages
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "PDF URL"
+      first:
+        default: "2"
+      last:
+        default: "6"
+permissions:
+  contents: write
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Render pages to PNG and publish to preview-cards
+        run: |
+          set -e
+          mkdir -p /tmp/pv && cd /tmp/pv
+          curl -sSL -A "Mozilla/5.0" -o f.pdf "${{ github.event.inputs.url }}"
+          pdftoppm -r 110 -f ${{ github.event.inputs.first }} -l ${{ github.event.inputs.last }} -png f.pdf pg
+          rm f.pdf
+          ls
+          git init -q && git checkout -q -b preview-cards
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add . && git commit -q -m "pdf pages"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-cards
