@@ -47,19 +47,23 @@ def read_half_card(content, key, name=""):
     q = rf.qcode(qe[0][0], qe[0][1])
     cons = out.get("consolidated")
     has_cons = isinstance(cons, dict) and pc.val(cons, "revenue", 0) is not None and pc.val(cons, "pat", 0) is not None
+    why = "no usable statement"
     for basis in (("consolidated", "standalone") if has_cons else ("standalone",)):
         d = out.get(basis)
         if not isinstance(d, dict) or pc.val(d, "revenue", 0) is None or pc.val(d, "pat", 0) is None: continue
         oks = [sme_ok(d, i) for i in range(3)]
         p(" ", name, basis, "arithmetic by column (current, previous, year-ago):", oks)
-        if not all(oks): return None, f"{basis} figures failed arithmetic checks"
+        if not all(oks):
+            why = f"{basis} figures failed arithmetic checks"; continue      # a basis that fails is never shown; the other basis (if it passes every check) is used instead
         cur, prev, yago = (pc.to_m(d, i, k) for i in range(3))
-        if cur["revenue"] and prev["revenue"] and cur["revenue"] > 0 and prev["revenue"] > 0 and (cur["revenue"] / prev["revenue"] > 50 or prev["revenue"] / cur["revenue"] > 50): return None, "figures inconsistent with the previous half-year"
+        if cur["revenue"] and prev["revenue"] and cur["revenue"] > 0 and prev["revenue"] > 0 and (cur["revenue"] / prev["revenue"] > 50 or prev["revenue"] / cur["revenue"] > 50):
+            why = f"{basis} figures inconsistent with the previous half-year"; continue
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
-        if cur.get("ebitda") is None or prev.get("ebitda") is None or yago.get("ebitda") is None: return None, "operating profit not derivable (finance cost or expenses missing)"
+        if cur.get("ebitda") is None or prev.get("ebitda") is None or yago.get("ebitda") is None:
+            why = f"{basis} operating profit not derivable (finance cost or expenses missing)"; continue
         qs = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 2), "m": prev}, {"q": " ", "m": empty}, {"q": " ", "m": empty}, {"q": rf.qlabel(q - 4), "m": yago}]
         return {"basis": basis, "q": q, "quarters": qs, "note": "arithmetic-checked"}, "ok"
-    return None, "no usable statement"
+    return None, why
 
 if __name__ == "__main__":
     from bse import BSE
