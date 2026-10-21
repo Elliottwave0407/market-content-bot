@@ -148,7 +148,7 @@ def render(name, ticker, basis, quarters, out_path, filed_note="", yprev=None, h
             fig.text(x + 0.05, y, txt, color=col, fontsize=18, fontweight="bold", ha="right", va="center")
         y -= 0.062
     # trend lines (oldest -> newest): sales, operating margin and net profit in ONE chart, each line in its own band so labels never collide
-    rows = list(reversed(quarters))
+    rows = [r for r in reversed(quarters) if str(r.get("q") or "").strip()]      # half-yearly cards carry blank filler periods: not plotted, so points stay evenly spaced
     labels = [r["q"] for r in rows]
     n = len(rows)
     g = lambda r, k: None if (r["m"] or {}).get(k) is None else cr(r["m"][k])
