@@ -1,0 +1,21 @@
+name: pdf-text-dump
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "PDF URL"
+permissions:
+  contents: read
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          PDF_URL: ${{ github.event.inputs.url }}
+        run: python scripts/pdf_text_dump.py
