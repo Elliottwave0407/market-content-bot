@@ -11,19 +11,20 @@ Extract the 'Statement of Audited/Unaudited Financial Results' table. Return ONL
 {"unit":"lakh|crore|million|thousand|actual",
  "quarter_end_columns":["<current half-year end date>","<preceding half-year end date, or null if no such column is printed>","<same half-year end date last year>"],
  "column_headings":["<exact heading text printed above column c>","<heading above p, or null>","<heading above y>"],
- "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"finance_costs":[c,p,y],"depreciation":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
+ "consolidated": {"revenue":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"total_expenses":[c,p,y],"finance_costs":[c,p,y],"depreciation":[c,p,y],"exceptional_items":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
  "standalone": {same keys} or null,
- "year_ended_column": {"end_date":"<date the full year ended>","consolidated":{"revenue":v,"other_income":v,"total_income":v,"total_expenses":v,"finance_costs":v,"depreciation":v,"pbt":v,"tax":v,"pat":v} or null,"standalone":{same keys} or null} or null}
+ "year_ended_column": {"end_date":"<date the full year ended>","consolidated":{"revenue":v,"other_income":v,"total_income":v,"total_expenses":v,"finance_costs":v,"depreciation":v,"exceptional_items":v,"pbt":v,"tax":v,"pat":v} or null,"standalone":{same keys} or null} or null}
 Rules: c = the current HALF-YEAR column (six months), p = the immediately preceding half-year column, y = the same half-year one year earlier. If the filing shows 'Half year ended 30.09.2025 | Half year ended 31.03.2025 | Half year ended 30.09.2024', those are c, p, y.
 Some filings print only two half-year columns (current half-year and the same half-year last year) plus a 'Year ended' (full year) column. Then p is NOT printed: use null for the p date and null for every p value, and put the full-year column's values in year_ended_column. Never put a full-year figure in p.
-revenue = 'Revenue from operations' (total, incl. other operating income). pbt = profit before tax (after exceptional items). pat = net profit/(loss) for the period (after tax).
+revenue = 'Revenue from operations' (total, incl. other operating income). exceptional_items = 'Exceptional items' as a signed number (a loss/expense printed in brackets is negative, a gain is positive; null if none). pbt = profit before tax (after exceptional items). pat = net profit/(loss) for the period (after tax).
 Numbers exactly as printed, in the printed unit; negatives for losses. Use null for any value not present. Do not compute or guess."""
 
 def sme_ok(d, i):
     """SME statements: total income - expenses must equal PBT; PAT must be sane versus PBT (tax lines often exclude deferred tax, so PBT - tax is NOT required to equal PAT)."""
     ti, ex, pbt, pat = (pc.val(d, x, i) for x in ("total_income", "total_expenses", "pbt", "pat"))
     if None in (ti, ex, pbt, pat): return False
-    if abs((ti - ex) - pbt) > max(1.5, 0.002 * max(abs(ti), abs(ex))): return False
+    exc = pc.val(d, "exceptional_items", i) or 0          # exceptional items sit between operating profit and PBT
+    if abs((ti - ex + exc) - pbt) > max(1.5, 0.002 * max(abs(ti), abs(ex))): return False
     if pbt > 0 and not (-0.3 * pbt <= pat <= 1.1 * pbt): return False
     if pbt <= 0 and pat > 0.5 * abs(pbt) + 1.5: return False
     return True
@@ -46,9 +47,11 @@ def read_half_card(content, key, name=""):
             for b_ in ("consolidated", "standalone"):
                 d_, y_ = out.get(b_), ye.get(b_)
                 if isinstance(d_, dict) and isinstance(y_, dict):
-                    for kk in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat"):
+                    for kk in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "exceptional_items", "pbt", "tax", "pat"):
                         v_, h_ = y_.get(kk), (d_.get(kk) or [None, None, None])[2] if isinstance(d_.get(kk), list) and len(d_.get(kk)) >= 3 else None
+                        if kk == "exceptional_items": v_, h_ = (v_ or 0), (h_ or 0)      # none printed means zero
                         if isinstance(v_, (int, float)) and isinstance(h_, (int, float)):
+                            if not isinstance(d_.get(kk), list) or len(d_[kk]) < 3: d_[kk] = [None, None, None]
                             d_[kk][1] = round(v_ - h_, 4)
                     if isinstance(d_.get("eps"), list) and len(d_["eps"]) >= 3: d_["eps"][1] = None
             p("  preceding half-year derived as full year minus the first half (no separate column printed)")
