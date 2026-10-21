@@ -20,7 +20,13 @@ jobs:
           set -e
           mkdir -p /tmp/pv && cd /tmp/pv
           curl -sSL -A "Mozilla/5.0" -o f.pdf "${{ github.event.inputs.url }}"
-          pdftoppm -r 110 -f ${{ github.event.inputs.first }} -l ${{ github.event.inputs.last }} -png f.pdf pg
+          pip install -q pymupdf
+          python - <<PY
+          import fitz
+          d = fitz.open("f.pdf")
+          for i in range(int("${{ github.event.inputs.first }}") - 1, min(int("${{ github.event.inputs.last }}"), len(d))):
+              d[i].get_pixmap(dpi=110).save(f"pg-{i+1:02d}.png")
+          PY
           rm f.pdf
           ls
           git init -q && git checkout -q -b preview-cards
