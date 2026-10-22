@@ -25,6 +25,7 @@ jobs:
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CODE: ${{ github.event.inputs.codes }}
+          SINCE: ${{ github.event.inputs.since }}
 
         run: python scripts/diag_pdf.py
       - name: Publish preview PNG to the preview-cards branch
