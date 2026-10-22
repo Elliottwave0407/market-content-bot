@@ -36,6 +36,13 @@ def save(st):
     st["done"] = st["done"][-2000:]; st["posted"] = st["posted"][-1000:]
     json.dump(st, open(ST, "w"))
 
+def qe_for(filed):
+    """Quarter end a filing on this date reports: the latest quarter end before it (Oct 22 -> 30 Sep)."""
+    m, y = filed.month, filed.year
+    qm = max([q for q in (3, 6, 9, 12) if q < m] or [12])
+    qy = y if qm < m else y - 1
+    return datetime(qy, qm, 31 if qm in (3, 12) else 30)
+
 def sh(d, m):
     y, mm = divmod(d.year * 12 + d.month - 1 - m, 12); mm += 1
     return datetime(y, mm, 31 if mm in (1, 3, 5, 7, 8, 10, 12) else 30 if mm != 2 else 28)
@@ -75,13 +82,15 @@ def to_card(m):
     if not m: return {}
     return {"revenue": m["revenue"] * 10, "ebitda": None if m.get("ebitda") is None else m["ebitda"] * 10, "pbt": (m.get("pbt") or 0) * 10, "pat": None if m.get("pat") is None else m["pat"] * 10, "eps": m.get("eps"), "bank": False, "kind": m.get("kind")}
 
-def build(sym, name, link, st, final=False):
+def build(sym, name, link, st, final=False, filed=None):
     """-> ('done', caption, png, key) / ('wait', reason) / ('skip', reason)"""
     s = nse.sess()
     rows = listing(s, sym)
     if not rows: return ("wait", "no XBRL listing yet")
     # newest quarter that has an XBRL filing; a quarter must exist on one basis for current, quarter-ago and year-ago
+    want = qe_for(filed) if filed else None      # only the quarter this filing reports: never post an older quarter because the new one's XBRL is not out yet
     for T in sorted({r["qe"] for r in rows}, reverse=True)[:2]:
+        if want is not None and T != want: continue
         if f"{sym}|{T:%Y-%m-%d}" in st["posted"]: return ("skip", "already posted")
         for basis in ("consolidated", "standalone"):
             def get(d):
@@ -160,7 +169,8 @@ def build_pdf(sym, name, x, st):
         d = out.get(basis)
         if not isinstance(d, dict): continue
         v = lambda key, i: pc.val(d, key, i)
-        if None in (v("total_income", 0), v("interest_expended", 0), v("ppop", 0), v("pbt", 0), v("pat", 0)): continue
+        p(f"  [bank pdf] {sym} {basis} cols={cols[:3]} unit={out.get('unit')} " + ", ".join(f"{kk}={d.get(kk)}" for kk in ("total_income", "interest_expended", "operating_expenses", "ppop", "provisions", "pbt", "pat")))
+        if None in (v("total_income", 0), v("interest_expended", 0), v("operating_expenses", 0), v("ppop", 0), v("provisions", 0), v("pbt", 0), v("pat", 0)): p(f"  {sym} {basis}: a required line is missing - not used"); continue
         if basis == "standalone" and isinstance(out.get("consolidated"), dict) and pc.val(out["consolidated"], "pat", 0) is not None: return ("wait", "consolidated present but failed checks")
         oi, opx, prov = v("total_income", 0) - v("interest_expended", 0) - (v("operating_expenses", 0) or 0), None, v("provisions", 0)
         tolx = lambda a, b: abs(a - b) <= max(1.5, 0.003 * max(abs(a), abs(b)))
@@ -173,6 +183,9 @@ def build_pdf(sym, name, x, st):
         with ThreadPoolExecutor(max_workers=5) as ex: prev, yago, q2, q3, yprev = list(ex.map(get, dates))
         if not (prev and yago and prev.get("kind") == yago.get("kind") == "bank"): continue
         ok = True
+        cur_rev = cr(v("total_income", 0) - v("interest_expended", 0))
+        if not (prev.get("revenue") and 0.65 <= cur_rev / prev["revenue"] <= 1.5):      # a bank's net total income does not double or halve in a quarter: that is a cumulative (half-year / nine-month) column
+            p(f"  {sym} {basis}: current net total income {cur_rev} vs previous quarter {prev.get('revenue')} - looks like a cumulative column, withheld"); continue
         for i, m_ in ((1, prev), (2, yago)):      # the PDF's own previous / year-ago columns must equal NSE's filed history
             rev_i = cr(None if v("total_income", i) is None or v("interest_expended", i) is None else v("total_income", i) - v("interest_expended", i))
             if not (near(rev_i, m_["revenue"]) and near(cr(v("ppop", i)), m_["ebitda"], 0.01, 1.0) and near(cr(v("pat", i)), m_["pat"], 0.03, 1.0)): ok = False
@@ -209,7 +222,7 @@ def run_once(day=None, maxn=1):
         TRY[sid] = (TRY.get(sid, (0, 0))[0] + 1, time.time())
         name = (x.get("sm_name") or sym).strip()
         out = ((build_pdf(sym, name, x, st) if sym in BANKS else None) or ("wait", ""))
-        if out[0] not in ("done", "skip"): out = build(sym, name, x.get("attchmntFile") or "", st)
+        if out[0] not in ("done", "skip"): out = build(sym, name, x.get("attchmntFile") or "", st, filed=nse.parse_dt(x))
         if out[0] == "skip": st["done"].append(sid); changed = True; continue
         if out[0] == "wait": p(f"  {sym}: not ready - {out[1]}"); continue
         _, cap, png, key = out
