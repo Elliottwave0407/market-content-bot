@@ -8,10 +8,9 @@ import requests
 NV = os.environ.get("NVIDIA_API_KEY", "").strip()
 GK = os.environ.get("GEMINI_API_KEY", "").strip()
 N_DOCS = int(os.environ.get("N_DOCS", "6"))
-MAXC = 90000
-NIM = ["nvidia/nemotron-3-ultra-550b-a55b", "nvidia/nemotron-3.5-lightning-30b-a3b", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
-       "nvidia/nemotron-3.5-super-vl-120b-a12b", "deepseek-ai/deepseek-v4.1-flash"]
-GEM = ["gemini-3.5-flash"]
+MAXC = 70000
+NIM = ["nvidia/nemotron-3-ultra-550b-a55b", "nvidia/nemotron-3.5-lightning-30b-a3b", "deepseek-ai/deepseek-v4.1-flash"]
+GEM = ["gemini-3.5-flash", "gemini-3.1-flash-lite"]
 
 PROMPT = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT said (not analysts). Return ONLY JSON:
 {"guidance":[{"topic":"revenue|margin|volume|capex|order_book|pricing|cost|demand|other","statement":"short plain summary","period":"e.g. FY27, next quarter, or null","value":"number/range as stated or null","quote":"EXACT sentence copied from the transcript"}],
@@ -31,13 +30,17 @@ def docs():
 
 def call_nim(model, text):
     r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + NV}, timeout=240,
-                      json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": 3500, "temperature": 0})
+                      json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": 5000, "temperature": 0, "chat_template_kwargs": ({"thinking": False} if "deepseek" in model else {"enable_thinking": False})})
     if r.status_code != 200: return None, f"HTTP {r.status_code} {r.text[:80]}"
     return (r.json()["choices"][0]["message"].get("content") or ""), None
 
 def call_gem(model, text):
     r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", headers={"x-goog-api-key": GK}, timeout=240,
                       json={"contents": [{"parts": [{"text": PROMPT + "\n\nTRANSCRIPT:\n" + text}]}], "generationConfig": {"temperature": 0, "maxOutputTokens": 3500, "responseMimeType": "application/json"}})
+    if r.status_code == 503:
+        time.sleep(20)
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", headers={"x-goog-api-key": GK}, timeout=240,
+                          json={"contents": [{"parts": [{"text": PROMPT + "\n\nTRANSCRIPT:\n" + text}]}], "generationConfig": {"temperature": 0, "maxOutputTokens": 3500, "responseMimeType": "application/json"}})
     if r.status_code != 200: return None, f"HTTP {r.status_code}"
     try: return r.json()["candidates"][0]["content"]["parts"][0]["text"], None
     except Exception: return None, "no text"
