@@ -387,6 +387,7 @@ def run_once(day=None, maxn=3):
         p("BSE listing unavailable - skipping this pass")
         return False
     todo = []
+    rows = sorted(rows, key=lambda x: str(x.get("sort_date") or ""), reverse=True)      # newest filing first: old stuck ones must never hold up a fresh result
     for x in rows:
         sid = str(x.get("seq_id"))
         if ONLY and "*" not in ONLY and x["symbol"].upper() not in ONLY:
@@ -468,7 +469,7 @@ def tick():
     import ci_out
     n0 = len(ci_out.OUT)
     try:
-        ch = run_once(maxn=2)
+        ch = run_once(maxn=3)
     except Exception as e:
         p("nse results ERROR:", repr(e)[:200].replace(TOKEN, "<token>") if TOKEN else repr(e)[:200])
         ch = False

@@ -9,10 +9,12 @@ try:
     day = datetime.strptime(os.environ["DAY"], "%Y-%m-%d") if os.environ.get("DAY") else datetime.now(IST).replace(tzinfo=None)
     rows = nr.fetch_day(day) or []
     p("rows today", len(rows))
-    sym = (os.environ.get("SYM") or "HAVELLS").upper()
+    sym = (os.environ.get("SYM") or "ATGL").upper()
     for r in rows:
         if str(r.get("symbol", "")).upper() == sym:
-            p({k: str(r.get(k))[:90] for k in ("symbol", "desc", "an_dt", "sort_date", "attchmntFile", "exchdisstime", "seq_id") if k in r})
+            p({k: str(r.get(k))[:90] for k in ("symbol", "desc", "an_dt", "attchmntText", "attchmntFile", "exchdisstime") if k in r})
+    acc = nr.result_rows([r for r in rows if str(r.get("symbol","")).upper() == sym])
+    p("accepted by NSE route for", sym, ":", len(acc))
     res = [r for r in rows if nr.RES_RX.search((r.get("desc") or "") + " " + (r.get("attchmntText") or ""))]
     p("result-like rows", len(res))
     for r in sorted(res, key=lambda r: str(r.get("an_dt")))[-12:]:
