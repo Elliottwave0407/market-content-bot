@@ -47,20 +47,39 @@ def _clean(out):
                     if isinstance(v, list): d[k] = [_num(i) for i in v]
     return out
 
+FALLBACK = [m.strip() for m in os.environ.get("GEMINI_FALLBACK", "gemini-flash-latest,gemini-2.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]
+QUOTA = {"until": {}}      # model -> time until which it is skipped after a quota (429) answer
+
+def _quota_kind(r):
+    t = r.text or ""
+    return "per-day" if "PerDay" in t else "per-minute" if "PerMinute" in t else "rate"
+
 def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
+    """Free-tier quota is per model, so on a 429 the next model is tried straight away instead of waiting."""
     body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf_bytes).decode()}}, {"text": prompt or PROMPT}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     last = None
+    models = [model] + [m for m in FALLBACK if m != model]
     for i in range(tries):
-        r = requests.post(f"{BASE}/models/{model}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
-        if r.status_code == 429 or r.status_code >= 500:
-            last = f"HTTP {r.status_code}"
-            time.sleep(15 * (i + 1)); continue
-        if r.status_code != 200:
-            return None, f"HTTP {r.status_code} {r.text[:150]}"
-        try:
-            txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return _clean(json.loads(re.sub(r"^```json|```$", "", txt.strip()))), None
-        except Exception as e:
-            return None, f"parse {repr(e)[:80]}"
+        for m in models:
+            if QUOTA["until"].get(m, 0) > time.time():
+                last = last or f"HTTP 429 (skipped {m}, quota)"; continue
+            r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
+            if r.status_code == 429:
+                kind = _quota_kind(r)
+                QUOTA["until"][m] = time.time() + (3600 if kind == "per-day" else 60)
+                last = f"HTTP 429 ({kind}) on {m}"; continue
+            if r.status_code >= 500:
+                last = f"HTTP {r.status_code} on {m}"; continue
+            if r.status_code == 404 and m != model:
+                QUOTA["until"][m] = time.time() + 86400; continue
+            if r.status_code != 200:
+                return None, f"HTTP {r.status_code} {r.text[:150]}"
+            try:
+                txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+                return _clean(json.loads(re.sub(r"^```json|```$", "", txt.strip()))), None
+            except Exception as e:
+                return None, f"parse {repr(e)[:80]}"
+        if i < tries - 1:
+            time.sleep(15 * (i + 1))
     return None, last
