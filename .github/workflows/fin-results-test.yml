@@ -26,6 +26,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FIN_SEND: "0"
+          FIN_FORCE_PDF: "1"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FIN_DAY: ${{ github.event.inputs.day }}
           FIN_MAX: ${{ github.event.inputs.maxn }}
         run: python scripts/fin_results.py

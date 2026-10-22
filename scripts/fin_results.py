@@ -105,6 +105,93 @@ def build(sym, name, link, st, final=False):
             return ("done", cap, png, f"{sym}|{T:%Y-%m-%d}|{basis}|{v}")
     return ("wait", "XBRL for the quarter, quarter-ago and year-ago not all available yet")
 
+BANK_PROMPT = """You are reading an Indian BANK's quarterly financial results filing (PDF). Return ONLY JSON:
+{"unit":"lakh|crore|million|thousand|actual",
+ "quarter_end_columns":["<current quarter end date>","<previous quarter end date>","<year-ago quarter end date>"],
+ "consolidated": {"interest_earned":[c,p,y],"other_income":[c,p,y],"total_income":[c,p,y],"interest_expended":[c,p,y],"operating_expenses":[c,p,y],"ppop":[c,p,y],"provisions":[c,p,y],"pbt":[c,p,y],"tax":[c,p,y],"pat":[c,p,y],"eps":[c,p,y]} or null,
+ "standalone": {same keys} or null}
+Rules: c = current quarter, p = immediately preceding quarter, y = same quarter last year (the first three numeric columns; ignore nine-month, half-year and full-year columns).
+interest_earned = 'Interest earned' (total of the interest lines). total_income = 'Total income' (interest earned + other income). interest_expended = 'Interest expended'. operating_expenses = 'Operating expenses'.
+ppop = 'Operating profit before provisions and contingencies'. provisions = provisions and contingencies (other than tax). pbt = profit before tax. pat = net profit for the period after minority interest / share of associates if shown, else net profit after tax. eps = basic EPS.
+Numbers exactly as printed, in the printed unit; negatives for losses. Use null for any value not present. Do not compute or guess."""
+PDFTRY = {}
+
+def _bank_pdf(x):
+    """Download the NSE filing PDF (quick retries: NSE's CDN sometimes answers 200 with an empty body right after a filing)."""
+    for att in range(4):
+        try:
+            u = x["attchmntFile"] + ("" if att == 0 else f"?cb={int(time.time() * 1000)}")
+            r = nse.sess().get(u, headers={"Referer": nse.REF}, timeout=60)
+            if r.content[:4] == b"%PDF" and len(r.content) < 15_000_000: return r.content
+        except Exception: pass
+        time.sleep(1.5)
+    return None
+
+def build_pdf(sym, name, x, st):
+    """Banks only: read the NSE filing PDF at once (the XBRL lags by minutes to hours). The current column must pass the bank arithmetic AND the
+    previous / year-ago columns must match NSE's filed XBRL history, otherwise nothing is posted here and the XBRL route follows. -> same tuples as build()."""
+    import gemini_read as gr, pdf_card as pc
+    from concurrent.futures import ThreadPoolExecutor
+    if sym not in BANKS: return ("skip", "not a bank")
+    sid = str(x.get("seq_id"))
+    if PDFTRY.get(sid, 0) >= 3: return ("wait", "pdf attempts used")
+    PDFTRY[sid] = PDFTRY.get(sid, 0) + 1
+    content = _bank_pdf(x)
+    if not content: return ("wait", "pdf not downloadable yet")
+    out, err = gr.read_pdf(pc.geminikey(), pc.MODEL, pc.trim_pdf(content), tries=2, timeout=120, prompt=BANK_PROMPT)
+    if out is None: return ("wait", f"pdf read failed: {str(err)[:60]}")
+    k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
+    qe = pc.parse_qend(cols[0]) if cols else None
+    if not k or qe is None: return ("wait", "unit or quarter not readable")
+    ms = [(lambda q_: q_[0] * 12 + q_[1] if q_ else None)(pc.parse_qend(c)) for c in cols[:3]]
+    if len(ms) == 3 and None not in ms and (ms[0] - ms[1], ms[0] - ms[2]) not in ((3, 12), (12, 3)): return ("wait", "not a quarterly layout")
+    if len(ms) == 3 and None not in ms and (ms[0] - ms[1]) >= 9:      # columns listed current | year-ago | previous: swap
+        for b_ in ("consolidated", "standalone"):
+            d_ = out.get(b_)
+            if isinstance(d_, dict):
+                for kk, vv in list(d_.items()):
+                    if isinstance(vv, list) and len(vv) >= 3: vv[1], vv[2] = vv[2], vv[1]
+    T = datetime(qe[0], qe[1], 31 if qe[1] in (1, 3, 5, 7, 8, 10, 12) else 30)
+    if f"{sym}|{T:%Y-%m-%d}" in st["posted"] and not os.environ.get("FIN_FORCE_PDF"): return ("skip", "already posted")
+    s = nse.sess(); rows = listing(s, sym)
+    cr = lambda v: None if v is None else v * k / 10.0      # printed unit -> Rs crore
+    near = lambda a, b, tol=0.005, floor=0.5: a is not None and b is not None and abs(a - b) <= max(floor, tol * abs(b))
+    for basis in ("consolidated", "standalone"):
+        d = out.get(basis)
+        if not isinstance(d, dict): continue
+        v = lambda key, i: pc.val(d, key, i)
+        if None in (v("total_income", 0), v("interest_expended", 0), v("ppop", 0), v("pbt", 0), v("pat", 0)): continue
+        if basis == "standalone" and isinstance(out.get("consolidated"), dict) and pc.val(out["consolidated"], "pat", 0) is not None: return ("wait", "consolidated present but failed checks")
+        oi, opx, prov = v("total_income", 0) - v("interest_expended", 0) - (v("operating_expenses", 0) or 0), None, v("provisions", 0)
+        tolx = lambda a, b: abs(a - b) <= max(1.5, 0.003 * max(abs(a), abs(b)))
+        if v("operating_expenses", 0) is not None and not tolx(oi, v("ppop", 0)): p(f"  {sym} {basis}: operating profit arithmetic failed"); continue
+        if prov is not None and not tolx(v("ppop", 0) - prov, v("pbt", 0)): p(f"  {sym} {basis}: PBT arithmetic failed"); continue
+        def get(dd):
+            c = [r for r in rows if r["qe"] == dd and r["basis"] == basis]
+            return parse(s, max(c, key=lambda r: r["when"] or "")) if c else None
+        dates = [sh(T, 3), sh(T, 12), sh(T, 6), sh(T, 9), sh(T, 15)]
+        with ThreadPoolExecutor(max_workers=5) as ex: prev, yago, q2, q3, yprev = list(ex.map(get, dates))
+        if not (prev and yago and prev.get("kind") == yago.get("kind") == "bank"): continue
+        ok = True
+        for i, m_ in ((1, prev), (2, yago)):      # the PDF's own previous / year-ago columns must equal NSE's filed history
+            rev_i = cr(None if v("total_income", i) is None or v("interest_expended", i) is None else v("total_income", i) - v("interest_expended", i))
+            if not (near(rev_i, m_["revenue"]) and near(cr(v("ppop", i)), m_["ebitda"], 0.01, 1.0) and near(cr(v("pat", i)), m_["pat"], 0.03, 1.0)): ok = False
+        if not ok: p(f"  {sym} {basis}: previous/year-ago columns differ from NSE XBRL history"); continue
+        cur = {"revenue": cr(v("total_income", 0) - v("interest_expended", 0)), "ebitda": cr(v("ppop", 0)), "pbt": cr(v("pbt", 0)), "pat": cr(v("pat", 0)), "eps": v("eps", 0), "kind": "bank"}
+        ql = T.strftime("%b-%y")
+        qs = [{"q": ql, "m": to_card(cur)}, {"q": sh(T, 3).strftime("%b-%y"), "m": to_card(prev)}, {"q": sh(T, 6).strftime("%b-%y"), "m": to_card(q2)}, {"q": sh(T, 9).strftime("%b-%y"), "m": to_card(q3)}, {"q": sh(T, 12).strftime("%b-%y"), "m": to_card(yago)}]
+        os.makedirs(OUTDIR, exist_ok=True)
+        png = os.path.join(OUTDIR, f"fin_{sym}_{ql}_{basis}.png")
+        vd = card.render(name, f"NSE {sym}", basis, qs, png, yprev=to_card(yprev) if yprev else None)
+        rv, pt = card.cr(qs[0]["m"]["revenue"]), card.cr(qs[0]["m"]["pat"])
+        ry = card.fmt_pct(card.pct(qs[0]["m"]["revenue"], qs[4]["m"]["revenue"])); py = card.fmt_pct(card.pct(qs[0]["m"]["pat"], qs[4]["m"]["pat"]))
+        dd = lambda z: 0 if z and abs(z) >= 100 else 1
+        cap = (f"{name} {nse.fy_label(ql)} | {basis.capitalize()}\n"
+               f"{LABEL['bank']} Rs {card.fmt_num(rv, dd(rv))} Cr ({ry} YoY), net profit Rs {card.fmt_num(pt, dd(pt))} Cr ({py} YoY).\n"
+               f"Filing: {x.get('attchmntFile')}\n\n{nse.DISC}")
+        return ("done", cap, png, f"{sym}|{T:%Y-%m-%d}|{basis}|{vd}")
+    return ("wait", "pdf figures did not pass the checks")
+
 def run_once(day=None, maxn=1):
     now = datetime.now(nse.IST)
     st = load(); changed = False
@@ -121,7 +208,8 @@ def run_once(day=None, maxn=1):
         if TRY.get(sid, (0, 0))[0] >= 120 or time.time() - TRY.get(sid, (0, 0))[1] < int(os.environ.get("FIN_RETRY_S", "45")): continue
         TRY[sid] = (TRY.get(sid, (0, 0))[0] + 1, time.time())
         name = (x.get("sm_name") or sym).strip()
-        out = build(sym, name, x.get("attchmntFile") or "", st)
+        out = ((build_pdf(sym, name, x, st) if sym in BANKS else None) or ("wait", ""))
+        if out[0] not in ("done", "skip"): out = build(sym, name, x.get("attchmntFile") or "", st)
         if out[0] == "skip": st["done"].append(sid); changed = True; continue
         if out[0] == "wait": p(f"  {sym}: not ready - {out[1]}"); continue
         _, cap, png, key = out
