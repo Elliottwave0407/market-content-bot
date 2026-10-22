@@ -108,7 +108,7 @@ def build(sym, name, link, st, final=False):
 def run_once(day=None, maxn=1):
     now = datetime.now(nse.IST)
     st = load(); changed = False
-    if day or time.time() - _S["scan_at"] > 240:
+    if day or time.time() - _S["scan_at"] > int(os.environ.get("FIN_SCAN_S", "20")):
         days = [day] if day else [now] + ([now - timedelta(days=1)] if now.hour < 3 else [])
         rows = []
         for d in days: rows += nse.result_rows(nse.fetch_day(d))
@@ -118,7 +118,7 @@ def run_once(day=None, maxn=1):
     for x in _S["rows"]:
         sym = x["symbol"].upper(); sid = str(x.get("seq_id"))
         if sid in st["done"]: continue
-        if TRY.get(sid, (0, 0))[0] >= 40 or time.time() - TRY.get(sid, (0, 0))[1] < 120: continue
+        if TRY.get(sid, (0, 0))[0] >= 120 or time.time() - TRY.get(sid, (0, 0))[1] < int(os.environ.get("FIN_RETRY_S", "45")): continue
         TRY[sid] = (TRY.get(sid, (0, 0))[0] + 1, time.time())
         name = (x.get("sm_name") or sym).strip()
         out = build(sym, name, x.get("attchmntFile") or "", st)
@@ -150,7 +150,7 @@ def run_once(day=None, maxn=1):
 
 def tick():
     """Poll-loop hook. Returns (changed, lines). Never raises. Only when FIN_LIVE=1 and posting is on."""
-    if not (LIVE and SEND and nse.CHAT) or time.time() - _S["last_tick"] < 60: return False, []
+    if not (LIVE and SEND and nse.CHAT) or time.time() - _S["last_tick"] < int(os.environ.get("FIN_TICK_S", "10")): return False, []
     _S["last_tick"] = time.time()
     import ci_out
     n0 = len(ci_out.OUT)

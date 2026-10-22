@@ -124,7 +124,7 @@ def run_once(day=None, maxn=1):
                         _S["cands"] += sorted(rows, key=lambda r: r.get("NEWS_DT", ""))[-1:]; break
                     except Exception: time.sleep(5)
             p(f"manual run for {ONLY}: {len(_S['cands'])} filing(s)")
-        elif day or time.time() - _S["scan_at"] > 600:
+        elif day or time.time() - _S["scan_at"] > int(os.environ.get("SME_SCAN_S", "45")):
             _S["cands"] = scan(b, start.replace(tzinfo=None), end.replace(tzinfo=None)); _S["scan_at"] = time.time()
             try:      # half-yearly filings that the quarterly route spotted (any exchange group) join the queue
                 _S["cands"] += [v for v in json.load(open("state/seen.json")).get("half_q", {}).values() if v.get("ATTACHMENTNAME") and v.get("NEWSID")]
@@ -142,7 +142,7 @@ def run_once(day=None, maxn=1):
 
 def tick():
     """Poll-loop hook (live only). Returns (changed, lines). Never raises."""
-    if not (LIVE and SEND and nse.CHAT) or time.time() - _S["last_tick"] < 60: return False, []
+    if not (LIVE and SEND and nse.CHAT) or time.time() - _S["last_tick"] < int(os.environ.get("SME_TICK_S", "10")): return False, []
     _S["last_tick"] = time.time()
     import ci_out
     n0 = len(ci_out.OUT)
