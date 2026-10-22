@@ -35,10 +35,29 @@ def load_state():
 
 _TEST_SEEN = set()
 
+import threading
+STATE_LOCK = threading.Lock()      # seen.json is written by this route and by the NSE-first route (other thread)
+
+def disk_posted():
+    try:
+        return set(json.load(open(STATE)).get("posted", []))
+    except Exception:
+        return set()
+
 def save_state(st):
     if ONLY:
         return
     os.makedirs("state", exist_ok=True)
+    with STATE_LOCK:
+        _save_state(st)
+
+def _save_state(st):
+    try:      # keep what the other route wrote meanwhile
+        d_ = json.load(open(STATE))
+        have = set(st["posted"])
+        st["posted"] += [k_ for k_ in d_.get("posted", []) if k_ not in have]
+    except Exception:
+        pass
     st["ids"] = st["ids"][-5000:]
     st["posted"] = st["posted"][-5000:]
     json.dump(st, open(STATE, "w"), indent=0)
@@ -284,7 +303,7 @@ def main(bse_in=None, known=None, fast=False):
                 if key in _TEST_SEEN:
                     continue
                 _TEST_SEEN.add(key)
-            if key in st["posted"] and not ONLY:
+            if (key in st["posted"] or key in disk_posted()) and not ONLY:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
                 pend.pop(nid, None)

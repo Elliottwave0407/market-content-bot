@@ -26,7 +26,7 @@ DESCS = ("outcome of board meeting", "financial results", "updates")
 RES_RX = re.compile(r"financial results|results for the (quarter|period|half|year)|(un)?audited .*results", re.I)
 NOT_RX = re.compile(r"earnings call|conference call|investor meet|newspaper|press release|presentation", re.I)
 MAX_AGE_H = 36
-BSE_WAIT_MIN = 20
+BSE_WAIT_MIN = int(os.environ.get("NSE_WAIT_MIN", "0"))      # NSE shows a result minutes before BSE does, so it goes first (the BSE route skips what is already posted)
 FINAL_H = 24
 _S = {"sess": None, "at": 0.0, "bse": None, "bse_at": 0.0, "last_tick": 0.0}
 TRY_AT, TRIES = {}, {}
@@ -141,7 +141,10 @@ def arith_col(d, i):
 def read_card(content, name, bse=None, code=None):
     """-> (dict(basis, q, quarters) or None, reason)"""
     key = pc.geminikey()
-    out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "2")), timeout=120)
+    small = pc.trim_pdf(content)
+    out, err = gr.read_pdf(key, pc.MODEL, small, tries=int(os.environ.get("PDF_TRIES", "2")), timeout=120)
+    if out is None and small is not content and not (err and "429" in err):
+        out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "2")), timeout=120)
     if out is None:
         return None, f"pdf read failed: {str(err)[:70]}"
     k = pc.K.get(str(out.get("unit", "")).lower())
@@ -197,11 +200,15 @@ def read_card(content, name, bse=None, code=None):
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
         note = "arithmetic-checked"
         quarters = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 1), "m": prev}, {"q": rf.qlabel(q - 2), "m": empty}, {"q": rf.qlabel(q - 3), "m": empty}, {"q": rf.qlabel(q - 4), "m": yago}]
+        fx = None
         if bse is not None and code:
+            try: fx = pc.hist_batch(bse, code, name, basis, [q - 1, q - 2, q - 3, q - 4, q - 5])
+            except Exception: fx = None
+        if fx is not None:
             try:
                 bad, good = [], 0
                 for off, m_ in ((1, prev), (4, yago)):
-                    h = rf.fetch(bse, code, name, basis, q - off)
+                    h = fx(q - off)
                     if h and h.get("revenue") is not None and m_["revenue"] is not None:
                         if pc.close(m_["revenue"], h["revenue"]) and (h.get("pat") is None or m_["pat"] is None or abs(m_["pat"] - h["pat"]) <= max(1.0, 0.03 * abs(h["pat"]))):
                             good += 1
@@ -213,7 +220,7 @@ def read_card(content, name, bse=None, code=None):
                 if bad:
                     return None, f"history mismatch with BSE for q-{bad}"
                 for j in (2, 3):
-                    h = rf.fetch(bse, code, name, basis, q - j)
+                    h = fx(q - j)
                     if h:
                         quarters[j]["m"] = h
                 if good:
@@ -221,8 +228,8 @@ def read_card(content, name, bse=None, code=None):
             except Exception as e_:
                 p(f"  history check skipped: {repr(e_)[:60]}")
         yprev = None
-        if bse is not None and code:
-            try: yprev = rf.fetch(bse, code, name, basis, q - 5)      # for the rating's seasonality adjustment only
+        if fx is not None:
+            try: yprev = fx(q - 5)      # for the rating's seasonality adjustment only
             except Exception: yprev = None
         return {"basis": basis, "q": q, "quarters": quarters, "note": note, "yprev": yprev}, "ok"
     return None, "no usable statement"
@@ -265,12 +272,14 @@ def _seen_posted():
         return set()
 
 def _mark_seen(bkey):
-    """Tell the BSE results path this company/quarter/basis is already posted (same process, run sequentially)."""
+    """Tell the BSE results path this company/quarter/basis is already posted (it runs in another thread: shared lock, merge on save)."""
     try:
-        s_ = json.load(open("state/seen.json"))
-        if bkey not in s_.get("posted", []):
-            s_.setdefault("posted", []).append(bkey)
-            json.dump(s_, open("state/seen.json", "w"))
+        import results_poller as rp_
+        with rp_.STATE_LOCK:
+            s_ = json.load(open("state/seen.json"))
+            if bkey not in s_.get("posted", []):
+                s_.setdefault("posted", []).append(bkey)
+                json.dump(s_, open("state/seen.json", "w"))
     except Exception as e:
         p("could not mark BSE key:", repr(e)[:60])
 
@@ -327,6 +336,28 @@ def process(x, st, final, maps=None):
             _mark_seen(bkey)
     return "done"
 
+def _fin_sym(sym):
+    if os.environ.get("FIN_LIVE", "") != "1":
+        return False
+    try:
+        import fin_results as fr
+        return sym.upper() in fr.FINSYMS
+    except Exception:
+        return False
+
+def _already_posted(code, dt):
+    """Cheap check before reading a PDF: has this company's quarter (the latest quarter end before the filing date) already been posted by any route?"""
+    try:
+        d = dt or datetime.now(IST)
+        m, y = d.month, d.year
+        qm = max([x for x in (3, 6, 9, 12) if x < m] or [12])
+        qy = y if qm < m else y - 1
+        ql = rf.qlabel(rf.qcode(qy, qm))
+        seen = _seen_posted()
+        return any(f"{code}|{ql}|{b}" in seen for b in ("consolidated", "standalone"))
+    except Exception:
+        return False
+
 def run_once(day=None, maxn=3):
     """One pass. Returns True if state changed."""
     st = load()
@@ -371,10 +402,13 @@ def run_once(day=None, maxn=3):
         code = bse_code(x, maps)
         if code and not ONLY:
             if age_h * 60 < BSE_WAIT_MIN:
-                continue                      # give BSE's own 'Result' filing time to appear first
-            if bse_has_result_cached(code, st, str(x.get("seq_id")), now):
-                p(f"  {x['symbol']}: BSE carries a Result filing - normal path handles it")
-                st["done"].append(str(x.get("seq_id")))
+                continue
+            if _fin_sym(x["symbol"]):
+                st["done"].append(str(x.get("seq_id")))      # banks/insurers have their own route
+                changed = True
+                continue
+            if _already_posted(code, dt):
+                st["done"].append(str(x.get("seq_id")))      # the BSE route already posted this quarter: no need to read the PDF again
                 changed = True
                 continue
         out = process(x, st, final=age_h >= FINAL_H, maps=maps)
@@ -412,13 +446,13 @@ def bse_has_result_cached(code, st, sid, now):
 
 def tick():
     """Called by the poll loop (live only). Every ~60 s. Returns (changed, lines)."""
-    if not (SEND and CHAT) or time.time() - _S["last_tick"] < 60:
+    if not (SEND and CHAT) or time.time() - _S["last_tick"] < int(os.environ.get("NSE_TICK_S", "8")):
         return False, []
     _S["last_tick"] = time.time()
     import ci_out
     n0 = len(ci_out.OUT)
     try:
-        ch = run_once(maxn=1)
+        ch = run_once(maxn=2)
     except Exception as e:
         p("nse results ERROR:", repr(e)[:200].replace(TOKEN, "<token>") if TOKEN else repr(e)[:200])
         ch = False
