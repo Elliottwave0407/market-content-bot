@@ -121,20 +121,18 @@ def build(bse, rec, final=False, age_min=0):
         pd_ = 0 if pat and pat >= 100 else 1
         sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
         png = os.path.join(OUTDIR, f"{code}_{ql}_{basis}.png")
-        try: yprev = rf.fetch(bse, code, name, basis, q - 5)
-        except Exception: yprev = None
+        k5 = (str(code), basis, q - 5)
+        if k5 in pdf_card.HIST:
+            yprev = pdf_card.HIST.pop(k5)
+        else:
+            try: yprev = rf.fetch(bse, code, name, basis, q - 5)
+            except Exception: yprev = None
         card.render(name, f"BSE {code}", basis, quarters, png, yprev=yprev)
         cap = (f"{name} {fy_label(ql)} | {basis.capitalize()}\n"
                f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
                f"{'(Quarter taken from the PDF.) ' if pc['inferred'] else ''}Filing: {lk}\n\n{DISC}")
         key = f"{code}|{ql}|{basis}"
         PDF_AUDIT[key] = {"code": code, "name": name, "basis": basis, "q": q, "rev": cur["revenue"], "pat": cur["pat"], "t": time.time(), "last": 0}
-        try:
-            m = rf.fetch(bse, code, name, basis, q)
-            if m and m.get("revenue") is not None:
-                p(f"[audit-now] {name}: pdf rev={cur['revenue']:.1f} pat={cur['pat']:.1f} | bse rev={m['revenue']:.1f} pat={(m.get('pat') or 0):.1f} (Rs mn)")
-        except Exception:
-            pass
         return ("photo", cap, png, key)
     res = rf.results_for_filing(bse, code, name, headline, filed)
     inferred = False

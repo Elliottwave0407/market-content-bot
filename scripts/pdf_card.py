@@ -62,6 +62,35 @@ def close(a, b):
 def geminikey():
     return os.environ.get("GEMINI_API_KEY", "").strip()
 
+KEYS = ("revenue from operations", "total income", "profit before tax", "profit/(loss) before tax", "profit / (loss) before tax", "total expenses")
+
+def trim_pdf(content):
+    """Keep only the pages that carry the results table (plus the page after the first one, for tables that run over), so Gemini reads a page or two, not a 40-page filing.
+    Scanned/odd files (no text layer, no table found) come back unchanged."""
+    if os.environ.get("PDF_TRIM", "1") != "1":
+        return content
+    try:
+        import fitz
+        d = fitz.open(stream=content, filetype="pdf")
+        if d.page_count <= 3:
+            return content
+        hits = []
+        for i in range(d.page_count):
+            t = d[i].get_text().lower()
+            if sum(k in t for k in KEYS) >= 2:
+                hits.append(i)
+        if not hits:
+            return content
+        keep = sorted(set(hits[:4]) | {min(hits[0] + 1, d.page_count - 1)})
+        if len(keep) >= d.page_count:
+            return content
+        out = fitz.open()
+        for i in keep:
+            out.insert_pdf(d, from_page=i, to_page=i)
+        return out.tobytes()
+    except Exception:
+        return content
+
 PREREAD = {}      # nid -> result of the download+Gemini stage, prepared in parallel threads by prefetch()
 
 def _read_stage(rec, st, headline, filed):
@@ -93,7 +122,10 @@ def _read_stage(rec, st, headline, filed):
         return None
     STATE_["calls"] += 1
     use[day] = use.get(day, 0) + 1
-    out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
+    small = trim_pdf(content)
+    out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
+    if out is None and small is not content and not (err and "429" in err):
+        out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
     if out is None:
         if err and "429" in err:
             STATE_["backoff"] = time.time() + 120
@@ -119,6 +151,31 @@ def prefetch(recs, st, workers=4):
             LOG.append(f"prefetch error: {repr(e)[:80]}")
     with ThreadPoolExecutor(max_workers=workers) as ex:
         list(ex.map(one, todo))
+
+HIST = {}      # (code, basis, quarter) -> history fetched ahead for the card's year-ago-previous cell
+
+def hist_batch(bse, code, name, basis, qs):
+    """Fetch BSE's filed history for several quarters at the same time (was one after another). A failed fetch re-raises when that quarter is asked for, as before."""
+    from concurrent.futures import ThreadPoolExecutor
+    def one(qq):
+        for t in range(2):
+            try:
+                return rf.fetch(bse, code, name, basis, qq)
+            except Exception as e:
+                err = e
+                time.sleep(0.5)
+        return err
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        res = list(ex.map(one, qs))
+    for qq, v in zip(qs, res):
+        if not isinstance(v, Exception) and qq == qs[-1]:
+            HIST[(str(code), basis, qq)] = v
+    def get(qq):
+        v = res[qs.index(qq)]
+        if isinstance(v, Exception):
+            raise v
+        return v
+    return get
 
 def try_pdf(bse, rec, st, headline, filed):
     """-> dict(basis, qcode, quarters, verified_note, raw) or None."""
@@ -204,9 +261,10 @@ def try_pdf(bse, rec, st, headline, filed):
         LOG.append(f"pdf current col {rec.get('SLONGNAME')} {basis} ok={ok}/{n}: " + ", ".join(f"{x}={val(d, x, 0)}" for x in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat", "eps")))
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
+        fx = hist_batch(bse, code, name, basis, [q, q - 1, q - 2, q - 3, q - 4, q - 5])
         cur_bse = False   # BSE's own table for THIS quarter (if already published) independently confirms the PDF's current column
         try:
-            h0 = rf.fetch(bse, code, name, basis, q)
+            h0 = fx(q)
             if h0 and h0.get("revenue") is not None and h0.get("pat") is not None and cur["revenue"] is not None and cur["pat"] is not None:
                 cur_bse = close(cur["revenue"], h0["revenue"]) and abs(cur["pat"] - h0["pat"]) <= max(1.0, 0.03 * abs(h0["pat"]))
         except Exception:
@@ -216,7 +274,7 @@ def try_pdf(bse, rec, st, headline, filed):
         ok = ok or cur_bse
         hist, hpat, det, hs = {}, {}, [], {}
         for off, m in ((1, prev), (4, yago)):
-            h = rf.fetch(bse, code, name, basis, q - off)
+            h = fx(q - off)
             hs[off] = h
             det.append(f"q-{off}: pdf rev {m.get('revenue')} pat {m.get('pat')} | bse rev {h and h.get('revenue')} pat {h and h.get('pat')} (Rs mn)")
             if h and h.get("revenue") is not None and m["revenue"] is not None:
@@ -282,7 +340,7 @@ def try_pdf(bse, rec, st, headline, filed):
         quarters = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 1), "m": prev}, None, None, {"q": rf.qlabel(q - 4), "m": yago}]
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
         for j in (2, 3):
-            h = rf.fetch(bse, code, name, basis, q - j)
+            h = fx(q - j)
             quarters[j] = {"q": rf.qlabel(q - j), "m": h or empty}
         return {"basis": basis, "qcode": q, "quarters": quarters, "note": note, "inferred": q_head is None}
     return None
