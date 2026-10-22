@@ -56,6 +56,30 @@ def scan(bse, start, end):
         pg += 1
     return out
 
+EARLY_MAX_MIN = int(os.environ.get("EARLY_MAX_MIN", "30"))
+
+def scan_early(bse):
+    """Fresh 'Board Meeting' outcome rows of SME companies: the results PDF is often attached here minutes before the 'Result' row appears (newest first; stops at rows older than EARLY_MAX_MIN)."""
+    import results_poller as rp
+    codes = sme_codes(bse); out = []
+    now = datetime.now(IST).replace(tzinfo=None)
+    for pg in range(1, 16):
+        d = None
+        for t in range(2):
+            try: d = bse.announcements(page_no=pg, from_date=now, to_date=now, category="Board Meeting"); break
+            except Exception: time.sleep(2)
+        t_ = (d or {}).get("Table", [])
+        if not t_: break
+        old = 0
+        for r in t_:
+            try: age = (now - datetime.fromisoformat((r.get("NEWS_DT") or "")[:19])).total_seconds() / 60
+            except Exception: continue
+            if age > EARLY_MAX_MIN: old += 1; continue
+            if str(r.get("SCRIP_CD")).strip() in codes and rp.early_row(r):
+                r["_EARLY"] = True; out.append(r)
+        if old >= len(t_) // 2 + 1: break
+    return out
+
 def half_label(ql):
     try:
         d = datetime.strptime(ql, "%b-%y"); fy = d.year + (1 if d.month > 3 else 0)
@@ -64,7 +88,7 @@ def half_label(ql):
 
 def process(bse, r, st, final=False):
     nid, code, name = str(r["NEWSID"]), str(r["SCRIP_CD"]).strip(), (r.get("SLONGNAME") or str(r["SCRIP_CD"])).strip()
-    if TRY.get(nid, (0, 0))[0] >= 3 or time.time() - TRY.get(nid, (0, 0))[1] < 240: return "skip"
+    if TRY.get(nid, (0, 0))[0] >= 3 or time.time() - TRY.get(nid, (0, 0))[1] < (30 if r.get("_EARLY") else 240): return "skip"
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() + 19800))
     if st["use"].get(day, 0) >= DAILY_CAP: return "skip"
     TRY[nid] = (TRY.get(nid, (0, 0))[0] + 1, time.time())
@@ -74,12 +98,17 @@ def process(bse, r, st, final=False):
         except Exception: continue
         if rr.content[:4] == b"%PDF": content = rr.content; break
     if not content or len(content) > 15_000_000: p(f"  {name}: PDF not downloadable"); return "wait"
+    if r.get("_EARLY") and not pc.has_results_table(content): return "done"      # an outcome file with no results table: nothing to read
+    try:
+        if not ONLY and nse._already_posted(code, datetime.fromisoformat((r.get("NEWS_DT") or "")[:19])): return "done"      # this half is already posted: no second Gemini read
+    except Exception: pass
     st["use"][day] = st["use"].get(day, 0) + 1
     res, why = sh.read_half_card(content, pc.geminikey(), name)
     if res is None:
         if why.startswith("not a half-yearly") or why.startswith("half-year end month"):
             p(f"  {name}: {why} - left to the quarterly route"); return "done"
         p(f"  {name}: not postable - {why}")
+        if r.get("_EARLY"): return "done"      # the 'Result' row follows and gets its own read
         return "wait" if TRY[nid][0] < 3 else "done"
     ql = rf.qlabel(res["q"]); key = f"SME|{code}|{ql}|{res['basis']}"; bkey = f"{code}|{ql}|{res['basis']}"
     if (key in st["posted"] and not ONLY) or (bkey in nse._seen_posted() and not ONLY):      # a manual run (SME_ONLY) deliberately re-sends
@@ -130,6 +159,11 @@ def run_once(day=None, maxn=1):
                 _S["cands"] += [v for v in json.load(open("state/seen.json")).get("half_q", {}).values() if v.get("ATTACHMENTNAME") and v.get("NEWSID")]
             except Exception: pass
             p(f"SME result filings with PDF in window: {len(_S['cands'])}")
+        if not ONLY and not day:
+            try:
+                have = {str(r["NEWSID"]) for r in _S["cands"]}
+                _S["cands"] += [r for r in scan_early(b) if str(r["NEWSID"]) not in have]
+            except Exception as e: p("  SME early scan failed:", repr(e)[:80])
         n = 0
         for r in sorted(_S["cands"], key=lambda r: r.get("NEWS_DT", "")):
             if str(r["NEWSID"]) in st["done"] and not ONLY: continue
