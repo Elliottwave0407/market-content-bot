@@ -56,7 +56,7 @@ def fetch_day(day):
     ds = day.strftime("%d-%m-%Y")
     for k in range(3):
         try:
-            r = sess().get(f"https://www.nseindia.com/api/corporate-announcements?index=equities&from_date={ds}&to_date={ds}", headers={"Referer": REF}, timeout=40)
+            r = sess().get(f"https://www.nseindia.com/api/corporate-announcements?index=equities&from_date={ds}&to_date={ds}&_={int(time.time() * 1000)}", headers={"Referer": REF, "Cache-Control": "no-cache"}, timeout=40)      # the cache-busting parameter matters: plain calls were served from NSE's cache for up to a minute
             if r.status_code == 200:
                 return r.json() if r.text.strip() else []
             p("nse announcements HTTP", r.status_code)
