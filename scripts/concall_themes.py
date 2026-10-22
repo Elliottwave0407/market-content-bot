@@ -2,7 +2,7 @@
 filed on BSE, for the current results season versus the same days one quarter ago (91 days earlier) and one year ago (364 days earlier).
 Free: no Gemini, plain pattern counting. Posts nothing. Stores per-transcript counts in store/concall_themes/<YYYY-MM>.jsonl (not the full text for old seasons).
 Counts show how often a topic is discussed, NOT whether the tone is good or bad."""
-import os, sys, re, io, json, gzip, glob, traceback
+import os, sys, re, io, json, gzip, glob, time, traceback
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 import requests
@@ -77,28 +77,42 @@ def analyze(text, snip=False):
 
 def pdf_text(url):
     from pypdf import PdfReader
-    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=60)
-    if r.status_code != 200 or len(r.content) > 12_000_000:
-        return None
-    rd = PdfReader(io.BytesIO(r.content))
-    return " ".join((pg.extract_text() or "") for pg in rd.pages)
+    hdr = {"User-Agent": "Mozilla/5.0", "Referer": "https://www.bseindia.com/"}
+    urls = [url]
+    if "/AttachLive/" in url:
+        urls.append(url.replace("/AttachLive/", "/AttachHis/"))
+    for u in urls:
+        try:
+            r = requests.get(u, headers=hdr, timeout=60)
+            if r.status_code != 200 or len(r.content) < 2000 or len(r.content) > 12_000_000:
+                continue
+            rd = PdfReader(io.BytesIO(r.content))
+            return " ".join((pg.extract_text() or "") for pg in rd.pages)
+        except Exception:
+            continue
+    return None
 
 def find(d0, d1):
     rows = []
     d = datetime.fromisoformat(d0); end = datetime.fromisoformat(d1)
     while d <= end:
         if d.weekday() < 5:
-            try:
-                for x in rp._fetch_day(d):
-                    txt = " ".join(str(x.get(k) or "") for k in ("NEWSSUB", "HEADLINE", "MORE")).lower()
-                    sub = x.get("SUBCATNAME") or ""
-                    if not x.get("ATTACHMENTNAME"):
-                        continue
-                    is_tr = sub == "Earnings Call Transcript" or ("transcript" in txt and ("earnings" in txt or "conference call" in txt or "investor call" in txt))
-                    if is_tr and not any(w in txt for w in ("annual general", "agm", "webinar", "postal ballot")):
-                        rows.append(x)
-            except Exception as e:
-                p("fetch err", d.date(), repr(e)[:60])
+            day_rows, ok = [], False
+            for attempt in range(4):
+                try:
+                    day_rows = rp._fetch_day(d); ok = True; break
+                except Exception as e:
+                    if attempt == 3:
+                        p("fetch err (gave up)", d.date(), repr(e)[:60])
+                    time.sleep(4 * (attempt + 1))
+            for x in day_rows:
+                txt = " ".join(str(x.get(k) or "") for k in ("NEWSSUB", "HEADLINE", "MORE")).lower()
+                sub = x.get("SUBCATNAME") or ""
+                if not x.get("ATTACHMENTNAME"):
+                    continue
+                is_tr = sub == "Earnings Call Transcript" or ("transcript" in txt and ("earnings" in txt or "conference call" in txt or "investor call" in txt))
+                if is_tr and not any(w in txt for w in ("annual general", "agm", "webinar", "postal ballot")):
+                    rows.append(x)
         d += timedelta(days=1)
     seen, out = set(), []
     for x in rows:
@@ -179,6 +193,32 @@ def main():
         for r in got:
             recs[r["key"]] = r
         p(name, "analysed now:", len(got))
+        # transcripts already saved in store/concall_text (daily scan) that the day-by-day fetch missed
+        names = {}
+        for f in glob.glob(os.path.join(store.ROOT, "concall_filings", "*.jsonl")):
+            for ln in open(f, encoding="utf-8"):
+                try:
+                    r = json.loads(ln); names[r["key"]] = r.get("name") or ""
+                except Exception:
+                    pass
+        extra = 0
+        for f in glob.glob(os.path.join(store.ROOT, "concall_text", "*.txt.gz")):
+            stem = os.path.basename(f)[:-7]
+            code, _, day = stem.partition("_")
+            key = f"{code}|{day}"
+            if key in recs and ("s" in recs[key] or name != "CUR" or recs[key].get("skip")):
+                continue
+            if not (a <= day <= wins[name][1]):
+                continue
+            try:
+                w, c, s = analyze(gzip.open(f, "rt", errors="ignore").read(), snip=(name == "CUR"))
+                rec = {"key": key, "code": code, "name": names.get(key, code), "day": day, "words": w, "c": c if w >= MIN_WORDS else {}}
+                if name == "CUR": rec["s"] = s
+                if w < MIN_WORDS: rec["skip"] = "short"
+                recs[key] = rec; extra += 1
+            except Exception:
+                pass
+        p(name, "added from stored text:", extra)
     save_all(recs)
     W = {n: window(recs, a, b) for n, (a, b) in wins.items()}
     S = {n: stats(rs) for n, rs in W.items()}
