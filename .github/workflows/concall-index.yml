@@ -8,6 +8,12 @@ on:
       cur_to:
         description: "Current window end (blank = today)"
         default: ""
+      hist_from:
+        description: "Backfill mode: first day to fetch and count (blank = normal report run)"
+        default: ""
+      hist_to:
+        description: "Backfill mode: last day"
+        default: ""
 concurrency:
   group: concall-index
   cancel-in-progress: false
@@ -16,7 +22,7 @@ permissions:
 jobs:
   index:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,6 +32,8 @@ jobs:
       - env:
           CUR_FROM: ${{ github.event.inputs.cur_from }}
           CUR_TO: ${{ github.event.inputs.cur_to }}
+          HIST_FROM: ${{ github.event.inputs.hist_from }}
+          HIST_TO: ${{ github.event.inputs.hist_to }}
         run: python scripts/concall_themes.py
       - name: Save theme counts to the store
         if: always()
@@ -34,4 +42,4 @@ jobs:
           git add store/concall_themes 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "Concall theme counts"
-          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && break; sleep 3; done
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done

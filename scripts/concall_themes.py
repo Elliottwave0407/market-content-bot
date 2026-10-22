@@ -196,7 +196,10 @@ def stats(rs):
     return out
 
 def main():
+    H0 = os.environ.get("HIST_FROM", "").strip(); H1 = os.environ.get("HIST_TO", "").strip()
     wins = {"CUR": (CUR0, CUR1), "PREV": (shift(CUR0, 91), shift(CUR1, 91)), "YOY": (shift(CUR0, 364), shift(CUR1, 364))}
+    if H0:   # backfill mode: just fetch + count one date range, no report
+        wins = {"H": (H0, H1 or CUR1)}
     recs = load_all()
     p("windows:", wins, "| stored transcripts before run:", len(recs))
     for name, (a, b) in wins.items():
@@ -238,6 +241,9 @@ def main():
                 pass
         p(name, "added from stored text:", extra)
     save_all(recs)
+    if H0:
+        p("backfill done:", wins["H"], "| total stored transcripts now:", len(recs), "| with text >= %d words:" % MIN_WORDS, sum(1 for r in recs.values() if r.get("words", 0) >= MIN_WORDS))
+        return
     W = {n: window(recs, a, b) for n, (a, b) in wins.items()}
     S = {n: stats(rs) for n, rs in W.items()}
     for n, rs in W.items():
