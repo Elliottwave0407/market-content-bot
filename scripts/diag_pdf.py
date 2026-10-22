@@ -12,7 +12,8 @@ try:
         rows = []
         for t in range(4):
             try: rows = b.announcements(scripcode=code, from_date=since, to_date=datetime.now(), category="Result").get("Table", []); break
-            except Exception: time.sleep(5)
+            except Exception as e: p('list err', repr(e)[:200]); time.sleep(5)
+        p('rows', len(rows))
         rows = [r for r in rows if r.get("ATTACHMENTNAME")]
         r = sorted(rows, key=lambda r: r.get("NEWS_DT", ""))[-1]
         p(r.get("SLONGNAME"), r.get("NEWS_DT"), r.get("ATTACHMENTNAME"))
