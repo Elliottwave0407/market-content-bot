@@ -62,8 +62,22 @@ THEMES = {
     "Quick commerce": _t(r"quick commerce|q-?commerce|\bblinkit\b|\bzepto\b|\binstamart\b"),
 }
 
-def analyze(text, snip=False):
+V = 2   # analyser version: 2 = cover letter cut off, company's own name words removed
+
+_NAME_SKIP = {"limited", "india", "indian", "industries", "private", "corporation", "company", "services", "group", "global", "international", "holdings", "enterprises", "technologies", "systems"}
+
+def clean(text, name=""):
     t = re.sub(r"\s+", " ", text)
+    m = re.search(r"good (?:morning|afternoon|evening)|ladies and gentlemen|welcome to the", t[:30000], re.I)
+    if m:
+        t = t[m.start():]
+    for w in re.findall(r"[A-Za-z0-9&]+", name or ""):
+        if len(w) >= 5 and w.lower() not in _NAME_SKIP:
+            t = re.sub(r"\b" + re.escape(w) + r"\b", " ", t, flags=re.I)
+    return t
+
+def analyze(text, snip=False, name=""):
+    t = clean(text, name)
     words = len(t.split())
     c, s = {}, {}
     for k, rx in THEMES.items():
@@ -134,10 +148,11 @@ def one(job):
         txt = load_text(code, day, x)
         if not txt:
             return None
-        words, c, s = analyze(txt, snip=keep_snip)
+        nm = (x.get("SLONGNAME") or "").strip()
+        words, c, s = analyze(txt, snip=keep_snip, name=nm)
         if words < MIN_WORDS:
-            return {"key": f"{code}|{day}", "code": code, "name": (x.get("SLONGNAME") or "").strip(), "day": day, "words": words, "c": {}, "skip": "short"}
-        rec = {"key": f"{code}|{day}", "code": code, "name": (x.get("SLONGNAME") or "").strip(), "day": day, "words": words, "c": c}
+            return {"key": f"{code}|{day}", "code": code, "name": nm, "day": day, "words": words, "c": {}, "skip": "short", "v": V}
+        rec = {"key": f"{code}|{day}", "code": code, "name": nm, "day": day, "words": words, "c": c, "v": V}
         if keep_snip:
             rec["s"] = s
         return rec
@@ -186,7 +201,10 @@ def main():
     p("windows:", wins, "| stored transcripts before run:", len(recs))
     for name, (a, b) in wins.items():
         rows = find(a, b)
-        todo = [(x, name == "CUR") for x in rows if f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}" not in recs or (name == "CUR" and "s" not in recs.get(f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}", {}) and not recs.get(f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}", {}).get("skip"))]
+        def need(x):
+            r = recs.get(f"{str(x.get('SCRIP_CD')).strip()}|{(x.get('NEWS_DT') or '')[:10]}")
+            return r is None or r.get("v") != V or (name == "CUR" and not r.get("skip") and "s" not in r)
+        todo = [(x, name == "CUR") for x in rows if need(x)]
         p(name, a, "to", b, "| transcript filings found:", len(rows), "| to analyse:", len(todo))
         with ThreadPoolExecutor(6) as ex:
             got = [r for r in ex.map(one, todo) if r]
@@ -206,13 +224,13 @@ def main():
             stem = os.path.basename(f)[:-7]
             code, _, day = stem.partition("_")
             key = f"{code}|{day}"
-            if key in recs and ("s" in recs[key] or name != "CUR" or recs[key].get("skip")):
+            if key in recs and recs[key].get("v") == V and ("s" in recs[key] or name != "CUR" or recs[key].get("skip")):
                 continue
             if not (a <= day <= wins[name][1]):
                 continue
             try:
-                w, c, s = analyze(gzip.open(f, "rt", errors="ignore").read(), snip=(name == "CUR"))
-                rec = {"key": key, "code": code, "name": names.get(key, code), "day": day, "words": w, "c": c if w >= MIN_WORDS else {}}
+                w, c, s = analyze(gzip.open(f, "rt", errors="ignore").read(), snip=(name == "CUR"), name=names.get(key, ""))
+                rec = {"key": key, "code": code, "name": names.get(key, code), "day": day, "words": w, "c": c if w >= MIN_WORDS else {}, "v": V}
                 if name == "CUR": rec["s"] = s
                 if w < MIN_WORDS: rec["skip"] = "short"
                 recs[key] = rec; extra += 1
@@ -240,22 +258,22 @@ def main():
                          "now_per100k": round(a["per100k"], 1), "x_q": round(xq, 2) if xq else None, "x_y": round(xy, 2) if xy else None, "n_now": a["n"]})
         p(f"{k} | {a['pct']:.0f}% / {b['pct']:.0f}% / {c['pct']:.0f}% | {a['per100k']:.1f} | {('%.1fx' % xq) if xq else 'new' if a['per100k']>0 else '-'} | {('%.1fx' % xy) if xy else 'new' if a['per100k']>0 else '-'}")
     p("")
-    p("RISERS (at least 4 calls now, mentions per 100k words up 1.5x or more vs a quarter ago):")
-    risers = [r for r in rows_out if r["n_now"] >= 4 and (r["x_q"] is None and r["now_per100k"] > 0 or (r["x_q"] and r["x_q"] >= 1.5))]
-    risers.sort(key=lambda r: -(r["x_q"] or 9.99))
-    for r in risers[:8]:
+    p("RISERS vs the SAME season last year (at least 4 calls now, mentions per 100k words up 1.5x or more; same-season comparison removes Diwali-type seasonality):")
+    risers = [r for r in rows_out if r["n_now"] >= 4 and (r["x_y"] is None and r["now_per100k"] > 0 or (r["x_y"] and r["x_y"] >= 1.5))]
+    risers.sort(key=lambda r: -(r["x_y"] or 9.99))
+    for r in risers[:10]:
         k = r["theme"]
         top = sorted(W["CUR"], key=lambda z: -z["c"].get(k, 0))[:3]
-        p(f"* {k}: {r['now_pct']}% of calls now vs {r['q_pct']}% a quarter ago; top: " + ", ".join(f"{z['name']} ({z['c'].get(k,0)}x)" for z in top))
+        p(f"* {k}: {r['now_pct']}% of calls now vs {r['y_pct']}% a year ago ({r['x_y']}x), {r['q_pct']}% a quarter ago; top: " + ", ".join(f"{z['name']} ({z['c'].get(k,0)}x)" for z in top))
         z = top[0]
         sn = (z.get("s") or {}).get(k)
         if sn:
             p(f'    e.g. {z["name"]}: "...{sn}..."')
     p("")
-    p("FALLERS (at least 4 calls a quarter ago, down to 0.6x or less):")
-    fall = [r for r in rows_out if r["x_q"] and r["x_q"] <= 0.6 and prev[r["theme"]]["n"] >= 4]
-    for r in sorted(fall, key=lambda r: r["x_q"])[:6]:
-        p(f"* {r['theme']}: {r['now_pct']}% now vs {r['q_pct']}% a quarter ago ({r['x_q']}x)")
+    p("FALLERS vs the same season last year (at least 4 calls a year ago, down to 0.6x or less):")
+    fall = [r for r in rows_out if r["x_y"] and r["x_y"] <= 0.6 and yoy[r["theme"]]["n"] >= 4]
+    for r in sorted(fall, key=lambda r: r["x_y"])[:8]:
+        p(f"* {r['theme']}: {r['now_pct']}% now vs {r['y_pct']}% a year ago ({r['x_y']}x), {r['q_pct']}% a quarter ago")
     p("")
     p("CAVEATS: counts show how often a topic is discussed, not tone. Early-season calls are not the same company mix as a quarter or year ago. Image-only or short PDFs are skipped.")
     os.makedirs("out", exist_ok=True)
