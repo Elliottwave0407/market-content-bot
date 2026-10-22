@@ -11,7 +11,7 @@ try:
     with BSE(download_folder=tempfile.mkdtemp()) as b:
         rows = []
         for t in range(4):
-            try: rows = b.announcements(scripcode=code, from_date=since, to_date=datetime.now()).get("Table", []); break
+            try: rows = b.announcements(page_no=1, scripcode=code, from_date=since, to_date=datetime.now()).get("Table", []); break
             except Exception as e: p('list err', repr(e)[:200]); time.sleep(5)
         p('rows', len(rows))
         rows = [r for r in rows if r.get("ATTACHMENTNAME") and "result" in (str(r.get("HEADLINE",""))+str(r.get("CATEGORYNAME",""))+str(r.get("SUBCATNAME",""))).lower()]
