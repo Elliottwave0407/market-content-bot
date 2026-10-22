@@ -115,6 +115,21 @@ def results_thread(end):
             time.sleep(10)
     COUNT["n"] = n
 
+def route_thread(name, mod, end, interval):
+    """SME and bank/insurer result routes: each in its own thread so nothing else in the poller can delay them."""
+    while time.time() < end:
+        t0 = time.time()
+        try:
+            ch, lines = mod.tick()
+            if lines:
+                KEEP.extend([f"[{name} {time.strftime('%H:%M:%S')}] "] + list(lines))
+            if ch:
+                commit_state()
+        except Exception as e:
+            KEEP.append(f"{name} tick error: " + rp.redact(repr(e))[:200])
+        del KEEP[:-150]
+        time.sleep(max(1, interval - (time.time() - t0)))
+
 def main():
     git("config", "user.name", "market-content-bot")
     git("config", "user.email", "bot@users.noreply.github.com")
@@ -124,6 +139,9 @@ def main():
     keep, n = KEEP, 0
     rt = threading.Thread(target=results_thread, args=(end,), daemon=True)
     rt.start()
+    for _nm, _md in (('sme', sme), ('fin', fin), ('nse', nse)):
+        if _md is not None:
+            threading.Thread(target=route_thread, args=(_nm, _md, end, RES_INTERVAL + 5), daemon=True).start()
     news_dirty, last_news_commit = False, 0.0
     known = set()
     while time.time() < end:
@@ -160,33 +178,6 @@ def main():
                                 news_dirty, last_news_commit = False, time.time()
                         except Exception as e:
                             keep.append("news tick error: " + rp.redact(repr(e))[:200])
-                    if nse is not None:
-                        try:
-                            schanged, slines = nse.tick()
-                            if slines:
-                                keep += [f"[nse {time.strftime('%H:%M:%S')}] "] + slines
-                            if schanged:
-                                commit_state()
-                        except Exception as e:
-                            keep.append("nse tick error: " + rp.redact(repr(e))[:200])
-                    if sme is not None:
-                        try:
-                            mchanged2, mlines2 = sme.tick()
-                            if mlines2:
-                                keep += [f"[sme {time.strftime('%H:%M:%S')}] "] + mlines2
-                            if mchanged2:
-                                commit_state()
-                        except Exception as e:
-                            keep.append("sme tick error: " + rp.redact(repr(e))[:200])
-                    if fin is not None:
-                        try:
-                            fch, flines = fin.tick()
-                            if flines:
-                                keep += [f"[fin {time.strftime('%H:%M:%S')}] "] + flines
-                            if fch:
-                                commit_state()
-                        except Exception as e:
-                            keep.append("fin tick error: " + rp.redact(repr(e))[:200])
                     del keep[:-150]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:
