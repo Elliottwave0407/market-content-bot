@@ -204,7 +204,7 @@ def run_once(day=None, maxn=1):
     n = 0
     for x in _S["rows"]:
         sym = x["symbol"].upper(); sid = str(x.get("seq_id"))
-        if sid in st["done"]: continue
+        if sid in st["done"] and not os.environ.get("FIN_FORCE_PDF"): continue
         if TRY.get(sid, (0, 0))[0] >= 120 or time.time() - TRY.get(sid, (0, 0))[1] < int(os.environ.get("FIN_RETRY_S", "45")): continue
         TRY[sid] = (TRY.get(sid, (0, 0))[0] + 1, time.time())
         name = (x.get("sm_name") or sym).strip()
