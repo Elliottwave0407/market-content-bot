@@ -11,10 +11,10 @@ try:
     with BSE(download_folder=tempfile.mkdtemp()) as b:
         rows = []
         for t in range(4):
-            try: rows = b.announcements(scripcode=code, from_date=since, to_date=datetime.now(), category="Result").get("Table", []); break
+            try: rows = b.announcements(scripcode=code, from_date=since, to_date=datetime.now()).get("Table", []); break
             except Exception as e: p('list err', repr(e)[:200]); time.sleep(5)
         p('rows', len(rows))
-        rows = [r for r in rows if r.get("ATTACHMENTNAME")]
+        rows = [r for r in rows if r.get("ATTACHMENTNAME") and "result" in (str(r.get("HEADLINE",""))+str(r.get("CATEGORYNAME",""))+str(r.get("SUBCATNAME",""))).lower()]
         r = sorted(rows, key=lambda r: r.get("NEWS_DT", ""))[-1]
         p(r.get("SLONGNAME"), r.get("NEWS_DT"), r.get("ATTACHMENTNAME"))
         for folder in ("AttachLive", "AttachHis"):
