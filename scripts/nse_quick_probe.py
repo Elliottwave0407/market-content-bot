@@ -1,29 +1,20 @@
-"""Read-only: which NSE endpoints carry Havells' numbers right at filing time? Prints keys and the Havells row."""
+"""Read-only: NSE results-comparision (structured re_* fields): does it carry the newest quarter, and when was it created?"""
 import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__))
 from ci_out import p, publish
 import nse_results as nr
-from datetime import datetime, timedelta, timezone
-IST = timezone(timedelta(hours=5, minutes=30))
-d = datetime.now(IST).strftime("%d-%m-%Y")
-urls = [
- f"https://www.nseindia.com/api/corporates-financial-results?index=equities&from_date={d}&to_date={d}&period=Quarterly",
- f"https://www.nseindia.com/api/corporates-financial-results?index=equities&period=Quarterly",
- f"https://www.nseindia.com/api/corporates-financial-results?index=equities&symbol=HAVELLS&period=Quarterly",
- f"https://www.nseindia.com/api/results-comparision?symbol=HAVELLS",
- f"https://www.nseindia.com/api/corporate-announcements?index=equities&symbol=HAVELLS",
-]
-for u in urls:
-    try:
-        r = nr.sess().get(u, headers={"Referer": "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"}, timeout=40)
-        p("URL", u.split("api/")[1][:90], r.status_code, len(r.text))
-        if r.status_code != 200 or not r.text.strip(): continue
+REF = "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"
+SHOW = ("re_from_dt","re_to_dt","re_create_dt","re_net_sale","re_oth_inc","re_tot_inc","re_tot_exp","re_pro_loss_bef_tax","re_curr_tax","re_deff_tax","re_net_profit","re_con_pro_loss","re_basic_eps","re_depr_und_exp","re_int_new","re_excepn_items_new","re_audited","re_con_nonco","re_desc","re_seq_num","re_res_type","re_period")
+try:
+    for sym in ("HAVELLS", "NAM-INDIA", "TINNARUBR", "CHENNPETRO"):
+        r = nr.sess().get(f"https://www.nseindia.com/api/results-comparision?symbol={sym}", headers={"Referer": REF}, timeout=40)
         j = r.json()
-        rows = j if isinstance(j, list) else (j.get("data") or j.get("resCmpData") or [j])
-        p("  rows", len(rows), "keys", sorted(rows[0].keys())[:40] if rows and isinstance(rows[0], dict) else str(j)[:200])
-        for x in rows:
-            if isinstance(x, dict) and "HAVELLS" in json.dumps(x).upper()[:600]:
-                p("  HAVELLS:", json.dumps(x)[:1500]); break
-    except Exception as e:
-        p("ERR", u[:80], repr(e)[:120])
+        rows = j if isinstance(j, list) else (j.get("resCmpData") or j.get("data") or [])
+        p(sym, r.status_code, "rows", len(rows), "top-level keys", list(j.keys())[:10] if isinstance(j, dict) else "list")
+        for x in rows[:4]:
+            p("  ", json.dumps({k: x.get(k) for k in SHOW if k in x}))
+        if sym == "HAVELLS" and rows:
+            p("  all keys", sorted(rows[0].keys()))
+except Exception as e:
+    import traceback; p("ERROR", repr(e), traceback.format_exc()[-600:])
 publish()
