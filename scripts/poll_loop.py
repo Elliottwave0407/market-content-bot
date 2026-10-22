@@ -13,6 +13,7 @@ except Exception as _e:
 
 LOOP_MIN = float(os.environ.get("POLL_LOOP_MINUTES", "345"))
 INTERVAL = int(os.environ.get("POLL_INTERVAL", "10"))
+RES_INTERVAL = int(os.environ.get("RESULTS_INTERVAL", "3"))
 try:
     import news_posts as npst
     npst.SEND = os.environ.get('POLL_SEND', '0') == '1'
@@ -46,7 +47,15 @@ from bse import BSE
 def git(*a):
     return subprocess.run(["git", *a], capture_output=True, text=True)
 
+import threading
+GIT_LOCK = threading.Lock()
+KEEP, COUNT = [], {"n": 0, "sent": 0}
+
 def commit_state():
+    with GIT_LOCK:
+        _commit_state()
+
+def _commit_state():
     git("add", "state", "feedback", "store")
     if git("diff", "--cached", "--quiet").returncode != 0:
         git("commit", "-q", "-m", "Poller state")
@@ -70,16 +79,10 @@ def xb_thread(end):
             XB_LINES.append("x-button error: " + rp.redact(repr(e))[:200])
         time.sleep(2)
 
-def main():
-    git("config", "user.name", "market-content-bot")
-    git("config", "user.email", "bot@users.noreply.github.com")
-    end = time.time() + LOOP_MIN * 60
-    if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
-        import threading
-        threading.Thread(target=xb_thread, args=(end,), daemon=True).start()
-    keep, n, sent = [], 0, 0
-    news_dirty, last_news_commit = False, 0.0
+def results_thread(end):
+    """BSE results get their own loop and their own BSE session, so market/news/NSE/SME/bank ticks can never slow a result card down."""
     known = set()
+    n = 0
     while time.time() < end:
         try:
             with BSE(download_folder="./") as bse:      # fresh session every 60 polls
@@ -97,10 +100,40 @@ def main():
                         posted = -1
                     interesting = any(not x.startswith(("mode=", "done:")) for x in ci_out.OUT)
                     if posted != 0 or interesting:
-                        sent += max(posted, 0)
-                        keep += [f"[poll {n} {time.strftime('%H:%M:%S')}] "] + ci_out.OUT
+                        COUNT["sent"] += max(posted, 0)
+                        KEEP.extend([f"[poll {n} {time.strftime('%H:%M:%S')}] "] + list(ci_out.OUT))
                         if posted > 0:
                             commit_state()
+                    LOOPT.append(time.time() - t0)
+                    if len(LOOPT) >= 40:
+                        KEEP.append(f"[loop] results: last 40 passes avg {sum(LOOPT)/len(LOOPT):.0f}s, max {max(LOOPT):.0f}s per pass")
+                        LOOPT.clear()
+                    del KEEP[:-150]
+                    time.sleep(max(1, RES_INTERVAL - (time.time() - t0)))
+        except Exception as e:
+            KEEP.append("results session error: " + rp.redact(repr(e))[:200])
+            time.sleep(10)
+    COUNT["n"] = n
+
+def main():
+    git("config", "user.name", "market-content-bot")
+    git("config", "user.email", "bot@users.noreply.github.com")
+    end = time.time() + LOOP_MIN * 60
+    if xb is not None and os.environ.get('POLL_SEND', '0') == '1':
+        threading.Thread(target=xb_thread, args=(end,), daemon=True).start()
+    keep, n = KEEP, 0
+    rt = threading.Thread(target=results_thread, args=(end,), daemon=True)
+    rt.start()
+    news_dirty, last_news_commit = False, 0.0
+    known = set()
+    while time.time() < end:
+        try:
+            with BSE(download_folder="./") as bse:      # fresh session every 60 polls
+                for _ in range(60):
+                    if time.time() >= end:
+                        break
+                    n += 1
+                    t0 = time.time()
                     if mp is not None:
                         try:
                             mchanged, mlines = mp.tick()
@@ -154,17 +187,14 @@ def main():
                                 commit_state()
                         except Exception as e:
                             keep.append("fin tick error: " + rp.redact(repr(e))[:200])
-                    LOOPT.append(time.time() - t0)
-                    if len(LOOPT) >= 40:
-                        keep.append(f"[loop] last 40 passes: avg {sum(LOOPT)/len(LOOPT):.0f}s, max {max(LOOPT):.0f}s per pass (the BSE results feed is read once per pass)")
-                        LOOPT.clear()
-                    keep = keep[-150:]
+                    del keep[:-150]
                     time.sleep(max(1, INTERVAL - (time.time() - t0)))
         except Exception as e:
             keep.append("session error: " + rp.redact(repr(e))[:200])
             time.sleep(15)
+    rt.join(timeout=60)
     commit_state()
-    ci_out.OUT[:] = [f"loop finished: {n} polls, {sent} posted"] + keep
+    ci_out.OUT[:] = [f"loop finished: {n} side polls, {COUNT['n']} results polls, {COUNT['sent']} posted"] + keep
     ci_out.publish()
 
 main()
