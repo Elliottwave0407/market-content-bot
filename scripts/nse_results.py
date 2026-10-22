@@ -291,14 +291,30 @@ def process(x, st, final, maps=None):
         return "skip"
     TRY_AT[sid] = time.time()
     TRIES[sid] = TRIES.get(sid, 0) + 1
+    t_start = time.time()
+    content, status = b"", None
+    for att in range(4):      # NSE's CDN sometimes answers 200 with an empty body right after a filing: retry quickly, with a cache-busting parameter
+        try:
+            u = x["attchmntFile"] + ("" if att == 0 else f"?cb={int(time.time() * 1000)}")
+            r = sess().get(u, headers={"Referer": REF}, timeout=60)
+            status, content = r.status_code, r.content
+        except Exception as e:
+            p(f"  {sym}: download error {repr(e)[:60]}")
+            content = b""
+        if content[:4] == b"%PDF":
+            break
+        time.sleep(1.5)
     try:
-        r = sess().get(x["attchmntFile"], headers={"Referer": REF}, timeout=60)
-    except Exception as e:
-        p(f"  {sym}: download error {repr(e)[:60]}")
+        import store
+        store.put("nse_trace", f"{sid}", {"symbol": sym, "an_dt": x.get("an_dt"), "seen_at": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t_start + 19800)), "http": status, "bytes": len(content), "dl_secs": round(time.time() - t_start, 1), "pdf": content[:4] == b"%PDF"})
+    except Exception:
+        pass
+    if content[:4] != b"%PDF" or len(content) > 15_000_000:
+        p(f"  {sym}: file is not a readable PDF ({status}, {len(content)} bytes)")
+        TRY_AT[sid] = time.time() - 200      # try again in ~40 s
         return "wait"
-    if r.content[:4] != b"%PDF" or len(r.content) > 15_000_000:
-        p(f"  {sym}: file is not a readable PDF ({r.status_code}, {len(r.content)} bytes)")
-        return "wait"
+    class _R: pass
+    r = _R(); r.content = content
     code = bse_code(x, maps) if maps else None
     if code:
         from bse import BSE
