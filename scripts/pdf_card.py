@@ -91,7 +91,21 @@ def trim_pdf(content):
     except Exception:
         return content
 
+EARLY_DEAD = set()      # early 'Board Meeting' rows whose PDF has no results table (nothing to read)
 PREREAD = {}      # nid -> result of the download+Gemini stage, prepared in parallel threads by prefetch()
+
+def has_results_table(content):
+    """Free local check (no Gemini): does any page carry a results statement? Scanned files without a text layer say no."""
+    try:
+        import fitz
+        d = fitz.open(stream=content, filetype="pdf")
+        for i in range(d.page_count):
+            t = d[i].get_text().lower()
+            if sum(k in t for k in KEYS) >= 2:
+                return True
+    except Exception:
+        return True
+    return False
 
 def _read_stage(rec, st, headline, filed):
     """Download the filing PDF and read it with Gemini. -> (out, q_head) or None (gated / failed). Thread-safe enough: only dict and counter updates."""
@@ -100,7 +114,7 @@ def _read_stage(rec, st, headline, filed):
     nid = rec["NEWSID"]
     if not key or not att or os.environ.get("PDF_FAST", "1") != "1":
         return None
-    if TRIES.get(nid, 0) >= 8 or time.time() < STATE_["backoff"] or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < 240:
+    if TRIES.get(nid, 0) >= 8 or time.time() < STATE_["backoff"] or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
         return None
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
@@ -119,6 +133,9 @@ def _read_stage(rec, st, headline, filed):
             content = r.content
             break
     if not content or len(content) > 15_000_000:
+        return None
+    if rec.get("_EARLY") and not has_results_table(content):
+        EARLY_DEAD.add(nid)
         return None
     STATE_["calls"] += 1
     use[day] = use.get(day, 0) + 1

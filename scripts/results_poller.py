@@ -79,6 +79,25 @@ def link(rec):
     a = rec.get("ATTACHMENTNAME")
     return f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{a}" if a else rec.get("NSURL", "")
 
+EARLY_OK = re.compile(r"outcome|financial results|results for|unaudited|audited", re.I)
+EARLY_NO = re.compile(r"intimation|prior intimation|notice of|trading window|schedule of|postponement|clarification|newspaper|earnings call|conference call|investor meet|analyst", re.I)
+EARLY_MAX_MIN = int(os.environ.get("EARLY_MAX_MIN", "30"))
+
+def early_row(r):
+    """The first filing that carries the numbers is often a 'Board Meeting' outcome row (minutes before the 'Result' row appears). Fresh ones only."""
+    try:
+        if r.get("CATEGORYNAME") != "Board Meeting" or not r.get("ATTACHMENTNAME"):
+            return False
+        t = (r.get("NEWSSUB") or "") + " " + (r.get("HEADLINE") or "")
+        if not EARLY_OK.search(t) or EARLY_NO.search(t):
+            return False
+        from datetime import timezone
+        now_ist = datetime.now(timezone(timedelta(hours=5, minutes=30))).replace(tzinfo=None)      # the runner clock is UTC, BSE stamps are IST
+        age = (now_ist - datetime.fromisoformat((r.get("NEWS_DT") or "")[:19])).total_seconds() / 60
+        return -2 <= age <= EARLY_MAX_MIN
+    except Exception:
+        return False
+
 def fetch_filings(bse, known=None, fast=False):
     """Result filings. known: set of every NEWSID seen so far (updated here).
     fast=True: only the newest page(s) of today, stopping once an already-seen item appears."""
@@ -94,7 +113,12 @@ def fetch_filings(bse, known=None, fast=False):
             if not t:
                 break
             total_seen += len(t)
-            rows += [r for r in t if r.get("CATEGORYNAME") == "Result"]
+            for r_ in t:
+                if r_.get("CATEGORYNAME") == "Result":
+                    rows.append(r_)
+                elif early_row(r_):
+                    r_["_EARLY"] = True
+                    rows.append(r_)
             if known is not None:
                 known.update(r["NEWSID"] for r in t)
             if fast and any(r["NEWSID"] in prior for r in t):
@@ -131,6 +155,8 @@ def build(bse, rec, final=False, age_min=0):
     filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
     lk = link(rec)
     pc = pdf_card.try_pdf(bse, rec, _ST, headline, filed) if _ST is not None else None
+    if pc is None and rec.get("_EARLY"):
+        return ("early_skip", "", None, "")      # an early 'Board Meeting' row is used only when its PDF reads cleanly; otherwise the 'Result' row follows
     if pc:
         basis, q, quarters = pc["basis"], pc["qcode"], pc["quarters"]
         ql = rf.qlabel(q)
@@ -292,6 +318,10 @@ def main(bse_in=None, known=None, fast=False):
                 p(f"ERROR {rec.get('SLONGNAME')}: {redact(repr(e))[:200]}")
                 continue
             kind, text, png, key = out
+            if kind == "early_skip":
+                if nid in pdf_card.EARLY_DEAD or pdf_card.TRIES.get(nid, 0) >= 8:
+                    st["ids"].append(nid)
+                continue
             if kind == "wait":
                 if nid not in pend:
                     p(f"[wait] {rec.get('SLONGNAME')} ({key}) - BSE numbers not published yet, will retry")
