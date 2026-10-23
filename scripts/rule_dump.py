@@ -32,7 +32,7 @@ def main():
             low = txt.lower()
             if sum(x in low for x in rr.KEYS) < 2: continue
             p("-- page", pno + 1)
-            for r in rws[:60]:
+            for r in rws[:75]:
                 lb, nums = rr.split_row(r)
                 p("  ", lb[:60], "||", nums[:8])
             shown += 1
