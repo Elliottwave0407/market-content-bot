@@ -75,7 +75,7 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
     if len(re.sub(r"\W", "", txt)) < 400:
         return None, "nim: no text layer (scanned)"
     msg = (prompt or gr.PROMPT) + "\n\nThe filing text follows (tables are shown with | between cells).\n\n" + txt
-    last = None
+    last, allr = None, []
     for m in MODELS:
         extra = {"thinking": False} if "deepseek" in m else {"enable_thinking": False}
         try:
@@ -86,14 +86,14 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
         if r.status_code == 429:
             DOWN["until"] = time.time() + 60; last = "nim: 429"; continue
         if r.status_code != 200:
-            last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; continue
+            last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; allr.append(last); continue
         try:
             s = re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"].get("content") or "", flags=re.S)
             j = gr._clean(json.loads(re.search(r"\{.*\}", s, re.S).group(0)))
         except Exception as e:
-            last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"; continue
+            last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"; allr.append(last); continue
         bad = unsupported(j, txt)
         if bad:
-            last = f"nim {m.split('/')[-1]}: {bad} numbers not found in the filing text (possible invention): rejected e.g. {BADL[:5]}"; continue
+            last = f"nim {m.split('/')[-1]}: {bad} numbers not found in the filing text (possible invention): rejected e.g. {BADL[:5]}"; allr.append(last[:110]); continue
         return j, None
-    return None, last
+    return None, (" | ".join(allr) if allr else last)

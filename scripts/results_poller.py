@@ -310,7 +310,7 @@ def main(bse_in=None, known=None, fast=False):
                 import fin_results as _fr
                 return _fr.is_fin_code(r_.get("SCRIP_CD")) and (datetime.now() - datetime.fromisoformat((r_.get("NEWS_DT") or "")[:19])).total_seconds() / 3600 < _fr.YIELD_H
             _batch = []
-            for r_ in new + retry:
+            for r_ in sorted(new + retry, key=lambda x_: -pdf_card.mcap_of(x_.get("SCRIP_CD"))):
                 try:
                     if not _skip_fin(r_): _batch.append(r_)
                 except Exception:
@@ -318,7 +318,7 @@ def main(bse_in=None, known=None, fast=False):
             pdf_card.prefetch(_batch[:12], st)
         except Exception as e:
             p(f"prefetch skipped: {redact(repr(e))[:100]}")
-        for rec in new + retry:
+        for rec in sorted(new + retry, key=lambda x_: -pdf_card.mcap_of(x_.get("SCRIP_CD"))):      # biggest companies first
             nid = rec["NEWSID"]
             try:      # banks/insurers: the NSE XBRL route (fin_results) posts them; this route only steps in after YIELD_H hours
                 import fin_results as _fr

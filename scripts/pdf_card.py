@@ -1,5 +1,5 @@
 """Fast path: read the filing PDF with Gemini, verify it, return card data. Returns None whenever anything is doubtful."""
-import os, re, time
+import os, re, time, json
 from datetime import datetime, timedelta
 import requests
 import results_fetcher as rf
@@ -13,6 +13,17 @@ K = {"lakh": 0.1, "lakhs": 0.1, "lac": 0.1, "lacs": 0.1, "crore": 10.0, "crores"
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
 TRIES, STATE_, LAST_TRY = {}, {"backoff": 0.0, "calls": 0}, {}
 LOG = []
+
+_MCC = {}
+def mcap_of(code):
+    """Market cap in Rs Cr from the cache (0 if unknown): used to read big companies' results first."""
+    try:
+        if not _MCC:
+            _MCC.update(json.load(open("state/mcap_cache.json")))
+        v = _MCC.get(str(code))
+        return float(v[0]) if v else 0.0
+    except Exception:
+        return 0.0
 
 def new_poll():
     STATE_["calls"] = 0
@@ -136,6 +147,8 @@ def _read_stage(rec, st, headline, filed):
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
     gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
+    if not gem_blocked and use.get(day, 0) >= 0.8 * DAILY_CAP and mcap_of(rec.get("SCRIP_CD")) < 300:
+        gem_blocked = True      # the last fifth of the daily Gemini allowance is kept for companies that matter; micro-caps use the rule / NVIDIA readers or wait
     if TRIES.get(nid, 0) >= 8 or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
         return None
     q_head = rf.expected_quarter(headline, filed)
