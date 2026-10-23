@@ -63,11 +63,13 @@ def main():
         p("filings with pdf:", len(fl))
         with ThreadPoolExecutor(6) as ex:
             res = list(ex.map(one, fl))
-        st = collections.Counter(); bad = []
+        st = collections.Counter(); bad = []; fails = []
         for rec, out, err, dt in res:
             name = rec["SLONGNAME"][:28]
             if out is None:
-                st["no_parse:" + str(err)[:40]] += 1; continue
+                st["no_parse:" + str(err)[:40]] += 1
+                if "reconcile" in str(err) or "missing" in str(err) or "incomplete" in str(err): fails.append(f"{name} :: {err}")
+                continue
             k = pc.K.get(str(out.get("unit")).lower())
             basis = "consolidated" if out.get("consolidated") else "standalone"
             d = out.get(basis)
@@ -91,7 +93,8 @@ def main():
                 st["gt_none"] += 1
             if not ok: bad.append(f"ARITH {name} {basis} " + ", ".join(f"{x}={pc.val(d, x, 0)}" for x in ("revenue", "total_income", "total_expenses", "pbt", "tax", "pat")))
         p("SUMMARY", dict(st))
-        for b in bad[:60]: p(b)
+        for b in bad[:40]: p(b)
+        for b in fails[:40]: p("FAIL", b[:420])
         ts = sorted(dt for _, o, _, dt in res if o)
         if ts: p("parse+download seconds median", f"{ts[len(ts)//2]:.1f}", "max", f"{ts[-1]:.1f}")
     publish()

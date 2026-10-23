@@ -342,8 +342,8 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             continue
         r = _assemble(cands, n, unit)
         if r is None:
-            why.append(f"{b[:4]}: missing {[k for k in ('revenue', 'pat') if not cands.get(k)]}")
-            if b == "consolidated": return None, "rule: consolidated table incomplete"
+            why.append(f"{b[:4]}: missing {[k for k in ('revenue', 'pat') if not cands.get(k)]} n={n}")
+            if b == "consolidated": return None, f"rule: consolidated table incomplete missing {[k for k in ('revenue', 'pat') if not cands.get(k)]} n={n}"
             continue
         d, ok = r
         rv_ = cands["revenue"][0][1]
@@ -353,8 +353,9 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             elif n >= 5 and ds[0].split(".")[1] == "09" and rv_[1] is not None and abs(rv_[3] - rv_[0] - rv_[1]) > 0.02 * rv_[3]:
                 ok = False; why.append(f"{b[:4]}: half-year column is not quarter + previous quarter")
         if not ok:
-            why.append(f"{b[:4]}: does not reconcile")
-            if b == "consolidated": return None, "rule: consolidated table does not reconcile"
+            det = " ".join(f"{k}={d.get(k)}" for k in ("total_income", "total_expenses", "exceptional", "pbt", "tax", "associates", "pat", "depreciation", "finance_costs") if d.get(k))
+            why.append(f"{b[:4]}: does not reconcile [{unit}] {det}")
+            if b == "consolidated": return None, f"rule: consolidated table does not reconcile [{unit}] {det}"
             continue
         for k in KEYNAMES:
             d.setdefault(k, [None, None, None])
