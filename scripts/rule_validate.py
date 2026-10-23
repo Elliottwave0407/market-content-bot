@@ -20,7 +20,13 @@ def filings(bse):
         d = datetime.now() - timedelta(days=back)
         pg, seen = 1, 0
         while pg <= 40:
-            data = bse.announcements(page_no=pg, from_date=d, to_date=d)
+            data = None
+            for _try in range(4):
+                try:
+                    data = bse.announcements(page_no=pg, from_date=d, to_date=d); break
+                except Exception:
+                    time.sleep(4)
+            if data is None: break
             t = data.get("Table", [])
             if not t: break
             seen += len(t)
