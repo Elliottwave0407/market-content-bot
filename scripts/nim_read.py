@@ -84,7 +84,7 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
         except Exception as e:
             last = f"nim {m.split('/')[-1]}: {repr(e)[:50]}"; continue
         if r.status_code == 429:
-            DOWN["until"] = time.time() + 60; last = "nim: 429"; continue
+            DOWN["until"] = time.time() + 20; last = "nim: 429"; allr.append(last); continue
         if r.status_code != 200:
             last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; allr.append(last); continue
         try:

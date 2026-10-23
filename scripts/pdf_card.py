@@ -200,7 +200,7 @@ def _read_stage(rec, st, headline, filed):
         if err and ("429" in err or "503" in err):
             STATE_["backoff"] = time.time() + 120
             TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)    # a quota / busy answer is not the filing's fault: do not use up its tries (23 Oct: 20+ filings gave up during a quota outage)
-        LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:80]}")
+        LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:420]}")
         return None
     return _annotate(out, small), q_head
 
