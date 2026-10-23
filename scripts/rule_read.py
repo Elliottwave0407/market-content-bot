@@ -144,13 +144,72 @@ def _looks_like_table(rws):
     return n >= 2
 
 
-def _pdf_rows(pdf_bytes, max_pages=14):
+class OcrPage:
+    """Page-like object whose words come from tesseract (for scanned PDFs). Same get_text API the row builder uses."""
+    def __init__(self, words):
+        self._w = words
+
+    def get_text(self, kind="text"):
+        if kind == "words":
+            return self._w
+        return " ".join(w[4] for w in self._w)
+
+
+def _ocr_words(pg, angle=0, dpi=250):
+    import subprocess, tempfile, os
+    import fitz
+    sc = dpi / 72.0
+    pix = pg.get_pixmap(matrix=fitz.Matrix(sc, sc), colorspace=fitz.csGRAY)
+    if angle:
+        from PIL import Image
+        import io
+        im = Image.open(io.BytesIO(pix.tobytes("png"))).rotate(angle, expand=True)
+        buf = io.BytesIO(); im.save(buf, "PNG"); data = buf.getvalue()
+    else:
+        data = pix.tobytes("png")
+    with tempfile.TemporaryDirectory() as td:
+        f = os.path.join(td, "p.png")
+        open(f, "wb").write(data)
+        r = subprocess.run(["tesseract", f, "stdout", "--psm", "6", "-c", "preserve_interword_spaces=1", "tsv"], capture_output=True, text=True, timeout=90)
+    out, confs = [], []
+    for ln in r.stdout.splitlines()[1:]:
+        c = ln.split("\t")
+        if len(c) < 12 or not c[11].strip():
+            continue
+        try:
+            x, y, w, h, cf = int(c[6]), int(c[7]), int(c[8]), int(c[9]), float(c[10])
+        except ValueError:
+            continue
+        if cf < 0:
+            continue
+        t = c[11].strip().replace("|", "").replace("₹", "")
+        if not t:
+            continue
+        confs.append(cf)
+        out.append((x / sc, y / sc, (x + w) / sc, (y + h) / sc, t, 0, 0, 0))
+    return out, (sum(confs) / len(confs) if confs else 0)
+
+
+def _pdf_rows(pdf_bytes, max_pages=14, ocr=False):
     import fitz
     d = fitz.open(stream=pdf_bytes, filetype="pdf")
     pages = []
     for i, pg in enumerate(d):
         if i >= max_pages:
             break
+        if ocr:
+            ws, cf = _ocr_words(pg)
+            op = OcrPage(ws)
+            rws = rows_of(op)
+            if not _looks_like_table(rws) and cf < 70:
+                for ang in (90, 270):
+                    ws2, cf2 = _ocr_words(pg, ang)
+                    r2 = rows_of(OcrPage(ws2))
+                    if _looks_like_table(r2):
+                        rws, op = r2, OcrPage(ws2)
+                        break
+            pages.append((op.get_text("text"), rws))
+            continue
         rws = rows_of(pg)
         if not _looks_like_table(rws):
             for rot in (90, 270):
@@ -267,9 +326,27 @@ def _assemble(cands, n, unit, rows):
 
 
 def read_pdf(pdf_bytes, hint="", qhint=None):
+    """Text layer first; if that fails, OCR the pages (scanned / garbled PDFs) and run the same strict reconcile gate."""
+    r, why = _read(pdf_bytes, hint, qhint, False)
+    if r is not None or why is None:
+        return r, why
+    import shutil
+    if not shutil.which("tesseract"):
+        return None, why
+    try:
+        r2, why2 = _read(pdf_bytes, hint, qhint, True)
+    except Exception as e:
+        return None, why + " | ocr err " + repr(e)[:60]
+    if r2 is not None:
+        r2["_ocr"] = True
+        return r2, None
+    return None, why + " | ocr: " + str(why2)[:140]
+
+
+def _read(pdf_bytes, hint="", qhint=None, ocr=False):
     """-> (json, None) or (None, reason). qhint: BSE quarter code from the filing headline (used for the column dates when the header cannot be read)."""
     try:
-        pages = _pdf_rows(pdf_bytes)
+        pages = _pdf_rows(pdf_bytes, ocr=ocr)
     except Exception as e:
         return None, f"rule: pdf open failed {repr(e)[:50]}"
     if not pages:
