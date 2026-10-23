@@ -40,7 +40,9 @@ def arith_ok(d):
     tol = lambda a, b: abs(a - b) <= max(1.5, 0.002 * max(abs(a), abs(b)))
     res = []
     if None not in (ti, ex, pbt):
-        res.append(tol(ti - ex, pbt))
+        dp0, fn0 = val(d, "depreciation", 0), val(d, "finance_costs", 0)
+        # layout A: total expenses include depreciation and finance costs; layout B (e.g. Sterlite): they are listed below it
+        res.append(tol(ti - ex, pbt) or (None not in (dp0, fn0) and tol(ti - ex - dp0 - fn0, pbt)))
     if None not in (pbt, tax, pat):
         res.append(tol(pbt - tax, pat))
     return bool(res) and all(res), len(res)
@@ -50,7 +52,10 @@ def to_m(d, i, k):
     exp, dep, fin = (val(d, x, i) for x in ("total_expenses", "depreciation", "finance_costs"))
     ebitda = None
     if None not in (rev, exp, dep, fin) and rev and fin / rev < 0.25:
-        ebitda = (rev - exp + dep + fin) * k
+        ti_ = val(d, "total_income", i)
+        tl_ = lambda a, b: abs(a - b) <= max(1.5, 0.002 * max(abs(a), abs(b)))
+        layout_b = ti_ is not None and pbt is not None and (not tl_(ti_ - exp, pbt)) and tl_(ti_ - exp - dep - fin, pbt)
+        ebitda = (rev - exp if layout_b else rev - exp + dep + fin) * k    # layout B: "total expenses" already EXCLUDES depreciation and finance costs
         if rev > 0 and not (-100 <= 100 * ebitda / (rev * k) <= 100):      # a margin outside +-100% means a mis-read line: show no margin rather than a wrong one
             ebitda = None
     sc = lambda v: None if v is None else v * k
