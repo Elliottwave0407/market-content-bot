@@ -144,8 +144,9 @@ def _read_stage(rec, st, headline, filed):
     if out is None and small is not content and not (err and "429" in err):
         out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
     if out is None:
-        if err and "429" in err:
+        if err and ("429" in err or "503" in err):
             STATE_["backoff"] = time.time() + 120
+            TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)    # a quota / busy answer is not the filing's fault: do not use up its tries (23 Oct: 20+ filings gave up during a quota outage)
         LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:80]}")
         return None
     return out, q_head
