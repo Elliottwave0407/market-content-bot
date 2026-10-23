@@ -424,7 +424,9 @@
 "1dce26ac-1e57-4bdc-bf3b-49aca78a569b",
 "c3412823-3f84-4c79-b0a1-05d8cdbff9f2",
 "a4b068f8-348a-437f-8665-229b27b05d1d",
-"3e3dc6d2-4f53-4ae2-8b12-91e0a39ba1e3"
+"3e3dc6d2-4f53-4ae2-8b12-91e0a39ba1e3",
+"9985b2cd-d3ea-48ab-a6aa-0f03be620494",
+"18054124-0475-48f4-87da-f5ae1cf28d6f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -779,7 +781,8 @@
 "526335|Sep-26|standalone",
 "500547|Sep-26|na",
 "539669|Sep-26|na",
-"524174|Sep-26|standalone"
+"524174|Sep-26|standalone",
+"540318|Sep-26|standalone"
 ],
 "pending": {
 "d607bb80-d881-465b-9397-5f5900526646": {
@@ -817,7 +820,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792764293.1964355,
-"last": 1792766639.0412326
+"last": 1792766864.7279477
 },
 "958496ef-3867-4b34-95e6-36f6dd9f273b": {
 "rec": {
@@ -854,7 +857,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792765225.698087,
-"last": 1792766639.0412326
+"last": 1792766864.7279477
 },
 "aa009768-0315-4009-b210-a6900648201e": {
 "rec": {
@@ -891,7 +894,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792765562.0756586,
-"last": 1792766639.0412326
+"last": 1792766864.7279477
 },
 "f9a5267b-b7c5-48d4-b8ab-8414e021ac45": {
 "rec": {
@@ -928,7 +931,44 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792766407.8382673,
-"last": 1792766639.0412326
+"last": 1792766864.7279477
+},
+"f7de1406-8782-4678-9b69-420c6a8f15ea": {
+"rec": {
+"NEWSID": "f7de1406-8782-4678-9b69-420c6a8f15ea",
+"SCRIP_CD": 540318,
+"XML_NAME": "ANN_540318_F7DE1406-8782-4678-9B69-420C6A8F15EA",
+"NEWSSUB": "Sueryaa Knitwear Ltd - 540318 - Unaudited Standalone Financial Results For Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-10-23T20:14:25.023",
+"NEWS_DT": "2026-10-23T20:14:25.023",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "e14fcb7b-7a8f-424a-be8c-b1584230fa86.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Standalone Financial Results for quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/sueryaa-knitwear-ltd/sueryaakni/540318/",
+"SLONGNAME": "Sueryaa Knitwear Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 21,
+"News_submission_dt": "2026-10-23T20:14:25",
+"DissemDT": "2026-10-23T20:14:25.023",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1860496,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1792766864.7279477,
+"last": 1792766864.7279477
 }
 },
 "lag": [
@@ -1701,7 +1741,7 @@
 "2026-10-20": 154,
 "2026-10-21": 340,
 "2026-10-22": 451,
-"2026-10-23": 437
+"2026-10-23": 439
 },
 "pdfposted": {
 "530585|Sep-26|consolidated": {
@@ -1712,7 +1752,7 @@
 "rev": 295.43800000000005,
 "pat": 52.349000000000004,
 "t": 1792596602.1703336,
-"last": 1792766633.013483
+"last": 1792767089.2492697
 },
 "509024|Sep-26|consolidated": {
 "code": "509024",
@@ -1722,7 +1762,7 @@
 "rev": 70.462,
 "pat": 1.708,
 "t": 1792603309.374953,
-"last": 1792766633.013483
+"last": 1792767089.2492697
 },
 "511549|Sep-26|standalone": {
 "code": "511549",
@@ -1732,7 +1772,7 @@
 "rev": 3.465,
 "pat": 1.361,
 "t": 1792610916.0555685,
-"last": 1792766633.013483
+"last": 1792767089.2492697
 },
 "532900|Sep-26|consolidated": {
 "code": "532900",
@@ -1742,7 +1782,7 @@
 "rev": 2773.077,
 "pat": 656.413,
 "t": 1792646292.3157756,
-"last": 1792766633.013483
+"last": 1792767089.2492697
 },
 "541799|Sep-26|standalone": {
 "code": "541799",
@@ -1972,6 +2012,16 @@
 "rev": 600.6,
 "pat": 12.0,
 "t": 1792766620.0894723,
+"last": 0
+},
+"540318|Sep-26|standalone": {
+"code": "540318",
+"name": "Sueryaa Knitwear Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": 0.126,
+"t": 1792767082.1331673,
 "last": 0
 }
 },
@@ -2644,7 +2694,9 @@
 "bd823e97-d5b5-449a-b757-656e73ad5642": 1,
 "1dce26ac-1e57-4bdc-bf3b-49aca78a569b": 1,
 "a4b068f8-348a-437f-8665-229b27b05d1d": 1,
-"18054124-0475-48f4-87da-f5ae1cf28d6f": 1
+"18054124-0475-48f4-87da-f5ae1cf28d6f": 1,
+"9985b2cd-d3ea-48ab-a6aa-0f03be620494": 1,
+"f7de1406-8782-4678-9b69-420c6a8f15ea": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -2805,7 +2857,8 @@
 "06ccf60d-a403-44bc-ac3e-f75ea3c4f30d": 1,
 "da575d8e-fee9-4019-a925-89487c608f6f": 1,
 "f7c2fb5f-1813-4053-b4c4-0c53e1da9889": 1,
-"2966c384-e067-4213-ad67-35b2b0df4c85": 1
+"2966c384-e067-4213-ad67-35b2b0df4c85": 1,
+"5d092300-6c3e-4e95-a436-b93c89874155": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
