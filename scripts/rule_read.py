@@ -62,6 +62,7 @@ def clean_label(s):
     for _ in range(4):
         s2 = re.sub(r"^(\(?[a-z]{1,2}\)|\([ivx]{1,4}\)|[ivx]{1,4}\)|\d{1,2}\.|\d{1,2}\)|[-–•*]+)\s*", "", s)
         s2 = re.sub(r"^\d{1,2}\s+(?=[a-z(])", "", s2)
+        s2 = re.sub(r"^(?:i{1,3}|iv|vi{0,3}|ix|x)(?:\.|\s)\s*(?=[a-z(])", "", s2)
         s2 = re.sub(r"^(add|less|plus)\s*[:\-]\s*", "", s2)
         if s2 == s:
             break
@@ -264,17 +265,17 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
         for r in rws:
             lb, nums = split_row(r)
             built.append([lb, nums, [clean_label(lb)]])
-        has_rev = any(len(n_) >= 3 and any(re.search(p, c_[0]) for p in PAT_REV[:3]) for _, n_, c_ in built)
-        if not (has_rev and sum(k in low for k in KEYS) >= 2) and not (prev_table and sum(k in low for k in CONT) >= 2):
-            prev_table = False
-            continue
-        prev_table = True
         for i in range(len(built)):
             lb, nums, c = built[i]
             if nums and i > 0 and not built[i - 1][1]:
                 c.append(clean_label(built[i - 1][0] + " " + lb))
             if nums and i + 1 < len(built) and not built[i + 1][1]:
                 c.append(clean_label(lb + " " + built[i + 1][0]))
+        has_rev = any(len(n_) >= 3 and any(re.search(p, x) for x in c_ for p in PAT_REV) for _, n_, c_ in built)
+        if not (has_rev and sum(k in low for k in KEYS) >= 2) and not (prev_table and sum(k in low for k in CONT) >= 2):
+            prev_table = False
+            continue
+        prev_table = True
         for lb, nums, c in built:
             if not nums and 3 < len(lb) < 170:
                 l = lb.lower().strip()
@@ -289,7 +290,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             first_page_txt = txt
             head = []
             for lb, nums, c in built:
-                if len(nums) >= 3 and any(re.search(p, c[0]) for p in PAT_REV[:3]):
+                if len(nums) >= 3 and any(re.search(p, x) for x in c for p in PAT_REV):
                     break
                 head.append(lb)
             htxt = " ".join(head)

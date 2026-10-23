@@ -5,6 +5,9 @@ on:
       only:
         description: "name fragments"
         default: ""
+      reason:
+        description: "only failures containing this text"
+        default: ""
       n:
         description: "how many"
         default: "5"
@@ -28,6 +31,7 @@ jobs:
       - env:
           DAYS: "1,2"
           MAXN: "80"
+          REASON: ${{ github.event.inputs.reason }}
           ONLY: ${{ github.event.inputs.only }}
           N: ${{ github.event.inputs.n }}
           SKIP: ${{ github.event.inputs.skip }}

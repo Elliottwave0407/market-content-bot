@@ -23,6 +23,7 @@ def main():
         small = pc.trim_pdf(c)
         out, err = rr.read_pdf(small, hint=rec.get("NEWSSUB") or "")
         if out is not None and not ONLY: continue
+        if os.environ.get("REASON") and os.environ.get("REASON") not in str(err): continue
         k += 1
         if k <= SKIP and not ONLY: continue
         p("=====", nm, "|", err, "| pages", len(__import__("fitz").open(stream=small, filetype="pdf")))
