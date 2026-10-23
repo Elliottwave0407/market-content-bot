@@ -1,12 +1,15 @@
 """Backup reader for result PDFs when Gemini is out of quota / busy: text + tables are pulled from the (trimmed) PDF locally and a free NVIDIA NIM model returns the same JSON as the Gemini reader.
 Every number it returns still goes through the same arithmetic, column-date and BSE-history checks as before. Scanned PDFs (no text layer) cannot be read here: return (None, reason). Key: env NVIDIA_API_KEY (never printed)."""
-import os, re, json, time
+import os, re, json, time, threading
 import requests
 import gemini_read as gr
 
 URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 MODELS = [m for m in os.environ.get("NIM_RESULT_MODELS", "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 DOWN = {"until": 0.0}
+_LOCK = threading.Lock()
+_LAST = {"t": 0.0}
+GAP = float(os.environ.get("NIM_GAP", "2.5"))      # seconds between calls: parallel bursts made the free endpoint answer 429 and pushed filings onto the weaker model
 
 def key():
     return os.environ.get("NVIDIA_API_KEY", "").strip()
@@ -78,13 +81,24 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
     last, allr = None, []
     for m in MODELS:
         extra = {"thinking": False} if "deepseek" in m else {"enable_thinking": False}
-        try:
-            r = requests.post(URL, headers={"Authorization": "Bearer " + k}, timeout=timeout,
-                              json={"model": m, "messages": [{"role": "user", "content": msg}], "max_tokens": 4000, "temperature": 0, "chat_template_kwargs": extra})
-        except Exception as e:
-            last = f"nim {m.split('/')[-1]}: {repr(e)[:50]}"; continue
+        r = None
+        for att in range(3):
+            with _LOCK:
+                w = _LAST["t"] + GAP - time.time()
+                if w > 0: time.sleep(w)
+                _LAST["t"] = time.time()
+            try:
+                r = requests.post(URL, headers={"Authorization": "Bearer " + k}, timeout=timeout,
+                                  json={"model": m, "messages": [{"role": "user", "content": msg}], "max_tokens": 4000, "temperature": 0, "chat_template_kwargs": extra})
+            except Exception as e:
+                last = f"nim {m.split('/')[-1]}: {repr(e)[:50]}"; r = None; break
+            if r.status_code == 429 and att < 2:
+                time.sleep(6 * (att + 1)); continue
+            break
+        if r is None:
+            allr.append(last); continue
         if r.status_code == 429:
-            DOWN["until"] = time.time() + 20; last = "nim: 429"; allr.append(last); continue
+            DOWN["until"] = time.time() + 20; last = f"nim {m.split('/')[-1]}: 429"; allr.append(last); continue
         if r.status_code != 200:
             last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; allr.append(last); continue
         try:
