@@ -33,6 +33,9 @@ def filings(bse):
             rows += [r for r in t if r.get("CATEGORYNAME") == "Result" and r.get("ATTACHMENTNAME")]
             if seen >= data.get("Table1", [{}])[0].get("ROWCNT", 0): break
             pg += 1
+    only = [x.strip().lower() for x in os.environ.get("ONLY", "").split(",") if x.strip()]
+    if only:
+        rows = [r for r in rows if any(o in r["SLONGNAME"].lower() for o in only)]
     return rows[:MAXN]
 
 def get(rec):

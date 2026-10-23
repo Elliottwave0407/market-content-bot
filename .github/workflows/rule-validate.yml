@@ -8,6 +8,9 @@ on:
       maxn:
         description: "max filings"
         default: "150"
+      only:
+        description: "name fragments"
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -25,4 +28,5 @@ jobs:
       - env:
           DAYS: ${{ github.event.inputs.days }}
           MAXN: ${{ github.event.inputs.maxn }}
+          ONLY: ${{ github.event.inputs.only }}
         run: python scripts/rule_validate.py
