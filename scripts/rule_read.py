@@ -127,10 +127,10 @@ def _qdates_from_code(q):
 
 
 def _units_in(text):
-    """Distinct unit words printed in the sense of 'Rs. in lakhs' / '(in crore)' / 'Rs in million' on these pages."""
+    """Distinct unit words in a table header (the rupee sign often decodes to a stray character, so only the unit word itself is used)."""
     found = set()
-    for m in re.finditer(r"(?:\u20b9|rs\.?|inr|rupees)\s*(?:in\s*)?(crores?|crs?\b|lakhs?|lacs?|millions?|mn\b|thousands?|'000)|\(\s*(?:amount\s*)?in\s*(?:\u20b9|rs\.?|inr)?\s*(crores?|crs?\b|lakhs?|lacs?|millions?|mn\b|thousands?|'000)", text.lower()):
-        w = m.group(1) or m.group(2)
+    for m in re.finditer(r"(crores?|\bcrs?\b|lakhs?|lacs?|millions?|\bmn\b|thousands?)", text.lower()):
+        w = m.group(1)
         found.add("lakh" if w.startswith(("lakh", "lac")) else "crore" if w.startswith(("crore", "cr")) else "million" if w.startswith(("million", "mn")) else "thousand")
     return found
 
@@ -299,7 +299,13 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             prev_table = False
             continue
         prev_table = True
-        table_txt += " " + txt
+        if has_rev:      # header of each statement start: the text above its first revenue row
+            hdr = []
+            for lb_, nums_, c_ in built:
+                if len(nums_) >= 3 and any(re.search(p_, x_) for x_ in c_ for p_ in PAT_REV):
+                    break
+                hdr.append(lb_)
+            table_txt += " " + " ".join(hdr)
         for lb, nums, c in built:
             if (not nums or (len(nums) <= 2 and all(v is not None and 1990 <= abs(v) <= 2100 for v in nums))) and 3 < len(lb) < 170:
                 l = lb.lower().strip()
