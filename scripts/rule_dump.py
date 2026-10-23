@@ -28,6 +28,15 @@ def main():
         if k <= SKIP and not ONLY: continue
         p("=====", nm, "|", err, "| pages", len(__import__("fitz").open(stream=small, filetype="pdf")))
         pages = rr._pdf_rows(small)
+        if "unit" in str(err):
+            import re as _re
+            for t, r in pages[:6]:
+                if "before tax" in t.lower():
+                    for ln in t.split("\n"):
+                        if _re.search(r"lakh|lac|crore|million|\bcr\b|thousand|in rs|rupee|\u20b9|figures", ln.lower()):
+                            p("    UNITLINE:", ln[:110])
+                    break
+            continue
         if "no results table page" in str(err):
             p("   pages:", [(len(t), ("rev" if "revenue" in t.lower() or "income" in t.lower() else ""), ("pbt" if "before tax" in t.lower() else ""), len(r)) for t, r in pages[:8]])
             for t, r in pages[:8]:
