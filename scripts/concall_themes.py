@@ -110,7 +110,7 @@ def find(d0, d1):
     rows = []
     d = datetime.fromisoformat(d0); end = datetime.fromisoformat(d1)
     while d <= end:
-        if d.weekday() < 5:
+        if True:   # weekends included: a few companies file on Saturdays
             day_rows, ok = [], False
             for attempt in range(4):
                 try:
