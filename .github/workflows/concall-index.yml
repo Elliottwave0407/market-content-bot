@@ -14,6 +14,9 @@ on:
       hist_to:
         description: "Backfill mode: last day"
         default: ""
+      ranges:
+        description: "Backfill queue: 'FROM TO;FROM TO;...' run one after another in this job (overrides hist_from/hist_to)"
+        default: ""
 concurrency:
   group: concall-index
   cancel-in-progress: false
@@ -34,7 +37,20 @@ jobs:
           CUR_TO: ${{ github.event.inputs.cur_to }}
           HIST_FROM: ${{ github.event.inputs.hist_from }}
           HIST_TO: ${{ github.event.inputs.hist_to }}
-        run: python scripts/concall_themes.py
+          RANGES: ${{ github.event.inputs.ranges }}
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          if [ -n "$RANGES" ]; then
+            IFS=';' read -ra A <<< "$RANGES"
+            for r in "${A[@]}"; do
+              set -- $r
+              HIST_FROM=$1 HIST_TO=$2 python scripts/concall_themes.py || true
+              git add store/concall_themes 2>/dev/null || true
+              git diff --cached --quiet || { git commit -q -m "Concall theme counts $1 to $2"; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done; }
+            done
+          else
+            python scripts/concall_themes.py
+          fi
       - name: Save theme counts to the store
         if: always()
         run: |

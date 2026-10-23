@@ -15,6 +15,7 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  actions: write
 jobs:
   extract:
     runs-on: ubuntu-latest
@@ -39,3 +40,15 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -q -m "Concall facts"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Chain the next run while old days remain
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FLOOR: ${{ github.event.inputs.floor || '2024-04-01' }}
+        run: |
+          B=$(python3 -c "import json;print(json.load(open('store/concall_facts/_cursor.json'))['back'])" 2>/dev/null || echo "")
+          echo "back cursor: $B floor: $FLOOR"
+          if [ -n "$B" ] && [ "$B" \> "$FLOOR" ]; then
+            sleep 20
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-extract.yml/dispatches -f ref=main && echo "next run queued"
+          fi
