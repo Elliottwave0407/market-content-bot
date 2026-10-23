@@ -304,7 +304,10 @@
 "de776939-ff55-42b8-802c-63919b1de203",
 "33438341-33ba-494d-add5-16790e8db647",
 "d53605b0-c127-4628-8ae5-377d184c6e55",
-"1ccc2c8f-f2d3-4a7e-9e1c-bfc4089c792e"
+"1ccc2c8f-f2d3-4a7e-9e1c-bfc4089c792e",
+"63ddc81b-100c-4c45-8046-ce522f1ca7cc",
+"e1dd20a9-ed96-4830-bb16-d28929075a7c",
+"7532d76c-44d4-417b-b59f-27b3dea1e5d2"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -585,7 +588,8 @@
 "531212|Sep-26|standalone",
 "542867|Sep-26|standalone",
 "540900|Sep-26|consolidated",
-"540124|Sep-26|consolidated"
+"540124|Sep-26|consolidated",
+"524440|Sep-26|standalone"
 ],
 "pending": {
 "03a1a0d8-d731-44dd-bd09-82178458082b": {
@@ -1461,7 +1465,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/dmr-engineering-ltd/dmr/543410/",
 "SLONGNAME": "DMR Engineering Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 5,
+"TotalPageCnt": 6,
 "News_submission_dt": "2026-10-23T13:32:23",
 "DissemDT": "2026-10-23T13:32:23.833",
 "TimeDiff": "00:00:00",
@@ -1474,7 +1478,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792742997.9835687,
-"last": 1792743750.977915
+"last": 1792743997.7120457
 },
 "d59f100f-7cfa-4061-8bcd-600dba28fed9": {
 "rec": {
@@ -1498,7 +1502,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/regency-fincorp-ltd/regency/540175/",
 "SLONGNAME": "Regency Fincorp Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 5,
+"TotalPageCnt": 6,
 "News_submission_dt": "2026-10-23T13:48:19",
 "DissemDT": "2026-10-23T13:48:19.89",
 "TimeDiff": "00:00:00",
@@ -1511,7 +1515,44 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1792743750.977915,
-"last": 1792743750.977915
+"last": 1792743997.7120457
+},
+"02811d9f-2b23-4aa6-8c1b-68abda1cd66a": {
+"rec": {
+"NEWSID": "02811d9f-2b23-4aa6-8c1b-68abda1cd66a",
+"SCRIP_CD": 544353,
+"XML_NAME": "ANN_544353_02811D9F-2B23-4AA6-8C1B-68ABDA1CD66A",
+"NEWSSUB": "Amwill Health Care Ltd - 544353 - Approval Of Unaudited Financial Results Of The Company For The Half Year Ended September 30, 2026, For The Financial Year 2026-27.",
+"DT_TM": "2026-10-23T13:54:23.29",
+"NEWS_DT": "2026-10-23T13:54:23.29",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "d141032a-1096-49fe-ad04-c897b8ed9e31.pdf",
+"MORE": "",
+"HEADLINE": "Approval of unaudited Financial Results of the Compnay for the half year ended September 30, 2026, for the financial year 2026-27.",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/amwill-health-care-ltd/amwill/544353/",
+"SLONGNAME": "Amwill Health Care Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 6,
+"News_submission_dt": "2026-10-23T13:54:23",
+"DissemDT": "2026-10-23T13:54:23.29",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 2290902,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1792743997.7120457,
+"last": 1792743997.7120457
 }
 },
 "lag": [
@@ -2072,7 +2113,7 @@
 "2026-10-20": 154,
 "2026-10-21": 340,
 "2026-10-22": 451,
-"2026-10-23": 49
+"2026-10-23": 59
 },
 "pdfposted": {
 "543374|Sep-26|consolidated": {
@@ -2233,6 +2274,16 @@
 "rev": 4222.106,
 "pat": 868.8200000000002,
 "t": 1792743780.915613,
+"last": 0
+},
+"524440|Sep-26|standalone": {
+"code": "524440",
+"name": "Camex Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 453.038,
+"pat": 10.385,
+"t": 1792744034.0357592,
 "last": 0
 }
 },
@@ -2816,7 +2867,10 @@
 "68505c24-3629-46d0-937d-7712bea5d49e": 1,
 "246d01a8-5d09-4742-913b-432931696cbb": 1,
 "eb65dae8-98ff-4ba1-9c68-c840d15978dd": 1,
-"3631e0de-0afb-4d6e-a836-706862171e58": 1
+"3631e0de-0afb-4d6e-a836-706862171e58": 1,
+"e1dd20a9-ed96-4830-bb16-d28929075a7c": 1,
+"02811d9f-2b23-4aa6-8c1b-68abda1cd66a": 1,
+"7532d76c-44d4-417b-b59f-27b3dea1e5d2": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -2946,7 +3000,8 @@
 "22572b35-4d84-4e4c-8691-1e1e0ea7215b": 1,
 "d53605b0-c127-4628-8ae5-377d184c6e55": 1,
 "d59f100f-7cfa-4061-8bcd-600dba28fed9": 1,
-"1ccc2c8f-f2d3-4a7e-9e1c-bfc4089c792e": 1
+"1ccc2c8f-f2d3-4a7e-9e1c-bfc4089c792e": 1,
+"63ddc81b-100c-4c45-8046-ce522f1ca7cc": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -2976,6 +3031,13 @@
 "SLONGNAME": "DMR Engineering Ltd",
 "ATTACHMENTNAME": "a12d4055-1afc-4bb3-a52d-7ac926dd1fab.pdf",
 "NEWS_DT": "2026-10-23T13:32:23.833"
+},
+"02811d9f-2b23-4aa6-8c1b-68abda1cd66a": {
+"NEWSID": "02811d9f-2b23-4aa6-8c1b-68abda1cd66a",
+"SCRIP_CD": 544353,
+"SLONGNAME": "Amwill Health Care Ltd",
+"ATTACHMENTNAME": "d141032a-1096-49fe-ad04-c897b8ed9e31.pdf",
+"NEWS_DT": "2026-10-23T13:54:23.29"
 }
 }
 }
