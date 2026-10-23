@@ -1,0 +1,61 @@
+"""Backup reader for result PDFs when Gemini is out of quota / busy: text + tables are pulled from the (trimmed) PDF locally and a free NVIDIA NIM model returns the same JSON as the Gemini reader.
+Every number it returns still goes through the same arithmetic, column-date and BSE-history checks as before. Scanned PDFs (no text layer) cannot be read here: return (None, reason). Key: env NVIDIA_API_KEY (never printed)."""
+import os, re, json, time
+import requests
+import gemini_read as gr
+
+URL = "https://integrate.api.nvidia.com/v1/chat/completions"
+MODELS = [m for m in os.environ.get("NIM_RESULT_MODELS", "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
+DOWN = {"until": 0.0}
+
+def key():
+    return os.environ.get("NVIDIA_API_KEY", "").strip()
+
+def pdf_text(b, limit=45000):
+    import fitz
+    d = fitz.open(stream=b, filetype="pdf")
+    out = []
+    for i, pg in enumerate(d):
+        if i >= 8: break
+        tabs = ""
+        try:
+            for t in pg.find_tables().tables:
+                tabs += "\n".join(" | ".join((c or "").replace("\n", " ").strip() for c in r) for r in t.extract()) + "\n\n"
+        except Exception:
+            pass
+        raw = pg.get_text("text")
+        out.append((f"[PAGE {i+1} TABLES]\n{tabs}\n" if len(tabs) > 200 else "") + f"[PAGE {i+1} TEXT]\n{raw}")
+    return "\n".join(out)[:limit]
+
+def read_pdf(pdf_bytes, prompt=None, timeout=150):
+    k = key()
+    if not k:
+        return None, "nim: no key"
+    if time.time() < DOWN["until"]:
+        return None, "nim: cooling down"
+    try:
+        txt = pdf_text(pdf_bytes)
+    except Exception as e:
+        return None, f"nim: text extract failed {repr(e)[:60]}"
+    if len(re.sub(r"\W", "", txt)) < 400:
+        return None, "nim: no text layer (scanned)"
+    msg = (prompt or gr.PROMPT) + "\n\nThe filing text follows (tables are shown with | between cells).\n\n" + txt
+    last = None
+    for m in MODELS:
+        extra = {"thinking": False} if "deepseek" in m else {"enable_thinking": False}
+        try:
+            r = requests.post(URL, headers={"Authorization": "Bearer " + k}, timeout=timeout,
+                              json={"model": m, "messages": [{"role": "user", "content": msg}], "max_tokens": 4000, "temperature": 0, "chat_template_kwargs": extra})
+        except Exception as e:
+            last = f"nim {m.split('/')[-1]}: {repr(e)[:50]}"; continue
+        if r.status_code == 429:
+            DOWN["until"] = time.time() + 60; last = "nim: 429"; continue
+        if r.status_code != 200:
+            last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; continue
+        try:
+            s = re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"].get("content") or "", flags=re.S)
+            j = json.loads(re.search(r"\{.*\}", s, re.S).group(0))
+            return gr._clean(j), None
+        except Exception as e:
+            last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"
+    return None, last

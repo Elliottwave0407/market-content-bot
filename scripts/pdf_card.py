@@ -119,11 +119,12 @@ def _read_stage(rec, st, headline, filed):
     nid = rec["NEWSID"]
     if not key or not att or os.environ.get("PDF_FAST", "1") != "1":
         return None
-    if TRIES.get(nid, 0) >= 8 or time.time() < STATE_["backoff"] or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
-        return None
+    import nim_read as nr
+    nim_ok = bool(nr.key())
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
-    if use.get(day, 0) >= DAILY_CAP:
+    gem_blocked = time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
+    if TRIES.get(nid, 0) >= 8 or (gem_blocked and not nim_ok) or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
         return None
     q_head = rf.expected_quarter(headline, filed)
     TRIES[nid] = TRIES.get(nid, 0) + 1
@@ -143,11 +144,19 @@ def _read_stage(rec, st, headline, filed):
         EARLY_DEAD.add(nid)
         return None
     STATE_["calls"] += 1
-    use[day] = use.get(day, 0) + 1
     small = trim_pdf(content)
-    out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
-    if out is None and small is not content and not (err and "429" in err):
-        out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
+    out, err = None, "gemini skipped (quota/backoff)"
+    if not gem_blocked:
+        use[day] = use.get(day, 0) + 1
+        out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
+        if out is None and small is not content and not (err and "429" in err):
+            out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
+    if out is None and nim_ok:      # Gemini out of quota / busy / failed: the free NVIDIA reader takes the same job (same checks follow)
+        out, err2 = nr.read_pdf(small)
+        LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:40]})")
+        if out is not None:
+            return out, q_head
+        err = f"{err}; {err2}"
     if out is None:
         if err and ("429" in err or "503" in err):
             STATE_["backoff"] = time.time() + 120
