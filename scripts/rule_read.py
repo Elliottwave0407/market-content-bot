@@ -156,7 +156,7 @@ class OcrPage:
         return " ".join(w[4] for w in self._w)
 
 
-def _ocr_words(pg, angle=0, dpi=200):
+def _ocr_words(pg, angle=0, dpi=300):
     import subprocess, tempfile
     import fitz
     sc = dpi / 72.0
