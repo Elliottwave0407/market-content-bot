@@ -18,7 +18,7 @@ jobs:
       - env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          N_DOCS: "20"
+          N_DOCS: "10"
         run: python scripts/compare_extract.py
       - name: Save comparison
         if: always()

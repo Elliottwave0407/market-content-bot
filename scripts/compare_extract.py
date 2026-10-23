@@ -39,22 +39,29 @@ for f in sorted(glob.glob("store/concall_text/*.txt.gz")):
         docs.append((os.path.basename(f)[:-7], CE.prep(t)))
 docs = docs[:N]
 res = []
+import traceback
+def save():
+    os.makedirs("store/concall_compare", exist_ok=True)
+    json.dump(res, open("store/concall_compare/compare.json", "w"), ensure_ascii=False)
 for name, t in docs:
-    rec = {"doc": name, "words": len(t.split())}
-    t0 = time.time(); j = scan_call(t) if GK else None; rec["scan_sec"] = round(time.time() - t0)
-    if j:
-        its = scan_items(j)
-        ok = CE.verify([{"quote": i["quote"], "statement": i["statement"], "cat": i["cat"]} for i in its], t)
-        rec["scan"] = {"one_line": j.get("one_line"), "not_said": j.get("not_said"), "n_raw": len(its), "n_exact": len(ok), "items": ok}
-    t0 = time.time(); raw = []
-    for ch in CE.chunks(t):
-        g = CE.call(CE.MODELS[0], ch)
-        raw += (g or {}).get("items") or []
-    rec["reader_sec"] = round(time.time() - t0)
-    ok2 = CE.verify(raw, t)
-    rec["reader"] = {"n_raw": len(raw), "n_exact": len(ok2), "items": ok2}
-    p(name, "scan raw/exact", rec.get("scan", {}).get("n_raw"), rec.get("scan", {}).get("n_exact"), "| reader raw/exact", len(raw), len(ok2), f"| {rec.get('scan_sec')}s/{rec['reader_sec']}s")
-    res.append(rec)
+    try:
+        rec = {"doc": name, "words": len(t.split())}
+        t0 = time.time(); j = scan_call(t) if GK else None; rec["scan_sec"] = round(time.time() - t0)
+        if j:
+            its = scan_items(j)
+            ok = CE.verify([{"quote": i["quote"], "statement": i["statement"], "cat": i["cat"]} for i in its], t)
+            rec["scan"] = {"one_line": j.get("one_line"), "not_said": j.get("not_said"), "n_raw": len(its), "n_exact": len(ok), "items": ok}
+        t0 = time.time(); raw = []
+        for ch in CE.chunks(t):
+            g = CE.call(CE.MODELS[0], ch)
+            raw += (g or {}).get("items") or []
+        rec["reader_sec"] = round(time.time() - t0)
+        ok2 = CE.verify(raw, t)
+        rec["reader"] = {"n_raw": len(raw), "n_exact": len(ok2), "items": ok2}
+        p(name, "scan raw/exact", rec.get("scan", {}).get("n_raw"), rec.get("scan", {}).get("n_exact"), "| reader raw/exact", len(raw), len(ok2), f"| {rec.get('scan_sec')}s/{rec['reader_sec']}s")
+        res.append(rec); save()
+    except Exception:
+        p("ERROR on", name, traceback.format_exc()[-300:])
 os.makedirs("store/concall_compare", exist_ok=True)
 json.dump(res, open("store/concall_compare/compare.json", "w"), ensure_ascii=False)
 publish()
