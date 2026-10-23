@@ -28,6 +28,15 @@ def main():
         if k <= SKIP and not ONLY: continue
         p("=====", nm, "|", err, "| pages", len(__import__("fitz").open(stream=small, filetype="pdf")))
         pages = rr._pdf_rows(small)
+        if "no results table page" in str(err):
+            p("   pages:", [(len(t), ("rev" if "revenue" in t.lower() or "income" in t.lower() else ""), ("pbt" if "before tax" in t.lower() else ""), len(r)) for t, r in pages[:8]])
+            for t, r in pages[:8]:
+                if "before tax" in t.lower() or "total income" in t.lower():
+                    for rr_ in r[:40]:
+                        lb, nums = rr.split_row(rr_)
+                        p("    ", lb[:70], "||", nums[:7])
+                    break
+            continue
         shown = 0
         for pno, (txt, rws) in enumerate(pages):
             low = txt.lower()

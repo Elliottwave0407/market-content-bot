@@ -116,15 +116,13 @@ def _qdates_from_code(q):
     return [f"{last[mo]:02d}.{mo:02d}.{y}", f"{last[m1]:02d}.{m1:02d}.{y1}", f"{last[m2]:02d}.{m2:02d}.{y2}"]
 
 
-def _unit(text):
-    m = re.search(r"(lakhs?|lacs?|crores?|\bcrs?\b|millions?|\bmn\b|thousands?|'000)", text.lower())
-    if not m:
-        return None
-    w = m.group(1)
-    if w.startswith(("lakh", "lac")): return "lakh"
-    if w.startswith(("crore", "cr")): return "crore"
-    if w.startswith(("million", "mn")): return "million"
-    return "thousand"
+def _units_in(text):
+    """Distinct unit words printed in the sense of 'Rs. in lakhs' / '(in crore)' / 'Rs in million' on these pages."""
+    found = set()
+    for m in re.finditer(r"(?:\u20b9|rs\.?|inr|rupees)\s*(?:in\s*)?(crores?|crs?\b|lakhs?|lacs?|millions?|mn\b|thousands?|'000)|\(\s*(?:amount\s*)?in\s*(?:\u20b9|rs\.?|inr)?\s*(crores?|crs?\b|lakhs?|lacs?|millions?|mn\b|thousands?|'000)", text.lower()):
+        w = m.group(1) or m.group(2)
+        found.add("lakh" if w.startswith(("lakh", "lac")) else "crore" if w.startswith(("crore", "cr")) else "million" if w.startswith(("million", "mn")) else "thousand")
+    return found
 
 
 def _pdf_rows(pdf_bytes, max_pages=14):
@@ -254,7 +252,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
         return None, "rule: no text layer"
     blocks = {"standalone": [], "consolidated": []}
     basis = None
-    htxt, first_page_txt = "", ""
+    htxt, first_page_txt, table_txt = "", "", ""
     first = True
     prev_table = False
     CONT = KEYS + ("tax expense", "net profit", "earnings per share", "basic")
@@ -275,6 +273,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             prev_table = False
             continue
         prev_table = True
+        table_txt += " " + txt
         for lb, nums, c in built:
             if (not nums or (len(nums) <= 2 and all(v is not None and 1990 <= abs(v) <= 2100 for v in nums))) and 3 < len(lb) < 170:
                 l = lb.lower().strip()
@@ -298,9 +297,10 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     low = htxt.lower()
     if not re.search(r"quarter|three months|3 months", low + " " + first_page_txt[:2500].lower()):
         return None, "rule: header has no quarter columns"
-    unit = _unit(htxt) or _unit(" ".join(t[:2500] for t, _ in pages[:3]))
-    if not unit:
-        return None, "rule: unit not found"
+    us = _units_in(table_txt)
+    if len(us) != 1:
+        return None, "rule: unit " + ("ambiguous " + str(sorted(us)) if us else "not found")
+    unit = next(iter(us))
     ds = _dates(htxt)
     if not (len(ds) >= 3 and _layout_ok(ds)):
         ds = []
