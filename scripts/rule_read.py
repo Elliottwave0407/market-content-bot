@@ -27,10 +27,20 @@ def _isnum(w):
     return bool(NUMRE.match(w))
 
 
-def rows_of(page):
-    ws = page.get_text("words")
-    if not ws:
+def rows_of(page, rot=0):
+    """Words of a page grouped into visual rows. rot 90 / 270: the page content is drawn sideways (landscape tables)."""
+    ws0 = page.get_text("words")
+    if not ws0:
         return []
+    ws = []
+    for w in ws0:
+        cx, cy = (w[0] + w[2]) / 2, (w[1] + w[3]) / 2
+        if rot == 0:
+            ws.append(w)
+        elif rot == 90:      # text runs bottom-to-top
+            ws.append((-w[3], cx - (w[2] - w[0]) / 2, -w[1], cx + (w[2] - w[0]) / 2) + tuple(w[4:]))
+        else:                # text runs top-to-bottom
+            ws.append((w[1], -cx - (w[2] - w[0]) / 2, w[3], -cx + (w[2] - w[0]) / 2) + tuple(w[4:]))
     ws.sort(key=lambda w: ((w[1] + w[3]) / 2, w[0]))
     rows, cur, cy = [], [], None
     for w in ws:
@@ -125,6 +135,15 @@ def _units_in(text):
     return found
 
 
+def _looks_like_table(rws):
+    n = 0
+    for r in rws:
+        lb, nums = split_row(r)
+        if len(nums) >= 3 and re.search(r"revenue|total income|income from operations|net sales|profit", lb.lower()):
+            n += 1
+    return n >= 2
+
+
 def _pdf_rows(pdf_bytes, max_pages=14):
     import fitz
     d = fitz.open(stream=pdf_bytes, filetype="pdf")
@@ -132,7 +151,14 @@ def _pdf_rows(pdf_bytes, max_pages=14):
     for i, pg in enumerate(d):
         if i >= max_pages:
             break
-        pages.append((pg.get_text("text"), rows_of(pg)))
+        rws = rows_of(pg)
+        if not _looks_like_table(rws):
+            for rot in (90, 270):
+                alt = rows_of(pg, rot)
+                if _looks_like_table(alt):
+                    rws = alt
+                    break
+        pages.append((pg.get_text("text"), rws))
     return pages
 
 
