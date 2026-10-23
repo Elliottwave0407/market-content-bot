@@ -188,6 +188,18 @@ def _ocr_words(pg, angle=0, dpi=300):
             continue
         confs.append(cf)
         out.append((x / sc, y / sc, (x + w) / sc, (y + h) / sc, t, 0, 0, 0))
+    # OCR often drops the decimal point ("23537" for 235.37): when the table prints 2 decimals almost everywhere, restore it. The reconcile gate still has the last word.
+    dec = sum(1 for w in out if re.match(r"^[-(]?[\d,]+\.\d\d\)?$", w[4]))
+    allnum = sum(1 for w in out if re.match(r"^[-(]?[\d,]+(\.\d+)?\)?$", w[4]))
+    if allnum >= 20 and dec / allnum > 0.5:
+        fixed = []
+        for w in out:
+            m = re.match(r"^(\(?-?)(\d{3,})(\)?)$", w[4])
+            if m and not (len(m.group(2)) == 4 and 1990 <= int(m.group(2)) <= 2100):
+                d = m.group(2)
+                w = w[:4] + (m.group(1) + d[:-2] + "." + d[-2:] + m.group(3),) + w[5:]
+            fixed.append(w)
+        out = fixed
     return out, (sum(confs) / len(confs) if confs else 0)
 
 
