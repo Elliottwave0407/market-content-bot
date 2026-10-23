@@ -168,7 +168,7 @@ def _candidates(rows):
     c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
     c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
     c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
-    c["exceptional"] = _all_matches(rows, [r"^exceptional"], n=n)[:1]
+    c["exceptional"] = _all_matches(rows, [r"^exception"], n=n)[:1]
     pbs = _all_matches(rows, [r"before tax", r"before income tax"], n=n, avoid=("exceptional", "extraordinary", "associate", "joint venture", "share of", "discontinued"))
     pbs += _all_matches(rows, [r"before exceptional.{0,30}tax", r"before extraordinary.{0,30}tax", r"before exceptional items and tax"], n=n, avoid=("associate", "share of", "discontinued"))
     c["pbt"] = pbs[:3]
@@ -223,6 +223,7 @@ def _assemble(cands, n, unit, rows):
                 lb, nums, cl = rows[j]
                 if any(re.search(r"^(current|deferred|earlier|prior|short|excess|adjustment|mat credit|tax of|tax relating|income tax|taxes)", x) and "total" not in x for x in cl):
                     if len(nums) == n: parts.append(nums)
+                    elif 1 <= len(nums) < n: parts.append([None] * (n - len(nums)) + list(nums))      # a row whose nil dashes were lost: its printed numbers sit at the right-hand columns
                     else: garbled = True
             if parts and not garbled:
                 taxopts.append(pad([sum((p[k] or 0.0) for p in parts) for k in range(n)]))
