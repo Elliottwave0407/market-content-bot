@@ -65,7 +65,7 @@ def cur_unsupported(j, text, basis):
             bad += 1
     return bad
 
-def read_pdf(pdf_bytes, prompt=None, timeout=150):
+def read_pdf(pdf_bytes, prompt=None, timeout=75):
     k = key()
     if not k:
         return None, "nim: no key"
