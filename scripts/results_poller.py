@@ -148,6 +148,19 @@ def inferred_qend(filed):
     if m in (4, 5, 6): return f"31.03.{y}"
     return f"30.06.{y}"
 
+_MC = {}
+def size_ok(code, sales_cr):
+    """Sanity: a company's quarterly sales cannot be absurdly small next to its market cap (a wrong unit or wrong table, e.g. Westlife read as Rs 0.3 Cr). True = fine or unknown."""
+    try:
+        if not _MC:
+            _MC.update(json.load(open("state/mcap_cache.json")))
+        m = _MC.get(str(code))
+        if m and m[0] >= 500 and sales_cr is not None and sales_cr > 0 and sales_cr / m[0] < 1e-4:
+            return False
+    except Exception:
+        pass
+    return True
+
 def build(bse, rec, final=False, age_min=0):
     """Return (kind, text, png_path or None, key). kind 'wait' = BSE numbers not there yet, retry later."""
     code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
@@ -162,6 +175,8 @@ def build(bse, rec, final=False, age_min=0):
         ql = rf.qlabel(q)
         cur, prev, yago = quarters[0]["m"], quarters[1]["m"], quarters[4]["m"]
         sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
+        if not size_ok(code, sales):
+            return stub(name, code, ql, "figures look inconsistent with the company's size - please verify against the filing", lk, f"{code}|{ql}|anomaly")
         sd = 0 if sales and sales >= 100 else 1
         pd_ = 0 if pat and pat >= 100 else 1
         sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
@@ -227,6 +242,8 @@ def build(bse, rec, final=False, age_min=0):
     if r0 and r1 and r0 > 0 and r1 > 0 and (r0 / r1 > 50 or r1 / r0 > 50):
         return stub(name, code, res["quarter"], "figures look inconsistent with the previous quarter - please verify", lk, f"{code}|{res['quarter']}|anomaly")
     sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
+    if not size_ok(code, sales):
+        return stub(name, code, res["quarter"], "figures look inconsistent with the company's size - please verify against the filing", lk, f"{code}|{res['quarter']}|anomaly")
     sd = 0 if sales and sales >= 100 else 1
     pd_ = 0 if pat and pat >= 100 else 1
     sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
