@@ -27,6 +27,26 @@ def pdf_text(b, limit=45000):
         out.append((f"[PAGE {i+1} TABLES]\n{tabs}\n" if len(tabs) > 200 else "") + f"[PAGE {i+1} TEXT]\n{raw}")
     return "\n".join(out)[:limit]
 
+def _nums(text):
+    out = set()
+    for t in re.findall(r"\(?-?\d[\d,]*\.?\d*\)?", text):
+        try: out.add(round(abs(float(t.strip("()").replace(",", ""))), 2))
+        except ValueError: pass
+    return out
+
+def unsupported(j, text):
+    """Every number the model returned must be printed in the filing text. A model that invents plausible, self-consistent numbers passes arithmetic checks, so this is the guard against it."""
+    have = _nums(text)
+    bad = 0
+    for b in ("consolidated", "standalone"):
+        d = j.get(b)
+        if not isinstance(d, dict): continue
+        for k, v in d.items():
+            for x in (v if isinstance(v, list) else []):
+                if isinstance(x, (int, float)) and not isinstance(x, bool) and round(abs(x), 2) not in have and round(abs(x), 2) != 0:
+                    bad += 1
+    return bad
+
 def read_pdf(pdf_bytes, prompt=None, timeout=150):
     k = key()
     if not k:
@@ -54,8 +74,11 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
             last = f"nim {m.split('/')[-1]}: HTTP {r.status_code}"; continue
         try:
             s = re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"].get("content") or "", flags=re.S)
-            j = json.loads(re.search(r"\{.*\}", s, re.S).group(0))
-            return gr._clean(j), None
+            j = gr._clean(json.loads(re.search(r"\{.*\}", s, re.S).group(0)))
         except Exception as e:
-            last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"
+            last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"; continue
+        bad = unsupported(j, txt)
+        if bad:
+            last = f"nim {m.split('/')[-1]}: {bad} numbers not found in the filing text (possible invention): rejected"; continue
+        return j, None
     return None, last
