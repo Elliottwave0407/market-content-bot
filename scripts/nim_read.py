@@ -27,6 +27,8 @@ def pdf_text(b, limit=45000):
         out.append((f"[PAGE {i+1} TABLES]\n{tabs}\n" if len(tabs) > 200 else "") + f"[PAGE {i+1} TEXT]\n{raw}")
     return "\n".join(out)[:limit]
 
+BADL = []
+
 def _nums(text):
     out = set()
     for t in re.findall(r"\(?-?\d[\d,]*\.?\d*\)?", text):
@@ -38,13 +40,14 @@ def unsupported(j, text):
     """Every number the model returned must be printed in the filing text. A model that invents plausible, self-consistent numbers passes arithmetic checks, so this is the guard against it."""
     have = _nums(text)
     bad = 0
+    BADL.clear()
     for b in ("consolidated", "standalone"):
         d = j.get(b)
         if not isinstance(d, dict): continue
         for k, v in d.items():
             for x in (v if isinstance(v, list) else []):
                 if isinstance(x, (int, float)) and not isinstance(x, bool) and round(abs(x), 2) not in have and round(abs(x), 2) != 0:
-                    bad += 1
+                    bad += 1; BADL.append((b[:4], k, x))
     return bad
 
 def read_pdf(pdf_bytes, prompt=None, timeout=150):
@@ -79,6 +82,6 @@ def read_pdf(pdf_bytes, prompt=None, timeout=150):
             last = f"nim {m.split('/')[-1]}: parse {repr(e)[:50]}"; continue
         bad = unsupported(j, txt)
         if bad:
-            last = f"nim {m.split('/')[-1]}: {bad} numbers not found in the filing text (possible invention): rejected"; continue
+            last = f"nim {m.split('/')[-1]}: {bad} numbers not found in the filing text (possible invention): rejected e.g. {BADL[:5]}"; continue
         return j, None
     return None, last
