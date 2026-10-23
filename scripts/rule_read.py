@@ -149,7 +149,9 @@ def _all_matches(rows, pats, start=0, avoid=(), n=None):
             lb, nums, cands = rows[i]
             if len(nums) < 3 or (n is not None and len(nums) != n):
                 continue
-            if any(re.search(p, c) for c in cands) and not any(re.search(a, c) for c in cands for a in avoid):
+            if all(v is None for v in nums[:3]) and not any("tax" in c for c in cands):
+                continue
+            if any(re.search(p, c) and not any(re.search(a, c) for a in avoid) for c in cands):
                 if all(i != j for j, _ in out):
                     out.append((i, nums))
     return out
@@ -267,9 +269,9 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             built.append([lb, nums, [clean_label(lb)]])
         for i in range(len(built)):
             lb, nums, c = built[i]
-            if nums and i > 0 and not built[i - 1][1]:
+            if nums and i > 0 and not built[i - 1][1] and not built[i - 1][0].rstrip().endswith(":") and len(clean_label(lb)) <= 18:
                 c.append(clean_label(built[i - 1][0] + " " + lb))
-            if nums and i + 1 < len(built) and not built[i + 1][1]:
+            if nums and i + 1 < len(built) and not built[i + 1][1] and len(clean_label(built[i + 1][0])) <= 18 and not lb.rstrip().endswith(":"):
                 c.append(clean_label(lb + " " + built[i + 1][0]))
         has_rev = any(len(n_) >= 3 and any(re.search(p, x) for x in c_ for p in PAT_REV) for _, n_, c_ in built)
         if not (has_rev and sum(k in low for k in KEYS) >= 2) and not (prev_table and sum(k in low for k in CONT) >= 2):
@@ -277,7 +279,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             continue
         prev_table = True
         for lb, nums, c in built:
-            if not nums and 3 < len(lb) < 170:
+            if (not nums or (len(nums) <= 2 and all(v is not None and 1990 <= abs(v) <= 2100 for v in nums))) and 3 < len(lb) < 170:
                 l = lb.lower().strip()
                 a, b = bool(re.search(r"\bstandalone\b", l)), bool(re.search(r"\bconsolidated\b", l))
                 title = ("statement" in l or "financial result" in l or "results" in l) and "notes" not in l
