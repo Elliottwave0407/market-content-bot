@@ -344,7 +344,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     if r is not None or why is None:
         return r, why
     import shutil
-    if not shutil.which("tesseract"):
+    if not shutil.which("tesseract") or os.environ.get("RULE_OCR", "0") != "1":
         return None, why
     if not re.search(r"no text layer|no results table|unit not found|header has no quarter|column dates", why):
         return None, why      # text layer was readable: OCR would not fix a table that does not add up
