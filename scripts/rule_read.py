@@ -175,25 +175,11 @@ def _candidates(rows):
     start = pbs[0][0] if pbs else 0
     tx = _all_matches(rows, [r"^total tax expenses?", r"^tax expenses?", r"^total income tax", r"^income tax expenses?", r"^total tax", r"^provision for (income )?tax", r"^tax$"], start=max(0, start - 1), n=n, avoid=("before", "deferred tax asset", "relating to"))
     c["tax"] = tx[:1]
-    if not tx:      # sum printed parts under a "Tax expense" heading
-        for i in range(max(0, start - 1), len(rows)):
-            lb, nums, cands = rows[i]
-            if not nums and any(re.search(r"^tax expenses?|^income tax", x) for x in cands):
-                parts = []
-                for j in range(i + 1, min(i + 8, len(rows))):
-                    l2, n2, c2 = rows[j]
-                    if len(n2) == n and any(re.search(r"current|deferred|earlier|prior|short|excess|\bmat\b", x) for x in c2):
-                        parts.append(n2)
-                    elif parts:
-                        break
-                if parts:
-                    c["tax"] = [(i, [sum((p[k] or 0.0) for p in parts) for k in range(n)])]
-                break
     c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n)[:1]
     pi = pbs[0][0] if pbs else 0
-    pats = _all_matches(rows, [r"^(net )?profit.{0,40}for the (period|quarter|year)", r"^(net )?(profit|loss).{0,30}for the (period|quarter|year)", r"^profit.{0,12}after tax", r"^(net )?profit.{0,30}after tax",
-                               r"^(net )?profit.{0,40}continuing operations"], start=pi + 1, n=n,
-                        avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share"))
+    pats = _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)", r"(profit|loss).{0,30}continuing operations"], start=pi + 1, n=n,
+                        avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit"))
+    pats = [x for x in pats if not re.search(r"^(add|less)\b", clean_label(rows[x[0]][0]))]
     c["pat"] = pats[:4]
     pj = pats[0][0] if pats else pi
     c["eps"] = _all_matches(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, n=n)[:1]
@@ -204,45 +190,55 @@ def _tol(a, b, unit):
     return abs(a - b) <= max(0.0025 * max(abs(a), abs(b)), 0.15 if unit == "crore" else 0.6)
 
 
-def _chk(d, unit):
-    """True if every column that can be tested reconciles; False if one fails; None if the current column cannot be tested."""
-    tested0 = False
-    for i in range(3):
-        g = lambda k: (d.get(k) or [None] * 3)[i]
-        ti, ex, pbt, tax, pat = g("total_income"), g("total_expenses"), g("pbt"), g("tax"), g("pat")
-        exc, dp, fn, asc = g("exceptional"), g("depreciation"), g("finance_costs"), g("associates")
-        if None in (ti, ex, pbt, tax, pat):
-            if i == 0:
-                return None
-            continue
-        e = [0.0] if exc in (None, 0.0) else [exc, -exc]
-        a = [0.0] if asc in (None, 0.0) else [asc, 0.0]
-        c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
-        c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
-        if not (c1 and c2):
-            return False
-        if i == 0:
-            tested0 = True
-    return True if tested0 else None
+def _col_status(d, i, unit):
+    g = lambda k: (d.get(k) or [None] * 3)[i]
+    ti, ex, pbt, tax, pat = g("total_income"), g("total_expenses"), g("pbt"), g("tax"), g("pat")
+    exc, dp, fn, asc = g("exceptional"), g("depreciation"), g("finance_costs"), g("associates")
+    if None in (ti, ex, pbt, tax, pat):
+        return None
+    e = [0.0] if exc in (None, 0.0) else [exc, -exc]
+    a = [0.0] if asc in (None, 0.0) else [asc, 0.0]
+    c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
+    c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
+    return bool(c1 and c2)
 
 
-def _assemble(cands, n, unit):
-    """Try the candidate rows (pbt / pat variants) until the statement reconciles in every column."""
+def _assemble(cands, n, unit, rows):
+    """Try the candidate rows (pbt / pat / tax variants) until the current column reconciles; returns (d, ok, unverified offsets)."""
     keys = [k for k in KEYNAMES if cands.get(k)]
     if "revenue" not in keys or "pat" not in keys:
         return None
-    base = {k: (cands[k][0][1][:3] + [None, None, None])[:3] for k in keys if k not in ("pbt", "pat")}
-    for pb, pt in itertools.product(cands.get("pbt") or [None], cands.get("pat")):
-        d = dict(base)
-        d["pbt"] = ((pb[1][:3] + [None] * 3)[:3]) if pb else [None] * 3
-        d["pat"] = (pt[1][:3] + [None] * 3)[:3]
-        ok = _chk(d, unit)
-        if ok:
-            return d, True
-    d = dict(base)
-    d["pbt"] = ((cands["pbt"][0][1][:3] + [None] * 3)[:3]) if cands.get("pbt") else [None] * 3
-    d["pat"] = (cands["pat"][0][1][:3] + [None] * 3)[:3]
-    return d, False
+    z = lambda lst: [0.0 if v is None else v for v in lst]
+    pad = lambda lst: (list(lst[:3]) + [None] * 3)[:3]
+    base = {k: pad(cands[k][0][1]) for k in keys if k not in ("pbt", "pat", "tax")}
+    for k in ("exceptional", "associates"):
+        if k in base:
+            base[k] = z(base[k])
+    first = None
+    for pb, pt in itertools.product(cands.get("pbt") or [None], cands["pat"]):
+        taxopts = [pad(z(t[1])) for t in (cands.get("tax") or [])]
+        if pb is not None:
+            parts, garbled = [], False
+            for j in range(pb[0] + 1, pt[0]):
+                lb, nums, cl = rows[j]
+                if any(re.search(r"^(current|deferred|earlier|prior|short|excess|adjustment|mat credit|tax of|tax relating|income tax|taxes)", x) and "total" not in x for x in cl):
+                    if len(nums) == n: parts.append(nums)
+                    else: garbled = True
+            if parts and not garbled:
+                taxopts.append(pad([sum((p[k] or 0.0) for p in parts) for k in range(n)]))
+        for tx in taxopts or [None]:
+            d = dict(base)
+            d["pbt"] = pad(pb[1]) if pb else [None] * 3
+            d["pat"] = pad(pt[1])
+            if tx is not None:
+                d["tax"] = tx
+            if first is None:
+                first = d
+            st0 = _col_status(d, 0, unit)
+            if st0:
+                unv = [off for off, i in ((1, 1), (4, 2)) if _col_status(d, i, unit) is not True]
+                return d, True, unv
+    return (first if first is not None else dict(base, pbt=[None] * 3, pat=pad(cands["pat"][0][1]))), False, []
 
 
 def read_pdf(pdf_bytes, hint="", qhint=None):
@@ -340,12 +336,12 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             why.append(f"{b[:4]}: {n} columns")
             if b == "consolidated": return None, "rule: consolidated has " + str(n) + " columns"
             continue
-        r = _assemble(cands, n, unit)
+        r = _assemble(cands, n, unit, rows)
         if r is None:
             why.append(f"{b[:4]}: missing {[k for k in ('revenue', 'pat') if not cands.get(k)]} n={n}")
             if b == "consolidated": return None, f"rule: consolidated table incomplete missing {[k for k in ('revenue', 'pat') if not cands.get(k)]} n={n}"
             continue
-        d, ok = r
+        d, ok, unv = r
         rv_ = cands["revenue"][0][1]
         if ok and n >= 4 and None not in (rv_[0], rv_[3]) and rv_[0] > 0 and rv_[3] > 0:
             if rv_[0] > rv_[3] * 1.02:
@@ -364,6 +360,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
         out[b] = d
         out["_rule_ok"][b] = True
         out["_printed"][b] = 0
+        out.setdefault("_unverified", {})[b] = unv
     if not out["consolidated"] and not out["standalone"]:
         return None, "rule: " + "; ".join(why or ["no results table recognised"])
     if not out["consolidated"]:

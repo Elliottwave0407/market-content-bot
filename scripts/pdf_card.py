@@ -388,6 +388,10 @@ def _try_pdf(bse, rec, st, headline, filed, res_):
         if hist and not all(hist.values()):
             LOG.append(f"pdf history mismatch {name} {basis} cols={cols[:3]} :: " + "; ".join(det))
             continue
+        unv_ = (out.get("_unverified") or {}).get(basis) or []
+        if unv_ and not all(hist.get(o_) for o_ in unv_):
+            LOG.append(f"pdf rule-read previous/year-ago column {unv_} does not reconcile and BSE history does not confirm it {name} {basis}")
+            continue
         strong = len(hist) == 2 and len(hpat) == 2 and all(hpat.values())
         printed_ok = (out.get("_printed") or {}).get(basis) == 0
         pat_chain = None not in (val(d, "pbt", 0), val(d, "tax", 0), val(d, "pat", 0)) and abs(val(d, "pbt", 0) - val(d, "tax", 0) - val(d, "pat", 0)) <= max(1.5, 0.002 * abs(val(d, "pat", 0)))
