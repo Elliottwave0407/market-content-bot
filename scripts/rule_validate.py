@@ -43,9 +43,12 @@ def one(rec):
     c = get(rec)
     if not c: return rec, None, "download failed", 0
     small = pc.trim_pdf(c)
-    out, err = rr.read_pdf(small, hint=(rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or ""))
+    hl = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
+    try: qh = rf.expected_quarter(hl, datetime.fromisoformat(rec["NEWS_DT"][:19]))
+    except Exception: qh = None
+    out, err = rr.read_pdf(small, hint=hl, qhint=qh)
     if out is None and small is not c:
-        out, err = rr.read_pdf(c, hint=(rec.get("NEWSSUB") or ""))
+        out, err = rr.read_pdf(c, hint=hl, qhint=qh)
     return rec, out, err, time.time() - t0
 
 def main():

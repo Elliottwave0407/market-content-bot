@@ -96,6 +96,7 @@ def trim_pdf(content):
     except Exception:
         return content
 
+RULE_BAD = set()      # filings whose rule-read numbers failed a later check: read by Gemini / NVIDIA instead
 EARLY_DEAD = set()      # early 'Board Meeting' rows whose PDF has no results table (nothing to read)
 PREREAD = {}      # nid -> result of the download+Gemini stage, prepared in parallel threads by prefetch()
 
@@ -128,14 +129,14 @@ def _read_stage(rec, st, headline, filed):
     key = geminikey()
     att = rec.get("ATTACHMENTNAME")
     nid = rec["NEWSID"]
-    if not key or not att or os.environ.get("PDF_FAST", "1") != "1":
+    if not att or os.environ.get("PDF_FAST", "1") != "1":
         return None
     import nim_read as nr
     nim_ok = bool(nr.key())
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
-    gem_blocked = time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
-    if TRIES.get(nid, 0) >= 8 or (gem_blocked and not nim_ok) or STATE_["calls"] >= PER_POLL or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
+    gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
+    if TRIES.get(nid, 0) >= 8 or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
         return None
     q_head = rf.expected_quarter(headline, filed)
     TRIES[nid] = TRIES.get(nid, 0) + 1
@@ -154,8 +155,22 @@ def _read_stage(rec, st, headline, filed):
     if rec.get("_EARLY") and not has_results_table(content):
         EARLY_DEAD.add(nid)
         return None
-    STATE_["calls"] += 1
     small = trim_pdf(content)
+    if os.environ.get("RULE_READ", "1") == "1" and os.environ.get("NIM_ONLY") != "1" and nid not in RULE_BAD:
+        try:    # rule reader first: the numbers come straight from the PDF text, no AI call, no quota; only a statement that reconciles in all three columns is accepted
+            import rule_read as rr
+            r_out, r_err = rr.read_pdf(small, hint=headline, qhint=q_head)
+            if r_out is None and small is not content:
+                r_out, r_err = rr.read_pdf(content, hint=headline, qhint=q_head)
+            LOG.append(f"rule reader {rec.get('SLONGNAME')}: {'ok' if r_out else r_err}")
+            if r_out is not None:
+                return r_out, q_head
+        except Exception as e_:
+            LOG.append(f"rule reader error {rec.get('SLONGNAME')}: {repr(e_)[:80]}")
+    if (gem_blocked and not nim_ok) or STATE_["calls"] >= PER_POLL:
+        TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)
+        return None
+    STATE_["calls"] += 1
     out, err = None, "gemini skipped (quota/backoff)"
     if not gem_blocked:
         use[day] = use.get(day, 0) + 1
@@ -226,6 +241,16 @@ def try_pdf(bse, rec, st, headline, filed):
     res_ = PREREAD.pop(nid) if nid in PREREAD else _read_stage(rec, st, headline, filed)
     if res_ is None:
         return None
+    r = _try_pdf(bse, rec, st, headline, filed, res_)
+    if r is None and res_[0].get("_rule") and not res_[0].get("_keep"):
+        RULE_BAD.add(nid)       # the rule-read numbers did not survive the later checks (history, columns): let the AI reader look at this filing
+        TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)
+        LAST_TRY.pop(nid, None)
+        LOG.append(f"rule-read numbers rejected by later checks, AI reader will retry: {rec.get('SLONGNAME')}")
+    return r
+
+def _try_pdf(bse, rec, st, headline, filed, res_):
+    nid = rec["NEWSID"]
     out, q_head = res_
     try:   # remember that this filing HAS consolidated figures, so the BSE-table fallback never posts standalone for it
         c_ = out.get("consolidated")
@@ -301,6 +326,7 @@ def try_pdf(bse, rec, st, headline, filed):
             LOG.append(f"pdf has consolidated but it failed checks: not falling back to standalone {rec.get('SLONGNAME')}")
             return None
         ok, n = arith_ok(d)
+        ok = ok or bool((out.get("_rule_ok") or {}).get(basis))     # the rule reader already proved the statement reconciles in all three columns (incl. exceptional items / associates)
         LOG.append(f"pdf current col {rec.get('SLONGNAME')} {basis} ok={ok}/{n}: " + ", ".join(f"{x}={val(d, x, 0)}" for x in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat", "eps")))
         cur, prev, yago = (to_m(d, i, k) for i in range(3))
         code, name = str(rec["SCRIP_CD"]), rec["SLONGNAME"]
@@ -389,6 +415,7 @@ def try_pdf(bse, rec, st, headline, filed):
         miss = sorted({kk for m_ in (cur, prev, yago) for kk in need if m_.get(kk) is None})
         if miss:
             LOG.append(f"pdf incomplete {name} {basis}: missing {miss} - not posting from PDF")
+            out["_keep"] = True
             return None
         quarters = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 1), "m": prev}, None, None, {"q": rf.qlabel(q - 4), "m": yago}]
         empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}

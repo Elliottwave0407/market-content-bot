@@ -1,13 +1,15 @@
-"""Rule-based reader for result PDFs: pulls the numbers straight out of the PDF's own text layer (no AI, no quota, ~0.3 s).
-Returns the same JSON shape as gemini_read (unit, quarter_end_columns, consolidated, standalone) so every existing check (arithmetic, column dates, BSE-history cross-check,
-size guard) still runs on it. Returns (None, reason) whenever the layout is not recognised: the caller then falls back to Gemini / NVIDIA.
-Numbers are only ever copied from the PDF text, never computed or guessed, except the tax line which is summed from its printed current + deferred parts if no total line exists."""
+"""Rule-based reader for result PDFs: pulls the numbers straight out of the PDF's own text layer (no AI, no quota, ~1 s).
+Returns the same JSON shape as gemini_read (unit, quarter_end_columns, consolidated, standalone) so every existing check (column dates, BSE-history cross-check, size guard) still runs on it.
+It ACCEPTS a table only when the statement reconciles by itself in all three columns (total income - expenses [- exceptional] = profit before tax, and profit before tax - tax [+ associates] = net profit).
+Anything else returns (None, reason) and the caller falls back to Gemini / NVIDIA. Numbers are only ever copied from the PDF text (the tax line is summed from its printed parts if no total line exists)."""
 import re
+import itertools
 
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
-NUMRE = re.compile(r"^\(?[-−–]?\d[\d,]*(\.\d+)?\)?[*#^]?$")
-NILS = {"-", "–", "—", "−", "--", "nil", "NIL", "Nil", "-.-"}
+NUMRE = re.compile(r"^(\(\d[\d,]*(\.\d+)?\)|\(-\d[\d,]*(\.\d+)?\)|[-−–]?\d[\d,]*(\.\d+)?)[*#^]?$")
+NILS = {"-", "–", "—", "−", "--", "nil", "NIL", "Nil"}
 KEYS = ("revenue from operations", "total income", "profit before tax", "profit/(loss) before tax", "profit / (loss) before tax", "total expenses")
+KEYNAMES = ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "exceptional", "pbt", "tax", "associates", "pat", "eps")
 
 
 def _num(t):
@@ -26,7 +28,6 @@ def _isnum(w):
 
 
 def rows_of(page):
-    """Words of a page grouped into visual rows (by vertical position), each row sorted left to right."""
     ws = page.get_text("words")
     if not ws:
         return []
@@ -47,7 +48,6 @@ def rows_of(page):
 
 
 def split_row(row):
-    """-> (label text, [numbers or None...]) : numbers are the trailing run of numeric / nil tokens."""
     toks = [w[4] for w in row]
     i = len(toks)
     while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
@@ -59,8 +59,9 @@ def split_row(row):
 def clean_label(s):
     s = s.lower().replace("’", "'")
     s = re.sub(r"\s+", " ", s).strip()
-    for _ in range(3):
+    for _ in range(4):
         s2 = re.sub(r"^(\(?[a-z]{1,2}\)|\([ivx]{1,4}\)|[ivx]{1,4}\)|\d{1,2}\.|\d{1,2}\)|[-–•*]+)\s*", "", s)
+        s2 = re.sub(r"^\d{1,2}\s+(?=[a-z(])", "", s2)
         s2 = re.sub(r"^(add|less|plus)\s*[:\-]\s*", "", s2)
         if s2 == s:
             break
@@ -68,41 +69,54 @@ def clean_label(s):
     return s.strip(" :")
 
 
-def _date_strings(text):
-    out = []
-    t = text
-    pats = [
-        r"\b(\d{1,2})\s*[./-]\s*(\d{1,2})\s*[./-]\s*(\d{4}|\d{2})\b",
-        r"\b(\d{1,2})(?:st|nd|rd|th)?[\s.,-]*(jan[a-z]*|feb[a-z]*|mar[a-z]*|apr[a-z]*|may|jun[a-z]*|jul[a-z]*|aug[a-z]*|sep[a-z]*|oct[a-z]*|nov[a-z]*|dec[a-z]*)[\s.,'-]*(\d{4}|\d{2})\b",
-        r"\b(jan[a-z]*|feb[a-z]*|mar[a-z]*|apr[a-z]*|may|jun[a-z]*|jul[a-z]*|aug[a-z]*|sep[a-z]*|oct[a-z]*|nov[a-z]*|dec[a-z]*)[\s.]*(\d{1,2})(?:st|nd|rd|th)?[\s,]*(\d{4})\b",
-    ]
+def _dates(text):
     hits = []
-    for pi, p in enumerate(pats):
-        for m in re.finditer(p, t, re.I):
+    mon = r"(jan[a-z]*|feb[a-z]*|mar[a-z]*|apr[a-z]*|may|jun[a-z]*|jul[a-z]*|aug[a-z]*|sep[a-z]*|oct[a-z]*|nov[a-z]*|dec[a-z]*)"
+    pats = [
+        (0, r"\b(\d{1,2})\s*[./-]\s*(\d{1,2})\s*[./-]\s*(\d{4})\b"),
+        (1, r"\b(\d{1,2})(?:st|nd|rd|th)?[\s.,-]*" + mon + r"[\s.,'-]*(\d{4})\b"),
+        (2, r"\b" + mon + r"[\s.]*(\d{1,2})(?:st|nd|rd|th)?[\s,]*(\d{4})\b"),
+    ]
+    for pi, p in pats:
+        for m in re.finditer(p, text, re.I):
             try:
                 g = m.groups()
-                if pi == 0:
-                    d, mo, y = int(g[0]), int(g[1]), int(g[2])
-                elif pi == 1:
-                    d, mo, y = int(g[0]), MONTHS[g[1][:3].lower()], int(g[2])
-                else:
-                    d, mo, y = int(g[1]), MONTHS[g[0][:3].lower()], int(g[2])
-                if y < 100:
-                    y += 2000
+                if pi == 0: d, mo, y = int(g[0]), int(g[1]), int(g[2])
+                elif pi == 1: d, mo, y = int(g[0]), MONTHS[g[1][:3].lower()], int(g[2])
+                else: d, mo, y = int(g[1]), MONTHS[g[0][:3].lower()], int(g[2])
                 if 1 <= d <= 31 and 1 <= mo <= 12 and 2000 <= y <= 2100:
                     hits.append((m.start(), f"{d:02d}.{mo:02d}.{y}"))
             except Exception:
                 pass
     hits.sort()
-    for _, s in hits:
-        if s not in out:
-            out.append(s)
-    return out
+    return [s for _, s in hits]
+
+
+def _layout_ok(ds):
+    ms = []
+    for s in ds[:3]:
+        _, mo, y = s.split(".")
+        ms.append(int(y) * 12 + int(mo))
+    return len(ms) == 3 and (ms[0] - ms[1], ms[0] - ms[2]) in ((3, 12), (12, 3)) and int(ds[0].split(".")[1]) in (3, 6, 9, 12)
+
+
+def _qdates_from_code(q):
+    n = int(q) - 129
+    months = n * 3 + 3
+    y = 2026 + (months - 1) // 12
+    mo = (months - 1) % 12 + 1
+    last = {3: 31, 6: 30, 9: 30, 12: 31}
+
+    def sh(mm, yy, k):
+        t = yy * 12 + (mm - 1) - k
+        return t // 12, t % 12 + 1
+    y1, m1 = sh(mo, y, 3)
+    y2, m2 = sh(mo, y, 12)
+    return [f"{last[mo]:02d}.{mo:02d}.{y}", f"{last[m1]:02d}.{m1:02d}.{y1}", f"{last[m2]:02d}.{m2:02d}.{y2}"]
 
 
 def _unit(text):
-    t = text.lower()
-    m = re.search(r"(lakhs?|lacs?|lakh|crores?|\bcrs?\b|millions?|\bmn\b|thousands?|'000)", t)
+    m = re.search(r"(lakhs?|lacs?|crores?|\bcrs?\b|millions?|\bmn\b|thousands?|'000)", text.lower())
     if not m:
         return None
     w = m.group(1)
@@ -119,75 +133,117 @@ def _pdf_rows(pdf_bytes, max_pages=14):
     for i, pg in enumerate(d):
         if i >= max_pages:
             break
-        txt = pg.get_text("text")
-        pages.append((txt, rows_of(pg)))
+        pages.append((pg.get_text("text"), rows_of(pg)))
     return pages
 
 
 PAT_REV = [r"^total revenue from operations", r"^revenue from operations", r"^total income from operations", r"^income from operations",
-           r"^net sales/income from operations", r"^net sales", r"^sales/income from operations", r"^sales", r"^revenue from operation"]
+           r"^net sales/income from operations", r"^net sales", r"^sales/income from operations", r"^sales\b", r"^revenue from operation"]
 
 
-def _first_match(rows, pats, start=0, need=3, avoid=()):
+def _all_matches(rows, pats, start=0, avoid=(), n=None):
+    out = []
     for p in pats:
         for i in range(start, len(rows)):
             lb, nums, cands = rows[i]
-            if len(nums) < need:
+            if len(nums) < 3 or (n is not None and len(nums) != n):
                 continue
-            for c in cands:
-                if re.search(p, c) and not any(re.search(a, c) for a in avoid):
-                    return i, nums
-    return None, None
+            if any(re.search(p, c) for c in cands) and not any(re.search(a, c) for c in cands for a in avoid):
+                if all(i != j for j, _ in out):
+                    out.append((i, nums))
+    return out
 
 
-def _pick_rows(rows):
-    """rows: [(label, nums, cands)] of one basis block -> dict key -> index of 3 numbers [c,p,y] (None for nil)."""
-    got = {}
-    def put(key, hit):
-        i, nums = hit
-        if i is not None and key not in got:
-            got[key] = (i, nums)
-    put("revenue", _first_match(rows, PAT_REV, need=3, avoid=("other operating", "segment")))
-    put("total_income", _first_match(rows, [r"^total income\b(?! from operations)", r"^total revenue\b(?! from operations)"], need=3, avoid=("from operations", "segment")))
-    put("other_income", _first_match(rows, [r"^other income"], need=3))
-    put("total_expenses", _first_match(rows, [r"^total expenses", r"^total expenditure"], need=3))
-    put("finance_costs", _first_match(rows, [r"^finance costs?", r"^interest and finance", r"^finance charges", r"^interest expenses?"], need=3))
-    put("depreciation", _first_match(rows, [r"^depreciation", r"^amortisation|^amortization"], need=3))
-    pb = _first_match(rows, [r"before tax", r"before income tax"], need=3, avoid=("exceptional", "extraordinary", "associate", "joint venture", "share of"))
-    put("pbt", pb)
-    start = pb[0] if pb[0] is not None else 0
-    tx = _first_match(rows, [r"^total tax expenses?", r"^tax expenses?", r"^total income tax", r"^income tax expenses?", r"^total tax", r"^provision for (income )?tax", r"^tax$"], start=start, need=3,
-                      avoid=("before", "deferred tax asset", "relating to"))
-    if tx[0] is not None:
-        put("tax", tx)
-    else:       # sum printed parts under a "Tax expense" heading
-        for i in range(start, len(rows)):
+def _candidates(rows):
+    rv = _all_matches(rows, PAT_REV, avoid=("other operating", "segment"))
+    if not rv:
+        return None
+    n = len(rv[0][1])
+    c = {"revenue": rv[:1]}
+    c["total_income"] = _all_matches(rows, [r"^total income\b(?! from operations)", r"^total revenue\b(?! from operations)"], n=n, avoid=("from operations", "segment"))[:1]
+    c["other_income"] = _all_matches(rows, [r"^other income"], n=n)[:1]
+    c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
+    c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
+    c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
+    c["exceptional"] = _all_matches(rows, [r"^exceptional"], n=n)[:1]
+    pbs = _all_matches(rows, [r"before tax", r"before income tax"], n=n, avoid=("exceptional", "extraordinary", "associate", "joint venture", "share of", "discontinued"))
+    pbs += _all_matches(rows, [r"before exceptional.{0,30}tax", r"before extraordinary.{0,30}tax", r"before exceptional items and tax"], n=n, avoid=("associate", "share of", "discontinued"))
+    c["pbt"] = pbs[:3]
+    start = pbs[0][0] if pbs else 0
+    tx = _all_matches(rows, [r"^total tax expenses?", r"^tax expenses?", r"^total income tax", r"^income tax expenses?", r"^total tax", r"^provision for (income )?tax", r"^tax$"], start=max(0, start - 1), n=n, avoid=("before", "deferred tax asset", "relating to"))
+    c["tax"] = tx[:1]
+    if not tx:      # sum printed parts under a "Tax expense" heading
+        for i in range(max(0, start - 1), len(rows)):
             lb, nums, cands = rows[i]
-            if not nums and any(re.search(r"^tax expenses?|^income tax", c) for c in cands):
+            if not nums and any(re.search(r"^tax expenses?|^income tax", x) for x in cands):
                 parts = []
-                for j in range(i + 1, min(i + 7, len(rows))):
+                for j in range(i + 1, min(i + 8, len(rows))):
                     l2, n2, c2 = rows[j]
-                    if len(n2) >= 3 and any(re.search(r"current|deferred|earlier|prior|short|excess|mat\b", c) for c in c2):
+                    if len(n2) == n and any(re.search(r"current|deferred|earlier|prior|short|excess|\bmat\b", x) for x in c2):
                         parts.append(n2)
                     elif parts:
                         break
                 if parts:
-                    n = min(len(p) for p in parts)
-                    got["tax"] = (i, [sum((p[k] or 0.0) for p in parts) for k in range(n)])
+                    c["tax"] = [(i, [sum((p[k] or 0.0) for p in parts) for k in range(n)])]
                 break
-    pi = got["pbt"][0] if "pbt" in got else 0
-    pat = _first_match(rows, [r"^(net )?profit.{0,40}for the (period|quarter|year)", r"^(net )?(profit|loss).{0,30}for the (period|quarter|year)", r"^profit.{0,12}after tax", r"^(net )?profit.{0,30}after tax"],
-                       start=pi + 1, need=3, avoid=("before", "attributable", "comprehensive", "discontinued", "owners", "non-controlling", "minority", "per share"))
-    if pat[0] is None:
-        pat = _first_match(rows, [r"^(net )?profit.{0,40}(continuing operations)"], start=pi + 1, need=3, avoid=("before", "attributable", "comprehensive", "discontinued", "owners"))
-    put("pat", pat)
-    pj = got["pat"][0] if "pat" in got else pi
-    put("eps", _first_match(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, need=3, avoid=("diluted only",)))
-    return got
+    c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n)[:1]
+    pi = pbs[0][0] if pbs else 0
+    pats = _all_matches(rows, [r"^(net )?profit.{0,40}for the (period|quarter|year)", r"^(net )?(profit|loss).{0,30}for the (period|quarter|year)", r"^profit.{0,12}after tax", r"^(net )?profit.{0,30}after tax",
+                               r"^(net )?profit.{0,40}continuing operations"], start=pi + 1, n=n,
+                        avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share"))
+    c["pat"] = pats[:4]
+    pj = pats[0][0] if pats else pi
+    c["eps"] = _all_matches(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, n=n)[:1]
+    return c, n
 
 
-def read_pdf(pdf_bytes, hint=""):
-    """-> (json, None) or (None, reason)."""
+def _tol(a, b, unit):
+    return abs(a - b) <= max(0.0025 * max(abs(a), abs(b)), 0.15 if unit == "crore" else 0.6)
+
+
+def _chk(d, unit):
+    """True if every column that can be tested reconciles; False if one fails; None if the current column cannot be tested."""
+    tested0 = False
+    for i in range(3):
+        g = lambda k: (d.get(k) or [None] * 3)[i]
+        ti, ex, pbt, tax, pat = g("total_income"), g("total_expenses"), g("pbt"), g("tax"), g("pat")
+        exc, dp, fn, asc = g("exceptional"), g("depreciation"), g("finance_costs"), g("associates")
+        if None in (ti, ex, pbt, tax, pat):
+            if i == 0:
+                return None
+            continue
+        e = [0.0] if exc in (None, 0.0) else [exc, -exc]
+        a = [0.0] if asc in (None, 0.0) else [asc, 0.0]
+        c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
+        c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
+        if not (c1 and c2):
+            return False
+        if i == 0:
+            tested0 = True
+    return True if tested0 else None
+
+
+def _assemble(cands, n, unit):
+    """Try the candidate rows (pbt / pat variants) until the statement reconciles in every column."""
+    keys = [k for k in KEYNAMES if cands.get(k)]
+    if "revenue" not in keys or "pat" not in keys:
+        return None
+    base = {k: (cands[k][0][1][:3] + [None, None, None])[:3] for k in keys if k not in ("pbt", "pat")}
+    for pb, pt in itertools.product(cands.get("pbt") or [None], cands.get("pat")):
+        d = dict(base)
+        d["pbt"] = ((pb[1][:3] + [None] * 3)[:3]) if pb else [None] * 3
+        d["pat"] = (pt[1][:3] + [None] * 3)[:3]
+        ok = _chk(d, unit)
+        if ok:
+            return d, True
+    d = dict(base)
+    d["pbt"] = ((cands["pbt"][0][1][:3] + [None] * 3)[:3]) if cands.get("pbt") else [None] * 3
+    d["pat"] = (cands["pat"][0][1][:3] + [None] * 3)[:3]
+    return d, False
+
+
+def read_pdf(pdf_bytes, hint="", qhint=None):
+    """-> (json, None) or (None, reason). qhint: BSE quarter code from the filing headline (used for the column dates when the header cannot be read)."""
     try:
         pages = _pdf_rows(pdf_bytes)
     except Exception as e:
@@ -198,8 +254,8 @@ def read_pdf(pdf_bytes, hint=""):
         return None, "rule: no text layer"
     blocks = {"standalone": [], "consolidated": []}
     basis = None
-    dates, unit = [], None
-    seen_table = False
+    htxt = ""
+    first = True
     for pno, (txt, rws) in enumerate(pages):
         low = txt.lower()
         if sum(k in low for k in KEYS) < 2:
@@ -207,77 +263,81 @@ def read_pdf(pdf_bytes, hint=""):
         built = []
         for r in rws:
             lb, nums = split_row(r)
-            cl = clean_label(lb)
-            built.append([lb, nums, [cl]])
-        for i in range(len(built)):     # wrapped labels: a label-only row above / below a number row belongs to it
+            built.append([lb, nums, [clean_label(lb)]])
+        for i in range(len(built)):
             lb, nums, c = built[i]
             if nums and i > 0 and not built[i - 1][1]:
                 c.append(clean_label(built[i - 1][0] + " " + lb))
             if nums and i + 1 < len(built) and not built[i + 1][1]:
                 c.append(clean_label(lb + " " + built[i + 1][0]))
-            if nums and not lb and i > 0 and not built[i - 1][1]:
-                c.append(clean_label(built[i - 1][0]))
-        page_basis = basis
-        page_rows = []
-        for i, (lb, nums, c) in enumerate(built):
-            if not nums and 6 < len(lb) < 170:
-                l = lb.lower()
-                if ("statement" in l or "financial result" in l or "results" in l) and "notes" not in l:
-                    a, b = bool(re.search(r"\bstandalone\b", l)), bool(re.search(r"\bconsolidated\b", l))
-                    if a != b:
-                        page_basis = "standalone" if a else "consolidated"
-            if page_basis is None and not any(w in txt.lower()[:3000] for w in ("consolidated",)):
-                pass
-            page_rows.append((page_basis or "standalone", (lb, nums, c)))
-        if basis is None and not any(b for b, _ in page_rows if False):
-            pass
-        for b, row in page_rows:
-            blocks[b].append(row)
-            basis = b
-        if not seen_table:
-            seen_table = True
+        for lb, nums, c in built:
+            if not nums and 3 < len(lb) < 170:
+                l = lb.lower().strip()
+                a, b = bool(re.search(r"\bstandalone\b", l)), bool(re.search(r"\bconsolidated\b", l))
+                title = ("statement" in l or "financial result" in l or "results" in l) and "notes" not in l
+                bare = re.match(r"^\(?(standalone|consolidated)\)?( financial)?( results)?$", l)
+                if a != b and (title or bare):
+                    basis = "standalone" if a else "consolidated"
+            blocks[basis or "standalone"].append((lb, nums, c))
+        if first:
+            first = False
             head = []
-            for lb, nums, c in [x for _, x in page_rows]:
-                if any(re.search(p, c[0]) for p in PAT_REV[:3]) and len(nums) >= 3:
+            for lb, nums, c in built:
+                if len(nums) >= 3 and any(re.search(p, c[0]) for p in PAT_REV[:3]):
                     break
                 head.append(lb)
             htxt = " ".join(head)
-            dates = _date_strings(htxt)
-            unit = _unit(htxt) or _unit(txt[:2500]) or _unit(txt)
+    low = htxt.lower()
+    qpos = [m.start() for m in re.finditer(r"quarter|three months|3 months", low)]
+    hpos = [m.start() for m in re.finditer(r"half[\s-]*year|six months|6 months|nine months|9 months|year ended|year to date|year-to-date|12 months", low)]
+    if not qpos:
+        return None, "rule: header has no quarter columns"
+    if hpos and min(hpos) < min(qpos):
+        return None, "rule: header starts with half-year/year columns"
+    unit = _unit(htxt) or _unit(" ".join(t[:2500] for t, _ in pages[:3]))
     if not unit:
         return None, "rule: unit not found"
-    if not dates:
-        dates = _date_strings(hint)[:1]
-        if dates:
-            d, mo, y = dates[0].split(".")
-            mo, y = int(mo), int(y)
-            def shift(mm, yy, k):
-                t = yy * 12 + (mm - 1) - k
-                return t // 12, t % 12 + 1
-            (y1, m1), (y2, m2) = shift(mo, y, 3), shift(mo, y, 12)
-            last = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
-            dates = [dates[0], f"{last[m1]:02d}.{m1:02d}.{y1}", f"{last[m2]:02d}.{m2:02d}.{y2}"]
-        else:
-            return None, "rule: column dates not found"
-    out = {"unit": unit, "quarter_end_columns": dates[:3], "consolidated": None, "standalone": None, "_rule": True}
+    ds = _dates(htxt)
+    if not (len(ds) >= 3 and _layout_ok(ds)):
+        ds = _qdates_from_code(qhint) if qhint is not None else []
+    if not ds:
+        return None, "rule: column dates not found"
+    out = {"unit": unit, "quarter_end_columns": ds[:3], "consolidated": None, "standalone": None, "_rule": True, "_rule_ok": {}, "_printed": {}}
+    why = []
     for b in ("consolidated", "standalone"):
         rows = blocks[b]
         if not rows:
             continue
-        got = _pick_rows(rows)
-        if "revenue" not in got or "pat" not in got:
+        cc = _candidates(rows)
+        if not cc:
+            why.append(f"{b[:4]}: no revenue row")
             continue
-        lens = {len(got[k][1]) for k in ("revenue", "pat") if k in got}
-        if len(lens) != 1 or max(lens) > 9:
+        cands, n = cc
+        if n > 9:
+            why.append(f"{b[:4]}: {n} columns")
+            if b == "consolidated": return None, "rule: consolidated has " + str(n) + " columns"
             continue
-        d = {}
-        for k in ("revenue", "other_income", "total_income", "total_expenses", "finance_costs", "depreciation", "pbt", "tax", "pat", "eps"):
-            if k in got:
-                n = got[k][1]
-                d[k] = (n[:3] + [None, None, None])[:3]
-            else:
-                d[k] = [None, None, None]
+        r = _assemble(cands, n, unit)
+        if r is None:
+            why.append(f"{b[:4]}: missing {[k for k in ('revenue', 'pat') if not cands.get(k)]}")
+            if b == "consolidated": return None, "rule: consolidated table incomplete"
+            continue
+        d, ok = r
+        if not ok:
+            why.append(f"{b[:4]}: does not reconcile")
+            if b == "consolidated": return None, "rule: consolidated table does not reconcile"
+            continue
+        for k in KEYNAMES:
+            d.setdefault(k, [None, None, None])
+        e = d.pop("exceptional", None)
+        d.pop("associates", None)
         out[b] = d
+        out["_rule_ok"][b] = True
+        out["_printed"][b] = 0
     if not out["consolidated"] and not out["standalone"]:
-        return None, "rule: no results table recognised"
+        return None, "rule: " + "; ".join(why or ["no results table recognised"])
+    if not out["consolidated"]:
+        alltxt = " ".join(t for t, _ in pages).lower()
+        if re.search(r"statement of consolidated|consolidated (un)?audited financial results|consolidated financial results", alltxt):
+            return None, "rule: filing mentions consolidated results but that table was not read"
     return out, None
