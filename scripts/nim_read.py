@@ -50,6 +50,18 @@ def unsupported(j, text):
                     bad += 1; BADL.append((b[:4], k, x))
     return bad
 
+def cur_unsupported(j, text, basis):
+    """How many of the CURRENT column's headline numbers (revenue, pbt, tax, pat, eps) are not printed anywhere in the filing text."""
+    d = j.get(basis)
+    if not isinstance(d, dict): return None
+    have = _nums(text); bad = 0
+    for k in ("revenue", "pbt", "tax", "pat", "eps"):
+        v = d.get(k)
+        x = v[0] if isinstance(v, list) and v else None
+        if isinstance(x, (int, float)) and not isinstance(x, bool) and round(abs(x), 2) != 0 and round(abs(x), 2) not in have:
+            bad += 1
+    return bad
+
 def read_pdf(pdf_bytes, prompt=None, timeout=150):
     k = key()
     if not k:

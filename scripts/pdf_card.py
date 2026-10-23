@@ -1,6 +1,6 @@
 """Fast path: read the filing PDF with Gemini, verify it, return card data. Returns None whenever anything is doubtful."""
 import os, re, time
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
 import results_fetcher as rf
 import gemini_read as gr
@@ -112,6 +112,17 @@ def has_results_table(content):
         return True
     return False
 
+def _annotate(out, small):
+    """Mark whether the current column's headline numbers are printed in the PDF's own text layer (guards against a misread; scanned PDFs have no text and stay unmarked)."""
+    try:
+        import nim_read as nr
+        txt = nr.pdf_text(small, limit=250000)
+        if len(re.sub(r"\W", "", txt)) > 400:
+            out["_printed"] = {b: nr.cur_unsupported(out, txt, b) for b in ("consolidated", "standalone")}
+    except Exception:
+        pass
+    return out
+
 def _read_stage(rec, st, headline, filed):
     """Download the filing PDF and read it with Gemini. -> (out, q_head) or None (gated / failed). Thread-safe enough: only dict and counter updates."""
     key = geminikey()
@@ -155,7 +166,7 @@ def _read_stage(rec, st, headline, filed):
         out, err2 = nr.read_pdf(small)
         LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:40]})")
         if out is not None:
-            return out, q_head
+            return _annotate(out, small), q_head
         err = f"{err}; {err2}"
     if out is None:
         if err and ("429" in err or "503" in err):
@@ -163,7 +174,7 @@ def _read_stage(rec, st, headline, filed):
             TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)    # a quota / busy answer is not the filing's fault: do not use up its tries (23 Oct: 20+ filings gave up during a quota outage)
         LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:80]}")
         return None
-    return out, q_head
+    return _annotate(out, small), q_head
 
 def prefetch(recs, st, workers=4):
     """Run the download+Gemini stage for several filings at the same time (it is network wait, not CPU), so a burst of results does not queue up one by one."""
@@ -352,9 +363,14 @@ def try_pdf(bse, rec, st, headline, filed):
             LOG.append(f"pdf history mismatch {name} {basis} cols={cols[:3]} :: " + "; ".join(det))
             continue
         strong = len(hist) == 2 and len(hpat) == 2 and all(hpat.values())
-        if not ok and not strong:
+        printed_ok = (out.get("_printed") or {}).get(basis) == 0
+        pat_chain = None not in (val(d, "pbt", 0), val(d, "tax", 0), val(d, "pat", 0)) and abs(val(d, "pbt", 0) - val(d, "tax", 0) - val(d, "pat", 0)) <= max(1.5, 0.002 * abs(val(d, "pat", 0)))
+        relaxed = (not ok and not strong and printed_ok and pat_chain)     # table arithmetic does not reconcile (associates, exceptional items...) but the headline numbers are printed in the filing and pbt - tax = pat
+        if not ok and not strong and not relaxed:
             LOG.append(f"pdf checks failed {name} {basis}")
             continue
+        if relaxed:
+            LOG.append(f"pdf accepted on printed-numbers check (table arithmetic not reconciled) {name} {basis}")
         if ok:
             note = "history-verified" if hist else "no BSE history (arithmetic-checked only)"
         else:
@@ -364,7 +380,12 @@ def try_pdf(bse, rec, st, headline, filed):
             return None
         rv0, fc0 = val(d, "revenue", 0), val(d, "finance_costs", 0)
         fin_heavy = bool(rv0 and fc0 is not None and fc0 / rv0 >= 0.25)   # banks / NBFCs: no operating-profit row
-        need = ("revenue", "pat", "eps") + (() if fin_heavy else ("ebitda",))
+        try:
+            age_f = (datetime.utcnow() + timedelta(hours=5, minutes=30) - filed).total_seconds() / 60
+        except Exception:
+            age_f = 0
+        # EPS may be missing from a filing's table (shown as '-'); operating profit may be unverifiable: give BSE's own table 10 minutes to supply it, then post the card without it rather than wait for a day
+        need = ("revenue", "pat") + (() if fin_heavy or age_f >= 10 else ("ebitda",))
         miss = sorted({kk for m_ in (cur, prev, yago) for kk in need if m_.get(kk) is None})
         if miss:
             LOG.append(f"pdf incomplete {name} {basis}: missing {miss} - not posting from PDF")

@@ -15,7 +15,7 @@ MAX_POSTS = int(os.environ.get("POLL_MAX", "30"))
 DAYS_BACK = int(os.environ.get("POLL_DAYS", "1"))
 MIN_CR = float(os.environ.get("POLL_MIN_CR", "0"))
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "24"))   # how long to wait for BSE numbers before posting a no-numbers card
+WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "0.75"))   # how long to wait for BSE numbers before posting a no-numbers card
 ONLY = [x.strip().upper() for x in os.environ.get("POLL_ONLY", "").split(",") if x.strip()]   # test mode: only these companies, ignores/does not touch saved state
 RETRY_SEC = int(os.environ.get("POLL_RETRY_SEC", "90"))
 STATE = "state/seen.json"
@@ -200,7 +200,7 @@ def build(bse, rec, final=False, age_min=0):
         # STANDING RULE: never post standalone while a consolidated result exists or may exist.
         so = bool((_ST or {}).get("standalone_only", {}).get(str(rec["NEWSID"])))
         if cons_expected:
-            if age_min < 72 * 60:
+            if age_min < 180:
                 return ("wait", "consolidated numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
             return stub(name, code, res["quarter"], "consolidated numbers not yet published on BSE", lk, f"{code}|{res['quarter']}|nocons")
         if not so and age_min < 120:
