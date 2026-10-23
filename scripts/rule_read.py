@@ -254,16 +254,21 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
         return None, "rule: no text layer"
     blocks = {"standalone": [], "consolidated": []}
     basis = None
-    htxt = ""
+    htxt, first_page_txt = "", ""
     first = True
+    prev_table = False
+    CONT = KEYS + ("tax expense", "net profit", "earnings per share", "basic")
     for pno, (txt, rws) in enumerate(pages):
         low = txt.lower()
-        if sum(k in low for k in KEYS) < 2:
-            continue
         built = []
         for r in rws:
             lb, nums = split_row(r)
             built.append([lb, nums, [clean_label(lb)]])
+        has_rev = any(len(n_) >= 3 and any(re.search(p, c_[0]) for p in PAT_REV[:3]) for _, n_, c_ in built)
+        if not (has_rev and sum(k in low for k in KEYS) >= 2) and not (prev_table and sum(k in low for k in CONT) >= 2):
+            prev_table = False
+            continue
+        prev_table = True
         for i in range(len(built)):
             lb, nums, c = built[i]
             if nums and i > 0 and not built[i - 1][1]:
@@ -281,25 +286,40 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             blocks[basis or "standalone"].append((lb, nums, c))
         if first:
             first = False
+            first_page_txt = txt
             head = []
             for lb, nums, c in built:
                 if len(nums) >= 3 and any(re.search(p, c[0]) for p in PAT_REV[:3]):
                     break
                 head.append(lb)
             htxt = " ".join(head)
+    if first:
+        return None, "rule: no results table page"
     low = htxt.lower()
-    qpos = [m.start() for m in re.finditer(r"quarter|three months|3 months", low)]
-    hpos = [m.start() for m in re.finditer(r"half[\s-]*year|six months|6 months|nine months|9 months|year ended|year to date|year-to-date|12 months", low)]
-    if not qpos:
+    if not re.search(r"quarter|three months|3 months", low + " " + first_page_txt[:2500].lower()):
         return None, "rule: header has no quarter columns"
-    if hpos and min(hpos) < min(qpos):
-        return None, "rule: header starts with half-year/year columns"
     unit = _unit(htxt) or _unit(" ".join(t[:2500] for t, _ in pages[:3]))
     if not unit:
         return None, "rule: unit not found"
     ds = _dates(htxt)
     if not (len(ds) >= 3 and _layout_ok(ds)):
-        ds = _qdates_from_code(qhint) if qhint is not None else []
+        ds = []
+        qd = None
+        for src in (htxt, first_page_txt[:3000], hint):
+            m = re.search(r"(?:quarter|three months)[^.\n]{0,45}?ended\s*(?:on\s*)?([^\n]{0,28})", src, re.I)
+            dd = _dates(m.group(1)) if m else []
+            if dd and int(dd[0].split(".")[1]) in (3, 6, 9, 12):
+                qd = dd[0]; break
+        qc = _qdates_from_code(qhint) if qhint is not None else []
+        if qd and qc and qd != qc[0]:
+            return None, "rule: title quarter differs from the headline quarter"
+        if qc:
+            ds = qc
+        elif qd:
+            d_, mo_, y_ = qd.split(".")
+            mo_, y_ = int(mo_), int(y_)
+            code_ = 129 + ((y_ - 2026) * 12 + (mo_ - 3)) // 3
+            ds = _qdates_from_code(code_)
     if not ds:
         return None, "rule: column dates not found"
     out = {"unit": unit, "quarter_end_columns": ds[:3], "consolidated": None, "standalone": None, "_rule": True, "_rule_ok": {}, "_printed": {}}
@@ -323,6 +343,12 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
             if b == "consolidated": return None, "rule: consolidated table incomplete"
             continue
         d, ok = r
+        rv_ = cands["revenue"][0][1]
+        if ok and n >= 4 and None not in (rv_[0], rv_[3]) and rv_[0] > 0 and rv_[3] > 0:
+            if rv_[0] > rv_[3] * 1.02:
+                ok = False; why.append(f"{b[:4]}: first column larger than the year-to-date column")
+            elif n >= 5 and ds[0].split(".")[1] == "09" and rv_[1] is not None and abs(rv_[3] - rv_[0] - rv_[1]) > 0.02 * rv_[3]:
+                ok = False; why.append(f"{b[:4]}: half-year column is not quarter + previous quarter")
         if not ok:
             why.append(f"{b[:4]}: does not reconcile")
             if b == "consolidated": return None, "rule: consolidated table does not reconcile"
