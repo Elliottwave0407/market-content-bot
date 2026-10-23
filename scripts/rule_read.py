@@ -3,6 +3,7 @@ Returns the same JSON shape as gemini_read (unit, quarter_end_columns, consolida
 It ACCEPTS a table only when the statement reconciles by itself in all three columns (total income - expenses [- exceptional] = profit before tax, and profit before tax - tax [+ associates] = net profit).
 Anything else returns (None, reason) and the caller falls back to Gemini / NVIDIA. Numbers are only ever copied from the PDF text (the tax line is summed from its printed parts if no total line exists)."""
 import re
+import os
 import itertools
 
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
@@ -155,8 +156,8 @@ class OcrPage:
         return " ".join(w[4] for w in self._w)
 
 
-def _ocr_words(pg, angle=0, dpi=250):
-    import subprocess, tempfile, os
+def _ocr_words(pg, angle=0, dpi=200):
+    import subprocess, tempfile
     import fitz
     sc = dpi / 72.0
     pix = pg.get_pixmap(matrix=fitz.Matrix(sc, sc), colorspace=fitz.csGRAY)
@@ -170,7 +171,7 @@ def _ocr_words(pg, angle=0, dpi=250):
     with tempfile.TemporaryDirectory() as td:
         f = os.path.join(td, "p.png")
         open(f, "wb").write(data)
-        r = subprocess.run(["tesseract", f, "stdout", "--psm", "6", "-c", "preserve_interword_spaces=1", "tsv"], capture_output=True, text=True, timeout=90)
+        r = subprocess.run(["tesseract", f, "stdout", "--psm", "6", "-c", "preserve_interword_spaces=1", "tsv"], capture_output=True, text=True, timeout=60, env=dict(os.environ, OMP_THREAD_LIMIT="1"))
     out, confs = [], []
     for ln in r.stdout.splitlines()[1:]:
         c = ln.split("\t")
@@ -333,6 +334,8 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     import shutil
     if not shutil.which("tesseract"):
         return None, why
+    if not re.search(r"no text layer|no results table|unit not found|header has no quarter|column dates", why):
+        return None, why      # text layer was readable: OCR would not fix a table that does not add up
     try:
         r2, why2 = _read(pdf_bytes, hint, qhint, True)
     except Exception as e:
