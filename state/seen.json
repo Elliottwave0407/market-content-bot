@@ -836,7 +836,45 @@
 "523826|Sep-26|standalone",
 "537254|Sep-26|consolidated"
 ],
-"pending": {},
+"pending": {
+"c1cef82a-9f2a-4fc8-8e62-219f9f71fe12": {
+"rec": {
+"NEWSID": "c1cef82a-9f2a-4fc8-8e62-219f9f71fe12",
+"SCRIP_CD": 502450,
+"XML_NAME": "ANN_502450_C1CEF82A-9F2A-4FC8-8E62-219F9F71FE12",
+"NEWSSUB": "Seshasayee Paper and Boards Ltd - 502450 - Standalone And Consolidated Un-Audited Financial Results For The Quarter And Half-Year Ended September 30, 2026",
+"DT_TM": "2026-10-24T14:32:49.983",
+"NEWS_DT": "2026-10-24T14:32:49.983",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "ced8c3f4-2ff7-4aa4-b15d-3b57738ff803.pdf",
+"MORE": "",
+"HEADLINE": "Standalone and Consolidated Un-audited Financial Results for the quarter and half-year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/seshasayee-paper-and-boards-ltd/seshapaper/502450/",
+"SLONGNAME": "Seshasayee Paper and Boards Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 4,
+"News_submission_dt": "2026-10-24T14:32:49",
+"DissemDT": "2026-10-24T14:32:49.983",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1633784,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1792832593.7465694,
+"last": 1792832669.5219
+}
+},
 "lag": [
 [
 "Adroit Industries (India) Ltd",
@@ -1648,7 +1686,7 @@
 "2026-10-21": 340,
 "2026-10-22": 451,
 "2026-10-23": 450,
-"2026-10-24": 26
+"2026-10-24": 27
 },
 "pdfposted": {
 "541799|Sep-26|standalone": {
@@ -1659,7 +1697,7 @@
 "rev": 4.0485,
 "pat": 0.1958,
 "t": 1792664215.3228831,
-"last": 1792832270.662055
+"last": 1792832572.748204
 },
 "541770|Sep-26|consolidated": {
 "code": "541770",
@@ -1669,7 +1707,7 @@
 "rev": 19037.4,
 "pat": 5015.7,
 "t": 1792670394.2537055,
-"last": 1792832270.662055
+"last": 1792832572.748204
 },
 "523232|Sep-26|consolidated": {
 "code": "523232",
@@ -1679,7 +1717,7 @@
 "rev": 265.108,
 "pat": 8.66,
 "t": 1792671627.6866426,
-"last": 1792832270.662055
+"last": 1792832572.748204
 },
 "531212|Sep-26|standalone": {
 "code": "531212",
@@ -1689,7 +1727,7 @@
 "rev": 24.286,
 "pat": 11.484000000000002,
 "t": 1792743461.8637443,
-"last": 1792832270.662055
+"last": 1792832572.748204
 },
 "531515|Sep-26|standalone": {
 "code": "531515",
@@ -1739,7 +1777,7 @@
 "rev": 0.0,
 "pat": -0.609,
 "t": 1792752508.3952873,
-"last": 1792832196.791693
+"last": 1792832496.905909
 },
 "509917|Sep-26|standalone": {
 "code": "509917",
@@ -1749,7 +1787,7 @@
 "rev": 0.0,
 "pat": -0.622,
 "t": 1792752536.4713585,
-"last": 1792832196.791693
+"last": 1792832496.905909
 },
 "531597|Sep-26|standalone": {
 "code": "531597",
@@ -1759,7 +1797,7 @@
 "rev": 0.0,
 "pat": 0.0,
 "t": 1792752542.556736,
-"last": 1792832196.791693
+"last": 1792832496.905909
 },
 "544662|Sep-26|standalone": {
 "code": "544662",
@@ -1769,7 +1807,7 @@
 "rev": 0.0,
 "pat": -1.067,
 "t": 1792753056.8389325,
-"last": 1792832196.791693
+"last": 1792832496.905909
 },
 "537954|Sep-26|standalone": {
 "code": "537954",
@@ -1839,7 +1877,7 @@
 "rev": 6.223,
 "pat": 14.933000000000002,
 "t": 1792829796.3722858,
-"last": 1792832253.539503
+"last": 1792832554.9069417
 },
 "516092|Sep-26|consolidated": {
 "code": "516092",
@@ -1850,16 +1888,6 @@
 "pat": 10.600000000000001,
 "t": 1792830655.6851387,
 "last": 1792832466.906782
-},
-"537254|Sep-26|consolidated": {
-"code": "537254",
-"name": "JTL Defence Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 197.116,
-"pat": -26.312,
-"t": 1792830796.779403,
-"last": 1792832342.251916
 }
 },
 "audit": [
@@ -2470,6 +2498,10 @@
 [
 "Sovereign Diamonds Ltd",
 "diff"
+],
+[
+"JTL Defence Ltd",
+"ok"
 ]
 ],
 "standalone_only": {
@@ -2761,7 +2793,8 @@
 "a807cb6d-ba53-47e9-88b9-57baf90ce2d5": 1,
 "66f9a2e9-65e3-4967-a0bc-22f1d1a79149": 1,
 "7e983e3c-7dba-4beb-876c-c58bf3eb81bc": 1,
-"15aef2fe-f2ec-4cc6-b2a4-e4dd194134ee": 1
+"15aef2fe-f2ec-4cc6-b2a4-e4dd194134ee": 1,
+"c1cef82a-9f2a-4fc8-8e62-219f9f71fe12": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
