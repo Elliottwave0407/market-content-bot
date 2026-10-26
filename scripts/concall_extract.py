@@ -23,7 +23,7 @@ FLOOR = os.environ.get("FLOOR", "2024-04-01")
 MODELS = [m for m in os.environ.get("MODELS", ("mistral:ministral-14b-latest," if MK else "") + "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 CHUNK = 60000
 MAX_CHUNKS = 3
-SCHEMA_V = 1
+SCHEMA_V = 2
 IST = timezone(timedelta(hours=5, minutes=30))
 DIR = os.path.join(store.ROOT, os.environ.get("OUT_DIR", "concall_facts"))
 CUR = os.path.join(DIR, "_cursor.json")
@@ -31,8 +31,8 @@ LOCK = threading.Lock()
 T0 = time.time()
 
 PROMPT = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT (not analysts) said. Return ONLY JSON:
-{"items":[{"cat":"guidance|capex|order_book|margin|pricing_cost|demand|product_mix|risk|fund_raise|other","statement":"short plain summary (max 30 words)","period":"e.g. FY27, Q3 FY26, next quarter, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"EXACT sentence copied word for word from the transcript, under 300 characters"}]}
-Rules: up to 14 items, the most decision-relevant ones (forward guidance with numbers first, then capex, order book, margins, price increases or cost pass-through, demand outlook, mix shift, risks). Every quote must be copied word for word. Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
+{"items":[{"cat":"guidance|capex|order_book|margin|pricing_cost|demand|product_mix|risk|fund_raise|other","statement":"short plain summary (max 30 words)","period":"e.g. FY27, Q3 FY26, next quarter, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"ONE or TWO consecutive sentences copied character for character from the transcript (keep filler words, do not shorten, join or paraphrase, no ellipses), under 250 characters"}]}
+Rules: up to 16 items, the most decision-relevant ones (forward guidance with numbers first, then capex, order book, margins, price increases or cost pass-through, demand outlook, mix shift, risks). Every quote must be copied word for word. Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
 
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
@@ -41,6 +41,8 @@ def prep(text):
     m = re.search(r"(good morning|good afternoon|good evening|ladies and gentlemen|welcome to the)", t[:20000], re.I)
     if m and m.start() > 300:
         t = t[m.start():]
+    t = re.sub(r"(?:[A-Z][\w&.,'()-]*\s+){1,6}(?:Limited|Ltd\.?)\s+[A-Z][a-z]{2,8}\s+\d{1,2},\s*\d{4}\s+Page\s+\d+\s+of\s+\d+", " ", t)   # page header/footer lines break quotes that cross a page
+    t = re.sub(r"\bPage\s+\d+\s+of\s+\d+\b", " ", t)
     return re.sub(r"[ \t]+", " ", t)
 
 def chunks(t):
