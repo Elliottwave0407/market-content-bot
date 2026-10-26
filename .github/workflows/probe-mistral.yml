@@ -1,6 +1,10 @@
 name: probe-mistral
 on:
   workflow_dispatch:
+    inputs:
+      all:
+        description: test every model (1) or the default few (0)
+        default: "0"
 permissions:
   contents: read
 jobs:
@@ -17,4 +21,5 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          ALL: ${{ github.event.inputs.all }}
         run: python scripts/probe_mistral.py

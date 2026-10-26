@@ -21,7 +21,13 @@ try:
 except Exception as e:
     p("list error", repr(e)[:120])
 
-cands = [m for m in ("mistral-small-latest", "mistral-medium-latest", "mistral-large-latest", "open-mistral-nemo", "ministral-8b-latest", "magistral-small-latest") if m in ids] or ["mistral-small-latest", "mistral-medium-latest", "mistral-large-latest"]
+ALL = os.environ.get("ALL") == "1"
+if ALL:
+    cands = [m for m in ids if not any(x in m for x in ("embed", "moderation", "ocr", "transcribe", "voxtral", "tts", "fim"))]
+else:
+  cands = [m for m in ("mistral-small-latest", "mistral-medium-latest", "mistral-large-latest", "open-mistral-nemo", "ministral-8b-latest", "magistral-small-latest") if m in ids] or ["mistral-small-latest", "mistral-medium-latest", "mistral-large-latest"]
+if ALL:
+    p("testing", len(cands), "models")
 good = []
 for m in cands:
     t = time.time()
@@ -54,7 +60,7 @@ def call(model, text):
     except Exception:
         return None, dt, 200, 0
 
-for m in good[:3]:
+for m in (good[:3] if not ALL else []):
     for f in random_pick:
         try:
             txt = gzip.open(f, "rt", encoding="utf-8", errors="ignore").read()
