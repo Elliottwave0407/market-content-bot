@@ -14,15 +14,18 @@ import news_posts as NP
 import concall_themes as CT
 
 NV = os.environ.get("NVIDIA_API_KEY", "").strip()
+MK = os.environ.get("MISTRAL_API_KEY", "").strip()
+MAXN = int(os.environ.get("MAXN", "0"))          # stop after this many new transcripts (dry runs); 0 = no limit
+_MLOCK = threading.Lock(); _MLAST = [0.0]; MGAP = float(os.environ.get("MISTRAL_GAP", "1.15"))   # free tier: 1 request/second
 BUDGET_MIN = float(os.environ.get("BUDGET_MIN", "150"))
 WORKERS = int(os.environ.get("WORKERS", "3"))
 FLOOR = os.environ.get("FLOOR", "2024-04-01")
-MODELS = [m for m in os.environ.get("MODELS", "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
+MODELS = [m for m in os.environ.get("MODELS", ("mistral:ministral-14b-latest," if MK else "") + "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 CHUNK = 60000
 MAX_CHUNKS = 3
 SCHEMA_V = 1
 IST = timezone(timedelta(hours=5, minutes=30))
-DIR = os.path.join(store.ROOT, "concall_facts")
+DIR = os.path.join(store.ROOT, os.environ.get("OUT_DIR", "concall_facts"))
 CUR = os.path.join(DIR, "_cursor.json")
 LOCK = threading.Lock()
 T0 = time.time()
@@ -47,7 +50,30 @@ def chunks(t):
     step = len(t) // n
     return [t[i * step:(i + 1) * step + 2000] for i in range(n)]
 
+def call_mistral(model, text):
+    for attempt in range(4):
+        with _MLOCK:
+            w = MGAP - (time.time() - _MLAST[0])
+            if w > 0: time.sleep(w)
+            _MLAST[0] = time.time()
+        try:
+            r = requests.post("https://api.mistral.ai/v1/chat/completions", headers={"Authorization": "Bearer " + MK, "Content-Type": "application/json"}, timeout=180,
+                              json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}],
+                                    "max_tokens": 5000, "temperature": 0, "response_format": {"type": "json_object"}})
+            if r.status_code in (429, 500, 502, 503, 504):
+                time.sleep(5 * (attempt + 1)); continue
+            if r.status_code != 200:
+                return None
+            s = r.json()["choices"][0]["message"].get("content") or ""
+            m = re.search(r"\{.*\}", s, re.S)
+            return json.loads(m.group(0)) if m else None
+        except Exception:
+            time.sleep(5)
+    return None
+
 def call(model, text):
+    if model.startswith("mistral:"):
+        return call_mistral(model[8:], text)
     extra = {"thinking": False} if "deepseek" in model else {"enable_thinking": False}
     for attempt in range(3):
         try:
@@ -82,8 +108,13 @@ def verify(items, text):
                 n = n.strip(".,").replace(",", "")
                 if n and n not in q.replace(",", ""):
                     v = None; break
-        out.append({"cat": str(it.get("cat") or "other")[:20], "statement": str(it.get("statement") or "")[:240], "period": it.get("period"),
-                    "value": v, "direction": it.get("direction"), "quote": q[:320]})
+        stm = str(it.get("statement") or "")[:240]
+        rec = {"cat": str(it.get("cat") or "other")[:20], "statement": stm, "period": it.get("period"),
+               "value": v, "direction": it.get("direction"), "quote": q[:320]}
+        qn = q.replace(",", "")
+        if any(n.strip(".,").replace(",", "") not in qn for n in re.findall(r"\d[\d.,]*", stm) if len(n.strip(".,")) >= 2 and not re.fullmatch(r"(19|20)\d\d|FY\d+|Q\d", n)):
+            rec["flag"] = "stmt_nums"      # a number in the summary is not in the quote: do not use this item's numbers without checking
+        out.append(rec)
     return out
 
 def extract(x):
@@ -142,8 +173,9 @@ def cursor():
         c = {"head": today, "back": (datetime.now(IST) + timedelta(days=1)).strftime("%Y-%m-%d")}
     return c, today
 
+_NNEW = [0]
 def out_of_time():
-    return (time.time() - T0) / 60 > BUDGET_MIN
+    return (time.time() - T0) / 60 > BUDGET_MIN or (MAXN and _NNEW[0] >= MAXN)
 
 def run_day(day, done):
     rows = CT.find(day, day)
@@ -163,12 +195,13 @@ def run_day(day, done):
             with LOCK:
                 done[r["key"]] = r
             if r.get("skip"): n_skip += 1
-            else: n_new += 1; n_items += r.get("n_ok", 0)
+            else: n_new += 1; n_items += r.get("n_ok", 0); _NNEW[0] += 1
     return len(rows), n_new, n_items, n_skip, n_fail
 
 def main():
-    if not NV:
-        p("NVIDIA_API_KEY missing"); return
+    if not NV and not MK:
+        p("no model key (NVIDIA_API_KEY / MISTRAL_API_KEY) missing"); return
+    p("models:", ", ".join(m.split("/")[-1] for m in MODELS), "out_dir", os.path.basename(DIR), "maxn", MAXN)
     done = load_done(); c, today = cursor()
     p("start: done", len(done), "head", c["head"], "back", c["back"], "budget_min", BUDGET_MIN)
     # (1) new days since head

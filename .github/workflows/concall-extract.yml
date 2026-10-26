@@ -8,6 +8,15 @@ on:
       floor:
         description: "Oldest day to go back to"
         default: "2024-04-01"
+      out_dir:
+        description: "Store folder (use concall_facts_m20 for a dry run)"
+        default: "concall_facts"
+      maxn:
+        description: "Stop after N new transcripts (0 = no limit)"
+        default: "0"
+      workers:
+        description: "Parallel readers"
+        default: "3"
   schedule:
     - cron: "10 */3 * * *"
 concurrency:
@@ -28,15 +37,18 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          OUT_DIR: ${{ github.event.inputs.out_dir || 'concall_facts' }}
+          MAXN: ${{ github.event.inputs.maxn || '0' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
           FLOOR: ${{ github.event.inputs.floor || '2024-04-01' }}
-          WORKERS: "3"
+          WORKERS: ${{ github.event.inputs.workers || '3' }}
         run: python scripts/concall_extract.py
       - name: Save facts to the store
         if: always()
         run: |
           git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/concall_facts 2>/dev/null || true
+          git add store/concall_facts store/concall_facts_m20 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "Concall facts"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
@@ -46,6 +58,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           FLOOR: ${{ github.event.inputs.floor || '2024-04-01' }}
         run: |
+          [ "${{ github.event.inputs.out_dir || 'concall_facts' }}" != "concall_facts" ] && { echo "dry run: no chaining"; exit 0; }
           B=$(python3 -c "import json;print(json.load(open('store/concall_facts/_cursor.json'))['back'])" 2>/dev/null || echo "")
           echo "back cursor: $B floor: $FLOOR"
           if [ -n "$B" ] && [ "$B" \> "$FLOOR" ]; then
