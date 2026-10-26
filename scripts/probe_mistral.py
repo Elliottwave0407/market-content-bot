@@ -25,7 +25,7 @@ ALL = os.environ.get("ALL") == "1"
 if ALL:
     cands = [m for m in ids if not any(x in m for x in ("embed", "moderation", "ocr", "transcribe", "voxtral", "tts", "fim"))]
 else:
-  cands = [m for m in ("mistral-small-latest", "mistral-medium-latest", "mistral-large-latest", "open-mistral-nemo", "ministral-8b-latest", "magistral-small-latest") if m in ids] or ["mistral-small-latest", "mistral-medium-latest", "mistral-large-latest"]
+  cands = [m for m in ("ministral-14b-latest", "ministral-8b-latest") if m in ids] or ["mistral-small-latest", "mistral-medium-latest", "mistral-large-latest"]
 if ALL:
     p("testing", len(cands), "models")
 good = []
