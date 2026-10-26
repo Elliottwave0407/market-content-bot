@@ -19,7 +19,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # separate Google project: never touches the result-card quota
           DAYS_BACK: "2"
           MAX_N: "40"
           MCAP_MAX: "100000000"

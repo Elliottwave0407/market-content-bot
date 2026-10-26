@@ -1,0 +1,38 @@
+name: compare-readers
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "documents"
+        default: "20"
+permissions:
+  contents: write
+concurrency:
+  group: compare-readers
+  cancel-in-progress: false
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          N: ${{ github.event.inputs.n }}
+        run: python scripts/compare_readers.py
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/concall_compare_readers 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Reader comparison results"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
