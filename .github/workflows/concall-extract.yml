@@ -16,7 +16,7 @@ on:
         default: "0"
       workers:
         description: "Parallel readers"
-        default: "3"
+        default: "6"
   schedule:
     - cron: "10 */3 * * *"
 concurrency:
@@ -42,7 +42,7 @@ jobs:
           MAXN: ${{ github.event.inputs.maxn || '0' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
           FLOOR: ${{ github.event.inputs.floor || '2024-04-01' }}
-          WORKERS: ${{ github.event.inputs.workers || '3' }}
+          WORKERS: ${{ github.event.inputs.workers || '6' }}
         run: python scripts/concall_extract.py
       - name: Save facts to the store
         if: always()

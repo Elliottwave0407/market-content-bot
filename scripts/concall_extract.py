@@ -32,7 +32,7 @@ T0 = time.time()
 
 PROMPT = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT (not analysts) said. Return ONLY JSON:
 {"items":[{"cat":"guidance|capex|order_book|margin|pricing_cost|demand|product_mix|risk|fund_raise|other","statement":"short plain summary (max 30 words)","period":"e.g. FY27, Q3 FY26, next quarter, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"ONE or TWO consecutive sentences copied character for character from the transcript (keep filler words, do not shorten, join or paraphrase, no ellipses), under 250 characters"}]}
-Rules: up to 16 items, the most decision-relevant ones (forward guidance with numbers first, then capex, order book, margins, price increases or cost pass-through, demand outlook, mix shift, risks). Every quote must be copied word for word. Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
+Rules: up to 16 items, the most decision-relevant ones (forward guidance with numbers first, then capex, order book, margins, price increases or cost pass-through, demand outlook, mix shift, risks). Every quote must be copied word for word. The statement may say ONLY what the quote says (no added units, scope, timing or comparisons; do not report that something was NOT said or that there is no guidance). Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
 
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
