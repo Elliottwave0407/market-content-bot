@@ -20,7 +20,7 @@ on:
   schedule:
     - cron: "10 */3 * * *"
 concurrency:
-  group: concall-extract
+  group: concall-extract-${{ github.event.inputs.out_dir || 'concall_facts' }}
   cancel-in-progress: false
 permissions:
   contents: write
