@@ -679,7 +679,8 @@
 "19908ba4-d44d-492f-9013-a72fd7be4930",
 "2b70bf3c-b12f-4644-81e7-24c11f0ef58b",
 "6e915a8d-2f91-414d-9761-d7e604f06059",
-"de03a0eb-adb8-41b6-9df6-5bd76ce137a3"
+"de03a0eb-adb8-41b6-9df6-5bd76ce137a3",
+"da697fdb-3bb8-4bb2-89d6-4c981a008cbd"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1175,47 +1176,10 @@
 "512179|Sep-26|standalone",
 "544570|Sep-26|consolidated",
 "531779|Sep-26|standalone",
-"543396|Sep-26|na"
+"543396|Sep-26|na",
+"543263|Sep-26|consolidated"
 ],
-"pending": {
-"da697fdb-3bb8-4bb2-89d6-4c981a008cbd": {
-"rec": {
-"NEWSID": "da697fdb-3bb8-4bb2-89d6-4c981a008cbd",
-"SCRIP_CD": 543263,
-"XML_NAME": "ANN_543263_DA697FDB-3BB8-4BB2-89D6-4C981A008CBD",
-"NEWSSUB": "SMC Global Securities Ltd - 543263 - Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-10-26T21:32:15.777",
-"NEWS_DT": "2026-10-26T21:32:15.777",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5032d06d-208f-40a6-97d0-dad7aed9627c.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the quarter and half year ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/smc-global-securities-ltd/smcglobal/543263/",
-"SLONGNAME": "SMC Global Securities Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 22,
-"News_submission_dt": "2026-10-26T21:32:15",
-"DissemDT": "2026-10-26T21:32:15.777",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 9327915,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793030546.9319212,
-"last": 1793030706.916706
-}
-},
+"pending": {},
 "lag": [
 [
 "Adroit Industries (India) Ltd",
@@ -2160,6 +2124,10 @@
 [
 "One 97 Communications Ltd",
 45
+],
+[
+"SMC Global Securities Ltd",
+4
 ]
 ],
 "gem_use": {
@@ -2177,7 +2145,7 @@
 "2026-10-23": 450,
 "2026-10-24": 101,
 "2026-10-25": 47,
-"2026-10-26": 176
+"2026-10-26": 177
 },
 "pdfposted": {
 "533298|Sep-26|standalone": {
@@ -2188,7 +2156,7 @@
 "rev": 102.267,
 "pat": 7.625,
 "t": 1793000712.6257403,
-"last": 1793030463.3020139
+"last": 1793030763.9809804
 },
 "544903|Sep-26|standalone": {
 "code": "544903",
@@ -2198,7 +2166,7 @@
 "rev": 3500.0,
 "pat": 372.53,
 "t": 1793000837.3259575,
-"last": 1793030463.3020139
+"last": 1793030763.9809804
 },
 "543931|Sep-26|consolidated": {
 "code": "543931",
@@ -2208,7 +2176,7 @@
 "rev": 1246.594,
 "pat": 153.182,
 "t": 1793001821.9318032,
-"last": 1793030463.3020139
+"last": 1793030763.9809804
 },
 "511577|Sep-26|standalone": {
 "code": "511577",
@@ -2218,7 +2186,7 @@
 "rev": 58.764,
 "pat": 18.247,
 "t": 1793003031.922185,
-"last": 1793030463.3020139
+"last": 1793030763.9809804
 },
 "526851|Sep-26|standalone": {
 "code": "526851",
@@ -2228,7 +2196,7 @@
 "rev": 147.64700000000002,
 "pat": 19.859,
 "t": 1793012160.8872204,
-"last": 1793030501.2311769
+"last": 1793030856.127624
 },
 "532955|Sep-26|consolidated": {
 "code": "532955",
@@ -2238,7 +2206,7 @@
 "rev": 150004.0,
 "pat": 34777.3,
 "t": 1793012885.506804,
-"last": 1793030501.2311769
+"last": 1793030856.127624
 },
 "530075|Sep-26|standalone": {
 "code": "530075",
@@ -2379,6 +2347,16 @@
 "pat": -9247.126,
 "t": 1793030295.471182,
 "last": 1793030649.7823212
+},
+"543263|Sep-26|consolidated": {
+"code": "543263",
+"name": "SMC Global Securities Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 5348.603,
+"pat": 282.268,
+"t": 1793030850.305494,
+"last": 1793030856.127624
 }
 },
 "audit": [
@@ -3642,7 +3620,8 @@
 "9aa0cdcf-eb2a-440d-b3d5-6f373c259b00": 1,
 "f086650d-d7df-469a-8112-9f5b1ee7070a": 1,
 "6ead09f4-2bef-4292-aad1-15a05eed592c": 1,
-"2101d8e4-5126-45a6-a2c7-06dbb3125209": 1
+"2101d8e4-5126-45a6-a2c7-06dbb3125209": 1,
+"da697fdb-3bb8-4bb2-89d6-4c981a008cbd": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
