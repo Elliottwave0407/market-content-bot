@@ -1,0 +1,35 @@
+name: esm-history
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "start date dd-mm-yyyy"
+        default: "01-07-2025"
+  schedule:
+    - cron: "40 14 * * 1-5"     # weekday evenings IST: add the new daily ESM circular (posts nothing)
+permissions:
+  contents: write
+concurrency:
+  group: esm-history
+  cancel-in-progress: false
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt openpyxl
+      - env:
+          FROM_DATE: ${{ github.event.inputs.from_date || '01-07-2025' }}
+        run: python scripts/esm_history.py
+      - name: Save history
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/esm_history 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "ESM history update"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
