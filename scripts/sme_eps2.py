@@ -67,7 +67,7 @@ try:
     counts = {"ok": 0, "loss": 0, "no_data": 0, "stale": 0}
     for k, sym in enumerate(syms):
         if time.time() - T0 > BUDGET: p("budget reached at", k); break
-        if not only and out.get(sym, {}).get("state") in ("ok", "loss") and out[sym].get("at") == time.strftime("%Y-%m-%d"): continue
+        if not only and out.get(sym, {}).get("at") == time.strftime("%Y-%m-%d"): continue      # processed today (any outcome)
         try:
             r = s.get(f"https://www.nseindia.com/api/corporate-announcements?index=sme&symbol={sym}&from_date=01-04-2025&to_date=28-10-2026", headers={"Referer": REF}, timeout=40)
             j = r.json() if r.status_code == 200 else []
@@ -89,7 +89,7 @@ try:
             except Exception: continue
             res, why = None, None
             for att in range(4):
-                res, why = nr.read_pdf(b, prompt=PROMPT)
+                res, why = nr.read_pdf(b, prompt=PROMPT, timeout=40)
                 if res or not (why and ("cooling" in why or "429" in why)): break
                 time.sleep(25)
             if not res: reasons.append(why or "?"); continue
@@ -121,7 +121,9 @@ try:
         p(sym, state, "ttm", ttm, "pe", pe, "|", how, "|", (reasons[:1] or ""))
         if (k + 1) % 10 == 0: json.dump(out, open("store/sme_eps/eps2.json", "w"))
     json.dump(out, open("store/sme_eps/eps2.json", "w"))
-    p("SUMMARY", counts)
+    left = [x for x in syms if out.get(x, {}).get("at") != time.strftime("%Y-%m-%d")]
+    open("store/sme_eps/_more.flag", "w").write("1" if (left and not only) else "0")
+    p("SUMMARY", counts, "| left today:", len(left))
 except Exception:
     p("ERR", traceback.format_exc()[-700:])
 publish()

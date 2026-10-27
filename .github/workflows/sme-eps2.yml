@@ -7,6 +7,7 @@ on:
         default: ""
 permissions:
   contents: write
+  actions: write
 jobs:
   a:
     runs-on: ubuntu-latest
@@ -31,3 +32,11 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -q -m "SME EPS/PE update"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Continue if stocks remain
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.only == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(cat store/sme_eps/_more.flag 2>/dev/null)" = "1" ]; then
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/sme-eps2.yml/dispatches -f ref=main -f "inputs[only]="
+          fi
