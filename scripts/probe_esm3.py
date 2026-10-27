@@ -14,17 +14,20 @@ try:
         rows += d
     esm = [x for x in rows if re.search(r"enhanced surveillance|\bESM\b", (x.get("sub") or "") + (x.get("circDisplayNo") or ""), re.I)]
     p("ESM circulars:", len(esm), "| keys:", sorted(rows[0].keys()) if rows else None)
-    for x in sorted(esm, key=lambda x: x.get("cirDate", ""))[-25:]:
-        p(" ", x.get("cirDisplayDate"), x.get("circDisplayNo"), "|", (x.get("sub") or "")[:110])
-    big = [x for x in esm if re.search(r"revision|applicability|framework|criteria", x.get("sub") or "", re.I)]
+    other = [x for x in esm if "Applicability" not in (x.get("sub") or "")]
+    p("non-Applicability ESM circulars:", len(other))
+    for x in sorted(other, key=lambda x: x.get("cirDate", ""))[-12:]:
+        p(" ", x.get("cirDisplayDate"), x.get("circDisplayNo"), "|", (x.get("sub") or "")[:120], "|", x.get("circFilelink"))
     import pdfplumber
-    for x in sorted(big, key=lambda x: x.get("cirDate", ""))[-3:]:
+    app = sorted([x for x in esm if "Applicability" in (x.get("sub") or "")], key=lambda x: x.get("cirDate", ""))
+    targets = [x for x in sorted(other, key=lambda x: x.get("cirDate", ""))[-2:]] + [app[-1]]
+    for x in targets:
         try:
-            pdf = requests.get(x["circFilelink"], headers=UA, timeout=40).content
-            with pdfplumber.open(io.BytesIO(pdf)) as f:
+            rr = requests.get(x["circFilelink"], headers=UA, timeout=40)
+            p("=== fetch", x.get("cirDisplayDate"), x.get("circDisplayNo"), rr.status_code, len(rr.content), rr.content[:6], x["circFilelink"][-40:])
+            with pdfplumber.open(io.BytesIO(rr.content)) as f:
                 txt = " ".join((pg.extract_text() or "") for pg in f.pages).replace("\n", " ")
-            p("=== TEXT", x.get("cirDisplayDate"), x.get("circDisplayNo"), len(txt))
-            for i in range(0, min(len(txt), 4200), 700): p(txt[i:i + 700])
+            for i in range(0, min(len(txt), 3500), 700): p(txt[i:i + 700])
         except Exception as e:
             p("pdf error", repr(e)[:80])
 except Exception:
