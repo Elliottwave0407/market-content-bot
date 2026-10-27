@@ -70,7 +70,11 @@ try:
             u = x["attchmntFile"]
             try: b = requests.get(u, headers=UA, timeout=60).content
             except Exception: continue
-            res, why = nr.read_pdf(b, prompt=PROMPT)
+            res, why = None, None
+            for att in range(4):
+                res, why = nr.read_pdf(b, prompt=PROMPT)
+                if res or not (why and ("cooling" in why or "429" in why)): break
+                time.sleep(25)
             if not res: reasons.append(why or "?"); continue
             for basis in ("consolidated", "standalone"):
                 d = res.get(basis); cl = res.get("columns") or []
