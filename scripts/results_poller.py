@@ -69,11 +69,22 @@ def tg(method, **kw):
     except Exception:
         return {"ok": False, "description": f"non-json {r.status_code}"}
 
+def _mlog(msg):
+    """Runs are cancelled before CI annotations are written, so keep a tiny committed log (no ids, no card text)."""
+    try:
+        os.makedirs("state", exist_ok=True)
+        with open("state/mirror.log", "a") as fh:
+            fh.write(datetime.utcnow().strftime("%m-%d %H:%MZ ") + msg[:200] + "\n")
+    except Exception:
+        pass
+
 def mirror_to_channel(png, cap_clean, flink, key):
     """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_PUBLIC_GROUP_ID.
     Only a 'Filing' link button (anyone may tap it); no Post-to-X / Posted / Skip buttons. Does nothing when the secret is not set; never raises."""
     ch = os.environ.get("TELEGRAM_PUBLIC_GROUP_ID", "").strip()
-    if not ch or not png or key.split("|")[-1] not in ("consolidated", "standalone"):
+    full = key.split("|")[-1] in ("consolidated", "standalone")
+    if not ch or not png or not full:
+        _mlog(f"skip secret_set={bool(ch)} png={bool(png)} full={full}")
         return None
     try:
         d = {"chat_id": ch, "caption": cap_clean[:1024]}
@@ -82,9 +93,11 @@ def mirror_to_channel(png, cap_clean, flink, key):
         with open(png, "rb") as fh:
             r = tg("sendPhoto", data=d, files={"photo": fh})
         p(f"  channel copy ok={r.get('ok')} {redact(r.get('description', ''))}")
+        _mlog(f"sent ok={r.get('ok')} {redact(r.get('description', ''))}")
         return r
     except Exception as e:
         p("  channel copy failed:", type(e).__name__)
+        _mlog("failed " + type(e).__name__ + " " + redact(str(e))[:120])
         return None
 
 def fy_label(qlabel):
