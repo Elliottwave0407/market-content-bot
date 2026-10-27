@@ -1,0 +1,36 @@
+name: public-backfill
+on:
+  workflow_dispatch:
+    inputs:
+      codes:
+        description: "BSE codes, comma separated, in the order to send"
+        default: ""
+      confirm:
+        description: "type yes to send to the FinGod public group (anything else = dry run)"
+        default: "no"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core >/dev/null 2>&1 || true
+          pip install -r requirements.txt
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          CODES: ${{ github.event.inputs.codes }}
+          CONFIRM: ${{ github.event.inputs.confirm }}
+        run: python scripts/public_backfill.py
