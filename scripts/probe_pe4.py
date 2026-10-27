@@ -17,7 +17,7 @@ try:
     first = True
     for sym in pick:
         for per in ["Half-Yearly", "Annual", "Quarterly"]:
-            r = s.get(f"https://www.nseindia.com/api/corporates-financial-results?index=equities&symbol={sym}&period={per}", headers={"Referer": REF}, timeout=40)
+            r = s.get(f"https://www.nseindia.com/api/corporates-financial-results?index=sme&symbol={sym}&period={per}", headers={"Referer": REF}, timeout=40)
             try: j = r.json()
             except Exception: j = []
             p(sym, per, r.status_code, "records", len(j), [(x.get("toDate"), x.get("filingDate", "")[:11], x.get("consolidated")) for x in j[:3]])
