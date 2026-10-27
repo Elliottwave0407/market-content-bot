@@ -14,13 +14,10 @@ NSE_SER = {"EQ", "BE", "BZ", "SM", "ST", "SZ", "SO"}
 BSE_SER = {"A", "B", "T", "X", "XT", "Z", "M", "MT", "MS", "P", "R", "F", "S", "G"}
 COLS = ["d", "src", "isin", "sym", "ser", "o", "h", "l", "c", "pc", "v"]
 
-def load_month(m):
-    f = f"{ROOT}/{m}.csv.gz"
-    if not os.path.exists(f): return []
-    with gzip.open(f, "rt", encoding="utf-8") as fh: return list(csv.reader(fh))
-def save_month(m, rows):
-    rows.sort(key=lambda r: (r[0], r[1], r[3]))
-    with gzip.open(f"{ROOT}/{m}.csv.gz", "wt", encoding="utf-8", newline="") as fh: csv.writer(fh).writerows(rows)
+os.makedirs(f"{ROOT}/d", exist_ok=True)
+def save_day(key, s, rows):
+    rows.sort(key=lambda r: r[3])
+    with gzip.open(f"{ROOT}/d/{key}_{s}.csv.gz", "wt", encoding="utf-8", newline="") as fh: csv.writer(fh).writerows(rows)
 
 def nse_day(d):
     r = requests.get(f"https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_{d:%Y%m%d}_F_0000.csv.zip", headers=UA, timeout=60)
@@ -45,9 +42,10 @@ try:
     try: nodata = json.load(open(f"{ROOT}/_nodata.json"))
     except Exception: nodata = {"N": [], "B": []}
     have = {"N": set(), "B": set()}
-    for f in glob.glob(f"{ROOT}/20*.csv.gz"):
-        with gzip.open(f, "rt", encoding="utf-8") as fh:
-            for r in csv.reader(fh): have[r[1]].add(r[0])
+    for f in glob.glob(f"{ROOT}/d/*.csv.gz"):
+        b0 = os.path.basename(f); have[b0[11]].add(b0[:10])
+    try: fails = json.load(open(f"{ROOT}/_fails.json"))
+    except Exception: fails = {}
     start = datetime.strptime(FROM, "%Y-%m-%d"); end = datetime.utcnow() + timedelta(hours=5, minutes=30)
     days = []; d = start
     while d.date() <= end.date():
@@ -59,9 +57,7 @@ try:
     p("trading-day slots to fetch:", len(todo), "| stored NSE days:", len(have["N"]), "BSE days:", len(have["B"]))
     buf = {}; done_n = {"N": 0, "B": 0}; ctx = BSE(download_folder=tempfile.mkdtemp()); b = ctx.__enter__()
     def flush():
-        for m, add in buf.items():
-            rows = load_month(m); rows += add; save_month(m, rows)
-        buf.clear()
+        json.dump(fails, open(f"{ROOT}/_fails.json", "w"))
     for i, (d, s) in enumerate(todo):
         if time.time() - T0 > BUDGET: break
         key = f"{d:%Y-%m-%d}"; m = key[:7]
@@ -70,12 +66,14 @@ try:
         except Exception as e:
             if s == "B" and "unavailable" in str(e).lower() or "not yet" in str(e).lower(): rows = None
             else:
+                fk = s + key; fails[fk] = fails.get(fk, 0) + 1
+                if fails[fk] >= 3: nodata[s].append(key)    # give up after 3 failed runs, so the chain cannot loop forever
                 p("error", s, key, type(e).__name__, repr(e)[:70]); rows = "err"
         if rows == "err": continue
         if not rows:
             if (datetime.utcnow() + timedelta(hours=5, minutes=30)).date() - d.date() > timedelta(days=1): nodata[s].append(key)
         else:
-            buf.setdefault(m, []).extend(rows); done_n[s] += 1; have[s].add(key)
+            save_day(key, s, rows); done_n[s] += 1; have[s].add(key)
         if (i + 1) % 25 == 0:
             flush(); json.dump(nodata, open(f"{ROOT}/_nodata.json", "w"))
         time.sleep(0.25)
@@ -83,8 +81,9 @@ try:
     try: ctx.__exit__(None, None, None)
     except Exception: pass
     left = len([1 for d, s in todo if f"{d:%Y-%m-%d}" not in have[s] and f"{d:%Y-%m-%d}" not in nodata[s]])
+    progress = done_n["N"] + done_n["B"] > 0
     p("fetched days: NSE", done_n["N"], "BSE", done_n["B"], "| still to fetch:", left, "| holidays/no-data remembered:", len(nodata["N"]), len(nodata["B"]))
-    open(f"{ROOT}/_more.flag", "w").write("1" if left else "0")
+    open(f"{ROOT}/_more.flag", "w").write("1" if (left and progress) else "0")
 except Exception:
     p("ERROR", traceback.format_exc()[-700:])
 publish()
