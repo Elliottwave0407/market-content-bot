@@ -69,6 +69,43 @@ sym_of = df.drop_duplicates("isin", keep="last").set_index("isin")["sym"].to_dic
 name_of = {i: (short(by[i][-1]["name"]) if i in by else sym_of.get(i, i)) for i in A.columns}
 met = sorted([(d, name_of[i]) for d, _, i in watch if (last - d).days <= 5], key=lambda x: x[0], reverse=True)
 
+
+# ---- Stage II watch: Stage I SME stocks whose PE condition is met (loss-making or PE > 2x Nifty 500 PE) and the close that would meet the price condition
+def n500_pe():
+    try:
+        r = requests.get(f"https://archives.nseindia.com/content/indices/ind_close_all_{dt.date.today():%d%m%Y}.csv", headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+        if r.status_code != 200:
+            for back in range(1, 6):
+                d = dt.date.today() - dt.timedelta(days=back)
+                r = requests.get(f"https://archives.nseindia.com/content/indices/ind_close_all_{d:%d%m%Y}.csv", headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+                if r.status_code == 200: break
+        for ln in r.text.splitlines():
+            c = ln.split(",")
+            if c and c[0].strip().lower() == "nifty 500": return float(c[10])
+    except Exception:
+        pass
+    return None
+import requests
+N500 = n500_pe()
+try: eps2 = json.load(open("store/sme_eps/eps2.json"))
+except Exception: eps2 = {}
+W2 = []; pe_na = 0; pe_not_met = 0
+if N500:
+    for i, s_ in state.items():
+        if s_["st"] != "I" or i not in A.columns: continue
+        e2 = eps2.get(s_["sym"])
+        if not e2 or e2.get("state") not in ("ok", "loss"): pe_na += 1; continue
+        pe = e2.get("pe"); loss = e2["state"] == "loss"
+        if not (loss or (pe and pe > 2 * N500)): pe_not_met += 1; continue
+        a = A[i].dropna()
+        if len(a) < 25: continue
+        c_now = float(C[i].dropna().iloc[-1]); fac = c_now / float(a.iloc[-1])
+        b5 = float(a.iloc[-5]) * 1.15 * fac     # next close vs the close 4 trading days back (the window moves one day)
+        b21 = float(a.iloc[-21]) * 1.30 * fac
+        trig = min(b5, b21); which = "5-day +15%" if b5 <= b21 else "month +30%"
+        W2.append((trig / c_now - 1, s_["name"], c_now, trig, which, "loss-making" if loss else f"PE {pe:.0f}"))
+    W2.sort()
+
 def block_rows():
     rows = []
     for k, title, col in [("enter_I", "Moved into Stage I", AMBER), ("I_to_II", "Stage I to Stage II", RED), ("II_to_I", "Stage II back to Stage I", BLUE), ("exit", "Removed from ESM", GREEN)]:
@@ -78,8 +115,8 @@ def block_rows():
 R = block_rows()
 W = 10.8; RH = 0.52
 nch = sum(len(r[2]) for r in R) + (0 if R else 1)
-UP = up[:12]; MET = met[:8]
-H_in = 2.7 + (0.9 + 0.75 * len(R) + RH * nch) + (1.2 + RH * max(len(UP), 1) + 0.4) + (1.5 + RH * max(len(MET), 1)) + 2.0
+UP = up[:12]; MET = met[:8]; W2S = W2[:8]
+H_in = 2.7 + (0.9 + 0.75 * len(R) + RH * nch) + (1.2 + RH * max(len(UP), 1) + 0.4) + (1.5 + RH * max(len(MET), 1)) + (1.5 + RH * max(len(W2S), 1) + 0.4) + 2.0
 fig = T.new_fig(W, H_in); fx = lambda i: i / W; fy = lambda i: 1 - i / H_in
 _hdr(fig, W, H_in, "SME ESM Radar", f"NSE Emerge  |  effective {D(DAY):%d %b %Y}  |  {len(state)} SME stocks in ESM")
 def panel(y, h, title, color):
@@ -113,7 +150,17 @@ if not MET: fig.text(fx(0.8), fy(yy), "No SME stock newly meets the test", color
 for d, nm in MET:
     fig.text(fx(0.8), fy(yy), nm[:34], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
     fig.text(fx(W - 0.8), fy(yy), f"first met {d:%d %b}", color=HEAD, fontsize=13, ha="right", va="center"); yy += RH
-_foot(fig, W, H_in, "Source: NSE surveillance circulars and NSE daily prices. Exit dates follow the 90-day / 30-day rules; the price test is not a forecast. NSE Emerge only. For educational purpose only. Not an investment advice.")
+y += h3 + 0.25
+h4 = 1.5 + RH * max(len(W2S), 1) + 0.4
+panel(y, h4, "STAGE II WATCH (price + PE)", RED); yy = y + 1.0
+fig.text(fx(0.8), fy(yy), f"Stage I stocks whose PE condition is met (loss-making or PE above 2x Nifty 500 PE, now {2 * N500:.1f}). Price levels are for the next close." if N500 else "Nifty 500 PE unavailable", color=MUTED, fontsize=11, va="center"); yy += 0.42
+if not W2S: fig.text(fx(0.8), fy(yy), "No Stage I SME stock currently meets the PE condition with PE data on file", color=MUTED, fontsize=14, va="center")
+for gap, nm, c_now, trig, which, pe_t in W2S:
+    fig.text(fx(0.8), fy(yy), short(nm)[:26], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
+    fig.text(fx(W - 0.8), fy(yy), f"close above Rs {trig:,.2f} ({gap * 100:+.1f}%)  |  {pe_t}", color=HEAD, fontsize=12.5, ha="right", va="center"); yy += RH
+note = f"{pe_na} Stage I SME stocks have no usable PE on file (scanned or stale filings) and {pe_not_met} do not meet the PE condition." if N500 else ""
+fig.text(fx(0.8), fy(yy), note, color=MUTED, fontsize=11, va="center")
+_foot(fig, W, H_in, "Source: NSE surveillance circulars and NSE daily prices. Exit dates follow the 90-day / 30-day rules; price tests and PE (from filings) are not a forecast. NSE Emerge only. For educational purpose only. Not an investment advice.")
 T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
 T.save(fig, OUT)
 print("saved", OUT, "| changes", {k: len(v) for k, v in chg.items()}, "| upcoming", len(up), "| met", len(met), "| SME in ESM", len(state))
