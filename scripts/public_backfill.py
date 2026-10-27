@@ -12,13 +12,18 @@ try:
     rpl.DAYS_BACK = 1
     confirm = os.environ.get("CONFIRM", "").strip().lower() == "yes"
     done = []
-    with BSE(download_folder="/tmp") as b:
-        rows = None
-        for _t in range(4):
-            try: rows = rpl.fetch_filings(b); break
-            except Exception as e:
-                p("BSE fetch retry", _t + 1, type(e).__name__); time.sleep(20)
-        if rows is None: raise RuntimeError("BSE not reachable")
+    rows = None; b = None
+    for _t in range(8):                                     # BSE often times out from one-off runs: new session each try
+        try:
+            ctx = BSE(download_folder="/tmp"); b = ctx.__enter__()
+            rows = rpl.fetch_filings(b); break
+        except Exception as e:
+            p("BSE fetch retry", _t + 1, type(e).__name__)
+            try: ctx.__exit__(None, None, None)
+            except Exception: pass
+            time.sleep(25)
+    if rows is None: raise RuntimeError("BSE not reachable")
+    if True:
         first = {}
         for r in rows:
             c = str(r.get("SCRIP_CD")).strip()
