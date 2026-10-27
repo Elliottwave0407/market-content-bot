@@ -67,6 +67,7 @@ try:
     counts = {"ok": 0, "loss": 0, "no_data": 0, "stale": 0}
     for k, sym in enumerate(syms):
         if time.time() - T0 > BUDGET: p("budget reached at", k); break
+        if not only and out.get(sym, {}).get("state") in ("ok", "loss") and out[sym].get("at") == time.strftime("%Y-%m-%d"): continue
         try:
             r = s.get(f"https://www.nseindia.com/api/corporate-announcements?index=sme&symbol={sym}&from_date=01-04-2025&to_date=28-10-2026", headers={"Referer": REF}, timeout=40)
             j = r.json() if r.status_code == 200 else []
