@@ -9,7 +9,10 @@ import xbuttons, channel_copy
 try:
     codes = [c.strip() for c in os.environ.get("CODES", "").split(",") if c.strip()]
     order = {c: i for i, c in enumerate(codes)}
-    rpl.DAYS_BACK = 1
+    rpl.DAYS_BACK = 2
+    os.makedirs(rpl.OUTDIR, exist_ok=True)
+    rpl._ST = rpl.load_state()      # same reader route as the live poller (PDF/Gemini when needed); state is never saved
+    import pdf_card; pdf_card.new_poll()
     confirm = os.environ.get("CONFIRM", "").strip().lower() == "yes"
     done = []
     rows = None; b = None
