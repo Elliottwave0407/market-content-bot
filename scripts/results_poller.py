@@ -70,9 +70,9 @@ def tg(method, **kw):
         return {"ok": False, "description": f"non-json {r.status_code}"}
 
 def mirror_to_channel(png, cap_clean, flink, key):
-    """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_RESULTS_CHANNEL_ID.
+    """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_PUBLIC_GROUP_ID.
     Only a 'Filing' link button (anyone may tap it); no Post-to-X / Posted / Skip buttons. Does nothing when the secret is not set; never raises."""
-    ch = os.environ.get("TELEGRAM_RESULTS_CHANNEL_ID", "").strip()
+    ch = os.environ.get("TELEGRAM_PUBLIC_GROUP_ID", "").strip()
     if not ch or not png or key.split("|")[-1] not in ("consolidated", "standalone"):
         return None
     try:

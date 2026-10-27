@@ -1,9 +1,9 @@
-"""Second audience: copy selected posts (results, FII/DII, bulk/block deals) to the FinGod public group in TELEGRAM_RESULTS_CHANNEL_ID.
+"""Second audience: copy selected posts (results, FII/DII, bulk/block deals) to the FinGod public group in TELEGRAM_PUBLIC_GROUP_ID.
 No buttons here (the group copy only ever gets a Filing link button for result cards, added by the poller). Does nothing when the secret is not set; never raises."""
 import os, json, requests
 
 def _ch():
-    return os.environ.get("TELEGRAM_RESULTS_CHANNEL_ID", "").strip()
+    return os.environ.get("TELEGRAM_PUBLIC_GROUP_ID", "").strip()
 
 def _tok():
     return os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
