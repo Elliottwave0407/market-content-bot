@@ -74,7 +74,16 @@ try:
         except Exception: j = []
         cands = [x for x in j if (x.get("attchmntFile") or "").lower().endswith(".pdf") and RES.search((x.get("desc") or "") + " " + (x.get("attchmntText") or "")) and not NOT.search(x.get("desc") or "") and re.search(r"financial result", (x.get("attchmntText") or "") + (x.get("desc") or ""), re.I)]
         cols = {}; reasons = []
+        if not cands and j: p("   no result PDF candidates for", sym, "| sample descs:", [((x.get("desc") or "")[:35], bool(x.get("attchmntFile"))) for x in j[:6]])
+        def fresh_ttm():
+            for basis in ("cons", "stan"):
+                sub = {(kk.split("|")[0], int(kk.split("|")[1])): v["eps"] for kk, v in cols.items() if kk.endswith(basis)}
+                if not sub: continue
+                t_, h_ = ttm_from(sub); ne = max(e for e, m in sub)
+                if t_ is not None and (datetime.now() - datetime.fromisoformat(ne)).days <= 250: return True
+            return False
         for x in cands[:5]:
+            if cols and fresh_ttm(): break
             u = x["attchmntFile"]
             try: b = requests.get(u, headers=UA, timeout=60).content
             except Exception: continue
