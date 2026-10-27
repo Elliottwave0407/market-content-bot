@@ -1,0 +1,30 @@
+name: results-upgrade-dry
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "days back"
+        default: "5"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core >/dev/null 2>&1 || true
+          pip install -r requirements.txt
+      - env:
+          DAYS: ${{ github.event.inputs.days || '5' }}
+        run: python scripts/results_upgrade.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: upgrade-cards
+          path: out/upgrade/
+          if-no-files-found: ignore
