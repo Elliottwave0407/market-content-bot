@@ -1,0 +1,47 @@
+name: prices-store
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "start date YYYY-MM-DD"
+        default: "2024-07-01"
+  schedule:
+    - cron: "40 13 * * 1-5"     # weekday 19:10 IST: add the day's NSE and BSE price files (posts nothing)
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: prices-store
+  cancel-in-progress: false
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          FROM_DATE: ${{ github.event.inputs.from_date || '2024-07-01' }}
+          BUDGET_MIN: "40"
+        run: python scripts/prices_store.py
+      - name: Save prices
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/prices 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Price store update"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Continue the backfill if days remain
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(cat store/prices/_more.flag 2>/dev/null)" = "1" ]; then
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/prices-store.yml/dispatches -f ref=main -f "inputs[from_date]=${{ github.event.inputs.from_date || '2024-07-01' }}"
+          fi
