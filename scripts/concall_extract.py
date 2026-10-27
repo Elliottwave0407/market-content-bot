@@ -52,7 +52,13 @@ def chunks(t):
     step = len(t) // n
     return [t[i * step:(i + 1) * step + 2000] for i in range(n)]
 
+_M429 = [0]
+_MDEAD = [False]
+
 def call_mistral(model, text):
+    # circuit breaker: when the free allowance is used up every call returns 429 -> stop calling Mistral for this run
+    if _MDEAD[0]:
+        return None
     for attempt in range(4):
         with _MLOCK:
             w = MGAP - (time.time() - _MLAST[0])
@@ -62,10 +68,17 @@ def call_mistral(model, text):
             r = requests.post("https://api.mistral.ai/v1/chat/completions", headers={"Authorization": "Bearer " + MK, "Content-Type": "application/json"}, timeout=180,
                               json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}],
                                     "max_tokens": 5000, "temperature": 0, "response_format": {"type": "json_object"}})
+            if r.status_code == 429:
+                _M429[0] += 1
+                if _M429[0] >= 8:
+                    _MDEAD[0] = True
+                    print("mistral: allowance used up (repeated 429) - switching to NVIDIA readers for this run", flush=True)
+                    return None
             if r.status_code in (429, 500, 502, 503, 504):
                 time.sleep(5 * (attempt + 1)); continue
             if r.status_code != 200:
                 return None
+            _M429[0] = 0
             s = r.json()["choices"][0]["message"].get("content") or ""
             m = re.search(r"\{.*\}", s, re.S)
             return json.loads(m.group(0)) if m else None
