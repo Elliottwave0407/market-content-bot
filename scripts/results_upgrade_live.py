@@ -41,7 +41,7 @@ try:
         except Exception as e:
             p("skip build error", nm[:24], type(e).__name__); continue
         full = key.split("|")[-1] in ("consolidated", "standalone")
-        bad = ("Rs 0.0 Cr" in text or "(- YoY)" in text or "Sales Rs -" in text)
+        bad = ("Rs 0.0 Cr" in text or "(- YoY)" in text or "Sales Rs -" in text or "Sales Rs 0." in text or key.split("|")[1] != "Sep-26")
         if kind != "photo" or not png or not full or bad or key.split("|")[1] != stub[c]:
             p("skip", nm[:24], kind, key.split("|", 1)[-1], "bad" if bad else ""); continue
         cap, flink = xbuttons.split_link(text)
