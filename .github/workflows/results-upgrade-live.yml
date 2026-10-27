@@ -1,0 +1,41 @@
+name: results-upgrade-live
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "type yes to send the full cards (anything else = dry run)"
+        default: "no"
+      days:
+        description: "days back"
+        default: "5"
+permissions:
+  contents: write
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core >/dev/null 2>&1 || true
+          pip install -r requirements.txt
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
+          CONFIRM: ${{ github.event.inputs.confirm }}
+          DAYS: ${{ github.event.inputs.days || '5' }}
+        run: python scripts/results_upgrade_live.py
+      - name: Save upgrade record
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add state/upgraded.json store 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Upgrade pass state"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
