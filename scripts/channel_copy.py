@@ -8,9 +8,19 @@ def _ch():
 def _tok():
     return os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 
+def _log(msg):
+    try:
+        from datetime import datetime
+        os.makedirs("state", exist_ok=True)
+        with open("state/mirror.log", "a") as fh:
+            fh.write(datetime.utcnow().strftime("%m-%d %H:%MZ ") + msg + "\n")
+    except Exception:
+        pass
+
 def copy_photo(path, caption, link=None):
     ch = _ch()
     if not ch or not _tok() or not path:
+        _log(f"copy_photo skipped secret_set={bool(ch)}")
         return None
     try:
         d = {"chat_id": ch, "caption": (caption or "")[:1024]}
@@ -19,6 +29,7 @@ def copy_photo(path, caption, link=None):
         with open(path, "rb") as fh:
             r = requests.post(f"https://api.telegram.org/bot{_tok()}/sendPhoto", data=d, files={"photo": fh}, timeout=60).json()
         print(f"  channel copy ok={r.get('ok')}", (r.get("description") or "")[:60], flush=True)
+        _log(f"copy_photo ok={r.get('ok')} {(r.get('description') or '')[:80]}")
         return r
     except Exception as e:
         print("  channel copy failed:", type(e).__name__, flush=True)
