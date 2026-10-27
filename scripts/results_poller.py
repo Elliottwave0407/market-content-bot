@@ -69,6 +69,24 @@ def tg(method, **kw):
     except Exception:
         return {"ok": False, "description": f"non-json {r.status_code}"}
 
+def mirror_to_channel(png, cap_clean, flink, key):
+    """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_RESULTS_CHANNEL_ID.
+    Only a 'Filing' link button (anyone may tap it); no Post-to-X / Posted / Skip buttons. Does nothing when the secret is not set; never raises."""
+    ch = os.environ.get("TELEGRAM_RESULTS_CHANNEL_ID", "").strip()
+    if not ch or not png or key.split("|")[-1] not in ("consolidated", "standalone"):
+        return None
+    try:
+        d = {"chat_id": ch, "caption": cap_clean[:1024]}
+        if flink:
+            d["reply_markup"] = json.dumps({"inline_keyboard": [[{"text": "\U0001F4C4 Filing", "url": flink}]]})
+        with open(png, "rb") as fh:
+            r = tg("sendPhoto", data=d, files={"photo": fh})
+        p(f"  channel copy ok={r.get('ok')} {redact(r.get('description', ''))}")
+        return r
+    except Exception as e:
+        p("  channel copy failed:", type(e).__name__)
+        return None
+
 def fy_label(qlabel):
     d = datetime.strptime(qlabel, "%b-%y")
     qn = {6: 1, 9: 2, 12: 3, 3: 4}.get(d.month)
@@ -372,6 +390,8 @@ def main(bse_in=None, known=None, fast=False):
                 p(f"  sent ok={r.get('ok')} {redact(r.get('description', ''))}")
                 if not r.get("ok"):
                     continue
+                if kind == "photo":
+                    mirror_to_channel(png, cap_clean, flink, key)
                 try:
                     import store
                     if kind == "photo": store.log_result("bse", text, r, card.LAST, rec.get("NEWS_DT"))
