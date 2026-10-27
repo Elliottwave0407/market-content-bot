@@ -6,7 +6,7 @@ on:
         description: "days back"
         default: "5"
 permissions:
-  contents: read
+  contents: write
 jobs:
   a:
     runs-on: ubuntu-latest
@@ -28,3 +28,12 @@ jobs:
           name: upgrade-cards
           path: out/upgrade/
           if-no-files-found: ignore
+      - name: Save card pictures to the repo (dry-run review only)
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          mkdir -p drafts/upgrade_dry && cp -f out/upgrade/*.png drafts/upgrade_dry/ 2>/dev/null || true
+          git add -f drafts/upgrade_dry 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Upgrade dry-run cards (review only)"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done

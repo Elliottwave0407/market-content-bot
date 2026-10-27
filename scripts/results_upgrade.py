@@ -23,6 +23,9 @@ try:
                 kind, text, png, key = rpl.build(b, r, final=True, age_min=100000)
             except Exception as e:
                 other[r["SLONGNAME"][:24]] = "error " + type(e).__name__; continue
+            mcv = (json.load(open("state/mcap_cache.json")).get(c) or [0])[0] if os.path.exists("state/mcap_cache.json") else 0
+            if kind == "photo" and png and not key.endswith("|na") and mcv < 500:
+                other[r["SLONGNAME"][:24]] = "small (<500 cr), skipped"; continue
             if kind == "photo" and png and not key.endswith("|na"):
                 dst = f"out/upgrade/{c}_{key.split('|')[1]}.png"; shutil.copy(png, dst)
                 built.append((r["SLONGNAME"], key)); p("FULL CARD:", r["SLONGNAME"][:28], key, "|", text.split("\n")[1][:150] if "\n" in text else text[:150])
