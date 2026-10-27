@@ -39,7 +39,9 @@ for r in recs:
     for it in r["items"]:
         q = it.get("quote") or ""; v = str(it.get("value") or ""); st = it.get("statement") or ""
         if v and nums(v) and not nums(v) <= nums(q): a["value_not_in_quote"] += 1
-        if nums(st) and not nums(st) <= nums(q): a["stmt_num_not_in_quote"] += 1
+        st2 = re.sub(r"\b(FY|CY|H|Q)\s?-?\d{1,4}\b|\b(19|20)\d\d\b|\b\d{1,2}(st|nd|rd|th)\b", " ", st)
+        qn = q.replace(",", "")
+        if any(n.strip(".,").replace(",", "") not in qn for n in re.findall(r"\d[\d.,]*", st2) if len(n.strip(".,")) >= 2): a["stmt_num_not_in_quote"] += 1
         if q.count("?") >= 1: a["quote_has_question"] += 1
         if len(q) < 40: a["short_quote"] += 1
         if not it.get("period") and it.get("cat") in ("guidance", "capex", "order_book"): a["no_period_on_forward_cat"] += 1
@@ -81,11 +83,13 @@ def judge(batch):
     return None
 
 def ctx_for(text, quote):
-    k = quote[:50]
-    i = text.find(k)
-    if i < 0:
-        i = text.lower().find(k.lower())
-    if i < 0: return None
+    # whitespace-insensitive match (PDF text has breaks such as "lookin g")
+    idx = [i for i, ch in enumerate(text) if not ch.isspace()]
+    comp = "".join(text[i] for i in idx).lower()
+    k = re.sub(r"\s+", "", quote)[:45].lower()
+    j = comp.find(k)
+    if j < 0: return None
+    i = idx[j]
     return text[max(0, i - 500): i + len(quote) + 300].replace("\n", " ")
 
 if not GK:
@@ -95,6 +99,7 @@ rnd = random.Random(int(time.time()) // 86400)
 by_g = collections.defaultdict(list)
 for r in recs: by_g[group(r)].append(r)
 judged = []
+NOCTX = collections.Counter()
 for g, rs in sorted(by_g.items(), key=lambda x: -len(x[1])):
     if len(rs) < 20: continue
     rnd.shuffle(rs); picked = []
@@ -105,7 +110,9 @@ for g, rs in sorted(by_g.items(), key=lambda x: -len(x[1])):
         its = r["items"][:]; rnd.shuffle(its)
         for it in its[: max(1, PER // DOCS)]:
             c = ctx_for(txt, it["quote"])
-            picked.append({**it, "ctx": c or "(context not found)", "name": r["name"], "day": r["day"], "key": r["key"], "group": g})
+            if not c:
+                NOCTX[g] += 1; continue
+            picked.append({**it, "ctx": c, "name": r["name"], "day": r["day"], "key": r["key"], "group": g})
     for k in range(0, len(picked), 12):
         if (time.time() - T0) / 60 > BUDGET: break
         res = judge(picked[k:k + 12])
@@ -123,5 +130,5 @@ p("group | n | support yes | partial | no | speaker analyst | unclear")
 for g in sorted({j["group"] for j in judged}):
     js = [j for j in judged if j["group"] == g]; n = len(js)
     c = collections.Counter(j["support"] for j in js); s = collections.Counter(j["speaker"] for j in js)
-    p(f"{g} | {n} | {c['yes']/n:.0%} | {c['partial']/n:.0%} | {c['no']/n:.0%} | {s['analyst']/n:.0%} | {s['unclear']/n:.0%}")
+    p(f"{g} (quote not found in transcript text, skipped: {NOCTX[g]}) | {n} | {c['yes']/n:.0%} | {c['partial']/n:.0%} | {c['no']/n:.0%} | {s['analyst']/n:.0%} | {s['unclear']/n:.0%}")
 publish()
