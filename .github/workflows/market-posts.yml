@@ -35,6 +35,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          TELEGRAM_RESULTS_CHANNEL_ID: ${{ secrets.TELEGRAM_RESULTS_CHANNEL_ID }}   # FinGod group copy of FII/DII and deals (optional)
           POST_SEND: ${{ github.event.inputs.send || '0' }}
           POST_FORCE: ${{ github.event.inputs.force || '0' }}
           X_BUTTON: ${{ github.event.inputs.xbutton || '0' }}

@@ -1,0 +1,39 @@
+name: channel-test
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "type yes to send ONE test message to the FinGod group"
+        default: "no"
+      text:
+        description: "message text"
+        default: "FinGod Results is now connected here. Result cards, FII/DII data and bulk/block deals will appear in this group. For educational purpose only. Not an investment advice."
+permissions:
+  contents: read
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_RESULTS_CHANNEL_ID: ${{ secrets.TELEGRAM_RESULTS_CHANNEL_ID }}
+          CONFIRM: ${{ github.event.inputs.confirm }}
+          TEXT: ${{ github.event.inputs.text }}
+        run: |
+          python - <<'PY'
+          import os, sys
+          sys.path.insert(0, "scripts")
+          import channel_copy
+          if not os.environ.get("TELEGRAM_RESULTS_CHANNEL_ID"):
+              print("secret TELEGRAM_RESULTS_CHANNEL_ID is not set"); raise SystemExit(0)
+          if os.environ.get("CONFIRM", "").strip().lower() != "yes":
+              print("not confirmed - nothing sent"); raise SystemExit(0)
+          r = channel_copy.send_text(os.environ["TEXT"])
+          print("sent ok =", (r or {}).get("ok"), ((r or {}).get("description") or "")[:100])
+          PY

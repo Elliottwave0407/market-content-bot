@@ -66,6 +66,10 @@ def send_photo(path, caption, tweet=None):
         return {"ok": False}
     if j.get("ok"):
         import store; store.log_post("market", caption, j)
+        try:
+            import channel_copy; channel_copy.copy_photo(path, caption)     # FII/DII and bulk/block deal cards also go to the FinGod group (only when its secret is set)
+        except Exception:
+            pass
     return j
 
 def post(paths_captions):
