@@ -8,7 +8,12 @@ try:
     for sym in ["REFRACTORY", "TSCINDIA", "ONYX", "ABMINTLLTD", "RELIANCE"]:
         for ep in ["quote-equity?symbol=", "quote-equity?symbol=%s&section=trade_info#"]:
             pass
+        s.headers["Referer"] = f"https://www.nseindia.com/get-quotes/equity?symbol={sym}"
+        try: s.get(s.headers["Referer"], timeout=30)
+        except Exception: pass
         r = s.get(f"https://www.nseindia.com/api/quote-equity?symbol={sym}", timeout=30)
+        if r.status_code != 200:
+            r = s.get(f"https://www.nseindia.com/api/quote-equity?symbol={sym}&section=trade_info", timeout=30); p("trade_info", r.status_code)
         p(sym, r.status_code, len(r.text))
         if r.status_code == 200:
             j = r.json(); md = j.get("metadata", {}); p("meta", {k: md.get(k) for k in ["symbol", "series", "pdSymbolPe", "pdSectorPe", "pdSectorInd", "industry", "isFNOSec"]})
