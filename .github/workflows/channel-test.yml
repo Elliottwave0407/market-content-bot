@@ -32,6 +32,7 @@ jobs:
           import channel_copy
           if not os.environ.get("TELEGRAM_PUBLIC_GROUP_ID"):
               print("secret TELEGRAM_PUBLIC_GROUP_ID is not set"); raise SystemExit(0)
+          print("check:", channel_copy.check())
           if os.environ.get("CONFIRM", "").strip().lower() != "yes":
               print("not confirmed - nothing sent"); raise SystemExit(0)
           r = channel_copy.send_text(os.environ["TEXT"])

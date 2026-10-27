@@ -32,3 +32,19 @@ def send_text(text):
         return requests.post(f"https://api.telegram.org/bot{_tok()}/sendMessage", json={"chat_id": ch, "text": text[:4000], "disable_web_page_preview": True}, timeout=60).json()
     except Exception as e:
         return {"ok": False, "description": type(e).__name__}
+
+def check():
+    """Posts NOTHING. Asks Telegram whether the bot is a member/admin of the group and may post. Returns a dict without the chat id."""
+    ch = _ch(); tok = _tok()
+    if not ch or not tok:
+        return {"configured": False}
+    try:
+        me = requests.get(f"https://api.telegram.org/bot{tok}/getMe", timeout=30).json().get("result", {})
+        cm = requests.get(f"https://api.telegram.org/bot{tok}/getChatMember", params={"chat_id": ch, "user_id": me.get("id")}, timeout=30).json()
+        if not cm.get("ok"):
+            return {"configured": True, "ok": False, "error": (cm.get("description") or "")[:100]}
+        r = cm["result"]
+        gc = requests.get(f"https://api.telegram.org/bot{tok}/getChat", params={"chat_id": ch}, timeout=30).json().get("result", {})
+        return {"configured": True, "ok": True, "status": r.get("status"), "can_post_messages": r.get("can_post_messages", r.get("status") == "administrator"), "chat_type": gc.get("type"), "title": gc.get("title")}
+    except Exception as e:
+        return {"configured": True, "ok": False, "error": type(e).__name__}
