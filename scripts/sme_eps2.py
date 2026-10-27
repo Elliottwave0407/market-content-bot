@@ -8,6 +8,13 @@ from ci_out import p, publish
 import requests
 import nim_read as nr
 from datetime import datetime
+_orig_nums = nr._nums
+def _nums_ocr(text):
+    out = set(_orig_nums(text))
+    for a, b in re.findall(r"(?<![\d,.])(\d{1,3}),(\d{2})(?![\d,])", text):      # OCR prints 4.24 as "4,24"
+        out.add(round(float(a + "." + b), 2))
+    return out
+nr._nums = _nums_ocr
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
 REF = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
 os.makedirs("store/sme_eps", exist_ok=True)
@@ -57,7 +64,7 @@ try:
     s = requests.Session(); s.headers.update(UA); s.get("https://www.nseindia.com/", timeout=25); s.get(REF, timeout=25)
     try: out = json.load(open("store/sme_eps/eps2.json"))
     except Exception: out = {}
-    counts = {"ok": 0, "loss": 0, "no_data": 0}
+    counts = {"ok": 0, "loss": 0, "no_data": 0, "stale": 0}
     for k, sym in enumerate(syms):
         if time.time() - T0 > BUDGET: p("budget reached at", k); break
         try:
@@ -93,7 +100,11 @@ try:
                 how = f"{basis}: {how}"
                 if ttm is not None: break
         price = px.get(sym)
+        newest = max((kk.split("|")[0] for kk in cols), default=None)
+        stale = (not newest) or (datetime.now() - datetime.fromisoformat(newest)).days > 250     # a Mar or Sep result must be on file; older numbers would give a wrong PE
+        if stale and ttm is not None: how = f"{how} (STALE: newest period {newest})"; ttm = None
         state = "no_data" if ttm is None else ("loss" if ttm <= 0 else "ok")
+        if stale and newest: state = "stale"
         pe = round(price / ttm, 1) if (ttm and ttm > 0 and price) else None
         out[sym] = {"cols": cols, "ttm": ttm, "how": how, "price": price, "pe": pe, "state": state, "why": reasons[:2], "at": time.strftime("%Y-%m-%d")}
         counts[state] += 1
