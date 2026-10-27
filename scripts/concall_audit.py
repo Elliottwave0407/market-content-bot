@@ -95,13 +95,20 @@ def ctx_for(text, quote):
 if not GK:
     p("no GEMINI_API_KEY_CONCALL - Layer B skipped"); publish(); sys.exit(0)
 
-rnd = random.Random(int(time.time()) // 86400)
+rnd = random.Random(int(time.time()) // 600)
+DONE = set()          # documents already judged in earlier audits are skipped, so coverage grows run after run
+for f in glob.glob(os.path.join(OUT, "audit_*.json")):
+    try:
+        for j in json.load(open(f, encoding="utf-8")): DONE.add(j["key"] + "|" + j["group"])
+    except Exception: pass
+p("documents already audited:", len(DONE))
 by_g = collections.defaultdict(list)
 for r in recs: by_g[group(r)].append(r)
 judged = []
 NOCTX = collections.Counter()
 for g, rs in sorted(by_g.items(), key=lambda x: -len(x[1])):
     if len(rs) < 20: continue
+    rs = [r for r in rs if r["key"] + "|" + g not in DONE]
     rnd.shuffle(rs); picked = []
     for r in rs[:DOCS]:
         if (time.time() - T0) / 60 > BUDGET: break
@@ -123,8 +130,8 @@ for g, rs in sorted(by_g.items(), key=lambda x: -len(x[1])):
             if x: judged.append({**{kk: b[kk] for kk in ("group", "name", "day", "key", "cat", "statement", "value", "period", "direction", "quote")}, "support": x.get("support"), "speaker": x.get("speaker"), "note": x.get("note"), "flag": b.get("flag"), "realigned": b.get("realigned")})
         time.sleep(4)
     p("judged so far:", len(judged), "| minutes", round((time.time() - T0) / 60))
-day = time.strftime("%Y-%m-%d")
-json.dump(judged, open(os.path.join(OUT, f"audit_{day}.json"), "w", encoding="utf-8"), ensure_ascii=False)
+day = time.strftime("%Y-%m-%d_%H%M")
+if judged: json.dump(judged, open(os.path.join(OUT, f"audit_{day}.json"), "w", encoding="utf-8"), ensure_ascii=False)
 p("=== LAYER B: independent judge (Gemini flash-lite) on a sample ===")
 p("group | n | support yes | partial | no | speaker analyst | unclear")
 for g in sorted({j["group"] for j in judged}):
