@@ -1,0 +1,28 @@
+name: public-first-card
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "type yes to send the latest FII/DII card to the FinGod public group"
+        default: "no"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core >/dev/null 2>&1 || true
+          pip install -r requirements.txt
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
+          CONFIRM: ${{ github.event.inputs.confirm }}
+        run: python scripts/public_first_card.py
