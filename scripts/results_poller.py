@@ -100,6 +100,27 @@ def mirror_to_channel(png, cap_clean, flink, key):
         _mlog("failed " + type(e).__name__ + " " + redact(str(e))[:120])
         return None
 
+STUCK_MIN = float(os.environ.get("STUCK_MIN", "20"))
+STUCK_MCAP = float(os.environ.get("STUCK_MCAP", "300"))
+
+def stuck_alert(rec, key, wait_min, chat):
+    """One private message per filing that is still waiting for readable numbers after STUCK_MIN minutes (companies above STUCK_MCAP Rs Cr only).
+    Goes to the private results chat only. Returns True when sent (so it is never repeated)."""
+    try:
+        if wait_min > 180:          # old leftovers in the pending list: no alert (no spam from before this feature existed)
+            return True
+        if wait_min < STUCK_MIN or pdf_card.mcap_of(rec.get("SCRIP_CD")) < STUCK_MCAP:
+            return False
+        parts = key.split("|")
+        q = fy_label(parts[1]) if len(parts) > 1 and parts[1] else ""
+        nm = (rec.get("SLONGNAME") or "").strip()
+        txt = f"\u23f3 Still no card after {int(wait_min)} min: {nm} {q}\nNumbers could not be read yet; the bot keeps retrying.\n{link(rec)}"
+        r = tg("sendMessage", json={"chat_id": chat, "text": txt[:1000], "disable_web_page_preview": True})
+        p(f"  stuck alert ok={r.get('ok')}")
+        return bool(r.get("ok"))
+    except Exception:
+        return False
+
 def fy_label(qlabel):
     d = datetime.strptime(qlabel, "%b-%y")
     qn = {6: 1, 9: 2, 12: 3, 3: 4}.get(d.month)
@@ -373,7 +394,12 @@ def main(bse_in=None, known=None, fast=False):
             if kind == "wait":
                 if nid not in pend:
                     p(f"[wait] {rec.get('SLONGNAME')} ({key}) - BSE numbers not published yet, will retry")
+                _al = pend.get(nid, {}).get("alerted", False)
                 pend[nid] = {"rec": rec, "first": first, "last": now}
+                if _al:
+                    pend[nid]["alerted"] = True
+                elif SEND and not ONLY:
+                    pend[nid]["alerted"] = stuck_alert(rec, key, (now - first) / 60, chat)
                 continue
             if kind != "line" and posted >= MAX_POSTS:
                 continue
