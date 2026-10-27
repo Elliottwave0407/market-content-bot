@@ -436,10 +436,8 @@ def run_once(day=None, maxn=3):
             st["done"].append(str(x.get("seq_id")))
             changed = True
         elif out.startswith("stub:"):
-            p(f"  {x['symbol']}: no usable numbers ({out[5:]}) - no card posted (rule: never post a card without numbers)")
-            if age_h < 24:
-                continue          # keep it open and look again on the next polls; dropped after 24 h
-            if False and SEND and CHAT:
+            p(f"  {x['symbol']}: posting 'numbers not shown' card ({out[5:]})")
+            if SEND and CHAT:
                 png = os.path.join(OUTDIR, f"nse_stub_{x['symbol']}.png")
                 os.makedirs(OUTDIR, exist_ok=True)
                 card.render_stub((x.get("sm_name") or x["symbol"]).strip(), f"NSE {x['symbol']}", "Results", out[5:], png)

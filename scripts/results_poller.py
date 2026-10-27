@@ -18,8 +18,6 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 WAIT_H = float(os.environ.get("POLL_WAIT_HOURS", "0.75"))   # how long to wait for BSE numbers before posting a no-numbers card
 ONLY = [x.strip().upper() for x in os.environ.get("POLL_ONLY", "").split(",") if x.strip()]   # test mode: only these companies, ignores/does not touch saved state
 RETRY_SEC = int(os.environ.get("POLL_RETRY_SEC", "90"))
-HOLD_SEC = int(os.environ.get("POLL_HOLD_SEC", "7200"))        # filings with no usable numbers are looked at again every 2 h ...
-HOLD_MAX_H = float(os.environ.get("POLL_HOLD_MAX_H", "24"))      # ... for up to 24 h, then dropped (never posted as a no-numbers card)
 STATE = "state/seen.json"
 _ST = None
 PDF_AUDIT = {}
@@ -323,9 +321,8 @@ def main(bse_in=None, known=None, fast=False):
         lines = []
         now = time.time()
         pend = st.setdefault("pending", {})
-        new = [r for r in new if pend.get(r["NEWSID"], {}).get("hold", 0) <= now]      # filings held because no usable numbers yet: looked at again only when the hold ends
         new_ids = {r["NEWSID"] for r in new}
-        retry = [v["rec"] for k, v in list(pend.items()) if k not in new_ids and now - v["last"] >= RETRY_SEC and v.get("hold", 0) <= now]
+        retry = [v["rec"] for k, v in list(pend.items()) if k not in new_ids and now - v["last"] >= RETRY_SEC]
         try:      # read several filings' PDFs at the same time (a burst of results no longer queues one by one)
             def _skip_fin(r_):
                 import fin_results as _fr
@@ -364,16 +361,6 @@ def main(bse_in=None, known=None, fast=False):
                 if nid not in pend:
                     p(f"[wait] {rec.get('SLONGNAME')} ({key}) - BSE numbers not published yet, will retry")
                 pend[nid] = {"rec": rec, "first": first, "last": now}
-                continue
-            if kind == "photo" and key.split("|")[-1] not in ("consolidated", "standalone"):
-                # RULE (Mayank, 27 Oct): a card without numbers is NEVER posted. Hold the filing, look again every HOLD_SEC, give up after HOLD_MAX_H.
-                if (now - first) / 3600 > HOLD_MAX_H:
-                    st["ids"].append(nid); pend.pop(nid, None)
-                    p(f"[held too long, dropped] {rec.get('SLONGNAME')} ({key.split('|')[-1]})")
-                else:
-                    if nid not in pend or "hold" not in pend[nid]:
-                        p(f"[held - no numbers yet] {rec.get('SLONGNAME')} ({key.split('|')[-1]}), no card posted")
-                    pend[nid] = {"rec": rec, "first": first, "last": now, "hold": now + HOLD_SEC}
                 continue
             if kind != "line" and posted >= MAX_POSTS:
                 continue
