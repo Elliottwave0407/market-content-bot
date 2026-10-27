@@ -30,11 +30,12 @@ jobs:
           import os, sys
           sys.path.insert(0, "scripts")
           import channel_copy
+          from ci_out import p, publish
           if not os.environ.get("TELEGRAM_PUBLIC_GROUP_ID"):
-              print("secret TELEGRAM_PUBLIC_GROUP_ID is not set"); raise SystemExit(0)
-          print("check:", channel_copy.check())
+              p("secret TELEGRAM_PUBLIC_GROUP_ID is not set"); publish(); raise SystemExit(0)
+          p("check:", channel_copy.check())
           if os.environ.get("CONFIRM", "").strip().lower() != "yes":
-              print("not confirmed - nothing sent"); raise SystemExit(0)
+              p("not confirmed - nothing sent"); publish(); raise SystemExit(0)
           r = channel_copy.send_text(os.environ["TEXT"])
-          print("sent ok =", (r or {}).get("ok"), ((r or {}).get("description") or "")[:100])
+          p("sent ok =", (r or {}).get("ok"), ((r or {}).get("description") or "")[:100]); publish()
           PY
