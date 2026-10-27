@@ -37,6 +37,11 @@ try:
         except Exception: j = []
         cands = [x for x in j if x.get("attchmntFile") and RES.search((x.get("desc") or "") + " " + (x.get("attchmntText") or "")) and not NOT.search(x.get("desc") or "")][:6]
         if not j: noann += 1
+        if only:
+            p("DEBUG", sym, "announcements", len(j), "| cands", len(cands))
+            for x in j[:60]:
+                d = (x.get("desc") or "")
+                if re.search(r"result|board|financial", d, re.I): p("   ", (x.get("an_dt") or "")[:11], d[:60], "|", (x.get("attchmntFile") or "")[-40:], "|", (x.get("attchmntText") or "")[:80].replace("\n", " "))
         rows = []
         for x in cands:
             u = x["attchmntFile"]
@@ -46,6 +51,7 @@ try:
                 t = " ".join((pg.extract_text() or "") for pg in pypdf.PdfReader(io.BytesIO(b)).pages[:6])
             except Exception: continue
             t = re.sub(r"\s+", " ", t)
+            if only: p("   pdf", u[-30:], "chars", len(t), "| has EPS word:", bool(re.search(r"per share|eps", t, re.I)), "| sample:", t[:120])
             if len(t) < 300 or not re.search(r"half year|six months|quarter|year ended|period ended", t, re.I): continue
             m = EPS_RX.search(t)
             if not m: continue
