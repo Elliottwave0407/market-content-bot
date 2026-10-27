@@ -52,6 +52,8 @@ try:
             except Exception: continue
             t = re.sub(r"\s+", " ", t)
             if only: p("   pdf", u[-30:], "chars", len(t), "| has EPS word:", bool(re.search(r"per share|eps", t, re.I)), "| sample:", t[:120])
+            if only:
+                for mm in list(re.finditer(r"per\s*(equity\s*)?share|\beps\b", t, re.I))[:3]: p("      ctx:", t[max(0, mm.start() - 60):mm.start() + 260])
             if len(t) < 300 or not re.search(r"half year|six months|quarter|year ended|period ended", t, re.I): continue
             m = EPS_RX.search(t)
             if not m: continue
