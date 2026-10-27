@@ -170,7 +170,7 @@ html = f"""<html><head><meta charset=utf-8><style>{CSS}</style></head><body>{wm}
 <div class="row"><div class="p" style="flex:1.12"><div class="t">Walk the talk · {n} checkable promises</div><div class="dots">{dots}</div><div style="font-size:19px;font-weight:700;margin-bottom:3px">{nd} on time · {nl} late · {nm} missed · {len(unk)} not verifiable</div>{lh}<div class="t" style="margin-top:8px">By type · on time / late / missed</div>{by_type()}<div class="pend">{COPY.get('pattern','')}</div></div>
 <div style="flex:.88;display:flex;flex-direction:column;gap:8px;min-width:0"><div class="p" style="flex:none"><div class="t">Trust gate</div><span class="pill">{gate.replace('-', ' · ')}</span><ul style="margin-top:4px">{trust}</ul></div><div class="p miss" style="flex:1"><div class="t" style="color:var(--r)">Not disclosed</div><ul>{und}</ul></div></div></div>
 <div class="row">{bn}</div>
-<div class="foot">For educational purpose only.</div></body></html>"""
+<div class="foot">For educational purpose only. Not an investment advice.</div></body></html>"""
 out = os.path.join(ROOT, "cards", SYM); os.makedirs(out, exist_ok=True)
 open(os.path.join(out, "card.html"), "w").write(html)
 try:

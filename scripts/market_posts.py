@@ -166,7 +166,7 @@ def do_fii():
            f"FII/FPI: bought {d['fii']['buy']:,.0f} | sold {d['fii']['sell']:,.0f} | net {f:+,.0f}\n"
            f"DII: bought {d['dii']['buy']:,.0f} | sold {d['dii']['sell']:,.0f} | net {dd:+,.0f}\n"
            f"Month to date: FII {tot('fii_net'):+,.0f} | DII {tot('dii_net'):+,.0f}\n"
-           f"For educational purpose only.")
+           f"For educational purpose only. Not an investment advice.")
     tweet = (f"FII/DII activity - {card['date']} (cash, ₹ Cr)\n"
              f"FII net {f:+,.0f} | DII net {dd:+,.0f}\n"
              f"Month to date: FII {tot('fii_net'):+,.0f} | DII {tot('dii_net'):+,.0f}\n"
@@ -235,7 +235,7 @@ def do_deals():
     pc = []
     for i, path in enumerate(paths, 1):
         cap = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells), card {i}/{len(paths)}\n"
-               f"Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed.\nFor educational purpose only.") if i == 1 else f"Bulk & block deals - {label}, card {i}/{len(paths)}"
+               f"Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed.\nFor educational purpose only. Not an investment advice.") if i == 1 else f"Bulk & block deals - {label}, card {i}/{len(paths)}"
         tw = (f"Bulk & block deals - {label}: {len(kept)} deals ({nb} net buys, {ns} net sells). "
               f"Biggest: " + ", ".join(f"{x['name'][:22]} {x['cr']:,.0f} Cr" for x in sorted(kept, key=lambda z: -z['cr'])[:3]) + "\n" + tags.join("#BulkDeals", *[tags.company_tag(code=(x["rec"]["SCRIP_CD"] if x.get("rec") else None), name=x["name"], symbol=x.get("sym") or None) for x in sorted(kept, key=lambda z: -z['cr'])[:2]], "#StockMarketIndia")) if i == 1 else None
         pc.append((path, cap, tw))

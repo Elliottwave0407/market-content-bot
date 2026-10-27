@@ -189,7 +189,7 @@ def render(df, name, symbol, out_path, bars=120, note=""):
         yy = y0 + 0.95 + k * 0.56
         fig.text(fx(0.8), fy(yy), lab, color=MUTED, fontsize=14, fontweight="bold", va="center")
         fig.text(fx(2.45), fy(yy), txt, color=col, fontsize=14.5, fontweight="bold", va="center")
-    ft = "Levels and trendlines are drawn automatically from past swing points. Scan output, not a recommendation. For educational purpose only." + (f"  {note}" if note else "")
+    ft = "Levels and trendlines are drawn automatically from past swing points. Scan output, not a recommendation. For educational purpose only. Not an investment advice." + (f"  {note}" if note else "")
     import cards_market as CM
     for k, ln in enumerate(CM._wrap(fig, ft, 12.5, "normal", W - 1.5, 3)):
         fig.text(fx(0.75), fy(H - 0.85 + 0.28 * k), ln, color=MUTED, fontsize=12.5, va="center")

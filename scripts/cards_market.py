@@ -79,7 +79,7 @@ def _deals_page(items, date_label, page, pages, out_path, note=""):
             fig.text(fx(0.8), fy(yy + 0.72), f"{ex}   |   {st}   |   {mc}", color=MUTED, fontsize=13, va="center")
             yy += RH
         y += h + 0.25
-    _foot(fig, W, H, "Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed. For educational purpose only.", note)
+    _foot(fig, W, H, "Netted per client per exchange; algo/prop trades and deals under ₹0.1 Cr removed. For educational purpose only. Not an investment advice.", note)
     T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)
 
@@ -151,7 +151,7 @@ def render_fii_dii(d, out_path, note=""):
         for r in shown:
             row(yy, r["date"], r["fii_net"], r["dii_net"]); yy += 0.5
         row(yy, "MTD total", sum(r["fii_net"] for r in mtd), sum(r["dii_net"] for r in mtd), True)
-    _foot(fig, W, H, "For educational purpose only.", note)
+    _foot(fig, W, H, "For educational purpose only. Not an investment advice.", note)
     T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)
 
@@ -239,7 +239,7 @@ def render_news(it, out_path, note=""):
             fig.text(fx(L + 0.5), fy(y - 0.04 + 0.42 * k), ln, color=TEXT, fontsize=24, va="center")
         y += 0.5 + 0.42 * (len(lines) - 1) + 0.0
         y += 0.0
-    ft = "For educational purpose only." + (f"  {note}" if note else "")
+    ft = "For educational purpose only. Not an investment advice." + (f"  {note}" if note else "")
     for k, ln in enumerate(_wrap(fig, ft, 13, "normal", mw, 2)):
         fig.text(fx(L), fy(H - 0.75 + 0.3 * k), ln, color=MUTED, fontsize=13, va="center")
     T.brand(fig, h_in=1.15, x_right=fx(R) + 0.0, top=fy(0.62) + 0.0)
@@ -519,6 +519,6 @@ def render_mood4(b, out_path, note=""):
             fig.text(fx(cx), fy(by + 3.08), f"above {lbl}", color=HEAD, fontsize=14, fontweight="bold", ha="center", va="center")
         fig.text(fx(0.8), fy(by + 3.48), f"52-wk highs {st['new_high']:,}  |  lows {st['new_low']:,}  |  up 4%+ {st['up4']:,}  |  down 4%+ {st['down4']:,}", color=HEAD, fontsize=14, fontweight="bold", va="center")
         by += SEGH + 0.25
-    _foot(fig, W, H, "Mood rule: share of stocks above their 50-day average - 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak. For educational purpose only.", note)
+    _foot(fig, W, H, "Mood rule: share of stocks above their 50-day average - 65%+ Strong, 50%+ Positive, 35%+ Mixed, 20%+ Weak. For educational purpose only. Not an investment advice.", note)
     T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
     T.save(fig, out_path)

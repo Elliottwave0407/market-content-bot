@@ -34,7 +34,7 @@ p(f"last close {last:.2f} ({(last / prev - 1) * 100:+.2f}%)")
 if SEND:
     import market_posts as mp
     mp.SEND = True
-    cap = f"{NAME} (NSE: {SYMBOL}) - daily chart, {pd.to_datetime(x['date'].iloc[-1]).strftime('%d %b %Y')}\nClose ₹{last:,.2f} ({(last / prev - 1) * 100:+.2f}%)\nFor educational purpose only."
+    cap = f"{NAME} (NSE: {SYMBOL}) - daily chart, {pd.to_datetime(x['date'].iloc[-1]).strftime('%d %b %Y')}\nClose ₹{last:,.2f} ({(last / prev - 1) * 100:+.2f}%)\nFor educational purpose only. Not an investment advice."
     tw = f"{NAME} daily chart: close ₹{last:,.2f} ({(last / prev - 1) * 100:+.2f}%)\n#{SYMBOL} #StockMarketIndia #TechnicalAnalysis"
     p("sent:", mp.post([(png, cap, tw)]))
 publish()

@@ -109,7 +109,7 @@ def render_recap(d, out_path, note=""):
     if fn:
         y = block("NEGATIVE / WATCH", fn, RED, y + 0.05)
     how = "AI-read from the filing text" if d.get("ai") else "rule-based from filing keywords"
-    ft = f"Top {len(fp) + len(fn)} of {len(d['pos']) + len(d['neg'])} important filings. Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only." + (f"  {note}" if note else "")
+    ft = f"Top {len(fp) + len(fn)} of {len(d['pos']) + len(d['neg'])} important filings. Score -5 to +5 = likely importance of the news ({how}); not a price forecast. For educational purpose only. Not an investment advice." + (f"  {note}" if note else "")
     for k, ln in enumerate(_wrap(fig, ft, 13, "normal", MW, 3)):
         fig.text(fx(L), fy(H - 0.9 + 0.3 * k), ln, color=MUTED, fontsize=13, va="center")
     T.save(fig, out_path)

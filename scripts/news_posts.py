@@ -17,7 +17,7 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.environ.get("MARKET_CHAT_ID", "").strip()
 MAX_AGE_H = 3          # never post an item older than this (e.g. after a long outage)
 MAX_PER_TICK = 8       # flood guard per check
-DISC = "For educational purpose only."
+DISC = "For educational purpose only. Not an investment advice."
 
 CONCALL_RX = re.compile(r"conference call|earnings call|con-?call|concall|analyst call|investor call", re.I)
 MGMT_RX = re.compile(r"chief financial officer|\bcfo\b|chief executive|\bceo\b|managing director|\bmd\b|chairman|chief operating|\bcoo\b|whole[- ]time director", re.I)
@@ -198,7 +198,7 @@ def build_rss_card(x):
     it = {"tag": x["tag"], "company": org, "meta": f"Press release  |  {x['date']}"[:90], "headline": x["title"], "detail": (x["desc"] or None) and x["desc"][:650], "source": f"{org} website"}
     path = os.path.join(OUT, f"news_{abs(hash(x['id']))}.png")
     CM.render_news(it, path)
-    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nFor educational purpose only.", f"{x['tag']}: {x['title']}"[:230] + "\n#" + x["tag"] + " #StockMarketIndia"
+    return path, f"{x['tag']}: {x['title']}\n{x['link']}\n\nFor educational purpose only. Not an investment advice.", f"{x['tag']}: {x['title']}"[:230] + "\n#" + x["tag"] + " #StockMarketIndia"
 
 _last = [0.0]
 _last_rss = [0.0]

@@ -288,14 +288,14 @@ def main():
             if shown < 3:
                 p("fewer than 3 important filings - nothing posted")
             else:
-                cap = f"Filings Recap - {d['date']}\nToday's top orders, deals and risk items from BSE filings.\nFor educational purpose only."
+                cap = f"Filings Recap - {d['date']}\nToday's top orders, deals and risk items from BSE filings.\nFor educational purpose only. Not an investment advice."
                 tw = f"Filings recap {d['date']}: top orders and deals from today's BSE filings\n#StockMarketIndia #Orders #Stocks"
                 if mp.post([(path, cap, tw)]):
                     os.makedirs("state", exist_ok=True)
                     json.dump({"last": day.strftime("%Y-%m-%d")}, open(ST, "w"))
                     p("posted")
         else:
-            cap = f"SAMPLE - evening filings recap built from real BSE filings of {d['date']} (AI-read scores; format under review).\nFor educational purpose only."
+            cap = f"SAMPLE - evening filings recap built from real BSE filings of {d['date']} (AI-read scores; format under review).\nFor educational purpose only. Not an investment advice."
             ok = mp.post([(path, cap, None)])
             p("sent:", ok)
             if ok:
