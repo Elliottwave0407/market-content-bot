@@ -101,10 +101,10 @@ def mirror_to_channel(png, cap_clean, flink, key):
         return None
 
 STUCK_MIN = float(os.environ.get("STUCK_MIN", "20"))
-STUCK_MCAP = float(os.environ.get("STUCK_MCAP", "300"))
+STUCK_MCAP = float(os.environ.get("STUCK_MCAP", "150"))
 
 def stuck_alert(rec, key, wait_min, chat):
-    """One private message per filing that is still waiting for readable numbers after STUCK_MIN minutes (companies above STUCK_MCAP Rs Cr only).
+    """One private message per filing that is still waiting for readable numbers after STUCK_MIN minutes (companies above STUCK_MCAP Rs Cr only (150)).
     Goes to the private results chat only. Returns True when sent (so it is never repeated)."""
     try:
         if wait_min > 180:          # old leftovers in the pending list: no alert (no spam from before this feature existed)
