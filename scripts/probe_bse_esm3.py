@@ -13,8 +13,13 @@ try:
         r = b.circulars(from_date=now - timedelta(days=3), to_date=now, subject="ESM")
         rows = r.get("Table", r) if isinstance(r, dict) else r
         x = rows[0]; no = x["Notice_No"]; att = x.get("Attachments")
-        for u in (f"https://www.bseindia.com/downloads/UploadDocs/Notices/{no}/{att}", f"https://www.bseindia.com/downloads/UploadDocs/Notices/{no}/{att.replace('$', '%24')}", f"https://www.bseindia.com/markets/downloads/{att}", f"https://www.bseindia.com/downloads/{att}"):
-            rr = requests.get(u, headers=H, timeout=40); p("fetch", u[-80:], rr.status_code, len(rr.content), rr.content[:4])
+        pg = requests.get(f"https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars.aspx?page={no}", headers=H, timeout=40)
+        import re
+        p("notice page", pg.status_code, len(pg.text), "links:", re.findall(r'(?:href|src)=["\']([^"\']+)', pg.text)[:25])
+        base = f"https://www.bseindia.com/downloads/UploadDocs/Notices/{no}/"
+        att0 = att.split("$")[0]
+        for u in (base + att, base + att0 + ".xlsx", base + no + ".xlsx", base + "Annexure.xlsx", base + "Annexure_ESM.xlsx", f"https://www.bseindia.com/downloads/UploadDocs/Notices/{no}/{x.get('merge_Attachments')}", f"https://www.bseindia.com/markets/downloads/UploadDocs/Notices/{no}/{att}"):
+            rr = requests.get(u, headers=H, timeout=40); p("fetch", u[-70:], rr.status_code, len(rr.content), rr.content[:4])
             if rr.content[:2] == b"PK":
                 wb = openpyxl.load_workbook(io.BytesIO(rr.content), read_only=True)
                 for ws in wb.worksheets:
