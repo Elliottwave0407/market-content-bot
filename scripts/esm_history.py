@@ -58,7 +58,11 @@ try:
                 for row in ws.iter_rows(values_only=True):
                     c0 = row[0]
                     if isinstance(c0, str) and "list of securities" in c0.lower():
-                        cur, eff = kind(c0), eff_date(c0) or datetime.strptime(x["cirDate"], "%Y%m%d").strftime("%Y-%m-%d"); continue
+                        cur, eff = kind(c0), eff_date(c0) or datetime.strptime(x["cirDate"], "%Y%m%d").strftime("%Y-%m-%d")
+                        cd = datetime.strptime(x["cirDate"], "%Y%m%d").strftime("%Y-%m-%d")
+                        if eff > cd and (datetime.strptime(eff, "%Y-%m-%d") - datetime.strptime(cd, "%Y-%m-%d")).days > 10:      # a typo in the circular's year (seen once): use the circular's own year
+                            eff = cd[:4] + eff[4:]
+                        continue
                     if cur and isinstance(c0, (int, float)) and row[1]:
                         events.append({"eff": eff, "ev": cur, "sym": str(row[1]).strip(), "isin": str(row[3] or "").strip(), "name": str(row[2] or "").replace("*", "").strip(), "circ": x["circDisplayNo"]})
             done.add(x["circDisplayNo"])
