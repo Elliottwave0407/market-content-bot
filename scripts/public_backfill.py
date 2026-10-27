@@ -9,7 +9,7 @@ import xbuttons, channel_copy
 try:
     codes = [c.strip() for c in os.environ.get("CODES", "").split(",") if c.strip()]
     order = {c: i for i, c in enumerate(codes)}
-    rpl.DAYS_BACK = 3
+    rpl.DAYS_BACK = 1
     confirm = os.environ.get("CONFIRM", "").strip().lower() == "yes"
     done = []
     with BSE(download_folder="/tmp") as b:
