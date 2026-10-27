@@ -12,7 +12,12 @@ try:
     os.makedirs("out/upgrade", exist_ok=True)
     built = []; other = {}
     with BSE(download_folder="/tmp") as b:
-        rows = rpl.fetch_filings(b)
+        rows = None
+        for _t in range(4):
+            try: rows = rpl.fetch_filings(b); break
+            except Exception as e:
+                p('BSE fetch retry', _t + 1, type(e).__name__); import time; time.sleep(20)
+        if rows is None: raise RuntimeError('BSE not reachable')
         first = {}
         for r in rows:
             c = str(r.get("SCRIP_CD")).strip()
