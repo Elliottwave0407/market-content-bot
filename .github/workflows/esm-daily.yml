@@ -1,0 +1,32 @@
+name: esm-daily
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "effective date YYYY-MM-DD (blank = latest)"
+        default: ""
+      send:
+        description: "type yes to send to the PRIVATE group (otherwise dry run)"
+        default: "no"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            store/esm_history
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          DAY: ${{ github.event.inputs.day }}
+          SEND: ${{ github.event.inputs.send == 'yes' && '1' || '0' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/esm_daily.py
