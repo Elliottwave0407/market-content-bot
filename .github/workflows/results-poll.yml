@@ -34,6 +34,7 @@ jobs:
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
           POLL_INTERVAL: "10"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # used ONLY when every model on the main key is out of quota
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
           TELEGRAM_ANALYSIS_CHAT_ID: ${{ secrets.TELEGRAM_ANALYSIS_CHAT_ID }}
