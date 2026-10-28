@@ -344,6 +344,10 @@ def process(x, st, final, maps=None):
         p(f"  sent ok={rr.get('ok')}")
         if not rr.get("ok"):
             return "wait"
+        try:
+            import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
+        except Exception as _e:
+            p("  channel copy failed:", type(_e).__name__)
         import store; store.log_result("nse", cap, rr, card.LAST, (parse_dt(x) or "").__str__() if parse_dt(x) else None)
         time.sleep(3.2)
     if not ONLY:

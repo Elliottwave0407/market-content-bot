@@ -133,6 +133,10 @@ def process(bse, r, st, final=False):
             rs = nse.tg("sendPhoto", data={"chat_id": nse.CHAT, "caption": cc[:1024], "reply_markup": xbuttons.markup(tweet, flink)}, files={"photo": fh})
         p(f"  sent ok={rs.get('ok')}")
         if not rs.get("ok"): return "wait"
+        try:
+            import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
+        except Exception as _e:
+            p("  channel copy failed:", type(_e).__name__)
         import store; store.log_result("sme", cap, rs, card.LAST, r.get("NEWS_DT"))
         time.sleep(3.2)
     st["posted"].append(key); nse._mark_seen(bkey)

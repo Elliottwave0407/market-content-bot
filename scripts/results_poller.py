@@ -78,11 +78,11 @@ def _mlog(msg):
     except Exception:
         pass
 
-def mirror_to_channel(png, cap_clean, flink, key):
+def mirror_to_channel(png, cap_clean, flink, key, force=False):
     """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_PUBLIC_GROUP_ID.
     Only a 'Filing' link button (anyone may tap it); no Post-to-X / Posted / Skip buttons. Does nothing when the secret is not set; never raises."""
     ch = os.environ.get("TELEGRAM_PUBLIC_GROUP_ID", "").strip()
-    full = key.split("|")[-1] in ("consolidated", "standalone")
+    full = force or key.split("|")[-1] in ("consolidated", "standalone")
     if not ch or not png or not full:
         _mlog(f"skip secret_set={bool(ch)} png={bool(png)} full={full}")
         return None
