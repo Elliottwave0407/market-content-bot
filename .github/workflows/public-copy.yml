@@ -1,0 +1,31 @@
+name: public-copy
+on:
+  workflow_dispatch:
+    inputs:
+      msgs:
+        description: "msgid:SYMBOL comma list (private chat message ids)"
+        default: ""
+      confirm:
+        description: "type yes to send to the public group"
+        default: "no"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
+          MSGS: ${{ github.event.inputs.msgs }}
+          CONFIRM: ${{ github.event.inputs.confirm }}
+        run: python scripts/public_copy.py
