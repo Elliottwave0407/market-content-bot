@@ -24,6 +24,7 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}
           CODE: ${{ github.event.inputs.codes }}
           SINCE: ${{ github.event.inputs.since }}
 
