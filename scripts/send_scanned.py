@@ -56,6 +56,9 @@ try:
                 break
             p("  attempt", attempt + 1, "no full card:", c, kind)
             time.sleep(20)
+        try:
+            for ln in [x for x in pdf_card.LOG if (r.get("SLONGNAME") or "")[:12] in x][-8:]: p("  LOG:", ln[:300])
+        except Exception: pass
         if not got:
             p("SKIP (no full Sep-26 card):", c)
             continue

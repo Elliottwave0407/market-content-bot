@@ -388,7 +388,17 @@ def _try_pdf(bse, rec, st, headline, filed, res_):
             pass
         if cur_bse and not ok:
             LOG.append(f"pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored {name} {basis}")
-        ok = ok or cur_bse
+        comp_bad = False      # revenue + other income must equal total income; BSE's own table agreeing with a misread digit must not override that (SCI Land 28 Oct)
+        try:
+            rv_, oi_, ti_ = (val(d, x_, 0) for x_ in ("revenue", "other_income", "total_income"))
+            if None not in (rv_, oi_, ti_):
+                comp_bad = not (abs(rv_ + oi_ - ti_) <= max(1.5, 0.002 * abs(ti_)) or abs(rv_ - ti_) <= max(1.5, 0.002 * abs(ti_)))
+        except Exception:
+            pass
+        if comp_bad and not ok:
+            LOG.append(f"pdf revenue + other income != total income, BSE-table override refused {name} {basis}")
+        else:
+            ok = ok or cur_bse
         hist, hpat, det, hs = {}, {}, [], {}
         for off, m in ((1, prev), (4, yago)):
             h = fx(q - off)
