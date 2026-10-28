@@ -78,6 +78,9 @@ try:
                     dd = out.get(bs)
                     if isinstance(dd, dict):
                         line += f" | {bs} arith={[nse.arith_col(dd, i) for i in range(3)]}"
+                for bs in ("consolidated", "standalone"):
+                    dd = out.get(bs)
+                    if isinstance(dd, dict): line += f" | {bs}: rev={dd.get('revenue')} oi={dd.get('other_income')} ti={dd.get('total_income')} exp={dd.get('total_expenses')} pbt={dd.get('pbt')} pat={dd.get('pat')} eps={dd.get('eps')}"
                 if name in TRUTH: line += f" | matches vs hand-read: {score(out, TRUTH[name])}"
                 p(line)
                 time.sleep(2)
