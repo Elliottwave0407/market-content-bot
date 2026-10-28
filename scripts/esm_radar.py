@@ -1,9 +1,14 @@
-"""SME ESM Radar: ONE card for the NSE Emerge (SME) segment. Blocks: today's changes (exact, from NSE circulars), coming exit milestones
-(entry + 90 days; Stage II minimum stay 30 days), and stocks that met the 3-month price criteria (price-only test, hit rate shown).
-Env: OUT (png path), SEND=1 sends the PNG to the PRIVATE results chat only. Nothing public."""
-import os, sys, io, json, glob, gzip, csv, collections, datetime as dt
+"""SME ESM Radar: ONE card for both SME segments, NSE Emerge and BSE SME.
+Blocks: snapshot table, today's changes (NSE: effective date from NSE circulars; BSE: latest BSE notice), Stage II now, coming exit milestones
+(entry + 90 days; Stage II minimum stay 30 days), stocks that met the 3-month price criteria (price-only test), Stage II watch (PE condition + price level).
+A stock listed on both exchanges is shown once with the tag N+B.
+PE: NSE quoted PE (NSE API), BSE quoted PE (BSE quote data), filings-derived PE as fallback for NSE. Snapshots are saved to store/sme_eps/pe_snap.json.
+Env: OUT (png path), SEND=1 sends the PNG to the PRIVATE results chat only, N500_PE override, PE_FILE (read the PE snapshot instead of fetching), NO_PE_FETCH=1.
+Nothing public."""
+import os, sys, io, re, json, glob, gzip, csv, collections, datetime as dt
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
+import requests
 import theme as T
 from theme import BG, PANEL, BORDER, TEXT, MUTED, HEAD, GREEN, RED, AMBER, BLUE
 from cards_market import _hdr, _foot
@@ -12,19 +17,30 @@ OUT = os.environ.get("OUT", "out/esm_radar_sme.png")
 os.makedirs(os.path.dirname(OUT) or ".", exist_ok=True)
 D = dt.date.fromisoformat
 cols = ["d", "src", "isin", "sym", "ser", "o", "h", "l", "c", "pc", "v"]
-files = sorted(glob.glob("store/prices/d/*_N.csv.gz"))
-df = pd.concat([pd.read_csv(f, names=cols, header=None, dtype={"isin": str}) for f in files[-290:]])
-df["d"] = pd.to_datetime(df["d"])
-for c in ["h", "l", "c", "pc"]: df[c] = pd.to_numeric(df[c], errors="coerce")
-sme = set(df[df.ser.isin(["SM", "ST", "SZ"])].isin_ if False else df[df["ser"].isin(["SM", "ST", "SZ"])]["isin"])
-df = df.sort_values(["isin", "d"]).drop_duplicates(["isin", "d"], keep="last")
-df["lf"] = np.log((df["c"] / df["pc"]).clip(0.2, 5)); df["adj"] = np.exp(df.groupby("isin")["lf"].cumsum()); df["fac"] = df["adj"] / df["c"]
-df["ah"] = df["h"] * df["fac"]; df["al"] = df["l"] * df["fac"]
-ev = sorted(json.load(open("store/esm_history/events.json")), key=lambda e: e["eff"])
-DAY = os.environ.get("DAY", "").strip() or max(e["eff"] for e in ev); today = D(DAY)
+
+def short(nm): return re.sub(r"\s+(Limited|Ltd\.?|Private Limited)$", "", re.sub(r"\s+", " ", nm.strip().rstrip("#*")), flags=re.I)
+
+# ---------------------------------------------------------------- prices (adjusted by previous-close chaining), per exchange
+def load_prices(tag, sers):
+    files = sorted(glob.glob(f"store/prices/d/*_{tag}.csv.gz"))
+    df = pd.concat([pd.read_csv(f, names=cols, header=None, dtype={"isin": str, "sym": str}) for f in files[-290:]])
+    df["d"] = pd.to_datetime(df["d"])
+    for c in ["h", "l", "c", "pc"]: df[c] = pd.to_numeric(df[c], errors="coerce")
+    smes = set(df[df["ser"].isin(sers)]["isin"])
+    df = df[df["isin"].isin(smes)].sort_values(["isin", "d"]).drop_duplicates(["isin", "d"], keep="last")
+    df["lf"] = np.log((df["c"] / df["pc"]).clip(0.2, 5)); df["adj"] = np.exp(df.groupby("isin")["lf"].cumsum()); df["fac"] = df["adj"] / df["c"]
+    df["ah"] = df["h"] * df["fac"]; df["al"] = df["l"] * df["fac"]
+    A = df.pivot(index="d", columns="isin", values="adj"); H = df.pivot(index="d", columns="isin", values="ah"); L = df.pivot(index="d", columns="isin", values="al"); C = df.pivot(index="d", columns="isin", values="c")
+    sym_of = df.drop_duplicates("isin", keep="last").set_index("isin")["sym"].to_dict()
+    return dict(A=A, H=H, L=L, C=C, sme=smes, sym=sym_of)
+PX = {"N": load_prices("N", ["SM", "ST", "SZ"]), "B": load_prices("B", ["M", "MT", "MS"])}
+
+# ---------------------------------------------------------------- ESM state per exchange
+ev_n = sorted(json.load(open("store/esm_history/events.json")), key=lambda e: e["eff"])
+DAY = os.environ.get("DAY", "").strip() or max(e["eff"] for e in ev_n); today = D(DAY)
+STATE = {"N": {}, "B": {}}; CHG = {"N": collections.defaultdict(list), "B": collections.defaultdict(list)}; ENT_N = {"N": 0, "B": 0}; EXIT_N = {"N": 0, "B": 0}
 by = collections.defaultdict(list)
-for e in ev: by[e["isin"]].append(e)
-state = {}
+for e in ev_n: by[e["isin"]].append(e)
 for i, es in by.items():
     st = ent = s2 = None
     for e in es:
@@ -34,176 +50,297 @@ for i, es in by.items():
         elif e["ev"] == "I_to_II": st, s2 = "II", d
         elif e["ev"] == "II_to_I": st, s2 = "I", None
         elif e["ev"] == "exit": st = None
-    if st and i in sme: state[i] = dict(sym=es[-1]["sym"], name=es[-1]["name"], st=st, ent=ent, s2=s2)
-chg = collections.defaultdict(list)
-for e in ev:
-    if e["eff"] == DAY and e["isin"] in sme: chg[e["ev"]].append(e)
-# coming milestones
-import re
-def short(nm): return re.sub(r"\s+(Limited|Ltd\.?|Private Limited)$", "", re.sub(r"\s+", " ", nm.strip()), flags=re.I)
-horizon = today + dt.timedelta(days=10); up = []; past = 0
-for i, s in state.items():
-    d90 = s["ent"] + dt.timedelta(days=90)
-    if s["st"] == "I":
-        if today <= d90 <= horizon: up.append((d90, short(s["name"]), "Stage I", f"90 days on {d90:%d %b}"))
-        elif d90 < today: past += 1
-    if s["st"] == "II":
-        d30 = s["s2"] + dt.timedelta(days=30)
-        if today <= d30 <= horizon: up.append((d30, short(s["name"]), "Stage II", f"30-day minimum ends {d30:%d %b}"))
+    if st and i in PX["N"]["sme"]: STATE["N"][i] = dict(sym=es[-1]["sym"], name=short(es[-1]["name"]), st=st, ent=ent, s2=s2)
+for e in ev_n:
+    if e["isin"] not in PX["N"]["sme"]: continue
+    if e["eff"] == DAY: CHG["N"][e["ev"]].append(e)
+    if 0 <= (today - D(e["eff"])).days <= 7:
+        if e["ev"] == "enter_I": ENT_N["N"] += 1
+        if e["ev"] == "exit": EXIT_N["N"] += 1
+# BSE: current list + events from notice annexures (event date = notice date, effective about the next day)
+bl = json.load(open("store/esm/bse_latest.json")); bev = json.load(open("store/esm_history/bse_events.json"))
+mc = json.load(open("store/mcap/mcap.json"))
+bse_dt = D(f"{bl['notice'][:4]}-{bl['notice'][4:6]}-{bl['notice'][6:8]}")
+bby = collections.defaultdict(list)
+for e in bev: bby[e["isin"]].append(e)
+for i, v in bl["list"].items():
+    if not (i in PX["B"]["sme"] or (mc.get(i) or {}).get("g") in ("M", "MT", "MS")): continue
+    ent = s2 = None
+    for e in sorted(bby.get(i, []), key=lambda e: e["d"]):
+        d = D(e["d"]) + dt.timedelta(days=1)
+        if e["ev"] == "enter_I": ent, s2 = d, None
+        elif e["ev"] == "enter_II": ent, s2 = d, d
+        elif e["ev"] == "I_to_II": s2 = d
+        elif e["ev"] == "II_to_I": s2 = None
+    STATE["B"][i] = dict(sym=v["code"], name=short(v["name"]), st=v["st"], ent=ent, s2=s2)
+bsme = set(STATE["B"]) | PX["B"]["sme"]
+for e in bev:
+    if e["isin"] not in bsme and (mc.get(e["isin"]) or {}).get("g") not in ("M", "MT", "MS"): continue
+    if D(e["d"]) == bse_dt: CHG["B"][e["ev"] if e["ev"] != "enter_II" else "I_to_II"].append(e)
+    if 0 <= (bse_dt - D(e["d"])).days <= 7:
+        if e["ev"] == "enter_I": ENT_N["B"] += 1
+        if e["ev"] == "exit": EXIT_N["B"] += 1
+name_b = {i: v["name"] for i, v in STATE["B"].items()}
+for e in bev: name_b.setdefault(e["isin"], short(e["name"]))
+
+def tag(i):
+    n = i in PX["N"]["sme"]; b = i in bsme or i in PX["B"]["sme"]
+    return "N+B" if (n and b) else ("NSE" if n else "BSE")
+TAGCOL = {"NSE": BLUE, "BSE": AMBER, "N+B": GREEN}
+nm_any = lambda i: (STATE["N"].get(i) or {}).get("name") or STATE["B"].get(i, {}).get("name") or name_b.get(i) or PX["N"]["sym"].get(i) or i
+
+# ---------------------------------------------------------------- merged views (a stock listed on both is shown once)
+def merged_state():
+    out = {}
+    for x in ("N", "B"):
+        for i, s in STATE[x].items():
+            if i in out: continue
+            out[i] = dict(s, ex=x, tag=tag(i))
+    return out
+MS_ = merged_state()
+horizon = today + dt.timedelta(days=10); up = []; past = {"N": 0, "B": 0}; nokn = 0
+for x in ("N", "B"):
+    ref = today if x == "N" else bse_dt
+    for i, s in STATE[x].items():
+        if x == "B" and i in STATE["N"]: continue
+        if s["ent"] is None:
+            if s["st"] == "I": nokn += 1
+            continue
+        if s["st"] == "I":
+            d90 = s["ent"] + dt.timedelta(days=90)
+            if ref <= d90 <= horizon: up.append((d90, tag(i), s["name"], "Stage I", f"90 days on {d90:%d %b}"))
+            elif d90 < ref: past[x] += 1
+        if s["st"] == "II" and s["s2"]:
+            d30 = s["s2"] + dt.timedelta(days=30)
+            if ref <= d30 <= horizon: up.append((d30, tag(i), s["name"], "Stage II", f"30-day min ends {d30:%d %b}"))
 up.sort()
-# 3-month criteria (price only, NSE SME not in ESM)
-A = df.pivot(index="d", columns="isin", values="adj"); H = df.pivot(index="d", columns="isin", values="ah"); L = df.pivot(index="d", columns="isin", values="al"); C = df.pivot(index="d", columns="isin", values="c")
-n = 63
-hl = H.rolling(n, min_periods=50).max() / L.rolling(n, min_periods=50).min() - 1; cc = A / A.shift(n) - 1
-meet = ((hl > .75) & (cc > 0)) | (cc > .5)
-last = A.index[-1]; meet_l = meet.iloc[-1]; prev_l = meet.iloc[-2] if len(A) > 1 else meet_l
-watch = []
-for i in A.columns:
-    if i not in sme or i in state: continue
-    if bool(meet_l.get(i, False)):
-        first = last
-        k = len(A) - 1
-        while k > 0 and bool(meet[i].iloc[k - 1]): k -= 1
-        watch.append((A.index[k], by[i][-1]["name"] if i in by else df[df.isin_ == i].sym.iloc[-1] if False else i, i))
-sym_of = df.drop_duplicates("isin", keep="last").set_index("isin")["sym"].to_dict()
-name_of = {i: (short(by[i][-1]["name"]) if i in by else sym_of.get(i, i)) for i in A.columns}
-met = sorted([(d, name_of[i]) for d, _, i in watch if (last - d).days <= 5], key=lambda x: x[0], reverse=True)
 
+# ---------------------------------------------------------------- 3-month Stage I price test (price only), SME stocks not yet in ESM
+met = []
+for x in ("N", "B"):
+    P = PX[x]; A = P["A"]; Hh = P["H"]; Ll = P["L"]; n = 63
+    hl = Hh.rolling(n, min_periods=50).max() / Ll.rolling(n, min_periods=50).min() - 1; cc = A / A.shift(n) - 1
+    meet = ((hl > .75) & (cc > 0)) | (cc > .5)
+    last = A.index[-1]; seen_n = {m[2] for m in met}
+    for i in A.columns:
+        if i in STATE["N"] or i in STATE["B"]: continue
+        if x == "B" and i in PX["N"]["sme"]: continue
+        if bool(meet.iloc[-1].get(i, False)):
+            k = len(A) - 1
+            while k > 0 and bool(meet[i].iloc[k - 1]): k -= 1
+            if (last - A.index[k]).days <= 5: met.append((A.index[k], tag(i), i, nm_any(i) if (i in STATE["N"] or i in name_b) else short(nm_any(i))))
+met.sort(key=lambda m: m[0], reverse=True)
 
-# ---- Stage II watch: Stage I SME stocks whose PE condition is met (loss-making or PE > 2x Nifty 500 PE) and the close that would meet the price condition
+# ---------------------------------------------------------------- Stage II watch: PE condition (<= 0 or > 2x Nifty 500 PE) + the price level that would meet the price condition
 def n500_pe():
     try:
-        r = requests.get(f"https://archives.nseindia.com/content/indices/ind_close_all_{dt.date.today():%d%m%Y}.csv", headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
-        if r.status_code != 200:
-            for back in range(1, 6):
-                d = dt.date.today() - dt.timedelta(days=back)
-                r = requests.get(f"https://archives.nseindia.com/content/indices/ind_close_all_{d:%d%m%Y}.csv", headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
-                if r.status_code == 200: break
-        for ln in r.text.splitlines():
-            c = ln.split(",")
-            if c and c[0].strip().lower() == "nifty 500": return float(c[10])
-    except Exception:
-        pass
+        for back in range(0, 6):
+            d = dt.date.today() - dt.timedelta(days=back)
+            r = requests.get(f"https://archives.nseindia.com/content/indices/ind_close_all_{d:%d%m%Y}.csv", headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+            if r.status_code == 200:
+                for ln in r.text.splitlines():
+                    c = ln.split(",")
+                    if c and c[0].strip().lower() == "nifty 500": return float(c[10])
+    except Exception: pass
     return None
-import requests
 N500 = float(os.environ["N500_PE"]) if os.environ.get("N500_PE") else n500_pe()
 try: eps2 = json.load(open("store/sme_eps/eps2.json"))
 except Exception: eps2 = {}
 _UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
 def nse_pe_map(syms):
-    """NSE's own PE (secInfo.pdSymbolPe) per SME symbol from the NSE quote API. Missing/blank values are left out."""
     import time as _t
     out = {}
     try:
-        _REF = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
-        ss = requests.Session(); ss.headers.update(_UA); ss.get("https://www.nseindia.com/", timeout=25); ss.get(_REF, timeout=25)
+        REF = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
+        ss = requests.Session(); ss.headers.update(_UA); ss.get("https://www.nseindia.com/", timeout=25); ss.get(REF, timeout=25)
         for sym in syms:
             for ser in ("ST", "SM", "SZ"):
                 try:
-                    r = ss.get(f"https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolData&marketType=N&series={ser}&symbol={sym}", headers={"Referer": _REF}, timeout=40)
+                    r = ss.get(f"https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolData&marketType=N&series={ser}&symbol={sym}", headers={"Referer": REF}, timeout=40)
                     if r.status_code != 200: continue
                     e = r.json().get("equityResponse", [{}])[0]
                     if not e.get("metaData"): continue
-                    v = (e.get("secInfo") or {}).get("pdSymbolPe")
-                    try: v = float(v)
+                    try: v = float((e.get("secInfo") or {}).get("pdSymbolPe"))
                     except Exception: v = None
                     if v is not None and v > 0: out[sym] = v
                     break
                 except Exception: pass
                 _t.sleep(0.3)
             _t.sleep(0.4)
-    except Exception as ex:
-        print("NSE PE fetch failed:", type(ex).__name__)
+    except Exception as ex: print("NSE PE fetch failed:", type(ex).__name__)
     return out
-W2 = []; pe_na = 0; pe_not_met = 0; pe_nse_n = 0; pe_disagree = []
+def bse_pe_map(codes, names=None):
+    import time as _t, tempfile
+    out = {}
+    try:
+        from bse import BSE
+        with BSE(download_folder=tempfile.mkdtemp()) as b:
+            for c in codes:
+                try:
+                    m = b.equityMetaInfo(c)
+                    if names is not None and m.get("COName"): names[c] = str(m.get("COName")).strip()
+                    for k in ("PE", "ConPE"):
+                        try: out[c] = float(str(m.get(k)).replace(",", "")); break
+                        except Exception: pass
+                except Exception: pass
+                _t.sleep(0.3)
+    except Exception as ex: print("BSE PE fetch failed:", type(ex).__name__)
+    return out
+SNAP = {}
+W2 = []; pe_na = 0; pe_not_met = 0; pe_src = collections.Counter(); pe_disagree = []
 if N500:
-    _s1 = [s_["sym"] for s_ in state.values() if s_["st"] == "I"]
-    if os.environ.get("NSE_PE_FILE"): NSEPE = json.load(open(os.environ["NSE_PE_FILE"]))["pe"]
+    s1 = {i: s for x in ("N", "B") for i, s in STATE[x].items() if s["st"] == "I" and not (x == "B" and i in STATE["N"])}
+    if os.environ.get("PE_FILE"): SNAP = json.load(open(os.environ["PE_FILE"]))
+    elif os.environ.get("NO_PE_FETCH"): SNAP = {"nse": {}, "bse": {}, "bsen": {}}
     else:
-        NSEPE = nse_pe_map(_s1) if not os.environ.get("NO_NSE_PE") else {}
-        if NSEPE:
-            os.makedirs("store/sme_eps", exist_ok=True); json.dump({"d": str(dt.date.today()), "pe": NSEPE}, open("store/sme_eps/nse_pe.json", "w"))
-    for i, s_ in state.items():
-        if s_["st"] != "I" or i not in A.columns: continue
-        e2 = eps2.get(s_["sym"]); mine_ok = bool(e2 and e2.get("state") in ("ok", "loss"))
-        n_pe = NSEPE.get(s_["sym"])
-        loss = bool(mine_ok and e2["state"] == "loss") and n_pe is None
-        if n_pe is not None: pe = n_pe; src = "NSE"; pe_nse_n += 1
-        elif mine_ok: pe = e2.get("pe"); src = "filings"
+        _bn = {}
+        _need = [PX["B"]["sym"].get(m[2]) for m in met if m[1] == "BSE" and PX["B"]["sym"].get(m[2])]
+        SNAP = {"d": str(dt.date.today()), "nse": nse_pe_map([s["sym"] for i, s in s1.items() if i in STATE["N"]]), "bse": bse_pe_map([s["sym"] for i, s in s1.items() if i in STATE["B"]] + _need, _bn)}
+        SNAP["bsen"] = _bn
+        if SNAP["nse"] or SNAP["bse"]:
+            os.makedirs("store/sme_eps", exist_ok=True); json.dump(SNAP, open("store/sme_eps/pe_snap.json", "w"))
+    for i, s_ in s1.items():
+        ex = "N" if i in STATE["N"] else "B"; P = PX[ex]; A = P["A"]; C = P["C"]
+        if i not in A.columns: continue
+        n_pe = SNAP["nse"].get(s_["sym"]) if ex == "N" else None
+        b_pe = SNAP["bse"].get(STATE["B"][i]["sym"]) if i in STATE["B"] else None
+        e2 = eps2.get(s_["sym"]) if ex == "N" else None; mine_ok = bool(e2 and e2.get("state") in ("ok", "loss"))
+        loss = False
+        if n_pe is not None: pe, src = n_pe, "NSE"
+        elif b_pe is not None: pe, src = b_pe, "BSE"; loss = b_pe <= 0
+        elif mine_ok: pe, src = e2.get("pe"), "filings"; loss = e2["state"] == "loss"
         else: pe_na += 1; continue
         if n_pe is not None and mine_ok and e2.get("pe") and ((n_pe > 2 * N500) != (e2["pe"] > 2 * N500)): pe_disagree.append(s_["name"])
+        pe_src[src] += 1
         if not (loss or (pe and pe > 2 * N500)): pe_not_met += 1; continue
         a = A[i].dropna()
         if len(a) < 25: continue
         c_now = float(C[i].dropna().iloc[-1]); fac = c_now / float(a.iloc[-1])
-        b5 = float(a.iloc[-5]) * 1.15 * fac     # next close vs the close 4 trading days back (the window moves one day)
-        b21 = float(a.iloc[-21]) * 1.30 * fac
-        trig = min(b5, b21); which = "5-day +15%" if b5 <= b21 else "month +30%"
-        W2.append((trig / c_now - 1, s_["name"], c_now, trig, which, "loss-making" if loss else f"PE {pe:.0f} ({src})"))
+        b5 = float(a.iloc[-5]) * 1.15 * fac; b21 = float(a.iloc[-21]) * 1.30 * fac
+        trig = min(b5, b21)
+        W2.append((trig / c_now - 1, tag(i), s_["name"], c_now, trig, "loss-making" if loss else f"PE {pe:.0f} ({src})"))
     W2.sort()
+    print("PE sources:", dict(pe_src), "| no PE", pe_na, "| not met", pe_not_met, "| NSE vs filings disagree:", pe_disagree)
 
-def block_rows():
-    rows = []
-    for k, title, col in [("enter_I", "Moved into Stage I", AMBER), ("I_to_II", "Stage I to Stage II", RED), ("II_to_I", "Stage II back to Stage I", BLUE), ("exit", "Removed from ESM", GREEN)]:
-        g = sorted(chg.get(k, []), key=lambda e: e["name"])
-        if g: rows.append((title, col, [e["name"] for e in g]))
-    return rows
-R = block_rows()
-W = 10.8; RH = 0.52
-nch = sum(len(r[2]) for r in R) + (0 if R else 1)
-UP = up[:12]; MET = met[:8]; W2S = W2[:8]
-H_in = 2.7 + (0.9 + 0.75 * len(R) + RH * nch) + (1.2 + RH * max(len(UP), 1) + 0.4) + (1.5 + RH * max(len(MET), 1)) + (1.5 + RH * max(len(W2S), 1) + 0.4) + 2.0
+# ---------------------------------------------------------------- Stage II now
+S2 = []
+for i, s in MS_.items():
+    if s["st"] != "II": continue
+    ref = today if s["ex"] == "N" else bse_dt
+    S2.append((s["s2"], s["tag"], s["name"], s))
+S2.sort(key=lambda r: (r[0] is None, r[0] or dt.date(2000, 1, 1)), reverse=False)
+S2 = sorted(S2, key=lambda r: r[0] or dt.date(2000, 1, 1), reverse=True)
+
+# ---------------------------------------------------------------- change lists (merged across exchanges, one row per stock)
+CATS = [("enter_I", "Moved into Stage I", AMBER), ("I_to_II", "Stage I to Stage II", RED), ("II_to_I", "Stage II back to Stage I", BLUE), ("exit", "Removed from ESM", GREEN)]
+R = []
+for k, title, col in CATS:
+    seen = {}
+    for x in ("N", "B"):
+        for e in CHG[x].get(k, []):
+            if e["isin"] not in seen: seen[e["isin"]] = (tag(e["isin"]), short(e["name"]))
+    if seen: R.append((title, col, sorted(seen.values(), key=lambda r: r[1])))
+
+# ---------------------------------------------------------------- snapshot numbers
+def snap(x):
+    st = STATE[x]; s1 = sum(1 for s in st.values() if s["st"] == "I"); s2 = sum(1 for s in st.values() if s["st"] == "II")
+    return len(st), s1, s2, ENT_N[x], EXIT_N[x], past[x]
+SN = {x: snap(x) for x in ("N", "B")}
+
+# ---------------------------------------------------------------- render
+W = 10.8; RH = 0.5
+UP = up[:12]; MET = met[:10]; W2S = W2[:10]; S2S = S2[:10]
+ncell = sum((len(r[2]) + 1) // 2 for r in R)
+H_in = (2.7 + 2.6                                              # header + snapshot
+        + (0.9 + 0.62 * len(R) + 0.46 * ncell + (0.5 if not R else 0) + 0.3)          # changes
+        + (1.5 + RH * max(len(S2S), 1) + 0.45)                  # stage II now
+        + (1.5 + RH * max(len(UP), 1) + 0.5)                   # exit milestones
+        + (1.5 + RH * max(len(MET), 1) + 0.2)                  # price test
+        + (1.6 + RH * max(len(W2S), 1) + 0.5)                  # stage II watch
+        + 2.3)
 fig = T.new_fig(W, H_in); fx = lambda i: i / W; fy = lambda i: 1 - i / H_in
-_hdr(fig, W, H_in, "SME ESM Radar", f"NSE Emerge  |  effective {D(DAY):%d %b %Y}  |  {len(state)} SME stocks in ESM")
+_hdr(fig, W, H_in, "SME ESM Radar", f"NSE Emerge + BSE SME  |  as of {D(DAY):%d %b %Y}")
 def panel(y, h, title, color):
     T.panel(fig, fx(0.45), fy(y + h), (W - 0.9) / W, h / H_in)
     fig.patches.append(Rect((fx(0.45), fy(y + 0.1)), (W - 0.9) / W, 0.1 / H_in, transform=fig.transFigure, facecolor=color, edgecolor="none", zorder=5))
-    fig.text(fx(0.8), fy(y + 0.5), title, color=color, fontsize=22, fontweight="bold", va="center")
+    fig.text(fx(0.8), fy(y + 0.5), title, color=color, fontsize=21, fontweight="bold", va="center")
+def sub(yy, txt, size=11): fig.text(fx(0.8), fy(yy), txt, color=MUTED, fontsize=size, va="center")
+def tg(yy, t, x=0.8): fig.text(fx(x), fy(yy), t, color=TAGCOL[t], fontsize=10.5, fontweight="bold", va="center")
 y = 2.7
-h1 = 0.9 + 0.75 * len(R) + RH * nch
+# snapshot
+h = 2.6; panel(y, h, "SNAPSHOT", T.NAVY); yy = y + 1.05
+xs = [4.3, 5.5, 6.7, 8.1, 9.5]; heads = ["In ESM", "Stage I", "Stage II", "Entered 7d", "Exited 7d"]
+for xx, t in zip(xs, heads): fig.text(fx(xx), fy(yy), t, color=MUTED, fontsize=11.5, ha="right", va="center")
+yy += 0.5
+for x, lab, col in (("N", "NSE Emerge", BLUE), ("B", "BSE SME", AMBER)):
+    s = SN[x]
+    fig.text(fx(0.8), fy(yy), lab, color=col, fontsize=15.5, fontweight="bold", va="center")
+    for xx, v in zip(xs, s[:5]): fig.text(fx(xx), fy(yy), str(v), color=TEXT, fontsize=15.5, fontweight="bold", ha="right", va="center")
+    yy += 0.5
+sub(yy + 0.02, f"Nifty 500 PE {N500:.1f} (Stage II PE test: PE at or below 0, or above {2 * N500:.1f}).  Dual-listed stocks count in both rows." if N500 else "Nifty 500 PE unavailable", 10.5)
+y += h + 0.25
+# today's changes
+h1 = 0.9 + 0.62 * len(R) + 0.46 * ncell + (0.5 if not R else 0) + 0.3
 panel(y, h1, "TODAY'S CHANGES", T.NAVY); yy = y + 1.05
-if not R: fig.text(fx(0.8), fy(yy), "No SME changes effective today", color=MUTED, fontsize=16, va="center")
-for title, col, names in R:
-    fig.text(fx(0.8), fy(yy), f"{title} ({len(names)})", color=col, fontsize=16, fontweight="bold", va="center"); yy += 0.5
-    for nm in names:
-        fig.text(fx(1.0), fy(yy), short(nm)[:46], color=TEXT, fontsize=15.5, va="center"); yy += RH
-    yy += 0.25 - 0.0
+if not R: fig.text(fx(0.8), fy(yy), "No SME changes today", color=MUTED, fontsize=15, va="center")
+for title, col, items in R:
+    fig.text(fx(0.8), fy(yy), f"{title} ({len(items)})", color=col, fontsize=15.5, fontweight="bold", va="center"); yy += 0.46
+    for k in range(0, len(items), 2):
+        for j, (tgx, nm) in enumerate(items[k:k + 2]):
+            x0 = 0.9 + j * 4.9
+            tg(yy, tgx, x0); fig.text(fx(x0 + 0.75), fy(yy), nm[:26], color=TEXT, fontsize=13.5, va="center")
+        yy += 0.46
+    yy += 0.16
 y += h1 + 0.25
-h2 = 1.2 + RH * max(len(UP), 1) + 0.4
-panel(y, h2, "COMING UP: EXIT MILESTONES (next 10 days)", GREEN); yy = y + 1.0
-fig.text(fx(0.8), fy(yy), "Earliest eligible date, NSE usually acts a few days later (typically 95-98 days after entry)", color=MUTED, fontsize=11.5, va="center"); yy += 0.42
-if not UP: fig.text(fx(0.8), fy(yy), "None in the next 10 days", color=MUTED, fontsize=15, va="center")
-for d, nm, st, txt in UP:
-    fig.text(fx(0.8), fy(yy), nm[:34], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
-    fig.text(fx(W - 0.8), fy(yy), f"{st}: {txt}", color=HEAD, fontsize=13, ha="right", va="center"); yy += RH
-extra = (f"+{len(up) - 12} more.  " if len(up) > 12 else "") + (f"{past} Stage I stocks are already past 90 days and still listed." if past else "")
-if extra: fig.text(fx(0.8), fy(yy), extra, color=MUTED, fontsize=11.5, va="center")
+# stage II now
+h2 = 1.5 + RH * max(len(S2S), 1) + 0.45
+panel(y, h2, "IN STAGE II NOW", RED); yy = y + 1.0
+sub(yy, "Trade-for-trade, 2% band, call auction. Stays at least 30 days; back to Stage I if the monthly gain is below 15%."); yy += 0.42
+if not S2S: fig.text(fx(0.8), fy(yy), "None", color=MUTED, fontsize=15, va="center")
+for s2d, tgx, nm, s in S2S:
+    ref = today if s["ex"] == "N" else bse_dt
+    tg(yy, tgx); fig.text(fx(1.65), fy(yy), nm[:28], color=TEXT, fontsize=15, fontweight="bold", va="center")
+    if s2d: txt = f"since {s2d:%d %b} ({(ref - s2d).days}d)  |  min stay " + ("passed" if ref >= s2d + dt.timedelta(days=30) else f"ends {s2d + dt.timedelta(days=30):%d %b}")
+    else: txt = "Stage II before our records began"
+    fig.text(fx(W - 0.8), fy(yy), txt, color=HEAD, fontsize=12.5, ha="right", va="center"); yy += RH
+if len(S2) > len(S2S): sub(yy, f"+{len(S2) - len(S2S)} more in Stage II")
 y += h2 + 0.25
-h3 = 1.5 + RH * max(len(MET), 1)
-panel(y, h3, "MET STAGE I PRICE TEST (3-month)", AMBER); yy = y + 1.0
-fig.text(fx(0.8), fy(yy), "Price-only test. In past tests about 3 in 10 such stocks were added within 3 trading days.", color=MUTED, fontsize=11.5, va="center"); yy += 0.42
-if not MET: fig.text(fx(0.8), fy(yy), "No SME stock newly meets the test", color=MUTED, fontsize=15, va="center")
-for d, nm in MET:
-    fig.text(fx(0.8), fy(yy), nm[:34], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
-    fig.text(fx(W - 0.8), fy(yy), f"first met {d:%d %b}", color=HEAD, fontsize=13, ha="right", va="center"); yy += RH
+# exit milestones
+h3 = 1.5 + RH * max(len(UP), 1) + 0.5
+panel(y, h3, "COMING UP: EXIT MILESTONES (10 days)", GREEN); yy = y + 1.0
+sub(yy, "Earliest eligible date; the exchange usually acts a few days later (typically 95-98 days after entry)."); yy += 0.42
+if not UP: fig.text(fx(0.8), fy(yy), "None in the next 10 days", color=MUTED, fontsize=15, va="center")
+for d, tgx, nm, st, txt in UP:
+    tg(yy, tgx); fig.text(fx(1.65), fy(yy), nm[:28], color=TEXT, fontsize=15, fontweight="bold", va="center")
+    fig.text(fx(W - 0.8), fy(yy), f"{st}: {txt}", color=HEAD, fontsize=13, ha="right", va="center"); yy += RH
+ex = (f"+{len(up) - len(UP)} more.  " if len(up) > len(UP) else "") + f"Past 90 days and still listed: NSE {past['N']}, BSE {past['B']}" + (f" (BSE history starts Jul 2025; entry date unknown for {nokn} Stage I stocks)." if nokn else ".")
+sub(yy, ex)
 y += h3 + 0.25
-h4 = 1.5 + RH * max(len(W2S), 1) + 0.4
-panel(y, h4, "STAGE II WATCH (price + PE)", RED); yy = y + 1.0
-fig.text(fx(0.8), fy(yy), f"Stage I stocks whose PE condition is met (loss-making or PE above 2x Nifty 500 PE, now {2 * N500:.1f}). Price levels are for the next close." if N500 else "Nifty 500 PE unavailable", color=MUTED, fontsize=11, va="center"); yy += 0.42
-if not W2S: fig.text(fx(0.8), fy(yy), "No Stage I SME stock currently meets the PE condition with PE data on file", color=MUTED, fontsize=14, va="center")
-for gap, nm, c_now, trig, which, pe_t in W2S:
-    fig.text(fx(0.8), fy(yy), short(nm)[:26], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
+# price test
+h4 = 1.5 + RH * max(len(MET), 1) + 0.2
+panel(y, h4, "MET STAGE I PRICE TEST (3-month)", AMBER); yy = y + 1.0
+sub(yy, "Price-only test on SME stocks not in ESM. In past tests about 3 in 10 such stocks were added within 3 trading days."); yy += 0.42
+if not MET: fig.text(fx(0.8), fy(yy), "No SME stock newly meets the test", color=MUTED, fontsize=15, va="center")
+for d, tgx, i, nm in MET:
+    if nm == i or re.match(r"^INE", nm): nm = short((SNAP.get("bsen") or {}).get(PX["B"]["sym"].get(i), "")) or f"BSE {PX['B']['sym'].get(i, i)}"
+    tg(yy, tgx); fig.text(fx(1.65), fy(yy), nm[:30], color=TEXT, fontsize=15, fontweight="bold", va="center")
+    fig.text(fx(W - 0.8), fy(yy), f"first met {d:%d %b}", color=HEAD, fontsize=13, ha="right", va="center"); yy += RH
+y += h4 + 0.25
+# stage II watch
+h5 = 1.6 + RH * max(len(W2S), 1) + 0.5
+panel(y, h5, "STAGE II WATCH (price + PE)", RED); yy = y + 1.0
+sub(yy, f"Stage I stocks whose PE condition is met (loss-making or PE above {2 * N500:.1f}). Price levels are for the next close." if N500 else "Nifty 500 PE unavailable"); yy += 0.42
+if not W2S: fig.text(fx(0.8), fy(yy), "No Stage I SME stock currently meets the PE condition with PE data", color=MUTED, fontsize=14, va="center")
+for gap, tgx, nm, c_now, trig, pe_t in W2S:
+    tg(yy, tgx); fig.text(fx(1.65), fy(yy), nm[:24], color=TEXT, fontsize=15, fontweight="bold", va="center")
     lvl = f"price test met at last close (Rs {c_now:,.2f})" if gap <= 0 else f"close above Rs {trig:,.2f} (+{gap * 100:.1f}%)"
-    fig.text(fx(W - 0.8), fy(yy), f"{lvl}  |  {pe_t}", color=HEAD, fontsize=12.5, ha="right", va="center"); yy += RH
-note = f"{pe_na} Stage I SME stocks have no usable PE (NSE blank, filings missing) and {pe_not_met} do not meet the PE condition." if N500 else ""
-print("PE sources: NSE", pe_nse_n, "| no PE", pe_na, "| not met", pe_not_met, "| PE-condition disagreement NSE vs filings:", pe_disagree)
-fig.text(fx(0.8), fy(yy), note, color=MUTED, fontsize=11, va="center")
-_foot(fig, W, H_in, "Source: NSE surveillance circulars and NSE daily prices. Exit dates follow the 90-day / 30-day rules; price tests and PE (NSE's quoted PE, else from filings) are not a forecast. NSE Emerge only. For educational purpose only. Not an investment advice.")
+    fig.text(fx(W - 0.8), fy(yy), f"{lvl}  |  {pe_t}", color=HEAD, fontsize=12, ha="right", va="center"); yy += RH
+sub(yy, f"{pe_na} Stage I stocks have no usable PE; {pe_not_met} do not meet the PE condition." if N500 else "")
+_foot(fig, W, H_in, f"NSE as of {D(DAY):%d %b}, BSE notice {bse_dt:%d %b} (BSE effect about next day). N+B = listed on both. PE: exchange-quoted. Not a forecast. For educational purpose only. Not an investment advice.")
 T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
 T.save(fig, OUT)
-print("saved", OUT, "| changes", {k: len(v) for k, v in chg.items()}, "| upcoming", len(up), "| met", len(met), "| SME in ESM", len(state))
+print("saved", OUT, "| NSE", SN["N"], "| BSE", SN["B"], "| changes", {k: len(v) for k, v in CHG["N"].items()}, {k: len(v) for k, v in CHG["B"].items()}, "| stageII", len(S2), "| upcoming", len(up), "| met", len(met), "| watch", len(W2))
 if os.environ.get("SEND") == "1":
-    import requests
     tok = os.environ["TELEGRAM_BOT_TOKEN"].strip(); chat = os.environ["TELEGRAM_CHAT_ID"].strip()
     with open(OUT, "rb") as fh:
         r = requests.post(f"https://api.telegram.org/bot{tok}/sendPhoto", data={"chat_id": chat, "caption": "SME ESM Radar (dry run, private)"}, files={"photo": fh}, timeout=60)

@@ -27,5 +27,5 @@ jobs:
         if: always()
         run: |
           git config user.name "bot"; git config user.email "bot@users.noreply.github.com"
-          git add store/sme_eps/nse_pe.json || true
+          git add store/sme_eps/pe_snap.json || true
           git diff --cached --quiet || (git commit -m "NSE PE snapshot" && for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; done)
