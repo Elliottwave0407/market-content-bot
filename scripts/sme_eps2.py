@@ -47,6 +47,9 @@ def ttm_from(cols):
     if prv is not None: return round(cur + prv, 2), f"half to {latest} + half to {prev_end}"
     fy_prev = near(prev_end, 12); h1_prev = near(add_months(L, -12).strftime("%Y-%m-%d"), 6)
     return None, f"latest half {latest} only"
+def fresh_day(a):
+    try: return (datetime.now() - datetime.fromisoformat(a)).days <= 2
+    except Exception: return False
 try:
     ev = sorted(json.load(open("store/esm_history/events.json")), key=lambda e: e["eff"])
     st = {}
@@ -67,7 +70,7 @@ try:
     counts = {"ok": 0, "loss": 0, "no_data": 0, "stale": 0}
     for k, sym in enumerate(syms):
         if time.time() - T0 > BUDGET: p("budget reached at", k); break
-        if not only and out.get(sym, {}).get("at") == time.strftime("%Y-%m-%d"): continue      # processed today (any outcome)
+        if not only and fresh_day(out.get(sym, {}).get("at")): continue      # processed in the last 2 days (any outcome)
         try:
             r = s.get(f"https://www.nseindia.com/api/corporate-announcements?index=sme&symbol={sym}&from_date=01-04-2025&to_date=28-10-2026", headers={"Referer": REF}, timeout=40)
             j = r.json() if r.status_code == 200 else []
@@ -121,7 +124,7 @@ try:
         p(sym, state, "ttm", ttm, "pe", pe, "|", how, "|", (reasons[:1] or ""))
         if (k + 1) % 10 == 0: json.dump(out, open("store/sme_eps/eps2.json", "w"))
     json.dump(out, open("store/sme_eps/eps2.json", "w"))
-    left = [x for x in syms if out.get(x, {}).get("at") != time.strftime("%Y-%m-%d")]
+    left = [x for x in syms if not fresh_day(out.get(x, {}).get("at"))]
     open("store/sme_eps/_more.flag", "w").write("1" if (left and not only) else "0")
     p("SUMMARY", counts, "| left today:", len(left))
 except Exception:
