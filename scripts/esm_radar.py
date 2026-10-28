@@ -178,7 +178,9 @@ def bse_pe_map(codes, names=None):
             for c in codes:
                 try:
                     m = b.equityMetaInfo(c)
-                    if names is not None and m.get("COName"): names[c] = str(m.get("COName")).strip()
+                    if names is not None and c in names:
+                        try: names[c] = str(b.getScripName(c)).strip()
+                        except Exception: pass
                     for k in ("PE", "ConPE"):
                         try: out[c] = float(str(m.get(k)).replace(",", "")); break
                         except Exception: pass
@@ -195,6 +197,7 @@ if N500:
     else:
         _bn = {}
         _need = [PX["B"]["sym"].get(m[2]) for m in met if m[1] == "BSE" and PX["B"]["sym"].get(m[2])]
+        _bn = {c: "" for c in _need}
         SNAP = {"d": str(dt.date.today()), "nse": nse_pe_map([s["sym"] for i, s in s1.items() if i in STATE["N"]]), "bse": bse_pe_map([s["sym"] for i, s in s1.items() if i in STATE["B"]] + _need, _bn)}
         SNAP["bsen"] = _bn
         if SNAP["nse"] or SNAP["bse"]:
