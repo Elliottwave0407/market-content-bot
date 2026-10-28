@@ -10,13 +10,21 @@ TRUTH = {
  "WELSPUN": {"consolidated": {"revenue": [1411.33, 12.75, 490.21], "other_income": [0.01, 0.40, 2.18], "total_income": [1411.34, 13.15, 492.39], "total_expenses": [242.56, 27.95, 33.15], "pbt": [1168.78, -14.80, 459.24], "tax": [292.83, 0.08, 110.06], "pat": [875.95, -14.88, 349.18], "eps": [23.97, -0.41, 9.55]}},
 }
 DOCS = [x.split(":") for x in os.environ.get("DOCS", "").split(",") if x]
-MODELS = [m for m in os.environ.get("MODELS", "gemini-flash-lite-latest,gemini-flash-latest,gemini-2.5-flash").split(",") if m]
+MODELS = [m for m in os.environ.get("MODELS", "gemini-flash-lite-latest,gemini-flash-latest").split(",") if m]
 def call(model, parts):
     body = {"contents": [{"parts": parts + [{"text": gr.PROMPT}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
-    r = requests.post(f"{gr.BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
-    if r.status_code != 200: return None, f"HTTP {r.status_code} {('PerDay' in r.text and 'per-day') or ('PerMinute' in r.text and 'per-minute') or r.text[:60]}"
-    try: return gr._clean(json.loads(re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()))), None
-    except Exception as e: return None, "parse " + repr(e)[:50]
+    err = None
+    for t in range(4):
+        r = requests.post(f"{gr.BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
+        if r.status_code == 200:
+            try: return gr._clean(json.loads(re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()))), None
+            except Exception as e: return None, "parse " + repr(e)[:50]
+        try: msg = r.json()["error"]["message"]
+        except Exception: msg = r.text
+        err = f"HTTP {r.status_code}: {re.sub(r'\s+', ' ', msg)[:170]}"
+        if r.status_code in (403, 503, 429): time.sleep(12 * (t + 1)); continue
+        break
+    return None, err
 def score(out, truth):
     ok = tot = 0
     for bs, cols in truth.items():
@@ -39,11 +47,11 @@ try:
             time.sleep(5)
         if not b: p("DOWNLOAD FAILED", name); continue
         d = pymupdf.open(stream=b, filetype="pdf")
-        pick = [i for i in range(min(8, len(d))) if len(d[i].get_text()) < 1500 and d[i].get_images()][:2]
+        pick = [i for i in range(min(8, len(d))) if len(d[i].get_text()) < 1500 and d[i].get_images()][:4]
         p(f"== {name}: {len(b)//1024} KB, table-page candidates {[i+1 for i in pick]}")
         trimmed = pc.trim_pdf(b)
         variants = [("pdf", [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(trimmed).decode()}}])]
-        for i in pick[:2]:
+        for i in pick[:3]:
             im = base64.b64encode(d[i].get_pixmap(dpi=200).tobytes("jpeg", jpg_quality=85)).decode()
             variants.append((f"img p{i+1}", [{"inline_data": {"mime_type": "image/jpeg", "data": im}}]))
         for model in MODELS:
