@@ -144,6 +144,8 @@ def arith_col(d, i):
     res = []
     if None not in (ti, ex, pbt): res.append(tol(ti - ex, pbt))
     if None not in (pbt, tax, pat): res.append(tol(pbt - tax, pat))
+    rv_, oi_ = pc.val(d, "revenue", i), pc.val(d, "other_income", i)
+    if None not in (rv_, oi_, ti): res.append(tol(rv_ + oi_, ti) or tol(rv_, ti))      # catches a mis-read sales figure
     return bool(res) and all(res)
 
 def read_card(content, name, bse=None, code=None):

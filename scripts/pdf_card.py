@@ -56,6 +56,9 @@ def arith_ok(d):
         res.append(tol(ti - ex, pbt) or (None not in (dp0, fn0) and tol(ti - ex - dp0 - fn0, pbt)))
     if None not in (pbt, tax, pat):
         res.append(tol(pbt - tax, pat))
+    rv_, oi_ = val(d, "revenue", 0), val(d, "other_income", 0)
+    if None not in (rv_, oi_, ti):      # a mis-read sales figure (Shilchar: 19,261 read as 15,261) leaves revenue + other income short of total income
+        res.append(tol(rv_ + oi_, ti) or tol(rv_, ti))
     return bool(res) and all(res), len(res)
 
 def to_m(d, i, k):
