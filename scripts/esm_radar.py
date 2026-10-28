@@ -118,7 +118,11 @@ def nse_pe_map(syms):
 W2 = []; pe_na = 0; pe_not_met = 0; pe_nse_n = 0; pe_disagree = []
 if N500:
     _s1 = [s_["sym"] for s_ in state.values() if s_["st"] == "I"]
-    NSEPE = nse_pe_map(_s1) if not os.environ.get("NO_NSE_PE") else {}
+    if os.environ.get("NSE_PE_FILE"): NSEPE = json.load(open(os.environ["NSE_PE_FILE"]))["pe"]
+    else:
+        NSEPE = nse_pe_map(_s1) if not os.environ.get("NO_NSE_PE") else {}
+        if NSEPE:
+            os.makedirs("store/sme_eps", exist_ok=True); json.dump({"d": str(dt.date.today()), "pe": NSEPE}, open("store/sme_eps/nse_pe.json", "w"))
     for i, s_ in state.items():
         if s_["st"] != "I" or i not in A.columns: continue
         e2 = eps2.get(s_["sym"]); mine_ok = bool(e2 and e2.get("state") in ("ok", "loss"))
