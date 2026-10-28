@@ -1,0 +1,28 @@
+name: bse-esm-history
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "YYYY-MM-DD (blank = 2025-07-01)"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pypdf openpyxl bse
+      - env:
+          FROM_DATE: ${{ github.event.inputs.from_date }}
+        run: python scripts/bse_esm_history.py
+      - name: save
+        if: always()
+        run: |
+          git config user.name "bot"; git config user.email "bot@users.noreply.github.com"
+          git add store/esm_history/bse_events.json store/esm_history/bse_processed.json store/esm/bse_latest.json || true
+          git diff --cached --quiet || (git commit -m "BSE ESM history update" && for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; done)
