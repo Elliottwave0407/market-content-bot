@@ -89,13 +89,45 @@ import requests
 N500 = float(os.environ["N500_PE"]) if os.environ.get("N500_PE") else n500_pe()
 try: eps2 = json.load(open("store/sme_eps/eps2.json"))
 except Exception: eps2 = {}
-W2 = []; pe_na = 0; pe_not_met = 0
+_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
+def nse_pe_map(syms):
+    """NSE's own PE (secInfo.pdSymbolPe) per SME symbol from the NSE quote API. Missing/blank values are left out."""
+    import time as _t
+    out = {}
+    try:
+        _REF = "https://www.nseindia.com/companies-listing/corporate-filings-announcements"
+        ss = requests.Session(); ss.headers.update(_UA); ss.get("https://www.nseindia.com/", timeout=25); ss.get(_REF, timeout=25)
+        for sym in syms:
+            for ser in ("ST", "SM", "SZ"):
+                try:
+                    r = ss.get(f"https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolData&marketType=N&series={ser}&symbol={sym}", headers={"Referer": _REF}, timeout=40)
+                    if r.status_code != 200: continue
+                    e = r.json().get("equityResponse", [{}])[0]
+                    if not e.get("metaData"): continue
+                    v = (e.get("secInfo") or {}).get("pdSymbolPe")
+                    try: v = float(v)
+                    except Exception: v = None
+                    if v is not None and v > 0: out[sym] = v
+                    break
+                except Exception: pass
+                _t.sleep(0.3)
+            _t.sleep(0.4)
+    except Exception as ex:
+        print("NSE PE fetch failed:", type(ex).__name__)
+    return out
+W2 = []; pe_na = 0; pe_not_met = 0; pe_nse_n = 0; pe_disagree = []
 if N500:
+    _s1 = [s_["sym"] for s_ in state.values() if s_["st"] == "I"]
+    NSEPE = nse_pe_map(_s1) if not os.environ.get("NO_NSE_PE") else {}
     for i, s_ in state.items():
         if s_["st"] != "I" or i not in A.columns: continue
-        e2 = eps2.get(s_["sym"])
-        if not e2 or e2.get("state") not in ("ok", "loss"): pe_na += 1; continue
-        pe = e2.get("pe"); loss = e2["state"] == "loss"
+        e2 = eps2.get(s_["sym"]); mine_ok = bool(e2 and e2.get("state") in ("ok", "loss"))
+        n_pe = NSEPE.get(s_["sym"])
+        loss = bool(mine_ok and e2["state"] == "loss") and n_pe is None
+        if n_pe is not None: pe = n_pe; src = "NSE"; pe_nse_n += 1
+        elif mine_ok: pe = e2.get("pe"); src = "filings"
+        else: pe_na += 1; continue
+        if n_pe is not None and mine_ok and e2.get("pe") and ((n_pe > 2 * N500) != (e2["pe"] > 2 * N500)): pe_disagree.append(s_["name"])
         if not (loss or (pe and pe > 2 * N500)): pe_not_met += 1; continue
         a = A[i].dropna()
         if len(a) < 25: continue
@@ -103,7 +135,7 @@ if N500:
         b5 = float(a.iloc[-5]) * 1.15 * fac     # next close vs the close 4 trading days back (the window moves one day)
         b21 = float(a.iloc[-21]) * 1.30 * fac
         trig = min(b5, b21); which = "5-day +15%" if b5 <= b21 else "month +30%"
-        W2.append((trig / c_now - 1, s_["name"], c_now, trig, which, "loss-making" if loss else f"PE {pe:.0f}"))
+        W2.append((trig / c_now - 1, s_["name"], c_now, trig, which, "loss-making" if loss else f"PE {pe:.0f} ({src})"))
     W2.sort()
 
 def block_rows():
@@ -157,10 +189,12 @@ fig.text(fx(0.8), fy(yy), f"Stage I stocks whose PE condition is met (loss-makin
 if not W2S: fig.text(fx(0.8), fy(yy), "No Stage I SME stock currently meets the PE condition with PE data on file", color=MUTED, fontsize=14, va="center")
 for gap, nm, c_now, trig, which, pe_t in W2S:
     fig.text(fx(0.8), fy(yy), short(nm)[:26], color=TEXT, fontsize=15.5, fontweight="bold", va="center")
-    fig.text(fx(W - 0.8), fy(yy), f"close above Rs {trig:,.2f} ({gap * 100:+.1f}%)  |  {pe_t}", color=HEAD, fontsize=12.5, ha="right", va="center"); yy += RH
-note = f"{pe_na} Stage I SME stocks have no usable PE on file (scanned or stale filings) and {pe_not_met} do not meet the PE condition." if N500 else ""
+    lvl = f"price test met at last close (Rs {c_now:,.2f})" if gap <= 0 else f"close above Rs {trig:,.2f} (+{gap * 100:.1f}%)"
+    fig.text(fx(W - 0.8), fy(yy), f"{lvl}  |  {pe_t}", color=HEAD, fontsize=12.5, ha="right", va="center"); yy += RH
+note = f"{pe_na} Stage I SME stocks have no usable PE (NSE blank, filings missing) and {pe_not_met} do not meet the PE condition." if N500 else ""
+print("PE sources: NSE", pe_nse_n, "| no PE", pe_na, "| not met", pe_not_met, "| PE-condition disagreement NSE vs filings:", pe_disagree)
 fig.text(fx(0.8), fy(yy), note, color=MUTED, fontsize=11, va="center")
-_foot(fig, W, H_in, "Source: NSE surveillance circulars and NSE daily prices. Exit dates follow the 90-day / 30-day rules; price tests and PE (from filings) are not a forecast. NSE Emerge only. For educational purpose only. Not an investment advice.")
+_foot(fig, W, H_in, "Source: NSE surveillance circulars and NSE daily prices. Exit dates follow the 90-day / 30-day rules; price tests and PE (NSE's quoted PE, else from filings) are not a forecast. NSE Emerge only. For educational purpose only. Not an investment advice.")
 T.brand(fig, h_in=1.15, x_right=fx(W - 0.75), top=fy(0.62))
 T.save(fig, OUT)
 print("saved", OUT, "| changes", {k: len(v) for k, v in chg.items()}, "| upcoming", len(up), "| met", len(met), "| SME in ESM", len(state))
