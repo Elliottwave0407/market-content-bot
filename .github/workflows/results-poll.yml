@@ -35,6 +35,7 @@ jobs:
           POLL_INTERVAL: "10"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # used ONLY when every model on the main key is out of quota
+          GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_KEY_RESULTS }}   # optional third key (own Google project) used only after the other two are out of quota
           TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}   # optional second audience: full cards only, Filing button only
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}

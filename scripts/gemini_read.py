@@ -86,6 +86,7 @@ def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None
     return None, last
 
 
+QUOTA_OV2 = {}
 QUOTA_OV = {}      # quota memory for the overflow key (kept apart from the main key's)
 
 def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
@@ -97,5 +98,12 @@ def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
         out2, err2 = _read_core(ov, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV)
         if out2 is not None:
             return out2, None
-        return None, (err + " | overflow: " + str(err2))[:300]
+        err = (err + " | overflow: " + str(err2))[:300]
+        ov2 = os.environ.get("GEMINI_API_KEY_RESULTS", "").strip()      # dedicated project for result scans (third key); unset = no effect
+        if ov2 and ov2 not in (key, ov) and "429" in str(err2):
+            out3, err3 = _read_core(ov2, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV2)
+            if out3 is not None:
+                return out3, None
+            err = (err + " | results key: " + str(err3))[:360]
+        return None, err
     return out, err
