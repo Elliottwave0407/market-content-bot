@@ -1004,7 +1004,10 @@
 "12ff823d-43b2-4678-92ef-b9fbb70ee3d8",
 "7d9560ff-c657-41c3-98be-7247c84d6c04",
 "c79785c5-1363-4b35-a2ed-f0e0d1a8b3db",
-"c52925b3-e64d-486b-9416-6360a8b832d2"
+"c52925b3-e64d-486b-9416-6360a8b832d2",
+"7ce32fb2-f0db-4feb-ab73-bfcba8c47abb",
+"70ff3e25-4d72-4e5a-85af-3ab798213597",
+"be35e74a-a946-4e1e-8647-99553e0abdea"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1671,48 +1674,12 @@
 "539150|Sep-26|consolidated",
 "539404|Sep-26|consolidated",
 "509874|Sep-26|consolidated",
-"532937|Sep-26|standalone"
+"532937|Sep-26|standalone",
+"500033|Sep-26|consolidated",
+"544974|Jun-26|consolidated",
+"539488|Sep-26|standalone"
 ],
-"pending": {
-"be35e74a-a946-4e1e-8647-99553e0abdea": {
-"rec": {
-"NEWSID": "be35e74a-a946-4e1e-8647-99553e0abdea",
-"SCRIP_CD": 539488,
-"XML_NAME": "ANN_539488_BE35E74A-A946-4E1E-8647-99553E0ABDEA",
-"NEWSSUB": "Tirupati Finlease Ltd - 539488 - Result- 30Th September 2026",
-"DT_TM": "2026-10-28T16:37:45.187",
-"NEWS_DT": "2026-10-28T16:37:45.187",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "4480ae89-c75e-4d82-9e0f-5b925ab5eeaa.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial result for the Qtr and half year ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/tirupati-finlease-ltd/tfll/539488/",
-"SLONGNAME": "Tirupati Finlease Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-10-28T16:37:45",
-"DissemDT": "2026-10-28T16:37:45.187",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6705593,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793185710.4662876,
-"last": 1793186149.1837785,
-"alerted": false
-}
-},
+"pending": {},
 "lag": [
 [
 "Adroit Industries (India) Ltd",
@@ -2849,6 +2816,10 @@
 [
 "VST Industries Ltd",
 9
+],
+[
+"Tirupati Finlease Ltd",
+9
 ]
 ],
 "gem_use": {
@@ -2868,7 +2839,7 @@
 "2026-10-25": 47,
 "2026-10-26": 213,
 "2026-10-27": 421,
-"2026-10-28": 113
+"2026-10-28": 116
 },
 "pdfposted": {
 "540366|Sep-26|consolidated": {
@@ -2899,7 +2870,7 @@
 "rev": 56.876000000000005,
 "pat": -20.003,
 "t": 1793016836.632377,
-"last": 1793185880.8041675
+"last": 1793186277.446279
 },
 "530139|Sep-26|standalone": {
 "code": "530139",
@@ -2909,7 +2880,7 @@
 "rev": 145.73800000000003,
 "pat": 44.568000000000005,
 "t": 1793022373.5333571,
-"last": 1793185880.8041675
+"last": 1793186277.446279
 },
 "530709|Sep-26|standalone": {
 "code": "530709",
@@ -2919,7 +2890,7 @@
 "rev": 44.539,
 "pat": 28.512,
 "t": 1793023745.063332,
-"last": 1793185880.8041675
+"last": 1793186277.446279
 },
 "511359|Sep-26|standalone": {
 "code": "511359",
@@ -2929,7 +2900,7 @@
 "rev": 49.412000000000006,
 "pat": 28.326999999999998,
 "t": 1793024121.0223134,
-"last": 1793185880.8041675
+"last": 1793186277.446279
 },
 "538646|Sep-26|standalone": {
 "code": "538646",
@@ -3400,6 +3371,36 @@
 "pat": 22.400000000000002,
 "t": 1793184195.2084959,
 "last": 1793186091.9414792
+},
+"500033|Sep-26|consolidated": {
+"code": "500033",
+"name": "Force Motors Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 29246.6,
+"pat": 2939.1000000000004,
+"t": 1793186255.0238929,
+"last": 0
+},
+"544974|Jun-26|consolidated": {
+"code": "544974",
+"name": "Nityas Gems and Jewellery Ltd",
+"basis": "consolidated",
+"q": 130,
+"rev": 426.53,
+"pat": 21.41,
+"t": 1793186263.7590055,
+"last": 0
+},
+"539488|Sep-26|standalone": {
+"code": "539488",
+"name": "Tirupati Finlease Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 3.3049999999999997,
+"pat": -2.358,
+"t": 1793186271.3098693,
+"last": 0
 }
 },
 "audit": [
@@ -5233,7 +5234,9 @@
 "fb961d3f-8554-441e-afdc-9d9c400dff08": 1,
 "36fb31cd-e7ae-4bae-9be7-8d4d1f09d96b": 1,
 "12ff823d-43b2-4678-92ef-b9fbb70ee3d8": 1,
-"7d9560ff-c657-41c3-98be-7247c84d6c04": 1
+"7d9560ff-c657-41c3-98be-7247c84d6c04": 1,
+"7ce32fb2-f0db-4feb-ab73-bfcba8c47abb": 1,
+"70ff3e25-4d72-4e5a-85af-3ab798213597": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
