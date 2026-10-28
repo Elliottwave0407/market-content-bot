@@ -1062,7 +1062,9 @@
 "73085728-72c5-40f6-a0d8-a713f978aca3",
 "6c95d289-98c9-420d-9b5e-1e1952aaf1de",
 "7b65cc55-46a4-44a1-9473-39a52f4bff09",
-"3a914750-d777-4b08-a986-065ab6c2bff6"
+"3a914750-d777-4b08-a986-065ab6c2bff6",
+"90e2df3c-af11-4bff-8c83-bff24b11ff93",
+"bd4fbfdb-e2d2-48e8-a66f-6875013a1ed0"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1761,7 +1763,9 @@
 "501110|Sep-26|na",
 "544184|Sep-26|consolidated",
 "511389|Sep-26|na",
-"509152|Sep-26|consolidated"
+"509152|Sep-26|consolidated",
+"519494|Sep-26|consolidated",
+"536846|Sep-26|standalone"
 ],
 "pending": {
 "3753f023-b896-4c8e-a8b6-d1e7220f2891": {
@@ -1913,7 +1917,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793190998.4536889,
-"last": 1793190998.4536889,
+"last": 1793191507.3948183,
 "alerted": false
 },
 "08189463-3b5e-4555-9a2b-62e1556be163": {
@@ -2019,44 +2023,6 @@
 "DissemDT": "2026-10-28T18:05:02",
 "TimeDiff": "00:00:01",
 "Fld_Attachsize": 5487897,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793190998.4536889,
-"last": 1793190998.4536889,
-"alerted": false
-},
-"bd4fbfdb-e2d2-48e8-a66f-6875013a1ed0": {
-"rec": {
-"NEWSID": "bd4fbfdb-e2d2-48e8-a66f-6875013a1ed0",
-"SCRIP_CD": 536846,
-"XML_NAME": "ANN_536846_BD4FBFDB-E2D2-48E8-A66F-6875013A1ED0",
-"NEWSSUB": "Yuranus Infrastructure Ltd - 536846 - Financial Result For Quarter Ended 30Th September, 2026",
-"DT_TM": "2026-10-28T18:04:19.223",
-"NEWS_DT": "2026-10-28T18:04:19.223",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "a12cb1f3-fcc6-421d-a662-9bee9bb1fba2.pdf",
-"MORE": "",
-"HEADLINE": "Financial result for Quarter and half year ended 30th september, 2026 with limited review report.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/yuranus-infrastructure-ltd/yuranus/536846/",
-"SLONGNAME": "Yuranus Infrastructure Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 22,
-"News_submission_dt": "2026-10-28T18:04:19",
-"DissemDT": "2026-10-28T18:04:19.223",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3027560,
 "SUBCATNAME": "Financial Results",
 "BSENEWSID": null,
 "INVESTOR_PRESENTATION": null,
@@ -3229,6 +3195,10 @@
 [
 "Videocon Industries Ltd",
 45
+],
+[
+"Yuranus Infrastructure Ltd",
+8
 ]
 ],
 "gem_use": {
@@ -3248,7 +3218,7 @@
 "2026-10-25": 47,
 "2026-10-26": 213,
 "2026-10-27": 421,
-"2026-10-28": 219
+"2026-10-28": 220
 },
 "pdfposted": {
 "530139|Sep-26|standalone": {
@@ -3919,6 +3889,26 @@
 "rev": 1723.355,
 "pat": 63.764,
 "t": 1793191748.6016543,
+"last": 0
+},
+"519494|Sep-26|consolidated": {
+"code": "519494",
+"name": "NK Industries Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 21.314,
+"pat": -5.138000000000001,
+"t": 1793191909.6334052,
+"last": 0
+},
+"536846|Sep-26|standalone": {
+"code": "536846",
+"name": "Yuranus Infrastructure Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 56.363,
+"pat": 8.788,
+"t": 1793191953.5467417,
 "last": 0
 }
 },
@@ -5351,7 +5341,8 @@
 "6819daa4-8d24-45a4-92e8-27681dff9bb5": 1,
 "65e31803-09df-4427-95a6-d1b95e490154": 1,
 "6c95d289-98c9-420d-9b5e-1e1952aaf1de": 1,
-"fe783ea0-810d-4f9c-9873-9d712cdabceb": 1
+"fe783ea0-810d-4f9c-9873-9d712cdabceb": 1,
+"bd4fbfdb-e2d2-48e8-a66f-6875013a1ed0": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -5813,7 +5804,8 @@
 "12128b26-58b6-4a06-83e5-dac5fcfa5abb": 1,
 "22e0c451-ff96-4be2-abdd-6dfdd3f2ba25": 1,
 "7b65cc55-46a4-44a1-9473-39a52f4bff09": 1,
-"3a914750-d777-4b08-a986-065ab6c2bff6": 1
+"3a914750-d777-4b08-a986-065ab6c2bff6": 1,
+"90e2df3c-af11-4bff-8c83-bff24b11ff93": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
