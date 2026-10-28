@@ -992,7 +992,8 @@
 "7ddd284c-bd72-4b7d-9b68-661f36bc7855",
 "06f5bc2c-cf43-4210-a374-6a6585d3aa4a",
 "d9c2f424-04e9-49a6-b933-b7e6a9258258",
-"ebb7f23a-89ad-40d4-a574-76976e14b6b4"
+"ebb7f23a-89ad-40d4-a574-76976e14b6b4",
+"6243192d-2ec2-47af-a1e8-f67ca4b0bde5"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1652,7 +1653,8 @@
 "533148|Sep-26|consolidated",
 "544780|Sep-26|consolidated",
 "540749|Sep-26|consolidated",
-"530655|Sep-26|consolidated"
+"530655|Sep-26|consolidated",
+"523566|Sep-26|standalone"
 ],
 "pending": {
 "e904a8a3-17db-4bf9-91e1-c3b9a388ae3c": {
@@ -1692,44 +1694,6 @@
 "first": 1793179950.5041509,
 "last": 1793181947.9620886,
 "alerted": true
-},
-"6243192d-2ec2-47af-a1e8-f67ca4b0bde5": {
-"rec": {
-"NEWSID": "6243192d-2ec2-47af-a1e8-f67ca4b0bde5",
-"SCRIP_CD": 523566,
-"XML_NAME": "ANN_523566_6243192D-2EC2-47AF-A1E8-F67CA4B0BDE5",
-"NEWSSUB": "Martin Burn Ltd - 523566 - Results-Quarter Ended 30-09-2026",
-"DT_TM": "2026-10-28T15:23:19.843",
-"NEWS_DT": "2026-10-28T15:23:19.843",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "9f8f2c75-b7b9-40e3-b5de-f75026075d64.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quarter ended 30-09-26",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/martin-burn-ltd/marbu/523566/",
-"SLONGNAME": "Martin Burn Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 12,
-"News_submission_dt": "2026-10-28T15:23:19",
-"DissemDT": "2026-10-28T15:23:19.843",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 872698,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793181225.9149978,
-"last": 1793181971.7886076,
-"alerted": false
 }
 },
 "lag": [
@@ -2856,6 +2820,10 @@
 [
 "Vedanta Ltd",
 47
+],
+[
+"Martin Burn Ltd",
+13
 ]
 ],
 "gem_use": {
@@ -2875,7 +2843,7 @@
 "2026-10-25": 47,
 "2026-10-26": 213,
 "2026-10-27": 421,
-"2026-10-28": 92
+"2026-10-28": 93
 },
 "pdfposted": {
 "532955|Sep-26|consolidated": {
@@ -2926,7 +2894,7 @@
 "rev": 56.876000000000005,
 "pat": -20.003,
 "t": 1793016836.632377,
-"last": 1793181675.009798
+"last": 1793181977.8063247
 },
 "530139|Sep-26|standalone": {
 "code": "530139",
@@ -2936,7 +2904,7 @@
 "rev": 145.73800000000003,
 "pat": 44.568000000000005,
 "t": 1793022373.5333571,
-"last": 1793181675.009798
+"last": 1793181977.8063247
 },
 "530709|Sep-26|standalone": {
 "code": "530709",
@@ -2986,7 +2954,7 @@
 "rev": 5162.42,
 "pat": 249.97,
 "t": 1793075898.1245158,
-"last": 1793181675.009798
+"last": 1793181977.8063247
 },
 "543237|Sep-26|consolidated": {
 "code": "543237",
@@ -2996,7 +2964,7 @@
 "rev": 24460.9,
 "pat": 3464.0,
 "t": 1793092595.1763651,
-"last": 1793181675.009798
+"last": 1793181977.8063247
 },
 "542046|Sep-26|standalone": {
 "code": "542046",
@@ -3436,7 +3404,17 @@
 "rev": 223240.0,
 "pat": 61870.0,
 "t": 1793180981.039189,
-"last": 1793181678.6145902
+"last": 1793181981.8302932
+},
+"523566|Sep-26|standalone": {
+"code": "523566",
+"name": "Martin Burn Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.284,
+"pat": 3.596,
+"t": 1793182009.4045486,
+"last": 1793182015.6641154
 }
 },
 "audit": [
