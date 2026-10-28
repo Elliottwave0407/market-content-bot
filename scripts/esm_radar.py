@@ -86,7 +86,7 @@ def n500_pe():
         pass
     return None
 import requests
-N500 = n500_pe()
+N500 = float(os.environ["N500_PE"]) if os.environ.get("N500_PE") else n500_pe()
 try: eps2 = json.load(open("store/sme_eps/eps2.json"))
 except Exception: eps2 = {}
 W2 = []; pe_na = 0; pe_not_met = 0
