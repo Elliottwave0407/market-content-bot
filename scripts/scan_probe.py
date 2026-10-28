@@ -23,6 +23,7 @@ _want = os.environ.get("MODELS", "").strip()
 MODELS = [m for m in _want.split(",") if m] or [n for n in ("gemini-pro-latest", "gemini-flash-latest", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash") if n in _names][:3]
 p("testing models:", MODELS)
 def call(model, parts):
+    # (list outputs are unwrapped by the caller)
     body = {"contents": [{"parts": parts + [{"text": gr.PROMPT}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     err = None
     for t in range(4):
@@ -71,6 +72,7 @@ try:
             for vn, parts in variants:
                 out, err = call(model, parts)
                 if out is None: p(f"  {model} | {vn}: {err}"); continue
+                if isinstance(out, list): out = next((x for x in out if isinstance(x, dict)), {})
                 line = f"  {model} | {vn}: unit={out.get('unit')}"
                 for bs in ("consolidated", "standalone"):
                     dd = out.get(bs)

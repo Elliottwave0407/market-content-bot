@@ -2,6 +2,9 @@ name: scan-probe
 on:
   workflow_dispatch:
     inputs:
+      models:
+        description: "Gemini model names, comma separated (blank = auto)"
+        default: "gemini-2.5-flash,gemini-3-flash-preview,gemini-3.5-flash"
       docs:
         description: "NAME:file.pdf comma list (BSE AttachLive names)"
         default: "SCILAL:28885cb7-5ab7-40fe-a8ac-ffe0e16feae5.pdf,WELSPUN:243d4204-240b-45d5-b91f-fbb3d6722125.pdf,BHAGERIA:8f6f65c1-bf8f-41e8-8604-4ec2c8da31f1.pdf"
@@ -22,4 +25,5 @@ jobs:
       - env:
           GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_IMAGE_SCANNED_RESULTS }}
           DOCS: ${{ github.event.inputs.docs }}
+          MODELS: ${{ github.event.inputs.models }}
         run: python scripts/scan_probe.py
