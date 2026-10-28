@@ -240,6 +240,9 @@ def run_once(day=None, maxn=1):
                 import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
             except Exception as _e:
                 p("  channel copy failed:", type(_e).__name__)
+                try:
+                    import results_poller as _rp2; _rp2._mlog("route mirror error " + type(_e).__name__ + " " + str(_e)[:100])
+                except Exception: pass
             import store; store.log_result("fin", cap, rs, card.LAST, x.get("an_dt") and datetime.strptime(x["an_dt"], "%d-%b-%Y %H:%M:%S"))
             time.sleep(3.2)
         st["posted"].append(f"{sym}|{T}"); st["done"].append(sid); changed = True

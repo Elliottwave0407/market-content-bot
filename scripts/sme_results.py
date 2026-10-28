@@ -137,6 +137,9 @@ def process(bse, r, st, final=False):
             import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
         except Exception as _e:
             p("  channel copy failed:", type(_e).__name__)
+            try:
+                import results_poller as _rp2; _rp2._mlog("route mirror error " + type(_e).__name__ + " " + str(_e)[:100])
+            except Exception: pass
         import store; store.log_result("sme", cap, rs, card.LAST, r.get("NEWS_DT"))
         time.sleep(3.2)
     st["posted"].append(key); nse._mark_seen(bkey)

@@ -44,6 +44,23 @@ def disk_posted():
     except Exception:
         return set()
 
+_C2I = {}
+def nse_already(key):
+    """True when the NSE-first route already posted this company/quarter/basis (matched by ISIN, since that route does not always know the BSE code)."""
+    try:
+        code, ql, basis = key.split("|")[:3]
+        if not _C2I:
+            for isin, v in json.load(open("store/mcap/mcap.json")).items():
+                if v.get("s"):
+                    _C2I[str(v["s"])] = isin
+        isin = _C2I.get(code)
+        if not isin:
+            return False
+        pre = f"NSE|{isin}|{ql}|{basis}"
+        return pre in set(json.load(open("state/nse_results.json")).get("posted", []))
+    except Exception:
+        return False
+
 def save_state(st):
     if ONLY:
         return
@@ -407,7 +424,7 @@ def main(bse_in=None, known=None, fast=False):
                 if key in _TEST_SEEN:
                     continue
                 _TEST_SEEN.add(key)
-            if (key in st["posted"] or key in disk_posted()) and not ONLY:
+            if (key in st["posted"] or key in disk_posted() or nse_already(key)) and not ONLY:
                 p(f"dup skip {key}")
                 st["ids"].append(rec["NEWSID"])
                 pend.pop(nid, None)

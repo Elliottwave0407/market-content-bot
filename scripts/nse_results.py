@@ -92,6 +92,14 @@ def bse_maps():
                         isn[x["ISIN_NUMBER"].strip()] = code
             except Exception:
                 continue
+    try:      # fallback: our daily BSE snapshot (ISIN and symbol to BSE code) for listings the group scan misses
+        for isin_, v_ in json.load(open("store/mcap/mcap.json")).items():
+            if v_.get("s"):
+                isn.setdefault(isin_, str(v_["s"]))
+                if v_.get("n"):
+                    sym.setdefault(str(v_["n"]).upper(), str(v_["s"]))
+    except Exception:
+        pass
     out = {"sym": sym, "name": nm, "isin": isn}
     if len(isn) > 1000:
         _S["bse"], _S["bse_at"] = out, time.time()
@@ -348,6 +356,9 @@ def process(x, st, final, maps=None):
             import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
         except Exception as _e:
             p("  channel copy failed:", type(_e).__name__)
+            try:
+                import results_poller as _rp2; _rp2._mlog("route mirror error " + type(_e).__name__ + " " + str(_e)[:100])
+            except Exception: pass
         import store; store.log_result("nse", cap, rr, card.LAST, (parse_dt(x) or "").__str__() if parse_dt(x) else None)
         time.sleep(3.2)
     if not ONLY:
