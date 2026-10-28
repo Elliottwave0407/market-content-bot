@@ -7,15 +7,17 @@ from ci_out import p, publish
 import gemini_read as gr, pdf_card as pc, nse_results as nse
 KEY = os.environ.get("NVIDIA_API_KEY", "").strip()
 H = {"Authorization": "Bearer " + KEY, "Accept": "application/json"}
+T0 = time.time(); DEADLINE = float(os.environ.get("DEADLINE_MIN", "17")) * 60
 try:
     ms = requests.get("https://integrate.api.nvidia.com/v1/models", headers=H, timeout=40).json().get("data", [])
     ids = [m["id"] for m in ms]
     cand = [i for i in ids if re.search(r"vision|[-/]vl|vila|neva|pixtral|gemma-3|phi-3.5|phi-4-multimodal|llama-4|qwen.*vl|paligemma|kosmos|fuyu|nemoretriever-ocr|ocr", i, re.I)]
     p("vision-like models on the free endpoint:", len(cand), cand[:40])
     want = os.environ.get("MODELS", "").strip()
-    models = [m for m in want.split(",") if m] or cand[:8]
+    models = [m for m in want.split(",") if m] or cand[:4]
     import pymupdf
     for item in [x for x in os.environ.get("DOCS", "").split(",") if x]:
+        if time.time() - T0 > DEADLINE: break
         name, fn = item.split(":")
         b = None
         for t in range(4):
@@ -29,16 +31,18 @@ try:
         d = pymupdf.open(stream=b, filetype="pdf")
         p(f"== {name}: {len(b)//1024} KB, {len(d)} pages, text chars on pages 1-4: {[len(d[i].get_text()) for i in range(min(4, len(d)))]}")
         imgs = []
-        for i in range(min(5, len(d))):
+        for i in range(min(4, len(d))):
             pix = d[i].get_pixmap(dpi=110)
             imgs.append(base64.b64encode(pix.tobytes("jpeg", jpg_quality=70)).decode())
         for m in models:
+            if time.time() - T0 > DEADLINE: p("deadline reached, stopping"); break
             for pg, im in enumerate(imgs):
+                if time.time() - T0 > DEADLINE: break
                 body = {"model": m, "temperature": 0, "max_tokens": 1500, "messages": [{"role": "user", "content": [
                     {"type": "text", "text": gr.PROMPT + "\nIf this page does NOT contain the quarterly results statement table, return exactly {}."},
                     {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + im}}]}]}
                 try:
-                    r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers=H, json=body, timeout=120)
+                    r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers=H, json=body, timeout=50)
                 except Exception as e:
                     p(f"  {m} p{pg+1}: error {type(e).__name__}"); continue
                 if r.status_code != 200:
