@@ -31,9 +31,11 @@ try:
         d = pymupdf.open(stream=b, filetype="pdf")
         p(f"== {name}: {len(b)//1024} KB, {len(d)} pages, text chars on pages 1-4: {[len(d[i].get_text()) for i in range(min(4, len(d)))]}")
         imgs = []
-        for i in range(min(4, len(d))):
-            pix = d[i].get_pixmap(dpi=110)
-            imgs.append(base64.b64encode(pix.tobytes("jpeg", jpg_quality=70)).decode())
+        pick = [i for i in range(min(8, len(d))) if len(d[i].get_text()) < 1500 and d[i].get_images()][:3] or list(range(min(3, len(d))))
+        p("  pages rendered:", [i + 1 for i in pick], "text chars:", [len(d[i].get_text()) for i in pick])
+        for i in pick:
+            pix = d[i].get_pixmap(dpi=120)
+            imgs.append(base64.b64encode(pix.tobytes("jpeg", jpg_quality=72)).decode())
         for m in models:
             if time.time() - T0 > DEADLINE: p("deadline reached, stopping"); break
             for pg, im in enumerate(imgs):
