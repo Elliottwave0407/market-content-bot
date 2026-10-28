@@ -10,12 +10,26 @@ TRUTH = {
  "WELSPUN": {"consolidated": {"revenue": [1411.33, 12.75, 490.21], "other_income": [0.01, 0.40, 2.18], "total_income": [1411.34, 13.15, 492.39], "total_expenses": [242.56, 27.95, 33.15], "pbt": [1168.78, -14.80, 459.24], "tax": [292.83, 0.08, 110.06], "pat": [875.95, -14.88, 349.18], "eps": [23.97, -0.41, 9.55]}},
 }
 DOCS = [x.split(":") for x in os.environ.get("DOCS", "").split(",") if x]
-MODELS = [m for m in os.environ.get("MODELS", "gemini-flash-lite-latest,gemini-flash-latest").split(",") if m]
+def _auto():
+    try:
+        ms = requests.get(f"{gr.BASE}/models?pageSize=200", headers={"x-goog-api-key": KEY}, timeout=40).json().get("models", [])
+        names = [m["name"].split("/")[-1] for m in ms if "generateContent" in m.get("supportedGenerationMethods", [])]
+        p("models this key can call:", [n for n in names if re.search(r"flash|pro", n) and not re.search(r"image|tts|live|audio|embed|robotics|computer|gemma", n)][:30])
+        return names
+    except Exception as e:
+        p("model list failed", type(e).__name__); return []
+_names = _auto()
+_want = os.environ.get("MODELS", "").strip()
+MODELS = [m for m in _want.split(",") if m] or [n for n in ("gemini-pro-latest", "gemini-flash-latest", "gemini-3-flash-preview", "gemini-2.5-pro", "gemini-2.5-flash") if n in _names][:3]
+p("testing models:", MODELS)
 def call(model, parts):
     body = {"contents": [{"parts": parts + [{"text": gr.PROMPT}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     err = None
     for t in range(4):
-        r = requests.post(f"{gr.BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=150)
+        try:
+            r = requests.post(f"{gr.BASE}/models/{model}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=110)
+        except Exception as e:
+            err = type(e).__name__; time.sleep(8); continue
         if r.status_code == 200:
             try: return gr._clean(json.loads(re.sub(r"^```json|```$", "", r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()))), None
             except Exception as e: return None, "parse " + repr(e)[:50]
@@ -51,9 +65,8 @@ try:
         p(f"== {name}: {len(b)//1024} KB, table-page candidates {[i+1 for i in pick]}")
         trimmed = pc.trim_pdf(b)
         variants = [("pdf", [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(trimmed).decode()}}])]
-        for i in pick[:3]:
-            im = base64.b64encode(d[i].get_pixmap(dpi=200).tobytes("jpeg", jpg_quality=85)).decode()
-            variants.append((f"img p{i+1}", [{"inline_data": {"mime_type": "image/jpeg", "data": im}}]))
+        allp = [i for i in range(min(8, len(d))) if d[i].get_images()][:4] or [0, 1, 2]
+        variants.append((f"imgs {[i+1 for i in allp]}", [{"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(d[i].get_pixmap(dpi=150).tobytes("jpeg", jpg_quality=80)).decode()}} for i in allp]))
         for model in MODELS:
             for vn, parts in variants:
                 out, err = call(model, parts)
