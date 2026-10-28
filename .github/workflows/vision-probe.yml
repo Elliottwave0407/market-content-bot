@@ -1,0 +1,29 @@
+name: vision-probe
+on:
+  workflow_dispatch:
+    inputs:
+      docs:
+        description: "name:filename.pdf comma list (BSE AttachLive names)"
+        default: "SCILAL:28885cb7-5ab7-40fe-a8ac-ffe0e16feae5.pdf,WELSPUN:243d4204-240b-45d5-b91f-fbb3d6722125.pdf,BHAGERIA:8f6f65c1-bf8f-41e8-8604-4ec2c8da31f1.pdf"
+      models:
+        description: "NIM model ids, comma separated (blank = auto-pick vision-like ones)"
+        default: ""
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          DOCS: ${{ github.event.inputs.docs }}
+          MODELS: ${{ github.event.inputs.models }}
+        run: python scripts/vision_probe.py
