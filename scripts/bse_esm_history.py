@@ -30,14 +30,25 @@ def link_of(pdf):
                 if u and "Annexure" in str(u): return str(u)
     return None
 
+def sheet_rows(xl):
+    if xl[:2] == b"PK":
+        wb = openpyxl.load_workbook(io.BytesIO(xl), data_only=True)
+        ws = None
+        for w in wb.worksheets:
+            if "III" in w.title: ws = w
+        if ws is None: ws = wb.worksheets[-1]
+        return list(ws.iter_rows(values_only=True))
+    import xlrd
+    wb = xlrd.open_workbook(file_contents=xl)
+    sh = None
+    for i in range(wb.nsheets):
+        if "III" in wb.sheet_by_index(i).name: sh = wb.sheet_by_index(i)
+    if sh is None: sh = wb.sheet_by_index(wb.nsheets - 1)
+    return [[(str(int(v)) if isinstance(v, float) and v == int(v) else v) for v in sh.row_values(r)] for r in range(sh.nrows)]
+
 def consolidated(xl):
-    wb = openpyxl.load_workbook(io.BytesIO(xl), data_only=True)
-    ws = None
-    for w in wb.worksheets:
-        if "III" in w.title: ws = w
-    if ws is None: ws = wb.worksheets[-1]
     res = {}
-    for row in ws.iter_rows(values_only=True):
+    for row in sheet_rows(xl):
         c = [str(x).strip() if x is not None else "" for x in row]
         if len(c) >= 5 and c[1].isdigit() and c[2].startswith("INE") and c[4] in ("I", "II"):
             res[c[2]] = {"code": c[1], "name": c[3].rstrip("*").strip(), "st": c[4], "nse": c[3].endswith("*")}
@@ -76,7 +87,9 @@ try:
         lk = link_of(pdf) if pdf and pdf[:4] == b"%PDF" else None
         xl = get(lk) if lk else None
         if not xl: fail.append(n); done[n] = "fail"; continue
-        cur = consolidated(xl)
+        try: cur = consolidated(xl)
+        except Exception as e:
+            p("unreadable annexure", n, type(e).__name__, xl[:4]); cur = None
         if not cur: fail.append(n); done[n] = "empty"; continue
         d = datetime.strptime(n[:8], "%Y%m%d").strftime("%Y-%m-%d")
         if prev is not None:
