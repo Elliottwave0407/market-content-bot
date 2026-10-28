@@ -8,6 +8,9 @@ on:
       priv_id:
         description: "private chat message id to delete (optional)"
         default: ""
+      pub_id:
+        description: "public group message id to delete directly (optional)"
+        default: ""
       confirm:
         description: "type yes to delete (anything else = dry run)"
         default: "no"
@@ -30,6 +33,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
           MATCH: ${{ github.event.inputs.match }}
+          PUB_ID: ${{ github.event.inputs.pub_id }}
           PRIV_ID: ${{ github.event.inputs.priv_id }}
           CONFIRM: ${{ github.event.inputs.confirm }}
         run: python scripts/tg_delete_card.py

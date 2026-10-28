@@ -19,6 +19,12 @@ try:
         if CONFIRM:
             r = tg("deleteMessage", chat_id=PRIV, message_id=PRIV_ID); p("private delete ok =", r.get("ok"), (r.get("description") or "")[:60])
         else: p("would delete private", PRIV_ID)
+    PUB_ID = os.environ.get("PUB_ID", "").strip()
+    if PUB_ID:      # exact id known: delete directly, no scanning
+        if CONFIRM:
+            r = tg("deleteMessage", chat_id=PUB, message_id=PUB_ID); p("public delete ok =", r.get("ok"), (r.get("description") or "")[:60])
+        else: p("would delete public", PUB_ID)
+        publish(); sys.exit(0)
     lo, hi = 1, 1
     while probe(hi)[0] is not None or "not found" not in probe(hi)[1].lower():     # find a high id that does not exist
         hi *= 2
