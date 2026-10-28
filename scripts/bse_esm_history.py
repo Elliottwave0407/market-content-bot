@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Referer": "https://www.bseindia.com/"}
 OUT = "store/esm_history"; os.makedirs(OUT, exist_ok=True); os.makedirs("store/esm", exist_ok=True)
 BUDGET = float(os.environ.get("BUDGET_MIN", "40")) * 60; T0 = time.time()
-FROM = datetime.strptime(os.environ.get("FROM_DATE", "2025-07-01"), "%Y-%m-%d")
+FROM = datetime.strptime((os.environ.get("FROM_DATE") or "2025-07-01"), "%Y-%m-%d")
 
 def get(u, tries=3):
     for i in range(tries):
