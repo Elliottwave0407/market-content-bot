@@ -61,6 +61,36 @@ def arith_ok(d):
         res.append(tol(rv_ + oi_, ti) or tol(rv_, ti))
     return bool(res) and all(res), len(res)
 
+STRONG = os.environ.get("GEMINI_STRONG_MODEL", "gemini-3.5-flash").strip()
+
+def arith_fail(out):
+    """True when a statement was read but its current column does not reconcile (digit misread)."""
+    try:
+        bad = False
+        for b_ in ("consolidated", "standalone"):
+            d_ = out.get(b_)
+            if isinstance(d_, dict) and val(d_, "revenue", 0) is not None and val(d_, "pat", 0) is not None:
+                if arith_ok(d_)[0]: return False
+                bad = True
+        return bad
+    except Exception:
+        return False
+
+def escalate(out, key, pdf_bytes, timeout=90):
+    """The light model sometimes misreads a digit on scanned pages (Shilchar 19,261 as 15,261; SCI Land 767 as 787). Tests on 28 Oct: gemini-3.5-flash / gemini-3-flash-preview read those correctly.
+    One retry with the stronger model, used only when the arithmetic fails; the original read is kept if the retry is no better."""
+    if not isinstance(out, dict) or not STRONG or not arith_fail(out):
+        return out
+    try:
+        out2, err = gr.read_pdf(key, STRONG, pdf_bytes, tries=1, timeout=timeout)
+        if isinstance(out2, dict) and not arith_fail(out2):
+            LOG.append("strong model fixed a failed read")
+            return out2
+        LOG.append(f"strong model retry did not help: {str(err)[:60]}")
+    except Exception as e:
+        LOG.append(f"strong model retry error {repr(e)[:60]}")
+    return out
+
 def to_m(d, i, k):
     rev, pbt, pat, eps = (val(d, x, i) for x in ("revenue", "pbt", "pat", "eps"))
     exp, dep, fin = (val(d, x, i) for x in ("total_expenses", "depreciation", "finance_costs"))
@@ -193,6 +223,8 @@ def _read_stage(rec, st, headline, filed):
         out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
         if out is None and small is not content and not (err and "429" in err):
             out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
+    if out is not None:
+        out = escalate(out, key, small)
     if out is None and nim_ok:      # Gemini out of quota / busy / failed: the free NVIDIA reader takes the same job (same checks follow)
         out, err2 = nr.read_pdf(small)
         LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:40]})")

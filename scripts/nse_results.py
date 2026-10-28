@@ -157,6 +157,7 @@ def read_card(content, name, bse=None, code=None):
         out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "2")), timeout=120)
     if out is None:
         return None, f"pdf read failed: {str(err)[:70]}"
+    out = pc.escalate(out, key, small, timeout=120)
     k = pc.K.get(str(out.get("unit", "")).lower())
     cols = out.get("quarter_end_columns") or []
     qe = pc.parse_qend(cols[0]) if cols else None
