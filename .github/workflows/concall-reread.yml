@@ -1,0 +1,60 @@
+name: concall-reread
+on:
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "1 = read and log only, change nothing"
+        default: "1"
+      maxn:
+        description: "Stop after N transcripts (0 = no limit)"
+        default: "6"
+      budget_min:
+        description: "Minutes of work in this run"
+        default: "150"
+      workers:
+        description: "Parallel readers"
+        default: "6"
+concurrency:
+  group: concall-extract-concall_facts
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  reread:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          DRY: ${{ github.event.inputs.dry || '1' }}
+          MAXN: ${{ github.event.inputs.maxn || '6' }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
+          WORKERS: ${{ github.event.inputs.workers || '6' }}
+        run: python scripts/concall_reread.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/concall_facts store/concall_reread 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Concall re-read"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Chain the next live run while transcripts remain
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "${{ github.event.inputs.dry || '1' }}" = "1" ] && { echo "dry run: no chaining"; exit 0; }
+          R=$(python3 -c "import json;d=json.load(open('store/concall_reread/_state.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
+          echo "remaining: $R"
+          if [ "$R" -gt 0 ]; then
+            sleep 20
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '150' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '6' }}' && echo "next run queued"
+          fi
