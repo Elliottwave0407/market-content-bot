@@ -1189,7 +1189,8 @@
 "d4ac9c9c-9ca7-428b-87db-3d979588a35e",
 "20f4a88b-4664-459a-aecf-e56c9e258b72",
 "d9dd8153-3058-46bb-b2ef-7bdfd71fa35e",
-"98dcb568-5167-4371-8c72-d6ff382c66c6"
+"98dcb568-5167-4371-8c72-d6ff382c66c6",
+"2869f03e-b575-4d80-b83e-892cd518408a"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1965,7 +1966,8 @@
 "535267|Sep-26|consolidated",
 "514286|Sep-26|standalone",
 "531399|Sep-26|standalone",
-"504258|Sep-26|standalone"
+"504258|Sep-26|standalone",
+"539927|Sep-26|standalone"
 ],
 "pending": {
 "cd542f04-7552-4a38-a1d1-bc0681a5881a": {
@@ -2003,7 +2005,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793258715.5901742,
-"last": 1793261054.0963988,
+"last": 1793261207.600747,
 "alerted": false
 },
 "314fa1c7-030a-420d-be1c-7655e700a9a8": {
@@ -2041,7 +2043,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793259250.4288356,
-"last": 1793261054.0963988,
+"last": 1793261207.600747,
 "alerted": true
 },
 "ca69f1ab-c31a-4aee-bcdc-8790dbab5b47": {
@@ -2079,8 +2081,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793259960.8696601,
-"last": 1793261054.0963988,
-"alerted": false
+"last": 1793261207.600747,
+"alerted": true
 },
 "8177643b-16c6-4afa-bf5d-018b2c237a62": {
 "rec": {
@@ -2117,7 +2119,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793261054.0963988,
-"last": 1793261054.0963988,
+"last": 1793261207.600747,
+"alerted": false
+},
+"6760657e-5336-4f28-b88a-9e39536a6c0a": {
+"rec": {
+"NEWSID": "6760657e-5336-4f28-b88a-9e39536a6c0a",
+"SCRIP_CD": 539927,
+"XML_NAME": "ANN_539927_6760657E-5336-4F28-B88A-9E39536A6C0A",
+"NEWSSUB": "Likhami Consulting Ltd - 539927 - Submission Of Standalone Unaudited Financial Results Of The Company For The 02Nd Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-10-29T13:34:17.897",
+"NEWS_DT": "2026-10-29T13:34:17.897",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "e4ccb1dd-7ecf-4dc8-aae3-5bd64c36d088.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Financial Result for the 02nd quarter and half year ended 30/09/2026 along with Limited Review report and other items as per agenda",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/likhami-consulting-ltd/likhami/539927/",
+"SLONGNAME": "Likhami Consulting Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 7,
+"News_submission_dt": "2026-10-29T13:34:17",
+"DissemDT": "2026-10-29T13:34:17.897",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 2050025,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793261207.600747,
+"last": 1793261207.600747,
 "alerted": false
 }
 },
@@ -3341,7 +3381,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 15
+"2026-10-29": 19
 },
 "pdfposted": {
 "543237|Sep-26|consolidated": {
@@ -3352,7 +3392,7 @@
 "rev": 24460.9,
 "pat": 3464.0,
 "t": 1793092595.1763651,
-"last": 1793260938.0358462
+"last": 1793261326.060815
 },
 "542046|Sep-26|standalone": {
 "code": "542046",
@@ -3362,7 +3402,7 @@
 "rev": 37.054,
 "pat": 5.043,
 "t": 1793094363.559316,
-"last": 1793260938.0358462
+"last": 1793261326.060815
 },
 "512271|Sep-26|consolidated": {
 "code": "512271",
@@ -3372,7 +3412,7 @@
 "rev": -0.647,
 "pat": 0.505,
 "t": 1793095679.9090858,
-"last": 1793260938.0358462
+"last": 1793261326.060815
 },
 "540168|Sep-26|standalone": {
 "code": "540168",
@@ -3382,7 +3422,7 @@
 "rev": 228.573,
 "pat": 27.736000000000004,
 "t": 1793098736.3355553,
-"last": 1793260938.0358462
+"last": 1793261326.060815
 },
 "540252|Sep-26|standalone": {
 "code": "540252",
@@ -3722,6 +3762,16 @@
 "rev": 942.9549999999999,
 "pat": 28.731,
 "t": 1793261196.1471016,
+"last": 0
+},
+"539927|Sep-26|standalone": {
+"code": "539927",
+"name": "Likhami Consulting Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1.6850000000000003,
+"pat": 0.376,
+"t": 1793261315.1715794,
 "last": 0
 }
 },
@@ -5263,7 +5313,8 @@
 "d082fa95-c8d5-4e35-a756-8382ecd03342": 1,
 "3c834b00-fceb-438a-be2b-2453012f0a73": 1,
 "20f4a88b-4664-459a-aecf-e56c9e258b72": 1,
-"98dcb568-5167-4371-8c72-d6ff382c66c6": 1
+"98dcb568-5167-4371-8c72-d6ff382c66c6": 1,
+"6760657e-5336-4f28-b88a-9e39536a6c0a": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
