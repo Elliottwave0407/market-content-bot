@@ -1,37 +1,37 @@
 {
- "documents": 7866,
- "facts": 102671,
+ "documents": 8395,
+ "facts": 110131,
  "grades": {
-  "A": 50344,
-  "B": 41022,
-  "C": 11305
+  "A": 55432,
+  "B": 43081,
+  "C": 11618
  },
  "issues": {
-  "stmt_nums": 18178,
-  "realigned": 10381,
-  "question": 1294,
-  "short_quote": 1204,
-  "value_nums": 612,
-  "no_period": 1882,
-  "judge_partial": 89,
+  "stmt_nums": 19664,
+  "realigned": 11185,
+  "short_quote": 1306,
+  "question": 1371,
+  "no_period": 2014,
+  "value_nums": 661,
+  "judge_partial": 100,
   "judge_no": 7,
   "old_schema": 30063
  },
  "by_reader": {
   "nemotron-3-ultra-550b-a55b v2": {
-   "A": 22521,
-   "B": 10114,
-   "C": 1837
-  },
-  "deepseek-v4.1-flash v2": {
-   "A": 7060,
-   "B": 1516,
-   "C": 245
+   "A": 26534,
+   "B": 11933,
+   "C": 2114
   },
   "mistral:ministral-14b v2": {
-   "A": 20763,
-   "B": 7438,
-   "C": 1114
+   "A": 20772,
+   "B": 7450,
+   "C": 1115
+  },
+  "deepseek-v4.1-flash v2": {
+   "A": 8126,
+   "B": 1744,
+   "C": 280
   },
   "nemotron-3-ultra-550b-a55b v1": {
    "C": 5882,
