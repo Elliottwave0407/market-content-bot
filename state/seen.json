@@ -1398,7 +1398,9 @@
 "c908ccb7-bcb7-4df3-bb66-db0c5f1e2ca7",
 "0c0201cb-a7f5-4350-998f-d180f42bcff7",
 "67511a31-5788-4be4-9fb5-b3aa2e9370c6",
-"a217930e-c3bf-45e2-afaf-275c5717ef9d"
+"a217930e-c3bf-45e2-afaf-275c5717ef9d",
+"4a2a727b-c028-442a-9e40-4fd903fc6f18",
+"e724cf21-44b2-445e-a54e-dd29adeb39d4"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2306,7 +2308,8 @@
 "543386|Sep-26|na",
 "508933|Sep-26|na",
 "532633|Sep-26|consolidated",
-"544566|Sep-26|na"
+"544566|Sep-26|na",
+"544533|Sep-26|consolidated"
 ],
 "pending": {
 "7e8f38b4-b71e-481f-908a-b7475941ab34": {
@@ -2344,7 +2347,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793281811.4127724,
-"last": 1793286331.620945,
+"last": 1793286464.1342838,
 "alerted": true
 },
 "22554b8e-b6e2-43b0-9b28-006ce638ed95": {
@@ -2382,45 +2385,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793283598.7559586,
-"last": 1793286331.620945,
-"alerted": true
-},
-"e724cf21-44b2-445e-a54e-dd29adeb39d4": {
-"rec": {
-"NEWSID": "e724cf21-44b2-445e-a54e-dd29adeb39d4",
-"SCRIP_CD": 544533,
-"XML_NAME": "ANN_544533_E724CF21-44B2-445E-A54E-DD29ADEB39D4",
-"NEWSSUB": "Seshaasai Technologies Ltd - 544533 - Unaudited Financial Results For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-10-29T19:50:46.317",
-"NEWS_DT": "2026-10-29T19:50:46.317",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "7fcc0715-6e41-494e-86c8-60deee4ee999.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed herewith Unaudited Financial Results for the quarter and half year ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/seshaasai-technologies-ltd/styl/544533/",
-"SLONGNAME": "Seshaasai Technologies Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 29,
-"News_submission_dt": "2026-10-29T19:50:46",
-"DissemDT": "2026-10-29T19:50:46.317",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3312768,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793283766.8299212,
-"last": 1793286331.620945,
+"last": 1793286464.1342838,
 "alerted": true
 },
 "21464fc5-b292-4e8e-bf13-76afe59f0306": {
@@ -2458,15 +2423,49 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793284842.233568,
-"last": 1793286331.620945,
+"last": 1793286464.1342838,
 "alerted": true
+},
+"f2775616-8726-418c-a384-c0ad9b05b787": {
+"rec": {
+"NEWSID": "f2775616-8726-418c-a384-c0ad9b05b787",
+"SCRIP_CD": 532633,
+"XML_NAME": "ANN_532633_F2775616-8726-418C-A384-C0AD9B05B787",
+"NEWSSUB": "Alldigi Tech Ltd - 532633 - Results For The Period Ended September 30, 2026",
+"DT_TM": "2026-10-29T20:35:22.34",
+"NEWS_DT": "2026-10-29T20:35:22.34",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "7e35fa86-8b19-451b-81b6-c7eef9c7b429.pdf",
+"MORE": "",
+"HEADLINE": "Results for the period ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/alldigi-tech-ltd/alldigi/532633/",
+"SLONGNAME": "Alldigi Tech Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 30,
+"News_submission_dt": "2026-10-29T20:35:22",
+"DissemDT": "2026-10-29T20:35:22.34",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 6316962,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793286407.8557017,
+"last": 1793286464.1342838,
+"alerted": false
 }
 },
 "lag": [
-[
-"ICICI Bank Ltd",
-426
-],
 [
 "Cupid Breweries And Distilleries Ltd",
 271
@@ -3662,6 +3661,10 @@
 [
 "Sunsky Logistics Ltd",
 46
+],
+[
+"Seshaasai Technologies Ltd",
+45
 ]
 ],
 "gem_use": {
@@ -3682,7 +3685,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 278
+"2026-10-29": 280
 },
 "pdfposted": {
 "531595|Sep-26|consolidated": {
@@ -3773,7 +3776,7 @@
 "rev": 6660.133000000001,
 "pat": 46.409,
 "t": 1793187826.170216,
-"last": 1793286096.0984375
+"last": 1793286459.42389
 },
 "542773|Sep-26|consolidated": {
 "code": "542773",
@@ -3783,7 +3786,7 @@
 "rev": 7144.008000000001,
 "pat": 1266.121,
 "t": 1793191035.2583532,
-"last": 1793286096.0984375
+"last": 1793286459.42389
 },
 "544186|Sep-26|standalone": {
 "code": "544186",
@@ -3793,7 +3796,7 @@
 "rev": 722.2,
 "pat": 79.2,
 "t": 1793192166.2209988,
-"last": 1793286096.0984375
+"last": 1793286459.42389
 },
 "531950|Sep-26|consolidated": {
 "code": "531950",
@@ -3803,7 +3806,7 @@
 "rev": 17.359,
 "pat": -4.513000000000001,
 "t": 1793192518.4013336,
-"last": 1793286096.0984375
+"last": 1793286459.42389
 },
 "500174|Sep-26|standalone": {
 "code": "500174",
@@ -3893,37 +3896,7 @@
 "rev": 99765.1,
 "pat": 10853.5,
 "t": 1793262901.7555144,
-"last": 1793273373.950286
-},
-"506076|Sep-26|consolidated": {
-"code": "506076",
-"name": "Grindwell Norton Ltd-$",
-"basis": "consolidated",
-"q": 131,
-"rev": 8836.656,
-"pat": 1331.6870000000001,
-"t": 1793263402.0164587,
-"last": 1793273373.950286
-},
-"543614|Sep-26|standalone": {
-"code": "543614",
-"name": "Tips Films Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 620.698,
-"pat": -5.362,
-"t": 1793263690.1655195,
-"last": 1793273378.3222601
-},
-"532144|Sep-26|consolidated": {
-"code": "532144",
-"name": "Welspun Corp Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 46437.200000000004,
-"pat": 4950.9,
-"t": 1793264603.599564,
-"last": 1793273378.3222601
+"last": 1793286526.006012
 },
 "501455|Sep-26|consolidated": {
 "code": "501455",
@@ -4444,21 +4417,19 @@
 "pat": 1.861,
 "t": 1793285754.8836925,
 "last": 0
+},
+"544533|Sep-26|consolidated": {
+"code": "544533",
+"name": "Seshaasai Technologies Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4053.07,
+"pat": 597.59,
+"t": 1793286487.5321634,
+"last": 0
 }
 },
 "audit": [
-[
-"TGB Banquets and Hotels Ltd",
-"ok"
-],
-[
-"India Cements Ltd",
-"ok"
-],
-[
-"Kross Ltd",
-"ok"
-],
 [
 "Rossari Biotech Ltd",
 "ok"
@@ -5646,6 +5617,18 @@
 [
 "Senores Pharmaceuticals Ltd",
 "ok"
+],
+[
+"Grindwell Norton Ltd-$",
+"ok"
+],
+[
+"Tips Films Ltd",
+"ok"
+],
+[
+"Welspun Corp Ltd",
+"ok"
 ]
 ],
 "standalone_only": {
@@ -6569,7 +6552,8 @@
 "13a3fb6d-b4e8-4823-a400-e3f4d2a46d60": 1,
 "0adacd0d-11af-4f1a-a290-b129abc1df3c": 1,
 "4a2a727b-c028-442a-9e40-4fd903fc6f18": 1,
-"67511a31-5788-4be4-9fb5-b3aa2e9370c6": 1
+"67511a31-5788-4be4-9fb5-b3aa2e9370c6": 1,
+"f2775616-8726-418c-a384-c0ad9b05b787": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
