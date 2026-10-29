@@ -1280,7 +1280,11 @@
 "6f1bd7e5-839f-4ab6-926c-1a5c13f63d73",
 "71e72a2e-5bfc-4625-aa46-897f3fce9040",
 "0b6f9818-8f2f-4b0d-816d-ef8c86e89ebf",
-"50f86bdb-bf8d-4dc2-8a07-8c2998ac928e"
+"50f86bdb-bf8d-4dc2-8a07-8c2998ac928e",
+"82ae09e2-2005-4180-bbce-6cf2476376ce",
+"8fc9bfce-5116-44bc-9910-8f259bc8a553",
+"40ecde45-ad31-4480-8894-570c0f39de16",
+"46794b1c-fe51-46fc-ae71-bc5b30cc79b7"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2109,47 +2113,11 @@
 "532809|Sep-26|consolidated",
 "544914|Sep-26|consolidated",
 "544880|Sep-26|consolidated",
-"531840|Sep-26|consolidated"
+"531840|Sep-26|consolidated",
+"532424|Sep-26|na",
+"520021|Sep-26|standalone"
 ],
 "pending": {
-"82ae09e2-2005-4180-bbce-6cf2476376ce": {
-"rec": {
-"NEWSID": "82ae09e2-2005-4180-bbce-6cf2476376ce",
-"SCRIP_CD": 532424,
-"XML_NAME": "ANN_532424_82AE09E2-2005-4180-BBCE-6CF2476376CE",
-"NEWSSUB": "Godrej Consumer Products Ltd - 532424 - Results - Financial Results For Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-29T15:43:04",
-"NEWS_DT": "2026-10-29T15:43:04",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8c8c6bb5-7fd7-4f36-a5d3-c7e08bd31495.pdf",
-"MORE": "",
-"HEADLINE": "The attached file is self explanatory",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/godrej-consumer-products-ltd/godrejcp/532424/",
-"SLONGNAME": "Godrej Consumer Products Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-10-29T15:43:04",
-"DissemDT": "2026-10-29T15:43:04",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 26806768,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793268878.1643133,
-"last": 1793271542.5138044,
-"alerted": true
-},
 "b456ce1b-3cec-44e4-97bb-c60eb6b99f83": {
 "rec": {
 "NEWSID": "b456ce1b-3cec-44e4-97bb-c60eb6b99f83",
@@ -2185,7 +2153,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793270984.2987354,
-"last": 1793271542.5138044,
+"last": 1793271728.4620974,
 "alerted": false
 },
 "de811568-475a-4f5c-a519-c71a041fea3c": {
@@ -2223,15 +2191,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793271429.5772817,
-"last": 1793271542.5138044,
+"last": 1793271728.4620974,
 "alerted": false
 }
 },
 "lag": [
-[
-"Sterling and Wilson Renewable Energy Ltd",
-12
-],
 [
 "Oriental Hotels Ltd",
 104
@@ -3427,6 +3391,10 @@
 [
 "IEC Education Ltd",
 10
+],
+[
+"Godrej Consumer Products Ltd",
+48
 ]
 ],
 "gem_use": {
@@ -3447,7 +3415,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 166
+"2026-10-29": 171
 },
 "pdfposted": {
 "540252|Sep-26|standalone": {
@@ -3498,7 +3466,7 @@
 "rev": 1333.5040000000001,
 "pat": 36.958999999999996,
 "t": 1793115530.9801414,
-"last": 1793271382.1625957
+"last": 1793271862.732677
 },
 "523652|Sep-26|standalone": {
 "code": "523652",
@@ -3508,7 +3476,7 @@
 "rev": 0.0,
 "pat": 0.1,
 "t": 1793116926.1099358,
-"last": 1793271382.1625957
+"last": 1793271862.732677
 },
 "500120|Sep-26|standalone": {
 "code": "500120",
@@ -3518,7 +3486,7 @@
 "rev": 98.43700000000001,
 "pat": -16.958000000000002,
 "t": 1793174446.2686353,
-"last": 1793271382.1625957
+"last": 1793271862.732677
 },
 "543527|Sep-26|consolidated": {
 "code": "543527",
@@ -3528,7 +3496,7 @@
 "rev": 3887.2980000000007,
 "pat": 716.962,
 "t": 1793176010.7770522,
-"last": 1793271537.5621119
+"last": 1793271862.732677
 },
 "539404|Sep-26|consolidated": {
 "code": "539404",
@@ -4038,6 +4006,16 @@
 "rev": 0.0,
 "pat": -10.351,
 "t": 1793271715.313324,
+"last": 0
+},
+"520021|Sep-26|standalone": {
+"code": "520021",
+"name": "Omax Autos Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1649.361,
+"pat": 116.99700000000001,
+"t": 1793271854.5262449,
 "last": 0
 }
 },
@@ -5597,7 +5575,8 @@
 "37e147d5-f147-4f89-932e-1e077c463112": 1,
 "ff1dde83-8745-458e-8470-e5038f46186e": 1,
 "c668a0b7-f5c8-49dc-a8ae-f7bd8edda9a9": 1,
-"6f1bd7e5-839f-4ab6-926c-1a5c13f63d73": 1
+"6f1bd7e5-839f-4ab6-926c-1a5c13f63d73": 1,
+"46794b1c-fe51-46fc-ae71-bc5b30cc79b7": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -6180,7 +6159,10 @@
 "7664224a-cc44-4631-8954-f458fffa6182": 1,
 "515d67fc-ba4b-42a4-a48f-aa1fb84d9f21": 1,
 "de811568-475a-4f5c-a519-c71a041fea3c": 1,
-"71e72a2e-5bfc-4625-aa46-897f3fce9040": 1
+"71e72a2e-5bfc-4625-aa46-897f3fce9040": 1,
+"13bffaac-5088-46d2-92f8-41f01ec22a64": 1,
+"8fc9bfce-5116-44bc-9910-8f259bc8a553": 1,
+"40ecde45-ad31-4480-8894-570c0f39de16": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
