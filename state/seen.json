@@ -1350,7 +1350,9 @@
 "5bc0cb1c-32b6-4121-ab03-1ada4013557e",
 "56a0e33c-55e2-4c67-92ee-6065cc1e260b",
 "94be0e9e-a33e-4b13-b8ab-4b6dc9acbfb1",
-"3748ebfc-15db-4ebc-ab66-929d79ebac6b"
+"3748ebfc-15db-4ebc-ab66-929d79ebac6b",
+"37427b6c-7aee-4103-bba1-4ba0003e218c",
+"e5dd2fe7-0286-4022-ba30-917dfc672a2f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2218,7 +2220,8 @@
 "532929|Sep-26|consolidated",
 "544781|Sep-26|na",
 "532902|Sep-26|consolidated",
-"543530|Sep-26|consolidated"
+"543530|Sep-26|consolidated",
+"532835|Sep-26|consolidated"
 ],
 "pending": {
 "64dd23da-6e7d-4573-bd46-7fbbf07cce9d": {
@@ -2449,44 +2452,6 @@
 "last": 1793277733.888751,
 "alerted": false
 },
-"e5dd2fe7-0286-4022-ba30-917dfc672a2f": {
-"rec": {
-"NEWSID": "e5dd2fe7-0286-4022-ba30-917dfc672a2f",
-"SCRIP_CD": 532835,
-"XML_NAME": "ANN_532835_E5DD2FE7-0286-4022-BA30-917DFC672A2F",
-"NEWSSUB": "ICRA Ltd - 532835 - Financial Results",
-"DT_TM": "2026-10-29T18:06:36.553",
-"NEWS_DT": "2026-10-29T18:06:36.553",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "502d22a6-6d93-4c24-a1c8-3c1b05a6ac6c.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited financial results (standalone and consolidated) for the second quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/icra-ltd/icra/532835/",
-"SLONGNAME": "ICRA Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-10-29T18:06:36",
-"DissemDT": "2026-10-29T18:06:36.553",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1567443,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793277550.519912,
-"last": 1793277733.888751,
-"alerted": false
-},
 "de803cf5-eab2-4dea-9fb6-bc74b2af82d6": {
 "rec": {
 "NEWSID": "de803cf5-eab2-4dea-9fb6-bc74b2af82d6",
@@ -2565,10 +2530,6 @@
 }
 },
 "lag": [
-[
-"Himadri Speciality Chemical Ltd",
-4
-],
 [
 "Jio Financial Services Ltd",
 1441
@@ -3764,6 +3725,10 @@
 [
 "Paradeep Phosphates Ltd",
 6
+],
+[
+"ICRA Ltd",
+6
 ]
 ],
 "gem_use": {
@@ -4525,6 +4490,16 @@
 "rev": 73640.6,
 "pat": 1210.1000000000001,
 "t": 1793277941.8840325,
+"last": 0
+},
+"532835|Sep-26|consolidated": {
+"code": "532835",
+"name": "ICRA Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1778.564,
+"pat": 524.353,
+"t": 1793277978.3012846,
 "last": 0
 }
 },
@@ -6620,7 +6595,8 @@
 "17fcd0e1-0515-45e6-911f-5d9597502d61": 1,
 "5bc0cb1c-32b6-4121-ab03-1ada4013557e": 1,
 "94be0e9e-a33e-4b13-b8ab-4b6dc9acbfb1": 1,
-"3748ebfc-15db-4ebc-ab66-929d79ebac6b": 1
+"3748ebfc-15db-4ebc-ab66-929d79ebac6b": 1,
+"e5dd2fe7-0286-4022-ba30-917dfc672a2f": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
