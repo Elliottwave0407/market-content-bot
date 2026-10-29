@@ -1278,7 +1278,9 @@
 "c668a0b7-f5c8-49dc-a8ae-f7bd8edda9a9",
 "7664224a-cc44-4631-8954-f458fffa6182",
 "6f1bd7e5-839f-4ab6-926c-1a5c13f63d73",
-"71e72a2e-5bfc-4625-aa46-897f3fce9040"
+"71e72a2e-5bfc-4625-aa46-897f3fce9040",
+"0b6f9818-8f2f-4b0d-816d-ef8c86e89ebf",
+"50f86bdb-bf8d-4dc2-8a07-8c2998ac928e"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2106,7 +2108,8 @@
 "544112|Sep-26|standalone",
 "532809|Sep-26|consolidated",
 "544914|Sep-26|consolidated",
-"544880|Sep-26|consolidated"
+"544880|Sep-26|consolidated",
+"531840|Sep-26|consolidated"
 ],
 "pending": {
 "82ae09e2-2005-4180-bbce-6cf2476376ce": {
@@ -2147,44 +2150,6 @@
 "last": 1793271542.5138044,
 "alerted": true
 },
-"50f86bdb-bf8d-4dc2-8a07-8c2998ac928e": {
-"rec": {
-"NEWSID": "50f86bdb-bf8d-4dc2-8a07-8c2998ac928e",
-"SCRIP_CD": 531840,
-"XML_NAME": "ANN_531840_50F86BDB-BF8D-4DC2-8A07-8C2998AC928E",
-"NEWSSUB": "IEC Education Ltd - 531840 - Unaudited Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-29T16:18:26.84",
-"NEWS_DT": "2026-10-29T16:18:26.84",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "2f0e9c34-7eb7-42dd-b080-b228de5a048e.pdf",
-"MORE": "",
-"HEADLINE": "As per attachment",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/iec-education-ltd/iecedu/531840/",
-"SLONGNAME": "IEC Education Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-10-29T16:18:26",
-"DissemDT": "2026-10-29T16:18:26.84",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5695996,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793270932.0534482,
-"last": 1793271429.5772817,
-"alerted": false
-},
 "b456ce1b-3cec-44e4-97bb-c60eb6b99f83": {
 "rec": {
 "NEWSID": "b456ce1b-3cec-44e4-97bb-c60eb6b99f83",
@@ -2220,7 +2185,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793270984.2987354,
-"last": 1793271429.5772817,
+"last": 1793271542.5138044,
 "alerted": false
 },
 "de811568-475a-4f5c-a519-c71a041fea3c": {
@@ -2258,15 +2223,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793271429.5772817,
-"last": 1793271429.5772817,
+"last": 1793271542.5138044,
 "alerted": false
 }
 },
 "lag": [
-[
-"Angel One Ltd",
-8
-],
 [
 "Sterling and Wilson Renewable Energy Ltd",
 12
@@ -3462,6 +3423,10 @@
 [
 "Firstsource Solutions Ltd",
 1
+],
+[
+"IEC Education Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -3493,7 +3458,7 @@
 "rev": 100.56200000000001,
 "pat": 14.393,
 "t": 1793099840.6654947,
-"last": 1793271335.3116434
+"last": 1793271721.0018303
 },
 "538992|Sep-26|standalone": {
 "code": "538992",
@@ -3503,7 +3468,7 @@
 "rev": 58.40700000000001,
 "pat": 5.13,
 "t": 1793101659.8852098,
-"last": 1793271335.3116434
+"last": 1793271721.0018303
 },
 "500271|Sep-26|consolidated": {
 "code": "500271",
@@ -3513,7 +3478,7 @@
 "rev": 116010.9,
 "pat": 1003.0,
 "t": 1793107307.1216586,
-"last": 1793271335.3116434
+"last": 1793271721.0018303
 },
 "531595|Sep-26|consolidated": {
 "code": "531595",
@@ -3523,7 +3488,7 @@
 "rev": 17855.97,
 "pat": 4183.33,
 "t": 1793114192.8975947,
-"last": 1793271382.1625957
+"last": 1793271721.0018303
 },
 "539894|Sep-26|consolidated": {
 "code": "539894",
@@ -4063,6 +4028,16 @@
 "rev": 2149.87,
 "pat": 139.34,
 "t": 1793271660.9706242,
+"last": 0
+},
+"531840|Sep-26|consolidated": {
+"code": "531840",
+"name": "IEC Education Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 0.0,
+"pat": -10.351,
+"t": 1793271715.313324,
 "last": 0
 }
 },
