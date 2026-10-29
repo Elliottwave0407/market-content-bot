@@ -1185,7 +1185,9 @@
 "43a37b87-19d7-4577-9fc7-6806a4cee371",
 "d082fa95-c8d5-4e35-a756-8382ecd03342",
 "7ba10235-888d-4f4f-bb4e-4a60fd5632a2",
-"3c834b00-fceb-438a-be2b-2453012f0a73"
+"3c834b00-fceb-438a-be2b-2453012f0a73",
+"d4ac9c9c-9ca7-428b-87db-3d979588a35e",
+"20f4a88b-4664-459a-aecf-e56c9e258b72"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -1958,7 +1960,8 @@
 "544020|Sep-26|standalone",
 "523594|Sep-26|standalone",
 "544430|Sep-26|consolidated",
-"535267|Sep-26|consolidated"
+"535267|Sep-26|consolidated",
+"514286|Sep-26|standalone"
 ],
 "pending": {
 "cd542f04-7552-4a38-a1d1-bc0681a5881a": {
@@ -2034,7 +2037,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793259250.4288356,
-"last": 1793260943.3419402,
+"last": 1793261054.0963988,
 "alerted": true
 },
 "d9dd8153-3058-46bb-b2ef-7bdfd71fa35e": {
@@ -2113,44 +2116,6 @@
 "last": 1793260943.3419402,
 "alerted": true
 },
-"20f4a88b-4664-459a-aecf-e56c9e258b72": {
-"rec": {
-"NEWSID": "20f4a88b-4664-459a-aecf-e56c9e258b72",
-"SCRIP_CD": 514286,
-"XML_NAME": "ANN_514286_20F4A88B-4664-459A-AECF-E56C9E258B72",
-"NEWSSUB": "Ashima Ltd - 514286 - Unaudited Financial Results For The Quarter Ended 30.09.2026.",
-"DT_TM": "2026-10-29T13:15:05.977",
-"NEWS_DT": "2026-10-29T13:15:05.977",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "660d7ea6-f362-4373-9519-30cb93b60ef3.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed Unaudited Financial Results For The Quarter Ended 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ashima-ltd/ashimasyn/514286/",
-"SLONGNAME": "Ashima Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 6,
-"News_submission_dt": "2026-10-29T13:15:05",
-"DissemDT": "2026-10-29T13:15:05.977",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10413931,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793259960.8696601,
-"last": 1793260943.3419402,
-"alerted": false
-},
 "ca69f1ab-c31a-4aee-bcdc-8790dbab5b47": {
 "rec": {
 "NEWSID": "ca69f1ab-c31a-4aee-bcdc-8790dbab5b47",
@@ -2188,13 +2153,47 @@
 "first": 1793259960.8696601,
 "last": 1793260943.3419402,
 "alerted": false
+},
+"8177643b-16c6-4afa-bf5d-018b2c237a62": {
+"rec": {
+"NEWSID": "8177643b-16c6-4afa-bf5d-018b2c237a62",
+"SCRIP_CD": 517385,
+"XML_NAME": "ANN_517385_8177643B-16C6-4AFA-BF5D-018B2C237A62",
+"NEWSSUB": "Symphony Ltd - 517385 - Financial Result For The Second Quarter And Half Year Ended On September 30, 2026",
+"DT_TM": "2026-10-29T13:32:14.673",
+"NEWS_DT": "2026-10-29T13:32:14.673",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "c940bf6f-a661-4b6c-b30d-cbbcf41ae604.pdf",
+"MORE": "",
+"HEADLINE": "Financial Result for the Second Quarter and Half Year ended on September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/symphony-ltd/symphony/517385/",
+"SLONGNAME": "Symphony Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 7,
+"News_submission_dt": "2026-10-29T13:32:14",
+"DissemDT": "2026-10-29T13:32:14.673",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1497530,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793261054.0963988,
+"last": 1793261054.0963988,
+"alerted": false
 }
 },
 "lag": [
-[
-"International Travel House Ltd-$",
-7
-],
 [
 "SS Retail Ltd",
 69
@@ -3390,6 +3389,10 @@
 [
 "Comfort Fincap Ltd",
 9
+],
+[
+"Ashima Ltd",
+18
 ]
 ],
 "gem_use": {
@@ -3410,7 +3413,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 8
+"2026-10-29": 15
 },
 "pdfposted": {
 "543237|Sep-26|consolidated": {
@@ -3761,6 +3764,16 @@
 "rev": 45.562000000000005,
 "pat": 18.892,
 "t": 1793261036.2663958,
+"last": 0
+},
+"514286|Sep-26|standalone": {
+"code": "514286",
+"name": "Ashima Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 143.8,
+"pat": -207.5,
+"t": 1793261178.4529195,
 "last": 0
 }
 },
@@ -5300,7 +5313,8 @@
 "2869f03e-b575-4d80-b83e-892cd518408a": 1,
 "619ad32f-2160-453c-9219-fe5f8db9f1ec": 1,
 "d082fa95-c8d5-4e35-a756-8382ecd03342": 1,
-"3c834b00-fceb-438a-be2b-2453012f0a73": 1
+"3c834b00-fceb-438a-be2b-2453012f0a73": 1,
+"20f4a88b-4664-459a-aecf-e56c9e258b72": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -5825,7 +5839,9 @@
 "314fa1c7-030a-420d-be1c-7655e700a9a8": 1,
 "7f533f02-aed1-4496-aae6-61bbbc719218": 1,
 "43a37b87-19d7-4577-9fc7-6806a4cee371": 1,
-"7ba10235-888d-4f4f-bb4e-4a60fd5632a2": 1
+"7ba10235-888d-4f4f-bb4e-4a60fd5632a2": 1,
+"d4ac9c9c-9ca7-428b-87db-3d979588a35e": 1,
+"8177643b-16c6-4afa-bf5d-018b2c237a62": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
