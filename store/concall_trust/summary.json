@@ -1,37 +1,37 @@
 {
- "documents": 7200,
- "facts": 93315,
+ "documents": 7768,
+ "facts": 101331,
  "grades": {
-  "A": 44181,
-  "B": 38342,
-  "C": 10792
+  "A": 49476,
+  "B": 40623,
+  "C": 11232
  },
  "issues": {
-  "realigned": 9064,
-  "stmt_nums": 16306,
-  "value_nums": 546,
-  "question": 1157,
-  "short_quote": 1090,
-  "judge_partial": 79,
-  "no_period": 1731,
-  "judge_no": 6,
+  "realigned": 10197,
+  "no_period": 1874,
+  "short_quote": 1192,
+  "stmt_nums": 17874,
+  "question": 1272,
+  "value_nums": 601,
+  "judge_partial": 85,
+  "judge_no": 7,
   "old_schema": 30063
  },
  "by_reader": {
+  "deepseek-v4.1-flash v2": {
+   "A": 7060,
+   "B": 1516,
+   "C": 245
+  },
   "nemotron-3-ultra-550b-a55b v2": {
-   "A": 17074,
-   "B": 7633,
-   "C": 1361
+   "A": 21651,
+   "B": 9717,
+   "C": 1764
   },
   "mistral:ministral-14b v2": {
-   "A": 20768,
-   "B": 7434,
-   "C": 1113
-  },
-  "deepseek-v4.1-flash v2": {
-   "A": 6339,
-   "B": 1321,
-   "C": 209
+   "A": 20765,
+   "B": 7436,
+   "C": 1114
   },
   "nemotron-3-ultra-550b-a55b v1": {
    "C": 5882,
