@@ -1324,7 +1324,8 @@
 "58a395cc-56a8-45e0-88e7-bd2feb8a1a10",
 "88d951ed-d8e8-4bfa-9e00-364fd676de05",
 "8efa7554-9b41-4fb4-82c1-d5677f1d4217",
-"d8e18955-d0ea-4ead-ae0a-edbbd029f6f1"
+"d8e18955-d0ea-4ead-ae0a-edbbd029f6f1",
+"b07ca22a-d6cb-4943-986d-1c482164c93c"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2180,7 +2181,8 @@
 "544497|Sep-26|consolidated",
 "531210|Sep-26|standalone",
 "503863|Sep-26|standalone",
-"541945|Sep-26|standalone"
+"541945|Sep-26|standalone",
+"532892|Sep-26|consolidated"
 ],
 "pending": {
 "7f7eeec7-7603-4e84-ab89-06b47190055a": {
@@ -2487,44 +2489,6 @@
 "last": 1793275431.1268013,
 "alerted": false
 },
-"b07ca22a-d6cb-4943-986d-1c482164c93c": {
-"rec": {
-"NEWSID": "b07ca22a-d6cb-4943-986d-1c482164c93c",
-"SCRIP_CD": 532892,
-"XML_NAME": "ANN_532892_B07CA22A-D6CB-4943-986D-1C482164C93C",
-"NEWSSUB": "Motilal Oswal Financial Services Ltd - 532892 - Unaudited Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-29T17:23:51.383",
-"NEWS_DT": "2026-10-29T17:23:51.383",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "45ac6e42-51c1-454c-b249-d384af905c1b.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed herewith Unaudited Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/motilal-oswal-financial-services-ltd/motilalofs/532892/",
-"SLONGNAME": "Motilal Oswal Financial Services Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 20,
-"News_submission_dt": "2026-10-29T17:23:51",
-"DissemDT": "2026-10-29T17:23:51.383",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 14620579,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793275032.784826,
-"last": 1793275512.7513478,
-"alerted": false
-},
 "56a0e33c-55e2-4c67-92ee-6065cc1e260b": {
 "rec": {
 "NEWSID": "56a0e33c-55e2-4c67-92ee-6065cc1e260b",
@@ -2641,10 +2605,6 @@
 }
 },
 "lag": [
-[
-"Shreyas Intermediates Ltd",
-1441
-],
 [
 "UCO Bank",
 515
@@ -3840,6 +3800,10 @@
 [
 "Anupam Finserv Ltd",
 47
+],
+[
+"Motilal Oswal Financial Services Ltd",
+11
 ]
 ],
 "gem_use": {
@@ -3860,7 +3824,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 214
+"2026-10-29": 224
 },
 "pdfposted": {
 "500271|Sep-26|consolidated": {
@@ -4531,6 +4495,16 @@
 "rev": 0.0,
 "pat": -0.07500000000000001,
 "t": 1793275627.6033986,
+"last": 0
+},
+"532892|Sep-26|consolidated": {
+"code": "532892",
+"name": "Motilal Oswal Financial Services Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 30416.7,
+"pat": 10813.6,
+"t": 1793275806.0943696,
 "last": 0
 }
 },
@@ -6105,106 +6079,6 @@
 "8efa7554-9b41-4fb4-82c1-d5677f1d4217": 1
 },
 "cons_expected": {
-"c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
-"880e99bc-b13a-435b-901c-3b2bee137437": 1,
-"c889a388-3ab5-40f1-b72e-9e40bfc04db6": 1,
-"55f52e92-e3d1-4ef5-a133-5173b676022c": 1,
-"f3f2e8d2-9c1d-4d6b-83ae-1f083da5756c": 1,
-"69086bb3-3334-4626-8d8b-05d812ccf413": 1,
-"d0efc31b-6df0-47d4-b688-e72928b38435": 1,
-"10340658-d39f-4f08-b696-cc7005775a81": 1,
-"9df9ffed-ccb2-49c7-add4-ccfb61c01fe3": 1,
-"25b609f4-6a41-4781-9107-b6d5acfaa221": 1,
-"8e79c896-5803-4f7e-a939-e6380086a31e": 1,
-"16319784-03cf-4f3a-a11d-139a6dab6064": 1,
-"083526fc-607b-4df1-bdb3-161cda6ccd3d": 1,
-"766cc78b-9949-4d93-93e6-d33fd8220d6a": 1,
-"36acdd0d-e8ab-4de2-b157-f11f1fe081ab": 1,
-"ad4e7c4c-26f0-4dcb-ba6b-b2d1b7a5e6b5": 1,
-"f54ee547-7631-498a-9cda-04165b06d267": 1,
-"758de13a-f657-4669-9ea1-ece70ed65693": 1,
-"718d9981-91b0-4101-9de0-e65b7ec69d86": 1,
-"e8fd5570-fc65-4e1a-9c20-24950bd34ff7": 1,
-"3543caeb-c42d-42b8-b26a-297d6b913b12": 1,
-"65b4a01d-532e-4066-b68c-76783cc5ba18": 1,
-"b72b1d0e-eba3-4fc7-9772-41c634113a62": 1,
-"532331e1-f24f-4bfd-b086-42a2a9420c9a": 1,
-"7b549ecb-60ed-474f-bf41-9a8e8690e9be": 1,
-"e464066a-de5f-488d-a405-d9f7fdb3c518": 1,
-"7e824ec9-9d70-4592-80fd-68d266396948": 1,
-"71576788-cca1-447c-b76c-0ff356879b23": 1,
-"af7953a2-a107-41b3-9d00-77995b2b2971": 1,
-"e6810425-7618-4862-a752-fefda28a9f9b": 1,
-"e588aa40-39a5-45ab-a025-37334a6a5186": 1,
-"c5f40962-c8f2-4077-93d4-c95da0c3c27d": 1,
-"1c1b42c9-0890-4ff8-ae73-4f1616827fb9": 1,
-"11cf0245-5016-449a-8cda-fc51633bf1c4": 1,
-"024bb342-d637-44a7-b190-4ab0e9866fb8": 1,
-"98ffa000-b686-4c15-931b-e6bc09018713": 1,
-"16e37785-f6dc-470d-910f-e9f2968d97e3": 1,
-"d29872f6-c6f8-4ff9-a43e-fb12f9bf7a31": 1,
-"53680c00-2362-41b2-a101-e994da2e3c4a": 1,
-"941f2823-e8f1-4c33-9a7c-3d70911584b3": 1,
-"f8c8f6b3-3759-4137-bef0-0b3ee295e29e": 1,
-"c376a675-722d-4279-a71b-40d1d64c3199": 1,
-"d82ec44e-1789-403c-bb10-c64956f10ef6": 1,
-"58c00f1b-8f9d-4a91-939c-b8a99b9c3277": 1,
-"aba65ae5-34e9-47f3-9056-f17b16befd81": 1,
-"da2f2ad2-e1df-4985-8b36-ed5ea9b536f4": 1,
-"045d7744-de19-495b-87d7-4d2f8459a23e": 1,
-"2871e7ba-96fe-41f0-bc84-79215ff8893e": 1,
-"2186d99b-a22c-47d2-bb8e-dac5f6a23a57": 1,
-"a4c4ca83-e604-4aef-86b3-4798aa93021d": 1,
-"fdcd0dfa-d7e8-427d-8e44-3e2dac053b16": 1,
-"8fd69135-cb60-48d4-ac78-29108c35eb20": 1,
-"1767dd47-8a24-4cbf-ae98-b6cfa976fea1": 1,
-"1257e3a5-6b95-4c0c-8ee8-b2a63906f156": 1,
-"ec29d900-b6b1-4b6f-8f25-91b061275d31": 1,
-"b64e3fbf-c636-46a0-a7e3-36b59ac26685": 1,
-"0023c44c-f425-4f61-8516-9b738e70db04": 1,
-"e5b4fad9-3425-4823-be05-713c14286174": 1,
-"0c5f9a16-8c11-4267-9480-d381fd8f1a7a": 1,
-"e0c7374c-a6d5-4560-b0a4-8b1595522c75": 1,
-"cbc2a58e-afd8-4991-bd4c-f0f5de30074c": 1,
-"a6953830-4ed4-4d4c-bda9-e27677e7aac0": 1,
-"f888ee26-cb6c-42a8-9d15-22d43c986557": 1,
-"9da487e0-0132-4c29-958a-ebd8a6102d2f": 1,
-"75463e0b-971f-44be-a5d6-974650902478": 1,
-"1c7e5728-6599-4b2b-844d-8424558c0ecc": 1,
-"bf7594cc-6e22-4e28-804b-fd06bcee3b32": 1,
-"de732b2d-db10-48ea-99fa-4e9b06b986af": 1,
-"f1e78363-f3de-47be-834d-a3917eaf7947": 1,
-"668f0cbe-e208-49d6-87bd-93bb81f119e4": 1,
-"a533b0c5-9477-4d70-986a-9c304ea2db56": 1,
-"2e97d0c3-f421-4615-b4f6-b69e42e332bd": 1,
-"e7660cc3-55e6-4e54-9b6e-856000cf4b14": 1,
-"b3dc0d0c-3472-4ab0-a227-7a1bed51552f": 1,
-"79b12f2a-71ca-4d46-ba89-3a4c7a664d8f": 1,
-"fdad6512-837f-4388-a5a2-55b5ee928330": 1,
-"bc06900c-49e9-42f5-ba9f-0729f96d3720": 1,
-"89176903-cdce-45c8-8949-e8094b51eedf": 1,
-"67852ff3-3a5b-45bd-871b-e7130b421d55": 1,
-"bfc90c2b-450e-44ca-bcee-f5dd1521f4b4": 1,
-"9cb5838a-d209-4d9a-88fe-c44f2d1128ad": 1,
-"4f43fab8-8509-4b73-a036-8f1267c8a4b0": 1,
-"32c805b9-0986-412a-9c94-44a678fce5c0": 1,
-"7a5928ce-2a5d-48e6-8a2f-4b01fde3c6c5": 1,
-"159cbdf6-1f00-4f61-813d-b5790b5ec432": 1,
-"8b47fb85-babe-48f4-83dc-5f3049827273": 1,
-"d5b192af-7384-42b1-9dac-e57bf6b3639c": 1,
-"16723d74-4ae0-4781-9025-e44b06439822": 1,
-"7b90cf83-6fc4-444a-b018-cc3970bb7572": 1,
-"2f494f3c-4ef6-472b-b442-fc1615847bf9": 1,
-"83f372a6-157f-4eb9-bf98-67e0e3f1b55d": 1,
-"eeae8571-e6a7-4356-b761-0da9fccb6e0e": 1,
-"112b2ea4-38bc-4dcc-adec-612215eac58d": 1,
-"97e48a10-c00c-479f-bcf1-466ac95c5bb8": 1,
-"e7fd26da-bba5-4a35-b9c3-840e77fa85a2": 1,
-"2ece9385-f7bc-4292-9135-4ca4adfe9351": 1,
-"fd6c49ba-7f91-427f-b3cb-b86d800d236d": 1,
-"03a1a0d8-d731-44dd-bd09-82178458082b": 1,
-"fe93712e-0586-44d8-a797-c8152a56f217": 1,
-"d9332976-6251-4dfc-aee2-1e0c361271ce": 1,
 "bf61e75a-b906-4a79-a11a-1d06ae02cf6c": 1,
 "6bf71650-43de-4b99-ac52-410b7952baa0": 1,
 "03028416-3b10-4ce2-8e50-ec5e91daa720": 1,
@@ -6704,7 +6578,8 @@
 "87c6ac4e-858c-4752-ad6a-9ec4ca077c44": 1,
 "f60fe08a-cc2e-4a09-87c4-4cc1cb919506": 1,
 "8ba87330-09d6-43a6-b3f9-7e36055613ca": 1,
-"1203b390-a51a-4c96-b0bc-40ac7eec6026": 1
+"1203b390-a51a-4c96-b0bc-40ac7eec6026": 1,
+"b07ca22a-d6cb-4943-986d-1c482164c93c": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
