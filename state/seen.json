@@ -1273,7 +1273,9 @@
 "e15efa07-1139-46fe-83fa-6849acf27741",
 "293fb88e-bc5a-44d7-b604-56696578932a",
 "68de6246-2659-4a8d-8e83-ea90fd49f290",
-"ff1dde83-8745-458e-8470-e5038f46186e"
+"ff1dde83-8745-458e-8470-e5038f46186e",
+"515d67fc-ba4b-42a4-a48f-aa1fb84d9f21",
+"c668a0b7-f5c8-49dc-a8ae-f7bd8edda9a9"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2096,7 +2098,9 @@
 "500730|Sep-26|consolidated",
 "544868|Sep-26|consolidated",
 "522281|Sep-26|consolidated",
-"530167|Sep-26|standalone"
+"530167|Sep-26|standalone",
+"544782|Sep-26|consolidated",
+"544112|Sep-26|standalone"
 ],
 "pending": {
 "82ae09e2-2005-4180-bbce-6cf2476376ce": {
@@ -2134,7 +2138,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793268878.1643133,
-"last": 1793271233.7149584,
+"last": 1793271339.6742036,
 "alerted": true
 },
 "50f86bdb-bf8d-4dc2-8a07-8c2998ac928e": {
@@ -2172,7 +2176,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793270932.0534482,
-"last": 1793271233.7149584,
+"last": 1793271339.6742036,
 "alerted": false
 },
 "b456ce1b-3cec-44e4-97bb-c60eb6b99f83": {
@@ -2210,7 +2214,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793270984.2987354,
-"last": 1793271233.7149584,
+"last": 1793271339.6742036,
+"alerted": false
+},
+"7664224a-cc44-4631-8954-f458fffa6182": {
+"rec": {
+"NEWSID": "7664224a-cc44-4631-8954-f458fffa6182",
+"SCRIP_CD": 532809,
+"XML_NAME": "ANN_532809_7664224A-CC44-4631-8954-F458FFFA6182",
+"NEWSSUB": "Firstsource Solutions Ltd - 532809 - The Audited Financial Statements For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-10-29T16:24:18.12",
+"NEWS_DT": "2026-10-29T16:24:18.12",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "906bdb1b-9c33-454e-b411-8f4cd03285dd.pdf",
+"MORE": "",
+"HEADLINE": "The Audited Financial statement for the Quarter and half year ended on September 30, 2026 is as enclosed",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/firstsource-solutions-ltd/fsl/532809/",
+"SLONGNAME": "Firstsource Solutions Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 15,
+"News_submission_dt": "2026-10-29T16:24:18",
+"DissemDT": "2026-10-29T16:24:18.12",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1815793,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793271339.6742036,
+"last": 1793271339.6742036,
 "alerted": false
 }
 },
@@ -3434,7 +3476,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 158
+"2026-10-29": 160
 },
 "pdfposted": {
 "540168|Sep-26|standalone": {
@@ -3485,7 +3527,7 @@
 "rev": 17855.97,
 "pat": 4183.33,
 "t": 1793114192.8975947,
-"last": 1793271047.6668632
+"last": 1793271382.1625957
 },
 "539894|Sep-26|consolidated": {
 "code": "539894",
@@ -3495,7 +3537,7 @@
 "rev": 1333.5040000000001,
 "pat": 36.958999999999996,
 "t": 1793115530.9801414,
-"last": 1793271047.6668632
+"last": 1793271382.1625957
 },
 "523652|Sep-26|standalone": {
 "code": "523652",
@@ -3505,7 +3547,7 @@
 "rev": 0.0,
 "pat": 0.1,
 "t": 1793116926.1099358,
-"last": 1793271047.6668632
+"last": 1793271382.1625957
 },
 "500120|Sep-26|standalone": {
 "code": "500120",
@@ -3515,7 +3557,7 @@
 "rev": 98.43700000000001,
 "pat": -16.958000000000002,
 "t": 1793174446.2686353,
-"last": 1793271047.6668632
+"last": 1793271382.1625957
 },
 "543527|Sep-26|consolidated": {
 "code": "543527",
@@ -3985,6 +4027,26 @@
 "rev": 30.643,
 "pat": 4.889,
 "t": 1793271329.1901772,
+"last": 0
+},
+"544782|Sep-26|consolidated": {
+"code": "544782",
+"name": "Vedanta Oil and Gas Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 24880.0,
+"pat": 7460.0,
+"t": 1793271363.661936,
+"last": 0
+},
+"544112|Sep-26|standalone": {
+"code": "544112",
+"name": "Jasch Gauging Technologies Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 169.19500000000002,
+"pat": 45.557,
+"t": 1793271370.742306,
 "last": 0
 }
 },
@@ -5542,7 +5604,8 @@
 "2071aec5-7000-4456-b3b0-1f9258c02d61": 1,
 "d7b30ef5-6df8-4867-8d8f-440b1016d5e7": 1,
 "37e147d5-f147-4f89-932e-1e077c463112": 1,
-"ff1dde83-8745-458e-8470-e5038f46186e": 1
+"ff1dde83-8745-458e-8470-e5038f46186e": 1,
+"c668a0b7-f5c8-49dc-a8ae-f7bd8edda9a9": 1
 },
 "cons_expected": {
 "c087f40b-6b18-4cb6-bcb2-cc9bcf7be2a3": 1,
@@ -6121,7 +6184,9 @@
 "dfad6f23-894e-45ea-bf32-c7333071329b": 1,
 "b456ce1b-3cec-44e4-97bb-c60eb6b99f83": 1,
 "e15efa07-1139-46fe-83fa-6849acf27741": 1,
-"293fb88e-bc5a-44d7-b604-56696578932a": 1
+"293fb88e-bc5a-44d7-b604-56696578932a": 1,
+"7664224a-cc44-4631-8954-f458fffa6182": 1,
+"515d67fc-ba4b-42a4-a48f-aa1fb84d9f21": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
