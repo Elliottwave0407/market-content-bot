@@ -1313,7 +1313,9 @@
 "9ee40a35-3c86-41bd-b7cc-773e548befa5",
 "1ca41d77-7016-4226-a76e-0f51b825d3d0",
 "f17229b4-a988-47dd-b3d5-1884aaee4cdd",
-"6c71c83c-9b8f-45cf-aad3-9b4291b22238"
+"6c71c83c-9b8f-45cf-aad3-9b4291b22238",
+"a555b2f8-7e13-4203-9252-f0b0844585bd",
+"f60fe08a-cc2e-4a09-87c4-4cc1cb919506"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2161,7 +2163,8 @@
 "541336|Sep-26|na",
 "526921|Sep-26|consolidated",
 "544585|Sep-26|standalone",
-"543232|Sep-26|consolidated"
+"543232|Sep-26|consolidated",
+"543248|Sep-26|consolidated"
 ],
 "pending": {
 "1848cd22-9394-4ee7-9a4d-6bbed53c64cd": {
@@ -2313,8 +2316,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793273469.0539684,
-"last": 1793274667.7363665,
-"alerted": false
+"last": 1793274811.2350538,
+"alerted": true
 },
 "6da88315-b633-4649-9688-7ebded752a81": {
 "rec": {
@@ -2427,44 +2430,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793273805.1762617,
-"last": 1793274667.7363665,
-"alerted": false
-},
-"f60fe08a-cc2e-4a09-87c4-4cc1cb919506": {
-"rec": {
-"NEWSID": "f60fe08a-cc2e-4a09-87c4-4cc1cb919506",
-"SCRIP_CD": 543248,
-"XML_NAME": "ANN_543248_F60FE08A-CC2E-4A09-87C4-4CC1CB919506",
-"NEWSSUB": "Restaurant Brands Asia Ltd - 543248 - Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-29T17:11:03.25",
-"NEWS_DT": "2026-10-29T17:11:03.25",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "2b48d0c0-adfa-42b2-8ddb-d31320c9b0cb.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/restaurant-brands-asia-ltd/rba/543248/",
-"SLONGNAME": "Restaurant Brands Asia Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 19,
-"News_submission_dt": "2026-10-29T17:11:03",
-"DissemDT": "2026-10-29T17:11:03.25",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 14016591,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793274189.1957068,
 "last": 1793274667.7363665,
 "alerted": false
 },
@@ -2622,10 +2587,6 @@
 }
 },
 "lag": [
-[
-"Indus Finance Ltd",
-1441
-],
 [
 "Avenique Ltd",
 34
@@ -3821,6 +3782,10 @@
 [
 "Indostar Capital Finance Ltd",
 47
+],
+[
+"Restaurant Brands Asia Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -3841,7 +3806,7 @@
 "2026-10-26": 213,
 "2026-10-27": 421,
 "2026-10-28": 378,
-"2026-10-29": 209
+"2026-10-29": 214
 },
 "pdfposted": {
 "500271|Sep-26|consolidated": {
@@ -4472,6 +4437,16 @@
 "rev": 164.055,
 "pat": 42.43000000000001,
 "t": 1793274570.0580344,
+"last": 0
+},
+"543248|Sep-26|consolidated": {
+"code": "543248",
+"name": "Restaurant Brands Asia Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 8448.47,
+"pat": -237.91,
+"t": 1793274868.3395085,
 "last": 0
 }
 },
@@ -6640,7 +6615,8 @@
 "50df5f69-8c6f-4ba7-b776-5cbaba04a59f": 1,
 "5ce8ab50-6037-410b-afa0-630c15141a01": 1,
 "7f7eeec7-7603-4e84-ab89-06b47190055a": 1,
-"87c6ac4e-858c-4752-ad6a-9ec4ca077c44": 1
+"87c6ac4e-858c-4752-ad6a-9ec4ca077c44": 1,
+"f60fe08a-cc2e-4a09-87c4-4cc1cb919506": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
