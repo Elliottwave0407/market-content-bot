@@ -6,7 +6,7 @@ rows = []
 for f in glob.glob("store/concall_facts/*.jsonl"):
     for l in open(f):
         r = json.loads(l)
-        if r.get("skip") == "short_or_scanned" and r.get("words", 0) < 250: rows.append(r)
+        if r.get("skip") == "short_or_scanned" and r.get("words", 0) >= int(os.environ.get("MINW") or "0") and r.get("words", 0) < int(os.environ.get("MAXW") or "250"): rows.append(r)
 random.seed(7); random.shuffle(rows)
 hdr = {"User-Agent": "Mozilla/5.0", "Referer": "https://www.bseindia.com/"}
 tot_pages = tot_words = ok = 0

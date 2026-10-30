@@ -20,4 +20,6 @@ jobs:
       - run: pip install requests
       - env:
           N: ${{ github.event.inputs.n || '8' }}
+          MINW: "250"
+          MAXW: "1500"
         run: python scripts/probe_ocr.py
