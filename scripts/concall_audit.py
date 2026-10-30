@@ -21,7 +21,7 @@ def nums(s): return {n.replace(",", "").rstrip(".") for n in NUM.findall(s or ""
 
 def group(r):
     m = str(r.get("model", "?")).split("/")[-1].replace("-latest", "")
-    return f"{m} v{r.get('v', 1)}"
+    return f"{m} v{r.get('v', 1)}" + (" re-read" if r.get("reread") else "")
 
 recs = []
 for f in sorted(glob.glob(os.path.join(CE.store.ROOT, "concall_facts", "20*.jsonl"))):
@@ -106,7 +106,7 @@ by_g = collections.defaultdict(list)
 for r in recs: by_g[group(r)].append(r)
 judged = []
 NOCTX = collections.Counter()
-for g, rs in sorted(by_g.items(), key=lambda x: -len(x[1])):
+for g, rs in sorted(by_g.items(), key=lambda x: (0 if "re-read" in x[0] else 1, -len(x[1]))):   # re-read records are judged first
     if len(rs) < 20: continue
     rs = [r for r in rs if r["key"] + "|" + g not in DONE]
     rnd.shuffle(rs); picked = []
