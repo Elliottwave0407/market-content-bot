@@ -1,0 +1,787 @@
+{
+ "summary": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "docs": 16,
+   "sec_per_doc": 85,
+   "chunk_fails": "3/18",
+   "facts_per_doc": 20.1,
+   "verified_of_raw": 0.88,
+   "struct_A": 0.67,
+   "judged": 148,
+   "yes": 0.74,
+   "partial": 0.25,
+   "no": 0.01,
+   "analyst": 0.0,
+   "numbers_vs_union": 1.0,
+   "notes": {
+    "http429": 5
+   }
+  },
+  "deepseek-ai/deepseek-v4.1-flash": {
+   "docs": 16,
+   "sec_per_doc": 302,
+   "chunk_fails": "18/18",
+   "facts_per_doc": 0.0,
+   "verified_of_raw": 0.0,
+   "struct_A": 0.0,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.0,
+   "notes": {
+    "timeout": 3,
+    "http429": 13
+   }
+  },
+  "moonshotai/kimi-k2.6": {
+   "docs": 16,
+   "sec_per_doc": 0,
+   "chunk_fails": "18/18",
+   "facts_per_doc": 0.0,
+   "verified_of_raw": 0.0,
+   "struct_A": 0.0,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.0,
+   "notes": {
+    "http404": 16
+   }
+  },
+  "mistralai/mistral-large-4-1t-a52b": {
+   "docs": 16,
+   "sec_per_doc": 495,
+   "chunk_fails": "16/11",
+   "facts_per_doc": 0.0,
+   "verified_of_raw": 0.0,
+   "struct_A": 0.0,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.0,
+   "notes": {
+    "timeout": 11,
+    "exc": 5
+   }
+  }
+ },
+ "per_doc": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "532814|2026-10-21": {
+    "n_raw": 37,
+    "n_ok": 36,
+    "secs": 75.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540749|2026-08-05": {
+    "n_raw": 27,
+    "n_ok": 26,
+    "secs": 84.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544467|2026-08-05": {
+    "n_raw": 24,
+    "n_ok": 15,
+    "secs": 91.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "533344|2026-08-03": {
+    "n_raw": 10,
+    "n_ok": 9,
+    "secs": 21.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "514211|2026-08-11": {
+    "n_raw": 26,
+    "n_ok": 22,
+    "secs": 125.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "542812|2026-08-19": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.7,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544244|2026-08-11": {
+    "n_raw": 28,
+    "n_ok": 28,
+    "secs": 44.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532286|2026-10-30": {
+    "n_raw": 25,
+    "n_ok": 11,
+    "secs": 94.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "540699|2026-08-05": {
+    "n_raw": 29,
+    "n_ok": 28,
+    "secs": 78.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544095|2026-08-18": {
+    "n_raw": 20,
+    "n_ok": 19,
+    "secs": 62.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "500215|2026-08-10": {
+    "n_raw": 30,
+    "n_ok": 25,
+    "secs": 167.5,
+    "chunks": 2,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532875|2026-08-13": {
+    "n_raw": 15,
+    "n_ok": 13,
+    "secs": 49.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "539056|2026-08-17": {
+    "n_raw": 27,
+    "n_ok": 27,
+    "secs": 70.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544814|2026-08-13": {
+    "n_raw": 17,
+    "n_ok": 17,
+    "secs": 79.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "524332|2026-08-18": {
+    "n_raw": 26,
+    "n_ok": 21,
+    "secs": 45.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540376|2026-08-04": {
+    "n_raw": 25,
+    "n_ok": 25,
+    "secs": 186.1,
+    "chunks": 2,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   }
+  },
+  "deepseek-ai/deepseek-v4.1-flash": {
+   "532814|2026-10-21": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "540749|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.4,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "544467|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "533344|2026-08-03": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 525.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "514211|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 525.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "542812|2026-08-19": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 525.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544244|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532286|2026-10-30": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.8,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "540699|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.8,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544095|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "500215|2026-08-10": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 181.1,
+    "chunks": 2,
+    "fails": 2,
+    "notes": {
+     "http429": 2
+    }
+   },
+   "532875|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "539056|2026-08-17": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544814|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "524332|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 90.4,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "540376|2026-08-04": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 181.3,
+    "chunks": 2,
+    "fails": 2,
+    "notes": {
+     "http429": 2
+    }
+   }
+  },
+  "moonshotai/kimi-k2.6": {
+   "532814|2026-10-21": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "540749|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "544467|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "533344|2026-08-03": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "514211|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "542812|2026-08-19": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "544244|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "532286|2026-10-30": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "540699|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "544095|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "500215|2026-08-10": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.3,
+    "chunks": 2,
+    "fails": 2,
+    "notes": {
+     "http404": 2
+    }
+   },
+   "532875|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "539056|2026-08-17": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "544814|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "524332|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.2,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404": 1
+    }
+   },
+   "540376|2026-08-04": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.3,
+    "chunks": 2,
+    "fails": 2,
+    "notes": {
+     "http404": 2
+    }
+   }
+  },
+  "mistralai/mistral-large-4-1t-a52b": {
+   "532814|2026-10-21": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "540749|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "544467|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "533344|2026-08-03": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "514211|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "542812|2026-08-19": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "544244|2026-08-11": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "532286|2026-10-30": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "540699|2026-08-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "544095|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.5,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "500215|2026-08-10": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 1,
+    "notes": {
+     "exc": 1
+    }
+   },
+   "532875|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 720.6,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "timeout": 1
+    }
+   },
+   "539056|2026-08-17": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 1,
+    "notes": {
+     "exc": 1
+    }
+   },
+   "544814|2026-08-13": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 1,
+    "notes": {
+     "exc": 1
+    }
+   },
+   "524332|2026-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 1,
+    "notes": {
+     "exc": 1
+    }
+   },
+   "540376|2026-08-04": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 1,
+    "notes": {
+     "exc": 1
+    }
+   }
+  },
+  "nvidia/nemotron-3-super-120b-a12b": {},
+  "z-ai/glm-5.3-flash": {},
+  "minimaxai/minimax-m3.1-flash": {}
+ },
+ "docs": [
+  {
+   "key": "532814|2026-10-21",
+   "name": "Indian Bank",
+   "day": "2026-10-21"
+  },
+  {
+   "key": "540749|2026-08-05",
+   "name": "MAS Financial Services Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "544467|2026-08-05",
+   "name": "National Securities Depository Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "533344|2026-08-03",
+   "name": "PTC India Financial Services Ltd",
+   "day": "2026-08-03"
+  },
+  {
+   "key": "514211|2026-08-11",
+   "name": "Sumeet Industries Ltd-$",
+   "day": "2026-08-11"
+  },
+  {
+   "key": "542812|2026-08-19",
+   "name": "Gujarat Fluorochemicals Ltd",
+   "day": "2026-08-19"
+  },
+  {
+   "key": "544244|2026-08-11",
+   "name": "Gala Precision Engineering Ltd",
+   "day": "2026-08-11"
+  },
+  {
+   "key": "532286|2026-10-30",
+   "name": "Jindal Steel Ltd",
+   "day": "2026-10-30"
+  },
+  {
+   "key": "540699|2026-08-05",
+   "name": "Dixon Technologies (India) Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "544095|2026-08-18",
+   "name": "EPACK Durable Ltd",
+   "day": "2026-08-18"
+  },
+  {
+   "key": "500215|2026-08-10",
+   "name": "Sundrop Brands Ltd",
+   "day": "2026-08-10"
+  },
+  {
+   "key": "532875|2026-08-13",
+   "name": "Allied Digital Services Ltd",
+   "day": "2026-08-13"
+  },
+  {
+   "key": "539056|2026-08-17",
+   "name": "Imagicaaworld Entertainment Ltd",
+   "day": "2026-08-17"
+  },
+  {
+   "key": "544814|2026-08-13",
+   "name": "Knack Packaging Ltd",
+   "day": "2026-08-13"
+  },
+  {
+   "key": "524332|2026-08-18",
+   "name": "BCL Industries Ltd-$",
+   "day": "2026-08-18"
+  },
+  {
+   "key": "540376|2026-08-04",
+   "name": "Avenue Supermarts Ltd",
+   "day": "2026-08-04"
+  }
+ ]
+}
