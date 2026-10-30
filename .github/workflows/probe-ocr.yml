@@ -1,0 +1,23 @@
+name: probe-ocr
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "documents"
+        default: "8"
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr poppler-utils
+      - run: pip install requests
+      - env:
+          N: ${{ github.event.inputs.n || '8' }}
+        run: python scripts/probe_ocr.py
