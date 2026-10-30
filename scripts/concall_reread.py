@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import concall_extract as CE
 from ci_out import p, publish
 RD = os.path.join(CE.store.ROOT, "concall_reread"); os.makedirs(RD, exist_ok=True)
-DONE_F = os.path.join(RD, "_done.json"); LOG_F = os.path.join(RD, "log.jsonl"); STATE_F = os.path.join(RD, "_state.json")
+DONE_F = os.path.join(RD, "_done_dry.json" if os.environ.get("DRY", "") == "1" else "_done.json"); LOG_F = os.path.join(RD, "log.jsonl"); STATE_F = os.path.join(RD, "_state.json")
 DRY = os.environ.get("DRY", "") == "1"
 BIG = float(os.environ.get("BIG_MCAP", "5000"))
 LOCK = threading.Lock()
@@ -72,7 +72,7 @@ def main():
                 with LOCK:
                     handled.add(r["key"])
                     with open(LOG_F, "a") as lf:
-                        lf.write(json.dumps({"key": r["key"], "act": "replace" if acc else "keep", "old": r.get("n_ok"), "new": new["n_ok"], "m": new["model"], "dry": DRY}) + "\n")
+                        lf.write(json.dumps({"t": datetime.now(CE.IST).strftime("%m-%d %H:%M"), "key": r["key"], "act": "replace" if acc else "keep", "old": r.get("n_ok"), "new": new["n_ok"], "m": new["model"], "dry": DRY}) + "\n")
                     if acc:
                         stats["replaced"] += 1
                         if not DRY:
