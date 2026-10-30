@@ -1621,7 +1621,9 @@
 "69c1f775-ae68-4627-8801-21012fc2671f",
 "b95c4cf2-69c5-4279-bf2f-02d4cb3c268e",
 "e8b8ea11-2e2b-47d0-8de6-b3f4768b3e4d",
-"0213ccf9-742f-4055-a0a2-4f8ccf78a80f"
+"0213ccf9-742f-4055-a0a2-4f8ccf78a80f",
+"db5b516a-a9ee-40a2-9189-253211311ef2",
+"2c3f5ef7-43a0-4c49-bd90-b2cec7c897c4"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2650,7 +2652,9 @@
 "541418|Sep-26|standalone",
 "542231|Sep-26|consolidated",
 "514030|Sep-26|standalone",
-"505509|Sep-26|consolidated"
+"505509|Sep-26|consolidated",
+"506532|Sep-26|consolidated",
+"519463|Sep-26|standalone"
 ],
 "pending": {
 "437e48f1-fcd8-4cf2-861a-534a93472a24": {
@@ -2688,7 +2692,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793358314.3898947,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
 "alerted": true
 },
 "fe21688f-8c8e-456b-8d87-b869aca6b7e1": {
@@ -2764,7 +2768,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793358983.1229153,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
 "alerted": false
 },
 "0daf9bfc-6e6a-444b-8a58-e8c0ff8c1568": {
@@ -2802,7 +2806,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793359542.3523064,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
 "alerted": false
 },
 "66976174-c422-45a8-bf48-27daa3e0fee3": {
@@ -2840,7 +2844,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793359896.3493905,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
 "alerted": false
 },
 "45b4d931-df0f-404d-b1db-4fd25646b347": {
@@ -2878,7 +2882,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793359988.2128906,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
 "alerted": false
 },
 "6fe0df62-7cba-4eff-8900-58cb22ecc58c": {
@@ -2916,7 +2920,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793360167.9430773,
-"last": 1793360339.2204034,
+"last": 1793360515.894076,
+"alerted": false
+},
+"33676187-5077-4bbd-a9de-fc8729944246": {
+"rec": {
+"NEWSID": "33676187-5077-4bbd-a9de-fc8729944246",
+"SCRIP_CD": 538422,
+"XML_NAME": "ANN_538422_33676187-5077-4BBD-A9DE-FC8729944246",
+"NEWSSUB": "Jackson Investments Ltd - 538422 - Results - Unaudited Financial Results For QE Sept 30, 2026",
+"DT_TM": "2026-10-30T17:09:37.6",
+"NEWS_DT": "2026-10-30T17:09:37.6",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "2dfb711c-333f-4880-a355-35e6d2be4514.pdf",
+"MORE": "",
+"HEADLINE": "Please find attached unaudited Financial Results for QE/HYE Sept 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/jackson-investments-ltd/jackson/538422/",
+"SLONGNAME": "Jackson Investments Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 20,
+"News_submission_dt": "2026-10-30T17:09:37",
+"DissemDT": "2026-10-30T17:09:37.6",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 2860582,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793360515.894076,
+"last": 1793360515.894076,
 "alerted": false
 }
 },
@@ -4141,19 +4183,9 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 309
+"2026-10-30": 315
 },
 "pdfposted": {
-"512267|Sep-26|consolidated": {
-"code": "512267",
-"name": "Media Matrix Worldwide Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 6660.133000000001,
-"pat": 46.409,
-"t": 1793187826.170216,
-"last": 1793360325.5792527
-},
 "542773|Sep-26|consolidated": {
 "code": "542773",
 "name": "IIFL Capital Services Ltd",
@@ -4162,7 +4194,7 @@
 "rev": 7144.008000000001,
 "pat": 1266.121,
 "t": 1793191035.2583532,
-"last": 1793360325.5792527
+"last": 1793360645.7368903
 },
 "544186|Sep-26|standalone": {
 "code": "544186",
@@ -4172,7 +4204,7 @@
 "rev": 722.2,
 "pat": 79.2,
 "t": 1793192166.2209988,
-"last": 1793360325.5792527
+"last": 1793360645.7368903
 },
 "531950|Sep-26|consolidated": {
 "code": "531950",
@@ -4222,7 +4254,7 @@
 "rev": 190.22400000000002,
 "pat": 0.542,
 "t": 1793196295.036447,
-"last": 1793359892.0702555
+"last": 1793360645.7368903
 },
 "540268|Sep-26|consolidated": {
 "code": "540268",
@@ -4232,7 +4264,7 @@
 "rev": 122.59800000000001,
 "pat": -115.66400000000002,
 "t": 1793203808.7669156,
-"last": 1793359892.0702555
+"last": 1793360645.7368903
 },
 "540268|Sep-26|standalone": {
 "code": "540268",
@@ -4822,6 +4854,26 @@
 "rev": 1693.8000000000002,
 "pat": 44.0,
 "t": 1793360488.3896828,
+"last": 0
+},
+"506532|Sep-26|consolidated": {
+"code": "506532",
+"name": "Nitta Gelatin India Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 1688.1770000000001,
+"pat": 361.357,
+"t": 1793360623.5163422,
+"last": 0
+},
+"519463|Sep-26|standalone": {
+"code": "519463",
+"name": "IB Infotech Enterprises Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 15.649000000000001,
+"pat": 4.378,
+"t": 1793360633.985045,
 "last": 0
 }
 },
@@ -6495,7 +6547,8 @@
 "f04aec5e-d447-42c0-a16f-c472a8aef45f": 1,
 "3824570e-7624-4f46-a455-b00a216f1ab0": 1,
 "e8b8ea11-2e2b-47d0-8de6-b3f4768b3e4d": 1,
-"0213ccf9-742f-4055-a0a2-4f8ccf78a80f": 1
+"0213ccf9-742f-4055-a0a2-4f8ccf78a80f": 1,
+"2c3f5ef7-43a0-4c49-bd90-b2cec7c897c4": 1
 },
 "cons_expected": {
 "41cf0460-71d3-4b7c-a9b5-daa9c49634a5": 1,
@@ -7023,7 +7076,8 @@
 "70754463-cf7e-46d2-afc6-c54969ead423": 1,
 "23c87dd6-fa3a-448d-a641-aacc1c5f3b9c": 1,
 "6fe0df62-7cba-4eff-8900-58cb22ecc58c": 1,
-"69c1f775-ae68-4627-8801-21012fc2671f": 1
+"69c1f775-ae68-4627-8801-21012fc2671f": 1,
+"db5b516a-a9ee-40a2-9189-253211311ef2": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
