@@ -1722,7 +1722,10 @@
 "39e58744-6e5c-401f-9a63-4c2996c6e934",
 "4f007e7f-0425-48b1-8b99-1b7a87555e78",
 "49580aac-4ee0-4e72-a2a8-dede4b3d6ac6",
-"122b5750-4575-4634-8076-50dff985043f"
+"122b5750-4575-4634-8076-50dff985043f",
+"be9f6af2-04d7-42b6-98e5-0abfe3f11dd7",
+"82095b9d-bf28-4e22-9061-246849b8adbc",
+"d47dd3c9-cfe1-4ca1-8dc1-95ce15a3a1a1"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2816,7 +2819,9 @@
 "503100|Sep-26|consolidated",
 "511710|Sep-26|na",
 "531268|Sep-26|consolidated",
-"531968|Sep-26|na"
+"531968|Sep-26|na",
+"543490|Sep-26|na",
+"544531|Sep-26|na"
 ],
 "pending": {
 "19e6b9d6-ac05-4e2c-8df3-0e44023d8c9a": {
@@ -2856,82 +2861,6 @@
 "first": 1793363416.1722977,
 "last": 1793368662.6594756,
 "alerted": false
-},
-"82095b9d-bf28-4e22-9061-246849b8adbc": {
-"rec": {
-"NEWSID": "82095b9d-bf28-4e22-9061-246849b8adbc",
-"SCRIP_CD": 543490,
-"XML_NAME": "ANN_543490_82095B9D-BF28-4E22-9061-246849B8ADBC",
-"NEWSSUB": "GMR Power and Urban Infra Ltd - 543490 - Unaudited Financial Results (Standalone And Consolidated) For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-30T18:45:13.737",
-"NEWS_DT": "2026-10-30T18:45:13.737",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "86f7e41d-1345-481e-851a-e7cdac50e148.pdf",
-"MORE": "",
-"HEADLINE": "Approval of Unaudited Financial results (Standalone and Consolidated) for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/gmr-power-and-urban-infra-ltd/gmrpui/543490/",
-"SLONGNAME": "GMR Power and Urban Infra Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 29,
-"News_submission_dt": "2026-10-30T18:45:13",
-"DissemDT": "2026-10-30T18:45:13.737",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 19251352,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793366222.7291722,
-"last": 1793368662.6594756,
-"alerted": true
-},
-"d47dd3c9-cfe1-4ca1-8dc1-95ce15a3a1a1": {
-"rec": {
-"NEWSID": "d47dd3c9-cfe1-4ca1-8dc1-95ce15a3a1a1",
-"SCRIP_CD": 544531,
-"XML_NAME": "ANN_544531_D47DD3C9-CFE1-4CA1-8DC1-95CE15A3A1A1",
-"NEWSSUB": "True Colors Ltd - 544531 - Results- Financial Result For September 30, 2026",
-"DT_TM": "2026-10-30T18:45:04.637",
-"NEWS_DT": "2026-10-30T18:45:04.637",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "88d71ee9-47dd-4dbb-8413-8c1ecdf2ff88.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the half year ended on September 30, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/true-colors-ltd/truecolors/544531/",
-"SLONGNAME": "True Colors Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 29,
-"News_submission_dt": "2026-10-30T18:45:04",
-"DissemDT": "2026-10-30T18:45:04.637",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4315682,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793366222.7291722,
-"last": 1793368662.6594756,
-"alerted": true
 },
 "14e2c48b-c0da-4668-aad4-034fd757c7d6": {
 "rec": {
@@ -3158,8 +3087,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793367668.3105624,
-"last": 1793368662.6594756,
-"alerted": false
+"last": 1793369101.8001282,
+"alerted": true
 },
 "23e9805d-90c2-407d-a543-cb7ebd94a683": {
 "rec": {
@@ -3353,14 +3282,6 @@
 }
 },
 "lag": [
-[
-"Leading Leasing Finance And Investment Company Ltd",
-1023
-],
-[
-"Purple Finance Ltd",
-1080
-],
 [
 "Sterlite Technologies Ltd",
 107
@@ -4552,6 +4473,14 @@
 [
 "IITL Projects Ltd",
 47
+],
+[
+"GMR Power and Urban Infra Ltd",
+48
+],
+[
+"True Colors Ltd",
+48
 ]
 ],
 "gem_use": {
@@ -4573,7 +4502,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 406
+"2026-10-30": 409
 },
 "pdfposted": {
 "540268|Sep-26|consolidated": {
@@ -7664,7 +7593,8 @@
 "6b6784c2-d3f3-4cd2-807c-f936132420a2": 1,
 "e0cbfe87-d450-4f7b-9fe1-7c7d3950ed41": 1,
 "1d92760b-605c-4dbc-9930-602c74351f1c": 1,
-"39e58744-6e5c-401f-9a63-4c2996c6e934": 1
+"39e58744-6e5c-401f-9a63-4c2996c6e934": 1,
+"be9f6af2-04d7-42b6-98e5-0abfe3f11dd7": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
