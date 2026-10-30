@@ -1496,7 +1496,8 @@
 "2106ba8f-e4e9-4f53-a229-ddbb261c6c1f",
 "e8f4cd04-92b0-4e9b-ae18-fd48100be19f",
 "966197f7-d17b-44e1-b66a-77e19e9020a3",
-"b923703e-a3e6-42f2-961f-64a49ba14f0c"
+"b923703e-a3e6-42f2-961f-64a49ba14f0c",
+"24f63dae-58de-4932-b207-43f9b9c4d872"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2455,7 +2456,8 @@
 "543782|Sep-26|consolidated",
 "544577|Sep-26|consolidated",
 "532656|Sep-26|standalone",
-"523586|Sep-26|standalone"
+"523586|Sep-26|standalone",
+"538562|Sep-26|consolidated"
 ],
 "pending": {
 "a6a611a7-0c39-41d6-b5cd-286afb9a4b41": {
@@ -2556,7 +2558,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/aditya-birla-capital-ltd/abcapital/540691/",
 "SLONGNAME": "Aditya Birla Capital Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 9,
+"TotalPageCnt": 10,
 "News_submission_dt": "2026-10-30T13:54:38",
 "DissemDT": "2026-10-30T13:54:38.233",
 "TimeDiff": "00:00:00",
@@ -2569,7 +2571,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793348721.512229,
-"last": 1793350252.416982,
+"last": 1793350352.831607,
 "alerted": true
 },
 "5fb5d89f-0957-4166-9bcd-65ad77446598": {
@@ -2610,44 +2612,6 @@
 "last": 1793350263.9957879,
 "alerted": false
 },
-"24f63dae-58de-4932-b207-43f9b9c4d872": {
-"rec": {
-"NEWSID": "24f63dae-58de-4932-b207-43f9b9c4d872",
-"SCRIP_CD": 538562,
-"XML_NAME": "ANN_538562_24F63DAE-58DE-4932-B207-43F9B9C4D872",
-"NEWSSUB": "Skipper Ltd - 538562 - Results For Quarter Ended 30.09.2026",
-"DT_TM": "2026-10-30T14:08:55.373",
-"NEWS_DT": "2026-10-30T14:08:55.373",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "42466d1f-d583-4b3d-af5c-ee73a8b8847f.pdf",
-"MORE": "",
-"HEADLINE": "Results",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/skipper-ltd/skipper/538562/",
-"SLONGNAME": "Skipper Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-10-30T14:08:55",
-"DissemDT": "2026-10-30T14:08:55.373",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4524418,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793349590.9482694,
-"last": 1793350263.9957879,
-"alerted": false
-},
 "7bbcaf67-e404-4ffb-b7fd-07ff385fdb0a": {
 "rec": {
 "NEWSID": "7bbcaf67-e404-4ffb-b7fd-07ff385fdb0a",
@@ -2683,7 +2647,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793349930.2997756,
-"last": 1793350263.9957879,
+"last": 1793350352.831607,
 "alerted": false
 },
 "86881a12-6b64-4b16-826f-af0a6bcf5091": {
@@ -2726,10 +2690,6 @@
 }
 },
 "lag": [
-[
-"Piramal Finance Ltd",
-1441
-],
 [
 "Modern Steels Ltd-$",
 1440
@@ -3925,6 +3885,10 @@
 [
 "Ucal  Ltd",
 25
+],
+[
+"Skipper Ltd",
+13
 ]
 ],
 "gem_use": {
@@ -3946,7 +3910,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 72
+"2026-10-30": 74
 },
 "pdfposted": {
 "539404|Sep-26|consolidated": {
@@ -4418,6 +4382,16 @@
 "pat": 55.778,
 "t": 1793350123.8857527,
 "last": 1793350178.0578036
+},
+"538562|Sep-26|consolidated": {
+"code": "538562",
+"name": "Skipper Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 13839.76,
+"pat": 580.44,
+"t": 1793350374.7852437,
+"last": 0
 }
 },
 "audit": [
