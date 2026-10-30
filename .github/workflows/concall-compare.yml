@@ -1,0 +1,44 @@
+name: concall-compare
+on:
+  workflow_dispatch:
+    inputs:
+      models:
+        description: "comma list of NIM model ids"
+        default: "nvidia/nemotron-3-ultra-550b-a55b,deepseek-ai/deepseek-v4.1-flash,moonshotai/kimi-k2.6,mistralai/mistral-large-4-1t-a52b"
+      n:
+        description: "transcripts"
+        default: "16"
+      workers:
+        default: "3"
+concurrency:
+  group: concall-compare
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          SCHEMA_V: "3"
+          MODELS: ${{ github.event.inputs.models }}
+          N: ${{ github.event.inputs.n }}
+          WORKERS: ${{ github.event.inputs.workers }}
+          BUDGET_MIN: "150"
+        run: python scripts/concall_compare.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/concall_compare 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Concall reader bake-off"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
