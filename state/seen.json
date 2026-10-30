@@ -1461,7 +1461,8 @@
 "1c0b7909-4318-4c68-aae5-9af12a3cb1b5",
 "fd66d272-57f8-416f-b778-b770830cd545",
 "72c19871-d8c2-4448-a5a2-e0d82588e097",
-"5a3191b6-bf0c-4eee-9802-89a2abc60031"
+"5a3191b6-bf0c-4eee-9802-89a2abc60031",
+"01232688-9764-42d7-b4f2-3dff7468ef73"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2400,7 +2401,8 @@
 "532181|Sep-26|na",
 "544695|Sep-26|na",
 "500245|Sep-26|consolidated",
-"538666|Sep-26|consolidated"
+"538666|Sep-26|consolidated",
+"509597|Sep-26|standalone"
 ],
 "pending": {
 "47ce3de3-278a-4bce-a56e-b927731d55cd": {
@@ -2438,45 +2440,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793345141.8077898,
-"last": 1793347128.1943617,
-"alerted": false
-},
-"01232688-9764-42d7-b4f2-3dff7468ef73": {
-"rec": {
-"NEWSID": "01232688-9764-42d7-b4f2-3dff7468ef73",
-"SCRIP_CD": 509597,
-"XML_NAME": "ANN_509597_01232688-9764-42D7-B4F2-3DFF7468EF73",
-"NEWSSUB": "Hardcastle & Waud Manufacturing Company Ltd - 509597 - Submission Of Unaudited Financial Results Of The Company For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-10-30T12:53:46.407",
-"NEWS_DT": "2026-10-30T12:53:46.407",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "c6e14846-599d-4612-8b19-f1448a1807ef.pdf",
-"MORE": "",
-"HEADLINE": "Submission of Unaudited Financial Results of the Company for the quarter and half year ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/hardcastle--waud-manufacturing-company-ltd/hardcas/509597/",
-"SLONGNAME": "Hardcastle & Waud Manufacturing Company Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 6,
-"News_submission_dt": "2026-10-30T12:53:46",
-"DissemDT": "2026-10-30T12:53:46.407",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4757632,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793345141.8077898,
-"last": 1793347128.1943617,
+"last": 1793347263.1192474,
 "alerted": false
 },
 "6867435f-040c-4a55-a362-fb6854852058": {
@@ -2552,7 +2516,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793345721.2490246,
-"last": 1793347128.1943617,
+"last": 1793347263.1192474,
 "alerted": true
 },
 "4c17398b-3ab5-4c83-b11e-1a1bad5cb515": {
@@ -2590,15 +2554,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793347013.478224,
-"last": 1793347128.1943617,
+"last": 1793347263.1192474,
 "alerted": false
 }
 },
 "lag": [
-[
-"GOCL Corporation Ltd-$",
-47
-],
 [
 "Union Bank of India",
 618
@@ -3794,6 +3754,10 @@
 [
 "Msafe Equipments Ltd",
 46
+],
+[
+"Hardcastle & Waud Manufacturing Company Ltd",
+35
 ]
 ],
 "gem_use": {
@@ -3856,7 +3820,7 @@
 "rev": 201825.3,
 "pat": 12856.800000000001,
 "t": 1793187592.8967957,
-"last": 1793347003.1006782
+"last": 1793347332.8749182
 },
 "512267|Sep-26|consolidated": {
 "code": "512267",
@@ -3866,7 +3830,7 @@
 "rev": 6660.133000000001,
 "pat": 46.409,
 "t": 1793187826.170216,
-"last": 1793347003.1006782
+"last": 1793347332.8749182
 },
 "542773|Sep-26|consolidated": {
 "code": "542773",
@@ -3876,7 +3840,7 @@
 "rev": 7144.008000000001,
 "pat": 1266.121,
 "t": 1793191035.2583532,
-"last": 1793347003.1006782
+"last": 1793347332.8749182
 },
 "544186|Sep-26|standalone": {
 "code": "544186",
@@ -3886,7 +3850,7 @@
 "rev": 722.2,
 "pat": 79.2,
 "t": 1793192166.2209988,
-"last": 1793347003.1006782
+"last": 1793347332.8749182
 },
 "531950|Sep-26|consolidated": {
 "code": "531950",
@@ -4206,6 +4170,16 @@
 "rev": 10516.819000000001,
 "pat": 917.273,
 "t": 1793347309.3357632,
+"last": 0
+},
+"509597|Sep-26|standalone": {
+"code": "509597",
+"name": "Hardcastle & Waud Manufacturing Company Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 32.358,
+"pat": 13.506,
+"t": 1793347325.9045494,
 "last": 0
 }
 },
@@ -5816,7 +5790,8 @@
 "600a1acf-64a6-4f78-a34d-8cfc10266770": 1,
 "77e49cc6-e8e3-4786-8695-559676725665": 1,
 "6867435f-040c-4a55-a362-fb6854852058": 1,
-"fd66d272-57f8-416f-b778-b770830cd545": 1
+"fd66d272-57f8-416f-b778-b770830cd545": 1,
+"01232688-9764-42d7-b4f2-3dff7468ef73": 1
 },
 "cons_expected": {
 "bf61e75a-b906-4a79-a11a-1d06ae02cf6c": 1,
@@ -6383,7 +6358,9 @@
 "f7251b14-46b4-45f8-9b3d-f955fed1a9a6": 1,
 "f173a0c9-5c1d-40a8-91a0-16c1cce3438b": 1,
 "5a3191b6-bf0c-4eee-9802-89a2abc60031": 1,
-"72c19871-d8c2-4448-a5a2-e0d82588e097": 1
+"72c19871-d8c2-4448-a5a2-e0d82588e097": 1,
+"4c17398b-3ab5-4c83-b11e-1a1bad5cb515": 1,
+"68bf5aaa-3093-4959-91c3-7f15ca68f90c": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
