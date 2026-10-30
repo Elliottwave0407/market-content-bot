@@ -19,19 +19,20 @@ T0 = time.time(); OUT = os.path.join(CE.store.ROOT, "concall_compare"); os.maked
 def call_nv(model, text):
     """returns (items or None, seconds, note)"""
     t0 = time.time(); extra = {"thinking": False} if "deepseek" in model else {"enable_thinking": False}; note = ""
-    for attempt in range(3):
+    for attempt in range(5):
+        ta = time.time()
         try:
             body = {"model": model, "messages": [{"role": "user", "content": CE.PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": CE.MAXTOK, "temperature": 0}
             if extra is not None: body["chat_template_kwargs"] = extra
             r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + NV}, timeout=240, json=body)
             if r.status_code == 400 and extra is not None: extra = None; note = "no_kwargs"; continue
-            if r.status_code in (429, 502, 503, 504): note = f"http{r.status_code}"; time.sleep(15 * (attempt + 1)); continue
+            if r.status_code in (429, 502, 503, 504): note = f"http{r.status_code}"; time.sleep(20 * (attempt + 1)); continue
             if r.status_code != 200: return None, time.time() - t0, f"http{r.status_code}"
             s = r.json()["choices"][0]["message"].get("content") or ""
             s = re.sub(r"<think>.*?</think>", "", s, flags=re.S)
             for cand in (re.search(r"\{.*\}", s, re.S), re.search(r"\{\s*\"items\".*\}", s, re.S)):
                 if cand:
-                    try: return (json.loads(cand.group(0)).get("items") or []), time.time() - t0, note
+                    try: return (json.loads(cand.group(0)).get("items") or []), time.time() - ta, note
                     except Exception: pass
             return None, time.time() - t0, "badjson"
         except requests.exceptions.Timeout: note = "timeout"
@@ -74,11 +75,15 @@ def run_doc(m, d):
 for m in MODELS:
     if (time.time() - T0) / 60 > BUDGET * 0.6: p("budget: skipping", m); continue
     t_m = time.time()
-    with ThreadPoolExecutor(W) as ex:
+    CAP = float(os.environ.get("MODEL_CAP_MIN") or "12") * 60
+    ex = ThreadPoolExecutor(W)
+    try:
         futs = {d["key"]: ex.submit(run_doc, m, d) for d in docs}
         for k, f in futs.items():
-            try: res[m][k] = f.result(timeout=max(60, BUDGET * 60 * 0.6 - (time.time() - T0)))
-            except Exception as e: res[m][k] = {"n_raw": 0, "n_ok": 0, "secs": 0, "chunks": 0, "fails": 1, "notes": {"exc": 1}, "items": []}
+            try: res[m][k] = f.result(timeout=max(1, CAP - (time.time() - t_m)))
+            except Exception as e: res[m][k] = {"n_raw": 0, "n_ok": 0, "secs": 0, "chunks": 0, "fails": 1, "notes": {"cap_or_exc": 1}, "items": []}
+    finally:
+        ex.shutdown(wait=False, cancel_futures=True)
     p(m.split("/")[-1], "done in", round((time.time() - t_m) / 60), "min")
 
 # ---- numbers captured vs union (recall proxy)
