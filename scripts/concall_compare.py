@@ -13,6 +13,7 @@ NV = os.environ.get("NVIDIA_API_KEY", "").strip(); GK = os.environ.get("GEMINI_A
 MODELS = [m for m in (os.environ.get("MODELS") or "nvidia/nemotron-3-ultra-550b-a55b,deepseek-ai/deepseek-v4.1-flash").split(",") if m]
 N = int(os.environ.get("N") or "16"); W = int(os.environ.get("WORKERS") or "3"); BUDGET = float(os.environ.get("BUDGET_MIN") or "110")
 JPD = int(os.environ.get("JUDGE_PER_DOC") or "10"); FROM_DAY = os.environ.get("FROM_DAY") or "2026-08-01"
+STORED = (os.environ.get("STORED") or "").strip()      # e.g. "mistral": use transcripts already read by that reader (stored results become one row; the NIM models re-read the same transcripts)
 T0 = time.time(); OUT = os.path.join(CE.store.ROOT, "concall_compare"); os.makedirs(OUT, exist_ok=True)
 
 def call_nv(model, text):
@@ -41,7 +42,7 @@ def call_nv(model, text):
 done = CE.load_done(); mc = {}
 try: sect = json.load(open(os.path.join(CE.store.ROOT, "sector_map", "sector_map.json")))
 except Exception: sect = {}
-pool = [r for r in done.values() if not r.get("skip") and r.get("day", "") >= FROM_DAY and r.get("src")]
+pool = [r for r in done.values() if not r.get("skip") and r.get("day", "") >= (FROM_DAY if not STORED else "2024-01-01") and r.get("src") and (not STORED or (str(r.get("model", "")).startswith(STORED) and r.get("v") == CE.SCHEMA_V))]
 rnd = random.Random(11); rnd.shuffle(pool)
 fin = [r for r in pool if "Financ" in str((sect.get(r["code"]) or {}).get("nse_sector") or (sect.get(r["code"]) or {}).get("yf_sector") or "")]
 oth = [r for r in pool if r not in fin]
@@ -54,6 +55,12 @@ for r in pick:
 p("transcripts:", len(docs), "| words median", int(statistics.median(len(d["text"].split()) for d in docs)), "| models:", ", ".join(m.split("/")[-1] for m in MODELS))
 
 res = {m: {} for m in MODELS}
+ALLM = list(MODELS)
+if STORED:
+    SL = "stored:" + STORED
+    ALLM = [SL] + ALLM; res[SL] = {}
+    for r in pick:
+        if r["key"] in {d["key"] for d in docs}: res[SL][r["key"]] = {"n_raw": r.get("n_raw") or len(r.get("items") or []), "n_ok": len(r.get("items") or []), "secs": 0, "chunks": 0, "fails": 0, "notes": {}, "items": r.get("items") or []}
 def run_doc(m, d):
     raw, secs, fails, notes = [], [], 0, collections.Counter()
     for ch in CE.chunks(d["text"]):
@@ -114,9 +121,9 @@ def judge(batch):
         except Exception: time.sleep(6)
     return None
 text_of = {d["key"]: d["text"] for d in docs}; rj = random.Random(5)
-jud = {m: [] for m in MODELS}; daily = False
+jud = {m: [] for m in ALLM}; daily = False
 if GK:
-    for m in MODELS:
+    for m in ALLM:
         picked = []
         for k, rr in res[m].items():
             its = rr["items"][:]; rj.shuffle(its)
@@ -138,21 +145,21 @@ else: p("no GEMINI_API_KEY_CONCALL: judge skipped")
 p("=== READER BAKE-OFF (same transcripts, v3 prompt) ===")
 p("model | docs ok | sec/doc | chunk fails | facts/doc | verified of raw | struct A | judged n | yes | partial | no | analyst voice | numbers captured vs union")
 summary = {}
-for m in MODELS:
+for m in ALLM:
     rs = [r for r in res[m].values()]
     if not rs: continue
     n = len(rs); raw = sum(r["n_raw"] for r in rs); ok = sum(r["n_ok"] for r in rs); allit = [it for r in rs for it in r["items"]]
     ga = sum(1 for it in allit if sgrade(it) == "A") / max(1, len(allit)); js = jud[m]; c = collections.Counter(x["support"] for x in js); sp = collections.Counter(x["speaker"] for x in js)
     cov = []
     for k in text_of:
-        U = set().union(*[nset(res[mm][k]["items"]) for mm in MODELS if k in res[mm]])
+        U = set().union(*[nset(res[mm][k]["items"]) for mm in ALLM if k in res[mm]])
         if U and k in res[m]: cov.append(len(nset(res[m][k]["items"]) & U) / len(U))
     ch = sum(r["chunks"] for r in rs); fl = sum(r["fails"] for r in rs)
-    s = {"docs": n, "sec_per_doc": round(sum(r["secs"] for r in rs) / n), "chunk_fails": f"{fl}/{ch}", "facts_per_doc": round(ok / n, 1), "verified_of_raw": round(ok / max(1, raw), 2), "struct_A": round(ga, 2),
+    s = {"docs": n, "sec_per_doc": (round(sum(r["secs"] for r in rs) / n) if sum(r["secs"] for r in rs) else "n/a"), "chunk_fails": f"{fl}/{ch}", "facts_per_doc": round(ok / n, 1), "verified_of_raw": round(ok / max(1, raw), 2), "struct_A": round(ga, 2),
          "judged": len(js), "yes": round(c["yes"] / max(1, len(js)), 2), "partial": round(c["partial"] / max(1, len(js)), 2), "no": round(c["no"] / max(1, len(js)), 2), "analyst": round(sp["analyst"] / max(1, len(js)), 2),
          "numbers_vs_union": round(statistics.mean(cov), 2) if cov else None, "notes": dict(collections.Counter(k for r in rs for k in r["notes"]))}
     summary[m] = s
-    p(m.split("/")[-1], "|", n, "|", s["sec_per_doc"], "|", s["chunk_fails"], "|", s["facts_per_doc"], "|", s["verified_of_raw"], "|", s["struct_A"], "|", s["judged"], "|", s["yes"], "|", s["partial"], "|", s["no"], "|", s["analyst"], "|", s["numbers_vs_union"], "| notes", s["notes"])
+    p(m.split("/")[-1].replace("stored:", "STORED "), "|", n, "|", s["sec_per_doc"], "|", s["chunk_fails"], "|", s["facts_per_doc"], "|", s["verified_of_raw"], "|", s["struct_A"], "|", s["judged"], "|", s["yes"], "|", s["partial"], "|", s["no"], "|", s["analyst"], "|", s["numbers_vs_union"], "| notes", s["notes"])
 day = time.strftime("%Y-%m-%d_%H%M")
-json.dump({"summary": summary, "per_doc": {m: {k: {kk: vv for kk, vv in r.items() if kk != "items"} for k, r in res[m].items()} for m in MODELS}, "docs": [{"key": d["key"], "name": d["name"], "day": d["day"]} for d in docs]}, open(os.path.join(OUT, f"compare_{day}.json"), "w"), indent=1)
+json.dump({"summary": summary, "per_doc": {m: {k: {kk: vv for kk, vv in r.items() if kk != "items"} for k, r in res[m].items()} for m in ALLM}, "docs": [{"key": d["key"], "name": d["name"], "day": d["day"]} for d in docs]}, open(os.path.join(OUT, f"compare_{day}.json"), "w"), indent=1)
 p("minutes", round((time.time() - T0) / 60)); publish()

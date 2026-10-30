@@ -10,6 +10,12 @@ on:
         default: "16"
       workers:
         default: "3"
+      stored:
+        description: "reader whose stored reads are reused as one row (e.g. mistral); blank = fresh sample"
+        default: ""
+      schema_v:
+        description: "prompt version for the NIM models (3 = wide categories, 2 = same prompt the stored Mistral reads used)"
+        default: "3"
 concurrency:
   group: concall-compare
   cancel-in-progress: false
@@ -28,7 +34,8 @@ jobs:
       - env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
-          SCHEMA_V: "3"
+          SCHEMA_V: ${{ github.event.inputs.schema_v || '3' }}
+          STORED: ${{ github.event.inputs.stored }}
           MODELS: ${{ github.event.inputs.models }}
           N: ${{ github.event.inputs.n }}
           WORKERS: ${{ github.event.inputs.workers }}
