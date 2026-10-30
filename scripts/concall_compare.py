@@ -167,4 +167,4 @@ for m in ALLM:
     p(m.split("/")[-1].replace("stored:", "STORED "), "|", n, "|", s["sec_per_doc"], "|", s["chunk_fails"], "|", s["facts_per_doc"], "|", s["verified_of_raw"], "|", s["struct_A"], "|", s["judged"], "|", s["yes"], "|", s["partial"], "|", s["no"], "|", s["analyst"], "|", s["numbers_vs_union"], "| notes", s["notes"])
 day = time.strftime("%Y-%m-%d_%H%M")
 json.dump({"summary": summary, "per_doc": {m: {k: {kk: vv for kk, vv in r.items() if kk != "items"} for k, r in res[m].items()} for m in ALLM}, "docs": [{"key": d["key"], "name": d["name"], "day": d["day"]} for d in docs]}, open(os.path.join(OUT, f"compare_{day}.json"), "w"), indent=1)
-p("minutes", round((time.time() - T0) / 60)); publish()
+p("minutes", round((time.time() - T0) / 60)); publish(); sys.stdout.flush(); os._exit(0)      # abandoned reader threads must not keep the job alive
