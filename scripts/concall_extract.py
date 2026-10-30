@@ -197,7 +197,7 @@ def extract(x):
     if not txt:
         return {**base, "skip": "no_text"}
     t = prep(txt)
-    if len(t.split()) < 1500:
+    if len(t.split()) < int(os.environ.get("MIN_WORDS", "1000")):
         return {**base, "skip": "short_or_scanned", "words": len(t.split())}
     raw, used, bad = [], None, 0
     for ch in chunks(t):

@@ -14,10 +14,11 @@ BIG = float(os.environ.get("BIG_MCAP", "5000"))
 LOCK = threading.Lock()
 
 PER_DOC_MIN = float(os.environ.get("PER_DOC_MIN", "10"))
+SHORT_MIN = int(os.environ.get("SHORT_MIN", "1000"))   # previously-skipped short transcripts (SHORT_MIN..1499 words) are read first
 def reread(r):
     t0 = time.time()
     t = CE.prep(CE.CT.pdf_text(r["src"]) or "")
-    if len(t.split()) < 1500: return {"fail": "no_text"}
+    if len(t.split()) < (SHORT_MIN if r.get("skip") else 1500): return {"fail": "no_text"}
     raw, used, bad = [], None, 0
     chs = CE.chunks(t)
     for ch in chs:
@@ -45,7 +46,10 @@ def main():
     except Exception: handled = set()
     mc = json.load(open(os.path.join(CE.store.ROOT, "mcap", "mcap.json"))); cap = {v["s"]: v.get("m") or 0 for v in mc.values() if v.get("s")}
     todo = [r for r in done.values() if r.get("v") == 1 and not r.get("skip") and r["key"] not in handled]
+    short = [r for r in done.values() if r.get("skip") == "short_or_scanned" and SHORT_MIN <= r.get("words", 0) < 1500 and r["key"] not in handled]
     todo.sort(key=lambda r: (0 if cap.get(r["code"], 0) >= BIG else 1, "".join(chr(255 - ord(c)) for c in r["day"])))
+    todo = short + todo
+    p("short skipped docs to try:", len(short))
     p("models:", ", ".join(m.split("/")[-1] for m in CE.MODELS), "| dry" if DRY else "| live", "| v1 left", len(todo), "| above", BIG, "Cr:", sum(1 for r in todo if cap.get(r["code"], 0) >= BIG))
     stats = {"replaced": 0, "kept_old": 0, "failed": 0}; progressed = 0
     def out_of_time(): return (time.time() - CE.T0) / 60 > CE.BUDGET_MIN or (CE.MAXN and progressed >= CE.MAXN)
