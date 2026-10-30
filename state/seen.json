@@ -1542,7 +1542,8 @@
 "a678387e-e2aa-4f51-b92e-d0ba85a0b004",
 "35fa6299-189f-4efd-9bda-5b2136f34169",
 "dae819c9-dbf7-4882-a8ce-3018ff501d0e",
-"71aad1b2-d694-4798-9e3f-107c48972a71"
+"71aad1b2-d694-4798-9e3f-107c48972a71",
+"cc0e89a8-d61e-4bb8-923b-10621747d381"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2528,7 +2529,8 @@
 "540146|Sep-26|na",
 "519156|Sep-26|consolidated",
 "531433|Sep-26|standalone",
-"506120|Sep-26|standalone"
+"506120|Sep-26|standalone",
+"533206|Sep-26|consolidated"
 ],
 "pending": {
 "5a8784d6-2ff4-4c7d-bfff-3a787972337b": {
@@ -2566,7 +2568,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793352821.606432,
-"last": 1793354031.1116533,
+"last": 1793354245.1110206,
 "alerted": false
 },
 "933a7a33-73db-4817-b828-dc95906ccbcd": {
@@ -2604,45 +2606,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793352821.606432,
-"last": 1793354031.1116533,
-"alerted": false
-},
-"cc0e89a8-d61e-4bb8-923b-10621747d381": {
-"rec": {
-"NEWSID": "cc0e89a8-d61e-4bb8-923b-10621747d381",
-"SCRIP_CD": 533206,
-"XML_NAME": "ANN_533206_CC0E89A8-D61E-4BB8-923B-10621747D381",
-"NEWSSUB": "SJVN Ltd - 533206 - Financial Results For The Quarter/Half-Year Ended 30.09.2026",
-"DT_TM": "2026-10-30T15:18:00.327",
-"NEWS_DT": "2026-10-30T15:18:00.327",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "913ea3b4-5991-4d57-bfaa-f612c610569e.pdf",
-"MORE": "",
-"HEADLINE": "Enclosed",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sjvn-ltd/sjvn/533206/",
-"SLONGNAME": "SJVN Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 13,
-"News_submission_dt": "2026-10-30T15:18:00",
-"DissemDT": "2026-10-30T15:18:00.327",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7490601,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793353712.0172272,
-"last": 1793354031.1116533,
+"last": 1793354245.1110206,
 "alerted": false
 },
 "735ccfdc-ba19-473f-b4ff-4f2faf402741": {
@@ -2680,7 +2644,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793353712.0172272,
-"last": 1793354031.1116533,
+"last": 1793354245.1110206,
 "alerted": false
 },
 "c978ffd5-50b4-41f7-a5fc-0ab0680b73a7": {
@@ -2718,15 +2682,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793354031.1116533,
-"last": 1793354031.1116533,
+"last": 1793354245.1110206,
 "alerted": false
 }
 },
 "lag": [
-[
-"Mahindra Holidays & Resorts India Ltd",
-237
-],
 [
 "Indosolar Ltd",
 8
@@ -3922,6 +3882,10 @@
 [
 "Alna Trading & Exports Ltd",
 10
+],
+[
+"SJVN Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -3943,7 +3907,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 151
+"2026-10-30": 158
 },
 "pdfposted": {
 "539404|Sep-26|consolidated": {
@@ -4034,7 +3998,7 @@
 "rev": 0.0,
 "pat": -0.147,
 "t": 1793193797.5701764,
-"last": 1793353619.9454958
+"last": 1793354293.6574836
 },
 "542034|Sep-26|standalone": {
 "code": "542034",
@@ -4044,7 +4008,7 @@
 "rev": 429.33000000000004,
 "pat": 4.269,
 "t": 1793195523.223554,
-"last": 1793353619.9454958
+"last": 1793354293.6574836
 },
 "540545|Sep-26|standalone": {
 "code": "540545",
@@ -4054,7 +4018,7 @@
 "rev": 190.22400000000002,
 "pat": 0.542,
 "t": 1793196295.036447,
-"last": 1793353619.9454958
+"last": 1793354293.6574836
 },
 "540268|Sep-26|consolidated": {
 "code": "540268",
@@ -4064,7 +4028,7 @@
 "rev": 122.59800000000001,
 "pat": -115.66400000000002,
 "t": 1793203808.7669156,
-"last": 1793353619.9454958
+"last": 1793354293.6574836
 },
 "540268|Sep-26|standalone": {
 "code": "540268",
@@ -4544,6 +4508,16 @@
 "rev": 7.640000000000001,
 "pat": 0.06,
 "t": 1793354019.168197,
+"last": 0
+},
+"533206|Sep-26|consolidated": {
+"code": "533206",
+"name": "SJVN Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 22443.2,
+"pat": 6577.200000000001,
+"t": 1793354489.6508884,
 "last": 0
 }
 },
@@ -6183,7 +6157,8 @@
 "7b0802ee-4483-4a41-9aa2-f72449af6b02": 1,
 "b2e7f757-348a-4c5e-a069-7c0f6d0377f6": 1,
 "35fa6299-189f-4efd-9bda-5b2136f34169": 1,
-"c978ffd5-50b4-41f7-a5fc-0ab0680b73a7": 1
+"c978ffd5-50b4-41f7-a5fc-0ab0680b73a7": 1,
+"877a525b-e8ad-467a-b7d8-47e6da0905ff": 1
 },
 "cons_expected": {
 "41cf0460-71d3-4b7c-a9b5-daa9c49634a5": 1,
