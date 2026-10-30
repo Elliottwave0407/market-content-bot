@@ -1538,7 +1538,11 @@
 "16629de6-a4d4-47f6-9bd2-48110e8a9315",
 "15c69cbb-2cbd-4ba8-b024-35babd287ea3",
 "f63ca29f-4aa3-49f1-a9ab-44b24897dcc0",
-"1c717961-c99a-46f2-b5ab-5dfae090d6cd"
+"1c717961-c99a-46f2-b5ab-5dfae090d6cd",
+"a678387e-e2aa-4f51-b92e-d0ba85a0b004",
+"35fa6299-189f-4efd-9bda-5b2136f34169",
+"dae819c9-dbf7-4882-a8ce-3018ff501d0e",
+"71aad1b2-d694-4798-9e3f-107c48972a71"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2521,7 +2525,10 @@
 "540205|Sep-26|standalone",
 "502873|Sep-26|consolidated",
 "500296|Sep-26|standalone",
-"540146|Sep-26|na"
+"540146|Sep-26|na",
+"519156|Sep-26|consolidated",
+"531433|Sep-26|standalone",
+"506120|Sep-26|standalone"
 ],
 "pending": {
 "5a8784d6-2ff4-4c7d-bfff-3a787972337b": {
@@ -2559,7 +2566,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793352821.606432,
-"last": 1793353708.9003842,
+"last": 1793353862.0273662,
 "alerted": false
 },
 "933a7a33-73db-4817-b828-dc95906ccbcd": {
@@ -2597,45 +2604,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793352821.606432,
-"last": 1793353708.9003842,
-"alerted": false
-},
-"71aad1b2-d694-4798-9e3f-107c48972a71": {
-"rec": {
-"NEWSID": "71aad1b2-d694-4798-9e3f-107c48972a71",
-"SCRIP_CD": 506120,
-"XML_NAME": "ANN_506120_71AAD1B2-D694-4798-9E3F-107C48972A71",
-"NEWSSUB": "Alna Trading & Exports Ltd - 506120 - Statement Of Un-Audited Financial Results For The Second Quarter & Half Year Ended September 30, 2026",
-"DT_TM": "2026-10-30T15:09:53.213",
-"NEWS_DT": "2026-10-30T15:09:53.213",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "abc9a10e-1947-4fbf-b90d-2e0bbbad3949.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the Second Quarter and Half Year Ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/alna-trading--exports-ltd/alnatrd/506120/",
-"SLONGNAME": "Alna Trading & Exports Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 13,
-"News_submission_dt": "2026-10-30T15:09:53",
-"DissemDT": "2026-10-30T15:09:53.213",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1856213,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793353246.5419402,
-"last": 1793353712.0172272,
+"last": 1793353862.0273662,
 "alerted": false
 },
 "cc0e89a8-d61e-4bb8-923b-10621747d381": {
@@ -2673,7 +2642,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793353712.0172272,
-"last": 1793353712.0172272,
+"last": 1793353862.0273662,
 "alerted": false
 },
 "735ccfdc-ba19-473f-b4ff-4f2faf402741": {
@@ -2711,15 +2680,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793353712.0172272,
-"last": 1793353712.0172272,
+"last": 1793353862.0273662,
 "alerted": false
 }
 },
 "lag": [
-[
-"LMW Ltd",
-154
-],
 [
 "Mahindra Holidays & Resorts India Ltd",
 237
@@ -3915,6 +3880,10 @@
 [
 "Aditya Consumer Marketing Ltd",
 45
+],
+[
+"Alna Trading & Exports Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -3936,7 +3905,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 142
+"2026-10-30": 147
 },
 "pdfposted": {
 "539404|Sep-26|consolidated": {
@@ -3947,7 +3916,7 @@
 "rev": 9258.433,
 "pat": 1759.0349999999999,
 "t": 1793183825.1374714,
-"last": 1793353602.019185
+"last": 1793354025.8154829
 },
 "539488|Sep-26|standalone": {
 "code": "539488",
@@ -3957,7 +3926,7 @@
 "rev": 3.3049999999999997,
 "pat": -2.358,
 "t": 1793186271.3098693,
-"last": 1793353602.019185
+"last": 1793354025.8154829
 },
 "520056|Sep-26|consolidated": {
 "code": "520056",
@@ -3967,7 +3936,7 @@
 "rev": 201825.3,
 "pat": 12856.800000000001,
 "t": 1793187592.8967957,
-"last": 1793353602.019185
+"last": 1793354025.8154829
 },
 "512267|Sep-26|consolidated": {
 "code": "512267",
@@ -3977,7 +3946,7 @@
 "rev": 6660.133000000001,
 "pat": 46.409,
 "t": 1793187826.170216,
-"last": 1793353602.019185
+"last": 1793354025.8154829
 },
 "542773|Sep-26|consolidated": {
 "code": "542773",
@@ -4508,6 +4477,36 @@
 "pat": 710.4520000000001,
 "t": 1793353549.0017745,
 "last": 1793353697.4747958
+},
+"519156|Sep-26|consolidated": {
+"code": "519156",
+"name": "Vadilal Industries Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 4625.6,
+"pat": 548.2,
+"t": 1793353965.7402492,
+"last": 0
+},
+"531433|Sep-26|standalone": {
+"code": "531433",
+"name": "Sungold Capital Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 4.8428,
+"pat": 0.19530000000000003,
+"t": 1793354011.4505663,
+"last": 0
+},
+"506120|Sep-26|standalone": {
+"code": "506120",
+"name": "Alna Trading & Exports Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 7.640000000000001,
+"pat": 0.06,
+"t": 1793354019.168197,
+"last": 0
 }
 },
 "audit": [
@@ -6144,7 +6143,8 @@
 "3abb8470-c4fa-4718-8f6a-e5be82aac918": 1,
 "dae819c9-dbf7-4882-a8ce-3018ff501d0e": 1,
 "7b0802ee-4483-4a41-9aa2-f72449af6b02": 1,
-"b2e7f757-348a-4c5e-a069-7c0f6d0377f6": 1
+"b2e7f757-348a-4c5e-a069-7c0f6d0377f6": 1,
+"35fa6299-189f-4efd-9bda-5b2136f34169": 1
 },
 "cons_expected": {
 "41cf0460-71d3-4b7c-a9b5-daa9c49634a5": 1,
@@ -6649,7 +6649,8 @@
 "d6e411a9-1cca-448a-a027-47ace8499cb6": 1,
 "16629de6-a4d4-47f6-9bd2-48110e8a9315": 1,
 "cc0e89a8-d61e-4bb8-923b-10621747d381": 1,
-"1c717961-c99a-46f2-b5ab-5dfae090d6cd": 1
+"1c717961-c99a-46f2-b5ab-5dfae090d6cd": 1,
+"a678387e-e2aa-4f51-b92e-d0ba85a0b004": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
