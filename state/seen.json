@@ -1679,7 +1679,11 @@
 "5d1aaece-fccb-42f1-a3d7-144e064e2da6",
 "2da81d97-6688-4e8f-8453-d65d4f210277",
 "8d1b25b5-1019-4824-9be6-4b6ddfe0bbda",
-"7541d4c5-7dbd-4873-972c-cf29503f6005"
+"7541d4c5-7dbd-4873-972c-cf29503f6005",
+"140d72b3-bbd4-443c-9b09-8796c729d457",
+"5f7b2786-c6ab-4418-bd54-e7ced866d24c",
+"35aa322d-0527-4313-be1f-e814e07a6893",
+"ed4d32ab-918d-4263-b10c-04dd79f5f87a"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2744,7 +2748,10 @@
 "543747|Sep-26|consolidated",
 "533644|Sep-26|standalone",
 "541444|Sep-26|na",
-"539408|Sep-26|na"
+"539408|Sep-26|na",
+"539551|Sep-26|consolidated",
+"544644|Sep-26|consolidated",
+"526367|Sep-26|na"
 ],
 "pending": {
 "0daf9bfc-6e6a-444b-8a58-e8c0ff8c1568": {
@@ -2822,44 +2829,6 @@
 "first": 1793360515.894076,
 "last": 1793364840.6105795,
 "alerted": false
-},
-"ed4d32ab-918d-4263-b10c-04dd79f5f87a": {
-"rec": {
-"NEWSID": "ed4d32ab-918d-4263-b10c-04dd79f5f87a",
-"SCRIP_CD": 526367,
-"XML_NAME": "ANN_526367_ED4D32AB-918D-4263-B10C-04DD79F5F87A",
-"NEWSSUB": "Ganesh Housing Ltd-$ - 526367 - Results For The Quarter & Half Year Ended 30 September 2026.",
-"DT_TM": "2026-10-30T17:38:43.083",
-"NEWS_DT": "2026-10-30T17:38:43.083",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "a4c6ffb8-bab3-496c-ab00-e2ec3aa64788.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quarter and half year ended September 30, 2026 along with Limited Review Report",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ganesh-housing-ltd/ganeshhou/526367/",
-"SLONGNAME": "Ganesh Housing Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-10-30T17:38:43",
-"DissemDT": "2026-10-30T17:38:43.083",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 20302939,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793362318.755914,
-"last": 1793364840.6105795,
-"alerted": true
 },
 "47a0292a-ca12-4148-af64-3a5621fede01": {
 "rec": {
@@ -3048,8 +3017,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793363678.787146,
-"last": 1793364840.6105795,
-"alerted": false
+"last": 1793365280.0095856,
+"alerted": true
 },
 "8cfd9d53-3091-4170-8e97-801992ad2aa8": {
 "rec": {
@@ -3243,10 +3212,6 @@
 }
 },
 "lag": [
-[
-"Walchand Peoplefirst Ltd",
-121
-],
 [
 "CyberTech Systems and Software Ltd",
 66
@@ -4442,6 +4407,10 @@
 [
 "Kuber Udyog Ltd",
 53
+],
+[
+"Ganesh Housing Ltd-$",
+49
 ]
 ],
 "gem_use": {
@@ -4463,7 +4432,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 383
+"2026-10-30": 386
 },
 "pdfposted": {
 "531950|Sep-26|consolidated": {
@@ -5274,6 +5243,26 @@
 "rev": 8.103,
 "pat": 1.395,
 "t": 1793364532.483178,
+"last": 0
+},
+"539551|Sep-26|consolidated": {
+"code": "539551",
+"name": "Narayana Hrudayalaya Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 28439.89,
+"pat": 3011.53,
+"t": 1793365471.0417356,
+"last": 0
+},
+"544644|Sep-26|consolidated": {
+"code": "544644",
+"name": "Corona Remedies Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4411.7,
+"pat": 603.1,
+"t": 1793365501.090666,
 "last": 0
 }
 },
@@ -6965,7 +6954,8 @@
 "a8cd9057-bace-479e-b618-5a4963b24464": 1,
 "13bc51df-8228-4795-b9bf-d7176bde0029": 1,
 "eb983106-09c2-493b-9639-1c79c138eab4": 1,
-"aae3314a-1fd8-4ff3-8d0c-40bd44ad8c09": 1
+"aae3314a-1fd8-4ff3-8d0c-40bd44ad8c09": 1,
+"5f7b2786-c6ab-4418-bd54-e7ced866d24c": 1
 },
 "cons_expected": {
 "41cf0460-71d3-4b7c-a9b5-daa9c49634a5": 1,
@@ -7519,7 +7509,9 @@
 "178cad0c-e837-45a4-bccf-fe02c625642c": 1,
 "14574fbf-b0fb-4082-8ecd-c0c0ea830680": 1,
 "d22cf478-25d2-4616-8a1b-3d6aa5ee7083": 1,
-"3c08b65f-9698-462a-9fa3-71a8a7093f18": 1
+"3c08b65f-9698-462a-9fa3-71a8a7093f18": 1,
+"140d72b3-bbd4-443c-9b09-8796c729d457": 1,
+"35aa322d-0527-4313-be1f-e814e07a6893": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
