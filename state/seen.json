@@ -1596,7 +1596,10 @@
 "79ad0115-92ec-4bae-8ef4-6c0230beb39f",
 "403e94bc-775c-4e11-afe2-6352f02bf504",
 "2d435e6b-941c-448e-ab87-d3771b139473",
-"0a602b02-731a-4ee0-8bb5-604f784e1426"
+"0a602b02-731a-4ee0-8bb5-604f784e1426",
+"4e78379f-9134-45ad-b7cd-05f51f407a40",
+"e9c2682f-c9c1-4475-ab70-e964c11f9114",
+"7adad556-73c1-4c33-9b57-04ff640e449d"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2611,47 +2614,10 @@
 "502330|Sep-26|standalone",
 "543529|Sep-26|consolidated",
 "543573|Sep-26|consolidated",
-"544656|Sep-26|na"
+"544656|Sep-26|na",
+"501622|Sep-26|na"
 ],
 "pending": {
-"7adad556-73c1-4c33-9b57-04ff640e449d": {
-"rec": {
-"NEWSID": "7adad556-73c1-4c33-9b57-04ff640e449d",
-"SCRIP_CD": 501622,
-"XML_NAME": "ANN_501622_7ADAD556-73C1-4C33-9B57-04FF640E449D",
-"NEWSSUB": "Amalgamated Electricity Company Ltd - 501622 - Results For The Quarter Ended 30-09-2026",
-"DT_TM": "2026-10-30T15:56:27.99",
-"NEWS_DT": "2026-10-30T15:56:27.99",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "76bee74c-904f-427a-8b2e-ba8be348aae8.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter and half year ended 30-09-2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/amalgamated-electricity-company-ltd/amalgam/501622/",
-"SLONGNAME": "Amalgamated Electricity Company Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 17,
-"News_submission_dt": "2026-10-30T15:56:27",
-"DissemDT": "2026-10-30T15:56:27.99",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3600145,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793356015.3181603,
-"last": 1793358597.7749567,
-"alerted": false
-},
 "437e48f1-fcd8-4cf2-861a-534a93472a24": {
 "rec": {
 "NEWSID": "437e48f1-fcd8-4cf2-861a-534a93472a24",
@@ -2674,7 +2640,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/shree-renuka-sugars-ltd/renuka/532670/",
 "SLONGNAME": "Shree Renuka Sugars Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 17,
+"TotalPageCnt": 18,
 "News_submission_dt": "2026-10-30T16:34:11",
 "DissemDT": "2026-10-30T16:34:11.503",
 "TimeDiff": "00:00:00",
@@ -2687,7 +2653,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793358314.3898947,
-"last": 1793358597.7749567,
+"last": 1793358796.189893,
 "alerted": false
 },
 "cfff91d7-e7da-47f9-8c1d-02fa644ec624": {
@@ -2712,7 +2678,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/shreeji-translogistics-ltd/stl/540738/",
 "SLONGNAME": "Shreeji Translogistics Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 17,
+"TotalPageCnt": 18,
 "News_submission_dt": "2026-10-30T16:34:16",
 "DissemDT": "2026-10-30T16:34:16.38",
 "TimeDiff": "00:00:00",
@@ -2725,7 +2691,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793358314.3898947,
-"last": 1793358597.7749567,
+"last": 1793358796.189893,
 "alerted": false
 },
 "67a9ff5a-288d-43ce-bfeb-72ddbd1586a9": {
@@ -2750,7 +2716,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/u-h-zaveri-ltd/uhzaveri/541338/",
 "SLONGNAME": "U. H. Zaveri Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 17,
+"TotalPageCnt": 18,
 "News_submission_dt": "2026-10-30T16:35:57",
 "DissemDT": "2026-10-30T16:35:57.307",
 "TimeDiff": "00:00:00",
@@ -2763,15 +2729,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793358421.155111,
-"last": 1793358597.7749567,
+"last": 1793358796.189893,
 "alerted": false
 }
 },
 "lag": [
-[
-"Sumeru Industries Ltd",
-1441
-],
 [
 "Yash Highvoltage Ltd",
 1440
@@ -3967,6 +3929,10 @@
 [
 "HRS Aluglaze Ltd",
 46
+],
+[
+"Amalgamated Electricity Company Ltd",
+46
 ]
 ],
 "gem_use": {
@@ -3988,7 +3954,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 266
+"2026-10-30": 270
 },
 "pdfposted": {
 "539488|Sep-26|standalone": {
@@ -3999,7 +3965,7 @@
 "rev": 3.3049999999999997,
 "pat": -2.358,
 "t": 1793186271.3098693,
-"last": 1793358455.0276785
+"last": 1793358896.2980158
 },
 "520056|Sep-26|consolidated": {
 "code": "520056",
@@ -4009,7 +3975,7 @@
 "rev": 201825.3,
 "pat": 12856.800000000001,
 "t": 1793187592.8967957,
-"last": 1793358455.0276785
+"last": 1793358896.2980158
 },
 "512267|Sep-26|consolidated": {
 "code": "512267",
@@ -4019,7 +3985,7 @@
 "rev": 6660.133000000001,
 "pat": 46.409,
 "t": 1793187826.170216,
-"last": 1793358455.0276785
+"last": 1793358896.2980158
 },
 "542773|Sep-26|consolidated": {
 "code": "542773",
@@ -4029,7 +3995,7 @@
 "rev": 7144.008000000001,
 "pat": 1266.121,
 "t": 1793191035.2583532,
-"last": 1793358455.0276785
+"last": 1793358896.2980158
 },
 "544186|Sep-26|standalone": {
 "code": "544186",
@@ -6821,7 +6787,9 @@
 "85323e6b-cebf-4f5c-b80b-395c2b9e7497": 1,
 "cfff91d7-e7da-47f9-8c1d-02fa644ec624": 1,
 "79ad0115-92ec-4bae-8ef4-6c0230beb39f": 1,
-"403e94bc-775c-4e11-afe2-6352f02bf504": 1
+"403e94bc-775c-4e11-afe2-6352f02bf504": 1,
+"4e78379f-9134-45ad-b7cd-05f51f407a40": 1,
+"e9c2682f-c9c1-4475-ab70-e964c11f9114": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
