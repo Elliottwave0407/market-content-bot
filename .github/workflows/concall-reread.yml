@@ -14,8 +14,11 @@ on:
       workers:
         description: "Parallel readers"
         default: "6"
+      schema_v:
+        description: "Reader version to bring every record up to (2 = old v1 pass, 3 = wider category set)"
+        default: "2"
 concurrency:
-  group: concall-extract-concall_facts
+  group: ${{ (github.event.inputs.dry || '1') == '1' && 'concall-reread-dry' || 'concall-extract-concall_facts' }}
   cancel-in-progress: false
 permissions:
   contents: write
@@ -34,6 +37,7 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           DRY: ${{ github.event.inputs.dry || '1' }}
+          SCHEMA_V: ${{ github.event.inputs.schema_v || '2' }}
           MODELS: "mistral:ministral-14b-latest,nvidia/nemotron-3-ultra-550b-a55b"
           MAXN: ${{ github.event.inputs.maxn || '6' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
@@ -53,9 +57,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           [ "${{ github.event.inputs.dry || '1' }}" = "1" ] && { echo "dry run: no chaining"; exit 0; }
-          R=$(python3 -c "import json;d=json.load(open('store/concall_reread/_state.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
+          SV="${{ github.event.inputs.schema_v || '2' }}"; SF=""; [ "$SV" != "2" ] && SF="_v$SV"
+          R=$(python3 -c "import json;d=json.load(open('store/concall_reread/_state$SF.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
           echo "remaining: $R"
           if [ "$R" -gt 0 ]; then
             sleep 20
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '150' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '6' }}' && echo "next run queued"
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '150' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '6' }}' -f "inputs[schema_v]=$SV" && echo "next run queued"
           fi

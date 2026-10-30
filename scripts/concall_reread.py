@@ -1,5 +1,5 @@
 """Re-read old schema-v1 concall transcripts with the v2 reader (prompt, verification, realignment) and replace their facts only when the new read is at least as good.
-Order: companies above Rs 5,000 Cr first, then the rest, newest first. Resumable: handled keys are in store/concall_reread/_done.json; actions in store/concall_reread/log.jsonl.
+Order: newest first (no market-cap ordering). Resumable: handled keys are in store/concall_reread/_done.json; actions in store/concall_reread/log.jsonl.
 Env: DRY=1 (read and log, change nothing in concall_facts), MAXN, BUDGET_MIN, WORKERS, MODELS (same as concall_extract). Posts nothing anywhere."""
 import os, sys, re, json, time, glob, threading
 from datetime import datetime
@@ -8,8 +8,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import concall_extract as CE
 from ci_out import p, publish
 RD = os.path.join(CE.store.ROOT, "concall_reread"); os.makedirs(RD, exist_ok=True)
-DONE_F = os.path.join(RD, "_done_dry.json" if os.environ.get("DRY", "") == "1" else "_done.json"); LOG_F = os.path.join(RD, "log.jsonl"); STATE_F = os.path.join(RD, "_state.json")
 DRY = os.environ.get("DRY", "") == "1"
+TARGET_V = CE.SCHEMA_V            # records with a lower schema version are re-read; 2 = old v1 pass, 3 = full pass with the wider category set
+SFX = "" if TARGET_V == 2 else f"_v{TARGET_V}"
+DONE_F = os.path.join(RD, f"_done{'_dry' if DRY else ''}{SFX}.json"); LOG_F = os.path.join(RD, f"log{'_dry' if DRY else ''}{SFX}.jsonl"); STATE_F = os.path.join(RD, f"_state{'_dry' if DRY else ''}{SFX}.json")
+ITEMS_F = os.path.join(RD, f"dry_items{SFX}.jsonl")
 BIG = float(os.environ.get("BIG_MCAP", "5000"))
 LOCK = threading.Lock()
 
@@ -45,12 +48,12 @@ def main():
     try: handled = set(json.load(open(DONE_F)))
     except Exception: handled = set()
     mc = json.load(open(os.path.join(CE.store.ROOT, "mcap", "mcap.json"))); cap = {v["s"]: v.get("m") or 0 for v in mc.values() if v.get("s")}
-    todo = [r for r in done.values() if r.get("v") == 1 and not r.get("skip") and r["key"] not in handled]
+    todo = [r for r in done.values() if (r.get("v") or 1) < TARGET_V and not r.get("skip") and r["key"] not in handled]
     short = [r for r in done.values() if r.get("skip") == "short_or_scanned" and SHORT_MIN <= r.get("words", 0) < 1500 and r["key"] not in handled]
-    todo.sort(key=lambda r: (0 if cap.get(r["code"], 0) >= BIG else 1, "".join(chr(255 - ord(c)) for c in r["day"])))
+    todo.sort(key=lambda r: "".join(chr(255 - ord(c)) for c in r["day"]))      # newest first, no market-cap ordering
     todo = short + todo
     p("short skipped docs to try:", len(short))
-    p("models:", ", ".join(m.split("/")[-1] for m in CE.MODELS), "| dry" if DRY else "| live", "| v1 left", len(todo), "| above", BIG, "Cr:", sum(1 for r in todo if cap.get(r["code"], 0) >= BIG))
+    p("models:", ", ".join(m.split("/")[-1] for m in CE.MODELS), "| dry" if DRY else "| live", "| target schema", TARGET_V, "| left", len(todo))
     stats = {"replaced": 0, "kept_old": 0, "failed": 0}; progressed = 0
     def out_of_time(): return (time.time() - CE.T0) / 60 > CE.BUDGET_MIN or (CE.MAXN and progressed >= CE.MAXN)
     i = 0
@@ -77,6 +80,8 @@ def main():
                     handled.add(r["key"])
                     with open(LOG_F, "a") as lf:
                         lf.write(json.dumps({"t": datetime.now(CE.IST).strftime("%m-%d %H:%M"), "key": r["key"], "act": "replace" if acc else "keep", "old": r.get("n_ok"), "new": new["n_ok"], "m": new["model"], "dry": DRY}) + "\n")
+                    if DRY:
+                        with open(ITEMS_F, "a") as xf: xf.write(json.dumps({"key": r["key"], "name": r.get("name"), "words": new["words"], "items": new["items"]}, ensure_ascii=False) + "\n")
                     if acc:
                         stats["replaced"] += 1
                         if not DRY:
@@ -87,7 +92,7 @@ def main():
         if not DRY: CE.save(done)
         json.dump(sorted(handled), open(DONE_F, "w"))
         p("progress", progressed, stats, f"{(time.time() - CE.T0) / 60:.0f} min")
-    left = sum(1 for r in done.values() if r.get("v") == 1 and not r.get("skip") and r["key"] not in handled)
+    left = sum(1 for r in done.values() if (r.get("v") or 1) < TARGET_V and not r.get("skip") and r["key"] not in handled)
     json.dump({"remaining": left, "progressed": progressed, "stats": stats, "dry": DRY}, open(STATE_F, "w"))
     p("end:", stats, "remaining", left)
 

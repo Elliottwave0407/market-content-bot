@@ -23,16 +23,23 @@ FLOOR = os.environ.get("FLOOR", "2024-04-01")
 MODELS = [m for m in os.environ.get("MODELS", ("mistral:ministral-14b-latest," if MK else "") + "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 CHUNK = 60000
 MAX_CHUNKS = 3
-SCHEMA_V = 2
+SCHEMA_V = int(os.environ.get("SCHEMA_V") or "2")
 IST = timezone(timedelta(hours=5, minutes=30))
 DIR = os.path.join(store.ROOT, os.environ.get("OUT_DIR", "concall_facts"))
 CUR = os.path.join(DIR, "_cursor.json")
 LOCK = threading.Lock()
 T0 = time.time()
 
-PROMPT = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT (not analysts) said. Return ONLY JSON:
+PROMPT_V2 = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT (not analysts) said. Return ONLY JSON:
 {"items":[{"cat":"guidance|capex|order_book|margin|pricing_cost|demand|product_mix|risk|fund_raise|other","statement":"short plain summary (max 30 words)","period":"e.g. FY27, Q3 FY26, next quarter, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"ONE or TWO consecutive sentences copied character for character from the transcript (keep filler words, do not shorten, join or paraphrase, no ellipses), under 250 characters"}]}
 Rules: up to 16 items, the most decision-relevant ones (forward guidance with numbers first, then capex, order book, margins, price increases or cost pass-through, demand outlook, mix shift, risks). Every quote must be copied word for word. The statement may say ONLY what the quote says (no added units, scope, timing or comparisons; do not report that something was NOT said or that there is no guidance). Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
+
+PROMPT3 = """You read an Indian listed company's earnings-call transcript. Extract what MANAGEMENT (not analysts) said. Return ONLY JSON:
+{"items":[{"cat":"<one category>","statement":"short plain summary (max 30 words)","period":"e.g. FY27, Q3 FY26, next quarter, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"ONE or TWO consecutive sentences copied character for character from the transcript (keep filler words, do not shorten, join or paraphrase, no ellipses), under 250 characters"}]}
+Categories: guidance (forward targets), demand, margin, order_book (order book, inflow, AUM, loan book, pre-sales), capex, capacity (utilisation, capacity added or planned, timelines), pricing_cost, inputs (raw materials, suppliers, energy), product_mix, customers (concentration, key client wins or losses, channel), competition (market share, new entrants, pricing pressure), regulation (policy, tariffs, duties, incentives, licences, approvals), export_fx (export share, geography, currency, hedging), working_capital (debtor or inventory days, cash conversion, collections), debt (borrowings, repayment, interest cost, refinancing, rating), fund_raise, mna (acquisitions, divestments, mergers, synergies), shareholder_returns (dividend, buyback), people (management change, key hires, attrition, headcount), asset_quality (lenders and insurers: GNPA, NNPA, slippages, credit cost, collection efficiency, provisions), sector_kpi (a sector KPI such as NIM, CASA, occupancy, ARPOB, same-store growth, realisation, order inflow, US approvals, pre-sales; name the KPI in the statement), risk, other.
+Rules: up to 28 items, the most decision-relevant ones, covering as many categories as the transcript actually speaks to (forward guidance with numbers first, then capex and capacity, order book, margins, price or cost pass-through, demand, mix, customers, working capital, debt, regulation, risks). Every quote must be copied word for word. The statement may say ONLY what the quote says (no added units, scope, timing or comparisons; do not report that something was NOT said or that there is no guidance). Do not invent numbers. If nothing relevant is said, return {"items":[]}. No investment advice."""
+PROMPT = PROMPT3 if SCHEMA_V >= 3 else PROMPT_V2
+MAXTOK = 7500 if SCHEMA_V >= 3 else 5000
 
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
@@ -67,7 +74,7 @@ def call_mistral(model, text):
         try:
             r = requests.post("https://api.mistral.ai/v1/chat/completions", headers={"Authorization": "Bearer " + MK, "Content-Type": "application/json"}, timeout=180,
                               json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}],
-                                    "max_tokens": 5000, "temperature": 0, "response_format": {"type": "json_object"}})
+                                    "max_tokens": MAXTOK, "temperature": 0, "response_format": {"type": "json_object"}})
             if r.status_code == 429:
                 _M429[0] += 1
                 if _M429[0] >= 8:
@@ -94,7 +101,7 @@ def call(model, text):
         try:
             r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + NV}, timeout=300,
                               json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}],
-                                    "max_tokens": 5000, "temperature": 0, "chat_template_kwargs": extra})
+                                    "max_tokens": MAXTOK, "temperature": 0, "chat_template_kwargs": extra})
             if r.status_code in (429, 502, 503, 504):
                 time.sleep(15 * (attempt + 1)); continue
             if r.status_code != 200:
