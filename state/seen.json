@@ -1464,7 +1464,9 @@
 "5a3191b6-bf0c-4eee-9802-89a2abc60031",
 "01232688-9764-42d7-b4f2-3dff7468ef73",
 "b952f6a4-394d-48a8-9d44-6528148d686f",
-"c290dff3-02c8-4bc7-92e0-d616b5a961ec"
+"c290dff3-02c8-4bc7-92e0-d616b5a961ec",
+"45e12af7-30f0-4ceb-8732-c341807a9ac6",
+"cc1bca93-a798-4af1-95f9-4e26d076d076"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2405,7 +2407,9 @@
 "500245|Sep-26|consolidated",
 "538666|Sep-26|consolidated",
 "509597|Sep-26|standalone",
-"523021|Sep-26|standalone"
+"523021|Sep-26|standalone",
+"532707|Sep-26|consolidated",
+"540062|Sep-26|standalone"
 ],
 "pending": {
 "47ce3de3-278a-4bce-a56e-b927731d55cd": {
@@ -2443,7 +2447,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793345141.8077898,
-"last": 1793347263.1192474,
+"last": 1793347380.3465252,
 "alerted": false
 },
 "6867435f-040c-4a55-a362-fb6854852058": {
@@ -2481,45 +2485,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793345470.8296144,
-"last": 1793347263.1192474,
-"alerted": true
-},
-"cc1bca93-a798-4af1-95f9-4e26d076d076": {
-"rec": {
-"NEWSID": "cc1bca93-a798-4af1-95f9-4e26d076d076",
-"SCRIP_CD": 540062,
-"XML_NAME": "ANN_540062_CC1BCA93-A798-4AF1-95F9-4E26D076D076",
-"NEWSSUB": "Golden Crest Education & Services Ltd - 540062 - Result - Financial Result For The 02Nd Quarter And Half Year Ended 30/09/2026",
-"DT_TM": "2026-10-30T13:04:22.32",
-"NEWS_DT": "2026-10-30T13:04:22.32",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "3cbbc165-9cd0-4658-a6cd-365644ed1130.pdf",
-"MORE": "",
-"HEADLINE": "The Standalone Financial Result for the 02nd Quarter and half year ended 30/09/2026 and other items as per agenda attached herewith",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/golden-crest-education--services-ltd/goldencrest/540062/",
-"SLONGNAME": "Golden Crest Education & Services Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 7,
-"News_submission_dt": "2026-10-30T13:04:22",
-"DissemDT": "2026-10-30T13:04:22.32",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1359367,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793345721.2490246,
-"last": 1793347263.1192474,
+"last": 1793347380.3465252,
 "alerted": true
 },
 "4c17398b-3ab5-4c83-b11e-1a1bad5cb515": {
@@ -2557,15 +2523,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793347013.478224,
-"last": 1793347340.9456792,
+"last": 1793347380.3465252,
 "alerted": false
 }
 },
 "lag": [
-[
-"Union Bank of India",
-618
-],
 [
 "Varmora Granito Ltd",
 196
@@ -3761,6 +3723,10 @@
 [
 "Hardcastle & Waud Manufacturing Company Ltd",
 35
+],
+[
+"Golden Crest Education & Services Ltd",
+28
 ]
 ],
 "gem_use": {
@@ -3782,7 +3748,7 @@
 "2026-10-27": 421,
 "2026-10-28": 378,
 "2026-10-29": 405,
-"2026-10-30": 8
+"2026-10-30": 13
 },
 "pdfposted": {
 "543527|Sep-26|consolidated": {
@@ -3863,7 +3829,7 @@
 "rev": 17.359,
 "pat": -4.513000000000001,
 "t": 1793192518.4013336,
-"last": 1793347121.8070028
+"last": 1793347517.8870418
 },
 "500174|Sep-26|standalone": {
 "code": "500174",
@@ -3873,7 +3839,7 @@
 "rev": 0.0,
 "pat": 0.254,
 "t": 1793192846.240648,
-"last": 1793347121.8070028
+"last": 1793347517.8870418
 },
 "506906|Sep-26|standalone": {
 "code": "506906",
@@ -3883,7 +3849,7 @@
 "rev": 0.0,
 "pat": -0.147,
 "t": 1793193797.5701764,
-"last": 1793347121.8070028
+"last": 1793347517.8870418
 },
 "542034|Sep-26|standalone": {
 "code": "542034",
@@ -3893,7 +3859,7 @@
 "rev": 429.33000000000004,
 "pat": 4.269,
 "t": 1793195523.223554,
-"last": 1793347121.8070028
+"last": 1793347517.8870418
 },
 "540545|Sep-26|standalone": {
 "code": "540545",
@@ -4193,6 +4159,26 @@
 "rev": 466.81800000000004,
 "pat": 3.66,
 "t": 1793347366.453619,
+"last": 0
+},
+"532707|Sep-26|consolidated": {
+"code": "532707",
+"name": "Dynemic Products Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1270.255,
+"pat": 65.497,
+"t": 1793347496.8201942,
+"last": 0
+},
+"540062|Sep-26|standalone": {
+"code": "540062",
+"name": "Golden Crest Education & Services Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.8900000000000001,
+"pat": 0.48300000000000004,
+"t": 1793347508.2548072,
 "last": 0
 }
 },
@@ -5805,7 +5791,8 @@
 "6867435f-040c-4a55-a362-fb6854852058": 1,
 "fd66d272-57f8-416f-b778-b770830cd545": 1,
 "01232688-9764-42d7-b4f2-3dff7468ef73": 1,
-"c290dff3-02c8-4bc7-92e0-d616b5a961ec": 1
+"c290dff3-02c8-4bc7-92e0-d616b5a961ec": 1,
+"47ce3de3-278a-4bce-a56e-b927731d55cd": 1
 },
 "cons_expected": {
 "bf61e75a-b906-4a79-a11a-1d06ae02cf6c": 1,
@@ -6375,7 +6362,8 @@
 "72c19871-d8c2-4448-a5a2-e0d82588e097": 1,
 "4c17398b-3ab5-4c83-b11e-1a1bad5cb515": 1,
 "68bf5aaa-3093-4959-91c3-7f15ca68f90c": 1,
-"b952f6a4-394d-48a8-9d44-6528148d686f": 1
+"b952f6a4-394d-48a8-9d44-6528148d686f": 1,
+"45e12af7-30f0-4ceb-8732-c341807a9ac6": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
