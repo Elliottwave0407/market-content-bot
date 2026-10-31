@@ -1953,7 +1953,9 @@
 "42b335d8-703f-4611-b379-4059875af405",
 "54cff475-d948-48db-a886-bee83fd16e19",
 "8e9d00e0-9419-47e9-800e-35db6162ffde",
-"3f80eee4-45ad-4948-b547-98762b41d895"
+"3f80eee4-45ad-4948-b547-98762b41d895",
+"8e335401-f547-4862-9ded-987aec316d00",
+"fc7eafe6-218c-4e32-8222-fc167c879b32"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3180,7 +3182,8 @@
 "544173|Sep-26|na",
 "512399|Sep-26|consolidated",
 "526675|unverified|54cff475-d948-48db-a886-bee83fd16e19",
-"500250|Sep-26|consolidated"
+"500250|Sep-26|consolidated",
+"532100|Sep-26|standalone"
 ],
 "pending": {
 "5be91d37-3c49-404e-beaa-e9985b2db2eb": {
@@ -3218,7 +3221,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793453092.4642293,
-"last": 1793455539.3699465,
+"last": 1793455636.0958116,
 "alerted": false
 },
 "e4f9f320-9079-4bab-a08b-ac6bca5b806d": {
@@ -3256,45 +3259,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793454041.0877354,
-"last": 1793455539.3699465,
-"alerted": false
-},
-"fc7eafe6-218c-4e32-8222-fc167c879b32": {
-"rec": {
-"NEWSID": "fc7eafe6-218c-4e32-8222-fc167c879b32",
-"SCRIP_CD": 532100,
-"XML_NAME": "ANN_532100_FC7EAFE6-218C-4E32-8222-FC167C879B32",
-"NEWSSUB": "Indo City Infotech Ltd-$ - 532100 - Result For The Quarter And Half Year Ended September 2026",
-"DT_TM": "2026-10-31T19:22:55.51",
-"NEWS_DT": "2026-10-31T19:22:55.51",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "446dca5e-ab67-45c2-8ae0-7473b1d7a4a2.pdf",
-"MORE": "",
-"HEADLINE": "Please find the results for the quarter and half year ended 30th September, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/indo-city-infotech-ltd/indocity/532100/",
-"SLONGNAME": "Indo City Infotech Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 16,
-"News_submission_dt": "2026-10-31T19:22:55",
-"DissemDT": "2026-10-31T19:22:55.51",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 708497,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793454884.6330917,
-"last": 1793455539.3699465,
+"last": 1793455636.0958116,
 "alerted": false
 },
 "47a9f193-e5c9-4f8e-851d-555d85bc9586": {
@@ -3332,15 +3297,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793455273.7041965,
-"last": 1793455539.3699465,
+"last": 1793455636.0958116,
 "alerted": false
 }
 },
 "lag": [
-[
-"SJ Corporation Ltd",
-45
-],
 [
 "Damodar Industries Ltd-$",
 3
@@ -4536,6 +4497,10 @@
 [
 "Finelistings Technologies Ltd",
 46
+],
+[
+"Indo City Infotech Ltd-$",
+13
 ]
 ],
 "gem_use": {
@@ -4558,7 +4523,7 @@
 "2026-10-28": 378,
 "2026-10-29": 405,
 "2026-10-30": 450,
-"2026-10-31": 296
+"2026-10-31": 298
 },
 "pdfposted": {
 "543401|Sep-26|consolidated": {
@@ -4689,7 +4654,7 @@
 "rev": 1688.1770000000001,
 "pat": 361.357,
 "t": 1793360623.5163422,
-"last": 1793454935.0309296
+"last": 1793455675.4425724
 },
 "531861|Sep-26|consolidated": {
 "code": "531861",
@@ -4699,7 +4664,7 @@
 "rev": 111.378,
 "pat": 25.415000000000003,
 "t": 1793360986.715166,
-"last": 1793454935.0309296
+"last": 1793455675.4425724
 },
 "531400|Sep-26|consolidated": {
 "code": "531400",
@@ -4709,7 +4674,7 @@
 "rev": 394.0,
 "pat": 91.0,
 "t": 1793361274.8324733,
-"last": 1793454935.0309296
+"last": 1793455675.4425724
 },
 "542931|Sep-26|standalone": {
 "code": "542931",
@@ -4719,7 +4684,7 @@
 "rev": 0.026000000000000002,
 "pat": -0.36600000000000005,
 "t": 1793362207.582484,
-"last": 1793454935.0309296
+"last": 1793455675.4425724
 },
 "524208|Sep-26|consolidated": {
 "code": "524208",
@@ -5059,6 +5024,16 @@
 "rev": 9483.225,
 "pat": 939.4490000000001,
 "t": 1793455578.666755,
+"last": 0
+},
+"532100|Sep-26|standalone": {
+"code": "532100",
+"name": "Indo City Infotech Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 6.977,
+"pat": -2.515,
+"t": 1793455667.227203,
 "last": 0
 }
 },
@@ -7379,7 +7354,8 @@
 "73b8021f-78eb-4e81-8d26-c37b303aa304": 1,
 "b87e5a42-7380-4a5b-9320-aa200f8e516d": 1,
 "8e9d00e0-9419-47e9-800e-35db6162ffde": 1,
-"47a9f193-e5c9-4f8e-851d-555d85bc9586": 1
+"47a9f193-e5c9-4f8e-851d-555d85bc9586": 1,
+"8e335401-f547-4862-9ded-987aec316d00": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
