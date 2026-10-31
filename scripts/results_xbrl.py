@@ -64,7 +64,7 @@ def work(r):
             if resp.status_code in (401, 403): warm(); time.sleep(2 * (a + 1)); continue
             if resp.status_code != 200: time.sleep(2 * (a + 1)); continue
             n = parse(resp.text, r["to"])
-            return {**{k: r[k] for k in ("sym", "idx", "isin", "name", "to", "q", "cons", "audited", "filed", "xbrl")}, "n": n}
+            return {**{k: r.get(k) for k in ("sym", "idx", "isin", "name", "to", "q", "cons", "audited", "filed", "xbrl")}, "n": n}
         except Exception: time.sleep(2 * (a + 1))
     return None
 ok = bad = 0; buf = []
