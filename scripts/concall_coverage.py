@@ -72,33 +72,48 @@ p("days done", len(days_done), "of", total_days, "| NSE transcript filings", len
 
 # ---- BSE listing: ISIN -> code
 from bse import BSE
-isin2code = {}
+isin2code = {}; sym2code = {}; name2code = {}
+def nn(x):
+    x = re.sub(r"[^a-z0-9 ]+", " ", (x or "").lower())
+    x = re.sub(r"\b(limited|ltd|pvt|private|the|india|company|co|corporation|corp|inc)\b", " ", x)
+    return re.sub(r"\s+", " ", x).strip()
 with BSE(download_folder=tempfile.mkdtemp()) as b:
     for g in ("A", "B", "X", "XT", "T", "Z", "M", "MT", "MS", "P", "R", "F", "IF", "XD", "ZP", "SS", "ST", "Y"):
         try:
             for r in b.listSecurities(group=g):
-                if r.get("ISIN_NUMBER"): isin2code[r["ISIN_NUMBER"]] = str(r["SCRIP_CD"]).strip()
+                c_ = str(r["SCRIP_CD"]).strip()
+                if r.get("ISIN_NUMBER"): isin2code[r["ISIN_NUMBER"]] = c_
+                if r.get("scrip_id"): sym2code.setdefault(str(r["scrip_id"]).upper(), c_)
+                if r.get("Scrip_Name"): name2code.setdefault(nn(r["Scrip_Name"]), c_)
         except Exception: pass
-p("BSE ISINs known:", len(isin2code))
+try:
+    for c_, v in json.load(open(os.path.join(ROOT, "sector_map", "sector_map.json"))).items():
+        for k_ in (v.get("nse_symbol"), v.get("symbol")):
+            if k_: sym2code.setdefault(str(k_).upper(), c_)
+        if v.get("name"): name2code.setdefault(nn(v["name"]), c_)
+except Exception: pass
+p("BSE ISINs known:", len(isin2code), "| symbols", len(sym2code), "| names", len(name2code))
 # ---- stored records
-stored = collections.defaultdict(list)
+stored = collections.defaultdict(list); stored_name = collections.defaultdict(list)
 for f in glob.glob(os.path.join(ROOT, "concall_facts", "20*.jsonl")):
     for l in open(f, encoding="utf-8"):
         try: r = json.loads(l)
         except Exception: continue
         stored[str(r["code"])].append((r["day"], bool(r.get("skip"))))
-def near(code, day, tol=5):
+        if r.get("name"): stored_name[nn(r["name"])].append((r["day"], bool(r.get("skip"))))
+def near(code, day, tol=5, nm=None):
     dd = datetime.fromisoformat(day)
-    for sd, sk in stored.get(code, []):
+    for sd, sk in (stored.get(code, []) if code else []) + (stored_name.get(nm, []) if nm else []):
         if abs((datetime.fromisoformat(sd) - dd).days) <= tol: return "skip" if sk else "yes"
     return None
 cnt = collections.Counter(); by_m = collections.defaultdict(collections.Counter); miss = []; nse_only = set(); nse_only_sme = set()
 for r in filings.values():
-    code = isin2code.get(r["isin"])
-    if not code: st = "nse_only"; nse_only.add(r["symbol"]); (nse_only_sme.add(r["symbol"]) if r["idx"] == "sme" else None)
-    else:
-        n = near(code, r["day"])
-        st = "covered" if n == "yes" else ("covered_but_skipped" if n == "skip" else "bse_listed_missing")
+    code = isin2code.get(r["isin"]) or sym2code.get((r["symbol"] or "").upper()) or name2code.get(nn(r["name"]))
+    n = near(code, r["day"], nm=nn(r["name"]))
+    if n == "yes": st = "covered"
+    elif n == "skip": st = "covered_but_skipped"
+    elif code: st = "bse_listed_missing"
+    else: st = "nse_only"; nse_only.add(r["symbol"]); (nse_only_sme.add(r["symbol"]) if r["idx"] == "sme" else None)
     cnt[(st, r["idx"])] += 1; by_m[r["day"][:7]][st] += 1
     if st in ("nse_only", "bse_listed_missing", "covered_but_skipped"): miss.append({**r, "status": st, "bse_code": code})
 with open(os.path.join(OUT, "missing.jsonl"), "w", encoding="utf-8") as fh:
