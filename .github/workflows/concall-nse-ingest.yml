@@ -16,7 +16,7 @@ on:
         description: "which gaps to read"
         default: "nse_only,bse_listed_missing,covered_but_skipped"
 concurrency:
-  group: ${{ (github.event.inputs.dry || '1') == '1' && 'concall-nse-dry' || 'concall-extract-concall_facts' }}
+  group: ${{ (github.event.inputs.dry || '1') == '1' && 'concall-nse-dry' || 'concall-nse-live' }}
   cancel-in-progress: false
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
           SCHEMA_V: "3"
           MODELS: "nvidia/nemotron-3-ultra-550b-a55b"
           DRY: ${{ github.event.inputs.dry || '1' }}
-          OUT_DIR: ${{ (github.event.inputs.dry || '1') == '1' && 'concall_facts_nsedry' || 'concall_facts' }}
+          OUT_DIR: ${{ (github.event.inputs.dry || '1') == '1' && 'concall_facts_nsedry' || 'concall_facts_nse' }}
           MAXN: ${{ github.event.inputs.maxn || '20' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '60' }}
           WORKERS: ${{ github.event.inputs.workers || '4' }}
@@ -47,7 +47,7 @@ jobs:
         if: always()
         run: |
           git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/concall_facts store/concall_facts_nsedry store/concall_coverage 2>/dev/null || true
+          git add store/concall_coverage 2>/dev/null || true; git add store/concall_facts_nse 2>/dev/null || true; git add store/concall_facts_nsedry 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "Concall NSE ingest"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
