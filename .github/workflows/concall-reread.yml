@@ -38,7 +38,7 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           DRY: ${{ github.event.inputs.dry || '1' }}
           SCHEMA_V: ${{ github.event.inputs.schema_v || '2' }}
-          MODELS: "mistral:ministral-14b-latest,nvidia/nemotron-3-ultra-550b-a55b"
+          MODELS: "nvidia/nemotron-3-ultra-550b-a55b"
           MAXN: ${{ github.event.inputs.maxn || '6' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
           WORKERS: ${{ github.event.inputs.workers || '6' }}

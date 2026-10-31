@@ -38,6 +38,8 @@ jobs:
       - env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SCHEMA_V: "3"
+          MODELS: "nvidia/nemotron-3-ultra-550b-a55b"
           OUT_DIR: ${{ github.event.inputs.out_dir || 'concall_facts' }}
           MAXN: ${{ github.event.inputs.maxn || '0' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
