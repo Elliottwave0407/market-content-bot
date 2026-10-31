@@ -19,6 +19,10 @@ T0 = time.time(); OUT = os.path.join(CE.store.ROOT, "concall_compare"); os.maked
 def call_nv(model, text):
     """returns (items or None, seconds, note)"""
     t0 = time.time(); extra = {"thinking": False} if "deepseek" in model else {"enable_thinking": False}; note = ""
+    if model.startswith("mistral:"):
+        d_ = CE.call_mistral(model[8:], text)
+        if d_ is None: return None, time.time() - t0, "mistral_none"
+        return (d_.get("items") or []), time.time() - t0, ""
     for attempt in range(5):
         ta = time.time()
         try:
