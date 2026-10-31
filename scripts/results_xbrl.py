@@ -7,8 +7,9 @@ import requests
 from ci_out import p, publish
 import store
 DRY = (os.environ.get("DRY") or "1") == "1"; MAXN = int(os.environ.get("MAXN") or "0"); BUDGET = float(os.environ.get("BUDGET_MIN") or "150"); WORKERS = int(os.environ.get("WORKERS") or "4"); T0 = time.time()
-SRC = os.path.join(store.ROOT, "results_hist", "filings.jsonl")
-OUT = os.path.join(store.ROOT, "results_hist_dry" if DRY else "results_hist"); os.makedirs(OUT, exist_ok=True)
+HIST = os.environ.get("HIST") or "results_hist"
+SRC = os.path.join(store.ROOT, os.environ.get("SRC_DIR") or HIST, "filings.jsonl")
+OUT = os.path.join(store.ROOT, (HIST + "_dry") if DRY else HIST); os.makedirs(OUT, exist_ok=True)
 NUM = os.path.join(OUT, "numbers.jsonl")
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "*/*", "Referer": "https://www.nseindia.com/"}
 S = requests.Session()

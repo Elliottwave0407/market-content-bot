@@ -6,6 +6,10 @@ on:
         default: "1"
       maxn:
         default: "60"
+      hist:
+        default: "results_hist"
+      src_dir:
+        default: ""
       workers:
         default: "4"
       budget_min:
@@ -29,6 +33,8 @@ jobs:
       - env:
           DRY: ${{ github.event.inputs.dry }}
           MAXN: ${{ github.event.inputs.maxn }}
+          HIST: ${{ github.event.inputs.hist }}
+          SRC_DIR: ${{ github.event.inputs.src_dir }}
           WORKERS: ${{ github.event.inputs.workers }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min }}
         run: python scripts/results_xbrl.py
@@ -36,7 +42,7 @@ jobs:
         if: always()
         run: |
           git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/results_hist 2>/dev/null || true; git add store/results_hist_dry 2>/dev/null || true
+          git add store/results_hist 2>/dev/null || true; git add store/results_hist_dry 2>/dev/null || true; git add store/results_if 2>/dev/null || true; git add store/results_if_dry 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "Results history numbers"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
