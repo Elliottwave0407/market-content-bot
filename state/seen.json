@@ -1903,7 +1903,10 @@
 "b0b29775-bc15-4742-8ee6-daa1c2238110",
 "4dfb9eab-18fc-4475-ae7d-7a9f92b3eefa",
 "43f39e57-860f-42cb-a2ef-35b5b932ab4f",
-"ab5e40be-7c1c-4602-b951-8173aac165d2"
+"ab5e40be-7c1c-4602-b951-8173aac165d2",
+"48ccd747-a1e9-41d0-bf04-d44e94559455",
+"0f361cbb-8c76-4806-97ce-ec15c22f3662",
+"8f3643d8-46e3-41f3-bf16-7a52292d9c40"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3105,7 +3108,8 @@
 "513369|Sep-26|standalone",
 "540199|Sep-26|standalone",
 "540097|Sep-26|consolidated",
-"514240|Sep-26|na"
+"514240|Sep-26|na",
+"526349|Sep-26|consolidated"
 ],
 "pending": {
 "0123623a-0076-46fb-bce7-0e2fe32a90b0": {
@@ -3143,7 +3147,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793450997.0536175,
-"last": 1793451358.3277016,
+"last": 1793451382.1665196,
 "alerted": false
 },
 "4052dbd9-8a3e-4a5d-9788-2186e4689770": {
@@ -3181,7 +3185,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793451136.8010998,
-"last": 1793451358.3277016,
+"last": 1793451382.1665196,
+"alerted": false
+},
+"c16727b6-3a17-4743-ba3b-d148456487a1": {
+"rec": {
+"NEWSID": "c16727b6-3a17-4743-ba3b-d148456487a1",
+"SCRIP_CD": 501295,
+"XML_NAME": "ANN_501295_C16727B6-3A17-4743-BA3B-D148456487A1",
+"NEWSSUB": "Industrial Investment Trust Ltd - 501295 - Unaudited Financial Results (Standalone & Consolidated) For The Quarter And Half Year Ended September 30, 2026 - Regulations 30, 33 And Other Applicable Provisions Of The\r\nSEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015.",
+"DT_TM": "2026-10-31T18:25:55.203",
+"NEWS_DT": "2026-10-31T18:25:55.203",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "35697ed6-be24-46ec-823b-7f61de3a982d.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Financial results (Standalone and Consolidated) for Quarter Ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/industrial-investment-trust-ltd/iitl/501295/",
+"SLONGNAME": "Industrial Investment Trust Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 12,
+"News_submission_dt": "2026-10-31T18:25:55",
+"DissemDT": "2026-10-31T18:25:55.203",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 20319597,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793451382.1665196,
+"last": 1793451382.1665196,
 "alerted": false
 }
 },
@@ -4407,7 +4449,7 @@
 "2026-10-28": 378,
 "2026-10-29": 405,
 "2026-10-30": 450,
-"2026-10-31": 233
+"2026-10-31": 235
 },
 "pdfposted": {
 "543401|Sep-26|consolidated": {
@@ -4418,7 +4460,7 @@
 "rev": 2175.94,
 "pat": 89.659,
 "t": 1793345118.0460358,
-"last": 1793451240.2311454
+"last": 1793451601.799951
 },
 "521194|Sep-26|consolidated": {
 "code": "521194",
@@ -4428,7 +4470,7 @@
 "rev": 393.5,
 "pat": 292.0,
 "t": 1793346652.358893,
-"last": 1793451240.2311454
+"last": 1793451601.799951
 },
 "509760|Sep-26|standalone": {
 "code": "509760",
@@ -4438,7 +4480,7 @@
 "rev": 9.849,
 "pat": 1.354,
 "t": 1793347719.6112714,
-"last": 1793451240.2311454
+"last": 1793451601.799951
 },
 "531433|Sep-26|standalone": {
 "code": "531433",
@@ -4448,7 +4490,7 @@
 "rev": 4.8428,
 "pat": 0.19530000000000003,
 "t": 1793354011.4505663,
-"last": 1793451240.2311454
+"last": 1793451601.799951
 },
 "540953|Sep-26|standalone": {
 "code": "540953",
@@ -4789,6 +4831,16 @@
 "pat": 60.703,
 "t": 1793451225.006235,
 "last": 1793451329.2964544
+},
+"526349|Sep-26|consolidated": {
+"code": "526349",
+"name": "Craftroot Retail Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 3.75,
+"pat": 3.204,
+"t": 1793451592.6577735,
+"last": 0
 }
 },
 "audit": [
@@ -6540,7 +6592,8 @@
 "45a482c1-0df6-4297-940f-f239ac1c1015": 1,
 "b0b29775-bc15-4742-8ee6-daa1c2238110": 1,
 "0123623a-0076-46fb-bce7-0e2fe32a90b0": 1,
-"4dfb9eab-18fc-4475-ae7d-7a9f92b3eefa": 1
+"4dfb9eab-18fc-4475-ae7d-7a9f92b3eefa": 1,
+"48ccd747-a1e9-41d0-bf04-d44e94559455": 1
 },
 "cons_expected": {
 "288fb9cf-4b8e-43f9-90e2-4ef2eeab8eaf": 1,
