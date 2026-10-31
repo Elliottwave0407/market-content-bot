@@ -1817,7 +1817,8 @@
 "62ee215d-06e2-4061-88f9-663e8faf8c87",
 "ef2437d0-a37e-403c-b697-d45d8bc4622e",
 "10a7587c-38a4-4c2f-849c-f3959bad54f4",
-"e4f9c174-caa0-41d0-9dc2-b8a0d8911632"
+"e4f9c174-caa0-41d0-9dc2-b8a0d8911632",
+"0e206120-e0de-49d3-91eb-dd577a084908"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -2969,7 +2970,8 @@
 "500171|Sep-26|standalone",
 "543318|Sep-26|consolidated",
 "544370|Sep-26|na",
-"543239|Sep-26|consolidated"
+"543239|Sep-26|consolidated",
+"531508|Sep-26|consolidated"
 ],
 "pending": {
 "93848be9-b411-4eff-913f-0e1c619c27eb": {
@@ -3007,53 +3009,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793436941.537738,
-"last": 1793438375.5788596,
-"alerted": false
-},
-"0e206120-e0de-49d3-91eb-dd577a084908": {
-"rec": {
-"NEWSID": "0e206120-e0de-49d3-91eb-dd577a084908",
-"SCRIP_CD": 531508,
-"XML_NAME": "ANN_531508_0E206120-E0DE-49D3-91EB-DD577A084908",
-"NEWSSUB": "Eveready Industries India Ltd - 531508 - Financial Results For The Quarter And Half Year Ended 30Th September 2026",
-"DT_TM": "2026-10-31T14:37:29.803",
-"NEWS_DT": "2026-10-31T14:37:29.803",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "132fa873-ab23-498e-84fd-1ebcf04e801e.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter and half year ended 30th September 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/eveready-industries-india-ltd/eveready/531508/",
-"SLONGNAME": "Eveready Industries India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 6,
-"News_submission_dt": "2026-10-31T14:37:29",
-"DissemDT": "2026-10-31T14:37:29.803",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6377523,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793437708.5142477,
-"last": 1793438375.5788596,
+"last": 1793438467.541388,
 "alerted": false
 }
 },
 "lag": [
-[
-"SBI Funds Management Ltd",
-45
-],
 [
 "Cubex Tubings Ltd",
 121
@@ -4249,6 +4209,10 @@
 [
 "Nukleus Office Solutions Ltd",
 46
+],
+[
+"Eveready Industries India Ltd",
+13
 ]
 ],
 "gem_use": {
@@ -4282,7 +4246,7 @@
 "rev": 96.39,
 "pat": 4.517,
 "t": 1793269262.0918884,
-"last": 1793438146.0646536
+"last": 1793438448.6383235
 },
 "543270|Sep-26|standalone": {
 "code": "543270",
@@ -4292,7 +4256,7 @@
 "rev": 4067.65,
 "pat": 598.32,
 "t": 1793270877.168081,
-"last": 1793438146.0646536
+"last": 1793438448.6383235
 },
 "530167|Sep-26|standalone": {
 "code": "530167",
@@ -4302,7 +4266,7 @@
 "rev": 30.643,
 "pat": 4.889,
 "t": 1793271329.1901772,
-"last": 1793438146.0646536
+"last": 1793438448.6383235
 },
 "507300|Sep-26|standalone": {
 "code": "507300",
@@ -4312,7 +4276,7 @@
 "rev": 0.045000000000000005,
 "pat": -5.848,
 "t": 1793274432.4704688,
-"last": 1793438146.0646536
+"last": 1793438448.6383235
 },
 "503863|Sep-26|standalone": {
 "code": "503863",
@@ -4642,7 +4606,7 @@
 "rev": 2.3030000000000004,
 "pat": 0.10200000000000001,
 "t": 1793435377.5542653,
-"last": 1793438078.0761318
+"last": 1793438379.1358025
 },
 "530669|Sep-26|standalone": {
 "code": "530669",
@@ -4652,7 +4616,7 @@
 "rev": 0.0,
 "pat": -0.21600000000000003,
 "t": 1793436304.0959113,
-"last": 1793438078.0761318
+"last": 1793438379.1358025
 },
 "500171|Sep-26|standalone": {
 "code": "500171",
@@ -4662,7 +4626,7 @@
 "rev": 8080.299999999999,
 "pat": 1274.2,
 "t": 1793437227.1878037,
-"last": 1793438078.0761318
+"last": 1793438379.1358025
 },
 "543318|Sep-26|consolidated": {
 "code": "543318",
@@ -4672,7 +4636,17 @@
 "rev": 2993.9,
 "pat": 557.25,
 "t": 1793437520.964286,
-"last": 1793438078.0761318
+"last": 1793438379.1358025
+},
+"531508|Sep-26|consolidated": {
+"code": "531508",
+"name": "Eveready Industries India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4282.4,
+"pat": 319.20000000000005,
+"t": 1793438487.6695592,
+"last": 1793438496.4931679
 }
 },
 "audit": [
