@@ -40,7 +40,7 @@ jobs:
           OUT_DIR: ${{ (github.event.inputs.dry || '1') == '1' && 'concall_facts_nsedry' || 'concall_facts_nse' }}
           MAXN: ${{ github.event.inputs.maxn || '20' }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min || '60' }}
-          WORKERS: ${{ github.event.inputs.workers || '4' }}
+          WORKERS: "8"
           STATUSES: ${{ github.event.inputs.statuses }}
         run: python scripts/concall_nse_ingest.py
       - name: Save
@@ -61,5 +61,5 @@ jobs:
           echo "remaining: $R"
           if [ "$R" -gt 0 ]; then
             sleep 20
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-nse-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '4' }}' -f 'inputs[statuses]=${{ github.event.inputs.statuses }}' && echo "next run queued"
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-nse-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=8' -f 'inputs[statuses]=${{ github.event.inputs.statuses }}' && echo "next run queued"
           fi
