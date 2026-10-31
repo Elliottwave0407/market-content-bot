@@ -1855,7 +1855,9 @@
 "7c82b413-7618-41e0-b89c-ca88a57a281d",
 "81ba5da3-c96f-41ad-9f1f-22245dcee306",
 "dc63a7aa-6c51-46df-aa21-1c691b9582ba",
-"efaeb6cc-dc2b-4bd4-9e69-b980ff941933"
+"efaeb6cc-dc2b-4bd4-9e69-b980ff941933",
+"f9db6f90-4023-45d0-b751-d7a7b0e59d26",
+"60a417d2-0bcb-4c4f-a166-e36d2d5dda85"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3027,47 +3029,10 @@
 "531209|Sep-26|consolidated",
 "524768|Sep-26|standalone",
 "543327|Sep-26|na",
-"532139|Sep-26|standalone"
+"532139|Sep-26|standalone",
+"532555|Sep-26|na"
 ],
 "pending": {
-"60a417d2-0bcb-4c4f-a166-e36d2d5dda85": {
-"rec": {
-"NEWSID": "60a417d2-0bcb-4c4f-a166-e36d2d5dda85",
-"SCRIP_CD": 532555,
-"XML_NAME": "ANN_532555_60A417D2-0BCB-4C4F-A166-E36D2D5DDA85",
-"NEWSSUB": "NTPC Ltd - 532555 - Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended 30 Sep 2026",
-"DT_TM": "2026-10-31T15:35:47.547",
-"NEWS_DT": "2026-10-31T15:35:47.547",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "2dfda2e4-d9d0-4463-a195-bc89c412911f.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the Quarter and Half Year ended 30 Sep 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ntpc-ltd/ntpc/532555/",
-"SLONGNAME": "NTPC Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 8,
-"News_submission_dt": "2026-10-31T15:35:47",
-"DissemDT": "2026-10-31T15:35:47.547",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 18321204,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793441195.7600303,
-"last": 1793443806.4237282,
-"alerted": true
-},
 "7349a62d-3e5a-4285-90ee-97f389dda693": {
 "rec": {
 "NEWSID": "7349a62d-3e5a-4285-90ee-97f389dda693",
@@ -3090,7 +3055,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/technocrats-plasma-systems-ltd/technocrat/544877/",
 "SLONGNAME": "Technocrats Plasma Systems Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 8,
+"TotalPageCnt": 9,
 "News_submission_dt": "2026-10-31T15:44:35",
 "DissemDT": "2026-10-31T15:44:35.99",
 "TimeDiff": "00:00:00",
@@ -3103,7 +3068,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793441715.0289724,
-"last": 1793443806.4237282,
+"last": 1793443898.958473,
 "alerted": true
 },
 "4d23f2f1-9a7c-4fee-b6a1-33b689f861ec": {
@@ -3128,7 +3093,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/ashika-global-securities-ltd/ashikag/543766/",
 "SLONGNAME": "Ashika Global Securities Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 8,
+"TotalPageCnt": 9,
 "News_submission_dt": "2026-10-31T16:04:05",
 "DissemDT": "2026-10-31T16:04:05.913",
 "TimeDiff": "00:00:00",
@@ -3141,15 +3106,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793442952.0825014,
-"last": 1793443806.4237282,
+"last": 1793443898.958473,
 "alerted": false
 }
 },
 "lag": [
-[
-"Geojit Financial Services Ltd",
-47
-],
 [
 "Triveni Power Transmission Ltd",
 45
@@ -4345,6 +4306,10 @@
 [
 "G-Tech Info-Training Ltd",
 4
+],
+[
+"NTPC Ltd",
+45
 ]
 ],
 "gem_use": {
@@ -4367,7 +4332,7 @@
 "2026-10-28": 378,
 "2026-10-29": 405,
 "2026-10-30": 450,
-"2026-10-31": 76
+"2026-10-31": 79
 },
 "pdfposted": {
 "530167|Sep-26|standalone": {
@@ -4688,7 +4653,7 @@
 "rev": 0.0,
 "pat": -0.21600000000000003,
 "t": 1793436304.0959113,
-"last": 1793443561.8356338
+"last": 1793443864.4760845
 },
 "500171|Sep-26|standalone": {
 "code": "500171",
@@ -4698,7 +4663,7 @@
 "rev": 8080.299999999999,
 "pat": 1274.2,
 "t": 1793437227.1878037,
-"last": 1793443561.8356338
+"last": 1793443864.4760845
 },
 "543318|Sep-26|consolidated": {
 "code": "543318",
@@ -4708,7 +4673,7 @@
 "rev": 2993.9,
 "pat": 557.25,
 "t": 1793437520.964286,
-"last": 1793443561.8356338
+"last": 1793443864.4760845
 },
 "531508|Sep-26|consolidated": {
 "code": "531508",
@@ -4718,7 +4683,7 @@
 "rev": 4282.4,
 "pat": 319.20000000000005,
 "t": 1793438487.6695592,
-"last": 1793443561.8356338
+"last": 1793443864.4760845
 },
 "533146|Sep-26|consolidated": {
 "code": "533146",
@@ -4768,17 +4733,7 @@
 "rev": 1304.554,
 "pat": 87.84,
 "t": 1793442583.413825,
-"last": 1793443059.1349404
-},
-"517370|Sep-26|standalone": {
-"code": "517370",
-"name": "Incap Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 99.63900000000001,
-"pat": 1.345,
-"t": 1793442658.6636708,
-"last": 1793443059.1349404
+"last": 1793443833.0802386
 },
 "531209|Sep-26|consolidated": {
 "code": "531209",
@@ -4788,17 +4743,7 @@
 "rev": 2277.0,
 "pat": 212.5,
 "t": 1793442922.5101204,
-"last": 1793443061.8881195
-},
-"524768|Sep-26|standalone": {
-"code": "524768",
-"name": "Emmessar Biotech & Nutrition Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 1.092,
-"pat": 1.403,
-"t": 1793442938.9413562,
-"last": 1793443061.8881195
+"last": 1793443833.0802386
 },
 "532139|Sep-26|standalone": {
 "code": "532139",
@@ -4808,18 +4753,10 @@
 "rev": 0.0,
 "pat": -1.229,
 "t": 1793443351.7480097,
-"last": 0
+"last": 1793443839.5781517
 }
 },
 "audit": [
-[
-"Mardia Samyoung Capillary Tubes Company Ltd",
-"ok"
-],
-[
-"Deepa Jewellers Ltd",
-"diff"
-],
 [
 "Sunteck Realty Ltd",
 "ok"
@@ -6011,6 +5948,14 @@
 [
 "Devine Impex Ltd",
 "ok"
+],
+[
+"Incap Ltd",
+"ok"
+],
+[
+"Emmessar Biotech & Nutrition Ltd",
+"ok"
 ]
 ],
 "standalone_only": {
@@ -6534,7 +6479,8 @@
 "89a348dd-b0cc-4314-8c0e-6d377b49459d": 1,
 "7c82b413-7618-41e0-b89c-ca88a57a281d": 1,
 "81ba5da3-c96f-41ad-9f1f-22245dcee306": 1,
-"efaeb6cc-dc2b-4bd4-9e69-b980ff941933": 1
+"efaeb6cc-dc2b-4bd4-9e69-b980ff941933": 1,
+"a53bd423-7ffb-4f3e-ad4e-614322b070e5": 1
 },
 "cons_expected": {
 "288fb9cf-4b8e-43f9-90e2-4ef2eeab8eaf": 1,
