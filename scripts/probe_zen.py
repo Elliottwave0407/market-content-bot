@@ -1,5 +1,6 @@
 import re, requests, fitz
 from ci_out import p, publish
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pdf_card as pc
 S = requests.Session()
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Referer": "https://www.nseindia.com/"}
