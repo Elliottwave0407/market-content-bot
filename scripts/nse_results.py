@@ -148,6 +148,22 @@ def arith_col(d, i):
     if None not in (rv_, oi_, ti): res.append(tol(rv_ + oi_, ti) or tol(rv_, ti))      # catches a mis-read sales figure
     return bool(res) and all(res)
 
+def consolidated_pages(content):
+    """Pages of the PDF holding a CONSOLIDATED statement of profit and loss (+ the next page), as a small PDF; None if the filing has no consolidated results table."""
+    try:
+        import fitz
+        d = fitz.open(stream=content, filetype="pdf"); keep = set()
+        for i in range(d.page_count):
+            t = d[i].get_text().lower()
+            if "consolidated" in t and sum(k in t for k in pc.KEYS) >= 2:
+                keep.add(i); keep.add(min(i + 1, d.page_count - 1))
+        if not keep: return None
+        out = fitz.open()
+        for i in sorted(keep): out.insert_pdf(d, from_page=i, to_page=i)
+        return out.tobytes()
+    except Exception:
+        return None
+
 def read_card(content, name, bse=None, code=None):
     """-> (dict(basis, q, quarters) or None, reason)"""
     key = pc.geminikey()
@@ -189,6 +205,22 @@ def read_card(content, name, bse=None, code=None):
     q = rf.qcode(qe[0], qe[1])
     cons = out.get("consolidated")
     has_cons = isinstance(cons, dict) and pc.val(cons, "revenue", 0) is not None and pc.val(cons, "pat", 0) is not None
+    if not has_cons:
+        # the filing may carry a consolidated table the read missed (Zen Technologies 31 Oct 2026 went out standalone): look for it, re-read those pages, never fall back to standalone silently
+        cpages = consolidated_pages(content)
+        if cpages is not None:
+            try:
+                out2, err2 = gr.read_pdf(key, pc.MODEL, cpages, tries=2, timeout=120)
+                if out2 is not None:
+                    out2 = pc.escalate(out2, key, cpages, timeout=120)
+                    c2 = out2.get("consolidated")
+                    if isinstance(c2, dict) and pc.val(c2, "revenue", 0) is not None and pc.val(c2, "pat", 0) is not None:
+                        out["consolidated"] = c2; cons = c2; has_cons = True
+                        p(f"  {name}: consolidated recovered on a targeted re-read")
+            except Exception as e:
+                p(f"  {name}: consolidated re-read failed {type(e).__name__}")
+            if not has_cons:
+                return None, "filing has a consolidated results table but it could not be read (not posting standalone)"
     order = ("consolidated", "standalone") if has_cons else ("standalone",)
     for basis in order:
         d = out.get(basis)
