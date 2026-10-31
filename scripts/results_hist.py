@@ -61,7 +61,9 @@ for idx, sym, isin in todo:
     js = fetch(idx, sym)
     if js is None: errs += 1; continue
     kept = 0
+    if not isinstance(js, list): js = js.get('data', []) if isinstance(js, dict) else []
     for x in js:
+        if not isinstance(x, dict): continue
         td = pd(x.get("toDate") or "")
         if not td or td < QFROM: continue
         rows.append({"sym": sym, "idx": idx, "isin": x.get("isin") or isin, "name": x.get("companyName"), "from": x.get("fromDate"), "to": x.get("toDate"), "q": x.get("relatingTo"), "audited": x.get("audited") or x.get("resultDescription"), "cons": x.get("consolidated"), "filed": x.get("filingDate") or x.get("exchdisstime"), "xbrl": x.get("xbrl"), "ind": x.get("indAs")}); kept += 1
