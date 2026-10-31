@@ -1900,7 +1900,9 @@
 "efdb3dba-91f5-4a19-b260-a9fb6bdebc8c",
 "5d03b2c5-a7b5-4835-862c-166d20239a40",
 "45a482c1-0df6-4297-940f-f239ac1c1015",
-"b0b29775-bc15-4742-8ee6-daa1c2238110"
+"b0b29775-bc15-4742-8ee6-daa1c2238110",
+"4dfb9eab-18fc-4475-ae7d-7a9f92b3eefa",
+"43f39e57-860f-42cb-a2ef-35b5b932ab4f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3099,7 +3101,9 @@
 "531529|Sep-26|na",
 "506196|Sep-26|standalone",
 "516030|Sep-26|consolidated",
-"513369|Sep-26|standalone"
+"513369|Sep-26|standalone",
+"540199|Sep-26|standalone",
+"540097|Sep-26|consolidated"
 ],
 "pending": {
 "ab5e40be-7c1c-4602-b951-8173aac165d2": {
@@ -3137,7 +3141,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793448438.8841815,
-"last": 1793450997.0536175,
+"last": 1793451136.8010998,
 "alerted": false
 },
 "0123623a-0076-46fb-bce7-0e2fe32a90b0": {
@@ -3175,7 +3179,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793450997.0536175,
-"last": 1793450997.0536175,
+"last": 1793451136.8010998,
+"alerted": false
+},
+"4052dbd9-8a3e-4a5d-9788-2186e4689770": {
+"rec": {
+"NEWSID": "4052dbd9-8a3e-4a5d-9788-2186e4689770",
+"SCRIP_CD": 526349,
+"XML_NAME": "ANN_526349_4052DBD9-8A3E-4A5D-9788-2186E4689770",
+"NEWSSUB": "Craftroot Retail Ltd - 526349 - Unaudited Financial Results For The Quarter Ended 30Th September 2026",
+"DT_TM": "2026-10-31T18:21:10.977",
+"NEWS_DT": "2026-10-31T18:21:10.977",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "26f0e8f7-4502-4617-b34b-0423257af14d.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited financial results for the quarter ended 30th September 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/craftroot-retail-ltd/craftroot/526349/",
+"SLONGNAME": "Craftroot Retail Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 12,
+"News_submission_dt": "2026-10-31T18:21:10",
+"DissemDT": "2026-10-31T18:21:10.977",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 2304843,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793451136.8010998,
+"last": 1793451136.8010998,
 "alerted": false
 }
 },
@@ -4401,7 +4443,7 @@
 "2026-10-28": 378,
 "2026-10-29": 405,
 "2026-10-30": 450,
-"2026-10-31": 224
+"2026-10-31": 228
 },
 "pdfposted": {
 "543401|Sep-26|consolidated": {
@@ -4412,7 +4454,7 @@
 "rev": 2175.94,
 "pat": 89.659,
 "t": 1793345118.0460358,
-"last": 1793450935.3555825
+"last": 1793451240.2311454
 },
 "521194|Sep-26|consolidated": {
 "code": "521194",
@@ -4422,7 +4464,7 @@
 "rev": 393.5,
 "pat": 292.0,
 "t": 1793346652.358893,
-"last": 1793450935.3555825
+"last": 1793451240.2311454
 },
 "509760|Sep-26|standalone": {
 "code": "509760",
@@ -4432,7 +4474,7 @@
 "rev": 9.849,
 "pat": 1.354,
 "t": 1793347719.6112714,
-"last": 1793450935.3555825
+"last": 1793451240.2311454
 },
 "531433|Sep-26|standalone": {
 "code": "531433",
@@ -4442,7 +4484,7 @@
 "rev": 4.8428,
 "pat": 0.19530000000000003,
 "t": 1793354011.4505663,
-"last": 1793450935.3555825
+"last": 1793451240.2311454
 },
 "540953|Sep-26|standalone": {
 "code": "540953",
@@ -4762,6 +4804,26 @@
 "rev": 264.74690000000004,
 "pat": 19.6263,
 "t": 1793451114.0533757,
+"last": 0
+},
+"540199|Sep-26|standalone": {
+"code": "540199",
+"name": "Corporate Merchant Bankers Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 22.812,
+"pat": -26.247000000000003,
+"t": 1793451216.4246204,
+"last": 0
+},
+"540097|Sep-26|consolidated": {
+"code": "540097",
+"name": "Gamco Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1405.784,
+"pat": 60.703,
+"t": 1793451225.006235,
 "last": 0
 }
 },
@@ -6513,7 +6575,8 @@
 "5e4d08f3-3ca9-4de5-be75-f995787c8c60": 1,
 "45a482c1-0df6-4297-940f-f239ac1c1015": 1,
 "b0b29775-bc15-4742-8ee6-daa1c2238110": 1,
-"0123623a-0076-46fb-bce7-0e2fe32a90b0": 1
+"0123623a-0076-46fb-bce7-0e2fe32a90b0": 1,
+"4dfb9eab-18fc-4475-ae7d-7a9f92b3eefa": 1
 },
 "cons_expected": {
 "288fb9cf-4b8e-43f9-90e2-4ef2eeab8eaf": 1,
@@ -7039,7 +7102,9 @@
 "4057945f-f0b9-4ec5-a724-ebbfef9ead69": 1,
 "184e870b-3b37-43dd-bc6e-0e70098b9495": 1,
 "efdb3dba-91f5-4a19-b260-a9fb6bdebc8c": 1,
-"8f3643d8-46e3-41f3-bf16-7a52292d9c40": 1
+"8f3643d8-46e3-41f3-bf16-7a52292d9c40": 1,
+"43f39e57-860f-42cb-a2ef-35b5b932ab4f": 1,
+"4052dbd9-8a3e-4a5d-9788-2186e4689770": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
