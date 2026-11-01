@@ -48,12 +48,7 @@ jobs:
         run: python scripts/concall_extract.py
       - name: Save facts to the store
         if: always()
-        run: |
-          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/concall_facts store/concall_facts_m* 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -q -m "Concall facts"
-          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+        run: bash scripts/safe_push.sh "Concall facts" store/concall_facts
       - name: Chain the next run while old days remain
         if: always()
         env:

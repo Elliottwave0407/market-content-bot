@@ -45,12 +45,7 @@ jobs:
         run: python scripts/concall_reread.py
       - name: Save
         if: always()
-        run: |
-          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/concall_facts store/concall_reread 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -q -m "Concall re-read"
-          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+        run: bash scripts/safe_push.sh "Concall re-read" store/concall_facts store/concall_reread
       - name: Hand over to the next engine (one NVIDIA engine at a time)
         if: always()
         env:
