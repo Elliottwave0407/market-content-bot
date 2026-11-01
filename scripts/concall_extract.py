@@ -287,7 +287,7 @@ def main():
     d = datetime.fromisoformat(c["head"]) + timedelta(days=1)
     end = datetime.fromisoformat(today)
     while d <= end and not out_of_time():
-        if d.weekday() < 5:
+        if True:   # weekends included: companies file transcripts on Saturdays and Sundays too
             r = run_day(d.strftime("%Y-%m-%d"), done); p("NEW", d.date(), "rows/new/items/skip/fail", r)
             save(done)
         c["head"] = d.strftime("%Y-%m-%d"); d += timedelta(days=1)

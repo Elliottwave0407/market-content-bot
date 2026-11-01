@@ -60,6 +60,9 @@ jobs:
           SV="${{ github.event.inputs.schema_v || '2' }}"; SF=""; [ "$SV" != "2" ] && SF="_v$SV"
           R=$(python3 -c "import json;d=json.load(open('store/concall_reread/_state$SF.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
           echo "remaining: $R"
+          # yield: a waiting or running concall-extract (fresh filings) goes first; it re-dispatches this re-read when it ends
+          E=$(gh api "repos/${{ github.repository }}/actions/workflows/concall-extract.yml/runs?per_page=10" -q '[.workflow_runs[]|select(.status!="completed")]|length' 2>/dev/null || echo 0)
+          if [ "${E:-0}" -gt 0 ]; then echo "concall-extract is waiting/running: not chaining the re-read now"; exit 0; fi
           if [ "$R" -gt 0 ]; then
             sleep 20
             gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '150' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '6' }}' -f "inputs[schema_v]=$SV" && echo "next run queued"
