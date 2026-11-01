@@ -8,6 +8,9 @@ on:
       n:
         description: "transcripts"
         default: "16"
+      src:
+        description: "bse = decks from BSE listing, blank = NSE last 8 days"
+        default: ""
       workers:
         default: "3"
       stored:
@@ -38,6 +41,7 @@ jobs:
           MODEL_CAP_MIN: "30"
           SCHEMA_V: ${{ github.event.inputs.schema_v || '3' }}
           STORED: ${{ github.event.inputs.stored }}
+          SRC: ${{ github.event.inputs.src }}
           MODELS: ${{ github.event.inputs.models }}
           N: ${{ github.event.inputs.n }}
           WORKERS: ${{ github.event.inputs.workers }}

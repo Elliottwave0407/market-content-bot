@@ -47,7 +47,7 @@ def call_nv(model, text):
 PPT_PROMPT = """You read the TEXT of an Indian listed company's investor presentation (slides converted to text). Extract the concrete, decision-relevant facts the COMPANY states. Return ONLY JSON:
 {"items":[{"cat":"<one category>","statement":"short plain summary (max 30 words)","period":"e.g. Q2 FY27, H1 FY27, FY26, FY28E, or null","value":"number or range exactly as stated, or null","direction":"up|down|flat|null","quote":"ONE single line from ONE slide, copied character for character (one bullet or one table row; slide text comes as separate short lines, so never join lines from different bullets, columns or slides, never shorten or paraphrase, no ellipses); choose the line that carries the key number; under 200 characters"}]}
 Categories: results (revenue, EBITDA, margin, PAT, growth), segment (segment or product revenue and margin), guidance (targets, outlook), order_book, capex, capacity, kpi (a sector KPI: AUM, GNPA, NIM, ARPOB, occupancy, volumes, realisation, store count, pre-sales; name the KPI), balance_sheet (debt, net debt, cash, working capital, ROE, ROCE), geography, customers, mna, shareholder_returns, strategy, risk, other.
-Rules: up to 28 items, the most decision-relevant, numbers first. If a figure and its label sit on different lines, quote the line with the figure and put the label in the statement only if that same line says it. Every quote must be copied word for word from the text. The statement may say ONLY what the quote says (no added units, scope, periods or comparisons). Do not invent numbers. If the text has nothing usable, return {"items":[]}. No investment advice."""
+Rules: every statement must name the period it refers to (for example Q2 FY27, H1 FY26, FY25) only if the quoted line or its slide heading says so; if no period is visible, say period not stated. The quote must be ONE line of text. Up to 28 items, the most decision-relevant, numbers first. If a figure and its label sit on different lines, quote the line with the figure and put the label in the statement only if that same line says it. Every quote must be copied word for word from the text. The statement may say ONLY what the quote says (no added units, scope, periods or comparisons). Do not invent numbers. If the text has nothing usable, return {"items":[]}. No investment advice."""
 CE.PROMPT = PPT_PROMPT; CE.MAXTOK = 6000
 import fitz
 from datetime import datetime, timedelta
@@ -55,7 +55,13 @@ OUT = os.path.join(CE.store.ROOT, "ppt_compare"); os.makedirs(OUT, exist_ok=True
 H_ = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json, text/plain, */*", "Referer": "https://www.nseindia.com/companies-listing/corporate-filings-announcements"}
 S_ = requests.Session(); S_.get(H_["Referer"], headers={**H_, "Accept": "text/html"}, timeout=40)
 cands = []
-for dd in range(8):
+if os.environ.get("SRC") == "bse":
+    import json as _j
+    rows_ = [_j.loads(l) for l in open(os.path.join(CE.store.ROOT, "ppt_listing", "bse_ppt.jsonl"), encoding="utf-8")]
+    lim_ = (datetime.now() - timedelta(days=45)).strftime("%Y-%m-%d")
+    for x in rows_:
+        if x["dt"][:10] >= lim_ and x["att"].lower().endswith(".pdf"): cands.append({"sym": x["code"], "name": x["name"], "day": x["dt"][:10], "url": x["url"], "idx": "bse"})
+for dd in range(0 if os.environ.get("SRC") == "bse" else 8):
     day = (datetime.now() - timedelta(days=dd)).strftime("%d-%m-%Y")
     for idx in ("equities", "sme"):
         try:
@@ -70,7 +76,7 @@ for r in cands:
     if len(docs) >= N or tried >= N * 3: break
     tried += 1
     try:
-        c = S_.get(r["url"], headers=H_, timeout=90).content; d_ = fitz.open(stream=c, filetype="pdf")
+        c = S_.get(r["url"], headers=(H_ if r["idx"] != "bse" else {**H_, "Referer": "https://www.bseindia.com/"}), timeout=90).content; d_ = fitz.open(stream=c, filetype="pdf")
         t = "\n".join(f"[slide {i+1}]\n" + d_[i].get_text() for i in range(min(d_.page_count, 80)))
     except Exception: continue
     if len(t.split()) < 500: imgonly += 1; continue
