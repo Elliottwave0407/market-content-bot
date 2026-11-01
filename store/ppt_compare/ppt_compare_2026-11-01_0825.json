@@ -1,0 +1,437 @@
+{
+ "summary": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "docs": 30,
+   "sec_per_doc": 73,
+   "chunk_fails": "0/30",
+   "facts_per_doc": 20.1,
+   "verified_of_raw": 0.66,
+   "struct_A": 0.49,
+   "judged": 274,
+   "yes": 0.89,
+   "partial": 0.1,
+   "no": 0.01,
+   "analyst": 0.0,
+   "numbers_vs_union": 1.0,
+   "notes": {
+    "http429": 10
+   }
+  }
+ },
+ "per_doc": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "532689|2026-10-28": {
+    "n_raw": 28,
+    "n_ok": 12,
+    "secs": 30.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "543663|2026-10-26": {
+    "n_raw": 28,
+    "n_ok": 18,
+    "secs": 39.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "505872|2026-10-31": {
+    "n_raw": 41,
+    "n_ok": 29,
+    "secs": 59.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "509930|2026-10-26": {
+    "n_raw": 27,
+    "n_ok": 14,
+    "secs": 46.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500330|2026-10-27": {
+    "n_raw": 27,
+    "n_ok": 14,
+    "secs": 43.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540767|2026-10-22": {
+    "n_raw": 28,
+    "n_ok": 23,
+    "secs": 98.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532809|2026-10-29": {
+    "n_raw": 32,
+    "n_ok": 15,
+    "secs": 94.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500800|2026-10-26": {
+    "n_raw": 43,
+    "n_ok": 22,
+    "secs": 44.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "500101|2026-10-28": {
+    "n_raw": 28,
+    "n_ok": 21,
+    "secs": 167.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "530117|2026-10-30": {
+    "n_raw": 28,
+    "n_ok": 21,
+    "secs": 36.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "543397|2026-10-22": {
+    "n_raw": 30,
+    "n_ok": 23,
+    "secs": 142.7,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "523694|2026-10-28": {
+    "n_raw": 28,
+    "n_ok": 25,
+    "secs": 112.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544430|2026-10-29": {
+    "n_raw": 28,
+    "n_ok": 20,
+    "secs": 56.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "544868|2026-10-29": {
+    "n_raw": 44,
+    "n_ok": 23,
+    "secs": 101.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544519|2026-09-23": {
+    "n_raw": 21,
+    "n_ok": 19,
+    "secs": 59.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "540879|2026-10-24": {
+    "n_raw": 27,
+    "n_ok": 4,
+    "secs": 82.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "543397|2026-10-26": {
+    "n_raw": 32,
+    "n_ok": 8,
+    "secs": 46.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "542752|2026-10-30": {
+    "n_raw": 32,
+    "n_ok": 19,
+    "secs": 81.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544344|2026-10-31": {
+    "n_raw": 39,
+    "n_ok": 22,
+    "secs": 94.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532754|2026-10-28": {
+    "n_raw": 29,
+    "n_ok": 25,
+    "secs": 121.7,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544184|2026-10-31": {
+    "n_raw": 35,
+    "n_ok": 17,
+    "secs": 102.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544735|2026-10-08": {
+    "n_raw": 30,
+    "n_ok": 23,
+    "secs": 104.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "539268|2026-10-27": {
+    "n_raw": 27,
+    "n_ok": 26,
+    "secs": 55.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "543318|2026-10-31": {
+    "n_raw": 27,
+    "n_ok": 10,
+    "secs": 38.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500271|2026-10-27": {
+    "n_raw": 39,
+    "n_ok": 35,
+    "secs": 82.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544311|2026-10-21": {
+    "n_raw": 28,
+    "n_ok": 26,
+    "secs": 87.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532187|2026-10-23": {
+    "n_raw": 28,
+    "n_ok": 26,
+    "secs": 27.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "530475|2026-10-25": {
+    "n_raw": 31,
+    "n_ok": 28,
+    "secs": 58.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500331|2026-10-28": {
+    "n_raw": 28,
+    "n_ok": 17,
+    "secs": 35.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532884|2026-10-28": {
+    "n_raw": 27,
+    "n_ok": 19,
+    "secs": 29.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   }
+  }
+ },
+ "docs": [
+  {
+   "key": "532689|2026-10-28",
+   "name": "PVR Inox Ltd",
+   "day": "2026-10-28"
+  },
+  {
+   "key": "543663|2026-10-26",
+   "name": "Five-Star Business Finance Ltd",
+   "day": "2026-10-26"
+  },
+  {
+   "key": "505872|2026-10-31",
+   "name": "WPIL Ltd",
+   "day": "2026-10-31"
+  },
+  {
+   "key": "509930|2026-10-26",
+   "name": "Supreme Industries Ltd",
+   "day": "2026-10-26"
+  },
+  {
+   "key": "500330|2026-10-27",
+   "name": "Raymond Ltd",
+   "day": "2026-10-27"
+  },
+  {
+   "key": "540767|2026-10-22",
+   "name": "Nippon Life India Asset Management Ltd",
+   "day": "2026-10-22"
+  },
+  {
+   "key": "532809|2026-10-29",
+   "name": "Firstsource Solutions Ltd",
+   "day": "2026-10-29"
+  },
+  {
+   "key": "500800|2026-10-26",
+   "name": "Tata Consumer Products Ltd",
+   "day": "2026-10-26"
+  },
+  {
+   "key": "500101|2026-10-28",
+   "name": "Arvind Ltd",
+   "day": "2026-10-28"
+  },
+  {
+   "key": "530117|2026-10-30",
+   "name": "Privi Speciality Chemicals Ltd",
+   "day": "2026-10-30"
+  },
+  {
+   "key": "543397|2026-10-22",
+   "name": "Sapphire Foods India Ltd",
+   "day": "2026-10-22"
+  },
+  {
+   "key": "523694|2026-10-28",
+   "name": "Apcotex Industries Ltd",
+   "day": "2026-10-28"
+  },
+  {
+   "key": "544430|2026-10-29",
+   "name": "Sambhv Steel Tubes Ltd",
+   "day": "2026-10-29"
+  },
+  {
+   "key": "544868|2026-10-29",
+   "name": "Milky Mist Dairy Food Ltd",
+   "day": "2026-10-29"
+  },
+  {
+   "key": "544519|2026-09-23",
+   "name": "Euro Pratik Sales Ltd",
+   "day": "2026-09-23"
+  },
+  {
+   "key": "540879|2026-10-24",
+   "name": "Apollo Micro Systems Ltd",
+   "day": "2026-10-24"
+  },
+  {
+   "key": "543397|2026-10-26",
+   "name": "Sapphire Foods India Ltd",
+   "day": "2026-10-26"
+  },
+  {
+   "key": "542752|2026-10-30",
+   "name": "Affle 3I Ltd",
+   "day": "2026-10-30"
+  },
+  {
+   "key": "544344|2026-10-31",
+   "name": "SPR Auto Technologies Ltd",
+   "day": "2026-10-31"
+  },
+  {
+   "key": "532754|2026-10-28",
+   "name": "GMR Airports Ltd",
+   "day": "2026-10-28"
+  },
+  {
+   "key": "544184|2026-10-31",
+   "name": "Borosil Scientific Ltd",
+   "day": "2026-10-31"
+  },
+  {
+   "key": "544735|2026-10-08",
+   "name": "Novus Loyalty Ltd",
+   "day": "2026-10-08"
+  },
+  {
+   "key": "539268|2026-10-27",
+   "name": "Syngene International Ltd",
+   "day": "2026-10-27"
+  },
+  {
+   "key": "543318|2026-10-31",
+   "name": "Clean Science and Technology Ltd",
+   "day": "2026-10-31"
+  },
+  {
+   "key": "500271|2026-10-27",
+   "name": "Max Financial Services Ltd",
+   "day": "2026-10-27"
+  },
+  {
+   "key": "544311|2026-10-21",
+   "name": "International Gemological Institute Ltd",
+   "day": "2026-10-21"
+  },
+  {
+   "key": "532187|2026-10-23",
+   "name": "Indusind Bank Ltd",
+   "day": "2026-10-23"
+  },
+  {
+   "key": "530475|2026-10-25",
+   "name": "Tinna Rubber and Infrastructure Ltd",
+   "day": "2026-10-25"
+  },
+  {
+   "key": "500331|2026-10-28",
+   "name": "Pidilite Industries Ltd",
+   "day": "2026-10-28"
+  },
+  {
+   "key": "532884|2026-10-28",
+   "name": "Refex Industries Ltd",
+   "day": "2026-10-28"
+  }
+ ]
+}
