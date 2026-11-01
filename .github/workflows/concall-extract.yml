@@ -67,15 +67,11 @@ jobs:
             sleep 20
             gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-extract.yml/dispatches -f ref=main && echo "next run queued"
           fi
-      - name: Resume the re-read after fresh filings are stored
+      - name: Hand over to the next engine (one NVIDIA engine at a time)
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           [ "${{ github.event.inputs.out_dir || 'concall_facts' }}" != "concall_facts" ] && exit 0
-          R=$(python3 -c "import json;d=json.load(open('store/concall_reread/_state_v3.json'));print(d['remaining'])" 2>/dev/null || echo 1)
-          echo "re-read remaining: $R"
-          if [ "$R" -gt 0 ]; then
-            sleep 15
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' -f 'inputs[schema_v]=3' && echo "re-read resumed"
-          fi
+          git pull --rebase -q origin main || true
+          bash scripts/next_engine.sh concall-extract

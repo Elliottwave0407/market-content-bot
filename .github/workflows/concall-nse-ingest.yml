@@ -51,15 +51,10 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -q -m "Concall NSE ingest"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
-      - name: Chain the next live run while gaps remain
+      - name: Hand over to the next engine (one NVIDIA engine at a time)
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           [ "${{ github.event.inputs.dry || '1' }}" = "1" ] && { echo "dry run: no chaining"; exit 0; }
-          R=$(python3 -c "import json;d=json.load(open('store/concall_coverage/_ingest_state.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
-          echo "remaining: $R"
-          if [ "$R" -gt 0 ]; then
-            sleep 20
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/concall-nse-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=8' -f 'inputs[statuses]=${{ github.event.inputs.statuses }}' && echo "next run queued"
-          fi
+          bash scripts/next_engine.sh concall-nse-ingest

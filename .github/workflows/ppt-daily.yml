@@ -34,19 +34,31 @@ jobs:
           FROM=$F python scripts/ppt_list_nse.py
           FROM=$F python scripts/ppt_list_bse.py
           python scripts/ppt_merge.py
+      - name: Refresh the reader's remaining count
+        run: |
+          python3 - <<'PY'
+          import json,os
+          D='store/ppt_facts/'; os.makedirs(D,exist_ok=True)
+          docs=[json.loads(l) for l in open('store/ppt_listing/merged.jsonl',encoding='utf-8')]
+          try: done=set(json.load(open(D+'_done.json')))
+          except Exception: done=set()
+          rem=sum(1 for d in docs if f"{d['key']}|{d['day']}" not in done)
+          try: st=json.load(open(D+'_state.json'))
+          except Exception: st={}
+          st['remaining']=rem; st['progressed']=max(1,st.get('progressed',0)); json.dump(st,open(D+'_state.json','w')); print('unread presentations',rem)
+          PY
       - name: Save
         if: always()
         run: |
           git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/ppt_listing 2>/dev/null || true
+          git add store/ppt_listing store/ppt_facts 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "Presentation listing (daily)"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
-      - name: Make sure the reader is running
+      - name: Make sure an engine is running (one NVIDIA engine at a time)
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          A=$(gh api "repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/runs?per_page=20" -q '[.workflow_runs[]|select(.status!="completed")]|length')
-          echo "ppt-ingest active: $A"
-          if [ "$A" -eq 0 ]; then gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' && echo started; fi
+          git pull --rebase -q origin main || true
+          bash scripts/next_engine.sh ppt-daily
