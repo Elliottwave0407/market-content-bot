@@ -294,6 +294,11 @@ def main():
                 elif done[k].get("skip") and not r.get("skip"): done[k] = r; nrep += 1
         p("merged NSE-gap reads: added", nadd, "| upgraded skipped", nrep)
     p("start: done", len(done), "head", c["head"], "back", c["back"], "budget_min", BUDGET_MIN)
+    # (0) re-check the last 4 days every run: reads that failed earlier, and filings that reached the exchange late, are picked up (run_day skips what is already stored)
+    for k_ in range(4, -1, -1):
+        if out_of_time() or c["head"] < (datetime.fromisoformat(today) - timedelta(days=k_)).strftime("%Y-%m-%d"): continue
+        dd_ = (datetime.fromisoformat(today) - timedelta(days=k_)).strftime("%Y-%m-%d")
+        r = run_day(dd_, done); p("RECHECK", dd_, "rows/new/items/skip/fail", r); save(done)
     # (1) new days since head
     d = datetime.fromisoformat(c["head"]) + timedelta(days=1)
     end = datetime.fromisoformat(today)
