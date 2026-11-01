@@ -1,0 +1,52 @@
+name: ppt-daily
+# Every evening: list new investor presentations on NSE and BSE (last 14 days re-checked), merge/dedupe, and make sure the reader is running.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 16 * * *"
+concurrency:
+  group: ppt-daily
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Reopen the last 14 days and list new presentations
+        env:
+          BUDGET_MIN: "25"
+        run: |
+          F=$(date -u -d '14 days ago' +%Y-%m-%d); echo "from $F"
+          python3 - <<PY
+          import json,os
+          D='store/ppt_listing/'
+          for f,key in (('_days_done.json',lambda x:x>='$F'),('_bse_windows_done.json',lambda x:x>='$F')):
+              if os.path.exists(D+f): json.dump([x for x in json.load(open(D+f)) if not key(x)],open(D+f,'w'))
+          PY
+          FROM=$F python scripts/ppt_list_nse.py
+          FROM=$F python scripts/ppt_list_bse.py
+          python scripts/ppt_merge.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/ppt_listing 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Presentation listing (daily)"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Make sure the reader is running
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          A=$(gh api "repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/runs?per_page=20" -q '[.workflow_runs[]|select(.status!="completed")]|length')
+          echo "ppt-ingest active: $A"
+          if [ "$A" -eq 0 ]; then gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=10' && echo started; fi
