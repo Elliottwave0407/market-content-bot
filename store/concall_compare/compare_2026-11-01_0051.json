@@ -1,0 +1,304 @@
+{
+ "summary": {
+  "mistral:ministral-14b-latest": {
+   "docs": 12,
+   "sec_per_doc": 58,
+   "chunk_fails": "0/13",
+   "facts_per_doc": 20.1,
+   "verified_of_raw": 0.61,
+   "struct_A": 0.67,
+   "judged": 99,
+   "yes": 0.83,
+   "partial": 0.17,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.62,
+   "notes": {}
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "docs": 12,
+   "sec_per_doc": 61,
+   "chunk_fails": "0/13",
+   "facts_per_doc": 23.8,
+   "verified_of_raw": 0.86,
+   "struct_A": 0.64,
+   "judged": 119,
+   "yes": 0.84,
+   "partial": 0.16,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.8,
+   "notes": {
+    "http429": 4
+   }
+  }
+ },
+ "per_doc": {
+  "mistral:ministral-14b-latest": {
+   "532814|2026-10-21": {
+    "n_raw": 48,
+    "n_ok": 37,
+    "secs": 212.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540749|2026-08-05": {
+    "n_raw": 28,
+    "n_ok": 14,
+    "secs": 48.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544467|2026-08-05": {
+    "n_raw": 22,
+    "n_ok": 11,
+    "secs": 34.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "514211|2026-08-11": {
+    "n_raw": 19,
+    "n_ok": 7,
+    "secs": 30.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "542812|2026-08-19": {
+    "n_raw": 32,
+    "n_ok": 19,
+    "secs": 58.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544244|2026-08-11": {
+    "n_raw": 27,
+    "n_ok": 22,
+    "secs": 34.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532286|2026-10-30": {
+    "n_raw": 30,
+    "n_ok": 28,
+    "secs": 44.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540699|2026-08-05": {
+    "n_raw": 50,
+    "n_ok": 31,
+    "secs": 58.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544095|2026-08-18": {
+    "n_raw": 23,
+    "n_ok": 4,
+    "secs": 39.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500215|2026-08-10": {
+    "n_raw": 69,
+    "n_ok": 49,
+    "secs": 79.1,
+    "chunks": 2,
+    "fails": 0,
+    "notes": {}
+   },
+   "532875|2026-08-13": {
+    "n_raw": 20,
+    "n_ok": 12,
+    "secs": 24.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "539056|2026-08-17": {
+    "n_raw": 26,
+    "n_ok": 7,
+    "secs": 30.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   }
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "532814|2026-10-21": {
+    "n_raw": 36,
+    "n_ok": 29,
+    "secs": 62.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "540749|2026-08-05": {
+    "n_raw": 35,
+    "n_ok": 30,
+    "secs": 137.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544467|2026-08-05": {
+    "n_raw": 27,
+    "n_ok": 27,
+    "secs": 98.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "514211|2026-08-11": {
+    "n_raw": 22,
+    "n_ok": 20,
+    "secs": 66.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "542812|2026-08-19": {
+    "n_raw": 26,
+    "n_ok": 26,
+    "secs": 76.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544244|2026-08-11": {
+    "n_raw": 27,
+    "n_ok": 27,
+    "secs": 34.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532286|2026-10-30": {
+    "n_raw": 17,
+    "n_ok": 16,
+    "secs": 45.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "540699|2026-08-05": {
+    "n_raw": 36,
+    "n_ok": 31,
+    "secs": 33.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "544095|2026-08-18": {
+    "n_raw": 16,
+    "n_ok": 11,
+    "secs": 72.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "500215|2026-08-10": {
+    "n_raw": 52,
+    "n_ok": 40,
+    "secs": 54.9,
+    "chunks": 2,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "532875|2026-08-13": {
+    "n_raw": 12,
+    "n_ok": 9,
+    "secs": 14.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "539056|2026-08-17": {
+    "n_raw": 24,
+    "n_ok": 19,
+    "secs": 35.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   }
+  }
+ },
+ "docs": [
+  {
+   "key": "532814|2026-10-21",
+   "name": "Indian Bank",
+   "day": "2026-10-21"
+  },
+  {
+   "key": "540749|2026-08-05",
+   "name": "MAS Financial Services Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "544467|2026-08-05",
+   "name": "National Securities Depository Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "514211|2026-08-11",
+   "name": "Sumeet Industries Ltd-$",
+   "day": "2026-08-11"
+  },
+  {
+   "key": "542812|2026-08-19",
+   "name": "Gujarat Fluorochemicals Ltd",
+   "day": "2026-08-19"
+  },
+  {
+   "key": "544244|2026-08-11",
+   "name": "Gala Precision Engineering Ltd",
+   "day": "2026-08-11"
+  },
+  {
+   "key": "532286|2026-10-30",
+   "name": "Jindal Steel Ltd",
+   "day": "2026-10-30"
+  },
+  {
+   "key": "540699|2026-08-05",
+   "name": "Dixon Technologies (India) Ltd",
+   "day": "2026-08-05"
+  },
+  {
+   "key": "544095|2026-08-18",
+   "name": "EPACK Durable Ltd",
+   "day": "2026-08-18"
+  },
+  {
+   "key": "500215|2026-08-10",
+   "name": "Sundrop Brands Ltd",
+   "day": "2026-08-10"
+  },
+  {
+   "key": "532875|2026-08-13",
+   "name": "Allied Digital Services Ltd",
+   "day": "2026-08-13"
+  },
+  {
+   "key": "539056|2026-08-17",
+   "name": "Imagicaaworld Entertainment Ltd",
+   "day": "2026-08-17"
+  }
+ ]
+}
