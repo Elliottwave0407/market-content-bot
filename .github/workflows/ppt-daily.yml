@@ -49,4 +49,4 @@ jobs:
         run: |
           A=$(gh api "repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/runs?per_page=20" -q '[.workflow_runs[]|select(.status!="completed")]|length')
           echo "ppt-ingest active: $A"
-          if [ "$A" -eq 0 ]; then gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=10' && echo started; fi
+          if [ "$A" -eq 0 ]; then gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' && echo started; fi

@@ -26,7 +26,7 @@ jobs:
           EX=$(active concall-extract); echo "concall-extract active: $EX"
           # 1. presentations
           N=$(left store/ppt_facts/_state.json); A=$(active ppt-ingest); echo "ppt-ingest remaining=$N active=$A"
-          if [ "$N" -gt 0 ] && [ "$A" -eq 0 ]; then gh api -X POST repos/$R/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=10' && echo "restarted ppt-ingest"; fi
+          if [ "$N" -gt 0 ] && [ "$A" -eq 0 ]; then gh api -X POST repos/$R/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' && echo "restarted ppt-ingest"; fi
           # 2. concall re-read (yields to fresh filings)
           N=$(left store/concall_reread/_state_v3.json); A=$(active concall-reread); echo "concall-reread remaining=$N active=$A"
           if [ "$N" -gt 0 ] && [ "$A" -eq 0 ] && [ "$EX" -eq 0 ]; then gh api -X POST repos/$R/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' -f 'inputs[schema_v]=3' && echo "restarted concall-reread"; fi

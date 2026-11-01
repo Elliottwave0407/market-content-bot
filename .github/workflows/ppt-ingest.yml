@@ -54,5 +54,5 @@ jobs:
           echo "remaining: $R"
           if [ "$R" -gt 0 ]; then
             sleep 20
-            gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '10' }}' && echo "next run queued"
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=6' && echo "next run queued"
           fi
