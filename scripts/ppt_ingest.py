@@ -1,7 +1,7 @@
 """Read every investor presentation in store/ppt_listing/merged.jsonl (newest first), store verified facts + pointers to slides that hold numbers inside images.
 Output store/ppt_facts/<YYYY-MM>.jsonl (one record per document), state _done.json. Env: MAXN, BUDGET_MIN, WORKERS, DRY (1 -> folder ppt_facts_dry), MODELS. Posts nothing.
 Record: key, isin, name, day, src, url, pages, words, n_raw, n_ok, items (each with slide), visual_slides (pages with images/charts and little text = numbers may sit in pictures), status."""
-import os, sys, re, io, json, time, collections
+import os, sys, re, io, json, time, random, collections
 os.environ.setdefault("SCHEMA_V", "3")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from concurrent.futures import ThreadPoolExecutor, wait
@@ -22,11 +22,12 @@ except Exception: pass
 T0 = time.time(); NUM = re.compile(r"\d"); WHY = collections.Counter()
 def call_p(model, text):
     extra = {"enable_thinking": False}
-    for attempt in range(7):
+    for attempt in range(14):
         try:
+            WHY["calls"] += 1
             r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + CE.NV}, timeout=300,
                               json={"model": model, "messages": [{"role": "user", "content": CE.PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": CE.MAXTOK, "temperature": 0, "chat_template_kwargs": extra})
-            if r.status_code in (429, 502, 503, 504): WHY["http%d" % r.status_code] += 1; time.sleep(min(120, 20 * (attempt + 1))); continue
+            if r.status_code in (429, 502, 503, 504): WHY["http%d" % r.status_code] += 1; time.sleep(min(30, 4 + 3 * attempt) + random.random() * 6); continue
             if r.status_code != 200: WHY["http%d" % r.status_code] += 1; return None
             s = re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"].get("content") or "", flags=re.S)
             m = re.search(r"\{.*\}", s, re.S)
