@@ -35,6 +35,8 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          MODEL_CAP_MIN: "30"
+          BUDGET_MIN: "150"
           SCHEMA_V: ${{ github.event.inputs.schema_v || '3' }}
           STORED: ${{ github.event.inputs.stored }}
           MODELS: ${{ github.event.inputs.models }}
