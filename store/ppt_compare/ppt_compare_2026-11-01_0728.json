@@ -1,0 +1,309 @@
+{
+ "summary": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "docs": 12,
+   "sec_per_doc": 63,
+   "chunk_fails": "1/12",
+   "facts_per_doc": 17.2,
+   "verified_of_raw": 0.63,
+   "struct_A": 0.46,
+   "judged": 104,
+   "yes": 0.98,
+   "partial": 0.02,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.76,
+   "notes": {
+    "http429": 5,
+    "badjson": 1
+   }
+  },
+  "mistral:ministral-14b-latest": {
+   "docs": 12,
+   "sec_per_doc": 31,
+   "chunk_fails": "0/12",
+   "facts_per_doc": 14.8,
+   "verified_of_raw": 0.53,
+   "struct_A": 0.47,
+   "judged": 104,
+   "yes": 0.86,
+   "partial": 0.13,
+   "no": 0.01,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.49,
+   "notes": {}
+  }
+ },
+ "per_doc": {
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+   "CGCL|28-10-2026": {
+    "n_raw": 49,
+    "n_ok": 18,
+    "secs": 60.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "APARINDS|29-10-2026": {
+    "n_raw": 28,
+    "n_ok": 24,
+    "secs": 111.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "PACEDIGITK|31-10-2026": {
+    "n_raw": 28,
+    "n_ok": 26,
+    "secs": 67.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "NOCIL|29-10-2026": {
+    "n_raw": 27,
+    "n_ok": 15,
+    "secs": 54.1,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "FSL|29-10-2026": {
+    "n_raw": 28,
+    "n_ok": 15,
+    "secs": 36.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "EMKAY|28-10-2026": {
+    "n_raw": 28,
+    "n_ok": 25,
+    "secs": 43.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "HEXT|28-10-2026": {
+    "n_raw": 28,
+    "n_ok": 23,
+    "secs": 30.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "SNOWMAN|28-10-2026": {
+    "n_raw": 28,
+    "n_ok": 21,
+    "secs": 38.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "TI|30-10-2026": {
+    "n_raw": 27,
+    "n_ok": 20,
+    "secs": 61.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   },
+   "PHOENIXLTD|30-10-2026": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 179.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "badjson": 1
+    }
+   },
+   "GOCOLORS|30-10-2026": {
+    "n_raw": 31,
+    "n_ok": 7,
+    "secs": 48.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "AETHER|30-10-2026": {
+    "n_raw": 27,
+    "n_ok": 13,
+    "secs": 22.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {
+     "http429": 1
+    }
+   }
+  },
+  "mistral:ministral-14b-latest": {
+   "CGCL|28-10-2026": {
+    "n_raw": 37,
+    "n_ok": 6,
+    "secs": 35.9,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "APARINDS|29-10-2026": {
+    "n_raw": 27,
+    "n_ok": 22,
+    "secs": 30.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "PACEDIGITK|31-10-2026": {
+    "n_raw": 27,
+    "n_ok": 19,
+    "secs": 28.0,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "NOCIL|29-10-2026": {
+    "n_raw": 26,
+    "n_ok": 15,
+    "secs": 22.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "FSL|29-10-2026": {
+    "n_raw": 28,
+    "n_ok": 6,
+    "secs": 25.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "EMKAY|28-10-2026": {
+    "n_raw": 24,
+    "n_ok": 15,
+    "secs": 38.8,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "HEXT|28-10-2026": {
+    "n_raw": 28,
+    "n_ok": 15,
+    "secs": 26.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "SNOWMAN|28-10-2026": {
+    "n_raw": 19,
+    "n_ok": 8,
+    "secs": 18.5,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "TI|30-10-2026": {
+    "n_raw": 24,
+    "n_ok": 19,
+    "secs": 31.7,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "PHOENIXLTD|30-10-2026": {
+    "n_raw": 36,
+    "n_ok": 26,
+    "secs": 44.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "GOCOLORS|30-10-2026": {
+    "n_raw": 34,
+    "n_ok": 17,
+    "secs": 38.6,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "AETHER|30-10-2026": {
+    "n_raw": 26,
+    "n_ok": 9,
+    "secs": 31.2,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   }
+  }
+ },
+ "docs": [
+  {
+   "key": "CGCL|28-10-2026",
+   "name": "Capri Global Capital Limited",
+   "day": "28-10-2026"
+  },
+  {
+   "key": "APARINDS|29-10-2026",
+   "name": "Apar Industries Limited",
+   "day": "29-10-2026"
+  },
+  {
+   "key": "PACEDIGITK|31-10-2026",
+   "name": "Pace Digitek Limited",
+   "day": "31-10-2026"
+  },
+  {
+   "key": "NOCIL|29-10-2026",
+   "name": "NOCIL Limited",
+   "day": "29-10-2026"
+  },
+  {
+   "key": "FSL|29-10-2026",
+   "name": "Firstsource Solutions Limited",
+   "day": "29-10-2026"
+  },
+  {
+   "key": "EMKAY|28-10-2026",
+   "name": "Emkay Global Financial Services Limited",
+   "day": "28-10-2026"
+  },
+  {
+   "key": "HEXT|28-10-2026",
+   "name": "Hexaware Technologies Limited",
+   "day": "28-10-2026"
+  },
+  {
+   "key": "SNOWMAN|28-10-2026",
+   "name": "Snowman Logistics Limited",
+   "day": "28-10-2026"
+  },
+  {
+   "key": "TI|30-10-2026",
+   "name": "Tilaknagar Industries Limited",
+   "day": "30-10-2026"
+  },
+  {
+   "key": "PHOENIXLTD|30-10-2026",
+   "name": "The Phoenix Mills Limited",
+   "day": "30-10-2026"
+  },
+  {
+   "key": "GOCOLORS|30-10-2026",
+   "name": "Go Fashion (India) Limited",
+   "day": "30-10-2026"
+  },
+  {
+   "key": "AETHER|30-10-2026",
+   "name": "Aether Industries Limited",
+   "day": "30-10-2026"
+  }
+ ]
+}
