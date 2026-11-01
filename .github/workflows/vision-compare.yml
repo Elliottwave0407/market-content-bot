@@ -6,11 +6,11 @@ on:
         default: "40"
       nv_models:
         description: "blank = auto-discover"
-        default: ""
+        default: "none"
       gemini:
-        default: "gemini-2.5-flash-lite,gemini-2.5-flash"
+        default: "auto"
       mistral:
-        default: "ministral-14b-latest"
+        default: ""
 permissions:
   contents: read
 concurrency:

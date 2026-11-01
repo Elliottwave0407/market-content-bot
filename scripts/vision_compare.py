@@ -65,15 +65,22 @@ def gem(model, b64):
         except Exception: time.sleep(5)
     return None, "retries"
 cands = []
-nvm = [m for m in (os.environ.get("NV_MODELS") or "").split(",") if m]
-if not nvm and NV:
+nvm = [m for m in (os.environ.get("NV_MODELS") or "").split(",") if m and m != "none"]
+if not nvm and NV and os.environ.get("NV_MODELS") != "none":
     try:
         ids = sorted(x["id"] for x in requests.get("https://integrate.api.nvidia.com/v1/models", headers={"Authorization": "Bearer " + NV}, timeout=60).json()["data"])
         nvm = [m for m in ids if re.search(r"vl|vision|pixtral|gemma-3|phi-4-multimodal|llama-3.2-.*-vision|llama-4|kimi|qwen.*vl", m, re.I)][:8]
     except Exception as e: p("nvidia list failed", type(e).__name__)
 p("NVIDIA vision candidates:", nvm)
 for m in nvm: cands.append(("nv:" + m, lambda b, m=m: oai("https://integrate.api.nvidia.com/v1/chat/completions", NV, m, b)))
-for m in [x for x in (os.environ.get("GEMINI") or "").split(",") if x]: cands.append(("gemini:" + m, lambda b, m=m: gem(m, b)))
+gm = [x for x in (os.environ.get("GEMINI") or "").split(",") if x]
+if gm == ["auto"] and GK:
+    try:
+        lst = requests.get(f"https://generativelanguage.googleapis.com/v1beta/models?key={GK}&pageSize=200", timeout=60).json().get("models", [])
+        gm = [m["name"].split("/")[-1] for m in lst if "generateContent" in m.get("supportedGenerationMethods", []) and "flash" in m["name"] and not re.search(r"tts|image|live|audio|thinking-exp|preview-0|embed", m["name"])][:4]
+        p("Gemini flash models available:", [m["name"].split("/")[-1] for m in lst if "flash" in m["name"]])
+    except Exception as e: p("gemini list failed", type(e).__name__); gm = []
+for m in gm: cands.append(("gemini:" + m, lambda b, m=m: gem(m, b)))
 for m in [x for x in (os.environ.get("MISTRAL") or "").split(",") if x]: cands.append(("mistral:" + m, lambda b, m=m: oai("https://api.mistral.ai/v1/chat/completions", MK, m, b)))
 rows = []
 for name, fn in cands:
