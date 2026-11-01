@@ -282,6 +282,17 @@ def main():
         p("no model key (NVIDIA_API_KEY / MISTRAL_API_KEY) missing"); return
     p("models:", ", ".join(m.split("/")[-1] for m in MODELS), "out_dir", os.path.basename(DIR), "maxn", MAXN)
     done = load_done(); c, today = cursor()
+    if os.path.basename(DIR) == "concall_facts":     # bring the NSE-gap reads (store/concall_facts_nse) into the main store so every loader, grader and coverage check sees them
+        nd = os.path.join(store.ROOT, "concall_facts_nse"); nadd = nrep = 0
+        for f in glob.glob(os.path.join(nd, "????-??.jsonl")):
+            for ln in open(f, encoding="utf-8"):
+                try: r = json.loads(ln)
+                except Exception: continue
+                k = r.get("key")
+                if not k: continue
+                if k not in done: done[k] = r; nadd += 1
+                elif done[k].get("skip") and not r.get("skip"): done[k] = r; nrep += 1
+        p("merged NSE-gap reads: added", nadd, "| upgraded skipped", nrep)
     p("start: done", len(done), "head", c["head"], "back", c["back"], "budget_min", BUDGET_MIN)
     # (1) new days since head
     d = datetime.fromisoformat(c["head"]) + timedelta(days=1)
