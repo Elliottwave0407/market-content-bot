@@ -97,13 +97,13 @@ def call(model, text):
     if model.startswith("mistral:"):
         return call_mistral(model[8:], text)
     extra = {"thinking": False} if "deepseek" in model else {"enable_thinking": False}
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + NV}, timeout=300,
                               json={"model": model, "messages": [{"role": "user", "content": PROMPT + "\n\nTRANSCRIPT:\n" + text}],
                                     "max_tokens": MAXTOK, "temperature": 0, "chat_template_kwargs": extra})
             if r.status_code in (429, 502, 503, 504):
-                time.sleep(15 * (attempt + 1)); continue
+                time.sleep(min(60, 12 * (attempt + 1)) + (hash((text[:30], attempt)) % 7)); continue
             if r.status_code != 200:
                 return None
             s = r.json()["choices"][0]["message"].get("content") or ""

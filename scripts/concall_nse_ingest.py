@@ -100,7 +100,7 @@ def main():
         CE.save(done)
         if not DRY: json.dump(sorted(attempted), open(os.path.join(ROOT, "concall_coverage", "_ingest_done.json"), "w"))
         p("progress", progressed, stats, f"{(time.time() - CE.T0) / 60:.0f} min")
-    left = len([1 for x in todo[i:]])
+    left = len([1 for x in todo[i:]]) + stats["failed"]   # failed reads are retried by the next run
     if not DRY: json.dump(sorted(attempted), open(os.path.join(ROOT, "concall_coverage", "_ingest_done.json"), "w"))
     json.dump({"remaining": left, "progressed": progressed, "stats": stats, "dry": DRY}, open(STATE if not DRY else STATE.replace(".json", "_dry.json"), "w"))
     p("end:", stats, "remaining", left)
