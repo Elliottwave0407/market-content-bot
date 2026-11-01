@@ -1,0 +1,58 @@
+name: ppt-ingest
+on:
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "1 = separate dry folder"
+        default: "1"
+      maxn:
+        default: "20"
+      budget_min:
+        default: "60"
+      workers:
+        default: "10"
+concurrency:
+  group: ${{ (github.event.inputs.dry || '1') == '1' && 'ppt-ingest-dry' || 'ppt-ingest-live' }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          SCHEMA_V: "3"
+          MODELS: nvidia/nemotron-3-ultra-550b-a55b
+          DRY: ${{ github.event.inputs.dry || '1' }}
+          MAXN: ${{ github.event.inputs.maxn || '20' }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '60' }}
+          WORKERS: ${{ github.event.inputs.workers || '10' }}
+        run: python scripts/ppt_ingest.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/ppt_facts 2>/dev/null || true; git add store/ppt_facts_dry 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Presentation facts"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Chain the next live run while decks remain
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "${{ github.event.inputs.dry || '1' }}" = "1" ] && { echo "dry run: no chaining"; exit 0; }
+          R=$(python3 -c "import json;d=json.load(open('store/ppt_facts/_state.json'));print(d['remaining'] if d['progressed']>0 else 0)" 2>/dev/null || echo 0)
+          echo "remaining: $R"
+          if [ "$R" -gt 0 ]; then
+            sleep 20
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=${{ github.event.inputs.budget_min || '60' }}' -f 'inputs[workers]=${{ github.event.inputs.workers || '10' }}' && echo "next run queued"
+          fi
