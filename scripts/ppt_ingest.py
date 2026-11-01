@@ -19,7 +19,23 @@ S = {"nse": requests.Session(), "bse": requests.Session()}
 S["nse"].headers.update({**H, "Referer": "https://www.nseindia.com/"}); S["bse"].headers.update({**H, "Referer": "https://www.bseindia.com/"})
 try: S["nse"].get("https://www.nseindia.com/companies-listing/corporate-filings-announcements", timeout=30)
 except Exception: pass
-T0 = time.time(); NUM = re.compile(r"\d")
+T0 = time.time(); NUM = re.compile(r"\d"); WHY = collections.Counter()
+def call_p(model, text):
+    extra = {"enable_thinking": False}
+    for attempt in range(7):
+        try:
+            r = requests.post("https://integrate.api.nvidia.com/v1/chat/completions", headers={"Authorization": "Bearer " + CE.NV}, timeout=300,
+                              json={"model": model, "messages": [{"role": "user", "content": CE.PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": CE.MAXTOK, "temperature": 0, "chat_template_kwargs": extra})
+            if r.status_code in (429, 502, 503, 504): WHY["http%d" % r.status_code] += 1; time.sleep(min(120, 20 * (attempt + 1))); continue
+            if r.status_code != 200: WHY["http%d" % r.status_code] += 1; return None
+            s = re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"].get("content") or "", flags=re.S)
+            m = re.search(r"\{.*\}", s, re.S)
+            if not m: WHY["nojson"] += 1; return None
+            try: return json.loads(m.group(0))
+            except Exception: WHY["badjson"] += 1; return None
+        except requests.exceptions.Timeout: WHY["timeout"] += 1
+        except Exception as e: WHY[type(e).__name__] += 1; time.sleep(8)
+    return None
 
 def fetch(urls):
     for src, u in urls:
@@ -55,7 +71,7 @@ def read(d):
         if time.time() - t0 > 14 * 60: bad += 1; continue
         got = None
         for mod in CE.MODELS:
-            got = CE.call(mod, ch)
+            got = call_p(mod, ch)
             if got is not None: used = used or mod.split("/")[-1]; break
         if got is None: bad += 1; continue
         raw += got.get("items") or []
@@ -63,7 +79,8 @@ def read(d):
     ok = CE.verify(raw, text)
     for it in ok:
         q = it.get("quote") or ""
-        it["slide"] = next((i + 1 for i, t in enumerate(pages) if q and q[:60] in t), None)
+        qn = CE.norm(q)[:50]
+        it["slide"] = next((i + 1 for i, t in enumerate(pages) if qn and qn in CE.norm(t)), None)
     return {**base, "status": "read", "model": used, "chunks_failed": bad, "n_raw": len(raw), "n_ok": len(ok), "items": ok}
 
 def main():
@@ -96,7 +113,7 @@ def main():
         p("progress", prog, dict(st), "facts", nitems, f"{(time.time()-T0)/60:.0f} min")
     left = len(todo) - i if i < len(todo) else 0
     json.dump({"remaining": len(todo) - prog, "progressed": prog, "stats": dict(st)}, open(os.path.join(D, "_state.json"), "w"))
-    p("end:", dict(st), "remaining", len(todo) - prog)
+    p("failure reasons:", dict(WHY)); p("end:", dict(st), "remaining", len(todo) - prog)
 
 if __name__ == "__main__":
     try: main()

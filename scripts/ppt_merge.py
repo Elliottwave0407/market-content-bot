@@ -14,9 +14,17 @@ for l in open(os.path.join(D, "nse_ppt.jsonl"), encoding="utf-8"):
     r = json.loads(l)
     if not (r.get("url") or "").lower().endswith((".pdf", ".ppt", ".pptx")): continue
     docs.append({"key": r.get("isin") or "N:" + nm(r.get("name")), "isin": r.get("isin"), "name": r.get("name"), "sym": r.get("symbol"), "day": r["day"], "src": "nse", "url": r["url"]})
+n2i = {nm(d["name"]): d["isin"] for d in docs if d.get("isin")}
+n2i.update({nm(v.get("n")): k for k, v in mc.items() if v.get("n")})
+def byname(name):
+    n = nm(name)
+    if n in n2i: return n2i[n]
+    c = [i for k, i in n2i.items() if len(n) >= 8 and (k.startswith(n) or n.startswith(k)) and len(k) >= 8]
+    return c[0] if len(set(c)) == 1 else None
 nobi = 0
 for l in open(os.path.join(D, "bse_ppt.jsonl"), encoding="utf-8"):
     r = json.loads(l); isin = c2i.get(r["code"])
+    if not isin: isin = byname(r.get("name"))
     if not isin: nobi += 1
     docs.append({"key": isin or "N:" + nm(r.get("name")), "isin": isin, "name": r.get("name"), "code": r["code"], "day": r["dt"][:10], "src": "bse", "url": r["url"]})
 by = collections.defaultdict(list)
