@@ -1,7 +1,7 @@
 """Read every investor presentation in store/ppt_listing/merged.jsonl (newest first), store verified facts + pointers to slides that hold numbers inside images.
 Output store/ppt_facts/<YYYY-MM>.jsonl (one record per document), state _done.json. Env: MAXN, BUDGET_MIN, WORKERS, DRY (1 -> folder ppt_facts_dry), MODELS. Posts nothing.
 Record: key, isin, name, day, src, url, pages, words, n_raw, n_ok, items (each with slide), visual_slides (pages with images/charts and little text = numbers may sit in pictures), status."""
-import os, sys, re, io, json, time, random, collections
+import os, sys, re, io, json, time, random, glob, collections
 os.environ.setdefault("SCHEMA_V", "3")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from concurrent.futures import ThreadPoolExecutor, wait
@@ -39,13 +39,18 @@ def call_p(model, text):
     return None
 
 def fetch(urls):
+    cand = []
     for src, u in urls:
-        for a in range(2):
+        cand.append((src, u))
+        if "AttachLive" in u: cand.append((src, u.replace("AttachLive", "AttachHis")))   # BSE moves older files to AttachHis
+    for src, u in cand:
+        for a in range(3):
             try:
                 r = S[src].get(u, timeout=90)
                 if r.status_code == 200 and 3000 < len(r.content) < 60_000_000 and r.content[:4] == b"%PDF": return r.content
+                if r.status_code == 404: break
             except Exception: pass
-            time.sleep(2)
+            time.sleep(3 * (a + 1))
     return None
 
 def read(d):
@@ -90,6 +95,20 @@ def main():
     docs.sort(key=lambda x: x["day"], reverse=True)
     try: done = set(json.load(open(STATE)))
     except Exception: done = set()
+    NODL = os.path.join(D, "_nodl.json")
+    try: nodl = json.load(open(NODL))
+    except Exception: nodl = {}
+    # downloads that failed earlier are retried (up to 3 times), not recorded as final
+    dropped = 0
+    for fp in glob.glob(os.path.join(D, "20*.jsonl")):
+        keep = []; chg = False
+        for ln in open(fp, encoding="utf-8"):
+            try: r0 = json.loads(ln)
+            except Exception: keep.append(ln); continue
+            if r0.get("status") == "no_download" and nodl.get(r0["key"], 0) < 3: done.discard(r0["key"]); dropped += 1; chg = True; nodl.setdefault(r0["key"], 1)
+            else: keep.append(ln)
+        if chg: open(fp, "w", encoding="utf-8").writelines(keep)
+    p("no_download records reopened for retry:", dropped)
     k = lambda d: f"{d['key']}|{d['day']}"
     todo = [d for d in docs if k(d) not in done]
     p("models:", ", ".join(m.split("/")[-1] for m in CE.MODELS), "| dry" if DRY else "| live", "| docs total", len(docs), "| to read", len(todo), "| workers", W)
@@ -106,11 +125,14 @@ def main():
                 try: r = f.result()
                 except Exception: r = None
                 if r is None: st["failed"] += 1; continue
+                if r.get("status") == "no_download":
+                    nodl[k(d)] = nodl.get(k(d), 0) + 1
+                    if nodl[k(d)] < 3: st["retry_later"] += 1; continue
                 rec = {"key": k(d), "isin": d.get("isin"), "name": d.get("name"), "day": d["day"], "exch": d["src"], "url": d["url"], **r, "v": "ppt1"}
                 with open(os.path.join(D, d["day"][:7] + ".jsonl"), "a", encoding="utf-8") as fh: fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 done.add(k(d)); prog += 1; st[r["status"]] += 1; nitems += r.get("n_ok", 0)
         finally: ex.shutdown(wait=False, cancel_futures=True)
-        json.dump(sorted(done), open(STATE, "w"))
+        json.dump(sorted(done), open(STATE, "w")); json.dump(nodl, open(NODL, "w"))
         p("progress", prog, dict(st), "facts", nitems, f"{(time.time()-T0)/60:.0f} min")
     left = len(todo) - i if i < len(todo) else 0
     json.dump({"remaining": len(todo) - prog, "progressed": prog, "stats": dict(st)}, open(os.path.join(D, "_state.json"), "w"))
