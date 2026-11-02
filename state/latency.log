@@ -102,3 +102,7 @@
 02 08:27:18 pdf pdf current col Oswal Leasing Ltd standalone ok=True/3: revenue=3.33, other_income=0.0, total_income=3.33, total_expenses=4.76, finance_costs=0.0, depreciation=None, pbt=-1.43, tax=0.0, pat=-1.43, eps=-0.29
 02 08:27:18 pdf pdf incomplete Oswal Leasing Ltd standalone: missing ['ebitda'] - not posting from PDF
 02 08:27:27 pdf pdf incomplete Oswal Leasing Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 08:29:56 pdf pdf current col Avonmore Capital & Management Services Ltd consolidated ok=False/3: revenue=4411, other_income=25, total_income=4436, total_expenses=3845, finance_costs=138, depreciation=161, pbt=1218, tax=127, pat=1091, eps=0.27
+02 08:29:56 pdf pdf checks failed Avonmore Capital & Management Services Ltd consolidated
+02 08:29:56 pdf pdf has consolidated but it failed checks: not falling back to standalone Avonmore Capital & Management Services Ltd
+02 08:30:57 pdf strong model fixed a failed read
