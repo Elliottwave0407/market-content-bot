@@ -387,3 +387,13 @@
 02 11:24:30 pdf pdf current col Regis Industries Ltd standalone ok=True/2: revenue=59.92, other_income=0.75, total_income=60.67, total_expenses=33.14, finance_costs=None, depreciation=None, pbt=27.54, tax=None, pat=27.54, eps=0.01
 02 11:24:30 pdf pdf incomplete Regis Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
 02 11:25:01 seen 500074 BPL Ltd cat=Board Meeting early=True bse_time=16:54:03 dissem=16:54:03
+02 11:27:25 pdf pdf history mismatch BPL Ltd consolidated cols=['Sep 30, 2026', 'March 31, 2026'] :: q-1: pdf rev 781.243 pat -85.501 | bse rev 213.93 pat -35.43 (Rs mn); q-4: pdf rev None pat None | bse rev 198.39 pat -1.88 (Rs mn)
+02 11:27:25 pdf pdf has consolidated but it failed checks: not falling back to standalone BPL Ltd
+02 11:27:25 pdf pdf current col Regis Industries Ltd standalone ok=True/2: revenue=59.92, other_income=0.75, total_income=60.67, total_expenses=33.14, finance_costs=None, depreciation=None, pbt=27.54, tax=None, pat=27.54, eps=0.01
+02 11:27:25 pdf pdf incomplete Regis Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 11:27:25 pdf pdf current col Regis Industries Ltd standalone ok=True/2: revenue=59.92, other_income=0.75, total_income=60.67, total_expenses=33.14, finance_costs=None, depreciation=None, pbt=27.54, tax=None, pat=27.54, eps=0.01
+02 11:27:25 pdf pdf incomplete Regis Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 11:27:26 seen 504648 Bombay Wire Ropes Ltd cat=Result early=False bse_time=16:54:48 dissem=16:54:48
+02 11:27:26 seen 509945 Thacker & Company Ltd cat=Result early=False bse_time=16:54:49 dissem=16:54:49
+02 11:27:26 seen 538542 Gold Coin Health Foods Ltd cat=Board Meeting early=True bse_time=16:55:25 dissem=16:55:25
+02 11:27:26 seen 544731 Rajputana Stainless Ltd cat=Result early=False bse_time=16:56:16 dissem=16:56:16
