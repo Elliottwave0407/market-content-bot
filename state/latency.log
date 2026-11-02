@@ -918,3 +918,6 @@
 02 16:27:32 pdf rule reader Digitide Solutions Ltd: rule: consolidated table does not reconcile [million] exceptional=[0.0, 227.0, 82.0] pbt=[None, None, None] pat=[118.43, 125.0, 99.0] finance_costs=[299.0, 65.0, 24353.0]
 02 16:28:02 pdf rule reader Jamshri Realty Ltd-$: rule: no results table page
 02 16:28:02 pdf strong model retry did not help: HTTP 503 on gemini-3.5-flash
+02 16:28:42 pdf nim reader Digitide Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 34 numbers not found in the filing text (possible invention): rejected e.g. [( (gemin
+02 16:28:42 pdf pdf read failed Digitide Solutions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 34 numbers not found in the filing text (possibl
+02 16:29:31 seen 532891 Puravankara Ltd cat=Result early=False bse_time=21:58:47 dissem=21:58:47
