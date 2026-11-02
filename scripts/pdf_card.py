@@ -247,24 +247,33 @@ def _read_stage(rec, st, headline, filed):
         return None
     return _annotate(out, small), q_head
 
-def prefetch(recs, st, workers=4):
-    """Run the download+Gemini stage for several filings at the same time (it is network wait, not CPU), so a burst of results does not queue up one by one."""
-    todo = []
+INFLIGHT = {}      # nid -> future of a read still running in the background
+_POOL = {"p": None}
+
+def prefetch(recs, st, workers=8):
+    """Start the download+read stage for several filings at the same time and wait at most PREFETCH_WAIT_S for them.
+    Reads that are still running carry on in the background (their result is picked up by the next 3-second pass), so one slow read can no longer freeze the pass that discovers new filings
+    (2 Nov: passes froze 4-8 min on slow small-cap reads, so new filings such as Lloyds Engineering were noticed 1.5-2 min late)."""
+    from concurrent.futures import ThreadPoolExecutor, wait
+    if _POOL["p"] is None:
+        _POOL["p"] = ThreadPoolExecutor(max_workers=workers)
+    futs = []
     for rec in recs:
         nid = rec.get("NEWSID")
-        if nid is None or nid in PREREAD or not rec.get("ATTACHMENTNAME"): continue
-        todo.append(rec)
-    if len(todo) < 2: return
-    from concurrent.futures import ThreadPoolExecutor
-    def one(rec):
-        try:
-            headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
-            filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
-            PREREAD[rec["NEWSID"]] = _read_stage(rec, st, headline, filed)
-        except Exception as e:
-            LOG.append(f"prefetch error: {repr(e)[:80]}")
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        list(ex.map(one, todo))
+        if nid is None or nid in PREREAD or nid in INFLIGHT or not rec.get("ATTACHMENTNAME"): continue
+        def one(rec=rec):
+            try:
+                headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
+                filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
+                PREREAD[rec["NEWSID"]] = _read_stage(rec, st, headline, filed)
+            except Exception as e:
+                LOG.append(f"prefetch error: {repr(e)[:80]}")
+        fut = _POOL["p"].submit(one)
+        INFLIGHT[nid] = fut
+        fut.add_done_callback(lambda f, n=nid: INFLIGHT.pop(n, None))
+        futs.append(fut)
+    if futs:
+        wait(futs, timeout=float(os.environ.get("PREFETCH_WAIT_S", "20")))
 
 HIST = {}      # (code, basis, quarter) -> history fetched ahead for the card's year-ago-previous cell
 
@@ -294,6 +303,8 @@ def hist_batch(bse, code, name, basis, qs):
 def try_pdf(bse, rec, st, headline, filed):
     """-> dict(basis, qcode, quarters, verified_note, raw) or None."""
     nid = rec["NEWSID"]
+    if nid not in PREREAD and nid in INFLIGHT:
+        return None      # still being read in the background: look again on the next pass
     res_ = PREREAD.pop(nid) if nid in PREREAD else _read_stage(rec, st, headline, filed)
     if res_ is None:
         return None
