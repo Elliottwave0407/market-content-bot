@@ -33,3 +33,8 @@
 02 08:10:32 seen 534742 Zuari Agro Chemicals Ltd cat=Result early=False bse_time=13:39:39 dissem=13:39:39
 02 08:10:32 seen 535916 Alacrity Securities Ltd cat=Board Meeting early=True bse_time=13:40:16 dissem=13:40:16
 02 08:10:32 seen 543482 Eureka Forbes Ltd cat=Board Meeting early=True bse_time=13:40:18 dissem=13:40:18
+02 08:11:06 ready 543482|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+02 08:11:14 wait 534742 Zuari Agro Chemicals Ltd: numbers not yet on BSE
+02 08:11:15 pdf pdf current col Alacrity Securities Ltd standalone ok=True/3: revenue=4550.94, other_income=78.76, total_income=4631.7, total_expenses=4718.78, finance_costs=27.4, depreciation=18.48, pbt=-87.08, tax=-15.87, pat=-71.21, eps=-0.15
+02 08:11:15 pdf pdf margin q-4 differs from BSE history by 39.0 pts: margin withheld Alacrity Securities Ltd standalone
+02 08:11:15 pdf pdf incomplete Alacrity Securities Ltd standalone: missing ['ebitda'] - not posting from PDF
