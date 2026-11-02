@@ -182,7 +182,11 @@ def _read_stage(rec, st, headline, filed):
     gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
     if not gem_blocked and use.get(day, 0) >= 0.8 * DAILY_CAP and mcap_of(rec.get("SCRIP_CD")) < 300:
         gem_blocked = True      # the last fifth of the daily Gemini allowance is kept for companies that matter; micro-caps use the rule / NVIDIA readers or wait
-    if TRIES.get(nid, 0) >= 8 or time.time() - LAST_TRY.get(nid, 0) < (30 if rec.get("_EARLY") else 240):
+    # Retry gap: a fresh filing's PDF is often not downloadable for the first minute or two, and one failed read used to cost a flat 4 minutes (13 min delays on 2 Nov: Capillary, Mobikwik).
+    # Now: 20 s for the first retries, 60 s for the next, 240 s only after that. Same checks as before, so accuracy is unchanged.
+    _t = TRIES.get(nid, 0)
+    _gap = 30 if rec.get("_EARLY") else (20 if _t <= 1 else (60 if _t <= 3 else 240))
+    if _t >= 8 or time.time() - LAST_TRY.get(nid, 0) < _gap:
         return None
     q_head = rf.expected_quarter(headline, filed)
     TRIES[nid] = TRIES.get(nid, 0) + 1
@@ -197,6 +201,10 @@ def _read_stage(rec, st, headline, filed):
             content = r.content
             break
     if not content or len(content) > 15_000_000:
+        if not content:
+            TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)      # the PDF is not downloadable yet: that is not a failed read, try again in 20 s
+            LAST_TRY[nid] = time.time()
+            LOG.append(f"pdf not downloadable yet {rec.get('SLONGNAME')}")
         return None
     if rec.get("_EARLY") and not has_results_table(content):
         EARLY_DEAD.add(nid)

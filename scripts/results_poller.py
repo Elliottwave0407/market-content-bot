@@ -95,6 +95,8 @@ def _mlog(msg):
     except Exception:
         pass
 
+_TSEEN = set()
+
 def _tlog(msg):
     """Per-filing timeline (committed with the poller state): when each result filing was first seen, why it waited, when the card went out. Lets us trace any slow card afterwards. No ids or secrets."""
     try:
@@ -383,6 +385,9 @@ def main(bse_in=None, known=None, fast=False):
             new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
         for r_ in new:
+            if r_["NEWSID"] in _TSEEN:
+                continue
+            _TSEEN.add(r_["NEWSID"])
             _tlog(f"seen {r_.get('SCRIP_CD')} {(r_.get('SLONGNAME') or '')[:28]} cat={r_.get('CATEGORYNAME')} early={bool(r_.get('_EARLY'))} bse_time={(r_.get('NEWS_DT') or '')[11:19]} dissem={(r_.get('DissemDT') or r_.get('DT_TM') or '')[11:19]}")
         lines = []
         now = time.time()
@@ -509,6 +514,7 @@ def main(bse_in=None, known=None, fast=False):
         save_state(st)
     for x in pdf_card.LOG:
         p("[pdf]", x)
+        _tlog("pdf " + x[:230])
     pdf_card.LOG.clear()
     p(f"done: {posted} {'sent' if SEND else 'would send'}")
     return posted
