@@ -47,6 +47,18 @@ def main():
     done = CE.load_done()
     try: handled = set(json.load(open(DONE_F)))
     except Exception: handled = set()
+    # reads that failed (no text / download problem) or came back thin (kept the old record) get up to 2 more tries; chunk-level rejections by the model host are the usual cause
+    TRY_F = os.path.join(RD, f"_tries{'_dry' if DRY else ''}{SFX}.json")
+    try: tries = json.load(open(TRY_F))
+    except Exception: tries = {}
+    last = {}
+    if os.path.exists(LOG_F):
+        for ln in open(LOG_F):
+            try: x = json.loads(ln); last[x["key"]] = x.get("act")
+            except Exception: pass
+    redo = [k for k in handled if last.get(k) != "replace" and tries.get(k, 0) < 2]
+    for k in redo: handled.discard(k); tries[k] = tries.get(k, 0) + 1
+    json.dump(tries, open(TRY_F, "w")); p("failed or thin reads reopened for another try:", len(redo))
     mc = json.load(open(os.path.join(CE.store.ROOT, "mcap", "mcap.json"))); cap = {v["s"]: v.get("m") or 0 for v in mc.values() if v.get("s")}
     todo = [r for r in done.values() if (r.get("v") or 1) < TARGET_V and not r.get("skip") and r["key"] not in handled]
     short = [r for r in done.values() if r.get("skip") == "short_or_scanned" and SHORT_MIN <= r.get("words", 0) < 1500 and r["key"] not in handled]
