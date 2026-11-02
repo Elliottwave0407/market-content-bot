@@ -95,6 +95,19 @@ def _mlog(msg):
     except Exception:
         pass
 
+def _tlog(msg):
+    """Per-filing timeline (committed with the poller state): when each result filing was first seen, why it waited, when the card went out. Lets us trace any slow card afterwards. No ids or secrets."""
+    try:
+        os.makedirs("state", exist_ok=True)
+        f = "state/latency.log"
+        if os.path.exists(f) and os.path.getsize(f) > 250000:
+            tail = open(f).read().splitlines()[-1500:]
+            open(f, "w").write("\n".join(tail) + "\n")
+        with open(f, "a") as fh:
+            fh.write(datetime.now().strftime("%d %H:%M:%S ") + msg[:260] + "\n")
+    except Exception:
+        pass
+
 def mirror_to_channel(png, cap_clean, flink, key, force=False):
     """Second audience: copy every FULL result card (never a stub or a one-line digest) to the public channel in TELEGRAM_PUBLIC_GROUP_ID.
     Only a 'Filing' link button (anyone may tap it); no Post-to-X / Posted / Skip buttons. Does nothing when the secret is not set; never raises."""
@@ -369,6 +382,8 @@ def main(bse_in=None, known=None, fast=False):
         else:
             new = [r for r in filings if r["NEWSID"] not in st["ids"]]
         p(f"mode={'SEND' if SEND else 'DRY-RUN'} filings={len(filings)} new={len(new)} cap={MAX_POSTS}")
+        for r_ in new:
+            _tlog(f"seen {r_.get('SCRIP_CD')} {(r_.get('SLONGNAME') or '')[:28]} cat={r_.get('CATEGORYNAME')} early={bool(r_.get('_EARLY'))} bse_time={(r_.get('NEWS_DT') or '')[11:19]} dissem={(r_.get('DissemDT') or r_.get('DT_TM') or '')[11:19]}")
         lines = []
         now = time.time()
         pend = st.setdefault("pending", {})
@@ -410,6 +425,7 @@ def main(bse_in=None, known=None, fast=False):
                 continue
             if kind == "wait":
                 if nid not in pend:
+                    _tlog(f"wait {rec.get('SCRIP_CD')} {(rec.get('SLONGNAME') or '')[:28]}: {text[:80]}")
                     p(f"[wait] {rec.get('SLONGNAME')} ({key}) - BSE numbers not published yet, will retry")
                 _al = pend.get(nid, {}).get("alerted", False)
                 pend[nid] = {"rec": rec, "first": first, "last": now}
@@ -430,6 +446,7 @@ def main(bse_in=None, known=None, fast=False):
                 pend.pop(nid, None)
                 continue
             p(f"[{kind}] {key} :: {text[:160]!r}")
+            _tlog(f"ready {key} kind={kind} waited_min={round((now - first) / 60, 1)} tries={pdf_card.TRIES.get(nid, 0)} pdf_log={' | '.join(pdf_card.LOG[-3:])[:160]}")
             if kind == "line":
                 lines.append((rec["NEWSID"], key, text))
                 continue
