@@ -570,3 +570,32 @@
 02 12:26:09 pdf pdf current col Novyra Pharmachem Ltd standalone ok=True/2: revenue=423.08, other_income=3.7, total_income=426.78, total_expenses=430.1, finance_costs=None, depreciation=0.3, pbt=-3.32, tax=None, pat=-3.32, eps=-0.05
 02 12:26:09 pdf pdf incomplete Novyra Pharmachem Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 02 12:27:35 pdf pdf unusable Relic Technologies Ltd: unit/date missing
+02 12:28:32 seen 512377 Magnanimous Trade & finance  cat=Board Meeting early=True bse_time=17:57:23 dissem=17:57:23
+02 12:28:32 seen 511501 Bharat Bhushan Finance & Com cat=Result early=False bse_time=17:57:24 dissem=17:57:24
+02 12:29:07 wait 511501 Bharat Bhushan Finance & Com: numbers not yet on BSE
+02 12:29:14 pdf pdf incomplete Magnanimous Trade & finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 12:29:15 seen 532515 TV Today Network Ltd cat=Board Meeting early=True bse_time=17:58:09 dissem=17:58:09
+02 12:29:42 ready 532515|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col TV Today Network Ltd consolidated ok=True/3: revenue=194.38, other_income=10.54, total_income=204.92, total_expenses=194.41, finance_costs=0.56,
+02 12:29:51 ready 523062|Sep-26|standalone kind=photo waited_min=7.0 tries=4 pdf_log=pdf history cells corrected from BSE for q-[4]: TV Today Network Ltd consolidated | pdf unusable Relic Technologies Ltd: unit/date missing | pdf current col JJ 
+02 12:30:01 ready 538975|Sep-26|na kind=photo waited_min=46.3 tries=8 pdf_log=pdf history cells corrected from BSE for q-[4]: TV Today Network Ltd consolidated | pdf unusable Relic Technologies Ltd: unit/date missing | pdf current col JJ 
+02 12:30:42 ready 514378|Sep-26|consolidated kind=photo waited_min=7.0 tries=4 pdf_log=pdf current col Bharat Bhushan Finance & Commodity Brokers Ltd standalone ok=True/3: revenue=39.41, other_income=0.0, total_income=39.41, total_expenses=15.43, 
+02 12:31:18 pdf rule reader Relic Technologies Ltd: rule: stan: does not reconcile [lakh] total_expenses=[137.75, 162.07, 157.13] pbt=[-88.66, -104.21, -77.13] tax=[7.13, -1.46, -92.32] pat=[-95.79, -102.75, 15.2] depreciation=[8.27, 7.77, 7.66] 
+02 12:31:18 pdf rule reader TV Today Network Ltd: rule: filing mentions consolidated results but that table was not read
+02 12:31:18 pdf rule reader JJ Finance Corporation Ltd: rule: no results table page
+02 12:31:18 pdf rule reader Bharat Bhushan Finance & Commodity Brokers Ltd: rule: no results table page
+02 12:31:18 pdf rule reader Yarn Syndicate Ltd: rule: no results table page
+02 12:31:18 pdf rule reader Novyra Pharmachem Ltd: rule: no results table page
+02 12:31:18 pdf pdf current col TV Today Network Ltd consolidated ok=True/3: revenue=194.38, other_income=10.54, total_income=204.92, total_expenses=194.41, finance_costs=0.56, depreciation=8.65, pbt=10.51, tax=2.9, pat=7.75, eps=1.3
+02 12:31:18 pdf pdf q-4 revenue typo: pdf 1856.8000000000002 -> BSE history 1875.5 (profit matched) TV Today Network Ltd
+02 12:31:18 pdf pdf history cells corrected from BSE for q-[4]: TV Today Network Ltd consolidated
+02 12:31:18 pdf pdf unusable Relic Technologies Ltd: unit/date missing
+02 12:31:18 pdf pdf current col JJ Finance Corporation Ltd standalone ok=True/2: revenue=10.83, other_income=None, total_income=10.83, total_expenses=11.02, finance_costs=None, depreciation=None, pbt=-0.19, tax=0.9, pat=-1.09, eps=-0.04
+02 12:31:18 pdf pdf current col Bharat Bhushan Finance & Commodity Brokers Ltd standalone ok=True/3: revenue=39.41, other_income=0.0, total_income=39.41, total_expenses=15.43, finance_costs=None, depreciation=0.21, pbt=23.98, tax=11.66, pat=12.32
+02 12:31:18 pdf pdf incomplete Bharat Bhushan Finance & Commodity Brokers Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 12:31:18 pdf pdf current col Yarn Syndicate Ltd consolidated ok=True/3: revenue=97.78, other_income=0.17, total_income=97.95, total_expenses=183.2, finance_costs=-0.02, depreciation=1.18, pbt=-85.25, tax=-3.58, pat=-81.67, eps=-0.98
+02 12:31:18 pdf pdf current col Novyra Pharmachem Ltd standalone ok=True/2: revenue=423.08, other_income=3.7, total_income=426.78, total_expenses=430.1, finance_costs=None, depreciation=0.3, pbt=-3.32, tax=None, pat=-3.32, eps=-0.05
+02 12:31:18 pdf pdf incomplete Novyra Pharmachem Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+02 12:31:18 pdf rule reader Magnanimous Trade & finance Ltd: rule: stan: does not reconcile [lakh] total_income=[78.0, 75.3, 69.03] total_expenses=[27.31, 14.23, 11.9] pbt=[50.69, 61.07, 57.13] tax=[-12.76, -15.37, -23.75] pat=[37.93, 45.7, 33.38
+02 12:31:18 pdf strong model fixed a failed read
+02 12:31:18 pdf pdf current col Magnanimous Trade & finance Ltd standalone ok=True/2: revenue=78.0, other_income=None, total_income=78.0, total_expenses=27.31, finance_costs=1.77, depreciation=None, pbt=50.69, tax=12.76, pat=37.93, eps=1.33
+02 12:31:18 pdf pdf incomplete Magnanimous Trade & finance Ltd standalone: missing ['ebitda'] - not posting from PDF
