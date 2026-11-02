@@ -2048,7 +2048,9 @@
 "a0e00903-bfbe-4fa7-96fb-e0f533c1bcd2",
 "03a86e3b-0b67-4a4e-96b9-2c58569291e6",
 "e5b90a10-4e6e-48a3-bce1-c2787ece352b",
-"b0651b80-ff30-43e7-b362-f884dc64eb49"
+"b0651b80-ff30-43e7-b362-f884dc64eb49",
+"6ab3fa25-e0ff-413b-901c-920c401db4ff",
+"e8700384-f462-4e29-a086-41d9d5a2fd05"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3322,7 +3324,8 @@
 "543332|Sep-26|consolidated",
 "542685|Sep-26|na",
 "533080|Sep-26|standalone",
-"524332|Sep-26|consolidated"
+"524332|Sep-26|consolidated",
+"509099|Sep-26|standalone"
 ],
 "pending": {
 "33e1d30c-bebf-4f3f-93ba-143fc5a6478d": {
@@ -3360,7 +3363,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793607032.722782,
-"last": 1793608575.2146263,
+"last": 1793608653.0338974,
 "alerted": true
 },
 "8ce15bb6-ab02-4919-a8fe-b75d1991806f": {
@@ -3398,53 +3401,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793607154.1621115,
-"last": 1793608575.2146263,
+"last": 1793608653.0338974,
 "alerted": true
-},
-"e8700384-f462-4e29-a086-41d9d5a2fd05": {
-"rec": {
-"NEWSID": "e8700384-f462-4e29-a086-41d9d5a2fd05",
-"SCRIP_CD": 509099,
-"XML_NAME": "ANN_509099_E8700384-F462-4E29-A086-41D9D5A2FD05",
-"NEWSSUB": "Oswal Leasing Ltd - 509099 -  Results For The Quarter And Half Year Ended 30.09.2026",
-"DT_TM": "2026-11-02T13:56:19.607",
-"NEWS_DT": "2026-11-02T13:56:19.607",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8f643414-4ec5-43dc-be5b-ebc86a39cfb3.pdf",
-"MORE": "",
-"HEADLINE": "Un-audited Financial Results for the quarter and half year ended 30.09.2026 is enclosed.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/oswal-leasing-ltd/oswalea/509099/",
-"SLONGNAME": "Oswal Leasing Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 7,
-"News_submission_dt": "2026-11-02T13:56:19",
-"DissemDT": "2026-11-02T13:56:19.607",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1868091,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793608020.2069845,
-"last": 1793608575.2146263,
-"alerted": false
 }
 },
 "lag": [
-[
-"Bajaj Global Ltd",
-47
-],
 [
 "Trustedge Capital Ltd",
 45
@@ -4640,6 +4601,10 @@
 [
 "Digicontent Ltd",
 47
+],
+[
+"Oswal Leasing Ltd",
+11
 ]
 ],
 "gem_use": {
@@ -4664,7 +4629,7 @@
 "2026-10-30": 450,
 "2026-10-31": 357,
 "2026-11-01": 73,
-"2026-11-02": 53
+"2026-11-02": 55
 },
 "pdfposted": {
 "530669|Sep-26|standalone": {
@@ -4985,7 +4950,17 @@
 "rev": 2742.253,
 "pat": 210.689,
 "t": 1793607978.7582855,
-"last": 1793608295.7535229
+"last": 1793608605.7326646
+},
+"509099|Sep-26|standalone": {
+"code": "509099",
+"name": "Oswal Leasing Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.333,
+"pat": -0.143,
+"t": 1793608657.9461322,
+"last": 1793608664.344926
 }
 },
 "audit": [
@@ -7381,7 +7356,8 @@
 "1b78b6ae-5d16-4a31-8f39-24621f60e7c6": 1,
 "8ce15bb6-ab02-4919-a8fe-b75d1991806f": 1,
 "7397e580-9a7c-49c2-a79b-afbe435eec30": 1,
-"03a86e3b-0b67-4a4e-96b9-2c58569291e6": 1
+"03a86e3b-0b67-4a4e-96b9-2c58569291e6": 1,
+"6ab3fa25-e0ff-413b-901c-920c401db4ff": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
