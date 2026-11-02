@@ -2178,7 +2178,9 @@
 "0a6953e1-ccca-4db8-a135-a4ad47ea0e50",
 "b7c38022-1459-4e34-8432-ba2b7cd0cf6a",
 "d17df2a4-550c-4336-ba68-c0bf57dbf1b0",
-"9e68efc1-f37d-464e-bb60-016f1b1d6ada"
+"9e68efc1-f37d-464e-bb60-016f1b1d6ada",
+"8d07e315-e9f5-484f-8eef-d831565eec39",
+"f6e14178-a8f2-4644-919e-06c04418461d"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3520,7 +3522,8 @@
 "532162|Sep-26|consolidated",
 "509945|Sep-26|consolidated",
 "513375|Sep-26|consolidated",
-"544149|Sep-26|consolidated"
+"544149|Sep-26|consolidated",
+"538542|Sep-26|standalone"
 ],
 "pending": {
 "95d94f03-933a-472e-a087-6dbc872261bd": {
@@ -3558,7 +3561,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793618415.1233728,
-"last": 1793620146.2093163,
+"last": 1793620303.493733,
 "alerted": false
 },
 "1bc7ad14-6890-4dc9-b36b-be56df1ac2e1": {
@@ -3596,7 +3599,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793618591.9019656,
-"last": 1793620146.2093163,
+"last": 1793620303.493733,
 "alerted": false
 },
 "0d0f7626-05b0-4b67-a619-7fa7a00c0da3": {
@@ -3634,45 +3637,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793618846.0966654,
-"last": 1793620146.2093163,
-"alerted": false
-},
-"f6e14178-a8f2-4644-919e-06c04418461d": {
-"rec": {
-"NEWSID": "f6e14178-a8f2-4644-919e-06c04418461d",
-"SCRIP_CD": 538542,
-"XML_NAME": "ANN_538542_F6E14178-A8F2-4644-919E-06C04418461D",
-"NEWSSUB": "Gold Coin Health Foods Ltd - 538542 - Unaudited Financial Results Along With Limited Review Report",
-"DT_TM": "2026-11-02T17:09:51.257",
-"NEWS_DT": "2026-11-02T17:09:51.257",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5578f735-49ff-4819-8516-f0c9efa2243e.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Quarterly Financial Results for Quarter and Half Year Ended on 30th September 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/gold-coin-health-foods-ltd/goldcoinhf/538542/",
-"SLONGNAME": "Gold Coin Health Foods Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 18,
-"News_submission_dt": "2026-11-02T17:09:51",
-"DissemDT": "2026-11-02T17:09:51.257",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10682495,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793619655.2386048,
-"last": 1793620146.2093163,
+"last": 1793620303.493733,
 "alerted": false
 },
 "6894dc84-420f-400f-9ea7-832871640ce7": {
@@ -3710,15 +3675,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793619776.7787437,
-"last": 1793620146.2093163,
+"last": 1793620303.493733,
 "alerted": false
 }
 },
 "lag": [
-[
-"One 97 Communications Ltd",
-45
-],
 [
 "SMC Global Securities Ltd",
 4
@@ -4914,6 +4875,10 @@
 [
 "Thacker & Company Ltd",
 19
+],
+[
+"Gold Coin Health Foods Ltd",
+11
 ]
 ],
 "gem_use": {
@@ -4938,7 +4903,7 @@
 "2026-10-30": 450,
 "2026-10-31": 357,
 "2026-11-01": 73,
-"2026-11-02": 268
+"2026-11-02": 271
 },
 "pdfposted": {
 "516030|Sep-26|consolidated": {
@@ -5029,7 +4994,7 @@
 "rev": 6.977,
 "pat": -2.515,
 "t": 1793455667.227203,
-"last": 1793619820.2519655
+"last": 1793620322.8118806
 },
 "539991|Sep-26|consolidated": {
 "code": "539991",
@@ -5039,7 +5004,7 @@
 "rev": 416.596,
 "pat": 12.302,
 "t": 1793468198.011838,
-"last": 1793619820.2519655
+"last": 1793620322.8118806
 },
 "544432|Sep-26|consolidated": {
 "code": "544432",
@@ -5049,7 +5014,7 @@
 "rev": 2557.78,
 "pat": 256.84,
 "t": 1793601589.5682724,
-"last": 1793619820.2519655
+"last": 1793620322.8118806
 },
 "534600|Sep-26|consolidated": {
 "code": "534600",
@@ -5059,7 +5024,7 @@
 "rev": 6137.911,
 "pat": 289.66900000000004,
 "t": 1793603207.4624178,
-"last": 1793619511.5906036
+"last": 1793620322.8118806
 },
 "543283|Sep-26|consolidated": {
 "code": "543283",
@@ -5489,6 +5454,16 @@
 "rev": 14690.5,
 "pat": 120.4,
 "t": 1793620265.1302822,
+"last": 0
+},
+"538542|Sep-26|standalone": {
+"code": "538542",
+"name": "Gold Coin Health Foods Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.213,
+"pat": -0.263,
+"t": 1793620316.780873,
 "last": 0
 }
 },
@@ -7785,7 +7760,8 @@
 "9ec18ecd-791c-44f2-98dc-513f91df2ba4": 1,
 "2a3fa8d0-7ed8-43d0-88f1-a071504f5e0f": 1,
 "b7c38022-1459-4e34-8432-ba2b7cd0cf6a": 1,
-"d17df2a4-550c-4336-ba68-c0bf57dbf1b0": 1
+"d17df2a4-550c-4336-ba68-c0bf57dbf1b0": 1,
+"8d07e315-e9f5-484f-8eef-d831565eec39": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
