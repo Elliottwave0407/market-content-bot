@@ -200,7 +200,10 @@ def _read_stage(rec, st, headline, filed):
         if r.content[:4] == b"%PDF":
             content = r.content
             break
-    if not content or len(content) > 15_000_000:
+    if content and len(content) > 40_000_000:
+        LOG.append(f"pdf too large ({len(content) // 1000000} MB) {rec.get('SLONGNAME')}")
+        return None
+    if not content or len(content) > 40_000_000:
         if not content:
             TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)      # the PDF is not downloadable yet: that is not a failed read, try again in 20 s
             LAST_TRY[nid] = time.time()
@@ -223,6 +226,7 @@ def _read_stage(rec, st, headline, filed):
             LOG.append(f"rule reader error {rec.get('SLONGNAME')}: {repr(e_)[:80]}")
     if (gem_blocked and not nim_ok) or STATE_["calls"] >= PER_POLL:
         TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)
+        LOG.append(f"pdf read deferred {rec.get('SLONGNAME')}: " + ("per-pass AI call cap" if STATE_["calls"] >= PER_POLL else "no AI reader available"))
         return None
     STATE_["calls"] += 1
     out, err = None, "gemini skipped (quota/backoff)"
