@@ -45,7 +45,7 @@ def fetch(sym, idx):
     for attempt in range(4):
         try:
             r = S.get(f"https://www.nseindia.com/api/annual-reports?index={idx}&symbol={sym}", headers=H, timeout=40)
-            if r.status_code in (401, 403): warm(); time.sleep(3 * (attempt + 1)); continue
+            if r.status_code in (401, 403, 429): S.cookies.clear(); warm(); time.sleep(8 * (attempt + 1)); continue
             if r.status_code != 200: time.sleep(2 * (attempt + 1)); continue
             js = r.json() if r.text.strip() else []
             return js if isinstance(js, list) else js.get("data", [])
@@ -66,7 +66,9 @@ for sym in todo:
     if n % 100 == 0:
         json.dump(sorted(done), open(STATE, "w")); open(CACHE, "w", encoding="utf-8").write("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows.values()))
         p("progress", n, "symbols", "rows", len(rows), "errors", errs, f"{(time.time()-T0)/60:.0f} min")
-    time.sleep(0.5)
+    time.sleep(1.0)
+    if n % 120 == 0:
+        S.cookies.clear(); warm()      # fresh NSE session every 120 symbols (it started refusing after about 600)
 json.dump(sorted(done), open(STATE, "w")); open(CACHE, "w", encoding="utf-8").write("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows.values()))
 p("end: symbols done", len(done), "of", len(syms), "| NSE annual reports FY2023-24 on", len(rows), "| companies", len({r["symbol"] for r in rows.values()}), "| errors", errs)
 publish()
