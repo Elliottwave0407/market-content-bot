@@ -108,3 +108,9 @@
 02 08:30:57 pdf strong model fixed a failed read
 02 08:32:24 seen 533080 Mold-Tek Packaging Ltd cat=Result early=False bse_time=14:01:37 dissem=14:01:37
 02 08:32:24 seen 526143 Mpl Plastics Ltd cat=Board Meeting early=True bse_time=14:02:09 dissem=14:02:09
+02 08:33:36 pdf rule reader Oswal Leasing Ltd: rule: no results table page
+02 08:33:36 pdf pdf current col Oswal Leasing Ltd standalone ok=True/2: revenue=3.33, other_income=None, total_income=3.33, total_expenses=4.76, finance_costs=0.0, depreciation=None, pbt=-1.43, tax=0.0, pat=-1.43, eps=-0.29
+02 08:33:36 pdf pdf incomplete Oswal Leasing Ltd standalone: missing ['ebitda'] - not posting from PDF
+02 08:35:54 pdf nim reader Avonmore Capital & Management Services Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): reje
+02 08:35:54 pdf pdf read failed Avonmore Capital & Management Services Ltd: parse JSONDecodeError('Expecting value: line 24 column 13 (char 722)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra
+02 08:36:21 seen 524332 BCL Industries Ltd-$ cat=Board Meeting early=True bse_time=14:05:28 dissem=14:05:28
