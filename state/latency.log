@@ -410,3 +410,17 @@
 02 11:37:03 seen 538975 Shree Securities Ltd cat=Board Meeting early=True bse_time=17:04:49 dissem=17:04:49
 02 11:37:03 seen 537750 Kiran Vyapar Ltd cat=Result early=False bse_time=17:05:54 dissem=17:05:54
 02 11:37:40 ready 543208|Sep-26|standalone kind=photo waited_min=13.9 tries=6 pdf_log=pdf history mismatch Thacker & Company Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 11.736 pat 60.995000000000005 | bse rev 
+02 11:37:49 pdf rule reader Kiran Vyapar Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[2002.97, 1974.17, 2312.59] pbt=[-454.87, 2278.74, 329.08] tax=[0.68, 333.87, 656.82] associates=[766.32, 1332.59, 1028.44] pat=[-455.
+02 11:37:49 pdf rule reader Regis Industries Ltd: rule: column dates not found
+02 11:37:49 pdf rule reader Thacker & Company Ltd: rule: no results table page
+02 11:37:49 pdf rule reader Bombay Wire Ropes Ltd: rule: no results table page
+02 11:37:49 pdf rule reader Shree Securities Ltd: ok
+02 11:37:49 pdf pdf current col Kiran Vyapar Ltd consolidated ok=False/3: revenue=2768.56, other_income=0.73, total_income=2769.29, total_expenses=2002.97, finance_costs=1085.52, depreciation=6.3, pbt=-454.87, tax=0.68, pat=-455.55, eps=None
+02 11:37:49 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Kiran Vyapar Ltd consolidated
+02 11:37:49 pdf pdf current col Thacker & Company Ltd consolidated ok=False/2: revenue=221.53, other_income=None, total_income=221.53, total_expenses=42.79, finance_costs=0.23, depreciation=26.78, pbt=178.74, tax=40.22, pat=551.95, eps=50.73
+02 11:37:49 pdf pdf history mismatch Thacker & Company Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 11.736 pat 60.995000000000005 | bse rev 5.53 pat 61.0 (Rs mn); q-4: pdf rev 21.145 pat 45.42400000000001 | bse
+02 11:37:49 pdf pdf has consolidated but it failed checks: not falling back to standalone Thacker & Company Ltd
+02 11:37:49 pdf pdf current col Regis Industries Ltd standalone ok=True/2: revenue=59.92, other_income=0.75, total_income=60.67, total_expenses=33.14, finance_costs=None, depreciation=None, pbt=27.54, tax=None, pat=27.54, eps=0.01
+02 11:37:49 pdf pdf current col Shree Securities Ltd standalone ok=True/2: revenue=71.502, other_income=None, total_income=71.502, total_expenses=91.031, finance_costs=82.466, depreciation=None, pbt=-19.529, tax=0.0, pat=-19.529, eps=None
+02 11:37:49 pdf pdf rule-read previous/year-ago column [1] does not reconcile and BSE history does not confirm it Shree Securities Ltd standalone
+02 11:37:49 pdf rule-read numbers rejected by later checks, AI reader will retry: Shree Securities Ltd
