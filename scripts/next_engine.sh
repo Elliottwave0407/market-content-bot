@@ -10,11 +10,12 @@ for w in concall-extract concall-nse-ingest concall-reread ppt-ingest; do
   if [ "$b" -gt 0 ]; then echo "another engine is running or queued: not starting one now"; exit 0; fi
 done
 left() { python3 -c "import json;d=json.load(open('$1'));print(d.get('remaining',0) if d.get('progressed',0)>0 else 0)" 2>/dev/null || echo 0; }
-order=(concall-nse-ingest concall-reread ppt-ingest)
+order=(concall-extract concall-nse-ingest concall-reread ppt-ingest)
 start=0; for i in "${!order[@]}"; do [ "${order[$i]}" = "$CALLER" ] && start=$(( (i + 1) % ${#order[@]} )); done
-for k in 0 1 2; do
+for k in 0 1 2 3; do
   e="${order[$(( (start + k) % ${#order[@]} ))]}"
   case "$e" in
+    concall-extract)    t=$(gh api "repos/$R/actions/workflows/concall-extract.yml/runs?per_page=1" -q '.workflow_runs[0].created_at' 2>/dev/null); age=$(( $(date +%s) - $(date -d "${t:-2000-01-01T00:00:00Z}" +%s) )); if [ "$age" -gt 10800 ]; then n=1; else n=0; fi ;;
     concall-nse-ingest) n=$(left store/concall_coverage/_ingest_state.json) ;;
     concall-reread)     n=$(left store/concall_reread/_state_v3.json) ;;
     ppt-ingest)         n=$(left store/ppt_facts/_state.json) ;;
@@ -23,9 +24,10 @@ for k in 0 1 2; do
   if [ "$n" -gt 0 ]; then
     sleep 15
     case "$e" in
+      concall-extract)    gh api -X POST repos/$R/actions/workflows/concall-extract.yml/dispatches -f ref=main -f 'inputs[budget_min]=60' -f 'inputs[workers]=6' ;;
       concall-nse-ingest) gh api -X POST repos/$R/actions/workflows/concall-nse-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' -f 'inputs[statuses]=nse_only,bse_listed_missing,covered_but_skipped' ;;
       concall-reread)     gh api -X POST repos/$R/actions/workflows/concall-reread.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=6' -f 'inputs[schema_v]=3' ;;
-      ppt-ingest)         gh api -X POST repos/$R/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=150' -f 'inputs[workers]=8' ;;
+      ppt-ingest)         gh api -X POST repos/$R/actions/workflows/ppt-ingest.yml/dispatches -f ref=main -f 'inputs[dry]=0' -f 'inputs[maxn]=0' -f 'inputs[budget_min]=100' -f 'inputs[workers]=8' ;;
     esac && echo "started $e"
     exit 0
   fi
