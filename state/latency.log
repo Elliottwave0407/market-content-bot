@@ -645,3 +645,12 @@
 02 12:51:19 wait 544901 Purple Style Labs Ltd: numbers not yet on BSE
 02 12:52:03 ready 544528|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Orient Technologies Ltd standalone ok=True/3: revenue=21735.42, other_income=28.59, total_income=21764.01, total_expenses=20399.29, finance_cost
 02 12:52:12 ready 540956|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Ganesh Consumer Products Ltd standalone ok=True/3: revenue=22672.52, other_income=175.21, total_income=22847.73, total_expenses=20330.65, financ
+02 12:59:25 pdf nim reader Bharat Bhushan Finance & Commodity Brokers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): 
+02 12:59:25 pdf pdf read failed Bharat Bhushan Finance & Commodity Brokers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in t
+02 12:59:25 pdf rule reader Novyra Pharmachem Ltd: rule: no results table page
+02 12:59:25 pdf strong model retry error ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='gene
+02 12:59:25 pdf nim reader Novyra Pharmachem Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+02 12:59:25 pdf pdf read failed Novyra Pharmachem Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible 
+02 12:59:25 pdf rule reader Peoples Investments Ltd: rule: no results table page
+02 12:59:25 pdf strong model retry did not help: None
+02 12:59:25 pdf rule reader Magnanimous Trade & finance Ltd: rule: stan: does not reconcile [lakh] total_income=[78.0, 75.3, 69.03] total_expenses=[27.31, 14.23, 11.9] pbt=[50.69, 61.07, 57.13] tax=[-12.76, -15.37, -23.75] pat=[37.93, 45.7, 33.38
