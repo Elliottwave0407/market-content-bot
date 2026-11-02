@@ -2124,7 +2124,9 @@
 "995a9c4f-63ab-4bf1-b65c-ec191e3ab2ba",
 "9a236890-eadd-432c-b270-f5a84c213b6f",
 "0342e1b9-04ce-4fd9-aa03-3ae33ec9811d",
-"cedf13aa-94ce-42ad-8f6d-f49b64478f7a"
+"cedf13aa-94ce-42ad-8f6d-f49b64478f7a",
+"53bfac37-bfec-4460-ac9c-d1056029e7f9",
+"303f66f8-3302-4ed6-9886-3bc1ab8385f8"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3438,7 +3440,8 @@
 "543619|Sep-26|na",
 "530067|Sep-26|na",
 "544793|Sep-26|standalone",
-"532300|Sep-26|consolidated"
+"532300|Sep-26|consolidated",
+"533286|Sep-26|consolidated"
 ],
 "pending": {
 "98de6ced-e84b-4ce7-b69f-2799e06e3f89": {
@@ -3555,44 +3558,6 @@
 "last": 1793616742.8411415,
 "alerted": true
 },
-"303f66f8-3302-4ed6-9886-3bc1ab8385f8": {
-"rec": {
-"NEWSID": "303f66f8-3302-4ed6-9886-3bc1ab8385f8",
-"SCRIP_CD": 533286,
-"XML_NAME": "ANN_533286_303F66F8-3302-4ED6-9886-3BC1AB8385F8",
-"NEWSSUB": "Moil Ltd - 533286 - Un-Audited Consolidated Financial Results For The Quarter Ended On 30.09.2026",
-"DT_TM": "2026-11-02T16:11:55.87",
-"NEWS_DT": "2026-11-02T16:11:55.87",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "eb467bac-a6b0-415d-83c6-f5123b5bb2f9.pdf",
-"MORE": "",
-"HEADLINE": "Submission of Un-audited consolidated Financial Results for the quarter ended on 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/moil-ltd/moil/533286/",
-"SLONGNAME": "Moil Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 14,
-"News_submission_dt": "2026-11-02T16:11:55",
-"DissemDT": "2026-11-02T16:11:55.87",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7644737,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793616169.0538464,
-"last": 1793616798.040992,
-"alerted": false
-},
 "c71e699d-3d35-44ff-bb93-ff70d8ecb5d2": {
 "rec": {
 "NEWSID": "c71e699d-3d35-44ff-bb93-ff70d8ecb5d2",
@@ -3628,7 +3593,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793616510.4809222,
-"last": 1793616798.040992,
+"last": 1793616812.4129884,
 "alerted": false
 },
 "024ef006-f830-4353-ad14-ebee790e7ee7": {
@@ -3666,15 +3631,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793616553.4080806,
-"last": 1793616798.040992,
+"last": 1793616812.4129884,
 "alerted": false
 }
 },
 "lag": [
-[
-"Vineet Laboratories Ltd",
-45
-],
 [
 "Gowra Leasing & Finance Ltd",
 10
@@ -4870,6 +4831,10 @@
 [
 "CSL Finance Ltd",
 46
+],
+[
+"Moil Ltd",
+11
 ]
 ],
 "gem_use": {
@@ -5075,7 +5040,7 @@
 "rev": 4293.45,
 "pat": -64.38,
 "t": 1793604320.521686,
-"last": 1793616500.2558222
+"last": 1793616801.2597387
 },
 "500262|Sep-26|consolidated": {
 "code": "500262",
@@ -5085,7 +5050,7 @@
 "rev": 11.493000000000002,
 "pat": 11.636000000000001,
 "t": 1793604535.1799543,
-"last": 1793616500.2558222
+"last": 1793616801.2597387
 },
 "512489|Sep-26|standalone": {
 "code": "512489",
@@ -5095,7 +5060,7 @@
 "rev": 22.732,
 "pat": 0.783,
 "t": 1793605084.8731523,
-"last": 1793616500.2558222
+"last": 1793616801.2597387
 },
 "533014|Sep-26|consolidated": {
 "code": "533014",
@@ -5105,7 +5070,7 @@
 "rev": 3279.5,
 "pat": 89.60000000000001,
 "t": 1793605378.1973367,
-"last": 1793616500.2558222
+"last": 1793616801.2597387
 },
 "500307|Sep-26|standalone": {
 "code": "500307",
@@ -5356,6 +5321,16 @@
 "pat": 730.0,
 "t": 1793616727.141884,
 "last": 1793616739.911419
+},
+"533286|Sep-26|consolidated": {
+"code": "533286",
+"name": "Moil Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 3691.328,
+"pat": 617.7460000000001,
+"t": 1793616813.15793,
+"last": 1793616819.829059
 }
 },
 "audit": [
