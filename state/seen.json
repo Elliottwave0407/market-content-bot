@@ -2021,7 +2021,8 @@
 "62915e94-bfd0-45f5-9782-ec98f93b3c40",
 "6c5c855c-79f5-414c-b6cb-85335f55cf6d",
 "637626d6-9ec0-4fb6-b202-39c3aa66c7c0",
-"7d902b68-6e47-43a1-b295-8993dfe1abc1"
+"7d902b68-6e47-43a1-b295-8993dfe1abc1",
+"9e934696-734b-45c9-ae3f-0e1a993ceae3"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3280,7 +3281,8 @@
 "514470|Sep-26|standalone",
 "534600|Sep-26|consolidated",
 "543283|Sep-26|consolidated",
-"500262|Sep-26|consolidated"
+"500262|Sep-26|consolidated",
+"512489|Sep-26|standalone"
 ],
 "pending": {
 "afdcc4c9-52c9-4d78-9f53-bcfca19edc6e": {
@@ -3318,7 +3320,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793602840.4911256,
-"last": 1793604844.9388037,
+"last": 1793604938.1818275,
 "alerted": false
 },
 "f94fd9e1-f902-4317-9bdb-bac154b2dad2": {
@@ -3356,8 +3358,46 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793602955.3595498,
-"last": 1793604921.4162374,
+"last": 1793604961.8638256,
 "alerted": true
+},
+"73f48a09-5575-41ab-8059-12295898868d": {
+"rec": {
+"NEWSID": "73f48a09-5575-41ab-8059-12295898868d",
+"SCRIP_CD": 542685,
+"XML_NAME": "ANN_542685_73F48A09-5575-41AB-8059-12295898868D",
+"NEWSSUB": "Digicontent Ltd - 542685 - Financial Results For The Quarter And Half Year Ended On September 30, 2026.",
+"DT_TM": "2026-11-02T13:06:08.41",
+"NEWS_DT": "2026-11-02T13:06:08.41",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "a0fe098f-d247-40cb-977d-1ebf795406d8.pdf",
+"MORE": "",
+"HEADLINE": "Financial results for the quarter and half year ended on September 30, 2026 is enclosed",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/digicontent-ltd/dgcontent/542685/",
+"SLONGNAME": "Digicontent Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 5,
+"News_submission_dt": "2026-11-02T13:06:08",
+"DissemDT": "2026-11-02T13:06:08.41",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 15348435,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793605001.2516458,
+"last": 1793605001.2516458,
+"alerted": false
 }
 },
 "lag": [
@@ -4583,7 +4623,7 @@
 "2026-10-29": 405,
 "2026-10-30": 450,
 "2026-10-31": 357,
-"2026-11-01": 44
+"2026-11-01": 45
 },
 "pdfposted": {
 "530669|Sep-26|standalone": {
@@ -4594,7 +4634,7 @@
 "rev": 0.0,
 "pat": -0.21600000000000003,
 "t": 1793436304.0959113,
-"last": 1793604698.2913532
+"last": 1793605091.7800174
 },
 "539683|Sep-26|standalone": {
 "code": "539683",
@@ -4604,7 +4644,7 @@
 "rev": 1.076,
 "pat": 0.392,
 "t": 1793440650.098359,
-"last": 1793604698.2913532
+"last": 1793605091.7800174
 },
 "532139|Sep-26|standalone": {
 "code": "532139",
@@ -4614,7 +4654,7 @@
 "rev": 0.0,
 "pat": -1.229,
 "t": 1793443351.7480097,
-"last": 1793604698.2913532
+"last": 1793605091.7800174
 },
 "531855|Sep-26|standalone": {
 "code": "531855",
@@ -4624,7 +4664,7 @@
 "rev": 0.0,
 "pat": 0.019000000000000003,
 "t": 1793444681.7259557,
-"last": 1793604698.2913532
+"last": 1793605091.7800174
 },
 "531735|Sep-26|standalone": {
 "code": "531735",
@@ -4814,7 +4854,7 @@
 "rev": 4293.45,
 "pat": -64.38,
 "t": 1793604320.521686,
-"last": 1793604627.6729228
+"last": 1793604930.4669771
 },
 "500262|Sep-26|consolidated": {
 "code": "500262",
@@ -4825,6 +4865,16 @@
 "pat": 11.636000000000001,
 "t": 1793604535.1799543,
 "last": 1793604849.4132738
+},
+"512489|Sep-26|standalone": {
+"code": "512489",
+"name": "Oasis Securities Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 22.732,
+"pat": 0.783,
+"t": 1793605084.8731523,
+"last": 0
 }
 },
 "audit": [
@@ -6613,7 +6663,8 @@
 "afdcc4c9-52c9-4d78-9f53-bcfca19edc6e": 1,
 "830e7f96-60c1-489a-a680-9e98cb358cc4": 1,
 "637626d6-9ec0-4fb6-b202-39c3aa66c7c0": 1,
-"7d902b68-6e47-43a1-b295-8993dfe1abc1": 1
+"7d902b68-6e47-43a1-b295-8993dfe1abc1": 1,
+"9e934696-734b-45c9-ae3f-0e1a993ceae3": 1
 },
 "cons_expected": {
 "288fb9cf-4b8e-43f9-90e2-4ef2eeab8eaf": 1,
