@@ -424,3 +424,7 @@
 02 11:37:49 pdf pdf current col Shree Securities Ltd standalone ok=True/2: revenue=71.502, other_income=None, total_income=71.502, total_expenses=91.031, finance_costs=82.466, depreciation=None, pbt=-19.529, tax=0.0, pat=-19.529, eps=None
 02 11:37:49 pdf pdf rule-read previous/year-ago column [1] does not reconcile and BSE history does not confirm it Shree Securities Ltd standalone
 02 11:37:49 pdf rule-read numbers rejected by later checks, AI reader will retry: Shree Securities Ltd
+02 11:38:33 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | overflow: HTTP 
+02 11:38:33 pdf pdf current col Shree Securities Ltd standalone ok=False/0: revenue=71.502, other_income=None, total_income=71.502, total_expenses=91.031, finance_costs=82.466, depreciation=None, pbt=None, tax=None, pat=-19.529, eps=-0.0024
+02 11:38:33 pdf pdf checks failed Shree Securities Ltd standalone
+02 11:38:46 ready 538975|Sep-26|standalone kind=photo waited_min=0.0 tries=2 pdf_log=rule reader Suryo Foods & Industries Ltd: rule: no results table page | pdf current col Shree Securities Ltd standalone ok=True/1: revenue=71.502, other_income=
