@@ -2505,7 +2505,9 @@
 "d8f3788e-9726-4c5e-9150-666876c10fd8",
 "4bfa24ce-4786-41fb-a52e-edd5fe856df7",
 "03bc0298-2c1e-418d-9fb6-17ddac936afc",
-"c63883a0-2760-4693-9fe4-295220f8152f"
+"c63883a0-2760-4693-9fe4-295220f8152f",
+"a0d5e78b-1704-4dc3-8298-9eec7ba5ba45",
+"73906b63-82ad-44d3-8126-bcbc6e545b49"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4041,7 +4043,9 @@
 "530217|Sep-26|standalone",
 "538962|Sep-26|standalone",
 "524370|Sep-26|na",
-"533156|Sep-26|consolidated"
+"533156|Sep-26|consolidated",
+"526668|Sep-26|consolidated",
+"506605|Sep-26|consolidated"
 ],
 "pending": {
 "3b6e3cda-c787-4b2b-842f-d2eacd37024c": {
@@ -4155,7 +4159,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793697588.8652194,
-"last": 1793698358.8115447,
+"last": 1793698414.2562857,
 "alerted": false
 },
 "c42d12d8-3c56-4821-bb7f-3ed7e6791e44": {
@@ -4193,7 +4197,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793698134.7621188,
-"last": 1793698358.8115447,
+"last": 1793698414.2562857,
 "alerted": false
 },
 "7564e73c-2324-408e-96ee-9e2d79c96e3d": {
@@ -4223,6 +4227,44 @@
 "DissemDT": "2026-11-03T15:03:20.17",
 "TimeDiff": "00:00:00",
 "Fld_Attachsize": 15473219,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793698414.2562857,
+"last": 1793698414.2562857,
+"alerted": false
+},
+"f466e326-d15d-4b87-8668-ea9101f2953b": {
+"rec": {
+"NEWSID": "f466e326-d15d-4b87-8668-ea9101f2953b",
+"SCRIP_CD": 511664,
+"XML_NAME": "ANN_511664_F466E326-D15D-4B87-8668-EA9101F2953B",
+"NEWSSUB": "BGIL Films & Technologies Ltd - 511664 - Outcome Of The Board Meeting",
+"DT_TM": "2026-11-03T15:02:55.563",
+"NEWS_DT": "2026-11-03T15:02:55.563",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "f3bfec7c-c6aa-45e4-a2c4-5a2aee16147d.pdf",
+"MORE": "",
+"HEADLINE": "PFA",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/bgil-films--technologies-ltd/bgil/511664/",
+"SLONGNAME": "BGIL Films & Technologies Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 12,
+"News_submission_dt": "2026-11-03T15:02:55",
+"DissemDT": "2026-11-03T15:02:55.563",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 7836816,
 "SUBCATNAME": "Financial Results",
 "BSENEWSID": null,
 "INVESTOR_PRESENTATION": null,
@@ -5831,7 +5873,7 @@
 "rev": 4314.2,
 "pat": 484.59,
 "t": 1793694844.2413924,
-"last": 1793697943.1011095
+"last": 1793698467.1603687
 },
 "533306|Sep-26|consolidated": {
 "code": "533306",
@@ -5841,7 +5883,7 @@
 "rev": 1303.8850000000002,
 "pat": 968.7940000000001,
 "t": 1793694878.5641758,
-"last": 1793697943.1011095
+"last": 1793698467.1603687
 },
 "538212|Sep-26|standalone": {
 "code": "538212",
@@ -5851,7 +5893,7 @@
 "rev": 5.069100000000001,
 "pat": 2.443,
 "t": 1793694986.3079598,
-"last": 1793697943.1011095
+"last": 1793698467.1603687
 },
 "523289|Sep-26|standalone": {
 "code": "523289",
@@ -5861,7 +5903,7 @@
 "rev": 595.663,
 "pat": 24.544,
 "t": 1793695299.3579912,
-"last": 1793697943.1011095
+"last": 1793698467.1603687
 },
 "542812|Sep-26|standalone": {
 "code": "542812",
@@ -6031,6 +6073,26 @@
 "rev": 2520.9,
 "pat": 130.20000000000002,
 "t": 1793698438.2929199,
+"last": 0
+},
+"526668|Sep-26|consolidated": {
+"code": "526668",
+"name": "Kamat Hotels (India) Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 837.306,
+"pat": 54.45700000000001,
+"t": 1793698447.7024858,
+"last": 0
+},
+"506605|Sep-26|consolidated": {
+"code": "506605",
+"name": "Polychem Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 167.204,
+"pat": 17.094,
+"t": 1793698458.27666,
 "last": 0
 }
 },
@@ -7775,7 +7837,8 @@
 "4e6aec76-6734-45d1-a435-734f637a90f8": 1,
 "e1933cde-a81b-426d-b722-eb38a1f54053": 1,
 "896d531c-b81c-497b-834c-0daae946f76c": 1,
-"d8f3788e-9726-4c5e-9150-666876c10fd8": 1
+"d8f3788e-9726-4c5e-9150-666876c10fd8": 1,
+"f466e326-d15d-4b87-8668-ea9101f2953b": 1
 },
 "cons_expected": {
 "96daf454-83a6-418f-9dd3-532db54a06ea": 1,
@@ -8356,7 +8419,9 @@
 "d60a41b1-8c43-420e-853e-f435dea66e03": 1,
 "12a0852b-6d05-49b9-bb98-847305de72fd": 1,
 "c42d12d8-3c56-4821-bb7f-3ed7e6791e44": 1,
-"c63883a0-2760-4693-9fe4-295220f8152f": 1
+"c63883a0-2760-4693-9fe4-295220f8152f": 1,
+"a0d5e78b-1704-4dc3-8298-9eec7ba5ba45": 1,
+"73906b63-82ad-44d3-8126-bcbc6e545b49": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
