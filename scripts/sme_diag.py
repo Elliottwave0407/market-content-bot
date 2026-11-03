@@ -13,11 +13,18 @@ OUT = "store/sme_diag/result.json"
 try: res = json.load(open(OUT))
 except Exception: res = {}
 key = pc.geminikey()
+CHK = []
+_orig = sh.sme_ok
+def _spy(d, i):
+    ok = _orig(d, i)
+    CHK.append({"col": i, "ok": ok, **{x: pc.val(d, x, i) for x in ("revenue", "total_income", "total_expenses", "exceptional_items", "finance_costs", "pbt", "tax", "pat")}})
+    return ok
+sh.sme_ok = _spy
 t0 = time.time()
 with BSE(download_folder=tempfile.mkdtemp()) as b:
     for c in codes:
         if time.time() - t0 > 30 * 60: break
-        if c in res and res[c].get("why") != "error": continue
+        if c in res and res[c].get("why") not in ("error",) and not os.environ.get("REDO"): continue
         rec = {"code": c}
         try:
             rows = b.announcements(scripcode=c, from_date=since, to_date=datetime.now(), category="Result").get("Table", [])
@@ -36,7 +43,9 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
                 else:
                     try: rec["text_chars"] = len(pc.pdf_text(content)) if hasattr(pc, "pdf_text") else None
                     except Exception: rec["text_chars"] = None
+                    CHK.clear()
                     out, why = sh.read_half_card(content, key, rec["name"] or c)
+                    rec["checks"] = list(CHK)
                     rec["why"] = "ok" if out else why
                     if out: rec["basis"] = out["basis"]
         except Exception as e:

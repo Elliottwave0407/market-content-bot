@@ -26,6 +26,7 @@ jobs:
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}
           GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_IMAGE_SCANNED_RESULTS }}
           CODES: ${{ github.event.inputs.codes }}
+          REDO: "1"
           FROM: ${{ github.event.inputs.since }}
         run: python -u scripts/sme_diag.py
       - name: Save
