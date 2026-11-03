@@ -2383,7 +2383,9 @@
 "097f694d-5d85-490a-888c-5d2b6d68b3c2",
 "ff2a1730-d0e7-4f47-ac91-f98f14bf0153",
 "b17bbf67-95fb-4a28-8147-03869590f659",
-"1c2b2bb9-af54-4b52-acf2-62ff59d75995"
+"1c2b2bb9-af54-4b52-acf2-62ff59d75995",
+"e4d26777-d27d-4773-884e-f342f5450efb",
+"180f47ef-599f-4871-b0f3-aab45c4cce89"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3850,47 +3852,10 @@
 "544081|Sep-26|standalone",
 "544537|Sep-26|consolidated",
 "539151|Sep-26|consolidated",
-"531335|Sep-26|consolidated"
+"531335|Sep-26|consolidated",
+"503681|Sep-26|na"
 ],
 "pending": {
-"180f47ef-599f-4871-b0f3-aab45c4cce89": {
-"rec": {
-"NEWSID": "180f47ef-599f-4871-b0f3-aab45c4cce89",
-"SCRIP_CD": 503681,
-"XML_NAME": "ANN_503681_180F47EF-599F-4871-B0F3-AAB45C4CCE89",
-"NEWSSUB": "EL CID Investments Ltd - 503681 - Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-03T11:55:45.903",
-"NEWS_DT": "2026-11-03T11:55:45.903",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "cebcc21b-887b-43db-aca3-63deb3c662fd.pdf",
-"MORE": "",
-"HEADLINE": "Please find the enclosed letter for Unaudited Financial Results for the Quarter and Half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/el-cid-investments-ltd/elcidin/503681/",
-"SLONGNAME": "EL CID Investments Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 4,
-"News_submission_dt": "2026-11-03T11:55:45",
-"DissemDT": "2026-11-03T11:55:45.903",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7248149,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793687177.7668219,
-"last": 1793689753.0321026,
-"alerted": true
-},
 "bf2eba8b-9260-47e7-9e25-4eecb285a0d3": {
 "rec": {
 "NEWSID": "bf2eba8b-9260-47e7-9e25-4eecb285a0d3",
@@ -3926,7 +3891,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793687464.433246,
-"last": 1793689753.0321026,
+"last": 1793689960.8005471,
 "alerted": true
 },
 "29728210-be37-40d2-ae3e-1a21a7b2ad08": {
@@ -3964,15 +3929,49 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793687622.3279724,
-"last": 1793689835.8658159,
+"last": 1793689960.8005471,
 "alerted": true
+},
+"f99e6247-c94c-4577-990e-a28866511203": {
+"rec": {
+"NEWSID": "f99e6247-c94c-4577-990e-a28866511203",
+"SCRIP_CD": 539151,
+"XML_NAME": "ANN_539151_F99E6247-C94C-4577-990E-A28866511203",
+"NEWSSUB": "Arfin India Ltd - 539151 - Approval Of Unaudited Financial Results For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-03T12:41:12.17",
+"NEWS_DT": "2026-11-03T12:41:12.17",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "aa53b10a-6827-4e58-8f1d-27f59a78b7ca.pdf",
+"MORE": "",
+"HEADLINE": "Approval of Unaudited financial results for the quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/arfin-india-ltd/arfin/539151/",
+"SLONGNAME": "Arfin India Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 5,
+"News_submission_dt": "2026-11-03T12:41:12",
+"DissemDT": "2026-11-03T12:41:12.17",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 4917208,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793689929.077873,
+"last": 1793689960.8005471,
+"alerted": false
 }
 },
 "lag": [
-[
-"Sunrise Industrial Traders Ltd",
-50
-],
 [
 "Videocon Industries Ltd",
 45
@@ -5168,6 +5167,10 @@
 [
 "Zydus Wellness Ltd-$",
 3
+],
+[
+"EL CID Investments Ltd",
+46
 ]
 ],
 "gem_use": {
@@ -5363,7 +5366,7 @@
 "rev": 1.083,
 "pat": -0.10900000000000001,
 "t": 1793622591.7946312,
-"last": 1793689555.1036656
+"last": 1793689885.0667765
 },
 "514316|Sep-26|standalone": {
 "code": "514316",
@@ -5373,7 +5376,7 @@
 "rev": 1315.6480000000001,
 "pat": 2.0020000000000002,
 "t": 1793627995.6362133,
-"last": 1793689555.1036656
+"last": 1793689885.0667765
 },
 "533110|Sep-26|standalone": {
 "code": "533110",
@@ -5383,7 +5386,7 @@
 "rev": 0.0,
 "pat": -2.0,
 "t": 1793687105.0170157,
-"last": 1793689555.1036656
+"last": 1793689885.0667765
 },
 "544537|Sep-26|consolidated": {
 "code": "544537",
@@ -7112,7 +7115,8 @@
 "01379f98-86ff-42f1-b6b2-aadc2df33caf": 1,
 "936c7517-f83c-4163-9397-dec70f0e3447": 1,
 "0dc9475e-4636-4235-b526-8893e1aca888": 1,
-"1c2b2bb9-af54-4b52-acf2-62ff59d75995": 1
+"1c2b2bb9-af54-4b52-acf2-62ff59d75995": 1,
+"f99e6247-c94c-4577-990e-a28866511203": 1
 },
 "cons_expected": {
 "96daf454-83a6-418f-9dd3-532db54a06ea": 1,
@@ -7636,7 +7640,8 @@
 "e3229299-a82c-43b8-97ae-c49900c98139": 1,
 "097f694d-5d85-490a-888c-5d2b6d68b3c2": 1,
 "b17bbf67-95fb-4a28-8147-03869590f659": 1,
-"1c2b2bb9-af54-4b52-acf2-62ff59d75995": 1
+"1c2b2bb9-af54-4b52-acf2-62ff59d75995": 1,
+"e4d26777-d27d-4773-884e-f342f5450efb": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
