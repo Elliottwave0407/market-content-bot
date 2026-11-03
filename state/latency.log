@@ -1871,3 +1871,11 @@
 03 14:26:01 pdf rule reader Concord Enviro Systems Ltd: rule: no results table page
 03 14:26:02 seen 532700 Entertainment Network (India cat=Result early=False bse_time=19:55:25 dissem=19:55:25
 03 14:26:02 seen 526885 Sarla Performance Fibers Ltd cat=Result early=False bse_time=19:55:36 dissem=19:55:36
+03 14:26:27 wait 526885 Sarla Performance Fibers Ltd: numbers not yet on BSE
+03 14:27:03 ready 532700|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Sarla Performance Fibers Ltd-$: rule: no results table page | pdf current col Entertainment Network (India) Ltd consolidated ok=False/3: revenue=116
+03 14:27:45 pdf prefetch error: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='generativelanguage.googl
+03 14:27:45 pdf pdf current col Starlit Power Systems Ltd consolidated ok=False/2: revenue=185.44, other_income=5.68, total_income=191.12, total_expenses=259.58, finance_costs=None, depreciation=None, pbt=-74.79, tax=None, pat=-74.79, eps=-0.37
+03 14:27:45 pdf pdf checks failed Starlit Power Systems Ltd consolidated
+03 14:27:45 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
+03 14:27:45 pdf pdf current col Rushabh Precision Bearings Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=3.31, finance_costs=0.0, depreciation=0.0, pbt=-18.69, tax=0.0, pat=-3.31, eps=-0.04
+03 14:27:45 pdf pdf checks failed Rushabh Precision Bearings Ltd standalone
