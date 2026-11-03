@@ -1830,3 +1830,17 @@
 03 14:16:55 pdf pdf read deferred Rushabh Precision Bearings Ltd: per-pass AI call cap
 03 14:17:00 ready 500472|Sep-26|consolidated kind=photo waited_min=0.7 tries=1 pdf_log=pdf current col SKF India Ltd consolidated ok=True/3: revenue=5958.1, other_income=290.8, total_income=6248.9, total_expenses=5550.9, finance_costs=0.4, depreci
 03 14:17:08 pdf pdf current col SKF India Ltd consolidated ok=True/3: revenue=5958.1, other_income=290.8, total_income=6248.9, total_expenses=5550.9, finance_costs=0.4, depreciation=166.3, pbt=699.1, tax=181.0, pat=518.1, eps=10.5
+03 14:17:47 pdf rule reader Mihika Industries Ltd: rule: no results table page
+03 14:17:47 pdf rule reader Vas Infrastructure Ltd: rule: no results table page
+03 14:17:47 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:18:39 ready 544809|Sep-26|na kind=photo waited_min=45.7 tries=99 pdf_log=pdf has consolidated but it failed checks: not falling back to standalone Lloyds Metals and Energy Ltd | pdf current col Evonile Pharma Ltd consolidated ok=Fals
+03 14:19:32 pdf pdf current col Lloyds Metals and Energy Ltd consolidated ok=False/3: revenue=5672.53, other_income=39.53, total_income=5712.06, total_expenses=4373.6, finance_costs=278.68, depreciation=225.96, pbt=1311.29, tax=288.05, pat=1023.2
+03 14:19:32 pdf pdf history mismatch Lloyds Metals and Energy Ltd consolidated cols=['30-Sep-26', '30-Jun-26', '30-Sep-25'] :: q-1: pdf rev 71501.09999999999 pat 17677.4 | bse rev 73544.0 pat 17338.9 (Rs mn); q-4: pdf rev 36521.1 pat 5510.7000000
+03 14:19:32 pdf pdf has consolidated but it failed checks: not falling back to standalone Lloyds Metals and Energy Ltd
+03 14:19:32 pdf pdf current col Evonile Pharma Ltd consolidated ok=False/3: revenue=560.5, other_income=77.4, total_income=637.9, total_expenses=965.9, finance_costs=48.3, depreciation=38.9, pbt=-1010.6, tax=-235.2, pat=-775.4, eps=-31.41
+03 14:19:32 pdf pdf checks failed Evonile Pharma Ltd consolidated
+03 14:19:32 pdf pdf current col Mihika Industries Ltd standalone ok=False/3: revenue=518.41, other_income=0.36, total_income=518.77, total_expenses=533.59, finance_costs=None, depreciation=16.46, pbt=5.18, tax=1.35, pat=3.83, eps=0.04
+03 14:19:32 pdf pdf incomplete Mihika Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:19:32 pdf pdf current col Starlit Power Systems Ltd consolidated ok=False/2: revenue=185.44, other_income=5.68, total_income=191.12, total_expenses=259.58, finance_costs=None, depreciation=None, pbt=-74.79, tax=None, pat=-74.79, eps=-0.37
+03 14:19:32 pdf pdf checks failed Starlit Power Systems Ltd consolidated
+03 14:19:32 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
