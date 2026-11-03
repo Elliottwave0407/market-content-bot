@@ -242,7 +242,7 @@ def _read_stage(rec, st, headline, filed):
     if out is not None:
         out = escalate(out, key, small)
     if out is None and nim_ok:      # Gemini out of quota / busy / failed: the free NVIDIA reader takes the same job (same checks follow)
-        out, err2 = nr.read_pdf(small, prio=mcap_of(rec.get('SCRIP_CD')))
+        out, err2 = nr.read_pdf(small, prio=-TRIES.get(nid, 1))     # fair order: a filing's first read goes before anyone's repeat attempts; same-try reads keep arrival order (no size preference)
         LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:40]})")
         if out is not None:
             return _annotate(out, small), q_head

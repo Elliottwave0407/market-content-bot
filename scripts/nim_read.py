@@ -11,7 +11,7 @@ _LOCK = threading.Lock()
 _LAST = {"t": 0.0}
 _Q = []; _CNT = itertools.count(); _CV = threading.Condition()
 def _gate(prio):
-    """One call at a time, GAP seconds apart; when several reads wait, the one with the highest priority (market cap) goes first, so a big company's result is not stuck behind micro-caps."""
+    """One call at a time, GAP seconds apart; when several reads wait, the one with the highest priority goes first (pdf_card passes fewer-tries-first, ties by arrival), so one stubborn filing's repeat attempts cannot hold up fresh filings."""
     me = (-float(prio or 0), next(_CNT))
     with _CV:
         heapq.heappush(_Q, me)
