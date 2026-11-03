@@ -1856,3 +1856,13 @@
 03 14:22:47 pdf pdf checks failed Starlit Power Systems Ltd consolidated
 03 14:22:47 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
 03 14:22:49 seen 526885 Sarla Performance Fibers Ltd cat=Board Meeting early=True bse_time=19:51:14 dissem=19:51:14
+03 14:23:24 pdf rule reader Svarnim Trade Udyog Ltd: rule: no results table page
+03 14:23:24 pdf rule reader Lloyds Metals and Energy Ltd: rule: no results table page
+03 14:23:24 pdf rule reader Sarla Performance Fibers Ltd-$: rule: no results table page
+03 14:23:26 seen 544315 Concord Enviro Systems Ltd cat=Result early=False bse_time=19:52:22 dissem=19:52:22
+03 14:23:26 seen 544339 Laxmi Dental Ltd cat=Result early=False bse_time=19:52:33 dissem=19:52:33
+03 14:23:47 wait 544339 Laxmi Dental Ltd: numbers not yet on BSE
+03 14:24:11 ready 526885|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Sarla Performance Fibers Ltd-$ consolidated ok=True/3: revenue=11988.5, other_income=-248.7, total_income=11739.8, total_expenses=10533.01, fina
+03 14:24:19 wait 544315 Concord Enviro Systems Ltd: numbers not yet on BSE
+03 14:24:24 pdf pdf current col Sarla Performance Fibers Ltd-$ consolidated ok=True/3: revenue=11988.5, other_income=-248.7, total_income=11739.8, total_expenses=10533.01, finance_costs=301.91, depreciation=584.71, pbt=1206.79, tax=56.45, pat=115
+03 14:24:24 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
