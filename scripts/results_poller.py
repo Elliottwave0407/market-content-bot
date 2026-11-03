@@ -7,6 +7,7 @@ from ci_out import p, publish
 import results_fetcher as rf
 import card
 import pdf_card
+import nse_backup
 import xbuttons
 import tags
 
@@ -287,12 +288,19 @@ def build(bse, rec, final=False, age_min=0):
     st = res["status"]
     if st == "quarter_unverified":
         return stub(name, code, None, "quarter not identified from the filing headline", lk, f"{code}|unverified|{rec['NEWSID']}")
+    nsq = None
     if st in ("not_available", "ok_limited"):
-        if not final:
-            return ("wait", "numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
-        reason = "BSE has not published structured numbers for this filing" if st == "not_available" else "only limited data available from BSE for this format"
-        return stub(name, code, res["quarter"], reason, lk, f"{code}|{res['quarter']}|na")
-    basis = "consolidated" if res["consolidated"] else "standalone"
+        # BSE has no numbers: try NSE's own structured numbers (env NSE_BACKUP=1) before waiting or posting a no-numbers card
+        cons_exp0 = bool((_ST or {}).get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
+        nsq = nse_backup.get(code, res["quarter"], cons_exp0)
+        if nsq:
+            p(f"[nse-backup] {name} {res['quarter']} {nsq['basis']}: numbers taken from NSE")
+        else:
+            if not final:
+                return ("wait", "numbers not yet on BSE", None, f"{code}|{res['quarter']}|wait")
+            reason = "BSE has not published structured numbers for this filing" if st == "not_available" else "only limited data available from BSE for this format"
+            return stub(name, code, res["quarter"], reason, lk, f"{code}|{res['quarter']}|na")
+    basis = nsq["basis"] if nsq else ("consolidated" if res["consolidated"] else "standalone")
     cons_expected = bool((_ST or {}).get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
     cons_missing = False
     if basis == "standalone":
@@ -304,10 +312,13 @@ def build(bse, rec, final=False, age_min=0):
             return stub(name, code, res["quarter"], "consolidated numbers not yet published on BSE", lk, f"{code}|{res['quarter']}|nocons")
         if not so and age_min < 120:
             return ("wait", "confirming that no consolidated statement exists", None, f"{code}|{res['quarter']}|wait")
-    q = rf.expected_quarter(headline, filed)
-    quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
-    try: yprev = rf.fetch(bse, code, name, basis, q - 5)      # quarter before the year-ago one: only used by the rating's seasonality adjustment
-    except Exception: yprev = None
+    if nsq:
+        quarters, yprev = nsq["quarters"], nsq["yprev"]
+    else:
+        q = rf.expected_quarter(headline, filed)
+        quarters = [{"q": rf.qlabel(q - i), "m": rf.fetch(bse, code, name, basis, q - i)} for i in range(5)]
+        try: yprev = rf.fetch(bse, code, name, basis, q - 5)      # quarter before the year-ago one: only used by the rating's seasonality adjustment
+        except Exception: yprev = None
     if not quarters[0]["m"]:
         if not final:
             return ("wait", "comparison data incomplete", None, f"{code}|{res['quarter']}|wait")
