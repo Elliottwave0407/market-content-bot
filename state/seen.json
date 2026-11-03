@@ -2786,7 +2786,10 @@
 "d126cdef-61c5-443d-a239-bb284dac32e5",
 "6f0d7af2-b4da-4a23-a4c5-feaee186bab1",
 "80c8a824-c14b-42cc-bcd4-a389b8e9d3ba",
-"5936fc36-9e35-42e0-bfd8-b95973b97f35"
+"5936fc36-9e35-42e0-bfd8-b95973b97f35",
+"a482e244-b3d1-4edf-86c8-95c4546548ac",
+"331494a8-0bae-425f-bb3c-a63b5879a91f",
+"74a96920-1dd4-4001-88db-1861c41027e4"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4491,7 +4494,9 @@
 "544541|Sep-26|na",
 "544454|Sep-26|consolidated",
 "544317|Sep-26|consolidated",
-"524348|Sep-26|consolidated"
+"524348|Sep-26|consolidated",
+"506808|Sep-26|standalone",
+"544513|Sep-26|consolidated"
 ],
 "pending": {
 "9a49dec1-203a-4824-92be-fc1c218eebf4": {
@@ -4529,7 +4534,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793709445.239925,
-"last": 1793712833.4455657,
+"last": 1793713104.7301176,
 "alerted": true
 },
 "cd12471b-799c-492e-afe8-08e439291870": {
@@ -5213,7 +5218,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793712518.7095206,
-"last": 1793712833.4455657,
+"last": 1793713104.7301176,
 "alerted": false
 },
 "9c51a0a6-2ee1-4441-b5d7-f296f37ed0ff": {
@@ -5251,7 +5256,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793712518.7095206,
-"last": 1793712833.4455657,
+"last": 1793713104.7301176,
 "alerted": false
 },
 "30732f8a-61c2-4716-82c2-821dadfd54f3": {
@@ -5289,7 +5294,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793712518.7095206,
-"last": 1793712833.4455657,
+"last": 1793713104.7301176,
 "alerted": false
 },
 "08a85084-3acb-4670-8bd0-edbfd346f8f4": {
@@ -5444,44 +5449,6 @@
 "last": 1793712833.4455657,
 "alerted": false
 },
-"74a96920-1dd4-4001-88db-1861c41027e4": {
-"rec": {
-"NEWSID": "74a96920-1dd4-4001-88db-1861c41027e4",
-"SCRIP_CD": 544513,
-"XML_NAME": "ANN_544513_74A96920-1DD4-4001-88DB-1861C41027E4",
-"NEWSSUB": "Dev Accelerator Ltd - 544513 - Financial Results For Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-03T18:59:09.45",
-"NEWS_DT": "2026-11-03T18:59:09.45",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "577e9d79-e132-4eee-86cc-967816022619.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for Quarter and Half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/dev-accelerator-ltd/devx/544513/",
-"SLONGNAME": "Dev Accelerator Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 34,
-"News_submission_dt": "2026-11-03T18:59:09",
-"DissemDT": "2026-11-03T18:59:09.45",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 12809153,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793712726.8239918,
-"last": 1793712833.4455657,
-"alerted": false
-},
 "37d49d73-18e0-43bc-8e94-c2801fcfd8f2": {
 "rec": {
 "NEWSID": "37d49d73-18e0-43bc-8e94-c2801fcfd8f2",
@@ -5560,10 +5527,6 @@
 }
 },
 "lag": [
-[
-"Axita Cotton Ltd",
-121
-],
 [
 "RPG Life Sciences Ltd",
 14
@@ -6759,6 +6722,10 @@
 [
 "Systematic Industries Ltd",
 51
+],
+[
+"Dev Accelerator Ltd",
+6
 ]
 ],
 "gem_use": {
@@ -6784,7 +6751,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 624
+"2026-11-03": 625
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -8165,6 +8132,26 @@
 "rev": 8262.4,
 "pat": 827.7,
 "t": 1793713171.5481956,
+"last": 0
+},
+"506808|Sep-26|standalone": {
+"code": "506808",
+"name": "Tuticorin Alkali Chemicals And Fertilizers Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1133.526,
+"pat": 41.375,
+"t": 1793713185.542613,
+"last": 0
+},
+"544513|Sep-26|consolidated": {
+"code": "544513",
+"name": "Dev Accelerator Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 802.25,
+"pat": 54.964,
+"t": 1793713200.8771346,
 "last": 0
 }
 },
@@ -9907,7 +9894,8 @@
 "eda44488-9138-442d-acd9-86b24c4a1058": 1,
 "d3784956-5465-4b46-846f-4e5a547cc4e9": 1,
 "0898de5a-303f-4fdf-9002-4c963424fc64": 1,
-"dc6f2f58-2968-4f48-b06b-d96d0a596d7e": 1
+"dc6f2f58-2968-4f48-b06b-d96d0a596d7e": 1,
+"331494a8-0bae-425f-bb3c-a63b5879a91f": 1
 },
 "cons_expected": {
 "b07ca22a-d6cb-4943-986d-1c482164c93c": 1,
@@ -10507,7 +10495,9 @@
 "85261cec-5e76-4ee0-91c6-3b6d5ca62cb4": 1,
 "08a85084-3acb-4670-8bd0-edbfd346f8f4": 1,
 "80c8a824-c14b-42cc-bcd4-a389b8e9d3ba": 1,
-"5936fc36-9e35-42e0-bfd8-b95973b97f35": 1
+"5936fc36-9e35-42e0-bfd8-b95973b97f35": 1,
+"a482e244-b3d1-4edf-86c8-95c4546548ac": 1,
+"74a96920-1dd4-4001-88db-1861c41027e4": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -11373,7 +11363,7 @@
 "other": 50
 },
 "results-key": {
-"ok": 422,
+"ok": 426,
 "429": 4,
 "other": 42
 },
