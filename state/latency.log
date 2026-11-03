@@ -992,3 +992,10 @@
 03 00:01:45 pdf pdf read failed EFC (I) Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention
 03 00:01:49 ready 512008|Sep-26|consolidated kind=photo waited_min=1.7 tries=1 pdf_log=
 03 06:13:52 seen 533110 Shree Precoated Steels Ltd cat=Board Meeting early=True bse_time=11:43:35 dissem=11:43:35
+03 06:15:50 seen 523248 Machino Plastics Ltd-$ cat=Board Meeting early=True bse_time=11:45:32 dissem=11:45:32
+03 06:16:48 pdf rule reader Machino Plastics Ltd-$: rule: column dates not found
+03 06:17:51 pdf nim reader Shree Precoated Steels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 06:17:51 pdf pdf read failed Shree Precoated Steels Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 06:17:55 pdf rule reader Shree Precoated Steels Ltd: rule: stan: no revenue row
+03 06:17:55 pdf nim reader Shree Precoated Steels Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:17:55 pdf pdf read failed Shree Precoated Steels Ltd: gemini skipped (quota/backoff); nim: cooling down
