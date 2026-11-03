@@ -2680,7 +2680,8 @@
 "4f116c60-e8fc-4076-96e6-2397a796d222",
 "38bd2bf5-18fc-4b15-9864-a5f509f6e576",
 "52861aae-c168-41f8-902a-bac68e748a41",
-"16d84dcf-66b7-4ef2-bed5-777c2e28abb7"
+"16d84dcf-66b7-4ef2-bed5-777c2e28abb7",
+"4a727884-4480-4ad3-8b04-c84092a66e2c"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4314,7 +4315,8 @@
 "541019|Sep-26|consolidated",
 "544916|Sep-26|consolidated",
 "511724|Sep-26|standalone",
-"524400|Sep-26|standalone"
+"524400|Sep-26|standalone",
+"543256|Sep-26|standalone"
 ],
 "pending": {
 "44cb21ca-70bf-4064-a771-9f669966a789": {
@@ -4697,44 +4699,6 @@
 "last": 1793707706.5924077,
 "alerted": false
 },
-"4a727884-4480-4ad3-8b04-c84092a66e2c": {
-"rec": {
-"NEWSID": "4a727884-4480-4ad3-8b04-c84092a66e2c",
-"SCRIP_CD": 543256,
-"XML_NAME": "ANN_543256_4A727884-4480-4AD3-8B04-C84092A66E2C",
-"NEWSSUB": "Rita Finance and Leasing Ltd - 543256 - Submission Of Standalone Unaudited Financial Results For The Second Quarter And Half Year Ended On 30.09.2026 And Disclosure Pursuant To Regulation 33 Of SEBI (LODR) Regulations, 2015",
-"DT_TM": "2026-11-03T17:16:51.113",
-"NEWS_DT": "2026-11-03T17:16:51.113",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "084a04de-05f0-4704-828b-9ea71e38e3f3.pdf",
-"MORE": "",
-"HEADLINE": "Submission of Standalone Unaudited Financial Results for the Second Quarter and Half year ended on 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/rita-finance-and-leasing-ltd/rfll/543256/",
-"SLONGNAME": "Rita Finance and Leasing Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-03T17:16:51",
-"DissemDT": "2026-11-03T17:16:51.113",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 13285921,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793706632.2220209,
-"last": 1793707490.2387874,
-"alerted": false
-},
 "00d36eb2-d89e-4417-8923-fe3a2e22a4e1": {
 "rec": {
 "NEWSID": "00d36eb2-d89e-4417-8923-fe3a2e22a4e1",
@@ -5003,10 +4967,6 @@
 }
 },
 "lag": [
-[
-"Bliss GVS Pharma Ltd",
-46
-],
 [
 "Comfort Intech Ltd-$",
 47
@@ -6202,6 +6162,10 @@
 [
 "Ishita Drugs & Industries Ltd",
 7
+],
+[
+"Rita Finance and Leasing Ltd",
+18
 ]
 ],
 "gem_use": {
@@ -6227,7 +6191,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 503
+"2026-11-03": 504
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -7288,6 +7252,16 @@
 "rev": 30.331000000000003,
 "pat": 1.6079999999999999,
 "t": 1793707805.2131996,
+"last": 0
+},
+"543256|Sep-26|standalone": {
+"code": "543256",
+"name": "Rita Finance and Leasing Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 3.1940000000000004,
+"pat": 1.444,
+"t": 1793707819.8962412,
 "last": 0
 }
 },
@@ -10370,7 +10344,7 @@
 "other": 49
 },
 "results-key": {
-"ok": 220,
+"ok": 221,
 "429": 1,
 "other": 37
 }
