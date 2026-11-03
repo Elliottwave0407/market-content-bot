@@ -1593,3 +1593,11 @@
 03 10:52:31 ready 508814|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf q-1 revenue typo: pdf 11730.8 -> BSE history 11655.4 (profit matched) Cosmo First Ltd | pdf history cells corrected from BSE for q-[1]: Cosmo First Ltd cons
 03 10:52:45 pdf pdf q-1 revenue typo: pdf 11730.8 -> BSE history 11655.4 (profit matched) Cosmo First Ltd
 03 10:52:45 pdf pdf history cells corrected from BSE for q-[1]: Cosmo First Ltd consolidated
+03 10:53:04 pdf rule reader Libord Securities Ltd: rule: stan: does not reconcile [lakh] total_expenses=[36.98, 17.09, 11.01] pbt=[-34.38, -13.72, 1.96] pat=[-34.38, -13.72, 1.96] depreciation=[0.0, 0.0, 0.0] finance_costs=[0.04, 0.0, 0.29]
+03 10:53:04 pdf rule reader Suncare Traders Ltd: rule: column dates not found
+03 10:53:04 pdf rule reader Suncare Traders Ltd: rule: column dates not found
+03 10:53:04 pdf pdf current col Libord Securities Ltd standalone ok=True/3: revenue=0.0, other_income=2.6, total_income=2.6, total_expenses=36.98, finance_costs=0.04, depreciation=0.0, pbt=-34.38, tax=0.0, pat=-34.38, eps=-0.69
+03 10:53:04 pdf pdf incomplete Libord Securities Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 10:53:27 pdf rule reader Suncare Traders Ltd: rule: column dates not found
+03 10:53:27 pdf nim reader AG Ventures Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 32 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: pa
+03 10:53:27 pdf pdf read failed AG Ventures Ltd-$: parse JSONDecodeError('Expecting value: line 24 column 27 (char 858)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 32 numbers no
