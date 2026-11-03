@@ -1624,3 +1624,20 @@
 03 11:06:01 seen 526473 Elegant Floriculture & Agrot cat=Board Meeting early=True bse_time=16:35:44 dissem=16:35:44
 03 11:06:17 ready 526981|Sep-26|consolidated kind=photo waited_min=1.0 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Shri Bajrang Alliance Ltd consolidated ok=False/
 03 11:07:08 seen 512004 Nilkanth Engineering Ltd cat=Board Meeting early=True bse_time=16:36:38 dissem=16:36:38
+03 11:07:59 pdf nim reader Elegant Floriculture & Agrotech India Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 11:08:05 pdf pdf current col Elegant Floriculture & Agrotech India Ltd standalone ok=False/3: revenue=256.5, other_income=0.0, total_income=256.5, total_expenses=246.49, finance_costs=0.0, depreciation=0.0, pbt=-3.49, tax=0.0, pat=-3.49, eps=-
+03 11:08:05 pdf pdf previous/year-ago columns were swapped vs BSE history: corrected Elegant Floriculture & Agrotech India Ltd standalone
+03 11:08:05 pdf pdf incomplete Elegant Floriculture & Agrotech India Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:08:05 pdf nim reader Nilkanth Engineering Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+03 11:08:05 pdf pdf read failed Nilkanth Engineering Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possib
+03 11:08:06 seen 543590 Rhetan TMT Ltd cat=Board Meeting early=True bse_time=16:37:16 dissem=16:37:16
+03 11:08:06 seen 532907 IL&FS Engineering and Constr cat=Result early=False bse_time=16:37:33 dissem=16:37:33
+03 11:08:06 seen 544582 Shlokka Dyes Ltd cat=Board Meeting early=True bse_time=16:37:37 dissem=16:37:37
+03 11:08:06 seen 508993 Kedia Construction Company L cat=Board Meeting early=True bse_time=16:37:49 dissem=16:37:49
+03 11:08:28 wait 532907 IL&FS Engineering and Constr: numbers not yet on BSE
+03 11:08:32 pdf rule reader IL&FS Engineering and Construction Company Ltd: rule: no results table page
+03 11:08:32 pdf nim reader AG Ventures Ltd-$: nim deepseek-v4.1-flash: 31 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 33 numbers not found in the filing text (possible inven
+03 11:08:32 pdf pdf read failed AG Ventures Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 31 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 33 numbers not fou
+03 11:09:05 seen 500085 Chambal Fertilisers & Chemic cat=Result early=False bse_time=16:38:56 dissem=16:38:56
+03 11:09:05 seen 531432 Systematix Securities Ltd cat=Result early=False bse_time=16:39:02 dissem=16:39:02
+03 11:09:39 ready 500085|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
