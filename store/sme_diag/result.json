@@ -46,7 +46,8 @@
 "date": "2026-10-28",
 "bytes": 783586,
 "text_chars": null,
-"why": "standalone figures failed arithmetic checks"
+"why": "error",
+"err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googl"
 },
 "543065": {
 "code": "543065",
@@ -54,6 +55,44 @@
 "date": "2026-11-03",
 "bytes": 3824504,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 4328.28,
+"total_income": 4382.24,
+"total_expenses": 4261.71,
+"exceptional_items": null,
+"finance_costs": 32.36,
+"pbt": 120.16,
+"tax": 17.56,
+"pat": 102.6
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 3719.32,
+"total_income": 3839.36,
+"total_expenses": 3510.48,
+"exceptional_items": null,
+"finance_costs": 36.1,
+"pbt": 320.59,
+"tax": 91.69,
+"pat": 228.9
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 3412.15,
+"total_income": 3470.47,
+"total_expenses": 3400.46,
+"exceptional_items": null,
+"finance_costs": 37.5,
+"pbt": 69.53,
+"tax": 20.38,
+"pat": 49.15
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "543269": {
@@ -62,6 +101,7 @@
 "date": "2026-10-28",
 "bytes": 1606665,
 "text_chars": null,
+"checks": [],
 "why": "no usable statement"
 },
 "543305": {
@@ -70,6 +110,7 @@
 "date": "2026-10-27",
 "bytes": 1942287,
 "text_chars": null,
+"checks": [],
 "why": "no usable statement"
 },
 "543497": {
@@ -78,6 +119,44 @@
 "date": "2026-11-03",
 "bytes": 2584450,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 7983.43,
+"total_income": 8002.242,
+"total_expenses": 7670.171,
+"exceptional_items": null,
+"finance_costs": 85.492,
+"pbt": 327.305,
+"tax": 92.069,
+"pat": 235.236
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 8251.268,
+"total_income": 8270.081,
+"total_expenses": 8025.785,
+"exceptional_items": null,
+"finance_costs": 100.554,
+"pbt": 244.624,
+"tax": 141.428,
+"pat": 103.195
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 7210.807,
+"total_income": 7229.619,
+"total_expenses": 5829.594,
+"exceptional_items": null,
+"finance_costs": 85.207,
+"pbt": 399.058,
+"tax": 84.491,
+"pat": 314.567
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "543537": {
@@ -94,6 +173,80 @@
 "date": "2026-10-27",
 "bytes": 10158518,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 3348.28,
+"total_income": 3358.61,
+"total_expenses": 3127.09,
+"exceptional_items": null,
+"finance_costs": 88.59,
+"pbt": 231.52,
+"tax": 72.77,
+"pat": 187.75
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 3588.5,
+"total_income": 3595.51,
+"total_expenses": 3554.89,
+"exceptional_items": null,
+"finance_costs": 93.28,
+"pbt": 40.62,
+"tax": 26.14,
+"pat": 53.46
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 2897.23,
+"total_income": 2899.37,
+"total_expenses": 2735.41,
+"exceptional_items": null,
+"finance_costs": 62.1,
+"pbt": 163.96,
+"tax": 39.18,
+"pat": 120.58
+},
+{
+"col": 0,
+"ok": true,
+"revenue": 3260.33,
+"total_income": 3264.27,
+"total_expenses": 3033.97,
+"exceptional_items": null,
+"finance_costs": 88.16,
+"pbt": 230.3,
+"tax": 73.21,
+"pat": 187.59
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 3481.55,
+"total_income": 3486.21,
+"total_expenses": 3449.29,
+"exceptional_items": null,
+"finance_costs": 92.82,
+"pbt": 36.93,
+"tax": 27.96,
+"pat": 55.43
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 2837.18,
+"total_income": 2839.41,
+"total_expenses": 2676.49,
+"exceptional_items": null,
+"finance_costs": 61.57,
+"pbt": 162.92,
+"tax": 39.12,
+"pat": 119.6
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "543982": {
@@ -102,6 +255,80 @@
 "date": "2026-10-27",
 "bytes": 2475653,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 3614.24,
+"total_income": 4375.15,
+"total_expenses": 4587.76,
+"exceptional_items": null,
+"finance_costs": 40.54,
+"pbt": -212.61,
+"tax": 37.19,
+"pat": -539.92
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 2258.52,
+"total_income": 2295.28,
+"total_expenses": 3681.49,
+"exceptional_items": null,
+"finance_costs": 30.39,
+"pbt": -1386.22,
+"tax": -16.66,
+"pat": -1567.17
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 2622.02,
+"total_income": 2648.77,
+"total_expenses": 2209.73,
+"exceptional_items": 259.08,
+"finance_costs": 26.59,
+"pbt": 179.96,
+"tax": 13.98,
+"pat": 111.68
+},
+{
+"col": 0,
+"ok": true,
+"revenue": 3439.1,
+"total_income": 4196.53,
+"total_expenses": 4297.22,
+"exceptional_items": null,
+"finance_costs": 40.56,
+"pbt": -100.69,
+"tax": 34.29,
+"pat": -134.98
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 2258.52,
+"total_income": 2295.28,
+"total_expenses": 3681.49,
+"exceptional_items": null,
+"finance_costs": 30.39,
+"pbt": -1386.22,
+"tax": -16.66,
+"pat": -1369.56
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 2418.47,
+"total_income": 2431.04,
+"total_expenses": 2010.41,
+"exceptional_items": 259.08,
+"finance_costs": 26.57,
+"pbt": 161.55,
+"tax": 11.06,
+"pat": 150.49
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544002": {
@@ -110,6 +337,44 @@
 "date": "2026-11-03",
 "bytes": 5770961,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 20235.25,
+"total_income": 20235.25,
+"total_expenses": 20087.13,
+"exceptional_items": null,
+"finance_costs": 0.0,
+"pbt": 148.12,
+"tax": 36.84,
+"pat": 111.28
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 15670.28,
+"total_income": 15671.91,
+"total_expenses": 15616.78,
+"exceptional_items": 37.57,
+"finance_costs": 0.07,
+"pbt": 17.56,
+"tax": 13.68,
+"pat": 3.88
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 12808.83,
+"total_income": 12814.52,
+"total_expenses": 12734.67,
+"exceptional_items": null,
+"finance_costs": 0.02,
+"pbt": 79.85,
+"tax": 19.96,
+"pat": 59.89
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544013": {
@@ -118,6 +383,44 @@
 "date": "2026-10-29",
 "bytes": 1743435,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": false,
+"revenue": 553.68,
+"total_income": 556.28,
+"total_expenses": 541.92,
+"exceptional_items": 0.0,
+"finance_costs": 0.0,
+"pbt": 14.36,
+"tax": -7.83,
+"pat": 22.19
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 461.26,
+"total_income": 476.45,
+"total_expenses": 527.13,
+"exceptional_items": 0.0,
+"finance_costs": 0.0,
+"pbt": -50.68,
+"tax": -20.89,
+"pat": -29.79
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 481.5,
+"total_income": 485.26,
+"total_expenses": 507.42,
+"exceptional_items": 0.0,
+"finance_costs": 0.0,
+"pbt": -22.16,
+"tax": 10.32,
+"pat": -32.48
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544353": {
@@ -142,6 +445,44 @@
 "date": "2026-10-30",
 "bytes": 5315849,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 1981.21,
+"total_income": 2072.58,
+"total_expenses": 450.14,
+"exceptional_items": null,
+"finance_costs": 0.0,
+"pbt": 1622.44,
+"tax": 407.8,
+"pat": 1182.66
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 1553.6,
+"total_income": 1568.07,
+"total_expenses": 491.39,
+"exceptional_items": -2.3,
+"finance_costs": 0.4,
+"pbt": 1078.97,
+"tax": 289.89,
+"pat": 765.9
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 897.94,
+"total_income": 1138.04,
+"total_expenses": 149.58,
+"exceptional_items": null,
+"finance_costs": 0.01,
+"pbt": 988.46,
+"tax": 236.67,
+"pat": 770.6
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544436": {
@@ -159,6 +500,80 @@
 "date": "2026-11-03",
 "bytes": 23407246,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 12007.13,
+"total_income": 12079.33,
+"total_expenses": 11721.42,
+"exceptional_items": null,
+"finance_costs": 233.78,
+"pbt": 357.9,
+"tax": 134.09,
+"pat": 223.81
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 10825.63,
+"total_income": 10909.43,
+"total_expenses": 10626.37,
+"exceptional_items": -12.5,
+"finance_costs": 280.94,
+"pbt": 295.56,
+"tax": 120.87,
+"pat": 175.38
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 12545.47,
+"total_income": 12612.74,
+"total_expenses": 11913.04,
+"exceptional_items": null,
+"finance_costs": 263.15,
+"pbt": 699.71,
+"tax": 246.24,
+"pat": 453.46
+},
+{
+"col": 0,
+"ok": true,
+"revenue": 12007.13,
+"total_income": 12079.33,
+"total_expenses": 11721.42,
+"exceptional_items": null,
+"finance_costs": 233.78,
+"pbt": 357.9,
+"tax": 134.09,
+"pat": 223.81
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 10825.63,
+"total_income": 10909.43,
+"total_expenses": 10626.37,
+"exceptional_items": -12.5,
+"finance_costs": 280.94,
+"pbt": 295.56,
+"tax": 120.87,
+"pat": 175.38
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 12545.47,
+"total_income": 12612.74,
+"total_expenses": 11913.04,
+"exceptional_items": null,
+"finance_costs": 263.15,
+"pbt": 699.71,
+"tax": 246.24,
+"pat": 453.46
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544669": {
@@ -167,6 +582,44 @@
 "date": "2026-10-26",
 "bytes": 2215456,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": false,
+"revenue": 4220.27,
+"total_income": 4132.31,
+"total_expenses": 3353.17,
+"exceptional_items": null,
+"finance_costs": 10.01,
+"pbt": 873.21,
+"tax": 220.16,
+"pat": 653.05
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 4045.97,
+"total_income": 4226.38,
+"total_expenses": 3525.79,
+"exceptional_items": null,
+"finance_costs": 49.67,
+"pbt": 606.52,
+"tax": 52.83,
+"pat": 553.7
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 2845.01,
+"total_income": 2851.71,
+"total_expenses": 2253.53,
+"exceptional_items": null,
+"finance_costs": 36.0,
+"pbt": 598.18,
+"tax": 150.6,
+"pat": 447.58
+}
+],
 "why": "standalone figures failed arithmetic checks"
 },
 "544684": {
@@ -175,6 +628,80 @@
 "date": "2026-10-26",
 "bytes": 10996163,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 3318.19,
+"total_income": 3496.17,
+"total_expenses": 2821.34,
+"exceptional_items": null,
+"finance_costs": 54.02,
+"pbt": 674.83,
+"tax": 198.64,
+"pat": 476.19
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 5925.41,
+"total_income": 5998.84,
+"total_expenses": 4868.32,
+"exceptional_items": null,
+"finance_costs": 71.74,
+"pbt": 1130.53,
+"tax": 277.66,
+"pat": 852.87
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 1817.73,
+"total_income": 1828.06,
+"total_expenses": 1613.94,
+"exceptional_items": null,
+"finance_costs": 68.28,
+"pbt": 245.19,
+"tax": 55.11,
+"pat": 190.1
+},
+{
+"col": 0,
+"ok": true,
+"revenue": 3318.19,
+"total_income": 3496.17,
+"total_expenses": 2812.72,
+"exceptional_items": null,
+"finance_costs": 54.02,
+"pbt": 683.45,
+"tax": 198.64,
+"pat": 484.82
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 5925.41,
+"total_income": 5998.84,
+"total_expenses": 4868.32,
+"exceptional_items": null,
+"finance_costs": 71.74,
+"pbt": 1130.53,
+"tax": 277.66,
+"pat": 852.87
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 1817.73,
+"total_income": 1828.06,
+"total_expenses": 1613.94,
+"exceptional_items": null,
+"finance_costs": 68.28,
+"pbt": 245.19,
+"tax": 55.09,
+"pat": 190.1
+}
+],
 "why": "standalone figures failed arithmetic checks"
 }
 }
