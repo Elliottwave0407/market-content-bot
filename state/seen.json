@@ -2746,7 +2746,9 @@
 "01fa9e05-495f-490a-b5f4-7c3044543b33",
 "5d5ec055-bced-4371-9da1-7c750367fc81",
 "cd03b539-1827-4442-9d53-e3b30a093c44",
-"59009dbb-88be-44bb-8038-86560dc667e2"
+"59009dbb-88be-44bb-8038-86560dc667e2",
+"1b87ef92-5332-4f32-9bc3-29e4be6fd34c",
+"286f301a-51eb-495a-88ca-e520b365a444"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4428,47 +4430,11 @@
 "540782|Sep-26|consolidated",
 "506285|Sep-26|standalone",
 "544138|Sep-26|consolidated",
-"540395|Sep-26|consolidated"
+"540395|Sep-26|consolidated",
+"544937|Sep-26|consolidated",
+"500414|Sep-26|standalone"
 ],
 "pending": {
-"1b87ef92-5332-4f32-9bc3-29e4be6fd34c": {
-"rec": {
-"NEWSID": "1b87ef92-5332-4f32-9bc3-29e4be6fd34c",
-"SCRIP_CD": 544937,
-"XML_NAME": "ANN_544937_1B87EF92-5332-4F32-9BC3-29E4BE6FD34C",
-"NEWSSUB": "National Stock Exchange of India Ltd - 544937 - Results - Standalone And Consolidated Audited Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-03T17:51:10.677",
-"NEWS_DT": "2026-11-03T17:51:10.677",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "68078471-9790-4eae-ad03-880c4b7c7fdd.pdf",
-"MORE": "",
-"HEADLINE": "Results - Standalone and Consolidated Audited Financial results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/national-stock-exchange-of-india-ltd/nse/544937/",
-"SLONGNAME": "National Stock Exchange of India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 30,
-"News_submission_dt": "2026-11-03T17:51:10",
-"DissemDT": "2026-11-03T17:51:10.677",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10946738,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793708712.474072,
-"last": 1793711185.6104617,
-"alerted": true
-},
 "eda44488-9138-442d-acd9-86b24c4a1058": {
 "rec": {
 "NEWSID": "eda44488-9138-442d-acd9-86b24c4a1058",
@@ -4732,7 +4698,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793709617.2472556,
-"last": 1793711185.6104617,
+"last": 1793711420.013936,
 "alerted": true
 },
 "cd12471b-799c-492e-afe8-08e439291870": {
@@ -4998,7 +4964,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793710907.2749245,
-"last": 1793711185.6104617,
+"last": 1793711420.013936,
 "alerted": false
 },
 "7f9640f9-d272-40df-b160-165e901335c7": {
@@ -5231,10 +5197,6 @@
 }
 },
 "lag": [
-[
-"Prima Innovation Ltd",
-120
-],
 [
 "Bandaram Pharma Packtech Ltd",
 7
@@ -6430,6 +6392,10 @@
 [
 "Narmadesh Brass Industries Ltd",
 49
+],
+[
+"National Stock Exchange of India Ltd",
+45
 ]
 ],
 "gem_use": {
@@ -7706,6 +7672,16 @@
 "rev": 12507.0,
 "pat": 1662.0,
 "t": 1793710954.2147837,
+"last": 0
+},
+"500414|Sep-26|standalone": {
+"code": "500414",
+"name": "Timex Group India Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 3580.1000000000004,
+"pat": 471.1,
+"t": 1793711495.4311097,
 "last": 0
 }
 },
@@ -9435,7 +9411,8 @@
 "022f827a-e231-479c-835b-502c281d765d": 1,
 "1b8e778e-d8ca-4a71-9e35-7564ed2d5064": 1,
 "d9b5227d-5683-4e7f-8ec7-3c7c1599c7c6": 1,
-"9e2b2568-4796-4902-bc39-f59bfb46331c": 1
+"9e2b2568-4796-4902-bc39-f59bfb46331c": 1,
+"286f301a-51eb-495a-88ca-e520b365a444": 1
 },
 "cons_expected": {
 "b07ca22a-d6cb-4943-986d-1c482164c93c": 1,
