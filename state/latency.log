@@ -1616,3 +1616,13 @@
 03 15:08:20 pdf pdf read failed Sword-Edge Commercials Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
 03 15:08:21 seen 539091 Consecutive Commodities Ltd cat=Board Meeting early=True bse_time=20:37:14 dissem=20:37:14
 03 15:08:47 pdf rule reader Sword-Edge Commercials Ltd: rule: no results table page
+03 15:10:08 seen 544459 Shanti Gold International Lt cat=Result early=False bse_time=20:38:19 dissem=20:38:19
+03 15:10:30 wait 544459 Shanti Gold International Lt: numbers not yet on BSE
+03 15:10:40 pdf nim reader Sword-Edge Commercials Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 15:10:40 pdf nim reader Glass Wall Systems (India) Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(
+03 15:10:40 pdf pdf read failed Glass Wall Systems (India) Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek
+03 15:10:40 pdf rule reader Bengal Steel Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[15.0, 15.0, 15.0] pbt=[8.49, 5.19, 7.9] tax=[1.33, 0.82, 1.24] pat=[7.16, 4.37, 6.66] depreciation=[0.21, 0.21, 0.22]
+03 15:10:40 pdf rule reader Shanti Gold International Ltd: rule: no results table page
+03 15:10:40 pdf rule reader Bengal Steel Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[15.0, 15.0, 15.0] pbt=[8.49, 5.19, 7.9] tax=[1.33, 0.82, 1.24] pat=[7.16, 4.37, 6.66] depreciation=[0.21, 0.21, 0.22]
+03 15:10:40 pdf pdf unusable Sword-Edge Commercials Ltd: unit/date missing
+03 15:10:42 seen 505827 SNL Bearings Ltd cat=Result early=False bse_time=20:39:45 dissem=20:39:45
