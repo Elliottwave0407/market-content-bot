@@ -1137,3 +1137,13 @@
 03 07:01:16 pdf rule reader Jyoti CNC Automation Ltd: rule: stan: missing ['pat'] n=6
 03 07:01:16 pdf nim reader Jyoti CNC Automation Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
 03 07:01:16 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:01:31 pdf rule reader Jyoti CNC Automation Ltd: rule: stan: missing ['pat'] n=6
+03 07:01:31 pdf nim reader Jyoti CNC Automation Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:01:31 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:03:18 pdf nim reader Jyoti CNC Automation Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+03 07:03:18 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possib
+03 07:04:07 seen 539151 Arfin India Ltd cat=Board Meeting early=True bse_time=12:33:41 dissem=12:33:41
+03 07:04:26 pdf rule reader Arfin India Ltd: ok
+03 07:04:26 pdf pdf current col Arfin India Ltd standalone ok=True/3: revenue=28317.99, other_income=10.24, total_income=28328.24, total_expenses=27610.53, finance_costs=507.04, depreciation=121.68, pbt=717.7, tax=120.77, pat=596.93, eps=0.35
+03 07:04:26 pdf pdf history mismatch Arfin India Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 2127.733 pat 40.745000000000005 | bse rev 2079.6 pat 35.33 (Rs mn); q-4: pdf rev 1279.3680000000002 pat 24.54600000000
+03 07:04:26 pdf rule-read numbers rejected by later checks, AI reader will retry: Arfin India Ltd
