@@ -2582,7 +2582,10 @@
 "20955769-dfc5-4150-905a-5a068c8f6f71",
 "87cbfc42-0d4f-47c6-bc31-3fbc6d85f495",
 "1d0eb0e1-2d6c-4672-8562-f43333c0499d",
-"d1a59c6f-195e-41c4-8eda-4650a95858e4"
+"d1a59c6f-195e-41c4-8eda-4650a95858e4",
+"14d58cb7-f8ef-40a6-9286-88a416574810",
+"97b40e8e-307e-4512-83a5-0c218791180f",
+"f8acf749-fb9f-47eb-a656-63dd5d24bc61"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4163,7 +4166,8 @@
 "532907|Sep-26|standalone",
 "531027|Sep-26|standalone",
 "532834|Sep-26|na",
-"544723|Sep-26|standalone"
+"544723|Sep-26|standalone",
+"539526|Sep-26|standalone"
 ],
 "pending": {
 "e3c5b766-bcce-485a-813c-8f181ca21384": {
@@ -4242,44 +4246,6 @@
 "last": 1793703531.2110262,
 "alerted": false
 },
-"f8acf749-fb9f-47eb-a656-63dd5d24bc61": {
-"rec": {
-"NEWSID": "f8acf749-fb9f-47eb-a656-63dd5d24bc61",
-"SCRIP_CD": 539526,
-"XML_NAME": "ANN_539526_F8ACF749-FB9F-47EB-A656-63DD5D24BC61",
-"NEWSSUB": "Suncare Traders Ltd - 539526 - Regulation 33 Read With Regulation 30 Of SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015 (\"Listing Regulations\")",
-"DT_TM": "2026-11-03T16:20:31.943",
-"NEWS_DT": "2026-11-03T16:20:31.943",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "bacd2c6f-2e8c-40e0-ad26-d6252607be2e.pdf",
-"MORE": "",
-"HEADLINE": "PFA",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/suncare-traders-ltd/sctl/539526/",
-"SLONGNAME": "Suncare Traders Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 18,
-"News_submission_dt": "2026-11-03T16:20:31",
-"DissemDT": "2026-11-03T16:20:31.943",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1399667,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793703042.482442,
-"last": 1793703576.7512019,
-"alerted": false
-},
 "40879bb6-3ee0-40bd-bf2c-6f8892144cb2": {
 "rec": {
 "NEWSID": "40879bb6-3ee0-40bd-bf2c-6f8892144cb2",
@@ -4315,7 +4281,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793703346.5515203,
-"last": 1793703576.7512019,
+"last": 1793703618.7868686,
 "alerted": false
 },
 "4508a735-9fdb-4735-ba24-aeabb5c285ea": {
@@ -4353,15 +4319,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793703576.7512019,
-"last": 1793703576.7512019,
+"last": 1793703618.7868686,
 "alerted": false
 }
 },
 "lag": [
-[
-"Symphony Ltd",
-46
-],
 [
 "Man Infraconstruction Ltd",
 46
@@ -5557,6 +5519,10 @@
 [
 "Camlin Fine Sciences Ltd",
 47
+],
+[
+"Suncare Traders Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -5582,7 +5548,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 348
+"2026-11-03": 350
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -5673,7 +5639,7 @@
 "rev": 1654.9720000000002,
 "pat": 45.516000000000005,
 "t": 1793615903.7082934,
-"last": 1793703341.227012
+"last": 1793703653.003426
 },
 "533286|Sep-26|consolidated": {
 "code": "533286",
@@ -5683,7 +5649,7 @@
 "rev": 3691.328,
 "pat": 617.7460000000001,
 "t": 1793616813.15793,
-"last": 1793703341.227012
+"last": 1793703653.003426
 },
 "523489|Sep-26|standalone": {
 "code": "523489",
@@ -5693,7 +5659,7 @@
 "rev": 86.397,
 "pat": -2.9450000000000003,
 "t": 1793617187.2938569,
-"last": 1793703341.227012
+"last": 1793703653.003426
 },
 "523398|Sep-26|consolidated": {
 "code": "523398",
@@ -5703,7 +5669,7 @@
 "rev": 4711.2,
 "pat": -416.6,
 "t": 1793617869.7445235,
-"last": 1793703341.227012
+"last": 1793703653.003426
 },
 "544898|Sep-26|consolidated": {
 "code": "544898",
@@ -6333,6 +6299,16 @@
 "rev": 4006.3999999999996,
 "pat": 391.8,
 "t": 1793703584.2902815,
+"last": 0
+},
+"539526|Sep-26|standalone": {
+"code": "539526",
+"name": "Suncare Traders Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": 2.202,
+"t": 1793703643.3333008,
 "last": 0
 }
 },
@@ -8098,7 +8074,8 @@
 "e3c5b766-bcce-485a-813c-8f181ca21384": 1,
 "20955769-dfc5-4150-905a-5a068c8f6f71": 1,
 "43585503-9081-4e58-bfea-c701d317bf6b": 1,
-"d1a59c6f-195e-41c4-8eda-4650a95858e4": 1
+"d1a59c6f-195e-41c4-8eda-4650a95858e4": 1,
+"f8acf749-fb9f-47eb-a656-63dd5d24bc61": 1
 },
 "cons_expected": {
 "b07ca22a-d6cb-4943-986d-1c482164c93c": 1,
@@ -8613,7 +8590,8 @@
 "2194573b-1bda-4e32-818a-9629ae582486": 1,
 "fa626791-4578-405b-822d-a3c5e0042dc4": 1,
 "a73f6472-68ad-4c54-a5a5-6d7f040bb659": 1,
-"40879bb6-3ee0-40bd-bf2c-6f8892144cb2": 1
+"40879bb6-3ee0-40bd-bf2c-6f8892144cb2": 1,
+"14d58cb7-f8ef-40a6-9286-88a416574810": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -9360,7 +9338,7 @@
 "other": 49
 },
 "results-key": {
-"ok": 13,
+"ok": 15,
 "429": 0,
 "other": 8
 }
