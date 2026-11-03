@@ -1777,3 +1777,10 @@
 03 11:32:34 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=0, depreciation=0, pbt=369.41, tax=None, pat=369.41, eps=2.49
 03 11:32:34 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
 03 11:32:58 ready 544446|Sep-26|consolidated kind=photo waited_min=0.6 tries=1 pdf_log=nim reader Kedia Construction Company Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numb
+03 11:33:16 pdf rule reader Voltaire Leasing & Finance Ltd : rule: no results table page
+03 11:33:16 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 11:33:16 pdf rule reader Cosmic Energy & Motors Ltd: rule: stan: no revenue row
+03 11:33:16 pdf rule reader Satani Bearings Ltd: rule: no results table page
+03 11:33:16 pdf nim reader Kedia Construction Company Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [
+03 11:33:16 pdf pdf read failed Kedia Construction Company Ltd : HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 21 column 7 (char 304)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTim
+03 11:33:16 pdf pdf current col Advent Hotels International Ltd consolidated ok=False/3: revenue=7414.15, other_income=165.24, total_income=7579.39, total_expenses=7170.64, finance_costs=1010.46, depreciation=770.5, pbt=315.36, tax=162.64, pat=15
