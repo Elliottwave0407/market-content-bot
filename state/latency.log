@@ -1489,3 +1489,30 @@
 03 07:58:05 seen 514358 Everlon Financials Ltd cat=Result early=False bse_time=13:26:18 dissem=13:26:18
 03 07:58:05 seen 506767 Alkyl Amines Chemicals Ltd-$ cat=Result early=False bse_time=13:27:52 dissem=13:27:52
 03 07:59:25 wait 506767 Alkyl Amines Chemicals Ltd-$: numbers not yet on BSE
+03 08:03:09 wait 514358 Everlon Financials Ltd: numbers not yet on BSE
+03 08:03:31 pdf nim reader Everlon Financials Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possible invention): rejected e.g. [( (gemin
+03 08:03:31 pdf pdf read failed Everlon Financials Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possibl
+03 08:03:31 pdf rule reader Everlon Financials Ltd: rule: no results table page
+03 08:03:31 pdf pdf current col Everlon Financials Ltd standalone ok=True/3: revenue=88.0, other_income=3.89, total_income=91.89, total_expenses=195.26, finance_costs=0.97, depreciation=11.1, pbt=-103.37, tax=1.81, pat=-105.18, eps=-1.7
+03 08:03:31 pdf pdf incomplete Everlon Financials Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 08:03:31 pdf rule reader Sharda Ispat Ltd: rule: stan: does not reconcile [lakh] total_income=[6834.65, 7189.96, 2720.45] total_expenses=[6661.88, 6969.31, 2696.35] pbt=[172.77, 220.65, 24.1] tax=[-41.07, -57.15, -11.17] pat=[131.7, 163.5, 12.
+03 08:03:31 pdf pdf read deferred Sharda Ispat Ltd: per-pass AI call cap
+03 08:03:31 pdf strong model fixed a failed read
+03 08:03:31 pdf rule reader Sharda Ispat Ltd: rule: stan: does not reconcile [lakh] total_income=[6834.65, 7189.96, 2720.45] total_expenses=[6661.88, 6969.31, 2696.35] pbt=[172.77, 220.65, 24.1] tax=[-41.07, -57.15, -11.17] pat=[131.7, 163.5, 12.
+03 08:03:31 pdf pdf read deferred Sharda Ispat Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Sodhani Capital Ltd: rule: no results table page
+03 08:03:31 pdf pdf read deferred Sodhani Capital Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Vivaa Tradecom Ltd: rule: header has no quarter columns
+03 08:03:31 pdf pdf read deferred Vivaa Tradecom Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Vivaa Tradecom Ltd: rule: header has no quarter columns
+03 08:03:31 pdf pdf read deferred Vivaa Tradecom Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 08:03:31 pdf pdf read deferred Next Mediaworks Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Link Pharma Chem Ltd: rule: no results table page
+03 08:03:31 pdf pdf read deferred Link Pharma Chem Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Minaxi Textiles Ltd: rule: no results table page
+03 08:03:31 pdf pdf read deferred Minaxi Textiles Ltd: per-pass AI call cap
+03 08:03:31 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 08:03:31 pdf pdf read deferred Kovalam Investment & Trading Company Ltd : per-pass AI call cap
+03 08:03:33 seen 511660 Premium Capital Market & Inv cat=Result early=False bse_time=13:30:25 dissem=13:30:25
+03 08:04:04 ready 532764|Sep-26|na kind=photo waited_min=47.4 tries=8 pdf_log=
