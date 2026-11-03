@@ -1147,3 +1147,21 @@
 03 07:04:26 pdf pdf current col Arfin India Ltd standalone ok=True/3: revenue=28317.99, other_income=10.24, total_income=28328.24, total_expenses=27610.53, finance_costs=507.04, depreciation=121.68, pbt=717.7, tax=120.77, pat=596.93, eps=0.35
 03 07:04:26 pdf pdf history mismatch Arfin India Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 2127.733 pat 40.745000000000005 | bse rev 2079.6 pat 35.33 (Rs mn); q-4: pdf rev 1279.3680000000002 pat 24.54600000000
 03 07:04:26 pdf rule-read numbers rejected by later checks, AI reader will retry: Arfin India Ltd
+03 07:04:53 pdf nim reader Jyoti CNC Automation Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:04:53 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:05:05 seen 531335 Zydus Wellness Ltd-$ cat=Result early=False bse_time=12:34:14 dissem=12:34:14
+03 07:05:10 wait 531335 Zydus Wellness Ltd-$: numbers not yet on BSE
+03 07:05:15 pdf rule reader Zydus Wellness Ltd-$: rule: stan: missing ['pat'] n=6
+03 07:05:15 pdf nim reader Zydus Wellness Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:05:15 pdf pdf read failed Zydus Wellness Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:05:18 pdf nim reader Machino Plastics Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:05:18 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:05:29 pdf rule reader Zydus Wellness Ltd-$: rule: stan: missing ['pat'] n=6
+03 07:05:29 pdf nim reader Zydus Wellness Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:05:29 pdf pdf read failed Zydus Wellness Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:05:32 pdf rule reader Jyoti CNC Automation Ltd: rule: stan: missing ['pat'] n=6
+03 07:05:32 pdf nim reader Jyoti CNC Automation Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:05:32 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:05:38 pdf rule reader EL CID Investments Ltd: rule: no results table page
+03 07:05:38 pdf nim reader EL CID Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:05:38 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
