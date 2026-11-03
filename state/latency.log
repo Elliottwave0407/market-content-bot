@@ -1539,3 +1539,13 @@
 03 14:51:17 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
 03 14:51:19 ready 500279|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Onida Electronics Ltd standalone ok=False/2: revenue=19864, other_income=91, total_income=19955, total_expenses=23136, finance_costs=303, deprec
 03 14:51:28 pdf pdf current col Onida Electronics Ltd standalone ok=False/2: revenue=19864, other_income=91, total_income=19955, total_expenses=23136, finance_costs=303, depreciation=178, pbt=-3984, tax=None, pat=-3984, eps=-1.08
+03 14:52:22 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 14:52:22 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+03 14:52:22 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 14:52:22 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+03 14:52:23 seen 530079 Faze Three Ltd-$ cat=Result early=False bse_time=20:21:21 dissem=20:21:21
+03 14:52:23 seen 543942 Utkarsh Small Finance Bank L cat=Result early=False bse_time=20:21:31 dissem=20:21:31
+03 14:52:36 pdf rule reader Faze Three Ltd-$: ok
+03 14:52:36 pdf pdf current col Faze Three Ltd-$ consolidated ok=True/3: revenue=264.58, other_income=3.24, total_income=267.82, total_expenses=246.85, finance_costs=5.78, depreciation=8.85, pbt=20.97, tax=5.51, pat=15.46, eps=6.37
+03 14:53:03 pdf rule reader Bengal Steel Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[15.0, 15.0, 15.0] pbt=[8.49, 5.19, 7.9] tax=[1.33, 0.82, 1.24] pat=[7.16, 4.37, 6.66] depreciation=[0.21, 0.21, 0.22]
+03 14:53:03 pdf rule reader Bengal Steel Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[15.0, 15.0, 15.0] pbt=[8.49, 5.19, 7.9] tax=[1.33, 0.82, 1.24] pat=[7.16, 4.37, 6.66] depreciation=[0.21, 0.21, 0.22]
