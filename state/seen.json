@@ -2816,7 +2816,9 @@
 "c2e4672a-4b43-42a9-9e42-06a9952b97b8",
 "985037be-e881-4a39-a9e3-4cd249b01350",
 "83722ef7-e5c2-4759-8aaf-b9777a6e8a84",
-"b58e4919-22e4-4449-89a3-194f2e48b0aa"
+"b58e4919-22e4-4449-89a3-194f2e48b0aa",
+"8320dbb3-c0c4-4aad-92f4-c7cac328d199",
+"61c63139-a1f6-4c32-a4c9-24706f5962be"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4543,7 +4545,9 @@
 "500249|Sep-26|consolidated",
 "532832|Sep-26|standalone",
 "522029|Sep-26|consolidated",
-"590031|Sep-26|standalone"
+"590031|Sep-26|standalone",
+"531550|Sep-26|consolidated",
+"509692|Sep-26|consolidated"
 ],
 "pending": {
 "ca73d003-d365-492f-9f59-631eab49389a": {
@@ -4961,8 +4965,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793712518.7095206,
-"last": 1793713556.646106,
-"alerted": false
+"last": 1793714009.7058275,
+"alerted": true
 },
 "179f4075-3b2b-42b6-b488-493f6d13f210": {
 "rec": {
@@ -5075,8 +5079,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793712726.8239918,
-"last": 1793713556.646106,
-"alerted": false
+"last": 1793714009.7058275,
+"alerted": true
 },
 "bfdbcd67-e91a-4392-8420-fe2715d3f284": {
 "rec": {
@@ -5192,44 +5196,6 @@
 "last": 1793713556.646106,
 "alerted": false
 },
-"61c63139-a1f6-4c32-a4c9-24706f5962be": {
-"rec": {
-"NEWSID": "61c63139-a1f6-4c32-a4c9-24706f5962be",
-"SCRIP_CD": 509692,
-"XML_NAME": "ANN_509692_61C63139-A1F6-4C32-A4C9-24706F5962BE",
-"NEWSSUB": "Indian Card Clothing Company Ltd - 509692 - Unaudited Standalone And Consolidated Financial Results Of The Company For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-03T19:14:10.587",
-"NEWS_DT": "2026-11-03T19:14:10.587",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "4cc02e3e-e776-493e-9f6d-1edf8f930e6c.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited standalone and consolidated financial results of the Company for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/indian-card-clothing-company-ltd/indiancard/509692/",
-"SLONGNAME": "Indian Card Clothing Company Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 35,
-"News_submission_dt": "2026-11-03T19:14:10",
-"DissemDT": "2026-11-03T19:14:10.587",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5485195,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793713556.646106,
-"last": 1793713556.646106,
-"alerted": false
-},
 "b00be148-1d17-4c2c-b95f-cc6c8ca38ffb": {
 "rec": {
 "NEWSID": "b00be148-1d17-4c2c-b95f-cc6c8ca38ffb",
@@ -5270,10 +5236,6 @@
 }
 },
 "lag": [
-[
-"Ajanta Pharma Ltd",
-46
-],
 [
 "Ucal  Ltd",
 25
@@ -6469,6 +6431,10 @@
 [
 "BMB Music & Magnetics Ltd",
 46
+],
+[
+"Indian Card Clothing Company Ltd",
+8
 ]
 ],
 "gem_use": {
@@ -8005,6 +7971,26 @@
 "rev": 1827.786,
 "pat": -52.664,
 "t": 1793714099.0603526,
+"last": 0
+},
+"531550|Sep-26|consolidated": {
+"code": "531550",
+"name": "Jhaveri Credits & Capital Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 37.11600000000001,
+"pat": -4.869,
+"t": 1793714131.9094539,
+"last": 0
+},
+"509692|Sep-26|consolidated": {
+"code": "509692",
+"name": "Indian Card Clothing Company Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 131.36300000000003,
+"pat": 42.863,
+"t": 1793714151.3450294,
 "last": 0
 }
 },
@@ -10265,7 +10251,9 @@
 "b6004abd-bfc3-4b1b-80e3-567ab46054f7": 1,
 "ce861fa0-f754-4656-94bd-9f2c5d0a958a": 1,
 "985037be-e881-4a39-a9e3-4cd249b01350": 1,
-"83722ef7-e5c2-4759-8aaf-b9777a6e8a84": 1
+"83722ef7-e5c2-4759-8aaf-b9777a6e8a84": 1,
+"8320dbb3-c0c4-4aad-92f4-c7cac328d199": 1,
+"61c63139-a1f6-4c32-a4c9-24706f5962be": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
