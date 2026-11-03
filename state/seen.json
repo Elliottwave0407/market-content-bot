@@ -2665,7 +2665,8 @@
 "116f1f7c-aabc-4ed4-93e8-05e66f957da8",
 "433e1081-1adb-45c2-a01c-9b5856ea1489",
 "50337708-c703-4e52-8fe6-f52db6830181",
-"459f73bf-6a47-4acf-b6e0-e87e3a5e1798"
+"459f73bf-6a47-4acf-b6e0-e87e3a5e1798",
+"92ef0fdd-55ca-436e-9311-c352460f4180"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4290,7 +4291,8 @@
 "544502|Sep-26|standalone",
 "533470|Sep-26|consolidated",
 "530723|Sep-26|consolidated",
-"519238|Sep-26|standalone"
+"519238|Sep-26|standalone",
+"500490|Sep-26|consolidated"
 ],
 "pending": {
 "c5fa1623-cd2f-4f48-8a74-48ceec477b3a": {
@@ -4711,44 +4713,6 @@
 "last": 1793707296.743176,
 "alerted": false
 },
-"92ef0fdd-55ca-436e-9311-c352460f4180": {
-"rec": {
-"NEWSID": "92ef0fdd-55ca-436e-9311-c352460f4180",
-"SCRIP_CD": 500490,
-"XML_NAME": "ANN_500490_92EF0FDD-55CA-436E-9311-C352460F4180",
-"NEWSSUB": "Bajaj Holdings & Investment Ltd - 500490 - Financial Results For The Quarter And Half Year Ended 30 September 2026",
-"DT_TM": "2026-11-03T17:18:57.023",
-"NEWS_DT": "2026-11-03T17:18:57.023",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8dd96333-7f41-4e00-95ca-359d601fe281.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited standalone and consolidated financial results for the quarter and half year ended 30 September 2026 along with Limited Review Report.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/bajaj-holdings--investment-ltd/bajajhldng/500490/",
-"SLONGNAME": "Bajaj Holdings & Investment Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-03T17:18:57",
-"DissemDT": "2026-11-03T17:18:57.023",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2051975,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793706632.2220209,
-"last": 1793707296.743176,
-"alerted": false
-},
 "4a727884-4480-4ad3-8b04-c84092a66e2c": {
 "rec": {
 "NEWSID": "4a727884-4480-4ad3-8b04-c84092a66e2c",
@@ -5017,10 +4981,6 @@
 }
 },
 "lag": [
-[
-"Siyaram Recycling Industries Ltd",
-48
-],
 [
 "Anupam Finserv Ltd",
 47
@@ -6216,6 +6176,10 @@
 [
 "Neo Infracon Ltd",
 10
+],
+[
+"Bajaj Holdings & Investment Ltd",
+14
 ]
 ],
 "gem_use": {
@@ -6241,7 +6205,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 485
+"2026-11-03": 490
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -7252,6 +7216,16 @@
 "rev": 260.206,
 "pat": -27.950000000000003,
 "t": 1793707435.8015857,
+"last": 0
+},
+"500490|Sep-26|consolidated": {
+"code": "500490",
+"name": "Bajaj Holdings & Investment Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1817.3,
+"pat": 21370.7,
+"t": 1793707512.148916,
 "last": 0
 }
 },
@@ -10405,9 +10379,9 @@
 "other": 49
 },
 "results-key": {
-"ok": 192,
+"ok": 200,
 "429": 1,
-"other": 36
+"other": 37
 }
 }
 }
