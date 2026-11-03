@@ -1026,3 +1026,15 @@
 03 06:27:21 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possibl
 03 06:27:44 pdf pdf column dates ['30th September 2026', '30th September 2025', '30th September 2026'] are not a quarterly layout: not used EL CID Investments Ltd
 03 06:27:44 pdf pdf column dates ['30th September 2026', '30th September 2025', '30th September 2026'] are not a quarterly layout: not used EL CID Investments Ltd
+03 06:28:09 pdf pdf current col Shree Precoated Steels Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=20, finance_costs=0, depreciation=0, pbt=-20, tax=0, pat=-20, eps=-0.28
+03 06:28:09 pdf pdf incomplete Shree Precoated Steels Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 06:29:36 pdf rule reader Machino Plastics Ltd-$: rule: column dates not found
+03 06:29:36 pdf nim reader Machino Plastics Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:29:36 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 06:29:36 pdf rule reader EL CID Investments Ltd: rule: no results table page
+03 06:29:36 pdf nim reader EL CID Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:29:36 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 06:29:36 pdf rule reader EL CID Investments Ltd: rule: no results table page
+03 06:29:36 pdf nim reader EL CID Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:29:36 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 06:31:04 seen 523248 Machino Plastics Ltd-$ cat=Result early=False bse_time=12:00:09 dissem=12:00:09
