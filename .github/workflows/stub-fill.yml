@@ -38,4 +38,4 @@ jobs:
           git add state/stub_fill.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "stub-fill state"
-          for i in 1 2 3 4 5; do git pull --rebase -q origin main && git push -q origin main && break; sleep 5; done
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -q origin main && git push -q origin main && break; sleep 5; done
