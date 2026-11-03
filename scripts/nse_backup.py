@@ -39,7 +39,7 @@ def _rows(sym):
                 nr._S["sess"] = None; time.sleep(1); s = nr.sess()
     return []
 
-def get(code, label, cons_expected=False):
+def get(code, label, cons_expected=False, age_min=None):
     """-> {'basis', 'quarters': [5 x {'q','m'}], 'yprev': m|None} for the quarter `label` (e.g. 'Sep-26'), or None."""
     if not ON: return None
     key = (str(code), label)

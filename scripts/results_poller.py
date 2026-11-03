@@ -252,8 +252,23 @@ def build(bse, rec, final=False, age_min=0):
     headline = (rec.get("NEWSSUB") or "") + " " + (rec.get("HEADLINE") or "")
     filed = datetime.fromisoformat((rec.get("NEWS_DT") or "")[:19])
     lk = link(rec)
-    pc = pdf_card.try_pdf(bse, rec, _ST, headline, filed) if _ST is not None else None
-    if pc is None and rec.get("_EARLY"):
+    # NSE first: for NSE-listed companies NSE's own structured numbers are usually there as soon as the filing is (no PDF reading needed)
+    nsq_first = None
+    if nse_backup.ON and _ST is not None and not rec.get("_EARLY"):
+        try:
+            q0 = rf.expected_quarter(headline, filed)
+            if q0 is not None:
+                cons0 = bool(_ST.get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
+                nsq_first = nse_backup.get(code, rf.qlabel(q0), cons0, age_min=age_min)
+                if nsq_first:      # NSE-first only when the card would be complete (sales, operating profit unless a lender, profit, EPS in all three columns shown); otherwise the usual PDF/BSE route handles it
+                    qs_ = nsq_first["quarters"]
+                    need_ = ("revenue", "pat", "eps") + (() if (qs_[0]["m"] or {}).get("bank") else ("ebitda",))
+                    if any((qs_[i]["m"] or {}).get(k_) is None for i in (0, 1, 4) for k_ in need_):
+                        nsq_first = None
+        except Exception:
+            nsq_first = None
+    pc = None if nsq_first else (pdf_card.try_pdf(bse, rec, _ST, headline, filed) if _ST is not None else None)
+    if pc is None and rec.get("_EARLY") and not nsq_first:
         return ("early_skip", "", None, "")      # an early 'Board Meeting' row is used only when its PDF reads cleanly; otherwise the 'Result' row follows
     if pc:
         basis, q, quarters = pc["basis"], pc["qcode"], pc["quarters"]
@@ -279,16 +294,20 @@ def build(bse, rec, final=False, age_min=0):
         key = f"{code}|{ql}|{basis}"
         PDF_AUDIT[key] = {"code": code, "name": name, "basis": basis, "q": q, "rev": cur["revenue"], "pat": cur["pat"], "t": time.time(), "last": 0}
         return ("photo", cap, png, key)
-    res = rf.results_for_filing(bse, code, name, headline, filed)
     inferred = False
-    if res["status"] == "quarter_unverified":
-        headline = headline + " quarter ended " + inferred_qend(filed)
+    if nsq_first:
+        res = {"status": "nse", "quarter": nsq_first["quarters"][0]["q"], "consolidated": nsq_first["basis"] == "consolidated"}
+        p(f"[nse-first] {name} {res['quarter']} {nsq_first['basis']}: numbers taken from NSE")
+    else:
         res = rf.results_for_filing(bse, code, name, headline, filed)
-        inferred = True
+        if res["status"] == "quarter_unverified":
+            headline = headline + " quarter ended " + inferred_qend(filed)
+            res = rf.results_for_filing(bse, code, name, headline, filed)
+            inferred = True
     st = res["status"]
     if st == "quarter_unverified":
         return stub(name, code, None, "quarter not identified from the filing headline", lk, f"{code}|unverified|{rec['NEWSID']}")
-    nsq = None
+    nsq = nsq_first
     if st in ("not_available", "ok_limited"):
         # BSE has no numbers: try NSE's own structured numbers (env NSE_BACKUP=1) before waiting or posting a no-numbers card
         cons_exp0 = bool((_ST or {}).get("cons_expected", {}).get(str(rec["NEWSID"]))) or "consolidated" in headline.lower()
@@ -416,6 +435,18 @@ def main(bse_in=None, known=None, fast=False):
                 except Exception:
                     _batch.append(r_)
             pdf_card.prefetch(_batch[:12], st)
+            if nse_backup.ON:      # warm the NSE cache for the whole batch in parallel so the serial build() below finds it ready
+                from concurrent.futures import ThreadPoolExecutor
+                def _warm(r_):
+                    try:
+                        h_ = (r_.get("NEWSSUB") or "") + " " + (r_.get("HEADLINE") or "")
+                        q_ = rf.expected_quarter(h_, datetime.fromisoformat((r_.get("NEWS_DT") or "")[:19]))
+                        if q_ is not None and not r_.get("_EARLY"):
+                            nse_backup.get(str(r_["SCRIP_CD"]), rf.qlabel(q_), bool(st.get("cons_expected", {}).get(str(r_["NEWSID"]))) or "consolidated" in h_.lower())
+                    except Exception:
+                        pass
+                with ThreadPoolExecutor(6) as ex_:
+                    list(ex_.map(_warm, _batch[:24]))
         except Exception as e:
             p(f"prefetch skipped: {redact(repr(e))[:100]}")
         for rec in sorted(new + retry, key=lambda x_: -pdf_card.mcap_of(x_.get("SCRIP_CD"))):      # biggest companies first
