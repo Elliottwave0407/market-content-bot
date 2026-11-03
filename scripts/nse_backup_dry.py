@@ -82,6 +82,7 @@ with BSE(download_folder=tempfile.mkdtemp()) as b:
         if not bm: r["cmp"] = "bse_none"; continue
         def close(a, c): return a is not None and c is not None and abs(a - c) <= max(0.05, 0.005 * abs(c))
         nm = r["m"]
+        bm = {k: (v / 10.0 if k in ("revenue", "pbt", "pat") and isinstance(v, (int, float)) else v) for k, v in bm.items()}      # BSE table is in Rs million, NSE parse in Rs Cr
         r["cmp"] = "match" if close(nm.get("revenue"), bm.get("revenue")) and close(nm.get("pat"), bm.get("pat")) and close(nm.get("pbt"), bm.get("pbt")) else "MISMATCH"
         r["bse"] = {k: bm.get(k) for k in ("revenue", "pbt", "pat", "eps")}
 
