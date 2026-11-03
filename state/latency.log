@@ -1626,3 +1626,16 @@
 03 15:10:40 pdf rule reader Bengal Steel Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[15.0, 15.0, 15.0] pbt=[8.49, 5.19, 7.9] tax=[1.33, 0.82, 1.24] pat=[7.16, 4.37, 6.66] depreciation=[0.21, 0.21, 0.22]
 03 15:10:40 pdf pdf unusable Sword-Edge Commercials Ltd: unit/date missing
 03 15:10:42 seen 505827 SNL Bearings Ltd cat=Result early=False bse_time=20:39:45 dissem=20:39:45
+03 15:11:05 wait 505827 SNL Bearings Ltd: numbers not yet on BSE
+03 15:11:10 seen 539559 Deep Health AI India Ltd cat=Board Meeting early=True bse_time=20:41:06 dissem=20:41:06
+03 15:11:39 pdf nim reader Shanti Gold International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 17 numbers not found in the filing text (possible invention): rejected e.g. [(
+03 15:11:39 pdf pdf read failed Shanti Gold International Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 17 numbers not found in the filing text (
+03 15:12:18 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 15:12:18 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+03 15:12:18 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 15:12:18 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+03 15:12:18 pdf rule reader Shanti Gold International Ltd: rule: no results table page
+03 15:12:18 pdf nim reader SNL Bearings Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 15:12:18 pdf nim reader Glass Wall Systems (India) Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(
+03 15:12:18 pdf pdf read failed Glass Wall Systems (India) Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (
+03 15:12:19 seen 534425 Speciality Restaurants Ltd cat=Result early=False bse_time=20:41:59 dissem=20:41:59
