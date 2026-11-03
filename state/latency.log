@@ -1761,3 +1761,12 @@
 03 09:25:00 pdf pdf incomplete Avi Products India Ltd standalone: missing ['revenue'] - not posting from PDF
 03 09:25:16 seen 530699 Raj Rayon Industries Ltd-$ cat=Result early=False bse_time=14:54:29 dissem=14:54:29
 03 09:25:28 pdf pdf current col Raj Rayon Industries Ltd-$ standalone ok=False/3: revenue=45646.96, other_income=143.65, total_income=45790.61, total_expenses=43374.69, finance_costs=496.57, depreciation=513.03, pbt=2415.92, tax=-116.97, pat=2298
+03 09:26:54 pdf rule reader Popular Estate Management Ltd: rule: no results table page
+03 09:28:54 seen 530217 Swojas Foods Ltd cat=Board Meeting early=True bse_time=14:57:59 dissem=14:57:59
+03 09:28:54 seen 501391 WH Brady & Company Ltd cat=Board Meeting early=True bse_time=14:58:31 dissem=14:58:31
+03 09:28:54 seen 544499 Career Point Edutech Ltd cat=Result early=False bse_time=14:58:39 dissem=14:58:39
+03 09:29:15 wait 544499 Career Point Edutech Ltd: numbers not yet on BSE
+03 09:29:18 ready 501391|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col WH Brady & Company Ltd consolidated ok=True/3: revenue=1810.18, other_income=133.72, total_income=1943.9, total_expenses=1763.55, finance_costs=
+03 09:29:26 pdf pdf current col Swojas Foods Ltd standalone ok=True/3: revenue=2625.96, other_income=3.78, total_income=2629.74, total_expenses=2606.44, finance_costs=None, depreciation=0.05, pbt=23.3, tax=5.42, pat=17.88, eps=0.0
+03 09:29:26 pdf pdf incomplete Swojas Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 09:29:26 pdf rule reader Career Point Edutech Ltd: rule: no results table page
