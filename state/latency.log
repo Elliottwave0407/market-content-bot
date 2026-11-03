@@ -1751,3 +1751,28 @@
 03 11:31:55 pdf pdf incomplete Tirth Plastic Ltd standalone: missing ['ebitda'] - not posting from PDF
 03 11:31:55 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=None, depreciation=None, pbt=369.41, tax=None, pat=369.41, eps
 03 11:31:55 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:31:58 seen 511585 Befound Movement Ltd cat=Result early=False bse_time=17:00:58 dissem=17:00:58
+03 11:31:58 seen 544582 Shlokka Dyes Ltd cat=Result early=False bse_time=17:01:33 dissem=17:01:33
+03 11:31:58 seen 544446 Advent Hotels International  cat=Result early=False bse_time=17:01:36 dissem=17:01:36
+03 11:32:20 wait 544446 Advent Hotels International : numbers not yet on BSE
+03 11:32:24 wait 544582 Shlokka Dyes Ltd: numbers not yet on BSE
+03 11:32:26 ready 511585|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Cosmic Energy & Motors Ltd standalone ok=True/3: revenue=0.0, other_income=48.9, total_income=48.9, total_expenses=14.76, finance_costs=0.7, dep
+03 11:32:34 pdf rule reader Cosmic Energy & Motors Ltd: rule: stan: no revenue row
+03 11:32:34 pdf rule reader Satani Bearings Ltd: rule: no results table page
+03 11:32:34 pdf rule reader Advent Hotels International Ltd: rule: no results table page
+03 11:32:34 pdf rule reader Shlokka Dyes Ltd: rule: no results table page
+03 11:32:34 pdf rule reader Befound Movement Ltd: rule: no results table page
+03 11:32:34 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 11:32:34 pdf nim reader AG Ventures Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 33 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: HT
+03 11:32:34 pdf pdf read failed AG Ventures Ltd-$: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 99 column 7 (char 1342)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HT
+03 11:32:34 pdf nim reader Voltaire Leasing & Finance Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 24 numbers not found in the filing text (possible invention): rejected e.g. 
+03 11:32:34 pdf pdf read failed Voltaire Leasing & Finance Ltd : HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 16 column 7 (char 237)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTim
+03 11:32:34 pdf pdf current col Satani Bearings Ltd standalone ok=True/2: revenue=2549.46, other_income=None, total_income=2549.46, total_expenses=2528.16, finance_costs=0.0, depreciation=None, pbt=21.3, tax=2.99, pat=18.31, eps=0.09
+03 11:32:34 pdf pdf incomplete Satani Bearings Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+03 11:32:34 pdf pdf is a HALF-YEARLY filing (column dates ['30th Sept, 2026', '31st March, 2026', '30th Sept, 2025']): not read as quarters, queued for the half-yearly route Shlokka Dyes Ltd
+03 11:32:34 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 11:32:34 pdf pdf current col Cosmic Energy & Motors Ltd standalone ok=True/3: revenue=0.0, other_income=48.9, total_income=48.9, total_expenses=14.76, finance_costs=0.7, depreciation=None, pbt=34.14, tax=3.22, pat=30.92, eps=1.0
+03 11:32:34 pdf pdf incomplete Cosmic Energy & Motors Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:32:34 pdf pdf current col Befound Movement Ltd standalone ok=True/3: revenue=120.0, other_income=0.0, total_income=120.0, total_expenses=148.49, finance_costs=0.08, depreciation=0.39, pbt=-28.49, tax=0.66, pat=-29.15, eps=-0.29
+03 11:32:34 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=0, depreciation=0, pbt=369.41, tax=None, pat=369.41, eps=2.49
+03 11:32:34 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
