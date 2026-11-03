@@ -1738,3 +1738,16 @@
 03 11:31:14 pdf pdf margin q-4 differs from BSE history by 12.2 pts: margin withheld UFO Moviez India Ltd consolidated
 03 11:31:14 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=0, depreciation=0, pbt=369.41, tax=None, pat=369.41, eps=2.49
 03 11:31:14 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:31:42 ready 526675|Sep-26|standalone kind=photo waited_min=7.2 tries=3 pdf_log=pdf current col Tirth Plastic Ltd standalone ok=False/2: revenue=580.31, other_income=None, total_income=580.31, total_expenses=559.43, finance_costs=None, depr
+03 11:31:55 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 11:31:55 pdf rule reader Cosmic Energy & Motors Ltd: rule: stan: no revenue row
+03 11:31:55 pdf rule reader Kedia Construction Company Ltd : rule: no results table page
+03 11:31:55 pdf rule reader Satani Bearings Ltd: rule: no results table page
+03 11:31:55 pdf strong model retry error ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='gene
+03 11:31:55 pdf pdf current col Satani Bearings Ltd standalone ok=True/2: revenue=2549.46, other_income=None, total_income=2549.46, total_expenses=2528.16, finance_costs=0.0, depreciation=None, pbt=21.3, tax=2.99, pat=18.31, eps=0.09
+03 11:31:55 pdf pdf incomplete Satani Bearings Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+03 11:31:55 pdf pdf current col Tirth Plastic Ltd standalone ok=False/2: revenue=580.31, other_income=None, total_income=580.31, total_expenses=559.43, finance_costs=None, depreciation=None, pbt=20.88, tax=5.17, pat=20.88, eps=0.47
+03 11:31:55 pdf pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored Tirth Plastic Ltd standalone
+03 11:31:55 pdf pdf incomplete Tirth Plastic Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:31:55 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=None, depreciation=None, pbt=369.41, tax=None, pat=369.41, eps
+03 11:31:55 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
