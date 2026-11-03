@@ -986,3 +986,8 @@
 02 19:15:17 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | overflow: HTTP 
 02 19:17:22 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | overflow: HTTP 
 02 19:19:22 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | overflow: HTTP 
+03 00:00:02 seen 512008 EFC (I) Ltd cat=Result early=False bse_time=01:54:08 dissem=01:54:08
+03 00:01:43 wait 512008 EFC (I) Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
+03 00:01:45 pdf nim reader EFC (I) Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemini s
+03 00:01:45 pdf pdf read failed EFC (I) Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention
+03 00:01:49 ready 512008|Sep-26|consolidated kind=photo waited_min=1.7 tries=1 pdf_log=
