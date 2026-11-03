@@ -34,8 +34,12 @@ def mcap_by_code():
     try:
         d = json.load(open(os.path.join(store.ROOT, "mcap", "mcap.json")))
         for v in d.values():
+            if v.get("m") is None:
+                continue
             if v.get("s") is not None:
-                out[str(v["s"]).strip()] = v.get("m") or 0
+                out[str(v["s"]).strip()] = v.get("m")
+            if v.get("n"):
+                out["NSE:" + str(v["n"]).strip().upper()] = v.get("m")
     except Exception as e:
         p("mcap map missing:", e)
     return out
@@ -99,7 +103,8 @@ def main():
     done = load_out()
     mc = mcap_by_code()
     todo = [r for r in main_done.values() if not r.get("skip") and r.get("src") and r["key"] not in done and str(r.get("v")) != "4"]
-    todo.sort(key=lambda r: (mc.get(str(r["code"]).strip(), 0), r.get("day") or ""))
+    UNK = 5000.0      # unknown market cap (crore) sorts after the known small caps and before the bigger companies
+    todo.sort(key=lambda r: (mc.get(str(r["code"]).strip(), UNK), r.get("day") or ""))
     p("transcripts already read:", len(main_done), "| supplement todo:", len(todo), "| done:", len(done))
     if DRY:
         for r in todo[:10]:
