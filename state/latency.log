@@ -1738,3 +1738,12 @@
 03 15:30:42 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
 03 15:30:42 pdf nim reader Consecutive Commodities Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (
 03 15:30:42 pdf pdf read failed Consecutive Commodities Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (po
+03 15:31:22 pdf rule reader Authum Investment & Infrastructure Ltd: rule: unit not found
+03 15:31:22 pdf rule reader Authum Investment & Infrastructure Ltd: rule: unit not found
+03 15:31:28 pdf pdf current col Authum Investment & Infrastructure Ltd consolidated ok=False/3: revenue=680.86, other_income=4.58, total_income=685.44, total_expenses=185.25, finance_costs=61.88, depreciation=9.68, pbt=493.79, tax=75.79, pat=418.
+03 15:31:28 pdf pdf checks failed Authum Investment & Infrastructure Ltd consolidated
+03 15:31:28 pdf pdf has consolidated but it failed checks: not falling back to standalone Authum Investment & Infrastructure Ltd
+03 15:31:51 pdf rule reader Authum Investment & Infrastructure Ltd: rule: unit not found
+03 15:31:51 pdf pdf current col Authum Investment & Infrastructure Ltd consolidated ok=False/3: revenue=680.86, other_income=4.58, total_income=685.44, total_expenses=185.25, finance_costs=61.88, depreciation=9.68, pbt=493.79, tax=75.79, pat=418.
+03 15:31:51 pdf pdf checks failed Authum Investment & Infrastructure Ltd consolidated
+03 15:31:51 pdf pdf has consolidated but it failed checks: not falling back to standalone Authum Investment & Infrastructure Ltd
