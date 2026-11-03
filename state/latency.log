@@ -1811,3 +1811,8 @@
 03 15:53:18 seen 530243 Ratnakar Securities Ltd cat=Result early=False bse_time=21:22:49 dissem=21:22:49
 03 15:53:46 ready 530243|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Ratnakar Securities Ltd: rule: no results table page
 03 15:53:53 pdf rule reader Ratnakar Securities Ltd: rule: no results table page
+03 15:54:07 pdf nim reader Artificial Electronics Intelligent Material Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possible invention)
+03 15:54:07 pdf pdf read failed Artificial Electronics Intelligent Material Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in
+03 15:54:50 pdf nim reader Ratnakar Securities Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemi
+03 15:54:50 pdf pdf read failed Ratnakar Securities Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possibl
+03 15:56:32 ready 505827|Sep-26|na kind=photo waited_min=45.8 tries=8 pdf_log=
