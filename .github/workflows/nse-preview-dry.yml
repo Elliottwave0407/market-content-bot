@@ -1,0 +1,32 @@
+name: nse-preview-dry
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "how many stubs"
+        default: "12"
+      syms:
+        description: "optional NSE symbols, comma separated"
+        default: ""
+permissions:
+  contents: read
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Preview cards (nothing is posted)
+        env:
+          N: ${{ github.event.inputs.n }}
+          SYMS: ${{ github.event.inputs.syms }}
+        run: python scripts/nse_preview_dry.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nse-preview
+          path: out/nse_preview
