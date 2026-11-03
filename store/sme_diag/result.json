@@ -14,7 +14,46 @@
 "date": "2026-11-03",
 "bytes": 2489798,
 "text_chars": null,
-"why": "pdf read failed: HTTP 503 on gemini-flash-latest"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 5004.33,
+"total_income": 5007.37,
+"total_expenses": 4821.97,
+"exceptional_items": 69.38,
+"finance_costs": 4.83,
+"pbt": 116.02,
+"tax": 26.85,
+"pat": 89.17
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 5025.17,
+"total_income": 5028.05,
+"total_expenses": 4863.65,
+"exceptional_items": 0.0,
+"finance_costs": 5.67,
+"pbt": 164.4,
+"tax": 1.88,
+"pat": 162.52
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 4742.52,
+"total_income": 4772.56,
+"total_expenses": 4460.84,
+"exceptional_items": 0.0,
+"finance_costs": 8.92,
+"pbt": 311.72,
+"tax": 101.55,
+"pat": 210.17
+}
+],
+"why": "ok",
+"basis": "standalone"
 },
 "539680": {
 "code": "539680",
@@ -22,7 +61,45 @@
 "date": "2026-11-02",
 "bytes": 3672571,
 "text_chars": null,
-"why": "pdf read failed: HTTP 503 on gemini-flash-latest"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 141.63,
+"total_income": 155.27,
+"total_expenses": 152.76,
+"exceptional_items": null,
+"finance_costs": 5.53,
+"pbt": 2.52,
+"tax": 0.65,
+"pat": 1.86
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 146.14,
+"total_income": 159.45,
+"total_expenses": 148.1,
+"exceptional_items": null,
+"finance_costs": 6.66,
+"pbt": 9.58,
+"tax": 1.91,
+"pat": 2.48
+},
+{
+"col": 2,
+"ok": false,
+"revenue": 136.65,
+"total_income": 151.45,
+"total_expenses": 144.16,
+"exceptional_items": null,
+"finance_costs": 6.64,
+"pbt": 3.35,
+"tax": 0.87,
+"pat": 5.5
+}
+],
+"why": "standalone both comparison half-years failed arithmetic checks"
 },
 "539864": {
 "code": "539864",
@@ -30,7 +107,45 @@
 "date": "2026-10-22",
 "bytes": 691773,
 "text_chars": null,
-"why": "pdf read failed: HTTP 503 on gemini-flash-latest"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 870.02,
+"total_income": 878.8,
+"total_expenses": 841.64,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 37.16,
+"tax": 9.66,
+"pat": 27.49
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 563.96,
+"total_income": 588.62,
+"total_expenses": 586.45,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 2.17,
+"tax": 0.73,
+"pat": 1.44
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 258.69,
+"total_income": 270.82,
+"total_expenses": 270.59,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 0.23,
+"tax": 0.19,
+"pat": 0.04
+}
+],
+"why": "standalone operating profit not derivable (finance cost or expenses missing)"
 },
 "541983": {
 "code": "541983",
@@ -38,7 +153,8 @@
 "date": "2026-10-31",
 "bytes": 4355246,
 "text_chars": null,
-"why": "pdf read failed: HTTP 503 on gemini-flash-latest"
+"checks": [],
+"why": "pdf read failed: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: pars"
 },
 "542728": {
 "code": "542728",
@@ -46,8 +162,45 @@
 "date": "2026-10-28",
 "bytes": 783586,
 "text_chars": null,
-"why": "error",
-"err": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googl"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 1.56,
+"total_income": 17.04,
+"total_expenses": 22.91,
+"exceptional_items": null,
+"finance_costs": 0.02,
+"pbt": -5.87,
+"tax": null,
+"pat": -5.87
+},
+{
+"col": 1,
+"ok": false,
+"revenue": 13.5,
+"total_income": 195.01,
+"total_expenses": 194.69,
+"exceptional_items": null,
+"finance_costs": 0.65,
+"pbt": 0.32,
+"tax": 12.48,
+"pat": -12.16
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 1.41,
+"total_income": 31.89,
+"total_expenses": 49.4,
+"exceptional_items": null,
+"finance_costs": 0.11,
+"pbt": -17.51,
+"tax": null,
+"pat": -17.51
+}
+],
+"why": "standalone operating profit not derivable (finance cost or expenses missing)"
 },
 "543065": {
 "code": "543065",
@@ -93,7 +246,8 @@
 "pat": 49.15
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "standalone"
 },
 "543269": {
 "code": "543269",
@@ -101,8 +255,45 @@
 "date": "2026-10-28",
 "bytes": 1606665,
 "text_chars": null,
-"checks": [],
-"why": "no usable statement"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 0.0,
+"total_income": 0.0,
+"total_expenses": 8.4,
+"exceptional_items": null,
+"finance_costs": 0.02,
+"pbt": -8.4,
+"tax": 2.98,
+"pat": -11.38
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 0.0,
+"total_income": 0.02,
+"total_expenses": 8.14,
+"exceptional_items": null,
+"finance_costs": 0.16,
+"pbt": -8.12,
+"tax": -1.61,
+"pat": -6.51
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 0.0,
+"total_income": 0.0,
+"total_expenses": 8.55,
+"exceptional_items": null,
+"finance_costs": 0.0,
+"pbt": -8.55,
+"tax": -2.56,
+"pat": -5.99
+}
+],
+"why": "standalone operating profit not derivable (finance cost or expenses missing)"
 },
 "543305": {
 "code": "543305",
@@ -157,7 +348,8 @@
 "pat": 314.567
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "standalone"
 },
 "543537": {
 "code": "543537",
@@ -165,6 +357,7 @@
 "date": "2026-11-02",
 "bytes": 1949077,
 "text_chars": null,
+"checks": [],
 "why": "pdf read failed: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP"
 },
 "543754": {
@@ -188,7 +381,7 @@
 },
 {
 "col": 1,
-"ok": false,
+"ok": true,
 "revenue": 3588.5,
 "total_income": 3595.51,
 "total_expenses": 3554.89,
@@ -209,45 +402,10 @@
 "pbt": 163.96,
 "tax": 39.18,
 "pat": 120.58
-},
-{
-"col": 0,
-"ok": true,
-"revenue": 3260.33,
-"total_income": 3264.27,
-"total_expenses": 3033.97,
-"exceptional_items": null,
-"finance_costs": 88.16,
-"pbt": 230.3,
-"tax": 73.21,
-"pat": 187.59
-},
-{
-"col": 1,
-"ok": false,
-"revenue": 3481.55,
-"total_income": 3486.21,
-"total_expenses": 3449.29,
-"exceptional_items": null,
-"finance_costs": 92.82,
-"pbt": 36.93,
-"tax": 27.96,
-"pat": 55.43
-},
-{
-"col": 2,
-"ok": true,
-"revenue": 2837.18,
-"total_income": 2839.41,
-"total_expenses": 2676.49,
-"exceptional_items": null,
-"finance_costs": 61.57,
-"pbt": 162.92,
-"tax": 39.12,
-"pat": 119.6
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "consolidated"
 },
 "543982": {
 "code": "543982",
@@ -282,7 +440,7 @@
 },
 {
 "col": 2,
-"ok": false,
+"ok": true,
 "revenue": 2622.02,
 "total_income": 2648.77,
 "total_expenses": 2209.73,
@@ -291,45 +449,10 @@
 "pbt": 179.96,
 "tax": 13.98,
 "pat": 111.68
-},
-{
-"col": 0,
-"ok": true,
-"revenue": 3439.1,
-"total_income": 4196.53,
-"total_expenses": 4297.22,
-"exceptional_items": null,
-"finance_costs": 40.56,
-"pbt": -100.69,
-"tax": 34.29,
-"pat": -134.98
-},
-{
-"col": 1,
-"ok": true,
-"revenue": 2258.52,
-"total_income": 2295.28,
-"total_expenses": 3681.49,
-"exceptional_items": null,
-"finance_costs": 30.39,
-"pbt": -1386.22,
-"tax": -16.66,
-"pat": -1369.56
-},
-{
-"col": 2,
-"ok": false,
-"revenue": 2418.47,
-"total_income": 2431.04,
-"total_expenses": 2010.41,
-"exceptional_items": 259.08,
-"finance_costs": 26.57,
-"pbt": 161.55,
-"tax": 11.06,
-"pat": 150.49
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "consolidated"
 },
 "544002": {
 "code": "544002",
@@ -352,7 +475,7 @@
 },
 {
 "col": 1,
-"ok": false,
+"ok": true,
 "revenue": 15670.28,
 "total_income": 15671.91,
 "total_expenses": 15616.78,
@@ -375,7 +498,8 @@
 "pat": 59.89
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "standalone"
 },
 "544013": {
 "code": "544013",
@@ -386,11 +510,11 @@
 "checks": [
 {
 "col": 0,
-"ok": false,
+"ok": true,
 "revenue": 553.68,
 "total_income": 556.28,
 "total_expenses": 541.92,
-"exceptional_items": 0.0,
+"exceptional_items": null,
 "finance_costs": 0.0,
 "pbt": 14.36,
 "tax": -7.83,
@@ -402,7 +526,7 @@
 "revenue": 461.26,
 "total_income": 476.45,
 "total_expenses": 527.13,
-"exceptional_items": 0.0,
+"exceptional_items": null,
 "finance_costs": 0.0,
 "pbt": -50.68,
 "tax": -20.89,
@@ -414,14 +538,15 @@
 "revenue": 481.5,
 "total_income": 485.26,
 "total_expenses": 507.42,
-"exceptional_items": 0.0,
+"exceptional_items": null,
 "finance_costs": 0.0,
 "pbt": -22.16,
 "tax": 10.32,
 "pat": -32.48
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "standalone"
 },
 "544353": {
 "code": "544353",
@@ -429,6 +554,44 @@
 "date": "2026-10-23",
 "bytes": 2290902,
 "text_chars": null,
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 2262.86,
+"total_income": 2461.58,
+"total_expenses": 1942.99,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 518.59,
+"tax": 151.2,
+"pat": 367.39
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 2428.73,
+"total_income": 2580.84,
+"total_expenses": 1570.63,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 1010.21,
+"tax": 255.48,
+"pat": 754.73
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 2120.5,
+"total_income": 2260.3,
+"total_expenses": 1733.9,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 526.4,
+"tax": 139.0,
+"pat": 387.4
+}
+],
 "why": "standalone operating profit not derivable (finance cost or expenses missing)"
 },
 "544406": {
@@ -437,7 +600,45 @@
 "date": "2026-10-23",
 "bytes": 5631061,
 "text_chars": null,
-"why": "pdf read failed: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP"
+"checks": [
+{
+"col": 0,
+"ok": true,
+"revenue": 22296.59,
+"total_income": 22753.94,
+"total_expenses": 19007.51,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 3746.43,
+"tax": 929.08,
+"pat": 2817.35
+},
+{
+"col": 1,
+"ok": true,
+"revenue": 13897.44,
+"total_income": 14836.08,
+"total_expenses": 11778.57,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 3057.51,
+"tax": 709.9,
+"pat": 2347.61
+},
+{
+"col": 2,
+"ok": true,
+"revenue": 14902.81,
+"total_income": 15340.01,
+"total_expenses": 13045.93,
+"exceptional_items": null,
+"finance_costs": null,
+"pbt": 2294.08,
+"tax": 567.03,
+"pat": 1727.05
+}
+],
+"why": "standalone operating profit not derivable (finance cost or expenses missing)"
 },
 "544431": {
 "code": "544431",
@@ -460,7 +661,7 @@
 },
 {
 "col": 1,
-"ok": false,
+"ok": true,
 "revenue": 1553.6,
 "total_income": 1568.07,
 "total_expenses": 491.39,
@@ -483,7 +684,8 @@
 "pat": 770.6
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "standalone"
 },
 "544436": {
 "code": "544436",
@@ -515,43 +717,7 @@
 },
 {
 "col": 1,
-"ok": false,
-"revenue": 10825.63,
-"total_income": 10909.43,
-"total_expenses": 10626.37,
-"exceptional_items": -12.5,
-"finance_costs": 280.94,
-"pbt": 295.56,
-"tax": 120.87,
-"pat": 175.38
-},
-{
-"col": 2,
 "ok": true,
-"revenue": 12545.47,
-"total_income": 12612.74,
-"total_expenses": 11913.04,
-"exceptional_items": null,
-"finance_costs": 263.15,
-"pbt": 699.71,
-"tax": 246.24,
-"pat": 453.46
-},
-{
-"col": 0,
-"ok": true,
-"revenue": 12007.13,
-"total_income": 12079.33,
-"total_expenses": 11721.42,
-"exceptional_items": null,
-"finance_costs": 233.78,
-"pbt": 357.9,
-"tax": 134.09,
-"pat": 223.81
-},
-{
-"col": 1,
-"ok": false,
 "revenue": 10825.63,
 "total_income": 10909.43,
 "total_expenses": 10626.37,
@@ -574,7 +740,8 @@
 "pat": 453.46
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "consolidated"
 },
 "544669": {
 "code": "544669",
@@ -620,7 +787,7 @@
 "pat": 447.58
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "standalone current half-year figures failed arithmetic checks"
 },
 "544684": {
 "code": "544684",
@@ -650,7 +817,7 @@
 "exceptional_items": null,
 "finance_costs": 71.74,
 "pbt": 1130.53,
-"tax": 277.66,
+"tax": 277.65,
 "pat": 852.87
 },
 {
@@ -664,44 +831,9 @@
 "pbt": 245.19,
 "tax": 55.11,
 "pat": 190.1
-},
-{
-"col": 0,
-"ok": true,
-"revenue": 3318.19,
-"total_income": 3496.17,
-"total_expenses": 2812.72,
-"exceptional_items": null,
-"finance_costs": 54.02,
-"pbt": 683.45,
-"tax": 198.64,
-"pat": 484.82
-},
-{
-"col": 1,
-"ok": true,
-"revenue": 5925.41,
-"total_income": 5998.84,
-"total_expenses": 4868.32,
-"exceptional_items": null,
-"finance_costs": 71.74,
-"pbt": 1130.53,
-"tax": 277.66,
-"pat": 852.87
-},
-{
-"col": 2,
-"ok": false,
-"revenue": 1817.73,
-"total_income": 1828.06,
-"total_expenses": 1613.94,
-"exceptional_items": null,
-"finance_costs": 68.28,
-"pbt": 245.19,
-"tax": 55.09,
-"pat": 190.1
 }
 ],
-"why": "standalone figures failed arithmetic checks"
+"why": "ok",
+"basis": "consolidated"
 }
 }
