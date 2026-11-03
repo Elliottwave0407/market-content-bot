@@ -1944,3 +1944,14 @@
 03 14:38:41 pdf pdf current col Suncity Synthetics Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=10.78, finance_costs=0.0, depreciation=0.2, pbt=4.99, tax=0.0, pat=4.99, eps=0.1
 03 14:38:41 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
 03 14:38:41 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:39:17 ready 531371|Sep-26|na kind=photo waited_min=45.2 tries=7 pdf_log=pdf checks failed Starlit Power Systems Ltd consolidated | pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd |
+03 14:39:23 pdf rule reader Svarnim Trade Udyog Ltd: rule: no results table page
+03 14:39:23 pdf rule reader Starlit Power Systems Ltd: rule: no results table page
+03 14:39:23 pdf rule reader Rushabh Precision Bearings Ltd: rule: cons: no revenue row; stan: no revenue row
+03 14:39:23 pdf rule reader Vas Infrastructure Ltd: rule: no results table page
+03 14:39:23 pdf rule reader Lloyds Metals and Energy Ltd: rule: no results table page
+03 14:39:23 pdf rule reader Suncity Synthetics Ltd: rule: stan: does not reconcile [lakh] total_income=[0.0, 8.93, 0.0] total_expenses=[10.78, 12.98, 5.9] pbt=[-10.78, 4.05, -5.9] tax=[0.0, 0.0, 0.0] pat=[4.99, -4.05, 1.64] depreciation=[0.2, 1.2
+03 14:39:23 pdf pdf current col Starlit Power Systems Ltd consolidated ok=False/2: revenue=185.44, other_income=5.68, total_income=191.12, total_expenses=259.58, finance_costs=None, depreciation=None, pbt=-74.79, tax=None, pat=-74.79, eps=-0.37
+03 14:39:23 pdf pdf checks failed Starlit Power Systems Ltd consolidated
+03 14:39:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
+03 14:39:23 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
