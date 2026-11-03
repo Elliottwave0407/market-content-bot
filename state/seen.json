@@ -2631,7 +2631,8 @@
 "69c5e673-82f4-42f6-9791-cc1d4738c388",
 "2306b1bd-e156-4990-8d77-184ade83e77d",
 "a1893c59-78fd-467a-80d0-772e07b2f9c0",
-"4508a735-9fdb-4735-ba24-aeabb5c285ea"
+"4508a735-9fdb-4735-ba24-aeabb5c285ea",
+"4237708a-2be3-4e9a-af38-12b4dec9040e"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4236,7 +4237,8 @@
 "543535|Sep-26|standalone",
 "544175|Sep-26|standalone",
 "526473|Sep-26|standalone",
-"512004|Sep-26|consolidated"
+"512004|Sep-26|consolidated",
+"516082|Sep-26|standalone"
 ],
 "pending": {
 "878db691-5b10-4b52-b1ac-4a5ff57fd3db": {
@@ -4464,44 +4466,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793705518.2985923,
-"last": 1793706057.8486626,
-"alerted": false
-},
-"4237708a-2be3-4e9a-af38-12b4dec9040e": {
-"rec": {
-"NEWSID": "4237708a-2be3-4e9a-af38-12b4dec9040e",
-"SCRIP_CD": 516082,
-"XML_NAME": "ANN_516082_4237708A-2BE3-4E9A-AF38-12B4DEC9040E",
-"NEWSSUB": "NR Agarwal Industries Ltd - 516082 - Un-Audited Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-03T17:03:13.75",
-"NEWS_DT": "2026-11-03T17:03:13.75",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "95f07176-faac-4dba-a7f3-2252a96537e1.pdf",
-"MORE": "",
-"HEADLINE": "Un-audited financial results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/nr-agarwal-industries-ltd/nrail/516082/",
-"SLONGNAME": "NR Agarwal Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 22,
-"News_submission_dt": "2026-11-03T17:03:13",
-"DissemDT": "2026-11-03T17:03:13.75",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4585327,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793705632.9667072,
 "last": 1793706057.8486626,
 "alerted": false
 },
@@ -4770,13 +4734,47 @@
 "first": 1793706057.8486626,
 "last": 1793706057.8486626,
 "alerted": false
+},
+"2f4a565f-4e54-4765-b8dd-5626314fb736": {
+"rec": {
+"NEWSID": "2f4a565f-4e54-4765-b8dd-5626314fb736",
+"SCRIP_CD": 544260,
+"XML_NAME": "ANN_544260_2F4A565F-4E54-4765-B8DD-5626314FB736",
+"NEWSSUB": "Northern Arc Capital Ltd - 544260 - Unaudited Financial Results (Standalone And Consolidated) For The Second Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-03T17:12:36.923",
+"NEWS_DT": "2026-11-03T17:12:36.923",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "603991e6-a844-4fca-add1-03e2330d7052.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Financial Results (Standalone and Consolidated) for the second quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/northern-arc-capital-ltd/northarc/544260/",
+"SLONGNAME": "Northern Arc Capital Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 22,
+"News_submission_dt": "2026-11-03T17:12:36",
+"DissemDT": "2026-11-03T17:12:36.923",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 13540030,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793706415.024028,
+"last": 1793706415.024028,
+"alerted": false
 }
 },
 "lag": [
-[
-"Modulex Construction Technologies Ltd",
-45
-],
 [
 "The Ravalgaon Sugar Farm Ltd",
 4
@@ -5972,6 +5970,10 @@
 [
 "Nilkanth Engineering Ltd",
 41
+],
+[
+"NR Agarwal Industries Ltd",
+13
 ]
 ],
 "gem_use": {
@@ -5997,7 +5999,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 437
+"2026-11-03": 442
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -6888,6 +6890,16 @@
 "rev": 25.650000000000002,
 "pat": -0.34900000000000003,
 "t": 1793706028.8545837,
+"last": 0
+},
+"516082|Sep-26|standalone": {
+"code": "516082",
+"name": "NR Agarwal Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 6688.096000000001,
+"pat": 309.408,
+"t": 1793706436.7597451,
 "last": 0
 }
 },
@@ -9215,7 +9227,8 @@
 "714e2d23-99f7-490b-9389-f9210c7dd76d": 1,
 "a4c2dd12-131c-4969-8906-13c3901b9b42": 1,
 "34af282e-ff23-460f-b222-ce728062fde3": 1,
-"b64f5ccf-81ac-4f58-a260-a838d40c6264": 1
+"b64f5ccf-81ac-4f58-a260-a838d40c6264": 1,
+"2f4a565f-4e54-4765-b8dd-5626314fb736": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -9997,7 +10010,7 @@
 "other": 49
 },
 "results-key": {
-"ok": 132,
+"ok": 138,
 "429": 1,
 "other": 29
 }
