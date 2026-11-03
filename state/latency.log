@@ -1762,3 +1762,17 @@
 03 12:46:13 seen 538834 JMJ Fintech Ltd cat=Board Meeting early=True bse_time=18:15:29 dissem=18:15:29
 03 12:47:22 ready 544647|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf accepted on printed-numbers check (table arithmetic not reconciled) Nephrocare Health Services Ltd consolidated
 03 12:49:42 ready 544287|Sep-26|na kind=photo waited_min=45.2 tries=99 pdf_log=
+03 12:50:38 pdf nim reader JMJ Fintech Ltd: nim deepseek-v4.1-flash: 429 | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemini skipped (quota/backoff))
+03 12:50:38 pdf pdf read failed JMJ Fintech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 429 | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [(
+03 12:50:38 pdf rule reader FGP Ltd: rule: no results table page
+03 12:50:38 pdf nim reader FGP Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 12:50:38 pdf pdf read failed FGP Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 12:50:38 pdf rule reader Indo Euro Indchem Ltd: rule: no results table page
+03 12:50:38 pdf nim reader Indo Euro Indchem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 12:50:38 pdf pdf read failed Indo Euro Indchem Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 12:50:38 pdf rule reader Yunik Managing Advisors Ltd: rule: no results table page
+03 12:50:38 pdf pdf read deferred Yunik Managing Advisors Ltd: per-pass AI call cap
+03 12:50:38 pdf rule reader Mahaveer Infoway Ltd: rule: no results table page
+03 12:50:38 pdf pdf read deferred Mahaveer Infoway Ltd: per-pass AI call cap
+03 12:50:38 pdf rule reader Real Growth Corporation Ltd: rule: no results table page
+03 12:50:38 pdf pdf read deferred Real Growth Corporation Ltd: per-pass AI call cap
