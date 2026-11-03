@@ -33,6 +33,7 @@ for f in glob.glob(os.path.join(store.ROOT, "concall_coverage", "nse_filings.jso
 p("symbols total", len(syms))
 try: done = set(json.load(open(STATE)))
 except Exception: done = set()
+if os.environ.get("RESET") == "1": done = set()      # weekly full refresh (new annual reports appear for old symbols)
 rows = {}
 if os.path.exists(CACHE):
     for l in open(CACHE, encoding="utf-8"):
