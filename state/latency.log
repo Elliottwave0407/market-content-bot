@@ -1827,3 +1827,9 @@
 03 09:41:19 ready 544499|Sep-26|consolidated kind=photo waited_min=12.0 tries=6 pdf_log=
 03 09:41:42 pdf pdf current col Career Point Edutech Ltd consolidated ok=True/3: revenue=1888.65, other_income=343.84, total_income=2232.49, total_expenses=1071.65, finance_costs=21.51, depreciation=12.65, pbt=1160.84, tax=273.77, pat=887.07, eps
 03 09:41:42 pdf pdf incomplete Career Point Edutech Ltd consolidated: missing ['ebitda'] - not posting from PDF
+03 09:42:12 pdf pdf history mismatch Arihant Superstructures Ltd consolidated cols=['September 30, 2026', 'June 30, 2026', 'September 30, 2025'] :: q-1: pdf rev 1331.411 pat 97.82000000000001 | bse rev 1315.94 pat 97.82 (Rs mn); q-4: pdf rev 1234
+03 09:42:12 pdf pdf current col BGIL Films & Technologies Ltd standalone ok=True/2: revenue=6.0, other_income=None, total_income=6.0, total_expenses=11.42, finance_costs=None, depreciation=1.03, pbt=-5.42, tax=-0.02, pat=-5.41, eps=-0.0
+03 09:42:12 pdf pdf incomplete BGIL Films & Technologies Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 09:42:13 seen 532015 Gravity India Ltd-$ cat=Result early=False bse_time=15:11:36 dissem=15:11:36
+03 09:42:13 seen 532661 Rane (Madras) Ltd cat=Board Meeting early=True bse_time=15:11:42 dissem=15:11:42
+03 09:42:13 seen 526668 Kamat Hotels (India) Ltd cat=Result early=False bse_time=15:11:43 dissem=15:11:43
