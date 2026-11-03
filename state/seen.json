@@ -2869,7 +2869,10 @@
 "dc9716fe-766b-48da-aea7-cf6c4460a0d0",
 "b53c2cae-5055-40b1-8243-64967eb53f19",
 "720e04e3-7826-4f33-9367-04df3746d900",
-"79b4288b-af50-4876-8d5d-3da9b92fd39f"
+"79b4288b-af50-4876-8d5d-3da9b92fd39f",
+"525a960a-e61a-46dc-9ba1-52f02ef2969a",
+"f2266d54-a255-44e2-8413-259991e7b100",
+"5af3e91c-4ead-4417-82c9-ef399a98ba54"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4629,7 +4632,9 @@
 "532700|Sep-26|consolidated",
 "534091|Sep-26|consolidated",
 "543350|Sep-26|standalone",
-"544913|Sep-26|consolidated"
+"544913|Sep-26|consolidated",
+"530079|Sep-26|consolidated",
+"530795|Sep-26|standalone"
 ],
 "pending": {
 "76993ee1-186a-4bfc-a189-3d19b3a87b6a": {
@@ -4933,7 +4938,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793715806.4464374,
-"last": 1793716613.9598582,
+"last": 1793716666.560291,
+"alerted": false
+},
+"a3e65404-7410-41a5-8821-74ca191d856f": {
+"rec": {
+"NEWSID": "a3e65404-7410-41a5-8821-74ca191d856f",
+"SCRIP_CD": 530795,
+"XML_NAME": "ANN_530795_A3E65404-7410-41A5-8821-74CA191D856F",
+"NEWSSUB": "Suncity Synthetics Ltd - 530795 - Unauidted Financial Results For Quarter Ended 30 Sept 2026",
+"DT_TM": "2026-11-03T20:06:17.65",
+"NEWS_DT": "2026-11-03T20:06:17.65",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "44118424-1259-45ea-8edd-656c2b3cca14.pdf",
+"MORE": "",
+"HEADLINE": "Enclosed Herewith BM Outcome and Financial Results including Statement of Assets and Liabilities and Cash Flow Statements with Limited Review Report for Quarter ended 30th Sept 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/suncity-synthetics-ltd/suncitysy/530795/",
+"SLONGNAME": "Suncity Synthetics Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 39,
+"News_submission_dt": "2026-11-03T20:06:17",
+"DissemDT": "2026-11-03T20:06:17.65",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 15175901,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793716666.560291,
+"last": 1793716666.560291,
 "alerted": false
 }
 },
@@ -6162,7 +6205,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 746
+"2026-11-03": 748
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -6213,7 +6256,7 @@
 "rev": 0.333,
 "pat": -0.143,
 "t": 1793608657.9461322,
-"last": 1793716414.9183571
+"last": 1793716720.2841945
 },
 "531611|Sep-26|standalone": {
 "code": "531611",
@@ -6223,7 +6266,7 @@
 "rev": 0.0,
 "pat": 0.006,
 "t": 1793611691.4655623,
-"last": 1793716414.9183571
+"last": 1793716720.2841945
 },
 "531033|Sep-26|standalone": {
 "code": "531033",
@@ -6233,7 +6276,7 @@
 "rev": 2.3030000000000004,
 "pat": -0.801,
 "t": 1793612026.0228672,
-"last": 1793716414.9183571
+"last": 1793716720.2841945
 },
 "539884|Sep-26|standalone": {
 "code": "539884",
@@ -6243,7 +6286,7 @@
 "rev": 135.366,
 "pat": 0.357,
 "t": 1793613065.993788,
-"last": 1793716414.9183571
+"last": 1793716720.2841945
 },
 "522215|Sep-26|standalone": {
 "code": "522215",
@@ -7553,6 +7596,26 @@
 "rev": 1314.54,
 "pat": 286.07,
 "t": 1793716541.7312355,
+"last": 0
+},
+"530079|Sep-26|consolidated": {
+"code": "530079",
+"name": "Faze Three Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 2645.7999999999997,
+"pat": 154.60000000000002,
+"t": 1793716702.744598,
+"last": 0
+},
+"530795|Sep-26|standalone": {
+"code": "530795",
+"name": "Suncity Synthetics Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": 0.49900000000000005,
+"t": 1793716713.0371552,
 "last": 0
 }
 },
@@ -9314,7 +9377,8 @@
 "38ee6ffe-dbc8-4c58-a57e-40b3b3f96b0c": 1,
 "2804b890-a0b6-4fc8-98d7-610e3c497888": 1,
 "5af3e91c-4ead-4417-82c9-ef399a98ba54": 1,
-"720e04e3-7826-4f33-9367-04df3746d900": 1
+"720e04e3-7826-4f33-9367-04df3746d900": 1,
+"a3e65404-7410-41a5-8821-74ca191d856f": 1
 },
 "cons_expected": {
 "16629de6-a4d4-47f6-9bd2-48110e8a9315": 1,
@@ -9854,7 +9918,8 @@
 "b7ec1071-9e71-4e64-a406-0b0555c5410c": 1,
 "dc9716fe-766b-48da-aea7-cf6c4460a0d0": 1,
 "b53c2cae-5055-40b1-8243-64967eb53f19": 1,
-"79b4288b-af50-4876-8d5d-3da9b92fd39f": 1
+"79b4288b-af50-4876-8d5d-3da9b92fd39f": 1,
+"f2266d54-a255-44e2-8413-259991e7b100": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10767,7 +10832,7 @@
 "other": 49
 },
 "concall-key": {
-"ok": 124,
+"ok": 130,
 "429": 3,
 "other": 32
 }
