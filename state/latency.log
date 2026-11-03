@@ -1664,3 +1664,16 @@
 03 11:16:01 seen 544446 Advent Hotels International  cat=Board Meeting early=True bse_time=16:45:13 dissem=16:45:13
 03 11:16:01 seen 590013 Xpro India Ltd cat=Board Meeting early=True bse_time=16:45:19 dissem=16:45:19
 03 11:16:01 seen 500085 Chambal Fertilisers & Chemic cat=Board Meeting early=True bse_time=16:45:24 dissem=16:45:24
+03 11:17:45 seen 544723 Sedemac Mechatronics Ltd cat=Result early=False bse_time=16:46:05 dissem=16:46:05
+03 11:18:28 pdf pdf current col Sedemac Mechatronics Ltd standalone ok=True/3: revenue=400.64, other_income=0.61, total_income=401.25, total_expenses=350.72, finance_costs=5.87, depreciation=19.78, pbt=50.53, tax=11.35, pat=39.18, eps=8.87
+03 11:18:28 pdf pdf current col Raja Bahadur International Ltd consolidated ok=True/3: revenue=798.6, other_income=69.34, total_income=867.94, total_expenses=814.98, finance_costs=353.77, depreciation=59.24, pbt=52.96, tax=13.23, pat=39.73, eps=1
+03 11:18:29 seen 508993 Kedia Construction Company L cat=Result early=False bse_time=16:47:35 dissem=16:47:35
+03 11:18:29 seen 534976 V-Mart Retail Ltd cat=Board Meeting early=True bse_time=16:47:39 dissem=16:47:39
+03 11:18:44 wait 508993 Kedia Construction Company L: numbers not yet on BSE
+03 11:18:47 pdf rule reader Kedia Construction Company Ltd : rule: no results table page
+03 11:18:47 pdf pdf current col Kedia Construction Company Ltd  standalone ok=True/2: revenue=10.5, other_income=-0.78, total_income=9.72, total_expenses=94.97, finance_costs=9.34, depreciation=2.02, pbt=-85.25, tax=None, pat=-85.25, eps=-771.25
+03 11:18:47 pdf pdf history mismatch Kedia Construction Company Ltd  standalone cols=['30-Sep-2026', '30-Jun-2026', '30-Sep-2025'] :: q-1: pdf rev 1.05 pat -2.84 | bse rev 1.05 pat -2.84 (Rs mn); q-4: pdf rev 1.9000000000000001 pat -21.6830000000
+03 11:18:49 seen 531506 Shukra Bullions Ltd cat=Board Meeting early=True bse_time=16:47:50 dissem=16:47:50
+03 11:18:49 seen 537669 Laxmipati Engineering Works  cat=Board Meeting early=True bse_time=16:47:50 dissem=16:47:50
+03 11:18:49 seen 531637 Praveg Ltd cat=Board Meeting early=True bse_time=16:48:00 dissem=16:48:00
+03 11:19:27 ready 539288|Sep-26|consolidated kind=photo waited_min=23.0 tries=8 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30/09/2026', '31/03/2026', '30/09/2025']): not read as quarters, queued for the half-yearly route Laxmipati Engineer
