@@ -1535,3 +1535,11 @@
 03 11:55:18 seen 517168 Subros Ltd cat=Result early=False bse_time=17:25:02 dissem=17:25:02
 03 11:56:03 ready 517168|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 03 11:56:10 ready 544502|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
+03 12:01:34 pdf nim reader Nikki Global Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+03 12:01:34 pdf pdf read failed Nikki Global Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possib
+03 12:01:34 pdf rule reader Ratnakar Securities Ltd: rule: no results table page
+03 12:01:34 pdf pdf read deferred Ratnakar Securities Ltd: per-pass AI call cap
+03 12:01:34 pdf rule reader Kedia Construction Company Ltd : rule: no results table page
+03 12:01:34 pdf pdf read deferred Kedia Construction Company Ltd : per-pass AI call cap
+03 12:01:34 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 12:01:34 pdf pdf read deferred Pressure Sensitive Systems India Ltd: per-pass AI call cap
