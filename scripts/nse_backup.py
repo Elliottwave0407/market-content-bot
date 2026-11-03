@@ -44,7 +44,8 @@ def get(code, label, cons_expected=False, age_min=None):
     if not ON: return None
     key = (str(code), label)
     hit = _CACHE.get(key)
-    if hit and time.time() - hit[0] < (POS_TTL if hit[1] else NEG_TTL): return hit[1]
+    neg = 15 if (age_min is not None and age_min < 30) else NEG_TTL      # a fresh filing is re-checked on NSE every ~15 s until its numbers appear
+    if hit and time.time() - hit[0] < (POS_TTL if hit[1] else neg): return hit[1]
     res = None
     try: res = _get(str(code), label, cons_expected)
     except Exception: res = None

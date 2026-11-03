@@ -34,6 +34,7 @@ jobs:
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
           POLL_INTERVAL: "10"
           NSE_BACKUP: "1"
+          POLL_RETRY_SEC: "40"      # pending results are re-checked (NSE and BSE) every 40 s instead of 90 s
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # used ONLY when every model on the main key is out of quota
           GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_IMAGE_SCANNED_RESULTS }}   # optional third key (own Google project) used only after the other two are out of quota
