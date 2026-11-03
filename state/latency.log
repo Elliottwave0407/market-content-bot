@@ -1959,3 +1959,15 @@
 03 14:39:30 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
 03 14:39:30 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
 03 14:39:36 pdf nim reader Concord Enviro Systems Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+03 14:40:13 pdf rule reader Suncity Synthetics Ltd: rule: stan: does not reconcile [lakh] total_income=[0.0, 8.93, 0.0] total_expenses=[10.78, 12.98, 5.9] pbt=[-10.78, 4.05, -5.9] tax=[0.0, 0.0, 0.0] pat=[4.99, -4.05, 1.64] depreciation=[0.2, 1.2
+03 14:40:13 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:40:13 pdf nim reader Vas Infrastructure Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemin
+03 14:40:13 pdf pdf read failed Vas Infrastructure Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-fl
+03 14:40:57 pdf pdf current col Lloyds Metals and Energy Ltd consolidated ok=False/3: revenue=5672.53, other_income=39.53, total_income=5712.06, total_expenses=4373.6, finance_costs=278.68, depreciation=225.96, pbt=1311.29, tax=288.05, pat=1023.2
+03 14:40:57 pdf pdf history mismatch Lloyds Metals and Energy Ltd consolidated cols=['30-Sep-26', '30-Jun-26', '30-Sep-25'] :: q-1: pdf rev 71501.09999999999 pat 17677.4 | bse rev 73544.0 pat 17338.9 (Rs mn); q-4: pdf rev 36521.1 pat 5510.7000000
+03 14:40:57 pdf pdf has consolidated but it failed checks: not falling back to standalone Lloyds Metals and Energy Ltd
+03 14:40:57 pdf pdf current col Suncity Synthetics Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=10.78, finance_costs=0.0, depreciation=0.2, pbt=4.99, tax=0.0, pat=4.99, eps=0.1
+03 14:40:57 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
+03 14:40:57 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:40:58 seen 543350 Vijaya Diagnostic Centre Ltd cat=Result early=False bse_time=20:10:27 dissem=20:10:27
+03 14:41:19 wait 543350 Vijaya Diagnostic Centre Ltd: numbers not yet on BSE
