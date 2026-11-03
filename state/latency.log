@@ -1841,3 +1841,14 @@
 03 16:24:35 pdf rule reader Bilcare Ltd-$: rule: consolidated table incomplete missing ['pat'] n=6
 03 16:24:35 pdf rule reader Consecutive Commodities Ltd: rule: no results table page
 03 16:24:35 pdf rule reader Artificial Electronics Intelligent Material Ltd: rule: no results table page
+03 16:25:29 pdf nim reader Bilcare Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 16:25:29 pdf pdf read failed Bilcare Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 16:25:50 pdf nim reader Artificial Electronics Intelligent Material Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possible invention)
+03 16:25:50 pdf pdf read failed Artificial Electronics Intelligent Material Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in
+03 16:25:50 pdf nim reader Sword-Edge Commercials Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 16:25:50 pdf pdf read failed Sword-Edge Commercials Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 16:25:50 pdf nim reader Consecutive Commodities Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (
+03 16:25:50 pdf pdf read failed Consecutive Commodities Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (po
+03 16:25:55 pdf rule reader Bilcare Ltd-$: rule: consolidated table incomplete missing ['pat'] n=6
+03 16:25:55 pdf nim reader Bilcare Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 16:25:55 pdf pdf read failed Bilcare Ltd-$: gemini skipped (quota/backoff); nim: cooling down
