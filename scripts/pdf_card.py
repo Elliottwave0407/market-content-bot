@@ -179,8 +179,12 @@ def _read_stage(rec, st, headline, filed):
     nim_ok = bool(nr.key())
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
-    gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= DAILY_CAP or os.environ.get("NIM_ONLY") == "1"
-    if not gem_blocked and use.get(day, 0) >= 0.8 * DAILY_CAP and mcap_of(rec.get("SCRIP_CD")) < 300:
+    # Morning reserve (3 Nov): the Gemini day resets at 13:30 IST, so afternoon/evening results used to eat the allowance and the next morning's results (9:00-13:30 IST, the busiest hours) found it empty.
+    # Outside 08:30-13:30 IST only 70% of the daily allowance may be used; the last 30% is kept for the morning.
+    _im = time.gmtime(time.time() + 19800); _mm = _im.tm_hour * 60 + _im.tm_min
+    _cap = DAILY_CAP if 510 <= _mm < 810 else int(0.7 * DAILY_CAP)
+    gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= _cap or os.environ.get("NIM_ONLY") == "1"
+    if not gem_blocked and use.get(day, 0) >= 0.8 * _cap and mcap_of(rec.get("SCRIP_CD")) < 300:
         gem_blocked = True      # the last fifth of the daily Gemini allowance is kept for companies that matter; micro-caps use the rule / NVIDIA readers or wait
     # Retry gap: a fresh filing's PDF is often not downloadable for the first minute or two, and one failed read used to cost a flat 4 minutes (13 min delays on 2 Nov: Capillary, Mobikwik).
     # Now: 20 s for the first retries, 60 s for the next, 240 s only after that. Same checks as before, so accuracy is unchanged.
