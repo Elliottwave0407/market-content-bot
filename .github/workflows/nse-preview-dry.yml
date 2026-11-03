@@ -9,7 +9,7 @@ on:
         description: "optional NSE symbols, comma separated"
         default: ""
 permissions:
-  contents: read
+  contents: write
 jobs:
   d:
     runs-on: ubuntu-latest
@@ -25,8 +25,12 @@ jobs:
           N: ${{ github.event.inputs.n }}
           SYMS: ${{ github.event.inputs.syms }}
         run: python scripts/nse_preview_dry.py
-      - uses: actions/upload-artifact@v4
+      - name: Save previews
         if: always()
-        with:
-          name: nse-preview
-          path: out/nse_preview
+        run: |
+          mkdir -p store/stub_dry/preview && cp out/nse_preview/*.png store/stub_dry/preview/ 2>/dev/null || true
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/stub_dry/preview 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "NSE backup preview cards (dry)"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
