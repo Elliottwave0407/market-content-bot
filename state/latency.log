@@ -1704,3 +1704,34 @@
 03 12:36:37 ready 509038|Sep-26|standalone kind=photo waited_min=65.6 tries=4 pdf_log=pdf current col Voltaire Leasing & Finance Ltd  standalone ok=False/3: revenue=16.5, other_income=-5.67, total_income=12.83, total_expenses=115.29, finance_cost
 03 12:36:49 wait 524458 Indo Euro Indchem Ltd: numbers not yet on BSE
 03 12:37:06 ready 526773|Jun-26|standalone kind=photo waited_min=53.1 tries=2 pdf_log=pdf quarter mismatch Pressure Sensitive Systems India Ltd
+03 12:37:25 seen 544541 Systematic Industries Ltd cat=Result early=False bse_time=18:04:58 dissem=18:04:58
+03 12:37:25 seen 544801 GSPL Transmission Ltd cat=Result early=False bse_time=18:05:08 dissem=18:05:08
+03 12:37:25 seen 532090 Atvo Enterprises Ltd cat=Board Meeting early=True bse_time=18:06:08 dissem=18:06:08
+03 12:38:06 wait 544801 GSPL Transmission Ltd: numbers not yet on BSE
+03 12:38:18 wait 544541 Systematic Industries Ltd: numbers not yet on BSE
+03 12:38:37 ready 530243|Sep-26|na kind=photo waited_min=46.9 tries=1 pdf_log=pdf read deferred Yunik Managing Advisors Ltd: per-pass AI call cap | rule reader Ratnakar Securities Ltd: rule: no results table page | pdf read deferred Ratna
+03 12:38:48 pdf pdf current col GSPL Transmission Ltd consolidated ok=False/3: revenue=28957.45, other_income=4935.02, total_income=33892.47, total_expenses=17680.34, finance_costs=182.59, depreciation=5454.76, pbt=16212.13, tax=4168.22, pat=9945
+03 12:38:48 pdf pdf checks failed GSPL Transmission Ltd consolidated
+03 12:38:48 pdf pdf has consolidated but it failed checks: not falling back to standalone GSPL Transmission Ltd
+03 12:38:48 pdf pdf current col Asian Granito India Ltd consolidated ok=True/3: revenue=52850.4, other_income=250.89, total_income=53101.29, total_expenses=52481.3, finance_costs=794.98, depreciation=1610.64, pbt=619.99, tax=98.31, pat=521.5, eps
+03 12:38:48 pdf pdf history mismatch Asian Granito India Ltd consolidated cols=['30 September, 2026', '30 June, 2026', '30 September, 2025 (Restated)'] :: q-1: pdf rev 5309.4980000000005 pat 80.706 | bse rev 5309.5 pat 80.71 (Rs mn); q-4: pdf rev
+03 12:38:48 pdf pdf has consolidated but it failed checks: not falling back to standalone Asian Granito India Ltd
+03 12:38:48 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Systematic Industries Ltd
+03 12:38:48 pdf pdf current col Jenburkt Pharmaceuticals Ltd standalone ok=True/3: revenue=4831.82, other_income=225.26, total_income=5057.08, total_expenses=3623.13, finance_costs=12.97, depreciation=79.89, pbt=1433.95, tax=413.01, pat=1020.94, 
+03 12:38:48 pdf pdf current col Lords Chloro Alkali Ltd standalone ok=True/3: revenue=11540.35, other_income=10.61, total_income=11550.96, total_expenses=10373.1, finance_costs=274.02, depreciation=429.89, pbt=1177.86, tax=276.34, pat=901.52, eps
+03 12:38:48 pdf pdf current col Atvo Enterprises Ltd standalone ok=True/3: revenue=170.34, other_income=19.39, total_income=189.72, total_expenses=184.83, finance_costs=0.02, depreciation=0.16, pbt=4.9, tax=1.27, pat=3.63, eps=0.003
+03 12:38:48 pdf pdf incomplete Atvo Enterprises Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 12:38:48 pdf rule reader Kasturi Metal Composite Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Kasturi Metal Composite Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader Adarsh Plant Protect Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Adarsh Plant Protect Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader FGP Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred FGP Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader Indo Euro Indchem Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Indo Euro Indchem Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader Yunik Managing Advisors Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Yunik Managing Advisors Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader Ratnakar Securities Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Ratnakar Securities Ltd: per-pass AI call cap
+03 12:38:48 pdf rule reader Real Growth Corporation Ltd: rule: no results table page
+03 12:38:48 pdf pdf read deferred Real Growth Corporation Ltd: per-pass AI call cap
