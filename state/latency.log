@@ -1633,3 +1633,19 @@
 03 17:52:21 pdf pdf read failed HEG Advanced Materials Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); ni
 03 17:53:44 pdf nim reader HEG Advanced Materials Ltd: nim deepseek-v4.1-flash: 13 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 36 numbers not found in the filing text (possi
 03 17:53:44 pdf pdf read failed HEG Advanced Materials Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 13 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 36 number
+03 18:43:24 seen 500112 State Bank of India cat=Result early=False bse_time=14:08:34 dissem=14:08:34
+03 18:43:24 seen 543942 Utkarsh Small Finance Bank L cat=Result early=False bse_time=20:21:31 dissem=20:21:31
+03 18:43:24 seen 540789 Diligent Media Corporation L cat=Result early=False bse_time=22:50:20 dissem=22:50:20
+03 18:43:24 seen 544940 Robokidz Eduventures Ltd cat=Result early=False bse_time=23:12:35 dissem=23:12:35
+03 18:43:24 seen 509631 HEG Advanced Materials Ltd cat=Result early=False bse_time=23:13:54 dissem=23:13:54
+03 18:43:24 seen 539889 Parag Milk Foods Ltd cat=Result early=False bse_time=23:38:38 dissem=23:38:38
+03 18:43:53 ready 509631|Sep-26|na kind=photo waited_min=57.5 tries=0 pdf_log=pdf history mismatch HEG Advanced Materials Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9767.7 pat 601.9 | bse rev 6807.9 p
+03 18:43:59 ready 544940|Sep-26|na kind=photo waited_min=60.6 tries=1 pdf_log=pdf history mismatch HEG Advanced Materials Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9767.7 pat 601.9 | bse rev 6807.9 p
+03 18:44:05 pdf rule reader Parag Milk Foods Ltd: rule: unit not found
+03 18:44:05 pdf rule reader Robokidz Eduventures Ltd: rule: header has no quarter columns
+03 18:44:05 pdf rule reader Diligent Media Corporation Ltd: rule: stan: missing ['pat'] n=5
+03 18:44:05 pdf rule reader HEG Advanced Materials Ltd: ok
+03 18:44:05 pdf pdf current col HEG Advanced Materials Ltd consolidated ok=True/3: revenue=956.39, other_income=116.65, total_income=546.59, total_expenses=268.06, finance_costs=19.71, depreciation=14.54, pbt=278.53, tax=69.64, pat=208.89, eps=6.
+03 18:44:05 pdf pdf history mismatch HEG Advanced Materials Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9767.7 pat 601.9 | bse rev 6807.9 pat 1223.4 (Rs mn); q-4: pdf rev 8727.8 pat 691.8000000000001 | bse rev
+03 18:44:05 pdf pdf has consolidated but it failed checks: not falling back to standalone HEG Advanced Materials Ltd
+03 18:44:05 pdf rule-read numbers rejected by later checks, AI reader will retry: HEG Advanced Materials Ltd
