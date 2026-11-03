@@ -1955,3 +1955,7 @@
 03 14:39:23 pdf pdf checks failed Starlit Power Systems Ltd consolidated
 03 14:39:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
 03 14:39:23 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:39:30 pdf pdf current col Suncity Synthetics Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=10.78, finance_costs=0.0, depreciation=0.2, pbt=4.99, tax=0.0, pat=4.99, eps=0.1
+03 14:39:30 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
+03 14:39:30 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:39:36 pdf nim reader Concord Enviro Systems Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
