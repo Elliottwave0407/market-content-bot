@@ -1917,3 +1917,10 @@
 03 14:34:02 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
 03 14:34:07 ready 543350|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Vijaya Diagnostic Centre Ltd standalone ok=True/3: revenue=24200.2, other_income=544.91, total_income=24745.11, total_expenses=16952.46, finance
 03 14:34:16 pdf pdf current col Vijaya Diagnostic Centre Ltd standalone ok=True/3: revenue=24200.2, other_income=544.91, total_income=24745.11, total_expenses=16952.46, finance_costs=1082.13, depreciation=2398.8, pbt=7792.65, tax=2000.19, pat=579
+03 14:34:19 seen 543942 Utkarsh Small Finance Bank L cat=Board Meeting early=True bse_time=20:03:17 dissem=20:03:17
+03 14:34:19 seen 544913 Glass Wall Systems (India) L cat=Board Meeting early=True bse_time=20:03:26 dissem=20:03:26
+03 14:34:48 pdf rule reader Glass Wall Systems (India) Ltd: rule: consolidated table does not reconcile [million] pbt=[None, None, None] pat=[28607.0, 17295.0, 2804.0] depreciation=[1667.0, 1536.0, 1049.0] finance_costs=[558.0, 846.0, 1087.0]
+03 14:34:48 pdf rule reader Suncity Synthetics Ltd: rule: stan: does not reconcile [lakh] total_income=[0.0, 8.93, 0.0] total_expenses=[10.78, 12.98, 5.9] pbt=[-10.78, 4.05, -5.9] tax=[0.0, 0.0, 0.0] pat=[4.99, -4.05, 1.64] depreciation=[0.2, 1.2
+03 14:34:48 pdf nim reader Concord Enviro Systems Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+03 14:34:48 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:35:41 ready 544913|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf history mismatch Lloyds Metals and Energy Ltd consolidated cols=['30-Sep-26', '30-Jun-26', '30-Sep-25'] :: q-1: pdf rev 71501.09999999999 pat 17677.4 | bse 
