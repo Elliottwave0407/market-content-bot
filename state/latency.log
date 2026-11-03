@@ -1801,3 +1801,10 @@
 03 15:49:13 pdf pdf current col Authum Investment & Infrastructure Ltd consolidated ok=False/3: revenue=680.86, other_income=4.58, total_income=685.44, total_expenses=185.25, finance_costs=61.88, depreciation=9.68, pbt=493.79, tax=75.79, pat=418.
 03 15:49:13 pdf pdf checks failed Authum Investment & Infrastructure Ltd consolidated
 03 15:49:13 pdf pdf has consolidated but it failed checks: not falling back to standalone Authum Investment & Infrastructure Ltd
+03 15:51:20 seen 539559 Deep Health AI India Ltd cat=Result early=False bse_time=21:19:51 dissem=21:19:51
+03 15:52:33 wait 539559 Deep Health AI India Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
+03 15:53:03 ready 539559|Sep-26|consolidated kind=photo waited_min=1.2 tries=1 pdf_log=nim reader Deep Health AI India Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col Deep Health AI India Ltd standalone ok=True/3: revenue=0, oth
+03 15:53:11 pdf rule reader Artificial Electronics Intelligent Material Ltd: rule: no results table page
+03 15:53:11 pdf nim reader Deep Health AI India Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 15:53:11 pdf pdf current col Deep Health AI India Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=0, finance_costs=0, depreciation=0, pbt=0, tax=0, pat=0, eps=0
+03 15:53:11 pdf pdf history mismatch Deep Health AI India Ltd standalone cols=['30-09-2026', '30-06-2026', '30-09-2025'] :: q-1: pdf rev 0.0 pat 0.0 | bse rev 4.5 pat -18.99 (Rs mn); q-4: pdf rev 0.0 pat 0.0 | bse rev 33.5 pat 25.27 (Rs mn)
