@@ -1522,3 +1522,16 @@
 03 14:48:54 pdf nim reader Concord Enviro Systems Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
 03 14:48:55 ready 544036|Sep-26|na kind=photo waited_min=45.5 tries=99 pdf_log=
 03 14:49:00 ready 531574|Sep-26|na kind=photo waited_min=45.5 tries=8 pdf_log=
+03 14:49:13 seen 513250 Jyoti Structures Ltd cat=Result early=False bse_time=20:18:17 dissem=20:18:17
+03 14:49:13 seen 532924 Kolte-Patil Developers Ltd cat=Result early=False bse_time=20:18:51 dissem=20:18:51
+03 14:49:35 wait 532924 Kolte-Patil Developers Ltd: numbers not yet on BSE
+03 14:49:38 wait 513250 Jyoti Structures Ltd: numbers not yet on BSE
+03 14:49:43 pdf rule reader Jyoti Structures Ltd: rule: no results table page
+03 14:49:43 pdf rule reader Kolte-Patil Developers Ltd: rule: no results table page
+03 14:49:53 ready 532924|Sep-26|consolidated kind=photo waited_min=0.5 tries=1 pdf_log=pdf current col Kolte-Patil Developers Ltd consolidated ok=False/3: revenue=33437, other_income=1714, total_income=35151, total_expenses=34279, finance_costs=33
+03 14:50:22 pdf pdf current col Kolte-Patil Developers Ltd consolidated ok=False/3: revenue=33437, other_income=1714, total_income=35151, total_expenses=34279, finance_costs=332, depreciation=479, pbt=898, tax=328, pat=570, eps=0.59
+03 14:50:22 pdf pdf current col Jyoti Structures Ltd consolidated ok=True/3: revenue=243.84, other_income=4.73, total_income=248.57, total_expenses=233.0, finance_costs=2.91, depreciation=3.68, pbt=15.57, tax=0.16, pat=15.41, eps=0.1291
+03 14:50:22 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 14:50:22 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+03 14:50:22 pdf nim reader Bengal Steel Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 14:50:22 pdf pdf read failed Bengal Steel Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
