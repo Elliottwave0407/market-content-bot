@@ -1647,3 +1647,9 @@
 03 11:11:58 ready 523457|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=nim reader AVI Polymers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 32 numbers not found 
 03 11:12:09 ready 531432|Sep-26|standalone kind=photo waited_min=2.4 tries=2 pdf_log=pdf previous/year-ago columns were swapped vs BSE history: corrected Elegant Floriculture & Agrotech India Ltd standalone | pdf incomplete Elegant Floriculture 
 03 11:12:20 pdf nim reader Rhetan TMT Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 11:12:23 seen 526473 Elegant Floriculture & Agrot cat=Result early=False bse_time=16:41:30 dissem=16:41:30
+03 11:13:01 ready 503127|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf current col Rhetan TMT Ltd standalone ok=True/3: revenue=36317, other_income=44708, total_income=81025, total_expenses=51083, finance_costs=3522, depreciati
+03 11:13:10 wait 526473 Elegant Floriculture & Agrot: numbers not yet on BSE
+03 11:13:14 pdf pdf current col Rhetan TMT Ltd standalone ok=True/3: revenue=36317, other_income=44708, total_income=81025, total_expenses=51083, finance_costs=3522, depreciation=1510, pbt=29942, tax=750, pat=29192, eps=0.04
+03 11:13:14 pdf pdf history mismatch Rhetan TMT Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 4062.6000000000004 pat 3158.3 | bse rev 40.63 pat 31.58 (Rs mn); q-4: pdf rev 4757.7 pat 2873.4 | bse rev 47.58 pat 28.
+03 11:13:14 pdf pdf current col Raja Bahadur International Ltd consolidated ok=True/3: revenue=798.6, other_income=69.34, total_income=867.94, total_expenses=814.98, finance_costs=353.77, depreciation=59.24, pbt=52.96, tax=13.23, pat=39.73, eps=1
