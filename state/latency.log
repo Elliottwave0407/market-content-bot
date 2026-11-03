@@ -1431,3 +1431,22 @@
 03 07:34:09 seen 544560 Sodhani Capital Ltd cat=Board Meeting early=True bse_time=13:03:23 dissem=13:03:23
 03 07:34:09 seen 505690 Brady & Morris Engineering C cat=Board Meeting early=True bse_time=13:03:59 dissem=13:03:59
 03 07:35:18 seen 543929 HMA Agro Industries Ltd cat=Board Meeting early=True bse_time=13:04:10 dissem=13:04:10
+03 07:37:22 pdf nim reader Bajaj Finserv Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+03 07:37:22 pdf pdf read failed Bajaj Finserv Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible inve
+03 07:37:22 pdf nim reader Brady & Morris Engineering Company Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf nim reader ZF Steering Gear India Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf pdf read failed ZF Steering Gear India Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:37:22 pdf nim reader Link Pharma Chem Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+03 07:37:22 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible 
+03 07:37:22 pdf nim reader Surana Telecom and Power Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:37:22 pdf nim reader HMA Agro Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf pdf read failed HMA Agro Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:37:22 pdf rule reader Rajapalayam Mills Ltd-$: rule: no results table page
+03 07:37:22 pdf nim reader Rajapalayam Mills Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf pdf read failed Rajapalayam Mills Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:37:22 pdf rule reader Machino Plastics Ltd-$: rule: stan: missing ['pat'] n=5
+03 07:37:22 pdf nim reader Machino Plastics Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:37:22 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:37:22 pdf pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] are not a quarterly layout: not used Brady & Morris Engineering Company Ltd
+03 07:38:38 seen 544002 Vivaa Tradecom Ltd cat=Board Meeting early=True bse_time=13:07:22 dissem=13:07:22
