@@ -1714,3 +1714,27 @@
 03 11:28:53 pdf pdf read failed Shukra Bullions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible in
 03 11:28:53 pdf nim reader Tirth Plastic Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
 03 11:28:53 pdf pdf read failed Tirth Plastic Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible inve
+03 11:29:38 seen 537669 Laxmipati Engineering Works  cat=Result early=False bse_time=16:58:18 dissem=16:58:18
+03 11:30:30 wait 537669 Laxmipati Engineering Works : numbers not yet on BSE
+03 11:30:37 pdf nim reader Shukra Bullions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: 
+03 11:30:37 pdf pdf read failed Shukra Bullions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible in
+03 11:30:37 pdf pdf is a HALF-YEARLY filing (column dates ['30/09/2026', '31/03/2026', '30/09/2025']): not read as quarters, queued for the half-yearly route Laxmipati Engineering Works Ltd
+03 11:30:37 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=None, depreciation=None, pbt=369.41, tax=None, pat=369.41, eps
+03 11:30:37 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 11:30:38 seen 505703 Satani Bearings Ltd cat=Board Meeting early=True bse_time=16:59:30 dissem=16:59:30
+03 11:31:01 ready 539141|Sep-26|consolidated kind=photo waited_min=0.0 tries=6 pdf_log=pdf current col UFO Moviez India Ltd consolidated ok=False/3: revenue=12940, other_income=51, total_income=12991, total_expenses=10858, finance_costs=312, depre
+03 11:31:14 pdf rule reader AG Ventures Ltd-$: rule: no results table page
+03 11:31:14 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 11:31:14 pdf rule reader UFO Moviez India Ltd: rule: header has no quarter columns
+03 11:31:14 pdf rule reader Elegant Floriculture & Agrotech India Ltd: rule: no results table page
+03 11:31:14 pdf rule reader Voltaire Leasing & Finance Ltd : rule: no results table page
+03 11:31:14 pdf rule reader Cosmic Energy & Motors Ltd: rule: stan: no revenue row
+03 11:31:14 pdf rule reader Satani Bearings Ltd: rule: no results table page
+03 11:31:14 pdf strong model retry did not help: None
+03 11:31:14 pdf pdf current col Satani Bearings Ltd standalone ok=True/2: revenue=2549.46, other_income=None, total_income=2549.46, total_expenses=2528.16, finance_costs=0.0, depreciation=None, pbt=21.3, tax=2.99, pat=18.31, eps=0.09
+03 11:31:14 pdf pdf incomplete Satani Bearings Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+03 11:31:14 pdf pdf current col UFO Moviez India Ltd consolidated ok=False/3: revenue=12940, other_income=51, total_income=12991, total_expenses=10858, finance_costs=312, depreciation=1133, pbt=959, tax=318, pat=641, eps=1.65
+03 11:31:14 pdf pdf margin q-1 differs from BSE history by 12.4 pts: margin withheld UFO Moviez India Ltd consolidated
+03 11:31:14 pdf pdf margin q-4 differs from BSE history by 12.2 pts: margin withheld UFO Moviez India Ltd consolidated
+03 11:31:14 pdf pdf current col Pressure Sensitive Systems India Ltd standalone ok=True/1: revenue=344.75, other_income=None, total_income=344.75, total_expenses=-24.66, finance_costs=0, depreciation=0, pbt=369.41, tax=None, pat=369.41, eps=2.49
+03 11:31:14 pdf pdf incomplete Pressure Sensitive Systems India Ltd standalone: missing ['ebitda'] - not posting from PDF
