@@ -1,0 +1,31 @@
+name: nse-backup-dry
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "0 = all stubs"
+        default: "0"
+permissions:
+  contents: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Dry run (nothing is posted)
+        env:
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: python scripts/nse_backup_dry.py
+      - name: Save result
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/stub_dry 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "NSE backup dry run"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
