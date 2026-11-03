@@ -1,0 +1,41 @@
+name: stub-fill
+on:
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "1 = post to Telegram, 0 = dry run"
+        default: "0"
+      limit:
+        description: "max posts (0 = all)"
+        default: "0"
+permissions:
+  contents: write
+concurrency:
+  group: stub-fill
+  cancel-in-progress: false
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Replace stub cards with full cards (NSE numbers)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
+          FILL_SEND: ${{ github.event.inputs.send }}
+          FILL_LIMIT: ${{ github.event.inputs.limit }}
+        run: python -u scripts/stub_fill.py
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add state/stub_fill.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "stub-fill state"
+          for i in 1 2 3 4 5; do git pull --rebase -q origin main && git push -q origin main && break; sleep 5; done
