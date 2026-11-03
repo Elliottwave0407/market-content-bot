@@ -1193,3 +1193,13 @@
 03 07:13:13 pdf pdf column dates ['30th September 2026', '30th September 2025', '30th September 2026'] are not a quarterly layout: not used EL CID Investments Ltd
 03 07:13:13 pdf nim reader Next Mediaworks Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
 03 07:13:13 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:13:15 seen 505585 Kovalam Investment & Trading cat=Board Meeting early=True bse_time=12:43:01 dissem=12:43:01
+03 07:13:17 pdf rule reader Luxury Time Ltd: rule: header has no quarter columns
+03 07:13:17 pdf nim reader Luxury Time Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:13:17 pdf pdf read failed Luxury Time Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:13:17 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:13:17 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:13:17 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:13:17 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 07:13:17 pdf nim reader Kovalam Investment & Trading Company Ltd : nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:13:17 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim: cooling down
