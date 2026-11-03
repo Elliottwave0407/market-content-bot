@@ -24,8 +24,10 @@ def sme_ok(d, i):
     ti, ex, pbt, pat = (pc.val(d, x, i) for x in ("total_income", "total_expenses", "pbt", "pat"))
     if None in (ti, ex, pbt, pat): return False
     exc = pc.val(d, "exceptional_items", i) or 0          # exceptional items sit between operating profit and PBT
-    if abs((ti - ex + exc) - pbt) > max(1.5, 0.002 * max(abs(ti), abs(ex))): return False
-    if pbt > 0 and not (-0.3 * pbt <= pat <= 1.1 * pbt): return False
+    tol = max(1.5, 0.002 * max(abs(ti), abs(ex)))
+    # the sign of an exceptional item is often printed ambiguously (brackets): accept either sign, but only if the statement then adds up exactly
+    if min(abs((ti - ex + exc) - pbt), abs((ti - ex - exc) - pbt)) > tol: return False
+    if pbt > 0 and not (-0.3 * pbt <= pat <= 1.6 * pbt): return False      # PAT may exceed PBT on a deferred-tax credit
     if pbt <= 0 and pat > 0.5 * abs(pbt) + 1.5: return False
     return True
 
@@ -76,13 +78,15 @@ def read_half_card(content, key, name=""):
         if not isinstance(d, dict) or pc.val(d, "revenue", 0) is None or pc.val(d, "pat", 0) is None: continue
         oks = [sme_ok(d, i) for i in range(3)]
         p(" ", name, basis, "arithmetic by column (current, previous, year-ago):", oks)
-        if not all(oks):
-            why = f"{basis} figures failed arithmetic checks"; continue      # a basis that fails is never shown; the other basis (if it passes every check) is used instead
-        cur, prev, yago = (pc.to_m(d, i, k) for i in range(3))
+        if not oks[0]:
+            why = f"{basis} current half-year figures failed arithmetic checks"; continue      # the current column must pass; a basis that fails is never shown
+        empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
+        cur, prev, yago = (pc.to_m(d, i, k) if oks[i] else dict(empty) for i in range(3))   # a comparison column that fails its own checks is left blank, never shown wrong
+        if not (oks[1] or oks[2]):
+            why = f"{basis} both comparison half-years failed arithmetic checks"; continue
         if cur["revenue"] and prev["revenue"] and cur["revenue"] > 0 and prev["revenue"] > 0 and (cur["revenue"] / prev["revenue"] > 50 or prev["revenue"] / cur["revenue"] > 50):
             why = f"{basis} figures inconsistent with the previous half-year"; continue
-        empty = {"revenue": None, "ebitda": None, "pbt": None, "pat": None, "eps": None, "bank": False}
-        if cur.get("ebitda") is None or prev.get("ebitda") is None or yago.get("ebitda") is None:
+        if cur.get("ebitda") is None or (oks[1] and prev.get("ebitda") is None) or (oks[2] and yago.get("ebitda") is None):
             why = f"{basis} operating profit not derivable (finance cost or expenses missing)"; continue
         qs = [{"q": rf.qlabel(q), "m": cur}, {"q": rf.qlabel(q - 2), "m": prev}, {"q": " ", "m": empty}, {"q": " ", "m": empty}, {"q": rf.qlabel(q - 4), "m": yago}]
         return {"basis": basis, "q": q, "quarters": qs, "note": "arithmetic-checked"}, "ok"

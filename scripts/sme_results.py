@@ -11,7 +11,7 @@ IST = timezone(timedelta(hours=5, minutes=30))
 ST, CODES_F = "state/sme_results.json", "state/sme_codes.json"
 OUTDIR = os.environ.get("OUT_DIR", "out")
 SEND = os.environ.get("POLL_SEND", os.environ.get("SME_SEND", "0")) == "1"
-DAILY_CAP = int(os.environ.get("SME_DAILY_CAP", "40"))      # PDF reads per day (free Gemini quota is shared with the main route)
+DAILY_CAP = int(os.environ.get("SME_DAILY_CAP", "60"))      # PDF reads per day (free Gemini quota is shared with the main route)
 LIVE = os.environ.get("SME_LIVE", "0") == "1"      # the poll loop only runs this route when SME_LIVE=1 is set in results-poll.yml (off until dry runs are approved)
 ONLY = [x.strip() for x in os.environ.get("SME_ONLY", "").split(",") if x.strip()]      # manual run: only these BSE scrip codes (latest result filing)
 _S = {"last_tick": 0.0, "scan_at": 0.0, "cands": []}
@@ -108,7 +108,12 @@ def process(bse, r, st, final=False):
         if why.startswith("not a half-yearly") or why.startswith("half-year end month"):
             p(f"  {name}: {why} - left to the quarterly route"); return "done"
         p(f"  {name}: not postable - {why}")
+        try: st.setdefault("why", {})[nid] = {"name": name, "why": why[:120], "t": int(time.time())}; st["why"] = dict(list(st["why"].items())[-300:])
+        except Exception: pass
         if r.get("_EARLY"): return "done"      # the 'Result' row follows and gets its own read
+        if "HTTP 503" in why or "HTTP 429" in why or "quota" in why.lower() or "timed out" in why.lower():
+            TRY[nid] = (max(TRY[nid][0] - 1, 0), time.time())      # a temporary error does not use up an attempt
+            return "wait"
         return "wait" if TRY[nid][0] < 3 else "done"
     ql = rf.qlabel(res["q"]); key = f"SME|{code}|{ql}|{res['basis']}"; bkey = f"{code}|{ql}|{res['basis']}"
     if (key in st["posted"] and not ONLY) or (bkey in nse._seen_posted() and not ONLY):      # a manual run (SME_ONLY) deliberately re-sends
