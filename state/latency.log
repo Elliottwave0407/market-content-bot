@@ -1621,3 +1621,7 @@
 03 12:09:15 ready 541019|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf checks failed Northern Arc Capital Ltd consolidated | pdf has consolidated but it failed checks: not falling back to standalone Northern Arc Capital Ltd | p
 03 12:10:05 ready 524400|Sep-26|standalone kind=photo waited_min=6.8 tries=1 pdf_log=pdf current col Ishita Drugs & Industries Ltd standalone ok=True/3: revenue=303.31, other_income=15.84, total_income=319.15, total_expenses=297.77, finance_cost
 03 12:10:19 ready 543256|Sep-26|standalone kind=photo waited_min=17.9 tries=4 pdf_log=pdf current col Rita Finance and Leasing Ltd standalone ok=True/3: revenue=31.94, other_income=1.52, total_income=33.46, total_expenses=14.2, finance_costs=None
+03 12:10:45 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 12:10:45 pdf pdf read deferred Pressure Sensitive Systems India Ltd: per-pass AI call cap
+03 12:10:45 pdf rule reader Ratnakar Securities Ltd: rule: no results table page
+03 12:10:45 pdf pdf read deferred Ratnakar Securities Ltd: per-pass AI call cap
