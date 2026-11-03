@@ -1516,3 +1516,11 @@
 03 08:03:31 pdf pdf read deferred Kovalam Investment & Trading Company Ltd : per-pass AI call cap
 03 08:03:33 seen 511660 Premium Capital Market & Inv cat=Result early=False bse_time=13:30:25 dissem=13:30:25
 03 08:04:04 ready 532764|Sep-26|na kind=photo waited_min=47.4 tries=8 pdf_log=
+03 08:07:54 wait 511660 Premium Capital Market & Inv: numbers not yet on BSE
+03 08:08:04 pdf nim reader Premium Capital Market & Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 08:08:04 pdf pdf read failed Premium Capital Market & Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 08:08:04 pdf rule reader Minaxi Textiles Ltd: rule: no results table page
+03 08:08:04 pdf nim reader Minaxi Textiles Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 08:08:04 pdf pdf read failed Minaxi Textiles Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 08:08:04 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 08:08:04 pdf pdf read deferred Kovalam Investment & Trading Company Ltd : per-pass AI call cap
