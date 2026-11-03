@@ -1684,3 +1684,18 @@
 03 13:59:14 ready 539911|Sep-26|na kind=photo waited_min=46.8 tries=2 pdf_log=
 03 13:59:20 ready 523489|Jun-26|standalone kind=photo waited_min=23.2 tries=2 pdf_log=pdf current col Chennai Meenakshi Multispeciality Hospital Ltd-$ standalone ok=True/3: revenue=859.02, other_income=11.44, total_income=870.46, total_expenses=8
 03 14:01:14 ready 542682|Sep-26|na kind=photo waited_min=46.8 tries=1 pdf_log=nim reader Harish Textile Engineers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers
+03 14:02:55 ready 530889|Sep-26|standalone kind=photo waited_min=28.5 tries=1 pdf_log=nim reader Audroc Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col Audroc Ltd standalone ok=True/3: revenue=328.15, other_income=0.0, total_in
+03 14:03:22 pdf rule reader Jagjanani Textiles Ltd: rule: no results table page
+03 14:03:22 pdf pdf read deferred Jagjanani Textiles Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Sanghvi Brands Ltd: rule: header has no quarter columns
+03 14:03:22 pdf pdf read deferred Sanghvi Brands Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Gala Global Products Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 978.98] total_expenses=[260.54, 48.58, 1005.39] pbt=[-260.54, -48.58, -26.42] tax=[0.0, 0.0, 0.0] pat=[-260.41, -49.09, -26.28] 
+03 14:03:22 pdf pdf read deferred Gala Global Products Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Kanungo Financiers Ltd: rule: stan: no revenue row
+03 14:03:22 pdf pdf read deferred Kanungo Financiers Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Rushabh Precision Bearings Ltd: rule: cons: no revenue row; stan: no revenue row
+03 14:03:22 pdf pdf read deferred Rushabh Precision Bearings Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Starlit Power Systems Ltd: rule: no results table page
+03 14:03:22 pdf pdf read deferred Starlit Power Systems Ltd: per-pass AI call cap
+03 14:03:22 pdf rule reader Charms Industries Ltd: rule: no results table page
+03 14:03:22 pdf pdf read deferred Charms Industries Ltd: per-pass AI call cap
