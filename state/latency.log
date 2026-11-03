@@ -1038,3 +1038,25 @@
 03 06:29:36 pdf nim reader EL CID Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
 03 06:29:36 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
 03 06:31:04 seen 523248 Machino Plastics Ltd-$ cat=Result early=False bse_time=12:00:09 dissem=12:00:09
+03 06:31:27 wait 523248 Machino Plastics Ltd-$: numbers not yet on BSE
+03 06:31:31 pdf nim reader Machino Plastics Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (gemin
+03 06:31:31 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possibl
+03 06:31:37 pdf nim reader EL CID Investments Ltd: ok (gemini: gemini skipped (quota/backoff))
+03 06:31:58 pdf pdf column dates ['30th September 2026', '30th September 2025', '30th September 2026'] are not a quarterly layout: not used EL CID Investments Ltd
+03 06:32:59 pdf nim reader Machino Plastics Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (gemin
+03 06:32:59 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possibl
+03 06:33:42 seen 544081 Jyoti CNC Automation Ltd cat=Result early=False bse_time=12:02:41 dissem=12:02:41
+03 06:33:45 wait 544081 Jyoti CNC Automation Ltd: numbers not yet on BSE
+03 06:33:55 pdf nim reader Machino Plastics Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 06:33:55 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 06:33:59 pdf nim reader EL CID Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 06:33:59 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 06:33:59 pdf rule reader Machino Plastics Ltd-$: rule: stan: missing ['pat'] n=5
+03 06:33:59 pdf nim reader Machino Plastics Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:33:59 pdf pdf read failed Machino Plastics Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 06:34:02 pdf rule reader EL CID Investments Ltd: rule: no results table page
+03 06:34:02 pdf nim reader EL CID Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:34:02 pdf pdf read failed EL CID Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 06:34:06 pdf rule reader Jyoti CNC Automation Ltd: rule: stan: missing ['pat'] n=6
+03 06:34:06 pdf nim reader Jyoti CNC Automation Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 06:34:06 pdf pdf read failed Jyoti CNC Automation Ltd: gemini skipped (quota/backoff); nim: cooling down
