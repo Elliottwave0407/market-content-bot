@@ -1315,3 +1315,52 @@
 03 07:21:54 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim: cooling down
 03 07:22:09 seen 532416 Next Mediaworks Ltd cat=Result early=False bse_time=12:51:35 dissem=12:51:35
 03 07:22:31 wait 532416 Next Mediaworks Ltd: numbers not yet on BSE
+03 07:24:58 pdf nim reader Link Pharma Chem Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+03 07:24:58 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible 
+03 07:24:58 pdf rule reader Surana Telecom and Power Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:25:13 pdf rule reader Bajaj Finserv Ltd: rule: consolidated table does not reconcile [crore] pbt=[8607.58, 8932.19, 6825.13] tax=[2655.57, 2635.52, 2078.66] pat=[5952.01, 6296.67, 4746.47] depreciation=[422.71, 379.68, 327.19] finance_costs
+03 07:25:13 pdf nim reader Bajaj Finserv Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:13 pdf pdf read failed Bajaj Finserv Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:13 pdf rule reader Link Pharma Chem Ltd: rule: no results table page
+03 07:25:13 pdf nim reader Link Pharma Chem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:13 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:16 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:25:16 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:16 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:16 pdf rule reader Minaxi Textiles Ltd: rule: no results table page
+03 07:25:16 pdf nim reader Minaxi Textiles Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:16 pdf pdf read failed Minaxi Textiles Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:16 pdf rule reader GeeCee Ventures Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:25:16 pdf nim reader GeeCee Ventures Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:16 pdf pdf read failed GeeCee Ventures Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:22 pdf nim reader Kovalam Investment & Trading Company Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejec
+03 07:25:22 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the fi
+03 07:25:31 pdf nim reader Kovalam Investment & Trading Company Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:25:31 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:25:33 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:25:33 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:33 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:33 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 07:25:33 pdf nim reader Kovalam Investment & Trading Company Ltd : nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:33 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim: cooling down
+03 07:25:45 pdf rule reader Bajaj Finserv Ltd: rule: consolidated table does not reconcile [crore] pbt=[8607.58, 8932.19, 6825.13] tax=[2655.57, 2635.52, 2078.66] pat=[5952.01, 6296.67, 4746.47] depreciation=[422.71, 379.68, 327.19] finance_costs
+03 07:25:45 pdf nim reader Bajaj Finserv Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:45 pdf pdf read failed Bajaj Finserv Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:45 pdf rule reader Link Pharma Chem Ltd: rule: no results table page
+03 07:25:45 pdf nim reader Link Pharma Chem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:45 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:45 pdf nim reader Surana Telecom and Power Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:25:45 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:25:46 pdf nim reader GeeCee Ventures Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:25:46 pdf pdf read failed GeeCee Ventures Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:25:46 pdf rule reader Minaxi Textiles Ltd: rule: no results table page
+03 07:25:46 pdf nim reader Minaxi Textiles Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:46 pdf pdf read failed Minaxi Textiles Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:46 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:25:46 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:46 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:50 pdf rule reader GeeCee Ventures Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:25:50 pdf nim reader GeeCee Ventures Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:25:50 pdf pdf read failed GeeCee Ventures Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:25:55 seen 532503 Rajapalayam Mills Ltd-$ cat=Result early=False bse_time=12:55:36 dissem=12:55:36
+03 07:26:06 wait 532503 Rajapalayam Mills Ltd-$: numbers not yet on BSE
