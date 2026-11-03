@@ -1876,3 +1876,12 @@
 03 10:00:27 wait 544681 INDO SMC Ltd: numbers not yet on BSE
 03 10:01:13 seen 539407 Generic Engineering Construc cat=Result early=False bse_time=15:31:09 dissem=15:31:09
 03 10:03:30 seen 544281 A B Infrabuild Ltd cat=Board Meeting early=True bse_time=15:31:15 dissem=15:31:15
+03 10:04:35 pdf rule reader Arihant Superstructures Ltd: rule: no results table page
+03 10:04:35 pdf pdf current col A B Infrabuild Ltd standalone ok=True/3: revenue=7422.92, other_income=141.02, total_income=7563.94, total_expenses=6894.6, finance_costs=436.99, depreciation=149.52, pbt=669.28, tax=170.19, pat=499.12, eps=0.08
+03 10:05:51 seen 538565 Vistar Amar Ltd cat=Result early=False bse_time=15:35:41 dissem=15:35:41
+03 10:06:14 wait 538565 Vistar Amar Ltd: numbers not yet on BSE
+03 10:06:17 pdf rule reader Vistar Amar Ltd: rule: stan: does not reconcile [lakh] total_income=[2712.35, 6336.69, 1133.91] total_expenses=[2589.38, 5804.05, 1158.96] pbt=[122.97, 532.63, -25.05] tax=[0.0, 0.0, 0.0] pat=[83.23, 405.86, -39.86] fi
+03 10:06:17 pdf nim reader Arihant Superstructures Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+03 10:06:17 pdf pdf read failed Arihant Superstructures Ltd: parse JSONDecodeError('Expecting value: line 97 column 7 (char 1332)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 n
+03 10:06:44 ready 538565|Sep-26|standalone kind=photo waited_min=0.9 tries=1 pdf_log=pdf current col Vistar Amar Ltd standalone ok=True/2: revenue=2712.35, other_income=None, total_income=2712.35, total_expenses=2589.38, finance_costs=0.76, depr
+03 10:06:50 pdf pdf current col Vistar Amar Ltd standalone ok=True/2: revenue=2712.35, other_income=None, total_income=2712.35, total_expenses=2589.38, finance_costs=0.76, depreciation=69.37, pbt=122.97, tax=39.73, pat=83.23, eps=1.44
