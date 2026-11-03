@@ -1174,3 +1174,7 @@
 03 07:08:08 seen 517530 Surana Telecom and Power Ltd cat=Board Meeting early=True bse_time=12:38:00 dissem=12:38:00
 03 07:08:55 ready 531335|Sep-26|consolidated kind=photo waited_min=3.0 tries=3 pdf_log=
 03 07:09:10 pdf pdf current col Arfin India Ltd consolidated ok=True/3: revenue=28317.99, other_income=10.24, total_income=28328.24, total_expenses=27610.53, finance_costs=507.04, depreciation=121.68, pbt=717.7, tax=120.77, pat=596.93, eps=0.35
+03 07:10:04 pdf nim reader Surana Telecom and Power Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:10:04 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:11:00 pdf nim reader Luxury Time Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gemi
+03 07:11:00 pdf pdf read failed Luxury Time Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invent
