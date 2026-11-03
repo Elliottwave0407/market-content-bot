@@ -93,20 +93,22 @@ QUOTA_OV2 = {}
 QUOTA_OV = {}      # quota memory for the overflow key (kept apart from the main key's)
 
 def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
-    """Main key first. ONLY if every model on it answered 429 (quota) and an overflow key is configured (separate Google project),
-    the same read is tried once on that key. Without GEMINI_API_KEY_OVERFLOW this behaves exactly as before."""
+    """Main key first. If every model on it answered 429 (quota), the same read is tried once on the dedicated results key (GEMINI_API_KEY_RESULTS, own Google project),
+    and only if that is out too, once on the overflow key (GEMINI_API_KEY_OVERFLOW = the concall judge's project, last resort so the judge keeps its quota).
+    Unset keys are skipped; without either this behaves exactly as before."""
     out, err = _read_core(key, model, pdf_bytes, tries, timeout, prompt)
+    if out is not None or not (err and "429" in err):
+        return out, err
+    chain = []
+    rk = os.environ.get("GEMINI_API_KEY_RESULTS", "").strip()
     ov = os.environ.get("GEMINI_API_KEY_OVERFLOW", "").strip()
-    if out is None and ov and ov != key and err and "429" in err:
-        out2, err2 = _read_core(ov, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV, label="concall-key")
-        if out2 is not None:
-            return out2, None
-        err = (err + " | overflow: " + str(err2))[:300]
-        ov2 = os.environ.get("GEMINI_API_KEY_RESULTS", "").strip()      # dedicated project for result scans (third key); unset = no effect
-        if ov2 and ov2 not in (key, ov) and "429" in str(err2):
-            out3, err3 = _read_core(ov2, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV2, label="results-key")
-            if out3 is not None:
-                return out3, None
-            err = (err + " | results key: " + str(err3))[:360]
-        return None, err
-    return out, err
+    if rk and rk != key: chain.append((rk, QUOTA_OV2, "results-key"))
+    if ov and ov not in (key, rk): chain.append((ov, QUOTA_OV, "concall-key"))
+    for k2, qd2, lab in chain:
+        o2, e2 = _read_core(k2, model, pdf_bytes, 1, timeout, prompt, qd=qd2, label=lab)
+        if o2 is not None:
+            return o2, None
+        err = (err + f" | {lab}: " + str(e2))[:360]
+        if "429" not in str(e2):
+            break
+    return None, err
