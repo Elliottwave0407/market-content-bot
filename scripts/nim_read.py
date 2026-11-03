@@ -1,6 +1,6 @@
 """Backup reader for result PDFs when Gemini is out of quota / busy: text + tables are pulled from the (trimmed) PDF locally and a free NVIDIA NIM model returns the same JSON as the Gemini reader.
 Every number it returns still goes through the same arithmetic, column-date and BSE-history checks as before. Scanned PDFs (no text layer) cannot be read here: return (None, reason). Key: env NVIDIA_API_KEY (never printed)."""
-import os, re, json, time, threading
+import os, re, json, time, threading, heapq, itertools
 import requests
 import gemini_read as gr
 
@@ -9,6 +9,20 @@ MODELS = [m for m in os.environ.get("NIM_RESULT_MODELS", "deepseek-ai/deepseek-v
 DOWN = {"until": 0.0}
 _LOCK = threading.Lock()
 _LAST = {"t": 0.0}
+_Q = []; _CNT = itertools.count(); _CV = threading.Condition()
+def _gate(prio):
+    """One call at a time, GAP seconds apart; when several reads wait, the one with the highest priority (market cap) goes first, so a big company's result is not stuck behind micro-caps."""
+    me = (-float(prio or 0), next(_CNT))
+    with _CV:
+        heapq.heappush(_Q, me)
+        while True:
+            if _Q[0] == me:
+                w = _LAST["t"] + GAP - time.time()
+                if w <= 0: break
+                _CV.wait(w)
+            else:
+                _CV.wait(1.0)
+        heapq.heappop(_Q); _LAST["t"] = time.time(); _CV.notify_all()
 GAP = float(os.environ.get("NIM_GAP", "2.5"))      # seconds between calls: parallel bursts made the free endpoint answer 429 and pushed filings onto the weaker model
 
 def key():
@@ -65,7 +79,7 @@ def cur_unsupported(j, text, basis):
             bad += 1
     return bad
 
-def read_pdf(pdf_bytes, prompt=None, timeout=75):
+def read_pdf(pdf_bytes, prompt=None, timeout=75, prio=0):
     k = key()
     if not k:
         return None, "nim: no key"
@@ -83,10 +97,7 @@ def read_pdf(pdf_bytes, prompt=None, timeout=75):
         extra = {"thinking": False} if "deepseek" in m else {"enable_thinking": False}
         r = None
         for att in range(3):
-            with _LOCK:
-                w = _LAST["t"] + GAP - time.time()
-                if w > 0: time.sleep(w)
-                _LAST["t"] = time.time()
+            _gate(prio)
             try:
                 r = requests.post(URL, headers={"Authorization": "Bearer " + k}, timeout=timeout,
                                   json={"model": m, "messages": [{"role": "user", "content": msg}], "max_tokens": 4000, "temperature": 0, "chat_template_kwargs": extra})
