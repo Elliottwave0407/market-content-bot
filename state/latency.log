@@ -1518,3 +1518,20 @@
 03 13:22:34 ready 504959|unverified|0898de5a-303f-4fdf-9002-4c963424fc64 kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Stovec Industries Ltd standalone ok=True/3: revenue=457.66, other_income=5.75, total_income=463.41, total_expenses=450.09, finance_costs=None
 03 13:27:32 ready 539121|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf q-4 revenue typo: pdf 761.4580000000001 -> BSE history 751.46 (profit matched) Palco Metals Ltd | pdf history cells corrected from BSE for q-[4]: Palco Meta
 03 13:27:41 ready 544688|Sep-26|na kind=photo waited_min=49.7 tries=99 pdf_log=
+03 13:28:12 wait 540782 Sanghvi Brands Ltd: numbers not yet on BSE
+03 13:28:18 wait 539228 Gala Global Products Ltd: numbers not yet on BSE
+03 13:28:24 wait 540515 Kanungo Financiers Ltd: numbers not yet on BSE
+03 13:28:36 pdf rule reader Mahaveer Infoway Ltd: rule: no results table page
+03 13:28:36 pdf pdf read deferred Mahaveer Infoway Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader Mahaveer Infoway Ltd: rule: no results table page
+03 13:28:36 pdf pdf read deferred Mahaveer Infoway Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader Kanungo Financiers Ltd: rule: stan: no revenue row
+03 13:28:36 pdf pdf read deferred Kanungo Financiers Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader Kanungo Financiers Ltd: rule: stan: no revenue row
+03 13:28:36 pdf pdf read deferred Kanungo Financiers Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader BMB Music & Magnetics Ltd: rule: no results table page
+03 13:28:36 pdf pdf read deferred BMB Music & Magnetics Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader Southern Gas Ltd: rule: unit not found
+03 13:28:36 pdf pdf read deferred Southern Gas Ltd: per-pass AI call cap
+03 13:28:36 pdf rule reader G G Engineering Ltd: rule: stan: does not reconcile [lakh] total_income=[2574.87, 2289.14, 4371.08] total_expenses=[2559.37, 1625.19, 4295.84] pbt=[15.5, 663.96, 75.24] tax=[18.81, 161.51, -43.31] pat=[-16.12, 486.82, 
+03 13:28:36 pdf pdf read deferred G G Engineering Ltd: per-pass AI call cap
