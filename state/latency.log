@@ -1808,3 +1808,25 @@
 03 14:16:12 seen 544436 Vandan Foods Ltd cat=Result early=False bse_time=19:44:19 dissem=19:44:19
 03 14:16:12 seen 500472 SKF India Ltd cat=Result early=False bse_time=19:44:53 dissem=19:44:53
 03 14:16:35 wait 500472 SKF India Ltd: numbers not yet on BSE
+03 14:16:46 wait 544436 Vandan Foods Ltd: numbers not yet on BSE
+03 14:16:55 pdf rule reader Evonile Pharma Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Svarnim Trade Udyog Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Vas Infrastructure Ltd: rule: no results table page
+03 14:16:55 pdf rule reader SKF India Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Lloyds Metals and Energy Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Mihika Industries Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Oceanic Foods Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[3822.55, 3833.57, 4268.72] pbt=[338.81, 296.89, 220.06] pat=[245.77, 221.23, 164.67]
+03 14:16:55 pdf rule reader Vandan Foods Ltd: rule: header has no quarter columns
+03 14:16:55 pdf rule reader Asutosh Enterprise Ltd: rule: no results table page
+03 14:16:55 pdf rule reader Starlit Power Systems Ltd: rule: no results table page
+03 14:16:55 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:16:55 pdf pdf current col Oceanic Foods Ltd consolidated ok=True/3: revenue=4159.12, other_income=2.24, total_income=4161.36, total_expenses=3822.55, finance_costs=104.62, depreciation=48.62, pbt=338.81, tax=93.04, pat=245.77, eps=2.18
+03 14:16:55 pdf pdf is a HALF-YEARLY filing (column dates ['30-September-2026', '31-March-2026', '30-September-2025']): not read as quarters, queued for the half-yearly route Vandan Foods Ltd
+03 14:16:55 pdf pdf current col Mihika Industries Ltd standalone ok=True/3: revenue=518.41, other_income=0.35, total_income=518.77, total_expenses=513.59, finance_costs=None, depreciation=16.46, pbt=5.18, tax=1.35, pat=3.83, eps=0.04
+03 14:16:55 pdf pdf incomplete Mihika Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:16:55 pdf rule reader Charms Industries Ltd: rule: no results table page
+03 14:16:55 pdf pdf read deferred Charms Industries Ltd: per-pass AI call cap
+03 14:16:55 pdf rule reader Rushabh Precision Bearings Ltd: rule: cons: no revenue row; stan: no revenue row
+03 14:16:55 pdf pdf read deferred Rushabh Precision Bearings Ltd: per-pass AI call cap
+03 14:17:00 ready 500472|Sep-26|consolidated kind=photo waited_min=0.7 tries=1 pdf_log=pdf current col SKF India Ltd consolidated ok=True/3: revenue=5958.1, other_income=290.8, total_income=6248.9, total_expenses=5550.9, finance_costs=0.4, depreci
+03 14:17:08 pdf pdf current col SKF India Ltd consolidated ok=True/3: revenue=5958.1, other_income=290.8, total_income=6248.9, total_expenses=5550.9, finance_costs=0.4, depreciation=166.3, pbt=699.1, tax=181.0, pat=518.1, eps=10.5
