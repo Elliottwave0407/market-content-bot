@@ -1906,3 +1906,14 @@
 03 14:30:37 pdf pdf current col Suncity Synthetics Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=10.78, finance_costs=0.0, depreciation=0.2, pbt=4.99, tax=0.0, pat=4.99, eps=0.1
 03 14:30:37 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
 03 14:30:37 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:33:35 pdf pdf checks failed Starlit Power Systems Ltd consolidated
+03 14:33:35 pdf pdf has consolidated but it failed checks: not falling back to standalone Starlit Power Systems Ltd
+03 14:33:36 seen 543350 Vijaya Diagnostic Centre Ltd cat=Board Meeting early=True bse_time=20:02:47 dissem=20:02:47
+03 14:33:59 pdf rule reader Vijaya Diagnostic Centre Ltd: rule: filing mentions consolidated results but that table was not read
+03 14:33:59 pdf rule reader Suncity Synthetics Ltd: rule: stan: does not reconcile [lakh] total_income=[0.0, 8.93, 0.0] total_expenses=[10.78, 12.98, 5.9] pbt=[-10.78, 4.05, -5.9] tax=[0.0, 0.0, 0.0] pat=[4.99, -4.05, 1.64] depreciation=[0.2, 1.2
+03 14:33:59 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+03 14:34:02 pdf pdf current col Suncity Synthetics Ltd standalone ok=False/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=10.78, finance_costs=0.0, depreciation=0.2, pbt=4.99, tax=0.0, pat=4.99, eps=0.1
+03 14:34:02 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Suncity Synthetics Ltd standalone
+03 14:34:02 pdf pdf incomplete Suncity Synthetics Ltd standalone: missing ['ebitda'] - not posting from PDF
+03 14:34:07 ready 543350|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Vijaya Diagnostic Centre Ltd standalone ok=True/3: revenue=24200.2, other_income=544.91, total_income=24745.11, total_expenses=16952.46, finance
+03 14:34:16 pdf pdf current col Vijaya Diagnostic Centre Ltd standalone ok=True/3: revenue=24200.2, other_income=544.91, total_income=24745.11, total_expenses=16952.46, finance_costs=1082.13, depreciation=2398.8, pbt=7792.65, tax=2000.19, pat=579
