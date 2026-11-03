@@ -48,13 +48,14 @@ def _clean(out):
     return out
 
 FALLBACK = [m.strip() for m in os.environ.get("GEMINI_FALLBACK", "gemini-flash-latest,gemini-2.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]
+USAGE = {}      # key label -> {"ok": n, "429": n, "other": n}, this run (logged by pdf_card)
 QUOTA = {"until": {}}      # model -> time until which it is skipped after a quota (429) answer
 
 def _quota_kind(r):
     t = r.text or ""
     return "per-day" if "PerDay" in t else "per-minute" if "PerMinute" in t else "rate"
 
-def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None):
+def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None, label="main"):
     """Free-tier quota is per model, so on a 429 the next model is tried straight away instead of waiting."""
     qd = QUOTA["until"] if qd is None else qd
     body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf_bytes).decode()}}, {"text": prompt or PROMPT}]}],
@@ -66,6 +67,8 @@ def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None
             if qd.get(m, 0) > time.time():
                 last = last or f"HTTP 429 (skipped {m}, quota)"; continue
             r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
+            _u = USAGE.setdefault(label, {"ok": 0, "429": 0, "other": 0})
+            _u["ok" if r.status_code == 200 else "429" if r.status_code == 429 else "other"] += 1
             if r.status_code == 429:
                 kind = _quota_kind(r)
                 qd[m] = time.time() + (3600 if kind == "per-day" else 60)
@@ -95,13 +98,13 @@ def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
     out, err = _read_core(key, model, pdf_bytes, tries, timeout, prompt)
     ov = os.environ.get("GEMINI_API_KEY_OVERFLOW", "").strip()
     if out is None and ov and ov != key and err and "429" in err:
-        out2, err2 = _read_core(ov, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV)
+        out2, err2 = _read_core(ov, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV, label="concall-key")
         if out2 is not None:
             return out2, None
         err = (err + " | overflow: " + str(err2))[:300]
         ov2 = os.environ.get("GEMINI_API_KEY_RESULTS", "").strip()      # dedicated project for result scans (third key); unset = no effect
         if ov2 and ov2 not in (key, ov) and "429" in str(err2):
-            out3, err3 = _read_core(ov2, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV2)
+            out3, err3 = _read_core(ov2, model, pdf_bytes, 1, timeout, prompt, qd=QUOTA_OV2, label="results-key")
             if out3 is not None:
                 return out3, None
             err = (err + " | results key: " + str(err3))[:360]
