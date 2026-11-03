@@ -1842,3 +1842,18 @@
 03 11:47:48 ready 506579|Sep-26|consolidated kind=photo waited_min=41.9 tries=6 pdf_log=
 03 11:48:10 wait 544175 TGIF Agribusiness Ltd: numbers not yet on BSE
 03 11:48:11 ready 543497|Sep-26|na kind=photo waited_min=45.4 tries=99 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route SM Auto Stamping L
+03 11:50:29 pdf strong model retry error ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='gene
+03 11:50:29 pdf pdf current col Step Two Corporation Ltd standalone ok=False/3: revenue=27.59, other_income=-1.3, total_income=26.29, total_expenses=23.55, finance_costs=None, depreciation=0.41, pbt=2.74, tax=-0.93, pat=1.81, eps=0.02
+03 11:50:29 pdf pdf checks failed Step Two Corporation Ltd standalone
+03 11:50:29 pdf rule reader Saffron Industries Ltd: rule: no results table page
+03 11:50:29 pdf pdf read deferred Saffron Industries Ltd: per-pass AI call cap
+03 11:50:29 pdf rule reader Cosmic Energy & Motors Ltd: rule: stan: no revenue row
+03 11:50:29 pdf pdf read deferred Cosmic Energy & Motors Ltd: per-pass AI call cap
+03 11:50:29 pdf rule reader Voltaire Leasing & Finance Ltd : rule: no results table page
+03 11:50:29 pdf pdf read deferred Voltaire Leasing & Finance Ltd : per-pass AI call cap
+03 11:50:29 pdf rule reader Nikki Global Finance Ltd: rule: stan: does not reconcile [lakh] pbt=[13.05, 2181.0, -2.36] pat=[13.05, 2181.0, -2.36]
+03 11:50:29 pdf pdf read deferred Nikki Global Finance Ltd: per-pass AI call cap
+03 11:50:29 pdf rule reader Nikki Global Finance Ltd: rule: stan: does not reconcile [lakh] pbt=[13.05, 2181.0, -2.36] pat=[13.05, 2181.0, -2.36]
+03 11:50:29 pdf pdf read deferred Nikki Global Finance Ltd: per-pass AI call cap
+03 11:50:29 pdf rule reader Pressure Sensitive Systems India Ltd: rule: stan: missing ['pat'] n=4
+03 11:50:29 pdf pdf read deferred Pressure Sensitive Systems India Ltd: per-pass AI call cap
