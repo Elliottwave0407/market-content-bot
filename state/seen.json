@@ -2691,7 +2691,8 @@
 "ae06f4c7-d4ed-4393-a9bd-51e622b9744a",
 "6c64ff0f-f608-42dc-8f3a-87ad413c184c",
 "f2b29008-653e-4950-9003-b93914982c58",
-"6053668c-1210-43f0-85e4-3fa21393b762"
+"6053668c-1210-43f0-85e4-3fa21393b762",
+"52eba94e-c9cd-46a6-bbf7-3a1e180947ac"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4331,7 +4332,8 @@
 "544582|Sep-26|na",
 "517571|Sep-26|consolidated",
 "544688|Sep-26|consolidated",
-"544449|Sep-26|consolidated"
+"544449|Sep-26|consolidated",
+"500043|Sep-26|consolidated"
 ],
 "pending": {
 "44cb21ca-70bf-4064-a771-9f669966a789": {
@@ -4978,6 +4980,44 @@
 },
 "first": 1793708168.209969,
 "last": 1793708311.3765569,
+"alerted": false
+},
+"1b87ef92-5332-4f32-9bc3-29e4be6fd34c": {
+"rec": {
+"NEWSID": "1b87ef92-5332-4f32-9bc3-29e4be6fd34c",
+"SCRIP_CD": 544937,
+"XML_NAME": "ANN_544937_1B87EF92-5332-4F32-9BC3-29E4BE6FD34C",
+"NEWSSUB": "National Stock Exchange of India Ltd - 544937 - Results - Standalone And Consolidated Audited Financial Results For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-03T17:51:10.677",
+"NEWS_DT": "2026-11-03T17:51:10.677",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "68078471-9790-4eae-ad03-880c4b7c7fdd.pdf",
+"MORE": "",
+"HEADLINE": "Results - Standalone and Consolidated Audited Financial results for the quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/national-stock-exchange-of-india-ltd/nse/544937/",
+"SLONGNAME": "National Stock Exchange of India Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 26,
+"News_submission_dt": "2026-11-03T17:51:10",
+"DissemDT": "2026-11-03T17:51:10.677",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 10946738,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793708712.474072,
+"last": 1793708712.474072,
 "alerted": false
 }
 },
@@ -6206,7 +6246,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 531
+"2026-11-03": 541
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -7287,6 +7327,16 @@
 "rev": 373.022,
 "pat": 76.569,
 "t": 1793708689.760594,
+"last": 0
+},
+"500043|Sep-26|consolidated": {
+"code": "500043",
+"name": "Bata India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 8617.82,
+"pat": 181.19,
+"t": 1793708742.7041962,
 "last": 0
 }
 },
@@ -9558,7 +9608,8 @@
 "0f0304a7-e8df-469e-ae2d-fea3cb5ea610": 1,
 "6053668c-1210-43f0-85e4-3fa21393b762": 1,
 "7b331108-6935-410c-9498-d12c3f06ae39": 1,
-"659aba30-a5a0-496b-b5e4-6d4e4044867b": 1
+"659aba30-a5a0-496b-b5e4-6d4e4044867b": 1,
+"52eba94e-c9cd-46a6-bbf7-3a1e180947ac": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10371,13 +10422,18 @@
 "2026-11-03": {
 "main": {
 "ok": 451,
-"429": 10,
+"429": 11,
 "other": 50
 },
 "results-key": {
-"ok": 256,
-"429": 1,
-"other": 38
+"ok": 266,
+"429": 2,
+"other": 39
+},
+"concall-key": {
+"ok": 0,
+"429": 0,
+"other": 4
 }
 }
 }
