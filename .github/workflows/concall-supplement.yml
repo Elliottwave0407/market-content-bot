@@ -1,0 +1,54 @@
+name: concall-supplement
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "Transcripts to read in this run"
+        default: "16"
+      budget_min:
+        description: "Minutes of work in this run"
+        default: "60"
+      workers:
+        description: "Parallel readers"
+        default: "6"
+      dry:
+        description: "1 = only list what would be read next"
+        default: "0"
+      auto:
+        description: "1 = join the engine rotation until the backlog is done (set only after the test is clean)"
+        default: "0"
+concurrency:
+  group: concall-supplement
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  supp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 130
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          MODELS: "nvidia/nemotron-3-ultra-550b-a55b"
+          N: ${{ github.event.inputs.n || '16' }}
+          DRY: ${{ github.event.inputs.dry || '0' }}
+          AUTO: ${{ github.event.inputs.auto || '0' }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '60' }}
+          WORKERS: ${{ github.event.inputs.workers || '6' }}
+        run: python scripts/concall_supplement.py
+      - name: Save
+        if: always()
+        run: bash scripts/safe_push.sh "Concall supplement (promoter, auditor, related party, cash flow, dilution)" store/concall_supp
+      - name: Hand over to the next engine (one NVIDIA engine at a time)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "${{ github.event.inputs.auto || '0' }}" != "1" ] && { echo "test run: no chaining"; exit 0; }
+          bash scripts/next_engine.sh concall-supplement
