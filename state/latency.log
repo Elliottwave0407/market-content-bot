@@ -1203,3 +1203,58 @@
 03 07:13:17 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
 03 07:13:17 pdf nim reader Kovalam Investment & Trading Company Ltd : nim: cooling down (gemini: gemini skipped (quota/backoff))
 03 07:13:17 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim: cooling down
+03 07:14:32 pdf nim reader Arfin India Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:14:32 pdf pdf read failed Arfin India Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:14:32 pdf rule reader GeeCee Ventures Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:14:32 pdf nim reader GeeCee Ventures Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:14:32 pdf pdf read failed GeeCee Ventures Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:14:32 pdf rule reader Surana Telecom and Power Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:14:32 pdf nim reader Surana Telecom and Power Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:14:32 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:15:58 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:15:58 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:15:58 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:16:00 pdf rule reader Luxury Time Ltd: rule: header has no quarter columns
+03 07:16:00 pdf nim reader Luxury Time Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:16:00 pdf pdf read failed Luxury Time Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:16:00 pdf nim reader Kovalam Investment & Trading Company Ltd : nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:16:00 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:16:06 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 07:16:06 pdf nim reader Kovalam Investment & Trading Company Ltd : nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:16:06 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim: cooling down
+03 07:16:09 seen 532764 GeeCee Ventures Ltd cat=Result early=False bse_time=12:45:56 dissem=12:45:56
+03 07:16:09 seen 532503 Rajapalayam Mills Ltd-$ cat=Board Meeting early=True bse_time=12:45:56 dissem=12:45:56
+03 07:16:31 wait 532764 GeeCee Ventures Ltd: numbers not yet on BSE
+03 07:16:33 pdf rule reader Rajapalayam Mills Ltd-$: rule: no results table page
+03 07:16:33 pdf nim reader Rajapalayam Mills Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:16:33 pdf pdf read failed Rajapalayam Mills Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:16:33 pdf nim reader Arfin India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:16:33 pdf pdf read failed Arfin India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:16:40 pdf rule reader Rajapalayam Mills Ltd-$: rule: no results table page
+03 07:16:40 pdf nim reader Rajapalayam Mills Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:16:40 pdf pdf read failed Rajapalayam Mills Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+03 07:16:53 pdf rule reader GeeCee Ventures Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:16:58 pdf nim reader Surana Telecom and Power Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+03 07:16:58 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+03 07:17:02 pdf rule reader Surana Telecom and Power Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:17:02 pdf nim reader Surana Telecom and Power Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:02 pdf pdf read failed Surana Telecom and Power Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:17:04 seen 524748 Link Pharma Chem Ltd cat=Board Meeting early=True bse_time=12:46:27 dissem=12:46:27
+03 07:17:06 pdf rule reader Next Mediaworks Ltd: rule: stan: no revenue row
+03 07:17:06 pdf nim reader Next Mediaworks Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:06 pdf pdf read failed Next Mediaworks Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:17:06 pdf rule reader Luxury Time Ltd: rule: header has no quarter columns
+03 07:17:06 pdf nim reader Luxury Time Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:06 pdf pdf read failed Luxury Time Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:17:06 pdf rule reader GeeCee Ventures Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+03 07:17:06 pdf nim reader GeeCee Ventures Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:06 pdf pdf read failed GeeCee Ventures Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:17:06 pdf rule reader Link Pharma Chem Ltd: rule: no results table page
+03 07:17:06 pdf nim reader Link Pharma Chem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:06 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 07:17:09 pdf rule reader Kovalam Investment & Trading Company Ltd : rule: stan: missing ['pat'] n=7
+03 07:17:09 pdf nim reader Kovalam Investment & Trading Company Ltd : nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:09 pdf pdf read failed Kovalam Investment & Trading Company Ltd : gemini skipped (quota/backoff); nim: cooling down
+03 07:17:11 pdf rule reader Rajapalayam Mills Ltd-$: rule: no results table page
+03 07:17:11 pdf nim reader Rajapalayam Mills Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 07:17:11 pdf pdf read failed Rajapalayam Mills Ltd-$: gemini skipped (quota/backoff); nim: cooling down
