@@ -2469,7 +2469,9 @@
 "957cfd27-e626-4c18-a1ba-cd750512e8a1",
 "8a84da91-c0e2-44ba-a57e-1513f5ed4684",
 "9b72095e-5eb5-41da-b2e4-211f8000ecd3",
-"d824278a-f521-49b5-b84b-515e5fa2e31d"
+"d824278a-f521-49b5-b84b-515e5fa2e31d",
+"87c7fe9f-998a-47a4-adb9-7eb6694a2af0",
+"6f6328c3-a6c8-450e-834c-085299b1b9f8"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3988,7 +3990,8 @@
 "544248|Sep-26|consolidated",
 "500680|Sep-26|standalone",
 "532722|Sep-26|consolidated",
-"526650|Sep-26|standalone"
+"526650|Sep-26|standalone",
+"524735|Sep-26|consolidated"
 ],
 "pending": {
 "40999e47-50bb-4aff-a034-38e5d91fc19e": {
@@ -4064,7 +4067,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793694781.3722005,
-"last": 1793696021.4635434,
+"last": 1793696144.9816217,
 "alerted": true
 },
 "5a356393-9704-4321-98fa-8d79f5294ba4": {
@@ -4140,45 +4143,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793695544.631329,
-"last": 1793696104.757521,
-"alerted": false
-},
-"6f6328c3-a6c8-450e-834c-085299b1b9f8": {
-"rec": {
-"NEWSID": "6f6328c3-a6c8-450e-834c-085299b1b9f8",
-"SCRIP_CD": 524735,
-"XML_NAME": "ANN_524735_6F6328C3-A6C8-450E-834C-085299B1B9F8",
-"NEWSSUB": "Hikal Ltd - 524735 - Results- Financial Results For September 30, 2026",
-"DT_TM": "2026-11-03T14:24:11.993",
-"NEWS_DT": "2026-11-03T14:24:11.993",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "f699e17b-5189-4d12-9838-63b54a915252.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/hikal-ltd/hikal/524735/",
-"SLONGNAME": "Hikal Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 10,
-"News_submission_dt": "2026-11-03T14:24:11",
-"DissemDT": "2026-11-03T14:24:11.993",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 14503750,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793696104.757521,
-"last": 1793696104.757521,
+"last": 1793696144.9816217,
 "alerted": false
 },
 "bba4e098-523f-4f9c-b11b-cd79f246588c": {
@@ -4216,15 +4181,11 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793696104.757521,
-"last": 1793696104.757521,
+"last": 1793696144.9816217,
 "alerted": false
 }
 },
 "lag": [
-[
-"Adjia Technologies Ltd",
-46
-],
 [
 "Sadhana Nitro Chem Ltd",
 47
@@ -5420,6 +5381,10 @@
 [
 "Vivaa Tradecom Ltd",
 46
+],
+[
+"Hikal Ltd",
+1
 ]
 ],
 "gem_use": {
@@ -5445,7 +5410,7 @@
 "2026-10-31": 357,
 "2026-11-01": 73,
 "2026-11-02": 450,
-"2026-11-03": 107
+"2026-11-03": 111
 },
 "pdfposted": {
 "500262|Sep-26|consolidated": {
@@ -5536,7 +5501,7 @@
 "rev": 1654.9720000000002,
 "pat": 45.516000000000005,
 "t": 1793615903.7082934,
-"last": 1793695871.7985537
+"last": 1793696190.2160752
 },
 "533286|Sep-26|consolidated": {
 "code": "533286",
@@ -5546,7 +5511,7 @@
 "rev": 3691.328,
 "pat": 617.7460000000001,
 "t": 1793616813.15793,
-"last": 1793695871.7985537
+"last": 1793696190.2160752
 },
 "523489|Sep-26|standalone": {
 "code": "523489",
@@ -5556,7 +5521,7 @@
 "rev": 86.397,
 "pat": -2.9450000000000003,
 "t": 1793617187.2938569,
-"last": 1793695871.7985537
+"last": 1793696190.2160752
 },
 "523398|Sep-26|consolidated": {
 "code": "523398",
@@ -5566,7 +5531,7 @@
 "rev": 4711.2,
 "pat": -416.6,
 "t": 1793617869.7445235,
-"last": 1793695871.7985537
+"last": 1793696190.2160752
 },
 "544898|Sep-26|consolidated": {
 "code": "544898",
@@ -5926,6 +5891,16 @@
 "rev": 801.836,
 "pat": 385.91100000000006,
 "t": 1793696125.7684038,
+"last": 0
+},
+"524735|Sep-26|consolidated": {
+"code": "524735",
+"name": "Hikal Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4342.0,
+"pat": -61.0,
+"t": 1793696235.8249438,
 "last": 0
 }
 },
@@ -7662,7 +7637,8 @@
 "649c9891-642f-429f-b5ee-3ee70bf376fc": 1,
 "7895a871-0d52-41ab-88fa-8b1a961d43d4": 1,
 "8a84da91-c0e2-44ba-a57e-1513f5ed4684": 1,
-"d824278a-f521-49b5-b84b-515e5fa2e31d": 1
+"d824278a-f521-49b5-b84b-515e5fa2e31d": 1,
+"bba4e098-523f-4f9c-b11b-cd79f246588c": 1
 },
 "cons_expected": {
 "96daf454-83a6-418f-9dd3-532db54a06ea": 1,
@@ -8224,7 +8200,8 @@
 "87c7fe9f-998a-47a4-adb9-7eb6694a2af0": 1,
 "625eae8e-c3b5-46d4-beda-978850894fa3": 1,
 "957cfd27-e626-4c18-a1ba-cd750512e8a1": 1,
-"9b72095e-5eb5-41da-b2e4-211f8000ecd3": 1
+"9b72095e-5eb5-41da-b2e4-211f8000ecd3": 1,
+"6f6328c3-a6c8-450e-834c-085299b1b9f8": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -8924,7 +8901,7 @@
 "gem_key_use": {
 "2026-11-03": {
 "main": {
-"ok": 164,
+"ok": 168,
 "429": 2,
 "other": 27
 },
