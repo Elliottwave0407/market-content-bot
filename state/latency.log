@@ -1627,3 +1627,5 @@
 03 17:46:36 pdf pdf history mismatch HEG Advanced Materials Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9767.7 pat 601.9 | bse rev 6807.9 pat 1223.4 (Rs mn); q-4: pdf rev 8727.8 pat 691.8000000000001 | bse rev
 03 17:46:36 pdf pdf has consolidated but it failed checks: not falling back to standalone HEG Advanced Materials Ltd
 03 17:46:36 pdf rule-read numbers rejected by later checks, AI reader will retry: HEG Advanced Materials Ltd
+03 17:47:12 pdf nim reader HEG Advanced Materials Ltd: nim deepseek-v4.1-flash: 13 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 36 numbers not found in the filing text (possi
+03 17:47:12 pdf pdf read failed HEG Advanced Materials Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); ni
