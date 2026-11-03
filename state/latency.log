@@ -1552,3 +1552,18 @@
 03 08:16:41 ready 505163|Sep-26|na kind=photo waited_min=46.7 tries=6 pdf_log=
 03 08:16:57 ready 505690|Sep-26|standalone kind=photo waited_min=34.6 tries=4 pdf_log=
 03 08:17:16 ready 541778|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Deep Polymers Ltd: rule: stan: does not reconcile [lakh] total_income=[215.18, 190.9, 174.59] total_expenses=[2723.99, 2859.05, 2408.51] exceptional
+03 08:19:11 ready 524748|Sep-26|na kind=photo waited_min=47.9 tries=7 pdf_log=rule reader Link Pharma Chem Ltd: rule: no results table page | nim reader Link Pharma Chem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff)) | pd
+03 08:19:22 pdf nim reader Everlon Financials Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+03 08:19:22 pdf pdf read failed Everlon Financials Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | overflow: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results key: parse JSONDecodeError('Expecting value: line 9 column 30 (cha
+03 08:19:22 pdf rule reader Sodhani Capital Ltd: rule: no results table page
+03 08:19:22 pdf nim reader Sodhani Capital Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 08:19:22 pdf pdf read failed Sodhani Capital Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 08:19:22 pdf rule reader Vivaa Tradecom Ltd: rule: header has no quarter columns
+03 08:19:22 pdf nim reader Vivaa Tradecom Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 08:19:22 pdf pdf read failed Vivaa Tradecom Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 08:19:22 pdf rule reader Link Pharma Chem Ltd: rule: no results table page
+03 08:19:22 pdf nim reader Link Pharma Chem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 08:19:22 pdf pdf read failed Link Pharma Chem Ltd: gemini skipped (quota/backoff); nim: cooling down
+03 08:19:22 pdf rule reader Premium Capital Market & Investments Ltd: rule: no results table page
+03 08:19:22 pdf nim reader Premium Capital Market & Investments Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+03 08:19:22 pdf pdf read failed Premium Capital Market & Investments Ltd: gemini skipped (quota/backoff); nim: cooling down
