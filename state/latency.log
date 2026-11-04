@@ -1500,3 +1500,14 @@
 04 10:45:10 seen 539196 Amba Enterprises Ltd cat=Board Meeting early=True bse_time=16:13:52 dissem=16:13:52
 04 10:45:10 seen 544595 Orkla India Ltd cat=Board Meeting early=True bse_time=16:14:33 dissem=16:14:33
 04 10:45:24 ready 544595|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+04 10:45:49 pdf rule reader Tijaria Polypipes Ltd: rule: stan: no revenue row
+04 10:45:50 seen 500014 Utique Enterprises Ltd cat=Board Meeting early=True bse_time=16:14:58 dissem=16:14:58
+04 10:45:50 seen 500370 Salora International Ltd cat=Result early=False bse_time=16:15:36 dissem=16:15:36
+04 10:46:06 ready 500014|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf incomplete ECS Biztech Ltd standalone: missing ['revenue'] - not posting from PDF | pdf current col Salora International Ltd standalone ok=True/2: revenue=2
+04 10:46:19 pdf rule reader ECS Biztech Ltd: rule: no results table page
+04 10:46:19 pdf rule reader Utique Enterprises Ltd: rule: no results table page
+04 10:46:19 pdf rule reader Salora International Ltd: rule: no results table page
+04 10:46:19 pdf pdf current col ECS Biztech Ltd standalone ok=True/2: revenue=87.38, other_income=0.0, total_income=87.38, total_expenses=78.08, finance_costs=0.04, depreciation=None, pbt=9.31, tax=None, pat=9.31, eps=0.05
+04 10:46:19 pdf pdf incomplete ECS Biztech Ltd standalone: missing ['revenue'] - not posting from PDF
+04 10:46:19 pdf pdf current col Salora International Ltd standalone ok=True/2: revenue=2146.22, other_income=18.95, total_income=2165.17, total_expenses=2164.2, finance_costs=24.96, depreciation=4.75, pbt=0.97, tax=None, pat=0.97, eps=0.01
+04 10:46:19 pdf pdf current col Utique Enterprises Ltd standalone ok=True/3: revenue=1558.88, other_income=4.68, total_income=1563.56, total_expenses=1627.94, finance_costs=1.28, depreciation=9.25, pbt=-64.38, tax=-11.86, pat=-52.52, eps=-0.09
