@@ -1742,3 +1742,16 @@
 04 06:31:38 pdf pdf read failed Bervin Investment & Leasing Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text 
 04 06:34:14 seen 544101 Brisk Technovision Ltd cat=Result early=False bse_time=12:03:31 dissem=12:03:31
 04 06:34:37 wait 544101 Brisk Technovision Ltd: numbers not yet on BSE
+04 06:34:42 pdf nim reader Bervin Investment & Leasing Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 06:34:42 pdf pdf read failed Bervin Investment & Leasing Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota
+04 06:34:42 pdf rule reader Bervin Investment & Leasing Ltd: rule: no results table page
+04 06:34:42 pdf nim reader Bervin Investment & Leasing Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:34:42 pdf pdf read failed Bervin Investment & Leasing Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:35:12 pdf nim reader Vintage Coffee And Beverages Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. 
+04 06:35:12 pdf pdf read failed Vintage Coffee And Beverages Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quot
+04 06:35:51 pdf nim reader Brisk Technovision Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 06:35:51 pdf pdf read failed Brisk Technovision Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim de
+04 06:35:55 pdf rule reader Brisk Technovision Ltd: rule: no results table page
+04 06:35:55 pdf nim reader Brisk Technovision Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:35:55 pdf pdf read failed Brisk Technovision Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:36:59 seen 532771 JHS Svendgaard Laboratories  cat=Result early=False bse_time=12:05:39 dissem=12:05:39
