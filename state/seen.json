@@ -3348,7 +3348,10 @@
 "a841c6cf-9e09-4e6a-9a63-7f27aaa4fcf6",
 "74abed9e-81a6-4831-b088-0bc6b230db26",
 "c877816d-a90e-4f8d-8d01-d3ca8309aa46",
-"3e1a1d5d-88ac-43b2-bd90-519756a40c3b"
+"3e1a1d5d-88ac-43b2-bd90-519756a40c3b",
+"134fbf6d-bb29-48b9-84f9-aee84917c7bd",
+"d47ab428-8525-4799-b5ba-324897ba808f",
+"1af962b5-d9f0-4817-bf89-c003ee800aba"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5385,7 +5388,9 @@
 "524818|Sep-26|standalone",
 "540718|Sep-26|na",
 "543520|Sep-26|na",
-"539352|Sep-26|na"
+"539352|Sep-26|na",
+"517544|Sep-26|na",
+"526608|Sep-26|consolidated"
 ],
 "pending": {
 "1fc1eecf-e02f-4a70-942d-f1cf821715c9": {
@@ -5461,7 +5466,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793792215.2472863,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": true
 },
 "b0ed3be3-a382-414e-aba1-bfc3eb01a8c2": {
@@ -5501,44 +5506,6 @@
 "first": 1793792809.9205623,
 "last": 1793795782.9809737,
 "alerted": false
-},
-"134fbf6d-bb29-48b9-84f9-aee84917c7bd": {
-"rec": {
-"NEWSID": "134fbf6d-bb29-48b9-84f9-aee84917c7bd",
-"SCRIP_CD": 517544,
-"XML_NAME": "ANN_517544_134FBF6D-BB29-48B9-84F9-AEE84917C7BD",
-"NEWSSUB": "Centum Electronics Ltd - 517544 - Unaudited Financial Results (Standalone And Consolidated) Of The Company For The Second Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-11-04T17:18:06.913",
-"NEWS_DT": "2026-11-04T17:18:06.913",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "d8d89fd8-7612-4d93-9437-013f957090fd.pdf",
-"MORE": "",
-"HEADLINE": "Pls refer enclosed",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/centum-electronics-ltd/centum/517544/",
-"SLONGNAME": "Centum Electronics Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 31,
-"News_submission_dt": "2026-11-04T17:18:06",
-"DissemDT": "2026-11-04T17:18:06.913",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7558645,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793793143.0071442,
-"last": 1793795782.9809737,
-"alerted": true
 },
 "388c8ef1-675b-4e1b-a517-79c90d6d0035": {
 "rec": {
@@ -6183,7 +6150,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793795418.9972596,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": false
 },
 "45127570-d891-4f20-a60f-e903750f5e38": {
@@ -6302,10 +6269,6 @@
 }
 },
 "lag": [
-[
-"Scarnose International Ltd",
-46
-],
 [
 "Devinsu Trading Ltd",
 48
@@ -7501,6 +7464,10 @@
 [
 "P. B. Films Ltd",
 46
+],
+[
+"Centum Electronics Ltd",
+50
 ]
 ],
 "gem_use": {
@@ -7527,7 +7494,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 602
+"2026-11-04": 607
 },
 "pdfposted": {
 "514316|Sep-26|standalone": {
@@ -9088,6 +9055,16 @@
 "rev": 213.30100000000004,
 "pat": 3.603,
 "t": 1793795523.626999,
+"last": 0
+},
+"526608|Sep-26|consolidated": {
+"code": "526608",
+"name": "Electrotherm (India) Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 9124.3,
+"pat": -200.39999999999998,
+"t": 1793796197.7249923,
 "last": 0
 }
 },
@@ -11427,7 +11404,8 @@
 "0662b066-1add-48fb-8e26-23f96022ef57": 1,
 "3d89eebc-210c-439d-88e6-18e2105eb0b8": 1,
 "df58e764-d019-404e-b411-f1368dd5f4cc": 1,
-"a6c97f82-4b61-4ae1-bf1b-9449cb4daa51": 1
+"a6c97f82-4b61-4ae1-bf1b-9449cb4daa51": 1,
+"1af962b5-d9f0-4817-bf89-c003ee800aba": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12499,12 +12477,12 @@
 "other": 62
 },
 "results-key": {
-"ok": 460,
-"429": 6,
+"ok": 480,
+"429": 7,
 "other": 46
 },
 "concall-key": {
-"ok": 13,
+"ok": 27,
 "429": 5,
 "other": 31
 }
