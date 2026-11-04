@@ -122,7 +122,21 @@ def main():
                     res, via = o, "nim"
                 else:
                     why.append(f"nim: {str(e)[:90]}")
+            empty = bool(res) and not (res.get("quarter_end_columns") or res.get("consolidated") or res.get("standalone"))
+            if empty:
+                via = None; why.append("reader returned no results table (filing probably has no numbers)")
             cnt[(kind, via or "none")] += 1
+            if via is None:
+                try:
+                    import fitz
+                    d_ = fitz.open(stream=content, filetype="pdf")
+                    best, bn = "", -1
+                    for i in range(d_.page_count):
+                        t_ = d_[i].get_text(); n_ = len(re.findall(r"(?i)total income|revenue from operations|profit before tax|net profit", t_))
+                        if n_ > bn: best, bn = t_, n_
+                    p(f"   headline: {headline.strip()[:150]!r} | best page hits={bn} | text: {re.sub(r'\\s+', ' ', best)[:420]!r}")
+                except Exception as ex:
+                    p("   page peek failed", repr(ex)[:60])
             p(f"{c} {name[:28]} | {pages}p {kind} | {'READ via ' + via if via else 'NOT READ'} | " + ("; ".join(why)[:260] if not via else summ(res)[:120]))
     p("SUMMARY", dict(cnt))
 
