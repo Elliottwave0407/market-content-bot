@@ -1599,3 +1599,20 @@
 04 10:21:04 ready 530765|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Agarwal Fortune India Ltd: rule: stan: does not reconcile [lakh] total_expenses=[289.86, 36.09, 227.79] exceptional=[0.0, 0.0, 0.0] pbt=[1.96, 3.01,
 04 10:21:14 pdf rule reader Agarwal Fortune India Ltd: rule: stan: does not reconcile [lakh] total_expenses=[289.86, 36.09, 227.79] exceptional=[0.0, 0.0, 0.0] pbt=[1.96, 3.01, 1.05] pat=[1.96, 3.01, 1.05]
 04 10:21:14 pdf pdf current col Agarwal Fortune India Ltd standalone ok=True/3: revenue=291.82, other_income=0.0, total_income=291.82, total_expenses=289.86, finance_costs=3.14, depreciation=1.18, pbt=1.96, tax=0.0, pat=1.96, eps=0.06
+04 10:21:47 pdf rule reader Tracxn Technologies Ltd: rule: no results table page
+04 10:22:24 pdf rule reader ISGEC Heavy Engineering Ltd: rule: consolidated table incomplete missing ['pat'] n=5
+04 10:22:24 pdf strong model retry error ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='gene
+04 10:22:24 pdf pdf current col ISGEC Heavy Engineering Ltd consolidated ok=True/3: revenue=185039, other_income=925, total_income=185964, total_expenses=175738, finance_costs=1772, depreciation=3665, pbt=10232, tax=3613, pat=6619, eps=7.67
+04 10:22:24 pdf strong model retry did not help: None
+04 10:22:24 pdf pdf history mismatch ISGEC Heavy Engineering Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 19800.0 pat 175.0 | bse rev 19800.0 pat 175.0 (Rs mn); q-4: pdf rev 16617.600000000002 pat 125.5 | bse r
+04 10:22:24 pdf pdf has consolidated but it failed checks: not falling back to standalone ISGEC Heavy Engineering Ltd
+04 10:22:52 seen 540063 ECS Biztech Ltd cat=Board Meeting early=True bse_time=15:52:36 dissem=15:52:36
+04 10:22:56 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+04 10:23:20 pdf pdf current col Tracxn Technologies Ltd standalone ok=False/3: revenue=2130.13, other_income=1.13, total_income=2267.67, total_expenses=2732.3, finance_costs=None, depreciation=7.47, pbt=-464.63, tax=-52.01, pat=-412.62, eps=-0.39
+04 10:23:20 pdf pdf revenue + other income != total income, BSE-table override refused Tracxn Technologies Ltd standalone
+04 10:23:20 pdf pdf incomplete Tracxn Technologies Ltd standalone: missing ['ebitda'] - not posting from PDF
+04 10:23:58 pdf strong model retry did not help: None
+04 10:23:59 seen 531227 Deco Mica Ltd cat=Board Meeting early=True bse_time=15:52:54 dissem=15:52:54
+04 10:23:59 seen 531341 Gujarat Investa Ltd cat=Result early=False bse_time=15:52:58 dissem=15:52:58
+04 10:23:59 seen 543638 Tracxn Technologies Ltd cat=Result early=False bse_time=15:53:29 dissem=15:53:29
+04 10:24:09 wait 543638 Tracxn Technologies Ltd: numbers not yet on BSE
