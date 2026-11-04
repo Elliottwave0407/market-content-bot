@@ -1538,3 +1538,10 @@
 04 06:59:47 pdf nim reader Cera Sanitaryware Ltd: ok (gemini: gemini skipped (quota/backoff))
 04 06:59:48 seen 544371 Vikram Aroma Ltd cat=Board Meeting early=True bse_time=12:29:14 dissem=12:29:14
 04 06:59:55 ready 532443|Sep-26|standalone kind=photo waited_min=0.0 tries=4 pdf_log=pdf read failed Sangam India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-u
+04 07:01:03 seen 532163 Saregama India Ltd cat=Board Meeting early=True bse_time=12:29:54 dissem=12:29:54
+04 07:01:46 pdf rule reader Makers Laboratories Ltd-$: rule: stan: missing ['pat'] n=6
+04 07:01:46 pdf rule reader Eco Recycling Ltd: rule: filing mentions consolidated results but that table was not read
+04 07:01:46 pdf rule reader Cera Sanitaryware Ltd: rule: stan: does not reconcile [lakh] total_expenses=[54083.49, 44745.58, 41773.81] pbt=[7301.79, 5981.3, 7223.39] tax=[1688.17, 1450.26, 1558.63] pat=[5613.62, 4531.04, 5664.76] depreciation=[97
+04 07:02:55 ready 531340|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=pdf current col Cera Sanitaryware Ltd standalone ok=True/3: revenue=60295.95, other_income=1089.33, total_income=61385.28, total_expenses=54083.49, finance_cost
+04 07:03:02 pdf nim reader Makers Laboratories Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 07:03:02 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
