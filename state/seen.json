@@ -3306,7 +3306,11 @@
 "67d598b9-ed62-44bb-9e1a-721c5c83c378",
 "7c717915-b39a-4845-a9c5-eb0756a259d7",
 "75bfb7ce-e310-4d09-9cf4-e14a72581854",
-"a1831b77-7120-4f4c-b3a8-b5478937d854"
+"a1831b77-7120-4f4c-b3a8-b5478937d854",
+"de0afe11-71f3-4bd5-ba27-bb0aaaf8d7ca",
+"e6932008-0e09-4f14-934c-d5455187430c",
+"7dbd02f1-c29e-478f-90e9-c355467f25e6",
+"aa8c08d3-1ab4-4d7e-b81a-cc1a17a5853f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5316,7 +5320,9 @@
 "506134|Sep-26|consolidated",
 "524614|Sep-26|na",
 "539246|Sep-26|na",
-"524514|Sep-26|na"
+"524514|Sep-26|na",
+"544314|Sep-26|standalone",
+"526881|Sep-26|consolidated"
 ],
 "pending": {
 "1fc1eecf-e02f-4a70-942d-f1cf821715c9": {
@@ -5886,8 +5892,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793793143.0071442,
-"last": 1793794258.2630694,
-"alerted": false
+"last": 1793794537.3815107,
+"alerted": true
 },
 "75307474-80b3-4892-b370-65573f061fdf": {
 "rec": {
@@ -5962,44 +5968,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793793143.0071442,
-"last": 1793794258.2630694,
-"alerted": false
-},
-"7dbd02f1-c29e-478f-90e9-c355467f25e6": {
-"rec": {
-"NEWSID": "7dbd02f1-c29e-478f-90e9-c355467f25e6",
-"SCRIP_CD": 544314,
-"XML_NAME": "ANN_544314_7DBD02F1-C29E-478F-90E9-C355467F25E6",
-"NEWSSUB": "Sanathan Textiles Ltd - 544314 - Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-04T17:27:11.317",
-"NEWS_DT": "2026-11-04T17:27:11.317",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "08f0e41d-297b-483e-9504-62bdc1f4ca45.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sanathan-textiles-ltd/sanathan/544314/",
-"SLONGNAME": "Sanathan Textiles Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 31,
-"News_submission_dt": "2026-11-04T17:27:11",
-"DissemDT": "2026-11-04T17:27:11.317",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3472666,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793793821.7092142,
 "last": 1793794258.2630694,
 "alerted": false
 },
@@ -6190,44 +6158,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793793821.7092142,
-"last": 1793794258.2630694,
-"alerted": false
-},
-"aa8c08d3-1ab4-4d7e-b81a-cc1a17a5853f": {
-"rec": {
-"NEWSID": "aa8c08d3-1ab4-4d7e-b81a-cc1a17a5853f",
-"SCRIP_CD": 526881,
-"XML_NAME": "ANN_526881_AA8C08D3-1AB4-4D7E-B81A-CC1A17A5853F",
-"NEWSSUB": "63 Moons Technologies Ltd - 526881 - Unaudited Financial Results (Standalone & Consolidated) Alongwith Limited Review Report For The Quarter Ended 30Th September, 2026.",
-"DT_TM": "2026-11-04T17:35:26.64",
-"NEWS_DT": "2026-11-04T17:35:26.64",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5377a4fc-39d6-4a93-842c-03ba838d8404.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results (Standalone & Consolidated) alongwith Limited Review Report for the quarter ended 30th September, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/63-moons-technologies-ltd/63moons/526881/",
-"SLONGNAME": "63 Moons Technologies Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 32,
-"News_submission_dt": "2026-11-04T17:35:26",
-"DissemDT": "2026-11-04T17:35:26.64",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4253482,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793794046.2526972,
 "last": 1793794258.2630694,
 "alerted": false
 },
@@ -6461,10 +6391,6 @@
 }
 },
 "lag": [
-[
-"BKM Industries Ltd",
-45
-],
 [
 "Power Grid Corporation of India Ltd",
 45
@@ -7660,6 +7586,10 @@
 [
 "Tulasee Bio Ethanol Ltd",
 48
+],
+[
+"63 Moons Technologies Ltd",
+8
 ]
 ],
 "gem_use": {
@@ -7686,7 +7616,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 563
+"2026-11-04": 572
 },
 "pdfposted": {
 "508875|Sep-26|standalone": {
@@ -9087,6 +9017,26 @@
 "rev": 549.5310000000001,
 "pat": 21.799000000000003,
 "t": 1793794438.6828825,
+"last": 0
+},
+"544314|Sep-26|standalone": {
+"code": "544314",
+"name": "Sanathan Textiles Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 9921.1,
+"pat": 586.9,
+"t": 1793794568.081685,
+"last": 0
+},
+"526881|Sep-26|consolidated": {
+"code": "526881",
+"name": "63 Moons Technologies Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1534.565,
+"pat": -404.324,
+"t": 1793794577.9548085,
 "last": 0
 }
 },
@@ -10866,7 +10816,8 @@
 "522c199a-3375-4a07-95a4-3473dc852df1": 1,
 "caa4431f-cbe6-4fb5-a333-d4463cac868b": 1,
 "c7d74f34-8a58-490d-b4da-c29df764188d": 1,
-"06fa03c7-2ec4-4594-92f3-9f33aaa652e7": 1
+"06fa03c7-2ec4-4594-92f3-9f33aaa652e7": 1,
+"e6932008-0e09-4f14-934c-d5455187430c": 1
 },
 "cons_expected": {
 "7df4e26c-6236-4a29-a2e6-d01bcc2d8975": 1,
@@ -11398,7 +11349,8 @@
 "96c977c7-6eaf-4880-8fda-72655c43c4e9": 1,
 "d3dd696e-1762-45f2-8ea7-43948778100e": 1,
 "8a30948a-6268-459e-9ebd-8e469d0b8cb5": 1,
-"67d598b9-ed62-44bb-9e1a-721c5c83c378": 1
+"67d598b9-ed62-44bb-9e1a-721c5c83c378": 1,
+"de0afe11-71f3-4bd5-ba27-bb0aaaf8d7ca": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12442,7 +12394,7 @@
 "other": 62
 },
 "results-key": {
-"ok": 371,
+"ok": 387,
 "429": 6,
 "other": 41
 },
