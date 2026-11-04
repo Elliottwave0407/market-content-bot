@@ -1766,3 +1766,16 @@
 04 09:57:30 pdf strong model retry did not help: None
 04 09:57:30 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
 04 09:57:31 seen 533033 ISGEC Heavy Engineering Ltd cat=Board Meeting early=True bse_time=15:26:38 dissem=15:26:38
+04 09:58:01 pdf rule reader ISGEC Heavy Engineering Ltd: rule: consolidated table incomplete missing ['pat'] n=5
+04 09:58:01 pdf pdf current col ISGEC Heavy Engineering Ltd consolidated ok=True/3: revenue=185039, other_income=925, total_income=185964, total_expenses=175738, finance_costs=1772, depreciation=3665, pbt=10232, tax=3613, pat=6619, eps=7.67
+04 09:58:01 pdf pdf history mismatch ISGEC Heavy Engineering Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 19800.0 pat 175.0 | bse rev 19800.0 pat 175.0 (Rs mn); q-4: pdf rev 16617.600000000002 pat 125.5 | bse r
+04 09:58:01 pdf pdf has consolidated but it failed checks: not falling back to standalone ISGEC Heavy Engineering Ltd
+04 09:58:12 pdf rule reader Ishwarshakti Holdings & Traders Ltd: rule: stan: does not reconcile [thousand] pbt=[None, None, None] pat=[-1278.3, 400.75, 4580.15] finance_costs=[23.0, 0.09, 5.22]
+04 09:58:12 pdf rule reader ISGEC Heavy Engineering Ltd: rule: consolidated table incomplete missing ['pat'] n=5
+04 09:58:12 pdf pdf current col ISGEC Heavy Engineering Ltd consolidated ok=True/3: revenue=185039, other_income=925, total_income=185964, total_expenses=175738, finance_costs=1772, depreciation=3665, pbt=10232, tax=3613, pat=6619, eps=7.67
+04 09:58:12 pdf pdf history mismatch ISGEC Heavy Engineering Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 19800.0 pat 175.0 | bse rev 19800.0 pat 175.0 (Rs mn); q-4: pdf rev 16617.600000000002 pat 125.5 | bse r
+04 09:58:12 pdf pdf has consolidated but it failed checks: not falling back to standalone ISGEC Heavy Engineering Ltd
+04 09:58:12 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
+04 10:00:18 seen 544286 Niva Bupa Health Insurance C cat=Board Meeting early=True bse_time=15:29:28 dissem=15:29:28
+04 10:00:18 seen 531489 CG Vak Software & Exports Lt cat=Result early=False bse_time=15:29:36 dissem=15:29:36
+04 10:01:19 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
