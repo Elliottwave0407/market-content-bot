@@ -1595,3 +1595,17 @@
 04 15:28:41 ready 517015|Sep-26|consolidated kind=photo waited_min=23.4 tries=3 pdf_log=pdf current col Aurobindo Pharma Ltd consolidated ok=True/3: revenue=102632.9, other_income=1682.2, total_income=104315.1, total_expenses=87409.0, finance_costs
 04 15:30:59 wait 517562 Trigyn Technologies Ltd: numbers not yet on BSE
 04 15:31:08 ready 532710|Sep-26|consolidated kind=photo waited_min=23.4 tries=2 pdf_log=rule reader Wardwizard Foods and Beverages Ltd: rule: no results table page | nim reader Wardwizard Foods and Beverages Ltd: nim: cooling down (gemini: gemini s
+04 15:34:48 ready 512604|Sep-26|na kind=photo waited_min=49.1 tries=3 pdf_log=pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap | rule reader Haria Exports Ltd-$: rule: no results table page | pdf read deferred Haria Exp
+04 15:34:55 ready 539593|Sep-26|na kind=photo waited_min=49.1 tries=8 pdf_log=pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap | rule reader Haria Exports Ltd-$: rule: no results table page | pdf read deferred Haria Exp
+04 15:35:04 pdf nim reader Oval Projects Engineering Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 15:35:04 pdf pdf read failed Oval Projects Engineering Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 15:35:04 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
+04 15:35:04 pdf pdf read deferred Indsil Hydro Power and Manganese Ltd-$: per-pass AI call cap
+04 15:35:04 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
+04 15:35:04 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
+04 15:35:04 pdf rule reader Capfin India Ltd: rule: no results table page
+04 15:35:04 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
+04 15:35:04 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 15:35:04 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
+04 15:35:04 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 15:35:04 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
