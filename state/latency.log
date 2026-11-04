@@ -1694,3 +1694,12 @@
 04 10:37:16 ready 507580|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader IVP Ltd: rule: stan: does not reconcile [lakh] pbt=[627.0, 1876.0, 530.0] pat=[465.0, 1402.0, 400.0] finance_costs=[176.0, 138.0, 219.0] | rule read
 04 10:37:25 ready 531341|Sep-26|standalone kind=photo waited_min=12.9 tries=6 pdf_log=pdf current col Dhoot Industrial Finance Ltd standalone ok=True/3: revenue=1577.43, other_income=-0.0, total_income=1577.43, total_expenses=187.42, finance_cost
 04 10:37:33 ready 526839|Sep-26|standalone kind=photo waited_min=0.9 tries=1 pdf_log=pdf incomplete Dhoot Industrial Finance Ltd standalone: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF | pdf current col Gujarat Investa Ltd standa
+04 10:37:42 pdf rule reader ECS Biztech Ltd: rule: no results table page
+04 10:37:42 pdf rule reader Gujarat Investa Ltd: rule: stan: does not reconcile [lakh] total_expenses=[22660.0, 239.86, 1674.0] pbt=[2148.0, 475.0, 174.0] tax=[443.4, -3.1799999999999997, 104.0] pat=[1170.0, 7.93, 70.0]
+04 10:37:42 pdf rule reader IVP Ltd: rule: stan: does not reconcile [lakh] pbt=[627.0, 1876.0, 530.0] pat=[465.0, 1402.0, 400.0] finance_costs=[176.0, 138.0, 219.0]
+04 10:37:42 pdf rule reader Dhoot Industrial Finance Ltd: rule: no results table page
+04 10:37:42 pdf pdf current col IVP Ltd standalone ok=True/3: revenue=17168, other_income=89, total_income=17257, total_expenses=16630, finance_costs=176, depreciation=155, pbt=627, tax=162, pat=465, eps=4.5
+04 10:37:42 pdf pdf current col Dhoot Industrial Finance Ltd standalone ok=True/3: revenue=1577.43, other_income=-0.0, total_income=1577.43, total_expenses=187.42, finance_costs=0.16, depreciation=None, pbt=1390.01, tax=298.73, pat=1091.28, eps=1
+04 10:37:42 pdf pdf incomplete Dhoot Industrial Finance Ltd standalone: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
+04 10:37:42 pdf pdf current col Gujarat Investa Ltd standalone ok=True/3: revenue=234.02, other_income=14.06, total_income=248.08, total_expenses=226.6, finance_costs=0.34, depreciation=None, pbt=21.48, tax=9.78, pat=11.7, eps=0.16
+04 10:37:42 pdf pdf current col Shelter Infra Projects Ltd-$ standalone ok=True/3: revenue=47.48, other_income=2.92, total_income=50.4, total_expenses=52.3, finance_costs=0.06, depreciation=2.37, pbt=-1.9, tax=0.16, pat=-2.06, eps=-0.06
