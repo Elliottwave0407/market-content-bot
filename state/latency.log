@@ -1552,3 +1552,37 @@
 04 15:26:00 ready 526604|Sep-26|standalone kind=photo waited_min=43.3 tries=6 pdf_log=rule reader Trigyn Technologies Ltd: rule: consolidated table does not reconcile [lakh] total_income=[28726.05, 25705.68, 24602.75] pbt=[1714.98, 612.24, 477.8]
 04 15:26:52 ready 530689|Sep-26|consolidated kind=photo waited_min=43.3 tries=4 pdf_log=rule reader KROWNIQ Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[7990.17, 12267.08, 8739.77] pbt=[83.11, 527.88, 300.42] tax=[18.79, 
 04 15:27:16 ready 513709|Sep-26|consolidated kind=photo waited_min=17.6 tries=1 pdf_log=pdf read deferred Indsil Hydro Power and Manganese Ltd-$: per-pass AI call cap | rule reader Shilp Gravures Ltd-$: rule: stan: 12 columns | pdf read deferred Sh
+04 15:27:47 pdf nim reader Apollo Finvest India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 15:27:47 pdf pdf read failed Apollo Finvest India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 15:27:47 pdf rule reader Gujjubhai Industries Ltd: rule: unit not found
+04 15:27:47 pdf nim reader Gujjubhai Industries Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:27:47 pdf pdf read failed Gujjubhai Industries Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:27:47 pdf rule reader Trigyn Technologies Ltd: rule: consolidated table does not reconcile [lakh] total_income=[28726.05, 25705.68, 24602.75] pbt=[1714.98, 612.24, 477.8] tax=[176.59, 246.28, 249.93] pat=[1268.93, 339.24, 530.25] depreciati
+04 15:27:47 pdf pdf read deferred Trigyn Technologies Ltd: per-pass AI call cap
+04 15:27:47 pdf pdf current col Lippi Systems Ltd-$ standalone ok=True/3: revenue=1.0, other_income=0.0, total_income=1.0, total_expenses=1.0, finance_costs=0.0, depreciation=0.0, pbt=0.0, tax=0.0, pat=0.0, eps=0.0
+04 15:27:47 pdf rule reader Sadbhav Engineering Ltd: rule: no results table page
+04 15:27:47 pdf pdf read deferred Sadbhav Engineering Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Sadbhav Engineering Ltd: rule: no results table page
+04 15:27:47 pdf pdf read deferred Sadbhav Engineering Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Steelco Gujarat Ltd: rule: stan: missing ['pat'] n=3
+04 15:27:47 pdf pdf read deferred Steelco Gujarat Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Oval Projects Engineering Ltd: rule: header has no quarter columns
+04 15:27:47 pdf pdf read deferred Oval Projects Engineering Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader KROWNIQ Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[7990.17, 12267.08, 8739.77] pbt=[83.11, 527.88, 300.42] tax=[18.79, 138.85, 0.52] pat=[64.32, 389.03, 299.9] depreciation=[41.93, 28.12, 3
+04 15:27:47 pdf pdf read deferred KROWNIQ Ltd: per-pass AI call cap
+04 15:27:47 pdf strong model fixed a failed read
+04 15:27:47 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
+04 15:27:47 pdf pdf read deferred Indsil Hydro Power and Manganese Ltd-$: per-pass AI call cap
+04 15:27:47 pdf rule reader Shilp Gravures Ltd-$: rule: stan: 12 columns
+04 15:27:47 pdf pdf read deferred Shilp Gravures Ltd-$: per-pass AI call cap
+04 15:27:47 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
+04 15:27:47 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Capfin India Ltd: rule: no results table page
+04 15:27:47 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 15:27:47 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
+04 15:27:47 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 15:27:47 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
+04 15:27:47 pdf rule reader Shivansh Finserve Ltd: ok
+04 15:27:47 pdf pdf current col Shivansh Finserve Ltd standalone ok=True/3: revenue=44.4, other_income=30.7, total_income=75.1, total_expenses=26.89, finance_costs=None, depreciation=0.32, pbt=48.21, tax=12.36, pat=35.84, eps=0.57
+04 15:27:47 pdf pdf incomplete Shivansh Finserve Ltd standalone: missing ['revenue'] - not posting from PDF
