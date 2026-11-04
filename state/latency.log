@@ -1528,3 +1528,23 @@
 04 15:13:57 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
 04 15:13:57 pdf rule reader Haria Exports Ltd-$: rule: no results table page
 04 15:13:57 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
+04 15:22:01 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
+04 15:22:01 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
+04 15:22:01 pdf rule reader Capfin India Ltd: rule: no results table page
+04 15:22:01 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
+04 15:22:01 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 15:22:01 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
+04 15:22:01 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 15:22:01 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
+04 15:22:01 pdf rule reader Shivansh Finserve Ltd: ok
+04 15:22:01 pdf pdf current col Shivansh Finserve Ltd standalone ok=True/3: revenue=44.4, other_income=30.7, total_income=75.1, total_expenses=26.89, finance_costs=None, depreciation=0.32, pbt=48.21, tax=12.36, pat=35.84, eps=0.57
+04 15:22:01 pdf pdf incomplete Shivansh Finserve Ltd standalone: missing ['revenue'] - not posting from PDF
+04 15:22:03 seen 524632 Shukra Pharmaceuticals Ltd cat=Result early=False bse_time=20:44:34 dissem=20:44:34
+04 15:22:03 seen 517562 Trigyn Technologies Ltd cat=Board Meeting early=True bse_time=20:46:34 dissem=20:46:34
+04 15:22:03 seen 544888 Augmont Enterprises Ltd cat=Board Meeting early=True bse_time=20:48:42 dissem=20:48:42
+04 15:22:03 seen 524804 Aurobindo Pharma Ltd cat=Result early=False bse_time=20:48:48 dissem=20:48:48
+04 15:22:03 seen 512437 Apollo Finvest India Ltd cat=Result early=False bse_time=20:50:42 dissem=20:50:42
+04 15:22:03 seen 513121 Oricon Enterprises Ltd-$ cat=Board Meeting early=True bse_time=20:50:49 dissem=20:50:49
+04 15:22:25 wait 524804 Aurobindo Pharma Ltd: numbers not yet on BSE
+04 15:22:26 wait 524632 Shukra Pharmaceuticals Ltd: numbers not yet on BSE
+04 15:22:31 ready 544504|Sep-26|na kind=photo waited_min=49.0 tries=99 pdf_log=rule reader Aurobindo Pharma Ltd: rule: stan: does not reconcile [million] total_expenses=[87409.0, 78577.7, 71320.3] pbt=[9709.5, 10080.8, 7564.1] tax=[5638.3,
