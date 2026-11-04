@@ -1603,3 +1603,25 @@
 04 07:13:24 ready 544371|Sep-26|standalone kind=photo waited_min=2.0 tries=2 pdf_log=pdf current col Vikram Aroma Ltd standalone ok=True/3: revenue=1280.74, other_income=13.96, total_income=1294.69, total_expenses=1174.53, finance_costs=14.18, d
 04 07:13:44 pdf pdf current col Vikram Aroma Ltd standalone ok=True/3: revenue=1280.74, other_income=13.96, total_income=1294.69, total_expenses=1174.53, finance_costs=14.18, depreciation=29.72, pbt=120.17, tax=27.65, pat=92.52, eps=2.95
 04 07:13:46 seen 532369 Ramco Industries Ltd cat=Board Meeting early=True bse_time=12:41:52 dissem=12:41:52
+04 07:17:33 pdf nim reader Eco Recycling Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 07:17:33 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 07:17:33 pdf nim reader Zydus Lifesciences Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 07:17:33 pdf pdf read failed Zydus Lifesciences Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 07:17:33 pdf nim reader G. G. Dandekar Properties Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invention): rejected e.g. [(
+04 07:17:33 pdf pdf read failed G. G. Dandekar Properties Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (
+04 07:17:33 pdf nim reader Darjeeling Industriies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 07:17:33 pdf pdf read failed Darjeeling Industriies Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); ni
+04 07:17:33 pdf rule reader Darjeeling Industriies Ltd: rule: unit not found
+04 07:17:33 pdf nim reader Darjeeling Industriies Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 07:17:33 pdf pdf read failed Darjeeling Industriies Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 07:17:35 seen 509003 Transoceanic Properties Ltd cat=Board Meeting early=True bse_time=12:45:16 dissem=12:45:16
+04 07:18:04 pdf rule reader Panama Petrochem Ltd: rule: no results table page
+04 07:18:04 pdf nim reader Panama Petrochem Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 07:18:04 pdf pdf read failed Panama Petrochem Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 07:18:04 pdf rule reader Darjeeling Industriies Ltd: rule: unit not found
+04 07:18:04 pdf nim reader Darjeeling Industriies Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 07:18:04 pdf pdf read failed Darjeeling Industriies Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 07:18:04 pdf strong model fixed a failed read
+04 07:18:29 pdf rule reader Darjeeling Industriies Ltd: rule: unit not found
+04 07:18:29 pdf rule reader Andhra Petrochemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[12368.61, 2069.47, 17371.69] total_expenses=[41977.32, 2544.79, 17261.22] pbt=[391.29, -47532.0, 11047.0] pat=[242.01, -32518.0, 21442.0] d
+04 07:18:29 pdf rule reader G. G. Dandekar Properties Ltd: rule: stan: missing ['pat'] n=6
