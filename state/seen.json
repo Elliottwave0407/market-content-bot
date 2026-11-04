@@ -3375,7 +3375,9 @@
 "1015f70d-b0c2-45fe-be89-a8d697763fe5",
 "c8db4739-1479-4103-8eba-110eb3025e9b",
 "a9bc0241-3448-41a4-8cbf-5458266ad290",
-"67cc0db0-c9ca-4382-8302-e0fdd43ef020"
+"67cc0db0-c9ca-4382-8302-e0fdd43ef020",
+"7d8103cf-3975-4c6a-b9f7-612d251730e8",
+"1f51af40-bb79-4d7f-9978-97532710d60c"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5428,7 +5430,8 @@
 "544941|Sep-26|na",
 "512367|Sep-26|na",
 "544238|Sep-26|consolidated",
-"534920|Sep-26|na"
+"534920|Sep-26|na",
+"504605|Sep-26|standalone"
 ],
 "pending": {
 "1fc1eecf-e02f-4a70-942d-f1cf821715c9": {
@@ -5504,7 +5507,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793792215.2472863,
-"last": 1793797337.985745,
+"last": 1793797898.9632156,
 "alerted": true
 },
 "b0ed3be3-a382-414e-aba1-bfc3eb01a8c2": {
@@ -5960,7 +5963,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793795418.9972596,
-"last": 1793797337.985745,
+"last": 1793797898.9632156,
 "alerted": true
 },
 "45127570-d891-4f20-a60f-e903750f5e38": {
@@ -6150,8 +6153,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793796539.1659079,
-"last": 1793797337.985745,
-"alerted": false
+"last": 1793797898.9632156,
+"alerted": true
 },
 "6c6060d1-2963-43e3-9bf3-6975a91d22df": {
 "rec": {
@@ -6226,7 +6229,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793796721.10254,
-"last": 1793797337.985745,
+"last": 1793797898.9632156,
 "alerted": false
 },
 "54e7ed03-7b1c-43df-819a-ce895904bed8": {
@@ -6454,7 +6457,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793796867.8981166,
-"last": 1793797337.985745,
+"last": 1793797898.9632156,
 "alerted": false
 },
 "e3aef9c6-0c32-426d-88a6-8e73a0288fa7": {
@@ -7836,7 +7839,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 630
+"2026-11-04": 637
 },
 "pdfposted": {
 "514316|Sep-26|standalone": {
@@ -9457,6 +9460,16 @@
 "rev": 5.5,
 "pat": 0.5599999999999999,
 "t": 1793796894.3372808,
+"last": 0
+},
+"504605|Sep-26|standalone": {
+"code": "504605",
+"name": "Uni Abex Alloy Products Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 413.50800000000004,
+"pat": 61.528,
+"t": 1793797936.068489,
 "last": 0
 }
 },
@@ -11259,7 +11272,8 @@
 "26866512-e670-464b-962d-1cfb68028218": 1,
 "50be334f-8f86-4ec8-bdc1-07c76f98ca5b": 1,
 "1015f70d-b0c2-45fe-be89-a8d697763fe5": 1,
-"03900b4b-a5d9-4ee4-8c12-d1eb52b5ba2c": 1
+"03900b4b-a5d9-4ee4-8c12-d1eb52b5ba2c": 1,
+"1f51af40-bb79-4d7f-9978-97532710d60c": 1
 },
 "cons_expected": {
 "7df4e26c-6236-4a29-a2e6-d01bcc2d8975": 1,
@@ -11813,7 +11827,8 @@
 "35d287ad-2bb0-44a9-b9c2-99dcce0690fa": 1,
 "a623f2a2-39a4-454f-b7cc-551fde9fa0dd": 1,
 "3b8180f6-94c6-4f62-987a-4a7578cb5fb4": 1,
-"c8db4739-1479-4103-8eba-110eb3025e9b": 1
+"c8db4739-1479-4103-8eba-110eb3025e9b": 1,
+"97f7037c-8a84-4a80-a54c-cac47f410586": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12872,6 +12887,13 @@
 "SLONGNAME": "Gabion Technologies India Ltd",
 "ATTACHMENTNAME": "100477aa-ae72-4232-bbb2-de8005466637.pdf",
 "NEWS_DT": "2026-11-04T18:21:15.833"
+},
+"97f7037c-8a84-4a80-a54c-cac47f410586": {
+"NEWSID": "97f7037c-8a84-4a80-a54c-cac47f410586",
+"SCRIP_CD": 543928,
+"SLONGNAME": "Cosmic CRF Ltd",
+"ATTACHMENTNAME": "236a11b4-a2b0-4946-90b5-ef49760864aa.pdf",
+"NEWS_DT": "2026-11-04T18:23:04.013"
 }
 },
 "gem_key_use": {
@@ -12894,17 +12916,17 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 435,
-"429": 15,
-"other": 62
+"ok": 436,
+"429": 17,
+"other": 64
 },
 "results-key": {
 "ok": 480,
-"429": 7,
-"other": 46
+"429": 8,
+"other": 49
 },
 "concall-key": {
-"ok": 99,
+"ok": 116,
 "429": 5,
 "other": 31
 }
