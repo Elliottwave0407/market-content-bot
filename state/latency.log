@@ -1916,3 +1916,34 @@
 04 13:33:16 ready 504731|Sep-26|consolidated kind=photo waited_min=11.9 tries=3 pdf_log=pdf read failed Jujhar Logistics Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | con
 04 13:37:04 ready 508963|Sep-26|na kind=photo waited_min=49.3 tries=0 pdf_log=pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap | rule reader Trustwave Securities Ltd: rule: no results table page | pdf read deferred Trus
 04 13:37:29 wait 523343 Microse India Ltd: numbers not yet on BSE
+04 13:37:36 pdf pdf history mismatch Delta Manufacturing Ltd consolidated cols=['Sept 30, 2026', 'June 30, 2026', 'Sept 30, 2025'] :: q-1: pdf rev 190.761 pat -3.109 | bse rev 190.76 pat -3.11 (Rs mn); q-4: pdf rev 138.018 pat -24.074 | bse rev 1
+04 13:37:36 pdf pdf has consolidated but it failed checks: not falling back to standalone Delta Manufacturing Ltd
+04 13:37:36 pdf rule reader Sofcom Systems Ltd: ok
+04 13:37:36 pdf pdf current col Sofcom Systems Ltd consolidated ok=True/2: revenue=4.25, other_income=None, total_income=4.25, total_expenses=7.79, finance_costs=None, depreciation=0.33, pbt=-3.54, tax=0.0, pat=-3.54, eps=-0.0015
+04 13:37:36 pdf pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF
+04 13:37:36 pdf rule reader Gujarat Craft Industries Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Gujarat Craft Industries Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Esha Media Research Ltd: rule: unit not found
+04 13:37:36 pdf pdf read deferred Esha Media Research Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Popular Estate Management Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Popular Estate Management Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
+04 13:37:36 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Trustwave Securities Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Trustwave Securities Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
+04 13:37:36 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Vikalp Securities Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
+04 13:37:36 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader SPV Global Trading Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Microse India Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
+04 13:37:36 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
+04 13:37:36 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
