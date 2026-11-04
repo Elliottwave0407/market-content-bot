@@ -1576,3 +1576,7 @@
 04 08:35:19 seen 543954 Allcargo Terminals Ltd cat=Result early=False bse_time=14:03:43 dissem=14:03:43
 04 08:36:36 ready 524404|Sep-26|consolidated kind=photo waited_min=24.9 tries=3 pdf_log=pdf margin q-1 differs from BSE history by 11.8 pts: margin withheld Marksans Pharma Ltd consolidated | pdf margin q-4 differs from BSE history by 13.9 pts: mar
 04 08:37:45 ready 543954|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+04 08:38:40 ready 526544|Sep-26|consolidated kind=photo waited_min=24.9 tries=1 pdf_log=pdf q-4 revenue typo: pdf 361.93100000000004 -> BSE history 391.93 (profit matched) SGL Resources Ltd | pdf history cells corrected from BSE for q-[4]: SGL Reso
+04 08:38:49 ready 543970|Sep-26|na kind=photo waited_min=47.4 tries=99 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30th September, 2026', '31st March, 2026', '30th September, 2025']): not read as quarters, queued for the half-yearl
+04 08:39:11 pdf rule reader Terraform Realstate Ltd: rule: no results table page
+04 08:39:11 pdf pdf read deferred Terraform Realstate Ltd: per-pass AI call cap
