@@ -1676,3 +1676,7 @@
 04 15:50:44 wait 524212 Wanbury Ltd: confirming that no consolidated statement exists
 04 15:50:50 ready 539132|Sep-26|na kind=photo waited_min=46.0 tries=5 pdf_log=rule reader Augmont Enterprises Ltd: rule: no results table page | nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff)
 04 15:50:58 ready 544498|Sep-26|na kind=photo waited_min=46.0 tries=99 pdf_log=rule reader Augmont Enterprises Ltd: rule: no results table page | nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff)
+04 15:54:13 pdf nim reader Clio Infotech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 23 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: ge
+04 15:54:13 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 23 numbers not found in the filing text (possible inv
+04 15:54:13 pdf rule reader Clio Infotech Ltd: rule: no results table page
+04 15:54:13 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
