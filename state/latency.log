@@ -1633,3 +1633,37 @@
 04 14:02:08 wait 531494 Navkar Urbanstructure Ltd: numbers not yet on BSE
 04 14:02:34 ready 538923|Sep-26|na kind=photo waited_min=48.8 tries=8 pdf_log=nim reader eMudhra Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the
 04 14:02:43 ready 530053|Sep-26|na kind=photo waited_min=48.8 tries=2 pdf_log=pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF | rule reader Real Eco-Energy Ltd: rule: no results table page | pdf 
+04 14:03:00 ready 524576|Sep-26|na kind=photo waited_min=48.8 tries=0 pdf_log=pdf read failed Ravindra Energy Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | conc
+04 14:03:24 wait 526823 Rajeswari Infrastructure Ltd: numbers not yet on BSE
+04 14:03:28 pdf nim reader Colab Platforms Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 60 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+04 14:03:28 pdf pdf read failed Colab Platforms Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash
+04 14:03:28 pdf nim reader eMudhra Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 429
+04 14:03:28 pdf pdf read failed eMudhra Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash: ReadTi
+04 14:03:28 pdf pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF
+04 14:03:28 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader GSB Finance Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
+04 14:03:28 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
+04 14:03:28 pdf nim reader Ravindra Energy Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 14:03:28 pdf pdf read failed Ravindra Energy Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash
+04 14:03:28 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
+04 14:03:28 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
+04 14:03:28 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+04 14:03:28 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
+04 14:03:28 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader SPV Global Trading Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
+04 14:03:28 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
+04 14:03:28 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Varun Mercantile Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
+04 14:03:28 pdf rule reader Microse India Ltd: rule: no results table page
+04 14:03:28 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
