@@ -3022,7 +3022,8 @@
 "444c64c4-1890-4fcd-8f6e-e536d18c816b",
 "89c85dd3-151f-4ead-bd80-0930aae28865",
 "720e2277-1290-4e9d-9d51-1fd71316247b",
-"7e4e67b4-cd97-4a8f-b290-2b192eb108d0"
+"7e4e67b4-cd97-4a8f-b290-2b192eb108d0",
+"ead5cb4c-4d81-4c67-a88d-cbf2a1f6372a"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4875,7 +4876,8 @@
 "513683|Sep-26|consolidated",
 "532805|Sep-26|consolidated",
 "532548|Sep-26|consolidated",
-"506690|Sep-26|consolidated"
+"506690|Sep-26|consolidated",
+"543214|Sep-26|consolidated"
 ],
 "pending": {
 "4506d08d-3397-4ed4-9353-a7341bdd8c37": {
@@ -5258,44 +5260,6 @@
 "last": 1793781085.862791,
 "alerted": true
 },
-"ead5cb4c-4d81-4c67-a88d-cbf2a1f6372a": {
-"rec": {
-"NEWSID": "ead5cb4c-4d81-4c67-a88d-cbf2a1f6372a",
-"SCRIP_CD": 543214,
-"XML_NAME": "ANN_543214_EAD5CB4C-4D81-4C67-A88D-CBF2A1F6372A",
-"NEWSSUB": "NDR Auto Components Ltd - 543214 - OUTCOME OF THE MEETING OF BOARD OF DIRECTORS HELD TODAY, 4TH NOVEMBER, 2026",
-"DT_TM": "2026-11-04T13:31:07.103",
-"NEWS_DT": "2026-11-04T13:31:07.103",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8e77cb7e-469a-4188-a6bf-3a92a4227397.pdf",
-"MORE": "",
-"HEADLINE": "as per attachment.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ndr-auto-components-ltd/ndrauto/543214/",
-"SLONGNAME": "NDR Auto Components Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 11,
-"News_submission_dt": "2026-11-04T13:31:07",
-"DissemDT": "2026-11-04T13:31:07.103",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2315382,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793779585.4487135,
-"last": 1793780954.4835908,
-"alerted": true
-},
 "c42562aa-63a7-4975-8fd0-46c49ae6944c": {
 "rec": {
 "NEWSID": "c42562aa-63a7-4975-8fd0-46c49ae6944c",
@@ -5564,10 +5528,6 @@
 }
 },
 "lag": [
-[
-"Elegant Marbles & Grani Industries Ltd",
-121
-],
 [
 "Wardwizard Healthcare Ltd",
 81
@@ -6763,6 +6723,10 @@
 [
 "Century Plyboards (India) Ltd-$",
 25
+],
+[
+"NDR Auto Components Ltd",
+25
 ]
 ],
 "gem_use": {
@@ -7400,6 +7364,16 @@
 "rev": 6402.200000000001,
 "pat": 222.2,
 "t": 1793781173.1187327,
+"last": 0
+},
+"543214|Sep-26|consolidated": {
+"code": "543214",
+"name": "NDR Auto Components Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2440.181,
+"pat": 197.798,
+"t": 1793781181.682914,
 "last": 0
 }
 },
@@ -9187,106 +9161,6 @@
 "42a547e7-8b2e-4fc9-93c8-ff18e40f084c": 1
 },
 "cons_expected": {
-"16629de6-a4d4-47f6-9bd2-48110e8a9315": 1,
-"cc0e89a8-d61e-4bb8-923b-10621747d381": 1,
-"1c717961-c99a-46f2-b5ab-5dfae090d6cd": 1,
-"a678387e-e2aa-4f51-b92e-d0ba85a0b004": 1,
-"f5aa5c0a-7755-45d2-95ef-594eb661b769": 1,
-"25492ce4-e8ea-4d15-acef-5271f66450c4": 1,
-"0a602b02-731a-4ee0-8bb5-604f784e1426": 1,
-"6019615a-1a68-4f5d-ad22-8e5830dceb28": 1,
-"0df2ae69-dd53-4517-a5a9-70f242659631": 1,
-"ec41d78f-872d-4dc0-89e7-5a93c8ccab3c": 1,
-"d4812941-b49f-47dc-b9ac-991ad4d01ee6": 1,
-"096f1e5a-3667-42a5-b4e2-ba8272ee52fc": 1,
-"649971d2-d77d-47e5-9986-6182366afdc8": 1,
-"789cdbdf-0e68-46dc-9577-418902fa6638": 1,
-"85323e6b-cebf-4f5c-b80b-395c2b9e7497": 1,
-"cfff91d7-e7da-47f9-8c1d-02fa644ec624": 1,
-"79ad0115-92ec-4bae-8ef4-6c0230beb39f": 1,
-"403e94bc-775c-4e11-afe2-6352f02bf504": 1,
-"4e78379f-9134-45ad-b7cd-05f51f407a40": 1,
-"e9c2682f-c9c1-4475-ab70-e964c11f9114": 1,
-"e141311f-8dad-439a-aef1-8a908beb9275": 1,
-"12aa4109-7a1a-4caa-8b6f-97c8438b05ac": 1,
-"70754463-cf7e-46d2-afc6-c54969ead423": 1,
-"23c87dd6-fa3a-448d-a641-aacc1c5f3b9c": 1,
-"6fe0df62-7cba-4eff-8900-58cb22ecc58c": 1,
-"69c1f775-ae68-4627-8801-21012fc2671f": 1,
-"db5b516a-a9ee-40a2-9189-253211311ef2": 1,
-"4c7839fe-bbd4-443b-9272-d7507857c3cf": 1,
-"4e5bf960-c693-4283-a946-8f4790fd9935": 1,
-"cca555e1-d4ef-4cd3-808c-134ce3e305a2": 1,
-"592dff7e-dae3-4902-91cc-d98aab9015f8": 1,
-"01746679-5569-471e-a1c5-9deae609f4c6": 1,
-"69167bd1-2c97-4c90-b98d-0c2a4c90042d": 1,
-"60c77894-981c-4c23-9594-79ce3a60f914": 1,
-"7db69de8-bc82-4cf5-96ea-90debf3cc550": 1,
-"446918f9-6b33-4810-83a6-0794385a45c7": 1,
-"8f616e5f-9971-4756-bd67-e046107043f6": 1,
-"612912f6-7772-4de8-b83f-9fb4fa8756d2": 1,
-"bcb2bd08-ae56-43a9-9cd5-3e04c2afd7c1": 1,
-"09817921-144d-44ee-bbbb-d8cbf167f86a": 1,
-"861ea730-2281-4761-832f-3d919507045c": 1,
-"1363a463-2e6e-4bc3-a839-4d3c8cc9ce37": 1,
-"9eb33f94-24a5-43ee-b614-ee1592a76e6a": 1,
-"32e886d7-a33f-416e-966f-0d0aa0820815": 1,
-"6ec026a8-f682-46b4-8c1b-341dfbabf820": 1,
-"f169cc8b-9847-4940-8843-907faed37d1d": 1,
-"0d56abf7-3b63-44e6-ab9f-731223b6168a": 1,
-"18f0e5bb-0483-42f6-93fb-df1538aadc3f": 1,
-"178cad0c-e837-45a4-bccf-fe02c625642c": 1,
-"14574fbf-b0fb-4082-8ecd-c0c0ea830680": 1,
-"d22cf478-25d2-4616-8a1b-3d6aa5ee7083": 1,
-"3c08b65f-9698-462a-9fa3-71a8a7093f18": 1,
-"140d72b3-bbd4-443c-9b09-8796c729d457": 1,
-"35aa322d-0527-4313-be1f-e814e07a6893": 1,
-"48c78a01-7bbf-4927-bbdb-cd653ec1befa": 1,
-"3b11b5bc-81fa-4d0f-a91c-70cded96aa16": 1,
-"5a8fd569-6b12-433b-870f-9bb14ea736fb": 1,
-"05bd2d20-b77d-4ff6-bc11-1390714d6cc8": 1,
-"d410197b-60cc-482f-9c37-ffeed7ac7533": 1,
-"8dc0fa8c-ab4b-4860-a7de-a259350e0f25": 1,
-"bb455068-8b4c-4124-96a9-7a91b0e0556f": 1,
-"d47dd3c9-cfe1-4ca1-8dc1-95ce15a3a1a1": 1,
-"40516c3e-ccee-44e7-8ade-db427e765632": 1,
-"7430bcca-4473-4d88-9a91-61c261818461": 1,
-"88e8830f-523d-4fc6-86d8-5294bed6e454": 1,
-"00e5aa02-5603-4d30-9d4d-1046c5cebbd2": 1,
-"59dd5f42-ddae-4ab3-beef-2fa2dd596cd6": 1,
-"7faec7c5-90c4-4143-8b92-fffc98316cb2": 1,
-"a29b8d72-e234-4c3f-8977-e2974275d7af": 1,
-"972229c1-b799-48fa-b474-7131915a4539": 1,
-"6b6784c2-d3f3-4cd2-807c-f936132420a2": 1,
-"e0cbfe87-d450-4f7b-9fe1-7c7d3950ed41": 1,
-"1d92760b-605c-4dbc-9930-602c74351f1c": 1,
-"39e58744-6e5c-401f-9a63-4c2996c6e934": 1,
-"be9f6af2-04d7-42b6-98e5-0abfe3f11dd7": 1,
-"927accc7-0fc2-4b9e-936e-1b94594cf77c": 1,
-"c1e2a2e0-9244-4265-978a-8cf36f04bc1c": 1,
-"3d90a81b-52f2-427a-b1f7-27f545cf1ca5": 1,
-"30e86a4d-fe94-491a-9a12-16f54943e3ef": 1,
-"06564507-8a66-41b7-b13d-333f65d87278": 1,
-"4189fd89-2db2-448d-9316-e8094fef6362": 1,
-"09b0e6dd-b7b8-4d44-9325-da27ac8f711d": 1,
-"875a7168-b213-4521-a78c-8dfde051002e": 1,
-"e58530b6-16ec-4a7d-906d-b730e0d5c018": 1,
-"ca92e7ef-137a-42d0-b470-9ed1415980d2": 1,
-"3d6dbffe-92ce-416c-bd73-262a5270438b": 1,
-"56db2797-3ac8-434e-ade4-504ec36ec93e": 1,
-"1342c5ea-ab17-45fd-a7c4-9103eb914692": 1,
-"7257f3cb-43a6-4d27-8fa9-779876f44bdd": 1,
-"b08c0c25-0c5a-4927-8653-cd229e17e78e": 1,
-"0f2343f0-c6a2-4ee2-ae67-73ddea8fd342": 1,
-"084fff7b-59dc-4e09-8770-cc3f224ebdc9": 1,
-"27b4340a-8de0-47f9-88dd-1e0300905ba0": 1,
-"417eeb11-a26c-46e2-a21c-ab927daec3ae": 1,
-"8bb60087-c2c5-4ce7-913a-9df275d7a6a8": 1,
-"db302613-ee81-4ec7-a979-bc5cfd6f4f16": 1,
-"5aa75130-79de-49de-a96f-8eb7da753fc9": 1,
-"4fcc723a-9b7a-4592-96f9-ff0f68202b76": 1,
-"bd1a9683-711e-443c-afcf-600800b1b5ed": 1,
-"93848be9-b411-4eff-913f-0e1c619c27eb": 1,
 "10a7587c-38a4-4c2f-849c-f3959bad54f4": 1,
 "0e206120-e0de-49d3-91eb-dd577a084908": 1,
 "dec0f4f2-2f60-42ea-8e27-f9f0c039590d": 1,
@@ -9786,7 +9660,8 @@
 "444c64c4-1890-4fcd-8f6e-e536d18c816b": 1,
 "89c85dd3-151f-4ead-bd80-0930aae28865": 1,
 "720e2277-1290-4e9d-9d51-1fd71316247b": 1,
-"7e4e67b4-cd97-4a8f-b290-2b192eb108d0": 1
+"7e4e67b4-cd97-4a8f-b290-2b192eb108d0": 1,
+"ead5cb4c-4d81-4c67-a88d-cbf2a1f6372a": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
