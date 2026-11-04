@@ -1707,3 +1707,9 @@
 04 14:14:34 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
 04 14:14:34 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
 04 14:14:34 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
+04 14:14:36 seen 501314 Prismx Global Ventures Ltd cat=Board Meeting early=True bse_time=19:40:33 dissem=19:40:33
+04 14:14:36 seen 500650 Excel Industries Ltd cat=Board Meeting early=True bse_time=19:40:53 dissem=19:40:53
+04 14:14:36 seen 533098 NHPC Ltd cat=Result early=False bse_time=19:41:09 dissem=19:41:09
+04 14:14:59 wait 533098 NHPC Ltd: numbers not yet on BSE
+04 14:15:07 ready 500650|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf has consolidated but it failed checks: not falling back to standalone Lumino Industries Ltd | strong model retry did not help: HTTP 429 (skipped gemini-3.5-
+04 14:15:17 ready 530023|Sep-26|consolidated kind=photo waited_min=3.5 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Excel Industries Ltd consolidated ok=True/3: rev
