@@ -3244,7 +3244,9 @@
 "af790b90-d602-4734-b32b-6d13c18b2dd8",
 "3fff087f-ce65-4f62-954d-17ee4bb67804",
 "3c961faa-0f63-4398-83f8-49ed960afcfc",
-"4b4dd19e-e038-4305-9ca4-136f8ee89b40"
+"4b4dd19e-e038-4305-9ca4-136f8ee89b40",
+"22f75b49-5ae7-4c48-a50c-dbb2c193ee9c",
+"09064b38-9ae2-4c0b-868f-af96e6da08c5"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5218,7 +5220,9 @@
 "531260|Sep-26|standalone",
 "532410|Sep-26|consolidated",
 "530271|Sep-26|standalone",
-"532813|Sep-26|na"
+"532813|Sep-26|na",
+"531847|Sep-26|consolidated",
+"507785|Sep-26|standalone"
 ],
 "pending": {
 "fd6d7ebd-ed33-4605-a2b3-cad5794c6aa4": {
@@ -5256,7 +5260,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786768.4943802,
-"last": 1793791393.632757,
+"last": 1793791517.8570054,
 "alerted": true
 },
 "25fbef28-f237-45bb-a2dc-bc367e4b8ba9": {
@@ -5446,44 +5450,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793790915.6982915,
-"last": 1793791393.632757,
-"alerted": false
-},
-"09064b38-9ae2-4c0b-868f-af96e6da08c5": {
-"rec": {
-"NEWSID": "09064b38-9ae2-4c0b-868f-af96e6da08c5",
-"SCRIP_CD": 507785,
-"XML_NAME": "ANN_507785_09064B38-9AE2-4C0B-868F-AF96E6DA08C5",
-"NEWSSUB": "Tainwala Chemicals and Plastics (India) Ltd - 507785 - Results-Financial Results For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-11-04T16:44:59.36",
-"NEWS_DT": "2026-11-04T16:44:59.36",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5b688705-8ef5-40a3-8f75-4b0fc1b13846.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed herewith the Unaudited Financial Results for the quarter and half year ended 30th September, 2026, along with the Limited Review Report thereon.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/tainwala-chemicals-and-plastics-(india)-ltd/tainwalchm/507785/",
-"SLONGNAME": "Tainwala Chemicals and Plastics (India) Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 26,
-"News_submission_dt": "2026-11-04T16:44:59",
-"DissemDT": "2026-11-04T16:44:59.36",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5257353,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793790956.2471788,
 "last": 1793791393.632757,
 "alerted": false
 },
@@ -5714,13 +5680,47 @@
 "first": 1793791393.632757,
 "last": 1793791393.632757,
 "alerted": false
+},
+"291e5d50-d253-453f-af5e-da4d4254bb9e": {
+"rec": {
+"NEWSID": "291e5d50-d253-453f-af5e-da4d4254bb9e",
+"SCRIP_CD": 543172,
+"XML_NAME": "ANN_543172_291E5D50-D253-453F-AF5E-DA4D4254BB9E",
+"NEWSSUB": "Cospower Engineering Ltd - 543172 - Standalone Un-Audited Financial Results Of The Company For The Half Year Ended On September 30, 2026",
+"DT_TM": "2026-11-04T16:53:25.023",
+"NEWS_DT": "2026-11-04T16:53:25.023",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "da80b780-fd85-41bb-b7f6-891e9517eb72.pdf",
+"MORE": "",
+"HEADLINE": "Submission of Standalone Un-audited Financial Results of the company for the half year ended on September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/cospower-engineering-ltd/cospower/543172/",
+"SLONGNAME": "Cospower Engineering Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 27,
+"News_submission_dt": "2026-11-04T16:53:25",
+"DissemDT": "2026-11-04T16:53:25.023",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 3779083,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793791517.8570054,
+"last": 1793791517.8570054,
+"alerted": false
 }
 },
 "lag": [
-[
-"Kush Industries Ltd",
-47
-],
 [
 "Poona Dal & Oil Industries Ltd",
 10
@@ -6916,6 +6916,10 @@
 [
 "C & C Constructions Ltd",
 45
+],
+[
+"Tainwala Chemicals and Plastics (India) Ltd",
+9
 ]
 ],
 "gem_use": {
@@ -6942,7 +6946,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 452
+"2026-11-04": 461
 },
 "pdfposted": {
 "538975|Sep-26|standalone": {
@@ -8163,6 +8167,26 @@
 "rev": 1.242,
 "pat": 1.034,
 "t": 1793791489.0392005,
+"last": 0
+},
+"531847|Sep-26|consolidated": {
+"code": "531847",
+"name": "Asian Star Company Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 6040.887000000001,
+"pat": 154.56300000000002,
+"t": 1793791548.7103698,
+"last": 0
+},
+"507785|Sep-26|standalone": {
+"code": "507785",
+"name": "Tainwala Chemicals and Plastics (India) Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 11.497,
+"pat": 35.307,
+"t": 1793791559.708904,
 "last": 0
 }
 },
@@ -9920,7 +9944,8 @@
 "3f8b2b1a-c9a3-4446-91be-c91bd4aa91fe": 1,
 "55b951d9-8169-4bb4-8af2-21858b3d67b5": 1,
 "902a0f92-8edb-443c-a813-d80b85db218d": 1,
-"a1831b77-7120-4f4c-b3a8-b5478937d854": 1
+"a1831b77-7120-4f4c-b3a8-b5478937d854": 1,
+"291e5d50-d253-453f-af5e-da4d4254bb9e": 1
 },
 "cons_expected": {
 "10a7587c-38a4-4c2f-849c-f3959bad54f4": 1,
@@ -10521,7 +10546,8 @@
 "7b87d0bf-bf80-40e6-af5f-23875bf58061": 1,
 "62a1a0d0-391d-43ac-bbff-1a53d562d56f": 1,
 "af790b90-d602-4734-b32b-6d13c18b2dd8": 1,
-"5d34fc08-2f19-4059-b7be-3dd2a43ff68d": 1
+"5d34fc08-2f19-4059-b7be-3dd2a43ff68d": 1,
+"22f75b49-5ae7-4c48-a50c-dbb2c193ee9c": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -11496,6 +11522,13 @@
 "SLONGNAME": "Piotex Industries Ltd",
 "ATTACHMENTNAME": "c9c9b2a3-e08f-44c7-b293-c8d3427fe89b.pdf",
 "NEWS_DT": "2026-11-04T16:11:21.56"
+},
+"291e5d50-d253-453f-af5e-da4d4254bb9e": {
+"NEWSID": "291e5d50-d253-453f-af5e-da4d4254bb9e",
+"SCRIP_CD": 543172,
+"SLONGNAME": "Cospower Engineering Ltd",
+"ATTACHMENTNAME": "da80b780-fd85-41bb-b7f6-891e9517eb72.pdf",
+"NEWS_DT": "2026-11-04T16:53:25.023"
 }
 },
 "gem_key_use": {
@@ -11523,7 +11556,7 @@
 "other": 58
 },
 "results-key": {
-"ok": 173,
+"ok": 182,
 "429": 4,
 "other": 32
 },
