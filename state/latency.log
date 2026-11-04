@@ -1689,3 +1689,8 @@
 04 05:07:54 pdf pdf read failed Gaja Alternative Asset Management Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest,
 04 05:10:47 seen 544885 Gaja Alternative Asset Manag cat=Result early=False bse_time=10:39:55 dissem=10:39:55
 04 05:11:07 ready 544885|unverified|c3a11ab8-0053-453f-9998-16e1b6c2b9f9 kind=photo waited_min=0.0 tries=1 pdf_log=
+04 05:13:51 pdf nim reader Gaja Alternative Asset Management Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 05:13:51 pdf pdf read failed Gaja Alternative Asset Management Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 05:13:53 pdf rule reader Gaja Alternative Asset Management Ltd: rule: filing mentions consolidated results but that table was not read
+04 05:13:53 pdf nim reader Gaja Alternative Asset Management Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 05:13:53 pdf pdf read failed Gaja Alternative Asset Management Ltd: gemini skipped (quota/backoff); nim: cooling down
