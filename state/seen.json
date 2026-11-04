@@ -3354,7 +3354,9 @@
 "1af962b5-d9f0-4817-bf89-c003ee800aba",
 "f01cc0be-3ded-4e42-aecf-73db5e53dafd",
 "53d567fc-3961-42c3-80ed-e0d79153764c",
-"10c17233-021e-4678-b511-0568dcd7beec"
+"10c17233-021e-4678-b511-0568dcd7beec",
+"398758a9-74f0-4f75-b5cc-90c9566b4f38",
+"e34d9d0d-8453-484b-a670-98c6ee677546"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5395,7 +5397,8 @@
 "517544|Sep-26|na",
 "526608|Sep-26|consolidated",
 "533704|Sep-26|consolidated",
-"544058|Sep-26|standalone"
+"544058|Sep-26|standalone",
+"511696|Sep-26|standalone"
 ],
 "pending": {
 "1fc1eecf-e02f-4a70-942d-f1cf821715c9": {
@@ -5661,7 +5664,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793794258.2630694,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": true
 },
 "caaeb27e-5061-4635-aa26-016327fa71b2": {
@@ -5775,7 +5778,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793794537.3815107,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": true
 },
 "a9bc0241-3448-41a4-8cbf-5458266ad290": {
@@ -5813,7 +5816,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793794537.3815107,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": false
 },
 "35c4c408-036f-4413-857b-04b293aba1a0": {
@@ -5851,8 +5854,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793794734.782958,
-"last": 1793795782.9809737,
-"alerted": false
+"last": 1793796133.1300428,
+"alerted": true
 },
 "ccd51d9c-35bc-4ba1-a17e-ffba6d421cec": {
 "rec": {
@@ -6079,7 +6082,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793795175.2173018,
-"last": 1793795782.9809737,
+"last": 1793796133.1300428,
 "alerted": false
 },
 "b03f2f35-1a80-4f91-82c2-316efd7362dd": {
@@ -7499,7 +7502,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 607
+"2026-11-04": 611
 },
 "pdfposted": {
 "514316|Sep-26|standalone": {
@@ -9080,6 +9083,16 @@
 "rev": 0.4,
 "pat": -295.5,
 "t": 1793796267.237923,
+"last": 0
+},
+"511696|Sep-26|standalone": {
+"code": "511696",
+"name": "Chartered Capital & Investment Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 51.120000000000005,
+"pat": 6.264,
+"t": 1793796411.943013,
 "last": 0
 }
 },
@@ -10875,7 +10888,8 @@
 "75307474-80b3-4892-b370-65573f061fdf": 1,
 "bceba850-8fe1-46a3-9fd1-ed7b31776580": 1,
 "de228861-48b8-4d4e-83a8-386a1c29bee8": 1,
-"f01cc0be-3ded-4e42-aecf-73db5e53dafd": 1
+"f01cc0be-3ded-4e42-aecf-73db5e53dafd": 1,
+"e34d9d0d-8453-484b-a670-98c6ee677546": 1
 },
 "cons_expected": {
 "7df4e26c-6236-4a29-a2e6-d01bcc2d8975": 1,
@@ -11422,7 +11436,8 @@
 "df58e764-d019-404e-b411-f1368dd5f4cc": 1,
 "a6c97f82-4b61-4ae1-bf1b-9449cb4daa51": 1,
 "1af962b5-d9f0-4817-bf89-c003ee800aba": 1,
-"10c17233-021e-4678-b511-0568dcd7beec": 1
+"10c17233-021e-4678-b511-0568dcd7beec": 1,
+"398758a9-74f0-4f75-b5cc-90c9566b4f38": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12467,6 +12482,13 @@
 "SLONGNAME": "Desco Infratech Ltd",
 "ATTACHMENTNAME": "964fdff2-567c-4b66-829b-42242ee778a3.pdf",
 "NEWS_DT": "2026-11-04T17:53:43.26"
+},
+"398758a9-74f0-4f75-b5cc-90c9566b4f38": {
+"NEWSID": "398758a9-74f0-4f75-b5cc-90c9566b4f38",
+"SCRIP_CD": 544675,
+"SLONGNAME": "Gabion Technologies India Ltd",
+"ATTACHMENTNAME": "27c64046-8903-4451-a260-9187725213b8.pdf",
+"NEWS_DT": "2026-11-04T18:11:09.083"
 }
 },
 "gem_key_use": {
@@ -12499,7 +12521,7 @@
 "other": 46
 },
 "concall-key": {
-"ok": 27,
+"ok": 43,
 "429": 5,
 "other": 31
 }
