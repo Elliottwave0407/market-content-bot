@@ -1656,3 +1656,9 @@
 04 00:29:43 seen 500257 Lupin Ltd cat=Result early=False bse_time=01:01:31 dissem=01:01:31
 04 00:29:43 seen 513307 Belding India Ltd cat=Result early=False bse_time=03:31:54 dissem=03:31:54
 04 00:29:43 seen 513307 Belding India Ltd cat=Result early=False bse_time=03:42:27 dissem=03:42:27
+04 00:30:10 ready 500112|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+04 00:30:17 wait 500672 Evonile Pharma Ltd: confirming that no consolidated statement exists
+04 00:30:24 wait 513307 Belding India Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
+04 00:30:25 wait 513307 Belding India Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
+04 00:30:26 pdf pdf current col Belding India Ltd consolidated ok=True/3: revenue=661.03, other_income=206.75, total_income=867.78, total_expenses=1734.26, finance_costs=118.91, depreciation=275.44, pbt=-866.48, tax=-311.31, pat=-555.15, eps=-3.6
+04 00:30:26 pdf pdf incomplete Belding India Ltd consolidated: missing ['revenue'] - not posting from PDF
