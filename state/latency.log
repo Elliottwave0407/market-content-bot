@@ -1943,3 +1943,36 @@
 04 15:05:14 ready 540935|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Vindhya Telelinks Ltd: rule: no results table page | rule reader Galaxy Surfactants Ltd: ok | pdf current col Galaxy Surfactants Ltd consolidated ok
 04 15:06:03 ready 530367|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 04 15:06:31 wait 517015 Vindhya Telelinks Ltd: numbers not yet on BSE
+04 15:10:29 wait 539132 Wardwizard Foods and Beverag: numbers not yet on BSE
+04 15:10:31 wait 532710 Sadbhav Engineering Ltd: numbers not yet on BSE
+04 15:10:38 wait 544498 Oval Projects Engineering Lt: numbers not yet on BSE
+04 15:10:45 wait 522165 Indsil Hydro Power and Manga: numbers not yet on BSE
+04 15:10:48 wait 513709 Shilp Gravures Ltd-$: numbers not yet on BSE
+04 15:11:01 ready 501314|Sep-26|na kind=photo waited_min=47.6 tries=4 pdf_log=pdf read deferred Capfin India Ltd: per-pass AI call cap | rule reader Prismx Global Ventures Ltd: rule: no results table page | pdf read deferred Prismx Global
+04 15:11:18 pdf rule reader Steelco Gujarat Ltd: rule: stan: missing ['pat'] n=3
+04 15:11:18 pdf nim reader Steelco Gujarat Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:11:18 pdf pdf read failed Steelco Gujarat Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:11:18 pdf rule reader Oval Projects Engineering Ltd: rule: header has no quarter columns
+04 15:11:18 pdf nim reader Oval Projects Engineering Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:11:18 pdf pdf read failed Oval Projects Engineering Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:11:18 pdf rule reader KROWNIQ Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[7990.17, 12267.08, 8739.77] pbt=[83.11, 527.88, 300.42] tax=[18.79, 138.85, 0.52] pat=[64.32, 389.03, 299.9] depreciation=[41.93, 28.12, 3
+04 15:11:18 pdf pdf read deferred KROWNIQ Ltd: per-pass AI call cap
+04 15:11:18 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
+04 15:11:18 pdf pdf read deferred Indsil Hydro Power and Manganese Ltd-$: per-pass AI call cap
+04 15:11:18 pdf rule reader Shilp Gravures Ltd-$: rule: stan: 12 columns
+04 15:11:18 pdf pdf read deferred Shilp Gravures Ltd-$: per-pass AI call cap
+04 15:11:18 pdf rule reader Shilp Gravures Ltd-$: rule: stan: 12 columns
+04 15:11:18 pdf pdf read deferred Shilp Gravures Ltd-$: per-pass AI call cap
+04 15:11:18 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
+04 15:11:18 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
+04 15:11:18 pdf rule reader Capfin India Ltd: rule: no results table page
+04 15:11:18 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
+04 15:11:18 pdf rule reader Prismx Global Ventures Ltd: rule: no results table page
+04 15:11:18 pdf pdf read deferred Prismx Global Ventures Ltd: per-pass AI call cap
+04 15:11:18 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 15:11:18 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
+04 15:11:18 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 15:11:18 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
+04 15:11:18 pdf rule reader Shivansh Finserve Ltd: ok
+04 15:11:18 pdf pdf current col Shivansh Finserve Ltd standalone ok=True/3: revenue=44.4, other_income=30.7, total_income=75.1, total_expenses=26.89, finance_costs=None, depreciation=0.32, pbt=48.21, tax=12.36, pat=35.84, eps=0.57
+04 15:11:18 pdf pdf incomplete Shivansh Finserve Ltd standalone: missing ['revenue'] - not posting from PDF
