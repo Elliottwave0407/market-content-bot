@@ -1545,3 +1545,10 @@
 04 07:02:55 ready 531340|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=pdf current col Cera Sanitaryware Ltd standalone ok=True/3: revenue=60295.95, other_income=1089.33, total_income=61385.28, total_expenses=54083.49, finance_cost
 04 07:03:02 pdf nim reader Makers Laboratories Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
 04 07:03:02 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 07:03:16 pdf rule reader Makers Laboratories Ltd-$: rule: stan: missing ['pat'] n=6
+04 07:03:16 pdf nim reader Makers Laboratories Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 07:03:16 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+04 07:03:23 pdf nim reader Saregama India Ltd: ok (gemini: gemini skipped (quota/backoff))
+04 07:03:24 seen 531503 Maris Spinners Ltd-$ cat=Result early=False bse_time=12:32:44 dissem=12:32:44
+04 07:03:24 seen 505250 G. G. Dandekar Properties Lt cat=Board Meeting early=True bse_time=12:33:05 dissem=12:33:05
+04 07:03:56 ready 532163|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=
