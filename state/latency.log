@@ -1680,3 +1680,8 @@
 04 15:54:13 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 23 numbers not found in the filing text (possible inv
 04 15:54:13 pdf rule reader Clio Infotech Ltd: rule: no results table page
 04 15:54:13 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
+04 15:54:15 seen 544008 Max Estates Ltd cat=Result early=False bse_time=21:22:07 dissem=21:22:07
+04 15:55:08 pdf rule reader Clio Infotech Ltd: rule: no results table page
+04 15:55:08 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
+04 15:55:08 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+04 15:55:15 ready 531676|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf incomplete Wanbury Ltd consolidated: missing ['pat', 'revenue'] - not posting from PDF | pdf current col Emrock Corporation Ltd standalone ok=False/3: reven
