@@ -1755,3 +1755,10 @@
 04 09:54:26 pdf rule reader Ishwarshakti Holdings & Traders Ltd: rule: stan: does not reconcile [thousand] pbt=[None, None, None] pat=[-1278.3, 400.75, 4580.15] finance_costs=[23.0, 0.09, 5.22]
 04 09:54:26 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
 04 09:54:55 ready 544264|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+04 09:55:31 seen 531556 Coral India Finance & Housin cat=Result early=False bse_time=15:24:43 dissem=15:24:43
+04 09:56:29 seen 543976 Shradha AI Technologies Ltd cat=Board Meeting early=True bse_time=15:25:55 dissem=15:25:55
+04 09:56:33 ready 543976|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Shradha AI Technologies Ltd: ok | pdf current col Shradha AI Technologies Ltd standalone ok=True/3: revenue=400.0, other_income=136.77, total_income
+04 09:56:44 pdf rule reader Shradha AI Technologies Ltd: ok
+04 09:56:44 pdf pdf current col Shradha AI Technologies Ltd standalone ok=True/3: revenue=400.0, other_income=136.77, total_income=536.77, total_expenses=116.67, finance_costs=9.81, depreciation=4.96, pbt=420.1, tax=108.06, pat=312.04, eps=0.51
+04 09:56:44 pdf strong model retry did not help: None
+04 09:56:44 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
