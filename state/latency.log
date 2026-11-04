@@ -1589,3 +1589,13 @@
 04 07:09:12 pdf rule reader G. G. Dandekar Properties Ltd: rule: stan: missing ['pat'] n=6
 04 07:09:12 pdf nim reader G. G. Dandekar Properties Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
 04 07:09:12 pdf pdf read failed G. G. Dandekar Properties Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 07:09:24 pdf rule reader Andhra Petrochemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[12368.61, 2069.47, 17371.69] total_expenses=[41977.32, 2544.79, 17261.22] pbt=[391.29, -47532.0, 11047.0] pat=[242.01, -32518.0, 21442.0] d
+04 07:09:24 pdf nim reader Andhra Petrochemicals Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 07:09:24 pdf pdf read failed Andhra Petrochemicals Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 07:10:06 seen 544371 Vikram Aroma Ltd cat=Result early=False bse_time=12:39:22 dissem=12:39:22
+04 07:10:31 wait 544371 Vikram Aroma Ltd: numbers not yet on BSE
+04 07:10:38 seen 539770 Darjeeling Industriies Ltd cat=Result early=False bse_time=12:40:25 dissem=12:40:25
+04 07:11:08 wait 539770 Darjeeling Industriies Ltd: numbers not yet on BSE
+04 07:12:07 pdf nim reader Andhra Petrochemicals Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (ge
+04 07:12:07 pdf pdf read failed Andhra Petrochemicals Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possi
+04 07:12:08 seen 543253 Mrs. Bectors Food Specialiti cat=Board Meeting early=True bse_time=12:40:57 dissem=12:40:57
