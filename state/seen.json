@@ -3133,7 +3133,8 @@
 "a84f2b22-ce7f-4058-8f28-d51e6d0a0b46",
 "442cfc92-28b4-40c7-a4f9-954c7319a12c",
 "f2925d54-4fe7-4ced-b1d4-ecc5641dcf37",
-"0ef18ed5-c36c-4fa7-9506-772e62bd71e2"
+"0ef18ed5-c36c-4fa7-9506-772e62bd71e2",
+"fef4366c-b6d8-4301-8a72-787a65f9309d"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5048,7 +5049,8 @@
 "542721|Sep-26|standalone",
 "544600|Sep-26|consolidated",
 "539833|Sep-26|na",
-"530289|Sep-26|consolidated"
+"530289|Sep-26|consolidated",
+"508989|Sep-26|consolidated"
 ],
 "pending": {
 "3f1a8ec8-b5cc-4d0d-9546-950686c35f79": {
@@ -5124,7 +5126,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786480.452717,
-"last": 1793787400.4408696,
+"last": 1793787463.8404973,
 "alerted": false
 },
 "78b2dc60-1b52-4977-beb3-f7a481ffa5fd": {
@@ -5200,45 +5202,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786768.4943802,
-"last": 1793787400.4408696,
-"alerted": false
-},
-"fef4366c-b6d8-4301-8a72-787a65f9309d": {
-"rec": {
-"NEWSID": "fef4366c-b6d8-4301-8a72-787a65f9309d",
-"SCRIP_CD": 508989,
-"XML_NAME": "ANN_508989_FEF4366C-B6D8-4301-8A72-787A65F9309D",
-"NEWSSUB": "Navneet Education Ltd - 508989 - Financial Result For The Quarter And Half Year Ended 30Th September 2026",
-"DT_TM": "2026-11-04T15:44:30.613",
-"NEWS_DT": "2026-11-04T15:44:30.613",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "70aa13b2-f07c-42b3-89be-d99ee9f7bc5d.pdf",
-"MORE": "",
-"HEADLINE": "Financial Result For the Quarter and half Year Ended 30th September 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/navneet-education-ltd/navnetedul/508989/",
-"SLONGNAME": "Navneet Education Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 20,
-"News_submission_dt": "2026-11-04T15:44:30",
-"DissemDT": "2026-11-04T15:44:30.613",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7464711,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793787310.2031598,
-"last": 1793787437.448166,
+"last": 1793787463.8404973,
 "alerted": false
 },
 "ea1d940c-655c-4caa-9f29-6f5b7125f264": {
@@ -5281,10 +5245,6 @@
 }
 },
 "lag": [
-[
-"Eveready Industries India Ltd",
-13
-],
 [
 "G M Polyplast Ltd",
 45
@@ -6480,6 +6440,10 @@
 [
 "Shivom Investment & Consultancy Ltd",
 46
+],
+[
+"Navneet Education Ltd",
+3
 ]
 ],
 "gem_use": {
@@ -6506,7 +6470,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 236
+"2026-11-04": 239
 },
 "pdfposted": {
 "522215|Sep-26|standalone": {
@@ -7477,6 +7441,16 @@
 "rev": 20.204,
 "pat": 2.466,
 "t": 1793787410.351425,
+"last": 0
+},
+"508989|Sep-26|consolidated": {
+"code": "508989",
+"name": "Navneet Education Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 3240.0,
+"pat": -30.0,
+"t": 1793787507.6192217,
 "last": 0
 }
 },
@@ -9754,7 +9728,8 @@
 "a84f2b22-ce7f-4058-8f28-d51e6d0a0b46": 1,
 "80831a5c-8b33-492c-a9c4-dc1e450487da": 1,
 "86f1e21e-16be-4a42-b018-e9dcdab280db": 1,
-"0ef18ed5-c36c-4fa7-9506-772e62bd71e2": 1
+"0ef18ed5-c36c-4fa7-9506-772e62bd71e2": 1,
+"fef4366c-b6d8-4301-8a72-787a65f9309d": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10744,7 +10719,7 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 319,
+"ok": 322,
 "429": 3,
 "other": 57
 },
@@ -10754,9 +10729,9 @@
 "other": 28
 },
 "concall-key": {
-"ok": 3,
+"ok": 5,
 "429": 0,
-"other": 0
+"other": 2
 }
 }
 }
