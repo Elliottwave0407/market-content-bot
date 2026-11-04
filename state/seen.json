@@ -3049,7 +3049,11 @@
 "8e6d1587-aca6-4b1d-a74b-e34cc06220c9",
 "8630e5da-ab02-466f-bcb6-507e300487d4",
 "fc62d248-4560-40a8-80df-2575c300ae69",
-"f313ccdd-ce3b-4d63-8609-f10644aeae93"
+"f313ccdd-ce3b-4d63-8609-f10644aeae93",
+"388dbc8e-5ee0-47f6-a7f7-0827c057a4ce",
+"80c4dcb7-633a-4b90-8c65-5bb0f9abe800",
+"92a61e5b-fde3-41c6-9b43-726e3b21cb97",
+"ad28334e-dca8-4ef7-8dd2-01899877b0dd"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4921,7 +4925,9 @@
 "513097|Sep-26|consolidated",
 "544133|Sep-26|consolidated",
 "526703|Sep-26|na",
-"509003|Sep-26|na"
+"509003|Sep-26|na",
+"532810|Sep-26|consolidated",
+"543387|Sep-26|consolidated"
 ],
 "pending": {
 "4506d08d-3397-4ed4-9353-a7341bdd8c37": {
@@ -5227,51 +5233,9 @@
 "first": 1793781762.2394683,
 "last": 1793781960.3165367,
 "alerted": false
-},
-"388dbc8e-5ee0-47f6-a7f7-0827c057a4ce": {
-"rec": {
-"NEWSID": "388dbc8e-5ee0-47f6-a7f7-0827c057a4ce",
-"SCRIP_CD": 532810,
-"XML_NAME": "ANN_532810_388DBC8E-5EE0-47F6-A7F7-0827C057A4CE",
-"NEWSSUB": "Power Finance Corporation Ltd - 532810 - Outcome Of Board Meeting- Intimation Pursuant To Regulation 30 Of SEBI (Listing    Obligations And Disclosure Requirements) Regulations, 2015",
-"DT_TM": "2026-11-04T14:12:42.64",
-"NEWS_DT": "2026-11-04T14:12:42.64",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "6366dc9a-e116-4770-8466-bd5ebff2585a.pdf",
-"MORE": "",
-"HEADLINE": "outcome",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/power-finance-corporation-ltd/pfc/532810/",
-"SLONGNAME": "Power Finance Corporation Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 13,
-"News_submission_dt": "2026-11-04T14:12:42",
-"DissemDT": "2026-11-04T14:12:42.64",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 17240183,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793781870.9642074,
-"last": 1793781960.3165367,
-"alerted": false
 }
 },
 "lag": [
-[
-"Juniper Green Energy Ltd",
-45
-],
 [
 "The New India Assurance Company Ltd",
 45
@@ -6467,6 +6431,10 @@
 [
 "Transoceanic Properties Ltd",
 45
+],
+[
+"Power Finance Corporation Ltd",
+3
 ]
 ],
 "gem_use": {
@@ -6493,7 +6461,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 76
+"2026-11-04": 82
 },
 "pdfposted": {
 "531611|Sep-26|standalone": {
@@ -7234,6 +7202,26 @@
 "rev": 3683.4550000000004,
 "pat": -567.8140000000001,
 "t": 1793781990.9928093,
+"last": 0
+},
+"532810|Sep-26|consolidated": {
+"code": "532810",
+"name": "Power Finance Corporation Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 290444.8,
+"pat": 76815.1,
+"t": 1793782063.015081,
+"last": 0
+},
+"543387|Sep-26|consolidated": {
+"code": "543387",
+"name": "S.J.S. Enterprises Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2327.28,
+"pat": 583.25,
+"t": 1793782096.355943,
 "last": 0
 }
 },
@@ -9024,7 +9012,8 @@
 "89496e05-2a8f-4632-a5ff-9da1039593da": 1,
 "8415e414-cc82-46db-a556-857392b1ec58": 1,
 "d8d818fd-c95f-4d2d-88ac-ab07b65394c8": 1,
-"75646881-ab4b-4b1e-a5d0-04da594bedb5": 1
+"75646881-ab4b-4b1e-a5d0-04da594bedb5": 1,
+"80c4dcb7-633a-4b90-8c65-5bb0f9abe800": 1
 },
 "cons_expected": {
 "10a7587c-38a4-4c2f-849c-f3959bad54f4": 1,
@@ -9544,7 +9533,10 @@
 "a1f8534a-1c4f-4f35-9012-042c13b34999": 1,
 "8630e5da-ab02-466f-bcb6-507e300487d4": 1,
 "d3ef5161-a472-4eb0-85df-6bc526e5abab": 1,
-"8e6d1587-aca6-4b1d-a74b-e34cc06220c9": 1
+"8e6d1587-aca6-4b1d-a74b-e34cc06220c9": 1,
+"388dbc8e-5ee0-47f6-a7f7-0827c057a4ce": 1,
+"92a61e5b-fde3-41c6-9b43-726e3b21cb97": 1,
+"ad28334e-dca8-4ef7-8dd2-01899877b0dd": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10513,7 +10505,7 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 115,
+"ok": 124,
 "429": 2,
 "other": 40
 },
