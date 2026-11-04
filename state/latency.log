@@ -1549,3 +1549,12 @@
 04 10:15:10 seen 508989 Navneet Education Ltd cat=Result early=False bse_time=15:44:30 dissem=15:44:30
 04 10:15:31 wait 508989 Navneet Education Ltd: numbers not yet on BSE
 04 10:16:06 ready 539833|Sep-26|na kind=photo waited_min=45.8 tries=8 pdf_log=
+04 10:16:40 seen 543976 Shradha AI Technologies Ltd cat=Result early=False bse_time=15:45:11 dissem=15:45:11
+04 10:16:40 seen 530289 SP Capital Financing Ltd cat=Result early=False bse_time=15:45:24 dissem=15:45:24
+04 10:16:50 ready 530289|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader SP Capital Financing Ltd: rule: no results table page | pdf current col Shradha AI Technologies Ltd standalone ok=True/3: revenue=400.0, other_incom
+04 10:17:00 pdf rule reader Shradha AI Technologies Ltd: ok
+04 10:17:00 pdf rule reader SP Capital Financing Ltd: rule: no results table page
+04 10:17:00 pdf pdf current col Shradha AI Technologies Ltd standalone ok=True/3: revenue=400.0, other_income=136.77, total_income=536.77, total_expenses=116.67, finance_costs=9.81, depreciation=4.96, pbt=420.1, tax=108.06, pat=312.04, eps=0.51
+04 10:17:00 pdf pdf current col SP Capital Financing Ltd consolidated ok=True/3: revenue=202.04, other_income=3.36, total_income=205.39, total_expenses=159.95, finance_costs=140.65, depreciation=None, pbt=46.45, tax=21.8, pat=24.66, eps=0.41
+04 10:17:00 pdf pdf current col Gujarat Investa Ltd standalone ok=True/3: revenue=234.02, other_income=14.06, total_income=248.08, total_expenses=226.6, finance_costs=0.34, depreciation=None, pbt=21.48, tax=9.78, pat=11.7, eps=0.16
+04 10:17:00 pdf pdf incomplete Gujarat Investa Ltd standalone: missing ['ebitda'] - not posting from PDF
