@@ -1685,3 +1685,23 @@
 04 15:55:08 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
 04 15:55:08 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
 04 15:55:15 ready 531676|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf incomplete Wanbury Ltd consolidated: missing ['pat', 'revenue'] - not posting from PDF | pdf current col Emrock Corporation Ltd standalone ok=False/3: reven
+04 15:56:05 pdf nim reader TCC Concept Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 15:56:05 pdf pdf read failed TCC Concept Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepseek-
+04 15:56:15 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
+04 15:56:15 pdf nim reader Indsil Hydro Power and Manganese Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:56:15 pdf pdf read failed Indsil Hydro Power and Manganese Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+04 15:56:15 pdf rule reader Clio Infotech Ltd: rule: no results table page
+04 15:56:15 pdf nim reader Clio Infotech Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:56:15 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:56:20 pdf nim reader Trigyn Technologies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemi
+04 15:56:20 pdf pdf read failed Trigyn Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possibl
+04 15:56:20 pdf nim reader Apollo Finvest India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 15:56:20 pdf pdf read failed Apollo Finvest India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 15:56:20 pdf rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6
+04 15:56:20 pdf nim reader TCC Concept Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:56:20 pdf pdf read failed TCC Concept Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:56:20 pdf rule reader Augmont Enterprises Ltd: rule: no results table page
+04 15:56:20 pdf nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:56:20 pdf pdf read failed Augmont Enterprises Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:57:09 pdf nim reader Wanbury Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: HTTP 429
+04 15:57:09 pdf pdf read failed Wanbury Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepseek-v4.1
