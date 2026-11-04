@@ -3464,7 +3464,9 @@
 "6250c48f-8c18-4a4d-97b3-07fec1b691ef",
 "189575cb-5690-40e0-976c-96e3321b644d",
 "5a906c23-e1fb-4c82-a374-ce99491d50dc",
-"45127570-d891-4f20-a60f-e903750f5e38"
+"45127570-d891-4f20-a60f-e903750f5e38",
+"caaeb27e-5061-4635-aa26-016327fa71b2",
+"0f09d5bc-9e30-4862-b502-ae4cecde6780"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5573,85 +5575,11 @@
 "524576|Sep-26|na",
 "533098|Sep-26|consolidated",
 "540597|Sep-26|standalone",
-"543533|Sep-26|consolidated"
+"543533|Sep-26|consolidated",
+"539800|Sep-26|standalone",
+"531257|Sep-26|standalone"
 ],
 "pending": {
-"caaeb27e-5061-4635-aa26-016327fa71b2": {
-"rec": {
-"NEWSID": "caaeb27e-5061-4635-aa26-016327fa71b2",
-"SCRIP_CD": 539800,
-"XML_NAME": "ANN_539800_CAAEB27E-5061-4635-AA26-016327FA71B2",
-"NEWSSUB": "CHD Chemicals Ltd - 539800 - Declaration Of Financial Results For Quarter And Half Year Ended 30Th September 2026",
-"DT_TM": "2026-11-04T17:38:51.653",
-"NEWS_DT": "2026-11-04T17:38:51.653",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "3bde2d78-3a0a-4ce6-9317-8ab15cc9c087.pdf",
-"MORE": "",
-"HEADLINE": "declaration of financial results for quarter and half year ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/chd-chemicals-ltd/chdchem/539800/",
-"SLONGNAME": "CHD Chemicals Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 33,
-"News_submission_dt": "2026-11-04T17:38:51",
-"DissemDT": "2026-11-04T17:38:51.653",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1076668,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793794258.2630694,
-"last": 1793800825.3711865,
-"alerted": false
-},
-"0f09d5bc-9e30-4862-b502-ae4cecde6780": {
-"rec": {
-"NEWSID": "0f09d5bc-9e30-4862-b502-ae4cecde6780",
-"SCRIP_CD": 531257,
-"XML_NAME": "ANN_531257_0F09D5BC-9E30-4862-B502-AE4CECDE6780",
-"NEWSSUB": "Vellora Impact Ltd - 531257 - Financial Result For The Quarter Ended On September 30, 2026.",
-"DT_TM": "2026-11-04T18:08:59.793",
-"NEWS_DT": "2026-11-04T18:08:59.793",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "fdfb4040-b3b7-424c-9319-0c567bc444a5.pdf",
-"MORE": "",
-"HEADLINE": "Financial result for the quarter ended on September 30, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/vellora-impact-ltd/vellora/531257/",
-"SLONGNAME": "Vellora Impact Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 36,
-"News_submission_dt": "2026-11-04T18:08:59",
-"DissemDT": "2026-11-04T18:08:59.793",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1327379,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793796133.1300428,
-"last": 1793800825.3711865,
-"alerted": false
-},
 "18a174bd-31ce-4a06-9154-16c67a7426eb": {
 "rec": {
 "NEWSID": "18a174bd-31ce-4a06-9154-16c67a7426eb",
@@ -6376,14 +6304,6 @@
 }
 },
 "lag": [
-[
-"Shyamkamal Investments Ltd ",
-50
-],
-[
-"PNC Media and Entertainment Ltd",
-50
-],
 [
 "Pro Clb Global Ltd",
 50
@@ -7575,6 +7495,14 @@
 [
 "Containerway International Ltd",
 91
+],
+[
+"CHD Chemicals Ltd",
+113
+],
+[
+"Vellora Impact Ltd",
+81
 ]
 ],
 "gem_use": {
@@ -7601,7 +7529,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 715
+"2026-11-04": 717
 },
 "pdfposted": {
 "533110|Sep-26|standalone": {
@@ -9463,6 +9391,26 @@
 "pat": 0.8710000000000001,
 "t": 1793801227.1033487,
 "last": 0
+},
+"539800|Sep-26|standalone": {
+"code": "539800",
+"name": "CHD Chemicals Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 17.899,
+"pat": 1.811,
+"t": 1793801248.523366,
+"last": 0
+},
+"531257|Sep-26|standalone": {
+"code": "531257",
+"name": "Vellora Impact Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1486.364,
+"pat": 67.139,
+"t": 1793801295.918929,
+"last": 0
 }
 },
 "audit": [
@@ -11179,7 +11127,9 @@
 "5c748cef-9b95-45ab-9703-0f6b85e53966": 1,
 "04f99a1d-1359-43dc-9a02-8251b555e07f": 1,
 "261de1a7-8284-462f-8a21-f8bf300533e1": 1,
-"45127570-d891-4f20-a60f-e903750f5e38": 1
+"45127570-d891-4f20-a60f-e903750f5e38": 1,
+"caaeb27e-5061-4635-aa26-016327fa71b2": 1,
+"0f09d5bc-9e30-4862-b502-ae4cecde6780": 1
 },
 "cons_expected": {
 "7df4e26c-6236-4a29-a2e6-d01bcc2d8975": 1,
@@ -12873,7 +12823,7 @@
 "other": 49
 },
 "concall-key": {
-"ok": 266,
+"ok": 269,
 "429": 7,
 "other": 44
 }

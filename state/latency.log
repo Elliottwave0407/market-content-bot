@@ -1669,3 +1669,5 @@
 04 14:03:28 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
 04 14:03:54 ready 533098|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader The Investment Trust Of India Ltd: rule: stan: missing ['pat'] n=6 | rule reader Avishkar Infra Realty Ltd: rule: no results table page | pdf curren
 04 14:07:07 ready 540597|Sep-26|standalone kind=photo waited_min=90.9 tries=2 pdf_log=pdf checks failed GSB Finance Ltd standalone | rule reader Containerway International Ltd: rule: header has no quarter columns | pdf current col Containerway In
+04 14:07:28 ready 539800|Sep-26|standalone kind=photo waited_min=112.5 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col CHD Chemicals Ltd standalone ok=False/2: revenue
+04 14:08:15 ready 531257|Sep-26|standalone kind=photo waited_min=81.3 tries=1 pdf_log=pdf current col Vellora Impact Ltd standalone ok=False/3: revenue=14863.64, other_income=0.83, total_income=14864.47, total_expenses=13977.91, finance_costs=0.0
