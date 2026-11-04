@@ -1779,3 +1779,18 @@
 04 10:00:18 seen 544286 Niva Bupa Health Insurance C cat=Board Meeting early=True bse_time=15:29:28 dissem=15:29:28
 04 10:00:18 seen 531489 CG Vak Software & Exports Lt cat=Result early=False bse_time=15:29:36 dissem=15:29:36
 04 10:01:19 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
+04 10:01:20 seen 533033 ISGEC Heavy Engineering Ltd cat=Result early=False bse_time=15:29:52 dissem=15:29:52
+04 10:01:20 seen 544264 Diffusion Engineers Ltd cat=Result early=False bse_time=15:30:35 dissem=15:30:35
+04 10:01:28 wait 533033 ISGEC Heavy Engineering Ltd: numbers not yet on BSE
+04 10:01:52 seen 500219 Jain Irrigation Systems Ltd cat=Board Meeting early=True bse_time=15:31:02 dissem=15:31:02
+04 10:02:40 seen 506161 Ishwarshakti Holdings & Trad cat=Result early=False bse_time=15:31:44 dissem=15:31:44
+04 10:02:40 seen 540293 Pricol Ltd cat=Board Meeting early=True bse_time=15:32:17 dissem=15:32:17
+04 10:03:09 ready 540293|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: None | pdf current col Pricol Ltd consolidated ok=True/3: revenue=1356.32, other_income=3.14, total_income=1359.46, total_expen
+04 10:03:24 wait 506161 Ishwarshakti Holdings & Trad: numbers not yet on BSE
+04 10:03:27 pdf strong model retry did not help: None
+04 10:03:27 pdf pdf current col Pricol Ltd consolidated ok=True/3: revenue=1356.32, other_income=3.14, total_income=1359.46, total_expenses=1247.39, finance_costs=9.7, depreciation=33.91, pbt=112.07, tax=26.86, pat=85.21, eps=6.99
+04 10:03:27 pdf pdf current col ISGEC Heavy Engineering Ltd consolidated ok=True/3: revenue=185039, other_income=925, total_income=185964, total_expenses=175738, finance_costs=1772, depreciation=3665, pbt=10232, tax=3613, pat=6619, eps=7.67
+04 10:03:27 pdf pdf history mismatch ISGEC Heavy Engineering Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 19800.0 pat 175.0 | bse rev 19800.0 pat 175.0 (Rs mn); q-4: pdf rev 16617.600000000002 pat 125.5 | bse r
+04 10:03:27 pdf pdf has consolidated but it failed checks: not falling back to standalone ISGEC Heavy Engineering Ltd
+04 10:03:27 pdf pdf unusable Jain Irrigation Systems Ltd: unit/date missing
+04 10:03:27 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
