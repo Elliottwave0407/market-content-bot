@@ -1690,3 +1690,12 @@
 04 14:11:04 seen 544421 Ellenbarrie Industrial Gases cat=Board Meeting early=True bse_time=19:38:54 dissem=19:38:54
 04 14:11:04 seen 544189 Sattrix Information Security cat=Board Meeting early=True bse_time=19:39:52 dissem=19:39:52
 04 14:11:34 ready 523642|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Avishkar Infra Realty Ltd: rule: no results table page | pdf current col PI Industries Ltd consolidated ok=False/3: revenue=17018, other_income=611,
+04 14:12:34 ready 544421|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Ellenbarrie Industrial Gases Ltd standalone ok=True/3: revenue=1143.18, other_income=171.11, total_income=1314.29, total_expenses=835.05, financ
+04 14:13:22 ready 542866|Sep-26|consolidated kind=photo waited_min=10.7 tries=1 pdf_log=pdf has consolidated but it failed checks: not falling back to standalone Ravindra Energy Ltd | pdf current col eMudhra Ltd consolidated ok=False/3: revenue=206
+04 14:13:29 ready 508929|Sep-26|standalone kind=photo waited_min=10.7 tries=2 pdf_log=pdf current col eMudhra Ltd consolidated ok=False/3: revenue=2069.89, other_income=23.16, total_income=2093.05, total_expenses=1703.22, finance_costs=10.49, dep
+04 14:13:36 wait 508929 Avishkar Infra Realty Ltd: numbers not yet on BSE
+04 14:13:54 ready 526582|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 503 on gemini-3.5-flash | pdf columns were current|year-ago|previous: swapped TPL Plastech Ltd | pdf current col TPL Plast
+04 14:14:02 wait 530023 The Investment Trust Of Indi: numbers not yet on BSE
+04 14:14:05 ready 544000|Sep-26|na kind=photo waited_min=45.4 tries=99 pdf_log=pdf current col TPL Plastech Ltd consolidated ok=True/3: revenue=14949.82, other_income=1.95, total_income=14951.77, total_expenses=13853.17, finance_costs=125.
+04 14:14:13 ready 504286|Sep-26|na kind=photo waited_min=45.4 tries=4 pdf_log=pdf read deferred The Investment Trust Of India Ltd: per-pass AI call cap | rule reader Delta Manufacturing Ltd: rule: consolidated table does not reconcile [la
+04 14:14:21 ready 512221|Sep-26|na kind=photo waited_min=51.4 tries=1 pdf_log=pdf read deferred GSB Finance Ltd: per-pass AI call cap | rule reader SPV Global Trading Ltd: rule: no results table page | pdf read deferred SPV Global Trading
