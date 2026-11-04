@@ -1613,3 +1613,33 @@
 04 15:35:07 seen 513121 Oricon Enterprises Ltd-$ cat=Result early=False bse_time=21:01:32 dissem=21:01:32
 04 15:35:07 seen 530839 Clio Infotech Ltd cat=Board Meeting early=True bse_time=21:02:34 dissem=21:02:34
 04 15:35:34 wait 513121 Oricon Enterprises Ltd-$: numbers not yet on BSE
+04 15:41:29 pdf nim reader Gujjubhai Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+04 15:41:29 pdf pdf unusable Gujjubhai Industries Ltd: unit/date missing
+04 15:41:29 pdf rule reader Trigyn Technologies Ltd: rule: consolidated table does not reconcile [lakh] total_income=[28726.05, 25705.68, 24602.75] pbt=[1714.98, 612.24, 477.8] tax=[176.59, 246.28, 249.93] pat=[1268.93, 339.24, 530.25] depreciati
+04 15:41:29 pdf nim reader Trigyn Technologies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 15:41:29 pdf pdf read failed Trigyn Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 15:41:29 pdf rule reader Trigyn Technologies Ltd: rule: consolidated table does not reconcile [lakh] total_income=[28726.05, 25705.68, 24602.75] pbt=[1714.98, 612.24, 477.8] tax=[176.59, 246.28, 249.93] pat=[1268.93, 339.24, 530.25] depreciati
+04 15:41:29 pdf nim reader Trigyn Technologies Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 15:41:29 pdf pdf read failed Trigyn Technologies Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 15:41:29 pdf rule reader Wardwizard Foods and Beverages Ltd: rule: no results table page
+04 15:41:29 pdf pdf read deferred Wardwizard Foods and Beverages Ltd: per-pass AI call cap
+04 15:41:29 pdf rule reader Oval Projects Engineering Ltd: rule: header has no quarter columns
+04 15:41:29 pdf pdf read deferred Oval Projects Engineering Ltd: per-pass AI call cap
+04 15:41:29 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
+04 15:41:29 pdf pdf read deferred Indsil Hydro Power and Manganese Ltd-$: per-pass AI call cap
+04 15:41:29 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
+04 15:41:29 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
+04 15:41:29 pdf rule reader Capfin India Ltd: rule: no results table page
+04 15:41:29 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
+04 15:41:29 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 15:41:29 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
+04 15:41:29 pdf rule reader Clio Infotech Ltd: rule: no results table page
+04 15:41:29 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
+04 15:41:30 seen 512038 TCC Concept Ltd cat=Result early=False bse_time=21:06:06 dissem=21:06:06
+04 15:41:30 seen 531676 Emrock Corporation Ltd cat=Board Meeting early=True bse_time=21:06:38 dissem=21:06:38
+04 15:41:30 seen 524212 Wanbury Ltd cat=Board Meeting early=True bse_time=21:08:45 dissem=21:08:45
+04 15:41:30 seen 530839 Clio Infotech Ltd cat=Result early=False bse_time=21:09:46 dissem=21:09:46
+04 15:41:54 ready 533316|Sep-26|na kind=photo waited_min=51.3 tries=5 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
+04 15:42:01 wait 512038 TCC Concept Ltd: numbers not yet on BSE
+04 15:42:02 ready 544246|Sep-26|standalone kind=photo waited_min=120.6 tries=0 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
+04 15:42:12 ready 512165|Sep-26|na kind=photo waited_min=45.7 tries=5 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
