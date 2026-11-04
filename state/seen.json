@@ -3148,7 +3148,8 @@
 "49c1555d-ce18-418a-a4e1-86ea8896758a",
 "b015ae26-44dc-4fa5-966c-94649458ac75",
 "a1b922c2-0330-4fcd-9e2c-7575a3b686cf",
-"777c533a-517e-4cc5-ac33-9de1d679abd7"
+"777c533a-517e-4cc5-ac33-9de1d679abd7",
+"47c7e756-9061-46ad-8b7a-6da87b56cf49"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5072,7 +5073,8 @@
 "504076|Sep-26|consolidated",
 "543384|Sep-26|consolidated",
 "543336|Sep-26|consolidated",
-"511658|Sep-26|consolidated"
+"511658|Sep-26|consolidated",
+"543638|Sep-26|standalone"
 ],
 "pending": {
 "b880a942-3635-4c5b-8457-20f4b6ff197d": {
@@ -5110,7 +5112,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786480.452717,
-"last": 1793788373.9993079,
+"last": 1793788436.4447906,
 "alerted": true
 },
 "78b2dc60-1b52-4977-beb3-f7a481ffa5fd": {
@@ -5186,7 +5188,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786768.4943802,
-"last": 1793788373.9993079,
+"last": 1793788436.4447906,
 "alerted": true
 },
 "ea1d940c-655c-4caa-9f29-6f5b7125f264": {
@@ -5224,44 +5226,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793787437.448166,
-"last": 1793788373.9993079,
-"alerted": false
-},
-"47c7e756-9061-46ad-8b7a-6da87b56cf49": {
-"rec": {
-"NEWSID": "47c7e756-9061-46ad-8b7a-6da87b56cf49",
-"SCRIP_CD": 543638,
-"XML_NAME": "ANN_543638_47C7E756-9061-46AD-8B7A-6DA87B56CF49",
-"NEWSSUB": "Tracxn Technologies Ltd - 543638 - Unaudited Financial Results For The Quarter Ended September 30, 2026",
-"DT_TM": "2026-11-04T15:53:29.033",
-"NEWS_DT": "2026-11-04T15:53:29.033",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "9bf07565-baff-4fb9-a997-bfbd3a83fe19.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the Quarter ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/tracxn-technologies-ltd/tracxn/543638/",
-"SLONGNAME": "Tracxn Technologies Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 21,
-"News_submission_dt": "2026-11-04T15:53:29",
-"DissemDT": "2026-11-04T15:53:29.033",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1850935,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793787839.3314934,
 "last": 1793788373.9993079,
 "alerted": false
 },
@@ -5419,10 +5383,6 @@
 }
 },
 "lag": [
-[
-"Shivkamal Impex Ltd",
-11
-],
 [
 "Valencia India Ltd",
 46
@@ -6618,6 +6578,10 @@
 [
 "Jayabharat Credit Ltd-$",
 45
+],
+[
+"Tracxn Technologies Ltd",
+10
 ]
 ],
 "gem_use": {
@@ -6644,7 +6608,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 283
+"2026-11-04": 285
 },
 "pdfposted": {
 "522215|Sep-26|standalone": {
@@ -7625,6 +7589,16 @@
 "rev": 48.862,
 "pat": 7.052,
 "t": 1793788403.794878,
+"last": 0
+},
+"543638|Sep-26|standalone": {
+"code": "543638",
+"name": "Tracxn Technologies Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 213.01300000000003,
+"pat": -41.262,
+"t": 1793788444.7936404,
 "last": 0
 }
 },
@@ -10906,7 +10880,7 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 379,
+"ok": 381,
 "429": 4,
 "other": 58
 },
@@ -10918,7 +10892,7 @@
 "concall-key": {
 "ok": 12,
 "429": 1,
-"other": 20
+"other": 21
 }
 }
 }
