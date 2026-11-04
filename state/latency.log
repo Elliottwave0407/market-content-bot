@@ -1712,3 +1712,8 @@
 04 05:34:18 pdf pdf read failed Gaja Alternative Asset Management Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest,
 04 06:11:40 seen 531340 Bervin Investment & Leasing  cat=Board Meeting early=True bse_time=11:40:27 dissem=11:40:27
 04 06:12:06 seen 538920 Vintage Coffee And Beverages cat=Result early=False bse_time=11:41:04 dissem=11:41:04
+04 06:12:29 wait 538920 Vintage Coffee And Beverages: numbers not yet on BSE
+04 06:13:06 pdf nim reader Bervin Investment & Leasing Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [
+04 06:13:06 pdf pdf read failed Bervin Investment & Leasing Ltd: HTTP 429 (per-day) on gemini-flash-latest | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (per-day) on gemini-flash-latest; nim deepseek-v4
+04 06:13:33 pdf nim reader Vintage Coffee And Beverages Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. 
+04 06:13:33 pdf pdf read failed Vintage Coffee And Beverages Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quot
