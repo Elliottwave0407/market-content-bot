@@ -1812,3 +1812,16 @@
 04 17:29:30 seen 509009 AuSom Enterprise Ltd cat=Result early=False bse_time=22:57:45 dissem=22:57:45
 04 17:29:50 ready 509009|unverified|3cb8376b-1442-4fe4-b31b-476a4a3550d4 kind=photo waited_min=0.0 tries=1 pdf_log=
 04 17:29:57 ready 530979|Sep-26|na kind=photo waited_min=45.5 tries=8 pdf_log=
+04 17:30:36 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+04 17:30:36 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible 
+04 17:30:41 seen 531680 Mayur Leather Products Ltd cat=Result early=False bse_time=23:00:26 dissem=23:00:26
+04 17:31:03 wait 531680 Mayur Leather Products Ltd: numbers not yet on BSE
+04 17:31:10 pdf nim reader Mayur Leather Products Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 17:31:10 pdf pdf read failed Mayur Leather Products Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 17:31:12 pdf rule reader Mayur Leather Products Ltd: rule: no results table page
+04 17:31:12 pdf nim reader Mayur Leather Products Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 17:31:12 pdf pdf read failed Mayur Leather Products Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 17:31:17 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+04 17:31:17 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible 
+04 17:32:19 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 17:32:19 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
