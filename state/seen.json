@@ -3015,7 +3015,9 @@
 "55f26700-eedc-463c-bc0c-783aeaaf6069",
 "506df296-593b-453e-b3fa-e18661d60800",
 "367abbbe-460f-4b6a-a564-8367733fecc9",
-"868c7fb1-74e7-4942-bf3a-2d215bbc9f0b"
+"868c7fb1-74e7-4942-bf3a-2d215bbc9f0b",
+"5314c0a9-0473-4f49-b62b-2b80644093fe",
+"b852439c-3691-43ab-843c-c8e788081605"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4863,7 +4865,9 @@
 "533217|Sep-26|na",
 "526043|Sep-26|na",
 "513422|Sep-26|na",
-"544628|Sep-26|na"
+"544628|Sep-26|na",
+"532523|Sep-26|consolidated",
+"513683|Sep-26|consolidated"
 ],
 "pending": {
 "4506d08d-3397-4ed4-9353-a7341bdd8c37": {
@@ -4941,44 +4945,6 @@
 "first": 1793778473.8012354,
 "last": 1793780954.4835908,
 "alerted": false
-},
-"5314c0a9-0473-4f49-b62b-2b80644093fe": {
-"rec": {
-"NEWSID": "5314c0a9-0473-4f49-b62b-2b80644093fe",
-"SCRIP_CD": 532523,
-"XML_NAME": "ANN_532523_5314C0A9-0473-4F49-B62B-2B80644093FE",
-"NEWSSUB": "Biocon Ltd - 532523 - Financial Results For The Quarter And Half Year Ended September 30,2026.",
-"DT_TM": "2026-11-04T13:18:10.49",
-"NEWS_DT": "2026-11-04T13:18:10.49",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "554d5be1-d998-49be-bb71-f250332529a0.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter and half year ended September 30,2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/biocon-ltd/biocon/532523/",
-"SLONGNAME": "Biocon Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-11-04T13:18:10",
-"DissemDT": "2026-11-04T13:18:10.49",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7154716,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793778641.2379909,
-"last": 1793780954.4835908,
-"alerted": true
 },
 "8ea94bf5-24ad-4a5e-8ed9-7317ebcb46e2": {
 "rec": {
@@ -5281,7 +5247,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793779585.4487135,
-"last": 1793780954.4835908,
+"last": 1793781085.862791,
 "alerted": true
 },
 "89c85dd3-151f-4ead-bd80-0930aae28865": {
@@ -5704,10 +5670,6 @@
 }
 },
 "lag": [
-[
-"Globale Tessile Ltd",
-66
-],
 [
 "Glittek Granites Ltd",
 120
@@ -6903,6 +6865,10 @@
 [
 "Astron Multigrain Ltd",
 51
+],
+[
+"Biocon Ltd",
+41
 ]
 ],
 "gem_use": {
@@ -6929,7 +6895,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 22
+"2026-11-04": 25
 },
 "pdfposted": {
 "509099|Sep-26|standalone": {
@@ -7490,6 +7456,26 @@
 "rev": 145.96800000000002,
 "pat": 69.896,
 "t": 1793780884.667112,
+"last": 0
+},
+"532523|Sep-26|consolidated": {
+"code": "532523",
+"name": "Biocon Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 43889.0,
+"pat": 567.0,
+"t": 1793781115.9618673,
+"last": 0
+},
+"513683|Sep-26|consolidated": {
+"code": "513683",
+"name": "NLC India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 47323.5,
+"pat": 13280.1,
+"t": 1793781133.229584,
 "last": 0
 }
 },
@@ -9869,7 +9855,9 @@
 "d1f8398e-922d-4120-bb3e-bece0a0378a1": 1,
 "f6b7b9ec-dfdc-4b06-89b4-d56739c8011a": 1,
 "88bb9950-004f-4cb4-8c0f-c2517efe0374": 1,
-"b231cf3c-f561-4c91-893f-d66cf5399ca7": 1
+"b231cf3c-f561-4c91-893f-d66cf5399ca7": 1,
+"5314c0a9-0473-4f49-b62b-2b80644093fe": 1,
+"b852439c-3691-43ab-843c-c8e788081605": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10817,7 +10805,7 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 43,
+"ok": 50,
 "429": 1,
 "other": 36
 },
