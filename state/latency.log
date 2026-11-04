@@ -1835,3 +1835,44 @@
 04 14:41:26 seen 524330 Jayant Agro Organics Ltd cat=Board Meeting early=True bse_time=20:09:13 dissem=20:09:13
 04 14:41:26 seen 523792 Mazda Ltd-$ cat=Result early=False bse_time=20:10:13 dissem=20:10:13
 04 14:41:53 wait 523792 Mazda Ltd-$: numbers not yet on BSE
+04 14:43:45 pdf rule reader STEL Holdings Ltd: rule: consolidated table does not reconcile [lakh] total_income=[2651.2, 9.79, 926.55] total_expenses=[19.37, 22.03, 19.22] pbt=[2631.83, -12.24, 907.33] tax=[0.0, 0.0, 0.0] pat=[1966.84, -13.06, 664
+04 14:43:45 pdf rule reader Saurashtra Cement Ltd: rule: no results table page
+04 14:43:45 pdf rule reader Entero Healthcare Solutions Ltd: rule: unit not found
+04 14:43:45 pdf rule reader Mazda Ltd-$: rule: stan: missing ['pat'] n=5
+04 14:43:45 pdf rule reader Abans Enterprises Ltd: rule: consolidated table does not reconcile [crore] total_income=[1903.92, 1893.71, 2565.99] total_expenses=[1.66, 8.82, 110.6] pbt=[13.83, 47.37, 3.42] tax=[12.969999999999999, 14.68, -1.47] pat
+04 14:43:45 pdf rule reader Lippi Systems Ltd-$: rule: no results table page
+04 14:43:45 pdf nim reader Saurashtra Cement Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
+04 14:43:45 pdf pdf read failed Saurashtra Cement Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible
+04 14:43:45 pdf nim reader STEL Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+04 14:43:45 pdf pdf read failed STEL Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible inve
+04 14:43:45 pdf nim reader Abans Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+04 14:43:45 pdf pdf read failed Abans Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible 
+04 14:43:45 pdf nim reader Mazda Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf pdf read failed Mazda Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 14:43:45 pdf nim reader Lippi Systems Ltd-$: ok (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf nim reader Entero Healthcare Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. 
+04 14:43:45 pdf pdf read failed Entero Healthcare Solutions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text
+04 14:43:45 pdf pdf current col Lippi Systems Ltd-$ standalone ok=True/3: revenue=1.0, other_income=0.0, total_income=1.0, total_expenses=1.0, finance_costs=0.0, depreciation=0.0, pbt=0.0, tax=0.0, pat=0.0, eps=0.0
+04 14:43:45 pdf pdf incomplete Lippi Systems Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
+04 14:43:45 pdf rule reader Steelco Gujarat Ltd: rule: stan: missing ['pat'] n=3
+04 14:43:45 pdf nim reader Steelco Gujarat Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf pdf read failed Steelco Gujarat Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 14:43:45 pdf rule reader KROWNIQ Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[7990.17, 12267.08, 8739.77] pbt=[83.11, 527.88, 300.42] tax=[18.79, 138.85, 0.52] pat=[64.32, 389.03, 299.9] depreciation=[41.93, 28.12, 3
+04 14:43:45 pdf nim reader KROWNIQ Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf pdf read failed KROWNIQ Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 14:43:45 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
+04 14:43:45 pdf nim reader Shashijit Infraprojects Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf pdf read failed Shashijit Infraprojects Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 14:43:45 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 14:43:45 pdf nim reader Haria Exports Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 14:43:45 pdf pdf read failed Haria Exports Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+04 14:43:45 pdf rule reader Haria Exports Ltd-$: rule: no results table page
+04 14:43:45 pdf pdf read deferred Haria Exports Ltd-$: per-pass AI call cap
+04 14:43:45 pdf rule reader Shivansh Finserve Ltd: ok
+04 14:43:45 pdf pdf current col Shivansh Finserve Ltd standalone ok=True/3: revenue=44.4, other_income=30.7, total_income=75.1, total_expenses=26.89, finance_costs=None, depreciation=0.32, pbt=48.21, tax=12.36, pat=35.84, eps=0.57
+04 14:43:45 pdf pdf incomplete Shivansh Finserve Ltd standalone: missing ['revenue'] - not posting from PDF
+04 14:43:45 pdf rule reader Shivansh Finserve Ltd: ok
+04 14:43:45 pdf pdf current col Shivansh Finserve Ltd standalone ok=True/3: revenue=44.4, other_income=30.7, total_income=75.1, total_expenses=26.89, finance_costs=None, depreciation=0.32, pbt=48.21, tax=12.36, pat=35.84, eps=0.57
+04 14:43:45 pdf pdf incomplete Shivansh Finserve Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+04 14:43:45 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
+04 14:43:45 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
