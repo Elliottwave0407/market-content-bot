@@ -1740,3 +1740,21 @@
 04 14:21:41 seen 523598 Shipping Corporation of Indi cat=Result early=False bse_time=19:48:44 dissem=19:48:44
 04 14:21:41 seen 544891 Hy-Tech Engineers Ltd cat=Board Meeting early=True bse_time=19:49:34 dissem=19:49:34
 04 14:22:04 wait 523598 Shipping Corporation of Indi: numbers not yet on BSE
+04 14:28:54 pdf nim reader Prismx Global Ventures Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (g
+04 14:28:54 pdf pdf read failed Prismx Global Ventures Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (poss
+04 14:28:54 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
+04 14:28:54 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
+04 14:28:55 seen 531910 JOJO Ltd cat=Result early=False bse_time=19:50:46 dissem=19:50:46
+04 14:28:55 seen 500399 Steelco Gujarat Ltd cat=Board Meeting early=True bse_time=19:52:00 dissem=19:52:00
+04 14:28:55 seen 502175 Saurashtra Cement Ltd cat=Result early=False bse_time=19:52:42 dissem=19:52:42
+04 14:28:55 seen 500650 Excel Industries Ltd cat=Result early=False bse_time=19:53:20 dissem=19:53:20
+04 14:28:55 seen 517498 Websol Energy System Ltd cat=Result early=False bse_time=19:54:40 dissem=19:54:40
+04 14:28:55 seen 530689 KROWNIQ Ltd cat=Board Meeting early=True bse_time=19:56:25 dissem=19:56:25
+04 14:28:55 seen 544279 Godavari Biorefineries Ltd cat=Result early=False bse_time=19:57:29 dissem=19:57:29
+04 14:29:49 ready 523598|Sep-26|consolidated kind=photo waited_min=7.2 tries=1 pdf_log=rule reader Goel Construction Company Ltd: rule: no results table page | pdf current col PI Industries Ltd consolidated ok=False/3: revenue=17018, other_income=
+04 14:29:57 ready 517498|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col PI Industries Ltd consolidated ok=False/3: revenue=17018, other_income=611, total_income=17629, total_expenses=15824, finance_costs=84, deprecia
+04 14:30:12 ready 544894|Sep-26|consolidated kind=photo waited_min=36.2 tries=6 pdf_log=pdf current col Lumino Industries Ltd consolidated ok=False/3: revenue=66142.3, other_income=781.72, total_income=66924.02, total_expenses=59936.34, finance_cos
+04 14:30:21 ready 504341|Sep-26|na kind=photo waited_min=51.3 tries=6 pdf_log=pdf current col Lumino Industries Ltd consolidated ok=False/3: revenue=66142.3, other_income=781.72, total_income=66924.02, total_expenses=59936.34, finance_cos
+04 14:30:38 ready 531910|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Lumino Industries Ltd consolidated ok=False/3: revenue=66142.3, other_income=781.72, total_income=66924.02, total_expenses=59936.34, finance_cos
+04 14:30:49 wait 500650 Excel Industries Ltd: confirming that no consolidated statement exists
+04 14:30:49 ready 544279|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf accepted on printed-numbers check (table arithmetic not reconciled) Lumino Industries Ltd consolidated | pdf current col JOJO Ltd consolidated ok=True/3: re
