@@ -1506,3 +1506,15 @@
 04 10:05:30 pdf pdf has consolidated but it failed checks: not falling back to standalone ISGEC Heavy Engineering Ltd
 04 10:05:30 pdf pdf unusable Jain Irrigation Systems Ltd: unit/date missing
 04 10:05:30 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
+04 10:06:07 pdf rule reader Ishwarshakti Holdings & Traders Ltd: rule: stan: does not reconcile [thousand] pbt=[None, None, None] pat=[-1278.3, 400.75, 4580.15] finance_costs=[23.0, 0.09, 5.22]
+04 10:06:07 pdf rule reader Jain Irrigation Systems Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+04 10:06:07 pdf pdf unusable Ishwarshakti Holdings & Traders Ltd: unit/date missing
+04 10:06:08 seen 543325 Rolex Rings Ltd cat=Result early=False bse_time=15:35:15 dissem=15:35:15
+04 10:06:08 seen 544402 Jash Engineering Ltd cat=Board Meeting early=True bse_time=15:35:36 dissem=15:35:36
+04 10:06:32 wait 543325 Rolex Rings Ltd: confirming that no consolidated statement exists
+04 10:06:52 ready 544402|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Jash Engineering Ltd consolidated ok=False/3: re
+04 10:07:03 pdf rule reader Rolex Rings Ltd: rule: no results table page
+04 10:07:03 pdf rule reader Jash Engineering Ltd: rule: unit not found
+04 10:07:03 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+04 10:07:03 pdf pdf current col Jash Engineering Ltd consolidated ok=False/3: revenue=19251.41, other_income=242.19, total_income=19493.6, total_expenses=17637.06, finance_costs=278.34, depreciation=596.35, pbt=1865.11, tax=411.15, pat=1453.96, e
+04 10:07:03 pdf strong model fixed a failed read
