@@ -1505,3 +1505,31 @@
 04 06:56:24 pdf nim reader Cera Sanitaryware Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
 04 06:56:24 pdf pdf read failed Cera Sanitaryware Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
 04 06:56:25 seen 544631 Creative Newtech Ltd cat=Board Meeting early=True bse_time=12:25:15 dissem=12:25:15
+04 06:56:48 pdf rule reader Eco Recycling Ltd: rule: filing mentions consolidated results but that table was not read
+04 06:56:48 pdf nim reader Eco Recycling Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:56:48 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:56:55 seen 506919 Makers Laboratories Ltd-$ cat=Result early=False bse_time=12:26:07 dissem=12:26:07
+04 06:56:55 seen 532321 Zydus Lifesciences Ltd cat=Board Meeting early=True bse_time=12:26:21 dissem=12:26:21
+04 06:57:03 wait 506919 Makers Laboratories Ltd-$: numbers not yet on BSE
+04 06:57:04 pdf rule reader Makers Laboratories Ltd-$: rule: stan: missing ['pat'] n=6
+04 06:57:04 pdf nim reader Makers Laboratories Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:57:04 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+04 06:57:15 pdf rule reader Cera Sanitaryware Ltd: rule: stan: does not reconcile [lakh] total_expenses=[54083.49, 44745.58, 41773.81] pbt=[7301.79, 5981.3, 7223.39] tax=[1688.17, 1450.26, 1558.63] pat=[5613.62, 4531.04, 5664.76] depreciation=[97
+04 06:57:15 pdf nim reader Cera Sanitaryware Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:57:15 pdf pdf read failed Cera Sanitaryware Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:57:15 pdf rule reader Sangam India Ltd: rule: no results table page
+04 06:57:15 pdf nim reader Sangam India Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:57:15 pdf pdf read failed Sangam India Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:57:15 pdf rule reader Makers Laboratories Ltd-$: rule: stan: missing ['pat'] n=6
+04 06:57:15 pdf nim reader Makers Laboratories Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:57:15 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+04 06:57:15 pdf nim reader Eco Recycling Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+04 06:57:15 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible inve
+04 06:57:15 pdf rule reader Eco Recycling Ltd: rule: filing mentions consolidated results but that table was not read
+04 06:57:15 pdf nim reader Eco Recycling Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:57:15 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:58:31 ready 538920|Sep-26|na kind=photo waited_min=46.1 tries=8 pdf_log=
+04 06:58:46 pdf nim reader Eco Recycling Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+04 06:58:46 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible inve
+04 06:58:46 pdf nim reader Makers Laboratories Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (ge
+04 06:58:46 pdf pdf read failed Makers Laboratories Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (poss
