@@ -3397,7 +3397,8 @@
 "3cb163d1-fbd7-4df0-9066-9da60eee2f8e",
 "e229a552-be74-40bb-8cd5-688df64aa4ab",
 "f7751138-e3de-4cca-bb1a-4ff46a358604",
-"5999a0e7-cef7-432c-95b8-a8f0848a8ac9"
+"5999a0e7-cef7-432c-95b8-a8f0848a8ac9",
+"8559f548-f897-494e-adc9-69c8603dfbbf"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5468,7 +5469,8 @@
 "508869|Sep-26|na",
 "502355|Sep-26|consolidated",
 "544512|Sep-26|standalone",
-"511076|Sep-26|consolidated"
+"511076|Sep-26|consolidated",
+"517172|Sep-26|standalone"
 ],
 "pending": {
 "1fc1eecf-e02f-4a70-942d-f1cf821715c9": {
@@ -5774,44 +5776,6 @@
 "first": 1793796133.1300428,
 "last": 1793797898.9632156,
 "alerted": false
-},
-"8559f548-f897-494e-adc9-69c8603dfbbf": {
-"rec": {
-"NEWSID": "8559f548-f897-494e-adc9-69c8603dfbbf",
-"SCRIP_CD": 517172,
-"XML_NAME": "ANN_517172_8559F548-F897-494E-ADC9-69C8603DFBBF",
-"NEWSSUB": "Pervasive Commodities Ltd - 517172 - Submission Of Financial Result For The Quarter And Half Year Ended On 30Th September, 2026",
-"DT_TM": "2026-11-04T18:17:26.43",
-"NEWS_DT": "2026-11-04T18:17:26.43",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5606fcfe-0cd0-48c1-a93f-0336b842c0c4.pdf",
-"MORE": "",
-"HEADLINE": "Submission of Financial Result for the quarter and s\r\nhalf year ended on 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/pervasive-commodities-ltd/pervasive/517172/",
-"SLONGNAME": "Pervasive Commodities Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 38,
-"News_submission_dt": "2026-11-04T18:17:26",
-"DissemDT": "2026-11-04T18:17:26.43",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2737404,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793796539.1659079,
-"last": 1793797898.9632156,
-"alerted": true
 },
 "6c6060d1-2963-43e3-9bf3-6975a91d22df": {
 "rec": {
@@ -6423,10 +6387,6 @@
 }
 },
 "lag": [
-[
-"Roopa Screen Ltd",
-56
-],
 [
 "Global Surfaces Ltd",
 50
@@ -7622,6 +7582,10 @@
 [
 "Apollo Hospitals Enterprise Ltd",
 49
+],
+[
+"Pervasive Commodities Ltd",
+31
 ]
 ],
 "gem_use": {
@@ -9329,6 +9293,16 @@
 "rev": 2499.0490000000004,
 "pat": 382.355,
 "t": 1793798502.853332,
+"last": 0
+},
+"517172|Sep-26|standalone": {
+"code": "517172",
+"name": "Pervasive Commodities Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 16.365000000000002,
+"pat": 0.19,
+"t": 1793798511.6760976,
 "last": 0
 }
 },
