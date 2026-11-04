@@ -3093,7 +3093,11 @@
 "26980740-2810-4587-b971-95ebfe832a1b",
 "138e7d07-7b92-4548-854f-4ff6dbc74d03",
 "6f0a0a39-a8f5-4432-9af9-c200dca1fa8d",
-"aa1557d9-07a2-48ad-940c-84fe1e311f72"
+"aa1557d9-07a2-48ad-940c-84fe1e311f72",
+"42fc3508-157d-4a91-bee9-ff3c33510aa6",
+"4e93a32a-6b0a-4281-8d03-ef0a52f426d7",
+"52507317-870b-4bed-9b51-e3754fc0b7ca",
+"2a0b1741-ab22-440f-aff5-043aab7f6a24"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4991,7 +4995,8 @@
 "505685|Sep-26|standalone",
 "530315|Sep-26|standalone",
 "537536|Sep-26|standalone",
-"532767|Sep-26|consolidated"
+"532767|Sep-26|consolidated",
+"542862|Sep-26|standalone"
 ],
 "pending": {
 "80084b27-8d7c-4c3c-bbb0-98998e46ed89": {
@@ -5029,7 +5034,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793779251.7009578,
-"last": 1793784534.431897,
+"last": 1793784630.8070703,
 "alerted": true
 },
 "49068871-0433-4b7a-80e6-fdec38caff07": {
@@ -5067,7 +5072,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793782275.886752,
-"last": 1793784534.431897,
+"last": 1793784630.8070703,
 "alerted": true
 },
 "31a1325c-3c52-4008-8c33-fda26a7bae72": {
@@ -5105,15 +5110,49 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793783945.9457414,
-"last": 1793784547.1664817,
+"last": 1793784630.8070703,
+"alerted": false
+},
+"442cfc92-28b4-40c7-a4f9-954c7319a12c": {
+"rec": {
+"NEWSID": "442cfc92-28b4-40c7-a4f9-954c7319a12c",
+"SCRIP_CD": 539833,
+"XML_NAME": "ANN_539833_442CFC92-28B4-40C7-A4F9-954C7319A12C",
+"NEWSSUB": "Shivom Investment & Consultancy Ltd - 539833 - Financial Result For The Quarter And Half Yearly Ended On 30.09.2026",
+"DT_TM": "2026-11-04T14:58:40.01",
+"NEWS_DT": "2026-11-04T14:58:40.01",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "531c261d-adf0-4901-8d1e-c39a9ce191f2.pdf",
+"MORE": "",
+"HEADLINE": "Submission of Financial result for the Quarter and Financial year Ended on 30.09.206",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/shivom-investment--consultancy-ltd/sicltd/539833/",
+"SLONGNAME": "Shivom Investment & Consultancy Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 16,
+"News_submission_dt": "2026-11-04T14:58:40",
+"DissemDT": "2026-11-04T14:58:40.01",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1353354,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793784585.494294,
+"last": 1793784666.4749753,
 "alerted": false
 }
 },
 "lag": [
-[
-"Creative Castings Ltd",
-7
-],
 [
 "Captain Pipes Ltd",
 52
@@ -6309,6 +6348,10 @@
 [
 "Terraform Realstate Ltd",
 45
+],
+[
+"Shahlon Silk Industries Ltd",
+1
 ]
 ],
 "gem_use": {
@@ -6335,7 +6378,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 137
+"2026-11-04": 142
 },
 "pdfposted": {
 "531033|Sep-26|standalone": {
@@ -6346,7 +6389,7 @@
 "rev": 2.3030000000000004,
 "pat": -0.801,
 "t": 1793612026.0228672,
-"last": 1793784310.5438142
+"last": 1793784626.111375
 },
 "539884|Sep-26|standalone": {
 "code": "539884",
@@ -6356,7 +6399,7 @@
 "rev": 135.366,
 "pat": 0.357,
 "t": 1793613065.993788,
-"last": 1793784310.5438142
+"last": 1793784626.111375
 },
 "522215|Sep-26|standalone": {
 "code": "522215",
@@ -6366,7 +6409,7 @@
 "rev": 1654.9720000000002,
 "pat": 45.516000000000005,
 "t": 1793615903.7082934,
-"last": 1793784310.5438142
+"last": 1793784626.111375
 },
 "533286|Sep-26|consolidated": {
 "code": "533286",
@@ -6376,7 +6419,7 @@
 "rev": 3691.328,
 "pat": 617.7460000000001,
 "t": 1793616813.15793,
-"last": 1793784353.3832533
+"last": 1793784659.3586822
 },
 "523398|Sep-26|consolidated": {
 "code": "523398",
@@ -6386,7 +6429,7 @@
 "rev": 4711.2,
 "pat": -416.6,
 "t": 1793617869.7445235,
-"last": 1793784353.3832533
+"last": 1793784659.3586822
 },
 "544898|Sep-26|consolidated": {
 "code": "544898",
@@ -6396,7 +6439,7 @@
 "rev": 1383.37,
 "pat": 310.92,
 "t": 1793618005.956218,
-"last": 1793784353.3832533
+"last": 1793784659.3586822
 },
 "537750|Sep-26|consolidated": {
 "code": "537750",
@@ -6406,7 +6449,7 @@
 "rev": 276.856,
 "pat": -45.55500000000001,
 "t": 1793618615.2123036,
-"last": 1793784353.3832533
+"last": 1793784659.3586822
 },
 "538975|Sep-26|standalone": {
 "code": "538975",
@@ -6696,7 +6739,7 @@
 "rev": 0.0,
 "pat": 28.305000000000003,
 "t": 1793715608.3438797,
-"last": 1793784158.8997643
+"last": 1793784626.111375
 },
 "530795|Sep-26|standalone": {
 "code": "530795",
@@ -6706,7 +6749,7 @@
 "rev": 0.0,
 "pat": 0.49900000000000005,
 "t": 1793716713.0371552,
-"last": 1793784158.8997643
+"last": 1793784675.436807
 },
 "539854|Sep-26|consolidated": {
 "code": "539854",
@@ -6716,7 +6759,7 @@
 "rev": 2395.143,
 "pat": 40.203,
 "t": 1793717801.23585,
-"last": 1793784158.8997643
+"last": 1793784675.436807
 },
 "544271|Sep-26|consolidated": {
 "code": "544271",
@@ -6726,7 +6769,7 @@
 "rev": 1715.891,
 "pat": 406.049,
 "t": 1793765274.6056864,
-"last": 1793784158.8997643
+"last": 1793784675.436807
 },
 "500042|Sep-26|consolidated": {
 "code": "500042",
@@ -6736,7 +6779,7 @@
 "rev": 48321.9,
 "pat": 617.1,
 "t": 1793774837.1788054,
-"last": 1793784178.3259904
+"last": 1793784675.436807
 },
 "532443|Sep-26|standalone": {
 "code": "532443",
@@ -7226,6 +7269,16 @@
 "rev": 1156.331,
 "pat": 479.329,
 "t": 1793784568.4302986,
+"last": 0
+},
+"542862|Sep-26|standalone": {
+"code": "542862",
+"name": "Shahlon Silk Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 361.91200000000003,
+"pat": 6.272,
+"t": 1793784667.7062435,
 "last": 0
 }
 },
@@ -9025,7 +9078,9 @@
 "31a1325c-3c52-4008-8c33-fda26a7bae72": 1,
 "bc2329d2-ecc2-469b-8292-2c2ad40d07a8": 1,
 "26980740-2810-4587-b971-95ebfe832a1b": 1,
-"6f0a0a39-a8f5-4432-9af9-c200dca1fa8d": 1
+"6f0a0a39-a8f5-4432-9af9-c200dca1fa8d": 1,
+"52507317-870b-4bed-9b51-e3754fc0b7ca": 1,
+"2a0b1741-ab22-440f-aff5-043aab7f6a24": 1
 },
 "cons_expected": {
 "10a7587c-38a4-4c2f-849c-f3959bad54f4": 1,
@@ -9569,7 +9624,8 @@
 "8d8892cd-476e-43a4-9d74-1fa76208779f": 1,
 "35838938-76f7-494f-9d35-90eca9acf651": 1,
 "645157ca-0f31-419e-8511-fa4d5b06defe": 1,
-"aa1557d9-07a2-48ad-940c-84fe1e311f72": 1
+"aa1557d9-07a2-48ad-940c-84fe1e311f72": 1,
+"42fc3508-157d-4a91-bee9-ff3c33510aa6": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -10552,14 +10608,14 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 194,
+"ok": 199,
 "429": 2,
 "other": 51
 },
 "results-key": {
 "ok": 0,
 "429": 0,
-"other": 3
+"other": 4
 }
 }
 }
