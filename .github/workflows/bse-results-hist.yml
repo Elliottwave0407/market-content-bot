@@ -12,6 +12,12 @@ on:
         default: "150"
       all:
         default: "0"
+      events:
+        description: "1 = run the result-event filing-date pull (BSE announcements, category Result) instead of the numbers history"
+        default: "0"
+      start:
+        description: "events pull: first day (YYYY-MM-DD)"
+        default: "2024-04-01"
 concurrency:
   group: bse-results-hist
   cancel-in-progress: false
@@ -33,12 +39,20 @@ jobs:
           WORKERS: ${{ github.event.inputs.workers }}
           BUDGET_MIN: ${{ github.event.inputs.budget_min }}
           ALL: ${{ github.event.inputs.all }}
-        run: python scripts/bse_results_hist.py
+          START: ${{ github.event.inputs.start }}
+          MAX_DAYS: ${{ github.event.inputs.maxn }}
+        run: |
+          if [ "${{ github.event.inputs.events }}" = "1" ]; then
+            if [ "${{ github.event.inputs.dry }}" = "1" ]; then export MAX_DAYS=${MAXN:-10}; else export MAX_DAYS=0; fi
+            python scripts/bse_result_events.py
+          else
+            python scripts/bse_results_hist.py
+          fi
       - name: Save
         if: always()
         run: |
           git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
-          git add store/results_bse 2>/dev/null || true; git add store/results_bse_dry 2>/dev/null || true
+          git add store/results_bse 2>/dev/null || true; git add store/result_events 2>/dev/null || true; git add store/results_bse_dry 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -q -m "BSE results history"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
