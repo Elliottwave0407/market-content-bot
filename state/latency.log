@@ -1758,3 +1758,25 @@
 04 14:30:38 ready 531910|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Lumino Industries Ltd consolidated ok=False/3: revenue=66142.3, other_income=781.72, total_income=66924.02, total_expenses=59936.34, finance_cos
 04 14:30:49 wait 500650 Excel Industries Ltd: confirming that no consolidated statement exists
 04 14:30:49 ready 544279|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf accepted on printed-numbers check (table arithmetic not reconciled) Lumino Industries Ltd consolidated | pdf current col JOJO Ltd consolidated ok=True/3: re
+04 14:32:29 wait 502175 Saurashtra Cement Ltd: numbers not yet on BSE
+04 14:32:40 ready 511543|Sep-26|na kind=photo waited_min=51.3 tries=3 pdf_log=pdf read deferred KROWNIQ Ltd: per-pass AI call cap | rule reader GSB Finance Ltd: rule: no results table page | pdf read deferred GSB Finance Ltd: per-pass AI 
+04 14:32:50 ready 508860|Sep-26|na kind=photo waited_min=51.3 tries=3 pdf_log=pdf read deferred Prismx Global Ventures Ltd: per-pass AI call cap | rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row | pdf read deferred Diam
+04 14:33:02 pdf nim reader Saurashtra Cement Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+04 14:33:02 pdf pdf read failed Saurashtra Cement Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+04 14:33:02 pdf rule reader Saurashtra Cement Ltd: rule: no results table page
+04 14:33:02 pdf pdf read deferred Saurashtra Cement Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader TPL Plastech Ltd: rule: no results table page
+04 14:33:02 pdf pdf read deferred TPL Plastech Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader Steelco Gujarat Ltd: rule: stan: missing ['pat'] n=3
+04 14:33:02 pdf pdf read deferred Steelco Gujarat Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader KROWNIQ Ltd: rule: column dates not found
+04 14:33:02 pdf pdf read deferred KROWNIQ Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader GSB Finance Ltd: rule: no results table page
+04 14:33:02 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader Prismx Global Ventures Ltd: rule: no results table page
+04 14:33:02 pdf pdf read deferred Prismx Global Ventures Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
+04 14:33:02 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
+04 14:33:02 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
+04 14:33:02 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
+04 14:33:02 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
