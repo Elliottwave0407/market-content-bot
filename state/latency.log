@@ -1669,3 +1669,26 @@
 04 11:19:28 pdf pdf current col Vinyoflex Ltd standalone ok=False/3: revenue=1147.65, other_income=6.87, total_income=1154.52, total_expenses=1054.05, finance_costs=0.02, depreciation=18.0, pbt=90.47, tax=23.0, pat=67.47, eps=1.56
 04 11:19:28 pdf nim reader Tainwala Chemicals and Plastics (India) Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rej
 04 11:19:28 pdf pdf read failed Tainwala Chemicals and Plastics (India) Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the 
+04 11:19:51 pdf nim reader Refex Renewables & Infrastructure Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 11:19:51 pdf pdf read failed Refex Renewables & Infrastructure Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 11:19:51 pdf pdf incomplete Krishna Capital and Securities Ltd consolidated: missing ['ebitda'] - not posting from PDF
+04 11:19:51 pdf rule reader Meenakshi Steel Industries Ltd: rule: no results table page
+04 11:19:51 pdf nim reader Meenakshi Steel Industries Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 11:19:51 pdf pdf read failed Meenakshi Steel Industries Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 11:19:59 pdf rule reader Vivekanand Cotspin Ltd: rule: no results table page
+04 11:19:59 pdf nim reader Vivekanand Cotspin Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 11:19:59 pdf pdf read failed Vivekanand Cotspin Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 11:19:59 pdf rule reader Tainwala Chemicals and Plastics (India) Ltd: rule: stan: does not reconcile [lakh] pbt=[372.51, 13.57, 527.63] pat=[353.07, 2.52, 387.63] depreciation=[5.54, 543.0, 9.07] finance_costs=[0.1, None, None]
+04 11:19:59 pdf nim reader Tainwala Chemicals and Plastics (India) Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 11:19:59 pdf pdf read failed Tainwala Chemicals and Plastics (India) Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 11:19:59 pdf nim reader Transcorp International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+04 11:19:59 pdf pdf read failed Transcorp International Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError("Expecting ',' delimiter: line 77 column 8 (char 858)"); nim deepseek-v4.1-flash: ReadTimeout(Rea
+04 11:20:05 pdf rule reader Cospower Engineering Ltd: rule: no results table page
+04 11:20:05 pdf nim reader Cospower Engineering Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 11:20:05 pdf pdf read failed Cospower Engineering Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 11:20:05 pdf rule reader Refex Renewables & Infrastructure Ltd: rule: no results table page
+04 11:20:05 pdf nim reader Refex Renewables & Infrastructure Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 11:20:05 pdf pdf read failed Refex Renewables & Infrastructure Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 11:20:06 seen 543335 Aptus Value Housing Finance  cat=Board Meeting early=True bse_time=16:49:22 dissem=16:49:22
+04 11:20:06 seen 543520 Global Longlife Hospital and cat=Board Meeting early=True bse_time=16:49:25 dissem=16:49:25
+04 11:20:06 seen 531847 Asian Star Company Ltd-$ cat=Board Meeting early=True bse_time=16:49:44 dissem=16:49:44
