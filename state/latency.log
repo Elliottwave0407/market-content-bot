@@ -1783,3 +1783,17 @@
 04 06:47:30 pdf rule reader Brisk Technovision Ltd: rule: no results table page
 04 06:47:30 pdf nim reader Brisk Technovision Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
 04 06:47:30 pdf pdf read failed Brisk Technovision Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:50:40 pdf nim reader Bervin Investment & Leasing Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+04 06:50:40 pdf pdf read failed Bervin Investment & Leasing Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+04 06:50:51 pdf rule reader Global Infratech & Finance Ltd: rule: no results table page
+04 06:50:51 pdf nim reader Global Infratech & Finance Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:50:51 pdf pdf read failed Global Infratech & Finance Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:50:51 pdf rule reader Eco Recycling Ltd: rule: filing mentions consolidated results but that table was not read
+04 06:50:51 pdf nim reader Eco Recycling Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:50:51 pdf pdf read failed Eco Recycling Ltd: gemini skipped (quota/backoff); nim: cooling down
+04 06:51:51 seen 530643 Eco Recycling Ltd cat=Result early=False bse_time=12:20:42 dissem=12:20:42
+04 06:51:51 seen 531503 Maris Spinners Ltd-$ cat=Board Meeting early=True bse_time=12:20:43 dissem=12:20:43
+04 06:51:51 seen 506919 Makers Laboratories Ltd-$ cat=Board Meeting early=True bse_time=12:21:01 dissem=12:21:01
+04 06:51:51 seen 543898 BEML Land Assets Ltd cat=Board Meeting early=True bse_time=12:21:09 dissem=12:21:09
+04 06:52:14 wait 530643 Eco Recycling Ltd: numbers not yet on BSE
+04 06:52:20 seen 532443 Cera Sanitaryware Ltd cat=Board Meeting early=True bse_time=12:21:38 dissem=12:21:38
