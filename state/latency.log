@@ -1662,3 +1662,13 @@
 04 00:30:25 wait 513307 Belding India Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
 04 00:30:26 pdf pdf current col Belding India Ltd consolidated ok=True/3: revenue=661.03, other_income=206.75, total_income=867.78, total_expenses=1734.26, finance_costs=118.91, depreciation=275.44, pbt=-866.48, tax=-311.31, pat=-555.15, eps=-3.6
 04 00:30:26 pdf pdf incomplete Belding India Ltd consolidated: missing ['revenue'] - not posting from PDF
+04 00:37:44 pdf pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] are not a quarterly layout: not used Evonile Pharma Ltd
+04 00:50:41 pdf nim reader Belding India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+04 00:50:41 pdf pdf read failed Belding India Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepsee
+04 00:53:34 pdf nim reader Belding India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 60 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: ge
+04 00:53:34 pdf pdf read failed Belding India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 60 numbers not found in the filing text (possible inv
+04 00:54:38 pdf nim reader Belding India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 60 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: HT
+04 00:54:38 pdf pdf read failed Belding India Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepsee
+04 01:14:19 pdf nim reader Belding India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff)
+04 01:14:19 pdf pdf read failed Belding India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+04 01:14:45 ready 513307|Sep-26|consolidated kind=photo waited_min=45.0 tries=6 pdf_log=
