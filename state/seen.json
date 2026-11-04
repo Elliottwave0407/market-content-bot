@@ -3512,7 +3512,9 @@
 "1dd40ba6-f06a-4845-b0dd-4a1b8b386ec2",
 "5132c5f9-bdf8-4db3-af37-3a1b4ccecedd",
 "e696c50d-02f3-4641-9860-9ad0b3a1ad15",
-"233b555a-6db8-49ab-99ad-3e19d39f5f42"
+"233b555a-6db8-49ab-99ad-3e19d39f5f42",
+"0c21dc51-92fa-4e6c-9e2b-ce882184c08f",
+"18a174bd-31ce-4a06-9154-16c67a7426eb"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5653,47 +5655,11 @@
 "544122|Sep-26|consolidated",
 "526823|Sep-26|na",
 "544066|Sep-26|standalone",
-"523792|Sep-26|standalone"
+"523792|Sep-26|standalone",
+"544479|Sep-26|consolidated",
+"513361|Sep-26|anomaly"
 ],
 "pending": {
-"18a174bd-31ce-4a06-9154-16c67a7426eb": {
-"rec": {
-"NEWSID": "18a174bd-31ce-4a06-9154-16c67a7426eb",
-"SCRIP_CD": 513361,
-"XML_NAME": "ANN_513361_18A174BD-31CE-4A06-9154-16C67A7426EB",
-"NEWSSUB": "India Homes Ltd - 513361 - Un-Audited Financial Results (Intigrated) For The Quarter & Half Year Ended 30 09 2026",
-"DT_TM": "2026-11-04T18:21:41.583",
-"NEWS_DT": "2026-11-04T18:21:41.583",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "6dfec5ee-94a9-44b9-a789-606ac63ac277.pdf",
-"MORE": "",
-"HEADLINE": "Un-Audited Financial Results intigrated for the Quarter & half year ended 30 09 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/india-homes-ltd/indiahomes/513361/",
-"SLONGNAME": "India Homes Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 46,
-"News_submission_dt": "2026-11-04T18:21:41",
-"DissemDT": "2026-11-04T18:21:41.583",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 13702376,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793796721.10254,
-"last": 1793803810.3037765,
-"alerted": true
-},
 "4ca2b2ba-5c11-40c4-bae9-e98396f44b3d": {
 "rec": {
 "NEWSID": "4ca2b2ba-5c11-40c4-bae9-e98396f44b3d",
@@ -5767,7 +5733,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793799460.2278574,
-"last": 1793803810.3037765,
+"last": 1793804147.3943484,
 "alerted": true
 },
 "af4993e6-f969-48a0-9456-26bb5a53e8c6": {
@@ -5919,7 +5885,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793802535.6889634,
-"last": 1793803810.3037765,
+"last": 1793804147.3943484,
 "alerted": true
 },
 "e72e4278-26c8-44a3-9209-6f9f79ebcc32": {
@@ -6418,10 +6384,6 @@
 }
 },
 "lag": [
-[
-"Digitide Solutions Ltd",
-30
-],
 [
 "Happiest Minds Technologies Ltd",
 31
@@ -7617,6 +7579,10 @@
 [
 "Rajeswari Infrastructure Ltd",
 50
+],
+[
+"India Homes Ltd",
+124
 ]
 ],
 "gem_use": {
@@ -7643,7 +7609,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 761
+"2026-11-04": 767
 },
 "pdfposted": {
 "533110|Sep-26|standalone": {
@@ -9674,6 +9640,16 @@
 "rev": 102632.9,
 "pat": 11238.4,
 "t": 1793803146.4638581,
+"last": 0
+},
+"544479|Sep-26|consolidated": {
+"code": "544479",
+"name": "All Time Plastics Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1740.817,
+"pat": 36.326,
+"t": 1793804179.0941498,
 "last": 0
 }
 },
@@ -11912,7 +11888,8 @@
 "cf31ed07-8f7f-4d15-b5bc-3672893445ad": 1,
 "fabfc015-6e76-4c46-b103-69a184f50bc4": 1,
 "1e3fefa6-61c7-4feb-98e2-8329b0bcf08b": 1,
-"d5d2c35b-4ee3-4169-8772-19473dab4a91": 1
+"d5d2c35b-4ee3-4169-8772-19473dab4a91": 1,
+"0c21dc51-92fa-4e6c-9e2b-ce882184c08f": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -13033,14 +13010,14 @@
 "other": 66
 },
 "results-key": {
-"ok": 493,
-"429": 12,
+"ok": 495,
+"429": 13,
 "other": 49
 },
 "concall-key": {
-"ok": 347,
+"ok": 375,
 "429": 9,
-"other": 45
+"other": 49
 }
 }
 }
