@@ -1641,3 +1641,21 @@
 04 11:16:29 pdf pdf current col Rich Universe Network Ltd standalone ok=True/3: revenue=12.42, other_income=0.0, total_income=12.42, total_expenses=2.08, finance_costs=0.0, depreciation=0.0, pbt=10.34, tax=0.0, pat=10.34, eps=0.14
 04 11:16:29 pdf pdf incomplete Rich Universe Network Ltd standalone: missing ['ebitda'] - not posting from PDF
 04 11:16:30 seen 538882 Emerald Finance Ltd cat=Board Meeting early=True bse_time=16:45:53 dissem=16:45:53
+04 11:17:31 pdf rule reader Bentley Commercial Enterprises Ltd: rule: stan: no revenue row
+04 11:17:31 pdf rule reader Rich Universe Network Ltd: rule: no results table page
+04 11:17:32 seen 530271 Rich Universe Network Ltd cat=Board Meeting early=True bse_time=16:46:32 dissem=16:46:32
+04 11:17:32 seen 512505 Meenakshi Steel Industries L cat=Result early=False bse_time=16:46:35 dissem=16:46:35
+04 11:17:32 seen 507498 Piccadily Sugar & Allied Ind cat=Board Meeting early=True bse_time=16:46:45 dissem=16:46:45
+04 11:17:32 seen 539384 Krishna Capital and Securiti cat=Result early=False bse_time=16:46:56 dissem=16:46:56
+04 11:17:54 wait 539384 Krishna Capital and Securiti: numbers not yet on BSE
+04 11:17:59 wait 512505 Meenakshi Steel Industries L: numbers not yet on BSE
+04 11:18:01 pdf rule reader Meenakshi Steel Industries Ltd: rule: no results table page
+04 11:18:01 pdf rule reader Krishna Capital and Securities Ltd: rule: no results table page
+04 11:18:01 pdf nim reader Tainwala Chemicals and Plastics (India) Ltd: nim deepseek-v4.1-flash: 2 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the fi
+04 11:18:01 pdf pdf read failed Tainwala Chemicals and Plastics (India) Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 2 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550
+04 11:18:01 pdf nim reader Transcorp International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+04 11:18:01 pdf pdf read failed Transcorp International Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (pos
+04 11:18:05 seen 531260 Refex Renewables & Infrastru cat=Board Meeting early=True bse_time=16:47:38 dissem=16:47:38
+04 11:18:05 seen 524614 IEL Ltd cat=Board Meeting early=True bse_time=16:47:39 dissem=16:47:39
+04 11:18:05 seen 543172 Cospower Engineering Ltd cat=Board Meeting early=True bse_time=16:47:57 dissem=16:47:57
+04 11:18:05 seen 544939 Vivekanand Cotspin Ltd cat=Board Meeting early=True bse_time=16:47:57 dissem=16:47:57
