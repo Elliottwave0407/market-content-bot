@@ -1625,3 +1625,19 @@
 04 11:15:23 ready 540063|Sep-26|na kind=photo waited_min=46.3 tries=8 pdf_log=pdf current col Tainwala Chemicals and Plastics (India) Ltd standalone ok=False/3: revenue=114.97, other_income=410.88, total_income=525.85, total_expenses=153.
 04 11:15:30 wait 533629 Tijaria Polypipes Ltd: confirming that no consolidated statement exists
 04 11:15:37 wait 530271 Rich Universe Network Ltd: numbers not yet on BSE
+04 11:15:56 seen 507785 Tainwala Chemicals and Plast cat=Result early=False bse_time=16:44:59 dissem=16:44:59
+04 11:16:20 wait 507785 Tainwala Chemicals and Plast: numbers not yet on BSE
+04 11:16:29 pdf rule reader Rich Universe Network Ltd: rule: no results table page
+04 11:16:29 pdf rule reader ISL Consulting Ltd: rule: no results table page
+04 11:16:29 pdf rule reader Kotia Enterprises Ltd: rule: no results table page
+04 11:16:29 pdf rule reader Tainwala Chemicals and Plastics (India) Ltd: rule: stan: does not reconcile [lakh] pbt=[372.51, 13.57, 527.63] pat=[353.07, 2.52, 387.63] depreciation=[5.54, 543.0, 9.07] finance_costs=[0.1, None, None]
+04 11:16:29 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+04 11:16:29 pdf nim reader Transcorp International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+04 11:16:29 pdf pdf read failed Transcorp International Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError("Expecting ',' delimiter: line 69 column 11 (char 952)"); nim deepseek-v4.1-flash: ReadTimeout(Re
+04 11:16:29 pdf pdf current col Tainwala Chemicals and Plastics (India) Ltd standalone ok=False/3: revenue=114.97, other_income=410.88, total_income=525.85, total_expenses=153.34, finance_costs=0.1, depreciation=5.54, pbt=380.06, tax=26.99, pat=3
+04 11:16:29 pdf pdf incomplete Tainwala Chemicals and Plastics (India) Ltd standalone: missing ['ebitda'] - not posting from PDF
+04 11:16:29 pdf pdf current col ISL Consulting Ltd standalone ok=True/2: revenue=913.46, other_income=2.42, total_income=915.88, total_expenses=964.79, finance_costs=0.0, depreciation=0.32, pbt=-48.91, tax=None, pat=-48.91, eps=-0.2
+04 11:16:29 pdf pdf incomplete ISL Consulting Ltd standalone: missing ['ebitda'] - not posting from PDF
+04 11:16:29 pdf pdf current col Rich Universe Network Ltd standalone ok=True/3: revenue=12.42, other_income=0.0, total_income=12.42, total_expenses=2.08, finance_costs=0.0, depreciation=0.0, pbt=10.34, tax=0.0, pat=10.34, eps=0.14
+04 11:16:29 pdf pdf incomplete Rich Universe Network Ltd standalone: missing ['ebitda'] - not posting from PDF
+04 11:16:30 seen 538882 Emerald Finance Ltd cat=Board Meeting early=True bse_time=16:45:53 dissem=16:45:53
