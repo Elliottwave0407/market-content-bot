@@ -1842,3 +1842,13 @@
 04 12:21:25 seen 506162 Terraform Magnum Ltd cat=Result early=False bse_time=17:48:52 dissem=17:48:52
 04 12:24:25 ready 523144|Sep-26|consolidated kind=photo waited_min=43.0 tries=1 pdf_log=rule reader Medi Caps Ltd-$: rule: consolidated table incomplete missing ['pat'] n=6 | pdf current col Medi Caps Ltd-$ consolidated ok=True/2: revenue=577.34, o
 04 12:24:36 ready 530469|Sep-26|standalone kind=photo waited_min=44.5 tries=1 pdf_log=pdf current col Medi Caps Ltd-$ consolidated ok=True/2: revenue=577.34, other_income=6.63, total_income=583.97, total_expenses=592.78, finance_costs=None, depre
+04 12:24:48 ready 526628|Sep-26|standalone kind=photo waited_min=44.5 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | rule reader Ajwa Fun World & Resort Ltd: rule: no results table 
+04 12:25:04 ready 531274|Sep-26|standalone kind=photo waited_min=17.7 tries=1 pdf_log=pdf current col Kinetic Trust Ltd standalone ok=True/2: revenue=13.39, other_income=None, total_income=13.39, total_expenses=19.08, finance_costs=2.0, depreciat
+04 12:25:27 ready 539814|Sep-26|consolidated kind=photo waited_min=10.5 tries=1 pdf_log=pdf incomplete Mid East Portfolio Management Ltd standalone: missing ['revenue'] - not posting from PDF | rule reader LE Lavoir Ltd: rule: consolidated table do
+04 12:26:02 wait 506162 Terraform Magnum Ltd: numbers not yet on BSE
+04 12:26:11 pdf rule reader Mansoon Trading Company Ltd: rule: stan: does not reconcile [lakh] total_expenses=[774.82, 776.04, 445.32] pbt=[301.86, 337.13, 298.06] tax=[-53.0, -58.0, -55.0] pat=[248.86, 279.13, 243.06] finance_costs=[409.74, 370.
+04 12:26:11 pdf pdf read deferred Mansoon Trading Company Ltd: per-pass AI call cap
+04 12:26:11 pdf rule reader Terraform Magnum Ltd: rule: no results table page
+04 12:26:11 pdf pdf read deferred Terraform Magnum Ltd: per-pass AI call cap
+04 12:26:11 pdf rule reader P. B. Films Ltd: rule: no results table page
+04 12:26:11 pdf pdf read deferred P. B. Films Ltd: per-pass AI call cap
