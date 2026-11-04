@@ -1717,3 +1717,13 @@
 04 06:13:06 pdf pdf read failed Bervin Investment & Leasing Ltd: HTTP 429 (per-day) on gemini-flash-latest | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (per-day) on gemini-flash-latest; nim deepseek-v4
 04 06:13:33 pdf nim reader Vintage Coffee And Beverages Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. 
 04 06:13:33 pdf pdf read failed Vintage Coffee And Beverages Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quot
+04 06:16:49 seen 531340 Bervin Investment & Leasing  cat=Board Meeting early=True bse_time=11:40:27 dissem=11:40:27
+04 06:16:49 seen 538920 Vintage Coffee And Beverages cat=Result early=False bse_time=11:41:04 dissem=11:41:04
+04 06:17:43 seen 531340 Bervin Investment & Leasing  cat=Result early=False bse_time=11:47:23 dissem=11:47:23
+04 06:17:43 seen 538920 Vintage Coffee And Beverages cat=Board Meeting early=True bse_time=11:47:24 dissem=11:47:24
+04 06:18:06 wait 531340 Bervin Investment & Leasing : numbers not yet on BSE
+04 06:18:21 pdf nim reader Bervin Investment & Leasing Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [
+04 06:18:21 pdf pdf read failed Bervin Investment & Leasing Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 503 on gemini-flash-latest; nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim 
+04 06:18:49 pdf rule reader Vintage Coffee And Beverages Ltd: rule: no results table page
+04 06:18:49 pdf nim reader Vintage Coffee And Beverages Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+04 06:18:49 pdf pdf read failed Vintage Coffee And Beverages Ltd: gemini skipped (quota/backoff); nim: cooling down
