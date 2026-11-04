@@ -3154,7 +3154,9 @@
 "c9bf9877-db9a-4da9-864a-b315543ead62",
 "496d1a87-70be-4c82-bbc3-b613c53caf8e",
 "18680478-a515-4191-9899-31462dadcbf0",
-"04973b37-51eb-4b11-915a-97deb4c4ffbd"
+"04973b37-51eb-4b11-915a-97deb4c4ffbd",
+"ba32b37c-26a3-4907-a19d-534d636b649f",
+"af0ff4fa-400e-4178-9b12-3ecd41a85ce5"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5082,7 +5084,9 @@
 "543638|Sep-26|standalone",
 "530477|Sep-26|standalone",
 "531878|Sep-26|standalone",
-"500877|Sep-26|consolidated"
+"500877|Sep-26|consolidated",
+"507580|Sep-26|standalone",
+"531341|Sep-26|standalone"
 ],
 "pending": {
 "b880a942-3635-4c5b-8457-20f4b6ff197d": {
@@ -5120,7 +5124,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786480.452717,
-"last": 1793788559.676086,
+"last": 1793788615.449648,
 "alerted": true
 },
 "78b2dc60-1b52-4977-beb3-f7a481ffa5fd": {
@@ -5196,7 +5200,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793786768.4943802,
-"last": 1793788559.676086,
+"last": 1793788615.449648,
 "alerted": true
 },
 "ea1d940c-655c-4caa-9f29-6f5b7125f264": {
@@ -5234,45 +5238,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793787437.448166,
-"last": 1793788559.676086,
-"alerted": false
-},
-"af0ff4fa-400e-4178-9b12-3ecd41a85ce5": {
-"rec": {
-"NEWSID": "af0ff4fa-400e-4178-9b12-3ecd41a85ce5",
-"SCRIP_CD": 531341,
-"XML_NAME": "ANN_531341_AF0FF4FA-400E-4178-9B12-3ECD41A85CE5",
-"NEWSSUB": "Gujarat Investa Ltd - 531341 - Results-For The Quarter And Half-Year Ended 30.09.2026",
-"DT_TM": "2026-11-04T15:52:58.96",
-"NEWS_DT": "2026-11-04T15:52:58.96",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "6d5e8643-928c-4a24-93ad-00ee4b8881d6.pdf",
-"MORE": "",
-"HEADLINE": "unaudited financial results for the quarter and half-year ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/gujarat-investa-ltd/gujinv/531341/",
-"SLONGNAME": "Gujarat Investa Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 21,
-"News_submission_dt": "2026-11-04T15:52:58",
-"DissemDT": "2026-11-04T15:52:58.96",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10577258,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793787839.3314934,
-"last": 1793788559.676086,
+"last": 1793788615.449648,
 "alerted": false
 },
 "fd0a44a4-b8ee-4467-bf4c-bbe6394ed5a4": {
@@ -5348,7 +5314,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793788137.1010787,
-"last": 1793788559.676086,
+"last": 1793788615.449648,
 "alerted": false
 },
 "0a63a4da-8183-46dd-baa9-d579bba309cb": {
@@ -5391,10 +5357,6 @@
 }
 },
 "lag": [
-[
-"Valencia India Ltd",
-46
-],
 [
 "Exxaro Tiles Ltd",
 45
@@ -6590,6 +6552,10 @@
 [
 "Tracxn Technologies Ltd",
 10
+],
+[
+"Gujarat Investa Ltd",
+13
 ]
 ],
 "gem_use": {
@@ -6616,7 +6582,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 289
+"2026-11-04": 293
 },
 "pdfposted": {
 "522215|Sep-26|standalone": {
@@ -7637,6 +7603,26 @@
 "rev": 79681.5,
 "pat": 2922.87,
 "t": 1793788588.1061246,
+"last": 0
+},
+"507580|Sep-26|standalone": {
+"code": "507580",
+"name": "IVP Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1716.8000000000002,
+"pat": 46.5,
+"t": 1793788636.513497,
+"last": 0
+},
+"531341|Sep-26|standalone": {
+"code": "531341",
+"name": "Gujarat Investa Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 23.402,
+"pat": 1.17,
+"t": 1793788645.603023,
 "last": 0
 }
 },
@@ -9364,7 +9350,9 @@
 "b3fc3f91-2f77-44e6-80d3-c96aff08c737": 1,
 "c03aef6d-bd50-43eb-8e70-ef04c33bbf47": 1,
 "c9bf9877-db9a-4da9-864a-b315543ead62": 1,
-"18680478-a515-4191-9899-31462dadcbf0": 1
+"18680478-a515-4191-9899-31462dadcbf0": 1,
+"ba32b37c-26a3-4907-a19d-534d636b649f": 1,
+"5391672f-c3b7-4e5b-b174-670713ed7470": 1
 },
 "cons_expected": {
 "10a7587c-38a4-4c2f-849c-f3959bad54f4": 1,
@@ -10922,7 +10910,7 @@
 },
 "2026-11-04": {
 "main": {
-"ok": 384,
+"ok": 388,
 "429": 4,
 "other": 58
 },
