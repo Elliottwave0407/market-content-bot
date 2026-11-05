@@ -3848,7 +3848,8 @@
 "10371bf1-eb97-4542-8f91-5942bba96147",
 "29081144-0ea6-4a8c-9c48-af49ed9e2f9f",
 "3c1eb6be-c239-4907-84b4-c089fb198f3b",
-"cccf303a-1beb-404f-8c4e-27f6f7e00a86"
+"cccf303a-1beb-404f-8c4e-27f6f7e00a86",
+"1f3ecc93-84fc-4fed-8323-85b6ea9dc358"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6270,7 +6271,9 @@
 "505358|Sep-26|consolidated",
 "544917|Sep-26|consolidated",
 "522004|Sep-26|consolidated",
-"543725|Sep-26|consolidated"
+"543725|Sep-26|consolidated",
+"505720|Sep-26|standalone",
+"511766|Sep-26|standalone"
 ],
 "pending": {
 "dc2610a8-8549-421c-9518-9e8364bc132d": {
@@ -6310,44 +6313,6 @@
 "first": 1793868527.484016,
 "last": 1793878583.5408819,
 "alerted": false
-},
-"1f3ecc93-84fc-4fed-8323-85b6ea9dc358": {
-"rec": {
-"NEWSID": "1f3ecc93-84fc-4fed-8323-85b6ea9dc358",
-"SCRIP_CD": 505720,
-"XML_NAME": "ANN_505720_1F3ECC93-84FC-4FED-8323-85B6EA9DC358",
-"NEWSSUB": "Hercules Investments Ltd - 505720 - Results- Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-05T14:35:09.343",
-"NEWS_DT": "2026-11-05T14:35:09.343",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "9d79449a-acdd-45e8-bee3-accce44f8499.pdf",
-"MORE": "",
-"HEADLINE": "Please find attached herewith the financial results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/hercules-investments-ltd/hercules/505720/",
-"SLONGNAME": "Hercules Investments Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 25,
-"News_submission_dt": "2026-11-05T14:35:09",
-"DissemDT": "2026-11-05T14:35:09.343",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2859355,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793871173.3838925,
-"last": 1793878583.5408819,
-"alerted": true
 },
 "76283f85-4ca5-4912-b58f-a4e5540b898e": {
 "rec": {
@@ -9430,10 +9395,6 @@
 },
 "lag": [
 [
-"Vandan Foods Ltd",
-47
-],
-[
 "Bengal Steel Industries Ltd",
 45
 ],
@@ -10628,6 +10589,10 @@
 [
 "Elin Electronics Ltd",
 242
+],
+[
+"Hercules Investments Ltd",
+304
 ]
 ],
 "gem_use": {
@@ -10655,7 +10620,7 @@
 "2026-11-02": 450,
 "2026-11-03": 879,
 "2026-11-04": 948,
-"2026-11-05": 175
+"2026-11-05": 176
 },
 "pdfposted": {
 "512433|Sep-26|standalone": {
@@ -15132,23 +15097,23 @@
 "2026-11-05": {
 "main": {
 "ok": 213,
-"429": 19,
+"429": 20,
 "other": 321
 },
 "results-key": {
 "ok": 116,
 "429": 9,
-"other": 432
+"other": 433
 },
 "concall-key": {
 "ok": 103,
 "429": 9,
-"other": 388
+"other": 389
 },
 "vision-key": {
-"ok": 13,
+"ok": 15,
 "429": 1,
-"other": 67
+"other": 78
 }
 }
 }
