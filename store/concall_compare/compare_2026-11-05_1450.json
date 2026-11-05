@@ -1,0 +1,455 @@
+{
+ "summary": {
+  "stored:nemotron": {
+   "docs": 12,
+   "sec_per_doc": "n/a",
+   "chunk_fails": "0/0",
+   "facts_per_doc": 21.6,
+   "verified_of_raw": 0.85,
+   "struct_A": 0.71,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.95,
+   "notes": {}
+  },
+  "groq:openai/gpt-oss-120b": {
+   "docs": 12,
+   "sec_per_doc": 6,
+   "chunk_fails": "10/12",
+   "facts_per_doc": 3.5,
+   "verified_of_raw": 0.91,
+   "struct_A": 0.81,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.11,
+   "notes": {
+    "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 10
+   }
+  },
+  "groq:llama-3.3-70b-versatile": {
+   "docs": 12,
+   "sec_per_doc": 0,
+   "chunk_fails": "12/12",
+   "facts_per_doc": 0.0,
+   "verified_of_raw": 0.0,
+   "struct_A": 0.0,
+   "judged": 0,
+   "yes": 0.0,
+   "partial": 0.0,
+   "no": 0.0,
+   "analyst": 0.0,
+   "numbers_vs_union": 0.0,
+   "notes": {
+    "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 12
+   }
+  }
+ },
+ "per_doc": {
+  "stored:nemotron": {
+   "540719|2025-05-02": {
+    "n_raw": 27,
+    "n_ok": 24,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "540750|2025-08-01": {
+    "n_raw": 43,
+    "n_ok": 42,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "538446|2026-02-16": {
+    "n_raw": 28,
+    "n_ok": 27,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "543254|2025-08-18": {
+    "n_raw": 20,
+    "n_ok": 19,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "532884|2026-11-02": {
+    "n_raw": 27,
+    "n_ok": 17,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "500780|2026-08-21": {
+    "n_raw": 27,
+    "n_ok": 27,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "532749|2024-05-30": {
+    "n_raw": 22,
+    "n_ok": 19,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "532286|2026-02-05": {
+    "n_raw": 26,
+    "n_ok": 25,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "543331|2025-08-04": {
+    "n_raw": 23,
+    "n_ok": 15,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "NSE:TARACHAND|2026-02-05": {
+    "n_raw": 16,
+    "n_ok": 4,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "NSE:K2INFRA|2026-06-02": {
+    "n_raw": 19,
+    "n_ok": 15,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   },
+   "507815|2024-09-20": {
+    "n_raw": 25,
+    "n_ok": 25,
+    "secs": 0,
+    "chunks": 0,
+    "fails": 0,
+    "notes": {}
+   }
+  },
+  "groq:openai/gpt-oss-120b": {
+   "540719|2025-05-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "540750|2025-08-01": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "538446|2026-02-16": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "543254|2025-08-18": {
+    "n_raw": 23,
+    "n_ok": 20,
+    "secs": 8.3,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532884|2026-11-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "500780|2026-08-21": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "532749|2024-05-30": {
+    "n_raw": 23,
+    "n_ok": 22,
+    "secs": 68.4,
+    "chunks": 1,
+    "fails": 0,
+    "notes": {}
+   },
+   "532286|2026-02-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "543331|2025-08-04": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "NSE:TARACHAND|2026-02-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "NSE:K2INFRA|2026-06-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   },
+   "507815|2024-09-20": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http413 {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-120b` in organi": 1
+    }
+   }
+  },
+  "groq:llama-3.3-70b-versatile": {
+   "540719|2025-05-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "540750|2025-08-01": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "538446|2026-02-16": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "543254|2025-08-18": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "532884|2026-11-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "500780|2026-08-21": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "532749|2024-05-30": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "532286|2026-02-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "543331|2025-08-04": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "NSE:TARACHAND|2026-02-05": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "NSE:K2INFRA|2026-06-02": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   },
+   "507815|2024-09-20": {
+    "n_raw": 0,
+    "n_ok": 0,
+    "secs": 0.1,
+    "chunks": 1,
+    "fails": 1,
+    "notes": {
+     "http404 {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you d": 1
+    }
+   }
+  }
+ },
+ "docs": [
+  {
+   "key": "540719|2025-05-02",
+   "name": "SBI Life Insurance Company Ltd",
+   "day": "2025-05-02"
+  },
+  {
+   "key": "540750|2025-08-01",
+   "name": "Indian Energy Exchange Ltd",
+   "day": "2025-08-01"
+  },
+  {
+   "key": "538446|2026-02-16",
+   "name": "Moneyboxx Finance Ltd",
+   "day": "2026-02-16"
+  },
+  {
+   "key": "543254|2025-08-18",
+   "name": "Antony Waste Handling Cell Ltd",
+   "day": "2025-08-18"
+  },
+  {
+   "key": "532884|2026-11-02",
+   "name": "Refex Industries Ltd",
+   "day": "2026-11-02"
+  },
+  {
+   "key": "500780|2026-08-21",
+   "name": "Zuari Industries Ltd",
+   "day": "2026-08-21"
+  },
+  {
+   "key": "532749|2024-05-30",
+   "name": "Allcargo Logistics Ltd",
+   "day": "2024-05-30"
+  },
+  {
+   "key": "532286|2026-02-05",
+   "name": "Jindal Steel Ltd",
+   "day": "2026-02-05"
+  },
+  {
+   "key": "543331|2025-08-04",
+   "name": "Meghmani Organics Ltd",
+   "day": "2025-08-04"
+  },
+  {
+   "key": "NSE:TARACHAND|2026-02-05",
+   "name": "Tara Chand InfraLogistic Solutions Limited",
+   "day": "2026-02-05"
+  },
+  {
+   "key": "NSE:K2INFRA|2026-06-02",
+   "name": "K2 Infragen Limited",
+   "day": "2026-06-02"
+  },
+  {
+   "key": "507815|2024-09-20",
+   "name": "Gillette India Limited",
+   "day": "2024-09-20"
+  }
+ ]
+}
