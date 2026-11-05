@@ -1,375 +1,3 @@
-04 13:19:31 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:19:31 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:19:31 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:19:31 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:19:31 pdf rule reader Sea TV Network Ltd: rule: no results table page
-04 13:19:31 pdf pdf read deferred Sea TV Network Ltd: per-pass AI call cap
-04 13:19:31 pdf rule reader Terraform Magnum Ltd: rule: no results table page
-04 13:19:31 pdf pdf read deferred Terraform Magnum Ltd: per-pass AI call cap
-04 13:19:31 pdf rule reader Mansoon Trading Company Ltd: rule: stan: does not reconcile [lakh] total_expenses=[774.82, 776.04, 445.32] pbt=[301.86, 337.13, 298.06] tax=[-53.0, -58.0, -55.0] pat=[248.86, 279.13, 243.06] finance_costs=[409.74, 370.
-04 13:19:31 pdf pdf read deferred Mansoon Trading Company Ltd: per-pass AI call cap
-04 13:19:31 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:19:31 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:19:38 seen 522249 Mayur Uniquoters Ltd-$ cat=Board Meeting early=True bse_time=18:42:12 dissem=18:42:12
-04 13:19:38 seen 511076 Aeroflex Enterprises Ltd-$ cat=Result early=False bse_time=18:42:39 dissem=18:42:39
-04 13:19:38 seen 524723 Arvaya Healthcare Ltd cat=Board Meeting early=True bse_time=18:42:47 dissem=18:42:47
-04 13:19:38 seen 532172 Adroit Infotech Ltd cat=Result early=False bse_time=18:43:29 dissem=18:43:29
-04 13:19:38 seen 539594 Mishtann Foods Ltd cat=Board Meeting early=True bse_time=18:44:11 dissem=18:44:11
-04 13:19:38 seen 512221 SPV Global Trading Ltd cat=Result early=False bse_time=18:44:13 dissem=18:44:13
-04 13:19:38 seen 523207 Kokuyo Camlin Ltd-$ cat=Board Meeting early=True bse_time=18:44:44 dissem=18:44:44
-04 13:19:38 seen 502355 Balkrishna Industries Ltd-$ cat=Board Meeting early=True bse_time=18:44:57 dissem=18:44:57
-04 13:19:38 seen 504731 Azad India Mobility Ltd cat=Board Meeting early=True bse_time=18:45:58 dissem=18:45:58
-04 13:19:38 seen 544238 Premier Energies Ltd cat=Result early=False bse_time=18:46:26 dissem=18:46:26
-04 13:19:38 seen 544000 City Crops Agro Ltd cat=Board Meeting early=True bse_time=18:46:28 dissem=18:46:28
-04 13:19:38 seen 543308 Krishna Institute of Medical cat=Board Meeting early=True bse_time=18:47:36 dissem=18:47:36
-04 13:19:38 seen 544512 Shringar House of Mangalsutr cat=Board Meeting early=True bse_time=18:48:16 dissem=18:48:16
-04 13:19:38 seen 506248 Amines & Plasticizers Ltd cat=Board Meeting early=True bse_time=18:48:34 dissem=18:48:34
-04 13:19:38 seen 523343 Microse India Ltd cat=Board Meeting early=True bse_time=18:48:36 dissem=18:48:36
-04 13:19:38 seen 508860 Diamant Infrastructure Ltd cat=Board Meeting early=True bse_time=18:48:57 dissem=18:48:57
-04 13:19:38 seen 539277 Alstone Textiles (India) Ltd cat=Board Meeting early=True bse_time=18:49:01 dissem=18:49:01
-04 13:19:38 seen 504731 Azad India Mobility Ltd cat=Result early=False bse_time=18:49:13 dissem=18:49:13
-04 13:19:38 seen 539594 Mishtann Foods Ltd cat=Result early=False bse_time=18:49:24 dissem=18:49:24
-04 13:20:32 ready 508869|Sep-26|na kind=photo waited_min=49.3 tries=5 pdf_log=pdf history mismatch Apollo Hospitals Enterprise Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 69319.0 pat 6104.0 | bse rev 7
-04 13:20:59 ready 502355|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-04 13:21:20 ready 544512|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Premier Energies Ltd consolidated ok=True/3: revenue=26318.52, other_income=241.92, total_income=26560.44, total_expenses=20549.2, finance_costs
-04 13:21:42 ready 511076|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Aeroflex Enterprises Ltd-$ consolidated ok=False/3: revenue=24990.49, other_income=2743.4, total_income=27733.89, total_expenses=22037.37, finan
-04 13:21:51 ready 517172|Sep-26|standalone kind=photo waited_min=30.7 tries=4 pdf_log=pdf current col Aeroflex Enterprises Ltd-$ consolidated ok=False/3: revenue=24990.49, other_income=2743.4, total_income=27733.89, total_expenses=22037.37, finan
-04 13:23:18 wait 504731 Azad India Mobility Ltd: numbers not yet on BSE
-04 13:23:40 ready 539594|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf incomplete Azad India Mobility Ltd consolidated: missing ['ebitda'] - not posting from PDF | rule reader Mishtann Foods Ltd: rule: no results table page | p
-04 13:23:51 ready 526169|Sep-26|standalone kind=photo waited_min=8.0 tries=2 pdf_log=pdf current col Mishtann Foods Ltd consolidated ok=True/3: revenue=1931.95, other_income=1.45, total_income=1933.4, total_expenses=1802.6, finance_costs=21.03, 
-04 13:24:52 ready 533629|Sep-26|standalone kind=photo waited_min=124.4 tries=0 pdf_log=pdf read deferred Containerway International Ltd: per-pass AI call cap | rule reader Vivid Global Industries Ltd: rule: no results table page | pdf read deferre
-04 13:25:17 wait 512221 SPV Global Trading Ltd: numbers not yet on BSE
-04 13:25:22 ready 512303|Sep-26|na kind=photo waited_min=47.0 tries=0 pdf_log=pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap | rule reader Mansoon Trading Company Ltd: rule: stan: does not reconcile [lakh] total_expens
-04 13:25:35 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:25:35 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:25:35 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:25:35 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:25:35 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:25:35 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:25:35 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 13:25:35 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 13:25:35 pdf rule reader Mansoon Trading Company Ltd: rule: stan: does not reconcile [lakh] total_expenses=[774.82, 776.04, 445.32] pbt=[301.86, 337.13, 298.06] tax=[-53.0, -58.0, -55.0] pat=[248.86, 279.13, 243.06] finance_costs=[409.74, 370.
-04 13:25:35 pdf pdf read deferred Mansoon Trading Company Ltd: per-pass AI call cap
-04 13:25:35 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:25:35 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:25:38 seen 504286 Delta Manufacturing Ltd cat=Result early=False bse_time=18:49:58 dissem=18:49:58
-04 13:25:38 seen 543298 Vineet Laboratories Ltd cat=Board Meeting early=True bse_time=18:50:13 dissem=18:50:13
-04 13:25:38 seen 544000 City Crops Agro Ltd cat=Result early=False bse_time=18:51:11 dissem=18:51:11
-04 13:25:38 seen 504605 Uni Abex Alloy Products Ltd cat=Result early=False bse_time=18:51:12 dissem=18:51:12
-04 13:25:38 seen 543517 Hariom Pipe Industries Ltd cat=Board Meeting early=True bse_time=18:53:33 dissem=18:53:33
-04 13:25:38 seen 504341 Ravindra Energy Ltd cat=Board Meeting early=True bse_time=18:54:01 dissem=18:54:01
-04 13:25:38 seen 544246 Revathi Equipment India Ltd cat=Board Meeting early=True bse_time=18:54:45 dissem=18:54:45
-04 13:25:38 seen 544191 Purple Finance Ltd cat=Board Meeting early=True bse_time=18:55:14 dissem=18:55:14
-04 13:27:13 ready 544246|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf incomplete Azad India Mobility Ltd consolidated: missing ['ebitda'] - not posting from PDF | pdf current col Revathi Equipment India Ltd consolidated ok=Fal
-04 13:28:56 wait 544000 City Crops Agro Ltd: numbers not yet on BSE
-04 13:30:33 wait 504286 Delta Manufacturing Ltd: numbers not yet on BSE
-04 13:31:30 pdf rule reader Popular Estate Management Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred Popular Estate Management Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 13:31:30 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Trustwave Securities Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred Trustwave Securities Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 13:31:30 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:31:30 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 13:31:30 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 13:31:30 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:31:30 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:31:32 seen 523343 Microse India Ltd cat=Result early=False bse_time=18:56:57 dissem=18:56:57
-04 13:31:32 seen 511543 GSB Finance Ltd cat=Board Meeting early=True bse_time=18:57:26 dissem=18:57:26
-04 13:31:32 seen 538730 PDS Ltd cat=Board Meeting early=True bse_time=18:57:27 dissem=18:57:27
-04 13:31:32 seen 544134 Platinum Industries Ltd cat=Board Meeting early=True bse_time=18:58:20 dissem=18:58:20
-04 13:31:32 seen 506248 Amines & Plasticizers Ltd cat=Result early=False bse_time=18:58:39 dissem=18:58:39
-04 13:31:32 seen 543517 Hariom Pipe Industries Ltd cat=Result early=False bse_time=19:01:19 dissem=19:01:19
-04 13:32:01 ready 538730|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader PDS Ltd: rule: stan: 12 columns | rule reader Hariom Pipe Industries Ltd: rule: filing mentions consolidated results but that table was not read | p
-04 13:33:16 ready 504731|Sep-26|consolidated kind=photo waited_min=11.9 tries=3 pdf_log=pdf read failed Jujhar Logistics Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | con
-04 13:37:04 ready 508963|Sep-26|na kind=photo waited_min=49.3 tries=0 pdf_log=pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap | rule reader Trustwave Securities Ltd: rule: no results table page | pdf read deferred Trus
-04 13:37:29 wait 523343 Microse India Ltd: numbers not yet on BSE
-04 13:37:36 pdf pdf history mismatch Delta Manufacturing Ltd consolidated cols=['Sept 30, 2026', 'June 30, 2026', 'Sept 30, 2025'] :: q-1: pdf rev 190.761 pat -3.109 | bse rev 190.76 pat -3.11 (Rs mn); q-4: pdf rev 138.018 pat -24.074 | bse rev 1
-04 13:37:36 pdf pdf has consolidated but it failed checks: not falling back to standalone Delta Manufacturing Ltd
-04 13:37:36 pdf rule reader Sofcom Systems Ltd: ok
-04 13:37:36 pdf pdf current col Sofcom Systems Ltd consolidated ok=True/2: revenue=4.25, other_income=None, total_income=4.25, total_expenses=7.79, finance_costs=None, depreciation=0.33, pbt=-3.54, tax=0.0, pat=-3.54, eps=-0.0015
-04 13:37:36 pdf pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF
-04 13:37:36 pdf rule reader Gujarat Craft Industries Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Gujarat Craft Industries Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Esha Media Research Ltd: rule: unit not found
-04 13:37:36 pdf pdf read deferred Esha Media Research Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Popular Estate Management Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Popular Estate Management Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 13:37:36 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Trustwave Securities Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Trustwave Securities Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 13:37:36 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:37:36 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Microse India Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 13:37:36 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:37:36 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:37:40 seen 543308 Krishna Institute of Medical cat=Result early=False bse_time=19:01:21 dissem=19:01:21
-04 13:37:40 seen 544666 Gujarat Kidney and Super Spe cat=Board Meeting early=True bse_time=19:02:00 dissem=19:02:00
-04 13:37:40 seen 544512 Shringar House of Mangalsutr cat=Result early=False bse_time=19:02:07 dissem=19:02:07
-04 13:37:40 seen 508860 Diamant Infrastructure Ltd cat=Result early=False bse_time=19:02:12 dissem=19:02:12
-04 13:37:40 seen 504341 Ravindra Energy Ltd cat=Result early=False bse_time=19:02:18 dissem=19:02:18
-04 13:37:40 seen 544572 SKF India (Industrial) Ltd cat=Result early=False bse_time=19:02:35 dissem=19:02:35
-04 13:37:40 seen 512117 Twin Roses Trades & Agencies cat=Result early=False bse_time=19:05:44 dissem=19:05:44
-04 13:37:40 seen 511543 GSB Finance Ltd cat=Result early=False bse_time=19:05:59 dissem=19:05:59
-04 13:37:40 seen 512511 Varun Mercantile Ltd cat=Result early=False bse_time=19:06:12 dissem=19:06:12
-04 13:37:40 seen 530705 Anirit Ventures Ltd cat=Board Meeting early=True bse_time=19:06:15 dissem=19:06:15
-04 13:38:23 ready 543308|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Krishna Institute of Medical Sciences Ltd consol
-04 13:38:51 wait 504341 Ravindra Energy Ltd: numbers not yet on BSE
-04 13:38:51 wait 544512 Shringar House of Mangalsutr: confirming that no consolidated statement exists
-04 13:39:10 ready 534796|Sep-26|consolidated kind=photo waited_min=48.7 tries=2 pdf_log=pdf current col Jujhar Logistics Ltd consolidated ok=True/3: revenue=4911.06, other_income=19.21, total_income=4930.29, total_expenses=4292.11, finance_costs=30
-04 13:39:17 ready 544675|Sep-26|na kind=photo waited_min=45.7 tries=99 pdf_log=pdf current col Jujhar Logistics Ltd consolidated ok=True/3: revenue=4911.06, other_income=19.21, total_income=4930.29, total_expenses=4292.11, finance_costs=30
-04 13:39:36 ready 505737|Sep-26|standalone kind=photo waited_min=43.2 tries=4 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30-09-26', '31-03-26', '30-09-25']): not read as quarters, queued for the half-yearly route City Crops Agro Ltd | ru
-04 13:40:16 wait 511543 GSB Finance Ltd: numbers not yet on BSE
-04 13:40:41 wait 508860 Diamant Infrastructure Ltd: numbers not yet on BSE
-04 13:40:43 wait 512117 Twin Roses Trades & Agencies: numbers not yet on BSE
-04 13:40:45 wait 512511 Varun Mercantile Ltd: numbers not yet on BSE
-04 13:40:54 pdf rule reader Esha Media Research Ltd: rule: unit not found
-04 13:40:54 pdf pdf read deferred Esha Media Research Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader GSB Finance Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Popular Estate Management Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Popular Estate Management Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 13:40:54 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 13:40:54 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:40:54 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 13:40:54 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 13:40:54 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Microse India Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 13:40:54 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:40:54 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:40:56 seen 538730 PDS Ltd cat=Result early=False bse_time=19:08:05 dissem=19:08:05
-04 13:40:56 seen 544246 Revathi Equipment India Ltd cat=Result early=False bse_time=19:08:29 dissem=19:08:29
-04 13:40:56 seen 544894 Lumino Industries Ltd cat=Board Meeting early=True bse_time=19:09:17 dissem=19:09:17
-04 13:40:56 seen 544134 Platinum Industries Ltd cat=Result early=False bse_time=19:09:22 dissem=19:09:22
-04 13:42:43 ready 544134|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Platinum Industries Ltd consolidated ok=True/3: revenue=1212.66, other_income=27.78, total_income=1240.44, total_expenses=1135.21, finance_costs
-04 13:42:56 ready 543928|Sep-26|na kind=photo waited_min=46.5 tries=99 pdf_log=pdf current col Platinum Industries Ltd consolidated ok=True/3: revenue=1212.66, other_income=27.78, total_income=1240.44, total_expenses=1135.21, finance_costs
-04 13:43:04 ready 500422|Sep-26|na kind=photo waited_min=46.5 tries=6 pdf_log=pdf current col Platinum Industries Ltd consolidated ok=True/3: revenue=1212.66, other_income=27.78, total_income=1240.44, total_expenses=1135.21, finance_costs
-04 13:43:12 wait 544246 Revathi Equipment India Ltd: numbers not yet on BSE
-04 13:45:50 ready 526965|Sep-26|standalone kind=photo waited_min=29.3 tries=1 pdf_log=pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF | rule reader Gujarat Craft Industries Ltd: rule: no results table pa
-04 13:47:12 ready 531334|Sep-26|na kind=photo waited_min=46.5 tries=0 pdf_log=pdf read deferred CHD Chemicals Ltd: per-pass AI call cap | rule reader Vikalp Securities Ltd: rule: no results table page | pdf read deferred Vikalp Securities
-04 13:47:34 ready 535467|Sep-26|na kind=photo waited_min=46.5 tries=0 pdf_log=pdf read deferred Varun Mercantile Ltd: per-pass AI call cap | rule reader Ashapura Intimates Fashion Ltd: rule: no results table page | pdf read deferred Ashap
-04 13:47:42 pdf pdf current col Esha Media Research Ltd standalone ok=True/2: revenue=82.28, other_income=0.39, total_income=82.67, total_expenses=112.06, finance_costs=7.15, depreciation=5.96, pbt=-29.39, tax=None, pat=-29.39, eps=-0.35
-04 13:47:42 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
-04 13:47:42 pdf rule reader GSB Finance Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 13:47:42 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 13:47:42 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Vikalp Securities Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred Vikalp Securities Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:47:42 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 13:47:42 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 13:47:42 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Ashapura Intimates Fashion Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred Ashapura Intimates Fashion Ltd: per-pass AI call cap
-04 13:47:42 pdf rule reader Microse India Ltd: rule: no results table page
-04 13:47:42 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 13:47:47 seen 508929 Avishkar Infra Realty Ltd cat=Board Meeting early=True bse_time=19:11:15 dissem=19:11:15
-04 13:47:47 seen 522073 The Hi-Tech Gears Ltd cat=Board Meeting early=True bse_time=19:13:36 dissem=19:13:36
-04 13:47:47 seen 500672 Evonile Pharma Ltd cat=Board Meeting early=True bse_time=19:15:45 dissem=19:15:45
-04 13:47:47 seen 514330 One Global Service Provider  cat=Result early=False bse_time=19:15:58 dissem=19:15:58
-04 13:47:47 seen 544280 Afcons Infrastructure Ltd cat=Board Meeting early=True bse_time=19:17:16 dissem=19:17:16
-04 13:47:47 seen 543689 Uniparts India Ltd cat=Board Meeting early=True bse_time=19:17:17 dissem=19:17:17
-04 13:47:47 seen 522249 Mayur Uniquoters Ltd-$ cat=Result early=False bse_time=19:17:28 dissem=19:17:28
-04 13:48:31 ready 543689|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Afcons Infrastructure Ltd: rule: filing mentions consolidated results but that table was not read | pdf current col Uniparts India Ltd consolidated 
-04 13:50:40 ready 522073|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf current col The Hi-Tech Gears Ltd consolidated ok=True/3: revenue=2849.85, other_income=28.65, total_income=2878.5, total_expenses=2727.16, finance_costs=37
-04 13:50:50 wait 514330 One Global Service Provider : numbers not yet on BSE
-04 13:52:17 ready 526683|Sep-26|standalone kind=photo waited_min=121.0 tries=0 pdf_log=pdf read deferred Containerway International Ltd: per-pass AI call cap | rule reader Vivid Global Industries Ltd: rule: no results table page | pdf read deferre
-04 13:52:42 pdf pdf history mismatch Delta Manufacturing Ltd consolidated cols=['Sept 30, 2026', 'June 30, 2026', 'Sept 30, 2025'] :: q-1: pdf rev 190.761 pat -3.109 | bse rev 190.76 pat -3.11 (Rs mn); q-4: pdf rev 138.018 pat -24.074 | bse rev 1
-04 13:52:42 pdf pdf has consolidated but it failed checks: not falling back to standalone Delta Manufacturing Ltd
-04 13:52:42 pdf rule reader Sofcom Systems Ltd: ok
-04 13:52:42 pdf pdf current col Sofcom Systems Ltd consolidated ok=True/2: revenue=4.25, other_income=None, total_income=4.25, total_expenses=7.79, finance_costs=None, depreciation=0.33, pbt=-3.54, tax=0.0, pat=-3.54, eps=-0.0015
-04 13:52:42 pdf pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF
-04 13:52:42 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader GSB Finance Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 13:52:42 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 13:52:42 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 13:52:42 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 13:52:42 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 13:52:42 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 13:52:42 pdf rule reader Microse India Ltd: rule: no results table page
-04 13:52:42 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 13:52:45 seen 544664 KSH International Ltd cat=Board Meeting early=True bse_time=19:18:04 dissem=19:18:04
-04 13:52:45 seen 543317 G R Infraprojects Ltd cat=Board Meeting early=True bse_time=19:19:04 dissem=19:19:04
-04 13:52:45 seen 531494 Navkar Urbanstructure Ltd cat=Board Meeting early=True bse_time=19:20:27 dissem=19:20:27
-04 13:52:45 seen 504879 Orient Ceratech Ltd-$ cat=Board Meeting early=True bse_time=19:20:44 dissem=19:20:44
-04 13:52:45 seen 544894 Lumino Industries Ltd cat=Result early=False bse_time=19:21:17 dissem=19:21:17
-04 13:52:45 seen 526500 Sterling Green Woods Ltd cat=Board Meeting early=True bse_time=19:21:17 dissem=19:21:17
-04 13:52:45 seen 522073 The Hi-Tech Gears Ltd cat=Result early=False bse_time=19:22:12 dissem=19:22:12
-04 13:52:45 seen 543689 Uniparts India Ltd cat=Result early=False bse_time=19:22:15 dissem=19:22:15
-04 13:53:12 ready 544280|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Lumino Industries Ltd: rule: no results table page | rule reader The Hi-Tech Gears Ltd: rule: stan: missing ['pat'] n=8 | pdf current col Afcons Inf
-04 13:53:20 ready 543317|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader The Hi-Tech Gears Ltd: rule: stan: missing ['pat'] n=8 | pdf current col Afcons Infrastructure Ltd consolidated ok=True/3: revenue=2635.25, other_in
-04 13:53:28 ready 544664|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Afcons Infrastructure Ltd consolidated ok=True/3: revenue=2635.25, other_income=271.03, total_income=2906.28, total_expenses=2823.9, finance_cos
-04 13:53:43 wait 544894 Lumino Industries Ltd: numbers not yet on BSE
-04 14:00:21 pdf nim reader GSB Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemi
-04 14:00:21 pdf pdf read failed GSB Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible inven
-04 14:00:21 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 14:00:21 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 14:00:21 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 14:00:21 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
-04 14:00:21 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 14:00:21 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 14:00:21 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 14:00:21 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 14:00:21 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 14:00:21 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 14:00:21 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 14:00:21 pdf rule reader Microse India Ltd: rule: no results table page
-04 14:00:21 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 14:00:25 seen 526823 Rajeswari Infrastructure Ltd cat=Result early=False bse_time=19:22:51 dissem=19:22:51
-04 14:00:25 seen 500165 Kansai Nerolac Paints Ltd cat=Board Meeting early=True bse_time=19:24:19 dissem=19:24:19
-04 14:00:25 seen 530023 The Investment Trust Of Indi cat=Board Meeting early=True bse_time=19:24:19 dissem=19:24:19
-04 14:00:25 seen 504879 Orient Ceratech Ltd-$ cat=Result early=False bse_time=19:24:32 dissem=19:24:32
-04 14:00:25 seen 531494 Navkar Urbanstructure Ltd cat=Result early=False bse_time=19:25:27 dissem=19:25:27
-04 14:00:25 seen 543317 G R Infraprojects Ltd cat=Result early=False bse_time=19:26:17 dissem=19:26:17
-04 14:00:25 seen 523598 Shipping Corporation of Indi cat=Board Meeting early=True bse_time=19:26:27 dissem=19:26:27
-04 14:00:25 seen 542866 Colab Platforms Ltd cat=Result early=False bse_time=19:26:30 dissem=19:26:30
-04 14:00:25 seen 543533 eMudhra Ltd cat=Board Meeting early=True bse_time=19:26:41 dissem=19:26:41
-04 14:00:25 seen 533098 NHPC Ltd cat=Board Meeting early=True bse_time=19:27:34 dissem=19:27:34
-04 14:00:25 seen 544657 Pajson Agro India Ltd cat=Board Meeting early=True bse_time=19:28:01 dissem=19:28:01
-04 14:00:25 seen 544280 Afcons Infrastructure Ltd cat=Result early=False bse_time=19:28:27 dissem=19:28:27
-04 14:00:25 seen 508929 Avishkar Infra Realty Ltd cat=Result early=False bse_time=19:28:28 dissem=19:28:28
-04 14:00:25 seen 542866 Colab Platforms Ltd cat=Board Meeting early=True bse_time=19:29:07 dissem=19:29:07
-04 14:00:25 seen 544664 KSH International Ltd cat=Result early=False bse_time=19:29:51 dissem=19:29:51
-04 14:00:52 wait 544280 Afcons Infrastructure Ltd: numbers not yet on BSE
-04 14:01:03 wait 542866 Colab Platforms Ltd: numbers not yet on BSE
-04 14:01:24 wait 508929 Avishkar Infra Realty Ltd: numbers not yet on BSE
-04 14:01:28 ready 514330|Sep-26|standalone kind=photo waited_min=12.6 tries=3 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | rule reader One Global Service Provider Ltd: ok | pdf current co
-04 14:01:56 ready 504879|Sep-26|consolidated kind=photo waited_min=0.0 tries=0 pdf_log=pdf current col Orient Ceratech Ltd-$ consolidated ok=True/3: revenue=1268765, other_income=18262, total_income=1287027, total_expenses=1203593, finance_costs=1
-04 14:02:08 wait 531494 Navkar Urbanstructure Ltd: numbers not yet on BSE
-04 14:02:34 ready 538923|Sep-26|na kind=photo waited_min=48.8 tries=8 pdf_log=nim reader eMudhra Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the
-04 14:02:43 ready 530053|Sep-26|na kind=photo waited_min=48.8 tries=2 pdf_log=pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF | rule reader Real Eco-Energy Ltd: rule: no results table page | pdf 
-04 14:03:00 ready 524576|Sep-26|na kind=photo waited_min=48.8 tries=0 pdf_log=pdf read failed Ravindra Energy Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | conc
-04 14:03:24 wait 526823 Rajeswari Infrastructure Ltd: numbers not yet on BSE
-04 14:03:28 pdf nim reader Colab Platforms Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 60 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
-04 14:03:28 pdf pdf read failed Colab Platforms Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash
-04 14:03:28 pdf nim reader eMudhra Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 429
-04 14:03:28 pdf pdf read failed eMudhra Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash: ReadTi
-04 14:03:28 pdf pdf incomplete Sofcom Systems Ltd consolidated: missing ['revenue'] - not posting from PDF
-04 14:03:28 pdf rule reader Real Eco-Energy Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred Real Eco-Energy Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader GSB Finance Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred GSB Finance Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Containerway International Ltd: rule: header has no quarter columns
-04 14:03:28 pdf pdf read deferred Containerway International Ltd: per-pass AI call cap
-04 14:03:28 pdf nim reader Ravindra Energy Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
-04 14:03:28 pdf pdf read failed Ravindra Energy Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 503 on gemini-flash-lite-latest; nim deepseek-v4.1-flash
-04 14:03:28 pdf rule reader Vivid Global Industries Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred Vivid Global Industries Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader CHD Chemicals Ltd: rule: stan: does not reconcile [lakh] total_income=[179.93, 162.88, 116.47] total_expenses=[161.82, 175.15, 121.64] pbt=[161.82, -12.27, 121.64] tax=[0.0, 0.0, 0.0] pat=[18.11, -12.27, -5.17] depreci
-04 14:03:28 pdf pdf read deferred CHD Chemicals Ltd: per-pass AI call cap
-04 14:03:28 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
-04 14:03:28 pdf rule reader Vellora Impact Ltd: rule: stan: does not reconcile [lakh] total_income=[14864.47, 14192.1, 217.75] total_expenses=[13977.91, 13401.77, 294.82] exceptional=[0.0, 0.0, 0.0] pbt=[886.56, 790.33, 652.01] tax=[223.13, 198.9
-04 14:03:28 pdf pdf read deferred Vellora Impact Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader SPV Global Trading Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred SPV Global Trading Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
-04 14:03:28 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 14:03:28 pdf pdf read deferred Twin Roses Trades & Agencies Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
-04 14:03:28 pdf rule reader Microse India Ltd: rule: no results table page
-04 14:03:28 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 14:03:54 ready 533098|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader The Investment Trust Of India Ltd: rule: stan: missing ['pat'] n=6 | rule reader Avishkar Infra Realty Ltd: rule: no results table page | pdf curren
-04 14:07:07 ready 540597|Sep-26|standalone kind=photo waited_min=90.9 tries=2 pdf_log=pdf checks failed GSB Finance Ltd standalone | rule reader Containerway International Ltd: rule: header has no quarter columns | pdf current col Containerway In
-04 14:07:28 ready 539800|Sep-26|standalone kind=photo waited_min=112.5 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col CHD Chemicals Ltd standalone ok=False/2: revenue
-04 14:08:15 ready 531257|Sep-26|standalone kind=photo waited_min=81.3 tries=1 pdf_log=pdf current col Vellora Impact Ltd standalone ok=False/3: revenue=14863.64, other_income=0.83, total_income=14864.47, total_expenses=13977.91, finance_costs=0.0
-04 14:10:42 ready 512117|Sep-26|standalone kind=photo waited_min=25.8 tries=1 pdf_log=rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6 | pdf current col Twin Roses Trades & Agencies Ltd standalone ok=True/3: revenue=0
-04 14:11:01 pdf rule reader Twin Roses Trades & Agencies Ltd: rule: stan: missing ['pat'] n=6
-04 14:11:01 pdf pdf current col Twin Roses Trades & Agencies Ltd standalone ok=True/3: revenue=0.0, other_income=4.5, total_income=4.5, total_expenses=5.91, finance_costs=None, depreciation=0.0, pbt=-1.41, tax=1.14, pat=-2.55, eps=-0.11
-04 14:11:01 pdf rule reader Varun Mercantile Ltd: rule: no results table page
-04 14:11:01 pdf pdf read deferred Varun Mercantile Ltd: per-pass AI call cap
-04 14:11:01 pdf rule reader Rajeswari Infrastructure Ltd: rule: no results table page
-04 14:11:01 pdf pdf read deferred Rajeswari Infrastructure Ltd: per-pass AI call cap
-04 14:11:01 pdf rule reader Microse India Ltd: rule: no results table page
-04 14:11:01 pdf pdf read deferred Microse India Ltd: per-pass AI call cap
-04 14:11:04 seen 543533 eMudhra Ltd cat=Result early=False bse_time=19:32:55 dissem=19:32:55
-04 14:11:04 seen 508929 Avishkar Infra Realty Ltd cat=Result early=False bse_time=19:33:09 dissem=19:33:09
-04 14:11:04 seen 500165 Kansai Nerolac Paints Ltd cat=Result early=False bse_time=19:33:41 dissem=19:33:41
-04 14:11:04 seen 544279 Godavari Biorefineries Ltd cat=Board Meeting early=True bse_time=19:33:46 dissem=19:33:46
-04 14:11:04 seen 530023 The Investment Trust Of Indi cat=Result early=False bse_time=19:35:10 dissem=19:35:10
-04 14:11:04 seen 526582 TPL Plastech Ltd cat=Board Meeting early=True bse_time=19:38:04 dissem=19:38:04
-04 14:11:04 seen 523642 PI Industries Ltd cat=Board Meeting early=True bse_time=19:38:36 dissem=19:38:36
-04 14:11:04 seen 544421 Ellenbarrie Industrial Gases cat=Board Meeting early=True bse_time=19:38:54 dissem=19:38:54
-04 14:11:04 seen 544189 Sattrix Information Security cat=Board Meeting early=True bse_time=19:39:52 dissem=19:39:52
-04 14:11:34 ready 523642|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Avishkar Infra Realty Ltd: rule: no results table page | pdf current col PI Industries Ltd consolidated ok=False/3: revenue=17018, other_income=611,
-04 14:12:34 ready 544421|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Ellenbarrie Industrial Gases Ltd standalone ok=True/3: revenue=1143.18, other_income=171.11, total_income=1314.29, total_expenses=835.05, financ
-04 14:13:22 ready 542866|Sep-26|consolidated kind=photo waited_min=10.7 tries=1 pdf_log=pdf has consolidated but it failed checks: not falling back to standalone Ravindra Energy Ltd | pdf current col eMudhra Ltd consolidated ok=False/3: revenue=206
-04 14:13:29 ready 508929|Sep-26|standalone kind=photo waited_min=10.7 tries=2 pdf_log=pdf current col eMudhra Ltd consolidated ok=False/3: revenue=2069.89, other_income=23.16, total_income=2093.05, total_expenses=1703.22, finance_costs=10.49, dep
-04 14:13:36 wait 508929 Avishkar Infra Realty Ltd: numbers not yet on BSE
-04 14:13:54 ready 526582|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 503 on gemini-3.5-flash | pdf columns were current|year-ago|previous: swapped TPL Plastech Ltd | pdf current col TPL Plast
-04 14:14:02 wait 530023 The Investment Trust Of Indi: numbers not yet on BSE
-04 14:14:05 ready 544000|Sep-26|na kind=photo waited_min=45.4 tries=99 pdf_log=pdf current col TPL Plastech Ltd consolidated ok=True/3: revenue=14949.82, other_income=1.95, total_income=14951.77, total_expenses=13853.17, finance_costs=125.
-04 14:14:13 ready 504286|Sep-26|na kind=photo waited_min=45.4 tries=4 pdf_log=pdf read deferred The Investment Trust Of India Ltd: per-pass AI call cap | rule reader Delta Manufacturing Ltd: rule: consolidated table does not reconcile [la
 04 14:14:21 ready 512221|Sep-26|na kind=photo waited_min=51.4 tries=1 pdf_log=pdf read deferred GSB Finance Ltd: per-pass AI call cap | rule reader SPV Global Trading Ltd: rule: no results table page | pdf read deferred SPV Global Trading
 04 14:14:34 pdf rule reader Diamant Infrastructure Ltd: rule: stan: no revenue row
 04 14:14:34 pdf pdf read deferred Diamant Infrastructure Ltd: per-pass AI call cap
@@ -1838,3 +1466,69 @@
 05 10:27:56 ready 509496|Sep-26|na kind=photo waited_min=54.1 tries=0 pdf_log=
 05 10:28:04 wait 534309 NBCC (India) Ltd: numbers not yet on BSE
 05 10:28:24 ready 531768|Sep-26|consolidated kind=photo waited_min=54.1 tries=1 pdf_log=pdf current col Poly Medicure Ltd consolidated ok=False/3: revenue=58052.58, other_income=1900.93, total_income=59953.51, total_expenses=48515.73, finance_costs
+05 10:34:31 seen 500060 Birla Cable Ltd cat=Result early=False bse_time=13:54:25 dissem=13:54:25
+05 10:34:31 seen 506190 Sarvamangal Mercantile Compa cat=Result early=False bse_time=14:00:46 dissem=14:00:46
+05 10:34:31 seen 532334 HB Estate Developers Ltd cat=Result early=False bse_time=14:05:47 dissem=14:05:47
+05 10:34:31 seen 544379 Prabha Energy Ltd cat=Result early=False bse_time=14:13:46 dissem=14:13:46
+05 10:34:31 seen 540081 SAB Events & Governance Now  cat=Result early=False bse_time=14:15:39 dissem=14:15:39
+05 10:34:31 seen 544460 Patel Chem Specialities Ltd cat=Result early=False bse_time=14:25:21 dissem=14:25:21
+05 10:34:31 seen 531569 Sanjivani Paranteral Ltd cat=Result early=False bse_time=14:25:49 dissem=14:25:49
+05 10:34:31 seen 511254 Sagar Systech Ltd cat=Result early=False bse_time=14:26:49 dissem=14:26:49
+05 10:34:31 seen 523315 Purity Flexpack Ltd cat=Result early=False bse_time=14:29:35 dissem=14:29:35
+05 10:34:31 seen 505358 Integra Engineering India Lt cat=Result early=False bse_time=14:30:03 dissem=14:30:03
+05 10:34:31 seen 506365 Star Source Multi Trade Ltd cat=Result early=False bse_time=14:34:35 dissem=14:34:35
+05 10:34:31 seen 505720 Hercules Investments Ltd cat=Result early=False bse_time=14:35:09 dissem=14:35:09
+05 10:34:31 seen 530207 Brawn Biotech Ltd cat=Result early=False bse_time=14:38:08 dissem=14:38:08
+05 10:34:31 seen 543613 Mafia Trends Ltd cat=Result early=False bse_time=14:47:15 dissem=14:47:15
+05 10:34:31 seen 544526 Saatvik Green Energy Ltd cat=Result early=False bse_time=14:47:28 dissem=14:47:28
+05 10:34:31 seen 544923 Veegaland Developers Ltd cat=Result early=False bse_time=14:49:57 dissem=14:49:57
+05 10:34:31 seen 531543 Jindal Worldwide Ltd cat=Result early=False bse_time=14:50:38 dissem=14:50:38
+05 10:34:31 seen 531266 VST Tillers Tractors Ltd-$ cat=Result early=False bse_time=14:54:07 dissem=14:54:07
+05 10:34:31 seen 533326 Texmaco Rail & Engineering L cat=Result early=False bse_time=14:56:08 dissem=14:56:08
+05 10:34:31 seen 531761 Apollo Pipes Ltd cat=Result early=False bse_time=15:01:43 dissem=15:01:43
+05 10:34:31 seen 540775 Khadim India Ltd cat=Result early=False bse_time=15:04:46 dissem=15:04:46
+05 10:34:31 seen 517334 Samvardhana Motherson Intern cat=Result early=False bse_time=15:07:33 dissem=15:07:33
+05 10:34:31 seen 523100 Cosmo Ferrites Ltd-$ cat=Result early=False bse_time=15:10:28 dissem=15:10:28
+05 10:34:31 seen 531444 Vardhman Concrete Ltd cat=Result early=False bse_time=15:12:13 dissem=15:12:13
+05 10:34:31 seen 523558 Swiss Military Consumer Good cat=Result early=False bse_time=15:12:46 dissem=15:12:46
+05 10:34:31 seen 544197 JHS Svendgaard Retail Ventur cat=Result early=False bse_time=15:13:44 dissem=15:13:44
+05 10:34:31 seen 543725 Elin Electronics Ltd cat=Result early=False bse_time=15:14:42 dissem=15:14:42
+05 10:34:31 seen 543860 J.A. Finance Ltd cat=Result early=False bse_time=15:20:29 dissem=15:20:29
+05 10:34:31 seen 522005 Austin Engineering Company L cat=Result early=False bse_time=15:20:59 dissem=15:20:59
+05 10:34:31 seen 532851 Insecticides (India) Ltd cat=Result early=False bse_time=15:21:22 dissem=15:21:22
+05 10:34:31 seen 504080 JSL Industries Ltd cat=Result early=False bse_time=15:21:29 dissem=15:21:29
+05 10:34:31 seen 524031 Patidar Buildcon Ltd cat=Result early=False bse_time=15:21:45 dissem=15:21:45
+05 10:34:31 seen 543171 RO Jewels Ltd cat=Result early=False bse_time=15:23:04 dissem=15:23:04
+05 10:34:31 seen 502589 Vapi Enterprise Ltd cat=Result early=False bse_time=15:23:45 dissem=15:23:45
+05 10:34:31 seen 505750 Josts Engineering Company Lt cat=Result early=False bse_time=15:24:40 dissem=15:24:40
+05 10:34:31 seen 532976 Jai Balaji Industries Ltd cat=Result early=False bse_time=15:26:59 dissem=15:26:59
+05 10:34:31 seen 506685 Ultramarine & Pigments Ltd-$ cat=Result early=False bse_time=15:28:09 dissem=15:28:09
+05 10:34:31 seen 531762 Unjha Formulations Ltd cat=Result early=False bse_time=15:29:04 dissem=15:29:04
+05 10:34:31 seen 532851 Insecticides (India) Ltd cat=Result early=False bse_time=15:30:38 dissem=15:30:38
+05 10:34:31 seen 544549 Earkart Ltd cat=Result early=False bse_time=15:32:03 dissem=15:32:03
+05 10:34:31 seen 532851 Insecticides (India) Ltd cat=Result early=False bse_time=15:33:52 dissem=15:33:52
+05 10:34:31 seen 534328 Hexa Tradex Ltd cat=Result early=False bse_time=15:35:54 dissem=15:35:54
+05 10:34:31 seen 526941 Vaishno Cement Company Ltd cat=Result early=False bse_time=15:38:27 dissem=15:38:27
+05 10:34:31 seen 524717 Titan Biotech Ltd cat=Result early=False bse_time=15:39:05 dissem=15:39:05
+05 10:34:31 seen 531960 June Industries Ltd cat=Board Meeting early=True bse_time=15:39:18 dissem=15:39:18
+05 10:34:31 seen 534139 Schneider Electric Infrastru cat=Result early=False bse_time=15:39:54 dissem=15:39:54
+05 10:34:31 seen 526435 Perfectpac Ltd cat=Board Meeting early=True bse_time=15:40:14 dissem=15:40:14
+05 10:34:31 seen 522004 Batliboi Ltd-$ cat=Board Meeting early=True bse_time=15:42:18 dissem=15:42:18
+05 10:34:31 seen 526435 Perfectpac Ltd cat=Result early=False bse_time=15:44:02 dissem=15:44:02
+05 10:34:31 seen 534309 NBCC (India) Ltd cat=Result early=False bse_time=15:44:34 dissem=15:44:34
+05 10:34:31 seen 539479 GTV Engineering Ltd cat=Result early=False bse_time=15:44:56 dissem=15:44:56
+05 10:34:31 seen 531960 June Industries Ltd cat=Result early=False bse_time=15:48:21 dissem=15:48:21
+05 10:34:31 seen 522004 Batliboi Ltd-$ cat=Result early=False bse_time=15:51:20 dissem=15:51:20
+05 10:34:31 seen 524717 Titan Biotech Ltd cat=Board Meeting early=True bse_time=15:51:48 dissem=15:51:48
+05 10:34:31 seen 506935 Continental Chemicals Ltd cat=Board Meeting early=True bse_time=15:51:59 dissem=15:51:59
+05 10:34:31 seen 543653 Bikaji Foods International L cat=Board Meeting early=True bse_time=15:53:34 dissem=15:53:34
+05 10:34:31 seen 522235 Minal Industries Ltd cat=Board Meeting early=True bse_time=15:53:41 dissem=15:53:41
+05 10:34:31 seen 531552 Raghunath Tobacco Company Lt cat=Board Meeting early=True bse_time=15:54:34 dissem=15:54:34
+05 10:34:31 seen 540144 DRA Consultants Ltd cat=Board Meeting early=True bse_time=15:56:51 dissem=15:56:51
+05 10:34:31 seen 507946 Kiduja India Ltd cat=Result early=False bse_time=15:57:53 dissem=15:57:53
+05 10:34:31 seen 544059 Shanti Spintex Ltd cat=Board Meeting early=True bse_time=15:59:13 dissem=15:59:13
+05 10:34:31 seen 538979 Greenlam Industries Ltd cat=Result early=False bse_time=16:00:08 dissem=16:00:08
+05 10:34:31 seen 543653 Bikaji Foods International L cat=Result early=False bse_time=16:01:22 dissem=16:01:22
+05 10:34:31 seen 522235 Minal Industries Ltd cat=Result early=False bse_time=16:02:05 dissem=16:02:05
+05 10:34:31 seen 506935 Continental Chemicals Ltd cat=Result early=False bse_time=16:03:14 dissem=16:03:14
+05 10:34:31 seen 544578 Rubicon Research Ltd cat=Board Meeting early=True bse_time=16:03:25 dissem=16:03:25
