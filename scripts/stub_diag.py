@@ -123,7 +123,14 @@ def main():
                 if o is not None:
                     res, via = o, "nim"
                 else:
-                    why.append(f"nim: {str(e)[:90]}")
+                    why.append(f"nim: {str(e)[:600]}")
+                    try:
+                        import fitz
+                        d2 = fitz.open(stream=small, filetype="pdf")
+                        p(f"   nim full error: {e}")
+                        p(f"   text sample: {re.sub(chr(10), ' / ', nr.pdf_text(small)[:900])!r}")
+                    except Exception:
+                        pass
             empty = bool(res) and not (res.get("quarter_end_columns") or res.get("consolidated") or res.get("standalone"))
             if empty:
                 via = None; why.append("reader returned no results table (filing probably has no numbers)")
@@ -139,7 +146,7 @@ def main():
                     p(f"   headline: {headline.strip()[:150]!r} | best page hits={bn} | text: {re.sub(r'\\s+', ' ', best)[:420]!r}")
                 except Exception as ex:
                     p("   page peek failed", repr(ex)[:60])
-            p(f"{c} {name[:28]} | {pages}p {kind} | {'READ via ' + via if via else 'NOT READ'} | " + ("; ".join(why)[:260] if not via else summ(res)[:120]))
+            p(f"{c} {name[:28]} | {pages}p {kind} | {'READ via ' + via if via else 'NOT READ'} | " + ("; ".join(why)[:900] if not via else summ(res)[:120]))
     p("SUMMARY", dict(cnt))
 
 
