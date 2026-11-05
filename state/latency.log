@@ -1656,3 +1656,27 @@
 05 06:47:18 seen 503162 Reliance Chemotex Industries cat=Result early=False bse_time=12:16:44 dissem=12:16:44
 05 06:47:43 wait 503162 Reliance Chemotex Industries: numbers not yet on BSE
 05 06:48:18 seen 511355 India Cements Capital Ltd cat=Board Meeting early=True bse_time=12:17:22 dissem=12:17:22
+05 06:48:57 seen 522152 Solitaire Machine Tools Ltd cat=Board Meeting early=True bse_time=12:18:11 dissem=12:18:11
+05 06:49:24 pdf pdf current col Reliance Chemotex Industries Ltd-$ standalone ok=True/3: revenue=11881.31, other_income=81.38, total_income=11962.69, total_expenses=11546.72, finance_costs=677.95, depreciation=None, pbt=415.97, tax=-41.6500000000
+05 06:49:24 pdf pdf previous/year-ago columns were swapped vs BSE history: corrected Reliance Chemotex Industries Ltd-$ standalone
+05 06:49:24 pdf pdf incomplete Reliance Chemotex Industries Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
+05 06:49:57 pdf nim reader Sodhani Academy of Fintech Enablers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejecte
+05 06:49:57 pdf pdf read failed Sodhani Academy of Fintech Enablers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the fili
+05 06:49:57 pdf nim reader Hercules Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+05 06:49:57 pdf pdf read failed Hercules Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possib
+05 06:49:58 seen 544333 Standard Engineering Technol cat=Result early=False bse_time=12:19:15 dissem=12:19:15
+05 06:50:21 wait 544333 Standard Engineering Technol: numbers not yet on BSE
+05 06:50:29 pdf nim reader Tonbo Imaging India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemi
+05 06:50:29 pdf pdf read failed Tonbo Imaging India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possibl
+05 06:50:29 pdf nim reader India Cements Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (ge
+05 06:50:29 pdf pdf read failed India Cements Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (poss
+05 06:50:29 pdf nim reader Solitaire Machine Tools Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+05 06:50:29 pdf pdf read failed Solitaire Machine Tools Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); n
+05 06:50:29 pdf pdf current col Reliance Chemotex Industries Ltd-$ standalone ok=True/3: revenue=11881.31, other_income=81.38, total_income=11962.69, total_expenses=11546.72, finance_costs=677.95, depreciation=None, pbt=415.97, tax=-41.6500000000
+05 06:50:29 pdf pdf previous/year-ago columns were swapped vs BSE history: corrected Reliance Chemotex Industries Ltd-$ standalone
+05 06:50:29 pdf pdf incomplete Reliance Chemotex Industries Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
+05 06:50:52 ready 544999|Sep-26|na kind=photo waited_min=45.3 tries=7 pdf_log=nim reader Sodhani Academy of Fintech Enablers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b
+05 06:51:09 pdf nim reader Sodhani Academy of Fintech Enablers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejecte
+05 06:51:09 pdf pdf read failed Sodhani Academy of Fintech Enablers Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-lates
+05 06:51:09 pdf nim reader UP Hotels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 4
+05 06:51:09 pdf pdf read failed UP Hotels Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepseek-v4
