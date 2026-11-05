@@ -145,6 +145,7 @@ def trim_pdf(content):
     except Exception:
         return content
 
+NT_TRIES = {}      # attachment -> reads of a filing with no results table in its text layer (max 2)
 GEM_CALLS = {}      # attachment name -> Gemini reads that returned a real answer (cap GEM_MAX_PER_FILING)
 RULE_BAD = set()      # filings whose rule-read numbers failed a later check: read by Gemini / NVIDIA instead
 EARLY_DEAD = set()      # early 'Board Meeting' rows whose PDF has no results table (nothing to read)
@@ -225,6 +226,15 @@ def _read_stage(rec, st, headline, filed):
         EARLY_DEAD.add(nid)
         return None
     small = trim_pdf(content)
+    NOT_TABLE = not has_results_table(content)      # no page carries a results statement in its text layer: a notice / press release / cover letter, or a scan whose text layer is empty or garbage
+    if NOT_TABLE:
+        NT_TRIES[att] = NT_TRIES.get(att, 0) + 1
+        if NT_TRIES[att] > 2:      # 5 Nov: 190 of 345 read attempts were on filings like this, re-read every few minutes; two full tries (rule + OCR + one AI read) are enough, the exchange's own numbers cover the rest
+            TRIES[nid] = max(TRIES.get(nid, 1), 8)
+            return None
+        if GEM_CALLS.get(att, 0) >= 1:      # the AI reader already answered once and the page still shows no results statement: nothing more to read
+            TRIES[nid] = max(TRIES.get(nid, 1), 8)
+            return None
     if os.environ.get("RULE_READ", "1") == "1" and os.environ.get("NIM_ONLY") != "1" and nid not in RULE_BAD:
         try:    # rule reader first: the numbers come straight from the PDF text, no AI call, no quota; only a statement that reconciles in all three columns is accepted
             import rule_read as rr
