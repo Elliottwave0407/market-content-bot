@@ -8,7 +8,7 @@ import gemini_read as gr
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Referer": "https://www.bseindia.com/"}
 MODEL = os.environ.get("GEMINI_MODEL", "").strip() or "gemini-flash-lite-latest"
 DAILY_CAP = int(os.environ.get("GEMINI_DAILY_CAP", "450"))
-PER_POLL = int(os.environ.get("PDF_PER_POLL", "10"))
+PER_POLL = int(os.environ.get("PDF_PER_POLL", "40"))
 K = {"lakh": 0.1, "lakhs": 0.1, "lac": 0.1, "lacs": 0.1, "crore": 10.0, "crores": 10.0, "million": 1.0, "thousand": 0.001, "actual": 1e-6}
 MONTHS = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
 TRIES, STATE_, LAST_TRY = {}, {"backoff": 0.0, "calls": 0}, {}
