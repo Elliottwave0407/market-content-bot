@@ -1874,3 +1874,9 @@
 05 04:25:12 seen 590071 Sundaram Finance Ltd cat=Result early=False bse_time=09:54:37 dissem=09:54:37
 05 04:26:14 seen 590071 Sundaram Finance Ltd cat=Result early=False bse_time=09:55:36 dissem=09:55:36
 05 04:26:19 pdf rule reader Sundaram Finance Ltd: rule: no results table page
+05 04:43:37 seen 503671 Unijolly Investments Company cat=Result early=False bse_time=10:13:29 dissem=10:13:29
+05 04:43:42 wait 503671 Unijolly Investments Company: numbers not yet on BSE
+05 04:43:42 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+05 04:45:39 pdf rule reader Unijolly Investments Company Ltd: ok
+05 04:45:39 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
+05 04:45:39 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
