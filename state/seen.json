@@ -3596,7 +3596,8 @@
 "b6ab67c4-c092-426f-b04d-b2579b685659",
 "90e09b08-1e68-4ccf-b52d-8569000ab003",
 "1efe8d78-0f9e-436d-a852-46761dfd596a",
-"9808cea6-ab56-4528-8ea5-a46d7b7602c5"
+"9808cea6-ab56-4528-8ea5-a46d7b7602c5",
+"2d57f1cc-b58f-4c3c-a74c-558fe4285f93"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5794,7 +5795,8 @@
 "543542|Sep-26|consolidated",
 "544997|Sep-26|consolidated",
 "500418|Sep-26|consolidated",
-"503689|Sep-26|standalone"
+"503689|Sep-26|standalone",
+"544679|Sep-26|consolidated"
 ],
 "pending": {
 "91c650bd-24df-4557-b4df-b350dac93078": {
@@ -5908,8 +5910,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793854903.721094,
-"last": 1793856057.793823,
-"alerted": false
+"last": 1793856219.263552,
+"alerted": true
 }
 },
 "lag": [
@@ -7138,7 +7140,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 840
+"2026-11-04": 842
 },
 "pdfposted": {
 "533110|Sep-26|standalone": {
@@ -7770,6 +7772,16 @@
 "pat": 0.246,
 "t": 1793855558.3111682,
 "last": 1793855949.2152414
+},
+"544679|Sep-26|consolidated": {
+"code": "544679",
+"name": "Amagi Media Labs Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4758.23,
+"pat": 748.38,
+"t": 1793856264.6368456,
+"last": 0
 }
 },
 "audit": [
@@ -10043,7 +10055,8 @@
 "a4bd8123-f501-40b4-a1ea-50bfbcc76bfa": 1,
 "d5224b75-a2f9-44aa-8cf9-63acd7b1de6f": 1,
 "fec1e965-06c6-4973-a6ae-75c926061c2e": 1,
-"fc52b06b-0adc-4fcb-9b09-7818905591ea": 1
+"fc52b06b-0adc-4fcb-9b09-7818905591ea": 1,
+"2d57f1cc-b58f-4c3c-a74c-558fe4285f93": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -11167,16 +11180,16 @@
 "2026-11-04": {
 "main": {
 "ok": 442,
-"429": 31,
-"other": 71
+"429": 33,
+"other": 73
 },
 "results-key": {
 "ok": 502,
-"429": 23,
-"other": 55
+"429": 25,
+"other": 59
 },
 "concall-key": {
-"ok": 470,
+"ok": 471,
 "429": 17,
 "other": 65
 }
