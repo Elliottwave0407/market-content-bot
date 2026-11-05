@@ -26,6 +26,8 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
+      - name: OCR engine for scanned / garbled result PDFs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr
       - name: Poll BSE result filings (loop)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -34,6 +36,7 @@ jobs:
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
           POLL_INTERVAL: "10"
           NSE_BACKUP: "1"
+          RULE_OCR: "1"      # 5 Nov: OCR was never switched on in the live poller (only in the diagnosis job), so scanned / garbled PDFs such as Fredun and Tonbo were never OCR-read
           POLL_RETRY_SEC: "40"      # pending results are re-checked (NSE and BSE) every 40 s instead of 90 s
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # used ONLY when every model on the main key is out of quota

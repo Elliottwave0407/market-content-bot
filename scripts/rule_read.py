@@ -346,7 +346,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     import shutil
     if not shutil.which("tesseract") or os.environ.get("RULE_OCR", "0") != "1":
         return None, why
-    if not re.search(r"no text layer|no results table|unit not found|header has no quarter|column dates", why):
+    if not re.search(r"no text layer|no results table|unit not found|header has no quarter|column dates|does not reconcile", why):      # a garbled text layer (digits and decimal marks split, e.g. Tonbo 5 Nov) misreads numbers and then fails to reconcile: the OCR read goes through the same strict gate
         return None, why      # text layer was readable: OCR would not fix a table that does not add up
     try:
         r2, why2 = _read(pdf_bytes, hint, qhint, True)
