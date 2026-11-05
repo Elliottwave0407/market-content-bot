@@ -1938,3 +1938,12 @@
 05 05:23:39 seen 544679 Amagi Media Labs Ltd cat=Result early=False bse_time=10:31:36 dissem=10:31:36
 05 05:23:39 seen 544679 Amagi Media Labs Ltd cat=Board Meeting early=True bse_time=10:40:46 dissem=10:40:46
 05 05:24:24 ready 544679|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+05 05:24:50 pdf rule reader Healthy Investments Ltd: ok
+05 05:24:50 pdf rule reader Unijolly Investments Company Ltd: ok
+05 05:24:50 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
+05 05:24:50 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['revenue'] - not posting from PDF
+05 05:24:50 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
+05 05:24:50 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
+05 05:25:13 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+05 05:25:13 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 503 on gemini-flash-latest; nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-
+05 05:25:50 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
