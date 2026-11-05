@@ -1503,3 +1503,7 @@
 05 05:47:25 ready 544679|Sep-26|na kind=photo waited_min=45.7 tries=4 pdf_log=
 05 05:48:19 pdf nim reader Hester Biosciences Ltd: ok (gemini: gemini skipped (quota/backoff))
 05 05:48:40 ready 524669|Sep-26|consolidated kind=photo waited_min=0.0 tries=3 pdf_log=
+05 05:51:31 seen 530701 Avenique Ltd cat=Board Meeting early=True bse_time=11:20:39 dissem=11:20:39
+05 05:52:53 seen 538964 Mercury Laboratories Ltd cat=Board Meeting early=True bse_time=11:21:47 dissem=11:21:47
+05 05:54:15 pdf nim reader Mercury Laboratories Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+05 05:54:15 pdf pdf read failed Mercury Laboratories Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
