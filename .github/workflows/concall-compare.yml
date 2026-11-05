@@ -34,6 +34,7 @@ jobs:
       - env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
           SCHEMA_V: ${{ github.event.inputs.schema_v || '3' }}
           STORED: ${{ github.event.inputs.stored }}

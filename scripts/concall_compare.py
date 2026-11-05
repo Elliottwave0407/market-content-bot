@@ -23,6 +23,23 @@ def call_nv(model, text):
         d_ = CE.call_mistral(model[8:], text)
         if d_ is None: return None, time.time() - t0, "mistral_none"
         return (d_.get("items") or []), time.time() - t0, ""
+    if model.startswith("groq:"):      # 5 Nov test of a second free provider (OpenAI-compatible); same prompt, same verification afterwards
+        gk = os.environ.get("GROQ_API_KEY", "").strip()
+        for attempt in range(4):
+            try:
+                r = requests.post("https://api.groq.com/openai/v1/chat/completions", headers={"Authorization": "Bearer " + gk, "Content-Type": "application/json"}, timeout=180,
+                                  json={"model": model[5:], "messages": [{"role": "user", "content": CE.PROMPT + "\n\nTRANSCRIPT:\n" + text}], "max_tokens": CE.MAXTOK, "temperature": 0, "response_format": {"type": "json_object"}})
+            except Exception as e:
+                note = type(e).__name__; time.sleep(5); continue
+            if r.status_code in (429, 500, 502, 503, 504):
+                note = f"http{r.status_code}"; time.sleep(min(60, 10 * (attempt + 1))); continue
+            if r.status_code != 200:
+                return None, time.time() - t0, f"http{r.status_code} {r.text[:80]}"
+            try:
+                return (json.loads(r.json()["choices"][0]["message"]["content"]).get("items") or []), time.time() - t0, ""
+            except Exception:
+                return None, time.time() - t0, "badjson"
+        return None, time.time() - t0, note or "fail"
     for attempt in range(5):
         ta = time.time()
         try:
