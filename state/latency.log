@@ -1,377 +1,3 @@
-04 15:41:29 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:41:29 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
-04 15:41:30 seen 512038 TCC Concept Ltd cat=Result early=False bse_time=21:06:06 dissem=21:06:06
-04 15:41:30 seen 531676 Emrock Corporation Ltd cat=Board Meeting early=True bse_time=21:06:38 dissem=21:06:38
-04 15:41:30 seen 524212 Wanbury Ltd cat=Board Meeting early=True bse_time=21:08:45 dissem=21:08:45
-04 15:41:30 seen 530839 Clio Infotech Ltd cat=Result early=False bse_time=21:09:46 dissem=21:09:46
-04 15:41:54 ready 533316|Sep-26|na kind=photo waited_min=51.3 tries=5 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
-04 15:42:01 wait 512038 TCC Concept Ltd: numbers not yet on BSE
-04 15:42:02 ready 544246|Sep-26|standalone kind=photo waited_min=120.6 tries=0 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
-04 15:42:12 ready 512165|Sep-26|na kind=photo waited_min=45.7 tries=5 pdf_log=rule reader TCC Concept Ltd: rule: column dates not found | rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6 | rule reader Augmont Enterprises Ltd: 
-04 15:47:24 ready 530577|Sep-26|na kind=photo waited_min=45.7 tries=0 pdf_log=pdf read failed Indsil Hydro Power and Manganese Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPo
-04 15:47:31 ready 539198|Sep-26|na kind=photo waited_min=51.3 tries=0 pdf_log=pdf read deferred Ladderup Finance Ltd: per-pass AI call cap | rule reader Capfin India Ltd: rule: no results table page | pdf read deferred Capfin India Ltd: p
-04 15:47:43 wait 530839 Clio Infotech Ltd: numbers not yet on BSE
-04 15:47:46 pdf nim reader Oval Projects Engineering Ltd: ok (gemini: gemini skipped (quota/backoff))
-04 15:47:46 pdf pdf is a HALF-YEARLY filing (column dates ['30-9-2026', '30-9-2025', '31-3-2026']): not read as quarters, queued for the half-yearly route Oval Projects Engineering Ltd
-04 15:47:46 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
-04 15:47:46 pdf nim reader Indsil Hydro Power and Manganese Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejecte
-04 15:47:46 pdf pdf read failed Indsil Hydro Power and Manganese Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the fili
-04 15:47:46 pdf rule reader Ladderup Finance Ltd: rule: consolidated table incomplete missing ['pat'] n=4
-04 15:47:46 pdf pdf read deferred Ladderup Finance Ltd: per-pass AI call cap
-04 15:47:46 pdf rule reader Capfin India Ltd: rule: no results table page
-04 15:47:46 pdf pdf read deferred Capfin India Ltd: per-pass AI call cap
-04 15:47:46 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
-04 15:47:46 pdf pdf read deferred Shashijit Infraprojects Ltd: per-pass AI call cap
-04 15:47:46 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:47:46 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
-04 15:47:46 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:47:46 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
-04 15:50:25 pdf nim reader Indsil Hydro Power and Manganese Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 15:50:25 pdf pdf read failed Indsil Hydro Power and Manganese Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 15:50:25 pdf rule reader Shashijit Infraprojects Ltd: rule: no results table page
-04 15:50:25 pdf nim reader Shashijit Infraprojects Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:50:25 pdf pdf read failed Shashijit Infraprojects Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:50:25 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:50:25 pdf nim reader Clio Infotech Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:50:25 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:50:25 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:50:25 pdf nim reader Clio Infotech Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:50:25 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:50:26 seen 524212 Wanbury Ltd cat=Result early=False bse_time=21:18:49 dissem=21:18:49
-04 15:50:44 wait 524212 Wanbury Ltd: confirming that no consolidated statement exists
-04 15:50:50 ready 539132|Sep-26|na kind=photo waited_min=46.0 tries=5 pdf_log=rule reader Augmont Enterprises Ltd: rule: no results table page | nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff)
-04 15:50:58 ready 544498|Sep-26|na kind=photo waited_min=46.0 tries=99 pdf_log=rule reader Augmont Enterprises Ltd: rule: no results table page | nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff)
-04 15:54:13 pdf nim reader Clio Infotech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 23 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: ge
-04 15:54:13 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 23 numbers not found in the filing text (possible inv
-04 15:54:13 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:54:13 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
-04 15:54:15 seen 544008 Max Estates Ltd cat=Result early=False bse_time=21:22:07 dissem=21:22:07
-04 15:55:08 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:55:08 pdf pdf read deferred Clio Infotech Ltd: per-pass AI call cap
-04 15:55:08 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
-04 15:55:15 ready 531676|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf incomplete Wanbury Ltd consolidated: missing ['pat', 'revenue'] - not posting from PDF | pdf current col Emrock Corporation Ltd standalone ok=False/3: reven
-04 15:56:05 pdf nim reader TCC Concept Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: HTTP 429 (skipped gemini-flash-lite-late)
-04 15:56:05 pdf pdf read failed TCC Concept Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepseek-
-04 15:56:15 pdf rule reader Indsil Hydro Power and Manganese Ltd-$: rule: no results table page
-04 15:56:15 pdf nim reader Indsil Hydro Power and Manganese Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:56:15 pdf pdf read failed Indsil Hydro Power and Manganese Ltd-$: gemini skipped (quota/backoff); nim: cooling down
-04 15:56:15 pdf rule reader Clio Infotech Ltd: rule: no results table page
-04 15:56:15 pdf nim reader Clio Infotech Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:56:15 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:56:20 pdf nim reader Trigyn Technologies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemi
-04 15:56:20 pdf pdf read failed Trigyn Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possibl
-04 15:56:20 pdf nim reader Apollo Finvest India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 15:56:20 pdf pdf read failed Apollo Finvest India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 15:56:20 pdf rule reader TCC Concept Ltd: rule: stan: missing ['pat'] n=6
-04 15:56:20 pdf nim reader TCC Concept Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:56:20 pdf pdf read failed TCC Concept Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:56:20 pdf rule reader Augmont Enterprises Ltd: rule: no results table page
-04 15:56:20 pdf nim reader Augmont Enterprises Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 15:56:20 pdf pdf read failed Augmont Enterprises Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 15:57:09 pdf nim reader Wanbury Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: HTTP 429
-04 15:57:09 pdf pdf read failed Wanbury Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deepseek-v4.1
-04 15:58:57 pdf nim reader Clio Infotech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 22 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: ge
-04 15:58:57 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 22 numbers not found in the filing text (possible inv
-04 16:01:26 seen 539519 Tavexia Lifecare Ltd cat=Board Meeting early=True bse_time=21:28:48 dissem=21:28:48
-04 16:02:07 ready 531494|Sep-26|standalone kind=photo waited_min=121.0 tries=1 pdf_log=
-04 16:05:34 seen 534920 iSERA Lifesciences Ltd cat=Result early=False bse_time=21:31:41 dissem=21:31:41
-04 16:05:34 seen 539519 Tavexia Lifecare Ltd cat=Result early=False bse_time=21:33:11 dissem=21:33:11
-04 16:06:04 wait 534920 iSERA Lifesciences Ltd: numbers not yet on BSE
-04 16:06:13 wait 539519 Tavexia Lifecare Ltd: numbers not yet on BSE
-04 16:08:36 seen 504212 Universal Cables Ltd cat=Result early=False bse_time=21:35:42 dissem=21:35:42
-04 16:09:00 wait 504212 Universal Cables Ltd: numbers not yet on BSE
-04 16:09:10 ready 512437|Sep-26|na kind=photo waited_min=46.5 tries=5 pdf_log=
-04 16:11:05 pdf nim reader Clio Infotech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 16:11:05 pdf pdf read failed Clio Infotech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 16:13:28 ready 544888|Sep-26|consolidated kind=photo waited_min=45.2 tries=7 pdf_log=
-04 16:13:48 ready 517562|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
-04 16:16:30 pdf pdf unusable Tavexia Lifecare Ltd: unit/date missing
-04 16:16:31 seen 504212 Universal Cables Ltd cat=Board Meeting early=True bse_time=21:45:38 dissem=21:45:38
-04 16:18:08 pdf nim reader Universal Cables Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
-04 16:18:08 pdf pdf read failed Universal Cables Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible i
-04 16:21:39 ready 513121|Sep-26|na kind=photo waited_min=46.1 tries=7 pdf_log=pdf read failed TCC Concept Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ul
-04 16:22:01 pdf nim reader iSERA Lifesciences Ltd: ok (gemini: gemini skipped (quota/backoff))
-04 16:22:58 ready 512038|Sep-26|consolidated kind=photo waited_min=40.6 tries=5 pdf_log=
-04 16:23:23 ready 522165|Sep-26|consolidated kind=photo waited_min=77.6 tries=7 pdf_log=
-04 16:23:41 ready 539519|Sep-26|consolidated kind=photo waited_min=16.5 tries=4 pdf_log=
-04 16:27:15 ready 530839|Sep-26|na kind=photo waited_min=45.7 tries=6 pdf_log=
-04 16:29:56 seen 543955 Transindia Real Estate Ltd cat=Board Meeting early=True bse_time=21:59:20 dissem=21:59:20
-04 16:30:19 ready 500650|Sep-26|standalone kind=photo waited_min=121.0 tries=1 pdf_log=nim reader Universal Cables Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not fou
-04 16:31:03 ready 543955|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=nim reader Transindia Real Estate Ltd: ok (gemini: gemini skipped (quota/backoff)) | nim reader iSERA Lifesciences Ltd: ok (gemini: gemini skipped (quota/backof
-04 16:34:39 ready 500399|Sep-26|standalone kind=photo waited_min=121.1 tries=8 pdf_log=
-04 16:35:31 ready 524212|Sep-26|consolidated kind=photo waited_min=45.1 tries=7 pdf_log=
-04 16:35:39 pdf nim reader iSERA Lifesciences Ltd: ok (gemini: gemini skipped (quota/backoff))
-04 16:38:51 pdf nim reader Universal Cables Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
-04 16:38:51 pdf pdf read failed Universal Cables Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible i
-04 16:38:55 ready 540147|Sep-26|standalone kind=photo waited_min=120.1 tries=8 pdf_log=
-04 16:40:55 ready 504212|Sep-26|consolidated kind=photo waited_min=32.2 tries=5 pdf_log=
-04 16:41:12 pdf nim reader Universal Cables Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
-04 16:41:12 pdf pdf read failed Universal Cables Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-04 16:43:26 seen 531191 Filtron Engineers Ltd cat=Result early=False bse_time=22:10:44 dissem=22:10:44
-04 16:43:49 wait 531191 Filtron Engineers Ltd: numbers not yet on BSE
-04 16:43:57 seen 530979 India Home Loan Ltd cat=Result early=False bse_time=22:11:50 dissem=22:11:50
-04 16:44:26 wait 530979 India Home Loan Ltd: numbers not yet on BSE
-04 16:45:32 pdf nim reader India Home Loan Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
-04 16:45:32 pdf pdf read failed India Home Loan Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible i
-04 16:46:06 seen 544612 Tenneco Clean Air India Ltd cat=Board Meeting early=True bse_time=22:15:03 dissem=22:15:03
-04 16:47:02 pdf nim reader India Home Loan Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
-04 16:47:02 pdf pdf read failed India Home Loan Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible i
-04 16:47:43 pdf nim reader Tenneco Clean Air India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invention): rejected e.g. [( (
-04 16:47:43 pdf pdf read failed Tenneco Clean Air India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (po
-04 16:49:19 pdf nim reader Tenneco Clean Air India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invention): rejected e.g. [( (
-04 16:49:19 pdf pdf read failed Tenneco Clean Air India Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (per-day) on gemini-flash-lite-latest | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim d
-04 16:50:07 seen 544612 Tenneco Clean Air India Ltd cat=Result early=False bse_time=22:20:02 dissem=22:20:02
-04 16:50:28 wait 544612 Tenneco Clean Air India Ltd: numbers not yet on BSE
-04 16:54:13 seen 543955 Transindia Real Estate Ltd cat=Result early=False bse_time=22:23:18 dissem=22:23:18
-04 16:54:37 wait 543955 Transindia Real Estate Ltd: numbers not yet on BSE
-04 16:54:50 pdf nim reader India Home Loan Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
-04 16:54:50 pdf pdf read failed India Home Loan Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible i
-04 16:54:58 pdf nim reader Tenneco Clean Air India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 16:54:58 pdf pdf read failed Tenneco Clean Air India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 16:54:58 pdf nim reader Tenneco Clean Air India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 16:54:58 pdf pdf read failed Tenneco Clean Air India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 16:57:35 seen 531191 Filtron Engineers Ltd cat=Board Meeting early=True bse_time=22:26:15 dissem=22:26:15
-04 16:57:59 pdf rule reader Tenneco Clean Air India Ltd: rule: consolidated table incomplete missing ['pat'] n=9
-04 16:57:59 pdf rule reader India Home Loan Ltd: rule: no results table page
-04 16:57:59 pdf rule reader Filtron Engineers Ltd: rule: no results table page
-04 16:58:24 pdf nim reader Tenneco Clean Air India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 16:58:24 pdf pdf read failed Tenneco Clean Air India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 16:58:26 seen 538081 Haria Apparels Ltd cat=Result early=False bse_time=22:28:11 dissem=22:28:11
-04 16:58:39 wait 538081 Haria Apparels Ltd: numbers not yet on BSE
-04 16:58:42 pdf nim reader Filtron Engineers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
-04 16:58:42 pdf pdf read failed Filtron Engineers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible
-04 16:59:39 pdf rule reader Filtron Engineers Ltd: rule: no results table page
-04 16:59:39 pdf nim reader Filtron Engineers Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 16:59:39 pdf pdf read failed Filtron Engineers Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 16:59:39 pdf rule reader Tenneco Clean Air India Ltd: rule: consolidated table incomplete missing ['pat'] n=9
-04 16:59:39 pdf nim reader Tenneco Clean Air India Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 16:59:39 pdf pdf read failed Tenneco Clean Air India Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 17:01:59 seen 538081 Haria Apparels Ltd cat=Board Meeting early=True bse_time=22:29:56 dissem=22:29:56
-04 17:05:21 seen 500480 Cummins India Ltd cat=Board Meeting early=True bse_time=22:34:14 dissem=22:34:14
-04 17:06:12 ready 500480|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Cummins India Ltd consolidated ok=False/3: revenue=3301.21, other_income=137.23, total_income=3438.44, total_expenses=2851.87, finance_costs=3.0
-04 17:08:12 pdf nim reader Haria Apparels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 17:08:12 pdf pdf read failed Haria Apparels Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 17:12:07 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
-04 17:14:30 pdf nim reader Haria Apparels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
-04 17:14:30 pdf pdf read failed Haria Apparels Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible inv
-04 17:18:09 seen 509009 AuSom Enterprise Ltd cat=Board Meeting early=True bse_time=22:47:30 dissem=22:47:30
-04 17:18:38 pdf strong model retry did not help: None
-04 17:18:43 pdf pdf current col Filtron Engineers Ltd consolidated ok=False/3: revenue=258844.48, other_income=1253.2, total_income=260097.68, total_expenses=237578.01, finance_costs=3204.67, depreciation=2642.41, pbt=53891.52, tax=14743.86, pat=
-04 17:18:43 pdf pdf checks failed Filtron Engineers Ltd consolidated
-04 17:19:33 pdf nim reader Haria Apparels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
-04 17:19:33 pdf pdf read failed Haria Apparels Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible inv
-04 17:23:57 seen 500480 Cummins India Ltd cat=Result early=False bse_time=22:53:22 dissem=22:53:22
-04 17:24:18 wait 500480 Cummins India Ltd: numbers not yet on BSE
-04 17:24:29 pdf nim reader Haria Apparels Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
-04 17:24:29 pdf pdf read failed Haria Apparels Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible inv
-04 17:25:45 seen 531680 Mayur Leather Products Ltd cat=Board Meeting early=True bse_time=22:55:07 dissem=22:55:07
-04 17:26:50 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 17:26:50 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 17:26:55 pdf rule reader AuSom Enterprise Ltd: rule: consolidated table incomplete missing ['pat'] n=6
-04 17:26:55 pdf nim reader AuSom Enterprise Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 17:26:55 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 17:27:03 pdf rule reader Haria Apparels Ltd: rule: no results table page
-04 17:27:03 pdf nim reader Haria Apparels Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 17:27:03 pdf pdf read failed Haria Apparels Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 17:29:15 ready 531191|Sep-26|na kind=photo waited_min=45.4 tries=8 pdf_log=
-04 17:29:30 seen 509009 AuSom Enterprise Ltd cat=Result early=False bse_time=22:57:45 dissem=22:57:45
-04 17:29:50 ready 509009|unverified|3cb8376b-1442-4fe4-b31b-476a4a3550d4 kind=photo waited_min=0.0 tries=1 pdf_log=
-04 17:29:57 ready 530979|Sep-26|na kind=photo waited_min=45.5 tries=8 pdf_log=
-04 17:30:36 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-04 17:30:36 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible 
-04 17:30:41 seen 531680 Mayur Leather Products Ltd cat=Result early=False bse_time=23:00:26 dissem=23:00:26
-04 17:31:03 wait 531680 Mayur Leather Products Ltd: numbers not yet on BSE
-04 17:31:10 pdf nim reader Mayur Leather Products Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 17:31:10 pdf pdf read failed Mayur Leather Products Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 17:31:12 pdf rule reader Mayur Leather Products Ltd: rule: no results table page
-04 17:31:12 pdf nim reader Mayur Leather Products Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
-04 17:31:12 pdf pdf read failed Mayur Leather Products Ltd: gemini skipped (quota/backoff); nim: cooling down
-04 17:31:17 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-04 17:31:17 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible 
-04 17:32:19 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
-04 17:32:19 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
-04 17:37:08 seen 539519 Tavexia Lifecare Ltd cat=Result early=False bse_time=23:05:24 dissem=23:05:24
-04 17:40:22 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-04 17:40:22 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible 
-04 17:40:59 pdf nim reader Mayur Leather Products Ltd: ok (gemini: gemini skipped (quota/backoff))
-04 17:41:26 ready 531680|Sep-26|consolidated kind=photo waited_min=10.3 tries=2 pdf_log=
-04 17:41:43 pdf pdf current col Mayur Leather Products Ltd consolidated ok=True/3: revenue=0.0, other_income=1.37, total_income=1.37, total_expenses=7.76, finance_costs=0.47, depreciation=1.9, pbt=-6.39, tax=-0.01, pat=-6.38, eps=-0.13
-04 17:42:29 pdf nim reader AuSom Enterprise Ltd: nim deepseek-v4.1-flash: HTTP 502 | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemini skipped (quota/backoff))
-04 17:42:29 pdf pdf read failed AuSom Enterprise Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: HTTP 502 | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [(
-04 17:44:29 ready 538081|Sep-26|na kind=photo waited_min=46.0 tries=8 pdf_log=
-04 18:15:29 seen 539407 Generic Engineering Construc cat=Result early=False bse_time=23:44:39 dissem=23:44:39
-04 18:16:02 pdf rule reader Generic Engineering Construction and Projects Ltd: rule: no results table page
-04 18:17:01 pdf nim reader Generic Engineering Construction and Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention
-04 18:17:01 pdf pdf read failed Generic Engineering Construction and Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found i
-04 18:21:57 seen 544997 Shree Vasu Logistics Ltd cat=Board Meeting early=True bse_time=23:51:03 dissem=23:51:03
-04 18:22:21 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:23:25 pdf nim reader Shree Vasu Logistics Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-04 18:23:25 pdf pdf read failed Shree Vasu Logistics Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
-04 18:26:38 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:27:54 pdf nim reader Shree Vasu Logistics Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-04 18:27:54 pdf pdf read failed Shree Vasu Logistics Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
-04 18:28:20 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:28:22 seen 500418 Tokyo Plast International Lt cat=Board Meeting early=True bse_time=23:57:44 dissem=23:57:44
-04 18:30:57 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:32:05 pdf nim reader Shree Vasu Logistics Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
-04 18:32:33 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:35:39 pdf nim reader Shree Vasu Logistics Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-04 18:35:39 pdf pdf read failed Shree Vasu Logistics Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possib
-04 18:36:02 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:38:16 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:41:34 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:42:32 pdf nim reader Shree Vasu Logistics Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-04 18:42:32 pdf pdf read failed Shree Vasu Logistics Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
-04 18:45:10 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:46:06 pdf nim reader Shree Vasu Logistics Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
-04 18:46:36 pdf rule reader Shree Vasu Logistics Ltd: rule: stan: missing ['pat'] n=6
-04 18:55:19 pdf strong model retry did not help: HTTP 503 on gemini-3.5-flash
-05 00:00:27 seen 500418 Tokyo Plast International Lt cat=Result early=False bse_time=00:03:58 dissem=00:03:58
-05 00:00:27 seen 544997 Shree Vasu Logistics Ltd cat=Result early=False bse_time=00:06:29 dissem=00:06:29
-05 00:00:27 seen 531845 Zenith Steel Pipes & Industr cat=Result early=False bse_time=00:14:49 dissem=00:14:49
-05 00:00:27 seen 543542 Kesar India Ltd cat=Result early=False bse_time=01:44:19 dissem=01:44:19
-05 00:00:55 wait 543542 Kesar India Ltd: numbers not yet on BSE
-05 00:00:55 ready 544997|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-05 00:01:02 ready 500418|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-05 00:01:55 pdf nim reader Tokyo Plast International Ltd: ok (gemini: gemini skipped (quota/backoff))
-05 00:02:07 pdf nim reader Zenith Steel Pipes & Industries Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected
-05 00:02:07 pdf pdf read failed Zenith Steel Pipes & Industries Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filin
-05 04:25:12 seen 590071 Sundaram Finance Ltd cat=Result early=False bse_time=09:54:37 dissem=09:54:37
-05 04:26:14 seen 590071 Sundaram Finance Ltd cat=Result early=False bse_time=09:55:36 dissem=09:55:36
-05 04:26:19 pdf rule reader Sundaram Finance Ltd: rule: no results table page
-05 04:43:37 seen 503671 Unijolly Investments Company cat=Result early=False bse_time=10:13:29 dissem=10:13:29
-05 04:43:42 wait 503671 Unijolly Investments Company: numbers not yet on BSE
-05 04:43:42 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:45:39 pdf rule reader Unijolly Investments Company Ltd: ok
-05 04:45:39 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 04:45:39 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:46:58 seen 503671 Unijolly Investments Company cat=Board Meeting early=True bse_time=10:15:31 dissem=10:15:31
-05 04:47:36 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 04:47:36 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:50:07 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:51:02 pdf rule reader Unijolly Investments Company Ltd: ok
-05 04:51:02 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 04:51:02 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:53:03 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 04:53:03 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:53:38 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 04:53:38 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:54:05 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:59:03 seen 503689 Healthy Investments Ltd cat=Result early=False bse_time=10:28:50 dissem=10:28:50
-05 04:59:19 wait 503689 Healthy Investments Ltd: numbers not yet on BSE
-05 04:59:19 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 04:59:33 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:01:43 seen 544679 Amagi Media Labs Ltd cat=Result early=False bse_time=10:31:36 dissem=10:31:36
-05 05:02:05 wait 544679 Amagi Media Labs Ltd: numbers not yet on BSE
-05 05:02:08 pdf rule reader Healthy Investments Ltd: ok
-05 05:02:08 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:02:08 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
-05 05:02:39 seen 503689 Healthy Investments Ltd cat=Board Meeting early=True bse_time=10:32:19 dissem=10:32:19
-05 05:03:00 pdf rule reader Healthy Investments Ltd: rule: column dates not found
-05 05:04:37 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
-05 05:04:37 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:04:37 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:06:09 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, depreciation=0.0, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:06:09 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
-05 05:07:34 pdf nim reader Healthy Investments Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
-05 05:07:38 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, depreciation=0.0, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:07:38 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
-05 05:08:00 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:08:00 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-05 05:10:16 pdf rule reader Healthy Investments Ltd: ok
-05 05:10:16 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:10:16 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:11:03 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, depreciation=0.0, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:11:03 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
-05 05:11:40 seen 544679 Amagi Media Labs Ltd cat=Board Meeting early=True bse_time=10:40:46 dissem=10:40:46
-05 05:12:04 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:12:04 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-05 05:12:38 ready 503689|Sep-26|standalone kind=photo waited_min=0.0 tries=6 pdf_log=pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, dep
-05 05:13:31 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:13:31 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:14:46 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:14:46 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:16:35 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:16:35 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:19:02 pdf rule reader Healthy Investments Ltd: ok
-05 05:19:02 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:19:02 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:19:54 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:19:54 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:23:39 seen 503671 Unijolly Investments Company cat=Result early=False bse_time=10:13:29 dissem=10:13:29
-05 05:23:39 seen 503689 Healthy Investments Ltd cat=Result early=False bse_time=10:28:50 dissem=10:28:50
-05 05:23:39 seen 544679 Amagi Media Labs Ltd cat=Result early=False bse_time=10:31:36 dissem=10:31:36
-05 05:23:39 seen 544679 Amagi Media Labs Ltd cat=Board Meeting early=True bse_time=10:40:46 dissem=10:40:46
-05 05:24:24 ready 544679|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-05 05:24:50 pdf rule reader Healthy Investments Ltd: ok
-05 05:24:50 pdf rule reader Unijolly Investments Company Ltd: ok
-05 05:24:50 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 05:24:50 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:24:50 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:24:50 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:25:13 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:25:13 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 503 on gemini-flash-latest; nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-
-05 05:25:50 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:26:37 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:26:37 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:27:05 seen 544576 LG Electronics India Ltd cat=Board Meeting early=True bse_time=10:56:43 dissem=10:56:43
-05 05:27:08 ready 544576|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader LG Electronics India Ltd: ok | rule reader Unijolly Investments Company Ltd: ok | pdf current col LG Electronics India Ltd standalone ok=True/3: rev
-05 05:27:17 pdf pdf current col Unijolly Investments Company Ltd standalone ok=True/3: revenue=0.013, other_income=0.15, total_income=0.164, total_expenses=0.357, finance_costs=None, depreciation=None, pbt=-0.193, tax=-0.02, pat=-0.193, eps=-0.97
-05 05:27:17 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:27:17 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
-05 05:27:17 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
-05 05:28:40 ready 503671|Sep-26|na kind=photo waited_min=45.0 tries=4 pdf_log=
-05 05:29:37 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:29:37 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-05 05:32:46 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:32:46 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
-05 05:40:41 seen 544576 LG Electronics India Ltd cat=Result early=False bse_time=11:09:59 dissem=11:09:59
-05 05:41:18 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:41:18 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-05 05:43:23 seen 524669 Hester Biosciences Ltd cat=Board Meeting early=True bse_time=11:12:42 dissem=11:12:42
-05 05:44:24 ready 503689|Sep-26|na kind=photo waited_min=45.0 tries=8 pdf_log=pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, de
-05 05:44:55 pdf pdf current col Hester Biosciences Ltd consolidated ok=False/3: revenue=97912, other_income=1532, total_income=99444, total_expenses=75313, finance_costs=2985, depreciation=7077, pbt=26454, tax=5823, pat=20631, eps=23.94
-05 05:44:55 pdf pdf history mismatch Hester Biosciences Ltd consolidated cols=['30 September 2026', '30 June 2026', '30 September 2025'] :: q-1: pdf rev 77244.0 pat 96732.0 | bse rev 772.44 pat 967.32 (Rs mn); q-4: pdf rev 70969.0 pat 14331.0 | b
-05 05:44:55 pdf pdf has consolidated but it failed checks: not falling back to standalone Hester Biosciences Ltd
-05 05:45:35 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
-05 05:45:35 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
-05 05:46:49 pdf pdf history mismatch Hester Biosciences Ltd consolidated cols=['30 September 2026', '30 June 2026', '30 September 2025'] :: q-1: pdf rev 77244.0 pat 96732.0 | bse rev 772.44 pat 967.32 (Rs mn); q-4: pdf rev 70969.0 pat 14331.0 | b
-05 05:46:49 pdf pdf has consolidated but it failed checks: not falling back to standalone Hester Biosciences Ltd
-05 05:47:25 ready 544679|Sep-26|na kind=photo waited_min=45.7 tries=4 pdf_log=
-05 05:48:19 pdf nim reader Hester Biosciences Ltd: ok (gemini: gemini skipped (quota/backoff))
-05 05:48:40 ready 524669|Sep-26|consolidated kind=photo waited_min=0.0 tries=3 pdf_log=
-05 05:51:31 seen 530701 Avenique Ltd cat=Board Meeting early=True bse_time=11:20:39 dissem=11:20:39
-05 05:52:53 seen 538964 Mercury Laboratories Ltd cat=Board Meeting early=True bse_time=11:21:47 dissem=11:21:47
-05 05:54:15 pdf nim reader Mercury Laboratories Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-05 05:54:15 pdf pdf read failed Mercury Laboratories Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
-05 05:56:07 seen 539730 Fredun Pharmaceuticals Ltd cat=Board Meeting early=True bse_time=11:25:10 dissem=11:25:10
-05 05:56:07 seen 500084 CESC Ltd cat=Result early=False bse_time=11:25:16 dissem=11:25:16
-05 05:56:28 wait 500084 CESC Ltd: numbers not yet on BSE
-05 05:57:29 pdf nim reader Mercury Laboratories Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible invention): rejected e.g. [( (gem
-05 05:57:29 pdf pdf read failed Mercury Laboratories Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possi
-05 05:58:24 ready 500084|Sep-26|consolidated kind=photo waited_min=1.4 tries=1 pdf_log=
-05 05:58:38 seen 544999 Tonbo Imaging India Ltd cat=Board Meeting early=True bse_time=11:27:44 dissem=11:27:44
-05 05:59:04 seen 538964 Mercury Laboratories Ltd cat=Result early=False bse_time=11:28:07 dissem=11:28:07
-05 05:59:26 wait 538964 Mercury Laboratories Ltd: numbers not yet on BSE
-05 06:00:45 seen 544871 Shiprocket Ltd cat=Board Meeting early=True bse_time=11:29:59 dissem=11:29:59
-05 06:01:29 seen 504093 Panasonic Energy India Compa cat=Result early=False bse_time=11:30:52 dissem=11:30:52
-05 06:01:29 seen 500356 Shree Rama Newsprint Ltd cat=Board Meeting early=True bse_time=11:31:05 dissem=11:31:05
-05 06:01:29 seen 539730 Fredun Pharmaceuticals Ltd cat=Result early=False bse_time=11:31:14 dissem=11:31:14
-05 06:01:51 wait 539730 Fredun Pharmaceuticals Ltd: numbers not yet on BSE
-05 06:01:51 ready 500356|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Shree Rama Newsprint Ltd standalone ok=True/3: revenue=805.54, other_income=168.28, total_income=973.82, total_expenses=1880.5, finance_costs=94
-05 06:01:59 ready 504093|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Panasonic Energy India Company Ltd-$ standalone ok=True/3: revenue=5473.73, other_income=88.15, total_income=5561.88, total_expenses=6594.24, fi
-05 06:02:17 pdf nim reader Mercury Laboratories Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-05 06:02:17 pdf pdf read failed Mercury Laboratories Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possib
-05 06:03:43 pdf nim reader Mercury Laboratories Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
-05 06:03:43 pdf pdf read failed Mercury Laboratories Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim 
-05 06:04:17 seen 504093 Panasonic Energy India Compa cat=Board Meeting early=True bse_time=11:33:59 dissem=11:33:59
-05 06:05:10 seen 544999 Tonbo Imaging India Ltd cat=Result early=False bse_time=11:34:47 dissem=11:34:47
-05 06:05:33 wait 544999 Tonbo Imaging India Ltd: numbers not yet on BSE
-05 06:06:07 pdf pdf current col Panasonic Energy India Company Ltd-$ standalone ok=False/3: revenue=5473.73, other_income=88.15, total_income=5561.88, total_expenses=6594.24, finance_costs=2.64, depreciation=67.79, pbt=-1757.89, tax=-208.82, pat=
-05 06:07:00 pdf nim reader Tonbo Imaging India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemi
-05 06:07:00 pdf pdf read failed Tonbo Imaging India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possibl
-05 06:07:02 seen 500084 CESC Ltd cat=Board Meeting early=True bse_time=11:36:03 dissem=11:36:03
-05 06:08:05 seen 500356 Shree Rama Newsprint Ltd cat=Result early=False bse_time=11:37:27 dissem=11:37:27
 05 06:08:38 pdf nim reader CESC Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
 05 06:09:35 seen 544843 Advance Technoforge Ltd cat=Board Meeting early=True bse_time=11:39:29 dissem=11:39:29
 05 06:11:57 seen 534598 Sampann Utpadan India Ltd cat=Board Meeting early=True bse_time=11:41:04 dissem=11:41:04
@@ -1781,3 +1407,210 @@
 05 18:49:49 pdf nim reader Powerica Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 42
 05 18:49:49 pdf pdf read failed Powerica Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 429
 05 18:51:49 pdf rule reader Powerica Ltd: rule: stan: does not reconcile [crore] pbt=[88.83, 79.03, 53.19] tax=[24.74, 15.39, 23.32] pat=[64.49, 59.95, 36.31] depreciation=[39.58, 38.09, 27.1] finance_costs=[0.77, 1.57, 5.8] | ocr: rule: unit not
+05 18:53:10 pdf nim reader Powerica Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+05 18:53:10 pdf pdf read failed Powerica Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+05 18:54:50 seen 531960 June Industries Ltd cat=Result early=False bse_time=15:48:21 dissem=15:48:21
+05 18:54:50 seen 544179 Go Digit General Insurance L cat=Result early=False bse_time=16:56:11 dissem=16:56:11
+05 18:54:50 seen 514223 Ramgopal Polytex Ltd cat=Result early=False bse_time=17:07:28 dissem=17:07:28
+05 18:54:50 seen 544630 Helloji Holidays Ltd cat=Result early=False bse_time=17:09:45 dissem=17:09:45
+05 18:54:50 seen 540497 S Chand and Company Ltd cat=Result early=False bse_time=17:10:35 dissem=17:10:35
+05 18:54:50 seen 530959 Diana Tea Company Ltd cat=Result early=False bse_time=17:10:53 dissem=17:10:53
+05 18:54:50 seen 543941 Ahasolar Technologies Ltd cat=Result early=False bse_time=17:11:31 dissem=17:11:31
+05 18:54:50 seen 531810 Metal Coatings India Ltd cat=Result early=False bse_time=17:12:29 dissem=17:12:29
+05 18:54:50 seen 524628 Parker Agrochem Exports Ltd- cat=Result early=False bse_time=17:12:40 dissem=17:12:40
+05 18:54:50 seen 537709 Shree Hanuman Sugar & Indust cat=Result early=False bse_time=17:13:59 dissem=17:13:59
+05 18:54:50 seen 544131 GPT Healthcare Ltd cat=Result early=False bse_time=17:16:42 dissem=17:16:42
+05 18:54:50 seen 541702 Ashnisha Industries Ltd cat=Result early=False bse_time=17:18:47 dissem=17:18:47
+05 18:54:50 seen 500389 Silverline Technologies Ltd cat=Result early=False bse_time=17:18:58 dissem=17:18:58
+05 18:54:50 seen 780013 Cityon Systems (India) Ltd cat=Result early=False bse_time=17:19:37 dissem=17:19:37
+05 18:54:50 seen 526987 Urja Global Ltd cat=Result early=False bse_time=17:21:09 dissem=17:21:09
+05 18:54:50 seen 504741 Indian Hume Pipe Company Ltd cat=Result early=False bse_time=17:21:58 dissem=17:21:58
+05 18:54:50 seen 540136 HPL Electric & Power Ltd cat=Result early=False bse_time=17:22:19 dissem=17:22:19
+05 18:54:50 seen 530997 Unique Organics Ltd cat=Result early=False bse_time=17:22:24 dissem=17:22:24
+05 18:54:50 seen 543598 Shantidoot Infra Services Lt cat=Result early=False bse_time=17:23:40 dissem=17:23:40
+05 18:54:50 seen 500179 HCL Infosystems Ltd cat=Result early=False bse_time=17:24:59 dissem=17:24:59
+05 18:54:50 seen 502420 Orient Paper & Industries Lt cat=Result early=False bse_time=17:25:01 dissem=17:25:01
+05 18:54:50 seen 533239 Prakash Steelage Ltd cat=Result early=False bse_time=17:25:19 dissem=17:25:19
+05 18:54:50 seen 523329 Eldeco Housing & Industries  cat=Result early=False bse_time=17:26:39 dissem=17:26:39
+05 18:54:50 seen 539337 Waaree Technologies Ltd cat=Result early=False bse_time=17:27:22 dissem=17:27:22
+05 18:54:50 seen 544548 Gujarat Peanut And Agri Prod cat=Result early=False bse_time=17:27:28 dissem=17:27:28
+05 18:54:50 seen 519014 Prashant India Ltd cat=Result early=False bse_time=17:28:44 dissem=17:28:44
+05 18:54:50 seen 524055 Panther Industrial Products  cat=Result early=False bse_time=17:29:35 dissem=17:29:35
+05 18:54:50 seen 523023 Sinclairs Hotels Ltd-$ cat=Result early=False bse_time=17:30:34 dissem=17:30:34
+05 18:54:50 seen 531676 Emrock Corporation Ltd cat=Result early=False bse_time=17:30:59 dissem=17:30:59
+05 18:54:50 seen 544521 VMS TMT Ltd cat=Result early=False bse_time=17:31:11 dissem=17:31:11
+05 18:54:50 seen 503837 Shree Rajasthan Syntex Ltd-$ cat=Result early=False bse_time=17:33:14 dissem=17:33:14
+05 18:54:50 seen 540492 Starlineps Enterprises Ltd cat=Result early=False bse_time=17:35:07 dissem=17:35:07
+05 18:54:50 seen 544523 Ivalue Infosolutions Ltd cat=Result early=False bse_time=17:35:16 dissem=17:35:16
+05 18:54:50 seen 540189 Unipro Technologies Ltd cat=Result early=False bse_time=17:35:42 dissem=17:35:42
+05 18:54:50 seen 530959 Diana Tea Company Ltd cat=Result early=False bse_time=17:36:13 dissem=17:36:13
+05 18:54:50 seen 505712 Him Teknoforge Ltd cat=Result early=False bse_time=17:37:58 dissem=17:37:58
+05 18:54:50 seen 505400 Texmaco Infrastructure & Hol cat=Result early=False bse_time=17:38:57 dissem=17:38:57
+05 18:54:50 seen 521105 Olympia Industries Ltd cat=Result early=False bse_time=17:39:07 dissem=17:39:07
+05 18:54:50 seen 532817 Oriental Trimex Ltd cat=Result early=False bse_time=17:40:35 dissem=17:40:35
+05 18:54:50 seen 544373 NAPS Global India Ltd cat=Result early=False bse_time=17:41:24 dissem=17:41:24
+05 18:54:50 seen 530045 Titan Securities Ltd cat=Result early=False bse_time=17:41:58 dissem=17:41:58
+05 18:54:50 seen 530797 Shree Ganesh Elastoplast Ltd cat=Result early=False bse_time=17:42:09 dissem=17:42:09
+05 18:54:50 seen 542668 Evans Electric Ltd cat=Result early=False bse_time=17:44:31 dissem=17:44:31
+05 18:54:50 seen 539252 Shyam Century Ferrous Ltd cat=Result early=False bse_time=17:44:34 dissem=17:44:34
+05 18:54:50 seen 543526 Life Insurance Corporation o cat=Result early=False bse_time=17:44:52 dissem=17:44:52
+05 18:54:50 seen 534532 Aurus Gem Corporation Ltd cat=Result early=False bse_time=17:44:59 dissem=17:44:59
+05 18:54:50 seen 538319 GCM Capital Advisors Ltd cat=Result early=False bse_time=17:46:09 dissem=17:46:09
+05 18:54:50 seen 532123 BSEL Algo Ltd cat=Result early=False bse_time=17:48:08 dissem=17:48:08
+05 18:54:50 seen 526423 Kriti Industries India Ltd-$ cat=Result early=False bse_time=17:48:40 dissem=17:48:40
+05 18:54:50 seen 511176 Parshwanath Corporation Ltd cat=Result early=False bse_time=17:50:51 dissem=17:50:51
+05 18:54:50 seen 520155 Starlog Enterprises Ltd cat=Result early=False bse_time=17:52:40 dissem=17:52:40
+05 18:54:50 seen 543711 Sula Vineyards Ltd cat=Result early=False bse_time=17:54:32 dissem=17:54:32
+05 18:54:50 seen 544244 Gala Precision Engineering L cat=Result early=False bse_time=17:54:51 dissem=17:54:51
+05 18:54:50 seen 542025 Sun Retail Ltd cat=Result early=False bse_time=17:56:25 dissem=17:56:25
+05 18:54:50 seen 532303 Integrated Hitech Ltd cat=Result early=False bse_time=17:56:31 dissem=17:56:31
+05 18:54:50 seen 511672 Scan Steels Ltd cat=Result early=False bse_time=17:57:08 dissem=17:57:08
+05 18:54:50 seen 519279 Madhur Industries Ltd cat=Result early=False bse_time=17:58:21 dissem=17:58:21
+05 18:54:50 seen 530853 Hipolin Ltd cat=Result early=False bse_time=18:00:05 dissem=18:00:05
+05 18:54:50 seen 544500 Abril Paper Tech Ltd cat=Result early=False bse_time=18:00:55 dissem=18:00:55
+05 18:54:50 seen 500159 Metroglobal Ltd cat=Result early=False bse_time=18:01:20 dissem=18:01:20
+05 18:54:50 seen 544607 Shining Tools Ltd cat=Result early=False bse_time=18:01:52 dissem=18:01:52
+05 18:54:50 seen 511413 Crest Ventures Ltd cat=Result early=False bse_time=18:03:58 dissem=18:03:58
+05 18:54:50 seen 543799 S. V. J. ENTERPRISES Ltd cat=Result early=False bse_time=18:05:17 dissem=18:05:17
+05 18:54:50 seen 531929 Innocorp Ltd cat=Result early=False bse_time=18:05:58 dissem=18:05:58
+05 18:54:50 seen 530853 Hipolin Ltd cat=Result early=False bse_time=18:06:01 dissem=18:06:01
+05 18:54:50 seen 540654 Globalspace Technologies Ltd cat=Result early=False bse_time=18:07:14 dissem=18:07:14
+05 18:54:50 seen 532692 Radha Madhav Corporation Ltd cat=Result early=False bse_time=18:07:25 dissem=18:07:25
+05 18:54:50 seen 539119 Jain Marmo Industries Ltd cat=Result early=False bse_time=18:07:53 dissem=18:07:53
+05 18:54:50 seen 543618 Cargotrans Maritime Ltd cat=Result early=False bse_time=18:09:21 dissem=18:09:21
+05 18:54:50 seen 512147 Kajal Synthetics & Silk Mill cat=Result early=False bse_time=18:10:25 dissem=18:10:25
+05 18:54:50 seen 512047 Royal India Corporation Ltd cat=Result early=False bse_time=18:10:27 dissem=18:10:27
+05 18:54:50 seen 544617 Excelsoft Technologies Ltd cat=Result early=False bse_time=18:10:50 dissem=18:10:50
+05 18:54:50 seen 530521 Brahm Virat Industries Corpo cat=Result early=False bse_time=18:13:14 dissem=18:13:14
+05 18:54:50 seen 526325 Orient Press Ltd cat=Result early=False bse_time=18:17:18 dissem=18:17:18
+05 18:54:50 seen 522001 Cranex Ltd cat=Result early=False bse_time=18:17:30 dissem=18:17:30
+05 18:54:50 seen 539399 Bella Casa Fashion & Retail  cat=Result early=False bse_time=18:18:12 dissem=18:18:12
+05 18:54:50 seen 509040 Netlink Solutions India Ltd cat=Result early=False bse_time=18:19:11 dissem=18:19:11
+05 18:54:50 seen 542906 Easun Capital Markets Ltd cat=Result early=False bse_time=18:19:14 dissem=18:19:14
+05 18:54:50 seen 544340 Rikhav Securities Ltd cat=Result early=False bse_time=18:20:07 dissem=18:20:07
+05 18:54:50 seen 540735 IRIS RegTech Solutions Ltd cat=Result early=False bse_time=18:20:10 dissem=18:20:10
+05 18:54:50 seen 544805 Jivial Industries Ltd cat=Result early=False bse_time=18:20:57 dissem=18:20:57
+05 18:54:50 seen 530179 RSC International Ltd cat=Result early=False bse_time=18:21:59 dissem=18:21:59
+05 18:54:50 seen 542019 Shubham Polyspin Ltd cat=Result early=False bse_time=18:22:01 dissem=18:22:01
+05 18:54:50 seen 511726 Vipul Ltd cat=Result early=False bse_time=18:22:02 dissem=18:22:02
+05 18:54:50 seen 543901 Robust Hotels Ltd cat=Result early=False bse_time=18:22:45 dissem=18:22:45
+05 18:54:50 seen 538119 R&B Denims Ltd cat=Result early=False bse_time=18:23:42 dissem=18:23:42
+05 18:54:50 seen 500426 UTL Industries Ltd cat=Result early=False bse_time=18:23:53 dissem=18:23:53
+05 18:54:50 seen 526905 Padmanabh Industries Ltd cat=Result early=False bse_time=18:24:01 dissem=18:24:01
+05 18:54:50 seen 514302 Vippy Spinpro Ltd cat=Result early=False bse_time=18:27:57 dissem=18:27:57
+05 18:54:50 seen 530361 Prabhhans Industries Ltd cat=Result early=False bse_time=18:32:12 dissem=18:32:12
+05 18:54:50 seen 509635 Hindustan Composites Ltd cat=Result early=False bse_time=18:32:55 dissem=18:32:55
+05 18:54:50 seen 521131 Shree Bhavya Fabrics Ltd cat=Result early=False bse_time=18:34:48 dissem=18:34:48
+05 18:54:50 seen 507872 Ashnoor Textile Mills Ltd cat=Result early=False bse_time=18:36:29 dissem=18:36:29
+05 18:54:50 seen 522150 Aditya Forge Ltd cat=Result early=False bse_time=18:37:07 dissem=18:37:07
+05 18:54:50 seen 532357 Mukta Arts Ltd cat=Result early=False bse_time=18:38:59 dissem=18:38:59
+05 18:54:50 seen 526133 Supertex Industries Ltd cat=Result early=False bse_time=18:40:14 dissem=18:40:14
+05 18:54:50 seen 540796 Ratnabhumi Developers Ltd cat=Result early=False bse_time=18:41:43 dissem=18:41:43
+05 18:54:50 seen 531223 Anjani Synthetics Ltd-$ cat=Result early=False bse_time=18:41:49 dissem=18:41:49
+05 18:54:50 seen 526345 Panjon Ltd cat=Result early=False bse_time=18:43:48 dissem=18:43:48
+05 18:54:50 seen 521246 Paras Petrofils Ltd cat=Result early=False bse_time=18:43:55 dissem=18:43:55
+05 18:54:50 seen 500500 Hindustan Motors Ltd cat=Result early=False bse_time=18:47:08 dissem=18:47:08
+05 18:54:50 seen 544327 Technichem Organics Ltd cat=Result early=False bse_time=18:47:17 dissem=18:47:17
+05 18:54:50 seen 538576 Bhanderi Infracon Ltd cat=Result early=False bse_time=18:47:23 dissem=18:47:23
+05 18:54:50 seen 534109 Pyxis Finvest Ltd cat=Result early=False bse_time=18:49:32 dissem=18:49:32
+05 18:54:50 seen 544671 Apollo Techno Industries Ltd cat=Result early=False bse_time=18:51:51 dissem=18:51:51
+05 18:54:50 seen 539226 Rudra Global Infra Products  cat=Result early=False bse_time=18:52:43 dissem=18:52:43
+05 18:54:50 seen 538742 Panabyte Technologies Ltd cat=Result early=False bse_time=18:53:03 dissem=18:53:03
+05 18:54:50 seen 543814 Prospect Consumer Products L cat=Result early=False bse_time=18:53:14 dissem=18:53:14
+05 18:54:50 seen 540148 Bindal Exports Ltd cat=Result early=False bse_time=18:53:32 dissem=18:53:32
+05 18:54:50 seen 540901 Praxis Home Retail Ltd cat=Result early=False bse_time=18:53:54 dissem=18:53:54
+05 18:54:50 seen 532092 Epuja Spiritech Ltd cat=Result early=False bse_time=18:54:41 dissem=18:54:41
+05 18:54:50 seen 540901 Praxis Home Retail Ltd cat=Result early=False bse_time=18:55:03 dissem=18:55:03
+05 18:54:50 seen 514318 Jattashankar Industries Ltd cat=Result early=False bse_time=18:55:07 dissem=18:55:07
+05 18:54:50 seen 542592 Humming Bird Education Ltd cat=Result early=False bse_time=18:55:10 dissem=18:55:10
+05 18:54:50 seen 540693 Shish Industries Ltd cat=Result early=False bse_time=18:55:20 dissem=18:55:20
+05 18:54:50 seen 533210 Kriti Nutrients Ltd cat=Result early=False bse_time=18:57:15 dissem=18:57:15
+05 18:54:50 seen 533093 Raj Oil Mills Ltd cat=Result early=False bse_time=18:58:15 dissem=18:58:15
+05 18:54:50 seen 544189 Sattrix Information Security cat=Result early=False bse_time=18:58:49 dissem=18:58:49
+05 18:54:50 seen 544613 Fujiyama Power Systems Ltd cat=Result early=False bse_time=18:59:12 dissem=18:59:12
+05 18:54:50 seen 533274 Prestige Estates Projects Lt cat=Result early=False bse_time=18:59:23 dissem=18:59:23
+05 18:54:50 seen 539099 Athena Constructions Ltd cat=Result early=False bse_time=18:59:58 dissem=18:59:58
+05 18:54:50 seen 543923 IKIO Technologies Ltd cat=Result early=False bse_time=19:00:21 dissem=19:00:21
+05 18:54:50 seen 543324 Gretex Corporate Services Lt cat=Result early=False bse_time=19:00:37 dissem=19:00:37
+05 18:54:50 seen 542337 Spencers Retail Ltd cat=Result early=False bse_time=19:03:08 dissem=19:03:08
+05 18:54:50 seen 539730 Fredun Pharmaceuticals Ltd cat=Result early=False bse_time=19:04:26 dissem=19:04:26
+05 18:54:50 seen 531668 Vision Corporation Ltd cat=Result early=False bse_time=19:04:47 dissem=19:04:47
+05 18:54:50 seen 544825 Alpine Texworld Ltd cat=Result early=False bse_time=19:05:02 dissem=19:05:02
+05 18:54:50 seen 509053 Banas Finance Ltd cat=Result early=False bse_time=19:05:28 dissem=19:05:28
+05 18:54:50 seen 544335 B.R.Goyal Infrastructure Ltd cat=Result early=False bse_time=19:07:13 dissem=19:07:13
+05 18:54:50 seen 532637 Mangalam Drugs & Organics Lt cat=Result early=False bse_time=19:09:28 dissem=19:09:28
+05 18:54:50 seen 532092 Epuja Spiritech Ltd cat=Result early=False bse_time=19:09:47 dissem=19:09:47
+05 18:54:50 seen 531241 Linc Ltd-$ cat=Result early=False bse_time=19:10:35 dissem=19:10:35
+05 18:54:50 seen 534674 Ducon Infratechnologies Ltd cat=Result early=False bse_time=19:11:14 dissem=19:11:14
+05 18:54:50 seen 532992 CHL Ltd cat=Result early=False bse_time=19:11:59 dissem=19:11:59
+05 18:54:50 seen 542057 BCPL Railway Infrastructure  cat=Result early=False bse_time=19:12:44 dissem=19:12:44
+05 18:54:50 seen 539265 Amrapali Fincap Ltd cat=Result early=False bse_time=19:12:56 dissem=19:12:56
+05 18:54:50 seen 544741 Highness Microelectronics Lt cat=Result early=False bse_time=19:13:26 dissem=19:13:26
+05 18:54:50 seen 514386 Gujarat Cotex Ltd cat=Result early=False bse_time=19:16:11 dissem=19:16:11
+05 18:54:50 seen 534623 Jupiter Infomedia Ltd cat=Result early=False bse_time=19:16:46 dissem=19:16:46
+05 18:54:50 seen 544391 Retaggio Industries Ltd cat=Result early=False bse_time=19:17:25 dissem=19:17:25
+05 18:54:50 seen 508954 Finkurve Financial Services  cat=Result early=False bse_time=19:18:06 dissem=19:18:06
+05 18:54:50 seen 532894 Indowind Energy Ltd cat=Result early=False bse_time=19:18:59 dissem=19:18:59
+05 18:54:50 seen 542057 BCPL Railway Infrastructure  cat=Result early=False bse_time=19:19:08 dissem=19:19:08
+05 18:54:50 seen 519183 Adf Foods Ltd-$ cat=Result early=False bse_time=19:19:16 dissem=19:19:16
+05 18:54:50 seen 544441 Meta Infotech Ltd cat=Result early=False bse_time=19:20:58 dissem=19:20:58
+05 18:54:50 seen 534422 Looks Health Services Ltd cat=Result early=False bse_time=19:22:00 dissem=19:22:00
+05 18:54:50 seen 500215 Sundrop Brands Ltd cat=Result early=False bse_time=19:23:05 dissem=19:23:05
+05 18:54:50 seen 500540 Premier Ltd cat=Result early=False bse_time=19:24:15 dissem=19:24:15
+05 18:54:50 seen 544233 Mahalaxmi Fabric Mills Ltd cat=Result early=False bse_time=19:25:26 dissem=19:25:26
+05 18:54:50 seen 544957 German Green Steel and Power cat=Result early=False bse_time=19:25:35 dissem=19:25:35
+05 18:54:50 seen 544866 Molbio Diagnostics Ltd cat=Result early=False bse_time=19:26:24 dissem=19:26:24
+05 18:54:50 seen 545005 Paras Healthcare Ltd cat=Result early=False bse_time=19:26:27 dissem=19:26:27
+05 18:54:50 seen 512091 Global Defence Industries Lt cat=Result early=False bse_time=19:26:44 dissem=19:26:44
+05 18:54:50 seen 532315 Groarc Industries India Ltd cat=Result early=False bse_time=19:30:42 dissem=19:30:42
+05 18:54:50 seen 531692 Khyati Multimedia Entertainm cat=Result early=False bse_time=19:31:45 dissem=19:31:45
+05 18:54:50 seen 524727 Span Divergent Ltd-$ cat=Result early=False bse_time=19:32:54 dissem=19:32:54
+05 18:54:50 seen 531771 Shraddha Prime Projects Ltd cat=Result early=False bse_time=19:34:05 dissem=19:34:05
+05 18:54:50 seen 530141 Gyan Developers & Builders L cat=Result early=False bse_time=19:35:21 dissem=19:35:21
+05 18:54:50 seen 543254 Antony Waste Handling Cell L cat=Result early=False bse_time=19:38:40 dissem=19:38:40
+05 18:54:50 seen 536737 Amrapali Capital and Finance cat=Result early=False bse_time=19:38:48 dissem=19:38:48
+05 18:54:50 seen 540145 Valiant Organics Ltd cat=Result early=False bse_time=19:39:25 dissem=19:39:25
+05 18:54:50 seen 523483 Pacific Industries Ltd cat=Result early=False bse_time=19:39:39 dissem=19:39:39
+05 18:54:50 seen 532042 Frontline Corporation Ltd cat=Result early=False bse_time=19:41:52 dissem=19:41:52
+05 18:54:50 seen 527001 Ashapura Minechem Ltd cat=Result early=False bse_time=19:42:06 dissem=19:42:06
+05 18:54:50 seen 539224 HCKK Ventures Ltd cat=Result early=False bse_time=19:42:15 dissem=19:42:15
+05 18:54:50 seen 544944 Anand Seamless Ltd cat=Result early=False bse_time=19:42:29 dissem=19:42:29
+05 18:54:50 seen 543433 HP Adhesives Ltd cat=Result early=False bse_time=19:43:02 dissem=19:43:02
+05 18:54:50 seen 511634 Axentra Corp Ltd cat=Result early=False bse_time=19:44:50 dissem=19:44:50
+05 18:54:50 seen 543516 Dhyaani Tradeventtures Ltd cat=Result early=False bse_time=19:44:52 dissem=19:44:52
+05 18:54:50 seen 544496 Vikran Engineering Ltd cat=Result early=False bse_time=19:45:52 dissem=19:45:52
+05 18:54:50 seen 544119 Rashi Peripherals Ltd cat=Result early=False bse_time=19:49:37 dissem=19:49:37
+05 18:54:50 seen 544167 JNK India Ltd cat=Result early=False bse_time=19:50:38 dissem=19:50:38
+05 18:54:50 seen 524238 Gujarat Inject Kerala Ltd cat=Result early=False bse_time=20:07:16 dissem=20:07:16
+05 18:54:50 seen 526241 Amrapali Industries Ltd cat=Result early=False bse_time=20:09:54 dissem=20:09:54
+05 18:54:50 seen 542544 Jyot International Marketing cat=Result early=False bse_time=20:11:21 dissem=20:11:21
+05 18:54:50 seen 532221 Sonata Software Ltd cat=Result early=False bse_time=20:11:31 dissem=20:11:31
+05 18:54:50 seen 544534 Jaro Institute of Technology cat=Result early=False bse_time=20:11:33 dissem=20:11:33
+05 18:54:50 seen 539787 HealthCare Global Enterprise cat=Result early=False bse_time=20:15:08 dissem=20:15:08
+05 18:54:50 seen 527001 Ashapura Minechem Ltd cat=Result early=False bse_time=20:17:13 dissem=20:17:13
+05 18:54:50 seen 544012 Cello World Ltd cat=Result early=False bse_time=20:17:55 dissem=20:17:55
+05 18:54:50 seen 519606 Integrated Proteins Ltd cat=Result early=False bse_time=20:18:25 dissem=20:18:25
+05 18:54:50 seen 532553 Welspun Enterprises Ltd cat=Result early=False bse_time=20:18:48 dissem=20:18:48
+05 18:54:50 seen 522241 MM Forgings Ltd-$ cat=Result early=False bse_time=20:19:08 dissem=20:19:08
+05 18:54:50 seen 531962 Shree Metalloys Ltd cat=Result early=False bse_time=20:25:47 dissem=20:25:47
+05 18:54:50 seen 544811 Kratikal Tech Ltd cat=Result early=False bse_time=20:26:30 dissem=20:26:30
+05 18:54:50 seen 530197 Fundviser Capital (India) Lt cat=Result early=False bse_time=20:27:57 dissem=20:27:57
+05 18:54:50 seen 539598 AMPL Capital Ltd cat=Result early=False bse_time=20:29:36 dissem=20:29:36
+05 18:54:50 seen 531157 Organic Coatings Ltd cat=Result early=False bse_time=20:32:44 dissem=20:32:44
+05 18:54:50 seen 532893 VTM Ltd cat=Result early=False bse_time=20:34:25 dissem=20:34:25
+05 18:54:50 seen 532507 B.A.G. Films and Media Ltd cat=Result early=False bse_time=20:34:37 dissem=20:34:37
+05 18:54:50 seen 544917 Karamtara Engineering Ltd cat=Result early=False bse_time=20:35:33 dissem=20:35:33
+05 18:54:50 seen 513488 Shree Steel Wire Ropes Ltd cat=Result early=False bse_time=20:36:34 dissem=20:36:34
+05 18:54:50 seen 500360 Rapicut Carbides Ltd cat=Result early=False bse_time=20:44:58 dissem=20:44:58
+05 18:54:50 seen 531359 Shriram Asset Management Com cat=Result early=False bse_time=20:45:17 dissem=20:45:17
+05 18:54:50 seen 524564 Gayatri BioOrganics Ltd cat=Result early=False bse_time=20:47:01 dissem=20:47:01
+05 18:54:50 seen 511766 Muthoot Capital Services Ltd cat=Result early=False bse_time=20:49:49 dissem=20:49:49
+05 18:54:50 seen 543346 Aashka Hospitals Ltd cat=Result early=False bse_time=20:55:36 dissem=20:55:36
+05 18:54:50 seen 532856 Time Technoplast Ltd cat=Result early=False bse_time=20:55:52 dissem=20:55:52
+05 18:54:50 seen 541233 Lemon Tree Hotels Ltd cat=Result early=False bse_time=21:04:55 dissem=21:04:55
+05 18:54:50 seen 534338 Max heights Infrastucture Lt cat=Result early=False bse_time=21:13:39 dissem=21:13:39
+05 18:54:50 seen 504380 Flomic Global Logistics Ltd cat=Result early=False bse_time=21:56:40 dissem=21:56:40
+05 18:54:50 seen 544309 Inventurus Knowledge Solutio cat=Result early=False bse_time=22:05:03 dissem=22:05:03
+05 18:54:50 seen 532159 Trescon Ltd cat=Result early=False bse_time=22:06:31 dissem=22:06:31
+05 18:56:05 ready 544309|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+05 18:56:20 wait 544866 Molbio Diagnostics Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
