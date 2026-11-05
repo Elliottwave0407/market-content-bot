@@ -1,0 +1,38 @@
+name: ppt-audit
+on:
+  workflow_dispatch:
+    inputs:
+      docs:
+        description: "presentations judged in this run"
+        default: "25"
+  schedule:
+    - cron: "20 3,9,15,21 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: ppt-audit
+  cancel-in-progress: false
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          DOCS: ${{ github.event.inputs.docs || '25' }}
+        run: python scripts/ppt_audit.py
+      - name: Save audit
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/ppt_audit 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Presentation audit results"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
