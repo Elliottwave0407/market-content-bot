@@ -3923,7 +3923,9 @@
 "1b4f4814-b9f7-49cb-a143-1fb7c5778931",
 "ef3aef0f-50ad-4950-91e2-801b44a6314c",
 "286ab607-6c18-4bf5-8b3a-f3b70425e421",
-"e3aa12af-4273-406f-bf12-c53e18008f7f"
+"e3aa12af-4273-406f-bf12-c53e18008f7f",
+"0d437bd9-24ea-414a-99a9-359f9d337296",
+"8b03cfcf-3c00-45a7-b4d9-67dfe30a9465"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6409,7 +6411,9 @@
 "531373|Sep-26|standalone",
 "539963|Sep-26|standalone",
 "544804|Sep-26|na",
-"532164|Sep-26|standalone"
+"532164|Sep-26|standalone",
+"543281|Sep-26|consolidated",
+"532335|Sep-26|standalone"
 ],
 "pending": {
 "dc2610a8-8549-421c-9518-9e8364bc132d": {
@@ -7324,44 +7328,6 @@
 "last": 1793878583.5408819,
 "alerted": false
 },
-"8b03cfcf-3c00-45a7-b4d9-67dfe30a9465": {
-"rec": {
-"NEWSID": "8b03cfcf-3c00-45a7-b4d9-67dfe30a9465",
-"SCRIP_CD": 532335,
-"XML_NAME": "ANN_532335_8B03CFCF-3C00-45A7-B4D9-67DFE30A9465",
-"NEWSSUB": "Ambica Agarbathies & Aroma Industries Ltd - 532335 - Results-Financial Results For The Quarterly And Half Year Ended 30.09.2026",
-"DT_TM": "2026-11-05T20:01:02.18",
-"NEWS_DT": "2026-11-05T20:01:02.18",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "c95d2834-b532-4538-91f8-caf09df821d9.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the Quarterly and Half Year Ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ambica-agarbathies--aroma-industries-ltd/ambicaagar/532335/",
-"SLONGNAME": "Ambica Agarbathies & Aroma Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 56,
-"News_submission_dt": "2026-11-05T20:01:02",
-"DissemDT": "2026-11-05T20:01:02.18",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2420395,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793889393.4050505,
-"last": 1793895912.1123216,
-"alerted": false
-},
 "6db9aa1a-2e7e-40b9-aad8-5b3413c2f2a0": {
 "rec": {
 "NEWSID": "6db9aa1a-2e7e-40b9-aad8-5b3413c2f2a0",
@@ -7627,13 +7593,47 @@
 "first": 1793901503.526834,
 "last": 1793901503.526834,
 "alerted": false
+},
+"42113612-67f1-463f-a3ea-e5902677d500": {
+"rec": {
+"NEWSID": "42113612-67f1-463f-a3ea-e5902677d500",
+"SCRIP_CD": 532164,
+"XML_NAME": "ANN_532164_42113612-67F1-463F-A3EA-E5902677D500",
+"NEWSSUB": "Minolta Finance Ltd - 532164 - Unaudited Financial Result For The Quarter Ended September 30, 2026",
+"DT_TM": "2026-11-05T23:06:58.35",
+"NEWS_DT": "2026-11-05T23:06:58.35",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "42c582a4-7370-43ed-bf61-3e5d972e7749.pdf",
+"MORE": "We wish to inform you that the Board of Directors of the company at its meeting held today i.e. on November 05, 2026, has considered and approved the unaudited standalone and consolidated financial result of the company for the quarter ended on September 30, 2026\r\nThe Unaudited Financial Results along with the Limited Review report, thereon  dated November 05, 2026, issued by the Statutory Auditor of the company viz. M/s. JCR & C. LLP Chartered Accountants",
+"HEADLINE": "We wish to inform you that the Board of Directors of the company at its meeting held today i.e. on November 05, 2026, has considered and approved the unaudited standalone and consolidated ....",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/minolta-finance-ltd/minoltaf/532164/",
+"SLONGNAME": "Minolta Finance Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 62,
+"News_submission_dt": "2026-11-05T23:06:58",
+"DissemDT": "2026-11-05T23:06:58.35",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 184138,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793901503.526834,
+"last": 1793901503.526834,
+"alerted": false
 }
 },
 "lag": [
-[
-"Bhilwara Spinners Ltd",
-11
-],
 [
 "Terraform Realstate Ltd",
 45
@@ -8829,6 +8829,10 @@
 [
 "Riyaasat Lifestyle Ltd",
 202
+],
+[
+"Ambica Agarbathies & Aroma Industries Ltd",
+202
 ]
 ],
 "gem_use": {
@@ -8856,7 +8860,7 @@
 "2026-11-02": 450,
 "2026-11-03": 879,
 "2026-11-04": 948,
-"2026-11-05": 217
+"2026-11-05": 218
 },
 "pdfposted": {
 "543669|Sep-26|standalone": {
