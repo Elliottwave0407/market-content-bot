@@ -3690,7 +3690,12 @@
 "48d9de3f-9634-407f-a8e4-0c62dbc59768",
 "bcde7cbc-9a4d-4bf0-9861-ed4d4e985e62",
 "2aa6c15b-43e1-4b07-8c18-e41634d3ba71",
-"da73f72f-f24c-4ff4-9acb-f126c622c838"
+"da73f72f-f24c-4ff4-9acb-f126c622c838",
+"2bf4a04e-d382-49ba-bc7d-daa5a729aa7d",
+"8eefced3-404d-4fb0-a3ad-82617fddcef9",
+"34e4084d-37b3-48be-a3f8-421263907d4c",
+"1cb0a76f-d7fb-4fed-ae13-8abaa32cad05",
+"7981bf3e-7485-4920-a835-e4f05f4e8276"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5960,7 +5965,10 @@
 "533170|Sep-26|consolidated",
 "544687|Sep-26|na",
 "539359|Sep-26|na",
-"543613|Sep-26|standalone"
+"543613|Sep-26|standalone",
+"504084|Sep-26|na",
+"522273|Sep-26|standalone",
+"532334|Sep-26|consolidated"
 ],
 "pending": {
 "6d16176a-38fd-4938-ac1c-5169a7a80e53": {
@@ -6038,44 +6046,6 @@
 "first": 1793863640.0049584,
 "last": 1793866872.568056,
 "alerted": false
-},
-"2bf4a04e-d382-49ba-bc7d-daa5a729aa7d": {
-"rec": {
-"NEWSID": "2bf4a04e-d382-49ba-bc7d-daa5a729aa7d",
-"SCRIP_CD": 504084,
-"XML_NAME": "ANN_504084_2BF4A04E-D382-49BA-BC7D-DAA5A729AA7D",
-"NEWSSUB": "Kaycee Industries Ltd - 504084 - Quarterly And Half Yearly Results For The Period Ended On September 30, 2026",
-"DT_TM": "2026-11-05T13:03:27.053",
-"NEWS_DT": "2026-11-05T13:03:27.053",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "55f31112-8226-47d8-a9bd-3c0e094e4508.pdf",
-"MORE": "",
-"HEADLINE": "Quarterly and Half yearly results for the period ended on September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/kaycee-industries-ltd/kayceei/504084/",
-"SLONGNAME": "Kaycee Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 10,
-"News_submission_dt": "2026-11-05T13:03:27",
-"DissemDT": "2026-11-05T13:03:27.057",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 8688304,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793864222.297965,
-"last": 1793866872.568056,
-"alerted": true
 },
 "3252f766-b974-45c7-8849-b35a79e2befe": {
 "rec": {
@@ -6877,10 +6847,6 @@
 }
 },
 "lag": [
-[
-"Stanrose Mafatlal Investments & Finance Ltd",
-29
-],
 [
 "Poojawestern Metaliks Ltd",
 9
@@ -8076,6 +8042,10 @@
 [
 "Pritika Auto Industries Ltd",
 46
+],
+[
+"Kaycee Industries Ltd",
+72
 ]
 ],
 "gem_use": {
@@ -8103,7 +8073,7 @@
 "2026-11-02": 450,
 "2026-11-03": 879,
 "2026-11-04": 948,
-"2026-11-05": 48
+"2026-11-05": 51
 },
 "pdfposted": {
 "526650|Sep-26|standalone": {
@@ -8904,6 +8874,26 @@
 "rev": 235.32399999999998,
 "pat": 34.142,
 "t": 1793869744.388816,
+"last": 0
+},
+"522273|Sep-26|standalone": {
+"code": "522273",
+"name": "Ahmedabad Steelcraft Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 630.4390000000001,
+"pat": 33.31,
+"t": 1793870078.0507634,
+"last": 0
+},
+"532334|Sep-26|consolidated": {
+"code": "532334",
+"name": "HB Estate Developers Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 302.141,
+"pat": 25.019000000000002,
+"t": 1793870141.8316262,
 "last": 0
 }
 },
@@ -10667,7 +10657,9 @@
 "a3e5b4ab-54f5-4366-a781-f4b675b3b0b2": 1,
 "48d9de3f-9634-407f-a8e4-0c62dbc59768": 1,
 "dacf8702-e3ea-4a2a-8c64-4cd68304cf90": 1,
-"2aa6c15b-43e1-4b07-8c18-e41634d3ba71": 1
+"2aa6c15b-43e1-4b07-8c18-e41634d3ba71": 1,
+"8eefced3-404d-4fb0-a3ad-82617fddcef9": 1,
+"34e4084d-37b3-48be-a3f8-421263907d4c": 1
 },
 "cons_expected": {
 "be8f0927-342a-4b89-821a-9dd8d83f8ea1": 1,
@@ -11227,7 +11219,8 @@
 "c0fab628-a224-47d2-a984-ceca75d83093": 1,
 "aa39ae57-fa4c-486a-aed6-8a6e4842f2d1": 1,
 "49d5a4de-3b28-4750-a221-e5736e7423ad": 1,
-"bcde7cbc-9a4d-4bf0-9861-ed4d4e985e62": 1
+"bcde7cbc-9a4d-4bf0-9861-ed4d4e985e62": 1,
+"7981bf3e-7485-4920-a835-e4f05f4e8276": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12374,9 +12367,9 @@
 },
 "2026-11-05": {
 "main": {
-"ok": 139,
+"ok": 157,
 "429": 3,
-"other": 185
+"other": 204
 },
 "results-key": {
 "ok": 5,
