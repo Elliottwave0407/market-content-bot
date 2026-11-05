@@ -144,6 +144,8 @@ def main():
                         t_ = d_[i].get_text(); n_ = len(re.findall(r"(?i)total income|revenue from operations|profit before tax|net profit", t_))
                         if n_ > bn: best, bn = t_, n_
                     p(f"   headline: {headline.strip()[:150]!r} | best page hits={bn} | text: {re.sub(r'\\s+', ' ', best)[:420]!r}")
+                    if os.environ.get('DUMP') == '1':
+                        p('   PAGE DUMP: ' + best[:2600].replace(chr(10), ' / '))
                 except Exception as ex:
                     p("   page peek failed", repr(ex)[:60])
             p(f"{c} {name[:28]} | {pages}p {kind} | {'READ via ' + via if via else 'NOT READ'} | " + ("; ".join(why)[:900] if not via else summ(res)[:120]))

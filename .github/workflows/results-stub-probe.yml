@@ -38,5 +38,6 @@ jobs:
           N: ${{ github.event.inputs.n || '60' }}
           ONLY: ${{ github.event.inputs.only }}
           NIM: ${{ github.event.inputs.nim || '1' }}
+          DUMP: "1"
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: python scripts/stub_diag.py
