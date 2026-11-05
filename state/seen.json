@@ -3900,7 +3900,9 @@
 "fb05f819-f539-4dbb-9b9d-f0c3be88fb26",
 "88fee1f0-e5f9-4392-bdb7-54615620fa68",
 "5192a359-c578-4e81-b5bf-6f3fc3d541a9",
-"a15c0f32-122d-40df-a935-e04da1a43a74"
+"a15c0f32-122d-40df-a935-e04da1a43a74",
+"408920ca-9d0f-43fb-aa85-ad0fea7b9ab5",
+"66dff14c-d147-4b97-b2cb-140f85fe187d"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6364,7 +6366,9 @@
 "522005|Sep-26|consolidated",
 "526435|Sep-26|standalone",
 "507946|Sep-26|na",
-"524288|Sep-26|consolidated"
+"524288|Sep-26|consolidated",
+"524314|Sep-26|standalone",
+"530291|Sep-26|standalone"
 ],
 "pending": {
 "dc2610a8-8549-421c-9518-9e8364bc132d": {
@@ -6744,82 +6748,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793874871.3858047,
-"last": 1793878583.5408819,
-"alerted": false
-},
-"408920ca-9d0f-43fb-aa85-ad0fea7b9ab5": {
-"rec": {
-"NEWSID": "408920ca-9d0f-43fb-aa85-ad0fea7b9ab5",
-"SCRIP_CD": 524314,
-"XML_NAME": "ANN_524314_408920CA-9D0F-43FB-AA85-AD0FEA7B9AB5",
-"NEWSSUB": "Gujarat Terce Laboratories Ltd - 524314 - Unaudited Standalone Financial Results Of The Company For The Second Quarter And Half Year Ended 30 September 2026",
-"DT_TM": "2026-11-05T16:55:09.933",
-"NEWS_DT": "2026-11-05T16:55:09.933",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "05a5b7b0-7f7d-4589-936b-9a22739a8eef.pdf",
-"MORE": "",
-"HEADLINE": "Detailed disclosure is attached.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/gujarat-terce-laboratories-ltd/gujterc/524314/",
-"SLONGNAME": "Gujarat Terce Laboratories Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 34,
-"News_submission_dt": "2026-11-05T16:55:09",
-"DissemDT": "2026-11-05T16:55:09.933",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5786465,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793878583.5408819,
-"last": 1793878583.5408819,
-"alerted": false
-},
-"66dff14c-d147-4b97-b2cb-140f85fe187d": {
-"rec": {
-"NEWSID": "66dff14c-d147-4b97-b2cb-140f85fe187d",
-"SCRIP_CD": 530291,
-"XML_NAME": "ANN_530291_66DFF14C-D147-4B97-B2CB-140F85FE187D",
-"NEWSSUB": "Paos Industries Ltd - 530291 - Financial Results For Quarter Ended And Half Year Ended 30.09.2026.",
-"DT_TM": "2026-11-05T16:46:01.627",
-"NEWS_DT": "2026-11-05T16:46:01.627",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "11bff2ae-84a1-4c57-b08f-a7b1fab35fc4.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for quarter and half year ended 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/paos-industries-ltd/paos/530291/",
-"SLONGNAME": "Paos Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 34,
-"News_submission_dt": "2026-11-05T16:46:01",
-"DissemDT": "2026-11-05T16:46:01.627",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6288243,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793878583.5408819,
 "last": 1793878583.5408819,
 "alerted": false
 },
@@ -8270,14 +8198,6 @@
 },
 "lag": [
 [
-"Astron Multigrain Ltd",
-51
-],
-[
-"Biocon Ltd",
-41
-],
-[
 "Redington Ltd",
 21
 ],
@@ -9468,6 +9388,14 @@
 [
 "Aimco Pesticides Ltd",
 289
+],
+[
+"Gujarat Terce Laboratories Ltd",
+289
+],
+[
+"Paos Industries Ltd",
+289
 ]
 ],
 "gem_use": {
@@ -9495,7 +9423,7 @@
 "2026-11-02": 450,
 "2026-11-03": 879,
 "2026-11-04": 948,
-"2026-11-05": 201
+"2026-11-05": 202
 },
 "pdfposted": {
 "543669|Sep-26|standalone": {
@@ -14025,9 +13953,9 @@
 "other": 396
 },
 "vision-key": {
-"ok": 71,
+"ok": 73,
 "429": 3,
-"other": 356
+"other": 364
 }
 }
 }
