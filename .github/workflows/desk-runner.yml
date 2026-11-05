@@ -1,0 +1,62 @@
+name: Desk runner (free minutes)
+
+# Runs the PRIVATE kite-options-bot desk jobs from this PUBLIC repo, whose Actions minutes are free.
+# Code and data stay in the private repo (checked out with DESK_REPO_TOKEN; results are pushed to its private desk-data branch).
+# This repo's logs are public: the job log is written to a file and only a short status is printed.
+on:
+  workflow_dispatch:
+    inputs:
+      request_token:
+        description: "Kite request_token (or full redirected URL)"
+        required: true
+      mode:
+        description: "daily | minute | index | index_minute"
+        default: "index_minute"
+      hours:
+        description: "Time budget in hours (max 5.5)"
+        default: "5.3"
+      gap:
+        description: "Seconds between historical requests"
+        default: "0.36"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desk-runner-${{ inputs.mode }}
+  cancel-in-progress: false
+
+jobs:
+  desk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Mask the login token
+        run: echo "::add-mask::${{ inputs.request_token }}"
+      - uses: actions/checkout@v4
+        with:
+          repository: Elliottwave0407/kite-options-bot
+          token: ${{ secrets.DESK_REPO_TOKEN }}
+          fetch-depth: 1
+          path: kite-options-bot
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install kiteconnect
+      - name: Desk data job (quiet log)
+        working-directory: kite-options-bot
+        env:
+          KITE_API_KEY: ${{ secrets.KITE_API_KEY }}
+          KITE_API_SECRET: ${{ secrets.KITE_API_SECRET }}
+          REQUEST_TOKEN: ${{ inputs.request_token }}
+          HOURS: ${{ inputs.hours }}
+          DESK_MODE: ${{ inputs.mode }}
+          DESK_MIN_GAP: ${{ inputs.gap }}
+        run: |
+          export DESK_BUDGET_S=$(python3 -c "import os;print(int(float(os.environ['HOURS'])*3600))")
+          set +e
+          python -u -m desk.login_run "$REQUEST_TOKEN" > /tmp/desk.log 2>&1
+          rc=$?
+          echo "exit code: $rc, log lines: $(wc -l < /tmp/desk.log)"
+          grep -E "^(summary|done|saved|minute_done|index|ok|failed)" /tmp/desk.log | tail -5 | cut -c1-120
+          exit $rc
