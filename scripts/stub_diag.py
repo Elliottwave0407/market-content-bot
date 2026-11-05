@@ -74,7 +74,14 @@ def main():
     cnt = Counter()
     with BSE(download_folder="/tmp") as b:
         rpl.DAYS_BACK = DAYS
-        rows = rpl.fetch_filings(b)
+        rows = None
+        for _a in range(5):
+            try:
+                rows = rpl.fetch_filings(b); break
+            except Exception as ex:
+                p("fetch_filings retry", _a + 1, repr(ex)[:60]); time.sleep(8)
+        if rows is None:
+            raise SystemExit("BSE list unreachable")
         seen = {}
         for r in rows:
             c = str(r.get("SCRIP_CD")).strip()
@@ -148,6 +155,35 @@ def main():
                         p('   PAGE DUMP: ' + best[:2600].replace(chr(10), ' / '))
                 except Exception as ex:
                     p("   page peek failed", repr(ex)[:60])
+
+            if via is None and os.environ.get("GEM") == "1":
+                import gemini_read as gr
+                for lab, envn in (("main", "GEMINI_API_KEY"), ("overflow", "GEMINI_API_KEY_OVERFLOW"), ("results", "GEMINI_API_KEY_RESULTS")):
+                    k_ = os.environ.get(envn, "").strip()
+                    if not k_:
+                        p(f"   gemini {lab}: no key"); continue
+                    try:
+                        o, e = gr.read_pdf(k_, pc.MODEL, small, tries=1, timeout=90)
+                    except Exception as ex:
+                        o, e = None, "exc " + repr(ex)[:150]
+                    p(f"   gemini {lab} ({pc.MODEL}): {'ANSWER ' + str(o)[:200] if o else 'ERR ' + str(e)[:300]}")
+                    if o: break
+            if via is None and os.environ.get("MISTRAL_OCR") == "1":
+                try:
+                    import base64
+                    mk = os.environ.get("MISTRAL_API_KEY", "").strip()
+                    rq = requests.post("https://api.mistral.ai/v1/ocr", headers={"Authorization": "Bearer " + mk, "Content-Type": "application/json"},
+                        json={"model": "mistral-ocr-latest", "document": {"type": "document_url", "document_url": "data:application/pdf;base64," + base64.b64encode(small).decode()}}, timeout=120)
+                    if rq.status_code != 200:
+                        p(f"   mistral-ocr HTTP {rq.status_code}: {rq.text[:200]}")
+                    else:
+                        md = "\n".join(pg.get("markdown", "") for pg in rq.json().get("pages", []))
+                        hit = [kw for kw in ("revenue from operations", "total income", "profit before tax", "total expenses") if kw in md.lower()]
+                        p(f"   mistral-ocr ok: {len(md)} chars, keywords {hit}")
+                        i_ = md.lower().find("total income")
+                        p("   mistral-ocr sample: " + md[max(0, i_ - 500): i_ + 500].replace(chr(10), " / "))
+                except Exception as ex:
+                    p("   mistral-ocr exc", repr(ex)[:150])
             p(f"{c} {name[:28]} | {pages}p {kind} | {'READ via ' + via if via else 'NOT READ'} | " + ("; ".join(why)[:900] if not via else summ(res)[:120]))
     p("SUMMARY", dict(cnt))
 
