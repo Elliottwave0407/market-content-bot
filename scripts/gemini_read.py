@@ -66,7 +66,10 @@ def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None
         for m in models:
             if qd.get(m, 0) > time.time():
                 last = last or f"HTTP 429 (skipped {m}, quota)"; continue
-            r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
+            try:
+                r = requests.post(f"{BASE}/models/{m}:generateContent", headers={"x-goog-api-key": key}, json=body, timeout=timeout)
+            except requests.RequestException as ex_:      # 5 Nov: a read timeout used to abort the whole chain (other models and keys never tried); now it counts as a busy answer and the next model is tried
+                last = f"timeout on {m} ({type(ex_).__name__})"; continue
             _u = USAGE.setdefault(label, {"ok": 0, "429": 0, "other": 0})
             _u["ok" if r.status_code == 200 else "429" if r.status_code == 429 else "other"] += 1
             if r.status_code == 429:
@@ -97,8 +100,8 @@ def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
     and only if that is out too, once on the overflow key (GEMINI_API_KEY_OVERFLOW = the concall judge's project, last resort so the judge keeps its quota).
     Unset keys are skipped; without either this behaves exactly as before."""
     out, err = _read_core(key, model, pdf_bytes, tries, timeout, prompt)
-    if out is not None or not (err and "429" in err):
-        return out, err
+    if out is not None or not (err and any(t in err for t in ("429", "HTTP 5", "timeout"))):
+        return out, err      # a quota, busy (5xx) or timeout answer moves on to the next key; real errors stop here
     chain = []
     rk = os.environ.get("GEMINI_API_KEY_RESULTS", "").strip()
     ov = os.environ.get("GEMINI_API_KEY_OVERFLOW", "").strip()
@@ -109,6 +112,6 @@ def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
         if o2 is not None:
             return o2, None
         err = (err + f" | {lab}: " + str(e2))[:360]
-        if "429" not in str(e2):
+        if not any(t in str(e2) for t in ("429", "HTTP 5", "timeout")):
             break
     return None, err

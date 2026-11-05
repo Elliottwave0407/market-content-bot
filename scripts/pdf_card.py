@@ -280,7 +280,7 @@ def _read_stage(rec, st, headline, filed):
         err = f"{err}; {err2}"
     if out is None:
         if err and ("429" in err or "503" in err):
-            STATE_["backoff"] = time.time() + 120
+            STATE_["backoff"] = time.time() + (120 if "429" in err else 20)      # 5 Nov: a 503 (busy) used to freeze every Gemini read for 2 minutes; models and keys are already tried in turn inside gemini_read
             TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)    # a quota / busy answer is not the filing's fault: do not use up its tries (23 Oct: 20+ filings gave up during a quota outage)
         LOG.append(f"pdf read failed {rec.get('SLONGNAME')}: {str(err)[:420]}")
         return None
