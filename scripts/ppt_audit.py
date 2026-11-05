@@ -9,7 +9,7 @@ from ci_out import p, publish
 import requests
 import store
 
-GK = os.environ.get("GEMINI_API_KEY_CONCALL", "").strip()
+GK = (os.environ.get("GEMINI_API_KEY_VISION", "") or os.environ.get("GEMINI_API_KEY_CONCALL", "")).strip()      # own project key first, so this audit never takes the concall judge's quota
 DOCS = int(os.environ.get("DOCS") or "25"); PER = int(os.environ.get("PER_DOC") or "6"); BUDGET = float(os.environ.get("BUDGET_MIN") or "40"); T0 = time.time()
 OUT = os.path.join(store.ROOT, "ppt_audit"); os.makedirs(OUT, exist_ok=True)
 NUM = re.compile(r"\d[\d,]*\.?\d*")

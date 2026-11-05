@@ -7,7 +7,7 @@ on:
         default: "10"
       key_env:
         description: "secret lane: GEMINI_API_KEY_CONCALL or GEMINI_API_KEY_RESULTS"
-        default: "GEMINI_API_KEY_CONCALL"
+        default: "GEMINI_API_KEY_VISION"
 permissions:
   contents: write
 concurrency:
@@ -27,8 +27,9 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          GEMINI_API_KEY_VISION: ${{ secrets.GEMINI_API_KEY_VISION }}
           GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_IMAGE_SCANNED_RESULTS }}
-          KEY_ENV: ${{ github.event.inputs.key_env || 'GEMINI_API_KEY_CONCALL' }}
+          KEY_ENV: ${{ github.event.inputs.key_env || 'GEMINI_API_KEY_VISION' }}
           N: ${{ github.event.inputs.n || '10' }}
         run: python scripts/ppt_vision.py
       - name: Save

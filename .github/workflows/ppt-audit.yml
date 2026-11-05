@@ -26,6 +26,7 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           GEMINI_API_KEY_CONCALL: ${{ secrets.GEMINI_API_KEY_CONCALL }}
+          GEMINI_API_KEY_VISION: ${{ secrets.GEMINI_API_KEY_VISION }}
           DOCS: ${{ github.event.inputs.docs || '25' }}
         run: python scripts/ppt_audit.py
       - name: Save audit
