@@ -3624,7 +3624,8 @@
 "7871e670-075b-4778-b4f5-c90eed80215c",
 "62ef294f-8f36-4d30-9381-aaaac345b901",
 "a95851b0-24a9-4188-b1e6-3bf5ab772e38",
-"ac7d7e50-381f-4029-9a9f-5a2bbd45a554"
+"ac7d7e50-381f-4029-9a9f-5a2bbd45a554",
+"1110426b-7529-49f0-b117-ddcf1a6ba010"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5836,7 +5837,8 @@
 "539730|Sep-26|na",
 "544999|Sep-26|na",
 "503162|Sep-26|standalone",
-"533520|Sep-26|consolidated"
+"533520|Sep-26|consolidated",
+"530845|Sep-26|standalone"
 ],
 "pending": {
 "c10e3e25-5890-40c9-a147-6ce9d0badbee": {
@@ -5991,44 +5993,6 @@
 "last": 1793862501.5469944,
 "alerted": false
 },
-"1110426b-7529-49f0-b117-ddcf1a6ba010": {
-"rec": {
-"NEWSID": "1110426b-7529-49f0-b117-ddcf1a6ba010",
-"SCRIP_CD": 530845,
-"XML_NAME": "ANN_530845_1110426B-7529-49F0-B117-DDCF1A6BA010",
-"NEWSSUB": "Sunshield Chemicals Ltd - 530845 - Results- Financial Results -30.09.2026",
-"DT_TM": "2026-11-05T12:21:43.733",
-"NEWS_DT": "2026-11-05T12:21:43.733",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "ae68e260-256a-4086-92d8-c559943a990c.pdf",
-"MORE": "",
-"HEADLINE": "Results attached.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sunshield-chemicals-ltd/sunshiel/530845/",
-"SLONGNAME": "Sunshield Chemicals Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 7,
-"News_submission_dt": "2026-11-05T12:21:43",
-"DissemDT": "2026-11-05T12:21:43.733",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 610054,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793861560.8120327,
-"last": 1793862076.6993947,
-"alerted": false
-},
 "fd835c5f-50f3-43aa-a085-7a70333ab78d": {
 "rec": {
 "NEWSID": "fd835c5f-50f3-43aa-a085-7a70333ab78d",
@@ -6089,7 +6053,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/hi-tech-pipes-ltd/hitech/543411/",
 "SLONGNAME": "Hi-Tech Pipes Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 7,
+"TotalPageCnt": 8,
 "News_submission_dt": "2026-11-05T12:27:43",
 "DissemDT": "2026-11-05T12:27:43.193",
 "TimeDiff": "00:00:00",
@@ -6102,7 +6066,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793861917.281209,
-"last": 1793862076.6993947,
+"last": 1793862501.5469944,
 "alerted": false
 },
 "b1dfe2e7-22eb-420d-bea6-8cc870e95e64": {
@@ -6183,10 +6147,6 @@
 }
 },
 "lag": [
-[
-"Libord Securities Ltd",
-11
-],
 [
 "Camlin Fine Sciences Ltd",
 47
@@ -7382,6 +7342,10 @@
 [
 "Reliance Chemotex Industries Ltd-$",
 6
+],
+[
+"Sunshield Chemicals Ltd",
+16
 ]
 ],
 "gem_use": {
@@ -7408,7 +7372,7 @@
 "2026-11-01": 73,
 "2026-11-02": 450,
 "2026-11-03": 879,
-"2026-11-04": 913
+"2026-11-04": 915
 },
 "pdfposted": {
 "523248|Sep-26|consolidated": {
@@ -8089,6 +8053,16 @@
 "rev": 3318.3999999999996,
 "pat": 1511.2,
 "t": 1793862531.1688893,
+"last": 0
+},
+"530845|Sep-26|standalone": {
+"code": "530845",
+"name": "Sunshield Chemicals Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1612.9,
+"pat": 56.400000000000006,
+"t": 1793862555.481642,
 "last": 0
 }
 },
@@ -9837,7 +9811,8 @@
 "10bd8128-c514-476c-a377-0f2eb6a726de": 1,
 "83d685a4-4ec6-4ff7-88a0-a7fc505c0ab3": 1,
 "a8673e7f-ad2a-4bf3-af1f-c513d82f1371": 1,
-"62ef294f-8f36-4d30-9381-aaaac345b901": 1
+"62ef294f-8f36-4d30-9381-aaaac345b901": 1,
+"1110426b-7529-49f0-b117-ddcf1a6ba010": 1
 },
 "cons_expected": {
 "be8f0927-342a-4b89-821a-9dd8d83f8ea1": 1,
@@ -10376,7 +10351,8 @@
 "644d18ab-7729-4d31-898f-ffe564b65ec1": 1,
 "22cea704-39a5-44f6-9476-f78ac9fefdfa": 1,
 "ee00f08b-23aa-41de-b9aa-a408d88de5fb": 1,
-"ac7d7e50-381f-4029-9a9f-5a2bbd45a554": 1
+"ac7d7e50-381f-4029-9a9f-5a2bbd45a554": 1,
+"6dc51ba9-3d8b-40e6-bccd-9e63860efaa0": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -11510,8 +11486,8 @@
 },
 "concall-key": {
 "ok": 473,
-"429": 21,
-"other": 68
+"429": 23,
+"other": 70
 }
 }
 }
