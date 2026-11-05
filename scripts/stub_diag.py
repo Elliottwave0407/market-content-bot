@@ -81,7 +81,8 @@ def main():
             except Exception as ex:
                 p("fetch_filings retry", _a + 1, repr(ex)[:60]); time.sleep(8)
         if rows is None:
-            raise SystemExit("BSE list unreachable")
+            p("BSE list unreachable: using filings still pending in state/seen.json")
+            rows = [v["rec"] for v in json.load(open("state/seen.json")).get("pending", {}).values()]
         seen = {}
         for r in rows:
             c = str(r.get("SCRIP_CD")).strip()
