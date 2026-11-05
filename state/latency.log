@@ -1918,3 +1918,7 @@
 05 05:10:16 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['revenue'] - not posting from PDF
 05 05:11:03 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, depreciation=0.0, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
 05 05:11:03 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
+05 05:11:40 seen 544679 Amagi Media Labs Ltd cat=Board Meeting early=True bse_time=10:40:46 dissem=10:40:46
+05 05:12:04 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+05 05:12:04 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
+05 05:12:38 ready 503689|Sep-26|standalone kind=photo waited_min=0.0 tries=6 pdf_log=pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=0.0, dep
