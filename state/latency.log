@@ -1965,3 +1965,6 @@
 05 05:41:18 pdf pdf read failed Amagi Media Labs Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim deep
 05 05:43:23 seen 524669 Hester Biosciences Ltd cat=Board Meeting early=True bse_time=11:12:42 dissem=11:12:42
 05 05:44:24 ready 503689|Sep-26|na kind=photo waited_min=45.0 tries=8 pdf_log=pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, de
+05 05:44:55 pdf pdf current col Hester Biosciences Ltd consolidated ok=False/3: revenue=97912, other_income=1532, total_income=99444, total_expenses=75313, finance_costs=2985, depreciation=7077, pbt=26454, tax=5823, pat=20631, eps=23.94
+05 05:44:55 pdf pdf history mismatch Hester Biosciences Ltd consolidated cols=['30 September 2026', '30 June 2026', '30 September 2025'] :: q-1: pdf rev 77244.0 pat 96732.0 | bse rev 772.44 pat 967.32 (Rs mn); q-4: pdf rev 70969.0 pat 14331.0 | b
+05 05:44:55 pdf pdf has consolidated but it failed checks: not falling back to standalone Hester Biosciences Ltd
