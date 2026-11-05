@@ -1778,3 +1778,6 @@
 05 18:46:27 ready 517399|Sep-26|standalone kind=photo waited_min=45.0 tries=1 pdf_log=pdf current col VXL Instruments Ltd standalone ok=True/2: revenue=0.0, other_income=5.42, total_income=5.42, total_expenses=6.54, finance_costs=0.18, depreciati
 05 18:47:00 ready 532164|Sep-26|na kind=photo waited_min=48.3 tries=8 pdf_log=
 05 18:48:03 pdf rule reader Powerica Ltd: rule: stan: does not reconcile [crore] pbt=[88.83, 79.03, 53.19] tax=[24.74, 15.39, 23.32] pat=[64.49, 59.95, 36.31] depreciation=[39.58, 38.09, 27.1] finance_costs=[0.77, 1.57, 5.8] | ocr: rule: unit not
+05 18:49:49 pdf nim reader Powerica Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 42
+05 18:49:49 pdf pdf read failed Powerica Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 429
+05 18:51:49 pdf rule reader Powerica Ltd: rule: stan: does not reconcile [crore] pbt=[88.83, 79.03, 53.19] tax=[24.74, 15.39, 23.32] pat=[64.49, 59.95, 36.31] depreciation=[39.58, 38.09, 27.1] finance_costs=[0.77, 1.57, 5.8] | ocr: rule: unit not
