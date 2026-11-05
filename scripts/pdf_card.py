@@ -145,6 +145,7 @@ def trim_pdf(content):
     except Exception:
         return content
 
+GEM_CALLS = {}      # attachment name -> Gemini reads that returned a real answer (cap GEM_MAX_PER_FILING)
 RULE_BAD = set()      # filings whose rule-read numbers failed a later check: read by Gemini / NVIDIA instead
 EARLY_DEAD = set()      # early 'Board Meeting' rows whose PDF has no results table (nothing to read)
 PREREAD = {}      # nid -> result of the download+Gemini stage, prepared in parallel threads by prefetch()
@@ -191,6 +192,8 @@ def _read_stage(rec, st, headline, filed):
     gem_blocked = (not key) or time.time() < STATE_["backoff"] or use.get(day, 0) >= _cap or os.environ.get("NIM_ONLY") == "1"
     if not gem_blocked and use.get(day, 0) >= 0.8 * _cap and mcap_of(rec.get("SCRIP_CD")) < 300:
         gem_blocked = True      # the last fifth of the daily Gemini allowance is kept for companies that matter; micro-caps use the rule / NVIDIA readers or wait
+    if not gem_blocked and GEM_CALLS.get(att, 0) >= int(os.environ.get("GEM_MAX_PER_FILING", "2")):
+        gem_blocked = True      # 5 Nov: 76% of Gemini reads were repeats of the same PDF (temperature 0 gives the same answer, 17 filings used all 8 tries); after 2 real answers the filing goes to NVIDIA / the exchange's structured numbers instead
     # Retry gap: a fresh filing's PDF is often not downloadable for the first minute or two, and one failed read used to cost a flat 4 minutes (13 min delays on 2 Nov: Capillary, Mobikwik).
     # Now: 20 s for the first retries, 60 s for the next, 240 s only after that. Same checks as before, so accuracy is unchanged.
     _t = TRIES.get(nid, 0)
@@ -242,6 +245,8 @@ def _read_stage(rec, st, headline, filed):
     if not gem_blocked:
         use[day] = use.get(day, 0) + 1
         out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
+        if not (err and ("429" in err or "503" in err or "500" in err)):
+            GEM_CALLS[att] = GEM_CALLS.get(att, 0) + 1      # only a real answer counts; quota / busy answers are not the filing's fault
         if out is None and small is not content and not (err and "429" in err):
             out, err = gr.read_pdf(key, MODEL, content, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)     # trimmed read failed: try the whole file
     if not gem_blocked:
