@@ -157,6 +157,22 @@ def main():
                 except Exception as ex:
                     p("   page peek failed", repr(ex)[:60])
 
+            if via is None and os.environ.get("GROQ") == "1" and kind == "text":
+                import groq_read as gq
+                try:
+                    o, e = gq.read_pdf(small)
+                except Exception as ex:
+                    o, e = None, repr(ex)[:80]
+                if o is None:
+                    why.append(f"groq: {str(e)[:200]}")
+                else:
+                    af = None
+                    try: af = pc.arith_fail(o)
+                    except Exception as ex: af = "arith check error " + repr(ex)[:40]
+                    if af:
+                        why.append(f"groq read but arithmetic fails: {str(af)[:120]}")
+                    else:
+                        res, via = o, "groq(arith ok, numbers in text)"
             if via is None and os.environ.get("GEM") == "1":
                 import gemini_read as gr
                 for lab, envn in (("main", "GEMINI_API_KEY"), ("overflow", "GEMINI_API_KEY_OVERFLOW"), ("results", "GEMINI_API_KEY_RESULTS")):

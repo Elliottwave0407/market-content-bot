@@ -40,7 +40,9 @@ jobs:
           NIM: ${{ github.event.inputs.nim || '1' }}
           DUMP: "1"
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-          GEM: "1"
+          GEM: "0"
+          GROQ: "1"
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_OCR: "1"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}
