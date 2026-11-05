@@ -40,6 +40,7 @@ jobs:
           POLL_RETRY_SEC: "40"      # pending results are re-checked (NSE and BSE) every 40 s instead of 90 s
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_OVERFLOW: ${{ secrets.GEMINI_API_KEY_CONCALL }}   # used ONLY when every model on the main key is out of quota
+          GEMINI_API_KEY_VISION: ${{ secrets.GEMINI_API_KEY_VISION }}   # last-resort overflow for result cards
           GEMINI_API_KEY_RESULTS: ${{ secrets.GEMINI_API_IMAGE_SCANNED_RESULTS }}   # optional third key (own Google project) used only after the other two are out of quota
           TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}   # optional second audience: full cards only, Filing button only
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}

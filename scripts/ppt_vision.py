@@ -9,12 +9,21 @@ from ci_out import p, publish
 import requests, store
 
 N = int(os.environ.get("N") or "10"); MAXP = int(os.environ.get("MAX_PAGES") or "8"); BUDGET = float(os.environ.get("BUDGET_MIN") or "25")
-KEY = os.environ.get(os.environ.get("KEY_ENV") or "GEMINI_API_KEY_CONCALL", "").strip()
+import season
+def _keys():
+    """Peak results season: only the dedicated vision key. Quiet season: every key may share the work (round robin), so the free quota is not wasted."""
+    names = ["GEMINI_API_KEY_VISION"] if season.is_peak() else ["GEMINI_API_KEY_VISION", "GEMINI_API_KEY_RESULTS", "GEMINI_API_KEY_CONCALL", "GEMINI_API_KEY_MAIN"]
+    ks = []
+    for n in names:
+        v = os.environ.get(n, "").strip()
+        if v and v not in ks: ks.append(v)
+    return ks
+KEYS = _keys(); KEY = KEYS[0] if KEYS else ""; _ROT = [0]
 MODELS = [m for m in (os.environ.get("VISION_MODELS") or "gemini-flash-lite-latest,gemini-flash-latest").split(",") if m]
 DAY_FROM = os.environ.get("DAY_FROM") or "2026-10-01"
 OUT = os.path.join(store.ROOT, "ppt_vision"); os.makedirs(OUT, exist_ok=True)
 T0 = time.time()
-UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/pdf,*/*"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36", "Accept": "application/pdf,*/*", "Referer": "https://www.nseindia.com/"}
 PROMPT = """These are slides (charts, tables, images) from an Indian listed company's investor presentation. Extract concrete numbers the COMPANY shows that are drawn in charts or images: revenue, EBITDA, margins, PAT, order book, capacity, KPIs, guidance, segment splits.
 Return ONLY JSON: {"items":[{"slide":<page number in THIS file starting at 1>,"cat":"results|segment|guidance|order_book|capex|capacity|kpi|balance_sheet|other","statement":"short plain summary (max 25 words)","period":"e.g. Q2 FY27, FY26, or null if not shown","value":"number exactly as shown, with unit as shown, or null","what_you_see":"the label or title next to the number as printed"}]}
 Rules: only numbers you can actually read on the slide; if a value is unclear, leave it out; never calculate or estimate; state the period only if the slide shows it; up to 20 items."""
@@ -23,18 +32,22 @@ def call(pdf):
     body = {"contents": [{"parts": [{"inline_data": {"mime_type": "application/pdf", "data": base64.b64encode(pdf).decode()}}, {"text": PROMPT}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0, "maxOutputTokens": 5000}}
     last = None
-    for m in MODELS:
-        try:
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent", headers={"x-goog-api-key": KEY}, json=body, timeout=120)
-        except Exception as e:
+    for attempt in range(3):
+      for kk in KEYS:
+        _ROT[0] += 1
+        for m in (MODELS[_ROT[0] % len(MODELS):] + MODELS[:_ROT[0] % len(MODELS)]):
+          try:
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent", headers={"x-goog-api-key": kk}, json=body, timeout=120)
+          except Exception as e:
             last = f"timeout {m}"; continue
-        if r.status_code != 200:
+          if r.status_code != 200:
             last = f"HTTP {r.status_code} {m}"; continue
-        try:
+          try:
             mm = re.search(r"\{.*\}", r.json()["candidates"][0]["content"]["parts"][0].get("text", ""), re.S)
             return json.loads(mm.group(0)).get("items") or [], m, None
-        except Exception as e:
+          except Exception as e:
             last = "parse " + repr(e)[:50]
+      time.sleep(20 * (attempt + 1))
     return None, None, last
 
 def main():

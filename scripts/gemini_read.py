@@ -62,6 +62,8 @@ def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
     last = None
     models = [model] + [m for m in FALLBACK if m != model]
+    if os.environ.get("GEMINI_ROTATE", "1") == "1" and len(models) > 1:      # 5 Nov: spread calls over the models (free quota is per model) so a busy first model does not take every call
+        ROT[0] += 1; k = ROT[0] % min(len(models), 2); models = models[k:] + models[:k]
     for i in range(tries):
         for m in models:
             if qd.get(m, 0) > time.time():
@@ -92,7 +94,9 @@ def _read_core(key, model, pdf_bytes, tries=4, timeout=180, prompt=None, qd=None
     return None, last
 
 
+ROT = [0]
 QUOTA_OV2 = {}
+QUOTA_OV3 = {}
 QUOTA_OV = {}      # quota memory for the overflow key (kept apart from the main key's)
 
 def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
@@ -107,6 +111,8 @@ def read_pdf(key, model, pdf_bytes, tries=4, timeout=180, prompt=None):
     ov = os.environ.get("GEMINI_API_KEY_OVERFLOW", "").strip()
     if rk and rk != key: chain.append((rk, QUOTA_OV2, "results-key"))
     if ov and ov not in (key, rk): chain.append((ov, QUOTA_OV, "concall-key"))
+    vk = os.environ.get("GEMINI_API_KEY_VISION", "").strip()
+    if vk and vk not in (key, rk, ov): chain.append((vk, QUOTA_OV3, "vision-key"))      # last resort for result cards; vision/audit jobs own this key outside the results peak
     for k2, qd2, lab in chain:
         o2, e2 = _read_core(k2, model, pdf_bytes, 1, timeout, prompt, qd=qd2, label=lab)
         if o2 is not None:
