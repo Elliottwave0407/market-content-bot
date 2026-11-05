@@ -3635,7 +3635,9 @@
 "21ac6c03-664a-4c7d-9f2f-fa9024e8ec3d",
 "2bb45240-9771-4bad-8bff-318367c85a8a",
 "6dbf583f-aa14-48fb-b595-3d44ae7e253a",
-"f78ef119-7d1c-4b8d-a2f9-f8111bba310b"
+"f78ef119-7d1c-4b8d-a2f9-f8111bba310b",
+"9db327ad-cdae-4388-9760-5960ec277033",
+"d8cbcceb-c13c-420b-8580-50bf86a07f02"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5855,7 +5857,8 @@
 "526775|Sep-26|consolidated",
 "507663|Sep-26|consolidated",
 "544009|Sep-26|standalone",
-"534598|Sep-26|na"
+"534598|Sep-26|na",
+"544129|Sep-26|consolidated"
 ],
 "pending": {
 "99af33f7-55ce-4aad-b5cd-8e6b82e64bb7": {
@@ -6159,45 +6162,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793863196.346116,
-"last": 1793863196.346116,
-"alerted": false
-},
-"d8cbcceb-c13c-420b-8580-50bf86a07f02": {
-"rec": {
-"NEWSID": "d8cbcceb-c13c-420b-8580-50bf86a07f02",
-"SCRIP_CD": 544129,
-"XML_NAME": "ANN_544129_D8CBCCEB-C13C-420B-8580-50BF86A07F02",
-"NEWSSUB": "Juniper Hotels Ltd - 544129 - Results - Financial Results For Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-05T12:42:51.92",
-"NEWS_DT": "2026-11-05T12:42:51.92",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "795f220c-7ed2-45a5-8587-89ff275b01ff.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed letter.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/juniper-hotels-ltd/juniper/544129/",
-"SLONGNAME": "Juniper Hotels Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-11-05T12:42:51",
-"DissemDT": "2026-11-05T12:42:51.92",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5977323,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793863196.346116,
-"last": 1793863196.346116,
+"last": 1793863640.0049584,
 "alerted": false
 },
 "188f18b3-bd72-435b-8369-0d33625b1bb4": {
@@ -6237,13 +6202,47 @@
 "first": 1793863196.346116,
 "last": 1793863196.346116,
 "alerted": false
+},
+"8c0e0a8e-cc54-4ce6-a5d3-b0c6be0338d6": {
+"rec": {
+"NEWSID": "8c0e0a8e-cc54-4ce6-a5d3-b0c6be0338d6",
+"SCRIP_CD": 543523,
+"XML_NAME": "ANN_543523_8C0E0A8E-CC54-4CE6-A5D3-B0C6BE0338D6",
+"NEWSSUB": "Campus Activewear Ltd - 543523 - Un-Audited Financial Results For The Quarter And Half Year Ended 30Th September 2026",
+"DT_TM": "2026-11-05T12:50:38.63",
+"NEWS_DT": "2026-11-05T12:50:38.63",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "d7da0864-7680-438c-8753-f5e5b713c279.pdf",
+"MORE": "",
+"HEADLINE": "Un-audited Financial Results for the quarter and half year ended 30th September 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/campus-activewear-ltd/campus/543523/",
+"SLONGNAME": "Campus Activewear Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 9,
+"News_submission_dt": "2026-11-05T12:50:38",
+"DissemDT": "2026-11-05T12:50:38.63",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1909819,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793863640.0049584,
+"last": 1793863640.0049584,
+"alerted": false
 }
 },
 "lag": [
-[
-"AVI Polymers Ltd",
-23
-],
 [
 "Shri Balaji Valve Components Ltd",
 46
@@ -7439,6 +7438,10 @@
 [
 "Sampann Utpadan India Ltd",
 50
+],
+[
+"Juniper Hotels Ltd",
+7
 ]
 ],
 "gem_use": {
@@ -8206,6 +8209,16 @@
 "rev": 3757.44,
 "pat": 1025.17,
 "t": 1793863219.1578476,
+"last": 0
+},
+"544129|Sep-26|consolidated": {
+"code": "544129",
+"name": "Juniper Hotels Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2495.31,
+"pat": 371.74800000000005,
+"t": 1793863689.5065885,
 "last": 0
 }
 },
@@ -9958,7 +9971,8 @@
 "1110426b-7529-49f0-b117-ddcf1a6ba010": 1,
 "d5679a10-70a6-4f3c-87a8-acad22b74ebb": 1,
 "21ac6c03-664a-4c7d-9f2f-fa9024e8ec3d": 1,
-"f78ef119-7d1c-4b8d-a2f9-f8111bba310b": 1
+"f78ef119-7d1c-4b8d-a2f9-f8111bba310b": 1,
+"9db327ad-cdae-4388-9760-5960ec277033": 1
 },
 "cons_expected": {
 "be8f0927-342a-4b89-821a-9dd8d83f8ea1": 1,
@@ -10502,7 +10516,8 @@
 "5a24062b-7b36-4871-b25c-3e1f5a478ce9": 1,
 "9cd42262-04c6-4fc4-9b8e-e3559dfb5b19": 1,
 "b1dfe2e7-22eb-420d-bea6-8cc870e95e64": 1,
-"2bb45240-9771-4bad-8bff-318367c85a8a": 1
+"2bb45240-9771-4bad-8bff-318367c85a8a": 1,
+"d8cbcceb-c13c-420b-8580-50bf86a07f02": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
