@@ -68,6 +68,8 @@ def summ(out):
 
 def main():
     stubs = stub_codes()
+    if ONLY:
+        stubs = {c: stubs.get(c, '') for c in ONLY}      # explicit list: look at exactly these scrip codes, stub or not
     p("stub filings without a full card:", len(stubs))
     cnt = Counter()
     with BSE(download_folder="/tmp") as b:
