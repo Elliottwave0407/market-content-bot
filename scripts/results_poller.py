@@ -461,7 +461,9 @@ def main(bse_in=None, known=None, fast=False):
                 pass
             first = pend.get(nid, {}).get("first", now)
             try:
-                out = build(bse, rec, final=(now - first) > WAIT_H * 3600, age_min=(10**6 if ONLY else (now - first) / 60))
+                _w = now - first
+                _read_done = pdf_card.GEM_CALLS.get(rec.get("ATTACHMENTNAME"), 0) >= 1 or pdf_card.TRIES.get(nid, 0) >= 8
+                out = build(bse, rec, final=(_w > WAIT_H * 3600 and (_read_done or _w > 3 * 3600)), age_min=(10**6 if ONLY else _w / 60))     # 5 Nov: a stub went out after 45 min even when no AI reader had answered yet; now it waits until a real read happened (or 3 h)
             except Exception as e:
                 p(f"ERROR {rec.get('SLONGNAME')}: {redact(repr(e))[:200]}")
                 continue
