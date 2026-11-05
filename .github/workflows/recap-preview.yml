@@ -25,7 +25,7 @@ jobs:
       - env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_VISION }}   # 5 Nov: own project, keeps the result-card keys free
         run: python scripts/recap_post.py "${{ github.event.inputs.day }}" "${{ github.event.inputs.send }}"
       - name: Publish preview PNG to the preview-cards branch
         if: always() && github.event.inputs.send != '1'

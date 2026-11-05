@@ -26,7 +26,7 @@ jobs:
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
           NEWS_PER_TAG: "1"
           NEWS_TEST_SEND: ${{ github.event.inputs.send || '0' }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_VISION }}   # 5 Nov: own project, keeps the result-card keys free
         run: python scripts/news_posts.py preview "${{ github.event.inputs.day }}"
       - name: Publish preview PNGs
         if: always()

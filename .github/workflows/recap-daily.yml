@@ -33,7 +33,7 @@ jobs:
       - env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           MARKET_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_VISION }}   # 5 Nov: own project, keeps the result-card keys free
           X_BUTTON: "1"
           FORCE: ${{ github.event.inputs.force || '0' }}
         run: python scripts/recap_post.py "${{ github.event.inputs.day || 'today' }}" "${{ github.event.inputs.send || '1' }}" daily
