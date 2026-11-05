@@ -12,6 +12,7 @@ from bse import BSE
 
 SEND = os.environ.get("FILL_SEND", "0") == "1"
 LIMIT = int(os.environ.get("FILL_LIMIT", "0"))
+ONLY = os.environ.get("FILL_ONLY", "").strip()  # e.g. "530549|Sep-26": restrict to one company/quarter
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 F = "state/stub_fill.json"
 try: fs = json.load(open(F))
@@ -24,6 +25,7 @@ for k in stubs:
     code, label = k.split("|")[:2]
     if any(f"{code}|{label}|{b}" in posted for b in ("consolidated", "standalone")): continue
     if f"{code}|{label}" in fs["done"]: continue
+    if ONLY and f"{code}|{label}" != ONLY: continue
     todo.append((code, label))
 todo.sort(key=lambda x: -rp.pdf_card.mcap_of(x[0]))
 p("stub cards without a full card:", len(todo))

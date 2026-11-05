@@ -8,6 +8,9 @@ on:
       limit:
         description: "max posts (0 = all)"
         default: "0"
+      only:
+        description: "restrict to one code|quarter, e.g. 530549|Sep-26 (empty = all)"
+        default: ""
 permissions:
   contents: write
 concurrency:
@@ -30,6 +33,7 @@ jobs:
           TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
           FILL_SEND: ${{ github.event.inputs.send }}
           FILL_LIMIT: ${{ github.event.inputs.limit }}
+          FILL_ONLY: ${{ github.event.inputs.only }}
         run: python -u scripts/stub_fill.py
       - name: Save state
         if: always()
