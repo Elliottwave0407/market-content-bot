@@ -1700,3 +1700,28 @@
 05 06:55:54 seen 526423 Kriti Industries India Ltd-$ cat=Board Meeting early=True bse_time=12:25:06 dissem=12:25:06
 05 06:56:22 seen 539115 Alan Scott Enterprises Ltd cat=Board Meeting early=True bse_time=12:25:28 dissem=12:25:28
 05 06:57:50 pdf rule reader Sodhani Academy of Fintech Enablers Ltd: rule: header has no quarter columns
+05 06:58:35 pdf nim reader Kriti Industries India Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 34 numbers not found in the filing text (possible invention): rejected e.g. [( 
+05 06:58:35 pdf pdf read failed Kriti Industries India Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 34 numbers not found in the filing text (p
+05 06:58:35 pdf nim reader Hi-Tech Pipes Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+05 06:58:35 pdf pdf read failed Hi-Tech Pipes Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible inve
+05 06:58:37 seen 543411 Hi-Tech Pipes Ltd cat=Result early=False bse_time=12:27:43 dissem=12:27:43
+05 06:59:01 wait 543411 Hi-Tech Pipes Ltd: numbers not yet on BSE
+05 06:59:12 seen 533520 Indiabulls Ltd cat=Board Meeting early=True bse_time=12:28:21 dissem=12:28:21
+05 06:59:12 seen 507663 Signature Green Corporation  cat=Result early=False bse_time=12:28:29 dissem=12:28:29
+05 06:59:45 wait 507663 Signature Green Corporation : numbers not yet on BSE
+05 07:00:22 seen 544129 Juniper Hotels Ltd cat=Board Meeting early=True bse_time=12:29:37 dissem=12:29:37
+05 07:00:37 pdf rule reader Hi-Tech Pipes Ltd: rule: no results table page
+05 07:00:37 pdf nim reader Hi-Tech Pipes Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+05 07:00:37 pdf pdf read failed Hi-Tech Pipes Ltd: gemini skipped (quota/backoff); nim: cooling down
+05 07:00:37 pdf rule reader Standard Engineering Technology Ltd: rule: no results table page
+05 07:00:37 pdf nim reader Standard Engineering Technology Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+05 07:00:37 pdf pdf read failed Standard Engineering Technology Ltd: gemini skipped (quota/backoff); nim: cooling down
+05 07:00:37 pdf rule reader India Cements Capital Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+05 07:00:37 pdf nim reader India Cements Capital Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+05 07:00:37 pdf pdf read failed India Cements Capital Ltd: gemini skipped (quota/backoff); nim: cooling down
+05 07:00:37 pdf rule reader Kriti Industries India Ltd-$: rule: no results table page
+05 07:00:37 pdf nim reader Kriti Industries India Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+05 07:00:37 pdf pdf read failed Kriti Industries India Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+05 07:00:37 pdf nim reader India Cements Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (ge
+05 07:00:37 pdf pdf read failed India Cements Capital Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota); nim
+05 07:00:46 seen 522152 Solitaire Machine Tools Ltd cat=Result early=False bse_time=12:29:51 dissem=12:29:51
