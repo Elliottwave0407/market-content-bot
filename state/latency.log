@@ -1897,3 +1897,12 @@
 05 04:59:19 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 05 04:59:33 pdf pdf incomplete Unijolly Investments Company Ltd standalone: missing ['revenue'] - not posting from PDF
 05 05:01:43 seen 544679 Amagi Media Labs Ltd cat=Result early=False bse_time=10:31:36 dissem=10:31:36
+05 05:02:05 wait 544679 Amagi Media Labs Ltd: numbers not yet on BSE
+05 05:02:08 pdf rule reader Healthy Investments Ltd: ok
+05 05:02:08 pdf pdf current col Healthy Investments Ltd standalone ok=True/3: revenue=0.013, other_income=0.628, total_income=0.64, total_expenses=0.312, finance_costs=None, depreciation=None, pbt=0.328, tax=0.083, pat=0.246, eps=1.0
+05 05:02:08 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+05 05:02:39 seen 503689 Healthy Investments Ltd cat=Board Meeting early=True bse_time=10:32:19 dissem=10:32:19
+05 05:03:00 pdf rule reader Healthy Investments Ltd: rule: column dates not found
+05 05:04:37 pdf pdf incomplete Healthy Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
+05 05:04:37 pdf nim reader Amagi Media Labs Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+05 05:04:37 pdf pdf read failed Amagi Media Labs Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 25 numbers not found in the filing text (possible 
