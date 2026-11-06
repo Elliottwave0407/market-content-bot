@@ -1579,3 +1579,11 @@
 06 10:43:53 pdf rule reader Integra Capital  Ltd: ok
 06 10:43:53 pdf pdf current col Integra Capital  Ltd standalone ok=True/2: revenue=4.6, other_income=None, total_income=4.6, total_expenses=11.69, finance_costs=None, depreciation=None, pbt=-7.09, tax=-5.2, pat=-1.89, eps=-0.07
 06 10:43:53 pdf pdf incomplete Integra Capital  Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 10:44:21 pdf rule reader Integra Capital  Ltd: rule: column dates not found | ocr: rule: no results table page
+06 10:44:33 seen 532430 BF Utilities Ltd-$ cat=Result early=False bse_time=16:13:03 dissem=16:13:03
+06 10:44:33 seen 544411 Scoda Tubes Ltd cat=Board Meeting early=True bse_time=16:13:32 dissem=16:13:32
+06 10:44:33 seen 544707 Fractal Industries Ltd cat=Result early=False bse_time=16:13:58 dissem=16:13:58
+06 10:45:06 wait 532430 BF Utilities Ltd-$: numbers not yet on BSE
+06 10:45:07 ready 544411|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Scoda Tubes Ltd standalone ok=True/3: revenue=1489.48, other_income=19.88, total_income=1509.36, total_expenses=1449.03, finance_costs=69.33, de
+06 10:45:24 wait 544707 Fractal Industries Ltd: numbers not yet on BSE
+06 10:45:31 ready 540144|Sep-26|na kind=photo waited_min=45.9 tries=99 pdf_log=
