@@ -4232,7 +4232,8 @@
 "6332b3d5-d096-4f28-b876-a8be85a485e3",
 "efe6d0fb-7f53-40bf-9064-f7f05a946cf0",
 "47281d14-cc76-4890-9fdd-3262fa354cd8",
-"842dbccb-95d3-47e9-97da-e373b48955dd"
+"842dbccb-95d3-47e9-97da-e373b48955dd",
+"cf42fbc8-6407-490b-b030-ce31cb51f8e8"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6985,7 +6986,8 @@
 "533203|Sep-26|na",
 "544724|Sep-26|standalone",
 "522245|Sep-26|na",
-"512213|Sep-26|na"
+"512213|Sep-26|na",
+"500530|Sep-26|consolidated"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7251,7 +7253,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793953780.620889,
-"last": 1793956784.3559055,
+"last": 1793957618.981624,
 "alerted": true
 },
 "de111dc0-c953-48c7-a56e-28b13ef48272": {
@@ -7329,44 +7331,6 @@
 "first": 1793953780.620889,
 "last": 1793956784.3559055,
 "alerted": true
-},
-"cf42fbc8-6407-490b-b030-ce31cb51f8e8": {
-"rec": {
-"NEWSID": "cf42fbc8-6407-490b-b030-ce31cb51f8e8",
-"SCRIP_CD": 500530,
-"XML_NAME": "ANN_500530_CF42FBC8-6407-490B-B030-CE31CB51F8E8",
-"NEWSSUB": "Bosch Ltd - 500530 - Intimation Under Regulation 30 Of SEBI LODR Regulations, 2015 - Financial Results",
-"DT_TM": "2026-11-06T14:41:03.117",
-"NEWS_DT": "2026-11-06T14:41:03.117",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "9860fd02-3373-4935-885d-36b2a162e8a1.pdf",
-"MORE": "",
-"HEADLINE": "Results under Regulation 30 of SEBI LODR, 2015 - Outcome",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/bosch-ltd/boschltd/500530/",
-"SLONGNAME": "Bosch Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 19,
-"News_submission_dt": "2026-11-06T14:41:03",
-"DissemDT": "2026-11-06T14:41:03.117",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5665020,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793956784.3559055,
-"last": 1793956784.3559055,
-"alerted": false
 },
 "74db323a-6699-4b22-a922-73bcb3d2b415": {
 "rec": {
@@ -7446,10 +7410,6 @@
 }
 },
 "lag": [
-[
-"IRB Infrastructure Developers Ltd",
-21
-],
 [
 "Shilpa Medicare Ltd",
 65
@@ -8645,6 +8605,10 @@
 [
 "Classic Electricals Ltd",
 120
+],
+[
+"Bosch Ltd",
+14
 ]
 ],
 "gem_use": {
@@ -8673,7 +8637,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 55
+"2026-11-06": 56
 },
 "pdfposted": {
 "544831|Sep-26|standalone": {
@@ -12929,17 +12893,17 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 146,
-"429": 1,
-"other": 39
+"ok": 150,
+"429": 2,
+"other": 40
 },
 "results-key": {
 "ok": 5,
 "429": 0,
-"other": 6
+"other": 11
 },
 "concall-key": {
-"ok": 2,
+"ok": 4,
 "429": 0,
 "other": 3
 },
