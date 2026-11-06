@@ -4359,7 +4359,8 @@
 "fd0858d3-8e6b-45fd-96e9-74161a74c3ca",
 "481a96fb-810b-4e45-813a-a596627faf65",
 "7fa39560-5b84-40bb-a762-2c016cbbfcd2",
-"b10a364b-bc0a-4d4f-b1dc-06fcd567ff20"
+"b10a364b-bc0a-4d4f-b1dc-06fcd567ff20",
+"2862c0e9-8070-4e94-846f-cdba62866eb2"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7191,7 +7192,8 @@
 "500575|Sep-26|consolidated",
 "524648|Sep-26|standalone",
 "532934|Sep-26|standalone",
-"544451|Sep-26|standalone"
+"544451|Sep-26|standalone",
+"540975|Sep-26|consolidated"
 ],
 "pending": {
 "b2391246-5a85-4ac4-97ac-0512f323bfe4": {
@@ -7460,44 +7462,6 @@
 "last": 1793965158.4810166,
 "alerted": false
 },
-"2862c0e9-8070-4e94-846f-cdba62866eb2": {
-"rec": {
-"NEWSID": "2862c0e9-8070-4e94-846f-cdba62866eb2",
-"SCRIP_CD": 540975,
-"XML_NAME": "ANN_540975_2862C0E9-8070-4E94-846F-CDBA62866EB2",
-"NEWSSUB": "Aster DM Quality Care Ltd - 540975 - Unaudited Financial Results (Standalone And Consolidated) For The Quarter And Half Year Ended 30 September 2026",
-"DT_TM": "2026-11-06T17:08:01.127",
-"NEWS_DT": "2026-11-06T17:08:01.127",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "8443c05e-06c8-4e5d-9a23-e36df99d5467.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results (Standalone and Consolidated) for the quarter and half year ended 30 September 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/aster-dm-quality-care-ltd/asterdm/540975/",
-"SLONGNAME": "Aster DM Quality Care Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 33,
-"News_submission_dt": "2026-11-06T17:08:01",
-"DissemDT": "2026-11-06T17:08:01.127",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 9533832,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793965158.4810166,
-"last": 1793965158.4810166,
-"alerted": false
-},
 "6eb498b2-547a-458a-9216-c99cddea26df": {
 "rec": {
 "NEWSID": "6eb498b2-547a-458a-9216-c99cddea26df",
@@ -7538,10 +7502,6 @@
 }
 },
 "lag": [
-[
-"Poly Medicure Ltd",
-54
-],
 [
 "Prabha Energy Ltd",
 106
@@ -8737,6 +8697,10 @@
 [
 "Indo Amines Ltd-$",
 13
+],
+[
+"Aster DM Quality Care Ltd",
+3
 ]
 ],
 "gem_use": {
@@ -8765,7 +8729,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 143
+"2026-11-06": 146
 },
 "pdfposted": {
 "539384|Sep-26|consolidated": {
@@ -9806,6 +9770,16 @@
 "rev": 1650.7730000000001,
 "pat": 34.87200000000001,
 "t": 1793965242.7790234,
+"last": 0
+},
+"540975|Sep-26|consolidated": {
+"code": "540975",
+"name": "Aster DM Quality Care Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 28292.0,
+"pat": 3223.8,
+"t": 1793965371.1241682,
 "last": 0
 }
 },
@@ -12177,7 +12151,8 @@
 "f6994529-8ee1-47cf-a8c0-c23074f4cf36": 1,
 "02e30f90-313b-450d-a26e-bc87901ff4bf": 1,
 "b78b1f7c-8972-4b73-b3cf-517c533a742c": 1,
-"f812575d-8b01-4106-bdaa-cbde647bad3f": 1
+"f812575d-8b01-4106-bdaa-cbde647bad3f": 1,
+"2862c0e9-8070-4e94-846f-cdba62866eb2": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -13525,12 +13500,12 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 275,
+"ok": 276,
 "429": 4,
-"other": 71
+"other": 73
 },
 "results-key": {
-"ok": 17,
+"ok": 18,
 "429": 2,
 "other": 24
 },
