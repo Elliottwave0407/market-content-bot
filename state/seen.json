@@ -4466,7 +4466,8 @@
 "5d20b46d-d3ba-43cc-b738-159bf65e0874",
 "3c2d3836-c4b2-4f84-b510-56162cd7e9a4",
 "be84ec18-c488-487a-9a52-678ff5ff3b01",
-"98ee7983-5b0f-4767-a606-e47781e1fe06"
+"98ee7983-5b0f-4767-a606-e47781e1fe06",
+"02dcd14e-d537-466f-953f-542534f2f133"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7367,7 +7368,8 @@
 "530331|Sep-26|consolidated",
 "511200|Sep-26|standalone",
 "544177|Sep-26|na",
-"540385|Sep-26|standalone"
+"540385|Sep-26|standalone",
+"500191|Sep-26|consolidated"
 ],
 "pending": {
 "b363f422-56c5-4035-bd38-b497029afd2d": {
@@ -7861,7 +7863,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793971071.6845903,
-"last": 1793971608.138279,
+"last": 1793971814.1296847,
 "alerted": false
 },
 "c27b0b9e-c4d7-4ad0-8542-588c1b844c94": {
@@ -7899,44 +7901,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793971357.3008425,
-"last": 1793971608.138279,
-"alerted": false
-},
-"02dcd14e-d537-466f-953f-542534f2f133": {
-"rec": {
-"NEWSID": "02dcd14e-d537-466f-953f-542534f2f133",
-"SCRIP_CD": 500191,
-"XML_NAME": "ANN_500191_02DCD14E-D537-466F-953F-542534F2F133",
-"NEWSSUB": "HMT Ltd - 500191 - Unaudited Financial Results (Consolidated And Standalone) For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-06T18:52:06.633",
-"NEWS_DT": "2026-11-06T18:52:06.633",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "74d5e90c-df7b-4f07-be63-b1c22927e162.pdf",
-"MORE": "",
-"HEADLINE": "Please Find attached Unaudited Financial Results (Consolidated And Standalone) for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/hmt-ltd/hmt/500191/",
-"SLONGNAME": "HMT Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 45,
-"News_submission_dt": "2026-11-06T18:52:00",
-"DissemDT": "2026-11-06T18:52:06.633",
-"TimeDiff": "00:00:06",
-"Fld_Attachsize": 13288201,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793971608.138279,
 "last": 1793971608.138279,
 "alerted": false
 },
@@ -7980,10 +7944,6 @@
 }
 },
 "lag": [
-[
-"Hexa Tradex Ltd",
-242
-],
 [
 "YOGI Ltd",
 180
@@ -9179,6 +9139,10 @@
 [
 "Vedic Ayurveda Ltd",
 48
+],
+[
+"HMT Ltd",
+3
 ]
 ],
 "gem_use": {
@@ -9207,7 +9171,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 261
+"2026-11-06": 264
 },
 "pdfposted": {
 "512117|Sep-26|standalone": {
@@ -10468,6 +10432,16 @@
 "rev": 1.133,
 "pat": 1.6690000000000003,
 "t": 1793971442.8913918,
+"last": 0
+},
+"500191|Sep-26|consolidated": {
+"code": "500191",
+"name": "HMT Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 163.3,
+"pat": -575.1,
+"t": 1793971859.4568229,
 "last": 0
 }
 },
@@ -12230,7 +12204,8 @@
 "46afc024-3508-46ec-96fc-666ffd84f283": 1,
 "c27b0b9e-c4d7-4ad0-8542-588c1b844c94": 1,
 "3767c329-70a6-4c0e-b69c-0693f189c15e": 1,
-"5598927c-3d82-4fe2-90c8-d31a10c34c98": 1
+"5598927c-3d82-4fe2-90c8-d31a10c34c98": 1,
+"1293ce25-6191-46d4-be03-af7781cd45b7": 1
 },
 "cons_expected": {
 "37d49d73-18e0-43bc-8e94-c2801fcfd8f2": 1,
@@ -12736,7 +12711,8 @@
 "498d22ae-6b70-4cf4-be13-5a405e95859f": 1,
 "e2a55817-3c01-4257-9815-30fbce9e77a6": 1,
 "51ae1a96-3f05-4f3c-908a-f0845f0b644b": 1,
-"b0d01b71-c94a-4da3-a9ef-3e00faf8bcaa": 1
+"b0d01b71-c94a-4da3-a9ef-3e00faf8bcaa": 1,
+"02dcd14e-d537-466f-953f-542534f2f133": 1
 },
 "half_q": {
 "7613f217-bd04-4733-bf98-39b3d9fc4bdd": {
@@ -14187,13 +14163,13 @@
 "other": 91
 },
 "results-key": {
-"ok": 102,
+"ok": 107,
 "429": 6,
 "other": 44
 },
 "concall-key": {
 "ok": 19,
-"429": 5,
+"429": 6,
 "other": 23
 },
 "vision-key": {
