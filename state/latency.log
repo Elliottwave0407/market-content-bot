@@ -1633,3 +1633,6 @@
 06 06:05:30 pdf pdf read failed Godrej Agrovet Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 42
 06 06:06:49 pdf rule reader Godrej Agrovet Ltd: rule: no results table page | ocr: rule: no results table page
 06 06:09:39 pdf rule reader Godrej Agrovet Ltd: rule: no results table page | ocr: rule: no results table page
+06 06:10:56 pdf nim reader Godrej Agrovet Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
+06 06:10:56 pdf pdf read failed Godrej Agrovet Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inv
+06 06:12:36 seen 544330 Parmeshwar Metal Ltd cat=Board Meeting early=True bse_time=11:41:40 dissem=11:41:40
