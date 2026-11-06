@@ -4208,7 +4208,9 @@
 "c8f06986-270f-4130-811b-44177f50e8f1",
 "a13e48af-49c7-4565-9e8f-f6fe37e2ee94",
 "b484f4b9-4331-43b1-af52-a41823826b63",
-"2aea116b-aad1-465c-9a33-163a9483c976"
+"2aea116b-aad1-465c-9a33-163a9483c976",
+"3a58e501-ff8e-4245-8f1b-4b49c4b27c74",
+"6161b794-52d5-4c56-a201-a6df8ef6620f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6937,7 +6939,9 @@
 "542460|Sep-26|consolidated",
 "540575|Sep-26|consolidated",
 "521178|Sep-26|standalone",
-"512022|Sep-26|consolidated"
+"512022|Sep-26|consolidated",
+"539938|Sep-26|consolidated",
+"511377|Sep-26|standalone"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7015,44 +7019,6 @@
 "first": 1793947659.7359073,
 "last": 1793953780.620889,
 "alerted": true
-},
-"6161b794-52d5-4c56-a201-a6df8ef6620f": {
-"rec": {
-"NEWSID": "6161b794-52d5-4c56-a201-a6df8ef6620f",
-"SCRIP_CD": 511377,
-"XML_NAME": "ANN_511377_6161B794-52D5-4C56-A201-A6DF8EF6620F",
-"NEWSSUB": "Mehta Integrated Finance Ltd - 511377 - Consideration And Approval Of Standalone Unaudited Financial Results For The Quarter & Half Year Ended On 30.09.2026 At  The Board Meeting Held On 06.11.2026 Under Reg 33 Of SEBI(LODR) Regulations, 2015  FIN. RESULTS  Submitted To The Exchange.",
-"DT_TM": "2026-11-06T12:29:28.99",
-"NEWS_DT": "2026-11-06T12:29:28.99",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "0b06a58d-33b9-444a-b82c-43820ee27b29.pdf",
-"MORE": "Board at its meeting held  on today, approved the unaudited Financial Results of the Company for the quarter and half year ended on 30.09.2026 under reg. 33 of SEBI(LODR) Regulations, 2015 now submitted by the Company to the Exchange.",
-"HEADLINE": "Board at its meeting held  on today, approved the unaudited Financial Results of the Company for the quarter and half year ended on 30.09.2026 under reg. 33 of SEBI(LODR) Regulations, 2015 ....",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/mehta-integrated-finance-ltd/mehif/511377/",
-"SLONGNAME": "Mehta Integrated Finance Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-11-06T12:29:28",
-"DissemDT": "2026-11-06T12:29:28.99",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 872630,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793948451.3430188,
-"last": 1793951882.3316035,
-"alerted": false
 },
 "b9a9b844-c5d1-4586-ab9f-c27b82da71bf": {
 "rec": {
@@ -7851,13 +7817,47 @@
 "first": 1793953780.620889,
 "last": 1793953780.620889,
 "alerted": false
+},
+"b37a37f5-dd95-479f-bc7c-ccbf8d5b05ad": {
+"rec": {
+"NEWSID": "b37a37f5-dd95-479f-bc7c-ccbf8d5b05ad",
+"SCRIP_CD": 533203,
+"XML_NAME": "ANN_533203_B37A37F5-DD95-479F-BC7C-CCBF8D5B05AD",
+"NEWSSUB": "Tarapur Transformers Ltd - 533203 - Approve The Unaudited Financial Results Along With The Limited Review Report For The Second Quarter And Half Year Ended 30Th September, 2026.",
+"DT_TM": "2026-11-06T13:42:41.837",
+"NEWS_DT": "2026-11-06T13:42:41.837",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "6aa1c42a-0122-40c1-b679-b28fb3618288.pdf",
+"MORE": "",
+"HEADLINE": "september 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/tarapur-transformers-ltd/tarapur/533203/",
+"SLONGNAME": "Tarapur Transformers Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 15,
+"News_submission_dt": "2026-11-06T13:42:40",
+"DissemDT": "2026-11-06T13:42:41.837",
+"TimeDiff": "00:00:01",
+"Fld_Attachsize": 11631742,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1793953780.620889,
+"last": 1793953780.620889,
+"alerted": false
 }
 },
 "lag": [
-[
-"Juniper Hotels Ltd",
-7
-],
 [
 "Sodhani Academy of Fintech Enablers Ltd",
 51
@@ -9053,6 +9053,10 @@
 [
 "Sri Ramakrishna Mills Coimbatore Ltd-$",
 57
+],
+[
+"Mehta Integrated Finance Ltd",
+89
 ]
 ],
 "gem_use": {
@@ -9081,7 +9085,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 24
+"2026-11-06": 27
 },
 "pdfposted": {
 "538546|Sep-26|standalone": {
@@ -9732,6 +9736,26 @@
 "rev": 738.484,
 "pat": 556.313,
 "t": 1793956391.433344,
+"last": 0
+},
+"539938|Sep-26|consolidated": {
+"code": "539938",
+"name": "Medico Intercontinental Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 228.45300000000003,
+"pat": 0.442,
+"t": 1793956509.970276,
+"last": 0
+},
+"511377|Sep-26|standalone": {
+"code": "511377",
+"name": "Mehta Integrated Finance Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": 1.8170000000000002,
+"t": 1793956561.7280133,
 "last": 0
 }
 },
@@ -11457,7 +11481,8 @@
 "c8f06986-270f-4130-811b-44177f50e8f1": 1,
 "a13e48af-49c7-4565-9e8f-f6fe37e2ee94": 1,
 "b484f4b9-4331-43b1-af52-a41823826b63": 1,
-"9486501e-0fb9-4170-a2ac-aea08f2b68d9": 1
+"9486501e-0fb9-4170-a2ac-aea08f2b68d9": 1,
+"6161b794-52d5-4c56-a201-a6df8ef6620f": 1
 },
 "cons_expected": {
 "0983f768-37dc-45ba-a7f5-d77fc59035c0": 1,
@@ -11979,7 +12004,8 @@
 "d5855e7f-5129-4e05-8e82-8b059e91f2cc": 1,
 "2b46126e-3822-403c-adce-8fbf9f1dc333": 1,
 "1c67b702-4445-477c-b7bb-691b5746063f": 1,
-"2aea116b-aad1-465c-9a33-163a9483c976": 1
+"2aea116b-aad1-465c-9a33-163a9483c976": 1,
+"3a58e501-ff8e-4245-8f1b-4b49c4b27c74": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -13236,14 +13262,24 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 72,
+"ok": 83,
 "429": 1,
-"other": 25
+"other": 28
 },
 "results-key": {
+"ok": 2,
+"429": 0,
+"other": 2
+},
+"concall-key": {
+"ok": 0,
+"429": 0,
+"other": 2
+},
+"vision-key": {
 "ok": 1,
 "429": 0,
-"other": 0
+"other": 1
 }
 }
 }
