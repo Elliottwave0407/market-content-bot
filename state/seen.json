@@ -4216,7 +4216,8 @@
 "b976644e-3ceb-4f87-b658-fea62b03e280",
 "eca96eab-72d2-45e8-acfb-4c641c508580",
 "81986c8d-fd89-4b74-a7c8-7fa1b570d084",
-"2169c302-e951-451a-a215-9058f8789832"
+"2169c302-e951-451a-a215-9058f8789832",
+"161ba45d-f25f-4c72-8380-48e15472fcb2"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6954,7 +6955,8 @@
 "500243|Sep-26|consolidated",
 "532923|Sep-26|consolidated",
 "520008|Sep-26|consolidated",
-"532775|Sep-26|standalone"
+"532775|Sep-26|standalone",
+"540650|Sep-26|standalone"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7527,44 +7529,6 @@
 "last": 1793956784.3559055,
 "alerted": true
 },
-"161ba45d-f25f-4c72-8380-48e15472fcb2": {
-"rec": {
-"NEWSID": "161ba45d-f25f-4c72-8380-48e15472fcb2",
-"SCRIP_CD": 540650,
-"XML_NAME": "ANN_540650_161BA45D-F25F-4C72-8380-48E15472FCB2",
-"NEWSSUB": "Magadh Sugar & Energy Ltd - 540650 - Unaudited Financial Results For The Quarter And Six Months Ended 30Th September, 2026",
-"DT_TM": "2026-11-06T13:56:57.713",
-"NEWS_DT": "2026-11-06T13:56:57.713",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "f4eea76f-8ecc-46df-9520-c1d1658551c6.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quarter and six months ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/magadh-sugar--energy-ltd/magadsugar/540650/",
-"SLONGNAME": "Magadh Sugar & Energy Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-11-06T13:56:56",
-"DissemDT": "2026-11-06T13:56:57.713",
-"TimeDiff": "00:00:01",
-"Fld_Attachsize": 4606292,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793953780.620889,
-"last": 1793953780.620889,
-"alerted": false
-},
 "3543a916-3efb-41fc-ac98-f6b54403b0c0": {
 "rec": {
 "NEWSID": "3543a916-3efb-41fc-ac98-f6b54403b0c0",
@@ -7795,10 +7759,6 @@
 }
 },
 "lag": [
-[
-"RPSG Ventures Ltd",
-49
-],
 [
 "Shankesh Jewellers Ltd",
 35
@@ -8994,6 +8954,10 @@
 [
 "Rico Auto Industries Ltd",
 82
+],
+[
+"Magadh Sugar & Energy Ltd",
+50
 ]
 ],
 "gem_use": {
@@ -9022,7 +8986,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 45
+"2026-11-06": 46
 },
 "pdfposted": {
 "533260|Sep-26|consolidated": {
@@ -9713,6 +9677,16 @@
 "rev": 3325.1000000000004,
 "pat": 2629.1000000000004,
 "t": 1793957034.8037229,
+"last": 0
+},
+"540650|Sep-26|standalone": {
+"code": "540650",
+"name": "Magadh Sugar & Energy Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 2896.6580000000004,
+"pat": 7.031000000000001,
+"t": 1793957063.4366834,
 "last": 0
 }
 },
@@ -11442,7 +11416,8 @@
 "6161b794-52d5-4c56-a201-a6df8ef6620f": 1,
 "18cc7329-40e6-41cc-875e-5bdcddb8133b": 1,
 "b9a9b844-c5d1-4586-ab9f-c27b82da71bf": 1,
-"2169c302-e951-451a-a215-9058f8789832": 1
+"2169c302-e951-451a-a215-9058f8789832": 1,
+"161ba45d-f25f-4c72-8380-48e15472fcb2": 1
 },
 "cons_expected": {
 "0983f768-37dc-45ba-a7f5-d77fc59035c0": 1,
@@ -13224,7 +13199,7 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 117,
+"ok": 121,
 "429": 1,
 "other": 34
 },
