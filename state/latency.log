@@ -1687,3 +1687,15 @@
 06 15:02:59 seen 532797 Autoline Industries Ltd cat=Board Meeting early=True bse_time=20:30:54 dissem=20:30:54
 06 15:02:59 seen 536672 VCU Data Management Ltd cat=Board Meeting early=True bse_time=20:31:35 dissem=20:31:35
 06 15:02:59 seen 543848 Dev Labtech Venture Ltd cat=Result early=False bse_time=20:32:03 dissem=20:32:03
+06 15:05:40 wait 543848 Dev Labtech Venture Ltd: numbers not yet on BSE
+06 15:08:01 pdf pdf current col VCU Data Management Ltd standalone ok=True/3: revenue=6106, other_income=139, total_income=6245, total_expenses=7117, finance_costs=-25, depreciation=57, pbt=-871, tax=1, pat=-872, eps=-0.01
+06 15:08:01 pdf pdf incomplete VCU Data Management Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 15:08:54 pdf rule reader New Markets Avenue Ltd: rule: no results table page | ocr: rule: no results table page
+06 15:08:54 pdf rule reader United Van Der Horst Ltd: rule: no results table page | ocr: rule: no results table page
+06 15:10:29 pdf nim reader New Markets Avenue Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 15:10:29 pdf pdf read failed New Markets Avenue Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 15:10:29 pdf rule reader Dev Labtech Venture Ltd: rule: no results table page | ocr: rule: no results table page
+06 15:10:29 pdf nim reader United Van Der Horst Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 15:10:29 pdf pdf read failed United Van Der Horst Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 15:10:29 pdf strong model fixed a failed read
+06 15:11:28 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '30-09-2025', '31-03-2026']): not read as quarters, queued for the half-yearly route Dev Labtech Venture Ltd
