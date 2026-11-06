@@ -1745,3 +1745,9 @@
 06 11:32:11 ready 540788|Sep-26|standalone kind=photo waited_min=5.7 tries=1 pdf_log=pdf current col Aspira Pathlab & Diagnostics Ltd standalone ok=True/3: revenue=626.04, other_income=8.51, total_income=634.55, total_expenses=750.5, finance_cos
 06 11:32:19 ready 514280|Sep-26|standalone kind=photo waited_min=1.3 tries=1 pdf_log=pdf current col Sanrhea Technical Textiles Ltd standalone ok=True/3: revenue=2347.22, other_income=1.39, total_income=2348.61, total_expenses=2058.83, finance_c
 06 11:33:01 ready 532408|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf current col Sigma Advanced Systems Ltd standalone ok=True/3: revenue=4651.63, other_income=1057.98, total_income=5709.61, total_expenses=3786.72, finance_co
+06 11:33:21 pdf pdf current col Veer Global Infraconstruction Ltd standalone ok=True/3: revenue=108.0, other_income=0.0, total_income=108.0, total_expenses=75.28, finance_costs=14.52, depreciation=2.15, pbt=31.52, tax=7.93, pat=23.59, eps=0.14
+06 11:33:21 pdf pdf incomplete Veer Global Infraconstruction Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 11:33:21 pdf pdf current col Jujhar Logistics Ltd standalone ok=True/3: revenue=3876.34, other_income=43.24, total_income=3919.58, total_expenses=3915.85, finance_costs=None, depreciation=None, pbt=3.73, tax=-6.8, pat=10.52, eps=0.19
+06 11:33:21 pdf pdf margin q-4 differs from BSE history by 45.4 pts: margin withheld Jujhar Logistics Ltd standalone
+06 11:33:21 pdf pdf history mismatch Jujhar Logistics Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9.629000000000001 pat 4.547 | bse rev 20.84 pat 0.21 (Rs mn); q-4: pdf rev 2.676 pat 22.507 | bse rev 2.22 pat 1.
+06 11:33:21 pdf rule reader Voltas Ltd: rule: no results table page | ocr: rule: no results table page
