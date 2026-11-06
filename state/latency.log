@@ -1570,3 +1570,12 @@
 06 10:41:26 seen 505242 Dynamatic Technologies Ltd-$ cat=Board Meeting early=True bse_time=16:10:12 dissem=16:10:12
 06 10:41:48 seen 532895 Nagreeka Capital & Infrastru cat=Board Meeting early=True bse_time=16:10:30 dissem=16:10:30
 06 10:42:58 ready 526931|Sep-26|consolidated kind=photo waited_min=38.3 tries=8 pdf_log=
+06 10:43:15 seen 531314 Integra Capital  Ltd cat=Result early=False bse_time=16:12:00 dissem=16:12:00
+06 10:43:15 seen 524156 TCM Ltd cat=Board Meeting early=True bse_time=16:12:07 dissem=16:12:07
+06 10:43:15 seen 505242 Dynamatic Technologies Ltd-$ cat=Board Meeting early=True bse_time=16:12:13 dissem=16:12:13
+06 10:43:51 wait 531314 Integra Capital  Ltd: numbers not yet on BSE
+06 10:43:53 pdf nim reader Nagreeka Capital & Infrastructure Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected 
+06 10:43:53 pdf pdf read failed Nagreeka Capital & Infrastructure Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing
+06 10:43:53 pdf rule reader Integra Capital  Ltd: ok
+06 10:43:53 pdf pdf current col Integra Capital  Ltd standalone ok=True/2: revenue=4.6, other_income=None, total_income=4.6, total_expenses=11.69, finance_costs=None, depreciation=None, pbt=-7.09, tax=-5.2, pat=-1.89, eps=-0.07
+06 10:43:53 pdf pdf incomplete Integra Capital  Ltd standalone: missing ['ebitda'] - not posting from PDF
