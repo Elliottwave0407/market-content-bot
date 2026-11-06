@@ -1550,3 +1550,9 @@
 06 19:35:31 pdf nim reader Hindprakash Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (g
 06 19:35:31 pdf pdf read failed Hindprakash Industries Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (per-day) on gemini-flash-latest | vision-key: HTT
 06 19:35:34 pdf rule reader Purohit Construction Ltd: rule: no results table page | ocr: rule: no results table page
+06 19:37:35 pdf pdf revenue + other income != total income, BSE-table override refused Vertex Securities Ltd consolidated
+06 19:37:35 pdf pdf history mismatch Vertex Securities Ltd consolidated cols=['30-09-2026', '30-06-2026', '30-09-2025'] :: q-1: pdf rev 16.31 pat 4.04 | bse rev 18.76 pat 0.0 (Rs mn); q-4: pdf rev 15.049000000000001 pat 3.73 | bse rev 18.8 pat -3
+06 19:37:35 pdf pdf has consolidated but it failed checks: not falling back to standalone Vertex Securities Ltd
+06 19:38:19 ready 531950|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
+06 19:38:26 ready 521048|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
+06 19:38:32 ready 538993|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
