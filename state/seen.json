@@ -4253,7 +4253,8 @@
 "70f699d6-455d-4442-be39-7b46f4b1c821",
 "cf2ab62d-c5cc-4b9e-8163-2094b191ceae",
 "c66ed6dc-409a-4b54-8500-d44f9b169c45",
-"1eed913c-1adc-4f45-9d59-822a91439b20"
+"1eed913c-1adc-4f45-9d59-822a91439b20",
+"dc314c32-4ec8-4913-a5d3-d164373dfc6e"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7019,47 +7020,10 @@
 "541353|Sep-26|na",
 "503349|Sep-26|standalone",
 "500450|Sep-26|standalone",
-"506395|Sep-26|consolidated"
+"506395|Sep-26|consolidated",
+"500440|Sep-26|consolidated"
 ],
 "pending": {
-"dc314c32-4ec8-4913-a5d3-d164373dfc6e": {
-"rec": {
-"NEWSID": "dc314c32-4ec8-4913-a5d3-d164373dfc6e",
-"SCRIP_CD": 500440,
-"XML_NAME": "ANN_500440_DC314C32-4EC8-4913-A5D3-D164373DFC6E",
-"NEWSSUB": "Hindalco Industries Ltd - 500440 - Standalone And Consolidated Unaudited Financial Results Of The Company For The Quarter And Half Year Ended September 30, 2026.",
-"DT_TM": "2026-11-06T13:49:28.737",
-"NEWS_DT": "2026-11-06T13:49:28.737",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "71fa26b3-fd56-4fdc-9d71-cb1082fac9ad.pdf",
-"MORE": "",
-"HEADLINE": "Standalone and Consolidated unaudited financial results of the Company for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/hindalco-industries-ltd/hindalco/500440/",
-"SLONGNAME": "Hindalco Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-11-06T13:49:28",
-"DissemDT": "2026-11-06T13:49:28.737",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10020003,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793953780.620889,
-"last": 1793957618.981624,
-"alerted": true
-},
 "de111dc0-c953-48c7-a56e-28b13ef48272": {
 "rec": {
 "NEWSID": "de111dc0-c953-48c7-a56e-28b13ef48272",
@@ -7214,10 +7178,6 @@
 }
 },
 "lag": [
-[
-"Pritika Auto Industries Ltd",
-46
-],
 [
 "Kaycee Industries Ltd",
 72
@@ -8413,6 +8373,10 @@
 [
 "Innovators Facade Systems Ltd",
 134
+],
+[
+"Hindalco Industries Ltd",
+75
 ]
 ],
 "gem_use": {
@@ -8441,7 +8405,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 65
+"2026-11-06": 69
 },
 "pdfposted": {
 "544831|Sep-26|standalone": {
@@ -9252,6 +9216,16 @@
 "rev": 0.1,
 "pat": -2.7,
 "t": 1793958231.641531,
+"last": 0
+},
+"500440|Sep-26|consolidated": {
+"code": "500440",
+"name": "Hindalco Industries Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 917080.0,
+"pat": 75330.0,
+"t": 1793958378.1754467,
 "last": 0
 }
 },
@@ -11529,7 +11503,8 @@
 "8a66355f-1b2c-4759-99b1-a5d75e59e8b9": 1,
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": 1,
 "dec1b97a-a96b-49f5-b306-abffea7b000d": 1,
-"70f699d6-455d-4442-be39-7b46f4b1c821": 1
+"70f699d6-455d-4442-be39-7b46f4b1c821": 1,
+"dc314c32-4ec8-4913-a5d3-d164373dfc6e": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -12807,14 +12782,14 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 173,
+"ok": 178,
 "429": 2,
 "other": 41
 },
 "results-key": {
-"ok": 10,
+"ok": 12,
 "429": 0,
-"other": 15
+"other": 16
 },
 "concall-key": {
 "ok": 4,
