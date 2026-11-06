@@ -1604,3 +1604,11 @@
 06 10:49:50 seen 501430 Bombay Cycle & Motor Agency  cat=Board Meeting early=True bse_time=16:18:52 dissem=16:18:52
 06 10:49:50 seen 521232 Sunil Industries Ltd cat=Board Meeting early=True bse_time=16:18:52 dissem=16:18:52
 06 10:55:15 wait 511738 Mehta Securities Ltd: numbers not yet on BSE
+06 10:55:47 ready 531314|Sep-26|standalone kind=photo waited_min=6.6 tries=5 pdf_log=pdf read failed Mehta Securities Ltd: gemini skipped (quota/backoff); nim: cooling down | rule reader Integra Capital  Ltd: ok | pdf current col Integra Capital
+06 10:55:55 pdf nim reader GS Auto International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 10:55:55 pdf pdf read failed GS Auto International Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 10:55:55 pdf rule reader Mehta Securities Ltd: rule: stan: missing ['pat'] n=6
+06 10:55:55 pdf nim reader Mehta Securities Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+06 10:55:55 pdf pdf read failed Mehta Securities Ltd: gemini skipped (quota/backoff); nim: cooling down
+06 10:55:55 pdf rule reader Integra Capital  Ltd: ok
+06 10:55:55 pdf pdf current col Integra Capital  Ltd standalone ok=True/2: revenue=4.6, other_income=None, total_income=4.6, total_expenses=11.69, finance_costs=None, depreciation=None, pbt=-7.09, tax=-5.2, pat=-1.89, eps=-0.07
