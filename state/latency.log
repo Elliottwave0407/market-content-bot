@@ -1755,3 +1755,7 @@
 06 11:33:53 ready 500575|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=rule reader Veer Global Infraconstruction Ltd: rule: stan: does not reconcile [lakh] total_income=[108.0, 223.99, 187.45] total_expenses=[75.28, 191.71, 118.81]
 06 11:34:16 pdf rule reader S.A.L. Steel Ltd: rule: no results table page | ocr: rule: no results table page
 06 11:34:16 pdf rule reader Indo Amines Ltd-$: rule: no results table page | ocr: rule: unit not found
+06 11:34:58 pdf pdf history mismatch Gland Pharma Ltd consolidated cols=['30-Sep-26', '30-Jun-26', '30-Sep-25'] :: q-1: pdf rev 1800271.0 pat 316959.0 | bse rev 18002.71 pat 3169.59 (Rs mn); q-4: pdf rev 1486875.0 pat 183684.0 | bse rev 14868.75 
+06 11:34:58 pdf pdf has consolidated but it failed checks: not falling back to standalone Gland Pharma Ltd
+06 11:35:55 pdf nim reader S.A.L. Steel Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 11:35:55 pdf pdf read failed S.A.L. Steel Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
