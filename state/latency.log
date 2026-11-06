@@ -1532,3 +1532,11 @@
 06 10:23:16 pdf pdf incomplete Bombay Oxygen Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
 06 10:24:38 seen 500550 Siemens Ltd cat=Result early=False bse_time=15:53:29 dissem=15:53:29
 06 10:24:59 ready 500550|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf q-4 revenue typo: pdf 49004.0 -> BSE history 51712.0 (profit matched) Siemens Ltd | pdf history cells corrected from BSE for q-[4]: Siemens Ltd consolidated
+06 10:25:46 seen 544278 OCCL Ltd cat=Result early=False bse_time=15:54:19 dissem=15:54:19
+06 10:25:46 seen 513059 GS Auto International Ltd cat=Board Meeting early=True bse_time=15:54:29 dissem=15:54:29
+06 10:25:46 seen 509845 RJ Shah & Company Ltd cat=Result early=False bse_time=15:54:56 dissem=15:54:56
+06 10:26:09 wait 544278 OCCL Ltd: numbers not yet on BSE
+06 10:26:21 wait 509845 RJ Shah & Company Ltd: numbers not yet on BSE
+06 10:26:23 pdf rule reader OCCL Ltd: rule: no results table page | ocr: rule: no results table page
+06 10:27:12 pdf rule reader GS Auto International Ltd: rule: no results table page | ocr: rule: no results table page
+06 10:27:12 pdf rule reader Bombay Oxygen Investments Ltd: rule: no results table page | ocr: rule: no results table page
