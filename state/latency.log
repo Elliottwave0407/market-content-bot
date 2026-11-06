@@ -1623,3 +1623,26 @@
 06 10:57:13 wait 519234 Superior Industrial Enterpri: numbers not yet on BSE
 06 10:57:15 wait 544520 Sampat Aluminium Ltd: numbers not yet on BSE
 06 11:00:59 wait 505320 Lynx Machinery & Commercials: numbers not yet on BSE
+06 11:01:57 pdf nim reader BF Utilities Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
+06 11:01:57 pdf pdf read failed BF Utilities Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inv
+06 11:01:57 pdf nim reader Nityas Gems and Jewellery Ltd: ok (gemini: gemini skipped (quota/backoff))
+06 11:01:57 pdf nim reader Sampat Aluminium Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 11:01:57 pdf pdf read failed Sampat Aluminium Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 11:01:57 pdf rule reader GS Auto International Ltd: rule: no results table page | ocr: rule: no results table page
+06 11:01:57 pdf nim reader Superior Industrial Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 11:01:57 pdf pdf read failed Superior Industrial Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 11:01:57 pdf nim reader Blue Dart Express Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+06 11:01:57 pdf pdf read failed Blue Dart Express Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+06 11:01:57 pdf strong model fixed a failed read
+06 11:01:57 pdf pdf current col GS Auto International Ltd standalone ok=True/3: revenue=3961.89, other_income=4.09, total_income=3965.98, total_expenses=3803.37, finance_costs=93.68, depreciation=98.84, pbt=162.61, tax=41.88, pat=120.73, eps=0.12
+06 11:01:57 pdf rule reader Lynx Machinery & Commercials Ltd: rule: no results table page | ocr: rule: no results table page
+06 11:01:57 pdf nim reader Lynx Machinery & Commercials Ltd: ok (gemini: gemini skipped (quota/backoff))
+06 11:01:57 pdf pdf current col Lynx Machinery & Commercials Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=40.92, finance_costs=30.78, depreciation=0.07, pbt=-40.92, tax=0, pat=-40.92, eps=-3.99
+06 11:01:57 pdf pdf incomplete Lynx Machinery & Commercials Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 11:01:57 pdf rule reader Oxford Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[4.5, None, None] total_expenses=[8.27, 3.45, 2.39] pbt=[-3.77, -3.45, -2.39] pat=[-3.77, -3.45, -2.39] | ocr: rule: no results table page
+06 11:01:57 pdf pdf current col Oxford Industries Ltd standalone ok=True/1: revenue=4.5, other_income=None, total_income=4.5, total_expenses=8.27, finance_costs=None, depreciation=None, pbt=-3.77, tax=None, pat=-3.45, eps=-0.06
+06 11:01:57 pdf pdf incomplete Oxford Industries Ltd standalone: missing ['revenue'] - not posting from PDF
+06 11:01:57 pdf rule reader Veerkrupa Jewellers Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+06 11:01:57 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Veerkrupa Jewellers Ltd
+06 11:01:57 pdf rule reader Mehta Securities Ltd: rule: stan: missing ['pat'] n=6
+06 11:01:57 pdf pdf current col Mehta Securities Ltd standalone ok=True/3: revenue=0.0, other_income=12.3, total_income=12.3, total_expenses=6.13, finance_costs=0.0, depreciation=0.21, pbt=6.17, tax=0.0, pat=6.17, eps=0.2
