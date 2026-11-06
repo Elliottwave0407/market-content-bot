@@ -1928,3 +1928,16 @@
 06 12:46:58 ready 544751|Sep-26|na kind=photo waited_min=45.7 tries=99 pdf_log=rule reader Prime Fresh Ltd: rule: no results table page | ocr: rule: no results table page
 06 12:47:05 ready 540361|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | nim reader RR Securities Ltd: ok (gemini: gemini skipped (quota/
 06 12:47:22 ready 530917|Sep-26|standalone kind=photo waited_min=20.0 tries=4 pdf_log=pdf incomplete Sanblue Corporation Ltd standalone: missing ['ebitda'] - not posting from PDF | pdf current col RR Securities Ltd standalone ok=False/3: revenue=
+06 12:48:39 seen 531744 Gini Silk Mills Ltd-$ cat=Result early=False bse_time=18:14:57 dissem=18:14:57
+06 12:48:39 seen 534563 Max Earth Resources Ltd cat=Result early=False bse_time=18:16:15 dissem=18:16:15
+06 12:48:39 seen 521222 Sanblue Corporation Ltd cat=Result early=False bse_time=18:16:23 dissem=18:16:23
+06 12:48:39 seen 540361 Danube Industries Ltd cat=Result early=False bse_time=18:16:44 dissem=18:16:44
+06 12:48:39 seen 521014 Eurotex Industries and Expor cat=Board Meeting early=True bse_time=18:16:55 dissem=18:16:55
+06 12:48:39 seen 531814 Tirupati Sarjan Ltd cat=Board Meeting early=True bse_time=18:17:48 dissem=18:17:48
+06 12:49:10 ready 540404|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+06 12:49:29 wait 540361 Danube Industries Ltd: numbers not yet on BSE
+06 12:49:32 wait 531744 Gini Silk Mills Ltd-$: numbers not yet on BSE
+06 12:49:34 wait 521222 Sanblue Corporation Ltd: numbers not yet on BSE
+06 12:49:35 wait 534563 Max Earth Resources Ltd: numbers not yet on BSE
+06 12:49:37 pdf rule reader Max Earth Resources Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+06 12:49:37 pdf rule reader Eurotex Industries and Exports Ltd: rule: no results table page | ocr: rule: no results table page
