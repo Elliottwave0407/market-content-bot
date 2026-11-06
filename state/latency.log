@@ -1560,3 +1560,11 @@
 06 10:37:47 seen 532430 BF Utilities Ltd-$ cat=Board Meeting early=True bse_time=16:06:15 dissem=16:06:15
 06 10:38:09 wait 538942 Mercantile Ventures Ltd: numbers not yet on BSE
 06 10:38:48 ready 534063|Sep-26|na kind=photo waited_min=45.0 tries=8 pdf_log=
+06 10:40:36 seen 544707 Fractal Industries Ltd cat=Board Meeting early=True bse_time=16:09:42 dissem=16:09:42
+06 10:41:11 pdf rule reader Fractal Industries Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+06 10:41:21 pdf nim reader Integra Capital  Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 10:41:21 pdf pdf read failed Integra Capital  Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 10:41:25 pdf rule reader Mehta Securities Ltd: rule: stan: missing ['pat'] n=6
+06 10:41:25 pdf nim reader Mehta Securities Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+06 10:41:25 pdf pdf read failed Mehta Securities Ltd: gemini skipped (quota/backoff); nim: cooling down
+06 10:41:26 seen 505242 Dynamatic Technologies Ltd-$ cat=Board Meeting early=True bse_time=16:10:12 dissem=16:10:12
