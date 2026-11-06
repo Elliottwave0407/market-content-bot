@@ -4321,7 +4321,8 @@
 "c456ffaa-a773-4739-b056-f3e9d79b239e",
 "4f7324b5-55e9-45f1-9b31-6db487098d23",
 "989f1b93-5d41-4578-8dff-47e36a6d15c6",
-"8b25cbfa-50f8-44f9-937a-567e15158f4c"
+"8b25cbfa-50f8-44f9-937a-567e15158f4c",
+"0212ea9d-bd59-4b26-8bed-bb1f5fbbaccf"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7130,7 +7131,8 @@
 "521232|Sep-26|standalone",
 "543245|Sep-26|consolidated",
 "533602|Sep-26|standalone",
-"505320|Sep-26|standalone"
+"505320|Sep-26|standalone",
+"532430|Sep-26|standalone"
 ],
 "pending": {
 "40173c81-aac2-40a1-b075-1c4229212960": {
@@ -7247,44 +7249,6 @@
 "last": 1793962930.3130949,
 "alerted": true
 },
-"0212ea9d-bd59-4b26-8bed-bb1f5fbbaccf": {
-"rec": {
-"NEWSID": "0212ea9d-bd59-4b26-8bed-bb1f5fbbaccf",
-"SCRIP_CD": 532430,
-"XML_NAME": "ANN_532430_0212EA9D-BD59-4B26-8BED-BB1F5FBBACCF",
-"NEWSSUB": "BF Utilities Ltd-$ - 532430 - Results- Financials For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-06T16:13:03.613",
-"NEWS_DT": "2026-11-06T16:13:03.613",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "087c7af9-b177-4843-a024-5c83040d9636.pdf",
-"MORE": "",
-"HEADLINE": "Financial results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/bf-utilities-ltd/bfutilitie/532430/",
-"SLONGNAME": "BF Utilities Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 27,
-"News_submission_dt": "2026-11-06T16:13:03",
-"DissemDT": "2026-11-06T16:13:03.613",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3504287,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793961873.6068232,
-"last": 1793962930.3130949,
-"alerted": false
-},
 "33e53ac9-f766-4140-ab4b-e5629478f625": {
 "rec": {
 "NEWSID": "33e53ac9-f766-4140-ab4b-e5629478f625",
@@ -7358,8 +7322,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793961990.6684947,
-"last": 1793962930.3130949,
-"alerted": false
+"last": 1793963450.3165088,
+"alerted": true
 },
 "671a27b3-5bae-4670-bcdc-cc64b4433475": {
 "rec": {
@@ -7591,10 +7555,6 @@
 }
 },
 "lag": [
-[
-"Smiths & Founders (India) Ltd",
-72
-],
 [
 "Surat Trade and Mercantile Ltd",
 90
@@ -8790,6 +8750,10 @@
 [
 "Lynx Machinery & Commercials Ltd",
 6
+],
+[
+"BF Utilities Ltd-$",
+26
 ]
 ],
 "gem_use": {
@@ -8818,7 +8782,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 109
+"2026-11-06": 118
 },
 "pdfposted": {
 "538882|Sep-26|consolidated": {
@@ -9719,6 +9683,16 @@
 "rev": 0.0,
 "pat": -4.0920000000000005,
 "t": 1793963373.8329177,
+"last": 0
+},
+"532430|Sep-26|standalone": {
+"code": "532430",
+"name": "BF Utilities Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 65.012,
+"pat": -25.167,
+"t": 1793963552.2308283,
 "last": 0
 }
 },
@@ -13391,7 +13365,7 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 228,
+"ok": 238,
 "429": 3,
 "other": 60
 },
@@ -13401,14 +13375,14 @@
 "other": 24
 },
 "concall-key": {
-"ok": 9,
+"ok": 10,
 "429": 0,
-"other": 14
+"other": 16
 },
 "vision-key": {
 "ok": 4,
 "429": 0,
-"other": 9
+"other": 11
 }
 }
 }
