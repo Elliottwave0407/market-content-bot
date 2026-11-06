@@ -1503,3 +1503,9 @@
 06 10:14:46 pdf rule reader Anupam Rasayan India Ltd: rule: filing mentions consolidated results but that table was not read
 06 10:14:46 pdf nim reader Anupam Rasayan India Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
 06 10:14:46 pdf pdf read failed Anupam Rasayan India Ltd: gemini skipped (quota/backoff); nim: cooling down
+06 10:15:26 pdf nim reader Carraro India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: ge
+06 10:15:26 pdf pdf read failed Carraro India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible inve
+06 10:15:26 pdf rule reader Mangalam Industrial Finance Ltd: rule: no results table page | ocr: rule: no results table page
+06 10:15:27 seen 543275 Anupam Rasayan India Ltd cat=Result early=False bse_time=15:43:54 dissem=15:43:54
+06 10:16:21 wait 543275 Anupam Rasayan India Ltd: numbers not yet on BSE
+06 10:17:21 seen 513043 Remi Edelstahl Tubulars Ltd cat=Result early=False bse_time=15:46:35 dissem=15:46:35
