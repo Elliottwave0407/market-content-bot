@@ -2041,3 +2041,9 @@
 06 10:04:21 ready 540680|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
 06 10:05:36 ready 537800|Sep-26|na kind=photo waited_min=45.8 tries=8 pdf_log=rule reader Ushakiran Finance Ltd: ok
 06 10:05:58 pdf pdf incomplete Ushakiran Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 10:06:34 pdf nim reader Futuristic Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 10:06:34 pdf pdf read failed Futuristic Solutions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 10:07:19 seen 544320 Carraro India Ltd cat=Result early=False bse_time=15:35:34 dissem=15:35:34
+06 10:07:19 seen 543275 Anupam Rasayan India Ltd cat=Board Meeting early=True bse_time=15:35:56 dissem=15:35:56
+06 10:07:41 wait 544320 Carraro India Ltd: numbers not yet on BSE
+06 10:07:57 ready 511507|Sep-26|standalone kind=photo waited_min=8.7 tries=5 pdf_log=pdf current col Ushakiran Finance Ltd standalone ok=True/3: revenue=7.51, other_income=0.05, total_income=7.56, total_expenses=5.16, finance_costs=None, depreci
