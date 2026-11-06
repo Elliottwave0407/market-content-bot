@@ -4338,7 +4338,8 @@
 "a74ba69c-211d-409d-9a4b-272d9e8362ea",
 "c69e25df-b3e4-43a3-8ff6-587e4e341ce0",
 "98c494a3-0a4b-4ddc-b5f3-628203fe2618",
-"03c8c340-6ed7-4674-b58a-0881391e0ec3"
+"03c8c340-6ed7-4674-b58a-0881391e0ec3",
+"40106fa5-4f68-4baa-91ac-0352af7304b8"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7158,7 +7159,8 @@
 "500620|Sep-26|consolidated",
 "506235|Sep-26|consolidated",
 "530879|Sep-26|consolidated",
-"531067|Sep-26|standalone"
+"531067|Sep-26|standalone",
+"514414|Sep-26|standalone"
 ],
 "pending": {
 "33e53ac9-f766-4140-ab4b-e5629478f625": {
@@ -7234,7 +7236,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793962558.5653074,
-"last": 1793963450.3165088,
+"last": 1793963996.3095052,
 "alerted": false
 },
 "f033a91b-3bd0-465c-9b80-c95347d06f9f": {
@@ -7273,44 +7275,6 @@
 },
 "first": 1793962930.3130949,
 "last": 1793963996.3095052,
-"alerted": false
-},
-"40106fa5-4f68-4baa-91ac-0352af7304b8": {
-"rec": {
-"NEWSID": "40106fa5-4f68-4baa-91ac-0352af7304b8",
-"SCRIP_CD": 514414,
-"XML_NAME": "ANN_514414_40106FA5-4F68-4BAA-91AC-0352AF7304B8",
-"NEWSSUB": "Oxford Industries Ltd - 514414 - STANDALONE UNAUDITED FINANCIAL RESULTS FOR QUARTER ENDED 30/09/2026.",
-"DT_TM": "2026-11-06T16:30:49.333",
-"NEWS_DT": "2026-11-06T16:30:49.333",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "be3d653b-0040-4ab7-92a2-6bcc5249d0f3.pdf",
-"MORE": "",
-"HEADLINE": "ENCLOSED HEREWITH STANDALONE UNAUDITED FINANCIAL RESULTS FOR QUARTER ENDED 30/09/2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/oxford-industries-ltd/oxfordin/514414/",
-"SLONGNAME": "Oxford Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 29,
-"News_submission_dt": "2026-11-06T16:30:49",
-"DissemDT": "2026-11-06T16:30:49.333",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1879523,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793962930.3130949,
-"last": 1793963450.3165088,
 "alerted": false
 },
 "fdc7f10b-2bb5-4df5-80d2-510568dae4ee": {
@@ -7467,10 +7431,6 @@
 }
 },
 "lag": [
-[
-"Solitaire Machine Tools Ltd",
-152
-],
 [
 "MP Agro Industries Ltd",
 72
@@ -8666,6 +8626,10 @@
 [
 "RJ Shah & Company Ltd",
 45
+],
+[
+"Oxford Industries Ltd",
+18
 ]
 ],
 "gem_use": {
@@ -8694,7 +8658,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 129
+"2026-11-06": 130
 },
 "pdfposted": {
 "531847|Sep-26|consolidated": {
@@ -9665,6 +9629,16 @@
 "rev": 78.39533,
 "pat": 6.5421000000000005,
 "t": 1793964074.8513453,
+"last": 0
+},
+"514414|Sep-26|standalone": {
+"code": "514414",
+"name": "Oxford Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.45,
+"pat": -0.377,
+"t": 1793964201.8867536,
 "last": 0
 }
 },
@@ -13357,7 +13331,7 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 255,
+"ok": 256,
 "429": 4,
 "other": 61
 },
@@ -13372,9 +13346,9 @@
 "other": 21
 },
 "vision-key": {
-"ok": 8,
+"ok": 9,
 "429": 0,
-"other": 12
+"other": 13
 }
 }
 }
