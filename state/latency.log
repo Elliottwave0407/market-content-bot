@@ -1594,3 +1594,9 @@
 06 13:53:28 wait 544848 H. R. Hygiene Products Ltd: numbers not yet on BSE
 06 13:56:14 ready 524322|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
 06 13:59:16 ready 534755|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=nim reader Trio Mercantile & Trading Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-latest, q) | pdf current col Trio Mercantile & Trading Ltd standalone ok=Tr
+06 14:02:44 ready 531913|Sep-26|standalone kind=photo waited_min=50.9 tries=1 pdf_log=pdf current col Kalpa Commercial Ltd standalone ok=True/3: revenue=2072.23, other_income=47.13, total_income=2119.36, total_expenses=2109.91, finance_costs=0.0,
+06 14:03:53 ready 502761|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Blue Blends (India) Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Blue Blends (India) Ltd consolidated ok=Tr
+06 14:04:25 pdf rule reader Blue Blends (India) Ltd: rule: no results table page | ocr: rule: no results table page
+06 14:04:25 pdf pdf current col Blue Blends (India) Ltd consolidated ok=True/3: revenue=5422.16, other_income=0.82, total_income=5422.99, total_expenses=5448.23, finance_costs=0.05, depreciation=10.22, pbt=-25.24, tax=-0.4, pat=-24.84, eps=-0.47
+06 14:04:25 pdf rule reader Max Earth Resources Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+06 14:04:25 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '30.09.2025', '31.03.2026']): not read as quarters, queued for the half-yearly route Max Earth Resources Ltd
