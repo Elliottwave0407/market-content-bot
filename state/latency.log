@@ -1985,3 +1985,7 @@
 06 09:48:54 pdf pdf incomplete Futuristic Solutions Ltd standalone: missing ['ebitda'] - not posting from PDF
 06 09:49:57 seen 532005 Sam Industries Ltd cat=Result early=False bse_time=15:18:39 dissem=15:18:39
 06 09:50:26 wait 532005 Sam Industries Ltd: numbers not yet on BSE
+06 09:50:41 pdf rule reader Coromandel International Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=7
+06 09:50:41 pdf rule reader Sam Industries Ltd: rule: no results table page | ocr: rule: no results table page
+06 09:50:49 ready 532005|Sep-26|standalone kind=photo waited_min=0.8 tries=1 pdf_log=pdf current col Sam Industries Ltd standalone ok=True/3: revenue=397.58, other_income=-19.89, total_income=377.66, total_expenses=321.98, finance_costs=73.75, d
+06 09:51:00 pdf pdf current col Sam Industries Ltd standalone ok=True/3: revenue=397.58, other_income=-19.89, total_income=377.66, total_expenses=321.98, finance_costs=73.75, depreciation=71.75, pbt=55.68, tax=18.25, pat=37.43, eps=0.33
