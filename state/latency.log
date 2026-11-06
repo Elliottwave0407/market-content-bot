@@ -1758,3 +1758,10 @@
 06 16:01:36 pdf rule reader AJR Infra And Tolling Ltd: rule: no results table page | ocr: rule: no results table page
 06 16:03:43 pdf nim reader AJR Infra And Tolling Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (ge
 06 16:03:43 pdf pdf read failed AJR Infra And Tolling Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (poss
+06 16:05:55 seen 539983 Sidh Automobiles Ltd cat=Board Meeting early=True bse_time=21:34:34 dissem=21:34:34
+06 16:05:59 pdf pdf current col Sidh Automobiles Ltd standalone ok=True/1: revenue=4.32, other_income=None, total_income=4.32, total_expenses=0.75, finance_costs=None, depreciation=None, pbt=3.57, tax=None, pat=3.57, eps=0.012
+06 16:05:59 pdf pdf incomplete Sidh Automobiles Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+06 16:06:50 pdf rule reader Sidh Automobiles Ltd: rule: stan: missing ['pat'] n=6
+06 16:06:51 pdf pdf current col Sidh Automobiles Ltd standalone ok=True/1: revenue=4.32, other_income=None, total_income=4.32, total_expenses=0.75, finance_costs=None, depreciation=None, pbt=3.57, tax=None, pat=3.57, eps=0.012
+06 16:06:51 pdf pdf incomplete Sidh Automobiles Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+06 16:07:17 pdf rule reader Sidh Automobiles Ltd: rule: stan: missing ['pat'] n=6
