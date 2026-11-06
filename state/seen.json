@@ -4234,7 +4234,9 @@
 "47281d14-cc76-4890-9fdd-3262fa354cd8",
 "842dbccb-95d3-47e9-97da-e373b48955dd",
 "cf42fbc8-6407-490b-b030-ce31cb51f8e8",
-"9dc1064e-1828-442c-9f3f-1f688d9f5af4"
+"9dc1064e-1828-442c-9f3f-1f688d9f5af4",
+"bb740c3c-e1f7-43bb-9850-91741370d94f",
+"88e152c7-ba74-4eaa-a823-4353f1dc10a2"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6989,7 +6991,9 @@
 "522245|Sep-26|na",
 "512213|Sep-26|na",
 "500530|Sep-26|consolidated",
-"522074|Sep-26|consolidated"
+"522074|Sep-26|consolidated",
+"523539|Sep-26|standalone",
+"543434|Sep-26|standalone"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7065,82 +7069,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793949557.3615587,
-"last": 1793956784.3559055,
-"alerted": true
-},
-"88e152c7-ba74-4eaa-a823-4353f1dc10a2": {
-"rec": {
-"NEWSID": "88e152c7-ba74-4eaa-a823-4353f1dc10a2",
-"SCRIP_CD": 543434,
-"XML_NAME": "ANN_543434_88E152C7-BA74-4EAA-A823-4353F1DC10A2",
-"NEWSSUB": "Supriya Lifescience Ltd - 543434 - Financial Results For Quarter And Half Year Ended September 30, 2026.",
-"DT_TM": "2026-11-06T12:59:05.467",
-"NEWS_DT": "2026-11-06T12:59:05.467",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "d0dd7fc3-d9f9-4eea-8fe9-75ff568ff81e.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/supriya-lifescience-ltd/supriya/543434/",
-"SLONGNAME": "Supriya Lifescience Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 11,
-"News_submission_dt": "2026-11-06T12:59:04",
-"DissemDT": "2026-11-06T12:59:05.467",
-"TimeDiff": "00:00:01",
-"Fld_Attachsize": 2108730,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793950385.5978904,
-"last": 1793956784.3559055,
-"alerted": true
-},
-"bb740c3c-e1f7-43bb-9850-91741370d94f": {
-"rec": {
-"NEWSID": "bb740c3c-e1f7-43bb-9850-91741370d94f",
-"SCRIP_CD": 523539,
-"XML_NAME": "ANN_523539_BB740C3C-E1F7-43BB-9850-91741370D94F",
-"NEWSSUB": "Precision Wires India Ltd - 523539 - Results For The Quarter And Half Year Ended On 30.09.2026",
-"DT_TM": "2026-11-06T13:07:41.333",
-"NEWS_DT": "2026-11-06T13:07:41.333",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "4b993254-78fa-4fcc-97fe-8689e9bdf67f.pdf",
-"MORE": "",
-"HEADLINE": "Result for the quarter and half year ended on 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/precision-wires-india-ltd/precwire/523539/",
-"SLONGNAME": "Precision Wires India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 12,
-"News_submission_dt": "2026-11-06T13:07:41",
-"DissemDT": "2026-11-06T13:07:41.333",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3532947,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793950993.3767803,
 "last": 1793956784.3559055,
 "alerted": true
 },
@@ -7374,14 +7302,6 @@
 }
 },
 "lag": [
-[
-"Moneyview Ltd",
-55
-],
-[
-"M & B Engineering Ltd",
-46
-],
 [
 "Igarashi Motors India Ltd",
 46
@@ -8573,6 +8493,14 @@
 [
 "Elgi Equipments Ltd",
 166
+],
+[
+"Precision Wires India Ltd",
+110
+],
+[
+"Supriya Lifescience Ltd",
+121
 ]
 ],
 "gem_use": {
@@ -9342,6 +9270,16 @@
 "rev": 11343.0,
 "pat": 1283.0,
 "t": 1793957695.3982692,
+"last": 0
+},
+"523539|Sep-26|standalone": {
+"code": "523539",
+"name": "Precision Wires India Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 19720.188000000002,
+"pat": 433.85400000000004,
+"t": 1793957703.1476877,
 "last": 0
 }
 },
@@ -11075,7 +11013,8 @@
 "161ba45d-f25f-4c72-8380-48e15472fcb2": 1,
 "3543a916-3efb-41fc-ac98-f6b54403b0c0": 1,
 "3f58f436-27e0-45f2-9d40-ddf98c15c1e0": 1,
-"efe6d0fb-7f53-40bf-9064-f7f05a946cf0": 1
+"efe6d0fb-7f53-40bf-9064-f7f05a946cf0": 1,
+"bb740c3c-e1f7-43bb-9850-91741370d94f": 1
 },
 "cons_expected": {
 "0983f768-37dc-45ba-a7f5-d77fc59035c0": 1,
