@@ -4206,7 +4206,9 @@
 "e47b2176-4b82-4fb1-a55d-0d1a1126fec4",
 "0a50aefb-c0f0-475c-875e-57a09918eb18",
 "c8f06986-270f-4130-811b-44177f50e8f1",
-"a13e48af-49c7-4565-9e8f-f6fe37e2ee94"
+"a13e48af-49c7-4565-9e8f-f6fe37e2ee94",
+"b484f4b9-4331-43b1-af52-a41823826b63",
+"2aea116b-aad1-465c-9a33-163a9483c976"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6933,7 +6935,9 @@
 "543753|Sep-26|consolidated",
 "531471|Sep-26|standalone",
 "542460|Sep-26|consolidated",
-"540575|Sep-26|consolidated"
+"540575|Sep-26|consolidated",
+"521178|Sep-26|standalone",
+"512022|Sep-26|consolidated"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7123,7 +7127,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793949197.5440361,
-"last": 1793951882.3316035,
+"last": 1793953780.620889,
 "alerted": false
 },
 "933099f9-8004-4bce-a34a-64b12337b767": {
@@ -7275,7 +7279,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793949713.1479719,
-"last": 1793951882.3316035,
+"last": 1793953780.620889,
 "alerted": false
 },
 "88e152c7-ba74-4eaa-a823-4353f1dc10a2": {
@@ -7315,44 +7319,6 @@
 "first": 1793950385.5978904,
 "last": 1793953780.620889,
 "alerted": true
-},
-"b484f4b9-4331-43b1-af52-a41823826b63": {
-"rec": {
-"NEWSID": "b484f4b9-4331-43b1-af52-a41823826b63",
-"SCRIP_CD": 521178,
-"XML_NAME": "ANN_521178_B484F4B9-4331-43B1-AF52-A41823826B63",
-"NEWSSUB": "Sri Ramakrishna Mills Coimbatore Ltd-$ - 521178 - UNAUDITED STANDALONE FINANCIAL RESULTS FOR THE QUARTER ENDED 30.09.2026",
-"DT_TM": "2026-11-06T13:02:13.51",
-"NEWS_DT": "2026-11-06T13:02:13.51",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "47867163-90ec-41df-8dad-ea6e8092c87f.pdf",
-"MORE": "",
-"HEADLINE": "UNAUDITED STANDALONE FINANCIAL RESULTS FOR THE QUARTER ENDED 30.09.2026 ENCLOSED",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sri-ramakrishna-mills-coimbatore-ltd/srmcl/521178/",
-"SLONGNAME": "Sri Ramakrishna Mills Coimbatore Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 11,
-"News_submission_dt": "2026-11-06T13:02:13",
-"DissemDT": "2026-11-06T13:02:13.51",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5554706,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793950385.5978904,
-"last": 1793951882.3316035,
-"alerted": false
 },
 "bb740c3c-e1f7-43bb-9850-91741370d94f": {
 "rec": {
@@ -7579,7 +7545,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793951882.3316035,
-"last": 1793951882.3316035,
+"last": 1793953780.620889,
 "alerted": false
 },
 "47281d14-cc76-4890-9fdd-3262fa354cd8": {
@@ -7888,10 +7854,6 @@
 }
 },
 "lag": [
-[
-"Sampann Utpadan India Ltd",
-50
-],
 [
 "Juniper Hotels Ltd",
 7
@@ -9087,6 +9049,10 @@
 [
 "Duke Offshore Ltd",
 84
+],
+[
+"Sri Ramakrishna Mills Coimbatore Ltd-$",
+57
 ]
 ],
 "gem_use": {
@@ -9115,7 +9081,7 @@
 "2026-11-03": 879,
 "2026-11-04": 948,
 "2026-11-05": 377,
-"2026-11-06": 19
+"2026-11-06": 24
 },
 "pdfposted": {
 "538546|Sep-26|standalone": {
@@ -9746,6 +9712,26 @@
 "rev": 0.507,
 "pat": -0.9740000000000001,
 "t": 1793956035.8442538,
+"last": 0
+},
+"521178|Sep-26|standalone": {
+"code": "521178",
+"name": "Sri Ramakrishna Mills Coimbatore Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 240.393,
+"pat": 18.846,
+"t": 1793956325.689595,
+"last": 0
+},
+"512022|Sep-26|consolidated": {
+"code": "512022",
+"name": "Winro Commercial India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 738.484,
+"pat": 556.313,
+"t": 1793956391.433344,
 "last": 0
 }
 },
@@ -11469,7 +11455,9 @@
 "e47b2176-4b82-4fb1-a55d-0d1a1126fec4": 1,
 "0a50aefb-c0f0-475c-875e-57a09918eb18": 1,
 "c8f06986-270f-4130-811b-44177f50e8f1": 1,
-"a13e48af-49c7-4565-9e8f-f6fe37e2ee94": 1
+"a13e48af-49c7-4565-9e8f-f6fe37e2ee94": 1,
+"b484f4b9-4331-43b1-af52-a41823826b63": 1,
+"9486501e-0fb9-4170-a2ac-aea08f2b68d9": 1
 },
 "cons_expected": {
 "0983f768-37dc-45ba-a7f5-d77fc59035c0": 1,
@@ -11990,7 +11978,8 @@
 "a154fdd7-da0f-4761-87fb-78391096e795": 1,
 "d5855e7f-5129-4e05-8e82-8b059e91f2cc": 1,
 "2b46126e-3822-403c-adce-8fbf9f1dc333": 1,
-"1c67b702-4445-477c-b7bb-691b5746063f": 1
+"1c67b702-4445-477c-b7bb-691b5746063f": 1,
+"2aea116b-aad1-465c-9a33-163a9483c976": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
@@ -13247,9 +13236,14 @@
 },
 "2026-11-06": {
 "main": {
-"ok": 49,
+"ok": 72,
 "429": 1,
-"other": 22
+"other": 25
+},
+"results-key": {
+"ok": 1,
+"429": 0,
+"other": 0
 }
 }
 }
