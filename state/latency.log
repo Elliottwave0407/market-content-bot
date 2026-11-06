@@ -1786,3 +1786,17 @@
 06 16:13:20 pdf pdf read failed Sidh Automobiles Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible i
 06 16:13:46 pdf rule reader Sidh Automobiles Ltd: rule: stan: missing ['pat'] n=6
 06 16:13:47 seen 533262 Ramky Infrastructure Ltd cat=Board Meeting early=True bse_time=21:42:38 dissem=21:42:38
+06 16:14:08 pdf nim reader Sidh Automobiles Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
+06 16:14:08 pdf pdf read failed Sidh Automobiles Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible i
+06 16:14:46 pdf pdf margin q-1 differs from BSE history by 6.4 pts: margin withheld Ramky Infrastructure Ltd consolidated
+06 16:14:46 pdf pdf incomplete Ramky Infrastructure Ltd consolidated: missing ['ebitda'] - not posting from PDF
+06 16:15:09 pdf nim reader Sidh Automobiles Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
+06 16:15:09 pdf pdf read failed Sidh Automobiles Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible i
+06 16:15:09 pdf rule reader Ramky Infrastructure Ltd: rule: stan: does not reconcile [million] total_income=[675672.0, 583320.0, 5258.03] total_expenses=[552295.0, 4583.93, 421255.0] exceptional=[123377.0, 51927.0, 1075.48] pbt=[124023.0, 551.8, 
+06 16:15:34 pdf rule reader Sidh Automobiles Ltd: rule: stan: missing ['pat'] n=6
+06 16:15:34 pdf pdf current col Ramky Infrastructure Ltd consolidated ok=False/3: revenue=6045.38, other_income=711.34, total_income=6756.72, total_expenses=5522.95, finance_costs=449.8, depreciation=100.03, pbt=1240.23, tax=212.13, pat=1028.09, 
+06 16:15:34 pdf pdf margin q-1 differs from BSE history by 6.4 pts: margin withheld Ramky Infrastructure Ltd consolidated
+06 16:15:34 pdf pdf incomplete Ramky Infrastructure Ltd consolidated: missing ['ebitda'] - not posting from PDF
+06 16:16:10 pdf rule reader Ramky Infrastructure Ltd: rule: stan: does not reconcile [million] total_income=[675672.0, 583320.0, 5258.03] total_expenses=[552295.0, 4583.93, 421255.0] exceptional=[123377.0, 51927.0, 1075.48] pbt=[124023.0, 551.8, 
+06 16:16:42 pdf nim reader Sidh Automobiles Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
+06 16:16:42 pdf pdf read failed Sidh Automobiles Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible i
