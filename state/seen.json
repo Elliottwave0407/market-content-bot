@@ -4237,7 +4237,10 @@
 "9dc1064e-1828-442c-9f3f-1f688d9f5af4",
 "bb740c3c-e1f7-43bb-9850-91741370d94f",
 "88e152c7-ba74-4eaa-a823-4353f1dc10a2",
-"74db323a-6699-4b22-a922-73bcb3d2b415"
+"74db323a-6699-4b22-a922-73bcb3d2b415",
+"5d229149-1151-4ad1-a198-4a26bd7885d6",
+"1e2735b7-2379-4a78-8666-fd96158c611a",
+"8a66355f-1b2c-4759-99b1-a5d75e59e8b9"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6995,7 +6998,9 @@
 "522074|Sep-26|consolidated",
 "523539|Sep-26|standalone",
 "543434|Sep-26|standalone",
-"500444|Sep-26|consolidated"
+"500444|Sep-26|consolidated",
+"500338|Sep-26|na",
+"543686|Sep-26|consolidated"
 ],
 "pending": {
 "76db2f33-4a57-4ff4-91d1-38030d053bf4": {
@@ -7071,44 +7076,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1793949557.3615587,
-"last": 1793956784.3559055,
-"alerted": true
-},
-"5d229149-1151-4ad1-a198-4a26bd7885d6": {
-"rec": {
-"NEWSID": "5d229149-1151-4ad1-a198-4a26bd7885d6",
-"SCRIP_CD": 500338,
-"XML_NAME": "ANN_500338_5D229149-1151-4AD1-A198-4A26BD7885D6",
-"NEWSSUB": "Prism Johnson Ltd - 500338 - Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-06T13:03:35.123",
-"NEWS_DT": "2026-11-06T13:03:35.123",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "02f16352-c503-4249-bec8-38a5c59b3a31.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/prism-johnson-ltd/prsmjohnsn/500338/",
-"SLONGNAME": "Prism Johnson Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 12,
-"News_submission_dt": "2026-11-06T13:03:34",
-"DissemDT": "2026-11-06T13:03:35.123",
-"TimeDiff": "00:00:01",
-"Fld_Attachsize": 7599789,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793950993.3767803,
 "last": 1793956784.3559055,
 "alerted": true
 },
@@ -7188,44 +7155,6 @@
 "last": 1793957618.981624,
 "alerted": true
 },
-"8a66355f-1b2c-4759-99b1-a5d75e59e8b9": {
-"rec": {
-"NEWSID": "8a66355f-1b2c-4759-99b1-a5d75e59e8b9",
-"SCRIP_CD": 543686,
-"XML_NAME": "ANN_543686_8A66355F-1B2C-4759-99B1-A5D75E59E8B9",
-"NEWSSUB": "Sirca Paints India Ltd - 543686 - Financial Result For The Quarter Ending September 30, 2026",
-"DT_TM": "2026-11-06T13:49:15.783",
-"NEWS_DT": "2026-11-06T13:49:15.783",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "98971a19-4b1b-4dc5-ae71-d40860bf05b3.pdf",
-"MORE": "",
-"HEADLINE": "Please find the enclosed Financial result for 2nd quarter and Half year ending september 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sirca-paints-india-ltd/sirca/543686/",
-"SLONGNAME": "Sirca Paints India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 15,
-"News_submission_dt": "2026-11-06T13:49:15",
-"DissemDT": "2026-11-06T13:49:15.783",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1725325,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1793953780.620889,
-"last": 1793956784.3559055,
-"alerted": true
-},
 "9db0b826-affe-42db-b2aa-165d8c9f33ca": {
 "rec": {
 "NEWSID": "9db0b826-affe-42db-b2aa-165d8c9f33ca",
@@ -7266,14 +7195,6 @@
 }
 },
 "lag": [
-[
-"Majestic Auto Ltd-$",
-46
-],
-[
-"Oil Country Tubular Ltd",
-46
-],
 [
 "Tamboli Industries Ltd",
 72
@@ -8465,6 +8386,14 @@
 [
 "West Coast Paper Mills Ltd",
 14
+],
+[
+"Prism Johnson Ltd",
+110
+],
+[
+"Sirca Paints India Ltd",
+64
 ]
 ],
 "gem_use": {
@@ -9254,6 +9183,16 @@
 "rev": 12767.714,
 "pat": 1119.362,
 "t": 1793957725.8545144,
+"last": 0
+},
+"543686|Sep-26|consolidated": {
+"code": "543686",
+"name": "Sirca Paints India Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1601.9850000000001,
+"pat": 203.25,
+"t": 1793957766.4348779,
 "last": 0
 }
 },
@@ -11518,7 +11457,9 @@
 "107f48aa-4e9e-4b4f-b1d1-aa9fc4a93c9e": 1,
 "404b4393-6bb1-4a70-8aff-6856d28e2e57": 1,
 "9dc1064e-1828-442c-9f3f-1f688d9f5af4": 1,
-"74db323a-6699-4b22-a922-73bcb3d2b415": 1
+"74db323a-6699-4b22-a922-73bcb3d2b415": 1,
+"5d229149-1151-4ad1-a198-4a26bd7885d6": 1,
+"8a66355f-1b2c-4759-99b1-a5d75e59e8b9": 1
 },
 "half_q": {
 "32c805b9-0986-412a-9c94-44a678fce5c0": {
