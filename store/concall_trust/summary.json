@@ -1,19 +1,19 @@
 {
- "documents": 10985,
- "facts": 247344,
+ "documents": 11020,
+ "facts": 248242,
  "grades": {
-  "A": 164390,
-  "B": 69463,
-  "C": 13491
+  "A": 165005,
+  "B": 69710,
+  "C": 13527
  },
  "issues": {
-  "stmt_nums": 52829,
-  "no_period": 1176,
-  "realigned": 32605,
+  "stmt_nums": 53018,
+  "no_period": 1178,
+  "realigned": 32706,
   "judge_partial": 101,
-  "value_nums": 2331,
-  "short_quote": 2121,
-  "question": 4168,
+  "value_nums": 2338,
+  "short_quote": 2125,
+  "question": 4179,
   "judge_no": 4
  },
  "by_reader": {
@@ -35,6 +35,11 @@
   "mistral:ministral-14b v3": {
    "A": 12,
    "B": 4
+  },
+  "nemotron-3-ultra-550b-a55b v4": {
+   "A": 615,
+   "B": 247,
+   "C": 36
   }
  }
 }
