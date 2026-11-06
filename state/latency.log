@@ -1705,3 +1705,11 @@
 06 11:21:08 wait 543637 Pace E-Commerce Ventures Ltd: numbers not yet on BSE
 06 11:21:14 ready 531067|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Capital India Finance Ltd consolidated ok=True/3: revenue=12399.35, other_income=408.34, total_income=12807.69, total_expenses=12882.56, finance
 06 11:23:21 ready 514414|Sep-26|standalone kind=photo waited_min=17.8 tries=3 pdf_log=pdf read failed Nagreeka Capital & Infrastructure Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPoo
+06 11:25:45 pdf nim reader Nagreeka Capital & Infrastructure Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 11:25:45 pdf pdf read failed Nagreeka Capital & Infrastructure Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+06 11:25:45 pdf nim reader Oxford Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+06 11:25:45 pdf pdf current col Oxford Industries Ltd standalone ok=True/3: revenue=4.5, other_income=0.0, total_income=4.5, total_expenses=8.27, finance_costs=0.0, depreciation=0.0, pbt=-3.77, tax=0.0, pat=-3.77, eps=-0.06
+06 11:25:45 pdf rule reader Revati Media Ltd: rule: no results table page | ocr: rule: no results table page
+06 11:25:45 pdf strong model retry did not help: None
+06 11:25:45 pdf nim reader Revati Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+06 11:25:45 pdf pdf read failed Revati Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
