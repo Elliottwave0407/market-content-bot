@@ -1989,3 +1989,14 @@
 06 09:50:41 pdf rule reader Sam Industries Ltd: rule: no results table page | ocr: rule: no results table page
 06 09:50:49 ready 532005|Sep-26|standalone kind=photo waited_min=0.8 tries=1 pdf_log=pdf current col Sam Industries Ltd standalone ok=True/3: revenue=397.58, other_income=-19.89, total_income=377.66, total_expenses=321.98, finance_costs=73.75, d
 06 09:51:00 pdf pdf current col Sam Industries Ltd standalone ok=True/3: revenue=397.58, other_income=-19.89, total_income=377.66, total_expenses=321.98, finance_costs=73.75, depreciation=71.75, pbt=55.68, tax=18.25, pat=37.43, eps=0.33
+06 09:51:03 seen 530829 Cil Securities Ltd cat=Board Meeting early=True bse_time=15:19:40 dissem=15:19:40
+06 09:51:36 pdf nim reader Futuristic Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+06 09:51:36 pdf pdf read failed Futuristic Solutions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possib
+06 09:51:36 pdf pdf current col Coromandel International Ltd consolidated ok=False/3: revenue=10294.13, other_income=24.26, total_income=10318.39, total_expenses=9642.04, finance_costs=117.99, depreciation=186.13, pbt=706.35, tax=182.98, pat=523.
+06 09:51:38 seen 533155 Jubilant FoodWorks Ltd cat=Board Meeting early=True bse_time=15:20:06 dissem=15:20:06
+06 09:51:38 seen 539225 Jiya Eco-Products Ltd cat=Board Meeting early=True bse_time=15:21:07 dissem=15:21:07
+06 09:52:08 pdf rule reader Jiya Eco-Products Ltd: rule: stan: no revenue row
+06 09:52:19 pdf rule reader Jiya Eco-Products Ltd: rule: stan: no revenue row
+06 09:52:19 pdf rule reader Cil Securities Ltd: rule: stan: does not reconcile [lakh] total_income=[245.83, 452.75, 222.43] total_expenses=[157.72, 185.7, 136.92] exceptional=[0.0, 0.0, 0.0] pbt=[88.11, 267.05, 85.51] pat=[66.63, 216.67, 63.94] f
+06 09:52:21 ready 530829|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Cil Securities Ltd standalone ok=True/3: revenue=245.64, other_income=0.19, total_income=245.83, total_expenses=157.72, finance_costs=1.98, depr
+06 09:52:34 pdf pdf current col Cil Securities Ltd standalone ok=True/3: revenue=245.64, other_income=0.19, total_income=245.83, total_expenses=157.72, finance_costs=1.98, depreciation=4.99, pbt=88.11, tax=21.48, pat=66.63, eps=1.33
