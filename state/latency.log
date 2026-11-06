@@ -1716,3 +1716,13 @@
 06 15:40:15 seen 532797 Autoline Industries Ltd cat=Result early=False bse_time=20:47:28 dissem=20:47:28
 06 15:40:15 seen 524500 Kilitch Drugs India Ltd cat=Board Meeting early=True bse_time=20:55:34 dissem=20:55:34
 06 15:40:15 seen 532959 AJR Infra And Tolling Ltd cat=Board Meeting early=True bse_time=21:08:18 dissem=21:08:18
+06 15:41:09 wait 524500 Kilitch Drugs India Ltd: numbers not yet on BSE
+06 15:41:11 wait 532797 Autoline Industries Ltd: numbers not yet on BSE
+06 15:42:16 wait 509162 Indag Rubber Ltd-$: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
+06 15:42:50 ready 533181|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Intrasoft Technologies Ltd consolidated ok=False/3: revenue=14, other_income=16.75, total_income=14, total_expenses=13, finance_costs=44.3, depr
+06 15:43:28 wait 536672 VCU Data Management Ltd: numbers not yet on BSE
+06 15:43:31 pdf pdf current col Intrasoft Technologies Ltd consolidated ok=False/3: revenue=14, other_income=16.75, total_income=14, total_expenses=13, finance_costs=44.3, depreciation=31.53, pbt=402.95, tax=26.07, pat=376.88, eps=2.31
+06 15:43:31 pdf pdf history mismatch Intrasoft Technologies Ltd consolidated cols=['30 September 2026', '30 June 2026', '30 September 2025'] :: q-1: pdf rev 37.505 pat 45.452 | bse rev 1396.33 pat 45.45 (Rs mn); q-4: pdf rev 1.3 pat 34.121 | bse 
+06 15:43:31 pdf pdf has consolidated but it failed checks: not falling back to standalone Intrasoft Technologies Ltd
+06 15:43:31 pdf pdf current col VCU Data Management Ltd standalone ok=True/3: revenue=61.06, other_income=1.39, total_income=62.45, total_expenses=71.17, finance_costs=-0.25, depreciation=0.57, pbt=-8.71, tax=0.01, pat=-8.72, eps=-0.01
+06 15:43:31 pdf pdf incomplete VCU Data Management Ltd standalone: missing ['revenue'] - not posting from PDF
