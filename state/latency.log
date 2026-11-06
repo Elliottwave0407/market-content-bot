@@ -1538,3 +1538,15 @@
 06 19:09:51 pdf rule reader Garodia Chemicals Ltd: rule: stan: no revenue row
 06 19:09:51 pdf pdf current col Prakash Woollen & Synthetic Mills Ltd standalone ok=True/2: revenue=2487.18, other_income=None, total_income=2487.18, total_expenses=2790.26, finance_costs=102.46, depreciation=103.96, pbt=-303.08, tax=148.09, pat=
 06 19:12:23 ready 530161|Sep-26|standalone kind=photo waited_min=19.2 tries=3 pdf_log=pdf current col Garodia Chemicals Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=2.36, finance_costs=None, depreciati
+06 19:33:34 seen 531950 Vertex Securities Ltd cat=Result early=False bse_time=13:05:28 dissem=13:05:28
+06 19:33:34 seen 543645 Hindprakash Industries Ltd cat=Result early=False bse_time=14:18:20 dissem=14:18:20
+06 19:33:34 seen 500234 Kakatiya Cement Sugar & Indu cat=Result early=False bse_time=14:33:12 dissem=14:33:12
+06 19:33:34 seen 538993 Purohit Construction Ltd cat=Result early=False bse_time=14:33:18 dissem=14:33:18
+06 19:33:34 seen 521048 Advance Lifestyles Ltd cat=Result early=False bse_time=17:38:32 dissem=17:38:32
+06 19:34:06 pdf rule reader Hindprakash Industries Ltd: rule: unit not found | ocr: rule: unit not found
+06 19:34:37 pdf rule reader Advance Lifestyles Ltd: rule: no results table page | ocr: rule: no results table page
+06 19:34:57 pdf rule reader Vertex Securities Ltd: rule: no results table page | ocr: rule: no results table page
+06 19:35:06 pdf strong model retry did not help: HTTP 429 (per-day) on gemini-3.5-flash | results-key: HTTP 4
+06 19:35:31 pdf nim reader Hindprakash Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (g
+06 19:35:31 pdf pdf read failed Hindprakash Industries Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (per-day) on gemini-flash-latest | vision-key: HTT
+06 19:35:34 pdf rule reader Purohit Construction Ltd: rule: no results table page | ocr: rule: no results table page
