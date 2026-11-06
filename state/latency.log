@@ -2051,3 +2051,6 @@
 06 10:09:15 ready 531273|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Radhe Developers India Ltd standalone ok=True/3: revenue=3.06, other_income=0.0, total_income=3.06, total_expenses=119.47, finance_costs=18.23, 
 06 10:09:35 pdf pdf current col Ushakiran Finance Ltd standalone ok=True/3: revenue=7.51, other_income=0.05, total_income=7.56, total_expenses=5.16, finance_costs=None, depreciation=0.36, pbt=2.4, tax=0.11, pat=2.29, eps=0.09
 06 10:09:35 pdf pdf incomplete Ushakiran Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+06 10:09:51 pdf rule reader Anupam Rasayan India Ltd: rule: filing mentions consolidated results but that table was not read
+06 10:09:51 pdf nim reader Anupam Rasayan India Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+06 10:09:51 pdf pdf read failed Anupam Rasayan India Ltd: gemini skipped (quota/backoff); nim: cooling down
