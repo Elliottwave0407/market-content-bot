@@ -2005,3 +2005,8 @@
 06 09:53:11 pdf rule reader Jubilant FoodWorks Ltd: rule: column dates not found | ocr: rule: stan: missing ['pat'] n=6
 06 09:53:13 seen 534063 Futuristic Solutions Ltd cat=Result early=False bse_time=15:21:52 dissem=15:21:52
 06 09:53:13 seen 526931 Hariyana Ship Breakers Ltd-$ cat=Board Meeting early=True bse_time=15:22:15 dissem=15:22:15
+06 09:53:43 wait 534063 Futuristic Solutions Ltd: numbers not yet on BSE
+06 09:53:51 pdf strong model retry did not help: None
+06 09:54:00 pdf nim reader Futuristic Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+06 09:54:00 pdf pdf read failed Futuristic Solutions Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possib
+06 09:54:07 ready 533155|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
