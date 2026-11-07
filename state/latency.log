@@ -1596,3 +1596,15 @@
 07 08:43:04 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Infrax Renewable Ltd
 07 08:45:39 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
 07 08:45:43 ready 540082|Sep-26|na kind=photo waited_min=45.1 tries=99 pdf_log=
+07 08:47:22 seen 538537 Pipan Oils Ltd cat=Result early=False bse_time=14:16:44 dissem=14:16:44
+07 08:47:46 wait 538537 Pipan Oils Ltd: numbers not yet on BSE
+07 08:47:53 pdf rule reader Pipan Oils Ltd: rule: no results table page | ocr: rule: no results table page
+07 08:47:55 seen 507508 Riga Sugar Company Ltd-$ cat=Board Meeting early=True bse_time=14:17:22 dissem=14:17:22
+07 08:47:55 seen 540757 Sheetal Cool Products Ltd cat=Board Meeting early=True bse_time=14:17:47 dissem=14:17:47
+07 08:48:15 pdf pdf rule-read previous/year-ago column [4] does not reconcile and BSE history does not confirm it Riga Sugar Company Ltd-$ standalone
+07 08:48:15 pdf rule-read numbers rejected by later checks, AI reader will retry: Riga Sugar Company Ltd-$
+07 08:48:26 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/2: revenue=975.24, other_income=None, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.8
+07 08:48:26 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+07 08:48:50 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/2: revenue=975.24, other_income=None, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.8
+07 08:48:50 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+07 08:48:59 ready 544121|Sep-26|na kind=photo waited_min=45.3 tries=99 pdf_log=
