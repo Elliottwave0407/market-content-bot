@@ -1590,3 +1590,7 @@
 07 08:41:32 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
 07 08:42:05 pdf pdf checks failed HBL Engineering Ltd-$ consolidated
 07 08:42:05 pdf pdf has consolidated but it failed checks: not falling back to standalone HBL Engineering Ltd-$
+07 08:42:48 seen 544919 Infrax Renewable Ltd cat=Result early=False bse_time=14:12:00 dissem=14:12:00
+07 08:43:03 wait 544919 Infrax Renewable Ltd: numbers not yet on BSE
+07 08:43:04 pdf rule reader Infrax Renewable Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+07 08:43:04 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Infrax Renewable Ltd
