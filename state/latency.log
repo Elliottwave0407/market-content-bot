@@ -1500,3 +1500,10 @@
 07 14:41:33 wait 524548 Sharma East India Hospitals : numbers not yet on BSE
 07 14:41:39 ready 524548|Sep-26|standalone kind=photo waited_min=0.4 tries=1 pdf_log=pdf current col Sharma East India Hospitals & Medical Research Ltd standalone ok=True/3: revenue=1035.89, other_income=4.55, total_income=1040.44, total_expense
 07 14:50:27 ready 544514|Sep-26|na kind=photo waited_min=45.1 tries=99 pdf_log=
+07 14:53:07 seen 526891 Market Creators Ltd cat=Result early=False bse_time=20:22:32 dissem=20:22:32
+07 14:53:29 wait 526891 Market Creators Ltd: numbers not yet on BSE
+07 14:53:46 pdf rule reader Market Creators Ltd: rule: no results table page | ocr: rule: no results table page
+07 14:53:58 pdf pdf current col Market Creators Ltd standalone ok=True/3: revenue=143.12, other_income=30.55, total_income=173.67, total_expenses=159.99, finance_costs=16.55, depreciation=1.98, pbt=12.31, tax=0.48, pat=11.83, eps=0.11
+07 14:53:58 pdf pdf q-1 revenue typo: pdf 14.509 -> BSE history 16.99 (profit matched) Market Creators Ltd
+07 14:53:58 pdf pdf history cells corrected from BSE for q-[1]: Market Creators Ltd standalone
+07 14:53:58 pdf pdf incomplete Market Creators Ltd standalone: missing ['ebitda'] - not posting from PDF
