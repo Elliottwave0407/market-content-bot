@@ -1628,3 +1628,9 @@
 07 08:55:09 pdf nim reader HBL Engineering Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
 07 08:55:09 pdf pdf read failed HBL Engineering Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible
 07 08:55:09 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
+07 08:56:32 pdf nim reader Riga Sugar Company Ltd-$: ok (gemini: gemini skipped (quota/backoff))
+07 08:56:32 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/2: revenue=975.24, other_income=None, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.8
+07 08:56:32 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+07 08:57:01 seen 539659 Vikram Kamats Hospitality Lt cat=Board Meeting early=True bse_time=14:26:00 dissem=14:26:00
+07 08:58:03 pdf strong model retry did not help: None
+07 08:58:12 ready 539659|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
