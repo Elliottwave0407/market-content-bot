@@ -1608,3 +1608,9 @@
 07 08:48:50 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/2: revenue=975.24, other_income=None, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.8
 07 08:48:50 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 07 08:48:59 ready 544121|Sep-26|na kind=photo waited_min=45.3 tries=99 pdf_log=
+07 08:49:32 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
+07 08:50:02 seen 530883 Super Crop Safe Ltd cat=Result early=False bse_time=14:19:23 dissem=14:19:23
+07 08:50:25 wait 530883 Super Crop Safe Ltd: numbers not yet on BSE
+07 08:50:30 pdf rule reader Super Crop Safe Ltd: rule: stan: does not reconcile [lakh] total_income=[1655.17, 1865.33, 1476.85] total_expenses=[1583.36, 1734.65, 1403.72] exceptional=[0.0, 0.0, 0.0] pbt=[71.81, 130.68, 73.13] tax=[0.0, 0.0, 0.0] 
+07 08:50:49 ready 530883|Sep-26|standalone kind=photo waited_min=0.8 tries=1 pdf_log=pdf current col Super Crop Safe Ltd standalone ok=True/3: revenue=1654.79, other_income=0.38, total_income=1655.17, total_expenses=1583.36, finance_costs=35.91,
+07 08:50:56 pdf pdf current col Super Crop Safe Ltd standalone ok=True/3: revenue=1654.79, other_income=0.38, total_income=1655.17, total_expenses=1583.36, finance_costs=35.91, depreciation=10.01, pbt=71.81, tax=-1.0, pat=72.81, eps=0.16
