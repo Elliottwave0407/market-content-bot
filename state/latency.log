@@ -1677,3 +1677,10 @@
 07 09:07:17 seen 501270 Antariksh Industries Ltd cat=Result early=False bse_time=14:36:42 dissem=14:36:42
 07 09:07:17 seen 500336 Surya Roshni Ltd cat=Board Meeting early=True bse_time=14:37:06 dissem=14:37:06
 07 09:07:44 wait 501270 Antariksh Industries Ltd: numbers not yet on BSE
+07 09:08:29 pdf nim reader Spectrum Electrical Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 09:08:29 pdf pdf read failed Spectrum Electrical Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 09:08:32 pdf rule reader Spectrum Electrical Industries Ltd: rule: stan: missing ['pat'] n=4
+07 09:08:32 pdf nim reader Spectrum Electrical Industries Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+07 09:08:32 pdf pdf read failed Spectrum Electrical Industries Ltd: gemini skipped (quota/backoff); nim: cooling down
+07 09:09:16 ready 517271|Sep-26|na kind=photo waited_min=46.1 tries=8 pdf_log=nim reader Antariksh Industries Ltd: ok (gemini: gemini skipped (quota/backoff)) | nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeou
+07 09:09:32 ready 501270|Sep-26|standalone kind=photo waited_min=2.0 tries=1 pdf_log=pdf current col Antariksh Industries Ltd standalone ok=True/3: revenue=1.0, other_income=0.0, total_income=1.0, total_expenses=0.0, finance_costs=0.0, depreciat
