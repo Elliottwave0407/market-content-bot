@@ -1555,3 +1555,9 @@
 07 10:55:09 seen 544575 Mittal Sections Ltd cat=Result early=False bse_time=16:24:41 dissem=16:24:41
 07 10:55:09 seen 539692 Interactive Financial Servic cat=Result early=False bse_time=16:24:47 dissem=16:24:47
 07 10:55:31 wait 539692 Interactive Financial Servic: numbers not yet on BSE
+07 10:55:33 wait 544575 Mittal Sections Ltd: numbers not yet on BSE
+07 10:55:37 pdf rule reader Mittal Sections Ltd: rule: no results table page | ocr: rule: no results table page
+07 10:55:37 pdf rule reader Interactive Financial Services Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+07 10:55:41 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 10:55:41 pdf pdf current col Interactive Financial Services Ltd standalone ok=True/3: revenue=82.856, other_income=35.548, total_income=118.404, total_expenses=64.512, finance_costs=3.618, depreciation=1.181, pbt=53.892, tax=13.518, pat=40.375
+07 10:55:44 pdf pdf column dates ['30/09/2026', '30/06/2025', '31/03/2026'] are not a quarterly layout: not used Mittal Sections Ltd
