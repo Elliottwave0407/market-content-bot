@@ -1659,3 +1659,18 @@
 07 11:51:11 seen 532509 Suprajit Engineering Ltd-$ cat=Result early=False bse_time=17:20:38 dissem=17:20:38
 07 11:51:44 wait 532113 Brijlaxmi Leasing & Finance : numbers not yet on BSE
 07 11:52:24 seen 526433 ASM Technologies Ltd cat=Result early=False bse_time=17:21:26 dissem=17:21:26
+07 11:52:47 wait 526433 ASM Technologies Ltd: numbers not yet on BSE
+07 11:52:54 pdf pdf current col Lexora Global Ltd consolidated ok=True/3: revenue=320.86, other_income=4.74, total_income=325.6, total_expenses=293.34, finance_costs=0.0, depreciation=None, pbt=32.26, tax=4.88, pat=27.38, eps=None
+07 11:52:54 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:52:56 pdf rule reader Lexora Global Ltd: ok
+07 11:52:56 pdf pdf current col Lexora Global Ltd consolidated ok=True/3: revenue=320.86, other_income=4.74, total_income=325.6, total_expenses=293.34, finance_costs=0.0, depreciation=None, pbt=32.26, tax=4.88, pat=27.38, eps=None
+07 11:52:56 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:53:30 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:53:33 pdf nim reader Brijlaxmi Leasing & Finance Ltd: ok (gemini: gemini skipped (quota/backoff))
+07 11:53:48 pdf nim reader Shamrock Industrial Company Ltd: ok (gemini: gemini skipped (quota/backoff))
+07 11:53:53 pdf pdf incomplete Shamrock Industrial Company Ltd standalone: missing ['ebitda'] - not posting from PDF
+07 11:54:02 pdf rule reader Lexora Global Ltd: ok
+07 11:54:02 pdf pdf current col Lexora Global Ltd consolidated ok=True/3: revenue=320.86, other_income=4.74, total_income=325.6, total_expenses=293.34, finance_costs=0.0, depreciation=None, pbt=32.26, tax=4.88, pat=27.38, eps=None
+07 11:54:02 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:55:05 seen 524434 Asian Petroproducts & Export cat=Board Meeting early=True bse_time=17:24:26 dissem=17:24:26
+07 11:55:26 ready 524434|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Tata Chemicals Ltd: rule: consolidated table does not reconcile [crore] total_income=[4272.0, 4311.0, 4015.0] total_expenses=[4298.0, 4184.0, 3769.0
