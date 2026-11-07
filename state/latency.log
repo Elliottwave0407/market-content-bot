@@ -1712,3 +1712,7 @@
 07 09:18:30 pdf pdf read failed Riga Sugar Company Ltd-$: gemini skipped (quota/backoff); nim: cooling down
 07 09:20:29 pdf rule reader Vikram Kamats Hospitality Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[1397.68, 1487.85, 1218.08] pbt=[1223.391, 62.9, 19.8] tax=[-60.32, 36.03, 34.58] pat=[1177.321, 33.92, 1.43] depreciatio
 07 09:20:53 seen 500336 Surya Roshni Ltd cat=Result early=False bse_time=14:50:36 dissem=14:50:36
+07 09:22:05 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 09:22:05 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 09:23:45 seen 531685 Frontline Financial Services cat=Board Meeting early=True bse_time=14:53:14 dissem=14:53:14
+07 09:23:59 pdf nim reader Riga Sugar Company Ltd-$: ok (gemini: gemini skipped (quota/backoff))
