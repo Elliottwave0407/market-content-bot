@@ -1577,3 +1577,8 @@
 07 11:02:18 ready 508980|Sep-26|na kind=photo waited_min=45.3 tries=8 pdf_log=pdf history mismatch NTC Industries Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 29790.9 pat 6120.900000000001 | bse rev 266
 07 11:02:52 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
 07 11:05:26 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 11:06:54 pdf nim reader NTC Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+07 11:08:03 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 11:08:31 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 11:08:34 pdf nim reader Revati Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+07 11:08:34 pdf pdf read failed Revati Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible inven
