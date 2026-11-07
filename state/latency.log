@@ -1609,3 +1609,14 @@
 07 06:52:42 pdf pdf current col DCM Shriram Industries Ltd-$ standalone ok=True/3: revenue=31106, other_income=63, total_income=31169, total_expenses=29454, finance_costs=389, depreciation=478, pbt=1715, tax=413, pat=1302, eps=1.5
 07 06:52:42 pdf pdf history mismatch DCM Shriram Industries Ltd-$ standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 2936.3 pat 15.5 | bse rev 2936.3 pat 15.5 (Rs mn); q-4: pdf rev 3355.1000000000004 pat 34.7 | bse rev 526
 07 06:53:34 ready 532488|Sep-26|consolidated kind=photo waited_min=11.0 tries=6 pdf_log=
+07 06:55:59 seen 526861 Rishi Laser Ltd cat=Result early=False bse_time=12:25:07 dissem=12:25:07
+07 06:55:59 seen 530825 Daikaffil Chemicals India Lt cat=Result early=False bse_time=12:25:09 dissem=12:25:09
+07 06:56:22 wait 526861 Rishi Laser Ltd: numbers not yet on BSE
+07 06:57:03 pdf rule reader DCM Shriram Industries Ltd-$: rule: stan: does not reconcile [lakh] pbt=[1715.0, 129.0, 292.0] pat=[1302.0, 155.0, 347.0] finance_costs=[389.0, 757.0, 646.0] | ocr: rule: stan: missing ['pat'] n=6
+07 06:57:04 seen 523369 DCM Shriram Industries Ltd-$ cat=Result early=False bse_time=12:26:23 dissem=12:26:23
+07 06:57:04 seen 523371 Mawana Sugars Ltd cat=Result early=False bse_time=12:26:50 dissem=12:26:50
+07 06:57:27 wait 523371 Mawana Sugars Ltd: numbers not yet on BSE
+07 06:57:29 wait 523369 DCM Shriram Industries Ltd-$: numbers not yet on BSE
+07 06:57:37 ready 523371|Sep-26|standalone kind=photo waited_min=0.5 tries=1 pdf_log=pdf current col Mawana Sugars Ltd standalone ok=True/3: revenue=385.7, other_income=1.44, total_income=387.14, total_expenses=391.24, finance_costs=1.29, deprec
+07 06:57:45 pdf pdf current col DCM Shriram Industries Ltd-$ standalone ok=True/3: revenue=31106, other_income=63, total_income=31169, total_expenses=29454, finance_costs=389, depreciation=478, pbt=1715, tax=413, pat=1302, eps=1.5
+07 06:57:45 pdf pdf history mismatch DCM Shriram Industries Ltd-$ standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 2936.3 pat 15.5 | bse rev 2936.3 pat 15.5 (Rs mn); q-4: pdf rev 3355.1000000000004 pat 34.7 | bse rev 526
