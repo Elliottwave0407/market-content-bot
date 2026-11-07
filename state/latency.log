@@ -1704,3 +1704,11 @@
 07 09:16:56 wait 524408 Universal Starch Chem Allied: numbers not yet on BSE
 07 09:17:52 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [('
 07 09:17:52 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (p
+07 09:18:13 pdf nim reader Silverstorm Parks And Resorts Ltd: ok (gemini: gemini skipped (quota/backoff))
+07 09:18:13 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Silverstorm Parks And Resorts Ltd
+07 09:18:13 pdf nim reader Universal Starch Chem Allied Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 09:18:13 pdf pdf read failed Universal Starch Chem Allied Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 09:18:30 pdf nim reader Riga Sugar Company Ltd-$: nim: cooling down (gemini: gemini skipped (quota/backoff))
+07 09:18:30 pdf pdf read failed Riga Sugar Company Ltd-$: gemini skipped (quota/backoff); nim: cooling down
+07 09:20:29 pdf rule reader Vikram Kamats Hospitality Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[1397.68, 1487.85, 1218.08] pbt=[1223.391, 62.9, 19.8] tax=[-60.32, 36.03, 34.58] pat=[1177.321, 33.92, 1.43] depreciatio
+07 09:20:53 seen 500336 Surya Roshni Ltd cat=Result early=False bse_time=14:50:36 dissem=14:50:36
