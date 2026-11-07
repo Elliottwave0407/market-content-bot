@@ -1669,3 +1669,9 @@
 07 07:19:05 pdf nim reader DCM Shriram Industries Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' 
 07 07:19:05 pdf pdf read failed DCM Shriram Industries Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (po
 07 07:19:05 pdf pdf current col Mawana Sugars Ltd standalone ok=True/3: revenue=385.7, other_income=1.44, total_income=387.14, total_expenses=391.24, finance_costs=1.29, depreciation=7.21, pbt=-4.1, tax=-1.0, pat=-3.1, eps=-0.79
+07 07:24:34 seen 530919 Remsons Industries Ltd cat=Board Meeting early=True bse_time=12:54:10 dissem=12:54:10
+07 07:25:28 pdf rule reader Remsons Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 07:26:54 pdf rule reader DCM Shriram Industries Ltd-$: rule: stan: does not reconcile [lakh] pbt=[1715.0, 129.0, 292.0] pat=[1302.0, 155.0, 347.0] finance_costs=[389.0, 757.0, 646.0] | ocr: rule: stan: missing ['pat'] n=6
+07 07:26:54 pdf pdf current col Remsons Industries Ltd consolidated ok=False/3: revenue=13546.92, other_income=99.12, total_income=13646.04, total_expenses=13003.91, finance_costs=241.24, depreciation=440.17, pbt=634.78, tax=171.48, pat=463.3, ep
+07 07:26:54 pdf pdf checks failed Remsons Industries Ltd consolidated
+07 07:26:54 pdf pdf has consolidated but it failed checks: not falling back to standalone Remsons Industries Ltd
