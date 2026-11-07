@@ -1656,3 +1656,7 @@
 07 07:09:51 pdf rule reader DCM Shriram Industries Ltd-$: rule: stan: does not reconcile [lakh] pbt=[1715.0, 129.0, 292.0] pat=[1302.0, 155.0, 347.0] finance_costs=[389.0, 757.0, 646.0] | ocr: rule: stan: missing ['pat'] n=6
 07 07:11:04 pdf nim reader DCM Shriram Industries Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' 
 07 07:11:04 pdf pdf read failed DCM Shriram Industries Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (po
+07 07:12:14 seen 531144 El Forge Ltd-$ cat=Board Meeting early=True bse_time=12:41:39 dissem=12:41:39
+07 07:12:33 ready 531144|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col El Forge Ltd-$ standalone ok=True/2: revenue=2419.78, other_income=16.97, total_income=2436.75, total_expenses=2345.61, finance_costs=13.39, dep
+07 07:12:41 pdf nim reader DCM Shriram Industries Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' 
+07 07:12:41 pdf pdf read failed DCM Shriram Industries Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (po
