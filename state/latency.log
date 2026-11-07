@@ -1572,3 +1572,14 @@
 07 08:33:16 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
 07 08:35:32 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
 07 08:36:28 ready 540938|Sep-26|na kind=photo waited_min=45.2 tries=99 pdf_log=
+07 08:36:51 pdf nim reader HBL Engineering Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
+07 08:36:51 pdf pdf read failed HBL Engineering Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible
+07 08:37:15 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
+07 08:38:19 pdf strong model retry did not help: None
+07 08:38:19 pdf pdf current col HBL Engineering Ltd-$ consolidated ok=False/3: revenue=871.56, other_income=22.11, total_income=893.67, total_expenses=661.27, finance_costs=6.31, depreciation=13.25, pbt=245.56, tax=60.05, pat=192.75, eps=6.95
+07 08:38:19 pdf pdf checks failed HBL Engineering Ltd-$ consolidated
+07 08:38:19 pdf pdf has consolidated but it failed checks: not falling back to standalone HBL Engineering Ltd-$
+07 08:38:20 seen 544919 Infrax Renewable Ltd cat=Board Meeting early=True bse_time=14:07:28 dissem=14:07:28
+07 08:38:20 seen 538537 Pipan Oils Ltd cat=Board Meeting early=True bse_time=14:07:52 dissem=14:07:52
+07 08:38:38 pdf rule reader Infrax Renewable Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+07 08:38:38 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Infrax Renewable Ltd
