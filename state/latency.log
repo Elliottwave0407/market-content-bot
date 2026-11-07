@@ -1509,3 +1509,10 @@
 07 08:03:40 seen 544121 Rudra Gas Enterprise Ltd cat=Result early=False bse_time=13:32:42 dissem=13:32:42
 07 08:04:02 wait 544121 Rudra Gas Enterprise Ltd: numbers not yet on BSE
 07 08:04:29 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Rudra Gas Enterprise Ltd
+07 08:06:10 seen 543540 Pearl Green Clubs and Resort cat=Board Meeting early=True bse_time=13:35:15 dissem=13:35:15
+07 08:06:11 pdf nim reader M Lakhamsi Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (ge
+07 08:06:11 pdf pdf read failed M Lakhamsi Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possi
+07 08:07:49 pdf nim reader M Lakhamsi Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 08:07:49 pdf pdf read failed M Lakhamsi Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 08:07:53 pdf nim reader M Lakhamsi Industries Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+07 08:07:53 pdf pdf read failed M Lakhamsi Industries Ltd: gemini skipped (quota/backoff); nim: cooling down
