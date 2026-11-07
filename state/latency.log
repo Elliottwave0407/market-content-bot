@@ -1552,3 +1552,6 @@
 07 15:19:49 pdf pdf read failed Transglobe Foods Ltd: gemini skipped (quota/backoff); nim: cooling down
 07 15:20:29 pdf rule reader Ecofinity Atomix Ltd: rule: cons: no revenue row; stan: does not reconcile [lakh] total_income=[2163.05, 1233.62, 727.12] total_expenses=[2082.2, 1157.37, 664.86] pbt=[80.85, 76.25, 62.26] tax=[0.0, 0.0, 0.0] pat=[63.6
 07 15:21:09 seen 506178 Velox Shipping and Logistics cat=Board Meeting early=True bse_time=20:50:23 dissem=20:50:23
+07 15:22:12 pdf nim reader Ecofinity Atomix Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
+07 15:22:12 pdf pdf read failed Ecofinity Atomix Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible i
+07 15:22:56 pdf rule reader Ecofinity Atomix Ltd: rule: cons: no revenue row; stan: does not reconcile [lakh] total_income=[2163.05, 1233.62, 727.12] total_expenses=[2082.2, 1157.37, 664.86] pbt=[80.85, 76.25, 62.26] tax=[0.0, 0.0, 0.0] pat=[63.6
