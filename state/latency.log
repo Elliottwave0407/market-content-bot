@@ -1734,3 +1734,8 @@
 07 07:49:38 seen 500470 Tata Steel Ltd cat=Result early=False bse_time=13:19:15 dissem=13:19:15
 07 07:50:01 wait 500470 Tata Steel Ltd: numbers not yet on BSE
 07 07:50:20 pdf pdf incomplete M Lakhamsi Industries Ltd consolidated: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
+07 07:51:12 pdf rule reader Remsons Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 07:51:13 seen 540938 Gujarat Hy-Spin Ltd cat=Result early=False bse_time=13:20:20 dissem=13:20:20
+07 07:51:28 wait 540938 Gujarat Hy-Spin Ltd: numbers not yet on BSE
+07 07:51:44 pdf nim reader M Lakhamsi Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (ge
+07 07:51:44 pdf pdf read failed M Lakhamsi Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possi
