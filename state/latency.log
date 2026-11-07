@@ -1693,3 +1693,14 @@
 07 09:13:50 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
 07 09:13:50 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
 07 09:14:18 pdf rule reader Vikram Kamats Hospitality Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[1397.68, 1487.85, 1218.08] pbt=[1223.391, 62.9, 19.8] tax=[-60.32, 36.03, 34.58] pat=[1177.321, 33.92, 1.43] depreciatio
+07 09:15:59 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 09:15:59 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 09:15:59 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/2: revenue=975.24, other_income=None, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.8
+07 09:15:59 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['revenue'] - not posting from PDF
+07 09:16:27 pdf rule reader Vikram Kamats Hospitality Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[1397.68, 1487.85, 1218.08] pbt=[1223.391, 62.9, 19.8] tax=[-60.32, 36.03, 34.58] pat=[1177.321, 33.92, 1.43] depreciatio
+07 09:16:29 seen 544840 Silverstorm Parks And Resort cat=Result early=False bse_time=14:45:19 dissem=14:45:19
+07 09:16:29 seen 524408 Universal Starch Chem Allied cat=Result early=False bse_time=14:45:44 dissem=14:45:44
+07 09:16:54 wait 544840 Silverstorm Parks And Resort: numbers not yet on BSE
+07 09:16:56 wait 524408 Universal Starch Chem Allied: numbers not yet on BSE
+07 09:17:52 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [('
+07 09:17:52 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (p
