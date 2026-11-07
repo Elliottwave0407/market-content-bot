@@ -1565,3 +1565,12 @@
 07 10:56:26 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
 07 10:58:11 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
 07 10:58:56 seen 526723 NTC Industries Ltd cat=Result early=False bse_time=16:28:42 dissem=16:28:42
+07 10:59:19 wait 526723 NTC Industries Ltd: numbers not yet on BSE
+07 11:00:03 pdf pdf history mismatch NTC Industries Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 29790.9 pat 6120.900000000001 | bse rev 266.27 pat 61.21 (Rs mn); q-4: pdf rev 29864.100000000002 pat 4357.8 | bs
+07 11:00:03 pdf pdf has consolidated but it failed checks: not falling back to standalone NTC Industries Ltd
+07 11:00:03 pdf pdf current col NTC Industries Ltd consolidated ok=False/3: revenue=3608.89, other_income=134.17, total_income=3743.05, total_expenses=2921.53, finance_costs=157.76, depreciation=37.9, pbt=526.52, tax=98.97, pat=427.55, eps=2.94
+07 11:00:03 pdf pdf history mismatch NTC Industries Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 266.273 pat 61.209 | bse rev 266.27 pat 61.21 (Rs mn); q-4: pdf rev 268.489 pat 43.578 | bse rev 230.6 pat 43.58 
+07 11:00:03 pdf pdf has consolidated but it failed checks: not falling back to standalone NTC Industries Ltd
+07 11:01:07 pdf strong model fixed a failed read
+07 11:01:41 pdf rule reader NTC Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 11:01:54 pdf nim reader NTC Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
