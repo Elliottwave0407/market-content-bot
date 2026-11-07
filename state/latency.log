@@ -1689,3 +1689,7 @@
 07 09:10:15 seen 524408 Universal Starch Chem Allied cat=Board Meeting early=True bse_time=14:39:50 dissem=14:39:50
 07 09:11:14 pdf nim reader Surya Roshni Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
 07 09:11:14 pdf pdf read failed Surya Roshni Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible inven
+07 09:11:49 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Silverstorm Parks And Resorts Ltd
+07 09:13:50 pdf nim reader Vikram Kamats Hospitality Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 09:13:50 pdf pdf read failed Vikram Kamats Hospitality Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 09:14:18 pdf rule reader Vikram Kamats Hospitality Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[1397.68, 1487.85, 1218.08] pbt=[1223.391, 62.9, 19.8] tax=[-60.32, 36.03, 34.58] pat=[1177.321, 33.92, 1.43] depreciatio
