@@ -1614,3 +1614,8 @@
 07 08:50:30 pdf rule reader Super Crop Safe Ltd: rule: stan: does not reconcile [lakh] total_income=[1655.17, 1865.33, 1476.85] total_expenses=[1583.36, 1734.65, 1403.72] exceptional=[0.0, 0.0, 0.0] pbt=[71.81, 130.68, 73.13] tax=[0.0, 0.0, 0.0] 
 07 08:50:49 ready 530883|Sep-26|standalone kind=photo waited_min=0.8 tries=1 pdf_log=pdf current col Super Crop Safe Ltd standalone ok=True/3: revenue=1654.79, other_income=0.38, total_income=1655.17, total_expenses=1583.36, finance_costs=35.91,
 07 08:50:56 pdf pdf current col Super Crop Safe Ltd standalone ok=True/3: revenue=1654.79, other_income=0.38, total_income=1655.17, total_expenses=1583.36, finance_costs=35.91, depreciation=10.01, pbt=71.81, tax=-1.0, pat=72.81, eps=0.16
+07 08:51:05 pdf nim reader Riga Sugar Company Ltd-$: ok (gemini: gemini skipped (quota/backoff))
+07 08:51:05 pdf nim reader HBL Engineering Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
+07 08:51:05 pdf pdf read failed HBL Engineering Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible
+07 08:51:05 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/3: revenue=975.24, other_income=0, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.87
+07 08:51:05 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
