@@ -1620,3 +1620,11 @@
 07 08:51:05 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/3: revenue=975.24, other_income=0, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.87
 07 08:51:05 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
 07 08:52:31 seen 543443 Ascensive Educare Ltd cat=Board Meeting early=True bse_time=14:21:47 dissem=14:21:47
+07 08:53:01 seen 530883 Super Crop Safe Ltd cat=Board Meeting early=True bse_time=14:21:59 dissem=14:21:59
+07 08:53:01 seen 539839 Franklin Leasing and Finance cat=Board Meeting early=True bse_time=14:22:07 dissem=14:22:07
+07 08:53:23 pdf rule reader Franklin Leasing and Finance Ltd: rule: no results table page | ocr: rule: no results table page
+07 08:55:05 pdf nim reader Riga Sugar Company Ltd-$: ok (gemini: gemini skipped (quota/backoff))
+07 08:55:09 pdf pdf current col Riga Sugar Company Ltd-$ standalone ok=True/3: revenue=975.24, other_income=0, total_income=975.24, total_expenses=1786.41, finance_costs=227.45, depreciation=182.19, pbt=-811.17, tax=37.13, pat=-848.3, eps=-5.87
+07 08:55:09 pdf nim reader HBL Engineering Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
+07 08:55:09 pdf pdf read failed HBL Engineering Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible
+07 08:55:09 pdf pdf incomplete Riga Sugar Company Ltd-$ standalone: missing ['ebitda'] - not posting from PDF
