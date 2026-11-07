@@ -1528,3 +1528,11 @@
 07 15:09:01 pdf pdf incomplete Transglobe Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
 07 15:09:06 pdf pdf current col Transglobe Foods Ltd standalone ok=True/1: revenue=8.41, other_income=None, total_income=8.41, total_expenses=5.79, finance_costs=1.23, depreciation=None, pbt=2.62, tax=None, pat=2.62, eps=1.81
 07 15:09:06 pdf pdf incomplete Transglobe Foods Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+07 15:10:13 pdf pdf current col Transglobe Foods Ltd standalone ok=True/1: revenue=8.41, other_income=None, total_income=8.41, total_expenses=5.79, finance_costs=1.23, depreciation=None, pbt=2.62, tax=None, pat=2.62, eps=1.81
+07 15:10:13 pdf pdf incomplete Transglobe Foods Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+07 15:10:30 pdf nim reader Transglobe Foods Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
+07 15:10:30 pdf pdf read failed Transglobe Foods Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 15:10:44 pdf rule reader Transglobe Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+07 15:10:44 pdf nim reader Transglobe Foods Ltd: nim: cooling down (gemini: gemini skipped (quota/backoff))
+07 15:10:44 pdf pdf read failed Transglobe Foods Ltd: gemini skipped (quota/backoff); nim: cooling down
+07 15:12:46 seen 539455 Ecofinity Atomix Ltd cat=Board Meeting early=True bse_time=20:41:58 dissem=20:41:58
