@@ -1709,3 +1709,9 @@
 07 07:38:57 pdf rule reader Remsons Industries Ltd: rule: no results table page | ocr: rule: no results table page
 07 07:39:15 pdf rule reader Tata Steel Ltd: rule: stan: does not reconcile [crore] total_income=[43103.55, 37387.56, 35290.03] total_expenses=[36337.16, 31275.89, 29486.8] pbt=[6695.58, 5820.17, 5403.72] tax=[1480.0, 1404.17, 1088.34] pat=[5053.6
 07 07:40:11 ready 500470|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+07 07:40:58 pdf nim reader Remsons Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 21 numbers not found in the filing text (possible invention): rejected e.g. [( (gemin
+07 07:40:58 pdf pdf read failed Remsons Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 21 numbers not found in the filing text (possibl
+07 07:41:18 pdf rule reader Remsons Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 07:41:19 seen 532850 MIC Electronics Ltd cat=Board Meeting early=True bse_time=13:10:51 dissem=13:10:51
+07 07:41:42 pdf pdf current col MIC Electronics Ltd consolidated ok=True/2: revenue=9100.72, other_income=46.4, total_income=9147.12, total_expenses=8686.87, finance_costs=134.96, depreciation=98.98, pbt=460.25, tax=None, pat=460.25, eps=0.15
+07 07:42:33 ready 523369|Sep-26|na kind=photo waited_min=45.5 tries=8 pdf_log=
