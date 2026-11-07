@@ -1675,3 +1675,10 @@
 07 07:26:54 pdf pdf current col Remsons Industries Ltd consolidated ok=False/3: revenue=13546.92, other_income=99.12, total_income=13646.04, total_expenses=13003.91, finance_costs=241.24, depreciation=440.17, pbt=634.78, tax=171.48, pat=463.3, ep
 07 07:26:54 pdf pdf checks failed Remsons Industries Ltd consolidated
 07 07:26:54 pdf pdf has consolidated but it failed checks: not falling back to standalone Remsons Industries Ltd
+07 07:27:47 pdf rule reader Remsons Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 07:28:04 pdf nim reader DCM Shriram Industries Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' 
+07 07:28:04 pdf pdf read failed DCM Shriram Industries Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (po
+07 07:28:21 pdf strong model retry did not help: None
+07 07:28:38 pdf pdf checks failed Remsons Industries Ltd consolidated
+07 07:28:38 pdf pdf has consolidated but it failed checks: not falling back to standalone Remsons Industries Ltd
+07 07:29:19 seen 526729 Goldiam International Ltd cat=Board Meeting early=True bse_time=12:58:34 dissem=12:58:34
