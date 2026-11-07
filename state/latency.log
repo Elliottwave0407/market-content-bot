@@ -1635,3 +1635,14 @@
 07 08:58:03 pdf strong model retry did not help: None
 07 08:58:12 ready 539659|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 07 08:58:46 seen 544386 Spectrum Electrical Industri cat=Board Meeting early=True bse_time=14:28:43 dissem=14:28:43
+07 09:00:31 pdf nim reader Spectrum Electrical Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.
+07 09:00:31 pdf pdf read failed Spectrum Electrical Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing t
+07 09:00:58 pdf rule reader Spectrum Electrical Industries Ltd: rule: stan: missing ['pat'] n=4
+07 09:00:58 pdf nim reader Riga Sugar Company Ltd-$: ok (gemini: gemini skipped (quota/backoff))
+07 09:00:58 pdf pdf current col Spectrum Electrical Industries Ltd consolidated ok=False/3: revenue=19839.33, other_income=137.51, total_income=19076.84, total_expenses=17033.44, finance_costs=587.27, depreciation=372.97, pbt=2943.4, tax=1135.55,
+07 09:00:58 pdf pdf revenue + other income != total income, BSE-table override refused Spectrum Electrical Industries Ltd consolidated
+07 09:00:58 pdf pdf history mismatch Spectrum Electrical Industries Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 1585.527 pat 130.511 | bse rev 1545.53 pat 130.51 (Rs mn); q-4: pdf rev 1176.848 pat 78.087 | bse
+07 09:00:58 pdf pdf has consolidated but it failed checks: not falling back to standalone Spectrum Electrical Industries Ltd
+07 09:00:59 seen 540757 Sheetal Cool Products Ltd cat=Result early=False bse_time=14:30:01 dissem=14:30:01
+07 09:01:18 pdf rule reader Sheetal Cool Products Ltd: rule: stan: does not reconcile [lakh] total_expenses=[6048.02, 12334.62, 5382.83] pbt=[483.31, 934.57, 217.42] tax=[159.51, 235.62, 57.93] pat=[323.8, 698.95, 159.49] depreciation=[210.85, 24
+07 09:01:18 pdf pdf current col Sheetal Cool Products Ltd standalone ok=True/3: revenue=6531.27, other_income=0.06, total_income=6531.33, total_expenses=6048.02, finance_costs=142.23, depreciation=210.85, pbt=483.31, tax=159.51, pat=323.8, eps=3.
