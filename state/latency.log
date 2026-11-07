@@ -1674,3 +1674,11 @@
 07 11:54:02 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
 07 11:55:05 seen 524434 Asian Petroproducts & Export cat=Board Meeting early=True bse_time=17:24:26 dissem=17:24:26
 07 11:55:26 ready 524434|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Tata Chemicals Ltd: rule: consolidated table does not reconcile [crore] total_income=[4272.0, 4311.0, 4015.0] total_expenses=[4298.0, 4184.0, 3769.0
+07 11:56:53 pdf pdf current col Tata Chemicals Ltd consolidated ok=False/3: revenue=4177, other_income=95, total_income=4272, total_expenses=4298, finance_costs=151, depreciation=351, pbt=-6, tax=44, pat=-50, eps=-4.79
+07 11:57:09 pdf pdf current col Prostarm Info Systems Ltd consolidated ok=True/3: revenue=12000.79, other_income=175.87, total_income=12176.67, total_expenses=11363.96, finance_costs=203.6, depreciation=94.74, pbt=812.7, tax=205.34, pat=607.36, e
+07 11:57:47 seen 512345 Lexora Global Ltd cat=Result early=False bse_time=17:26:54 dissem=17:26:54
+07 11:58:10 wait 512345 Lexora Global Ltd: numbers not yet on BSE
+07 11:58:13 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:58:19 pdf pdf current col Lexora Global Ltd consolidated ok=True/3: revenue=320.86, other_income=4.74, total_income=325.6, total_expenses=293.34, finance_costs=0.0, depreciation=None, pbt=32.26, tax=4.88, pat=27.38, eps=None
+07 11:58:19 pdf pdf incomplete Lexora Global Ltd consolidated: missing ['ebitda'] - not posting from PDF
+07 11:59:02 pdf rule reader Shamrock Industrial Company Ltd: rule: stan: no revenue row
