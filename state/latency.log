@@ -1557,3 +1557,5 @@
 07 15:22:56 pdf rule reader Ecofinity Atomix Ltd: rule: cons: no revenue row; stan: does not reconcile [lakh] total_income=[2163.05, 1233.62, 727.12] total_expenses=[2082.2, 1157.37, 664.86] pbt=[80.85, 76.25, 62.26] tax=[0.0, 0.0, 0.0] pat=[63.6
 07 15:25:25 pdf nim reader Transglobe Foods Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429 (gemini: gemini skipped (quota/backoff))
 07 15:25:25 pdf pdf read failed Transglobe Foods Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 429
+07 15:29:28 pdf nim reader Transglobe Foods Ltd: ok (gemini: gemini skipped (quota/backoff))
+07 15:29:31 pdf pdf current col Transglobe Foods Ltd standalone ok=True/3: revenue=8.41, other_income=0.0, total_income=8.41, total_expenses=5.79, finance_costs=1.23, depreciation=0.0, pbt=2.62, tax=0.0, pat=2.62, eps=1.81
