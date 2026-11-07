@@ -5425,8 +5425,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 12,
-"A": 6,
-"B": 4,
+"A": 5,
+"B": 5,
 "C": 2,
 "shown": 8
 },
@@ -5435,21 +5435,21 @@
 "guidance": [
 {
 "cat": "guidance",
-"grade": "A",
-"statement": "Capex guidance for FY27 revised to INR400-450 crores from earlier INR450 crores; FY28 capex allocated at INR700 crores",
-"value": null,
-"period": "FY27, FY28",
-"direction": "down",
-"quote": "So, we still maintain that we will maybe instead of INR450, we might spend INR400 odd crores for the coming year. And then in '28 is when we expect the construction to significantly pick up. So, then we have allocated a larger amount. Currently, it's been allocated as INR700 crores for FY28."
-},
-{
-"cat": "guidance",
 "grade": "B",
 "statement": "Management expects RevPAR growth in mid-teens range for H2 FY27 and maintains mid-teens revenue and EBITDA growth guidance for FY27",
 "value": "mid-teens",
 "period": "H2 FY27, FY27",
 "direction": "up",
 "quote": "the second half of the year to be better. I can't get into the specific number, but our intention is that it will grow in mid-teens range"
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Capex guidance for FY27 revised to INR400-450 crores from earlier INR450 crores; FY28 capex allocated at INR700 crores",
+"value": null,
+"period": "FY27, FY28",
+"direction": "down",
+"quote": "So, we still maintain that we will maybe instead of INR450, we might spend INR400 odd crores for the coming year. And then in '28 is when we expect the construction to significantly pick up. So, then we have allocated a larger amount. Currently, it's been allocated as INR700 crores for FY28."
 }
 ],
 "demand": [
@@ -25289,8 +25289,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 16,
-"A": 10,
-"B": 6,
+"A": 9,
+"B": 7,
 "C": 0,
 "shown": 11
 },
@@ -27052,8 +27052,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 15,
-"A": 9,
-"B": 4,
+"A": 8,
+"B": 5,
 "C": 2,
 "shown": 10
 },
@@ -27147,20 +27147,20 @@
 {
 "cat": "other",
 "grade": "A",
-"statement": "Promoter Punit Makharia to subscribe to INR45 crore warrant issue; balance warrant money from 2025 issue expected by March 2027",
-"value": "45 crores",
-"period": "FY27",
-"direction": "up",
-"quote": "The board has approved the issuance of 8,54,060 fully convertible warrants to Mr. Punit Gopikishan Makharia, Promoter and Chairman and Managing Director of the company, at an issue price of INR526.90 per warrant, aggregating up to INR45 crores. This proposed fundraising is intended to support the Company's expansion plan and reflects the promoter's continued commitment towards the company's long-t"
-},
-{
-"cat": "other",
-"grade": "A",
 "statement": "New chemical plant at Unit 5 (3,000 MTPA at 75% utilization) estimated to generate ~INR250 crores revenue",
 "value": "250 crores",
 "period": "FY28",
 "direction": "up",
 "quote": "Sir, if I take 3,000 tons at 75% utilization, then also, sir, you can understand, approximately INR250 crores."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Receivables reviewed and confirmed safe; higher receivables due to higher selling prices not credit issues",
+"value": null,
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Sir, it is like this. The goods that will be sold, will be sold in the same stream. Okay. Today, if there is a market for loans, then goods will be sold in loans, sir. It is the same. Earlier, the product that we used to sell for INR100, that product is now being sold for INR105, INR103, INR104, INR110. So, there is no such problem. We have reviewed this receivable. Everything is perfectly well an"
 }
 ]
 }
@@ -51161,8 +51161,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 28,
-"A": 27,
-"B": 1,
+"A": 26,
+"B": 2,
 "C": 0,
 "shown": 19
 },
@@ -53264,6 +53264,186 @@
 ]
 }
 },
+"543332|2026-11-07": {
+"code": "543332",
+"name": "Epigral Ltd",
+"day": "2026-11-07",
+"sector": "Basic Materials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 26,
+"A": 16,
+"B": 10,
+"C": 0,
+"shown": 16
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7e9b6e26-a884-4af4-a9d8-fc504abf66c8.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Revenue target INR5,000-5,100 crore by FY31 with gross block INR4,100-4,200 crore",
+"value": "5000-5100 crore",
+"period": "FY31",
+"direction": "up",
+"quote": "So that much of capex is good enough to fetch a revenue in the range of around INR5,000 crores, INR5,100 crores kind of revenue by FY31."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Volume demand recovery positive, H2 historically outperforms H1, positive outlook for H2 FY27",
+"value": null,
+"period": "H2 FY27",
+"direction": "up",
+"quote": "Historically, the second half of the fiscal year outperforms the first as H1 is typically on off -season for a few of our products. Consequently, we maintained positi ve outlook for H2 FY27"
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Chlorine demand increased last 6 months and next 6 months, chlorine prices no longer negative going forward",
+"value": null,
+"period": "next 6 months",
+"direction": "up",
+"quote": "the chlorine derivative side, the demand and the new plants and demand has increased in last 6 months and next 6 months also further is going to increase"
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Q2 FY27 EBITDA margin 18%, H1 FY27 22%, impacted by high raw material costs",
+"value": "18%",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "In Q2 FY26 EBITDA margin stood at 18%. It was impacted on account of high cost of raw material for Q2 FY27 on account of global uncertainty impacting raw material and finished goods prices."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Chlorotoluene revenue ~INR100 crore this year, peak potential INR300-350 crore at optimum utilization",
+"value": "100 crore",
+"period": "FY27",
+"direction": "up",
+"quote": "So this year, probably we are going to have almost close to INR100 crores revenue generation from the chlorotoluene plant."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Epoxy resin and MPP capex around INR600 crore, targeting commissioning by March 2028",
+"value": "600 crore",
+"period": "FY28",
+"direction": null,
+"quote": "And post that, we are doing capex for the MPP and the epoxy resin, where the capex is around INR600 crores again."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Maintenance capex 1.5% of gross block annually",
+"value": "1.5%",
+"period": "annual",
+"direction": "flat",
+"quote": "Maintenance capex is generally in the range of 1.5% of the gross block every year."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "CPVC and ECH plants in final stages, trial runs underway, commissioning within a quarter",
+"value": null,
+"period": "Q3 FY27",
+"direction": null,
+"quote": "Our capacity expansions for CPVC and Epichlorohydrin are now in the final stages with trial runs currently underway. We expect to commission both plants within a quarter time."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "CPVC realizations INR120-125/kg in Q2, moving with PVC raw material prices",
+"value": "120-125",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "So in terms of CPVC realizations have been in the range of around INR120, INR125 a kg. And in terms of -- it has moved in line with the raw material price increase."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Caustic soda ECU realization INR31,000-32,000 in Q2, currently INR32,000-33,000; chlorine near zero",
+"value": "31000-32000",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "So the ECU for caustic soda for quarter 2 is around INR31,000, INR32,000 and chlorine is somewhere around zero."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Derivatives and specialty business 57% of revenue in Q2 FY27, transition accelerating with capex",
+"value": "57%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "As conveyed earlier, the revenue contribution from derivatives and specialty business stood at 57% in quarter 2 FY27. This transition will accelerate going forward, driven by capital expenditures that we just discussed"
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Hydrogen peroxide solar grade plant commissioning Q4 FY27, niche volume but value-added",
+"value": null,
+"period": "Q4 FY27",
+"direction": "up",
+"quote": "But yes, we are going into the value addition in terms of the hydrogen peroxide for the solar application in the coming -- in quarter 4, we will commission the plant."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "West Asia crisis, extended lead times, rising global freight and domestic transport costs squeezing margins",
+"value": null,
+"period": "ongoing",
+"direction": null,
+"quote": "Furthermore, external vulnerabilities, including the ongoing West Asia crisis, extended lead times, increasing global freight rates and rising domestic transportation costs continue to squeeze the industry's bottom line."
+},
+{
+"cat": "risk",
+"grade": "A",
+"statement": "El Nino no direct impact as not in agro/pharma products, only indirect economic impact",
+"value": null,
+"period": "ongoing",
+"direction": null,
+"quote": "Yes. See, we are into products, which is majorly in not into the agrochemicals or the pharmaceuticals. So we are not directly impacted."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "CPVC demand growing 13% CAGR, new capacities including own will be absorbed in 3-4 years",
+"value": "13%",
+"period": "3-4 years",
+"direction": "up",
+"quote": "So demand for CPVC is increasing in the range of 13% CAGR every year. So 1 year can be here and there. But considering the way demand is growing, any new supplies that are coming by us or even with others, India's demand will be enough to absorb all the supplies."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Net debt INR514 crore, net debt/EBITDA 0.9x as of Sep 2026, comfortable levels",
+"value": "514 crore",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Net debt to EBITDA stood at 0.9 as on 30th September '26 versus 0.8 on 30th September '25. Our net debt stood at INR514 crores versus INR496 crores as on 30th September '26."
+}
+]
+}
+},
 "543425|2026-11-07": {
 "code": "543425",
 "name": "C.E. Info Systems Ltd",
@@ -54384,6 +54564,77 @@
 "period": "FY27",
 "direction": "up",
 "quote": "So we are expecting around INR20 crores to INR25 crores of marketing as an expense because of new stores rollouts and if there is a typical large format store, we would really have to have a celebrity for a store launch, that hoarding etc will be there, ATL and BTL activities."
+}
+]
+}
+},
+"544339|2026-11-07": {
+"code": "544339",
+"name": "Laxmi Dental Ltd",
+"day": "2026-11-07",
+"sector": "Healthcare",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 11,
+"A": 8,
+"B": 2,
+"C": 1,
+"shown": 5
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e3bb1f11-8bc2-4e96-bfc1-9e64917396ff.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "IPO proceeds of INR48.1 crores to be deployed across FY27 and FY28: above INR27 crores for land and construction, above INR21 crores for machinery and equipment",
+"value": "48.1 crores",
+"period": "FY27-FY28",
+"direction": "up",
+"quote": "The unutilized IPO fund of INR48.1 crores will now be deployed towards building our own manufacturing infrastructure, above INR27 crores towards acquisition of land and constructions of building and infrastructure for dental laboratory and aligner manufacturing facilities, and above INR21 crores towards machinery, computer equipment, and other movable assets for the existing and new facilities."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "H1 FY27 capital expenditure of approximately INR16.7 crores incurred",
+"value": "16.7 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "During H1 FY27, we incurred capital expenditure of approximately INR16.7 crores."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Scanner subscription model launched: INR50,000 deposit, INR3,000/month + GST, 25,000 monthly business commitment; laptop owned by dentist",
+"value": "50,000 deposit, 3,000/month",
+"period": null,
+"direction": null,
+"quote": "of the current subscription model, it's INR50,000 in terms of deposit, and it's INR3,000 plus GST in terms of subscription per month till the time the customer wishes to use the scanner. And we are only giving the scanner, the laptop is purchased and owned by the dentist themselves. And then there is a commitment of 25,000 business"
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "New purpose-built facility planned at 1.25-1.5 lakh sq ft, 3-3.5x current 35,000-40,000 sq ft, transition by end FY28",
+"value": "1.25 to 1.5 lakh square feet",
+"period": "FY28",
+"direction": "up",
+"quote": "But in terms of just sheer size, we could build somewhere around 1.25 to 1.5 lakh square feet. Which as per the current that we have is between, say, 35,000 to 40,000 square feet. So we are almost 3x or 3.5x in terms of size for the new capacity lab that we are planning in India."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Domestic digital penetration reached ~78%, targeting 90%+ medium-term; hub-and-spoke model increasing wallet share per clinic",
+"value": "78%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our digital penetration in the domestic lab business has reached around 78%, and remains firmly on track towards our medium-term target of over 90%."
 }
 ]
 }
@@ -55878,8 +56129,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 33,
-"A": 24,
-"B": 9,
+"A": 23,
+"B": 10,
 "C": 0,
 "shown": 17
 },
@@ -55889,20 +56140,20 @@
 {
 "cat": "guidance",
 "grade": "A",
-"statement": "Management targets 100% year-on-year revenue growth for next year (FY27) and aims to double revenue again in FY28.",
-"value": "100% YoY growth",
-"period": "FY27, FY28",
-"direction": "up",
-"quote": "My personal target for next year is also to achieve 100% growth over what we achieve this year, effectively doubling it."
-},
-{
-"cat": "guidance",
-"grade": "A",
 "statement": "H2 FY27 expected to be significantly stronger than H1 due to improved execution, capacity additions, and healthy order pipeline",
 "value": null,
 "period": "H2 FY27",
 "direction": "up",
 "quote": "With these developments, we expect H2 FY27 to be significantly stronger, supported by improved execution capabilities, capacity additions, and a healthy order pipeline."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Management targets 100% year-on-year revenue growth for next year (FY27) and aims to double revenue again in FY28.",
+"value": "100% YoY growth",
+"period": "FY27, FY28",
+"direction": "up",
+"quote": "My personal target for next year is also to achieve 100% growth over what we achieve this year, effectively doubling it."
 },
 {
 "cat": "guidance",
