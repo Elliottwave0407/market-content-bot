@@ -1529,3 +1529,14 @@
 07 08:18:34 pdf rule reader Finolex Cables Ltd: rule: column dates not found | ocr: rule: consolidated table incomplete missing ['pat'] n=6
 07 08:19:01 ready 500144|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 07 08:21:11 ready 512153|Sep-26|consolidated kind=photo waited_min=17.8 tries=7 pdf_log=
+07 08:21:24 seen 543266 Heranba Industries Ltd cat=Result early=False bse_time=13:50:31 dissem=13:50:31
+07 08:21:24 seen 543540 Pearl Green Clubs and Resort cat=Result early=False bse_time=13:51:09 dissem=13:51:09
+07 08:21:46 wait 543266 Heranba Industries Ltd: numbers not yet on BSE
+07 08:21:53 wait 543540 Pearl Green Clubs and Resort: numbers not yet on BSE
+07 08:22:16 pdf rule reader Heranba Industries Ltd: rule: no results table page | ocr: rule: no results table page
+07 08:22:23 pdf pdf current col Heranba Industries Ltd consolidated ok=True/3: revenue=372.0, other_income=0.03, total_income=372.12, total_expenses=373.62, finance_costs=11.08, depreciation=22.3, pbt=-1.5, tax=-4.13, pat=2.64, eps=0.76
+07 08:23:08 seen 517271 HBL Engineering Ltd-$ cat=Result early=False bse_time=13:52:22 dissem=13:52:22
+07 08:23:31 wait 517271 HBL Engineering Ltd-$: numbers not yet on BSE
+07 08:23:35 pdf nim reader HBL Engineering Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini
+07 08:23:35 pdf pdf read failed HBL Engineering Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 19 numbers not found in the filing text (possible
+07 08:23:35 pdf rule reader HBL Engineering Ltd-$: rule: no results table page | ocr: rule: no results table page
