@@ -43239,8 +43239,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 31,
-"A": 25,
-"B": 6,
+"A": 24,
+"B": 7,
 "C": 0,
 "shown": 15
 },
@@ -49383,8 +49383,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 30,
-"A": 21,
-"B": 9,
+"A": 20,
+"B": 10,
 "C": 0,
 "shown": 18
 },
@@ -50710,8 +50710,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 19,
-"A": 19,
-"B": 0,
+"A": 18,
+"B": 1,
 "C": 0,
 "shown": 12
 },
@@ -50758,7 +50758,7 @@
 "demand": [
 {
 "cat": "demand",
-"grade": "A",
+"grade": "B",
 "statement": "MDF industry growth robust; 30%+ capacity addition in last 3 months and next 9 months; excess capacity absorption expected by FY29",
 "value": "30%+",
 "period": "FY27-FY29",
@@ -56643,6 +56643,126 @@
 "period": "H1FY27",
 "direction": null,
 "quote": "So, we have our own, own ﬂeet of around, 125. So, that we are using so that the market doesn't blackmail us"
+}
+]
+}
+},
+"545001|2026-11-08": {
+"code": "545001",
+"name": "Sahajanand Medical Technologies Ltd",
+"day": "2026-11-08",
+"sector": null,
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 15,
+"A": 11,
+"B": 4,
+"C": 0,
+"shown": 10
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4da7e0bd-d072-4e11-b562-79044f2dcc14.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Capex guidance for FY27 and FY28 is INR 70 crore each year",
+"value": "INR 70 crore",
+"period": "FY27, FY28",
+"direction": "flat",
+"quote": "Overall, our capex guidance for FY 2027 and FY 2028 is broadly INR70 crores that the company will spend on capex."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "EBITDA margin improvement guidance of 150-200 bps per year for FY27, FY28, FY29 targeting ~20% by FY29",
+"value": "150-200 bps per year",
+"period": "FY27, FY28, FY29",
+"direction": "up",
+"quote": "What we are guiding for is even this year and next year, and maybe year after next as well, so 150 basis point- 200 basis point EBITDA margin every year is what we will do."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Constant currency revenue growth guidance of mid-teens for FY27 and FY28",
+"value": "mid-teens",
+"period": "FY27, FY28",
+"direction": "flat",
+"quote": "That will continue to be in the mid to high teens. Conservatively, your baseline you can take as mid-teens, both for the current year and the next year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Effective tax rate expected to remain 32-35% for next 2-3 years",
+"value": "32%-35%",
+"period": "next 2-3 years",
+"direction": "flat",
+"quote": "The ETR will continue to be in the range of 32%-35%, at least for the next two, three years."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Structural heart grew ~40% in Q2 with TAVI and occluders each up ~40%; Other products grew 52% in H1 driven by IVUS in Europe",
+"value": "~40% structural heart, 52% other products",
+"period": "Q2 FY27, H1 FY27",
+"direction": "up",
+"quote": "Structural heart accelerated in quarter two, growing about 40%, with both TAVI and occluders up about 40%. Other products grew fastest, up 52% in H1, and this was largely on account of IVUS that we have in the Europe geography."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "H1 FY27 capex spend was INR 44 crore; full year guidance INR 70 crore split across vertical integration, automation, maintenance and capacity enhancement",
+"value": "INR 44 crore spent, INR 70 crore guidance",
+"period": "H1 FY27, FY27",
+"direction": "up",
+"quote": "To break it down, broadly, we have spent around INR44-odd croress in the capex in first half in FY 2027. For the full year, the guidance is around INR70 crores."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "Vascular intervention 58% of H1 revenue, up 16% YoY; Structural heart accelerating; Other products (mainly IVUS) fastest growing at 52% in H1",
+"value": "58% vascular, 40% structural heart growth",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Vascular intervention remains our core at 58% of H1 revenue, up 16% year-on-year. Structural heart accelerated in quarter two, growing about 40%, with both TAVI and occluders up about 40%. Other products grew fastest, up 52% in H1"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "B",
+"statement": "RHP showed technical sterilization capacity (9,000 TAVI) not yet commercialized; deck shows commercial capacity (3,000 TAVI at 60% utilization)",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "On the RHP, the capacity that you see for the Hyderabad plant, which was a sterilization capacity and was a technical capacity. That we have not included in the deck because that is not yet a commercialized capacity."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "H1 typically ~48% of annual revenue, H2 ~52%; slight uptick in H2",
+"value": "48% H1, 52% H2",
+"period": "annual",
+"direction": null,
+"quote": "Usually in H1, we see about 48% odd of the revenue of the year. The H2 tends to be about 52."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "DES utilization 79% at Surat and 20% at Telangana; Balloon utilization 72% at Surat and 57% at Telangana; DCB line at Surat at 40%",
+"value": null,
+"period": "H1 FY27",
+"direction": null,
+"quote": "In H1, DES utilization, DES or the stent utilization was 79% at Surat and 20% at Telangana. Balloon utilization was 72% at Surat and 57% at Telangana. Our new drug -coated balloon line at Surat is already at 40%."
 }
 ]
 }
