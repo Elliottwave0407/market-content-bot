@@ -1607,3 +1607,9 @@
 09 09:24:31 ready 544456|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader R M Drip and Sprinklers Systems Ltd: ok | pdf current col R M Drip and Sprinklers Systems Ltd standalone ok=True/3: revenue=3222.17, other_income=23
 09 09:33:49 seen 544456 R M Drip and Sprinklers Syst cat=Result early=False bse_time=15:03:38 dissem=15:03:38
 09 09:39:24 seen 544735 Novus Loyalty Ltd cat=Board Meeting early=True bse_time=15:08:36 dissem=15:08:36
+09 10:30:09 seen 508956 HB Leasing & Finance Company cat=Board Meeting early=True bse_time=16:00:00 dissem=16:00:00
+09 10:30:25 pdf rule reader HB Leasing & Finance Company Ltd: rule: no results table page | ocr: rule: no results table page
+09 10:30:25 pdf pdf current col HB Leasing & Finance Company Ltd standalone ok=True/3: revenue=4.15, other_income=3.24, total_income=7.39, total_expenses=15.85, finance_costs=None, depreciation=0.0, pbt=-8.46, tax=-0.02, pat=-8.44, eps=-0.07
+09 10:30:25 pdf pdf incomplete HB Leasing & Finance Company Ltd standalone: missing ['ebitda'] - not posting from PDF
+09 10:32:29 pdf pdf current col HB Leasing & Finance Company Ltd standalone ok=True/3: revenue=4.15, other_income=3.24, total_income=7.39, total_expenses=15.85, finance_costs=None, depreciation=0.0, pbt=-8.46, tax=-0.02, pat=-8.44, eps=-0.07
+09 10:32:29 pdf pdf incomplete HB Leasing & Finance Company Ltd standalone: missing ['ebitda'] - not posting from PDF
