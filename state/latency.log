@@ -1642,3 +1642,8 @@
 09 10:40:01 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) HB Leasing & Finance Company Ltd standalone
 09 10:40:01 pdf pdf incomplete HB Leasing & Finance Company Ltd standalone: missing ['ebitda'] - not posting from PDF
 09 10:41:08 ready 508956|Sep-26|standalone kind=photo waited_min=0.0 tries=7 pdf_log=pdf current col HB Leasing & Finance Company Ltd standalone ok=False/3: revenue=4.15, other_income=324, total_income=739, total_expenses=15.85, finance_costs=No
+09 10:41:36 pdf nim reader HB Leasing & Finance Company Ltd: ok (gemini: gemini skipped (quota/backoff))
+09 10:41:39 pdf pdf current col HB Leasing & Finance Company Ltd standalone ok=False/3: revenue=4.15, other_income=324, total_income=739, total_expenses=15.85, finance_costs=None, depreciation=0.0, pbt=-8.46, tax=-0.02, pat=-8.44, eps=-0.07
+09 10:41:39 pdf pdf revenue + other income != total income, BSE-table override refused HB Leasing & Finance Company Ltd standalone
+09 10:41:39 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) HB Leasing & Finance Company Ltd standalone
+09 10:41:39 pdf pdf incomplete HB Leasing & Finance Company Ltd standalone: missing ['ebitda'] - not posting from PDF
