@@ -4745,7 +4745,8 @@
 "a1d94cd6-9160-4c20-918c-9da5c0868e6b",
 "962a6512-2ecc-436c-b75f-7db4445be97c",
 "637164e9-8884-4233-9a6b-e2335ced0d21",
-"360b98fc-486d-400b-93a3-91f42e23bfdc"
+"360b98fc-486d-400b-93a3-91f42e23bfdc",
+"27b0b9fe-d793-4b02-ab3e-55c7bcba7fda"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7836,7 +7837,8 @@
 "544456|Sep-26|consolidated",
 "544456|Sep-26|standalone",
 "508956|Sep-26|standalone",
-"532439|Sep-26|consolidated"
+"532439|Sep-26|consolidated",
+"540937|Sep-26|standalone"
 ],
 "pending": {
 "4ad81cae-208c-4b6e-abb4-2498f987e968": {
@@ -7861,7 +7863,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/svp-global-textiles-ltd/svpglob/505590/",
 "SLONGNAME": "SVP Global Textiles Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 6,
+"TotalPageCnt": 7,
 "News_submission_dt": "2026-11-09T16:34:41",
 "DissemDT": "2026-11-09T16:34:41.36",
 "TimeDiff": "00:00:00",
@@ -7874,15 +7876,49 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794222318.101696,
-"last": 1794225356.311644,
+"last": 1794225458.935662,
+"alerted": false
+},
+"66a8f722-494e-44b0-b6b1-4eee7d021703": {
+"rec": {
+"NEWSID": "66a8f722-494e-44b0-b6b1-4eee7d021703",
+"SCRIP_CD": 500238,
+"XML_NAME": "ANN_500238_66A8F722-494E-44B0-B6B1-4EEE7D021703",
+"NEWSSUB": "Whirlpool of India Ltd - 500238 - Results For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-09T17:26:20.617",
+"NEWS_DT": "2026-11-09T17:26:20.617",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "d848c7f3-defb-4505-a47a-448043865c76.pdf",
+"MORE": "",
+"HEADLINE": "As enclosed",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/whirlpool-of-india-ltd/whirlpool/500238/",
+"SLONGNAME": "Whirlpool of India Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 7,
+"News_submission_dt": "2026-11-09T17:26:20",
+"DissemDT": "2026-11-09T17:26:20.617",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 3007998,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794225432.4393904,
+"last": 1794225461.9425724,
 "alerted": false
 }
 },
 "lag": [
-[
-"Mafia Trends Ltd",
-543
-],
 [
 "Sarvamangal Mercantile Company Ltd ",
 587
@@ -9078,6 +9114,10 @@
 [
 "Gulf Lloyds (India) Ltd",
 45
+],
+[
+"Medico Remedies Ltd",
+0
 ]
 ],
 "gem_use": {
@@ -9108,7 +9148,7 @@
 "2026-11-05": 377,
 "2026-11-06": 403,
 "2026-11-07": 85,
-"2026-11-09": 5
+"2026-11-09": 7
 },
 "pdfposted": {
 "531240|Sep-26|standalone": {
@@ -9119,7 +9159,7 @@
 "rev": 0.0,
 "pat": -0.5820000000000001,
 "t": 1794053096.3361726,
-"last": 1794225140.1260219
+"last": 1794225457.2183719
 },
 "508956|Sep-26|standalone": {
 "code": "508956",
@@ -9129,7 +9169,7 @@
 "rev": 0.41500000000000004,
 "pat": -0.844,
 "t": 1794220868.83314,
-"last": 1794225100.722321
+"last": 1794225401.315586
 },
 "532439|Sep-26|consolidated": {
 "code": "532439",
@@ -9139,7 +9179,17 @@
 "rev": 6870.1140000000005,
 "pat": 521.2220000000001,
 "t": 1794223587.150211,
-"last": 1794225100.722321
+"last": 1794225401.315586
+},
+"540937|Sep-26|standalone": {
+"code": "540937",
+"name": "Medico Remedies Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 739.72,
+"pat": 23.788,
+"t": 1794225464.1682572,
+"last": 1794225471.2162604
 }
 },
 "audit": [
@@ -10892,7 +10942,8 @@
 "31f297c7-5597-4c7d-8406-c31705b99e5b": 1,
 "ee2b08ce-86c0-4ac9-bc02-2577a00ed92b": 1,
 "d84f79aa-7dc1-43c7-af4b-05126ac106e5": 1,
-"bedd6fb9-1d18-445b-a9d2-66da728878f7": 1
+"bedd6fb9-1d18-445b-a9d2-66da728878f7": 1,
+"27b0b9fe-d793-4b02-ab3e-55c7bcba7fda": 1
 },
 "cons_expected": {
 "ead5cb4c-4d81-4c67-a88d-cbf2a1f6372a": 1,
