@@ -1555,3 +1555,14 @@
 10 07:35:26 pdf pdf current col Vardhman Holdings Ltd consolidated ok=False/3: revenue=22.5, other_income=0.54, total_income=23.04, total_expenses=2.64, finance_costs=None, depreciation=0.0, pbt=123.78, tax=12.34, pat=111.44, eps=349.19
 10 07:35:26 pdf pdf checks failed Vardhman Holdings Ltd consolidated
 10 07:35:26 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
+10 07:37:46 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+10 07:37:46 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+10 07:38:23 seen 500439 Vardhman Holdings Ltd cat=Board Meeting early=True bse_time=13:07:36 dissem=13:07:36
+10 07:38:57 pdf pdf checks failed Vardhman Holdings Ltd consolidated
+10 07:38:57 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
+10 07:39:38 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+10 07:39:38 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+10 07:40:21 pdf pdf current col Vardhman Holdings Ltd consolidated ok=False/3: revenue=22.5, other_income=0.54, total_income=23.04, total_expenses=2.64, finance_costs=None, depreciation=0.0, pbt=123.78, tax=12.34, pat=111.44, eps=349.19
+10 07:40:21 pdf pdf checks failed Vardhman Holdings Ltd consolidated
+10 07:40:21 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
+10 07:40:46 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
