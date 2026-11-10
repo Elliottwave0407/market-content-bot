@@ -1530,3 +1530,8 @@
 10 07:13:20 pdf pdf incomplete Decorous Investment & Trading Co Ltd standalone: missing ['ebitda'] - not posting from PDF
 10 07:13:36 pdf pdf current col Decorous Investment & Trading Co Ltd standalone ok=True/3: revenue=2638.75, other_income=136.07, total_income=2774.82, total_expenses=2559.68, finance_costs=None, depreciation=0.19, pbt=215.14, tax=0.0, pat=215.14,
 10 07:13:36 pdf pdf incomplete Decorous Investment & Trading Co Ltd standalone: missing ['ebitda'] - not posting from PDF
+10 07:16:00 ready 544303|Sep-26|na kind=photo waited_min=45.5 tries=99 pdf_log=nim reader Decorous Investment & Trading Co Ltd: ok (gemini: gemini skipped (quota/backoff))
+10 07:16:06 pdf pdf current col Decorous Investment & Trading Co Ltd standalone ok=False/3: revenue=2138.75, other_income=136.07, total_income=2774.82, total_expenses=2559.68, finance_costs=0.0, depreciation=0.19, pbt=215.14, tax=0.0, pat=215.14,
+10 07:16:06 pdf pdf revenue + other income != total income, BSE-table override refused Decorous Investment & Trading Co Ltd standalone
+10 07:16:06 pdf pdf accepted on printed-numbers check (table arithmetic not reconciled) Decorous Investment & Trading Co Ltd standalone
+10 07:16:06 pdf pdf incomplete Decorous Investment & Trading Co Ltd standalone: missing ['ebitda'] - not posting from PDF
