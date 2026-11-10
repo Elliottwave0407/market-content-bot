@@ -1,7 +1,7 @@
 import os, json, tempfile, datetime as dt, requests
 from bse import BSE
 CODE = os.environ.get("SCRIP", "533339")
-out = "companydata/zen_q2"; os.makedirs(out, exist_ok=True)
+out = "companydata/" + os.environ.get("SYMBOL", "zen").lower() + "_q2" if os.environ.get("SYMBOL") != "ZENTEC" else "companydata/zen_q2"; os.makedirs(out, exist_ok=True)
 a, z = dt.datetime(2026, 10, 20), dt.datetime.now()
 rows = []
 with BSE(download_folder=tempfile.mkdtemp()) as b:
