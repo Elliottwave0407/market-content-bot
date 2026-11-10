@@ -1548,3 +1548,10 @@
 10 07:25:41 pdf nim reader Decorous Investment & Trading Co Ltd: ok (gemini: gemini skipped (quota/backoff))
 10 07:25:45 ready 539405|Sep-26|standalone kind=photo waited_min=12.8 tries=6 pdf_log=pdf current col Decorous Investment & Trading Co Ltd standalone ok=False/3: revenue=2138.75, other_income=136.07, total_income=2774.82, total_expenses=2559.68, 
 10 07:34:28 seen 500439 Vardhman Holdings Ltd cat=Result early=False bse_time=13:03:45 dissem=13:03:45
+10 07:34:51 wait 500439 Vardhman Holdings Ltd: numbers not yet on BSE
+10 07:34:51 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
+10 07:34:57 pdf pdf checks failed Vardhman Holdings Ltd consolidated
+10 07:34:57 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
+10 07:35:26 pdf pdf current col Vardhman Holdings Ltd consolidated ok=False/3: revenue=22.5, other_income=0.54, total_income=23.04, total_expenses=2.64, finance_costs=None, depreciation=0.0, pbt=123.78, tax=12.34, pat=111.44, eps=349.19
+10 07:35:26 pdf pdf checks failed Vardhman Holdings Ltd consolidated
+10 07:35:26 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
