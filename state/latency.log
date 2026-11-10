@@ -1621,3 +1621,6 @@
 10 08:32:18 seen 533168 Rossell India Ltd cat=Result early=False bse_time=14:02:00 dissem=14:02:00
 10 08:32:38 pdf rule reader Rossell India Ltd: rule: no results table page | ocr: rule: no results table page
 10 08:32:38 pdf pdf current col Rossell India Ltd standalone ok=True/3: revenue=9157, other_income=88, total_income=9245, total_expenses=5452, finance_costs=142, depreciation=152, pbt=3499, tax=771, pat=2728, eps=7.24
+10 09:01:03 seen 540678 Cochin Shipyard Ltd cat=Board Meeting early=True bse_time=14:30:07 dissem=14:30:07
+10 09:01:27 pdf rule reader Cochin Shipyard Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6
+10 09:01:48 pdf pdf current col Cochin Shipyard Ltd consolidated ok=True/3: revenue=124919.09, other_income=8262.08, total_income=133181.17, total_expenses=125671.58, finance_costs=2651.59, depreciation=3195.07, pbt=7508.0, tax=2130.92, pat=5377.
