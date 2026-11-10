@@ -184,6 +184,8 @@ def _read_stage(rec, st, headline, filed):
         return None
     import nim_read as nr
     nim_ok = bool(nr.key())
+    import groq_read as gq
+    groq_ok = os.environ.get("GROQ_READ", "0") == "1" and bool(gq.key())      # 10 Nov: free Groq text reader as a last fallback (stub probe: 28 of 55 stub filings were readable with it; off unless GROQ_READ=1)
     day = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 8 * 3600))
     use = st.setdefault("gem_use", {})
     # Morning reserve (3 Nov): the Gemini day resets at 13:30 IST, so afternoon/evening results used to eat the allowance and the next morning's results (9:00-13:30 IST, the busiest hours) found it empty.
@@ -246,7 +248,7 @@ def _read_stage(rec, st, headline, filed):
                 return r_out, q_head
         except Exception as e_:
             LOG.append(f"rule reader error {rec.get('SLONGNAME')}: {repr(e_)[:80]}")
-    if (gem_blocked and not nim_ok) or STATE_["calls"] >= PER_POLL:
+    if (gem_blocked and not nim_ok and not groq_ok) or STATE_["calls"] >= PER_POLL:
         TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)
         LOG.append(f"pdf read deferred {rec.get('SLONGNAME')}: " + ("per-pass AI call cap" if STATE_["calls"] >= PER_POLL else "no AI reader available"))
         return None
@@ -278,6 +280,15 @@ def _read_stage(rec, st, headline, filed):
         if out is not None:
             return _annotate(out, small), q_head
         err = f"{err}; {err2}"
+    if out is None and groq_ok:      # last fallback: Groq reads the text layer; every number must appear word for word in the filing and the arithmetic gate still runs afterwards
+        try:
+            g_out, g_err = gq.read_pdf(small)
+        except Exception as e_:
+            g_out, g_err = None, repr(e_)[:80]
+        LOG.append(f"groq reader {rec.get('SLONGNAME')}: {'ok' if g_out else g_err}")
+        if g_out is not None:
+            return _annotate(g_out, small), q_head
+        err = f"{err}; {g_err}"
     if out is None:
         if err and ("429" in err or "503" in err):
             STATE_["backoff"] = time.time() + (120 if "429" in err else 20)      # 5 Nov: a 503 (busy) used to freeze every Gemini read for 2 minutes; models and keys are already tried in turn inside gemini_read
