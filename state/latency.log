@@ -1606,3 +1606,12 @@
 10 17:21:41 pdf rule reader Rentomojo Ltd: rule: stan: does not reconcile [million] total_income=[1437.92, 1270.99, 939.33] total_expenses=[1197.95, 1051.68, 781.65] exceptional=[4.07, -113.66, 0.0] pbt=[244.04, 105.65, 157.68] tax=[-62.11, -27.2
 10 17:23:31 pdf pdf checks failed Rentomojo Ltd consolidated
 10 17:23:31 pdf pdf has consolidated but it failed checks: not falling back to standalone Rentomojo Ltd
+10 17:26:40 pdf nim reader Rentomojo Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
+10 17:26:40 pdf pdf read failed Rentomojo Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+10 17:27:19 pdf rule reader Rentomojo Ltd: rule: stan: does not reconcile [million] total_income=[1437.92, 1270.99, 939.33] total_expenses=[1197.95, 1051.68, 781.65] exceptional=[4.07, -113.66, 0.0] pbt=[244.04, 105.65, 157.68] tax=[-62.11, -27.2
+10 17:29:23 pdf pdf checks failed Rentomojo Ltd consolidated
+10 17:29:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Rentomojo Ltd
+10 17:30:01 pdf rule reader Rentomojo Ltd: rule: stan: does not reconcile [million] total_income=[1437.92, 1270.99, 939.33] total_expenses=[1197.95, 1051.68, 781.65] exceptional=[4.07, -113.66, 0.0] pbt=[244.04, 105.65, 157.68] tax=[-62.11, -27.2
+10 17:32:07 pdf nim reader Rentomojo Ltd: ok (gemini: gemini skipped (quota/backoff))
+10 17:32:23 pdf pdf checks failed Rentomojo Ltd consolidated
+10 17:32:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Rentomojo Ltd
