@@ -1578,3 +1578,6 @@
 10 16:03:12 pdf pdf current col Dynavision Ltd consolidated ok=True/3: revenue=380.46, other_income=163.81, total_income=544.27, total_expenses=287.93, finance_costs=55.01, depreciation=56.23, pbt=256.34, tax=55.18, pat=201.16, eps=5.11
 10 16:03:12 pdf pdf current col PVV Infra Ltd consolidated ok=True/3: revenue=1118.17, other_income=3.82, total_income=1121.99, total_expenses=1013.02, finance_costs=2.08, depreciation=0.0, pbt=108.97, tax=27.43, pat=81.55, eps=0.05
 10 16:03:32 pdf strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key:
+10 16:04:51 pdf rule reader Chambal Breweries & Distilleries Ltd: rule: no results table page | ocr: rule: no results table page
+10 16:06:18 pdf nim reader Chambal Breweries & Distilleries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e
+10 16:06:18 pdf pdf read failed Chambal Breweries & Distilleries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing 
