@@ -4786,7 +4786,8 @@
 "8285affc-0026-4205-be0a-a2db75076162",
 "4e6c7e08-9faa-45ac-8a3e-8e71d696632b",
 "a6fa66fe-1f79-488c-b150-7a1ba9e57d00",
-"4b606d54-09ca-4d1e-8ec2-0f3812b96b06"
+"4b606d54-09ca-4d1e-8ec2-0f3812b96b06",
+"80ecb399-1329-4883-b490-869f45ff7564"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7938,7 +7939,45 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794308348.5368776,
-"last": 1794309427.5847752,
+"last": 1794309615.6391444,
+"alerted": false
+},
+"ce7400c2-dd1c-4951-98e1-ecc7fe93f963": {
+"rec": {
+"NEWSID": "ce7400c2-dd1c-4951-98e1-ecc7fe93f963",
+"SCRIP_CD": 533163,
+"XML_NAME": "ANN_533163_CE7400C2-DD1C-4951-98E1-ECC7FE93F963",
+"NEWSSUB": "ARSS Infrastructure Projects Ltd - 533163 - Financial Results For The Quarter And Half Year Ended 30Th September 2026",
+"DT_TM": "2026-11-10T16:46:33.44",
+"NEWS_DT": "2026-11-10T16:46:33.44",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "00ee0b2a-5a6d-48cf-a375-8def703680f3.pdf",
+"MORE": "",
+"HEADLINE": "Out Come of Board meeting dated 10th November 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/arss-infrastructure-projects-ltd/arssinfra/533163/",
+"SLONGNAME": "ARSS Infrastructure Projects Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 6,
+"News_submission_dt": "2026-11-10T16:46:33",
+"DissemDT": "2026-11-10T16:46:33.44",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 7257512,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794309429.210644,
+"last": 1794309615.6391444,
 "alerted": false
 }
 },
@@ -9173,7 +9212,7 @@
 "2026-11-06": 403,
 "2026-11-07": 85,
 "2026-11-09": 17,
-"2026-11-10": 14
+"2026-11-10": 16
 },
 "pdfposted": {
 "508956|Sep-26|standalone": {
@@ -9234,7 +9273,7 @@
 "rev": 1326.6000000000001,
 "pat": 191.9,
 "t": 1794305824.9997919,
-"last": 1794309174.2428772
+"last": 1794309474.3374639
 },
 "531989|Sep-26|standalone": {
 "code": "531989",
@@ -9244,7 +9283,7 @@
 "rev": 0.0,
 "pat": -0.393,
 "t": 1794306123.8240392,
-"last": 1794309174.2428772
+"last": 1794309474.3374639
 },
 "544361|Sep-26|consolidated": {
 "code": "544361",
@@ -9254,7 +9293,7 @@
 "rev": 280.966,
 "pat": 68.665,
 "t": 1794308376.9144387,
-"last": 1794309294.1434712
+"last": 1794309595.2915437
 }
 },
 "audit": [
@@ -11559,7 +11598,8 @@
 "8285affc-0026-4205-be0a-a2db75076162": 1,
 "4e6c7e08-9faa-45ac-8a3e-8e71d696632b": 1,
 "c2312ddb-25d5-429e-a239-cbf796e2f60e": 1,
-"4b606d54-09ca-4d1e-8ec2-0f3812b96b06": 1
+"4b606d54-09ca-4d1e-8ec2-0f3812b96b06": 1,
+"ce7400c2-dd1c-4951-98e1-ecc7fe93f963": 1
 },
 "half_q": {
 "5c25777a-b03c-488e-92ac-5a1a6cede7ba": {
@@ -13010,11 +13050,21 @@
 },
 "2026-11-10": {
 "main": {
-"ok": 9,
+"ok": 16,
 "429": 1,
-"other": 3
+"other": 8
 },
 "results-key": {
+"ok": 3,
+"429": 0,
+"other": 3
+},
+"concall-key": {
+"ok": 0,
+"429": 0,
+"other": 1
+},
+"vision-key": {
 "ok": 1,
 "429": 0,
 "other": 0
