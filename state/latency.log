@@ -1664,3 +1664,8 @@
 10 10:20:36 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
 10 10:20:36 pdf pdf unusable Century Business Media Ltd: unit/date missing
 10 10:20:37 seen 531989 Deccan Polypacks Ltd cat=Result early=False bse_time=15:50:15 dissem=15:50:15
+10 10:21:00 wait 531989 Deccan Polypacks Ltd: numbers not yet on BSE
+10 10:21:08 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (g
+10 10:21:08 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (pos
+10 10:21:23 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+10 10:22:03 ready 531989|Sep-26|standalone kind=photo waited_min=0.0 tries=7 pdf_log=pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pb
