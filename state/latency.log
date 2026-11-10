@@ -1566,3 +1566,9 @@
 10 07:40:21 pdf pdf checks failed Vardhman Holdings Ltd consolidated
 10 07:40:21 pdf pdf has consolidated but it failed checks: not falling back to standalone Vardhman Holdings Ltd
 10 07:40:46 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
+10 07:42:12 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
+10 07:42:14 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+10 07:42:14 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+10 07:42:39 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
+10 07:43:42 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+10 07:43:42 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
