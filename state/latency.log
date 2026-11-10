@@ -1560,3 +1560,9 @@
 10 11:20:14 pdf pdf current col ARSS Infrastructure Projects Ltd consolidated ok=True/3: revenue=2310.91, other_income=76.14, total_income=2390.46, total_expenses=3288.33, finance_costs=577.02, depreciation=29.64, pbt=-896.47, tax=-89.62, pat=-80
 10 11:20:14 pdf pdf incomplete ARSS Infrastructure Projects Ltd consolidated: missing ['ebitda'] - not posting from PDF
 10 11:20:39 seen 531651 National General Industries  cat=Board Meeting early=True bse_time=16:50:32 dissem=16:50:32
+10 11:21:09 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
+10 11:21:16 pdf pdf current col Vision Cinemas Ltd consolidated ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=15.73, finance_costs=0.0, depreciation=2.67, pbt=-15.73, tax=0, pat=-15.73, eps=-0.22
+10 11:21:16 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
+10 11:21:16 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
+10 11:22:15 pdf strong model fixed a failed read
+10 11:22:19 ready 531651|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col National General Industries Ltd standalone ok=True/3: revenue=206.47, other_income=84.58, total_income=291.05, total_expenses=277.87, finance_co
