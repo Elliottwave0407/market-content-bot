@@ -1592,3 +1592,10 @@
 10 07:54:14 pdf rule reader Vardhman Holdings Ltd: rule: stan: does not reconcile [crore] total_expenses=[2.64, 0.75, 0.36] pbt=[62.33, 10.59, 44.58] tax=[-1.46, 0.13, 11.37] associates=[103.38, 89.75, 54.63] pat=[49.99, 8.33, 33.21] depreciation
 10 07:54:17 seen 505216 Alfred Herbert India Ltd cat=Result early=False bse_time=13:23:40 dissem=13:23:40
 10 07:54:40 wait 505216 Alfred Herbert India Ltd: numbers not yet on BSE
+10 07:54:51 pdf rule reader Alfred Herbert India Ltd: rule: no results table page | ocr: rule: no results table page
+10 07:54:54 pdf pdf current col Alfred Herbert India Ltd standalone ok=True/2: revenue=758.16, other_income=None, total_income=758.16, total_expenses=86.02, finance_costs=0.66, depreciation=22.09, pbt=672.14, tax=143.25, pat=528.89, eps=68.56
+10 07:54:54 pdf pdf incomplete Alfred Herbert India Ltd standalone: missing ['ebitda'] - not posting from PDF
+10 07:55:29 pdf rule reader Alfred Herbert India Ltd: rule: no results table page | ocr: rule: no results table page
+10 07:55:32 pdf pdf current col Alfred Herbert India Ltd standalone ok=True/2: revenue=758.16, other_income=None, total_income=758.16, total_expenses=86.02, finance_costs=0.66, depreciation=22.09, pbt=672.14, tax=143.25, pat=528.89, eps=68.56
+10 07:55:50 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+10 07:55:50 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
