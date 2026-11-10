@@ -1674,3 +1674,9 @@
 10 10:22:56 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
 10 10:23:56 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
 10 10:23:56 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
+10 10:25:06 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
+10 10:25:06 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
+10 10:25:45 pdf nim reader Deccan Polypacks Ltd: ok (gemini: gemini skipped (quota/backoff))
+10 10:25:48 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
+10 10:25:48 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
+10 10:26:14 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
