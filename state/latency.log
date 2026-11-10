@@ -1568,3 +1568,12 @@
 10 16:01:28 ready 531928|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Golden Carpets Ltd standalone ok=True/3: revenue=26.05, other_income=0.01, total_income=26.05, total_expenses=23.7, finance_costs=0.0, depreciat
 10 16:02:23 ready 532966|Sep-26|consolidated kind=photo waited_min=10.0 tries=1 pdf_log=
 10 16:02:32 ready 513377|Sep-26|consolidated kind=photo waited_min=10.0 tries=1 pdf_log=pdf current col MMTC Ltd consolidated ok=False/3: revenue=1.27, other_income=36.65, total_income=37.92, total_expenses=21.63, finance_costs=0.11, depreciation=0
+10 16:02:40 ready 523838|Sep-26|standalone kind=photo waited_min=10.0 tries=1 pdf_log=rule reader Chambal Breweries & Distilleries Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Simplex Infrastructures Ltd s
+10 16:02:49 ready 517238|Sep-26|consolidated kind=photo waited_min=10.0 tries=1 pdf_log=pdf current col Simplex Infrastructures Ltd standalone ok=False/3: revenue=21560, other_income=161, total_income=21721, total_expenses=18682, finance_costs=155,
+10 16:02:57 ready 536659|Sep-26|consolidated kind=photo waited_min=10.0 tries=1 pdf_log=pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored Simplex Infrastructures Ltd standalone | pdf current col Dynavision 
+10 16:03:12 pdf pdf current col MMTC Ltd consolidated ok=False/3: revenue=1.27, other_income=36.65, total_income=37.92, total_expenses=21.63, finance_costs=0.11, depreciation=0.68, pbt=26.65, tax=1.48, pat=25.17, eps=0.17
+10 16:03:12 pdf rule reader Chambal Breweries & Distilleries Ltd: rule: no results table page | ocr: rule: no results table page
+10 16:03:12 pdf pdf current col Simplex Infrastructures Ltd standalone ok=False/3: revenue=21560, other_income=161, total_income=21721, total_expenses=18682, finance_costs=155, depreciation=799, pbt=3029, tax=800, pat=2229, eps=2.82
+10 16:03:12 pdf pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored Simplex Infrastructures Ltd standalone
+10 16:03:12 pdf pdf current col Dynavision Ltd consolidated ok=True/3: revenue=380.46, other_income=163.81, total_income=544.27, total_expenses=287.93, finance_costs=55.01, depreciation=56.23, pbt=256.34, tax=55.18, pat=201.16, eps=5.11
+10 16:03:12 pdf pdf current col PVV Infra Ltd consolidated ok=True/3: revenue=1118.17, other_income=3.82, total_income=1121.99, total_expenses=1013.02, finance_costs=2.08, depreciation=0.0, pbt=108.97, tax=27.43, pat=81.55, eps=0.05
