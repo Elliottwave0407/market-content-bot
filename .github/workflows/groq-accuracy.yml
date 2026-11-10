@@ -1,0 +1,37 @@
+# read-only accuracy test of the Groq result reader against numbers already posted (posts nothing, writes no state)
+name: groq-accuracy
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "sample size"
+        default: "80"
+      seed:
+        description: "random seed"
+        default: "7"
+      since:
+        description: "earliest posted result (YYYY-MM-DD)"
+        default: "2026-10-20"
+permissions:
+  contents: read
+concurrency:
+  group: groq-accuracy
+  cancel-in-progress: false
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          N: ${{ github.event.inputs.n || '80' }}
+          SEED: ${{ github.event.inputs.seed || '7' }}
+          SINCE: ${{ github.event.inputs.since || '2026-10-20' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python -u scripts/groq_accuracy.py
