@@ -1,0 +1,33 @@
+# read-only probe: prints balance sheet / cash flow / capex text from a result PDF and an annual report (posts nothing)
+name: sg-fetch
+on:
+  workflow_dispatch:
+    inputs:
+      res:
+        description: "BSE attachment name of the result PDF"
+        default: ""
+      ar:
+        description: "BSE attachment name of the annual report"
+        default: ""
+      ar_nse:
+        description: "NSE archive URL of the annual report (optional)"
+        default: ""
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          RES: ${{ github.event.inputs.res }}
+          AR: ${{ github.event.inputs.ar }}
+          AR_NSE: ${{ github.event.inputs.ar_nse }}
+        run: python scripts/sg_fetch.py
