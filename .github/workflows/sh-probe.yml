@@ -19,7 +19,7 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           SYMBOL: ${{ github.event.inputs.symbol }}
-        run: python scripts/sh_probe.py
+        run: python scripts/sh_probe.py && python scripts/sh_xbrl.py
       - name: save data
         run: |
           git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
