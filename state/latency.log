@@ -1599,3 +1599,8 @@
 10 07:55:32 pdf pdf current col Alfred Herbert India Ltd standalone ok=True/2: revenue=758.16, other_income=None, total_income=758.16, total_expenses=86.02, finance_costs=0.66, depreciation=22.09, pbt=672.14, tax=143.25, pat=528.89, eps=68.56
 10 07:55:50 pdf nim reader Vardhman Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
 10 07:55:50 pdf pdf read failed Vardhman Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible 
+10 07:58:08 pdf strong model retry did not help: None
+10 07:58:58 seen 504036 Hirect Ltd cat=Board Meeting early=True bse_time=13:28:40 dissem=13:28:40
+10 07:59:37 pdf rule reader Hirect Ltd: rule: no results table page | ocr: rule: no results table page
+10 08:00:04 pdf strong model retry did not help: None
+10 08:00:21 ready 504036|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
