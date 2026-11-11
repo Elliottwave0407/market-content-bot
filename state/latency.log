@@ -1677,3 +1677,8 @@
 11 10:46:48 pdf rule reader TCFC Finance Ltd: ok
 11 10:46:48 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
 11 10:46:48 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:47:13 pdf nim reader Asia Pack Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: HTTP 503 on gemini-flash-lite-latest | r)
+11 10:47:13 pdf pdf read failed Asia Pack Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: parse JSONDecodeError('Expecting value: line 12 column 24 (char 384)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 10:49:03 seen 502250 Lerthai Finance Ltd cat=Result early=False bse_time=16:18:21 dissem=16:18:21
+11 10:49:26 wait 502250 Lerthai Finance Ltd: numbers not yet on BSE
+11 10:49:33 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
