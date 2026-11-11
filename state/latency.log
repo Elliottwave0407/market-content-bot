@@ -1552,3 +1552,7 @@
 11 11:19:29 ready 532989|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Bafna Pharmaceuticals Ltd standalone ok=True/2: revenue=4766.56, other_income=113.41, total_income=4879.97, total_expenses=4195.15, finance_cost
 11 11:19:58 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' 
 11 11:19:58 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (po
+11 11:21:18 seen 501298 Industrial & Prudential Inve cat=Board Meeting early=True bse_time=16:51:03 dissem=16:51:03
+11 11:21:18 seen 539090 Rajputana Investment and Fin cat=Board Meeting early=True bse_time=16:51:10 dissem=16:51:10
+11 11:21:40 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
+11 11:21:40 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
