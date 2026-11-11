@@ -1598,3 +1598,12 @@
 11 08:33:54 pdf rule reader Lakshmi Engineering And Warehousing Ltd: rule: no results table page | ocr: rule: no results table page
 11 08:33:56 seen 505160 Talbros Automotive Component cat=Result early=False bse_time=14:03:25 dissem=14:03:25
 11 08:33:56 seen 540679 Haleos Labs Ltd cat=Board Meeting early=True bse_time=14:03:42 dissem=14:03:42
+11 08:34:41 wait 505160 Talbros Automotive Component: numbers not yet on BSE
+11 08:35:14 pdf pdf current col Lakshmi Engineering And Warehousing Ltd standalone ok=True/3: revenue=433.27, other_income=25.54, total_income=458.81, total_expenses=370.5, finance_costs=30.08, depreciation=41.83, pbt=88.31, tax=16.23, pat=72.08,
+11 08:35:15 seen 538788 Gilada Finance & Investments cat=Board Meeting early=True bse_time=14:04:06 dissem=14:04:06
+11 08:35:19 pdf pdf current col EAAA India Alternatives Ltd consolidated ok=True/3: revenue=251.49, other_income=28.39, total_income=279.88, total_expenses=167.61, finance_costs=9.2, depreciation=3.56, pbt=112.27, tax=24.17, pat=88.1, eps=13.68
+11 08:35:19 pdf pdf current col Talbros Automotive Components Ltd consolidated ok=False/3: revenue=26320.8, other_income=428.19, total_income=26748.99, total_expenses=23244.4, finance_costs=320.37, depreciation=895.64, pbt=4162.74, tax=868.3, pat
+11 08:35:19 pdf pdf incomplete Talbros Automotive Components Ltd consolidated: missing ['ebitda'] - not posting from PDF
+11 08:35:42 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=778, other_income=1834, total_income=2612, total_expenses=1225, finance_costs=0, depreciation=91, pbt=1387, tax=562, pat=825, eps=0.03
+11 08:35:42 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 0.93 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
+11 08:35:50 pdf rule reader Talbros Automotive Components Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
