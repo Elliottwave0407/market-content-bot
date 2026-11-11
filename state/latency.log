@@ -1579,3 +1579,11 @@
 11 11:28:19 ready 532183|Sep-26|standalone kind=photo waited_min=0.6 tries=1 pdf_log=pdf current col Gayatri Sugars Ltd standalone ok=True/2: revenue=1595.98, other_income=0.09, total_income=1596.07, total_expenses=3964.15, finance_costs=776.35,
 11 11:28:30 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
 11 11:28:30 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
+11 11:29:04 pdf pdf current col Industrial & Prudential Investment Company Ltd consolidated ok=False/2: revenue=328.83, other_income=None, total_income=328.83, total_expenses=24.89, finance_costs=None, depreciation=None, pbt=1536.6, tax=6.15, pat
+11 11:29:04 pdf pdf checks failed Industrial & Prudential Investment Company Ltd consolidated
+11 11:29:04 pdf pdf has consolidated but it failed checks: not falling back to standalone Industrial & Prudential Investment Company Ltd
+11 11:29:27 seen 511194 ICDS Ltd cat=Result early=False bse_time=16:58:58 dissem=16:58:58
+11 11:30:33 pdf rule reader India Infraspace Ltd: rule: no results table page | ocr: rule: no results table page
+11 11:30:46 pdf nim reader Industrial & Prudential Investment Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
+11 11:30:46 pdf pdf read failed Industrial & Prudential Investment Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
+11 11:31:12 pdf rule reader Industrial & Prudential Investment Company Ltd: rule: no results table page | ocr: rule: no results table page
