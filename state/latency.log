@@ -1547,3 +1547,8 @@
 11 14:52:56 pdf pdf read failed Storage Technologies and Automation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType
 11 14:53:39 seen 521005 Titan Intech Ltd cat=Board Meeting early=True bse_time=20:23:00 dissem=20:23:00
 11 14:53:42 ready 521005|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Titan Intech Ltd: ok | pdf current col Titan Intech Ltd standalone ok=True/3: revenue=761.4, other_income=86.3, total_income=847.7, total_expenses=7
+11 14:55:43 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:55:44 seen 539287 Ortin Global Ltd cat=Board Meeting early=True bse_time=20:25:12 dissem=20:25:12
+11 14:55:46 pdf rule reader Ortin Global Ltd: ok
+11 14:55:46 pdf pdf current col Ortin Global Ltd standalone ok=True/2: revenue=3.14, other_income=None, total_income=3.9, total_expenses=30.58, finance_costs=0.06, depreciation=0.01, pbt=-26.68, tax=0.0, pat=-26.86, eps=None
+11 14:55:46 pdf pdf incomplete Ortin Global Ltd standalone: missing ['ebitda'] - not posting from PDF
