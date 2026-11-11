@@ -1499,3 +1499,8 @@
 10 18:12:27 pdf pdf read failed Sabrimala Industries India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 17 numbers not found in the filing text 
 10 18:22:05 ready 540132|Sep-26|consolidated kind=photo waited_min=31.6 tries=8 pdf_log=
 11 05:27:10 seen 539354 Polyspin Exports Ltd cat=Board Meeting early=True bse_time=10:56:15 dissem=10:56:15
+11 05:27:43 pdf rule reader Polyspin Exports Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[6576.82, 5336.2, 5783.8] pbt=[158.26, 103.91, 180.88] tax=[49.67, 28.26, 15.94] associates=[106.69, 74.6, 77.07] pat=[108.59, 75.
+11 05:28:36 pdf pdf history mismatch Polyspin Exports Ltd consolidated cols=['30.09.2024', '30.06.2024', '30.09.2023'] :: q-1: pdf rev 531.355 pat 15.025 | bse rev 486.68 pat 17.87 (Rs mn); q-4: pdf rev 588.708 pat 24.200000000000003 | bse rev 53
+11 05:28:36 pdf pdf has consolidated but it failed checks: not falling back to standalone Polyspin Exports Ltd
+11 05:29:11 pdf rule reader Polyspin Exports Ltd: rule: consolidated table does not reconcile [lakh] total_expenses=[6576.82, 5336.2, 5783.8] pbt=[158.26, 103.91, 180.88] tax=[49.67, 28.26, 15.94] associates=[106.69, 74.6, 77.07] pat=[108.59, 75.
+11 05:29:35 ready 539354|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=
