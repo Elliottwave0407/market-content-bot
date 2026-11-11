@@ -187,7 +187,8 @@
 "997bafbe-4f65-4080-8ff8-34cb551de237",
 "68fe5e09-9199-4235-8533-24c11cd603ee",
 "6db1a36d-ef24-422d-a441-37b1b54838c9",
-"fe45ee0c-15c1-4c52-ad28-a9242b39b86b"
+"fe45ee0c-15c1-4c52-ad28-a9242b39b86b",
+"6ab3d293-5142-4e22-9cce-3fcc053220e7"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3425,7 +3426,8 @@
 "530235|Sep-26|consolidated",
 "532998|Sep-26|standalone",
 "526115|Sep-26|na",
-"544205|Sep-26|standalone"
+"544205|Sep-26|standalone",
+"517500|Sep-26|consolidated"
 ],
 "pending": {
 "ed67d75e-80e1-41fc-9b9e-4817598257c1": {
@@ -3463,7 +3465,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794403570.163784,
-"last": 1794405207.576441,
+"last": 1794405210.578653,
 "alerted": false
 },
 "77d4449b-6a11-4ada-9757-137ab0a680f9": {
@@ -3501,45 +3503,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794404369.6918006,
-"last": 1794405207.576441,
-"alerted": false
-},
-"6ab3d293-5142-4e22-9cce-3fcc053220e7": {
-"rec": {
-"NEWSID": "6ab3d293-5142-4e22-9cce-3fcc053220e7",
-"SCRIP_CD": 517500,
-"XML_NAME": "ANN_517500_6AB3D293-5142-4E22-9CCE-3FCC053220E7",
-"NEWSSUB": "Roto Pumps Ltd - 517500 - Results For The Quarter Ended September 30, 2026",
-"DT_TM": "2026-11-11T19:21:46.027",
-"NEWS_DT": "2026-11-11T19:21:46.027",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "650d2675-e1fe-4aa1-96f1-c1c2c2a1a009.pdf",
-"MORE": "",
-"HEADLINE": "Submission of un-audited financial results for the second quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/roto-pumps-ltd/roto/517500/",
-"SLONGNAME": "Roto Pumps Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 16,
-"News_submission_dt": "2026-11-11T19:21:46",
-"DissemDT": "2026-11-11T19:21:46.027",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1106048,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794405127.1055326,
-"last": 1794405207.576441,
+"last": 1794405210.578653,
 "alerted": false
 }
 },
@@ -3696,7 +3660,8 @@
 "ed67d75e-80e1-41fc-9b9e-4817598257c1": 1,
 "5ffff844-d8c2-47cb-b4f2-946478d6b6a4": 1,
 "0ca0a67c-f848-4f53-8fb5-53702daba323": 1,
-"77d4449b-6a11-4ada-9757-137ab0a680f9": 1
+"77d4449b-6a11-4ada-9757-137ab0a680f9": 1,
+"6ab3d293-5142-4e22-9cce-3fcc053220e7": 1
 },
 "lag": [
 [
@@ -3850,6 +3815,10 @@
 [
 "Karan Woo Sin Ltd",
 46
+],
+[
+"Roto Pumps Ltd",
+1
 ]
 ],
 "pdfposted": {
@@ -4042,6 +4011,16 @@
 "pat": 8.706000000000001,
 "t": 1794404719.7842543,
 "last": 1794405051.2927063
+},
+"517500|Sep-26|consolidated": {
+"code": "517500",
+"name": "Roto Pumps Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1001.4590000000001,
+"pat": 205.842,
+"t": 1794405233.1862533,
+"last": 1794405246.6412625
 }
 },
 "half_q": {
