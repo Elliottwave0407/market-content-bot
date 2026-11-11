@@ -1637,3 +1637,19 @@
 11 11:50:28 ready 539543|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeo
 11 11:53:34 pdf nim reader India Infraspace Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backo
 11 11:53:34 pdf pdf read failed India Infraspace Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 11:53:37 seen 530809 BNR Udyog Ltd cat=Board Meeting early=True bse_time=17:16:10 dissem=17:16:10
+11 11:53:37 seen 500400 Tata Power Company Ltd cat=Board Meeting early=True bse_time=17:16:18 dissem=17:16:18
+11 11:53:37 seen 521034 Soma Textiles & Industries L cat=Result early=False bse_time=17:16:49 dissem=17:16:49
+11 11:53:37 seen 521034 Soma Textiles & Industries L cat=Result early=False bse_time=17:18:07 dissem=17:18:07
+11 11:53:37 seen 530317 Godavari Drugs Ltd cat=Result early=False bse_time=17:21:10 dissem=17:21:10
+11 11:53:37 seen 501298 Industrial & Prudential Inve cat=Result early=False bse_time=17:21:27 dissem=17:21:27
+11 11:53:37 seen 530809 BNR Udyog Ltd cat=Result early=False bse_time=17:21:59 dissem=17:21:59
+11 11:53:37 seen 543650 DCX Systems Ltd cat=Board Meeting early=True bse_time=17:22:53 dissem=17:22:53
+11 11:53:37 seen 511756 Abirami Financial Services I cat=Result early=False bse_time=17:23:18 dissem=17:23:18
+11 11:54:20 ready 543650|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Industrial & Prudential Investment Company Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
+11 11:54:30 wait 501298 Industrial & Prudential Inve: numbers not yet on BSE
+11 11:54:33 wait 521034 Soma Textiles & Industries L: numbers not yet on BSE
+11 11:54:33 wait 521034 Soma Textiles & Industries L: numbers not yet on BSE
+11 11:54:34 ready 530317|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Godavari Drugs Ltd standalone ok=False/3: revenue=2822.6, other_income=-12.09, total_income=2810.51, total_expenses=2687.46, finance_costs=83.93
+11 11:54:43 wait 530317 Godavari Drugs Ltd: numbers not yet on BSE
+11 11:54:47 ready 539273|Sep-26|na kind=photo waited_min=49.9 tries=99 pdf_log=pdf current col Godavari Drugs Ltd standalone ok=False/3: revenue=2822.6, other_income=-12.09, total_income=2810.51, total_expenses=2687.46, finance_costs=83.93
