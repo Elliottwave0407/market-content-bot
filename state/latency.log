@@ -1598,3 +1598,15 @@
 11 10:22:47 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
 11 10:23:17 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
 11 10:24:20 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:25:15 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
+11 10:25:23 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+11 10:25:30 pdf rule reader Southern Latex Ltd: rule: unit not found | ocr: rule: no results table page
+11 10:25:31 seen 534060 PMC Fincorp Ltd cat=Result early=False bse_time=15:54:44 dissem=15:54:44
+11 10:25:53 wait 534060 PMC Fincorp Ltd: numbers not yet on BSE
+11 10:26:00 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+11 10:26:04 pdf pdf current col PMC Fincorp Ltd standalone ok=True/2: revenue=524.22, other_income=None, total_income=524.22, total_expenses=58.73, finance_costs=None, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
+11 10:26:04 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:26:26 ready 534060|Sep-26|standalone kind=photo waited_min=0.0 tries=4 pdf_log=pdf current col PMC Fincorp Ltd standalone ok=True/3: revenue=524.22, other_income=0.0, total_income=524.22, total_expenses=58.73, finance_costs=87.91, deprecia
+11 10:26:39 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+11 10:26:39 pdf pdf current col PMC Fincorp Ltd standalone ok=True/3: revenue=524.22, other_income=0.0, total_income=524.22, total_expenses=58.73, finance_costs=87.91, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
+11 10:26:39 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
