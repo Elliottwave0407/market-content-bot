@@ -1583,3 +1583,6 @@
 11 16:57:57 pdf pdf current col Lalithaa Jewellery Mart Ltd consolidated ok=True/3: revenue=70195.6, other_income=39.16, total_income=70234.76, total_expenses=66792.5, finance_costs=646.42, depreciation=329.1, pbt=3442.26, tax=911.79, pat=2530.47
 11 16:57:57 pdf strong model retry did not help: None
 11 16:57:57 pdf pdf is a HALF-YEARLY filing (column dates ['30th September, 2026', '30th September, 2025', '31st March, 2026']): not read as quarters, queued for the half-yearly route Paradeep Parivahan Ltd
+11 16:59:29 pdf nim reader Abans Financial Services Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: HTTP 503 on gemini-
+11 16:59:29 pdf pdf read failed Abans Financial Services Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: HTTP 503 on gemini-flash-lite-latest | concall-key: HTTP 429 (per-day) on gemini-flash-latest | vision-key: HTTP 503 on gemini-flash
+11 16:59:54 pdf strong model retry did not help: None
