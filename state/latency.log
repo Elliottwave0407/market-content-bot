@@ -1598,3 +1598,11 @@
 11 13:32:40 pdf pdf read failed Securekloud Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object ha
 11 13:34:03 seen 530235 KJMC Financial Services Ltd cat=Result early=False bse_time=19:03:04 dissem=19:03:04
 11 13:34:30 wait 530235 KJMC Financial Services Ltd: numbers not yet on BSE
+11 13:35:46 pdf pdf current col KJMC Financial Services Ltd consolidated ok=True/3: revenue=1133.78, other_income=6.8, total_income=1140.58, total_expenses=132.4, finance_costs=49.23, depreciation=12.26, pbt=1008.48, tax=256.19, pat=752.29, eps=1
+11 13:36:32 pdf nim reader Securekloud Technologies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: gemini skippe
+11 13:36:32 pdf pdf read failed Securekloud Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object ha
+11 13:36:47 seen 532998 Lotus Eye Hospital And Insti cat=Board Meeting early=True bse_time=19:06:22 dissem=19:06:22
+11 13:37:07 pdf rule reader Lotus Eye Hospital And Institute Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=5
+11 13:37:18 ready 532998|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: None | pdf current col Lotus Eye Hospital And Institute Ltd standalone ok=False/3: revenue=1772.41, other_income=24.73, total_i
+11 13:37:26 pdf strong model retry did not help: None
+11 13:37:26 pdf pdf current col Lotus Eye Hospital And Institute Ltd standalone ok=False/3: revenue=1772.41, other_income=24.73, total_income=1797.14, total_expenses=1746.43, finance_costs=59.31, depreciation=169.97, pbt=55.87, tax=11.92, pat=43.
