@@ -1688,3 +1688,7 @@
 11 12:18:10 seen 532271 Orchasp Ltd cat=Board Meeting early=True bse_time=17:46:03 dissem=17:46:03
 11 12:18:10 seen 533095 Bengal & Assam Company Ltd cat=Result early=False bse_time=17:46:41 dissem=17:46:41
 11 12:18:10 seen 544015 Mish Designs Ltd cat=Board Meeting early=True bse_time=17:47:15 dissem=17:47:15
+11 12:18:35 wait 533095 Bengal & Assam Company Ltd: numbers not yet on BSE
+11 12:20:24 pdf pdf incomplete Williamson Financial Services Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+11 12:20:24 pdf nim reader Bengal & Assam Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: HTTP 503 on gem
+11 12:20:24 pdf pdf read failed Bengal & Assam Company Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: parse JSONDecodeError("Expecting ',' delimiter: line 26 column 11 (char 390)"); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError(
