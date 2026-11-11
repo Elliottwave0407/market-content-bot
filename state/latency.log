@@ -1586,3 +1586,9 @@
 11 13:26:58 pdf pdf current col Securekloud Technologies Ltd consolidated ok=True/3: revenue=1750.49, other_income=10.12, total_income=1760.61, total_expenses=1991.04, finance_costs=46.41, depreciation=22.29, pbt=-230.43, tax=9.93, pat=-240.36, e
 11 13:26:58 pdf pdf history mismatch Securekloud Technologies Ltd consolidated cols=['September 30, 2026', 'June 30, 2026', 'September 30, 2025'] :: q-1: pdf rev 135.10999999999999 pat -16.841 | bse rev 135.11 pat -16.84 (Rs mn); q-4: pdf rev 82.
 11 13:26:58 pdf pdf has consolidated but it failed checks: not falling back to standalone Securekloud Technologies Ltd
+11 13:27:46 pdf rule reader Securekloud Technologies Ltd: rule: stan: does not reconcile [lakh] total_income=[79124.0, 58057.0, 1039.38] total_expenses=[1139.71, 86170.0, 69356.0] exceptional=[0.0, -17.13, 0.0] pbt=[-348.47, -298.26, 345.82] tax=
+11 13:29:24 pdf rule reader Securekloud Technologies Ltd: rule: stan: does not reconcile [lakh] total_income=[79124.0, 58057.0, 1039.38] total_expenses=[1139.71, 86170.0, 69356.0] exceptional=[0.0, -17.13, 0.0] pbt=[-348.47, -298.26, 345.82] tax=
+11 13:29:32 pdf nim reader Securekloud Technologies Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: gemini skippe
+11 13:29:32 pdf pdf read failed Securekloud Technologies Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object ha
+11 13:30:01 pdf rule reader Securekloud Technologies Ltd: rule: stan: does not reconcile [lakh] total_income=[79124.0, 58057.0, 1039.38] total_expenses=[1139.71, 86170.0, 69356.0] exceptional=[0.0, -17.13, 0.0] pbt=[-348.47, -298.26, 345.82] tax=
+11 13:31:17 seen 500298 Naperol Investments Ltd cat=Board Meeting early=True bse_time=19:00:21 dissem=19:00:21
