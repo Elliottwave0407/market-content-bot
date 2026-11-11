@@ -144,7 +144,9 @@
 "22e94b9b-6e81-4a0a-b132-596b1a3fb350",
 "371d957f-8280-4d79-ab89-3d08565dd85a",
 "5a6696aa-e003-4685-9ae0-7372d3463949",
-"822b4053-0d38-450c-a90a-19175c4a1367"
+"822b4053-0d38-450c-a90a-19175c4a1367",
+"d1bbb9b2-f33b-48bb-8ab6-9db512746527",
+"cfb0e4ea-0f9c-4b3c-ac98-57f52d4334f0"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3357,7 +3359,9 @@
 "505502|Sep-26|na",
 "533655|Sep-26|consolidated",
 "544557|Sep-26|consolidated",
-"514300|Sep-26|consolidated"
+"514300|Sep-26|consolidated",
+"543914|Sep-26|consolidated",
+"538922|Sep-26|consolidated"
 ],
 "pending": {
 "1093f474-a593-4ba8-b872-627058b01aab": {
@@ -3509,7 +3513,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794398017.1404443,
-"last": 1794400322.0455222,
+"last": 1794400631.5903745,
 "alerted": false
 },
 "9c71d7fb-4151-49b1-9a56-6c488255011b": {
@@ -3585,7 +3589,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794399025.2122252,
-"last": 1794400322.0455222,
+"last": 1794400631.5903745,
 "alerted": false
 },
 "68b3c742-0ccd-4bd7-a176-753b7671fb03": {
@@ -3777,58 +3781,20 @@
 "first": 1794400322.0455222,
 "last": 1794400631.5903745,
 "alerted": false
-},
-"d1bbb9b2-f33b-48bb-8ab6-9db512746527": {
-"rec": {
-"NEWSID": "d1bbb9b2-f33b-48bb-8ab6-9db512746527",
-"SCRIP_CD": 543914,
-"XML_NAME": "ANN_543914_D1BBB9B2-F33B-48BB-8AB6-9DB512746527",
-"NEWSSUB": "Swati Projects Ltd - 543914 - OUTCOME OF BOARD MEETING",
-"DT_TM": "2026-11-11T17:56:38.48",
-"NEWS_DT": "2026-11-11T17:56:38.48",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "77c094da-cafe-4576-8dbb-5c26138b1f64.pdf",
-"MORE": "",
-"HEADLINE": "OTCOME OF BOARD MEETING FOR APPROVAL OF UNAUDITED FINANCIAL RESULTS FOR THE QUARTELY & HALF YEARLY ENDED 30TH SEPTEMBER 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/swati-projects-ltd/swatipro/543914/",
-"SLONGNAME": "Swati Projects Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 13,
-"News_submission_dt": "2026-11-11T17:56:38",
-"DissemDT": "2026-11-11T17:56:38.48",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 5970594,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794400322.0455222,
-"last": 1794400322.0455222,
-"alerted": false
 }
 },
 "gem_use": {
-"2026-11-11": 149
+"2026-11-11": 150
 },
 "gem_key_use": {
 "2026-11-11": {
 "main": {
-"ok": 197,
+"ok": 199,
 "429": 5,
-"other": 38
+"other": 39
 },
 "results-key": {
-"ok": 29,
+"ok": 30,
 "429": 2,
 "other": 16
 },
@@ -3940,7 +3906,9 @@
 "5a6696aa-e003-4685-9ae0-7372d3463949": 1,
 "22e94b9b-6e81-4a0a-b132-596b1a3fb350": 1,
 "371d957f-8280-4d79-ab89-3d08565dd85a": 1,
-"822b4053-0d38-450c-a90a-19175c4a1367": 1
+"822b4053-0d38-450c-a90a-19175c4a1367": 1,
+"d1bbb9b2-f33b-48bb-8ab6-9db512746527": 1,
+"cfb0e4ea-0f9c-4b3c-ac98-57f52d4334f0": 1
 },
 "lag": [
 [
@@ -4046,6 +4014,10 @@
 [
 "PS IT Infrastructure & Services Ltd",
 51
+],
+[
+"Swati Projects Ltd",
+5
 ]
 ],
 "pdfposted": {
@@ -4267,6 +4239,26 @@
 "rev": 1036.108,
 "pat": -20.224000000000004,
 "t": 1794400706.4992938,
+"last": 0
+},
+"543914|Sep-26|consolidated": {
+"code": "543914",
+"name": "Swati Projects Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 51.666,
+"pat": 30.777,
+"t": 1794400715.579488,
+"last": 0
+},
+"538922|Sep-26|consolidated": {
+"code": "538922",
+"name": "COSYN Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 14.721000000000002,
+"pat": 0.20299999999999999,
+"t": 1794400786.437242,
 "last": 0
 }
 },
