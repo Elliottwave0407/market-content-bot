@@ -1578,3 +1578,10 @@
 11 10:08:56 ready 530747|Sep-26|standalone kind=photo waited_min=8.8 tries=2 pdf_log=pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depre
 11 10:15:48 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:43:30 dissem=15:43:30
 11 10:16:13 wait 544928 Century Business Media Ltd: numbers not yet on BSE
+11 10:20:11 pdf nim reader Jauss Polymers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
+11 10:20:11 pdf pdf read failed Jauss Polymers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible inv
+11 10:20:13 seen 534060 PMC Fincorp Ltd cat=Board Meeting early=True bse_time=15:45:56 dissem=15:45:56
+11 10:20:41 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
+11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
+11 10:21:12 seen 531219 Shyama Computronics and Serv cat=Board Meeting early=True bse_time=15:50:31 dissem=15:50:31
