@@ -1606,3 +1606,11 @@
 11 13:37:18 ready 532998|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: None | pdf current col Lotus Eye Hospital And Institute Ltd standalone ok=False/3: revenue=1772.41, other_income=24.73, total_i
 11 13:37:26 pdf strong model retry did not help: None
 11 13:37:26 pdf pdf current col Lotus Eye Hospital And Institute Ltd standalone ok=False/3: revenue=1772.41, other_income=24.73, total_income=1797.14, total_expenses=1746.43, finance_costs=59.31, depreciation=169.97, pbt=55.87, tax=11.92, pat=43.
+11 13:38:06 pdf nim reader Naperol Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/ba
+11 13:38:06 pdf pdf read failed Naperol Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPo
+11 13:38:30 pdf rule reader Naperol Investments Ltd: rule: stan: does not reconcile [lakh] total_income=[392.34, 951.98, 294.16] total_expenses=[346.48, 927.57, 290.02] pbt=[45.86, 24.41, 4.14] pat=[40.15, 18.27, -104.0] depreciation=[0.15, 0.15,
+11 13:39:16 pdf rule reader Securekloud Technologies Ltd: rule: stan: does not reconcile [lakh] total_income=[79124.0, 58057.0, 1039.38] total_expenses=[1139.71, 86170.0, 69356.0] exceptional=[0.0, -17.13, 0.0] pbt=[-348.47, -298.26, 345.82] tax=
+11 13:39:29 seen 500298 Naperol Investments Ltd cat=Result early=False bse_time=19:08:55 dissem=19:08:55
+11 13:39:51 wait 500298 Naperol Investments Ltd: numbers not yet on BSE
+11 13:39:57 pdf pdf current col Naperol Investments Ltd standalone ok=True/3: revenue=392.71, other_income=-0.37, total_income=392.34, total_expenses=346.48, finance_costs=None, depreciation=0.15, pbt=45.86, tax=5.71, pat=40.15, eps=0.7
+11 13:39:57 pdf pdf incomplete Naperol Investments Ltd standalone: missing ['ebitda'] - not posting from PDF
