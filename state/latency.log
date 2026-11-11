@@ -1628,3 +1628,7 @@
 11 13:49:43 pdf pdf current col National Peroxide Ltd standalone ok=True/3: revenue=11204.11, other_income=179.93, total_income=11384.04, total_expenses=11267.65, finance_costs=24.09, depreciation=539.57, pbt=116.39, tax=29.33, pat=87.06, eps=1.5
 11 13:50:18 pdf nim reader Naperol Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/ba
 11 13:50:18 pdf pdf read failed Naperol Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPo
+11 13:50:40 pdf rule reader Naperol Investments Ltd: rule: stan: does not reconcile [lakh] total_income=[392.34, 951.98, 294.16] total_expenses=[346.48, 927.57, 290.02] pbt=[45.86, 24.41, 4.14] pat=[40.15, 18.27, -104.0] depreciation=[0.15, 0.15,
+11 13:52:07 seen 517500 Roto Pumps Ltd cat=Result early=False bse_time=19:21:46 dissem=19:21:46
+11 13:52:30 wait 517500 Roto Pumps Ltd: numbers not yet on BSE
+11 13:53:04 seen 536565 Novelix Pharmaceuticals Ltd cat=Board Meeting early=True bse_time=19:22:49 dissem=19:22:49
