@@ -1633,3 +1633,9 @@
 11 13:52:30 wait 517500 Roto Pumps Ltd: numbers not yet on BSE
 11 13:53:04 seen 536565 Novelix Pharmaceuticals Ltd cat=Board Meeting early=True bse_time=19:22:49 dissem=19:22:49
 11 13:53:53 ready 517500|Sep-26|consolidated kind=photo waited_min=1.4 tries=1 pdf_log=
+11 13:54:22 seen 524572 Pharmaids Pharmaceuticals Lt cat=Board Meeting early=True bse_time=19:23:58 dissem=19:23:58
+11 13:55:29 pdf nim reader Naperol Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/ba
+11 13:55:29 pdf pdf read failed Naperol Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPo
+11 13:55:29 pdf rule reader Novelix Pharmaceuticals Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
+11 13:55:39 pdf pdf current col Novelix Pharmaceuticals Ltd standalone ok=True/3: revenue=4473.12, other_income=0.12, total_income=4473.12, total_expenses=4286.5, finance_costs=12.98, depreciation=12.85, pbt=186.62, tax=30.3, pat=156.32, eps=0.57
+11 13:55:39 pdf pdf incomplete Novelix Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
