@@ -1666,3 +1666,14 @@
 11 10:45:04 pdf pdf read failed Southern Latex Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
 11 10:45:08 ready 532918|Sep-26|na kind=photo waited_min=45.5 tries=7 pdf_log=
 11 10:45:17 ready 514454|Sep-26|na kind=photo waited_min=45.5 tries=7 pdf_log=
+11 10:45:27 seen 530899 Asia Pack Ltd cat=Result early=False bse_time=16:15:02 dissem=16:15:02
+11 10:45:51 wait 530899 Asia Pack Ltd: numbers not yet on BSE
+11 10:45:51 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
+11 10:45:51 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:46:14 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
+11 10:46:14 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 10:46:23 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
+11 10:46:23 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 10:46:48 pdf rule reader TCFC Finance Ltd: ok
+11 10:46:48 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
+11 10:46:48 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
