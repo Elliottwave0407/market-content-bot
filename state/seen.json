@@ -83,7 +83,8 @@
 "22465ea4-41d7-4aff-90ab-07876f3154bf",
 "a4d9d285-1fd6-4d00-bee6-57738dc9847f",
 "94c3fff8-1f4d-4eb6-894b-a503935e0ee4",
-"92d2ff1c-0463-4da5-b32d-2b4c30dc1dcb"
+"92d2ff1c-0463-4da5-b32d-2b4c30dc1dcb",
+"ded29d41-bb1c-4433-b7d9-2372e61ea8a6"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3262,7 +3263,8 @@
 "534060|Sep-26|standalone",
 "542232|Sep-26|standalone",
 "532918|Sep-26|na",
-"514454|Sep-26|na"
+"514454|Sep-26|na",
+"532284|Sep-26|standalone"
 ],
 "pending": {
 "a7e81fe8-4d45-4f60-b44c-3471540c3f24": {
@@ -3300,7 +3302,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794389232.0781014,
-"last": 1794394415.4430964,
+"last": 1794394455.6571646,
 "alerted": true
 },
 "50d7ca40-857e-46f7-92e0-53aff42ac84a": {
@@ -3338,7 +3340,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794392148.3881502,
-"last": 1794394415.4430964,
+"last": 1794394455.6571646,
 "alerted": false
 },
 "0e45f73a-4d8a-42f5-aa3b-a63f35a5c89d": {
@@ -3376,7 +3378,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794392530.31009,
-"last": 1794394452.644325,
+"last": 1794394455.6571646,
 "alerted": false
 },
 "b6610510-980e-4955-8221-5d41cb2952ba": {
@@ -3414,7 +3416,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794392731.534196,
-"last": 1794394452.644325,
+"last": 1794394494.1247852,
 "alerted": false
 },
 "68bc0700-2e8c-4fdd-b8d9-ff32f8072e66": {
@@ -3452,7 +3454,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794392855.2474577,
-"last": 1794394452.644325,
+"last": 1794394494.1247852,
 "alerted": false
 },
 "1093f474-a593-4ba8-b872-627058b01aab": {
@@ -3490,45 +3492,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794393540.2555432,
-"last": 1794394452.644325,
-"alerted": false
-},
-"ded29d41-bb1c-4433-b7d9-2372e61ea8a6": {
-"rec": {
-"NEWSID": "ded29d41-bb1c-4433-b7d9-2372e61ea8a6",
-"SCRIP_CD": 532284,
-"XML_NAME": "ANN_532284_DED29D41-BB1C-4433-B7D9-2372E61EA8A6",
-"NEWSSUB": "TCFC Finance Ltd - 532284 - Unaudited Financial Results For The Quarter Ended 30Th September, 2026",
-"DT_TM": "2026-11-11T16:12:43.287",
-"NEWS_DT": "2026-11-11T16:12:43.287",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "01b05a2c-4653-4e12-a6ec-6620d814c02e.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quartes ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/tcfc-finance-ltd/tcfcfinq/532284/",
-"SLONGNAME": "TCFC Finance Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 8,
-"News_submission_dt": "2026-11-11T16:12:43",
-"DissemDT": "2026-11-11T16:12:43.287",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1698305,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794393822.9595845,
-"last": 1794394452.644325,
+"last": 1794394494.1247852,
 "alerted": false
 },
 "2d2601d3-9a95-4292-9c63-082025e38ada": {
@@ -3566,7 +3530,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794393927.4370255,
-"last": 1794394452.644325,
+"last": 1794394494.1247852,
 "alerted": false
 },
 "1d316793-ba6f-4bf4-aa3c-d05915ba0d65": {
@@ -3604,7 +3568,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794394143.3931763,
-"last": 1794394452.644325,
+"last": 1794394494.1247852,
 "alerted": false
 }
 },
@@ -3727,6 +3691,10 @@
 [
 "Southern Latex Ltd",
 45
+],
+[
+"TCFC Finance Ltd",
+11
 ]
 ],
 "pdfposted": {
@@ -3788,7 +3756,17 @@
 "rev": 1661.5020000000002,
 "pat": 70.42999999999999,
 "t": 1794393524.782214,
-"last": 1794394173.2374163
+"last": 1794394489.4080975
+},
+"532284|Sep-26|standalone": {
+"code": "532284",
+"name": "TCFC Finance Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": -19.203000000000003,
+"pat": -16.908,
+"t": 1794394497.2458646,
+"last": 1794394505.1722777
 }
 },
 "half_q": {
