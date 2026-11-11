@@ -1612,3 +1612,11 @@
 11 10:26:39 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
 11 10:27:08 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
 11 10:27:35 seen 531219 Shyama Computronics and Serv cat=Result early=False bse_time=15:57:30 dissem=15:57:30
+11 10:28:00 wait 531219 Shyama Computronics and Serv: numbers not yet on BSE
+11 10:28:20 pdf pdf current col Shyama Computronics and Services Ltd standalone ok=True/3: revenue=7.57, other_income=3.87, total_income=7.57, total_expenses=4.27, finance_costs=None, depreciation=None, pbt=3.3, tax=0.86, pat=2.44, eps=0.02
+11 10:28:20 pdf pdf incomplete Shyama Computronics and Services Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:30:08 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
+11 10:30:08 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 10:30:35 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
+11 10:30:35 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
+11 10:30:37 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
