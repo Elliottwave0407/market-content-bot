@@ -1585,3 +1585,12 @@
 11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
 11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
 11 10:21:12 seen 531219 Shyama Computronics and Serv cat=Board Meeting early=True bse_time=15:50:31 dissem=15:50:31
+11 10:21:38 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+11 10:21:41 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+11 10:21:44 pdf pdf current col PMC Fincorp Ltd standalone ok=True/2: revenue=524.22, other_income=None, total_income=524.22, total_expenses=58.73, finance_costs=None, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
+11 10:21:44 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:21:44 pdf pdf unusable Century Business Media Ltd: unit/date missing
+11 10:22:10 seen 534060 PMC Fincorp Ltd cat=Result early=False bse_time=15:51:20 dissem=15:51:20
+11 10:22:32 wait 534060 PMC Fincorp Ltd: numbers not yet on BSE
+11 10:22:38 pdf nim reader Rathi Bars Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemin
+11 10:22:38 pdf pdf read failed Rathi Bars Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invent
