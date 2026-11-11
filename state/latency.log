@@ -1642,3 +1642,19 @@
 11 10:40:09 pdf rule reader TCFC Finance Ltd: ok
 11 10:40:09 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
 11 10:40:09 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:40:52 pdf rule reader TCFC Finance Ltd: ok
+11 10:40:52 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
+11 10:40:52 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:41:12 pdf nim reader Rathi Bars Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
+11 10:41:12 pdf pdf read failed Rathi Bars Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+11 10:41:18 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+11 10:41:26 pdf rule reader TCFC Finance Ltd: ok
+11 10:41:26 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
+11 10:41:26 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:41:36 seen 530899 Asia Pack Ltd cat=Board Meeting early=True bse_time=16:11:11 dissem=16:11:11
+11 10:42:31 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:42:32 seen 502250 Lerthai Finance Ltd cat=Board Meeting early=True bse_time=16:11:47 dissem=16:11:47
+11 10:42:52 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
+11 10:42:52 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 10:43:42 seen 532284 TCFC Finance Ltd cat=Result early=False bse_time=16:12:43 dissem=16:12:43
+11 10:43:46 wait 532284 TCFC Finance Ltd: numbers not yet on BSE
