@@ -1499,3 +1499,8 @@
 11 14:26:59 pdf pdf current col Storage Technologies and Automation Ltd consolidated ok=True/3: revenue=5757.38, other_income=24.28, total_income=5781.66, total_expenses=5621.6, finance_costs=82.25, depreciation=109.51, pbt=160.06, tax=1.0, pat=1
 11 14:26:59 pdf pdf incomplete Storage Technologies and Automation Ltd consolidated: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
 11 14:27:55 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:29:13 pdf nim reader Storage Technologies and Automation Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: ge
+11 14:29:13 pdf pdf read failed Storage Technologies and Automation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType
+11 14:29:40 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:31:12 seen 544383 Paradeep Parivahan Ltd cat=Result early=False bse_time=19:59:41 dissem=19:59:41
+11 14:31:38 wait 544383 Paradeep Parivahan Ltd: numbers not yet on BSE
