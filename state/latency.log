@@ -1519,3 +1519,21 @@
 11 14:46:42 wait 533452 Delphi World Money Ltd: numbers not yet on BSE
 11 14:46:48 pdf rule reader Delphi World Money Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=4
 11 14:48:05 seen 544171 Storage Technologies and Aut cat=Result early=False bse_time=20:17:33 dissem=20:17:33
+11 14:48:30 wait 544171 Storage Technologies and Aut: numbers not yet on BSE
+11 14:48:32 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:48:36 pdf pdf current col Storage Technologies and Automation Ltd consolidated ok=True/3: revenue=5757.38, other_income=24.28, total_income=5781.66, total_expenses=5621.6, finance_costs=82.25, depreciation=109.51, pbt=160.06, tax=1.0, pat=1
+11 14:48:36 pdf pdf incomplete Storage Technologies and Automation Ltd consolidated: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
+11 14:49:08 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:49:08 pdf pdf current col Storage Technologies and Automation Ltd consolidated ok=True/3: revenue=5757.38, other_income=24.28, total_income=5781.66, total_expenses=5621.6, finance_costs=82.25, depreciation=109.51, pbt=160.06, tax=1.0, pat=1
+11 14:49:08 pdf pdf incomplete Storage Technologies and Automation Ltd consolidated: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
+11 14:50:01 pdf rule reader Storage Technologies and Automation Ltd: rule: no results table page | ocr: rule: no results table page
+11 14:50:02 seen 539287 Ortin Global Ltd cat=Result early=False bse_time=20:19:21 dissem=20:19:21
+11 14:50:06 wait 539287 Ortin Global Ltd: numbers not yet on BSE
+11 14:50:06 pdf rule reader Ortin Global Ltd: ok
+11 14:50:06 pdf pdf current col Ortin Global Ltd standalone ok=True/2: revenue=3.14, other_income=None, total_income=3.9, total_expenses=30.58, finance_costs=0.06, depreciation=0.01, pbt=-26.68, tax=0.0, pat=-26.86, eps=None
+11 14:50:06 pdf pdf incomplete Ortin Global Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 14:50:24 pdf rule reader Ortin Global Ltd: ok
+11 14:50:24 pdf pdf current col Ortin Global Ltd standalone ok=True/2: revenue=3.14, other_income=None, total_income=3.9, total_expenses=30.58, finance_costs=0.06, depreciation=0.01, pbt=-26.68, tax=0.0, pat=-26.86, eps=None
+11 14:50:24 pdf pdf incomplete Ortin Global Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 14:51:16 pdf nim reader Storage Technologies and Automation Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: ge
+11 14:51:16 pdf pdf read failed Storage Technologies and Automation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType
