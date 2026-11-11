@@ -1681,3 +1681,18 @@
 11 09:14:59 ready 538837|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Jeevan Scientific Technology Ltd consolidated ok=True/3: revenue=2316.89, other_income=44.43, total_income=2361.32, total_expenses=1973.81, fina
 11 09:15:38 wait 508494 Warren Tea Ltd-$: numbers not yet on BSE
 11 09:17:14 ready 539302|Sep-26|consolidated kind=photo waited_min=3.7 tries=1 pdf_log=
+11 09:17:52 seen 514454 Southern Latex Ltd cat=Board Meeting early=True bse_time=14:46:02 dissem=14:46:02
+11 09:17:52 seen 530747 Challani Capital Ltd cat=Board Meeting early=True bse_time=14:46:14 dissem=14:46:14
+11 09:18:16 pdf rule reader Challani Capital Ltd: rule: no results table page | ocr: rule: no results table page
+11 09:18:20 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
+11 09:18:24 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
+11 09:18:24 pdf pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depreciation=0.1, pbt=15.17, tax=None, pat=15.17, eps=0.1
+11 09:18:24 pdf pdf incomplete Challani Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 09:18:52 pdf pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depreciation=0.1, pbt=15.17, tax=None, pat=15.17, eps=0.1
+11 09:18:52 pdf pdf incomplete Challani Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 09:20:02 pdf nim reader Warren Tea Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+11 09:20:02 pdf pdf read failed Warren Tea Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inven
+11 09:20:02 pdf nim reader Warren Tea Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+11 09:20:02 pdf pdf read failed Warren Tea Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inven
+11 09:20:26 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
+11 09:20:26 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
