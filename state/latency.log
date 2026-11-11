@@ -1639,3 +1639,17 @@
 11 13:55:29 pdf rule reader Novelix Pharmaceuticals Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
 11 13:55:39 pdf pdf current col Novelix Pharmaceuticals Ltd standalone ok=True/3: revenue=4473.12, other_income=0.12, total_income=4473.12, total_expenses=4286.5, finance_costs=12.98, depreciation=12.85, pbt=186.62, tax=30.3, pat=156.32, eps=0.57
 11 13:55:39 pdf pdf incomplete Novelix Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 13:57:15 pdf nim reader Novelix Pharmaceuticals Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: gemini skipped
+11 13:57:15 pdf pdf read failed Novelix Pharmaceuticals Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has
+11 13:57:53 seen 536565 Novelix Pharmaceuticals Ltd cat=Result early=False bse_time=19:27:32 dissem=19:27:32
+11 13:57:53 seen 511509 Vivo Bio Tech Ltd cat=Result early=False bse_time=19:27:33 dissem=19:27:33
+11 13:58:17 wait 536565 Novelix Pharmaceuticals Ltd: numbers not yet on BSE
+11 13:58:20 wait 511509 Vivo Bio Tech Ltd: numbers not yet on BSE
+11 13:58:23 pdf pdf current col Novelix Pharmaceuticals Ltd standalone ok=True/3: revenue=4473.12, other_income=0.12, total_income=4473.12, total_expenses=4286.5, finance_costs=12.98, depreciation=12.85, pbt=186.62, tax=30.3, pat=156.32, eps=0.57
+11 13:58:23 pdf pdf incomplete Novelix Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+11 13:58:51 pdf nim reader Novelix Pharmaceuticals Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has no attribute (gemini: gemini skipped
+11 13:58:51 pdf pdf read failed Novelix Pharmaceuticals Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: parse AttributeError("'NoneType' object has
+11 13:59:07 seen 523672 Flex Foods Ltd-$ cat=Result early=False bse_time=19:28:24 dissem=19:28:24
+11 13:59:07 seen 524572 Pharmaids Pharmaceuticals Lt cat=Result early=False bse_time=19:28:46 dissem=19:28:46
+11 13:59:52 wait 524572 Pharmaids Pharmaceuticals Lt: numbers not yet on BSE
+11 13:59:54 wait 523672 Flex Foods Ltd-$: numbers not yet on BSE
