@@ -307,7 +307,10 @@
 "16d9ea87-668d-46da-a53b-d6c379fc644e",
 "1fa10735-0049-4eea-998a-8be446a33157",
 "9ff45e2b-9bdb-4762-abd2-256216901d38",
-"b2ce047e-9f21-49d8-b2fd-faecbee58511"
+"b2ce047e-9f21-49d8-b2fd-faecbee58511",
+"965f2a18-4c23-4720-83bd-0ba3fd043f5a",
+"d572a51a-8e24-4906-bc46-51cacdb15df6",
+"27eda246-9cd7-42e3-997e-54a77ad9db89"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3613,7 +3616,9 @@
 "523712|Sep-26|na",
 "521234|Sep-26|standalone",
 "541143|Sep-26|standalone",
-"545012|Sep-26|standalone"
+"545012|Sep-26|standalone",
+"539523|Sep-26|consolidated",
+"543399|Sep-26|consolidated"
 ],
 "pending": {
 "d19f1e72-0c01-4356-92fc-3988aa0b2ad6": {
@@ -3879,7 +3884,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794471215.3076692,
-"last": 1794471743.3545363,
+"last": 1794472192.8407984,
 "alerted": false
 },
 "ed65f0e7-5ccb-4844-b0a1-c3d2b80c0bab": {
@@ -3957,11 +3962,49 @@
 "first": 1794471743.3545363,
 "last": 1794471743.3545363,
 "alerted": false
+},
+"aadcda22-8863-4ee1-9abf-a30224288638": {
+"rec": {
+"NEWSID": "aadcda22-8863-4ee1-9abf-a30224288638",
+"SCRIP_CD": 539523,
+"XML_NAME": "ANN_539523_AADCDA22-8863-4EE1-9ABF-A30224288638",
+"NEWSSUB": "Alkem Laboratories Ltd - 539523 - Results- Unaudited Financial Results For Quarter And Half Year Ended 30Th Sept, 26.",
+"DT_TM": "2026-11-12T13:55:08.953",
+"NEWS_DT": "2026-11-12T13:55:08.953",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "c568139d-8b2e-40df-82b7-10de2ed502e9.pdf",
+"MORE": "",
+"HEADLINE": "Pl find enclosed unaudited financial results along with Limited Review Report of the Company for quarter and half year ended 30th Sept, 2026.",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/alkem-laboratories-ltd/alkem/539523/",
+"SLONGNAME": "Alkem Laboratories Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 8,
+"News_submission_dt": "2026-11-12T13:55:08",
+"DissemDT": "2026-11-12T13:55:08.953",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 4423980,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794472192.8407984,
+"last": 1794472192.8407984,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 28
+"2026-11-12": 31
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4003,9 +4046,9 @@
 "other": 2
 },
 "main": {
-"ok": 21,
+"ok": 24,
 "429": 0,
-"other": 4
+"other": 5
 }
 }
 },
@@ -4226,7 +4269,9 @@
 "ed65f0e7-5ccb-4844-b0a1-c3d2b80c0bab": 1,
 "bbe5e813-7725-4917-b78c-6f74e1887fc4": 1,
 "ed901044-0a52-44a8-a8d7-3f371113d43e": 1,
-"b2ce047e-9f21-49d8-b2fd-faecbee58511": 1
+"b2ce047e-9f21-49d8-b2fd-faecbee58511": 1,
+"965f2a18-4c23-4720-83bd-0ba3fd043f5a": 1,
+"27eda246-9cd7-42e3-997e-54a77ad9db89": 1
 },
 "lag": [
 [
@@ -4907,6 +4952,26 @@
 "rev": 784.587,
 "pat": 48.868,
 "t": 1794471791.965078,
+"last": 0
+},
+"539523|Sep-26|consolidated": {
+"code": "539523",
+"name": "Alkem Laboratories Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 45519.9,
+"pat": 6671.3,
+"t": 1794472239.3416717,
+"last": 0
+},
+"543399|Sep-26|consolidated": {
+"code": "543399",
+"name": "Tarsons Products Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1236.5,
+"pat": -3.44,
+"t": 1794472250.0563414,
 "last": 0
 }
 },

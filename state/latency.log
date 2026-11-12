@@ -1652,3 +1652,16 @@
 12 08:23:11 ready 545012|Sep-26|standalone kind=photo waited_min=8.8 tries=1 pdf_log=pdf current col Lokesh Machines Ltd standalone ok=True/3: revenue=6037.06, other_income=20.26, total_income=6057.32, total_expenses=5883.14, finance_costs=512.3
 12 08:29:50 pdf nim reader BCL Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
 12 08:29:50 pdf pdf read failed BCL Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible i
+12 08:29:52 seen 504643 BWL Ltd cat=Result early=False bse_time=13:54:22 dissem=13:54:22
+12 08:29:52 seen 522036 Miven Machine Tools Ltd cat=Result early=False bse_time=13:54:39 dissem=13:54:39
+12 08:29:52 seen 539523 Alkem Laboratories Ltd cat=Result early=False bse_time=13:55:08 dissem=13:55:08
+12 08:29:52 seen 513269 Man Industries (India) Ltd-$ cat=Board Meeting early=True bse_time=13:55:25 dissem=13:55:25
+12 08:29:52 seen 531346 Eastern Treads Ltd cat=Result early=False bse_time=13:58:08 dissem=13:58:08
+12 08:29:52 seen 502216 Bombay Potteries & Tiles Ltd cat=Board Meeting early=True bse_time=13:58:08 dissem=13:58:08
+12 08:29:52 seen 543993 ARCL Organics Ltd cat=Result early=False bse_time=13:59:10 dissem=13:59:10
+12 08:29:52 seen 543399 Tarsons Products Ltd cat=Result early=False bse_time=13:59:19 dissem=13:59:19
+12 08:30:39 ready 539523|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Alkem Laboratories Ltd consolidated ok=False/3: revenue=45519.9, other_income=1342.1, total_income=46862.0, total_expenses=37215.5, finance_cost
+12 08:30:46 wait 539523 Alkem Laboratories Ltd: numbers not yet on BSE
+12 08:30:50 ready 543399|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Tarsons Products Ltd: rule: stan: does not reconcile [million] total_expenses=[1013.4, 919.79, 789.48] pbt=[4210.0, 9.22, 88.76] tax=[1.22, 242.0, 2
+12 08:30:57 wait 543399 Tarsons Products Ltd: numbers not yet on BSE
+12 08:31:20 ready 532719|Sep-26|consolidated kind=photo waited_min=22.3 tries=2 pdf_log=
