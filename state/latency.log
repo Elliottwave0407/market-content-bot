@@ -1576,3 +1576,10 @@
 12 17:45:33 pdf rule reader Amber Enterprises India Ltd: rule: no results table page | ocr: rule: unit not found
 12 17:45:33 pdf pdf current col S.K. Offset Ltd standalone ok=True/3: revenue=2158.27, other_income=18.07, total_income=2176.34, total_expenses=1705.81, finance_costs=171.43, depreciation=146.73, pbt=470.53, tax=162.55, pat=307.97, eps=5.64
 12 17:45:33 pdf pdf incomplete S.K. Offset Ltd standalone: missing ['pat', 'revenue'] - not posting from PDF
+12 17:46:38 pdf nim reader Afcom Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: H
+12 17:46:38 pdf pdf read failed Afcom Holdings Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HT
+12 17:46:38 pdf nim reader Amber Enterprises India Ltd: nim deepseek-v4.1-flash: 1 numbers not found in the filing text (possible invention): rejected e.g. [('cons',  | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possi
+12 17:46:38 pdf pdf read failed Amber Enterprises India Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | visio
+12 17:47:04 pdf rule reader Afcom Holdings Ltd: rule: unit not found | ocr: rule: stan: does not reconcile [lakh] total_expenses=[17508.73, 12525.8, 9471.16] pbt=[6634.71, 5222.84, 2879.86] tax=[1560.39, 1298.67, 709
+12 17:48:02 pdf rule reader Amber Enterprises India Ltd: rule: no results table page | ocr: rule: unit not found
+12 17:48:03 seen 531460 Continental Controls Ltd cat=Result early=False bse_time=23:16:42 dissem=23:16:42
