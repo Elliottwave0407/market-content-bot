@@ -1553,3 +1553,7 @@
 12 10:56:10 pdf strong model retry did not help: None
 12 10:56:10 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
 12 10:56:10 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
+12 10:56:12 seen 501111 Gold Rock Investments Ltd cat=Board Meeting early=True bse_time=16:24:05 dissem=16:24:05
+12 10:56:54 ready 501111|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Gold Rock Investments Ltd: rule: stan: half-year column is not quarter + previous quarter; stan: does not reconcile [lakh] total_income=[103.73, 270
+12 10:57:04 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:57:04 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
