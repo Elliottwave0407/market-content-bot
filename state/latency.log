@@ -1575,3 +1575,12 @@
 12 07:18:57 pdf rule reader Astra Microwave Products Ltd: rule: stan: does not reconcile [lakh] total_income=[26287.51, 17862.06, 21875.43] total_expenses=[19959.63, 16545.86, 19006.19] pbt=[6327.88, 1316.2, 2869.24] associates=[361.06, 298.1, 23
 12 07:19:07 ready 515037|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 12 07:19:24 pdf pdf incomplete Anand Projects Ltd consolidated: missing ['ebitda'] - not posting from PDF
+12 07:20:11 pdf pdf history mismatch Prime Urban Development India Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 8.82 pat -1.611 | bse rev 8.82 pat -1.61 (Rs mn); q-4: pdf rev 6.356000000000001 pat 1.40000000000
+12 07:20:11 pdf pdf has consolidated but it failed checks: not falling back to standalone Prime Urban Development India Ltd
+12 07:20:11 pdf rule reader Anand Projects Ltd: rule: no results table page | ocr: rule: no results table page
+12 07:20:12 seen 543309 Adeshwar Meditex Ltd cat=Result early=False bse_time=12:48:46 dissem=12:48:46
+12 07:20:12 seen 523796 Viceroy Hotels Ltd cat=Result early=False bse_time=12:49:19 dissem=12:49:19
+12 07:20:36 wait 523796 Viceroy Hotels Ltd: numbers not yet on BSE
+12 07:20:38 wait 543309 Adeshwar Meditex Ltd: numbers not yet on BSE
+12 07:20:43 pdf rule reader Viceroy Hotels Ltd: rule: consolidated table does not reconcile [lakh] pbt=[41.97, 109.57, 429.56] pat=[177.51, 115.37, 438.19] | ocr: rule: stan: does not reconcile [lakh] total_income=[-135.54, -5.8, -8.63] pbt=[41.9
+12 07:20:45 seen 544946 Liqvd Digital India Ltd cat=Result early=False bse_time=12:50:28 dissem=12:50:28
