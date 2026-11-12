@@ -1501,3 +1501,6 @@
 12 06:41:53 wait 530907 SI Capital & Financial Servi: numbers not yet on BSE
 12 06:41:54 ready 539111|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader SI Capital & Financial Services Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6 | pdf current col Sheshadri Industries Ltd s
 12 06:42:05 ready 530907|Sep-26|standalone kind=photo waited_min=0.6 tries=1 pdf_log=pdf current col SI Capital & Financial Services Ltd standalone ok=True/2: revenue=105.66, other_income=0.2, total_income=105.86, total_expenses=101.86, finance_
+12 06:45:04 pdf nim reader Anna Infrastructures Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+12 06:45:04 pdf pdf read failed Anna Infrastructures Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possib
+12 06:46:21 ready 530799|Sep-26|standalone kind=photo waited_min=18.8 tries=7 pdf_log=
