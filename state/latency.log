@@ -1575,3 +1575,27 @@
 12 08:01:55 pdf pdf history mismatch BCL Enterprises Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev -15.879 pat -66.10700000000001 | bse rev 9.3 pat -40.93 (Rs mn); q-4: pdf rev 2.7070000000000003 pat -0.581 | bse 
 12 08:01:55 pdf rule reader BCL Enterprises Ltd: rule: no results table page | ocr: rule: no results table page
 12 08:01:56 seen 531867 Unitech International Ltd cat=Result early=False bse_time=13:31:09 dissem=13:31:09
+12 08:03:54 wait 531867 Unitech International Ltd: numbers not yet on BSE
+12 08:03:57 pdf nim reader Sri Nachammai Cotton Mills Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. 
+12 08:03:57 pdf pdf read failed Sri Nachammai Cotton Mills Ltd-$: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 12 column 18 (char 404)'); nim deepseek-v4.1-flash: ReadTimeout(ReadT
+12 08:03:57 pdf rule reader Sainik Finance & Industries Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:03:57 pdf pdf current col Albert David Ltd-$ standalone ok=True/3: revenue=10083.09, other_income=-364.08, total_income=9719.01, total_expenses=9210.1, finance_costs=39.97, depreciation=252.39, pbt=508.91, tax=220.91, pat=288.0, eps=5.05
+12 08:03:57 pdf pdf current col Asia Capital Ltd standalone ok=True/3: revenue=1148.292, other_income=260.837, total_income=1409.129, total_expenses=633.499, finance_costs=None, depreciation=0.948, pbt=775.63, tax=200.146, pat=575.584, eps=0.19
+12 08:03:57 pdf pdf incomplete Asia Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 08:03:57 pdf rule reader Unitech International Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:03:57 pdf rule reader B. L. Kashyap and Sons Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:03:57 pdf rule reader BCL Enterprises Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:03:57 pdf strong model retry did not help: None
+12 08:03:57 pdf nim reader BCL Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+12 08:03:57 pdf pdf read failed BCL Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible i
+12 08:03:57 pdf nim reader Sainik Finance & Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [
+12 08:03:57 pdf pdf read failed Sainik Finance & Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text 
+12 08:03:57 pdf strong model retry did not help: None
+12 08:03:57 pdf nim reader Unitech International Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 08:03:57 pdf pdf current col Unitech International Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=0.0, finance_costs=0.0, depreciation=0.0, pbt=0.0, tax=0.0, pat=0.0, eps=0.0
+12 08:03:57 pdf pdf incomplete Unitech International Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 08:04:10 seen 521234 Sri Nachammai Cotton Mills L cat=Result early=False bse_time=13:31:52 dissem=13:31:52
+12 08:04:10 seen 532740 Lokesh Machines Ltd cat=Result early=False bse_time=13:32:03 dissem=13:32:03
+12 08:04:10 seen 530821 SSPDL Ltd-$ cat=Result early=False bse_time=13:32:16 dissem=13:32:16
+12 08:04:10 seen 511108 Shiva Texyarn Ltd cat=Board Meeting early=True bse_time=13:33:04 dissem=13:33:04
+12 08:04:56 wait 532740 Lokesh Machines Ltd: numbers not yet on BSE
