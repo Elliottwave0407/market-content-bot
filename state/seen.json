@@ -701,7 +701,10 @@
 "ab2b9717-c6de-4027-a340-e9991cdb8268",
 "a553a9cd-5afb-451a-b4be-d5568530ee5c",
 "7f63885a-008d-444d-8961-4622f47da430",
-"32fdae2c-f91a-4ec3-a00d-32fcdec5216a"
+"32fdae2c-f91a-4ec3-a00d-32fcdec5216a",
+"e10ee84e-f365-47d8-839f-2a85317c0aef",
+"f641b560-1515-4602-90ae-e836b1d5badb",
+"c68b2481-630c-4c99-a91c-36d2f22de1ba"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4271,7 +4274,9 @@
 "532939|Sep-26|consolidated",
 "544418|Sep-26|standalone",
 "526506|Sep-26|standalone",
-"544202|Sep-26|consolidated"
+"544202|Sep-26|consolidated",
+"519421|Sep-26|standalone",
+"538772|Sep-26|consolidated"
 ],
 "pending": {
 "c513a124-f5a5-4280-a4fa-2401bb35eac3": {
@@ -5451,11 +5456,49 @@
 "first": 1794497032.6546938,
 "last": 1794497032.6546938,
 "alerted": false
+},
+"8e76a0a7-2640-49d2-ad1f-8194e02e264e": {
+"rec": {
+"NEWSID": "8e76a0a7-2640-49d2-ad1f-8194e02e264e",
+"SCRIP_CD": 519421,
+"XML_NAME": "ANN_519421_8E76A0A7-2640-49D2-AD1F-8194E02E264E",
+"NEWSSUB": "KSE Ltd-$ - 519421 - Unaudited Financial Results For Quarter Ended 30Th September 2026",
+"DT_TM": "2026-11-12T20:36:59.437",
+"NEWS_DT": "2026-11-12T20:36:59.437",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "bc74825c-e4ab-4c78-afe0-12bd928101e6.pdf",
+"MORE": "",
+"HEADLINE": "Attaching herewith the unaudited financial results for the quarter ended 30.09.2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/kse-ltd/kse/519421/",
+"SLONGNAME": "KSE Ltd-$",
+"AGENDA_ID": 30,
+"TotalPageCnt": 35,
+"News_submission_dt": "2026-11-12T20:36:59",
+"DissemDT": "2026-11-12T20:36:59.437",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 6383559,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794497032.6546938,
+"last": 1794497032.6546938,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 394
+"2026-11-12": 396
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5487,14 +5530,14 @@
 "other": 161
 },
 "vision-key": {
-"ok": 98,
-"429": 8,
-"other": 107
+"ok": 100,
+"429": 9,
+"other": 112
 },
 "concall-key": {
-"ok": 195,
+"ok": 202,
 "429": 9,
-"other": 187
+"other": 193
 },
 "main": {
 "ok": 336,
@@ -5780,7 +5823,8 @@
 "e22f6cd4-5f0e-4a79-bb46-a6b3484012aa": 1,
 "7ec4683a-4974-4783-8a02-c8f120474725": 1,
 "8b681fb2-f66b-4553-98e1-59562cf256ca": 1,
-"ab2b9717-c6de-4027-a340-e9991cdb8268": 1
+"ab2b9717-c6de-4027-a340-e9991cdb8268": 1,
+"f641b560-1515-4602-90ae-e836b1d5badb": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6008,7 +6052,8 @@
 "b56f03c0-8f1f-4964-a121-26dbb880e008": 1,
 "929f4000-9515-4b53-99dc-910bd0939092": 1,
 "7f63885a-008d-444d-8961-4622f47da430": 1,
-"32fdae2c-f91a-4ec3-a00d-32fcdec5216a": 1
+"32fdae2c-f91a-4ec3-a00d-32fcdec5216a": 1,
+"c68b2481-630c-4c99-a91c-36d2f22de1ba": 1
 },
 "lag": [
 [
@@ -8269,6 +8314,26 @@
 "rev": 1070.6000000000001,
 "pat": 29.3,
 "t": 1794497345.3295984,
+"last": 0
+},
+"519421|Sep-26|standalone": {
+"code": "519421",
+"name": "KSE Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 4661.535,
+"pat": -12.302,
+"t": 1794497540.7573016,
+"last": 0
+},
+"538772|Sep-26|consolidated": {
+"code": "538772",
+"name": "Niyogin Fintech Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 637.7950000000001,
+"pat": -37.442,
+"t": 1794497591.9203985,
 "last": 0
 }
 },
