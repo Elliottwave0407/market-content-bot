@@ -322,7 +322,8 @@
 "d19f1e72-0c01-4356-92fc-3988aa0b2ad6",
 "0f08e4ac-ba03-4991-9d3d-1ca4c63ce923",
 "c7e599e3-ad48-4ddc-a179-ab8e8ba9b4db",
-"3c410a10-35e0-41ff-98c3-1930b0fcfac1"
+"3c410a10-35e0-41ff-98c3-1930b0fcfac1",
+"efe4fbd3-7d8f-4547-93b9-f19734a23bb0"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3636,7 +3637,8 @@
 "533336|Sep-26|na",
 "500460|Sep-26|consolidated",
 "542013|Sep-26|standalone",
-"539621|Sep-26|na"
+"539621|Sep-26|na",
+"543449|Sep-26|consolidated"
 ],
 "pending": {
 "d63c9840-eb50-4077-ab96-b3b8da1fa11f": {
@@ -3674,7 +3676,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794470187.0940819,
-"last": 1794472796.3930876,
+"last": 1794472838.1276915,
 "alerted": false
 },
 "f43be912-0808-401f-8c96-84c1c0f795fc": {
@@ -3712,7 +3714,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794470399.9261591,
-"last": 1794472796.3930876,
+"last": 1794472838.1276915,
 "alerted": false
 },
 "0f9da2af-d8cc-4cc6-a149-cacae8f0a515": {
@@ -3750,7 +3752,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794470516.42049,
-"last": 1794472796.3930876,
+"last": 1794472838.1276915,
 "alerted": false
 },
 "ed901044-0a52-44a8-a8d7-3f371113d43e": {
@@ -3788,7 +3790,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794471215.3076692,
-"last": 1794472796.3930876,
+"last": 1794472884.9757712,
 "alerted": true
 },
 "fbb24f62-244f-481d-a65d-e310125834bb": {
@@ -3826,7 +3828,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472192.8407984,
-"last": 1794472796.3930876,
+"last": 1794472838.1276915,
 "alerted": false
 },
 "c9f5a0f9-7a30-425b-9a36-9558c64df291": {
@@ -3864,13 +3866,13 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472192.8407984,
-"last": 1794472796.3930876,
+"last": 1794472838.1276915,
 "alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 42
+"2026-11-12": 43
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -3912,7 +3914,7 @@
 "other": 3
 },
 "main": {
-"ok": 38,
+"ok": 39,
 "429": 0,
 "other": 8
 }
@@ -4148,7 +4150,8 @@
 "aadcda22-8863-4ee1-9abf-a30224288638": 1,
 "e750e957-54c2-428c-975d-1bf812cf07a6": 1,
 "0f08e4ac-ba03-4991-9d3d-1ca4c63ce923": 1,
-"4e864bb6-b378-4fad-8b8b-c50c8097f24e": 1
+"4e864bb6-b378-4fad-8b8b-c50c8097f24e": 1,
+"efe4fbd3-7d8f-4547-93b9-f19734a23bb0": 1
 },
 "lag": [
 [
@@ -4474,6 +4477,10 @@
 [
 "BCL Enterprises Ltd",
 45
+],
+[
+"Wonder Electricals Ltd",
+1
 ]
 ],
 "pdfposted": {
@@ -4645,17 +4652,7 @@
 "rev": 482.03700000000003,
 "pat": 22.302000000000003,
 "t": 1794467696.4057522,
-"last": 1794470176.3231683
-},
-"515037|Sep-26|consolidated": {
-"code": "515037",
-"name": "Murudeshwar Ceramics Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 562.7130000000001,
-"pat": 15.376,
-"t": 1794467947.7955565,
-"last": 1794470176.3231683
+"last": 1794472879.852288
 },
 "533285|Sep-26|consolidated": {
 "code": "533285",
@@ -4665,17 +4662,7 @@
 "rev": 206.506,
 "pat": 25.608,
 "t": 1794468177.555926,
-"last": 1794470176.3231683
-},
-"532332|Sep-26|standalone": {
-"code": "532332",
-"name": "Cura Technologies Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 0.48200000000000004,
-"pat": -1.765,
-"t": 1794468280.9313397,
-"last": 1794470176.3231683
+"last": 1794472879.852288
 },
 "530953|Sep-26|standalone": {
 "code": "530953",
@@ -4905,6 +4892,16 @@
 "rev": 578.989,
 "pat": 19.191,
 "t": 1794472773.5783792,
+"last": 0
+},
+"543449|Sep-26|consolidated": {
+"code": "543449",
+"name": "Wonder Electricals Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1359.103,
+"pat": 4.463,
+"t": 1794472915.5606978,
 "last": 0
 }
 },
@@ -5143,6 +5140,14 @@
 ],
 [
 "Gayatri Sugars Ltd",
+"ok"
+],
+[
+"Murudeshwar Ceramics Ltd",
+"ok"
+],
+[
+"Cura Technologies Ltd",
 "ok"
 ]
 ]
