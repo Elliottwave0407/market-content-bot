@@ -1626,3 +1626,13 @@
 12 07:34:38 seen 539997 Kwality Pharmaceuticals Ltd cat=Board Meeting early=True bse_time=13:02:52 dissem=13:02:52
 12 07:35:24 ready 521149|Sep-26|consolidated kind=photo waited_min=24.9 tries=8 pdf_log=pdf margin q-1 differs from BSE history by 7.4 pts: margin withheld Prime Urban Development India Ltd consolidated | pdf q-4 revenue typo: pdf 6.356000000000001
 12 07:36:50 ready 532390|Sep-26|consolidated kind=photo waited_min=11.7 tries=6 pdf_log=
+12 07:37:18 seen 533336 Dhunseri Investments Ltd cat=Board Meeting early=True bse_time=13:05:54 dissem=13:05:54
+12 07:37:18 seen 524075 Albert David Ltd-$ cat=Board Meeting early=True bse_time=13:06:29 dissem=13:06:29
+12 07:37:35 pdf pdf current col Dhunseri Investments Ltd consolidated ok=False/3: revenue=20315.6, other_income=2022.82, total_income=22338.42, total_expenses=17527.09, finance_costs=1044.17, depreciation=666.39, pbt=12789.84, tax=2724.09, pat=10
+12 07:37:35 pdf pdf checks failed Dhunseri Investments Ltd consolidated
+12 07:37:35 pdf pdf has consolidated but it failed checks: not falling back to standalone Dhunseri Investments Ltd
+12 07:38:02 pdf nim reader Anand Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: g
+12 07:38:02 pdf pdf read failed Anand Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible in
+12 07:38:02 pdf pdf current col Dhunseri Investments Ltd consolidated ok=False/3: revenue=20315.6, other_income=2022.82, total_income=22338.42, total_expenses=17527.09, finance_costs=1044.17, depreciation=666.39, pbt=12789.84, tax=2724.09, pat=10
+12 07:38:02 pdf pdf checks failed Dhunseri Investments Ltd consolidated
+12 07:38:02 pdf pdf has consolidated but it failed checks: not falling back to standalone Dhunseri Investments Ltd
