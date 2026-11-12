@@ -592,7 +592,8 @@
 "e8f42ef7-82e6-4d5c-9b9f-0960d799a430",
 "993d98e4-f20a-4719-a708-0c64b9bb62fa",
 "d5e5c55f-799c-46e2-83ad-38c44ad2c5f7",
-"5eea6d7c-18b2-4548-a106-1622245834f8"
+"5eea6d7c-18b2-4548-a106-1622245834f8",
+"282e14a2-2db2-40a5-94fb-56c830e6dea7"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4081,7 +4082,8 @@
 "531591|Sep-26|standalone",
 "544372|Sep-26|consolidated",
 "533294|Sep-26|standalone",
-"543547|Sep-26|standalone"
+"543547|Sep-26|standalone",
+"531297|Sep-26|standalone"
 ],
 "pending": {
 "ec9f3cf4-b066-4654-8b84-6e9745ffdfb8": {
@@ -4881,11 +4883,49 @@
 "first": 1794486952.0313964,
 "last": 1794486952.0313964,
 "alerted": false
+},
+"15d5675f-5fe3-45b9-b178-ad92bdff95b1": {
+"rec": {
+"NEWSID": "15d5675f-5fe3-45b9-b178-ad92bdff95b1",
+"SCRIP_CD": 533294,
+"XML_NAME": "ANN_533294_15D5675F-5FE3-45B9-B178-AD92BDFF95B1",
+"NEWSSUB": "Ravi Kumar Distilleries Ltd - 533294 - Un-Audited Financial Results For The Quarter And Half Year Ended 30.09.2026.",
+"DT_TM": "2026-11-12T17:59:43.32",
+"NEWS_DT": "2026-11-12T17:59:43.32",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "664eb93f-babd-4ace-877f-f0aeb2e66403.pdf",
+"MORE": "",
+"HEADLINE": "Submitting herewith un-audited financial results for the quarter and half year ended 30.09.20226.",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/ravi-kumar-distilleries-ltd/rkdl/533294/",
+"SLONGNAME": "Ravi Kumar Distilleries Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 23,
+"News_submission_dt": "2026-11-12T17:59:43",
+"DissemDT": "2026-11-12T17:59:43.32",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 3116489,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794486952.0313964,
+"last": 1794486952.0313964,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 304
+"2026-11-12": 305
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4912,19 +4952,19 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 269,
+"ok": 271,
 "429": 7,
-"other": 96
+"other": 99
 },
 "vision-key": {
-"ok": 30,
+"ok": 31,
 "429": 4,
-"other": 32
+"other": 33
 },
 "concall-key": {
 "ok": 63,
 "429": 5,
-"other": 49
+"other": 52
 },
 "main": {
 "ok": 335,
@@ -5182,7 +5222,8 @@
 "e8f42ef7-82e6-4d5c-9b9f-0960d799a430": 1,
 "993d98e4-f20a-4719-a708-0c64b9bb62fa": 1,
 "d5e5c55f-799c-46e2-83ad-38c44ad2c5f7": 1,
-"5eea6d7c-18b2-4548-a106-1622245834f8": 1
+"5eea6d7c-18b2-4548-a106-1622245834f8": 1,
+"282e14a2-2db2-40a5-94fb-56c830e6dea7": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -7198,6 +7239,16 @@
 "rev": 141.162,
 "pat": -6.870000000000001,
 "t": 1794488490.5366762,
+"last": 0
+},
+"531297|Sep-26|standalone": {
+"code": "531297",
+"name": "Artefact Projects Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 101.55000000000001,
+"pat": 16.983,
+"t": 1794488607.5645874,
 "last": 0
 }
 },
