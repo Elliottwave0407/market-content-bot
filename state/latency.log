@@ -1509,3 +1509,8 @@
 12 10:48:54 seen 523031 A D S Diagnostics Ltd cat=Board Meeting early=True bse_time=16:18:20 dissem=16:18:20
 12 10:48:54 seen 540135 ARC Finance Ltd cat=Board Meeting early=True bse_time=16:18:24 dissem=16:18:24
 12 10:48:54 seen 537573 Polymac Thermoformers Ltd cat=Result early=False bse_time=16:18:27 dissem=16:18:27
+12 10:49:23 wait 537573 Polymac Thermoformers Ltd: numbers not yet on BSE
+12 10:49:29 pdf nim reader Jindal Leasefin Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:49:29 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+12 10:49:29 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
+12 10:49:33 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Polymac Thermoformers Ltd
