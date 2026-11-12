@@ -1541,3 +1541,18 @@
 12 17:35:24 pdf nim reader Abate As Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (gemi
 12 17:35:24 pdf pdf read failed Abate As Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possib
 12 17:35:31 pdf rule reader Amber Enterprises India Ltd: rule: no results table page | ocr: rule: unit not found
+12 17:36:33 pdf nim reader Elevate Campuses Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
+12 17:36:33 pdf pdf read failed Elevate Campuses Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible i
+12 17:36:33 pdf nim reader S.K. Offset Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 17:36:33 pdf rule reader Abate As Industries Ltd: rule: no results table page | ocr: rule: no results table page
+12 17:36:33 pdf nim reader Afcom Holdings Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: g
+12 17:36:33 pdf pdf read failed Afcom Holdings Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible in
+12 17:37:16 pdf nim reader Amber Enterprises India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+12 17:37:16 pdf pdf read failed Amber Enterprises India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (pos
+12 17:37:16 pdf pdf current col S.K. Offset Ltd standalone ok=True/3: revenue=2158.27, other_income=18.07, total_income=2176.34, total_expenses=1705.81, finance_costs=171.43, depreciation=146.73, pbt=470.53, tax=162.55, pat=307.97, eps=1
+12 17:37:16 pdf pdf incomplete S.K. Offset Ltd standalone: missing ['pat', 'revenue'] - not posting from PDF
+12 17:38:27 ready 531658|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf current col Abate As Industries Ltd consolidated ok=False/3: revenue=2570.18, other_income=37.56, total_income=2607.72, total_expenses=2306.04, finance_cost
+12 17:38:37 pdf strong model retry did not help: HTTP 429 (per-day) on gemini-3.5-flash | results-key: HTTP 4
+12 17:38:37 pdf pdf current col Abate As Industries Ltd consolidated ok=False/3: revenue=2570.18, other_income=37.56, total_income=2607.72, total_expenses=2306.04, finance_costs=13.88, depreciation=52.29, pbt=308.52, tax=35.63, pat=268.5, eps=0.1
+12 17:38:37 pdf nim reader Afcom Holdings Ltd: nim deepseek-v4.1-flash: 12 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible inve
+12 17:38:37 pdf pdf read failed Afcom Holdings Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 50
