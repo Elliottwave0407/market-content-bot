@@ -1514,3 +1514,11 @@
 12 10:49:29 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
 12 10:49:29 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
 12 10:49:33 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Polymac Thermoformers Ltd
+12 10:50:03 pdf pdf column dates ['30.09.2028', '30.06.2028', '30.09.2025'] are not a quarterly layout: not used Jindal Leasefin Ltd
+12 10:50:03 pdf rule reader Richfield Financial Services Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+12 10:50:03 pdf rule reader ARC Finance Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:50:04 seen 590070 Radaan Mediaworks India Ltd cat=Board Meeting early=True bse_time=16:19:07 dissem=16:19:07
+12 10:50:04 seen 533192 KCP Sugar & Industries Corpo cat=Board Meeting early=True bse_time=16:19:24 dissem=16:19:24
+12 10:50:36 ready 517514|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row | strong model retry did not help: None | pdf current col D & H India Ltd-$ consolidated ok=True/3
+12 10:50:50 ready 539435|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model fixed a failed read
+12 10:51:01 pdf strong model fixed a failed read
