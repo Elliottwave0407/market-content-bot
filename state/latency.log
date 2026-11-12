@@ -1602,3 +1602,13 @@
 12 07:24:55 pdf pdf unusable JMG Corporation Ltd: unit/date missing
 12 07:24:58 seen 530953 Sunil Agro Foods Ltd-$ cat=Result early=False bse_time=12:53:56 dissem=12:53:56
 12 07:24:58 seen 532332 Cura Technologies Ltd cat=Board Meeting early=True bse_time=12:54:14 dissem=12:54:14
+12 07:25:50 wait 530953 Sunil Agro Foods Ltd-$: numbers not yet on BSE
+12 07:26:05 pdf pdf current col Taj Gvk Hotels & Resorts Ltd consolidated ok=True/3: revenue=16681.0, other_income=175.0, total_income=16856.0, total_expenses=12509.0, finance_costs=None, depreciation=None, pbt=4347.0, tax=1692.0, pat=2655.0, eps
+12 07:26:05 pdf rule reader Sunil Agro Foods Ltd-$: rule: no results table page | ocr: rule: no results table page
+12 07:26:05 pdf pdf incomplete Taj Gvk Hotels & Resorts Ltd consolidated: missing ['ebitda'] - not posting from PDF
+12 07:26:05 pdf nim reader Anand Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: g
+12 07:26:05 pdf pdf read failed Anand Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible in
+12 07:26:05 pdf pdf current col Cura Technologies Ltd standalone ok=True/2: revenue=4.82, other_income=None, total_income=4.82, total_expenses=22.47, finance_costs=3.78, depreciation=10.61, pbt=-17.65, tax=0.0, pat=-17.65, eps=-0.18
+12 07:26:05 pdf pdf unusable JMG Corporation Ltd: unit/date missing
+12 07:26:05 pdf strong model fixed a failed read
+12 07:27:04 ready 530953|Sep-26|standalone kind=photo waited_min=1.1 tries=1 pdf_log=pdf q-1 revenue typo: pdf 405.07 -> BSE history 400.19 (profit matched) Sunil Agro Foods Ltd-$ | pdf q-4 revenue typo: pdf 507.507 -> BSE history 503.6 (profit 
