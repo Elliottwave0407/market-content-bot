@@ -310,7 +310,8 @@
 "b2ce047e-9f21-49d8-b2fd-faecbee58511",
 "965f2a18-4c23-4720-83bd-0ba3fd043f5a",
 "d572a51a-8e24-4906-bc46-51cacdb15df6",
-"27eda246-9cd7-42e3-997e-54a77ad9db89"
+"27eda246-9cd7-42e3-997e-54a77ad9db89",
+"d76f83a9-0c4c-456b-a8cb-64775640f15e"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3618,7 +3619,8 @@
 "541143|Sep-26|standalone",
 "545012|Sep-26|standalone",
 "539523|Sep-26|consolidated",
-"543399|Sep-26|consolidated"
+"543399|Sep-26|consolidated",
+"532719|Sep-26|consolidated"
 ],
 "pending": {
 "d19f1e72-0c01-4356-92fc-3988aa0b2ad6": {
@@ -3811,44 +3813,6 @@
 "last": 1794471743.3545363,
 "alerted": false
 },
-"d76f83a9-0c4c-456b-a8cb-64775640f15e": {
-"rec": {
-"NEWSID": "d76f83a9-0c4c-456b-a8cb-64775640f15e",
-"SCRIP_CD": 532719,
-"XML_NAME": "ANN_532719_D76F83A9-0C4C-456B-A8CB-64775640F15E",
-"NEWSSUB": "B. L. Kashyap and Sons Ltd - 532719 - Unaudited Financial Results (Standalone And Consolidated) For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-11-12T13:35:34.417",
-"NEWS_DT": "2026-11-12T13:35:34.417",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "084641a6-e88d-4fd6-8be3-e145019dd9c2.pdf",
-"MORE": "",
-"HEADLINE": "Approval of Unaudited Results consolidated and Standalone",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/b-l-kashyap-and-sons-ltd/blkashyap/532719/",
-"SLONGNAME": "B. L. Kashyap and Sons Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 8,
-"News_submission_dt": "2026-11-12T13:35:34",
-"DissemDT": "2026-11-12T13:35:34.417",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7102432,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794470852.3401608,
-"last": 1794471743.3545363,
-"alerted": false
-},
 "ed901044-0a52-44a8-a8d7-3f371113d43e": {
 "rec": {
 "NEWSID": "ed901044-0a52-44a8-a8d7-3f371113d43e",
@@ -4000,6 +3964,44 @@
 "first": 1794472192.8407984,
 "last": 1794472192.8407984,
 "alerted": false
+},
+"e750e957-54c2-428c-975d-1bf812cf07a6": {
+"rec": {
+"NEWSID": "e750e957-54c2-428c-975d-1bf812cf07a6",
+"SCRIP_CD": 543399,
+"XML_NAME": "ANN_543399_E750E957-54C2-428C-975D-1BF812CF07A6",
+"NEWSSUB": "Tarsons Products Ltd - 543399 - Financial Results (Standalone And Consolidated) For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-12T13:59:19.91",
+"NEWS_DT": "2026-11-12T13:59:19.91",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "c7a1130f-02c4-45d5-a87b-999c1b4b108c.pdf",
+"MORE": "",
+"HEADLINE": "Financial Results for the quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/tarsons-products-ltd/tarsons/543399/",
+"SLONGNAME": "Tarsons Products Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 8,
+"News_submission_dt": "2026-11-12T13:59:19",
+"DissemDT": "2026-11-12T13:59:19.91",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 4667640,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794472192.8407984,
+"last": 1794472192.8407984,
+"alerted": false
 }
 },
 "gem_use": {
@@ -4046,7 +4048,7 @@
 "other": 2
 },
 "main": {
-"ok": 24,
+"ok": 28,
 "429": 0,
 "other": 5
 }
@@ -4581,6 +4583,10 @@
 [
 "Ennature Bio Pharma Ltd",
 9
+],
+[
+"B. L. Kashyap and Sons Ltd",
+22
 ]
 ],
 "pdfposted": {
@@ -4972,6 +4978,16 @@
 "rev": 1236.5,
 "pat": -3.44,
 "t": 1794472250.0563414,
+"last": 0
+},
+"532719|Sep-26|consolidated": {
+"code": "532719",
+"name": "B. L. Kashyap and Sons Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4981.5,
+"pat": 202.05700000000002,
+"t": 1794472280.4822283,
 "last": 0
 }
 },
