@@ -1644,3 +1644,6 @@
 12 11:21:32 ready 540961|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf read failed Wallfort Financial Services Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | n
 12 11:22:11 ready 539946|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf incomplete Tusaldah Ltd standalone: missing ['revenue'] - not posting from PDF | rule reader Bazel International Ltd: ok | pdf current col Bazel Internation
 12 11:22:19 wait 539946 Bazel International Ltd: numbers not yet on BSE
+12 11:23:17 ready 519500|Sep-26|standalone kind=photo waited_min=0.0 tries=2 pdf_log=pdf current col BKV Industries Ltd standalone ok=True/2: revenue=19.93, other_income=0.58, total_income=20.51, total_expenses=30.09, finance_costs=None, depreci
+12 11:23:50 ready 521161|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Sri Lakshmi Saraswathi Textiles Arni Ltd-$: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3 | strong model retry did not help: HT
+12 11:24:25 ready 538863|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Sri Amarnath Finance Ltd standalone ok=True/3: revenue=155.46, other_income=12.53, total_income=167.99, total_expenses=52.07, finance_costs=12.6
