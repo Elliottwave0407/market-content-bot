@@ -616,7 +616,10 @@
 "bee5d7e7-e11e-45e6-b055-c518da6d7724",
 "aa3f9c1f-59e1-4fd4-8071-e7eb51580582",
 "c3e63ef3-d8d3-4835-ab0a-7f17acd2a03c",
-"5f23911c-1858-4b24-8c1e-71e243782622"
+"5f23911c-1858-4b24-8c1e-71e243782622",
+"9ad5274e-ca47-465d-89a0-0d08b18afdb6",
+"e8e930c7-6a3a-4d89-8596-7a9e1eddd59e",
+"359185df-068c-4903-82cd-bd8d9daff986"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4125,7 +4128,9 @@
 "542597|Sep-26|consolidated",
 "507880|Sep-26|consolidated",
 "544786|Sep-26|standalone",
-"541403|Sep-26|consolidated"
+"541403|Sep-26|consolidated",
+"500402|Sep-26|consolidated",
+"526173|Sep-26|standalone"
 ],
 "pending": {
 "3d5f2ac3-5f9c-413c-abea-33ad8b68deab": {
@@ -4467,46 +4472,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794486952.0313964,
-"last": 1794486952.0313964,
-"alerted": false
-},
-"359185df-068c-4903-82cd-bd8d9daff986": {
-"rec": {
-"NEWSID": "359185df-068c-4903-82cd-bd8d9daff986",
-"SCRIP_CD": 526173,
-"XML_NAME": "ANN_526173_359185DF-068C-4903-82CD-BD8D9DAFF986",
-"NEWSSUB": "Andrew Yule & Company Ltd - 526173 - Unaudited Financial Results For The Quarter And Six Months Ended 30.09.2026",
-"DT_TM": "2026-11-12T18:00:46.767",
-"NEWS_DT": "2026-11-12T18:00:46.767",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "c945832b-faf8-44c6-aa66-1d9c4feddf80.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the Quarter and Six Months ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/andrew-yule--company-ltd/andrewyu/526173/",
-"SLONGNAME": "Andrew Yule & Company Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-12T18:00:46",
-"DissemDT": "2026-11-12T18:00:46.767",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 16501776,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794486952.0313964,
-"last": 1794486952.0313964,
-"alerted": false
+"last": 1794489517.4116125,
+"alerted": true
 },
 "a553a9cd-5afb-451a-b4be-d5568530ee5c": {
 "rec": {
@@ -4967,7 +4934,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 332
+"2026-11-12": 334
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4994,19 +4961,19 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 321,
-"429": 8,
-"other": 132
+"ok": 326,
+"429": 9,
+"other": 135
 },
 "vision-key": {
-"ok": 39,
+"ok": 41,
 "429": 5,
 "other": 41
 },
 "concall-key": {
-"ok": 80,
+"ok": 82,
 "429": 5,
-"other": 67
+"other": 68
 },
 "main": {
 "ok": 336,
@@ -5269,7 +5236,8 @@
 "a94324e5-a0df-4c40-9e02-492f115215c7": 1,
 "209ddc8b-453d-4e21-9949-b69889e715e6": 1,
 "10e95250-a656-4a6b-b750-64ff3e6f75a1": 1,
-"aa3f9c1f-59e1-4fd4-8071-e7eb51580582": 1
+"aa3f9c1f-59e1-4fd4-8071-e7eb51580582": 1,
+"359185df-068c-4903-82cd-bd8d9daff986": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5477,7 +5445,9 @@
 "bee5d7e7-e11e-45e6-b055-c518da6d7724": 1,
 "f34dcc69-688c-4460-a08f-cf154a0c22bf": 1,
 "c3e63ef3-d8d3-4835-ab0a-7f17acd2a03c": 1,
-"5f23911c-1858-4b24-8c1e-71e243782622": 1
+"5f23911c-1858-4b24-8c1e-71e243782622": 1,
+"9ad5274e-ca47-465d-89a0-0d08b18afdb6": 1,
+"e8e930c7-6a3a-4d89-8596-7a9e1eddd59e": 1
 },
 "lag": [
 [
@@ -6094,6 +6064,10 @@
 ],
 [
 "MSTC Ltd",
+43
+],
+[
+"Andrew Yule & Company Ltd",
 43
 ]
 ],
@@ -7446,6 +7420,16 @@
 "rev": 5303.787,
 "pat": 353.17600000000004,
 "t": 1794490053.9738371,
+"last": 0
+},
+"500402|Sep-26|consolidated": {
+"code": "500402",
+"name": "SPML Infra Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2343.4880000000003,
+"pat": 216.17800000000003,
+"t": 1794490250.3689198,
 "last": 0
 }
 },
