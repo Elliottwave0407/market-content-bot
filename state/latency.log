@@ -1543,3 +1543,13 @@
 12 10:54:34 pdf nim reader Jindal Leasefin Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: 
 12 10:54:34 pdf pdf read failed Jindal Leasefin Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible in
 12 10:54:34 pdf rule reader Prima Industries Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:55:29 ready 531246|Sep-26|consolidated kind=photo waited_min=0.7 tries=1 pdf_log=rule reader Radaan Mediaworks India Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Satyam Silk Mills Ltd: rule: column dates 
+12 10:56:10 pdf rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row
+12 10:56:10 pdf rule reader Radaan Mediaworks India Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:56:10 pdf rule reader Satyam Silk Mills Ltd: rule: column dates not found | ocr: rule: no results table page
+12 10:56:10 pdf pdf current col Prima Industries Ltd consolidated ok=True/3: revenue=20.75, other_income=0.1, total_income=20.85, total_expenses=23.81, finance_costs=0.07, depreciation=0.7, pbt=-2.96, tax=0.0, pat=-2.96, eps=-0.27
+12 10:56:10 pdf pdf current col Radaan Mediaworks India Ltd consolidated ok=True/3: revenue=259.07, other_income=1.71, total_income=260.7, total_expenses=268.38, finance_costs=43.11, depreciation=1.12, pbt=-7.63, tax=0.47, pat=-7.16, eps=-0.01
+12 10:56:10 pdf pdf incomplete Radaan Mediaworks India Ltd consolidated: missing ['ebitda'] - not posting from PDF
+12 10:56:10 pdf strong model retry did not help: None
+12 10:56:10 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+12 10:56:10 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
