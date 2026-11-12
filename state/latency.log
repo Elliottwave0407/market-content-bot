@@ -1539,3 +1539,12 @@
 12 07:10:16 pdf pdf current col Prime Urban Development India Ltd consolidated ok=True/2: revenue=28.06, other_income=13.84, total_income=41.9, total_expenses=74.98, finance_costs=4.92, depreciation=3.22, pbt=-33.08, tax=None, pat=-33.08, eps=-0.
 12 07:10:16 pdf pdf incomplete Prime Urban Development India Ltd consolidated: missing ['ebitda', 'revenue'] - not posting from PDF
 12 07:10:16 pdf rule reader Astra Microwave Products Ltd: rule: stan: does not reconcile [lakh] total_income=[26287.51, 17862.06, 21875.43] total_expenses=[19959.63, 16545.86, 19006.19] pbt=[6327.88, 1316.2, 2869.24] associates=[361.06, 298.1, 23
+12 07:10:38 pdf rule reader Anand Projects Ltd: rule: no results table page | ocr: rule: no results table page
+12 07:10:38 pdf pdf current col Prime Urban Development India Ltd consolidated ok=True/2: revenue=28.06, other_income=13.84, total_income=41.9, total_expenses=74.98, finance_costs=4.92, depreciation=3.22, pbt=-33.08, tax=None, pat=-33.08, eps=-0.
+12 07:10:38 pdf pdf incomplete Prime Urban Development India Ltd consolidated: missing ['ebitda', 'revenue'] - not posting from PDF
+12 07:10:39 seen 543309 Adeshwar Meditex Ltd cat=Board Meeting early=True bse_time=12:40:17 dissem=12:40:17
+12 07:11:43 pdf nim reader Astra Microwave Products Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' 
+12 07:11:43 pdf pdf read failed Astra Microwave Products Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (po
+12 07:12:30 pdf pdf margin q-1 differs from BSE history by 7.4 pts: margin withheld Prime Urban Development India Ltd consolidated
+12 07:12:30 pdf pdf history mismatch Prime Urban Development India Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 8.82 pat -1.611 | bse rev 8.82 pat -1.61 (Rs mn); q-4: pdf rev 6.356000000000001 pat 1.40000000000
+12 07:12:30 pdf pdf has consolidated but it failed checks: not falling back to standalone Prime Urban Development India Ltd
