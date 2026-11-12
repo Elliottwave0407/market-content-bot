@@ -1586,3 +1586,9 @@
 12 10:31:47 pdf strong model retry did not help: None
 12 10:31:47 pdf nim reader Easy Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
 12 10:31:47 pdf pdf read failed Easy Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible inven
+12 10:32:30 seen 531015 Venmax Drugs and Pharmaceuti cat=Board Meeting early=True bse_time=16:01:20 dissem=16:01:20
+12 10:32:34 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/2: revenue=528.21, other_income=None, total_income=528.21, total_expenses=508.23, finance_costs=None, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0
+12 10:32:34 pdf pdf incomplete Venmax Drugs and Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:32:49 pdf strong model fixed a failed read
+12 10:32:51 ready 539353|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Sal Automotive Ltd standalone ok=True/3: revenue=12686, other_income=19, total_income=12705, total_expenses=12418, finance_costs=81, depreciatio
+12 10:32:57 pdf pdf current col Sal Automotive Ltd standalone ok=True/3: revenue=12686, other_income=19, total_income=12705, total_expenses=12418, finance_costs=81, depreciation=137, pbt=287, tax=76, pat=211, eps=4.39
