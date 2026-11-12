@@ -1504,3 +1504,9 @@
 12 07:48:37 pdf rule reader BCL Enterprises Ltd: rule: no results table page | ocr: rule: no results table page
 12 07:48:37 pdf pdf current col Asia Capital Ltd standalone ok=True/3: revenue=1148.292, other_income=260.837, total_income=1409.129, total_expenses=633.499, finance_costs=None, depreciation=0.948, pbt=775.63, tax=200.146, pat=575.584, eps=0.19
 12 07:48:37 pdf pdf incomplete Asia Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 07:49:03 pdf strong model fixed a failed read
+12 07:49:03 pdf rule reader Asia Capital Ltd: rule: no results table page | ocr: rule: no results table page
+12 07:49:03 pdf pdf current col BCL Enterprises Ltd standalone ok=True/2: revenue=2802.82, other_income=None, total_income=2802.82, total_expenses=1402.12, finance_costs=1605.32, depreciation=0.45, pbt=1400.71, tax=-0.35, pat=1401.06, eps=1.2
+12 07:49:03 pdf pdf history mismatch BCL Enterprises Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev -15.879 pat -66.10700000000001 | bse rev 9.3 pat -40.93 (Rs mn); q-4: pdf rev 2.7070000000000003 pat -0.581 | bse 
+12 07:50:36 pdf nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 07:50:36 pdf pdf read failed Asia Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible inven
