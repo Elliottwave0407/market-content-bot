@@ -1510,3 +1510,21 @@
 12 07:49:03 pdf pdf history mismatch BCL Enterprises Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev -15.879 pat -66.10700000000001 | bse rev 9.3 pat -40.93 (Rs mn); q-4: pdf rev 2.7070000000000003 pat -0.581 | bse 
 12 07:50:36 pdf nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
 12 07:50:36 pdf pdf read failed Asia Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible inven
+12 07:51:21 pdf rule reader Dhunseri Investments Ltd: rule: consolidated table incomplete missing ['pat'] n=6
+12 07:51:21 pdf nim reader Dhunseri Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possible invention): rejected e.g. [( (gem
+12 07:51:21 pdf pdf read failed Dhunseri Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 16 numbers not found in the filing text (possi
+12 07:51:21 pdf nim reader BCL Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+12 07:51:21 pdf pdf read failed BCL Enterprises Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 12 column 7 (char 185)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSC
+12 07:51:51 seen 521234 Sri Nachammai Cotton Mills L cat=Board Meeting early=True bse_time=13:20:24 dissem=13:20:24
+12 07:51:51 seen 532256 Nalwa Sons Investments Ltd cat=Board Meeting early=True bse_time=13:20:43 dissem=13:20:43
+12 07:52:19 pdf rule reader Nalwa Sons Investments Ltd: rule: unit not found | ocr: rule: no results table page
+12 07:52:24 pdf nim reader Dhunseri Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
+12 07:52:24 pdf pdf read failed Dhunseri Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possib
+12 07:52:24 pdf nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 07:52:24 pdf pdf read failed Asia Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible inven
+12 07:52:49 pdf rule reader Asia Capital Ltd: rule: no results table page | ocr: rule: no results table page
+12 07:53:01 seen 541154 Hindustan Aeronautics Ltd cat=Result early=False bse_time=13:22:11 dissem=13:22:11
+12 07:53:25 wait 541154 Hindustan Aeronautics Ltd: numbers not yet on BSE
+12 07:53:58 ready 532256|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Nalwa Sons Investments Ltd standalone ok=True/3: revenue=4648.69, other_income=0, total_income=4648.69, total_expenses=440.98, finance_costs=0, 
+12 07:54:12 pdf nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 07:54:12 pdf pdf read failed Asia Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in the filing text (possible inven
