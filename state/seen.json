@@ -472,7 +472,9 @@
 "4ffd5dc8-da46-482a-a793-10ad654f3989",
 "e88cdf03-0394-4822-b668-27665c0ec5ab",
 "1af562a4-47f4-4705-85aa-31adcae2ddd2",
-"99e95f77-0210-479f-b5e9-e6a794528eea"
+"99e95f77-0210-479f-b5e9-e6a794528eea",
+"891c7459-70f9-44bc-8a57-788824d4f6b6",
+"d27eda82-2d84-4885-9886-f040b7a31636"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3878,7 +3880,8 @@
 "590070|Sep-26|consolidated",
 "523836|Sep-26|standalone",
 "538921|Sep-26|na",
-"530745|Sep-26|consolidated"
+"530745|Sep-26|consolidated",
+"517258|Sep-26|standalone"
 ],
 "pending": {
 "eded1770-9dd6-4c52-a1c3-255989b062c5": {
@@ -4144,7 +4147,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794481411.694496,
-"last": 1794481942.422782,
+"last": 1794482219.3255062,
 "alerted": false
 },
 "12e37f5b-f537-4f18-9e57-af138753f710": {
@@ -4259,44 +4262,6 @@
 },
 "first": 1794481942.422782,
 "last": 1794482219.3255062,
-"alerted": false
-},
-"891c7459-70f9-44bc-8a57-788824d4f6b6": {
-"rec": {
-"NEWSID": "891c7459-70f9-44bc-8a57-788824d4f6b6",
-"SCRIP_CD": 533192,
-"XML_NAME": "ANN_533192_891C7459-70F9-44BC-8A57-788824D4F6B6",
-"NEWSSUB": "KCP Sugar & Industries Corporation Ltd - 533192 - Unaudited Standalone And Consolidated Financial Results For The Quarter Ended 30.09.2026",
-"DT_TM": "2026-11-12T16:38:01.817",
-"NEWS_DT": "2026-11-12T16:38:01.817",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "b5c52a38-30b4-4872-b053-3bbf7f209011.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the Quarter ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/kcp-sugar--industries-corporation-ltd/kcpsugind/533192/",
-"SLONGNAME": "KCP Sugar & Industries Corporation Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 16,
-"News_submission_dt": "2026-11-12T16:38:01",
-"DissemDT": "2026-11-12T16:38:01.817",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 3662671,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794481942.422782,
-"last": 1794481942.422782,
 "alerted": false
 },
 "903a7ffa-0be0-41dc-9ca3-26e8be31f288": {
@@ -4416,7 +4381,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 195
+"2026-11-12": 196
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4458,7 +4423,7 @@
 "other": 16
 },
 "main": {
-"ok": 255,
+"ok": 258,
 "429": 7,
 "other": 61
 }
@@ -4650,7 +4615,8 @@
 "d5082a01-1db0-474d-af10-037803554255": 1,
 "8657d293-e750-4c31-9b1c-99f418bed410": 1,
 "1af562a4-47f4-4705-85aa-31adcae2ddd2": 1,
-"4b1c4276-eec6-4ae7-9aaa-5f9b750d9afe": 1
+"4b1c4276-eec6-4ae7-9aaa-5f9b750d9afe": 1,
+"d27eda82-2d84-4885-9886-f040b7a31636": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -4807,7 +4773,8 @@
 "adec6d4a-dbd4-4910-a818-bd4083c7df8a": 1,
 "372b5411-85ab-4c0b-971c-3b6cfefa30ea": 1,
 "03825794-1cec-4159-8578-2f426e20cd36": 1,
-"99e95f77-0210-479f-b5e9-e6a794528eea": 1
+"99e95f77-0210-479f-b5e9-e6a794528eea": 1,
+"891c7459-70f9-44bc-8a57-788824d4f6b6": 1
 },
 "lag": [
 [
@@ -6104,6 +6071,16 @@
 "rev": 1139.8100000000002,
 "pat": 65.815,
 "t": 1794482268.3838723,
+"last": 0
+},
+"517258|Sep-26|standalone": {
+"code": "517258",
+"name": "Precision Electronics Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 214.197,
+"pat": -14.077000000000002,
+"t": 1794482293.546695,
 "last": 0
 }
 },
