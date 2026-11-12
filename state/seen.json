@@ -290,7 +290,9 @@
 "5a0ac728-4324-48ec-871f-15e9cd9d2ef6",
 "9382e116-92c6-4eb4-9cce-cf27d0284283",
 "1d047a98-3707-4fa4-ab14-777b921c0c00",
-"bbe5e813-7725-4917-b78c-6f74e1887fc4"
+"bbe5e813-7725-4917-b78c-6f74e1887fc4",
+"2a67f5ca-228f-418d-8ba2-b9f4e94d46f6",
+"33e70d73-a808-479b-9536-550464f0e5d8"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3591,7 +3593,8 @@
 "511108|Sep-26|consolidated",
 "500459|Sep-26|standalone",
 "532853|Sep-26|consolidated",
-"543993|Sep-26|consolidated"
+"543993|Sep-26|consolidated",
+"530265|Sep-26|standalone"
 ],
 "pending": {
 "d5e487f6-64e2-440b-8f93-073f6eda6925": {
@@ -3781,7 +3784,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794470399.9261591,
-"last": 1794470852.3401608,
+"last": 1794471215.3076692,
 "alerted": false
 },
 "0f9da2af-d8cc-4cc6-a149-cacae8f0a515": {
@@ -3934,44 +3937,6 @@
 },
 "first": 1794470852.3401608,
 "last": 1794471215.3076692,
-"alerted": false
-},
-"33e70d73-a808-479b-9536-550464f0e5d8": {
-"rec": {
-"NEWSID": "33e70d73-a808-479b-9536-550464f0e5d8",
-"SCRIP_CD": 530265,
-"XML_NAME": "ANN_530265_33E70D73-A808-479B-9536-550464F0E5D8",
-"NEWSSUB": "Sainik Finance & Industries Ltd - 530265 - Submission Of Unaudited Financial Results Of The Company For The Quarter / Half Year Ended 30.09.2026",
-"DT_TM": "2026-11-12T13:35:58.38",
-"NEWS_DT": "2026-11-12T13:35:58.38",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "d7134233-fb77-4789-9b86-6bb235b0350e.pdf",
-"MORE": "",
-"HEADLINE": "Submission of unaudited financial results of the Company for the quarter /half year ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sainik-finance--industries-ltd/sainik/530265/",
-"SLONGNAME": "Sainik Finance & Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 7,
-"News_submission_dt": "2026-11-12T13:35:58",
-"DissemDT": "2026-11-12T13:35:58.38",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2588528,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794470852.3401608,
-"last": 1794470852.3401608,
 "alerted": false
 },
 "b2489665-7cc4-4b29-9faa-8a33c3e8aaac": {
@@ -4205,7 +4170,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 18
+"2026-11-12": 19
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4232,9 +4197,9 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 33,
+"ok": 35,
 "429": 0,
-"other": 4
+"other": 5
 },
 "vision-key": {
 "ok": 2,
@@ -4242,12 +4207,12 @@
 "other": 1
 },
 "concall-key": {
-"ok": 0,
+"ok": 2,
 "429": 0,
-"other": 1
+"other": 2
 },
 "main": {
-"ok": 3,
+"ok": 4,
 "429": 0,
 "other": 0
 }
@@ -4749,6 +4714,10 @@
 [
 "SSPDL Ltd-$",
 3
+],
+[
+"Sainik Finance & Industries Ltd",
+6
 ]
 ],
 "pdfposted": {
@@ -5080,6 +5049,16 @@
 "rev": 830.3670000000001,
 "pat": 59.00800000000001,
 "t": 1794471314.5614429,
+"last": 0
+},
+"530265|Sep-26|standalone": {
+"code": "530265",
+"name": "Sainik Finance & Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 42.943000000000005,
+"pat": 13.657,
+"t": 1794471434.3297718,
 "last": 0
 }
 },
