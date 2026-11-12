@@ -1614,3 +1614,26 @@
 12 10:37:15 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/3: revenue=528.21, other_income=0.0, total_income=528.21, total_expenses=508.23, finance_costs=0.0, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0.0
 12 10:37:15 pdf pdf current col Ashiana Agro Industries Ltd standalone ok=True/3: revenue=6.76, other_income=1.88, total_income=8.64, total_expenses=11.63, finance_costs=None, depreciation=None, pbt=-2.99, tax=0.0, pat=-2.99, eps=-0.07
 12 10:37:15 pdf pdf incomplete Ashiana Agro Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:37:18 seen 539216 Garment Mantra Lifestyle Ltd cat=Result early=False bse_time=16:05:49 dissem=16:05:49
+12 10:37:18 seen 539353 Sal Automotive Ltd cat=Result early=False bse_time=16:06:15 dissem=16:06:15
+12 10:37:43 wait 539216 Garment Mantra Lifestyle Ltd: numbers not yet on BSE
+12 10:38:04 seen 513515 Arur Footwear Ltd cat=Board Meeting early=True bse_time=16:07:30 dissem=16:07:30
+12 10:38:04 seen 533106 Oil India Ltd cat=Result early=False bse_time=16:07:42 dissem=16:07:42
+12 10:38:04 seen 519174 Ashiana Agro Industries Ltd cat=Board Meeting early=True bse_time=16:07:47 dissem=16:07:47
+12 10:38:25 wait 533106 Oil India Ltd: numbers not yet on BSE
+12 10:38:32 pdf rule reader Arur Footwear Ltd: ok
+12 10:38:32 pdf rule reader Garment Mantra Lifestyle Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:38:32 pdf rule reader GTN Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[315.0, None, 150.0] total_expenses=[506.0, 93.0, 196.0] exceptional=[-658.0, 0.0, 0.0] pbt=[-183.0, -7.0, -174.0] tax=[1.0, -6.0, -131.0] pat=[-18
+12 10:38:32 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:38:32 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:38:34 seen 502168 NCL Industries Ltd-$ cat=Result early=False bse_time=16:08:20 dissem=16:08:20
+12 10:38:59 wait 502168 NCL Industries Ltd-$: numbers not yet on BSE
+12 10:39:15 pdf rule reader Ashiana Agro Industries Ltd: ok
+12 10:39:15 pdf rule reader Arur Footwear Ltd: ok
+12 10:39:15 pdf rule reader Oil India Ltd: rule: no results table page | ocr: rule: stan: does not reconcile [crore] total_expenses=[6048.96, 4737.06, 4969.83] pbt=[2867.24, 3741.72, 1317.59] pat=[2259.42, 2870.21, 104
+12 10:39:15 pdf rule reader NCL Industries Ltd-$: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6
+12 10:39:15 pdf pdf current col Jindal Leasefin Ltd standalone ok=True/1: revenue=0.01, other_income=None, total_income=0.01, total_expenses=1.75, finance_costs=0.01, depreciation=0.0, pbt=-1.74, tax=None, pat=-1.74, eps=-0.06
+12 10:39:15 pdf pdf current col Ashiana Agro Industries Ltd standalone ok=True/3: revenue=6.76, other_income=1.88, total_income=8.64, total_expenses=11.63, finance_costs=None, depreciation=None, pbt=-2.99, tax=0.0, pat=-2.99, eps=-0.07
+12 10:39:15 pdf pdf incomplete Ashiana Agro Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:39:15 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:39:15 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
