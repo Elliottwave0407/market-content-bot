@@ -637,7 +637,9 @@
 "603c2c1b-aa82-4140-b806-5340c6872098",
 "00c13a9a-c701-4066-8977-b4f20147c69c",
 "32334b6b-401e-4aeb-b624-1421c8d5c162",
-"6544dbcf-577b-4ce3-8db8-2c421b1363b7"
+"6544dbcf-577b-4ce3-8db8-2c421b1363b7",
+"0225f7d0-1cb1-4315-8e1c-dc0fa0f891fe",
+"140cf550-9b57-40e7-ae4c-d2e3d874a699"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4161,7 +4163,9 @@
 "533152|Sep-26|consolidated",
 "543312|Sep-26|consolidated",
 "539400|Sep-26|consolidated",
-"532915|Sep-26|consolidated"
+"532915|Sep-26|consolidated",
+"531439|Sep-26|consolidated",
+"540952|Sep-26|standalone"
 ],
 "pending": {
 "3d5f2ac3-5f9c-413c-abea-33ad8b68deab": {
@@ -4965,7 +4969,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 348
+"2026-11-12": 350
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4997,14 +5001,14 @@
 "other": 157
 },
 "vision-key": {
-"ok": 44,
+"ok": 46,
 "429": 6,
 "other": 50
 },
 "concall-key": {
-"ok": 104,
+"ok": 106,
 "429": 6,
-"other": 81
+"other": 83
 },
 "main": {
 "ok": 336,
@@ -5271,7 +5275,8 @@
 "359185df-068c-4903-82cd-bd8d9daff986": 1,
 "e34cfea9-1535-46b3-b53b-1732248f6bff": 1,
 "02dc84a0-6e57-4e1a-985d-2348fa3beb9f": 1,
-"32334b6b-401e-4aeb-b624-1421c8d5c162": 1
+"32334b6b-401e-4aeb-b624-1421c8d5c162": 1,
+"140cf550-9b57-40e7-ae4c-d2e3d874a699": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5491,7 +5496,8 @@
 "83f2a9a8-10ab-4551-9c16-d6a5937ddf6b": 1,
 "5e64fd56-90e2-4a07-a870-fae86a111e62": 1,
 "6a15b6e2-d39e-44f0-be02-a9a536b18943": 1,
-"1e0f2f4f-86a1-4b6d-8c99-45e4a945b5a4": 1
+"1e0f2f4f-86a1-4b6d-8c99-45e4a945b5a4": 1,
+"0225f7d0-1cb1-4315-8e1c-dc0fa0f891fe": 1
 },
 "lag": [
 [
@@ -7532,6 +7538,16 @@
 "rev": 134.5,
 "pat": -80.7,
 "t": 1794491358.5283296,
+"last": 0
+},
+"531439|Sep-26|consolidated": {
+"code": "531439",
+"name": "Aion-Tech Solutions Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 333.92,
+"pat": -9.81,
+"t": 1794491898.9954379,
 "last": 0
 }
 },
