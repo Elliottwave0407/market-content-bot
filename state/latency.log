@@ -1635,3 +1635,8 @@
 12 08:17:14 ready 530265|Sep-26|standalone kind=photo waited_min=6.0 tries=2 pdf_log=pdf current col Sainik Finance & Industries Ltd standalone ok=True/1: revenue=429.43, other_income=None, total_income=429.43, total_expenses=243.93, finance_cos
 12 08:20:41 ready 523712|Sep-26|na kind=photo waited_min=49.5 tries=8 pdf_log=nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found i
 12 08:21:24 ready 521234|Sep-26|standalone kind=photo waited_min=9.4 tries=2 pdf_log=rule reader Sri Nachammai Cotton Mills Ltd-$: rule: no results table page | ocr: rule: no results table page | pdf current col Sri Nachammai Cotton Mills Ltd-$ 
+12 08:22:21 pdf rule reader Sri Nachammai Cotton Mills Ltd-$: rule: no results table page | ocr: rule: no results table page
+12 08:22:21 pdf pdf current col Sri Nachammai Cotton Mills Ltd-$ standalone ok=True/3: revenue=1907.31, other_income=25.78, total_income=1933.09, total_expenses=1898.97, finance_costs=85.25, depreciation=59.54, pbt=34.12, tax=-12.02, pat=46.14, e
+12 08:22:21 pdf rule reader BCL Enterprises Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:22:21 pdf pdf current col BCL Enterprises Ltd standalone ok=True/2: revenue=2802.82, other_income=None, total_income=2802.82, total_expenses=1402.12, finance_costs=1605.32, depreciation=0.45, pbt=1400.71, tax=0.35, pat=1401.06, eps=1.2
+12 08:22:21 pdf pdf history mismatch BCL Enterprises Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev -15.879 pat -66.10700000000001 | bse rev 9.3 pat -40.93 (Rs mn); q-4: pdf rev 2.7070000000000003 pat -0.581 | bse 
