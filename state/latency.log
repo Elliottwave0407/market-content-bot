@@ -1594,3 +1594,6 @@
 12 10:32:57 pdf pdf current col Sal Automotive Ltd standalone ok=True/3: revenue=12686, other_income=19, total_income=12705, total_expenses=12418, finance_costs=81, depreciation=137, pbt=287, tax=76, pat=211, eps=4.39
 12 10:33:07 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/2: revenue=528.21, other_income=None, total_income=528.21, total_expenses=508.23, finance_costs=None, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0
 12 10:33:07 pdf pdf incomplete Venmax Drugs and Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:33:56 pdf rule reader GTN Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[315.0, None, 150.0] total_expenses=[506.0, 93.0, 196.0] exceptional=[-658.0, 0.0, 0.0] pbt=[-183.0, -7.0, -174.0] tax=[1.0, -6.0, -131.0] pat=[-18
+12 10:34:19 pdf rule reader Venmax Drugs and Pharmaceuticals Ltd: rule: stan: missing ['pat'] n=6
+12 10:34:31 seen 519415 KMG Milk Food Ltd cat=Board Meeting early=True bse_time=16:03:27 dissem=16:03:27
