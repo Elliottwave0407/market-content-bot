@@ -1548,3 +1548,24 @@
 12 08:43:57 pdf pdf current col Krishna Ventures Ltd standalone ok=True/2: revenue=131.98, other_income=0.0, total_income=131.98, total_expenses=143.31, finance_costs=0.07, depreciation=3.1, pbt=-11.33, tax=None, pat=-11.33, eps=-0.1
 12 08:43:57 pdf pdf incomplete Krishna Ventures Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 12 08:43:57 pdf rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4
+12 08:44:36 pdf nim reader Pan India Corporation Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 08:44:36 pdf rule reader Share Samadhan Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:44:36 pdf rule reader Wonder Electricals Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:44:36 pdf nim reader Krishna Ventures Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 08:44:36 pdf rule reader Lexoraa Industries Ltd: rule: consolidated table does not reconcile [lakh] total_income=[3655.41, 1113.47, 278.79] total_expenses=[3646.46, 1141.25, 288.86] pbt=[None, None, None] tax=[0.0, 0.0, 0.0] pat=[8.94, -27.78,
+12 08:44:36 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Share Samadhan Ltd
+12 08:44:36 pdf pdf current col Pan India Corporation Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=25.86, finance_costs=0, depreciation=0, pbt=-25.86, tax=0, pat=-25.86, eps=-0.0121
+12 08:44:36 pdf pdf incomplete Pan India Corporation Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 08:44:36 pdf rule reader Krishna Ventures Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+12 08:44:36 pdf rule reader DAPS Advertising Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+12 08:44:37 seen 524790 Everest Organics Ltd cat=Result early=False bse_time=14:13:30 dissem=14:13:30
+12 08:44:37 seen 511525 Pan India Corporation Ltd cat=Result early=False bse_time=14:13:50 dissem=14:13:50
+12 08:44:59 wait 524790 Everest Organics Ltd: numbers not yet on BSE
+12 08:45:06 wait 511525 Pan India Corporation Ltd: numbers not yet on BSE
+12 08:45:21 pdf pdf incomplete Lexoraa Industries Ltd consolidated: missing ['ebitda'] - not posting from PDF
+12 08:45:21 pdf nim reader Incon Engineers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: 
+12 08:45:21 pdf pdf read failed Incon Engineers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible in
+12 08:45:28 seen 542628 Northern Spirits Ltd cat=Result early=False bse_time=14:14:25 dissem=14:14:25
+12 08:45:55 ready 524790|Sep-26|standalone kind=photo waited_min=0.9 tries=1 pdf_log=rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4
+12 08:46:03 wait 542628 Northern Spirits Ltd: numbers not yet on BSE
+12 08:46:04 ready 544105|Sep-26|na kind=photo waited_min=45.5 tries=99 pdf_log=
