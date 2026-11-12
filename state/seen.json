@@ -384,7 +384,8 @@
 "3aaf2a4b-532d-48cb-a190-7dba8e767e0d",
 "e0dd1967-1f73-45ef-9716-671946ef3794",
 "85367f10-6f8a-40fc-90ff-594ceb78abfd",
-"e55850f2-6cca-477b-98e8-48fa8b39b78b"
+"e55850f2-6cca-477b-98e8-48fa8b39b78b",
+"3f1cead8-e88b-4ad6-b1e2-6a8e934d79ea"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3738,7 +3739,8 @@
 "531812|Sep-26|na",
 "521210|Sep-26|na",
 "543651|Sep-26|na",
-"519262|Sep-26|consolidated"
+"519262|Sep-26|consolidated",
+"530927|Sep-26|standalone"
 ],
 "pending": {
 "b2e2eead-2d00-44d5-a8a1-f810f3e5ad85": {
@@ -4045,44 +4047,6 @@
 "last": 1794477308.8363445,
 "alerted": false
 },
-"3f1cead8-e88b-4ad6-b1e2-6a8e934d79ea": {
-"rec": {
-"NEWSID": "3f1cead8-e88b-4ad6-b1e2-6a8e934d79ea",
-"SCRIP_CD": 530927,
-"XML_NAME": "ANN_530927_3F1CEAD8-E88B-4AD6-B1E2-6A8E934D79EA",
-"NEWSSUB": "Haryana Financial Corporation Ltd - 530927 - Outcome Of Board Meeting And Intimation Under Regulation Of 30 Of SEBI(LODR), 2015",
-"DT_TM": "2026-11-12T15:18:45.33",
-"NEWS_DT": "2026-11-12T15:18:45.33",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "920213c5-18f9-4260-b4d7-e0d01599c9cb.pdf",
-"MORE": "Unaudited financial Results of the Corporation for the half yearly and and quarter ended 30.09.2026 along with Limited Review Report is attached herewith.\r\nThe Board Meeting commenced at 01:30 PM and concluded at 02:50PM.",
-"HEADLINE": "Unaudited financial Results of the Corporation for the half yearly and and quarter ended 30.09.2026 along with Limited Review Report is attached herewith.\r\nThe Board Meeting commenced at ....",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/haryana-financial-corporation-ltd/harafin/530927/",
-"SLONGNAME": "Haryana Financial Corporation Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 11,
-"News_submission_dt": "2026-11-12T15:18:45",
-"DissemDT": "2026-11-12T15:18:45.33",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 350160,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794477308.8363445,
-"last": 1794477308.8363445,
-"alerted": false
-},
 "5cee71d0-44fb-47f4-a250-f7db849d1e96": {
 "rec": {
 "NEWSID": "5cee71d0-44fb-47f4-a250-f7db849d1e96",
@@ -4200,7 +4164,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 112
+"2026-11-12": 114
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4242,7 +4206,7 @@
 "other": 4
 },
 "main": {
-"ok": 121,
+"ok": 123,
 "429": 3,
 "other": 30
 }
@@ -4391,7 +4355,8 @@
 "9370d4d2-ee2e-4f9c-8da0-2796d27fe5e0": 1,
 "dc101af2-b91a-493e-b410-1c291328e5ef": 1,
 "3eaadc3a-e71f-48ef-99e8-c987a601f17a": 1,
-"8f27906e-a67b-40ed-b93e-d91db78163c6": 1
+"8f27906e-a67b-40ed-b93e-d91db78163c6": 1,
+"3f1cead8-e88b-4ad6-b1e2-6a8e934d79ea": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -4935,6 +4900,10 @@
 [
 "DAPS Advertising Ltd",
 52
+],
+[
+"Haryana Financial Corporation Ltd",
+6
 ]
 ],
 "pdfposted": {
@@ -5516,6 +5485,16 @@
 "rev": 27.59,
 "pat": 2.74,
 "t": 1794477641.6266778,
+"last": 0
+},
+"530927|Sep-26|standalone": {
+"code": "530927",
+"name": "Haryana Financial Corporation Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": -6.2,
+"t": 1794477717.6850975,
 "last": 0
 }
 },
