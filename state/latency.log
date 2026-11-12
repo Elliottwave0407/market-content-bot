@@ -1714,3 +1714,14 @@
 12 18:21:38 pdf pdf read failed Tipco Engineering India Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key
 12 18:22:31 pdf nim reader Ruby Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 
 12 18:22:31 pdf pdf read failed Ruby Mills Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 429 (s
+12 18:22:54 pdf nim reader Ruby Mills Ltd: nim deepseek-v4.1-flash: 12 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention
+12 18:22:54 pdf pdf read failed Ruby Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 12 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 9 numbers not found i
+12 18:22:54 pdf nim reader Tipco Engineering India Ltd: nim deepseek-v4.1-flash: 3 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possi
+12 18:22:54 pdf pdf read failed Tipco Engineering India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 3 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 3 number
+12 18:22:56 seen 544740 Tipco Engineering India Ltd cat=Result early=False bse_time=23:52:40 dissem=23:52:40
+12 18:23:21 wait 544740 Tipco Engineering India Ltd: numbers not yet on BSE
+12 18:23:24 pdf rule reader Yatra Online Ltd: rule: stan: does not reconcile [million] total_expenses=[1628.35, 1567.95, 2036.83] pbt=[95.27, 6224.0, 69.59] tax=[593.0, 672.0, 3138.0] pat=[94.69, 6282.0, 7134.0] depreciation=[106.71, 94.97, 81.96
+12 18:23:29 pdf rule reader Tipco Engineering India Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+12 18:23:33 pdf rule reader Tipco Engineering India Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+12 18:23:44 pdf rule reader Ruby Mills Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=4
+12 18:23:44 pdf rule reader Ruby Mills Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=4
