@@ -610,7 +610,11 @@
 "7bdcaa4e-58b8-4ffb-bb8b-6c4aa54ded78",
 "fb845dc5-7113-42b3-a4fa-6b791a3fd1b7",
 "432d4774-c2b4-4740-a97a-b32b477a4a63",
-"f93f32ae-9897-43c9-a43c-9bc0f33111aa"
+"f93f32ae-9897-43c9-a43c-9bc0f33111aa",
+"401a0567-47c1-4fb5-a30f-1686e0b550da",
+"96f073bd-c61d-44ae-85be-7bf644b0aa19",
+"bee5d7e7-e11e-45e6-b055-c518da6d7724",
+"aa3f9c1f-59e1-4fd4-8071-e7eb51580582"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4117,7 +4121,8 @@
 "532762|Sep-26|consolidated",
 "542141|Sep-26|consolidated",
 "542597|Sep-26|consolidated",
-"507880|Sep-26|consolidated"
+"507880|Sep-26|consolidated",
+"544786|Sep-26|standalone"
 ],
 "pending": {
 "3d5f2ac3-5f9c-413c-abea-33ad8b68deab": {
@@ -4421,8 +4426,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794486952.0313964,
-"last": 1794486952.0313964,
-"alerted": false
+"last": 1794489517.4116125,
+"alerted": true
 },
 "c513a124-f5a5-4280-a4fa-2401bb35eac3": {
 "rec": {
@@ -4879,11 +4884,87 @@
 "first": 1794486952.0313964,
 "last": 1794486952.0313964,
 "alerted": false
+},
+"f34dcc69-688c-4460-a08f-cf154a0c22bf": {
+"rec": {
+"NEWSID": "f34dcc69-688c-4460-a08f-cf154a0c22bf",
+"SCRIP_CD": 544037,
+"XML_NAME": "ANN_544037_F34DCC69-688C-4460-A08F-CF154A0C22BF",
+"NEWSSUB": "Amic Forging Ltd - 544037 - Financial Result For The Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-12T18:44:11.107",
+"NEWS_DT": "2026-11-12T18:44:11.107",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "0c08eec3-4e7e-4ac0-8397-00956e5df9dc.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Standalone and Consolidated Financial Result for the half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/amic-forging-ltd/amic/544037/",
+"SLONGNAME": "Amic Forging Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 28,
+"News_submission_dt": "2026-11-12T18:44:11",
+"DissemDT": "2026-11-12T18:44:11.107",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 20630655,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794489517.4116125,
+"last": 1794489517.4116125,
+"alerted": false
+},
+"10e95250-a656-4a6b-b750-64ff3e6f75a1": {
+"rec": {
+"NEWSID": "10e95250-a656-4a6b-b750-64ff3e6f75a1",
+"SCRIP_CD": 511571,
+"XML_NAME": "ANN_511571_10E95250-A656-4A6B-B750-64FF3E6F75A1",
+"NEWSSUB": "Crescentis Capital Ltd - 511571 - Financial Results For The Quarter And Half Year Ended 30Th September, 2026",
+"DT_TM": "2026-11-12T18:16:00.9",
+"NEWS_DT": "2026-11-12T18:16:00.9",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "1970a324-ba87-4a75-a0e2-1dfd515da203.pdf",
+"MORE": "",
+"HEADLINE": "The copies of Standalone Statement of Assets and Liabilities, Financial Results and Cashflows, for a period along with Limited Review Report for the Quarter and Half Year ended 30th September, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/crescentis-capital-ltd/crescentis/511571/",
+"SLONGNAME": "Crescentis Capital Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 28,
+"News_submission_dt": "2026-11-12T18:16:00",
+"DissemDT": "2026-11-12T18:16:00.9",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1558445,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794489517.4116125,
+"last": 1794489517.4116125,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 327
+"2026-11-12": 330
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4910,23 +4991,23 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 307,
+"ok": 318,
 "429": 8,
-"other": 125
+"other": 130
 },
 "vision-key": {
-"ok": 37,
+"ok": 38,
 "429": 4,
-"other": 39
+"other": 40
 },
 "concall-key": {
-"ok": 77,
+"ok": 79,
 "429": 5,
-"other": 63
+"other": 66
 },
 "main": {
-"ok": 335,
-"429": 12,
+"ok": 336,
+"429": 13,
 "other": 90
 }
 }
@@ -5183,7 +5264,9 @@
 "5eea6d7c-18b2-4548-a106-1622245834f8": 1,
 "282e14a2-2db2-40a5-94fb-56c830e6dea7": 1,
 "a94324e5-a0df-4c40-9e02-492f115215c7": 1,
-"209ddc8b-453d-4e21-9949-b69889e715e6": 1
+"209ddc8b-453d-4e21-9949-b69889e715e6": 1,
+"10e95250-a656-4a6b-b750-64ff3e6f75a1": 1,
+"aa3f9c1f-59e1-4fd4-8071-e7eb51580582": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5386,7 +5469,10 @@
 "7bdcaa4e-58b8-4ffb-bb8b-6c4aa54ded78": 1,
 "fb845dc5-7113-42b3-a4fa-6b791a3fd1b7": 1,
 "432d4774-c2b4-4740-a97a-b32b477a4a63": 1,
-"f93f32ae-9897-43c9-a43c-9bc0f33111aa": 1
+"f93f32ae-9897-43c9-a43c-9bc0f33111aa": 1,
+"401a0567-47c1-4fb5-a30f-1686e0b550da": 1,
+"bee5d7e7-e11e-45e6-b055-c518da6d7724": 1,
+"f34dcc69-688c-4460-a08f-cf154a0c22bf": 1
 },
 "lag": [
 [
@@ -7336,6 +7422,16 @@
 "pat": -305.2,
 "t": 1794489701.1052744,
 "last": 0
+},
+"544786|Sep-26|standalone": {
+"code": "544786",
+"name": "Schneider Electric President Systems Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 793.67,
+"pat": 49.49,
+"t": 1794489914.3055453,
+"last": 0
 }
 },
 "half_q": {
@@ -7576,6 +7672,20 @@
 "SLONGNAME": "Manoj Ceramic Ltd",
 "ATTACHMENTNAME": "b47a369e-8be3-490b-8189-fa260831f2ef.pdf",
 "NEWS_DT": "2026-11-12T17:48:36.763"
+},
+"bee5d7e7-e11e-45e6-b055-c518da6d7724": {
+"NEWSID": "bee5d7e7-e11e-45e6-b055-c518da6d7724",
+"SCRIP_CD": 544037,
+"SLONGNAME": "Amic Forging Ltd",
+"ATTACHMENTNAME": "fc98becc-3f5f-44fb-a953-dcf63a8ea1f9.pdf",
+"NEWS_DT": "2026-11-12T18:38:42.12"
+},
+"f34dcc69-688c-4460-a08f-cf154a0c22bf": {
+"NEWSID": "f34dcc69-688c-4460-a08f-cf154a0c22bf",
+"SCRIP_CD": 544037,
+"SLONGNAME": "Amic Forging Ltd",
+"ATTACHMENTNAME": "0c08eec3-4e7e-4ac0-8397-00956e5df9dc.pdf",
+"NEWS_DT": "2026-11-12T18:44:11.107"
 }
 },
 "audit": [
