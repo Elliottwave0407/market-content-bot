@@ -1,213 +1,3 @@
-11 10:15:48 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:43:30 dissem=15:43:30
-11 10:16:13 wait 544928 Century Business Media Ltd: numbers not yet on BSE
-11 10:20:11 pdf nim reader Jauss Polymers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
-11 10:20:11 pdf pdf read failed Jauss Polymers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible inv
-11 10:20:13 seen 534060 PMC Fincorp Ltd cat=Board Meeting early=True bse_time=15:45:56 dissem=15:45:56
-11 10:20:41 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
-11 10:21:11 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
-11 10:21:12 seen 531219 Shyama Computronics and Serv cat=Board Meeting early=True bse_time=15:50:31 dissem=15:50:31
-11 10:21:38 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-11 10:21:41 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:21:44 pdf pdf current col PMC Fincorp Ltd standalone ok=True/2: revenue=524.22, other_income=None, total_income=524.22, total_expenses=58.73, finance_costs=None, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
-11 10:21:44 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:21:44 pdf pdf unusable Century Business Media Ltd: unit/date missing
-11 10:22:10 seen 534060 PMC Fincorp Ltd cat=Result early=False bse_time=15:51:20 dissem=15:51:20
-11 10:22:32 wait 534060 PMC Fincorp Ltd: numbers not yet on BSE
-11 10:22:38 pdf nim reader Rathi Bars Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemin
-11 10:22:38 pdf pdf read failed Rathi Bars Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 10 numbers not found in the filing text (possible invent
-11 10:22:47 pdf pdf current col PMC Fincorp Ltd standalone ok=True/2: revenue=524.22, other_income=None, total_income=524.22, total_expenses=58.73, finance_costs=None, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
-11 10:22:47 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:23:17 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:24:20 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:25:15 pdf rule reader Rathi Bars Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
-11 10:25:23 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-11 10:25:30 pdf rule reader Southern Latex Ltd: rule: unit not found | ocr: rule: no results table page
-11 10:25:31 seen 534060 PMC Fincorp Ltd cat=Result early=False bse_time=15:54:44 dissem=15:54:44
-11 10:25:53 wait 534060 PMC Fincorp Ltd: numbers not yet on BSE
-11 10:26:00 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:26:04 pdf pdf current col PMC Fincorp Ltd standalone ok=True/2: revenue=524.22, other_income=None, total_income=524.22, total_expenses=58.73, finance_costs=None, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
-11 10:26:04 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:26:26 ready 534060|Sep-26|standalone kind=photo waited_min=0.0 tries=4 pdf_log=pdf current col PMC Fincorp Ltd standalone ok=True/3: revenue=524.22, other_income=0.0, total_income=524.22, total_expenses=58.73, finance_costs=87.91, deprecia
-11 10:26:39 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:26:39 pdf pdf current col PMC Fincorp Ltd standalone ok=True/3: revenue=524.22, other_income=0.0, total_income=524.22, total_expenses=58.73, finance_costs=87.91, depreciation=1.03, pbt=465.49, tax=149.43, pat=316.06, eps=0.04
-11 10:26:39 pdf pdf incomplete PMC Fincorp Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:27:08 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:27:35 seen 531219 Shyama Computronics and Serv cat=Result early=False bse_time=15:57:30 dissem=15:57:30
-11 10:28:00 wait 531219 Shyama Computronics and Serv: numbers not yet on BSE
-11 10:28:20 pdf pdf current col Shyama Computronics and Services Ltd standalone ok=True/3: revenue=7.57, other_income=3.87, total_income=7.57, total_expenses=4.27, finance_costs=None, depreciation=None, pbt=3.3, tax=0.86, pat=2.44, eps=0.02
-11 10:28:20 pdf pdf incomplete Shyama Computronics and Services Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:30:08 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
-11 10:30:08 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:30:35 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 10:30:35 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 10:30:37 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:31:12 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:31:34 seen 542232 Shankar Lal Rampal Dye-Chem  cat=Board Meeting early=True bse_time=16:00:45 dissem=16:00:45
-11 10:35:18 seen 542232 Shankar Lal Rampal Dye-Chem  cat=Result early=False bse_time=16:04:39 dissem=16:04:39
-11 10:35:39 wait 542232 Shankar Lal Rampal Dye-Chem : numbers not yet on BSE
-11 10:37:17 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-11 10:38:07 pdf nim reader Shankar Lal Rampal Dye-Chem Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (
-11 10:38:07 pdf pdf read failed Shankar Lal Rampal Dye-Chem Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConn
-11 10:38:08 seen 532284 TCFC Finance Ltd cat=Board Meeting early=True bse_time=16:07:20 dissem=16:07:20
-11 10:38:11 pdf rule reader Southern Latex Ltd: rule: unit not found | ocr: rule: no results table page
-11 10:38:11 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:38:44 ready 542232|Sep-26|standalone kind=photo waited_min=3.1 tries=2 pdf_log=pdf current col Shankar Lal Rampal Dye-Chem Ltd standalone ok=True/3: revenue=16615.02, other_income=0.05, total_income=16615.08, total_expenses=15677.43, finan
-11 10:39:00 seen 531978 Ambika Cotton Mills Ltd cat=Result early=False bse_time=16:07:55 dissem=16:07:55
-11 10:39:20 wait 531978 Ambika Cotton Mills Ltd: confirming that no consolidated statement exists
-11 10:39:27 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:39:27 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:39:27 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:39:38 pdf rule reader TCFC Finance Ltd: ok
-11 10:39:38 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:39:38 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:40:09 pdf rule reader TCFC Finance Ltd: ok
-11 10:40:09 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:40:09 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:40:52 pdf rule reader TCFC Finance Ltd: ok
-11 10:40:52 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:40:52 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:41:12 pdf nim reader Rathi Bars Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
-11 10:41:12 pdf pdf read failed Rathi Bars Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:41:18 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-11 10:41:26 pdf rule reader TCFC Finance Ltd: ok
-11 10:41:26 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:41:26 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:41:36 seen 530899 Asia Pack Ltd cat=Board Meeting early=True bse_time=16:11:11 dissem=16:11:11
-11 10:42:31 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:42:32 seen 502250 Lerthai Finance Ltd cat=Board Meeting early=True bse_time=16:11:47 dissem=16:11:47
-11 10:42:52 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:42:52 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:43:42 seen 532284 TCFC Finance Ltd cat=Result early=False bse_time=16:12:43 dissem=16:12:43
-11 10:43:46 wait 532284 TCFC Finance Ltd: numbers not yet on BSE
-11 10:44:14 pdf rule reader TCFC Finance Ltd: ok
-11 10:44:14 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:44:14 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:44:17 pdf rule reader PMC Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:45:04 pdf nim reader Southern Latex Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff
-11 10:45:04 pdf pdf read failed Southern Latex Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:45:08 ready 532918|Sep-26|na kind=photo waited_min=45.5 tries=7 pdf_log=
-11 10:45:17 ready 514454|Sep-26|na kind=photo waited_min=45.5 tries=7 pdf_log=
-11 10:45:27 seen 530899 Asia Pack Ltd cat=Result early=False bse_time=16:15:02 dissem=16:15:02
-11 10:45:51 wait 530899 Asia Pack Ltd: numbers not yet on BSE
-11 10:45:51 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:45:51 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:46:14 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
-11 10:46:14 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:46:23 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 10:46:23 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:46:48 pdf rule reader TCFC Finance Ltd: ok
-11 10:46:48 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:46:48 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:47:13 pdf nim reader Asia Pack Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: HTTP 503 on gemini-flash-lite-latest | r)
-11 10:47:13 pdf pdf read failed Asia Pack Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: parse JSONDecodeError('Expecting value: line 12 column 24 (char 384)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:49:03 seen 502250 Lerthai Finance Ltd cat=Result early=False bse_time=16:18:21 dissem=16:18:21
-11 10:49:26 wait 502250 Lerthai Finance Ltd: numbers not yet on BSE
-11 10:49:33 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-11 10:50:40 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
-11 10:50:40 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:50:52 pdf rule reader TCFC Finance Ltd: ok
-11 10:50:52 pdf pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expenses=41.61, finance_costs=None, depreciation=7.95, pbt=-231.65, tax=-62.57, pat=-169.08, eps=-1.7
-11 10:50:52 pdf pdf incomplete TCFC Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 10:51:19 pdf nim reader PMC Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
-11 10:51:19 pdf pdf read failed PMC Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:51:37 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 10:51:37 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:52:11 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: parse JSONDecodeError('Expec
-11 10:52:11 pdf pdf read failed Lerthai Finance Ltd: parse JSONDecodeError('Expecting value: line 13 column 17 (char 408)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout
-11 10:53:25 seen 511692 Ajcon Global Services Ltd cat=Board Meeting early=True bse_time=16:22:49 dissem=16:22:49
-11 10:53:40 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 10:53:40 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 10:54:13 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 10:54:13 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:54:57 ready 532284|Sep-26|standalone kind=photo waited_min=11.2 tries=6 pdf_log=rule reader TCFC Finance Ltd: ok | pdf current col TCFC Finance Ltd standalone ok=True/3: revenue=-192.03, other_income=1.99, total_income=-190.04, total_expens
-11 10:55:21 seen 539273 Pecos Hotels and Pubs Ltd cat=Board Meeting early=True bse_time=16:24:33 dissem=16:24:33
-11 10:55:21 seen 519506 NCC Bluewater Products Ltd cat=Board Meeting early=True bse_time=16:24:55 dissem=16:24:55
-11 10:56:38 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 10:56:38 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 10:57:11 seen 532774 Inspirisys Solutions Ltd cat=Board Meeting early=True bse_time=16:26:36 dissem=16:26:36
-11 10:57:56 seen 539543 Valley Magnesite Company Ltd cat=Board Meeting early=True bse_time=16:27:34 dissem=16:27:34
-11 10:58:19 ready 532774|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Inspirisys Solutions Ltd consolidated ok=True/3: revenue=11978, other_income=265, total_income=12243, total_expenses=11175, finance_costs=200, d
-11 10:58:31 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 10:58:31 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 10:58:31 pdf rule reader Valley Magnesite Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 10:59:38 pdf rule reader Valley Magnesite Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:01:29 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:01:29 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:01:31 seen 539543 Valley Magnesite Company Ltd cat=Result early=False bse_time=16:31:27 dissem=16:31:27
-11 11:01:59 wait 539543 Valley Magnesite Company Ltd: numbers not yet on BSE
-11 11:02:30 seen 511692 Ajcon Global Services Ltd cat=Result early=False bse_time=16:31:45 dissem=16:31:45
-11 11:02:53 wait 511692 Ajcon Global Services Ltd: numbers not yet on BSE
-11 11:03:27 ready 511692|Sep-26|consolidated kind=photo waited_min=0.5 tries=1 pdf_log=pdf current col Ajcon Global Services Ltd consolidated ok=True/3: revenue=538.01, other_income=34.47, total_income=572.48, total_expenses=541.64, finance_costs=
-11 11:03:40 seen 539273 Pecos Hotels and Pubs Ltd cat=Result early=False bse_time=16:32:52 dissem=16:32:52
-11 11:04:05 wait 539273 Pecos Hotels and Pubs Ltd: numbers not yet on BSE
-11 11:07:40 ready 534060|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=
-11 11:07:48 pdf pdf is a HALF-YEARLY filing (column dates ['30th September, 2026', '31st March, 2026', '30th September, 2025']): not read as quarters, queued for the half-yearly route Pecos Hotels and Pubs Ltd
-11 11:08:22 pdf rule reader Valley Magnesite Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:08:24 seen 519506 NCC Bluewater Products Ltd cat=Result early=False bse_time=16:37:46 dissem=16:37:46
-11 11:08:50 wait 519506 NCC Bluewater Products Ltd: numbers not yet on BSE
-11 11:09:27 pdf rule reader Valley Magnesite Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:09:49 pdf nim reader NCC Bluewater Products Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:09:49 pdf pdf read failed NCC Bluewater Products Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:09:52 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 11:09:52 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 11:10:17 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:10:17 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:10:55 seen 523127 EIH Associated Hotels Ltd-$ cat=Result early=False bse_time=16:39:21 dissem=16:39:21
-11 11:11:17 wait 523127 EIH Associated Hotels Ltd-$: numbers not yet on BSE
-11 11:11:44 ready 523127|Sep-26|standalone kind=photo waited_min=0.4 tries=1 pdf_log=pdf current col EIH Associated Hotels Ltd-$ standalone ok=True/3: revenue=6859.17, other_income=471.66, total_income=7330.83, total_expenses=6819.23, finance_co
-11 11:12:18 seen 523127 EIH Associated Hotels Ltd-$ cat=Board Meeting early=True bse_time=16:41:21 dissem=16:41:21
-11 11:13:13 pdf rule reader Valley Magnesite Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:13:18 ready 531219|Sep-26|na kind=photo waited_min=45.7 tries=8 pdf_log=
-11 11:13:32 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quo
-11 11:13:32 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnect
-11 11:13:58 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
-11 11:13:58 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
-11 11:14:31 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:14:31 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:15:33 seen 532774 Inspirisys Solutions Ltd cat=Result early=False bse_time=16:45:04 dissem=16:45:04
-11 11:15:55 wait 532774 Inspirisys Solutions Ltd: numbers not yet on BSE
-11 11:16:33 seen 507753 TGV Sraac Ltd cat=Result early=False bse_time=16:45:21 dissem=16:45:21
-11 11:16:33 seen 544869 Sham Foam Ltd cat=Board Meeting early=True bse_time=16:46:08 dissem=16:46:08
-11 11:16:55 wait 507753 TGV Sraac Ltd: numbers not yet on BSE
-11 11:16:56 pdf rule reader TGV Sraac Ltd: rule: stan: does not reconcile [lakh] pbt=[7685.0, 6217.0, 4989.0] pat=[-6.0, -6.0, -6.0] | ocr: rule: stan: does not reconcile [lakh] pbt=[7684.0, 6217.0, 4989.0] tax=[2231.0, 1802.0, 1259.0] pat=[5577.
-11 11:17:19 ready 507753|Sep-26|standalone kind=photo waited_min=0.4 tries=1 pdf_log=pdf current col TGV Sraac Ltd standalone ok=True/3: revenue=59047, other_income=610, total_income=59657, total_expenses=51973, finance_costs=397, depreciation=3
-11 11:17:36 seen 532989 Bafna Pharmaceuticals Ltd cat=Board Meeting early=True bse_time=16:46:43 dissem=16:46:43
-11 11:17:58 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quo
-11 11:17:58 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnect
-11 11:17:58 pdf rule reader Bafna Pharmaceuticals Ltd: rule: stan: does not reconcile [lakh] pbt=[None, None, None] pat=[684.82, 7.51, 31249.0] depreciation=[186.84, 17807.0, 14727.0] finance_costs=[102.0, 9370.0, 8643.0] | ocr: rule: no results 
-11 11:19:29 ready 532989|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Bafna Pharmaceuticals Ltd standalone ok=True/2: revenue=4766.56, other_income=113.41, total_income=4879.97, total_expenses=4195.15, finance_cost
-11 11:19:58 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' 
-11 11:19:58 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (po
-11 11:21:18 seen 501298 Industrial & Prudential Inve cat=Board Meeting early=True bse_time=16:51:03 dissem=16:51:03
-11 11:21:18 seen 539090 Rajputana Investment and Fin cat=Board Meeting early=True bse_time=16:51:10 dissem=16:51:10
-11 11:21:40 pdf nim reader Lerthai Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:21:40 pdf pdf read failed Lerthai Finance Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:21:44 pdf rule reader Industrial & Prudential Investment Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:21:49 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:21:49 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:22:41 seen 531343 India Infraspace Ltd cat=Board Meeting early=True bse_time=16:51:49 dissem=16:51:49
-11 11:23:08 pdf rule reader India Infraspace Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:23:08 pdf nim reader Industrial & Prudential Investment Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: parse JSONDecodeError("Expecting ',' del)
-11 11:23:08 pdf pdf read failed Industrial & Prudential Investment Company Ltd: parse JSONDecodeError("Expecting ',' delimiter: line 23 column 14 (char 703)"); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemo
-11 11:23:50 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:23:50 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:24:22 seen 521034 Soma Textiles & Industries L cat=Board Meeting early=True bse_time=16:54:10 dissem=16:54:10
-11 11:24:56 pdf nim reader India Infraspace Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:24:56 pdf pdf read failed India Infraspace Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:24:56 pdf nim reader Industrial & Prudential Investment Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:24:56 pdf pdf read failed Industrial & Prudential Investment Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:25:46 pdf rule reader Industrial & Prudential Investment Company Ltd: rule: no results table page | ocr: rule: no results table page
-11 11:27:23 seen 532183 Gayatri Sugars Ltd cat=Result early=False bse_time=16:56:30 dissem=16:56:30
-11 11:27:23 seen 539090 Rajputana Investment and Fin cat=Result early=False bse_time=16:56:34 dissem=16:56:34
-11 11:27:46 wait 532183 Gayatri Sugars Ltd: numbers not yet on BSE
-11 11:27:56 wait 539090 Rajputana Investment and Fin: numbers not yet on BSE
-11 11:27:56 pdf pdf incomplete Rajputana Investment and Finance Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 11:28:19 ready 532183|Sep-26|standalone kind=photo waited_min=0.6 tries=1 pdf_log=pdf current col Gayatri Sugars Ltd standalone ok=True/2: revenue=1595.98, other_income=0.09, total_income=1596.07, total_expenses=3964.15, finance_costs=776.35,
-11 11:28:30 pdf nim reader Valley Magnesite Company Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
-11 11:28:30 pdf pdf read failed Valley Magnesite Company Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
-11 11:29:04 pdf pdf current col Industrial & Prudential Investment Company Ltd consolidated ok=False/2: revenue=328.83, other_income=None, total_income=328.83, total_expenses=24.89, finance_costs=None, depreciation=None, pbt=1536.6, tax=6.15, pat
-11 11:29:04 pdf pdf checks failed Industrial & Prudential Investment Company Ltd consolidated
 11 11:29:04 pdf pdf has consolidated but it failed checks: not falling back to standalone Industrial & Prudential Investment Company Ltd
 11 11:29:27 seen 511194 ICDS Ltd cat=Result early=False bse_time=16:58:58 dissem=16:58:58
 11 11:30:33 pdf rule reader India Infraspace Ltd: rule: no results table page | ocr: rule: no results table page
@@ -1700,3 +1490,23 @@
 12 11:44:12 ready 540066|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Inani Marbles & Industries Ltd standalone ok=True/2: revenue=1099.1, other_income=34.13, total_income=1133.23, total_expenses=1249.49, finance_c
 12 11:44:19 ready 531413|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col AMS Polymers Ltd standalone ok=True/3: revenue=3301.04, other_income=-1.33, total_income=3299.71, total_expenses=3259.67, finance_costs=23.96, d
 12 11:44:58 ready 522171|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Sri Amarnath Finance Ltd standalone ok=True/3: revenue=155.46, other_income=12.53, total_income=167.99, total_expenses=52.07, finance_costs=12.6
+12 11:46:59 pdf rule reader Inani Marbles & Industries Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
+12 11:46:59 pdf pdf current col Inani Marbles & Industries Ltd standalone ok=True/2: revenue=1099.1, other_income=34.13, total_income=1133.23, total_expenses=1249.49, finance_costs=43.95, depreciation=65.03, pbt=-116.26, tax=None, pat=-116.26, ep
+12 11:46:59 pdf rule reader AMS Polymers Ltd: rule: no results table page | ocr: rule: no results table page
+12 11:46:59 pdf pdf current col AMS Polymers Ltd standalone ok=True/3: revenue=3301.04, other_income=-1.33, total_income=3299.71, total_expenses=3259.67, finance_costs=23.96, depreciation=None, pbt=40.04, tax=2.67, pat=37.37, eps=1.13
+12 11:46:59 pdf rule reader Kiran Print Pack Ltd: ok
+12 11:46:59 pdf pdf current col Kiran Print Pack Ltd standalone ok=True/3: revenue=20.26, other_income=15.7, total_income=35.96, total_expenses=32.55, finance_costs=None, depreciation=None, pbt=3.41, tax=0.0, pat=3.41, eps=0.07
+12 11:46:59 pdf rule reader Kiran Print Pack Ltd: ok
+12 11:46:59 pdf pdf current col Kiran Print Pack Ltd standalone ok=True/3: revenue=20.26, other_income=15.7, total_income=35.96, total_expenses=32.55, finance_costs=None, depreciation=None, pbt=3.41, tax=0.0, pat=3.41, eps=0.07
+12 11:46:59 pdf rule reader BKV Industries Ltd: rule: stan: missing ['pat'] n=5
+12 11:46:59 pdf pdf current col BKV Industries Ltd standalone ok=True/2: revenue=19.93, other_income=0.58, total_income=20.51, total_expenses=30.09, finance_costs=None, depreciation=0.09, pbt=-9.58, tax=None, pat=-9.58, eps=-0.06
+12 11:46:59 pdf rule reader Sri Amarnath Finance Ltd: rule: no results table page | ocr: rule: no results table page
+12 11:46:59 pdf pdf current col Sri Amarnath Finance Ltd standalone ok=True/3: revenue=155.46, other_income=12.53, total_income=167.99, total_expenses=52.07, finance_costs=12.68, depreciation=1.35, pbt=115.92, tax=26.98, pat=88.94, eps=0.89
+12 11:46:59 pdf rule reader TMT India Ltd: rule: stan: missing ['pat'] n=6
+12 11:46:59 pdf pdf current col TMT India Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=8.79, finance_costs=0.0, depreciation=0.0, pbt=-8.79, tax=0.0, pat=-8.79, eps=-0.18
+12 11:46:59 pdf rule reader Gold Rock Investments Ltd: rule: stan: half-year column is not quarter + previous quarter; stan: does not reconcile [lakh] total_income=[103.73, 27024.0, 14425.0] total_expenses=[49.63, 9195.0, 38.04] pbt=[54.1, 178.29
+12 11:46:59 pdf pdf current col Gold Rock Investments Ltd standalone ok=True/2: revenue=103.67, other_income=0.06, total_income=103.73, total_expenses=49.63, finance_costs=0.9, depreciation=4.92, pbt=54.1, tax=None, pat=54.1, eps=6.89
+12 11:46:59 pdf rule reader JBF Industries Ltd: rule: stan: no revenue row
+12 11:46:59 pdf nim reader JBF Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 11:46:59 pdf pdf current col JBF Industries Ltd standalone ok=False/3: revenue=0, other_income=4, total_income=4, total_expenses=7, finance_costs=60, depreciation=0, pbt=-79, tax=0, pat=-74, eps=-0.08
+12 11:46:59 pdf pdf checks failed JBF Industries Ltd standalone
