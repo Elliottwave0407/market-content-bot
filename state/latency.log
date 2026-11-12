@@ -1689,3 +1689,24 @@
 12 10:43:24 pdf pdf current col Jindal Leasefin Ltd standalone ok=True/3: revenue=0.01, other_income=0.0, total_income=0.01, total_expenses=1.75, finance_costs=0.01, depreciation=0.0, pbt=-1.74, tax=0.0, pat=-1.74, eps=-0.06
 12 10:43:24 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/2: revenue=528.21, other_income=None, total_income=528.21, total_expenses=508.23, finance_costs=None, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0
 12 10:43:24 pdf pdf incomplete Venmax Drugs and Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:44:13 pdf rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:44:13 pdf rule reader Satyam Silk Mills Ltd: rule: column dates not found | ocr: rule: no results table page
+12 10:44:13 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/2: revenue=528.21, other_income=None, total_income=528.21, total_expenses=508.23, finance_costs=None, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0
+12 10:44:13 pdf pdf incomplete Venmax Drugs and Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:44:13 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:44:13 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:44:35 pdf rule reader Arur Footwear Ltd: ok
+12 10:44:35 pdf rule reader Garment Mantra Lifestyle Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:44:35 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:44:35 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:45:12 pdf rule reader Venmax Drugs and Pharmaceuticals Ltd: rule: stan: missing ['pat'] n=6
+12 10:45:13 seen 531147 Alicon Castalloy Ltd cat=Board Meeting early=True bse_time=16:14:02 dissem=16:14:02
+12 10:45:19 ready 519174|Sep-26|standalone kind=photo waited_min=8.8 tries=5 pdf_log=rule reader Ashiana Agro Industries Ltd: ok | nim reader Jindal Leasefin Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col Ashiana Agro Industr
+12 10:45:30 pdf rule reader Arur Footwear Ltd: ok
+12 10:45:30 pdf rule reader Ashiana Agro Industries Ltd: ok
+12 10:45:30 pdf nim reader Jindal Leasefin Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:45:30 pdf pdf current col Ashiana Agro Industries Ltd standalone ok=True/3: revenue=6.76, other_income=1.88, total_income=8.64, total_expenses=11.63, finance_costs=None, depreciation=None, pbt=-2.99, tax=0.0, pat=-2.99, eps=-0.07
+12 10:45:30 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+12 10:45:30 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
+12 10:45:30 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:45:30 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
