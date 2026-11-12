@@ -333,7 +333,13 @@
 "f43be912-0808-401f-8c96-84c1c0f795fc",
 "674bb1e4-db2e-4dcd-b3b0-62032b6116f1",
 "afce2dae-fd3b-407f-aad8-1916095acbf4",
-"0f9da2af-d8cc-4cc6-a149-cacae8f0a515"
+"0f9da2af-d8cc-4cc6-a149-cacae8f0a515",
+"d450a4fd-b7fe-45d2-83a0-01f21499cbd0",
+"a815958b-0d85-44cb-aa44-f9d650d8ba8a",
+"dc59e1a2-6312-4a1b-8a52-91f4080f0a6a",
+"fc427e6a-b952-479c-9ab5-a58b1c66032f",
+"808fdd01-c838-44c3-843b-3b9cfd432296",
+"c81d5864-34b6-41b4-8d6d-98e8b43c0890"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3657,7 +3663,9 @@
 "524790|Sep-26|standalone",
 "544105|Sep-26|na",
 "542628|Sep-26|standalone",
-"531867|Sep-26|na"
+"531867|Sep-26|na",
+"511525|Sep-26|standalone",
+"531944|Sep-26|standalone"
 ],
 "pending": {
 "ed901044-0a52-44a8-a8d7-3f371113d43e": {
@@ -3695,7 +3703,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794471215.3076692,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": true
 },
 "fbb24f62-244f-481d-a65d-e310125834bb": {
@@ -3733,7 +3741,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472192.8407984,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": false
 },
 "c9f5a0f9-7a30-425b-9a36-9558c64df291": {
@@ -3771,7 +3779,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472192.8407984,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": false
 },
 "ecc0a76e-25ad-4347-8763-8bee615feb50": {
@@ -3809,7 +3817,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472962.6887884,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": false
 },
 "d6044d25-8a09-4f27-acb3-25273625bd2c": {
@@ -3847,7 +3855,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794472962.6887884,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": false
 },
 "e25fa901-18ed-45b8-87ec-8ba478cd03fd": {
@@ -3885,7 +3893,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794473077.0715437,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
 "alerted": false
 },
 "43b32679-162a-41fc-95ed-82d80e338e94": {
@@ -3923,13 +3931,51 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794473251.48427,
-"last": 1794473251.48427,
+"last": 1794473399.467085,
+"alerted": false
+},
+"1a511445-2e0d-48da-8020-c623f097a75f": {
+"rec": {
+"NEWSID": "1a511445-2e0d-48da-8020-c623f097a75f",
+"SCRIP_CD": 530163,
+"XML_NAME": "ANN_530163_1A511445-2E0D-48DA-8020-C623F097A75F",
+"NEWSSUB": "Kerala Ayurveda Ltd - 530163 - Results - Financial Results  Q2 2026-27",
+"DT_TM": "2026-11-12T14:17:16.8",
+"NEWS_DT": "2026-11-12T14:17:16.8",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "77c6d8ae-b600-43d3-8fef-a8c8b2087d90.pdf",
+"MORE": "",
+"HEADLINE": "Results - Financials Results A2 2026-27",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/kerala-ayurveda-ltd/keralayur/530163/",
+"SLONGNAME": "Kerala Ayurveda Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 9,
+"News_submission_dt": "2026-11-12T14:17:16",
+"DissemDT": "2026-11-12T14:17:16.8",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 9179781,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794473399.467085,
+"last": 1794473399.467085,
 "alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 54
+"2026-11-12": 58
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -3956,9 +4002,9 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 48,
+"ok": 49,
 "429": 0,
-"other": 8
+"other": 9
 },
 "vision-key": {
 "ok": 3,
@@ -3971,9 +4017,9 @@
 "other": 4
 },
 "main": {
-"ok": 47,
+"ok": 51,
 "429": 0,
-"other": 13
+"other": 14
 }
 }
 },
@@ -4094,7 +4140,9 @@
 "4f3954b6-2034-43c9-922e-ef89c41c90ce": 1,
 "d6044d25-8a09-4f27-acb3-25273625bd2c": 1,
 "6112cf44-d385-40ba-8575-36849301dd14": 1,
-"afce2dae-fd3b-407f-aad8-1916095acbf4": 1
+"afce2dae-fd3b-407f-aad8-1916095acbf4": 1,
+"e25fa901-18ed-45b8-87ec-8ba478cd03fd": 1,
+"808fdd01-c838-44c3-843b-3b9cfd432296": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -4620,7 +4668,7 @@
 "rev": 53.801,
 "pat": 2.3480000000000003,
 "t": 1794395007.6664205,
-"last": 1794473030.73294
+"last": 1794473531.6862576
 },
 "543914|Sep-26|consolidated": {
 "code": "543914",
@@ -4630,7 +4678,7 @@
 "rev": 51.666,
 "pat": 30.777,
 "t": 1794400715.579488,
-"last": 1794473030.73294
+"last": 1794473531.6862576
 },
 "523323|Sep-26|consolidated": {
 "code": "523323",
@@ -4640,7 +4688,7 @@
 "rev": 4726.345,
 "pat": 769.6610000000001,
 "t": 1794401082.5731788,
-"last": 1794473030.73294
+"last": 1794473531.6862576
 },
 "530235|Sep-26|consolidated": {
 "code": "530235",
@@ -4650,7 +4698,7 @@
 "rev": 113.378,
 "pat": 75.229,
 "t": 1794403450.8538666,
-"last": 1794473030.73294
+"last": 1794473531.6862576
 },
 "531769|Sep-26|standalone": {
 "code": "531769",
@@ -5010,6 +5058,26 @@
 "rev": 6384.113,
 "pat": 107.08800000000002,
 "t": 1794473279.509907,
+"last": 0
+},
+"511525|Sep-26|standalone": {
+"code": "511525",
+"name": "Pan India Corporation Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": -2.5860000000000003,
+"t": 1794473436.116422,
+"last": 0
+},
+"531944|Sep-26|standalone": {
+"code": "531944",
+"name": "Lexoraa Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 365.541,
+"pat": 0.894,
+"t": 1794473453.5489156,
 "last": 0
 }
 },
