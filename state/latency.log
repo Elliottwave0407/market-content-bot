@@ -1532,3 +1532,13 @@
 12 08:41:55 ready 543449|Sep-26|consolidated kind=photo waited_min=0.8 tries=1 pdf_log=
 12 08:42:03 ready 513353|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Cochin Minerals & Rutiles Ltd-$ standalone ok=True/2: revenue=12905.91, other_income=357.86, total_income=13263.77, total_expenses=11524.51, fin
 12 08:42:16 ready 530163|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
+12 08:42:42 seen 531594 Incon Engineers Ltd cat=Result early=False bse_time=14:11:17 dissem=14:11:17
+12 08:42:42 seen 504392 Krishna Ventures Ltd cat=Result early=False bse_time=14:11:32 dissem=14:11:32
+12 08:43:08 wait 504392 Krishna Ventures Ltd: numbers not yet on BSE
+12 08:43:08 ready 538777|Sep-26|na kind=photo waited_min=46.3 tries=8 pdf_log=pdf read failed Incon Engineers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-
+12 08:43:16 wait 531594 Incon Engineers Ltd: numbers not yet on BSE
+12 08:43:18 pdf rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4
+12 08:43:18 pdf nim reader Incon Engineers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: 
+12 08:43:18 pdf pdf read failed Incon Engineers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible in
+12 08:43:18 pdf rule reader Krishna Ventures Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+12 08:43:18 pdf pdf unusable Wonder Electricals Ltd: unit/date missing
