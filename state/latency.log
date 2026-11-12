@@ -1597,3 +1597,20 @@
 12 10:33:56 pdf rule reader GTN Industries Ltd: rule: stan: does not reconcile [lakh] total_income=[315.0, None, 150.0] total_expenses=[506.0, 93.0, 196.0] exceptional=[-658.0, 0.0, 0.0] pbt=[-183.0, -7.0, -174.0] tax=[1.0, -6.0, -131.0] pat=[-18
 12 10:34:19 pdf rule reader Venmax Drugs and Pharmaceuticals Ltd: rule: stan: missing ['pat'] n=6
 12 10:34:31 seen 519415 KMG Milk Food Ltd cat=Board Meeting early=True bse_time=16:03:27 dissem=16:03:27
+12 10:36:23 seen 539947 Jindal Leasefin Ltd cat=Result early=False bse_time=16:03:43 dissem=16:03:43
+12 10:36:23 seen 544225 Ola Electric Mobility Ltd cat=Board Meeting early=True bse_time=16:04:32 dissem=16:04:32
+12 10:36:23 seen 519174 Ashiana Agro Industries Ltd cat=Result early=False bse_time=16:04:39 dissem=16:04:39
+12 10:36:52 ready 519415|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page | pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] ar
+12 10:37:01 wait 539947 Jindal Leasefin Ltd: numbers not yet on BSE
+12 10:37:03 ready 531015|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf current col KMG Milk Food Ltd standalone ok=True/3: revenue=24.0, other_income=0.18, total_income=24.18, total_expenses=24.5, finance_costs=10.93, depreciat
+12 10:37:12 wait 519174 Ashiana Agro Industries Ltd: numbers not yet on BSE
+12 10:37:15 pdf nim reader Easy Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 10:37:15 pdf pdf read failed Easy Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible inven
+12 10:37:15 pdf rule reader Ashiana Agro Industries Ltd: ok
+12 10:37:15 pdf rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:37:15 pdf pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] are not a quarterly layout: not used GTN Industries Ltd
+12 10:37:15 pdf pdf current col KMG Milk Food Ltd standalone ok=True/3: revenue=24.0, other_income=0.18, total_income=24.18, total_expenses=24.5, finance_costs=10.93, depreciation=0.0, pbt=-0.32, tax=0.0, pat=-0.32, eps=0.0
+12 10:37:15 pdf strong model retry did not help: None
+12 10:37:15 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/3: revenue=528.21, other_income=0.0, total_income=528.21, total_expenses=508.23, finance_costs=0.0, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0.0
+12 10:37:15 pdf pdf current col Ashiana Agro Industries Ltd standalone ok=True/3: revenue=6.76, other_income=1.88, total_income=8.64, total_expenses=11.63, finance_costs=None, depreciation=None, pbt=-2.99, tax=0.0, pat=-2.99, eps=-0.07
+12 10:37:15 pdf pdf incomplete Ashiana Agro Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
