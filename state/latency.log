@@ -1647,3 +1647,7 @@
 12 12:32:12 wait 506520 Jayshree Chemicals Ltd: confirming that no consolidated statement exists
 12 12:32:48 ready 506520|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Jayshree Chemicals Ltd standalone ok=False/2: revenue=807.88, other_income=22.73, total_income=830.61, total_expenses=815.6, finance_costs=2.82,
 12 12:33:26 wait 531613 Meyer Apparel Ltd: numbers not yet on BSE
+12 12:35:19 wait 530035 Santosh Fine Fab Ltd: numbers not yet on BSE
+12 12:35:30 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+12 12:35:30 pdf nim reader Santosh Fine Fab Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini:
+12 12:35:30 pdf pdf read failed Santosh Fine Fab Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: parse JSONDecodeError('Expecting value: line 38 column 7 (char 559)'); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPS
