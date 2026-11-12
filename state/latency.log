@@ -1527,3 +1527,8 @@
 12 17:31:01 ready 537069|Sep-26|na kind=photo waited_min=126.1 tries=8 pdf_log=rule reader Sham Foam Ltd: rule: no results table page | ocr: rule: no results table page | rule reader S.K. Offset Ltd: rule: no results table page | ocr: rule
 12 17:31:10 ready 544400|Sep-26|na kind=photo waited_min=178.7 tries=8 pdf_log=rule reader S.K. Offset Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Laser Power & Infra Ltd: rule: no results table page |
 12 17:31:20 pdf nim reader S.K. Offset Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-latest, q)
+12 17:32:36 ready 544822|Sep-26|consolidated kind=photo waited_min=42.7 tries=2 pdf_log=
+12 17:33:01 pdf pdf current col Sham Foam Ltd standalone ok=True/3: revenue=5733.56, other_income=26.12, total_income=5759.68, total_expenses=5014.64, finance_costs=15.14, depreciation=34.83, pbt=745.04, tax=129.23, pat=615.81, eps=5.36
+12 17:33:01 pdf pdf incomplete Sham Foam Ltd standalone: missing ['pat', 'revenue'] - not posting from PDF
+12 17:33:01 pdf pdf current col S.K. Offset Ltd standalone ok=True/3: revenue=2158.27, other_income=18.07, total_income=2176.34, total_expenses=1705.81, finance_costs=171.43, depreciation=146.73, pbt=470.53, tax=162.55, pat=307.97, eps=None
+12 17:33:01 pdf pdf incomplete S.K. Offset Ltd standalone: missing ['pat', 'revenue'] - not posting from PDF
