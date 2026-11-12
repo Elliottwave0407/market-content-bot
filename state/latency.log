@@ -1613,3 +1613,19 @@
 12 08:58:03 seen 538716 Aryaman Capital Markets Ltd cat=Board Meeting early=True bse_time=14:27:17 dissem=14:27:17
 12 08:58:41 ready 544994|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=rule reader Sumedha Fiscal Services Ltd: rule: consolidated table does not reconcile [lakh] total_income=[2639.15, 2243.41, 3329.13] total_expenses=[2670.1, 181
 12 08:59:11 seen 532019 LCC Infotech Ltd cat=Board Meeting early=True bse_time=14:28:48 dissem=14:28:48
+12 09:00:02 pdf rule reader SGN Telecoms Ltd: rule: no results table page | ocr: rule: no results table page
+12 09:00:02 pdf nim reader Incon Engineers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
+12 09:00:02 pdf pdf read failed Incon Engineers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+12 09:00:02 pdf nim reader Pan India Corporation Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
+12 09:00:02 pdf pdf read failed Pan India Corporation Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
+12 09:00:02 pdf rule reader Lexoraa Industries Ltd: rule: consolidated table does not reconcile [lakh] total_income=[3655.41, 1113.47, 278.79] total_expenses=[3646.46, 1141.25, 288.86] pbt=[None, None, None] tax=[0.0, 0.0, 0.0] pat=[8.94, -27.78,
+12 09:00:37 pdf rule reader Pan India Corporation Ltd: rule: stan: no revenue row
+12 09:00:37 pdf nim reader Aryaman Capital Markets Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503 (gemini: gemini skipped (quota/backoff))
+12 09:00:37 pdf pdf read failed Aryaman Capital Markets Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: HTTP 503
+12 09:00:37 pdf nim reader SGN Telecoms Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backoff))
+12 09:00:37 pdf pdf read failed SGN Telecoms Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
+12 09:00:49 seen 502937 Kesoram Industries Ltd cat=Board Meeting early=True bse_time=14:29:15 dissem=14:29:15
+12 09:00:49 seen 532827 Page Industries Ltd cat=Result early=False bse_time=14:29:45 dissem=14:29:45
+12 09:00:49 seen 542013 Dolfin Rubbers Ltd cat=Result early=False bse_time=14:29:46 dissem=14:29:46
+12 09:01:13 wait 532827 Page Industries Ltd: numbers not yet on BSE
+12 09:01:14 wait 542013 Dolfin Rubbers Ltd: numbers not yet on BSE
