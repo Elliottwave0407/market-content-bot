@@ -1637,3 +1637,24 @@
 12 10:39:15 pdf pdf incomplete Ashiana Agro Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
 12 10:39:15 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
 12 10:39:15 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:40:47 pdf rule reader Easy Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:40:47 pdf strong model retry did not help: None
+12 10:40:47 pdf pdf current col Oil India Ltd consolidated ok=False/3: revenue=11914.8, other_income=388.91, total_income=12303.71, total_expenses=9056.57, finance_costs=350.99, depreciation=767.7, pbt=3433.99, tax=913.12, pat=2520.87, eps=14.19
+12 10:40:47 pdf rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:40:47 pdf nim reader GTN Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:40:47 pdf pdf current col NCL Industries Ltd-$ consolidated ok=False/3: revenue=38591.94, other_income=477.44, total_income=39069.39, total_expenses=36892.32, finance_costs=522.6, depreciation=1496.84, pbt=2663.36, tax=667.26, pat=1996.1, e
+12 10:40:47 pdf pdf checks failed NCL Industries Ltd-$ consolidated
+12 10:40:47 pdf pdf has consolidated but it failed checks: not falling back to standalone NCL Industries Ltd-$
+12 10:40:47 pdf pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] are not a quarterly layout: not used GTN Industries Ltd
+12 10:40:47 pdf pdf current col Jindal Leasefin Ltd standalone ok=True/1: revenue=0.01, other_income=None, total_income=0.01, total_expenses=1.75, finance_costs=0.01, depreciation=0.0, pbt=-1.74, tax=None, pat=-1.74, eps=-0.06
+12 10:40:47 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:40:47 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:40:49 seen 539112 SAB Industries Ltd cat=Result early=False bse_time=16:08:39 dissem=16:08:39
+12 10:40:49 seen 503893 Satyam Silk Mills Ltd cat=Board Meeting early=True bse_time=16:09:04 dissem=16:09:04
+12 10:40:49 seen 519415 KMG Milk Food Ltd cat=Result early=False bse_time=16:09:34 dissem=16:09:34
+12 10:40:49 seen 537573 Polymac Thermoformers Ltd cat=Board Meeting early=True bse_time=16:09:58 dissem=16:09:58
+12 10:40:49 seen 519397 Sharat Industries Ltd cat=Board Meeting early=True bse_time=16:10:05 dissem=16:10:05
+12 10:41:14 wait 539112 SAB Industries Ltd: numbers not yet on BSE
+12 10:41:15 ready 500170|Sep-26|na kind=photo waited_min=45.7 tries=6 pdf_log=nim reader Easy Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found i
+12 10:41:23 wait 519415 KMG Milk Food Ltd: numbers not yet on BSE
+12 10:41:24 ready 511074|Sep-26|na kind=photo waited_min=45.7 tries=7 pdf_log=rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page | nim reader Garment Mantra Lifestyle Ltd: ok (gemini: HTTP 503 
