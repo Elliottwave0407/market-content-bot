@@ -1576,3 +1576,13 @@
 12 10:29:34 seen 539216 Garment Mantra Lifestyle Ltd cat=Board Meeting early=True bse_time=15:58:12 dissem=15:58:12
 12 10:29:34 seen 539353 Sal Automotive Ltd cat=Board Meeting early=True bse_time=15:58:42 dissem=15:58:42
 12 10:29:59 pdf rule reader Sal Automotive Ltd: rule: stan: missing ['pat'] n=6
+12 10:30:28 pdf rule reader Easy Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:30:42 seen 539112 SAB Industries Ltd cat=Board Meeting early=True bse_time=15:59:55 dissem=15:59:55
+12 10:30:56 pdf nim reader GTN Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:30:56 pdf pdf column dates ['2026-09-30', '2026-06-30', '2025-09-30'] are not a quarterly layout: not used GTN Industries Ltd
+12 10:31:26 ready 514324|Sep-26|na kind=photo waited_min=45.3 tries=8 pdf_log=strong model retry did not help: None
+12 10:31:31 ready 544943|Sep-26|na kind=photo waited_min=45.3 tries=99 pdf_log=strong model retry did not help: None
+12 10:31:38 ready 544052|Sep-26|na kind=photo waited_min=45.3 tries=99 pdf_log=strong model retry did not help: None | nim reader Easy Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-
+12 10:31:47 pdf strong model retry did not help: None
+12 10:31:47 pdf nim reader Easy Fincorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 10:31:47 pdf pdf read failed Easy Fincorp Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible inven
