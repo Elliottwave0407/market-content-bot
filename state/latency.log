@@ -1,189 +1,3 @@
-10 08:07:13 seen 532344 Madala Holdings Ltd cat=Result early=False bse_time=13:36:36 dissem=13:36:36
-10 08:07:31 ready 532344|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Madala Holdings Ltd consolidated ok=True/3: revenue=383.85, other_income=-430.8, total_income=-46.95, total_expenses=652.88, finance_costs=8.26,
-10 08:09:56 seen 504036 Hirect Ltd cat=Result early=False bse_time=13:39:32 dissem=13:39:32
-10 08:10:17 wait 504036 Hirect Ltd: numbers not yet on BSE
-10 08:10:37 pdf rule reader Hirect Ltd: rule: no results table page | ocr: rule: no results table page
-10 08:19:30 ready 500439|Sep-26|na kind=photo waited_min=45.0 tries=8 pdf_log=
-10 08:21:10 seen 533168 Rossell India Ltd cat=Board Meeting early=True bse_time=13:50:55 dissem=13:50:55
-10 08:21:30 pdf rule reader Rossell India Ltd: rule: no results table page | ocr: rule: no results table page
-10 08:21:40 ready 533168|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Rossell India Ltd standalone ok=True/3: revenue=9157, other_income=88, total_income=9245, total_expenses=5452, finance_costs=142, depreciation=1
-10 08:32:18 seen 533168 Rossell India Ltd cat=Result early=False bse_time=14:02:00 dissem=14:02:00
-10 08:32:38 pdf rule reader Rossell India Ltd: rule: no results table page | ocr: rule: no results table page
-10 08:32:38 pdf pdf current col Rossell India Ltd standalone ok=True/3: revenue=9157, other_income=88, total_income=9245, total_expenses=5452, finance_costs=142, depreciation=152, pbt=3499, tax=771, pat=2728, eps=7.24
-10 09:01:03 seen 540678 Cochin Shipyard Ltd cat=Board Meeting early=True bse_time=14:30:07 dissem=14:30:07
-10 09:01:27 pdf rule reader Cochin Shipyard Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6
-10 09:01:48 pdf pdf current col Cochin Shipyard Ltd consolidated ok=True/3: revenue=124919.09, other_income=8262.08, total_income=133181.17, total_expenses=125671.58, finance_costs=2651.59, depreciation=3195.07, pbt=7508.0, tax=2130.92, pat=5377.
-10 09:08:43 seen 540678 Cochin Shipyard Ltd cat=Result early=False bse_time=14:38:24 dissem=14:38:24
-10 09:09:04 wait 540678 Cochin Shipyard Ltd: numbers not yet on BSE
-10 09:09:08 pdf rule reader Cochin Shipyard Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6
-10 09:10:12 pdf pdf current col Cochin Shipyard Ltd consolidated ok=True/3: revenue=124919.09, other_income=8262.08, total_income=133181.17, total_expenses=125671.58, finance_costs=2651.59, depreciation=3195.07, pbt=7508.0, tax=2130.92, pat=5377.
-10 10:05:16 seen 544928 Century Business Media Ltd cat=Board Meeting early=True bse_time=15:34:25 dissem=15:34:25
-10 10:06:02 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:06:05 pdf pdf unusable Century Business Media Ltd: unit/date missing
-10 10:06:55 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:07:06 pdf pdf unusable Century Business Media Ltd: unit/date missing
-10 10:09:24 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:09:24 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:10:11 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:11:35 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:11:35 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:12:05 seen 531989 Deccan Polypacks Ltd cat=Board Meeting early=True bse_time=15:41:08 dissem=15:41:08
-10 10:12:25 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:12:25 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:12:55 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:13:25 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:14:46 pdf nim reader Deccan Polypacks Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:14:46 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:14:46 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:15:10 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:15:10 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:16:41 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:16:41 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:16:42 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:46:04 dissem=15:46:04
-10 10:16:42 seen 540704 Matrimony.com Ltd cat=Board Meeting early=True bse_time=15:46:15 dissem=15:46:15
-10 10:17:05 ready 540704|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
-10 10:17:14 wait 544928 Century Business Media Ltd: numbers not yet on BSE
-10 10:17:14 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:17:36 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:18:30 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:18:30 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:19:16 pdf pdf unusable Century Business Media Ltd: unit/date missing
-10 10:20:15 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:20:15 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:20:36 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:20:36 pdf pdf unusable Century Business Media Ltd: unit/date missing
-10 10:20:37 seen 531989 Deccan Polypacks Ltd cat=Result early=False bse_time=15:50:15 dissem=15:50:15
-10 10:21:00 wait 531989 Deccan Polypacks Ltd: numbers not yet on BSE
-10 10:21:08 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:21:08 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 12 numbers not found in the filing text (pos
-10 10:21:23 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:22:03 ready 531989|Sep-26|standalone kind=photo waited_min=0.0 tries=7 pdf_log=pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pb
-10 10:22:56 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:22:56 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:22:56 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:23:56 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:23:56 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:25:06 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:25:06 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:25:45 pdf nim reader Deccan Polypacks Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:25:48 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:25:48 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:26:14 pdf rule reader Deccan Polypacks Ltd: rule: no results table page | ocr: rule: no results table page
-10 10:27:30 pdf nim reader Deccan Polypacks Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:27:32 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:27:32 pdf pdf incomplete Deccan Polypacks Ltd standalone: missing ['ebitda'] - not posting from PDF
-10 10:27:46 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:31:33 pdf nim reader Deccan Polypacks Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:31:36 pdf pdf current col Deccan Polypacks Ltd standalone ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=3.93, finance_costs=0.0, depreciation=0, pbt=-3.93, tax=0, pat=-3.93, eps=-0.19
-10 10:31:47 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:33:08 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:33:08 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:35:27 seen 532636 IIFL Finance Ltd cat=Board Meeting early=True bse_time=16:05:04 dissem=16:05:04
-10 10:37:14 pdf nim reader Century Business Media Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-10 10:37:14 pdf pdf read failed Century Business Media Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not found in the filing text (pos
-10 10:39:51 pdf rule reader Century Business Media Ltd: rule: no results table page | ocr: rule: header has no quarter columns
-10 10:39:54 seen 526441 Vision Cinemas Ltd cat=Board Meeting early=True bse_time=16:09:49 dissem=16:09:49
-10 10:40:15 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 10:40:48 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 10:41:19 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 10:42:51 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:43:14 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 10:43:14 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 10:43:39 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 10:45:17 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:45:38 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 10:45:38 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 10:47:27 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:47:49 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 10:47:49 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 10:49:37 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:49:59 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 10:49:59 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 10:50:23 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 10:51:46 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:52:07 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 10:52:07 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 10:53:55 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 10:59:08 seen 544361 Covance Softsol Ltd cat=Board Meeting early=True bse_time=16:28:16 dissem=16:28:16
-10 10:59:08 seen 526441 Vision Cinemas Ltd cat=Result early=False bse_time=16:28:45 dissem=16:28:45
-10 10:59:36 ready 544361|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-10 10:59:48 wait 526441 Vision Cinemas Ltd: numbers not yet on BSE
-10 11:00:13 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:01:44 ready 544928|Sep-26|na kind=photo waited_min=45.0 tries=8 pdf_log=
-10 11:02:57 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 11:03:16 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 11:03:16 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 11:03:38 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:03:42 seen 544361 Covance Softsol Ltd cat=Result early=False bse_time=16:32:48 dissem=16:32:48
-10 11:04:04 wait 544361 Covance Softsol Ltd: numbers not yet on BSE
-10 11:05:38 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 11:05:38 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 11:07:39 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:09:09 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 11:09:31 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 11:09:31 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 11:11:44 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:13:32 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 11:13:32 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 11:15:44 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:17:07 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 11:17:09 seen 533163 ARSS Infrastructure Projects cat=Result early=False bse_time=16:46:33 dissem=16:46:33
-10 11:17:09 seen 544293 Suraksha Diagnostic Ltd cat=Board Meeting early=True bse_time=16:46:36 dissem=16:46:36
-10 11:17:49 wait 533163 ARSS Infrastructure Projects: numbers not yet on BSE
-10 11:19:44 pdf rule reader Vision Cinemas Ltd: rule: stan: does not reconcile [lakh] total_income=[None, None, 51.52] total_expenses=[13.97, 11.21, 45.15] exceptional=[0.0, 0.0, 0.0] pbt=[-13.97, -11.21, 6.36] pat=[-13.97, -11.21, 6.36] deprecia
-10 11:20:14 pdf strong model fixed a failed read
-10 11:20:14 pdf pdf current col ARSS Infrastructure Projects Ltd consolidated ok=True/3: revenue=2310.91, other_income=76.14, total_income=2390.46, total_expenses=3288.33, finance_costs=577.02, depreciation=29.64, pbt=-896.47, tax=-89.62, pat=-80
-10 11:20:14 pdf pdf incomplete ARSS Infrastructure Projects Ltd consolidated: missing ['ebitda'] - not posting from PDF
-10 11:20:39 seen 531651 National General Industries  cat=Board Meeting early=True bse_time=16:50:32 dissem=16:50:32
-10 11:21:09 pdf nim reader Vision Cinemas Ltd: ok (gemini: gemini skipped (quota/backoff))
-10 11:21:16 pdf pdf current col Vision Cinemas Ltd consolidated ok=True/3: revenue=0, other_income=0, total_income=0, total_expenses=15.73, finance_costs=0.0, depreciation=2.67, pbt=-15.73, tax=0, pat=-15.73, eps=-0.22
-10 11:21:16 pdf pdf history mismatch Vision Cinemas Ltd consolidated cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev 0.0 pat -1.2970000000000002 | bse rev 0.0 pat -1.3 (Rs mn); q-4: pdf rev 0.0 pat -4.702000000000001 | bse rev 4.8
-10 11:21:16 pdf pdf has consolidated but it failed checks: not falling back to standalone Vision Cinemas Ltd
-10 11:22:15 pdf strong model fixed a failed read
-10 11:22:19 ready 531651|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col National General Industries Ltd standalone ok=True/3: revenue=206.47, other_income=84.58, total_income=291.05, total_expenses=277.87, finance_co
-10 11:22:39 pdf strong model fixed a failed read
-10 11:23:30 seen 524636 Oxygenta Pharmaceutical Ltd cat=Board Meeting early=True bse_time=16:53:22 dissem=16:53:22
-10 11:24:37 pdf nim reader ARSS Infrastructure Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g.
-10 11:24:37 pdf pdf read failed ARSS Infrastructure Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing tex
-10 11:25:02 pdf rule reader ARSS Infrastructure Projects Ltd: rule: stan: missing ['pat'] n=6
-10 11:26:16 pdf nim reader ARSS Infrastructure Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g.
-10 11:26:16 pdf pdf read failed ARSS Infrastructure Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing tex
-10 11:29:08 seen 519483 TAI Industries Ltd-$ cat=Board Meeting early=True bse_time=16:58:08 dissem=16:58:08
-10 11:29:08 seen 512573 Avanti Feeds Ltd-$ cat=Board Meeting early=True bse_time=16:58:18 dissem=16:58:18
-10 11:29:38 ready 512573|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-10 11:30:02 seen 524636 Oxygenta Pharmaceutical Ltd cat=Result early=False bse_time=16:59:50 dissem=16:59:50
-10 11:30:25 wait 524636 Oxygenta Pharmaceutical Ltd: numbers not yet on BSE
-10 11:30:35 pdf rule reader Oxygenta Pharmaceutical Ltd: rule: no results table page | ocr: rule: no results table page
-10 11:30:41 ready 524636|Sep-26|standalone kind=photo waited_min=0.6 tries=1 pdf_log=pdf current col Oxygenta Pharmaceutical Ltd standalone ok=True/2: revenue=3349.39, other_income=2.02, total_income=3351.41, total_expenses=3690.96, finance_cost
-10 11:33:14 seen 531651 National General Industries  cat=Result early=False bse_time=17:02:20 dissem=17:02:20
-10 11:33:36 wait 531651 National General Industries : numbers not yet on BSE
-10 11:33:37 pdf rule reader National General Industries Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=7
-10 11:34:25 pdf strong model fixed a failed read
-10 11:34:25 pdf pdf current col National General Industries Ltd standalone ok=True/3: revenue=206.47, other_income=84.58, total_income=291.05, total_expenses=277.87, finance_costs=2.93, depreciation=9.8, pbt=13.19, tax=-6.38, pat=19.57, eps=0.41
-10 11:35:45 seen 519483 TAI Industries Ltd-$ cat=Result early=False bse_time=17:05:26 dissem=17:05:26
-10 11:36:05 ready 519483|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader TAI Industries Ltd-$: rule: no results table page | ocr: rule: no results table page | pdf current col TAI Industries Ltd-$ standalone ok=True/3: re
-10 11:36:14 pdf rule reader TAI Industries Ltd-$: rule: no results table page | ocr: rule: no results table page
-10 11:36:14 pdf pdf current col TAI Industries Ltd-$ standalone ok=True/3: revenue=8278.27, other_income=190.46, total_income=8468.73, total_expenses=8353.48, finance_costs=5.48, depreciation=3.8, pbt=115.25, tax=19.5, pat=95.75, eps=1.6
-10 11:38:20 pdf nim reader ARSS Infrastructure Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g.
-10 11:38:20 pdf pdf read failed ARSS Infrastructure Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing tex
-10 11:40:23 seen 512573 Avanti Feeds Ltd-$ cat=Result early=False bse_time=17:10:03 dissem=17:10:03
-10 11:40:23 seen 543278 Kalyan Jewellers India Ltd cat=Result early=False bse_time=17:10:03 dissem=17:10:03
-10 11:40:46 wait 543278 Kalyan Jewellers India Ltd: numbers not yet on BSE
-10 11:42:02 seen 539883 Pilani Investment and Indust cat=Board Meeting early=True bse_time=17:11:18 dissem=17:11:18
-10 11:42:29 ready 543278|Sep-26|consolidated kind=photo waited_min=1.7 tries=1 pdf_log=
-10 11:42:46 pdf nim reader ARSS Infrastructure Projects Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g.
-10 11:42:46 pdf pdf read failed ARSS Infrastructure Projects Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing tex
-10 11:43:11 pdf rule reader Pilani Investment and Industries Corporation Ltd: rule: no results table page | ocr: rule: no results table page
-10 11:43:19 pdf pdf current col Pilani Investment and Industries Corporation Ltd consolidated ok=False/3: revenue=18698.11, other_income=0.93, total_income=18699.04, total_expenses=5540.96, finance_costs=4666.56, depreciation=5.93, pbt=13158.08, 
-10 11:43:19 pdf pdf checks failed Pilani Investment and Industries Corporation Ltd consolidated
-10 11:43:19 pdf pdf has consolidated but it failed checks: not falling back to standalone Pilani Investment and Industries Corporation Ltd
-10 11:44:04 seen 543278 Kalyan Jewellers India Ltd cat=Board Meeting early=True bse_time=17:13:28 dissem=17:13:28
-10 11:44:28 pdf rule reader Pilani Investment and Industries Corporation Ltd: rule: no results table page | ocr: rule: no results table page
-10 11:44:30 ready 526441|Sep-26|na kind=photo waited_min=45.4 tries=8 pdf_log=
-10 11:44:36 pdf rule reader Kalyan Jewellers India Ltd: rule: no results table page | ocr: rule: consolidated table does not reconcile [million] pbt=[5600.78, 4648.17, 3502.65] pat=[4270.95, 3486.65, 2605.1]
-10 11:44:40 pdf pdf current col Pilani Investment and Industries Corporation Ltd consolidated ok=True/3: revenue=18698.11, other_income=0.93, total_income=18699.04, total_expenses=5540.96, finance_costs=4666.56, depreciation=5.93, pbt=13158.08, t
-10 11:44:40 pdf pdf incomplete Pilani Investment and Industries Corporation Ltd consolidated: missing ['ebitda'] - not posting from PDF
-10 11:45:04 seen 539883 Pilani Investment and Indust cat=Result early=False bse_time=17:14:32 dissem=17:14:32
 10 11:45:25 wait 539883 Pilani Investment and Indust: numbers not yet on BSE
 10 11:46:17 pdf rule reader Pilani Investment and Industries Corporation Ltd: rule: no results table page | ocr: rule: no results table page
 10 11:46:22 pdf pdf incomplete Pilani Investment and Industries Corporation Ltd consolidated: missing ['ebitda'] - not posting from PDF
@@ -1684,3 +1498,20 @@
 12 08:37:40 pdf nim reader BCL Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
 12 08:37:40 pdf pdf read failed BCL Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 14 numbers not found in the filing text (possible i
 12 08:37:40 pdf rule reader BWL Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:37:43 seen 543449 Wonder Electricals Ltd cat=Board Meeting early=True bse_time=13:59:49 dissem=13:59:49
+12 08:37:43 seen 504392 Krishna Ventures Ltd cat=Board Meeting early=True bse_time=14:02:53 dissem=14:02:53
+12 08:37:43 seen 531594 Incon Engineers Ltd cat=Board Meeting early=True bse_time=14:04:05 dissem=14:04:05
+12 08:37:43 seen 542013 Dolfin Rubbers Ltd cat=Board Meeting early=True bse_time=14:05:41 dissem=14:05:41
+12 08:37:43 seen 500460 Mukand Ltd cat=Result early=False bse_time=14:06:41 dissem=14:06:41
+12 08:38:19 wait 500460 Mukand Ltd: numbers not yet on BSE
+12 08:38:25 ready 533336|Sep-26|na kind=photo waited_min=51.5 tries=8 pdf_log=rule reader Krishna Ventures Ltd: rule: no results table page | ocr: rule: header has no quarter columns | rule reader Incon Engineers Ltd: rule: no results tab
+12 08:38:45 pdf pdf current col Alkem Laboratories Ltd consolidated ok=False/3: revenue=45519.9, other_income=1342.1, total_income=46862.0, total_expenses=37215.5, finance_costs=576.7, depreciation=1370.8, pbt=9996.5, tax=3319.1, pat=6671.3, eps=
+12 08:38:45 pdf rule reader Krishna Ventures Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+12 08:38:45 pdf rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4
+12 08:38:45 pdf pdf current col Tarsons Products Ltd consolidated ok=True/3: revenue=1236.5, other_income=44.34, total_income=1280.84, total_expenses=1274.17, finance_costs=65.96, depreciation=282.6, pbt=6.67, tax=10.11, pat=-3.44, eps=-0.06
+12 08:38:45 pdf rule reader Dolfin Rubbers Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:38:45 pdf rule reader Mukand Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:38:45 pdf rule reader Asia Capital Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:38:45 pdf pdf current col Incon Engineers Ltd standalone ok=True/2: revenue=26.5, other_income=4.02, total_income=30.52, total_expenses=35.58, finance_costs=3.97, depreciation=0.19, pbt=-5.06, tax=None, pat=-5.06, eps=-0.12
+12 08:38:45 pdf pdf incomplete Incon Engineers Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+12 08:38:45 pdf rule reader Wonder Electricals Ltd: rule: no results table page | ocr: rule: no results table page
