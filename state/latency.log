@@ -1641,3 +1641,6 @@
 12 11:17:48 ready 530745|Sep-26|consolidated kind=photo waited_min=4.6 tries=1 pdf_log=
 12 11:18:13 ready 517258|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | pdf current col Precision Electronics Ltd standalone ok=True/3: 
 12 11:19:32 ready 521200|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | pdf current col Suryalakshmi Cotton Mills Ltd standalone ok=Fals
+12 11:21:32 ready 540961|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf read failed Wallfort Financial Services Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | n
+12 11:22:11 ready 539946|Sep-26|consolidated kind=photo waited_min=0.0 tries=2 pdf_log=pdf incomplete Tusaldah Ltd standalone: missing ['revenue'] - not posting from PDF | rule reader Bazel International Ltd: ok | pdf current col Bazel Internation
+12 11:22:19 wait 539946 Bazel International Ltd: numbers not yet on BSE
