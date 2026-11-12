@@ -1559,3 +1559,19 @@
 12 07:59:58 pdf pdf read failed Albert David Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 30 numbers not found in the filing text (possible in
 12 07:59:59 seen 544105 Harshdeep Hortico Ltd cat=Result early=False bse_time=13:29:03 dissem=13:29:03
 12 08:00:31 wait 544105 Harshdeep Hortico Ltd: numbers not yet on BSE
+12 08:01:02 seen 532719 B. L. Kashyap and Sons Ltd cat=Board Meeting early=True bse_time=13:29:42 dissem=13:29:42
+12 08:01:55 pdf nim reader Dhunseri Investments Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possible invention): rejected e.g. [( (gem
+12 08:01:55 pdf pdf read failed Dhunseri Investments Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 15 numbers not found in the filing text (possi
+12 08:01:55 pdf nim reader Sainik Finance & Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [
+12 08:01:55 pdf pdf read failed Sainik Finance & Industries Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text 
+12 08:01:55 pdf nim reader Asia Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
+12 08:01:55 pdf pdf read failed Asia Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 7 numbers not found in the filing text (possible inven
+12 08:01:55 pdf rule reader Albert David Ltd-$: rule: no results table page | ocr: rule: unit not found
+12 08:01:55 pdf pdf current col Nalwa Sons Investments Ltd standalone ok=True/3: revenue=4648.69, other_income=0, total_income=4648.69, total_expenses=440.98, finance_costs=0, depreciation=0.08, pbt=4207.71, tax=1155.79, pat=3051.92, eps=59.42
+12 08:01:55 pdf pdf is a HALF-YEARLY filing (column dates ['September 30, 2026', 'March 31, 2026', 'September 30, 2025']): not read as quarters, queued for the half-yearly route Harshdeep Hortico Ltd
+12 08:01:55 pdf rule reader Asia Capital Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:01:55 pdf strong model fixed a failed read
+12 08:01:55 pdf pdf current col BCL Enterprises Ltd standalone ok=True/2: revenue=2802.82, other_income=None, total_income=2802.82, total_expenses=1402.12, finance_costs=1605.32, depreciation=0.45, pbt=1400.71, tax=0.35, pat=1401.06, eps=1.2
+12 08:01:55 pdf pdf history mismatch BCL Enterprises Ltd standalone cols=['30/09/2026', '30/06/2026', '30/09/2025'] :: q-1: pdf rev -15.879 pat -66.10700000000001 | bse rev 9.3 pat -40.93 (Rs mn); q-4: pdf rev 2.7070000000000003 pat -0.581 | bse 
+12 08:01:55 pdf rule reader BCL Enterprises Ltd: rule: no results table page | ocr: rule: no results table page
+12 08:01:56 seen 531867 Unitech International Ltd cat=Result early=False bse_time=13:31:09 dissem=13:31:09
