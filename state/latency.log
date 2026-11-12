@@ -1557,3 +1557,10 @@
 12 10:56:54 ready 501111|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Gold Rock Investments Ltd: rule: stan: half-year column is not quarter + previous quarter; stan: does not reconcile [lakh] total_income=[103.73, 270
 12 10:57:04 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
 12 10:57:04 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:57:07 seen 517514 D & H India Ltd-$ cat=Result early=False bse_time=16:25:58 dissem=16:25:58
+12 10:57:07 seen 544738 Speciality Medicines Ltd cat=Board Meeting early=True bse_time=16:26:08 dissem=16:26:08
+12 10:57:07 seen 539435 Richfield Financial Services cat=Result early=False bse_time=16:26:40 dissem=16:26:40
+12 10:57:07 seen 530745 ACS Technologies Ltd cat=Board Meeting early=True bse_time=16:26:42 dissem=16:26:42
+12 10:57:31 wait 517514 D & H India Ltd-$: numbers not yet on BSE
+12 10:57:34 wait 539435 Richfield Financial Services: numbers not yet on BSE
+12 10:57:47 pdf rule reader Jindal Leasefin Ltd: rule: no results table page | ocr: rule: no results table page
