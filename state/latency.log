@@ -1671,3 +1671,14 @@
 12 15:17:56 ready 512405|Sep-26|na kind=photo waited_min=115.4 tries=1 pdf_log=rule reader I-Power Solutions India Ltd: rule: no results table page | ocr: rule: no results table page | pdf read deferred I-Power Solutions India Ltd: per-pas
 12 15:20:23 ready 503696|Sep-26|na kind=photo waited_min=115.4 tries=1 pdf_log=pdf read deferred Aananda Lakshmi Spinning Mills Ltd: per-pass AI call cap | rule reader Shreenath Investment Company Ltd: rule: stan: no revenue row | pdf read
 12 15:20:30 ready 507987|Sep-26|na kind=photo waited_min=115.4 tries=8 pdf_log=pdf read deferred Aananda Lakshmi Spinning Mills Ltd: per-pass AI call cap | rule reader Shreenath Investment Company Ltd: rule: stan: no revenue row | pdf read
+12 15:21:41 ready 504998|Sep-26|consolidated kind=photo waited_min=115.4 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | rule reader Western Ministil Ltd: rule: no results table page | 
+12 15:22:29 ready 517463|Sep-26|na kind=photo waited_min=115.4 tries=1 pdf_log=pdf read deferred Western Ministil Ltd: per-pass AI call cap | rule reader Linaks Microelectronics Ltd: rule: no results table page | ocr: rule: no results tabl
+12 15:23:38 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+12 15:23:38 pdf rule reader Western Ministil Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+12 15:23:38 pdf pdf read deferred Western Ministil Ltd: per-pass AI call cap
+12 15:23:38 pdf rule reader Linaks Microelectronics Ltd: rule: no results table page | ocr: rule: no results table page
+12 15:23:38 pdf pdf read deferred Linaks Microelectronics Ltd: per-pass AI call cap
+12 15:23:38 pdf rule reader Nicco Uco Alliance Credit Ltd: rule: no results table page | ocr: rule: no results table page
+12 15:23:38 pdf pdf read deferred Nicco Uco Alliance Credit Ltd: per-pass AI call cap
+12 15:23:38 pdf rule reader Indus Fila Ltd: rule: stan: does not reconcile [lakh] total_income=[16.94, 2.01, 0.03] total_expenses=[61.06, 67.97, 64.09] pbt=[-44.12, -65.96, -64.06] pat=[-44.57, -66.42, -64.6] depreciation=[0.17, 0.17, 0.07] finan
+12 15:23:38 pdf pdf read deferred Indus Fila Ltd: per-pass AI call cap
