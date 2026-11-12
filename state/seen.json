@@ -514,7 +514,11 @@
 "5c70386e-c929-4f45-a9a2-28e3e527bca1",
 "d59db186-47ba-4475-8b2e-b266ccdcca74",
 "54d6bf31-2e37-4f44-bdf8-e67e9afb6152",
-"cb575db0-4e7f-44f5-9024-13e84deb616c"
+"cb575db0-4e7f-44f5-9024-13e84deb616c",
+"e7b2b436-ae91-4482-b769-65bd97fa5679",
+"0477b0b8-4da4-4c03-a8ba-7a5973454c16",
+"aaa2f41e-7404-4734-a84d-c10c514a559e",
+"4922836b-4039-45a1-a18a-f631afca29e6"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3945,7 +3949,9 @@
 "539947|Sep-26|na",
 "540066|Sep-26|standalone",
 "531413|Sep-26|standalone",
-"522171|Sep-26|standalone"
+"522171|Sep-26|standalone",
+"500106|Sep-26|consolidated",
+"522101|Sep-26|consolidated"
 ],
 "pending": {
 "f41aacaf-f6c2-47d1-a33b-06c5eae36064": {
@@ -4198,7 +4204,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/manappuram-finance-ltd/manappuram/531213/",
 "SLONGNAME": "Manappuram Finance Ltd",
 "AGENDA_ID": 30,
-"TotalPageCnt": 17,
+"TotalPageCnt": 19,
 "News_submission_dt": "2026-11-12T16:54:12",
 "DissemDT": "2026-11-12T16:54:12.573",
 "TimeDiff": "00:00:00",
@@ -4211,45 +4217,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794482915.7102695,
-"last": 1794482915.7102695,
-"alerted": false
-},
-"0477b0b8-4da4-4c03-a8ba-7a5973454c16": {
-"rec": {
-"NEWSID": "0477b0b8-4da4-4c03-a8ba-7a5973454c16",
-"SCRIP_CD": 500106,
-"XML_NAME": "ANN_500106_0477B0B8-4DA4-4C03-A8BA-7A5973454C16",
-"NEWSSUB": "IFCI Ltd - 500106 - Financial Results For The Quarter & Half-Year Ended September 30, 2026",
-"DT_TM": "2026-11-12T16:56:57.443",
-"NEWS_DT": "2026-11-12T16:56:57.443",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "ea938a4a-0d4a-45e2-a812-931ff095a5df.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter & half-year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/ifci-ltd/ifci/500106/",
-"SLONGNAME": "IFCI Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 17,
-"News_submission_dt": "2026-11-12T16:56:57",
-"DissemDT": "2026-11-12T16:56:57.443",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1445992,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794482915.7102695,
-"last": 1794482915.7102695,
+"last": 1794484032.1661954,
 "alerted": false
 },
 "e707d065-b301-4a69-92ad-93811ae50c66": {
@@ -4407,7 +4375,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 229
+"2026-11-12": 235
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4434,9 +4402,9 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 94,
+"ok": 97,
 "429": 5,
-"other": 29
+"other": 32
 },
 "vision-key": {
 "ok": 14,
@@ -4444,13 +4412,13 @@
 "other": 12
 },
 "concall-key": {
-"ok": 25,
+"ok": 28,
 "429": 1,
 "other": 18
 },
 "main": {
-"ok": 334,
-"429": 7,
+"ok": 335,
+"429": 8,
 "other": 88
 }
 }
@@ -4836,7 +4804,9 @@
 "e707d065-b301-4a69-92ad-93811ae50c66": 1,
 "36025ea5-5eaa-4213-b79e-350ebfb084c1": 1,
 "517d3394-45c8-4771-81be-4ab7e465ea85": 1,
-"4e4578de-614f-4271-8078-e4f5cb43916c": 1
+"4e4578de-614f-4271-8078-e4f5cb43916c": 1,
+"7aee1cfc-cb9a-4ff4-8862-60fb1033d83e": 1,
+"4922836b-4039-45a1-a18a-f631afca29e6": 1
 },
 "lag": [
 [
@@ -6327,6 +6297,26 @@
 "rev": 0.0,
 "pat": -0.879,
 "t": 1794483898.9030137,
+"last": 0
+},
+"500106|Sep-26|consolidated": {
+"code": "500106",
+"name": "IFCI Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 7330.4,
+"pat": 3232.6,
+"t": 1794484059.4388998,
+"last": 0
+},
+"522101|Sep-26|consolidated": {
+"code": "522101",
+"name": "Kilburn Engineering Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1531.431,
+"pat": 165.06300000000002,
+"t": 1794484085.7235553,
 "last": 0
 }
 },
