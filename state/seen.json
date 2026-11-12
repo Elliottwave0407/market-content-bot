@@ -248,7 +248,9 @@
 "af8168a3-f2e9-46ca-8954-4eec1fc1b7fa",
 "495b08ee-9dea-4188-b9aa-57b259b8cb8b",
 "a10c67c5-32b7-4fab-a134-9550e3a647fe",
-"8aaa2e73-a558-492e-a274-532cfc6e99a7"
+"8aaa2e73-a558-492e-a274-532cfc6e99a7",
+"3a4ba342-f153-4541-90ba-05bee8fe359d",
+"a44b8ff0-b648-470b-af6a-49938c46d7b9"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3524,7 +3526,8 @@
 "523796|Sep-26|consolidated",
 "515037|Sep-26|consolidated",
 "543309|Sep-26|standalone",
-"544946|Sep-26|standalone"
+"544946|Sep-26|standalone",
+"533285|Sep-26|consolidated"
 ],
 "pending": {
 "83366e56-1d6e-4715-a1cd-c0c23e280c74": {
@@ -3562,7 +3565,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794467385.7402542,
-"last": 1794468139.7977996,
+"last": 1794468155.4259117,
 "alerted": false
 },
 "04ea5a1a-d30f-4610-b9c2-4a621d7adc45": {
@@ -3600,7 +3603,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794467792.3683872,
-"last": 1794468139.7977996,
+"last": 1794468155.4259117,
 "alerted": false
 },
 "e9bc757b-2d6c-4958-8dc4-0be64be0d8b8": {
@@ -3638,7 +3641,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794468012.6260085,
-"last": 1794468139.7977996,
+"last": 1794468155.4259117,
 "alerted": false
 },
 "edd12432-be84-48df-81f6-18ac3592ba3f": {
@@ -3676,45 +3679,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794468045.3920202,
-"last": 1794468139.7977996,
-"alerted": false
-},
-"3a4ba342-f153-4541-90ba-05bee8fe359d": {
-"rec": {
-"NEWSID": "3a4ba342-f153-4541-90ba-05bee8fe359d",
-"SCRIP_CD": 533285,
-"XML_NAME": "ANN_533285_3A4BA342-F153-4541-90BA-05BEE8FE359D",
-"NEWSSUB": "RDB Infrastructure And Power Ltd - 533285 - Unaudited Financial Results (Standalone And Consolidated) Of The Company For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-12T12:51:07.69",
-"NEWS_DT": "2026-11-12T12:51:07.69",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "3e857541-269b-4097-9276-b9adf9023a81.pdf",
-"MORE": "",
-"HEADLINE": "The Board of Directors at its meeting held today i.e., 12th November 2026 considered and approved Unaudited Financial Results of the Company for the quarter and half year ended 30th September 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/rdb-infrastructure-and-power-ltd/rdbipl/533285/",
-"SLONGNAME": "RDB Infrastructure And Power Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 5,
-"News_submission_dt": "2026-11-12T12:51:07",
-"DissemDT": "2026-11-12T12:51:07.69",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6794692,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794468104.2995121,
-"last": 1794468139.7977996,
+"last": 1794468155.4259117,
 "alerted": false
 }
 },
@@ -3916,7 +3881,8 @@
 "04ea5a1a-d30f-4610-b9c2-4a621d7adc45": 1,
 "af8168a3-f2e9-46ca-8954-4eec1fc1b7fa": 1,
 "a10c67c5-32b7-4fab-a134-9550e3a647fe": 1,
-"edd12432-be84-48df-81f6-18ac3592ba3f": 1
+"edd12432-be84-48df-81f6-18ac3592ba3f": 1,
+"3a4ba342-f153-4541-90ba-05bee8fe359d": 1
 },
 "lag": [
 [
@@ -4158,6 +4124,10 @@
 [
 "Narmada Gelatines Ltd",
 0
+],
+[
+"RDB Infrastructure And Power Ltd",
+1
 ]
 ],
 "pdfposted": {
@@ -4340,6 +4310,16 @@
 "pat": 15.376,
 "t": 1794467947.7955565,
 "last": 1794467963.7461007
+},
+"533285|Sep-26|consolidated": {
+"code": "533285",
+"name": "RDB Infrastructure And Power Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 206.506,
+"pat": 25.608,
+"t": 1794468177.555926,
+"last": 1794468210.6106467
 }
 },
 "half_q": {
