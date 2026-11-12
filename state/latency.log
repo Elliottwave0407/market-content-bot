@@ -1720,3 +1720,10 @@
 12 21:30:35 pdf pdf current col Vinayak Vanijya Ltd standalone ok=True/2: revenue=0.0, other_income=1.98, total_income=1.98, total_expenses=0.46, finance_costs=0.0, depreciation=0.0, pbt=1.52, tax=None, pat=1.52, eps=0.16
 12 21:30:35 pdf pdf incomplete Vinayak Vanijya Ltd standalone: missing ['revenue'] - not posting from PDF
 12 21:31:11 ready 544740|Sep-26|na kind=photo waited_min=187.7 tries=8 pdf_log=rule reader IGL Spirits Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
+12 21:33:39 pdf rule reader Wakefit Innovations Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
+12 21:33:39 pdf rule reader Premier Capital Services Ltd: rule: no results table page | ocr: rule: no results table page
+12 21:33:47 pdf rule reader Ventura Guaranty Ltd: rule: no results table page | ocr: rule: consolidated table does not reconcile [lakh] pbt=[1544.21, 1245.74, 658.54] pat=[1117.8, 918.92, 466.01] depreciation=[192.9, 197.69, 
+12 21:34:26 pdf nim reader Ventura Guaranty Ltd: nim deepseek-v4.1-flash: 16 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 26 numbers not found in the filing text (possible in
+12 21:34:26 pdf pdf read failed Ventura Guaranty Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 16 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: 26 numbers not 
+12 21:35:04 pdf rule reader Vinayak Vanijya Ltd: rule: stan: does not reconcile [lakh] total_income=[1.98, 2.4, 2.24] total_expenses=[0.46, 5.3, 4.18] pbt=[1.52, -2.9, -1.94] pat=[1.52, -2.9, -1.94] depreciation=[0.0, 0.0, 0.0] finance_costs=[0.0
+12 21:35:44 ready 524210|Sep-26|na kind=photo waited_min=176.9 tries=8 pdf_log=rule reader Escorp Asset Management Ltd: rule: no results table page | ocr: rule: no results table page
