@@ -1768,3 +1768,19 @@
 12 16:37:36 ready 539123|Sep-26|standalone kind=photo waited_min=37.7 tries=1 pdf_log=rule reader V B Industries Ltd: rule: stan: no revenue row | nim reader V B Industries Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col V B In
 12 16:48:40 pdf nim reader Indus Fila Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 
 12 16:48:40 pdf pdf read failed Indus Fila Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 5
+12 16:48:43 seen 542684 Prakash Pipes Ltd cat=Result early=False bse_time=21:30:55 dissem=21:30:55
+12 16:48:43 seen 544945 Elevate Campuses Ltd cat=Result early=False bse_time=21:31:28 dissem=21:31:28
+12 16:48:43 seen 532801 Cambridge Technology Enterpr cat=Result early=False bse_time=21:34:21 dissem=21:34:21
+12 16:48:43 seen 526550 Country Club Hospitality & H cat=Result early=False bse_time=21:35:51 dissem=21:35:51
+12 16:48:43 seen 541196 Lex Nimble Solutions Ltd cat=Result early=False bse_time=21:35:52 dissem=21:35:52
+12 16:48:43 seen 544822 Laser Power & Infra Ltd cat=Result early=False bse_time=21:37:50 dissem=21:37:50
+12 16:48:43 seen 511644 Omega Interactive Technologi cat=Result early=False bse_time=21:38:59 dissem=21:38:59
+12 16:48:43 seen 544767 Autofurnish Ltd cat=Board Meeting early=True bse_time=21:52:27 dissem=21:52:27
+12 16:48:43 seen 531583 Rap Corp Ltd cat=Board Meeting early=True bse_time=22:08:35 dissem=22:08:35
+12 16:49:11 wait 544945 Elevate Campuses Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
+12 16:49:26 wait 544822 Laser Power & Infra Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
+12 16:49:36 ready 526666|Sep-26|consolidated kind=photo waited_min=47.2 tries=1 pdf_log=pdf current col Bhartiya International Ltd consolidated ok=False/3: revenue=50694.38, other_income=58.08, total_income=50752.46, total_expenses=47308.35, financ
+12 16:49:47 ready 530499|Sep-26|consolidated kind=photo waited_min=47.2 tries=1 pdf_log=rule reader Laser Power & Infra Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6 | pdf current col Sunshine Pictu
+12 16:50:22 ready 507155|Sep-26|consolidated kind=photo waited_min=47.2 tries=1 pdf_log=nim reader Prakash Pipes Ltd: ok (gemini: gemini skipped (quota/backoff)) | nim reader Elevate Campuses Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutErr
+12 16:50:51 ready 544925|Sep-26|na kind=photo waited_min=47.2 tries=99 pdf_log=nim reader Dove Soft Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 58 numbers not found in 
+12 16:50:58 ready 544975|Sep-26|na kind=photo waited_min=210.1 tries=1 pdf_log=nim reader Dove Soft Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 58 numbers not found in 
