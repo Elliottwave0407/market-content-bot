@@ -1562,3 +1562,13 @@
 12 07:14:56 ready 523796|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 12 07:15:33 seen 530953 Sunil Agro Foods Ltd-$ cat=Board Meeting early=True bse_time=12:43:43 dissem=12:43:43
 12 07:15:56 pdf pdf incomplete JMG Corporation Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 07:16:25 pdf rule reader Anand Projects Ltd: rule: no results table page | ocr: rule: no results table page
+12 07:16:32 seen 515037 Murudeshwar Ceramics Ltd cat=Board Meeting early=True bse_time=12:45:34 dissem=12:45:34
+12 07:16:32 seen 501630 Anand Projects Ltd cat=Result early=False bse_time=12:45:44 dissem=12:45:44
+12 07:16:54 wait 501630 Anand Projects Ltd: numbers not yet on BSE
+12 07:17:47 pdf pdf margin q-1 differs from BSE history by 7.4 pts: margin withheld Prime Urban Development India Ltd consolidated
+12 07:17:47 pdf pdf history mismatch Prime Urban Development India Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 8.82 pat -1.611 | bse rev 8.82 pat -1.61 (Rs mn); q-4: pdf rev 6.356000000000001 pat 1.40000000000
+12 07:17:47 pdf pdf has consolidated but it failed checks: not falling back to standalone Prime Urban Development India Ltd
+12 07:17:47 pdf pdf current col Anand Projects Ltd consolidated ok=True/3: revenue=15.0, other_income=-0.09, total_income=14.91, total_expenses=31.44, finance_costs=None, depreciation=0.08, pbt=-16.53, tax=0.13, pat=-16.66, eps=-1.78
+12 07:17:47 pdf pdf incomplete Anand Projects Ltd consolidated: missing ['ebitda'] - not posting from PDF
+12 07:17:48 seen 544529 Aptus Pharma Ltd cat=Board Meeting early=True bse_time=12:47:12 dissem=12:47:12
