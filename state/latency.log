@@ -1676,3 +1676,16 @@
 12 10:42:08 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
 12 10:42:11 seen 532768 Fiem Industries Ltd cat=Board Meeting early=True bse_time=16:11:00 dissem=16:11:00
 12 10:42:11 seen 531015 Venmax Drugs and Pharmaceuti cat=Result early=False bse_time=16:11:50 dissem=16:11:50
+12 10:42:51 ready 532768|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Fiem Industries Ltd consolidated ok=True/3: revenue=93733.56, other_income=316.48, total_income=94050.04, total_expenses=82665.52, finance_costs
+12 10:43:03 ready 539112|Sep-26|consolidated kind=photo waited_min=1.4 tries=1 pdf_log=rule reader Satyam Silk Mills Ltd: rule: column dates not found | ocr: rule: no results table page | nim reader Jindal Leasefin Ltd: ok (gemini: gemini skipped 
+12 10:43:18 wait 531015 Venmax Drugs and Pharmaceuti: numbers not yet on BSE
+12 10:43:24 pdf rule reader Fiem Industries Ltd: rule: unit ambiguous ['crore', 'lakh']
+12 10:43:24 pdf rule reader Venmax Drugs and Pharmaceuticals Ltd: rule: stan: missing ['pat'] n=6
+12 10:43:24 pdf pdf current col Fiem Industries Ltd consolidated ok=True/3: revenue=93733.56, other_income=316.48, total_income=94050.04, total_expenses=82665.52, finance_costs=109.72, depreciation=1921.31, pbt=11384.52, tax=2983.91, pat=8400.12,
+12 10:43:24 pdf rule reader Satyam Silk Mills Ltd: rule: column dates not found | ocr: rule: no results table page
+12 10:43:24 pdf nim reader Jindal Leasefin Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:43:24 pdf pdf current col SAB Industries Ltd consolidated ok=False/3: revenue=804.79, other_income=230.33, total_income=1035.12, total_expenses=863.12, finance_costs=75.08, depreciation=17.97, pbt=8561.75, tax=4.0, pat=8557.75, eps=56.26
+12 10:43:24 pdf pdf current col KMG Milk Food Ltd standalone ok=True/3: revenue=24.0, other_income=0.18, total_income=24.18, total_expenses=24.5, finance_costs=10.93, depreciation=0.0, pbt=-0.32, tax=0.0, pat=-0.32, eps=0.0
+12 10:43:24 pdf pdf current col Jindal Leasefin Ltd standalone ok=True/3: revenue=0.01, other_income=0.0, total_income=0.01, total_expenses=1.75, finance_costs=0.01, depreciation=0.0, pbt=-1.74, tax=0.0, pat=-1.74, eps=-0.06
+12 10:43:24 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/2: revenue=528.21, other_income=None, total_income=528.21, total_expenses=508.23, finance_costs=None, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0
+12 10:43:24 pdf pdf incomplete Venmax Drugs and Pharmaceuticals Ltd standalone: missing ['ebitda'] - not posting from PDF
