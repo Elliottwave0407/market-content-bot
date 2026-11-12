@@ -1,233 +1,3 @@
-11 07:26:42 seen 507315 Sakthi Sugars Ltd cat=Board Meeting early=True bse_time=12:56:01 dissem=12:56:01
-11 07:26:47 ready 507315|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Sakthi Sugars Ltd: ok | pdf current col Sakthi Sugars Ltd standalone ok=True/3: revenue=36351.14, other_income=234.28, total_income=36585.42, total_
-11 07:31:29 seen 507315 Sakthi Sugars Ltd cat=Result early=False bse_time=12:59:56 dissem=12:59:56
-11 07:38:14 ready 530369|Sep-26|na kind=photo waited_min=45.3 tries=8 pdf_log=
-11 07:40:40 seen 500032 Bajaj Hindusthan Sugar Ltd cat=Board Meeting early=True bse_time=13:10:34 dissem=13:10:34
-11 07:42:28 seen 531978 Ambika Cotton Mills Ltd cat=Board Meeting early=True bse_time=13:12:18 dissem=13:12:18
-11 07:43:19 ready 500032|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-11 07:43:28 ready 526315|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
-11 07:48:31 seen 531978 Ambika Cotton Mills Ltd cat=Result early=False bse_time=13:18:06 dissem=13:18:06
-11 07:48:52 wait 531978 Ambika Cotton Mills Ltd: numbers not yet on BSE
-11 07:49:10 ready 531978|Sep-26|standalone kind=photo waited_min=0.6 tries=1 pdf_log=pdf q-4 revenue typo: pdf 1919.8000000000002 -> BSE history 1996.4 (profit matched) Ambika Cotton Mills Ltd | pdf history cells corrected from BSE for q-[4]: Am
-11 07:50:25 seen 517449 Magna Electro Castings Ltd-$ cat=Result early=False bse_time=13:20:01 dissem=13:20:01
-11 07:50:32 ready 517449|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Magna Electro Castings Ltd-$ standalone ok=True/3: revenue=6156.35, other_income=39.58, total_income=6195.93, total_expenses=5356.97, finance_co
-11 07:52:19 seen 505302 Lakshmi Engineering And Ware cat=Board Meeting early=True bse_time=13:22:12 dissem=13:22:12
-11 07:52:46 pdf rule reader Lakshmi Engineering And Warehousing Ltd: rule: no results table page | ocr: rule: no results table page
-11 07:52:50 ready 505302|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Lakshmi Engineering And Warehousing Ltd standalone ok=True/3: revenue=433.27, other_income=25.54, total_income=458.81, total_expenses=370.5, fin
-11 07:54:09 seen 517449 Magna Electro Castings Ltd-$ cat=Board Meeting early=True bse_time=13:23:26 dissem=13:23:26
-11 07:54:16 pdf pdf current col Magna Electro Castings Ltd-$ standalone ok=True/3: revenue=6156.35, other_income=39.58, total_income=6195.93, total_expenses=5356.97, finance_costs=33.0, depreciation=273.66, pbt=838.96, tax=208.3, pat=630.66, eps=
-11 08:01:35 seen 511092 JMD Ventures Ltd cat=Result early=False bse_time=13:30:27 dissem=13:30:27
-11 08:01:57 wait 511092 JMD Ventures Ltd: numbers not yet on BSE
-11 08:02:06 pdf rule reader JMD Ventures Ltd: rule: column dates not found | ocr: rule: no results table page
-11 08:02:26 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=7.78, other_income=18.34, total_income=26.12, total_expenses=12.25, finance_costs=None, depreciation=0.91, pbt=13.87, tax=5.62, pat=8.25, eps=0.03
-11 08:02:26 pdf pdf incomplete JMD Ventures Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 08:02:59 pdf rule reader JMD Ventures Ltd: rule: column dates not found | ocr: rule: no results table page
-11 08:04:37 seen 505302 Lakshmi Engineering And Ware cat=Result early=False bse_time=13:33:48 dissem=13:33:48
-11 08:05:00 wait 505302 Lakshmi Engineering And Ware: numbers not yet on BSE
-11 08:05:06 pdf pdf current col Lakshmi Engineering And Warehousing Ltd standalone ok=True/3: revenue=433.27, other_income=25.54, total_income=458.81, total_expenses=370.5, finance_costs=30.08, depreciation=41.83, pbt=88.31, tax=16.23, pat=72.08,
-11 08:05:20 pdf nim reader JMD Ventures Ltd: ok (gemini: gemini skipped (quota/backoff))
-11 08:05:24 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=778, other_income=1834, total_income=2612, total_expenses=1225, finance_costs=0, depreciation=91, pbt=1387, tax=562, pat=825, eps=0.03
-11 08:05:24 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 1.81 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
-11 08:05:48 seen 545008 EAAA India Alternatives Ltd cat=Result early=False bse_time=13:35:19 dissem=13:35:19
-11 08:06:10 wait 545008 EAAA India Alternatives Ltd: numbers not yet on BSE
-11 08:07:15 pdf nim reader JMD Ventures Ltd: ok (gemini: gemini skipped (quota/backoff))
-11 08:07:23 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 0.93 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
-11 08:07:26 ready 545008|Sep-26|consolidated kind=photo waited_min=1.6 tries=1 pdf_log=
-11 08:09:57 pdf rule reader JMD Ventures Ltd: rule: column dates not found | ocr: rule: no results table page
-11 08:10:34 ready 514394|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
-11 08:11:29 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=778, other_income=1834, total_income=2612, total_expenses=1225, finance_costs=0, depreciation=91, pbt=1387, tax=562, pat=825, eps=0.03
-11 08:11:29 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 0.93 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
-11 08:12:13 seen 545008 EAAA India Alternatives Ltd cat=Board Meeting early=True bse_time=13:41:18 dissem=13:41:18
-11 08:15:39 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=778, other_income=1834, total_income=2612, total_expenses=1225, finance_costs=0, depreciation=91, pbt=1387, tax=562, pat=825, eps=0.03
-11 08:15:39 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 1.81 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
-11 08:16:15 ready 511092|Sep-26|standalone kind=photo waited_min=14.7 tries=6 pdf_log=
-11 08:27:22 seen 505160 Talbros Automotive Component cat=Board Meeting early=True bse_time=13:56:22 dissem=13:56:22
-11 08:27:58 pdf rule reader Talbros Automotive Components Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
-11 08:29:03 ready 505160|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Talbros Automotive Components Ltd consolidated ok=False/3: revenue=26320.8, other_income=428.19, total_income=26748.99, total_expenses=23244.4, 
-11 08:29:12 pdf pdf current col Talbros Automotive Components Ltd consolidated ok=False/3: revenue=26320.8, other_income=428.19, total_income=26748.99, total_expenses=23244.4, finance_costs=320.37, depreciation=895.64, pbt=4162.74, tax=868.3, pat
-11 08:33:47 wait 545008 EAAA India Alternatives Ltd: numbers not yet on BSE
-11 08:33:47 wait 531978 Ambika Cotton Mills Ltd: confirming that no consolidated statement exists
-11 08:33:52 wait 505302 Lakshmi Engineering And Ware: numbers not yet on BSE
-11 08:33:54 wait 511092 JMD Ventures Ltd: confirming that no consolidated statement exists
-11 08:33:54 pdf rule reader Lakshmi Engineering And Warehousing Ltd: rule: no results table page | ocr: rule: no results table page
-11 08:33:56 seen 505160 Talbros Automotive Component cat=Result early=False bse_time=14:03:25 dissem=14:03:25
-11 08:33:56 seen 540679 Haleos Labs Ltd cat=Board Meeting early=True bse_time=14:03:42 dissem=14:03:42
-11 08:34:41 wait 505160 Talbros Automotive Component: numbers not yet on BSE
-11 08:35:14 pdf pdf current col Lakshmi Engineering And Warehousing Ltd standalone ok=True/3: revenue=433.27, other_income=25.54, total_income=458.81, total_expenses=370.5, finance_costs=30.08, depreciation=41.83, pbt=88.31, tax=16.23, pat=72.08,
-11 08:35:15 seen 538788 Gilada Finance & Investments cat=Board Meeting early=True bse_time=14:04:06 dissem=14:04:06
-11 08:35:19 pdf pdf current col EAAA India Alternatives Ltd consolidated ok=True/3: revenue=251.49, other_income=28.39, total_income=279.88, total_expenses=167.61, finance_costs=9.2, depreciation=3.56, pbt=112.27, tax=24.17, pat=88.1, eps=13.68
-11 08:35:19 pdf pdf current col Talbros Automotive Components Ltd consolidated ok=False/3: revenue=26320.8, other_income=428.19, total_income=26748.99, total_expenses=23244.4, finance_costs=320.37, depreciation=895.64, pbt=4162.74, tax=868.3, pat
-11 08:35:19 pdf pdf incomplete Talbros Automotive Components Ltd consolidated: missing ['ebitda'] - not posting from PDF
-11 08:35:42 pdf pdf current col JMD Ventures Ltd standalone ok=True/3: revenue=778, other_income=1834, total_income=2612, total_expenses=1225, finance_costs=0, depreciation=91, pbt=1387, tax=562, pat=825, eps=0.03
-11 08:35:42 pdf pdf history mismatch JMD Ventures Ltd standalone cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 80.60000000000001 pat 181.4 | bse rev 0.81 pat 0.93 (Rs mn); q-4: pdf rev 127.9 pat 153.1 | bse rev 1.28 pat 1.53 (Rs
-11 08:35:50 pdf rule reader Talbros Automotive Components Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=3
-11 08:37:54 seen 544303 Toss The Coin Ltd cat=Result early=False bse_time=12:00:18 dissem=12:00:18
-11 08:37:54 seen 531306 DHP India Ltd cat=Result early=False bse_time=12:12:18 dissem=12:12:18
-11 08:37:54 seen 500290 MRF Ltd cat=Result early=False bse_time=12:23:49 dissem=12:23:49
-11 08:37:54 seen 539405 Decorous Investment & Tradin cat=Result early=False bse_time=12:42:38 dissem=12:42:38
-11 08:37:54 seen 500439 Vardhman Holdings Ltd cat=Result early=False bse_time=13:03:45 dissem=13:03:45
-11 08:37:54 seen 505216 Alfred Herbert India Ltd cat=Result early=False bse_time=13:23:40 dissem=13:23:40
-11 08:37:54 seen 530129 Nile Ltd cat=Result early=False bse_time=13:31:50 dissem=13:31:50
-11 08:37:54 seen 532344 Madala Holdings Ltd cat=Result early=False bse_time=13:36:36 dissem=13:36:36
-11 08:37:54 seen 504036 Hirect Ltd cat=Result early=False bse_time=13:39:32 dissem=13:39:32
-11 08:37:54 seen 533168 Rossell India Ltd cat=Result early=False bse_time=14:02:00 dissem=14:02:00
-11 08:37:54 seen 540678 Cochin Shipyard Ltd cat=Result early=False bse_time=14:38:24 dissem=14:38:24
-11 08:37:54 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:46:04 dissem=15:46:04
-11 08:37:54 seen 531989 Deccan Polypacks Ltd cat=Result early=False bse_time=15:50:15 dissem=15:50:15
-11 08:37:54 seen 526441 Vision Cinemas Ltd cat=Result early=False bse_time=16:28:45 dissem=16:28:45
-11 08:37:54 seen 544361 Covance Softsol Ltd cat=Result early=False bse_time=16:32:48 dissem=16:32:48
-11 08:37:54 seen 533163 ARSS Infrastructure Projects cat=Result early=False bse_time=16:46:33 dissem=16:46:33
-11 08:37:54 seen 524636 Oxygenta Pharmaceutical Ltd cat=Result early=False bse_time=16:59:50 dissem=16:59:50
-11 08:37:54 seen 531651 National General Industries  cat=Result early=False bse_time=17:02:20 dissem=17:02:20
-11 08:37:54 seen 519483 TAI Industries Ltd-$ cat=Result early=False bse_time=17:05:26 dissem=17:05:26
-11 08:37:54 seen 512573 Avanti Feeds Ltd-$ cat=Result early=False bse_time=17:10:03 dissem=17:10:03
-11 08:37:54 seen 543278 Kalyan Jewellers India Ltd cat=Result early=False bse_time=17:10:03 dissem=17:10:03
-11 08:37:54 seen 539883 Pilani Investment and Indust cat=Result early=False bse_time=17:14:32 dissem=17:14:32
-11 08:37:54 seen 531952 Riba Textiles Ltd cat=Result early=False bse_time=17:28:47 dissem=17:28:47
-11 08:37:54 seen 544392 Spinaroo Commercial Ltd cat=Result early=False bse_time=17:38:26 dissem=17:38:26
-11 08:37:54 seen 544336 Quadrant Future Tek Ltd cat=Result early=False bse_time=17:39:48 dissem=17:39:48
-11 08:37:54 seen 522267 Veejay Lakshmi Engineering W cat=Result early=False bse_time=17:40:05 dissem=17:40:05
-11 08:37:54 seen 526001 Jauss Polymers Ltd cat=Result early=False bse_time=17:40:14 dissem=17:40:14
-11 08:37:54 seen 517238 Dynavision Ltd cat=Result early=False bse_time=18:06:48 dissem=18:06:48
-11 08:37:54 seen 512301 Chambal Breweries & Distille cat=Result early=False bse_time=18:21:57 dissem=18:21:57
-11 08:37:54 seen 532485 Balmer Lawrie Investments Lt cat=Result early=False bse_time=18:37:29 dissem=18:37:29
-11 08:37:54 seen 523838 Simplex Infrastructures Ltd cat=Result early=False bse_time=18:43:01 dissem=18:43:01
-11 08:37:54 seen 531928 Golden Carpets Ltd cat=Result early=False bse_time=18:51:06 dissem=18:51:06
-11 08:37:54 seen 513377 MMTC Ltd cat=Result early=False bse_time=19:10:46 dissem=19:10:46
-11 08:37:54 seen 544587 Midwest Ltd cat=Result early=False bse_time=19:21:34 dissem=19:21:34
-11 08:37:54 seen 523618 Dredging Corporation of Indi cat=Result early=False bse_time=19:58:53 dissem=19:58:53
-11 08:37:54 seen 536659 PVV Infra Ltd cat=Result early=False bse_time=20:04:18 dissem=20:04:18
-11 08:37:54 seen 512036 Skybiotech Healthcare Ltd cat=Result early=False bse_time=20:27:20 dissem=20:27:20
-11 08:37:54 seen 523660 Waterbase Ltd cat=Result early=False bse_time=20:33:34 dissem=20:33:34
-11 08:37:54 seen 532372 Virinchi Ltd cat=Result early=False bse_time=20:36:31 dissem=20:36:31
-11 08:37:54 seen 532966 Titagarh Rail Systems Ltd cat=Result early=False bse_time=20:52:27 dissem=20:52:27
-11 08:37:54 seen 540132 Sabrimala Industries India L cat=Result early=False bse_time=23:19:10 dissem=23:19:10
-11 08:37:54 seen 544293 Suraksha Diagnostic Ltd cat=Result early=False bse_time=23:30:13 dissem=23:30:13
-11 08:39:54 ready 500290|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-11 08:40:07 wait 513377 MMTC Ltd: numbers not yet on BSE
-11 08:40:12 wait 523618 Dredging Corporation of Indi: confirming that no consolidated statement exists
-11 08:41:21 wait 523838 Simplex Infrastructures Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
-11 08:41:22 wait 544336 Quadrant Future Tek Ltd: confirming that no consolidated statement exists
-11 08:42:05 ready 500439|Sep-26|consolidated kind=photo waited_min=0.0 tries=0 pdf_log=rule reader Balmer Lawrie Investments Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6 | pdf current col Balmer Lawrie Investments Ltd st
-11 08:48:44 wait 533168 Rossell India Ltd: confirming that no consolidated statement exists
-11 08:52:51 wait 526315 Divyashakti Ltd: numbers not yet on BSE
-11 08:56:04 wait 544928 Century Business Media Ltd: numbers not yet on BSE
-11 08:56:07 wait 509196 MM Rubber Company Ltd: confirming that no consolidated statement exists
-11 08:56:31 wait 544392 Spinaroo Commercial Ltd: numbers not yet on BSE
-11 08:56:53 wait 544303 Toss The Coin Ltd: numbers not yet on BSE
-11 09:03:01 wait 512301 Chambal Breweries & Distille: numbers not yet on BSE
-11 09:12:25 seen 538837 Jeevan Scientific Technology cat=Result early=False bse_time=14:13:03 dissem=14:13:03
-11 09:12:25 seen 507833 Computer Point Ltd cat=Board Meeting early=True bse_time=14:16:32 dissem=14:16:32
-11 09:12:25 seen 539302 Power Mech Projects Ltd cat=Result early=False bse_time=14:17:22 dissem=14:17:22
-11 09:12:25 seen 538837 Jeevan Scientific Technology cat=Board Meeting early=True bse_time=14:18:03 dissem=14:18:03
-11 09:12:25 seen 544166 Emmforce Autotech Ltd cat=Result early=False bse_time=14:21:35 dissem=14:21:35
-11 09:12:25 seen 544166 Emmforce Autotech Ltd cat=Board Meeting early=True bse_time=14:22:15 dissem=14:22:15
-11 09:12:25 seen 519105 AVT Natural Products Ltd cat=Board Meeting early=True bse_time=14:25:04 dissem=14:25:04
-11 09:12:25 seen 505232 Veljan Denison Ltd cat=Board Meeting early=True bse_time=14:31:08 dissem=14:31:08
-11 09:12:25 seen 508494 Warren Tea Ltd-$ cat=Result early=False bse_time=14:37:54 dissem=14:37:54
-11 09:12:25 seen 542011 Garden Reach Shipbuilders &  cat=Board Meeting early=True bse_time=14:39:05 dissem=14:39:05
-11 09:12:25 seen 508494 Warren Tea Ltd-$ cat=Board Meeting early=True bse_time=14:42:11 dissem=14:42:11
-11 09:13:07 wait 539302 Power Mech Projects Ltd: numbers not yet on BSE
-11 09:13:36 ready 523838|Sep-26|consolidated kind=photo waited_min=34.5 tries=1 pdf_log=rule reader Emmforce Autotech Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Simplex Infrastructures Ltd: rule: unit not foun
-11 09:13:47 ready 505232|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-11 09:13:58 wait 544166 Emmforce Autotech Ltd: numbers not yet on BSE
-11 09:14:00 wait 538837 Jeevan Scientific Technology: numbers not yet on BSE
-11 09:14:59 ready 538837|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Jeevan Scientific Technology Ltd consolidated ok=True/3: revenue=2316.89, other_income=44.43, total_income=2361.32, total_expenses=1973.81, fina
-11 09:15:38 wait 508494 Warren Tea Ltd-$: numbers not yet on BSE
-11 09:17:14 ready 539302|Sep-26|consolidated kind=photo waited_min=3.7 tries=1 pdf_log=
-11 09:17:52 seen 514454 Southern Latex Ltd cat=Board Meeting early=True bse_time=14:46:02 dissem=14:46:02
-11 09:17:52 seen 530747 Challani Capital Ltd cat=Board Meeting early=True bse_time=14:46:14 dissem=14:46:14
-11 09:18:16 pdf rule reader Challani Capital Ltd: rule: no results table page | ocr: rule: no results table page
-11 09:18:20 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
-11 09:18:24 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
-11 09:18:24 pdf pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depreciation=0.1, pbt=15.17, tax=None, pat=15.17, eps=0.1
-11 09:18:24 pdf pdf incomplete Challani Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 09:18:52 pdf pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depreciation=0.1, pbt=15.17, tax=None, pat=15.17, eps=0.1
-11 09:18:52 pdf pdf incomplete Challani Capital Ltd standalone: missing ['ebitda'] - not posting from PDF
-11 09:20:02 pdf nim reader Warren Tea Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
-11 09:20:02 pdf pdf read failed Warren Tea Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inven
-11 09:20:02 pdf nim reader Warren Tea Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
-11 09:20:02 pdf pdf read failed Warren Tea Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inven
-11 09:20:26 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
-11 09:20:26 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
-11 09:20:52 pdf nim reader Challani Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini:
-11 09:20:52 pdf pdf read failed Challani Capital Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible i
-11 09:23:23 pdf rule reader Challani Capital Ltd: rule: no results table page | ocr: rule: no results table page
-11 09:23:25 seen 542011 Garden Reach Shipbuilders &  cat=Result early=False bse_time=14:52:30 dissem=14:52:30
-11 09:23:46 wait 542011 Garden Reach Shipbuilders & : numbers not yet on BSE
-11 09:23:47 pdf rule reader Garden Reach Shipbuilders & Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6
-11 09:23:53 pdf pdf current col Garden Reach Shipbuilders & Engineers Ltd standalone ok=True/3: revenue=182669.34, other_income=5895.03, total_income=188564.37, total_expenses=165401.94, finance_costs=854.07, depreciation=1428.32, pbt=23162.43, t
-11 09:24:33 pdf nim reader Southern Latex Ltd: ok (gemini: gemini skipped (quota/backoff))
-11 09:25:26 pdf rule reader Warren Tea Ltd-$: rule: no results table page | ocr: rule: no results table page
-11 09:25:48 pdf nim reader Warren Tea Ltd-$: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gem
-11 09:25:48 pdf pdf read failed Warren Tea Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible inven
-11 09:27:12 seen 544303 Toss The Coin Ltd cat=Result early=False bse_time=12:00:18 dissem=12:00:18
-11 09:27:12 seen 531306 DHP India Ltd cat=Result early=False bse_time=12:12:18 dissem=12:12:18
-11 09:27:12 seen 539405 Decorous Investment & Tradin cat=Result early=False bse_time=12:42:38 dissem=12:42:38
-11 09:27:12 seen 505216 Alfred Herbert India Ltd cat=Result early=False bse_time=13:23:40 dissem=13:23:40
-11 09:27:12 seen 530129 Nile Ltd cat=Result early=False bse_time=13:31:50 dissem=13:31:50
-11 09:27:12 seen 532344 Madala Holdings Ltd cat=Result early=False bse_time=13:36:36 dissem=13:36:36
-11 09:27:12 seen 533168 Rossell India Ltd cat=Result early=False bse_time=14:02:00 dissem=14:02:00
-11 09:27:12 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:46:04 dissem=15:46:04
-11 09:27:12 seen 531989 Deccan Polypacks Ltd cat=Result early=False bse_time=15:50:15 dissem=15:50:15
-11 09:27:12 seen 526441 Vision Cinemas Ltd cat=Result early=False bse_time=16:28:45 dissem=16:28:45
-11 09:27:12 seen 544361 Covance Softsol Ltd cat=Result early=False bse_time=16:32:48 dissem=16:32:48
-11 09:27:12 seen 533163 ARSS Infrastructure Projects cat=Result early=False bse_time=16:46:33 dissem=16:46:33
-11 09:27:12 seen 524636 Oxygenta Pharmaceutical Ltd cat=Result early=False bse_time=16:59:50 dissem=16:59:50
-11 09:27:12 seen 531651 National General Industries  cat=Result early=False bse_time=17:02:20 dissem=17:02:20
-11 09:27:12 seen 519483 TAI Industries Ltd-$ cat=Result early=False bse_time=17:05:26 dissem=17:05:26
-11 09:27:12 seen 531952 Riba Textiles Ltd cat=Result early=False bse_time=17:28:47 dissem=17:28:47
-11 09:27:12 seen 544392 Spinaroo Commercial Ltd cat=Result early=False bse_time=17:38:26 dissem=17:38:26
-11 09:27:12 seen 544336 Quadrant Future Tek Ltd cat=Result early=False bse_time=17:39:48 dissem=17:39:48
-11 09:27:12 seen 522267 Veejay Lakshmi Engineering W cat=Result early=False bse_time=17:40:05 dissem=17:40:05
-11 09:27:12 seen 526001 Jauss Polymers Ltd cat=Result early=False bse_time=17:40:14 dissem=17:40:14
-11 09:27:12 seen 517238 Dynavision Ltd cat=Result early=False bse_time=18:06:48 dissem=18:06:48
-11 09:27:12 seen 512301 Chambal Breweries & Distille cat=Result early=False bse_time=18:21:57 dissem=18:21:57
-11 09:27:12 seen 531928 Golden Carpets Ltd cat=Result early=False bse_time=18:51:06 dissem=18:51:06
-11 09:27:12 seen 523618 Dredging Corporation of Indi cat=Result early=False bse_time=19:58:53 dissem=19:58:53
-11 09:27:12 seen 536659 PVV Infra Ltd cat=Result early=False bse_time=20:04:18 dissem=20:04:18
-11 09:27:12 seen 512036 Skybiotech Healthcare Ltd cat=Result early=False bse_time=20:27:20 dissem=20:27:20
-11 09:27:12 seen 523660 Waterbase Ltd cat=Result early=False bse_time=20:33:34 dissem=20:33:34
-11 09:27:12 seen 532372 Virinchi Ltd cat=Result early=False bse_time=20:36:31 dissem=20:36:31
-11 09:27:12 seen 540132 Sabrimala Industries India L cat=Result early=False bse_time=23:19:10 dissem=23:19:10
-11 09:27:12 seen 539354 Polyspin Exports Ltd cat=Result early=False bse_time=11:00:20 dissem=11:00:20
-11 09:27:12 seen 530369 Vamshi Rubber Ltd cat=Result early=False bse_time=12:18:52 dissem=12:18:52
-11 09:27:12 seen 530369 Vamshi Rubber Ltd cat=Result early=False bse_time=12:22:45 dissem=12:22:45
-11 09:27:12 seen 519295 Bambino Agro Industries Ltd cat=Result early=False bse_time=12:24:15 dissem=12:24:15
-11 09:27:12 seen 526315 Divyashakti Ltd cat=Result early=False bse_time=12:26:58 dissem=12:26:58
-11 09:27:12 seen 533263 Orient Green Power Company L cat=Result early=False bse_time=12:30:21 dissem=12:30:21
-11 09:27:12 seen 509196 MM Rubber Company Ltd cat=Result early=False bse_time=12:47:13 dissem=12:47:13
-11 09:27:12 seen 514394 Atlas Jewellery India Ltd cat=Result early=False bse_time=12:54:37 dissem=12:54:37
-11 09:27:12 seen 507315 Sakthi Sugars Ltd cat=Result early=False bse_time=12:59:56 dissem=12:59:56
-11 09:27:12 seen 531978 Ambika Cotton Mills Ltd cat=Result early=False bse_time=13:18:06 dissem=13:18:06
-11 09:27:41 wait 533263 Orient Green Power Company L: numbers not yet on BSE
-11 09:28:52 wait 530129 Nile Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
-11 09:29:20 wait 533168 Rossell India Ltd: confirming that no consolidated statement exists
-11 09:33:37 wait 526315 Divyashakti Ltd: numbers not yet on BSE
-11 09:37:39 wait 544928 Century Business Media Ltd: numbers not yet on BSE
-11 09:38:13 wait 544392 Spinaroo Commercial Ltd: numbers not yet on BSE
-11 09:38:32 wait 544303 Toss The Coin Ltd: numbers not yet on BSE
-11 09:45:42 wait 512301 Chambal Breweries & Distille: numbers not yet on BSE
-11 09:53:36 wait 540132 Sabrimala Industries India L: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
-11 09:54:25 wait 530369 Vamshi Rubber Ltd: numbers not yet on BSE
-11 09:55:22 wait 526001 Jauss Polymers Ltd: numbers not yet on BSE
-11 09:57:40 ready 526441|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-11 09:58:19 wait 531989 Deccan Polypacks Ltd: numbers not yet on BSE
-11 09:59:20 ready 533163|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-11 09:59:32 wait 514394 Atlas Jewellery India Ltd: numbers not yet on BSE
-11 09:59:37 seen 514454 Southern Latex Ltd cat=Result early=False bse_time=14:56:25 dissem=14:56:25
-11 09:59:37 seen 532918 Rathi Bars Ltd cat=Board Meeting early=True bse_time=15:01:15 dissem=15:01:15
-11 09:59:37 seen 505232 Veljan Denison Ltd cat=Result early=False bse_time=15:03:57 dissem=15:03:57
-11 09:59:37 seen 532918 Rathi Bars Ltd cat=Result early=False bse_time=15:15:16 dissem=15:15:16
-11 09:59:37 seen 532918 Rathi Bars Ltd cat=Result early=False bse_time=15:18:49 dissem=15:18:49
-11 09:59:37 seen 530747 Challani Capital Ltd cat=Result early=False bse_time=15:25:15 dissem=15:25:15
-11 10:00:28 ready 544166|Sep-26|na kind=photo waited_min=47.2 tries=99 pdf_log=
-11 10:00:49 ready 508494|Sep-26|consolidated kind=photo waited_min=47.2 tries=7 pdf_log=
-11 10:01:24 wait 530747 Challani Capital Ltd: numbers not yet on BSE
-11 10:03:08 wait 532918 Rathi Bars Ltd: numbers not yet on BSE
-11 10:03:33 wait 532918 Rathi Bars Ltd: numbers not yet on BSE
-11 10:04:55 wait 514454 Southern Latex Ltd: numbers not yet on BSE
-11 10:08:56 ready 530747|Sep-26|standalone kind=photo waited_min=8.8 tries=2 pdf_log=pdf current col Challani Capital Ltd standalone ok=True/2: revenue=33.87, other_income=0.39, total_income=34.21, total_expenses=19.03, finance_costs=None, depre
 11 10:15:48 seen 544928 Century Business Media Ltd cat=Result early=False bse_time=15:43:30 dissem=15:43:30
 11 10:16:13 wait 544928 Century Business Media Ltd: numbers not yet on BSE
 11 10:20:11 pdf nim reader Jauss Polymers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 4 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: g
@@ -1710,3 +1480,23 @@
 12 10:45:30 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
 12 10:45:30 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
 12 10:45:30 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:45:56 pdf nim reader Garment Mantra Lifestyle Ltd: ok (gemini: parse JSONDecodeError("Expecting ',' del)
+12 10:45:56 pdf pdf column dates ['30.09.2028', '30.06.2028', '30.09.2025'] are not a quarterly layout: not used Jindal Leasefin Ltd
+12 10:45:56 pdf rule reader Satyam Silk Mills Ltd: rule: column dates not found | ocr: rule: no results table page
+12 10:45:57 seen 503893 Satyam Silk Mills Ltd cat=Result early=False bse_time=16:15:11 dissem=16:15:11
+12 10:46:10 wait 503893 Satyam Silk Mills Ltd: numbers not yet on BSE
+12 10:46:12 pdf rule reader Arur Footwear Ltd: ok
+12 10:46:12 pdf rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row
+12 10:46:12 pdf nim reader Venmax Drugs and Pharmaceuticals Ltd: ok (gemini: gemini skipped (quota/backoff))
+12 10:46:12 pdf pdf current col Venmax Drugs and Pharmaceuticals Ltd standalone ok=True/3: revenue=528.21, other_income=0.0, total_income=528.21, total_expenses=508.23, finance_costs=0.0, depreciation=0.13, pbt=19.98, tax=7.95, pat=12.03, eps=0.0
+12 10:46:12 pdf pdf current col Arur Footwear Ltd standalone ok=True/2: revenue=2.24, other_income=None, total_income=2.24, total_expenses=9.41, finance_costs=None, depreciation=None, pbt=-7.17, tax=0.0, pat=-7.17, eps=-0.04
+12 10:46:12 pdf pdf incomplete Arur Footwear Ltd standalone: missing ['ebitda'] - not posting from PDF
+12 10:46:14 seen 519397 Sharat Industries Ltd cat=Result early=False bse_time=16:15:39 dissem=16:15:39
+12 10:46:37 wait 519397 Sharat Industries Ltd: numbers not yet on BSE
+12 10:46:45 pdf rule reader Sharat Industries Ltd: rule: no results table page | ocr: rule: no results table page
+12 10:47:11 ready 519397|Sep-26|consolidated kind=photo waited_min=0.5 tries=1 pdf_log=rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row | pdf current col Sharat Industries Ltd consolidated ok=True/3: revenue=19077.67, other_income=188
+12 10:47:21 ready 500322|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row | pdf current col Sharat Industries Ltd consolidated ok=True/3: revenue=19077.67, other_income=188
+12 10:47:34 pdf rule reader Satyam Silk Mills Ltd: rule: stan: no revenue row
+12 10:47:34 pdf pdf current col Sharat Industries Ltd consolidated ok=True/3: revenue=19077.67, other_income=188.61, total_income=19266.29, total_expenses=18331.13, finance_costs=348.33, depreciation=148.75, pbt=935.16, tax=168.59, pat=766.57, ep
+12 10:47:34 pdf nim reader Satyam Silk Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini
+12 10:47:34 pdf pdf read failed Satyam Silk Mills Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 8 numbers not found in the filing text (possible 
