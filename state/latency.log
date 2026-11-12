@@ -1516,3 +1516,10 @@
 12 08:38:45 pdf pdf incomplete Incon Engineers Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 12 08:38:45 pdf rule reader Wonder Electricals Ltd: rule: no results table page | ocr: rule: no results table page
 12 08:38:47 seen 511525 Pan India Corporation Ltd cat=Board Meeting early=True bse_time=14:07:22 dissem=14:07:22
+12 08:39:24 ready 500460|Sep-26|consolidated kind=photo waited_min=1.1 tries=1 pdf_log=rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4 | strong model retry did not help: None | pdf current col Mu
+12 08:39:33 ready 542013|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Mukand Ltd consolidated ok=False/3: revenue=1315.15, other_income=5.32, total_income=1320.47, total_expenses=1306.85, finance_costs=34.37, depre
+12 08:39:53 pdf rule reader Incon Engineers Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4
+12 08:39:53 pdf strong model retry did not help: None
+12 08:39:53 pdf pdf current col Mukand Ltd consolidated ok=False/3: revenue=1315.15, other_income=5.32, total_income=1320.47, total_expenses=1306.85, finance_costs=34.37, depreciation=17.88, pbt=13.62, tax=-9.32, pat=4.3, eps=0.3
+12 08:39:53 pdf pdf unusable Wonder Electricals Ltd: unit/date missing
+12 08:39:53 pdf pdf current col Dolfin Rubbers Ltd standalone ok=True/3: revenue=5789.89, other_income=21.3, total_income=5811.19, total_expenses=5550.42, finance_costs=32.65, depreciation=54.22, pbt=260.77, tax=68.86, pat=191.91, eps=1.91
