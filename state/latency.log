@@ -1523,3 +1523,10 @@
 12 18:34:52 pdf nim reader Tipco Engineering India Ltd: nim deepseek-v4.1-flash: 3 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possi
 12 18:34:52 pdf pdf read failed Tipco Engineering India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 3 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 3 number
 12 18:35:20 pdf rule reader Tipco Engineering India Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+12 18:35:54 pdf nim reader Tipco Engineering India Ltd: nim deepseek-v4.1-flash: 3 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possi
+12 18:35:54 pdf pdf read failed Tipco Engineering India Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | visio
+12 18:36:20 pdf nim reader Ruby Mills Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 
+12 18:36:20 pdf pdf read failed Ruby Mills Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 4
+12 18:36:42 ready 519307|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=rule reader Ruby Mills Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=4 | rule reader Tipco Engineering India Ltd
+12 18:36:47 pdf rule reader Ruby Mills Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=4
+12 18:36:47 pdf rule reader Tipco Engineering India Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
