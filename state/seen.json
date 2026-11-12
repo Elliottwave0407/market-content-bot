@@ -672,7 +672,8 @@
 "f00bcebf-d2a4-45af-8e56-e48bd8b0f783",
 "5227b68e-a2ad-4814-8612-d03aa7a3562d",
 "5deffbf7-3785-4211-9ff0-c2a213057f28",
-"e61cedf0-df53-4b27-be78-54ef5cf5189a"
+"e61cedf0-df53-4b27-be78-54ef5cf5189a",
+"50abd211-e14b-4414-96ed-2d009176331f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4221,7 +4222,8 @@
 "544073|Sep-26|na",
 "526371|Sep-26|consolidated",
 "530427|Sep-26|standalone",
-"505744|Sep-26|consolidated"
+"505744|Sep-26|consolidated",
+"512099|Sep-26|standalone"
 ],
 "pending": {
 "3d5f2ac3-5f9c-413c-abea-33ad8b68deab": {
@@ -5895,11 +5897,49 @@
 "first": 1794493879.0260274,
 "last": 1794493879.0260274,
 "alerted": false
+},
+"43945950-fd20-49c4-a70a-6785cacaddc7": {
+"rec": {
+"NEWSID": "43945950-fd20-49c4-a70a-6785cacaddc7",
+"SCRIP_CD": 544869,
+"XML_NAME": "ANN_544869_43945950-FD20-49C4-A70A-6785CACADDC7",
+"NEWSSUB": "Sham Foam Ltd - 544869 - Revised Unaudited Financial Results For The Half Year Ended 30Th September, 2026",
+"DT_TM": "2026-11-12T19:57:45.477",
+"NEWS_DT": "2026-11-12T19:57:45.477",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "e7c1e396-e761-4e63-9192-82df4d93847f.pdf",
+"MORE": "This is with reference to the outcome of the board meeting held on Novermber 11, 2026 wherein the company has submitted the unaudited standalone financial results for the half year ended septtember 30, 2026\r\n\r\nIn this regard we wish to inform you that in the unaudited financial results for the said period, certain minor changes have been made arising out of clerical errors. accordingly the revised unaudited financials results for the half year ended september 30, 2025 are being submitted herewith\r\nthe aforesaid revision does not have any impact on the reported financial performance of the company\r\n",
+"HEADLINE": "This is with reference to the outcome of the board meeting held on Novermber 11, 2026 wherein the company has submitted the unaudited standalone financial results for the half year ended ....",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/sham-foam-ltd/shamfoam/544869/",
+"SLONGNAME": "Sham Foam Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 34,
+"News_submission_dt": "2026-11-12T19:57:45",
+"DissemDT": "2026-11-12T19:57:45.477",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1295432,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794493879.0260274,
+"last": 1794493879.0260274,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 369
+"2026-11-12": 370
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5928,22 +5968,22 @@
 "results-key": {
 "ok": 358,
 "429": 11,
-"other": 158
+"other": 159
 },
 "vision-key": {
-"ok": 65,
+"ok": 68,
 "429": 7,
-"other": 70
+"other": 74
 },
 "concall-key": {
-"ok": 141,
+"ok": 149,
 "429": 7,
-"other": 123
+"other": 128
 },
 "main": {
 "ok": 336,
-"429": 16,
-"other": 90
+"429": 17,
+"other": 91
 }
 }
 },
@@ -6211,7 +6251,9 @@
 "70659377-d6f9-4e33-aabf-d258bc4ec166": 1,
 "8fc5ebf2-7d26-40f8-9242-a0274ad6f879": 1,
 "5227b68e-a2ad-4814-8612-d03aa7a3562d": 1,
-"e61cedf0-df53-4b27-be78-54ef5cf5189a": 1
+"e61cedf0-df53-4b27-be78-54ef5cf5189a": 1,
+"43945950-fd20-49c4-a70a-6785cacaddc7": 1,
+"50abd211-e14b-4414-96ed-2d009176331f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -8546,6 +8588,16 @@
 "rev": 107.61900000000001,
 "pat": 10.606000000000002,
 "t": 1794494755.5558493,
+"last": 0
+},
+"512099|Sep-26|standalone": {
+"code": "512099",
+"name": "Eyantra Ventures Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 193.82500000000002,
+"pat": 5.758,
+"t": 1794494889.08329,
 "last": 0
 }
 },
