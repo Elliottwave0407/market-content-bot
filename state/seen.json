@@ -614,7 +614,9 @@
 "401a0567-47c1-4fb5-a30f-1686e0b550da",
 "96f073bd-c61d-44ae-85be-7bf644b0aa19",
 "bee5d7e7-e11e-45e6-b055-c518da6d7724",
-"aa3f9c1f-59e1-4fd4-8071-e7eb51580582"
+"aa3f9c1f-59e1-4fd4-8071-e7eb51580582",
+"c3e63ef3-d8d3-4835-ab0a-7f17acd2a03c",
+"5f23911c-1858-4b24-8c1e-71e243782622"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4122,7 +4124,8 @@
 "542141|Sep-26|consolidated",
 "542597|Sep-26|consolidated",
 "507880|Sep-26|consolidated",
-"544786|Sep-26|standalone"
+"544786|Sep-26|standalone",
+"541403|Sep-26|consolidated"
 ],
 "pending": {
 "3d5f2ac3-5f9c-413c-abea-33ad8b68deab": {
@@ -4964,7 +4967,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 330
+"2026-11-12": 332
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4991,19 +4994,19 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 318,
+"ok": 321,
 "429": 8,
-"other": 130
+"other": 132
 },
 "vision-key": {
-"ok": 38,
-"429": 4,
-"other": 40
+"ok": 39,
+"429": 5,
+"other": 41
 },
 "concall-key": {
-"ok": 79,
+"ok": 80,
 "429": 5,
-"other": 66
+"other": 67
 },
 "main": {
 "ok": 336,
@@ -5472,7 +5475,9 @@
 "f93f32ae-9897-43c9-a43c-9bc0f33111aa": 1,
 "401a0567-47c1-4fb5-a30f-1686e0b550da": 1,
 "bee5d7e7-e11e-45e6-b055-c518da6d7724": 1,
-"f34dcc69-688c-4460-a08f-cf154a0c22bf": 1
+"f34dcc69-688c-4460-a08f-cf154a0c22bf": 1,
+"c3e63ef3-d8d3-4835-ab0a-7f17acd2a03c": 1,
+"5f23911c-1858-4b24-8c1e-71e243782622": 1
 },
 "lag": [
 [
@@ -7431,6 +7436,16 @@
 "rev": 793.67,
 "pat": 49.49,
 "t": 1794489914.3055453,
+"last": 0
+},
+"541403|Sep-26|consolidated": {
+"code": "541403",
+"name": "Dollar Industries Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 5303.787,
+"pat": 353.17600000000004,
+"t": 1794490053.9738371,
 "last": 0
 }
 },
