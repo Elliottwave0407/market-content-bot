@@ -360,7 +360,8 @@
 "c9f5a0f9-7a30-425b-9a36-9558c64df291",
 "a489c4e0-1050-47dd-8e30-65857297c80b",
 "981a9c94-8da8-48a8-9a16-1f9aa0dd5494",
-"bb662bda-fd1d-43d3-8e60-5b6b60214359"
+"bb662bda-fd1d-43d3-8e60-5b6b60214359",
+"be752895-3340-4460-800f-be4fe8bf8fd6"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -3699,7 +3700,8 @@
 "504643|Sep-26|na",
 "507878|Sep-26|consolidated",
 "504058|Sep-26|consolidated",
-"544052|Sep-26|standalone"
+"544052|Sep-26|standalone",
+"509055|Sep-26|consolidated"
 ],
 "pending": {
 "ecc0a76e-25ad-4347-8763-8bee615feb50": {
@@ -4006,44 +4008,6 @@
 "last": 1794475644.043553,
 "alerted": false
 },
-"be752895-3340-4460-800f-be4fe8bf8fd6": {
-"rec": {
-"NEWSID": "be752895-3340-4460-800f-be4fe8bf8fd6",
-"SCRIP_CD": 509055,
-"XML_NAME": "ANN_509055_BE752895-3340-4460-800F-BE4FE8BF8FD6",
-"NEWSSUB": "Visaka Industries Ltd - 509055 - Outcome Of The Board Meeting",
-"DT_TM": "2026-11-12T14:50:23.707",
-"NEWS_DT": "2026-11-12T14:50:23.707",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "cbb1068f-0cdb-4e4c-b337-05bdf969c960.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/visaka-industries-ltd/visakaind/509055/",
-"SLONGNAME": "Visaka Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 10,
-"News_submission_dt": "2026-11-12T14:50:22",
-"DissemDT": "2026-11-12T14:50:23.707",
-"TimeDiff": "00:00:01",
-"Fld_Attachsize": 5669712,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794475644.043553,
-"last": 1794475644.043553,
-"alerted": false
-},
 "ae8a53bc-8bf0-459e-bec5-ed3ade0712fe": {
 "rec": {
 "NEWSID": "ae8a53bc-8bf0-459e-bec5-ed3ade0712fe",
@@ -4199,7 +4163,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 86
+"2026-11-12": 88
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -4226,7 +4190,7 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 63,
+"ok": 64,
 "429": 0,
 "other": 16
 },
@@ -4241,7 +4205,7 @@
 "other": 4
 },
 "main": {
-"ok": 90,
+"ok": 92,
 "429": 1,
 "other": 21
 }
@@ -4505,7 +4469,8 @@
 "ea2d1322-3eaa-4c91-95e6-d4b6da730cd7": 1,
 "05a72045-84ee-48af-a558-fdb3f4d48be6": 1,
 "156f507b-c608-4437-85bf-304ecf1b1fe3": 1,
-"a489c4e0-1050-47dd-8e30-65857297c80b": 1
+"a489c4e0-1050-47dd-8e30-65857297c80b": 1,
+"be752895-3340-4460-800f-be4fe8bf8fd6": 1
 },
 "lag": [
 [
@@ -4879,6 +4844,10 @@
 [
 "Unitech Ltd",
 8
+],
+[
+"Visaka Industries Ltd",
+7
 ]
 ],
 "pdfposted": {
@@ -5400,6 +5369,16 @@
 "rev": 1077.3680000000002,
 "pat": -8084.508000000001,
 "t": 1794475673.9640496,
+"last": 0
+},
+"509055|Sep-26|consolidated": {
+"code": "509055",
+"name": "Visaka Industries Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 3992.4210000000003,
+"pat": 713.0,
+"t": 1794476135.3451495,
 "last": 0
 }
 },
