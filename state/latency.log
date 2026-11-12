@@ -1766,3 +1766,5 @@
 12 16:33:28 ready 531600|Sep-26|standalone kind=line waited_min=162.9 tries=1 pdf_log=rule reader Gogia Capital Growth Ltd: rule: no results table page | ocr: rule: no results table page | nim reader Gogia Capital Growth Ltd: ok (gemini: gemini s
 12 16:36:12 wait 518053 Sri Chakra Cement Ltd: numbers not yet on BSE
 12 16:37:36 ready 539123|Sep-26|standalone kind=photo waited_min=37.7 tries=1 pdf_log=rule reader V B Industries Ltd: rule: stan: no revenue row | nim reader V B Industries Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col V B In
+12 16:48:40 pdf nim reader Indus Fila Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 
+12 16:48:40 pdf pdf read failed Indus Fila Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 5
