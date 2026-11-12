@@ -716,7 +716,9 @@
 "4852f783-68cf-4088-92fc-56db29c125ee",
 "b56f03c0-8f1f-4964-a121-26dbb880e008",
 "9ac3f6e4-5993-40e2-9e1e-920a904706c5",
-"929f4000-9515-4b53-99dc-910bd0939092"
+"929f4000-9515-4b53-99dc-910bd0939092",
+"55460c06-b47c-441c-b4e1-e7b0fc1ff9da",
+"a017ff2a-3b67-4f60-9e37-960038bd3200"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4295,7 +4297,9 @@
 "530951|Sep-26|na",
 "542684|Sep-26|standalone",
 "541112|Sep-26|na",
-"544372|Sep-26|na"
+"544372|Sep-26|na",
+"501700|Sep-26|consolidated",
+"517356|Sep-26|na"
 ],
 "pending": {
 "c513a124-f5a5-4280-a4fa-2401bb35eac3": {
@@ -4515,44 +4519,6 @@
 "DissemDT": "2026-11-12T18:34:27.997",
 "TimeDiff": "00:00:00",
 "Fld_Attachsize": 6123950,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794489517.4116125,
-"last": 1794493879.0260274,
-"alerted": false
-},
-"a017ff2a-3b67-4f60-9e37-960038bd3200": {
-"rec": {
-"NEWSID": "a017ff2a-3b67-4f60-9e37-960038bd3200",
-"SCRIP_CD": 517356,
-"XML_NAME": "ANN_517356_A017FF2A-3B67-4F60-9E37-960038BD3200",
-"NEWSSUB": "ACI Infocom Ltd - 517356 - Financials Results For The Quarter And Half Year Ended September 30Th, 2026.",
-"DT_TM": "2026-11-12T18:18:05.153",
-"NEWS_DT": "2026-11-12T18:18:05.153",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "467bf0a2-9494-4b10-ba27-453258f28918.pdf",
-"MORE": "",
-"HEADLINE": "Financial Results for the Quarter and Half year ended September 30th, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/aci-infocom-ltd/aciin/517356/",
-"SLONGNAME": "ACI Infocom Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 28,
-"News_submission_dt": "2026-11-12T18:18:05",
-"DissemDT": "2026-11-12T18:18:05.153",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1396123,
 "SUBCATNAME": "Financial Results",
 "BSENEWSID": null,
 "INVESTOR_PRESENTATION": null,
@@ -5327,7 +5293,7 @@
 },
 "gem_use": {
 "2026-11-11": 243,
-"2026-11-12": 404
+"2026-11-12": 406
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5354,24 +5320,24 @@
 },
 "2026-11-12": {
 "results-key": {
-"ok": 360,
+"ok": 361,
 "429": 14,
-"other": 161
+"other": 163
 },
 "vision-key": {
 "ok": 111,
 "429": 9,
-"other": 118
+"other": 119
 },
 "concall-key": {
-"ok": 226,
+"ok": 227,
 "429": 9,
-"other": 210
+"other": 211
 },
 "main": {
 "ok": 337,
-"429": 19,
-"other": 93
+"429": 20,
+"other": 94
 }
 }
 },
@@ -5887,7 +5853,8 @@
 "7f63885a-008d-444d-8961-4622f47da430": 1,
 "32fdae2c-f91a-4ec3-a00d-32fcdec5216a": 1,
 "c68b2481-630c-4c99-a91c-36d2f22de1ba": 1,
-"99b86b3c-2732-4ae6-b487-4dfcb5a8000a": 1
+"99b86b3c-2732-4ae6-b487-4dfcb5a8000a": 1,
+"55460c06-b47c-441c-b4e1-e7b0fc1ff9da": 1
 },
 "lag": [
 [
@@ -6616,6 +6583,10 @@
 ],
 [
 "Shreenath Paper Products Ltd",
+125
+],
+[
+"ACI Infocom Ltd",
 125
 ]
 ],
@@ -8188,6 +8159,16 @@
 "rev": 637.7950000000001,
 "pat": -37.442,
 "t": 1794497591.9203985,
+"last": 0
+},
+"501700|Sep-26|consolidated": {
+"code": "501700",
+"name": "IndiaNivesh Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 1.027,
+"pat": 0.5780000000000001,
+"t": 1794498755.6983142,
 "last": 0
 }
 },
