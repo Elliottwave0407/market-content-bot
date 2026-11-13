@@ -1580,3 +1580,11 @@
 13 13:16:05 wait 524642 Sikozy Realtors Ltd: numbers not yet on BSE
 13 13:16:07 ready 526209|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Sikozy Realtors Ltd: rule: no results table page | ocr: rule: no results table page | rule reader K S Oils Ltd-$: ok | pdf current col K S Oils Ltd-
 13 13:18:02 ready 512265|Sep-26|standalone kind=photo waited_min=97.8 tries=1 pdf_log=rule reader Avon Mercantile Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Avon Mercantile Ltd standalone ok=True/1: reve
+13 13:19:37 pdf strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key:
+13 13:19:37 pdf rule reader Dharani Sugars & Chemicals Ltd: rule: no results table page | ocr: rule: no results table page
+13 13:19:37 pdf strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key:
+13 13:19:37 pdf pdf current col Dharani Sugars & Chemicals Ltd standalone ok=False/1: revenue=120.75, other_income=None, total_income=120.75, total_expenses=843.25, finance_costs=1050.44, depreciation=540.13, pbt=-1772.84, tax=None, pat=-1772.84,
+13 13:19:37 pdf pdf history mismatch Dharani Sugars & Chemicals Ltd standalone cols=['September 30, 2026', 'June 30, 2026', 'September 30, 2025'] :: q-1: pdf rev 4.976 pat -199.67700000000002 | bse rev None pat None (Rs mn); q-4: pdf rev 17.669 p
+13 13:19:37 pdf rule reader Nivi Trading Ltd: rule: stan: missing ['pat'] n=6
+13 13:19:37 pdf pdf current col Nivi Trading Ltd standalone ok=True/2: revenue=2.39, other_income=0.4, total_income=2.79, total_expenses=3.25, finance_costs=None, depreciation=None, pbt=-0.46, tax=None, pat=-0.46, eps=-0.04
+13 13:19:37 pdf pdf incomplete Nivi Trading Ltd standalone: missing ['revenue'] - not posting from PDF
