@@ -1079,7 +1079,12 @@
 "ccef40f3-434b-4184-aeb5-143d80e1d48d",
 "92f43bee-8ad6-419a-bd78-605b6c73e77c",
 "9b945572-0b81-4896-babf-f12627c45615",
-"e45b239e-e44b-417c-8d20-62625888f18e"
+"e45b239e-e44b-417c-8d20-62625888f18e",
+"f858242a-0778-4c8e-8c0c-c662fc39c796",
+"872f7884-06da-4ea7-98dd-11802dff7aaf",
+"e29ab247-0d94-4cb9-b1f1-8c7af4094812",
+"f20d8fc6-7e10-4e4c-aca4-1be69352bd70",
+"d701a8ce-1130-46ed-8bbb-6f79a5709a2f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4918,7 +4923,10 @@
 "544636|Sep-26|na",
 "526113|Sep-26|standalone",
 "540174|Sep-26|consolidated",
-"544296|Sep-26|consolidated"
+"544296|Sep-26|consolidated",
+"539835|Sep-26|standalone",
+"511632|Sep-26|standalone",
+"517526|Sep-26|standalone"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5374,7 +5382,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794564136.9360657,
-"last": 1794564136.9360657,
+"last": 1794565192.1423147,
 "alerted": false
 },
 "deebad97-1ed1-4f2e-860a-fe419607b673": {
@@ -5571,7 +5579,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 184
+"2026-11-13": 188
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5625,7 +5633,7 @@
 "other": 153
 },
 "results-key": {
-"ok": 48,
+"ok": 58,
 "429": 7,
 "other": 53
 },
@@ -6027,7 +6035,10 @@
 "fc6b0713-02c6-457e-a2ad-262dfea40600": 1,
 "cd38213e-4eb8-4b27-bb12-c05e257c92dc": 1,
 "ccef40f3-434b-4184-aeb5-143d80e1d48d": 1,
-"9b945572-0b81-4896-babf-f12627c45615": 1
+"9b945572-0b81-4896-babf-f12627c45615": 1,
+"e29ab247-0d94-4cb9-b1f1-8c7af4094812": 1,
+"f20d8fc6-7e10-4e4c-aca4-1be69352bd70": 1,
+"d701a8ce-1130-46ed-8bbb-6f79a5709a2f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6354,7 +6365,8 @@
 "08c4756c-51c8-47fa-baba-fff54e0b7098": 1,
 "b36c1f72-7d86-49fb-aa54-2546cc6b55dd": 1,
 "1f8bc59f-04fa-4b60-9b8c-84268e6dfa35": 1,
-"e45b239e-e44b-417c-8d20-62625888f18e": 1
+"e45b239e-e44b-417c-8d20-62625888f18e": 1,
+"60bc152a-3de8-4b67-9bc4-7b5e81f822f1": 1
 },
 "lag": [
 [
@@ -8828,6 +8840,36 @@
 "pat": 0.6900000000000001,
 "t": 1794565901.5732293,
 "last": 0
+},
+"539835|Sep-26|standalone": {
+"code": "539835",
+"name": "Superior Finlease Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1.052,
+"pat": 0.231,
+"t": 1794566045.1694815,
+"last": 0
+},
+"511632|Sep-26|standalone": {
+"code": "511632",
+"name": "Olympic Management & Financial Services Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.44500000000000006,
+"pat": 0.025,
+"t": 1794566074.5681741,
+"last": 0
+},
+"517526|Sep-26|standalone": {
+"code": "517526",
+"name": "Inditalia Refcon Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": -0.13799999999999998,
+"t": 1794566081.9084456,
+"last": 0
 }
 },
 "half_q": {
@@ -9313,6 +9355,13 @@
 "SLONGNAME": "Purple Wave Infocom Ltd",
 "ATTACHMENTNAME": "5f283116-2abe-405c-9459-2dbcd1d4c585.pdf",
 "NEWS_DT": "2026-11-13T15:45:48.797"
+},
+"872f7884-06da-4ea7-98dd-11802dff7aaf": {
+"NEWSID": "872f7884-06da-4ea7-98dd-11802dff7aaf",
+"SCRIP_CD": 538667,
+"SLONGNAME": "Sirohia & Sons Ltd",
+"ATTACHMENTNAME": "bebf8e06-3682-4555-81df-4804ba21cad0.pdf",
+"NEWS_DT": "2026-11-13T15:44:25.34"
 }
 },
 "audit": [
