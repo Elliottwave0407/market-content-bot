@@ -1402,7 +1402,10 @@
 "2c2b02ac-97cb-4585-9a5b-178606f8c887",
 "125f932d-197e-4072-9d67-a60ffa6d7a92",
 "03d31ccd-f797-414e-ab1c-3dd7e85d364d",
-"f304ed00-8056-4705-a890-290b81a70c3a"
+"f304ed00-8056-4705-a890-290b81a70c3a",
+"23d6c515-ee14-414b-98ae-ba6bbdd362ac",
+"8b8846fc-6e80-4117-801c-1afec3cc1c0f",
+"370d411a-e927-498f-b8bf-f21769fce7e2"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5497,7 +5500,9 @@
 "507609|Sep-26|na",
 "517397|Sep-26|standalone",
 "507808|Sep-26|standalone",
-"539032|Sep-26|standalone"
+"539032|Sep-26|standalone",
+"500147|unverified|8b8846fc-6e80-4117-801c-1afec3cc1c0f",
+"540701|Sep-26|consolidated"
 ],
 "pending": {
 "449368db-97c5-424b-b174-7ba0e538bcc7": {
@@ -6260,44 +6265,6 @@
 "last": 1794585138.0705318,
 "alerted": false
 },
-"23d6c515-ee14-414b-98ae-ba6bbdd362ac": {
-"rec": {
-"NEWSID": "23d6c515-ee14-414b-98ae-ba6bbdd362ac",
-"SCRIP_CD": 533333,
-"XML_NAME": "ANN_533333_23D6C515-EE14-414B-98AE-BA6BBDD362AC",
-"NEWSSUB": "Fineotex Chemical Ltd - 533333 - Financial Result For The Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-13T21:05:04.277",
-"NEWS_DT": "2026-11-13T21:05:04.277",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "e46249b2-1b3d-491b-bf86-01c08f87e18e.pdf",
-"MORE": "",
-"HEADLINE": "Financial Result for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/fineotex-chemical-ltd/fcl/533333/",
-"SLONGNAME": "Fineotex Chemical Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 51,
-"News_submission_dt": "2026-11-13T21:05:04",
-"DissemDT": "2026-11-13T21:05:04.277",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 9187584,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794585138.0705318,
-"last": 1794585138.0705318,
-"alerted": false
-},
 "4121d3ac-6495-4c9f-bbc4-18573b018c92": {
 "rec": {
 "NEWSID": "4121d3ac-6495-4c9f-bbc4-18573b018c92",
@@ -6758,7 +6725,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 509
+"2026-11-13": 514
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -6818,11 +6785,11 @@
 },
 "concall-key": {
 "ok": 415,
-"429": 21,
+"429": 22,
 "other": 107
 },
 "vision-key": {
-"ok": 325,
+"ok": 341,
 "429": 16,
 "other": 125
 }
@@ -7773,7 +7740,8 @@
 "15508a60-3e15-46dc-95e1-cab8289f2613": 1,
 "b84e70ef-091f-49e8-9681-9d57526db7f2": 1,
 "59a3fd20-2a59-4b9c-b973-2b608102ace0": 1,
-"02115389-2626-412c-a532-2a7cfe92ea1f": 1
+"02115389-2626-412c-a532-2a7cfe92ea1f": 1,
+"370d411a-e927-498f-b8bf-f21769fce7e2": 1
 },
 "lag": [
 [
@@ -11346,6 +11314,16 @@
 "rev": 13.437000000000001,
 "pat": 0.219,
 "t": 1794587626.747302,
+"last": 0
+},
+"540701|Sep-26|consolidated": {
+"code": "540701",
+"name": "Dishman Carbogen Amcis Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 5073.7,
+"pat": -667.3000000000001,
+"t": 1794587902.9464858,
 "last": 0
 }
 },
