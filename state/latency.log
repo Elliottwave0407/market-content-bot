@@ -1530,3 +1530,7 @@
 13 06:05:12 pdf pdf incomplete Photon Capital Advisors Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 13 06:06:19 pdf pdf current col Photon Capital Advisors Ltd standalone ok=True/3: revenue=113.0, other_income=73.36, total_income=186.36, total_expenses=34.3, finance_costs=None, depreciation=0.28, pbt=152.06, tax=88.87, pat=63.19, eps=2.32
 13 06:06:19 pdf pdf incomplete Photon Capital Advisors Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+13 06:06:23 pdf nim reader Tusaldah Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gemini 
+13 06:06:23 pdf pdf read failed Tusaldah Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention
+13 06:06:59 pdf nim reader Photon Capital Advisors Ltd: ok (gemini: gemini skipped (quota/backoff))
+13 06:07:35 seen 524520 KMC Speciality Hospitals (In cat=Board Meeting early=True bse_time=11:37:01 dissem=11:37:01
