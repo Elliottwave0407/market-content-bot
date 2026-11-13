@@ -953,7 +953,9 @@
 "333a2e14-46de-45e1-9b15-0505a1726ee5",
 "e6f2cbfe-1bf6-42f8-8497-c373936f678f",
 "45d7ad6a-f5be-493d-9f15-4d8b02b687d7",
-"1d4e0823-ae30-4e72-8ea1-93e95d021a68"
+"1d4e0823-ae30-4e72-8ea1-93e95d021a68",
+"b5262aac-7121-4108-abe1-2bd4e7fad350",
+"dc38c83b-96be-4dfa-8c64-f0e008e3fb30"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4705,7 +4707,8 @@
 "544337|Sep-26|standalone",
 "511533|Sep-26|standalone",
 "514326|Sep-26|standalone",
-"526139|Sep-26|consolidated"
+"526139|Sep-26|consolidated",
+"521242|Sep-26|standalone"
 ],
 "pending": {
 "516c8d60-afbb-4ada-9e6d-a8272e12c06e": {
@@ -5168,7 +5171,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 43
+"2026-11-13": 44
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5217,19 +5220,19 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 99,
+"ok": 100,
 "429": 1,
 "other": 35
 },
 "results-key": {
 "ok": 2,
 "429": 0,
-"other": 17
+"other": 18
 },
 "concall-key": {
 "ok": 2,
 "429": 0,
-"other": 6
+"other": 7
 },
 "vision-key": {
 "ok": 4,
@@ -5579,7 +5582,8 @@
 "75d66ac6-dd6e-427b-a361-b63f8d027d94": 1,
 "333a2e14-46de-45e1-9b15-0505a1726ee5": 1,
 "e6f2cbfe-1bf6-42f8-8497-c373936f678f": 1,
-"45d7ad6a-f5be-493d-9f15-4d8b02b687d7": 1
+"45d7ad6a-f5be-493d-9f15-4d8b02b687d7": 1,
+"dc38c83b-96be-4dfa-8c64-f0e008e3fb30": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5865,7 +5869,8 @@
 "b7e0a92f-c484-4f4c-b316-affaa99d636c": 1,
 "14aaa644-184e-4a34-ab8c-a3dc26458ae4": 1,
 "c74be993-c304-4e18-8cbc-16b95dee8460": 1,
-"1d4e0823-ae30-4e72-8ea1-93e95d021a68": 1
+"1d4e0823-ae30-4e72-8ea1-93e95d021a68": 1,
+"b5262aac-7121-4108-abe1-2bd4e7fad350": 1
 },
 "lag": [
 [
@@ -7858,6 +7863,16 @@
 "rev": 0.6000000000000001,
 "pat": -3.4530000000000003,
 "t": 1794559056.9630172,
+"last": 0
+},
+"521242|Sep-26|standalone": {
+"code": "521242",
+"name": "Kandagiri Spinning Mills Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 2.511,
+"pat": -6.420000000000001,
+"t": 1794559101.4227166,
 "last": 0
 }
 },
