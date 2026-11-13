@@ -1505,3 +1505,16 @@
 13 21:28:38 ready 517077|Sep-26|na kind=photo waited_min=260.8 tries=0 pdf_log=nim reader Ind Agiv Commerce Ltd: nim deepseek-v4.1-flash: 7 numbers not found in the filing text (possible invention): rejected e.g. [('stan',  | nim nemotron-
 13 21:31:34 ready 512618|Sep-26|na kind=photo waited_min=260.8 tries=1 pdf_log=
 13 21:35:25 ready 539402|Sep-26|consolidated kind=photo waited_min=186.1 tries=0 pdf_log=
+13 21:37:48 pdf pdf current col Agribio Spirits Ltd consolidated ok=False/3: revenue=1629.9, other_income=28.76, total_income=1658.66, total_expenses=1642.27, finance_costs=14.09, depreciation=13.89, pbt=16.39, tax=15.51, pat=77.21, eps=0.71
+13 21:37:48 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:37:48 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:40:18 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:40:18 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:41:50 ready 544952|Sep-26|consolidated kind=photo waited_min=164.7 tries=8 pdf_log=
+13 21:43:24 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:43:24 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:43:24 pdf pdf current col Agribio Spirits Ltd consolidated ok=False/3: revenue=1629.9, other_income=28.76, total_income=1658.66, total_expenses=1642.27, finance_costs=14.09, depreciation=13.89, pbt=16.39, tax=15.51, pat=77.21, eps=0.71
+13 21:43:24 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:43:24 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:43:24 pdf nim reader Sizemasters Technology Ltd: nim deepseek-v4.1-flash: 10 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionP
+13 21:43:24 pdf pdf read failed Sizemasters Technology Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 10 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: ReadTimeo
