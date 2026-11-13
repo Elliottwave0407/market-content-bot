@@ -1773,3 +1773,8 @@
 13 05:41:59 pdf pdf current col Tusaldah Ltd standalone ok=True/3: revenue=214.53, other_income=0.04, total_income=214.56, total_expenses=222.09, finance_costs=0.25, depreciation=1.7, pbt=-7.52, tax=-0.02, pat=-7.5, eps=-0.03
 13 05:41:59 pdf pdf incomplete Tusaldah Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
 13 05:44:10 ready 544267|Sep-26|na kind=photo waited_min=45.7 tries=8 pdf_log=
+13 05:45:25 pdf nim reader Tusaldah Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 42
+13 05:45:25 pdf pdf read failed Tusaldah Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: timeout on gemini-flash-latest (ReadTimeout) | vision-key: HTTP 429 (per-
+13 05:45:48 pdf rule reader Tusaldah Ltd: rule: no results table page | ocr: rule: no results table page
+13 05:47:09 pdf nim reader Tusaldah Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gemini 
+13 05:47:09 pdf pdf read failed Tusaldah Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention
