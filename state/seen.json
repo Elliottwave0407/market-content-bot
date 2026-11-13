@@ -1097,7 +1097,9 @@
 "e078e1c3-506a-4f47-a7e9-59dde3ac742c",
 "006261bd-1fd2-4ed4-abe0-89af12c4ae88",
 "d2a7ed60-f695-47bb-a1d7-f8aae579697f",
-"ecac0775-ff43-468b-b67e-942533a1ffcf"
+"ecac0775-ff43-468b-b67e-942533a1ffcf",
+"5f0fcaec-77e4-411a-917c-f6ee1f6c3eb8",
+"217ab7e9-1111-4383-a19f-19c85b8dad58"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4947,7 +4949,9 @@
 "532067|Sep-26|standalone",
 "543460|Sep-26|consolidated",
 "520059|Sep-26|consolidated",
-"531146|Sep-26|consolidated"
+"531146|Sep-26|consolidated",
+"544532|Sep-26|consolidated",
+"544485|Sep-26|standalone"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5368,44 +5372,6 @@
 "last": 1794565192.1423147,
 "alerted": false
 },
-"217ab7e9-1111-4383-a19f-19c85b8dad58": {
-"rec": {
-"NEWSID": "217ab7e9-1111-4383-a19f-19c85b8dad58",
-"SCRIP_CD": 544485,
-"XML_NAME": "ANN_544485_217AB7E9-1111-4383-A19F-19C85B8DAD58",
-"NEWSSUB": "Regaal Resources Ltd - 544485 - Results-Financial Results For The Period Ended September 30, 2026",
-"DT_TM": "2026-11-13T15:45:48.613",
-"NEWS_DT": "2026-11-13T15:45:48.613",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "eda64f1a-d0bb-453f-a21a-988710bdfc4f.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed the Unaudited standalone Financial results for the quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/regaal-resources-ltd/regaal/544485/",
-"SLONGNAME": "Regaal Resources Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 17,
-"News_submission_dt": "2026-11-13T15:45:48",
-"DissemDT": "2026-11-13T15:45:48.613",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6125429,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794565192.1423147,
-"last": 1794565192.1423147,
-"alerted": false
-},
 "d8c0ed2c-9fe3-450f-8555-20a4acd06452": {
 "rec": {
 "NEWSID": "d8c0ed2c-9fe3-450f-8555-20a4acd06452",
@@ -5486,7 +5452,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 197
+"2026-11-13": 198
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5540,7 +5506,7 @@
 "other": 153
 },
 "results-key": {
-"ok": 83,
+"ok": 86,
 "429": 7,
 "other": 54
 },
@@ -5951,7 +5917,8 @@
 "91521d69-75ae-491b-a8c0-05688e28fa0f": 1,
 "1a78d011-9280-4f7e-a587-3851e02c3ecb": 1,
 "006261bd-1fd2-4ed4-abe0-89af12c4ae88": 1,
-"d2a7ed60-f695-47bb-a1d7-f8aae579697f": 1
+"d2a7ed60-f695-47bb-a1d7-f8aae579697f": 1,
+"217ab7e9-1111-4383-a19f-19c85b8dad58": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6284,13 +6251,10 @@
 "2fb51b69-a688-452b-b4e8-53d97127d29c": 1,
 "2e719bcb-ec60-43ad-978b-f7a9a1573290": 1,
 "e078e1c3-506a-4f47-a7e9-59dde3ac742c": 1,
-"ecac0775-ff43-468b-b67e-942533a1ffcf": 1
+"ecac0775-ff43-468b-b67e-942533a1ffcf": 1,
+"5f0fcaec-77e4-411a-917c-f6ee1f6c3eb8": 1
 },
 "lag": [
-[
-"Valley Magnesite Company Ltd",
-45
-],
 [
 "Pecos Hotels and Pubs Ltd",
 50
@@ -7486,6 +7450,10 @@
 [
 "BN Agrochem Ltd",
 55
+],
+[
+"Regaal Resources Ltd",
+18
 ]
 ],
 "pdfposted": {
@@ -8827,6 +8795,26 @@
 "rev": 8092.771000000001,
 "pat": 375.76800000000003,
 "t": 1794566640.1318395,
+"last": 0
+},
+"544532|Sep-26|consolidated": {
+"code": "544532",
+"name": "Solarworld Energy Solutions Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2439.71,
+"pat": 41.89,
+"t": 1794566714.5623653,
+"last": 0
+},
+"544485|Sep-26|standalone": {
+"code": "544485",
+"name": "Regaal Resources Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 3165.62,
+"pat": 231.84,
+"t": 1794566724.7736328,
 "last": 0
 }
 },
