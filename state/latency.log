@@ -1540,3 +1540,5 @@
 13 21:59:36 ready 539546|Sep-26|na kind=photo waited_min=181.0 tries=7 pdf_log=
 13 22:00:01 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
 13 22:00:01 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 22:01:46 pdf nim reader Agribio Spirits Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: gemini skipped (quota/backof
+13 22:01:46 pdf pdf read failed Agribio Spirits Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(
