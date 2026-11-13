@@ -963,7 +963,10 @@
 "e3d53f47-0532-4175-87f2-b5bb17b42797",
 "43daab6d-9a94-460d-967f-b9d9772886a4",
 "f6366c86-0393-4347-8a79-7103ee75cb0b",
-"5dcc01b2-8133-475c-8cfd-4e77b0e3759f"
+"5dcc01b2-8133-475c-8cfd-4e77b0e3759f",
+"052ac5fb-6df3-4813-b507-20a9b0ae1cdc",
+"5850b1e4-2c5a-453c-ba4e-97c01e2cc704",
+"6fef54ba-480f-4e14-8446-e8c6a010648a"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4720,7 +4723,9 @@
 "544645|Sep-26|na",
 "501425|Sep-26|consolidated",
 "513554|Sep-26|consolidated",
-"544199|Sep-26|consolidated"
+"544199|Sep-26|consolidated",
+"500240|Sep-26|consolidated",
+"520043|Sep-26|standalone"
 ],
 "pending": {
 "06bc2272-ad2e-4aac-b802-6c3f7782dd9a": {
@@ -4986,8 +4991,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794557681.7750776,
-"last": 1794557681.7750776,
-"alerted": false
+"last": 1794559315.5115294,
+"alerted": true
 },
 "ea9486bc-746c-49b8-8599-ecac03af93b0": {
 "rec": {
@@ -5024,8 +5029,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794557681.7750776,
-"last": 1794557681.7750776,
-"alerted": false
+"last": 1794559315.5115294,
+"alerted": true
 },
 "9e019dd2-ba2d-4242-bcfc-f48b478878e2": {
 "rec": {
@@ -5259,7 +5264,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 54
+"2026-11-13": 56
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5308,7 +5313,7 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 115,
+"ok": 117,
 "429": 1,
 "other": 44
 },
@@ -5671,7 +5676,8 @@
 "333a2e14-46de-45e1-9b15-0505a1726ee5": 1,
 "e6f2cbfe-1bf6-42f8-8497-c373936f678f": 1,
 "45d7ad6a-f5be-493d-9f15-4d8b02b687d7": 1,
-"dc38c83b-96be-4dfa-8c64-f0e008e3fb30": 1
+"dc38c83b-96be-4dfa-8c64-f0e008e3fb30": 1,
+"6fef54ba-480f-4e14-8446-e8c6a010648a": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5961,7 +5967,9 @@
 "b5262aac-7121-4108-abe1-2bd4e7fad350": 1,
 "508a189c-77d9-43f4-a5ba-64f03602887b": 1,
 "43daab6d-9a94-460d-967f-b9d9772886a4": 1,
-"f6366c86-0393-4347-8a79-7103ee75cb0b": 1
+"f6366c86-0393-4347-8a79-7103ee75cb0b": 1,
+"052ac5fb-6df3-4813-b507-20a9b0ae1cdc": 1,
+"5850b1e4-2c5a-453c-ba4e-97c01e2cc704": 1
 },
 "lag": [
 [
@@ -7972,6 +7980,26 @@
 "rev": 2.511,
 "pat": -6.420000000000001,
 "t": 1794559101.4227166,
+"last": 0
+},
+"500240|Sep-26|consolidated": {
+"code": "500240",
+"name": "Kinetic Engineering Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 783.1,
+"pat": -112.10000000000001,
+"t": 1794559465.8086162,
+"last": 0
+},
+"520043|Sep-26|standalone": {
+"code": "520043",
+"name": "Munjal Showa Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 3979.8050000000003,
+"pat": 88.26,
+"t": 1794559513.8290565,
 "last": 0
 }
 },
