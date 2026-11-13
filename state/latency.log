@@ -1770,3 +1770,6 @@
 13 05:23:51 pdf rule reader Subam Papers Ltd: rule: no results table page | ocr: rule: no results table page
 13 05:38:24 seen 531301 Tusaldah Ltd cat=Result early=False bse_time=11:07:28 dissem=11:07:28
 13 05:38:45 wait 531301 Tusaldah Ltd: confirming that no consolidated statement exists
+13 05:41:59 pdf pdf current col Tusaldah Ltd standalone ok=True/3: revenue=214.53, other_income=0.04, total_income=214.56, total_expenses=222.09, finance_costs=0.25, depreciation=1.7, pbt=-7.52, tax=-0.02, pat=-7.5, eps=-0.03
+13 05:41:59 pdf pdf incomplete Tusaldah Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF
+13 05:44:10 ready 544267|Sep-26|na kind=photo waited_min=45.7 tries=8 pdf_log=
