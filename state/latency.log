@@ -1706,3 +1706,13 @@
 13 09:38:12 ready 532145|Sep-26|standalone kind=photo waited_min=139.6 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | pdf current col H S India Ltd standalone ok=False/3: revenue=837
 13 09:40:33 wait 514264 Seasons Textiles Ltd-$: numbers not yet on BSE
 13 09:41:20 wait 544636 Western Overseas Study Abroa: numbers not yet on BSE
+13 09:42:22 ready 538952|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Clinitech Laboratory 
+13 09:42:32 ready 532078|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Abhinav Leasing & Finance Ltd standalone ok=True/1: revenue=119.22, other_income=None, total_income=119.22, total_expenses=66.5, finance_costs=5
+13 09:42:45 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Clinitech Laboratory Ltd
+13 09:42:45 pdf rule reader Abhinav Leasing & Finance Ltd: rule: no results table page | ocr: rule: no results table page
+13 09:42:45 pdf pdf current col Abhinav Leasing & Finance Ltd standalone ok=True/1: revenue=119.22, other_income=None, total_income=119.22, total_expenses=66.5, finance_costs=50.78, depreciation=0.36, pbt=52.72, tax=None, pat=52.72, eps=0.11
+13 09:42:45 pdf rule reader Monind Ltd: ok
+13 09:42:45 pdf pdf current col Monind Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=73.56, finance_costs=67.69, depreciation=0.0, pbt=-73.56, tax=0.0, pat=-73.56, eps=-2.0
+13 09:42:45 pdf rule reader Monind Ltd: ok
+13 09:42:45 pdf pdf current col Monind Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=73.56, finance_costs=67.69, depreciation=0.0, pbt=-73.56, tax=0.0, pat=-73.56, eps=-2.0
+13 09:42:45 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
