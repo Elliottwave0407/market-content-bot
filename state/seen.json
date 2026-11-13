@@ -1360,7 +1360,12 @@
 "95a3327c-a782-40d8-b2ef-64468da20795",
 "442ce24e-d3b8-489a-af95-afcb3835c4e3",
 "8caa03af-b0a6-4917-9bce-223707bd115e",
-"151b2429-13f7-4cda-961d-a45cd725caff"
+"151b2429-13f7-4cda-961d-a45cd725caff",
+"c9f27445-00b9-4154-b820-4cbaa44ce0b1",
+"fe7e053b-1fec-4d22-88dd-6326f3f196b7",
+"558cfdae-5b83-41a9-9868-add1eb24cacd",
+"28810251-67dc-4fe4-bde7-f8d30475a1ab",
+"3160278a-8216-4906-8b43-11c697cb9917"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5426,7 +5431,9 @@
 "533333|Sep-26|consolidated",
 "526532|Sep-26|consolidated",
 "533261|Sep-26|consolidated",
-"544934|Sep-26|consolidated"
+"544934|Sep-26|consolidated",
+"500645|Sep-26|consolidated",
+"543441|Sep-26|consolidated"
 ],
 "pending": {
 "c5a3726e-97ff-4d4e-bb0d-423e752cb962": {
@@ -6796,12 +6803,50 @@
 "first": 1794582682.2267768,
 "last": 1794582682.2267768,
 "alerted": false
+},
+"23d6c515-ee14-414b-98ae-ba6bbdd362ac": {
+"rec": {
+"NEWSID": "23d6c515-ee14-414b-98ae-ba6bbdd362ac",
+"SCRIP_CD": 533333,
+"XML_NAME": "ANN_533333_23D6C515-EE14-414B-98AE-BA6BBDD362AC",
+"NEWSSUB": "Fineotex Chemical Ltd - 533333 - Financial Result For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-13T21:05:04.277",
+"NEWS_DT": "2026-11-13T21:05:04.277",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "e46249b2-1b3d-491b-bf86-01c08f87e18e.pdf",
+"MORE": "",
+"HEADLINE": "Financial Result for the quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/fineotex-chemical-ltd/fcl/533333/",
+"SLONGNAME": "Fineotex Chemical Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 51,
+"News_submission_dt": "2026-11-13T21:05:04",
+"DissemDT": "2026-11-13T21:05:04.277",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 9187584,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794585138.0705318,
+"last": 1794585138.0705318,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 475
+"2026-11-13": 484
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -6865,9 +6910,9 @@
 "other": 106
 },
 "vision-key": {
-"ok": 169,
+"ok": 200,
 "429": 14,
-"other": 104
+"other": 111
 }
 }
 },
@@ -7790,7 +7835,11 @@
 "0535c5d3-7f76-4cce-a664-344ef9425643": 1,
 "f6c87ec3-c79c-430b-ac76-5aaa14ddb48d": 1,
 "95a3327c-a782-40d8-b2ef-64468da20795": 1,
-"442ce24e-d3b8-489a-af95-afcb3835c4e3": 1
+"442ce24e-d3b8-489a-af95-afcb3835c4e3": 1,
+"c9f27445-00b9-4154-b820-4cbaa44ce0b1": 1,
+"558cfdae-5b83-41a9-9868-add1eb24cacd": 1,
+"28810251-67dc-4fe4-bde7-f8d30475a1ab": 1,
+"3160278a-8216-4906-8b43-11c697cb9917": 1
 },
 "lag": [
 [
@@ -11243,6 +11292,26 @@
 "rev": 140.36800000000002,
 "pat": -54.99600000000001,
 "t": 1794584217.1652513,
+"last": 0
+},
+"500645|Sep-26|consolidated": {
+"code": "500645",
+"name": "Deepak Fertilisers & Petrochemicals Corporation Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 33339.6,
+"pat": 3937.6000000000004,
+"t": 1794585186.4687464,
+"last": 0
+},
+"543441|Sep-26|consolidated": {
+"code": "543441",
+"name": "CMS Info Systems Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 6496.16,
+"pat": 808.89,
+"t": 1794585234.2379808,
 "last": 0
 }
 },
