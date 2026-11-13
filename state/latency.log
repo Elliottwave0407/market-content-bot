@@ -1517,3 +1517,7 @@
 13 05:57:28 seen 532329 Danlaw Technologies India Lt cat=Board Meeting early=True bse_time=11:26:45 dissem=11:26:45
 13 05:58:29 seen 509084 Photon Capital Advisors Ltd cat=Board Meeting early=True bse_time=11:28:08 dissem=11:28:08
 13 06:00:45 ready 532329|Sep-26|standalone kind=photo waited_min=0.0 tries=2 pdf_log=pdf current col Danlaw Technologies India Ltd-$ standalone ok=True/3: revenue=8666.27, other_income=28.39, total_income=8694.66, total_expenses=7668.65, finance
+13 06:01:29 pdf nim reader Tusaldah Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 50
+13 06:01:29 pdf pdf read failed Tusaldah Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision-key: HTTP 429 (skipped gemi
+13 06:02:38 pdf nim reader Photon Capital Advisors Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-latest, q)
+13 06:02:41 pdf pdf incomplete Photon Capital Advisors Ltd standalone: missing ['ebitda'] - not posting from PDF
