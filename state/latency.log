@@ -1653,3 +1653,13 @@
 13 07:07:56 pdf pdf incomplete Centerac Technologies Ltd standalone: missing ['ebitda'] - not posting from PDF
 13 07:08:43 ready 531402|Sep-26|standalone kind=photo waited_min=5.2 tries=1 pdf_log=rule reader Raksan Transformers Ltd: rule: header has no quarter columns | ocr: rule: no results table page | pdf current col LWS Knitwear Ltd standalone ok=Tru
 13 07:11:06 seen 543625 SecUR Credentials Ltd cat=Result early=False bse_time=12:39:51 dissem=12:39:51
+13 07:13:44 pdf nim reader SecUR Credentials Ltd: ok (gemini: gemini skipped (quota/backoff))
+13 07:13:44 pdf pdf current col SecUR Credentials Ltd standalone ok=False/3: revenue=1325, other_income=0, total_income=1325, total_expenses=7465, finance_costs=975, depreciation=5844, pbt=-19172, tax=0, pat=-19172, eps=-0.47
+13 07:13:44 pdf pdf history mismatch SecUR Credentials Ltd standalone cols=['Sep-26', 'Jun-26', 'Sep-25'] :: q-1: pdf rev 136.5 pat -617.6 | bse rev 1.37 pat -6.18 (Rs mn); q-4: pdf rev 140.5 pat -624.5 | bse rev 1.41 pat -5.35 (Rs mn)
+13 07:14:32 pdf pdf current col Centerac Technologies Ltd standalone ok=True/2: revenue=8.67, other_income=None, total_income=8.67, total_expenses=20.02, finance_costs=0.0, depreciation=0.0, pbt=-11.35, tax=0.0, pat=-11.35, eps=-0.1
+13 07:14:34 seen 532695 Celebrity Fashions Ltd cat=Board Meeting early=True bse_time=12:43:46 dissem=12:43:46
+13 07:14:57 pdf rule reader Celebrity Fashions Ltd: rule: no results table page | ocr: rule: no results table page
+13 07:15:12 seen 544425 AJC Jewel Manufacturers Ltd cat=Board Meeting early=True bse_time=12:44:12 dissem=12:44:12
+13 07:15:12 seen 536073 Julien Agro Infratech Ltd cat=Board Meeting early=True bse_time=12:44:47 dissem=12:44:47
+13 07:15:38 pdf nim reader Gujarat Petrosynthese Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 5 numbers not found in the filing text (possible invention): rejected e.g. [(' (ge
+13 07:15:38 pdf pdf read failed Gujarat Petrosynthese Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: 
