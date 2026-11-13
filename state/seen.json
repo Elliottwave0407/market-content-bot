@@ -1067,7 +1067,11 @@
 "cd38213e-4eb8-4b27-bb12-c05e257c92dc",
 "ea9486bc-746c-49b8-8599-ecac03af93b0",
 "a3a3b930-f597-457a-9e9b-3a47becb3b3d",
-"e17a76a6-2dd1-4e74-9d03-f53f1b1bbc50"
+"e17a76a6-2dd1-4e74-9d03-f53f1b1bbc50",
+"fc478ef1-f868-4d14-84e7-484a49bb6991",
+"1dfce467-6143-4b33-9969-dd7152fcd671",
+"76a5b8bf-e3c1-44e9-9927-e3537fe3b9d5",
+"08c4756c-51c8-47fa-baba-fff54e0b7098"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4897,7 +4901,9 @@
 "532521|Sep-26|consolidated",
 "544627|Sep-26|standalone",
 "500153|Sep-26|consolidated",
-"507968|Sep-26|na"
+"507968|Sep-26|na",
+"500058|Sep-26|na",
+"526709|Sep-26|consolidated"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -4937,44 +4943,6 @@
 "first": 1794561862.0587733,
 "last": 1794565192.1423147,
 "alerted": true
-},
-"76a5b8bf-e3c1-44e9-9927-e3537fe3b9d5": {
-"rec": {
-"NEWSID": "76a5b8bf-e3c1-44e9-9927-e3537fe3b9d5",
-"SCRIP_CD": 500058,
-"XML_NAME": "ANN_500058_76A5B8BF-E3C1-44E9-9927-E3537FE3B9D5",
-"NEWSSUB": "Bihar Sponge Iron Ltd - 500058 - Un-Audited Financial Results For The 2Nd Quarter And Half Year Ended 30Th September, 2026 And Outcome Of Board Meeting Held On 13Th November, 2026",
-"DT_TM": "2026-11-13T14:50:19.65",
-"NEWS_DT": "2026-11-13T14:50:19.65",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "742f2005-1b7e-4bf7-be17-1697988c57ca.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/bihar-sponge-iron-ltd/bihspong/500058/",
-"SLONGNAME": "Bihar Sponge Iron Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 14,
-"News_submission_dt": "2026-11-13T14:50:19",
-"DissemDT": "2026-11-13T14:50:19.65",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2080134,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794561862.0587733,
-"last": 1794564136.9360657,
-"alerted": false
 },
 "95167360-5c58-4c0a-840c-a9c1bacc4ca5": {
 "rec": {
@@ -5315,7 +5283,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794564136.9360657,
-"last": 1794564136.9360657,
+"last": 1794565192.1423147,
 "alerted": false
 },
 "a4222acc-773b-4a55-8c63-565545f23076": {
@@ -5353,7 +5321,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794564136.9360657,
-"last": 1794564136.9360657,
+"last": 1794565192.1423147,
 "alerted": false
 },
 "8676a177-0d86-4296-8f2d-7264dc1826dc": {
@@ -5664,7 +5632,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 177
+"2026-11-13": 178
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5713,7 +5681,7 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 356,
+"ok": 357,
 "429": 4,
 "other": 150
 },
@@ -6441,13 +6409,10 @@
 "9f586acb-fb3d-4303-86e7-06bdd00bee44": 1,
 "7cd5d7cc-32aa-41b3-b098-3abed7a9fd96": 1,
 "9086c5fc-da58-4f50-a44b-e1d527ec257b": 1,
-"f426e781-1bfa-4d5d-b5e8-49803234f31f": 1
+"f426e781-1bfa-4d5d-b5e8-49803234f31f": 1,
+"08c4756c-51c8-47fa-baba-fff54e0b7098": 1
 },
 "lag": [
-[
-"EIH Associated Hotels Ltd-$",
-0
-],
 [
 "Shyama Computronics and Services Ltd",
 46
@@ -7642,6 +7607,10 @@
 ],
 [
 "Sahaj digital Ltd",
+56
+],
+[
+"Bihar Sponge Iron Ltd",
 56
 ]
 ],
@@ -8874,6 +8843,16 @@
 "rev": 1310.5,
 "pat": 163.23,
 "t": 1794565295.5662193,
+"last": 0
+},
+"526709|Sep-26|consolidated": {
+"code": "526709",
+"name": "Bits Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 4.375,
+"pat": 2.015,
+"t": 1794565426.6140435,
 "last": 0
 }
 },
