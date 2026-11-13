@@ -1518,3 +1518,23 @@
 13 21:43:24 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
 13 21:43:24 pdf nim reader Sizemasters Technology Ltd: nim deepseek-v4.1-flash: 10 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionP
 13 21:43:24 pdf pdf read failed Sizemasters Technology Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 10 numbers not found in the filing text (possible invention): rejected e.g. [('cons', | nim nemotron-3-ultra-550b-a55b: ReadTimeo
+13 21:45:44 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:45:44 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:46:19 pdf nim reader Agribio Spirits Ltd: ok (gemini: gemini skipped (quota/backoff))
+13 21:46:19 pdf pdf current col Agribio Spirits Ltd consolidated ok=False/3: revenue=1629.9, other_income=28.76, total_income=1658.66, total_expenses=1642.27, finance_costs=14.09, depreciation=13.89, pbt=16.39, tax=15.51, pat=77.21, eps=0.71
+13 21:46:19 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:46:19 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:46:53 pdf rule reader CSM Technologies Ltd: rule: no results table page | ocr: rule: unit not found
+13 21:46:53 pdf nim reader Raksan Transformers Ltd: nim deepseek-v4.1-flash: 6 numbers not found in the filing text (possible invention): rejected e.g. [('cons',  | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool
+13 21:46:53 pdf pdf read failed Raksan Transformers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: 6 numbers not found in the filing text (possible invention): rejected e.g. [('cons',  | nim nemotron-3-ultra-550b-a55b: ReadTimeout(
+13 21:47:08 pdf rule reader Shiv Aum Steels Ltd: rule: no results table page | ocr: rule: no results table page
+13 21:49:59 pdf rule reader Raksan Transformers Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+13 21:51:29 pdf pdf current col Agribio Spirits Ltd consolidated ok=False/3: revenue=1629.9, other_income=28.76, total_income=1658.66, total_expenses=1642.27, finance_costs=14.09, depreciation=13.89, pbt=16.39, tax=15.51, pat=77.21, eps=0.71
+13 21:51:29 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 21:51:29 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
+13 21:57:45 pdf nim reader Sizemasters Technology Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( (gemini: HTTP 429 (skipped gem
+13 21:57:45 pdf pdf read failed Sizemasters Technology Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | vision
+13 21:59:08 ready 544924|Sep-26|na kind=photo waited_min=181.0 tries=5 pdf_log=
+13 21:59:17 ready 544806|Sep-26|consolidated kind=photo waited_min=181.0 tries=3 pdf_log=
+13 21:59:28 ready 513496|Sep-26|nocons kind=photo waited_min=181.0 tries=5 pdf_log=nim reader Agribio Spirits Ltd: ok (gemini: gemini skipped (quota/backoff))
+13 21:59:36 ready 539546|Sep-26|na kind=photo waited_min=181.0 tries=7 pdf_log=
