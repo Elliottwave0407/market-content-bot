@@ -1478,7 +1478,9 @@
 "727678ab-d1b0-4274-85de-7478efdb2c7d",
 "0633a0ce-eb45-4118-b3dc-55e2ccce29fd",
 "222a86ff-a156-4db7-8ac2-a781589675fe",
-"c70f95bc-c411-4079-a627-5bdec9aebefa"
+"c70f95bc-c411-4079-a627-5bdec9aebefa",
+"7cbecfe2-bfa9-465d-ade1-e899b49538ef",
+"837af6cc-2734-4c2c-a497-d53ac3417253"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5635,7 +5637,9 @@
 "512529|Sep-26|consolidated",
 "533272|Sep-26|consolidated",
 "532395|Sep-26|consolidated",
-"532309|Sep-26|consolidated"
+"532309|Sep-26|consolidated",
+"512068|Sep-26|anomaly",
+"544833|Sep-26|consolidated"
 ],
 "pending": {
 "6495b2f2-0e42-45b8-b4b5-007ec8f50f99": {
@@ -6093,12 +6097,50 @@
 "first": 1794596208.1593614,
 "last": 1794596208.1593614,
 "alerted": false
+},
+"6965f521-2e8d-4d3c-92e7-0aaa5304dc30": {
+"rec": {
+"NEWSID": "6965f521-2e8d-4d3c-92e7-0aaa5304dc30",
+"SCRIP_CD": 513517,
+"XML_NAME": "ANN_513517_6965F521-2E8D-4D3C-92E7-0AAA5304DC30",
+"NEWSSUB": "Steelcast Ltd - 513517 - Outcome Of The 297Th Meeting Of The Board Of Directors Of STEELCAST LIMITED Held On 13Th November, 2026, At The Registered Office Of The Company At Ruvapari Road, Bhavnagar, Gujarat, 364005.",
+"DT_TM": "2026-11-13T16:46:00.06",
+"NEWS_DT": "2026-11-13T16:46:00.06",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "2cef5154-301a-436f-9808-a58d87b8d6eb.pdf",
+"MORE": "",
+"HEADLINE": "Outcome of the 297th meeting of the Board of Directors of STEELCAST LIMITED held on 13th November, 2026, at the Registered Office of the Company at Ruvapari Road, Bhavnagar, Gujarat, 364005.",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/steelcast-ltd/steelcas/513517/",
+"SLONGNAME": "Steelcast Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 55,
+"News_submission_dt": "2026-11-13T16:46:00",
+"DissemDT": "2026-11-13T16:46:00.06",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 7137099,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794596208.1593614,
+"last": 1794596208.1593614,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 583
+"2026-11-13": 585
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -7135,7 +7177,8 @@
 "f347461c-8093-41d2-bd07-d72a129be17b": 1,
 "a6e8b9e6-367e-4bca-b855-dba7367a0088": 1,
 "4b427ced-2c37-4434-abce-c08659203722": 1,
-"29dafe4f-426e-4c50-9579-9be2b9497379": 1
+"29dafe4f-426e-4c50-9579-9be2b9497379": 1,
+"837af6cc-2734-4c2c-a497-d53ac3417253": 1
 },
 "lag": [
 [
@@ -10778,6 +10821,16 @@
 "rev": 5252.86,
 "pat": 586.33,
 "t": 1794595606.473133,
+"last": 0
+},
+"544833|Sep-26|consolidated": {
+"code": "544833",
+"name": "Caliber Mining And Logistics Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 5194.536,
+"pat": -75.115,
+"t": 1794596741.4297633,
 "last": 0
 }
 },
