@@ -1576,3 +1576,19 @@
 13 06:24:03 pdf rule reader BF Investment Ltd: rule: stan: does not reconcile [million] total_expenses=[23.06, 11.52, 27.83] pbt=[469.78, 1948.95, 531.39] tax=[4.65, 489.02, 131.86] associates=[281.78, 1847.68, 365.68] pat=[465.13, 1459.93, 399.5
 13 06:24:46 seen 542367 Xelpmoc Design and Tech Ltd cat=Result early=False bse_time=11:54:20 dissem=11:54:20
 13 06:25:13 wait 542367 Xelpmoc Design and Tech Ltd: numbers not yet on BSE
+13 06:25:48 pdf nim reader Xelpmoc Design and Tech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+13 06:25:48 pdf pdf read failed Xelpmoc Design and Tech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+13 06:25:48 pdf rule reader Xelpmoc Design and Tech Ltd: rule: no results table page | ocr: rule: no results table page
+13 06:26:20 pdf rule reader Xelpmoc Design and Tech Ltd: rule: no results table page | ocr: rule: no results table page
+13 06:26:20 pdf nim reader Park Medi World Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 48 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+13 06:26:20 pdf pdf read failed Park Medi World Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 48 numbers not found in the filing text (possible i
+13 06:26:20 pdf rule reader BF Investment Ltd: rule: stan: does not reconcile [million] total_expenses=[23.06, 11.52, 27.83] pbt=[469.78, 1948.95, 531.39] tax=[4.65, 489.02, 131.86] associates=[281.78, 1847.68, 365.68] pat=[465.13, 1459.93, 399.5
+13 06:26:21 seen 531225 Xtglobal Infotech Ltd cat=Board Meeting early=True bse_time=11:55:38 dissem=11:55:38
+13 06:26:21 seen 543995 Manoj Vaibhav Gems N Jewelle cat=Result early=False bse_time=11:56:08 dissem=11:56:08
+13 06:26:51 wait 543995 Manoj Vaibhav Gems N Jewelle: numbers not yet on BSE
+13 06:27:25 seen 533303 BF Investment Ltd cat=Result early=False bse_time=11:56:33 dissem=11:56:33
+13 06:27:55 wait 533303 BF Investment Ltd: numbers not yet on BSE
+13 06:28:05 pdf nim reader Xelpmoc Design and Tech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+13 06:28:05 pdf pdf read failed Xelpmoc Design and Tech Ltd: HTTP 429 (skipped gemini-flash-lite-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | visio
+13 06:28:05 pdf nim reader BF Investment Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-lite-late)
+13 06:28:05 pdf rule reader BF Investment Ltd: rule: stan: does not reconcile [million] total_expenses=[23.06, 11.52, 27.83] pbt=[469.78, 1948.95, 531.39] tax=[4.65, 489.02, 131.86] associates=[281.78, 1847.68, 365.68] pat=[465.13, 1459.93, 399.5
