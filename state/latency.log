@@ -1536,3 +1536,11 @@
 13 06:07:35 seen 524520 KMC Speciality Hospitals (In cat=Board Meeting early=True bse_time=11:37:01 dissem=11:37:01
 13 06:09:49 pdf nim reader Photon Capital Advisors Ltd: ok (gemini: HTTP 429 (skipped gemini-flash-latest, q)
 13 06:09:54 ready 509084|Sep-26|standalone kind=photo waited_min=0.0 tries=6 pdf_log=
+13 06:10:13 pdf nim reader Tusaldah Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 42
+13 06:10:13 pdf pdf read failed Tusaldah Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 429 (ski
+13 06:10:13 pdf nim reader Park Medi World Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 47 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+13 06:10:13 pdf pdf read failed Park Medi World Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 4
+13 06:10:13 pdf nim reader Park Medi World Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 48 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: 
+13 06:10:13 pdf pdf read failed Park Medi World Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (per-day) on gemini-flash-lite-latest | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision-key: HTTP 429 (
+13 06:10:53 pdf rule reader Park Medi World Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=5
+13 06:10:53 pdf rule reader Park Medi World Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=5
