@@ -1086,7 +1086,8 @@
 "f20d8fc6-7e10-4e4c-aca4-1be69352bd70",
 "d701a8ce-1130-46ed-8bbb-6f79a5709a2f",
 "69e08e67-cc8b-4597-abca-0b668e7960f6",
-"49da8cbf-0d7d-41f3-92b4-4c102aa15f8b"
+"49da8cbf-0d7d-41f3-92b4-4c102aa15f8b",
+"cff3ff52-b844-4a68-a51c-ebb8e0833501"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4928,7 +4929,8 @@
 "544296|Sep-26|consolidated",
 "539835|Sep-26|standalone",
 "511632|Sep-26|standalone",
-"517526|Sep-26|standalone"
+"517526|Sep-26|standalone",
+"500125|Sep-26|standalone"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5006,44 +5008,6 @@
 "first": 1794561862.0587733,
 "last": 1794565192.1423147,
 "alerted": false
-},
-"cff3ff52-b844-4a68-a51c-ebb8e0833501": {
-"rec": {
-"NEWSID": "cff3ff52-b844-4a68-a51c-ebb8e0833501",
-"SCRIP_CD": 500125,
-"XML_NAME": "ANN_500125_CFF3FF52-B844-4A68-A51C-EBB8E0833501",
-"NEWSSUB": "EID Parry India Ltd - 500125 - Outcome Of Board Meeting - Results",
-"DT_TM": "2026-11-13T15:04:22.583",
-"NEWS_DT": "2026-11-13T15:04:22.583",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "a2144d03-9575-4e6c-8336-c6c587a59b55.pdf",
-"MORE": "",
-"HEADLINE": "Results - QE - 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/eid-parry-india-ltd/eidparry/500125/",
-"SLONGNAME": "EID Parry India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 14,
-"News_submission_dt": "2026-11-13T15:04:22",
-"DissemDT": "2026-11-13T15:04:22.583",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 14355153,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794562968.4632702,
-"last": 1794565192.1423147,
-"alerted": true
 },
 "2747cf13-7683-43ce-960f-666ef30b98fe": {
 "rec": {
@@ -6041,7 +6005,8 @@
 "e29ab247-0d94-4cb9-b1f1-8c7af4094812": 1,
 "f20d8fc6-7e10-4e4c-aca4-1be69352bd70": 1,
 "d701a8ce-1130-46ed-8bbb-6f79a5709a2f": 1,
-"69e08e67-cc8b-4597-abca-0b668e7960f6": 1
+"69e08e67-cc8b-4597-abca-0b668e7960f6": 1,
+"cff3ff52-b844-4a68-a51c-ebb8e0833501": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6372,10 +6337,6 @@
 "60bc152a-3de8-4b67-9bc4-7b5e81f822f1": 1
 },
 "lag": [
-[
-"Gayatri Sugars Ltd",
-1
-],
 [
 "Lerthai Finance Ltd",
 45
@@ -7571,6 +7532,10 @@
 [
 "Western Overseas Study Abroad Ltd",
 56
+],
+[
+"EID Parry India Ltd",
+55
 ]
 ],
 "pdfposted": {
@@ -8862,6 +8827,16 @@
 "rev": 0.0,
 "pat": -0.13799999999999998,
 "t": 1794566081.9084456,
+"last": 0
+},
+"500125|Sep-26|standalone": {
+"code": "500125",
+"name": "EID Parry India Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 8600.1,
+"pat": -224.9,
+"t": 1794566298.570697,
 "last": 0
 }
 },
