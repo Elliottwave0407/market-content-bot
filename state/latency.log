@@ -1521,3 +1521,6 @@
 13 18:47:27 ready 516110|Sep-26|standalone kind=photo waited_min=26.9 tries=3 pdf_log=
 13 18:49:18 pdf nim reader Edvenswa Enterprises Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possible invention): rejected e.g. [(' (gem
 13 18:49:18 pdf pdf read failed Edvenswa Enterprises Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbers not found in the filing text (possib
+13 18:50:51 pdf rule reader Safa Systems & Technologies Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+13 18:51:25 pdf nim reader Relicab Cable Manufacturing Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found in the filing text (possible invention): rejected e.g. [
+13 18:51:25 pdf pdf read failed Relicab Cable Manufacturing Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key: HTTP 429 (skipped gemini-flash-latest, quota) | vision
