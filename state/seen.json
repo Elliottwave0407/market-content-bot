@@ -1150,7 +1150,13 @@
 "013d43d0-fb21-4425-8ab0-d0d55724fdeb",
 "31f73781-b56d-4c65-ace4-adacf0c51524",
 "6f98497d-da92-4bdc-b946-4e72a6722c04",
-"58fb117b-fd60-4c9d-b202-be3d349fd330"
+"58fb117b-fd60-4c9d-b202-be3d349fd330",
+"0aae3488-a9b3-4d4a-91df-cd593a9b0c06",
+"b34f12b7-4dce-4e3a-a803-ee9afc676759",
+"e883ae10-08b8-4994-bc8e-bb69de0ee40a",
+"18def4ef-bba2-4a87-a5a9-c258a1a0a0eb",
+"64b8e4c8-d893-4f3f-ba04-866fa773286e",
+"c7b762e9-2e73-4c28-86f8-b493f4159bfa"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5040,7 +5046,12 @@
 "532916|Sep-26|consolidated",
 "531931|Sep-26|consolidated",
 "517467|Sep-26|consolidated",
-"501150|Sep-26|consolidated"
+"501150|Sep-26|consolidated",
+"539120|Sep-26|standalone",
+"530169|Sep-26|standalone",
+"531821|Sep-26|standalone",
+"507813|Sep-26|standalone",
+"524470|Sep-26|consolidated"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5959,7 +5970,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 247
+"2026-11-13": 252
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -6013,12 +6024,12 @@
 "other": 154
 },
 "results-key": {
-"ok": 208,
+"ok": 223,
 "429": 9,
-"other": 82
+"other": 83
 },
 "concall-key": {
-"ok": 48,
+"ok": 49,
 "429": 7,
 "other": 37
 },
@@ -6447,7 +6458,12 @@
 "27efb93a-139b-420d-b73e-aaf823d2679f": 1,
 "b832af1c-5354-459a-ae24-f879e3eee927": 1,
 "31f73781-b56d-4c65-ace4-adacf0c51524": 1,
-"6f98497d-da92-4bdc-b946-4e72a6722c04": 1
+"6f98497d-da92-4bdc-b946-4e72a6722c04": 1,
+"0aae3488-a9b3-4d4a-91df-cd593a9b0c06": 1,
+"b34f12b7-4dce-4e3a-a803-ee9afc676759": 1,
+"18def4ef-bba2-4a87-a5a9-c258a1a0a0eb": 1,
+"64b8e4c8-d893-4f3f-ba04-866fa773286e": 1,
+"c7b762e9-2e73-4c28-86f8-b493f4159bfa": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -9493,6 +9509,46 @@
 "rev": 1.661,
 "pat": 36.191,
 "t": 1794569697.6237388,
+"last": 0
+},
+"539120|Sep-26|standalone": {
+"code": "539120",
+"name": "Grameva Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 448.91700000000003,
+"pat": 7.963,
+"t": 1794569783.6378949,
+"last": 0
+},
+"530169|Sep-26|standalone": {
+"code": "530169",
+"name": "Mohit Paper Mills Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 500.945,
+"pat": 17.206,
+"t": 1794569852.9990208,
+"last": 0
+},
+"531821|Sep-26|standalone": {
+"code": "531821",
+"name": "Munoth Financial Services Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.859,
+"pat": 0.046000000000000006,
+"t": 1794569889.4252098,
+"last": 0
+},
+"507813|Sep-26|standalone": {
+"code": "507813",
+"name": "National Oxygen Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 20.015,
+"pat": -17.436000000000003,
+"t": 1794569915.2870164,
 "last": 0
 }
 },
