@@ -1758,3 +1758,8 @@
 13 05:03:37 pdf strong model retry did not help: None
 13 05:04:01 pdf pdf checks failed Subam Papers Ltd consolidated
 13 05:04:01 pdf pdf has consolidated but it failed checks: not falling back to standalone Subam Papers Ltd
+13 05:06:11 pdf nim reader Subam Papers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 51 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gem
+13 05:06:11 pdf pdf read failed Subam Papers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 51 numbers not found in the filing text (possible inve
+13 05:06:57 pdf rule reader Subam Papers Ltd: rule: no results table page | ocr: rule: no results table page
+13 05:08:25 pdf nim reader Subam Papers Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 49 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gem
+13 05:08:25 pdf pdf read failed Subam Papers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 49 numbers not found in the filing text (possible inve
