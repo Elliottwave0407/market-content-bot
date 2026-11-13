@@ -1705,3 +1705,5 @@
 13 16:31:51 ready 503626|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf read failed Triliance Polymers Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotr
 13 16:32:17 wait 505797 Mipco Seamless Rings Gujarat: confirming that no consolidated statement exists
 13 16:32:21 ready 535279|Sep-26|na kind=photo waited_min=124.2 tries=99 pdf_log=rule reader Mipco Seamless Rings Gujarat Ltd: rule: no results table page | ocr: rule: no results table page
+13 16:32:43 ready 539117|Sep-26|na kind=photo waited_min=112.5 tries=2 pdf_log=rule reader Mipco Seamless Rings Gujarat Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Sujala Trading & Holdings Ltd: rule: 
+13 16:32:58 ready 507609|Sep-26|na kind=photo waited_min=112.5 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Olympic Oil Industries Ltd standalone ok=False/2
