@@ -977,7 +977,11 @@
 "9bdc92aa-54d7-4022-94e9-c5fb02d9bdf0",
 "e33d4652-91b3-46e0-8282-027c7184e579",
 "bc40f304-466c-4400-ba26-3a14b78fbf61",
-"21ec2723-dbec-42e7-a8eb-e98cd7aad1f6"
+"21ec2723-dbec-42e7-a8eb-e98cd7aad1f6",
+"298ae24b-3120-44f0-8670-c58034a1ce46",
+"b5cc472e-9cbd-4cf7-9137-dd8769a62794",
+"f99036f2-e457-441c-bd2c-6e7818e3f0f7",
+"fb9962ab-8455-48bc-a1d5-4bb9519a1200"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4741,7 +4745,8 @@
 "531979|Sep-26|consolidated",
 "530281|Sep-26|na",
 "530571|Sep-26|standalone",
-"503641|Sep-26|consolidated"
+"503641|Sep-26|consolidated",
+"532038|Sep-26|na"
 ],
 "pending": {
 "06bc2272-ad2e-4aac-b802-6c3f7782dd9a": {
@@ -4857,44 +4862,6 @@
 "first": 1794556142.9155147,
 "last": 1794559315.5115294,
 "alerted": true
-},
-"fb9962ab-8455-48bc-a1d5-4bb9519a1200": {
-"rec": {
-"NEWSID": "fb9962ab-8455-48bc-a1d5-4bb9519a1200",
-"SCRIP_CD": 532038,
-"XML_NAME": "ANN_532038_FB9962AB-8455-48BC-A1D5-4BB9519A1200",
-"NEWSSUB": "Emmsons International Ltd-$ - 532038 - The Un-Audited Standalone And Consolidated Financial Results Of The Company For The Second Quarter And Half Year Ended On 30Th September, 2026 (Results Including Auditor''s Limited Review Report Attached",
-"DT_TM": "2026-11-13T13:11:36.637",
-"NEWS_DT": "2026-11-13T13:11:36.637",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "0f66af46-4a82-45ac-9274-56e084eea945.pdf",
-"MORE": "",
-"HEADLINE": "The Unaudited and Consolidated financial results for the quarter and half year ended on 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/emmsons-international-ltd/emmsons/532038/",
-"SLONGNAME": "Emmsons International Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-11-13T13:11:36",
-"DissemDT": "2026-11-13T13:11:36.637",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 13181435,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794556142.9155147,
-"last": 1794557681.7750776,
-"alerted": false
 },
 "e502b1a7-c8d6-4eaa-bb7a-a68f385826d3": {
 "rec": {
@@ -5083,7 +5050,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794557681.7750776,
-"last": 1794557681.7750776,
+"last": 1794559315.5115294,
 "alerted": false
 },
 "4b04bf00-4ef8-4ddc-ba80-52fdd77ae03d": {
@@ -5121,7 +5088,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794557681.7750776,
-"last": 1794557681.7750776,
+"last": 1794559315.5115294,
 "alerted": false
 },
 "38370c65-41d9-4ce1-a563-6ce8b875243d": {
@@ -5394,7 +5361,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 68
+"2026-11-13": 70
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5443,7 +5410,7 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 146,
+"ok": 149,
 "429": 2,
 "other": 48
 },
@@ -5813,7 +5780,8 @@
 "ab5225a6-3b99-4260-b604-378b3ecccb3c": 1,
 "9bdc92aa-54d7-4022-94e9-c5fb02d9bdf0": 1,
 "1a8d27f5-136e-48b3-af61-7c04d80a8699": 1,
-"bc40f304-466c-4400-ba26-3a14b78fbf61": 1
+"bc40f304-466c-4400-ba26-3a14b78fbf61": 1,
+"298ae24b-3120-44f0-8670-c58034a1ce46": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -7266,6 +7234,10 @@
 [
 "Quantum Digital Vision India Ltd",
 53
+],
+[
+"Emmsons International Ltd-$",
+53
 ]
 ],
 "pdfposted": {
@@ -7277,7 +7249,7 @@
 "rev": 3.387,
 "pat": 1.5170000000000001,
 "t": 1794391736.2486625,
-"last": 1794559291.0335813
+"last": 1794560272.7711425
 },
 "534060|Sep-26|standalone": {
 "code": "534060",
@@ -7287,7 +7259,7 @@
 "rev": 52.422000000000004,
 "pat": 31.606,
 "t": 1794392786.9524472,
-"last": 1794559291.0335813
+"last": 1794560272.7711425
 },
 "542232|Sep-26|standalone": {
 "code": "542232",
@@ -7297,7 +7269,7 @@
 "rev": 1661.5020000000002,
 "pat": 70.42999999999999,
 "t": 1794393524.782214,
-"last": 1794559291.0335813
+"last": 1794560272.7711425
 },
 "532284|Sep-26|standalone": {
 "code": "532284",
@@ -7307,7 +7279,7 @@
 "rev": -19.203000000000003,
 "pat": -16.908,
 "t": 1794394497.2458646,
-"last": 1794559291.0335813
+"last": 1794560272.7711425
 },
 "543914|Sep-26|consolidated": {
 "code": "543914",
@@ -8607,6 +8579,13 @@
 "SLONGNAME": "AVAX Ltd",
 "ATTACHMENTNAME": "e628665a-53ab-446c-a86a-7f7c88d8dfe0.pdf",
 "NEWS_DT": "2026-11-13T14:06:42.643"
+},
+"298ae24b-3120-44f0-8670-c58034a1ce46": {
+"NEWSID": "298ae24b-3120-44f0-8670-c58034a1ce46",
+"SCRIP_CD": 534708,
+"SLONGNAME": "Shanti Guru Industries Ltd",
+"ATTACHMENTNAME": "bd16cb5b-97da-4250-898b-f9c6bf71d15c.pdf",
+"NEWS_DT": "2026-11-13T14:03:28.78"
 }
 },
 "audit": [
