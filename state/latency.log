@@ -1540,3 +1540,36 @@
 13 14:56:30 ready 540270|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Raideep Industries Ltd consolidated ok=False/3: revenue=978.79, other_income=16.1, total_income=994.89, total_expenses=987.9, finance_costs=0.01
 13 14:56:46 ready 512417|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current column matches BSE's current table (revenue and profit): arithmetic gap ignored Raideep Industries Ltd consolidated | rule reader Trinity Tradelink 
 13 14:59:05 ready 500102|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Ballarpur Industries Ltd standalone ok=True/3: revenue=8610.71, other_income=31.58, total_income=8642.29, total_expenses=12327.73, finance_costs
+13 14:59:30 seen 526415 OK Play India Ltd cat=Board Meeting early=True bse_time=20:17:24 dissem=20:17:24
+13 14:59:30 seen 507598 Kovilpatti Lakshmi Roller Fl cat=Result early=False bse_time=20:17:49 dissem=20:17:49
+13 14:59:30 seen 544564 Om Freight Forwarders Ltd cat=Result early=False bse_time=20:18:28 dissem=20:18:28
+13 14:59:30 seen 526217 Hitech Corporation Ltd-$ cat=Board Meeting early=True bse_time=20:19:53 dissem=20:19:53
+13 14:59:30 seen 531557 Amit Securities Ltd cat=Result early=False bse_time=20:20:08 dissem=20:20:08
+13 14:59:30 seen 511018 Milgrey Finance & Investment cat=Board Meeting early=True bse_time=20:20:26 dissem=20:20:26
+13 14:59:30 seen 541178 Benara Bearings and Pistons  cat=Result early=False bse_time=20:20:38 dissem=20:20:38
+13 14:59:30 seen 530019 Jubilant Pharmova Ltd cat=Result early=False bse_time=20:20:47 dissem=20:20:47
+13 14:59:30 seen 531936 Blue Chip India Ltd cat=Board Meeting early=True bse_time=20:20:57 dissem=20:20:57
+13 14:59:30 seen 505523 Maharashtra Corporation Ltd cat=Board Meeting early=True bse_time=20:21:20 dissem=20:21:20
+13 14:59:30 seen 519477 CIAN Agro Industries & Infra cat=Result early=False bse_time=20:21:29 dissem=20:21:29
+13 14:59:30 seen 538674 City Online Services Ltd cat=Board Meeting early=True bse_time=20:21:36 dissem=20:21:36
+13 14:59:30 seen 538521 Yaan Enterprises Ltd cat=Result early=False bse_time=20:21:51 dissem=20:21:51
+13 14:59:30 seen 503635 Shree Salasar Investments Lt cat=Board Meeting early=True bse_time=20:22:53 dissem=20:22:53
+13 14:59:30 seen 544553 M P K Steels (I) Ltd cat=Result early=False bse_time=20:23:51 dissem=20:23:51
+13 14:59:30 seen 544920 Amtech Esters Ltd cat=Board Meeting early=True bse_time=20:24:16 dissem=20:24:16
+13 14:59:30 seen 526217 Hitech Corporation Ltd-$ cat=Result early=False bse_time=20:24:46 dissem=20:24:46
+13 14:59:30 seen 538674 City Online Services Ltd cat=Result early=False bse_time=20:24:51 dissem=20:24:51
+13 14:59:30 seen 542627 Chandni Machines Ltd cat=Board Meeting early=True bse_time=20:25:36 dissem=20:25:36
+13 14:59:30 seen 532904 Supreme Infrastructure India cat=Board Meeting early=True bse_time=20:26:44 dissem=20:26:44
+13 14:59:30 seen 543341 Sharpline Broadcast Ltd cat=Board Meeting early=True bse_time=20:27:01 dissem=20:27:01
+13 14:59:30 seen 513228 Pennar Industries Ltd-$ cat=Result early=False bse_time=20:27:19 dissem=20:27:19
+13 14:59:30 seen 531936 Blue Chip India Ltd cat=Result early=False bse_time=20:27:29 dissem=20:27:29
+13 14:59:30 seen 524046 Pet Plastics Ltd cat=Board Meeting early=True bse_time=20:27:29 dissem=20:27:29
+13 14:59:30 seen 511018 Milgrey Finance & Investment cat=Result early=False bse_time=20:27:30 dissem=20:27:30
+13 15:00:00 wait 530019 Jubilant Pharmova Ltd: confirming that no consolidated statement exists
+13 15:00:06 ready 532054|Sep-26|na kind=photo waited_min=59.7 tries=2 pdf_log=rule reader Jubilant Pharmova Ltd: ok
+13 15:00:22 wait 519477 CIAN Agro Industries & Infra: numbers not yet on BSE
+13 15:00:33 wait 513228 Pennar Industries Ltd-$: numbers not yet on BSE
+13 15:00:37 wait 526217 Hitech Corporation Ltd-$: numbers not yet on BSE
+13 15:00:47 ready 544895|Sep-26|na kind=photo waited_min=59.7 tries=99 pdf_log=rule reader Hitech Corporation Ltd-$: rule: no results table page | ocr: rule: no results table page | rule reader CIAN Agro Industries & Infrastructure Ltd: ru
+13 15:00:56 wait 544564 Om Freight Forwarders Ltd: numbers not yet on BSE
+13 15:01:03 ready 544979|Sep-26|na kind=photo waited_min=59.7 tries=99 pdf_log=rule reader CIAN Agro Industries & Infrastructure Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6 | rule reader 
