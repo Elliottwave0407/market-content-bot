@@ -1741,3 +1741,7 @@
 13 16:37:58 ready 500147|unverified|8b8846fc-6e80-4117-801c-1afec3cc1c0f kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Dishman Carbogen Amcis Ltd: rule: unit ambiguous ['crore', 'million'] | rule reader John Cockerill India Ltd-$: rule: stan: missing ['pat'] n=6 |
 13 16:38:22 ready 540701|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Dishman Carbogen Amcis Ltd consolidated ok=True/3: revenue=507.37, other_income=3.56, total_income=510.93, total_expenses=591.93, finance_costs=
 13 16:38:32 ready 544826|Sep-26|na kind=photo waited_min=45.2 tries=99 pdf_log=rule reader Tandhan Industries Ltd: rule: consolidated table does not reconcile [lakh] total_income=[7437.84, 6587.37, 14025.22] total_expenses=[2597.02, 2071.1
+13 16:38:44 ready 512014|Sep-26|consolidated kind=photo waited_min=45.2 tries=2 pdf_log=pdf read failed PVP Ventures Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concall-key:
+13 16:39:03 wait 512062 Tandhan Industries Ltd: numbers not yet on BSE
+13 16:39:04 ready 511333|Sep-26|consolidated kind=line waited_min=45.2 tries=2 pdf_log=pdf incomplete Tandhan Industries Ltd consolidated: missing ['ebitda', 'revenue'] - not posting from PDF | pdf current col Maxgrow India Ltd standalone ok=True/
+13 16:39:05 ready 532904|Sep-26|na kind=photo waited_min=86.1 tries=8 pdf_log=pdf incomplete Tandhan Industries Ltd consolidated: missing ['ebitda', 'revenue'] - not posting from PDF | pdf current col Maxgrow India Ltd standalone ok=True/
