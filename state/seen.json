@@ -1036,7 +1036,10 @@
 "1cb0aa52-6331-400c-8293-74bbdc13c956",
 "17034785-4980-42ff-ac65-85f4db12dd84",
 "114b639d-ae8a-419a-a366-ca9645a76168",
-"1a8d27f5-136e-48b3-af61-7c04d80a8699"
+"1a8d27f5-136e-48b3-af61-7c04d80a8699",
+"ca408492-a8ab-49af-a8fe-98e3a9f93b84",
+"89f60348-a160-4689-b82b-026febab68df",
+"525a1fde-0e14-416e-8cec-b70b7510caab"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4841,7 +4844,8 @@
 "540570|Sep-26|consolidated",
 "530601|Sep-26|na",
 "530461|Sep-26|na",
-"544337|Sep-26|na"
+"544337|Sep-26|na",
+"513063|Sep-26|standalone"
 ],
 "pending": {
 "523df5f0-1145-44dc-810e-044aebd859bc": {
@@ -5031,7 +5035,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794560291.6470394,
-"last": 1794561862.0587733,
+"last": 1794562968.4632702,
 "alerted": false
 },
 "f98731ec-ffe0-412e-9e91-643e8dfec512": {
@@ -5069,7 +5073,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794560291.6470394,
-"last": 1794561862.0587733,
+"last": 1794562968.4632702,
 "alerted": false
 },
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5246,7 +5250,7 @@
 "NSURL": "https://www.bseindia.com/stock-share-price/seasons-textiles-ltd/seasonst/514264/",
 "SLONGNAME": "Seasons Textiles Ltd-$",
 "AGENDA_ID": 30,
-"TotalPageCnt": 12,
+"TotalPageCnt": 14,
 "News_submission_dt": "2026-11-13T14:54:11",
 "DissemDT": "2026-11-13T14:54:11.36",
 "TimeDiff": "00:00:00",
@@ -5259,7 +5263,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794561862.0587733,
-"last": 1794561862.0587733,
+"last": 1794562968.4632702,
 "alerted": false
 },
 "92f43bee-8ad6-419a-bd78-605b6c73e77c": {
@@ -5418,7 +5422,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 137
+"2026-11-13": 139
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5467,22 +5471,22 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 257,
+"ok": 261,
 "429": 4,
-"other": 107
+"other": 111
 },
 "results-key": {
-"ok": 35,
+"ok": 36,
 "429": 5,
-"other": 45
+"other": 46
 },
 "concall-key": {
 "ok": 23,
 "429": 4,
-"other": 27
+"other": 28
 },
 "vision-key": {
-"ok": 14,
+"ok": 15,
 "429": 2,
 "other": 27
 }
@@ -5858,7 +5862,8 @@
 "9028a434-4c2e-454d-ab93-6a3afee5e244": 1,
 "be2c33ae-25bd-44db-8261-aec9bd603dd0": 1,
 "f8f90a78-a01e-4c6d-85df-bebf1ab60d36": 1,
-"76a5b8bf-e3c1-44e9-9927-e3537fe3b9d5": 1
+"76a5b8bf-e3c1-44e9-9927-e3537fe3b9d5": 1,
+"525a1fde-0e14-416e-8cec-b70b7510caab": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -8528,6 +8533,16 @@
 "rev": 276.95700000000005,
 "pat": 7.193000000000001,
 "t": 1794563332.2763286,
+"last": 0
+},
+"513063|Sep-26|standalone": {
+"code": "513063",
+"name": "Trans Freight Containers Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": 4.1770000000000005,
+"t": 1794563585.243955,
 "last": 0
 }
 },
