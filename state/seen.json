@@ -989,7 +989,10 @@
 "12601b7d-7620-42dc-8e52-94983448ff2e",
 "cb3eb18a-1ab5-4841-8ca0-da389c993547",
 "712167eb-759f-45d9-8876-7c1a995d323a",
-"844eddf6-5313-428b-a506-5dde47d16f20"
+"844eddf6-5313-428b-a506-5dde47d16f20",
+"7920b55a-7c88-480a-8f0a-8c5b72915326",
+"226b4cff-6a7f-4b1d-a649-e64255bb57d2",
+"9fa25959-4882-4ff1-969e-e52fc80c1d5f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4761,7 +4764,8 @@
 "539686|Sep-26|consolidated",
 "539401|Sep-26|consolidated",
 "530365|Sep-26|consolidated",
-"512103|Sep-26|consolidated"
+"512103|Sep-26|consolidated",
+"534064|Sep-26|standalone"
 ],
 "pending": {
 "85d1f9c9-b1ac-4085-9fc8-246ca2eb1407": {
@@ -5300,7 +5304,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 78
+"2026-11-13": 81
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5349,7 +5353,7 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 162,
+"ok": 166,
 "429": 2,
 "other": 51
 },
@@ -5359,7 +5363,7 @@
 "other": 27
 },
 "concall-key": {
-"ok": 9,
+"ok": 10,
 "429": 0,
 "other": 12
 },
@@ -5720,7 +5724,8 @@
 "9bdc92aa-54d7-4022-94e9-c5fb02d9bdf0": 1,
 "1a8d27f5-136e-48b3-af61-7c04d80a8699": 1,
 "bc40f304-466c-4400-ba26-3a14b78fbf61": 1,
-"298ae24b-3120-44f0-8670-c58034a1ce46": 1
+"298ae24b-3120-44f0-8670-c58034a1ce46": 1,
+"9fa25959-4882-4ff1-969e-e52fc80c1d5f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6022,7 +6027,9 @@
 "12601b7d-7620-42dc-8e52-94983448ff2e": 1,
 "6447070a-0ac3-435d-90c6-c11f88cb9794": 1,
 "712167eb-759f-45d9-8876-7c1a995d323a": 1,
-"844eddf6-5313-428b-a506-5dde47d16f20": 1
+"844eddf6-5313-428b-a506-5dde47d16f20": 1,
+"7920b55a-7c88-480a-8f0a-8c5b72915326": 1,
+"226b4cff-6a7f-4b1d-a649-e64255bb57d2": 1
 },
 "lag": [
 [
@@ -8154,6 +8161,16 @@
 "pat": 23.541,
 "t": 1794560656.119696,
 "last": 0
+},
+"534064|Sep-26|standalone": {
+"code": "534064",
+"name": "Alliance Integrated Metaliks Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 153.709,
+"pat": -264.346,
+"t": 1794560808.6833603,
+"last": 0
 }
 },
 "half_q": {
@@ -8590,6 +8607,13 @@
 "SLONGNAME": "Shanti Guru Industries Ltd",
 "ATTACHMENTNAME": "bd16cb5b-97da-4250-898b-f9c6bf71d15c.pdf",
 "NEWS_DT": "2026-11-13T14:03:28.78"
+},
+"226b4cff-6a7f-4b1d-a649-e64255bb57d2": {
+"NEWSID": "226b4cff-6a7f-4b1d-a649-e64255bb57d2",
+"SCRIP_CD": 539401,
+"SLONGNAME": "Patdiam Jewellery Ltd",
+"ATTACHMENTNAME": "3be6ab15-479f-4d78-b4d4-1834a25e4347.pdf",
+"NEWS_DT": "2026-11-13T14:26:12.527"
 }
 },
 "audit": [
