@@ -1538,3 +1538,5 @@
 13 21:59:17 ready 544806|Sep-26|consolidated kind=photo waited_min=181.0 tries=3 pdf_log=
 13 21:59:28 ready 513496|Sep-26|nocons kind=photo waited_min=181.0 tries=5 pdf_log=nim reader Agribio Spirits Ltd: ok (gemini: gemini skipped (quota/backoff))
 13 21:59:36 ready 539546|Sep-26|na kind=photo waited_min=181.0 tries=7 pdf_log=
+13 22:00:01 pdf pdf history mismatch Agribio Spirits Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 633.6999999999999 pat 1209.8999999999999 | bse rev 6.34 pat 12.1 (Rs mn); q-4: pdf rev 16855.2 pat 294.7 | bse r
+13 22:00:01 pdf pdf has consolidated but it failed checks: not falling back to standalone Agribio Spirits Ltd
