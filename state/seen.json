@@ -1202,7 +1202,9 @@
 "aa1c595c-de6a-41f1-b1d3-466a1f5d4cea",
 "b54755d0-a985-4f55-b027-685efff4d5b9",
 "4ba23059-2a97-490b-8a49-3a8b3214ad19",
-"619e488f-6370-47dc-9f12-20391dd4502f"
+"619e488f-6370-47dc-9f12-20391dd4502f",
+"93b74666-fded-46c5-9298-734d95cd1f19",
+"6bd32725-fd73-45a4-9f81-c98fb201621f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -5137,7 +5139,9 @@
 "534076|Sep-26|consolidated",
 "514197|Sep-26|consolidated",
 "539189|Sep-26|standalone",
-"514264|Sep-26|standalone"
+"514264|Sep-26|standalone",
+"539124|Sep-26|na",
+"514140|Sep-26|standalone"
 ],
 "pending": {
 "41148e64-cf9a-46f9-adfe-99de81c82bae": {
@@ -5177,44 +5181,6 @@
 "first": 1794566268.9775505,
 "last": 1794571421.0117931,
 "alerted": true
-},
-"93b74666-fded-46c5-9298-734d95cd1f19": {
-"rec": {
-"NEWSID": "93b74666-fded-46c5-9298-734d95cd1f19",
-"SCRIP_CD": 539124,
-"XML_NAME": "ANN_539124_93B74666-FDED-46C5-9298-734D95CD1F19",
-"NEWSSUB": "Sarvottam Finvest Ltd - 539124 - Unaudited Financial Results For The Quarter And Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-11-13T16:03:42.6",
-"NEWS_DT": "2026-11-13T16:03:42.6",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "2929070f-e8d9-44df-a0c0-105434c65568.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the quarter and half year ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sarvottam-finvest-ltd/sarvottam/539124/",
-"SLONGNAME": "Sarvottam Finvest Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 22,
-"News_submission_dt": "2026-11-13T16:03:42",
-"DissemDT": "2026-11-13T16:03:42.6",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1106873,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794566268.9775505,
-"last": 1794568143.54852,
-"alerted": false
 },
 "e0b23551-77f8-4356-a061-a9774dd200d9": {
 "rec": {
@@ -5479,7 +5445,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794568143.54852,
-"last": 1794568143.54852,
+"last": 1794571421.0117931,
 "alerted": false
 },
 "1c2ce150-c50b-4693-8a47-4e5295134344": {
@@ -5517,7 +5483,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794568143.54852,
-"last": 1794568143.54852,
+"last": 1794571421.0117931,
 "alerted": false
 },
 "f41b0b1e-f644-4152-afce-696549cdcc76": {
@@ -6056,7 +6022,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 282
+"2026-11-13": 286
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -6110,7 +6076,7 @@
 "other": 155
 },
 "results-key": {
-"ok": 392,
+"ok": 405,
 "429": 11,
 "other": 95
 },
@@ -6562,7 +6528,10 @@
 "05336dde-4c89-48da-a880-c923ad27e393": 1,
 "83375226-36dc-458d-a859-ee795b4248bc": 1,
 "aa1c595c-de6a-41f1-b1d3-466a1f5d4cea": 1,
-"4ba23059-2a97-490b-8a49-3a8b3214ad19": 1
+"4ba23059-2a97-490b-8a49-3a8b3214ad19": 1,
+"74c3d5b7-9f97-43bb-8b6c-5bc5bfc78241": 1,
+"1c2ce150-c50b-4693-8a47-4e5295134344": 1,
+"6bd32725-fd73-45a4-9f81-c98fb201621f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -6934,10 +6903,6 @@
 "b54755d0-a985-4f55-b027-685efff4d5b9": 1
 },
 "lag": [
-[
-"Flex Foods Ltd-$",
-17
-],
 [
 "Naperol Investments Ltd",
 45
@@ -8133,6 +8098,10 @@
 [
 "Seasons Textiles Ltd-$",
 159
+],
+[
+"Sarvottam Finvest Ltd",
+86
 ]
 ],
 "pdfposted": {
@@ -9815,6 +9784,16 @@
 "pat": -4.322,
 "t": 1794573250.6522257,
 "last": 0
+},
+"514140|Sep-26|standalone": {
+"code": "514140",
+"name": "Suryavanshi Spinning Mills Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 19.932000000000002,
+"pat": 1.814,
+"t": 1794573417.6520112,
+"last": 0
 }
 },
 "half_q": {
@@ -10370,6 +10349,20 @@
 "SLONGNAME": "Prodocs Solutions Ltd",
 "ATTACHMENTNAME": "990c5f0b-df1c-4119-9096-0a5f08191015.pdf",
 "NEWS_DT": "2026-11-13T17:28:22.247"
+},
+"74c3d5b7-9f97-43bb-8b6c-5bc5bfc78241": {
+"NEWSID": "74c3d5b7-9f97-43bb-8b6c-5bc5bfc78241",
+"SCRIP_CD": 544236,
+"SLONGNAME": "Resourceful Automobile Ltd",
+"ATTACHMENTNAME": "2cebf36c-7aea-4328-a552-f72f69c032ad.pdf",
+"NEWS_DT": "2026-11-13T16:36:09.687"
+},
+"1c2ce150-c50b-4693-8a47-4e5295134344": {
+"NEWSID": "1c2ce150-c50b-4693-8a47-4e5295134344",
+"SCRIP_CD": 543979,
+"SLONGNAME": "Kahan Packaging Ltd",
+"ATTACHMENTNAME": "1cafba2f-96a3-44a6-8b8c-6ddaeb0620ba.pdf",
+"NEWS_DT": "2026-11-13T16:31:25.137"
 }
 },
 "audit": [
