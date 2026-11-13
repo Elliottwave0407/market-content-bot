@@ -1643,3 +1643,12 @@
 13 07:04:48 seen 532145 H S India Ltd cat=Result early=False bse_time=12:33:11 dissem=12:33:11
 13 07:04:48 seen 512018 Tomorrow Technologies Global cat=Result early=False bse_time=12:33:45 dissem=12:33:45
 13 07:05:22 wait 512018 Tomorrow Technologies Global: numbers not yet on BSE
+13 07:07:50 wait 532145 H S India Ltd: numbers not yet on BSE
+13 07:07:56 pdf nim reader Xelpmoc Design and Tech Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+13 07:07:56 pdf pdf read failed Xelpmoc Design and Tech Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+13 07:07:56 pdf nim reader H S India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 30 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemini
+13 07:07:56 pdf pdf read failed H S India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 30 numbers not found in the filing text (possible inventi
+13 07:07:56 pdf rule reader Centerac Technologies Ltd: ok
+13 07:07:56 pdf pdf current col Centerac Technologies Ltd standalone ok=True/2: revenue=8.67, other_income=None, total_income=8.67, total_expenses=20.02, finance_costs=0.0, depreciation=0.0, pbt=-11.35, tax=0.0, pat=-11.35, eps=-0.1
+13 07:07:56 pdf pdf incomplete Centerac Technologies Ltd standalone: missing ['ebitda'] - not posting from PDF
+13 07:08:43 ready 531402|Sep-26|standalone kind=photo waited_min=5.2 tries=1 pdf_log=rule reader Raksan Transformers Ltd: rule: header has no quarter columns | ocr: rule: no results table page | pdf current col LWS Knitwear Ltd standalone ok=Tru
