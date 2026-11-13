@@ -1118,7 +1118,8 @@
 "8a35a659-392d-4025-ab61-ba66ea28fc57",
 "fd27c2e6-9f62-41e1-9607-54daa289c575",
 "249d23db-1c8f-4f9f-a98d-4c88f74ca509",
-"d4947ab5-b951-4a23-af29-ed3b17d3436f"
+"d4947ab5-b951-4a23-af29-ed3b17d3436f",
+"d8c0ed2c-9fe3-450f-8555-20a4acd06452"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4991,7 +4992,8 @@
 "532804|Sep-26|consolidated",
 "512553|Sep-26|standalone",
 "540416|Sep-26|consolidated",
-"538365|Sep-26|standalone"
+"538365|Sep-26|standalone",
+"500128|Sep-26|consolidated"
 ],
 "pending": {
 "8d9221be-20b9-4add-9f29-631577d9be96": {
@@ -5333,44 +5335,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794564136.9360657,
-"last": 1794566268.9775505,
-"alerted": false
-},
-"d8c0ed2c-9fe3-450f-8555-20a4acd06452": {
-"rec": {
-"NEWSID": "d8c0ed2c-9fe3-450f-8555-20a4acd06452",
-"SCRIP_CD": 500128,
-"XML_NAME": "ANN_500128_D8C0ED2C-9FE3-450F-8555-20A4ACD06452",
-"NEWSSUB": "Electrosteel Castings Ltd - 500128 - Financial Result For The Quarter And Half Year Ended 30 September, 2026",
-"DT_TM": "2026-11-13T16:05:27.1",
-"NEWS_DT": "2026-11-13T16:05:27.1",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "b4d0e997-9f10-4608-ae35-424aa17a6356.pdf",
-"MORE": "",
-"HEADLINE": "Financial Result for the quarter and half year ended 30 September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/electrosteel-castings-ltd/electcast/500128/",
-"SLONGNAME": "Electrosteel Castings Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 18,
-"News_submission_dt": "2026-11-13T16:05:27",
-"DissemDT": "2026-11-13T16:05:27.1",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 16011732,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794566268.9775505,
 "last": 1794566268.9775505,
 "alerted": false
 },
@@ -5796,7 +5760,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 219
+"2026-11-13": 220
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5850,9 +5814,9 @@
 "other": 153
 },
 "results-key": {
-"ok": 144,
+"ok": 146,
 "429": 7,
-"other": 68
+"other": 69
 },
 "concall-key": {
 "ok": 38,
@@ -6615,13 +6579,10 @@
 "78b39458-4bd1-475a-8ee3-85c52482a9bf": 1,
 "ba2b6575-a7a6-4d7d-a1cb-c90b60d07386": 1,
 "5884f32c-c389-4482-9fea-56bda362d368": 1,
-"e0b23551-77f8-4356-a061-a9774dd200d9": 1
+"e0b23551-77f8-4356-a061-a9774dd200d9": 1,
+"d8c0ed2c-9fe3-450f-8555-20a4acd06452": 1
 },
 "lag": [
-[
-"India Infraspace Ltd",
-47
-],
 [
 "Industrial & Prudential Investment Company Ltd",
 47
@@ -7817,6 +7778,10 @@
 [
 "Aagam Capital Ltd",
 55
+],
+[
+"Electrosteel Castings Ltd",
+31
 ]
 ],
 "pdfposted": {
@@ -9228,6 +9193,16 @@
 "rev": 8.161,
 "pat": 0.9300000000000002,
 "t": 1794567763.163886,
+"last": 0
+},
+"500128|Sep-26|consolidated": {
+"code": "500128",
+"name": "Electrosteel Castings Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 15198.191,
+"pat": 508.1,
+"t": 1794568206.6912673,
 "last": 0
 }
 },
