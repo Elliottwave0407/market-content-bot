@@ -940,7 +940,9 @@
 "553f3463-8119-459a-a69d-f7471dd36d82",
 "ac08d166-22fa-4b17-8dcc-a490212d24b6",
 "06c26855-b35e-40d3-ae59-4aadefb670ce",
-"b7e0a92f-c484-4f4c-b316-affaa99d636c"
+"b7e0a92f-c484-4f4c-b316-affaa99d636c",
+"14aaa644-184e-4a34-ab8c-a3dc26458ae4",
+"c74be993-c304-4e18-8cbc-16b95dee8460"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -4682,7 +4684,8 @@
 "513252|Sep-26|standalone",
 "524592|Sep-26|consolidated",
 "532940|Sep-26|consolidated",
-"532716|Sep-26|consolidated"
+"532716|Sep-26|consolidated",
+"542367|Sep-26|consolidated"
 ],
 "pending": {
 "516c8d60-afbb-4ada-9e6d-a8272e12c06e": {
@@ -4722,44 +4725,6 @@
 "first": 1794549289.6437452,
 "last": 1794557681.7750776,
 "alerted": true
-},
-"c74be993-c304-4e18-8cbc-16b95dee8460": {
-"rec": {
-"NEWSID": "c74be993-c304-4e18-8cbc-16b95dee8460",
-"SCRIP_CD": 542367,
-"XML_NAME": "ANN_542367_C74BE993-C304-4E18-8CBC-16B95DEE8460",
-"NEWSSUB": "Xelpmoc Design and Tech Ltd - 542367 - Unaudited Financial Results For The Second Quarter And Half Year Ended September 30, 2026",
-"DT_TM": "2026-11-13T11:54:20.37",
-"NEWS_DT": "2026-11-13T11:54:20.37",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "2bb7d6af-1f6a-4289-b1b6-5e197d40da11.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Standalone and Consolidated Financial Results for the second quarter and half year ended September 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/xelpmoc-design-and-tech-ltd/xelpmoc/542367/",
-"SLONGNAME": "Xelpmoc Design and Tech Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 4,
-"News_submission_dt": "2026-11-13T11:54:20",
-"DissemDT": "2026-11-13T11:54:20.37",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 10594991,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794551086.80809,
-"last": 1794556142.9155147,
-"alerted": false
 },
 "30e9945e-e105-444d-9880-d8f4a584387f": {
 "rec": {
@@ -4948,7 +4913,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794554182.4380407,
-"last": 1794556142.9155147,
+"last": 1794557681.7750776,
 "alerted": true
 },
 "334f1841-de9e-42c2-bd96-5ba6e77f15b1": {
@@ -5297,7 +5262,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 31
+"2026-11-13": 34
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -5346,9 +5311,9 @@
 },
 "2026-11-13": {
 "main": {
-"ok": 69,
+"ok": 74,
 "429": 1,
-"other": 27
+"other": 28
 },
 "results-key": {
 "ok": 1,
@@ -5700,7 +5665,8 @@
 "846d14b5-0748-41d8-946b-ec62e02b9098": 1,
 "64a78bb9-ff08-4934-a3cc-66e6c652fbf1": 1,
 "76fef44c-4d2e-458c-bd49-5a5262715db1": 1,
-"ac08d166-22fa-4b17-8dcc-a490212d24b6": 1
+"ac08d166-22fa-4b17-8dcc-a490212d24b6": 1,
+"3225b5ea-f630-4ae9-aa9f-fd0c5ca7c5a7": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -5983,7 +5949,9 @@
 "bd423f4f-b5dd-4dd5-bc6e-22c7f7cda23d": 1,
 "4a66e44b-f3c4-4a67-a576-a78a3deb283f": 1,
 "06c26855-b35e-40d3-ae59-4aadefb670ce": 1,
-"b7e0a92f-c484-4f4c-b316-affaa99d636c": 1
+"b7e0a92f-c484-4f4c-b316-affaa99d636c": 1,
+"14aaa644-184e-4a34-ab8c-a3dc26458ae4": 1,
+"c74be993-c304-4e18-8cbc-16b95dee8460": 1
 },
 "lag": [
 [
@@ -7105,6 +7073,10 @@
 [
 "Jaysynth Orgochem Ltd",
 26
+],
+[
+"Xelpmoc Design and Tech Ltd",
+110
 ]
 ],
 "pdfposted": {
@@ -7887,6 +7859,16 @@
 "pat": 134.071,
 "t": 1794558313.5049965,
 "last": 0
+},
+"542367|Sep-26|consolidated": {
+"code": "542367",
+"name": "Xelpmoc Design and Tech Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 8.601469999999999,
+"pat": -22.09037,
+"t": 1794558616.0280445,
+"last": 0
 }
 },
 "half_q": {
@@ -8274,6 +8256,13 @@
 "SLONGNAME": "Mahamaya Lifesciences Ltd",
 "ATTACHMENTNAME": "ff5aeddd-18b3-4f0c-9dca-a70d2e54e5db.pdf",
 "NEWS_DT": "2026-11-13T13:27:22.187"
+},
+"3225b5ea-f630-4ae9-aa9f-fd0c5ca7c5a7": {
+"NEWSID": "3225b5ea-f630-4ae9-aa9f-fd0c5ca7c5a7",
+"SCRIP_CD": 544506,
+"SLONGNAME": "Sharvaya Metals Ltd",
+"ATTACHMENTNAME": "84d87f79-3169-4ea3-b211-60ec096da66f.pdf",
+"NEWS_DT": "2026-11-13T12:45:55.633"
 }
 },
 "audit": [
