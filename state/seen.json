@@ -1826,7 +1826,9 @@
 "1b4391b0-11e3-4e94-b2d6-7367571c3ebe",
 "f228dc7d-b9ac-43d9-b8e1-2908449b280b",
 "0bbc5b87-597e-4a67-a6dd-d4f1de41dcb8",
-"5e9349c0-af76-4da6-bfc2-296eb6ee3e76"
+"5e9349c0-af76-4da6-bfc2-296eb6ee3e76",
+"b114258c-5295-4108-9604-aeec3a23fc45",
+"76e0f54c-a65b-425a-a365-c2c1155a0390"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6275,7 +6277,9 @@
 "543678|Sep-26|consolidated",
 "544100|Sep-26|consolidated",
 "532029|Sep-26|consolidated",
-"542678|Sep-26|consolidated"
+"542678|Sep-26|consolidated",
+"509243|Sep-26|consolidated",
+"506528|Sep-26|standalone"
 ],
 "pending": {
 "9f9ab153-3986-4867-b681-8b2b4245621c": {
@@ -6353,44 +6357,6 @@
 "first": 1794639671.4359777,
 "last": 1794645177.52882,
 "alerted": false
-},
-"b114258c-5295-4108-9604-aeec3a23fc45": {
-"rec": {
-"NEWSID": "b114258c-5295-4108-9604-aeec3a23fc45",
-"SCRIP_CD": 509243,
-"XML_NAME": "ANN_509243_B114258C-5295-4108-9604-AEEC3A23FC45",
-"NEWSSUB": "TVS Srichakra Ltd-$ - 509243 - Results - Financial Results For Sep 30, 2026",
-"DT_TM": "2026-11-14T12:32:07.953",
-"NEWS_DT": "2026-11-14T12:32:07.953",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5bbef768-e96d-4dc1-bfdc-498224f5022a.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed the Financial Results for Sep 30, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/tvs-srichakra-ltd/tvssrichak/509243/",
-"SLONGNAME": "TVS Srichakra Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 5,
-"News_submission_dt": "2026-11-14T12:32:07",
-"DissemDT": "2026-11-14T12:32:07.953",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7043156,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794640504.8747153,
-"last": 1794645177.52882,
-"alerted": true
 },
 "35da2ade-8f20-458a-8c49-aa4fa842be6d": {
 "rec": {
@@ -6815,7 +6781,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 45
+"2026-11-14": 46
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -6864,7 +6830,7 @@
 },
 "2026-11-14": {
 "main": {
-"ok": 136,
+"ok": 142,
 "429": 1,
 "other": 24
 },
@@ -7477,7 +7443,8 @@
 "50f7cfb1-a83f-4c78-aed4-b3095ec80615": 1,
 "51af55a0-7c03-4ebb-8d9d-6d7ea1ddbf3f": 1,
 "fa6af87e-d785-4a42-bbec-7e1ff4cc94b8": 1,
-"e57ba5d3-8028-49b3-a946-109c2bdf221f": 1
+"e57ba5d3-8028-49b3-a946-109c2bdf221f": 1,
+"76e0f54c-a65b-425a-a365-c2c1155a0390": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -7949,13 +7916,10 @@
 "47c2872f-8441-4197-b97f-4991de623ecd": 1,
 "ea0c52ab-4a1c-43d1-991d-9b70e2ed5892": 1,
 "1b4391b0-11e3-4e94-b2d6-7367571c3ebe": 1,
-"5e9349c0-af76-4da6-bfc2-296eb6ee3e76": 1
+"5e9349c0-af76-4da6-bfc2-296eb6ee3e76": 1,
+"b114258c-5295-4108-9604-aeec3a23fc45": 1
 },
 "lag": [
-[
-"Seasons Textiles Ltd-$",
-159
-],
 [
 "Sarvottam Finvest Ltd",
 86
@@ -9151,6 +9115,10 @@
 [
 "Sindhu Trade Links Ltd",
 64
+],
+[
+"TVS Srichakra Ltd-$",
+107
 ]
 ],
 "pdfposted": {
@@ -10522,6 +10490,26 @@
 "rev": 1415.0190000000002,
 "pat": 377.08500000000004,
 "t": 1794646971.4853244,
+"last": 0
+},
+"509243|Sep-26|consolidated": {
+"code": "509243",
+"name": "TVS Srichakra Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 12726.300000000001,
+"pat": 444.3,
+"t": 1794646989.8851035,
+"last": 0
+},
+"506528|Sep-26|standalone": {
+"code": "506528",
+"name": "KELTECH Energies Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1605.321,
+"pat": 82.505,
+"t": 1794646998.1696677,
 "last": 0
 }
 },
