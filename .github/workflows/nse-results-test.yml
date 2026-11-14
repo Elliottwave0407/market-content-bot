@@ -31,6 +31,7 @@ jobs:
           TELEGRAM_PUBLIC_GROUP_ID: ${{ secrets.TELEGRAM_PUBLIC_GROUP_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PDF_TRIES: "4"
+          NSE_SME: "1"
           NSE_SEND: ${{ github.event.inputs.send }}
           NSE_ONLY: ${{ github.event.inputs.only }}
           NSE_DAY: ${{ github.event.inputs.day }}

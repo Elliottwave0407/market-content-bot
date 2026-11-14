@@ -52,19 +52,28 @@ def sess():
         _S["sess"], _S["at"] = s, time.time()
     return _S["sess"]
 
-def fetch_day(day):
-    ds = day.strftime("%d-%m-%Y")
+def _fetch_index(ds, index):
     for k in range(3):
         try:
-            r = sess().get(f"https://www.nseindia.com/api/corporate-announcements?index=equities&from_date={ds}&to_date={ds}&_={int(time.time() * 1000)}", headers={"Referer": REF, "Cache-Control": "no-cache"}, timeout=40)      # the cache-busting parameter matters: plain calls were served from NSE's cache for up to a minute
+            r = sess().get(f"https://www.nseindia.com/api/corporate-announcements?index={index}&from_date={ds}&to_date={ds}&_={int(time.time() * 1000)}", headers={"Referer": REF, "Cache-Control": "no-cache"}, timeout=40)      # the cache-busting parameter matters: plain calls were served from NSE's cache
             if r.status_code == 200:
                 return r.json() if r.text.strip() else []
-            p("nse announcements HTTP", r.status_code)
+            p("nse announcements HTTP", index, r.status_code)
         except Exception as e:
-            p("nse announcements error", repr(e)[:80])
+            p("nse announcements error", index, repr(e)[:80])
         _S["sess"] = None
         time.sleep(3)
     return []
+
+def fetch_day(day):
+    ds = day.strftime("%d-%m-%Y")
+    rows = _fetch_index(ds, "equities")
+    # 15 Nov (Anondita Medicare): NSE lists SME (Emerge) companies under their own announcements index; the equities index never shows them, so every NSE-only SME result was missed.
+    if os.environ.get("NSE_SME", "0") == "1":
+        sme = _fetch_index(ds, "sme")
+        seen = {str(x.get("seq_id")) for x in rows}
+        rows = list(rows) + [x for x in sme if str(x.get("seq_id")) not in seen]
+    return rows
 
 def norm_name(n):
     n = re.sub(r"[^a-z0-9 ]", " ", (n or "").lower())
