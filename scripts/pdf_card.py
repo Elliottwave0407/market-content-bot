@@ -218,6 +218,19 @@ def _read_stage(rec, st, headline, filed):
     if content and len(content) > 40_000_000:
         LOG.append(f"pdf too large ({len(content) // 1000000} MB) {rec.get('SLONGNAME')}")
         return None
+    if content:
+        # 14 Nov (Kernex): the consolidated table could not be read but the PDF has a consolidated results statement. Remember it, so no standalone card is posted for this filing.
+        try:
+            import fitz
+            _d = fitz.open(stream=content, filetype="pdf")
+            _t0 = " ".join(_d[i].get_text() for i in range(min(len(_d), 14)))
+            if re.search(r"statements?\s+of\s+consolidated\s+(un-?audited\s+)?financial\s+results\s+for\s+the\s+(quarter|half|year|period)", _t0, re.I):
+                _ce = st.setdefault("cons_expected", {})
+                if str(nid) not in _ce:
+                    _ce[str(nid)] = 1
+                    LOG.append(f"consolidated results statement found in the PDF text: standalone card blocked {rec.get('SLONGNAME')}")
+        except Exception:
+            pass
     if not content or len(content) > 40_000_000:
         if not content:
             TRIES[nid] = max(0, TRIES.get(nid, 1) - 1)      # the PDF is not downloadable yet: that is not a failed read, try again in 20 s
