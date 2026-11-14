@@ -455,10 +455,10 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
                 hdr.append(lb_)
             table_txt += " " + " ".join(hdr)
         for lb, nums, c in built:
-            if (not nums or (len(nums) <= 2 and all(v is not None and 1990 <= abs(v) <= 2100 for v in nums))) and 3 < len(lb) < 170:
+            if (not nums or (len(nums) <= 2 and all(v is not None and (1990 <= abs(v) <= 2100 or v in range(1, 32)) for v in nums))) and 3 < len(lb) < 170:      # 14 Nov: a title ending '... September 30, 2026' has the day number too (Kernex: its consolidated page was filed under standalone)
                 l = lb.lower().strip()
                 a, b = bool(re.search(r"\bstandalone\b", l)), bool(re.search(r"\bconsolidated\b", l))
-                title = ("statement" in l or "financial result" in l or "results" in l) and "notes" not in l
+                title = ("statement" in l or "financial result" in l or "financial resu" in l or "results" in l) and "notes" not in l
                 bare = re.match(r"^\(?(standalone|consolidated)\)?( financial)?( results)?$", l)
                 if a != b and (title or bare):
                     basis = "standalone" if a else "consolidated"
