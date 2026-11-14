@@ -413,6 +413,15 @@ def process(x, st, final, maps=None):
         store.put("nse_trace", f"{sid}", {"symbol": sym, "an_dt": x.get("an_dt"), "seen_at": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t_start + 19800)), "http": status, "bytes": len(content), "dl_secs": round(time.time() - t_start, 1), "pdf": content[:4] == b"%PDF"})
     except Exception:
         pass
+    if content[:4] == b"%PDF" and 15_000_000 < len(content) <= 60_000_000:
+        # 15 Nov (Anondita Medicare): a scanned results PDF of 16.8 MB was refused for size and waited forever; keep only the pages that hold the results tables
+        try:
+            small_ = pc.trim_pdf(content)
+            if small_ and small_[:4] == b"%PDF" and len(small_) <= 15_000_000:
+                p(f"  {sym}: large PDF ({len(content) // 1000000} MB) trimmed to {len(small_) // 1000} KB")
+                content = small_
+        except Exception as e_:
+            p(f"  {sym}: trim failed {repr(e_)[:60]}")
     if content[:4] != b"%PDF" or len(content) > 15_000_000:
         p(f"  {sym}: file is not a readable PDF ({status}, {len(content)} bytes)")
         TRY_AT[sid] = time.time() - 200      # try again in ~40 s
