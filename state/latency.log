@@ -1750,3 +1750,11 @@
 14 17:24:10 ready 521076|Sep-26|standalone kind=photo waited_min=65.3 tries=1 pdf_log=rule reader Amit Spinning Industries Ltd: rule: header has no quarter columns | ocr: rule: no results table page | pdf current col Amit Spinning Industries Ltd 
 14 17:24:19 pdf rule reader Amit Spinning Industries Ltd: rule: header has no quarter columns | ocr: rule: no results table page
 14 17:24:19 pdf pdf current col Amit Spinning Industries Ltd standalone ok=True/2: revenue=3401.09, other_income=3.14, total_income=3404.23, total_expenses=3684.77, finance_costs=141.07, depreciation=114.31, pbt=-280.54, tax=None, pat=-280.54, ep
+14 17:24:31 seen 544160 Jay Kailash Namkeen Ltd cat=Result early=False bse_time=22:46:00 dissem=22:46:00
+14 17:24:31 seen 501261 Lords Mark Industries Ltd cat=Result early=False bse_time=22:47:00 dissem=22:47:00
+14 17:24:31 seen 544770 Yaashvi Jewellers Ltd cat=Board Meeting early=True bse_time=22:47:19 dissem=22:47:19
+14 17:24:31 seen 544160 Jay Kailash Namkeen Ltd cat=Board Meeting early=True bse_time=22:48:57 dissem=22:48:57
+14 17:24:31 seen 531381 Arihant Foundations & Housin cat=Board Meeting early=True bse_time=22:51:19 dissem=22:51:19
+14 17:24:31 seen 520121 Arcee Industries Ltd cat=Board Meeting early=True bse_time=22:52:21 dissem=22:52:21
+14 17:25:36 wait 501261 Lords Mark Industries Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
+14 17:26:56 wait 544160 Jay Kailash Namkeen Ltd: numbers not yet on BSE
