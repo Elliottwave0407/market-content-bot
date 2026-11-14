@@ -2327,7 +2327,12 @@
 "ec8729d9-cdae-4510-8ed4-e46b2c3a0ad3",
 "03563fab-6a4a-4dab-a2e5-bd6718031d21",
 "b8ae6458-4a85-4ff4-8fa9-4f15c944b755",
-"b0847910-ddd5-48fc-8f2c-7f15b2038d45"
+"b0847910-ddd5-48fc-8f2c-7f15b2038d45",
+"7ecddc86-0b8b-42c4-a7d5-e669e4ae18fc",
+"b2856596-5c25-41b9-a108-7cfd2ef9bfcc",
+"c6e9c453-1446-481e-a4d3-6591c07d930e",
+"0299c180-0f3d-4188-bfbf-46c1ba833ce9",
+"862e1f88-d222-4246-b574-b63f08e91052"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7140,7 +7145,9 @@
 "538607|Sep-26|na",
 "543897|Sep-26|na",
 "544936|Sep-26|na",
-"543664|Sep-26|consolidated"
+"543664|Sep-26|consolidated",
+"544870|Sep-26|standalone",
+"531449|Sep-26|consolidated"
 ],
 "pending": {
 "e44c880f-2750-45e0-9eae-acd8d07719fc": {
@@ -7332,13 +7339,51 @@
 "first": 1794680812.1321626,
 "last": 1794681513.7264996,
 "alerted": false
+},
+"0df45490-160b-446f-bd92-b95abd4ac92e": {
+"rec": {
+"NEWSID": "0df45490-160b-446f-bd92-b95abd4ac92e",
+"SCRIP_CD": 523606,
+"XML_NAME": "ANN_523606_0DF45490-160B-446F-BD92-B95ABD4AC92E",
+"NEWSSUB": "Sika Interplant Systems Ltd - 523606 - Financial Results For The Quarter Ended September 2026",
+"DT_TM": "2026-11-14T18:28:42.607",
+"NEWS_DT": "2026-11-14T18:28:42.607",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "09e44f0f-5c59-46ba-98c9-8d42d3b8258a.pdf",
+"MORE": "",
+"HEADLINE": "Financial Results for the Quarter Ended September 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/sika-interplant-systems-ltd/sika/523606/",
+"SLONGNAME": "Sika Interplant Systems Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 47,
+"News_submission_dt": "2026-11-14T18:28:42",
+"DissemDT": "2026-11-14T18:28:42.607",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 7631921,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794681993.5365803,
+"last": 1794681993.5365803,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 457
+"2026-11-14": 466
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7392,19 +7437,19 @@
 "other": 97
 },
 "results-key": {
-"ok": 249,
-"429": 20,
+"ok": 250,
+"429": 21,
 "other": 62
 },
 "concall-key": {
 "ok": 405,
-"429": 13,
-"other": 80
+"429": 14,
+"other": 81
 },
 "vision-key": {
-"ok": 259,
+"ok": 265,
 "429": 9,
-"other": 54
+"other": 55
 }
 }
 },
@@ -7968,7 +8013,8 @@
 "22aa2dfc-0c6c-4f9b-9a0a-c2f1dfc63bfc": 1,
 "dfbbdd03-39c1-4d38-a4fd-acebf1b6ac1a": 1,
 "dff18048-c884-4c57-9d81-a33019e33680": 1,
-"ab8b01a7-c99b-4570-b9d2-20210c32c1f6": 1
+"ab8b01a7-c99b-4570-b9d2-20210c32c1f6": 1,
+"0299c180-0f3d-4188-bfbf-46c1ba833ce9": 1
 },
 "cons_expected": {
 "b6a3c238-bd8e-40f6-b5ce-bacfb15b5fe9": 1,
@@ -11024,6 +11070,16 @@
 "rev": 65.175,
 "pat": 1.97,
 "t": 1794681013.4819338,
+"last": 0
+},
+"544870|Sep-26|standalone": {
+"code": "544870",
+"name": "Behari Lal Engineering Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 1541.5,
+"pat": 174.0,
+"t": 1794682109.3040345,
 "last": 0
 }
 },
