@@ -26,3 +26,18 @@ if res:
         d = res.get(k)
         print(k, "->", None if not d else {x: d.get(x) for x in ("revenue", "pat", "eps")})
     print("unit", res.get("unit"), "cols", res.get("quarter_end_columns"), "ocr", res.get("_ocr"))
+
+# page dump: show how the rule reader sees each page that mentions a results statement
+if os.environ.get("DUMP", "1") == "1":
+    for ocr in (False, True):
+        try:
+            pages = rr._pdf_rows(b, ocr=ocr)
+        except Exception:
+            continue
+        for pno, (txt, rws) in enumerate(pages):
+            if not re.search(r"revenue from operations|total income|profit before", txt, re.I):
+                continue
+            print(f"--- {'OCR' if ocr else 'TEXT'} page {pno + 1}: rows={len(rws)}", flush=True)
+            for r_ in rws[:70]:
+                lb, nums = rr.split_row(r_)
+                print("   ", repr(lb[:60]), nums, flush=True)
