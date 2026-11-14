@@ -1829,3 +1829,10 @@
 14 17:53:48 ready 500051|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Bhagawati Gas Ltd: rule: stan: does not reconcile [lakh] total_income=[34.45, 42.51, 29.3] total_expenses=[31.88, 42.23, 52.47] pbt=[2.57, 0.28, -23
 14 17:55:26 pdf nim reader Oscar Global Ltd: ok (gemini: gemini skipped (quota/backoff))
 14 17:55:26 pdf pdf current col Oscar Global Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=2.14, finance_costs=0.0, depreciation=0.0, pbt=-2.14, tax=0.0, pat=-2.14, eps=-0.06
+14 17:55:40 seen 543519 Shashwat Furnishing Solution cat=Result early=False bse_time=23:22:21 dissem=23:22:21
+14 17:56:20 wait 543519 Shashwat Furnishing Solution: numbers not yet on BSE
+14 17:56:23 pdf rule reader Shashwat Furnishing Solutions Ltd: rule: no results table page | ocr: rule: no results table page
+14 17:56:23 pdf pdf current col Hero Motors Ltd consolidated ok=False/3: revenue=36479.49, other_income=513.77, total_income=36933.26, total_expenses=34649.02, finance_costs=1100.52, depreciation=1286.53, pbt=2344.24, tax=542.39, pat=1801.85, eps
+14 17:56:23 pdf pdf checks failed Hero Motors Ltd consolidated
+14 17:56:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Hero Motors Ltd
+14 17:56:50 pdf pdf is a HALF-YEARLY filing (column dates ['30/09/2026', '31/03/2026', '30/09/2025']): not read as quarters, queued for the half-yearly route Shashwat Furnishing Solutions Ltd
