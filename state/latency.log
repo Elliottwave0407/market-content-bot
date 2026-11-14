@@ -1906,3 +1906,6 @@
 14 18:29:59 pdf rule reader Kaynes Technology India Ltd: rule: consolidated table does not reconcile [million] total_income=[9711.3, 9627.33, 9462.09] pbt=[647.31, 772.21, 1481.19] tax=[249.31, 318.08, 324.08] associates=[707.33, 816.59, 1507.37]
 14 18:30:13 ready 543435|Sep-26|standalone kind=photo waited_min=1.7 tries=1 pdf_log=pdf checks failed Shah Foods Ltd consolidated | pdf current col Clara Industries Ltd standalone ok=True/3: revenue=651.75, other_income=2.0, total_income=653.75
 14 18:30:20 ready 538607|Sep-26|na kind=photo waited_min=45.2 tries=8 pdf_log=
+14 18:30:51 seen 543435 Clara Industries Ltd cat=Board Meeting early=True bse_time=23:59:22 dissem=23:59:22
+14 18:32:50 pdf nim reader Kaynes Technology India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+14 18:32:50 pdf pdf read failed Kaynes Technology India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
