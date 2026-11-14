@@ -2263,7 +2263,11 @@
 "fe14c4d9-e57e-4ec5-b21a-5cf153c0a189",
 "bf434f53-9fc4-4b59-b093-0df0068120ae",
 "01d949fc-715b-47ed-b147-2abeae130ee4",
-"405bf23f-3816-41ec-8d48-ade68f3d6c29"
+"405bf23f-3816-41ec-8d48-ade68f3d6c29",
+"355f0add-fcec-4d60-a503-e3c653dd68cc",
+"e34e5970-92fd-4dc6-b1de-c419a1f0bbfd",
+"d6dd2baf-1e63-46c1-b25e-26538d661ca7",
+"4a5bc35d-9928-4be0-a8cb-cc17db09015c"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7036,7 +7040,9 @@
 "531500|Sep-26|standalone",
 "532386|Sep-26|consolidated",
 "531971|Sep-26|standalone",
-"544393|Sep-26|na"
+"544393|Sep-26|na",
+"531909|Sep-26|consolidated",
+"513513|Sep-26|standalone"
 ],
 "pending": {
 "6bd34908-748a-49ef-b62d-02dd651c3299": {
@@ -7758,7 +7764,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794675599.3958695,
-"last": 1794675599.3958695,
+"last": 1794676442.3614604,
 "alerted": false
 },
 "544240bd-9e77-4bac-8489-8d925172ff70": {
@@ -7796,7 +7802,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794675599.3958695,
-"last": 1794675599.3958695,
+"last": 1794676442.3614604,
 "alerted": false
 },
 "e25efd09-7665-44b8-b739-979fd151a05f": {
@@ -7956,7 +7962,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 408
+"2026-11-14": 411
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8020,9 +8026,9 @@
 "other": 80
 },
 "vision-key": {
-"ok": 141,
+"ok": 148,
 "429": 8,
-"other": 45
+"other": 46
 }
 }
 },
@@ -8569,7 +8575,8 @@
 "2c40f39b-fa03-425c-af21-bab4b645499a": 1,
 "71cc82bb-a32c-4c36-9e94-1ae0c3e1c4ad": 1,
 "fe14c4d9-e57e-4ec5-b21a-5cf153c0a189": 1,
-"8ce47ac6-3f70-46e0-8840-46742e7b2417": 1
+"8ce47ac6-3f70-46e0-8840-46742e7b2417": 1,
+"4a5bc35d-9928-4be0-a8cb-cc17db09015c": 1
 },
 "cons_expected": {
 "b6a3c238-bd8e-40f6-b5ce-bacfb15b5fe9": 1,
@@ -9090,7 +9097,9 @@
 "44415cc1-fccd-4d59-b6be-a7799f923a7c": 1,
 "afb767c2-c3b0-4fa3-a969-d63ade0f8bfa": 1,
 "bf434f53-9fc4-4b59-b093-0df0068120ae": 1,
-"52526c00-81ea-41bd-9514-cd13c1ddf368": 1
+"52526c00-81ea-41bd-9514-cd13c1ddf368": 1,
+"355f0add-fcec-4d60-a503-e3c653dd68cc": 1,
+"e34e5970-92fd-4dc6-b1de-c419a1f0bbfd": 1
 },
 "lag": [
 [
@@ -12644,6 +12653,26 @@
 "pat": 8.806000000000001,
 "t": 1794676491.8029308,
 "last": 0
+},
+"531909|Sep-26|consolidated": {
+"code": "531909",
+"name": "Croissance Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 0.0,
+"pat": -5.4270000000000005,
+"t": 1794676651.8257163,
+"last": 0
+},
+"513513|Sep-26|standalone": {
+"code": "513513",
+"name": "Aditya Ispat Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 52.641,
+"pat": -13.263,
+"t": 1794676677.463182,
+"last": 0
 }
 },
 "half_q": {
@@ -14004,6 +14033,13 @@
 "SLONGNAME": "Fly-Hi Maritime Travels Ltd",
 "ATTACHMENTNAME": "2ea796a5-4275-4411-94ba-0e033e28c04f.pdf",
 "NEWS_DT": "2026-11-14T22:37:34.34"
+},
+"355f0add-fcec-4d60-a503-e3c653dd68cc": {
+"NEWSID": "355f0add-fcec-4d60-a503-e3c653dd68cc",
+"SCRIP_CD": 544779,
+"SLONGNAME": "UHM Vacation Ltd",
+"ATTACHMENTNAME": "d5b04383-fed1-4993-b33c-9cd2e7ccb4f1.pdf",
+"NEWS_DT": "2026-11-14T22:39:41.367"
 }
 },
 "audit": [
