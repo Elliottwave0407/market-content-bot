@@ -1764,7 +1764,8 @@
 "4e763f12-a27a-4053-b3ee-6b1e22d1c7a6",
 "b0059f0a-b5ef-4a56-ba09-7faa87f2d371",
 "6e356e47-472a-4edc-a100-b36cc73de6ad",
-"4f0f359f-8ec3-4d2b-b820-e63c47bdd1e8"
+"4f0f359f-8ec3-4d2b-b820-e63c47bdd1e8",
+"ff37edf3-a58a-4404-adf1-5b71d9838dea"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6161,7 +6162,8 @@
 "512439|Sep-26|na",
 "533317|Sep-26|standalone",
 "501874|Sep-26|standalone",
-"532105|Sep-26|na"
+"532105|Sep-26|na",
+"535789|Sep-26|consolidated"
 ],
 "pending": {
 "6ddbd534-7a31-4529-bdc1-3a20df4f3185": {
@@ -6313,44 +6315,6 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794637345.1195798,
-"last": 1794639671.4359777,
-"alerted": false
-},
-"ff37edf3-a58a-4404-adf1-5b71d9838dea": {
-"rec": {
-"NEWSID": "ff37edf3-a58a-4404-adf1-5b71d9838dea",
-"SCRIP_CD": 535789,
-"XML_NAME": "ANN_535789_FF37EDF3-A58A-4404-ADF1-5B71D9838DEA",
-"NEWSSUB": "Sammaan Capital Ltd - 535789 - Outcome Of Board Meeting Held On November 14, 2026.",
-"DT_TM": "2026-11-14T11:52:27.377",
-"NEWS_DT": "2026-11-14T11:52:27.377",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5c68513d-8784-4d66-ba6f-a925ed9090a3.pdf",
-"MORE": "",
-"HEADLINE": "Please find enclosed outcome of Board Meeting held on November 14, 2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/sammaan-capital-ltd/sammaancap/535789/",
-"SLONGNAME": "Sammaan Capital Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 5,
-"News_submission_dt": "2026-11-14T11:52:27",
-"DissemDT": "2026-11-14T11:52:27.377",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2754186,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794639671.4359777,
 "last": 1794639671.4359777,
 "alerted": false
 },
@@ -7719,13 +7683,10 @@
 "5998a29f-de0d-401f-8aa6-811805886aae": 1,
 "4b3677f3-38dc-4ff7-89ee-8ae8c2360965": 1,
 "88eaf906-51a7-45f9-8a5b-4fe95e4c05e5": 1,
-"7cde6ca8-4d1f-4792-b4d7-88a1273d12f9": 1
+"7cde6ca8-4d1f-4792-b4d7-88a1273d12f9": 1,
+"ff37edf3-a58a-4404-adf1-5b71d9838dea": 1
 },
 "lag": [
-[
-"Yashhtej Industries (India) Ltd",
-67
-],
 [
 "ANS Industries Ltd",
 67
@@ -8921,6 +8882,10 @@
 [
 "Mega Fin India Ltd",
 513
+],
+[
+"Sammaan Capital Ltd",
+14
 ]
 ],
 "pdfposted": {
@@ -10072,6 +10037,16 @@
 "rev": 0.0,
 "pat": -9.664000000000001,
 "t": 1794640375.155006,
+"last": 0
+},
+"535789|Sep-26|consolidated": {
+"code": "535789",
+"name": "Sammaan Capital Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 18499.7,
+"pat": 3123.3999999999996,
+"t": 1794640528.1733785,
 "last": 0
 }
 },
