@@ -1637,3 +1637,10 @@
 14 16:13:34 ready 512634|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
 14 16:14:39 ready 540358|Sep-26|consolidated kind=photo waited_min=50.8 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | rule reader RMC Switchgears Ltd: rule: cons: no revenue row; sta
 14 16:14:53 ready 511557|Sep-26|na kind=photo waited_min=50.8 tries=2 pdf_log=pdf current col RMC Switchgears Ltd consolidated ok=True/3: revenue=8890.79, other_income=51.5, total_income=8932.29, total_expenses=7873.07, finance_costs=520.
+14 16:16:17 ready 531911|Sep-26|na kind=photo waited_min=50.8 tries=2 pdf_log=pdf current col Galaxy Agrico Exports Ltd consolidated ok=False/3: revenue=844.05, other_income=42.88, total_income=886.93, total_expenses=710.06, finance_costs
+14 16:16:25 ready 544616|Sep-26|na kind=photo waited_min=50.8 tries=99 pdf_log=pdf current col Galaxy Agrico Exports Ltd consolidated ok=False/3: revenue=844.05, other_income=42.88, total_income=886.93, total_expenses=710.06, finance_costs
+14 16:16:52 ready 526231|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Standard Surfactants Ltd standalone ok=True/3: revenue=11356.79, other_income=61.64, total_income=11418.43, total_expenses=10349.44, finance_cos
+14 16:17:02 ready 544568|Sep-26|na kind=photo waited_min=50.8 tries=99 pdf_log=pdf current col Standard Surfactants Ltd standalone ok=True/3: revenue=11356.79, other_income=61.64, total_income=11418.43, total_expenses=10349.44, finance_cos
+14 16:18:25 ready 542803|Sep-26|anomaly kind=photo waited_min=50.8 tries=2 pdf_log=
+14 16:18:37 ready 541347|Sep-26|standalone kind=photo waited_min=50.8 tries=1 pdf_log=rule reader Parvati Sweetners and Power Ltd: rule: stan: missing ['pat'] n=6 | pdf current col Parvati Sweetners and Power Ltd standalone ok=True/3: revenue=137
+14 16:18:46 wait 531971 Popees Baby Care India Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
