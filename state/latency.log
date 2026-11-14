@@ -1798,3 +1798,24 @@
 14 17:44:46 seen 530173 Oscar Global Ltd cat=Result early=False bse_time=23:13:02 dissem=23:13:02
 14 17:44:46 seen 538607 Toyam Sports Ltd cat=Result early=False bse_time=23:13:03 dissem=23:13:03
 14 17:45:18 wait 538607 Toyam Sports Ltd: numbers not yet on BSE
+14 17:46:57 wait 530173 Oscar Global Ltd: numbers not yet on BSE
+14 17:48:36 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sept-2026', '31-Mar-2026', '30-Sep-2025']): not read as quarters, queued for the half-yearly route Sancode Technologies Ltd
+14 17:48:36 pdf rule reader Toyam Sports Ltd: rule: no results table page | ocr: rule: no results table page
+14 17:48:36 pdf rule reader Rajesh Exports Ltd: rule: no results table page | ocr: rule: no results table page
+14 17:48:36 pdf rule reader Oscar Global Ltd: rule: stan: no revenue row
+14 17:48:36 pdf nim reader Rajesh Exports Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: g
+14 17:48:36 pdf pdf read failed Rajesh Exports Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 20 numbers not found in the filing text (possible in
+14 17:48:36 pdf nim reader Oscar Global Ltd: ok (gemini: gemini skipped (quota/backoff))
+14 17:48:36 pdf pdf current col Oscar Global Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=2.14, finance_costs=0.0, depreciation=0.0, pbt=-2.14, tax=0.0, pat=-2.14, eps=-0.06
+14 17:48:36 pdf pdf incomplete Oscar Global Ltd standalone: missing ['ebitda'] - not posting from PDF
+14 17:48:36 pdf rule reader Oscar Global Ltd: rule: stan: no revenue row
+14 17:48:36 pdf rule reader Arcee Industries Ltd: rule: stan: first column larger than the year-to-date column; stan: does not reconcile [lakh] total_income=[830.78, 0.0, 0.39] total_expenses=[790.77, 31.23, 18.18] pbt=[40.01, -31.23, -17.79] tax
+14 17:48:36 pdf nim reader Arcee Industries Ltd: ok (gemini: gemini skipped (quota/backoff))
+14 17:48:36 pdf pdf current col Arcee Industries Ltd standalone ok=True/3: revenue=830.78, other_income=0.0, total_income=830.78, total_expenses=790.77, finance_costs=0.25, depreciation=2.76, pbt=40.01, tax=0.0, pat=40.01, eps=0.78
+14 17:48:36 pdf pdf q-4 revenue typo: pdf 0.03900000000000001 -> BSE history 0.82 (profit matched) Arcee Industries Ltd
+14 17:48:36 pdf pdf history cells corrected from BSE for q-[4]: Arcee Industries Ltd standalone
+14 17:48:37 seen 544346 RDB Real Estate Construction cat=Result early=False bse_time=23:14:21 dissem=23:14:21
+14 17:48:37 seen 543897 Sancode Technologies Ltd cat=Result early=False bse_time=23:15:24 dissem=23:15:24
+14 17:49:02 wait 543897 Sancode Technologies Ltd: numbers not yet on BSE
+14 17:49:03 wait 544346 RDB Real Estate Construction: numbers not yet on BSE
+14 17:49:07 ready 544641|Sep-26|na kind=photo waited_min=48.6 tries=99 pdf_log=rule reader Sancode Technologies Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
