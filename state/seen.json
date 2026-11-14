@@ -2125,7 +2125,8 @@
 "8b97598d-1d7e-487d-8553-bf4a774d95b3",
 "8cfcd175-88f8-41a5-886f-7e2ac0e7d6a0",
 "a54422b4-6ca1-42ba-93ad-abab39040f7c",
-"8a58f1c5-39b1-4bec-884e-0202043b7cfd"
+"8a58f1c5-39b1-4bec-884e-0202043b7cfd",
+"39a11738-f4ce-426a-b530-09c36b8df40b"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6776,7 +6777,8 @@
 "500342|Sep-26|consolidated",
 "531667|Sep-26|standalone",
 "544143|Sep-26|na",
-"544164|Sep-26|na"
+"544164|Sep-26|na",
+"503092|Sep-26|standalone"
 ],
 "pending": {
 "920d8b90-a442-494f-a093-ce542214ea47": {
@@ -7689,44 +7691,6 @@
 },
 "first": 1794655796.0620809,
 "last": 1794666027.9216862,
-"alerted": false
-},
-"39a11738-f4ce-426a-b530-09c36b8df40b": {
-"rec": {
-"NEWSID": "39a11738-f4ce-426a-b530-09c36b8df40b",
-"SCRIP_CD": 503092,
-"XML_NAME": "ANN_503092_39A11738-F4CE-426A-B530-09C36B8DF40B",
-"NEWSSUB": "Pasupati Spinning & Weaving Mills Ltd - 503092 - Results-Financial Results For 30/09/2026",
-"DT_TM": "2026-11-14T16:46:15.953",
-"NEWS_DT": "2026-11-14T16:46:15.953",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "fb41ac73-48de-41b8-9d0b-149603416303.pdf",
-"MORE": "",
-"HEADLINE": "PFA herewith results for period ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/pasupati-spinning--weaving-mills-ltd/pasuspg/503092/",
-"SLONGNAME": "Pasupati Spinning & Weaving Mills Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-14T16:46:15",
-"DissemDT": "2026-11-14T16:46:15.953",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 2142142,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794655796.0620809,
-"last": 1794655796.0620809,
 "alerted": false
 },
 "b481ca56-1052-4459-a193-55bf3b0d8194": {
@@ -8798,7 +8762,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 291
+"2026-11-14": 292
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8857,7 +8821,7 @@
 "other": 57
 },
 "concall-key": {
-"ok": 107,
+"ok": 113,
 "429": 6,
 "other": 40
 },
@@ -9372,7 +9336,8 @@
 "7e1ca04f-79fd-4332-876c-a3b72537e88f": 1,
 "b2a05734-de87-4422-ae78-eba924407d0c": 1,
 "46ae7b8c-d191-4ed4-a005-e11057d30428": 1,
-"81c60c0d-6474-4e86-8a46-6f604c7e01dc": 1
+"81c60c0d-6474-4e86-8a46-6f604c7e01dc": 1,
+"39a11738-f4ce-426a-b530-09c36b8df40b": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -9944,10 +9909,6 @@
 "fcee5938-4869-4eed-bfb9-3f12b3a4ea82": 1
 },
 "lag": [
-[
-"Justo Realfintech Ltd",
-45
-],
 [
 "Jayant Infratech Ltd",
 86
@@ -11143,6 +11104,10 @@
 [
 "Faalcon Concepts Ltd",
 214
+],
+[
+"Pasupati Spinning & Weaving Mills Ltd",
+171
 ]
 ],
 "pdfposted": {
@@ -13224,6 +13189,16 @@
 "rev": 117.301,
 "pat": 10.889000000000001,
 "t": 1794667425.4569318,
+"last": 0
+},
+"503092|Sep-26|standalone": {
+"code": "503092",
+"name": "Pasupati Spinning & Weaving Mills Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 288.1,
+"pat": 9.700000000000001,
+"t": 1794668058.403945,
 "last": 0
 }
 },
