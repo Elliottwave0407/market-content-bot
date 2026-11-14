@@ -9,6 +9,9 @@ on:
       hint:
         description: "headline text (optional)"
         default: ""
+      qhint:
+        description: "BSE quarter code (Sep-26 = 131), optional"
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -27,4 +30,5 @@ jobs:
       - env:
           URL: ${{ github.event.inputs.url }}
           HINT: ${{ github.event.inputs.hint }}
+          QHINT: ${{ github.event.inputs.qhint }}
         run: python scripts/pdf_url_debug.py

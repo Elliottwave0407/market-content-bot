@@ -62,11 +62,20 @@ try:
             lb, nums = rr.split_row(r_)
             if re.search(r"statement of|financial results", lb, re.I):
                 print("TRIM p%d title: %r %s" % (pno + 1, lb[:90], nums), flush=True)
-    r3, w3 = rr.read_pdf(small, os.environ.get("HINT", ""), None)
+    r3, w3 = rr.read_pdf(small, os.environ.get("HINT", ""), int(os.environ.get("QHINT") or 0) or None)
     print("TRIM READ why:", w3)
     if r3:
         for k in ("consolidated", "standalone"):
             d = r3.get(k)
-            print("TRIM", k, "->", None if not d else {x: d.get(x) for x in ("revenue", "pat")})
+            print("TRIM", k, "->", None if not d else {x: d.get(x) for x in ("revenue", "total_income", "total_expenses", "pbt", "tax", "pat", "eps")})
 except Exception as e:
     print("TRIM error", repr(e)[:200])
+
+if os.environ.get("QHINT"):
+    pgs = rr._pdf_rows(small, ocr=False)
+    for pno, (txt, rws) in enumerate(pgs):
+        if re.search(r"statement of consolidated", txt, re.I) and re.search(r"revenue from operations", txt, re.I):
+            print("TRIMDUMP page", pno + 1, flush=True)
+            for r_ in rws[:60]:
+                lb, nums = rr.split_row(r_)
+                print("TRIMDUMP   ", repr(lb[:60]), nums, flush=True)
