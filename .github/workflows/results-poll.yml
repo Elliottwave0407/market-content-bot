@@ -36,6 +36,7 @@ jobs:
           POLL_LOOP_MINUTES: ${{ github.event.inputs.minutes || '345' }}
           POLL_INTERVAL: "10"
           NSE_BACKUP: "1"
+          NSE_SME: "1"      # 15 Nov: NSE SME (Emerge) announcements index (Anondita Medicare was never seen)
           RULE_OCR: "1"      # 5 Nov: OCR was never switched on in the live poller (only in the diagnosis job), so scanned / garbled PDFs such as Fredun and Tonbo were never OCR-read
           POLL_RETRY_SEC: "40"      # pending results are re-checked (NSE and BSE) every 40 s instead of 90 s
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
