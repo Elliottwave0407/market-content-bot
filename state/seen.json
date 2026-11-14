@@ -1773,7 +1773,11 @@
 "4df6df98-51f4-4c79-bbd2-77696d26d333",
 "7a0f88c2-fdc1-4b9a-a7de-3c2ebf94e048",
 "6ddbd534-7a31-4529-bdc1-3a20df4f3185",
-"1c631a03-81b1-4d44-80f8-aee798131dad"
+"1c631a03-81b1-4d44-80f8-aee798131dad",
+"7ae56a5d-b204-4c86-825b-aff65234fffd",
+"e8b64a70-3502-493c-a34d-c5da6aee41bb",
+"ba31c1a0-ccb8-4f52-804c-f83f51fb0483",
+"ed79a520-1779-459a-9ac4-ada2d229ce55"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6174,7 +6178,8 @@
 "535789|Sep-26|consolidated",
 "543811|Sep-26|standalone",
 "502893|Sep-26|consolidated",
-"526817|Sep-26|standalone"
+"526817|Sep-26|standalone",
+"532886|Sep-26|standalone"
 ],
 "pending": {
 "bf20da6e-5177-4c98-8fe4-e2e05833a7c9": {
@@ -6250,7 +6255,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794637345.1195798,
-"last": 1794640504.8747153,
+"last": 1794641360.047654,
 "alerted": true
 },
 "9f9ab153-3986-4867-b681-8b2b4245621c": {
@@ -6364,8 +6369,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794639671.4359777,
-"last": 1794640504.8747153,
-"alerted": false
+"last": 1794641360.047654,
+"alerted": true
 },
 "7cde6ca8-4d1f-4792-b4d7-88a1273d12f9": {
 "rec": {
@@ -6402,8 +6407,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794639671.4359777,
-"last": 1794640504.8747153,
-"alerted": false
+"last": 1794641360.047654,
+"alerted": true
 },
 "95059e1b-e28d-4fbb-9a4c-a753c9f4a5ef": {
 "rec": {
@@ -6440,7 +6445,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794639671.4359777,
-"last": 1794640504.8747153,
+"last": 1794641360.047654,
 "alerted": false
 },
 "1191cf2b-0183-4496-b003-e8823aa8357c": {
@@ -6746,12 +6751,50 @@
 "first": 1794641360.047654,
 "last": 1794641360.047654,
 "alerted": false
+},
+"768fb727-eb89-4a5d-b352-c5dc51c10a2f": {
+"rec": {
+"NEWSID": "768fb727-eb89-4a5d-b352-c5dc51c10a2f",
+"SCRIP_CD": 541144,
+"XML_NAME": "ANN_541144_768FB727-EB89-4A5D-B352-C5DC51C10A2F",
+"NEWSSUB": "Active Clothing Co Ltd - 541144 - Unaudited Financial Results For The Quarter And Half Year Ended 30.09.2026",
+"DT_TM": "2026-11-14T12:56:16.09",
+"NEWS_DT": "2026-11-14T12:56:16.09",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "737a9703-05a3-4ac9-a7df-9ac3a6c91951.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Financial Results for the Quarter and Half year ended 30.09.2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/active-clothing-co-ltd/active/541144/",
+"SLONGNAME": "Active Clothing Co Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 6,
+"News_submission_dt": "2026-11-14T12:56:16",
+"DissemDT": "2026-11-14T12:56:16.09",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 1292343,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794641360.047654,
+"last": 1794641360.047654,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 775
+"2026-11-13": 776
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -7389,7 +7432,9 @@
 "b0059f0a-b5ef-4a56-ba09-7faa87f2d371": 1,
 "c362a85e-f02e-4b75-8e3b-e9efc417c69e": 1,
 "3946d176-9766-4bd4-b841-eea566270ec4": 1,
-"1c631a03-81b1-4d44-80f8-aee798131dad": 1
+"1c631a03-81b1-4d44-80f8-aee798131dad": 1,
+"7ae56a5d-b204-4c86-825b-aff65234fffd": 1,
+"ed79a520-1779-459a-9ac4-ada2d229ce55": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -10233,6 +10278,16 @@
 "rev": 1898.167,
 "pat": 109.585,
 "t": 1794641396.6657536,
+"last": 0
+},
+"532886|Sep-26|standalone": {
+"code": "532886",
+"name": "SEL Manufacturing Company Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 36.562000000000005,
+"pat": -398.84000000000003,
+"t": 1794641619.7939558,
 "last": 0
 }
 },
