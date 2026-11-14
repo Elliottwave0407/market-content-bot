@@ -75,7 +75,7 @@ def split_row(row):
         i -= 1
     garb = {}
     # one garbled number token between printed numbers (e.g. '6s2.09' for '652.09') used to cut the row and push the earlier numbers into the label: bridge it as an unknown value
-    while i >= 2 and len(toks) - i >= 2 and not garb and _GARBRE.match(toks[i - 1]) and sum(ch.isdigit() for ch in toks[i - 1]) >= 2 and (_isnum(toks[i - 2]) or toks[i - 2] in NILS):
+    while False and i >= 2 and len(toks) - i >= 2 and not garb and _GARBRE.match(toks[i - 1]) and sum(ch.isdigit() for ch in toks[i - 1]) >= 2 and (_isnum(toks[i - 2]) or toks[i - 2] in NILS):
         garb[0] = toks[i - 1]
         i -= 1
         while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
