@@ -9,7 +9,8 @@ sym = os.environ["SYM"].upper()
 for ds in [d for d in os.environ.get("DAYS", "").split(",") if d]:
     day = datetime.strptime(ds, "%Y-%m-%d").replace(tzinfo=nr.IST)
     rows = nr.fetch_day(day) or []
-    mine = [x for x in rows if str(x.get("symbol", "")).upper() == sym]
+    mine = [x for x in rows if sym in str(x.get("symbol", "")).upper() or sym in str(x.get("sm_name", "")).upper() or sym in str(x.get("attchmntText", "")).upper() or sym in str(x.get("attchmntFile", "")).upper()]
+    if rows: print("   sample row keys:", sorted(rows[0].keys()), flush=True)
     print(f"== {ds}: {len(rows)} announcements, {len(mine)} for {sym}", flush=True)
     for x in mine:
         desc = (x.get("desc") or "").strip()
