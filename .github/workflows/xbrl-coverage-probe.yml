@@ -7,6 +7,8 @@ on:
         default: "2026-11-13,2026-11-14"
       maxn:
         default: "120"
+      only_sme:
+        default: "0"
 permissions:
   contents: read
 jobs:
@@ -24,4 +26,5 @@ jobs:
       - env:
           DAYS: ${{ github.event.inputs.days }}
           MAXN: ${{ github.event.inputs.maxn }}
+          ONLY_SME: ${{ github.event.inputs.only_sme }}
         run: python scripts/xbrl_coverage_probe.py

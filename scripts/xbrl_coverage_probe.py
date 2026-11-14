@@ -12,7 +12,8 @@ maxn = int(os.environ.get("MAXN", "120"))
 rows = []
 for ds in days:
     day = datetime.strptime(ds, "%Y-%m-%d").replace(tzinfo=nr.IST)
-    for x in nr.result_rows(nr.fetch_day(day)):
+    allr = nr._fetch_index(day.strftime("%d-%m-%Y"), "sme") if os.environ.get("ONLY_SME") == "1" else nr.fetch_day(day)
+    for x in nr.result_rows(allr):
         rows.append(x)
 by = {}
 for x in rows:
