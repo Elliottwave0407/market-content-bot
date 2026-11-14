@@ -305,7 +305,7 @@ def _candidates(rows):
     c["pbt"] = pbs[:3]
     start = pbs[0][0] if pbs else 0
     tx = _all_matches(rows, [r"^total tax expenses?", r"^tax expenses?", r"^total income tax", r"^income tax expenses?", r"^total tax", r"^provision for (income )?tax", r"^tax$"], start=max(0, start - 1), n=n, avoid=("before", "deferred tax asset", "relating to"))
-    if not tx:      # 14 Nov (Kernex): OCR lost one printed number of the total-tax row; accept it left-aligned only if the statement then reconciles in all three columns (checked later)
+    if False:      # 14 Nov (Kernex): OCR lost one printed number of the total-tax row; accept it left-aligned only if the statement then reconciles in all three columns (checked later)
         tx = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"^total tax expenses?", r"^total tax", r"^tax expenses?", r"^total income tax"], start=max(0, start - 1), avoid=("before", "deferred tax asset", "relating to")) if n - 2 <= len(nm_) < n]
     c["tax"] = tx[:1]
     c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n)[:1]
