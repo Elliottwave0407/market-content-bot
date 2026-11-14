@@ -2162,7 +2162,11 @@
 "3c642447-c664-49b2-aae2-3b585accdfa4",
 "b4f5b76a-9fa5-413e-a42d-55793311231b",
 "3441bf76-f0a5-454a-9b7f-27c2e48a9da9",
-"03ec1af7-602c-498d-b35e-29a6713ee01c"
+"03ec1af7-602c-498d-b35e-29a6713ee01c",
+"7414d1d7-e74d-4fde-8953-954fc20ba9d9",
+"5d03dc55-3e3b-427a-9aba-267e3c31cf13",
+"5e872328-e727-4a96-b850-071461a98b4e",
+"5fe12177-bdb1-48fd-9a00-b640e037c7c3"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6847,7 +6851,10 @@
 "532878|Sep-26|consolidated",
 "543746|Sep-26|na",
 "532694|Sep-26|consolidated",
-"544703|Sep-26|consolidated"
+"544703|Sep-26|consolidated",
+"544976|Sep-26|na",
+"531694|Sep-26|consolidated",
+"532022|Sep-26|consolidated"
 ],
 "pending": {
 "6bd34908-748a-49ef-b62d-02dd651c3299": {
@@ -6963,44 +6970,6 @@
 "first": 1794653185.9810545,
 "last": 1794655796.0620809,
 "alerted": false
-},
-"5d03dc55-3e3b-427a-9aba-267e3c31cf13": {
-"rec": {
-"NEWSID": "5d03dc55-3e3b-427a-9aba-267e3c31cf13",
-"SCRIP_CD": 544976,
-"XML_NAME": "ANN_544976_5D03DC55-3E3B-427A-9ABA-267E3C31CF13",
-"NEWSSUB": "Omara Ventures India Ltd - 544976 - Un-Audited Financial Results Of The Company For The Half Year Ended 30Th September, 2026",
-"DT_TM": "2026-11-14T16:21:53.46",
-"NEWS_DT": "2026-11-14T16:21:53.46",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "44c7f1cf-1740-4f0d-8a30-dc67ca081341.pdf",
-"MORE": "",
-"HEADLINE": "Un-Audited Financial Results of the Company for the half year ended 30th September, 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/omara-ventures-india-ltd/omara/544976/",
-"SLONGNAME": "Omara Ventures India Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-14T16:21:53",
-"DissemDT": "2026-11-14T16:21:53.46",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4741335,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794655796.0620809,
-"last": 1794666027.9216862,
-"alerted": true
 },
 "1f483119-4b45-42e7-8c8c-f878d1f2a8fc": {
 "rec": {
@@ -8641,7 +8610,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 325
+"2026-11-14": 329
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8695,14 +8664,14 @@
 "other": 94
 },
 "results-key": {
-"ok": 233,
+"ok": 235,
 "429": 13,
 "other": 59
 },
 "concall-key": {
-"ok": 190,
-"429": 6,
-"other": 56
+"ok": 201,
+"429": 7,
+"other": 57
 },
 "vision-key": {
 "ok": 46,
@@ -9807,13 +9776,12 @@
 "3c642447-c664-49b2-aae2-3b585accdfa4": 1,
 "ff04884f-1cd4-4c10-b810-cb510673a6ad": 1,
 "77e5f15d-93eb-4409-8381-1712f7d323db": 1,
-"03ec1af7-602c-498d-b35e-29a6713ee01c": 1
+"03ec1af7-602c-498d-b35e-29a6713ee01c": 1,
+"7414d1d7-e74d-4fde-8953-954fc20ba9d9": 1,
+"5e872328-e727-4a96-b850-071461a98b4e": 1,
+"5fe12177-bdb1-48fd-9a00-b640e037c7c3": 1
 },
 "lag": [
-[
-"Tandhan Industries Ltd",
-51
-],
 [
 "Arvaya Healthcare Ltd",
 184
@@ -11009,6 +10977,10 @@
 [
 "Logica Infoway Ltd",
 57
+],
+[
+"Omara Ventures India Ltd",
+228
 ]
 ],
 "pdfposted": {
@@ -13150,6 +13122,26 @@
 "rev": 138.906,
 "pat": 3.9030000000000005,
 "t": 1794670486.7789392,
+"last": 0
+},
+"531694|Sep-26|consolidated": {
+"code": "531694",
+"name": "Rainbow Foundations Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 704.984,
+"pat": 20.153000000000002,
+"t": 1794670636.0743978,
+"last": 0
+},
+"532022|Sep-26|consolidated": {
+"code": "532022",
+"name": "Filatex Fashions Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 205.25500000000002,
+"pat": 1.615,
+"t": 1794670667.2469432,
 "last": 0
 }
 },
