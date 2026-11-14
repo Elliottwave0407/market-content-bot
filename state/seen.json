@@ -2215,7 +2215,8 @@
 "ffa2ca6a-a3b2-4c88-a7eb-f766b71c95b5",
 "9845073b-aa69-4a71-84df-5e8d6d071b0e",
 "8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2",
-"f06fa989-2c35-4106-a73b-3e625d90f016"
+"f06fa989-2c35-4106-a73b-3e625d90f016",
+"31eb2513-c02e-4721-aa01-431675f1be8d"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6945,7 +6946,8 @@
 "540809|Sep-26|consolidated",
 "526365|Sep-26|consolidated",
 "523842|Sep-26|consolidated",
-"519566|Sep-26|consolidated"
+"519566|Sep-26|consolidated",
+"531153|Sep-26|standalone"
 ],
 "pending": {
 "6bd34908-748a-49ef-b62d-02dd651c3299": {
@@ -7895,7 +7897,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794669477.66543,
-"last": 1794669477.66543,
+"last": 1794672523.7927792,
 "alerted": false
 },
 "a174dd8d-e3a6-4565-b3f4-d344515cb207": {
@@ -7933,45 +7935,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794669477.66543,
-"last": 1794669477.66543,
-"alerted": false
-},
-"31eb2513-c02e-4721-aa01-431675f1be8d": {
-"rec": {
-"NEWSID": "31eb2513-c02e-4721-aa01-431675f1be8d",
-"SCRIP_CD": 531153,
-"XML_NAME": "ANN_531153_31EB2513-C02E-4721-AA01-431675F1BE8D",
-"NEWSSUB": "Diligent Industries Ltd - 531153 - Un-Audited Financial Results For The 2Nd Quarter And Half Year Ended 30.09.2026 \r\n",
-"DT_TM": "2026-11-14T19:54:09.62",
-"NEWS_DT": "2026-11-14T19:54:09.62",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "c41bc055-190d-4f2d-8389-a39a75fea366.pdf",
-"MORE": "",
-"HEADLINE": "Un audited results for the 2nd quarter and half year ended 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/diligent-industries-ltd/diligent/531153/",
-"SLONGNAME": "Diligent Industries Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 42,
-"News_submission_dt": "2026-11-14T19:54:09",
-"DissemDT": "2026-11-14T19:54:09.62",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 1434160,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794669477.66543,
-"last": 1794669477.66543,
+"last": 1794672523.7927792,
 "alerted": false
 },
 "c62f844a-a388-4dc1-b6da-0629bfda9b8d": {
@@ -8549,7 +8513,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 354
+"2026-11-14": 357
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8608,12 +8572,12 @@
 "other": 60
 },
 "concall-key": {
-"ok": 321,
+"ok": 329,
 "429": 8,
-"other": 69
+"other": 70
 },
 "vision-key": {
-"ok": 54,
+"ok": 55,
 "429": 6,
 "other": 37
 }
@@ -9139,7 +9103,9 @@
 "ebab883f-659e-4dbe-bb08-25a3f1349722": 1,
 "e3e61de6-4bf1-456e-abde-15ccc5a5d8ca": 1,
 "400b40d9-592b-4c46-8365-f57f134c03bb": 1,
-"01d949fc-715b-47ed-b147-2abeae130ee4": 1
+"01d949fc-715b-47ed-b147-2abeae130ee4": 1,
+"61924314-ffef-4501-8d0b-2081935d78c0": 1,
+"31eb2513-c02e-4721-aa01-431675f1be8d": 1
 },
 "cons_expected": {
 "b6a3c238-bd8e-40f6-b5ce-bacfb15b5fe9": 1,
@@ -9645,13 +9611,10 @@
 "9845073b-aa69-4a71-84df-5e8d6d071b0e": 1,
 "0b60c89d-92b5-42d0-8e05-405c3f4d5ca6": 1,
 "8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2": 1,
-"f06fa989-2c35-4106-a73b-3e625d90f016": 1
+"f06fa989-2c35-4106-a73b-3e625d90f016": 1,
+"a174dd8d-e3a6-4565-b3f4-d344515cb207": 1
 },
 "lag": [
-[
-"Triton Valves Ltd",
-121
-],
 [
 "Goodricke Group Ltd",
 121
@@ -10846,6 +10809,10 @@
 ],
 [
 "Super Tannery Ltd",
+51
+],
+[
+"Diligent Industries Ltd",
 51
 ]
 ],
@@ -13099,6 +13066,16 @@
 "pat": 6.499,
 "t": 1794673481.2743132,
 "last": 0
+},
+"531153|Sep-26|standalone": {
+"code": "531153",
+"name": "Diligent Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 463.48100000000005,
+"pat": 12.111,
+"t": 1794673579.8125787,
+"last": 0
 }
 },
 "half_q": {
@@ -14354,6 +14331,20 @@
 "SLONGNAME": "DSM Fresh Foods Ltd",
 "ATTACHMENTNAME": "27299bee-ee5a-45d3-9b13-5c72fe761007.pdf",
 "NEWS_DT": "2026-11-14T19:58:13.377"
+},
+"61924314-ffef-4501-8d0b-2081935d78c0": {
+"NEWSID": "61924314-ffef-4501-8d0b-2081935d78c0",
+"SCRIP_CD": 544772,
+"SLONGNAME": "Aureate Tradde Ltd",
+"ATTACHMENTNAME": "1ce2a212-6fec-40e9-9c1d-cd0d211b337e.pdf",
+"NEWS_DT": "2026-11-14T20:14:54.003"
+},
+"a174dd8d-e3a6-4565-b3f4-d344515cb207": {
+"NEWSID": "a174dd8d-e3a6-4565-b3f4-d344515cb207",
+"SCRIP_CD": 544571,
+"SLONGNAME": "NSB BPO Solutions Ltd",
+"ATTACHMENTNAME": "7031e7d3-3643-49a5-bf0f-57a4bc1bb326.pdf",
+"NEWS_DT": "2026-11-14T19:57:35.763"
 }
 },
 "audit": [
