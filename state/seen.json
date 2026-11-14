@@ -2029,7 +2029,9 @@
 "70b195b4-697c-45d0-b4e2-50d23cb526bf",
 "5ea100ff-9027-460f-8eb8-631bc3309552",
 "6904a9a7-f423-4090-9a1c-fd1c61ab27be",
-"b393ef45-967b-4b7e-89f9-ba4c1344b649"
+"b393ef45-967b-4b7e-89f9-ba4c1344b649",
+"3d088ba1-1328-4873-808b-9b4d0a0b276f",
+"d47f5d9c-dc4b-495f-abd3-dd73e75db025"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6612,7 +6614,8 @@
 "544773|Sep-26|na",
 "531647|Sep-26|standalone",
 "500173|Sep-26|consolidated",
-"532906|Sep-26|standalone"
+"532906|Sep-26|standalone",
+"514418|Sep-26|consolidated"
 ],
 "pending": {
 "920d8b90-a442-494f-a093-ce542214ea47": {
@@ -7792,13 +7795,51 @@
 "first": 1794655796.0620809,
 "last": 1794655796.0620809,
 "alerted": false
+},
+"9b6242ed-ccb8-4f29-9890-d03f75ad97e0": {
+"rec": {
+"NEWSID": "9b6242ed-ccb8-4f29-9890-d03f75ad97e0",
+"SCRIP_CD": 544755,
+"XML_NAME": "ANN_544755_9B6242ED-CCB8-4F29-9890-D03F75AD97E0",
+"NEWSSUB": "Recode Studios Ltd - 544755 - Standalone & Consolidated Financial Results For The Half Year Ended 30Th September, 2026",
+"DT_TM": "2026-11-14T16:19:53.683",
+"NEWS_DT": "2026-11-14T16:19:53.683",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "d365efb2-6a83-4d9b-b5b2-d822a19d3249.pdf",
+"MORE": "",
+"HEADLINE": "Board has approved the Standalone & Consolidated Financial Results for the Half Year ended 30th September, 2026 in its meeting held on 14th November, 2026.",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/recode-studios-ltd/recode/544755/",
+"SLONGNAME": "Recode Studios Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 23,
+"News_submission_dt": "2026-11-14T16:19:53",
+"DissemDT": "2026-11-14T16:19:53.683",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 15201420,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794655796.0620809,
+"last": 1794655796.0620809,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 210
+"2026-11-14": 212
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7848,11 +7889,11 @@
 "2026-11-14": {
 "main": {
 "ok": 430,
-"429": 6,
+"429": 7,
 "other": 90
 },
 "results-key": {
-"ok": 62,
+"ok": 65,
 "429": 4,
 "other": 41
 },
@@ -8449,7 +8490,8 @@
 "2cb56f57-cb0e-4df2-9c3a-41ee186f64b3": 1,
 "90b269e6-7a0d-4eab-9686-c0ab3a944cd5": 1,
 "ea1fe3d8-6632-401b-a940-4772aca1b904": 1,
-"b393ef45-967b-4b7e-89f9-ba4c1344b649": 1
+"b393ef45-967b-4b7e-89f9-ba4c1344b649": 1,
+"3d088ba1-1328-4873-808b-9b4d0a0b276f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -8986,7 +9028,9 @@
 "cfa3677f-5410-410f-b970-a92f7f0487b0": 1,
 "dc3f46e4-e6dd-4d96-ad20-fa369d568971": 1,
 "2d2f7707-ce16-47af-91f4-4852580517a6": 1,
-"6904a9a7-f423-4090-9a1c-fd1c61ab27be": 1
+"6904a9a7-f423-4090-9a1c-fd1c61ab27be": 1,
+"9b6242ed-ccb8-4f29-9890-d03f75ad97e0": 1,
+"d47f5d9c-dc4b-495f-abd3-dd73e75db025": 1
 },
 "lag": [
 [
@@ -12100,6 +12144,16 @@
 "pat": 8.9,
 "t": 1794656213.3349068,
 "last": 0
+},
+"514418|Sep-26|consolidated": {
+"code": "514418",
+"name": "Mangalam Organics Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2814.612,
+"pat": 32.048,
+"t": 1794656593.549333,
+"last": 0
 }
 },
 "half_q": {
@@ -13229,6 +13283,13 @@
 "SLONGNAME": "Hemant Surgical Industries Ltd",
 "ATTACHMENTNAME": "1c856261-962a-4f76-9f63-3459b2b02318.pdf",
 "NEWS_DT": "2026-11-14T16:12:39.353"
+},
+"9b6242ed-ccb8-4f29-9890-d03f75ad97e0": {
+"NEWSID": "9b6242ed-ccb8-4f29-9890-d03f75ad97e0",
+"SCRIP_CD": 544755,
+"SLONGNAME": "Recode Studios Ltd",
+"ATTACHMENTNAME": "d365efb2-6a83-4d9b-b5b2-d822a19d3249.pdf",
+"NEWS_DT": "2026-11-14T16:19:53.683"
 }
 },
 "audit": [
