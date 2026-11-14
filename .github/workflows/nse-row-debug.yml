@@ -1,0 +1,29 @@
+# read-only: show NSE announcement rows of one symbol (posts nothing)
+name: nse-row-debug
+on:
+  workflow_dispatch:
+    inputs:
+      sym:
+        description: "NSE symbol"
+        default: "ANONDITA"
+      days:
+        description: "comma list YYYY-MM-DD"
+        default: "2026-11-14,2026-11-15"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - env:
+          SYM: ${{ github.event.inputs.sym }}
+          DAYS: ${{ github.event.inputs.days }}
+        run: python scripts/nse_row_debug.py
