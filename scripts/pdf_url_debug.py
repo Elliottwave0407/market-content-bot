@@ -41,3 +41,12 @@ if os.environ.get("DUMP", "1") == "1":
             for r_ in rws[:70]:
                 lb, nums = rr.split_row(r_)
                 print("   ", repr(lb[:60]), nums, flush=True)
+
+# raw tokens of the profit / tax rows (OCR garble hunting)
+for ocr in (True,):
+    pages = rr._pdf_rows(b, ocr=ocr)
+    for pno, (txt, rws) in enumerate(pages):
+        for r_ in rws:
+            t_ = " ".join(w[4] for w in r_)
+            if re.search(r"profit for the period|total tax expense", t_, re.I):
+                print("TOKENS p%d: %s" % (pno + 1, [w[4] for w in r_]), flush=True)
