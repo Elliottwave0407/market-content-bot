@@ -1762,3 +1762,11 @@
 14 17:28:30 ready 512461|Sep-26|na kind=photo waited_min=184.1 tries=2 pdf_log=
 14 17:28:40 ready 514128|Sep-26|standalone kind=photo waited_min=126.6 tries=8 pdf_log=
 14 17:28:51 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
+14 17:28:54 seen 544770 Yaashvi Jewellers Ltd cat=Result early=False bse_time=22:54:43 dissem=22:54:43
+14 17:29:31 wait 544770 Yaashvi Jewellers Ltd: numbers not yet on BSE
+14 17:29:58 pdf rule reader Arcee Industries Ltd: rule: stan: first column larger than the year-to-date column; stan: does not reconcile [lakh] total_income=[830.78, 0.0, 0.39] total_expenses=[790.77, 31.23, 18.18] pbt=[40.01, -31.23, -17.79] tax
+14 17:29:58 pdf pdf current col Arcee Industries Ltd standalone ok=True/3: revenue=830.78, other_income=0.0, total_income=830.78, total_expenses=790.77, finance_costs=0.25, depreciation=2.76, pbt=40.01, tax=0.0, pat=40.01, eps=0.78
+14 17:29:58 pdf pdf incomplete Arcee Industries Ltd standalone: missing ['ebitda'] - not posting from PDF
+14 17:29:59 seen 544779 UHM Vacation Ltd cat=Result early=False bse_time=22:58:38 dissem=22:58:38
+14 17:29:59 seen 531381 Arihant Foundations & Housin cat=Result early=False bse_time=22:59:17 dissem=22:59:17
+14 17:30:23 wait 531381 Arihant Foundations & Housin: numbers not yet on BSE
