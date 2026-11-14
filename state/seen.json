@@ -1894,7 +1894,8 @@
 "4cc59a5b-12bb-4e0d-b944-b291e6c11d33",
 "bdef3544-5bb6-4346-b08c-1170942396aa",
 "a625c595-c024-4fea-8348-d98c64e045a2",
-"b530f5b9-eee9-4716-9af3-79e2b7ed3b1d"
+"b530f5b9-eee9-4716-9af3-79e2b7ed3b1d",
+"3e8358f9-de75-419b-8808-2405d48373ea"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6402,7 +6403,8 @@
 "532896|Sep-26|consolidated",
 "536965|Sep-26|na",
 "511144|Sep-26|standalone",
-"544702|Sep-26|consolidated"
+"544702|Sep-26|consolidated",
+"507265|Sep-26|consolidated"
 ],
 "pending": {
 "1f7e15a8-81a2-41a5-96d2-6bfa5ddcc864": {
@@ -6709,44 +6711,6 @@
 "last": 1794648215.2529926,
 "alerted": false
 },
-"3e8358f9-de75-419b-8808-2405d48373ea": {
-"rec": {
-"NEWSID": "3e8358f9-de75-419b-8808-2405d48373ea",
-"SCRIP_CD": 507265,
-"XML_NAME": "ANN_507265_3E8358F9-DE75-419B-8808-2405D48373EA",
-"NEWSSUB": "Emerald Leisures Ltd - 507265 - Financial Result For The Quarter And Half Year Ended 30.09.2026",
-"DT_TM": "2026-11-14T14:39:55.29",
-"NEWS_DT": "2026-11-14T14:39:55.29",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5f1120e9-7bed-42b0-b5d0-6881202cd200.pdf",
-"MORE": "",
-"HEADLINE": "1. Approved the Financial Results along with Limited Review Report (Standalone & Consolidated) for the quarter and half year ended 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/emerald-leisures-ltd/emerall/507265/",
-"SLONGNAME": "Emerald Leisures Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 12,
-"News_submission_dt": "2026-11-14T14:39:55",
-"DissemDT": "2026-11-14T14:39:55.29",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4714248,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794648215.2529926,
-"last": 1794648215.2529926,
-"alerted": false
-},
 "2d9a67d9-d871-405d-bcfc-7c96bad65194": {
 "rec": {
 "NEWSID": "2d9a67d9-d871-405d-bcfc-7c96bad65194",
@@ -6953,24 +6917,24 @@
 },
 "2026-11-14": {
 "main": {
-"ok": 253,
+"ok": 256,
 "429": 2,
-"other": 56
+"other": 59
 },
 "results-key": {
-"ok": 17,
+"ok": 18,
 "429": 1,
-"other": 23
+"other": 26
 },
 "concall-key": {
 "ok": 4,
 "429": 0,
-"other": 13
+"other": 17
 },
 "vision-key": {
 "ok": 1,
 "429": 0,
-"other": 8
+"other": 11
 }
 }
 },
@@ -7990,13 +7954,10 @@
 "00b8d68f-74ae-4c0a-a66e-86f671d42a50": 1,
 "02e86bbd-6dd6-41bc-a0d4-d686d45361b1": 1,
 "bdef3544-5bb6-4346-b08c-1170942396aa": 1,
-"b530f5b9-eee9-4716-9af3-79e2b7ed3b1d": 1
+"b530f5b9-eee9-4716-9af3-79e2b7ed3b1d": 1,
+"3e8358f9-de75-419b-8808-2405d48373ea": 1
 },
 "lag": [
-[
-"Everest Kanto Cylinder Ltd",
-33
-],
 [
 "SBEC Sugar Ltd",
 76
@@ -9191,6 +9152,10 @@
 ],
 [
 "DCM Shriram International Ltd",
+20
+],
+[
+"Emerald Leisures Ltd",
 20
 ]
 ],
@@ -10753,6 +10718,16 @@
 "rev": 904.6,
 "pat": -27.200000000000003,
 "t": 1794649478.6929195,
+"last": 0
+},
+"507265|Sep-26|consolidated": {
+"code": "507265",
+"name": "Emerald Leisures Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 33.47,
+"pat": -27.860000000000003,
+"t": 1794649510.5807452,
 "last": 0
 }
 },
