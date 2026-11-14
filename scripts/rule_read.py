@@ -333,7 +333,7 @@ def _col_status(d, i, unit):
     if None in (ti, ex, pbt, tax, pat):
         return None
     e = [0.0] if exc in (None, 0.0) else [exc, -exc]
-    a = [0.0] if asc in (None, 0.0) else [asc, 0.0]
+    a = [0.0] if asc in (None, 0.0) else [asc]      # 14 Nov (Raideep): with a non-zero share of associates the headline profit must INCLUDE it; accepting [asc, 0.0] let the pre-associates profit pass (5.23 instead of 48.32)
     c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
     c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
     return bool(c1 and c2)
