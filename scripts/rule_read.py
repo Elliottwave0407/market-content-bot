@@ -417,7 +417,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     if r2 is not None:
         r2["_ocr"] = True
         return r2, None
-    return None, why + " | ocr: " + str(why2)[:140]
+    return None, why + " | ocr: " + str(why2)[:420]
 
 
 def _read(pdf_bytes, hint="", qhint=None, ocr=False):
