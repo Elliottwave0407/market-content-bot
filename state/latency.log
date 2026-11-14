@@ -1759,3 +1759,6 @@
 14 17:25:36 wait 501261 Lords Mark Industries Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
 14 17:26:56 wait 544160 Jay Kailash Namkeen Ltd: numbers not yet on BSE
 14 17:27:45 ready 530565|Sep-26|na kind=photo waited_min=75.8 tries=8 pdf_log=rule reader Arcee Industries Ltd: rule: stan: first column larger than the year-to-date column; stan: does not reconcile [lakh] total_income=[830.78, 0.0, 0.39]
+14 17:28:30 ready 512461|Sep-26|na kind=photo waited_min=184.1 tries=2 pdf_log=
+14 17:28:40 ready 514128|Sep-26|standalone kind=photo waited_min=126.6 tries=8 pdf_log=
+14 17:28:51 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
