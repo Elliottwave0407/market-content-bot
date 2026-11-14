@@ -335,6 +335,58 @@ def _mark_seen(bkey):
     except Exception as e:
         p("could not mark BSE key:", repr(e)[:60])
 
+def _half_label(ql):
+    try:
+        d = datetime.strptime(ql, "%b-%y"); fy = d.year + (1 if d.month > 3 else 0)
+        return f"{'H1' if d.month == 9 else 'H2'} FY{str(fy)[2:]}"
+    except Exception:
+        return ql
+
+def _process_half(x, st, content, name, sym, isin, code, final):
+    """Half-yearly result of an NSE-only company: same half-year reader and card as the BSE SME route (sme_half / card.render half=True)."""
+    import sme_half as sh
+    res, why = sh.read_half_card(content, pc.geminikey(), name)
+    if res is None:
+        p(f"  {sym}: half-year not postable yet - {why}")
+        return "wait" if not final else "stub:" + why
+    ql = rf.qlabel(res["q"])
+    key = f"NSE|{isin or sym}|{ql}|{res['basis']}"
+    bkey = f"{code}|{ql}|{res['basis']}" if code else None
+    if (key in st["posted"] or (bkey and bkey in _seen_posted())) and not ONLY:
+        p(f"  dup skip {key}")
+        return "done"
+    os.makedirs(OUTDIR, exist_ok=True)
+    png = os.path.join(OUTDIR, f"nse_{sym}_{ql}_{res['basis']}.png")
+    card.render(name, (f"BSE {code}" if code else f"NSE {sym}"), res["basis"], res["quarters"], png, half=True)
+    cur, yago = res["quarters"][0]["m"], res["quarters"][4]["m"]
+    sales, pat = card.cr(cur["revenue"]), card.cr(cur["pat"])
+    sd, pd_ = (0 if sales and sales >= 100 else 1), (0 if pat and pat >= 100 else 1)
+    sy, py = card.fmt_pct(card.pct(cur["revenue"], yago["revenue"])), card.fmt_pct(card.pct(cur["pat"], yago["pat"]))
+    cap = (f"{name} {_half_label(ql)} (half-year) | {res['basis'].capitalize()}\n"
+           f"Sales Rs {card.fmt_num(sales, sd)} Cr ({sy} YoY), net profit Rs {card.fmt_num(pat, pd_)} Cr ({py} YoY).\n"
+           f"Filing: {x['attchmntFile']}\n\n{DISC}")
+    tweet = "\n".join(cap.split("\n")[:2]).replace(" | Consolidated", "").replace(" | Standalone", "") + "\n" + tags.join(tags.company_tag(symbol=sym, name=name), "#Results", "#HalfYearlyResults")
+    p(f"  [half card] {key} :: {cap.splitlines()[1]}")
+    if SEND and CHAT:
+        import xbuttons
+        cc, flink = xbuttons.split_link(cap)
+        with open(png, "rb") as fh:
+            rr = tg("sendPhoto", data={"chat_id": CHAT, "caption": cc[:1024], "reply_markup": xbuttons.markup(tweet, flink)}, files={"photo": fh})
+        p(f"  sent ok={rr.get('ok')}")
+        if not rr.get("ok"):
+            return "wait"
+        try:
+            import results_poller as _rp; _rp.mirror_to_channel(png, cc, flink, key, force=True)
+        except Exception as _e:
+            p("  channel copy failed:", type(_e).__name__)
+        import store; store.log_result("nse", cap, rr, card.LAST, (parse_dt(x) or "").__str__() if parse_dt(x) else None)
+        time.sleep(3.2)
+    if not ONLY:
+        st["posted"].append(key)
+        if bkey:
+            _mark_seen(bkey)
+    return "done"
+
 def process(x, st, final, maps=None):
     sym, isin = x["symbol"], x.get("sm_isin") or ""
     sid = str(x.get("seq_id"))
@@ -374,6 +426,8 @@ def process(x, st, final, maps=None):
             res, why = read_card(r.content, name, b_, code)
     else:
         res, why = read_card(r.content, name)
+    if res is None and "half-yearly filing" in (why or ""):
+        return _process_half(x, st, content, name, sym, isin, code, final)      # 15 Nov (Anondita): SME companies file half-yearly; the quarterly reader refuses those, so they get the half-year route
     if res is None:
         p(f"  {sym}: not postable yet - {why}")
         return "wait" if not final else "stub:" + why
