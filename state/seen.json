@@ -1782,7 +1782,9 @@
 "6bd520d0-f4b6-4931-b612-449b3c9803bd",
 "7d1ca945-c7ef-49db-94bd-7d7ce88eb446",
 "e9327304-d2a9-4964-96cf-f7421bdcfc86",
-"02a1a4af-502e-4d1f-a2dc-eb6821824f60"
+"02a1a4af-502e-4d1f-a2dc-eb6821824f60",
+"ff0de7a8-0706-4906-972e-19e66f1d90cf",
+"ee196a72-94d8-491e-8234-91b9261afdb7"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6187,7 +6189,8 @@
 "532886|Sep-26|standalone",
 "514087|Sep-26|consolidated",
 "531696|Sep-26|standalone",
-"500211|Sep-26|standalone"
+"500211|Sep-26|standalone",
+"543953|Sep-26|standalone"
 ],
 "pending": {
 "bf20da6e-5177-4c98-8fe4-e2e05833a7c9": {
@@ -6339,7 +6342,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794639671.4359777,
-"last": 1794641360.047654,
+"last": 1794643054.0243216,
 "alerted": true
 },
 "9c099e7d-98ef-44ed-894d-851559ba87db": {
@@ -6605,8 +6608,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794640504.8747153,
-"last": 1794641360.047654,
-"alerted": false
+"last": 1794643054.0243216,
+"alerted": true
 },
 "35da2ade-8f20-458a-8c49-aa4fa842be6d": {
 "rec": {
@@ -6835,12 +6838,50 @@
 "first": 1794641360.047654,
 "last": 1794641360.047654,
 "alerted": false
+},
+"5e9349c0-af76-4da6-bfc2-296eb6ee3e76": {
+"rec": {
+"NEWSID": "5e9349c0-af76-4da6-bfc2-296eb6ee3e76",
+"SCRIP_CD": 532029,
+"XML_NAME": "ANN_532029_5E9349C0-AF76-4DA6-BFC2-296EB6EE3E76",
+"NEWSSUB": "Sindhu Trade Links Ltd - 532029 - Intimation Under Regulation 33 & 30 Of The SEBI (Listing Obligation And Disclosure Requirements) Regulations, 2015/ Outcome Of The Board Meeting.",
+"DT_TM": "2026-11-14T13:22:28.637",
+"NEWS_DT": "2026-11-14T13:22:28.637",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "5c52f622-132e-47bf-8f19-1f3f2762e95e.pdf",
+"MORE": "in complinace with regulation 30 & 33 of SEBI (LODR) Regulations, 2015, it is hereby informed that the Board of Directors of the Company in its meeting held on 14th November, 2026 has considered and approved the following:\r\n1. Unaudited Financial Result for the quarter and half year ended on 30th September, 2026.\r\n2. taken on record the Limited Review Report submitted by the Statutory Auditors of the Company.\r\n\r\nthe Meeting commenced at 12.00 PM and concluded at 01.00 PM.",
+"HEADLINE": "in complinace with regulation 30 & 33 of SEBI (LODR) Regulations, 2015, it is hereby informed that the Board of Directors of the Company in its meeting held on 14th November, 2026 has considered ....",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/sindhu-trade-links-ltd/sindhutrad/532029/",
+"SLONGNAME": "Sindhu Trade Links Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 8,
+"News_submission_dt": "2026-11-14T13:22:28",
+"DissemDT": "2026-11-14T13:22:28.637",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 13522387,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794643054.0243216,
+"last": 1794643054.0243216,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 782
+"2026-11-13": 787
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -6895,18 +6936,18 @@
 },
 "results-key": {
 "ok": 463,
-"429": 52,
+"429": 54,
 "other": 115
 },
 "concall-key": {
-"ok": 427,
-"429": 50,
+"ok": 428,
+"429": 53,
 "other": 122
 },
 "vision-key": {
-"ok": 415,
-"429": 45,
-"other": 139
+"ok": 416,
+"429": 47,
+"other": 140
 }
 }
 },
@@ -7485,7 +7526,8 @@
 "de1dfdb6-462d-444d-adbc-e25ede2944ff": 1,
 "c200acae-39c5-4ba6-ab26-c1f19fc713bd": 1,
 "e9327304-d2a9-4964-96cf-f7421bdcfc86": 1,
-"02a1a4af-502e-4d1f-a2dc-eb6821824f60": 1
+"02a1a4af-502e-4d1f-a2dc-eb6821824f60": 1,
+"ee196a72-94d8-491e-8234-91b9261afdb7": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -10349,6 +10391,16 @@
 "rev": 0.0,
 "pat": -5.800000000000001,
 "t": 1794643041.2496018,
+"last": 0
+},
+"543953|Sep-26|standalone": {
+"code": "543953",
+"name": "Khazanchi Jewellers Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 6055.754000000001,
+"pat": 290.896,
+"t": 1794643108.9194462,
 "last": 0
 }
 },
