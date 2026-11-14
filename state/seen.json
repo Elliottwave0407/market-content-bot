@@ -2213,7 +2213,9 @@
 "25bdbef1-3331-4917-a6bf-bc79361b1f9f",
 "e3e61de6-4bf1-456e-abde-15ccc5a5d8ca",
 "ffa2ca6a-a3b2-4c88-a7eb-f766b71c95b5",
-"9845073b-aa69-4a71-84df-5e8d6d071b0e"
+"9845073b-aa69-4a71-84df-5e8d6d071b0e",
+"8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2",
+"f06fa989-2c35-4106-a73b-3e625d90f016"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6941,7 +6943,9 @@
 "542803|Sep-26|anomaly",
 "541347|Sep-26|standalone",
 "540809|Sep-26|consolidated",
-"526365|Sep-26|consolidated"
+"526365|Sep-26|consolidated",
+"523842|Sep-26|consolidated",
+"519566|Sep-26|consolidated"
 ],
 "pending": {
 "6bd34908-748a-49ef-b62d-02dd651c3299": {
@@ -7853,45 +7857,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794669477.66543,
-"last": 1794669477.66543,
-"alerted": false
-},
-"8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2": {
-"rec": {
-"NEWSID": "8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2",
-"SCRIP_CD": 523842,
-"XML_NAME": "ANN_523842_8BA8F7BB-6E4D-4B2D-BF2D-B90092BA7CE2",
-"NEWSSUB": "Super Tannery Ltd - 523842 - Un-Audited Financial Result For The Quarter And Half Year Ended 30Th Sep 2026",
-"DT_TM": "2026-11-14T20:27:38.61",
-"NEWS_DT": "2026-11-14T20:27:38.61",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "c88fe8eb-bdc2-4ef7-a4e1-afab4a1490be.pdf",
-"MORE": "",
-"HEADLINE": "Super Tannery Limited",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/super-tannery-ltd/suptanery/523842/",
-"SLONGNAME": "Super Tannery Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 42,
-"News_submission_dt": "2026-11-14T20:27:38",
-"DissemDT": "2026-11-14T20:27:38.61",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 6321857,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794669477.66543,
-"last": 1794669477.66543,
+"last": 1794672523.7927792,
 "alerted": false
 },
 "61924314-ffef-4501-8d0b-2081935d78c0": {
@@ -8583,7 +8549,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 351
+"2026-11-14": 354
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8633,16 +8599,16 @@
 "2026-11-14": {
 "main": {
 "ok": 437,
-"429": 17,
-"other": 94
+"429": 19,
+"other": 96
 },
 "results-key": {
 "ok": 236,
-"429": 14,
-"other": 59
+"429": 15,
+"other": 60
 },
 "concall-key": {
-"ok": 308,
+"ok": 321,
 "429": 8,
 "other": 69
 },
@@ -9676,13 +9642,12 @@
 "9cb9bb96-2d1b-4d23-89d5-1f857bf40303": 1,
 "8e33f08a-500f-45c8-bb03-0246a3b509e7": 1,
 "ffa2ca6a-a3b2-4c88-a7eb-f766b71c95b5": 1,
-"9845073b-aa69-4a71-84df-5e8d6d071b0e": 1
+"9845073b-aa69-4a71-84df-5e8d6d071b0e": 1,
+"0b60c89d-92b5-42d0-8e05-405c3f4d5ca6": 1,
+"8ba8f7bb-6e4d-4b2d-bf2d-b90092ba7ce2": 1,
+"f06fa989-2c35-4106-a73b-3e625d90f016": 1
 },
 "lag": [
-[
-"Qualitek Labs Ltd",
-221
-],
 [
 "Triton Valves Ltd",
 121
@@ -10877,6 +10842,10 @@
 ],
 [
 "Swarnsarita Jewels India Ltd",
+51
+],
+[
+"Super Tannery Ltd",
 51
 ]
 ],
@@ -13109,6 +13078,26 @@
 "rev": 2415.446,
 "pat": 0.734,
 "t": 1794673236.9337084,
+"last": 0
+},
+"523842|Sep-26|consolidated": {
+"code": "523842",
+"name": "Super Tannery Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 783.464,
+"pat": 28.475,
+"t": 1794673423.2581584,
+"last": 0
+},
+"519566|Sep-26|consolidated": {
+"code": "519566",
+"name": "Simran Farms Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 2635.4130000000005,
+"pat": 6.499,
+"t": 1794673481.2743132,
 "last": 0
 }
 },
