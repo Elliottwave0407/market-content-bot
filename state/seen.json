@@ -1772,7 +1772,8 @@
 "2ebd021f-4f5c-4f7a-8845-e0e8717f61c3",
 "4df6df98-51f4-4c79-bbd2-77696d26d333",
 "7a0f88c2-fdc1-4b9a-a7de-3c2ebf94e048",
-"6ddbd534-7a31-4529-bdc1-3a20df4f3185"
+"6ddbd534-7a31-4529-bdc1-3a20df4f3185",
+"1c631a03-81b1-4d44-80f8-aee798131dad"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6172,7 +6173,8 @@
 "532105|Sep-26|na",
 "535789|Sep-26|consolidated",
 "543811|Sep-26|standalone",
-"502893|Sep-26|consolidated"
+"502893|Sep-26|consolidated",
+"526817|Sep-26|standalone"
 ],
 "pending": {
 "bf20da6e-5177-4c98-8fe4-e2e05833a7c9": {
@@ -6324,8 +6326,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794639671.4359777,
-"last": 1794640504.8747153,
-"alerted": false
+"last": 1794641360.047654,
+"alerted": true
 },
 "9c099e7d-98ef-44ed-894d-851559ba87db": {
 "rec": {
@@ -6590,7 +6592,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794640504.8747153,
-"last": 1794640504.8747153,
+"last": 1794641360.047654,
 "alerted": false
 },
 "7d1ca945-c7ef-49db-94bd-7d7ce88eb446": {
@@ -6705,6 +6707,44 @@
 },
 "first": 1794640504.8747153,
 "last": 1794640504.8747153,
+"alerted": false
+},
+"f201feb8-d097-4ac2-962b-2a592b204e8d": {
+"rec": {
+"NEWSID": "f201feb8-d097-4ac2-962b-2a592b204e8d",
+"SCRIP_CD": 504786,
+"XML_NAME": "ANN_504786_F201FEB8-D097-4AC2-962B-2A592B204E8D",
+"NEWSSUB": "Investment & Precision Castings Ltd - 504786 - Financials Results For Q-2",
+"DT_TM": "2026-11-14T12:52:17.63",
+"NEWS_DT": "2026-11-14T12:52:17.63",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "edb7271a-0840-4eb4-8660-354b9ee1562e.pdf",
+"MORE": "",
+"HEADLINE": "Financials results for Q - 2 (2026-27)",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/investment--precision-castings-ltd/invprecq/504786/",
+"SLONGNAME": "Investment & Precision Castings Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 6,
+"News_submission_dt": "2026-11-14T12:52:17",
+"DissemDT": "2026-11-14T12:52:17.63",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 7737088,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794641360.047654,
+"last": 1794641360.047654,
 "alerted": false
 }
 },
@@ -7348,7 +7388,8 @@
 "0b2a5b15-a1d4-412d-b1f9-a7c86ebf8266": 1,
 "b0059f0a-b5ef-4a56-ba09-7faa87f2d371": 1,
 "c362a85e-f02e-4b75-8e3b-e9efc417c69e": 1,
-"3946d176-9766-4bd4-b841-eea566270ec4": 1
+"3946d176-9766-4bd4-b841-eea566270ec4": 1,
+"1c631a03-81b1-4d44-80f8-aee798131dad": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -10182,6 +10223,16 @@
 "rev": 267.866,
 "pat": -6.942,
 "t": 1794640589.997898,
+"last": 0
+},
+"526817|Sep-26|standalone": {
+"code": "526817",
+"name": "Cheviot Company Ltd-$",
+"basis": "standalone",
+"q": 131,
+"rev": 1898.167,
+"pat": 109.585,
+"t": 1794641396.6657536,
 "last": 0
 }
 },
