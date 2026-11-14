@@ -62,8 +62,14 @@ GARB = {}      # id(nums list) -> {position: raw OCR token} for numbers the OCR 
 _GARBRE = re.compile(r"^[\(\[\{|!]?[0-9OoIlsSZ.,'`|]{3,}[\)\]\}|]?$")
 
 
+def _tok(t):
+    """A stray OCR mark glued to the front of a printed number ('«652.09') is dropped, only when what remains is a valid number."""
+    u = t.lstrip("«»|!¦~`'\"")
+    return u if u != t and u and _isnum(u) else t
+
+
 def split_row(row):
-    toks = [w[4] for w in row]
+    toks = [_tok(w[4]) for w in row]
     i = len(toks)
     while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
         i -= 1
