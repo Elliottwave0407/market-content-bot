@@ -22,3 +22,19 @@ for ds in [d for d in os.environ.get("DAYS", "").split(",") if d]:
         if nr.NOT_RX.search(t): why.append("NOT_RX hit")
         if not f.lower().endswith(".pdf"): why.append("file not .pdf")
         print("  ", x.get("an_dt"), "| desc:", desc, "| file:", f, "| seq:", x.get("seq_id"), "\n     text:", t[:300].replace("\n", " "), "\n     DROPPED BY:", why or "nothing (would be processed)", flush=True)
+
+# the SME board has its own announcements index: check it too
+import time
+for idx in ("sme", "debt"):
+    for ds in [d for d in os.environ.get("DAYS", "").split(",") if d]:
+        day = datetime.strptime(ds, "%Y-%m-%d")
+        dd = day.strftime("%d-%m-%Y")
+        try:
+            r = nr.sess().get(f"https://www.nseindia.com/api/corporate-announcements?index={idx}&from_date={dd}&to_date={dd}&_={int(time.time() * 1000)}", headers={"Referer": nr.REF, "Cache-Control": "no-cache"}, timeout=40)
+            rows = r.json() if r.status_code == 200 and r.text.strip() else []
+        except Exception as e:
+            print(f"index={idx} {ds}: error {repr(e)[:100]}", flush=True); continue
+        mine = [x for x in rows if sym in str(x.get("symbol", "")).upper() or sym in str(x.get("sm_name", "")).upper() or sym in str(x.get("attchmntText", "")).upper()]
+        print(f"INDEX {idx} {ds}: status {r.status_code}, {len(rows)} rows, {len(mine)} for {sym}", flush=True)
+        for x in mine:
+            print("    ", x.get("an_dt"), "|", x.get("desc"), "|", x.get("attchmntFile"), "|", (x.get("attchmntText") or "")[:200].replace("\n", " "), flush=True)
