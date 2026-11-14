@@ -1687,7 +1687,8 @@
 "6bfcce49-7976-4a5a-8f89-f846a1fa6f6b",
 "7f1ab5a4-dce3-42c3-ae9f-ba1b889082e6",
 "070e4a26-14c4-4a4f-b448-741b7a84f562",
-"abcb4e87-bafd-491b-af9a-dd09cc936161"
+"abcb4e87-bafd-491b-af9a-dd09cc936161",
+"6bddb371-df66-43e3-a914-b3eacdc73645"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6016,7 +6017,8 @@
 "505343|Sep-26|na",
 "539861|Sep-26|na",
 "531203|Sep-26|standalone",
-"524038|Sep-26|anomaly"
+"524038|Sep-26|anomaly",
+"512624|Sep-26|standalone"
 ],
 "pending": {
 "1fe611ec-b15c-4d9a-9e8c-46e5a4729487": {
@@ -6046,44 +6048,6 @@
 "DissemDT": "2026-11-13T17:25:47.763",
 "TimeDiff": "00:00:00",
 "Fld_Attachsize": 6053865,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794608881.8474169,
-"last": 1794608881.8474169,
-"alerted": false
-},
-"6bddb371-df66-43e3-a914-b3eacdc73645": {
-"rec": {
-"NEWSID": "6bddb371-df66-43e3-a914-b3eacdc73645",
-"SCRIP_CD": 512624,
-"XML_NAME": "ANN_512624_6BDDB371-DF66-43E3-A914-B3EACDC73645",
-"NEWSSUB": "Regent Enterprises Ltd - 512624 - Unaudited Financial Results For The Quarter And Period Ended On September 30, 2026",
-"DT_TM": "2026-11-13T17:13:11.55",
-"NEWS_DT": "2026-11-13T17:13:11.55",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "5aade797-5ebb-4ec7-ab2a-ae043135eb39.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/regent-enterprises-ltd/regentrp/512624/",
-"SLONGNAME": "Regent Enterprises Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 55,
-"News_submission_dt": "2026-11-13T17:13:11",
-"DissemDT": "2026-11-13T17:13:11.55",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4773936,
 "SUBCATNAME": "Financial Results",
 "BSENEWSID": null,
 "INVESTOR_PRESENTATION": null,
@@ -8759,7 +8723,7 @@
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
-"2026-11-13": 727
+"2026-11-13": 728
 },
 "gem_key_use": {
 "2026-11-11": {
@@ -8809,7 +8773,7 @@
 "2026-11-13": {
 "main": {
 "ok": 390,
-"429": 48,
+"429": 49,
 "other": 174
 },
 "results-key": {
@@ -9373,7 +9337,8 @@
 "97096939-38d8-4001-9cf3-6921c495595f": 1,
 "4bb29be0-5b8c-4828-9976-9808b38f729e": 1,
 "95899c82-443f-428a-baee-a75f61042e1f": 1,
-"abcb4e87-bafd-491b-af9a-dd09cc936161": 1
+"abcb4e87-bafd-491b-af9a-dd09cc936161": 1,
+"6bddb371-df66-43e3-a914-b3eacdc73645": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -9832,10 +9797,6 @@
 "5998a29f-de0d-401f-8aa6-811805886aae": 1
 },
 "lag": [
-[
-"Escorp Asset Management Ltd",
-181
-],
 [
 "Premier Capital Services Ltd",
 181
@@ -11031,6 +10992,10 @@
 [
 "Venlon Enterprises Ltd",
 345
+],
+[
+"Regent Enterprises Ltd",
+345
 ]
 ],
 "pdfposted": {
@@ -12102,6 +12067,16 @@
 "rev": 27.157,
 "pat": -19.207,
 "t": 1794631289.9101245,
+"last": 0
+},
+"512624|Sep-26|standalone": {
+"code": "512624",
+"name": "Regent Enterprises Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 4052.1220000000003,
+"pat": 52.90800000000001,
+"t": 1794631829.6160498,
 "last": 0
 }
 },
