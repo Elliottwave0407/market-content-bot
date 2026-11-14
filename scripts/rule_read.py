@@ -537,7 +537,7 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
             elif n >= 5 and ds[0].split(".")[1] == "09" and rv_[1] is not None and abs(rv_[3] - rv_[0] - rv_[1]) > 0.02 * rv_[3]:
                 _hs = f"{rv_[3]:.2f}".rstrip("0").rstrip(".")
                 _fix = [float(c_ + _hs[1:]) for c_ in "1" if len(_hs) > 1 and _hs[0] in "47" and abs(float(c_ + _hs[1:]) - rv_[0] - rv_[1]) <= 0.002 * (rv_[0] + rv_[1])]
-                if not _fix:
+                if True:
                     ok = False; why.append(f"{b[:4]}: half-year column is not quarter + previous quarter")
         if not ok:
             det = " ".join(f"{k}={d.get(k)}" for k in ("total_income", "total_expenses", "exceptional", "pbt", "tax", "associates", "pat", "depreciation", "finance_costs") if d.get(k))
