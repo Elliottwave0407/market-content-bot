@@ -1,0 +1,42 @@
+# read-only season replay: fast rule/OCR reader vs NSE XBRL truth (posts nothing)
+name: season-replay
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        default: "2026-11-10"
+      end:
+        default: "2026-11-14"
+      maxn:
+        default: "60"
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-eng
+      - env:
+          START: ${{ github.event.inputs.start }}
+          END: ${{ github.event.inputs.end }}
+          MAXN: ${{ github.event.inputs.maxn }}
+          SHARD: ${{ matrix.shard }}
+          NSHARDS: "6"
+        run: python scripts/season_replay.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replay-${{ matrix.shard }}
+          path: out/replay_*.json
