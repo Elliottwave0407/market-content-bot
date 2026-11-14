@@ -2290,7 +2290,8 @@
 "7ca65330-4c8e-4c8e-984f-3bee518e2c8b",
 "147c853b-2442-4491-bba3-550d9f633644",
 "1fae9a4a-9434-4b25-88bc-51d59fbba779",
-"d9cb303d-e507-45df-bc0c-05582c286320"
+"d9cb303d-e507-45df-bc0c-05582c286320",
+"2b941dc4-2b53-4401-9375-e2b391696d7f"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -7081,7 +7082,8 @@
 "512461|Sep-26|na",
 "514128|Sep-26|standalone",
 "520121|Sep-26|standalone",
-"544936|Sep-26|consolidated"
+"544936|Sep-26|consolidated",
+"531381|Sep-26|consolidated"
 ],
 "pending": {
 "44415cc1-fccd-4d59-b6be-a7799f923a7c": {
@@ -7309,8 +7311,8 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794676442.3614604,
-"last": 1794677541.494886,
-"alerted": false
+"last": 1794677675.2805066,
+"alerted": true
 },
 "e42bae56-c552-48c5-aaf1-d98389806a06": {
 "rec": {
@@ -7578,44 +7580,6 @@
 "last": 1794677541.494886,
 "alerted": false
 },
-"2b941dc4-2b53-4401-9375-e2b391696d7f": {
-"rec": {
-"NEWSID": "2b941dc4-2b53-4401-9375-e2b391696d7f",
-"SCRIP_CD": 531381,
-"XML_NAME": "ANN_531381_2B941DC4-2B53-4401-9375-E2B391696D7F",
-"NEWSSUB": "Arihant Foundations & Housing Ltd-$ - 531381 - Results - 30Th September 2026",
-"DT_TM": "2026-11-14T22:59:17.693",
-"NEWS_DT": "2026-11-14T22:59:17.693",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "9d521d50-db7d-497b-9ae0-55cf2a18c2d0.pdf",
-"MORE": "",
-"HEADLINE": "Attached the standalone and consolidated results for the quarter and half year ended 30.09.2026.",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/arihant-foundations--housing-ltd/arihant/531381/",
-"SLONGNAME": "Arihant Foundations & Housing Ltd-$",
-"AGENDA_ID": 30,
-"TotalPageCnt": 46,
-"News_submission_dt": "2026-11-14T22:59:17",
-"DissemDT": "2026-11-14T22:59:17.693",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 4913831,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794677399.7006834,
-"last": 1794677541.494886,
-"alerted": false
-},
 "b547b79b-19ad-4206-8ef5-9d8fcd8e7ff9": {
 "rec": {
 "NEWSID": "b547b79b-19ad-4206-8ef5-9d8fcd8e7ff9",
@@ -7659,7 +7623,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 429
+"2026-11-14": 430
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7723,7 +7687,7 @@
 "other": 80
 },
 "vision-key": {
-"ok": 200,
+"ok": 210,
 "429": 8,
 "other": 47
 }
@@ -8809,13 +8773,10 @@
 "e25efd09-7665-44b8-b739-979fd151a05f": 1,
 "e42bae56-c552-48c5-aaf1-d98389806a06": 1,
 "147c853b-2442-4491-bba3-550d9f633644": 1,
-"b547b79b-19ad-4206-8ef5-9d8fcd8e7ff9": 1
+"b547b79b-19ad-4206-8ef5-9d8fcd8e7ff9": 1,
+"2b941dc4-2b53-4401-9375-e2b391696d7f": 1
 },
 "lag": [
-[
-"Annu Projects Ltd",
-258
-],
 [
 "Bharatrohan Airborne Innovations Ltd",
 258
@@ -10011,6 +9972,10 @@
 [
 "Konark Synthetic Ltd",
 127
+],
+[
+"Arihant Foundations & Housing Ltd-$",
+5
 ]
 ],
 "pdfposted": {
@@ -12392,6 +12357,16 @@
 "rev": 83.078,
 "pat": 4.001,
 "t": 1794677657.8580782,
+"last": 0
+},
+"531381|Sep-26|consolidated": {
+"code": "531381",
+"name": "Arihant Foundations & Housing Ltd-$",
+"basis": "consolidated",
+"q": 131,
+"rev": 1271.9,
+"pat": 229.20000000000002,
+"t": 1794677715.4569216,
 "last": 0
 }
 },
