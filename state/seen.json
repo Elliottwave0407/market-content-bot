@@ -1995,7 +1995,8 @@
 "22d37445-7590-428e-ba05-5de045a38aa3",
 "d704f11d-e68d-4574-95dd-67d13c4c9c98",
 "bee162ed-2b69-44ab-b7ac-4e9acea3c882",
-"8133c5be-1ebb-4adb-9fca-de5e6c41bf0c"
+"8133c5be-1ebb-4adb-9fca-de5e6c41bf0c",
+"c303bcdf-0e65-4af9-b71f-ed2c7f53dfaa"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6557,7 +6558,8 @@
 "540642|Sep-26|consolidated",
 "526654|Sep-26|consolidated",
 "522294|Sep-26|standalone",
-"530125|Sep-26|standalone"
+"530125|Sep-26|standalone",
+"526727|Sep-26|standalone"
 ],
 "pending": {
 "83771c57-fcc6-429c-8192-2f468cb81bc4": {
@@ -7547,13 +7549,51 @@
 "first": 1794653185.9810545,
 "last": 1794653185.9810545,
 "alerted": false
+},
+"d3056afb-d801-4403-baf4-dc9367da492e": {
+"rec": {
+"NEWSID": "d3056afb-d801-4403-baf4-dc9367da492e",
+"SCRIP_CD": 531398,
+"XML_NAME": "ANN_531398_D3056AFB-D801-4403-BAF4-DC9367DA492E",
+"NEWSSUB": "Source Natural Foods and Herbal Supplements Ltd - 531398 - Outcome Of Board Meeting - Unaudited Financial Results (Standalone And Consolidated) For The Quarter And Half Year Ended September 30, 2026",
+"DT_TM": "2026-11-14T16:12:49.24",
+"NEWS_DT": "2026-11-14T16:12:49.24",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "a66a0843-0256-4f88-87d8-654fbe9210a7.pdf",
+"MORE": "",
+"HEADLINE": "Unaudited Financial Results for the quarter and half year ended September 30, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/source-natural-foods-and-herbal-supplements-ltd/sourcentrl/531398/",
+"SLONGNAME": "Source Natural Foods and Herbal Supplements Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 18,
+"News_submission_dt": "2026-11-14T16:12:49",
+"DissemDT": "2026-11-14T16:12:49.24",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 2427300,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794653185.9810545,
+"last": 1794653185.9810545,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 185
+"2026-11-14": 188
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7607,17 +7647,17 @@
 "other": 90
 },
 "results-key": {
-"ok": 37,
+"ok": 42,
 "429": 4,
-"other": 38
+"other": 39
 },
 "concall-key": {
-"ok": 29,
-"429": 1,
+"ok": 32,
+"429": 2,
 "other": 28
 },
 "vision-key": {
-"ok": 7,
+"ok": 8,
 "429": 0,
 "other": 18
 }
@@ -8193,7 +8233,8 @@
 "c219de25-06a8-4fa4-82bb-212ec87168d1": 1,
 "748be84e-92c7-47e7-a276-fe85f216bf17": 1,
 "bee162ed-2b69-44ab-b7ac-4e9acea3c882": 1,
-"8133c5be-1ebb-4adb-9fca-de5e6c41bf0c": 1
+"8133c5be-1ebb-4adb-9fca-de5e6c41bf0c": 1,
+"c303bcdf-0e65-4af9-b71f-ed2c7f53dfaa": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -8717,7 +8758,9 @@
 "48150563-d088-4102-aa35-3b1cf8704d0f": 1,
 "90d97365-f581-4101-985f-f5041d8cd17f": 1,
 "22d37445-7590-428e-ba05-5de045a38aa3": 1,
-"d704f11d-e68d-4574-95dd-67d13c4c9c98": 1
+"d704f11d-e68d-4574-95dd-67d13c4c9c98": 1,
+"e897e3fb-7727-44ef-b1f6-bbe6e9d95239": 1,
+"d3056afb-d801-4403-baf4-dc9367da492e": 1
 },
 "lag": [
 [
@@ -11760,6 +11803,16 @@
 "rev": 660.086,
 "pat": 4.4110000000000005,
 "t": 1794654218.1008785,
+"last": 0
+},
+"526727|Sep-26|standalone": {
+"code": "526727",
+"name": "Garnet Construction Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 5.181000000000001,
+"pat": -13.673,
+"t": 1794654369.4184206,
 "last": 0
 }
 },
