@@ -1898,3 +1898,9 @@
 14 18:27:01 pdf rule reader Senthil Infotek Ltd: ok
 14 18:27:01 pdf pdf current col Senthil Infotek Ltd standalone ok=True/2: revenue=12.25, other_income=None, total_income=12.25, total_expenses=7.22, finance_costs=None, depreciation=None, pbt=5.03, tax=0.76, pat=4.27, eps=0.08
 14 18:27:01 pdf pdf incomplete Senthil Infotek Ltd standalone: missing ['ebitda'] - not posting from PDF
+14 18:28:18 seen 543435 Clara Industries Ltd cat=Result early=False bse_time=23:57:02 dissem=23:57:02
+14 18:28:48 wait 543435 Clara Industries Ltd: numbers not yet on BSE
+14 18:28:56 pdf rule reader Clara Industries Ltd: rule: no results table page | ocr: rule: no results table page
+14 18:29:23 pdf pdf current col Senthil Infotek Ltd standalone ok=True/2: revenue=12.25, other_income=None, total_income=12.25, total_expenses=7.22, finance_costs=None, depreciation=None, pbt=5.03, tax=0.76, pat=4.27, eps=0.08
+14 18:29:23 pdf pdf incomplete Senthil Infotek Ltd standalone: missing ['ebitda'] - not posting from PDF
+14 18:29:59 pdf rule reader Kaynes Technology India Ltd: rule: consolidated table does not reconcile [million] total_income=[9711.3, 9627.33, 9462.09] pbt=[647.31, 772.21, 1481.19] tax=[249.31, 318.08, 324.08] associates=[707.33, 816.59, 1507.37]
