@@ -2041,7 +2041,10 @@
 "05ffe24c-5b56-4e9a-bcc0-0467c4d39865",
 "6afda06b-ff59-42dd-8863-8da1ec9d726c",
 "523f81f0-3efc-446e-9fa1-500722975559",
-"8aefd160-500e-4730-8c96-9229ad884435"
+"8aefd160-500e-4730-8c96-9229ad884435",
+"f88bdcaa-6ad2-4d3a-aa77-ddad55a7d58d",
+"4873f0aa-dbd9-4515-b78e-3f6f44d44df5",
+"b186d111-17ba-4727-a6d8-c90dc9166703"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6630,7 +6633,9 @@
 "543251|Sep-26|consolidated",
 "524506|Sep-26|standalone",
 "523874|Sep-26|standalone",
-"538896|Sep-26|na"
+"538896|Sep-26|na",
+"542580|Sep-26|consolidated",
+"531254|Sep-26|consolidated"
 ],
 "pending": {
 "920d8b90-a442-494f-a093-ce542214ea47": {
@@ -7886,13 +7891,51 @@
 "first": 1794655796.0620809,
 "last": 1794655796.0620809,
 "alerted": false
+},
+"5d03dc55-3e3b-427a-9aba-267e3c31cf13": {
+"rec": {
+"NEWSID": "5d03dc55-3e3b-427a-9aba-267e3c31cf13",
+"SCRIP_CD": 544976,
+"XML_NAME": "ANN_544976_5D03DC55-3E3B-427A-9ABA-267E3C31CF13",
+"NEWSSUB": "Omara Ventures India Ltd - 544976 - Un-Audited Financial Results Of The Company For The Half Year Ended 30Th September, 2026",
+"DT_TM": "2026-11-14T16:21:53.46",
+"NEWS_DT": "2026-11-14T16:21:53.46",
+"CRITICALNEWS": "0",
+"ANNOUNCEMENT_TYPE": "A",
+"QUARTER_ID": null,
+"FILESTATUS": "N    ",
+"ATTACHMENTNAME": "44c7f1cf-1740-4f0d-8a30-dc67ca081341.pdf",
+"MORE": "",
+"HEADLINE": "Un-Audited Financial Results of the Company for the half year ended 30th September, 2026",
+"CATEGORYNAME": "Result",
+"OLD": 1,
+"RN": 1,
+"PDFFLAG": 0,
+"NSURL": "https://www.bseindia.com/stock-share-price/omara-ventures-india-ltd/omara/544976/",
+"SLONGNAME": "Omara Ventures India Ltd",
+"AGENDA_ID": 30,
+"TotalPageCnt": 23,
+"News_submission_dt": "2026-11-14T16:21:53",
+"DissemDT": "2026-11-14T16:21:53.46",
+"TimeDiff": "00:00:00",
+"Fld_Attachsize": 4741335,
+"SUBCATNAME": "Financial Results",
+"BSENEWSID": null,
+"INVESTOR_PRESENTATION": null,
+"RECORDID": null,
+"DataInsDate": null,
+"AUDIO_VIDEO_FILE": null
+},
+"first": 1794655796.0620809,
+"last": 1794655796.0620809,
+"alerted": false
 }
 },
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 220
+"2026-11-14": 223
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7946,17 +7989,17 @@
 "other": 90
 },
 "results-key": {
-"ok": 71,
+"ok": 73,
 "429": 6,
-"other": 43
+"other": 44
 },
 "concall-key": {
-"ok": 36,
-"429": 2,
+"ok": 37,
+"429": 3,
 "other": 29
 },
 "vision-key": {
-"ok": 11,
+"ok": 12,
 "429": 0,
 "other": 23
 }
@@ -9091,7 +9134,9 @@
 "e33208ff-3fee-4e30-8959-ef38e90ebc6f": 1,
 "867ae627-aae8-42ae-bb0e-e21009b259ce": 1,
 "02123638-d76b-4544-99cb-ed525d24b1f3": 1,
-"867a6230-98b8-40a1-9049-5af2bf336802": 1
+"867a6230-98b8-40a1-9049-5af2bf336802": 1,
+"4873f0aa-dbd9-4515-b78e-3f6f44d44df5": 1,
+"b186d111-17ba-4727-a6d8-c90dc9166703": 1
 },
 "lag": [
 [
@@ -12254,6 +12299,26 @@
 "rev": 732.0500000000001,
 "pat": 19.562,
 "t": 1794657067.877157,
+"last": 0
+},
+"542580|Sep-26|consolidated": {
+"code": "542580",
+"name": "Aartech Solonics Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 113.83699999999999,
+"pat": 10.854000000000001,
+"t": 1794657429.2210824,
+"last": 0
+},
+"531254|Sep-26|consolidated": {
+"code": "531254",
+"name": "Optimus Finance Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 589.298,
+"pat": 21.248,
+"t": 1794657481.0897374,
 "last": 0
 }
 },
