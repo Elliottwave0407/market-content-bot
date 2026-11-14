@@ -1789,7 +1789,9 @@
 "c902be64-41b3-4d98-8852-6a3d8ffd76a4",
 "913099cb-ba4b-452a-8134-569c9148cbdc",
 "84217f45-9f4a-4353-a477-d48436c4c573",
-"a62861d5-3049-4184-b748-8048d040640d"
+"a62861d5-3049-4184-b748-8048d040640d",
+"592e7507-1592-4d12-b7e3-5c7eac4ef985",
+"927eb697-18fa-4f97-82a0-ebdb808da1c5"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6197,7 +6199,9 @@
 "500211|Sep-26|standalone",
 "543953|Sep-26|standalone",
 "526827|Sep-26|na",
-"530171|Sep-26|standalone"
+"530171|Sep-26|standalone",
+"531091|Sep-26|na",
+"538881|Sep-26|standalone"
 ],
 "pending": {
 "bf20da6e-5177-4c98-8fe4-e2e05833a7c9": {
@@ -6504,44 +6508,6 @@
 "last": 1794643054.0243216,
 "alerted": false
 },
-"592e7507-1592-4d12-b7e3-5c7eac4ef985": {
-"rec": {
-"NEWSID": "592e7507-1592-4d12-b7e3-5c7eac4ef985",
-"SCRIP_CD": 531091,
-"XML_NAME": "ANN_531091_592E7507-1592-4D12-B7E3-5C7EAC4EF985",
-"NEWSSUB": "United Credit Ltd - 531091 - Submission Of Newspaper Publications",
-"DT_TM": "2026-11-14T12:10:30.207",
-"NEWS_DT": "2026-11-14T12:10:30.207",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "bb138ae1-ad34-4403-abc6-8893bbfe2fc2.pdf",
-"MORE": "",
-"HEADLINE": "Pursuant to Regulations 30 and 47 of the SEBI LODR Regulations, 2015 United Credit Limited has informed about the News paper publications",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/united-credit-ltd/unitdcr/531091/",
-"SLONGNAME": "United Credit Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 5,
-"News_submission_dt": "2026-11-14T12:10:30",
-"DissemDT": "2026-11-14T12:10:30.207",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 8722553,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794639671.4359777,
-"last": 1794641360.047654,
-"alerted": false
-},
 "b114258c-5295-4108-9604-aeec3a23fc45": {
 "rec": {
 "NEWSID": "b114258c-5295-4108-9604-aeec3a23fc45",
@@ -6653,7 +6619,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1794640504.8747153,
-"last": 1794641360.047654,
+"last": 1794643054.0243216,
 "alerted": false
 },
 "f201feb8-d097-4ac2-962b-2a592b204e8d": {
@@ -7193,7 +7159,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 5
+"2026-11-14": 6
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7821,7 +7787,8 @@
 "ee196a72-94d8-491e-8234-91b9261afdb7": 1,
 "c902be64-41b3-4d98-8852-6a3d8ffd76a4": 1,
 "2f152076-9287-45a1-9484-13238c12cd32": 1,
-"a62861d5-3049-4184-b748-8048d040640d": 1
+"a62861d5-3049-4184-b748-8048d040640d": 1,
+"927eb697-18fa-4f97-82a0-ebdb808da1c5": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -8285,10 +8252,6 @@
 "0bbc5b87-597e-4a67-a6dd-d4f1de41dcb8": 1
 },
 "lag": [
-[
-"Tata Motors Passenger Vehicles Ltd",
-55
-],
 [
 "Manipal Health Enterprises Ltd",
 55
@@ -9484,6 +9447,10 @@
 [
 "Spice Islands Industries Ltd-$",
 95
+],
+[
+"United Credit Ltd",
+56
 ]
 ],
 "pdfposted": {
@@ -10705,6 +10672,16 @@
 "rev": -17.175,
 "pat": -18.188,
 "t": 1794644523.2574677,
+"last": 0
+},
+"538881|Sep-26|standalone": {
+"code": "538881",
+"name": "Galada Finance Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 785.6,
+"pat": 113.7,
+"t": 1794644710.2089813,
 "last": 0
 }
 },
