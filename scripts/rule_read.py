@@ -58,12 +58,40 @@ def rows_of(page, rot=0):
     return rows
 
 
+GARB = {}      # id(nums list) -> {position: raw OCR token} for numbers the OCR garbled (14 Nov, Kernex); only used by _assemble's strict, cross-checked repair
+_GARBRE = re.compile(r"^[\(\[\{|!]?[0-9OoIlsSZ.,'`|]{3,}[\)\]\}|]?$")
+
+
 def split_row(row):
     toks = [w[4] for w in row]
     i = len(toks)
     while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
         i -= 1
+    garb = {}
+    # one garbled number token between printed numbers (e.g. '6s2.09' for '652.09') used to cut the row and push the earlier numbers into the label: bridge it as an unknown value
+    while i >= 2 and len(toks) - i >= 2 and not garb and _GARBRE.match(toks[i - 1]) and sum(ch.isdigit() for ch in toks[i - 1]) >= 2 and (_isnum(toks[i - 2]) or toks[i - 2] in NILS):
+        garb[0] = toks[i - 1]
+        i -= 1
+        while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
+            i -= 1
+        break
     nums = [(_num(t) if _isnum(t) else None) for t in toks[i:]]
+    if garb:
+        # i now points before the numbers left of the garbled token: rebuild so the garbled token sits as None in its own position
+        j = i
+        seq = toks[j:]
+        nums = []
+        gpos = {}
+        for t in seq:
+            if _isnum(t):
+                nums.append(_num(t))
+            elif t in NILS:
+                nums.append(None)
+            else:
+                gpos[len(nums)] = t
+                nums.append(None)
+        GARB[id(nums)] = gpos
+        GARB.setdefault("_keep", []).append(nums)      # keep the list alive so its id stays unique
     return " ".join(toks[:i]).strip(), nums
 
 
@@ -270,12 +298,17 @@ def _candidates(rows):
     c["pbt"] = pbs[:3]
     start = pbs[0][0] if pbs else 0
     tx = _all_matches(rows, [r"^total tax expenses?", r"^tax expenses?", r"^total income tax", r"^income tax expenses?", r"^total tax", r"^provision for (income )?tax", r"^tax$"], start=max(0, start - 1), n=n, avoid=("before", "deferred tax asset", "relating to"))
+    if not tx:      # 14 Nov (Kernex): OCR lost one printed number of the total-tax row; accept it left-aligned only if the statement then reconciles in all three columns (checked later)
+        tx = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"^total tax expenses?", r"^total tax", r"^tax expenses?", r"^total income tax"], start=max(0, start - 1), avoid=("before", "deferred tax asset", "relating to")) if n - 2 <= len(nm_) < n]
     c["tax"] = tx[:1]
     c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n)[:1]
     pi = pbs[0][0] if pbs else 0
     pats = _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)", r"(profit|loss).{0,30}continuing operations"], start=pi + 1, n=n,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit"))
     pats = [x for x in pats if not re.search(r"^(add|less)\b", clean_label(rows[x[0]][0]))]
+    if not pats:
+        pats = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)"], start=pi + 1,
+                        avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit")) if n - 2 <= len(nm_) < n]
     c["pat"] = pats[:4]
     pj = pats[0][0] if pats else pi
     c["eps"] = _all_matches(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, n=n)[:1]
@@ -297,6 +330,18 @@ def _col_status(d, i, unit):
     c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
     c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
     return bool(c1 and c2)
+
+
+def _near(a, b):
+    """True when digit strings a and b differ by at most one wrong, missing or extra digit (OCR noise), and are long enough to mean something."""
+    if len(a) < 4 or len(b) < 4 or abs(len(a) - len(b)) > 1:
+        return False
+    if a == b:
+        return True
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) <= 1
+    s_, l_ = (a, b) if len(a) < len(b) else (b, a)
+    return any(l_[:k] + l_[k + 1:] == s_ for k in range(len(l_)))
 
 
 def _assemble(cands, n, unit, rows):
@@ -329,6 +374,17 @@ def _assemble(cands, n, unit, rows):
             d["pat"] = pad(pt[1])
             if tx is not None:
                 d["tax"] = tx
+            gz = GARB.get(id(pt[1])) or {}
+            if gz and tx is not None and pb is not None and all(v in (None, 0.0) for v in (d.get("associates") or [None])):
+                pv = list(d["pat"])
+                for gi, tok in gz.items():
+                    if gi in (1, 2) and gi < 3 and pv[gi] is None and None not in (d["pbt"][gi], tx[gi]):
+                        dv = round(d["pbt"][gi] - tx[gi], 2)
+                        a_ = re.sub(r"\D", "", tok)
+                        b_ = re.sub(r"\D", "", f"{abs(dv):.2f}")
+                        if _near(a_, b_):
+                            pv[gi] = dv
+                d["pat"] = pv
             if first is None:
                 first = d
             st0 = _col_status(d, 0, unit)
@@ -472,7 +528,10 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
             if rv_[0] > rv_[3] * 1.02:
                 ok = False; why.append(f"{b[:4]}: first column larger than the year-to-date column")
             elif n >= 5 and ds[0].split(".")[1] == "09" and rv_[1] is not None and abs(rv_[3] - rv_[0] - rv_[1]) > 0.02 * rv_[3]:
-                ok = False; why.append(f"{b[:4]}: half-year column is not quarter + previous quarter")
+                _hs = f"{rv_[3]:.2f}".rstrip("0").rstrip(".")
+                _fix = [float(c_ + _hs[1:]) for c_ in "1" if len(_hs) > 1 and _hs[0] in "47" and abs(float(c_ + _hs[1:]) - rv_[0] - rv_[1]) <= 0.002 * (rv_[0] + rv_[1])]
+                if not _fix:
+                    ok = False; why.append(f"{b[:4]}: half-year column is not quarter + previous quarter")
         if not ok:
             det = " ".join(f"{k}={d.get(k)}" for k in ("total_income", "total_expenses", "exceptional", "pbt", "tax", "associates", "pat", "depreciation", "finance_costs") if d.get(k))
             why.append(f"{b[:4]}: does not reconcile [{unit}] {det}")
