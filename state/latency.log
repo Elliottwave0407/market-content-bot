@@ -1866,3 +1866,35 @@
 14 18:20:20 seen 544922 Om Galaxy Ltd cat=Board Meeting early=True bse_time=23:48:58 dissem=23:48:58
 14 18:22:50 pdf nim reader Kaynes Technology India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
 14 18:22:50 pdf pdf read failed Kaynes Technology India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+14 18:24:29 seen 523888 Megamont Ltd cat=Board Meeting early=True bse_time=23:53:37 dissem=23:53:37
+14 18:24:29 seen 544922 Om Galaxy Ltd cat=Result early=False bse_time=23:53:54 dissem=23:53:54
+14 18:24:29 seen 543664 Kaynes Technology India Ltd cat=Result early=False bse_time=23:54:06 dissem=23:54:06
+14 18:24:52 wait 543664 Kaynes Technology India Ltd: numbers not yet on BSE
+14 18:24:54 wait 544922 Om Galaxy Ltd: numbers not yet on BSE
+14 18:24:57 pdf rule reader Om Galaxy Ltd: rule: no results table page | ocr: rule: header has no quarter columns
+14 18:25:03 pdf rule reader Kaynes Technology India Ltd: rule: consolidated table does not reconcile [million] total_income=[9711.3, 9627.33, 9462.09] pbt=[647.31, 772.21, 1481.19] tax=[249.31, 318.08, 324.08] associates=[707.33, 816.59, 1507.37]
+14 18:25:03 pdf nim reader Kaynes Technology India Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (possible invention): rejected e.g. [(' (
+14 18:25:03 pdf pdf read failed Kaynes Technology India Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 1 numbers not found in the filing text (pos
+14 18:25:53 pdf strong model retry did not help: None
+14 18:25:53 pdf pdf current col Kaynes Technology India Ltd consolidated ok=False/3: revenue=9525.15, other_income=186.15, total_income=9711.3, total_expenses=8810.74, finance_costs=387.26, depreciation=347.33, pbt=647.31, tax=249.31, pat=398.0, 
+14 18:25:53 pdf rule reader Kaynes Technology India Ltd: rule: consolidated table does not reconcile [million] total_income=[9711.3, 9627.33, 9462.09] pbt=[647.31, 772.21, 1481.19] tax=[249.31, 318.08, 324.08] associates=[707.33, 816.59, 1507.37]
+14 18:25:53 pdf pdf history mismatch Kaynes Technology India Ltd consolidated cols=['30th September 2026', '30th June 2026', '30th September 2025'] :: q-1: pdf rev 9462.12 pat 454.13 | bse rev 9460.17 pat 564.26 (Rs mn); q-4: pdf rev 9121.25 pat 
+14 18:25:53 pdf pdf has consolidated but it failed checks: not falling back to standalone Kaynes Technology India Ltd
+14 18:25:53 pdf pdf is a HALF-YEARLY filing (column dates ['30th September 2026', '31st March 2026', '30th September 2025']): not read as quarters, queued for the half-yearly route Om Galaxy Ltd
+14 18:25:54 seen 519031 Shah Foods Ltd cat=Result early=False bse_time=23:54:52 dissem=23:54:52
+14 18:26:25 wait 519031 Shah Foods Ltd: numbers not yet on BSE
+14 18:26:32 pdf rule reader Shah Foods Ltd: ok
+14 18:26:32 pdf pdf current col Shah Foods Ltd consolidated ok=True/3: revenue=7141.42, other_income=1005.7, total_income=8147.12, total_expenses=6474.79, finance_costs=None, depreciation=None, pbt=1672.33, tax=369.95, pat=1302.38, eps=5.66
+14 18:26:32 pdf pdf rule-read previous/year-ago column [4] does not reconcile and BSE history does not confirm it Shah Foods Ltd consolidated
+14 18:26:32 pdf rule-read numbers rejected by later checks, AI reader will retry: Shah Foods Ltd
+14 18:26:32 pdf rule reader Kaynes Technology India Ltd: rule: consolidated table does not reconcile [million] total_income=[9711.3, 9627.33, 9462.09] pbt=[647.31, 772.21, 1481.19] tax=[249.31, 318.08, 324.08] associates=[707.33, 816.59, 1507.37]
+14 18:26:51 pdf pdf current col Kaynes Technology India Ltd consolidated ok=False/3: revenue=9525.15, other_income=186.15, total_income=9711.3, total_expenses=8810.74, finance_costs=387.26, depreciation=347.33, pbt=647.31, tax=249.31, pat=398.0, 
+14 18:26:51 pdf pdf history mismatch Kaynes Technology India Ltd consolidated cols=['30th September 2026', '30th June 2026', '30th September 2025'] :: q-1: pdf rev 9462.12 pat 454.13 | bse rev 9460.17 pat 564.26 (Rs mn); q-4: pdf rev 9121.25 pat 
+14 18:26:51 pdf pdf has consolidated but it failed checks: not falling back to standalone Kaynes Technology India Ltd
+14 18:26:51 pdf pdf current col Shah Foods Ltd consolidated ok=True/3: revenue=7141.42, other_income=1005.7, total_income=8147.12, total_expenses=6474.79, finance_costs=54.07, depreciation=7.87, pbt=1672.33, tax=369.95, pat=1302.38, eps=5.66
+14 18:26:51 pdf pdf incomplete Shah Foods Ltd consolidated: missing ['ebitda', 'revenue'] - not posting from PDF
+14 18:26:52 seen 531980 Senthil Infotek Ltd cat=Result early=False bse_time=23:56:22 dissem=23:56:22
+14 18:26:58 wait 531980 Senthil Infotek Ltd: numbers not yet on BSE
+14 18:27:01 pdf rule reader Senthil Infotek Ltd: ok
+14 18:27:01 pdf pdf current col Senthil Infotek Ltd standalone ok=True/2: revenue=12.25, other_income=None, total_income=12.25, total_expenses=7.22, finance_costs=None, depreciation=None, pbt=5.03, tax=0.76, pat=4.27, eps=0.08
+14 18:27:01 pdf pdf incomplete Senthil Infotek Ltd standalone: missing ['ebitda'] - not posting from PDF
