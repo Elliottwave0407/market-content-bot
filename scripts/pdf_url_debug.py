@@ -50,3 +50,23 @@ for ocr in (True,):
             t_ = " ".join(w[4] for w in r_)
             if re.search(r"profit for the period|total tax expense", t_, re.I):
                 print("TOKENS p%d: %s" % (pno + 1, [w[4] for w in r_]), flush=True)
+
+# the production path reads a TRIMMED pdf first (pdf_card.trim_pdf): show what that gives
+try:
+    import pdf_card as pc
+    small = pc.trim_pdf(b)
+    print("TRIM bytes", len(b), "->", len(small), flush=True)
+    pgs = rr._pdf_rows(small, ocr=False)
+    for pno, (txt, rws) in enumerate(pgs):
+        for r_ in rws:
+            lb, nums = rr.split_row(r_)
+            if re.search(r"statement of|financial results", lb, re.I):
+                print("TRIM p%d title: %r %s" % (pno + 1, lb[:90], nums), flush=True)
+    r3, w3 = rr.read_pdf(small, os.environ.get("HINT", ""), None)
+    print("TRIM READ why:", w3)
+    if r3:
+        for k in ("consolidated", "standalone"):
+            d = r3.get(k)
+            print("TRIM", k, "->", None if not d else {x: d.get(x) for x in ("revenue", "pat")})
+except Exception as e:
+    print("TRIM error", repr(e)[:200])
