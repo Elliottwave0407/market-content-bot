@@ -1836,3 +1836,10 @@
 14 17:56:23 pdf pdf checks failed Hero Motors Ltd consolidated
 14 17:56:23 pdf pdf has consolidated but it failed checks: not falling back to standalone Hero Motors Ltd
 14 17:56:50 pdf pdf is a HALF-YEARLY filing (column dates ['30/09/2026', '31/03/2026', '30/09/2025']): not read as quarters, queued for the half-yearly route Shashwat Furnishing Solutions Ltd
+14 17:59:09 ready 531500|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=
+14 17:59:23 ready 544904|Sep-26|na kind=photo waited_min=45.1 tries=99 pdf_log=
+14 17:59:34 ready 530253|Sep-26|na kind=photo waited_min=45.1 tries=8 pdf_log=
+14 17:59:49 ready 542923|Sep-26|na kind=photo waited_min=45.1 tries=99 pdf_log=
+14 17:59:58 ready 544331|Sep-26|na kind=photo waited_min=45.1 tries=99 pdf_log=
+14 18:00:43 pdf nim reader Hero Motors Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 21 numbers not found in the filing text (possible invention): rejected e.g. [( (gemini: gemi
+14 18:00:43 pdf pdf read failed Hero Motors Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 21 numbers not found in the filing text (possible inven
