@@ -91,7 +91,7 @@ def main():
             if gt and gt.get("revenue") is not None and cur.get("revenue") is not None:
                 same = pc.close(cur["revenue"], gt["revenue"]) and (gt.get("pat") is None or cur.get("pat") is None or abs(cur["pat"] - gt["pat"]) <= max(1.0, 0.03 * abs(gt["pat"])))
                 st["gt_agree" if same else "gt_DISAGREE"] += 1
-                if not same: bad.append(f"{name} {basis} unit={out['unit']} dates={out['quarter_end_columns']} rule rev {cur['revenue']} pat {cur['pat']} | bse rev {gt['revenue']} pat {gt['pat']} | arith {ok}")
+                if not same: bad.append(f"{name} {basis} unit={out['unit']} dates={out['quarter_end_columns']} rule rev {cur['revenue']} pat {cur['pat']} | bse rev {gt['revenue']} pat {gt['pat']} | arith {ok} | att {rec.get('ATTACHMENTNAME')}")
             else:
                 st["gt_none"] += 1
             if not ok: bad.append(f"ARITH {name} {basis} " + ", ".join(f"{x}={pc.val(d, x, 0)}" for x in ("revenue", "total_income", "total_expenses", "pbt", "tax", "pat")))
