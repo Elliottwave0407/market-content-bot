@@ -2126,7 +2126,9 @@
 "8cfcd175-88f8-41a5-886f-7e2ac0e7d6a0",
 "a54422b4-6ca1-42ba-93ad-abab39040f7c",
 "8a58f1c5-39b1-4bec-884e-0202043b7cfd",
-"39a11738-f4ce-426a-b530-09c36b8df40b"
+"39a11738-f4ce-426a-b530-09c36b8df40b",
+"e57b770d-8ef2-455e-b85f-fd625847232f",
+"b481ca56-1052-4459-a193-55bf3b0d8194"
 ],
 "posted": [
 "540376|Sep-26|consolidated",
@@ -6778,7 +6780,9 @@
 "531667|Sep-26|standalone",
 "544143|Sep-26|na",
 "544164|Sep-26|na",
-"503092|Sep-26|standalone"
+"503092|Sep-26|standalone",
+"506003|Sep-26|standalone",
+"538778|Sep-26|consolidated"
 ],
 "pending": {
 "920d8b90-a442-494f-a093-ce542214ea47": {
@@ -7691,44 +7695,6 @@
 },
 "first": 1794655796.0620809,
 "last": 1794666027.9216862,
-"alerted": false
-},
-"b481ca56-1052-4459-a193-55bf3b0d8194": {
-"rec": {
-"NEWSID": "b481ca56-1052-4459-a193-55bf3b0d8194",
-"SCRIP_CD": 538778,
-"XML_NAME": "ANN_538778_B481CA56-1052-4459-A193-55BF3B0D8194",
-"NEWSSUB": "Kalyan Capitals Ltd - 538778 - Results - Financial Results For The Quarter &  Half Year Ended 30.09.2026",
-"DT_TM": "2026-11-14T16:56:23.807",
-"NEWS_DT": "2026-11-14T16:56:23.807",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "b89c66ab-b257-405c-bf2d-c9b60dee1f16.pdf",
-"MORE": "",
-"HEADLINE": "PFA the Un-audited (Standalone & Consolidated) Financial Results for the Quarter & Half Year ended 30.09.2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/kalyan-capitals-ltd/kalyancap/538778/",
-"SLONGNAME": "Kalyan Capitals Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 23,
-"News_submission_dt": "2026-11-14T16:56:23",
-"DissemDT": "2026-11-14T16:56:23.807",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 7502868,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1794655796.0620809,
-"last": 1794655796.0620809,
 "alerted": false
 },
 "2d5f1e01-7ba9-4c3d-9554-c031d8f16163": {
@@ -8762,7 +8728,7 @@
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 292
+"2026-11-14": 293
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -8821,7 +8787,7 @@
 "other": 57
 },
 "concall-key": {
-"ok": 113,
+"ok": 115,
 "429": 6,
 "other": 40
 },
@@ -9337,7 +9303,8 @@
 "b2a05734-de87-4422-ae78-eba924407d0c": 1,
 "46ae7b8c-d191-4ed4-a005-e11057d30428": 1,
 "81c60c0d-6474-4e86-8a46-6f604c7e01dc": 1,
-"39a11738-f4ce-426a-b530-09c36b8df40b": 1
+"39a11738-f4ce-426a-b530-09c36b8df40b": 1,
+"e57b770d-8ef2-455e-b85f-fd625847232f": 1
 },
 "cons_expected": {
 "906a328d-2381-487e-8870-0c131685ce4f": 1,
@@ -9906,13 +9873,10 @@
 "187f938a-5160-47c4-a50a-54d91d05d13e": 1,
 "8f8933b5-538b-41cd-baf6-a3e07acb62ec": 1,
 "11de59ab-00ab-473f-92a5-aa0f374c7879": 1,
-"fcee5938-4869-4eed-bfb9-3f12b3a4ea82": 1
+"fcee5938-4869-4eed-bfb9-3f12b3a4ea82": 1,
+"b481ca56-1052-4459-a193-55bf3b0d8194": 1
 },
 "lag": [
-[
-"Jayant Infratech Ltd",
-86
-],
 [
 "Twamev Construction And Infrastructure Ltd",
 86
@@ -11107,6 +11071,10 @@
 ],
 [
 "Pasupati Spinning & Weaving Mills Ltd",
+171
+],
+[
+"Kalyan Capitals Ltd",
 171
 ]
 ],
@@ -13199,6 +13167,26 @@
 "rev": 288.1,
 "pat": 9.700000000000001,
 "t": 1794668058.403945,
+"last": 0
+},
+"506003|Sep-26|standalone": {
+"code": "506003",
+"name": "Sudal Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 568.474,
+"pat": 0.909,
+"t": 1794668088.5484622,
+"last": 0
+},
+"538778|Sep-26|consolidated": {
+"code": "538778",
+"name": "Kalyan Capitals Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 146.032,
+"pat": 3.636,
+"t": 1794668222.527438,
 "last": 0
 }
 },
