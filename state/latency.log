@@ -1,587 +1,3 @@
-13 09:19:14 ready 544611|Sep-26|na kind=photo waited_min=63.1 tries=99 pdf_log=pdf incomplete Satia Industries Ltd standalone: missing ['ebitda'] - not posting from PDF | pdf current col Simplex Castings Ltd standalone ok=True/3: revenue=6
-13 09:24:22 seen 523840 Innovative Tech Pack Ltd cat=Result early=False bse_time=14:40:20 dissem=14:40:20
-13 09:24:22 seen 513063 Trans Freight Containers Ltd cat=Board Meeting early=True bse_time=14:40:49 dissem=14:40:49
-13 09:24:22 seen 538952 Abhinav Leasing & Finance Lt cat=Board Meeting early=True bse_time=14:42:33 dissem=14:42:33
-13 09:24:22 seen 538833 Kaizen Agro Infrabuild Ltd cat=Board Meeting early=True bse_time=14:42:52 dissem=14:42:52
-13 09:24:22 seen 532078 Monind Ltd cat=Result early=False bse_time=14:43:11 dissem=14:43:11
-13 09:24:22 seen 539201 Satia Industries Ltd cat=Result early=False bse_time=14:43:11 dissem=14:43:11
-13 09:24:22 seen 532078 Monind Ltd cat=Board Meeting early=True bse_time=14:45:24 dissem=14:45:24
-13 09:24:22 seen 544926 Panchatv Bharat Ltd cat=Board Meeting early=True bse_time=14:45:42 dissem=14:45:42
-13 09:24:22 seen 509715 Jay Shree Tea & Industries L cat=Board Meeting early=True bse_time=14:45:45 dissem=14:45:45
-13 09:24:22 seen 544003 Plaza Wires Ltd cat=Board Meeting early=True bse_time=14:46:15 dissem=14:46:15
-13 09:24:22 seen 507968 Sahaj digital Ltd cat=Result early=False bse_time=14:47:43 dissem=14:47:43
-13 09:24:22 seen 516016 Shreyans Industries Ltd-$ cat=Result early=False bse_time=14:49:02 dissem=14:49:02
-13 09:24:22 seen 524816 Natco Pharma Ltd cat=Result early=False bse_time=14:49:18 dissem=14:49:18
-13 09:24:22 seen 544636 Western Overseas Study Abroa cat=Result early=False bse_time=14:49:25 dissem=14:49:25
-13 09:24:22 seen 500058 Bihar Sponge Iron Ltd cat=Result early=False bse_time=14:50:19 dissem=14:50:19
-13 09:24:22 seen 513472 Simplex Castings Ltd cat=Result early=False bse_time=14:50:26 dissem=14:50:26
-13 09:24:22 seen 532651 SPL Industries Ltd cat=Result early=False bse_time=14:51:11 dissem=14:51:11
-13 09:24:22 seen 531178 Hemang Resources Ltd cat=Board Meeting early=True bse_time=14:51:19 dissem=14:51:19
-13 09:24:22 seen 538833 Kaizen Agro Infrabuild Ltd cat=Result early=False bse_time=14:51:57 dissem=14:51:57
-13 09:24:22 seen 509715 Jay Shree Tea & Industries L cat=Result early=False bse_time=14:52:04 dissem=14:52:04
-13 09:24:22 seen 507968 Sahaj digital Ltd cat=Board Meeting early=True bse_time=14:52:11 dissem=14:52:11
-13 09:24:22 seen 500058 Bihar Sponge Iron Ltd cat=Board Meeting early=True bse_time=14:53:11 dissem=14:53:11
-13 09:24:22 seen 507645 Polson Ltd cat=Board Meeting early=True bse_time=14:53:29 dissem=14:53:29
-13 09:24:22 seen 514264 Seasons Textiles Ltd-$ cat=Result early=False bse_time=14:54:11 dissem=14:54:11
-13 09:25:09 wait 509715 Jay Shree Tea & Industries L: confirming that no consolidated statement exists
-13 09:25:11 wait 516016 Shreyans Industries Ltd-$: numbers not yet on BSE
-13 09:25:15 wait 507968 Sahaj digital Ltd: numbers not yet on BSE
-13 09:26:59 ready 507645|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Polson Ltd standalone ok=True/3: revenue=2788.49, other_income=54.06, total_income=2842.55, total_expenses=2641.56, finance_costs=80.2, deprecia
-13 09:27:25 wait 500058 Bihar Sponge Iron Ltd: numbers not yet on BSE
-13 09:30:22 ready 532651|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader SPL Industries Ltd: rule: no results table page | ocr: rule: no results table page | strong model retry did not help: HTTP 429 (skipped gemini-3.5-f
-13 09:32:40 wait 538833 Kaizen Agro Infrabuild Ltd: numbers not yet on BSE
-13 09:33:44 ready 523840|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf is a HALF-YEARLY filing (column dates ['September 30, 2026', 'March 31, 2026', 'September 30, 2025']): not read as quarters, queued for the half-yearly rout
-13 09:38:12 ready 532145|Sep-26|standalone kind=photo waited_min=139.6 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | pdf current col H S India Ltd standalone ok=False/3: revenue=837
-13 09:40:33 wait 514264 Seasons Textiles Ltd-$: numbers not yet on BSE
-13 09:41:20 wait 544636 Western Overseas Study Abroa: numbers not yet on BSE
-13 09:42:22 ready 538952|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Clinitech Laboratory 
-13 09:42:32 ready 532078|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Abhinav Leasing & Finance Ltd standalone ok=True/1: revenue=119.22, other_income=None, total_income=119.22, total_expenses=66.5, finance_costs=5
-13 09:42:45 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Clinitech Laboratory Ltd
-13 09:42:45 pdf rule reader Abhinav Leasing & Finance Ltd: rule: no results table page | ocr: rule: no results table page
-13 09:42:45 pdf pdf current col Abhinav Leasing & Finance Ltd standalone ok=True/1: revenue=119.22, other_income=None, total_income=119.22, total_expenses=66.5, finance_costs=50.78, depreciation=0.36, pbt=52.72, tax=None, pat=52.72, eps=0.11
-13 09:42:45 pdf rule reader Monind Ltd: ok
-13 09:42:45 pdf pdf current col Monind Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=73.56, finance_costs=67.69, depreciation=0.0, pbt=-73.56, tax=0.0, pat=-73.56, eps=-2.0
-13 09:42:45 pdf rule reader Monind Ltd: ok
-13 09:42:45 pdf pdf current col Monind Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=73.56, finance_costs=67.69, depreciation=0.0, pbt=-73.56, tax=0.0, pat=-73.56, eps=-2.0
-13 09:42:45 pdf strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT
-13 09:42:48 seen 526125 BN Agrochem Ltd cat=Board Meeting early=True bse_time=14:54:59 dissem=14:54:59
-13 09:42:48 seen 513063 Trans Freight Containers Ltd cat=Result early=False bse_time=14:55:46 dissem=14:55:46
-13 09:42:48 seen 539278 Symbiox Investment & Trading cat=Board Meeting early=True bse_time=14:56:03 dissem=14:56:03
-13 09:42:48 seen 532744 GTN Textiles Ltd cat=Board Meeting early=True bse_time=14:56:12 dissem=14:56:12
-13 09:42:48 seen 531866 Aagam Capital Ltd cat=Board Meeting early=True bse_time=14:57:54 dissem=14:57:54
-13 09:42:48 seen 540570 Variman Global Enterprises L cat=Result early=False bse_time=14:58:16 dissem=14:58:16
-13 09:42:48 seen 500125 EID Parry India Ltd cat=Board Meeting early=True bse_time=14:58:20 dissem=14:58:20
-13 09:42:48 seen 537840 Raunaq International Ltd cat=Board Meeting early=True bse_time=14:58:26 dissem=14:58:26
-13 09:42:48 seen 500265 Maharashtra Seamless Ltd cat=Result early=False bse_time=14:59:34 dissem=14:59:34
-13 09:42:48 seen 532708 GVK Power & Infrastructure L cat=Result early=False bse_time=15:00:21 dissem=15:00:21
-13 09:42:48 seen 526125 BN Agrochem Ltd cat=Result early=False bse_time=15:00:26 dissem=15:00:26
-13 09:42:48 seen 540570 Variman Global Enterprises L cat=Board Meeting early=True bse_time=15:00:37 dissem=15:00:37
-13 09:42:48 seen 514282 Uniworth International Ltd cat=Board Meeting early=True bse_time=15:00:38 dissem=15:00:38
-13 09:42:48 seen 507645 Polson Ltd cat=Result early=False bse_time=15:01:21 dissem=15:01:21
-13 09:42:48 seen 532744 GTN Textiles Ltd cat=Result early=False bse_time=15:01:33 dissem=15:01:33
-13 09:42:48 seen 500265 Maharashtra Seamless Ltd cat=Board Meeting early=True bse_time=15:03:12 dissem=15:03:12
-13 09:42:48 seen 500125 EID Parry India Ltd cat=Result early=False bse_time=15:04:22 dissem=15:04:22
-13 09:42:48 seen 514264 Seasons Textiles Ltd-$ cat=Board Meeting early=True bse_time=15:06:31 dissem=15:06:31
-13 09:42:48 seen 531866 Aagam Capital Ltd cat=Result early=False bse_time=15:06:34 dissem=15:06:34
-13 09:42:48 seen 539910 Kome-On Communication Ltd cat=Board Meeting early=True bse_time=15:07:01 dissem=15:07:01
-13 09:42:48 seen 540874 7Seas Entertainment Ltd cat=Board Meeting early=True bse_time=15:07:31 dissem=15:07:31
-13 09:42:48 seen 532650 MSP Steel & Power Ltd cat=Board Meeting early=True bse_time=15:07:52 dissem=15:07:52
-13 09:42:48 seen 544711 Kiaasa Retail Ltd cat=Board Meeting early=True bse_time=15:08:11 dissem=15:08:11
-13 09:42:48 seen 512425 Nirav Commercials Ltd cat=Board Meeting early=True bse_time=15:09:15 dissem=15:09:15
-13 09:42:48 seen 531178 Hemang Resources Ltd cat=Result early=False bse_time=15:11:29 dissem=15:11:29
-13 09:42:48 seen 500128 Electrosteel Castings Ltd cat=Board Meeting early=True bse_time=15:11:48 dissem=15:11:48
-13 09:43:14 wait 500125 EID Parry India Ltd: numbers not yet on BSE
-13 09:43:41 ready 500265|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 09:44:01 ready 532650|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Maharashtra Seamless Ltd consolidated ok=False/3: revenue=1269.8, other_income=-1.55, total_income=1268.25, total_expenses=1168.72, finance_cost
-13 09:44:10 wait 526125 BN Agrochem Ltd: numbers not yet on BSE
-13 09:44:14 ready 532699|Sep-26|consolidated kind=photo waited_min=25.0 tries=1 pdf_log=rule reader Electrosteel Castings Ltd: rule: no results table page | ocr: rule: no results table page | strong model retry did not help: HTTP 429 (skipped gemin
-13 09:44:21 ready 539201|Sep-26|standalone kind=photo waited_min=25.0 tries=1 pdf_log=rule reader BN Agrochem Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Satia Industries Ltd standalone ok=False/3: revenu
-13 09:44:30 ready 543514|Sep-26|na kind=photo waited_min=60.9 tries=1 pdf_log=pdf margin q-1 differs from BSE history by 8.1 pts: margin withheld Satia Industries Ltd standalone | pdf current col Veranda Learning Solutions Ltd standalone 
-13 09:45:31 wait 532708 GVK Power & Infrastructure L: numbers not yet on BSE
-13 09:48:30 ready 544201|Sep-26|na kind=photo waited_min=60.9 tries=99 pdf_log=
-13 09:48:52 ready 540570|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 09:50:30 ready 530601|Sep-26|na kind=photo waited_min=60.9 tries=8 pdf_log=
-13 09:50:47 ready 530461|Sep-26|na kind=photo waited_min=60.9 tries=2 pdf_log=rule reader Saboo Sodium Chloro Ltd: rule: stan: missing ['pat'] n=6
-13 09:51:34 ready 544337|Sep-26|na kind=photo waited_min=60.9 tries=99 pdf_log=
-13 09:53:05 ready 513063|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=
-13 09:53:52 wait 531178 Hemang Resources Ltd: numbers not yet on BSE
-13 09:55:50 ready 532744|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 09:57:39 ready 544220|Sep-26|na kind=photo waited_min=88.1 tries=99 pdf_log=
-13 09:58:39 ready 539278|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Symbiox Investment & Trading Company Ltd standalone ok=True/3: revenue=42.04, other_income=0.0, total_income=42.04, total_expenses=35.96, financ
-13 10:01:03 wait 531866 Aagam Capital Ltd: numbers not yet on BSE
-13 10:01:07 pdf rule reader Aagam Capital Ltd: rule: no results table page | ocr: rule: no results table page
-13 10:01:07 pdf pdf current col Aagam Capital Ltd standalone ok=True/2: revenue=0.04, other_income=None, total_income=0.04, total_expenses=3.94, finance_costs=0.43, depreciation=None, pbt=-3.89, tax=0.01, pat=-3.9, eps=-0.08
-13 10:01:07 pdf pdf incomplete Aagam Capital Ltd standalone: missing ['revenue'] - not posting from PDF
-13 10:02:16 seen 502448 Rollatainers Ltd cat=Result early=False bse_time=15:16:35 dissem=15:16:35
-13 10:02:16 seen 535205 Mystic Electronics Ltd cat=Board Meeting early=True bse_time=15:17:18 dissem=15:17:18
-13 10:02:16 seen 544708 Yashhtej Industries (India)  cat=Board Meeting early=True bse_time=15:17:29 dissem=15:17:29
-13 10:02:16 seen 531406 ANS Industries Ltd cat=Board Meeting early=True bse_time=15:19:18 dissem=15:19:18
-13 10:02:16 seen 500202 India Lease Development Ltd cat=Board Meeting early=True bse_time=15:19:18 dissem=15:19:18
-13 10:02:16 seen 540396 Manomay Tex India Ltd cat=Board Meeting early=True bse_time=15:19:52 dissem=15:19:52
-13 10:02:16 seen 531178 Hemang Resources Ltd cat=Result early=False bse_time=15:19:57 dissem=15:19:57
-13 10:02:16 seen 524488 SVC INDUSTRIES Ltd cat=Board Meeting early=True bse_time=15:20:42 dissem=15:20:42
-13 10:02:16 seen 544833 Caliber Mining And Logistics cat=Board Meeting early=True bse_time=15:21:48 dissem=15:21:48
-13 10:02:16 seen 544150 KP Green Engineering Ltd cat=Board Meeting early=True bse_time=15:22:16 dissem=15:22:16
-13 10:02:16 seen 531360 Golechha Global Finance Ltd cat=Board Meeting early=True bse_time=15:22:30 dissem=15:22:30
-13 10:02:16 seen 514282 Uniworth International Ltd cat=Result early=False bse_time=15:22:51 dissem=15:22:51
-13 10:02:16 seen 532072 Interworld Digital Ltd-$ cat=Result early=False bse_time=15:24:01 dissem=15:24:01
-13 10:02:16 seen 506525 Kanoria Chemicals & Industri cat=Result early=False bse_time=15:24:05 dissem=15:24:05
-13 10:02:16 seen 532398 Usha Martin Education & Solu cat=Board Meeting early=True bse_time=15:25:27 dissem=15:25:27
-13 10:02:16 seen 544708 Yashhtej Industries (India)  cat=Result early=False bse_time=15:25:41 dissem=15:25:41
-13 10:02:16 seen 531360 Golechha Global Finance Ltd cat=Result early=False bse_time=15:27:54 dissem=15:27:54
-13 10:02:16 seen 531406 ANS Industries Ltd cat=Result early=False bse_time=15:29:00 dissem=15:29:00
-13 10:02:16 seen 532398 Usha Martin Education & Solu cat=Result early=False bse_time=15:29:57 dissem=15:29:57
-13 10:02:16 seen 530779 Dynamic Portfolio Management cat=Board Meeting early=True bse_time=15:30:16 dissem=15:30:16
-13 10:02:16 seen 500202 India Lease Development Ltd cat=Result early=False bse_time=15:31:12 dissem=15:31:12
-13 10:02:16 seen 530065 Lords Ishwar Hotels Ltd cat=Board Meeting early=True bse_time=15:31:22 dissem=15:31:22
-13 10:02:16 seen 544150 KP Green Engineering Ltd cat=Result early=False bse_time=15:31:38 dissem=15:31:38
-13 10:02:16 seen 532072 Interworld Digital Ltd-$ cat=Board Meeting early=True bse_time=15:31:59 dissem=15:31:59
-13 10:02:49 wait 544150 KP Green Engineering Ltd: numbers not yet on BSE
-13 10:02:55 wait 506525 Kanoria Chemicals & Industri: numbers not yet on BSE
-13 10:02:57 ready 532708|Sep-26|consolidated kind=photo waited_min=19.5 tries=8 pdf_log=
-13 10:03:28 wait 502448 Rollatainers Ltd: numbers not yet on BSE
-13 10:04:40 wait 544708 Yashhtej Industries (India) : numbers not yet on BSE
-13 10:06:08 ready 544199|Sep-26|na kind=photo waited_min=64.1 tries=99 pdf_log=nim reader Bihar Sponge Iron Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not fo
-13 10:07:01 ready 524488|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Mystic Electronics Ltd: rule: no results table page | ocr: rule: no results table page | rule reader SVC INDUSTRIES Ltd: rule: stan: missing ['pat']
-13 10:10:46 ready 500246|Sep-26|standalone kind=photo waited_min=64.1 tries=3 pdf_log=pdf current col Envair Electrodyne Ltd standalone ok=True/3: revenue=10.83, other_income=0.0, total_income=10.83, total_expenses=8.11, finance_costs=0.0, deprec
-13 10:10:56 ready 531608|Sep-26|na kind=photo waited_min=64.1 tries=8 pdf_log=
-13 10:12:36 wait 531406 ANS Industries Ltd: numbers not yet on BSE
-13 10:13:18 wait 531178 Hemang Resources Ltd: numbers not yet on BSE
-13 10:13:50 ready 530065|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Lords Ishwar Hotels Ltd standalone ok=True/3: revenue=183.05, other_income=6.16, total_income=189.21, total_expenses=202.15, finance_costs=8.77,
-13 10:14:29 ready 531360|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf checks failed Golechha Global Finance Ltd standalone | rule reader Golechha Global Finance Ltd: rule: stan: does not reconcile [lakh] total_income=[156.81, 
-13 10:16:18 ready 500202|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col India Lease Development Ltd standalone ok=True/2: revenue=15.45, other_income=0.12, total_income=15.57, total_expenses=14.58, finance_costs=None
-13 10:17:48 wait 532072 Interworld Digital Ltd-$: numbers not yet on BSE
-13 10:18:45 wait 514282 Uniworth International Ltd: numbers not yet on BSE
-13 10:19:52 seen 530779 Dynamic Portfolio Management cat=Result early=False bse_time=15:40:06 dissem=15:40:06
-13 10:19:52 seen 512597 Keynote Financial Services L cat=Board Meeting early=True bse_time=15:41:20 dissem=15:41:20
-13 10:19:52 seen 532521 Palred Technologies Ltd cat=Result early=False bse_time=15:41:35 dissem=15:41:35
-13 10:19:52 seen 511632 Olympic Management & Financi cat=Board Meeting early=True bse_time=15:42:06 dissem=15:42:06
-13 10:19:52 seen 517526 Inditalia Refcon Ltd cat=Board Meeting early=True bse_time=15:42:06 dissem=15:42:06
-13 10:19:52 seen 526113 Uniroyal Marine Exports Ltd cat=Result early=False bse_time=15:42:34 dissem=15:42:34
-13 10:19:52 seen 531888 Rexnord Electronics & Contro cat=Board Meeting early=True bse_time=15:42:57 dissem=15:42:57
-13 10:19:52 seen 526709 Bits Ltd cat=Result early=False bse_time=15:43:38 dissem=15:43:38
-13 10:19:52 seen 539506 Adcon Capital Services Ltd cat=Board Meeting early=True bse_time=15:43:57 dissem=15:43:57
-13 10:19:52 seen 539835 Superior Finlease Ltd cat=Result early=False bse_time=15:44:07 dissem=15:44:07
-13 10:19:52 seen 544296 Nisus Finance Services Co Lt cat=Board Meeting early=True bse_time=15:44:20 dissem=15:44:20
-13 10:19:52 seen 538667 Sirohia & Sons Ltd cat=Board Meeting early=True bse_time=15:44:25 dissem=15:44:25
-13 10:19:52 seen 520073 RACL Geartech Ltd cat=Result early=False bse_time=15:44:59 dissem=15:44:59
-13 10:19:52 seen 544485 Regaal Resources Ltd cat=Result early=False bse_time=15:45:48 dissem=15:45:48
-13 10:19:52 seen 544627 Purple Wave Infocom Ltd cat=Board Meeting early=True bse_time=15:45:48 dissem=15:45:48
-13 10:19:52 seen 531846 Trinity League India Ltd cat=Board Meeting early=True bse_time=15:46:04 dissem=15:46:04
-13 10:19:52 seen 540174 Southern Infoconsultants Ltd cat=Board Meeting early=True bse_time=15:46:54 dissem=15:46:54
-13 10:19:52 seen 500153 Ganesh Benzoplast Ltd cat=Result early=False bse_time=15:46:58 dissem=15:46:58
-13 10:19:52 seen 532521 Palred Technologies Ltd cat=Board Meeting early=True bse_time=15:47:01 dissem=15:47:01
-13 10:19:52 seen 540774 IFGL Refractories Ltd cat=Result early=False bse_time=15:47:24 dissem=15:47:24
-13 10:19:52 seen 543419 Shriram Properties Ltd cat=Board Meeting early=True bse_time=15:47:53 dissem=15:47:53
-13 10:19:52 seen 517526 Inditalia Refcon Ltd cat=Result early=False bse_time=15:48:47 dissem=15:48:47
-13 10:19:52 seen 531568 Ashutosh Paper Mills Ltd cat=Board Meeting early=True bse_time=15:49:12 dissem=15:49:12
-13 10:19:52 seen 505368 Semac Construction Ltd-$ cat=Result early=False bse_time=15:49:12 dissem=15:49:12
-13 10:19:52 seen 533267 Cantabil Retail India Ltd cat=Result early=False bse_time=15:49:16 dissem=15:49:16
-13 10:20:31 wait 533267 Cantabil Retail India Ltd: numbers not yet on BSE
-13 10:20:35 wait 520073 RACL Geartech Ltd: numbers not yet on BSE
-13 10:20:47 wait 540774 IFGL Refractories Ltd: numbers not yet on BSE
-13 10:20:50 wait 544485 Regaal Resources Ltd: numbers not yet on BSE
-13 10:21:35 ready 500153|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 10:21:58 ready 507968|Sep-26|na kind=photo waited_min=55.5 tries=2 pdf_log=rule reader BN Agrochem Ltd: rule: no results table page | ocr: rule: no results table page | pdf incomplete Sahaj digital Ltd consolidated: missing ['pat', 're
-13 10:23:37 ready 500058|Sep-26|na kind=photo waited_min=55.5 tries=4 pdf_log=
-13 10:23:46 ready 526709|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Bits Ltd: ok | pdf current col Bits Ltd consolidated ok=True/3: revenue=43.75, other_income=0.73, total_income=44.48, total_expenses=24.33, finance_
-13 10:27:29 ready 538833|Sep-26|na kind=photo waited_min=55.5 tries=4 pdf_log=nim reader Kaizen Agro Infrabuild Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers n
-13 10:27:59 ready 530779|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Dynamic Portfolio Management & Services Ltd standalone ok=True/2: revenue=12.75, other_income=None, total_income=12.75, total_expenses=15.55, fi
-13 10:28:58 ready 544636|Sep-26|na kind=photo waited_min=55.5 tries=99 pdf_log=
-13 10:30:03 ready 526113|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Uniroyal Marine Exports Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Uniroyal Marine Exports Ltd standalone
-13 10:31:41 ready 540174|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Southern Infoconsultants Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Southern Infoconsultants Ltd consolid
-13 10:34:05 ready 539835|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Superior Finlease Ltd standalone ok=True/1: revenue=10.52, other_income=None, total_income=10.52, total_expenses=8.21, finance_costs=None, depre
-13 10:34:34 ready 511632|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Olympic Management & Financial Services Ltd: rule: header has no quarter columns | ocr: rule: no results table page | pdf current col Olympic Manage
-13 10:34:41 ready 517526|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf margin q-1 differs from BSE history by 9.1 pts: margin withheld Olympic Management & Financial Services Ltd standalone | rule reader Inditalia Refcon Ltd: o
-13 10:37:45 pdf rule reader Uniworth International Ltd: rule: no results table page | ocr: rule: no results table page
-13 10:37:48 seen 512344 Aravali Securities & Finance cat=Board Meeting early=True bse_time=15:49:41 dissem=15:49:41
-13 10:37:48 seen 512597 Keynote Financial Services L cat=Result early=False bse_time=15:50:14 dissem=15:50:14
-13 10:37:48 seen 543419 Shriram Properties Ltd cat=Result early=False bse_time=15:52:21 dissem=15:52:21
-13 10:37:48 seen 539506 Adcon Capital Services Ltd cat=Result early=False bse_time=15:53:37 dissem=15:53:37
-13 10:37:48 seen 531888 Rexnord Electronics & Contro cat=Result early=False bse_time=15:54:05 dissem=15:54:05
-13 10:37:48 seen 544214 Three M Paper Boards Ltd cat=Board Meeting early=True bse_time=15:54:05 dissem=15:54:05
-13 10:37:48 seen 532067 3B BlackBio Dx Ltd cat=Board Meeting early=True bse_time=15:55:02 dissem=15:55:02
-13 10:37:48 seen 544296 Nisus Finance Services Co Lt cat=Result early=False bse_time=15:55:27 dissem=15:55:27
-13 10:37:48 seen 526574 Enterprise International Ltd cat=Result early=False bse_time=15:55:41 dissem=15:55:41
-13 10:37:48 seen 511260 Iconik Sports And Events Ltd cat=Result early=False bse_time=15:55:59 dissem=15:55:59
-13 10:37:48 seen 531417 Mega Corporation Ltd cat=Board Meeting early=True bse_time=15:56:00 dissem=15:56:00
-13 10:37:48 seen 543620 Insolation Energy Ltd cat=Board Meeting early=True bse_time=15:56:09 dissem=15:56:09
-13 10:37:48 seen 531846 Trinity League India Ltd cat=Result early=False bse_time=15:56:34 dissem=15:56:34
-13 10:37:48 seen 532806 AI Champdany Industries Ltd cat=Board Meeting early=True bse_time=15:56:45 dissem=15:56:45
-13 10:37:48 seen 511632 Olympic Management & Financi cat=Result early=False bse_time=15:56:52 dissem=15:56:52
-13 10:37:48 seen 539124 Sarvottam Finvest Ltd cat=Board Meeting early=True bse_time=15:57:02 dissem=15:57:02
-13 10:37:48 seen 544532 Solarworld Energy Solutions  cat=Board Meeting early=True bse_time=15:57:47 dissem=15:57:47
-13 10:37:48 seen 511260 Iconik Sports And Events Ltd cat=Board Meeting early=True bse_time=15:57:50 dissem=15:57:50
-13 10:37:48 seen 544463 Repono Ltd cat=Board Meeting early=True bse_time=15:57:58 dissem=15:57:58
-13 10:37:48 seen 544482 Star Imaging And Path Lab Lt cat=Board Meeting early=True bse_time=16:00:22 dissem=16:00:22
-13 10:37:48 seen 507864 Pioneer Investcorp Ltd cat=Board Meeting early=True bse_time=16:00:37 dissem=16:00:37
-13 10:37:48 seen 540174 Southern Infoconsultants Ltd cat=Result early=False bse_time=16:01:15 dissem=16:01:15
-13 10:37:48 seen 544847 Manipal Health Enterprises L cat=Board Meeting early=True bse_time=16:02:18 dissem=16:02:18
-13 10:37:48 seen 539218 Saumya Consultants Ltd cat=Board Meeting early=True bse_time=16:02:40 dissem=16:02:40
-13 10:37:48 seen 544463 Repono Ltd cat=Result early=False bse_time=16:02:44 dissem=16:02:44
-13 10:37:48 seen 520059 Munjal Auto Industries Ltd cat=Board Meeting early=True bse_time=16:03:32 dissem=16:03:32
-13 10:37:48 seen 539124 Sarvottam Finvest Ltd cat=Result early=False bse_time=16:03:42 dissem=16:03:42
-13 10:37:48 seen 526117 Shervani Industrial Syndicat cat=Result early=False bse_time=16:04:50 dissem=16:04:50
-13 10:37:48 seen 512265 Avon Mercantile Ltd cat=Board Meeting early=True bse_time=16:05:06 dissem=16:05:06
-13 10:37:48 seen 539189 Adhbhut Infrastructure Ltd cat=Board Meeting early=True bse_time=16:05:11 dissem=16:05:11
-13 10:37:48 seen 500128 Electrosteel Castings Ltd cat=Result early=False bse_time=16:05:27 dissem=16:05:27
-13 10:37:48 seen 543620 Insolation Energy Ltd cat=Result early=False bse_time=16:05:31 dissem=16:05:31
-13 10:37:48 seen 537392 Keto Motors Ltd cat=Board Meeting early=True bse_time=16:06:32 dissem=16:06:32
-13 10:37:48 seen 544482 Star Imaging And Path Lab Lt cat=Result early=False bse_time=16:07:02 dissem=16:07:02
-13 10:37:48 seen 532067 3B BlackBio Dx Ltd cat=Result early=False bse_time=16:07:03 dissem=16:07:03
-13 10:38:18 ready 500125|Sep-26|standalone kind=photo waited_min=55.0 tries=1 pdf_log=pdf current col EID Parry India Ltd standalone ok=True/3: revenue=86001, other_income=5146, total_income=91147, total_expenses=93921, finance_costs=1572, deprec
-13 10:38:30 wait 500128 Electrosteel Castings Ltd: numbers not yet on BSE
-13 10:38:52 ready 520073|Sep-26|consolidated kind=photo waited_min=17.9 tries=1 pdf_log=rule reader Manipal Health Enterprises Ltd: rule: stan: does not reconcile [crore] total_income=[1249.76, 1089.17, 928.28] total_expenses=[1016.25, 923.98, 764.
-13 10:39:03 wait 543620 Insolation Energy Ltd: numbers not yet on BSE
-13 10:39:10 ready 526125|Sep-26|na kind=photo waited_min=55.0 tries=1 pdf_log=rule reader Electrosteel Castings Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Keto Motors Ltd standalone ok=True/3: re
-13 10:39:53 ready 543419|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf incomplete Keto Motors Ltd standalone: missing ['ebitda', 'revenue'] - not posting from PDF | pdf current col IFGL Refractories Ltd consolidated ok=True/3: 
-13 10:42:59 ready 532067|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader 3B BlackBio Dx Ltd: rule: no results table page | ocr: rule: consolidated table incomplete missing ['pat'] n=6 | pdf current col 3B BlackBio Dx Ltd 
-13 10:44:00 ready 520059|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col 3B BlackBio Dx Ltd standalone ok=True/3: revenue=3650.65, other_income=246.2, total_income=3896.85, total_expenses=1473.35, finance_costs=0.04, 
-13 10:45:14 ready 544532|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 10:45:24 ready 544485|Sep-26|standalone kind=photo waited_min=17.9 tries=1 pdf_log=pdf current col Regaal Resources Ltd standalone ok=False/3: revenue=3165.62, other_income=3.25, total_income=3168.87, total_expenses=2851.63, finance_costs=144.
-13 10:46:08 wait 544296 Nisus Finance Services Co Lt: numbers not yet on BSE
-13 10:47:09 ready 531888|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 10:48:47 wait 544482 Star Imaging And Path Lab Lt: numbers not yet on BSE
-13 10:48:52 ready 512597|Sep-26|consolidated kind=photo waited_min=0.0 tries=0 pdf_log=
-13 10:49:02 wait 511260 Iconik Sports And Events Ltd: numbers not yet on BSE
-13 10:49:19 ready 532806|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule-read numbers rejected by later checks, AI reader will retry: Iconik Sports And Events Ltd | rule reader AI Champdany Industries Ltd: rule: stan: missing ['
-13 10:51:34 ready 526117|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 10:52:20 ready 539218|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Saumya Consultants Ltd standalone ok=False/3: re
-13 10:53:00 wait 544463 Repono Ltd: numbers not yet on BSE
-13 10:53:37 ready 531417|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Mega Corporation Ltd standalone ok=True/2: revenue=234.94, other_income=17.59, total_income=252.53, total_expenses=247.09, finance_costs=132.06,
-13 10:57:32 wait 539124 Sarvottam Finvest Ltd: numbers not yet on BSE
-13 10:57:35 ready 531178|Sep-26|na kind=photo waited_min=55.0 tries=8 pdf_log=
-13 10:59:38 ready 539506|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Adcon Capital Services Ltd standalone ok=True/2: revenue=95.03, other_income=None, total_income=95.03, total_expenses=58.06, finance_costs=None,
-13 11:02:24 wait 531846 Trinity League India Ltd: numbers not yet on BSE
-13 11:02:43 ready 526574|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | pdf current col Enterprise International Ltd standalone ok=False
-13 11:06:21 ready 531866|Sep-26|na kind=photo waited_min=55.0 tries=4 pdf_log=nim reader Aagam Capital Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not found 
-13 11:08:42 pdf nim reader Uniworth International Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (possible invention): rejected e.g. [( (g
-13 11:08:42 pdf pdf read failed Uniworth International Ltd: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not found in the filing text (pos
-13 11:09:03 seen 539218 Saumya Consultants Ltd cat=Result early=False bse_time=16:07:45 dissem=16:07:45
-13 11:09:03 seen 544847 Manipal Health Enterprises L cat=Result early=False bse_time=16:07:56 dissem=16:07:56
-13 11:09:03 seen 531146 Medicamen Biotech Ltd-$ cat=Result early=False bse_time=16:07:58 dissem=16:07:58
-13 11:09:03 seen 517467 Marsons Ltd cat=Result early=False bse_time=16:08:04 dissem=16:08:04
-13 11:09:03 seen 530547 Ken Financial Services Ltd cat=Board Meeting early=True bse_time=16:09:40 dissem=16:09:40
-13 11:09:03 seen 531417 Mega Corporation Ltd cat=Result early=False bse_time=16:10:02 dissem=16:10:02
-13 11:09:03 seen 512344 Aravali Securities & Finance cat=Result early=False bse_time=16:10:06 dissem=16:10:06
-13 11:09:03 seen 545000 Zetwerk Manufacturing Busine cat=Board Meeting early=True bse_time=16:10:36 dissem=16:10:36
-13 11:09:03 seen 590057 Equippp Social Impact Techno cat=Board Meeting early=True bse_time=16:10:37 dissem=16:10:37
-13 11:09:03 seen 531834 Natura Hue Chem Ltd cat=Result early=False bse_time=16:10:39 dissem=16:10:39
-13 11:09:03 seen 537392 Keto Motors Ltd cat=Result early=False bse_time=16:10:57 dissem=16:10:57
-13 11:09:03 seen 543460 Quality RO Industries Ltd cat=Board Meeting early=True bse_time=16:10:59 dissem=16:10:59
-13 11:09:03 seen 500388 Shree Krishna Paper Mills &  cat=Board Meeting early=True bse_time=16:11:08 dissem=16:11:08
-13 11:09:03 seen 514197 S & T Corporation Ltd cat=Board Meeting early=True bse_time=16:11:22 dissem=16:11:22
-13 11:09:03 seen 500069 Quest Capital Markets Ltd cat=Board Meeting early=True bse_time=16:11:47 dissem=16:11:47
-13 11:09:03 seen 532804 Technocraft Industries (Indi cat=Result early=False bse_time=16:11:50 dissem=16:11:50
-13 11:09:03 seen 532932 Manaksia Ltd cat=Board Meeting early=True bse_time=16:12:40 dissem=16:12:40
-13 11:09:03 seen 544532 Solarworld Energy Solutions  cat=Result early=False bse_time=16:12:53 dissem=16:12:53
-13 11:09:03 seen 533608 RDB Rasayans Ltd cat=Board Meeting early=True bse_time=16:13:05 dissem=16:13:05
-13 11:09:03 seen 520059 Munjal Auto Industries Ltd cat=Result early=False bse_time=16:13:29 dissem=16:13:29
-13 11:09:03 seen 533012 Landmark Property Developmen cat=Board Meeting early=True bse_time=16:14:33 dissem=16:14:33
-13 11:09:03 seen 532804 Technocraft Industries (Indi cat=Board Meeting early=True bse_time=16:14:57 dissem=16:14:57
-13 11:09:03 seen 520127 Balurghat Technologies Ltd cat=Board Meeting early=True bse_time=16:14:57 dissem=16:14:57
-13 11:09:03 seen 509953 Trade Wings Ltd cat=Board Meeting early=True bse_time=16:15:26 dissem=16:15:26
-13 11:09:03 seen 530547 Ken Financial Services Ltd cat=Result early=False bse_time=16:15:40 dissem=16:15:40
-13 11:09:03 seen 504365 Ridhi Synthetics Ltd cat=Result early=False bse_time=16:15:41 dissem=16:15:41
-13 11:09:03 seen 507813 National Oxygen Ltd cat=Board Meeting early=True bse_time=16:16:51 dissem=16:16:51
-13 11:09:03 seen 524488 SVC INDUSTRIES Ltd cat=Result early=False bse_time=16:18:19 dissem=16:18:19
-13 11:09:03 seen 511187 Millennium Online Solutions  cat=Board Meeting early=True bse_time=16:18:34 dissem=16:18:34
-13 11:09:03 seen 539189 Adhbhut Infrastructure Ltd cat=Result early=False bse_time=16:18:53 dissem=16:18:53
-13 11:09:03 seen 531319 Maruti Global Industries Ltd cat=Board Meeting early=True bse_time=16:19:03 dissem=16:19:03
-13 11:09:03 seen 500069 Quest Capital Markets Ltd cat=Result early=False bse_time=16:19:06 dissem=16:19:06
-13 11:09:03 seen 512265 Avon Mercantile Ltd cat=Result early=False bse_time=16:19:22 dissem=16:19:22
-13 11:09:03 seen 532341 IZMO Ltd-$ cat=Result early=False bse_time=16:19:32 dissem=16:19:32
-13 11:09:03 seen 531821 Munoth Financial Services Lt cat=Result early=False bse_time=16:20:00 dissem=16:20:00
-13 11:09:03 seen 530169 Mohit Paper Mills Ltd cat=Board Meeting early=True bse_time=16:20:19 dissem=16:20:19
-13 11:09:03 seen 533608 RDB Rasayans Ltd cat=Result early=False bse_time=16:20:38 dissem=16:20:38
-13 11:09:03 seen 500570 Tata Motors Passenger Vehicl cat=Board Meeting early=True bse_time=16:20:52 dissem=16:20:52
-13 11:09:03 seen 544001 Sunita Tools Ltd cat=Board Meeting early=True bse_time=16:21:11 dissem=16:21:11
-13 11:09:03 seen 544236 Resourceful Automobile Ltd cat=Board Meeting early=True bse_time=16:21:14 dissem=16:21:14
-13 11:09:03 seen 507813 National Oxygen Ltd cat=Result early=False bse_time=16:21:31 dissem=16:21:31
-13 11:09:03 seen 500570 Tata Motors Passenger Vehicl cat=Board Meeting early=True bse_time=16:21:54 dissem=16:21:54
-13 11:09:03 seen 533012 Landmark Property Developmen cat=Result early=False bse_time=16:21:54 dissem=16:21:54
-13 11:09:03 seen 520127 Balurghat Technologies Ltd cat=Result early=False bse_time=16:22:03 dissem=16:22:03
-13 11:09:03 seen 543919 M. K. Proteins Ltd cat=Board Meeting early=True bse_time=16:22:27 dissem=16:22:27
-13 11:09:03 seen 500388 Shree Krishna Paper Mills &  cat=Result early=False bse_time=16:22:31 dissem=16:22:31
-13 11:09:03 seen 544236 Resourceful Automobile Ltd cat=Board Meeting early=True bse_time=16:22:41 dissem=16:22:41
-13 11:09:03 seen 511187 Millennium Online Solutions  cat=Result early=False bse_time=16:22:46 dissem=16:22:46
-13 11:09:03 seen 545000 Zetwerk Manufacturing Busine cat=Result early=False bse_time=16:22:50 dissem=16:22:50
-13 11:09:03 seen 538365 Incredible Industries Ltd cat=Board Meeting early=True bse_time=16:22:51 dissem=16:22:51
-13 11:09:03 seen 500164 Godrej Industries Ltd cat=Board Meeting early=True bse_time=16:22:54 dissem=16:22:54
-13 11:09:03 seen 531319 Maruti Global Industries Ltd cat=Result early=False bse_time=16:24:01 dissem=16:24:01
-13 11:09:03 seen 590057 Equippp Social Impact Techno cat=Result early=False bse_time=16:24:44 dissem=16:24:44
-13 11:09:03 seen 509953 Trade Wings Ltd cat=Result early=False bse_time=16:25:08 dissem=16:25:08
-13 11:09:03 seen 539120 Grameva Ltd cat=Result early=False bse_time=16:25:13 dissem=16:25:13
-13 11:09:03 seen 531465 Nouveau Global Ventures Ltd cat=Result early=False bse_time=16:25:13 dissem=16:25:13
-13 11:09:03 seen 532341 IZMO Ltd-$ cat=Board Meeting early=True bse_time=16:25:22 dissem=16:25:22
-13 11:09:03 seen 543979 Kahan Packaging Ltd cat=Board Meeting early=True bse_time=16:25:46 dissem=16:25:46
-13 11:09:03 seen 507530 Thakkers Group Ltd cat=Result early=False bse_time=16:25:48 dissem=16:25:48
-13 11:09:03 seen 512553 Zenith Exports Ltd cat=Board Meeting early=True bse_time=16:25:56 dissem=16:25:56
-13 11:09:03 seen 532932 Manaksia Ltd cat=Result early=False bse_time=16:26:10 dissem=16:26:10
-13 11:09:03 seen 526761 Howard Hotels Ltd cat=Board Meeting early=True bse_time=16:26:21 dissem=16:26:21
-13 11:09:03 seen 507530 Thakkers Group Ltd cat=Board Meeting early=True bse_time=16:28:44 dissem=16:28:44
-13 11:09:03 seen 514197 S & T Corporation Ltd cat=Result early=False bse_time=16:29:18 dissem=16:29:18
-13 11:09:03 seen 509051 Indian Infotech & Software L cat=Board Meeting early=True bse_time=16:29:21 dissem=16:29:21
-13 11:09:03 seen 543919 M. K. Proteins Ltd cat=Result early=False bse_time=16:29:58 dissem=16:29:58
-13 11:09:03 seen 500570 Tata Motors Passenger Vehicl cat=Result early=False bse_time=16:30:23 dissem=16:30:23
-13 11:09:03 seen 532916 Barak Valley Cements Ltd cat=Board Meeting early=True bse_time=16:30:29 dissem=16:30:29
-13 11:09:03 seen 500164 Godrej Industries Ltd cat=Result early=False bse_time=16:30:58 dissem=16:30:58
-13 11:09:03 seen 505343 Monotype India Ltd  cat=Board Meeting early=True bse_time=16:31:12 dissem=16:31:12
-13 11:09:03 seen 543979 Kahan Packaging Ltd cat=Result early=False bse_time=16:31:25 dissem=16:31:25
-13 11:09:03 seen 544001 Sunita Tools Ltd cat=Result early=False bse_time=16:31:37 dissem=16:31:37
-13 11:09:03 seen 537785 Race Eco Chain Ltd cat=Board Meeting early=True bse_time=16:31:37 dissem=16:31:37
-13 11:09:03 seen 512553 Zenith Exports Ltd cat=Result early=False bse_time=16:32:09 dissem=16:32:09
-13 11:09:03 seen 531465 Nouveau Global Ventures Ltd cat=Board Meeting early=True bse_time=16:32:45 dissem=16:32:45
-13 11:09:03 seen 531203 Tradewell Holdings Ltd cat=Board Meeting early=True bse_time=16:33:32 dissem=16:33:32
-13 11:09:03 seen 540416 Octaware Technologies Ltd cat=Board Meeting early=True bse_time=16:33:35 dissem=16:33:35
-13 11:09:03 seen 526945 Tyroon Tea Company Ltd cat=Result early=False bse_time=16:33:54 dissem=16:33:54
-13 11:09:03 seen 539679 Kapil Raj Finance Ltd cat=Board Meeting early=True bse_time=16:34:22 dissem=16:34:22
-13 11:09:03 seen 532916 Barak Valley Cements Ltd cat=Result early=False bse_time=16:35:08 dissem=16:35:08
-13 11:09:03 seen 543985 Zaggle Prepaid Ocean Service cat=Board Meeting early=True bse_time=16:35:13 dissem=16:35:13
-13 11:09:03 seen 501343 Motor & General Finance Ltd cat=Result early=False bse_time=16:36:04 dissem=16:36:04
-13 11:09:03 seen 544236 Resourceful Automobile Ltd cat=Result early=False bse_time=16:36:09 dissem=16:36:09
-13 11:09:03 seen 531304 Nutech Global Ltd cat=Board Meeting early=True bse_time=16:37:08 dissem=16:37:08
-13 11:09:03 seen 507442 Dharani Sugars & Chemicals L cat=Result early=False bse_time=16:37:10 dissem=16:37:10
-13 11:09:03 seen 538731 Hanman Fit Ltd cat=Board Meeting early=True bse_time=16:38:01 dissem=16:38:01
-13 11:09:03 seen 526761 Howard Hotels Ltd cat=Result early=False bse_time=16:38:14 dissem=16:38:14
-13 11:09:03 seen 531931 Sai Capital Ltd cat=Board Meeting early=True bse_time=16:38:18 dissem=16:38:18
-13 11:09:03 seen 531465 Nouveau Global Ventures Ltd cat=Result early=False bse_time=16:38:21 dissem=16:38:21
-13 11:09:34 wait 500570 Tata Motors Passenger Vehicl: numbers not yet on BSE
-13 11:09:36 wait 544847 Manipal Health Enterprises L: numbers not yet on BSE
-13 11:09:38 wait 500164 Godrej Industries Ltd: numbers not yet on BSE
-13 11:09:40 wait 545000 Zetwerk Manufacturing Busine: numbers not yet on BSE
-13 11:09:50 ready 532804|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Technocraft Industries (India) Ltd: rule: consolidated table incomplete missing ['pat'] n=3
-13 11:10:06 ready 500128|Sep-26|consolidated kind=photo waited_min=31.2 tries=1 pdf_log=pdf current col Electrosteel Castings Ltd consolidated ok=True/3: revenue=151981.91, other_income=3842.23, total_income=155824.14, total_expenses=149345.89, fin
-13 11:10:23 wait 517467 Marsons Ltd: numbers not yet on BSE
-13 11:11:38 wait 537392 Keto Motors Ltd: incomplete metrics ['ebitda', 'eps', 'pat', 'revenue']; retrying the PDF read
-13 11:11:41 ready 544150|Sep-26|na kind=photo waited_min=66.8 tries=99 pdf_log=rule reader Keto Motors Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Keto Motors Ltd standalone ok=True/3: revenue=666.
-13 11:22:25 wait 544001 Sunita Tools Ltd: numbers not yet on BSE
-13 11:23:26 ready 532932|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 11:25:57 ready 533608|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader RDB Rasayans Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4 | pdf current col RDB Rasayans Ltd standalone ok=True/3: revenu
-13 11:26:47 ready 500069|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Quest Capital Markets Ltd: rule: stan: does not reconcile [lakh] total_income=[2492.95, 115.07, 116.35] total_expenses=[20.4, 15.06, 14.32] pbt=[Non
-13 11:27:48 wait 543919 M. K. Proteins Ltd: confirming that no consolidated statement exists
-13 11:29:27 ready 509953|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Trade Wings Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Trade Wings Ltd consolidated ok=True/3: revenue=71
-13 11:30:18 ready 544708|Sep-26|na kind=photo waited_min=66.8 tries=99 pdf_log=pdf current col Trade Wings Ltd consolidated ok=True/3: revenue=7130.54, other_income=247.32, total_income=7377.86, total_expenses=7691.44, finance_costs=83.31,
-13 11:30:29 ready 500388|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf incomplete Iconik Sports And Events Ltd standalone: missing ['revenue'] - not posting from PDF | rule reader Shree Krishna Paper Mills & Industries Ltd: ok 
-13 11:30:43 wait 512553 Zenith Exports Ltd: confirming that no consolidated statement exists
-13 11:30:55 ready 509051|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Indian Infotech & Software Ltd standalone ok=True/2: revenue=225.0, other_income=None, total_income=924.36, total_expenses=736.67, finance_costs
-13 11:31:09 wait 533012 Landmark Property Developmen: confirming that no consolidated statement exists
-13 11:32:19 ready 532916|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf history mismatch Barak Valley Cements Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 1208.711 pat 26.819000000000003 | bse
-13 11:34:57 ready 531931|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Sai Capital Ltd consolidated ok=True/3: revenue=16.61, other_income=643.54, total_income=660.15, total_expenses=143.56, finance_costs=27.36, dep
-13 11:36:23 ready 539120|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Grameva Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Grameva Ltd standalone ok=True/3: revenue=4489.17, oth
-13 11:37:33 ready 530169|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Mohit Paper Mills Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Mohit Paper Mills Ltd standalone ok=True/3: 
-13 11:38:09 ready 531821|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Mohit Paper Mills Ltd standalone ok=True/3: revenue=5009.45, other_income=4.48, total_income=5013.93, total_expenses=4832.0, finance_costs=148.8
-13 11:38:35 ready 507813|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Munoth Financial Services Ltd standalone ok=True/3: revenue=8.59, other_income=10.09, total_income=18.68, total_expenses=18.22, finance_costs=0.
-13 11:40:20 ready 526945|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Tyroon Tea Company Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Tyroon Tea Company Ltd standalone ok=True/2
-13 11:41:02 ready 520127|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Tyroon Tea Company Ltd standalone ok=True/2: revenue=1737.03, other_income=41.11, total_income=1778.14, total_expenses=1211.17, finance_costs=5.
-13 11:43:57 wait 531319 Maruti Global Industries Ltd: numbers not yet on BSE
-13 11:45:29 wait 526761 Howard Hotels Ltd: confirming that no consolidated statement exists
-13 11:45:50 wait 531834 Natura Hue Chem Ltd: numbers not yet on BSE
-13 11:46:33 ready 531406|Sep-26|na kind=photo waited_min=66.8 tries=3 pdf_log=pdf read deferred Natura Hue Chem Ltd: per-pass AI call cap | rule reader ANS Industries Ltd: rule: no results table page | ocr: rule: no results table page | p
-13 11:47:43 wait 514197 S & T Corporation Ltd: numbers not yet on BSE
-13 11:49:06 wait 539189 Adhbhut Infrastructure Ltd: numbers not yet on BSE
-13 11:49:56 wait 544236 Resourceful Automobile Ltd: numbers not yet on BSE
-13 11:51:17 wait 543979 Kahan Packaging Ltd: numbers not yet on BSE
-13 11:51:21 ready 532072|Sep-26|na kind=photo waited_min=66.8 tries=8 pdf_log=pdf read deferred Kahan Packaging Ltd: per-pass AI call cap | rule reader Kahan Packaging Ltd: rule: header has no quarter columns | ocr: rule: header has no qu
-13 11:55:48 wait 511187 Millennium Online Solutions : incomplete metrics ['ebitda', 'eps']; retrying the PDF read
-13 11:57:34 wait 531465 Nouveau Global Ventures Ltd: numbers not yet on BSE
-13 11:59:00 wait 531465 Nouveau Global Ventures Ltd: numbers not yet on BSE
-13 11:59:02 wait 512344 Aravali Securities & Finance: numbers not yet on BSE
-13 11:59:20 wait 507530 Thakkers Group Ltd: confirming that no consolidated statement exists
-13 11:59:37 ready 530547|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf read deferred Thakkers Group Ltd: per-pass AI call cap | rule reader Ken Financial Services Ltd: ok | pdf current col Ken Financial Services Ltd standalone 
-13 12:00:08 wait 504365 Ridhi Synthetics Ltd: confirming that no consolidated statement exists
-13 12:00:46 wait 512265 Avon Mercantile Ltd: numbers not yet on BSE
-13 12:02:05 wait 507442 Dharani Sugars & Chemicals L: numbers not yet on BSE
-13 12:02:53 ready 514282|Sep-26|na kind=photo waited_min=66.8 tries=3 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | rule reader Uniworth International Ltd: rule: no results table p
-13 12:03:41 seen 523260 PEARL Polymers Ltd cat=Board Meeting early=True bse_time=17:26:39 dissem=17:26:39
-13 12:03:41 seen 540786 Sharika Enterprises Ltd cat=Result early=False bse_time=17:27:04 dissem=17:27:04
-13 12:03:41 seen 514177 Impera Worldwide Ltd cat=Result early=False bse_time=17:27:32 dissem=17:27:32
-13 12:03:41 seen 540402 Manas Properties Ltd cat=Result early=False bse_time=17:27:40 dissem=17:27:40
-13 12:03:41 seen 500404 Sunflag Iron & Steel Company cat=Result early=False bse_time=17:27:45 dissem=17:27:45
-13 12:03:41 seen 532102 SBEC Sugar Ltd cat=Result early=False bse_time=17:27:57 dissem=17:27:57
-13 12:03:41 seen 539056 Imagicaaworld Entertainment  cat=Result early=False bse_time=17:27:58 dissem=17:27:58
-13 12:03:41 seen 531686 Advik Laboratories Ltd cat=Result early=False bse_time=17:28:04 dissem=17:28:04
-13 12:03:41 seen 544643 Prodocs Solutions Ltd cat=Board Meeting early=True bse_time=17:28:22 dissem=17:28:22
-13 12:03:41 seen 538668 Meghna Infracon Infrastructu cat=Board Meeting early=True bse_time=17:28:40 dissem=17:28:40
-13 12:03:41 seen 521188 United Textiles Ltd cat=Board Meeting early=True bse_time=17:28:41 dissem=17:28:41
-13 12:03:41 seen 511559 Team India Guaranty Ltd cat=Board Meeting early=True bse_time=17:28:53 dissem=17:28:53
-13 12:03:41 seen 514140 Suryavanshi Spinning Mills L cat=Result early=False bse_time=17:29:09 dissem=17:29:09
-13 12:03:41 seen 512531 State Trading Corporation of cat=Result early=False bse_time=17:29:48 dissem=17:29:48
-13 12:03:41 seen 500068 Disa India Ltd cat=Board Meeting early=True bse_time=17:30:20 dissem=17:30:20
-13 12:03:41 seen 530909 ERP Soft Systems Ltd cat=Board Meeting early=True bse_time=17:30:22 dissem=17:30:22
-13 12:03:41 seen 531635 Silver Oak India Ltd cat=Board Meeting early=True bse_time=17:30:48 dissem=17:30:48
-13 12:03:41 seen 507912 Gyftr Ltd cat=Result early=False bse_time=17:30:52 dissem=17:30:52
-13 12:03:41 seen 539255 Star Delta Transformers Ltd cat=Board Meeting early=True bse_time=17:31:06 dissem=17:31:06
-13 12:03:41 seen 500201 India Glycols Ltd cat=Board Meeting early=True bse_time=17:31:14 dissem=17:31:14
-13 12:03:41 seen 526179 Ludlow Jute & Specialities L cat=Board Meeting early=True bse_time=17:31:37 dissem=17:31:37
-13 12:03:41 seen 543977 Rishabh Instruments Ltd cat=Result early=False bse_time=17:32:09 dissem=17:32:09
-13 12:03:41 seen 512245 Nivi Trading Ltd cat=Result early=False bse_time=17:32:42 dissem=17:32:42
-13 12:03:41 seen 539494 Smart Finsec Ltd cat=Result early=False bse_time=17:32:45 dissem=17:32:45
-13 12:03:41 seen 512529 Viyash Scientific Ltd cat=Board Meeting early=True bse_time=17:32:50 dissem=17:32:50
-13 12:03:41 seen 538668 Meghna Infracon Infrastructu cat=Result early=False bse_time=17:33:20 dissem=17:33:20
-13 12:03:41 seen 533292 A2Z Infra Engineering Ltd cat=Board Meeting early=True bse_time=17:33:24 dissem=17:33:24
-13 12:04:08 ready 500570|Sep-26|consolidated kind=photo waited_min=54.6 tries=1 pdf_log=
-13 12:04:44 ready 544847|Sep-26|na kind=photo waited_min=54.6 tries=1 pdf_log=rule reader Disa India Ltd: rule: stan: does not reconcile [million] total_income=[952.1, 905.0, 1068.6] pbt=[124.9, 142.9, 164.3] tax=[32.6, 36.1, 41.5] pat=[9
-13 12:04:59 ready 545000|Sep-26|na kind=photo waited_min=54.6 tries=1 pdf_log=pdf current col Zetwerk Manufacturing Businesses Ltd consolidated ok=False/3: revenue=45993.59, other_income=533.12, total_income=46526.71, total_expenses=46894
-13 12:05:34 ready 500404|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf history mismatch Viyash Scientific Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 9463.6 pat 792.9 | bse rev 9463.6 pat 79
-13 12:06:33 ready 539056|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 12:06:42 ready 543977|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Rishabh Instruments Ltd consolidated ok=True/3: revenue=2127.84, other_income=37.87, total_income=2165.71, total_expenses=1921.32, finance_costs
-13 12:07:10 ready 500068|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf history mismatch India Glycols Ltd consolidated cols=['30.09.2026', '30.06.2026', '30.09.2025'] :: q-1: pdf rev 3570.7999999999997 pat 325.90000000000003 | 
-13 12:07:48 wait 507912 Gyftr Ltd: numbers not yet on BSE
-13 12:11:40 ready 537392|Sep-26|standalone kind=photo waited_min=54.6 tries=2 pdf_log=nim reader Keto Motors Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 6 numbers not found in
-13 12:13:26 ready 538668|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Meghna Infracon Infrastructure Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Meghna Infracon Infrastructure 
-13 12:15:40 ready 544001|Sep-26|na kind=photo waited_min=54.6 tries=99 pdf_log=rule reader Meghna Infracon Infrastructure Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Meghna Infracon Infrastructure 
-13 12:16:51 wait 512531 State Trading Corporation of: numbers not yet on BSE
-13 12:16:56 ready 544296|Sep-26|na kind=photo waited_min=85.9 tries=99 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-3.5-flash, quota) | results-key: HT | rule reader State Trading Corporation of India Ltd: rule: no res
-13 12:18:22 ready 526179|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Ludlow Jute & Specialities Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Ludlow Jute & Specialities Ltd cons
-13 12:20:48 wait 532102 SBEC Sugar Ltd: numbers not yet on BSE
-13 12:20:50 ready 509715|Sep-26|standalone kind=photo waited_min=159.3 tries=1 pdf_log=nim reader SBEC Sugar Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 27 numbers not found in
-13 12:23:08 wait 540402 Manas Properties Ltd: numbers not yet on BSE
-13 12:24:27 ready 544482|Sep-26|na kind=photo waited_min=85.9 tries=99 pdf_log=
-13 12:24:32 ready 502448|Sep-26|standalone kind=photo waited_min=121.4 tries=2 pdf_log=
-13 12:24:45 ready 511260|Sep-26|standalone kind=photo waited_min=85.9 tries=2 pdf_log=pdf current col Iconik Sports And Events Ltd standalone ok=True/2: revenue=20.69, other_income=6.09, total_income=26.78, total_expenses=645.7, finance_costs=Non
-13 12:27:42 ready 540786|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30 September 2026', '31 March 2026', '30 September 2025']): not read as quarters, queued for the half-yearly route P
-13 12:27:51 ready 544463|Sep-26|na kind=photo waited_min=85.9 tries=99 pdf_log=pdf is a HALF-YEARLY filing (column dates ['30 September 2026', '31 March 2026', '30 September 2025']): not read as quarters, queued for the half-yearly route P
-13 12:28:25 wait 539494 Smart Finsec Ltd: numbers not yet on BSE
-13 12:28:49 wait 514177 Impera Worldwide Ltd: numbers not yet on BSE
-13 12:29:22 ready 531319|Sep-26|standalone kind=photo waited_min=54.6 tries=1 pdf_log=rule reader Maruti Global Industries Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Maruti Global Industries Ltd standalo
-13 12:30:25 ready 530909|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 12:31:27 ready 526761|Sep-26|standalone kind=photo waited_min=54.6 tries=1 pdf_log=rule reader Howard Hotels Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Howard Hotels Ltd standalone ok=True/2: revenue=
-13 12:33:43 ready 514197|Sep-26|consolidated kind=photo waited_min=54.6 tries=1 pdf_log=pdf current col S & T Corporation Ltd consolidated ok=True/3: revenue=4.89, other_income=0.0, total_income=4.89, total_expenses=8.26, finance_costs=0.0, depreci
-13 12:34:10 ready 539189|Sep-26|standalone kind=photo waited_min=54.6 tries=1 pdf_log=rule reader Adhbhut Infrastructure Ltd: rule: stan: does not reconcile [lakh] total_expenses=[56.58, 53.97, 42.54] pbt=[None, None, None] tax=[2.01, 1.5, 1.61] 
-13 12:34:34 ready 514264|Sep-26|standalone kind=photo waited_min=159.3 tries=8 pdf_log=
-13 12:35:45 ready 539124|Sep-26|na kind=photo waited_min=85.9 tries=2 pdf_log=rule reader Sarvottam Finvest Ltd: rule: no results table page | ocr: rule: no results table page
-13 12:36:57 ready 514140|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | pdf current col Suryavanshi Spinning Mills Ltd-$ standalone ok=F
-13 12:41:07 ready 531846|Sep-26|na kind=photo waited_min=85.9 tries=2 pdf_log=pdf current col Trinity League India Ltd consolidated ok=True/2: revenue=0.28, other_income=4.56, total_income=4.84, total_expenses=11.57, finance_costs=None, d
-13 12:43:19 ready 507530|Sep-26|standalone kind=photo waited_min=54.6 tries=1 pdf_log=pdf current col Thakkers Group Ltd standalone ok=True/3: revenue=497.97, other_income=43.81, total_income=541.78, total_expenses=751.7, finance_costs=210.63, de
-13 12:44:01 wait 531686 Advik Laboratories Ltd: numbers not yet on BSE
-13 12:44:23 ready 504365|Sep-26|standalone kind=photo waited_min=54.6 tries=1 pdf_log=rule reader Advik Laboratories Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Ridhi Synthetics Ltd: rule: no results table pa
-13 12:44:41 wait 512245 Nivi Trading Ltd: numbers not yet on BSE
-13 12:46:40 pdf rule reader Nivi Trading Ltd: rule: stan: missing ['pat'] n=6
-13 12:46:40 pdf pdf current col Nivi Trading Ltd standalone ok=True/2: revenue=2.39, other_income=0.4, total_income=2.79, total_expenses=3.25, finance_costs=None, depreciation=None, pbt=-0.46, tax=None, pat=-0.46, eps=-0.04
-13 12:46:40 pdf pdf incomplete Nivi Trading Ltd standalone: missing ['revenue'] - not posting from PDF
-13 12:46:40 pdf rule reader Avon Mercantile Ltd: rule: no results table page | ocr: rule: no results table page
-13 12:46:40 pdf pdf read deferred Avon Mercantile Ltd: per-pass AI call cap
-13 12:46:40 pdf rule reader Dharani Sugars & Chemicals Ltd: rule: no results table page | ocr: rule: no results table page
-13 12:46:40 pdf pdf read deferred Dharani Sugars & Chemicals Ltd: per-pass AI call cap
-13 12:46:54 seen 524642 Sikozy Realtors Ltd cat=Result early=False bse_time=18:08:56 dissem=18:08:56
-13 12:46:54 seen 540648 Palash Securities Ltd cat=Result early=False bse_time=18:09:04 dissem=18:09:04
-13 12:46:54 seen 543765 Earthstahl & Alloys Ltd cat=Board Meeting early=True bse_time=18:09:40 dissem=18:09:40
-13 12:46:54 seen 512277 Autoriders International Ltd cat=Board Meeting early=True bse_time=18:10:02 dissem=18:10:02
-13 12:46:54 seen 526075 Rekvina Laboratories Ltd cat=Result early=False bse_time=18:10:07 dissem=18:10:07
-13 12:46:54 seen 531228 Rander Corporation Ltd cat=Result early=False bse_time=18:10:29 dissem=18:10:29
-13 12:46:54 seen 542934 Chandra Bhagat Pharma Ltd cat=Board Meeting early=True bse_time=18:10:30 dissem=18:10:30
-13 12:46:54 seen 531158 Catvision Ltd cat=Result early=False bse_time=18:10:32 dissem=18:10:32
-13 12:46:54 seen 502820 DCM Ltd cat=Board Meeting early=True bse_time=18:10:39 dissem=18:10:39
-13 12:46:54 seen 538891 Magellanic Cloud Ltd cat=Result early=False bse_time=18:10:43 dissem=18:10:43
-13 12:46:54 seen 506945 Indo Gulf Industries Ltd cat=Result early=False bse_time=18:10:45 dissem=18:10:45
-13 12:46:54 seen 540686 Smruthi Organics Ltd cat=Result early=False bse_time=18:10:57 dissem=18:10:57
-13 12:46:54 seen 526209 K S Oils Ltd-$ cat=Result early=False bse_time=18:11:02 dissem=18:11:02
-13 12:46:54 seen 543578 Olatech Solutions Ltd cat=Board Meeting early=True bse_time=18:11:05 dissem=18:11:05
-13 12:46:54 seen 531426 Tamil Nadu Newsprint & Paper cat=Result early=False bse_time=18:11:06 dissem=18:11:06
-13 12:46:54 seen 532613 VIP Clothing Ltd cat=Result early=False bse_time=18:11:17 dissem=18:11:17
-13 12:46:54 seen 516106 Shree Karthik Papers Ltd cat=Result early=False bse_time=18:11:32 dissem=18:11:32
-13 12:46:54 seen 544023 Kalyani Cast-Tech Ltd cat=Board Meeting early=True bse_time=18:13:33 dissem=18:13:33
-13 12:46:54 seen 540686 Smruthi Organics Ltd cat=Board Meeting early=True bse_time=18:13:37 dissem=18:13:37
-13 12:46:54 seen 511048 Kusam Electrical Industries  cat=Result early=False bse_time=18:13:51 dissem=18:13:51
-13 12:46:54 seen 530677 Supreme Holdings & Hospitali cat=Board Meeting early=True bse_time=18:13:53 dissem=18:13:53
-13 12:46:54 seen 523638 IP Rings Ltd-$ cat=Result early=False bse_time=18:14:05 dissem=18:14:05
-13 12:46:54 seen 544969 Shiv Aum Steels Ltd cat=Board Meeting early=True bse_time=18:14:06 dissem=18:14:06
-13 12:46:54 seen 526095 Ravileela Granites Ltd cat=Result early=False bse_time=18:14:16 dissem=18:14:16
-13 12:46:54 seen 532933 Porwal Auto Components Ltd cat=Board Meeting early=True bse_time=18:14:21 dissem=18:14:21
-13 12:46:54 seen 526642 Mirza International Ltd cat=Result early=False bse_time=18:14:33 dissem=18:14:33
-13 12:46:54 seen 531310 Available Finance Ltd cat=Board Meeting early=True bse_time=18:14:46 dissem=18:14:46
-13 12:46:54 seen 517548 Starlite Components Ltd cat=Board Meeting early=True bse_time=18:15:07 dissem=18:15:07
-13 12:46:54 seen 532734 Godawari Power and Ispat Ltd cat=Board Meeting early=True bse_time=18:15:21 dissem=18:15:21
-13 12:46:54 seen 532684 Everest Kanto Cylinder Ltd cat=Result early=False bse_time=18:15:46 dissem=18:15:46
-13 12:47:31 ready 543620|Sep-26|na kind=photo waited_min=129.1 tries=8 pdf_log=rule reader Gyftr Ltd: rule: stan: missing ['pat'] n=7 | rule reader Godawari Power and Ispat Ltd: rule: consolidated table incomplete missing ['pat'] n=6
-13 12:47:45 wait 538891 Magellanic Cloud Ltd: numbers not yet on BSE
-13 12:47:50 wait 532684 Everest Kanto Cylinder Ltd: numbers not yet on BSE
-13 12:47:56 wait 531426 Tamil Nadu Newsprint & Paper: numbers not yet on BSE
-13 12:48:04 wait 526642 Mirza International Ltd: numbers not yet on BSE
-13 12:49:40 ready 540686|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Smruthi Organics Ltd: rule: no results table page | ocr: rule: no results table page | rule reader SBEC Sugar Ltd: rule: no results table page | ocr
-13 12:52:40 wait 523638 IP Rings Ltd-$: numbers not yet on BSE
-13 12:54:19 wait 532613 VIP Clothing Ltd: numbers not yet on BSE
-13 12:55:36 ready 530677|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Supreme Holdings & Hospitality (India) Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Supreme Holdings & Hosp
-13 12:56:24 ready 512277|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Autoriders International Ltd: rule: consolidated table does not reconcile [lakh] total_income=[2813.91, 2465.8, 2497.49] total_expenses=[2587.39, 23
-13 12:57:10 wait 540648 Palash Securities Ltd: numbers not yet on BSE
-13 12:59:10 ready 526095|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Ravileela Granites Ltd standalone ok=False/3: revenue=856.91, other_income=54.53, total_income=856.91, total_expenses=758.9, finance_costs=50.45
-13 13:01:12 ready 526075|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Rekvina Laboratories Ltd consolidated ok=True/3: revenue=355.61, other_income=4.5, total_income=360.11, total_expenses=344.17, finance_costs=1.9
-13 13:02:03 ready 531228|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Rander Corporation Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Rander Corporation Ltd standalone ok=True/3
-13 13:02:53 ready 531834|Sep-26|na kind=photo waited_min=97.8 tries=2 pdf_log=rule reader Natura Hue Chem Ltd: rule: no results table page | ocr: rule: no results table page
-13 13:03:02 ready 544236|Sep-26|na kind=photo waited_min=97.8 tries=99 pdf_log=rule reader Natura Hue Chem Ltd: rule: no results table page | ocr: rule: no results table page
-13 13:03:11 ready 543979|Sep-26|na kind=photo waited_min=97.8 tries=99 pdf_log=rule reader Natura Hue Chem Ltd: rule: no results table page | ocr: rule: no results table page
-13 13:08:21 ready 531158|Sep-26|consolidated kind=photo waited_min=0.0 tries=0 pdf_log=
-13 13:10:15 wait 516106 Shree Karthik Papers Ltd: numbers not yet on BSE
-13 13:12:20 ready 511187|Sep-26|consolidated kind=photo waited_min=97.8 tries=2 pdf_log=
-13 13:13:13 ready 531465|Sep-26|na kind=photo waited_min=97.8 tries=2 pdf_log=rule reader Nouveau Global Ventures Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Nouveau Global Ventures Ltd standalone
-13 13:14:11 ready 512344|Sep-26|na kind=photo waited_min=97.8 tries=2 pdf_log=pdf current col Nouveau Global Ventures Ltd standalone ok=True/2: revenue=0.08, other_income=15.89, total_income=15.97, total_expenses=27.71, finance_costs=9.44
-13 13:14:39 ready 506945|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Indo Gulf Industries Ltd standalone ok=True/3: revenue=4838.46, other_income=8.31, total_income=4846.76, total_expenses=4487.1, finance_costs=31
-13 13:15:07 ready 511048|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | strong model retry did not help: HTTP 429 (skipped gemini-flash-
-13 13:16:05 wait 524642 Sikozy Realtors Ltd: numbers not yet on BSE
-13 13:16:07 ready 526209|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Sikozy Realtors Ltd: rule: no results table page | ocr: rule: no results table page | rule reader K S Oils Ltd-$: ok | pdf current col K S Oils Ltd-
-13 13:18:02 ready 512265|Sep-26|standalone kind=photo waited_min=97.8 tries=1 pdf_log=rule reader Avon Mercantile Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Avon Mercantile Ltd standalone ok=True/1: reve
-13 13:19:37 pdf strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key:
-13 13:19:37 pdf rule reader Dharani Sugars & Chemicals Ltd: rule: no results table page | ocr: rule: no results table page
-13 13:19:37 pdf strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key:
-13 13:19:37 pdf pdf current col Dharani Sugars & Chemicals Ltd standalone ok=False/1: revenue=120.75, other_income=None, total_income=120.75, total_expenses=843.25, finance_costs=1050.44, depreciation=540.13, pbt=-1772.84, tax=None, pat=-1772.84,
-13 13:19:37 pdf pdf history mismatch Dharani Sugars & Chemicals Ltd standalone cols=['September 30, 2026', 'June 30, 2026', 'September 30, 2025'] :: q-1: pdf rev 4.976 pat -199.67700000000002 | bse rev None pat None (Rs mn); q-4: pdf rev 17.669 p
-13 13:19:37 pdf rule reader Nivi Trading Ltd: rule: stan: missing ['pat'] n=6
-13 13:19:37 pdf pdf current col Nivi Trading Ltd standalone ok=True/2: revenue=2.39, other_income=0.4, total_income=2.79, total_expenses=3.25, finance_costs=None, depreciation=None, pbt=-0.46, tax=None, pat=-0.46, eps=-0.04
-13 13:19:37 pdf pdf incomplete Nivi Trading Ltd standalone: missing ['revenue'] - not posting from PDF
-13 13:19:52 seen 503659 SW Investments Ltd cat=Board Meeting early=True bse_time=18:41:18 dissem=18:41:18
-13 13:19:52 seen 544329 Leo Dryfruits & Spices Tradi cat=Board Meeting early=True bse_time=18:41:36 dissem=18:41:36
-13 13:19:52 seen 540850 Jhandewalas Foods Ltd cat=Result early=False bse_time=18:41:47 dissem=18:41:47
-13 13:19:52 seen 527005 Shree Pacetronix Ltd cat=Result early=False bse_time=18:41:49 dissem=18:41:49
-13 13:19:52 seen 544967 Shivchem Agro Ltd cat=Board Meeting early=True bse_time=18:41:55 dissem=18:41:55
-13 13:19:52 seen 530233 Auro Laboratories Ltd cat=Result early=False bse_time=18:42:13 dissem=18:42:13
-13 13:19:52 seen 532890 Take Ltd cat=Board Meeting early=True bse_time=18:42:19 dissem=18:42:19
-13 13:19:52 seen 537524 Viaan Industries Ltd cat=Board Meeting early=True bse_time=18:42:35 dissem=18:42:35
-13 13:19:52 seen 544959 Runwal Enterprises Ltd cat=Board Meeting early=True bse_time=18:42:51 dissem=18:42:51
-13 13:19:52 seen 532359 Hit Kit Global Solutions Ltd cat=Result early=False bse_time=18:43:31 dissem=18:43:31
-13 13:19:52 seen 512559 Kohinoor Foods Ltd cat=Board Meeting early=True bse_time=18:43:45 dissem=18:43:45
-13 13:19:52 seen 512257 Swasti Vinayaka Art And Heri cat=Result early=False bse_time=18:44:16 dissem=18:44:16
-13 13:19:52 seen 507690 Orient Beverages Ltd cat=Result early=False bse_time=18:44:40 dissem=18:44:40
-13 13:19:52 seen 532304 KJMC Corporate Advisors (Ind cat=Result early=False bse_time=18:45:34 dissem=18:45:34
-13 13:19:52 seen 526947 La Opala RG Ltd cat=Board Meeting early=True bse_time=18:45:52 dissem=18:45:52
-13 13:19:52 seen 539148 Shivalik Rasayan Ltd cat=Result early=False bse_time=18:46:18 dissem=18:46:18
-13 13:19:52 seen 544329 Leo Dryfruits & Spices Tradi cat=Result early=False bse_time=18:46:18 dissem=18:46:18
-13 13:19:52 seen 509870 Shah Construction Company Lt cat=Result early=False bse_time=18:46:35 dissem=18:46:35
-13 13:19:52 seen 512559 Kohinoor Foods Ltd cat=Result early=False bse_time=18:46:44 dissem=18:46:44
-13 13:19:52 seen 503659 SW Investments Ltd cat=Result early=False bse_time=18:46:55 dissem=18:46:55
-13 13:19:52 seen 532304 KJMC Corporate Advisors (Ind cat=Result early=False bse_time=18:47:09 dissem=18:47:09
-13 13:19:52 seen 511153 Anjani Foods Ltd cat=Board Meeting early=True bse_time=18:47:37 dissem=18:47:37
-13 13:19:52 seen 538563 SMT Engineering Ltd cat=Result early=False bse_time=18:48:05 dissem=18:48:05
-13 13:19:52 seen 532847 Hilton Metal Forging Ltd cat=Result early=False bse_time=18:48:08 dissem=18:48:08
-13 13:20:49 ready 507912|Sep-26|na kind=photo waited_min=76.2 tries=2 pdf_log=rule reader Runwal Enterprises Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=4 | pdf accepted on printed-numbers check (table arithmetic
-13 13:20:57 ready 538891|Sep-26|consolidated kind=photo waited_min=33.0 tries=1 pdf_log=pdf incomplete Gyftr Ltd consolidated: missing ['revenue'] - not posting from PDF | rule reader Shivalik Rasayan Ltd: rule: no results table page | ocr: rule: n
-13 13:21:07 ready 532684|Sep-26|consolidated kind=photo waited_min=33.0 tries=1 pdf_log=rule reader Shivalik Rasayan Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col Magellanic Cloud Ltd consolidated ok=False/3:
-13 13:21:26 ready 538563|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 13:21:33 ready 539148|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 13:21:50 ready 532102|Sep-26|consolidated kind=photo waited_min=76.2 tries=1 pdf_log=pdf current col SBEC Sugar Ltd consolidated ok=False/3: revenue=15102.97, other_income=32.81, total_income=15135.77, total_expenses=17622.15, finance_costs=1512
-13 13:23:03 ready 532890|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=pdf read failed Runwal Enterprises Ltd: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: HTTP 429 (skipped gemini-flash-lite-latest, quota) | concal
-13 13:25:31 ready 540402|Sep-26|na kind=photo waited_min=76.2 tries=8 pdf_log=pdf read failed IP Rings Ltd-$: gemini skipped (quota/backoff); nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ult
-13 13:26:00 ready 530233|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Auro Laboratories Ltd: rule: stan: does not reconcile [lakh] total_income=[1417.67, 887.64, 981.25] pbt=[186.53, 113.05, 171.98] tax=[0.0, 0.0, 0.0]
-13 13:26:02 seen 512439 Esquire Money Guarantees Ltd cat=Board Meeting early=True bse_time=18:49:25 dissem=18:49:25
-13 13:26:02 seen 543921 Comrade Appliances Ltd cat=Board Meeting early=True bse_time=18:49:59 dissem=18:49:59
-13 13:26:02 seen 544405 Belrise Industries Ltd cat=Result early=False bse_time=18:50:10 dissem=18:50:10
-13 13:26:02 seen 544967 Shivchem Agro Ltd cat=Result early=False bse_time=18:50:33 dissem=18:50:33
-13 13:26:02 seen 509870 Shah Construction Company Lt cat=Board Meeting early=True bse_time=18:50:42 dissem=18:50:42
-13 13:26:02 seen 535279 Bothra Metals & Alloys Ltd cat=Board Meeting early=True bse_time=18:51:06 dissem=18:51:06
-13 13:26:02 seen 544806 CSM Technologies Ltd cat=Board Meeting early=True bse_time=18:51:22 dissem=18:51:22
-13 13:26:02 seen 541276 Hardwyn India Ltd cat=Board Meeting early=True bse_time=18:51:25 dissem=18:51:25
-13 13:26:02 seen 537524 Viaan Industries Ltd cat=Result early=False bse_time=18:51:30 dissem=18:51:30
-13 13:26:02 seen 544987 Tembo Global Industries Ltd cat=Board Meeting early=True bse_time=18:51:47 dissem=18:51:47
-13 13:26:02 seen 511153 Anjani Foods Ltd cat=Result early=False bse_time=18:52:09 dissem=18:52:09
-13 13:26:02 seen 540006 East West Freight Carriers L cat=Result early=False bse_time=18:54:14 dissem=18:54:14
-13 13:26:02 seen 544343 Capitalnumbers Infotech Ltd cat=Board Meeting early=True bse_time=18:55:03 dissem=18:55:03
-13 13:26:31 ready 500164|Sep-26|consolidated kind=photo waited_min=137.0 tries=1 pdf_log=rule reader Auro Laboratories Ltd: rule: stan: does not reconcile [lakh] total_income=[1417.67, 887.64, 981.25] pbt=[186.53, 113.05, 171.98] tax=[0.0, 0.0, 0.0]
-13 13:27:17 wait 512559 Kohinoor Foods Ltd: numbers not yet on BSE
-13 13:29:11 wait 544329 Leo Dryfruits & Spices Tradi: numbers not yet on BSE
-13 13:29:12 ready 533012|Sep-26|standalone kind=photo waited_min=137.0 tries=0 pdf_log=nim reader Godrej Industries Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 3 numbers not fo
-13 13:29:18 wait 532847 Hilton Metal Forging Ltd: confirming that no consolidated statement exists
-13 13:33:38 wait 511153 Anjani Foods Ltd: numbers not yet on BSE
-13 13:35:27 ready 507690|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 13:36:49 ready 540006|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
-13 13:37:29 wait 544967 Shivchem Agro Ltd: numbers not yet on BSE
-13 13:37:35 ready 539494|Sep-26|na kind=photo waited_min=82.4 tries=8 pdf_log=rule reader Shivchem Agro Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns | pdf is a HALF-YEARLY filing (column dates ['30th
-13 13:38:44 ready 532304|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=rule reader KJMC Corporate Advisors (India) Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col KJMC Corporate Advisors (India
-13 13:39:54 ready 514177|Sep-26|na kind=photo waited_min=82.4 tries=8 pdf_log=rule reader KJMC Corporate Advisors (India) Ltd: rule: no results table page | ocr: rule: no results table page | pdf current col KJMC Corporate Advisors (India
-13 13:40:09 ready 503659|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col KJMC Corporate Advisors (India) Ltd consolidated ok=True/3: revenue=548.71, other_income=15.76, total_income=564.47, total_expenses=239.07, fina
-13 13:41:03 ready 516106|Sep-26|standalone kind=photo waited_min=39.1 tries=2 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | rule reader Shree Karthik Papers Ltd: rule: no results table pag
-13 13:41:14 ready 531686|Sep-26|na kind=photo waited_min=82.4 tries=8 pdf_log=strong model retry did not help: HTTP 429 (skipped gemini-flash-latest, quota) | results-key: | rule reader Shree Karthik Papers Ltd: rule: no results table pag
-13 13:41:42 ready 509870|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=rule reader Shah Construction Company Ltd: rule: no results table page | ocr: rule: stan: missing ['pat'] n=6 | pdf current col Shah Construction Company Ltd st
-13 13:42:36 ready 537524|Sep-26|standalone kind=photo waited_min=0.0 tries=1 pdf_log=pdf current col Shah Construction Company Ltd standalone ok=True/2: revenue=116.9, other_income=64.44, total_income=181.34, total_expenses=292.46, finance_costs
-13 13:45:49 ready 507442|Sep-26|na kind=photo waited_min=137.0 tries=1 pdf_log=nim reader Dharani Sugars & Chemicals Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 2 numbe
-13 13:47:37 ready 512245|Sep-26|standalone kind=photo waited_min=82.4 tries=3 pdf_log=nim reader Nivi Trading Ltd: ok (gemini: gemini skipped (quota/backoff)) | pdf current col Nivi Trading Ltd standalone ok=True/2: revenue=2.39, other_income=0.4
-13 13:48:03 seen 539762 Modern Engineering And Proje cat=Board Meeting early=True bse_time=19:08:56 dissem=19:08:56
-13 13:48:03 seen 521003 Shiva Suitings Ltd cat=Board Meeting early=True bse_time=19:09:05 dissem=19:09:05
-13 13:48:03 seen 513693 KIC Metaliks Ltd cat=Board Meeting early=True bse_time=19:10:25 dissem=19:10:25
-13 13:48:03 seen 532467 Hazoor Multi Projects Ltd-$ cat=Result early=False bse_time=19:10:31 dissem=19:10:31
-13 13:48:03 seen 530027 Aadi Industries Ltd cat=Result early=False bse_time=19:10:53 dissem=19:10:53
-13 13:48:03 seen 504810 Informed Technologies India  cat=Board Meeting early=True bse_time=19:12:03 dissem=19:12:03
-13 13:48:03 seen 538860 Panafic Industrials Ltd cat=Result early=False bse_time=19:12:11 dissem=19:12:11
-13 13:48:03 seen 513713 White Organic Agro Ltd cat=Result early=False bse_time=19:12:51 dissem=19:12:51
 13 13:48:03 seen 506146 Visagar Polytex Ltd cat=Board Meeting early=True bse_time=19:13:20 dissem=19:13:20
 13 13:48:03 seen 543351 Naapbooks Ltd cat=Board Meeting early=True bse_time=19:13:26 dissem=19:13:26
 13 13:48:03 seen 531137 Gemstone Investments Ltd cat=Result early=False bse_time=19:13:44 dissem=19:13:44
@@ -1988,3 +1404,155 @@
 14 02:39:26 ready 510245|Sep-26|standalone kind=photo waited_min=171.3 tries=0 pdf_log=rule reader Swasti Vinayaka Synthetics Ltd: rule: no results table page | ocr: rule: header has no quarter columns | pdf read deferred Swasti Vinayaka Synthetic
 14 02:42:36 ready 512257|Sep-26|standalone kind=photo waited_min=171.3 tries=0 pdf_log=
 14 02:43:59 ready 530259|Sep-26|standalone kind=photo waited_min=171.3 tries=0 pdf_log=pdf read deferred Sonal Adhesives Ltd: per-pass AI call cap | rule reader Inter State Oil Carrier Ltd: rule: stan: does not reconcile [lakh] total_income=[3701.
+14 02:45:43 seen 502216 Bombay Potteries & Tiles Ltd cat=Result early=False bse_time=15:34:46 dissem=15:34:46
+14 02:45:43 seen 530065 Lords Ishwar Hotels Ltd cat=Result early=False bse_time=15:37:57 dissem=15:37:57
+14 02:45:43 seen 543460 Quality RO Industries Ltd cat=Result early=False bse_time=16:28:38 dissem=16:28:38
+14 02:45:43 seen 531203 Tradewell Holdings Ltd cat=Result early=False bse_time=16:40:34 dissem=16:40:34
+14 02:45:43 seen 505343 Monotype India Ltd  cat=Result early=False bse_time=16:41:44 dissem=16:41:44
+14 02:45:43 seen 531304 Nutech Global Ltd cat=Result early=False bse_time=16:42:00 dissem=16:42:00
+14 02:45:43 seen 507938 Manipal Finance Corporation  cat=Result early=False bse_time=16:43:53 dissem=16:43:53
+14 02:45:43 seen 538731 Hanman Fit Ltd cat=Result early=False bse_time=16:45:01 dissem=16:45:01
+14 02:45:43 seen 539679 Kapil Raj Finance Ltd cat=Result early=False bse_time=16:46:43 dissem=16:46:43
+14 02:45:43 seen 531539 Rishabh Digha Steel & Allied cat=Result early=False bse_time=16:48:41 dissem=16:48:41
+14 02:45:43 seen 530341 Mukesh Babu Financial Servic cat=Result early=False bse_time=16:48:41 dissem=16:48:41
+14 02:45:43 seen 509449 Bhagawati Oxygen Ltd cat=Result early=False bse_time=16:50:22 dissem=16:50:22
+14 02:45:43 seen 532392 Creative Eye Ltd cat=Result early=False bse_time=16:50:49 dissem=16:50:49
+14 02:45:43 seen 511122 First Custodian Fund India L cat=Result early=False bse_time=16:52:03 dissem=16:52:03
+14 02:45:43 seen 530259 Inter State Oil Carrier Ltd cat=Result early=False bse_time=16:52:05 dissem=16:52:05
+14 02:45:43 seen 532392 Creative Eye Ltd cat=Result early=False bse_time=16:52:49 dissem=16:52:49
+14 02:45:43 seen 526622 MFL India Ltd cat=Result early=False bse_time=16:52:54 dissem=16:52:54
+14 02:45:43 seen 531931 Sai Capital Ltd cat=Result early=False bse_time=16:53:07 dissem=16:53:07
+14 02:45:43 seen 544124 Vibhor Steel Tubes Ltd cat=Result early=False bse_time=16:54:15 dissem=16:54:15
+14 02:45:43 seen 524522 Laffans Petrochemicals Ltd-$ cat=Result early=False bse_time=16:55:22 dissem=16:55:22
+14 02:45:43 seen 506971 B&B Realty Ltd cat=Result early=False bse_time=16:55:24 dissem=16:55:24
+14 02:45:43 seen 513460 Mahalaxmi Seamless Ltd-$ cat=Result early=False bse_time=16:56:10 dissem=16:56:10
+14 02:45:43 seen 544677 Defrail Technologies Ltd cat=Result early=False bse_time=16:59:52 dissem=16:59:52
+14 02:45:43 seen 543538 Goel Food Products Ltd cat=Result early=False bse_time=17:00:41 dissem=17:00:41
+14 02:45:43 seen 532623 NR International Ltd cat=Result early=False bse_time=17:01:50 dissem=17:01:50
+14 02:45:43 seen 544368 Swasth Foodtech India Ltd cat=Result early=False bse_time=17:02:02 dissem=17:02:02
+14 02:45:43 seen 517201 Switching Technologies Gunth cat=Result early=False bse_time=17:02:35 dissem=17:02:35
+14 02:45:43 seen 544304 Jungle Camps India Ltd cat=Result early=False bse_time=17:02:52 dissem=17:02:52
+14 02:45:43 seen 542377 Aar Shyam India Investment C cat=Result early=False bse_time=17:03:07 dissem=17:03:07
+14 02:45:43 seen 517360 SBEC Systems India Ltd cat=Result early=False bse_time=17:03:49 dissem=17:03:49
+14 02:45:43 seen 544505 Austere Systems Ltd cat=Result early=False bse_time=17:05:13 dissem=17:05:13
+14 02:45:43 seen 503622 SV Trading & Agencies Ltd  cat=Result early=False bse_time=17:06:43 dissem=17:06:43
+14 02:45:43 seen 531505 Indergiri Finance Ltd cat=Result early=False bse_time=17:12:00 dissem=17:12:00
+14 02:45:43 seen 530905 Sai Industries Ltd cat=Result early=False bse_time=17:12:30 dissem=17:12:30
+14 02:45:43 seen 512624 Regent Enterprises Ltd cat=Result early=False bse_time=17:13:11 dissem=17:13:11
+14 02:45:43 seen 521188 United Textiles Ltd cat=Result early=False bse_time=17:14:11 dissem=17:14:11
+14 02:45:43 seen 531582 Beryl Securities Ltd cat=Result early=False bse_time=17:14:25 dissem=17:14:25
+14 02:45:43 seen 531237 Dhruva Capital Services Ltd cat=Result early=False bse_time=17:14:47 dissem=17:14:47
+14 02:45:43 seen 507864 Pioneer Investcorp Ltd cat=Result early=False bse_time=17:16:07 dissem=17:16:07
+14 02:45:43 seen 544163 Greenhitech Ventures Ltd cat=Result early=False bse_time=17:16:22 dissem=17:16:22
+14 02:45:43 seen 539110 Northlink Fiscal and Capital cat=Result early=False bse_time=17:18:04 dissem=17:18:04
+14 02:45:43 seen 531822 Rodium Realty Ltd cat=Result early=False bse_time=17:23:24 dissem=17:23:24
+14 02:45:43 seen 526187 Ashram Online.Com Ltd cat=Result early=False bse_time=17:24:55 dissem=17:24:55
+14 02:45:43 seen 542446 Jonjua Overseas Ltd cat=Result early=False bse_time=17:25:05 dissem=17:25:05
+14 02:45:43 seen 530855 GDL Leasing & Finance Ltd cat=Result early=False bse_time=17:25:09 dissem=17:25:09
+14 02:45:43 seen 531043 Dhanvantri Jeevan Rekha Ltd cat=Result early=False bse_time=17:25:16 dissem=17:25:16
+14 02:45:43 seen 531199 Glance Finance Ltd cat=Result early=False bse_time=17:25:39 dissem=17:25:39
+14 02:45:43 seen 538596 Cemantic Infra-Tech Ltd cat=Result early=False bse_time=17:25:46 dissem=17:25:46
+14 02:45:43 seen 530909 ERP Soft Systems Ltd cat=Result early=False bse_time=17:25:47 dissem=17:25:47
+14 02:45:43 seen 526901 Sonal Adhesives Ltd cat=Result early=False bse_time=17:26:09 dissem=17:26:09
+14 02:45:43 seen 506103 Victoria Enterprises Ltd cat=Result early=False bse_time=17:35:09 dissem=17:35:09
+14 02:45:43 seen 544643 Prodocs Solutions Ltd cat=Result early=False bse_time=17:37:06 dissem=17:37:06
+14 02:45:43 seen 511535 NDA Securities Ltd cat=Result early=False bse_time=17:37:31 dissem=17:37:31
+14 02:45:43 seen 544245 Naturewings Holidays Ltd cat=Result early=False bse_time=17:38:53 dissem=17:38:53
+14 02:45:43 seen 540481 Classic Leasing & Finance Lt cat=Result early=False bse_time=17:40:21 dissem=17:40:21
+14 02:45:43 seen 544933 Shakti Polytarp Ltd cat=Result early=False bse_time=17:40:46 dissem=17:40:46
+14 02:45:43 seen 526179 Ludlow Jute & Specialities L cat=Result early=False bse_time=17:42:11 dissem=17:42:11
+14 02:45:43 seen 526977 Crimson Metal Engineering Co cat=Result early=False bse_time=17:43:01 dissem=17:43:01
+14 02:45:43 seen 530093 ACE Edutrend Ltd cat=Result early=False bse_time=17:43:06 dissem=17:43:06
+14 02:45:43 seen 514248 Sreechem Resins Ltd cat=Result early=False bse_time=17:45:44 dissem=17:45:44
+14 02:45:43 seen 501479 Springform Technology Ltd cat=Result early=False bse_time=17:45:57 dissem=17:45:57
+14 02:45:43 seen 543606 Containe Technologies Ltd cat=Result early=False bse_time=17:46:47 dissem=17:46:47
+14 02:45:43 seen 511391 Inter Globe Finance Ltd cat=Result early=False bse_time=17:47:03 dissem=17:47:03
+14 02:45:43 seen 511636 DJS Stock & Shares Ltd cat=Result early=False bse_time=17:48:04 dissem=17:48:04
+14 02:45:43 seen 523260 PEARL Polymers Ltd cat=Result early=False bse_time=17:48:04 dissem=17:48:04
+14 02:45:43 seen 544056 Sahara Maritime Ltd cat=Result early=False bse_time=17:50:56 dissem=17:50:56
+14 02:45:43 seen 530063 Yashraj Containeurs Ltd cat=Result early=False bse_time=17:51:07 dissem=17:51:07
+14 02:45:43 seen 512417 Trinity Tradelink Ltd cat=Result early=False bse_time=17:52:57 dissem=17:52:57
+14 02:45:43 seen 544168 Varyaa Creations Ltd cat=Result early=False bse_time=17:53:13 dissem=17:53:13
+14 02:45:43 seen 544237 Rapid Multimodal logistics L cat=Result early=False bse_time=17:53:26 dissem=17:53:26
+14 02:45:43 seen 532957 Gokak Textiles Ltd cat=Result early=False bse_time=17:53:53 dissem=17:53:53
+14 02:45:43 seen 544637 Methodhub Software Ltd cat=Result early=False bse_time=17:53:55 dissem=17:53:55
+14 02:45:43 seen 544979 Everestims Technologies Ltd cat=Result early=False bse_time=17:54:38 dissem=17:54:38
+14 02:45:43 seen 503624 Svaraj Trading & Agencies Lt cat=Result early=False bse_time=17:57:11 dissem=17:57:11
+14 02:45:43 seen 513117 Amforge Industries Ltd cat=Result early=False bse_time=17:58:02 dissem=17:58:02
+14 02:45:43 seen 539174 Helpage Finlease Ltd cat=Result early=False bse_time=17:58:53 dissem=17:58:53
+14 02:45:43 seen 544270 Khyati Global Ventures Ltd cat=Result early=False bse_time=18:00:34 dissem=18:00:34
+14 02:45:43 seen 511493 Shrydus Industries Ltd cat=Result early=False bse_time=18:01:02 dissem=18:01:02
+14 02:45:43 seen 543595 EP Biocomposites Ltd cat=Result early=False bse_time=18:01:58 dissem=18:01:58
+14 02:45:43 seen 538451 Worth Investment & Trading C cat=Result early=False bse_time=18:03:04 dissem=18:03:04
+14 02:45:43 seen 544505 Austere Systems Ltd cat=Result early=False bse_time=18:03:34 dissem=18:03:34
+14 02:45:43 seen 541701 Supershakti Metaliks Ltd cat=Result early=False bse_time=18:05:21 dissem=18:05:21
+14 02:45:43 seen 542934 Chandra Bhagat Pharma Ltd cat=Result early=False bse_time=18:17:03 dissem=18:17:03
+14 02:45:43 seen 500277 Mid India Industries Ltd cat=Result early=False bse_time=18:18:35 dissem=18:18:35
+14 02:45:43 seen 543578 Olatech Solutions Ltd cat=Result early=False bse_time=18:20:45 dissem=18:20:45
+14 02:45:43 seen 544313 NACDAC Infrastructure Ltd cat=Result early=False bse_time=18:23:15 dissem=18:23:15
+14 02:45:43 seen 531925 Shantanu Sheorey Aquakult Lt cat=Result early=False bse_time=18:23:45 dissem=18:23:45
+14 02:45:43 seen 543765 Earthstahl & Alloys Ltd cat=Result early=False bse_time=18:23:56 dissem=18:23:56
+14 02:45:43 seen 513403 P.M. Telelinnks Ltd cat=Result early=False bse_time=18:25:55 dissem=18:25:55
+14 02:45:43 seen 531310 Available Finance Ltd cat=Result early=False bse_time=18:26:02 dissem=18:26:02
+14 02:45:43 seen 530127 NPR Finance Ltd cat=Result early=False bse_time=18:27:11 dissem=18:27:11
+14 02:45:43 seen 530993 Sarthak Global Ltd cat=Result early=False bse_time=18:27:22 dissem=18:27:22
+14 02:45:43 seen 500016 Aruna Hotels Ltd cat=Result early=False bse_time=18:28:01 dissem=18:28:01
+14 02:45:43 seen 513403 P.M. Telelinnks Ltd cat=Result early=False bse_time=18:30:22 dissem=18:30:22
+14 02:45:43 seen 539917 Nagarjuna Fertilizers and Ch cat=Result early=False bse_time=18:31:58 dissem=18:31:58
+14 02:45:43 seen 521054 Kakatiya Textiles Ltd cat=Result early=False bse_time=18:32:57 dissem=18:32:57
+14 02:45:43 seen 511246 Bombay Talkies Ltd cat=Result early=False bse_time=18:34:17 dissem=18:34:17
+14 02:45:43 seen 540850 Jhandewalas Foods Ltd cat=Result early=False bse_time=18:34:18 dissem=18:34:18
+14 02:45:43 seen 541006 Angel Fibers Ltd cat=Result early=False bse_time=18:34:18 dissem=18:34:18
+14 02:45:43 seen 544183 Associated Coaters Ltd cat=Result early=False bse_time=18:34:21 dissem=18:34:21
+14 02:45:43 seen 526871 Intec Capital Ltd cat=Result early=False bse_time=18:35:19 dissem=18:35:19
+14 02:45:43 seen 543769 Indong Tea Company Ltd cat=Result early=False bse_time=18:37:47 dissem=18:37:47
+14 02:45:43 seen 543377 Adishakti Loha and Ispat Ltd cat=Result early=False bse_time=18:38:20 dissem=18:38:20
+14 02:45:43 seen 500178 Harig Crankshafts Ltd cat=Result early=False bse_time=18:40:26 dissem=18:40:26
+14 02:45:43 seen 543621 Cargosol Logistics Ltd cat=Result early=False bse_time=18:40:27 dissem=18:40:27
+14 02:45:43 seen 524038 Venlon Enterprises Ltd cat=Result early=False bse_time=18:41:16 dissem=18:41:16
+14 02:45:43 seen 540850 Jhandewalas Foods Ltd cat=Result early=False bse_time=18:41:47 dissem=18:41:47
+14 02:45:43 seen 539861 SKIL Infrastructure Ltd cat=Result early=False bse_time=18:56:48 dissem=18:56:48
+14 02:45:43 seen 543921 Comrade Appliances Ltd cat=Result early=False bse_time=18:58:11 dissem=18:58:11
+14 02:45:43 seen 531625 Sangam Health Care Products  cat=Result early=False bse_time=18:58:28 dissem=18:58:28
+14 02:45:43 seen 540729 Vanta Bioscience Ltd cat=Result early=False bse_time=19:01:21 dissem=19:01:21
+14 02:45:43 seen 512408 Uniworth Securities Ltd cat=Result early=False bse_time=19:02:59 dissem=19:02:59
+14 02:45:43 seen 512439 Esquire Money Guarantees Ltd cat=Result early=False bse_time=19:03:07 dissem=19:03:07
+14 02:45:43 seen 513149 Acrow India Ltd cat=Result early=False bse_time=19:03:09 dissem=19:03:09
+14 02:45:43 seen 544343 Capitalnumbers Infotech Ltd cat=Result early=False bse_time=19:03:49 dissem=19:03:49
+14 02:45:43 seen 523519 Universal Office Automation  cat=Result early=False bse_time=19:06:50 dissem=19:06:50
+14 02:45:43 seen 533261 Eros International Media Ltd cat=Result early=False bse_time=19:08:20 dissem=19:08:20
+14 02:45:43 seen 506146 Visagar Polytex Ltd cat=Result early=False bse_time=19:20:12 dissem=19:20:12
+14 02:45:43 seen 533317 Omkar Speciality Chemicals L cat=Result early=False bse_time=19:55:43 dissem=19:55:43
+14 02:45:43 seen 502850 Gaekwar Mills Ltd  cat=Result early=False bse_time=19:58:49 dissem=19:58:49
+14 02:45:43 seen 544893 Annu Projects Ltd cat=Result early=False bse_time=20:02:17 dissem=20:02:17
+14 02:45:43 seen 501874 Mackinnon Mackenzie & Compan cat=Result early=False bse_time=20:02:21 dissem=20:02:21
+14 02:45:43 seen 512600 Astal Laboratories Ltd cat=Result early=False bse_time=20:05:00 dissem=20:05:00
+14 02:45:43 seen 532105 Mega Fin India Ltd cat=Result early=False bse_time=20:07:55 dissem=20:07:55
+14 02:45:43 seen 517494 Accel Ltd cat=Result early=False bse_time=20:10:53 dissem=20:10:53
+14 02:45:43 seen 544535 Bharatrohan Airborne Innovat cat=Result early=False bse_time=20:12:49 dissem=20:12:49
+14 02:45:43 seen 544435 Adcounty Media India Ltd cat=Result early=False bse_time=20:13:30 dissem=20:13:30
+14 02:45:43 seen 526869 Kumbhat Financial Services L cat=Result early=False bse_time=20:13:44 dissem=20:13:44
+14 02:45:43 seen 506074 Arshiya Ltd cat=Result early=False bse_time=20:14:57 dissem=20:14:57
+14 02:45:43 seen 531557 Amit Securities Ltd cat=Result early=False bse_time=20:20:08 dissem=20:20:08
+14 02:45:43 seen 541178 Benara Bearings and Pistons  cat=Result early=False bse_time=20:20:38 dissem=20:20:38
+14 02:45:43 seen 544955 Peshwa Wheat Ltd cat=Result early=False bse_time=21:25:45 dissem=21:25:45
+14 02:45:43 seen 526488 Bhudevi Infra Projects Ltd cat=Result early=False bse_time=21:27:32 dissem=21:27:32
+14 02:45:43 seen 538770 Crane Infrastructure Ltd cat=Result early=False bse_time=21:33:54 dissem=21:33:54
+14 02:45:43 seen 543310 Times Green Energy (India) L cat=Result early=False bse_time=22:07:40 dissem=22:07:40
+14 02:45:43 seen 500458 Team24 Consumer Products Ltd cat=Result early=False bse_time=00:18:57 dissem=00:18:57
+14 02:45:43 seen 523419 Tamilnadu Telecommunications cat=Result early=False bse_time=06:43:06 dissem=06:43:06
+14 02:46:25 ready 541701|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=rule reader Astal Laboratories Ltd: rule: no results table page | ocr: rule: no results table page | rule reader Everestims Technologies Ltd: rule: no results t
+14 02:47:17 ready 512600|Sep-26|consolidated kind=photo waited_min=257.7 tries=1 pdf_log=rule reader Available Finance Ltd: rule: no results table page | ocr: rule: no results table page
+14 02:47:27 ready 544893|Sep-26|standalone kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:47:36 ready 544535|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:47:59 ready 544124|Sep-26|consolidated kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:48:12 ready 544343|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:48:20 ready 544435|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:48:28 ready 531310|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=
+14 02:48:35 ready 544637|Sep-26|na kind=photo waited_min=257.7 tries=0 pdf_log=
+14 02:48:44 ready 538451|Sep-26|na kind=photo waited_min=257.7 tries=0 pdf_log=
+14 02:51:51 ready 544643|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=nim reader Prodocs Solutions Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 29 numbers not f
+14 02:53:35 ready 530341|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=nim reader Mukesh Babu Financial Services Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 30 
+14 02:55:16 ready 507864|Sep-26|na kind=photo waited_min=257.7 tries=0 pdf_log=nim reader Pioneer Investcorp Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 13 numbers not 
+14 02:57:05 ready 511391|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=nim reader Inter Globe Finance Ltd: nim deepseek-v4.1-flash: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool( | nim nemotron-3-ultra-550b-a55b: 11 numbers not
+14 02:58:41 ready 544933|Sep-26|na kind=photo waited_min=257.7 tries=1 pdf_log=
