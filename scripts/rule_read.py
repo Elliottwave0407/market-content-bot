@@ -313,7 +313,7 @@ def _candidates(rows):
     pats = _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)", r"(profit|loss).{0,30}continuing operations"], start=pi + 1, n=n,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit"))
     pats = [x for x in pats if not re.search(r"^(add|less)\b", clean_label(rows[x[0]][0]))]
-    if not pats:
+    if False:
         pats = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)"], start=pi + 1,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit")) if n - 2 <= len(nm_) < n]
     c["pat"] = pats[:4]
