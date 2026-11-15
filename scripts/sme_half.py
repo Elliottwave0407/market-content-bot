@@ -39,7 +39,18 @@ def read_half_card(content, key, name=""):
         # 15 Nov (Anondita): Gemini quota was exhausted for hours and the half-year card never posted. Fall back to the free NVIDIA text reader (every number it returns must appear in the filing text, then the same arithmetic gate below applies).
         try:
             import nim_read as nr_
-            out, err2 = nr_.read_pdf(content, prompt=HALF, timeout=90)
+            small = content
+            try:      # only the statement pages go to the model: the whole filing made the free endpoint time out
+                import fitz
+                d_ = fitz.open(stream=content, filetype="pdf"); keep = []
+                for i_, pg_ in enumerate(d_):
+                    t_ = pg_.get_text("text").lower()
+                    if ("total income" in t_ or "revenue from operations" in t_) and ("profit" in t_) and "cash flow" not in t_[:600]: keep.append(i_)
+                if keep:
+                    d2_ = fitz.open(); [d2_.insert_pdf(d_, from_page=i_, to_page=i_) for i_ in keep[:3]]; small = d2_.tobytes()
+            except Exception:
+                small = content
+            out, err2 = nr_.read_pdf(small, prompt=HALF, timeout=120)
             if out is not None: p("  half-year read by the NVIDIA backup (Gemini unavailable)")
             else: err = f"{str(err)[:50]} | {str(err2)[:60]}"
         except Exception as e_:
