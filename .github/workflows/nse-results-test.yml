@@ -37,6 +37,7 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           PDF_TRIES: "4"
           NSE_SME: "1"
+          NSE_DEBUG_TODO: "1"
           RULE_OCR: "1"
           RULE_OCR_ENGINE: rapid
           HALF_NIM_ONLY: ${{ github.event.inputs.nim_only }}

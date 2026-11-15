@@ -548,6 +548,8 @@ def run_once(day=None, maxn=3):
         p(f"NSE results baseline set ({len(todo)} NSE-only result filings seen)")
         return True
     p(f"NSE result filings today: {len(rows)}, NSE-only to process: {len(todo)}")
+    if os.environ.get("NSE_DEBUG_TODO") == "1":
+        p("TODO order: " + " | ".join(f"{x['symbol']}:{x.get('an_dt')}:{'done' if str(x.get('seq_id')) in st['done'] else 'open'}" for x in todo[:25]))
     changed = False
     n = 0
     for x in todo:
