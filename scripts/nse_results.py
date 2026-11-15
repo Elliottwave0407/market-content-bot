@@ -391,6 +391,8 @@ def process(x, st, final, maps=None):
     sym, isin = x["symbol"], x.get("sm_isin") or ""
     sid = str(x.get("seq_id"))
     name = (x.get("sm_name") or sym).strip()
+    if TRIES.get(sid, 0) >= 8 and time.time() - TRY_AT.get(sid, 0) >= 900:
+        TRIES[sid] = 4      # 15 Nov: a filing stuck behind a busy LLM quota is retried every 15 min instead of being given up for the whole run (Anondita)
     if TRIES.get(sid, 0) >= 8 or time.time() - TRY_AT.get(sid, 0) < 240:
         return "skip"
     TRY_AT[sid] = time.time()
