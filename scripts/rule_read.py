@@ -465,9 +465,9 @@ def _assemble(cands, n, unit, rows):
     return (first if first is not None else dict(base, pbt=[None] * 3, pat=pad(cands["pat"][0][1]))), False, []
 
 
-def read_pdf(pdf_bytes, hint="", qhint=None):
+def read_pdf(pdf_bytes, hint="", qhint=None, allow_half=False):
     """Text layer first; if that fails, OCR the pages (scanned / garbled PDFs) and run the same strict reconcile gate."""
-    r, why = _read(pdf_bytes, hint, qhint, False)
+    r, why = _read(pdf_bytes, hint, qhint, False, allow_half)
     if r is not None or why is None:
         return r, why
     import shutil
@@ -476,7 +476,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     if not re.search(r"no text layer|no results table|unit not found|header has no quarter|column dates|does not reconcile", why):      # a garbled text layer (digits and decimal marks split, e.g. Tonbo 5 Nov) misreads numbers and then fails to reconcile: the OCR read goes through the same strict gate
         return None, why      # text layer was readable: OCR would not fix a table that does not add up
     try:
-        r2, why2 = _read(pdf_bytes, hint, qhint, True)
+        r2, why2 = _read(pdf_bytes, hint, qhint, True, allow_half)
     except Exception as e:
         return None, why + " | ocr err " + repr(e)[:60]
     if r2 is not None:
@@ -485,7 +485,7 @@ def read_pdf(pdf_bytes, hint="", qhint=None):
     return None, why + " | ocr: " + str(why2)[:420]
 
 
-def _read(pdf_bytes, hint="", qhint=None, ocr=False):
+def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
     """-> (json, None) or (None, reason). qhint: BSE quarter code from the filing headline (used for the column dates when the header cannot be read)."""
     try:
         pages = _pdf_rows(pdf_bytes, ocr=ocr)
@@ -546,14 +546,37 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
     if first:
         return None, "rule: no results table page"
     low = htxt.lower()
+    half_mode = False
     if not re.search(r"quarter|three months|3 months", low + " " + first_page_txt[:2500].lower()):
-        return None, "rule: header has no quarter columns"
+        if allow_half and re.search(r"half[ -]?year(?:ly)? ended|for the half[ -]?year|half[ -]?yearly", low + " " + first_page_txt[:2500].lower()):
+            half_mode = True      # 15 Nov: SME half-yearly statements: first three number columns are current half | preceding half | same half last year
+        else:
+            return None, "rule: header has no quarter columns"
     us = _units_in(table_txt)
     if len(us) != 1:
         return None, "rule: unit " + ("ambiguous " + str(sorted(us)) if us else "not found")
     unit = next(iter(us))
     ds = _dates(htxt)
-    if not (len(ds) >= 3 and _layout_ok(ds)):
+    if half_mode:
+        def _mi(t): return int(t.split(".")[2]) * 12 + int(t.split(".")[1])
+        def _dt(m): return f"{30 if (m - 1) % 12 + 1 in (6, 9) else 31:02d}.{(m - 1) % 12 + 1:02d}.{(m - 1) // 12}"
+        cur = None
+        hd = [d_ for d_ in ds if int(d_.split(".")[1]) in (3, 9)]
+        if len(hd) >= 3 and (_mi(hd[0]) - _mi(hd[1]), _mi(hd[0]) - _mi(hd[2])) == (6, 12):
+            cur = hd[0]
+        elif len(hd) >= 3 and sorted([_mi(hd[0]), _mi(hd[1]), _mi(hd[2])], reverse=True)[0] - sorted([_mi(hd[0]), _mi(hd[1]), _mi(hd[2])])[0] == 12:
+            return None, "rule: half-year columns are in an unusual order"
+        if cur is None and qhint is not None:
+            qc_ = _qdates_from_code(qhint)
+            if int(qc_[0].split(".")[1]) in (3, 9): cur = qc_[0]
+        if cur is None:
+            mm = re.search(r"ended\s*(?:on\s*)?([^\n]{0,28})", low + " " + first_page_txt[:2500].lower())
+            dd_ = _dates(mm.group(1)) if mm else []
+            if dd_ and int(dd_[0].split(".")[1]) in (3, 9): cur = dd_[0]
+        if cur is None:
+            return None, "rule: half-year column dates not found"
+        ds = [cur, _dt(_mi(cur) - 6), _dt(_mi(cur) - 12)]
+    elif not (len(ds) >= 3 and _layout_ok(ds)):
         ds = []
         qd = None
         for src in (htxt, first_page_txt[:3000], hint):
@@ -573,7 +596,7 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
             ds = _qdates_from_code(code_)
     if not ds:
         return None, "rule: column dates not found"
-    out = {"unit": unit, "quarter_end_columns": ds[:3], "consolidated": None, "standalone": None, "_rule": True, "_rule_ok": {}, "_printed": {}}
+    out = {"unit": unit, "quarter_end_columns": ds[:3], "consolidated": None, "standalone": None, "_rule": True, "_rule_ok": {}, "_printed": {}, "_half": half_mode}
     why = []
     for b in ("consolidated", "standalone"):
         rows = blocks[b]
@@ -595,7 +618,7 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False):
             continue
         d, ok, unv = r
         rv_ = cands["revenue"][0][1]
-        if ok and n >= 4 and None not in (rv_[0], rv_[3]) and rv_[0] > 0 and rv_[3] > 0:
+        if ok and not half_mode and n >= 4 and None not in (rv_[0], rv_[3]) and rv_[0] > 0 and rv_[3] > 0:
             if rv_[0] > rv_[3] * 1.02:
                 ok = False; why.append(f"{b[:4]}: first column larger than the year-to-date column")
             elif n >= 5 and ds[0].split(".")[1] == "09" and rv_[1] is not None and abs(rv_[3] - rv_[0] - rv_[1]) > 0.02 * rv_[3]:

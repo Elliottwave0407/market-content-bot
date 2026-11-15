@@ -33,7 +33,19 @@ def sme_ok(d, i):
 
 def read_half_card(content, key, name=""):
     """-> (dict(basis, q, quarters), 'ok') or (None, reason). Reads a half-yearly results PDF (SME). Columns: current half | preceding half | same half last year."""
-    if os.environ.get("HALF_NIM_ONLY") == "1": out, err = None, "forced NVIDIA-only test"
+    out, err = None, None
+    if os.environ.get("HALF_NIM_ONLY") != "1":
+        try:      # 15 Nov: rule reader first (no LLM, no quota, milliseconds on a text layer); every number still passes the strict arithmetic gate
+            import rule_read as rr_
+            rout, rwhy = rr_.read_pdf(content, "", None, allow_half=True)
+            if rout is not None and rout.get("_half"):
+                out = rout; p("  half-year read by the rule reader")
+            else:
+                p("  half-year rule reader:", str(rwhy)[:120])
+        except Exception as e_:
+            p("  half-year rule reader error:", repr(e_)[:80])
+    if out is not None: pass
+    elif os.environ.get("HALF_NIM_ONLY") == "1": out, err = None, "forced NVIDIA-only test"
     else: out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "3")), timeout=120, prompt=HALF)
     if out is None:
         # 15 Nov (Anondita): Gemini quota was exhausted for hours and the half-year card never posted. Fall back to the free NVIDIA text reader (every number it returns must appear in the filing text, then the same arithmetic gate below applies).
