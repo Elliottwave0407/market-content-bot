@@ -1,0 +1,26 @@
+# read-only OCR comparison on one scanned results page
+name: ocr-bakeoff
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        default: ""
+      page:
+        default: "3"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pytesseract opencv-python-headless rapidocr-onnxruntime
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-eng
+      - env:
+          URL: ${{ github.event.inputs.url }}
+          PAGE: ${{ github.event.inputs.page }}
+        run: python scripts/ocr_bakeoff.py
