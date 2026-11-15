@@ -390,6 +390,10 @@ def _tol(a, b, unit):
     return abs(a - b) <= max(0.0025 * max(abs(a), abs(b)), 0.15 if unit == "crore" else 0.6)
 
 
+import threading
+_RELAX = threading.local()      # half-year statements: tax sub-rows often sit in the wrong column (Anondita), so PAT only has to be sane versus PBT (same rule as sme_half.sme_ok); total income - expenses = PBT stays exact
+
+
 def _col_status(d, i, unit):
     g = lambda k: (d.get(k) or [None] * 3)[i]
     ti, ex, pbt, tax, pat = g("total_income"), g("total_expenses"), g("pbt"), g("tax"), g("pat")
@@ -400,6 +404,8 @@ def _col_status(d, i, unit):
     a = [0.0] if asc in (None, 0.0) else [asc]      # 14 Nov (Raideep): with a non-zero share of associates the headline profit must INCLUDE it; accepting [asc, 0.0] let the pre-associates profit pass (5.23 instead of 48.32)
     c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
     c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
+    if not c2 and getattr(_RELAX, "on", False) and asc in (None, 0.0):
+        c2 = (pbt > 0 and -0.3 * pbt <= pat <= 1.6 * pbt) or (pbt <= 0 and pat <= 0.5 * abs(pbt) + 1.5)
     return bool(c1 and c2)
 
 
@@ -546,10 +552,11 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
     if first:
         return None, "rule: no results table page"
     low = htxt.lower()
+    _RELAX.on = False
     half_mode = False
     if not re.search(r"quarter|three months|3 months", low + " " + first_page_txt[:2500].lower()):
         if allow_half and re.search(r"half[ -]?year(?:ly)? ended|for the half[ -]?year|half[ -]?yearly", low + " " + first_page_txt[:2500].lower()):
-            half_mode = True      # 15 Nov: SME half-yearly statements: first three number columns are current half | preceding half | same half last year
+            half_mode = True; _RELAX.on = True      # 15 Nov: SME half-yearly statements: first three number columns are current half | preceding half | same half last year
         else:
             return None, "rule: header has no quarter columns"
     us = _units_in(table_txt)
