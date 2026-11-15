@@ -19,7 +19,7 @@ for ocr in (False, True):
     print("  mentions consolidated:", len(re.findall(r"consolidated", txt, re.I)), "standalone:", len(re.findall(r"standalone", txt, re.I)))
     for m in re.finditer(r"statement of (consolidated|standalone)[^\n]{0,80}", txt, re.I):
         print("  title:", m.group(0)[:110])
-res, why = rr.read_pdf(b, os.environ.get("HINT", ""), None)
+res, why = rr.read_pdf(b, os.environ.get("HINT", ""), None, allow_half=True)
 print("READ_PDF why:", why)
 if res:
     for k in ("consolidated", "standalone"):
@@ -62,7 +62,7 @@ try:
             lb, nums = rr.split_row(r_)
             if re.search(r"statement of|financial results", lb, re.I):
                 print("TRIM p%d title: %r %s" % (pno + 1, lb[:90], nums), flush=True)
-    r3, w3 = rr.read_pdf(small, os.environ.get("HINT", ""), int(os.environ.get("QHINT") or 0) or None)
+    r3, w3 = rr.read_pdf(small, os.environ.get("HINT", ""), int(os.environ.get("QHINT") or 0) or None, allow_half=True)
     print("TRIM READ why:", w3)
     if r3:
         for k in ("consolidated", "standalone"):
