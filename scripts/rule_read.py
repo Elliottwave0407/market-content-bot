@@ -65,7 +65,18 @@ _GARBRE = re.compile(r"^[\(\[\{|!]?[0-9OoIlsSZ.,'`|]{3,}[\)\]\}|]?$")
 def _tok(t):
     """A stray OCR mark glued to the front of a printed number ('«652.09') is dropped, only when what remains is a valid number."""
     u = t.lstrip("«»|!¦~`'\"")
-    return u if u != t and u and _isnum(u) else t
+    if u != t and u and _isnum(u):
+        return u
+    if not _isnum(t):
+        v = t.rstrip(".,;:")      # '3,429.65.' : sentence dot after the last column
+        if v != t and _isnum(v):
+            return v
+        m = re.match(r"^(\(?-?)(\d{1,3})((?:\.\d{3})+)(\.\d{1,2})(\)?)$", t)      # '2.212.22' : OCR wrote a dot for the thousands comma
+        if m:
+            w = m.group(1) + m.group(2) + m.group(3).replace(".", ",") + m.group(4) + m.group(5)
+            if _isnum(w):
+                return w
+    return t
 
 
 def split_row(row):
