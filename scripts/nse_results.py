@@ -387,6 +387,22 @@ def _process_half(x, st, content, name, sym, isin, code, final):
             _mark_seen(bkey)
     return "done"
 
+def _looks_half(content):
+    """True when the results statement pages print 'half year ended' headings and never 'quarter ended' (SME half-yearly filers). Text layer only; any doubt -> False (the normal route)."""
+    try:
+        import fitz
+        d = fitz.open(stream=content, filetype="pdf")
+        half = quarter = 0
+        for i, pg in enumerate(d):
+            if i >= 14: break
+            t = re.sub(r"\s+", " ", pg.get_text("text").lower())
+            if "total income" not in t and "revenue from operations" not in t: continue
+            if re.search(r"half[ -]?year(?:ly)? ended|for the half[ -]?year", t): half += 1
+            if re.search(r"quarter ended|three months ended|3 months ended", t): quarter += 1
+        return half > 0 and quarter == 0
+    except Exception:
+        return False
+
 def process(x, st, final, maps=None):
     sym, isin = x["symbol"], x.get("sm_isin") or ""
     sid = str(x.get("seq_id"))
@@ -428,9 +444,12 @@ def process(x, st, final, maps=None):
         p(f"  {sym}: file is not a readable PDF ({status}, {len(content)} bytes)")
         TRY_AT[sid] = time.time() - 200      # try again in ~40 s
         return "wait"
+    code = bse_code(x, maps) if maps else None
+    if _looks_half(content):      # 15 Nov (Anondita): a half-yearly statement goes straight to the half-year route; waiting for the quarterly LLM read to fail first left it stuck whenever Gemini was out of quota
+        p(f"  {sym}: half-year statement in the PDF text -> half-year route")
+        return _process_half(x, st, content, name, sym, isin, code, final)
     class _R: pass
     r = _R(); r.content = content
-    code = bse_code(x, maps) if maps else None
     if code:
         from bse import BSE
         with BSE(download_folder=tempfile.mkdtemp()) as b_:
