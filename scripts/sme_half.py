@@ -41,7 +41,7 @@ def read_half_card(content, key, name=""):
             if rout is not None and rout.get("_half"):
                 out = rout; p("  half-year read by the rule reader")
             else:
-                p("  half-year rule reader:", str(rwhy)[:120])
+                p("  half-year rule reader:", str(rwhy)[:700])
         except Exception as e_:
             p("  half-year rule reader error:", repr(e_)[:80])
     if out is not None: pass
