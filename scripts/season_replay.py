@@ -80,6 +80,8 @@ for sym in mine:
             if out is not None:
                 rec["half"] = True
         rec["read_secs"] = round(time.time() - t1, 1)
+        if out is not None and not out.get("consolidated") and nr.consolidated_pages(c) is not None:      # production never posts standalone while the filing carries a consolidated table (nse_results.read_card): same rule here
+            out, err = None, "filing has a consolidated results table but it was not read (not posting standalone)"
         tr = truth_for(sym)
         rec["truth_bases"] = sorted(tr)
         if out is None:
