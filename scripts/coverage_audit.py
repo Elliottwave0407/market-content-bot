@@ -34,6 +34,14 @@ for l in open("state/latency.log", encoding="utf-8", errors="ignore"):
     if m:
         (stubs if m.group(3) in ("na", "nocons", "incomplete", "anomaly", "unverified") else cards).setdefault(m.group(1), l[:15])
         if m.group(3) in ("na", "nocons", "incomplete", "anomaly", "unverified"): stubs[m.group(1)] = l.strip()[:220]
+try:      # seen.json 'posted' holds every card key, including stubs ('code|Sep-26|na')
+    for k in json.load(open("state/seen.json"))["posted"]:
+        a = k.split("|")
+        if len(a) >= 3 and a[1] in ("Sep-26", "Jun-26", "Mar-26", "Dec-25") and not k.startswith("NSE"):
+            (stubs if a[2] in ("na", "nocons", "incomplete", "anomaly", "unverified") else cards).setdefault(a[0], k)
+            if a[2] in ("na", "nocons", "incomplete", "anomaly", "unverified"): stubs[a[0]] = k
+except Exception as e:
+    print("seen.json read error", repr(e)[:60])
 nse_posted = set()
 try:
     nse_posted = {k.split("|")[1] for k in json.load(open("state/nse_results.json"))["posted"]}
