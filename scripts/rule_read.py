@@ -457,8 +457,15 @@ def _col_status(d, i, unit):
         return None
     e = [0.0] if exc in (None, 0.0) else [exc, -exc]
     a = [0.0] if asc in (None, 0.0) else [asc]      # 14 Nov (Raideep): with a non-zero share of associates the headline profit must INCLUDE it; accepting [asc, 0.0] let the pre-associates profit pass (5.23 instead of 48.32)
-    c1 = any(_tol(ti - ex + x, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x, pbt, unit) for x in e))
+    def _c1(extra):
+        return any(_tol(ti - ex + x + extra, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x + extra, pbt, unit) for x in e))
+    c1 = _c1(0.0)
     c2 = any(_tol(pbt - tax + y, pat, unit) for y in a)
+    if asc not in (None, 0.0) and not (c1 and c2):
+        # 15 Nov (AIA Engineering): some statements show the share of joint ventures / associates ABOVE profit before tax (so PBT already includes it: total income - expenses + share = PBT, PBT - tax = PAT).
+        # The share must be counted exactly once, in one place or the other, so the Raideep rule (never ignore a non-zero share) still holds.
+        if _c1(asc) and any(_tol(pbt - tax, pat, unit) for _ in (0,)):
+            c1 = c2 = True
     if not c2 and getattr(_RELAX, "on", False) and asc in (None, 0.0):
         c2 = (pbt > 0 and -0.3 * pbt <= pat <= 1.6 * pbt) or (pbt <= 0 and pat <= 0.5 * abs(pbt) + 1.5)
     return bool(c1 and c2)
