@@ -73,6 +73,12 @@ for sym in mine:
         out, err = rr.read_pdf(small, x.get("attchmntText") or "", QH)
         if out is None and small is not c and len(c) <= 40_000_000:
             out, err = rr.read_pdf(c, x.get("attchmntText") or "", QH)
+        if out is None and "no quarter columns" in (err or ""):      # half-yearly filers: production reads them in half-year mode (nse_results._looks_half), so the replay must too
+            out, err = rr.read_pdf(small, x.get("attchmntText") or "", QH, allow_half=True)
+            if out is None and small is not c and len(c) <= 40_000_000:
+                out, err = rr.read_pdf(c, x.get("attchmntText") or "", QH, allow_half=True)
+            if out is not None:
+                rec["half"] = True
         rec["read_secs"] = round(time.time() - t1, 1)
         tr = truth_for(sym)
         rec["truth_bases"] = sorted(tr)
