@@ -26,5 +26,11 @@ for sym, url in rows:
     elif txt == 0: cause = "no_text_no_images"
     else: cause = "text_but_no_income_rows"
     cnt[cause] += 1
+    if cause == "table_present_reader_missed":
+        for i, p in enumerate(d):
+            t = p.get_text() or ""
+            m = re.search(r"[^\n]*(revenue\s+from\s+operations|total\s+income)[^\n]*\n?[^\n]*", t, re.I)
+            if m:
+                print("RCAPG", sym, "first_income_page_idx=%d" % i, "of", n, "|", repr(m.group(0)[:120])); break
     print("RCA", sym, cause, f"pages={n} textpages={txt} imgpages={imgp}", dict(hits), url.rsplit("/", 1)[-1][:60])
 print("RCASUM", json.dumps(cnt))
