@@ -111,7 +111,7 @@ for sym in mine:
         rec["outcome"] = "error:" + repr(e)[:60]
     rec["secs"] = round(time.time() - t0, 1)
     res.append(rec)
-    print(sym, rec["outcome"], rec.get("read_secs"), flush=True)
+    print(sym, rec["outcome"], rec.get("read_secs"), (rec.get("detail") if rec["outcome"] == "MISMATCH" else (("read", rec.get("read_bases"), "truth", rec.get("truth_bases"), rec.get("file")) if rec["outcome"] == "WRONG_BASIS" else "")), flush=True)
 json.dump(res, open(os.path.join(OUT, f"replay_{SHARD}.json"), "w"), indent=1)
 import collections
 c = collections.Counter(r["outcome"].split(":")[0] if r["outcome"].startswith("no_parse") else r["outcome"] for r in res)
