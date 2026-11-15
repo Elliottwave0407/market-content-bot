@@ -7,7 +7,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 os.environ["NSE_SME"] = "1"
 import nse_results as nr
 
-START, END = os.environ.get("START", "2026-10-15"), os.environ.get("END", "2026-11-14")
+_t = datetime.utcnow() + timedelta(hours=5, minutes=30)
+START = os.environ.get("START") or (_t - timedelta(days=2)).strftime("%Y-%m-%d")
+END = os.environ.get("END") or _t.strftime("%Y-%m-%d")
 d0, d1 = datetime.strptime(START, "%Y-%m-%d"), datetime.strptime(END, "%Y-%m-%d")
 rows, day = [], d0
 while day <= d1:
@@ -71,3 +73,12 @@ cls = collections.Counter(("no_bse_code" if not m[1] else "has_bse_code") for m 
 print("MISSING by class:", dict(cls), flush=True)
 for m in sorted(miss, key=lambda z: z[2] or ""): print("MISS", *m, sep=" | ", flush=True)
 for s in stub[:80]: print("STUB", s[0], s[1], s[2][40:210], flush=True)
+
+if os.environ.get("WRITE") == "1":      # the 'filed but no card' watch: anything filed more than 60 min ago with no card (numbers or stub)
+    now = datetime.now(nr.IST); out = []
+    for m in miss:
+        try: age = (now - datetime.strptime(m[2], "%d-%b-%Y %H:%M:%S").replace(tzinfo=nr.IST)).total_seconds() / 60
+        except Exception: age = 0
+        if age >= 60: out.append({"symbol": m[0], "bse": m[1], "filed": m[2], "age_min": round(age), "why": m[3], "text": m[4]})
+    json.dump({"asof": now.strftime("%Y-%m-%d %H:%M IST"), "universe": len(seen), "numbers_cards": len(ok), "stub_cards": len(stub), "uncovered": out}, open("state/uncovered.json", "w"), indent=1)
+    print("WROTE state/uncovered.json uncovered", len(out), flush=True)
