@@ -78,6 +78,7 @@ for sym in mine:
         rec["truth_bases"] = sorted(tr)
         if out is None:
             rec["outcome"] = "no_parse:" + re.sub(r"\d+", "N", (err or "")[:60])
+            print("FAIL", sym, x.get("attchmntFile"), "|", (err or "")[:420].replace("\n", " "), flush=True)
         else:
             k = pc.K.get(str(out.get("unit", "")).lower())
             got = {}
