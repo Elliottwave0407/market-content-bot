@@ -40,7 +40,7 @@ if os.environ.get("DUMP", "1") == "1":
             print(f"--- {'OCR' if ocr else 'TEXT'} page {pno + 1}: rows={len(rws)}", flush=True)
             for r_ in rws[:70]:
                 lb, nums = rr.split_row(r_)
-                print("   ", repr(lb[:60]), nums, flush=True)
+                print("   ", repr(lb[:60] + ("  ...  " + lb[-45:] if len(lb) > 70 else "")), nums, flush=True)
 
 # raw tokens of the profit / tax rows (OCR garble hunting)
 for ocr in (True,):
