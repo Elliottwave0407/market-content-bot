@@ -28,6 +28,39 @@ def _isnum(w):
     return bool(NUMRE.match(w))
 
 
+def _deskew(ws):
+    """A scanned page that is a fraction of a degree off makes the numbers at the right end of a row sit a few points above or below
+    its label, so label and numbers fall into different rows (15 Nov RCA: 'Total Income' and its figures split, Bhandari Hosiery).
+    Find the tilt whose horizontal projection of word centres is sharpest and straighten the y values by it. Only applied when it
+    clearly helps; a straight page is returned unchanged."""
+    import math
+    if len(ws) < 60:
+        return ws
+    xs = [(w[0] + w[2]) / 2 for w in ws]
+    ys = [(w[1] + w[3]) / 2 for w in ws]
+    hs = sorted(max(1.0, w[3] - w[1]) for w in ws)
+    bin_ = max(1.0, hs[len(hs) // 2] * 0.5)
+    x0 = sum(xs) / len(xs)
+
+    def score(t):
+        cnt = {}
+        for x, y in zip(xs, ys):
+            k = int((y - (x - x0) * t) / bin_)
+            cnt[k] = cnt.get(k, 0) + 1
+        return sum(c * c for c in cnt.values())
+
+    base = score(0.0)
+    best_t, best = 0.0, base
+    for i in range(-30, 31):          # -1.5 .. +1.5 degrees in 0.05 steps
+        t = math.tan(math.radians(i * 0.05))
+        sc = score(t)
+        if sc > best:
+            best_t, best = t, sc
+    if best_t == 0.0 or best < base * 1.05:
+        return ws
+    return [(w[0], w[1] - ((w[0] + w[2]) / 2 - x0) * best_t, w[2], w[3] - ((w[0] + w[2]) / 2 - x0) * best_t) + tuple(w[4:]) for w in ws]
+
+
 def rows_of(page, rot=0):
     """Words of a page grouped into visual rows. rot 90 / 270: the page content is drawn sideways (landscape tables)."""
     ws0 = page.get_text("words")
@@ -42,6 +75,7 @@ def rows_of(page, rot=0):
             ws.append((-w[3], cx - (w[2] - w[0]) / 2, -w[1], cx + (w[2] - w[0]) / 2) + tuple(w[4:]))
         else:                # text runs top-to-bottom
             ws.append((w[1], -cx - (w[2] - w[0]) / 2, w[3], -cx + (w[2] - w[0]) / 2) + tuple(w[4:]))
+    ws = _deskew(ws)
     ws.sort(key=lambda w: ((w[1] + w[3]) / 2, w[0]))
     rows, cur, cy = [], [], None
     for w in ws:
