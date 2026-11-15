@@ -373,7 +373,7 @@ def _candidates(rows):
     c["total_income"] = _all_matches(rows, [r"^total income\b(?! from operations)", r"^total revenue\b(?! from operations)"], n=n, avoid=("from operations", "segment"))[:1]
     c["other_income"] = _all_matches(rows, [r"^other income"], n=n)[:1]
     c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
-    c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
+    c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^financial costs?", r"^finance cost\b", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
     c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
     c["exceptional"] = _all_matches(rows, [r"^exception"], n=n)[:1]
     pbs = _all_matches(rows, [r"before tax", r"before income tax"], n=n, avoid=("exceptional", "extraordinary", "associate", "joint venture", "share of", "discontinued"))
