@@ -117,7 +117,7 @@ def clean_label(s):
     s = re.sub(r"\s+", " ", s).strip()
     s = s.replace("lncome", "income").replace("incorne", "income")      # RapidOCR / tesseract read the capital I as l
     for _ in range(4):
-        s2 = re.sub(r"^(\(?[a-z]{1,2}\)|\([ivx]{1,4}\)|[ivx]{1,4}\)|\d{1,2}\.|\d{1,2}\)|[-–•*]+)\s*", "", s)
+        s2 = re.sub(r"^(\(?[a-z]{1,2}\)|\(\d{1,2}\)|\([ivx]{1,4}\)|[ivx]{1,4}\)|\d{1,2}\.|\d{1,2}\)|[-–•*]+)\s*", "", s)
         s2 = re.sub(r"^\d{1,2}\s+(?=[a-z(])", "", s2)
         s2 = re.sub(r"^(?:i{1,3}|iv|vi{0,3}|ix|x)(?:\.|\s)\s*(?=[a-z(])", "", s2)
         s2 = re.sub(r"^(add|less|plus)\s*[:\-]\s*", "", s2)
