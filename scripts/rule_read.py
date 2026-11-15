@@ -191,7 +191,71 @@ class OcrPage:
         return " ".join(w[4] for w in self._w)
 
 
+
+_RAPID = {"eng": None, "bad": False}
+_VOCAB = set("""revenue from operations operation other income total expenses expense cost costs of materials material consumed purchases purchase stock in trade changes inventories inventory finished goods work progress employee employees benefit benefits finance depreciation amortisation amortization and profit loss before after tax exceptional extraordinary items item for the period year quarter half ended months six three net sales comprehensive per equity share basic diluted earnings paid up capital face value reserves current deferred prior earlier years attributable owners non controlling interests minority associates joint ventures share associate consolidated standalone unaudited audited statement results financial continuing discontinued operation discontinuing ordinary activities interest on borrowings provisions provision write off exchange fluctuation gain gains losses fair measurement remeasurement defined plans that will not be reclassified to or items reclassified comprise comprising rs lakhs lakh crores crore million thousands amount in inr less add a an by with at as is are on net sale operating expenditure excess under over other liabilities assets investments investment subsidiaries impairment diminution value writeoff bad debts doubtful debts trade receivables written off""".split())
+
+
+def _segment(t):
+    """RapidOCR drops the spaces inside long printed labels ('Revenuefromoperations'): put them back using the finance vocabulary. Anything not segmentable is returned unchanged."""
+    if " " in t or len(t) < 9:
+        return t
+    if not t.isalpha():
+        return re.sub(r"[A-Za-z]{9,}", lambda m: _segment(m.group(0)), t)
+    low = t.lower(); n = len(low)
+    best = [None] * (n + 1); best[0] = (0, [])
+    for i in range(1, n + 1):
+        for j in range(max(0, i - 14), i):
+            if best[j] is None: continue
+            w = low[j:i]
+            if w in _VOCAB:
+                sc = best[j][0] + len(w) ** 2
+                if best[i] is None or sc > best[i][0]:
+                    best[i] = (sc, best[j][1] + [(j, i)])
+    if best[n] is None: return t
+    return " ".join(t[a:b] for a, b in best[n][1])
+
+
+def _rapid_words(pg, angle=0, dpi=200):
+    """RapidOCR (PaddleOCR models on onnxruntime, free, CPU): far better than tesseract on ruled/shaded result tables. Returns (words, mean confidence) in the tesseract tuple format, or None if unavailable."""
+    import numpy as np
+    import fitz
+    if _RAPID["bad"]:
+        return None
+    try:
+        if _RAPID["eng"] is None:
+            from rapidocr_onnxruntime import RapidOCR
+            _RAPID["eng"] = RapidOCR()
+    except Exception:
+        _RAPID["bad"] = True
+        return None
+    sc = dpi / 72.0
+    pix = pg.get_pixmap(matrix=fitz.Matrix(sc, sc), colorspace=fitz.csRGB)
+    im = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, 3)
+    if angle:
+        im = np.ascontiguousarray(np.rot90(im, k=(angle // 90) % 4))
+    res, _ = _RAPID["eng"](im)
+    out, confs = [], []
+    for box, txt, cf in (res or []):
+        txt = txt.replace("|", " ").replace("\u20b9", "").strip()
+        if not txt: continue
+        xs = [q[0] for q in box]; ys = [q[1] for q in box]
+        x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+        toks = [_segment(t) for t in txt.split()]
+        toks = " ".join(toks).split()
+        tot = sum(len(t) for t in toks) or 1; cx = x0
+        for t in toks:
+            wd = (x1 - x0) * len(t) / tot
+            out.append((cx / sc, y0 / sc, (cx + wd) / sc, y1 / sc, t, 0, 0, 0)); cx += wd
+        confs.append(float(cf) * 100)
+    return out, (sum(confs) / len(confs) if confs else 0)
+
+
 def _ocr_words(pg, angle=0, dpi=300):
+    if os.environ.get("RULE_OCR_ENGINE") == "rapid":
+        rw = _rapid_words(pg, angle)
+        if rw is not None:
+            return rw
     import subprocess, tempfile
     import fitz
     sc = dpi / 72.0
