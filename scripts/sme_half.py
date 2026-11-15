@@ -52,10 +52,10 @@ def read_half_card(content, key, name=""):
                 small = content
             out, err2 = nr_.read_pdf(small, prompt=HALF, timeout=120)
             if out is not None: p("  half-year read by the NVIDIA backup (Gemini unavailable)")
-            else: err = f"{str(err)[:50]} | {str(err2)[:60]}"
+            else: err = f"{str(err)[:40]} | {str(err2)[:300]}"
         except Exception as e_:
             err = f"{str(err)[:50]} | nim error {repr(e_)[:40]}"
-    if out is None: return None, "pdf read failed: " + str(err)[:110]
+    if out is None: return None, "pdf read failed: " + str(err)[:380]
     k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
     p("  columns read:", cols, out.get("column_headings"), "unit", out.get("unit"))
     qe = [pc.parse_qend(x) for x in cols[:3]]
