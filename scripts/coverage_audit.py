@@ -43,6 +43,8 @@ try:      # seen.json 'posted' holds every card key, including stubs ('code|Sep-
 except Exception as e:
     print("seen.json read error", repr(e)[:60])
 nse_posted = set()
+try: done_ids = set(map(str, json.load(open("state/nse_results.json"))["done"]))
+except Exception: done_ids = set()
 try:
     nse_posted = {k.split("|")[1] for k in json.load(open("state/nse_results.json"))["posted"]}
 except Exception: pass
@@ -62,7 +64,8 @@ for x in rows:
     elif code and code in stubs: stub.append((sym, code, stubs[code]))
     else:
         board = "SME" if "emerge" in (x.get("smIndustry") or "").lower() or x.get("sm_isin", "")[:0] == "x" else "?"
-        miss.append((sym, code, x.get("an_dt"), (x.get("desc") or "")[:30], (x.get("attchmntText") or "")[:110].replace("\n", " ")))
+        why = ("nse_done_no_card" if str(x.get("seq_id")) in done_ids else "never_processed_by_nse_route") + ("|bank_or_ins" if nr._fin_sym(sym) else "") + ("|sme_index" if (x.get("smIndustry") is not None and not code) else "")
+        miss.append((sym, code, x.get("an_dt"), why, (x.get("attchmntText") or "")[:90].replace("\n", " ")))
 print(f"UNIVERSE {len(seen)} companies | with a numbers card {len(ok)} | stub card only {len(stub)} | NO CARD {len(miss)}", flush=True)
 cls = collections.Counter(("no_bse_code" if not m[1] else "has_bse_code") for m in miss)
 print("MISSING by class:", dict(cls), flush=True)
