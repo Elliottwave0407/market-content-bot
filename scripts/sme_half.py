@@ -37,6 +37,7 @@ def read_half_card(content, key, name=""):
     if os.environ.get("HALF_NIM_ONLY") != "1":
         try:      # 15 Nov: rule reader first (no LLM, no quota, milliseconds on a text layer); every number still passes the strict arithmetic gate
             import rule_read as rr_
+            os.environ.setdefault("RULE_OCR_ENGINE", "rapid")      # RapidOCR for the half-year statements only (tesseract garbles their ruled tables); quarterly reads keep their engine until the replay shows no regression
             rout, rwhy = rr_.read_pdf(content, "", None, allow_half=True)
             if rout is not None and rout.get("_half"):
                 out = rout; p("  half-year read by the rule reader")
