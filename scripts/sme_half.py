@@ -51,6 +51,16 @@ def read_half_card(content, key, name=""):
             except Exception:
                 small = content
             out, err2 = nr_.read_pdf(small, prompt=HALF, timeout=120)
+            if out is None and "not found in the filing text" in str(err2):
+                # garbled text layer (digits mis-encoded): read the OCR text of the same pages instead; the same 'every number must be printed' guard applies
+                try:
+                    import rule_read as rr_
+                    pages_ = rr_._pdf_rows(small, ocr=True); otxt = "\n".join(f"[PAGE {i_+1} TEXT]\n{t_}" for i_, (t_, _r) in enumerate(pages_))
+                    orig_ = nr_.pdf_text; nr_.pdf_text = lambda b, limit=45000: otxt[:limit]
+                    try: out, err2 = nr_.read_pdf(small, prompt=HALF, timeout=120)
+                    finally: nr_.pdf_text = orig_
+                except Exception as e2_:
+                    err2 = f"{str(err2)[:120]} | ocr retry error {repr(e2_)[:60]}"
             if out is not None: p("  half-year read by the NVIDIA backup (Gemini unavailable)")
             else: err = f"{str(err)[:40]} | {str(err2)[:300]}"
         except Exception as e_:
