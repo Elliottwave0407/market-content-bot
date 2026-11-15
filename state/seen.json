@@ -2583,20 +2583,20 @@
 "761a8201-1c29-423e-a478-89cc0e9d7265",
 "14966738-7410-415c-b0ba-e1da0124e4df",
 "cb248c66-0448-49ad-ae8b-c154e1f5d95d",
-"ee4dc38f-f9d0-43b1-8c48-d7865ebde9d5"
+"ee4dc38f-f9d0-43b1-8c48-d7865ebde9d5",
+"9adba069-f918-430e-8db0-c3eb9c7c40e8",
+"8d9fb88c-efaa-4062-a490-39630687fba1",
+"5160e34c-a60e-45fb-9243-4f8ec37a6bea",
+"485ab4c8-e795-4e3f-9655-dba69691715f",
+"afa7edb4-669c-4c0b-8184-24b8aa3e0f58",
+"58d278be-5f99-4341-a455-049d56369a8f",
+"485e7422-8f5b-45a4-b1c0-4d4a4ddbc59c",
+"6f506d81-3051-4d01-a503-1f43274e3573",
+"0a91b742-cb25-4223-97d1-14c4eeca1672",
+"bebaa3ac-89f7-4aff-b735-e37376ed1120",
+"ef052c6c-cb1e-485b-99e5-79666f4ef1ed"
 ],
 "posted": [
-"539773|Sep-26|consolidated",
-"590003|Sep-26|standalone",
-"543933|Sep-26|consolidated",
-"532755|Sep-26|consolidated",
-"543235|Sep-26|consolidated",
-"543426|Sep-26|consolidated",
-"521070|Sep-26|consolidated",
-"542760|Sep-26|consolidated",
-"500314|Sep-26|consolidated",
-"532402|Sep-26|consolidated",
-"544757|Sep-26|standalone",
 "504370|Sep-26|na",
 "531841|Sep-26|na",
 "523754|Sep-26|consolidated",
@@ -7585,14 +7585,25 @@
 "543305|Sep-26|na",
 "531013|Sep-26|na",
 "523218|Sep-26|standalone",
-"543579|Sep-26|na"
+"543579|Sep-26|na",
+"535730|Sep-26|consolidated",
+"538874|Sep-26|standalone",
+"540243|Sep-26|standalone",
+"523790|Sep-26|consolidated",
+"542865|Sep-26|consolidated",
+"526662|Sep-26|consolidated",
+"531946|Sep-26|consolidated",
+"540914|Sep-26|standalone",
+"533189|Sep-26|consolidated",
+"524764|Sep-26|standalone",
+"532441|Sep-26|standalone"
 ],
 "pending": {},
 "gem_use": {
 "2026-11-11": 243,
 "2026-11-12": 652,
 "2026-11-13": 789,
-"2026-11-14": 652
+"2026-11-14": 656
 },
 "gem_key_use": {
 "2026-11-12": {
@@ -7652,12 +7663,12 @@
 },
 "concall-key": {
 "ok": 431,
-"429": 35,
+"429": 37,
 "other": 93
 },
 "vision-key": {
 "ok": 415,
-"429": 28,
+"429": 30,
 "other": 69
 }
 }
@@ -8185,7 +8196,8 @@
 "e9c42477-00b9-48b6-9ba5-06baa762d5b1": 1,
 "d81ebeb5-1e30-444d-87df-b06a490dd3a7": 1,
 "3bf27ca2-68ab-4c9d-8eca-53a87a39c0d3": 1,
-"cb248c66-0448-49ad-ae8b-c154e1f5d95d": 1
+"cb248c66-0448-49ad-ae8b-c154e1f5d95d": 1,
+"0a91b742-cb25-4223-97d1-14c4eeca1672": 1
 },
 "cons_expected": {
 "b6a3c238-bd8e-40f6-b5ce-bacfb15b5fe9": 1,
@@ -8769,7 +8781,8 @@
 "d8799313-5d20-4d0b-ae3b-7213cb696b2e": 1,
 "e1214491-fc92-4aed-b932-e740de53827d": 1,
 "3e518e9e-c4b5-407f-b760-b459c4e98538": 1,
-"74b76c4a-39a8-42ce-8afa-dc239a36252c": 1
+"74b76c4a-39a8-42ce-8afa-dc239a36252c": 1,
+"58d278be-5f99-4341-a455-049d56369a8f": 1
 },
 "lag": [
 [
@@ -9982,7 +9995,7 @@
 "rev": 211.06,
 "pat": 465.13,
 "t": 1794551979.8204956,
-"last": 1794723345.9351382
+"last": 1794723737.346258
 },
 "532855|Sep-26|standalone": {
 "code": "532855",
@@ -9992,7 +10005,7 @@
 "rev": 66.80499999999999,
 "pat": 47.407000000000004,
 "t": 1794552290.629462,
-"last": 1794723345.9351382
+"last": 1794723737.346258
 },
 "544425|Sep-26|consolidated": {
 "code": "544425",
@@ -10002,7 +10015,7 @@
 "rev": 1123.419,
 "pat": 28.485000000000003,
 "t": 1794556973.295969,
-"last": 1794723345.9351382
+"last": 1794723737.346258
 },
 "536073|Sep-26|standalone": {
 "code": "536073",
@@ -10012,7 +10025,7 @@
 "rev": 7.838,
 "pat": 6.729000000000001,
 "t": 1794557475.7357166,
-"last": 1794723345.9351382
+"last": 1794723737.346258
 },
 "531091|Sep-26|standalone": {
 "code": "531091",
@@ -10782,37 +10795,7 @@
 "rev": 842.3360000000001,
 "pat": 100.81,
 "t": 1794669726.0554886,
-"last": 1794681418.2347636
-},
-"544861|Sep-26|consolidated": {
-"code": "544861",
-"name": "Swaraj Suiting Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 2195.2200000000003,
-"pat": 172.882,
-"t": 1794669934.6753762,
-"last": 0
-},
-"544626|Sep-26|consolidated": {
-"code": "544626",
-"name": "Exato Technologies Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 588.57,
-"pat": 74.449,
-"t": 1794670091.6247644,
-"last": 0
-},
-"543974|Sep-26|standalone": {
-"code": "543974",
-"name": "Vishnu Prakash R Punglia Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 1681.86,
-"pat": -252.94,
-"t": 1794670341.4080245,
-"last": 0
+"last": 1794723427.1812792
 },
 "532694|Sep-26|consolidated": {
 "code": "532694",
@@ -10822,7 +10805,7 @@
 "rev": 138.906,
 "pat": 3.9030000000000005,
 "t": 1794670486.7789392,
-"last": 0
+"last": 1794723434.8628633
 },
 "531694|Sep-26|consolidated": {
 "code": "531694",
@@ -10832,7 +10815,7 @@
 "rev": 704.984,
 "pat": 20.153000000000002,
 "t": 1794670636.0743978,
-"last": 0
+"last": 1794723434.8628633
 },
 "532022|Sep-26|consolidated": {
 "code": "532022",
@@ -10842,7 +10825,7 @@
 "rev": 205.25500000000002,
 "pat": 1.615,
 "t": 1794670667.2469432,
-"last": 0
+"last": 1794723434.8628633
 },
 "538943|Sep-26|consolidated": {
 "code": "538943",
@@ -10852,7 +10835,7 @@
 "rev": 41.794000000000004,
 "pat": 0.79,
 "t": 1794670822.5046208,
-"last": 0
+"last": 1794723434.8628633
 },
 "531502|Sep-26|standalone": {
 "code": "531502",
@@ -10862,27 +10845,7 @@
 "rev": 69.177,
 "pat": 37.378,
 "t": 1794671018.6355333,
-"last": 0
-},
-"511447|Sep-26|consolidated": {
-"code": "511447",
-"name": "Sylph Industries Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 99.38400000000001,
-"pat": 1.913,
-"t": 1794671768.5569174,
-"last": 0
-},
-"532686|Sep-26|consolidated": {
-"code": "532686",
-"name": "Kernex Microsystems India Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 5426.317,
-"pat": 1290.083,
-"t": 1794672584.092814,
-"last": 0
+"last": 1794723437.8641455
 },
 "543272|Sep-26|consolidated": {
 "code": "543272",
@@ -10892,27 +10855,7 @@
 "rev": 1579.92,
 "pat": -5.65,
 "t": 1794672608.9970555,
-"last": 0
-},
-"533632|Sep-26|consolidated": {
-"code": "533632",
-"name": "Onelife Capital Advisors Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 77.462,
-"pat": 32.336000000000006,
-"t": 1794672705.3020432,
-"last": 0
-},
-"512634|Sep-26|standalone": {
-"code": "512634",
-"name": "Savera Industries Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 292.324,
-"pat": 34.021,
-"t": 1794672814.4361691,
-"last": 0
+"last": 1794723437.8641455
 },
 "540358|Sep-26|consolidated": {
 "code": "540358",
@@ -10922,7 +10865,7 @@
 "rev": 889.0790000000002,
 "pat": 83.174,
 "t": 1794672879.042868,
-"last": 0
+"last": 1794723443.010076
 },
 "526231|Sep-26|standalone": {
 "code": "526231",
@@ -10932,47 +10875,7 @@
 "rev": 1135.679,
 "pat": 79.99600000000001,
 "t": 1794673012.4843645,
-"last": 0
-},
-"541347|Sep-26|standalone": {
-"code": "541347",
-"name": "Parvati Sweetners and Power Ltd",
-"basis": "standalone",
-"q": 131,
-"rev": 137.334,
-"pat": -20.305000000000003,
-"t": 1794673117.2628515,
-"last": 0
-},
-"540809|Sep-26|consolidated": {
-"code": "540809",
-"name": "MRC Agrotech Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 190.08,
-"pat": 1.797,
-"t": 1794673169.3658912,
-"last": 0
-},
-"526365|Sep-26|consolidated": {
-"code": "526365",
-"name": "Swarnsarita Jewels India Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 2415.446,
-"pat": 0.734,
-"t": 1794673236.9337084,
-"last": 0
-},
-"523842|Sep-26|consolidated": {
-"code": "523842",
-"name": "Super Tannery Ltd",
-"basis": "consolidated",
-"q": 131,
-"rev": 783.464,
-"pat": 28.475,
-"t": 1794673423.2581584,
-"last": 0
+"last": 1794723443.010076
 },
 "519566|Sep-26|consolidated": {
 "code": "519566",
@@ -11732,6 +11635,66 @@
 "rev": 0.0,
 "pat": -1.359,
 "t": 1794723333.1647148,
+"last": 0
+},
+"535730|Sep-26|consolidated": {
+"code": "535730",
+"name": "Khoobsurat Ltd",
+"basis": "consolidated",
+"q": 131,
+"rev": 3.3310000000000004,
+"pat": -15.493000000000002,
+"t": 1794723514.5231621,
+"last": 0
+},
+"538874|Sep-26|standalone": {
+"code": "538874",
+"name": "Nexus Surgical And Medicare Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 37.087,
+"pat": 1.7010000000000003,
+"t": 1794723522.8123548,
+"last": 0
+},
+"540243|Sep-26|standalone": {
+"code": "540243",
+"name": "New Light Industries Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 73.44800000000001,
+"pat": 0.952,
+"t": 1794723531.0885942,
+"last": 0
+},
+"540914|Sep-26|standalone": {
+"code": "540914",
+"name": "SRU Steels Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": -1.447,
+"t": 1794723693.2551434,
+"last": 0
+},
+"524764|Sep-26|standalone": {
+"code": "524764",
+"name": "Nutraplus India Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 0.0,
+"pat": -0.147,
+"t": 1794723724.1919467,
+"last": 0
+},
+"532441|Sep-26|standalone": {
+"code": "532441",
+"name": "Rainbow Denim Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 956.271,
+"pat": 101.418,
+"t": 1794723731.2385428,
 "last": 0
 }
 },
@@ -13139,50 +13102,6 @@
 },
 "audit": [
 [
-"Choksi Asia Ltd",
-"ok"
-],
-[
-"Eyantra Ventures Ltd",
-"ok"
-],
-[
-"Mudunuru Ltd",
-"ok"
-],
-[
-"Ashirwad Capital Ltd",
-"ok"
-],
-[
-"Sunil Agro Foods Ltd-$",
-"ok"
-],
-[
-"Mukat Pipes Ltd-$",
-"ok"
-],
-[
-"B.C. Power Controls Ltd",
-"ok"
-],
-[
-"VK Global Industries Ltd",
-"ok"
-],
-[
-"Stanley Lifestyles Ltd",
-"ok"
-],
-[
-"KSE Ltd-$",
-"ok"
-],
-[
-"Response Informatics Ltd",
-"ok"
-],
-[
 "Surya India Ltd",
 "diff"
 ],
@@ -14336,6 +14255,50 @@
 ],
 [
 "Allcargo Global Ltd",
+"ok"
+],
+[
+"Swaraj Suiting Ltd",
+"ok"
+],
+[
+"Exato Technologies Ltd",
+"ok"
+],
+[
+"Vishnu Prakash R Punglia Ltd",
+"ok"
+],
+[
+"Sylph Industries Ltd",
+"ok"
+],
+[
+"Kernex Microsystems India Ltd",
+"ok"
+],
+[
+"Onelife Capital Advisors Ltd",
+"diff"
+],
+[
+"Savera Industries Ltd",
+"ok"
+],
+[
+"Parvati Sweetners and Power Ltd",
+"ok"
+],
+[
+"MRC Agrotech Ltd",
+"ok"
+],
+[
+"Swarnsarita Jewels India Ltd",
+"ok"
+],
+[
+"Super Tannery Ltd",
 "ok"
 ]
 ]
