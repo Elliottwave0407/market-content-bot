@@ -34,7 +34,16 @@ def sme_ok(d, i):
 def read_half_card(content, key, name=""):
     """-> (dict(basis, q, quarters), 'ok') or (None, reason). Reads a half-yearly results PDF (SME). Columns: current half | preceding half | same half last year."""
     out, err = gr.read_pdf(key, pc.MODEL, content, tries=int(os.environ.get("PDF_TRIES", "3")), timeout=120, prompt=HALF)
-    if out is None: return None, "pdf read failed: " + str(err)[:70]
+    if out is None:
+        # 15 Nov (Anondita): Gemini quota was exhausted for hours and the half-year card never posted. Fall back to the free NVIDIA text reader (every number it returns must appear in the filing text, then the same arithmetic gate below applies).
+        try:
+            import nim_read as nr_
+            out, err2 = nr_.read_pdf(content, prompt=HALF, timeout=90)
+            if out is not None: p("  half-year read by the NVIDIA backup (Gemini unavailable)")
+            else: err = f"{str(err)[:50]} | {str(err2)[:60]}"
+        except Exception as e_:
+            err = f"{str(err)[:50]} | nim error {repr(e_)[:40]}"
+    if out is None: return None, "pdf read failed: " + str(err)[:110]
     k = pc.K.get(str(out.get("unit", "")).lower()); cols = out.get("quarter_end_columns") or []
     p("  columns read:", cols, out.get("column_headings"), "unit", out.get("unit"))
     qe = [pc.parse_qend(x) for x in cols[:3]]
