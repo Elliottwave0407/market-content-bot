@@ -38,3 +38,19 @@ for idx in ("sme", "debt"):
         print(f"INDEX {idx} {ds}: status {r.status_code}, {len(rows)} rows, {len(mine)} for {sym}", flush=True)
         for x in mine:
             print("    ", x.get("an_dt"), "|", x.get("desc"), "|", x.get("attchmntFile"), "|", (x.get("attchmntText") or "")[:200].replace("\n", " "), flush=True)
+
+# 15 Nov: why does the live poller skip these? print seq_id, done-state, BSE code, filters
+try:
+    import json
+    st = json.load(open("state/nse_results.json")); done = set(map(str, st["done"]))
+    maps = nr.bse_maps()
+    for d_ in os.environ.get("DAYS", "").split(","):
+        if not d_.strip(): continue
+        day_ = datetime.strptime(d_.strip(), "%Y-%m-%d").replace(tzinfo=nr.IST)
+        allr = nr.fetch_day(day_)
+        for x in allr:
+            if sym.upper() in (x.get("symbol") or "").upper():
+                kept = x in nr.result_rows([x])
+                print("DBG seq", x.get("seq_id"), "in_done", str(x.get("seq_id")) in done, "kept_by_result_rows", kept, "bse_code", nr.bse_code(x, maps) if maps else None, "fin_sym", nr._fin_sym(x["symbol"]), x.get("desc"), flush=True)
+except Exception as e:
+    print("DBG error", repr(e)[:200], flush=True)
