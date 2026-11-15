@@ -573,6 +573,9 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
             mm = re.search(r"ended\s*(?:on\s*)?([^\n]{0,28})", low + " " + first_page_txt[:2500].lower())
             dd_ = _dates(mm.group(1)) if mm else []
             if dd_ and int(dd_[0].split(".")[1]) in (3, 9): cur = dd_[0]
+        if cur is None:      # last resort: the latest half-year-end date printed on the statement page (title 'AS AT 30 SEP 2026', 'Half year ended September 30, 2026')
+            cand = [d_ for d_ in _dates(first_page_txt[:3500] + " " + htxt) if int(d_.split(".")[1]) in (3, 9)]
+            if cand: cur = max(cand, key=_mi)
         if cur is None:
             return None, "rule: half-year column dates not found"
         ds = [cur, _dt(_mi(cur) - 6), _dt(_mi(cur) - 12)]
