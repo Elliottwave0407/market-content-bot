@@ -427,7 +427,7 @@ def _candidates(rows):
     if not tx:      # 14 Nov (Kernex): OCR lost one printed number of the total-tax row; accept it left-aligned only if the statement then reconciles in all three columns (checked later)
         tx = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"^total tax expenses?", r"^total tax", r"^tax expenses?", r"^total income tax"], start=max(0, start - 1), avoid=("before", "deferred tax asset", "relating to")) if n - 2 <= len(nm_) < n]
     c["tax"] = tx[:1]
-    c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n)[:1]
+    c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n, avoid=("before", "after share", "attributable"))[:1]      # 15 Nov (AIA Engineering): the subtotal 'Profit BEFORE share of profit of joint venture, exceptional item and tax' was taken as the associates figure, so consolidated never reconciled
     pi = pbs[0][0] if pbs else 0
     pats = _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)", r"(profit|loss).{0,30}continuing operations"], start=pi + 1, n=n,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit"))
