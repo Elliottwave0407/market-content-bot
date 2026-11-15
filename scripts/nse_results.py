@@ -521,7 +521,7 @@ def run_once(day=None, maxn=3):
     """One pass. Returns True if state changed."""
     st = load()
     now = datetime.now(IST)
-    days = [day] if day else [now] + ([now - timedelta(days=1)] if now.hour < 3 else [])
+    days = [day] if day else [now, now - timedelta(days=1)]      # 15 Nov RCA (Anondita): yesterday was fetched only before 03:00 IST, so a filing that failed its first tries was never retried once the date rolled; MAX_AGE_H still bounds how old a filing may be
     rows = []
     for d in days:
         rows += result_rows(fetch_day(d))
