@@ -113,8 +113,13 @@ def _tok(t):
     return t
 
 
+_PUNCT_ONLY = re.compile(r"^[|¦»«~!\[\]{}:;_'`‘’“”,*#=<>\\/]+$")
+
+
 def split_row(row):
-    toks = [_tok(w[4]) for w in row]
+    # 15 Nov RCA: a lone border or punctuation mark ('|', ':', '»') sitting between or after the figures cut the row there and pushed the
+    # earlier figures into the label, so the revenue row looked like it had 0-2 numbers (page filter rejected ~half of the skipped filings)
+    toks = [_tok(w[4]) for w in row if not _PUNCT_ONLY.match(w[4])]
     i = len(toks)
     while i > 0 and (_isnum(toks[i - 1]) or toks[i - 1] in NILS):
         i -= 1
@@ -152,6 +157,8 @@ def clean_label(s):
     s = s.replace("lncome", "income").replace("incorne", "income")      # RapidOCR / tesseract read the capital I as l
     for _ in range(4):
         s2 = re.sub(r"^[\]\[|_{}~]+\s*", "", s)      # 15 Nov RCA: a ruled-table border read as '] Revenue from operations' / '| Revenue ...' hid the row
+        s2 = re.sub(r"^[0-9a-z]{1,3}\s*_*\s*[\]\[|!]+\s*(?=[a-z(])", "", s2)      # '1_|revenue', 'i |revenue', '1 [revenue', '1 !revenue': enumerator + ruled-border mark
+        s2 = re.sub(r"^(?:i{1,3}|iv)(?=(?:revenue|total))", "", s2)      # 'irevenue', 'iiitotal revenue': roman numeral glued to the label
         s2 = re.sub(r"^[a-h]\.\s+(?=[a-z(])", "", s2)      # 15 Nov RCA: 'a. Revenue from operations' (letter-dot enumerator) was not stripped, so the page filter rejected the results page (57 of 99 filings)
         s2 = re.sub(r"^(\(?[a-z]{1,2}\)|\(\d{1,2}\)|\([ivx]{1,4}\)|[ivx]{1,4}\)|\d{1,2}\.|\d{1,2}\)|[-–•*]+)\s*", "", s2)
         s2 = re.sub(r"^\d{1,2}\s+(?=[a-z(])", "", s2)
