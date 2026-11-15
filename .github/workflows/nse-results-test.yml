@@ -8,6 +8,9 @@ on:
       day:
         description: "YYYY-MM-DD (IST)"
         default: "2026-10-16"
+      nim_only:
+        description: "1 = skip Gemini (test the NVIDIA half-year backup)"
+        default: "0"
       send:
         description: "1 = send to Results Corner, 0 = dry run (preview branch)"
         default: "0"
@@ -33,6 +36,7 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           PDF_TRIES: "4"
           NSE_SME: "1"
+          HALF_NIM_ONLY: ${{ github.event.inputs.nim_only }}
           NSE_SEND: ${{ github.event.inputs.send }}
           NSE_ONLY: ${{ github.event.inputs.only }}
           NSE_DAY: ${{ github.event.inputs.day }}
