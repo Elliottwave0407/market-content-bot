@@ -43,7 +43,7 @@ for idx in ("sme", "debt"):
 try:
     import json
     st = json.load(open("state/nse_results.json")); done = set(map(str, st["done"]))
-    maps = nr.bse_maps()
+    os.environ["NSE_SME"] = "1"; maps = nr.bse_maps()
     for d_ in os.environ.get("DAYS", "").split(","):
         if not d_.strip(): continue
         day_ = datetime.strptime(d_.strip(), "%Y-%m-%d").replace(tzinfo=nr.IST)
