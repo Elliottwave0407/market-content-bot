@@ -536,6 +536,8 @@ def _assemble(cands, n, unit, rows):
                     else: garbled = True
             if parts and not garbled:
                 taxopts.append(pad([sum((p[k] or 0.0) for p in parts) for k in range(n)]))
+        # 16 Nov (BTML): statements that print expenses as negatives show the tax rows as -60.48 / -4.40; the sign-flipped option is tried too, and the arithmetic (PBT - tax = PAT in all three columns) decides which one is right
+        taxopts += [pad([None if v is None else -v for v in t]) for t in list(taxopts) if all((v or 0.0) <= 0 for v in t) and any((v or 0.0) < 0 for v in t)]
         for tx in taxopts or [None]:
             d = dict(base)
             d["pbt"] = pad(pb[1]) if pb else [None] * 3
