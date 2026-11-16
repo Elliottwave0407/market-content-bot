@@ -415,18 +415,26 @@ def _candidates(rows):
     c = {"revenue": rv[:1]}
     c["total_income"] = _all_matches(rows, [r"^total income\b(?! from operations)", r"^total revenue\b(?! from operations)"], n=n, avoid=("from operations", "segment"))[:1]
     c["other_income"] = _all_matches(rows, [r"^other income"], n=n)[:1]
-    # 16 Nov (Biocon, BF Investment): the first revenue-like row can be a sub-line; choose the revenue row that ties to total income (revenue + other income = total income, current column), else the largest one not above total income
+    # 16 Nov (Biocon, BF Investment, AJR Infra): the first revenue-like row can be a sub-line. Pick the revenue row that ties to total income (revenue + other income = total income, current column).
+    # Only when none ties AND the row is far below total income - other income, replace it by that difference. Nil-revenue statements (revenue, other income and total income rows all identical) give revenue 0.
+    # Kept narrow: a wider fallback broke Hilinfra, Banarisug and Gaudium IVF in the replay (small gaps are real other operating revenue lines).
     if c["total_income"] and rv:
         t0 = c["total_income"][0][1][0]
-        o0 = (c["other_income"][0][1][0] if c["other_income"] else 0.0) or 0.0
-        if t0 is not None:
-            ok = [r_ for r_ in rv if r_[1][0] is not None and abs(r_[1][0] + o0 - t0) <= max(0.003 * abs(t0), 0.6)]
-            if ok:
-                c["revenue"] = ok[:1]
-            else:      # no revenue row ties: revenue from operations = total income - other income (Biocon: only a sub-line was found)
-                ti_ = c["total_income"][0][1]
-                oi_ = c["other_income"][0][1] if c["other_income"] else [0.0] * len(ti_)
-                c["revenue"] = [(rv[0][0], [None if (a is None) else round(a - (b or 0.0), 2) for a, b in zip(ti_, oi_)])]
+        oi_ = c["other_income"][0][1] if c["other_income"] else None
+        o0 = None if oi_ is None else oi_[0]
+        r0 = rv[0][1][0]
+        if t0 is not None and r0 is not None and t0 > 0:
+            if o0 is not None and abs(o0 - t0) <= 0.003 * t0 and abs(r0 - t0) <= 0.003 * t0:
+                c["revenue"] = [(rv[0][0], [0.0 if x is not None else None for x in rv[0][1]])]
+            else:
+                oo = o0 or 0.0
+                ok = [r_ for r_ in rv if r_[1][0] is not None and abs(r_[1][0] + oo - t0) <= max(0.003 * t0, 0.6)]
+                if ok:
+                    c["revenue"] = ok[:1]
+                elif r0 < (t0 - oo) - 0.05 * t0 and (o0 is None and r0 < 0.75 * t0 or o0 is not None and o0 < 0.5 * t0):
+                    ti_ = c["total_income"][0][1]
+                    oiv = oi_ if oi_ is not None else [0.0] * len(ti_)
+                    c["revenue"] = [(rv[0][0], [None if (x is None) else round(x - (y or 0.0), 2) for x, y in zip(ti_, oiv)])]
     c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
     c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^financial costs?", r"^finance cost\b", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
     c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
