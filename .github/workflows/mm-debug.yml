@@ -1,0 +1,24 @@
+# read-only: compare rule reader vs XBRL for named symbols
+name: mm-debug
+on:
+  workflow_dispatch:
+    inputs:
+      syms:
+        default: "BIOCON,ALLCARGO,AJRINFRA,ALEMBICLTD,BFINVEST,AGASTYAEN,ASPINWALL"
+permissions:
+  contents: read
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y tesseract-ocr >/dev/null
+      - run: pip install -r requirements.txt rapidocr-onnxruntime
+      - run: python scripts/mm_debug.py
+        env:
+          SYMS: ${{ github.event.inputs.syms }}
+          RULE_OCR_ENGINE: rapid
