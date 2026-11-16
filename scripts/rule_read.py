@@ -168,7 +168,32 @@ def clean_label(s):
         if s2 == s:
             break
         s = s2
-    return s.strip(" :")
+    return _fuzzy_label(s.strip(" :"))
+
+
+_CANON = ("revenue from operations", "total income", "other income", "total expenses", "finance costs", "profit before tax", "tax expense", "profit for the period", "net profit for the period", "total tax expense", "depreciation and amortisation expense")
+_CANON_A = {re.sub(r"[^a-z]", "", c_): c_ for c_ in _CANON}
+
+
+def _fuzzy_label(r):
+    """16 Nov (Ambika Cotton, scanned page read by OCR as 'RevenuefromCperalions'): a glued / garbled label is mapped to the canonical statement label when it is at least 90% similar to exactly one of them.
+    Only labels that are not made of ordinary vocabulary words are touched, so real labels are never rewritten."""
+    try:
+        a = re.sub(r"[^a-z]", "", r)
+        if a in _CANON_A and " " not in r:
+            return _CANON_A[a]
+        if len(a) < 9 or len(a) > 40 or a in _CANON_A:
+            return r
+        if " " in r and all(w in _VOCAB for w in re.findall(r"[a-z]+", r)):
+            return r
+        import difflib
+        best = [(difflib.SequenceMatcher(None, a, k).ratio(), k) for k in _CANON_A if abs(len(k) - len(a)) <= 3]
+        best = sorted([b for b in best if b[0] >= 0.9], reverse=True)
+        if len(best) == 1 or (len(best) > 1 and best[0][0] - best[1][0] >= 0.05):
+            return _CANON_A[best[0][1]]
+    except Exception:
+        pass
+    return r
 
 
 def _dates(text):
