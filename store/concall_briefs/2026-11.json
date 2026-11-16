@@ -74701,8 +74701,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 11,
-"A": 10,
-"B": 1,
+"A": 9,
+"B": 2,
 "C": 0,
 "shown": 11
 },
@@ -74765,20 +74765,20 @@
 {
 "cat": "capex",
 "grade": "A",
-"statement": "Large plant at Nagpur with 1500-2000 acres land committed; supplier park land also bought",
-"value": null,
-"period": "next quarter",
-"direction": "up",
-"quote": "We are now going ahead with a very large plant at Nagpur , and we have actually committed to buy close to 1,500 to 2,000 acres of land."
-},
-{
-"cat": "capex",
-"grade": "A",
 "statement": "Adding short-term capacity for next financial year and scouting for large-scale expansion to double footprint",
 "value": null,
 "period": "next quarter",
 "direction": "up",
 "quote": "We are again adding some short-term capacity for the next financial year. But fundamentally, we are also looking at a large-scale capacity expansion."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Large plant at Nagpur with 1500-2000 acres land committed; supplier park land also bought",
+"value": null,
+"period": "next quarter",
+"direction": "up",
+"quote": "We are now going ahead with a very large plant at Nagpur , and we have actually committed to buy close to 1,500 to 2,000 acres of land."
 }
 ],
 "pricing_cost": [
@@ -104487,8 +104487,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 32,
-"A": 24,
-"B": 7,
+"A": 23,
+"B": 8,
 "C": 1,
 "shown": 20
 },
@@ -106864,6 +106864,701 @@
 "period": "H1 FY27",
 "direction": null,
 "quote": "In the first half, operating cash flows before working capital changes was about INR 490 crores, which shows the earnings are converting to cash. We invested about INR 661 crores in working capital to support a business that has been doubled in size and spent about INR 184 crores on investing activities."
+}
+]
+}
+},
+"500620|2026-11-16": {
+"code": "500620",
+"name": "Great Eastern Shipping Company Ltd",
+"day": "2026-11-16",
+"sector": "Services",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 25,
+"A": 13,
+"B": 8,
+"C": 4,
+"shown": 12
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9418f7f2-4b6b-4782-aa1f-aa41d090475d.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management does not provide revenue or earnings guidance because 70-80% of capacity is on spot market and rates are driven by unpredictable geopolitics",
+"value": null,
+"period": "next quarter",
+"direction": null,
+"quote": "We don't do revenue guidance because we don't know what rates our ships will earn. 70%+ of our capacity, close to 80% of our capacity, is open to the spot market."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Crude tanker spot rates have fallen sharply from $350k-400k/day peak to $130k-150k/day currently due to renewed traffic through Strait of Hormuz reducing inefficiencies",
+"value": "$130,000-$150,000 a day",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Suezmaxes, the rates that we are talking about, $350,000 - $400,000 at the peak month ago, are currently at about $130,000-$150,000 a day."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Dry bulk rates profitable but off peaks: Capesizes down from ~$40k/day in September to $30k-35k/day currently, still above prior year",
+"value": "30,000 - 35,000 level",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Capesizes, which were at around 40,000 in September, have now come down to the 30,000 -ish level, 30,000 - 35,000 level."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Product tanker (MR) spot rates around $50k-60k/day, have not yet corrected like crude tankers; LPG spot rates exceptionally strong at ~$140k/day in H1 vs $55k/day prior year",
+"value": "$50,000 to $60,000 a day",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "Product tankers took some more time to react, so now they are at an MR tanker is probably around $50,000 to $60,000 a day."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Added two vessels in last week: 2015-built Kamsarmax Jag Amit and 2015-built VLGC Jag Vikrant (with 3-year charter to Sep 2029); committed to 2019-built Kamsarmax delivery within 1-2 months and newbuild Suezmax delivery in ~2 years",
+"value": null,
+"period": "Q2 FY27",
+"direction": null,
+"quote": "We have added two vessels in the last week. That's one Kamsarmax, the Jag Amit, which is 2015 built and the Jag Vikrant, which is a very large gas carrier, which is also 2015 built."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Newbuild Suezmax ordered as 'insurance' because secondhand prices too high and deployment of >$1bn capital may not be possible in weak markets; IRR close to hurdle but not strictly meeting it",
+"value": null,
+"period": "FY29 delivery",
+"direction": null,
+"quote": "We are just doing this as a little bit of insurance in case we are not able to buy those cheap ships. What also happens..."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Asset prices up sharply: Suezmax prices ~50% higher in quarter (reflected in NAV), smaller tankers up 5-20%, bulk carriers up 5-10%; NAV at highest ever",
+"value": "50%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Tanker prices for the large crude tankers, the Suezmaxes, it has probably gone up 50% in the last quarter, which is reflected in our net asset value."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "If ships priced at Jan 2026 levels, NAV would be ~INR250/share lower; crude tanker prices ~$80m vs fair value ~$40m (or $20m) per management",
+"value": "INR250 per share",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "If we priced, or rather we just put all the ships at their prices of January this year, we would probably be lower by about INR250 or so per share in NAV."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Management refuses to operate in high-risk routes (Strait of Hormuz loading, Black Sea Novorossiysk) due to crew safety; also avoids Russian trade since 2022 to avoid sanctions risk",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "Finally, we think about the crew. We have our crew on board these ships, and we cannot knowingly send them into a situation of danger."
+},
+{
+"cat": "risk",
+"grade": "B",
+"statement": "Geopolitical risk dominates: Iran war closure of Strait of Hormuz created inefficiencies (shuttle service adds 8-9 days/voyage, 18-20% efficiency loss) driving rate spikes; cessation would normalize rates but inventory rebuild and shadow fl",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "Typically, a Middle East to Far East voyage takes about 45, 46 days on a VLCC. This shuttle process, because you have to load twice, you have to discharge twice, the ship is loading inside, coming outside, then offloading to another ship, and that adds eig ht to nine days on average to the voyage time, which is an 18%, 20% reduction in efficiency"
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Blended fleet break-even ~$13,000/day across entire fleet",
+"value": "$13,000 per day",
+"period": "current",
+"direction": null,
+"quote": "The number should be around the $13,000 per day mark. At $13,000 a day across our fleet, we will be around break-even."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Offshore: 2 rigs fixed on 3-year contracts in India (repricing H2 FY30), 1 rig left to find employment, 8 vessels up for repricing (4 bid into Indian tenders awaiting outcome); 4 offshore vessels on short-term contracts now repricing H2 FY2",
+"value": null,
+"period": "H2 FY27",
+"direction": null,
+"quote": "We have got two contracts in India, 3-year contracts for two of our rigs. So those now show on the extreme right of this graph, as the two rigs which next need repricing in H2 FY30."
+}
+]
+}
+},
+"522101|2026-11-16": {
+"code": "522101",
+"name": "Kilburn Engineering Ltd",
+"day": "2026-11-16",
+"sector": "Industrials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 23,
+"A": 15,
+"B": 7,
+"C": 1,
+"shown": 15
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6491c69f-9031-4722-866d-96e720b57e47.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Reaffirmed 20-25% CAGR target from FY26 base to FY28",
+"value": "20-25% CAGR",
+"period": "FY28",
+"direction": "up",
+"quote": "We remain committed to achieving our guidance of a 20% to 25% CAGR growth on the base numbers of FY '26 by FY '28."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Consolidated revenue guidance for FY27 revised to INR600-650 crores from earlier INR700-750 crores",
+"value": "INR600-650 crores",
+"period": "FY27",
+"direction": "down",
+"quote": "Having said that, this year's revenue may hover around INR600 crores to INR650 crores, the delayed orders we are banking upon will contribute to revenue early next financial year."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Targeting blended EBITDA margin of around 20% long-term",
+"value": "~20%",
+"period": "long-term",
+"direction": "flat",
+"quote": "we have always maintained that for our business, we should be around the 20% EBITDA mark. And we still stick to that, that lo ng term, we should remain in the averages of around 20"
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Over INR250 crores of opportunities near finalization including Middle East, Far East and domestic nuclear orders",
+"value": "INR250+ crores",
+"period": "next 45-60 days",
+"direction": "up",
+"quote": "We are sitting on more than INR250 crores of opportunities, which we are about to close any time. I mean, we've been -- it's got deferred by a couple of quarters."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Stand-alone revenue declined due to slower customer decision-making from geopolitical uncertainty, not structural issues",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Many of our customers, especially in the export and capital goods markets have postponed the finalization and dispatch schedules because of the current geopolitical uncertainty."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "H1 EBITDA margin ~16.5% due to product mix and higher raw material value consumption percentage, employee cost increase",
+"value": null,
+"period": "H1 FY27",
+"direction": "down",
+"quote": "So it's a combination of both. So I would say partially because of the mix of the products, yes. And second one, there has been a increase in cost for a number of reasons. One is the employee cost has gone up. Secondly, when you talk about the cost of raw materials, it is not the escalation in the cost of raw material, but more of the value of the raw materials consumed."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Order intake target of INR800 crores for FY27, over INR300 crores booked YTD with large orders expected in next 1-3 months",
+"value": "INR800 crores target",
+"period": "FY27",
+"direction": "up",
+"quote": "The INR800 crores was the order booking for the year. We have booked over INR300 crores till date. And we believe there are some large orders which would be getting converted in the next 1 or 2, 3 months."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Consolidated order book at INR471 crores as of 30 Sep 2026, new orders of INR136 crores won in Q2",
+"value": "INR471 crores",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Our consol order book stood at INR471 crores as on 30th September, broadly in line with INR485 crores at the start of the quarter, even after executing INR151 crores during the quarter."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "INR25 crores approved for Monga Strayfield Pune facility expansion for data center enclosures over 6-9 months",
+"value": "INR25 crores",
+"period": "next 6-9 months",
+"direction": "up",
+"quote": "The Board has approved an investment of INR25 crores primarily at Monga Strayfield's Pune facility to be implemented over the next 6 to 9 months."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Kilburn Saravali plant expansion and ME Energy Pune Phase 2 underway, completion by Q3/early Q4",
+"value": null,
+"period": "Q3-Q4 FY27",
+"direction": "up",
+"quote": "Expansion at Kilburn Saravali plant and Phase 2 of ME Energy's Pune plant are underway and expected to be completed by Q3, early Q4."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Typically no price escalation clauses in orders; margins protected by booking key raw materials immediately after order receipt",
+"value": null,
+"period": "ongoing",
+"direction": "flat",
+"quote": "Typically, when we take orders across our group, we normally book our raw material in the next few days itself. Typically, we do not have any price escalation in any of our orders, but we try to protect our margins by ordering the key raw materials ASAP once we get the order."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "ME Energy entering ferrous alloy waste heat recovery via Bhutan order, pursuing steel and cement sector waste heat recovery boilers",
+"value": null,
+"period": "ongoing",
+"direction": "up",
+"quote": "What is heartening for the group is our entry into the ferrous alloy space using ME Energy Limited. The ferro-alloy sector is seeing a lot of capex and especially with the waste heat recovery systems provided by ME Energy, we believe our entry into the sector through our Bhutan order has opened up opportunities for many more orders in the sector to come through."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Revenue recognition timing risk: delayed orders may spill into FY28 due to POC accounting",
+"value": null,
+"period": "FY27-FY28",
+"direction": null,
+"quote": "Now some of the orders are coming in later and the fact that we realize our revenue on a POC basis, there could be a spillover to the next year."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Group building manufacturing infrastructure to support >INR1,000 crores annual revenue capacity via brownfield expansions",
+"value": "INR1,000+ crores",
+"period": "next 2-3 years",
+"direction": "up",
+"quote": "Together with the planned expansion of Monga Strayfield's Pune plant, we are building the group manufacturing infrastructure to support more than INR1,000 crores annual revenue capacity."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Monga Strayfield capacity addition kicking in from January, revenue potential scaling to >INR200 crores from INR100 crores base",
+"value": "INR200+ crores",
+"period": "FY28",
+"direction": "up",
+"quote": "On Monga Strayfield, the capacity addition would start kicking in from January. So you will have additional capacity in the last quarter of this year and full capacity increase in the first 6 months of FY '28. With that, Monga Strayfield as a company will have a revenue potential of scaling up to over INR200 crores from a INR100 crores base."
+}
+]
+}
+},
+"533269|2026-11-16": {
+"code": "533269",
+"name": "VA Tech Wabag Ltd",
+"day": "2026-11-16",
+"sector": "Utilities",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 23,
+"A": 16,
+"B": 7,
+"C": 0,
+"shown": 14
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c8a0024b-1f14-4ee2-9b1b-2eedf097b909.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Medium-term objectives reiterated: revenue CAGR 15%-20%, EBITDA margin 13%-15%, ROCE above 20%, ROE above 15%, O&M progressing to 20% of revenue, sustained positive net cash",
+"value": null,
+"period": "medium-term",
+"direction": null,
+"quote": "We reiterate our medium-term objectives: revenue CAGR of 15%-20%, EBITDA in the 13%-15% band, ROCE above 20%, ROE above 15%, and O&M progressing to 20% of revenue, and a sustained positive net cash position."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Strong order pipeline across geographies; next 12-18 months expected to be bumper order intake; peak bidding activities with large ticket inquiries in Europe, Middle East, India",
+"value": null,
+"period": "next 12-18 months",
+"direction": "up",
+"quote": "We are very hopeful the next 12-18 months is going to be a bumper order intake for us. We are just trying to establish that we reach a preferred bidder status."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Sunrise sectors (semiconductors, data centers, solar PV, green hydrogen) showing traction; modular smaller ticket orders (12-15 month gestation); specialized team formed; water-cooled solutions for data centers gaining traction",
+"value": null,
+"period": "next few years",
+"direction": "up",
+"quote": "These are the new sectors which we are focused, and we have a separate team and a vertical which are focusing on it because they are comparatively smaller ticket size orders. So we need to have a specialized team who focuses on it and also executes this order."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "H1 FY2027 consolidated EBITDA margin at 13.8%, PAT margin expanded to 10.3% from 9.6% YoY",
+"value": null,
+"period": "H1 FY2027",
+"direction": "up",
+"quote": "EBITDA grew by about 21% to INR261 crores at a margin of almost 14%. PAT grew faster, up by almost 30% to INR195 crores, and PAT margin expanded to 10.3% as against 9.6% in the same period last year."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Order book reached lifetime high of INR 20,207 crore at end of H1 FY2027 with H1 order intake of INR 5,200 crore",
+"value": "20,207 crore",
+"period": "H1 FY2027",
+"direction": "up",
+"quote": "Our order book reaches a lifetime high of INR 20,207 crore at the end of H1 FY2027, supported by order intake of INR 5,200 crore during the first half."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "O&M order backlog at historic high of INR 6,500 crore, building steadily towards 20% revenue objective",
+"value": "6,500 crore",
+"period": "H1 FY2027",
+"direction": "up",
+"quote": "O&M is building steadily towards the 20% objective on the back of a historic high order backlog in O&M of INR 6,500 crores."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Bangladesh project (World Bank funded) engineering ~complete, ordering 90% done, 30-40% material dispatched, civil works 30-40%; ~6 month delay due to political disturbances but payments on time",
+"value": null,
+"period": "ongoing",
+"direction": null,
+"quote": "Engineering is more or less complete. Ordering is also 90% done. About 30% to 40% of the material is dispatched, and civil works are also at about 30% to 40%. So the project is moving."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Indosol Solar project land acquisition progressing (900 of 1000 acres secured); 1 GW plant near commissioning; multi-GW project to follow once balance land acquired",
+"value": null,
+"period": "next few months",
+"direction": null,
+"quote": "I think out of 1,000 acres, they have already secured 900 acres, another 100 acres which they should get pretty fast. So one would expect that in a quarter from now, they should be able to get this balance 100, and then they will kickstart the mega project."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "No specific capex guidance given; focus on asset-light model, efficient capital deployment, and disciplined execution",
+"value": null,
+"period": null,
+"direction": null,
+"quote": "We remain focused, technology-led growth, disciplined execution, and efficient capital deployment, while selectively pursuing opportunities in desalination, reuse, and digitalization and resource recovery areas."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Contracts have commodity price pass-through formulas; international orders hedged within few months; major equipment orders placed early to lock commodity prices",
+"value": null,
+"period": "ongoing",
+"direction": null,
+"quote": "Most of the Indian contracts, we go with the escalation formula. Internationally, we immediately hedge. As we get our order, within a few months, we also place some of the major orders so that future commodity price is fixed, is locked."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "EPC 82% and O&M 18% of H1 revenue; targeting O&M to reach 20% of revenue; EP orders targeted at 20-30% of order intake (Kuwait and Reliance orders are EP model)",
+"value": "82%",
+"period": "H1 FY2027",
+"direction": null,
+"quote": "By business, EPC accounted for 82% and O&M for 18%. O&M adds a high-margin, asset-light, recurring revenue stream alongside our EPC execution pipeline, and we remain focused on building this business out for the future."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Middle East geopolitical situation causing shipment delays; mitigating via longer shipping routes and air freight for critical components; project sites unaffected; monitoring closely for next 3-6 months",
+"value": null,
+"period": "next 3-6 months",
+"direction": null,
+"quote": "What we are facing, other than the commodity price pressures, is a huge delay in shipments. This is something we have taken it to the client, and they have recognized the issue and told us to go ahead with taking a longer route."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "H1 FY2027 consolidated operating cash flow INR 225 crore, over 1.1x PAT; net working capital improved to 101 days from 104 days",
+"value": "225 crore",
+"period": "H1 FY2027",
+"direction": "up",
+"quote": "Consolidated operating cash flow for H1 was INR 225 crores, over 1.1x our PAT for the same period. Net working capital also improved to 101 days from 104 days as of March 2026."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Net cash excluding HAM reached all-time high of over INR 1,100 crore vs INR 950 crore end FY2026; including HAM net cash INR 1,036 crore; 15th consecutive quarter positive net cash",
+"value": "1,100 crore",
+"period": "H1 FY2027",
+"direction": "up",
+"quote": "Net cash excluding HAM reached an all-time high of over INR 1,100 crores as compared to INR 950 crores at the end of FY2026. Including HAM, net cash stood at INR 1,036 crores."
+}
+]
+}
+},
+"543278|2026-11-16": {
+"code": "543278",
+"name": "Kalyan Jewellers India Ltd",
+"day": "2026-11-16",
+"sector": "Consumer Durables",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 16,
+"A": 11,
+"B": 3,
+"C": 2,
+"shown": 8
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a953fbe2-5d59-46a4-a9ad-29c7f2075b21.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management confident of beating targeted revenue growth for the year",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "No, we are actually very confident. We are very confident of beating the targeted revenue growth."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Management targets minimum 25% revenue growth for the year and 10% same-store sales growth for Q4",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "we usually tell everyone to keep a 25% revenue growth as the target for the year. But on the ground, you know that H1 was much better. Q3 as we speak, the momentum is great. And Q4, we know that the base is even stronger."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Demand robust with healthy same-store sales growth across key markets; Q3 started very well with excellent growth during Navratri and Dhanteras",
+"value": null,
+"period": "Q3 FY27",
+"direction": "up",
+"quote": "Demand remained robust during most part of the recently concluded quarter on the back of very healthy same-store sales growth across most of the key markets."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Volume growth seen in Q2 and Q3 as customers buy more grams for same budget; studded share increasing organically over 4-5 years",
+"value": null,
+"period": "Q3 FY27",
+"direction": "up",
+"quote": "Yes. So volume growth, as I mentioned, we have seen volume growth in Q2 also, if you see, because the SSGs have been in the range of 20% and the gold price inflation is single digit."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Exchange program at 42% overall with 7-8% gold for cash; encash program margin accretive",
+"value": "42% exchange; 7-8% gold for cash",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "So 7% to 8% is gold for cash and now the overall is 42% and that is why you see that the margins are stable in Q2."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "PBT margins stable in Q2 after adjusting for customs duty benefit and silver/platinum gains; confident H2 PBT margins will be better than H1 and stable",
+"value": null,
+"period": "H2 FY27",
+"direction": "flat",
+"quote": "PBT margins, if you look at in Q2, it is very stable, wherein if you negate the -- of course, the onetime benefit of the customs duty and if you also negate the silver and platinum gains, which was there in the previous year quarter, Q2, you negate both that, the margins are stable."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Launched ATM regional brand in T. Nagar, Chennai in August; plans for 4 more showrooms in FY27 (2 in Q3, 2 in Q4)",
+"value": "4 showrooms",
+"period": "FY27",
+"direction": "up",
+"quote": "We have drawn up plans for the launch of the next 4 showrooms over the course of the current financial year, 2 will be in the ongoing quarter and 2 more during the fourth quarter."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Non-GML debt now debt-free; 50% collateral released with one land parcel sold for INR86-87 crores and INR16 crores pending; remaining 50% land parcel release process started",
+"value": "INR86-87 crores sold; INR16 crores pending",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "it is debt-free non-GML now, as you mentioned, and 50% of the collateral is already out of which we have sold one land parcel of INR86 crores, INR87 crores, and INR16 crores to be done on the ongoing quarter."
+}
+]
+}
+},
+"544833|2026-11-16": {
+"code": "544833",
+"name": "Caliber Mining And Logistics Ltd",
+"day": "2026-11-16",
+"sector": "Energy",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 14,
+"A": 4,
+"B": 8,
+"C": 2,
+"shown": 10
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a3b6e9cb-cd03-4380-b57b-32f0463b10f4.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Targets 60 million cubic meter overburden removal each in Q3 and Q4 FY27; reiterates FY27 guidance of 45%+ revenue growth and 35%+ EBITDA and PAT growth YoY",
+"value": "60 million cubic meter per quarter",
+"period": "FY27",
+"direction": "up",
+"quote": "Coming to the guidance point, we are targeting about 60 million cubic meter of overburden removal in each quarter 3 and quarter 4. The fleet, the capacity and the contracts are in place to do it. We reiterate that FY27 guidance we gave you in quarter 1. A growth of 45% plus in revenue, 35% plus both in EBITDA and PAT on year-to-year basis."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Coal demand rising with power demand; customers urging production beyond contracted volumes; power generation projected to grow 6.8% annually to FY30 with coal at 60% mix; strong query pipeline from private and government miners",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "With the increased power demand, coal demand continues to rise. We expect this trend to continue. Seeing the rising demand, customers continue to urge us to increase our production beyond the contracted volume."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Normalized EBITDA margin improved to 16.60% in Q2 FY27 from 12.14% in Q2 FY26 (446 bps increase); H1 normalized EBITDA grew 48.7% YoY to INR 183.57 crores",
+"value": "16.60%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "I will again reiterate to you that the margin of EBITDA for this quarter is 16.60% versus 12.14% last year. So basically, this has been the best H1 in the history of Caliber in terms of 92% growth and 446 bps of EBITDA margin rise."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Order book covers nine sites with average tenure of 2.5 years; participated in new tenders worth INR 11,000+ crores awaiting results; added INR 4,000 crores order book in H1",
+"value": "INR 11,000+ crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Coming to the orders bid by the company, our order book covers nine sites with an average tenure of about 2.5 years. Beyond this, we have participated in net new tenders worth INR11,000 crores plus. We are awaiting the results."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Capex of INR 584.88 crores in H1 FY27 to mobilize three new contracts and meet customer demand beyond targeted volumes; capex for current order book largely completed, further capex only if new contracts or volume extensions arise",
+"value": "INR 584.88 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "This is despite the capex of INR584.88 crores in the first half to mobilize the three new contracts we have got, that is Dhoptala II, Dudhichua II, and Jayant II and also to meet customer demands beyond targeted volumes."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Achieved 100% diesel cost pass-through from customers; average LOA price INR 89-92 per cubic meter; pass-through received INR 184.10 crores in H1 and INR 78.39 crores in Q2; billing monthly or 15-day cycles",
+"value": "100%",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "Since we have now 100% pass through, so average price of our LOA is between INR89 to INR92. So now since our customers have given us the pass through, so now we are very much in control that we are not bothered with what will be the crude price in future."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "Q2 FY27 revenue mix: 88% coal mining services, 10% logistics, balance ancillary services; H1 coal extraction grew 41% YoY, overburden removal grew 72% YoY, logistics volumes grew 50% YoY",
+"value": "88% coal mining",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Sector-wise revenue in the current quarter, 88% of revenue came from coal mining services, 10% came from logistics, and a balance from the other ancillary services."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "IPO net proceeds INR 377.16 crores; INR 371 crores utilized as per objects with no deviation; strengthened net worth, reduced leverage, funded fleet expansion",
+"value": "INR 377.16 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Out of the net proceed of INR377.16 crores, INR371 crores have been utilized as per objects of the issue with no deviation."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Implemented AI platform 'Caliber Pulse 1' centralizing maintenance data for 200+ users with real-time vehicle breakdown monitoring; 'Pulse 2' (beta from Nov 1) integrating MIS and HR with AI layers and war rooms for efficiency control",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Caliber has formed Pulse 1. So, we have we have named it as Caliber Pulse 1. In Caliber Pulse 1, we have centralized all our maintenance data on a single portal that is being operated by more than 200 people. And that 200 users can use it through mobile, through website, that is through system login."
+},
+{
+"cat": "other",
+"grade": "B",
+"statement": "Fleet stands at 2,226 units as of date, up from 2,033 at June 30; targeting 105-110% volume growth on some contracts due to customer demand; capacity in place for 60 million cubic meter per quarter in H2",
+"value": "2,226 units",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our fleet now stands at 2,226 units against 2,033 as at June 30th. Out of the net proceed of INR377.16 crores, INR371 crores have been utilized as per objects of the issue with no deviation."
 }
 ]
 }
