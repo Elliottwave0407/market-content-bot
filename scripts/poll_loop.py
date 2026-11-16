@@ -189,3 +189,7 @@ def main():
     ci_out.publish()
 
 main()
+# 16 Nov: the ONNX runtime used by RapidOCR aborts the interpreter at normal exit ("terminate called without an active exception", exit 134), marking a clean run as failed; leave without running native thread teardown
+import sys as _s, os as _o
+_s.stdout.flush(); _s.stderr.flush()
+_o._exit(0)
