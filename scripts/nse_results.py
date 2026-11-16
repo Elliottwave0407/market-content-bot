@@ -517,14 +517,23 @@ def _already_posted(code, dt):
     except Exception:
         return False
 
+_DAYC = {}
+
 def run_once(day=None, maxn=3):
     """One pass. Returns True if state changed."""
     st = load()
     now = datetime.now(IST)
-    days = [day] if day else [now, now - timedelta(days=1)]      # 15 Nov RCA (Anondita): yesterday was fetched only before 03:00 IST, so a filing that failed its first tries was never retried once the date rolled; MAX_AGE_H still bounds how old a filing may be
+    days = [day] if day else [now - timedelta(days=k) for k in range(3)]      # 16 Nov RCA: MAX_AGE_H is 36 h, so across midnight the window needs today + 2 earlier days; with only today+yesterday ~196 filings of 14 Nov (and Anondita) fell out of the window at 00:00 IST
     rows = []
     for d in days:
-        rows += result_rows(fetch_day(d))
+        ck = d.strftime("%Y-%m-%d")
+        hit = _DAYC.get(ck)
+        if day is None and d.date() != now.date() and hit and time.time() - hit[0] < 300:      # earlier days change slowly: refetch every 5 min, not every tick (NSE rate limits)
+            rows += hit[1]
+            continue
+        rr_ = result_rows(fetch_day(d))
+        _DAYC[ck] = (time.time(), rr_)
+        rows += rr_
     maps = bse_maps()
     if maps is None:
         p("BSE listing unavailable - skipping this pass")
