@@ -456,7 +456,7 @@ def _candidates(rows):
     if not tx:      # 14 Nov (Kernex): OCR lost one printed number of the total-tax row; accept it left-aligned only if the statement then reconciles in all three columns (checked later)
         tx = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"^total tax expenses?", r"^total tax", r"^tax expenses?", r"^total income tax"], start=max(0, start - 1), avoid=("before", "deferred tax asset", "relating to")) if n - 2 <= len(nm_) < n]
     c["tax"] = tx[:1]
-    c["associates"] = _all_matches(rows, [r"share of (net )?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n, avoid=("before", "after share", "attributable"))[:1]      # 15 Nov (AIA Engineering): the subtotal 'Profit BEFORE share of profit of joint venture, exceptional item and tax' was taken as the associates figure, so consolidated never reconciled
+    c["associates"] = _all_matches(rows, [r"share of (net )?\(?(profit|loss).{0,60}(associate|joint)", r"share in (profit|loss).{0,40}(associate|joint)"], n=n, avoid=("before", "after share", "attributable"))[:1]      # 15 Nov (AIA Engineering): the subtotal 'Profit BEFORE share of profit of joint venture, exceptional item and tax' was taken as the associates figure, so consolidated never reconciled
     pi = pbs[0][0] if pbs else 0
     pats = _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)", r"(profit|loss).{0,30}continuing operations"], start=pi + 1, n=n,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit"))
@@ -485,7 +485,7 @@ def _col_status(d, i, unit):
     if None in (ti, ex, pbt, tax, pat):
         return None
     e = [0.0] if exc in (None, 0.0) else [exc, -exc]
-    a = [0.0] if asc in (None, 0.0) else [asc]      # 14 Nov (Raideep): with a non-zero share of associates the headline profit must INCLUDE it; accepting [asc, 0.0] let the pre-associates profit pass (5.23 instead of 48.32)
+    a = [0.0] if asc in (None, 0.0) else [asc, -asc]      # 16 Nov (Alpex Solar): 'Share of (Profit) Loss of Associates' is printed with the opposite sign (-6.58 = a profit of 6.58); the exact arithmetic picks the sign, the share is never ignored      # 14 Nov (Raideep): with a non-zero share of associates the headline profit must INCLUDE it; accepting [asc, 0.0] let the pre-associates profit pass (5.23 instead of 48.32)
     def _c1(extra):
         return any(_tol(ti - ex + x + extra, pbt, unit) for x in e) or (None not in (dp, fn) and any(_tol(ti - ex - dp - fn + x + extra, pbt, unit) for x in e))
     c1 = _c1(0.0)
@@ -493,7 +493,7 @@ def _col_status(d, i, unit):
     if asc not in (None, 0.0) and not (c1 and c2):
         # 15 Nov (AIA Engineering): some statements show the share of joint ventures / associates ABOVE profit before tax (so PBT already includes it: total income - expenses + share = PBT, PBT - tax = PAT).
         # The share must be counted exactly once, in one place or the other, so the Raideep rule (never ignore a non-zero share) still holds.
-        if _c1(asc) and any(_tol(pbt - tax, pat, unit) for _ in (0,)):
+        if (_c1(asc) or _c1(-asc)) and any(_tol(pbt - tax, pat, unit) for _ in (0,)):
             c1 = c2 = True
     if not c2 and getattr(_RELAX, "on", False) and asc in (None, 0.0):
         c2 = (pbt > 0 and -0.3 * pbt <= pat <= 1.6 * pbt) or (pbt <= 0 and pat <= 0.5 * abs(pbt) + 1.5)
