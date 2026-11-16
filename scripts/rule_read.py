@@ -435,6 +435,15 @@ def _candidates(rows):
                     ti_ = c["total_income"][0][1]
                     oiv = oi_ if oi_ is not None else [0.0] * len(ti_)
                     c["revenue"] = [(rv[0][0], [None if (x is None) else round(x - (y or 0.0), 2) for x, y in zip(ti_, oiv)])]
+    if c["total_income"] and c["revenue"]:      # 16 Nov (Aprameya): a printed number that lost its decimal point (171253 for 1,712.53) shows up as revenue far above total income; repair it only when the shifted value ties exactly to total income - other income
+        tv, rvv = c["total_income"][0][1], list(c["revenue"][0][1])
+        ov = c["other_income"][0][1] if c["other_income"] else [0.0] * len(tv)
+        for j in range(min(len(tv), len(rvv), len(ov))):
+            if rvv[j] is not None and tv[j] and rvv[j] > tv[j] * 1.001:
+                for k_ in (10, 100, 1000):
+                    if abs(rvv[j] / k_ + (ov[j] or 0.0) - tv[j]) <= max(0.003 * abs(tv[j]), 0.6):
+                        rvv[j] = round(rvv[j] / k_, 2); break
+        c["revenue"] = [(c["revenue"][0][0], rvv)]
     c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
     c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^financial costs?", r"^finance cost\b", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
     c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
