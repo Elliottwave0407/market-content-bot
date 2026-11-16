@@ -166,6 +166,12 @@ def consolidated_pages(content):
             t = d[i].get_text().lower()
             if "consolidated" in t and sum(k in t for k in pc.KEYS) >= 2:
                 keep.add(i); keep.add(min(i + 1, d.page_count - 1))
+        if not keep:
+            # 16 Nov (Genesys): the consolidated statement's text layer was garbled (title unreadable), so no page said 'consolidated' next to the table. Two separate results tables (not neighbouring pages) in a filing that talks about consolidated results at least 4 times is treated as 'has a consolidated table' (the standalone is then never posted alone; accuracy first)
+            texts = [d[i].get_text().lower() for i in range(d.page_count)]
+            kp = [i for i, t in enumerate(texts) if sum(k in t for k in pc.KEYS) >= 3]
+            if sum(t.count("consolidated") for t in texts) >= 4 and any(b - a >= 2 for a in kp for b in kp):
+                keep = {b for a in kp for b in kp if b - a >= 2} | {min(b + 1, d.page_count - 1) for a in kp for b in kp if b - a >= 2}
         if not keep: return None
         out = fitz.open()
         for i in sorted(keep): out.insert_pdf(d, from_page=i, to_page=i)
