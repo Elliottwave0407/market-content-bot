@@ -421,8 +421,6 @@ def _candidates(rows):
         o0 = (c["other_income"][0][1][0] if c["other_income"] else 0.0) or 0.0
         if t0 is not None:
             ok = [r_ for r_ in rv if r_[1][0] is not None and abs(r_[1][0] + o0 - t0) <= max(0.003 * abs(t0), 0.6)]
-            if not ok:
-                ok = sorted([r_ for r_ in rv if r_[1][0] is not None and r_[1][0] <= t0 * 1.0001], key=lambda r_: -r_[1][0])[:1]
             if ok:
                 c["revenue"] = ok[:1]
             else:      # no revenue row ties: revenue from operations = total income - other income (Biocon: only a sub-line was found)
