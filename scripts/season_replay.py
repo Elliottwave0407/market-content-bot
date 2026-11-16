@@ -26,6 +26,14 @@ mine = [s for i, s in enumerate(syms) if i % NSH == SHARD][:MAXN]
 print(f"filings {len(rows)} symbols {len(syms)} shard {SHARD}/{NSH} -> {len(mine)}", flush=True)
 sess = nr.sess()
 
+
+def _cumul(d, k, t):
+    try:
+        a, b = pc.to_m(d, 0, k), pc.to_m(d, 1, k)
+        return close(a["revenue"] + b["revenue"], t["revenue"]) and close(a["pat"] + b["pat"], t["pat"], 0.03, 1.0)
+    except Exception:
+        return False
+
 def truth_for(sym):
     data = []
     for idx in ("equities", "sme"):
@@ -105,6 +113,8 @@ for sym in mine:
                     rec["outcome"] = "WRONG_BASIS"
                 elif want in got and close(got[want]["revenue"], tr[want]["revenue"]) and close(got[want]["pat"], tr[want]["pat"], 0.03, 1.0):
                     rec["outcome"] = "match"
+                elif want in got and _cumul(out.get(want), k, tr[want]):
+                    rec["outcome"] = "truth_cumulative"      # 16 Nov (Aspinwall, Agastya): the XBRL values equal the sum of the two quarter columns (half-year context), so the replay truth is a different period, not a reader error
                 elif want in got:
                     rec["outcome"] = "MISMATCH"; rec["detail"] = {"read": got[want], "truth": tr[want]}
                 else:

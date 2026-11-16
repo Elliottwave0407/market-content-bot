@@ -416,7 +416,7 @@ def _candidates(rows):
     c["total_income"] = _all_matches(rows, [r"^total income\b(?! from operations)", r"^total revenue\b(?! from operations)"], n=n, avoid=("from operations", "segment"))[:1]
     c["other_income"] = _all_matches(rows, [r"^other income"], n=n)[:1]
     # 16 Nov (Biocon, BF Investment): the first revenue-like row can be a sub-line; choose the revenue row that ties to total income (revenue + other income = total income, current column), else the largest one not above total income
-    if c["total_income"] and len(rv) > 1:
+    if c["total_income"] and rv:
         t0 = c["total_income"][0][1][0]
         o0 = (c["other_income"][0][1][0] if c["other_income"] else 0.0) or 0.0
         if t0 is not None:
@@ -425,6 +425,10 @@ def _candidates(rows):
                 ok = sorted([r_ for r_ in rv if r_[1][0] is not None and r_[1][0] <= t0 * 1.0001], key=lambda r_: -r_[1][0])[:1]
             if ok:
                 c["revenue"] = ok[:1]
+            else:      # no revenue row ties: revenue from operations = total income - other income (Biocon: only a sub-line was found)
+                ti_ = c["total_income"][0][1]
+                oi_ = c["other_income"][0][1] if c["other_income"] else [0.0] * len(ti_)
+                c["revenue"] = [(rv[0][0], [None if (a is None) else round(a - (b or 0.0), 2) for a, b in zip(ti_, oi_)])]
     c["total_expenses"] = _all_matches(rows, [r"^total expenses", r"^total expenditure"], n=n)[:1]
     c["finance_costs"] = _all_matches(rows, [r"^finance costs?", r"^financial costs?", r"^finance cost\b", r"^interest and finance", r"^finance charges", r"^interest expenses?"], n=n)[:1]
     c["depreciation"] = _all_matches(rows, [r"^depreciation", r"^amortisation|^amortization"], n=n)[:1]
