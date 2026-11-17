@@ -1519,3 +1519,7 @@
 17 14:14:08 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
 17 14:45:00 seen 534422 Looks Health Services Ltd cat=Board Meeting early=True bse_time=20:14:27 dissem=20:14:27
 17 15:02:41 seen 543439 Brandbucket Media & Technolo cat=Result early=False bse_time=20:32:30 dissem=20:32:30
+17 15:03:04 wait 543439 Brandbucket Media & Technolo: numbers not yet on BSE
+17 15:03:26 pdf rule reader Brandbucket Media & Technology Ltd: rule: no results table page | ocr: rule: no results table page
+17 15:06:49 pdf strong model retry did not help: HTTP 503 on gemini-3.5-flash | results-key: HTTP 503 on gemi
+17 15:06:52 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Brandbucket Media & Technology Ltd
