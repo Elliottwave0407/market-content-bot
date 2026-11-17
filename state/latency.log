@@ -1507,3 +1507,13 @@
 17 14:04:35 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
 17 14:04:35 pdf pdf incomplete Arigato Universe Ltd standalone: missing ['ebitda'] - not posting from PDF
 17 14:05:27 ready 530267|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99,
+17 14:11:59 seen 530267 Arigato Universe Ltd cat=Result early=False bse_time=19:41:19 dissem=19:41:19
+17 14:12:22 wait 530267 Arigato Universe Ltd: numbers not yet on BSE
+17 14:12:22 pdf rule reader Arigato Universe Ltd: rule: stan: does not reconcile [lakh] total_income=[1294.78, 417.79, 1345.25] total_expenses=[1226.1, 402.77, 1296.49] pbt=[76.13, 40.01, 72.2] tax=[11.88, 0.0, 11.26] pat=[64.25, 40.01, 60.94] de
+17 14:12:29 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
+17 14:12:29 pdf pdf incomplete Arigato Universe Ltd standalone: missing ['ebitda'] - not posting from PDF
+17 14:13:36 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
+17 14:13:36 pdf pdf incomplete Arigato Universe Ltd standalone: missing ['ebitda'] - not posting from PDF
+17 14:13:58 pdf rule reader Arigato Universe Ltd: rule: stan: does not reconcile [lakh] total_income=[1294.78, 417.79, 1345.25] total_expenses=[1226.1, 402.77, 1296.49] pbt=[76.13, 40.01, 72.2] tax=[11.88, 0.0, 11.26] pat=[64.25, 40.01, 60.94] de
+17 14:14:05 pdf nim reader Arigato Universe Ltd: ok (gemini: gemini skipped (quota/backoff))
+17 14:14:08 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
