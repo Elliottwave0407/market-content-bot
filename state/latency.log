@@ -1501,3 +1501,9 @@
 17 13:47:46 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Jointeca Education Solutions Ltd
 17 13:57:56 ready 541083|Sep-26|na kind=photo waited_min=45.6 tries=99 pdf_log=
 17 14:02:50 ready 540027|Sep-26|consolidated kind=photo waited_min=31.2 tries=8 pdf_log=
+17 14:03:09 seen 530267 Arigato Universe Ltd cat=Board Meeting early=True bse_time=19:33:06 dissem=19:33:06
+17 14:03:31 pdf rule reader Arigato Universe Ltd: rule: stan: does not reconcile [lakh] total_income=[1294.78, 417.79, 1345.25] total_expenses=[1226.1, 402.77, 1296.49] pbt=[76.13, 40.01, 72.2] tax=[11.88, 0.0, 11.26] pat=[64.25, 40.01, 60.94] de
+17 14:04:04 seen 532172 Adroit Infotech Ltd cat=Board Meeting early=True bse_time=19:33:16 dissem=19:33:16
+17 14:04:35 pdf pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99, depreciation=1.72, pbt=76.13, tax=11.88, pat=64.25, eps=1.05
+17 14:04:35 pdf pdf incomplete Arigato Universe Ltd standalone: missing ['ebitda'] - not posting from PDF
+17 14:05:27 ready 530267|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=pdf current col Arigato Universe Ltd standalone ok=True/3: revenue=1294.78, other_income=7.45, total_income=1302.23, total_expenses=1226.1, finance_costs=30.99,
