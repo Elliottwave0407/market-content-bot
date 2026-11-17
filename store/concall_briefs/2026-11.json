@@ -15860,8 +15860,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 13,
-"A": 4,
-"B": 9,
+"A": 3,
+"B": 10,
 "C": 0,
 "shown": 7
 },
@@ -15924,20 +15924,20 @@
 {
 "cat": "other",
 "grade": "A",
-"statement": "Q2 FY27 own generation 2,31,775.59 tons, purchase & distribution 69,866.67 tons (total 3,01,642 tons)",
-"value": "2,31,775.59 own; 69,866.67 purchase",
-"period": "Q2 FY27",
-"direction": null,
-"quote": "With regards to your question about steam generation and distribution, we sold 3,01,642 tons of steam in Q2, out of which our own generation was 2,31,775.59 tons, and the steam purchase and distribution was 69,866.67 tons."
-},
-{
-"cat": "other",
-"grade": "A",
 "statement": "Three waste-to-steam plants under construction for H2 FY27; fourth expected next calendar year",
 "value": null,
 "period": "H2 FY27, next calendar year",
 "direction": "up",
 "quote": "Just that there is one more, waste-to-energy plant which is expected to go live, in next calendar year. So just wanted to add, there are 3 under construction facilities and not 2 for waste to steam."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Sachin GIDC: chemical/pharma saturated; textile cluster larger but price-sensitive; evaluating waste-to-steam using municipal+industrial waste",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "Sachin GIDC comprises of 2 kinds of business models. One is the chemical industry where we have major concentration. We have almost touched all the industries here in Sachin GIDC which are into chemical pharma. The second big cluster, you very rightly said, is the textile cluster, which is much bigger in volume as compared to the chemical volume that we have currently. And this volume is very pric"
 }
 ]
 }
@@ -78405,8 +78405,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 14,
-"A": 6,
-"B": 7,
+"A": 5,
+"B": 8,
 "C": 1,
 "shown": 11
 },
@@ -78477,7 +78477,7 @@
 "pricing_cost": [
 {
 "cat": "pricing_cost",
-"grade": "A",
+"grade": "B",
 "statement": "Commodity cost changes are passed through to customers back-to-back; higher commodity prices are margin dilutive due to no gross-up on pass-through",
 "value": null,
 "period": "Q2 FY27",
@@ -93257,8 +93257,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 19,
-"A": 13,
-"B": 6,
+"A": 12,
+"B": 7,
 "C": 0,
 "shown": 15
 },
@@ -93387,7 +93387,7 @@
 "risk": [
 {
 "cat": "risk",
-"grade": "A",
+"grade": "B",
 "statement": "Q1 Bhujia production disrupted by Bengal elections; mitigated via mother depot inventory buffering",
 "value": null,
 "period": "Q1 FY27",
@@ -111734,6 +111734,195 @@
 ]
 }
 },
+"505200|2026-11-17": {
+"code": "505200",
+"name": "Eicher Motors Ltd",
+"day": "2026-11-17",
+"sector": "Automobile and Auto Components",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 34,
+"A": 18,
+"B": 13,
+"C": 3,
+"shown": 17
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fa741536-3256-4148-adb3-50a7d2fb9c09.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Expect upward trajectory to continue in upcoming quarters; no exact numerical guidance given",
+"value": null,
+"period": "next quarter",
+"direction": "up",
+"quote": "we remain poised to sustain this trajectory in the upcoming quarters."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Booking growth ~20% with some models having 2-month waiting period; double-digit inquiry and booking growth persists post-festive",
+"value": "20%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "some models booking is as good as two months. That's what the booking trend as of now, and that has grown by almost 20%. It is continuing. Even today, the inquiry rates and the booking rates are continuing."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Rural and semi-urban states (UP, West Bengal, Bihar, Rajasthan) delivered >23% booking growth in H1; no signs of slowing demand",
+"value": "23%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "For H1, booking growth in the states comprised predominantly semi-urban and rural Uttar Pradesh, West Bengal, Bihar, Rajasthan. They all also stood at more than 23% for us. We are closely monitoring the key indicators for any agricultural output, credit availability, monsoon, all those things we are seeing. But at least there is no signs which is actually telling us to show, oh, there is a slowing"
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Retail limited only by supplies; booking growth ~21% YTD and slightly higher during festival",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Honestly, the retail for the season was limited only by the supplies."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Consolidated EBITDA INR1,760 crores (highest-ever) vs INR1,512 crores YoY; PAT INR1,573 crores up 15%",
+"value": "1760 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our EBITDA is an highest-ever EBITDA of INR1,760 crores versus INR1,512 crores in Q2 last year."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Himalayan 440 bookings stopped after selling out in 17 days as it touched six months of capacity",
+"value": "six months of our capacity is sold out",
+"period": "current quarter",
+"direction": "up",
+"quote": "We stopped the booking for Himalayan 440 because it has touched a number where six months of our capacity is sold out."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Sitting on substantial bookings; stopped bookings for Himalayan 440 after reaching six months of capacity",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "We are sitting on quite a number of bookings because we have not supplied."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Cheyyar brownfield expansion announced Feb 2026 with INR 1,050 crore investment in three modules",
+"value": "INR 1,050 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "We started the brownfield expansion at the Cheyyar, which was announced in February 2026, with an investment of about INR1,050 crores in three modules."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Cheyyar brownfield investment ~INR1,050 crores in three modules; AP greenfield phase I board approved ~INR1,225 crores for 4.5 lakh capacity",
+"value": "1050 crores",
+"period": "FY27-FY30",
+"direction": "up",
+"quote": "We started the brownfield project, Cheyyar, with an investment of almost about INR1,050 crores in three modules."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Next-gen uptime center inaugurated at Pithampur with AI-enabled remote and predictive support for 100% connected fleet",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "A key milestone during the quarter was the inauguration of our next generation uptime center at Pithampur."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Four price hikes CYTD; latest 0.7% in October; calibrated approach based on commodity and perceived value",
+"value": "0.7%",
+"period": "CY2026",
+"direction": "up",
+"quote": "In October also, we have taken an increase of about 0.7%."
+},
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Price hike covers about 50% of commodity cost impact",
+"value": "50%",
+"period": "current quarter",
+"direction": "up",
+"quote": "we have done almost about 50% of the commodity impact that has been covered through the price increases."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "All models growing; Himalayan 440 propelled growth of Himalayan 450; adventure segment booking strong",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Himalayan 440 actually propelled the growth of even Himalayan 450."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Flying Flea electric brand expanding to Hyderabad, Pune, Delhi, Cochin, Chennai; bookings slower due to need for experience rides; S6 scrambler shown at EICMA on same platform",
+"value": null,
+"period": "current quarter",
+"direction": "up",
+"quote": "In fact, we opened only at one showroom in Bengaluru. Now we are in Hyderabad, and Pune, and now we are going to do it in Delhi and Cochin and all other areas, Chennai. The inquiries are very good. Bookings are slower because we have to give more experience ride to them, so people are also taking time. It's a new segment and new category. It will take time to grow that whole thing. We are not in a"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Supply chain challenges and inflationary pressures linked to continuing West Asian situation",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "This performance reflects disciplined execution despite supply chain challenges and inflationary pressures linked to the continuing West Asian situation."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Capacity increased from 1.5M to 1.65M per year by Q2 FY27 via Cheyyar Module 1",
+"value": "1.65 million per year",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Module 1, which has taken the capacity to 1.65 million per year. From 1.5 million, we have gone to 1.65 million by Q2."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Cheyyar Module 2 preponed to Q4 FY27, raising capacity to 1.8M per year available for Q1 FY28",
+"value": "1.8 million per year",
+"period": "Q4 FY27",
+"direction": "up",
+"quote": "We are preponing that, and we will get it by Q4 of FY27, which will take the capacity to 1.8 million per year, which will be readily available for Q1 of FY28."
+}
+]
+}
+},
 "507526|2026-11-17": {
 "code": "507526",
 "name": "Associated Alcohols & Breweries Ltd",
@@ -111919,6 +112108,249 @@
 "period": "Q2 FY27",
 "direction": null,
 "quote": "And second thing, on your question on, Prestige & Above category of the current portfolio, the total contribution is still very less, around about 4% to 5%."
+}
+]
+}
+},
+"512529|2026-11-17": {
+"code": "512529",
+"name": "Viyash Scientific Ltd",
+"day": "2026-11-17",
+"sector": "Healthcare",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 49,
+"A": 38,
+"B": 10,
+"C": 1,
+"shown": 23
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fdd93ce0-449c-4c7c-ab5f-139533a79859.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY27 PAT expected to grow more than 50% year-on-year",
+"value": ">50%",
+"period": "FY27",
+"direction": "up",
+"quote": "We believe H2 will also show strong performance, and overall year PAT actually is going to grow more than 50%."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY27 API business growth guided at 12-13%",
+"value": "12%-13%",
+"period": "FY27",
+"direction": "up",
+"quote": "We see good traction, visibility from second half. We are going to do better as whatever I indicated earlier, 12%-13% we are going to do."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY27 animal health API growth guided at 20%+",
+"value": "20%+",
+"period": "FY27",
+"direction": "up",
+"quote": "Last year base was close to INR 400 crores. I also said it's going to grow 20% plus percentage. We are on track on that."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY27 US formulation business guided at 10% growth despite no major launches",
+"value": "10%",
+"period": "FY27",
+"direction": "up",
+"quote": "We are confident to do 10% growth this year."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "European formulation led by strong volume growth across countries",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "In formulation, Europe performance was led by strong volume growth across different countries."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "API H2 visibility strong after Q1 geopolitical procurement delays; Q2 API growth 10-12%; full year mid-teens growth expected",
+"value": "mid-teens",
+"period": "H2 FY27",
+"direction": "up",
+"quote": "API is very strong in second half, if I have to tell you. Ramakant Singani: Q2, if you look at Q2 performance, I think we have shown a growth of around 10-12% for"
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "US business FY27 growth ~15% (vs prior guide ~10%); H1 INR 245 cr, Q2 run-rate implies ~INR 480-490 cr full year vs INR 426 cr last year",
+"value": "15%",
+"period": "FY27",
+"direction": "up",
+"quote": "Last year, U.S. business was about INR426 crores. So if you're looking at a number of INR 490, INR 480 crores, that's going to be about 15% growth."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Gross margin expected to track 54-55% in FY27 and FY28",
+"value": "54-55%",
+"period": "FY27, FY28",
+"direction": "flat",
+"quote": "I am confident we will be on track on 54-55& kind of thing this year, next year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "H1 FY27 pre-ESOP EBITDA margin expanded to 21.3% from 19.3% YoY",
+"value": "21.3%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Pre-ESOP EBITDA increased 30% year on year to INR 412 crores, with EBITDA margin expanding to 21.3% from 19.3% in the corresponding period last year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "API and formulation gross margins converging to similar levels (2-3% variance); new regular launches carry similar margins, exclusive launches can cause spikes",
+"value": null,
+"period": "next two years",
+"direction": "flat",
+"quote": "last six, eight months, gross margins are becoming more or less same, whether it is API or formulation now. Maybe it varies from 2%, 3% from here and there, but gross margins are quite stable."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Companion animal formulation revenue expected at $30 million in FY27 including BioForLife, ~60% growth",
+"value": "$30 million",
+"period": "FY27",
+"direction": "up",
+"quote": "So, I think this year, companion animal, we are going to do, including the BFL, close to $30 million, which is actually growth of around 60%."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "BioForLife acquisition closed effective 1 Oct 2026, consolidation from Q3 FY27",
+"value": null,
+"period": "Q3 FY27",
+"direction": null,
+"quote": "We have closed the acquisition of BioForLife effective from 1st October, and the results will be consolidated from Q3 FY27 onwards."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "CDMO revenue 90% commercial from innovators (mature products); new CDMO contracts with specialty pharma for launches ~2034-35; recent commercialization of albendazole for US adding $3-4M this year",
+"value": "$3-4 million",
+"period": "next 12-24 months",
+"direction": "up",
+"quote": "Like last quarter, we commercialized one product, albendazole for U.S. So that's coming 3, 4 million this year kind of thing."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "INR 60 crores spent on Ambernath facility repurposing, another INR 60-80 crores run rate this year",
+"value": "INR 60 crores, INR 60-80 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "With that, I think first off, we spent about INR 60 crores, and this year run rate can be maybe another INR 60 crore-INR 80 crores."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Dedicated companion animal facility to be commissioned by Q1 FY28",
+"value": null,
+"period": "Q1 FY28",
+"direction": null,
+"quote": "This is going to be commissioned by Q1 FY28, and the time is sufficient to meet the launch requirements of FY29."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Additional manufacturing line for animal health to start in FY28 and complete in FY28",
+"value": null,
+"period": "FY28",
+"direction": null,
+"quote": "Mostly we will start in FY28 and complete in FY28."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Raw material/solvent price hikes due to war impacted Q2 gross margin by 0.3-0.4%",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Second quarter is fully impacted, whatever is the raw material / solvent hikes because of war. Some we were able to manage by increasing the price, but some actually we are not able to do. Small portion is coming because of that."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "US formulation base business stabilized at INR 110-115 crores quarterly run rate after exclusivity loss",
+"value": "INR 110-115 crores",
+"period": "current",
+"direction": "flat",
+"quote": "At these levels where we can see INR 110-115 crores is the stable business, and we do not see any downsides from these things."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Multiple companion animal products with patent expiries up to 2035 identified for launch in Europe, Brazil, Turkey, Mexico, India, Southeast Asia",
+"value": null,
+"period": "2029 onwards",
+"direction": null,
+"quote": "We already identified multiple new products with patent expiries up to 2035 in the companion animal segment for targeted launch in our key markets initially: Europe, Brazil, Turkey, Mexico, India, and Southeast Asia."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Gestation period for new initiatives 3-5 years; oncology/companion animal R&D spend increased from INR 10-12 cr to INR 40 cr impacting near-term EBITDA margins",
+"value": "INR 40 crores",
+"period": "ongoing",
+"direction": "up",
+"quote": "We have to Gestation period and also investments also sizable. Like what I said, animal health earlier we used to do INR10, 12 crores, now it's become INR 40 crores."
+},
+{
+"cat": "risk",
+"grade": "A",
+"statement": "War-related raw material price volatility and supply chain disruptions impacting margins",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "Second quarter is fully impacted, whatever is the raw material / solvent hikes because of war. Some we were able to manage by increasing the price, but some actually we are not able to do."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Animal health R&D spend increased threefold to INR 10 crores per quarter run rate",
+"value": "INR 10 crores per quarter",
+"period": "current",
+"direction": "up",
+"quote": "Our animal health R&D spend run rate used to be, before merger, around INR 3-4 crores in a quarter, which means around INR 12-15 crores. Now it has become three times. We are reaching to the run rate almost INR 10 crores per quarter."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Manufacturing capacity expanded/optimized by 20-25% for next 1-2 years",
+"value": "20%-25%",
+"period": "next 1-2 years",
+"direction": "up",
+"quote": "Today, whatever we do, manufacturing and requirement for next one or two years, we were able to expand /optimize capacities by 20%-25%."
 }
 ]
 }
@@ -112387,6 +112819,237 @@
 ]
 }
 },
+"530001|2026-11-17": {
+"code": "530001",
+"name": "Gujarat Alkalies and Chemicals Ltd",
+"day": "2026-11-17",
+"sector": null,
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 20,
+"A": 15,
+"B": 4,
+"C": 1,
+"shown": 9
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2b2f2352-1339-4c74-a560-cdb1ff73659f.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Aspiration to reach INR10,000 crore+ revenue with EBITDA margins above 20% by FY2031 under Project Ahvaan",
+"value": "INR10,000 crore+ revenue, EBITDA >20%",
+"period": "FY2031",
+"direction": "up",
+"quote": "We have articulated an aspiration of becoming a INR10,000 crores plus revenue company with EBITDA margins above 20% by FY 2031."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Domestic sales grew 29% YoY and exports grew 14% YoY in Q2 FY27; expanded export footprint for phosphoric acid, caustic soda prills, methylene dichloride, Chlorotoluene in US/UK/Europe, commenced Benzaldehyde exports to US",
+"value": "Domestic +29% YoY, Exports +14% YoY",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Domestic sales increased by 29% year-on-year, while exports increased by 14%. We expanded the export footprint for phosphoric acid, caustic soda prills, and methylene dichloride, and strengthened Chlorotoluene sales in the U.S., U.K., and Europe, and commenced exports of Benzaldehyde to the United States."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "H1 FY27 actual power mix: 43% DISCOM+GNAL (81 MW), 28% short-term RE (52 MW), 29% own wind (53 MW); target to commission long-term captive RE SPVs to reduce grid dependence",
+"value": "43% grid, 28% short-term RE, 29% own wind",
+"period": "H1 FY27",
+"direction": null,
+"quote": "The actual H1 FY27 till now, the mix is like this, 43% and 81 megawatt is DISCOM plus GNAL. Short-term RE is 52 megawatt and is about 28%and we have our own existing RE assets in terms of our wind farms, which is about 29% and 53 megawatt."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Projects under implementation: 200 TPD caustic soda flaking at Dahej (target Dec 2026), 120 TPD HCl synthesis (target Jan 2027), Chlorotoluene downstream Phase 1 (by Mar 2027), electronic-grade hydrogen peroxide (Jan 2028), KOH expansion Va",
+"value": null,
+"period": "FY27-FY29",
+"direction": null,
+"quote": "Several projects are under implementation, including cell element replacement and the 200 TPD caustic soda flaking facility at Dahej, targeted for December this year. A 120 TPD HCl synthesis unit targeted around January 2027, and Chlorotoluene downstream projects. Longer duration initiatives under implementation included food-grade phosphoric acid expansion, caustic soda revamping, KOH expansion, "
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Meaningful pricing improvement across chlorotoluene (~100% YoY), phosphoric acid (~44%), hydrogen peroxide (~31%), caustic soda group (~10%) in Q2 FY27",
+"value": "Chlorotoluene ~100%, Phosphoric acid ~44%, Hydrogen peroxide ~31%, Caustic soda ~10%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Mostly it was chlorotoluene, as well as the chlorotoluene group was able to command a strong pricing uplift as compared to the previous year, same quarter, almost 100%, then Phosphoric acid about 44%, hydrogen peroxide 31% improvement over the previous quarter, and the entire caustic soda group was about an additional 10%."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Chlorine realization improved significantly in Q2 from substantially negative levels, supporting ECU; merchant chlorine sales ~700-750 TPD, pipeline ~150 TPD",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The chlorine prices has been substantially negative, which has improved significantly during the quarter to maintain the ECU levels."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Chemical businesses are cyclical; commodity prices, energy costs, raw material costs, geopolitical developments can influence short-term performance; chlorine prices historically negative but improving due to downstream demand growth",
+"value": null,
+"period": "ongoing",
+"direction": null,
+"quote": "We remain mindful that chemical businesses are cyclical and that commodity prices, energy costs, raw material costs, and geopolitical developments can influence short-term performance."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Renewable energy share rose to ~55% of power consumption in Q2 FY27 (38% in Q2 FY26) and ~57% in H1 FY27 (38% in H1 FY26); average H1 power rate fell to INR7.09/unit from INR7.6/unit",
+"value": "RE share 55% Q2, 57% H1; Power rate INR7.09/unit H1",
+"period": "Q2 FY27, H1 FY27",
+"direction": "up",
+"quote": "I am pleased to inform you that renewable energy accounted for approximately 55% of our power consumption in Q2, compared with 38% in Q2 last year. For the first half, renewable contribution increased to approximately 57% from 38%. The average H1 power rate reduced to INR7.09 per unit from INR7.6 per unit in the corresponding period."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Overall plant utilization ~92%; Chlorotoluene plant utilization ramped to ~90% from inauguration last year; grid disturbances and shutdowns kept overall utilization marginally lower than previous year",
+"value": "~92% overall, ~90% Chlorotoluene",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "Right now, we are at an average of about 92%, and our plant utilization specifically, if you would analyze the Chlorotoluene plant, the utilization has ramped up to approximately 90% since last year, same time, same period, which was the plant which was inaugurated last year and this year, we will be planning to add our Chlorotoluene downstream units as well."
+}
+]
+}
+},
+"530307|2026-11-17": {
+"code": "530307",
+"name": "Chaman Lal Setia Exports Ltd-$",
+"day": "2026-11-17",
+"sector": "Consumer Defensive",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 15,
+"A": 11,
+"B": 3,
+"C": 1,
+"shown": 10
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/40795f12-97d7-49de-9ea9-129d4e8378f0.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management expects industry Basmati export target of 6.5 million tons to be achieved this year, possibly higher",
+"value": "6.5 million ton",
+"period": "FY27",
+"direction": "up",
+"quote": "I know whatever the India sells, we will achieve that target of 6.5 million ton. We will achieve that target this year also, maybe increase also."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Iran buying finished rice in large volumes (5,000-10,000 tons per shipment) driving up paddy prices",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The demand is coming from Iran. The people who are exporting to Iran, they have booked the vessel. And in the vessel, they are selling 5,000, 10,000 tons, one party for one shipment."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Middle East demand continues despite high freight; Israel shipments regular and high quantity",
+"value": null,
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Israel, business has never stopped despite this war. We have been regularly and very high quantity shipping."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Q2 PBT historically best at around INR 75 crores driven by low-cost inventory procured last year",
+"value": "INR 75 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "I'm really pleased. I'm very excited that it is historically the best quarter ever with the PBT of around INR 75 crores."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Normalized export margin 8-10% on sales; current high prices may not be sustainable for full industry production",
+"value": "8% to 10%",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "The reasonable profit which comes 8% to 10% we get on our sales that we deserve."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Ocean freight to Middle East surged from $200-250 to $5,500-6,000 per container; passed through to buyers on CIF basis",
+"value": "$5,500-6,000 per container",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The ocean freight for Middle East Dubai was $200 to $250 a container, which is now $5,500 a container, even $6,000."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Paddy prices up sharply year-on-year: 1509 variety from INR 55-57/kg to INR 84-85/kg; 1121 steam above INR 100/kg",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "I told the rice prices. I think the first caller, I told that last year, the prices of some 1509 variety, which was INR 55 INR 56 a kg is INR 84 INR 85 today."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Exploring eco-friendly packaging (non-plastic) for US retail chains like Costco; agents in Europe and Korea advise planning for sustainable packaging",
+"value": null,
+"period": "future",
+"direction": null,
+"quote": "They say the plastic pouch is no longer workable or it may be banned any day. So, go for something which is eco-friendly and the business will increase a lot."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Company holds ~INR 500 crores cash reserves; no immediate diversification plans; focusing on domestic marketing and export business needs",
+"value": "INR 500 crores",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Our own industry business is such sometimes suddenly we require a lot of funds. So, but your question is absolutely right. INR 500 crores is a big amount."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Ongoing capex for new plants and automation to reduce labour reliance; removing old machinery",
+"value": null,
+"period": "ongoing",
+"direction": "up",
+"quote": "We are removing. We are putting up the new plants and automation, which is more automatic for the movement of the grains, for the movement, even the packings and all that and lower relying on the labour."
+}
+]
+}
+},
 "531400|2026-11-17": {
 "code": "531400",
 "name": "Almondz Global Securities Ltd",
@@ -112696,6 +113359,315 @@
 ]
 }
 },
+"532509|2026-11-17": {
+"code": "532509",
+"name": "Suprajit Engineering Ltd-$",
+"day": "2026-11-17",
+"sector": "Consumer Cyclical",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 32,
+"A": 21,
+"B": 11,
+"C": 0,
+"shown": 18
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/4b93a9a6-56c0-4482-994a-c33e98061028.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Consolidated EBITDA margin guided at 12%-13.5% for FY27; GCM margin guided at 10%-12%; ICM, PLE, SED expected at comfortable double-digits",
+"value": "12%-13.5%",
+"period": "FY27",
+"direction": "flat",
+"quote": "the consolidated margins we have said will be between 12% -13.5%. In global cables and mechatronics, it will be between 10% -12%."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "H2 FY27 margins expected to be slightly better than H1 margins",
+"value": null,
+"period": "H2 FY27",
+"direction": "up",
+"quote": "we are expecting to continue to maintain our growth projections as well, with probably slightly positive trend towards for the overall year at a higher level tha n what we have guided in the beginning of the year. We have also said that in the second half, the margins are likely to be slightly better than the first"
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "ICM OEM and beyond-cable business grew ~20% in Q2; aftermarket growth modest in single digits due to strong OEM demand",
+"value": "20%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Here, the revenue grew by close to 14%, with OEM and beyond cable business growing about 20%. Aftermarket growth was modest, and that is normal because once the OEM demand is strong, people do not take it out for servicing and all those."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "SED Q2 FY27 revenue grew 50.4% YoY led by digital clusters and Electronic Throttle Controls; broad-based across OEMs, products, geographies",
+"value": "50.4%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "It had a very strong growth, probably far higher than we had expected at 50.4% in this quarter year-on-year. It was led by a strong growth in digital clusters and Electronic Throttle Controls."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Global auto markets subdued outside India due to conflicts, inflation, commodity prices, shipping issues; India automotive grew 20%+ in H1 due to lower GST",
+"value": null,
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "Automotive markets have subdued in this quarter beyond India due to all the conflicts and inflation and commodity prices and shipping issues, etcetera. Indian automotive industry was in a bright spot. As you all know, the sector grew at 20%+, thanks to the lower GST regime as compared to last year same period."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "GCM H1 FY27 EBITDA margin improved to 10%+ from 7.4% a year ago; EBITDA more than doubled",
+"value": "10%+",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "our GCM revenues grew by around 24%, and EBITDA grew by 69%. The margins moved from 7.4% to 10%+."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "ICM Q2 FY27 margin recovered to 15.3% from 12.8% in Q1; further improvement expected in Q3",
+"value": "15.3%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "More importantly, the margins came back to 15.3% from 12.8% in Q1. I think we had talked about it earlier, and we expect some amount of bettering these numbers in Q3 too."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "PLE Q2 FY27 margin at 14.4% vs 6.7% in Q1; H1 double-digit growth and margin; full-year margin expected similar to last year in double-digits",
+"value": "14.4%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Moving on to our Phoenix Lighting and Electricals division, the revenue grew by close to 15% and EBITDA by 30%, with margin at 14.4% as against 6.7% in Q1. For half year, both growth and margin are back in the double - digits."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "GCM has ~20-22 projects awarded with largest Chinese EV OEM; 8-9 in commercial production, 10-12 more over next year",
+"value": "20-22 projects",
+"period": "next year",
+"direction": "up",
+"quote": "I think we are nearly 20, 22 projects that have been awarded. I think about eight to nine projects are now started into, got into commercial production. Another 10, 12 of them will be going into production over the next one year."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "SED order pipeline strong and broad-based across multiple OEMs in India and exports; no single OEM driving growth",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "those wins have been broad-based across multiple OEMs, both in India, two-wheelers, and also for exports. It is quite a broad base. There is no single OEM that is really driving this."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "FY27 capex guided at ~INR200 crore; ~half spent by H1; major projects: SAL greenfield cable plant in Chennai and SED facility expansion",
+"value": "INR200 crore",
+"period": "FY27",
+"direction": null,
+"quote": "We have said that this year our capex will be around INR200 crore. I think maybe we are done with about half of that by around now, just after the half year. The greenfield, or rather the new projects, one of course is the greenfield for Suprajit Automotive, and the second one is the electronics division, where we are going to put up an additional larger facility within the complex."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Annualized capex run-rate estimated at 3%-4% of revenue (~INR200 crore) for next year; budgetary expectation to be given at year-end",
+"value": "INR200 crore",
+"period": "FY28",
+"direction": null,
+"quote": "Let us say 3%-4% of our revenue could be utilized for such a person, which will be probably similar to INR 200 crores or so on an annualized basis."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "GCM facing inflationary pressures from commodity prices and high rates; multiple projects underway to reduce material and logistics costs",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "GCM continues to face inflationary pressures, with commodity prices going up, rates still being high. However, having said that, we have multiple projects going on to reduce and manage our costs of materials and also, I would say, logistics."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "SED launched complex TFT cluster with Ultraviolette using Qualcomm chip, dual cameras, radar; higher ASP ~INR20,000-25,000 per display for off-highway applications",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "We also, this quarter, launched one of our most complex TFT clusters, which was jointly developed with Ultraviolette, which is India's fastest electric bike. This cluster was powered by one of the most leading-edge Qualcomm chips, has dual cameras, dual antennas, has radar, a frontier TFT cluster within the industry in the two-wheeler space."
+},
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "STC developing actuation platforms (100N, 200N, 400-500N) with lower NVH; brake CBS gaining traction; hydraulic brake caliper assembly in advanced stage with tier-1 partner",
+"value": null,
+"period": "next 1-2 years",
+"direction": "up",
+"quote": "we are developing multiple platforms of actuation, maybe one with the 100 Newton capacity, one with the 200 Newton, and one maybe with the 400 or 500 Newton actuation, so that these actuators can be used for different"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Margin outlook dependent on commodity prices, Middle East conflict, currency volatility; electronics component cost volatility a key near-term risk",
+"value": null,
+"period": "H2 FY27",
+"direction": null,
+"quote": "Of course, this all depends upon how the commodities prices, Middle East conflict, and all really pan out in the next few months. That's not in our hands, but for that, I think we are looking at a good second half."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Consolidated H1 FY27 revenue INR2,205 crore (+22% YoY), EBITDA INR267 crore (+40% YoY)",
+"value": "INR2,205 crore",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "The consolidated revenue for the half year ended 30th September 2026 was INR2,205 crore, as against INR 1,804 crores for the corresponding previous year, recording a growth of 22%. The consolidated operation EBITDA for the half year ended 30th September 2026 was INR 267 crore, as against INR 191 crores for the corresponding previous year, recording a growth of 40%."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "SED expanding capacity: moved to rented facility, starting construction on vacated plant area for larger facility to support growth pipeline",
+"value": null,
+"period": "next quarter",
+"direction": "up",
+"quote": "Considering the growth of SED, and we see a further pipeline of growth, which is strong, we are planning to increase the size of the facility. Today, we have already moved to a rented facility, a part of our plant. The remaining part of that plant, which has now been vacated, has now started, we are starting construction there to build a much larger facility and give SED a space to grow in the yea"
+}
+]
+}
+},
+"532699|2026-11-17": {
+"code": "532699",
+"name": "Royal Orchid Hotels Ltd",
+"day": "2026-11-17",
+"sector": "Consumer Cyclical",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 14,
+"A": 5,
+"B": 5,
+"C": 4,
+"shown": 9
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c64525e7-aa8c-42de-8be1-9ab1f43e7a43.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Management expects faster than 10-15% growth in managed hotels over next 12 months with ~30 hotels and 1,800 keys opening, but declines to give revenue targets",
+"value": null,
+"period": "next 12 months",
+"direction": "up",
+"quote": "this year, we are saying that we are in the next 12 months or so, we have about 30 hotels opening with about close to 1,800 keys. So if you take that, then obviously, we're not looking at a 10% to 12% growth, we're looking at a slightly higher growth this year."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Indian hospitality sector benefiting from strong domestic travel, improving corporate travel and MICE activity, and increasing demand for quality branded accommodation",
+"value": null,
+"period": "current",
+"direction": "up",
+"quote": "The Indian hospitality sector continues to benefit from strong domestic travel demand, improving corporate travel and MICE activity and increasing demand for quality branded accommodation."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Managed hotel pre-tax operating margin maintained at 37-38%; excluding inter-company royalty adjustment margin is 36%",
+"value": "37-38%",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "We are at around operating margins of the managed hotel is around 37%, 38%, which we are able to maintain."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Consolidated other expenses expected to hover around INR 33-35 crore per quarter for remainder of FY27",
+"value": null,
+"period": "FY27",
+"direction": "flat",
+"quote": "No, no, it will be on the similar lines. The other expenses will hover around in the similar line. And I don't see in the current financial area, there is any shocker. See, last year, little bit had come of some new hotels, which we thought it was CapEx nature, but ultimately, the auditor said, no, it has to be taken to P&L, so it had come. So, this year, I don't think so any surprises will be the"
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Sequential EBITDA decline of 3.8% in Q2 vs Q1 attributed to seasonality (monsoon) and Vadodara hotel pre-opening costs; improvement expected in coming quarters",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "It is both. One is the seasonality also, because in India, it rains in July, August, September, which affects a lot of our hotels. So that's why Q1, Q2, there is a difference. As far as Y-o-Y is concerned, it's positive only. But yeah, you see, as I rightly said earlier, that one of the new hotels we opened in Vadodara, which is under JLO, and it's on revenue share. So, there we took certain hit o"
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "Premiumization strategy underway: ICONIQA first step; Royal Orchid Resort Bangalore EBITDA grew from INR 80 lakh to INR 2 crore post-investment; pipeline hotels targeting higher ADR and occupancy",
+"value": null,
+"period": "current",
+"direction": "up",
+"quote": "If you look at the Royal Orchid Resort in Bangalore, I've seen EBITDA go from INR 80 lakhs to INR 2 crores, just because of those investments. And all of this is coming to roost, and it's coming in slowly, albeit, but it's all being seen, right, by the company and by investors like yourself. Do remember that we've had, I guess, 100-plus hotels in the absolute pure mid-market of India in the INR 5,"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Pre-opening costs for new hotels (e.g., Vadodara JLO hotel ~INR 1-1.5 crore hit in Q2) and GST input credit disallowance are near-term headwinds",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "one of the new hotels we opened in Vadodara, which is under JLO, and it's on revenue share. So, there we took certain hit of almost INR 1 crore, INR 1.5 crore hit because of the pre-opening cost. That is why you are seeing the EBITDA little on the stressed side."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Managed hotel portfolio overall occupancy ~59% at ADR ~INR 4,000; newer hotels take ~6 months to stabilize",
+"value": "59% occupancy, INR 4,000 ADR",
+"period": "current",
+"direction": null,
+"quote": "the overall managed hotel we are doing an occupancy of roughly 59% at an ADR of around INR 4,000. So, ADR because most of our managed hotel are the mid market hotels. So, ADR was around that price. But yeah, the older hotel definitely they improve because it takes one year, the newer hotel it takes some time."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "NCLT proceedings with Ksheer Sagar Developers Limited are a control matter with no financial implication expected regardless of outcome",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "See, the matter which is going on in the NCLT is between the company and its partner. So, there won't be any financial implication as such, even at the outcome of the NCLT. So more of a control angle, where the matter is pending with the NCLT."
+}
+]
+}
+},
 "532762|2026-11-17": {
 "code": "532762",
 "name": "Action Construction Equipment Ltd",
@@ -112814,6 +113786,1028 @@
 "period": "H1 FY27",
 "direction": "up",
 "quote": "It has appreciated quite a lot in the last one year. So from 86, 87, it has gone up to 96, 97. Now it has come down to 93. Yes, I think it may be strengthened or let us say the rupee weakened for India's import benefit. I mean, so that import benefit by about 10%, it has gone up by 2%, 3%. So, a 2, 3, 4% move here and there does not do anything. 8% and 10% yes, definitely adds a barrier because at"
+}
+]
+}
+},
+"532768|2026-11-17": {
+"code": "532768",
+"name": "Fiem Industries Ltd",
+"day": "2026-11-17",
+"sector": "Automobile and Auto Components",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 27,
+"A": 18,
+"B": 9,
+"C": 0,
+"shown": 16
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7a9304ff-babf-4181-96fb-1779b5ceda77.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Full-year revenue growth guidance maintained at 15%-20%, aiming for top end",
+"value": "15%-20%",
+"period": "FY27",
+"direction": "up",
+"quote": "We stick to 15%-20%. At the top end of our range, it is 20%."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "EBITDA margin guidance for full year at around 14%",
+"value": "14%",
+"period": "FY27",
+"direction": "flat",
+"quote": "Overall, we are quite delighted that in this tough environment, we've been able to manage at 14%-odd, and which is the guidance that we had for the full year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY28 revenue growth guidance at 15%-20%",
+"value": "15%-20%",
+"period": "FY28",
+"direction": "flat",
+"quote": "15%-20% growth is what we want to guide for the next year."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Two-wheeler industry production grew 16.5% YoY in Q2 FY27; scooter sales up 28%, electric two-wheelers up 80%",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Production was 8.09 million units. This is 16.5% higher than the last year and about 11% higher than the first quarter. Scooter sales grew nearly 28%, while electric two-wheeler grew by more than 80%."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Management sees no demand weakness from monsoon or other factors",
+"value": null,
+"period": "FY27",
+"direction": "flat",
+"quote": "No, we are not seeing that."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "EBITDA margin improved to 14.07% in Q2 FY27 from 13.93% YoY; sequential improvement from 13.5%",
+"value": "14.07%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The EBITDA margin improved to 14.07% from 13.93%."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Gross margin pressure of 169 bps sequentially offset by operating leverage on other expenses",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "If you see quarter-over-quarter, it has gone up from 62%-odd to 63.7%. That's a significant increase. However, we've been able to handle our other expenses and operating leverage has kicked in."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Pipeline of over 100 two-wheeler models to launch by FY28-FY29 worth INR800-900 crores additional business",
+"value": "INR800-900 crores",
+"period": "FY28-FY29",
+"direction": "up",
+"quote": "We have got more than 100 models wherein we are working with all the two-wheeler companies that to be launched by '27-'28 and '28-'29, in the next two years. Those are almost INR800 crores-INR900 crores of additional business."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Capex of INR90.88 crores in H1 FY27, more than double H1 FY26",
+"value": "INR90.88 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Capex was INR49.73 crores in Q2 and INR90.88 crores in first half against INR37.81 crores in the first half of previous year."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Capex guidance raised to close to INR150 crores for FY27 from earlier INR100 crores",
+"value": "INR150 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "We could additionally do INR50 crores, INR60 crores this quarter, in the next H2. That should take our capex guidance to close to INR150 crores for the current financial year."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Cost pass-through from OEMs expected in Q3 and Q4 to help maintain margins",
+"value": null,
+"period": "Q3-Q4 FY27",
+"direction": "up",
+"quote": "Yeah. I mean, that keeps happening on a sequential quarter level. So we would have got something from previous quarter and all. So normalized, we believe this is the margin that we should be able to get to."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "LED content per vehicle increasing; LED moving into commuter segment (TVS Radeon all-LED)",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Radeon now comes with all-LED lighting, which shows LED moving into the commuter segment."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Sole supplier for all lamps on Ather Konarc all variants",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "For Konarc, all models, all variants, we are the sole supplier for all the lamps which is being used by them in their vehicles."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Four-wheeler business still small percentage of revenue; no significant contribution expected in next 12 months",
+"value": null,
+"period": "FY27-FY28",
+"direction": "flat",
+"quote": "As a percentage of our sales, it is still relatively small. And we do see that number remaining there for the next 12 months."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Capacity utilization currently between 75% and 80%, closer to 80%",
+"value": "75%-80%",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Our current is between 75% and 80%. This is after taking into account the new capex that we are doing."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Cash and cash equivalents INR163.42 crores as of Sep 30, 2026 after INR105.28 crores dividend payment",
+"value": "INR163.42 crores",
+"period": "Sep 30, 2026",
+"direction": "flat",
+"quote": "Cash and cash equivalent were INR163.42 crores as on 30th September 2026 after payment of dividend of INR105.28 crores during this quarter."
+}
+]
+}
+},
+"532923|2026-11-17": {
+"code": "532923",
+"name": "Renaissance Global Ltd",
+"day": "2026-11-17",
+"sector": "Consumer Cyclical",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 23,
+"A": 13,
+"B": 9,
+"C": 1,
+"shown": 14
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1df8a4df-4bcf-4083-b408-631af1d8f9cc.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Own brands Jean Dousset and With Clarity likely to close FY27 at INR375 crores annual revenue, INR172 crores achieved in H1",
+"value": "INR375 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "our own brands, Jean Dousset and With Clarity, which have recorded a compounded annual growth rate of 66% since FY22 and are likely to close at an annual revenue of INR375 crores for FY27, of which INR172 crores has already been achieved in the first half of the year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Ambition to build INR1,000 crores direct-to-consumer business by FY29 driven by own brands growth, retail expansion, digital capabilities and operating leverage",
+"value": "INR1,000 crores",
+"period": "FY29",
+"direction": "up",
+"quote": "Over the longer term, our ambition is to build a INR1,000 crores direct-to-consumer business by FY29, driven by growth of our own brands, expanding of our retail network, stronger digital capabilities and improving operating leverage."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Target working capital cycle of approximately 180 days",
+"value": "180 days",
+"period": "ongoing",
+"direction": "down",
+"quote": "We remain focused on further improving these metrics and are targeting a working capital cycle of approximately 180 days."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Target to reduce net debt to approximately INR100 crores by 2030",
+"value": "INR100 crores",
+"period": "2030",
+"direction": "down",
+"quote": "Our target is to further reduce debt to approximately INR100 crores by 2030, reflecting our commitment to strengthening the balance sheet and improving financial flexibility."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Jean Dousset same-store sales growing at high single-digit rate, mainly volume-driven with stable prices",
+"value": "high single-digit",
+"period": "FY26",
+"direction": "up",
+"quote": "I think that they're sort of in the high single-digit range would be the same-store sales growth."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Customer brands EBITDA margins expected to remain in 6-8% range with far less working capital intensity; overall company margins to improve due to mix shift toward higher-margin D2C segments",
+"value": "6-8%",
+"period": "ongoing",
+"direction": "flat",
+"quote": "I would say that the margins would remain in the 6% to 8% range with far less working capital intensity. I don't think that the absolute margin for customer brands would be significantly higher than the 8% range."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "H1 FY27 EBITDA margin 7.6% vs 7.9% H1 FY26; reduction tied to exiting certain customer brands businesses with long working capital cycles",
+"value": "7.6%",
+"period": "H1 FY27",
+"direction": "down",
+"quote": "EBITDA increased by 21% year-on-year to reach INR101 crores with a margin of 7.6%."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Customer brands segment expected to be INR1,700-1,800 crores for FY27, run rate for following year closer to INR1,400-1,500 crores after exiting INR400 crores revenue customers",
+"value": "INR1,700-1,800 crores",
+"period": "FY27",
+"direction": "down",
+"quote": "for the Customer Brands segment, we will be closer to INR1,700 crores, INR1,800 crores. I think the run rate for the following year will be closer to INR1,400 crores, INR1,500-odd crores because as I mentioned, as the inventory sells down, revenue would be recognized during this year, and we would see, sort of, a release in that working capital."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Capex and inventory per Jean Dousset boutique is about INR10 crores to INR12 crores",
+"value": "INR10 crores to INR12 crores",
+"period": "per store",
+"direction": null,
+"quote": "It's about INR10 crores to INR12 crores."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Jean Dousset marketing spend 25% of sales in FY26, expected 17-18% in FY27 as sales ramp 50% while marketing spend stays flat",
+"value": "17-18%",
+"period": "FY27",
+"direction": "down",
+"quote": "last year, our marketing spends as a percentage of sales were about 25%. However, as sales ramp up by 50%, they will go down. So for financial year '26, it would have been about 25%. Current year expectation would be about 17% to 18% because marketing spends have not gone up as stores have opened."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Jean Dousset 50% made-to-order bespoke model with 3-4 week delivery; With Clarity digital-first with marketplace for diamonds only; licensed Disney brands omnichannel",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "The business of Jean Dousset and With Clarity is about 50% made to order, where the consumer comes in into the Jean Dousset store and looks at the product and then custom creates an engagement ring."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "B",
+"statement": "Bullion sales (INR146 crores H1 FY27) are wash, not relevant to business; managed for US manufacturing; discussing accounting methodology change with auditors for FY28",
+"value": null,
+"period": "FY27/FY28",
+"direction": null,
+"quote": "the bullion sales, sort of, are a wash not relevant to the business. They are currently actually being managed for manufacturing in the U.S. where we sell gold to our contractors. We are discussing with our auditors to change the accounting methodology. It probably will take place in the next financial year."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Expect to open 4 additional Jean Dousset boutiques in Washington D.C., Chicago, Miami and Dallas over coming months, taking total to 8 by end of FY27",
+"value": "8 boutiques",
+"period": "FY27",
+"direction": "up",
+"quote": "We are progressing with the next phase of expansion and expect to open 4 additional boutiques across Washington D.C., Chicago, Miami and Dallas over the coming few months, taking our total network to 8 boutiques by the end of FY27."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Forex losses driven by USD-denominated borrowings revaluation; gross borrowings INR550-600 crores USD-denominated; business managed on USD revenue/expense basis",
+"value": "INR550-600 crores",
+"period": "current",
+"direction": null,
+"quote": "A majority of our gross borrowings would be dollar-denominated. It will be in the range of about INR550 crores to INR600 crores."
+}
+]
+}
+},
+"533326|2026-11-17": {
+"code": "533326",
+"name": "Texmaco Rail & Engineering Ltd",
+"day": "2026-11-17",
+"sector": "Capital Goods",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 20,
+"A": 15,
+"B": 3,
+"C": 2,
+"shown": 11
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/30d0fa7d-06c8-4a54-8c34-673212df45b2.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management expects sustainable contribution of INR4,000-5,000 crores from core freight rolling stock and foundry, and INR5,000-6,000 crores from adjacencies and new businesses like defence and renewables.",
+"value": "INR4,000-5,000 crores core; INR5,000-6,000 crores new",
+"period": "coming days",
+"direction": "up",
+"quote": "So this we mention as strengthening the core, through which we feel we will have a sustainable contribution of the business in the top line of the company, in and around INR4,000 crores to INR5,000 crores in the coming days. And balance INR5,000 crores to INR6,000 correct crores, we wanted to create a mirror with various business plans like our adjacencies, like wheel, passenger mobility component"
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Financial discipline, cost competitiveness, efficiency improvement, operational excellence, and execution focus remain key themes; aim to complete diversification/growth opportunities for revenue visibility within FY27 or FY28.",
+"value": null,
+"period": "FY27-FY28",
+"direction": "up",
+"quote": "And we want to engage with you more, and we are here, I mean, we are -- we have taken all kind of possible measures in terms of, as I have emphasized, that the key pillars is the financial discipline, cost competitiveness, and efficiency improvement, operational excellence, improving the execution, focus on the execution for much more returns. And all of this will remain one of the key themes, inc"
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Indian Railway wagon ordering expected to continue due to infrastructure augmentation, coal transport needs, and policy push for private investment; timing uncertain.",
+"value": null,
+"period": "FY28",
+"direction": "up",
+"quote": "But I think that this is not the end of all because there are many things which railway is very consciously focusing and have spent a lot of money last 2 years on augmenting the infrastructure and decongest the whole network. And with the focus of the Honorable Minister, Railway Minister, that on the simplifying the procurement policy by the private players and the private investment, welcoming pr"
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Export orders constitute 54% of order book vs 9% YoY, driving margin improvement due to high export margins.",
+"value": "54% export share",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "This is also reflected in our order book, where export has shot up to 54% against 9% on a Y-o-Y basis, fuelling upward trend in the profit margin because the export business has very high profit margin."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Order book mix shifted to 80-85% private/export and 15-16% Indian Railways.",
+"value": "80-85% private/export",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "And the ratios of the order book today qualitatively changes for Texmaco in terms of the core business. It's more around 80%, 85% is private and export, and around 15% to 16% is Indian Railway."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Order book stands at INR10,000 crores with INR8,000 crores freight rolling stock and INR3,000-3,500 crores infra/component business executable over this year and next.",
+"value": null,
+"period": "FY27-FY28",
+"direction": "up",
+"quote": "So if you see that we are -- as he has mentioned, on a tipping point, we are actually in an inflection point. And the revenue was up, up to 14.6% or around 15% from quarter-to-quarter. And the rail infra also grew around 41% or 42% Q-on-Q, and the electrical infra also grew 38% Q-on-Q."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Cost reduction initiatives across supply chain, power, fuel, freight negotiations; finance cost reduced due to credit rating upgrade.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "There are various initiatives around cost reductions, which we have undertaken. There are also steps around, say, the finance cost. If you would see, there's a reduction in finance cost compared to the previous quarter, that is Q2 of last year and even to the last quarter. As we -- as I mentioned earlier, we are working on upgrade of our credit rating, which is also translating into lower finance "
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "Freight cars 62.3% of standalone turnover (down from 68.8% Q1, 74.7% YoY); infra electrical 27.8% (massive jump); non-freight businesses now ~37% vs 25% YoY.",
+"value": "Freight 62.3%, Infra electrical 27.8%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our turnover mix is also broadening. Freight cars contributed 62.3% of standalone turnover this quarter compared to 68.8% in Q1 and 74.7% same quarter last year. Infra business, infra electrical business has risen to 27.8% of turnover, which is a massive jump from earlier year. Put simply, businesses outside freight cars also are showing an improvement, and today its makeup almost like 37% of the "
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "B",
+"statement": "INR700 crores provision taken as risk mitigation for geopolitical uncertainty; not linked to specific orders; does not affect future returns on export orders.",
+"value": null,
+"period": "FY27",
+"direction": null,
+"quote": "So that adjustment has nothing to do with the future returns or the orders what we are doing because it's not linked with anything specific. It was more of a risk mitigation measure which the company took. And it's in no way affecting our return on execution, what we will be doing, including the export orders of locomotives, the wagons, all the top lines and bottom lines will come. And these are a"
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Steel foundry dispatch guidance 35,000-40,000 metric tons minimum for H1 FY27 with 25-30% exports.",
+"value": "35,000-40,000 metric tons",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "But we should be able to deliver in and around 35,000 to 40,000 metric ton minimum, and at least 25% to 30%, which I was referring to, should be exports. And which was not there, I mean, this is something which is good going to happen with the company."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "CRISIL upgraded long-term rating to A+ from A; ESG rating improved to 51-59 grade.",
+"value": "A+ rating",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "One good news which we want to convey to our associates is that CRISIL has rated us as A+ for long-term limits. Earlier we had a rating of A, so this is an upgradation by a notch. And also in our ESG ratings, we're at the grade of 51 to 59, which is also an improvement for us."
+}
+]
+}
+},
+"535789|2026-11-17": {
+"code": "535789",
+"name": "Sammaan Capital Ltd",
+"day": "2026-11-17",
+"sector": "Financial Services",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 40,
+"A": 40,
+"B": 0,
+"C": 0,
+"shown": 17
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/60700304-8c83-443f-a6f6-1c163ea54fda.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Full-year FY27 AUM target approximately INR70,700 crores",
+"value": "70700 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "Our full-year AUM target is approximately INR70,700 crores, compared with INR59,188 crores at the end of Q2."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Full-year FY27 loan book target INR53,000 crores",
+"value": "53000 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "Our loan book stood at INR46,482 crores against a full-year target of INR53,000 crores."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Full-year FY27 disbursement ambition INR30,100 crores",
+"value": "30100 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "First half disbursements were INR10,123 crores, and a full-year disbursement ambition is INR30,100 crores."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Full-year FY27 PAT target INR1,400 crores",
+"value": "1400 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "PAT for H1 stood at INR556 crores against a full-year target of INR1,400 crores."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Gross margin INR517 crores representing 2.9% of assets in Q2 FY27",
+"value": "2.9%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The gross margin computed as the sum of these elements, less the interest expense, is INR517 crores in this quarter, which represents 2.9% of our assets."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Expect net interest income and margins to expand steadily as cost of funds declines",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "From here on, the direction of travel is positive as our cost of funds continue to decline, supported by our rating upgrades and the backing of our new promoter."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Q2 FY27 disbursements INR6,278 crores, up 62% QoQ",
+"value": "6278 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "During the quarter, we disbursed INR6,278 crores, representing 62% growth over the previous quarter."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "AUM INR59,188 crores at end of Q2 FY27",
+"value": "59188 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our assets under management stood at INR59,188 crores at the end of Q2 FY27, compared with INR56,239 crores in the previous quarter."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Investing significantly in IT and AI capabilities on software and manpower front",
+"value": null,
+"period": "FY27",
+"direction": null,
+"quote": "Bottom line, we are investing significantly in IT and AI capabilities, both on the software and manpower front."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Increased lending rates by 25 basis points effective 1st November 2026",
+"value": "25 bps",
+"period": "Q3 FY27",
+"direction": "up",
+"quote": "The company has just recently increased with effect from November, the whole book by 25 basis points, while our cost of funds are still declining, which is also evident in the interest expense line."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "94% of Q2 disbursements were secured loans",
+"value": "94%",
+"period": "Q2 FY27",
+"direction": null,
+"quote": "Approximately 94% of our Q2 disbursements were secured loans."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Gold loan soft launch in ~16 branches in Q3 FY27, rollout to 30 more branches in Q4 FY27",
+"value": null,
+"period": "Q3 FY27",
+"direction": null,
+"quote": "The product policies have been approved, and we are working towards a soft launch in approximately 16 branches during this quarter, quarter 3. The subsequent rollout is planned across 30 more branches in quarter 4."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "UAE bank within IHC family extended support of over USD150 million at competitive rates",
+"value": "USD150 million",
+"period": "recent",
+"direction": null,
+"quote": "There are a couple of large UAE banks, one of which is within the wider IHC family and has already extended support of over USD150 million at fairly competitive rates, continues to work with us, has become one of our prime bankers."
+},
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "Another UAE bank expected to do similar size transaction over next couple of months",
+"value": null,
+"period": "next couple of months",
+"direction": null,
+"quote": "The other one, I am quite sure, will be doing a similar size transaction over the next couple of months."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Achieving AAA rating requires sustained portfolio growth, diversified retail lending, superior asset quality, sustainable profitability, and ROMA above 2%",
+"value": "2%",
+"period": "long-term",
+"direction": null,
+"quote": "It will require sustained portfolio growth, diversified retail lending, superior asset quality, sustainable profitability, and a return on managed assets which is above 2%."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Implemented over 12 IT projects between June and October 2026",
+"value": "12",
+"period": "H1 FY27",
+"direction": null,
+"quote": "We have implemented over 12 IT projects between June and October, with additional projects underway."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Identified 53 AI use cases, 35 targeted for implementation in FY27",
+"value": "35",
+"period": "FY27",
+"direction": null,
+"quote": "On the AI front, we have identified 53 specific AI use cases, of which 35 are targeted for implementation during this financial year '27."
+}
+]
+}
+},
+"538715|2026-11-17": {
+"code": "538715",
+"name": "Dhabriya Polywood Ltd",
+"day": "2026-11-17",
+"sector": "Industrials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 30,
+"A": 26,
+"B": 4,
+"C": 0,
+"shown": 18
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0a1498e8-3af1-4edd-9074-b6888253b98b.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management projects 25-30% revenue growth in the longer run on a year-on-year basis",
+"value": "25% to 30%",
+"period": "longer run",
+"direction": "up",
+"quote": "So our overall projection is to achieve 25% to 30% revenue growth in the longer run on a year-on-year basis."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Fluted panel revenue target for FY27 is approximately INR65 crores",
+"value": "INR65 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "This year, we are targeting over around INR65 crores approximately for complete year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "WPC door revenue projection for FY27 is INR5-6 crores due to slight delay in project implementation",
+"value": "INR5 crores, INR6 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "We initially at the beginning, in fact, when we started implementing this project, we figured it out INR15 crores contribution in this year, but looking to slight delay in project implementation, so now we are projecting somewhere around INR5 crores, INR6 crores of revenue in this financial year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Export revenue target for FY27 is INR6-7 crores versus INR4.5 crores last year",
+"value": "INR6 crores to INR7 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "This year, we are projecting more than INR6 crores. In the H1 already, we have done INR3 crores plus export. So this year target, it should be in the range of INR6 crores to INR7 crores as compared to last year's INR4.5 crores."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Long-term opportunities positive across India's building materials and interior solutions industry driven by urbanization, infrastructure, real estate growth and preference for modern durable materials",
+"value": null,
+"period": "long-term",
+"direction": "up",
+"quote": "Increasing urbanization, infrastructure development, growth in residential and commercial real estate and a rising preference for modern, durable and low-maintenance building materials are creating opportunities for organized manufacturers like us."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Full year FY27 EBITDA margin expected to be slightly better than previous year's ~21%",
+"value": "slightly better than 21%",
+"period": "FY27",
+"direction": "up",
+"quote": "EBITDA margin last year, we have seen, was at around 21%. So we do expect this year also with a little bit better margin for the whole year compared to the previous year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Aluminum business initial margins may be 2-3% lower than overall margin, but not at lower range",
+"value": "2%, 3% lower side",
+"period": "initial stage",
+"direction": "down",
+"quote": "Initially it is -- at the initial stage when we captured the new business venture into the new business and against the competition and built the healthy order book. So slightly 2%, 3% maybe lower side only."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "EBITDA margin improved 70 bps to 21.1% in Q2 FY27 and 180 bps to 22% in H1 FY27",
+"value": null,
+"period": "Q2 FY27, H1 FY27",
+"direction": "up",
+"quote": "EBITDA increased by 19.9% to INR16.38 crores compared to INR13.66 crores in the corresponding quarter last year, with EBITDA margin improving by 70 basis points to 21.1%."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Total executed project order book reached all-time high of more than INR240 crores",
+"value": "more than INR240 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "We took our total executed project order book has reached an all-time high of more than INR240 crores, the highest in our company's 34-year history."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Order book split: uPVC windows ~INR70 crores, Aluminum windows and facade ~INR140 crores, Modular Furniture ~INR30 crores",
+"value": "INR70 crores, INR140 crores, INR30 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "The uPVC windows is somewhere around INR70 crores. And aluminum windows and facade order book as of now is INR140 crores and remaining INR30 crores related to the furniture."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Aluminum Window and Facade division secured orders worth more than INR100 crores (later clarified as INR140 crores)",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Our newly established Aluminum Window and Facade division has already secured orders worth more than INR100 crores."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Additional 8,000 metric ton extrusion capacity to be added in next 3-6 months, machine orders already placed",
+"value": "8,000 metric ton",
+"period": "next 3 to 6 months",
+"direction": "up",
+"quote": "So in that, initially, we are targeting to add another 8,000 metric ton capacity in next 3 to 6 months tenure for which machine orderings and everything has already been taken up."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Margin improvement driven by refined product mix (fluted/soffit panels, furniture profiles, higher range doors/windows, refined modular furniture) not price hikes",
+"value": null,
+"period": "last 8-10 quarters",
+"direction": "up",
+"quote": "It's purely because of our refined product mix. In fact, we have upgraded our offerings throughout different segments. Earlier wherein the volumes were coming from the low cost or high competition sort of products. So now -- which we have upgraded by adding the fluted and soffit panels, furniture profiles, higher range of the doors and windows and very refined range of Modular Furniture products t"
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Polymer Product business (PVC/uPVC profiles, windows, doors, panels) revenue grew 27% YoY to INR69.5 crores in Q2 FY27, now 89% of gross turnover vs 81% last year",
+"value": "INR69.5 crores, 89%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our core Polymer Product business comprising PVC and uPVC profiles, windows, doors and panels continues to deliver strong growth, recording revenues of INR69.5 crores in quarter 2 financial '27, up about 27% year-on-year. segment now contributes approximately 89% of our gross turnover compared to 81% in the corresponding quarter last year."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "WPC doors commercially launched last month with lucrative response, initial year revenue projection INR5-6 crores",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "Last month, we have launched it commercially. And we are pleased to share that response is very lucrative. And hopefully, in the coming quarters, we will see the valuable figures from -- contribution from this product segment also."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Aluminum project execution involves design approvals, structural calculations, customized system development; revenue conversion from Q4 FY27 subject to project schedules",
+"value": null,
+"period": "Q4 FY27",
+"direction": null,
+"quote": "Since it involves many processes related to the design approvals, certain structural calculations and customized system development. So everything is on time. From the Q3 itself, executions will start happening relative to this project business of aluminum. Q4, specifically, we mentioned that Q4 will witness certain figures, which we can separate as a segment also going forward."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Extrusion capacity increased from 24,000 to 27,600 metric tons per annum",
+"value": "27,600 metric tons per annum",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Our extrusion capacity has already increased from 24,000 metric tons per annum to 27,600 metric tons per annum, providing additional headroom for growth."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Capacity utilization for extrusion is more than 65% in H1 FY27",
+"value": "more than 65%",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "Capacity utilization is more than 65% in this first half of the year for the extrusion."
+}
+]
+}
+},
+"541233|2026-11-17": {
+"code": "541233",
+"name": "Lemon Tree Hotels Ltd",
+"day": "2026-11-17",
+"sector": "Consumer Services",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 18,
+"A": 13,
+"B": 5,
+"C": 0,
+"shown": 14
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ddf89695-108a-4366-9b1f-5d3efa46773d.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management expects H2 FY27 revenue and EBITDA split to remain at 55/45 and 60/40 respectively, consistent with historical seasonality.",
+"value": null,
+"period": "H2 FY27",
+"direction": null,
+"quote": "We will stick to that it should be 55/45 and 60/40."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Corporate demand remains muted due to geopolitical uncertainty, inflation, and weak IT hiring, while non-negotiated retail demand is compensating.",
+"value": null,
+"period": "Q2 FY27",
+"direction": null,
+"quote": "The corporate demand is still muted and within corporate demand, one of the main segments we depend on in certain cities like Gurgaon is new hirings, joinees and this is very large business from the IT sector that has not, frankly, yet picked up."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Fleur owned hotels hotel EBITDAR margin rose 112 bps to 53% in Q2 FY27.",
+"value": "53%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Their hotel EBITDAR margin percentage rose 112 basis points to 53%."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Keys hotel EBITDAR margin rose 748 bps to 50% in Q2 FY27.",
+"value": "50%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Keys hotel EBITDAR margin rose 748 basis points to 50%."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Opened 8 managed/franchised hotels with 523 rooms in Q2 FY27; signed 11 managed/franchised hotels with 825 rooms.",
+"value": "523 rooms opened, 825 rooms signed",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "In Q2 FY27, on the asset-light side, we opened 8 managed and franchised hotels with 523 rooms. We also signed 11 managed and franchised hotels with 825 rooms, about 1.6x of the inventory we opened during the quarter."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Combined operational and pipeline inventory stands at 24,061 rooms across 285 hotels in 170+ cities; 130 hotels with 12,131 rooms operational.",
+"value": "24,061 rooms pipeline, 12,131 operational",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our combined operational and pipeline inventory now stands at 24,061 rooms across 285 hotels in 170+ cities, of which 130 hotels with 12,131 rooms across 80+ cities are already operational."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Acquired land in Bandra East, Mumbai for ~Rs. 120 crore to develop 172-room Lemon Tree Premier, expected to open in FY30.",
+"value": "Rs. 120 crore",
+"period": "FY30",
+"direction": "up",
+"quote": "This quarter, we acquired land in Bandra East, Mumbai, adjoining BKC, for about Rs. 120 crore to develop Lemon Tree Premier Bandra. An owned upscale hotel with approximately 172 rooms, expected to open in FY30."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Aurika Shimla (90 rooms) scheduled to open in Q3 FY27; Aurika Shillong (165 rooms leased) expected FY28; Aurika Varanasi (47 rooms leased) piling begun, expected FY29; Aurika Nehru Place (610 rooms) DDA letter extended to Aug 2027, expected",
+"value": null,
+"period": "Q3 FY27 to CY31",
+"direction": null,
+"quote": "Our own 90-room hotel, Aurika Shimla, is scheduled to open in Q3 this year. Aurika Shillong, our 165-room leased hotel, is progressing well and is expected to open in FY28. At Aurika Varanasi, our 47-room leased heritage hotel, piling work has begun and is expected to open in FY29. Lastly, for Aurika Nehru Place, DDA has extended the letter of award till August 2027, which gives us ample time to s"
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "ARR grew 8% YoY to Rs. 6,751 in Q2 FY27; RevPAR grew 18% to Rs. 5,137 driven by balanced ARR and occupancy growth.",
+"value": "ARR Rs. 6,751, RevPAR Rs. 5,137",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "For the quarter, our Gross ARR stood at Rs. 6,751, up 8% YoY and occupancy was at 76.1%, up 633 basis points YoY. As a result, RevPAR grew at 18% to Rs. 5,137."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Aurika ARR growth 9% in Q2 FY27, highest in many quarters; management intends to push ARR further as occupancy stabilizes at ~75%.",
+"value": "9%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "At 9% ARR growth, this is the highest ARR growth in the Aurika portfolio in many quarters from the past. You can start seeing this already that we are pricing Aurika to its potential and to its positioning."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Aurika and Lemon Tree Premier contribute 63% of hotel EBITDAR on 58% of revenue for Fleur owned portfolio.",
+"value": "63% EBITDAR, 58% revenue",
+"period": "Q2 FY27",
+"direction": null,
+"quote": "Aurika and Lemon Tree Premier together earned 63% of hotel EBITDAR on 58% of revenue."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "B",
+"statement": "Warburg Pincus Rs. 960 crore investment on call, no restrictions; will be drawn only if deployable in acquisitions/developments; nearly 100% sure to be fully utilized.",
+"value": null,
+"period": "Ongoing",
+"direction": null,
+"quote": "It is entirely dependent on acquisitions/developments. There is no restriction. We can call for it. They said they need 2 weeks. Obviously, we will take the money if and only if we can deploy it. But based on what we are seeing right now, we are nearly 100% sure that we will take the entire amount."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Gross debt reduced 11% YoY to Rs. 1,429.2 crore as of Sep 30, 2026; cost of debt down 28 bps to 7.44%.",
+"value": "Rs. 1,429.2 crore",
+"period": "Sep 30, 2026",
+"direction": "down",
+"quote": "Our gross debt as on 30th September 2026 stood at Rs. 1,429.2 crore, down 11% from Rs. 1,610.2 crore a year ago. Our cost of debt reduced to 7.44%, down 28 basis points versus a year ago."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Keys RevPAR up 29% YoY to Rs. 3,109; occupancy 69.7% (+976 bps); ARR Rs. 4,460 (+11%).",
+"value": "RevPAR Rs. 3,109",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Keys RevPAR in Q2 FY27 was up 29% YoY to Rs. 3,109 on the back of a 976 basis points improvement in occupancy to 69.7% and 11% growth in ARR to Rs. 4,460."
 }
 ]
 }
@@ -112940,6 +114934,222 @@
 "period": null,
 "direction": null,
 "quote": "Mr. Mudit Kumar Singh as Chairman will lead the board and keep our focus on governance and risk oversight as we scale. Mr. Deep Saraf as Managing Director will run operations and execution, manufacturing supply chain, capacity utilization, and delivery of our proposed projects. Mrs. Vinita Saraf as President, Business Excellence and Development will strengthen our processes, operational capabiliti"
+}
+]
+}
+},
+"542774|2026-11-17": {
+"code": "542774",
+"name": "Mufin Green Finance Ltd",
+"day": "2026-11-17",
+"sector": "Financial Services",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 33,
+"A": 31,
+"B": 2,
+"C": 0,
+"shown": 20
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/addd0f99-e7cc-44ba-ab76-769fa5ee1e5b.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Targets AUM of approximately ₹2,500 crores by end of FY27",
+"value": "2500 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "Month-on-month disbursements for FY27 have been rising steadily, and AUM is growing in line with our projected target of approximately ₹2,500 crores by the end of this financial year."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Aims to bring Gross NPA below 1.50%",
+"value": "1.50%",
+"period": "FY27",
+"direction": "down",
+"quote": "Gross NPA has improved steadily, from 2.50% in Q4 FY25 to 1.77% now, and we aim to bring it below 1.50%."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "No fresh capital needed until AUM reaches ₹3,000-3,500 crores, not before FY28",
+"value": "3000-3500 crores",
+"period": "FY28",
+"direction": null,
+"quote": "We will not need fresh capital until we reach approximately ₹3,000 to 3,500 crores of AUM. I am ambitious, and I could commit to a number for FY2027-28, but even without an ambitious target we will generate good profits."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Targets annual PAT of ₹500 crores without equity dilution",
+"value": "500 crores",
+"period": "future",
+"direction": "up",
+"quote": "We will take pride in achieving an ROA that surpasses our industry peers and reaching an annual PAT of ₹500 crore without any equity dilution."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Cost of borrowing declined by more than 100 basis points over the last year",
+"value": "100 bps",
+"period": "H1 FY27",
+"direction": "down",
+"quote": "Even so, our cost of borrowing has declined by more than 100 basis points over the last year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "ROA approximately 4% in current period vs 1.5% in FY26",
+"value": "4%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "This time, our ROA is approximately 4%, compared to about 1.5% in FY2025-26."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Net interest income improved 52.4%, operating expenses increased 27.7%, PBT up 135.9%, PAT up 148.5% YoY",
+"value": "52.4%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Net interest income improved by 52.4%, while operating expenses increased by 27.7%. Profit before tax increased by 135.9% and PAT increased by 148.5%."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "AUM reached ₹1,766 crores as of September 30, 2026, up 71.8% year-on-year",
+"value": "1766 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our AUM as of September 30, 2026 stood at ₹1,766 crores, up 10.4% from ₹1,599 crores as of June 30, 2026, and up 71.8% from ₹1,028 crores as of September 30, 2025."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Disbursements for Q2 FY27 were ₹590 crores, up 31% quarter-on-quarter",
+"value": "590 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Disbursements for the quarter were ₹590 crores, up 31% from ₹449 crores in Q1 FY2026-27."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Climate finance book running down: ₹100-110 crores L3/L5 vehicle loans, ₹60-70 crores battery loans, remaining pain ₹25 crores",
+"value": "25 crores",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Within climate finance, about ₹100 to 110 crores of L3/L5 vehicle loans and about ₹60 to 70 crores of battery loans remain; the rest comprises cars and buses. In this, the pain that is left in the books today is 25 crores of pain."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Investing in technology infrastructure and cybersecurity with senior hires and AWS migration",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "They have migrated all our servers to AWS. To ring-fence our systems against external breaches, we have deployed SentinelOne, one of the most capable tools for blocking external attacks."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Technology infrastructure investment expensive but economies of scale will kick in as AUM grows",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "It is certainly expensive. But as AUM grows, economies of scale will kick in, so it will not be a challenge or a significant burden on the balance sheet."
+},
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Planning to add R&D spend, AI initiatives and infrastructure investment tracking slide from next quarter",
+"value": null,
+"period": "next quarter",
+"direction": "up",
+"quote": "From next quarter, we could add a slide covering R&D spend, AI initiatives and new infrastructure investments — how much we have invested so far and what capabilities we are building."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Salary Saathi/Arthum pricing approximately 3-5% per month with EMI deduction via wallet ecosystem",
+"value": "3-5% per month",
+"period": "H1 FY27",
+"direction": null,
+"quote": "We will offer pricing of approximately 3 to 5% per month. The amount the contractor has to pay the worker on the due date will not go directly to the worker; it will come into our wallet-based ecosystem, where we will deduct our EMI with interest and pass on the balance to the worker."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Launching life insurance financing in about a month; will be only player in that ecosystem",
+"value": null,
+"period": "next quarter",
+"direction": null,
+"quote": "We began with health insurance, and we are now entering life insurance. There are some hurdles, but we plan to go live in about a month. Once we go live, we will be the only player in the country in that ecosystem."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Arthum workforce platform (20% stake) enables financing contract workers via PPI licence wallet architecture",
+"value": null,
+"period": "H1 FY27",
+"direction": null,
+"quote": "Another product is through Arthum, a workforce platform in which we have taken a 20% stake. To put it simply, thousands of workers are engaged through contractors and are not on the payroll of the companies they work for."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "Borrowing profile diversified across DFIs, listed NCDs (20,000+ investors), NBFCs, PSU banks, private banks via ECBs, DA, NCDs, PTCs",
+"value": null,
+"period": "H1 FY27",
+"direction": null,
+"quote": "Our borrowing profile is well-diversified. We have raised funds from every segment available to us — DFIs; listed NCDs, where more than 20,000 investors have subscribed; NBFCs and financial institutions; PSU banks; and private banks — through ECBs, DA, NCDs and PTCs."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Digital lending sector on high alert for cyber threats; hackers targeting data and money",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "In India, digital lending is currently on high alert. Digital lenders are being targeted by hackers, and data is being compromised. There have been attempts to breach companies in our own ecosystem to extract data or money."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Gross NPA improved to 1.77% and Net NPA to 1.50% in Q2 FY27",
+"value": "1.77%",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Gross NPA improved from 1.91% to 1.77%, and Net NPA improved from 1.63% to 1.50%."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Only ₹1 crore of total ₹30 crore NPA from new digital products, rest from legacy EV retail book",
+"value": "1 crore",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Out of total NPA of around ₹30 crores, only about ₹1 crores is from the new book, and recovery is still possible on that amount, so it remains on the books. The rest is entirely from EV retail."
 }
 ]
 }
@@ -113129,6 +115339,202 @@
 "period": "H1 FY27",
 "direction": "down",
 "quote": "Finance cost declined to INR 1.89 crores from INR 2.16 crores supported by better fund utilization."
+}
+]
+}
+},
+"543711|2026-11-17": {
+"code": "543711",
+"name": "Sula Vineyards Ltd",
+"day": "2026-11-17",
+"sector": "Consumer Defensive",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 32,
+"A": 22,
+"B": 10,
+"C": 0,
+"shown": 18
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b7260398-f523-432d-b629-5f7a6d61ec86.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Target EBITDA margin of 22-23% over next couple of years",
+"value": "22%-23%",
+"period": "next couple of years",
+"direction": "up",
+"quote": "Our immediate goal would be to at least to go to 22%-23% over the next couple of years."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Expect WIPS grant of INR 49-50 crores for full year FY27",
+"value": "INR 49 to INR 50 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "Somewhere around INR 49 to INR 50 crores on a full-year basis on WIPS."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Expect gross margin to moderate progressively from Q4 FY27 as procurement mix normalizes with harvest 2027",
+"value": null,
+"period": "Q4 FY27",
+"direction": "up",
+"quote": "However, from Q4 onwards, we expect this cost to moderate progressively as the procurement mix normalizes with harvest 2027."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Telangana delivered almost 40% YoY growth in Q2 FY27, now second-largest market in elite and premium segment",
+"value": "40%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Telangana continued its strong momentum, delivering almost 40% YoY growth in Q2."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Elite and premium portfolio grew 9% YoY in Q2 FY27, contribution expanded 400 bps to 82% of own brands",
+"value": "9%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our elite and premium portfolio continued to lead growth, delivering a healthy 9% year-on-year increase in Q2."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Wine tourism revenue grew 24% YoY to INR 16.3 crore in Q2 FY27, contribution to total revenue increased 220 bps to nearly 20%",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Wine tourism's contribution to total revenue, including the D2C wine sales at our tourism facilities, increased by 220 basis points YoY to nearly 20% in Q2."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "EBITDA margin improved 85 bps to 20.3% in Q2 FY27 driven by premium portfolio strength and 4% reduction in operating expenses",
+"value": "20.3%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "In terms of margin, our EBITDA margin improved 85 basis points to 20.3% in Q2."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Gross profit declined 280 bps YoY in Q2 FY27 due to higher blended grape cost (150 bps impact) and adverse market mix",
+"value": "280 bps",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Despite the 4% net revenue growth in Q2, gross profit declined by 280 basis points versus last year, primarily due to two major factors."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Fourth hotel at York Estate: 35-key property, INR 25 crore investment, targeted payback 5-6 years, opening Q4 2028",
+"value": "INR 25 crores",
+"period": "Q4 2028",
+"direction": "up",
+"quote": "This project would involve an investment of around INR 25 crores and with a targeted payback period of just five to six years."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Vintage Room event pavilion at Nashik campus now operational, 5,000 sq ft, 300 guest capacity, expected incremental revenue in H2 FY27 and FY28",
+"value": null,
+"period": "H2 FY27",
+"direction": "up",
+"quote": "We expect the Vintage Room to contribute incremental revenues in H2 of FY 2027 and further in FY 2028."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Table grape prices expected to plunge in harvest 2027, benefiting economy/popular portfolio margins",
+"value": null,
+"period": "harvest 2027",
+"direction": "down",
+"quote": "This time, we're expecting the exact opposite with a plunge in table grape prices. So, in fact, that's going to have a salutary effect on our margins and all wine producers on the cheaper wines."
+},
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Packing material costs (glass, fuel, oil) rose due to Middle East troubles but appear to be calming down",
+"value": null,
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "We did see some rise, unfortunately, in terms of glass, fuel, oil, et cetera. I would say things are looking pretty good."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Launching wine-based RTD segment early next month to reach new consumers and broaden portfolio",
+"value": null,
+"period": "next month",
+"direction": "up",
+"quote": "I am excited about our upcoming entry into the wine-based RTD segment, with our first launch expected early next month."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Karnataka market remains subdued due to excise policy changes favoring beer over wine and spirits",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Karnataka, our second-largest market, remained relatively subdued, with consumption trends following the recent excise policy changes favoring beer in over wine and spirits."
+},
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Haryana policy discriminates against Indian wines vs imported wines in retailer quota system",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "We have a policy that unfortunately at this point is a bit discriminatory towards Indian wines vis-a-vis imported wines. Imported wines get included in a quota system for the retailers, whereas Indian wines are not in it."
+},
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Potential irrigation controls from April 2025 could impact following year's grape harvest",
+"value": null,
+"period": "April 2025",
+"direction": null,
+"quote": "It will not be a surprise if the state puts some major controls on irrigation once we are in about, starting around April next year, which could have an impact on the following year's harvest."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Room capacity to expand by ~20% to 185-190 rooms with fourth hotel at York Estate",
+"value": "20%",
+"period": "Q4 2028",
+"direction": "up",
+"quote": "Once operational, the new hotel will expand our room capacity by another 20% to approximately 185 to 190 rooms."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Battery energy storage capacity to double from 2 MW to 4 MW in coming months",
+"value": "4 MW",
+"period": "coming months",
+"direction": "up",
+"quote": "with further benefits expected as we double our battery energy storage capacity from the current 2 MW to 4 MW in the coming months."
 }
 ]
 }
@@ -113462,6 +115868,186 @@
 ]
 }
 },
+"543992|2026-11-17": {
+"code": "543992",
+"name": "Yatra Online Ltd",
+"day": "2026-11-17",
+"sector": "Consumer Cyclical",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 32,
+"A": 24,
+"B": 3,
+"C": 5,
+"shown": 16
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/47cf675d-a894-4c33-b488-66e180fd080b.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "No formal guidance given for FY27 due to macro fluctuations; medium-term outlook: gross booking growth ~15% driving RLSC and EBITDA growth.",
+"value": null,
+"period": "FY27",
+"direction": null,
+"quote": "We have maintained that we are not giving a guidance given that the macro fluctuations are still persisting. But we had opined in the last earnings call as well that from a medium-term standpoint, we believe the growth would remain in the range in which we started off with last year, which is a gross booking of 15% resulting in RLSC growth and an EBITDA growth."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management expects H2 FY27 to show significant improvement over H1; RLSC and margins expected in low-to-mid teens for full year (not formal guidance).",
+"value": null,
+"period": "H2 FY27",
+"direction": "up",
+"quote": "Yes. So, Chirag, I think that's -- though we are not giving a formal guidance for the year, but that's the expectation that we have from RLSC as well as from a margin standpoint."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Domestic air passenger traffic declined ~6% YoY and ~15% QoQ; international passenger traffic for Indian carriers declined ~19% YoY.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Domestic air passenger traffic declined approximately 6% year-on-year and nearly 15% sequentially. International passenger traffic for Indian carriers also declined approximately 19% year-on-year."
+},
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Yatra's domestic air passenger volumes declined ~2.4% YoY but grew ~4% QoQ, outperforming industry decline of ~15% QoQ.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our passenger -- air passenger volumes declined approximately 2.4% year-on-year, outperforming the broader domestic aviation market, which declined 6%. More importantly, on a sequential basis, our domestic air passenger volumes increased approximately 4% against an industry decline of nearly 15%."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Revenue from operations decreased 39% YoY to INR2,136 million; gross margin (revenue less service cost) flat YoY at INR1,255 million.",
+"value": "INR2,136 million",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "For the second quarter of financial year 2027, on a consolidated basis, our revenue from operations decreased 39% year-on-year to INR2,136 million. Our gross margin, defined as revenue less service cost, remained flat year-on-year at INR1,255 million."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Adjusted EBITDA decreased 41% YoY to INR150 million (11.96% of gross margin); net loss of INR7 million.",
+"value": "INR150 million",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Adjusted EBITDA decreased 41% year-on-year to INR150 million, translating to 11.96% adjusted EBITDA to gross margin ratio. As a result, the company reported a net loss of INR7 million."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "H1 FY27 revenue declined 28% YoY to INR4,015 million; gross margin grew 3% YoY to INR2,482 million; adjusted EBITDA down 40% YoY to INR301 million (12.12% of gross margin); net loss INR4 million.",
+"value": "INR4,015 million",
+"period": "H1 FY27",
+"direction": "down",
+"quote": "Moving on to our financial performance for the first half of FY27. Revenue from operations declined by 28% year-on-year to INR4,015 million. However, our gross margin, defined as revenue less service cost, remained resilient and increased by 3% to INR2,482 million. Adjusted EBITDA stood at INR301 million, down 40% year-on-year, translating into an adjusted EBITDA to gross margin ratio of 12.12%. C"
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Gross bookings increased ~6% YoY to INR21,655 million.",
+"value": "INR21,655 million",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our gross bookings increased approximately 6% year-on-year to INR21,655 million."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Incurred ~INR52 million in costs for growth initiatives (GCP, Kanoo, RECAP, Travel Pro) in Q2; investments at different maturity stages.",
+"value": "INR52 million",
+"period": "Q2 FY27",
+"direction": null,
+"quote": "During the quarter, we incurred approximately INR52 million in costs associated with these initiatives, reflecting our continued commitment to building for future growth."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Domestic air ticket prices increased ~26% YoY; international fares increased ~20% YoY.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Domestic air ticket prices increased approximately 26% year-on-year, while international fares increased around 20%."
+},
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "In MICE, management took strategic decision to be more flexible on pricing to rebuild volumes, impacting margins short-term.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "In MICE, we've tried to rebuild relationships with customers. And given that customers' budgets are limited to be able to drive volume, we've had to be a bit more flexible on pricing. So that's the reason why at least for the short term, in the current quarter, you saw volume go up, but margin didn't really improve at the same rate."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Travel Pro: >30 customer closures in Q2 with ~INR825 million estimated annual business potential.",
+"value": "INR825 million",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "We secured more than 30 customer closures in quarter 2, representing an estimate annual business potential of approximately INR825 million."
+},
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "RECAP: 25 customer wins, 8 live, 5 approaching implementation.",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "We now have 25 customer wins with 8 customers already live and another 5 approaching implementation."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Middle East business ~35-40% of international travel; still muted ~15-20% due to geopolitical disruption; MICE heavily dependent on Middle East destinations.",
+"value": "35% to 40%",
+"period": "Q2 FY27",
+"direction": "down",
+"quote": "Our Middle East business overall is not a very sizable percentage of our business. I think it's around 35% to 40% of our international travel. And that business obviously got impacted quite significantly in Q4 and has been on the recovery path in Q1. We would still see it muted by about 15% to 20% because the business has still not flown back."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Cash and cash equivalents plus term deposits stood at INR2,180 million as of Sep 30, 2026; net cash position improved by INR331 million QoQ via collections streamlining.",
+"value": "INR2,180 million",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "On the liquidity front, cash and cash equivalents and term deposits stood at INR2,180 million as of 30th September 2026. The net cash position improved by INR331 million quarter-on-quarter by further strengthening the streamlining of the collections process."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Operating headcount efficiency improved ~5% YoY despite transaction growth and new teams for growth initiatives.",
+"value": "5%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "This is reflected in an approximate 5% improvement in our operating headcount efficiencies year-on-year, even as transaction volumes in our corporate -- core corporate business continues to grow and additional teams being built for future growth initiatives."
+}
+]
+}
+},
 "544161|2026-11-17": {
 "code": "544161",
 "name": "D.P. Abhushan Ltd",
@@ -113717,6 +116303,150 @@
 ]
 }
 },
+"544345|2026-11-17": {
+"code": "544345",
+"name": "Denta Water and Infra Solutions Ltd",
+"day": "2026-11-17",
+"sector": "Industrials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 19,
+"A": 16,
+"B": 2,
+"C": 1,
+"shown": 12
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/776dc6ef-eb78-4756-911d-bf52b10a0046.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management maintains 20% revenue growth guidance for FY27",
+"value": "20%",
+"period": "FY27",
+"direction": "up",
+"quote": "we have recorded revenue of around Rs. 1278.87 billion and we hope to and we strive to maintain 20% growth for the year Financial Year '26-27."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Expects 15-20% order book increase in H2 FY27 compared to H1 FY27",
+"value": "15% to 20%",
+"period": "H2 FY27",
+"direction": "up",
+"quote": "We are expecting around 15% to 20% increase when compared to first half of 26-27. Around 15% to 20% increase."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "H1 FY27 execution impacted by Karnataka monsoon (Jun-Oct) and government transition delays; H2 expected to improve with favorable weather",
+"value": null,
+"period": "H1 FY27",
+"direction": "down",
+"quote": "Actually, in the year first half of Financial Year '27, we witnessed challenging operating environment with transitional phase in Karnataka state government during the initial part of the year and in state of Karnataka, the monsoon sets in the month of June and till September or October, that monsoon condition will prevail it. It impacts project approval and payment cycle and on-road execution act"
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Aims to maintain minimum 20% profit margin across projects despite input cost inflation",
+"value": "20%",
+"period": "ongoing",
+"direction": "flat",
+"quote": "So, our profit, we aim to have a minimum of 20% since majority of our projects are in water sector only and as I have already mentioned in earlier investor calls, only if the projects are other projects like infrastructure, railways and roads are in the domain or in the jurisdiction of our water supply projects, we aim to cover those projects also."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Order book stood at approximately Rs 7,824.44 million as of September 30, 2026",
+"value": "7824.44 million",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "As of September 30, 2026, our outstanding order book stood at approximately 7824.44 million providing healthy visibility for future execution and growth."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Secured two new irrigation projects worth Rs 655 million from Karnataka Neeravari Nigam in H1 FY27",
+"value": "655 million",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "We have obtained two orders from Karnataka Neeravari Nigam, where we are collecting the water which was going waste in a hula, and the order book which we have won is around 655 million, and construction of 12 to 14 check dams where groundwater can be stored."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Large DBOT projects (2-3 year timeline) funded from internal resources; design 3-6 months, procurement 6 months, execution starts after 8-9 months",
+"value": null,
+"period": "ongoing",
+"direction": "flat",
+"quote": "Actually, all these projects will be under DBOT model, that is design, build, operate, and transfer, and the project timeline will be 2 to 3 years based on the cost. So, once the projects are awarded, design will take 3 to 4 months or 6 months at the maximum, and also procurement of materials will take another 6 months, and execution part will be starting after 8 to 9 months once our raw materials"
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "EBITDA moderated in H1 FY27 due to high inventory costs from early-stage project material procurement (uPVC pipes, pumps, VA pipes) before milestone billing",
+"value": null,
+"period": "H1 FY27",
+"direction": "down",
+"quote": "We have got different projects under different stages of execution. We have got varying product mix, say establishment of waste treatment plant, completion of ongoing water supply projects and completion of some infrastructure projects. Few projects will be at the initial phases of implementation and we have to procure lots of materials like uPVC pipes, pumps, VA pipes and which results in high in"
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Pursuing circular water economy: drinking water supply, sewage treatment with CAMUS/NABR/HAP tech, groundwater recharge",
+"value": null,
+"period": "ongoing",
+"direction": "up",
+"quote": "In this scenario, we are planning for end-to-end water circular economy and our engineers are well equipped to handle all these technical challenges, which we face in the execution of the work."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Business dependent on government infrastructure budgets (Jal Jeevan Mission, AMRUT, state schemes); will pursue Swachh Bharat, Namami Gange if budgets moderate",
+"value": null,
+"period": "ongoing",
+"direction": "flat",
+"quote": "It depends on, since our company is majorly involved in the execution of government projects, it depends on the infrastructure budget which is provided either by the central government under Jal Jeevan Mission or AMRUT Mission or by the state government in supporting those schemes and also standalone projects in the state of Karnataka."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Receivables reduced from Rs 164.60 million on Sep 30 to Rs 57.62 million on Oct 31, 2026",
+"value": "57.62 million",
+"period": "Oct 2026",
+"direction": "down",
+"quote": "As on 30th September 2026 when we announced quarter 2 financial results, our receivables were 164.60 million and subsequently as on October 31st, we have received around 107.6 million and our outstanding receivables as on 31st October is just 57.62."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Can execute single projects up to Rs 300 crore on standalone basis; currently handling ~30 projects",
+"value": "300 crores",
+"period": "current",
+"direction": "flat",
+"quote": "It depends on the project value. A single project value up to 300 crores, we are able to execute on our standalone basis. Right now, we have about 30 ongoing projects, all valued at around 7824 million, and we are executing projects so that our revenue is around Rs. 250 crores last year, and that same kind of order execution will be handled by our company in the coming quarter."
+}
+]
+}
+},
 "544410|2026-11-17": {
 "code": "544410",
 "name": "Prostarm Info Systems Ltd",
@@ -113900,6 +116630,159 @@
 "period": "FY28",
 "direction": "up",
 "quote": "Jhajjar facility, it is 1.2 GWh. So, if it runs on full capacity percentage, you would find around INR 1,000 crores of revenue is what we can post from that particular facility in a year"
+}
+]
+}
+},
+"544572|2026-11-17": {
+"code": "544572",
+"name": "SKF India (Industrial) Ltd",
+"day": "2026-11-17",
+"sector": "Industrials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 23,
+"A": 17,
+"B": 6,
+"C": 0,
+"shown": 13
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d8c3cf31-6e54-41ab-a3ef-aa864633b3ab.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management guides PBT margin of 12%-13% and expects IT demerger costs to nullify by end of Q3 FY27",
+"value": "12%-13%",
+"period": "FY27",
+"direction": "flat",
+"quote": "management keeps guiding 12%-13% PBT margins"
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Rail segment declining due to lower government rolling stock investment",
+"value": null,
+"period": "H1 FY27",
+"direction": "down",
+"quote": "barring rail, where we are seeing some decline because of government relatively reducing their investments on the rolling stock"
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "H1 FY27 revenue grew ~20% YoY driven by wind (+40%+), heavy industry (+30%+), distribution (+8-10%)",
+"value": "20%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "So if you look at overall for H1, we've had a strong growth of around 20% year-on-year, predominantly driven by segments like wind, which has grown by around 40% plus."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "Q2 FY27 PBT margin at 12.9%, up 42 bps YoY; adjusted for one-offs near 13%",
+"value": "12.9%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our profit before tax stands at about INR1,344 million and we are coming at a margin percentage of about 12.9%."
+},
+{
+"cat": "margin",
+"grade": "B",
+"statement": "EBITDA margin around 9.6% in Q2; other income boosted by forex gain",
+"value": null,
+"period": "Q2 FY27",
+"direction": null,
+"quote": "if you take out the impact of the other income, our EBITDA margin would be close to, let me just check, one second."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Wind order books strong, expect continued growth; heavy industry project orders robust",
+"value": null,
+"period": "near future",
+"direction": "up",
+"quote": "We also see that in our order books, and we expect wind will continue to grow in the near future."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Ahmedabad: 2 more full channels + 1 roller channel in next year; new Pune plant expected end 2028",
+"value": null,
+"period": "FY28",
+"direction": "up",
+"quote": "in Ahmedabad, we expect to see close to 3 more, well, 2 full channels and 1 roller channel coming as well in the next year."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Steel prices up ~16% YoY; China steel price increases not yet passed on, may impact next quarter",
+"value": "16%",
+"period": "next quarter",
+"direction": "up",
+"quote": "We're seeing steel prices up about, about 16%, which is the latest price that we have."
+},
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Logistics, energy, heat treatment costs rising; partially offset by price increases to OEM and distribution",
+"value": null,
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "We have partially offset these costs with improved price realization."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Export share of OE sales rose from 12% to 16% in Q2 FY27 due to Pune TRB capacity",
+"value": "16%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The change, the biggest change has been in exports where we've gone from about 12% of our total mix being exports to 16% of our total mix being exports"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Middle East war, oil prices, China steel prices, rupee depreciation cited as key risks",
+"value": null,
+"period": "next quarter",
+"direction": null,
+"quote": "due to the macroeconomy, due to the geopolitical issues, due to the Middle East war, we're seeing a really big increase in all of these elements at one point."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Ahmedabad medium CRB line adds 220,000 units annual capacity; TRB line in Pune commissioned last quarter",
+"value": "220,000 units",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "The Ahmedabad factory, we've just inaugurated a new line, which is a medium CRB line, in the last quarter. What this does for us is it adds an annual capacity of about 220,000 units"
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Market share ~19.4-19.5% as of FY25, up 0.2-0.3%; gaining share in wind, heavy, distribution",
+"value": "19.4-19.5%",
+"period": "FY25",
+"direction": "up",
+"quote": "our market share went up slightly by about 0.2% to 0.3%, and we were 19.4% or 19.5% was our overall market share as SKF."
 }
 ]
 }
@@ -114366,6 +117249,324 @@
 "period": "Q2 FY27",
 "direction": "down",
 "quote": "During Q2, we utilized approximately INR490 crores from our IPO proceeds towards repayment of identified borrowings. As on September 30th, the total borrowing stood at approximately INR499 crores."
+}
+]
+}
+},
+"544915|2026-11-17": {
+"code": "544915",
+"name": "Rentomojo Ltd",
+"day": "2026-11-17",
+"sector": "Industrials",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 11,
+"A": 10,
+"B": 1,
+"C": 0,
+"shown": 8
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/62fe4753-7361-4399-88a0-1e00d9e29caa.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Management targets PBT of 90-95 crores for FY27 without baking in item-per-user growth",
+"value": "90-95 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "when we are giving you any kind of expectation setting- let's say for this year about 90 to 95 odd crores of PBT- I'm not baking in any kind of item per user growth in that."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Normalized EBITDA margin around 40-41% maintained despite aggressive growth reinvestment",
+"value": "40-41%",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "in fact the EBITDA margin has remained close to about 40, 41 odd% even after reinvesting so much of operating leverage back in all of these costs."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Capex in H1 FY27 was 192.3 crores gross, 179.5 crores net increase, financed largely from operating cash flow",
+"value": "192.3 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "almost 192.3 odd crores of capex was procured within H1. Some part of it of course was a little bit of warehouse capex as well, some got scrapped, so roughly about 179.5 odd crores of increase happened in terms of purchasing of new capex"
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Revenue per item grew 4.6% YoY in Q2, 6% in H1; item per user stable at 2.8",
+"value": "4.6% YoY revenue/item, 2.8 items/user",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "revenue per item went up by about 4.6% on a year-on-year perspective, whereas item per user was stable at roughly about 2.8 items per user"
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "IPO proceeds of ~150 crores received, net worth increased",
+"value": "150 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "The net worth of the company has increased by the corpus that we took- roughly about 150 odd crores is what we took from the market"
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "NCLT matter sub judice with hearing in December; management maintains transparency",
+"value": null,
+"period": "next quarter",
+"direction": null,
+"quote": "There is a hearing in December that will happen, but since the matter is completely sub judice, I don't want to talk more than what we have already disclosed in the prospectus"
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Warehouse capacity grew 51% and store count grew 43% in H1 FY27",
+"value": "51% warehouse, 43% stores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "warehouse square feet capacity is growing up by about 51 odd%, store count which is the expansion areas for us has grown up by 43 odd%."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Operating cash flow to EBITDA conversion at 110% in H1 FY27",
+"value": "110%",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "OCF by EBITDA, which is the cash flow from operations translation from EBITDA, which is almost close to about 110 odd%."
+}
+]
+}
+},
+"545008|2026-11-17": {
+"code": "545008",
+"name": "EAAA India Alternatives Ltd",
+"day": "2026-11-17",
+"sector": null,
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 36,
+"A": 30,
+"B": 6,
+"C": 0,
+"shown": 20
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2f779421-a2f4-4939-a78d-0a40fcb0b583.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Targets fee-paying AUM and PAT growth of 20-30% over medium to long term",
+"value": "20% to 30%",
+"period": "medium to long-term",
+"direction": "up",
+"quote": "We would like our fee-paying AUM and PAT to grow in the 20% to 30% growth range over the medium to long-term."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Aspires PAT yields of 65-70 basis points on fee-paying AUM",
+"value": "65 to 70 basis point",
+"period": "medium to long-term",
+"direction": "flat",
+"quote": "We aspire our PAT yields to be in the 65 to 70 basis point on the fee-paying AUM."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Expects VAR PAT to be 25-30% of overall PAT",
+"value": "25% to 30%",
+"period": "medium to long-term",
+"direction": "flat",
+"quote": "We expect that the VAR PAT will be within 25% to 30% range of our overall PAT."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Aims to operate at 30% ROE and distribute 40-50% of profits",
+"value": "30% ROE",
+"period": "medium to long-term",
+"direction": "up",
+"quote": "We aim to operate at a 30% ROE and are looking to distribute around 40% to 50% of our profits."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "Yield and income strategies growing faster, to become 42% of alternatives industry from current 33%",
+"value": "42%",
+"period": "industry outlook",
+"direction": "up",
+"quote": "it is clear that yield and income strategies are growing at a faster pace and will become nearly 42% of the alternative industry, up from current 33%."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "Alternative industry AUM expected to reach INR25 lakh crores as India moves to USD10 trillion economy",
+"value": "INR25 lakh crores",
+"period": "long-term",
+"direction": "up",
+"quote": "we do believe that this is an asset class which will see a significant growth as the overall industry goes toward INR25 lakh crores AUM."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Total income grew 35% YoY to INR616 crores in H1 FY27",
+"value": "INR616 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Our total income for the first half of the year was INR616 crores, which was a 35% growth year-on-year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Management and advisory fee grew 24% YoY to INR333 crores in H1 FY27",
+"value": "INR333 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Our management and advisory fee has also touched INR333 crores for the first half, a growth of 24% year-on-year."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "PAT grew 35% YoY to INR169 crores in H1 FY27",
+"value": "INR169 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Our PAT for the first half was INR169 crores, again a 35% growth from INR125 crores PAT in a similar period in the previous financial year."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Total AUM including dry powder is INR95,000 crores",
+"value": "INR95,000 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "So, our AUM is INR95,000 crores, overall AUM."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Dry powder estimated at INR20,000-25,000 crores within total AUM",
+"value": "INR20,000 crores to INR25,000 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "So that number will be closer to INR20,000 crores to INR25,000 crores."
+},
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Raised nearly INR20,000 crores in H1 FY27 across all strategies",
+"value": "close to INR20,000 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "together we have raised close to INR20,000 crores of capital in H1."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Acquired 95% occupied Grade A office park in Pune of nearly 1 million sq ft",
+"value": "nearly 1 million square feet",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "We have also recently acquired a 95% occupied Grade A office park in Pune of nearly 1 million square feet with marquee clients as tenants."
+},
+{
+"cat": "capex",
+"grade": "B",
+"statement": "Won TOT-19 bundle bid at INR2,259 crores adding 600 lane km of roads",
+"value": "INR2,259 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "we have recently been awarded the Toll-Operate-Transfer, or TOT-19 bundle, which was part of the National Monetization Plan, where we won the bid at INR2,259 crores."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Distribution cost paid 1/3rd upfront, 2/3rd over fund life",
+"value": "1/3rd upfront and 2/3rd over the trail period",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "As a matrix, this cost is paid from a cash flow perspective 1/3rd upfront and 2/3rd over the trail period of the fund life."
+},
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Distribution cost averages 30 bps; 60 bps on P&L given 50-50 mix; amortized over 6-7 years at 3.5-4%",
+"value": "30 basis points",
+"period": "H1 FY27",
+"direction": "flat",
+"quote": "The distribution cost on an average as we mentioned is close to 30 basis points for us. And given the mix is 50-50, your understanding is correct. The distribution cost is 60 basis points on the P&L side."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "Private Equity Fund 2 expected to be nearly 3x size of previous fund",
+"value": "nearly 3x",
+"period": "next quarters",
+"direction": "up",
+"quote": "we do believe that the Private Equity Fund 2 will be nearly 3x of the previous fund that we raised on private equity side."
+},
+{
+"cat": "fund_raise",
+"grade": "A",
+"statement": "Plans fundraising across Special Situations, Infrastructure Yield, Commercial Real Estate Fund II, and Private Equity Fund II next quarters",
+"value": null,
+"period": "next quarters",
+"direction": "up",
+"quote": "all our 3 flagship funds will be in the fundraising over the next few quarters -- our Special Situations Fund, our Infrastructure Yield Fund, as well as the second vintage of our Commercial Real Estate Fund."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Announced dividend of 140% of face value at INR7 per share",
+"value": "INR7 per share",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "We are pleased that the company has announced a dividend of 140% of face value at INR7 per share."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Aspires to distribute around 50% of annual earnings long-term",
+"value": "50%",
+"period": "long-term",
+"direction": "flat",
+"quote": "Our aspiration is to distribute around 50% of our annual earnings on a long-term basis, and we will welcome any views around the same."
 }
 ]
 }
