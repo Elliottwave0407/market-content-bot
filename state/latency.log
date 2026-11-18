@@ -1682,3 +1682,8 @@
 18 14:17:49 pdf pdf current col MFS Intercorp Ltd standalone ok=True/3: revenue=55.85, other_income=0.0, total_income=55.85, total_expenses=15.44, finance_costs=0.0, depreciation=0.0, pbt=40.42, tax=0.0, pat=40.42, eps=0.93
 18 14:17:49 pdf pdf margin q-1 differs from BSE history by 5.3 pts: margin withheld MFS Intercorp Ltd standalone
 18 14:17:49 pdf pdf incomplete MFS Intercorp Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 14:21:44 pdf rule reader MFS Intercorp Ltd: rule: filing mentions consolidated results but that table was not read | ocr: rule: stan: missing ['pat'] n=6
+18 14:21:56 pdf nim reader MFS Intercorp Ltd: ok (gemini: gemini skipped (quota/backoff))
+18 14:21:56 pdf pdf current col MFS Intercorp Ltd standalone ok=True/3: revenue=55.85, other_income=0.0, total_income=55.85, total_expenses=15.44, finance_costs=0.0, depreciation=0.0, pbt=40.42, tax=0.0, pat=40.42, eps=0.93
+18 14:21:56 pdf pdf margin q-1 differs from BSE history by 5.3 pts: margin withheld MFS Intercorp Ltd standalone
+18 14:21:56 pdf pdf incomplete MFS Intercorp Ltd standalone: missing ['ebitda'] - not posting from PDF
