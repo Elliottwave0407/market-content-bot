@@ -1525,3 +1525,5 @@
 17 15:06:52 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Brandbucket Media & Technology Ltd
 17 15:47:44 ready 543439|Sep-26|na kind=photo waited_min=45.0 tries=99 pdf_log=
 18 10:50:53 seen 517077 Ind Agiv Commerce Ltd cat=Result early=False bse_time=16:20:44 dissem=16:20:44
+18 10:52:10 wait 517077 Ind Agiv Commerce Ltd: incomplete metrics ['ebitda', 'eps']; retrying the PDF read
+18 10:52:38 ready 517077|Sep-26|consolidated kind=photo waited_min=1.4 tries=2 pdf_log=
