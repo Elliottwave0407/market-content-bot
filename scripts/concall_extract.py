@@ -20,7 +20,7 @@ _MLOCK = threading.Lock(); _MLAST = [0.0]; MGAP = float(os.environ.get("MISTRAL_
 BUDGET_MIN = float(os.environ.get("BUDGET_MIN", "150"))
 WORKERS = int(os.environ.get("WORKERS", "3"))
 FLOOR = os.environ.get("FLOOR", "2024-04-01")
-MODELS = [m for m in os.environ.get("MODELS", ("mistral:ministral-14b-latest," if MK else "") + "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
+MODELS = [m for m in os.environ.get("MODELS", ("mistral:ministral-14b-latest," if MK else "") + "nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 CHUNK = 60000
 MAX_CHUNKS = 3
 SCHEMA_V = int(os.environ.get("SCHEMA_V") or "2")
