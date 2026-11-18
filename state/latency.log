@@ -1594,3 +1594,19 @@
 18 13:54:41 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Malpani Pipes And Fittings Ltd
 18 13:57:18 seen 531512 Orient Tradelink Ltd cat=Board Meeting early=True bse_time=19:26:48 dissem=19:26:48
 18 13:57:18 seen 544351 Malpani Pipes And Fittings L cat=Result early=False bse_time=19:27:05 dissem=19:27:05
+18 13:57:40 wait 544351 Malpani Pipes And Fittings L: numbers not yet on BSE
+18 13:57:41 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
+18 13:57:41 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 13:57:57 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
+18 13:57:57 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 13:58:01 pdf rule reader Malpani Pipes And Fittings Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+18 13:58:26 pdf rule reader Orient Tradelink Ltd: ok
+18 13:58:26 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route Malpani Pipes And Fittings Ltd
+18 13:58:26 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
+18 13:58:26 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 13:58:55 pdf rule reader Orient Tradelink Ltd: ok
+18 13:58:55 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
+18 13:58:55 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 13:59:30 pdf rule reader Orient Tradelink Ltd: ok
+18 13:59:30 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
+18 13:59:30 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
