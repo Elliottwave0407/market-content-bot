@@ -1633,3 +1633,9 @@
 18 14:04:14 pdf rule reader Orient Tradelink Ltd: ok
 18 14:04:14 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
 18 14:04:14 pdf pdf incomplete Orient Tradelink Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 14:10:49 seen 513721 MFS Intercorp Ltd cat=Board Meeting early=True bse_time=19:39:52 dissem=19:39:52
+18 14:11:48 pdf pdf current col MFS Intercorp Ltd standalone ok=True/1: revenue=55.85, other_income=None, total_income=55.85, total_expenses=15.44, finance_costs=None, depreciation=None, pbt=40.42, tax=None, pat=40.42, eps=0.93
+18 14:11:48 pdf pdf incomplete MFS Intercorp Ltd standalone: missing ['ebitda'] - not posting from PDF
+18 14:12:11 pdf rule reader MFS Intercorp Ltd: rule: column dates not found | ocr: rule: stan: missing ['pat'] n=6
+18 14:12:17 ready 531512|Sep-26|standalone kind=photo waited_min=10.4 tries=6 pdf_log=pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, de
+18 14:12:24 pdf pdf current col Orient Tradelink Ltd standalone ok=True/3: revenue=209.04, other_income=3.34, total_income=212.38, total_expenses=240.38, finance_costs=None, depreciation=20.66, pbt=-28.0, tax=0.0, pat=-28.0, eps=-0.07
