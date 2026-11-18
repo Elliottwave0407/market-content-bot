@@ -5,7 +5,7 @@ import requests
 import gemini_read as gr
 
 URL = "https://integrate.api.nvidia.com/v1/chat/completions"
-MODELS = [m for m in os.environ.get("NIM_RESULT_MODELS", "deepseek-ai/deepseek-v4.1-flash,nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
+MODELS = [m for m in os.environ.get("NIM_RESULT_MODELS", "nvidia/nemotron-3-ultra-550b-a55b").split(",") if m]
 DOWN = {"until": 0.0}
 _LOCK = threading.Lock()
 _LAST = {"t": 0.0}
