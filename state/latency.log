@@ -1694,3 +1694,12 @@
 18 15:15:19 ready 531780|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 18 15:22:09 seen 531780 Kaiser Corporation Ltd cat=Result early=False bse_time=20:51:21 dissem=20:51:21
 18 18:07:03 seen 544956 J.K. Shah Commerce Education cat=Result early=False bse_time=23:36:51 dissem=23:36:51
+18 18:07:24 wait 544956 J.K. Shah Commerce Education: numbers not yet on BSE
+18 18:08:20 pdf rule reader J.K. Shah Commerce Education Ltd: rule: no results table page | ocr: rule: no results table page
+18 18:09:33 pdf rule reader J.K. Shah Commerce Education Ltd: rule: no results table page | ocr: rule: no results table page
+18 18:10:49 pdf rule reader J.K. Shah Commerce Education Ltd: rule: no results table page | ocr: rule: no results table page
+18 18:10:56 pdf nim reader J.K. Shah Commerce Education Ltd: ok (gemini: gemini skipped (quota/backoff))
+18 18:10:56 pdf pdf current col J.K. Shah Commerce Education Ltd standalone ok=True/1: revenue=0.25, other_income=None, total_income=0.25, total_expenses=0.25, finance_costs=None, depreciation=None, pbt=0.25, tax=None, pat=0.25, eps=-25.03
+18 18:10:56 pdf pdf incomplete J.K. Shah Commerce Education Ltd standalone: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
+18 18:11:55 pdf rule reader J.K. Shah Commerce Education Ltd: rule: no results table page | ocr: rule: no results table page
+18 18:12:19 pdf pdf incomplete J.K. Shah Commerce Education Ltd standalone: missing ['ebitda', 'pat', 'revenue'] - not posting from PDF
