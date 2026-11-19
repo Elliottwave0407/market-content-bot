@@ -22,7 +22,8 @@ by = {}
 for x in rows:
     by.setdefault(x["symbol"], x)
 syms = sorted(by)
-mine = [s for i, s in enumerate(syms) if i % NSH == SHARD][:MAXN]
+_only = [t for t in os.environ.get("ONLY", "").split(",") if t]
+mine = [s for i, s in enumerate(syms) if i % NSH == SHARD][:MAXN] if not _only else [s for s in syms if s in _only]
 print(f"filings {len(rows)} symbols {len(syms)} shard {SHARD}/{NSH} -> {len(mine)}", flush=True)
 sess = nr.sess()
 
@@ -104,7 +105,7 @@ for sym in mine:
                     cur = pc.to_m(d, 0, k)
                     if cur.get("revenue") is not None and cur.get("pat") is not None:
                         got[b] = {"revenue": cur["revenue"], "pat": cur["pat"]}
-            rec["read_bases"] = sorted(got); rec["ocr"] = bool(out.get("_ocr"))
+            rec["read_bases"] = sorted(got); rec["ocr"] = bool(out.get("_ocr")); rec["merged"] = bool(out.get("_merged"))
             if not tr:
                 rec["outcome"] = "no_truth"
             else:
@@ -123,7 +124,7 @@ for sym in mine:
         rec["outcome"] = "error:" + repr(e)[:60]
     rec["secs"] = round(time.time() - t0, 1)
     res.append(rec)
-    print(sym, rec["outcome"], rec.get("read_secs"), (rec.get("detail") if rec["outcome"] == "MISMATCH" else (("read", rec.get("read_bases"), "truth", rec.get("truth_bases"), rec.get("file")) if rec["outcome"] == "WRONG_BASIS" else "")), flush=True)
+    print(sym, rec["outcome"], ("MERGED" if rec.get("merged") else ""), rec.get("read_secs"), (rec.get("detail") if rec["outcome"] == "MISMATCH" else (("read", rec.get("read_bases"), "truth", rec.get("truth_bases"), rec.get("file")) if rec["outcome"] == "WRONG_BASIS" else "")), flush=True)
 json.dump(res, open(os.path.join(OUT, f"replay_{SHARD}.json"), "w"), indent=1)
 import collections
 c = collections.Counter(r["outcome"].split(":")[0] if r["outcome"].startswith("no_parse") else r["outcome"] for r in res)
