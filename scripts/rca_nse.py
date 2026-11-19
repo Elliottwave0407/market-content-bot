@@ -28,5 +28,5 @@ if os.environ.get("ROWS", "") == "1":
         x = seen.get(s)
         if not x: continue
         print("###### ROWS", s, flush=True)
-        r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "rca_rows.py")], env=dict(os.environ, URL=x.get("attchmntFile") or "", PAGES=os.environ.get("PAGES", "")), capture_output=True, text=True, timeout=600)
+        r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "rca_rows.py")], env=dict(os.environ, URL=x.get("attchmntFile") or "", PAGES=os.environ.get("PAGES", ""), OCR=os.environ.get("OCRROWS", "")), capture_output=True, text=True, timeout=600)
         print((r.stdout + r.stderr)[-9000:], flush=True)

@@ -13,6 +13,8 @@ on:
         default: ""
       pages:
         default: ""
+      ocrrows:
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -34,6 +36,7 @@ jobs:
           END: ${{ github.event.inputs.end }}
           ROWS: ${{ github.event.inputs.rows }}
           PAGES: ${{ github.event.inputs.pages }}
+          OCRROWS: ${{ github.event.inputs.ocrrows }}
           RULE_OCR_ENGINE: rapid
           RULE_OCR: "1"
           NSE_SME: "1"
