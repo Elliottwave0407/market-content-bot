@@ -489,6 +489,17 @@ def _candidates(rows):
     if not pats:
         pats = [(i_, nm_) for i_, nm_ in _all_matches(rows, [r"(profit|loss).{0,45}(for the (period|quarter|year|half)|after tax|after taxes)"], start=pi + 1,
                         avoid=("before", "attributable", "comprehensive", "owners", "non-controlling", "minority", "per share", "discontinued", "other equity", "reserve", "total profit")) if n - 2 <= len(nm_) < n]
+    # 19 Nov (One Life Capital, Texmo Pipes): 'Profit for the period' (7-8) reconciles by itself, but a later numbered line (share of associates, non-controlling interest) leads to the FINAL net profit row. Use that final row; the intervening line is the adjustment, and if it cannot be aligned to the columns the statement fails the gate (no card) instead of posting the interim profit.
+    if len(pats) >= 2:
+        _p0 = pats[0][0]
+        _mid = [i_ for i_ in range(_p0 + 1, len(rows)) if re.search(r"associate|joint venture|non.?controlling|minority", clean_label(rows[i_][0])) and not re.search(r"attributable|owners|equity holders|total comprehensive", clean_label(rows[i_][0])) and rows[i_][1] and not any(i_ == x_[0] for x_ in pats)]
+        if _mid:
+            _m = _mid[0]
+            _nx = [x_ for x_ in pats if x_[0] > _m]
+            if _nx:
+                pats = [_nx[0]]
+                if len(rows[_m][1]) == n and sum(v is not None for v in rows[_m][1]) >= 1:
+                    c["associates"] = [(_m, rows[_m][1])]
     c["pat"] = pats[:4]
     pj = pats[0][0] if pats else pi
     c["eps"] = _all_matches(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, n=n)[:1]
