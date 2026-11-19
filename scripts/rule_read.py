@@ -597,6 +597,8 @@ def _snap():
 
 def _merge(a, b):
     """Merge a text-layer read and an OCR read of the SAME filing for the standalone table. Accepted only when every column reconciles exactly, and the current column's revenue, total income and PAT were read identically by both sources (an independent confirmation). -> result json or None."""
+    if os.environ.get("RULE_MERGE", "0") != "1":      # 19 Nov: OFF by default - the replay showed one wrong merged read (Lovable: revenue 5.78 against 330.1 in XBRL); back on only after that case is understood
+        return None
     if a["half"] or b["half"] or a["cons"] or b["cons"] or not a["ds"] or a["unit"] != b["unit"]:
         return None
     da, db = a["d"].get("standalone"), b["d"].get("standalone")
