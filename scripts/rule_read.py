@@ -501,6 +501,15 @@ def _candidates(rows):
                 pats = [_nx[0]]
                 if len(rows[_m][1]) == n and sum(v is not None for v in rows[_m][1]) >= 1:
                     c["associates"] = [(_m, rows[_m][1])]
+    # 19 Nov (NEC Life, Alembic): continuing operations + discontinued operations. The profit that XBRL (and the company's total) reports is 'Total profit for the period' = continuing profit + discontinued profit, so use that row with the discontinued-profit line as the adjustment (it must tie exactly in the gate); the continuing-only profit is not the company's profit.
+    if pats and not any(x_[0] in [i2 for i2, _ in c.get("associates", [])] for x_ in pats[:1] if False):
+        _p0b = pats[0][0]
+        _bd2 = next((i_ for i_ in range(_p0b + 1, len(rows)) if re.search(r"comprehensive|per share|paid.?up|attributable|owners of|equity holders|earnings", clean_label(rows[i_][0]))), len(rows))
+        _tot = [i_ for i_ in range(_p0b + 1, _bd2) if re.search(r"^total profit.{0,20}for the (period|quarter|year|half)", clean_label(rows[i_][0])) and len(rows[i_][1]) == n]
+        _dsc = [i_ for i_ in range(_p0b + 1, _bd2) if re.search(r"^profit.{0,25}(from|of) discontinued operations?", clean_label(rows[i_][0])) and not re.search(r"before", clean_label(rows[i_][0])) and len(rows[i_][1]) == n]
+        if _tot and _dsc and _dsc[0] < _tot[0] and re.search(r"continuing", clean_label(rows[_p0b][0])):
+            pats = [(_tot[0], rows[_tot[0]][1])]
+            c["associates"] = [(_dsc[0], rows[_dsc[0]][1])]
     c["pat"] = pats[:4]
     pj = pats[0][0] if pats else pi
     c["eps"] = _all_matches(rows, [r"\bbasic\b", r"^earnings? per (equity )?share", r"^eps\b"], start=pj + 1, n=n)[:1]
