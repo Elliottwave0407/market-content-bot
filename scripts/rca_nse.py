@@ -14,7 +14,7 @@ while day <= d1:
     except Exception as e:
         print("day", day.date(), "failed", repr(e)[:80])
     day += timedelta(days=1)
-for s in SYMS:
+for s in ([] if os.environ.get("ROWS", "") == "1" else SYMS):
     x = seen.get(s)
     if not x:
         print("###### ", s, "no row found"); continue
@@ -22,3 +22,11 @@ for s in SYMS:
     print("######", s, x.get("desc") or x.get("sm_name") or "", url, flush=True)
     r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "pdf_url_debug.py")], env=dict(os.environ, URL=url, HINT=(x.get("desc") or "")), capture_output=True, text=True, timeout=900)
     print((r.stdout + r.stderr)[-7000:], flush=True)
+
+if os.environ.get("ROWS", "") == "1":
+    for s in SYMS:
+        x = seen.get(s)
+        if not x: continue
+        print("###### ROWS", s, flush=True)
+        r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "rca_rows.py")], env=dict(os.environ, URL=x.get("attchmntFile") or "", PAGES=os.environ.get("PAGES", "")), capture_output=True, text=True, timeout=600)
+        print((r.stdout + r.stderr)[-9000:], flush=True)

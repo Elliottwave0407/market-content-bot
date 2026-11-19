@@ -9,6 +9,10 @@ on:
         default: "2026-11-10"
       end:
         default: "2026-11-18"
+      rows:
+        default: ""
+      pages:
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -28,6 +32,8 @@ jobs:
           SYMS: ${{ github.event.inputs.syms }}
           START: ${{ github.event.inputs.start }}
           END: ${{ github.event.inputs.end }}
+          ROWS: ${{ github.event.inputs.rows }}
+          PAGES: ${{ github.event.inputs.pages }}
           RULE_OCR_ENGINE: rapid
           RULE_OCR: "1"
           NSE_SME: "1"
