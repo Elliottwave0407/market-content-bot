@@ -40,5 +40,4 @@ jobs:
           RULE_OCR_ENGINE: rapid
           RULE_OCR: "1"
           NSE_SME: "1"
-          RULE_MERGE: "1"
         run: python scripts/rca_nse.py
