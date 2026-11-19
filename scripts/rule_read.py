@@ -588,12 +588,47 @@ def _assemble(cands, n, unit, rows):
                 return d, True, unv
     return (first if first is not None else dict(base, pbt=[None] * 3, pat=pad(cands["pat"][0][1]))), False, []
 
+_FAIL = threading.local()      # the last failed assembly per basis, kept so the text read and the OCR read can be merged cell by cell (19 Nov, Ansal: text garbled the tax cell, OCR garbled the PBT row; every printed figure was right in one source or the other)
+
+
+def _snap():
+    return {"d": dict(getattr(_FAIL, "d", {}) or {}), "ds": getattr(_FAIL, "ds", None), "unit": getattr(_FAIL, "unit", None), "half": getattr(_FAIL, "half", True), "cons": getattr(_FAIL, "cons", True)}
+
+
+def _merge(a, b):
+    """Merge a text-layer read and an OCR read of the SAME filing for the standalone table. Accepted only when every column reconciles exactly, and the current column's revenue, total income and PAT were read identically by both sources (an independent confirmation). -> result json or None."""
+    if a["half"] or b["half"] or a["cons"] or b["cons"] or not a["ds"] or a["unit"] != b["unit"]:
+        return None
+    da, db = a["d"].get("standalone"), b["d"].get("standalone")
+    if not da or not db or "consolidated" in a["d"] or "consolidated" in b["d"]:
+        return None
+    first = lambda d, k: (d.get(k) or [None])[0]
+    for k in ("revenue", "total_income", "pat"):
+        if first(da, k) is None or first(da, k) != first(db, k):
+            return None
+    ks = ("total_income", "total_expenses", "pbt", "tax", "pat")
+    for pick in itertools.product((0, 1), repeat=len(ks)):
+        dm = dict(da)
+        for k, w in zip(ks, pick):
+            dm[k] = list((da, db)[w].get(k) or [None] * 3)
+        for k in ("exceptional", "associates", "depreciation", "finance_costs"):
+            if not any(v is not None for v in (da.get(k) or [])) and db.get(k):
+                dm[k] = db[k]
+        if all(_col_status(dm, i, a["unit"]) is True for i in range(3)):
+            out = {"unit": a["unit"], "quarter_end_columns": a["ds"], "consolidated": None, "standalone": dm, "_rule": True, "_rule_ok": {"standalone": True}, "_printed": {"standalone": 0}, "_half": False, "_unverified": {"standalone": []}, "_merged": True, "_ocr": True}
+            for k in KEYNAMES:
+                dm.setdefault(k, [None, None, None])
+            dm.pop("exceptional", None); dm.pop("associates", None)
+            return out
+    return None
+
 
 def read_pdf(pdf_bytes, hint="", qhint=None, allow_half=False):
     """Text layer first; if that fails, OCR the pages (scanned / garbled PDFs) and run the same strict reconcile gate."""
     r, why = _read(pdf_bytes, hint, qhint, False, allow_half)
     if r is not None or why is None:
         return r, why
+    snap_t = _snap()
     import shutil
     if not shutil.which("tesseract") or os.environ.get("RULE_OCR", "0") != "1":
         return None, why
@@ -606,6 +641,12 @@ def read_pdf(pdf_bytes, hint="", qhint=None, allow_half=False):
     if r2 is not None:
         r2["_ocr"] = True
         return r2, None
+    try:
+        m_ = _merge(snap_t, _snap())
+    except Exception:
+        m_ = None
+    if m_ is not None:
+        return m_, None
     return None, why + " | ocr: " + str(why2)[:420]
 
 
@@ -725,6 +766,8 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
     if not ds:
         return None, "rule: column dates not found"
     out = {"unit": unit, "quarter_end_columns": ds[:3], "consolidated": None, "standalone": None, "_rule": True, "_rule_ok": {}, "_printed": {}, "_half": half_mode}
+    _FAIL.d = {}; _FAIL.ds = ds[:3]; _FAIL.unit = unit; _FAIL.half = half_mode
+    _FAIL.cons = bool(re.search(r"statement of consolidated|consolidated (un)?audited financial results|consolidated financial results", " ".join(t for t, _ in pages).lower()))
     why = []
     for b in ("consolidated", "standalone"):
         rows = blocks[b]
@@ -757,6 +800,7 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
         if not ok:
             det = " ".join(f"{k}={d.get(k)}" for k in ("total_income", "total_expenses", "exceptional", "pbt", "tax", "associates", "pat", "depreciation", "finance_costs") if d.get(k))
             why.append(f"{b[:4]}: does not reconcile [{unit}] {det}")
+            _FAIL.d[b] = d
             if b == "consolidated": return None, f"rule: consolidated table does not reconcile [{unit}] {det}"
             continue
         for k in KEYNAMES:
