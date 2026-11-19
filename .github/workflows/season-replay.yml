@@ -11,6 +11,8 @@ on:
         default: "60"
       engine:
         default: "rapid"
+      only:
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -37,6 +39,7 @@ jobs:
           SHARD: ${{ matrix.shard }}
           NSHARDS: "6"
           RULE_OCR_ENGINE: ${{ github.event.inputs.engine }}
+          ONLY: ${{ github.event.inputs.only }}
         run: python scripts/season_replay.py
       - uses: actions/upload-artifact@v4
         if: always()
