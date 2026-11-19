@@ -2659,10 +2659,11 @@
 "77102e1f-f976-47e3-8a50-e197c8dacad4",
 "8dd3a9f2-6594-475d-b775-279ef47679b1",
 "a1f50cab-e838-4584-9db0-8ad2bb1dff2e",
-"ca6a1133-fdc7-4346-926e-5c4971292bf6"
+"ca6a1133-fdc7-4346-926e-5c4971292bf6",
+"3e846525-75c7-4382-a869-9cc6797ee82d",
+"c42a6686-2fda-4a28-bddd-8e7dc12bdc61"
 ],
 "posted": [
-"532885|Sep-26|consolidated",
 "532174|Sep-26|consolidated",
 "512361|Sep-26|consolidated",
 "524590|Sep-26|standalone",
@@ -7661,36 +7662,37 @@
 "516086|Dec-25|standalone",
 "544755|Sep-26|consolidated",
 "532780|Sep-26|na",
-"544982|Sep-26|standalone"
+"544982|Sep-26|standalone",
+"523031|Sep-26|standalone"
 ],
 "pending": {
-"3e846525-75c7-4382-a869-9cc6797ee82d": {
+"a681edec-d66a-4623-985c-14420a4365cb": {
 "rec": {
-"NEWSID": "3e846525-75c7-4382-a869-9cc6797ee82d",
-"SCRIP_CD": 544982,
-"XML_NAME": "ANN_544982_3E846525-75C7-4382-A869-9CC6797EE82D",
-"NEWSSUB": "Paramount Syntex Ltd - 544982 - Revised Financial Results For The Half Year Ended 30Th September, 2026, Along With The Limited Review Report Inadvertently Omitted From The Earlier Filing.",
-"DT_TM": "2026-11-19T17:25:35.29",
-"NEWS_DT": "2026-11-19T17:25:35.29",
+"NEWSID": "a681edec-d66a-4623-985c-14420a4365cb",
+"SCRIP_CD": 526827,
+"XML_NAME": "ANN_526827_A681EDEC-D66A-4623-985C-14420A4365CB",
+"NEWSSUB": "Spice Islands Industries Ltd-$ - 526827 - Unaudited Financial Results Of The Company For The Quarter And Half-Year Ended September 30, 2026",
+"DT_TM": "2026-11-19T18:22:06.873",
+"NEWS_DT": "2026-11-19T18:22:06.873",
 "CRITICALNEWS": "0",
 "ANNOUNCEMENT_TYPE": "A",
 "QUARTER_ID": null,
 "FILESTATUS": "N    ",
-"ATTACHMENTNAME": "fe1ec6e7-a9da-429f-9340-2f5eb489550a.pdf",
+"ATTACHMENTNAME": "fa220c32-5fc3-4a29-bef6-9da03b4e30d2.pdf",
 "MORE": "",
-"HEADLINE": "Revised Financial Results for the Half Year Ended 30th September, 2026, along with the Limited Review Report inadvertently omitted from the earlier filing.",
+"HEADLINE": "Unqudited Financial Results of the Company for the quarter and half year ended September 30, 2026",
 "CATEGORYNAME": "Result",
 "OLD": 1,
 "RN": 1,
 "PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/paramount-syntex-ltd/parasyntex/544982/",
-"SLONGNAME": "Paramount Syntex Ltd",
+"NSURL": "https://www.bseindia.com/stock-share-price/spice-islands-industries-ltd/spiceislin/526827/",
+"SLONGNAME": "Spice Islands Industries Ltd-$",
 "AGENDA_ID": 30,
-"TotalPageCnt": 9,
-"News_submission_dt": "2026-11-19T17:25:35",
-"DissemDT": "2026-11-19T17:25:35.29",
+"TotalPageCnt": 12,
+"News_submission_dt": "2026-11-19T18:22:06",
+"DissemDT": "2026-11-19T18:22:06.873",
 "TimeDiff": "00:00:00",
-"Fld_Attachsize": 3415712,
+"Fld_Attachsize": 1078798,
 "SUBCATNAME": "Financial Results",
 "BSENEWSID": null,
 "INVESTOR_PRESENTATION": null,
@@ -7698,8 +7700,8 @@
 "DataInsDate": null,
 "AUDIO_VIDEO_FILE": null
 },
-"first": 1795089358.1836438,
-"last": 1795090095.392238,
+"first": 1795100293.188662,
+"last": 1795100343.9162745,
 "alerted": false
 }
 },
@@ -8290,7 +8292,8 @@
 "dfdb6a67-2445-44c7-89ca-1abfd3e356fd": 1,
 "1c3407b6-4334-4cd0-845e-88b998910dfe": 1,
 "0590a3ac-aa8d-4983-a36d-817b6553443c": 1,
-"3e846525-75c7-4382-a869-9cc6797ee82d": 1
+"3e846525-75c7-4382-a869-9cc6797ee82d": 1,
+"c42a6686-2fda-4a28-bddd-8e7dc12bdc61": 1
 },
 "cons_expected": {
 "b6a3c238-bd8e-40f6-b5ce-bacfb15b5fe9": 1,
@@ -8889,10 +8892,6 @@
 "a1f50cab-e838-4584-9db0-8ad2bb1dff2e": 1
 },
 "lag": [
-[
-"Lime Chemicals Ltd",
-277
-],
 [
 "Euphoria Infotech (India) Ltd",
 247
@@ -10088,6 +10087,10 @@
 [
 "Parsvnath Developers Ltd",
 45
+],
+[
+"A D S Diagnostics Ltd",
+1
 ]
 ],
 "pdfposted": {
@@ -10099,7 +10102,17 @@
 "rev": 0.0,
 "pat": -0.6440000000000001,
 "t": 1795068059.3223314,
-"last": 1795089939.41056
+"last": 1795100322.199037
+},
+"523031|Sep-26|standalone": {
+"code": "523031",
+"name": "A D S Diagnostics Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 77.678,
+"pat": 6.953,
+"t": 1795100346.0945258,
+"last": 1795100352.0163949
 }
 },
 "half_q": {

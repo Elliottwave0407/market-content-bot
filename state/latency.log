@@ -1745,3 +1745,13 @@
 19 11:56:21 wait 544982 Paramount Syntex Ltd: numbers not yet on BSE
 19 11:57:40 pdf strong model fixed a failed read
 19 11:57:43 pdf pdf is a HALF-YEARLY filing (column dates ['30.09.2026', '31.03.2026', '30.09.2025']): not read as quarters, queued for the half-yearly route Paramount Syntex Ltd
+19 14:58:13 seen 544982 Paramount Syntex Ltd cat=Result early=False bse_time=17:25:35 dissem=17:25:35
+19 14:58:13 seen 526827 Spice Islands Industries Ltd cat=Result early=False bse_time=18:22:06 dissem=18:22:06
+19 14:58:13 seen 523031 A D S Diagnostics Ltd cat=Result early=False bse_time=18:32:48 dissem=18:32:48
+19 14:58:37 wait 526827 Spice Islands Industries Ltd: confirming that no consolidated statement exists
+19 14:58:42 wait 523031 A D S Diagnostics Ltd: numbers not yet on BSE
+19 14:59:02 pdf rule reader A D S Diagnostics Ltd: ok
+19 14:59:06 ready 523031|Sep-26|standalone kind=photo waited_min=0.8 tries=1 pdf_log=pdf current col A D S Diagnostics Ltd standalone ok=True/2: revenue=776.78, other_income=None, total_income=779.72, total_expenses=687.07, finance_costs=12.46, 
+19 14:59:12 pdf pdf current col A D S Diagnostics Ltd standalone ok=True/2: revenue=776.78, other_income=None, total_income=779.72, total_expenses=687.07, finance_costs=12.46, depreciation=1.37, pbt=92.65, tax=23.12, pat=69.53, eps=3.17
+19 14:59:12 pdf rule reader Spice Islands Industries Ltd-$: rule: no results table page | ocr: rule: unit not found
+19 14:59:12 pdf rule reader Paramount Syntex Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
