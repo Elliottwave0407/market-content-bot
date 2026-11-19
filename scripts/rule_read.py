@@ -492,11 +492,12 @@ def _candidates(rows):
     # 19 Nov (One Life Capital, Texmo Pipes): 'Profit for the period' (7-8) reconciles by itself, but a later numbered line (share of associates, non-controlling interest) leads to the FINAL net profit row. Use that final row; the intervening line is the adjustment, and if it cannot be aligned to the columns the statement fails the gate (no card) instead of posting the interim profit.
     if len(pats) >= 2:
         _p0 = pats[0][0]
-        _mid = [i_ for i_ in range(_p0 + 1, len(rows)) if re.search(r"associate|joint venture|non.?controlling|minority", clean_label(rows[i_][0])) and not re.search(r"attributable|owners|equity holders|total comprehensive", clean_label(rows[i_][0])) and rows[i_][1] and not any(i_ == x_[0] for x_ in pats)]
+        _bd = next((i_ for i_ in range(_p0 + 1, len(rows)) if re.search(r"comprehensive|per share|paid.?up|attributable|owners of|equity holders", clean_label(rows[i_][0]))), len(rows))      # the statement's profit block ends at OCI / attributable / EPS: lines further down (notes, summary tables, 'Profit after tax' key figures) must never be taken for the final profit (19 Nov, JKIPL)
+        _mid = [i_ for i_ in range(_p0 + 1, _bd) if re.search(r"associate|joint venture|non.?controlling|minority", clean_label(rows[i_][0])) and not re.search(r"attributable|owners|equity holders|total comprehensive", clean_label(rows[i_][0])) and rows[i_][1] and not any(i_ == x_[0] for x_ in pats)]
         if _mid:
             _m = _mid[0]
-            _nx = [x_ for x_ in pats if x_[0] > _m]
-            if _nx:
+            _nx = [x_ for x_ in pats if _m < x_[0] < _bd]
+            if _nx and _nx[0][1][:1] != pats[0][1][:1]:
                 pats = [_nx[0]]
                 if len(rows[_m][1]) == n and sum(v is not None for v in rows[_m][1]) >= 1:
                     c["associates"] = [(_m, rows[_m][1])]
