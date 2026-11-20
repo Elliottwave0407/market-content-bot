@@ -1,5 +1,5 @@
 """Read-only RCA: for each NSE symbol in SYMS find its result PDF between START and END and run scripts/pdf_url_debug.py on it (row dumps + the reader's verdict). Posts nothing."""
-import os, sys, subprocess
+import os, sys, re, subprocess
 from datetime import datetime, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nse_results as nr
@@ -21,7 +21,9 @@ for s in ([] if os.environ.get("ROWS", "") == "1" else SYMS):
     url = x.get("attchmntFile") or ""
     print("######", s, x.get("desc") or x.get("sm_name") or "", url, flush=True)
     r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "pdf_url_debug.py")], env=dict(os.environ, URL=url, HINT=(x.get("desc") or "")), capture_output=True, text=True, timeout=900)
-    print((r.stdout + r.stderr)[-7000:], flush=True)
+    full = r.stdout + r.stderr
+    print("WHY>>", " || ".join(l[:600] for l in full.splitlines() if re.search(r"READ_PDF why|TRIM READ|mentions", l)), flush=True)
+    print(full[-5000:], flush=True)
 
 if os.environ.get("ROWS", "") == "1":
     for s in SYMS:
