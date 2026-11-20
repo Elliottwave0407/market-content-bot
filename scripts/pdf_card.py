@@ -135,6 +135,9 @@ def trim_pdf(content):
                 hits.append(i)
         if not hits:
             return content
+        for i in range(d.page_count):      # 20 Nov (Bajaj Auto, MRF, Manappuram, Niraj): a scanned (image-only) page has no text layer, so trimming by text dropped the consolidated table and left only the standalone one. A filing with any image-only page is read whole.
+            if len(d[i].get_text().strip()) < 80 and d[i].get_images():
+                return content
         keep = sorted(set(hits[:4]) | {min(hits[0] + 1, d.page_count - 1)})
         if len(keep) >= d.page_count:
             return content
