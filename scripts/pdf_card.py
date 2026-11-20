@@ -135,7 +135,7 @@ def trim_pdf(content):
                 hits.append(i)
             else:      # 20 Nov (MRF): a garbled consolidated page names fewer than 2 keywords but its title still says consolidated results; keep it as an EXTRA page, without changing which pages the normal rule picks
                 _h = re.sub(r"[^a-z]", "", t[:600])
-                if "consolid" in _h and "result" in _h:
+                if "consolid" in _h and "result" in _h and sum(c.isdigit() for c in t) >= 120:      # a table page is number-dense; a notes page that merely mentions consolidated results is not
                     extra.append(i)
         if not hits:
             return content
