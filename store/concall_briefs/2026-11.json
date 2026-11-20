@@ -78536,8 +78536,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 8,
-"A": 6,
-"B": 2,
+"A": 5,
+"B": 3,
 "C": 0,
 "shown": 7
 },
@@ -78546,7 +78546,7 @@
 "guidance": [
 {
 "cat": "guidance",
-"grade": "A",
+"grade": "B",
 "statement": "Revenue growth guidance of 10% 3-year CAGR and 12% 5-year CAGR maintained; EBITDA margin target raised to 15% by FY28",
 "value": "10-12% revenue CAGR; 15% EBITDA margin",
 "period": "FY28",
@@ -91593,8 +91593,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 25,
-"A": 14,
-"B": 11,
+"A": 13,
+"B": 12,
 "C": 0,
 "shown": 17
 },
@@ -91641,21 +91641,21 @@
 "demand": [
 {
 "cat": "demand",
-"grade": "A",
-"statement": "MMR business hotels saw weaker July due to rains, recovery in Aug-Sep from MICE; Hyderabad strong on GCC demand; Bangalore moderate, foreign tourist dependent; Pune healthy on corporate and retail demand",
-"value": null,
-"period": "Q2 FY27",
-"direction": "flat",
-"quote": "Our business hotels in MMR, Hyderabad, and Bangalore saw mixed trends through the quarter, while our Leisure portfolio witnessed strong demand and delivered 34% RevPAR growth with a good mix of Occupancy and ADR."
-},
-{
-"cat": "demand",
 "grade": "B",
 "statement": "Leisure portfolio delivered 34% RevPAR growth in Q2 FY27 with blended resort occupancy at 41.2% vs 32.6% last year; Westin Himalayas grew 50-55%",
 "value": "34% RevPAR growth",
 "period": "Q2 FY27",
 "direction": "up",
 "quote": "Compared to business hotels, resorts did better this quarter with 34% RevPAR growth. All three resorts delivered strong growth as we moved towards stabilization, with resort occupancies on a blended basis at 41.2% against 32.6% last year."
+},
+{
+"cat": "demand",
+"grade": "B",
+"statement": "MMR business hotels saw weaker July due to rains, recovery in Aug-Sep from MICE; Hyderabad strong on GCC demand; Bangalore moderate, foreign tourist dependent; Pune healthy on corporate and retail demand",
+"value": null,
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "Our business hotels in MMR, Hyderabad, and Bangalore saw mixed trends through the quarter, while our Leisure portfolio witnessed strong demand and delivered 34% RevPAR growth with a good mix of Occupancy and ADR."
 }
 ],
 "margin": [
@@ -129544,8 +129544,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 22,
-"A": 12,
-"B": 9,
+"A": 11,
+"B": 10,
 "C": 1,
 "shown": 16
 },
@@ -131672,6 +131672,141 @@
 "period": "CY26",
 "direction": "flat",
 "quote": "We are number one in all the three verticals, about 25% market share in low and medium-duty gearboxes for industrial automation segment, about 32% in off-highway mobility drives, and more than 50% in wind drives among domestic manufacturers."
+}
+]
+}
+},
+"543419|2026-11-20": {
+"code": "543419",
+"name": "Shriram Properties Ltd",
+"day": "2026-11-20",
+"sector": "Real Estate",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 20,
+"A": 6,
+"B": 12,
+"C": 2,
+"shown": 11
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/432a2814-3aea-451c-af93-f150acd77fd0.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "FY28 mission target of INR5,000 crores pre-sales, INR2,500 crores revenue and INR250 crores PBT remains intact",
+"value": "2500 crores",
+"period": "FY28",
+"direction": "flat",
+"quote": "we are still working towards in FY28, our mission target of our sales value of INR5,000 crores that Pre-salesvalue, revenue of INR2,500 crores and earnings PBT level of about INR250 crores or plus."
+},
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "FY27 revenue guidance revised to INR1,500-1,600 crores with EBITDA around INR300 crores",
+"value": "1500-1600 crores",
+"period": "FY27",
+"direction": "up",
+"quote": "INR1,500 crores to INR1,600 crores could have been a number."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "B",
+"statement": "EBITDA margin improved to ~23% in Q2 FY27 from favorable product mix and cost discipline; targeting mid-20s EBITDA margin for full year",
+"value": "23%",
+"period": "FY27",
+"direction": "up",
+"quote": "EBITDA margin improved to appropriate approximately 23%, reflecting a favorable product mix and disciplined cost management."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Unsold GDV of ongoing projects ~INR1,400 crores; upcoming projects INR11,560 crores; total unsold GDV potential ~INR13,000 crores",
+"value": "13000 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "Therefore, this gives an unsold GDV potential of approximately INR13,000 crores."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "B",
+"statement": "H1 operating cash flow INR101 crores; invested INR105 crores in new projects; net free cash flow positive INR184 crores",
+"value": "105 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "During the first half, we invested INR105 crores in new projects. Even after these investments, net free cash flow remained positive by INR184 crores compared with a negative INR34 crores in the H1 last year."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "A",
+"statement": "Cost inflation within long-term averages; fixed-rate contracts with escalation buffers; pricing incorporates 3-year construction cost outlook",
+"value": null,
+"period": "FY27",
+"direction": "flat",
+"quote": "when we do a project budgeting, we have always considered a reasonable buffer on cost escalation, which is maybe possible because all our contracts or they do provide for we supply material in most cases, procure bulk and supply to each contractor, but they are fixed-rate contractors."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "B",
+"statement": "Kolkata villa and plotted developments showing strong absorption; villas sold at INR1.8 crores ticket size within 30 days; plots 75% sold in 90 days",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "the four and five bedroom villas got sold within 30 days, whereas we were left with only a three-bedroom villa, which we thought the reverse will happen, because the market is like that."
+}
+],
+"fund_raise": [
+{
+"cat": "fund_raise",
+"grade": "B",
+"statement": "Undrawn borrowing limits of INR245 crores; cash balance INR357 crores; liquidity comfortable for construction and future needs",
+"value": "245 crores",
+"period": "Q2 FY27",
+"direction": "flat",
+"quote": "In addition to our cash balance, we have approximately INR245 crores of undrawn borrowing limits. Together, this provides us with the liquidity and funding flexibility for construction and future needs."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Guidance achievement dependent on timely approvals, launches, occupancy certificates and customer handovers; execution of H2 completion schedule critical",
+"value": null,
+"period": "FY27",
+"direction": null,
+"quote": "We recognize that achieving the guidance will depend on timely approvals, launches, occupancy certificate and customer handovers."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "H1 collections INR795 crores, up 10% YoY; Q2 collections INR431 crores, up 18% QoQ; collections foundation of cash generation",
+"value": "795 crores",
+"period": "H1 FY27",
+"direction": "up",
+"quote": "We collected INR 431 crores during Q2, representing 18% sequential growth, taking our first half collection to INR795 crores, an increase of 10% year-on-year."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Kolkata micro market demonstrating higher paying capacity than previously assumed; branded plotted development gaining traction",
+"value": null,
+"period": "H1 FY27",
+"direction": "up",
+"quote": "it has demonstrated that these projects can actually be turned around in 24 months, maximum 30 months from launch to completion."
 }
 ]
 }
