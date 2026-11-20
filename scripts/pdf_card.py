@@ -128,14 +128,18 @@ def trim_pdf(content):
         d = fitz.open(stream=content, filetype="pdf")
         if d.page_count <= 3:
             return content
-        hits = []
+        hits, extra = [], []
         for i in range(d.page_count):
             t = d[i].get_text().lower()
             if sum(k in t for k in KEYS) >= 2:
                 hits.append(i)
+            else:      # 20 Nov (MRF): a garbled consolidated page names fewer than 2 keywords but its title still says consolidated results; keep it as an EXTRA page, without changing which pages the normal rule picks
+                _h = re.sub(r"[^a-z]", "", t[:600])
+                if "consolid" in _h and "result" in _h and sum(c.isdigit() for c in t) >= 120:      # a table page is number-dense; a notes page that merely mentions consolidated results is not
+                    extra.append(i)
         if not hits:
             return content
-        keep = sorted(set(hits[:4]) | {min(hits[0] + 1, d.page_count - 1)})
+        keep = sorted(set(hits[:4]) | {min(hits[0] + 1, d.page_count - 1)} | set(extra[:2]))
         if len(keep) >= d.page_count:
             return content
         out = fitz.open()
