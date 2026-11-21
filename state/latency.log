@@ -1842,3 +1842,21 @@
 21 13:07:20 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
 21 13:08:22 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
 21 13:08:32 seen 523752 Trans India House Impex Ltd cat=Board Meeting early=True bse_time=18:38:14 dissem=18:38:14
+21 13:10:26 seen 538579 Zinema Media And Entertainme cat=Result early=False bse_time=18:01:33 dissem=18:01:33
+21 13:10:26 seen 538351 A.F. Enterprises Ltd cat=Result early=False bse_time=18:35:42 dissem=18:35:42
+21 13:10:56 pdf rule reader A.F. Enterprises Ltd: ok
+21 13:10:56 pdf pdf current col A.F. Enterprises Ltd consolidated ok=True/3: revenue=34.95, other_income=186.74, total_income=221.69, total_expenses=400.35, finance_costs=-0.17, depreciation=25.39, pbt=-178.6, tax=-2.68, pat=-175.92, eps=-0.52
+21 13:10:56 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
+21 13:10:59 pdf rule reader A.F. Enterprises Ltd: ok
+21 13:10:59 pdf pdf current col A.F. Enterprises Ltd consolidated ok=True/3: revenue=34.95, other_income=186.74, total_income=221.69, total_expenses=400.35, finance_costs=-0.17, depreciation=25.39, pbt=-178.6, tax=-2.68, pat=-175.92, eps=-0.52
+21 13:10:59 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
+21 13:11:10 pdf rule reader Zinema Media And Entertainment Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+21 13:11:22 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Zinema Media And Entertainment Ltd
+21 13:12:03 pdf rule reader A.F. Enterprises Ltd: ok
+21 13:12:03 pdf pdf current col A.F. Enterprises Ltd consolidated ok=True/3: revenue=34.95, other_income=186.74, total_income=221.69, total_expenses=400.35, finance_costs=-0.17, depreciation=25.39, pbt=-178.6, tax=-2.68, pat=-175.92, eps=-0.52
+21 13:12:03 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
+21 13:12:46 seen 523752 Trans India House Impex Ltd cat=Result early=False bse_time=18:42:07 dissem=18:42:07
+21 13:13:09 wait 523752 Trans India House Impex Ltd: numbers not yet on BSE
+21 13:13:19 pdf rule reader A.F. Enterprises Ltd: ok
+21 13:13:19 pdf pdf current col A.F. Enterprises Ltd consolidated ok=True/3: revenue=34.95, other_income=186.74, total_income=221.69, total_expenses=400.35, finance_costs=-0.17, depreciation=25.39, pbt=-178.6, tax=-2.68, pat=-175.92, eps=-0.52
+21 13:13:19 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
