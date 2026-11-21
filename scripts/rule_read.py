@@ -812,6 +812,12 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
             continue
         d, ok, unv = r
         rv_ = cands["revenue"][0][1]
+        try:      # 21 Nov (J Poly Invst): OCR left revenue 0 while total income was 303; a revenue of 0 next to a larger total income is refused, never posted
+            _ti = (d.get("total_income") or [None])[0]
+            if ok and d.get("revenue") and (d["revenue"][0] or 0) == 0 and _ti and _ti > 0:
+                ok = False; why.append(f"{b[:4]}: revenue is 0 but total income is {_ti}")
+        except Exception:
+            pass
         if ok and not half_mode and n >= 4 and None not in (rv_[0], rv_[3]) and rv_[0] > 0 and rv_[3] > 0:
             if rv_[0] > rv_[3] * 1.02:
                 ok = False; why.append(f"{b[:4]}: first column larger than the year-to-date column")
