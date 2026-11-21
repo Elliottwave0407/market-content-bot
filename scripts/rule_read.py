@@ -842,6 +842,6 @@ def _read(pdf_bytes, hint="", qhint=None, ocr=False, allow_half=False):
             return None, "rule: filing mentions consolidated results but that table was not read"
         for _t, _ in pages:      # 20 Nov (Bajaj Auto, MRF, Manappuram, Niraj): garbled/glued page titles defeat the sentence match above, so also test the first 400 letters of every page with spaces and punctuation removed
             _h = re.sub(r"[^a-z]", "", _t[:400].lower())
-            if "consolid" in _h and ("result" in _h or "statement" in _h) and "notes" not in _h[:40]:
+            if "consolid" in _h and ("result" in _h or "statement" in _h) and "notes" not in _h[:40] and "standalone" not in _h and "separate" not in _h:      # a standalone results page that merely says consolidated is not applicable (Hilton) must not block its own read
                 return None, "rule: a page title mentions consolidated results but that table was not read"
     return out, None
