@@ -1801,3 +1801,8 @@
 21 10:21:59 ready 543546|Sep-26|consolidated kind=photo waited_min=0.0 tries=1 pdf_log=
 21 10:27:17 seen 543546 Healthy Life Agritec Ltd cat=Result early=False bse_time=15:57:03 dissem=15:57:03
 21 10:32:50 seen 505840 Jaipan Industries Ltd cat=Board Meeting early=True bse_time=16:02:14 dissem=16:02:14
+21 10:40:07 seen 524695 Asian Fertilizers Ltd cat=Result early=False bse_time=16:09:10 dissem=16:09:10
+21 10:40:29 wait 524695 Asian Fertilizers Ltd: numbers not yet on BSE
+21 10:40:30 pdf rule reader Asian Fertilizers Ltd: rule: no text layer | ocr: rule: unit not found
+21 10:40:33 pdf nim reader Asian Fertilizers Ltd: nim: no text layer (scanned) (gemini: parse JSONDecodeError('Expecting value: )
+21 10:40:33 pdf pdf read failed Asian Fertilizers Ltd: parse JSONDecodeError('Expecting value: line 42 column 4 (char 492)'); nim: no text layer (scanned)
