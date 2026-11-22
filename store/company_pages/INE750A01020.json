@@ -1,0 +1,108 @@
+{
+ "isin": "INE750A01020",
+ "sym": "ORIENTHOT",
+ "name": "Oriental Hotels Limited",
+ "scrip": "500314",
+ "mcap_cr": 3213.89,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 132.53,
+   "ebitda": 39.03,
+   "pat": 19.41,
+   "margin_pct": 29.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 107.65,
+   "ebitda": 25.63,
+   "pat": 6.63,
+   "margin_pct": 23.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 110.48,
+   "ebitda": 26.32,
+   "pat": 7.96,
+   "margin_pct": 23.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 139.25,
+   "ebitda": 41.07,
+   "pat": 20.94,
+   "margin_pct": 29.5,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 136.46,
+   "ebitda": 38.55,
+   "pat": 32.41,
+   "margin_pct": 28.3,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 30,
+    "profit": 55,
+    "quality": 79
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 111.48,
+   "ebitda": 23.44,
+   "pat": 5.3,
+   "margin_pct": 21.0,
+   "verdict_v3": "Weak",
+   "pillars": {
+    "growth": 23,
+    "profit": 43,
+    "quality": 18
+   }
+  },
+  {
+   "q": "Sep-26",
+   "revenue": 117.75,
+   "ebitda": 26.42,
+   "pat": 8.59,
+   "margin_pct": 22.4,
+   "verdict_v3": "Weak",
+   "pillars": {
+    "growth": 25,
+    "profit": 54,
+    "quality": 30
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "missing": [],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

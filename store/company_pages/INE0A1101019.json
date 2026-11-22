@@ -1,0 +1,99 @@
+{
+ "isin": "INE0A1101019",
+ "sym": "DCI",
+ "name": "Dc Infotech And Communication Limited",
+ "scrip": "543636",
+ "mcap_cr": 628.94,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 172.72,
+   "ebitda": 6.96,
+   "pat": 3.72,
+   "margin_pct": 4.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 148.09,
+   "ebitda": 6.49,
+   "pat": 4.05,
+   "margin_pct": 4.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 153.42,
+   "ebitda": 8.47,
+   "pat": 5.01,
+   "margin_pct": 5.5,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 196.0,
+   "ebitda": 10.26,
+   "pat": 6.49,
+   "margin_pct": 5.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 239.46,
+   "ebitda": 10.22,
+   "pat": 5.66,
+   "margin_pct": 4.3,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 79,
+    "profit": 41,
+    "quality": 62
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 167.24,
+   "ebitda": 7.82,
+   "pat": 4.53,
+   "margin_pct": 4.7,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 54,
+    "profit": 41,
+    "quality": 50
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 4,
+  "concalls_read": 3,
+  "latest_concall": "2026-06-08"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

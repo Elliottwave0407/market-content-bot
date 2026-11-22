@@ -1,0 +1,99 @@
+{
+ "isin": "INE062D01024",
+ "sym": "ALICON",
+ "name": "Alicon Castalloy Limited",
+ "scrip": "531147",
+ "mcap_cr": 1761.89,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 424.53,
+   "ebitda": 46.67,
+   "pat": 9.64,
+   "margin_pct": 11.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 417.95,
+   "ebitda": 46.53,
+   "pat": 8.81,
+   "margin_pct": 11.1,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 428.18,
+   "ebitda": 54.77,
+   "pat": 13.89,
+   "margin_pct": 12.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 430.09,
+   "ebitda": 41.44,
+   "pat": 3.3,
+   "margin_pct": 9.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 494.93,
+   "ebitda": 45.68,
+   "pat": 7.94,
+   "margin_pct": 9.2,
+   "verdict_v3": "Weak",
+   "pillars": {
+    "growth": 45,
+    "profit": 33,
+    "quality": 19
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 578.01,
+   "ebitda": 54.24,
+   "pat": 11.45,
+   "margin_pct": 9.4,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 62,
+    "profit": 29,
+    "quality": 34
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 11,
+  "concalls_read": 11,
+  "latest_concall": "2026-11-20"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

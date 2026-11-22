@@ -1,0 +1,99 @@
+{
+ "isin": "INE453B01029",
+ "sym": "COMPUSOFT",
+ "name": "Compucom Software Limited",
+ "scrip": "532339",
+ "mcap_cr": 101.6,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 9.61,
+   "ebitda": 1.52,
+   "pat": 0.85,
+   "margin_pct": 15.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 8.78,
+   "ebitda": 2.28,
+   "pat": 1.34,
+   "margin_pct": 26.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 8.47,
+   "ebitda": 1.54,
+   "pat": 0.69,
+   "margin_pct": 18.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 8.96,
+   "ebitda": 0.73,
+   "pat": -0.24,
+   "margin_pct": 8.1,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 7.93,
+   "ebitda": 1.9,
+   "pat": 1.09,
+   "margin_pct": 24.0,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 45,
+    "profit": 85,
+    "quality": 61
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 8.07,
+   "ebitda": 2.61,
+   "pat": 1.37,
+   "margin_pct": 32.3,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 41,
+    "profit": 82,
+    "quality": 46
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

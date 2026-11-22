@@ -1,0 +1,99 @@
+{
+ "isin": "INE518E01015",
+ "sym": "ZIMLAB",
+ "name": "Zim Laboratories Limited",
+ "scrip": "541400",
+ "mcap_cr": 793.88,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 108.73,
+   "ebitda": 14.6,
+   "pat": 4.88,
+   "margin_pct": 13.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 71.76,
+   "ebitda": 4.25,
+   "pat": -1.87,
+   "margin_pct": 5.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 88.71,
+   "ebitda": 5.76,
+   "pat": -0.42,
+   "margin_pct": 6.5,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 108.66,
+   "ebitda": 12.81,
+   "pat": 4.4,
+   "margin_pct": 11.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 105.27,
+   "ebitda": 7.19,
+   "pat": 3.74,
+   "margin_pct": 6.8,
+   "verdict_v3": "Weak",
+   "pillars": {
+    "growth": 24,
+    "profit": 28,
+    "quality": 43
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 94.18,
+   "ebitda": 2.45,
+   "pat": -4.02,
+   "margin_pct": 2.6,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 45,
+    "profit": 22,
+    "quality": 4
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 9,
+  "concalls_read": 9,
+  "latest_concall": "2026-11-11"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

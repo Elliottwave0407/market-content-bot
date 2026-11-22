@@ -1,0 +1,108 @@
+{
+ "isin": "INE337M01021",
+ "sym": "INDOTHAI",
+ "name": "Indo Thai Securities Limited",
+ "scrip": "533676",
+ "mcap_cr": 379.25,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 5.85,
+   "ebitda": -1.98,
+   "pat": -2.59,
+   "margin_pct": -33.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 14.04,
+   "ebitda": 10.08,
+   "pat": 8.57,
+   "margin_pct": 71.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 23.71,
+   "ebitda": 19.97,
+   "pat": 14.41,
+   "margin_pct": 84.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 27.71,
+   "ebitda": 23.24,
+   "pat": 17.0,
+   "margin_pct": 83.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 38.34,
+   "ebitda": 32.74,
+   "pat": 26.18,
+   "margin_pct": 85.4,
+   "verdict_v3": "Blockbuster",
+   "pillars": {
+    "growth": 100,
+    "profit": 98,
+    "quality": 84
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 20.62,
+   "ebitda": 15.83,
+   "pat": 11.03,
+   "margin_pct": 76.8,
+   "verdict_v3": "Excellent",
+   "pillars": {
+    "growth": 82,
+    "profit": 87,
+    "quality": 64
+   }
+  },
+  {
+   "q": "Sep-26",
+   "revenue": 7.56,
+   "ebitda": -42.77,
+   "pat": -35.83,
+   "margin_pct": -565.7,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 1,
+    "profit": 2,
+    "quality": 3
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "missing": [],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

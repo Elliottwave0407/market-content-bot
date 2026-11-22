@@ -1,0 +1,99 @@
+{
+ "isin": "INE397H01017",
+ "sym": "LOKESHMACH",
+ "name": "Lokesh Machines Limited",
+ "scrip": "532740",
+ "mcap_cr": 743.81,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 38.69,
+   "ebitda": 7.32,
+   "pat": 0.13,
+   "margin_pct": 18.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 48.05,
+   "ebitda": 8.61,
+   "pat": 0.46,
+   "margin_pct": 17.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 50.43,
+   "ebitda": 9.6,
+   "pat": 0.63,
+   "margin_pct": 19.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 50.73,
+   "ebitda": 9.52,
+   "pat": 0.63,
+   "margin_pct": 18.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 59.36,
+   "ebitda": 10.5,
+   "pat": 2.15,
+   "margin_pct": 17.7,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 81,
+    "profit": 57,
+    "quality": 59
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 55.46,
+   "ebitda": 9.6,
+   "pat": 1.01,
+   "margin_pct": 17.3,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 52,
+    "profit": 57,
+    "quality": 49
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

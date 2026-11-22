@@ -1,0 +1,99 @@
+{
+ "isin": "INE227C01017",
+ "sym": "MMFL",
+ "name": "MM Forgings Limited",
+ "scrip": "522241",
+ "mcap_cr": 3123.1,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 370.64,
+   "ebitda": 72.89,
+   "pat": 33.29,
+   "margin_pct": 19.7,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 361.64,
+   "ebitda": 63.31,
+   "pat": 19.19,
+   "margin_pct": 17.5,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 384.93,
+   "ebitda": 66.52,
+   "pat": 16.57,
+   "margin_pct": 17.3,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 413.64,
+   "ebitda": 69.34,
+   "pat": 17.57,
+   "margin_pct": 16.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 429.65,
+   "ebitda": 80.75,
+   "pat": 44.74,
+   "margin_pct": 18.8,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 50,
+    "profit": 51,
+    "quality": 53
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 409.9,
+   "ebitda": 120.61,
+   "pat": 90.42,
+   "margin_pct": 29.4,
+   "verdict_v3": "Excellent",
+   "pillars": {
+    "growth": 64,
+    "profit": 89,
+    "quality": 87
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 7,
+  "concalls_read": 7,
+  "latest_concall": "2026-08-21"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

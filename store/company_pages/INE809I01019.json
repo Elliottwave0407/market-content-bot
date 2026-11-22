@@ -1,0 +1,104 @@
+{
+ "isin": "INE809I01019",
+ "sym": "ONMOBILE",
+ "name": "OnMobile Global Limited",
+ "scrip": "532944",
+ "mcap_cr": 548.9,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 156.22,
+   "ebitda": 0.87,
+   "pat": -7.93,
+   "margin_pct": 0.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 125.33,
+   "ebitda": 6.27,
+   "pat": 15.59,
+   "margin_pct": 5.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 128.16,
+   "ebitda": 8.43,
+   "pat": 5.95,
+   "margin_pct": 6.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 135.69,
+   "ebitda": 5.14,
+   "pat": 3.51,
+   "margin_pct": 3.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 127.67,
+   "ebitda": -41.55,
+   "pat": -36.53,
+   "margin_pct": -32.5,
+   "verdict_v3": "Provisional",
+   "pillars": {}
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 122.75,
+   "ebitda": -12.83,
+   "pat": -28.92,
+   "margin_pct": -10.5,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 12,
+    "profit": 7,
+    "quality": 3
+   }
+  },
+  {
+   "q": "Sep-26",
+   "revenue": 127.1,
+   "ebitda": 1.46,
+   "pat": -10.54,
+   "margin_pct": 1.1,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 11,
+    "profit": 15,
+    "quality": 2
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "missing": [],
+  "concalls_found": 6,
+  "concalls_read": 0,
+  "latest_concall": "2026-11-05"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

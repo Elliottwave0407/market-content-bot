@@ -1,0 +1,99 @@
+{
+ "isin": "INE170I01016",
+ "sym": "HGS",
+ "name": "Hinduja Global Solutions Limited",
+ "scrip": "532859",
+ "mcap_cr": 1549.36,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 1161.06,
+   "ebitda": 142.5,
+   "pat": -1.69,
+   "margin_pct": 12.3,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 1056.23,
+   "ebitda": 28.72,
+   "pat": 11.16,
+   "margin_pct": 2.7,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 1091.04,
+   "ebitda": 26.06,
+   "pat": -26.99,
+   "margin_pct": 2.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 1075.42,
+   "ebitda": 12.47,
+   "pat": 34.35,
+   "margin_pct": 1.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 1084.67,
+   "ebitda": 22.38,
+   "pat": -13.58,
+   "margin_pct": 2.1,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 11,
+    "profit": 10,
+    "quality": 4
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 1050.36,
+   "ebitda": -34.49,
+   "pat": -66.26,
+   "margin_pct": -3.3,
+   "verdict_v3": "Poor",
+   "pillars": {
+    "growth": 10,
+    "profit": 8,
+    "quality": 1
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 10,
+  "concalls_read": 10,
+  "latest_concall": "2026-08-14"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

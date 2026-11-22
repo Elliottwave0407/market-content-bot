@@ -1,0 +1,95 @@
+{
+ "isin": "INE111B01023",
+ "sym": "63MOONS",
+ "name": "63 moons technologies limited",
+ "scrip": "526881",
+ "mcap_cr": 4277.24,
+ "group": "A",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 13.64,
+   "ebitda": -38.35,
+   "pat": 11.0,
+   "margin_pct": -281.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 30.45,
+   "ebitda": -54.88,
+   "pat": -2.6,
+   "margin_pct": -180.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 20.54,
+   "ebitda": -85.53,
+   "pat": -28.26,
+   "margin_pct": -416.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 26.86,
+   "ebitda": -63.66,
+   "pat": -31.73,
+   "margin_pct": -237.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 133.74,
+   "ebitda": 18.38,
+   "pat": 25.14,
+   "margin_pct": 13.7,
+   "verdict_v3": "Blockbuster",
+   "pillars": {
+    "growth": 100,
+    "profit": 81,
+    "quality": 90
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 137.17,
+   "ebitda": -71.73,
+   "pat": -47.56,
+   "margin_pct": -52.3,
+   "verdict_v3": "Provisional",
+   "pillars": {}
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

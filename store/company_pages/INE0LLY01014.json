@@ -1,0 +1,99 @@
+{
+ "isin": "INE0LLY01014",
+ "sym": "EIEL",
+ "name": "Enviro Infra Engineers Limited",
+ "scrip": "544290",
+ "mcap_cr": 2957.68,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 392.92,
+   "ebitda": 99.42,
+   "pat": 74.09,
+   "margin_pct": 25.3,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 240.92,
+   "ebitda": 59.27,
+   "pat": 42.48,
+   "margin_pct": 24.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 227.35,
+   "ebitda": 61.38,
+   "pat": 49.5,
+   "margin_pct": 27.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 250.02,
+   "ebitda": 67.77,
+   "pat": 42.12,
+   "margin_pct": 27.1,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 427.31,
+   "ebitda": 79.65,
+   "pat": 54.29,
+   "margin_pct": 18.6,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 32,
+    "profit": 38,
+    "quality": 44
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 359.18,
+   "ebitda": 75.7,
+   "pat": 45.21,
+   "margin_pct": 21.1,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 71,
+    "profit": 41,
+    "quality": 46
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 9,
+  "concalls_read": 9,
+  "latest_concall": "2026-11-12"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

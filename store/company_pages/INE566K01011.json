@@ -1,0 +1,99 @@
+{
+ "isin": "INE566K01011",
+ "sym": "ISFT",
+ "name": "Intrasoft Technologies Limited",
+ "scrip": "533181",
+ "mcap_cr": 193.54,
+ "group": "T",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 130.04,
+   "ebitda": 3.65,
+   "pat": 2.35,
+   "margin_pct": 2.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 128.99,
+   "ebitda": 4.82,
+   "pat": 4.1,
+   "margin_pct": 3.7,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 132.51,
+   "ebitda": 4.06,
+   "pat": 3.41,
+   "margin_pct": 3.1,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 136.67,
+   "ebitda": 3.9,
+   "pat": 2.62,
+   "margin_pct": 2.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 136.05,
+   "ebitda": 4.0,
+   "pat": 3.15,
+   "margin_pct": 2.9,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 52,
+    "profit": 50,
+    "quality": 71
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 139.63,
+   "ebitda": 4.89,
+   "pat": 4.55,
+   "margin_pct": 3.5,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 47,
+    "profit": 41,
+    "quality": 66
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

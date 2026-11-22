@@ -1,0 +1,99 @@
+{
+ "isin": "INE621L01012",
+ "sym": "TEXRAIL",
+ "name": "Texmaco Rail & Engineering Limited",
+ "scrip": "533326",
+ "mcap_cr": 4528.0,
+ "group": "A",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 1346.36,
+   "ebitda": 97.61,
+   "pat": 39.16,
+   "margin_pct": 7.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 910.6,
+   "ebitda": 70.92,
+   "pat": 29.34,
+   "margin_pct": 7.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 1258.1,
+   "ebitda": 124.41,
+   "pat": 63.92,
+   "margin_pct": 9.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 1041.6,
+   "ebitda": 85.64,
+   "pat": 42.27,
+   "margin_pct": 8.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 1166.97,
+   "ebitda": 106.33,
+   "pat": 58.04,
+   "margin_pct": 9.1,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 26,
+    "profit": 53,
+    "quality": 55
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 756.68,
+   "ebitda": 57.0,
+   "pat": 50.07,
+   "margin_pct": 7.5,
+   "verdict_v3": "Weak",
+   "pillars": {
+    "growth": 12,
+    "profit": 34,
+    "quality": 82
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 11,
+  "concalls_read": 11,
+  "latest_concall": "2026-11-17"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

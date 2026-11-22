@@ -1,0 +1,95 @@
+{
+ "isin": "INE692Z01013",
+ "sym": "AFFORDABLE",
+ "name": "Affordable Robotic & Automation Limited",
+ "scrip": "541402",
+ "mcap_cr": 254.98,
+ "group": "T",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 84.42,
+   "ebitda": 7.13,
+   "pat": 2.3,
+   "margin_pct": 8.4,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 18.77,
+   "ebitda": -2.07,
+   "pat": -3.69,
+   "margin_pct": -11.0,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 28.04,
+   "ebitda": 4.74,
+   "pat": 4.57,
+   "margin_pct": 16.9,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 19.93,
+   "ebitda": 3.02,
+   "pat": 1.31,
+   "margin_pct": 15.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 50.93,
+   "ebitda": 8.19,
+   "pat": 4.78,
+   "margin_pct": 16.1,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 37,
+    "profit": 82,
+    "quality": 69
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 11.03,
+   "ebitda": -3.34,
+   "pat": -4.8,
+   "margin_pct": -30.3,
+   "verdict_v3": "Provisional",
+   "pillars": {}
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 3,
+  "concalls_read": 2,
+  "latest_concall": "2026-06-09"
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

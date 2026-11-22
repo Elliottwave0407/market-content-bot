@@ -1,0 +1,99 @@
+{
+ "isin": "INE279A01012",
+ "sym": "UNIVCABLES",
+ "name": "Universal Cables Limited",
+ "scrip": "504212",
+ "mcap_cr": 3828.98,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 674.03,
+   "ebitda": 61.78,
+   "pat": 49.69,
+   "margin_pct": 9.2,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 600.19,
+   "ebitda": 57.82,
+   "pat": 32.91,
+   "margin_pct": 9.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 814.29,
+   "ebitda": 73.73,
+   "pat": 47.68,
+   "margin_pct": 9.1,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 767.92,
+   "ebitda": 60.2,
+   "pat": 27.19,
+   "margin_pct": 7.8,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 840.27,
+   "ebitda": 68.9,
+   "pat": 55.32,
+   "margin_pct": 8.2,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 57,
+    "profit": 34,
+    "quality": 63
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 945.06,
+   "ebitda": 91.46,
+   "pat": 70.14,
+   "margin_pct": 9.7,
+   "verdict_v3": "Strong",
+   "pillars": {
+    "growth": 82,
+    "profit": 41,
+    "quality": 82
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26"
+  ],
+  "missing": [
+   {
+    "q": "Sep-26",
+    "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"
+   }
+  ],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}

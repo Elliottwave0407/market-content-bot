@@ -1,0 +1,108 @@
+{
+ "isin": "INE865C01022",
+ "sym": "BIRLAMONEY",
+ "name": "Aditya Birla Money Limited",
+ "scrip": "532974",
+ "mcap_cr": 656.35,
+ "group": "B",
+ "quarters": [
+  {
+   "q": "Mar-25",
+   "revenue": 98.06,
+   "ebitda": 48.32,
+   "pat": 9.33,
+   "margin_pct": 49.3,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Jun-25",
+   "revenue": 112.71,
+   "ebitda": 54.73,
+   "pat": 15.38,
+   "margin_pct": 48.6,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Sep-25",
+   "revenue": 106.51,
+   "ebitda": 46.55,
+   "pat": 10.15,
+   "margin_pct": 43.7,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Dec-25",
+   "revenue": 119.58,
+   "ebitda": 56.51,
+   "pat": 14.22,
+   "margin_pct": 47.3,
+   "verdict_v3": null,
+   "pillars": {}
+  },
+  {
+   "q": "Mar-26",
+   "revenue": 129.8,
+   "ebitda": 65.09,
+   "pat": 18.73,
+   "margin_pct": 50.1,
+   "verdict_v3": "Excellent",
+   "pillars": {
+    "growth": 74,
+    "profit": 71,
+    "quality": 53
+   }
+  },
+  {
+   "q": "Jun-26",
+   "revenue": 130.77,
+   "ebitda": 61.97,
+   "pat": 11.13,
+   "margin_pct": 47.4,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 54,
+    "profit": 61,
+    "quality": 23
+   }
+  },
+  {
+   "q": "Sep-26",
+   "revenue": 137.69,
+   "ebitda": 65.09,
+   "pat": 10.89,
+   "margin_pct": 47.3,
+   "verdict_v3": "Steady",
+   "pillars": {
+    "growth": 56,
+    "profit": 76,
+    "quality": 30
+   }
+  }
+ ],
+ "completeness": {
+  "expected": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "held": [
+   "Jun-25",
+   "Sep-25",
+   "Dec-25",
+   "Mar-26",
+   "Jun-26",
+   "Sep-26"
+  ],
+  "missing": [],
+  "concalls_found": 0,
+  "concalls_read": 0,
+  "latest_concall": null
+ },
+ "note": "Verdict v3 is a prototype; peer-relative; not investment advice"
+}
