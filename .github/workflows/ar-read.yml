@@ -1,0 +1,43 @@
+name: ar-read
+on:
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "1 = dry folder (pilot)"
+        default: "1"
+      maxn:
+        default: "10"
+      fy:
+        default: "2026"
+      budget_min:
+        default: "40"
+concurrency:
+  group: ar-read
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt && sudo apt-get install -y poppler-utils >/dev/null
+      - env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          OUT_DIR: ${{ (github.event.inputs.dry || '1') == '1' && 'annual_report_facts_dry' || 'annual_report_facts' }}
+          MAXN: ${{ github.event.inputs.maxn || '10' }}
+          FY: ${{ github.event.inputs.fy || '2026' }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '40' }}
+        run: python scripts/ar_read.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name market-content-bot && git config user.email bot@users.noreply.github.com
+          git add store/annual_report_facts store/annual_report_facts_dry 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Annual report facts"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
