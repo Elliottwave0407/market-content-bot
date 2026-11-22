@@ -270,7 +270,13 @@ def _read_stage(rec, st, headline, filed):
         LOG.append(f"pdf read deferred {rec.get('SLONGNAME')}: " + ("per-pass AI call cap" if STATE_["calls"] >= PER_POLL else "no AI reader available"))
         return None
     STATE_["calls"] += 1
-    out, err = None, "gemini skipped (quota/backoff)"
+    _why = "not blocked"      # 22 Nov: log WHY Gemini was skipped (season-prep RCA); logging only, no change to behaviour
+    if gem_blocked:
+        _u = use.get(day, 0)
+        _why = ("no key" if not key else "backoff after 429/503" if time.time() < STATE_["backoff"] else "daily cap %d/%d" % (_u, _cap) if _u >= _cap
+                else "NIM_ONLY" if os.environ.get("NIM_ONLY") == "1" else "micro-cap reserve" if _u >= 0.8 * _cap and mcap_of(rec.get("SCRIP_CD")) < 300
+                else "repeat of same filing x%d" % GEM_CALLS.get(att, 0))
+    out, err = None, "gemini skipped (%s)" % _why
     if not gem_blocked:
         use[day] = use.get(day, 0) + 1
         out, err = gr.read_pdf(key, MODEL, small, tries=int(os.environ.get("PDF_TRIES", "1")), timeout=90)
@@ -293,7 +299,7 @@ def _read_stage(rec, st, headline, filed):
         out = escalate(out, key, small)
     if out is None and nim_ok:      # Gemini out of quota / busy / failed: the free NVIDIA reader takes the same job (same checks follow)
         out, err2 = nr.read_pdf(small, prio=-TRIES.get(nid, 1))     # fair order: a filing's first read goes before anyone's repeat attempts; same-try reads keep arrival order (no size preference)
-        LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:40]})")
+        LOG.append(f"nim reader {rec.get('SLONGNAME')}: {'ok' if out else err2} (gemini: {str(err)[:70]})")
         if out is not None:
             return _annotate(out, small), q_head
         err = f"{err}; {err2}"
