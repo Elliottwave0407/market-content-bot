@@ -1,0 +1,42 @@
+{
+ "isin": "INE007N01010",
+ "name": "Fedbank Financial Services Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31440_FEDFINA_2025_2026_A_9990856_04092026195847.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 2134916,
+ "facts": {
+  "business": "Fedbank Financial Services Limited is a non-banking financial company focused on secured retail lending, primarily Gold Loans and Mortgage Loans (Small Ticket LAP, Medium Ticket LAP, and Home Loans), serving underserved and emerging borrowers across India.",
+  "segments": [
+   {
+    "name": "Gold Loans",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Mortgage Loans (Small Ticket LAP, Medium Ticket LAP, Home Loans)",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 5303,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Significant judgement and estimates in Expected Credit Loss (ECL) estimation model",
+   "Data inputs completeness and accuracy for ECL model",
+   "Early warning signals and stage-wise classification of loans",
+   "Forward-looking statements subject to inherent risks and uncertainties"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
