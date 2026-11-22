@@ -45,7 +45,7 @@ def ask(text):
 if not NV: print("NVIDIA_API_KEY missing"); sys.exit(0)
 recs = [json.loads(l) for l in open(R + "annual_reports/merged.jsonl")]
 recs = [r for r in recs if r["fy"] == FY and r.get("isin") and r.get("url")]
-pages = {x[:-5] for x in os.listdir(os.path.dirname(R) + "/store/company_pages")} if os.path.isdir(R + "company_pages") else set()
+pages = {x[:-5] for x in os.listdir(R + "company_pages")} if os.path.isdir(R + "company_pages") else set()
 recs.sort(key=lambda r: (r["isin"] not in pages, r["isin"]))      # pilot pages first
 done = n = fail = 0
 for r in recs:
