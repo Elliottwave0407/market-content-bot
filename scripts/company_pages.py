@@ -3,6 +3,7 @@ Public data only. Usage: python3 scripts/company_pages.py [N_PILOT]   (default 2
 import sys, os, json, glob, collections
 sys.path.insert(0, os.path.dirname(__file__))
 import verdict_v3_proto as v
+import verdict_v3 as v3
 R = os.path.join(os.path.dirname(__file__), "..", "store") + "/"
 MN = {0: "Mar", 1: "Jun", 2: "Sep", 3: "Dec"}
 lab = lambda q: "%s-%02d" % (MN[q % 4], q // 4 % 100)
@@ -22,8 +23,9 @@ latest = max(qs)
 tiers = {}
 for q in qs:
     if (v.D and any(k[1] == q - 4 for k in v.D)):
-        o, F = v.build(q)
-        for i, (t, pl) in o.items(): tiers[(i, q)] = (t, pl)
+        _, F = v.build(q)
+        for i, f in F.items():
+            t, pl, why = v3.rate(f); tiers[(i, q)] = (t, pl, why)
 def page(i):
     d = dict(ident[i]); rows = []
     expect = [q for q in range(latest - 5, latest + 1)]
@@ -32,8 +34,8 @@ def page(i):
         n = v.D.get((i, q))
         if not n: continue
         held.append(q)
-        t = tiers.get((i, q), (None, {}))
-        rows.append({"q": lab(q), "revenue": n["rev"], "ebitda": n["ebitda"], "pat": n["pat"], "margin_pct": round(n["ebitda"] / n["rev"] * 100, 1), "verdict_v3": t[0], "pillars": {k: round(x) for k, x in t[1].items() if k in ("growth", "profit", "quality")}})
+        t = tiers.get((i, q), (None, {}, None))
+        rows.append({"q": lab(q), "revenue": n["rev"], "ebitda": n["ebitda"], "pat": n["pat"], "margin_pct": round(n["ebitda"] / n["rev"] * 100, 1), "verdict_v3": t[0], "pillars": t[1], "capped_by": t[2] if len(t) > 2 else None})
     calls = cc.get(d.get("scrip")) or cc.get("NSE:" + (d.get("sym") or "")) or []
     d["quarters"] = rows
     d["completeness"] = {"expected": [lab(q) for q in expect], "held": [lab(q) for q in expect if q in held], "missing": [{"q": lab(q), "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"} for q in expect if q not in held], "concalls_found": len(calls), "concalls_read": sum(1 for c in calls if c["read"]), "latest_concall": max([c["day"] for c in calls], default=None)}
@@ -41,7 +43,7 @@ def page(i):
     return d
 if __name__ == "__main__":
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 20
-    out = R + "company_pages/"; os.makedirs(out, exist_ok=True)
+    out = (os.environ.get("PAGES_OUT") or R + "company_pages") + "/"; os.makedirs(out, exist_ok=True)
     full = [i for i in ident if sum(1 for q in qs if (i, q) in v.D) >= 6 and (v.mc.get(i, {}).get("m") or 0) < 5000]
     full.sort(); pick = full[:: max(1, len(full) // n)][:n] if n else full
     idx = []
