@@ -1,0 +1,62 @@
+{
+ "isin": "INE0MB501011",
+ "name": "J.G.Chemicals Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31765_JGCHEM_2025_2026_A_6369272_07092026191459.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1024483,
+ "facts": {
+  "business": "J.G. Chemicals Limited manufactures zinc oxide and zinc sulphate through recycling chemistry, primarily serving the rubber and tyre industry which accounts for 85% of revenue.",
+  "segments": [
+   {
+    "name": "Rubber and Tyres",
+    "share_of_revenue_pct": 85
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Dahej greenfield plant (Phase 1)",
+    "amount_cr": 100,
+    "timeline": "Q3 FY27 commissioning"
+   },
+   {
+    "item": "Naidupeta brownfield debottlenecking",
+    "amount_cr": null,
+    "timeline": "By 2029"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "Together, the two fronts expand the Company's installed capacity by more than half by 2029.",
+    "metric": "Installed capacity expansion",
+    "value": "more than half",
+    "by_when": "2029"
+   },
+   {
+    "statement": "At full utilisation, the site has revenue potential of \u20b99,000 mn, close to nine times the capital required to build it.",
+    "metric": "Revenue potential at full utilisation (Dahej)",
+    "value": "\u20b99,000 mn",
+    "by_when": null
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Business concentration risk with 85% revenue from rubber and tyre sector",
+   "Geographic concentration risk with negligible supply to western India demand clusters",
+   "Execution risk on Dahej greenfield plant commissioning in Q3 FY27",
+   "Dependence on internal accruals for funding expansion with zero debt raised"
+  ],
+  "related_party_note": "Loan to subsidiary BDJ Oxides Pvt. Ltd. of \u20b9700.78 mn outstanding as at March 31, 2026 (100% of total loans). Guarantee of \u20b9250.00 mn outstanding for subsidiary. Investment in subsidiary of \u20b910.93 mn. Loan granted during year: \u20b9140.78 mn.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
