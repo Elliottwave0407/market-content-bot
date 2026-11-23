@@ -1517,3 +1517,32 @@
 23 18:13:32 ready 545009|Sep-26|consolidated kind=photo waited_min=0.0 tries=4 pdf_log=pdf current col SFC Environmental Technologies Ltd consolidated ok=True/3: revenue=1627.28, other_income=32.13, total_income=1660.66, total_expenses=1629.96, fi
 23 18:13:57 pdf rule reader SFC Environmental Technologies Ltd: rule: consolidated table incomplete missing ['pat'] n=6 | ocr: rule: filing mentions consolidated results but that table was not read
 23 18:14:24 pdf pdf current col SFC Environmental Technologies Ltd consolidated ok=True/3: revenue=1627.28, other_income=32.13, total_income=1660.66, total_expenses=1629.96, finance_costs=49.79, depreciation=53.54, pbt=31.24, tax=10.24, pat=21.0,
+23 18:29:47 seen 519285 Tarai Foods Ltd cat=Board Meeting early=True bse_time=23:59:10 dissem=23:59:10
+23 18:30:29 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:30:36 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.11
+23 18:30:36 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:31:12 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:31:12 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.11
+23 18:31:12 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:31:46 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:31:49 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
+23 18:31:52 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.29
+23 18:31:52 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:32:26 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:32:31 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
+23 18:32:35 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.29
+23 18:32:35 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:33:07 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:33:14 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
+23 18:33:18 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.29
+23 18:33:18 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:34:02 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:34:02 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
+23 18:34:02 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.29
+23 18:34:02 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:34:36 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:34:40 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
+23 18:34:44 pdf pdf current col Tarai Foods Ltd standalone ok=True/3: revenue=0.0, other_income=0.0, total_income=0.0, total_expenses=16.7, finance_costs=0.0, depreciation=3.5, pbt=-16.7, tax=0.0, pat=-16.7, eps=-0.29
+23 18:34:44 pdf pdf incomplete Tarai Foods Ltd standalone: missing ['ebitda'] - not posting from PDF
+23 18:35:16 pdf rule reader Tarai Foods Ltd: rule: column dates not found | ocr: rule: no results table page
+23 18:35:25 pdf nim reader Tarai Foods Ltd: ok (gemini: gemini skipped (repeat of same filing x2))
