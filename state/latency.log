@@ -1973,3 +1973,13 @@
 23 16:08:15 seen 545015 Carver Roboweld Ltd cat=Result early=False bse_time=21:37:45 dissem=21:37:45
 23 16:08:39 wait 545015 Carver Roboweld Ltd: numbers not yet on BSE
 23 16:10:33 pdf rule reader Carver Roboweld Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+23 16:11:36 pdf nim reader Carver Roboweld Ltd: nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: HTTP 503 on gemini-flash-lite-latest | results-key: HTTP 503 on gemini)
+23 16:11:36 pdf pdf read failed Carver Roboweld Ltd: HTTP 503 on gemini-flash-lite-latest | results-key: HTTP 503 on gemini-flash-lite-latest | concall-key: HTTP 503 on gemini-flash-lite-latest | vision-key: HTTP 429 (rate) on gemini-flash-lite-l
+23 16:13:05 pdf strong model retry did not help: timeout on gemini-3.5-flash (ReadTimeout) | results-key: tim
+23 16:13:11 pdf pdf quarter mismatch A.F. Enterprises Ltd
+23 16:13:41 pdf nim reader A.F. Enterprises Ltd: ok (gemini: gemini skipped (backoff after 429/503))
+23 16:13:41 pdf pdf unusable A.F. Enterprises Ltd: unit/date missing
+23 16:13:57 pdf rule reader Carver Roboweld Ltd: rule: header has no quarter columns | ocr: rule: no results table page
+23 16:14:23 pdf nim reader Carver Roboweld Ltd: nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [(' (gemini: gemini skipped (repeat of same filing x0))
+23 16:14:23 pdf pdf read failed Carver Roboweld Ltd: gemini skipped (repeat of same filing x0); nim nemotron-3-ultra-550b-a55b: 9 numbers not found in the filing text (possible invention): rejected e.g. [('
+23 16:15:57 pdf rule reader Carver Roboweld Ltd: rule: header has no quarter columns | ocr: rule: no results table page
