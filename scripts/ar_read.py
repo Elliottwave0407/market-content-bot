@@ -12,8 +12,13 @@ PROMPT = """You read excerpts of an Indian listed company's annual report. Retur
 Every number must be literally in the text. Amounts in Rs crore (convert from lakh/million if stated)."""
 SECS = ["management discussion", "business overview", "directors' report", "directors report", "independent auditor", "secretarial audit", "risks and concerns", "outlook", "order book", "capex", "capital expenditure"]
 def fetch(url):
-    r = requests.get(url, headers=H, timeout=120)
-    if r.status_code != 200 or len(r.content) < 5000: return None
+    urls = [url] + ([url.replace("AttachLive", "AttachHis")] if "AttachLive" in url else [])
+    r = None
+    for u in urls:
+        try: r = requests.get(u, headers=H, timeout=120)
+        except Exception: r = None; continue
+        if r.status_code == 200 and len(r.content) >= 5000: break
+    if r is None or r.status_code != 200 or len(r.content) < 5000: return None
     b = r.content
     if b[:2] == b"PK":
         z = zipfile.ZipFile(io.BytesIO(b)); n = [x for x in z.namelist() if x.lower().endswith(".pdf")]
@@ -51,12 +56,15 @@ done = n = fail = 0
 for r in recs:
     if n >= MAXN or time.time() - t0 > BUDGET: break
     fn = OUT + "%s_%d.json" % (r["isin"], FY)
-    if os.path.exists(fn): continue
+    if os.path.exists(fn):
+        try: old = json.load(open(fn))
+        except Exception: old = {}
+        if not (old.get("skip") and old.get("v") != 2): continue
     n += 1
     try:
         pdf = fetch(r["url"]); t = text_of(pdf) if pdf else ""
         ex = excerpt(t) if len(t) > 5000 else ""
-        if not ex: json.dump({"isin": r["isin"], "fy": FY, "src": r["url"], "skip": "no_text_or_unfetchable", "pdf_chars": len(t)}, open(fn, "w")); fail += 1; print(r["isin"], "skip no text"); continue
+        if not ex: json.dump({"isin": r["isin"], "fy": FY, "src": r["url"], "skip": "no_text_or_unfetchable", "v": 2, "pdf_chars": len(t)}, open(fn, "w")); fail += 1; print(r["isin"], "skip no text"); continue
         f = ask(ex)
         json.dump({"isin": r["isin"], "name": r["name"], "fy": FY, "src": r["url"], "model": MODEL, "pdf_chars": len(t), "facts": f}, open(fn, "w"), indent=1)
         done += 1 if f else 0; fail += 0 if f else 1; print(r["isin"], r["name"][:28], "ok" if f else "model-fail", "%ds" % (time.time() - t0))
