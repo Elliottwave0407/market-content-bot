@@ -10,7 +10,7 @@ H = {"User-Agent": "Mozilla/5.0", "Referer": "https://www.bseindia.com/"}
 PROMPT = """You read excerpts of an Indian listed company's annual report. Return ONLY JSON with these keys (null or [] when not stated; never guess):
 {"business":"one sentence what the company does","segments":[{"name":"","share_of_revenue_pct":null}],"capacity_or_capex":[{"item":"","amount_cr":null,"timeline":""}],"guidance_or_targets":[{"statement":"","metric":"","value":"","by_when":""}],"order_book_cr":null,"auditor":{"name":"","opinion":"unmodified|qualified|adverse|disclaimer","emphasis_or_qualification":""},"promoter_holding_pct":null,"promoter_pledge_pct":null,"employees":null,"subsidiaries_count":null,"key_risks":[""],"related_party_note":"","contingent_liabilities_cr":null,"dividend_per_share":null}
 Every number must be literally in the text. Amounts in Rs crore (convert from lakh/million if stated)."""
-SECS = ["management discussion", "business overview", "directors' report", "directors report", "independent auditor", "secretarial audit", "risks and concerns", "outlook", "order book", "capex", "capital expenditure"]
+SECS = ["management discussion", "business overview", "directors' report", "directors report", "independent auditor", "secretarial audit", "risks and concerns", "outlook", "order book", "capex", "capital expenditure", "shareholding pattern", "pledged", "encumbered"]
 def fetch(url):
     urls = [url] + ([url.replace("AttachLive", "AttachHis")] if "AttachLive" in url else [])
     r = None
