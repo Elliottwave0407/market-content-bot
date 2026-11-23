@@ -1939,3 +1939,7 @@
 23 14:26:01 pdf nim reader Bombay Coated And Special Steels Ltd: ok (gemini: HTTP 503 on gemini-flash-lite-latest | results-key: HTTP 503 on gemini)
 23 14:26:28 pdf rule reader Bombay Coated And Special Steels Ltd: rule: no results table page | ocr: rule: no results table page
 23 14:26:42 pdf pdf current col Bombay Coated And Special Steels Ltd standalone ok=True/3: revenue=28023.84, other_income=57.9, total_income=28081.74, total_expenses=27393.53, finance_costs=749.73, depreciation=344.43, pbt=688.21, tax=204.42, pat
+23 15:36:41 seen 538351 A.F. Enterprises Ltd cat=Board Meeting early=True bse_time=21:06:21 dissem=21:06:21
+23 15:36:45 pdf rule reader A.F. Enterprises Ltd: ok
+23 15:36:45 pdf pdf current col A.F. Enterprises Ltd consolidated ok=True/3: revenue=34.95, other_income=186.74, total_income=221.69, total_expenses=400.35, finance_costs=-0.17, depreciation=25.39, pbt=-178.6, tax=-2.68, pat=-175.92, eps=-0.52
+23 15:36:45 pdf pdf incomplete A.F. Enterprises Ltd consolidated: missing ['ebitda'] - not posting from PDF
