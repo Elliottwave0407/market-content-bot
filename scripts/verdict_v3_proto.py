@@ -29,7 +29,7 @@ def feats(i,q):
        'pat_y':g(c['pat'],y['pat']),'pat_pos':c['pat']>0,'pat_prev_pos':y['pat']>0,
        'eb_y':g(c['ebitda'],y['ebitda']),
        'oi_share':(c.get('oi') or 0)/c['pbt']*100 if c.get('pbt') and c['pbt']>0 else None,
-       'conv':c['pat']/c['ebitda']*100 if c['ebitda']>0 else None,'rev':c['rev'],'pat':c['pat'],'ebitda':c['ebitda'],'y_pat':y['pat'],'y_rev':y['rev']}
+       'conv':c['pat']/c['ebitda']*100 if c['ebitda']>0 else None,'pm_y':c['pat']/c['rev']*100-y['pat']/y['rev']*100 if y['rev'] else None,'rev':c['rev'],'pat':c['pat'],'ebitda':c['ebitda'],'y_pat':y['pat'],'y_rev':y['rev']}
     return f
 def pct(vals):
     s=sorted(vals); n=len(s)

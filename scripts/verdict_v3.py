@@ -23,7 +23,7 @@ def rate(f):
     growth = sum(gr) / len(gr)
     prof = lin(f["mg_y"], M) * 0.8 + (min(f["mg"], 25) / 25 * 100) * 0.2
     q = [lin(f["pat_y"], G)] if f["pat_y"] is not None else []
-    if f["conv"] is not None: q.append(lin(f["conv"], CV))
+    if f.get("pm_y") is not None: q.append(lin(f["pm_y"], M))
     if not q: return "Provisional", {}, "no profit base"
     qual = sum(q) / len(q)
     if f["oi_share"] is not None and f["oi_share"] > 40: qual *= 0.8
