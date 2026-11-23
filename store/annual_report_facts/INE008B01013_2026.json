@@ -1,1 +1,51 @@
-{"isin": "INE008B01013", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/96efb759-2c53-4f6f-a853-23000e5e9363.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE008B01013",
+ "name": "Aimco Pesticides Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/96efb759-2c53-4f6f-a853-23000e5e9363.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 800686,
+ "facts": {
+  "business": "Aimco Pesticides Limited is an Indian agrochemical company engaged in manufacturing technical-grade pesticides, formulations, and crop protection products.",
+  "segments": [
+   {
+    "name": "Technical Grade Agrochemicals",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Branded Formulations",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Bulk Formulations",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Trading",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Capital expenditure (Net of advances)",
+    "amount_cr": 0.075,
+    "timeline": "FY26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "C N K & Associates LLP",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [],
+  "related_party_note": "The Company has an exposure of \u20b9218.48 lakhs in the form of investment, advances and other receivable from its wholly owned subsidiary which is substantially more than its net worth.",
+  "contingent_liabilities_cr": 14.421,
+  "dividend_per_share": null
+ }
+}

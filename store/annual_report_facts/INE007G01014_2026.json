@@ -1,1 +1,43 @@
-{"isin": "INE007G01014", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3a0050d3-96e1-45ed-b4aa-786a42e13659.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE007G01014",
+ "name": "Mahasagar Travels Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3a0050d3-96e1-45ed-b4aa-786a42e13659.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 295096,
+ "facts": {
+  "business": "Mahasagar Travels Ltd operates in travel services, petrol retail, and real estate/infrastructure development in Gujarat.",
+  "segments": [
+   {
+    "name": "Travels unit",
+    "share_of_revenue_pct": 56.9
+   },
+   {
+    "name": "Petrol unit",
+    "share_of_revenue_pct": 43.1
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Fluctuation in petroleum product prices impacting profitability",
+   "Currency fluctuation (USD/INR) affecting costs",
+   "Real estate sector slowdown and regulatory curbs",
+   "Increasing competition in travel and tourism",
+   "Government policy changes affecting tourism and real estate"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

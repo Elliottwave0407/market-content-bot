@@ -1,1 +1,52 @@
-{"isin": "INE005C01017", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/db5b0685-d85b-4a96-8b0e-f7e3185997ed.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE005C01017",
+ "name": "RTS Power Corporation Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/db5b0685-d85b-4a96-8b0e-f7e3185997ed.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 835448,
+ "facts": {
+  "business": "RTS Power Corporation Limited is engaged in the manufacturing of GI Wires and Strips through its wholly owned subsidiary Reengus Wires Private Limited, and operates in the power sector with focus on transformer segments and export markets.",
+  "segments": [
+   {
+    "name": "Manufacturing of GI Wires and Strips",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Machinery",
+    "amount_cr": 0.14,
+    "timeline": "As on balance sheet date"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "The Company expects the capacity enhancement and downstream expansion being undertaken by its wholly owned subsidiary, Reengus Wires Private Limited, to support future growth, subject to market conditions and improved capacity utilisation.",
+    "metric": "Revenue growth",
+    "value": "Not quantified",
+    "by_when": "Future periods"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 1,
+  "key_risks": [
+   "Lower execution of orders leading to revenue decline",
+   "Competitive market environment",
+   "Dependence on subsidiary Reengus Wires Private Limited for future growth",
+   "Trade receivables with significant amounts outstanding for considerable periods",
+   "Inventory valuation risk due to slow-moving and older inventory items"
+  ],
+  "related_party_note": "Transactions with related parties include: Subsidiary Reengus Wires Private Limited (interest income Rs 9.00 lakhs, sales Rs 15.49 lakhs, rental income Rs 15.75 lakhs, purchases Rs 360.30 lakhs); Key Management Personnel remuneration (Rajendra Bhutoria Rs 21.00 lakhs, Abhay Bhutoria Rs 39.00 lakhs, Siddharth Bhutoria Rs 46.10 lakhs); Other related parties including Suchir Industries Private Limited (rent paid Rs 26.46 lakhs, sales Rs 356.88 lakhs), Bhutoria Brothers Private Limited (rent paid Rs 0.48 lakhs), and others.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

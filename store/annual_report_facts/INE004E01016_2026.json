@@ -1,1 +1,52 @@
-{"isin": "INE004E01016", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/462b6f60-13d3-4e47-a3a2-ec47d0f5eb21.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE004E01016",
+ "name": "Span Divergent Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/462b6f60-13d3-4e47-a3a2-ec47d0f5eb21.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 695498,
+ "facts": {
+  "business": "Span Divergent Limited operates in the food, agriculture and life-sciences sectors through its subsidiaries and joint venture, and provides management consultancy and strategic support to its investee entities.",
+  "segments": [
+   {
+    "name": "Dryfruit Factory LLP (Raw Cashew Processing)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Biospan Scientific LLP (Life-science consumables)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Biospan Contamination Control Solutions Private Limited (Joint Venture)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Aranya Consulting and Biotech LLP (Management Consultancy)",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 6,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Volatility in raw-material prices",
+   "Adverse movements in foreign currencies",
+   "Dependence on imported products in certain businesses",
+   "Competitive pressure",
+   "Risk that business-development initiatives may take longer than expected to become profitable",
+   "Business, commodity-price, foreign-exchange, credit, liquidity, and operational risks"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

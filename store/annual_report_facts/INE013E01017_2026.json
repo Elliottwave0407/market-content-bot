@@ -1,1 +1,51 @@
-{"isin": "INE013E01017", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7a76cd16-b237-48f0-816b-fc441dc8b775.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE013E01017",
+ "name": "Panasonic Carbon India Company Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7a76cd16-b237-48f0-816b-fc441dc8b775.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 603595,
+ "facts": {
+  "business": "Panasonic Carbon India Co. Limited manufactures and sells carbon rods and carbon electrodes used as key components in dry cell batteries.",
+  "segments": [
+   {
+    "name": "Carbon Rod",
+    "share_of_revenue_pct": 100
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "The Directors assure that all steps are being taken by the Company to achieve greater growth in the coming years, in proportion to the growth of the Dry Cell Battery Industry.",
+    "metric": "Growth",
+    "value": "In proportion to Dry Cell Battery Industry growth",
+    "by_when": "Coming years"
+   },
+   {
+    "statement": "Your Company is also hopeful of improving its Domestic and Export sales by improving its competitive power compared to Chinese and Indonesia manufacturers by continually putting efforts in developing cost-effective new grade carbon rods.",
+    "metric": "Domestic and Export Sales",
+    "value": "Improve competitive power and maintain current year's level",
+    "by_when": "Coming years"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Revenue recognition risk around reporting period due to focus on revenue as key performance indicator",
+   "Competition from Chinese and Indonesian manufacturers",
+   "Steep increase in raw material costs derived from natural resources",
+   "Adverse conditions in the Dry Cell Battery Industry"
+  ],
+  "related_party_note": "Foreign exchange used includes Royalty, Dividend, Brand License Fee etc. (INR 8.39 crores)",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": 12
+ }
+}

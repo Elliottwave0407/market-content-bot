@@ -1,1 +1,48 @@
-{"isin": "INE00IY01012", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b18e3911-6fd2-4907-97e0-8c730175fa29.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE00IY01012",
+ "name": "Deep Polymers Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b18e3911-6fd2-4907-97e0-8c730175fa29.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 728741,
+ "facts": {
+  "business": "Deep Polymers Limited manufactures and sells chemical products including Antifab Filler and Master Batch.",
+  "segments": [
+   {
+    "name": "ANTIFAB FILLER",
+    "share_of_revenue_pct": 17.5
+   },
+   {
+    "name": "MASTER BATCH",
+    "share_of_revenue_pct": 79.4
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Capital Expenditure - Others",
+    "amount_cr": 0.1255,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "S.N. SHAH & ASSOCIATES",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualified Opinion on standalone financial statements"
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 0,
+  "key_risks": [
+   "economic conditions",
+   "changes in Government regulations",
+   "amendments to tax laws",
+   "other internal and external factors"
+  ],
+  "related_party_note": "Transactions with associate companies Deep Polyalloy Limited and Deep Additives Private Limited for purchase and sale of raw materials, stores, packing materials, coal, chemicals, property, plant & equipment items (excluding GST). Purchase from Deep Polyalloy: Rs 3.91 Lakhs; Purchase from Deep Additives: Rs 25.55 Lakhs; Sale to Deep Polyalloy: Rs 1,167.10 Lakhs; Sale to Deep Additives: Rs 466.38 Lakhs.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

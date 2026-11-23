@@ -1,1 +1,41 @@
-{"isin": "INE012E01035", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44fe2014-3a26-4823-b1f5-a39187cdfbeb.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE012E01035",
+ "name": "Diana Tea Company Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44fe2014-3a26-4823-b1f5-a39187cdfbeb.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 582032,
+ "facts": {
+  "business": "Diana Tea Company Limited is engaged in tea plantation and manufacturing operations across its tea estates.",
+  "segments": [
+   {
+    "name": "Tea",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "B. NATH & CO",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Delayed compliance with SEBI LODR Regulation 30 regarding timely disclosure of penalty imposition by Income Tax Department"
+  ],
+  "related_party_note": "All related party transactions were in ordinary course of business and on arm's length basis; no materially significant transactions with potential conflict of interest; omnibus approval obtained for foreseen repetitive transactions.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

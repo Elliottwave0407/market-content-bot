@@ -1,1 +1,63 @@
-{"isin": "INE01B501018", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d7fbc459-8946-492f-b28f-3c13431037af.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE01B501018",
+ "name": "Add-Shop ERetail Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/d7fbc459-8946-492f-b28f-3c13431037af.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 394432,
+ "facts": {
+  "business": "Add Shop E-Retail Limited operates in the distribution and retail of organic fertilizers, animal feed supplements, Ayurveda, feminine hygiene, personal care, books & stationery, and household products.",
+  "segments": [
+   {
+    "name": "Organic Fertilizers",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Animal Food Supplements / Feed",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Ayurveda",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Feminine Hygiene",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Personal Care",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Books & Stationery",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Household Requirements",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s. K M Chauhan & Associates, Chartered Accountants, Rajkot",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Key audit matters: barter activity with customers (selling animal feed and acquiring food grain); trade receivables at 72.24% of revenue from operations indicating high debtor holding period; distribution commission/incentive/bonus of Rs.23,22,86,684.19 booked on total basis without party-wise verification; SEBI interim order cum show cause notice under Sections 11(1), 11(4), 11(4A), 11B(1), 11B(2) of SEBI Act, 1992."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 53,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "High trade receivables (72.24% of revenue from operations) indicating extended debtor holding period",
+   "Distribution commission/incentive/bonus expenses booked on aggregate basis without party-wise verification",
+   "SEBI interim order cum show cause notice under Sections 11(1), 11(4), 11(4A), 11B(1), 11B(2) of SEBI Act, 1992",
+   "Barter transactions involving sale of animal feed and acquisition of food grain",
+   "Competition, price sensitivity, and fluctuations in input and transportation costs"
+  ],
+  "related_party_note": "Material related party transactions approved with M/s. Dada Organics Limited for sale/purchase/supply of goods, property transactions, leasing, services, agent appointments, office/place of profit appointments, and underwriting subscriptions.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

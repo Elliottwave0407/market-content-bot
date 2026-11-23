@@ -1,1 +1,46 @@
-{"isin": "INE013V01011", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ceead317-bfd1-49a3-baa0-9b2cc8626cbc.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE013V01011",
+ "name": "Shelter Pharma Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ceead317-bfd1-49a3-baa0-9b2cc8626cbc.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 413766,
+ "facts": {
+  "business": "Shelter Pharma Limited manufactures and markets herbal and ayurvedic formulations for human healthcare and veterinary segments, with a manufacturing facility in Himmatnagar, Gujarat, and exports to multiple countries.",
+  "segments": [
+   {
+    "name": "Human Healthcare",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Veterinary Healthcare",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Manufacturing facility at Himmatnagar",
+    "amount_cr": null,
+    "timeline": ""
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 120,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Revenue recognition risk due to significant year-on-year growth and volume of transactions",
+   "Inventory valuation risk due to significant build-up in raw material stock and management estimation involved"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

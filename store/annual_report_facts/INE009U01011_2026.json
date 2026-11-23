@@ -1,1 +1,37 @@
-{"isin": "INE009U01011", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/31dd50dc-3080-4509-9d29-05939fd98311.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE009U01011",
+ "name": "Ghushine Fintrrade Ocean Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/31dd50dc-3080-4509-9d29-05939fd98311.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 171313,
+ "facts": {
+  "business": "The company operates in the textile industry.",
+  "segments": [
+   {
+    "name": "Textile",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Board of Directors not duly constituted with proper balance of Executive, Non-Executive and Independent Directors"
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Uncertainty of raw material prices",
+   "Government policies detrimental to growth and profitability",
+   "Board of Directors not duly constituted with proper balance"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

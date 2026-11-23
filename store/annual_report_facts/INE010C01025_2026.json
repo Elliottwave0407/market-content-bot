@@ -1,1 +1,47 @@
-{"isin": "INE010C01025", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/33116a08-92b2-4df2-a14f-6589cb88b796.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE010C01025",
+ "name": "Swiss Military Consumer Goods Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/33116a08-92b2-4df2-a14f-6589cb88b796.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1158240,
+ "facts": {
+  "business": "Swiss Military Consumer Goods Limited designs, manufactures, and distributes travel, work, mobility, and lifestyle products across India through a network of distributors, multi-brand outlets, and e-commerce platforms.",
+  "segments": [
+   {
+    "name": "Distribution",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Manufacturing",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Retail",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "NCR Manufacturing Facility",
+    "amount_cr": 56.5,
+    "timeline": "FY26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "AM & Associates",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
