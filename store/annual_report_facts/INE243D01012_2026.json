@@ -1,0 +1,45 @@
+{
+ "isin": "INE243D01012",
+ "name": "BF Utilities Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f4a9c95f-927b-47f9-9105-347189cda557.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1053813,
+ "facts": {
+  "business": "BF Utilities Limited generates wind power and holds investments in infrastructure subsidiaries.",
+  "segments": [
+   {
+    "name": "Wind Power Generation",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "The Company is taking all efforts to improve wind power generation, reduce cost and improve realization.",
+    "metric": "Wind power generation, cost, realization",
+    "value": "Improve",
+    "by_when": "Current year"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "adverse",
+   "emphasis_or_qualification": "Adverse opinion on consolidated financial statements due to inability to obtain information from component auditors of three subsidiaries (NHDL, NICE, NECE) and possible effects on group functioning; Adverse opinion on internal financial controls over consolidated financial statements."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 7,
+  "subsidiaries_count": 4,
+  "key_risks": [
+   "Highly regulated environment; changes in government policies may adversely affect operations.",
+   "Dependence on service provider for O&M of wind turbines; pending litigations with earlier service providers.",
+   "Single customer for sale of power.",
+   "Arbitration notice from investors of step-down subsidiary NECE alleging failure to provide exit."
+  ],
+  "related_party_note": "No funds advanced/loaned/invested to intermediaries for benefit of ultimate beneficiaries; no funds received from funding parties for such purposes (Notes 36a and 36b).",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

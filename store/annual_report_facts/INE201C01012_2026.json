@@ -1,0 +1,65 @@
+{
+ "isin": "INE201C01012",
+ "name": "Richfield Financial Services Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5654dfb4-b248-4ab2-82c2-0a4d73ec23e5.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 446875,
+ "facts": {
+  "business": "Richfield Financial Services Limited is an NBFC registered with RBI, primarily engaged in lending activities with a growing focus on Gold Loans and other retail lending products.",
+  "segments": [
+   {
+    "name": "Gold Loans",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Personal Loans and other loan products",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Branch network expansion",
+    "amount_cr": null,
+    "timeline": "FY 2025-26 (from 19 to 50 branches, including 9 in Bangalore)"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "Working towards achieving Gold Loan AUM of \u20b9150 crore",
+    "metric": "Gold Loan AUM",
+    "value": "\u20b9150 crore",
+    "by_when": "FY 2026-27"
+   },
+   {
+    "statement": "Exploring a public issue of Non-Convertible Debentures",
+    "metric": "NCD public issue",
+    "value": "up to \u20b950 crore",
+    "by_when": "FY 2026-27 (subject to approvals)"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Emphasis of Matter on Note 2.(v) regarding interest income recognition on NPA accounts"
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Increasing competition from banks, NBFCs and fintech companies",
+   "Changes in regulatory and compliance requirements",
+   "Changes in interest rates and borrowing costs",
+   "Macroeconomic uncertainties and inflationary pressures",
+   "Credit quality and collection-related risks",
+   "Volatility in gold prices and its impact on the value of collateral",
+   "Operational and technology-related risks",
+   "Liquidity and funding-related risks"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "isin": "INE162A01010",
+ "name": "Gujarat Industries Power Company Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30546_GIPCL_2025_2026_A_3727084_24082026155138.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 794087,
+ "facts": {
+  "business": "Gujarat Industries Power Company Limited generates and sells electricity from thermal (lignite and gas), solar, and wind power plants in Gujarat, India.",
+  "segments": [
+   {
+    "name": "Non-Renewable (Thermal & Gas)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Renewable (Solar & Wind)",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "750 MW lignite-based thermal power project (Valia Mine blocks E, F, G)",
+    "amount_cr": null,
+    "timeline": "EPC tender floated June 2026; land in possession; consultants appointed; site enabling works completed"
+   },
+   {
+    "item": "165 MW Station-II repurposing as Long Duration BESS (Vanadium Redox Flow Battery) 20 MW/120 MWh pilot",
+    "amount_cr": null,
+    "timeline": "EPC tender process underway; GUVNL in-principle approval under Section-62"
+   },
+   {
+    "item": "SLPP Phase-I (2x125 MW) Renovation & Modernization and Life Extension (10 years)",
+    "amount_cr": null,
+    "timeline": "Order placed on BHEL April 2026; implementation planned FY 2028-29 (first unit) and FY 2029-30 (second unit)"
+   },
+   {
+    "item": "600 MW Solar Plant, Khavda",
+    "amount_cr": null,
+    "timeline": "Operational (as per annual report cover)"
+   },
+   {
+    "item": "75 MW Solar Plant, Vastan",
+    "amount_cr": null,
+    "timeline": "Operational (as per annual report cover)"
+   },
+   {
+    "item": "50.40 MW Wind Plant, Kuchhdi",
+    "amount_cr": null,
+    "timeline": "Operational (as per annual report cover)"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "GUVNL granted in-principle approval for 25-year PPA for 750 MW lignite project",
+    "metric": "PPA tenure",
+    "value": "25 years",
+    "by_when": "August 2025 approval"
+   },
+   {
+    "statement": "Renovation & Modernization of SLPP Phase-I units to extend life by 10 years",
+    "metric": "Life extension",
+    "value": "10 years",
+    "by_when": "FY 2028-29 (first unit), FY 2029-30 (second unit)"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Dalwadi & Associates",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "The Statutory Auditors have not reported any qualifications/adverse observations."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 461,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "High capital intensity and long gestation periods (4-5 years construction, 25+ years operation)",
+   "Macroeconomic factors: economic growth, interest rates, political/economic environment",
+   "Transition from regulated to competitive regime increasing cost consciousness",
+   "Dependence on domestic market (Gujarat) for entire revenue",
+   "Adverse changes in government policies, regulations, taxes, or removal of incentives",
+   "Gas-based generation unviable; Vadodara gas stations non-operational",
+   "High debt financing required for proposed capacity addition; need for increased bank/insurance exposure limits",
+   "AT&C losses of state utilities affecting their ability to pay",
+   "Ageing thermal assets and deteriorating lignite quality requiring R&M"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
