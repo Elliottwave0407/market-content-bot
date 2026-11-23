@@ -41,3 +41,10 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -q -m "Annual report facts"
           for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin main && break; sleep 4; done
+      - name: Hand over to the next engine (one NVIDIA engine at a time)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "${{ github.event.inputs.dry || '1' }}" = "1" ] && { echo "dry run: no chaining"; exit 0; }
+          bash scripts/next_engine.sh ar-read
