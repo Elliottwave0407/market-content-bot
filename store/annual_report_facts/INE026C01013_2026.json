@@ -1,1 +1,52 @@
-{"isin": "INE026C01013", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c22567cd-c560-44d9-84a7-2f187fd6792f.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE026C01013",
+ "name": "NDA Securities Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c22567cd-c560-44d9-84a7-2f187fd6792f.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 641534,
+ "facts": {
+  "business": "NDA Securities Limited is a SEBI-registered, BSE-listed financial services institution offering stock brokerage, mutual fund distribution, depository participant services, and proprietary trading across India's capital markets.",
+  "segments": [
+   {
+    "name": "Stock brokerage services",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Mutual fund distribution commission income",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Depository participant services",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Proprietary trading activities",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s J M and Associates (Chartered Accountants)",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Revenue recognition complexity across multiple streams including proprietary trading",
+   "Identification of distinct performance obligations in integrated service arrangements",
+   "Appropriateness of accounting and presentation of proprietary trading transactions on gross basis",
+   "Completeness and accuracy of mutual fund trail commission accruals",
+   "Measurement and presentation of income from proprietary trading including valuation of closing inventory",
+   "Identification, authorisation and disclosure of related party transactions"
+  ],
+  "related_party_note": "Key audit matter identified regarding identification, authorisation and disclosure of related party transactions",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

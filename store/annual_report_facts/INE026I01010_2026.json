@@ -1,1 +1,46 @@
-{"isin": "INE026I01010", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0b75cebc-42da-4364-b91d-a4aa34c87446.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE026I01010",
+ "name": "Bhagawati Oxygen Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0b75cebc-42da-4364-b91d-a4aa34c87446.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 284069,
+ "facts": {
+  "business": "Bhagawati Oxygen Limited is primarily a gas manufacturing company supplying oxygen gas on an exclusive supply scheme basis, and is also engaged in wind power generation, specialty gases, and cylinders.",
+  "segments": [
+   {
+    "name": "Industrial Gases (Oxygen)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Wind Power",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Specialty Gases and Cylinders",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Demand from customers",
+   "Prices of basic materials (molecular sieves, power)",
+   "Economic conditions affecting demand/supply",
+   "Changes in Government regulations, tax laws and other statutes"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": 0.39375,
+  "dividend_per_share": null
+ }
+}

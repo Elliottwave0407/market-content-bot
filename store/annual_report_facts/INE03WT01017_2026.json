@@ -1,1 +1,58 @@
-{"isin": "INE03WT01017", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0512504c-b4a3-4cc6-a360-351505a305f7.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE03WT01017",
+ "name": "Roopshri Resorts Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0512504c-b4a3-4cc6-a360-351505a305f7.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 289424,
+ "facts": {
+  "business": "Roopshri Resorts Limited is primarily engaged in the business of hoteliering, operating Hotel Alexander in Matheran, Maharashtra, with a focus on delivering hospitality services.",
+  "segments": [
+   {
+    "name": "Hoteliering",
+    "share_of_revenue_pct": 100
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Purchase of property, plant and equipment (renovation and expansion at Hotel Alexander)",
+    "amount_cr": 5.0439,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "The Company expects the substantial capital expenditure undertaken in FY 2025-26 to translate progressively into higher operating capacity, occupancy and revenue in the coming financial years, which management expects, over time, to improve operating leverage and profitability metrics including Return on Capital Employed and Return on Net Worth from their FY 2025-26 levels.",
+    "metric": "Return on Capital Employed and Return on Net Worth",
+    "value": "improve from FY 2025-26 levels",
+    "by_when": "coming financial years"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "JNG & CO. LLP",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Constant need to meet and exceed guest service expectations while balancing room inventory against demand",
+   "Attracting, training and retaining skilled hospitality personnel, particularly at managerial and supervisory levels",
+   "Sensitivity to macro-economic conditions including fluctuations in discretionary consumer spending on travel",
+   "Changes in governmental regulation affecting wages and operating costs",
+   "Movements in construction costs, interest rates and real estate taxes affecting expansion plans",
+   "Increase in borrowings and finance costs undertaken to bridge-fund capital expenditure",
+   "Intense competition from OTAs and alternate stays",
+   "Economic and currency volatility",
+   "Rising operating and compliance costs",
+   "Climate and environmental risk exposure",
+   "Evolving consumer preferences"
+  ],
+  "related_party_note": "Unsecured loan from a director included in short-term borrowings (Rs. 97.84 lakhs previous year, reduced to Rs. 5.47 lakhs as at March 31, 2026 after repayment of Rs. 92.37 lakhs during the year).",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

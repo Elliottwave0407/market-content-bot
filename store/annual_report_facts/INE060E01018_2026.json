@@ -1,1 +1,47 @@
-{"isin": "INE060E01018", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/19eaf598-c890-4a4e-9957-c52a33bae371.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE060E01018",
+ "name": "Kemp & Company Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/19eaf598-c890-4a4e-9957-c52a33bae371.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 320263,
+ "facts": {
+  "business": "Kemp & Company Limited operates in real estate (letting out properties), trading of hard and soft luggage products, and investments.",
+  "segments": [
+   {
+    "name": "Real Estate",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Trading",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Capital Expenditure",
+    "amount_cr": 4.39568,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Suresh Surana & Associates",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 5,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Valuation uncertainty of unquoted investments",
+   "Credit risk from trade receivables and financial assets",
+   "Liquidity risk from financial liabilities"
+  ],
+  "related_party_note": "Transactions with holding company Piramal Vibhuti Investments Ltd (property income, maintenance charges, expense recovery, property tax recovery), Managing Director Mrs. Shalini Dilip Piramal (short-term benefits), VIP Industries Ltd (purchase of goods, rent income), CFO Vikram Somani (short-term benefits), and Company Secretary Karan Gudhka (short-term benefits).",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

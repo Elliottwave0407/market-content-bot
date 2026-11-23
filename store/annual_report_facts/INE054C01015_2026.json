@@ -1,1 +1,43 @@
-{"isin": "INE054C01015", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b2447a3d-6522-45d1-8622-5f24c070e3cd.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE054C01015",
+ "name": "Waterbase Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/b2447a3d-6522-45d1-8622-5f24c070e3cd.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 957164,
+ "facts": {
+  "business": "The Waterbase Limited is engaged in aquaculture operations including shrimp feed manufacturing, shrimp processing, and export of shrimp products.",
+  "segments": [
+   {
+    "name": "Shrimp Feed",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Shrimp Processing and Export",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s Deloitte Haskins & Sells LLP, Chartered Accountants",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 1,
+  "key_risks": [
+   "Industry headwinds in aquaculture sector",
+   "Customs duty demand risk",
+   "Dependence on export markets",
+   "Fluctuations in raw material prices",
+   "Regulatory compliance risks in fisheries and aquaculture"
+  ],
+  "related_party_note": "All related party transactions during the financial year were in the ordinary course of business and on an arm's length basis. No materially significant related party transactions were entered with promoters, directors, KMPs or other persons that may have potential conflict with company interests. Transactions are reviewed quarterly by Audit Committee with omnibus approval for certain contracts.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

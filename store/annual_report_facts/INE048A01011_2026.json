@@ -1,1 +1,34 @@
-{"isin": "INE048A01011", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f2e47cd0-101a-445d-a2b1-3c954c174265.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE048A01011",
+ "name": "Hindustan Organic Chemicals Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f2e47cd0-101a-445d-a2b1-3c954c174265.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1257022,
+ "facts": {
+  "business": "Hindustan Organic Chemicals Limited (HOCL) is a Central Public Sector Enterprise engaged in the manufacturing of organic chemicals.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Emphasis of Matters: 1) Loan of Rs. 453.01 lakhs to subsidiary with interest not charged since 2023-24 due to non-payment; 2) Board composition non-compliance with Companies Act 2013 and SEBI LODR; 3) Status of implementation of Government approved restructuring plan."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Non-compliance with SEBI LODR Regulations leading to fines from BSE",
+   "Board composition not in compliance with Companies Act 2013 and SEBI LODR",
+   "Subsidiary loan default and interest non-charging since 2023-24",
+   "Implementation risks of Government approved restructuring plan",
+   "Continuous losses leading to no transfer to reserves"
+  ],
+  "related_party_note": "Loan advanced to subsidiary amounting to Rs. 453.01 lakhs at interest rate 10.25% to 14.50%; interest charging stopped from 2023-24 due to non-payment; subsidiary repaid Rs. 1,075.05 lakhs interest and Rs. 286.98 lakhs principal during the year.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

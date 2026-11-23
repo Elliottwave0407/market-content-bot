@@ -1,1 +1,32 @@
-{"isin": "INE058I01013", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/86e12f8e-6240-48e0-af7e-c2de296f12fc.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE058I01013",
+ "name": "Lactose India Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/86e12f8e-6240-48e0-af7e-c2de296f12fc.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 515261,
+ "facts": {
+  "business": "Lactose (India) Limited is a company with a registered office in Savli, Vadodara, Gujarat, engaged in business operations requiring significant IT systems (TCSiON) for daily transaction processing.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Key Audit Matter: Information Technology and General Controls - The Company is dependent on its IT systems known as TCSiON due to significant daily transactions across multiple systems. Testing of general computer controls of IT systems used in financial reporting was considered a key audit matter."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 167,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Dependence on IT systems (TCSiON) for significant daily transaction processing across multiple discrete systems",
+   "Risk of potential fraud or errors from changes to applications and data",
+   "Pervasive use of IT systems in financial reporting"
+  ],
+  "related_party_note": "Approval of Related Party Transactions is proposed as Special Business item 5 in the AGM notice, pursuant to Section 188 of Companies Act, 2013 and Regulation 23 of SEBI LODR Regulations.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

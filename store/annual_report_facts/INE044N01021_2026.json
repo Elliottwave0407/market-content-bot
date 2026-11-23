@@ -1,1 +1,58 @@
-{"isin": "INE044N01021", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/27d01796-a687-46b4-8244-92782153c400.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE044N01021",
+ "name": "Emerald Leisures Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/27d01796-a687-46b4-8244-92782153c400.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 655124,
+ "facts": {
+  "business": "Emerald Leisures Limited operates a standalone hospitality property in Chembur, Mumbai, offering rooms, multi-cuisine pure vegetarian restaurants, banquets, and club memberships, while also developing a real estate division with projects in Chembur and Mahim.",
+  "segments": [
+   {
+    "name": "Hospitality",
+    "share_of_revenue_pct": 100
+   },
+   {
+    "name": "Real Estate",
+    "share_of_revenue_pct": 0
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Real estate segment investments",
+    "amount_cr": 35.61,
+    "timeline": "As on 31st March, 2026"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "The Company is confident that the division will start showing results from FY 2026-27.",
+    "metric": "Real estate segment revenue",
+    "value": "Not quantified",
+    "by_when": "FY 2026-27"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/S P G Bhagwat LLP",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Emphasis of Matter on Note No. 36 regarding impairment assessment of non-financial assets; management believes no impairment is required. Opinion not modified."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Slowdown in India's economic growth",
+   "Inflation",
+   "War",
+   "Change in Government Regulations",
+   "Tax laws",
+   "Litigations",
+   "Labour relations"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

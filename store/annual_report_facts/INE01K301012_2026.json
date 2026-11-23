@@ -1,1 +1,34 @@
-{"isin": "INE01K301012", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6c94b429-3104-4c9c-9edc-31d1c6c18064.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE01K301012",
+ "name": "Harish Textile Engineers Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6c94b429-3104-4c9c-9edc-31d1c6c18064.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 683530,
+ "facts": {
+  "business": "Harish Textile Engineers Limited is engaged in the business of textile engineering.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "K. M. Swadia & Co.",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualified opinion due to: (a) default in redemption of NCDs (Series III and IV) and receipt of Event of Default notice from debenture trustee; (b) inability to validate interest liability computation for MSME vendors; (c) non-quantification of impact of non-reversal of input tax credit for suppliers unpaid beyond 180 days. Material uncertainty related to going concern due to negative net working capital of INR 1,649.25 Lakhs."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 0,
+  "key_risks": [
+   "Default on Non-Convertible Debentures (Series III and IV) and Event of Default notice from debenture trustee",
+   "Negative net working capital of INR 1,649.25 Lakhs indicating liquidity crunch",
+   "Unquantified interest liability for MSME vendors under MSMED Act",
+   "Non-reversal of input tax credit for suppliers unpaid beyond 180 days under CGST Act",
+   "Ongoing litigation: NCLT Petition No. 128 of 2022 with stay on proceedings"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

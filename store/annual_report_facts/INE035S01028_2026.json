@@ -1,1 +1,56 @@
-{"isin": "INE035S01028", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44e38e3a-1d69-4cfc-b2ef-4be18ab7bab1.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE035S01028",
+ "name": "POCL Enterprises Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/44e38e3a-1d69-4cfc-b2ef-4be18ab7bab1.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1362060,
+ "facts": {
+  "business": "POCL Enterprises Limited (POEL) is engaged in metal manufacturing, including lead metal, zinc metal, and PVC additives, with operations in domestic and international markets.",
+  "segments": [
+   {
+    "name": "Lead Metal",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Zinc Metal",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "PVC Additives",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Lead refining capacity increase",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "CNGSN & Associates LLP",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "No qualifications, reservations or adverse remarks in Standalone and Consolidated Auditor's Report for FY 2025-26. Auditor resigned effective August 14, 2026; R K C G & Associates LLP appointed as new Statutory Auditors."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 581,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Commodity price volatility (lead, zinc, other metals)",
+   "Currency fluctuations due to import/export operations",
+   "Commodity inflation impacting production costs and margins",
+   "Increasing competition from organized and unorganized players",
+   "Procurement and supply chain disruptions",
+   "Technology obsolescence",
+   "Cyber security and IT risks",
+   "Pandemic-related supply chain and demand deterioration"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

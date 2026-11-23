@@ -1,1 +1,33 @@
-{"isin": "INE043R01016", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6b549853-7f1a-4fc1-a38f-fca90c3ff0a3.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE043R01016",
+ "name": "Jyot International Marketing Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6b549853-7f1a-4fc1-a38f-fca90c3ff0a3.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 386970,
+ "facts": {
+  "business": "Jyot International Marketing Limited is a Non-Banking Financial Company (NBFC) focused on financial inclusion and providing affordable credit to customers in the lower half of the socio-economic pyramid.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s. Labadiya & Mehta",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualification: 1) Total interest income of Rs. 2,77,96,270 booked on Loans & Advances, but only Rs. 59,05,717 recovered during FY 2025-26. 2) Tax Deducted at Source amounting to Rs. 59,58,246 for FY 2025-26 not deposited. Emphasis of Matter: Income Tax Department issued Assessment Order for FY 2021-22 raising demand of Rs. 50,23,17,478; company filed appeal, no provision made."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Low recovery of interest income on loans and advances (only ~21% recovered)",
+   "Non-deposit of TDS amounting to Rs. 59.58 lakh",
+   "Contingent tax liability of Rs. 502.32 crore for FY 2021-22 under appeal",
+   "Significant judgment required in ECL provisioning for loan impairment"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": 502.32,
+  "dividend_per_share": null
+ }
+}

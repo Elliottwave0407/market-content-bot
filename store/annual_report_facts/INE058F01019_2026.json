@@ -1,1 +1,62 @@
-{"isin": "INE058F01019", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6d8704d5-097f-4310-9aaf-aa5f96ddb30d.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE058F01019",
+ "name": "Alufluoride Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6d8704d5-097f-4310-9aaf-aa5f96ddb30d.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 787355,
+ "facts": {
+  "business": "Alufluoride Limited manufactures and sells Aluminium Fluoride (AlF3) and operates a captive green solar energy plant.",
+  "segments": [
+   {
+    "name": "Aluminium Fluoride",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Captive solar capacity expansion",
+    "amount_cr": null,
+    "timeline": "During FY 2025-26, added 1.1 MW to existing 3 MW"
+   },
+   {
+    "item": "Term loan for expansion of Aluminium Fluoride production facilities",
+    "amount_cr": 20.22,
+    "timeline": "Sanctioned during FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [
+   {
+    "statement": "Exploring a new project to manufacture Alumina Hydrate for raw material security and as a separate vertical",
+    "metric": "Project initiation",
+    "value": "Objects of the Company amended, shareholders consented via postal ballot",
+    "by_when": "20th April 2025"
+   },
+   {
+    "statement": "Exploring other overseas and domestic projects in Aluminium Fluoride, transport of raw materials through Electric Vehicles, fluorine derivatives and value-added products from Silica",
+    "metric": "Project exploration",
+    "value": "Multiple areas",
+    "by_when": "Ongoing"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Key Audit Matter: Verification of capital work in progress and related capitalization workings & estimation of decommissioning and restoration provision on leased land"
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 1,
+  "key_risks": [
+   "Diminution in value of investment in wholly owned subsidiary in Singapore",
+   "Dependence on raw material supply (Hydrofluosilicic Acid) from limited sources",
+   "Capital work in progress verification and capitalization challenges",
+   "Decommissioning and restoration provision estimation on leased land"
+  ],
+  "related_party_note": "Details of related party transactions: Nil",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

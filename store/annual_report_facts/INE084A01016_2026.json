@@ -1,0 +1,59 @@
+{
+ "isin": "INE084A01016",
+ "name": "Bank of India",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29271_BANKINDIA_2025_2026_A_5930339_22052026115827.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 2694427,
+ "facts": {
+  "business": "Bank of India is a public sector bank providing banking and financial services including deposits, advances, investments, and priority sector lending across domestic and international operations.",
+  "segments": [
+   {
+    "name": "Domestic Business",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "International Business",
+    "share_of_revenue_pct": 14.36
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "Priority Sector Lending constituted 46.36% of Adjusted Net Bank Credit against regulatory threshold of 40%",
+    "metric": "Priority Sector Lending",
+    "value": "46.36%",
+    "by_when": "31.03.2026"
+   },
+   {
+    "statement": "Share of Agricultural Credit to Adjusted Net Bank Credit was 19.56% as on 31.03.2026, against the regulatory requirement of 18%",
+    "metric": "Agricultural Credit",
+    "value": "19.56%",
+    "by_when": "31.03.2026"
+   },
+   {
+    "statement": "Capital Adequacy Ratio stood at an improved level of 18.01% as on 31.03.2026 as against 17.77% as on 31.03.2025",
+    "metric": "Capital Adequacy Ratio",
+    "value": "18.01%",
+    "by_when": "31.03.2026"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "17.42% of advances, 29.60% of deposits, 13.96% of interest income and 23.03% of interest expended from unaudited branches",
+   "16.52% of Non-performing asset from unaudited branches as at March 31, 2026"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

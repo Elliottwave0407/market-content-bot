@@ -1,1 +1,33 @@
-{"isin": "INE02C301011", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2393e894-ac18-4fca-8837-f9629fdab185.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE02C301011",
+ "name": "Shah Construction Company Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2393e894-ac18-4fca-8837-f9629fdab185.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 230188,
+ "facts": {
+  "business": "Shah Construction Company Limited is engaged in construction activities.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 18,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "normal business risks and concerns",
+   "climatic conditions and economic conditions affecting demand and supply",
+   "changes in Government regulation tax regimes",
+   "natural calamities"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

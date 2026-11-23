@@ -1,1 +1,48 @@
-{"isin": "INE04Z101016", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8acc2cdf-7108-4f45-84df-bb5248078227.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE04Z101016",
+ "name": "Asian Warehousing Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8acc2cdf-7108-4f45-84df-bb5248078227.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 326711,
+ "facts": {
+  "business": "Asian Warehousing Limited provides agricultural warehousing services, including storage, weigh bridge, and related logistics solutions, primarily serving the food grain sector and institutions like the Food Corporation of India.",
+  "segments": [
+   {
+    "name": "Sale of Services - Agro Product (Warehousing)",
+    "share_of_revenue_pct": 97.2
+   },
+   {
+    "name": "Weigh Bridge Income - Agro Product",
+    "share_of_revenue_pct": 2.2
+   },
+   {
+    "name": "Sale of Goods - Agro Product (Trading)",
+    "share_of_revenue_pct": 0.6
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s Ramesh M. Sheth & Associates, Chartered Accountants",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 8,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Dependence on FCI and government procurement policies for warehousing demand",
+   "Regional storage capacity imbalances rather than nationwide shortages",
+   "Small scale of operations with only 8 employees, limiting operational bandwidth",
+   "High finance costs relative to revenue (Rs 69.71 lakhs on Rs 179.10 lakhs revenue)",
+   "Low current ratio (0.03) indicating severe liquidity constraints",
+   "Concentration risk from wind-down of trading activity and shift to pure services model"
+  ],
+  "related_party_note": "Approval sought for material related party transaction with Mr. Vishnu Singh, CFO, for remuneration not exceeding Rs 28.20 lakhs per annum (AGM Resolution No. 4).",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

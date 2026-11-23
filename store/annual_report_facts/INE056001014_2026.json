@@ -1,1 +1,53 @@
-{"isin": "INE056001014", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7d93d31c-b8f6-4683-855a-9a4b96487b6b.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE056001014",
+ "name": "City Pulse Multiventures Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7d93d31c-b8f6-4683-855a-9a4b96487b6b.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 182163,
+ "facts": {
+  "business": "City Pulse Multiventures Limited operates an OTT platform named WOWPLEX and is expanding into multiplex cinema screens in Ahmedabad.",
+  "segments": [
+   {
+    "name": "OTT Platform (WOWPLEX)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Multiplex Screens",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "2 screens at Iskcon Circle, SG Highway, Ahmedabad",
+    "amount_cr": null,
+    "timeline": "already started"
+   },
+   {
+    "item": "3 screens at Khokhra, Maninagar, Ahmedabad",
+    "amount_cr": null,
+    "timeline": "going to start"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "M/s Rajendra J. Shah & Co., Chartered Accountants",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 1,
+  "key_risks": [
+   "Regulatory risk for OTT platforms under IT Act and potential government regulation",
+   "Non-compliance with BSE filing requirements (integrated governance report delay leading to fines)",
+   "Competition in digital streaming market",
+   "Dependence on digital infrastructure and consumer data privacy concerns"
+  ],
+  "related_party_note": "During the year, there were some transactions entered with related parties referred to in Section 188(1) of the Companies Act, 2013 read with Rule 8(2) of Companies (Accounts) Rules, 2014. Form AOC-2 has been annexed to the Report as Annexure-II.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

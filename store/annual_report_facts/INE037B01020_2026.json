@@ -1,1 +1,36 @@
-{"isin": "INE037B01020", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8b12c349-e54a-4d88-9ccc-6659855c89ec.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE037B01020",
+ "name": "Shardul Securities Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8b12c349-e54a-4d88-9ccc-6659855c89ec.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 911125,
+ "facts": {
+  "business": "Shardul Securities Limited is a Non-Banking Financial Company (NBFC) Systemically Important Non-Deposit taking, engaged in investment activities including quoted and unquoted equity shares, bullion, AIFs, and mutual funds.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Akkad Mehta & CO. LLP",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Geopolitical tensions and military conflicts disrupting global trade and energy markets",
+   "Volatility in crude oil prices impacting Indian economy and inflation",
+   "Foreign Institutional Investor (FII) withdrawals causing capital market volatility",
+   "Rupee depreciation and foreign exchange reserve depletion",
+   "High valuations and slower corporate earnings growth",
+   "Valuation uncertainty of unquoted investments involving significant estimation and judgment",
+   "Dependence on IT systems for financial accounting and reporting processes"
+  ],
+  "related_party_note": "All transactions with related parties were in ordinary course of business and on arm's length basis. Details of material RPTs reported in Form AOC-2 (Annexure 3). Prior Audit Committee approval obtained including omnibus approval for repetitive transactions. Policy available at http://www.shardulsecurities.com/related%20party%20transaction%20policy.pdf.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

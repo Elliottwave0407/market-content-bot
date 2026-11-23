@@ -1,1 +1,38 @@
-{"isin": "INE052B01011", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f27968c6-c773-4536-92f1-b370c3244d99.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE052B01011",
+ "name": "Beeyu Overseas Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f27968c6-c773-4536-92f1-b370c3244d99.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 239821,
+ "facts": {
+  "business": "Beeyu Overseas Limited is a company that previously operated a tea manufacturing unit in Ooty, Tamil Nadu, but is currently not carrying on any tea manufacturing activity and has leased out its office in Kolkata, generating revenue from leasing activity.",
+  "segments": [
+   {
+    "name": "Leasing activity",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Key Audit Matter: Evaluation of Going Concern Aspect - The Company's accumulated loss as on 31 March 2026 exceeds fifty percent of the net worth. The Company sold its tea manufacturing unit at Ooty, Tamil Nadu a few years ago and presently it is not carrying on any tea manufacturing activity. The Company has also leased out its office in Kolkata. The revenue from leasing activity does not commensurate with the operating expenses for the past several years. Only in the financial year 2022-23, the Company earned a pre-tax profit of Rs. 1,04,826/-. These factors raise substantial doubt that the Company will be able to continue as a going concern."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Going concern risk due to accumulated losses exceeding fifty percent of net worth",
+   "No active tea manufacturing operations",
+   "Leasing revenue does not commensurate with operating expenses",
+   "History of losses with only one year of pre-tax profit (Rs. 1,04,826 in FY 2022-23)"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

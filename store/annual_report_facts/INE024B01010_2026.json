@@ -1,1 +1,39 @@
-{"isin": "INE024B01010", "fy": 2026, "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a84d8102-1331-421c-87cc-b0c65ca2855d.pdf", "skip": "no_text_or_unfetchable", "pdf_chars": 0}
+{
+ "isin": "INE024B01010",
+ "name": "Joindre Capital Services Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a84d8102-1331-421c-87cc-b0c65ca2855d.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 752424,
+ "facts": {
+  "business": "Joindre Capital Services Limited is engaged in retail stock broking through its network of branches and Authorised Persons, and also provides research reports, financial updates, and depository services to clients.",
+  "segments": [
+   {
+    "name": "Capital Market Services",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 76,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "changes in the global and domestic economic conditions",
+   "government regulations",
+   "tax laws",
+   "market sentiment",
+   "dependence on IT systems for large voluminous transactions"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
