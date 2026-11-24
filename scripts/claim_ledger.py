@@ -26,6 +26,7 @@ for f in sorted(glob.glob(R + "prices/d/*.csv.gz")):
             except Exception: pass
 days = sorted(days)
 SNAP = [1/2, 1/3, 1/4, 1/5, 1/10, 2/3, 3/4, 1/20, 1/8, 1/6]
+import statistics as _st
 adj_done = {}
 def adjusted(isin):
     """split/bonus adjustment: a one-day close drop of 35%+ that sits near a clean ratio is treated as a corporate action (demergers are not handled)."""
@@ -36,23 +37,42 @@ def adjusted(isin):
         if r < 0.65 and any(abs(r - x) / x < 0.06 for x in SNAP): f *= r; flags += 1
         out[ds[k - 1]] = s[ds[k - 1]] * f
     adj_done[isin] = (out, flags); return adj_done[isin]
+_SAMPLE = sorted(px)[::3]; _MM = {}
+def market_move(a, b):
+    """median window return (%) across a third of all listed stocks, split-adjusted: the 'average stock' over the same dates"""
+    key = (a, b)
+    if key not in _MM:
+        xs = []
+        for i in _SAMPLE:
+            s_, _ = adjusted(i)
+            pa, pb = s_.get(days[a]), s_.get(days[b])
+            if pa and pb: xs.append((pb / pa - 1) * 100)
+        _MM[key] = _st.median(xs) if len(xs) > 200 else None
+    return _MM[key]
 def price_ctx(isin, day):
+    """price path around the claim: run-up (20 days before), reaction (1 and 5 days), drift (20, 60, 120 days), each also vs the market index (median stock)."""
     if not px.get(isin) or not day: return None
     s, nflag = adjusted(isin)
     k = bisect.bisect_left(days, day)
     if k >= len(days): return None
     def at(j):
-        j = min(j, len(days) - 1)
+        if j < 0 or j >= len(days): return None
         for jj in range(j, max(j - 4, -1), -1):
             if days[jj] in s: return s[days[jj]]
         return None
-    p0, p1, p5, last = at(k), at(k + 1), at(k + 5), s[max(s)] if s else None
+    def mv(a, b, name=None):
+        pa, pb = at(a), at(b)
+        if not pa or not pb or a < 0 or b >= len(days): return None, None
+        r = (pb / pa - 1) * 100
+        m = market_move(a, b)
+        return round(r), (round(r - m) if m is not None else None)
+    p0 = at(k)
     if not p0: return None
     out = {"close": round(p0, 1)}
     if nflag: out["split_adjusted"] = True
-    if p0 and p1: out["d1_pct"] = round((p1 / p0 - 1) * 100)
-    if p0 and p5 and k + 5 < len(days): out["d5_pct"] = round((p5 / p0 - 1) * 100)
-    if p0 and last and k < len(days) - 5: out["to_latest_pct"] = round((last / p0 - 1) * 100)
+    for name, a, b in (("pre20", k - 21, k - 1), ("pre5", k - 6, k - 1), ("d1", k - 1, k + 1), ("d5", k - 1, k + 5), ("d20", k, k + 20), ("d60", k, k + 60), ("d120", k, k + 120), ("to_latest", k, len(days) - 1)):
+        r, e = mv(a, b)
+        if r is not None and (name != "to_latest" or k < len(days) - 5): out[name] = r; out[name + "_vs_mkt"] = e
     return out
 claims = collections.defaultdict(dict)
 def add(isin, source, day, url, it):
