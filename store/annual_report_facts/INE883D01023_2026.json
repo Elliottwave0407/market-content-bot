@@ -1,0 +1,32 @@
+{
+ "isin": "INE883D01023",
+ "name": "KBS India Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/ca0081cc-ac66-40db-b06c-46a9f0b1f03d.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 285516,
+ "facts": {
+  "business": "KBS India Limited is a listed company based in Mumbai, India, with a former subsidiary in Singapore (KBS Capital Management Singapore Pte Ltd) that has been struck off.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "1) Gratuity liability of employees is not provided for as required by Ind AS 19 on Employee Benefits. The impact is not quantified in the absence of actuarial valuation/management estimate. 2) Long-term loan amounting to Rs. 16,65,40,533 and current account outstanding balance of Rs. 8,02,444 as on 31st March 2024 are outstanding and receivable from KBS Capital Management Singapore Pte Ltd (erstwhile subsidiary). The said company has been struck off. No provision has been made as RBI permission for write-off is still awaited, resulting in misstatement of profit and accumulated reserves & surplus."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Unprovided gratuity liability as per Ind AS 19",
+   "Outstanding loan and current account balance from struck-off subsidiary KBS Capital Management Singapore Pte Ltd (Rs. 16.65 crore loan + Rs. 8.02 lakh current account) with no provision made pending RBI write-off permission",
+   "Misstatement of profit and accumulated reserves & surplus due to above"
+  ],
+  "related_party_note": "Long-term loan of Rs. 16,65,40,533 and current account balance of Rs. 8,02,444 outstanding from KBS Capital Management Singapore Pte Ltd (erstwhile subsidiary, now struck off) as on 31st March 2024. No provision made as RBI permission for write-off is awaited.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

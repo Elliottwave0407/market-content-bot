@@ -1,0 +1,65 @@
+{
+ "isin": "INE818W01011",
+ "name": "ESAF Small Finance Bank Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29906_ESAFSFB_2025_2026_A_23210298_20072026175709.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 2248162,
+ "facts": {
+  "business": "ESAF Small Finance Bank provides banking services including loans (Gold, MSME, Agriculture, Microfinance) and deposits to underserved segments across India.",
+  "segments": [
+   {
+    "name": "Gold Loans",
+    "share_of_revenue_pct": 39
+   },
+   {
+    "name": "Micro Loans",
+    "share_of_revenue_pct": 33
+   },
+   {
+    "name": "Agricultural Loans",
+    "share_of_revenue_pct": 6
+   },
+   {
+    "name": "MSME Loans",
+    "share_of_revenue_pct": 3
+   },
+   {
+    "name": "Loans to Financial Institutions",
+    "share_of_revenue_pct": 4
+   },
+   {
+    "name": "Others",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "Yields on advances are expected to remain range bound",
+    "metric": "Yield on Advances",
+    "value": "range bound",
+    "by_when": "future"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "portfolio concentration risk",
+   "interest rate risk",
+   "asset quality risk",
+   "IT and cyber security risk"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
