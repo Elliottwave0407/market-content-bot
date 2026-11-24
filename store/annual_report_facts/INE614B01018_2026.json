@@ -1,0 +1,52 @@
+{
+ "isin": "INE614B01018",
+ "name": "The Karnataka Bank Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30944_KTKBANK_2025_2026_A_10134177_31082026213534.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 2247535,
+ "facts": {
+  "business": "Karnataka Bank Limited is a commercial bank providing deposits, advances, and investment services with a focus on retail, mid-corporate, and large corporate lending, as well as priority sector and agricultural advances.",
+  "segments": [
+   {
+    "name": "Retail Advances",
+    "share_of_revenue_pct": 50.88
+   },
+   {
+    "name": "Mid Corporate Advances",
+    "share_of_revenue_pct": 19.08
+   },
+   {
+    "name": "Large Corporate Advances",
+    "share_of_revenue_pct": 30.04
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "The Bank has consistently maintained the CRAR ratio well above the minimum requirement of 11.50%, including the Capital Conservation Buffer of 2.50% stipulated by the Reserve Bank of India and the internal policy of the Bank of maintaining the CRAR 1.50% over and above the regulatory requirement.",
+    "metric": "CRAR",
+    "value": "20.07%",
+    "by_when": "March 31, 2026"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Decline in yield on advances following repricing of external benchmark-linked loans leading to compression in spreads",
+   "Increased provisioning towards NPA to improve Provision Coverage Ratio",
+   "Asset quality risk related to identification and provisioning for non-performing advances"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": 5.0
+ }
+}
