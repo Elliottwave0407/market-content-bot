@@ -1,0 +1,37 @@
+{
+ "isin": "INE320M01019",
+ "name": "Star Source Multi Trade Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/acc02ca1-851e-43f3-bf48-73747b1c5384.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 239668,
+ "facts": {
+  "business": "The company is exploring new business opportunities and has changed its object clause to venture into commodity trading, with only agricultural sales recorded in the current period.",
+  "segments": [
+   {
+    "name": "Agricultural sales",
+    "share_of_revenue_pct": 100
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in the provided text",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Only agricultural sales recorded in books vs higher turnover in GST returns with no reconciliation; balance confirmations not available; loss on fair value change in investments unsupported by adequate explanations or workings."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Variance between recorded agricultural sales and higher GST turnover with no reconciliation",
+   "Unavailability of balance confirmations from various parties",
+   "Unsupported loss on fair value change in investments booked under indirect expenses"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": 0
+ }
+}

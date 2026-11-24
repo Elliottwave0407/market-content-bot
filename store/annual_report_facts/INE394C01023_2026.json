@@ -1,0 +1,58 @@
+{
+ "isin": "INE394C01023",
+ "name": "Landmarc Leisure Corporation Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f237ce88-3e2a-4353-96de-0604e2b3742a.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 394873,
+ "facts": {
+  "business": "Landmarc Leisure Corporation Limited operates in the packaged bottle business and motion pictures business.",
+  "segments": [
+   {
+    "name": "Packaged Bottle Business",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Motion Pictures Business",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Packaged Bottle Business",
+    "amount_cr": 0.025,
+    "timeline": "Current Year"
+   },
+   {
+    "item": "Motion Pictures Business",
+    "amount_cr": 0,
+    "timeline": "Current Year"
+   },
+   {
+    "item": "Other",
+    "amount_cr": 0,
+    "timeline": "Current Year"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "S K H D & Associates, Chartered Accountants",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualified opinion due to: (i) Interest-free loans of Rs. 455.87 Lakhs without regularized term sheets impacting loss and loans per Ind AS 109; (ii) Non-provision for ECL on doubtful advances/deposits of Rs. 2,218.28 Lakhs to a party under IBC resolution, overstating advances and understating loss; (iii) Non-provision for ECL on security deposit of Rs. 1,500 Lakhs to a company in liquidation, overstating deposit and understating loss; (iv) Non-compliance with Ind AS 15 for gratuity provision based on management estimates instead of actuarial valuation, shortfall unascertainable."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Non-provision for Expected Credit Loss on doubtful advances and deposits",
+   "Interest-free loans without regularized documentation",
+   "Non-compliance with Ind AS 15 for employee benefits",
+   "Advances to parties under insolvency/liquidation proceedings"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

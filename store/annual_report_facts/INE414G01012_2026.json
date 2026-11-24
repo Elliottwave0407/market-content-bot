@@ -1,0 +1,48 @@
+{
+ "isin": "INE414G01012",
+ "name": "Muthoot Finance Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30252_MUTHOOTFIN_2025_2026_A_13395193_07082026203438.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 3780868,
+ "facts": {
+  "business": "Muthoot Finance Limited is India's largest gold loan NBFC, providing loans against gold jewellery through a pan-India branch network and operating subsidiaries in microfinance, housing finance, vehicle finance, and Sri Lankan financial services.",
+  "segments": [
+   {
+    "name": "Gold Loan (Core)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Gold Loan Extensions (Muthoot Money, Asia Asset Finance, Belstar Microfinance)",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "Adjacent Financial Services (Muthoot Homefin, Vehicle Loans)",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Key Audit Matters: Allowance for expected credit losses (ECL) on loans and advances; Information technology and general controls"
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 5,
+  "key_risks": [
+   "Credit risk from adverse selection of borrowers/groups",
+   "Concentration risk in geography/branch/zone",
+   "Operational risk from high-volume IT systems across multiple platforms",
+   "Model risk in ECL estimation with macroeconomic overlays",
+   "Gold price volatility impacting collateral coverage",
+   "Regulatory and compliance risks in gold loan and microfinance operations"
+  ],
+  "related_party_note": "Not explicitly stated in excerpts",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
