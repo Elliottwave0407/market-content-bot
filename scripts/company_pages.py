@@ -23,6 +23,13 @@ for fn in glob.glob(R + "annual_report_facts/*.json"):
     try: d = json.load(open(fn))
     except Exception: continue
     if d.get("facts"): arf[d["isin"]] = {"fy": d["fy"], **{k: d["facts"].get(k) for k in ("business", "segments", "capacity_or_capex", "guidance_or_targets", "order_book_cr", "auditor", "promoter_holding_pct", "promoter_pledge_pct", "employees", "subsidiaries_count", "key_risks", "dividend_per_share")}}
+CL = os.environ.get("CLAIMS_DIR") or "/home/claude/fingod-company-data/claims"
+def claims_of(i):
+    fn = os.path.join(CL, i + ".json")
+    if not os.path.exists(fn): return None
+    L = json.load(open(fn))["claims"]; by = collections.Counter(c["cat"] for c in L)
+    g = [c for c in L if c["cat"] == "guidance"][-5:]
+    return {"total": len(L), "by_category": dict(by), "latest_guidance": [{"day": c["first_day"], "statement": c["statement"], "period": c.get("period")} for c in g], "ledger": "claims/%s.json" % i}
 qs = sorted({q for (_, q) in v.D})
 latest = max(qs)
 tiers = {}
@@ -45,6 +52,7 @@ def page(i):
     d["quarters"] = rows
     d["completeness"] = {"expected": [lab(q) for q in expect], "held": [lab(q) for q in expect if q in held], "missing": [{"q": lab(q), "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"} for q in expect if q not in held], "concalls_found": len(calls), "concalls_read": sum(1 for c in calls if c["read"]), "latest_concall": max([c["day"] for c in calls], default=None)}
     d["annual_report"] = arf.get(i)
+    d["claims"] = claims_of(i)
     d["completeness"]["annual_report_fy"] = (arf.get(i) or {}).get("fy")
     d["note"] = "Verdict v3 is a prototype; peer-relative; not investment advice"
     return d
