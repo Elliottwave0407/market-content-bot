@@ -1,6 +1,7 @@
 """Annual report DEEP reader (pilot, 25 Nov 2026). Reads the WHOLE report in chunks, extracts literal facts only (no PDF stored), merges across chunks.
 Writes store/<OUT_DIR>/<ISIN>_<FY>.json. Key from env NVIDIA_API_KEY (never printed). env: OUT_DIR, FY, ISINS (comma list) or MAXN, BUDGET_MIN, CHUNK, MAXCHUNKS."""
 import os, re, io, json, time, zipfile, subprocess, tempfile, sys, requests
+from concurrent.futures import ThreadPoolExecutor
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "store") + "/"
 OUT = R + os.environ.get("OUT_DIR", "annual_report_deep_dry") + "/"; os.makedirs(OUT, exist_ok=True)
 FY = int(os.environ.get("FY", "2026")); BUDGET = float(os.environ.get("BUDGET_MIN", "40")) * 60; MAXN = int(os.environ.get("MAXN", "5"))
@@ -66,7 +67,8 @@ recs = {}
 for l in open(R + "annual_reports/merged.jsonl"):
     r = json.loads(l)
     if r["fy"] == FY and r.get("isin") and r.get("url"): recs[r["isin"]] = r
-want = [x for x in os.environ.get("ISINS", "").split(",") if x] or list(recs)
+PRI = R + "annual_report_deep/_priority.json"
+want = [x for x in os.environ.get("ISINS", "").split(",") if x] or (json.load(open(PRI)) if os.path.exists(PRI) else list(recs))
 t0 = time.time(); n = 0
 for isin in want:
     if n >= MAXN or time.time() - t0 > BUDGET: break
@@ -77,9 +79,18 @@ for isin in want:
         pdf = fetch(r["url"]); t = text_of(pdf) if pdf else ""
         if len(t) < 8000: json.dump({"isin": isin, "fy": FY, "src": r["url"], "skip": "no_text_or_unfetchable", "chars": len(t)}, open(fn, "w")); print(isin, "skip", len(t)); continue
         cs, total = chunks(t); acc = {}; ok = 0
-        for c in cs:
-            f = ask(c)
+        with ThreadPoolExecutor(int(os.environ.get("WORKERS", "6"))) as ex:
+            res = list(ex.map(ask, cs))
+        for f in res:
             if f: merge(acc, f); ok += 1
+        for f_ in (acc.get("business") or {},):      # tidy: case-insensitive duplicate names, cap noisy lists
+            for k_ in ("products", "customers", "end_markets", "raw_materials", "competitors_named"):
+                seen = set(); L = []
+                for x in f_.get(k_) or []:
+                    key = (x.get("name") if isinstance(x, dict) else str(x) or "").lower().strip()
+                    if key and key not in seen: seen.add(key); L.append(x)
+                if k_ in f_: f_[k_] = L
+        if "other_notable" in acc: acc["other_notable"] = acc["other_notable"][:60]
         json.dump({"isin": isin, "name": r["name"], "fy": FY, "src": r["url"], "model": MODEL, "chars": total, "chunks": len(cs), "chunks_ok": ok, "facts": acc}, open(fn, "w"), indent=1)
         print(isin, r["name"][:26], "chars", total, "chunks %d/%d" % (ok, len(cs)), "%ds" % (time.time() - t0))
     except Exception as e: print(isin, "error", str(e)[:80])
