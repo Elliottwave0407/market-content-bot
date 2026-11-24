@@ -18,6 +18,11 @@ cc = collections.defaultdict(list)
 for f in sorted(glob.glob(R + "concall_facts/*.jsonl")):
     for l in open(f):
         r = json.loads(l); cc[r.get("code")].append({"day": r.get("day"), "read": bool(r.get("items")), "skip": r.get("skip"), "n_items": len(r.get("items") or [])})
+arf = {}
+for fn in glob.glob(R + "annual_report_facts/*.json"):
+    try: d = json.load(open(fn))
+    except Exception: continue
+    if d.get("facts"): arf[d["isin"]] = {"fy": d["fy"], **{k: d["facts"].get(k) for k in ("business", "segments", "capacity_or_capex", "guidance_or_targets", "order_book_cr", "auditor", "promoter_holding_pct", "promoter_pledge_pct", "employees", "subsidiaries_count", "key_risks", "dividend_per_share")}}
 qs = sorted({q for (_, q) in v.D})
 latest = max(qs)
 tiers = {}
@@ -39,6 +44,8 @@ def page(i):
     calls = cc.get(d.get("scrip")) or cc.get("NSE:" + (d.get("sym") or "")) or []
     d["quarters"] = rows
     d["completeness"] = {"expected": [lab(q) for q in expect], "held": [lab(q) for q in expect if q in held], "missing": [{"q": lab(q), "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"} for q in expect if q not in held], "concalls_found": len(calls), "concalls_read": sum(1 for c in calls if c["read"]), "latest_concall": max([c["day"] for c in calls], default=None)}
+    d["annual_report"] = arf.get(i)
+    d["completeness"]["annual_report_fy"] = (arf.get(i) or {}).get("fy")
     d["note"] = "Verdict v3 is a prototype; peer-relative; not investment advice"
     return d
 if __name__ == "__main__":
