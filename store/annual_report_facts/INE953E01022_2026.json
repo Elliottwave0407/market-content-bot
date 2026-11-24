@@ -1,0 +1,62 @@
+{
+ "isin": "INE953E01022",
+ "name": "KSE Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/0c3a9343-2a1a-48e3-b8e5-9fde5455ce80.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 943109,
+ "facts": {
+  "business": "KSE Limited operates in animal feed manufacturing, oil cake processing, and dairy segments.",
+  "segments": [
+   {
+    "name": "Animal Feed",
+    "share_of_revenue_pct": 81.0
+   },
+   {
+    "name": "Oil cake processing",
+    "share_of_revenue_pct": 25.7
+   },
+   {
+    "name": "Dairy",
+    "share_of_revenue_pct": 3.6
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Animal Feed",
+    "amount_cr": 6.42,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Oil cake processing",
+    "amount_cr": 0.08,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Dairy",
+    "amount_cr": 0.9,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Unallocated Capital Expenditure",
+    "amount_cr": 1.4,
+    "timeline": "2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Sridhar & Co",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [],
+  "related_party_note": "Related party transactions disclosed in Annexure C (Form AOC-2) and available on company website.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

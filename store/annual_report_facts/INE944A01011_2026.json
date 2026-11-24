@@ -1,0 +1,36 @@
+{
+ "isin": "INE944A01011",
+ "name": "Gujarat State Financial Corporation",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/003fd712-f97a-4a67-a227-ff6852e4cc37.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 184768,
+ "facts": {
+  "business": "Gujarat State Financial Corporation is a statutory body established under the State Financial Corporations Act, 1951, aimed at achieving balanced regional growth by extending financial assistance to first-generation entrepreneurs for micro and small-scale units in Gujarat, though it has discontinued main lending activities and is currently focused on recovery of dues.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "J.H. Mehta & Co., Chartered Accountants",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Two qualifications: (a) Financial statements prepared on going concern basis despite completely eroded net worth and defaulted repayment obligations due to liquidity problems, not in accordance with AS-1; (b) Dues payable to Government of Gujarat subject to confirmation and adjustment, effect on interest and penal interest not ascertainable."
+  },
+  "promoter_holding_pct": 83.5,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Net worth completely eroded with defaulted repayment obligations due to liquidity problems",
+   "Going concern assumption questioned by auditors due to financial distress",
+   "Dues to Government of Gujarat subject to confirmation, with unascertainable interest and penal interest impact",
+   "Discontinued main lending activities, dependent solely on recovery of dues",
+   "Regulatory fines from BSE for absence of independent directors (corporate governance non-compliance)",
+   "100% net NPA ratio indicating entire loan portfolio is non-performing",
+   "Operating loss of -60.42% of average working funds"
+  ],
+  "related_party_note": "Government of Gujarat and SIDBI are major shareholders; Government loans granted via budget provisions and Government Resolutions; Corporation moved Government to make loans interest-free from 1-7-2012; outstanding details submitted quarterly to administrative department; loan accounts verified by other authorities periodically.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

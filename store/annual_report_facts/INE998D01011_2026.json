@@ -1,0 +1,39 @@
+{
+ "isin": "INE998D01011",
+ "name": "Jayabharat Credit Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/a2f6030e-96b5-41e6-8901-4246dc120c55.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 271607,
+ "facts": {
+  "business": "Jayabharat Credit Limited is a non-banking finance company that has ceased fresh hire purchase business for over five years and is currently consolidating operations by recovering past dues, with its Certificate of Registration cancelled by RBI.",
+  "segments": [
+   {
+    "name": "Assets Finance",
+    "share_of_revenue_pct": 0
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Material Uncertainty Related To Going Concern: accumulated losses of Rs 7,660.73 lakhs, net loss of Rs 107.06 lakhs, negative net worth of Rs 6,193.03 lakhs, current liabilities exceed total assets by Rs 6,193.03 lakhs; company not into active business; continuing promoter support via Inter Corporate Deposits of Rs 6,142.59 lakhs; financial results prepared on going concern basis."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": 4,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Material uncertainty related to going concern due to accumulated losses and negative net worth",
+   "No fresh business exposure for over 5 years",
+   "Dependence on promoter support (Inter Corporate Deposits) for continuity",
+   "Risk of default by existing clients leading to cascading effect on other customers",
+   "Certificate of Registration cancelled by RBI"
+  ],
+  "related_party_note": "Promoters providing continuing support as Inter Corporate Deposits of Rs 6,142.59 lakhs",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
