@@ -1,0 +1,40 @@
+{
+ "isin": "INE628F01019",
+ "name": "Indergiri Finance Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/50b4dbc6-925f-478c-a16e-5f42416515cf.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 349105,
+ "facts": {
+  "business": "Indergiri Finance Limited is a Non-Banking Financial Company (NBFC) registered with the Reserve Bank of India engaged in lending operations.",
+  "segments": [],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [
+   {
+    "statement": "Proposing to augment the NOF through a rights issue of equity shares aggregating to INR 1,000 Lakhs and to achieve compliance by 31 March 2026.",
+    "metric": "Net Owned Fund (NOF) compliance via Rights Issue",
+    "value": "1000 Lakhs",
+    "by_when": "31 March 2026"
+   }
+  ],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not stated in excerpt",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualified Opinion due to non-maintenance of minimum Net Owned Fund (NOF) of INR 500 Lakhs as per RBI Scale Based Regulation; NOF stood at INR (64.19) Lakhs as at 31 March 2026. Material Uncertainty Related to Going Concern due to risk of cancellation of Certificate of Registration by RBI."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Regulatory non-compliance with minimum Net Owned Fund (NOF) requirement of INR 500 Lakhs",
+   "Risk of cancellation of Certificate of Registration (CoR) by RBI",
+   "Material uncertainty related to going concern",
+   "Failure to complete proposed rights issue of INR 1,000 Lakhs"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}

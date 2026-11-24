@@ -1,0 +1,63 @@
+{
+ "isin": "INE756I01012",
+ "name": "HDB Financial Services Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29323_HDBFS_2025_2026_A_14173828_01062026192621.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 1431396,
+ "facts": {
+  "business": "HDB Financial Services Limited is a Non-Banking Financial Company - Upper Layer (NBFC-UL) providing retail finance for commercial equipment, commercial vehicles, personal loans, enterprise loans, and BPO services including sales support, back office operations, and collection call centres.",
+  "segments": [
+   {
+    "name": "Lending business",
+    "share_of_revenue_pct": null
+   },
+   {
+    "name": "BPO Services",
+    "share_of_revenue_pct": null
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Capital Expenditure (including net CWIP) - Lending business",
+    "amount_cr": 139.58,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capital Expenditure (including net CWIP) - BPO Services",
+    "amount_cr": 4.03,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Total Capital Expenditure (including net CWIP)",
+    "amount_cr": 143.61,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": null,
+   "opinion": "unmodified",
+   "emphasis_or_qualification": ""
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": 0,
+  "key_risks": [
+   "Global economic uncertainties and geopolitical tensions",
+   "Elevated borrowing costs",
+   "Trade and policy pressures transmitting into financial markets",
+   "Strong US dollar tightening financial conditions in emerging markets",
+   "Limited fiscal headroom with global public debt at around 94% of GDP",
+   "Significant judgement and estimates in Expected Credit Loss (ECL) model under Ind AS 109",
+   "Data inputs completeness and accuracy for ECL model",
+   "Model estimations for Probabilities of Default (PD), Loss Given Default (LGD) and Exposures at Default (EAD)",
+   "Economic scenarios determination and probability weighting for forward-looking ECL measurement"
+  ],
+  "related_party_note": "Related party transactions with HDFC Bank Limited (holding company) and other group entities include bank charges, back office support services, sales support services, BBPS charges, corporate logo license fees, dividend paid, ASBA commission, and interest paid on non-convertible debentures. No materially significant related party transactions with potential conflict of interest during FY 2025-26.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": 2.0
+ }
+}

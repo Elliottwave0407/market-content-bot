@@ -1,0 +1,50 @@
+{
+ "isin": "INE636B01011",
+ "name": "Acme Resources Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3e357977-89ab-4028-b1aa-0f83ec0c9dd2.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 714331,
+ "facts": {
+  "business": "Acme Resources Limited is a Non-Banking Financial Company (NBFC) engaged in lending activities, sale of property, and other financial services.",
+  "segments": [
+   {
+    "name": "NBFC Business",
+    "share_of_revenue_pct": 69.8
+   },
+   {
+    "name": "Sale of Property",
+    "share_of_revenue_pct": 17.6
+   },
+   {
+    "name": "Others",
+    "share_of_revenue_pct": 12.7
+   }
+  ],
+  "capacity_or_capex": [],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not stated in excerpt",
+   "opinion": "unmodified",
+   "emphasis_or_qualification": "Emphasis of Matter regarding provisional attachment of inventory worth Rs.543.92 lakh by Income Tax Department (Rs.115.80 lakh released) and demand notices received totalling Rs.8,421.62 lakh for various assessment years, challenged before CIT(A)."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Regulatory changes by RBI and increasing compliance requirements",
+   "Interest rate fluctuations and monetary policy changes impacting cost of funds",
+   "Competition from banks, NBFCs, fintech and digital lending platforms",
+   "Adverse macroeconomic conditions and geopolitical uncertainties",
+   "Credit risk and asset quality concerns due to changes in customer repayment capacity",
+   "Liquidity constraints, cybersecurity risks, technological disruptions, and operational risks",
+   "Provisional attachment of inventory by Income Tax Department restricting transfer/sale",
+   "Significant tax demand notices totalling Rs.8,421.62 lakh under appeal"
+  ],
+  "related_party_note": "",
+  "contingent_liabilities_cr": 84.22,
+  "dividend_per_share": null
+ }
+}

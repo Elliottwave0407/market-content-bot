@@ -1,0 +1,47 @@
+{
+ "isin": "INE377M01043",
+ "name": "Global Infratech & Finance Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/9d1704f1-3739-4692-9358-d04ed0ee5c36.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "pdf_chars": 433051,
+ "facts": {
+  "business": "Global Infratech & Finance Limited operates in the Finance & Investments segment and is developing a Biomass segment which has not yet commenced commercial operations.",
+  "segments": [
+   {
+    "name": "Finance & Investments",
+    "share_of_revenue_pct": 100
+   },
+   {
+    "name": "Biomass",
+    "share_of_revenue_pct": 0
+   }
+  ],
+  "capacity_or_capex": [
+   {
+    "item": "Plant & Machinery (CWIP)",
+    "amount_cr": 1.94,
+    "timeline": "As on 31st March 2026"
+   }
+  ],
+  "guidance_or_targets": [],
+  "order_book_cr": null,
+  "auditor": {
+   "name": "Not explicitly stated in excerpts",
+   "opinion": "qualified",
+   "emphasis_or_qualification": "Qualified opinion due to possible effects of the matter described in the Basis for Qualified Opinion paragraph regarding accounting for the NCLT-approved Resolution Plan implementation."
+  },
+  "promoter_holding_pct": null,
+  "promoter_pledge_pct": null,
+  "employees": null,
+  "subsidiaries_count": null,
+  "key_risks": [
+   "Going concern dependent on achieving profitable operations, generating sufficient cash flows, and continued financial support from new promoters",
+   "Complex accounting for NCLT-approved Resolution Plan involving significant management judgment in fair valuations",
+   "Valuation of equity securities with suspended trading or unavailable market quotations involves significant management judgment and estimates"
+  ],
+  "related_party_note": "Transactions with KMPs and relatives include loans received from Chander Bhushan Bajaj (Rs 65.00 crore) and Mohit Bajaj (Rs 94.43 crore) during FY 2025-26, with outstanding balances of same amounts. Remuneration paid to KMPs including CS, CFOs, and Managing Director.",
+  "contingent_liabilities_cr": null,
+  "dividend_per_share": null
+ }
+}
