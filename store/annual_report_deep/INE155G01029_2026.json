@@ -1,0 +1,2080 @@
+{
+ "isin": "INE155G01029",
+ "name": "New Delhi Television Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_32182_NDTV_2025_2026_A_14049796_06102026181130.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 911487,
+ "chunks": 23,
+ "chunks_ok": 22,
+ "facts": {
+  "business": {
+   "description": "NDTV is one of India's most respected destinations for news and digital journalism, operating TV channels, digital platforms, and live events. It is part of AMG Media Networks Limited, an Adani Group company.",
+   "products": [
+    {
+     "name": "TV Channels",
+     "share_of_revenue_pct": null,
+     "note": "Includes NDTV 24x7 (English), NDTV India (Hindi), NDTV Profit (Business), NDTV Madhya Pradesh-Chhattisgarh, NDTV Rajasthan, NDTV Marathi, NDTV Good Times (live entertainment/cultural experiences)"
+    },
+    {
+     "name": "Digital Platforms",
+     "share_of_revenue_pct": null,
+     "note": "Includes ndtv.com, ndtv.in, ndtvprofit.com, ndtv.com/world, mpcg.ndtv.in, rajasthan.ndtv.in, marathi.ndtv.com, NDTVGoodTimes.com, iOS/Android apps for NDTV, NDTV Profit, NDTV World"
+    },
+    {
+     "name": "Events Vertical",
+     "share_of_revenue_pct": null,
+     "note": "Launched under brand 'NDTV Good Times' for live entertainment, cultural experiences, concerts, large-scale public events"
+    },
+    {
+     "name": "NDTV 24x7",
+     "share_of_revenue_pct": null,
+     "note": "English news channel with properties like India Matters, Breaking Ground, The Southern View, Chai Stop"
+    },
+    {
+     "name": "NDTV India",
+     "share_of_revenue_pct": null,
+     "note": "Hindi news channel with properties like Bharat Ki Baat, Batata Hoon, Mic On Hai"
+    },
+    {
+     "name": "NDTV Profit",
+     "share_of_revenue_pct": null,
+     "note": "Business news channel with properties like Market Open, Know Your Company, Small Cap Buzzers, Podcasts \u2013 Disruptors & MoneyWise, Market @12"
+    },
+    {
+     "name": "NDTV Marathi",
+     "share_of_revenue_pct": null,
+     "note": "Regional Marathi news channel with flagship shows Khabar Toh Ye Hai, NDTV Powerplay, NDTV Manch, Emerging Business Conclaves"
+    },
+    {
+     "name": "NDTV Rajasthan",
+     "share_of_revenue_pct": null,
+     "note": "Regional Rajasthan news channel with Rising Rajasthan Conclave and new flagship shows"
+    },
+    {
+     "name": "NDTV World",
+     "share_of_revenue_pct": null,
+     "note": "Global-facing digital platform for international audiences"
+    },
+    {
+     "name": "NDTV Good Times",
+     "share_of_revenue_pct": null,
+     "note": "Experiential platform curating live events, concerts and cultural gatherings"
+    },
+    {
+     "name": "NDTV Madhya Pradesh & Chhattisgarh",
+     "share_of_revenue_pct": null,
+     "note": "Regional news channel"
+    },
+    {
+     "name": "NDTV television channels",
+     "share_of_revenue_pct": null,
+     "note": "Includes NDTV Profit re-launched as comprehensive hub integrating television, digital, and audio experiences"
+    },
+    {
+     "name": "NDTV Convergence Limited digital platform",
+     "share_of_revenue_pct": null,
+     "note": "Owns technology widely acknowledged as cutting-edge and selectively licensed to third parties"
+    },
+    {
+     "name": "NDTV Madhya Pradesh-Chhattisgarh",
+     "share_of_revenue_pct": null,
+     "note": "Regional news channel"
+    },
+    {
+     "name": "Broadcasting of News and other related services",
+     "share_of_revenue_pct": 100,
+     "note": "NIC Code 6020; accounts for 100% of turnover"
+    },
+    {
+     "name": "Advertisement revenue from broadcasting",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognised when advertisements are displayed; revenue deferred where drop slots/bonus slots are offered"
+    },
+    {
+     "name": "Subscription revenue",
+     "share_of_revenue_pct": null,
+     "note": "From direct-to-home satellite operators and other distributors for the right to distribute channels; recognised when service provided as per contract terms"
+    },
+    {
+     "name": "Revenue from events and shared services",
+     "share_of_revenue_pct": null,
+     "note": "Recognised as the services are provided"
+    },
+    {
+     "name": "Revenue from production arrangements",
+     "share_of_revenue_pct": null,
+     "note": "Recognised when contract period begins and programming is available for telecast pursuant to agreement terms"
+    },
+    {
+     "name": "Advertisement revenue",
+     "share_of_revenue_pct": null,
+     "note": "Rs 2,685.01 million in FY2026"
+    },
+    {
+     "name": "Event revenue",
+     "share_of_revenue_pct": null,
+     "note": "Rs 213.90 million in FY2026"
+    },
+    {
+     "name": "Business income - programme production/content",
+     "share_of_revenue_pct": null,
+     "note": "Rs 152.61 million in FY2026"
+    },
+    {
+     "name": "Other business income",
+     "share_of_revenue_pct": null,
+     "note": "Rs 110.74 million in FY2026"
+    },
+    {
+     "name": "Commission income",
+     "share_of_revenue_pct": null,
+     "note": "Rs 4.48 million in FY2026"
+    },
+    {
+     "name": "Shared services",
+     "share_of_revenue_pct": null,
+     "note": "Rs 114.47 million in FY2026"
+    },
+    {
+     "name": "News broadcasting",
+     "share_of_revenue_pct": null,
+     "note": "Core business includes news channels and digital news platforms"
+    },
+    {
+     "name": "Production services",
+     "share_of_revenue_pct": null,
+     "note": "Includes consultancy, professional fees, hire charges, graphic/music/editing services"
+    },
+    {
+     "name": "Television channels",
+     "share_of_revenue_pct": null,
+     "note": "Operates six channels: NDTV 24x7, NDTV India, NDTV Profit, NDTV MPCG, NDTV Rajasthan and NDTV Marathi"
+    },
+    {
+     "name": "Digital platform",
+     "share_of_revenue_pct": null,
+     "note": "Owns the website ndtv.com through subsidiary NDTV Convergence Limited"
+    },
+    {
+     "name": "E-commerce platforms",
+     "share_of_revenue_pct": null,
+     "note": "Associates and joint ventures operate platforms such as www.Gadgets360.com and www.mojarto.com"
+    },
+    {
+     "name": "Advertisement revenue through website",
+     "share_of_revenue_pct": null,
+     "note": "recognised as impressions; click-through for search advertising"
+    },
+    {
+     "name": "Revenue from events",
+     "share_of_revenue_pct": null,
+     "note": "recognised as the services are provided over a period of time"
+    },
+    {
+     "name": "Revenues from production arrangements",
+     "share_of_revenue_pct": null,
+     "note": "recognised when the contract period begins and the programming is available for telecast"
+    },
+    {
+     "name": "Revenues from content",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from content provided to Mobile VAS operators is recognized when services are rendered"
+    },
+    {
+     "name": "Consultancy services",
+     "share_of_revenue_pct": null,
+     "note": "recognised as the services are rendered over a period of time"
+    },
+    {
+     "name": "Revenue from shared services",
+     "share_of_revenue_pct": null,
+     "note": "recognised in accordance with the terms of the contract as the services are rendered to the customers"
+    },
+    {
+     "name": "Barter transactions",
+     "share_of_revenue_pct": null,
+     "note": "sale of advertisement space in exchange of non cash consideration; recognised at a point in time on actual performance"
+    },
+    {
+     "name": "Mobile VAS revenue",
+     "share_of_revenue_pct": null,
+     "note": "Rs 6.89 million in FY2026"
+    }
+   ],
+   "customers": [
+    "TV viewers across India and international markets",
+    "Digital audiences on web, mobile, social media, OTT/IPTV platforms",
+    "Advertisers and sponsors",
+    "Event attendees",
+    "TV viewers across English, Hindi, Marathi, Rajasthani languages",
+    "Digital audiences on websites, YouTube, social media",
+    "International audiences via NDTV 24x7 International and NDTV World",
+    "Event attendees for NDTV Good Times concerts and summits",
+    "Advertisers and sponsors across broadcast, digital, and event properties",
+    "Indian domestic audiences",
+    "Indian diaspora in UK, North America, Middle East, Africa, Australia, SAARC region",
+    "Advertisers across FMCG, e-commerce, BFSI, consumer services",
+    "SMEs and long-tail advertisers",
+    "Individual news consumers",
+    "Television viewers",
+    "Digital users",
+    "Business and financial professionals",
+    "Political stakeholders",
+    "Governments",
+    "viewers",
+    "advertisers",
+    "content partners",
+    "distribution platforms",
+    "Direct-to-home satellite operators",
+    "Other distributors",
+    "Event clients",
+    "Production arrangement clients",
+    "No customer represents 10% or more of the Company's total revenue during the year ended 31 March 2026 and no customer represents 10% or more during previous year 31 March 2025.",
+    "Subscription customers",
+    "Related parties (Adani group entities)",
+    "Other media companies",
+    "Mobile VAS operators",
+    "customers for events",
+    "customers for production arrangements",
+    "customers for consultancy services",
+    "customers for online booking of gadgets and accessories",
+    "One customer represents 10% or more of the group's total revenue during the year ended 31 March 2026 and during previous year ended 31 March 2025"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "International (UK, USA, Canada, South Africa, Middle East, Australia, New Zealand, Mauritius, SAARC countries, Africa, Southeast Asia, Gulf, Qatar, etc.)",
+     "share_pct": null
+    },
+    {
+     "name": "India (national)",
+     "share_pct": null
+    },
+    {
+     "name": "International (UK, USA, MENA)",
+     "share_pct": null
+    },
+    {
+     "name": "International (UK, North America, Middle East, Africa, Australia, SAARC)",
+     "share_pct": null
+    },
+    {
+     "name": "National (India)",
+     "share_pct": 96
+    },
+    {
+     "name": "International",
+     "share_pct": 4
+    },
+    {
+     "name": "America (United States of America)",
+     "share_pct": null
+    },
+    {
+     "name": "Europe",
+     "share_pct": null
+    },
+    {
+     "name": "Others",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Noida, Uttar Pradesh (Corporate Office: Max Square, Floors 1 & 2, Plot No. C3-C, Noida-Greater Noida Expressway, Sector-129, Noida, Uttar Pradesh - 201304)",
+     "capacity": "Modern infrastructure, advanced technology, collaborative workspaces supporting future-ready newsroom"
+    },
+    {
+     "location": "New Delhi (Registered Office: W-17, 2nd Floor, Greater Kailash-1, New Delhi - 110048)",
+     "capacity": ""
+    },
+    {
+     "location": "Noida office",
+     "capacity": "State-of-the-art newsroom and operations hub with modern infrastructure, advanced technology integration, collaborative workspaces, employee amenities (cafeteria, fitness centre, creche, recreational spaces)"
+    },
+    {
+     "location": "Mumbai BKC Inspire Studio",
+     "capacity": "Advanced audio-video production and virtual capabilities studio designed by Austrian firm Veech, versatile design supporting talk shows to interactive formats"
+    },
+    {
+     "location": "Integrated Broadcast Hub",
+     "capacity": "3 large studios for national channels, 3 large primary control rooms, 1 event studio, 1 event primary control room, 1 standalone digital studio, 2 regional studios, 2 regional primary control rooms, 1 digital PCR, 1 studio with AR/VR, 1 PCR with AR/VR"
+    },
+    {
+     "location": "Noida",
+     "capacity": "Studio equipped with state-of-the-art infrastructure and cutting-edge technology"
+    },
+    {
+     "location": "Mumbai",
+     "capacity": "Studio equipped with state-of-the-art infrastructure and cutting-edge technology"
+    },
+    {
+     "location": "National",
+     "capacity": "13 offices, 0 plants"
+    },
+    {
+     "location": "W-17 sites and Max Square Noida Office",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "News and current affairs broadcasting",
+    "Digital news and content",
+    "Business news",
+    "Regional language news",
+    "Live entertainment and cultural experiences",
+    "News broadcasting",
+    "Digital news publishing",
+    "Business/financial news",
+    "Live events and experiential marketing",
+    "Public health and social campaigns",
+    "digital journalism",
+    "Digital media",
+    "Advertising",
+    "Media and Entertainment",
+    "Experiential events",
+    "media and broadcasting",
+    "Television media",
+    "Broadcasting",
+    "Television broadcasting",
+    "Event management",
+    "Content production",
+    "News production",
+    "e-commerce",
+    "digital platforms",
+    "direct-to-home satellite",
+    "mobile VAS",
+    "events",
+    "consultancy",
+    "e-commerce marketplace",
+    "Subscription services"
+   ],
+   "brands_or_certifications": [
+    "NDTV 24x7",
+    "NDTV India",
+    "NDTV Profit",
+    "NDTV Madhya Pradesh-Chhattisgarh",
+    "NDTV Rajasthan",
+    "NDTV Marathi",
+    "NDTV Good Times",
+    "NDTV World",
+    "NDTV World Summit",
+    "NDTV Indian of the Year",
+    "NDTV Masterstroke Art Awards",
+    "NDTV YUVA",
+    "NDTV Defence Summit",
+    "NDTV Ind.ai Summit",
+    "NDTV Creators Manch",
+    "Banega Swasth India",
+    "India Sustainability Mission 2.0",
+    "Bachpan Manao",
+    "NDTV PGTI Golf Pro-Am",
+    "NDTV Profit Ignite",
+    "GST Conclave",
+    "NDTV Madhya Pradesh - Chhattisgarh",
+    "NDTV Convergence",
+    "News Broadcasters & Digital Association (NBDA) member",
+    "Indian Broadcasting and Digital Foundation member",
+    "NDTV MPCG",
+    "NDTV",
+    "NDTV Worldwide",
+    "ndtv.com",
+    "Gadgets360.com",
+    "mojarto.com"
+   ],
+   "competitors_named": [
+    "YouTube",
+    "TikTok",
+    "WhatsApp",
+    "International platforms and content formats"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "NDTV is well positioned to navigate the next phase of media transformation with strong institutional capabilities, growing digital scale, and a talented team across the organisation. Focus on fortifying foundations of long-term growth \u2013 deepening technological capabilities, expanding digital reach, enhancing production infrastructure, and integrating data-driven insights.",
+    "period": "FY 2026-27 and beyond"
+   },
+   {
+    "statement": "India's real GDP growth for FY 2025-26 estimated at 7.6%, with Union Budget FY 2026-27 raising public capital expenditure to Rs 12.2 lakh crore, reshaping infrastructure, logistics, urban development, and digital economy.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "NDTV's strategy is centred on strengthening the qualities that make journalism valuable while expanding the ways audiences encounter and engage with it, focusing on storytelling that offers context, credibility and human perspective, expanding distribution across Connected TV and OTT platforms, strengthening global reach through NDTV 24x7 International and NDTV World, building new platform partnerships (mobile apps NDTV and NDTV Profit), and launching experiential formats like NDTV Good Times.",
+    "period": "FY 2025-26 and beyond"
+   },
+   {
+    "statement": "The proposed acquisition of the \"Good Times\" Channel is expected to strengthen the Company's strategic positioning, diversify and expand its operational capabilities, and enhance long-term stakeholder value.",
+    "period": "FY 2025-26 onwards"
+   },
+   {
+    "statement": "India enters FY 2025-26 with strong growth momentum, supported by resilient domestic demand, sustained public capital expenditure and improving private investment activity. As per the First Advance Estimates, real GDP growth for FY 2025-26 is placed at 7.4%. Inflation has moderated sharply, with average headline inflation declining to 1.7% during April-December 2025. The Reserve Bank of India has revised its FY 2025-26 inflation projection downwards to 2.0%, creating a supportive environment for household consumption and business confidence.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Union Budget 2026-27 outlines a strategic shift towards sustaining growth through productivity enhancement, supply-side reforms and capacity building, while maintaining fiscal discipline. Public capital expenditure has been increased to Rs 12.2 lakh crore, reinforcing the government's continued focus on infrastructure development, logistics, urban connectivity and industrial corridors, which are expected to crowd-in private investment and support medium-term growth. The Budget places strong emphasis on manufacturing competitiveness, MSME development and critical sectors such as biopharma, clean energy, electronics.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The Indian advertising market is expected to sustain growth over the medium term, driven by continued expansion of digital channels, greater media consumption across demographic segments, and increasing participation of regional and small-medium enterprises.",
+    "period": "Medium term"
+   },
+   {
+    "statement": "The Indian M&E sector is expected to continue its growth trajectory in the medium term, with industry revenues projected to reach approximately Rs 2.86 trillion in 2026. Excluding the online gaming segment, the sector is expected to grow by approximately 8% in 2026.",
+    "period": "2026"
+   },
+   {
+    "statement": "Over the longer term, the sector is projected to expand at a CAGR of over 7% to reach approximately Rs 3.3 trillion (US$37.9 billion) by 2028. Digital media is expected to remain the principal growth engine for the industry.",
+    "period": "By 2028"
+   },
+   {
+    "statement": "The digital media segment is expected to grow at a CAGR of 14% and reach Rs 1,640 billion by 2028.",
+    "period": "By 2028"
+   },
+   {
+    "statement": "Linear TV ad revenues are projected to decline at a net three-year CAGR of 6.8% until 2028.",
+    "period": "Next 3 years to 2028"
+   },
+   {
+    "statement": "Linear Pay TV distribution income likely to fall at 3% CAGR until 2028.",
+    "period": "Until 2028"
+   },
+   {
+    "statement": "News TV will continue to evolve its business model with shift toward a \"News+\" model expanding beyond hard news into adjacent genres, premium and mass audiences addressed through distinct products and pricing, growing focus on IP led formats, branded content, events and exclusive offerings.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Connected TV will unlock product innovation with reach projected at 83 million households by 2030, creating urgency for broadcasters to monetise this audience with new products.",
+    "period": "By 2030"
+   },
+   {
+    "statement": "IPTV growth will reshape distribution and retention with bundled offerings (TV + broadband + OTT) likely to accelerate as Hybrid IPTV set top boxes merge linear TV with OTT apps.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Interactivity on TV will increase to deepen connect, with broadcasters creating more engagement-prone content to convert non-addressable Linear TV viewers into identifiable, re-targetable audiences.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Digital subscriptions are expected to continue growing at 15% CAGR over next 3 years, driven by Connected TV, smartphone penetration, and rising GDP per-capita.",
+    "period": "Next 3 years"
+   },
+   {
+    "statement": "SME ad spend will grow at 16% on the back of increased funding, export promotion initiatives and higher capital expenditure by the government.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The share of programmatic will continue to grow and will cross 50% of total digital media buying by 2026.",
+    "period": "By 2026"
+   },
+   {
+    "statement": "Digital Media Consumption presents an opportunity to expand digital platforms, engage with a wider audience, and deliver content through innovative digital channels, enhancing reach, brand visibility, and revenue streams.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Technological Advancements: Integration of AI, AR, and VR in content creation and delivery is creating new avenues for innovation and audience engagement.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Training and Development: Equipping workforce with requisite technical and behavioural skills through regular training helps raise quality bar and become future-ready.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Talent Attraction and retention: Recruiting and retaining the best talent to deliver value to customers and maintain market leadership.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Social Outreach Activities: Social outreach activities highly impact stakeholder relationships.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Prioritizing the expansion of its regional and global presence by demonstrating unwavering commitment to diversifying the reach and impact of its channels.",
+    "period": ""
+   },
+   {
+    "statement": "Setting goals and targets to reduce environmental impact, such as energy consumption, waste generation and water management. Exploring initiatives to increase energy efficiency, promote renewable energy sources, and implement responsible waste management practices.",
+    "period": ""
+   },
+   {
+    "statement": "Setting targets for increasing diversity in the workforce and achieving gender parity in leadership positions.",
+    "period": ""
+   },
+   {
+    "statement": "Prioritizing the health, safety, and well-being of employees through policies, trainings, and work-life balance initiatives.",
+    "period": ""
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Newsroom modernisation, upgraded production capabilities, expanded distribution across OTT platforms, connected television and international markets",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Transition to low-footprint newsgathering through mobile journalism (Mojo kits), reducing reliance on fuel-intensive DSNG vans",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Energy-efficient infrastructure upgrades including LED lighting, advanced studio equipment, centralised cooling systems",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Workplace sustainability enhancements including rooftop air filtration systems",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Digital-first workflows, AI integration (Microsoft Copilot Training, Adobe AI Firefly Training)",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Noida office operationalisation",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Integrated Broadcast Hub with 3 large studios, 3 primary control rooms, event studio, digital studio, regional studios",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Mumbai BKC Inspire Studio with advanced audio-video production and virtual capabilities",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Technology stack: Adobe editing system, 'Make in India' PAM platform, VIZRT5 and WASP3D graphics, Newsroom Computer System, digital-first publishing systems",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Mobile journalism transition: 20 OB vans scrapped, replaced with backpacks and Mojo kits",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Two dedicated mobile applications: NDTV and NDTV Profit",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Newsroom modernisation, production workflows and digital systems",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Capital expenditure towards information technology",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "Property, plant and equipment (net of advances)",
+    "amount_cr": 4.179,
+    "timeline": "As at 31 March 2026"
+   },
+   {
+    "item": "acquisition of property, plant and equipment",
+    "amount_cr": null,
+    "timeline": "refer note 35"
+   }
+  ],
+  "risks": [
+   "Global economic turbulence: IMF projects global growth slowing to 3.1% in 2026 from 3.3% in 2025",
+   "Armed conflict in Middle East creating headwinds",
+   "Geopolitical fragmentation and trade tensions from tariff regimes",
+   "Unrealised productivity potential of artificial intelligence",
+   "Inflation projected to tick upward in 2026, particularly across emerging markets",
+   "AI-driven content and disinformation posing challenges to trust",
+   "Synthetic media and information overload challenging public confidence",
+   "Self-censorship, government control over media institutions, press freedom under strain globally",
+   "Journalist safety: 310+ journalists killed between 2022 and September 2025, 82 media workers lost lives in 2024 alone",
+   "Changing patterns of media consumption (on-demand viewing, multi-platform engagement, algorithmic discovery)",
+   "AI-led platforms and real-time information flows reshaping content discovery",
+   "Need for agility in distribution and format adaptation",
+   "The major risks identified by the businesses are systematically addressed through mitigation actions on a continual basis. Further details on the Risk Management activities, including the implementation of the risk management policy, key risks identified and their mitigations are covered in Management Discussion and Analysis Report.",
+   "Increased cyberattack scenarios",
+   "Interlocutory Application filed by Resolution Professional under Sections 43 and 66 of Insolvency and Bankruptcy Code, 2016 challenging transactions by erstwhile subsidiary Indianroots Shopping Limited",
+   "CBI FIR against former promoters and NDTV officials alleging loan settlement irregularities",
+   "SEBI penalty of Rs 5 crore (reduced to Rs 0.10 crore by SAT) for non-disclosure of loan agreements",
+   "ED enforcement case investigation report (ECIR) under PMLA, quashed by Delhi High Court subject to revival",
+   "SEBI show cause notices for alleged violations of listing regulations, insider trading regulations, and takeover regulations",
+   "FEMA show cause notices for alleged contraventions amounting to Rs 4,183.01 crore and Rs 1,626.44 crore",
+   "Income tax reassessment proceedings and demands for multiple assessment years",
+   "Transfer pricing adjustments and corporate guarantee fee additions",
+   "Pending litigation with SEBI, CBI, ED, Income Tax Department, and RBI",
+   "Trade policy uncertainty and geopolitical developments continue to influence global business confidence",
+   "Sector-specific restrictions and evolving trade frameworks continue to shape cross-border flows and corporate planning",
+   "Platform concentration risk - dependence on a few dominant digital intermediaries for traffic and monetisation weakens bargaining power",
+   "Regulatory and compliance uncertainty - data protection, platform governance and content regulation frameworks may increase compliance costs and operational complexity",
+   "Ad fatigue and declining effectiveness - over-exposure to digital advertising risks lowering engagement",
+   "Piracy and content leakage - digital distribution exposes premium content to unauthorised circulation",
+   "Global competition for attention - international platforms and content formats compete directly for Indian audiences' time and spend",
+   "Monetisation imbalance - high consumption does not always translate into proportional revenue, with strong dependence on advertising models and pressure on subscription pricing",
+   "Fragmented attention economy - audience attention split across platforms, formats and languages makes sustained engagement harder",
+   "Low willingness to pay outside premium video - news and audio platforms struggle with building scalable paid consumer models",
+   "Measurement and attribution complexity - cross-platform measurement remains inconsistent",
+   "High content investment risk - rising content costs combined with unpredictable consumer preferences increase risk of underperforming investments",
+   "External risks from global trade policy uncertainty, geopolitical developments and financial market volatility",
+   "Pace of private capex recovery and rural demand conditions",
+   "AI-led changes in search and distribution reducing referral traffic to owned platforms",
+   "Generative AI adoption improving newsroom productivity but intensifying content competition",
+   "Financial prudence: Failure to identify potential financial risks and challenges could impact long-term sustainability",
+   "Large advertising deals: Dependence on limited number of major clients; advertising budgets sensitive to economy/industry trends; deals subject to renegotiation or non-renewal",
+   "Employees' Health & Safety: Failure to ensure health, safety and well-being of employees can impact productivity, business operations, customer satisfaction and profitability",
+   "Data Privacy and Cyber security: Risks from data breaches, malware, phishing, ransomware, insider threats leading to data breaches, financial losses, reputational damage",
+   "Technology risk: Potential for technology failure to disrupt business, primarily around software architecture, tooling, delivery and maintenance",
+   "Compliance and Governance: Non-compliance can severely impact business, brand name and credibility",
+   "Business Risk: Ethical conduct, integrity and transparency - non-adherence can lead to legal fines, penalties, financial forfeiture, damage to brand reputation, loss of business opportunities and valuation",
+   "Cyber security risks: Potential exposure of business information or communication system to dangerous elements resulting in loss of data from cyber-attack or data breach",
+   "Litigation with Enforcement Directorate (ED) regarding alleged contraventions under FEMA, 1999; compounding application filed with RBI; writ petition before Bombay High Court; provision of Rs 74 million recognised for compounding fee",
+   "Ongoing direct tax litigations involving significant amounts at various stages from preliminary discussions to court proceedings with inherent uncertainty and significant judgment in assessing outcomes and provisions.",
+   "Show cause notice from Directorate of Enforcement (ED) on additional matters regarding investments in Indian subsidiaries made by overseas subsidiaries; provision of Rs 40 million recognised for estimated compounding fee.",
+   "Cash losses incurred: Rs 2,488.88 million in current financial year and Rs 1,758.87 million in immediately preceding financial year.",
+   "Negative net worth: Total equity of Rs (290.85) million as at 31 March 2026.",
+   "Original title deeds of buildings with net carrying amount of Rs 12.48 million could not be made available for verification.",
+   "Credit risk on trade receivables and other financial assets",
+   "Impairment of non-financial assets",
+   "Defined benefit obligation estimation uncertainty",
+   "Fair value measurement of barter transactions",
+   "Useful life estimation of tangible and intangible assets",
+   "Provisions and contingencies recognition and measurement",
+   "Credit risk on trade receivables",
+   "Liquidity risk due to high borrowings",
+   "Interest rate risk on floating rate borrowings",
+   "Foreign currency risk (GBP and USD exposure)",
+   "Labour law changes impact (4 Labour Codes effective Nov 2025)",
+   "The Company did not recognize deferred tax assets on tax losses and other temporary differences because a trend of future profitability is not yet clearly discernible.",
+   "The Company has received legal notices of claims / lawsuits filed against it relating to infringement of copyrights, trademarks and defamation suits in relation to the programmes produced by it.",
+   "The Company has received various income tax demands and penalties for multiple assessment years, which are at various stages of appeal/litigation.",
+   "The Directorate of Enforcement (ED) issued show cause notices alleging contraventions under FEMA, some substantive in nature.",
+   "SEBI issued a Notice of Demand for recovery of penalty of Rs 20 million for alleged non-disclosure of tax demand.",
+   "Litigation with Enforcement Directorate under FEMA for alleged contraventions in investments by overseas subsidiaries",
+   "Ongoing direct tax litigations with tax authorities at various stages involving significant amounts",
+   "Assets held for sale (investment properties) expected to be sold within 12 months",
+   "Credit risk on trade receivables and financial assets",
+   "Liquidity risk in meeting financial obligations",
+   "Market risk - Foreign currency fluctuations (GBP and USD)",
+   "Market risk - Interest rate risk on floating rate borrowings",
+   "Concentration risk with one customer representing 10% or more of total revenue",
+   "Income Tax penalty proceedings under Section 271BA for A.Y. 2014-15",
+   "ED show cause notice alleging FEMA contraventions",
+   "SEBI penalty demand of Rs 20 million for alleged non-disclosure of tax demand",
+   "Multiple income tax demands and penalty orders across assessment years 2008-09 to 2017-18",
+   "Associate Red Pixels Ventures Limited income tax demand of Rs 120.9 million for A.Y. 2016-17",
+   "Unrecognised deferred tax assets on tax losses of Rs 1,312.84 million as at 31 March 2026"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Debt (unspecified lenders)",
+    "amount_cr": null,
+    "note": "Annual interest costs reduced from over Rs 21 crore to under Rs 2 crore after Rights Issue proceeds deployment; Rs 229 crore deployed towards debt repayment"
+   },
+   {
+    "lender_or_type": "Long-term debt",
+    "amount_cr": 273.196,
+    "note": "As on March 31, 2026; debt-equity ratio -991%"
+   },
+   {
+    "lender_or_type": "Banks and/or financial institutions",
+    "amount_cr": 288.2,
+    "note": "Working capital limits in excess of Rs 5 crores sanctioned on basis of security of current assets; non-current borrowings Rs 2,731.96 million, current borrowings Rs 150.00 million as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Borrowings (repayment)",
+    "amount_cr": -232.0,
+    "note": "Repayment of borrowings during FY2026 per cash flow statement (Rs 2,320.00 million)"
+   },
+   {
+    "lender_or_type": "Borrowings (proceeds)",
+    "amount_cr": 176.21,
+    "note": "Proceeds from borrowings during FY2026 per cash flow statement (Rs 1,762.09 million)"
+   },
+   {
+    "lender_or_type": "Axis Bank (secured)",
+    "amount_cr": 110.78,
+    "note": "Corporate Guarantee from Ultimate Holding Company, hypothecated by current assets and moveable properties, interest rate MCLR+0.55%, repayable in 20 quarterly installments from March 2026 to December 2030"
+   },
+   {
+    "lender_or_type": "NDTV Convergence Limited (unsecured, related party)",
+    "amount_cr": 177.42,
+    "note": "Interest rate 8.5%, due for repayment on 31 March 2029"
+   },
+   {
+    "lender_or_type": "Adani Enterprises Limited (unsecured, related party)",
+    "amount_cr": 0.0,
+    "note": "Interest rate 8.5%, due for repayment on 31 March 2029"
+   },
+   {
+    "lender_or_type": "Axis Bank - Working capital (secured)",
+    "amount_cr": 0.0,
+    "note": "Corporate Guarantee from Ultimate Holding Company, hypothecated by current assets and moveable properties, interest rate MCLR+0.55%, repayable on demand"
+   },
+   {
+    "lender_or_type": "Loans from banks, financial institutions and related parties",
+    "amount_cr": 288.2,
+    "note": "Total borrowings as at 31 March 2026: Rs 2,881.96 million"
+   },
+   {
+    "lender_or_type": "Adani Enterprises Limited",
+    "amount_cr": 174.0,
+    "note": "Loan received during year, corporate guarantee of Rs 1,350 million taken"
+   },
+   {
+    "lender_or_type": "NDTV Convergence Limited",
+    "amount_cr": 29.68,
+    "note": "Loan received during year"
+   },
+   {
+    "lender_or_type": "Other long-term borrowings",
+    "amount_cr": 102.176,
+    "note": "Note ref-16(a)"
+   },
+   {
+    "lender_or_type": "Other long-term borrowings",
+    "amount_cr": 72.5,
+    "note": "Note ref-16(a)"
+   },
+   {
+    "lender_or_type": "Other long-term borrowings",
+    "amount_cr": 75.245,
+    "note": "Note ref-16(a)"
+   },
+   {
+    "lender_or_type": "Other long-term borrowings",
+    "amount_cr": 168.647,
+    "note": "Note ref-16(a)"
+   },
+   {
+    "lender_or_type": "Lease liabilities",
+    "amount_cr": 71.525,
+    "note": "Total lease liability as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "secured loans",
+    "amount_cr": null,
+    "note": "property, plants and equipment with carrying amount of ` 1126.95 million ( 31 March 2025 ` 1124.53 million ) are subject to first charge to secured loans (refer note 17 and 37)"
+   },
+   {
+    "lender_or_type": "Axis Bank - Secured loan",
+    "amount_cr": 110.776,
+    "note": "Secured by Corporate Guarantee from Ultimate Holding Company (Adani Enterprises Limited) and hypothecation of current assets and movable properties. Interest rate MCLR+0.55%, repayable in 20 quarterly installments from March 2026 to December 2030."
+   },
+   {
+    "lender_or_type": "Adani Enterprises Limited - Unsecured loan",
+    "amount_cr": 75.245,
+    "note": "Interest rate 8.5%, due for repayment on 31 March 2029."
+   },
+   {
+    "lender_or_type": "Axis Bank - Working capital loan",
+    "amount_cr": 0.0,
+    "note": "Secured by Corporate Guarantee from Ultimate Holding Company and hypothecation of current assets and movable properties. Interest rate MCLR+0.55%, repayable on demand. Outstanding as at 31 March 2025: Rs 150 million."
+   }
+  ],
+  "auditor": {
+   "name": "S.N. Dhawan & Co LLP, Chartered Accountants (Firm Registration No. 00050N/N500045)",
+   "opinion": "Secretarial Audit Report confirms compliance with statutory provisions, proper Board processes and compliance mechanism; no deviations or non-compliances reported for Company and material subsidiary.",
+   "key_audit_matters": [
+    "Litigation with Enforcement Directorate (ED) regarding alleged contraventions under FEMA, 1999; compounding application filed with RBI; writ petition before Bombay High Court; provision of Rs 74 million recognised for compounding fee",
+    "Assessment of provision arising from ongoing tax litigations (direct tax) involving significant amounts and judgment.",
+    "Provision recognised and contingent liability in respect of show cause notice from Directorate of Enforcement (ED) on investments in Indian subsidiaries by overseas subsidiaries; provision of Rs 40 million for estimated compounding fee.",
+    "Litigation with Enforcement Directorate under FEMA for alleged contraventions in investments by overseas subsidiaries; provision of Rs 74 million recognised for compounding fee (year ended 31 March 2017) and Rs 40 million for additional alleged contraventions (previous years)",
+    "Assessment of provision arising from ongoing direct tax litigations at various stages involving significant amounts and significant judgment"
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter: Scheme of Amalgamation between the Company and its subsidiaries (NDTV Networks Limited, NDTV Worldwide Limited, NDTV Media Limited, NDTV Labs Limited) effective from 01 October 2025, approved by Regional Director (Northern Region), Ministry of Corporate Affairs, Delhi; accounted for in accordance with Ind AS 103 with effect from beginning of preceding period; comparative financial information restated",
+    "Original title deeds of buildings with net carrying amount of Rs 12.48 million could not be made available for verification.",
+    "Company has incurred cash losses of Rs 2,488.88 million in current financial year and Rs 1,758.87 million in immediately preceding financial year.",
+    "Negative net worth as at 31 March 2026.",
+    "CARO qualifications/adverse remarks for Holding Company (New Delhi Television Limited), Subsidiary (NDTV Convergence Limited), and Associate (Red Pixels Ventures Limited) under clause (xvii)",
+    "Three joint ventures' financial statements unaudited and furnished by management; investments fully impaired in earlier years, no further share of loss recognised",
+    "Two joint ventures' financial statements not received for year ended 31 March 2026; investments fully impaired in earlier years, status reported as inactive on MCA portal"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Appointment of Mr. Rahul Kanwal as Chief Executive Officer and Editor-in-Chief",
+    "Mr. Viral Jagdish Doshi re-appointed as Independent Director for a second term of three years w.e.f. January 24, 2026 (approved by shareholders via postal ballot on December 26, 2025).",
+    "Mr. Sanjay Pugalia re-appointed as Whole-time Director for a further term of three years w.e.f. April 1, 2026 (approved by shareholders via postal ballot on March 27, 2026).",
+    "Mr. Rahul Kanwal appointed as Chief Executive Officer w.e.f. May 26, 2025.",
+    "Mr. Anup Dutta ceased as Chief Financial Officer w.e.f. close of business hours on November 30, 2025.",
+    "Mr. Akhil Kumar Gupta appointed as Chief Financial Officer w.e.f. December 1, 2025.",
+    "Mr. Senthil Chengalvarayan liable to retire by rotation at ensuing AGM and offers himself for re-appointment.",
+    "Mr. Senthil Chengalvarayan re-designated from Whole-time Director to Non-Executive Non-Independent Director w.e.f. April 1, 2025",
+    "Mr. Rahul Kanwal appointed w.e.f. May 26, 2025",
+    "Mr. Akhil Kumar Gupta appointed w.e.f. December 1, 2025",
+    "Mr. Anup Dutta ceased as CFO w.e.f. November 30, 2025",
+    "Mr. Senthil Chengalvarayan appointed as Non-Executive Director w.e.f. April 1, 2025",
+    "Mr. Upendra Kumar Sinha designated as Chairperson of the Board w.e.f. March 27, 2023",
+    "Mr. Sanjay Pugalia appointed as Whole-time Director w.e.f. April 1, 2023",
+    "Mr. Senthil Chengalvarayan (DIN: 02330757), Non-Executive Director is retiring at the ensuing AGM and being eligible, offers himself for re-appointment.",
+    "Mr. Viral Jagdish Doshi (DIN: 00583487) was re-appointed as an Independent Director of the Company for a second term of three (3) consecutive years w.e.f. January 24, 2026, up to January 23, 2029. The shareholders of the Company approved his re-appointment by way of special resolution passed through Postal Ballot on December 26, 2025.",
+    "Mr. Sanjay Pugalia (DIN: 08360398) was re-appointed as a Whole-time Director of the Company for a further term of three (3) consecutive years w.e.f. April 1, 2026, up to March 31, 2029. The shareholders of the Company approved his re-appointment by way of special resolution passed through Postal Ballot on March 27, 2026.",
+    "Re-appointment of Ms. Dipali Goenka (DIN: 00007199) as an Independent Director of the Company to hold office for a second term of three (3) years",
+    "Re-appointment of Mr. Dinesh Kumar Mittal (DIN: 00040000) as an Independent Director of the Company to hold office for a second term of three (3) years",
+    "Appointment of Mr. Dinesh Kumar Mittal (DIN: 00040000) as an Independent Director of the Company (2022-23 AGM)",
+    "Senthil Chengalvarayan: Whole-time Director (till 31 March 2025), Non-Executive Non-Independent Director (w.e.f. 1 April 2025)",
+    "Rahul Kanwal: CEO and Editor-in-Chief, NDTV Group (w.e.f 26 May 2025)",
+    "Akhil Kumar Gupta: Chief Financial Officer, NDTV Group (w.e.f 1 December 2025)",
+    "Anup Dutta: Chief Financial Officer, NDTV Group (till 30 November 2025)",
+    "Mr. Senthil Chengalvarayan (DIN: 02330757) retires by rotation at the 38th AGM and seeks re-appointment",
+    "Mr. Senthil Chengalvarayan re-designated as Non-Executive Non-Independent Director w.e.f. April 1, 2025, liable to retire by rotation"
+   ],
+   "promoter_holding_pct": 69.02,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 69.02
+    },
+    {
+     "name": "Public",
+     "pct": 30.98
+    },
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 69.02
+    },
+    {
+     "name": "Indian Public and others",
+     "pct": 26.64
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 3.68
+    },
+    {
+     "name": "NRI/Foreign Nationals",
+     "pct": 0.62
+    },
+    {
+     "name": "Foreign Institutional Investors / Portfolio Investor",
+     "pct": 0.04
+    },
+    {
+     "name": "Mutual Funds/Banks/Financial Institutions",
+     "pct": 0.0
+    },
+    {
+     "name": "RRPR Holding Private Limited",
+     "pct": 59.8
+    },
+    {
+     "name": "Vishvapradhan Commercial Private Limited",
+     "pct": 9.22
+    },
+    {
+     "name": "Adani Enterprises Limited",
+     "pct": null
+    },
+    {
+     "name": "AMG Media Networks Limited",
+     "pct": null
+    },
+    {
+     "name": "Vishvapradhan Commercial Private Limited",
+     "pct": null
+    },
+    {
+     "name": "RRPR Holding Private Limited",
+     "pct": null
+    },
+    {
+     "name": "Vishvapradhan Commercial Private Limited",
+     "pct": 9.21
+    }
+   ],
+   "auditor_change": "M/s. S.N. Dhawan & Co. LLP re-appointed as Statutory Auditors for second term of five years till conclusion of 42nd AGM to be held in 2030."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Upendra Kumar Sinha",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Rahul Kanwal",
+     "role": "Chief Executive Officer and Editor-in-Chief"
+    },
+    {
+     "name": "Parinita Bhutani Duggal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Vasudha Venugopal",
+     "role": "News Anchor/Reporter at NDTV 24x7"
+    },
+    {
+     "name": "Shiv Aroor",
+     "role": "Managing Editor and Senior Anchor, NDTV 24x7"
+    },
+    {
+     "name": "Padmaja Joshi",
+     "role": "Prime Time Anchor, NDTV 24x7"
+    },
+    {
+     "name": "Manogya Loiwal",
+     "role": "Managing Editor & Consulting Editor at NDTV"
+    },
+    {
+     "name": "TM Veeraraghav",
+     "role": "Executive Editor at NDTV"
+    },
+    {
+     "name": "Hywin Antony A",
+     "role": "Marketing, Noida, Uttar Pradesh"
+    },
+    {
+     "name": "Mr. Upendra Kumar Sinha",
+     "role": "Independent Director & Chairperson (w.e.f. March 27, 2023)"
+    },
+    {
+     "name": "Mr. Sanjay Pugalia",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. Rahul Kanwal",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Akhil Kumar Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Parinita Bhutani Duggal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Senthil Chengalvarayan",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Upendra Kumar Sinha",
+     "role": "Independent Director & Chairperson"
+    },
+    {
+     "name": "Mr. Viral Jagdish Doshi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Dipali Goenka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Dinesh Kumar Mittal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Rahul Kanwal",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Mr. Akhil Kumar Gupta",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Ms. Parinita Bhutani Duggal",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Mr. Senthil Chengalvarayan",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Upendra Kumar Sinha",
+     "role": "Chairperson and Independent Director"
+    },
+    {
+     "name": "Mr. Upendra Kumar Sinha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Parinita Bhutani Duggal",
+     "role": "Company Secretary, Compliance Officer"
+    },
+    {
+     "name": "Mr. Debraj Bhadra",
+     "role": "Member, Risk Management Committee"
+    },
+    {
+     "name": "Mr. Upendra Kumar Sinha",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Ms. Parinita Bhutani Duggal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Sanjay Pugalia",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Senthil Chengalvarayan",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Nikhil Guliani",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Purva Misra",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Dinesh Singh",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Rahul Shaw",
+     "role": "Senior Management"
+    },
+    {
+     "name": "Mr. Sanjay Pugalia",
+     "role": "Chairperson, Risk Management Committee"
+    },
+    {
+     "name": "Ms. Dipali Goenka",
+     "role": "Member, Risk Management Committee"
+    },
+    {
+     "name": "Rajeev Kumar Saxena",
+     "role": "Partner, S N Dhawan & CO LLP (Auditor)"
+    },
+    {
+     "name": "Rajeev Kumar Saxena",
+     "role": "Partner (Auditor)"
+    },
+    {
+     "name": "Sanjay Pugalia",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Senthil Chengalvarayan",
+     "role": "Director"
+    },
+    {
+     "name": "Rahul Kanwal",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Akhil Kumar Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Parinita Duggal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Senthil Chengalvarayan",
+     "role": "Whole-time Director (till 31 March 2025), Non-Executive Non-Independent Director (w.e.f. 1 April 2025)"
+    },
+    {
+     "name": "Rahul Kanwal",
+     "role": "CEO and Editor-in-Chief, NDTV Group (w.e.f 26 May 2025)"
+    },
+    {
+     "name": "Akhil Kumar Gupta",
+     "role": "Chief Financial Officer, NDTV Group (w.e.f 1 December 2025)"
+    },
+    {
+     "name": "Anup Dutta",
+     "role": "Chief Financial Officer, NDTV Group (till 30 November 2025)"
+    },
+    {
+     "name": "Parinita Bhutani Duggal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Viral Jagdish Doshi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Upendra Kumar Sinha",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Dipali Goenka",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Dinesh Kumar Mittal",
+     "role": "Non-Executive Independent Director"
+    }
+   ],
+   "employees": 845
+  },
+  "other_notable": [
+   "38th AGM scheduled for June 26, 2026 at 12:00 PM IST via Video Conferencing",
+   "Cut-off date for e-voting: June 19, 2026",
+   "Annual Report available at www.ndtv.com",
+   "Rights Issue of Rs 396.50 crore at Rs 82 per share (entitlement ratio 3:4) completed in October 2025, oversubscribed 1.11 times",
+   "Rights Issue proceeds: Rs 229 crore for debt repayment, Rs 71 crore for strategic initiatives (distribution, marketing, IP development), Rs 96.50 crore for general corporate purposes",
+   "Consolidated Revenue: Rs 528.29 crore (13.60% Y-o-Y growth)",
+   "Digital reach: 45 million lifetime YouTube subscribers, 102 million combined social media followers, 40 billion video views across digital platforms, 65 countries reached",
+   "NDTV 24x7: No.1 English news channel among affluent viewers (33.4% share), highest-ever BARC viewership with multiple Top-2 rankings, most viewed English news channel on YouTube for 10 consecutive months from June 2025",
+   "NDTV India: Highest-ever market share 6%, ranked among top 5 in Hindi News Genre",
+   "NDTV Profit: 51% market share, 25x viewership share growth (Apr-Dec 2025), ranked No.1 in genre",
+   "NDTV Rajasthan: 24% market share, among top 3 channels in genre",
+   "NDTV Madhya Pradesh-Chhattisgarh: 15% market share, ranked among top 4 in genre",
+   "NDTV Marathi: More than 51 million people tune in, ranked 6th within one year of launch, 40% manpower vs legacy networks",
+   "NDTV World Summit convened October 2025 with PM Modi, Sri Lanka PM Harini Amarasuriya, former UK PM Rishi Sunak, former Australian PM Tony Abbott",
+   "Launched flagship IPs: Creators Manch, NDTV Golf Pro-Am, NDTV Masterstroke Art Awards, NDTV Ind.Ai Summit",
+   "ESG initiatives: Responsible waste ecosystem with structured recycling of paper, certified e-waste disposal, bio-waste management",
+   "Key training initiatives: Microsoft Copilot Training, Adobe AI Firefly Training, Broadcast Leadership Programme, Strategic Manager Programme, Town Halls, Young Managers Programme",
+   "#NDTVCares in-house cr\u00e8che launched to support working parents",
+   "NDTV 24x7: #1 English news website with ~41 million users (ComScore MMX, March 2026), #1 English news genre on YouTube since Jun-25, #1 highest reached news brand in India for 5th consecutive year (Reuters Digital News Report 2025), 508 million unique visitors (Google Analytics), ~16 million YouTube subscribers, 17.2 million X followers, 3.6 million Instagram followers",
+   "NDTV India: #1 Hindi news website with 51 million users (ComScore MMX Jun'25), 2.9 billion total views for Hindi broadcasters on YouTube (Databeings Mar'26), 234 million unique visitors on website (Google Analytics), 25 million YouTube subscribers, 4.2 million X followers, 3 million Instagram followers",
+   "NDTV Profit: 60 million total site visits, #1 in English business news genre on YouTube (Databeings Mar'26), 39 million unique visitors on website (Google Analytics), 1.6 million YouTube subscribers, 337K X followers, 427K Instagram followers",
+   "NDTV Marathi: 90 million views, 115K Instagram followers, 4.3K X followers, 485K YouTube subscribers, 1.2 million average page views per month",
+   "NDTV Rajasthan: 473K YouTube subscribers, 8.7K X followers, 83 million views, 187K Instagram followers, 622K YouTube subscribers, 219K Instagram followers, 120K Facebook followers, 2.7 million average page views per month",
+   "NDTV World: 286.3 million total site visits, 123 million unique visitors (Google Analytics)",
+   "Environmental: 20 OB vans scrapped, 6,93,500 kWh electricity savings/year (206.9 tonnes CO2 avoided), 8,46,960 kWh electricity savings/year (492 credits), 5,97,081 kg CO2 avoided (597 credits), rooftop fresh-air filtration system, LED lighting, energy-efficient studio equipment, chiller plant system, glass architecture for heat reduction, waste segregation/recycling, certified e-waste disposal, bio-waste processing, tree plantation drives, car-pooling and shuttle services",
+   "Social: In-house cr\u00e8che (#NDTVCares) for children up to 14 years, mental health sessions, stress management workshops, counselling services, wellness engagements, dedicated medical room, annual health check-ups, canteen services for early morning shifts, POSH training sessions, AI Copilot training for all employees, specialised Anchors Training, LOOP onboarding, Young Managers Programme, PI behavioural assessments",
+   "Community: Banega Swasth India Season 12 (Dettol-NDTV) focusing on #IAmTheChange for Swachh, Sujal, Swasth India with ambassador Ayushmann Khurrana, HPV vaccination awareness campaign, India Sustainability Mission 2.0, Bachpan Manao for child well-being, JRC-led community engagement",
+   "Events: NDTV World Summit (Oct 17-18, 2025) with PM Modi, former PMs Tony Abbott, Rishi Sunak, Sri Lanka PM Harini Amarasuriya; NDTV Creators Manch Season 2 with Nawazuddin Siddiqui; NDTV Indian of the Year 2025 (14 categories, armed forces honoured); NDTV Masterstroke Art Awards 2026; NDTV YUVA 2025 Mumbai Edition; Defence Summit 2025 (Aug 30) on 'Warfare in the 21st Century'; NDTV Ind.ai Summit 2026 (Feb 18); NDTV PGTI Golf Pro-Am (Nov 2025, multi-city); NDTV Good Times concerts: My Story \u2013 Yo Yo Honey Singh (Mumbai, Delhi, Mar 2026), Harmony of Hearts \u2013 A.R. Rahman (Delhi, Dec 20, 2025), Raag On \u2013 Shankar Ehsaan Loy (Mumbai, Feb 8, 2025), Sonu Nigam Live (Srinagar, Oct 26, 2025)",
+   "Authorized share capital increased from Rs 1,733 million to Rs 2,367.7 million during FY 2025-26.",
+   "Paid-up share capital increased from Rs 257.89 million to Rs 451.30 million pursuant to Rights Issue.",
+   "Scheme of Amalgamation of NDTV Media Limited, NDTV Networks Limited, NDTV Labs Limited, and NDTV Worldwide Limited with NDTV sanctioned by Regional Director, Northern Region, Delhi on September 11, 2025, effective from October 1, 2025 (Appointed Date).",
+   "Previous year figures restated due to the merger of NDTV Labs Limited, NDTV Media Limited, NDTV Networks Limited and NDTV Worldwide Limited with New Delhi Television Limited.",
+   "NDTV 24x7 recorded highest YouTube viewership among peers with ~16 million subscribers; NDTV Profit and NDTV India delivered strong performance with 1.6 million and 2.9 billion views respectively.",
+   "NDTV 24x7 achieved highest-ever BARC viewership with 33.4% share among affluent audiences; NDTV India attained highest-ever market share of 6% among affluent viewers.",
+   "NDTV is the most-popular English news handle on X in India with 17.2 million followers; YouTube channel highest subscribed English news channel in India with ~16 million subscribers; one of the most-followed English news accounts on Instagram in India with 3.6 million followers.",
+   "Video views across online platforms crossed 40 billion views in FY26 with combined presence of over 102 million across social media platforms and over 45 million lifetime subscribers on YouTube across all NDTV Group Channels.",
+   "Board met 8 times during FY 2025-26; intervening gap between meetings did not exceed 120 days.",
+   "Independent Directors met on March 10, 2026 without presence of Non-Independent Directors and management.",
+   "Company has deployed an online compliance management system to monitor compliances and provide updates to senior management periodically.",
+   "Business Responsibility & Sustainability Report (BRSR) for FY 2025-26 forms part of Annual Report.",
+   "No material changes and commitments affecting financial position occurred between end of financial year and date of report.",
+   "No public deposits accepted during FY 2025-26.",
+   "Corporate Social Responsibility: NA (not applicable).",
+   "CSR not applicable for FY26 as Company not required to spend under Section 135; CSR-2 form not applicable",
+   "Cost records maintained and audited for FY 2024-25; Cost Auditors M/s. Sanjay Gupta & Associates re-appointed for FY 2026-27",
+   "Vigil Mechanism/Whistle Blower Policy in place; no complaints received during year",
+   "Prevention of Sexual Harassment (POSH) Policy and Internal Committees constituted; no complaints received during year",
+   "Code for Prevention of Insider Trading (PIT Code) adopted; mandatory training/certification for employees",
+   "Cyber security maturity reviewed periodically; technology environment enabled with real-time security monitoring; no data loss or breaches reported",
+   "Compliance with Secretarial Standards-1 and Secretarial Standards-2",
+   "Statutory Auditors and Secretarial Auditor reported no frauds under Section 143(12)",
+   "Maternity Benefits Act, 1961 complied with; all eligible women employees extended benefits",
+   "No disclosure required for: issue of equity shares with differential rights, issue of shares under employee schemes, significant/material orders impacting going concern, change in nature of business, one-time loan settlement, revision of financial statements, voting rights not directly exercised by employees",
+   "Foreign exchange earned: Rs 151.13 million (2025-26), Rs 140.67 million (2024-25)",
+   "Foreign exchange outgo: Rs 219.22 million (2025-26), Rs 177.42 million (2024-25)",
+   "Board composition as on March 31, 2026: 6 Directors (1 Executive, 1 Non-Executive, 4 Independent including Chairperson and Woman Director)",
+   "Company in compliance with SEBI Listing Regulations corporate governance conditions",
+   "NDTV Profit re-launched as comprehensive hub integrating television, digital, and audio experiences",
+   "Studios in Noida and Mumbai equipped with LED lights for energy conservation",
+   "Use of Distribution Management System (DMX) and Virtual Central Management System (VCMS) for live streams and VODs"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Rights Issue of Equity Shares for an amount not exceeding Rs 3,964.98 million opened on September 22, 2025 and closed on October 8, 2025; allotment of 4,83,53,450 equity shares of face value Rs 4 each at an issue price of Rs 82 per equity share (including a premium of Rs 78 per share) approved on October 9, 2025.",
+    "value_cr": 396.498
+   },
+   {
+    "statement": "Acquisition of the business undertaking comprising the \"Good Times\" Channel from Lifestyle & Media Broadcasting Limited (LMBL) as a going concern by way of slump sale, subject to customary conditions precedent and regulatory approvals from the Ministry of Information and Broadcasting.",
+    "value_cr": null
+   },
+   {
+    "statement": "Right Issue of Equity Shares aggregating up to Rs 400 Crore approved by Board on September 2, 2025; detailed terms approved on September 8, 2025 for issuance of 4,83,53,450 equity shares at Rs 82 per share (including premium of Rs 78 per share), in ratio of 3:4, aggregating to Rs 396.5 Crore, record date September 12, 2025, issue period September 22, 2025 to October 8, 2025.",
+    "value_cr": 396.5
+   },
+   {
+    "statement": "Acquisition of \"GoodTimes\" Channel business undertaking from Lifestyle & Media Broadcasting Limited by way of slump sale on a going concern basis, approved by Board on September 19, 2025, for consideration up to Rs 18 Crore on cash-free, debt-free basis, based on independent valuation, related party transaction in ordinary course and at arm's length.",
+    "value_cr": 18
+   },
+   {
+    "statement": "Scheme of Amalgamation between NDTV Networks Limited, NDTV Worldwide Limited, NDTV Media Limited and NDTV Labs Limited (Transferor Companies) and New Delhi Television Limited (Transferee Company) approved by respective Boards and sanctioned by Regional Director, Northern Region, Ministry of Corporate Affairs vide order dated September 11, 2025, pursuant to Section 233 of Companies Act, 2013.",
+    "value_cr": null
+   },
+   {
+    "statement": "The aggregate value of transaction price allocated to unsatisfied (or partially satisfied) performance obligations is Rs 404.82 million (31 March 2025 Rs 277.87 million) out of which 100% is expected to be recognised as revenue in the next year.",
+    "value_cr": 40.482
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "Red Pixels Ventures Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "AMG Media Networks Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "QBML Media Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "IANS India Private Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "RRPR Holding Private Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "Vishvapradhan Commercial Private Limited",
+    "holding_pct": null,
+    "business": "Online/digital broadcast media, Business and financial news digital platform"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "publishing news and current affairs content"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "Digital arm owning cutting-edge technology selectively licensed to third parties"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": "Mentioned in FEMA show cause notice"
+   },
+   {
+    "name": "NDTV Studios Limited",
+    "holding_pct": null,
+    "business": "Mentioned in FEMA show cause notice for delay in filing form ODI"
+   },
+   {
+    "name": "NDTV Imagine Pictures Limited",
+    "holding_pct": null,
+    "business": "Mentioned in FEMA show cause notice for failure to allot shares within prescribed time"
+   },
+   {
+    "name": "NDTV Imagine Limited",
+    "holding_pct": null,
+    "business": "Mentioned in FEMA show cause notice for unauthorized downstream investments"
+   },
+   {
+    "name": "NDTV Networks PLC",
+    "holding_pct": null,
+    "business": "Former subsidiary mentioned in FEMA contraventions and corporate guarantee transfer pricing issue"
+   },
+   {
+    "name": "RRPR Holding Private Limited",
+    "holding_pct": null,
+    "business": "Former promoter entity involved in loan agreements with ICICI Bank and VCPL"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "Material subsidiary"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": 95.4,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Red Pixels Ventures Limited",
+    "holding_pct": 44.16,
+    "business": "Associate"
+   },
+   {
+    "name": "OnArt Quest Limited",
+    "holding_pct": 31.8,
+    "business": "Joint Venture"
+   },
+   {
+    "name": "Lifestyle & Media Holdings Limited",
+    "holding_pct": 48.93,
+    "business": "Joint Venture"
+   },
+   {
+    "name": "Lifestyle & Media Broadcasting Limited",
+    "holding_pct": 48.71,
+    "business": "Joint Venture"
+   },
+   {
+    "name": "Indianroots Shopping Limited",
+    "holding_pct": 49.21,
+    "business": "Joint Venture (undergoing liquidation proceedings before NCLT, Delhi)"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "NDTV Worldwide Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "NDTV Media Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "NDTV Labs Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "OnArt Quest Limited",
+    "holding_pct": null,
+    "business": "Joint venture"
+   },
+   {
+    "name": "Lifestyle & Media Holdings Limited (formerly NDTV Lifestyle Holdings Limited)",
+    "holding_pct": null,
+    "business": "Subsidiary (net of provision for other than temporary diminution aggregating to Rs 1,575.11 million)"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": null,
+    "business": "Digital media subsidiary"
+   },
+   {
+    "name": "NDTV Media Limited",
+    "holding_pct": null,
+    "business": "Merged into company effective 1st October 2025"
+   },
+   {
+    "name": "NDTV Labs Limited",
+    "holding_pct": null,
+    "business": "Merged into company effective 1st October 2025"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "NDTV Worldwide Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "QBML Media Limited",
+    "holding_pct": null,
+    "business": "Subsidiary (formerly Quintillion Business Media Limited)"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": "Merged with the company w.e.f. 01.10.2025"
+   },
+   {
+    "name": "NDTV Labs Limited",
+    "holding_pct": null,
+    "business": "Merged with the company w.e.f. 01.10.2025"
+   },
+   {
+    "name": "NDTV Worldwide Limited",
+    "holding_pct": null,
+    "business": "Merged with the company w.e.f. 01.10.2025"
+   },
+   {
+    "name": "NDTV Media Limited",
+    "holding_pct": null,
+    "business": "Merged with the company w.e.f. 01.10.2025"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": 95.4,
+    "business": "to exploit the synergies between television, internet and mobile and owns the website ndtv.com"
+   },
+   {
+    "name": "NDTV Media Limited",
+    "holding_pct": null,
+    "business": "Merged in to the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": "Merged in to the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Labs Limited",
+    "holding_pct": null,
+    "business": "Merged in to the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Worldwide Limited",
+    "holding_pct": null,
+    "business": "Merged in to the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Networks Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary amalgamated with the Company"
+   },
+   {
+    "name": "NDTV Media Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary amalgamated with the Company"
+   },
+   {
+    "name": "NDTV Labs Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary amalgamated with the Company"
+   },
+   {
+    "name": "NDTV Worldwide Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary amalgamated with the Company"
+   },
+   {
+    "name": "NDTV Media Limited (NML)",
+    "holding_pct": null,
+    "business": "Merged into the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Networks Limited (NNL)",
+    "holding_pct": null,
+    "business": "Merged into the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Labs Limited (NDTV Labs)",
+    "holding_pct": null,
+    "business": "Merged into the Company effective 1 October 2025"
+   },
+   {
+    "name": "NDTV Convergence Limited",
+    "holding_pct": 95.4,
+    "business": "Media business"
+   },
+   {
+    "name": "QBML Media Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Vishvapradhan Commercial Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "RRPR Holding Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Red Pixels Ventures Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IANS India Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Digital News Publishers Associations",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "None",
+    "nature": "No related party transactions entered during the year under review which could be prejudicial to the interest of minority shareholders.",
+    "amount_cr": null
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "Acquisition of \"GoodTimes\" Channel business undertaking by way of slump sale",
+    "amount_cr": 18
+   },
+   {
+    "party": "AMG Media Networks Limited",
+    "nature": "Holding company; Mr. Sanjay Pugalia draws remuneration from AMG Media in his capacity as director",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Purchases",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Sales",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments",
+    "amount_cr": null
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 14.89
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Contract assets",
+    "amount_cr": 5.27
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Security deposits received",
+    "amount_cr": 36.49
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Trade payables",
+    "amount_cr": 7.57
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 7.98
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Interest accrued on borrowing",
+    "amount_cr": 5.27
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 5.5
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "Trade payables",
+    "amount_cr": 6.34
+   },
+   {
+    "party": "OnArt Quest Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 1.22
+   },
+   {
+    "party": "OnArt Quest Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.59
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 1.3
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "QBML Media Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "QBML Media Limited",
+    "nature": "Trade payables",
+    "amount_cr": 4.82
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 0.69
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Adani Defence Systems And Technologies Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 0.09
+   },
+   {
+    "party": "Ambuja Cements Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 1.26
+   },
+   {
+    "party": "Adani Power Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 5.9
+   },
+   {
+    "party": "Manorview Developers Private Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 0.09
+   },
+   {
+    "party": "Guwahati International Airport Limited",
+    "nature": "Trade receivables",
+    "amount_cr": 2.99
+   },
+   {
+    "party": "Adani Ports And Special Economic Zone Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 6.29
+   },
+   {
+    "party": "Adani Green Energy Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 3.44
+   },
+   {
+    "party": "Jaipur International Airport Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 1.9
+   },
+   {
+    "party": "Lucknow International Airport Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 3.8
+   },
+   {
+    "party": "Mundra Solar Energy Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 0.45
+   },
+   {
+    "party": "Mundra Solar PV Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Adani Infrastructure Management Services Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 0.03
+   },
+   {
+    "party": "ACC Limited",
+    "nature": "Contract liabilities",
+    "amount_cr": 0.63
+   },
+   {
+    "party": "Adani Digital Lab Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Cleartrip Packages & Tours Private Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.91
+   },
+   {
+    "party": "AMG Media Networks Limited",
+    "nature": "Trade payables",
+    "amount_cr": 1.09
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Loan taken (unsecured)",
+    "amount_cr": 177.42
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Loan taken (unsecured)",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Ultimate Holding Company - Loan received, interest paid, corporate guarantee taken",
+    "amount_cr": 174.0
+   },
+   {
+    "party": "NDTV Convergence Limited",
+    "nature": "Subsidiary - Rendering services, trademark royalty, shared services, rental income, loan received, interest received",
+    "amount_cr": 29.68
+   },
+   {
+    "party": "QBML Media Limited",
+    "nature": "Subsidiary - Services availed, shared service income",
+    "amount_cr": 23.3
+   },
+   {
+    "party": "Adani Group Entities (various)",
+    "nature": "Entities under controlling entity - Rendering services, services availed",
+    "amount_cr": 28.47
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "Joint Venture - Revenue earned on behalf, payment made on behalf, shared service income",
+    "amount_cr": 2.66
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "Associate - Rendering services, trademark royalty, services availed, shared service income, payment made on behalf",
+    "amount_cr": 1.21
+   },
+   {
+    "party": "Cleartrip Packages & Tours Private Limited",
+    "nature": "Entity with significant influence - Services availed",
+    "amount_cr": 5.01
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Director sitting fees, remuneration, compensation",
+    "amount_cr": 3.99
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "trade receivable",
+    "amount_cr": 5.502
+   },
+   {
+    "party": "OnArt Quest Limited",
+    "nature": "trade receivable",
+    "amount_cr": 1.276
+   },
+   {
+    "party": "Adani Digital Labs Private Limited",
+    "nature": "trade receivable",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "trade receivable",
+    "amount_cr": 0.688
+   },
+   {
+    "party": "Adani Defence Systems and Technologies Limited",
+    "nature": "trade receivable",
+    "amount_cr": 0.09
+   },
+   {
+    "party": "QBML Media Limited",
+    "nature": "trade receivable",
+    "amount_cr": 1.602
+   },
+   {
+    "party": "Ambuja Cements Ltd",
+    "nature": "trade receivable",
+    "amount_cr": 1.26
+   },
+   {
+    "party": "IANS India Private Limited",
+    "nature": "trade receivable",
+    "amount_cr": 0.534
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "trade receivable",
+    "amount_cr": 2.835
+   },
+   {
+    "party": "Adani Power Limited",
+    "nature": "trade receivable",
+    "amount_cr": 5.9
+   },
+   {
+    "party": "Manorview Developers Private Limited",
+    "nature": "trade receivable",
+    "amount_cr": 0.094
+   },
+   {
+    "party": "Guwahati International Airport Limited",
+    "nature": "trade receivable",
+    "amount_cr": 2.99
+   },
+   {
+    "party": "ACC Limited",
+    "nature": "Contract assets",
+    "amount_cr": 0.39
+   },
+   {
+    "party": "Ambuja Cements Limited",
+    "nature": "Contract assets",
+    "amount_cr": 0.31
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "Contract assets",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Lifestyle & Media Broadcasting Limited",
+    "nature": "Trade payables",
+    "amount_cr": 6.341
+   },
+   {
+    "party": "QBML Media Limited",
+    "nature": "Trade payables",
+    "amount_cr": 5.414
+   },
+   {
+    "party": "AMG Media Networks Limited",
+    "nature": "Trade payables",
+    "amount_cr": 1.086
+   },
+   {
+    "party": "Red Pixels Ventures Limited",
+    "nature": "Trade payables",
+    "amount_cr": 6.066
+   },
+   {
+    "party": "Cleartrip Packages & Tours Private Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.942
+   },
+   {
+    "party": "Adani Digital Labs Limited",
+    "nature": "Trade payables",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Loan from related parties - Unsecured",
+    "amount_cr": 75.245
+   },
+   {
+    "party": "Adani Enterprises Limited",
+    "nature": "Corporate Guarantee for working capital loan from Axis Bank",
+    "amount_cr": null
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Interlocutory Application by Resolution Professional under Sections 43 and 66 of IBC, 2016 challenging transactions by erstwhile subsidiary Indianroots Shopping Limited",
+    "amount_cr": null
+   },
+   {
+    "nature": "SEBI penalty for non-disclosure of loan agreements",
+    "amount_cr": 0.1
+   },
+   {
+    "nature": "SEBI penalty for violation of clause 36 of Listing Agreement",
+    "amount_cr": 2
+   },
+   {
+    "nature": "SEBI fine under Section 15A(b) of SEBI Act",
+    "amount_cr": 0.12
+   },
+   {
+    "nature": "FEMA show cause notice allegations",
+    "amount_cr": 4183.01
+   },
+   {
+    "nature": "FEMA show cause notice allegations (NDTV Studios, Imagine Pictures, Imagine Limited)",
+    "amount_cr": 1626.44
+   },
+   {
+    "nature": "Income tax demand for AY 2008-09",
+    "amount_cr": 420.36
+   },
+   {
+    "nature": "Income tax demand for AY 2009-10",
+    "amount_cr": 578.83
+   },
+   {
+    "nature": "Income tax demand for AY 2009-10 (transfer pricing)",
+    "amount_cr": 353.36
+   },
+   {
+    "nature": "Income tax demand (rectification order)",
+    "amount_cr": 358.07
+   },
+   {
+    "nature": "Income tax demands for various assessment years (AY 2007-08 to AY 2017-18) including interest and demands pertaining to merged entities",
+    "amount_cr": 165.74
+   },
+   {
+    "nature": "Suit for recovery of Rs 66.86 million principal debt together with interest against Doordarshan (DD); DD admitted Rs 35.61 million, disputed balance Rs 31.2 million and interest; DD claimed Rs 82.56 million telecast fee and Rs 27.07 million interest",
+    "amount_cr": null
+   },
+   {
+    "nature": "Bank guarantees issued for Rs 60.10 million (31 March 2025: Rs 80.10 million) in ordinary course of business, no liabilities expected",
+    "amount_cr": 6.01
+   },
+   {
+    "nature": "Income tax demand of Rs 4,500 million for AY 2009-10; AO recomputed taxable income at Rs 5,788.36 million; final assessment order assessing income at Rs 5,788.36 million against returned loss of Rs 648.39 million, raising demand of Rs 4,953.65 million (net of adjustment Rs 432.76 million); Delhi High Court quashed DRP order, held AO barred from passing further final assessment orders",
+    "amount_cr": 495.365
+   },
+   {
+    "nature": "Penalty of Rs 4,368.00 million (200% on addition confirmed by ITAT under Section 69A); Company filed appeal before CIT(A) and stay application; CIT directed payment of Rs 1,080.40 million in three instalments; writ petition filed in Delhi High Court, demand stayed till disposal; matter posted for hearing 9 July 2026",
+    "amount_cr": 436.8
+   },
+   {
+    "nature": "Income tax demand of Rs 472.67 million for AY 2007-08, enhanced by Rs 127.15 million; appeal filed before CIT(Appeals); Rs 411.05 million adjusted against refunds, remaining demand stayed by AO till disposal of appeal",
+    "amount_cr": 60.0
+   },
+   {
+    "nature": "Penalty of Rs 93.74 million for AY 2008-09; appeal filed with CIT(Appeals); ITAT order dated 16 June 2020 deleted additions except transfer pricing adjustment of Rs 36.25 million set aside to AO; demand substantially reduced",
+    "amount_cr": 9.374
+   },
+   {
+    "nature": "Assessment for AY 2008-09 completed 3 August 2012; cross-appeals filed before ITAT; ITAT granted substantial relief but restored transfer pricing adjustment of Rs 36.25 million; TPO proposed adjustment of Rs 62.71 million; draft assessment order dated 19 December 2025; final assessment order dated 27 January 2026 with addition of Rs 62.71 million for corporate guarantee fee; appeal filed before CIT(A)",
+    "amount_cr": 6.271
+   },
+   {
+    "nature": "Reassessment proceedings for AY 2009-10 initiated via notice dated 1 May 2020 under Section 148; Delhi High Court granted interim relief permitting AO to proceed but no effect to assessment order; assessment order dated 31 March 2022 adding Rs 4,050.9 million, demand Rs 3,533.6 million; High Court dismissed writ petition; Special Leave Petition filed in Supreme Court (not admitted, liberty to pursue appellate remedies); rectification-cum-stay application filed; reassessment order received 13 March 2025; demand enhanced from Rs 3,533.6 million to Rs 3,580.7 million via order dated 1 May 2025; appeal filed before CIT(A), stay of demand till disposal",
+    "amount_cr": 358.07
+   },
+   {
+    "nature": "ED show cause notice dated 17 October 2018 alleging FEMA contraventions (procedural/technical and substantive); Company believes substantive contraventions not legally tenable; estimated liability of Rs 40 million for technical/procedural contraventions disclosed as exceptional item; compounding application filed with RBI",
+    "amount_cr": 4.0
+   },
+   {
+    "nature": "ED show cause notice dated 13 November 2015 alleging FEMA contraventions; compounding applications filed with RBI; estimated liability of Rs 74 million recognized in earlier years; one application returned by RBI January 2025 noting no contravention; other applications pending; re-filed compounding applications 15 December 2025; detailed replies submitted 8 September 2025",
+    "amount_cr": 7.4
+   },
+   {
+    "nature": "SEBI Notice of Demand dated 22 November 2019 for Rs 30.7 million plus interest/costs for penalty of Rs 20 million for alleged non-disclosure of Rs 4,500 million tax demand; Bombay High Court judgment 4 September 2019 invalidated penalty; SEBI filed Special Leave Petition in Supreme Court challenging judgment; next hearing date not notified",
+    "amount_cr": 3.07
+   },
+   {
+    "nature": "Penalty of Rs 0.39 million under Section 271(1)(c) for AY 2007-08; appeal before CIT(A) pending; demand adjusted with refunds",
+    "amount_cr": 0.039
+   },
+   {
+    "nature": "Penalty of Rs 6.32 million under Section 271AA for AY 2015-16 for failure to maintain documents for specified domestic transactions; appeal filed July 2019 before CIT(A) pending; demand adjusted with refunds",
+    "amount_cr": 0.632
+   },
+   {
+    "nature": "Penalty of Rs 6.99 million under Section 271(1)(c) for AY 2012-13 for failure to furnish information/document for specified domestic transactions; appeal before CIT(A) pending; Rs 3.59 million (including interest) adjusted from refunds",
+    "amount_cr": 0.699
+   },
+   {
+    "nature": "Penalty of Rs 0.10 million under Section 271BA for AY 2014-15 for failure to furnish accountant's report for specified domestic transactions; appeal before CIT(A) dismissed; appeal before ITAT pending, listed 13 May 2026; Rs 0.17 million (including interest) adjusted from refunds",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Penalty of Rs 0.10 million under Section 271G for AY 2014-15 for failure to furnish information/document for specified domestic transactions; appeal before CIT(A) dismissed; appeal before ITAT pending, listed 7 May 2026; ITAT passed partial favourable order 4 April 2025, one issue on Director's remuneration remanded; demand paid/adjusted against refunds",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Compounding fee for alleged FEMA contraventions (first show cause notice)",
+    "amount_cr": 7.4
+   },
+   {
+    "nature": "Estimated compounding fee for additional alleged FEMA contraventions (second show cause notice)",
+    "amount_cr": 4.0
+   },
+   {
+    "nature": "Ongoing direct tax litigations with tax authorities",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax penalty under Section 271BA for A.Y. 2014-15",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2013-14 (NDTV Convergence)",
+    "amount_cr": 3.343
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2014-15 (NDTV Convergence)",
+    "amount_cr": 1.253
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2015-16 (NDTV Convergence)",
+    "amount_cr": 0.1253
+   },
+   {
+    "nature": "Income Tax penalty under Section 271BA for A.Y. 2014-15 (NDTV Convergence)",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2011-12 (NDTV Networks)",
+    "amount_cr": 0.115
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2016-17 (NDTV Networks)",
+    "amount_cr": 0.019
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2017-18 (NDTV Networks)",
+    "amount_cr": 0.023
+   },
+   {
+    "nature": "Income Tax penalty under Section 271BA for A.Y. 2011-12 (NDTV Networks)",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Income Tax penalty under Section 271BA for A.Y. 2015-16 (NDTV Networks)",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2014-15 (NDTV Media)",
+    "amount_cr": 0.1233
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2016-17 (Red Pixels Ventures)",
+    "amount_cr": 12.09
+   },
+   {
+    "nature": "SEBI penalty for alleged non-disclosure of tax demand",
+    "amount_cr": 2.0
+   },
+   {
+    "nature": "Income Tax addition of Rs 4,050.9 million and demand of Rs 3,533.6 million",
+    "amount_cr": 353.36
+   }
+  ],
+  "litigation": [
+   "Interlocutory Application filed by Resolution Professional under Sections 43 and 66 of Insolvency and Bankruptcy Code, 2016 challenging transactions by erstwhile subsidiary Indianroots Shopping Limited; matter pending before Hon'ble NCLT, no adverse observation or order passed against Company",
+   "CBI FIR dated June 2, 2017 against Dr. Prannoy Roy, Mrs. Radhika Roy, RRPR Holding Private Limited, ICICI Bank officials and NDTV - closure report accepted by Trial Court January 23, 2025",
+   "SEBI Order dated December 29, 2020 imposing penalty of Rs 5 crore (reduced to Rs 0.10 crore by SAT July 20, 2022) - SEBI appeal pending in Supreme Court",
+   "ED ECIR dated August 7, 2021 under PMLA - quashed by Delhi High Court August 18, 2025 subject to revival",
+   "SEBI SCN dated January 22, 2020 for alleged violation of Regulation 30 - pending adjudication",
+   "Bombay High Court writ petition against SEBI rejection of settlement applications - SEBI appeal pending in Supreme Court",
+   "SEBI SCN dated August 20, 2015 for violation of clause 36 of Listing Agreement - SAT upheld penalty of Rs 2 crore, civil appeal pending in Supreme Court",
+   "SEBI SCN dated June 8, 2016 for non-disclosure/delayed disclosure - SAT order August 7, 2019 upheld penalties except Rs 0.02 crore on former Compliance Officer",
+   "SEBI SCN dated February 12, 2015 for non-disclosure of tax demand - penalty of Rs 0.25 crore and Rs 1.75 crore imposed, appeal pending",
+   "FEMA SCN dated October 17, 2018 for alleged contraventions amounting to Rs 4,183.01 crore - pending",
+   "FEMA SCN dated November 13, 2015 for alleged contraventions amounting to Rs 1,626.44 crore - pending",
+   "RBI compounding applications for FEMA contraventions - pending",
+   "Income tax reassessment proceedings for AY 2008-09 - demand of Rs 420.36 crore, stay granted by CIT",
+   "Income tax assessment for AY 2009-10 - demand of Rs 578.83 crore, writ petition allowed by Delhi High Court May 20, 2024",
+   "Transfer pricing adjustment for AY 2008-09 - proposed adjustment of Rs 6.27 crore, appeal filed before CIT(A)",
+   "Income tax demand for AY 2009-10 (original assessment) - Rs 353.36 crore enhanced to Rs 358.07 crore, SLP dismissed by Supreme Court February 28, 2025",
+   "Show cause notice from Directorate of Enforcement (ED) during year ended 31 March 2016 for alleged contraventions under FEMA, 1999; compounding application filed with RBI; writ petition filed before Bombay High Court; provision of Rs 74 million recognised for compounding fee",
+   "Multiple ongoing direct tax litigations with tax authorities for assessment years 2007-08 to 2017-18 involving demands totalling Rs 16,574.34 million (gross), with net outstanding demands of Rs 16,574.34 million after payments/adjustments.",
+   "Show cause notice from Directorate of Enforcement (ED) on additional matters regarding investments in Indian subsidiaries by overseas subsidiaries; compounding application to be filed with RBI.",
+   "The Company has disputed the transaction in its communication to Awani. However conservatively, the Company has reclassified this investment in Awani as other equity instruments, which will be measured at fair value through profit and loss (FVTPL). The reclassification of the investment is being carried out without prejudice to the Company's rights to seek restoration of its original 20% shareholding in Awani.",
+   "Indianroots Shopping Limited: Resolution Professional appointed pursuant to NCLT order (FY 2018-19)",
+   "Suit for recovery of Rs 66.86 million against Doordarshan pending in Delhi High Court, hearing scheduled 9 July 2026",
+   "Multiple income tax appeals pending at CIT(A), ITAT, High Court, and Supreme Court for assessment years 2007-08, 2008-09, 2009-10, 2011-12, 2012-13, 2014-15, 2015-16, 2016-17, 2017-18",
+   "ED show cause notices under FEMA dated 17 October 2018 and 13 November 2015; compounding applications with RBI pending",
+   "SEBI penalty demand of Rs 20 million challenged in Bombay High Court; SEBI's Special Leave Petition pending in Supreme Court",
+   "Various penalty appeals pending at CIT(A) and ITAT for AY 2007-08, 2011-12, 2012-13, 2014-15, 2015-16",
+   "Show cause notice from Enforcement Directorate (ED) in year ended 31 March 2016 for alleged FEMA contraventions regarding investments in Indian subsidiaries by overseas subsidiaries; compounding application filed with RBI; writ petition before Bombay High Court",
+   "Second show cause notice from ED in year ended 31 March 2019 on additional matters regarding same investments; compounding application to be filed with RBI based on legal advice",
+   "Ongoing direct tax litigations with tax authorities at various stages (preliminary discussions to tribunal/court proceedings) involving significant amounts",
+   "During the previous years, Resolution Professional has been appointed for Indianroots Shopping Limited (ISL) pursuant to the order passed by Hon'ble National Company Law Tribunal (NCLT).",
+   "The Company has disputed this transaction in its communication to Awani. However conservatively, the Company has reclassified this investment in Awani as other equity instruments, which will be measured at fair value through profit and loss (FVTPL). The reclassification of the investment is being carried out without prejudice to the Company's rights to seek restoration of its original 20% shareholding in Awani.",
+   "Provision for compounding fee of Rs 114.00 million maintained as at 31 March 2026 and 31 March 2025 (refer note 35.1 (9,10))",
+   "Writ petition dismissed by Delhi High Court on 29 January 2025 regarding ED show cause notice under FEMA; Special Leave Petition filed before Supreme Court not admitted but liberty granted to pursue appellate remedies",
+   "Appeal before CIT(A) pending for Income Tax penalty under Section 271BA for A.Y. 2014-15",
+   "Appeal before ITAT Delhi pending for Income Tax demand for A.Y. 2013-14 (NDTV Convergence), listed for hearing on 13 May 2026",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2015-16 (NDTV Convergence)",
+   "Appeal before CIT(A) pending for Income Tax penalty under Section 271BA for A.Y. 2014-15 (NDTV Convergence)",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2011-12 (NDTV Networks)",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2016-17 (NDTV Networks)",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2017-18 (NDTV Networks)",
+   "Appeal before CIT(A) pending for Income Tax penalty under Section 271BA for A.Y. 2011-12 (NDTV Networks)",
+   "Appeal before CIT(A) pending for Income Tax penalty under Section 271BA for A.Y. 2015-16 (NDTV Networks)",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2014-15 (NDTV Media)",
+   "Appeal before CIT(A) pending for Income Tax demand for A.Y. 2012-13 (NDTV Networks) under Section 271(1)(c)",
+   "Appeal before ITAT Delhi pending for Income Tax demand for A.Y. 2016-17 (Red Pixels Ventures), partial favourable order received on 4 April 2025 with one issue remanded",
+   "Appeal before CIT(A) pending for SEBI penalty of Rs 20 million for alleged non-disclosure of tax demand"
+  ]
+ }
+}
