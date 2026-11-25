@@ -1640,3 +1640,11 @@
 25 13:05:02 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route SBL Infratech Ltd
 25 13:05:02 pdf strong model fixed a failed read
 25 13:05:08 ready 530595|Sep-26|standalone kind=photo waited_min=1.4 tries=1 pdf_log=pdf current col TeleCanor Global Ltd standalone ok=True/2: revenue=621.4, other_income=None, total_income=621.4, total_expenses=466.28, finance_costs=0.01, depr
+25 13:05:21 pdf rule reader Ajwa Projects Ltd: rule: header has no quarter columns | ocr: rule: header has no quarter columns
+25 13:05:45 pdf pdf is a HALF-YEARLY filing (column dates ['30-09-2026', '31-03-2026', '30-09-2025']): not read as quarters, queued for the half-yearly route Ajwa Projects Ltd
+25 13:05:52 pdf pdf is a HALF-YEARLY filing (column dates ['30-Sep-26', '31-Mar-26', '30-Sep-25']): not read as quarters, queued for the half-yearly route SBL Infratech Ltd
+25 13:06:14 pdf pdf incomplete Pulsar International Ltd standalone: missing ['ebitda'] - not posting from PDF
+25 13:06:35 pdf rule reader Pulsar International Ltd: rule: column dates not found | ocr: rule: stan: does not reconcile [lakh] total_income=[1800.93, 2312.22, 797.87] total_expenses=[1789.26, 2319.51, 779.56] pbt=[11.67, -7.29, 18.31] pat=[11.67
+25 13:06:39 pdf pdf current col Pulsar International Ltd standalone ok=True/1: revenue=1800.93, other_income=None, total_income=1800.93, total_expenses=1789.26, finance_costs=None, depreciation=16.67, pbt=11.67, tax=None, pat=11.67, eps=0.0
+25 13:06:39 pdf pdf incomplete Pulsar International Ltd standalone: missing ['ebitda'] - not posting from PDF
+25 13:07:06 pdf rule reader Pulsar International Ltd: rule: column dates not found | ocr: rule: stan: does not reconcile [lakh] total_income=[1800.93, 2312.22, 797.87] total_expenses=[1789.26, 2319.51, 779.56] pbt=[11.67, -7.29, 18.31] pat=[11.67
