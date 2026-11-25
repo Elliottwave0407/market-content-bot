@@ -1,0 +1,968 @@
+{
+ "isin": "INE788J01021",
+ "name": "Shivalik Rasayan Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31273_SHIVALIK_2025_2026_A_14460950_03092026183214.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 466144,
+ "chunks": 12,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "Shivalik Rasayan Limited is an integrated chemical enterprise spanning agrochemicals and high-value active pharmaceutical ingredients (APIs). The Company has evolved from a legacy producer of technical-grade agrochemicals into a science-led chemical and life sciences manufacturer with a strong presence across the agrochemical and pharmaceutical value chains, underpinned by its DSIR-recognized R&D centre and US FDA-approved facility.",
+   "products": [
+    {
+     "name": "Dimethoate Technical",
+     "share_of_revenue_pct": null,
+     "note": "India's largest producer"
+    },
+    {
+     "name": "Malathion Technical",
+     "share_of_revenue_pct": null,
+     "note": "India's second-largest producer"
+    },
+    {
+     "name": "General & Oncology API",
+     "share_of_revenue_pct": null,
+     "note": "Focused on niche, high-barrier molecules"
+    },
+    {
+     "name": "Trifloxystrobin Technical",
+     "share_of_revenue_pct": null,
+     "note": "New agrochemical molecule under development"
+    },
+    {
+     "name": "Kresoxim Methyl Technical",
+     "share_of_revenue_pct": null,
+     "note": "New agrochemical molecule under development"
+    },
+    {
+     "name": "NCE-1 products",
+     "share_of_revenue_pct": null,
+     "note": "Two successfully developed; first delivered April 2026"
+    },
+    {
+     "name": "F2F products",
+     "share_of_revenue_pct": null,
+     "note": "Under development for regulated markets"
+    },
+    {
+     "name": "Agrochemical intermediates and technical products",
+     "share_of_revenue_pct": null,
+     "note": "Commercialized 4 new high-demand agrochemical products in 2025-26"
+    },
+    {
+     "name": "API and NCE-1 molecules",
+     "share_of_revenue_pct": null,
+     "note": "Developed two NCE-1 molecules for a US-based company; capable of non-infringing route with novel polymorph"
+    },
+    {
+     "name": "Agrochemicals",
+     "share_of_revenue_pct": 88.85,
+     "note": "NIC Code 20211"
+    },
+    {
+     "name": "Pharma API",
+     "share_of_revenue_pct": 5.31,
+     "note": "NIC Code 21001"
+    },
+    {
+     "name": "Research & Development",
+     "share_of_revenue_pct": 5.83,
+     "note": "NIC Code 7210"
+    },
+    {
+     "name": "Active Pharma Ingredients (API)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Generic Finished dosage forms (FDF)",
+     "share_of_revenue_pct": null,
+     "note": "Part of Pharmaceuticals segment"
+    },
+    {
+     "name": "Contract Research services",
+     "share_of_revenue_pct": null,
+     "note": "Part of Pharmaceuticals segment"
+    }
+   ],
+   "customers": [
+    "Key domestic and export crop-protection markets",
+    "Global pharmaceutical customers",
+    "US-based pharmaceutical company",
+    "Companies in Japan and South Korea",
+    "Domestic and export crop protection segments",
+    "pesticides formulators",
+    "finished dosages formulators of pharmaceutical products"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets (agrochemicals)",
+     "share_pct": null
+    },
+    {
+     "name": "US (pharmaceuticals)",
+     "share_pct": null
+    },
+    {
+     "name": "Japan and South Korea (pharmaceuticals)",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic",
+     "share_pct": 98.61
+    },
+    {
+     "name": "Exports",
+     "share_pct": 1.39
+    }
+   ],
+   "plants": [
+    {
+     "location": "Village Kolhupani, P.O. Chandanwari, Dehradun - 248 007, Uttarakhand (Unit-I Agrochemical)",
+     "capacity": "Annual production capacity of 1,450 MT, with 95% capacity utilization"
+    },
+    {
+     "location": "Plot No. D-2/CH/41/A, GIDC Industrial Estate, Dahej-II, District Bharuch - 392 140, Gujarat (Unit-II Pharma)",
+     "capacity": "US FDA-approved facility for complex API manufacturing, including NCE-1 and F2F products; dedicated oncology and non-oncology production blocks"
+    },
+    {
+     "location": "Dahej-III, Gujarat (Agro and Specialty Chemicals)",
+     "capacity": "One block operational with 2,500 MTPA capacity for insecticides and fungicides; revenue potential of approximately Rs. 200 Crores over the next two years"
+    },
+    {
+     "location": "SP-1192 A&B, Phase-IV, Industrial Area, Bhiwadi - 301 019, District Alwar, Rajasthan (R&D Centre)",
+     "capacity": "DSIR-recognized R&D centre driving CDMO and complex molecule development; supports technology transfer and process innovation"
+    },
+    {
+     "location": "Dehradun",
+     "capacity": ""
+    },
+    {
+     "location": "Dahej",
+     "capacity": "2500 MT of Insecticides or Fungicides per annum; revenue potential of Rs. 200 Crores; plot size 50,000 sq meters"
+    },
+    {
+     "location": "Kolhupani, P.O. Chandanwari, Dehradun -248007, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. D-2/CH/41/A, GIDC Industrial Estate, Dahej-II, Pin-392140, Distt. Bharuch (Gujarat)",
+     "capacity": ""
+    },
+    {
+     "location": "D-3/16, GIDC Industrial Estate, Dahej-III, Village Sambheti, Taluka Vagra, Distt. Bharuch, Gujarat-392130",
+     "capacity": ""
+    },
+    {
+     "location": "SP- 1192A & B, Phase-IV Industrial Area, Bhiwadi- 301019 Distt. Alwar, Bhiwadi (Rajasthan)",
+     "capacity": ""
+    },
+    {
+     "location": "Dahej-II",
+     "capacity": "ETP (70kl/day), RO (50kl/day), MEE (50kl/day) & STP (20KL/day) plants for waste water treatment"
+    },
+    {
+     "location": "Dehradun",
+     "capacity": "Multi Effect Evaporator with ATFD and Stripper installed to achieve Zero Liquid Discharge (ZLD)"
+    },
+    {
+     "location": "Village Kolhupani, P.O. Chandanwari, Dehradun, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "D-3/16, GIDC Industrial Estate, Dahej \u2013III, Sambheti, Taluka-Vagra, Bharuch, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "D-2/CH/41/A, GIDC Industrial Estates, Dahej-II, District-Bharuch, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "SP-1192 A&B, Phase-IV, Industrial Area, District-Alwar, Bhiwadi, Rajasthan",
+     "capacity": ""
+    },
+    {
+     "location": "Dahej Unit-II",
+     "capacity": ""
+    },
+    {
+     "location": "Village Kolhupani, P.O. Chandanwari, Dehradun \u2013 248007, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "Village Kolhupani, P.O. Chandanwari, Dehradun - 248 007, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. D-2/ CH/41/A, GIDC Industrial Estate, Dahej-II, District Bharuch - 392 140, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "SP - I192 A&B, Phase - IV Industrial Area, Bhiwadi - 301 019, District Alwar, Rajasthan",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Crop protection (agrochemicals)",
+    "Pharmaceuticals (APIs, oncology, formulations)",
+    "CDMO services for regulated markets",
+    "Specialty chemicals",
+    "agrochemical",
+    "pharma",
+    "Agrochemicals",
+    "Pharmaceuticals (API)",
+    "pharmaceuticals"
+   ],
+   "brands_or_certifications": [
+    "US FDA-approved facility (Dahej-II)",
+    "DSIR-recognized R&D centre (Bhiwadi)",
+    "USFDA approved plants (referenced as industry baseline)",
+    "EU GMP certification (referenced as industry baseline)",
+    "ISO 9001:2015",
+    "ISO 14001:2015",
+    "ISO 45001:2018",
+    "ISO 45001:2018 OHS Management System"
+   ],
+   "raw_materials": [
+    "Chinese intermediates (Key Starting Materials)",
+    "Stores, Chemicals and Packing Material",
+    "Fuel and Power",
+    "Ice",
+    "Water"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Strengthening R&D capabilities, expanding CDMO engagements and strengthening presence in regulated markets; focus on converting scientific capabilities into commercial opportunities and building a more resilient and valuable business.",
+    "period": "Next phase of growth"
+   },
+   {
+    "statement": "Agrochemical plant at Dahej-III expected to generate approximately Rs. 200 Crores over the next two years.",
+    "period": "Next two years"
+   },
+   {
+    "statement": "Advancing API opportunities in Japan and South Korea; two additional API programs with a US-based company focused on NCE-1 and F2F products.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Progressively transforming R&D into a profit-generating business through internal and customer-led projects.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Indian agrochemicals industry expected to witness stable growth of approximately 6-8% in 2026-27, supported by steady domestic demand, improving crop intensity, and expanding distribution reach.",
+    "period": "2026-27"
+   },
+   {
+    "statement": "Global API market valued at over USD 159.3 billion in 2026, projected to surge toward USD 228.7 billion by 2033; India API manufacturing growth at center of supply chain shift.",
+    "period": "2026-2033"
+   },
+   {
+    "statement": "Margin sensitivity persists, necessitating continued focus on product mix optimization and geographic diversification to mitigate concentration risk.",
+    "period": "Going forward"
+   },
+   {
+    "statement": "New Agro-Chemical plant at Dahej expected to be fully utilized in next two years.",
+    "period": "Next two years"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Dahej-III agrochemical plant (one block operational)",
+    "amount_cr": null,
+    "timeline": "Revenue potential of approximately Rs. 200 Crores over the next two years"
+   },
+   {
+    "item": "Investments in R&D capabilities and product development",
+    "amount_cr": null,
+    "timeline": "Continued investment"
+   },
+   {
+    "item": "Strengthening API manufacturing through dedicated oncology and non-oncology API infrastructure",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "R&D Capital Expenditure",
+    "amount_cr": 0.87,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Agro-Chemical plant at Dahej (one operational block)",
+    "amount_cr": null,
+    "timeline": "Started operation last year; full utilization expected in next two years"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Successfully delivered first NCE-1 project in April 2026",
+    "value_cr": null
+   },
+   {
+    "statement": "Added two API development programs with a US-based pharmaceutical company",
+    "value_cr": null
+   },
+   {
+    "statement": "Executing complex NCE-1 and F2F API projects for regulated markets",
+    "value_cr": null
+   },
+   {
+    "statement": "Developed two NCE-1 molecules for a US based Company",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Trade barriers, geopolitical tensions and policy uncertainty in global economy",
+   "Profitability impacted during the year (EBITDA and PAT declined)",
+   "Forward-looking statements subject to assumptions, risks and uncertainties",
+   "Health and safety of employees and communities",
+   "Environment and Climate Change impacts",
+   "Financial risks",
+   "Heavy reliance on Chinese intermediates exposing sector to supply disruptions and price volatility",
+   "Geopolitical conflict (US-Israel-Iran) contributing to elevated macro and operating uncertainty through energy prices, logistics costs, and currency volatility",
+   "Global oversupply keeping margins pinned",
+   "MSMEs face endless registrations, molecule bans and high compliance costs",
+   "Supply chain disruptions including longer transit times and higher insurance costs",
+   "Volatility in crude oil and freight markets posing margin sensitivity",
+   "Rising regulatory scrutiny and evolving customer expectations in API industry",
+   "Competitive pressures and supply chain vulnerabilities",
+   "Non-compliance with POSH Act (Internal Committee formation and annual report submission)",
+   "CSR budget calculation methodology deviation (PAT vs PBT)",
+   "Health & Safety risk in chemical industry",
+   "Business Ethics risk impacting brand and trust",
+   "Compliance risk",
+   "Pending litigation with The Superintendent Commissioner, Central Goods and Services Tax Division \u2013 Dehradun, before Nainital High Court regarding alleged excess input tax credit of Rs. 1,18,34,538/- for FY 2017-18",
+   "Non-compliance with SEBI LODR Regulation 18(2)(b) regarding Audit Committee quorum (only one Independent Director attended meeting on August 13, 2024), resulting in warning letters from BSE and NSE dated October 14, 2025.",
+   "CSR budget allocation calculated on Profit After Tax (PAT) instead of Profit Before Tax (PBT) as per Section 135 read with Section 198 of Companies Act, 2013.",
+   "Non-compliance with Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013: failure to form Internal Committee and non-submission of Annual Report for calendar year ended December 31, 2025.",
+   "Pending litigation with The Superintendent (Range-V), Central Goods and Services Tax Division \u2013 Dehradun, before Nainital High Court regarding alleged excess input tax credit of Rs.1,18,34,538/- for FY 2017-18"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Board authorized borrowing limit",
+    "amount_cr": 200,
+    "note": "Maximum borrowing limit of Rs. 200 Crores approved by shareholders under Section 180(1)(c); creation of charge/security on assets up to Rs. 200 Crores approved under Section 180(1)(a)"
+   },
+   {
+    "lender_or_type": "Board authorized borrowing limit",
+    "amount_cr": 200,
+    "note": "Special resolution sought for borrowing up to Rs. 200 Crores under Section 180(1)(c)"
+   },
+   {
+    "lender_or_type": "Security creation for borrowings",
+    "amount_cr": 200,
+    "note": "Special resolution sought for creation of charge on assets up to Rs. 200 Crores under Section 180(1)(a)"
+   },
+   {
+    "lender_or_type": "Citibank NA - Term Loan",
+    "amount_cr": 12.0,
+    "note": "Secured by hypothecation of Plant & Machinery, Movable Assets, Book Debts, Stocks and collateral security of Land at Village Kolhupani, Dehradun"
+   },
+   {
+    "lender_or_type": "IndusInd Bank - Term Loan",
+    "amount_cr": 7.7778,
+    "note": "Secured by hypothecation of Plant & Machinery, Movable Assets, Book Debts, Stocks and collateral security of Land at D-3/16 GIDC, Dahej-III, Gujarat"
+   },
+   {
+    "lender_or_type": "IDBI Bank - Vehicle Loan",
+    "amount_cr": 0.0624,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "ICICI Bank - Vehicle Loan",
+    "amount_cr": 0.0,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "IDBI Bank - Vehicle Loan",
+    "amount_cr": 0.018,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "HDFC Bank - Vehicle Loan",
+    "amount_cr": 0.1132,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "Punjab National Bank - Vehicle Loan",
+    "amount_cr": 0.055,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "Daimler Financial Services India Pvt Ltd - Vehicle Loan",
+    "amount_cr": 0.0,
+    "note": "Secured by hypothecation of Vehicle"
+   },
+   {
+    "lender_or_type": "Banks - Current Borrowings",
+    "amount_cr": 45.8329,
+    "note": "Short-term borrowings from banks"
+   },
+   {
+    "lender_or_type": "Non-current Borrowings",
+    "amount_cr": 26.18,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current Borrowings",
+    "amount_cr": 87.46,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Citibank NA",
+    "amount_cr": 12.0,
+    "note": "Secured by hypothecation of Plant & Machinery, Movable Assets, Book Debts, Stocks and collateral security of Land situated at Village Kolhupani, Dehradun"
+   },
+   {
+    "lender_or_type": "IndusInd Bank",
+    "amount_cr": 7.78,
+    "note": "Term Loan"
+   },
+   {
+    "lender_or_type": "AU Bank",
+    "amount_cr": 2.84,
+    "note": "Term Loan"
+   },
+   {
+    "lender_or_type": "IDBI Bank",
+    "amount_cr": 0.08,
+    "note": "Vehicle Loan"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": 0.42,
+    "note": "Vehicle Loan"
+   },
+   {
+    "lender_or_type": "Punjab National Bank",
+    "amount_cr": 0.06,
+    "note": "Vehicle Loan"
+   },
+   {
+    "lender_or_type": "Daimler Financial Services India Pvt Ltd",
+    "amount_cr": 0.69,
+    "note": "Vehicle Loan"
+   },
+   {
+    "lender_or_type": "Medicamen Biotech Ltd",
+    "amount_cr": 2.8,
+    "note": "Unsecured Loan"
+   },
+   {
+    "lender_or_type": "Banks (Working Capital)",
+    "amount_cr": 87.46,
+    "note": "Current borrowings from banks"
+   }
+  ],
+  "auditor": {
+   "name": "M/s Rahul Chaudhary & Associates",
+   "opinion": "The report of the Statutory Auditor forms part of the Integrated Report and Annual Accounts for 2025-26. The said report does not contain any qualification, reservation, adverse remark or disclaimer.",
+   "qualifications_or_emphasis": [
+    "During the year under review, the Statutory Auditors did not report any matter under Section 143(12) of the Act",
+    "During the period under review, as per Regulation 18 (2) (b) of the SEBI (LODR) Regulations, 2015, The quorum for audit committee meeting shall either be two members or one third of the members of the audit committee, whichever is greater, with at least two independent directors. Audit Committee Meeting held on August 13, 2024, was attended by only one Independent Director. In this regard the Bombay Stock Exchange Limited (BSE) and National Stock Exchange of India Limited (NSE) issued warning letters dated October 14, 2025 to the Company.",
+    "Secretarial Audit observation: CSR budget calculated on PAT instead of PBT.",
+    "Secretarial Audit observation: Non-compliance with POSH Act (Internal Committee formation and Annual Report submission).",
+    "Regulatory action: Warning letters from BSE and NSE for Audit Committee quorum non-compliance (Regulation 18(2)(b) SEBI LODR)."
+   ],
+   "key_audit_matters": [
+    "Audit Committee Meeting held on August 13, 2024 attended by only one Independent Director; BSE and NSE issued warning letters dated October 14, 2025",
+    "No key audit matters communicated in the statutory auditor's report.",
+    "No Key Audit Matters determined"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Suresh Kumar Singh (DIN: 00318015) retires by rotation and offers himself for re-appointment",
+    "Dr. Vimal Kumar Shrawat (DIN: 08274190) retires by rotation and offers himself for re-appointment",
+    "Mr. Suresh Kumar Singh and Dr. Vimal Kumar Shrawat retire by rotation and offer themselves for re-appointment",
+    "Mr. Ashwani Kumar Sharma re-designated as Non-Executive, Non-Independent Director effective August 12, 2025",
+    "Mr. Sanjay Bansal ceased from Directorship w.e.f. May 27, 2026",
+    "Re-designation from Executive Director to Non-Executive Director w.e.f August 12, 2025.",
+    "Re-designation of Mr. Ashwani Kumar Sharma (DIN: 00325634) as a Non-Executive, Non-Independent Director of the Company.",
+    "Re-appointment of Dr. Ravi Kumar Bansal (DIN: 08462513) as Non-Executive Independent Director of the Company.",
+    "Appointment of Mr. Ramit Madan (DIN: 08071919) as Non-Executive Independent Director of the Company.",
+    "Appointment of Mr. Sham Goel (DIN: 02183287) as Non-Executive Independent Director of the Company.",
+    "Appointment of Mr. Shaival Saurabh (DIN: 01971944) as Non-Executive Independent Director of the Company.",
+    "Re-appointment of Dr. Vimal Kumar Shrawat (DIN: 08274190) as Managing Director of the Company.",
+    "Re-appointment of Mr. Suresh Kumar Singh (DIN: 00318015) as Vice-Chairman of the Company.",
+    "Re-appointment of Ms. Sangeeta Bishnoi (DIN: 08288998) as Non-Executive Independent Director of the Company.",
+    "Re-appointment of Ms. Sumita Dwivedi (DIN: 08218640) as Non-Executive Independent Director of the Company.",
+    "Ramit Madan appointed August 13, 2024",
+    "Shaival Saurabh appointed August 13, 2024",
+    "Sham Goel appointed August 13, 2024",
+    "Change of designation of Mr. Ashwani Kumar Sharma (DIN: 00325634) from Executive Director to Non-Executive and Non-Independent Director approved at 47th AGM held on September 27, 2025."
+   ],
+   "auditor_change": "M/s Rahul Chaudhary & Associates appointed as Statutory Auditors at 45th AGM on September 29, 2023 till conclusion of 50th AGM; M/s. AMJ & Associates appointed as Secretarial Auditors at 47th AGM on September 27, 2025 for 5 years (FY 2025-26 to 2029-30); M/s Cheena & Associates appointed as Cost Auditors for year ending March 31, 2027; M/s Arun Agarwal & Co. appointed as Internal Auditor for FY 2026-27 replacing M/s Amar Sharma & Co.",
+   "top_shareholders": [
+    {
+     "name": "Mr. Suresh Kumar Singh",
+     "pct": null
+    },
+    {
+     "name": "Mr. Sanjay Bansal",
+     "pct": null
+    },
+    {
+     "name": "Dr. Vimal Kumar Shrawat",
+     "pct": null
+    },
+    {
+     "name": "Ginnerup Capital ApS",
+     "pct": 3.21
+    },
+    {
+     "name": "India Emerging Giants Fund Limited",
+     "pct": 3.06
+    },
+    {
+     "name": "Eric Aarestrup Sorensen",
+     "pct": 2.12
+    },
+    {
+     "name": "Sanjay Bansal",
+     "pct": 1.26
+    },
+    {
+     "name": "F L Dadabhoy",
+     "pct": 1.04
+    },
+    {
+     "name": "Ritesh Kantilal Oswal",
+     "pct": 1.01
+    },
+    {
+     "name": "Growel Remedies Limited",
+     "pct": 47.37
+    }
+   ],
+   "promoter_holding_pct": 47.37
+  },
+  "people": {
+   "employees": 340,
+   "key_management": [
+    {
+     "name": "Mr. Rahul Bishnoi",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Suresh Kumar Singh",
+     "role": "Vice Chairman"
+    },
+    {
+     "name": "Dr. Vimal Kumar Shrawat",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Ashwani Kumar Sharma",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Sham Goel",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ramit Madan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Shaival Saurabh",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Sangeeta Bishnoi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Sumita Dwivedi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ravi Kumar Bansal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Parul Choudhary",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Vinod Kumar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Suresh Kumar Singh",
+     "role": "Vice-Chairman & Whole-Time Director"
+    },
+    {
+     "name": "Rahul Bishnoi",
+     "role": "Chairman"
+    },
+    {
+     "name": "Suresh Kumar Singh",
+     "role": "Vice Chairman"
+    },
+    {
+     "name": "Ashwani Kumar Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Singh",
+     "role": "Executive, Non-Independent Director"
+    },
+    {
+     "name": "Mr. Sanjay Bansal",
+     "role": "Non-Executive, Non-independent Director"
+    },
+    {
+     "name": "Dr. Vimal Kumar Shrawat",
+     "role": "Executive, Non-Independent Director"
+    },
+    {
+     "name": "Rahul Bishnoi",
+     "role": "Director"
+    },
+    {
+     "name": "Sham Goel",
+     "role": "Independent Director & Non-Executive Director"
+    },
+    {
+     "name": "Ramit Madan",
+     "role": "Independent Director & Non-Executive Director"
+    },
+    {
+     "name": "Sumita Dwivedi",
+     "role": "Director"
+    },
+    {
+     "name": "Sangeeta Bishnoi",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Ravi Kumar Bansal",
+     "role": "Director"
+    },
+    {
+     "name": "Shaival Saurabh",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Parul Choudhary",
+     "role": "Compliance Officer"
+    },
+    {
+     "name": "Vinod Kumar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Rahul Bishnoi",
+     "role": "Chairman (DIN 00317960)"
+    },
+    {
+     "name": "Parul Choudhary",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sh. Rahul Bishnoi",
+     "role": "Chairman"
+    },
+    {
+     "name": "Sh. Suresh Kumar Singh",
+     "role": "Vice Chairman & Whole time Director"
+    },
+    {
+     "name": "Sh. Ashwani Kumar Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Ramit Madan",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Shaival Saurabh",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Sangeeta Bishnoi",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Sanjay Bansal",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Ravi Kumar Bansal",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Sham Goel",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Sumita Dwivedi",
+     "role": "Director"
+    },
+    {
+     "name": "Sh. Vinod Kumar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Parul Choudhary",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sh. Suresh Kumar Singh",
+     "role": "Vice Chairman & Whole Time Director"
+    }
+   ]
+  },
+  "dividend_per_share": 0.5,
+  "other_notable": [
+   "48th AGM scheduled for September 28, 2026 at Hotel Saffron Leaf, Dehradun",
+   "Register of Members closed September 22-28, 2026 for dividend and AGM",
+   "Final dividend of Re 0.50 (10%) per equity share of Rs 5 each recommended",
+   "E-voting period: September 25, 2026 (9:00 AM) to September 27, 2026 (5:00 PM)",
+   "Cut-off date for e-voting: September 21, 2026",
+   "Cost auditor M/s Cheena & Associates remuneration ratified at Rs. 1,00,000 for FY 2026-27",
+   "340 employees, 75 highly qualified scientists and pharmacists, 22 API + Agrochemical product offerings, presence in 6 countries, 6 manufacturing sites and R&D centers",
+   "Consolidated revenue FY2026: Rs. 36,800.32 Lakhs (18.03% increase)",
+   "Consolidated PAT FY2026: Rs. 1,796.88 Lakhs (18.80% decline)",
+   "Standalone revenue FY2026: Rs. 17,023.35 Lakhs (14.07% increase)",
+   "Standalone PAT FY2026: Rs. 817.25 Lakhs (41.06% decline)",
+   "Paid-up Equity Share Capital: Rs. 7.87 Crores",
+   "No fresh shares issued during FY2026",
+   "No public deposits accepted",
+   "No loans, guarantees or investments made during FY2026",
+   "All related party transactions on arm's length basis and in ordinary course",
+   "No material related party transactions under Section 188(1)",
+   "Cost Auditor remuneration of Rs. 1,00,000 for FY2027 to be ratified",
+   "Risk Management Committee chaired by Independent Director",
+   "Internal financial controls deemed adequate and operating effectively",
+   "BRSR forms part of Director's Report as Annexure C",
+   "Corporate Governance report with Auditor's certificate forms part of Annual Report",
+   "E-voting facility provided through CDSL/NSDL for AGM",
+   "CSR Committee comprised 4 members (2 Independent Directors); 1 meeting held during year; no instances where recommendations not accepted by Board",
+   "Audit Committee comprised 3 members (2 Independent Directors, 1 Non-Executive Non-Independent); 5 meetings held; no instances where recommendations not accepted by Board",
+   "5 Board meetings held during FY 2025-26 (May 30, 2025; August 12, 2025; November 14, 2025; January 29, 2026; February 13, 2026)",
+   "47th AGM held on September 27, 2025",
+   "No instances of sexual harassment reported during year under review",
+   "Whistleblower Policy in place; no instances where individuals denied access to Audit Committee Chairperson",
+   "No frauds reported by Statutory, Cost, Internal or Secretarial Auditors under Section 143(12)",
+   "Annual Return as on March 31, 2026 available on company website",
+   "No deposits accepted from public during year; no outstanding deposits as on March 31, 2026",
+   "No change in nature of business; no material changes affecting financial position between end of financial year and date of report",
+   "Secretarial Auditor observations: (1) CSR budget calculated on PAT instead of PBT per Section 135/198; (2) Non-compliance with POSH Act regarding Internal Committee formation and annual report submission for calendar year ended Dec 31, 2025",
+   "Management response to Secretarial Auditor observations: Will take due care for CSR calculation per Section 135/198; committed to absolute compliance with POSH Act",
+   "Internal financial controls based on 'three lines of defence model'",
+   "R&D expenditure: Capital Rs. 87 Lakhs, Revenue Rs. 862.37 Lakhs, Total Rs. 949.37 Lakhs in 2025-26",
+   "Foreign exchange: Imports (CIF) Rs. 1,799.53 Lakhs, Exports (FOB) Rs. 57.38 Lakhs in 2025-26",
+   "Consolidated revenue FY 2026: Rs. 36,800.32 Lakhs (18.03% increase); Standalone revenue FY 2026: Rs. 17,023.35 Lakhs (14.07% increase)",
+   "The Forty-Seventh (47th) Annual General Meeting ('e-AGM') of the Company for 2024-25 was held on September 27, 2025, through Video Conferencing ('VC')/Other Audio Visual Means ('OAVM').",
+   "The Company currently has Six (6) Non-Executive, Independent Directors which comprises 55% of the total strength of the Board of Directors.",
+   "Meeting of Independent Directors was held on February 13, 2026.",
+   "Five (4) meetings of the Audit Committee were held during the financial year ended March 31, 2026 on May 30, 2025, June 23, 2025, August 12, 2025, November 14, 2025 & February 13, 2026 respectively.",
+   "One (1) meetings of the Nomination & Remuneration Committee were held during the financial year ended March 31, 2026 on August 12, 2025.",
+   "Five (5) meetings of the Stakeholder Relationship Committee were held during the financial year ended March 31, 2026 on July 21, 2025, October 09, 2025, March 06, 2026, March 17, 2026 & March 26, 2026 respectively.",
+   "One (1) meetings of the Corporate & Social Responsibility Committee were held during the financial year ended March 31, 2026 on August 12, 2025 respectively.",
+   "Two (2) meetings of the Risk Management Committee were held during the financial year ended March 31, 2026 on July 21, 2025 & November 14, 2025 respectively.",
+   "Status of Investor Complaints as on March 31, 2026: Pending at the beginning of the year i.e., April 1, 2025 Nil; Received during the year Nil; Resolved during the year Nil; Pending at the end of the year i.e., March 31, 2026 Nil.",
+   "No complaints were pending at the beginning of the year. Further, the Company did not receive any complaints of sexual harassment during the year and accordingly, there were no complaints pending as at the end of the financial year.",
+   "Issuance of 9,08,000 Equity Shares on Preferential basis.",
+   "Issuance of 1,92,000 Fully Convertible Warrants on Preferential basis.",
+   "AGM scheduled for September 28, 2026 at Hotel Saffron Leaf, GMS Road Dehradun, Uttarakhand-248146",
+   "Dividend payment on or after October 15, 2026",
+   "Book Closure: September 22, 2026 to September 28, 2026",
+   "Listing on BSE (539148) and NSE (SHIVALIK)",
+   "ISIN: INE788J01021",
+   "CIN: L24237UR1979PLC005041",
+   "RTA: Beetal Financial & Computer Services Pvt. Ltd.",
+   "Secretarial Audit by M/s. AMJ & Associates confirms compliance",
+   "Certificate of Non-Disqualification of Directors issued by M/s. AMJ & Associates"
+  ],
+  "related_party": [
+   {
+    "party": "Medicamen Biotech Limited",
+    "nature": "Associate company (40.46% stake held via 54,87,095 equity shares)",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Purchases",
+    "amount_cr": 7.49
+   },
+   {
+    "party": "Related parties",
+    "nature": "Sales",
+    "amount_cr": 1345.4
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments",
+    "amount_cr": 8109.13
+   },
+   {
+    "party": "Medicamen Biotech Limited",
+    "nature": "Sales of Goods/Service",
+    "amount_cr": 13.454
+   },
+   {
+    "party": "Medicamen Biotech Limited",
+    "nature": "Purchase of Goods/Service",
+    "amount_cr": 0.0749
+   },
+   {
+    "party": "Medicamen Biotech Limited",
+    "nature": "Expenses Reimbursement",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Growel Remedies Limited",
+    "nature": "Rent Paid",
+    "amount_cr": 0.1416
+   },
+   {
+    "party": "Mr. Suresh Kumar Singh (Vice Chairman)",
+    "nature": "Remuneration to Directors",
+    "amount_cr": 0.336
+   },
+   {
+    "party": "Mr. Ashwani Kumar Sharma (Director)",
+    "nature": "Remuneration to Directors",
+    "amount_cr": 0.3144
+   },
+   {
+    "party": "Mr. Vimal Kumar Shrawat (MD)",
+    "nature": "Remuneration to Key Management Personnel",
+    "amount_cr": 2.08
+   },
+   {
+    "party": "Mr. Vinod Kumar (CFO)",
+    "nature": "Remuneration to Key Management Personnel",
+    "amount_cr": 0.1554
+   },
+   {
+    "party": "Ms. Parul Choudhary (CS)",
+    "nature": "Remuneration to Key Management Personnel",
+    "amount_cr": 0.1028
+   },
+   {
+    "party": "Kanchan Sharma",
+    "nature": "Rent Paid",
+    "amount_cr": 0.0569
+   },
+   {
+    "party": "Chem Pharm Health Care Pvt. Ltd.",
+    "nature": "Professional Service",
+    "amount_cr": 0.2592
+   },
+   {
+    "party": "Medicamen Life Sciences Pvt. Ltd.",
+    "nature": "Advance Paid",
+    "amount_cr": 2.8
+   },
+   {
+    "party": "Medicamen Life Sciences Pvt. Ltd.",
+    "nature": "Sales",
+    "amount_cr": 1.8458
+   },
+   {
+    "party": "Medicamen Life Sciences Pvt. Ltd.",
+    "nature": "Reimbursement of Expense",
+    "amount_cr": 0.0019
+   },
+   {
+    "party": "Mr. Suresh Kumar Singh (Vice Chairman)",
+    "nature": "Remuneration to Common Directors",
+    "amount_cr": 0.336
+   },
+   {
+    "party": "Mr. Ashwani Kumar Sharma (Director)",
+    "nature": "Remuneration to Common Directors",
+    "amount_cr": 0.6288
+   },
+   {
+    "party": "Mr. Vimal Kumar Shrawat (MD)",
+    "nature": "Remuneration to Common Key Management Personnel",
+    "amount_cr": 2.08
+   },
+   {
+    "party": "Mr. Vinod Kumar (CFO)",
+    "nature": "Remuneration to Common Key Management Personnel",
+    "amount_cr": 0.1554
+   },
+   {
+    "party": "Ms. Parul Choudhary (CS)",
+    "nature": "Remuneration to Common Key Management Personnel",
+    "amount_cr": 0.1028
+   },
+   {
+    "party": "Mr. Kamal Kishor Pahwa (MD to the subsidiary of Associate Company)",
+    "nature": "Remuneration to Common Key Management Personnel",
+    "amount_cr": 1.25
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Medicamen Biotech Limited",
+    "holding_pct": 40.46,
+    "business": "Associate Company; Board controls full affairs; significant influence through 40.46% stake"
+   },
+   {
+    "name": "Growel Remedies Limited",
+    "holding_pct": 47.37,
+    "business": "Holding company"
+   },
+   {
+    "name": "Medicamen Biotech Limited",
+    "holding_pct": 40.46,
+    "business": "Associate company"
+   },
+   {
+    "name": "Medicamen Biotech Limited",
+    "holding_pct": null,
+    "business": "Associate Company"
+   },
+   {
+    "name": "Medicamen Biotech Limited",
+    "holding_pct": null,
+    "business": "Associate company with total assets of Rs. 37,198.84 Lakhs, total revenues of Rs. 20,088.29 Lakhs, and net profit after tax of Rs. 979.64 Lakhs for year ended March 31, 2026"
+   }
+  ],
+  "litigation": [
+   "No significant material orders have been passed by the Regulators or Courts or Tribunals which would impact the going concern status of the Company and its future operations.",
+   "No applications were made or any proceedings were pending against the Company under the Insolvency and Bankruptcy Code, 2016.",
+   "No penalty or strictures were imposed on the Company by these authorities during the past three years.",
+   "Pending litigation with The Superintendent Commissioner, Central Goods and Services Tax Division \u2013 Dehradun, before Nainital High Court regarding alleged excess input tax credit of Rs. 1,18,34,538/- for FY 2017-18",
+   "Pending litigations disclosed in standalone financial statements (Refer Note 2.21).",
+   "There are no proceedings initiated or are pending against the Company for holding any benami property under the Prohibition of Benami Property Transactions Act, 1988 and rules made thereunder.",
+   "Pending litigation with The Superintendent (Range-V), Central Goods and Services Tax Division \u2013 Dehradun, before Nainital High Court regarding alleged excess input tax credit of Rs.1,18,34,538/- for FY 2017-18",
+   "The consolidated financial statements disclose the impact of pending litigations on its consolidated financial position of the Group"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Bank Guarantee given to Uttarakhand Environment & Pollution Control Board",
+    "amount_cr": 0.0542
+   },
+   {
+    "nature": "Bank Guarantee given to Gujarat Gas Limited",
+    "amount_cr": 1.3552
+   },
+   {
+    "nature": "Bank Guarantee given to Sales Tax Department",
+    "amount_cr": 0.0104
+   },
+   {
+    "nature": "GST Department, Dehradun - alleged excess ITC",
+    "amount_cr": 1.1834
+   }
+  ]
+ }
+}

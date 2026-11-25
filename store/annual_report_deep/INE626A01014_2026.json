@@ -1,0 +1,895 @@
+{
+ "isin": "INE626A01014",
+ "name": "Saurashtra Cement Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30782_SAURASHCEM_2025_2026_A_3138589_28082026161510.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 561198,
+ "chunks": 15,
+ "chunks_ok": 14,
+ "facts": {
+  "business": {
+   "description": "Saurashtra Cement Limited operates in cement and paints divisions. The company manufactures cement at Ranavav and Sidheegram units in Gujarat and sells paints under the Snowcem brand.",
+   "products": [
+    {
+     "name": "Cement",
+     "share_of_revenue_pct": null,
+     "note": "Revenue increased by about 8 percent despite lower price realizations, on account of higher sales volume. Completed cement grinding modernisation project at Sidheegram resulting in higher grinding and blending capacity and consequently higher cement production capability."
+    },
+    {
+     "name": "Paints",
+     "share_of_revenue_pct": null,
+     "note": "Revenue was about 12 percent higher than previous year. Widened market reach by appointment of new dealers resulting in higher sales volume and better product mix. Industry witnessed intense competition resulting in low realizations."
+    },
+    {
+     "name": "Cement & Cement related products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Clinker",
+     "share_of_revenue_pct": 0.8,
+     "note": "Revenue from sale of clinker was Rs 1,257.54 lakhs for year ended March 31, 2026"
+    },
+    {
+     "name": "Other Cement related Products",
+     "share_of_revenue_pct": 0.4,
+     "note": "Revenue from sale of other cement related products was Rs 695.35 lakhs for year ended March 31, 2026"
+    }
+   ],
+   "plants": [
+    {
+     "location": "Near Railway Station, Ranavav, Porbandar, Gujarat - 360550",
+     "capacity": ""
+    },
+    {
+     "location": "Sidheegram, PO - Prashnavada BO, Via Sutrapada SO, Gir Somnath, Gujarat - 362275",
+     "capacity": ""
+    },
+    {
+     "location": "Near Railway Station, Ranavav \u2013 360 550, Dist.: Porbandar, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Sidheegram, District: Gir Somnath \u2013 362 275, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. E-6, MIDC, Tal.: Sinnar, Malegaon, Nashik \u2013 422 103, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "F 3,4, 18, 19 & 20, Industrial Area, Gotan, Nagaur \u2013 342 902, Rajasthan",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. B-60 & 61, SIPCOT Industrial Estate, Gummidipoondi, Tiruvallur \u2013 601 201, Tamil Nadu",
+     "capacity": ""
+    },
+    {
+     "location": "Ranavav, Porbandar, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Sidheegram, Gir, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Ran Bauxite Mine, Bhatia, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Adityana Limestone & Marl Mines, Ranavav, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Sidheegram Plant",
+     "capacity": ""
+    },
+    {
+     "location": "Ranavav Plant",
+     "capacity": ""
+    },
+    {
+     "location": "Cement Plants",
+     "capacity": ""
+    },
+    {
+     "location": "Ranavav",
+     "capacity": ""
+    },
+    {
+     "location": "Sidheegram",
+     "capacity": ""
+    },
+    {
+     "location": "Cement Plants (leasehold land acquired for mining purpose)",
+     "capacity": ""
+    },
+    {
+     "location": "Private Jetty (constructed under license to use agreement with Gujarat Maritime Board)",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "brands_or_certifications": [
+    "Snowcem"
+   ],
+   "raw_materials": [
+    "Limestone",
+    "Marl",
+    "Bauxite",
+    "Packing Materials",
+    "Fuels",
+    "Raw Materials (includes in transit)",
+    "Fuels (includes in transit)",
+    "Stores and Spare Parts (includes in transit)",
+    "Steam Coal",
+    "Stores and Spares"
+   ],
+   "customers": [
+    "Dealers",
+    "Commission agents"
+   ],
+   "geographies": [
+    {
+     "name": "Domestic",
+     "share_pct": 99.99
+    },
+    {
+     "name": "Export",
+     "share_pct": 0.01
+    },
+    {
+     "name": "Domestic",
+     "share_pct": null
+    },
+    {
+     "name": "Export",
+     "share_pct": null
+    }
+   ],
+   "end_markets": [
+    "Construction",
+    "Infrastructure",
+    "Cement & Cement related products",
+    "Paints",
+    "Cement"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Government of India reduced GST rate on cement from 28 percent to 18 percent with effect from 22 September, 2025, company passed on the benefit of the reduced rate to its customers.",
+    "period": "2025-26"
+   },
+   {
+    "statement": "Pursuant to the enactment of the Finance Act, 2026, the Company has decided to opt for New Tax Regime u/s 200 of the Income-tax Act, 2025 w.e.f. tax year 2026-27. Accordingly, the applicable corporate tax rate from tax year 2026-27 will be changed to 25.17%.",
+    "period": "tax year 2026-27"
+   },
+   {
+    "statement": "The Company has decided to opt for New Tax Regime u/s 200 of the Income-tax Act, 2025 w.e.f. tax year 2026-27. Accordingly, the applicable corporate tax rate from tax year 2026-27 will be changed to 25.17%.",
+    "period": "tax year 2026-27 onwards"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Cement grinding modernisation project at Sidheegram",
+    "amount_cr": null,
+    "timeline": "Completed during the year"
+   },
+   {
+    "item": "KIMA Millmaster AI-based software for Cement Mill-1 & 2 at Sidheegram plant",
+    "amount_cr": 2.0,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Expansion Project Assets",
+    "amount_cr": 78.38,
+    "timeline": "Project suspended since 2005, intends to install assets at a later date depending on market conditions"
+   },
+   {
+    "item": "Improvements within Cement Plant",
+    "amount_cr": 12.54,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "Installation of ABT meter",
+    "amount_cr": 0.54,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "Pumping Infrastructure platform extension work",
+    "amount_cr": 0.74,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "N2 purging system nozzles for Coal Mill",
+    "amount_cr": 0.21,
+    "timeline": "More than 3 years"
+   },
+   {
+    "item": "Automation of Delivery System",
+    "amount_cr": 0.57,
+    "timeline": "1-3 years"
+   },
+   {
+    "item": "Improvements within Cement Plant",
+    "amount_cr": 0.57,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "Automation of Delivery System",
+    "amount_cr": 0.57,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "Expansion Project Assets (suspended since 2005, intends to install at later date)",
+    "amount_cr": 78.38,
+    "timeline": "depending on market conditions"
+   },
+   {
+    "item": "Improvements within Cement Plant",
+    "amount_cr": 12.54,
+    "timeline": "Less than 1 year: 1,200.54 lakhs; 1-2 years: 1.49 lakhs; 2-3 years: 52.10 lakhs"
+   },
+   {
+    "item": "N2 purging system nozzles for Coal Mill",
+    "amount_cr": 0.21,
+    "timeline": "2-3 years"
+   },
+   {
+    "item": "Automation of Delivery System (Intangible Assets under Development)",
+    "amount_cr": 0.57,
+    "timeline": "Overdue: Less than 1 year 57.33 lakhs"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account (net of advances)",
+    "amount_cr": 4.88,
+    "timeline": "Not specified"
+   }
+  ],
+  "risks": [
+   "Intense competition in paints industry resulting in low realizations",
+   "Lower price realizations in cement during major part of the year",
+   "Revenue misstatement risk due to estimation of variable consideration for discounts, incentives, rebates",
+   "Volume and complexities in revenue recognition with significant management estimates",
+   "Expansion project suspended since 2005 due to several adversities",
+   "Impairment provision of Rs 5,421.15 lakhs on Expansion Project Assets",
+   "Projects temporarily suspended amounting to Rs 2,417.00 lakhs",
+   "Leasehold land for mining requires Collector permission for transfer",
+   "Private jetty license agreement with Gujarat Maritime Board valid only upto March 31, 2026",
+   "Claims against the Company not acknowledged as debt in matters under disputes/appeals: Sales Tax/VAT Rs 424.78 lakhs, Excise Duty Rs 1,176.76 lakhs, GST Rs 1,891.08 lakhs, Royalty Rs 15.12 lakhs, Customs Duty Rs 122.85 lakhs, Income Tax Rs 1,937.97 lakhs, House Tax Rs 176.89 lakhs, Power Supply Rs 678.16 lakhs, Other demands Rs 28.02 lakhs",
+   "Dispute regarding sale of residential flats where outcome/impact is presently unascertainable",
+   "Implementation of new Labour Codes with incremental impact of Rs 655.73 lakhs disclosed as exceptional item",
+   "Impairment loss on assets classified as held for sale of Rs 355.64 lakhs",
+   "Actuarial Risk: adverse salary growth, change in demographic experience, inadequate return on underlying plan assets",
+   "Liquidity Risk: Employees with high salaries and long durations or those higher in hierarchy, accumulate significant level of benefits. If some of such employees resign / retire from the Company there can be strain on the cash flows.",
+   "Market Risk: Market risk is a collective term for risks that are related to the changes and fluctuations of the financial markets. One actuarial assumption that has a material effect is the discount rate.",
+   "Legislative Risk: Legislative risk is the risk of increase in the plan liabilities or reduction in the plan assets due to change in the legislation/regulation.",
+   "Credit Risk: Trade Receivables, Loans",
+   "Liquidity Risk: Borrowings and Other Liabilities",
+   "Foreign Exchange Risk: Committed commercial transaction mainly import of Steam Coal and Stores and Spares",
+   "Commodity Price Risk: Movement in prices of commodities mainly Imported Steam Coal",
+   "Interest Rate Risk: The Company's exposure to the risk of changes in market interest rates relates to i) overdraft against fixed deposits and ii) Cash Credit.",
+   "Credit Risk on cash and cash equivalent, deposits with banks",
+   "Liquidity Risk - risk that the Company will not be able to settle or meet its obligations on time or at reasonable price",
+   "Expansion Project suspended since 2005 due to several adversities",
+   "Impairment provision of 5,421.15 lakhs on Expansion Project Assets",
+   "Projects temporarily suspended: 2,417.00 lakhs (Expansion Project) and 2,599.00 lakhs (previous year)",
+   "Capital Work-in-Progress completion overdue compared to original plan",
+   "Intangible Assets under Development completion overdue compared to original plan",
+   "Trade Receivables credit impaired: 180.14 lakhs (2026), 148.59 lakhs (2025)",
+   "Security Deposits for supply of Power credit impaired: 195.79 lakhs",
+   "Liquidity Risk: employees with high salaries and long durations or those higher in hierarchy accumulate significant level of benefits; if such employees resign/retire there can be strain on cash flows",
+   "Market Risk: changes and fluctuations of financial markets; discount rate depends on yields on corporate/government bonds",
+   "Legislative Risk: government may amend labour codes requiring companies to pay higher benefits to employees"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Agrima Consultants International Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "There is no material non-listed Indian Subsidiary Company as on 31 March 2026"
+   },
+   {
+    "name": "Agrima Consultants International Limited",
+    "holding_pct": null,
+    "business": "Subsidiary company (CIN: U74210MH1988PLC047543)"
+   },
+   {
+    "name": "Agrima Consultants International Limited",
+    "holding_pct": 100.0,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties",
+    "nature": "All related party transactions during the Financial Year 2025\u201326 were entered into on an arm's length basis and in the ordinary course of business",
+    "amount_cr": null
+   },
+   {
+    "party": "Audit Committee",
+    "nature": "Prior approval for all Related party transactions obtained",
+    "amount_cr": null
+   },
+   {
+    "party": "Mehta Private Limited",
+    "nature": "Associate Company - Utilisation of residential premises as guest house for stay of Directors/Senior Executives/Consultants",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Jay Mehta",
+    "nature": "Compensation paid / payable to Key Management Personnel (Short-term employee benefits)",
+    "amount_cr": 15.19
+   },
+   {
+    "party": "Mr. M. S. Gilotra",
+    "nature": "Compensation paid / payable to Key Management Personnel (Short-term employee benefits)",
+    "amount_cr": 6.61
+   },
+   {
+    "party": "Agrima Consultants International Limited",
+    "nature": "Rent / Expenses reimbursements",
+    "amount_cr": 0.59
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Directors sitting fees",
+    "amount_cr": 0.79
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Dividend on Equity Shares",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Relatives of Key Management Personnel",
+    "nature": "Dividend on Equity Shares",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Promoter Companies",
+    "nature": "Dividend on Equity Shares",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mehta Private Limited",
+    "nature": "Rent Paid",
+    "amount_cr": 1.67
+   },
+   {
+    "party": "Directors",
+    "nature": "Directors sitting fees",
+    "amount_cr": 0.79
+   },
+   {
+    "party": "Mr. Jay Mehta",
+    "nature": "Personal Guarantee given for Working Capital facility and Term Loan given by HDFC Bank Limited",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "HDFC Bank Ltd",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "ICICI Bank Ltd",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Long-term Borrowings",
+    "amount_cr": 30.56,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short-term Borrowings",
+    "amount_cr": 75.63,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": null,
+    "note": "Residential Flat in Mumbai mortgaged as security for providing Bank Guarantees and Letters of Credit"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 48.01,
+    "note": "Cash Credit facility"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited",
+    "amount_cr": 15.83,
+    "note": "Overdraft facility"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited & ICICI Bank Limited",
+    "amount_cr": 11.8,
+    "note": "Current Maturities of Long-term borrowings (Term Loans from Banks)"
+   },
+   {
+    "lender_or_type": "Banks (Term Loans)",
+    "amount_cr": 30.56,
+    "note": "Non-Current Borrowings - Secured Term Loans from Banks"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 0.23,
+    "note": "Vehicle loans (principal amount continued)"
+   },
+   {
+    "lender_or_type": "SREI Infrastructure Finance Limited",
+    "amount_cr": 0,
+    "note": "Entire dues repaid, no outstanding balance"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 75.7,
+    "note": "Working Capital facility outstanding Rs 4,800.58 lakhs; Term Loan outstanding Rs 2,769.13 lakhs; Personal Guarantee given by Mr. Jay Mehta"
+   },
+   {
+    "lender_or_type": "Cash Credit",
+    "amount_cr": 48.01,
+    "note": "Amount outstanding as at March 31, 2026 is Rs 4,800.58 lakhs"
+   },
+   {
+    "lender_or_type": "Term Loan from Banks (Non-current)",
+    "amount_cr": 30.56,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Borrowings (Current)",
+    "amount_cr": 75.63,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Long-term Borrowings (including Current maturities)",
+    "amount_cr": 42.3587,
+    "note": "As at March 31, 2026 per cash flow reconciliation"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 63.8323,
+    "note": "As at March 31, 2026 per cash flow reconciliation"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": null,
+    "note": "Security for Bank Guarantees and Letters of Credit (Residential Flat in Mumbai mortgaged); Cash Credit facilities secured by hypothecation of inventories and trade receivables of Cement Division"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited",
+    "amount_cr": null,
+    "note": "Cash Credit facilities secured by hypothecation of inventories and trade receivables of Cement Division"
+   },
+   {
+    "lender_or_type": "Term Loans from Banks (Secured)",
+    "amount_cr": 42.36,
+    "note": "Non-current: Rs 3,055.96 lakhs; Current maturities: Rs 1,179.91 lakhs. Includes vehicle/equipment loans (36-60 months, 6.80%-9.20% p.a., secured by hypothecation). Term loan of Rs 3,195.15 lakhs secured by first charge on current assets, fixed deposits, equitable mortgage of land/building, hypothecation of plant/machinery at Sidheegram plant, and personal guarantee of one Promoter Director. Outstanding Rs 2,769.13 lakhs as at March 31, 2026."
+   },
+   {
+    "lender_or_type": "Cash Credit (Secured)",
+    "amount_cr": 48.01,
+    "note": "Secured by first charge by way of hypothecation of current assets (stocks, receivables) of Cement & Cement related products Division, equitable mortgage of land/building, hypothecation of plant/machinery at Ranavav and Sidheegram plants, and personal guarantee of one Promoter Director."
+   },
+   {
+    "lender_or_type": "Overdraft (Secured)",
+    "amount_cr": 15.83,
+    "note": "Secured against lien of fixed deposits with bank of Rs 6,450.79 lakhs."
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 75.7,
+    "note": "Working Capital facility outstanding Rs 4,800.58 lakhs; Term Loan outstanding Rs 2,769.13 lakhs (as at March 31, 2026)"
+   },
+   {
+    "lender_or_type": "Overdraft against fixed deposits",
+    "amount_cr": null,
+    "note": "Interest rate linked with interest rate on fixed deposit; self mitigated"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Manubhai & Shah LLP, Chartered Accountants",
+   "opinion": "The Auditor's Report issued by M/s. Manubhai & Shah LLP, Chartered Accountants on the financial statements of your Company for the Financial Year 2025-26 to the Shareholders forms part of the Annual Report and does not contain any qualification/reservation/disclaimer / adverse remarks.",
+   "key_audit_matters": [
+    "Management's response to the Key Audit Matters is presented in the Audit Report under the \"Key Audit Matters\" section.",
+    "Revenue recognition - Estimation of incentives to customers (discounts, incentives, rebates under marketing schemes)",
+    "Revenue recognition \u2013 Estimation of incentives to customers"
+   ],
+   "qualifications_or_emphasis": [
+    "The Compliance by the company of applicable Financial Laws like Direct & Indirect Tax Laws, Goods and Service Tax has not been reviewed in the audit since the same has been subject to their review by the statutory financial audit and other designated professionals.",
+    "No transactions relating to previously unrecorded income surrendered or disclosed as income during the year in tax assessments under Income Tax Act, 1961",
+    "Company has not defaulted in repayment of loans or other borrowings or payment of interest",
+    "Company has not been declared wilful defaulter by any bank or financial institution or government authority",
+    "Term loans availed during the year were applied for the purposes for which the loans were obtained",
+    "No funds raised on short-term basis used for long-term purposes",
+    "Company has not taken any funds from any entity or person on account of or to meet the obligations of its subsidiary",
+    "Company has not raised loans on the pledge of securities held in its subsidiary",
+    "No fraud by the Company or material fraud on the Company noticed or reported during the year",
+    "No report under sub-section (12) of section 143 of Companies Act filed in Form ADT-4",
+    "No whistle blower complaints received by the Company during the year",
+    "Transactions with related parties are in compliance with sections 177 and 188 of Companies Act, 2013",
+    "Company has an internal audit system commensurate with the size and nature of its business",
+    "Company has not entered into any non-cash transactions with Directors or persons connected to directors",
+    "Company is not required to be registered under section 45-IA of RBI Act, 1934",
+    "Company has not incurred cash losses during the financial year covered by audit and immediately preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "Company has fully spent the required amount towards CSR and there is no unspent CSR amount"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Effective from 26th September, 2025, the designation of Mr. Jay Mehta (DIN:00152072) has been changed from Executive Chairman to Chairman (Non-Executive Non-Independent Director of Board of Directors and guide your Company in a non-executive capacity).",
+    "Mr. M. N. Mehta, Non Executive Director, Non-Independent (Chairman Emeritus) ceased to be Director w.e.f. 24th April 2026.",
+    "Mr. Hemang Dhirendra Mehta (DIN: 00146580), Non-Independent Director, retires by rotation at the ensuing 68th Annual General Meeting and, being eligible, offers himself for re-appointment.",
+    "Mr. Pradeep Mehta resigned from the position of Chief Financial Officer (CFO) and Key Managerial Personnel (KMP) with effect from the close of business hours on 25th July, 2025.",
+    "Mr. Rakesh H. Mehta was appointed as Chief Financial Officer and Key Managerial Personnel with effect from 26th July, 2025 in an interim capacity.",
+    "Mr. Prakash Chand Jain was appointed as Chief Financial Officer with effect from 5th September, 2025 in place of Mr. Rakesh H. Mehta.",
+    "Mr. Jay M. Mehta re-designated from Executive Vice Chairman to Executive Chairman effective 21st August 2024 until 31st December 2026; subsequently re-designated from Executive Chairman to Non-Executive Chairman (Non-Executive Non-Independent Director) effective 26th September 2025.",
+    "Mr. Viren Ajitkumar Merchant appointed as Non-Executive Independent Director for a term of five years from 28th May 2024 to 27th May 2029.",
+    "Mr. M. N. Sarma appointed as Non-Executive Independent Director for a term of 5 years from 25th May 2023 to 24th May 2028.",
+    "Mr. Aman Pradeepchand Khanna appointed as Non-Executive Independent Director for a term of five years from 30th June 2023 to 29th June 2028.",
+    "Mrs. Radhika Samarjitsinh Gaekwad appointed as Non-Executive Independent Director for a term of five years from 30th June 2023 to 29th June 2028.",
+    "Mr. Ashwani Kumar reappointed as Non-Executive Independent Director for another term of five years from 13th February 2024 to 12th February 2029.",
+    "Mr. Jay M. Mehta reappointed as Executive Vice Chairman from 1st January 2024 till 31st December 2026.",
+    "Mr. M. S. Gilotra reappointed as Managing Director from 1st January 2024 till 31st December 2026.",
+    "Cessation of Mr. Pradeep Mehta as CFO w.e.f. July 25, 2025 due to Resignation",
+    "Appointment of Mr. Rakesh H. Mehta as CFO for interim period w.e.f. July 26, 2025",
+    "Cessation of Mr. Rakesh H. Mehta as CFO w.e.f. September 04, 2025 due to Resignation",
+    "Appointment of Mr. Prakash Chand Jain as CFO w.e.f. September 05, 2025",
+    "Approval sought from shareholders at AGM held on August 29, 2025 for reappointment of Mr. Hemnabh Ranvir Khatau as Non-Executive, Non-Independent Director",
+    "Subash Chandra Khanna ceased to be a promoter shareholder (holding reduced from 0.05% to 0%)",
+    "Change in designation from Chairman to Non Executive Non Independent Director w.e.f. August 21, 2024 (Mr. M. N. Mehta)",
+    "Change in designation from Executive Vice Chairman to Executive Chairman w.e.f. August 21, 2024 (Mr. Jay Mehta)",
+    "Change in designation from Executive Chairman to Chairman (Non Executive Non Independent Director) w.e.f. September 26, 2025 (Mr. Jay Mehta)",
+    "Ceased to be director w.e.f. August 4, 2024 (Mrs. Bhagyam Ramani)",
+    "Appointed w.e.f. May 28, 2024 (Mr. Viren Ajitkumar Merchant)",
+    "Subash Chandra Khanna: held 60,000 shares (0.05%) as at March 31, 2025; nil as at March 31, 2026",
+    "Mr. M. N. Mehta: Change in designation from Chairman to Non Executive Non Independent Director w.e.f. August 21, 2024",
+    "Mr. Jay Mehta: Change in designation from Executive Vice Chairman to Executive Chairman w.e.f. August 21, 2024; Change in designation from Executive Chairman to Chairman (Non Executive Non Independent Director) w.e.f. September 26, 2025",
+    "Mrs. Bhagyam Ramani: Ceased to be director w.e.f. August 4, 2024",
+    "Mr. Viren Ajitkumar Merchant: Appointed w.e.f. May 28, 2024"
+   ],
+   "promoter_holding_pct": 66.63,
+   "top_shareholders": [
+    {
+     "name": "Promoter Group Companies (Indian + Foreign)",
+     "pct": 62.55
+    },
+    {
+     "name": "Promoter Group (Individual)",
+     "pct": 4.08
+    },
+    {
+     "name": "Mehta Investments Mauritius Limited",
+     "pct": 18.63
+    },
+    {
+     "name": "The Mehta International Mauritius Limited",
+     "pct": 15.23
+    },
+    {
+     "name": "Galaxy Technologies Private Limited",
+     "pct": 14.57
+    },
+    {
+     "name": "Omna Enterprises LLP",
+     "pct": 9.46
+    },
+    {
+     "name": "Gujarat Industrial Investment Corporation Limited",
+     "pct": 4.6
+    }
+   ]
+  },
+  "litigation": [
+   "No application made or proceeding pending under the Insolvency and Bankruptcy Code, 2016",
+   "No significant material orders passed by regulators, courts, or tribunals affecting the going concern status",
+   "Income Tax disputes for AY 2015-16 (ITAT Mumbai), AY 2017-18 (CIT(A) NFAC), AY 2020-21 (CIT(A)-13 Ahmedabad), AY 2017-18 to 2019-20 (CIT(A) NFAC)",
+   "Gujarat Panchayats House Tax dispute 1993-94 to 2025-26 (High Court of Gujarat)",
+   "Mines and Royalty dispute 2004-05 to 2006-07 (Commissioner, Geology)",
+   "Disputed statutory dues of Income Tax, Service tax, Sales Tax, Value Added Tax, Excise Duty, Customs Duty, Stamp Duty, GST pending at various forums including High Courts, CESTAT, Commissioner, Joint Commissioner, Deputy Commissioner",
+   "Sales Tax / VAT disputes: Rs 424.78 lakhs",
+   "Excise Duty disputes: Rs 1,176.76 lakhs",
+   "Goods and Services Tax disputes: Rs 1,891.08 lakhs",
+   "Royalty disputes: Rs 15.12 lakhs",
+   "Customs Duty disputes: Rs 122.85 lakhs",
+   "Income Tax disputes: Rs 1,937.97 lakhs",
+   "House Tax disputes: Rs 176.89 lakhs",
+   "Power Supply disputes: Rs 678.16 lakhs",
+   "Other demands and claims: Rs 28.02 lakhs",
+   "Dispute regarding sale of residential flats where original unsuccessful bidder disputed subsequent sale",
+   "The Group has disclosed the impact of pending litigations on its financial position in its Consolidated Financial Statements \u2013 Refer Note 35 to the Consolidated Financial Statements.",
+   "Pre-deposit Balances with Statutory / Government Authorities against Appeals: 369.97 lakhs (2026), 294.50 lakhs (2025)",
+   "Dispute on sale of residential flats: original unsuccessful bidder has disputed the subsequent sale; outcome/impact presently unascertainable",
+   "Claims against the Company not acknowledged as debt: Sales Tax/VAT (Rs 424.78 lakhs), Excise Duty (Rs 1,176.76 lakhs), GST (Rs 1,891.08 lakhs), Royalty (Rs 15.12 lakhs), Customs Duty (Rs 122.85 lakhs), Income Tax (Rs 1,937.97 lakhs), House Tax (Rs 176.89 lakhs), Power Supply (Rs 678.16 lakhs), Other demands and claims (Rs 28.02 lakhs)"
+  ],
+  "people": {
+   "employees": 825,
+   "key_management": [
+    {
+     "name": "Mr. Jay Mehta",
+     "role": "Chairman (Non-Executive Non-Independent Director)"
+    },
+    {
+     "name": "Mr. M. S. Gilotra",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Prakash Chand Jain",
+     "role": "Chief Financial Officer (w.e.f. 5.9.2025)"
+    },
+    {
+     "name": "Ms. Sonali Sanas",
+     "role": "Chief Legal Officer, CS & Strategy"
+    },
+    {
+     "name": "Mr. Jay M. Mehta",
+     "role": "Executive Chairman (until 25th September 2025), then Non-Executive Chairman"
+    },
+    {
+     "name": "Mr. Ashwani Kumar",
+     "role": "Non-Executive Independent Director, Chairman of Audit Committee"
+    },
+    {
+     "name": "Mr. Aman Khanna",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. M. N. Sarma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Radhikaraje Gaekwad",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Hemnabh R. Khatau",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Viren Ajitkumar Merchant",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Sonali Sanas",
+     "role": "Chief Legal Officer, CS & Strategy, Compliance Officer"
+    },
+    {
+     "name": "M. S. Gilotra",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Jay Mehta",
+     "role": "Executive Chairman (for the period from 1.4.2025 to 25.9.2025)"
+    },
+    {
+     "name": "Pradeep Mehta",
+     "role": "Chief Financial Officer (w.e.f. 9.9.2024 to 25.7.2025)"
+    },
+    {
+     "name": "Rakesh Mehta",
+     "role": "Chief Financial Officer (w.e.f. 26.7.2025 to 4.9.2025)"
+    },
+    {
+     "name": "Prakash Chand Jain",
+     "role": "Chief Financial Officer (w.e.f. 5.9.2025)"
+    },
+    {
+     "name": "Narendra Singh",
+     "role": "Chief Manufacturing Officer"
+    },
+    {
+     "name": "Sonali Sanas",
+     "role": "Chief Legal Officer, CS & Strategy"
+    },
+    {
+     "name": "M.S. Gilotra",
+     "role": "Managing Director (DIN: 00152190)"
+    },
+    {
+     "name": "Jay Mehta",
+     "role": "Chairman"
+    },
+    {
+     "name": "Prakash Chand Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. M. N. Mehta",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Jay Mehta",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Hemang D. Mehta",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Hemnabh R. Khatau",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. M. N. Sarma",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ashwani Kumar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Radhikaraje Gaekwad",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Aman P. Khanna",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Viren Ajitkumar Merchant",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Jay Mehta",
+     "role": "Chairman (DIN: 00152072)"
+    },
+    {
+     "name": "Devansh Gandhi",
+     "role": "Managing Director (DIN: 00152190)"
+    },
+    {
+     "name": "Prakash Chand Jain",
+     "role": "Chief Financial Officer (M.No. 079601)"
+    },
+    {
+     "name": "M. S. Gilotra",
+     "role": "Chief Legal Officer, CS & Strategy (M.No. A16690)"
+    },
+    {
+     "name": "Sonali Sanas",
+     "role": "Partner, MANUBHAI & SHAH LLP (Membership No. 129255)"
+    }
+   ]
+  },
+  "other_notable": [
+   "During the Financial Year 2025-26, the Board of Directors has not recommended any dividend in view of inadequate profit.",
+   "Paid-up equity share capital increased from Rs 11,123.70 lakhs to Rs 11,128.73 lakhs pursuant to allotment of 50,326 equity shares under ESOS 2017.",
+   "Employee Stock Option Plan (ESOP) granted under the first tranche on 8th February, 2018 stands fully exercised.",
+   "Seven (7) meetings of the Board of Directors were held during FY 2025-26.",
+   "Two (2) Meetings of the Independent Directors were held on 22nd May, 2025 and 23rd February, 2026.",
+   "No complaints of sexual harassment were received during FY 2025-26.",
+   "Equity shares listed on BSE Limited and National Stock Exchange of India Limited.",
+   "Listing fees paid for Financial Year 2026-27.",
+   "Total fees paid to Statutory Auditor during FY 2025-26: Rs 33.88 lakhs (consolidated basis).",
+   "No strictures or penalties imposed by Stock Exchanges, SEBI, or any statutory authority in the last three financial years.",
+   "All recommendations of the Audit Committee during FY 2025-26 were accepted by the Board.",
+   "No material related party transactions outside ordinary course of business or conflicting with company interests during FY 2025-26.",
+   "No personnel denied access to Audit Committee under Whistle Blower Policy.",
+   "As of 31st March 2026, no material non-listed Indian subsidiary requiring appointment of Independent Director on subsidiary board.",
+   "68th AGM scheduled for 23rd September 2026; Book Closure from 17th September 2026 to 23rd September 2026.",
+   "Listing fees for FY 2026-27 paid to BSE and NSE within due dates.",
+   "Securities not suspended from trading during FY 2025-26.",
+   "Quarterly results disclosure timeline for FY 2026-27: Q1/Q2/Q3 within 45 days of quarter end; Q4/Annual within 60 days of financial year end.",
+   "CSR obligation for FY 2025-26: Rs 53.47 lakhs (2% of average net profit)",
+   "CSR amount spent in FY 2025-26: Rs 53.49 lakhs (excess of Rs 0.02 lakhs)",
+   "CSR focus areas: healthcare, education, women's empowerment, infrastructure support, integrated rural development, environmental sustainability",
+   "CSR projects implemented in Gujarat (Porbandar, Gir, Somnath) through implementing agencies and direct mode",
+   "Share Allotment Committee allotted 16,203 equity shares on June 06, 2025 and 34,123 equity shares on January 16, 2026 under Saurashtra Employee Stock Option Scheme 2017",
+   "Saurashtra Employee Stock Option Scheme 2017 (amended on 22nd April 2024) implemented in accordance with SEBI Regulations",
+   "No options outstanding at end of FY 2025-26; 50,326 options exercised during the year",
+   "Secretarial Audit confirms compliance with Companies Act, SEBI Regulations, Mines Act, Metalliferous Mines Regulation, Limestone & Dolomite Mines Labour Welfare Fund Act, Mineral Conservation & Development Rules, Cement (Quality Control) Order",
+   "No actions taken by SEBI or Stock Exchanges against the company/promoters/directors/subsidiaries during the review period",
+   "Certificate of Non-Disqualification of Directors issued by Ragini Chokshi & Co. confirming none of the Directors debarred or disqualified as on March 31, 2026",
+   "Energy conservation: 4% reduction in specific power consumption at Sidheegram, 2 Kcal/kg clinker heat consumption reduction at Ranavav, 3-3.5% steam consumption reduction at Ranavav",
+   "Renewable power utilization increased ~6.11% at Sidheegram, TSR improved ~2% through AFR usage",
+   "Foreign exchange earnings: Rs 476.08 lakhs (FY26) vs Rs 45.72 lakhs (FY25); Foreign exchange outgo: Rs 34,293.29 lakhs (FY26) vs Rs 29,980.79 lakhs (FY25)",
+   "No interim or final dividend declared for FY 2025-26",
+   "Internal financial controls: adequate and operating effectively as at March 31, 2026",
+   "Accounting software with audit trail feature operated throughout the year without tampering",
+   "Working capital limits sanctioned > Rs 5 crores; quarterly returns filed with banks with minor differences explained by inventory valuation changes and limited review timing",
+   "Revenue from Operations for FY 2025-26: Rs 1,66,603.87 lakhs (Rs 1,666.04 crore)",
+   "Profit for the year FY 2025-26: Rs 1,441.83 lakhs (Rs 14.42 crore)",
+   "Total Comprehensive Income for FY 2025-26: Rs 1,419.61 lakhs (Rs 14.20 crore)",
+   "Earnings per Equity Share (Basic & Diluted) for FY 2025-26: Rs 1.30 per share",
+   "Equity Share Capital as at March 31, 2026: Rs 11,128.73 lakhs (Rs 111.29 crore)",
+   "Other Equity as at March 31, 2026: Rs 85,034.90 lakhs (Rs 850.35 crore)",
+   "Total Assets as at March 31, 2026: Rs 1,58,793.49 lakhs (Rs 1,587.93 crore)",
+   "Net Cash Generated from Operating Activities FY 2025-26: Rs 3,630.78 lakhs (Rs 36.31 crore)",
+   "Net Cash Used in Financing Activities FY 2025-26: Rs (3,689.82) lakhs (Rs (36.90) crore)",
+   "Net Cash Generated from Investing Activities FY 2025-26: Rs 1,905.96 lakhs (Rs 19.06 crore)",
+   "Cash and Cash Equivalents at end of FY 2025-26: Rs 7,862.24 lakhs (Rs 78.62 crore)",
+   "Company operates a loyalty programme for customers for sale of goods",
+   "Company has Employee Stock Options scheme",
+   "Financial statements approved by Board of Directors on May 12, 2026",
+   "Statutory audit report dated May 12, 2026",
+   "Company holds leasehold land for mining purpose at cement plants",
+   "Private jetty constructed under license agreement with Gujarat Maritime Board (GMB) valid upto March 31, 2026",
+   "Investment in subsidiary Agrima Consultants International Limited carried at cost less provision for impairment (Rs 84.51 lakhs as at March 31, 2026)",
+   "Mines restoration obligation provided for based on present value of estimated future cash outflows",
+   "Gratuity plan managed by Life Insurance Corporation of India (LIC)",
+   "For trade receivables, provision for doubtful debts based on specific identification rather than expected credit loss model",
+   "Equity investments measured at FVTOCI with irrevocable election on instrument-by-instrument basis",
+   "No new standards or amendments notified by MCA for year ended March 31, 2026 that are not yet effective",
+   "Working Capital limit of Rs 36,000 lakhs for cement plants comprising fund-based limit of Rs 8,000 lakhs and non-fund based limit of Rs 28,000 lakhs",
+   "Capital commitments: Estimated amount of contracts remaining to be executed on capital account (net of advances) is Rs 487.62 lakhs"
+  ],
+  "dividend_per_share": 1,
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax disputes",
+    "amount_cr": 63.77
+   },
+   {
+    "nature": "Gujarat Panchayats House Tax",
+    "amount_cr": 0.85
+   },
+   {
+    "nature": "Mines and Royalty",
+    "amount_cr": 0.15
+   },
+   {
+    "nature": "Disputed statutory dues - Income Tax, Service tax, Sales Tax, Value Added Tax, Excise Duty, Customs Duty, Stamp Duty, GST",
+    "amount_cr": 32.43
+   },
+   {
+    "nature": "Sales Tax / VAT",
+    "amount_cr": 4.25
+   },
+   {
+    "nature": "Excise Duty",
+    "amount_cr": 11.77
+   },
+   {
+    "nature": "Goods and Services Tax",
+    "amount_cr": 18.91
+   },
+   {
+    "nature": "Royalty",
+    "amount_cr": 0.15
+   },
+   {
+    "nature": "Customs Duty",
+    "amount_cr": 1.23
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 19.38
+   },
+   {
+    "nature": "House Tax",
+    "amount_cr": 1.77
+   },
+   {
+    "nature": "On account of Power Supply",
+    "amount_cr": 6.78
+   },
+   {
+    "nature": "Other demands and claims",
+    "amount_cr": 0.28
+   },
+   {
+    "nature": "Personal Guarantee given by Mr. Jay Mehta for Working Capital facility and Term Loan given by HDFC Bank Limited",
+    "amount_cr": 75.7
+   },
+   {
+    "nature": "Dispute on sale of residential flats (outcome/impact unascertainable)",
+    "amount_cr": null
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Private Jetty constructed under license to use agreement with Gujarat Maritime Board (GMB), present agreement valid upto March 31, 2026",
+    "value_cr": null
+   }
+  ]
+ }
+}

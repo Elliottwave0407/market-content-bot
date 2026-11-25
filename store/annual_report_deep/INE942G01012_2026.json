@@ -1,0 +1,2411 @@
+{
+ "isin": "INE942G01012",
+ "name": "Mcleod Russel India Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31962_MCLEODRUSS_2025_2026_A_8260562_08092026212153.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 906229,
+ "chunks": 23,
+ "chunks_ok": 23,
+ "facts": {
+  "business": {
+   "description": "The Company, being engaged in tea plantation and manufacturing activities, is required to appoint Cost Auditors to audit its cost accounting records.",
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Tea",
+     "share_of_revenue_pct": null,
+     "note": "Saleable production of 360.61 Lakh Kgs in FY 2025-26; export sales of Rs 20,997.20 Lakhs"
+    },
+    {
+     "name": "CTC Black Tea",
+     "share_of_revenue_pct": null,
+     "note": "Predominantly produced; prices decreased by 8.45% in Indian auction centres in 2025"
+    },
+    {
+     "name": "Orthodox Black Tea",
+     "share_of_revenue_pct": null,
+     "note": "Prices increased by 3.04% in Indian auction centres in 2025; growing preference presents opportunities"
+    },
+    {
+     "name": "Tea Waste",
+     "share_of_revenue_pct": null,
+     "note": "Tea Waste Sales: Rs 484.41 lakhs (2025-26), Rs 409.16 lakhs (2024-25)"
+    },
+    {
+     "name": "Black Tea",
+     "share_of_revenue_pct": null,
+     "note": "Finished goods produced from agricultural produce i.e. Black Tea are valued at lower of cost arrived at by adding the cost of conversion to the fair value of agricultural produce and the net realisable value."
+    }
+   ],
+   "customers": [
+    "Domestic buyers",
+    "International buyers",
+    "Overseas buyers",
+    "International buyers prioritising compliance with Maximum Residue Limits (MRLs), responsible agricultural practices and certified supply chains",
+    "Domestic market consumers",
+    "Domestic market",
+    "International market including United Kingdom and Europe",
+    "Auction buyers",
+    "Consignment agents",
+    "Private domestic customers",
+    "Export customers"
+   ],
+   "geographies": [
+    {
+     "name": "India (Assam, West Bengal)",
+     "share_pct": null
+    },
+    {
+     "name": "International markets (worldwide shipments)",
+     "share_pct": null
+    },
+    {
+     "name": "India (North India and South India tea auction centres)",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets (premium export markets)",
+     "share_pct": null
+    },
+    {
+     "name": "Assam",
+     "share_pct": null
+    },
+    {
+     "name": "West Bengal",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom and Europe",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": null
+    },
+    {
+     "name": "Outside India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "Export (USD, EURO, GBP markets)",
+     "share_pct": null
+    },
+    {
+     "name": "India (Assam and West Bengal)",
+     "share_pct": null
+    },
+    {
+     "name": "Uganda",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "UK",
+     "share_pct": null
+    },
+    {
+     "name": "Others",
+     "share_pct": null
+    },
+    {
+     "name": "Kenya",
+     "share_pct": null
+    },
+    {
+     "name": "United Arab Emirates",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Assam (31 tea estates and 31 factories), West Bengal (Dooars estates)",
+     "capacity": "Saleable production 360.61 Lakh Kgs in FY 2025-26"
+    },
+    {
+     "location": "Nilpur Factory, Assam",
+     "capacity": "Converted to 100% Orthodox tea manufacturing unit"
+    },
+    {
+     "location": "33 tea estates/factories in India",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Bishnath: Dekorai, Mijicajan, Monabarie, Pertabghur, Nilpur",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Dhunseri: Behora, Bukhial",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - East Boroi: Behal, Boroi, Dufflaghur, Halem, Nya Gogra",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Jorhat: Hunwal",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Mangaldai: Attareekhat, Bhooteachang, Borengajuli, Corramore, Dimakusi, Paneery",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Margherita: Bogapani, Dehing, Dirok, Margherita, Namdang",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Moran: Rajmai",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Thakurbari: Phulbari, Rupajuli, Tarajulie, Tezpore & Gogra",
+     "capacity": ""
+    },
+    {
+     "location": "Assam - Tingri: Dirial, Itakhooli, Keyhung",
+     "capacity": ""
+    },
+    {
+     "location": "West Bengal - Dooars: Central Dooars, Mathura",
+     "capacity": ""
+    },
+    {
+     "location": "Guwahati, Assam - Blending Unit: EPIP, Amingaon, Guwahati, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "33 tea estates in Assam and West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Two bulk blending units",
+     "capacity": "Can blend both 'Orthodox' and CTC tea varieties"
+    },
+    {
+     "location": "Assam (31 tea estates)",
+     "capacity": ""
+    },
+    {
+     "location": "West Bengal (2 tea estates)",
+     "capacity": ""
+    },
+    {
+     "location": "Bhootechang, Bukhial, Dimakusi, Dufflaghur, Keyhung, Mathura, Mijicajan, Dirial, Phulbari, Hunwal, Boroi Tea Estates",
+     "capacity": ""
+    },
+    {
+     "location": "33 tea estates/factories and 2 offices",
+     "capacity": ""
+    },
+    {
+     "location": "Assam and West Bengal, India",
+     "capacity": "33 tea estates, two bulk blending units"
+    },
+    {
+     "location": "Uganda",
+     "capacity": "tea estates (subsidiary)"
+    },
+    {
+     "location": "25 tea estates in India (including Bhootechang, Bukhial, Dimakusi, Dufflaghur, Keyhung, Mathura, Mijicajan, Dirial, Phulbari, Hunwal, Boroi)",
+     "capacity": ""
+    },
+    {
+     "location": "Uganda (Bugambe, Bugahya, Kisita, Hoima, Buniyoro, Tororo, Muzizi, Kisaru Tea Estate)",
+     "capacity": ""
+    },
+    {
+     "location": "Boroi Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Mathura Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Nya Gogra Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Rupajuli Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "33 tea estates/factories and 2 offices (India)",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "Green tea leaves (own crop and bought leaf)",
+    "Tea leaves (own cultivation and smallholder sourcing)",
+    "Approved crop protection products (pesticides)",
+    "Tea leaves (purchased and harvested)",
+    "Stores and spare parts",
+    "Green Leaf",
+    "Agro chemicals",
+    "Fertilizers",
+    "Packing materials",
+    "Coal",
+    "HSD (High Speed Diesel)",
+    "Green tea leaves",
+    "Purchased tea leaves",
+    "Harvested tea leaves"
+   ],
+   "end_markets": [
+    "Domestic tea market",
+    "International tea export markets",
+    "Domestic tea consumption (India retains 80-90% of production)",
+    "International export markets (black tea)",
+    "domestic",
+    "export",
+    "International",
+    "Export tea market",
+    "Tea consumers (domestic and international)",
+    "international tea market",
+    "Tea market"
+   ],
+   "brands_or_certifications": [
+    "ISO 22000:2018 (all 31 factories in Assam)",
+    "Rainforest Alliance (all 31 tea estates and blending unit in Assam)",
+    "Trustea certification (all estates and factories in Assam)",
+    "Ethical Tea Partnership member",
+    "Food safety, traceability and sustainability standards compliance",
+    "Maximum Residue Limits (MRLs) compliance",
+    "Certified supply chains",
+    "ISO 22000",
+    "HACCP",
+    "Rainforest Alliance",
+    "Trustea",
+    "WM logo (Trade Mark/Brand)",
+    "WM logo brand",
+    "Fair Trade"
+   ],
+   "competitors_named": [
+    "Kenya (CTC and expanding orthodox production)",
+    "Sri Lanka (predominantly orthodox black tea producer)"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Mani & Co., M/s. SPK Associates and M/s. DGM & Associates",
+   "opinion": "Adverse opinion on Standalone and Consolidated Financial Statements for Financial Year ended 31st March 2026",
+   "key_audit_matters": [
+    "Inter-Corporate Deposits (ICDs) aggregating to Rs. 2,86,050 lakhs (including interest accrued till March 31, 2019) given to promoter group and certain other entities - doubtful of recovery, provision of Rs. 2,44,629 lakhs made leaving Rs. 41,421 lakhs unprovided",
+    "Non-recognition of interest on loans, ICDs and other amounts taken by company",
+    "Non-determination of interest and consequential adjustments for certain advances and liabilities",
+    "Non-reconciliation/disclosure of certain debit and credit balances including borrowings and interest",
+    "Non-determination of lease rent for office premises",
+    "Non-determination of fair value of PPE, CWIP and investment in subsidiary and impairment testing",
+    "Statutory liabilities outstanding and non-determination of adjustments including interest",
+    "Predecessor auditor matters regarding Section 185 compliance and related party determinations",
+    "Recognition of deferred tax assets including those arising from ICD provisions",
+    "Debt restructuring adjustments (Rs. 1,28,895 lakhs) subject to MRA execution and conditions precedent",
+    "Non-recognition and ascertainment of impact of labour code notified November 21, 2025",
+    "Inter Corporate Deposits (ICDs) aggregating Rs. 2,86,050.45 lakhs given to promoter group and certain other entities doubtful of recovery",
+    "Non-recognition of interest on loans, ICDs and other amounts taken by the company",
+    "Adjustment of Rs. 1,28,894.81 lakhs in exceptional items pursuant to NARCL resolution letter and JCAF approval",
+    "Recognition of deferred tax assets including those arising due to provision against ICDs given uncertainty of availability",
+    "Non-determination of fair value of Property, Plant and Equipment, Capital Work in Progress",
+    "Valuation of Biological Assets, Agricultural produce and Finished goods",
+    "Going Concern Assumption (Note 59 of the Standalone financial statements)",
+    "Material weaknesses in internal financial controls over financial reporting",
+    "Going concern uncertainty",
+    "Doubtful recovery of loans and advances (Rs. 2,76,108.95 lakhs)",
+    "Non-compliance with Sections 185 and 186 of Companies Act, 2013",
+    "Related party transactions completeness/correctness not ascertainable",
+    "Default in repayment of borrowings",
+    "Short term funds used for long-term purposes",
+    "Inter-Corporate Deposits to promoter group entities (Rs 2,76,109 lakhs outstanding, Rs 2,44,629 lakhs provided, Rs 41,421 lakhs unprovided)",
+    "Non-recognition of interest on borrowings/ICDs (Rs 16,189.55 lakhs not recognized)",
+    "Non-determination of interest and adjustments for certain advances/liabilities",
+    "Non-reconciliation of debit/credit balances including borrowings, trade payables, receivables",
+    "Fair value assessment and impairment testing of PPE, CWIP, and investment in BTHL (Rs 15,967.18 lakhs)",
+    "Statutory liabilities including Provident Fund dues (Rs 21,382.49 lakhs)",
+    "Predecessor auditor adverse opinion on FY2019 regarding Section 185/186 compliance, book entries",
+    "Recognition of deferred tax assets including from ICD provisions",
+    "Going Concern Assumption (Note 60 of the consolidated financial statements)",
+    "Non-determination of shortfall in recovery against loans, intercorporate deposits etc. and resultant non-provision thereagainst",
+    "Provision/non-determination for interest and other terms and conditions in respect of the borrowings pending confirmation from lenders",
+    "Adjustments given pursuant to the sanction letters of ARC",
+    "Recognition of deferred tax assets",
+    "Non-determination of impairment in the value of Property, Plant and Equipment, Capital Work in Progress, Other Intangible Assets and Goodwill arising on consolidation",
+    "Non-determination of adjustments including interest against statutory liabilities",
+    "Material Uncertainty Related to Going Concern assumption",
+    "Inter-Corporate Deposits (ICDs) aggregating to Rs. 2,86,050 lakhs (including interest accrued till March 31, 2019) given to promoter group and certain other entities, doubtful of recovery, prejudicial to company's interest; provision of Rs. 2,44,629 lakhs made leaving Rs. 41,421 lakhs unprovided; loss understated to that extent",
+    "Non-recognition of interest on loans and ICDs (Qualification 2)",
+    "Non-determination of interest on advances/liabilities (Qualification 3)",
+    "Non-reconciliation of balances (Qualification 4)",
+    "Non-determination of lease rent (Qualification 5)",
+    "Non-determination of fair value and impairment of PPE, CWIP, Goodwill (Qualification 6)",
+    "Statutory liabilities outstanding (Qualification 7)",
+    "Regulatory examination of loans to group companies (Qualification 8)",
+    "Recognition of deferred tax assets (Qualification 9)",
+    "Debt restructuring with NARCL/JCAF (Qualification 10)",
+    "Non-recognition of Labour Code impact (Qualification 11)"
+   ],
+   "qualifications_or_emphasis": [
+    "Adverse opinion expressed on Standalone and Consolidated Financial Statements",
+    "11 specific qualifications detailed in audit report with Board responses",
+    "The Auditors of the Company have furnished their Audit Report in respect of the Financial Results for the Financial Year ended 31st March, 2026 with modified opinion.",
+    "Adverse opinion on standalone financial statements - do not give true and fair view",
+    "Loss for the year understated due to unprovided ICDs balance of Rs. 41,421.41 lakhs",
+    "Loss understated due to non-recognition of interest on borrowings",
+    "Impact of NARCL resolution subject to execution of MRA and fulfilment of conditions precedent",
+    "Deferred tax assets recognition uncertain",
+    "Fair value of PPE and CWIP not determined",
+    "Basis for Adverse Opinion: Note 57(a) - non-determination of shortfall in recovery against loans, intercorporate deposits etc. and resultant non-provision thereagainst",
+    "Basis for Adverse Opinion: Note 57(b) - ICDs given to promoter group companies, non-compliance with Section 186, applicability of Section 185 not ascertained, certain ICDs in nature of book entries and/or prejudicial to interest of company, advance of Rs. 1,400.00 lakhs to a body corporate fully provided for but appropriate audit evidences not made available, matter under examination by regulatory authorities",
+    "Basis for Adverse Opinion: Note 57(c) - adjustments given pursuant to sanction letters of ARCs",
+    "Basis for Adverse Opinion: Note 57(d) - recognition of deferred tax assets",
+    "Basis for Adverse Opinion: Note 57(e) - non-determination of impairment in value of Property, Plant and Equipment, Capital Work in Progress, Other Intangible Assets and Investment in subsidiary",
+    "Basis for Adverse Opinion: Note 61(b) - statutory liabilities outstanding, non-determination of adjustments including interest",
+    "Basis for Adverse Opinion: Note 61(c) - non-determination and recognition of amount payable in respect of lease rent for office premises",
+    "Basis for Adverse Opinion: Note 61(d) - non recognition and ascertainment of impact of labor code notified 21st November 2025",
+    "Basis for Adverse Opinion: Note 62 - non reconciliation/disclosure of certain debit and credit balances with individual details and confirmations including borrowings and interest",
+    "Material Uncertainty Related to Going Concern: Current liabilities exceeded current assets by Rs. 1,94,575.17 lakhs as on March 31, 2026, operational losses affected net worth, loans to promoter group non-recoverable, inability to discharge obligations for repayment of loans, statutory, employee related and other liabilities",
+    "Internal Financial Controls - Qualified Opinion: Material weaknesses in granting loans/advances to promoter group companies, ICD credit worthiness evaluation, non-recognition of interest on loans/ICDs taken, non-determination of amount to be converted to equity per ARC sanction letters, penal/compound interest not ascertained, debt resolution pending execution of MRA and fulfillment of conditions precedent, certain individual details of debit/credit balances and reconciliation not available",
+    "Material weakness in internal financial controls: IT control systems and procedures need strengthening; supporting evidences for receivable/payable/stock not available; documentation for unsecured loans, lease premises, statutory liabilities not available",
+    "Adverse opinion on financial statements due to material weaknesses",
+    "Qualified opinion on internal financial controls",
+    "Going concern material uncertainty",
+    "Cash losses incurred in current and prior year",
+    "Qualification-1: ICDs to promoter group - Adverse, Repetitive",
+    "Qualification-2: Non-recognition of interest on loans/ICDs - Adverse, Repetitive",
+    "Qualification-3: Non-determination of interest/adjustments for certain advances - Adverse, Repetitive",
+    "Qualification-4: Non-reconciliation of debit/credit balances - Adverse, Repetitive",
+    "Qualification-5: Non-determination of lease rent - Adverse, Repetitive",
+    "Qualification-6: Non-determination of fair value/impairment of assets - Adverse, Repetitive",
+    "Qualification-7: Statutory liabilities non-determination - Adverse, Repetitive",
+    "Qualification-8: Predecessor auditor concerns on Section 185/186, book entries - Adverse, Repetitive",
+    "Qualification-9: Deferred tax asset recognition uncertainty - Adverse, First Time",
+    "Inter Corporate Deposits (ICDs) aggregating Rs. 2,86,050.45 lakhs given to promoter group and certain other entities are doubtful of recovery and prejudicial to the interest of the Group. Provision of Rs. 2,44,629.03 lakhs made leaving balance of Rs. 41,421.41 lakhs unprovided",
+    "Non-recognition of Interest on loans, ICDs and other amounts taken by the parent leading to understatement of loss. Non-determination of impact with respect to amount to be converted to Equity share Capital and interest and other consequential adjustments",
+    "Adjustment of Rs. 1,28,894.81 lakhs given effect to in exceptional items pursuant to NARCL sanction letter and JCAF OTS approval, subject to execution of MRA and fulfillment of conditions precedent",
+    "Recognition of deferred tax assets including those arising due to provision against ICDs, given uncertainty with respect to availability thereof",
+    "Non-determination of fair value of Property, Plant and Equipment, Capital Work in Progress, Intangible Assets under development and Goodwill arising on consolidation and impairment if any",
+    "Statutory liabilities outstanding and non-determination of adjustments including interest",
+    "Non-determination and recognition of amount payable in respect of lease rent for office premises",
+    "Non-recognition and ascertainment of the impact of labour code notified on November 21, 2025",
+    "Non-reconciliation/disclosure of certain debit and credit balances with individual details and confirmations including borrowings and interest",
+    "Predecessor auditor reported ICDs include amounts given to group companies with pending compliance with Section 186 and unascertained applicability of Section 185 of Companies Act, 2013. Certain ICDs in nature of book entries and prejudicial to interest of Group. Advance of Rs. 1,400.00 lakhs to a body corporate fully provided for but appropriate audit evidences not made available. Matter under examination by regulatory authorities",
+    "Material Uncertainty Related to Going Concern: Current liabilities exceeded current assets by Rs. 1,94,575.17 lakhs as on March 31, 2026. Operational losses significantly affected net worth. Loans to promoter group companies became non-recoverable. Insufficiency of resources for meeting obligations. Unable to discharge obligations for repayment of loans, statutory, employee related and other liabilities. Going concern dependent on execution of MRA by NARCL, fulfillment of conditions precedent, OTS granted by JCAF, timely implementation, and future profitability and operational cashflows",
+    "Adverse opinion on consolidated financial statements due to significance of matters described in Basis for Adverse Opinion",
+    "Qualified opinion on internal financial controls with reference to consolidated financial statements",
+    "Material weaknesses in internal financial controls identified",
+    "Related party information is as identified by management and relied upon by the auditor",
+    "Uncertainty in fair valuation of restructured borrowings pending execution of MRA and fulfillment of conditions precedent",
+    "Uncertainty in fair value of Inter-Corporate Deposits based on management evaluation of credit and non-performance risks",
+    "Interest on short term borrowings converted subject to confirmation and fulfillment of conditions precedent for conversion to equity share capital",
+    "Adverse opinion on ICDs to promoter group entities (Qualification-1, Repetitive)",
+    "Going concern basis of accounting",
+    "Impairment assessment of assets pending valuation",
+    "Unrecognized interest on borrowings/ICDs",
+    "Statutory liabilities and Provident Fund dues",
+    "Expired lease agreement for corporate office",
+    "Labour Code implications not determined",
+    "Balances subject to reconciliation and confirmation",
+    "Audit trail not enabled in Navision and at database level",
+    "Qualification 1: Loans to group companies - Section 185/Ind AS-24 compliance uncertain, amounts prejudicial",
+    "Qualification 2: Non-recognition of interest on loans/ICDs - loss understated, Adverse, Repetitive",
+    "Qualification 3: Non-determination of interest on advances/liabilities - Adverse, Repetitive",
+    "Qualification 4: Non-reconciliation of debit/credit balances - Adverse, Repetitive",
+    "Qualification 5: Non-determination of lease rent - Adverse, Repetitive",
+    "Qualification 6: Non-determination of fair value/impairment of PPE, CWIP, Goodwill - Adverse, Repetitive",
+    "Qualification 7: Statutory liabilities Rs. 21,382 lakhs including PF dues Rs. 19,111 lakhs - Adverse, Repetitive",
+    "Qualification 8: Loans to group companies under regulatory examination - Adverse, Repetitive",
+    "Qualification 9: Deferred tax assets Rs. 28,757 lakhs recognition - Adverse, First Time",
+    "Qualification 10: Debt restructuring adjustment Rs. 1,28,895 lakhs - Adverse, First Time",
+    "Qualification 11: Labour Code impact non-recognition - Adverse, First Time"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Pradip Bhar (DIN: 01039198) re-appointment as Director liable to retire by rotation",
+    "Mr. Amritanshu Khaitan resigned as Non-Executive Non-Independent Director w.e.f. 17th March 2026",
+    "Mr. Pradip Bhar appointed as Additional Director and Whole-Time Director (designated as Whole-Time Director and Chief Financial Officer) w.e.f. 27th April 2026",
+    "Ms. Rupanjana De re-appointed as Independent Director for second term from 30th December 2025 to 29th December 2028",
+    "Mr. Amritanshu Khaitan, Non-Executive Non-Independent Director, resigned from Directorship with effect from 17th March 2026",
+    "Mr. Pradip Bhar appointed as Additional Director with effect from 27th April 2026 and as Whole-Time Director (designated as Whole-Time Director and Chief Financial Officer)",
+    "Ms. Rupanjana De appointed for second term as Non-Executive Independent Director for three consecutive years commencing from 30th December 2025 to 29th December 2028",
+    "Mr. Vijay Simha Jagannath resigned as Head of Marketing w.e.f. 15th June, 2025.",
+    "Mr. Ritwik Palchoudhuri appointed as Head of Marketing w.e.f. 16th June, 2025.",
+    "Mr. Udupi Ramprasad appointed as General Manager - Commercial, Logistics & IT w.e.f. 1st July 2025.",
+    "Mr. Pradip Bhar appointed as Whole Time Director (designated as Chief Financial Officer & Whole Time Director) w.e.f. 27th April, 2026.",
+    "Mr. Indrajit Sengupta appointed as Director w.e.f. 18.07.2024.",
+    "Mr. Amar Nath Dhar appointed as Director w.e.f. 18.07.2024.",
+    "Mr. Amritanshu Khaitan ceased to be Non-Executive Director w.e.f. 17th March 2026",
+    "Mr. Pradip Bhar appointed as Whole Time Director w.e.f. 27th April 2026 (subsequent to financial year closure)",
+    "Mr. Amritanshu Khaitan (AAK) Non-Executive Director (Upto 17th March 2026)",
+    "Mr. Pradip Bhar (PB) Wholetime Director and Chief Financial Officer (w.e.f. 27th April 2026)",
+    "Mr. Amritanshu Khaitan ceased as Non-Executive Director w.e.f. 17th March 2026",
+    "Mr. Pradip Bhar appointed as Wholetime Director and Chief Financial Officer w.e.f. 27th April 2026"
+   ],
+   "promoter_holding_pct": 6.25,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 6.25
+    },
+    {
+     "name": "Resident Individuals",
+     "pct": 69.68
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 13.52
+    },
+    {
+     "name": "HUF",
+     "pct": 4.99
+    },
+    {
+     "name": "Foreign Portfolio Investors",
+     "pct": 1.84
+    },
+    {
+     "name": "Investor Education and Protection Fund Authority",
+     "pct": 1.37
+    },
+    {
+     "name": "Non Resident Individuals",
+     "pct": 2.13
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 0.57
+    },
+    {
+     "name": "Foreign Company",
+     "pct": 0.13
+    },
+    {
+     "name": "LLP",
+     "pct": 0.19
+    },
+    {
+     "name": "Clearing Member",
+     "pct": 0.23
+    },
+    {
+     "name": "Foreign National",
+     "pct": 0.09
+    },
+    {
+     "name": "Trusts",
+     "pct": 0.01
+    },
+    {
+     "name": "Banks",
+     "pct": 0.02
+    },
+    {
+     "name": "Mutual Funds/UTI",
+     "pct": 0.0
+    },
+    {
+     "name": "Financial Institutions",
+     "pct": 0.0
+    },
+    {
+     "name": "Central Government/State Government(s)",
+     "pct": 0.0
+    },
+    {
+     "name": "Domestic Corporate Unclaimed Shares Account",
+     "pct": 0.0
+    },
+    {
+     "name": "Directors and their relatives",
+     "pct": 0.0
+    },
+    {
+     "name": "NBFCs Registered with RBI",
+     "pct": 0.0
+    },
+    {
+     "name": "LATE BRIJ MOHAN KHAITAN",
+     "pct": 0.04
+    },
+    {
+     "name": "ADITYA KHAITAN",
+     "pct": 0.02
+    },
+    {
+     "name": "AMRITANSHU KHAITAN",
+     "pct": 0.01
+    }
+   ],
+   "auditor_change": "Predecessor auditors issued adverse opinion for FY2019; current auditor Lodha & Co LLP"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Pradip Bhar",
+     "role": "Whole-Time Director & Chief Financial Officer"
+    },
+    {
+     "name": "Alok Kumar Samant",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Aditya Khaitan",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Mr. Pradip Bhar",
+     "role": "Whole-Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Alok Kumar Samant",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Aditya Khaitan",
+     "role": "Chairman & Managing Director (DIN: 00023788)"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Whole-time Director & Chief Financial Officer (DIN: 01039198)"
+    },
+    {
+     "name": "Aditya Khaitan",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Whole-time Director & Chief Financial Officer"
+    },
+    {
+     "name": "Alok Kumar Samant",
+     "role": "Company Secretary (Compliance Officer)"
+    },
+    {
+     "name": "Mr. Aditya Khaitan",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Pradip Bhar",
+     "role": "Whole-time Director & Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Subhra Giri Patnaik",
+     "role": "Vice President (Legal and Secretarial Head)"
+    },
+    {
+     "name": "Ms. Kavita Khaitan",
+     "role": "General Manager - Operation & Administration"
+    },
+    {
+     "name": "Mr. Udupi Ramprasad",
+     "role": "General Manager - Commercial, Logistics & IT"
+    },
+    {
+     "name": "Mr. Ritwik Palchoudhuri",
+     "role": "Head of Marketing"
+    },
+    {
+     "name": "Subhra Giri Patnaik",
+     "role": "Vice President (Legal and Secretarial)"
+    },
+    {
+     "name": "Alok Kumar Samant",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ajit Kumar Dalmia",
+     "role": "Partner, Lodha & Co LLP (Auditor)"
+    },
+    {
+     "name": "Aditya Khaitan",
+     "role": "Chairman and Managing Director (DIN: 00023788)"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Wholetime Director and Chief Financial Officer (DIN: 01039198)"
+    },
+    {
+     "name": "Alok Kumar Samant",
+     "role": "Company Secretary (M.No. F9347)"
+    },
+    {
+     "name": "Chief Financial Officer",
+     "role": "Head of finance team with overall responsibility for overseeing all significant fair value measurements"
+    },
+    {
+     "name": "Aditya Khaitan",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Aditya Khaitan",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Aditya Khaitan",
+     "role": "Managing Director and Chairman"
+    },
+    {
+     "name": "Mr. Amritanshu Khaitan",
+     "role": "Non-Executive Director (Upto 17th March 2026)"
+    },
+    {
+     "name": "Mr. Sanjay Ginodia",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Dr. Rupanjana De",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Amarnath Dhar",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Indrajit Sengupta",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Pradip Bhar",
+     "role": "Wholetime Director and Chief Financial Officer (w.e.f. 27th April 2026)"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Whole Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Amar Nath Dhar",
+     "role": "Audit Committee Chairman"
+    },
+    {
+     "name": "Aditya Khaitan",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Wholetime Director and Chief Financial Officer"
+    },
+    {
+     "name": "AK",
+     "role": "Director"
+    },
+    {
+     "name": "Other Directors",
+     "role": "Directors"
+    },
+    {
+     "name": "Pradip Bhar",
+     "role": "Whole Time Director and Chief Financial Officer (DIN: 01039198)"
+    },
+    {
+     "name": "Amar Nath Dhar",
+     "role": "Audit Committee Chairman (DIN: 0010711585)"
+    },
+    {
+     "name": "Alok Kumar Samant",
+     "role": "Company Secretary & Compliance Officer (M. No. F9347)"
+    }
+   ],
+   "employees": 49610
+  },
+  "other_notable": [
+   "28th AGM scheduled for 30th September, 2026 at 11:30 AM through VC/OAVM",
+   "Cut-off date for e-voting: 23rd September, 2026",
+   "Remote e-voting period: 27th September, 2026 (9:00 AM) to 29th September, 2026 (5:00 PM)",
+   "Cost Auditors appointed for FY ending 31st March 2027: M/s. Mani & Co. (Lead), M/s. SPK Associates, M/s. DGM & Associates",
+   "Cost Auditors remuneration: Mani & Co. Rs. 90,000 for 10 Tea Estates + Rs. 5,000 lead audit fee; SPK Associates Rs. 99,000 for 11 Tea Estates; DGM & Associates Rs. 1,08,000 for 12 Tea Estates",
+   "Mr. Atul Kumar Labh appointed as Scrutinizer for e-voting",
+   "Unpaid/unclaimed dividends up to FY 2017-18 transferred to IEPF",
+   "Special Window for transfer of physical equity shares open from 5th February, 2026 to 4th February, 2027",
+   "Standalone revenue from operations: Rs 97,482 lakhs (FY 2025-26) vs Rs 1,02,436 lakhs (FY 2024-25)",
+   "Consolidated revenue from operations: Rs 115,439 lakhs (FY 2025-26) vs Rs 118,541 lakhs (FY 2024-25)",
+   "Standalone post-tax loss: Rs 9,086 lakhs (FY 2025-26) vs Rs 19,636 lakhs (FY 2024-25)",
+   "Consolidated post-tax loss: Rs 12,350 lakhs (FY 2025-26) vs Rs 19,787 lakhs (FY 2024-25)",
+   "Debt restructuring approved by IDRCL Sanction Letter dated 2nd April 2026",
+   "One-Time Settlement arrangement with J.C. Flowers Private Limited entered into subsequent to FY end",
+   "Equity shares delisted from The Calcutta Stock Exchange w.e.f. 17th July 2026; continue on BSE and NSE",
+   "No dividend recommended for FY 2025-26 due to losses",
+   "No transfer to General Reserve due to losses",
+   "CSR initiatives continued despite no mandatory requirement (no average net profits under Section 198)",
+   "Board met 4 times during FY 2025-26; Independent Directors held 2 separate meetings",
+   "All Independent Directors submitted declarations of independence",
+   "Related party transactions on arm's length basis and in ordinary course of business",
+   "Remuneration Policy unchanged during year; available on company website",
+   "No deposits accepted or renewed during year",
+   "No significant/material orders by regulators/courts impacting going concern status",
+   "No One-Time Settlement with banks/FIs during financial year; subsequent settlement with JC Flowers Asset Reconstruction Private Limited",
+   "Internal financial controls: ERP systems at tea estates and head office; automated and manual controls; physical verification of fixed assets, tea stock, stores, monetary assets; balance confirmations for trade receivables and advances",
+   "CEO/CFO certification provided per Listing Regulations",
+   "Health, safety and working environment: hospitals at each tea estate, central hospitals with modern instruments, sporting/cultural facilities",
+   "Annual Secretarial Compliance Report submitted to stock exchanges per SEBI Master Circular",
+   "Annual Return (MGT-7) available on website; to be filed with MCA after 28th AGM",
+   "Cost Auditors appointed: M/s Mani & Co., M/s SPK Associates, M/s DGM & Associates for year ending 31st March 2027",
+   "No fraud reported by auditors under Section 143(12)",
+   "Conservation of energy, technology absorption, foreign exchange earnings/outgo details in Annexure C",
+   "Risk management: Board opines no risks threaten company existence; adequate mitigation measures taken",
+   "Insider Trading Prevention Code adopted per SEBI Regulations; trading window closed during financial results and material events",
+   "Employee particulars (Section 197(12)) in Annexure D",
+   "Employee relations satisfactory; industrial relations harmonious",
+   "POSH Act compliance: Internal Complaints Committee constituted; zero complaints in calendar year 2025; SHe-Box registration applied",
+   "Maternity Benefit Act compliance; women employee well-being initiatives",
+   "Secretarial Standards compliance (Board Meetings and General Meetings)",
+   "World tea production 2025: 7266 million kg (+3%); India 1370 million kg (18.85%); India exports 280 million kg (13.45% of world exports)",
+   "Indian tea auction prices 2025: CTC -8.45%, Orthodox +3.04%; North India -8.15%, South India -1.83%; overall average -5.99%",
+   "Smallholders constitute 57% of India tea production, 53% of Kenya production",
+   "Pakistan largest tea importer 2025: 240 million kg (12.14%)",
+   "Integrated Pest Management (IPM) programme strengthened with field surveillance, biological/cultural controls, approved products, training",
+   "Government of Assam initiatives: suspension of Assam Green Leaf Cess for two-year period from January 2025 to December 2026, exemption from Agricultural Income Tax for corresponding period, interest subvention on term and working capital loans, production incentive of Rs. 10 per kilogram of orthodox tea",
+   "Government of India flagship programmes implemented across tea estates: Jal Jeevan Mission and Pradhan Mantri Awas Yojana (PMAY)",
+   "Company employs around 49,610 personnel (43,292 permanent, 6,318 temporary) with about 55% being women",
+   "Internal audit conducted by independent firms of Chartered Accountants at all Tea Estates and Head Office on regular basis",
+   "Board comprised of 5 Directors as on 31st March 2026: 1 Executive Director and 4 Non-Executive Independent Directors including 1 Woman Director",
+   "Four Board Meetings held during FY 2025-26 on 29th May 2025, 14th August 2025, 14th November 2025 and 13th February 2026",
+   "Two shareholder complaints received and resolved during FY 2025-26",
+   "Company has taken Directors and Officers Insurance (D&O) Policy",
+   "CSR Committee meeting held on 29th May 2025; Company not required to spend on CSR as average net profit for preceding 3 years was negative.",
+   "Risk Management Committee not applicable as Company not in top 1000 listed entities by market cap.",
+   "Material Subsidiaries as on 31st March 2026: McLeod Russel Uganda Limited (incorporated 24th November 1993, Uganda, auditor Grant Thornton) and Boreli Tea Holdings Limited (incorporated 19th March 1976, UK, auditor Ferguson Maidment & Co.).",
+   "No resolution passed through Postal Ballot during FY 2025-26.",
+   "No funds raised through preferential allotment or QIP during the year.",
+   "Company complied with all mandatory Listing Regulations except one-day delay in Shareholding Pattern submission for quarter ended 30th June 2025; fines paid to NSE and BSE on 27th August 2025.",
+   "Whistle Blower Policy/Vigil Mechanism in place."
+  ],
+  "outlook": [
+   {
+    "statement": "MRUL's tea production experienced a decrease in 2025 compared to the previous year, whereas bought leaf saw an increase. A general decrease in rainfall across all estates is the cause of the production decline. We saw an improvement in prices in the last quarter of the year with a strong demand and good participation from different markets.",
+    "period": "2026"
+   },
+   {
+    "statement": "Business progressed steadily during 2025, driven primarily by key local and cross-trade customers. 2026 is expected to deliver growth in both business volume and profitability. Increased sales are anticipated across all three major sales verticals. MRME has secured large annual contracts with two customers in the UAE local market.",
+    "period": "2026"
+   },
+   {
+    "statement": "We look forward to a very challenging year ahead with the logistical, Freight and material costs challenges deeply affecting us owing to geographical tensions. MRAL need to embark on aggressive marketing to source for new clients.",
+    "period": "2026"
+   },
+   {
+    "statement": "Continued emphasis on food safety by domestic regulators and increasing consumer awareness expected to further support demand for compliant teas. Growing preference for Orthodox teas presents encouraging opportunities. Climate change represents most significant long-term challenge with unpredictable weather patterns, irregular rainfall, extended droughts, extreme climatic events, increased pest and disease incidence. Progressive tightening of pesticide residue regulations across key export markets (particularly EU) and withdrawal of effective crop protection molecules reducing available pest management solutions.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Demand for premium and export-quality teas continues to remain resilient. Traditional export destinations in the Middle East, CIS region and other international markets are expected to continue sourcing Indian teas, although trade flows may witness temporary disruptions owing to elevated freight costs and geopolitical developments.",
+    "period": "Going forward"
+   },
+   {
+    "statement": "Producers focusing on consistent quality, sustainable manufacturing practices and strict field compliance are expected to be better positioned to secure remunerative price realisation and maintain market competitiveness. The Company will focus on quality enhancement, residue compliance and operational efficiency to maximise value realisation in both domestic and export markets.",
+    "period": "Going forward"
+   },
+   {
+    "statement": "Increased pest attacks, accelerated by rising temperatures and erratic monsoon distributions, severely compromise tea bush physiology and destabilise predictable cropping patterns.",
+    "period": "Current season"
+   },
+   {
+    "statement": "Ongoing conflict in the Middle East and disruptions to shipping through the Strait of Hormuz have increased crude oil prices, marine insurance premiums and container freight costs, resulting in longer transit times and higher logistics expenses for exporters.",
+    "period": "Current"
+   },
+   {
+    "statement": "The Company makes persistent effort to explore ways to conserve energy and use alternative sources of energy. The Company is making steady development in this direction and the Company expects that further improvement towards conservation of energy could be seen in the future.",
+    "period": "future"
+   },
+   {
+    "statement": "There is a material uncertainty with respect to going concern pending resolution of the company's borrowing by a lender bank and execution of MRA with NARCL along with fulfillment of conditions precedent to the sanction letters issued by ARCs.",
+    "period": "As on date of Audit Report (May 29, 2026)"
+   },
+   {
+    "statement": "Resolution of company's borrowing as stated in Note 58 is under implementation and outcome thereof as expected is for ensuring sustainability of core agricultural operations of the company.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The company expects to fulfill conditions precedent to the sanctions letters from respective ARC's and mitigate the related financial risk.",
+    "period": "Future"
+   },
+   {
+    "statement": "The management is confident that the repayments and compliances with respect to conditions precedent and other terms thereof as part of resolution and settlement will be in place and obligations concerning the loans being restated to the sustainable level will be fulfilled in due course of time. Considering the resolution with respect to the company's debt along with management's continuous effort for rationalising operational costs as well and additional fund to be made available in the system in terms of the resolution or otherwise and other ameliorative measures taken and/or proposed to be taken, it is envisaged that the company will be able to strengthen its financial position over a period of time and will have sufficient fund for carrying out its operations and meeting its obligations on an ongoing basis.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Resolution Plan submitted to NARCL with respect to parent's debt assigned to them has been approved and Letter dated 02nd April, 2026 sanctioning the same has been issued. Debts assigned to NARCL have been restructured with effect from cut-off date of 31st December 2025. One Time Settlement (OTS) with JCAF sanctioned vide letter dated 13th May, 2026 with effect from cut-off date of 31st March, 2026.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Future taxable income of the company considering the projected volume of operations will be sufficient to absorb the deferred tax assets over a period of time.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The management is confident that the repayments and compliances with respect to conditions precedent and other terms thereof as part of resolution and settlement will be in place and obligations concerning the loans being restated to the sustainable level will be fulfilled in due course of time. Considering the resolution with respect to the Parent's debt along with management's continuous effort for rationalising operational costs as well and additional fund to be made available in the system in terms of the resolution or otherwise and other ameliorative measures taken and/or proposed to be taken, it is envisaged that the Parent will be able to strengthen its financial position over a period of time and will have sufficient fund for carrying out its operations and meeting its obligations on an ongoing basis.",
+    "period": "ongoing"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Conversion of one tea estate in North Bank Assam from coal-fired to natural gas-based drying",
+    "amount_cr": null,
+    "timeline": "During FY 2025-26"
+   },
+   {
+    "item": "Capital expenditure on specialised tea processing equipment and factory infrastructure modernisation",
+    "amount_cr": null,
+    "timeline": "During FY 2025-26"
+   },
+   {
+    "item": "Conversion of Nilpur Factory into a 100% Orthodox tea manufacturing unit",
+    "amount_cr": null,
+    "timeline": "During FY 2025-26"
+   },
+   {
+    "item": "Investment in clonal tea nurseries, shade development, uprooting and replanting programmes, afforestation initiatives and creation of water bodies",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Modernising processing infrastructure, improving manufacturing efficiencies, enhancing product quality, technology investment, process optimisation and quality improvement initiatives",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Factory modernisation, replanting, irrigation, mechanisation and infrastructure",
+    "amount_cr": null,
+    "timeline": "Continuous"
+   },
+   {
+    "item": "Plant and machinery for conservation of energy at tea estates",
+    "amount_cr": 1.7535,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Capital Work in Progress",
+    "amount_cr": 18.42,
+    "timeline": "As at 31st March 2026"
+   },
+   {
+    "item": "Intangible Asset Under Development",
+    "amount_cr": 1.38,
+    "timeline": "As at 31st March 2026"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "MRME has secured large annual contracts with two customers in the UAE local market, primarily for Blend STDs, which are expected to contribute significantly to profitability in 2026.",
+    "value_cr": null
+   },
+   {
+    "statement": "Memorandum of Understanding/ Term sheet with the proposed buyer for an aggregate consideration of ` 2,815.00 Lakhs, subject to due diligence and necessary approvals, etc. had also been entered by the company for sale of specified assets of one tea estate.",
+    "value_cr": 28.15
+   },
+   {
+    "statement": "Memorandum of Understanding and/or Term sheet with the proposed buyer for an aggregate consideration of ` 12,305.06 Lakhs, subject to due diligence and necessary approvals, etc. has also been finalised by the company for sale of specified assets of four tea estates.",
+    "value_cr": 123.05
+   },
+   {
+    "statement": "Memorandum of Understanding/ Term sheet with the proposed buyer for an aggregate consideration of Rs. 2,815.00 Lakhs, subject to due diligence and necessary approvals, etc. had also been entered by the Parent for sale of specified assets of one tea estate.",
+    "value_cr": 28.15
+   },
+   {
+    "statement": "Memorandum of Understanding and/or Term sheet with the proposed buyer for an aggregate consideration of Rs. 12,305.06 Lakhs, subject to due diligence and necessary approvals, etc. has also been finalised by the parent for sale of specified assets of four tea estates (Boroi, Mathura, Nya Gogra, Rupajuli).",
+    "value_cr": 123.05
+   }
+  ],
+  "risks": [
+   "Unfavorable weather conditions impacting crop production",
+   "High pest incidence requiring increased crop protection measures",
+   "Labour availability challenges and high absenteeism",
+   "High finance costs and debt burden",
+   "Pending insolvency applications before NCLT",
+   "Limited financing availability for trading activities in subsidiaries",
+   "Increased auction prices and buyer credit demands",
+   "Geographical tensions affecting freight and material costs",
+   "Intense competitive environment with more registered traders",
+   "Adverse climatic conditions (erratic rainfall, prolonged dry spells, elevated temperatures)",
+   "Heightened pest pressure (Helopeltis, Green Fly/Thrips infestation)",
+   "Evolving regulatory requirements",
+   "Climate change (unpredictable weather patterns, irregular rainfall, extended droughts, extreme climatic events)",
+   "Increased incidence of pests and diseases",
+   "Progressive tightening of pesticide residue regulations (particularly EU)",
+   "Withdrawal of effective crop protection molecules",
+   "Global oversupply of tea",
+   "Price volatility (CTC prices decreased 8.45%, Orthodox increased 3.04% in 2025)",
+   "Non-recovery of Inter-Corporate Deposits (ICDs) to promoter group entities (Rs. 2,76,109 lakhs outstanding)",
+   "Adverse audit opinion on financial statements",
+   "Statutory liabilities outstanding (Rs. 21,382 lakhs including PF dues)",
+   "Pending litigation and arbitration awards (Rs. 50,895.91 lakhs award)",
+   "Debt restructuring uncertainties (NARCL, JCAF)",
+   "Non-determination of interest on borrowings and ICDs",
+   "Non-reconciliation of debit/credit balances",
+   "Lease rent for office premises not determined",
+   "Impairment testing of PPE, CWIP and subsidiary investment pending",
+   "Labour code implications not ascertained",
+   "Section 185 Companies Act compliance matters pending before regulatory authorities",
+   "Rising costs of labour, agricultural inputs, energy and logistics exerting pressure on operating margins",
+   "Tea is an agricultural commodity with a long production cycle, limiting ability to respond rapidly to unforeseen events",
+   "Highly labour intensive operations subject to extensive statutory welfare obligations under various Central and State legislations",
+   "Maintaining compliance with evolving domestic and international food safety and sustainability requirements",
+   "Exposure to financial risks arising from fluctuations in foreign exchange rates, interest rates and working capital requirements",
+   "Taxation by both Central and State Governments imposing additional cost pressures",
+   "Geopolitical uncertainty including conflict in the Middle East and disruptions to shipping through the Strait of Hormuz increasing freight costs and logistics expenses",
+   "Volatility in energy prices, shipping costs and currency movements",
+   "Increased pest attacks accelerated by rising temperatures and erratic monsoon distributions compromising tea bush physiology and cropping patterns",
+   "Commodity price risk",
+   "Foreign exchange risk",
+   "Inter Corporate Deposits (ICDs) aggregating Rs. 2,86,050.45 lakhs given to promoter group and certain other entities are doubtful of recovery",
+   "Non-recognition of interest on loans, ICDs and other amounts taken by the company",
+   "Non-determination of fair value of Property, Plant and Equipment, Capital Work in Progress",
+   "Default in payment of statutory dues during the financial year",
+   "Pending application under Section 9 of Insolvency and Bankruptcy Code, 2016 by an operational creditor",
+   "Certain transactions involving amounts given to group companies for which applicability of Section 185 could not be ascertained still outstanding",
+   "Penal/compound interest and other adjustments in respect of borrowings from a Bank and ICDs not recognised",
+   "Amount payable to lenders and other parties subject to confirmation and consequential reconciliation",
+   "Material weakness in internal financial controls over financial reporting",
+   "Going concern uncertainty pending debt resolution",
+   "Default in repayment of dues to banks and financial institutions",
+   "Delays in depositing statutory dues",
+   "Short term funds used for long-term purposes (Rs. 62,002.93 lakhs)",
+   "Doubtful recovery of loans and advances (Rs. 2,76,108.95 lakhs outstanding)",
+   "Non-compliance with Sections 185 and 186 of Companies Act, 2013 regarding loans and advances",
+   "Related party transactions completeness/correctness cannot be ascertained",
+   "Cash losses incurred (Rs. 61,866.33 lakhs in FY2026, Rs. 26,797.85 lakhs in FY2025)",
+   "Adverse opinion on financial statements",
+   "Qualified opinion on internal financial controls",
+   "Going concern assumption dependent on execution of Master Restructuring Agreement (MRA) with NARCL and fulfillment of conditions precedent in sanction letters",
+   "Resolution with NARCL and OTS with JCAF subject to conditions precedent; default may revoke restructuring and restore original payment terms",
+   "Impairment of investments in step-down subsidiary with negative equity dependent on future uncertain events",
+   "Realisation of deferred tax assets dependent on successful debt resolution and future taxable profits",
+   "Significant impairment allowances on loans to bodies corporate (Rs 2,34,674.53 lakhs as at 31 March 2026)",
+   "Contingent liabilities and litigation outcomes uncertain",
+   "Pledged shares of The Standard Batteries Limited not released despite loan repayment",
+   "Kilburn Office Automation Limited shares suspended on stock exchange",
+   "Interest subsidy receivable pending despite favourable court judgement; contempt petition filed",
+   "Default in repayment of borrowings from banks and financial institutions",
+   "Pending execution of Master Restructuring Agreement (MRA) and fulfillment of conditions precedent for restructured loans",
+   "Unresolved interest on unsecured loans not recognised in financial statements",
+   "Pending legal cases including injunction on sale of Boroi Tea Estate assets",
+   "Significant doubtful advances and receivables provided for",
+   "Provident fund dues restructured over 36 installments",
+   "Asset volatility: The plan liabilities are calculated using a discount rate set with reference to bond yield: If plan assets underperform, this yield will create a deficit.",
+   "Changes in yields: A decrease in yields will increase plan liabilities.",
+   "Life Expectancy: The pension plan obligations are to provide benefits for the life of the member, so increases in life expectancy will result in the increase in the plans liabilities.",
+   "Credit risk from non-recoverability of Inter-Corporate Deposits (ICDs) given to promoter group and other entities",
+   "Liquidity risk due to mismatch in servicing debt, decline in operational performance, cash losses, and cut-back payments leading to insufficient resources for meeting obligations",
+   "Market risk: Foreign currency risk (USD, EURO, GBP) from international operations",
+   "Market risk: Interest rate risk from variable rate borrowings",
+   "Market risk: Price risk from equity investments measured at FVOCI",
+   "Agricultural risk: Adverse weather conditions, labour costs, logistic problems in remote areas, fluctuation in tea selling prices",
+   "Legal risk: Final Award by Arbitral Tribunal entitling claimants to ` 50,896.00 lakhs plus US$ 564,600 and ` 20.00 lakhs costs, jointly and severally from promoter group entities and the company; company has challenged the award",
+   "Risk of non-execution of Master Restructuring Agreement (MRA) with NARCL and non-fulfillment of conditions precedent to sanction letters from ARCs",
+   "Risk of material variation in financial ratios due to unresolved ICD provisions and borrowing restructuring",
+   "Prolonged financial distress and significant losses",
+   "Current liabilities exceed current assets",
+   "Substantial Inter-Corporate Deposits to promoter group entities doubtful of recovery",
+   "Non-recognition of interest on borrowings and ICDs",
+   "Statutory liabilities including Provident Fund dues of Rs 21,382.49 lakhs",
+   "Pending litigation and regulatory examinations",
+   "Non-reconciliation of various debit/credit balances",
+   "Audit trail not fully enabled in accounting software (Navision)",
+   "Lease agreement for registered/corporate office expired August 31, 2022, terms not finalized",
+   "Implementation of new Labour Codes impact under evaluation",
+   "Going concern dependent on successful debt restructuring and promoter fund infusion",
+   "Impairment testing of assets pending valuation",
+   "Deferred tax asset recognition uncertainty",
+   "Inter Corporate Deposits (ICDs) aggregating Rs. 2,86,050.45 lakhs given to promoter group and certain other entities are doubtful of recovery and prejudicial to the interest of the Group",
+   "Non-recognition of interest on loans, ICDs and other amounts taken by the parent leading to understatement of loss",
+   "Non-determination of fair value of Property, Plant and Equipment, Capital Work in Progress, Intangible Assets under development and Goodwill arising on consolidation and impairment if any",
+   "Statutory liabilities outstanding and non-determination of adjustments including interest",
+   "Non-determination and recognition of amount payable in respect of lease rent for office premises",
+   "Non-recognition and ascertainment of the impact of labour code notified on November 21, 2025",
+   "Non-reconciliation/disclosure of certain debit and credit balances with individual details and confirmations including borrowings and interest",
+   "Predecessor auditor reported ICDs include amounts given to group companies with pending compliance with Section 186 and unascertained applicability of Section 185 of Companies Act, 2013",
+   "Certain ICDs were in the nature of book entries and/or prejudicial to the interest of the Group",
+   "Advance of Rs. 1,400.00 lakhs to a body corporate fully provided for but appropriate audit evidences not made available",
+   "Matter under examination and pending before regulatory authorities",
+   "Current liabilities exceeded current assets by Rs. 1,94,575.17 lakhs as on March 31, 2026",
+   "Operational losses have significantly affected net worth",
+   "Loans given to promoter group companies became non-recoverable",
+   "Insufficiency of resources for meeting obligations",
+   "Unable to discharge obligations for repayment of loans, statutory, employee related and other liabilities",
+   "Going concern dependent on execution of MRA by NARCL, fulfillment of conditions precedent, OTS granted by JCAF, timely implementation, and future profitability and operational cashflows",
+   "Employees' statutory and other liabilities including provident fund dues demanded by authorities could not be met",
+   "Borrowings except from a bank restructured to sustainable level payable through promoter's contribution, monetization of assets, and operational cashflows",
+   "In process of working out settlement proposal with a bank to bring down outstanding to sustainable level",
+   "Material Uncertainty Related to Going Concern assumption pending fulfillment of condition precedents for execution of MRA under process as per the sanction letters and resolution of the parent's borrowings from a lender bank",
+   "Non-determination of shortfall in recovery against loans, intercorporate deposits etc. and resultant non-provision thereagainst",
+   "Provision/non-determination for interest and other terms and conditions in respect of the borrowings pending confirmation from lenders",
+   "Adjustments given pursuant to the sanction letters of ARC",
+   "Recognition of deferred tax assets",
+   "Non-determination of impairment in the value of Property, Plant and Equipment, Capital Work in Progress, Other Intangible Assets and Goodwill arising on consolidation",
+   "Non-determination of adjustments including interest against statutory liabilities",
+   "Internal control weaknesses in granting loans and advances to promoter group companies",
+   "Lack of appropriate system to evaluate credit worthiness for inter Corporate Deposits",
+   "Non-recognition of Interest on loans and Inter-Corporate deposits taken",
+   "Pending execution of MRA and fulfillment of conditions precedent to sanction letters",
+   "Certain individual details of debit and credit balances and reconciliation not available",
+   "IT Control systems and procedures need strengthening",
+   "Supporting audit evidences/documentation not available for certain unsecured loans and advances, premises taken on lease, and statutory liabilities",
+   "Going concern assumption dependent on successful implementation of resolution plan with NARCL and OTS with JCAF",
+   "Significant impairment allowances on loans to bodies corporate (Rs 2,35,669.70 lakhs as at 31st March 2026)",
+   "Contingent liabilities related to legal cases including contempt petition for interest subsidy receivable",
+   "Restriction imposed by Hon'ble High Court of Delhi relating to disposal of assets",
+   "Uncertainty in fair valuation and impairment of loans and advances",
+   "Dependence on successful monetisation of investments including Eveready Industries India Limited shares by 31st March 2027",
+   "Default in repayment of principal and interest on borrowings",
+   "Pending execution of MRA and fulfillment of conditions precedent for restructured loans",
+   "Personal guarantee of Mr. Aditya Khaitan pending execution",
+   "Injunction imposed by Hon'ble High Court of Delhi preventing sale of specified assets",
+   "Uncertainty in recoverability of advances outstanding for considerable period",
+   "Dependence on future taxable profits for realization of deferred tax assets",
+   "Asset volatility in defined benefit plans",
+   "Changes in yields affecting plan liabilities",
+   "Life expectancy increases impacting pension obligations",
+   "Pending litigations and tax disputes",
+   "Unresolved matters with tax authorities",
+   "Interest on borrowings not fully recognised",
+   "Compound/penal interest on outstanding advances not determinable",
+   "Credit risk from loans to promoter group and other entities with non-recoverability concerns",
+   "Liquidity risk due to mismatch in servicing debt, decline in operational performance, cash losses, and accumulation of unpaid liabilities",
+   "Market risk including foreign currency risk (USD, EUR, GBP), interest rate risk on variable rate borrowings, and price risk on equity investments",
+   "Agricultural risk from adverse weather conditions, labour costs, logistic problems in remote areas, and tea price fluctuations",
+   "Going concern uncertainty due to prolonged financial distress",
+   "Significant Inter-Corporate Deposits (ICDs) to promoter group entities doubtful of recovery (Rs. 2,76,108.95 lakhs outstanding)",
+   "Arbitral Tribunal Final Award claiming Rs. 50,896.00 lakhs plus US$ 564,600 and Rs. 20.00 lakhs costs against promoter group entities and the Parent",
+   "High Court injunction restraining sale, transfer, alienation of assets and changes in capital structure",
+   "Statutory liabilities aggregating to Rs. 21,382.49 lakhs including Provident Fund dues of Rs. 19,111.42 lakhs",
+   "Unrecognized interest on borrowings/ICDs (Rs. 16,189.55 lakhs)",
+   "Lease agreement for registered/corporate office expired August 2022, terms not finalized, rent payable non-determinable",
+   "Balances subject to reconciliation and confirmation (borrowings, statutory liabilities, trade payables/receivables, advances, etc.)",
+   "Audit trail feature not enabled in Navision software and at database level",
+   "Potential impairment of assets not yet assessed pending valuation",
+   "Labour Code implications under evaluation, past service costs not determined",
+   "Restructuring agreements subject to conditions precedent and Master Restructuring Agreement execution",
+   "Non-recognition of interest on loans and ICDs leading to understatement of loss",
+   "Non-determination of interest and consequential adjustments for advances and liabilities claimed by customers",
+   "Non-reconciliation of debit/credit balances including borrowings and interest",
+   "Non-determination of lease rent for office premises",
+   "Non-determination of fair value of PPE, CWIP, Goodwill and impairment testing",
+   "Statutory liabilities outstanding including Provident Fund dues of Rs. 19,111 lakhs",
+   "Regulatory examination of loans to group companies under Section 185 and Ind AS-24",
+   "Recognition of deferred tax assets of Rs. 28,757 lakhs given uncertainty of realization",
+   "Debt restructuring with NARCL and JCAF subject to execution of MRA and fulfillment of conditions precedent",
+   "Non-recognition of impact of Labour Code notified November 21, 2025"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": 100,
+    "business": "Investing funds in various companies engaged in tea production, blending and marketing activities"
+   },
+   {
+    "name": "McLeod Russel Uganda Limited (MRUL)",
+    "holding_pct": 100,
+    "business": "Tea production in Uganda"
+   },
+   {
+    "name": "McLeod Russel Middle East FZCO (MRME)",
+    "holding_pct": 100,
+    "business": "Tea trading and blending in UAE"
+   },
+   {
+    "name": "McLeod Russel Africa Limited (MRAL)",
+    "holding_pct": 100,
+    "business": "Tea trading in Kenya"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": null,
+    "business": "Tea holdings; investment of Rs. 15,967 lakhs as on March 31, 2026"
+   },
+   {
+    "name": "McLeod Russel Uganda Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Boreli Tea Holdings Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "McLeod Russel Middle East FZCO",
+    "holding_pct": null,
+    "business": "Step down foreign subsidiary (formerly McLeod Russel Middle East DMCC)"
+   },
+   {
+    "name": "Investment in Subsidiary and Associate",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": 100.0,
+    "business": "Tea holdings (UK)"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary; entered into capital contribution agreement with TLK Agriculture Joint Stock Company for sale of 100% capital contribution in Phu Ben Tea Company Limited (PBTCL), a step-down subsidiary"
+   },
+   {
+    "name": "Phu Ben Tea Company Limited (PBTCL)",
+    "holding_pct": null,
+    "business": "Step-down subsidiary of the company"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "McLeod Russel Uganda Limited (MRUL)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "McLeod Russel Middle East DMCC (MRME)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "McLeod Russel Africa Limited (MRAL)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": null,
+    "business": "Tea holdings"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (Consolidated)",
+    "holding_pct": null,
+    "business": "Tea plantation operations"
+   },
+   {
+    "name": "Subsidiary company in Uganda",
+    "holding_pct": null,
+    "business": "cultivation and manufacturing of Tea"
+   },
+   {
+    "name": "MRUL",
+    "holding_pct": null,
+    "business": "Tea plantation operations in Uganda"
+   },
+   {
+    "name": "McLeod Russel Uganda Limited (MRUL)",
+    "holding_pct": null,
+    "business": "Tea production"
+   },
+   {
+    "name": "McLeod Russel Middle East (MRME)",
+    "holding_pct": null,
+    "business": "Tea related operations"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": null,
+    "business": "Tea investment holding"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited (BTHL)",
+    "holding_pct": 100,
+    "business": "Investment"
+   },
+   {
+    "name": "McLeod Russel Uganda Limited (MRUL)",
+    "holding_pct": 100,
+    "business": "Cultivation and Manufacturing of Tea"
+   },
+   {
+    "name": "McLeod Russel Middle East DMCC (MRME)",
+    "holding_pct": 100,
+    "business": "Trading in Black Tea"
+   },
+   {
+    "name": "McLeod Russel Africa Limited (MRAL)",
+    "holding_pct": 100,
+    "business": "Trading in Black Tea"
+   },
+   {
+    "name": "Borelli Tea Holdings Limited",
+    "holding_pct": 100,
+    "business": "Tea holdings (UK)"
+   },
+   {
+    "name": "McLeod Russel Uganda Limited",
+    "holding_pct": 100,
+    "business": "Tea production (Uganda)"
+   },
+   {
+    "name": "McLeod Russel Africa Limited",
+    "holding_pct": 100,
+    "business": "Tea production (Kenya)"
+   },
+   {
+    "name": "McLeod Russel Middle East DMCC",
+    "holding_pct": 100,
+    "business": "Tea trading (UAE)"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Consortium lenders (ICICI Bank, State Bank of India, HDFC Bank, Axis Bank, Punjab National Bank, UCO Bank, Indian Bank, RBL Bank) assigned to NARCL",
+    "amount_cr": null,
+    "note": "Assigned to National Asset Reconstruction Company Limited (NARCL) pursuant to Joint Assignment Agreement dated 12th March 2025"
+   },
+   {
+    "lender_or_type": "J.C. Flowers Asset Reconstruction Co. Pvt Ltd",
+    "amount_cr": null,
+    "note": "Yes Bank Limited loan assigned to J.C. Flowers"
+   },
+   {
+    "lender_or_type": "IndusInd Bank Limited",
+    "amount_cr": null,
+    "note": "Loan assigned to J.C. Flowers Asset Reconstruction Co. Pvt Ltd"
+   },
+   {
+    "lender_or_type": "NARCL (National Asset Reconstruction Company Ltd)",
+    "amount_cr": null,
+    "note": "Resolution subject to entering into Master Restructuring Agreement (MRA) pending execution; sanction letter issued for debt resolution including conversion of certain ICDs to Equity Share Capital"
+   },
+   {
+    "lender_or_type": "JCAF (JC Flowers Asset Reconstruction Private Limited)",
+    "amount_cr": null,
+    "note": "One Time Settlement (OTS) approved subject to fulfilment of conditions precedent; settlement arrangement entered subsequent to financial year end"
+   },
+   {
+    "lender_or_type": "Lender banks (borrowings dealt with in Note 5(d))",
+    "amount_cr": null,
+    "note": "Interest provided on simple interest basis; penal/compound interest not considered; amount payable subject to confirmation and determination"
+   },
+   {
+    "lender_or_type": "Inter-Corporate Deposits taken",
+    "amount_cr": null,
+    "note": "Interest not accrued since April 1, 2019; certain amounts to be converted to Equity Share Capital per NARCL sanction letter"
+   },
+   {
+    "lender_or_type": "Consortium of Lenders (ICICI Bank Limited, State Bank of India, HDFC Bank Limited, Axis Bank Limited, Punjab National Bank, UCO Bank, Indian Bank and RBL Bank Limited)",
+    "amount_cr": null,
+    "note": "Assigned loan accounts/financial assets to National Asset Reconstruction Company Limited (NARCL) under Assignment Agreement dated 12.03.2025"
+   },
+   {
+    "lender_or_type": "National Asset Reconstruction Company Limited (NARCL)",
+    "amount_cr": null,
+    "note": "Became lender/secured creditor after assignment of financial assets from consortium of lenders"
+   },
+   {
+    "lender_or_type": "ARCs (Asset Reconstruction Companies)",
+    "amount_cr": null,
+    "note": "Borrowings restructured to sustainable level, payable through promoter's contribution, monetization of assets, and operational cashflows per projections; execution of MRA and fulfillment of conditions precedent pending"
+   },
+   {
+    "lender_or_type": "Bank (unspecified)",
+    "amount_cr": null,
+    "note": "Company in process of working out settlement proposal to bring down outstanding to sustainable level and repay over time"
+   },
+   {
+    "lender_or_type": "Inter Corporate Deposits (ICDs) to promoter group companies",
+    "amount_cr": 775.75,
+    "note": "ICDs aggregating Rs. 77,575.00 Lakhs initially given as capital advances, subsequently converted to ICDs, considered book entries and prejudicial to interest of company, provided for significantly but outstanding as on March 31, 2026, matter under examination by authorities"
+   },
+   {
+    "lender_or_type": "IndusInd Bank Limited (Term Loan)",
+    "amount_cr": 71.66,
+    "note": "Principal Rs. 7,166.00 lakhs, Interest Rs. 6,147.12 lakhs, Default period: December 2019 to March 31, 2026"
+   },
+   {
+    "lender_or_type": "Ragini Finance Limited (Term Loan)",
+    "amount_cr": 9.5,
+    "note": "Principal Rs. 950.00 lakhs, Default period: October 2019 to March 31, 2026"
+   },
+   {
+    "lender_or_type": "Digvijay Finlease Limited (Term Loan)",
+    "amount_cr": 19.5,
+    "note": "Principal Rs. 1,950.00 lakhs, Default period: October 2019 to March 31, 2026"
+   },
+   {
+    "lender_or_type": "P D K Impex Private Limited (Term Loan)",
+    "amount_cr": 1.1,
+    "note": "Principal Rs. 110.00 lakhs, Default period: March 31, 2020 to March 31, 2026"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 551.67,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 793.1,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "NARCL",
+    "amount_cr": null,
+    "note": "Debt assigned to NARCL restructured per Sanction Letter dated 02 April 2026 with cut-off date 31 December 2025; MRA execution pending"
+   },
+   {
+    "lender_or_type": "JCAF",
+    "amount_cr": null,
+    "note": "One Time Settlement (OTS) sanctioned vide letter dated 13 May 2026 with cut-off date 31 March 2026; subject to conditions precedent"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited",
+    "amount_cr": 50.0,
+    "note": "Term loan to McNally Bharat Engineering Company Limited; Non-Disposal Undertaking furnished; shares extinguished pursuant to NCLT-approved resolution plan"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 75.0,
+    "note": "Short-term loan against pledge of Eveready Industries India Limited shares; repaid in earlier years; shares now non-encumbered"
+   },
+   {
+    "lender_or_type": "Aditya Birla Finance Limited",
+    "amount_cr": 10.0,
+    "note": "Short-term loan against pledge of The Standard Batteries Limited shares; repaid but charge not released"
+   },
+   {
+    "lender_or_type": "RBL Bank Limited",
+    "amount_cr": null,
+    "note": "Pledge of Kilburn Engineering Limited shares invoked; shares under reconciliation"
+   },
+   {
+    "lender_or_type": "National Asset Reconstruction Company Limited (NARCL) - Secured Term Loan",
+    "amount_cr": 827.93,
+    "note": "Current: Rs 30,125.87 lakhs; Non-Current: Rs 52,666.77 lakhs (31st March 2026). First pari passu charge on 25 tea estates, exclusive charge on Dufflaghur and Keyhung, exclusive mortgage of Mathura and Mijicajan, personal guarantee of Mr. Aditya Khaitan Rs 12,500 lakhs."
+   },
+   {
+    "lender_or_type": "National Asset Reconstruction Company Limited (NARCL) - Secured Term Loan (Subservient)",
+    "amount_cr": 0.0,
+    "note": "Subservient charge on movable fixed assets. No outstanding as at 31st March 2026."
+   },
+   {
+    "lender_or_type": "J. C. Flowers Asset Reconstruction Private Limited (JCAF) - Secured Term Loan",
+    "amount_cr": 149.38,
+    "note": "Current: Rs 12,438.31 lakhs; Non-Current: Rs 2,500.00 lakhs (31st March 2026). First pari passu charge on 25 tea estates, second charge on Bhootechang/Bukhial/Dimakusi, exclusive charge on movable property of Dirial/Phulbari/Hunwal, first pari passu on current assets, subservient charge on current assets."
+   },
+   {
+    "lender_or_type": "National Asset Reconstruction Company Limited (NARCL) - Unsecured Term Loan",
+    "amount_cr": 0.0,
+    "note": "No outstanding as at 31st March 2026."
+   },
+   {
+    "lender_or_type": "IndusInd Bank Limited - Unsecured Short Term Loan",
+    "amount_cr": 71.66,
+    "note": "Default period December 2019 to 31st March 2026. Principal outstanding Rs 7,166.00 lakhs, interest accrued Rs 6,147.12 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Ragini Finance Limited - Unsecured Short Term Loan",
+    "amount_cr": 9.5,
+    "note": "Default period October 2019 to 31st March 2026. Principal outstanding Rs 950.00 lakhs."
+   },
+   {
+    "lender_or_type": "Digvijay Finlease Limited - Unsecured Short Term Loan",
+    "amount_cr": 19.5,
+    "note": "Default period October 2019 to 31st March 2026. Principal outstanding Rs 1,950.00 lakhs."
+   },
+   {
+    "lender_or_type": "P D K Impex Private Limited - Unsecured Short Term Loan",
+    "amount_cr": 1.1,
+    "note": "Default period March 2020 to 31st March 2026. Principal outstanding Rs 110.00 lakhs."
+   },
+   {
+    "lender_or_type": "Unsecured Loans from Others - From Individual",
+    "amount_cr": 35.0,
+    "note": "Short term borrowing outstanding Rs 3,500.00 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Unsecured Loans from Others - From Body Corporates",
+    "amount_cr": 104.0,
+    "note": "Short term borrowing outstanding Rs 10,400.00 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Unsecured Loans from Others - From Related Parties",
+    "amount_cr": 156.79,
+    "note": "Short term borrowing outstanding Rs 15,679.40 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Current Maturities of Long Term Debts - JCAF",
+    "amount_cr": 124.38,
+    "note": "Rs 12,438.31 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Current Maturities of Long Term Debts - NARCL (Secured)",
+    "amount_cr": 301.26,
+    "note": "Rs 30,125.87 lakhs (31st March 2026)."
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 977.3095,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 367.454,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Interest Accrued on Borrowings",
+    "amount_cr": 48.2982,
+    "note": ""
+   },
+   {
+    "lender_or_type": "NARCL (ARC)",
+    "amount_cr": null,
+    "note": "Resolution approved by NARCL; execution of Master Restructuring Agreement (MRA) pending as on reporting date"
+   },
+   {
+    "lender_or_type": "JCAF (ARC)",
+    "amount_cr": null,
+    "note": "OTS received; subject to fulfillment of conditions precedent to sanction letters"
+   },
+   {
+    "lender_or_type": "Lender bank",
+    "amount_cr": null,
+    "note": "Steps initiated for settlement in line with arrangement with ARCs; variable rate borrowing denominated in INR"
+   },
+   {
+    "lender_or_type": "Total Borrowings (including interest accrued) as at 31st March 2026",
+    "amount_cr": 1587.71,
+    "note": "Contractual undiscounted cash flows; includes current and non-current portions"
+   },
+   {
+    "lender_or_type": "Total Borrowings (including interest accrued) as at 31st March 2025",
+    "amount_cr": 2721.09,
+    "note": "Contractual undiscounted cash flows"
+   },
+   {
+    "lender_or_type": "NARCL (assigned from certain lenders)",
+    "amount_cr": 2483.3,
+    "note": "Assigned debt of Rs 2,48,330 lakhs; sustainable debt Rs 1,05,000 lakhs after repayment of Rs 2,742.38 lakhs; 10% equity conversion estimated Rs 11,900 lakhs; unsustainable debt Rs 84,647.35 lakhs adjusted in exceptional items"
+   },
+   {
+    "lender_or_type": "JC Flower Asset Restructuring (JCAF)",
+    "amount_cr": 749.66,
+    "note": "Assigned debt of Rs 74,966.37 lakhs; OTS sanctioned May 13, 2026; sustainable debt Rs 15,000 lakhs after repayment of Rs 61.69 lakhs; unsustainable debt Rs 44,247.46 lakhs adjusted in exceptional items"
+   },
+   {
+    "lender_or_type": "One Lender Bank (balance)",
+    "amount_cr": 120.31,
+    "note": "Balance borrowing of Rs 12,030.63 lakhs including interest; settlement process initiated; interest provided on simple basis; penal/compound interest not considered"
+   },
+   {
+    "lender_or_type": "Inter-Corporate Deposits/Short-Term Borrowings",
+    "amount_cr": 295.79,
+    "note": "Outstanding Rs 29,579.40 lakhs; interest of Rs 16,189.55 lakhs (including Rs 3,735.93 lakhs for the year) not recognized"
+   },
+   {
+    "lender_or_type": "NARCL",
+    "amount_cr": 1288.9481,
+    "note": "Resolution of borrowing assigned to them sanctioned by NARCL, subject to execution of Master Restructuring Agreement (MRA) and fulfillment of conditions precedent"
+   },
+   {
+    "lender_or_type": "JCAF",
+    "amount_cr": null,
+    "note": "One Time Settlement (OTS) approved by JCAF for borrowing from them, subject to fulfillment of conditions precedent"
+   },
+   {
+    "lender_or_type": "Bank",
+    "amount_cr": null,
+    "note": "In process of working out a settlement proposal to bring down outstanding to a sustainable level"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 639.66,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 855.64,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities (Non-current)",
+    "amount_cr": 0.05,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities (Current)",
+    "amount_cr": 0.01,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited",
+    "amount_cr": 50.0,
+    "note": "Term Loan to McNally Bharat Engineering Company Limited secured by Non-Disposal Undertaking of equity shares"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 75.0,
+    "note": "Short-term loan secured by pledge of Eveready Industries India Limited shares (repaid, shares now non-encumbered)"
+   },
+   {
+    "lender_or_type": "Aditya Birla Finance Limited",
+    "amount_cr": 10.0,
+    "note": "Short-term loan secured by pledge of The Standard Batteries Limited shares (repaid, charge yet to be released)"
+   },
+   {
+    "lender_or_type": "RBL Bank Limited",
+    "amount_cr": null,
+    "note": "Loan secured by pledge of Kilburn Engineering Limited shares (pledge invoked, under reconciliation)"
+   },
+   {
+    "lender_or_type": "NARCL",
+    "amount_cr": null,
+    "note": "Debt assigned to NARCL, Resolution Plan approved, Master Restructuring Agreement pending execution"
+   },
+   {
+    "lender_or_type": "JCAF",
+    "amount_cr": null,
+    "note": "One Time Settlement sanctioned, subject to fulfilment of conditions precedent"
+   },
+   {
+    "lender_or_type": "ABSA Bank (former Barclays Bank (U) limited)",
+    "amount_cr": 61.54,
+    "note": "Foreign Currency Loan secured by mortgage over properties in Uganda, interest at 3 month SOFR plus 4.85%, repayable in 60 monthly installments from January 2025"
+   },
+   {
+    "lender_or_type": "Uganda Development Bank",
+    "amount_cr": 45.3,
+    "note": "Secured by legal mortgage over property in Uganda, interest at 12%, repayable in 48 quarterly installments after 3-year moratorium from February 2025"
+   },
+   {
+    "lender_or_type": "National Asset Reconstruction Company Limited (NARCL)",
+    "amount_cr": 827.93,
+    "note": "Assigned borrowings from consortium banks, secured by first pari passu charge on 25 tea estates, exclusive charges on specific estates, personal guarantee of Mr. Aditya Khaitan"
+   },
+   {
+    "lender_or_type": "J. C. Flowers Asset Reconstruction Private Limited",
+    "amount_cr": 149.38,
+    "note": "Secured by first pari passu charge on 25 tea estates, second charge on specific estates, exclusive charge on movable property, first pari passu charge on current assets"
+   },
+   {
+    "lender_or_type": "IndusInd Bank Limited",
+    "amount_cr": 71.66,
+    "note": "Unsecured short term loan in default since December 2019"
+   },
+   {
+    "lender_or_type": "Ragini Finance Limited",
+    "amount_cr": 9.5,
+    "note": "Unsecured short term loan in default since October 2019"
+   },
+   {
+    "lender_or_type": "Digvijay Finlease Limited",
+    "amount_cr": 19.5,
+    "note": "Unsecured short term loan in default since October 2019"
+   },
+   {
+    "lender_or_type": "P D K Impex Private Limited",
+    "amount_cr": 1.1,
+    "note": "Unsecured short term loan in default since March 2020"
+   },
+   {
+    "lender_or_type": "From Individuals",
+    "amount_cr": 35.0,
+    "note": "Unsecured short term borrowings"
+   },
+   {
+    "lender_or_type": "From Body Corporates",
+    "amount_cr": 104.0,
+    "note": "Unsecured short term borrowings"
+   },
+   {
+    "lender_or_type": "Cash Credit, Packing Credit and Demand Loans (INR)",
+    "amount_cr": 204.86,
+    "note": "Secured by equitable first mortgage of tea estates, hypothecation of tea crop, movable properties and book debts"
+   },
+   {
+    "lender_or_type": "Foreign Currency Loan (Overdraft facility - MRUL)",
+    "amount_cr": 43.69,
+    "note": "Secured by mortgage over properties in Uganda and debenture charge over all fixed and floating assets of MRUL"
+   },
+   {
+    "lender_or_type": "NARCL (National Asset Reconstruction Company Ltd)",
+    "amount_cr": null,
+    "note": "Debts assigned to NARCL restructured with effect from cut-off date 31st December 2025 per Sanction Letter dated 02nd April 2026"
+   },
+   {
+    "lender_or_type": "JCAF",
+    "amount_cr": null,
+    "note": "One Time Settlement (OTS) arrived at with effect from cut-off date 31st March 2026 per letter dated 13th May 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loans of the Parent",
+    "amount_cr": 295.794,
+    "note": "Interest of Rs 16,189.55 Lakhs (including Rs 3,735.93 Lakhs for the year) not recognised; interest determined on simple basis at stipulated rate"
+   },
+   {
+    "lender_or_type": "Outstanding advances",
+    "amount_cr": 40.5,
+    "note": "Aggregating Rs 3,550.00 lakhs and Rs 500.00 lakhs included in other liabilities, pending recognition as Inter Corporate Deposits and finalisation of terms"
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 1084.1494,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 411.148,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Interest Accrued on Borrowings",
+    "amount_cr": 68.5262,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "NARCL (ARC)",
+    "amount_cr": null,
+    "note": "Resolution approved, subject to execution of MRA and fulfillment of conditions precedent"
+   },
+   {
+    "lender_or_type": "JCAF (ARC)",
+    "amount_cr": null,
+    "note": "OTS received, subject to fulfillment of conditions precedent"
+   },
+   {
+    "lender_or_type": "Lender Bank",
+    "amount_cr": null,
+    "note": "Steps initiated for settlement in line with arrangement with ARCs"
+   },
+   {
+    "lender_or_type": "NARCL (assigned from certain lenders)",
+    "amount_cr": 2483.3,
+    "note": "Assigned debt of Rs. 2,48,330.00 lakhs; sustainable debt Rs. 1,05,000.00 lakhs recognized at fair value; 10% equity conversion (Rs. 11,900.00 lakhs) set aside; unsustainable debt Rs. 84,647.35 lakhs adjusted in exceptional items"
+   },
+   {
+    "lender_or_type": "JC Flower Asset Restructuring (JCAF)",
+    "amount_cr": 749.66,
+    "note": "Assigned debt of Rs. 74,966.37 lakhs; OTS sanctioned; sustainable debt Rs. 15,000.00 lakhs recognized at fair value; unsustainable debt Rs. 44,247.46 lakhs adjusted in exceptional items"
+   },
+   {
+    "lender_or_type": "Lender Bank (balance)",
+    "amount_cr": 120.31,
+    "note": "Outstanding Rs. 12,030.63 lakhs including interest; settlement process initiated; interest provided on simple basis"
+   },
+   {
+    "lender_or_type": "Inter-Corporate Deposits/Short-Term Borrowings",
+    "amount_cr": 295.79,
+    "note": "Outstanding Rs. 29,579.40 lakhs; interest of Rs. 16,189.55 lakhs not recognized"
+   },
+   {
+    "lender_or_type": "NARCL",
+    "amount_cr": 1288.95,
+    "note": "Resolution of borrowing assigned to NARCL subject to Master Restructuring Agreement execution"
+   },
+   {
+    "lender_or_type": "JCAF",
+    "amount_cr": null,
+    "note": "One Time Settlement approved subject to conditions precedent"
+   },
+   {
+    "lender_or_type": "Lender bank",
+    "amount_cr": null,
+    "note": "Borrowings subject to confirmation and determination per Note 5(d)"
+   }
+  ],
+  "litigation": [
+   "Applications for CIRP filed by PDK Impex Private Limited dismissed as withdrawn by NCLT",
+   "Applications by State Bank of India, HDFC Bank Limited, and Indian Bank for CIRP substituted in name of NARCL and subsequently withdrawn after FY end",
+   "Applications by Shah Brothers, IndusInd Bank Limited, and Indian Tea Association for CIRP pending before NCLT as at 31st March 2026",
+   "Arbitration proceedings under ICC Rules regarding Facility Agreement 2017 - Final Award dated 29th September 2025 for Rs. 50,895.91 lakhs; Company filed Section 34 petition before Delhi High Court",
+   "Earlier Delhi High Court interim order (O.M.P.(I) (COMM.) 459/2019) restraining asset disposal and capital structure changes - ceased to operate after Final Award",
+   "Insolvency application by Shah Brothers under Section 7 IBC - NCLT Kolkata ad-interim order dated 8th November 2023; matter pending",
+   "Legal suit filed before Calcutta High Court for recovery of ICDs from certain promoter group entities",
+   "Section 185 Companies Act compliance matters pending before regulatory authorities",
+   "Application under Section 9 of Insolvency and Bankruptcy Code, 2016 filed by an operational creditor pending before NCLT Kolkata Bench",
+   "Certain transactions involving amounts given to group companies during FY 2018-19 for which applicability of Section 185 could not be ascertained still outstanding and pending before regulatory authorities",
+   "Delay of 1 day in filing shareholding pattern for quarter ended June 30, 2025 - fines levied by NSE and BSE",
+   "Matter under examination by regulatory authorities regarding ICDs to promoter group companies and advance of Rs. 1,400 lakhs to a body corporate (Note 57(b))",
+   "Pending litigations impact on financial position disclosed in Note 42",
+   "Demands raised by ATEPF Authorities for provident fund dues arrears",
+   "Legal suit filed for recovery of loans and advances (Rs. 2,76,108.95 lakhs)",
+   "Fraud suspected by predecessor auditor in earlier years - final outcome of inspection awaited",
+   "Report under Section 143(12) filed by predecessor auditor in earlier years - final outcome awaited",
+   "Disputed statutory dues pending at various forums (Income Tax Appellate Tribunal, Commissioner Appeals, Principal Commissioner, Gauhati High Court)",
+   "Contempt petition filed before Hon'ble Gauhati High Court for non-release of interest subsidy despite favourable Hon'ble High Court of Delhi judgement",
+   "Hon'ble High Court of Delhi restriction on disposal of assets (Note 53)",
+   "NCLT Kolkata approved Resolution Plan for McNally Bharat Engineering Company Limited extinguishing existing shares",
+   "Injunction imposed by Hon'ble High Court of Delhi on sale of specified assets of Boroi Tea Estates and Assam Valley School (Note 52(c))",
+   "Various demands raised by buyers of specified assets of tea estates pending reconciliation (Note 29.3)",
+   "The Company's pending litigations comprises of claim against the company and proceedings pending with Taxation/ Statutory/ Government Authorities. This includes income tax matter pending before Appellate Authorities where issues involved are similar in nature and in view of the management there is remote possibility for crystalisation of such liabilities.",
+   "Company has filed legal suit before Hon'ble Calcutta High Court for recovery from certain promoter group entities in respect of ICDs given.",
+   "Company has filed a petition on 27th January 2026 before Hon'ble High Court of Delhi challenging the Final Award dated 29th September 2025 by Arbitral Tribunal under ICC rules, outcome awaited.",
+   "Hon'ble High Court of Delhi vide ad-interim ex-parte order of injunction dated 13th December 2019 restrained the company from selling, transferring, alienating, disposing, assigning, encumbering or creating third party rights on any of its assets and carrying out any changes in its capital structure or any corporate or debt restructuring; matter was pending before Arbitral Tribunal.",
+   "Legal suit filed before Hon'ble Calcutta High Court for recovery from certain promoter group entities",
+   "Petitions filed by certain lenders and creditors before Debt Recovery Tribunal (DRT) and under IBC with NCLT Kolkata, pending",
+   "Corporate Insolvency Resolution Process (CIRP) initiated against another promoter group company",
+   "Regulatory authorities examining matters related to ICDs and Sections 185/186 compliance",
+   "Matter as reported is under examination and pending before regulatory authorities regarding ICDs given to promoter group companies",
+   "Pending litigations disclosed in Note 44 to the Consolidated financial statements",
+   "Contempt petition before Hon'ble Gauhati High Court for non-receipt of interest subsidy",
+   "Legal cases related to recovery of loans and advances to bodies corporate",
+   "Matters pending before various judicial authorities regarding taxability and deductibility",
+   "Injunction imposed by Hon'ble High Court of Delhi preventing sale of specified assets of Boroi Tea Estates and Assam Valley School",
+   "Various show cause notices/demands pending with various forums/authorities",
+   "Income tax matters pending before Appellate Authorities",
+   "MRUL defendant in various legal actions arising in normal course of business",
+   "MRUL issued notices against assessment orders from Uganda Revenue Authority undergoing mediation/mentions/hearing",
+   "Pending litigations comprise claims against companies in the Group and proceedings with Taxation/Statutory/Government/Other Authorities",
+   "Parent has initiated legal proceedings against certain promoter group company and is in the process against other entities for recovery of loans",
+   "One promoter group company was under CIRP, Resolution Plan approved by Hon'ble NCLT has been implemented",
+   "Arbitral Tribunal Final Award dated 29th September 2025 claiming Rs. 50,896.00 lakhs + US$ 564,600 + Rs. 20.00 lakhs costs against promoter group entities and Parent; Parent filed petition challenging award on 27th January 2026 before Hon'ble High Court of Delhi",
+   "Hon'ble High Court of Delhi ad-interim ex-parte injunction order dated 13th December 2019 restraining company from selling, transferring, alienating assets and carrying out changes in capital structure or corporate/debt restructuring",
+   "Legal suit filed before Hon'ble Calcutta High Court for recovery of ICDs from certain promoter group entities",
+   "Queries from authorities regarding ICDs utilization and compliance with Sections 185/186 of Companies Act, 2013; replies provided, final outcome awaited",
+   "Matter regarding loans to group companies under examination by regulatory authorities (Qualification 8)",
+   "Provident Fund dues demand of Rs. 19,111 lakhs with repayment approved over 3 years (Qualification 7)",
+   "Lease agreement for registered/corporate office expired August 31, 2022, terms not finalized (Qualification 5)"
+  ],
+  "related_party": [
+   {
+    "party": "Promoter group and certain other entities (borrowing companies)",
+    "nature": "Inter-Corporate Deposits (ICDs) given",
+    "amount_cr": 2761.09
+   },
+   {
+    "party": "Promoter group and certain other entities",
+    "nature": "Interest accrued on ICDs upto March 31, 2019",
+    "amount_cr": 99.41
+   },
+   {
+    "party": "Promoter group companies",
+    "nature": "Loans and advances/ICDs given, non-compliance with Section 186, Section 185 applicability not ascertained, certain ICDs in nature of book entries and/or prejudicial to interest of company",
+    "amount_cr": 775.75
+   },
+   {
+    "party": "Body corporate",
+    "nature": "Advance of Rs. 1,400.00 lakhs fully provided for, appropriate audit evidences not made available",
+    "amount_cr": 14.0
+   },
+   {
+    "party": "Promoter Group Companies",
+    "nature": "Loans and advances in nature of loans",
+    "amount_cr": 1469.62
+   },
+   {
+    "party": "Williamson Magor & Co. Limited",
+    "nature": "Promoter - Loan repayable on demand",
+    "amount_cr": 192.21
+   },
+   {
+    "party": "Babcock Borsig Limited",
+    "nature": "Promoter - Loan repayable on demand",
+    "amount_cr": 145.0
+   },
+   {
+    "party": "Williamson Financial Services Limited",
+    "nature": "Promoter - Loan repayable on demand",
+    "amount_cr": 222.0
+   },
+   {
+    "party": "Woodside Parks Limited",
+    "nature": "Promoter - Loan repayable on demand",
+    "amount_cr": 910.4
+   },
+   {
+    "party": "Aditya Khaitan",
+    "nature": "Director - Advance for remuneration",
+    "amount_cr": 8.45
+   },
+   {
+    "party": "Mr. Aditya Khaitan, Director",
+    "nature": "Personal guarantee for borrowings",
+    "amount_cr": 125.0
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Short term borrowings from related parties",
+    "amount_cr": 156.79
+   },
+   {
+    "party": "Borelli Tea Holdings Limited (BTHL)",
+    "nature": "ICD from BTHL written back and shown under Other Income",
+    "amount_cr": 19.21
+   },
+   {
+    "party": "Mr. Aditya Khaitan (AK)",
+    "nature": "Managing Director and Chairman - Short-term employment benefits",
+    "amount_cr": 2.684
+   },
+   {
+    "party": "Mr. Aditya Khaitan (AK)",
+    "nature": "Managing Director and Chairman - Post-employment benefits",
+    "amount_cr": 0.4213
+   },
+   {
+    "party": "Non-Executive Directors",
+    "nature": "Sitting Fees",
+    "amount_cr": 0.28
+   },
+   {
+    "party": "Relatives of KMP",
+    "nature": "Remuneration",
+    "amount_cr": 0.7711
+   },
+   {
+    "party": "McLeod Russel Middle East DMCC (MRME)",
+    "nature": "Sale of tea",
+    "amount_cr": 0.4169
+   },
+   {
+    "party": "Borelli Tea Holdings Limited (BTHL)",
+    "nature": "Amount received on behalf of BTHL",
+    "amount_cr": 1.4841
+   },
+   {
+    "party": "Borelli Tea Holdings Limited (BTHL)",
+    "nature": "Liability no longer required written back",
+    "amount_cr": 20.6907
+   },
+   {
+    "party": "D1 Williamson Magor Bio Fuel Limited",
+    "nature": "Short Term Loan taken",
+    "amount_cr": 0
+   },
+   {
+    "party": "United Machine Company Limited (UMCL)",
+    "nature": "Loan Assignment",
+    "amount_cr": 8
+   },
+   {
+    "party": "Anduril Industries Private Limited (AIPL)",
+    "nature": "ICD taken",
+    "amount_cr": 20
+   },
+   {
+    "party": "Anduril Industries Private Limited (AIPL)",
+    "nature": "Other Payment made on behalf of the company",
+    "amount_cr": 5
+   },
+   {
+    "party": "Employee Trusts",
+    "nature": "Contribution to Funds (MRILPF)",
+    "amount_cr": 5.7748
+   },
+   {
+    "party": "Williamson Magor & Co. Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 192.21
+   },
+   {
+    "party": "Babcock Borsig Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 145.0
+   },
+   {
+    "party": "Williamson Financial Services Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 222.0
+   },
+   {
+    "party": "Seajulie Developers & Finance Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 1280.36
+   },
+   {
+    "party": "Woodside Parks Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 910.4
+   },
+   {
+    "party": "Metal Centre Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 1.98
+   },
+   {
+    "party": "Kilburn Office Automation Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 1.8
+   },
+   {
+    "party": "The Hoogly Mills Co. Limited",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 7.2
+   },
+   {
+    "party": "Vinod Enterprises",
+    "nature": "Inter-Corporate Deposit given",
+    "amount_cr": 0.13
+   },
+   {
+    "party": "Promoter group and certain other entities",
+    "nature": "Inter-Corporate Deposits (ICDs) given",
+    "amount_cr": 2761.09
+   },
+   {
+    "party": "Promoter group and certain other entities",
+    "nature": "Inter Corporate Deposits (ICDs) given",
+    "amount_cr": 2860.5045
+   },
+   {
+    "party": "Williamson Magor & Co. Limited",
+    "nature": "Loans to Promoter Group",
+    "amount_cr": 192.21
+   },
+   {
+    "party": "Babcock Borsig Limited",
+    "nature": "Loans to Promoter Group",
+    "amount_cr": 145.0
+   },
+   {
+    "party": "Williamson Financial Services Limited",
+    "nature": "Loans to Promoter Group",
+    "amount_cr": 222.0
+   },
+   {
+    "party": "Woodside Parks Limited",
+    "nature": "Loans to Promoter Group",
+    "amount_cr": 910.4
+   },
+   {
+    "party": "Aditya Khaitan (Director)",
+    "nature": "Advances to Managing Director",
+    "amount_cr": 8.45
+   },
+   {
+    "party": "Mr. Aditya Khaitan",
+    "nature": "Personal Guarantee for borrowings",
+    "amount_cr": 125.0
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Short term borrowings",
+    "amount_cr": 156.79
+   },
+   {
+    "party": "Body Corporates",
+    "nature": "Payments made on behalf of parent for repayment of ICDs/Advances",
+    "amount_cr": 63.15
+   },
+   {
+    "party": "Related Party",
+    "nature": "Payment for repayment of ICDs/Advances taken by parent",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "D1 Williamson Magor Bio Fuel Limited",
+    "nature": "Associate",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Aditya Khaitan",
+    "nature": "Managing Director and Chairman - Short-term employment benefits",
+    "amount_cr": 2.684
+   },
+   {
+    "party": "Mr. Aditya Khaitan",
+    "nature": "Managing Director and Chairman - Post-employment benefits",
+    "amount_cr": 0.4213
+   },
+   {
+    "party": "Mr. Amritanshu Khaitan",
+    "nature": "Non-Executive Director - Director fees",
+    "amount_cr": 0.012
+   },
+   {
+    "party": "Mr. Sanjay Ginodia",
+    "nature": "Non-Executive Director - Director fees",
+    "amount_cr": 0.056
+   },
+   {
+    "party": "Dr. Rupanjana De",
+    "nature": "Non-Executive Director - Director fees",
+    "amount_cr": 0.084
+   },
+   {
+    "party": "Mr. Amarnath Dhar",
+    "nature": "Non-Executive Director - Director fees",
+    "amount_cr": 0.072
+   },
+   {
+    "party": "Mr. Indrajit Sengupta",
+    "nature": "Non-Executive Director - Director fees",
+    "amount_cr": 0.056
+   },
+   {
+    "party": "Seajuli Investments Private Limited (SIPL) / Anduril Industries Private Limited (AIPL)",
+    "nature": "ICD taken",
+    "amount_cr": 20.0
+   },
+   {
+    "party": "Bishnauth Investments Limited (BIL)",
+    "nature": "ICD taken",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Dufflaghur Investments Limited (DIL)",
+    "nature": "ICD taken",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Anduril Industries Private Limited (AIPL)",
+    "nature": "Other payments on behalf of the Parent",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Soom Stud Farm Private Limited (SSFPL)",
+    "nature": "Closing Payable",
+    "amount_cr": 1.0
+   },
+   {
+    "party": "Ichamati Investments Limited (IIL)",
+    "nature": "Closing Payable",
+    "amount_cr": 55.652
+   },
+   {
+    "party": "Seajuli Investments Private Limited (SIPL)",
+    "nature": "Closing Payable",
+    "amount_cr": 30.0
+   },
+   {
+    "party": "Bishnauth Investments Limited (BIL)",
+    "nature": "Closing Payable",
+    "amount_cr": 7.0
+   },
+   {
+    "party": "Dufflaghur Investments Limited (DIL)",
+    "nature": "Closing Payable",
+    "amount_cr": 1.0
+   },
+   {
+    "party": "United Machine Company Limited (UMCL)",
+    "nature": "Closing Payable",
+    "amount_cr": 7.0
+   },
+   {
+    "party": "Anduril Industries Private Limited (AIPL)",
+    "nature": "Other Financial Liabilities",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Mrs. Kavita Khaitan",
+    "nature": "Relative of KMP - Remuneration",
+    "amount_cr": 0.299
+   },
+   {
+    "party": "Mrs. Apurvi Jalan",
+    "nature": "Relative of KMP - Remuneration",
+    "amount_cr": 0.2735
+   },
+   {
+    "party": "Mr. Akhil Khaitan",
+    "nature": "Relative of KMP - Remuneration",
+    "amount_cr": 0.1986
+   },
+   {
+    "party": "BTCGF",
+    "nature": "Contribution to Funds / Closing Liability",
+    "amount_cr": null
+   },
+   {
+    "party": "GWLGF",
+    "nature": "Contribution to Funds / Closing Liability",
+    "amount_cr": null
+   },
+   {
+    "party": "MRILGF",
+    "nature": "Contribution to Funds / Closing Liability",
+    "amount_cr": null
+   },
+   {
+    "party": "MRILPF",
+    "nature": "Contribution to Funds",
+    "amount_cr": 5.7748
+   },
+   {
+    "party": "GWLSF",
+    "nature": "Closing Assets (Net)",
+    "amount_cr": null
+   },
+   {
+    "party": "WMCLSF",
+    "nature": "Closing Assets (Net)",
+    "amount_cr": null
+   },
+   {
+    "party": "MRILSF",
+    "nature": "Closing Assets (Net)",
+    "amount_cr": null
+   },
+   {
+    "party": "KMP (AK Director)",
+    "nature": "Short-term employment benefits - Salary",
+    "amount_cr": 2.684
+   },
+   {
+    "party": "KMP (Other Directors)",
+    "nature": "Sitting fees",
+    "amount_cr": 0.28
+   },
+   {
+    "party": "KMP (AK Director)",
+    "nature": "Post-employment benefits - Contribution to provident fund",
+    "amount_cr": 0.4213
+   },
+   {
+    "party": "Williamson Magor & Co. Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 192.2142
+   },
+   {
+    "party": "Babcock Borsig Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 145.0
+   },
+   {
+    "party": "Williamson Financial Services Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 222.0
+   },
+   {
+    "party": "Seajulie Developers & Finance Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 1280.3631
+   },
+   {
+    "party": "Woodside Parks Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 910.4022
+   },
+   {
+    "party": "Metal Centre Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 1.98
+   },
+   {
+    "party": "Kilburn Office Automation Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 1.8
+   },
+   {
+    "party": "The Hoogly Mills Co. Limited",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 7.2
+   },
+   {
+    "party": "SLU Holdings",
+    "nature": "Interest bearing Loan at 7.25%",
+    "amount_cr": 12.3479
+   },
+   {
+    "party": "Vinod Enterprises",
+    "nature": "Interest bearing Loan at 12%",
+    "amount_cr": 0.13
+   },
+   {
+    "party": "Promoter group entities",
+    "nature": "Inter-Corporate Deposits given",
+    "amount_cr": 2761.09
+   },
+   {
+    "party": "Promoter group entities",
+    "nature": "Interest accrued on ICDs upto 31st March 2019",
+    "amount_cr": 99.42
+   },
+   {
+    "party": "Sonata Construction Private Limited",
+    "nature": "Advances given",
+    "amount_cr": 14.0
+   },
+   {
+    "party": "Ootys Enterprises Private Ltd",
+    "nature": "Advances given",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "W.H. Targett India Ltd.",
+    "nature": "Deposits given",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "M&PS Communications (P) Limited",
+    "nature": "Deposits given",
+    "amount_cr": 0.05
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Arbitration award - Claimants (Real Touch Finance Limited and IDBI Trusteeship Services Limited) entitled to recover Rs. 50,895.91 lakhs jointly and severally from Company and certain other respondents; Company has filed Section 34 petition challenging award",
+    "amount_cr": 508.96
+   },
+   {
+    "nature": "Arbitration costs - Claimant 1 entitled to recover US$ 564,600 and Rs. 20,23,110 jointly and severally",
+    "amount_cr": null
+   },
+   {
+    "nature": "Insolvency application by Shah Brothers under Section 7 IBC - NCLT Kolkata passed ad-interim order dated 8th November 2023; matter pending adjudication",
+    "amount_cr": null
+   },
+   {
+    "nature": "Statutory liabilities - Provident Fund dues Rs. 19,111 lakhs (Assam Tea Employees Provident Fund approved repayment over 3 years); interest/penalty not recognised as management seeking waiver",
+    "amount_cr": 191.11
+   },
+   {
+    "nature": "Other statutory liabilities aggregating to Rs. 21,382 lakhs as on March 31, 2026",
+    "amount_cr": 213.82
+   },
+   {
+    "nature": "Section 185 Companies Act compliance matters regarding loans to group companies - pending before regulatory authorities",
+    "amount_cr": null
+   },
+   {
+    "nature": "Pending litigations impact on financial position",
+    "amount_cr": null
+   },
+   {
+    "nature": "Statutory liabilities outstanding including interest (Note 61(b))",
+    "amount_cr": null
+   },
+   {
+    "nature": "Lease rent for office premises (Note 61(c))",
+    "amount_cr": null
+   },
+   {
+    "nature": "Impact of labor code notified 21st November 2025 (Note 61(d))",
+    "amount_cr": null
+   },
+   {
+    "nature": "Non reconciliation of debit/credit balances including borrowings and interest (Note 62, 58(d), 61(a))",
+    "amount_cr": null
+   },
+   {
+    "nature": "Regulatory examination of ICDs to promoter group companies and advance of Rs. 1,400 lakhs (Note 57(b))",
+    "amount_cr": null
+   },
+   {
+    "nature": "Disputed statutory dues - Income Tax",
+    "amount_cr": 21.58
+   },
+   {
+    "nature": "Disputed statutory dues - Service Tax",
+    "amount_cr": 4.49
+   },
+   {
+    "nature": "Disputed statutory dues - Excise Duty",
+    "amount_cr": 0.42
+   },
+   {
+    "nature": "Disputed statutory dues - GST",
+    "amount_cr": 27.89
+   },
+   {
+    "nature": "Electricity Dues - Inappropriate Electricity Withdrawal by the Tea Estates from Assam Power Distribution Company Limited",
+    "amount_cr": 0.5338
+   },
+   {
+    "nature": "Excise Duty - Availment of refund was erroneous and to be recovered under Section 11A of the Central Excise Act, 1944",
+    "amount_cr": 0.4299
+   },
+   {
+    "nature": "Income Tax - Matters in respect of various exempted income and other disallowances",
+    "amount_cr": 22.6418
+   },
+   {
+    "nature": "Service Tax - Demand of Service tax under reverse charge mechanism for royalty, license fee and consultancy fees",
+    "amount_cr": 5.2759
+   },
+   {
+    "nature": "Land Revenue - Fine for Encroachment of Land declared and finalised as Ceiling Surplus in 2010",
+    "amount_cr": 0.0965
+   },
+   {
+    "nature": "Letter of Comfort issued to lenders against loans taken by promoter group and certain other companies",
+    "amount_cr": 100
+   },
+   {
+    "nature": "Final Award by Arbitral Tribunal: Claimants entitled to ` 50,896.00 lakhs plus US$ 564,600 (equivalent to ` 535.00 lakhs) and ` 20.00 lakhs costs, jointly and severally from promoter group entities and the company. Company has filed petition challenging the award.",
+    "amount_cr": 514.51
+   },
+   {
+    "nature": "Statutory liabilities including Provident Fund dues, interest, penalty",
+    "amount_cr": 213.82
+   },
+   {
+    "nature": "Interest on borrowings/ICDs not recognized (simple interest basis)",
+    "amount_cr": 161.9
+   },
+   {
+    "nature": "Lease rent for office premises (agreement expired Aug 31, 2022)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Impact of new Labour Codes (past service costs, other costs)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Non-reconciliation of various balances (borrowings, trade payables, receivables, etc.)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Pending litigations impact on consolidated financial position",
+    "amount_cr": null
+   },
+   {
+    "nature": "Contempt petition filed before Hon'ble Gauhati High Court for non-receipt of interest subsidy despite favourable judgement from Hon'ble High Court of Delhi",
+    "amount_cr": 5.79
+   },
+   {
+    "nature": "Electricity Dues - Inappropriate Electricity Withdrawal by Tea Estates from Assam Power Distribution Company Limited",
+    "amount_cr": 0.5338
+   },
+   {
+    "nature": "Excise Duty - Availment of refund erroneous under Section 11A of Central Excise Act, 1944",
+    "amount_cr": 0.4299
+   },
+   {
+    "nature": "Income Tax - matters in respect of various exempted income and other disallowances",
+    "amount_cr": 22.6418
+   },
+   {
+    "nature": "Service Tax - Demand under reverse charge mechanism for royalty, license fee and consultancy fees",
+    "amount_cr": 5.2759
+   },
+   {
+    "nature": "Land Revenue - Fine for Encroachment of Land declared as Ceiling Surplus in 2010",
+    "amount_cr": 0.0965
+   },
+   {
+    "nature": "MRUL - Claims not acknowledged as debts in various legal actions",
+    "amount_cr": 1.3743
+   },
+   {
+    "nature": "MRUL - Notices against assessment orders from Uganda Revenue Authority",
+    "amount_cr": 8.2527
+   },
+   {
+    "nature": "Arbitral Tribunal Final Award claim against promoter group entities and Parent (Rs. 50,896.00 lakhs + US$ 564,600 + Rs. 20.00 lakhs costs)",
+    "amount_cr": 508.96
+   },
+   {
+    "nature": "High Court injunction restraining asset sales and corporate restructuring",
+    "amount_cr": null
+   },
+   {
+    "nature": "Statutory liabilities including Provident Fund dues (Rs. 21,382.49 lakhs total, Rs. 19,111.42 lakhs PF arrears)",
+    "amount_cr": 213.82
+   },
+   {
+    "nature": "Unrecognized interest on borrowings/ICDs (Rs. 16,189.55 lakhs)",
+    "amount_cr": 161.9
+   },
+   {
+    "nature": "Lease rent for corporate office premises (expired Aug 2022, amount non-determinable)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Labour Code implications (past service costs under evaluation)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Balances subject to reconciliation and confirmation",
+    "amount_cr": null
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}

@@ -1,0 +1,910 @@
+{
+ "isin": "INE745B01028",
+ "name": "Khaitan Chemicals & Fertilizers Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29437_KHAICHEM_2025_2026_A_4581477_24062026124004.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 422947,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Khaitan Chemicals and Fertilizers Limited is engaged in the manufacturing of fertilizers and chemicals & speciality chemicals.",
+   "products": [
+    {
+     "name": "Fertilizer",
+     "share_of_revenue_pct": null,
+     "note": "Manufacturing units at Nimrani, Nimbahera, Jhansi, Malwan, Rajnandgaon & Dahej"
+    },
+    {
+     "name": "Chemicals & Speciality Chemicals",
+     "share_of_revenue_pct": null,
+     "note": "Manufacturing units at Nimrani, Jhansi, Malwan & Rajnandgaon"
+    },
+    {
+     "name": "Single Super Phosphate (SSP) Fertilizer",
+     "share_of_revenue_pct": null,
+     "note": "Produced 4,40,271 MT and sold 454,276 MT in FY 2025-26"
+    },
+    {
+     "name": "Chemicals & Specialty Chemicals",
+     "share_of_revenue_pct": null,
+     "note": "Produced 183,943 MT and sold 128,086 MT in FY 2025-26"
+    },
+    {
+     "name": "Chemicals & Specialty Chemicals (Sulphuric Acid, Oleum, Liquid SO3, SSF)",
+     "share_of_revenue_pct": null,
+     "note": "Sulphuric Acid is also a raw material for production of SSP"
+    },
+    {
+     "name": "Single Super Phosphate Fertilizer",
+     "share_of_revenue_pct": 81.55,
+     "note": "NIC Code 24122"
+    },
+    {
+     "name": "Sulphuric Acid",
+     "share_of_revenue_pct": 18.45,
+     "note": "NIC Code 24121"
+    },
+    {
+     "name": "SSP Fertilizer",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Captive power generation",
+     "share_of_revenue_pct": null,
+     "note": "Based on waste heat from sulphuric acid production"
+    },
+    {
+     "name": "Fertilizers",
+     "share_of_revenue_pct": null,
+     "note": "Subsidy revenue recognized amounting to Rs.39,928.00 Lakhs during the year"
+    },
+    {
+     "name": "Rock phosphate",
+     "share_of_revenue_pct": null,
+     "note": "Mining operations subject to royalty under Mines and Minerals (Development and Regulation) Act,1957"
+    },
+    {
+     "name": "Single Super Phosphate Fertilisers (Plain, Zincated and Boronated in powder form and granulated form)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Sulphuric Acid and its variants",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "DAP /NPK Fertilisers (Trading)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Chemicals and Speciality Chemicals",
+     "share_of_revenue_pct": null,
+     "note": "Primary business segment"
+    },
+    {
+     "name": "Agro (Soya)",
+     "share_of_revenue_pct": null,
+     "note": "Primary business segment"
+    },
+    {
+     "name": "SSP/GSSP Fertilizer",
+     "share_of_revenue_pct": null,
+     "note": "Includes subsidy income of Rs.39928.00 lakhs (Previous year 24563.75 lakhs)"
+    },
+    {
+     "name": "Oleum 23% and 65%",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Traded Goods / NPK Fertilizers",
+     "share_of_revenue_pct": null,
+     "note": "Includes subsidy income of Rs. 0 lakhs (Previous year 0.35 lakhs)"
+    }
+   ],
+   "plants": [
+    {
+     "location": "A.B. Road, Village Nimrani, Tehsil Kasrawad, Dist. Khargone - 451569 (M.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Village Goramachia, Kanpur Road, Jhansi - 248001 (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Village Dhinva, Tehsil Nimbahera, Dist. Chittorgarh - 312601 (Rajasthan)",
+     "capacity": ""
+    },
+    {
+     "location": "A-1, UPSIDC Industrial Area, Malwan, Dist. Fatehpur - 212664 (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Village Farhad (Somni), Dist. Rajnandgaon - 491443 (Chattisgarh)",
+     "capacity": ""
+    },
+    {
+     "location": "42/7, GIDC Industrial Estate, Dahej, Vagra, Dist. Bharuch-392130 (Gujarat)",
+     "capacity": ""
+    },
+    {
+     "location": "Nimrani",
+     "capacity": ""
+    },
+    {
+     "location": "Nimbahera",
+     "capacity": ""
+    },
+    {
+     "location": "Jhansi",
+     "capacity": ""
+    },
+    {
+     "location": "Malwan",
+     "capacity": ""
+    },
+    {
+     "location": "Rajnandgaon",
+     "capacity": ""
+    },
+    {
+     "location": "Dahej",
+     "capacity": ""
+    },
+    {
+     "location": "Madhya Pradesh, Rajasthan, Uttar Pradesh, Chhattisgarh & Gujarat",
+     "capacity": "SSP Fertilizer production capacity of 11,13,500 MT"
+    },
+    {
+     "location": "Madhya Pradesh, Uttar Pradesh & Chhattisgarh",
+     "capacity": "Chemicals production capacity of 2,70,600 MT"
+    },
+    {
+     "location": "A. B. Road, Village Nimrani, Tehsil Kasrawad, Dist. Khargone (M.P.)-451 569",
+     "capacity": ""
+    },
+    {
+     "location": "Village Goramachia, Jhansi-Kanpur Road, Jhansi (U.P.)-248 001",
+     "capacity": ""
+    },
+    {
+     "location": "Village Dhinva, Tehsil Nimbahera, Dist. Chittorgarh -312 601 (Rajasthan)",
+     "capacity": ""
+    },
+    {
+     "location": "A-1, UPSIDC Industrial Area, Malwan, Dist. Fatehpur\u2013212 664 (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Village Farhad (Somni), Dist. Rajnandgaon-491443 (Chhattisgarh)",
+     "capacity": ""
+    },
+    {
+     "location": "Industrial Area, Dosigaon, Ratlam (M.P.) - 457 001",
+     "capacity": ""
+    },
+    {
+     "location": "National (6 plants)",
+     "capacity": ""
+    },
+    {
+     "location": "Nimrani, Jhansi, Malwan, Somni",
+     "capacity": "Manufacture SSP Fertilizer, Sulphuric acid and captive power generation based on waste heat"
+    },
+    {
+     "location": "Dahej, Nimbaheda",
+     "capacity": "Manufacture of SSP Fertilizer"
+    },
+    {
+     "location": "Malwan (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Nimrani (M.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Ratlam",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "raw_materials": [
+    "Sulphur",
+    "Rock Phosphate",
+    "Rock",
+    "Sulphuric acid",
+    "Rock Phosphate (Indigenous)",
+    "Rock Phosphate (Imported)",
+    "Sulphur (Fert)",
+    "Sulphuric Acid/Spent Acid",
+    "Key raw materials with price fluctuations managed through hedging and advance procurement"
+   ],
+   "end_markets": [
+    "Fertilizer",
+    "Chemicals",
+    "Specialty Chemicals",
+    "agriculture",
+    "fertilizer industry",
+    "Agriculture (Fertilizer)",
+    "Agriculture (fertilizers)",
+    "Chemical industry (speciality chemicals)"
+   ],
+   "customers": [
+    "farmers",
+    "small & marginal farmers",
+    "Co-operative Societies",
+    "Dealers",
+    "Direct customers for SSP Fertilizer, Sulphuric Acid and Other Specialty Chemicals",
+    "Domestic customers in India",
+    "Top customer contributed Rs 5,781.47 lakhs in FY2026",
+    "Top five customers contributed Rs 16,340.41 lakhs in FY2026"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "National (India)",
+     "share_pct": 100
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ]
+  },
+  "borrowings": [
+   {
+    "lender_or_type": "Board authorized borrowing limit",
+    "amount_cr": 800,
+    "note": "Approval sought for borrowing up to Rs 800 Crores under Section 180(1)(c); includes cash credit, advance, deposits, loans, bill discounting, debentures, commercial papers, long/short term loans, suppliers' credit, securitized instruments, commercial borrowing from multilateral financial institutions, in rupees or foreign currencies, secured or unsecured"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": 8.44,
+    "note": "Net term loan repaid during FY 2025-26"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": 7.61,
+    "note": "Net term loan repaid during FY 2024-25"
+   },
+   {
+    "lender_or_type": "Proposed Borrowing Limit",
+    "amount_cr": 800,
+    "note": "Proposed increase in borrowing limits from Rs 600 Crores to Rs 800 Crores under Section 180(1)(c)"
+   },
+   {
+    "lender_or_type": "Shradha Projects Limited",
+    "amount_cr": null,
+    "note": "Unsecured Loan taken by the Company"
+   },
+   {
+    "lender_or_type": "Banks (working capital limits)",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of Rs.5 crores on security of current assets; quarterly returns not in agreement with books of accounts; DP not claimed on certain current assets"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 23.55,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 277.75,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "HDFC Bank - Rupee Term Loan",
+    "amount_cr": 1.7466,
+    "note": "Interest @ 9.40% p.a., Sanctioned Rs. 1125 lakhs in 2021-22, tenure 60 months ending October 2026, secured by First Pari-pasu charge on immovable and movable Fixed Assets, Personal Guarantee of Shri Shailesh Khaitan"
+   },
+   {
+    "lender_or_type": "AXIS Bank - Rupee Term Loan",
+    "amount_cr": 5.6197,
+    "note": "Interest @ 7.55% p.a., Sanctioned Rs. 2250 lakhs in 2022-23, tenure 60 months ending April 2027, secured by First Pari-pasu charge on immovable and movable Fixed Assets, Personal Guarantee of Shri Shailesh Khaitan"
+   },
+   {
+    "lender_or_type": "HDFC Bank - Rupee Term Loan (Car)",
+    "amount_cr": 0.9736,
+    "note": "Interest @ 7.30% p.a., Sanctioned Rs 325 Lakhs in 2020-21, tenure 84 months ending December 2027, secured by hypothecation of the car"
+   },
+   {
+    "lender_or_type": "Shradha Projects Ltd. - Unsecured Related Party Loan",
+    "amount_cr": 15.88,
+    "note": "Interest @ 9.00% p.a., Availed in April 2025-26"
+   },
+   {
+    "lender_or_type": "The Majestic Packaging Pvt. Ltd. - Unsecured Related Party Loan",
+    "amount_cr": 6.12,
+    "note": "Interest @ 9.00% p.a., Availed in April 2025-26"
+   },
+   {
+    "lender_or_type": "Consortium Bankers - Cash Credits / Working Capital Demand Loans",
+    "amount_cr": 270.9606,
+    "note": "Secured by first hypothecation charge on Company's entire stocks and receivables on pari-passu basis"
+   },
+   {
+    "lender_or_type": "Total Borrowings",
+    "amount_cr": 301.3,
+    "note": "As of March 31, 2026: Fixed rate 33.09% (Rs 99.69 cr), Variable rate 66.91% (Rs 201.61 cr)"
+   },
+   {
+    "lender_or_type": "Current Borrowings",
+    "amount_cr": 277.75,
+    "note": "As of March 31, 2026"
+   },
+   {
+    "lender_or_type": "Non-Current Borrowings",
+    "amount_cr": 23.55,
+    "note": "As of March 31, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. NSBP & Co., Chartered Accountant",
+   "opinion": "The notes on accounts referred to and the Auditors' Report are self-explanatory and therefore do not call for any explanatory note.",
+   "qualifications_or_emphasis": [
+    "No instances of fraud reported by the Statutory Auditors under Section 143(12) of the Act",
+    "Temporary shortfall in the number of non-executive directors on the Board, resulting in deviation from the prescribed composition under Regulation 17(1) of the SEBI (LODR), 2015. The Company received a notice and was levied a penalty by Stock Exchanges for such non-compliance, which has been duly paid by the Company.",
+    "compliances of applicable financial, cost and tax laws has not been reviewed in this audit since the same have been subject to review by statutory financial auditor and other designated professionals",
+    "The Secretarial Audit report is neither an assurance as to the future liability of the Company nor of the efficiency of effectiveness with which the management has conducted the affairs of the Company",
+    "Title deeds of immovable properties not held in company's name for: (1) Leasehold land at Malwan (U.P.) - Rs.24.87 Lakhs, dispute with State Govt/UPSIDC since 12.04.2006; (2) Freehold land at Nimrani (M.P.) - Rs.3.95 Lakhs, revenue authority has not changed name from Ratlam Fertilizers Ltd",
+    "Quarterly returns/statements filed with banks not in agreement with books of accounts",
+    "Slight delay in depositing undisputed statutory dues in a few cases",
+    "Disputed statutory dues pending at various forums"
+   ],
+   "key_audit_matters": [
+    "Assessment of implications of government policies/notifications on recognition of subsidy revenue and its recoverability (subsidy revenue Rs.39,928.00 Lakhs, subsidy receivable Rs.15,811.40 Lakhs as at March 31, 2026)"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Shri Inderjit Singh resigned from the board w.e.f. 29.10.2025",
+    "Shri Suman Jyoti Khaitan appointed as Independent Director w.e.f. 29.10.2025",
+    "Appointment of Mr. Suman Jyoti Khaitan (DIN: 00023370) as Additional Director (Non-Executive, Independent Director) effective October 29, 2025, approved by members on January 12, 2026",
+    "Resignation of Mr. Inder Jit Singh as Independent Director at close of business hours on October 29, 2025",
+    "Mr. Inder Jit Singh resigned as an Independent, Non-Executive Director w.e.f. closing business hours of 29 October 2025",
+    "Mr. Suman Jyoti Khaitan appointed as an Additional Director w.e.f 29 October 2025, approved by Members on 12th January, 2026",
+    "Mr. Inder Jit Singh ceased to be a Director of the Company and a member of its Committees consequent upon his resignation as an Independent Director with effect from 29th October, 2025.",
+    "Mr. Suman Jyoti Khaitan was appointed as the member of the Committee w.e.f. 29th October 2025.",
+    "Mr. Praveen Uniyal was appointed as a Member of the Committee with effect from 20th November, 2025 through Circular Resolution passed on Thursday, 20th November, 2025, and consequently, Mr. Suman Jyoti Khaitan ceased to be a Member of the Committee with effect from the same date.",
+    "Mr. Inderjit Singh resigned as Independent Director w.e.f. October 29, 2025 due to personal commitments and consequently ceased to be Director and Chairman/Member of Board Committees thereafter",
+    "Mr. Suman Jyoti Khaitan was appointed as the member of the CSR committee w.e.f 29 October, 2025"
+   ],
+   "promoter_holding_pct": 72.65,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 72.65
+    },
+    {
+     "name": "Investor Education and Protection Fund Authority",
+     "pct": 3.49
+    },
+    {
+     "name": "Private Corporate Bodies",
+     "pct": 3.9
+    },
+    {
+     "name": "Non-residents /OCBs",
+     "pct": 0.89
+    },
+    {
+     "name": "Indian Public",
+     "pct": 19.05
+    },
+    {
+     "name": "Shradha Projects Limited",
+     "pct": 44.71
+    },
+    {
+     "name": "The Majestic Packaging Co. Pvt. Ltd.",
+     "pct": 22.83
+    },
+    {
+     "name": "Rukmini Leasing Ltd. (struck off company)",
+     "pct": null
+    }
+   ],
+   "auditor_change": "To appoint M/s Ritesh Gupta, Practicing Company Secretaries as Secretarial Auditor for an audit period of 5 years commencing from FY 2025-26 till FY 2029-2030."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Shri Shailesh Khaitan",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Shri Utsav Khaitan",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Shri Praveen Uniyal",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mrs. Payal Gupta",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Shri Deepak Kumar Khemka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Inderjit Singh",
+     "role": "Independent Director (resigned w.e.f. 29.10.2025)"
+    },
+    {
+     "name": "Shri Suman Jyoti Khaitan",
+     "role": "Independent Director (appointed w.e.f. 29.10.2025)"
+    },
+    {
+     "name": "Shri Harsh Vardhan Agnihotri",
+     "role": "President & Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sejal Maheshwari",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Shailesh Khaitan",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Utsav Khaitan",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Praveen Uniyal",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Deepak Kumar Khemka",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Payal Gupta",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Suman Jyoti Khaitan",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Harsh Vardhan Agnihotri",
+     "role": "President & Chief Financial Officer"
+    },
+    {
+     "name": "Sejal Maheshwari",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "",
+     "role": "Board of Directors (BoD)"
+    },
+    {
+     "name": "",
+     "role": "Key Managerial Personnel (includes MD & JMD)"
+    },
+    {
+     "name": "SHAILESH KHAITAN",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "UTSAV KHIATAN",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "SEJAL MAHESHWARI",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "HARSH VARDHAN AGNIHOTRI",
+     "role": "President & Chief Financial Officer"
+    },
+    {
+     "name": "Shri Deepak Kumar Khemka",
+     "role": "Non Executive / Independent Director"
+    },
+    {
+     "name": "Ms Payal Gupta",
+     "role": "Non Executive / Independent Women Director"
+    },
+    {
+     "name": "Shri Suman Jyoti Khaitan",
+     "role": "Non Executive / Independent Director"
+    },
+    {
+     "name": "Smt Sejal Maheshwari",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shailesh Khaitan",
+     "role": "Chairman & Managing Director (DIN: 00041247)"
+    },
+    {
+     "name": "Utsav Khaitan",
+     "role": "Joint Managing Director (DIN: 03021454)"
+    },
+    {
+     "name": "Sejal Maheshwari",
+     "role": "Company Secretary & Compliance Officer (Membership No. F13942)"
+    },
+    {
+     "name": "Harsh Vardhan Agnihotri",
+     "role": "President & Chief Financial Officer (PAN: ACXPA9315K)"
+    }
+   ],
+   "employees": 644
+  },
+  "dividend_per_share": 0.05,
+  "other_notable": [
+   "AGM scheduled for 21st July 2026 at 11:00 A.M. through VC/OAVM",
+   "Dividend of Re. 0.05 per equity share (5% on face value of Re. 1) proposed for FY 2025-26",
+   "Cost Auditor remuneration of Rs. 3,50,000 plus taxes and reimbursement of actual travel and out of pocket expenses for FY 2026-27 ratified for M/s. M.P. Turakhia & Associates",
+   "Re-appointment of Shri Utsav Khaitan as Joint Managing Director for 3 years effective May 1, 2026 to April 30, 2029 approved",
+   "Creation of charge on assets to secure borrowings up to Rs 800 Crores approved under Section 180(1)(a)",
+   "Unpaid dividend of Rs. 14.78 Lacs for years 2018-19 to 2022-23",
+   "Register of Members closed from 15th July 2026 to 21st July 2026 for dividend payment",
+   "Dividend payable on or after July 27, 2026 to members as on July 14, 2026",
+   "E-voting period: 18th July 2026 to 20th July 2026 (5:00 PM)",
+   "Scrutinizer: CS Ritesh Gupta (FCS-5200, CP No. 3764)",
+   "Secretarial Auditors: Ritesh Gupta & Co., Company Secretaries",
+   "Solicitors: M/s. Khaitan & Partners",
+   "Bankers: State Bank of India, IDBI Bank Ltd., Union Bank of India, HDFC Bank Ltd., Axis Bank Ltd.",
+   "Listed on BSE (Scrip Code: 507794) and NSE (Symbol: KHAICHEM)",
+   "ISIN: INE745B01028",
+   "CIN: L24219MP1982PLC004937",
+   "Turnover increased from Rs 72,102.58 lacs in FY 2024-25 to Rs 100,313.07 lacs in FY 2025-26",
+   "Profit before interest, depreciation, exceptional items and tax improved from Rs 2,391.66 lacs to Rs 11,449.91 lacs",
+   "Net profit after tax of Rs 6,875.95 lacs in FY 2025-26 vs Rs 139.91 lacs in FY 2024-25",
+   "Government of India increased NBS rates to Rs 7,263 per MT (April-Sept 2025) and Rs 7,408 per MT (Oct 2025-Mar 2026), further increased to Rs 8,149 per MT for FY 2026-27",
+   "Company has not accepted any deposits from the public during the year",
+   "Foreign exchange earnings: Nil; Foreign exchange outgo: Rs 25,246.28 lacs on import of raw materials, fees & subscription, and interest on foreign currency loan",
+   "Cost Auditor appointed: M/s. M.P. Turakhia & Associates for FY 2026-27 at remuneration of Rs 3,50,000 plus taxes",
+   "Internal Auditor appointed: M/s. APAS & Co. for FY 2026-27",
+   "Secretarial Auditor appointed: M/s. Ritesh Gupta & Co. for FY 2025-30",
+   "CSR Committee comprises Shri Utsav Khaitan (Chairman), Shri Deepak Kumar Khemka, Mr. Suman Jyoti Khaitan & Mrs. Payal Gupta",
+   "Business Responsibility and Sustainability Report annexed as Annexure H",
+   "Annual Return for FY 2025-26 to be uploaded on company website",
+   "Dividend for FY 2018-19 unclaimed to be transferred to IEPF on October 7, 2026",
+   "Shares listed on BSE Limited and National Stock Exchange of India Limited",
+   "99.18% of share capital dematerialized as on March 31, 2026",
+   "Risk Management Committee constituted with Mr. Utsav Khaitan (Chairman), Mrs. Payal Gupta, Mr. Deepak Kumar Khemka",
+   "Internal Auditor: M/s APAS & Co., Chartered Accountants",
+   "Compliance with Maternity Benefit Act, 1961",
+   "Anti-Sexual Harassment Policy in place with Internal Complaints Committee (ICC)",
+   "No complaints received under Sexual Harassment Act",
+   "Government approved enhanced Nutrient Based Subsidy (NBS) rates for Kharif 2025 (Rs 7263/MT) and Rabi 2025 (Rs 7408/MT)",
+   "Company shut fertilizer operations in Jhansi and Malwan units due to unviability from high Sulphur costs and freight subsidy policy",
+   "Direct Benefit Transfer (DBT) system implemented in fertilizer sector since March 2018",
+   "Approximately 2.3 lakh fertilizer retailers equipped with PoS machines integrated with e-Urvarak platform",
+   "Government contemplating direct subsidy transfer to farmers (under consideration, not implemented)",
+   "Special subsidy on DAP continued to maintain affordability",
+   "Online Monitoring System set up at all plants for environment protection",
+   "Water Harvesting, Sewage Treatment Plant for natural resource conservation",
+   "The Company has paid a consolidated amount of Rs. 23.74 lakhs as total fees for all services rendered by the statutory auditor.",
+   "The Company has not advanced loans and advances to firms/companies in which Directors are interested.",
+   "The Company has in place an Anti-Sexual Harassment Policy in line with the requirements of The Sexual Harassment of Women at the Workplace (Prevention, Prohibition and Redressal) Act, 2013. Internal Complaints Committee (ICC) has been set up to redress complaints received regarding sexual harassment. No of complaints received: NIL; No of complaints disposed off: Not Applicable; Pending: Not Applicable.",
+   "The Company has transferred all unpaid/unclaimed equity dividends up to the financial year 2017-18 to the Investor Education & Protection Fund (IEPF) established by the Central Government pursuant to Section 125 of Companies Act, 2013.",
+   "Trading in Khaitan Chemicals and Fertilizers Limited shares is permitted only in dematerialised form with effect from 26th March, 2001. As on 31 March, 2026, 9,61,97,330 equity shares of the Company, which amount to 99.18% of the equity capital exist under the electronic form.",
+   "The 44th Annual General Meeting of the Company will be held on 21st July, 2026 at 11:00 A.M. through VC/OAVM.",
+   "Date of Book Closure: 15th July 2026 to 21st July 2026 (both days inclusive) for Annual General Meeting/payment of Dividend.",
+   "Dividend, if declared will be paid on or before Wednesday August 19, 2026.",
+   "CSR obligation for the financial year: Nil due to loss (Average Net Profit: Rs (1297.74) Lacs)",
+   "Total CSR amount spent for the Financial Year: Rs. 6,59,380.70",
+   "Number of permanent employees on rolls: 644 (323 employees + 321 workers)",
+   "Board of Directors: 6 members, 2 women (33.33%)",
+   "Key Management Personnel: 4 members, 1 woman (25%)",
+   "Exports as percentage of total turnover: Nil",
+   "Number of States served: 13",
+   "Number of dealers/distributors: 948"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company remains cautiously optimistic, as subsidy policies, global raw material pricing, and compecan pose a challenge for fertilizers division. The Company is however confident that strategic planning, and operational efficiency will enable it to counter any adverse impact in FY 2026\u201327.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The Preliminary indicators for year 26-27 suggest the likelihood of normal monsoon in the first half of the season with shortfalls in the second half i.e. after July.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The continued emphasis on enhancing agricultural productivity is expected to result in improved farm incomes and drive increased demand for fertilizers. Single Super Phosphate (SSP), a customized fertilizer containing phosphate along with sulphur, calcium, and other micronutrients, is likely to see sustained demand due to its suitability for various soil and crop types.",
+    "period": "long term"
+   },
+   {
+    "statement": "The monsoon for 2026 is forecasted to be normal in the first half i.e. in June and July and below normal in August and September. This can adversely impact the performance of the fertilizer division.",
+    "period": "2026"
+   },
+   {
+    "statement": "Looking ahead, we remain optimistic about the future outlook for our business. We are committed to pursuing growth opportunities, enhancing operational efficiency, and delivering value to our stakeholders.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Continuous rise in prices of Sulphur (major raw material) influenced by Russia-Ukraine war",
+   "Subsidy policies and global raw material pricing can pose a challenge for fertilizers division",
+   "Uncertainty of monsoon",
+   "Volatile international market of raw material",
+   "Seasonal consumption of fertilizer mainly in two months each in Kharif and Rabi",
+   "Lack of awareness of benefits of SSP consumption amongst farmer fraternity",
+   "Logistics availability/cost",
+   "Higher requirement of working capital",
+   "Continuous increase in Sulphur prices",
+   "Freight subsidy policy",
+   "Entry of new entrants creating excess supply",
+   "Imported raw material price volatility and foreign currency exchange rates",
+   "Agro-climatic conditions",
+   "Foreign Exchange Risk has been fully covered by the Company.",
+   "The company did not engage in commodity hedging activities.",
+   "Raw Material (Rock & Sulphur) Issue - shortage of raw material impacts manufacturing",
+   "Climate Condition - fertilizer industry depends on monsoon, delay causes poor sales",
+   "Government Subsidy - delay in government subsidy affects market price determination",
+   "Manufacturing hazardous substances",
+   "Operations in water stress areas",
+   "Environmental compliance requirements",
+   "Subsidy revenue recognition and recoverability subject to significant management judgements and government policy changes",
+   "Disputes with State Government/UPSIDC relating to stamp duty on leasehold land at Malwan (U.P.)",
+   "Revenue authority has not changed name on freehold land at Nimrani (M.P.) from Ratlam Fertilizers Ltd to Khaitan Chemicals and Fertilizers Ltd",
+   "Quarterly returns/statements filed with banks not in agreement with books of accounts",
+   "Slight delay in depositing undisputed statutory dues in a few cases",
+   "Disputed statutory dues pending at various forums including Supreme Court, High Courts, and Tribunals",
+   "Inherent limitations of internal financial controls over financial reporting, including the possibility of collusion or improper management override of controls, material misstatements due to error or fraud may occur and not be detected.",
+   "Projections of any evaluation of the internal financial controls with reference to financial statements to future periods are subject to the risk that the internal financial control may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.",
+   "Dispute with State Govt / UPSIDC relating to stamp duty for Lease hold Land at Malwan (U.P.) - Court case filed with Hon'ble High Court, Allahabad",
+   "Revenue Authority have not changed name from Ratlam Fertilizers Ltd to Khaitan Chemicals and Fertilizers Ltd for Free Hold Land at Nimrani (M.P.)",
+   "The Company is in the process of reconciliation of Input Tax Credit as per Books and GST Portal. The management does not expect any material financial impact.",
+   "The Company is in the process of obtaining confirmations and reconciliation with its trade receivables, trade payables and other dues receivables. The management does not expect any significant variations in the existing status.",
+   "Foreign exchange risk (USD/AED exposure on trade payables and borrowings)",
+   "Interest rate risk (66.91% of borrowings at variable rates as of March 31, 2026)",
+   "Commodity price risk on key raw materials",
+   "Credit risk from trade receivables (Rs 6,552.51 lakhs as of March 31, 2026)",
+   "Liquidity risk managed through rolling cash flow forecasts and committed credit lines",
+   "Competition from local and foreign competitors"
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company has no Subsidiary/Joint Venture/Associate Company."
+   }
+  ],
+  "litigation": [
+   "There is no order passed by any regulator or court or tribunal against the company, impacting the going concern concept or future operations of the Company.",
+   "Dispute with State Govt/UPSIDC relating to stamp duty on leasehold land at Malwan (U.P.) filed with Hon'ble High Court, Allahabad",
+   "Revenue authority has not changed name on freehold land at Nimrani (M.P.) from Ratlam Fertilizers Ltd to Khaitan Chemicals and Fertilizers Ltd",
+   "Mines and Minerals Royalty on rock phosphate - Rs.158.36 Lakhs pending at Honorable Supreme Court, Delhi (2004-05)",
+   "Custom Duty - Rs.185.47 Lakhs pending at Commissioner Appeal, Mumbai (2004-05 to 2008-09)",
+   "GST - Rs.1.72 Lakhs pending at SGST Deputy Commissioner, Indore (2020-21); Rs.28.02 Lakhs pending at GST Appellate Tribunal (2017-18); Rs.24.59 Lakhs appeal yet to be filed (2021-22)",
+   "Income Tax - Rs.1.14 Lakhs pending at CIT (Appeal), New Delhi (2014-15); Rs.25.40 Lakhs for various TDS pending at CPC (assessment year)",
+   "Stamp Duty - Rs.258.34 Lakhs pending at Honorable High Court, Allahabad (2020-21)",
+   "Labour Compensation - Rs.0.80 Lakhs and Rs.5.20 Lakhs pending at Assistant Labour Commissioner, Malwan (2013-14)",
+   "Custom Duty - Rs.193.49 Lakhs pending at Commissioner of Customs (Appeals), Ahmedabad (2021-22)",
+   "Dispute with State Govt / UPSIDC relating to stamp duty for Lease hold Land at Malwan (U.P.) - Court case filed with Hon'ble High Court, Allahabad",
+   "Royalty on Rock Phosphate claimed by RSMM - Rs. 158.36 lakhs",
+   "GST - Rs. 54.33 lakhs",
+   "Income-Tax - Rs. 1.14 lakhs",
+   "Income-Tax (TDS) - Rs. 25.40 lakhs",
+   "Labour Case - Rs. 5.99 lakhs",
+   "UPSIDC - Rs. 258.34 lakhs",
+   "Custom & Excise Duty - Rs. 378.96 lakhs",
+   "No proceedings initiated for benami property",
+   "Not declared willful defaulter by any bank or financial institution"
+  ],
+  "related_party": [
+   {
+    "party": "Shradha Projects Limited",
+    "nature": "Public Company in which Shri Shailesh Khaitan is a Director",
+    "amount_cr": null
+   },
+   {
+    "party": "B O Construction Private Limited",
+    "nature": "Private Company in which Shri Shailesh Khaitan is a Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Swapna Khaitan",
+    "nature": "Promoter and Wife of Chairman & Managing Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Shradha Projects Ltd.",
+    "nature": "Rent Paid",
+    "amount_cr": 0.036
+   },
+   {
+    "party": "Shradha Projects Ltd.",
+    "nature": "Interest Paid",
+    "amount_cr": 1.3862
+   },
+   {
+    "party": "Shradha Projects Ltd.",
+    "nature": "Loan Taken",
+    "amount_cr": 17.9
+   },
+   {
+    "party": "Shradha Projects Ltd.",
+    "nature": "Loan Repaid",
+    "amount_cr": 17.9
+   },
+   {
+    "party": "The Majestic Packaging Co Pvt Ltd",
+    "nature": "Interest Paid",
+    "amount_cr": 0.9439
+   },
+   {
+    "party": "The Majestic Packaging Co Pvt Ltd",
+    "nature": "Loan Taken",
+    "amount_cr": 25.05
+   },
+   {
+    "party": "The Majestic Packaging Co Pvt Ltd",
+    "nature": "Loan Repaid",
+    "amount_cr": 25.05
+   },
+   {
+    "party": "Arati Marketing Pvt. Ltd.",
+    "nature": "Interest Paid",
+    "amount_cr": 0.1286
+   },
+   {
+    "party": "Arati Marketing Pvt. Ltd.",
+    "nature": "Loan Taken",
+    "amount_cr": 15.1
+   },
+   {
+    "party": "Arati Marketing Pvt. Ltd.",
+    "nature": "Loan Repaid",
+    "amount_cr": 15.1
+   },
+   {
+    "party": "B O Constructions Private Limited",
+    "nature": "Rent Paid",
+    "amount_cr": 0.1674
+   },
+   {
+    "party": "Swapna Khaitan",
+    "nature": "Rent Paid",
+    "amount_cr": 1.3357
+   },
+   {
+    "party": "Shri Inderjit Singh",
+    "nature": "Director's Sitting Fees",
+    "amount_cr": 0.0175
+   },
+   {
+    "party": "Shri Deepak Kumar Khemka",
+    "nature": "Director's Sitting Fees",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Ms Payal Gupta",
+    "nature": "Director's Sitting Fees",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Shri Suman Jyoti Khaitan",
+    "nature": "Director's Sitting Fees",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Shri Shailesh Khaitan",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0
+   },
+   {
+    "party": "Shri Utsav Khaitan",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0
+   },
+   {
+    "party": "Shri Jagdish Lal Jajoo",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0.0122
+   },
+   {
+    "party": "Shri Praveen Uniyal",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0.0527
+   },
+   {
+    "party": "Shri Harshvardhan Agnihotri",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0.3952
+   },
+   {
+    "party": "Smt Sejal Maheshwari",
+    "nature": "Remuneration Paid",
+    "amount_cr": 0.088
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Expansion project for increasing sulphuric acid capacity and 600 TPD GSSP plant",
+    "amount_cr": null,
+    "timeline": "EIA Notification No. 11011/172/2020-IA-II(I) from MOEF New Delhi dated 07.07.2021"
+   },
+   {
+    "item": "Estimated amount of Capital Commitments & Other Commitments (net of advances) not provided for",
+    "amount_cr": 0.4234,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Fertilizers segment capital expenditure",
+    "amount_cr": 9.48,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Chemicals & Speciality Chemicals segment capital expenditure",
+    "amount_cr": 3.28,
+    "timeline": "FY2026"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Mines and Minerals Royalty on rock phosphate",
+    "amount_cr": 1.5836
+   },
+   {
+    "nature": "Custom Duty",
+    "amount_cr": 1.8547
+   },
+   {
+    "nature": "GST",
+    "amount_cr": 0.5433
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 0.2654
+   },
+   {
+    "nature": "Stamp Duty",
+    "amount_cr": 2.5834
+   },
+   {
+    "nature": "Labour Compensation",
+    "amount_cr": 0.06
+   },
+   {
+    "nature": "Custom Duty (Ahmedabad)",
+    "amount_cr": 1.9349
+   },
+   {
+    "nature": "Royalty on Rock Phosphate claimed by RSMM",
+    "amount_cr": 1.5836
+   },
+   {
+    "nature": "Income-Tax",
+    "amount_cr": 0.0114
+   },
+   {
+    "nature": "Income-Tax (TDS)",
+    "amount_cr": 0.254
+   },
+   {
+    "nature": "Labour Case",
+    "amount_cr": 0.0599
+   },
+   {
+    "nature": "UPSIDC",
+    "amount_cr": 2.5834
+   },
+   {
+    "nature": "Custom & Excise Duty",
+    "amount_cr": 3.7896
+   },
+   {
+    "nature": "Bank Guarantee (10% Secured with FDR)",
+    "amount_cr": 32.4138
+   }
+  ]
+ }
+}
