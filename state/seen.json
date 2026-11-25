@@ -2719,10 +2719,10 @@
 "74e9cc44-0eed-400e-ad2a-20eccd3b4c3a",
 "4ba535c1-0785-486c-bac7-9752938987b4",
 "883952b3-ff67-44dc-b28d-cfd783fe16cf",
-"a8a4c255-757d-4feb-aec2-1e7f79a61292"
+"a8a4c255-757d-4feb-aec2-1e7f79a61292",
+"4ae3334c-fa72-4eed-94f4-5f23cfa9b2e9"
 ],
 "posted": [
-"532726|Sep-26|consolidated",
 "544942|Jun-26|consolidated",
 "544945|Jun-26|consolidated",
 "544942|Sep-26|consolidated",
@@ -7721,47 +7721,10 @@
 "545017|Sep-26|standalone",
 "539175|Sep-26|standalone",
 "545010|Sep-26|consolidated",
-"545010|Sep-26|na"
+"545010|Sep-26|na",
+"530595|Sep-26|standalone"
 ],
 "pending": {
-"4ae3334c-fa72-4eed-94f4-5f23cfa9b2e9": {
-"rec": {
-"NEWSID": "4ae3334c-fa72-4eed-94f4-5f23cfa9b2e9",
-"SCRIP_CD": 530595,
-"XML_NAME": "ANN_530595_4AE3334C-FA72-4EED-94F4-5F23CFA9B2E9",
-"NEWSSUB": "TeleCanor Global Ltd - 530595 - Unaudited Financial Results For The Quarter And Half Year Ended 30Th Sep 2026",
-"DT_TM": "2026-11-25T16:01:50.197",
-"NEWS_DT": "2026-11-25T16:01:50.197",
-"CRITICALNEWS": "0",
-"ANNOUNCEMENT_TYPE": "A",
-"QUARTER_ID": null,
-"FILESTATUS": "N    ",
-"ATTACHMENTNAME": "7807e3d1-6fdc-4e07-82c7-ffc4a95a5049.pdf",
-"MORE": "",
-"HEADLINE": "Unaudited Financial Results for the Quarter and Half year Ended 30th Sep 2026",
-"CATEGORYNAME": "Result",
-"OLD": 1,
-"RN": 1,
-"PDFFLAG": 0,
-"NSURL": "https://www.bseindia.com/stock-share-price/telecanor-global-ltd/telecanor/530595/",
-"SLONGNAME": "TeleCanor Global Ltd",
-"AGENDA_ID": 30,
-"TotalPageCnt": 10,
-"News_submission_dt": "2026-11-25T16:01:50",
-"DissemDT": "2026-11-25T16:01:50.197",
-"TimeDiff": "00:00:00",
-"Fld_Attachsize": 12257187,
-"SUBCATNAME": "Financial Results",
-"BSENEWSID": null,
-"INVESTOR_PRESENTATION": null,
-"RECORDID": null,
-"DataInsDate": null,
-"AUDIO_VIDEO_FILE": null
-},
-"first": 1795611820.4878376,
-"last": 1795611820.4878376,
-"alerted": false
-},
 "ff543ec7-6c89-42fc-9368-0c888fa84938": {
 "rec": {
 "NEWSID": "ff543ec7-6c89-42fc-9368-0c888fa84938",
@@ -7797,7 +7760,7 @@
 "AUDIO_VIDEO_FILE": null
 },
 "first": 1795611820.4878376,
-"last": 1795611854.5779321,
+"last": 1795611905.5472422,
 "alerted": false
 }
 },
@@ -8436,7 +8399,9 @@
 "f4afbfd0-836b-435e-a47a-f6407fabec7b": 1,
 "4b67d0aa-0606-4137-a36e-e4c254b9b920": 1,
 "74e9cc44-0eed-400e-ad2a-20eccd3b4c3a": 1,
-"4ba535c1-0785-486c-bac7-9752938987b4": 1
+"4ba535c1-0785-486c-bac7-9752938987b4": 1,
+"ff543ec7-6c89-42fc-9368-0c888fa84938": 1,
+"4ae3334c-fa72-4eed-94f4-5f23cfa9b2e9": 1
 },
 "cons_expected": {
 "f93f32ae-9897-43c9-a43c-9bc0f33111aa": 1,
@@ -8957,10 +8922,6 @@
 "a8a4c255-757d-4feb-aec2-1e7f79a61292": 1
 },
 "lag": [
-[
-"Shipwaves Online Ltd",
-228
-],
 [
 "Morgan Ventures Ltd",
 228
@@ -10156,6 +10117,10 @@
 [
 "Wiscon Industries Ltd",
 45
+],
+[
+"TeleCanor Global Ltd",
+1
 ]
 ],
 "pdfposted": {
@@ -10168,16 +10133,19 @@
 "pat": -2.4320000000000004,
 "t": 1795508065.8430295,
 "last": 1795611846.7871265
+},
+"530595|Sep-26|standalone": {
+"code": "530595",
+"name": "TeleCanor Global Ltd",
+"basis": "standalone",
+"q": 131,
+"rev": 62.14,
+"pat": 12.933000000000002,
+"t": 1795611908.0298004,
+"last": 1795611914.8837264
 }
 },
 "half_q": {
-"8ddc01f7-21c6-42a1-b2e4-0b8ebf1d8755": {
-"NEWSID": "8ddc01f7-21c6-42a1-b2e4-0b8ebf1d8755",
-"SCRIP_CD": 544388,
-"SLONGNAME": "Identixweb Ltd",
-"ATTACHMENTNAME": "6d66d681-c59c-4ec4-afdf-52f95047f931.pdf",
-"NEWS_DT": "2026-11-13T12:52:12.543"
-},
 "5ab7acff-aa12-4dc0-9fd4-037ccce95b9d": {
 "NEWSID": "5ab7acff-aa12-4dc0-9fd4-037ccce95b9d",
 "SCRIP_CD": 544611,
@@ -11570,6 +11538,13 @@
 "SLONGNAME": "Wiscon Industries Ltd",
 "ATTACHMENTNAME": "5289b80c-8086-4d49-98c4-c9a589f17668.pdf",
 "NEWS_DT": "2026-11-24T23:42:09.583"
+},
+"ff543ec7-6c89-42fc-9368-0c888fa84938": {
+"NEWSID": "ff543ec7-6c89-42fc-9368-0c888fa84938",
+"SCRIP_CD": 543366,
+"SLONGNAME": "SBL Infratech Ltd",
+"ATTACHMENTNAME": "79636146-4ad6-4272-8e42-d09b8985c995.pdf",
+"NEWS_DT": "2026-11-25T18:31:13.56"
 }
 },
 "audit": [
