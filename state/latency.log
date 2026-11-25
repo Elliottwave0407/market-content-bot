@@ -1648,3 +1648,4 @@
 25 13:06:39 pdf pdf current col Pulsar International Ltd standalone ok=True/1: revenue=1800.93, other_income=None, total_income=1800.93, total_expenses=1789.26, finance_costs=None, depreciation=16.67, pbt=11.67, tax=None, pat=11.67, eps=0.0
 25 13:06:39 pdf pdf incomplete Pulsar International Ltd standalone: missing ['ebitda'] - not posting from PDF
 25 13:07:06 pdf rule reader Pulsar International Ltd: rule: column dates not found | ocr: rule: stan: does not reconcile [lakh] total_income=[1800.93, 2312.22, 797.87] total_expenses=[1789.26, 2319.51, 779.56] pbt=[11.67, -7.29, 18.31] pat=[11.67
+25 13:07:20 ready 512591|Sep-26|standalone kind=photo waited_min=0.0 tries=3 pdf_log=nim reader Pulsar International Ltd: ok (gemini: gemini skipped (repeat of same filing x2)) | pdf current col Pulsar International Ltd standalone ok=True/3: rev
