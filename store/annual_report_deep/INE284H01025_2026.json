@@ -1,0 +1,1057 @@
+{
+ "isin": "INE284H01025",
+ "name": "Dam Capital Advisors Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30316_DAMCAPITAL_2025_2026_A_4099222_13082026140737.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 796335,
+ "chunks": 20,
+ "chunks_ok": 19,
+ "facts": {
+  "business": {
+   "description": "DAM Capital Advisors Limited is a leading Indian full-service investment bank delivering an integrated suite of capital market solutions and advisory services spanning equity capital markets, institutional equities, mergers & acquisitions, private equity advisory and structured finance. The company operates an asset-light, debt-free model with minimal capital requirements supporting high operational efficiency, low capital risk and high return on equity through the cycle.",
+   "products": [
+    {
+     "name": "Merchant Banking",
+     "share_of_revenue_pct": null,
+     "note": "Spans equity capital markets products (IPOs, QIPs, Rights Issues, Offers for Sale, Preferential Issues, Buybacks, Open Offers, REITs), Mergers and Acquisitions, Private Equity Advisory and Structured Finance. Each mandate owned from origination through execution by senior team members."
+    },
+    {
+     "name": "Institutional Equities",
+     "share_of_revenue_pct": null,
+     "note": "Research-led broking platform organised across Sales, Sales Trading and Execution, and Corporate Access, serving clients across India, US, UK, Europe, Hong Kong, Singapore, Japan and Middle East. Competes on depth of research and quality of execution."
+    },
+    {
+     "name": "Investment Banking Division",
+     "share_of_revenue_pct": null,
+     "note": "Generated Rs 151.15 crore revenue in FY26; executed 19 ECM and advisory transactions raising over Rs 19,000 crore; mix: 11 IPOs, 3 QIPs, 1 Rights Issue, 1 Preferential Issue, 1 Buyback, 1 Offer for Sale, 1 M&A advisory"
+    },
+    {
+     "name": "Institutional Equities Division",
+     "share_of_revenue_pct": null,
+     "note": "FY26 revenue Rs 70.67 crore; active client count 298; top 10% clients contribute 40% revenue; research covers 187 stocks across 21 sectors with 30-member team"
+    },
+    {
+     "name": "Capital Market Advisory",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Stock Broking & related activities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Investment Banking Services",
+     "share_of_revenue_pct": 63.7,
+     "note": "NIC Code 66190"
+    },
+    {
+     "name": "Securities Brokerage Services",
+     "share_of_revenue_pct": 29.8,
+     "note": "NIC Code 66120"
+    },
+    {
+     "name": "Brokerage fees",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from contract with clients is recognised at point in time when performance obligation is satisfied (when the trade is executed). These include brokerage fees which is charged per transaction executed."
+    },
+    {
+     "name": "Issue management services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Mergers and acquisitions",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Debt syndication",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Corporate advisory services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Stock Broking",
+     "share_of_revenue_pct": null,
+     "note": "Segment operating revenue Rs 70.47 crore (2026), Rs 81.16 crore (2025)"
+    },
+    {
+     "name": "Investment banking",
+     "share_of_revenue_pct": null,
+     "note": "Segment operating revenue Rs 151.15 crore (2026), Rs 155.20 crore (2025)"
+    },
+    {
+     "name": "Interest Income",
+     "share_of_revenue_pct": 6.6,
+     "note": "Revenue from operations includes Interest Income of Rs 15.72 crore"
+    },
+    {
+     "name": "Fees and commission Income",
+     "share_of_revenue_pct": 93.4,
+     "note": "Revenue from operations includes Fees and commission Income of Rs 221.39 crore"
+    },
+    {
+     "name": "Investment banking advisory fees",
+     "share_of_revenue_pct": null,
+     "note": "issue management services, mergers and acquisitions, debt syndication, corporate advisory services"
+    },
+    {
+     "name": "Equity Research and Stock Broking Services",
+     "share_of_revenue_pct": null,
+     "note": "Mainly to institutional clients"
+    }
+   ],
+   "customers": [
+    "Corporates",
+    "Financial sponsors",
+    "Institutional investors",
+    "Family offices",
+    "Domestic and global institutional investors",
+    "Issuers (corporates) for ECM and advisory",
+    "Institutional equities clients across India, US, UK, Europe, Hong Kong, Singapore, Middle East",
+    "Promoters",
+    "Clients across India, US, UK, Europe, Hong Kong, Singapore, Middle East",
+    "Foreign Institutional Investors (FIIs)",
+    "Domestic Institutional Investors (DIIs)",
+    "Institutional clients"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "US",
+     "share_pct": null
+    },
+    {
+     "name": "UK",
+     "share_pct": null
+    },
+    {
+     "name": "Europe",
+     "share_pct": null
+    },
+    {
+     "name": "Japan",
+     "share_pct": null
+    },
+    {
+     "name": "Hong Kong",
+     "share_pct": null
+    },
+    {
+     "name": "Singapore",
+     "share_pct": null
+    },
+    {
+     "name": "Middle East",
+     "share_pct": null
+    },
+    {
+     "name": "United States",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    },
+    {
+     "name": "National (PAN India)",
+     "share_pct": null
+    },
+    {
+     "name": "International (7 countries)",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Capital markets",
+    "Investment banking",
+    "Institutional equities",
+    "Merchant banking",
+    "Institutional broking",
+    "M&A advisory",
+    "Private equity advisory",
+    "Structured finance",
+    "Financial services"
+   ],
+   "brands_or_certifications": [
+    "SEBI Reg. No. (Stock Broking \u2013 BSE Capital Markets / NSE Capital Markets / NSE Futures & Options): INZ000207137",
+    "SEBI Reg. No. (Research Analyst): INH000000131",
+    "SEBI Reg. No. (Merchant Banker): MB/INM000011336",
+    "BSE Enlistment No.: 5392",
+    "Merchant Banker registration",
+    "Stockbroker registration",
+    "Research Analyst registration",
+    "SEBI registered Category I Merchant Banker",
+    "Member of NSE and BSE",
+    "SEC registered broker-dealer (USA subsidiary)",
+    "FINRA member (USA subsidiary)",
+    "Member of National Stock Exchange of India Limited (NSE)",
+    "Member of BSE Limited",
+    "SEBI Category I Merchant Banker"
+   ],
+   "plants": [
+    {
+     "location": "Not Applicable",
+     "capacity": ""
+    },
+    {
+     "location": "Not Applicable",
+     "capacity": "Not Applicable"
+    }
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "India is entering the golden period for its capital markets. Strong domestic fundamentals, sustained public and private investment, favourable demographics, rising entrepreneurial ambition, changing ownership structures and the increasing financialisation of household savings are transforming the country's capital markets and economy. The opportunity before India's investment banking industry is not cyclical but structural, extending well beyond the current market environment and a few quarters.",
+    "period": "Multi-decadal horizon / FY27 onwards"
+   },
+   {
+    "statement": "We enter FY27 with 25 IPO mandates, including 13 where we are the left lead banker and 6 where we are the sole banker, alongside a healthy pipeline of Qualified Institutional Placements and advisory mandates.",
+    "period": "FY27"
+   },
+   {
+    "statement": "The Company increased focus on select, high-quality transactions and sharpened emphasis on fee-accretive mandates across ECM and advisory businesses in response to market volatility.",
+    "period": "FY26"
+   },
+   {
+    "statement": "As of March 31, 2026, secured mandates for 25 IPOs with 14 DRHPs filed with SEBI, representing 7.5% market share of filed IPOs; pipeline includes 13 assignments as left lead banker, of which 6 are sole mandates.",
+    "period": "As of March 31, 2026"
+   },
+   {
+    "statement": "Investment Banking will continue to remain the cornerstone of our franchise, complemented by our Institutional Equities and Advisory businesses, allowing us to support clients through their growth journey. At the same time, we are evaluating complementary fee-based businesses that can diversify our earnings profile and strengthen the resilience of our business.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Company expects these initiatives, coupled with improved market conditions and greater operating leverage, to result in enhanced productivity, revenue growth, and improved profitability in the coming financial years.",
+    "period": "coming financial years"
+   },
+   {
+    "statement": "Favourable developments in domestic and global capital markets, increased investor participation, growth in fund-raising activities, and an improvement in overall market sentiment are expected to positively impact the Company's Merchant Banking and Institutional Equities businesses, thereby supporting revenue growth and profitability.",
+    "period": "coming years"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "25 IPO mandates for FY27, including 13 as left lead banker and 6 as sole banker, alongside a healthy pipeline of Qualified Institutional Placements and advisory mandates.",
+    "value_cr": null
+   },
+   {
+    "statement": "Secured mandates for 25 IPOs, 14 DRHPs filed with SEBI (7.5% market share), pipeline includes 13 left lead banker assignments (6 sole mandates).",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Global headwinds, shifting trade dynamics and persistent market volatility",
+   "On-going war in West Asia and the Russia-Ukraine war",
+   "Spike in crude oil prices",
+   "Shifting global trade and tariff dynamics",
+   "AI-led disruption across global markets",
+   "Sustained foreign portfolio outflows",
+   "Investment banking is inherently cyclical over the short-term",
+   "Market Risk: Revenues linked to capital market activity, investor sentiment, downturns, macroeconomic conditions; volatility impacts performance.",
+   "Regulatory Risk: Highly regulated environment with evolving regulations governing capital markets, merchant banking, broking; changes may impact timelines, compliance, operating practices.",
+   "Reputation Risk: Client confidence fundamental; subject to inspections in India and USA; lapses in governance, confidentiality, reporting errors could adversely impact business.",
+   "Technology & Cybersecurity Risk: Digitalisation exposes to cybersecurity threats, data breaches, operational disruptions.",
+   "Human Capital Risk: Success depends on promoter, senior management, ability to attract, develop, retain skilled professionals in competitive talent market.",
+   "Risk Management Committee did not observe any risk factors that might endanger the Company's ability to continue as a going concern",
+   "The Company actively monitors the foreign exchange movements and takes cover for future/options as appropriate to reduce the risks associated with transactions in foreign currencies. The Company has not taken any exposure in commodity hedging activities.",
+   "Evolving regulations and enforcement practices",
+   "Data breaches, cyber threats, or regulatory lapses",
+   "Failure in talent management affecting ability to achieve objectives",
+   "Lack of effective business continuity planning",
+   "Market fluctuations adversely affecting business operations and financial performance",
+   "Volatile or declining market conditions negatively impacting investor confidence",
+   "Prolonged adverse market conditions leading to reduced revenue generation",
+   "Credit risk from trade and other receivables",
+   "Liquidity risk - risk that the Company will not be able to meet its financial obligations as they become due",
+   "Market risk - risk of loss of future earnings, volatility of future cash flows and fluctuations in fair value of financial assets",
+   "Interest rate risk - risk that the fair value of a financial instrument will fluctuate because of changes in market interest rates",
+   "Foreign currency risk from USD, GBP, EUR, SGD transactions with no hedging activity",
+   "Price risk from quoted equity instruments classified as FVTOCI (exposure Nil as at March 31, 2026)",
+   "Implementation of new Labour Codes (Code on Wages 2019, Industrial Relations Code 2020, Code on Social Security 2020, Occupational Safety Health and Working Conditions Code 2020) with impact recognized as past service cost of \u20b90.63 crores for gratuity",
+   "Audit trail (edit log) facility was not enabled in one accounting software at database level until 15 February 2026 and in other software until 19 December 2025",
+   "Market risk",
+   "Financial risk",
+   "Credit risk on financial assets",
+   "Liquidity risk",
+   "Market risk including interest rate risk, foreign currency risk, and price risk",
+   "Foreign currency risk from USD, GBP, EUR, SGD exposure with no hedging activity",
+   "Impact of new Labour Codes on employee benefits",
+   "Global economic factors that have an impact on the Company's capital market operations, including its Merchant Banking and Institutional Equities businesses."
+  ],
+  "subsidiaries": [
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary incorporated in New York, USA, registered as a Broker-Dealer with SEC and member of FINRA and SIPC. Clients transact on delivery versus payment basis with settlement facilitated by the Company in India for securities traded in Indian stock markets."
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary incorporated in 2024, aims to provide investment advisory services, financial planning, portfolio management, and financial consultancy to various clients including offshore funds and non-residents, and to offer a wide range of financial advisory and management services, including those for mutual funds, venture capital, and other investment vehicles."
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary Company"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary Company"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Asset management and Investment advisory (subject to regulatory approval), incorporated July 08, 2024"
+   },
+   {
+    "name": "DAM Capital (USA), Inc.",
+    "holding_pct": 100,
+    "business": "Broker-dealer registered with SEC and member of FINRA in USA"
+   },
+   {
+    "name": "IDFC Securities Singapore Pte. Ltd",
+    "holding_pct": 100,
+    "business": "Dissolved and liquidated on November 16, 2021"
+   },
+   {
+    "name": "DAM Capital Asset Management Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Asset Management"
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Capital advisory services in USA"
+   },
+   {
+    "name": "IDFC Securities Singapore Pte Ltd",
+    "holding_pct": 100,
+    "business": "Securities (dissolved and liquidated on November 16, 2021)"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Proposed to engage in asset management and investment advisory subject to regulatory approval; incorporated July 8, 2024"
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Broker-dealer registered with SEC and member of FINRA in USA"
+   },
+   {
+    "name": "IDFC Securities Singapore Pte. Ltd",
+    "holding_pct": 100,
+    "business": "Dissolved and liquidated on November 16, 2021; application filed for UDIN cancellation"
+   },
+   {
+    "name": "DAM Capital (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Subsidiary providing professional services; turnover \u20b91.22 crore, profit after tax \u20b90.18 crore for year ended March 31, 2026"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary incorporated July 8, 2024; turnover nil, loss after tax \u20b90.02 crore for year ended March 31, 2026"
+   },
+   {
+    "name": "DAM Asset Management Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "Company operates a debt-free model and remains debt free with net cash of \u20b9311 crore as of FY26."
+   },
+   {
+    "lender_or_type": "Banks (working capital limits secured on Fixed Deposit)",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of Rs 5 crore; not required to file quarterly returns"
+   },
+   {
+    "lender_or_type": "Borrowings (Other than Debt Securities)",
+    "amount_cr": 3.32,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Term loans from banks (Vehicle loan from financial institutions)",
+    "amount_cr": 3.32,
+    "note": "Secured; all borrowings issued in India; no default in repayment of principal and interest during the year"
+   },
+   {
+    "lender_or_type": "Other Loans",
+    "amount_cr": 3.32,
+    "note": "Interest rate 7.25%-9.90%; Within one year Rs 1.26 crore; Later than one year and not later than five years Rs 2.05 crore"
+   },
+   {
+    "lender_or_type": "Bank Overdraft",
+    "amount_cr": null,
+    "note": "Taken in the normal course of broking business"
+   },
+   {
+    "lender_or_type": "Bank guarantee facilities",
+    "amount_cr": null,
+    "note": "Availed from nationalised/scheduled banks and submitted to BSE/NSE as margin deposit"
+   },
+   {
+    "lender_or_type": "Vehicle loan from financial institutions",
+    "amount_cr": 3.32,
+    "note": "Secured term loans from banks"
+   },
+   {
+    "lender_or_type": "Term loan from banks",
+    "amount_cr": 3.32,
+    "note": "Interest rate 7.25%-9.90%; within one year Rs 1.26 crore; later than one year and not later than five years Rs 2.05 crore; all borrowings issued in India; no default in repayment of principal and interest during the year"
+   },
+   {
+    "lender_or_type": "Bank Overdraft",
+    "amount_cr": null,
+    "note": "Taken in normal course of broking business; interest expense Rs 0.18 crore (2026), Rs 0.12 crore (2025)"
+   },
+   {
+    "lender_or_type": "Other Loans",
+    "amount_cr": null,
+    "note": "Interest expense Rs 0.33 crore (2026), Rs 0.42 crore (2025)"
+   },
+   {
+    "lender_or_type": "Borrowings (Other than Debt Securities)",
+    "amount_cr": 3.32,
+    "note": "As at March 31, 2026: Less than 12 months \u20b91.26 crore, More than 12 months \u20b92.06 crore"
+   },
+   {
+    "lender_or_type": "Company to ESOP Trust",
+    "amount_cr": null,
+    "note": "Loan amount shall not exceed 5% of the paid-up capital and free reserves; interest free; tenure based on term of the Scheme; repayable from realization of proceeds of exercise/permitted sale/transfer of Shares and any other eventual income of the Trust."
+   }
+  ],
+  "auditor": {
+   "name": "M/s. KKC & Associates LLP",
+   "opinion": "Unmodified opinion on standalone and consolidated financial statements for FY ended March 31, 2026; no qualifications, reservations, adverse remarks; no fraud reported under Section 143(12).",
+   "qualifications_or_emphasis": [
+    "Secretarial Audit: Explanatory statement of 32nd AGM for revision in remuneration of Whole Time Director missed certain disclosures as per Schedule V of the Act",
+    "Audit trail (edit log) facility was not enabled throughout the year in all accounting software; enabled in one software at database level from 15 February 2026 and in other software from 19 December 2025",
+    "No funds raised on short-term basis have been used for long-term purposes",
+    "No whistle blower complaints received during the year",
+    "Company has not taken any funds from any entity or person on account of or to meet the obligations of its subsidiaries",
+    "Transactions with related parties are in compliance with Sections 177 and 188 of the Act",
+    "Company has an internal audit system commensurate with the size and nature of its business",
+    "Company has not entered into any non-cash transactions with directors or persons connected with directors",
+    "Company is not required to be registered under Section 45-IA of RBI Act, 1934",
+    "Company has not incurred any cash losses in the financial year and immediately preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "No material uncertainty exists that Company is not capable of meeting its liabilities",
+    "No unspent amount under Section 135(5) of the Act",
+    "Modification relating to maintenance of accounts and reporting under Rule 11(g) of Companies (Audit and Auditors) Rules, 2014",
+    "Audit trail (edit log) facility not enabled in one accounting software at database level until 15 February 2026 and in other software until 19 December 2025; no tampering detected where enabled",
+    "Audit fees for the year ended March 31, 2025 exclude fees paid to statutory auditor for IPO related expenses which are recoverable by the Group from the selling shareholders in proportion to the shares offered to the public in offering."
+   ],
+   "key_audit_matters": [
+    "No key audit matters to be communicated in the report"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Jateen Madhukar Doshi completed tenure as Whole Time Director on June 9, 2026, ceased to be Director and KMP; continues as Head of Institutional Equities and Business Development.",
+    "Board approved re-appointment of Mr. Dharmesh Anil Mehta as Managing Director & CEO for 5 years from June 10, 2026, subject to shareholder approval.",
+    "Board approved appointment of Mr. Dhvanil Sanjiv Dharia as Additional Director and Whole Time Director for 5 years from August 11, 2026, subject to exchange and shareholder approval.",
+    "Mr. Dharmesh Anil Mehta liable to retire by rotation at ensuing AGM, eligible for re-appointment.",
+    "Ms. Nithya Easwaran re-designated from Non-Executive Director to Independent Director w.e.f April 1, 2025",
+    "Mr. Dharmesh Anil Mehta re-appointed as Managing Director & CEO w.e.f June 10, 2026 for 5 years",
+    "Mr. Jateen Madhukar Doshi ceased to be Director and KMP w.e.f close of business hours on June 9, 2026",
+    "Mr. Dhvanil Dharia appointed as Additional Director and WTD w.e.f August 11, 2026 for 5 years",
+    "The designation of Ms. Nithya Easwaran was re-designated/appointed as Independent Woman Director on the Board of the Company w.e.f April 1, 2025.",
+    "Mr. Dharmesh Anil Mehta was re-appointed as Managing Director & Chief Executive Officer w.e.f June 10, 2026, till June 9, 2031 (both days inclusive), for a term of 5 (Five) years, subject to the approval of the members of the Company.",
+    "Upon completion of his term as WTD, Mr. Doshi ceased to be a Director and Key Managerial Personnel of the Company w.e.f the close of business hours on June 9, 2026.",
+    "Appointment of Ms. Nithya Easwaran (DIN: 03605392) as Independent Woman Director of the Company.",
+    "Ms. Nithya Easwaran appointed as Independent Director w.e.f. April 1, 2025, Non-Executive Director w.e.f. August 19, 2024, Nominee Director upto August 18, 2024",
+    "Mr. Lalit Ratadia ceased as Independent Director w.e.f. August 10, 2024",
+    "Mr. M V Nair appointed as Independent Director w.e.f. August 19, 2024",
+    "Mr. Balram Singh Yadav appointed as Independent Director w.e.f. August 19, 2024",
+    "Mr. N Srinivasan appointed as Independent Director w.e.f. August 19, 2024",
+    "Mr. Rajesh Tekadiwala ceased as Company Secretary w.e.f. March 16, 2025",
+    "Ms. Sonal Katariya appointed as Company Secretary w.e.f. March 17, 2025",
+    "Mr. Narotam S Sekhsaria ceased as individual owning directly or indirectly interest in voting power w.e.f. December 24, 2024",
+    "Ms. Nithya Easwaran appointed as Independent Director w.e.f. April 1, 2025 (Non-Executive Director w.e.f. August 19, 2024, Nominee Director upto August 18, 2024)",
+    "Mr. Lalit Ratadia ceased as Independent Director upto August 10, 2024",
+    "Mr. Rajesh Tekadiwala ceased as Company Secretary upto March 16, 2025",
+    "Mr. Dhvanil Sanjiv Dharia appointed as Additional Director w.e.f. August 11, 2026",
+    "Mr. Dharmesh Anil Mehta re-appointed as MD & CEO for 5 years effective June 10, 2026 to June 09, 2031",
+    "Mr. Dhvanil Sanjiv Dharia appointed as Additional Director and Whole Time Director for 5 years effective August 11, 2026 to August 10, 2031",
+    "Appointment of Dhvanil Sanjiv Dharia as Director and Whole Time Director w.e.f. August 11, 2026",
+    "Re-appointment of Dharmesh Anil Mehta as Managing Director & Chief Executive Officer"
+   ],
+   "auditor_change": "No change; M/s. KKC & Associates LLP reappointed for second term from conclusion of 32nd AGM (June 27, 2025) until conclusion of 37th AGM (2030).",
+   "top_shareholders": [
+    {
+     "name": "Dharmesh Anil Mehta",
+     "pct": null
+    },
+    {
+     "name": "Mr. Jateen Madhukar Doshi",
+     "pct": null
+    },
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 40.0
+    },
+    {
+     "name": "Individuals",
+     "pct": 39.65
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 6.07
+    },
+    {
+     "name": "Alternative Investment Funds",
+     "pct": 5.1
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 1.87
+    },
+    {
+     "name": "Foreign Companies",
+     "pct": 1.42
+    },
+    {
+     "name": "Trusts/LLP/HUF/Clearing Member",
+     "pct": 2.6
+    },
+    {
+     "name": "Foreign Portfolio Investors (Category I)",
+     "pct": 1.97
+    },
+    {
+     "name": "Foreign Portfolio Investors (Category II)",
+     "pct": 0.22
+    },
+    {
+     "name": "Mutual Funds",
+     "pct": 1.09
+    },
+    {
+     "name": "Dharmesh Anil Mehta",
+     "pct": 20.38
+    },
+    {
+     "name": "Sonali Dharmesh Mehta jointly with Dharmesh Anil Mehta",
+     "pct": 8.92
+    },
+    {
+     "name": "Boombucket Advisors Private Limited",
+     "pct": 10.71
+    },
+    {
+     "name": "Mr. Narotam S Sekhsaria",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 40.0
+  },
+  "people": {
+   "employees": 130,
+   "key_management": [
+    {
+     "name": "Mr. Dharmesh Mehta",
+     "role": "Managing Director & CEO"
+    },
+    {
+     "name": "Mr. Hitesh Desai",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sonal Katariya",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Dharmesh Anil Mehta",
+     "role": "Managing Director & Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Jateen Madhukar Doshi",
+     "role": "Whole Time Director (ceased June 9, 2026); continues as Head of Institutional Equities and Business Development"
+    },
+    {
+     "name": "Mr. Hitesh Mahendrakumar Desai",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sonal Dhanji Katariya",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Dharmesh Anil Mehta",
+     "role": "MD & CEO"
+    },
+    {
+     "name": "Jateen Madhukar Doshi",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Hitesh Desai",
+     "role": "CFO"
+    },
+    {
+     "name": "Sonal Katariya",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Vishwanathan Mavila Nair",
+     "role": "Chairman and Independent Director"
+    },
+    {
+     "name": "Rajendra Prabhakar Chitale",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Natarajan Srinivasan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Balram Singh Yadav",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Nithya Easwaran",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Dharmesh Anil Mehta",
+     "role": "Managing Director & Chief Executive Officer (Executive Director)"
+    },
+    {
+     "name": "Mr. Jateen Madhukar Doshi",
+     "role": "Whole Time Director (Executive Director)"
+    },
+    {
+     "name": "Ms. Sonal Katariya",
+     "role": "Compliance Officer and Company Secretary"
+    },
+    {
+     "name": "Mr. Jateen Madhukar Doshi",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Nitin Ajitsinh Kapadia",
+     "role": "Managing Director- Governance & Strategy"
+    },
+    {
+     "name": "Mr. Vishwanathan Mavila Nair",
+     "role": "Chairperson & Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Rajendra Prabhakar Chitale",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Natarajan Srinivasan",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Balram Singh Yadav",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Nithya Easwaran",
+     "role": "Non-Executive Independent Women Director"
+    },
+    {
+     "name": "Mr. Dharmesh Anil Mehta",
+     "role": "Managing Director and Chief Executive Officer"
+    },
+    {
+     "name": "Dharmesh Mehta",
+     "role": "Managing Director and Chief Executive Officer (DIN: 06734366)"
+    },
+    {
+     "name": "Jateen Doshi",
+     "role": "Director (DIN: 08476768)"
+    },
+    {
+     "name": "Hitesh Desai",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Dharmesh Mehta",
+     "role": "Managing Director and Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Jateen Doshi",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Ms. Sonal Katariya",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Sonal Katariya",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Dharmesh Anil Mehta",
+     "role": "Managing Director and Chief Executive Officer"
+    },
+    {
+     "name": "Dhvanil Sanjiv Dharia",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Sonal Katariya",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Dharmesh Anil Mehta",
+     "role": "Managing Director and Chief Executive Officer (MD & CEO), Promoter"
+    },
+    {
+     "name": "Mr. Dhvanil Sanjiv Dharia",
+     "role": "Whole Time Director (WTD), Key Managerial Personnel"
+    },
+    {
+     "name": "Dharmesh Anil Mehta",
+     "role": "Managing Director & Chief Executive Officer (Promoter)"
+    },
+    {
+     "name": "Dhvanil Sanjiv Dharia",
+     "role": "Director and Whole Time Director (Senior Management)"
+    }
+   ]
+  },
+  "other_notable": [
+   "Total operating income for FY26: \u20b9237 crore",
+   "Profit after tax for FY26: \u20b973 crore",
+   "Net cash on balance sheet FY26: \u20b9311 crore (42% CAGR from FY22)",
+   "Book value per share FY26: \u20b947 (39% CAGR from FY22)",
+   "Revenue CAGR (FY22-FY26): 26%",
+   "PAT CAGR (FY22-FY26): 35%",
+   "ROE FY26: 24.4% (Not adjusted for cash)",
+   "Market share in number of IPOs executed FY26: 10%",
+   "Active client base grew to 298 from 277 in FY26",
+   "\u20b91,60,000 crore raised from ECM transactions since 2019 (41 IPOs incl. REIT, 22 QIPs, 9 Buybacks, 8 Preferential Issues, 7 OFS, 5 Rights Issues, 4 Open Offers), plus 27 advisory transactions",
+   "96 ECM transactions since 2019",
+   "Institutional Equities: 30 research team, 298 active clients, 21 sectors covered, 10 lead analysts",
+   "Domestic offices: Mumbai (headquarters), Delhi, Ahmedabad (newly established)",
+   "CSR focus areas: Education & Digital Literacy, Nutrition & Food Security, Animal Welfare",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "CIN: L99999MH1993PLC071865",
+   "33rd AGM Date: September 8th 2026",
+   "Company listed on Indian stock exchanges in 2024",
+   "Acquired by Mr. Dharmesh Mehta in 2019-2020, renamed to DAM Capital",
+   "Formerly IDFC Securities (2006-2019), SSKI (1993-2006)",
+   "Standalone Total Income FY26: Rs 236.94 crore (FY25: Rs 249.99 crore); Standalone PAT FY26: Rs 72.51 crore (FY25: Rs 103.64 crore).",
+   "Consolidated Total Income FY26: Rs 237.14 crore (FY25: Rs 250.21 crore); Consolidated PAT FY26: Rs 72.69 crore (FY25: Rs 103.78 crore).",
+   "Reserves and Surplus as on March 31, 2026: Standalone Rs 314.07 crore, Consolidated Rs 317.77 crore.",
+   "Final dividend paid in FY26: Rs 1 per equity share (face value Rs 2); recommended final dividend for FY26: Rs 1 per share (50% of face value), aggregating Rs 7.07 crore, subject to AGM approval.",
+   "No unpaid/unclaimed dividend required to be transferred to IEPF as of March 31, 2026.",
+   "IDFC Securities Singapore Pte. Ltd. dissolved and liquidated on November 16, 2021; application filed with RBI for UDIN cancellation.",
+   "DAM ESOP Scheme 2024 ratified and amended by Nomination and Remuneration Committee and Board on May 22, 2026, subject to shareholder approval; compliant with SEBI SBEB & SE Regulations.",
+   "Internal Auditors for FY26: M/s. PricewaterhouseCoopers Services LLP appointed May 14, 2025.",
+   "Secretarial Auditor: M/s. Aashish K. Bhatt & Associates appointed for 5 years from FY 2025-26 to 2029-30; report has no material qualification/adverse remarks except observations noted.",
+   "CSR Committee constituted; CSR report annexed as Annexure B; CFO certified funds disbursed per annual action plan.",
+   "Risk Management Committee constituted per Regulation 21 SEBI Listing Regulations; majority members are Directors; authorized to monitor/review risk assessment, mitigation, management plans.",
+   "Board evaluation conducted for FY26 per SEBI Master Circular Nov 11, 2024; Independent Directors met March 27, 2026, expressed satisfaction with Board/Committee functioning.",
+   "Company has 2 subsidiaries as of March 31, 2026; no associate or joint venture; no material subsidiary.",
+   "Issued, subscribed, paid-up equity share capital as of March 31, 2026: Rs 14,13,72,000 (7,06,86,000 shares of Rs 2 face value); no change during year.",
+   "No deposits accepted from public; no sweat equity or differential voting rights shares issued.",
+   "Compliance with Secretarial Standards confirmed.",
+   "Cautionary statement: Forward-looking statements based on current forecasts/assumptions; actual results may vary due to uncertainties including global supply/demand, macroeconomic policies, regulatory impacts, pricing strategies.",
+   "CSR spending for FY 2025-26: Required Rs 1,62,86,431, Actual Rs 1,62,87,220, Excess Rs 789",
+   "Average net profit for CSR calculation: Rs 81,43,21,527",
+   "Internal Financial Controls adequate and operating effectively per Statutory Auditors",
+   "No significant/material orders by regulators/courts impacting going concern",
+   "No complaints received under Sexual Harassment Policy during the year",
+   "Company complied with MSME Act half-yearly return filing",
+   "Cost records and cost audit not applicable",
+   "BRSR report forms part of Annual Report",
+   "Board met 5 times during FY 2025-26",
+   "No R&D expenditure incurred during the year",
+   "Technology absorption: Company adopts best-in-class technology, accelerating digital transformation, strengthening IT disaster measures",
+   "Energy conservation not applicable as financial services company",
+   "Foreign exchange earnings/outgo: Refer Notes to Accounts of Standalone Financial Statements",
+   "Mr. Jateen Madhukar Doshi holds 920 equity shares.",
+   "Details of familiarization programme for Independent Directors are available on the Company's website at https://www.damcapital.in/static/investor-relation.aspx?section=policies.",
+   "Ms. Sonal Katariya (Membership No. A44446) serves as the Compliance Officer and Company Secretary with effect from March 17, 2025.",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly known as Link Intime India Private Limited).",
+   "Investor complaints during FY 2025-26: Pending as on April 1, 2025: 0; Received during the year: 12; Resolved during the year: 12; Pending as on March 31, 2026: 0.",
+   "CSR policy includes list of CSR projects/programmes approved to be undertaken in areas specified in Schedule VII of the Companies Act and manner of execution as per rules notified under the Act.",
+   "Nomination and Remuneration Policy provides framework for identification, appointment and remuneration of Directors, Key Managerial Personnel and Senior Management Personnel.",
+   "Remuneration to Executive Directors for FY2025-26: Mr. Dharmesh Anil Mehta - Total Rs. 8,00,00,000 (Salary Rs. 7,99,60,400, Variable Pay Rs. 0, Perquisites and allowances Rs. 39,600, Stock Options NIL); Mr. Jateen Madhukar Doshi - Total Rs. 2,26,20,800 (Salary Rs. 56,00,000, Variable Pay Rs. 1,01,20,800, Perquisites and allowances Rs. 69,00,000, Stock Options NIL).",
+   "Non-Executive Independent Directors remuneration: Sitting Fees Rs.1,00,000 per meeting for Board and Audit Committee, Rs.25,000 per meeting for other Committees; Commission as approved by Members at EGM held on August 22, 2024.",
+   "Total fees to Statutory Auditor for FY2025-26: Statutory Audit Fees, Certification & Other Services Rs. 45,00,000; Reimbursement of out-of-pocket expenses Rs. 64,229."
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (details in Notes to Accounts)",
+    "nature": "All contracts/arrangements/transactions in ordinary course of business and on arm's length basis; omnibus approval obtained yearly for repetitive transactions; details placed before Audit Committee and Board quarterly.",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments",
+    "amount_cr": 100000
+   },
+   {
+    "party": "DAM Capital (USA) INC.",
+    "nature": "Professional fees",
+    "amount_cr": 1.09
+   },
+   {
+    "party": "DAM Asset Management Limited",
+    "nature": "Investment in Subsidiaries",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "DAM Asset Management Limited",
+    "nature": "Reimbursement of expenses",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Mr. Dharmesh Mehta",
+    "nature": "Employee benefit expense",
+    "amount_cr": 7.42
+   },
+   {
+    "party": "Mr. Jateen Doshi",
+    "nature": "Employee benefit expense",
+    "amount_cr": 2.45
+   },
+   {
+    "party": "Mr. Hitesh Desai",
+    "nature": "Employee benefit expense",
+    "amount_cr": 1.06
+   },
+   {
+    "party": "Mr. Rajesh Tekadiwala",
+    "nature": "Employee benefit expense",
+    "amount_cr": 0.46
+   },
+   {
+    "party": "Ms. Sonal Katariya",
+    "nature": "Employee benefit expense",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Mr. Rajendra Chitale",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Ms. Nithya Easwaran",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Mr. Lalit Ratadia",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. M V Nair",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. Balram Singh Yadav",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. N Srinivasan",
+    "nature": "Directors' sitting fees paid",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "Mr. Narotam S Sekhsaria",
+    "nature": "Fees and commission Income received",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. Dharmesh Mehta",
+    "nature": "Employee benefit expense (Managing Director & CEO)",
+    "amount_cr": 7.42
+   },
+   {
+    "party": "Mr. Jateen Doshi",
+    "nature": "Employee benefit expense (Whole Time Director)",
+    "amount_cr": 2.45
+   },
+   {
+    "party": "Mr. Hitesh Desai",
+    "nature": "Employee benefit expense (Chief Financial Officer)",
+    "amount_cr": 1.06
+   },
+   {
+    "party": "Ms. Sonal Katariya",
+    "nature": "Employee benefit expense (Company Secretary w.e.f. March 17, 2025)",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Mr. Rajesh Tekadiwala",
+    "nature": "Employee benefit expense (Company Secretary upto March 16, 2025)",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Rajendra Chitale",
+    "nature": "Directors' sitting fees paid (Independent Director)",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Ms. Nithya Easwaran",
+    "nature": "Directors' sitting fees paid (Independent Director)",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Mr. M V Nair",
+    "nature": "Directors' sitting fees paid (Independent Director w.e.f. August 19, 2024)",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. Balram Singh Yadav",
+    "nature": "Directors' sitting fees paid (Independent Director w.e.f. August 19, 2024)",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. N Srinivasan",
+    "nature": "Directors' sitting fees paid (Independent Director w.e.f. August 19, 2024)",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "Mr. Narotam S Sekhsaria",
+    "nature": "Fees and commission (Individual owning significant influence upto December 24, 2024)",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "DAM Capital (USA) INC.",
+    "nature": "Professional fees",
+    "amount_cr": 1.02
+   },
+   {
+    "party": "DAM Capital (USA) INC.",
+    "nature": "Payable for expenses",
+    "amount_cr": 0.21
+   },
+   {
+    "party": "DAM Capital (USA) INC.",
+    "nature": "Investment in Subsidiaries",
+    "amount_cr": 2.77
+   },
+   {
+    "party": "DAM Asset Management Limited",
+    "nature": "Other receivables",
+    "amount_cr": 0.14
+   }
+  ],
+  "dividend_per_share": 1,
+  "litigation": [
+   "Show Cause Notice received from SEBI w.r.t Vishvaraj IPO, which was duly disposed off",
+   "Company has neither filed any application nor any proceeding pending under Insolvency and Bankruptcy Code, 2016",
+   "Income tax disputes for A.Y. 2007-08 (Rs 0.01 cr), A.Y. 2010-11 (Rs 0.03 cr), A.Y. 2016-17 (Rs 0.13 cr), A.Y. 2020-21 (Rs 0.61 cr), A.Y. 2024-25 (Rs 0.19 cr) pending before Income Tax Assessing Officer",
+   "Income Tax matters under appeal - Rs 0.96 crore",
+   "No proceedings initiated and pending against the Company for holding any Benami properties under the Benami Transactions (Prohibitions) Act, 1988",
+   "Income Tax matters under appeal - Rs 0.96 crore (2026 and 2025)",
+   "No proceedings initiated or pending for holding Benami properties under Benami Transactions (Prohibitions) Act, 1988",
+   "Not declared wilful defaulter by any bank, financial institution, government or government authority",
+   "No undisclosed transactions/income for current financial year",
+   "No unrecorded transactions surrendered/disclosed as income in tax assessments under Income Tax Act, 1961",
+   "No transactions with companies struck off under Companies Act",
+   "No funds advanced/loaned/invested to intermediaries for ultimate beneficiaries",
+   "No funds received from funding parties for lending/investing to ultimate beneficiaries"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax, Interest and Penalty",
+    "amount_cr": 0.01
+   },
+   {
+    "nature": "Income Tax, Interest and Penalty",
+    "amount_cr": 0.03
+   },
+   {
+    "nature": "Income Tax, Interest and Penalty",
+    "amount_cr": 0.13
+   },
+   {
+    "nature": "Income Tax, Interest and Penalty",
+    "amount_cr": 0.61
+   },
+   {
+    "nature": "Income Tax, Interest and Penalty",
+    "amount_cr": 0.19
+   },
+   {
+    "nature": "Income Tax matters under appeal",
+    "amount_cr": 0.96
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Tangible assets",
+    "amount_cr": 0.6,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Intangible assets",
+    "amount_cr": 0.1,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Tangible assets",
+    "amount_cr": 0.6,
+    "timeline": "March 31, 2026"
+   },
+   {
+    "item": "Intangible assets",
+    "amount_cr": 0.1,
+    "timeline": "March 31, 2026"
+   }
+  ]
+ }
+}

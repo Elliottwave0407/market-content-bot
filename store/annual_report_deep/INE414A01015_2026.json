@@ -1,0 +1,821 @@
+{
+ "isin": "INE414A01015",
+ "name": "Madras Fertilizers Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31006_MADRASFERT_2025_2026_A_2891616_01092026172009.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 497955,
+ "chunks": 13,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Madras Fertilizers Limited is a Government of India Undertaking engaged in the fertilizer business.",
+   "plants": [
+    {
+     "location": "Manali, Chennai",
+     "capacity": ""
+    },
+    {
+     "location": "Not explicitly stated in text, likely Manali, Chennai",
+     "capacity": "Ammonia: 307,500 MT target; Urea: 486,750 MT target"
+    },
+    {
+     "location": "Manali, Chennai 600 068",
+     "capacity": ""
+    },
+    {
+     "location": "Manali, Chennai",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Manali",
+     "capacity": ""
+    },
+    {
+     "location": "Kondapalli, AP",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Ammonia",
+     "share_of_revenue_pct": null,
+     "note": "Produced 2,99,868 MT in 2025-26 at 97.5% capacity utilization"
+    },
+    {
+     "name": "Urea",
+     "share_of_revenue_pct": null,
+     "note": "Produced 4,90,686 MT in 2025-26 at 100.8% capacity utilization"
+    },
+    {
+     "name": "Organic Fertilizers (OM, City Compost, FOM, PROM, PDM)",
+     "share_of_revenue_pct": null,
+     "note": "All-time high volume sale of 42,065 MTs in 2025-26"
+    },
+    {
+     "name": "Anhydrous Ammonia (Trading)",
+     "share_of_revenue_pct": null,
+     "note": "Sold 23,855 MTs in 2025-26, increase of 12.47% over previous year"
+    },
+    {
+     "name": "Organic Fertilizers (Bio-fertilizers)",
+     "share_of_revenue_pct": null,
+     "note": "Marketed under brand VIJAY"
+    },
+    {
+     "name": "NPK",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Organic Fertilizers (FOM, PROM, PDM, City Compost)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Complex Fertilizers",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Bio-fertilizers",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Agro Chemicals, Organic Manure and City Compost (traded)",
+     "share_of_revenue_pct": null,
+     "note": "Sold under brand name 'Vijay'"
+    },
+    {
+     "name": "Phosphatic and Potassic (P&K) Fertilizers",
+     "share_of_revenue_pct": null,
+     "note": "Traded; subsidy governed by Nutrient Based Subsidy (NBS) policy 2010"
+    },
+    {
+     "name": "City Compost",
+     "share_of_revenue_pct": null,
+     "note": "Subsidy recognized based on rates notified by Government of India"
+    },
+    {
+     "name": "Neem Coated Urea",
+     "share_of_revenue_pct": null,
+     "note": "Subsidy eligible for Neem-coated urea arrived at in accordance with policy parameters framed by GOI; rate adopted for accounting subsidy claim amounted to Rs 38,360 per MT"
+    },
+    {
+     "name": "Bio fertilizers",
+     "share_of_revenue_pct": null,
+     "note": "Part of other activities segment"
+    }
+   ],
+   "customers": [
+    "Farmers",
+    "Dealers/Retailers",
+    "Wholesalers",
+    "Dealers",
+    "Dealers (5384 total: 3492 General, 1407 SC, 220 ST, 32 Unemployed, 5 Ex-Servicemen, 0 Physically Handicapped, 8 Cooperative, 6 Bulk Buyer, 211 Others, 2 Institution Govt, 1 Institution Pvt)",
+    "Farmers in Southern States of India (5 States and 2 Union Territories)",
+    "Farmers across Southern states",
+    "Government of India (subsidy receivable)",
+    "dealers (sale of manufactured and traded fertilizers)",
+    "Government of India (subsidy)",
+    "Domestic farmers/dealers"
+   ],
+   "geographies": [
+    {
+     "name": "South India",
+     "share_pct": null
+    },
+    {
+     "name": "Puducherry, Union territory and Villupuram",
+     "share_pct": null
+    },
+    {
+     "name": "Salem District",
+     "share_pct": null
+    },
+    {
+     "name": "Southern India (Tamil Nadu, Puducherry, Kerala, Telangana, Andhra Pradesh, Karnataka)",
+     "share_pct": null
+    },
+    {
+     "name": "National (India)",
+     "share_pct": 100
+    },
+    {
+     "name": "Southern India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "competitors_named": [
+    "Chennai Petroleum Corporation Limited (CPCL)"
+   ],
+   "end_markets": [
+    "Agriculture",
+    "Fertilizer retail",
+    "Fertilizers"
+   ],
+   "brands_or_certifications": [
+    "PMKSK (Pradhan Mantri Kisan Samriddhi Kendra)",
+    "PM-PRANAM",
+    "DBT (Direct Benefit Transfer) compliant",
+    "VIJAY",
+    "EPR certificate for Plastic packaging under Brand Owner category",
+    "PM PRANAM scheme participation",
+    "Vijay",
+    "Neem coated urea"
+   ],
+   "raw_materials": [
+    "RLNG",
+    "Furnace Oil",
+    "Naphtha",
+    "RLNG (feedstock and fuel for boilers)",
+    "Fuel oil (previously used)",
+    "Feedstock (converted to LNG)",
+    "Raw materials for urea production",
+    "Packing materials",
+    "Catalyst",
+    "FO",
+    "HSD",
+    "LUBE",
+    "Gas",
+    "Ammonia"
+   ]
+  },
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Principal Bankers"
+   },
+   {
+    "lender_or_type": "Board authorized borrowing limit",
+    "amount_cr": 747.8,
+    "note": "Special resolution passed in AGM on 25.09.2023 to authorize Board to borrow up to Rs. 747.80 Crores under section 180(1)(c) of Companies Act, 2013"
+   },
+   {
+    "lender_or_type": "Long Term Bank Facilities",
+    "amount_cr": 350.0,
+    "note": "CARE BB+; Stable (Reaffirmed)"
+   },
+   {
+    "lender_or_type": "Short Term Bank Facilities",
+    "amount_cr": 397.8,
+    "note": "CARE A4+ (Reaffirmed)"
+   },
+   {
+    "lender_or_type": "Government of India (GOI)",
+    "amount_cr": null,
+    "note": "Principal loan amount proposed to be converted into borrowings repayable over a period at zero percent interest as part of revival package; penal interest at 2.75% in case of default; no repayments made during year ended March 31, 2026"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Plan Loans",
+    "amount_cr": 411.17,
+    "note": "Principal default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Non-Plan Loans",
+    "amount_cr": 20.77,
+    "note": "Principal default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Revamp Loans",
+    "amount_cr": 122.3,
+    "note": "Principal default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Plan Loans",
+    "amount_cr": 756.54,
+    "note": "Interest default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Non-Plan Loans",
+    "amount_cr": 46.84,
+    "note": "Interest default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Government of India (GOI) - Revamp Loans",
+    "amount_cr": 196.91,
+    "note": "Interest default from FY 2004-05 till date"
+   },
+   {
+    "lender_or_type": "Working capital and Short-term borrowings",
+    "amount_cr": 634.24,
+    "note": "Current borrowings as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "GOI Term loan (Revamp loans, Plan loans, Non-plan loans)",
+    "amount_cr": 554.24,
+    "note": "Principal amount; interest accrued and due Rs 1,000.29 Cr; total default Rs 1,554.53 Cr as on Balance Sheet date"
+   },
+   {
+    "lender_or_type": "Cash Credit from bank",
+    "amount_cr": 80.0,
+    "note": "Fixed-rate instrument"
+   },
+   {
+    "lender_or_type": "Banks and financial institutions",
+    "amount_cr": null,
+    "note": "Working capital limits in excess of Rs 5 Cr sanctioned on security of current assets; borrowings used for specific purpose"
+   },
+   {
+    "lender_or_type": "Government of India",
+    "amount_cr": null,
+    "note": "Interest accrued on borrowings from GOI reclassified to other financial liabilities"
+   }
+  ],
+  "auditor": {
+   "name": "M/s Sundar Srini & Sridhar, Chartered Accountants",
+   "opinion": "The Auditors' Report does not contain any qualification, reservation, adverse remark or disclaimer.",
+   "key_audit_matters": [
+    "Recognition / de-recognition and measurement of Subsidy income and recoverability of subsidy receivables (Subsidy income Rs. 1,907.76 crores; Subsidy receivable Rs. 468.64 crores as at March 31, 2026)",
+    "Estimation of Provision & Contingent Liabilities"
+   ],
+   "qualifications_or_emphasis": [
+    "Revival package proposal placed on hold by DOF under new PSE policy; Company advised to submit fresh proposal",
+    "Energy norm extension request pending; 10% penalty (Rs. 164.25 crores) considered on subsidy income",
+    "Slow/non-moving inventory (Rs. 30.64 crores) valued on technical appraisal; NPK raw materials (Rs. 27.89 crores) held during production suspension",
+    "Board composition non-compliance (independent directors, woman director); stock exchange penalties reported as contingent liability",
+    "Enhanced gratuity cost with interest (Rs. 2.36 crores) and service cost (Rs. 6.02 crores) recognized as exceptional items",
+    "MFLECPF modified opinion on overdue investments (Rs. 6.33 crores) in companies under CIRP",
+    "Regrouping/reclassification/re-presentation of prior year items",
+    "Most charges satisfied still appearing on MCA portal",
+    "Emphasis on Government of India loan including accrued interest of Rs. 1,554.53 crores which has fallen overdue as on March 31, 2026",
+    "Financial revival proposal submitted by the Company is pending for approval",
+    "Recommendation that internal audits be conducted on a half yearly basis and scope widened to include detailed ledger scrutiny and evaluation of supervisory controls over long outstanding payables and receivables",
+    "Amount of Rs. 0.28 crore remains unspent in respect of ongoing projects and not transferred to a Special Account as required under sub section (6) of Section 135 of the Companies Act, 2013",
+    "Modified opinion issued by Statutory Auditors of MFLECPF (Provident Fund Trust) for year ended March 31, 2025 regarding realisability of overdue investments in debt instruments of two companies under CIRP"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Dr. Ravada Satyanarayana appointed as Non-official Independent Director w.e.f. 21.08.2026 for 3 years or until further orders",
+    "Shri Dipesh Kumar appointed as Non-official Independent Director w.e.f. 20.08.2026 for 3 years or until further orders",
+    "Mr. Babak Bagherpour retires by rotation and offers himself for re-appointment",
+    "Smt. Samieh Kokabi retires by rotation and offers herself for re-appointment",
+    "Mr. Mohammad Bagher Dakhili retires by rotation and offers himself for re-appointment",
+    "Smt. Tina Soni (DIN: 07720240) appointed as Government Nominee Director w.e.f. April 4, 2024; tenure concluded July 24, 2025",
+    "Shri Amar Kushawha (DIN: 11211580) appointed as Government Nominee Director w.e.f. July 17, 2025",
+    "Dr. Ravada Satyanarayana (DIN: 11905587) appointed as Independent Director w.e.f. August 21, 2026",
+    "Shri Dipesh Kumar (DIN: 11904399) appointed as Independent Director w.e.f. August 20, 2026",
+    "Shri B Ravichandran appointed as IEM w.e.f. June 17, 2025",
+    "Shri M. J. Joseph appointed as IEM w.e.f. July 23, 2025",
+    "Government of India appointed Shri Alok Kumar Agrawal (DIN: 09395495) as Non-Official Independent Director for one year w.e.f. April 17, 2025; regularized at 59th AGM on September 24, 2025; ceased office on April 16, 2026.",
+    "Government of India appointed Shri Sanjay Vishnu Shetye (DIN: 01089380) as Non-Official Independent Director for one year w.e.f. April 17, 2025; regularized at 59th AGM on September 24, 2025; ceased office on April 16, 2026.",
+    "Government of India appointed a Government Nominee Director w.e.f. July 24, 2025; regularized at 59th AGM on September 24, 2025.",
+    "Shri Babak Bagherpour (DIN: 08341090), Shri Mohammad Bagher Dakhili (DIN: 07704367) and Smt. Samieh Kokabi (DIN: 09066692) (Nominee of NICO) retiring by rotation at 60th AGM and offering themselves for re-appointment.",
+    "Dr Tina Soni (GOI Nominee) ceased w.e.f 24.07.2025",
+    "Shri Amar Kushawha (GOI Nominee) appointed w.e.f 24.07.2025",
+    "Dr K Jayachandran (Director - Technical) ceased w.e.f 31.05.2026 due to superannuation",
+    "Dr Jatin Kumar Mohanty (Independent Director) ceased w.e.f 19.06.2026 on completion of tenure",
+    "Shri Sanjay Vishnu Shetye (Independent Director) ceased w.e.f 16.04.2026 on completion of tenure",
+    "Shri Alok Kumar Agrawal (Independent Director) ceased w.e.f 16.04.2026 on completion of tenure",
+    "Shri Babak Bagherpour appointed as Audit Committee member w.e.f 17.04.2026 and Chairman w.e.f 29.06.2026",
+    "Smt. Samieh Kokabi appointed as Audit Committee member w.e.f 29.06.2026",
+    "Shri Amar Kushawha appointed as NRC member w.e.f 17.04.2026",
+    "Smt. Samieh Kokabi appointed as NRC member w.e.f 17.04.2026",
+    "Shri Babak Bagherpour appointed as NRC member and Chairman w.e.f 29.06.2026",
+    "Smt. Samieh Kokabi appointed as RMC member w.e.f 29.06.2026",
+    "Shri Amar Kushawha appointed as RMC member w.e.f 29.06.2026",
+    "Shri Manoj Kumar Jain appointed as RMC Chairman w.e.f 29.06.2026",
+    "Casual vacancies in the office of Independent Directors arising during the period under review remained unfilled beyond three months.",
+    "The Company has not obtained shareholders' approval in the first General Meeting held after 31 March 2024 for the continuation of Director(s) who had completed five years or more on the Board.",
+    "Term completed for two independent directors on April 16, 2026; Board being reconstituted without requisite number of independent directors",
+    "Shri Manoj Kumar Jain appointed Chairman and Managing Director from 07/06/2024",
+    "Dr. Tina Soni Director \u2013 GOI Nominee from 04/04/2024 to 24/07/2025",
+    "Mr. Amar Kushawha Director \u2013 GOI Nominee from 24/07/2025",
+    "Shri Sanjay Shetye Independent Director from 17/04/2025 to 16/04/2026",
+    "Shri Alok Kumar Agrawal Independent Director from 17/04/2025 to 16/04/2026",
+    "Shri Madhan Mohan General Manager \u2013 Finance & Accounts / Chief Financial Officer from 01/07/2024",
+    "Shri Srinivasa Saravanan J Company Secretary from 07/08/2024",
+    "Term completed for two independent directors on April 16, 2026",
+    "Audit Committee reconstituted without requisite number of independent directors"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Government of India (via Department of Fertilizers)",
+     "pct": null
+    },
+    {
+     "name": "Naftiran Intertrade Company (NICO)",
+     "pct": null
+    },
+    {
+     "name": "Government of India",
+     "pct": 59.5
+    },
+    {
+     "name": "Naftiran Inter Trade Company (NICO) Ltd",
+     "pct": 25.77
+    }
+   ],
+   "auditor_change": "Comptroller & Auditor General of India appointed M/s. Sundar Srini & Sridhar Associates as Statutory Auditors for FY 2025-26.",
+   "promoter_holding_pct": 85.27
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Shri Manoj Kumar Jain",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Shri A Madhan Mohan",
+     "role": "GM \u2013 Plant & CFO"
+    },
+    {
+     "name": "Shri B Somu",
+     "role": "General Manager - HRD & OL"
+    },
+    {
+     "name": "Shri B. Annil Kumar",
+     "role": "General Manager \u2013 M&D and P & A (a/c)"
+    },
+    {
+     "name": "Shri J Srinivasa Saravanan",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Manoj Kumar Jain",
+     "role": "Chairman & Managing Director (DIN: 10690782)"
+    },
+    {
+     "name": "Mohammad Bagher Dakhili",
+     "role": "NICO Nominee Director (DIN: 07704367)"
+    },
+    {
+     "name": "Babak Bagherpour",
+     "role": "NICO Nominee Director (DIN: 08341090)"
+    },
+    {
+     "name": "Samieh Kokabi",
+     "role": "NICO Nominee Director (DIN: 09066692)"
+    },
+    {
+     "name": "Dr. Ravada Satyanarayana",
+     "role": "Independent Director (DIN: 11905587)"
+    },
+    {
+     "name": "Dipesh Kumar",
+     "role": "Independent Director (DIN: 11904399)"
+    },
+    {
+     "name": "Amar Kushawha",
+     "role": "Government Nominee Director (DIN: 11211580)"
+    },
+    {
+     "name": "A Madhan Mohan",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "J Srinivasa Saraanan",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shri Manoj Kumar Jain",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Shri A Madhan Mohan",
+     "role": "General Manager \u2013 F&A, appointed as CFO w.e.f 14.08.2024"
+    },
+    {
+     "name": "Shri J Srinivasa Saravanan",
+     "role": "Company Secretary and Compliance Officer effective August 14, 2024"
+    },
+    {
+     "name": "MANOJ KUMAR JAIN",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Manoj Kumar Jain",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Manoj Kumar Jain",
+     "role": "Chairman and Managing Director (DIN: 10690782)"
+    },
+    {
+     "name": "Dr. K. Jayachandran",
+     "role": "Director - Technical (DIN: 10062573)"
+    },
+    {
+     "name": "A. Madhan Mohan",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "J Srinivasa Saravanan",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "CMD",
+     "role": "Chief Operating Decision Maker (CODM)"
+    },
+    {
+     "name": "Dr. K Jayachandran",
+     "role": "Director \u2013 Technical"
+    },
+    {
+     "name": "Shri Mohammad Bagher Dakhili",
+     "role": "Director \u2013 NICO Nominee"
+    },
+    {
+     "name": "Mrs. Samieh Kokabi",
+     "role": "Director - NICO Nominee"
+    },
+    {
+     "name": "Shri Babak Bagherpour",
+     "role": "Director - NICO Nominee"
+    },
+    {
+     "name": "Shri Sanjay Shetye",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Dr. Jatin Kumar Mohanthay",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Alok Kumar Agrawal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Madhan Mohan",
+     "role": "General Manager \u2013 Finance & Accounts / Chief Financial Officer"
+    },
+    {
+     "name": "Shri Srinivasa Saravanan J",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "B Somu",
+     "role": "General Manager - HRD & OL"
+    },
+    {
+     "name": "B Annil Kumar",
+     "role": "General Manager - M & D and P & A (Additional Charge)"
+    }
+   ],
+   "employees": 350
+  },
+  "other_notable": [
+   "60th AGM scheduled for September 24, 2026 at 11.00 a.m. through VC/OAVM",
+   "Cost Auditor M/s. Aruna Prasad & Co. appointed for FY 2026-27 at fee of Rs 1,33,100 plus taxes and reimbursement of out of pocket expenses",
+   "Statutory Auditors appointed by C&AG; Board authorized to fix remuneration for FY 2026-27",
+   "Registrar and Transfer Agent: M/s. Integrated Registry Management Services Private Limited",
+   "Secretarial Auditors: M/s SVJS & Associates",
+   "Internal Auditors: M/s Komandoor & Co.LLP",
+   "CIN: L32201TN1966GOI005469",
+   "Registered Office: Post Bag No.2, Manali, Chennai 600 068",
+   "Website: www.madrasfert.co.in",
+   "Email: cs@madrasfert.co.in",
+   "Stock Exchange: National Stock Exchange of India Ltd.",
+   "Remote e-voting period: September 21, 2026 (9:00 AM) to September 23, 2026 (5:00 PM)",
+   "Cut-off date for e-voting: September 17, 2026",
+   "Scrutinizer: Mr. Subramanian Chandrasekar, Practicing Company Secretary (FCS No.6773)",
+   "Revenue from Operations: Rs 2,300.35 Cr (FY 2025-26) vs Rs 2,541.08 Cr (FY 2024-25)",
+   "Net Profit: Rs 80.42 Cr (FY 2025-26) vs Rs 64.25 Cr (FY 2024-25), growth of 25.17%",
+   "Total Comprehensive Income: Rs 124.27 Cr (FY 2025-26) vs Rs 157.42 Cr (FY 2024-25)",
+   "Paid-up Equity Share Capital: Rs 162.14 Cr as on March 31, 2026",
+   "DBT Bills generated: Rs 1,961.85 Cr in FY 2025-26",
+   "PoS Sale of NC Urea: 5,01,592 MTs in FY 2025-26 (1.33% increase)",
+   "Lowest annual specific energy consumption: Ammonia 9.188 GCal/MT, Urea 6.813 GCal/MT",
+   "115 days without lost time accident as on March 31, 2026 (0.22 Million Man-hours)",
+   "Vigilance Awareness Week 2025 observed from Oct 27 to Nov 2, 2025",
+   "Integrity Pact: Two new IEMs appointed in 2025",
+   "Cost Auditor remuneration for FY 2026-27: Rs 1,33,100 plus tax and out-of-pocket expenses",
+   "No dividend proposed for FY 2025-26 due to accumulated losses",
+   "5 Board meetings held in FY 2025-26",
+   "Manpower strength: 350 as on March 31, 2026 (down from 402 previous year)",
+   "228 employees and 33 contract workers trained in FY 2025-26",
+   "Credit ratings reaffirmed as 'CARE BB+; Stable' for long term borrowing and 'CARE A4+' for short term borrowings.",
+   "Zero complaints of sexual harassment received, disposed, or pending during FY 2025-26.",
+   "Company complies with Maternity Benefit Act, 1961 / Code on Social Security, 2020.",
+   "No frauds reported by auditors under Section 143(12) of Companies Act, 2013.",
+   "No deposits accepted from public.",
+   "Related party transactions were on arm's length basis and in ordinary course of business; no material transactions requiring shareholder approval.",
+   "Cost records maintained as per Section 148(1) of Companies Act, 2013.",
+   "CSR Committee comprises 3 directors including an Independent Director as Chairman; CSR activities carried out during FY 2025-26.",
+   "Company has adequate cash and cash equivalents as at March 31, 2026 to meet current liabilities.",
+   "No change in nature of business (manufacturing of coated Urea, Ammonia).",
+   "No material changes/commitments affecting financial position between March 31, 2026 and date of report.",
+   "Internal financial controls deemed adequate and effective during FY 2025-26.",
+   "Secretarial Audit Report contains few qualifications and reservations; management responses annexed.",
+   "M/s SVJS & Associates appointed as Secretarial Auditor for 5 years from FY 2025-26 to 2029-30.",
+   "M/s Aruna Prasad & Co. re-appointed as Cost Auditor for FY 2026-27.",
+   "Vigil mechanism / Whistle Blower policy in place.",
+   "No instances of insider trading reported; Code of Conduct for prevention of insider trading adhered to.",
+   "Trading window closure implemented from end of every quarter till 48 hours after UPSI made public.",
+   "Certificate from Practicing Company Secretary confirming no director debarred/disqualified.",
+   "Annual Return (MGT-7) available on company website.",
+   "Compliance with Secretarial Standards confirmed.",
+   "Total manpower strength as on 31.03.2026 is 350 against 402 as on 31.03.2025",
+   "228 employees and 33 contract workers trained during 2025-26 on Technical and Soft Skills",
+   "Industrial relations at all Company's units remained cordial and peaceful",
+   "Net worth stood at Rs.91.97 Crore as on March 31, 2026 against Rs.(32.30 Crore) at March 31, 2025",
+   "Net debt to equity ratio stood at 6.9% as on March 31, 2026",
+   "Debt Equity Ratio improved to 6.90 from (20.56) due to improved shareholders' equity",
+   "Return on Net worth 87.44% for FY 2025-26",
+   "1009 shareholder complaints redressed during the year with nil pending as of March 31, 2026",
+   "5 Board meetings held during FY 2025-26 on 28.05.2025, 12.08.2025, 11.11.2025, 11.02.2026 and 30.03.2026",
+   "59th AGM held on 24.09.2025 through VC/OAVM"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company has drawn up a roadmap for the establishment of a New Greenfield Ammonia-Urea Complex with an annual production capacity of 1.32 Million Metric Tonnes Per Annum (MTPA) of Urea. The Pre-Feasibility Report (PFR) has been approved by the Board and submitted to Department of Fertilizers, Government of India for approval under National Investment Policy for Urea \u2013 2026 (NIPU \u2013 2026).",
+    "period": "Long-term"
+   },
+   {
+    "statement": "MFL planned for construction of Corporate Building for Head Office/ Marketing Office/ Project Office.",
+    "period": "Not specified"
+   },
+   {
+    "statement": "The Company is also evaluating opportunities to expand its presence in the fertilizer value chain through trading of fertilizers and allied agri-input products, leveraging its established market presence and distribution network.",
+    "period": "Not specified"
+   },
+   {
+    "statement": "The outlook for the Indian fertilizer industry remains positive, supported by favourable agricultural fundamentals, continued Government policy support and increasing emphasis on food security and sustainable farming practices. Demand for fertilizers is expected to remain stable across Southern India, supported by improved irrigation facilities, healthy reservoir levels and normal monsoon expectations. The Company will continue to focus on operational excellence, cost optimization, product diversification, improved customer service and strengthening its market position.",
+    "period": "FY 2026-27 and medium term"
+   },
+   {
+    "statement": "The Company delivered a strong financial performance during FY 2025\u201326, recording a Net Profit of Rs.80.42 Crores as compared to Rs.64.25 Crores in FY 2024\u201325, reflecting a robust growth of 25.17% over the previous financial year. This significant improvement in profitability was achieved despite a decline in the Company's total turnover by Rs.240.73 Crores, from Rs.2,541.08 Crores in FY 2024\u201325 to Rs.2,300.35 Crores in FY 2025\u201326. The improved financial results demonstrate the Company's focus on operational efficiency, prudent cost management, and effective financial discipline, which enabled it to enhance profitability notwithstanding the lower revenue during the year.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company's key objective is to increase production of High Quality Fertilizers across the country. Also the Company is increasing its due diligence on environmental and social risks and discourages wasteful usage of natural resources. There is a recognition of the medium to long-term benefits that accrue from renewables and the Company endeavours to reduce its carbon footprint.",
+    "period": "Medium to long-term"
+   },
+   {
+    "statement": "Trading of all types of finished Fertilizers products; New Greenfield Ammonia / Urea Plant",
+    "period": "Future"
+   },
+   {
+    "statement": "Project for expansion of green belt area is in progress to reduce Green House Gas emission. Another 2 acres of land will be developed in a phased manner.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The Company has submitted a financial revival proposal which is pending for approval.",
+    "period": "Not specified"
+   },
+   {
+    "statement": "The Company has reiterated to the DOF, with detailed reasoning, that the benefits envisaged under the earlier revival package would remain unchanged.",
+    "period": "Pending receipt of approval"
+   },
+   {
+    "statement": "NPK production has been under suspension since December 2022; feasibility of utilization or disposal of materials under consideration, no material loss of value envisaged.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Company pursuing legal options to file revival proposal to NCLT; submitted financial restructuring proposal with Department of Fertilizers, GOI.",
+    "period": "ongoing"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "New Greenfield Ammonia-Urea Complex (1.32 MTPA Urea)",
+    "amount_cr": null,
+    "timeline": "Submitted for Government approval under NIPU-2026"
+   },
+   {
+    "item": "Corporate Building for Head Office/ Marketing Office/ Project Office",
+    "amount_cr": null,
+    "timeline": "Planned"
+   },
+   {
+    "item": "New Greenfield Ammonia / Urea Plant",
+    "amount_cr": null,
+    "timeline": "Not specified"
+   }
+  ],
+  "risks": [
+   "Dependence on imported fertilizers (mitigation via capacity expansion)",
+   "Decline in overall turnover (Rs 240.73 Cr decrease in FY 2025-26)",
+   "Accumulated losses (no dividend declared)",
+   "Volatility in international prices of raw materials",
+   "Supply chain disruptions affecting imported inputs",
+   "Foreign exchange fluctuations",
+   "Vintage Plant",
+   "Changes in Government subsidy policies",
+   "Climate variability affecting agricultural production and fertilizer demand",
+   "Timely availability of raw materials",
+   "Fluctuations in global energy prices",
+   "Regulatory changes impacting fertilizer pricing and distribution",
+   "Environmental and safety compliance requirements",
+   "Foreign exchange risk is negligible",
+   "Non-compliance with Board composition requirements (Regulation 17(1) of SEBI LODR) for the last 3 years",
+   "Delay in submission of Related Party Disclosures to NSE",
+   "Delay in Appointment of Company Secretary",
+   "Plant Reliability due to aging of plant equipment may lead to frequent breakdowns, reduced plant availability, and lower production efficiency.",
+   "Loss of production and revenue, increased maintenance cost, reduced profitability and liquidity constraints.",
+   "Non-compliance with SEBI LODR Regulations regarding Board composition, Independent Directors vacancies, and Nomination and Remuneration Committee meetings.",
+   "Non-compliance with Board composition requirements (independent directors, woman director) leading to stock exchange penalties",
+   "Uncertainty in revival package approval from Department of Fertilizers (DOF) under new PSE policy",
+   "Penal interest liability of 2.75% on GOI loans in case of default",
+   "Slow/non-moving inventory of stores & spares (Rs. 30.64 crores) valued on technical appraisal",
+   "NPK production suspension since December 2022 with raw materials held (Rs. 27.89 crores)",
+   "Overdue investments in MFLECPF (Rs. 6.33 crores) in companies under CIRP",
+   "Subsidy receivable recoverability dependent on GOI approvals and final notifications",
+   "Energy norm penalty risk (10% penalty considered on subsidy income)",
+   "Gratuity liability enhancement due to court order and pay revision",
+   "Charges satisfied but still appearing on MCA portal",
+   "Government of India loan including accrued interest of Rs. 1,554.53 crores has fallen overdue as on March 31, 2026",
+   "Material uncertainty exists regarding the Company's capability of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+   "Internal audit scope recommended to be widened to include detailed ledger scrutiny and evaluation of supervisory controls over long outstanding payables and receivables",
+   "Estimation uncertainty in subsidy rates and escalation/de-escalation adjustments",
+   "Dependence on government policy for subsidy recognition",
+   "Actuarial assumption sensitivity in defined benefit plans (discount rate, salary increases, mortality)",
+   "Provisions and contingent liabilities from pending cases and claims",
+   "Property, plant and equipment useful life and residual value estimation changes",
+   "Foreign exchange fluctuations on monetary assets and liabilities",
+   "Default in repayment of principal and interest on GOI loans",
+   "Potential penal interest of 2.75% per annum on GOI loans in event of default",
+   "Contingent liabilities including gratuity claims, environmental compensation, and penal interest",
+   "Uncertainty in final revised lease rent for CMWSSB land pending government valuation",
+   "Labour court appeals on incremental gratuity claims",
+   "Credit risk on trade receivables from dealers",
+   "Currency risk on import agreements for raw materials, stores & spares and PPE (not hedged)",
+   "Equity price risk on investments in unquoted equity shares",
+   "Liquidity risk managed through cash credit limits and undrawn borrowing facilities",
+   "Penalty of 10% on subsidy income due to non-achievement of energy norms (Rs 164.25 Cr accounted as deduction)",
+   "Non-compliance with board composition requirements (independent directors, women director) leading to stock exchange penalties",
+   "Contingent liability for provident fund trust overdue investments (Rs 6.33 Cr + interest Rs 0.85 Cr)",
+   "Variance in quarterly returns filed with banks vs financials for inventories, trade receivables, trade payables",
+   "Slow/non-moving inventory of stores & spares (Rs 30.64 Cr)",
+   "Employee ad-hoc advances (Rs 17.54 Cr granted from FY 2019, Rs 1.80 Cr outstanding as at March 31, 2026)"
+  ],
+  "litigation": [
+   "No significant and material orders passed by any Court or Judicial Authority against the company during FY 2025-26 impacting going concern status and operations.",
+   "Company received notice from NSE for non-compliance in composition of Board of Directors for the last 3 years; fine not paid, waiver requested on grounds of being a CPSE with Government-nominated directors",
+   "Company received notice from NSE for delay in submission of Related Party Disclosures for half year ended 31.09.2024; fine of Rs.45,000 plus GST@18% levied and paid",
+   "Company received notices from NSE for delay in appointment of Company Secretary; fines of Rs.20,000, Rs.91,000, and Rs.44,000 for quarters ended 31.03.2024, 30.06.2024, and 30.09.2024 respectively; fines paid",
+   "Penalty/Fine from National Stock Exchange: Rs. 27,55,300 (incl. of GST) for Constitution of Board as per SEBI (LODR). The Company has not remitted the penalty and requested competent authority for waiver as appointment of Independent Directors falls within purview of Department of Fertilizers.",
+   "Suit filed by retired employees (retired 01.01.2007 to 23.05.2010) - High Court of Madras order led to enhanced gratuity recognition",
+   "Pending litigations disclosed in Note 30(1)(a) impacting financial position",
+   "GST disputes pending before Appellate Authority and High Court of Madras (Tamil Nadu) for FY 2017-18, 2018-19, 2019-20",
+   "GST dispute pending before Appellate Authority (Karnataka) for FY 2021-22",
+   "Keralam VAT disputes pending before Hon'ble Supreme Court of India for Assessment Years 2009-10 and 2010-11",
+   "Customs duty dispute pending before Hon'ble High Court of Madras",
+   "Pending cases and claims by third parties reviewed on ongoing basis; probable losses accrued, possible losses disclosed as contingent liabilities",
+   "Appeal filed in Hon'ble High Court of Madras by separated employees claiming incremental gratuity for period 01.01.2017 to 28.03.2018, pending disposal",
+   "Recovery suit against M/s Hastalloy India Ltd for supply of Uranus Rods (Rs 0.08 Cr + interest Rs 0.04 Cr); decree in favour of company for Rs 0.12 Cr plus costs and interest @18%; execution petition filed in District Court, Tiruvallur; transfer initiated to Visakhapatnam jurisdiction",
+   "Show cause notice from TNPCB for non-compliance of emission norms with environmental compensation of Rs 0.96 Cr; decision pending",
+   "Company pursuing legal options to file revival proposal to NCLT under SICA repeal",
+   "Penalties imposed by stock exchange for non-compliance of board composition reported as contingent liabilities"
+  ],
+  "subsidiaries": [
+   {
+    "name": "The Company does not have any material subsidiary",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiaries, associates or joint ventures at any point of time during the year."
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Penal interest on GOI loans at 2.75% in case of default",
+    "amount_cr": 443.33
+   },
+   {
+    "nature": "Stock exchange penalties for non-compliance with Board composition (independent directors, woman director)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Deficiency in MFLECPF investments in companies under CIRP (Rs. 6.33 crores overdue including Rs. 0.85 crore interest)",
+    "amount_cr": 6.33
+   },
+   {
+    "nature": "GST along with Interest & Penalty \u2013 Tamil Nadu",
+    "amount_cr": 2.08
+   },
+   {
+    "nature": "GST along with Interest & Penalty \u2013 Tamil Nadu",
+    "amount_cr": 131.92
+   },
+   {
+    "nature": "GST along with Interest & Penalty \u2013 Tamil Nadu",
+    "amount_cr": 125.2
+   },
+   {
+    "nature": "GST along with Interest & Penalty \u2013 Karnataka",
+    "amount_cr": 1.34
+   },
+   {
+    "nature": "Keralam Value Added Tax VAT Act, 2003",
+    "amount_cr": 1.71
+   },
+   {
+    "nature": "Keralam Value Added Tax VAT Act, 2003",
+    "amount_cr": 3.4
+   },
+   {
+    "nature": "Differential Customs Duty, Customs Redemption Fine u/s 125(1) & Penalty u/s 114(A) Customs Act, 1962",
+    "amount_cr": 65.86
+   },
+   {
+    "nature": "Gratuity (including interest @ 10%)",
+    "amount_cr": 10.93
+   },
+   {
+    "nature": "Penal interest on GOI loans @ 2.75% per annum",
+    "amount_cr": 443.33
+   },
+   {
+    "nature": "Environmental compensation by TNPCB under Environment (Protection) Act, 1986",
+    "amount_cr": 0.96
+   },
+   {
+    "nature": "Penalties imposed by stock exchange for non-compliance of board composition (independent directors, women director)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Realisability of overdue investments in MFLECPF (Provident Fund Trust) - Rs 6.33 Cr including interest accrued Rs 0.85 Cr overdue for more than three years, companies under CIRP",
+    "amount_cr": 6.33
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Not specified in this part",
+    "nature": "Transactions with related parties are in compliance with section 177 and section 188 of the Act where applicable and details have been disclosed in the financial statements as required by the applicable Ind AS.",
+    "amount_cr": null
+   },
+   {
+    "party": "Indian Oil Corporation Ltd",
+    "nature": "Procurement of RLNG/FO/HSD/LUBE and Gas pipeline compensation",
+    "amount_cr": 1574.27
+   },
+   {
+    "party": "GAIL (India) Ltd",
+    "nature": "GAS Pool Account",
+    "amount_cr": 113.92
+   },
+   {
+    "party": "Chennai Petroleum Corporation Ltd (CPCL)",
+    "nature": "Lease Rent",
+    "amount_cr": 2.88
+   },
+   {
+    "party": "MFL Employees Contributory PF Trust",
+    "nature": "Contributions",
+    "amount_cr": 4.19
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Short-term employee benefits, Post-employment benefits",
+    "amount_cr": 1.48
+   },
+   {
+    "party": "Independent Directors",
+    "nature": "Sitting Fee Paid",
+    "amount_cr": 0.1
+   }
+  ]
+ }
+}

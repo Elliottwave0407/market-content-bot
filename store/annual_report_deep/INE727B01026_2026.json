@@ -1,0 +1,1587 @@
+{
+ "isin": "INE727B01026",
+ "name": "Genesys International Corporation Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31427_GENESYS_2025_2026_A_9475846_04092026191225.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 750595,
+ "chunks": 19,
+ "chunks_ok": 19,
+ "facts": {
+  "business": {
+   "description": "Genesys International Corporation Limited is a geospatial technology company specializing in city-scale Digital Twins, HD ADAS maps, and spatial intelligence platforms for urban development, infrastructure, mobility, and automotive sectors.",
+   "products": [
+    {
+     "name": "SD Maps (Standard Definition) for Native Navigation",
+     "share_of_revenue_pct": null,
+     "note": "Supplied to Tata Motors for Software Defined Vehicles"
+    },
+    {
+     "name": "HD Maps (High Definition) for ADAS",
+     "share_of_revenue_pct": null,
+     "note": "India's first large-scale HD ADAS maps covering 1+ lakh km of national highways/expressways"
+    },
+    {
+     "name": "Urban Digital Twin Map Platform",
+     "share_of_revenue_pct": null,
+     "note": "Deployed for Guwahati (\u20b913 crore) and Kochi Municipal Corporation (\u20b99.13 crore)"
+    },
+    {
+     "name": "3D Subsurface Mapping using Ground Penetrating Radar (GPR)",
+     "share_of_revenue_pct": null,
+     "note": "India's first comprehensive 3D subsurface mapping for six Adani Group airports (\u20b917.38 crore contract)"
+    },
+    {
+     "name": "GeoAI-powered products and platforms",
+     "share_of_revenue_pct": null,
+     "note": "Under development for urban development, infrastructure, utilities, mobility, land sectors"
+    },
+    {
+     "name": "Genesys Map Stack",
+     "share_of_revenue_pct": null,
+     "note": "Foundation for Digital Twin, GeoAI and location intelligence applications"
+    },
+    {
+     "name": "Advanced surveying and mapping services",
+     "share_of_revenue_pct": null,
+     "note": "Includes Ground-Penetrating Radar (GPR) for subsurface utility detection"
+    },
+    {
+     "name": "Digital Twins",
+     "share_of_revenue_pct": null,
+     "note": "Integrated with surface and above-ground datasets"
+    },
+    {
+     "name": "Automotive mapping",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "GeoAI, machine learning, analytics and location intelligence platforms",
+     "share_of_revenue_pct": null,
+     "note": "Increasingly focused on converting geospatial assets into products and platforms"
+    },
+    {
+     "name": "Geospatial survey, mapping and software solutions",
+     "share_of_revenue_pct": null,
+     "note": "Includes smart city solutions leveraging LiDAR technology and safety/security planning projects"
+    },
+    {
+     "name": "Mapping, Survey and Geospatial solutions and related services",
+     "share_of_revenue_pct": 100,
+     "note": "NIC Code 7110 - Architectural and engineering activities and related technical consultancy"
+    },
+    {
+     "name": "Multisensor mobile mapping",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability"
+    },
+    {
+     "name": "Digital twin deployments",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability for city and port management"
+    },
+    {
+     "name": "LiDAR and aerial-based surveying",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability for infrastructure and utilities"
+    },
+    {
+     "name": "Environmental and forest monitoring systems",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability"
+    },
+    {
+     "name": "Urban intelligence and ICCC platforms",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability"
+    },
+    {
+     "name": "GeoAI-powered analytics",
+     "share_of_revenue_pct": null,
+     "note": "Active product portfolio capability"
+    },
+    {
+     "name": "Geographical Information Services",
+     "share_of_revenue_pct": null,
+     "note": "comprising of photogrammetry, remote sensing, cartography, data conversion, state of the art terrestrial and 3D geo-content including location navigation mapping and other computer based related services"
+    },
+    {
+     "name": "Geospatial data collection and solutions",
+     "share_of_revenue_pct": null,
+     "note": "Aircraft used exclusively for data collection; GIS Database under development"
+    },
+    {
+     "name": "Geospatial services",
+     "share_of_revenue_pct": 100,
+     "note": "Revenue from contracts with customers - Sale of Geospatial services"
+    },
+    {
+     "name": "GIS based services",
+     "share_of_revenue_pct": null,
+     "note": "Single primary segment per IND AS 108"
+    },
+    {
+     "name": "GIS Database",
+     "share_of_revenue_pct": null,
+     "note": "Amortised over useful life; additions include exchange fluctuations and capitalisation from intangible assets under development."
+    },
+    {
+     "name": "Computer Software",
+     "share_of_revenue_pct": null,
+     "note": "Includes Leica and Veritas software amortised at 1 year and 5 years respectively."
+    }
+   ],
+   "customers": [
+    "Tata Motors Passenger Vehicles Limited",
+    "Guwahati (Urban Digital Twin project)",
+    "Kochi Municipal Corporation",
+    "Varanasi Smart City (Kashi Integrated Command and Control Centre)",
+    "Bureau Veritas (for Adani Group airports)",
+    "Adani Group (airports: Mumbai, Trivandrum, Lucknow, Jaipur, Guwahati, Ahmedabad)",
+    "Survey of India (CORS network)",
+    "Government",
+    "utilities and infrastructure",
+    "automotive and mobility",
+    "commercial and enterprise customers",
+    "Municipal Corporations",
+    "Town Planning Authorities",
+    "PWD's",
+    "Infrastructure development agencies",
+    "Telecom Companies",
+    "Railways",
+    "Renewable Energy Companies",
+    "Defense",
+    "Transportation sector",
+    "Urban local bodies",
+    "State governments",
+    "Central government ministries (Power, Environment, Agriculture, Road Transport, etc.)",
+    "NHAI",
+    "Smart Cities Mission",
+    "PM Gati Shakti",
+    "SVAMITVA Scheme",
+    "AMRUT 2.0",
+    "Telecom operators",
+    "Forest departments",
+    "Disaster management authorities",
+    "GCC nations (via Middle East subsidiary)",
+    "Southeast Asia and Africa clients"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "North East India (Guwahati)",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala (Kochi)",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh (Varanasi, Lucknow)",
+     "share_pct": null
+    },
+    {
+     "name": "Maharashtra (Mumbai)",
+     "share_pct": null
+    },
+    {
+     "name": "Gujarat (Ahmedabad)",
+     "share_pct": null
+    },
+    {
+     "name": "Rajasthan (Jaipur)",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala (Trivandrum)",
+     "share_pct": null
+    },
+    {
+     "name": "Assam (Guwahati airport)",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "National",
+     "share_pct": 79.23
+    },
+    {
+     "name": "International",
+     "share_pct": 20.77
+    },
+    {
+     "name": "Cyprus",
+     "share_pct": null
+    },
+    {
+     "name": "Kingdom of Saudi Arabia",
+     "share_pct": null
+    },
+    {
+     "name": "Middle East and Africa (via Genesys Middle East Company Limited, Kingdom of Saudi Arabia)",
+     "share_pct": null
+    },
+    {
+     "name": "Southeast Asia",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 79.23
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 20.77
+    },
+    {
+     "name": "Outside India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 65.8
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 34.2
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 34.18
+    },
+    {
+     "name": "India",
+     "share_pct": 65.82
+    }
+   ],
+   "plants": [
+    {
+     "location": "73-A, SDF-III, SEEPZ, Andheri (East), Mumbai - 400 096",
+     "capacity": "Registered Office and Development Centre"
+    },
+    {
+     "location": "Unit Nos. 103 & 104, Multistoried Building, SEEPZ, Andheri (East), Mumbai - 400 096",
+     "capacity": "Development Centre"
+    },
+    {
+     "location": "7th Floor, 703, DLF South Court, Pt Trilok Chand Sharma Marg, Saket District Centre, New Delhi, South Delhi, Delhi, 110017",
+     "capacity": "Development Centre"
+    },
+    {
+     "location": "Gala No. 06, Devi Dayal Compound, Kanjur Village Road, Near Steel Suppliers Ltd., Kanjurmarg East - 400042",
+     "capacity": "Development Centre"
+    },
+    {
+     "location": "4th Floor, C-24, Lalkothi, Pankaj Singhvi Marg, Jaipur, Rajasthan-302015",
+     "capacity": "Development Centre"
+    },
+    {
+     "location": "Room No. 1403, 14th Floor, Tower 1, PS Srijan Corporate Park, Plot No G2, Block GP Sector-V, Salt Lake City, Kolkata-700091",
+     "capacity": "Development Centre"
+    },
+    {
+     "location": "National",
+     "capacity": "5 offices"
+    },
+    {
+     "location": "International",
+     "capacity": "2 offices"
+    },
+    {
+     "location": "Development centers/offices addresses given elsewhere in Annual Report",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Automotive (SD/HD maps for navigation and ADAS)",
+    "Urban Development & Smart Cities",
+    "Infrastructure (Airports, Utilities)",
+    "Mobility & Transportation",
+    "Land Administration",
+    "Disaster Management & Emergency Response",
+    "Government",
+    "utilities and infrastructure",
+    "automotive and mobility",
+    "location intelligence for commercial and enterprise",
+    "Smart cities",
+    "Urban development",
+    "Safety and security planning",
+    "Municipal Corporations",
+    "Town Planning Authorities",
+    "PWD's",
+    "Infrastructure development agencies",
+    "Telecom Companies",
+    "Railways",
+    "Renewable Energy Companies",
+    "Defense",
+    "Transportation sector",
+    "Urban planning and governance",
+    "Environmental management and forests",
+    "Disaster resilience and preparedness",
+    "Transport and logistics",
+    "Agriculture and food security",
+    "Digital twins for city and port management",
+    "Land records and rural administration",
+    "Telecom network planning",
+    "Renewable energy planning",
+    "geospatial sector"
+   ],
+   "brands_or_certifications": [
+    "Genesys Map Stack",
+    "New India Map Stack",
+    "Varanasi Smart City 3D Digital Twin (GovConnect Award, SKOCH Award Gold 2025)",
+    "IDS GeoRadar GPR (Equalised Scrambling Technology, Wide/Multi Array Antenna Technology)",
+    "Bentley Enterprise Software Products / Technologies",
+    "NV5's DAT/EM Software Products / Technologies",
+    "ISO 9001:2015",
+    "ISO/IEC 27001:2022",
+    "CMMI L3 (Development and Services)",
+    "DGCA Type Certified Drones",
+    "ISO certifications (implied by standards compliance)",
+    "OGC compliance",
+    "BIS LITD 22 technical committee participation"
+   ],
+   "competitors_named": [
+    "ICEYE",
+    "Planet Labs",
+    "Maxar"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Progressively extend underground utility mapping capability from airport environments to city-scale, integrating subsurface intelligence with LiDAR, aerial and mobile mapping to create complete Digital Twin of urban environment spanning underground, surface and above-ground infrastructure.",
+    "period": "Future"
+   },
+   {
+    "statement": "Transform geospatial foundation into actionable intelligence through GeoAI-powered products and platforms across urban development, infrastructure, utilities, mobility, land and other sectors.",
+    "period": "Future"
+   },
+   {
+    "statement": "Develop and deploy Generative AI and Agentic AI applications across industries leveraging large-scale spatial data infrastructure.",
+    "period": "Future"
+   },
+   {
+    "statement": "Going forward, Genesys intends to build a balanced portfolio of data, products, platforms and solutions, with continued focus on Government, utilities and infrastructure, automotive and mobility, and location intelligence for commercial and enterprise customers. The Genesys Map Stack will remain central to this strategy, providing the foundation for Digital Twin, GeoAI and location intelligence applications. The Company also plans to strengthen its international business by leveraging its capabilities in advanced surveying, mapping, Digital Twins, automotive mapping and AI-led spatial intelligence. The Company believes that the convergence of high-precision geospatial data, Digital Twins, AI and location intelligence will shape the next phase of the industry and create new opportunities across domestic and international markets.",
+    "period": "Future"
+   },
+   {
+    "statement": "Growing demand from governments, utilities, and corporates for geospatial inputs that underpin flood-risk modelling, urban heat-island mapping, green-infrastructure planning, and ESG reporting. Climate change resilience and adaptation services expected to contribute 12-18% incremental revenue over a three-year horizon.",
+    "period": "three-year horizon"
+   },
+   {
+    "statement": "India's geospatial analytics market valued at approximately USD 4.63 billion in 2025, expected to reach USD 14.02 billion by 2033 at a CAGR of 14.4%. India's geospatial economy could grow to over Rs. 1 trillion by FY 2030, achieving a CAGR of approximately 22%. Software segment accounted for 60.78% of India Geospatial Analytics market in 2025. Services segment growing at 15.55% CAGR. Middle East and Africa geospatial solutions market valued at USD 30.6 billion in 2024, growing at 14.4% CAGR. Middle East and Africa GeoAI market growing at 13.05% CAGR through 2033.",
+    "period": "FY 2025-26 and medium term"
+   },
+   {
+    "statement": "Urban intelligence space remains most compelling near-term opportunity with cities transitioning from static GIS to dynamic 3D Digital Twin environments. Environmental and forest management emerging as high-growth vertical driven by national climate commitments, CAMPA framework expansion, and ESG-compliant monitoring demand. BharatNet programme and 5G network densification driving sustained demand for LiDAR and mobile mapping surveys. Disaster-resilient infrastructure, renewable energy planning, and land monetisation converging into new growth verticals. International geospatial export trajectory firmly positive with continued project wins across GCC, Southeast Asia, and Africa.",
+    "period": "Near-term and medium term"
+   },
+   {
+    "statement": "Maintaining a relevant and competitive technology portfolio requires ongoing capital allocation to R&D, platform engineering, and strategic partnerships, which must be balanced against the commercial imperatives of project delivery and margin management. Public awareness of geospatial technologies and their applications remain limited relative to the sector's actual economic contribution. This constrains the talent pipeline, limits the ability to attract mainstream private capital, and slows the adoption of spatial intelligence in sectors such as insurance, financial services, and retail, where geospatial applications are well-proven globally but still nascent in India. Addressing this through industry outreach, academic engagement, and visible project showcases is as much a commercial imperative as it is a sectoral responsibility.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Management believes that the subsidiary is well-positioned to participate in the anticipated growth of the sector based on opportunities arising from the evolving regulatory environment, including the Government's Geospatial Policy, and the Group's strategic focus on geospatial content and related solutions.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The aggregate value of transaction price allocated to unsatisfied (or partially satisfied) performance obligations as on 31 March 2026 is Rs 36,639.78 Lakhs out of which 40 to 50% is expected to be recognised as revenue in the next year and the balance thereafter.",
+    "period": "next year and thereafter"
+   },
+   {
+    "statement": "The aggregate value of transaction price allocated to unsatisfied (or partially satisfied) performance obligations as on 31 March 2026 is Rs 39,878.32 Lakhs out of which 40 to 50% is expected to be recognised as revenue in the next year and the balance thereafter.",
+    "period": "next year and thereafter"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Setting up of data centre",
+    "amount_cr": 17.705,
+    "timeline": "FY 2026-27 (\u20b914.855 cr), FY 2027-28 (\u20b90 cr)"
+   },
+   {
+    "item": "Development of tech platform",
+    "amount_cr": 25.7422,
+    "timeline": "FY 2026-27 (\u20b915.8904 cr)"
+   },
+   {
+    "item": "Creation/updation of map content",
+    "amount_cr": 18.6516,
+    "timeline": "FY 2026-27 (\u20b913.3346 cr), FY 2027-28 (\u20b919.256 cr + \u20b95.1336 cr)"
+   },
+   {
+    "item": "Building sensor capacity",
+    "amount_cr": 10.5683,
+    "timeline": "FY 2026-27 (\u20b910.5683 cr)"
+   },
+   {
+    "item": "Strengthening information technology infrastructure",
+    "amount_cr": 9.8334,
+    "timeline": "FY 2026-27 (\u20b99.1616 cr)"
+   },
+   {
+    "item": "General corporate purposes",
+    "amount_cr": 20.4915,
+    "timeline": "FY 2026-27 (\u20b90.0415 cr)"
+   },
+   {
+    "item": "Issue Expenses",
+    "amount_cr": 7.008,
+    "timeline": "FY 2026-27 (\u20b90.5382 cr)"
+   },
+   {
+    "item": "Repayment of bank loan (new object)",
+    "amount_cr": 40.0,
+    "timeline": "FY 2026-27 (\u20b940 cr)"
+   },
+   {
+    "item": "Setting up of data centre",
+    "amount_cr": 17.705,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Development of tech platform",
+    "amount_cr": 25.7422,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Creation/updation of map content",
+    "amount_cr": 18.6516,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Building sensor capacity",
+    "amount_cr": 10.5683,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Strengthening information technology infrastructure",
+    "amount_cr": 9.8334,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "General corporate purposes",
+    "amount_cr": 20.4915,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Issue Expenses",
+    "amount_cr": 7.008,
+    "timeline": "As per QIP Placement Document"
+   },
+   {
+    "item": "Fleet electrification and green-hosting premiums for mobile mapping vehicles and data centres",
+    "amount_cr": null,
+    "timeline": "Near-term"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account and not provided for (net of Advances and taxes)",
+    "amount_cr": 0.7171,
+    "timeline": "As at 31 March 2026"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Six-year contract with Tata Motors Passenger Vehicles Limited to supply Native Navigation (SD Maps) and ADAS (HD Maps) solutions for Software-Defined Vehicle platform across India, compensation as licence fee per vehicle sold.",
+    "value_cr": null
+   },
+   {
+    "statement": "\u20b913 crore Urban Digital Twin Map Platform project for Guwahati (first project in NE India).",
+    "value_cr": 13
+   },
+   {
+    "statement": "\u20b99.13 crore Digital Twin implementation for Kochi Municipal Corporation incorporating LiDAR data, high-resolution base maps and web-based GIS covering all municipal wards.",
+    "value_cr": 9.13
+   },
+   {
+    "statement": "\u20b917.38 crore contract awarded by Bureau Veritas for India's first comprehensive 3D subsurface mapping across six Adani Group airports (Mumbai, Trivandrum, Lucknow, Jaipur, Guwahati, Ahmedabad) using 3D GPR and high-precision LiDAR.",
+    "value_cr": 17.38
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Bank loan (to be repaid from QIP proceeds)",
+    "amount_cr": 40,
+    "note": "Up to \u20b94000 lakh from unutilised QIP proceeds approved for repayment of outstanding borrowings/loans including principal and incidental amounts"
+   },
+   {
+    "lender_or_type": "Bank loan",
+    "amount_cr": 40,
+    "note": "Proposed repayment of bank loan from QIP proceeds reallocation of Rs 4,000 lakhs; expected to result in savings in finance costs amounting to Rs 320 Lakhs annually"
+   },
+   {
+    "lender_or_type": "Mr. Sajid Malik (Chairman & Managing Director)",
+    "amount_cr": 25,
+    "note": "Unsecured loan received during FY2025-26; declaration provided that amount not from borrowed funds"
+   },
+   {
+    "lender_or_type": "Mr. Omprakash Hemrajani (Non-executive Director)",
+    "amount_cr": 9.5,
+    "note": "Unsecured loan received during FY2025-26; declaration provided that amount not from borrowed funds"
+   },
+   {
+    "lender_or_type": "Long term Bank Facility",
+    "amount_cr": null,
+    "note": "CARE BBB; Stable"
+   },
+   {
+    "lender_or_type": "Short term Bank facility",
+    "amount_cr": null,
+    "note": "CARE A3+"
+   },
+   {
+    "lender_or_type": "financial institution, vehicle loan from bank, working capital facility from bank",
+    "amount_cr": 160.1741,
+    "note": "Standalone total borrowings (current and non-current) as of March 31, 2026. Secured by assets purchased (vehicle loans) and book debts, all movable and immovable assets (working capital). Increased due to addition of vehicle loans, loan from financial institution, and increased working capital limits."
+   },
+   {
+    "lender_or_type": "Banks (working capital limits)",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of Rs 5 crores on the basis of security of current assets; periodic returns filed with banks are in agreement with books of accounts (Refer Note 38)."
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 4.7264,
+    "note": "Non-current borrowings as at 31 March 2026 (Rs 472.64 lakhs)."
+   },
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 155.4477,
+    "note": "Current borrowings as at 31 March 2026 (Rs 15,544.77 lakhs)."
+   },
+   {
+    "lender_or_type": "long term borrowings",
+    "amount_cr": 160.17,
+    "note": "Closing balance as at 31 March 2026 per IND AS 7 disclosure (Rs 16,017.41 lakhs)"
+   },
+   {
+    "lender_or_type": "short term borrowing (net)",
+    "amount_cr": null,
+    "note": "Proceeds from short term borrowing (net) during FY2026: Rs 6,019.63 lakhs"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": null,
+    "note": "Bank credit facility; margin money and fixed deposits pledged against bank guarantees"
+   },
+   {
+    "lender_or_type": "Vehicle loan from Banks",
+    "amount_cr": 1.3024,
+    "note": "Secured; includes current maturities"
+   },
+   {
+    "lender_or_type": "Vehicle loan from Financial Institutions",
+    "amount_cr": 2.6015,
+    "note": "Secured; includes current maturities"
+   },
+   {
+    "lender_or_type": "Loan from financial institution",
+    "amount_cr": 10.2479,
+    "note": "Secured; includes current maturities"
+   },
+   {
+    "lender_or_type": "Cash Credit / Working capital loan from banks",
+    "amount_cr": 99.2724,
+    "note": "Secured by hypothecation of entire current assets, movable assets, lien on term deposits, personal guarantees of Managing Director/Whole-time Director, pledge of promoters shares, equitable mortgage of company owned office at Mumbai"
+   },
+   {
+    "lender_or_type": "Loan from related parties - repayable on demand",
+    "amount_cr": 46.75,
+    "note": "Unsecured"
+   },
+   {
+    "lender_or_type": "Computer equipment loans from Hewlett Packard Financial Services (India) Pvt Ltd",
+    "amount_cr": 12.2491,
+    "note": "Secured by hypothecation of assets for which loan obtained; multiple loans with 16 equal quarterly instalments at 12.51% p.a."
+   },
+   {
+    "lender_or_type": "Vehicle loans from ICICI Bank, HDFC Bank, IDFC First Bank, Mercedes Benz India Pvt Ltd",
+    "amount_cr": 3.9026,
+    "note": "Secured; various tenures and interest rates (7.90% to 10.15% p.a.)"
+   },
+   {
+    "lender_or_type": "Valeo Nutra Private Limited",
+    "amount_cr": 4.7941,
+    "note": "Borrowings including interest accrued but not due"
+   },
+   {
+    "lender_or_type": "Ventura Guaranty Limited",
+    "amount_cr": 0,
+    "note": "Borrowings including interest accrued but not due"
+   },
+   {
+    "lender_or_type": "Mr. Sajid Malik",
+    "amount_cr": 22.25,
+    "note": "Borrowings from director"
+   },
+   {
+    "lender_or_type": "Mr. Omprakash Hemrajani",
+    "amount_cr": 20.5,
+    "note": "Borrowings from director"
+   },
+   {
+    "lender_or_type": "Total Borrowings (Standalone)",
+    "amount_cr": 160.1741,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Long term borrowings",
+    "amount_cr": 4.73,
+    "note": "As at 31 March 2026 (non-current)"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 155.45,
+    "note": "As at 31 March 2026 (current)"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": null,
+    "note": "Bank credit facility secured by margin money and fixed deposits pledged against bank guarantees"
+   },
+   {
+    "lender_or_type": "Vehicle loan from Banks (Secured)",
+    "amount_cr": 1.3024,
+    "note": "Non-current: Rs 30.48 Lakhs; Current maturities: Rs 99.76 Lakhs"
+   },
+   {
+    "lender_or_type": "Vehicle loan from Financial Institutions (Secured)",
+    "amount_cr": 2.6015,
+    "note": "Non-current: Rs 220.54 Lakhs; Current maturities: Rs 39.61 Lakhs"
+   },
+   {
+    "lender_or_type": "Loan from financial institution (Secured)",
+    "amount_cr": 10.2478,
+    "note": "Non-current: Rs 221.62 Lakhs; Current maturities: Rs 803.16 Lakhs"
+   },
+   {
+    "lender_or_type": "Cash Credit / Loan for working capital from bank and financial institutions (Secured)",
+    "amount_cr": 99.2724,
+    "note": "Secured by hypothecation of entire current assets, movable assets, lien on term deposits, personal guarantees of MD/WTD, pledge of promoters shares, equitable mortgage of company owned office at Mumbai"
+   },
+   {
+    "lender_or_type": "Loan from related parties - repayable on demand (Unsecured)",
+    "amount_cr": 46.75,
+    "note": "Current borrowing"
+   },
+   {
+    "lender_or_type": "Computer Equipment/Software loans from Hewlett Packard Financial Services (India) Pvt Ltd (Secured)",
+    "amount_cr": 10.2479,
+    "note": "Multiple loans with 16 equal quarterly instalments at 12.51% p.a., secured by hypothecation of assets"
+   },
+   {
+    "lender_or_type": "Vehicle loans from ICICI Bank, HDFC Bank, IDFC First Bank, Mercedes Benz India Pvt Ltd (Secured)",
+    "amount_cr": 3.9043,
+    "note": "Various tenures and interest rates (7.90% to 10.15% p.a.)"
+   },
+   {
+    "lender_or_type": "Valeo Nutra Private Limited",
+    "amount_cr": 4.7941,
+    "note": "Borrowings including interest accrued but not due as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Mr. Sajid Malik",
+    "amount_cr": 22.25,
+    "note": "Borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Mr. Omprakash Hemrajani",
+    "amount_cr": 20.5,
+    "note": "Borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Total Borrowings (Consolidated)",
+    "amount_cr": 160.1741,
+    "note": "As at 31 March 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s MSKA & Associates (current), M/s G. K. Choksi & Co. (proposed new statutory auditors)",
+   "opinion": "The Statutory Auditor's report does not contain any qualifications, reservations, adverse remarks or disclaimers.",
+   "key_audit_matters": [
+    "Delay in appointment of Independent Director whose term expired, leading to non-compliance in constitution of NRC, Shareholders' Relationship Committee, and Risk Management Committee per SEBI LODR Regulations 17(1), 19(1)/19(2), 20(2)/20(2A), 21(2). Non-compliance addressed during the year; compliant as on March 31, 2026.",
+    "Revenue Recognition - fixed-price development contracts with multiple performance obligations, percentage of completion method, significant estimates and judgments",
+    "Assessment of Impairment of Carrying value of Investment in foreign subsidiary \u2013 A.N. Virtual World Tech Limited, Cyprus - DCF model, significant judgments around revenue growth, cashflow forecasting, discount rate",
+    "Capitalization and impairment of Internally generated Intangible asset under development - internally generated GIS database, Ind AS 38 and Ind AS 36 compliance, significant management judgment",
+    "Revenue Recognition - fixed-price development contracts with multiple performance obligations, POC method, estimation of total costs",
+    "Capitalization and impairment of Internally generated Intangible asset under development - assessment of recognition criteria under Ind AS 38, technical feasibility, intention and ability to complete",
+    "Capitalisation of intangible assets under development and impairment assessment"
+   ],
+   "qualifications_or_emphasis": [
+    "Delay in appointment of Independent Director causing committee composition non-compliances (since resolved)",
+    "Pending litigations disclosed in Note 32 to standalone financial statements.",
+    "No long-term contracts including derivative contracts with material foreseeable losses.",
+    "No amounts required to be transferred to Investor Education and Protection Fund.",
+    "Management representations on no funds advanced/loaned/invested to intermediaries or received from funding parties for ultimate beneficiaries.",
+    "Accounting software has audit trail feature operated throughout the year; prior year audit trail preserved.",
+    "No dividend declared or paid during the year.",
+    "Remuneration paid to directors within limits under Section 197 of the Act.",
+    "Did not audit financial statements of one subsidiary (total assets \u20b98,801.47 lakhs, total revenue \u20b93,706.67 lakhs, net profit \u20b91,004.82 lakhs) - audited by other auditor",
+    "Did not audit financial statements of another subsidiary (total assets \u20b93,796.50 lakhs, total revenue \u20b92,829.12 lakhs, net profit \u20b9106.42 lakhs) - unaudited, furnished by Management, considered not material to Group"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Manish Patel ceased as Independent Director w.e.f. December 23, 2025",
+    "Mr. Sumit Sen appointed as Independent Director w.e.f. March 13, 2026",
+    "Mr. Nikhil Alulkar appointed as Chief Executive Officer w.e.f. August 14, 2026",
+    "Mr. Vineet Chopra ceased as Company Secretary w.e.f. 31.05.2025",
+    "Mr. Kushal Jain appointed as Company Secretary & Compliance Officer w.e.f. 01.06.2025",
+    "Proposed appointment of M/s G. K. Choksi & Co. as Statutory Auditors in place of retiring M/s MSKA & Associates",
+    "Mr. Sumit Sen (DIN: 11605716) appointed as Independent Director (Non-Executive Independent) with effect from March 13, 2026 for a term of three years, subject to shareholder approval. Members subsequently approved his appointment through postal ballot, result declared on June 1, 2026.",
+    "Mr. Manish Patel (DIN: 03051315) ceased to be Non-Executive Independent Director upon successful completion of his second term on December 23, 2025.",
+    "Mr. Omprakash Hemrajani, Non-Executive Non-Independent Director (DIN: 07976475) retired by rotation at the 43rd AGM held on September 30, 2025 and was re-appointed at the AGM.",
+    "Dr. Yogita Shukla, Non-Executive Non-Independent Director (DIN: 09286545) retires by rotation at the ensuing AGM and, being eligible, offers herself for re-appointment.",
+    "Mr. Vineet Chopra ceased to be Company Secretary & Compliance Officer with effect from close of business hours on May 31, 2025. Mr. Kushal Jain appointed as Company Secretary & Compliance Officer with effect from June 1, 2025.",
+    "Based on recommendation of Nomination and Remuneration Committee, Board at its meeting held on August 14, 2026 appointed Mr. Nikhil Alulkar as Chief Executive Officer (CEO) and Key Managerial Personnel, designated as Senior Management Personnel, with effect from August 14, 2026. Mr. Aniruddha Roy, then Chief Technology Officer and Senior Management Personnel, re-designated as Chief Innovation Officer. Mr. Dhiman Basu Ray appointed as Chief Technology Officer, designated as Senior Management Personnel, with effect from August 14, 2026.",
+    "Mr. Manish Patel ceased as member of CSR Committee w.e.f December 23, 2025",
+    "Ms. Bharti Sinha appointed as member of CSR Committee w.e.f December 31, 2025",
+    "Delay in appointment of Independent Director (term expired) - addressed during year",
+    "Mr. Kushal Jain appointed as Company Secretary & Compliance Officer w.e.f June 01, 2025",
+    "Mr. Manish Patel completed his tenure as Non-Executive Independent Director on December 23, 2025.",
+    "Re-appointment of Mr. Sajid Malik as Managing Director of the Company.",
+    "Mr. Sumit Sen was appointed as Additional Non-Executive Independent Director effective from March 13, 2026 and was further regularized as Non-Executive Independent Director on May 30, 2026 upon approval of members through postal ballot scrutinizer report / result declared June 1, 2026.",
+    "Mr. Manish Patel retired w.e.f December 23, 2025",
+    "Ms. Bharti Sinha appointed as Chairperson of Audit Committee w.e.f December 31, 2025",
+    "Mr. Sajid Malik re-appointed as Chairman and Managing Director w.e.f September 01, 2025 to August 31, 2028",
+    "Mr. Nikhil Alulkar appointed as CEO and KMP w.e.f August 14, 2026",
+    "Mr. Aniruddha Roy re-designated as Chief Innovation Officer w.e.f August 14, 2026",
+    "Mr. Dhiman Basu Ray appointed as Chief Technology Officer w.e.f August 14, 2026",
+    "Mr. Vineet Chopra re-designated as Sr. Vice President-Legal w.e.f June 01, 2025",
+    "Mr. Bala Pavan Kumar Tsunduru re-designated as Chief Growth Officer w.e.f June 01, 2025",
+    "Mr. Kushal Jain appointed as Company Secretary and Compliance Officer w.e.f June 01, 2025",
+    "Ajay Harish Aggarwal appointed 05/12/2024",
+    "Sumit Sen appointed 13/03/2026",
+    "Late Mrs. Saroja Malik - Whole-time Director (Upto 24.12.2023)",
+    "Mr. Ganesh Acharya - Non-Executive Independent Director (Upto 28.09.2024)",
+    "Ms. Yogita Shukla - Non-Executive Non-Independent Director (From 19.03.2024)",
+    "Mr. Omprakash Hemrajani - Non-Executive Non-Independent Director (From 31.03.2024)",
+    "Mr. Ajay Aggarwal - Non-Executive Non-Independent Director (From 05.12.2024)",
+    "Mr. Manish Patel - Non-Executive Independent Director (Upto 23.12.2025)",
+    "Mr. Sumit Sen - Non-Executive Independent Director (From 13.03.2026)",
+    "Mr. Vineet Chopra - Compliance Officer (Company Secretary upto 31.05.2025)",
+    "Mr. Kushal V Jain - Company Secretary (From 01.06.2025)",
+    "Late Mrs. Saroja Malik Whole-time Director (Upto 24.12.2023)",
+    "Mr. Ganesh Acharya Non - Executive Independent Director (Upto 28.09.2024)",
+    "Ms. Yogita Shukla Non-Executive Non-Independent Director (From 19.03.2024)",
+    "Mr. Omprakash Hemrajani Non-Executive Non-Independent Director (From 31.03.2024)",
+    "Mr. Ajay Aggarwal Non-Executive Non-Independent Director (From 05.12.2024)",
+    "Mr. Manish Patel Non - Executive Independent Director (Upto 23.12.2025)",
+    "Mr. Sumit Sen Non - Executive Independent Director (From 13.03.2026)",
+    "Mr. Vineet Chopra Compliance Officer (Company Secretary upto 31.05.2025)",
+    "Mr.Kushal V Jain Company Secretary (From 01.06.2025)"
+   ],
+   "auditor_change": "Proposed appointment of M/s G. K. Choksi & Co. (Firm Registration No. 125442W) as Statutory Auditors for 5 years from conclusion of 44th AGM until conclusion of 49th AGM, replacing M/s MSKA & Associates",
+   "promoter_holding_pct": 31.5,
+   "top_shareholders": [
+    {
+     "name": "Promoters and Promoter group",
+     "pct": 31.5
+    },
+    {
+     "name": "Directors and their relatives (excluding independent directors and nominee directors)",
+     "pct": 5.17
+    },
+    {
+     "name": "Alternate Investment Funds",
+     "pct": 2.63
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 3.6
+    },
+    {
+     "name": "Foreign Portfolio Investors/FII",
+     "pct": 2.34
+    },
+    {
+     "name": "Non-Resident Indians",
+     "pct": 2.8
+    },
+    {
+     "name": "Individuals and others",
+     "pct": 46.74
+    },
+    {
+     "name": "Clearing Member",
+     "pct": 1.93
+    },
+    {
+     "name": "HUF",
+     "pct": 3.16
+    },
+    {
+     "name": "IEPF",
+     "pct": 0.13
+    },
+    {
+     "name": "Proprietary Firm",
+     "pct": 0.0
+    },
+    {
+     "name": "Kilam Holdings Ltd",
+     "pct": 15.29
+    },
+    {
+     "name": "Late Mrs. Saroja Siraj Malik",
+     "pct": 8.97
+    },
+    {
+     "name": "Sunita Hemrajani",
+     "pct": 5.17
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Sajid Malik",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Nikhil Alulkar",
+     "role": "Chief Executive Officer (w.e.f. August 14, 2026)"
+    },
+    {
+     "name": "Ravi Kumar Jatavallabha V",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Kushal Jain",
+     "role": "Company Secretary & Compliance Officer (w.e.f. 01.06.2025)"
+    },
+    {
+     "name": "Omprakash Hemrajani",
+     "role": "Director"
+    },
+    {
+     "name": "Bharti Sinha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Yogita Shukla",
+     "role": "Director"
+    },
+    {
+     "name": "Ajay Aggarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sumit Sen",
+     "role": "Independent Director (w.e.f. March 13, 2026)"
+    },
+    {
+     "name": "Mr Kushal Jain",
+     "role": "Company Secretary and Compliance Officer, Nodal Officer for IEPF Authority coordination"
+    },
+    {
+     "name": "Mr. Nikhil Alulkar",
+     "role": "Chief Executive Officer (CEO) and Key Managerial Personnel, designated as Senior Management Personnel (appointed August 14, 2026)"
+    },
+    {
+     "name": "Mr. Aniruddha Roy",
+     "role": "Chief Innovation Officer (re-designated from Chief Technology Officer, effective August 14, 2026)"
+    },
+    {
+     "name": "Mr. Dhiman Basu Ray",
+     "role": "Chief Technology Officer, designated as Senior Management Personnel (appointed August 14, 2026)"
+    },
+    {
+     "name": "Mr. Kushal Jain",
+     "role": "Company Secretary & Compliance Officer (appointed June 1, 2025)"
+    },
+    {
+     "name": "Vishnubhatla Ravikumar Jatavallabha",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Kushal Jain",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Omprakash Hemrajani",
+     "role": "Non-executive Director"
+    },
+    {
+     "name": "Bharti Sinha",
+     "role": "Non-executive Independent Director"
+    },
+    {
+     "name": "Mr. Sajid Malik",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Ms. Bharti Sinha",
+     "role": "Non-Executive Chairperson, Independent Director"
+    },
+    {
+     "name": "Mr. Omprakash Hemrajani",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Kushal Jain",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Sajid Malik",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Dr. Yogita Shukla",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Sumit Sen",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Bharti Sinha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ajay Harish Aggarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Aniruddha Roy",
+     "role": "Chief Technology Officer (re-designated as Chief Innovation Officer w.e.f August 14, 2026)"
+    },
+    {
+     "name": "Mr. Sameer Sankhe",
+     "role": "Chief Digital Officer"
+    },
+    {
+     "name": "Mr. Ravi Kumar Jatavallabha V",
+     "role": "Corporate Finance \u2013 Strategy & Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Vineet Chopra",
+     "role": "Sr. Vice President-Legal (re-designated w.e.f June 01, 2025)"
+    },
+    {
+     "name": "Mr. Bala Pavan Kumar Tsunduru",
+     "role": "Chief Growth Officer (re-designated w.e.f June 01, 2025)"
+    },
+    {
+     "name": "Mr. Kushal Jain",
+     "role": "Company Secretary and Compliance Officer (w.e.f June 01, 2025)"
+    },
+    {
+     "name": "Mr. Nikhil Alulkar",
+     "role": "Chief Executive Officer (appointed w.e.f August 14, 2026)"
+    },
+    {
+     "name": "Mr. Dhiman Basu Ray",
+     "role": "Chief Technology Officer (appointed w.e.f August 14, 2026)"
+    },
+    {
+     "name": "Sajid Malik",
+     "role": "Chairman and Managing Director (DIN: 00400366)"
+    },
+    {
+     "name": "Vishnubhatla Ravikumar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Jatavallabha",
+     "role": "Chief Executive Officer (CEO)"
+    },
+    {
+     "name": "Kushal Jain",
+     "role": "Company Secretary and Compliance Officer, Nodal Officer w.e.f June 01, 2025"
+    },
+    {
+     "name": "Ajay Harish Aggarwal",
+     "role": "Director (DIN: 02437996, appointed 05/12/2024)"
+    },
+    {
+     "name": "Bharti Sinha",
+     "role": "Director (DIN: 07985813, appointed 12/08/2022)"
+    },
+    {
+     "name": "Sumit Sen",
+     "role": "Director (DIN: 11605716, appointed 13/03/2026)"
+    },
+    {
+     "name": "Yogita Shukla",
+     "role": "Director (DIN: 09286545, appointed 19/03/2024)"
+    },
+    {
+     "name": "Omprakash Sanwaldas Hemrajani",
+     "role": "Director (DIN: 07976475, appointed 31/03/2024)"
+    },
+    {
+     "name": "Kushal V Jain",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Ravi Kumar Jatavallabha V",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Vineet Chopra",
+     "role": "Compliance Officer (Company Secretary upto 31.05.2025)"
+    },
+    {
+     "name": "Mr. Kushal V Jain",
+     "role": "Company Secretary (From 01.06.2025)"
+    }
+   ],
+   "employees": 947
+  },
+  "other_notable": [
+   "44th AGM scheduled for September 30, 2026 at 3:30 p.m. IST through VC/OAVM",
+   "Remote e-voting: September 23, 2026 (9:00 a.m.) to September 29, 2026 (5:00 p.m.)",
+   "Cut-off date for e-voting: September 18, 2026",
+   "Genesys ESOP Scheme 2026 proposed: up to 30,00,000 equity shares of face value \u20b95 each (\u20b91.5 crore aggregate nominal value)",
+   "ESOP 2026 to be implemented via direct route with cash mechanism, administered by Nomination & Remuneration Committee",
+   "QIP proceeds variation approved: addition of 'Repayment of bank loan' as new object, reallocation of up to \u20b94000 lakh from unutilised proceeds",
+   "Unutilised QIP proceeds as of September 2, 2026: \u20b96,438.96 lakh",
+   "India's first large-scale HD ADAS maps launched December 2025 covering 1+ lakh km using Survey of India CORS network for centimetre-level accuracy",
+   "Varanasi Digital Twin received GovConnect Award and SKOCH Award Gold 2025 in Urban Development category",
+   "Advanced GPR from IDS GeoRadar launched with patented Equalised Scrambling Technology and Wide/Multi Array Antenna Technology",
+   "44th AGM scheduled for 30.09.2026",
+   "Remote e-voting period: 23.09.2026 (9:00 a.m. IST) to 29.09.2026 (5:00 p.m. IST)",
+   "Cut-off date for voting: 18.09.2026",
+   "Scrutinizer: M/s DSM & Associates, Company Secretaries in Practice (M. No. F11777, C.P. No. 9394)",
+   "RTA: Bigshare Services Pvt. Ltd., Pinnacle Business Park, Office No S6-2, 6th Floor, Mahakali Caves Rd, Andheri East, Mumbai 400093",
+   "Dividend for year ended 31.03.2019 unclaimed for 7 years due for transfer to IEPF in November 2026",
+   "Genesys ESOP Scheme 2026 proposed: up to 30,00,000 equity shares of face value INR 5 each (aggregate nominal value INR 1,50,00,000)",
+   "ESOP Exercise Price: not less than face value, determined by Nomination & Remuneration Committee",
+   "ESOP Vesting: minimum 1 year, maximum 7 years; Exercise period: up to 5 years from vesting",
+   "Proposed auditor remuneration: Rs 22,50,000 per financial year plus applicable taxes and reimbursement of out-of-pocket expenses",
+   "Company participating in 100-Day Campaign 'Saksham Niveshak' by IEPFA/MCA",
+   "Exclusive email for shareholder complaints: investors@igenesys.com",
+   "SEBI mandated dematerialisation for all service requests; Form ISR-4 required for service requests",
+   "PAN mandatory for all securities market participants",
+   "Company raised Rs 11,000 lakhs (Rs 110 crore) through Qualified Institutions Placement (QIP) on May 17, 2025.",
+   "QIP proceeds utilization as on March 31, 2026: Setting up of data centre (Rs 0 utilized of Rs 1,770.50 lakhs), Development of tech platform (Rs 141.98 utilized of Rs 2,574.22 lakhs), Creation/updation of map content (Rs 0 utilized of Rs 1,865.16 lakhs), Building sensor capacity (Rs 0 utilized of Rs 1,056.83 lakhs), Strengthening IT infrastructure (Rs 0 utilized of Rs 983.34 lakhs), General corporate purposes (Rs 2,045 utilized of Rs 2,049.15 lakhs), Issue Expenses (Rs 646.98 utilized of Rs 700.80 lakhs). No deviation in utilization.",
+   "Board approved variation/modification in objects of QIP proceeds on September 2, 2026: Reallocation of Rs 4,000 lakhs from unutilized proceeds towards Repayment of bank loan. Revised timeline: Rs 1,925.60 lakhs in FY 2026-27 and Rs 513.36 lakhs in FY 2027-28 for data creation and tech platform development; Rs 4,000 lakhs for loan repayment in FY 2026-27.",
+   "Authorized share capital increased from Rs 27.25 crore (5.45 crore shares of Rs 5 each) to Rs 45 crore (9 crore shares of Rs 5 each) via postal ballot after March 31, 2026.",
+   "Paid-up equity share capital as on March 31, 2026: Rs 20.895 crore (4.179 crore shares of Rs 5 each). After Rights Issue allotment on August 24, 2026: Rs 33.432 crore (6.686 crore shares of Rs 5 each). Rights Issue: 2.507 crore shares at Rs 50 each (premium Rs 45), aggregating Rs 125.37 crore, ratio 3:5.",
+   "Allotted 19,88,140 equity shares pursuant to exercise of stock options under Genesys ESOP Schemes and 17,39,625 shares under QIP during FY 2025-26.",
+   "Genesys ESOP Scheme-2026 proposed for approval (Special Resolution Items 4 & 5). Maximum options per employee not to equal or exceed 1% of issued capital. Fair value method for valuation. Implemented and administered directly by Company. No lock-in period for shares arising from exercise.",
+   "Secretarial Auditor: M/s. Roy Jacob & Co, Company Secretaries (Certificate of Practice no: 8220) appointed for 5 consecutive years from FY 2025-26 to FY 2029-30. No qualifications, reservations or adverse remarks in Secretarial Audit Report (Form MR-3).",
+   "Cost audit not applicable.",
+   "Internal control systems adequate and operating effectively.",
+   "Nomination and Remuneration Policy available at website.",
+   "Board Diversity Policy available at website.",
+   "Dividend Distribution Policy available at website. No dividend recommended for FY 2025-26.",
+   "Transferred Rs 2,241.46 lakhs to Special Economic Zone Re-Investment Reserve Account under Section 10AA of Income Tax Act, 1961. No transfer to General Reserve.",
+   "No deposits accepted during the year.",
+   "Company hired 133 professionals during the year. Employee headcount 947 as of March 31, 2026.",
+   "4 Board meetings held during FY 2025-26.",
+   "Committees: Audit Committee, Nomination and Remuneration Committee, Stakeholders Relationship Committee, Corporate Social Responsibility Committee, Risk Management Committee, Business Responsibility and Sustainability Committee, QIP Committee, Executive Committee.",
+   "Independent Directors confirmed compliance with independence criteria and registration in Independent Directors' Databank.",
+   "No remuneration/commission drawn by Directors from subsidiary companies. No holding company.",
+   "Familiarisation Programme for Independent Directors details in Corporate Governance Report.",
+   "Performance evaluation of Board, Committees and Independent Directors conducted as per Act and SEBI LODR Regulations.",
+   "Authorised Share Capital increased from Rs 27.25 crore to Rs 45.00 crore following Members' approval by postal ballot",
+   "Rights Issue of 2,50,74,226 equity shares of face value Rs 5 each at issue price Rs 50 per share, aggregating ~Rs 125.37 crore, allotted on August 24, 2026",
+   "Issued, subscribed and paid-up equity share capital increased to Rs 33,43,23,015 comprising 6,68,64,603 equity shares of face value Rs 5 each",
+   "QIP proceeds utilisation reported through Monitoring Agency framework",
+   "Amendment to Object Clause of Memorandum of Association approved at 43rd AGM on September 30, 2025 - insertion of sub-clause 3A enabling aerial surveys and aerial photography using airborne sensors and aircraft under NSOP",
+   "Transferred Rs 34,665 unclaimed/unpaid dividend and 6,513 equity shares to IEPF during the year",
+   "CSR obligation for FY2025-26: Rs 128 lakhs; amount spent: Rs 128 lakhs (education, healthcare, women empowerment, sustainability, preserving Indian art and culture, rural development)",
+   "Average net profit for CSR calculation: Rs 6601.35 lakhs; 2% thereof: Rs 132.03 lakhs",
+   "Median remuneration increase for employees: 6.75% for FY2025-26",
+   "Employee remuneration (excl. managerial) average increase: -7.75% (incl. ESOP) / 13.56% (excl. ESOP)",
+   "Managerial remuneration average increase: 12.60% (incl. ESOP) / 13.62% (excl. ESOP)",
+   "Sajid Malik remuneration increase: 25.00%; ratio to median employee remuneration: 24.47:1",
+   "CFO remuneration increase: 6.19% (incl. ESOP) / 6.05% (excl. ESOP)",
+   "CS remuneration increase: 0.04% (incl. ESOP) / 10.42% (excl. ESOP)"
+  ],
+  "risks": [
+   "The proposed variation in the objects of the Issue does not materially alter the overall risk profile of the Company. The proposed change in objects and extension of the utilisation period are intended to ensure optimal deployment of the QIP funds in accordance with the Company's current business requirements and financial priorities, while enhancing the overall efficiency of utilisation of the funds raised. The revised utilisation towards repayment of loan and development of the technology platform and map content is aligned with the Company's existing financial and operational requirements. Accordingly, the proposed variation is not expected to expose the Company to any additional material risks beyond those ordinarily associated with its existing business operations.",
+   "Cybersecurity risk",
+   "Delay in appointment of Independent Director leading to non-compliance with SEBI LODR Regulations (committees constitution)",
+   "Data security and privacy compliance risk due to large volumes of high-resolution aerial imagery, LiDAR, street panoramic imagery, and critical infrastructure data; DPDP Act 2023 enforcement",
+   "Carbon footprint of operations from manned aircraft, UAV operations, ground survey mobile LiDAR vehicles and high-performance computing clusters; potential carbon pricing mechanisms under India's Carbon Credit Trading Scheme",
+   "Ethical AI and GeoAI governance risk from bias or misuse of geospatial AI models breaching emerging AI governance requirements (NITI Aayog Responsible AI framework, BIS AI quality standards, EU AI Act)",
+   "Field worker health, safety and well-being risk from operations in challenging environments: remote terrain, heights, proximity to live traffic on highway corridors and active construction zones",
+   "Foreign currency risk",
+   "Cyber security risks",
+   "Data privacy risks",
+   "Intellectual property infringements risks",
+   "Credit and other material exposures",
+   "Data quality and interoperability issues integrating datasets from drones, satellites, IoT sensors, and field surveys",
+   "Price-based competition in government tenders suppressing margins and constraining platform development investment",
+   "Persistent shortage of skilled geospatial professionals proficient in cloud-native GIS, spatial data science, GeoAI model development",
+   "Rising cybersecurity exposure as spatial platforms move to cloud infrastructure (35% rise in cyber threats targeting geospatial data in 2024)",
+   "Data localisation requirements under Indian law adding compliance obligations",
+   "Revenue concentration in public sector carrying procurement cycle risk (delays in project awards, changes in government priorities, budget reallocation)",
+   "Standardisation gaps across states and ministries leading to data silos and reduced value of geospatial investments",
+   "Pace of technological change requiring continuous capability development investment",
+   "Limited public awareness of geospatial technologies constrains talent pipeline and private capital attraction",
+   "Slow adoption of spatial intelligence in sectors such as insurance, financial services, and retail in India",
+   "Edge-based spatial analytics compressing product cycles and raising bar for technical differentiation",
+   "Need for ongoing capital allocation to R&D, platform engineering, and strategic partnerships balanced against project delivery and margin management",
+   "Unsatisfied (or partially satisfied) performance obligations are subject to variability due to several factors such as terminations, changes in scope of contracts, periodic revalidations of the estimates, economic factors (changes in currency rates, tax laws etc).",
+   "Concentration risk: Top five customers contribute 58.25% of total revenue (FY2026).",
+   "Foreign currency exchange rate risk",
+   "Credit risk from receivables and deposits",
+   "Liquidity risk",
+   "Market risk (interest rates, foreign currency, equity price fluctuations)",
+   "Estimation uncertainty in revenue recognition for fixed-price contracts (POC method)",
+   "Capitalization and impairment risk for internally generated intangible assets",
+   "Assessment of when development expenditure satisfies criteria for capitalisation requires judgment and may have significant impact on amount recognised as intangible asset and timing of expense recognition",
+   "Management assesses whether indicators of impairment exist and whether carrying value of related intangible assets remains recoverable, involving significant assumptions regarding future economic benefits, expected utilisation, technological developments and market conditions",
+   "Impairment of investment in KU Projects Private Limited due to financial position of investee",
+   "Impairment of capital advances due to significant delay in delivery and counterparty communications",
+   "Impairment of other advances based on terms and counterparty communications",
+   "Credit risk on trade receivables with allowance for doubtful debts",
+   "Foreign exchange risk on monetary assets and liabilities",
+   "Supplier finance arrangements and liquidity risk concentration",
+   "The Company's exposure to credit risk is influenced mainly by the individual characteristic of each customer and the concentration of risk from the top few customers.",
+   "The Company does not hedge its risks by using any derivative financial instruments.",
+   "Breaches in meeting the financial covenants would permit the bank to immediately call loans and borrowings."
+  ],
+  "subsidiaries": [
+   {
+    "name": "A.N. Virtual World Tech Ltd",
+    "holding_pct": null,
+    "business": "Subsidiary in Cyprus, material subsidiary as per SEBI LODR Regulations"
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in Kingdom of Saudi Arabia"
+   },
+   {
+    "name": "A N Virtual World Tech Ltd.",
+    "holding_pct": 97.76,
+    "business": "Geospatial technology (turnover Rs 3706.66 lakhs, profit after tax Rs 1004.81 lakhs for FY2025-26)"
+   },
+   {
+    "name": "GME Cyprus (Genesys Middle East Company Limited)",
+    "holding_pct": 100,
+    "business": "Supply and purchase of services (turnover Rs 1987.69 lakhs, profit after tax Rs 17.79 lakhs for FY2025-26)"
+   },
+   {
+    "name": "A. N. Virtual World Tech Ltd, Cyprus",
+    "holding_pct": 97.76,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "A.N. Virtual World Tech Ltd (ANVWTL)",
+    "holding_pct": null,
+    "business": "Material subsidiary incorporated in Cyprus on March 31, 2010"
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary in Kingdom of Saudi Arabia"
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in Kingdom of Saudi Arabia for Middle East geospatial project engagements"
+   },
+   {
+    "name": "Valeo Nutra Private Limited",
+    "holding_pct": null,
+    "business": "Entity in which directors are interested (loan recipient)"
+   },
+   {
+    "name": "A.N. Virtual World Tech Limited",
+    "holding_pct": null,
+    "business": "foreign subsidiary"
+   },
+   {
+    "name": "A. N. Virtual World Tech Limited, Cyprus",
+    "holding_pct": null,
+    "business": "Geospatial sector"
+   },
+   {
+    "name": "Genesys Middle East Limited, Saudi",
+    "holding_pct": null,
+    "business": "Geospatial sector"
+   },
+   {
+    "name": "A.N. Virtual World Tech Limited",
+    "holding_pct": null,
+    "business": "Subsidiary, Cyprus"
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Subsidiary 1 (audited by other auditor)",
+    "holding_pct": null,
+    "business": "Located outside India, financial statements prepared in accordance with accounting principles generally accepted in that country"
+   },
+   {
+    "name": "Subsidiary 2 (unaudited)",
+    "holding_pct": null,
+    "business": "Located outside India, financial statements unaudited and furnished by Management"
+   },
+   {
+    "name": "A.N. Virtual World Tech Limited",
+    "holding_pct": 97.76,
+    "business": ""
+   },
+   {
+    "name": "Genesys Middle East Company Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "M/s A.N. Virtual World Tech Limited, Cyprus",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "M/s Genesys Middle East Company Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "dividend_per_share": 0,
+  "related_party": [
+   {
+    "party": "Genesys Middle East Company Limited (GME)",
+    "nature": "Wholly owned Subsidiary - Supply of services and Purchase of services",
+    "amount_cr": 2.8451
+   },
+   {
+    "party": "Mr. Sajid Malik",
+    "nature": "Chairman and Managing Director - Unsecured loan received",
+    "amount_cr": 25
+   },
+   {
+    "party": "Mr. Omprakash Hemrajani",
+    "nature": "Non-executive Director - Unsecured loan received",
+    "amount_cr": 9.5
+   },
+   {
+    "party": "Related parties",
+    "nature": "Purchases",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Sales",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loans & advances given",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments made",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions in ordinary course of business on arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Genesys Middle East Company Limited, Kingdom of Saudi Arabia",
+    "nature": "Wholly owned subsidiary - Loans and advances during the year",
+    "amount_cr": 7.68
+   },
+   {
+    "party": "Genesys Middle East Company Limited, Kingdom of Saudi Arabia",
+    "nature": "Wholly owned subsidiary - Outstanding amount",
+    "amount_cr": 3.89
+   },
+   {
+    "party": "Valeo Nutra Private Limited",
+    "nature": "Loans and advances during the year",
+    "amount_cr": 4
+   },
+   {
+    "party": "Valeo Nutra Private Limited",
+    "nature": "Outstanding amount",
+    "amount_cr": 4
+   },
+   {
+    "party": "Ventura Guarantee",
+    "nature": "Loans and advances during the year",
+    "amount_cr": 9
+   },
+   {
+    "party": "Ventura Guarantee",
+    "nature": "Outstanding amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "related party loan",
+    "nature": "interest income",
+    "amount_cr": 6.6493
+   },
+   {
+    "party": "Related parties",
+    "nature": "Unbilled revenue due from related parties",
+    "amount_cr": 20.08
+   },
+   {
+    "party": "Related parties",
+    "nature": "Interest accrued from related parties",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loan to related party",
+    "amount_cr": 3.89
+   },
+   {
+    "party": "Related parties",
+    "nature": "Trade receivables from related parties",
+    "amount_cr": 2.18
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loan from related parties - repayable on demand",
+    "amount_cr": 46.75
+   },
+   {
+    "party": "Related parties",
+    "nature": "Interest on loan to related parties",
+    "amount_cr": 0.415
+   },
+   {
+    "party": "Related parties",
+    "nature": "Interest expenses on borrowings from related parties",
+    "amount_cr": 0.9072
+   },
+   {
+    "party": "Related parties",
+    "nature": "Trade payables to related parties",
+    "amount_cr": null
+   },
+   {
+    "party": "A.N. Virtual World Tech Limited",
+    "nature": "Sale to subsidiary",
+    "amount_cr": 0
+   },
+   {
+    "party": "Genesys Middle East Company Limited",
+    "nature": "Sale to subsidiary",
+    "amount_cr": 2.8451
+   },
+   {
+    "party": "Genesys Middle East Company Limited",
+    "nature": "Interest on loan",
+    "amount_cr": 0.415
+   },
+   {
+    "party": "Genesys Middle East Company Limited",
+    "nature": "Project Expenses",
+    "amount_cr": 9.1955
+   },
+   {
+    "party": "Genesys Middle East Company Limited",
+    "nature": "Loans and advances given",
+    "amount_cr": 7.6863
+   },
+   {
+    "party": "Genesys Middle East Company Limited",
+    "nature": "Loans and advances repaid",
+    "amount_cr": 8.4339
+   },
+   {
+    "party": "AddGeo Foundation",
+    "nature": "Consultancy fees paid",
+    "amount_cr": 0.0378
+   },
+   {
+    "party": "Valeo Nutra Private Limited",
+    "nature": "Interest expense on borrowings",
+    "amount_cr": 0.7941
+   },
+   {
+    "party": "Ventura Guaranty Limited",
+    "nature": "Interest expense on borrowings",
+    "amount_cr": 0.1131
+   },
+   {
+    "party": "Valeo Nutra Private Limited",
+    "nature": "Loan received",
+    "amount_cr": 4
+   },
+   {
+    "party": "Ventura Guaranty Limited",
+    "nature": "Loan received",
+    "amount_cr": 9
+   },
+   {
+    "party": "Valeo Nutra Private Limited",
+    "nature": "Loan repaid",
+    "amount_cr": 8
+   },
+   {
+    "party": "Ventura Guaranty Limited",
+    "nature": "Loan repaid",
+    "amount_cr": 9
+   },
+   {
+    "party": "Mr. Ravi Kumar Jatavallabha V",
+    "nature": "Advance repaid",
+    "amount_cr": 0.033
+   },
+   {
+    "party": "Mr. Sajid Malik",
+    "nature": "Salaries including bonuses",
+    "amount_cr": 1.05
+   },
+   {
+    "party": "Mr. Vineet Chopra",
+    "nature": "Salaries including bonuses",
+    "amount_cr": 0.1778
+   },
+   {
+    "party": "Mr. Ravi Kumar Jatavallabha V",
+    "nature": "Salaries including bonuses",
+    "amount_cr": 1.2454
+   },
+   {
+    "party": "Mr. Kushal V Jain",
+    "nature": "Salaries including bonuses",
+    "amount_cr": 0.1923
+   },
+   {
+    "party": "Mr. Ravi Kumar Jatavallabha V",
+    "nature": "Share based payments",
+    "amount_cr": 0.2624
+   },
+   {
+    "party": "Mr. Kushal V Jain",
+    "nature": "Share based payments",
+    "amount_cr": 0.0659
+   },
+   {
+    "party": "Mr. Omprakash Hemrajani",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.0078
+   },
+   {
+    "party": "Mrs Bharti Sinha",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.011
+   },
+   {
+    "party": "Mr. Manish Patel",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.004
+   },
+   {
+    "party": "Mrs Yogita Shukla",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.0003
+   },
+   {
+    "party": "Mr. Ajay Aggarwal",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.0113
+   },
+   {
+    "party": "Mr. Sajid Malik",
+    "nature": "Loan received from director",
+    "amount_cr": 25
+   },
+   {
+    "party": "Mr. Omprakash Hemrajani",
+    "nature": "Loan received from director",
+    "amount_cr": 9.5
+   },
+   {
+    "party": "Mr. Sajid Malik",
+    "nature": "Loan repaid to director",
+    "amount_cr": 2.75
+   },
+   {
+    "party": "Mr. Omprakash Hemrajani",
+    "nature": "Consultancy fees",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Mrs. Sunita Hemrajani",
+    "nature": "Consultancy fees",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Related parties",
+    "nature": "Trade payables - transactions with related party",
+    "amount_cr": null
+   },
+   {
+    "party": "Managing Director / Whole-time Director",
+    "nature": "Personal guarantees for Cash Credit facilities",
+    "amount_cr": null
+   },
+   {
+    "party": "Promoters",
+    "nature": "Pledge of Promoters shares for Cash Credit facilities",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Ganesh Acharya",
+    "nature": "Director Sitting fees",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Omprakash Hemrajani",
+    "nature": "Loan repaid to director",
+    "amount_cr": 0.0
+   }
+  ],
+  "litigation": [
+   "No proceedings initiated/pending under Insolvency and Bankruptcy Code, 2016 during FY2025-26 materially impacting business",
+   "No significant material orders passed by Regulators/Courts impacting going concern status",
+   "BSE and NSE imposed fines for delay in filling vacancy after retirement of Mr. Manish Patel (Non-Executive Independent Director) on December 23, 2025 - non-compliance of Regulation 17(1), 19(1)/19(2), 20(2)/(2A) and 21(2) of SEBI (LODR)",
+   "Income Tax demand of Rs 4.15 lakhs for AY 2012-13 pending at National Faceless Appeal Centre.",
+   "Goods and Service Tax demand of Rs 334.27 lakhs for FY 2016-17 to FY 2022-23 pending at Commissioner (Appeals).",
+   "Claims against the Company amounting to Rs 338.42 lakhs and Rs 932.16 lakhs are not acknowledged as debts in respect of income tax and GST matters as at March 31, 2026 and March 31, 2025, respectively. These matters are pending before appellate authorities.",
+   "Pending litigations disclosed in Note 32 to consolidated financial statements"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax dispute for AY 2012-13",
+    "amount_cr": 0.0415
+   },
+   {
+    "nature": "Goods and Service Tax disputes for FY 2016-17 to FY 2022-23",
+    "amount_cr": 3.3427
+   },
+   {
+    "nature": "Bank Guarantees",
+    "amount_cr": 44.3239
+   },
+   {
+    "nature": "Direct tax matters under appeals",
+    "amount_cr": 0.0415
+   },
+   {
+    "nature": "Indirect tax matters under appeals",
+    "amount_cr": 3.3427
+   },
+   {
+    "nature": "Pending litigations",
+    "amount_cr": null
+   }
+  ]
+ }
+}
