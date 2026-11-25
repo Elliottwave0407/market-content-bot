@@ -1,0 +1,704 @@
+{
+ "isin": "INE985A01022",
+ "name": "Sinclairs Hotels Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30298_SINCLAIR_2025_2026_A_5054075_11082026221528.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 276423,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Sinclairs Hotels Limited operates hotels and resorts across leisure destinations in India, including West Bengal, Sikkim, Andaman & Nicobar Islands, Ooty, and Udaipur.",
+   "geographies": [
+    {
+     "name": "West Bengal",
+     "share_pct": null
+    },
+    {
+     "name": "Sikkim",
+     "share_pct": null
+    },
+    {
+     "name": "Andaman & Nicobar Islands",
+     "share_pct": null
+    },
+    {
+     "name": "Ooty (Tamil Nadu)",
+     "share_pct": null
+    },
+    {
+     "name": "Udaipur (Rajasthan)",
+     "share_pct": null
+    },
+    {
+     "name": "Rajasthan",
+     "share_pct": null
+    },
+    {
+     "name": "Tamil Nadu",
+     "share_pct": null
+    },
+    {
+     "name": "Andaman and Nicobar Islands",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Siliguri",
+     "capacity": ""
+    },
+    {
+     "location": "Darjeeling",
+     "capacity": ""
+    },
+    {
+     "location": "Dooars (Chalsa)",
+     "capacity": ""
+    },
+    {
+     "location": "Ooty",
+     "capacity": ""
+    },
+    {
+     "location": "Port Blair",
+     "capacity": ""
+    },
+    {
+     "location": "Kalimpong",
+     "capacity": ""
+    },
+    {
+     "location": "Burdwan",
+     "capacity": ""
+    },
+    {
+     "location": "Gangtok",
+     "capacity": ""
+    },
+    {
+     "location": "Udaipur",
+     "capacity": "90 rooms and fine villas"
+    },
+    {
+     "location": "Siliguri, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Darjeeling, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Chalsa, Jalpaiguri, West Bengal (Dooars)",
+     "capacity": ""
+    },
+    {
+     "location": "Ootacamund, Tamil Nadu (Ooty)",
+     "capacity": ""
+    },
+    {
+     "location": "Port Blair, Andaman & Nicobar Islands",
+     "capacity": ""
+    },
+    {
+     "location": "Kalimpong, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Burdwan, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Gangtok, Sikkim",
+     "capacity": ""
+    },
+    {
+     "location": "Udaipur, Rajasthan",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Burdwan, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Siliguri, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Darjeeling, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Retreat Kalimpong, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Retreat Dooars (Chalsa), West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Gangtok, Sikkim",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Udaipur, Rajasthan",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Palace Retreat Udaipur, Rajasthan",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Retreat Ooty, Tamil Nadu",
+     "capacity": ""
+    },
+    {
+     "location": "Sinclairs Bayview Port Blair, Andaman and Nicobar Islands",
+     "capacity": ""
+    },
+    {
+     "location": "Udaipur",
+     "capacity": "Hotel at Udaipur Location - Sinclairs Palace Retreat Udaipur on a non cancellable lease of 9 years"
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "leisure tourism",
+    "destination weddings",
+    "conferences",
+    "corporate events",
+    "MICE",
+    "hospitality",
+    "tourism"
+   ],
+   "brands_or_certifications": [
+    "Sinclairs Hotels & Resorts",
+    "Sinclairs",
+    "TripAdvisor Travellers' Favourite Businesses",
+    "Booking.com awards",
+    "Kayak award"
+   ],
+   "products": [
+    {
+     "name": "Room revenue",
+     "share_of_revenue_pct": null,
+     "note": "Recognised once rooms are occupied"
+    },
+    {
+     "name": "Food and beverage sale",
+     "share_of_revenue_pct": null,
+     "note": "Recognised when food and beverages are sold"
+    },
+    {
+     "name": "Banquet services",
+     "share_of_revenue_pct": null,
+     "note": "Recognised when banquet services have been provided as per contract"
+    },
+    {
+     "name": "Rooms, Food and Beverage & Banquets",
+     "share_of_revenue_pct": null,
+     "note": "Revenue is recognised at the transaction price that is allocated to the performance obligation. Revenue includes room revenue, food and beverage sale and banquet services which is recognised once the rooms are occupied, food and beverages are sold and banquet services have been provided as per the contract with the customer."
+    },
+    {
+     "name": "Other Allied Services",
+     "share_of_revenue_pct": null,
+     "note": "In relation to car hire income, laundry income, communication income, health club income, airport transfers income and other allied services, the revenue has been recognised by reference to the time of service rendered."
+    },
+    {
+     "name": "Membership Fee",
+     "share_of_revenue_pct": null,
+     "note": "In relation to Membership fee which entitles the members the access to the club is recognized as income equally over the period of lease on which the club is constructed."
+    },
+    {
+     "name": "Room",
+     "share_of_revenue_pct": 56.8,
+     "note": "Revenue from room rentals"
+    },
+    {
+     "name": "Food and Beverages",
+     "share_of_revenue_pct": 39.0,
+     "note": "Revenue from food and beverage services"
+    },
+    {
+     "name": "Car Hire Income",
+     "share_of_revenue_pct": 1.1,
+     "note": "Revenue from car hire services"
+    },
+    {
+     "name": "Other services",
+     "share_of_revenue_pct": 3.1,
+     "note": "Other miscellaneous services"
+    }
+   ],
+   "raw_materials": [
+    "Food and Beverages",
+    "Store and operating supplies"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Industry outlook for the hospitality sector remains favourable over the near to medium term. Sustained domestic travel demand, recovery in international tourist arrivals, and continued momentum in the MICE and wedding segments are expected to support revenue growth. Improved air connectivity, expansion of regional airports, and increased focus on tourism promotion are likely to further augment demand across key destinations.",
+    "period": "near to medium term"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Expansion by way of both greenfield projects as well as acquiring existing properties on lease",
+    "amount_cr": null,
+    "timeline": "coming years"
+   }
+  ],
+  "risks": [
+   "macroeconomic fluctuations",
+   "inflationary pressures",
+   "changes in discretionary consumer spending",
+   "geo-political developments",
+   "adverse weather conditions at key tourist destinations impacting seasonality and occupancy",
+   "rising costs relating to power, fuel, food inputs, and employee expenses",
+   "high taxation levels",
+   "denial of input GST in hotel's room revenues",
+   "regulatory changes",
+   "competitive intensity in certain markets",
+   "slowdown in economic growth",
+   "disruption in travel sentiment",
+   "Risk of overstatement of revenue due to fraud resulting from pressure to achieve targets and earning expectations",
+   "Actuarial risks such as longevity risk, currency risk, interest rate risk and market (investment) risk from defined benefit plans",
+   "Credit risk from financial instruments",
+   "Liquidity risk from financial instruments",
+   "Market risk from financial instruments",
+   "Credit risk from trade receivables, investments in mutual funds, corporate bonds and bank deposits",
+   "Liquidity risk in meeting financial liabilities",
+   "Market risk from price fluctuations in FVTPL investments (mutual funds)",
+   "Interest rate risk from changes in market interest rates",
+   "Counterparty risk from non-performance of contractual obligations"
+  ],
+  "auditor": {
+   "name": "B S R & Co. LLP",
+   "opinion": "no qualifications, adverse remarks or disclaimer",
+   "key_audit_matters": [
+    "Revenue recognition - risk of overstatement due to fraud from pressure to achieve targets and earning expectations"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Ananna Sarkar resigned as Company Secretary with effect from July 1, 2025",
+    "Mr. Dipak Kumar Shaw appointed as Company Secretary and Compliance Officer with effect from July 2, 2025",
+    "Ms. Ananna Sarkar resigned as Company Secretary w.e.f. July 1, 2025",
+    "Mr. Dipak Kumar Shaw appointed as Company Secretary w.e.f. July 2, 2025",
+    "Ms. Kumkum Gupta ceased as Independent Director (up to 9 November 2024)",
+    "Mr. Vivek Goenka appointed as Independent Director (w.e.f. 8 November 2024)",
+    "Mr. Dipak Kumar Shaw appointed as Company Secretary (w.e.f 02 July 2025)",
+    "Ms. Ananna Sarkar ceased as Company Secretary (up to 01 July 2025)",
+    "Re-appointment of Mr. Sanjeev Kumar Khandelwal (DIN: 00419799) as Independent Director for second term of five years from May 26, 2027 to May 25, 2032 approved by Board on August 6, 2026 subject to shareholder approval",
+    "Re-appointment of Mr. Swajib Swapan Chatterjee as Manager for five years from May 26, 2027 approved by Board on August 6, 2026 subject to shareholder approval"
+   ],
+   "promoter_holding_pct": 63.599,
+   "top_shareholders": [
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 63.599
+    },
+    {
+     "name": "Resident Individual",
+     "pct": 30.047
+    },
+    {
+     "name": "Private Corporate Bodies",
+     "pct": 4.67
+    },
+    {
+     "name": "NRI",
+     "pct": 0.723
+    },
+    {
+     "name": "IEPF",
+     "pct": 0.598
+    },
+    {
+     "name": "Unclaimed demat share Escrow Account",
+     "pct": 0.215
+    },
+    {
+     "name": "NBFCs registered with RBI",
+     "pct": 0.116
+    },
+    {
+     "name": "Foreign Portfolio Investor",
+     "pct": 0.03
+    },
+    {
+     "name": "Trusts",
+     "pct": 0.002
+    },
+    {
+     "name": "Clearing Member",
+     "pct": 0.0
+    },
+    {
+     "name": "Dr. Niren Suchanti",
+     "pct": 23.83
+    },
+    {
+     "name": "Pramina Suchanti",
+     "pct": 13.94
+    },
+    {
+     "name": "Navin Suchanti",
+     "pct": 6.54
+    },
+    {
+     "name": "Pressman Properties Private Limited",
+     "pct": 4.91
+    },
+    {
+     "name": "Preeti Suchanti Khicha",
+     "pct": 4.48
+    },
+    {
+     "name": "Pooja Suchanti Shah",
+     "pct": 4.48
+    },
+    {
+     "name": "Sara Suchanti",
+     "pct": 4.48
+    },
+    {
+     "name": "Pressman Realty Private Limited",
+     "pct": 0.96
+    },
+    {
+     "name": "Mr Navin Chand Suchanti",
+     "pct": null
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Navin Suchanti",
+     "role": "Chairman"
+    },
+    {
+     "name": "Dr. Niren Suchanti",
+     "role": "Promoter and Non-Executive Director"
+    },
+    {
+     "name": "Pramina Suchanti",
+     "role": "Promoter and Non-Executive Director"
+    },
+    {
+     "name": "Sanjeev Khandelwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sushil Kumar Mor",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Vivek Goenka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Swajib Chatterjee",
+     "role": "Manager and Chief Operating Officer"
+    },
+    {
+     "name": "B L Soni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Dipak Kumar Shaw",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Swajib Chatterjee",
+     "role": "Chief Operating Officer"
+    },
+    {
+     "name": "Dipak Kumar Shaw",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Navin Suchanti",
+     "role": "Chairman (DIN: 00273663)"
+    },
+    {
+     "name": "Dr Niren Suchanti",
+     "role": "Director (DIN: 00909388)"
+    },
+    {
+     "name": "Sanjeev Khandelwal",
+     "role": "Director (DIN: 00419799)"
+    },
+    {
+     "name": "Dr Niren Suchanti",
+     "role": "Director"
+    },
+    {
+     "name": "Sanjeev Khandelwal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Navin Suchanti",
+     "role": "Chairman"
+    },
+    {
+     "name": "Dr. Niren Suchanti",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Pramina Suchanti",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Sanjeev Khandelwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sushil Kumar Mor",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Vivek Goenka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. B L Soni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Swajib Chatterjee",
+     "role": "Chief Operating Officer"
+    },
+    {
+     "name": "Mr. Dipak Kumar Shaw",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr Navin Chand Suchanti",
+     "role": "Non-executive Non-Independent Director"
+    },
+    {
+     "name": "Mr Sanjeev Kumar Khandelwal",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr Swajib Swapan Chatterjee",
+     "role": "Manager"
+    }
+   ],
+   "employees": 447
+  },
+  "dividend_per_share": 0.8,
+  "other_notable": [
+   "Uninterrupted dividend record since last 17 years",
+   "Total dividend paid by the Company: Rs 5603.57 lakh",
+   "Buyback history: 2013 (4,95,222 shares at Rs 390), 2022 (7,00,000 shares at Rs 143), 2023 (15,20,000 shares at Rs 200)",
+   "1:1 Bonus issue on 30th January 2024 (2,56,30,000 bonus equity shares of Rs 2 each)",
+   "New hotel commenced operations: Sinclairs Palace Retreat Udaipur (90 rooms and fine villas) on 1st August 2025",
+   "Foreign exchange earnings: Rs 11.55 lakh (previous year Rs 10.95 lakh)",
+   "Foreign exchange expenditure: Rs 3.34 lakh (previous year Rs 6.57 lakh)",
+   "6055 equity shares transferred to IEPF on November 3, 2025",
+   "Unpaid/unclaimed dividend of Rs 1,63,492 transferred to IEPF on October 3, 2025 (pertaining to FY 2017-18)",
+   "No loans, guarantees, or investments under Section 186",
+   "No public deposits accepted",
+   "No material related party transactions",
+   "Business Responsibility and Sustainability Reporting not applicable",
+   "Risk management policy not applicable",
+   "Internal auditor: M/s. Mookherjee Biswas & Pathak, Chartered Accountants",
+   "Secretarial auditor: Mr. Arup Kumar Roy (CP No. 9597) for 5 years from FY 2025-26 to FY 2029-30",
+   "Statutory auditor re-appointed at 51st AGM (July 17, 2023) for term until 56th AGM",
+   "5 Board meetings held during FY 2025-26",
+   "Board evaluation conducted, separate meeting of Independent Directors on February 2, 2026",
+   "Vigil mechanism established, no complaints received during FY 2025-26",
+   "Sexual harassment policy adopted, Internal Committee set up",
+   "Compliance with Secretarial Standards",
+   "Annual Return available on company website",
+   "CEO and CFO certification annexed to Corporate Governance Report",
+   "CSR obligation for FY 2025-26: Rs 33.30 lakh; amount spent: Rs 33.31 lakh",
+   "CSR projects: Setting up a primary school for underprivileged children and a women empowerment centre in Bihar, implemented through Harsha Chand Padmabati Suchanti Charitable Trust",
+   "Company is debt-free as of March 31, 2026",
+   "No credit ratings obtained during FY 2025-26",
+   "Total fees paid to statutory auditors (B S R & Co, LLP) for FY 2025-26: Rs 18.75 lakh excluding GST",
+   "No material related party transactions during FY 2025-26",
+   "No non-compliance, penalties, or strictures by stock exchanges/SEBI in last three years",
+   "Whistleblower policy in place; no personnel denied access to Audit Committee",
+   "No complaints under Sexual Harassment of Women at Workplace Act during FY 2025-26",
+   "Company complied with mandatory and non-mandatory requirements of SEBI Listing Regulations",
+   "Independent Directors meeting held on February 2, 2026",
+   "54th AGM scheduled for September 15, 2026 via video conferencing",
+   "Financial year: April 1 to March 31",
+   "Shares listed on BSE (523023), NSE (SINCLAIR), and CSE (29074); listing fees paid for FY 2026-27",
+   "Registrar and Share Transfer Agent: Niche Technologies Private Limited, Kolkata",
+   "99.81% of shares held in dematerialized form as on March 31, 2026",
+   "No outstanding GDRs/ADRs/Warrants/convertible instruments",
+   "No foreign exchange exposure",
+   "No loans/advances given to firms/companies where directors are interested",
+   "No material subsidiary during FY 2025-26",
+   "Unclaimed shares: 1,10,330 equity shares held by 556 shareholders in Suspense Escrow Bonus Issue Demat Account; 75 equity shares in Suspense Escrow Demat Account as on March 31, 2026",
+   "Company has not paid any remuneration to its directors during the year",
+   "Board of Directors proposed final dividend for the year subject to approval of members at ensuing AGM",
+   "Company used accounting software with audit trail (edit log) facility operating throughout the year for all relevant transactions",
+   "No fraud by the Company or on the Company noticed or reported during the year",
+   "Company has not incurred cash losses in current and immediately preceding financial year",
+   "No resignation of statutory auditors during the year",
+   "Company is not required to be registered under Section 45-IA of RBI Act, 1934",
+   "Company does not hold any investment in subsidiaries, associates or joint ventures during year ended 31 March 2026",
+   "Company has not provided any loans, guarantees or security to other entities during the year",
+   "No proceedings initiated or pending against Company for holding benami property under Prohibition of Benami Property Transactions Act, 1988",
+   "Revenue from operations for year ended 31 March 2026: Rs 5,923.91 lakh (Rs 59.24 crore)",
+   "Profit for the year ended 31 March 2026: Rs 905.44 lakh (Rs 9.05 crore)",
+   "Total comprehensive income for the year ended 31 March 2026: Rs 918.95 lakh (Rs 9.19 crore)",
+   "Basic and Diluted EPS for year ended 31 March 2026: INR 1.77",
+   "Dividends paid during year ended 31 March 2026: Rs 410.08 lakh (Rs 4.10 crore)"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Pending litigations as at 31 March 2026",
+    "amount_cr": null
+   },
+   {
+    "nature": "Claims against the company not acknowledged as debts",
+    "amount_cr": 0.3392
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Lease liabilities (non-current)",
+    "amount_cr": 31.9993,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (current)",
+    "amount_cr": 2.3885,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities",
+    "amount_cr": 34.3878,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities",
+    "amount_cr": 34.3878,
+    "note": "Carrying amount as of 31 March 2026"
+   }
+  ],
+  "litigation": [
+   "Pending litigations as at 31 March 2026 disclosed in Note 34 to financial statements",
+   "No proceedings initiated or pending against the Company for holding any benami property under the Prohibition of Benami Property Transactions Act, 1988"
+  ],
+  "related_party": [
+   {
+    "party": "Related party (CSR expenditure)",
+    "nature": "Donation payments made to related party for CSR",
+    "amount_cr": 0.3331
+   },
+   {
+    "party": "Mr. Navin Suchanti",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Dr. Niren Suchanti",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0025
+   },
+   {
+    "party": "Ms. Pramina Suchanti",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0025
+   },
+   {
+    "party": "Mr. Sushil Kumar Mor",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Ms. Kumkum Gupta",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0
+   },
+   {
+    "party": "Mr. Sanjeev Khandelwal",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Mr. Vivek Goenka",
+    "nature": "Directors' Sitting Fees",
+    "amount_cr": 0.0025
+   },
+   {
+    "party": "Mr. B L Soni",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0.35
+   },
+   {
+    "party": "Mr. Swajib Chatterjee",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0.3041
+   },
+   {
+    "party": "Mr. Dipak Kumar Shaw",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0.069
+   },
+   {
+    "party": "Ms. Ananna Sarkar",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0.0216
+   },
+   {
+    "party": "Mr. Navin Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.2298
+   },
+   {
+    "party": "Dr. Niren Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.9772
+   },
+   {
+    "party": "Ms. Pramina Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.5715
+   },
+   {
+    "party": "Ms. Preeti Suchanti Khicha",
+    "nature": "Dividend paid",
+    "amount_cr": 0.1835
+   },
+   {
+    "party": "Ms. Pooja Suchanti Shah",
+    "nature": "Dividend paid",
+    "amount_cr": 0.1835
+   },
+   {
+    "party": "Ms. Sara Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.1835
+   },
+   {
+    "party": "Pressman Properties Private Limited",
+    "nature": "Dividend paid",
+    "amount_cr": 0.2011
+   },
+   {
+    "party": "Pressman Realty Private Limited",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0394
+   },
+   {
+    "party": "Harsha Chand Padmabati Suchanti Charitable Trust",
+    "nature": "Payment for Corporate Social Responsibility",
+    "amount_cr": 0.3331
+   }
+  ]
+ }
+}

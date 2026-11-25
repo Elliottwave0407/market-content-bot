@@ -1,0 +1,876 @@
+{
+ "isin": "INE923A01015",
+ "name": "SIL Investments Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29639_SILINV_2025_2026_A_2432302_07072026201704.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 582520,
+ "chunks": 15,
+ "chunks_ok": 15,
+ "facts": {
+  "business": {
+   "description": "SIL Investments Limited is a Non-Banking Financial Company (NBFC) registered with RBI, engaged in investment and lending activities. The mainstay of operations is investments in various companies generating dividend income and capital appreciation.",
+   "products": [
+    {
+     "name": "Investment and financing activity",
+     "share_of_revenue_pct": null,
+     "note": "Main business; no separate reportable segments"
+    },
+    {
+     "name": "Investment in securities, debentures and other products",
+     "share_of_revenue_pct": null,
+     "note": "Primary business activity as NBFC"
+    },
+    {
+     "name": "Lending activities",
+     "share_of_revenue_pct": null,
+     "note": "Loans granted to companies"
+    },
+    {
+     "name": "Term Loans to Body Corporate",
+     "share_of_revenue_pct": null,
+     "note": "Unsecured, considered good, measured at amortised cost"
+    },
+    {
+     "name": "Investments in Equity, Debt, Mutual Funds, AIFs",
+     "share_of_revenue_pct": null,
+     "note": "Classified across Amortised Cost, FVTPL, FVOCI, and Cost (subsidiaries)"
+    }
+   ],
+   "value_chain_position": "other",
+   "brands_or_certifications": [
+    "Registered with RBI as ND-SI NBFC",
+    "Listed on BSE Limited and National Stock Exchange of India Limited",
+    "RBI Registered NBFC"
+   ],
+   "customers": [
+    "Body Corporates (borrowers)",
+    "Investee companies",
+    "Group Companies"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Outside India",
+     "share_pct": null
+    },
+    {
+     "name": "Singapore",
+     "share_pct": null
+    }
+   ],
+   "end_markets": [
+    "Financial Services",
+    "Investment Management"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Global growth projected to moderate to around 3.1% in 2026; Indian economy GDP growth for FY 2026-27 projected at 6.9% with inflation at 4.6%; NBFC sector remains resilient with strong capital buffers and improving asset quality.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The management is optimistic about the future outlook of the Company. The Company will expand its activities, consistent with its status as a NBFC.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Market risk from significant quoted investments exposed to stock price fluctuations",
+   "Liquidity risk from asset-liability mismatches",
+   "Interest rate volatility",
+   "Execution risk",
+   "Economic cycle risk",
+   "Adverse movements in financial markets or investee company operations",
+   "The Company is exposed to interest rate risk due to fluctuations in market interest rates, which can impact the returns on its interest-earning investments and the valuation of fixed-income securities.",
+   "While the Indian economy has shown sustained growth over the last several years, a slowdown could cause the business of the Company to suffer.",
+   "The Company has established a well-documented and robust risk management framework. The Board of Directors of the Company has adopted the Risk Management policy which involves identification and prioritization of risk events, categorization of risk into high, medium and low based on the business impact and likelihood of occurrence of risks and risk mitigation and control measures.",
+   "No proceeding initiated or pending for holding benami property under Benami Transactions (Prohibition) Act, 1988",
+   "No material fraud noticed or reported during the year",
+   "No whistle blower complaints received during the year",
+   "No transactions surrendered or disclosed as income during tax assessments",
+   "No cash losses incurred in current and immediately preceding financial year",
+   "Credit risk on loan portfolio (managed via ECL model and RBI prudential norms)",
+   "Market risk on fair value of investments (equity, AIFs, mutual funds)",
+   "Interest rate risk on debt securities portfolio",
+   "Concentration risk in equity holdings (e.g., Chambal Fertilisers ~69% of quoted equity portfolio)",
+   "Credit risk from financial assets including other receivables, cash and cash equivalents, and financial assets measured at amortised cost",
+   "Liquidity risk from difficulty in meeting obligations associated with financial liabilities",
+   "Market risk primarily related to interest rate risk and price risk from investments in equity and debt securities",
+   "Foreign currency risk from long term investment, loans given and other receivables in/from foreign wholly owned subsidiary company",
+   "Fair valuation of unquoted investments involves significant estimation uncertainty, subjective assumptions, and the application of significant judgment.",
+   "Credit risk from other receivables, cash and cash equivalents, and financial assets measured at amortised cost",
+   "Market risk including interest rate risk and price risk from investments in equity and debt securities"
+  ],
+  "subsidiaries": [
+   {
+    "name": "RTM Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "SCM Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "RTM Properties Limited",
+    "holding_pct": null,
+    "business": "Properties"
+   },
+   {
+    "name": "SIL Properties Limited",
+    "holding_pct": null,
+    "business": "Properties"
+   },
+   {
+    "name": "SIL International Pte. Limited",
+    "holding_pct": null,
+    "business": "International (Foreign subsidiary)"
+   },
+   {
+    "name": "RTM Investment & Trading Co. Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "SCM Investment & Trading Co. Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "RTM Properties Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "SIL Properties Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "SIL International Pte. Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "RTM Investment & Trading Co. Limited",
+    "holding_pct": 84.79,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "SCM Investment & Trading Co. Limited",
+    "holding_pct": 80.52,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "SIL Properties Ltd.",
+    "holding_pct": 36.18,
+    "business": "Properties"
+   },
+   {
+    "name": "RTM Properties Ltd.",
+    "holding_pct": 36.07,
+    "business": "Properties"
+   },
+   {
+    "name": "SIL International Pte. Ltd.",
+    "holding_pct": 100,
+    "business": "International"
+   },
+   {
+    "name": "RTM INVESTMENT & TRADING CO. LTD.",
+    "holding_pct": null,
+    "business": "NBFC Registered with Reserve Bank of India bearing registration Number 05.00345 dated 26th February, 1998. The Company is not carrying any manufacturing business and is engaged in investment activities."
+   },
+   {
+    "name": "SCM INVESTMENT & TRADING CO. LTD.",
+    "holding_pct": null,
+    "business": "NBFC Registered with Reserve Bank of India bearing registration Number 05.02417 dated 16th May, 1998. The Company is not carrying any manufacturing business and is engaged in investment activities."
+   },
+   {
+    "name": "RTM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "SCM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "SIL International PTE. Limited",
+    "holding_pct": null,
+    "business": "Overseas investment vehicle"
+   },
+   {
+    "name": "SIL Properties Ltd.",
+    "holding_pct": null,
+    "business": "Property holding (step-down subsidiary)"
+   },
+   {
+    "name": "RTM Properties Ltd.",
+    "holding_pct": null,
+    "business": "Property holding (step-down subsidiary)"
+   },
+   {
+    "name": "SCM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "RTM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "SIL Properties Ltd.",
+    "holding_pct": null,
+    "business": "Step-down Subsidiary"
+   },
+   {
+    "name": "RTM Properties Ltd.",
+    "holding_pct": null,
+    "business": "Step-down Subsidiary"
+   },
+   {
+    "name": "SIL International PTE. Ltd",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "SIL International Pte. Ltd.",
+    "holding_pct": null,
+    "business": "Overseas Subsidiary"
+   },
+   {
+    "name": "RTM Investments and Trading Company Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "SCM Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "SIL International Pte Ltd.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "RTM investment & Trading Company Limited",
+    "holding_pct": 84.79,
+    "business": ""
+   },
+   {
+    "name": "SCM investment & Trading Company Limited",
+    "holding_pct": 80.52,
+    "business": ""
+   },
+   {
+    "name": "SIL International PTE Ltd.",
+    "holding_pct": 100.0,
+    "business": ""
+   },
+   {
+    "name": "SIL Properties Limited",
+    "holding_pct": 85.11,
+    "business": ""
+   },
+   {
+    "name": "RTM Properties Limited",
+    "holding_pct": 97.74,
+    "business": ""
+   },
+   {
+    "name": "RTM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "auditor": {
+   "name": "M/s. DMKH & Co., Chartered Accountants",
+   "opinion": "No qualification, reservation, adverse remark, reporting of any fraud under section 143(12) or disclaimer",
+   "qualifications_or_emphasis": [
+    "The Company is in the regime of unqualified financial statement.",
+    "The Company has used accounting software for maintaining its books of account, which has a feature of recording audit trail (edit log) facility and the same has operated throughout the year for all relevant transactions recorded in the software at application level. However, for the database level we are unable to comment as the necessary information required for Reporting under this section was not available.",
+    "No qualifications or adverse remarks in CARO report",
+    "No report filed under section 143(12) in Form ADT-4",
+    "Internal financial controls adequate and operating effectively as at 31st March 2026"
+   ],
+   "key_audit_matters": [
+    "Valuation of Investments - As at 31st March, 2026, the total carrying value of investments were Rs. 202,873.08 Lakhs. Investments include quoted and unquoted equity shares, bonds, alternate investments funds and mutual funds. Fair valuation of unquoted investments involves significant estimation uncertainty, subjective assumptions and the application of significant judgment.",
+    "Valuation of Investments (Consolidated) - Total carrying value of investments was Rs. 2,67,496.38 Lakhs as at 31st March 2026. Fair valuation of unquoted investments involves significant estimation uncertainty, subjective assumptions, and significant judgment."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Suresh Kumar Khandelia appointed as Independent Director for 5 years effective 01st January, 2026",
+    "Mr. C. S. Nopany retires by rotation and is eligible for re-appointment at forthcoming AGM",
+    "Mr. Suresh Kumar Khandelia was appointed as an Independent Director of the Company w.e.f. 01st January, 2026 for a period of 5 (five) years.",
+    "Appointment of Mr. Suresh Kumar Khandelia (DIN: 00373797) as an Independent Director of the Company (Special Resolution) approved via postal ballot on 21st November, 2025.",
+    "Appointment of M/s. CSM & Co., Practicing Company Secretaries, as Secretarial Auditors and fixing their remuneration approved at 91st AGM on 29th July, 2025.",
+    "Re-appointment of Mrs. Shalini Nopany as Managing Director approved at 90th AGM on 30th July, 2024.",
+    "Appointment of Mr. Sanjay Kumar Maheswary as an Independent Director approved at 90th AGM on 30th July, 2024.",
+    "Re-appointment of Mr. Shrikant Mantri as an Independent Director approved at 89th AGM on 19th August, 2023.",
+    "Mr. Suresh Kumar Khandelia (DIN: 00373797) was appointed as an Independent Director w.e.f. 01st January, 2026 for a period of five years.",
+    "Mr. Suresh Kumar Khandelia (DIN: 00373797) was appointed as an Independent Director of the Company for a term of five (5) consecutive years, commencing from 1st January, 2026 up to 31st December, 2030.",
+    "Mr. Suresh Kumar Khandelia appointed as Independent director (w.e.f 01.01.2026)",
+    "Mr. C. S. Nopany (DIN - 00014587) retires by rotation and offers himself for re-appointment"
+   ],
+   "promoter_holding_pct": 63.79,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 63.79
+    },
+    {
+     "name": "Bodies Corporate/LLP",
+     "pct": 16.67
+    },
+    {
+     "name": "Individuals/ HUF/Trusts",
+     "pct": 17.42
+    },
+    {
+     "name": "Ganges Securities Ltd.",
+     "pct": 19.06
+    },
+    {
+     "name": "New India Retailing and Investment Ltd.",
+     "pct": 10.92
+    },
+    {
+     "name": "Hargaon Investment & Trading Co. Ltd.",
+     "pct": 10.77
+    },
+    {
+     "name": "Yashovardhan Investment & Trading Co. Ltd.",
+     "pct": 9.35
+    },
+    {
+     "name": "Ronson Traders Ltd.",
+     "pct": 6.12
+    },
+    {
+     "name": "Ronsan Traders Ltd.",
+     "pct": 6.12
+    }
+   ],
+   "auditor_change": "Appointment of M/s. CSM & Co., Practicing Company Secretaries, as Secretarial Auditors approved at 91st AGM on 29th July, 2025."
+  },
+  "people": {
+   "employees": 7,
+   "key_management": [
+    {
+     "name": "Mrs. Shalini Nopany",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Director-in-Charge"
+    },
+    {
+     "name": "Mr. Manoj Kumar Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Lokesh Gandhi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Director-in-Charge (Executive Director)"
+    },
+    {
+     "name": "Mr. C. S. Nopany",
+     "role": "Non-Executive Chairman"
+    },
+    {
+     "name": "Mr. Abhrajit Dutta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Shrikant Mantri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sanjay Kumar Maheswary",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Khandelia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Lokesh Gandhi",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. C. S. Nopany",
+     "role": "Chairman / Non-Executive Director"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Director-in-Charge / Executive Director"
+    },
+    {
+     "name": "C.S. Nopany",
+     "role": "Chairman (DIN: 00014587)"
+    },
+    {
+     "name": "Shalini Nopany",
+     "role": "Managing Director (DIN: 00077299)"
+    },
+    {
+     "name": "Brij Mohan Agarwal",
+     "role": "Director-In-Charge (DIN: 03101758)"
+    },
+    {
+     "name": "Abhrajit Dutta",
+     "role": "Director (DIN: 0546556)"
+    },
+    {
+     "name": "Manoj Kumar Jain",
+     "role": "Chief Financial Officer (PAN: ACUPJ7443E)"
+    },
+    {
+     "name": "Lokesh Gandhi",
+     "role": "Company Secretary & Compliance Officer (Membership No. F9053)"
+    },
+    {
+     "name": "Mr. C.S. Nopany",
+     "role": "Chairman and relative of Managing Director"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Director-In-Charge"
+    },
+    {
+     "name": "Mr. Sanjay Kumar Maheswary",
+     "role": "Independent director"
+    },
+    {
+     "name": "Mr. Abhrajit Dutta",
+     "role": "Independent director"
+    },
+    {
+     "name": "Mr. Shrikant Mantri",
+     "role": "Independent director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Khandelia",
+     "role": "Independent director (w.e.f 01.01.2026)"
+    },
+    {
+     "name": "Mr. Lokesh Gandhi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "C.S. Nopany",
+     "role": "Chairman"
+    },
+    {
+     "name": "Shalini Nopany",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Brij Mohan Agarwal",
+     "role": "Director-In-Charge"
+    },
+    {
+     "name": "Abhrajit Dutta",
+     "role": "Director"
+    },
+    {
+     "name": "Manoj Kumar Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Lokesh Gandhi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. C.S. Nopany",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Suresh Kumar Khandelia",
+     "role": "Independent director"
+    },
+    {
+     "name": "Lokesh Gandhi",
+     "role": "Company Secretary and Compliance Officer"
+    }
+   ]
+  },
+  "dividend_per_share": 2.5,
+  "other_notable": [
+   "Capital to Risk Assets Ratio (CRAR) above regulatory requirement of 15%",
+   "Asset size Rs. 2,18,301.29 lakhs",
+   "Quoted investments portfolio at market value Rs. 1,68,619.57 lakhs as on 31st March, 2026",
+   "Loan disbursement of Rs. 50 crore during the year classified as non-current asset",
+   "No manufacturing activity; energy conservation and technology absorption not applicable",
+   "No complaints received under Sexual Harassment of Women at Workplace Act",
+   "Secretarial Audit Report contains no qualification, reservation, adverse remark or disclaimer",
+   "The Company has taken D&O Insurance policy for all its Directors and members of the Senior Management.",
+   "The Company has an independent internal control system which is commensurate with the size and scale of the Company.",
+   "The risk appetite is determined by the Board from time to time. The Company has in place specially mandated Committees such as ALCO, Risk Management Committee, besides Nomination and Remuneration Committee and Audit Committee.",
+   "The Company's treasury actively manages asset liability positions in accordance with the overall guidelines laid down by the management in the Asset Liability Management (ALM) framework.",
+   "CSR Committee meetings held on 05th May, 2025 and 04th February, 2026.",
+   "Asset-Liability Committee meetings held on 19th April, 2025; 21st July, 2025; 21st October, 2025 and 21st January, 2026.",
+   "Risk Management Committee meetings held on 06th November, 2025 and 30th March, 2026.",
+   "IT Strategy Committee meetings held on 05th May, 2025; 14th August, 2025; 12th November, 2025; and 04th February, 2026.",
+   "Review Committee constituted but no meeting held during the year.",
+   "Postal ballot resolutions passed on 21st November, 2025: Appointment of Mr. Suresh Kumar Khandelia as Independent Director; Approve granting of loan to a Related Party being a Material Related Party Transaction; Approve Material Related Party Transaction(s) with entities / Qualified Bodies Corporate, the related parties.",
+   "92nd AGM proposed on Friday, 31st July, 2026 at 3.00 p.m. through Video Conference / Other Audio-Visual Means.",
+   "Record date for dividend: 24th July, 2026.",
+   "Dividend payment date (tentative): 05th August, 2026.",
+   "Listed on BSE Limited and National Stock Exchange of India Limited.",
+   "CIN: L17301RJ1934PLC002761.",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited).",
+   "Unclaimed Suspense Account: 224 folios, 41,849 shares as on 31st March, 2026.",
+   "Suspense Escrow Demat Account (SEDA): 1 folio, 150 shares as on 31st March, 2026.",
+   "99.98% of equity share capital held in dematerialized form as on 31st March, 2026.",
+   "Company is in full compliance with all mandatory requirements of Corporate Governance as per Listing Regulations, 2015.",
+   "No materially significant related party transaction during the year having potential conflict with interests of the Company.",
+   "No proceeds raised from public issue, rights issue, preferential issue, etc. during the year.",
+   "Whistle Blower Policy, Remuneration and Compensation Policy, Policy on Related Party Transactions, CSR Policy, Material Subsidiary Policy, Board Diversity Policy available on company website.",
+   "Special window for lodgement of physical share transfer requests open till 4th February, 2027.",
+   "The Company has not entered into any transaction which is not on an arm's length basis.",
+   "No material contracts or arrangements or transactions at arm's length basis were reported except loans to subsidiaries and other entities which are not covered under Section 188(1) of the Companies Act, 2013.",
+   "The Company has obtained a certificate from M/s. CSM & Co., Practicing Company Secretaries stating that none of the Directors on the Board have been debarred or disqualified by SEBI / Ministry of Corporate Affairs or any such statutory authority.",
+   "The Company has not received any complaint pertaining to sexual harassment during the year under review.",
+   "The Company has complied with all mandatory requirements of the Listing Regulations, 2015 and substantially complied with discretionary requirements under Regulation 27.",
+   "CSR obligation for FY 2025-26 was Rs. 8.05 lakhs; actual spend was Rs. 9.00 lakhs (excess Rs. 0.95 lakhs).",
+   "CSR spend of Rs. 9.00 lakhs was on Education Promotion Initiatives through Manav Vikas Vidyalaya Trust in Ranchi, Jharkhand.",
+   "Unclaimed dividend details from FY 2018-19 to FY 2024-25 are disclosed with due dates for transfer to IEPF.",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited, Mumbai.",
+   "Registered Office: Pachpahar Road, Bhawanimandi - 326 502, Rajasthan.",
+   "The members of the Company, by way of a special resolution passed through postal ballot on 27th December, 2025, approved the granting of loan, being a material related party transaction.",
+   "The members of the Company also approved the material related party transaction(s) with entities / Qualified Bodies Corporate by way of a special resolution passed through postal ballot on 27th December, 2025.",
+   "Secretarial Audit conducted by CSM & CO. for SIL Investments Limited and by Arun Kumar Maitra & Co. for subsidiaries RTM Investment & Trading Co. Ltd. and SCM Investment & Trading Co. Ltd. for financial year ended 31st March, 2026.",
+   "The Board of Directors of the Company have proposed final dividend for the year which is subject to the approval of the members at the ensuing Annual General Meeting.",
+   "Company has not revalued Property, Plant and Equipment, investment property, or intangible assets during the year",
+   "No inventories held as at year end (NBFC business)",
+   "No working capital limits sanctioned in excess of Rs 5 crore from banks/financial institutions",
+   "Loans granted: Aggregate amount provided during year - Other: Rs 5,000 lakhs; Balance outstanding as at 31st March 2026 - Other: Rs 5,000 lakhs",
+   "Loans and investments comply with Sections 185 and 186 of Companies Act, 2013",
+   "No deposits accepted from public",
+   "Cost records maintenance not prescribed under Section 148(1)",
+   "Regular in depositing undisputed statutory dues (GST, Provident Fund, ESI, Income Tax)",
+   "No disputed statutory dues unpaid",
+   "No unrecorded transactions surrendered as income in tax assessments",
+   "No money raised via IPO, FPO, debt instruments, term loans, preferential allotment, or private placement",
+   "Not a Nidhi Company",
+   "Internal audit system commensurate with size and nature of business; internal auditor's report received and considered",
+   "No non-cash transactions with directors or connected persons",
+   "Obtained requisite registration as NBFC under Section 45-IA of RBI Act, 1934"
+  ],
+  "related_party": [
+   {
+    "party": "Subsidiaries and other entities",
+    "nature": "Loans",
+    "amount_cr": null
+   },
+   {
+    "party": "entities / Qualified Bodies Corporate",
+    "nature": "material related party transaction(s)",
+    "amount_cr": null
+   },
+   {
+    "party": "not specified",
+    "nature": "granting of loan, being a material related party transaction",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions in compliance with Sections 177 and 188 of Companies Act, 2013",
+    "amount_cr": null
+   },
+   {
+    "party": "SIL International PTE Ltd., Singapore",
+    "nature": "Investment in Equity shares/Ordinary shares",
+    "amount_cr": 34.79
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Intercorporate Loan",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "SIL International PTE Ltd., Singapore",
+    "nature": "Interest income",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Interest income",
+    "amount_cr": 1.07
+   },
+   {
+    "party": "Mrs. Shalini Nopany",
+    "nature": "Remuneration and other perquisites",
+    "amount_cr": 1.44
+   },
+   {
+    "party": "Mr. Manoj Kumar Jain",
+    "nature": "Remuneration and other perquisites",
+    "amount_cr": 0.84
+   },
+   {
+    "party": "Mr. Vikas Baheti",
+    "nature": "Remuneration and other perquisites",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "Mr. Lokesh Gandhi",
+    "nature": "Remuneration and other perquisites",
+    "amount_cr": 0.36
+   },
+   {
+    "party": "Mr. C.S. Nopany",
+    "nature": "Commission",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Brij Mohan Agarwal",
+    "nature": "Commission",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Sanjay Kumar Maheswary",
+    "nature": "Commission",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Sanjay Goenka",
+    "nature": "Commission",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Abhrajit Dutta",
+    "nature": "Commission",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Shrikant Mantri",
+    "nature": "Commission",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Commission",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. C.S. Nopany",
+    "nature": "Sitting fees",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Sanjay Goenka",
+    "nature": "Sitting fees",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Sanjay Kumar Maheswary",
+    "nature": "Sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Abhrajit Dutta",
+    "nature": "Sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Shrikant Mantri",
+    "nature": "Sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Sitting fees",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Unsecured Loan",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "Related Parties (Aggregate)",
+    "nature": "Loans sanctioned during the year",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "Related Parties (Aggregate)",
+    "nature": "Outstanding loans",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "Related Parties (Aggregate)",
+    "nature": "Provisions held against loans",
+    "amount_cr": 0.2
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Intercorporate Loan Given",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Interest Income",
+    "amount_cr": 1.0712
+   },
+   {
+    "party": "Mrs. Shalini Nopany",
+    "nature": "Remuneration",
+    "amount_cr": 1.4405
+   },
+   {
+    "party": "Mr. Manoj Kumar Jain",
+    "nature": "Remuneration",
+    "amount_cr": 0.8357
+   },
+   {
+    "party": "Mr. Lokesh Gandhi",
+    "nature": "Remuneration",
+    "amount_cr": 0.355
+   },
+   {
+    "party": "Mr. C.S. Nopany",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mr. Brij Mohan Agarwal",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mr. Sanjay Kumar Maheswary",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mr. Abhrajit Dutta",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mr. Shrikant Mantri",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Commission to Directors",
+    "amount_cr": 0.0013
+   },
+   {
+    "party": "Mr. C.S. Nopany",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0045
+   },
+   {
+    "party": "Mr. Sanjay Kumar Maheswary",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0058
+   },
+   {
+    "party": "Mr. Abhrajit Dutta",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0078
+   },
+   {
+    "party": "Mr. Shrikant Mantri",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0073
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0005
+   },
+   {
+    "party": "entities / Qualified Bodies Corporate",
+    "nature": "loan contracts / arrangements / transactions deemed to be Material Related Party Transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Loan given",
+    "amount_cr": 50
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Investment in equity shares",
+    "amount_cr": 2.4413442
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Investment in equity shares by subsidiary",
+    "amount_cr": 2.07
+   },
+   {
+    "party": "Sutlej Textiles and Industries Limited",
+    "nature": "Rent paid on property leased",
+    "amount_cr": 0.0033
+   }
+  ],
+  "litigation": [
+   "The Company does not have any pending litigations on its financial position in the Standalone Financial Statements (Refer Note 32 (b) of the Ind AS Standalone Financial Statements).",
+   "No proceedings initiated or pending for holding benami property under Benami Transactions (Prohibition) Act, 1988",
+   "The Group has disclosed the impact of pending litigations on its financial position in the Consolidated Financial Statements (Refer Note 33 of the Ind AS Consolidated Financial Statements)."
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Borrowings (other than debt securities)",
+    "amount_cr": 0,
+    "note": "No borrowings outstanding as at 31st March 2026 and 31st March 2025"
+   },
+   {
+    "lender_or_type": "Secured Loan - Short Term Maturity (within 12 Months)",
+    "amount_cr": 0,
+    "note": "Nil as at 31st March 2026 and 2025"
+   },
+   {
+    "lender_or_type": "Secured Loan - Long Term Maturity",
+    "amount_cr": 0,
+    "note": "Nil as at 31st March 2026 and 2025"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0.0,
+    "note": "The Company has no borrowings, debt securities, deposits, or subordinated debt as at 31st March 2026 and 31st March 2025."
+   },
+   {
+    "lender_or_type": "Secured Loan",
+    "amount_cr": 0,
+    "note": "Till end of 31.03.2026 (During the financial year 2025-26), the Company has no loan outstanding."
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax matters in dispute or under appeal",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Estimated amount of contracts remaining to be executed on capital account and not provided for (net of advances)",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Uncalled Liability as partly paid shares held",
+    "amount_cr": 1.2
+   },
+   {
+    "nature": "Income tax matters in dispute or under appeal",
+    "amount_cr": 0.0
+   }
+  ]
+ }
+}

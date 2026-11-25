@@ -1,0 +1,903 @@
+{
+ "isin": "INE199C01026",
+ "name": "Advani Hotels & Resorts (India) Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30964_ADVANIHOTR_2025_2026_A_17527888_01092026130537.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 422386,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Advani Hotels & Resorts (India) Limited operates the Caravela Beach Resort located at Varca Beach, Salcete, Goa.",
+   "plants": [
+    {
+     "location": "Varca Beach, Salcete, Goa 403721",
+     "capacity": ""
+    },
+    {
+     "location": "Caravela Beach Resort, Goa, India",
+     "capacity": "5-star deluxe classification valid till December 2028"
+    },
+    {
+     "location": "Goa, India",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Varca, Goa",
+     "capacity": ""
+    },
+    {
+     "location": "Goa, India",
+     "capacity": "Beach-front resort with 62 guestrooms being refurbished in one wing; building a larger banquet hall"
+    },
+    {
+     "location": "Varca Beach, Varca Village, Salcette \u2013 403 721, Goa",
+     "capacity": ""
+    },
+    {
+     "location": "South Goa",
+     "capacity": "five-star Deluxe Resort"
+    },
+    {
+     "location": "Caravela Beach Resort Goa",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "service",
+   "brands_or_certifications": [
+    "Caravela Beach Resort",
+    "Caravela Beach Resort (owned brand)",
+    "5-Star Deluxe classification by Ministry of Tourism (valid till December 2028)",
+    "Booking.com Traveller Review Award (9 consecutive years 2018-2026)",
+    "Booking.com Level 3 Travel Sustainable Badge (2023)",
+    "MakeMyTrip/Goibibo Guest Review Award (June 2026)",
+    "Tripadvisor Certificate of Excellence (2018, 2019)",
+    "Tripadvisor Travellers' Choice Award (2021, 2023)",
+    "Bureau Veritas COV-SAFE Platinum Grade (97.3%, January 2021)",
+    "Diversey COVID-19 Safety Program Certificate (97%, February 2021)",
+    "HolidayCheck Germany Award (2020, 5.0/6.0 stars)",
+    "Serenity Holidays UK Certificate of Excellence (2019)",
+    "Goa Red Ribbon Warrior Award (2018)",
+    "Best Employer Award in Goa (2019)",
+    "Best Shack in Goa by Food Connoisseurs of India (2026)",
+    "Times Food & Nightlife Award (2026)",
+    "2025 KAYAK Travel Award (Top 3% property)",
+    "Iconic 5-star Deluxe Beach Resort in Goa by Times Hospitality Icons (2025)",
+    "Best MICE Resort of Goa in India MICE Awards (2025)",
+    "Best Hotels and Resorts by IHC London & IIHM Hospitality group (2026)",
+    "Caravela Beach Resort Goa",
+    "Beach Hut (dining brand)",
+    "CTI-certified premium series Cooling Tower",
+    "Opera Cloud platform",
+    "MICROS Simphony"
+   ],
+   "products": [
+    {
+     "name": "Hotel accommodation and hospitality services",
+     "share_of_revenue_pct": null,
+     "note": "Includes room revenue, food & beverage, banquets, MICE, and beach restaurant operations"
+    },
+    {
+     "name": "Caravela Beach Resort Goa",
+     "share_of_revenue_pct": null,
+     "note": "Luxury beach resort with dining destinations including Beach Hut"
+    },
+    {
+     "name": "Room Income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 612.43 million in FY 2025-26"
+    },
+    {
+     "name": "Food, Beverages & Banqueting Income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 361.52 million in FY 2025-26"
+    },
+    {
+     "name": "Other Operating Income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 93.11 million in FY 2025-26 from ancillary resort operations such as spa and health club, laundry, guest transportation, telephone"
+    },
+    {
+     "name": "Room revenue",
+     "share_of_revenue_pct": null,
+     "note": "Recognised once rooms are occupied"
+    },
+    {
+     "name": "Food and beverage sale",
+     "share_of_revenue_pct": null,
+     "note": "Recognised once food and beverages are sold"
+    },
+    {
+     "name": "Banquet services",
+     "share_of_revenue_pct": null,
+     "note": "Recognised once banquet services have been provided as per contract with customer"
+    },
+    {
+     "name": "Room Sale",
+     "share_of_revenue_pct": 57.4,
+     "note": "Revenue from room sales for year ended March 31, 2026"
+    },
+    {
+     "name": "Food Sale",
+     "share_of_revenue_pct": 27.8,
+     "note": "Revenue from food sales for year ended March 31, 2026"
+    },
+    {
+     "name": "Wine, Liquor and Other beverages",
+     "share_of_revenue_pct": 6.1,
+     "note": "Revenue from beverages for year ended March 31, 2026"
+    },
+    {
+     "name": "Guest sight-seeing and transportation",
+     "share_of_revenue_pct": 3.6,
+     "note": "Other operating revenue for year ended March 31, 2026"
+    },
+    {
+     "name": "Health Club, SPA, Beauty Parlour and Swimming Pool",
+     "share_of_revenue_pct": 1.7,
+     "note": "Other operating revenue for year ended March 31, 2026"
+    },
+    {
+     "name": "Others",
+     "share_of_revenue_pct": 3.4,
+     "note": "Other operating revenue for year ended March 31, 2026"
+    }
+   ],
+   "customers": [
+    "Domestic leisure travelers",
+    "International tourists via Foreign Inbound Tour Operators/Charters",
+    "Wedding segment clients",
+    "MICE (Meetings, Incentives, Conferences, Exhibitions) clients",
+    "Online travel agency customers (Booking.com, MakeMyTrip, Goibibo)",
+    "Domestic and international travellers",
+    "Wedding and event clients",
+    "Tour Operators",
+    "Travel Agents",
+    "Booking.com",
+    "MakeMyTrip",
+    "repeat guests",
+    "Domestic leisure travellers",
+    "International tourists",
+    "Corporate/social event clients"
+   ],
+   "geographies": [
+    {
+     "name": "Goa, India (South Goa)",
+     "share_pct": null
+    },
+    {
+     "name": "Goa, India",
+     "share_pct": null
+    },
+    {
+     "name": "Goa, India",
+     "share_pct": 100
+    }
+   ],
+   "end_markets": [
+    "Hospitality and tourism",
+    "Luxury beach resort segment",
+    "Wedding and events market",
+    "MICE tourism",
+    "Luxury hospitality",
+    "Destination weddings",
+    "Leisure travel",
+    "tourism",
+    "hospitality",
+    "Weddings and events",
+    "Conferences"
+   ],
+   "raw_materials": [
+    "Food and beverages",
+    "Crockery",
+    "Cutlery",
+    "Glassware",
+    "Silver ware",
+    "Plastic ware",
+    "Linen",
+    "Stores and Operating Supplies"
+   ]
+  },
+  "capex_plans": [
+   {
+    "item": "Proposed Banquet Hall",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "Banquet space under construction",
+    "amount_cr": null,
+    "timeline": "Being completed and operational"
+   },
+   {
+    "item": "Refurbishing 62 guestrooms in one of the Wings to current international standards",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Building a larger banquet hall",
+    "amount_cr": null,
+    "timeline": "Initiated the process"
+   },
+   {
+    "item": "Replacing existing units with a CTI-certified premium series Cooling Tower",
+    "amount_cr": null,
+    "timeline": "During the financial year under review"
+   },
+   {
+    "item": "Transitioning guest transfer services to Electric Vehicles (EVs)",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Fitting water aerators across guest room faucets and public area taps",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Introducing waterless urinal technology in public and back-of-house restrooms",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Replacing single-use plastic amenity tubes with bulk amenity dispensers across all guest bathrooms",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Migrating property management operations to Opera Cloud platform",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Upgrading point-of-sale systems across all food and beverage outlets to MICROS Simphony",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "New banquet hall and guest rooms upgrade",
+    "amount_cr": 0.58,
+    "timeline": "Less than 1 year"
+   },
+   {
+    "item": "Estimated amount of Contracts remaining to be executed on capital account and not provided for (net of advances Rs 41.69 Lakhs)",
+    "amount_cr": 1.1151,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Saraswat Co-operative Bank Ltd.",
+    "amount_cr": null,
+    "note": "Listed as Bankers"
+   },
+   {
+    "lender_or_type": "Debt-free status achieved",
+    "amount_cr": 0,
+    "note": "Company became debt-free in March 2017 and maintained liquid reserves of at least Rs. 10 Crore"
+   },
+   {
+    "lender_or_type": "Overdraft",
+    "amount_cr": null,
+    "note": "The Company more or less remains debt-free and maintains sufficient liquid reserves. The year-end overdraft drawn is due to the issue of cheques."
+   },
+   {
+    "lender_or_type": "The Company is more or less debt-free",
+    "amount_cr": null,
+    "note": "has not obtained credit ratings during the Financial Year 2025-26"
+   },
+   {
+    "lender_or_type": "Lease liabilities (Ind AS accounting)",
+    "amount_cr": null,
+    "note": "Finance Cost is there due to Ind AS accounting of Lease; Debt-Equity Ratio increased marginally from nil to 0.25%, primarily due to availment of borrowings at the end of the year"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 1.2979,
+    "note": "No term loan raised during the year; no default in repayment of loans or interest; not declared willful defaulter"
+   },
+   {
+    "lender_or_type": "Saraswat Co-op. Bank Ltd. - Overdraft facility",
+    "amount_cr": 1.2979,
+    "note": "Secured by mortgage charge on Caravela Beach Resort Goa and pledge of Saraswat Bank shares; rate: PLR less 6.00% bps (9.60% p.a.); year-end balance is book balance overdrawn due to issue of cheques"
+   },
+   {
+    "lender_or_type": "Bank overdraft and other borrowings",
+    "amount_cr": 1.2979,
+    "note": "As at March 31, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "J. G. Verma & Co.",
+   "opinion": "unqualified",
+   "qualifications_or_emphasis": [
+    "The Statutory Auditors' Report on the Financial Statements for the year under review does not contain any qualifications, reservations, adverse remarks, or disclaimers.",
+    "We have not verified the correctness and appropriateness of financial records and Books of Accounts of the Company.",
+    "Our Secretarial Audit Report is neither an assurance as to the future viability of the Company nor of the efficacy or effectiveness with which the management has conducted the affairs of the Company.",
+    "Revaluation of freehold land at year end based on valuation report by Registered valuer; change in carrying value disclosed in Note 3.2",
+    "Pending litigation: Customs duty dispute of Rs 42.60 lakhs plus interest and penalty Rs 49.60 lakhs pending before Customs, Excise and Service Tax Appellate Tribunal"
+   ],
+   "key_audit_matters": [
+    "Compliance with Food Safety and Standards Regulations, 2016",
+    "Compliance with Food Safety and Standards (Licensing and Registration of Food Businesses) Regulations, 2011",
+    "Compliance with Laws and Rules with regard to storage and sale of liquor, applicable as per respective states",
+    "Compliance with The Legal Metrology Act, 2009",
+    "Board processes: Decisions taken through majority; No dissenting views expressed",
+    "Compliance mechanism: Reasonably adequate systems and processes; Further improvement can be carried out",
+    "Changes in composition of Board and Key Managerial Personnel carried out in compliance with Companies Act, 2013 and SEBI LODR Regulations",
+    "The Company has significant tax and other litigations against it. There is a high level of judgement required in estimating the level of provisioning required and appropriateness of disclosure of those litigations as contingent liabilities."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Deepesh Joishar ceased as Director (Till Feb 20, 2026)",
+    "Nitin Anant Kunkolienker appointed as Director (wef Feb 21, 2026)",
+    "Milind Nigam appointed as Company Secretary & Compliance Officer (wef Feb 21, 2026)",
+    "Vinay Chauhan ceased as Company Secretary (Till Feb 20, 2026)",
+    "Mr. Prahlad S. Advani re-appointed as Whole Time Director and CEO for 5 years from August 1, 2027 to July 31, 2032 (subject to shareholder approval at AGM on September 22, 2026)",
+    "Previous term: WTD and CEO from August 1, 2022 to July 31, 2027",
+    "Ms. Nina H. Advani re-appointed as Director at 38th AGM on September 29, 2025",
+    "Mrs. Ragini Chopra re-appointed as Non-Executive Independent Director for 5 years w.e.f. August 30, 2025 at EGM on August 29, 2025",
+    "Mr. Milind Nigam appointed as Company Secretary & Compliance Officer w.e.f. February 21, 2026",
+    "Mr. Deepesh Joishar ceased as Company Secretary & Compliance Officer w.e.f. February 20, 2026",
+    "Mr. Haresh G. Advani retires by rotation at 39th AGM and offered for re-appointment",
+    "Re-appointment of Mrs. Nina Advani (DIN: 00017274), Director liable to retire by rotation, approved at 38th AGM held on September 29, 2025.",
+    "Re-appointment of Mrs. Ragini Chopra (DIN: 07654254) as Independent Director for second term of five consecutive years from August 30, 2025 to August 29, 2030, approved by shareholders at EGM held on August 29, 2025.",
+    "Cessation of office by resignation of Mr. Deepesh Joishar as Company Secretary with effect from close of business hours of February 20, 2026.",
+    "Appointment of Mr. Milind Nigam as Company Secretary with effect from February 21, 2026.",
+    "Re-appointment of Mrs. Ragini Chopra as Independent Director for second term of 5 years w.e.f. August 30, 2025",
+    "Appointment of Mr. Vinay Chauhan as Non-Executive Independent Director for first term of 5 years w.e.f. August 14, 2024",
+    "Appointment of Mr. Nitin Kunkolienker as Non-Executive Independent Director for first term of 5 years w.e.f. August 14, 2024",
+    "Appointment of Mr. Anil Harish as Non-Executive Independent Director for first term of 5 years w.e.f. November 14, 2024",
+    "Mr. Anil Harish appointed as Non-Executive Independent Director w.e.f. November 14, 2024",
+    "Mr. Deepesh Joishar appointed as Company Secretary & Compliance Officer w.e.f. May 22, 2024",
+    "Ms. Ragini Chopra re-appointed as Independent Director for second term of five years w.e.f. August 30, 2025",
+    "Ms. Nina Advani re-appointed as Director liable to retire by rotation at 38th AGM held on September 29, 2025",
+    "Mr. Sunder G. Advani re-appointed as Chairman and Managing Director for five years effective March 1, 2025 to February 28, 2030 (approved at EGM held December 20, 2024)",
+    "Mr. Haresh G. Advani re-appointed as Executive Director for five years effective March 1, 2025 to February 28, 2030 (approved at EGM held December 20, 2024)",
+    "Mr. Prakash V. Mehta ceased as Independent Director (upto September 23, 2024)",
+    "Mr. Adhiraj Anil Harish ceased as Independent Director (upto November 9, 2024)",
+    "Mr. Vinod Dhall ceased as Independent Director (upto September 23, 2024)",
+    "Mr. S.D. Israni ceased as Independent Director (upto October 17, 2024)",
+    "Mrs. Ragini Chopra appointed as Independent Director (from August 30, 2025)",
+    "Mr. Vinay Chauhan appointed as Independent Director (from August 14, 2024)",
+    "Mr. Nitin Kunkolienkar appointed as Independent Director (from August 14, 2024)",
+    "Mr. Anil Harish appointed as Independent Director (from November 14, 2024)",
+    "Mr. Deepesh Joishar ceased as Company Secretary and Compliance Officer (upto February 20, 2026)",
+    "Mr. Milind Nigam appointed as Company Secretary and Compliance Officer (w.e.f. February 21, 2026)"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Haresh G. Advani",
+     "pct": 10.36
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "pct": 1.92
+    },
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 50.24
+    },
+    {
+     "name": "Delta Corp Limited",
+     "pct": 25.18
+    },
+    {
+     "name": "Sunder G. Advani",
+     "pct": 13.04
+    },
+    {
+     "name": "Haresh G. Advani",
+     "pct": 10.36
+    },
+    {
+     "name": "Sunder G. Advani (On behalf of Prahlad S. Advani Trust)",
+     "pct": 7.4
+    },
+    {
+     "name": "Nina H. Advani",
+     "pct": 5.17
+    }
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year",
+   "promoter_holding_pct": 23.4
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Sunder G. Advani",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Haresh G. Advani",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Prahlad S. Advani",
+     "role": "Chief Executive Officer & Whole Time Director"
+    },
+    {
+     "name": "Satyan Shivkumar Israni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Milind Nigam",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Anil Harish",
+     "role": "Director"
+    },
+    {
+     "name": "Ajay G. Vichare",
+     "role": "Director"
+    },
+    {
+     "name": "Ragini Chopra",
+     "role": "Director"
+    },
+    {
+     "name": "Menaka Sunder Advani",
+     "role": "Director"
+    },
+    {
+     "name": "Nina Haresh Advani",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "Whole Time Director and Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Sunder G. Advani",
+     "role": "Chairman and Managing Director (referenced)"
+    },
+    {
+     "name": "Mrs. Menaka S. Advani",
+     "role": "Director (referenced as relative)"
+    },
+    {
+     "name": "Mr. Sunder G. Advani",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Haresh G. Advani",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "CEO & Whole Time Director"
+    },
+    {
+     "name": "Mrs. Nina H. Advani",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mrs. Menaka S. Advani",
+     "role": "Non-Executive and Non-Independent Director"
+    },
+    {
+     "name": "Mr. Milind Nigam",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Sunder G. Advani",
+     "role": "Chairman & Managing Director (Promoter)"
+    },
+    {
+     "name": "Mr. Haresh G. Advani",
+     "role": "Executive Director (Promoter)"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "Whole-Time Director & Chief Executive Officer (Promoter Group)"
+    },
+    {
+     "name": "Mr. Ajay G. Vichare",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Haresh G. Advani",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "Whole-Time Director & Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Milind Nigam",
+     "role": "Company Secretary (appointed February 21, 2026)"
+    },
+    {
+     "name": "Mr. Sunder G. Advani",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Mr. Haresh G. Advani",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "Whole-Time Director & CEO"
+    },
+    {
+     "name": "Mrs. Menaka S. Advani",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mrs. Nina H. Advani",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mrs. Ragini Chopra",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Satyan Israni",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Vinay Chauhan",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Nitin Kunkolienker",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Anil Harish",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Sourav Panchanan",
+     "role": "General Manager"
+    },
+    {
+     "name": "Mr. Ajay Vichare",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Haresh Gurdasmal Advani",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Prahlad Advani",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Deepesh Joishar",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Prahlad S. Advani",
+     "role": "Chief Executive Officer (CEO)"
+    },
+    {
+     "name": "Ajay G. Vichare",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Mr. Haresh G. Advani",
+     "role": "Executive Director (Whole-Time Director)"
+    },
+    {
+     "name": "Mr. Prahlad S. Advani",
+     "role": "Chief Executive Officer (CEO) & Whole-Time Director"
+    },
+    {
+     "name": "Mr. Ajay Vichare",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Mr. Deepesh Joishar",
+     "role": "Company Secretary and Compliance Officer (upto February 20, 2026)"
+    },
+    {
+     "name": "Mr. Milind Nigam",
+     "role": "Company Secretary and Compliance Officer (w.e.f. February 21, 2026)"
+    }
+   ],
+   "employees": 170
+  },
+  "dividend_per_share": 1.8,
+  "other_notable": [
+   "39th AGM scheduled for September 22, 2026 via VC/OAVM",
+   "Interim Dividends for FY 2025-26: 1st Interim Dividend @ 50% (Rs 1.00 per share), 2nd Interim Dividend @ 40% (Rs 0.80 per share) on face value Rs 2.00",
+   "Re-appointment of Mr. Prahlad S. Advani as Whole Time Director and CEO for 5 years from August 1, 2027 to July 31, 2032 proposed",
+   "Remuneration approval for Mr. Prahlad S. Advani for period March 1, 2026 to July 31, 2027 approved via Postal Ballot",
+   "Registrar & Share Transfer Agent: Datamatics Business Solutions Ltd",
+   "Solicitors: JSA Solicitors & Advocates",
+   "Equity shares listed on BSE Limited and National Stock Exchange of India Limited",
+   "Unclaimed dividends and shares transferred to IEPF Authority",
+   "Special window for re-lodgement of physical share transfers extended to February 4, 2027",
+   "Company achieved debt-free status in March 2017 with liquid reserves of at least Rs. 10 Crore",
+   "Cash & Bank Balances grew from Rs. 262.9 million (FY 2021-22) to Rs. 588.6 million (FY 2025-26), growth of 212%",
+   "Total net revenue increased from Rs. 522.2 million (FY 2021-22) to Rs. 1,102.0 million (FY 2025-26)",
+   "EBITDA grew from Rs. 116.5 million (FY 2021-22) to Rs. 347.4 million (FY 2025-26), growth of 298%",
+   "Average net Total Revenue per Occupied Room (TrevPOR) increased from Rs. 15,585 (FY 2021-22) to Rs. 21,086 (FY 2025-26), growth of 35.3%",
+   "Dividends paid totalling approximately Rs. 1,020 million (including dividend tax) over last 10 years",
+   "Recognized by WikiFinancepedia in 'Top 10 - Best Dividend Paying Stocks for the Long Term in India 2023'",
+   "Land revaluation surplus of Rs. 427.5 crores recognized in 2026 (Ind-AS)",
+   "Initiated valuation of operating business undertaking (Caravela Beach Resort) as going concern and 'Caravela' brand as on March 31, 2026",
+   "1:1 bonus share offering completed in February 2024 to enhance long-term shareholder value",
+   "Heat pump installation saving approximately Rs. 9,125,000 per year (Rs. 25,000 per day) in energy costs",
+   "Mr. Prahlad S. Advani voluntarily renounced salary during COVID-19 (approx. Rs. 30.03 Lakh from April 2020) and multiple subsequent increments",
+   "Crowe Horwath HTL Consultants benchmarking study suggests remuneration range of Rs. 15-20 million for CEO/WTD role",
+   "Proposed remuneration for Mr. Prahlad S. Advani (Aug 2027-Jul 2032): Basic Salary Rs. 8,20,300/month (first year) with 5% annual increase, HRA 60% of Basic, plus perquisites and benefits within enhanced limits (15% of net profits)",
+   "Changed accounting policy for freehold land from Cost Model to Revaluation Model under Ind AS 16, increasing carrying amount by \u20b94,272.67 million with credit to revaluation surplus through OCI",
+   "Total Comprehensive Income for FY 2025-26: \u20b94,513.07 million (including OCI of \u20b94,274.44 million)",
+   "Exceptional item of \u20b99.10 million due to implementation of new labour codes and impact for earlier years",
+   "CSR obligation: \u20b97,129,340; spent \u20b96,959,240; excess contribution of \u20b93,533,882 carried forward for set-off in succeeding years",
+   "Awards in FY 2025-26: Best Shack in Goa (Beach Hut), Iconic Luxury Beach Shack of the Year (Beach Hut), Best Regional Indian Premium Dining (Beach Hut), Iconic 5-Star Deluxe Beach Resort in Goa, Best Luxury Beachfront Wedding Resort in Goa 2025, Best MICE Resort of Goa, Best Beach Retreat for Festive & Cultural Celebrations 2025, Booking.com Traveller Review Award 2026 (8.7/10, 9th consecutive win), TripAdvisor Travellers' Choice Award 2023",
+   "Environmental initiatives: In-house glass bottling plant eliminating plastic bottles, LED lighting, solar-powered pathway lights, VFD starters, electric heat pumps, motion sensors, waterless urinals, aerators, rainwater harvesting, UPS systems in laundry, automated dosing system, STP water recycling for landscaping",
+   "Social initiatives: Partnerships with Maharashtra State Women's Council, The Freeset Trust, Prasad Chikitsa, In Defence of Animals, Goa GPRS",
+   "ESG framework covering Board Oversight, Policies and Standards, Stakeholders' Engagement, Reporting and Transparency",
+   "Whistle Blower / Vigil Mechanism Policy in place",
+   "Business Risk Management framework reviewed by Audit Committee and Board",
+   "Familiarization programme for Independent Directors conducted",
+   "Board evaluation framework with structured questionnaires",
+   "Authorised Share Capital: \u20b9250,000,000 (125,000,000 Equity Shares of \u20b92 each); Paid-up Share Capital: \u20b9184,877,000 (92,438,500 Equity Shares of \u20b92 each)",
+   "No change in share capital during FY 2025-26",
+   "\u20b93 million transferred to General Reserve (previous year \u20b913 million)",
+   "CSR obligation for FY 2025-26: Rs 3.42 million; amount spent: Rs 6.96 million; excess set-off available: Rs 3.53 million.",
+   "Transferred 12,673 equity shares to IEPF on November 4, 2025 for unclaimed dividend up to FY 2017-18.",
+   "Transferred Rs 153,361 (Final Dividend FY 2017-18) and Rs 312,591 (First Interim Dividend FY 2018-19) to IEPF.",
+   "Transferred 6,636 equity shares on April 29, 2026 for First Interim Dividend FY 2018-19; Rs 669,413 (Second Interim Dividend FY 2018-19) transferred to IEPF.",
+   "Secretarial Audit by M/s. BNP & Associates for FY 2025-26 to FY 2029-30; no qualifications.",
+   "Internal Auditors: M/s. BDO India LLP re-appointed for FY 2025-26.",
+   "Cost records and cost audit not applicable.",
+   "No frauds reported by auditors under Section 143(12).",
+   "Board met 7 times during FY 2025-26; all meetings had 100% attendance.",
+   "Audit Committee comprised Mr. Anil Harish (Chairman), Mr. Nitin Kunkolienker, Mr. Vinay Chauhan, Mrs. Menaka S. Advani; all recommendations accepted by Board.",
+   "No material related party transactions under Section 188(1); all RPTs approved by Audit Committee and Board.",
+   "Company has zero tolerance towards sexual harassment; no complaints received in FY 2025-26.",
+   "Complied with Maternity Benefit Act, 1961.",
+   "Annual Return to be placed on website: www.caravelabeachresortgoa.com/investor relations.",
+   "Remuneration Policy available on website: https://www.caravelabeachresortgoa.com/investor-relations.html.",
+   "Directors' Responsibility Statement affirmed compliance with accounting standards, internal financial controls, and applicable laws.",
+   "Conservation of Energy, Technology Absorption, Foreign Exchange Earnings and Outgo details in Annexure D.",
+   "The Company is totally debt-free and has ample liquid reserves (except for lease liabilities under Ind AS).",
+   "Second Interim Dividend declared on May 23, 2025 on 9,24,38,500 Equity Shares for FY 2024-25.",
+   "Interim Dividend declared on January 23, 2026 on 9,24,38,500 fully paid-up equity shares for FY 2025-26.",
+   "Articles of Association altered by inserting Article 53A, enabling buy-back of shares/securities.",
+   "Remuneration of Mr. Prahlad Advani as Whole-Time Director & CEO for period March 1, 2026 to July 31, 2027 approved by members through postal ballot on February 28, 2026."
+  ],
+  "outlook": [
+   {
+    "statement": "The hotel's performance was adversely impacted during May-June 2025 due to the Indo-Pakistan war, resulting in a slight decrease in total revenue for FY 2025-2026.",
+    "period": "FY 2025-2026"
+   },
+   {
+    "statement": "Competing hotels and resorts are almost entirely with brand affiliation, carrying benefits of chain marketing, loyalty programs and chain assistance. There is additional competitive question of demand shift in north Goa, particularly after the opening of Mopa airport.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "During the Financial Year 2025-26, macroeconomic damage coupled with geopolitical uncertainty, annual occupancy fell by 10.5% (i.e. from 82.0% to 73.4%). Despite this impact on occupancy, the Company was able to report growth in Average Total Revenue Per Occupied Room Per Night (TRevPOR) (after subtracting taxes) by 6.9% from \u20b919,725 per room per night in Financial Year 2024-25 to \u20b921,086 in the Financial Year 2025-26.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The hospitality industry is expected to grow as there is a supply-demand imbalance. Foreign tourist arrivals are likely to increase, especially if GST rates on hotels are reduced. The wedding segment is achieving a larger share of profits partly due to the 'WED IN INDIA' initiative. The Company has initiated the process of building a larger banquet hall. Road network within Goa has improved and reduced travel time from both Dabolim and Mopa airports. Expansion of Dabolim Airport terminal is nearing completion. Ro-Ro trains from Mumbai to Goa will commence in December. Various world events, such as the 'Chess Championship', are scheduled to be hosted in Goa.",
+    "period": "FY 2026-27 and beyond"
+   },
+   {
+    "statement": "Geopolitical tensions can disrupt travel flows and negatively impact traveller sentiment. Flight disruptions can adversely affect tourist arrivals and overall travel sentiment. Seasonality and adverse weather conditions can lead to fluctuations in tourism demand. Labour shortages and skill gaps could constrain the future growth of the tourism sector.",
+    "period": "FY 2026-27 and beyond"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Successfully negotiated two agreements with the labour union to create a win-win for all stakeholders (December 2023)",
+    "value_cr": null
+   },
+   {
+    "statement": "Secured significantly better commercial terms with Foreign Inbound Tour Operators/Charters and international crew agreement (2017-2022)",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Highly competitive environment in Goa with pricing premiums from competing branded hotels",
+   "Demand shift to North Goa after opening of Mopa airport",
+   "Cyclical nature of hospitality industry",
+   "Impact of geopolitical events (e.g., Indo-Pakistan war) on tourism",
+   "COVID-19 pandemic impact on operations and cash flows",
+   "Terrorism threat sensitivity in hotel industry",
+   "Macroeconomic damage",
+   "Geopolitical uncertainty",
+   "Occupancy decline risk",
+   "The hotel business is dependent on global and domestic economic conditions, which may be adversely impacted due to war or a pandemic in any part of the World.",
+   "Risk of dependence on only one hotel in Goa.",
+   "Risk of dependence mainly on the luxury segment.",
+   "Geopolitical tensions can disrupt travel flows and negatively impact traveller sentiment.",
+   "Flight disruptions can adversely affect tourist arrivals and overall travel sentiment.",
+   "Seasonality and adverse weather conditions can lead to fluctuations in tourism demand.",
+   "Labour shortages and skill gaps could constrain the future growth of the tourism sector.",
+   "The Company has significant tax and other litigations against it. There is a high level of judgement required in estimating the level of provisioning required and appropriateness of disclosure of those litigations as contingent liabilities.",
+   "Claims against the Company not acknowledged as debts",
+   "Pending Bank Guarantees",
+   "Provident Fund dues and charges (pending disposal of appeal)",
+   "Legal proceedings with ex-employee including defamation suits",
+   "Hotel union Charter of Demands negotiations in progress",
+   "Implementation of New Labour Codes may affect gratuity and leave liability",
+   "Credit Risk",
+   "Liquidity Risk",
+   "Market Risk (Foreign Currency Risk, Interest Rate Risk)"
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company had no Subsidiary, Joint Ventures or Associate Company during the Financial Year under review."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties",
+    "nature": "ordinary course of business on arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Sunder G. Advani",
+    "nature": "Remuneration to Chairman & Managing Director",
+    "amount_cr": 1.6491
+   },
+   {
+    "party": "Mr. Haresh G. Advani",
+    "nature": "Remuneration to Executive Director (Whole-Time Director)",
+    "amount_cr": 1.0991
+   },
+   {
+    "party": "Mr. Prahlad S. Advani",
+    "nature": "Remuneration to Chief Executive Officer (CEO) & Whole-Time Director",
+    "amount_cr": 0.6372
+   },
+   {
+    "party": "Mrs. Menaka S. Advani",
+    "nature": "Sitting Fees to Non-Executive Director and relative",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "Mrs. Nina H. Advani",
+    "nature": "Sitting Fees to Non-Executive Director and relative",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Mr. Prakash V. Mehta",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.056
+   },
+   {
+    "party": "Mr. Adhiraj Anil Harish",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.056
+   },
+   {
+    "party": "Mr. Vinod Dhall",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Mrs. Ragini Chopra",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Mr. Satyan Israni",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.076
+   },
+   {
+    "party": "Mr. Vinay Chauhan",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.116
+   },
+   {
+    "party": "Mr. Nitin Kunkolienkar",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.14
+   },
+   {
+    "party": "Mr. Anil Harish",
+    "nature": "Sitting Fees to Independent Director",
+    "amount_cr": 0.14
+   },
+   {
+    "party": "Mr. Milind Nigam",
+    "nature": "Remuneration to Company Secretary & Compliance Officer",
+    "amount_cr": 0.0566
+   },
+   {
+    "party": "Mr. Deepesh Joishar",
+    "nature": "Remuneration to Company Secretary & Compliance Officer",
+    "amount_cr": 0.2871
+   },
+   {
+    "party": "Mr. Ajay G. Vichare",
+    "nature": "Remuneration to Chief Financial Officer",
+    "amount_cr": 0.7201
+   },
+   {
+    "party": "D. M. Harish & Co.",
+    "nature": "Professional Fees",
+    "amount_cr": 0.17
+   },
+   {
+    "party": "S. D. Israni Law Chambers",
+    "nature": "Professional Fees",
+    "amount_cr": 0.0075
+   },
+   {
+    "party": "D'Bar Inc (Mrs. Shahna Garg Advani)",
+    "nature": "Year end balance - Sundry Creditors / payables",
+    "amount_cr": 0.0652
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Statement on Contingent Liabilities in the Notes forming part of the Financial Statements",
+    "amount_cr": null
+   },
+   {
+    "nature": "Significant tax and other litigations",
+    "amount_cr": null
+   },
+   {
+    "nature": "Differential duty on equipment imported under EPCG Scheme Plus Interest and Penalty",
+    "amount_cr": 0.922
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debts",
+    "amount_cr": 0.3175
+   },
+   {
+    "nature": "Pending Bank Guarantees",
+    "amount_cr": 0.44
+   },
+   {
+    "nature": "Provident Fund dues and charges (pending disposal of appeal)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Customs Duty (appeal heard after the close of the year; appellate order awaited)",
+    "amount_cr": 1.0219
+   },
+   {
+    "nature": "Annual Recurring Fees for the Casino \u2013 State Government",
+    "amount_cr": 2.238
+   },
+   {
+    "nature": "Miscellaneous Income-tax disputed in appeals / rectifications",
+    "amount_cr": 0.033
+   },
+   {
+    "nature": "By Employees",
+    "amount_cr": 0.6558
+   },
+   {
+    "nature": "SFIS Duty Concession Dispute (DGFT Show Cause Notices)",
+    "amount_cr": 4.6073
+   }
+  ],
+  "litigation": [
+   "No significant or material orders were passed by the Regulators, Courts or Tribunals that impact the going concern status and the Company's operations in future.",
+   "No proceedings are initiated & pending under the Insolvency and Bankruptcy Code, 2016.",
+   "Significant tax and other litigations against the Company",
+   "Customs duty dispute of Rs 42.60 lakhs plus interest and penalty Rs 49.60 lakhs pending before Customs, Excise and Service Tax Appellate Tribunal (period 2000)",
+   "No proceedings initiated or pending against the Company as on March 31, 2026 for holding any benami property under the Benami Transaction (Prohibition) Act, 1988 or rules made thereunder.",
+   "Ex-employee defamation allegations and legal proceedings; majority of complaints closed; criminal and civil defamation suits filed by Company and Directors against ex-employee; process orders and charge-sheet passed in favour of Company and Directors",
+   "Provident Fund dues and charges pending disposal of appeal",
+   "Hotel union Charter of Demands negotiations in progress",
+   "Customs Duty appeal heard after close of year; appellate order awaited (Rs 102.19 Lakhs)",
+   "Annual Recurring Fees for the Casino \u2013 State Government (Rs 223.80 Lakhs)",
+   "Miscellaneous Income-tax disputed in appeals / rectifications (Rs 3.30 Lakhs)",
+   "Disputes by Employees (Rs 65.58 Lakhs)",
+   "SFIS Duty Concession Dispute: DGFT issued Show Cause Notices; Company filed representation with Ministry of Commerce and petition before Supreme Court; matter disposed by Supreme Court with directions to approach High Court; Writ Petition filed before Mumbai High Court, pending disposal (Rs 460.73 Lakhs)"
+  ]
+ }
+}
