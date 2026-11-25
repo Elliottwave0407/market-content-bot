@@ -1,0 +1,1104 @@
+{
+ "isin": "INE275D01022",
+ "name": "Amines & Plasticizers Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30885_AMNPLST_2025_2026_A_14142323_31082026161924.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 748075,
+ "chunks": 19,
+ "chunks_ok": 18,
+ "facts": {
+  "business": {
+   "description": "Amines & Plasticizers Limited manufactures speciality amines, chemical intermediates and gas-treating solvents that serve as building blocks across oil refining, pharmaceuticals, agrochemicals, personal care and textiles in India and abroad.",
+   "products": [
+    {
+     "name": "Gas Treating Chemicals",
+     "share_of_revenue_pct": 44.19,
+     "note": "Includes Methyldiethanolamine (MDEA), Aminosol\u00ae Series, Actisol, Aminosol FGS, Aminosol HST"
+    },
+    {
+     "name": "Alkanolamines & Alkyl Alkanolamines",
+     "share_of_revenue_pct": 33.09,
+     "note": "Includes Methyl Monoethanolamine, Tertiary Butyl Alkanolamines, Diethanolamine, Tertiary Butyl Monoethanolamine, N-Benzyl Ethanolamine, Butyl Ethanolamine, Butyl Diethanolamine, Dibutylethanolamine, Ethanolamines"
+    },
+    {
+     "name": "Morpholine & Derivatives",
+     "share_of_revenue_pct": 10.25,
+     "note": "Includes Morpholine, N-Methyl Morpholine, N-Ethyl Morpholine, NMMO (50%), N-2-Hydroxyethyl NMMO, Pyrrolidine, N-Acetyl Morpholine, N-Formyl Morpholine"
+    },
+    {
+     "name": "EO/PO-Based Speciality Products",
+     "share_of_revenue_pct": 10.98,
+     "note": "Includes Alcohol Ethoxylates, Sorbitol Ethoxylates, Glycerol Polyol, PPG 4000, Phenoxyethanol (High Purity), Triisopropanolamine, Diethanol Isopropanolamine"
+    },
+    {
+     "name": "Oilfield Chemicals",
+     "share_of_revenue_pct": 1.49,
+     "note": "Includes Aminosol HSTIP, AMINO PPD C/L Series, AMINO ACI 001\u2013003, AMINOCIDE BK 50, AMINOCOPOL LAPE Series, Hydrogen sulphide scavenging, Corrosion inhibition, Demulsification, Molecular sieves for purification processes"
+    },
+    {
+     "name": "Gas Treating Chemicals and Speciality Solvents",
+     "share_of_revenue_pct": 44.19,
+     "note": "Includes MDEA-based solvents for CO2 and H2S removal in refineries and gas-processing plants"
+    },
+    {
+     "name": "Alkanolamines and Alkyl Alkanolamines",
+     "share_of_revenue_pct": 33.09,
+     "note": ""
+    },
+    {
+     "name": "Morpholine and Derivatives",
+     "share_of_revenue_pct": 10.25,
+     "note": ""
+    },
+    {
+     "name": "Others",
+     "share_of_revenue_pct": 1.49,
+     "note": ""
+    },
+    {
+     "name": "Triethanolamine",
+     "share_of_revenue_pct": null,
+     "note": "EFfCI GMP certified"
+    },
+    {
+     "name": "Phenoxyethanol",
+     "share_of_revenue_pct": null,
+     "note": "EFfCI GMP certified"
+    },
+    {
+     "name": "Morpholine Derivatives",
+     "share_of_revenue_pct": null,
+     "note": "Exported by the company"
+    },
+    {
+     "name": "Ethylene Oxide",
+     "share_of_revenue_pct": null,
+     "note": "Major raw material procured by the Company, sourced locally due to highly inflammable nature"
+    },
+    {
+     "name": "Methyl Diethonalamine (MDEA)",
+     "share_of_revenue_pct": null,
+     "note": "Main product used in Petrochemicals and Oil refineries, Gas plants and Textiles"
+    },
+    {
+     "name": "N Methyl Morpholine Oxide (NMMO)",
+     "share_of_revenue_pct": null,
+     "note": "Main product used in Petrochemicals and Oil refineries, Gas plants and Textiles"
+    },
+    {
+     "name": "Specialty Chemicals",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Amines",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "oil refining",
+    "fertiliser",
+    "gas processing",
+    "agrochemicals",
+    "pharmaceuticals",
+    "personal care",
+    "textiles",
+    "Customers in over 85 countries across oil refining, petrochemicals, pharmaceuticals, agrochemicals and textiles",
+    "global Cosmetic manufacturing customers"
+   ],
+   "geographies": [
+    {
+     "name": "Asia",
+     "share_pct": 71.03
+    },
+    {
+     "name": "Middle East",
+     "share_pct": 15.52
+    },
+    {
+     "name": "Central Asia",
+     "share_pct": 7.45
+    },
+    {
+     "name": "Europe",
+     "share_pct": 2.13
+    },
+    {
+     "name": "North America",
+     "share_pct": 2.06
+    },
+    {
+     "name": "Caribbean",
+     "share_pct": 0.72
+    },
+    {
+     "name": "South America",
+     "share_pct": 0.6
+    },
+    {
+     "name": "Africa",
+     "share_pct": 0.38
+    },
+    {
+     "name": "Oceania",
+     "share_pct": 0.11
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": 75
+    },
+    {
+     "name": "International (85+ countries)",
+     "share_pct": 25
+    },
+    {
+     "name": "Export markets (85+ countries)",
+     "share_pct": 46.68
+    },
+    {
+     "name": "Export",
+     "share_pct": null
+    },
+    {
+     "name": "Indian Market",
+     "share_pct": null
+    },
+    {
+     "name": "Export to various countries",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": 53.4
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 46.6
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "UAE",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Turbhe, Navi Mumbai, Maharashtra",
+     "capacity": "Ethanolamines, Alkanolamines and Alkyl Alkanolamines: 1,730 MT/month; Morpholines and Morpholine Derivatives: 500 MT/month; EO/PO-Based Derivatives: 500 MT/month; Total Installed Capacity: 32,760 MTPA; Utilisation FY26: 85%"
+    },
+    {
+     "location": "Khopoli, Raigad, Maharashtra (Unit 2: APL Industrial Gases)",
+     "capacity": "Dissolved acetylene: 2 lakh cubic metres per year; Team Strength: 8; Utilisation FY26: 60%"
+    },
+    {
+     "location": "Khopoli, Raigad, Maharashtra (Unit 3: APL Engineering Services)",
+     "capacity": "Pressure equipment (heat exchangers, pressure vessels, boilers): 100 tonnes per month; Team Strength: 107; Utilisation FY26: 45%"
+    },
+    {
+     "location": "Unit I \u2013 Turbhe, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Unit II & III \u2013 Raigad, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "",
+     "capacity": "multi-product plant is a continuous plant"
+    },
+    {
+     "location": "Thane \u2013 Belapur Road, Turbhe, Navi Mumbai \u2013 400705, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Survey No. 49, Village Vadval, Taluka Khalapur, Dist. Raigad, Maharashtra \u2013 410203",
+     "capacity": ""
+    },
+    {
+     "location": "Survey No. 49, Village Vadval, Taluka Khalapur, District, Raigad-410203, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Not specified in text",
+     "capacity": "Zero Liquid Discharge plant incorporates a multi-stage Reverse Osmosis (RO) system for the treatment and reuse of effluent from the current Effluent Treatment Plant (ETP). The treated effluent undergoes pre-treatment prior to entering Stage I of the RO system (75 CMD capacity), yielding 64 CMD of permeate for reuse and 11 CMD of reject. The reject undergoes further processing in Stage II, producing an additional 6 CMD of permeate and 5-6 CMD of reject. The residual reject (7.5 CMD) is directed to an evaporation system, where condensate is reclaimed for reuse, and the residue is disposed of securely. This procedure optimises water recovery (70 CMD of combined RO permeate), reduces discharge, and guarantees environmental sustainability."
+    },
+    {
+     "location": "Navi Mumbai",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. D-21 and D-21A at MIDC, Turbhe",
+     "capacity": ""
+    },
+    {
+     "location": "Vadval, District Raigad",
+     "capacity": ""
+    },
+    {
+     "location": "Turbhe, Navi Mumbai",
+     "capacity": ""
+    },
+    {
+     "location": "Khopoli",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "ethylene oxide",
+    "propylene oxide",
+    "crude oil linked raw materials",
+    "main raw materials which the Group procures are to a great extent linked to the movement of crude prices directly or indirectly"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "oil refining",
+    "fertiliser",
+    "gas processing",
+    "agrochemicals",
+    "pharmaceuticals",
+    "personal care",
+    "textiles",
+    "upstream oil and gas",
+    "Petrochemicals",
+    "Gas-treating and oilfield chemicals",
+    "Cosmetic",
+    "Oil refineries",
+    "Gas plants"
+   ],
+   "brands_or_certifications": [
+    "Aminosol\u00ae Series",
+    "Actisol",
+    "ISO 14001:2015",
+    "ISO 45001:2018",
+    "ISO 9001:2015",
+    "DSIR recognised R&D laboratory",
+    "HALAL Certification (valid up to January 26, 2028)",
+    "KOSHER Certification (valid up to January 28, 2027)",
+    "EFfCI GMP (for Triethanolamine and Phenoxyethanol)",
+    "EcoVadis Committed Badge",
+    "Together for Sustainability (TfS) Assessment and Audit by INTERTEK"
+   ],
+   "competitors_named": [
+    "Established producers, particularly in China"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "While geopolitical uncertainty has contributed to a more subdued demand environment in international markets, we have secured firm orders in the domestic market for the year ahead, which gives us a measure of visibility as we enter FY27. With capacity utilisation at present levels, we retain ample headroom for incremental growth without significant fresh capital outlay, and with a strengthened balance sheet we are well placed to fund expansion when the opportunity is right. The pipeline of new products, the continuing shift towards higher-value speciality chemistries and oilfield additives, and our materially lower cost of capital together give me confidence in the Company's ability to convert an improving demand environment into growth.",
+    "period": "FY27"
+   },
+   {
+    "statement": "Growth in gas-treating and oilfield chemicals: Increasing focus on domestic oil exploration and production is raising demand for friction reducers, corrosion inhibitors and demulsifiers, a segment in which the Company holds established technical strengths.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Strategic export-market positioning: A competitive cost structure, skilled workforce and improving adherence to international quality standards position India as a preferred supplier, while the ongoing diversification of global supply chains offers scope to capture share previously concentrated elsewhere.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Sustainability-driven market leadership: The global shift towards green chemistry and renewable feedstocks favours producers aligned with international Environmental, Social and Governance standards, supporting competitiveness in export markets and compliance with stringent regulation.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Enhanced innovation and technical capabilities: Sustained investment in process engineering and product innovation across the Indian chemical sector is narrowing the historical gap in complex speciality-chemical production, enabling manufacturers to develop value-added solutions that improve efficiency, reduce environmental impact and meet evolving customer specifications.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Demographic dividend and consumption growth: A rising population, growing middle-class affluence and higher per-capita consumption generate sustained domestic demand across consumer goods, agricultural inputs and pharmaceuticals, providing a stable foundation for long-term growth.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Reserve Bank of India projects growth of 6.6% for FY27, while the Economic Survey 2025-26 places it in a range of 6.8% to 7.2%. Global uncertainties and evolving geopolitical dynamics remain the principal risks, though India's reform momentum and sound macroeconomic fundamentals provide a firm platform for continued expansion.",
+    "period": "FY27"
+   },
+   {
+    "statement": "Operational focus continues on improving volumes, enhancing realisations, and sustaining profitability through calibrated product mix optimisation. New product development initiatives remain on track, with continued efforts to strengthen the portfolio and deepen customer relationships. The Company remains committed to disciplined execution and is positioning itself to capitalise on opportunities as operating conditions gradually stabilize.",
+    "period": ""
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "secured firm orders in the domestic market for the year ahead",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "geopolitical uncertainty contributing to subdued demand environment in international markets",
+   "volatile raw material prices",
+   "softer product realisations across portfolio",
+   "hesitant demand in several international markets",
+   "Raw material availability and pricing volatility: Key inputs such as ethylene oxide must be sourced domestically owing to their hazardous nature, and fluctuations in raw-material prices can directly affect margins, requiring close monitoring and agile management.",
+   "Competitive pressures: Exports remain exposed to established producers, particularly in China, making continual improvement in cost efficiency and product quality essential to defend market share.",
+   "Environmental, Health, safety and environmental risks: Chemical manufacturing carries inherent risks of spills, pollution and occupational hazards. Comprehensive safety protocols, environmental compliance and ongoing training are essential to mitigate these risks and protect the Company's reputation.",
+   "Economic uncertainty: Currency movements, inflationary pressures and shifts in global trade arising from geopolitical developments can dampen industrial output and demand, requiring vigilance in strategic planning and risk management.",
+   "Technological advancements and disruptions: Accelerating change can render existing processes and products obsolete, making continual investment in research and development necessary to preserve competitiveness.",
+   "Operational Disruption in the supply of raw materials or essential utilities, affecting production schedules and business continuity.",
+   "Ecological: Evolving environmental standards, compliance requirements and rising demand for sustainable solutions.",
+   "challenging business environment, market conditions and government policies",
+   "geopolitical crises",
+   "disruption of supply chain",
+   "weak demand",
+   "lower product realisation",
+   "Strategic and Commercial risks",
+   "Cybersecurity risks",
+   "Safety and Operations risks",
+   "Compliance risks",
+   "Control risks",
+   "Financial risks",
+   "Commodity price risk for raw materials and finished products",
+   "Foreign exchange risk on exports of Morpholine Derivatives",
+   "Commodity price risk for Ethylene Oxide managed through commercial negotiation with customers and suppliers",
+   "Central Excise Service Tax Cenvat Input Credit dispute for period 2010 to 2015 amounting to Rs 385.60 lakhs with Rs 28.92 lakhs pre-deposit pending at CESTAT",
+   "Income Tax dispute for AY 2013-14 to AY 2015-16 amounting to Rs 884.51 lakhs with no pre-deposit pending at CIT (Appeals)",
+   "CGST Act Excess ITC Availed dispute for FY 2021-22 amounting to Rs 5.69 lakhs with Rs 0.32 lakhs pre-deposit pending at Commissioner Appeals",
+   "Liquidity Risk",
+   "Currency Exchange Risk",
+   "Interest Rate Risk",
+   "Credit Risk",
+   "Commodity Price Risk",
+   "Foreign currency risk from USD, AED, EUR exposures",
+   "Interest rate risk on floating rate borrowings",
+   "Commodity price risk linked to crude oil prices",
+   "Liquidity risk",
+   "Credit risk on trade receivables",
+   "Litigation risk from direct and indirect tax matters"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "short-term borrowings",
+    "amount_cr": 50.23,
+    "note": "reduced by \u20b950.23 crore during the year"
+   },
+   {
+    "lender_or_type": "Consortium arrangement led by State Bank of India",
+    "amount_cr": 27.21,
+    "note": "Total borrowings reduced from \u20b977.20 crore in FY25; short-term borrowings reduced by \u20b950.23 crore; debt-to-equity ratio 0.09 times on standalone basis; access to unsecured deposits at favourable rates"
+   },
+   {
+    "lender_or_type": "Unsecured Deposits from Members",
+    "amount_cr": 11.01,
+    "note": "Balance as on March 31, 2026; accepted during year: 3.395 crore; renewed: 1.795 crore; no default in repayment or interest"
+   },
+   {
+    "lender_or_type": "Bank Facilities (ICRA rated)",
+    "amount_cr": 179.75,
+    "note": "Long-term fund-based working capital: 100 crore; Long-term interchangeable: 42 crore; Short-term non-fund-based: 29.75 crore; Short-term fund-based others: 50 crore"
+   },
+   {
+    "lender_or_type": "Bank facilities rated by ICRA",
+    "amount_cr": 179.75,
+    "note": "Overall bank facilities increased from Rs 128 Cr (March 31, 2025) to Rs 179.75 Cr (March 31, 2026). Includes Long-term fund-based working capital Rs 100 Cr, Long-term interchangeable Rs 42 Cr, Short-term non-fund-based Rs 29.75 Cr (enhanced from Rs 28 Cr), Short-term fund-based others Rs 50 Cr (additional facility)"
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 11.5619,
+    "note": "Non-current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 15.6519,
+    "note": "Current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": null,
+    "note": "Working capital limits in excess of Rs five crores sanctioned on basis of security of current assets"
+   },
+   {
+    "lender_or_type": "Vehicle Loans from Banks & Other Financial Institutions (Secured)",
+    "amount_cr": 0.5519,
+    "note": "Secured against hypothecation of Vehicles purchased. Rate of Interest 8% to 9%. Total outstanding 96.30 lakhs, within 1 year 41.11 lakhs, above 1 year 55.19 lakhs."
+   },
+   {
+    "lender_or_type": "Deposits from Members (Unsecured)",
+    "amount_cr": 11.01,
+    "note": "Non-current borrowings"
+   },
+   {
+    "lender_or_type": "Working Capital e-VFS Limit from State Bank of India (Unsecured)",
+    "amount_cr": 15.2408,
+    "note": "Current borrowings"
+   },
+   {
+    "lender_or_type": "Current maturities of Long-Term Borrowings",
+    "amount_cr": 0.4111,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Long term fixed borrowing",
+    "amount_cr": 11.56,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Short term floating borrowing",
+    "amount_cr": 15.65,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Vehicle Loans from Banks & Other Financial Institutions",
+    "amount_cr": 0.5519,
+    "note": "Secured against hypothecation of vehicles purchased; interest rate 8% to 9%"
+   },
+   {
+    "lender_or_type": "Deposits from Members",
+    "amount_cr": 11.01,
+    "note": "Unsecured"
+   },
+   {
+    "lender_or_type": "Working Capital Facilities - State Bank of India",
+    "amount_cr": 0,
+    "note": "Secured; part of consortium lending arrangement"
+   },
+   {
+    "lender_or_type": "Working Capital Facilities - Canara Bank",
+    "amount_cr": 0,
+    "note": "Secured; part of consortium lending arrangement"
+   },
+   {
+    "lender_or_type": "Working Capital Facilities - HDFC Bank",
+    "amount_cr": 0,
+    "note": "Secured; part of consortium lending arrangement"
+   },
+   {
+    "lender_or_type": "Working Capital e-VFS Limit - State Bank of India",
+    "amount_cr": 15.2408,
+    "note": "Unsecured"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 11.5619,
+    "note": "As at 31st March, 2026"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 15.2408,
+    "note": "As at 31st March, 2026"
+   },
+   {
+    "lender_or_type": "Current maturities of long term borrowing",
+    "amount_cr": 0.4111,
+    "note": "As at 31st March, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. S A R A & Associates, Chartered Accountants, Mumbai, Maharashtra",
+   "opinion": "unmodified",
+   "qualifications_or_emphasis": [
+    "No audit qualification, reservation or adverse remark",
+    "Waiver application filed with BSE and NSE for alleged non-compliance during FY 2024-25 related to vacancy in Audit Committee, Nomination and Remuneration Committee and Stakeholders Relationship Committee; BSE accepted waiver and waived fine aggregating Rs 90,000 (with GST Rs 1,06,200); NSE waiver also treated as approved per circulars.",
+    "Emphasis on going concern evaluation",
+    "Internal financial controls with reference to standalone financial statements were adequate and operating effectively as at 31 March 2026",
+    "No material weakness in internal financial controls",
+    "Accounting software has audit trail feature operated throughout the year with no tampering",
+    "No fraud noticed or reported during the year",
+    "No whistle blower complaints received",
+    "Company has not defaulted in repayment of loans or interest",
+    "Company not declared wilful defaulter",
+    "No term loans availed during the year",
+    "No funds raised on short-term basis used for long-term purposes",
+    "No funds taken to meet obligations of subsidiaries",
+    "No funds raised on pledge of securities held in subsidiaries",
+    "No money raised by initial public offer or further public offer",
+    "No preferential allotment or private placement of shares or debentures",
+    "No non-cash transactions with directors under Section 192",
+    "Company not required to be registered under Section 45-IA of RBI Act",
+    "No cash losses incurred in current and immediately preceding financial year",
+    "No resignation of auditors during the year",
+    "No unspent amount in respect of ongoing or other than ongoing projects",
+    "Dividend recommended by Board subject to approval at AGM in accordance with Section 123"
+   ],
+   "key_audit_matters": [
+    "Revenue Recognition: The Company recognises revenue from sale of products when performance obligations are fulfilled at the time of dispatch. The Company's assessment of the timing of fulfilment of its performance obligation towards the customers at point of time of dispatch to goods as a key audit matter since application of revenue recognition accounting standard (Ind AS 115, Revenue from Contracts with customers) is complex and involves a number of key judgments and estimates in mainly identifying performance obligations and related transaction price.",
+    "Litigations \u2013 Contingencies: The Company has litigations in respect of certain direct and indirect tax and other litigations. In this regard, the Company has recognised provisions and has disclosed contingent liabilities (to the extent not provided for) as at March 31, 2026. Significant management judgment is required to assess these matters and to determine the probability of material outflow of economic resources and whether a provision should be recognised, or a disclosure should be made.",
+    "Revenue Recognition - timing of fulfilment of performance obligations at point of dispatch",
+    "Litigations \u2013 Contingencies - provisions and disclosure of contingent liabilities for direct/indirect tax and other litigations"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Yashvardhan Ruia, Executive Director (DIN: 00364888) retires by rotation at the 51st AGM and, being eligible, has offered himself for re-appointment.",
+    "Mr. Yashvardhan Ruia re-appointed as Executive Director for 5 years w.e.f. June 01, 2025 to May 31, 2030",
+    "Revision of remuneration for Mr. Yashvardhan Ruia for period June 01, 2026 to May 31, 2028",
+    "Approval for payment of aggregate annual remuneration to Mr. Hemant Kumar Ruia, Chairman and Managing Director",
+    "Mr. Yashvardhan Ruia retires by rotation at the 51st AGM and is recommended for re-appointment",
+    "Mr. Yashvardhan Ruia re-appointed as Whole-Time Director designated as Executive Director for a period of five (5) years w.e.f. June 01, 2025 to May 31, 2030",
+    "Re-appointment of Mr. Yashvardhan Ruia as Whole Time Director designated as Executive Director for 5 years w.e.f. June 01, 2025 to May 31, 2030",
+    "Re-appointment of Ms. Nimisha Dutia as Non-Executive Non-Independent Director at 50th AGM held on September 25, 2025",
+    "Mr. Yashvardhan Ruia retires by rotation at ensuing 51st AGM and has offered himself for re-appointment",
+    "Reappointment of Mr. Yashvardhan Ruia (DIN: 00364888) as Whole Time Director designated as Executive Director for 5 years w.e.f. 01st June, 2025 to 31st May, 2030 with remuneration for 3 years from 01st June, 2025 to 31st May, 2028 approved by Shareholders at 49th AGM held on 27th September, 2024.",
+    "Appointment of Mr. Nikunj Seksaria, Mr. Pragyan Pittie and Ms. Dhanyashree Jadeja w.e.f. September 27, 2024",
+    "Re-appointment of Mr. Hemant Kumar Ruia as Chairman and Managing Director for a further term of five (5) years w.e.f. April 01, 2024 to March 31, 2029",
+    "Re-appointment of Mr. Yashvardhan Ruia as a Whole Time Director designated as Executive Director for a further term of five (5) years w.e.f. June 01, 2025 to May 31, 2030",
+    "Appointment of Mr. Nikunj Seksaria as Independent Director w.e.f. September 27, 2024",
+    "Appointment of Mr. Pragyan Pittie as Independent Director w.e.f. September 27, 2024",
+    "Appointment of Ms. Dhanyashree Jadeja as Independent Director w.e.f. September 27, 2024",
+    "Re-appointment of Mr. Yashvardhan Ruia as Executive Director for five years w.e.f. June 1, 2025",
+    "Re-appointment of Mr. Hemant Kumar Ruia as Chairman and Managing Director for five years w.e.f. April 1, 2024",
+    "Nikunj Sureshchandra Seksaria appointed 27/09/2024",
+    "Dhanyashree Abhay Jadeja appointed 27/09/2024",
+    "Pragyan Vivek Pittie appointed 27/09/2024",
+    "Dr. P. H. Vaidya - Non Executive & Independent Director - ceased to be Director w.e.f. 28.09.2024 due to completion of his second term of five (5) consecutive years",
+    "Mr. A. S. Nagar - Non Executive & Independent Director - ceased to be Director w.e.f. 28.09.2024 due to completion of his second term of five (5) consecutive years",
+    "Mr. B. M. Jindel - Non Executive & Independent Director - ceased to be Director w.e.f. 28.09.2024 due to completion of his second term of five (5) consecutive years",
+    "Ms. Nimisha Dutia - Non Executive Director & Non Independent Director",
+    "Mr. Pragyan Pittie - Non Executive & Independent Director - Appointed for a first term of five (5) consecutive years w.e.f. 27.09.2024",
+    "Mrs. Dhanyashree Jadeja - Non Executive & Independent Director - Appointed for a first term of five (5) consecutive years w.e.f. 27.09.2024",
+    "Mr. Nikunj Saksaria - Non Executive & Independent Director - Appointed for a first term of five (5) consecutive years w.e.f. 27.09.2024",
+    "Mr. Ajay Puranik - President Legal & Company Secretary - Resigned w.e.f. 30.04.2024",
+    "Mr. Omkar Mhamunkar - Company Secretary & Compliance Officer - Appointed w.e.f. 08.08.2024"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Hemant Kumar Ruia",
+     "pct": 39.98
+    },
+    {
+     "name": "Multiwyn Investments and Holdings Private Limited",
+     "pct": 21.93
+    },
+    {
+     "name": "Chefair Investment Private Limited",
+     "pct": 9.23
+    },
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 73.17
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 14.43
+    },
+    {
+     "name": "Individuals",
+     "pct": 9.31
+    },
+    {
+     "name": "Investor Education and Protection Fund (IEPF)",
+     "pct": 2.13
+    },
+    {
+     "name": "HUF",
+     "pct": 0.59
+    },
+    {
+     "name": "NRI",
+     "pct": 0.23
+    },
+    {
+     "name": "Unclaimed Suspense/Escrow Account",
+     "pct": 0.1
+    },
+    {
+     "name": "LLP",
+     "pct": 0.04
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 0.0
+    },
+    {
+     "name": "Key Managerial Personnel",
+     "pct": 0.0
+    },
+    {
+     "name": "Trust",
+     "pct": 0.0
+    },
+    {
+     "name": "Clearing Members",
+     "pct": 0.0
+    },
+    {
+     "name": "Hemant Kumar Ruia",
+     "pct": 39.98
+    },
+    {
+     "name": "Multiwyn Investments & Holdings Pvt. Ltd.",
+     "pct": 21.93
+    },
+    {
+     "name": "India Carbon Limited",
+     "pct": 12.7
+    },
+    {
+     "name": "Chefair Investment Pvt. Ltd.",
+     "pct": 9.23
+    }
+   ],
+   "promoter_holding_pct": 73.17
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Hemant Kumar Ruia",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Yashvardhan Ruia",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Omkar Mhamunkar",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Hemant Kumar Ruia",
+     "role": "Chairman & Managing Director (DIN: 00029410)"
+    },
+    {
+     "name": "Mr. Yashvardhan Ruia",
+     "role": "Executive Director (DIN: 00364888)"
+    },
+    {
+     "name": "Mr. Pramod Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Omkar Mhamunkar",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Hemant Kumar Ruia",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Omkar Mhamunkar",
+     "role": "Company Secretary & Compliance Officer (ICSI Membership No.: A26645)"
+    },
+    {
+     "name": "Mr. Hemant Kumar Ruia",
+     "role": "Chairman and Managing Director (DIN: 00029410)"
+    },
+    {
+     "name": "Omkar Mhamunkar",
+     "role": "Company Secretary & Compliance Officer (Membership No.: A26645)"
+    },
+    {
+     "name": "Mr. Yashvardhan Ruia",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Hemant Kumar Ruia",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Pramod Kumar Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Omkar Mhamunkar",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Nikunj Seksaria",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Pragyan Pittie",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Dhanyashree Jadeja",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Nimisha Dutia",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Hemant Kumar Ruia",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Mr. Vijay V. Kulkarni",
+     "role": "Technical Director"
+    },
+    {
+     "name": "Mr. Ashok D. Mate",
+     "role": "President - Materials"
+    },
+    {
+     "name": "Mr. Matapher P. Mishra",
+     "role": "President - Plant"
+    },
+    {
+     "name": "Mr. Anurup Agarwal",
+     "role": "President - Exports"
+    },
+    {
+     "name": "Mr. Anil Deora",
+     "role": "President - Marketing"
+    },
+    {
+     "name": "Mr. Sanjay V. Badhe",
+     "role": "President - Plant Operations"
+    },
+    {
+     "name": "Pramod Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Omkar Mhamunkar",
+     "role": "Company Secretary & Compliance Officer & Nodal Officer for IEPF"
+    },
+    {
+     "name": "Kajal Pawar",
+     "role": "Deputy Nodal Officer for IEPF"
+    },
+    {
+     "name": "Hemant Kumar Ruia",
+     "role": "Managing Director"
+    }
+   ],
+   "employees": 292
+  },
+  "other_notable": [
+   "Entered into arrangement with a leading Japanese multinational for manufacture of new carbon capture solvents",
+   "R&D commercialised 43 new products over last five years",
+   "Developed tailor-made solvent formulations for over 25 domestic and international customers",
+   "Introduced new import-substitute molecules in battery and hydrogen energy segments",
+   "Completed carbon footprint assessment across product offerings",
+   "Commissioned dedicated solar power plant through Radiance Sunrise Six Private Limited",
+   "Replaced conventional boiler fuel with piped natural gas",
+   "Installed heat-recovery and improved insulation systems",
+   "Invested in own fleet of ethylene oxide tanks to strengthen safety and reliability of raw material logistics",
+   "Operating cash flow rose to \u20b966.41 crore, highest in five years",
+   "Cash balance strengthened to \u20b949.21 crore",
+   "Finance cost fell by 44% to \u20b95.46 crore",
+   "Debt-equity ratio reduced to 0.09 times from 0.30 times",
+   "R&D expenditure increased to \u20b92.11 crore in FY26, highest in five years",
+   "R&D team: 6 members (2 Doctorates, 4 Chemists)",
+   "R&D laboratory established 1974, DSIR recognised",
+   "CSR spend: Education \u20b976.38 lakh, Healthcare \u20b915.63 lakh, Nutrition \u20b90.50 lakh",
+   "CSR spending: \u20b992.51 lakh in FY26, exceeding statutory obligation of \u20b990.15 lakh; excess of \u20b92.36 lakh carried forward for set-off in future years. CSR initiatives focused on Education (notebooks distribution), Nutrition Support (hot meals to poor/underprivileged students), and Healthcare (ambulance donation, daycare centre support for dementia/Alzheimer's patients).",
+   "R&D spend in FY26: \u20b92.11 crore.",
+   "Installed capacity: 32,760 MTPA for speciality amines.",
+   "Domestic market share in ethanolamines: approximately 75% to 80%.",
+   "First in India to indigenously develop and manufacture methyl diethanolamine (MDEA).",
+   "Interest coverage ratio improved to 8.87 times from 5.61 times.",
+   "Current ratio improved to 3.31 from 2.52.",
+   "Debt-to-equity ratio improved to 0.09 from 0.30.",
+   "Shareholders' funds grew to \u20b9292.26 crore.",
+   "Cash and cash equivalents rose to \u20b949.21 crore from \u20b941.72 crore.",
+   "Operating cash flow increased to \u20b966.41 crore, highest in five years.",
+   "Finance cost fell sharply to \u20b95.46 crore from \u20b99.82 crore (44% reduction) following repayment of substantial part of short-term borrowings.",
+   "EBITDA margin largely preserved at 10.59% vs 10.63% in prior year despite revenue decline.",
+   "Global chemical industry production growth slowed to estimated 2.6% in 2025, forecast at close to 2.0% in 2026.",
+   "Indian chemical industry valued at ~US$250 billion in 2024, projected to reach ~US$300 billion by 2028 and US$1 trillion by 2040.",
+   "Speciality chemicals segment valued at ~US$64.5 billion in 2024, expected to grow to ~US$92.6 billion by 2033.",
+   "India accounts for ~2.5% of global chemical sales, ranks 14th among exporters; cumulative FDI ~US$23.21 billion between FY2001-FY2025.",
+   "51st AGM scheduled for September 23, 2026 at 4:00 PM IST via VC/OAVM.",
+   "Approval sought for remuneration of Mr. Hemant Kumar Ruia for FY2027-28 and FY2028-29 (remainder of tenure) and for commission not exceeding 2% of net profits for FY2026-27.",
+   "51st AGM scheduled for Wednesday, September 23, 2026 at 4.00 P.M. (IST) through VC/OAVM",
+   "Record Date for dividend: Friday, September 11, 2026",
+   "Dividend of Rs 0.50 per equity share (face value Rs 2/-) proposed for FY ended March 31, 2026",
+   "Cost Auditor remuneration ratified at Rs 2,40,000 plus GST and out-of-pocket expenses for FY ending March 31, 2027",
+   "Approval for invitation/acceptance/renewal of unsecured deposits from members up to 35% of aggregate paid-up share capital, free reserves and securities premium account",
+   "Special Window for re-lodgment of transfer requests of physical shares open from February 05, 2026 to February 04, 2027",
+   "SEBI mandate for mandatory PAN, KYC and Nomination for physical shareholders",
+   "Remote e-voting facility provided for 51st AGM with cut-off date September 16, 2026",
+   "Scrutinizer appointed: M/s. Shreyas Athavale & Co., Practicing Company Secretaries",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "51st Annual General Meeting scheduled for September 20-22, 2026 via VC/OAVM.",
+   "Remote e-voting period: September 20, 2026 (09:00 AM IST) to September 22, 2026 (05:00 PM IST).",
+   "Scrutinizer: Shreyas Athavale (email: shreyasathavaleandco@gmail.com).",
+   "Registrar and Transfer Agent (RTA): Link Intime (InstaVote/InstaMeet platforms).",
+   "Special Resolutions proposed for revision of remuneration of Chairman & Managing Director (FY 2026-27 and period April 1, 2027 to March 31, 2029) and Executive Director (period June 1, 2026 to May 31, 2028).",
+   "Minimum remuneration provisions approved in case of inadequate profits for both directors.",
+   "Cost Auditor remuneration ratification proposed (Item No. 8/9 implied).",
+   "Mr. Yashvardhan Ruia re-appointed as Executive Director for 5 years w.e.f. June 1, 2025 at 49th AGM (Sept 27, 2024).",
+   "Mr. Hemant Kumar Ruia re-appointed as Chairman & Managing Director for 5 years w.e.f. April 1, 2024 at 48th AGM (Sept 29, 2023).",
+   "No increase in remuneration for Chairman & MD for previous two years (April 1, 2024 to March 31, 2026).",
+   "NRC and Board meetings held on August 14, 2026 approved remuneration revisions.",
+   "Website: www.amines.com; RTA website: https://instavote.linkintime.co.in; InstaMeet: https://instameet.in.mpms.mufg.com.",
+   "Cost Auditor M/s. A. G. Anikhindi & Co. appointed for FY 2026-27 at remuneration of Rs 2,40,000 plus taxes",
+   "Approval sought for inviting/accepting/renewing unsecured deposits from members for working capital and general corporate purposes"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Amines and Plasticizers FZ-LLC, UAE",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Amines & Plasticizers FZ -LLC",
+    "holding_pct": 100,
+    "business": "Wholly Owned Foreign Subsidiary Company in UAE"
+   },
+   {
+    "name": "Amines and Plasticizers FZ-LLC",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary in Ras Al Khaimah, Free Trade Zone, UAE"
+   },
+   {
+    "name": "Radiance MH Sunrise Six Private Limited",
+    "holding_pct": 26,
+    "business": "Solar Power producing Company engaged in development, construction, operation, and maintenance of solar power plants in India"
+   },
+   {
+    "name": "Amines & Plasticizers FZ-LLC",
+    "holding_pct": null,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Amines & Plasticizers FZ-LLC",
+    "holding_pct": null,
+    "business": "Wholly Owned Overseas Subsidiary"
+   },
+   {
+    "name": "wholly owned subsidiary",
+    "holding_pct": 100,
+    "business": "not specified"
+   },
+   {
+    "name": "Amines & Plasticizers FZ LLC",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Amines and Plasticizers FZ LLC",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary Company"
+   },
+   {
+    "name": "Radiance MH Sunrise Six Pvt Ltd",
+    "holding_pct": 26,
+    "business": "Solar power producing company (SPV) for concessional power supply"
+   },
+   {
+    "name": "Wholly Owned Subsidiary in RAK Zone, UAE",
+    "holding_pct": 100,
+    "business": "general trading license"
+   },
+   {
+    "name": "APL Engineering Services Pvt Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "AMINES AND PLASTICIZERS FZ LLC",
+    "holding_pct": 100,
+    "business": "Chemical manufacturing (implied)"
+   }
+  ],
+  "dividend_per_share": 0.5,
+  "related_party": [
+   {
+    "party": "Amines & Plasticizers FZ LLC, Wholly Owned Subsidiary",
+    "nature": "Sale of Goods",
+    "amount_cr": 3.1912
+   },
+   {
+    "party": "Amines & Plasticizers FZ LLC, Wholly Owned Subsidiary",
+    "nature": "Advance Received from Wholly Owned Subsidiary towards Sales",
+    "amount_cr": 14.9121
+   },
+   {
+    "party": "M/s. Jadejas & Partners (Advocates)",
+    "nature": "Availing of legal services",
+    "amount_cr": 0.0496
+   },
+   {
+    "party": "Related parties",
+    "nature": "Contracts or arrangements or transactions not at arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Material contracts or arrangements or transactions at arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "M/s. Jadeja & Satiya (now M/s Jadejas & Partners)",
+    "nature": "Legal services availed",
+    "amount_cr": 0.0496
+   },
+   {
+    "party": "Promoters, Directors, KMPs or other designated persons",
+    "nature": "All related party transactions entered during FY 2025-26 were on arm's length basis, in ordinary course of business and in compliance with applicable provisions",
+    "amount_cr": null
+   },
+   {
+    "party": "wholly owned subsidiary",
+    "nature": "loan granted and repaid",
+    "amount_cr": 0.4881
+   },
+   {
+    "party": "Amines & Plasticizers FZ LLC",
+    "nature": "Sales",
+    "amount_cr": 3.1912
+   },
+   {
+    "party": "Amines & Plasticizers FZ LLC",
+    "nature": "Interest Received on Loans",
+    "amount_cr": 0.0141
+   },
+   {
+    "party": "Amines & Plasticizers FZ LLC",
+    "nature": "Purchases",
+    "amount_cr": 0
+   },
+   {
+    "party": "Mr. Hemant Kumar Ruia",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 2.151
+   },
+   {
+    "party": "Mr. Yashvardhan Ruia",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 0.9966
+   },
+   {
+    "party": "Mr. Pramod Sharma",
+    "nature": "Remuneration",
+    "amount_cr": 0.4279
+   },
+   {
+    "party": "Mr. Omkar Mhamunkar",
+    "nature": "Remuneration",
+    "amount_cr": 0.297
+   },
+   {
+    "party": "JADEJA & SATIYA",
+    "nature": "Legal Fees",
+    "amount_cr": 0.0496
+   },
+   {
+    "party": "Amines & Plasticizers Limited Employee's Gratuity Fund",
+    "nature": "Contributions Paid",
+    "amount_cr": 0.5743
+   },
+   {
+    "party": "Amines & Plasticizers Limited Employee's Provident Fund",
+    "nature": "Contributions Paid",
+    "amount_cr": 1.5173
+   },
+   {
+    "party": "Ms. Nimisha Dutia",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.006
+   },
+   {
+    "party": "Mr. Pragyan Pittie",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0115
+   },
+   {
+    "party": "Mrs. Dhanyashree Jadeja",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.0115
+   },
+   {
+    "party": "Mr. Nikunj Saksaria",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.012
+   },
+   {
+    "party": "JADEJA & SATIYA (Advocate Firm)",
+    "nature": "Legal & Professional Fees",
+    "amount_cr": 0.0496
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0.4702,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Installation of additional reactors and balancing equipment",
+    "amount_cr": null,
+    "timeline": "Proposed"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account (Net of Advances)",
+    "amount_cr": 1.543,
+    "timeline": "As at 31st March, 2026"
+   },
+   {
+    "item": "estimated amount of contracts remaining to be executed on capital account (Net of Advances) and not provided for",
+    "amount_cr": 1.543,
+    "timeline": "As at 31st March, 2026"
+   }
+  ],
+  "litigation": [
+   "No significant and material order passed by regulators, courts, or tribunals impacting going concern status and future operations.",
+   "Fine of Rs 90,000 each imposed by BSE and NSE for alleged non-compliance during FY 2024-25 related to vacancy in Audit Committee, Nomination and Remuneration Committee and Stakeholders Relationship Committee for 2 days in quarter ended September 2024 and 13 days in quarter ended December 2024. BSE accepted waiver application on February 26, 2026 and waived fine aggregating to Rs 90,000 (with GST Rs 1,06,200). As per circulars, BSE waiver treated as NSE waiver.",
+   "The Company has litigations in respect of certain direct and indirect tax and other litigations. The Company has recognised provisions and has disclosed contingent liabilities (to the extent not provided for) as at March 31, 2026.",
+   "Central Excise Service Tax Cenvat Input Credit dispute for period 2010 to 2015 amounting to Rs 385.60 lakhs with Rs 28.92 lakhs pre-deposit pending at CESTAT",
+   "Income Tax dispute for AY 2013-14 to AY 2015-16 amounting to Rs 884.51 lakhs with no pre-deposit pending at CIT (Appeals)",
+   "CGST Act Excess ITC Availed dispute for FY 2021-22 amounting to Rs 5.69 lakhs with Rs 0.32 lakhs pre-deposit pending at Commissioner Appeals",
+   "GST Department disallowed Input Credit of GST claimed by the company on procurement of Goods and services from few suppliers. The Company paid \u20b9 2533.56 Lakhs under protest and filed refund application and litigating the matter before the Honorable Bombay High Court.",
+   "Disputed Customer Claims Where Company is in Appeal: \u20b9 5.14 lakhs",
+   "Disputed Excise & Service Tax Matters: \u20b9 385.60 lakhs",
+   "Disputed Goods & Service Tax Matters: \u20b9 2,533.56 lakhs and \u20b9 5.69 lakhs",
+   "Disputed Income Tax Matters: \u20b9 884.51 lakhs",
+   "Direct and indirect tax litigations and other litigations with provisions recognised and contingent liabilities disclosed",
+   "GST paid under protest - litigating for refund",
+   "GST Department disallowed Input Credit of GST claimed by the Holding Company on procurement of Goods and services from few suppliers; Holding Company paid \u20b9 2533.56 Lakhs under protest and filed refund application and litigating the matter before the Honorable Bombay High Court"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "The Company has litigations in respect of certain direct and indirect tax and other litigations. The Company has recognised provisions and has disclosed contingent liabilities (to the extent not provided for) as at March 31, 2026.",
+    "amount_cr": null
+   },
+   {
+    "nature": "Central Excise Service Tax Cenvat Input Credit dispute",
+    "amount_cr": 3.856
+   },
+   {
+    "nature": "Income Tax dispute",
+    "amount_cr": 8.8451
+   },
+   {
+    "nature": "CGST Act Excess ITC Availed dispute",
+    "amount_cr": 0.0569
+   },
+   {
+    "nature": "Disputed Customer Claims Where Company is in Appeal",
+    "amount_cr": 0.0514
+   },
+   {
+    "nature": "Disputed Excise & Service Tax Matters",
+    "amount_cr": 3.856
+   },
+   {
+    "nature": "Disputed Goods & Service Tax Matters",
+    "amount_cr": 25.3356
+   },
+   {
+    "nature": "Disputed Goods & Service Tax Matters",
+    "amount_cr": 0.0569
+   },
+   {
+    "nature": "Disputed Income Tax Matters",
+    "amount_cr": 8.8451
+   },
+   {
+    "nature": "Guarantees Issued by Banks",
+    "amount_cr": 22.929
+   },
+   {
+    "nature": "Letter of Credit Unexpired",
+    "amount_cr": 3.6701
+   },
+   {
+    "nature": "Direct and indirect tax litigations and other litigations",
+    "amount_cr": null
+   },
+   {
+    "nature": "GST paid under protest",
+    "amount_cr": 25.3356
+   },
+   {
+    "nature": "Disputed Customer Claims",
+    "amount_cr": 0.0514
+   }
+  ]
+ }
+}

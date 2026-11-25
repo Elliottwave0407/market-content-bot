@@ -1,0 +1,1373 @@
+{
+ "isin": "INE824Q01011",
+ "name": "Manaksia Steels Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30721_MANAKSTEEL_2025_2026_A_3652217_27082026170130.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 651247,
+ "chunks": 17,
+ "chunks_ok": 17,
+ "facts": {
+  "business": {
+   "description": "Manaksia Steels Limited is an ISO 9001:2015 certified company.",
+   "value_chain_position": "manufacturer",
+   "brands_or_certifications": [
+    "ISO 9001:2015",
+    "5 Star Super Shakti (galvanized corrugated sheets)",
+    "5 Star Super Colour (colour-coated coils and sheets)",
+    "5 Star Superlume (Alu-Zinc coils and sheets)",
+    "Austrang (premium colour-coated steel coils and sheets)",
+    "Dura Strength (colour coated metal roofing)",
+    "ISO 9001:2015 certified manufacturing facility at Haldia",
+    "BIS compliance (IS 277, IS 15965, IS 14246, IS 513)",
+    "JIS 3141, BS 1449, DIN 1623, JIS G 3302, ASTM A 653 compliance",
+    "5 Star Super Shakti",
+    "5 Star Superlume",
+    "5 Star Super Colour",
+    "Austrang",
+    "JIS 3141",
+    "BS 1449",
+    "DIN 1623",
+    "IS 513",
+    "JIS G 3302",
+    "ASTM A653",
+    "IS 277",
+    "IS 15965",
+    "IS 14246",
+    "IS 15961",
+    "ISO 9001 : 2015"
+   ],
+   "products": [
+    {
+     "name": "Pre-painted colour-coated steel (coils, sheets, roofing profiles)",
+     "share_of_revenue_pct": 52.89,
+     "note": "Contributed 52.89% to manufacturing turnover in FY 2025-26; largest offtake at 42.41% of revenues"
+    },
+    {
+     "name": "Hot-dipped galvanized steel (coils and sheets)",
+     "share_of_revenue_pct": 21.75,
+     "note": "Contributed 21.75% to manufacturing turnover in FY 2025-26"
+    },
+    {
+     "name": "Alu-Zinc steel / Galvalume (coils and sheets)",
+     "share_of_revenue_pct": 13.92,
+     "note": "Contributed 13.92% to manufacturing turnover in FY 2025-26; new line commissioned in FY 2025-26"
+    },
+    {
+     "name": "Cold-rolled steel coils and sheets",
+     "share_of_revenue_pct": 9.53,
+     "note": "Contributed 9.53% to manufacturing revenue in FY 2025-26; additional cold rolling mill planned"
+    },
+    {
+     "name": "Colour-coated steel (5 Star Super Colour, Austrang)",
+     "share_of_revenue_pct": 42.41,
+     "note": "FY 2025-26 share of revenues; manufactured across thicknesses 0.20 mm to 0.60 mm"
+    },
+    {
+     "name": "Galvanized steel (5 Star Super Shakti)",
+     "share_of_revenue_pct": 17.44,
+     "note": "FY 2025-26 share of revenues"
+    },
+    {
+     "name": "Alu-Zinc coated steel / Galvalume (5 Star Superlume)",
+     "share_of_revenue_pct": null,
+     "note": "Newly commissioned line (1,10,200 TPA) commenced commercial production June 2025; one of three major revenue engines"
+    },
+    {
+     "name": "5 Star Super Colour",
+     "share_of_revenue_pct": null,
+     "note": "Branded colour-coated steel product"
+    },
+    {
+     "name": "Austrang",
+     "share_of_revenue_pct": null,
+     "note": "Affordable colour coated steel segment"
+    },
+    {
+     "name": "5 Star Super Shakti",
+     "share_of_revenue_pct": null,
+     "note": "Anchors the steel markets while supporting galvanized steel portfolio long-term customer retention"
+    },
+    {
+     "name": "5 Star Superlume",
+     "share_of_revenue_pct": null,
+     "note": "Alu-Zinc (Galvalume) coated steel product"
+    },
+    {
+     "name": "Galvanized steel",
+     "share_of_revenue_pct": null,
+     "note": "Core product category"
+    },
+    {
+     "name": "Alu-Zinc (Galvalume) coated steel",
+     "share_of_revenue_pct": null,
+     "note": "Premium coated steel product from newly commissioned line"
+    },
+    {
+     "name": "Colour-coated steel",
+     "share_of_revenue_pct": null,
+     "note": "Value-added product with expanded capacity"
+    },
+    {
+     "name": "Decorative printed coated steel",
+     "share_of_revenue_pct": null,
+     "note": "New product development using imported 3-colour printing machine (36,000 MTPA capacity)"
+    },
+    {
+     "name": "Alu-Zinc Coated Steel",
+     "share_of_revenue_pct": null,
+     "note": "Commissioned 1,10,200 TPA Alu-Zinc Coating Line in June 2025; entry into one of the fastest-growing coated steel segments"
+    },
+    {
+     "name": "Colour Coated Steel",
+     "share_of_revenue_pct": null,
+     "note": "Increased colour coating capacity from 48,000 TPA to 60,000 TPA during FY 2025-26; commissioning second colour-coating line to raise total capacity to nearly 1,50,000 TPA"
+    },
+    {
+     "name": "Cold-rolled steel sheets",
+     "share_of_revenue_pct": 7.65,
+     "note": "Used for interior and exterior panels of automobiles, buses, and commercial vehicles"
+    },
+    {
+     "name": "Galvanized steel sheets",
+     "share_of_revenue_pct": 17.44,
+     "note": "Includes corrugated sheets and plain sheets, serving applications such as rural housing, factory buildings, containers, and water tanks"
+    },
+    {
+     "name": "Galvalume coils and sheets (Alu-Zinc)",
+     "share_of_revenue_pct": 11.16,
+     "note": "Preferred material for manufacture of white goods (large household appliances) owing to superior corrosion resistance, high aesthetic appeal, structural strength, and excellent durability"
+    },
+    {
+     "name": "Pre-painted (colour-coated) steel coils and sheets",
+     "share_of_revenue_pct": 42.41,
+     "note": "Utilised in construction and architectural applications such as roofing, cladding, and panelling"
+    },
+    {
+     "name": "Colour coated sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Galvanized coils/sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "BP sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Hot rolled coils",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Rolled aluminium",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "ROPP caps",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Spares",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Cold Rolled Sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Galvanised Corrugated Sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Galvanised Plain Sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Galvalume (Alu Zinc) Coils & Sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Colour Coated (Pre-painted) Sheets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Steel Products",
+     "share_of_revenue_pct": null,
+     "note": "Sale of Products revenue was Rs 1,05,214.04 lacs for FY 2025-26"
+    }
+   ],
+   "customers": [
+    "Construction sector",
+    "Building materials sector",
+    "White goods sector",
+    "Electrical appliances sector",
+    "Residential construction",
+    "Commercial construction",
+    "Industrial construction",
+    "Automotive industry",
+    "Home appliances industry",
+    "Galvanized steel manufacturers",
+    "Pre-painted steel manufacturers",
+    "Pre-engineered structures",
+    "Warehousing",
+    "Cold storage",
+    "Industrial buildings",
+    "Infrastructure projects",
+    "Commercial roofing",
+    "Engineering and fabrication",
+    "Construction industry",
+    "Infrastructure",
+    "Engineering",
+    "Roofing",
+    "Manufacturing",
+    "Home appliances",
+    "Distributors and dealers (300+ network)",
+    "Fabricators",
+    "End customers",
+    "Distributors",
+    "Dealers",
+    "Industrial roofing",
+    "Pre-engineered buildings",
+    "Manufacturing facilities",
+    "Modern logistics infrastructure",
+    "Commercial complexes",
+    "automobile manufacturers",
+    "white goods manufacturers",
+    "rural housing",
+    "factory buildings",
+    "container manufacturers",
+    "water tank manufacturers"
+   ],
+   "geographies": [
+    {
+     "name": "India (domestic)",
+     "share_pct": null
+    },
+    {
+     "name": "Bhutan",
+     "share_pct": null
+    },
+    {
+     "name": "Nigeria",
+     "share_pct": null
+    },
+    {
+     "name": "UAE",
+     "share_pct": null
+    },
+    {
+     "name": "Madagascar",
+     "share_pct": null
+    },
+    {
+     "name": "Portugal",
+     "share_pct": null
+    },
+    {
+     "name": "Romania",
+     "share_pct": null
+    },
+    {
+     "name": "Ghana",
+     "share_pct": null
+    },
+    {
+     "name": "Eastern India",
+     "share_pct": 56.39
+    },
+    {
+     "name": "Rest of India (North, South, West)",
+     "share_pct": 43.61
+    },
+    {
+     "name": "Eastern India (traditional presence)",
+     "share_pct": null
+    },
+    {
+     "name": "Southern India (Tamil Nadu, Kerala, Karnataka)",
+     "share_pct": null
+    },
+    {
+     "name": "Western India (Rajasthan)",
+     "share_pct": null
+    },
+    {
+     "name": "Northern India (Uttar Pradesh)",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    },
+    {
+     "name": "Eastern India",
+     "share_pct": null
+    },
+    {
+     "name": "Tamil Nadu",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala",
+     "share_pct": null
+    },
+    {
+     "name": "Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "Exports",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 75.6
+    },
+    {
+     "name": "Overseas",
+     "share_pct": 24.4
+    }
+   ],
+   "plants": [
+    {
+     "location": "Haldia, West Bengal",
+     "capacity": "Cold roll coils: 80,000 MTPA; Hot dipped galvanized coils and sheets: 34,000 MTPA; Pre-painted galvanized coils and sheets: 60,000 MTPA; Alu-Zinc coated coils and sheets: 1,10,200 MTPA"
+    },
+    {
+     "location": "Bankura, West Bengal",
+     "capacity": "Hot dipped galvanized coils and sheets (capacity included in above consolidated figures)"
+    },
+    {
+     "location": "Haldia",
+     "capacity": "Integrated facility with continuous pickling line, cold rolling mill, hot-dip galvanising line, Alu-Zinc coating line (1,10,200 TPA), colour-coating line (existing augmented to 60,000 TPA), new colour-coating line CCL II (~90,000 TPA expected FY 2026-27), cold-rolling mill (6-Hi Reversible, approved, targeted Dec 2027)"
+    },
+    {
+     "location": "Haldia, West Bengal",
+     "capacity": "Integrated facility: Cold Rolling, Galvanising, Alu-Zinc (Galvalume) 1,10,200 TPA, Colour Coating 60,000 TPA (expanded from 48,000 TPA), second Colour Coating line under commissioning (total colour-coating capacity to reach nearly 1,50,000 TPA)"
+    },
+    {
+     "location": "Haldia",
+     "capacity": "Alu-Zinc Coating Line: 1,10,200 TPA (commissioned June 2025); Colour Coating: 60,000 TPA (increased from 48,000 TPA); Second Colour Coating line planned to raise total to nearly 1,50,000 TPA; 6-Hi reversible cold rolling mill planned (commissioning by 2027)"
+    },
+    {
+     "location": "471, Birsinghapur, Barjora, Bankura \u2013 722 202",
+     "capacity": ""
+    },
+    {
+     "location": "1, Bhuniaraichak, Jhikurkhali, Purva Mednipur, Haldia-721635, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Haldia",
+     "capacity": ""
+    },
+    {
+     "location": "Haldia, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Bankura, West Bengal",
+     "capacity": ""
+    },
+    {
+     "location": "Haldia",
+     "capacity": "35 acre land (conveyance deed not executed)"
+    }
+   ],
+   "raw_materials": [
+    "Cold-rolled steel coils",
+    "Galvanized steel",
+    "Alu-Zinc (Galvalume) steel",
+    "Steel substrates for coating",
+    "Hot rolled steel",
+    "Cold rolled steel",
+    "Hot rolled coils (HRC)",
+    "Cold rolled coils (CRC)",
+    "Zinc",
+    "Aluminium-Zinc alloy",
+    "Paint/coating materials",
+    "Imported and domestic raw materials",
+    "Flat steel",
+    "Coating materials (Alu-Zinc, colour coatings)",
+    "Hot rolled coils",
+    "Spares",
+    "Rolled aluminium",
+    "ROPP caps"
+   ],
+   "end_markets": [
+    "Construction",
+    "Infrastructure",
+    "Housing",
+    "Industrial buildings",
+    "Warehousing",
+    "Cold storage",
+    "Pre-engineered structures",
+    "Residential roofing and cladding",
+    "Commercial buildings",
+    "Home appliances",
+    "Automotive",
+    "White goods",
+    "Electrical appliances",
+    "Commercial roofing",
+    "Engineering and fabrication",
+    "Engineering",
+    "Roofing",
+    "Manufacturing",
+    "Industrial manufacturing",
+    "Consumer applications",
+    "Pre-engineered buildings",
+    "Commercial complexes",
+    "Residential projects",
+    "white goods/appliances",
+    "residential housing"
+   ],
+   "competitors_named": [
+    "APL Apollo Building Product Limited",
+    "Manaksia Limited",
+    "Manaksia Aluminium Company Limited",
+    "Surana Naveen Vikash & Co."
+   ]
+  },
+  "auditor": {
+   "name": "M/s. B. Mukhopadhyay & Co.",
+   "opinion": "No observation (including any qualification, reservation, adverse remarks or disclaimer) in Audit Report",
+   "qualifications_or_emphasis": [
+    "No modified audit opinion in the financial statements for FY 2025-26."
+   ],
+   "key_audit_matters": [
+    "Revenue from Sale of Goods - The Company recognizes revenue when control of the goods is transferred to the customer at an amount that reflects the consideration to which the Company expects to be entitled in exchange for those goods. Considering the judgment and estimates involved in revenue recognition, it is considered to be a key audit matter.",
+    "Revenue from Sale of Goods"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Varun Agrawal (DIN: 00441271) retires by rotation and offers himself for re-appointment.",
+    "Mr. Varun Agrawal re-appointed as Managing Director for a further period of three years w.e.f. 11th February, 2025 at the 23rd AGM",
+    "Shareholders at the 24th Annual General Meeting held on 23rd September 2025 approved the re-appointment of Mrs. Nidhi Baheti (DIN: 08490552) as an Independent Director for a second term of five consecutive years with effect from 16th June 2026",
+    "Mr. Varun Agrawal (DIN: 00441271) is liable to retire by rotation at the ensuing 25th Annual General Meeting and being eligible, offers himself for re-appointment",
+    "M/s. KASG & Co. appointed as Internal Auditors for FY 2025-26",
+    "M/s. JMNR & Associates appointed as Internal Auditors for FY 2026-27",
+    "M/s. B. Mukhopadhyay & Co. re-appointed as Cost Auditors for FY 2026-27",
+    "M/s. MKB & Associates appointed as Secretarial Auditors for five years from 1st April 2025",
+    "No new Independent Director was appointed on the Board during FY 2025-26",
+    "Mr. Varun Agrawal re-appointed as Managing Director for three years w.e.f. 11th February 2025",
+    "Mr. Ramesh Kumar Maheshwari re-appointed as Independent Director for five years w.e.f. 16th July 2024",
+    "Mr. Biswanath Bhattacharjee appointed as Independent Director for five years w.e.f. 16th July 2024",
+    "Appointment of Mr. Biswanath Bhattacharjee (DIN: 00545918) as Independent Director on 16th July, 2024",
+    "Re-appointment of Mrs. Nidhi Baheti (DIN: 08490552) as Independent Director for a second term of five years effective 16th June, 2026 (approved by special resolution at AGM on 18th September, 2024)",
+    "No Director resigned during FY 2025-26",
+    "Sri Kali Kumar Choudhury ceased as Independent Director w.e.f 18.09.2024",
+    "Sri Biswanath Bhattacharjee appointed as Independent Director w.e.f 16.07.2024",
+    "Sri Kali Kumar Choudhury ceased as Independent Director (upto 18.09.2024)",
+    "Sri Biswanath Bhattacharjee appointed as Independent Director (w.e.f 16.07.2024)"
+   ],
+   "auditor_change": "Credit rating mandate transitioned from CARE to ICRA during FY 2025-26",
+   "promoter_holding_pct": 74.75,
+   "top_shareholders": [
+    {
+     "name": "Promoters Group",
+     "pct": 74.75
+    },
+    {
+     "name": "Public",
+     "pct": 18.53
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 4.46
+    },
+    {
+     "name": "Payal Agrawal",
+     "pct": 19.51
+    },
+    {
+     "name": "Varun Agrawal",
+     "pct": 19.47
+    },
+    {
+     "name": "Suresh Kumar Agrawal",
+     "pct": 18.85
+    },
+    {
+     "name": "Chandrakala Agrawal",
+     "pct": 16.4
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Ajay Sharma",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Varun Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Agrawal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Mrinal Kanti Pal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Ramesh Kumar Maheshwari",
+     "role": "Independent Director / Chairman"
+    },
+    {
+     "name": "Mr. Biswanath Bhattacharjee",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Nidhi Baheti",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Mr. Vineet Agrawal",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Mr. Rajesh Singhania",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Ajay Sharma",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Varun Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Rajesh Singhania",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Rishi Kumar Sharma",
+     "role": "Deputy General Manager"
+    },
+    {
+     "name": "Narayan Hari Kabra",
+     "role": "Senior Manager \u2013 Accounts & Finance"
+    },
+    {
+     "name": "Supriyo Mukherjee",
+     "role": "Senior Commercial Manager"
+    },
+    {
+     "name": "Shubham Singh",
+     "role": "Assistant Manager \u2013 Accounts & Finance"
+    },
+    {
+     "name": "Supriyo Sarker",
+     "role": "AGM \u2013 Brand"
+    },
+    {
+     "name": "Rahul Singh",
+     "role": "Accounts Executive"
+    },
+    {
+     "name": "Mrinal Kanti Pal",
+     "role": "Director"
+    },
+    {
+     "name": "Suresh Kumar Agrawal",
+     "role": "Promoter Director / Non-Executive Director"
+    },
+    {
+     "name": "Nidhi Baheti",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ramesh Kumar Maheshwari",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Biswanath Bhattacharjee",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Santosh Agrawal",
+     "role": "President (Export-Import)"
+    },
+    {
+     "name": "Mr. Govind Lal Muchhal",
+     "role": "President (Marketing & Sales)"
+    },
+    {
+     "name": "Mr. Indrajit Guha",
+     "role": "General Manager"
+    },
+    {
+     "name": "Mr. Santosh Kumar Agrawal",
+     "role": "General Manager (Corporate Administration)"
+    },
+    {
+     "name": "Mr. Khagendra Kumar Saha",
+     "role": "Senior Manager (Factory)"
+    },
+    {
+     "name": "Mr. Ajit Kumar Gupta",
+     "role": "Senior Manager (Export)"
+    },
+    {
+     "name": "Mr. Anirudha Guha",
+     "role": "Vice President (Special Projects)"
+    },
+    {
+     "name": "Mr. Bapan Das",
+     "role": "Senior Manager (Marketing)"
+    },
+    {
+     "name": "Vineet Agrawal",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Ajay Sharma",
+     "role": "Company Secretary / Compliance Officer"
+    },
+    {
+     "name": "Suresh Kumar Agrawal",
+     "role": "Director"
+    },
+    {
+     "name": "Ramesh Kumar Maheshwari",
+     "role": "Director"
+    },
+    {
+     "name": "Nidhi Baheti",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Biswanath Bhattacharjee",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Suresh Kumar Agrawal",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Nidhi Baheti",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Ramesh Kumar Maheshwari",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sri Varun Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sri Vineet Agrawal",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Sri Rajesh Singhania",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Sri Ajay Sharma",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 269
+  },
+  "other_notable": [
+   "25th AGM scheduled on 23rd September 2026 at 03:00 PM IST through VC/OAVM.",
+   "Cut-off date for e-voting: 16th September 2026.",
+   "Remote e-voting period: 19th September 2026 (09:00 AM IST) to 22nd September 2026 (05:00 PM IST).",
+   "Cost Auditor remuneration ratified at Rs 1,25,000 plus applicable taxes and reimbursement of out-of-pocket expenses for FY ending 31st March 2027.",
+   "Registrar and Share Transfer Agent: Maheshwari Datamatics Private Limited.",
+   "Scrutinizer for e-voting: Ms. Pammy Jaiswal (Membership No. A48046), Partner of M/s. Vinod Kothari & Company, Practising Company Secretaries.",
+   "Registered Office: Turner Morrison Building, 6 Lyons Range, 1st Floor, Kolkata - 700 001.",
+   "CIN: L27101WB2001PLC138341.",
+   "Scrip Code: 539044 (BSE), Symbol: MANAKSTEEL (NSE).",
+   "Company achieved record revenue of Rs 1,053.19 Crore in FY 2025-26, crossing Rs 1,000 Crore milestone for first time",
+   "EBITDA almost tripled from Rs 25.69 Crore to Rs 76.56 Crore (198% increase)",
+   "Profit after tax increased 226.24% from Rs 11.70 Crore to Rs 38.17 Crore",
+   "Debt-equity ratio improved from 0.67x to 0.44x",
+   "Interest coverage ratio improved from 3.13x to 4.85x",
+   "ROCE increased from 5.04% to 15.68%",
+   "EPS increased from Rs 1.79 to Rs 5.82",
+   "Long-term credit rating upgraded from CARE A- to ICRA A",
+   "52% of 269 employees associated with company for more than 5 years",
+   "Manaksia Group has manufacturing facilities in India, Nigeria, and Ghana",
+   "Alu-Zinc (Galvalume) production line commissioned in FY 2025-26",
+   "Company is net debt-free",
+   "Revenue grew 80.3% YoY to Rs 1,053.19 Crore in FY 2025-26",
+   "EBITDA grew 198% to Rs 76.56 Crore; EBITDA margin improved from 4.40% to 7.27%",
+   "PAT grew 226% to Rs 38.17 Crore; PAT margin improved from 2.00% to 3.62%",
+   "RoCE recovered to 15.68% from 5.04%; RoE improved to 11.83% from 3.80%",
+   "Interest cover improved to 4.85x from 3.13x",
+   "Credit rating upgraded to ICRA A (Stable) / ICRA A1 from CARE A- / CARE A2+",
+   "Zero long-term debt maintained; total capital expenditure of Rs 145.03 Crore over FY 2023-24 to FY 2025-26 funded entirely through internal accruals",
+   "Working capital tenure moderated to 44 days from 76 days; working capital turns improved to 8.26x from 4.79x",
+   "Domestic revenue share increased to 81% from 77%; Eastern India share of domestic revenue reduced to 56.39% from 67.37%",
+   "Volume sold ~1,24,000 MT in FY 2025-26 vs ~70,000 MT in FY 2024-25",
+   "Average realisations: Colour-coated ~Rs 76,000/tonne; Galvanized/Alu-Zinc ~Rs 77,800/tonne",
+   "Cash profit Rs 47.51 Crore in FY 2025-26 (up 187% YoY); ~Rs 90 Crore deployed in fixed deposits and mutual funds by year-end",
+   "Effective tax rate 25.78% in FY 2025-26; no exceptional items, one-time gains, write-backs or reversals",
+   "Achieved 85% capacity utilisation on new Galvalume line in first year (FY 2025-26)",
+   "Crossed 10,000 MT monthly Galvalume production in February 2026",
+   "Revenue per employee increased to Rs 391.52 Lakh in FY 2025-26 from Rs 256.35 Lakh in FY 2024-25",
+   "52%+ employees associated for more than 5 years",
+   "90 per-employee training hours in FY 2025-26",
+   "Added 100 new distributors/dealers in FY 2025-26 (total 300+)",
+   "Entered 10+ new markets in FY 2025-26",
+   "Strategic shift from import-based bulk procurement to domestic sourcing reduced inventory holding periods and financing costs",
+   "Port-based Haldia location provides logistics and procurement advantage via road, rail, coastal and sea routes",
+   "Integrated manufacturing platform across Cold Rolling, Galvanising, Alu-Zinc (Galvalume) and Colour Coating",
+   "Operating leverage visible as revenue growth translated into disproportionately higher EBITDA and PAT growth in FY 2025-26",
+   "Plans to deploy facial recognition-based attendance and access management system for employees and contract workmen in FY 2026-27",
+   "CSR expenditure: Rs 57.37 Lakh in FY 2025-26",
+   "Supported 2 government schools and 2 community infrastructure initiatives",
+   "Zero major workplace accidents during FY 2025-26",
+   "Board composition: 6 Directors, 3 Independent Directors, 1 Executive Director, 2 Non-Executive Directors including one woman director; average professional experience more than three decades",
+   "Board Committees: Audit Committee, Nomination and Remuneration Committee, Stakeholders Relationship Committee, Corporate Social Responsibility Committee",
+   "Global coated steel market expected to grow from USD 295 Billion (2024) to USD 432 Billion by 2030",
+   "India's colour-coated steel market expected to expand from USD 2.34 Billion (2024) to USD 3.45 Billion by 2032",
+   "Building & construction accounts for more than half of India's finished steel consumption",
+   "India's steel roofing market projected to grow strongly with colour-coated and Alu-Zinc roofing systems witnessing increasing adoption",
+   "PLI scheme for Specialty Steel encouraging domestic production of coated and value-added steel products",
+   "Company culture emphasises compassion, trust, inclusion, belonging, mentorship, and teamwork",
+   "No dividend proposed for FY 2025-26 to preserve resources for future growth",
+   "Paid-up Equity Share Capital as on 31st March 2026 stood at Rs 655.34 Lacs with no changes during the year",
+   "No material changes and commitments affecting financial position between end of FY 2025-26 and date of report"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company is positioned to participate meaningfully in Bharat's next phase of industrial and infrastructure-led growth with expanded product portfolio, integrated manufacturing capabilities, and growing presence across value-added coated steel products.",
+    "period": "FY 2026-27 and beyond"
+   },
+   {
+    "statement": "Planned investment in a new 6-hi Reversible Cold Rolling Mill represents another important step in strengthening the manufacturing ecosystem by deepening backward integration and enhancing ability to produce specialised cold-rolled steel in-house.",
+    "period": "Future"
+   },
+   {
+    "statement": "As manufacturing capacities commissioned during the year achieve higher levels of utilisation, they are expected to strengthen operational efficiency, product mix, and profitability.",
+    "period": "Near term"
+   },
+   {
+    "statement": "Company expects consolidated revenues of Rs 1,500 Crore in FY 2026-27, supported by domestic coated-steel business and Nigerian subsidiary.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Following commissioning of new rolling mill from December 2027, Company expects revenues of approximately Rs 3,000 Crore in FY 2028-29.",
+    "period": "FY 2028-29"
+   },
+   {
+    "statement": "Shift toward domestic raw material sourcing expected to deliver enhanced working capital efficiency, compressing cash conversion cycle.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Manufacturing outlook for FY 2026-27 remains positive as Manaksia Steels enters next phase of capacity expansion journey, focusing on maximising utilisation of Galvalume line, commissioning new 90,000 TPA colour coating line, and implementing Board-approved 6-hi Reversible Cold Rolling Mill project.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Company expects operating leverage to strengthen as recently commissioned capacities approach optimum utilisation, enabling incremental production to contribute disproportionately to profitability.",
+    "period": "FY 2026-27 onwards"
+   },
+   {
+    "statement": "Will continue strengthening innovation capabilities through continuous process improvement, technology adoption and product development to address evolving customer requirements.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "During FY 2026-27, will strengthen organisational capability to support commissioning of new Colour Coating line and increasing scale of operations through selective recruitment and capability enhancement.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Marketing priorities for FY 2026-27 will focus on expanding market reach, deepening customer engagement and strengthening presence across existing and new geographies. A key priority will be to broaden the portfolio of value-added products, including differentiated and premium offerings designed to address evolving customer preferences and niche market opportunities.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The commissioning of the new Colour Coating line and the planned Cold Rolling Mill will further strengthen the Company's ability to respond to changing market requirements with greater product flexibility, improved availability and enhanced manufacturing capability. These investments are expected to support faster market development while creating opportunities to serve a wider range of applications and customer segments.",
+    "period": "FY 2026-27 onwards"
+   },
+   {
+    "statement": "ESG priorities for FY 2026-27: Environment - Increase renewable energy utilisation, strengthen energy-efficient technologies, enhance pollution control systems, improve water treatment and recycling, optimise resource consumption and continue green belt development. Social - Support capacity expansion through selective recruitment, employee learning and development, welfare initiatives, a collaborative and safe workplace, and greater use of digital HR systems. Governance - Strengthen risk management, regulatory compliance, ethical business conduct, transparency, stakeholder engagement, internal controls and operational monitoring.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "CSR priorities for FY 2026-27: Education - Expand support to a larger number of underprivileged children and strengthen educational infrastructure in government schools. Community infrastructure - Continue developing and maintaining community assets that improve public welfare, dignity and environmental sustainability. Environmental sustainability - Expand initiatives relating to environmental conservation, resource efficiency, waste management and sustainable development. Women's empowerment - Explore additional opportunities for skill development and economic empowerment.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Growth will be shaped by a combination of strong domestic demand and resilient private consumption, supported by low inflation and GST rationalisation, alongside stable export performance with improved access to key markets. This momentum is further reinforced by sustained policy support, ongoing economic reforms, and a favourable demographic advantage.",
+    "period": "medium term"
+   },
+   {
+    "statement": "Over the medium term, sustained consumption, gradual investment recovery, and expanding global trade linkages are expected to reinforce India's position as a key driver of global economic growth.",
+    "period": "medium term"
+   },
+   {
+    "statement": "The World Bank has revised its FY 2026-27 growth estimate upward to approximately 6.6%, reflecting resilient domestic momentum even as growth moderates from the previous year. India is expected to retain its position as the fastest-growing major economy.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "New 6-hi Reversible Cold Rolling Mill",
+    "amount_cr": null,
+    "timeline": "Planned (no specific timeline stated)"
+   },
+   {
+    "item": "Expansion of colour-coating capacity",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Alu-Zinc Coating Line (1,10,200 TPA)",
+    "amount_cr": 85,
+    "timeline": "Commercial production commenced June 2025"
+   },
+   {
+    "item": "Augmentation of existing Colour-Coating Line (48,000 to 60,000 TPA)",
+    "amount_cr": 40,
+    "timeline": "Completed during FY 2025-26"
+   },
+   {
+    "item": "New Colour-Coating Line (CCL II) (~90,000 TPA, total colour-coating capacity 1,50,000 TPA)",
+    "amount_cr": 40,
+    "timeline": "Expected to be completed in FY 2026-27"
+   },
+   {
+    "item": "6-Hi Reversible Cold-Rolling Mill",
+    "amount_cr": 100,
+    "timeline": "Targeted for completion by December 2027"
+   },
+   {
+    "item": "Alu-Zinc (Galvalume) Coating Line (1,10,200 TPA)",
+    "amount_cr": 85,
+    "timeline": "Commenced commercial production during FY 2025-26"
+   },
+   {
+    "item": "Colour Coating Line expansion (48,000 to 60,000 TPA)",
+    "amount_cr": null,
+    "timeline": "Completed during FY 2025-26"
+   },
+   {
+    "item": "Second Colour Coating Line (90,000 TPA)",
+    "amount_cr": null,
+    "timeline": "Under commissioning; to be commissioned in FY 2026-27"
+   },
+   {
+    "item": "6-hi Reversible Cold Rolling Mill (backward integration)",
+    "amount_cr": null,
+    "timeline": "Board-approved; implementation to commence in FY 2026-27"
+   },
+   {
+    "item": "Three-colour printing machine for decorative coated steel (36,000 MTPA)",
+    "amount_cr": null,
+    "timeline": "Imported during FY 2025-26"
+   },
+   {
+    "item": "Total manufacturing infrastructure investment over last three financial years",
+    "amount_cr": 145.03,
+    "timeline": "Last three financial years"
+   },
+   {
+    "item": "Second Colour Coating Line",
+    "amount_cr": null,
+    "timeline": "Planned; will raise total colour coating capacity to nearly 1,50,000 TPA"
+   },
+   {
+    "item": "6-Hi Reversible Cold Rolling Mill",
+    "amount_cr": 100,
+    "timeline": "Scheduled for commissioning by 2027"
+   },
+   {
+    "item": "Energy conservation equipments",
+    "amount_cr": 0.75,
+    "timeline": ""
+   },
+   {
+    "item": "Capital Expenditure Commitment (Net of Advances)",
+    "amount_cr": 3.0741,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Capital Expenditure Commitment (Net of Advances)",
+    "amount_cr": 3.07,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "risks": [
+   "Known or unknown risks or uncertainties materialising",
+   "Underlying assumptions proving inaccurate",
+   "Forward-looking statements may not be realised",
+   "Dependence on commodity steel pricing dynamics",
+   "Competitive intensity in coated steel segments",
+   "Working capital lock-in from import-based procurement (being mitigated by domestic sourcing)",
+   "Execution risk on sequenced capacity expansion programme",
+   "Mismatch between Cold Rolling Mill capacity and Galvalume line requirements",
+   "Intermittent maintenance-related downtime at Cold Rolling Mill",
+   "Dependence on imported raw materials (mitigated by domestic sourcing shift)",
+   "Competition intensification in value-added coated steel segment",
+   "Demand fluctuations and pricing pressure",
+   "Technical talent competition for automated manufacturing operations",
+   "Highly competitive market characterised by established brands and overlapping product portfolios",
+   "Global geopolitical uncertainty impacting energy costs",
+   "Trade policy uncertainty and tariff shocks",
+   "Commodity price cycles",
+   "Dependence on imported value-added products (industry-wide)",
+   "Regulatory compliance and changing regulations",
+   "Elevated energy prices",
+   "Subsidy pressures on government spending",
+   "Uncertainty in global demand",
+   "Continued dominance of China in the global steel market with cost advantages and wide product portfolio exerting competitive pressure",
+   "Supply-side constraints including limited availability of domestic iron ore and coal, along with high transportation and power costs",
+   "Dependence on imports for key raw materials exposing the industry to external market risks",
+   "Volatility in scrap prices impacting cost predictability and margins",
+   "Limited pace of technological innovation and adoption across the sector",
+   "Inadequate logistics infrastructure affecting supply chain efficiency and cost competitiveness",
+   "High taxation and duties in India compared to global peers impacting competitiveness",
+   "Aggressive pricing and dumping of steel products by China creating market distortions",
+   "Increasing competition from alternative materials such as High Entropy Alloys and advanced ceramics",
+   "Limited availability of non-coking coal impacting production processes",
+   "Proliferation of low-cost steel produced using lower-grade inputs intensifying global competition",
+   "Persistent raw material shortages particularly iron ore and coal",
+   "Elevated conversion costs affecting overall profitability",
+   "Regulatory and policy challenges especially related to land acquisition",
+   "Foreign exchange risk",
+   "Commodity price fluctuations",
+   "Regulatory non-compliance risk (e.g., Regulation 17(1A) of Listing Regulations)",
+   "Title deeds of leasehold land at Haldia not transferred in company's name post demerger from Manaksia Limited, matter pending before Hon'ble High Court Kolkata",
+   "Foreign currency exchange rate risk",
+   "Interest rate risk",
+   "Equity price risk",
+   "Liquidity risk",
+   "Credit risk",
+   "Foreign exchange fluctuations on conversion of accounts of foreign subsidiaries",
+   "Impairment of goodwill and intangible assets with indefinite useful life",
+   "Credit risk on financial assets measured at amortized cost",
+   "Contingent liabilities from past events",
+   "Foreign currency exchange rate risk on Trade Payables, Trade Receivables and Borrowings (Buyers' Credit)",
+   "Interest rate risk on floating rate debt obligations",
+   "Equity price risk on investments",
+   "Interest rate risk: increase in interest rates would increase finance costs and reduce net profit and equity before tax by approximately Rs 149.18 lacs for year ended March 31, 2026 (2024-25: Rs 203.65 lacs).",
+   "Security price risk: 10% change in prices of equity/mutual fund investments (FVTPL) would impact profit before tax by Rs 685.96 lacs (2025) and Rs 1048.67 lacs (2024); 10% change in equity instruments (FVOCI) would impact OCI before tax by Rs 170.16 lacs (2025) and Rs 233.80 lacs (2024).",
+   "Liquidity risk: risk that the Group may not meet its financial obligations.",
+   "Credit risk: risk of financial loss from counter-party failure; financial instruments subject to credit risk include Trade Receivables, Loans Receivables, Investments and Financial Guarantees.",
+   "Foreign exchange risk: significant devaluation of Nigerian currency resulted in foreign exchange losses in Nigerian subsidiaries reported as exceptional item in FY 2024-25."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": null,
+    "business": "Production of long steel products in Nigeria"
+   },
+   {
+    "name": "Nigerian subsidiary",
+    "holding_pct": null,
+    "business": "Manufactures long steel products including TMT bars and welding electrodes"
+   },
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": null,
+    "business": "Revenue of Naira 129955.34 Lacs (equivalent to Rs 7791.12 Lacs) for year ended 31st March 2026; net profit of Naira 2862.63 Lacs (equivalent to Rs 174.69 Lacs)"
+   },
+   {
+    "name": "Far East Steel Industries Limited",
+    "holding_pct": null,
+    "business": "No revenue during year ended 31st March 2026"
+   },
+   {
+    "name": "Sumo Agrochem Limited",
+    "holding_pct": null,
+    "business": "No revenue during year ended 31st March 2026; net loss of Naira 0.60 Lacs (equivalent to Rs 0.04 Lacs) for FY 2025-26"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "As on 31st March, 2026, there was no material subsidiary of the Company."
+   },
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Far East Steel Industries Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Sumo Agrochem Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": null,
+    "business": "Steel manufacturing in Nigeria"
+   },
+   {
+    "name": "Far East Steel Industries Limited",
+    "holding_pct": null,
+    "business": "Steel manufacturing in Nigeria"
+   },
+   {
+    "name": "Sumo Agrochem Limited",
+    "holding_pct": null,
+    "business": "Agrochemical business in Nigeria"
+   },
+   {
+    "name": "Technomet International FZE",
+    "holding_pct": null,
+    "business": "Subsidiary (ceases w.e.f 10th July, 2024), United Arab Emirates"
+   },
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary, Nigeria"
+   },
+   {
+    "name": "Far East Steel Industries Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary, Nigeria"
+   },
+   {
+    "name": "Sumo Agrochem Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary, Nigeria"
+   },
+   {
+    "name": "Technomet International FZE",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Federated Steel Mills Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Far East Steel Industries Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Sumo Agrochem Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Short-term debt (working capital)",
+    "amount_cr": 149.18,
+    "note": "FY 2025-26; utilised against raw material procurement; no long-term debt carried"
+   },
+   {
+    "lender_or_type": "Trade credit facilities",
+    "amount_cr": null,
+    "note": "Working capital funded through trade credit rather than cash credit; drew 48.72% of sanctioned limits in FY 2025-26"
+   },
+   {
+    "lender_or_type": "Internal accruals / No long-term debt raised",
+    "amount_cr": 0,
+    "note": "Company funded successive capacity additions primarily through internal accruals while avoiding long-term borrowings"
+   },
+   {
+    "lender_or_type": "Trade finance facilities",
+    "amount_cr": null,
+    "note": "Working capital managed conservatively through trade finance facilities"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 149.1837,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Working Capital Bankers (secured)",
+    "amount_cr": 149.18,
+    "note": "Secured by first charge on current assets and movable fixed assets (except ICICI Bank). Includes Buyers' Credit (Term Loan) of Rs 25.34 cr and LC Discounting Liability of Rs 123.84 cr as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short Term / Long Term Borrowings (Gross Debt)",
+    "amount_cr": 149.1837,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Buyer's Credit (Term Loan)",
+    "amount_cr": 25.3439,
+    "note": "Foreign currency exposure as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities",
+    "amount_cr": 2.2032,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Foreign Currency Loan from Banks - Buyers' Credit (Term Loan)",
+    "amount_cr": 25.34,
+    "note": "Secured by first charge on current assets and movable fixed assets (except ICICI Bank)"
+   },
+   {
+    "lender_or_type": "LC Discounting Liability",
+    "amount_cr": 123.84,
+    "note": "Secured by first charge on current assets and movable fixed assets (except ICICI Bank)"
+   },
+   {
+    "lender_or_type": "Rupee Loan Repayable on Demand",
+    "amount_cr": 0.0,
+    "note": "Secured by first charge on current assets and movable fixed assets (except ICICI Bank)"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 149.18,
+    "note": "As at March 31, 2026 (Rs 14,918.37 lacs); 2025: Rs 20,365.07 lacs"
+   }
+  ],
+  "litigation": [
+   "Fine imposed by both Stock Exchanges relating to re-appointment of an Independent Director within specified time period, which has been paid during the period under review",
+   "BSE Limited and National Stock Exchange of India Ltd. rejected waiver application against fine imposed; Company paid fine to BSE on 6th March 2026 and to NSE on 16th April 2026",
+   "Fine levied by BSE Limited and National Stock Exchange of India Limited on 21st November, 2024 for non-compliance under Regulation 17(1A) of Listing Regulations; application for waiver rejected, fine paid.",
+   "Leasehold Land at Haldia - The Lease Deed has not been executed in the favour of company till date as the matter is pending before the Hon'ble High Court Kolkata.",
+   "Central Excise duty demand of Rs 2.80 lacs for FY 2014-15 pending before AC CGST & CX Bankura -1 Bankura Commissionerate",
+   "Income Tax demand of Rs 155.19 lacs for FY 2015-16 & 2017-18 pending before Assistant Commissioner of Income Tax",
+   "Leasehold land title transfer matter pending before Hon'ble High Court Kolkata post demerger from Manaksia Limited",
+   "Service Tax & Excise Duty claim of Rs 2.80 lacs",
+   "Income Tax claim of Rs 155.19 lacs",
+   "Demand by Haldia Development Authority towards Land Premium of Rs 332.50 lacs",
+   "Stamp Duty for Registration of Land of Rs 49.45 lacs",
+   "The consolidated Ind AS financial statements disclosed the impact of pending litigations on its financial position in its financial statements (Refer Note no. 33 of the Consolidated Ind AS financial statements)",
+   "Service Tax & Excise Duty demand of Rs 2.80 lacs",
+   "Income Tax demand of Rs 155.19 lacs"
+  ],
+  "related_party": [
+   {
+    "party": "MINL Limited",
+    "nature": "Material Related Party Transactions approval sought for FY 2026-27",
+    "amount_cr": null
+   },
+   {
+    "party": "Manaksia Limited",
+    "nature": "Material Related Party Transactions approval sought for FY 2026-27",
+    "amount_cr": null
+   },
+   {
+    "party": "Sumo Steels Limited",
+    "nature": "Material Related Party Transactions approval sought for FY 2026-27",
+    "amount_cr": null
+   },
+   {
+    "party": "Manaksia Ferro Industries Limited",
+    "nature": "Material Related Party Transactions approval sought for FY 2026-27",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Transactions disclosed in Note No. 34 of Standalone Financial Statements and Note No. 35 of Consolidated Financial Statements for FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "Sumo Steels Limited",
+    "nature": "Sale of raw materials like hot rolled coils, spares, rolled aluminium for ROPP caps, etc.",
+    "amount_cr": 99.226
+   },
+   {
+    "party": "MINL Limited",
+    "nature": "Sale of raw materials like hot rolled coils, spares, etc.",
+    "amount_cr": 69.7826
+   },
+   {
+    "party": "Manaksia Limited",
+    "nature": "Sale of finished goods like BP sheets, colour coated, galvanished coils/sheets, etc.",
+    "amount_cr": 33.1344
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Salary and Other Benefits",
+    "amount_cr": 4.9743
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Meeting Fees",
+    "amount_cr": 0.0495
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Sale of Goods",
+    "amount_cr": 205.0121
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Purchase of Goods",
+    "amount_cr": 9.845
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Service received",
+    "amount_cr": 0.0677
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Rental Income recognised",
+    "amount_cr": 0.1243
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Receivables",
+    "amount_cr": 40.2676
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Payable",
+    "amount_cr": 1.8455
+   },
+   {
+    "party": "Subsidiaries & Step-down Subsidiaries",
+    "nature": "Outstanding Investment in Equity (at Cost)",
+    "amount_cr": 23.8849
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Investment in Equity (at Cost)",
+    "amount_cr": 15.038
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Advance to Employee",
+    "amount_cr": 0.3663
+   },
+   {
+    "party": "Key Managerial Personnel & Other Directors",
+    "nature": "Salary and Other Benefits",
+    "amount_cr": 4.97
+   },
+   {
+    "party": "Key Managerial Personnel & Other Directors",
+    "nature": "Meeting Fees",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Sale of Goods",
+    "amount_cr": 205.8
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Purchase of Goods",
+    "amount_cr": 15.25
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Service received",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Rental Income recognised",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Receivables",
+    "amount_cr": 40.55
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Payable",
+    "amount_cr": 2.4
+   },
+   {
+    "party": "Entities where KMP/Directors and relatives have significant influence",
+    "nature": "Outstanding Investment in Equity (at cost)",
+    "amount_cr": 15.04
+   },
+   {
+    "party": "Key Managerial Personnel & Other Directors",
+    "nature": "Advance to Employee",
+    "amount_cr": 0.37
+   },
+   {
+    "party": "Related party (single customer >10% of total revenue)",
+    "nature": "Sales",
+    "amount_cr": 0
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Central Excise duty demand",
+    "amount_cr": 0.028
+   },
+   {
+    "nature": "Income Tax demand",
+    "amount_cr": 1.5519
+   },
+   {
+    "nature": "Service Tax & Excise Duty",
+    "amount_cr": 0.028
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 1.5519
+   },
+   {
+    "nature": "Demand by Haldia Development Authority towards Land Premium",
+    "amount_cr": 3.325
+   },
+   {
+    "nature": "Stamp Duty for Registration of Land",
+    "amount_cr": 0.4945
+   },
+   {
+    "nature": "Guarantees given by the Company not acknowledged as debt",
+    "amount_cr": 2.365
+   },
+   {
+    "nature": "Service Tax & Excise Duty",
+    "amount_cr": 0.03
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 1.55
+   },
+   {
+    "nature": "Demand by Haldia Development Authority towards Land Premium",
+    "amount_cr": 3.33
+   },
+   {
+    "nature": "Stamp Duty for Registration of Land",
+    "amount_cr": 0.49
+   },
+   {
+    "nature": "Guarantees given by the Company not acknowledged as debt",
+    "amount_cr": 2.37
+   }
+  ]
+ }
+}
