@@ -1,0 +1,969 @@
+{
+ "isin": "INE915K01010",
+ "name": "Asian Hotels (West) Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29609_AHLWEST_2025_2026_A_4523855_07072026151723.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 386773,
+ "chunks": 10,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "Asian Hotels (West) Limited owns the Hyatt Regency Mumbai hotel, which has been non-operational since June 2021. Its subsidiary Aria Hotels and Consultancy Services Private Limited owns and operates the 523-room JW Marriott New Delhi Aerocity, a 5-star deluxe hotel.",
+   "products": [
+    {
+     "name": "Hotel operations (Hyatt Regency Mumbai)",
+     "share_of_revenue_pct": null,
+     "note": "Operations suspended since June 2021"
+    },
+    {
+     "name": "Hotel operations (JW Marriott New Delhi Aerocity) - via subsidiary",
+     "share_of_revenue_pct": null,
+     "note": "523-room 5-star deluxe hotel"
+    },
+    {
+     "name": "Hotel operations (Hyatt Regency, Mumbai)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue comprises hotel revenue (room revenue, food and beverages revenue) and rental income from commercial space leasing and revenue from other related services"
+    },
+    {
+     "name": "Rooms",
+     "share_of_revenue_pct": 52.5,
+     "note": "Revenue of Rs 22,872.29 lakhs in FY2026"
+    },
+    {
+     "name": "Food, other beverages, smokes & banquets",
+     "share_of_revenue_pct": 25.6,
+     "note": "Revenue of Rs 11,161.94 lakhs in FY2026"
+    },
+    {
+     "name": "Wines and liquor",
+     "share_of_revenue_pct": 6.3,
+     "note": "Revenue of Rs 2,734.50 lakhs in FY2026"
+    },
+    {
+     "name": "Sub License Fees (including maintenance fee)",
+     "share_of_revenue_pct": 2.1,
+     "note": "Revenue of Rs 924.77 lakhs in FY2026"
+    },
+    {
+     "name": "Gain on sublease",
+     "share_of_revenue_pct": 5.4,
+     "note": "Revenue of Rs 2,330.53 lakhs in FY2026"
+    },
+    {
+     "name": "Other operating revenue",
+     "share_of_revenue_pct": 8.1,
+     "note": "Revenue of Rs 3,515.05 lakhs in FY2026"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Mumbai, India",
+     "share_pct": null
+    },
+    {
+     "name": "New Delhi, India",
+     "share_pct": null
+    },
+    {
+     "name": "Mumbai (Hyatt Regency)",
+     "share_pct": null
+    },
+    {
+     "name": "Aerocity, New Delhi",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Mumbai, India",
+     "capacity": "Hyatt Regency Mumbai (operations suspended)"
+    },
+    {
+     "location": "New Delhi Aerocity, Hospitality District, Near IGI Airport, New Delhi",
+     "capacity": "523 rooms, 5-star deluxe hotel (JW Marriott)"
+    },
+    {
+     "location": "HYATT REGENCY, MUMBAI, Sahar Airport Road, Andheri, East, Mumbai - 400099",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "hospitality",
+    "luxury hotels",
+    "weddings",
+    "MICE events",
+    "hotel operations",
+    "Hotel accommodation",
+    "Food & beverage services",
+    "Banquets and events",
+    "Commercial space sub-licensing"
+   ],
+   "brands_or_certifications": [
+    "Hyatt Regency",
+    "JW Marriott"
+   ],
+   "raw_materials": [
+    "Wines & liquor",
+    "Food, beverages and smokes",
+    "Linen, room, catering and other supplies/services",
+    "Stores and spares",
+    "Operating equipments and supplies"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The outlook for the Indian hotel industry during FY 2026\u201327 remains strongly positive, supported by rising domestic tourism, business travel, weddings, MICE events, and improving infrastructure. Industry reports indicate continued revenue growth, healthy occupancy, and strong pricing power for hotels across major cities and emerging destinations.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "For 2026\u201327, the hotel industry outlook is broadly positive, especially in India, due to strong domestic tourism, event-driven travel, luxury demand, and limited room supply. However, profitability and long-term success will depend on how effectively hotels manage rising costs, technology adoption, sustainability expectations, and evolving traveler preferences.",
+    "period": "2026-27"
+   }
+  ],
+  "risks": [
+   "Adverse audit opinion on standalone financial statements regarding classification of borrowings vs advance for sale of assets",
+   "Going concern uncertainty: current liabilities exceed current assets by Rs 42,432.87 lakhs as at March 31, 2026",
+   "Non-compliance with Section 180(1)(a) - member approval obtained only for creating security, not for exercise of option granted to Saraf Group",
+   "Non-filing of necessary forms with MCA for charge creation on Hyatt Regency Mumbai",
+   "Potential requirement to prepare financial statements under Ind AS 105 for assets held for sale",
+   "Unrecognized interest expense of Rs 7,845.07 lakhs and certain expenses of Rs 1,598.39 lakhs claimed by Saraf Group",
+   "Unreconciled balance of Rs 242.64 lakhs in borrowings",
+   "Inability to verify property, plant and equipment balance of Rs 1,491.64 lakhs",
+   "Outstanding recoverable/payable balances with Government Authorities subject to reconciliation",
+   "Hotel operations suspended since June 2021 due to funding restrictions",
+   "Disruptive business models like short-term rentals (e.g., Airbnb) increasing competition and altering pricing structures",
+   "Unfavorable economic conditions such as inflation and fluctuating consumer discretionary spending reducing travel demand",
+   "Rapid technological changes and new luxury competitors rendering established services obsolete",
+   "Tight labor market and widespread staff shortages compromising service quality",
+   "Rising operational costs including food, utilities, and wages impacting profit margins",
+   "Physical and legal risks such as workplace safety hazards, supply chain disruptions, and vulnerability to natural disasters",
+   "Reputational damage from rapid spread of negative reviews on social media",
+   "Data privacy and cybersecurity concerns",
+   "Shifting regulatory environments, compliance requirements, and environmental sustainability pressures",
+   "Trading was suspended by both the stock exchanges i.e., BSE and NSE due to various non-compliances.",
+   "Notice of demand was received from EPFO for recovery of outstanding EPF contribution, EPF administration charge, family pension fund contribution and deposit linked insurance fund contribution amounting to Rs. 1,23,55,358/- and Rs.32,882/- respectively.",
+   "Notice of Demand from Brihanmumbai Municipal Corporation (BMC) was received in relation to payment of property Tax pertaining to Hyatt Regency Mumbai for total demand of Rs. 14.50 Crore out of which the Company paid 8.95 Crore during the period under review.",
+   "Due to technical reason, MGT-7 for the F.Y. 2022-23 (CIRP Period) has not been filed.",
+   "The Company has designated Mr. Amit Saraf as Whole-Time Director w.e.f. 23.09.2025. Prior to this period there was no Managing Director/ Whole time Director as required under Section 203 of the Companies Act, 2013.",
+   "The composition of Board of Directors was not in terms of regulation 17(1) of SEBI (Listing obligations and disclosure requirements) Regulations, 2015 during the period starting from June 2, 2025 to November 3rd, 2025.",
+   "The Compliances relating to transfer of dividend and shares under section 125 has not been complied within the stipulated time period.",
+   "The Company has made delay in submission of Financial Results as required under Regulation 33 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 for the quarter ended on March 31st, 2025 and June 30th, 2025.",
+   "The Company has made delay in making submission as required under Regulation 31(4) of SEBI (SAST) Regulations, 2011.",
+   "No Form CHG-1 was filed during the audit period for creation of security/charge in favour of Novak Hotels Private Limited over the Company's Property namely Hyatt Regency, Mumbai to secure the borrowing of the company amounting to Rs. 390 Crores.",
+   "As per clause (v) of Schedule 2 to the Framework Agreement, the Saraf Group shall have the option to acquire Hyatt Regency, Mumbai, being the principal asset of the Company, at any time after the successful withdrawal of the Corporate Insolvency Resolution Process (CIRP) and revocation of the trading suspension.",
+   "Classification of amounts received from Saraf Group unclear - could be borrowing or advance for sale of assets",
+   "Non-compliance with Section 180(1)(a) - member approval obtained only for creating security, not for potential sale of undertaking",
+   "Non-filing of charge creation forms with MCA",
+   "Financial statements may need to be prepared under Ind AS 105 if intention is to sell Hyatt Regency",
+   "Material uncertainty on going concern - current liabilities exceed current assets by Rs 424.33 crore",
+   "Unrecognized interest expense of Rs 78.45 crore and expense reimbursements of Rs 15.98 crore claimed by Saraf Group",
+   "Unreconciled balance of Rs 2.43 crore in borrowings",
+   "Inadequate records for property, plant and equipment (Rs 14.92 crore)",
+   "Outstanding statutory dues subject to reconciliation with government authorities",
+   "Undisputed statutory dues in arrears including PF (Rs 0.70 crore), ESIC (Rs 0.04 crore), Professional Tax (Rs 0.02 crore), TDS on salaries (Rs 0.70 crore), GST (Rs 0.29 crore), Customs Duty (Rs 0.95 crore)",
+   "Disputed statutory dues including PF (Rs 1.89 crore) and GST (Rs 0.31 crore deposited, Rs 0.31 crore under protest)",
+   "Material uncertainty exists that the Company may not be capable of meeting its liabilities as and when they fall due within one year from the balance sheet date",
+   "Company has incurred cash losses of Rs. 9,667.93 lakhs in current financial year and Rs. 6,020.34 lakhs in immediately preceding financial year",
+   "Adverse opinion on internal financial controls due to inadequate controls over lender balance confirmations, going concern assessment, property plant and equipment existence assertion, and interest accrual on delayed statutory dues",
+   "The Company is in the process of executing the loan documents with the lender in respect of the said borrowing, and finalising and agreeing to the terms and condition of the loan, including the nature of security, interest rate and terms of repayment.",
+   "The Company has not recognized the interest expense of Rs 7,845.07 lakhs, certain expenses as reimbursement of Rs 1,598.39 lakhs and an unreconciled balance of Rs 242.64 lakhs on the amount of Borrowings as claimed by the lender as these matters are in dispute with the lender.",
+   "The outstanding recoverable/payables balances with the government authorities are under reconciliation with statutory records.",
+   "Adverse audit opinion on consolidated financial statements",
+   "Material uncertainty related to going concern (current liabilities exceed current assets by Rs. 38,896.24 lakhs)",
+   "Unreconciled balances with government authorities and uncertain interest liability on statutory dues",
+   "Unreconciled borrowings balance of Rs. 242.64 lakhs",
+   "Non-compliance with Section 180(1)(a) regarding member approval for disposal of undertaking",
+   "Potential misclassification of Rs. 39,000 lakhs received from Saraf Group as borrowings vs advance for sale of assets",
+   "Non-recognition of interest expense of Rs. 7,845.07 lakhs and reimbursement expenses of Rs. 1,598.39 lakhs claimed by Saraf Group",
+   "Inadequate records for property, plant and equipment (Rs. 1,491.64 lakhs) and lack of physical verification",
+   "CARO adverse remarks on PPE, statutory dues, cash losses, title deeds, CSR",
+   "The Holding Company did not have adequate controls over obtaining confirmation of balances from lenders, reconciling such balances and recording entries or taking other actions, as maybe deemed necessary to address such differences.",
+   "The Holding Company's controls over assessing appropriateness of use of going concern assumption were not adequate since the assessment of the Holding Company in the use of such assumption did not consider the financial condition of the Holding Company as stated in the consolidated financial statements nor was supported by business plans.",
+   "The Holding Company's internal controls did not address the assertion of existence of the Holding Company's Property Plant and Equipment and therefore its valuation as at March 31, 2026.",
+   "The Holding Company's internal controls did not enable the determination and accrual of interest that may be due on delayed remittances of statutory dues.",
+   "The audit trail feature was not enabled at the database level for accounting software to log any direct data changes, used for maintenance of hotel revenue related records by the Subsidiary Company.",
+   "The Subsidiary Company has also used other accounting softwares which are operated by third-party software service providers for maintenance of accounting records. The 'Independent Service Auditor's Assurance Report on the Description of Controls, their Design and Operating Effectiveness' ('Type 2 report' issued in accordance with the attestation standards established by the American Institute of Certified Public Accountants (AICPA) and International Standard on Assurance Engagement (ISAE) 3402, Assurance Reports on Controls at a Service Organisation) were available for part of the year. Further, these reports do not provide sufficient audit evidence on audit trail (edit logs) for any direct changes made at the database level. Accordingly, we are unable to comment on whether audit trail feature with respect to the database of the said softwares was enabled and operated throughout the year in case of Subsidiary Company.",
+   "Property tax dispute with SDMC/MCD for hotel at Aerocity, New Delhi - additional liability estimated at Rs 2,075 lakhs",
+   "Subsidiary company required to maintain financial covenants; waivers obtained for variances in ratios",
+   "Holding company promoter undertaking to maintain 51% shareholding in subsidiary until final settlement date",
+   "Subsidiary in process of meeting prescribed DSRA limits in lieu of personal guarantee of promoter",
+   "Impact of new Labour Codes notified November 2025 - incremental impact of Rs 21.27 lakhs recognized",
+   "Contingent liabilities including TDS demand of Rs 0.06 lakhs and potential customer claims",
+   "The Holding Company has not recognized the interest expense of Rs 7,845.07 lakhs, certain expenses as reimbursement of Rs 1,598.39 lakhs and an unreconciled balance of Rs 242.64 lakhs on the amount of Borrowings as claimed by the lender as these matters are in dispute with the lender.",
+   "The outstanding recoverable/payable balances with the government authorities are under reconciliation with the statutory records in Holding Company."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Aria Hotels and Consultancy Services Private Limited",
+    "holding_pct": null,
+    "business": "Owner of 523-room 5-star deluxe hotel under brand JW Marriott at New Delhi Aerocity, Hospitality District, Near IGI Airport, New Delhi. Material subsidiary."
+   },
+   {
+    "name": "Aria Hotels and Consultancy Services Pvt. Ltd.",
+    "holding_pct": 99.98,
+    "business": ""
+   },
+   {
+    "name": "Aria Hotels and Consultancy Services Private Limited",
+    "holding_pct": null,
+    "business": "The Company deals in the hospitality sector and running a five star hotel which was not operational during the review period."
+   },
+   {
+    "name": "Novak Hotels Private Limited",
+    "holding_pct": null,
+    "business": "Group company of Saraf Group that has stated amounts funded as advances for acquiring Hyatt Regency, Mumbai"
+   },
+   {
+    "name": "Aria Hotels & Consultancy Services Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Aria Hotels and Consultancy Services Private Limited",
+    "holding_pct": 99.98,
+    "business": "Development, design, finance, construction, operation and maintenance of upscale and Luxury hotel property"
+   },
+   {
+    "name": "Aria Hotels and Consultancy Services Private Limited",
+    "holding_pct": null,
+    "business": "Owning and operating hotel property (Hyatt Regency, Mumbai); hotel revenue (room, F&B), rental income from commercial space leasing, other related services"
+   },
+   {
+    "name": "Robust Hotels Limited",
+    "holding_pct": 8.43,
+    "business": "Operates an upscale and luxury hotel property at the airport site under a development agreement with Delhi International Airport Private Limited (DIAL) dated 4 July 2009 for acquiring development rights by way of a license over the specified area for developing, designing, financing, constructing, owning, operating and maintaining the hotel property."
+   },
+   {
+    "name": "Not explicitly named in text",
+    "holding_pct": 51,
+    "business": "Hotel operations at Aerocity, New Delhi (Hyatt Regency Delhi?)"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Novak Hotels Private Limited (Saraf Group)",
+    "amount_cr": 390,
+    "note": "Total borrowing (current) as on 31st March 2026. Amount received under framework agreement: Rs 37,100 lakhs till March 31, 2024 and further Rs 1,900 lakhs during the year aggregating to Rs 39,000 lakhs. Interest expense recognized: Rs 2,200 lakhs as on March 31, 2024; Rs 198 lakhs (9% p.a.) during FY 2024-25 and Rs 198 lakhs during FY 2025-26. Auditors unable to confirm classification as borrowing vs advance for sale of assets."
+   },
+   {
+    "lender_or_type": "Novak Hotels Private Limited",
+    "amount_cr": 390,
+    "note": "Borrowing availed/to be availed from Novak Hotels Private Limited (a company belonging to Saraf Group) secured by creation of security/charge over Hyatt Regency, Mumbai. No formal loan agreement entered into between the company and Novak Hotels Private Limited post CIRP. No Form CHG-1 was filed during the audit period."
+   },
+   {
+    "lender_or_type": "Saraf Group (classification uncertain - borrowing or advance for sale)",
+    "amount_cr": 390,
+    "note": "Rs 39,000 lakhs received under Framework Agreement; interest expense of Rs 7,845.07 lakhs and expense reimbursements of Rs 1,598.39 lakhs claimed but not recognized; unreconciled balance of Rs 242.64 lakhs in Note 20"
+   },
+   {
+    "lender_or_type": "Novak Hotels Private Limited",
+    "amount_cr": 390.0,
+    "note": "Repayable on demand, current borrowing"
+   },
+   {
+    "lender_or_type": "9% Non Convertible & Non Cumulative Redeemable Preference Shares",
+    "amount_cr": 6.5,
+    "note": "Redeemable within 10 years from date of allotment (July 2018), non-current borrowing"
+   },
+   {
+    "lender_or_type": "Novak Hotels Private Limited (Saraf Group)",
+    "amount_cr": 390.0,
+    "note": "The Company is in the process of executing the loan documents with the lender in respect of the said borrowing, and finalising and agreeing to the terms and condition of the loan, including the nature of security, interest rate and terms of repayment. The Company has not recognized the interest expense of Rs 7,845.07 lakhs, certain expenses as reimbursement of Rs 1,598.39 lakhs and an unreconciled balance of Rs 242.64 lakhs on the amount of Borrowings as claimed by the lender as these matters are in dispute with the lender."
+   },
+   {
+    "lender_or_type": "Total Borrowings (Fixed rate)",
+    "amount_cr": 396.5,
+    "note": "The Company is not exposed towards interest Rate Risk as the Company borrowed funds on fixed Interest based."
+   },
+   {
+    "lender_or_type": "Saraf Group / Novak Hotels Private Limited",
+    "amount_cr": 390,
+    "note": "Classified as advance/borrowings; unreconciled difference of Rs. 242.64 lakhs; interest expense of Rs. 7,845.07 lakhs and reimbursement expenses of Rs. 1,598.39 lakhs claimed but not recognized; potential non-compliance with Section 186(7) minimum interest rate"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 213.73,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 390.0,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Union Bank of India (erstwhile Andhra Bank)",
+    "amount_cr": 21.43,
+    "note": "Term loan, secured, interest rate 9.40%-11.10%"
+   },
+   {
+    "lender_or_type": "Union Bank of India (erstwhile Corporation Bank)",
+    "amount_cr": 41.68,
+    "note": "Term loan, secured, interest rate 9.40%-11.10%"
+   },
+   {
+    "lender_or_type": "Karnataka Bank",
+    "amount_cr": 0,
+    "note": "Term loan, secured, interest rate 9.40%-11.10% - nil as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": 38.11,
+    "note": "Term loan, secured, interest rate 9.40%-11.10%"
+   },
+   {
+    "lender_or_type": "IndusInd Bank Ltd.",
+    "amount_cr": 109.23,
+    "note": "Term loan, secured, interest rate 9.40%-11.10%"
+   },
+   {
+    "lender_or_type": "9% Non Convertible & Non Cumulative Preference Share Capital",
+    "amount_cr": 6.5,
+    "note": "Redeemable within 10 years from July 2018 allotment"
+   },
+   {
+    "lender_or_type": "Novak Hotels Private Limited",
+    "amount_cr": 390.0,
+    "note": "Current borrowing, repayable on demand"
+   },
+   {
+    "lender_or_type": "Total non-current borrowings (net)",
+    "amount_cr": 213.73,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Total current borrowings",
+    "amount_cr": 390.0,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Novak Hotels Private Limited (Saraf Group)",
+    "amount_cr": 390,
+    "note": "Amount advanced till March 31, 2024: \u20b937,100 lakhs; further \u20b91,900 lakhs during the year aggregating to \u20b939,000 lakhs. Utilized for making all payments to creditors, all other regulatory and necessitated expenses. Received in terms of a framework agreement between the promoters of the Holding Company and Saraf Group entered into as part of the insolvency resolution process. The Holding Company is in the process of executing the loan documents with the lender in respect of the said borrowing, and finalising and agreeing to the terms and condition of the loan, including the nature of security, interest rate and terms of repayment. Interest expense recognized: \u20b92,200 lakhs during previous year ended March 31, 2024; \u20b9198 lakhs (9% p.a. on \u20b92,200 lakhs) as on March 31, 2025 and \u20b9198 lakhs during the year 2025-26. The Holding Company has not recognized the interest expense of Rs 7,845.07 lakhs, certain expenses as reimbursement of Rs 1,598.39 lakhs and an unreconciled balance of Rs 242.64 lakhs on the amount of Borrowings as claimed by the lender as these matters are in dispute with the lender."
+   }
+  ],
+  "auditor": {
+   "name": "M/s J.C. Bhalla & Co., Chartered Accountants (FRN: 001111N)",
+   "opinion": "Adverse Opinion",
+   "key_audit_matters": [
+    "Classification of amounts received from Saraf Group as borrowings vs advance for sale of Hyatt Regency Mumbai",
+    "Going concern assumption given current liabilities exceed current assets by Rs 42,432.87 lakhs",
+    "Non-verification of property, plant and equipment balance of Rs 1,491.64 lakhs",
+    "Outstanding recoverable/payable balances with Government Authorities subject to reconciliation",
+    "As per clause (v) of Schedule 2 to the Framework Agreement, Saraf Group shall have the option to buy the Hyatt Regency, Mumbai (the principal asset of the Company) from the Company any time after the successful withdrawal of Corporate Insolvency Resolution Process and revocation of the Trading suspension. Moreover, in case of exercise of such option by Saraf Group, neither the Company nor Saraf Group shall be liable to pay any other amount to each other. Though the Company is not a party to the said Framework Agreement, the subsequent actions of the Board of Directors of the Company in seeking and obtaining shareholders' approval for securing the amounts received from the Saraf Group by creation of charge/lien over Hyatt Regency, Mumbai, indicate that the Board of Directors had taken cognizance of the Framework Agreement.",
+    "Disclosure and Classification of Amount received as per Framework Agreement",
+    "Assessment of Going Concern",
+    "Outstanding recoverable/payables balances with Government Authorities subject to reconciliation and interest liability",
+    "Inadequate controls over obtaining confirmation of balances from lenders, reconciling such balances and recording entries",
+    "Controls over assessing appropriateness of use of going concern assumption were not adequate",
+    "Internal controls did not address the assertion of existence of Property Plant and Equipment and therefore its valuation",
+    "Internal controls did not enable the determination and accrual of interest that may be due on delayed remittances of statutory dues",
+    "Disclosure and Classification of Amount received as per Framework Agreement (Rs. 39,000 lakhs)",
+    "Assessment of Going Concern (current liabilities exceed current assets by Rs. 38,896.24 lakhs)",
+    "Revenue Recognition in Subsidiary Company (Aria Hotels and Consultancy Services Private Limited)",
+    "Audit trail feature not enabled at database level for accounting software used for maintenance of hotel revenue related records by the Subsidiary Company",
+    "Other accounting softwares operated by third-party software service providers - Type 2 reports available for part of the year but do not provide sufficient audit evidence on audit trail (edit logs) for any direct changes made at the database level"
+   ],
+   "qualifications_or_emphasis": [
+    "Basis for Adverse Opinion: 1a) Unable to state if classification of amounts received is borrowing or advance for sale of assets; 1b) Section 180(1)(a) non-compliance - member approval not obtained for exercise of option by Saraf Group; 1c) Non-filing of forms with MCA for charge creation; 1d) Potential Ind AS 105 application if intention is to sell Hyatt Regency Mumbai; 1e) Unrecognized interest expense of Rs 7,845.07 lakhs and expenses of Rs 1,598.39 lakhs claimed by Saraf Group; 1f) Unreconciled balance of Rs 242.64 lakhs in borrowings; 2) Material uncertainty on going concern; 3) Unable to comment on existence of PPE balance of Rs 1,491.64 lakhs; 4) Outstanding balances with Government Authorities subject to reconciliation",
+    "The Company has designated Mr. Amit Saraf as Whole-Time Director w.e.f. 23.09.2025. Prior to this period there was no Managing Director/ Whole time Director as required under Section 203 of the Companies Act, 2013.",
+    "The composition of Board of Directors was not in terms of regulation 17(1) of SEBI (Listing obligations and disclosure requirements) Regulations, 2015 during the period starting from June 2, 2025 to November 3rd, 2025.",
+    "The Compliances relating to transfer of dividend and shares under section 125 has not been complied within the stipulated time period.",
+    "The Company has made delay in submission of Financial Results as required under Regulation 33 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 for the quarter ended on March 31st, 2025 and June 30th, 2025.",
+    "The Company has made delay in making submission as required under Regulation 31(4) of SEBI (SAST) Regulations, 2011.",
+    "Notice of demand was received from EPFO for recovery of outstanding EPF contribution, EPF administration charge, family pension fund contribution and deposit linked insurance fund contribution amounting to Rs. 1,23,55,358/- and Rs.32,882/- respectively. The Company deposited the same.",
+    "Notice of Demand from Brihanmumbai Municipal Corporation (BMC) was received in relation to payment of property Tax pertaining to Hyatt Regency Mumbai for total demand of Rs. 14.50 Crore out of which the Company paid 8.95 Crore during the period under review.",
+    "Due to technical reason, MGT-7 for the F.Y. 2022-23 (CIRP Period) has not been filed.",
+    "No Form CHG-1 was filed during the audit period for creation of security/charge in favour of Novak Hotels Private Limited over the Company's Property namely Hyatt Regency, Mumbai to secure the borrowing of the company amounting to Rs. 390 Crores.",
+    "Unable to state if classification of amounts received is borrowing or advance for sale of assets",
+    "Non-compliance with Section 180(1)(a) - member approval not obtained for potential sale of undertaking",
+    "Non-filing of charge creation forms with MCA",
+    "Financial statements not prepared under Ind AS 105 if intention is to sell Hyatt Regency",
+    "Material uncertainty on going concern - current liabilities exceed current assets by Rs 42,432.87 lakhs",
+    "Unrecognized interest expense of Rs 7,845.07 lakhs and expense reimbursements of Rs 1,598.39 lakhs",
+    "Unreconciled balance of Rs 242.64 lakhs in borrowings",
+    "Unable to comment on existence of PPE balance of Rs 1,491.64 lakhs due to lack of records",
+    "Outstanding statutory dues subject to reconciliation; unable to assess interest expense on statutory dues",
+    "Adverse opinion on internal financial controls (Annexure B)",
+    "Material uncertainty related to going concern - Company may not be capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+    "Adverse opinion on internal financial controls with reference to standalone financial statements",
+    "Basis for Adverse Opinion: 1) Classification and presentation of Rs. 39,000 lakhs from Saraf Group; non-recognition of interest expense Rs. 7,845.07 lakhs and reimbursement expenses Rs. 1,598.39 lakhs; unreconciled balance Rs. 242.64 lakhs; non-compliance with Section 180(1)(a) and charge filing; potential Ind AS 105 application. 2) Material uncertainty on going concern. 3) Inadequate PPE records and no physical verification. 4) Unreconciled government balances and unverified interest on statutory dues.",
+    "CARO adverse remarks: Holding Company - clauses 1(a)(A), 1(b), 7(a), 7(b), 17, 3; Subsidiary - clauses (i)(c), (vii)(b), (xx)",
+    "Internal financial controls: Adverse Opinion (Annexure A)",
+    "Backup of books of accounts of Subsidiary for hotel operations not maintained on servers physically located in India on daily basis",
+    "Adverse opinion on internal financial controls with reference to consolidated financial statements due to: (a) inadequate controls over obtaining confirmation of balances from lenders, (b) inadequate controls over assessing appropriateness of use of going concern assumption, (c) internal controls did not address assertion of existence of Property Plant and Equipment, (d) internal controls did not enable determination and accrual of interest on delayed remittances of statutory dues",
+    "Adverse opinion on consolidated financial statements"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Shekhar Gulzarilal Gupta resigned as Independent Non-Executive Director w.e.f. 2nd June 2025",
+    "Mr. Ravinder Singhania resigned as Independent Non-Executive Director w.e.f. 27th August 2025",
+    "Mr. Rohit Rajpal appointed as Non-Executive Independent Director w.e.f. 23rd September 2025",
+    "Mr. Sudhir Chamanlal Gupta resigned as Non-Executive Director w.e.f. 4th November 2025",
+    "Mr. Sudhir Chamanlal Gupta resigned w.e.f. 4th November 2025",
+    "Mr. Ravinder Singhania resigned w.e.f. 27th August 2025",
+    "Mr. Shekhar Gulzarilal Gupta resigned w.e.f. 2nd June 2025",
+    "Mr. Rohit Rajpal appointed as Independent Non-Executive Director w.e.f. 23rd September 2025",
+    "Appointment of Ms. Mekhala Sengupta as an Independent woman director of the company w.e.f. 01st April, 2025.",
+    "Cessation of Mr. Ravinder Singhania as an Independent director of the company w.e.f. 19th August, 2025.",
+    "Appointment of Mr. Raman Singh Sindhu as an additional Independent Director of the company by the Board of Directors of the company vide their meeting dated 12th August 2025.",
+    "The company has passed Special resolution in the Extra-Ordinary General Meeting of the shareholders of the company held on 19th August, 2025 for the approval of appointment of Mr. Raman Singh Sindhu as Independent Director of the company.",
+    "Appointment of Mr. Rohit Rajpal as an additional Independent Director of the company by the Board of Directors of the company vide their meeting dated 10th November, 2025.",
+    "The company has passed Special resolution in the Extra-Ordinary General Meeting of the shareholders of the company held on 11th November, 2025 for the approval of appointment of Mr. Rohit Rajpal as Independent Director of the company.",
+    "The Company has designated Mr. Amit Saraf as Whole-Time Director w.e.f. 23.09.2025.",
+    "Mr. Rohit Rajpal (w.e.f Sept 23, 2025)",
+    "Mr. Harish Kumar Gautam appointed as Chief Financial Officer w.e.f. August 01, 2024",
+    "Ms. Nidhi Khandelwal appointed as Company Secretary w.e.f. March 15, 2024 till September 13, 2024 and reappointed September 27, 2024",
+    "Ms. Mekhala Sen Gupta appointed as Independent Director w.e.f. July 01, 2024",
+    "Mr. Deepak Singhania ceased as Chief Financial Officer",
+    "Mr. Saumen Chatterjee, Mr. Shekhar Gupta, Mr. Ravinder Singhania as Independent Directors",
+    "Dr. Tamali Sen Gupta as Independent Director in subsidiary",
+    "Mr. Shyam Sunder Suri, Mr. Rohit Rajpal, Mr. Raman Singh Sidhu as Directors in subsidiary"
+   ],
+   "promoter_holding_pct": 24.04,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 24.04
+    },
+    {
+     "name": "Foreign Promoter Bodies Corporates",
+     "pct": 46.21
+    },
+    {
+     "name": "Promoters Bodies Corporate",
+     "pct": 1.68
+    },
+    {
+     "name": "Promoter Trust",
+     "pct": 0.19
+    },
+    {
+     "name": "D.S.O. Limited",
+     "pct": 46.21
+    },
+    {
+     "name": "Ms. Vinita Gupta",
+     "pct": 9.19
+    },
+    {
+     "name": "Ms. Ratna Saraf",
+     "pct": 9.45
+    },
+    {
+     "name": "Robust Hotels Limited",
+     "pct": 8.43
+    },
+    {
+     "name": "Mr. Sandeep Gupta",
+     "pct": 8.16
+    },
+    {
+     "name": "DSO Limited",
+     "pct": 46.21
+    },
+    {
+     "name": "Vinita Gupta",
+     "pct": 9.19
+    },
+    {
+     "name": "Sandeep Gupta",
+     "pct": 8.16
+    },
+    {
+     "name": "Aria Resorts India Private Limited",
+     "pct": 1.68
+    },
+    {
+     "name": "Sudhir Chamanlal Gupta",
+     "pct": 1.84
+    },
+    {
+     "name": "Gunjan Jain",
+     "pct": 1.39
+    },
+    {
+     "name": "Late Sushil Kumar Gupta",
+     "pct": 0.69
+    },
+    {
+     "name": "Madhu Jain",
+     "pct": 0.88
+    },
+    {
+     "name": "Pankaj Gupta",
+     "pct": 0.47
+    },
+    {
+     "name": "Sonal Sharma",
+     "pct": 0.14
+    },
+    {
+     "name": "Jyotsana Amal Karl",
+     "pct": 0.12
+    },
+    {
+     "name": "Chaman Lal Brij Rani Charitable Trust",
+     "pct": 0.19
+    }
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year",
+   "promoter_pledge_pct": 67.21
+  },
+  "litigation": [
+   "Corporate Insolvency Resolution Process (CIRP) initiated against the Company on September 16, 2022 by lender bank claiming default of Rs 26,407.35 lakhs under Section 7 of IBC 2016",
+   "Settlement proposal under Section 12A of IBC 2016 approved by NCLAT on January 9, 2024, setting aside the CIRP admission order and closing the CIRP",
+   "Notice of demand was received from EPFO for recovery of outstanding EPF contribution, EPF administration charge, family pension fund contribution and deposit linked insurance fund contribution amounting to Rs. 1,23,55,358/- and Rs.32,882/- respectively. The Company deposited the same.",
+   "Notice of Demand from Brihanmumbai Municipal Corporation (BMC) was received in relation to payment of property Tax pertaining to Hyatt Regency Mumbai for total demand of Rs. 14.50 Crore out of which the Company paid 8.95 Crore during the period under review.",
+   "Disputed Provident Fund dues including interest and penalty for FY 2021-22 pending at Appellate Tribunal (Rs 188.57 lakhs)",
+   "Disputed GST dues including service tax and penalty for FY 2018-19 to FY 2021-22 pending at GST Appeals, Delhi (Rs 30.98 lakhs deposited, Rs 30.97 lakhs under protest)",
+   "Employee Provident Fund demand of Rs. 188.57 lakhs as at March 31, 2026 (reduced from Rs. 222.64 lakhs)",
+   "The Company received a property tax demand of \u20b91,450.27 lakhs from the Brihanmumbai Municipal Corporation (BMC) during FY 2024\u201325, including a penalty of \u20b9554.72 lakhs, for which a provision was created in the books. Against this demand, \u20b9895.54 lakhs was paid during FY 2024\u201325. The balance penalty amount of \u20b9554.72 lakhs was paid during FY 2025\u201326, along with an additional penalty of \u20b931.34 lakhs levied by the authorities. Further, the Company received an additional demand of \u20b9422.91 lakhs from the BMC during the year, for which adequate provision has been made. Out of this demand, \u20b9293.38 lakhs has been paid during the year, while the balance amount of \u20b9129.52 lakhs has been provided for and disclosed under statutory dues payable.",
+   "Corporate Insolvency Resolution Process (CIRP) - settlement proposal approved under Section 12A of IBC 2016",
+   "Pending litigations disclosed in Note 36A to Consolidated Financial Statements",
+   "Property tax dispute with South Delhi Municipal Corporation (SDMC) / Municipal Corporation of Delhi (MCD) for hotel at Aerocity, New Delhi - Writ Petition before Hon'ble High Court of Delhi, directed to approach Municipal Tax Tribunal (MTT), next hearing September 14, 2026",
+   "TDS demand for year ended March 31, 2026 of Rs 0.06 lakhs",
+   "Customer claims in normal course of business",
+   "The Holding Company had received a property tax demand of \u20b9 1,450.27 lakhs (including penalty of \u20b9 554.72 lakhs) from Brihanmumbai Municipal Corporation (BMC). On a conservative basis, the Holding Company has made a provision of this demand of \u20b9 1,450.27 lakhs. Out of this provision, the payment of \u20b9 895.54 lakhs was paid in F.Y. 2024-25 and remaining penalty amount of \u20b9 554.72 is being paid during the year 2025-26 with extra penalty levied of \u20b9 31.34 lakhs. Further a statement of Rs. 422.91 received from the BMC department and Holding Company has booked BMC property tax expenses of Rs. 422.91 lakhs out of which Rs. 293.38 lakhs has been paid during the year and for remaining amount Rs. 129.52 lakhs, we have created provision and shown under statutory dues payable."
+  ],
+  "people": {
+   "employees": 2,
+   "key_management": [
+    {
+     "name": "Mr. Sandeep Gupta",
+     "role": "Chairman and Non-Executive Director"
+    },
+    {
+     "name": "Mr. Amit Saraf",
+     "role": "Executive (Whole-Time) Director"
+    },
+    {
+     "name": "Mr. Rakesh Kumar Aggarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Saumen Chatterjee",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Ms. Mekhala Sengupta",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Mr. Rohit Rajpal",
+     "role": "Independent Non-Executive Director (w.e.f. 23rd September 2025)"
+    },
+    {
+     "name": "Mr. Harish Kumar Gautam",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Nidhi Khandelwal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Sandeep Gupta",
+     "role": "Chairman and Non-Executive Director"
+    },
+    {
+     "name": "Amit Saraf",
+     "role": "Executive (Whole Time) Director"
+    },
+    {
+     "name": "Rakesh Kumar Aggarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mekhala Sengupta",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Saumen Chatterjee",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Rohit Rajpal",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Nidhi Khandelwal",
+     "role": "Company Secretary (Compliance Officer)"
+    },
+    {
+     "name": "Harish Kumar Gautam",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Amit Saraf",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Saumen Chatterjee",
+     "role": "Director"
+    },
+    {
+     "name": "Mekhala Sengupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Raman Singh Sindhu",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rohit Rajpal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sandeep Gupta",
+     "role": "Chairman & Non-Executive Director"
+    },
+    {
+     "name": "Nidhi Khandelwal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Sandeep Gupta",
+     "role": "Chairman & Non-Executive Director"
+    },
+    {
+     "name": "Mr. Amit Saraf",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Ms. Nidhi Khandelwal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Saumen Chatterjee",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Mekhala Sen Gupta",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Rohit Rajpal",
+     "role": "Director (w.e.f Sept 23, 2025)"
+    },
+    {
+     "name": "Mr. Sudhir Gupta",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Harish Kumar Gautam",
+     "role": "Chief Financial Officer (w.e.f. August 01, 2024)"
+    },
+    {
+     "name": "Mr. Shekhar Gupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ravinder Singhania",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Mekhala Sen Gupta",
+     "role": "Independent Director (w.e.f. July 01, 2024)"
+    },
+    {
+     "name": "Nidhi Khandelwal",
+     "role": "Holding Company Secretary"
+    }
+   ]
+  },
+  "dividend_per_share": 0,
+  "other_notable": [
+   "Trading of shares restarted on NSE and BSE w.e.f. 2nd April 2026 after revocation of suspension",
+   "JW Marriott New Delhi Aerocity won multiple awards in 2025 including 'Best Luxury Hotel' at India's Best Awards by Travel & Leisure",
+   "Company has not transferred any amount to reserves for FY 2025-26",
+   "CSR provisions not applicable during the period under review",
+   "Risk Management Committee provisions not applicable to the Company",
+   "No public deposits accepted during the year",
+   "Vigil mechanism/Whistle blower policy established",
+   "Prevention of Sexual Harassment at Workplace policy in place; ICC not required as total employees less than 10",
+   "Maternity Benefit Act, 1961 compliance affirmed; no cases received during the period",
+   "Trading of shares was suspended during the period; approval received from BSE and NSE for revocation of suspension w.e.f. 2nd April 2026",
+   "Company emerged from CIRP but operations not yet started",
+   "Only two employees during the period: Company Secretary and Chief Financial Officer",
+   "Subsidiary Aria Hotels and Consultancy Services Pvt. Ltd. reported Turnover of Rs 43,556.33 lakhs and Profit after tax of Rs 7,374.88 lakhs for FY 2025-26",
+   "Standalone Total Income: Rs -5.79 Crores (FY 2025-26) vs Rs 5.64 Crores (FY 2024-25)",
+   "Standalone PBT: Rs -10.04 Crores (FY 2025-26) vs Rs -35.89 Crores (FY 2024-25)",
+   "Standalone Comprehensive Income after tax: Rs -8.55 Crores (FY 2025-26) vs Rs -36.28 Crores (FY 2024-25)",
+   "Debt to Equity ratio: 3.99 (FY 2025-26) vs 3.68 (FY 2024-25)",
+   "Current Ratio: 0.01 (FY 2025-26) vs 0.03 (FY 2024-25)",
+   "Book Value per share: Rs 86.24 (FY 2025-26) vs Rs 93.57 (FY 2024-25)",
+   "Earnings per share: Rs -7.34 (FY 2025-26) vs Rs -31.13 (FY 2024-25)",
+   "Return on Equity: -8.16% (FY 2025-26) vs -28.53% (FY 2024-25)",
+   "No dividend recommended by Board for FY 2025-26",
+   "59 investor complaints received and resolved during FY 2025-26",
+   "Board met 8 times during FY 2025-26",
+   "Independent Directors meeting held on 28.03.2026",
+   "Due to various operation/financial issues faced by the company, no credit rating was obtained during the period under review.",
+   "During the Financial Year 2025-26 the Company has transferred: 15744 shares (in respect of which dividend had not been claimed for seven consecutive years) belonging to 205 shareholders of the Company, to the Demat account of Investor Education Protection Fund authority, in accordance with section 124(6) of the Companies Act, the Company has also transferred Rs.2,52,300.00 lying in the unpaid dividend account for the year 2015-16 belonging to 3714 shareholders to Investor Education Protection Fund in accordance with section 124(5) of the Companies Act.",
+   "During the Financial Year 2025-26 the Company has transferred: 21538 shares (in respect of which dividend had not been claimed for seven consecutive years) belonging to 261 shareholders of the Company to Demat account of Investor Education Protection Fund authority, in accordance with section 124(6) of the Companies Act, the Company has also transferred Rs.2,57,724.00 lying in the unpaid dividend account for the year 2016-17 belonging to 3658 shareholders to Investor Education Protection Fund in accordance with section 124(5) of the Companies Act.",
+   "During the Financial Year 2025-26 the Company has transferred: 34281 shares (in respect of which dividend had not been claimed for seven consecutive years) belonging to 459 shareholders of the Company to Demat account of Investor Education Protection Fund authority, in accordance with section 124(6) of the Companies Act, the Company has also transferred Rs.3,39,121.00 lying in the unpaid dividend account for the year 2017-18 belonging to 3559 shareholders to Investor Education Protection Fund in accordance with section 124(5) of the Companies Act.",
+   "Trading was suspended by both the stock exchanges i.e., BSE and NSE due to various non-compliances. The Company has now a fully compliant with respect to all regulations of Listing Obligation and applied for revocation of suspension of trading of shares. Expecting to get the approval from both stock exchanges shortly.",
+   "The Company has zero tolerance policy against sexual harassment. No complaint received against sexual harassment during the period under review.",
+   "The Company has complied with the requirements of the Schedule V of the Listing Regulations; The Company is in compliance with corporate governance requirements specified in regulation 17 to 27 and clauses (b) to (i) of sub-regulation (2) of Regulation 46 of the Listing Regulations.",
+   "The Company has obtained affirmation from the Board of Directors and senior managerial personnel affirming compliance with the Company's Code of Conduct for Financial Year 2025-26.",
+   "During the period under review, BSE have granted partial waiver of SOP fine levied Pursuant to Master circular No. SEBI/HO/CFD/PoD2/CIR/P/2023/120 dated July 11, 2023 (Chapter VII (A) Penal Action for non-Compliance), issued by Securities and Exchange Board of India with respect to penal actions prescribed for Non-Compliance of Certain provisions of the SEBI (LODR) Regulations, 2015 for the Quarter ended September 2021. The Company has paid the fine as imposed amounting to Rs. 2, 48,980/- to BSE. NSE has provided complete waiver of fine imposed.",
+   "The members of the company in their Extra Ordinary General Meeting Dated 31st May, 2024 have given their consent under section 180(1)(a) of the companies act 2013 for Creation of security/Charge in favour of Novak Hotels Private Limited over the Company's Property namely Hyatt regency, Mumbai to secure the borrowing of the company amounting to Rs. 390 Crores availed/ to be availed from Novak Hotels Private Limited (a company belonging to Saraf Group).",
+   "During the period under review, the Company did not carry out any operations. Hence there was no consumption of power apart from normal usage for upkeeping the facility.",
+   "There were no foreign exchange earnings and outgo during the period under review.",
+   "Company under CIRP with approved settlement proposal under Section 12A of IBC 2016",
+   "Reported loss for year ended March 31, 2026: Rs 1,004.31 lakhs; would be Rs 10,447.77 lakhs if unrecognized interest and expenses considered",
+   "Reported loss per share: Rs 7.34; would be Rs 90.05 if adjustments considered",
+   "No dividend declared or paid during the year",
+   "Accounting software has audit trail (edit log) facility operating throughout the year",
+   "No fraud noticed or reported during the year",
+   "No whistle blower complaints received",
+   "Company not a Nidhi Company",
+   "No benami property proceedings initiated",
+   "No revaluation of PPE during the year",
+   "No inventories as at March 31, 2026",
+   "No working capital limits sanctioned in excess of Rs 5 crore",
+   "No investments, guarantees, securities, or loans granted during the year",
+   "No loans, investments, guarantees, or securities under Sections 185 and 186",
+   "No public deposits accepted",
+   "Cost records maintenance not prescribed by Central Government",
+   "No unrecorded transactions surrendered as income in tax assessments",
+   "Company not declared wilful defaulter",
+   "No term loans obtained during the year",
+   "No funds raised on short-term basis used for long-term purposes",
+   "No funds taken for subsidiaries/associates/JVs obligations",
+   "No loans raised on pledge of securities in subsidiaries/associates/JVs",
+   "No money raised by IPO/FPO or preferential allotment/private placement"
+  ],
+  "related_party": [
+   {
+    "party": "M/s Aria Hotels and Consultancy Services Private Limited",
+    "nature": "GST paid on Interest Free Refundable Security Deposit for commercial space acquired by Company in the J.W. Marriott Commercial Tower",
+    "amount_cr": 0.7511
+   },
+   {
+    "party": "M/s Aria Hotels and Consultancy Services Private Limited",
+    "nature": "License Fee for the Financial Year 2025-26 (Excluding GST amount)",
+    "amount_cr": 0.2976
+   },
+   {
+    "party": "Saraf Group",
+    "nature": "Framework Agreement providing option to acquire Hyatt Regency, Mumbai; funded Rs 390 crore; interest expense claimed Rs 78.45 crore; expense reimbursements claimed Rs 15.98 crore",
+    "amount_cr": 390
+   },
+   {
+    "party": "Novak Hotels Private Limited",
+    "nature": "Group company of Saraf Group identified as party that funded Rs 390 crore; stated amounts as advances for acquiring Hyatt Regency, Mumbai",
+    "amount_cr": 390
+   },
+   {
+    "party": "Novak Hotels Private Limited",
+    "nature": "Loan from related party",
+    "amount_cr": 390.0
+   },
+   {
+    "party": "Subsidiary (Aria Hotels & Consultancy Services Private Limited)",
+    "nature": "Payable to Subsidiary",
+    "amount_cr": 3.7959
+   },
+   {
+    "party": "Employees related payables",
+    "nature": "Employee related payables",
+    "amount_cr": 1.2081
+   },
+   {
+    "party": "Aria Hotels and Consultancy Services Private Limited",
+    "nature": "Services availed during the year (Reimbursement of GST)",
+    "amount_cr": 0.7511
+   },
+   {
+    "party": "Aria Hotels and Consultancy Services Private Limited",
+    "nature": "Rent paid",
+    "amount_cr": 0.2976
+   },
+   {
+    "party": "Mr. Saumen Chatterjee",
+    "nature": "Director Sitting Fee",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Mr. Shekhar Gupta",
+    "nature": "Director Sitting Fee",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Mr. Ravinder Singhania",
+    "nature": "Director Sitting Fee",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Ms. Mekhala Sen Gupta",
+    "nature": "Director Sitting Fee",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "Mr. Rohit Rajpal",
+    "nature": "Director Sitting Fee",
+    "amount_cr": 0.03
+   },
+   {
+    "party": "Mr. Amit Saraf",
+    "nature": "Remuneration",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Mr. Rakesh Kumar Aggarwal",
+    "nature": "Remuneration",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Mr. Harish Kumar Gautam",
+    "nature": "Remuneration",
+    "amount_cr": 0.2384
+   },
+   {
+    "party": "Ms. Nidhi Khandelwal",
+    "nature": "Remuneration",
+    "amount_cr": 0.1926
+   },
+   {
+    "party": "Mr. Harish Kumar Gautam",
+    "nature": "Reimbursement of expenses",
+    "amount_cr": 0.0559
+   },
+   {
+    "party": "Ms. Nidhi Khandelwal",
+    "nature": "Reimbursement of expenses",
+    "amount_cr": 0.0364
+   },
+   {
+    "party": "Saraf Group / Novak Hotels Private Limited",
+    "nature": "Amount of Rs. 39,000 lakhs received, classified as advance/borrowings; option to buy Hyatt Regency, Mumbai; interest expense of Rs. 7,845.07 lakhs and reimbursement expenses of Rs. 1,598.39 lakhs claimed but not recognized",
+    "amount_cr": 390
+   },
+   {
+    "party": "Aria International Limited / Aria International Private Limited",
+    "nature": "Entity over which Directors and their relatives can exercise significant influence",
+    "amount_cr": 1.38
+   },
+   {
+    "party": "Sidharth Aggarwal / Singhania & Partners LLP",
+    "nature": "Legal & Professional services",
+    "amount_cr": 0.92
+   },
+   {
+    "party": "Mr. Sandeep Gupta",
+    "nature": "Chairman & Non-Executive Director - Managerial remuneration",
+    "amount_cr": 4.14
+   },
+   {
+    "party": "Mr. Amit Saraf",
+    "nature": "Executive Director - Managerial remuneration",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Mr. Rakesh Kumar Aggarwal",
+    "nature": "Executive Director - Managerial remuneration",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Mr. Harish Kumar Gautam",
+    "nature": "Chief Financial Officer - Managerial remuneration",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Ms. Nidhi Khandelwal",
+    "nature": "Company Secretary - Managerial remuneration",
+    "amount_cr": 0.19
+   },
+   {
+    "party": "Mr. Deepak Singhania",
+    "nature": "Chief Financial Officer - Managerial remuneration",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Ms. Nupur Garg",
+    "nature": "Managerial remuneration",
+    "amount_cr": 0.32
+   },
+   {
+    "party": "Mr. Arun Kumar Shukla",
+    "nature": "Managerial remuneration",
+    "amount_cr": 0.31
+   },
+   {
+    "party": "Mr. Sandeep Gupta",
+    "nature": "Director Remuneration Payable",
+    "amount_cr": 0.58
+   },
+   {
+    "party": "Mr. Sudhir Gupta",
+    "nature": "Director Remuneration Payable",
+    "amount_cr": 0.63
+   },
+   {
+    "party": "Various Independent Directors",
+    "nature": "Director Sitting Fees",
+    "amount_cr": 0.55
+   },
+   {
+    "party": "Aria Hotels and Consultancy Services Private Limited",
+    "nature": "Security deposit paid for office space/ commercial space on Lease",
+    "amount_cr": 31.9362
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Framework Agreement with Saraf Group providing an option to acquire Hyatt Regency, Mumbai after successful withdrawal of CIRP and revocation of trading suspension",
+    "value_cr": 390
+   },
+   {
+    "statement": "The subsidiary company has entered into development agreement, dated 4 July 2009, with Delhi International Airport Private Limited (DIAL) for acquiring development rights by way of a license over the specified area at the airport site for developing, designing, financing, constructing, owning, operating and maintaining an upscale and luxury hotel property.",
+    "value_cr": null
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed Provident Fund dues including interest and penalty for FY 2021-22",
+    "amount_cr": 1.89
+   },
+   {
+    "nature": "Disputed GST dues including service tax and penalty for FY 2018-19 to FY 2021-22",
+    "amount_cr": 0.31
+   },
+   {
+    "nature": "TDS demand for the year ended March 31, 2026",
+    "amount_cr": 0.0006
+   },
+   {
+    "nature": "TDS demand for year ended March 31, 2026",
+    "amount_cr": 0.0006
+   },
+   {
+    "nature": "Property tax demand (SDMC/MCD) - disputed",
+    "amount_cr": 8.62
+   },
+   {
+    "nature": "Bank guarantee to BSES Rajdhani Power Limited",
+    "amount_cr": 0.98
+   },
+   {
+    "nature": "Estimated additional property tax liability (excluding interest) per management estimate",
+    "amount_cr": 20.75
+   },
+   {
+    "nature": "Customer claims in normal course of business",
+    "amount_cr": null
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account (net of advances)",
+    "amount_cr": 0.14,
+    "timeline": "As at March 31, 2026"
+   }
+  ]
+ }
+}

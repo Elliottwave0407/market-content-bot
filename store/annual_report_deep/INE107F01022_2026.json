@@ -1,0 +1,927 @@
+{
+ "isin": "INE107F01022",
+ "name": "Wanbury Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30919_WANBURY_2025_2026_A_2029627_31082026184003.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 417587,
+ "chunks": 11,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "Wanbury Limited is a pharmaceutical company with manufacturing plants at Patalganga (Maharashtra) and Tanuku (Andhra Pradesh).",
+   "plants": [
+    {
+     "location": "Patalganga, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Tanuku, Andhra Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Tanuku",
+     "capacity": ""
+    }
+   ],
+   "products": [
+    {
+     "name": "Wanbury C RED",
+     "share_of_revenue_pct": null,
+     "note": "Next-generation Liposomal Iron formulation for anemia management, launched regionally in India."
+    },
+    {
+     "name": "Coriminic CPM Drops",
+     "share_of_revenue_pct": null,
+     "note": "Chlorpheniramine Maleate drops for pediatric usage, launched to address DCGI restrictions on fixed-dose combinations in children under 4 years."
+    },
+    {
+     "name": "Coriminic NS Nasal Drops",
+     "share_of_revenue_pct": null,
+     "note": "Normal Saline nasal drops for localized relief from nasal congestion in children."
+    },
+    {
+     "name": "Sertraline",
+     "share_of_revenue_pct": null,
+     "note": "Holds 75% market share in Brazil; Form II approval received from ANVISA in addition to existing Form I approval."
+    },
+    {
+     "name": "High-Demand Anaesthetic API",
+     "share_of_revenue_pct": null,
+     "note": "First sales invoicing and commercial shipment milestone achieved on 30 January 2026; production ramp-up underway."
+    },
+    {
+     "name": "Metformin",
+     "share_of_revenue_pct": null,
+     "note": "Yield improvement achieved at Tanuku plant."
+    },
+    {
+     "name": "DPH",
+     "share_of_revenue_pct": null,
+     "note": "Yield improvement achieved at Tanuku plant."
+    },
+    {
+     "name": "Tramadol",
+     "share_of_revenue_pct": null,
+     "note": "Cost reduction achieved by recovering material from unwanted isomer at Tanuku plant."
+    },
+    {
+     "name": "Metformin HCl",
+     "share_of_revenue_pct": null,
+     "note": "India's largest manufacturer, ~10% global market share"
+    },
+    {
+     "name": "Sertraline HCl",
+     "share_of_revenue_pct": null,
+     "note": "Largest exporter to EU & US, ~30% global market share"
+    },
+    {
+     "name": "Tramadol HCl",
+     "share_of_revenue_pct": null,
+     "note": "Among largest exporters from India"
+    },
+    {
+     "name": "Metformin HCl DC",
+     "share_of_revenue_pct": null,
+     "note": "Direct compression grade, 7% volume growth in FY2026"
+    },
+    {
+     "name": "Mefenamic Acid",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Diphenhydramine Citrate",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Paroxetine",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Diphenhydramine HCl",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Anaesthetic API",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Wanbury C-RED",
+     "share_of_revenue_pct": null,
+     "note": "Next-generation liposomal iron formulation for Anaemia management"
+    },
+    {
+     "name": "Finished Goods",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 56,831.79 lakhs in FY2026"
+    },
+    {
+     "name": "Traded Goods",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 7,558.84 lakhs in FY2026"
+    },
+    {
+     "name": "Pharmaceutical products",
+     "share_of_revenue_pct": null,
+     "note": "Single segment: Pharmaceutical and related products"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Brazil",
+     "share_pct": null
+    },
+    {
+     "name": "Korea",
+     "share_pct": null
+    },
+    {
+     "name": "Australia",
+     "share_pct": null
+    },
+    {
+     "name": "European Union",
+     "share_pct": null
+    },
+    {
+     "name": "United States",
+     "share_pct": null
+    },
+    {
+     "name": "South Korea",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": null
+    },
+    {
+     "name": "Others (Outside India)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 27.1
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 72.9
+    }
+   ],
+   "raw_materials": [
+    "Briquette (from agro waste)",
+    "Coal (usage stopped)",
+    "Raw Materials & Packing Materials"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Pharmaceuticals - API",
+    "Pharmaceuticals - Branded Formulations (Domestic)",
+    "Anemia management",
+    "Pediatric cold & congestion",
+    "anti-diabetic",
+    "anti-depressant",
+    "anti-histaminic",
+    "anaesthetic",
+    "anti-inflammatory",
+    "anti-coagulant",
+    "GERD",
+    "gastric ulcer therapy",
+    "Pharmaceutical"
+   ],
+   "brands_or_certifications": [
+    "USFDA approved (Patalganga and Tanuku)",
+    "ANVISA (Brazil FDA) approved",
+    "MFDS (Korea FDA) inspection completed with zero observations",
+    "TGA (Australia) quality inspection completed",
+    "cGMP compliant",
+    "Wanbury C RED",
+    "Coriminic",
+    "Coriminic CPM Drops",
+    "Coriminic NS Nasal Drops",
+    "USDMF",
+    "CADIFA",
+    "CEP",
+    "CBPF (GMP certificate from Brazil)",
+    "WHO GMP",
+    "ANVISA approvals",
+    "TGA inspection clearance",
+    "MFDS inspection clearance",
+    "few brands of the Company (pledged as security)"
+   ],
+   "customers": [
+    "leading generic pharmaceutical companies"
+   ]
+  },
+  "borrowings": [
+   {
+    "lender_or_type": "SBM Bank (India) Limited",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Emerging India Credit Opportunities Fund II",
+    "amount_cr": null,
+    "note": "Listed as financial institution"
+   },
+   {
+    "lender_or_type": "Term debt",
+    "amount_cr": 215.45,
+    "note": "As of 31st March 2026"
+   },
+   {
+    "lender_or_type": "CDR Mechanism",
+    "amount_cr": 5,
+    "note": "Day-to-Day Affairs Committee authorised to undertake borrowings and give guarantees within CDR Mechanism not exceeding Rs. 5 Crore"
+   },
+   {
+    "lender_or_type": "Banks/Financial Institutions",
+    "amount_cr": null,
+    "note": "Working capital limits in excess of Rs 5 crore sanctioned on security of current assets; differences noted in quarterly returns filed vs books of account (Note 64)"
+   },
+   {
+    "lender_or_type": "Non-convertible Debentures (NCDs)",
+    "amount_cr": 25.0,
+    "note": "Rs 2,500 lakhs raised by allotment of unlisted secured redeemable NCDs during the year"
+   },
+   {
+    "lender_or_type": "Term Loans",
+    "amount_cr": null,
+    "note": "Applied for purposes for which obtained; no default in repayment of loans/borrowing or interest"
+   },
+   {
+    "lender_or_type": "Unlisted Secured Redeemable Non-Convertible Debentures",
+    "amount_cr": 146.38,
+    "note": "Face value Rs 10,00,000 each; 250 debentures issued; secured by first pari-passu mortgage on Tanuku plant immovable properties, first pari-passu charge on movable assets including few brands, second charge on current assets; repayable in 17 quarterly installments from 20 Feb 2026; interest 12.5%"
+   },
+   {
+    "lender_or_type": "Vehicle Loans",
+    "amount_cr": 0.96,
+    "note": "Secured by hypothecation of vehicles; repayable in 48-60 monthly installments; interest 7.98% to 13%"
+   },
+   {
+    "lender_or_type": "Working Capital Loans repayable on demand from Banks",
+    "amount_cr": 22.11,
+    "note": "Secured by first pari-passu charge on current assets including few brands, second charge on fixed assets, pledge of promoter shareholding (Expert Chemicals, Kingsbury), pledge of Bravo Healthcare shares (12,71,250) and Wanbury Global FZE shares (5), corporate guarantees from Expert Chemicals, Bravo Healthcare, Wanbury Global FZE, Kingsbury Investments, personal guarantee of Mr. K Chandran"
+   },
+   {
+    "lender_or_type": "Factored Receivables (Foreign Currency)",
+    "amount_cr": 6.0,
+    "note": "Secured by subservient charge on receivables, book debts, fixed and current assets"
+   },
+   {
+    "lender_or_type": "Total Borrowings",
+    "amount_cr": 215.4503,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Lease Liability",
+    "amount_cr": 8.9147,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "SBM Bank",
+    "amount_cr": 20.0,
+    "note": "Working capital borrowing sanctioned: Rs 2,000 Lakhs (Rs 1,000 Lakhs fund based and Rs 1,000 Lakhs non-fund based) on security of current assets"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Kapoor & Parekh Associates, Chartered Accountants, Mumbai",
+   "opinion": "Company has complied with statutory provisions except for delays in shareholding pattern submission, board composition, and nomination & remuneration committee composition for quarter ended March 2025 and September 2025",
+   "key_audit_matters": [
+    "Delay in submission of Shareholding Pattern for quarter ended September 2025 - fine of Rs. 42,480",
+    "Non-compliance with Board composition requirements for quarter ended March 2025 - fine of Rs. 41,300",
+    "Non-compliance with Nomination and Remuneration Committee composition for quarter ended March 2025 - fine of Rs. 16,520",
+    "Issued and allotted 1,68,900 equity shares under ESOP Scheme",
+    "Allotted 20,00,000 equity shares on 18 September 2025 pursuant to conversion of convertible warrants issued on 21 March 2024",
+    "Assessment of Provisions and Contingent liabilities (Refer Note 44)",
+    "Appropriateness of the Expected credit loss (ECL) (Refer Note 59)"
+   ],
+   "qualifications_or_emphasis": [
+    "Regulation 31 of SEBI (LODR) - timely submission of Shareholding Pattern for quarter ended September 2025",
+    "Regulation 17(1) of SEBI (LODR) - composition of Board for quarter ended March 2025",
+    "Regulation 19(1)/19(2) of SEBI (LODR) - composition of Nomination and Remuneration Committee for quarter ended March 2025",
+    "Unspent CSR amount of Rs 31.36 lakhs for FY 2025-26 not yet transferred (deadline 30 Sep 2026)",
+    "Unspent CSR amount of Rs 12.24 lakhs for FY 2024-25 not transferred within prescribed time",
+    "Differences in quarterly returns filed with banks vs books of account for working capital limits (Note 64)",
+    "Disputed statutory dues pending before various authorities (Sales Tax, Service Tax, GST, Income Tax)"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mr. Mohan Kumar Rayana (DIN: 07878975) as Whole-time Director for 5 years from 21 August 2026 to 20 August 2031, including continuation beyond age 70 years",
+    "Mr. K. Chandran (DIN: 00005868) retires by rotation and offers himself for re-appointment",
+    "Changes in composition of Board of Directors during the period under review were carried out in compliance with the provisions of the Act",
+    "Mr. Manojkumar K. Gursahani re-appointed as Non-executive Independent Director for one year (Board: 10 Dec 2025, Shareholders: 5 Jan 2026)",
+    "Mr. K. Chandran re-appointed as Whole-time Director for five years (Board: 15 May 2025, AGM: 18 Sep 2025)",
+    "Audit Committee re-constituted on 5 February 2026 with members: Mr. Mridul S. Mehta (Chairperson, I & NED), Dr. Anupama Vaidya (Member, I & NED), Mr. P.V. Sankar Dass (Member, I & NED), Mr. Manojkumar K. Gursahani (Member, I & NED), Mr. K. Chandran (Member, WTD), Mr. Mohan Kumar Rayana (Member, WTD)",
+    "Nomination and Remuneration Committee: 6 meetings held during the year on 15 May 2025, 23 June 2025, 04 August 2025, 13 November 2025, 10 December 2025 and 05 February 2026",
+    "Stakeholders Relationship Committee re-constituted w.e.f. 5 February 2026 with members: Mr. Manojkumar K. Gursahani (Chairperson, I & NED), Mr. Mridul S. Mehta (Member, I & NED), Dr. Anupama Vaidya (Member, I & NED), Mr. P. V. Sankar Dass (Member, I & NED), Mr. K. Chandran (Member, WTD), Mr. Mohan Kumar Rayana (Member, WTD)",
+    "Risk Management Committee re-constituted w.e.f. 15 May 2025 and further re-constituted w.e.f. 5 February 2026",
+    "Day to Day Affairs Committee reconstituted on 5 February 2026 with members: Mr. K. Chandran (Whole-time Director/Member), Mr. Mohan Kumar Rayana (Whole-time Director/Member), Mr. Vinod Verma (Chief Financial Officer), Mr. Jitendra J. Gandhi (Company Secretary)",
+    "Independent Directors meeting held on 5 February 2026 attended by all Independent Directors",
+    "Re-appointment of Mr. Manojkumar Khubchand Gursahani (DIN \u2013 01064558) as Non-Executive Independent Director for a term of one year approved by Board on 10 December 2025 and by Shareholders at EGM on 5 January 2026",
+    "Mr. Pravin Pawar (Non-Executive Independent Director) upto 17 November 2024",
+    "Mr. Mridul S. Mehta (Non-Executive Independent Director) w.e.f. 12 August 2024",
+    "Mr. Manojkumar K. Gursahani (Non-Executive Independent Director) w.e.f. 8 January 2025",
+    "Mr. P.V. Sankar Dass (Non-Executive Independent Director) w.e.f. 8 January 2025"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Expert Chemicals (India) Private Limited",
+     "pct": 34.36
+    },
+    {
+     "name": "Kingsbury Investment INC",
+     "pct": 8.66
+    },
+    {
+     "name": "Chandran Krishnamoorthy",
+     "pct": null
+    },
+    {
+     "name": "Mohan Kumar Rayana",
+     "pct": null
+    },
+    {
+     "name": "Anupama Vaidya",
+     "pct": null
+    },
+    {
+     "name": "Mridul Sumanlal Mehta",
+     "pct": null
+    },
+    {
+     "name": "Manojkumar Khubchand Gursahani",
+     "pct": null
+    },
+    {
+     "name": "Pallavur Sankar Dass Vaidyanathan",
+     "pct": null
+    },
+    {
+     "name": "Expert Chemicals (India) Pvt. Ltd.",
+     "pct": 34.36
+    },
+    {
+     "name": "Kingsbury Investments Inc",
+     "pct": 8.66
+    }
+   ],
+   "promoter_holding_pct": 43.02,
+   "auditor_change": "No resignation of statutory auditors during the year"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Mohan Kumar Rayana",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. K. Chandran",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Dr. Anupama Vaidya",
+     "role": "Non-Executive Independent Woman Director"
+    },
+    {
+     "name": "Mr. Mridul S. Mehta",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. P. V. Sankar Dass",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Manojkumar K. Gursahani",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Vinod Verma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Jitendra J. Gandhi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "K. Chandran",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mridul S. Mehta",
+     "role": "Director (Independent & Non-Executive)"
+    },
+    {
+     "name": "Dr. Anupama Vaidya",
+     "role": "Director (Independent & Non-Executive)"
+    },
+    {
+     "name": "Manojkumar K. Gursahani",
+     "role": "Director (Independent & Non-Executive)"
+    },
+    {
+     "name": "P.V. Sankar Dass",
+     "role": "Director (Independent & Non-Executive)"
+    },
+    {
+     "name": "Mohan Kumar Rayana",
+     "role": "Whole-time Director (Promoter)"
+    },
+    {
+     "name": "Vinod Verma",
+     "role": "CFO"
+    },
+    {
+     "name": "Jitendra J. Gandhi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "K. Chandran",
+     "role": "Chairman & Whole-time Director"
+    },
+    {
+     "name": "Mohan Kumar Rayana",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Dr. Anupama Vaidya",
+     "role": "Independent & Non-Executive Director"
+    },
+    {
+     "name": "Mridul S. Mehta",
+     "role": "Independent & Non-Executive Director"
+    },
+    {
+     "name": "Manojkumar K. Gursahani",
+     "role": "Independent & Non-Executive Director"
+    },
+    {
+     "name": "P. V. Sankar Dass",
+     "role": "Independent & Non-Executive Director"
+    },
+    {
+     "name": "Vinod Verma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "K. Chandran",
+     "role": "Whole-time Director (DIN: 00005868)"
+    },
+    {
+     "name": "Mridul S. Mehta",
+     "role": "Director (DIN: 10177545)"
+    },
+    {
+     "name": "Mr. K Chandran",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Jitendra Gandhi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Anupama Vaidya",
+     "role": "Non-Executive Independent Woman Director"
+    },
+    {
+     "name": "Mr. P.V. Sankar Dass",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "K. Chandran",
+     "role": "Whole-time Director (DIN:00005868)"
+    },
+    {
+     "name": "Mridul S. Mehta",
+     "role": "Director (DIN:10177545)"
+    }
+   ],
+   "employees": 1200
+  },
+  "other_notable": [
+   "38th Annual General Meeting scheduled for Thursday, September 24, 2026 at 11:30 A.M. through Video Conferencing (VC)/Other Audio Visual Means (OAVM)",
+   "Cost Auditor M/s. ABK & Associates (Firm Registration No. 000036) appointed for FY 2026-27 with remuneration of Rs. 4,00,000 per annum plus out-of-pocket expenses",
+   "Register of Members and Share Transfer Books closed from September 18, 2026 to September 24, 2026 (both days inclusive)",
+   "E-voting period: September 21, 2026 (9:00 a.m.) to September 23, 2026 (5:00 p.m.)",
+   "Cut-off date for e-voting: September 17, 2026",
+   "Unpaid/unclaimed dividend for FY 2009-10 transferred to IEPF",
+   "3,38,465 shares transferred to IEPF Authority for unpaid/unclaimed dividend for seven consecutive years",
+   "Registrar & Share Transfer Agent: M/s. Purva Sharegistry (India) Pvt. Ltd.",
+   "Employee Stock Option Scheme 2016: 3,34,000 options granted, 2,18,350 lapsed, 1,68,900 exercised/allotted, 4,11,750 outstanding as on 31 March 2026",
+   "Exercise price: Rs. 10 per option; Money realized: Rs. 16,89,000",
+   "Unclaimed dividend of Rs. 4,14,937 for FY2009-10 transferred to IEPF; 3,38,465 corresponding shares transferred",
+   "Zero sexual harassment complaints received during FY2025-26",
+   "Secretarial Standards SS-1 and SS-2 duly followed",
+   "Vigil Mechanism/Whistle Blower Policy established and posted on website",
+   "Anti Sexual Harassment Policy in place with Internal Complaints Committee",
+   "Compliance with Maternity Benefit Act, 1961 affirmed",
+   "Green initiative: Annual Report circulated electronically",
+   "Directors' Responsibility Statement confirms compliance with accounting standards, internal financial controls adequate and operating effectively",
+   "Coal usage totally stopped at Tanuku; switched to Briquette from agro waste",
+   "Boiler condensate recovery improved to 30% at Tanuku through in-house modifications without investment",
+   "Technology absorption: yield improvement in Metformin, Sertraline, DPH; cost reduction in Tramadol; product development for reduction of failures in Sertraline",
+   "No imported technology during last three years",
+   "Patalganga energy savings: Air compressor optimization (Rs. 8.29 Lakhs), chiller optimization (Rs. 9.02 Lakhs), AHU DX optimization (Rs. 16.0 Lakhs) from Dec 2025 to Mar 2026",
+   "SAP S/4HANA implementation supported by Deloitte as strategic partner",
+   "API revenue INR 574 Crore in FY2026 (8% growth, ~80% from exports)",
+   "Domestic Formulations sales Rs. 76.93 Crore in FY2025-26",
+   "Cumulative installed reactor capacity ~500 KL across two sites, with ~100 KL brownfield potential",
+   "Metformin capacity increased ~18% and Sertraline capacity ~35% over past three years via de-bottlenecking",
+   "New molecules to be commercialised: Quetiapine Fumarate, Dextromethorphan HBr, Rivaroxaban, Imeglimin HCl",
+   "Target: commercialise ~4 new molecules per year from FY2026-27",
+   "Implemented SAP HANA S/4 (Rise with SAP) across organisation",
+   "Borrowing cost reduced from ~21% to 12.5% p.a. effective 1st March 2025",
+   "Condensate recovery rate increased from 22% to 75% (implemented Nov 2025), fuel savings 1,275 kg/day, total fuel cost savings Rs. 14.9 Lakhs (Nov 2025-Feb 2026), capital investment Rs. 21 Lakhs",
+   "Methanol recovery increased from 65% to 78% after new distillation column DC-003",
+   "DC grade plant capacity doubled from 70 MT to 140 MT",
+   "Yield improvement expected from 1.73 to 1.83 (savings up to Rs. 55 lakhs/month)",
+   "Methanol recovery target up to 85% (estimated savings Rs. 9 lakhs/month)",
+   "Energy savings from chiller utilization for AHUs ~Rs. 8 lakhs/month",
+   "Foreign Exchange Earnings FY2026: Rs. 47,586.85 Lakhs; Expenditure: Rs. 8,302.29 Lakhs",
+   "CSR obligation FY2026: Rs. 33.36 Lakhs; Amount spent: Rs. 8 Lakhs; Unspent: Rs. 25.3 Lakhs (to be transferred by Sep 30, 2026)",
+   "Average Net Profit (last 3 years): Rs. 1,668.15 Lakhs",
+   "No imported technology in last three years",
+   "R&D expenditure incurred (amount not specified in this part)",
+   "Employees Stock Option Scheme 2016 (WANBURY ESOP \u2013 2016) approved by shareholders on 29 September 2016",
+   "ESOP 2016: Options outstanding at beginning of year 4,65,000; granted during year 3,34,000; lapsed 2,18,350; exercised 1,68,900; outstanding at end of year 4,11,750",
+   "Exercise price of \u20b9 10 per share under ESOP 2016",
+   "Remuneration to Executive Directors: Mr. K. Chandran - Rs.1,20,00,000; Mr. Mohan Kumar Rayana - Rs.1,61,10,718 (including perquisites)",
+   "Sitting fees paid to Non-Executive Directors total Rs. 40,25,000",
+   "Stakeholders Relationship Committee: 0 complaints pending at beginning of year, 6 received and resolved during year, 0 pending at end of year",
+   "No share transfer requests pending at beginning or end of year",
+   "Company has adopted Code of Conduct for Directors and Senior Management Personnel, Whistle Blower Policy, and Prevention of Insider Trading Code",
+   "AGM scheduled for 24 September 2026 at 11:30 A.M. through Video Conferencing",
+   "Book closure from 18 September 2026 to 24 September 2026 (both days inclusive)",
+   "Listed on BSE (Scrip Code: 524212) and NSE (Symbol: WANBURY), ISIN: INE107F01022",
+   "CIN: L51900MH1988PLC048455",
+   "As on 31 March 2026, 99.36% shares held in dematerialised form, 0.64% in physical form",
+   "Shareholding pattern: Promoter 43.02%, Institutional 0.59%, Others 56.39%",
+   "Registrar & Share Transfer Agent: M/s. Purva Sharegistry (India) Private Limited",
+   "Compliance Officer: Mr. Jitendra J. Gandhi, Company Secretary",
+   "Company does not have any credit rating programme or fixed deposit programme"
+  ],
+  "outlook": [
+   {
+    "statement": "High-Demand Anaesthetic API \u2013 Production Ramp-Up Signals Rapid Growth Ahead",
+    "period": "FY2025-26 onwards"
+   },
+   {
+    "statement": "Sertraline Form II approval from ANVISA will help further consolidate company's share of business in Brazil",
+    "period": "FY2025-26 onwards"
+   },
+   {
+    "statement": "GMP certificate from TGA (Australia) once received will enable Wanbury to ship additional 3 APIs",
+    "period": "Future"
+   },
+   {
+    "statement": "New SAP S/4HANA ERP system will serve as a scalable platform to support the Company's future growth initiatives",
+    "period": "From October 2025 onwards"
+   },
+   {
+    "statement": "For the API business, sustain growth momentum through commercialisation of new molecules (targeting approximately four launches per year beginning FY 2026-27), continued brownfield capacity expansion, and further borrowing-cost optimisation.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "For the formulations business, move from turnaround and break-even (targeted in FY 2025-26) to rebuilding and scale-up in FY 2026-27, with a shift in portfolio mix towards speciality and chronic-therapy segments, alongside continued brand-building in Coriminic and C-RED.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Energy conservation equipment at Tanuku plant",
+    "amount_cr": 4.41,
+    "timeline": "FY2025-26"
+   },
+   {
+    "item": "33KV HT Dedicated Line installation at Tanuku",
+    "amount_cr": null,
+    "timeline": "FY2025-26"
+   },
+   {
+    "item": "New 2000 KVA Transformer at Tanuku",
+    "amount_cr": null,
+    "timeline": "FY2025-26"
+   },
+   {
+    "item": "650 KVAR Capacitors & 200 KVAR Static Var generators at Tanuku",
+    "amount_cr": null,
+    "timeline": "FY2025-26"
+   },
+   {
+    "item": "4000 Amps PCC Panel at Tanuku",
+    "amount_cr": null,
+    "timeline": "FY2025-26"
+   },
+   {
+    "item": "SAP S/4HANA ERP implementation (Rise with SAP)",
+    "amount_cr": null,
+    "timeline": "Go-live effective October 3, 2025"
+   },
+   {
+    "item": "Process improvement, quality enhancement, and capacity optimization in reaction, crystallization, and centrifugation processes",
+    "amount_cr": 1.05,
+    "timeline": "Under implementation"
+   },
+   {
+    "item": "Methanol recovery improvement project",
+    "amount_cr": 0.4,
+    "timeline": "Under implementation"
+   },
+   {
+    "item": "Utilization of 125 TR chiller for AHUs with chilling coils replacing DX units",
+    "amount_cr": 0.6,
+    "timeline": "Under implementation"
+   },
+   {
+    "item": "Enhancement of A-11 load capacity from 25 KVA to 100 KVA",
+    "amount_cr": null,
+    "timeline": "Under implementation"
+   },
+   {
+    "item": "Implementation of 5T blender batch system",
+    "amount_cr": null,
+    "timeline": "Under implementation"
+   },
+   {
+    "item": "Total capital investment on energy conservation equipment",
+    "amount_cr": 4.32,
+    "timeline": "Current"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account and not provided for, net of advances",
+    "amount_cr": 16.5742,
+    "timeline": "As at 31 March 2026"
+   }
+  ],
+  "risks": [
+   "No element of risk which in opinion of the Board threatens the existence of the Company",
+   "Highly competitive environment with pricing as key success factor",
+   "Regulatory compliance risks with stricter global regulators (USFDA, etc.)",
+   "Export and geopolitical risk (majority revenue export-oriented, exposed to regional disruptions, forex volatility, shipping/logistics constraints)",
+   "Leverage and refinancing risk (term debt Rs. 215.45 crore as of 31st March 2026, sensitive to interest-rate and refinancing conditions)",
+   "The Company is exposed to foreign exchange risks emanating from the business, assets and liabilities denominated in foreign currency. In order to hedge this risk, the Company proactively uses hedging instruments e.g., forward contracts, options and other simple derivatives from time to time.",
+   "Estimation uncertainty in useful life of tangible assets and capitalization of components",
+   "Allowance for obsolete and slow-moving inventories",
+   "Actuarial assumptions for defined benefit obligations (discount rate, salary escalation, life expectancy)",
+   "Recognition of deferred tax assets dependent on future taxable profits",
+   "Provisions based on probability of outflow of resources",
+   "Contingencies/litigations with uncertain outcomes",
+   "Allowance for uncollected accounts receivable based on expected credit losses",
+   "Insurance claims recognized only with reasonable certainty of recovery",
+   "Impairment reviews dependent on uncertain assumptions (EBITDA growth, long-term growth rates, discount rates)",
+   "Actuarial Risk: Adverse Salary Growth Experience, Variability in mortality rates, Variability in withdrawal rates, Variability in availment rates",
+   "Investment Risk: For funded plans that rely on insurers for managing the assets, the value of assets certified by the insurer may not be the fair value of instruments backing the liability",
+   "Liquidity Risk: Employees with high salaries and long durations or those higher in hierarchy, accumulate significant level of benefits. If some of such employees resign/retire from the Company there can be strain on the cashflows",
+   "Market Risk: Market risk is a collective term for risks that are related to the changes and fluctuations of the financial markets. One actuarial assumption that has a material effect is the discount rate",
+   "Legislative Risk: Legislative risk is the risk of increase in the plan liabilities or reduction in the plan assets due to change in the legislation/regulation",
+   "Credit Risk: Trade Receivables, Other Financial Instruments",
+   "Liquidity Risk",
+   "Market Risk: Currency Risk, Interest Rate Risk, Price Risk",
+   "Credit risk on trade receivables and other financial instruments",
+   "Liquidity risk in meeting cash and collateral obligations",
+   "Market risk including currency risk (USD, GBP, EUR), interest rate risk, and equity price risk"
+  ],
+  "related_party": [
+   {
+    "party": "M/s. Wanbury Infotech Private Limited",
+    "nature": "Services provided",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Promoters, Directors, Key Managerial Personnel, Relatives or Subsidiaries",
+    "nature": "No material significant transactions with potential conflict of interest",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions in compliance with Section 177 and 188 of Companies Act, 2013; details disclosed in financial statements as per Ind AS 24",
+    "amount_cr": null
+   },
+   {
+    "party": "Expert Chemicals (India) Pvt. Ltd.",
+    "nature": "Promoter group company; pledged shareholding for borrowings; corporate guarantee for working capital loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Kingsbury Investments Inc",
+    "nature": "Promoter group company; pledged shareholding for borrowings; corporate guarantee for working capital loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Bravo Healthcare Limited",
+    "nature": "Corporate guarantee for working capital loans; pledge of 12,71,250 shares",
+    "amount_cr": null
+   },
+   {
+    "party": "Wanbury Global FZE",
+    "nature": "Corporate guarantee for working capital loans; pledge of 5 shares",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. K Chandran",
+    "nature": "Director; personal guarantee for working capital loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Wanbury Infotech Private Limited",
+    "nature": "Information Technology Services Taken",
+    "amount_cr": 3.6694
+   },
+   {
+    "party": "Directors, Key Management & Others",
+    "nature": "Short Term Employee Benefits",
+    "amount_cr": 5.7403
+   },
+   {
+    "party": "Directors, Key Management & Others",
+    "nature": "Share Based Payments",
+    "amount_cr": 0.2219
+   },
+   {
+    "party": "Directors, Key Management & Others",
+    "nature": "Post-Employment Benefits",
+    "amount_cr": 0.5517
+   },
+   {
+    "party": "Ms. Anupama Vaidya",
+    "nature": "Sitting fees to Non-Executive Directors",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "Mr. Mridul S. Mehta",
+    "nature": "Sitting fees to Non-Executive Directors",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "Mr. Manojkumar K. Gursahani",
+    "nature": "Sitting fees to Non-Executive Directors",
+    "amount_cr": 0.0825
+   },
+   {
+    "party": "Mr. P. V. Sankar Dass",
+    "nature": "Sitting fees to Non-Executive Directors",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Wanbury Infotech Pvt. Ltd.",
+    "nature": "Trade Payable \u2013 Others",
+    "amount_cr": 0.7927
+   }
+  ],
+  "litigation": [
+   "No significant and material order passed by regulators or courts or tribunals impacting going concern status and company's operations in future",
+   "No applications or proceedings made under the Indian Bankruptcy Code, 2016",
+   "Assessment proceedings with direct and indirect tax authorities and certain other parties (Refer Note 44)",
+   "Penalties for non-compliance with Listing Regulations (Regulations 17, 18, 19, 31, 33) by BSE and NSE during FY 2023-24, 2024-25, 2025-26",
+   "Central Sales Tax Act, 1956 - Rs 42.95 lakhs (FY 1997-98 to FY 2004-05) pending at Andhra Pradesh High Court",
+   "Service Tax under Finance Act, 1994 - Rs 102.61 lakhs (FY 2005-06 to FY 2010-12) pending at CESTAT, Mumbai",
+   "Service Tax - Rs 71.98 lakhs (FY 2005-06 to FY 2009-10) pending at Office of Commissioner, Raigad",
+   "GST Act, 2017 - Rs 3,026.42 lakhs (FY 2017-18 to FY 2020-21) pending at various appellate authorities",
+   "Income Tax Act, 1961 - Rs 3,031.83 lakhs (FY 2016-17 to FY 2023-24) pending at CIT Appeals and ITAT",
+   "Disputed demands by Sales Tax Authorities",
+   "Disputed demands by Service Tax Authorities",
+   "Disputed demands by Income Tax Authorities",
+   "Disputed demands by GST Authorities",
+   "Disputed demand by National Pharmaceutical Pricing Authority (NPPA)",
+   "Claims against the Company not acknowledged as debts",
+   "Custom Duty on imports under Advance License Scheme, pending fulfillment of Exports obligation",
+   "The Company has not been declared wilful defaulter by any bank or financial institution or government or any government authority."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Wanbury Holdings B. V., Netherlands",
+    "business": "Ceased to be subsidiary due to non-operations, deregistered as on 1st April 2025"
+   },
+   {
+    "name": "Cantabria Pharma S. L., Spain",
+    "business": "Ceased to be subsidiary due to non-operations, under liquidation, deregistered as on 1st April 2025"
+   },
+   {
+    "name": "Wanbury Global FZE, Ras Al Khaimah, UAE",
+    "business": "Ceased to be subsidiary due to non-operations, deregistered as on 1st April 2025"
+   },
+   {
+    "name": "Ningxia Wanbury Fine Chemicals Co. Ltd., China",
+    "business": "Ceased to be subsidiary due to non-operations, deregistered as on 1st April 2025"
+   },
+   {
+    "name": "Ningxia Wanbury Fine Chemicals",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Wanbury Holding B. V.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Wanbury Global FZE",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Wanbury Holdings B.V",
+    "holding_pct": 100,
+    "business": "Inoperative, deregistered as on 1 April 2025"
+   },
+   {
+    "name": "Ningxia Wanbury Fine Chemicals Company Limited",
+    "holding_pct": 100,
+    "business": "Inoperative, deregistered as on 1 April 2025"
+   },
+   {
+    "name": "Wanbury Global FZE",
+    "holding_pct": 100,
+    "business": "Inoperative, deregistered as on 1 April 2025"
+   },
+   {
+    "name": "Cantabria Pharma S. L.",
+    "holding_pct": null,
+    "business": "Subsidiary (Under Liquidation)"
+   }
+  ],
+  "plants": [
+   {
+    "location": "Plot No. A-15, M.I.D.C., Ind. Area, Patalganga, Maharashtra",
+    "capacity": ""
+   },
+   {
+    "location": "K. Illindalaparru Village, Tanuku, Dist. - West Godavari, Andhra Pradesh",
+    "capacity": ""
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Central Sales Tax Act, 1956 - Sales Tax/Interest/Penalty",
+    "amount_cr": 0.4295
+   },
+   {
+    "nature": "Service Tax under Finance Act, 1994 - Service Tax/Interest/Penalty",
+    "amount_cr": 1.0261
+   },
+   {
+    "nature": "Service Tax - Service Tax/Interest/Penalty",
+    "amount_cr": 0.7198
+   },
+   {
+    "nature": "Goods and Service Tax Act, 2017 - Goods and Service Tax/Interest/Penalty",
+    "amount_cr": 30.2642
+   },
+   {
+    "nature": "Income Tax Act, 1961 - Income Tax/Penalty",
+    "amount_cr": 30.3183
+   },
+   {
+    "nature": "Disputed demands by Sales Tax Authorities",
+    "amount_cr": 0.4295
+   },
+   {
+    "nature": "Disputed demands by Service Tax Authorities",
+    "amount_cr": 1.856
+   },
+   {
+    "nature": "Amount paid under protest (Service Tax)",
+    "amount_cr": 0.11
+   },
+   {
+    "nature": "Disputed demands by Income Tax Authorities",
+    "amount_cr": 30.4482
+   },
+   {
+    "nature": "Amount paid under protest (Income Tax)",
+    "amount_cr": 0.1299
+   },
+   {
+    "nature": "Disputed demands by GST Authorities",
+    "amount_cr": 30.517
+   },
+   {
+    "nature": "Amount paid under protest (GST)",
+    "amount_cr": 0.2147
+   },
+   {
+    "nature": "Disputed demand by National Pharmaceutical Pricing Authority (NPPA)",
+    "amount_cr": 1.9058
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debts",
+    "amount_cr": 26.3605
+   },
+   {
+    "nature": "Custom Duty on imports under Advance License Scheme, pending fulfillment of Exports obligation",
+    "amount_cr": 30.8305
+   }
+  ]
+ }
+}

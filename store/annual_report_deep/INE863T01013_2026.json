@@ -1,0 +1,1601 @@
+{
+ "isin": "INE863T01013",
+ "name": "JITF Infralogistics Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30199_JITFINFRA_2025_2026_A_8563485_05082026132516.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 747299,
+ "chunks": 19,
+ "chunks_ok": 15,
+ "facts": {
+  "business": {
+   "description": "The company's principal business activity is Management Consultancy Activities (NIC Code 70200), contributing 100% of total turnover.",
+   "products": [
+    {
+     "name": "Management Consultancy Activities",
+     "share_of_revenue_pct": 100,
+     "note": "NIC Code 70200"
+    },
+    {
+     "name": "Water infrastructure EPC (drinking water, irrigation, wastewater treatment)",
+     "share_of_revenue_pct": null,
+     "note": "Includes Jal Jeevan Mission, AMRUT, Namami Gange, PMKSY projects"
+    },
+    {
+     "name": "Waste management and waste-to-energy projects",
+     "share_of_revenue_pct": null,
+     "note": "Includes municipal solid waste processing, legacy waste remediation, waste-to-energy plants"
+    },
+    {
+     "name": "Waste-to-Energy (MSW-to-power)",
+     "share_of_revenue_pct": null,
+     "note": "Processing municipal solid waste and generating renewable power through SPVs"
+    },
+    {
+     "name": "Water EPC and O&M",
+     "share_of_revenue_pct": null,
+     "note": "Engineering, procurement, construction projects across drinking water, irrigation, wastewater, industrial effluent treatment; O&M services"
+    },
+    {
+     "name": "Support Services of Business",
+     "share_of_revenue_pct": 100,
+     "note": "Revenue from logistics services accounted on accrual basis depending upon risk and rewards transferred."
+    },
+    {
+     "name": "Service Concession Arrangements (Intangible Assets)",
+     "share_of_revenue_pct": null,
+     "note": "Intangible assets related to service concession of Rs 1,57,722.91 lakhs as at March 31, 2026"
+    },
+    {
+     "name": "Construction and Infrastructure Services",
+     "share_of_revenue_pct": null,
+     "note": "Construction expense of Rs 80,857.31 lakhs for year ended March 31, 2026"
+    },
+    {
+     "name": "Waste Management and Urban Infrastructure",
+     "share_of_revenue_pct": null,
+     "note": "Subsidiary JITF Urban Infrastructure Services Limited mentioned in borrowings note"
+    },
+    {
+     "name": "Rail freight wagon",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognized at fair value of consideration received or receivable, net of discounts, volume rebates and outgoing sales tax, on delivery or transfer of significant risk and rewards of ownership"
+    },
+    {
+     "name": "Power",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of power recognized net of cash discount over time for each unit of electricity delivered at contractually agreed tariff rates; includes accrual for unbilled revenue"
+    },
+    {
+     "name": "Service/Works Contracts",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognized based on work performed and invoiced per contract terms; erection and commissioning revenue recognized using percentage completion method"
+    },
+    {
+     "name": "ETP treated water",
+     "share_of_revenue_pct": null,
+     "note": "Revenue accounted upon transfer of risk and rewards to customers on accrual basis"
+    },
+    {
+     "name": "Operation and maintenance",
+     "share_of_revenue_pct": null,
+     "note": "Revenue accounted upon transfer of risk and rewards to customers on accrual basis"
+    },
+    {
+     "name": "Tipping Fees and usage charges",
+     "share_of_revenue_pct": null,
+     "note": "Earnings including unbilled revenue recognized on accrual basis"
+    },
+    {
+     "name": "Logistics services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue accounted on accrual basis depending upon risk and rewards transferred"
+    },
+    {
+     "name": "CER (Carbon Emission Reduction)",
+     "share_of_revenue_pct": null,
+     "note": "Self-generated CER revenue recognized on date of receipt of certificates at estimated realizable value; purchased CER at selling price at time of sale"
+    },
+    {
+     "name": "Extended Producer Responsibility (EPR)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognized in Statement of Profit & Loss on sale of EPR"
+    },
+    {
+     "name": "Railway freight wagons",
+     "share_of_revenue_pct": null,
+     "note": "Disinvested to Texmaco Rail & Engineering Limited on 3rd September 2024"
+    },
+    {
+     "name": "Water Infrastructure",
+     "share_of_revenue_pct": null,
+     "note": "Development of water infrastructure"
+    },
+    {
+     "name": "Urban Infrastructure",
+     "share_of_revenue_pct": null,
+     "note": "Development of urban infrastructure"
+    },
+    {
+     "name": "Trading Activity",
+     "share_of_revenue_pct": null,
+     "note": "Trading Activity of steel"
+    },
+    {
+     "name": "Urban infrastructure (waste-to-energy)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "value_chain_position": "service",
+   "customers": [
+    "Central government ministries (Ministry of Jal Shakti, Ministry of Housing and Urban Affairs)",
+    "State governments and urban local bodies (ULBs)",
+    "National Mission for Clean Ganga",
+    "Rural and urban water supply departments",
+    "Urban Local Bodies (ULBs)",
+    "Municipalities",
+    "Power distribution companies (discoms)",
+    "Government agencies (Jal Jeevan Mission, AMRUT 2.0, Namami Gange)",
+    "Industrial clients (NTPC, Mahagenco, SIPCOT zones)",
+    "Revenue from two major customers (previous year three) which is more than 10% of the company's total revenue.",
+    "Municipal Corporation of Ferozpur, Punjab",
+    "Concessioning Authority",
+    "Beneficiaries (for unbilled revenue)",
+    "Beneficiaries (for power supply)",
+    "Third parties (for goods supplied)",
+    "Customers (for services, ETP water, O&M, tipping fees, logistics)",
+    "state Government/ local bodies",
+    "Municipal corporations",
+    "Government authorities",
+    "Railways",
+    "Bihar Urban Infrastructure Development Corporation Limited (BUIDCO)",
+    "South Delhi Municipal Corporation"
+   ],
+   "geographies": [
+    {
+     "name": "India (Pan-India operations across rural and urban areas)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Tanzania",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic",
+     "share_pct": 100
+    },
+    {
+     "name": "Domestic",
+     "share_pct": null
+    },
+    {
+     "name": "Exports",
+     "share_pct": null
+    },
+    {
+     "name": "US Dollar",
+     "share_pct": null
+    },
+    {
+     "name": "Tanzania Shilling",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": null
+    },
+    {
+     "name": "Outside India",
+     "share_pct": null
+    }
+   ],
+   "raw_materials": [
+    "Pipes (group-level supply)",
+    "Construction materials",
+    "Water treatment chemicals",
+    "Waste processing equipment",
+    "Municipal solid waste (MSW)",
+    "Steel (for water EPC pipe manufacturing via Jindal SAW)",
+    "Stores spares and Consumables (Rs 4,981.92 lakhs)",
+    "Extended Producer responsibility Certificates (Rs 1,384.77 lakhs)",
+    "steel"
+   ],
+   "end_markets": [
+    "Rural drinking water supply (Jal Jeevan Mission)",
+    "Urban water supply and sanitation (AMRUT)",
+    "River rejuvenation (Namami Gange)",
+    "Irrigation (PMKSY)",
+    "Municipal solid waste management (Swachh Bharat Mission Urban 2.0)",
+    "Industrial wastewater treatment and ZLD",
+    "Waste-to-energy",
+    "Urban infrastructure / waste management",
+    "Water infrastructure (drinking water, irrigation, wastewater, industrial effluent)",
+    "Renewable energy (power generation from waste)",
+    "rail infrastructure",
+    "water infrastructure",
+    "urban infrastructure",
+    "Waste Management",
+    "Municipal Services",
+    "infrastructure",
+    "power",
+    "rail freight",
+    "water treatment",
+    "logistics",
+    "Railway freight wagons",
+    "Trading activities",
+    "Railways",
+    "Water supply",
+    "Power generation",
+    "Waste to Energy",
+    "Rail Wagon Manufacturing"
+   ],
+   "plants": [
+    {
+     "location": "Okhla, Delhi",
+     "capacity": "Operational, expansion of 17 MW underway"
+    },
+    {
+     "location": "Tehkhand, Delhi",
+     "capacity": "Operational"
+    },
+    {
+     "location": "Jaipur, Rajasthan",
+     "capacity": "Operational, 20 MW (upgraded)"
+    },
+    {
+     "location": "Guntur, Andhra Pradesh",
+     "capacity": "Operational, 20 MW"
+    },
+    {
+     "location": "Visakhapatnam, Andhra Pradesh",
+     "capacity": "Operational"
+    },
+    {
+     "location": "Ahmedabad, Gujarat",
+     "capacity": "Operational"
+    },
+    {
+     "location": "Jodhpur, Rajasthan",
+     "capacity": "10 MW greenfield, under construction"
+    },
+    {
+     "location": "Kakinada, Andhra Pradesh",
+     "capacity": "15 MW greenfield, groundwork commenced"
+    },
+    {
+     "location": "Nellore, Andhra Pradesh",
+     "capacity": "12 MW greenfield, groundwork commenced"
+    },
+    {
+     "location": "Bawana, Delhi",
+     "capacity": "36 MW greenfield, groundwork commenced"
+    },
+    {
+     "location": "Various (Plant and Machinery net carrying value Rs 19,715.36 lakhs)",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "",
+     "capacity": "power plant (mentioned in sale of power policy)"
+    },
+    {
+     "location": "Naya Raipur",
+     "capacity": "Water supply infrastructure"
+    },
+    {
+     "location": "Guntur, Andhra Pradesh",
+     "capacity": "15 MW Waste to Energy power plant"
+    },
+    {
+     "location": "Visakhapatnam, Andhra Pradesh",
+     "capacity": "15 MW Waste to Energy power plant"
+    },
+    {
+     "location": "Tehkhand, New Delhi",
+     "capacity": "25 MW Waste to Energy power plant"
+    },
+    {
+     "location": "Ahmedabad, Gujarat",
+     "capacity": "15 MW Waste to Energy power plant"
+    },
+    {
+     "location": "Jaipur, Rajasthan",
+     "capacity": "12 MW Waste to Energy power plant"
+    },
+    {
+     "location": "Jodhpur, Rajasthan",
+     "capacity": "6 MW Waste to Energy power plant (yet to be commissioned)"
+    },
+    {
+     "location": "Kakinada, Andhra Pradesh",
+     "capacity": "15 MW Waste to Energy power plant (yet to be commissioned)"
+    },
+    {
+     "location": "Nellore, Andhra Pradesh",
+     "capacity": "12 MW Waste to Energy power plant (yet to be commissioned)"
+    }
+   ],
+   "competitors_named": [
+    "Texmaco Rail & Engineering Limited"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "JITF Urban Infrastructure Services Limited",
+    "holding_pct": 75,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": 54.6,
+    "business": ""
+   },
+   {
+    "name": "Timarpur-Okhla Waste Management Company Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Jalandhar) Limited",
+    "holding_pct": 99.88,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Bathinda) Limited",
+    "holding_pct": 99.45,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Ferozepur) Limited",
+    "holding_pct": 99.12,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Guntur) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Visakhapatnam) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Ahmedabad) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Jaipur) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Jodhpur) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "JITF Water Infra (Naya Raipur) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "JITF ESIPL CETP (Sitarganj) Limited",
+    "holding_pct": 51,
+    "business": ""
+   },
+   {
+    "name": "JWIL Infra Projects Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Tehkhand Waste to Electricity Project Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Bawana) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Quality Iron and Steel Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Nellore) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Kakinada) Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Tuticorin Desal Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "CWS Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Chennai Smart Water Meters Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "JITF INFRALOGISTICS LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; registered office at A-11 (7), Udya Society, Sector-3, Tatibandh, Raipur, Dharsiwa, Chattisgarh, India, 492099; initiated shifting of registered office from Chhattisgarh to Uttar Pradesh"
+   },
+   {
+    "name": "JITF URBAN INFRASTRUCTURE LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; CIN: U70102CT2007PLC016421; registered office at A-11 (7), Udya Society, Sector-3, Tatibandh, Raipur, Dharsiwa, Chattisgarh, India, 492099; initiated process to shift registered office from Chhattisgarh to Uttar Pradesh"
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (AHMEDABAD) LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; CIN: U40100UP2016PLC086129; registered office at A-1, UPSIDC Industrial Area, Nandgaon Road, Kosi Kalan, Distt. Mathura\u2013281403 (U.P.); redeemed Optionally Fully Convertible Debentures (OFCDs) of Rs.8 Crore; appointed Mr. Senthil Kumar Kandasamy as WTD and Mr. Raj Kamal Agarwal as Independent Director"
+   },
+   {
+    "name": "JITF URBAN WASTE MANAGEMENT (BATHINDA) LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; CIN: U90001UP2011PLC069571; registered office at A-1, UPSIDC Industrial Area, Nandgaon Road, Kosi Kalan, Distt. Mathura\u2013281403 (U.P.); Board decisions carried out with unanimous consent"
+   },
+   {
+    "name": "JITF URBAN WASTE MANAGEMENT (FEROZEPUR) LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; CIN: U90000UP2011PLC069642; registered office at A-1, UPSIDC Industrial Area, Nandgaon Road, Kosi Kalan, Distt. Mathura\u2013281403 (U.P.)"
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (GUNTUR) LIMITED",
+    "business": "Secretarial audit conducted for FY ended 31st March 2026; CIN: U40300UP2015PLC075378; registered office at A-1, UPSIDC Industrial Area, Nandgaon Road, Kosi Kalan, Distt. Mathura\u2013281403 (U.P.); examined compliance with Listing Agreements entered into with Bombay Stock Exchange and National Stock Exchange; Board decisions carried out with unanimous consent"
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (GUNTUR) LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (JAIPUR) LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF URBAN INFRASTRUCTURE SERVICES LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "TEHKHAND WASTE TO ELECTRICITY PROJECT LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "TIMARPUR-OKHLA WASTE MANAGEMENT COMPANY LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (VISAKHAPATNAM) LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JINDAL URBAN WASTE MANAGEMENT (VISAKHAPATNAM) LIMITED",
+    "holding_pct": null,
+    "business": "Waste management"
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited (JUIL)",
+    "holding_pct": null,
+    "business": "Group's urban-infrastructure holding company and one of India's largest waste-to-energy (WtE) operators, processing municipal solid waste and generating renewable power through a network of special-purpose vehicles; accounts for close to half of India's operational MSW-to-energy processing capacity"
+   },
+   {
+    "name": "JWIL Infra Limited (JWIL)",
+    "holding_pct": null,
+    "business": "Group's holistic water-management platform, executing EPC projects across drinking water, irrigation, wastewater and industrial effluent treatment, benefiting from Group's in-house access to ductile-iron and MS pipe manufacturing via Jindal SAW"
+   },
+   {
+    "name": "JITF Urban Infrastructure Services Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Guntur) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Timarpur-Okhla Waste Management Company Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Tehkhand Waste To Electricity Project Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Bathinda) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Visakhapatnam) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Jaipur) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Ahmedabad) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Ferozepur) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Infrastructure Services Limited",
+    "holding_pct": null,
+    "business": "Urban infrastructure services"
+   },
+   {
+    "name": "Jindal Urban Waste Management Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Quality Iron and Steel Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JWIL Infra Projects Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Waste Management (Jalandhar) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Bawana) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Kakinada) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Jindal Urban Waste Management (Nellore) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Tuticorin Desal Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Water Infra (Naya Raipur) Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "JITF Urban Infrastructure Services Limited",
+    "holding_pct": 75,
+    "business": "Urban infrastructure services, waste management; term loan from Indusind Bank Rs 9,700 lakhs"
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": null,
+    "business": "Water infrastructure; vehicle loans, equipment loans, multiple term loans from banks"
+   },
+   {
+    "name": "JUWM Ahmedabad",
+    "holding_pct": null,
+    "business": "SPV of JUIL"
+   },
+   {
+    "name": "JUWM Jaipur",
+    "holding_pct": null,
+    "business": "SPV of JUIL"
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited (Including Subsidiaries and JV)",
+    "holding_pct": 75.0,
+    "business": "Urban infrastructure"
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": 54.61,
+    "business": "Water infrastructure"
+   },
+   {
+    "name": "Tuticorin Desal Private Limited",
+    "holding_pct": 64.0,
+    "business": "Desalination"
+   },
+   {
+    "name": "CWS Private Limited",
+    "holding_pct": 64.0,
+    "business": "Water infrastructure"
+   },
+   {
+    "name": "JITF ESIPL CETP (Sitarganj) Limited",
+    "holding_pct": 51.0,
+    "business": "Effluent treatment"
+   },
+   {
+    "name": "JITF Urban Waste Management (Bathinda) Limited",
+    "holding_pct": 99.46,
+    "business": "Waste to energy"
+   },
+   {
+    "name": "JITF Urban Waste Management (Ferozepur) Limited",
+    "holding_pct": 99.13,
+    "business": "Waste to energy"
+   },
+   {
+    "name": "JITF Urban Waste Management (Jalandhar) Limited",
+    "holding_pct": 99.89,
+    "business": "Waste to energy"
+   },
+   {
+    "name": "JITF Urban Infrastructure Services Limited",
+    "holding_pct": 75.0,
+    "business": "Urban Infrastructure Development"
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": 54.6,
+    "business": "Water Infrastructure Development"
+   },
+   {
+    "name": "Jindal Rail Infrastructure Limited",
+    "holding_pct": 0.0,
+    "business": "Rail Wagon Manufacturing (sold on 03.09.2024)"
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited",
+    "holding_pct": 100.0,
+    "business": "Urban Infrastructure Development"
+   },
+   {
+    "name": "JWIL Infa Projects Limited",
+    "holding_pct": 100.0,
+    "business": "Water Infrastructure Development"
+   },
+   {
+    "name": "Quality Iron and Steel Limited",
+    "holding_pct": 100.0,
+    "business": "Rail Wagon Manufacturing"
+   },
+   {
+    "name": "Jindal Urban Waste Management Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "JITF Water Infra (Naya Raipur) Limited",
+    "holding_pct": 100.0,
+    "business": "Water Infrastructure Development"
+   },
+   {
+    "name": "JITF ESIPL CETP (Sitarganj) Limited",
+    "holding_pct": 51.0,
+    "business": "Water Infrastructure Development"
+   },
+   {
+    "name": "Tuticorin Desal (P) Limited",
+    "holding_pct": 64.0,
+    "business": "Water Infrastructure Development (w.e.f 29.09.2025)"
+   },
+   {
+    "name": "CWS Private Limited",
+    "holding_pct": 64.0,
+    "business": "Water Infrastructure Development (w.e.f 10.03.2026)"
+   },
+   {
+    "name": "Chennai Smart Water Meters Private Limited",
+    "holding_pct": 100.0,
+    "business": "Water Infrastructure Development (w.e.f 16.03.2026)"
+   },
+   {
+    "name": "JITF Urban Waste Management (Ferozepur) Limited",
+    "holding_pct": 99.13,
+    "business": "Urban Infrastructure Development"
+   },
+   {
+    "name": "JITF Urban Waste Management (Jalandhar) Limited",
+    "holding_pct": 99.89,
+    "business": "Urban Infrastructure Development"
+   },
+   {
+    "name": "JITF Urban Waste Management (Bathinda) Limited",
+    "holding_pct": 99.46,
+    "business": "Urban Infrastructure Development"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Visakhapatnam) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Guntur) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Timarpur- Okhla Waste Management Company Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Jaipur) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Jodhpur) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Bawana) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Tehkhand Waste to Electricity Project Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Ahmedabad) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Kakinada) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power (w.e.f 31.07.2025)"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Nellore) Limited",
+    "holding_pct": 100.0,
+    "business": "Waste to Power (w.e.f 26.06.2025)"
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": null,
+    "business": "Infrastructure projects; operates Employee Stock Option Plan 2025"
+   },
+   {
+    "name": "Timarpur-Okhla Waste Management Company Limited",
+    "holding_pct": null,
+    "business": "Waste management"
+   },
+   {
+    "name": "Tehkhand Waste To Electricity Project Limited",
+    "holding_pct": null,
+    "business": "Waste to electricity project"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Visakhapatnam) Limited",
+    "holding_pct": null,
+    "business": "Urban waste management"
+   },
+   {
+    "name": "Jindal Urban Waste Management (Guntur) Limited",
+    "holding_pct": null,
+    "business": "Urban waste management"
+   },
+   {
+    "name": "JITF Urban Infrastructure Limited",
+    "holding_pct": null,
+    "business": "Waste to power"
+   },
+   {
+    "name": "JWIL Infra Limited",
+    "holding_pct": null,
+    "business": "Water and EPC business"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "",
+    "nature": "There were no contracts or arrangements or transactions entered into by the Company during the Financial Year 2025-26 which were not at Arm's length basis.",
+    "amount_cr": null
+   },
+   {
+    "party": "",
+    "nature": "Details of material contracts or arrangement or transactions at arm's length basis: NIL",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Trade receivables",
+    "amount_cr": 0.4433
+   },
+   {
+    "party": "Employees",
+    "nature": "Loans granted",
+    "amount_cr": 0.1013
+   },
+   {
+    "party": "Related parties (loan from)",
+    "nature": "Unsecured loan",
+    "amount_cr": 0.6739
+   },
+   {
+    "party": "Related Party",
+    "nature": "Payable to Related Party",
+    "amount_cr": 0.0098
+   },
+   {
+    "party": "Related Parties (Loans)",
+    "nature": "Loans to Related Parties - Unsecured, considered good",
+    "amount_cr": 86.16
+   },
+   {
+    "party": "Related Parties (Borrowings)",
+    "nature": "Loan from related parties - Unsecured non-current borrowings",
+    "amount_cr": 1857.15
+   },
+   {
+    "party": "Siddeshwari Tradex Private Limited",
+    "nature": "Pledge of listed shares for JUISL term loan; corporate guarantee for JWIL term loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Municipal Corporation of Ferozpur, Punjab",
+    "nature": "Arbitration fee paid on behalf of respondent",
+    "amount_cr": 1.03
+   },
+   {
+    "party": "Jindal Saw Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 678.01
+   },
+   {
+    "party": "Siddheshwari Tradex Private Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 1489.53
+   },
+   {
+    "party": "JITF Commodity Tradex Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 317.81
+   },
+   {
+    "party": "JSW Steel Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 73.84
+   },
+   {
+    "party": "JSW Vijayanagar Metallics Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 65.72
+   },
+   {
+    "party": "SPML Infra Limited",
+    "nature": "Entities falling under same promoter group",
+    "amount_cr": 37.66
+   },
+   {
+    "party": "Abn Finance Limited",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0052
+   },
+   {
+    "party": "Home Trade Limited",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0003
+   },
+   {
+    "party": "Mandrachal Fininv Pvt Ltd",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Orbit Finances Pvt Ltd",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0017
+   },
+   {
+    "party": "Stalag investments & management Services Pvt",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0001
+   },
+   {
+    "party": "Ysn Shares & Securities (P) Ltd.",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Kasauli Investments Pvt Ltd",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0023
+   },
+   {
+    "party": "Kabra Finstock & Properties Pvt Ltd",
+    "nature": "Share held by Struck Off Company",
+    "amount_cr": 0.0012
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 0.6739,
+    "note": "Indebtedness at the end of the financial year (Principal Amount) in Rs Lacs: 67.39"
+   },
+   {
+    "lender_or_type": "NABFID",
+    "amount_cr": 450,
+    "note": "debt for SIPCOT desalination HAM project, closed with no corporate guarantee"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 0.6739,
+    "note": "Non-current financial liabilities as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Loan from related parties (Unsecured)",
+    "amount_cr": 0.6739,
+    "note": "Repayable after 15 years & 6 months starting from 5th December 2016, interest 10.20%-10.60% p.a. monthly compounding"
+   },
+   {
+    "lender_or_type": "Term Loan from banks (Secured)",
+    "amount_cr": 478.41,
+    "note": "Includes JUISL Indusind Bank Rs 9,700 lakhs; JWIL multiple term loans"
+   },
+   {
+    "lender_or_type": "Term Loan from financial Institution (Secured)",
+    "amount_cr": 823.96,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Loan from related parties (Unsecured)",
+    "amount_cr": 1857.15,
+    "note": ""
+   },
+   {
+    "lender_or_type": "11% non-cumulative redeemable preference shares (Unsecured)",
+    "amount_cr": 200.0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Current Borrowings (Secured + Unsecured)",
+    "amount_cr": 585.95,
+    "note": "Includes current maturities of long-term debt"
+   },
+   {
+    "lender_or_type": "Vehicle loans (JWIL)",
+    "amount_cr": 3.49,
+    "note": "Interest 7.25%-9.35% p.a., repayable 6-56 monthly instalments"
+   },
+   {
+    "lender_or_type": "Equipment loans (JWIL)",
+    "amount_cr": 0.24,
+    "note": "Interest 8.25%-8.61% p.a., repayable 7 monthly instalments"
+   },
+   {
+    "lender_or_type": "INR borrowings",
+    "amount_cr": 3945.48,
+    "note": "Total borrowings as at March 31, 2026: Rs 3,94,547.85 lacs (Floating rate: Rs 3,71,674.27 lacs, Fixed rate: Rs 22,873.58 lacs)"
+   },
+   {
+    "lender_or_type": "INR borrowings",
+    "amount_cr": 3502.96,
+    "note": "Total borrowings as at March 31, 2025: Rs 3,50,295.88 lacs (Floating rate: Rs 3,27,263.69 lacs, Fixed rate: Rs 23,032.19 lacs)"
+   },
+   {
+    "lender_or_type": "JITF Commodity Tradex Limited",
+    "amount_cr": 215.75,
+    "note": "Related party borrowing"
+   },
+   {
+    "lender_or_type": "Siddheshwari Tradex Private Limited",
+    "amount_cr": 1641.48,
+    "note": "Related party borrowing"
+   }
+  ],
+  "auditor": {
+   "opinion": "During the period under review, the Company has complied with the provisions of the Act, Rules, Regulations, Guidelines, Standards, etc. mentioned above.",
+   "name": "S. Bhawani Shankar & Associates, Company Secretaries",
+   "key_audit_matters": [
+    "Compliance with Companies Act, 2013 and rules",
+    "Compliance with Securities Contracts (Regulation) Act, 1956",
+    "Compliance with Depositories Act, 1996",
+    "Compliance with FEMA 1999 (where applicable)",
+    "Compliance with SEBI Regulations (mostly Not Applicable)",
+    "Compliance with Secretarial Standards issued by ICSI",
+    "Compliance with Listing Agreements (where applicable)",
+    "Board composition and processes",
+    "Adequacy of compliance systems and processes",
+    "There are no key audit matters to be communicated in the report."
+   ],
+   "qualifications_or_emphasis": [
+    "Compliance of applicable financial laws including Direct and Indirect Tax Laws not reviewed",
+    "Financial records and Books of Accounts not verified",
+    "Report not an assurance of future viability or management efficacy",
+    "The company could not file CSR Report electronically with Registrar of Companies (MCA) due to technical glitches in the portal.",
+    "Relied on management representation for compliance with general laws",
+    "Did not verify correctness and appropriateness of financial records and books of account",
+    "Secretarial Audit Report is not an assurance of future viability or management efficacy",
+    "Securities Contracts (Regulation) Act, SEBI regulations, Listing Agreements, FEMA - Not Applicable",
+    "Proper books of account maintained except for matters stated in paragraph 2(h)(vi) on reporting under Rule 11(g) regarding audit trail feature - database level logs record only modified values",
+    "Audit trail feature operated throughout the year for all relevant transactions, no tampering noticed",
+    "Material uncertainty relating to Going concern related to Subsidiary Company JITF Water Infra (Naya Raipur) Limited.",
+    "Emphasis of Matter regarding going concern matter in respect of JITF Urban Waste Management (Bathinda) Limited.",
+    "Opinion on 23 subsidiary companies incorporated in India based solely on corresponding reports of respective auditors",
+    "No modification of opinion in respect of this matter"
+   ]
+  },
+  "governance": {
+   "promoter_holding_pct": 63.03,
+   "promoter_pledge_pct": 0,
+   "top_shareholders": [
+    {
+     "name": "NALWA SONS INVESTMENTS LIMITED",
+     "pct": 16.75
+    },
+    {
+     "name": "SIDDESHWARI TRADEX PRIVATE LIMITED",
+     "pct": 11.68
+    },
+    {
+     "name": "FOUR SEASONS INVESTMENTS LIMITED",
+     "pct": 13.61
+    },
+    {
+     "name": "SIGMA TECH INC",
+     "pct": 9.42
+    },
+    {
+     "name": "OPJ TRADING PRIVATE LIMITED",
+     "pct": 2.43
+    },
+    {
+     "name": "DIVINO MULTIVENTURES PRIVATE LIMITED",
+     "pct": 2.0
+    },
+    {
+     "name": "DEEPIKA JINDAL",
+     "pct": 1.74
+    },
+    {
+     "name": "ABHYUDAY JINDAL",
+     "pct": 1.76
+    },
+    {
+     "name": "VIRTUOUS TRADECORP PRIVATE LIMITED",
+     "pct": 1.0
+    },
+    {
+     "name": "CRESTA FUND LTD",
+     "pct": 1.66
+    },
+    {
+     "name": "Nalwa Sons Investments Limited",
+     "pct": 16.75
+    },
+    {
+     "name": "Four Seasons Investments Limited",
+     "pct": 13.61
+    },
+    {
+     "name": "Sigmatech Inc.",
+     "pct": 9.42
+    },
+    {
+     "name": "Siddeshwari Tradex Private Limited",
+     "pct": 11.68
+    },
+    {
+     "name": "Sigma Tech Inc",
+     "pct": 9.42
+    },
+    {
+     "name": "OPJ Trading Private Limited",
+     "pct": 2.43
+    },
+    {
+     "name": "Abhyuday Jindal",
+     "pct": 1.77
+    },
+    {
+     "name": "Deepika Jindal",
+     "pct": 1.74
+    },
+    {
+     "name": "Divino Multiventures Private Limited",
+     "pct": 1.67
+    },
+    {
+     "name": "Abn Finance Limited",
+     "pct": null
+    },
+    {
+     "name": "Home Trade Limited",
+     "pct": null
+    },
+    {
+     "name": "Mandrachal Fininv Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "Orbit Finances Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "Stalag investments & management Services Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "Ysn Shares & Securities (P) Ltd.",
+     "pct": null
+    },
+    {
+     "name": "Kasauli Investments Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "Kabra Finstock & Properties Pvt Ltd",
+     "pct": null
+    }
+   ],
+   "director_changes": [
+    "The changes in the composition of the Board of Directors that took place during the period under review were carried out in compliance with the provisions of the Act.",
+    "JINDAL URBAN WASTE MANAGEMENT (AHMEDABAD) LIMITED: Appointed Mr. Senthil Kumar Kandasamy as WTD and Mr. Raj Kamal Agarwal as Independent Director",
+    "No changes in the composition of the Board of Directors during the period under review",
+    "During the period under review, no Independent Directors of the Company have resigned before the expiry of his/her tenure.",
+    "Mr. Arun Kumar Khosla - Director (till 13.09.2024)",
+    "Mr. Pranay Kumar - Director (w.e.f. 13.09.2024)",
+    "Mr. Anuj Kumar - Chief Financial Officer (till 31.01.2025)",
+    "Mr. Manoj Kumar Agarwal - Chief Financial Officer (w.e.f. 28.02.2025)",
+    "Re-appointment of Dr. Amarendra Kumar Sinha (DIN: 08190565) as Whole-Time Director for 3 years w.e.f. 03rd August 2026",
+    "Appointment of Mr. Satyakam Mishra (DIN: 10711600) as Independent Director for 5 years w.e.f. 31st July 2026",
+    "Appointment of Mr. Suresh Baid (DIN: 00030585) as Independent Director for 5 years w.e.f. 31st July 2026",
+    "Appointment of Mr. Sandip Dutt (DIN: 08099506) as Non-Executive Director w.e.f. 31st July 2026",
+    "Mr. Pranay Kumar (DIN: 01262847) retires by rotation and offers himself for re-appointment",
+    "Re-appointment of Dr. Amarendra Kumar Sinha as Whole-time Director for further period of three years effective from 3rd August, 2026",
+    "Appointment of Mr. Satyakam Mishra as Additional Director in the category of Independent Director w.e.f. 31st July, 2026",
+    "Appointment of Mr. Suresh Baid as Additional Director in the category of Independent Director w.e.f. 31st July, 2026",
+    "Appointment of Mr. Sandip Dutt as Additional Director w.e.f. 3rd August 2026"
+   ]
+  },
+  "litigation": [
+   "During the Financial Year, there are no significant material orders passed by the Regulators or Courts or Tribunals impacting the going concern status and company's operations in future.",
+   "Further, during the year under review, no applications were made, or no proceedings were pending as at the end of the year under the Insolvency and Bankruptcy Code, 2016.",
+   "Impact of pending litigations disclosed in Note No. 24.9 of standalone financial statements",
+   "Impact of pending litigations on the consolidated financial position of the Group and joint ventures (refer note no. 42.11).",
+   "Arbitration fee paid on behalf of Municipal Corporation of Ferozpur, Punjab (Rs 102.71 lakhs)",
+   "Contingent Liability for Indirect Tax Cases",
+   "Disputed liability with UKPCB",
+   "Demand of Electricity tax raised by New Delhi Municipal Corporation",
+   "Contingent Liability for Direct Tax Cases",
+   "JITF Urban Infrastructure Limited: Bank Guarantee of Rs.1.21 Crores invoked by BUIDCO on August 12, 2023; writ petition filed in Patna High Court; Supreme Court dismissed SLP; recovery suit filed in Commercial Court, Patna, listed for hearing on June 1, 2026",
+   "JITF Urban Waste Management (Jalandhar) Limited: Arbitration award of Rs. 20,444.21 lakhs; Municipal Corporation challenged under Section 34; Revision Petitions dismissed by High Court; execution proceedings pending",
+   "JITF Urban Waste Management (Ferozepur) Limited: Arbitration award of Rs. 9,229.35 lakhs; Municipal Corporation challenged under Section 34; Revision Petitions dismissed by High Court; execution proceedings pending",
+   "JITF Urban Waste Management (Bathinda) Limited: Termination notice issued 05.12.2018; Arbitration award dated 21.05.2025 held termination not legally valid; Section 34 objections filed pending adjudication",
+   "No proceedings have been initiated or pending against the Group under the Benami Transactions (Prohibition) Act, 1988"
+  ],
+  "people": {
+   "key_management": [
+    {
+     "name": "Dr. Amarendra Kumar Sinha",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Ms. Kanika Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Raj Kamal Aggarwal",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Girish Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Dhananjaya Pati Tripathi",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Pranay Kumar",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Alok Kumar",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Manoj Kumar Agarwal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Dr. Amarendra Kumar Sinha",
+     "role": "Whole-Time Director & CEO"
+    },
+    {
+     "name": "Manoj Kumar Agarwal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Alok Kumar Shastri",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Megha Bhardwaj",
+     "role": "Assistant Manager"
+    },
+    {
+     "name": "Seema",
+     "role": "Senior Executive"
+    },
+    {
+     "name": "Dr. Amarendra Kumar Sinha",
+     "role": "Whole-Time Director and Chief Executive Officer"
+    },
+    {
+     "name": "Amarendra Kumar Sinha",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Pranay Kumar",
+     "role": "Director"
+    },
+    {
+     "name": "Alok Kumar",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Pranay Kumar",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Amarendra Kumar Sinha",
+     "role": "Whole Time Director (DIN-08190565)"
+    },
+    {
+     "name": "Pranay Kumar",
+     "role": "Director (DIN-01262847)"
+    },
+    {
+     "name": "Alok Kumar",
+     "role": "Company Secretary (M No. A-19819)"
+    },
+    {
+     "name": "Chief Operating Officer",
+     "role": "Chief operating decision maker"
+    },
+    {
+     "name": "Mr. Dhananjaya Pati Tripathi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Girish Sharma",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Dr. Raj Kamal Aggarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Amarendra Kumar Sinha",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Manoj Kumar Agarwal",
+     "role": "Chief Financial Officer (w.e.f. 28.02.2025)"
+    },
+    {
+     "name": "Mr. Pranay Kumar",
+     "role": "Director (w.e.f. 13.09.2024)"
+    },
+    {
+     "name": "Dr. Amarendra Kumar Sinha",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Dr. Amarendra Kumar Sinha",
+     "role": "Whole-time Director / CEO"
+    },
+    {
+     "name": "Mr. Satyakam Mishra",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Suresh Baid",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sandip Dutt",
+     "role": "Non-Executive Director"
+    }
+   ],
+   "employees": 5
+  },
+  "other_notable": [
+   "During the Financial Year ended March 31, 2026, the Company has not accepted any public deposits and no amount on account of principal or interest on public deposits was outstanding as on 31st March 2026.",
+   "The Company has a policy for prevention of sexual harassment of women at workplace and also complied with provisions relating to the constitution of Internal Complaints Committee under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013.",
+   "No complaint received in relation to Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 during the year under review.",
+   "During the period under review, the Company does not have any women employee on roll of the Company. Therefore, provisions relating to the Maternity Benefit Act, 1961/The Code on Social Security 2020 does not apply on the Company.",
+   "During the period under review, there were no instances of One-Time Settlement with any Bank or Financial Institution.",
+   "The Directors and Key Managerial Personnel do not hold any share in the Company (except Ms. Kanika Sharma holding 8 shares, Mr. Alok Kumar holding 1 share, and Mr. Manoj Kumar Agarwal holding 10 shares).",
+   "Penalties / Punishment/ Compounding of Offences: NIL for Company, Directors, and Other Officers in Default.",
+   "JITF INFRALOGISTICS LIMITED: Initiated shifting of registered office from Chhattisgarh to Uttar Pradesh",
+   "JITF URBAN INFRASTRUCTURE LIMITED: Initiated process to shift registered office from Chhattisgarh to Uttar Pradesh",
+   "Secretarial audits conducted for FY ended 31st March 2026 for all six subsidiaries",
+   "All audits performed by S. Bhawani Shankar & Associates, Company Secretaries (Proprietor: Bhawani Shankar Sharma, M. No. F12158, C.P. No.: 18329, Peer Review Certificate No.: 3340/2023)",
+   "UDINs: F012158H000306793 (JITF INFRALOGISTICS), F012158H000286366 (JITF URBAN INFRASTRUCTURE), F012158H000286267 (JINDAL URBAN WASTE MANAGEMENT AHMEDABAD), F012158H000286300 (JITF URBAN WASTE MANAGEMENT BATHINDA), F012158H000286344 (JITF URBAN WASTE MANAGEMENT FEROZEPUR), F012158H000286300 (JINDAL URBAN WASTE MANAGEMENT GUNTUR)",
+   "Audit dates: 12th May 2026 (JITF INFRALOGISTICS), 7th May 2026 (JITF URBAN INFRASTRUCTURE), 5th May 2026 (others)",
+   "During the reporting period, the Company has initiated to shift its registered office from the State of Chhattisgarh to the State of Uttar Pradesh.",
+   "Secretarial Audit conducted by Lodha & Associates (FCS Rachna Lodha, FCS No. 9295, COP No. 10391) for FY ended 31st March 2026",
+   "Secretarial Audit also conducted for subsidiary JINDAL URBAN WASTE MANAGEMENT (VISAKHAPATNAM) LIMITED by S. Bhawani Shankar & Associates",
+   "Company CIN: U41000UP2006PLC069631",
+   "Registered office: A-1, UPSIDC Industrial Area, Nandgaon Road, Kosi Kalan, Distt. Mathura \u2013 281403 (U.P.)",
+   "No employee received remuneration aggregating Rs 1.02 crore or more per annum",
+   "No employee received remuneration of Rs 8.5 lakh or more per month for part of the year",
+   "Remuneration structure does not consist of variable components",
+   "Average 12% increase in remuneration of CFO and Company Secretary in FY26",
+   "10.50% increase in median remuneration of employees in FY26",
+   "Ratio of Whole-Time Director remuneration to median employee remuneration: 2.28:1",
+   "Dr. Amarendra Kumar Sinha appointed as CEO on 06-02-2026",
+   "List of applicable laws includes Corporate Laws, Patent & IT Laws, Safety/Environment/Health Laws, Factories/Labour Laws, EPF Laws, Apprentice Act, State Labour Laws, Electricity Laws",
+   "India water treatment market estimated at USD 2.3 billion in 2024, projected to reach USD 7.0 billion by 2035 (CAGR ~10.6%)",
+   "India generates ~72,000 MLD urban sewage, installed capacity treats only ~37%, actual treatment ~28%",
+   "India generates ~170,338 TPD solid waste (2021-22), only ~91,512 TPD formally treated",
+   "Legacy waste stock of ~15 crore tonnes on 14,000 acres of urban land",
+   "Swachh Bharat Mission-Urban 2.0 budget: \u20b91,41,600 crore (\u20b936,465 crore central) for 2021-22 to 2025-26",
+   "Jal Jeevan Mission provided tap connections to 15.72 crore rural households (81% coverage) as of Oct 2025",
+   "AMRUT 2.0: 6,000+ projects worth \u20b9830+ billion undertaken by Dec 2025, 4,700+ MLD new STP capacity",
+   "Namami Gange Phase II: 3,976 MLD commissioned STP capacity across 173 STPs by Q3 FY26",
+   "PMKSY: 27+ million farmers benefited, 24.6+ million hectares developed by Aug 2025",
+   "Key sector trends: Circular economy of water/reuse, Life-cycle procurement (HAM/DBOT/annuity), Digitalisation (SCADA/IoT/GIS), Shift from connections to service delivery",
+   "JUIL retained position as India's largest waste-to-energy operator with estimated ~50% share of country's operational MSW-to-energy processing capacity",
+   "JUIL portfolio: total WtE portfolio ~220 MW, operational ~110 MW in FY2025-26, six operational plants across four states",
+   "JUIL plants processed ~3.2 million tonnes MSW in FY2025-26; expected ~6.0 million tonnes annually at full build-out",
+   "JUIL plants delivered industry-leading average plant load factor ~90%",
+   "JWIL credit rating upgraded to 'A' Stable by both CARE and CRISIL",
+   "JWIL weighted average cost of borrowing reduced from 10.19% to 9.16%",
+   "JWIL net worth \u20b9713 crore vs \u20b9556 crore in FY25",
+   "JWIL 11 projects slated for completion in FY27 vs 3 in FY26",
+   "JWIL integrated vertical expanded from 1 project in FY25 to 9 projects",
+   "JWIL exploring industrial water opportunities in NTPC, Mahagenco, SIPCOT zones and new markets in West Bengal, Gujarat (AMC), Odisha",
+   "JWIL international presence: Tanzania project funded by Exim Bank",
+   "Consolidated FY26: Revenue \u20b92,808.02 cr (+24%), EBITDA \u20b9604.43 cr (+35%), PBT \u20b9100.59 cr (+455%), PAT loss \u20b99.93 cr (vs loss \u20b924.42 cr)",
+   "Standalone FY26: Gross revenue \u20b9351.36 lacs (vs \u20b9364.46 lacs), Net profit \u20b922.51 lacs (vs \u20b928.47 lacs)",
+   "Board composition: 1 Executive Director, 5 Non-Executive Independent Directors (including Woman Director), total 6 directors",
+   "Board met 5 times during FY2025-26",
+   "Audit Committee: 3 Independent Directors + 1 Executive Director, met 5 times",
+   "Nomination & Remuneration Committee: 2 Independent Directors + 1 Non-Executive Director, met 2 times",
+   "Stakeholder Relationship Committee exists",
+   "Material subsidiaries listed with incorporation dates and statutory auditor appointment dates",
+   "No inventory held by the company",
+   "No working capital limits sanctioned in excess of Rs 5 crore",
+   "No deposits accepted from public",
+   "Cost records maintenance not specified under section 148(1)",
+   "Not a Nidhi company"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "JINDAL URBAN WASTE MANAGEMENT (AHMEDABAD) LIMITED redeemed Optionally Fully Convertible Debentures (OFCDs) of Rs.8 Crore",
+    "value_cr": 8
+   },
+   {
+    "statement": "JWIL Infra Limited total order book stood at \u20b911,352 crore as on 31 March 2026, up 123% YoY, with EPC order book of \u20b98,767 crore (+125% from \u20b93,901 crore) and O&M order book of \u20b92,585 crore (+116% from \u20b91,195 crore). New order inflow in FY26 was \u20b96,922 crore across 17 new projects.",
+    "value_cr": 11352
+   },
+   {
+    "statement": "JUIL forward pipeline anchored by six key growth drivers: Jodhpur, Bawana (greenfield), Kakinada and Nellore Waste-to-Energy projects, together with Okhla and Tehkhand capacity-expansion projects.",
+    "value_cr": null
+   },
+   {
+    "statement": "Retention money of Rs 14,656.79 lakhs in non-current trade receivables and Rs 17,912.99 lakhs in current trade receivables",
+    "value_cr": 325.7
+   },
+   {
+    "statement": "Unbilled revenue of Rs 51,375.89 lakhs as at March 31, 2026",
+    "value_cr": 513.76
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "The medium-term outlook for the water sector is underpinned by both scarcity and sustained fiscal commitment. Bridging India's projected 2030 supply gap has been estimated to require investment on the order of \u20b920 lakh crore, signalling a demand pool far larger than current annual spending. The Union Budget for FY 2026-27 earmarked about \u20b92,16,654 crore for water supply, sanitation, and river conservation, and set the Jal Jeevan Mission budget estimate at about \u20b967,670 crore.",
+    "period": "Medium-term (FY27 and beyond)"
+   },
+   {
+    "statement": "India's municipal solid waste management sector is projected to grow from USD 7.85 billion in 2025 to about USD 10.37 billion by 2030 at a CAGR of 5.7%. Industry insights suggest annual growth of 6-7% over the next decade, supported by public and private investments totaling around USD 10 billion by 2025, driven by increasing regulation, urbanization, and government funding.",
+    "period": "Next decade (2025-2035)"
+   },
+   {
+    "statement": "Global growth is projected to moderate to 3.1% in 2026 before improving marginally to 3.2% in 2027. India's GDP is expected to grow at 6.8-7.2% in FY27, with long-term growth potential estimated at around 7%. Inflation is expected to remain benign, providing a stable macroeconomic environment.",
+    "period": "FY27 (2026-27)"
+   },
+   {
+    "statement": "The outlook for the waste-to-energy sector remains favourable, underpinned by accelerating urbanisation, rising waste volumes, tightening environmental regulation, the legacy-remediation mandate under SBM 2.0 and the Government of India's renewable-energy and net-zero priorities. With installed WtE capacity still far below the MNRE-estimated potential of about 5,690 MW, and a national commitment to garbage-free cities, the medium-term pipeline for new treatment and energy-recovery capacity is substantial, and increasingly complemented by adjacent CBG and resource-recovery opportunities.",
+    "period": "medium-term"
+   },
+   {
+    "statement": "For a leading operator with extensive experience and proven execution, the large processing gap, strong policy support, and shift toward resource recovery offer significant multi-year growth potential.",
+    "period": "multi-year"
+   },
+   {
+    "statement": "The capital of the group would be increased as the group to envisage various projects of waste to energy, water infrastructure and manufacturing of railways freight wagons in future.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Water being a State subject causes delays in project execution",
+   "Budget execution gaps at central and state levels",
+   "Urban local bodies' financial and operational challenges",
+   "Underperforming treatment assets (existing STPs under-utilized)",
+   "Climate variability affecting water sources",
+   "Prolonged geopolitical conflicts and trade tensions impacting global economy",
+   "Rising defence spending and geopolitical fragmentation intensifying inflationary and fiscal pressures",
+   "Concession, tariff and policy risk: dependence on concession agreements, waste-supply and tipping-fee arrangements, and power-purchase agreements with public-sector counterparties; changes in tariff regulation, renewable energy policy, or concession frameworks could affect returns",
+   "Receivables and counterparty risk: significant portion of receivables relates to municipal bodies and power distribution companies, whose payment cycles can be affected by procedural approvals and reconciliations",
+   "Project execution and development risk: new WtE and water projects carry construction, commissioning, land acquisition, and statutory clearance risks, as well as delays in tariff approvals",
+   "Financing and interest-rate risk: capital-intensive project pipeline entails exposure to financing availability and interest-rate movements",
+   "Commodity and input-cost risk: steel and other input prices affect water-EPC (pipe) businesses",
+   "Feedstock and waste-supply risk: WtE plant economics depend on assured municipal waste supply of adequate calorific value; incomplete source segregation can affect feedstock quality",
+   "Regulatory, environmental and litigation risk: emissions norms, environmental compliance and contingent liabilities/litigation are inherent to the sector",
+   "Material uncertainty relating to Going concern related to Subsidiary Company JITF Water Infra (Naya Raipur) Limited due to non-extension of Concession agreement for Operation and Maintenance beyond 4th January, 2018 by the local authority.",
+   "Going concern matter in respect of JITF Urban Waste Management (Bathinda) Limited based on their assessment of receiving the Arbitration Award and additional support from promoters.",
+   "Inherent limitations of Internal Financial Controls including possibility of collusion or improper management override",
+   "Projections of Internal Financial Controls to future periods subject to risk of inadequacy due to changes in conditions",
+   "Virtual uncertainty supported by convincing evidence as to sufficient future taxable profit for deferred tax asset creation in some entities",
+   "Market risk (currency rate risk, interest rate risk, equity risk, commodity risk)",
+   "Credit risk",
+   "Liquidity risk",
+   "Competition from local and foreign competitors",
+   "Foreign exchange risk (US Dollar and Tanzania Shilling)",
+   "Interest rate risk on floating rate borrowings",
+   "Commodity price risk on key raw materials",
+   "Counterparty default risk on trade receivables and financial instruments",
+   "Inability to meet cash and collateral obligations",
+   "Loan covenant breaches making loans callable",
+   "Material uncertainty exists that may cast significant doubt on NRDA's ability to continue as a going concern",
+   "Future ultimate outflow of resources embodying economic benefits in respect of contingent liabilities are uncertain",
+   "Pending litigations outcome cannot be predicted with accuracy",
+   "Material uncertainty relating to going concern for JITF Water Infra (Naya Raipur) Limited due to concession agreement not extended after 4th January 2018",
+   "Arbitration proceedings and legal challenges for JITF Urban Waste Management (Jalandhar) Limited, (Ferozepur) Limited, and (Bathinda) Limited",
+   "Bank guarantee invocation and debarment by BUIDCO for JITF Urban Infrastructure Limited",
+   "No deferred tax asset created in several subsidiaries due to lack of virtual certainty of future taxable profit"
+  ],
+  "capex_plans": [
+   {
+    "item": "Bawana WtE project",
+    "amount_cr": null,
+    "timeline": "greenfield, groundwork commenced, expected commissioning over following two years"
+   },
+   {
+    "item": "Jodhpur WtE project",
+    "amount_cr": null,
+    "timeline": "10 MW greenfield, construction advanced significantly"
+   },
+   {
+    "item": "Kakinada WtE project",
+    "amount_cr": null,
+    "timeline": "15 MW greenfield, groundwork commenced"
+   },
+   {
+    "item": "Nellore WtE project",
+    "amount_cr": null,
+    "timeline": "12 MW greenfield, groundwork commenced"
+   },
+   {
+    "item": "Okhla expansion",
+    "amount_cr": null,
+    "timeline": "17 MW expansion, groundwork commenced"
+   },
+   {
+    "item": "Tehkhand capacity expansion",
+    "amount_cr": null,
+    "timeline": "brownfield expansion"
+   },
+   {
+    "item": "Purchase of property, plant and equipment and intangible assets",
+    "amount_cr": 244.48,
+    "timeline": "Year ended March 31, 2026"
+   },
+   {
+    "item": "Intangible assets under development",
+    "amount_cr": 194.07,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Property, Plant and Equipment",
+    "amount_cr": 255.87,
+    "timeline": "As at 31st March, 2026"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Guarantees issued by the company's bankers on behalf of the company/Subsidiary Companies",
+    "amount_cr": 1301.69
+   },
+   {
+    "nature": "Bank Guarantees issued by the Subsidiary's bankers on behalf of the Subsidiary",
+    "amount_cr": 11.24
+   },
+   {
+    "nature": "Corporate Guarantee / Undertaking issued to lenders of Subsidiary/ Fellow Subsidiary Companies",
+    "amount_cr": 2229.65
+   },
+   {
+    "nature": "Foreign/Inland Letter of Credit issued by the Company's bankers on behalf of the Company /Subsidiary Companies",
+    "amount_cr": 1.98
+   },
+   {
+    "nature": "Contingent Liability for Indirect Tax Cases",
+    "amount_cr": 35.25
+   },
+   {
+    "nature": "Surety Bond issued by the company's bankers on behalf of the company",
+    "amount_cr": 50.29
+   },
+   {
+    "nature": "Disputed liability with UKPCB",
+    "amount_cr": 1.31
+   },
+   {
+    "nature": "Demand of Electricity tax raised by New Delhi Municipal Corporation",
+    "amount_cr": 3.8
+   },
+   {
+    "nature": "Contingent Liability for Direct Tax Cases",
+    "amount_cr": 3.26
+   },
+   {
+    "nature": "Bank Guarantee invoked by BUIDCO for JITF Urban Infrastructure Limited",
+    "amount_cr": 1.21
+   },
+   {
+    "nature": "Arbitration award for JITF Urban Waste Management (Jalandhar) Limited - Rs. 20,444.21 lakhs including Bank Guarantee of Rs. 500 lakhs",
+    "amount_cr": 204.44
+   },
+   {
+    "nature": "Arbitration award for JITF Urban Waste Management (Ferozepur) Limited - Rs. 9,229.35 lakhs including Bank Guarantee of Rs. 340 lakhs",
+    "amount_cr": 92.29
+   }
+  ]
+ }
+}

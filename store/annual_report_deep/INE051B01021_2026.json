@@ -1,0 +1,2031 @@
+{
+ "isin": "INE051B01021",
+ "name": "Vakrangee Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30878_VAKRANGEE_2025_2026_A_11890070_31082026160712.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 1109751,
+ "chunks": 25,
+ "chunks_ok": 24,
+ "facts": {
+  "business": {
+   "description": "Vakrangee Limited operates a phygital last-mile access platform through Vakrangee Kendras, White Label ATMs, and the BharatEasy mobile super app, delivering banking, insurance, e-governance, e-commerce, lending, and other essential services to rural, semi-urban, and underserved communities across India.",
+   "products": [
+    {
+     "name": "Vakrangee Kendra services (banking, ATM, insurance, e-governance, e-commerce, assisted digital services)",
+     "share_of_revenue_pct": null,
+     "note": "Multi-service phygital platform at neighbourhood access points"
+    },
+    {
+     "name": "White Label ATMs",
+     "share_of_revenue_pct": null,
+     "note": "Integrated within Vakrangee Kendra ecosystem; 6,073 ATMs active"
+    },
+    {
+     "name": "BharatEasy Mobile Super App",
+     "share_of_revenue_pct": null,
+     "note": "Extends Kendra into a connected digital journey"
+    },
+    {
+     "name": "Vortex Engineering banking automation and ATM products",
+     "share_of_revenue_pct": null,
+     "note": "Subsidiary providing Android ATM, Mini ATM, Perfo\u00ae monitoring, AMC capabilities"
+    },
+    {
+     "name": "Higher-margin BFSI services (account opening, loans, insurance, fixed deposits, mutual funds, NPA recovery)",
+     "share_of_revenue_pct": null,
+     "note": "Strategic shift toward non-cash, value-added offerings"
+    },
+    {
+     "name": "BFSI (Banking, Financial Services & Insurance)",
+     "share_of_revenue_pct": 49.0,
+     "note": "Includes account opening, lead generation of loan products, insurance, fixed deposits, NPA recovery, AEPS & DMT, mutual funds, and other financial products."
+    },
+    {
+     "name": "ATM Services",
+     "share_of_revenue_pct": 20.2,
+     "note": "Includes White Label ATM operations (cash withdrawal, balance inquiry, PIN change, mini statement) and ATM manufacturing via Vortex Engineering."
+    },
+    {
+     "name": "E-commerce and Other Services",
+     "share_of_revenue_pct": 11.0,
+     "note": "Includes online shopping, ticket booking, mobile/DTH recharge, PAN card services, utility payments, and assisted e-commerce."
+    },
+    {
+     "name": "Sale of ATM Products and Services",
+     "share_of_revenue_pct": 19.8,
+     "note": "Includes ATM hardware sales, Mini ATMs, Android ATMs, Perfo software, AMC, and banking automation infrastructure via Vortex Engineering."
+    },
+    {
+     "name": "Banking & Financial Services",
+     "share_of_revenue_pct": 49.0,
+     "note": "Includes account opening, cash deposit/withdrawal, loan products, insurance, fixed deposits, NPA recovery, mutual funds, demat/trading account opening, remittances, CIBIL score, PAN card, income tax filing"
+    },
+    {
+     "name": "ATM Operations",
+     "share_of_revenue_pct": null,
+     "note": "White Label ATM network with 6,073 ATMs, UPI & card cash access, ~77% in Tier IV-VI markets"
+    },
+    {
+     "name": "E-Governance Solutions",
+     "share_of_revenue_pct": null,
+     "note": "Government service access facilitation"
+    },
+    {
+     "name": "E-Commerce Offerings",
+     "share_of_revenue_pct": null,
+     "note": "Healthcare (tele/video consultations, home diagnostics, medicine delivery), online shopping, bill payments, travel, mobile recharges, Pan Card, Demat & Trading account opening, private & white label apparel"
+    },
+    {
+     "name": "Vortex Engineering Products & Services",
+     "share_of_revenue_pct": 19.8,
+     "note": "ATM manufacturing (front-load/lobby, through-the-wall, Mini/Desktop/Mobile, Android ATMs), Perfo\u00ae monitoring software, AMC, implementation, field services, banking automation products"
+    },
+    {
+     "name": "BharatEasy",
+     "share_of_revenue_pct": null,
+     "note": "Customer-facing platform for service discovery, assisted information, O2O journeys, and partner integrations"
+    },
+    {
+     "name": "Vortex",
+     "share_of_revenue_pct": null,
+     "note": "Banking automation intelligence for ATM/device monitoring, incident visibility, uptime, and preventive maintenance"
+    },
+    {
+     "name": "Perfo\u00ae",
+     "share_of_revenue_pct": null,
+     "note": "Field execution and franchisee management dashboards, activation, alerts, and performance monitoring"
+    },
+    {
+     "name": "Network Vakrangee Kendra Management System",
+     "share_of_revenue_pct": null,
+     "note": "Monitor distributed franchisee network, track volumes, conversion, settlement, transaction exceptions, and service-level performance"
+    },
+    {
+     "name": "ATM and Banking Automation",
+     "share_of_revenue_pct": null,
+     "note": "ATM infrastructure deployment, franchise development, and banking partnerships"
+    },
+    {
+     "name": "Private Banking & Insurance",
+     "share_of_revenue_pct": null,
+     "note": "Private Banking, Insurance, Payments & Remittances, Mutual Funds, Lending Solutions, and Business Development"
+    },
+    {
+     "name": "PSU & E-Governance",
+     "share_of_revenue_pct": null,
+     "note": "Public sector banking and digital transformation initiatives"
+    },
+    {
+     "name": "E-Commerce",
+     "share_of_revenue_pct": null,
+     "note": "E-commerce business vertical"
+    },
+    {
+     "name": "Banking services",
+     "share_of_revenue_pct": null,
+     "note": "Includes banking correspondent services, White Label ATMs, and assisted banking"
+    },
+    {
+     "name": "Insurance services",
+     "share_of_revenue_pct": null,
+     "note": "Partner-led insurance distribution through Kendra network"
+    },
+    {
+     "name": "Lending services",
+     "share_of_revenue_pct": null,
+     "note": "Assisted lending services through partnerships"
+    },
+    {
+     "name": "BharatEasy digital platform",
+     "share_of_revenue_pct": null,
+     "note": "Digital extension of Kendra network for service discovery and delivery"
+    },
+    {
+     "name": "Vortex Engineering ATM manufacturing",
+     "share_of_revenue_pct": null,
+     "note": "1,679 Vortex ATM shipments in FY2026"
+    },
+    {
+     "name": "E-commerce and essential digital products",
+     "share_of_revenue_pct": null,
+     "note": "Non-cash value-added services at Kendras"
+    },
+    {
+     "name": "Utility payments and assisted services",
+     "share_of_revenue_pct": null,
+     "note": "Cash and non-cash transaction services"
+    },
+    {
+     "name": "Vakrangee Kendra services (banking, insurance, lending, e-commerce, healthcare, assisted digital)",
+     "share_of_revenue_pct": 49.0,
+     "note": "BFSI contributed 49.0% of revenue from operations in FY2026"
+    },
+    {
+     "name": "ATM services and infrastructure",
+     "share_of_revenue_pct": 20.2,
+     "note": "ATM contributed 20.2% of revenue from operations in FY2026"
+    },
+    {
+     "name": "E-commerce and other assisted digital services",
+     "share_of_revenue_pct": 11.0,
+     "note": "E-commerce and other services contributed 11.0% of revenue from operations in FY2026"
+    },
+    {
+     "name": "Sale of ATM products/services (Vortex Engineering)",
+     "share_of_revenue_pct": 19.8,
+     "note": "Sale of ATM products/services contributed 19.8% of revenue from operations in FY2026"
+    },
+    {
+     "name": "Assisted digital and financial services at Kendras",
+     "share_of_revenue_pct": null,
+     "note": "Includes banking, ATMs, insurance, lending, account opening, fixed deposits, mutual funds, e-commerce, utility payments, healthcare, travel, logistics, agri products and other assisted digital services"
+    },
+    {
+     "name": "ATM manufacturing and banking automation (Vortex Engineering)",
+     "share_of_revenue_pct": null,
+     "note": "Includes ATM manufacturing, Mini ATMs, Android ATMs, Digital Banking Unit applications, Cash Dispensers, AMC and field service, Perfo\u00ae software monitoring"
+    },
+    {
+     "name": "Fixed deposits and mutual funds",
+     "share_of_revenue_pct": null,
+     "note": "Higher-value BFSI services including deposits and mutual funds"
+    },
+    {
+     "name": "Digital and assisted commerce services",
+     "share_of_revenue_pct": null,
+     "note": "Payments, recharges, travel, healthcare, assisted commerce, agriculture, education, courier fulfilment"
+    },
+    {
+     "name": "BFSI services (assisted banking, insurance, lending enablement)",
+     "share_of_revenue_pct": 49.0,
+     "note": "Largest revenue pool"
+    },
+    {
+     "name": "Sale of ATM products & services (Vortex Engineering)",
+     "share_of_revenue_pct": 19.8,
+     "note": ""
+    },
+    {
+     "name": "E-commerce & other services",
+     "share_of_revenue_pct": 11.0,
+     "note": ""
+    },
+    {
+     "name": "Assisted Banking & Financial Inclusion (BFSI)",
+     "share_of_revenue_pct": 49.0,
+     "note": "Largest revenue pool; includes cash-in/cash-out, account services, deposits, remittances, social-security schemes, insurance, pension"
+    },
+    {
+     "name": "Insurance & Pensions",
+     "share_of_revenue_pct": null,
+     "note": "Life, health, general insurance distribution via partners (Universal Sompo, Shriram General, SBI General, Bajaj General, Ageas Federal, IndiaFirst, Aditya Birla Health)"
+    },
+    {
+     "name": "Lending & Credit Enablement",
+     "share_of_revenue_pct": null,
+     "note": "Consent-led lead generation, document facilitation, application status, collections, NPA-recovery support; no balance-sheet risk"
+    },
+    {
+     "name": "E-governance & Assisted Citizen Services",
+     "share_of_revenue_pct": null,
+     "note": "Forms, identity, digital processes navigation; authority retains policy/eligibility/service ownership"
+    },
+    {
+     "name": "E-commerce & Assisted Digital Services (BharatEasy)",
+     "share_of_revenue_pct": null,
+     "note": "O2O journeys: search, selection, digital payment, delivery coordination, returns, complaints; merchants retain inventory/fulfilment"
+    },
+    {
+     "name": "Healthcare & Teleconsultation",
+     "share_of_revenue_pct": null,
+     "note": "Appointment scheduling, document upload, navigation; clinical responsibility with qualified healthcare partners"
+    },
+    {
+     "name": "Utility Payments, Travel, Education, Agriculture, Courier",
+     "share_of_revenue_pct": null,
+     "note": "Frequent-use journeys; partner-led content/products; Vakrangee aggregates, assists, supports"
+    },
+    {
+     "name": "Vortex Engineering: ATM Manufacturing & Technology Services",
+     "share_of_revenue_pct": null,
+     "note": "Shipped 1,679 ATMs in FY2026; total income Rs. 6,728.8 lakh; EBITDA Rs. 127.1 lakh; products: conventional, Android, Mini ATMs, DBU products, Perfo monitoring"
+    },
+    {
+     "name": "Banking and ATM access",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Financial and investment services (including online Demat & trading accounts)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "E-commerce and online shopping",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "E-Governance Services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Total healthcare solutions (tele/video consultations, home diagnostic services, medicine delivery)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "PAN card services & other services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Insurance products (life, health, general)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Lending products (MSME loans, Loan Against Property, home loans, vehicle finance)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "BharatEasy Super App (digital platform)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "ATM manufacturing and deployment (Vortex Engineering)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Apparel and consumer retail products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Business Correspondent (BC) Services",
+     "share_of_revenue_pct": null,
+     "note": "Includes Account Opening, Deposits, Withdrawals, Remittances, Business Facilitator Services for mobilization of deposits and loans"
+    },
+    {
+     "name": "O2O (Online to Offline) Digital Platform",
+     "share_of_revenue_pct": null,
+     "note": "Provided through subsidiary Vakrangee Digital Ventures Limited"
+    },
+    {
+     "name": "ATM Hardware and Remote Monitoring (PERFO)",
+     "share_of_revenue_pct": null,
+     "note": "Through subsidiary Vortex Engineering Private Limited"
+    },
+    {
+     "name": "Online Shopping, Total Healthcare Services, Bill Payments, Fixed Deposits & NPA Recovery",
+     "share_of_revenue_pct": null,
+     "note": "Wide portfolio of products & services at Vakrangee Kendras"
+    },
+    {
+     "name": "Digital Services (Banking, Insurance, E-governance, E-commerce)",
+     "share_of_revenue_pct": null,
+     "note": "Delivered through franchisee network; focus on expanding service portfolio and technology-driven initiatives"
+    },
+    {
+     "name": "Vakrangee Kendra Services",
+     "share_of_revenue_pct": 99.38,
+     "note": "Includes BFSI, ATM Services, E-commerce (assisted online shopping, healthcare, travel, telecom), e-Governance services (PAN Card, bill payments), Logistics and apparel products."
+    },
+    {
+     "name": "Healthcare services",
+     "share_of_revenue_pct": null,
+     "note": "Delivered through Kendra outlets"
+    },
+    {
+     "name": "Online shopping services",
+     "share_of_revenue_pct": null,
+     "note": "Delivered through Kendra outlets"
+    },
+    {
+     "name": "Financial Services",
+     "share_of_revenue_pct": null,
+     "note": "Provided at Vakrangee Kendra outlets"
+    },
+    {
+     "name": "Total Healthcare - Telemedicine",
+     "share_of_revenue_pct": null,
+     "note": "Including unlimited tele & video consultation with expert doctors & home blood test facility"
+    },
+    {
+     "name": "Assisted E-Commerce",
+     "share_of_revenue_pct": null,
+     "note": "Online shopping & apparel products"
+    },
+    {
+     "name": "Travel Ticket Booking & Utility Bill Payment",
+     "share_of_revenue_pct": null,
+     "note": "Provided at Vakrangee Kendra outlets"
+    },
+    {
+     "name": "Business Correspondent services",
+     "share_of_revenue_pct": null,
+     "note": "Member of Business Correspondent Federation of India (BFCI)"
+    },
+    {
+     "name": "BFSI and ATM Services (ATM, Insurance Services and Banking & financial services)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Assisted E-Commerce Service (Online shopping, Pharmacy, Bill payment and recharge, logistics) including bullion and jewellery",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Nextgen Vakrangee Kendra services",
+     "share_of_revenue_pct": null,
+     "note": "Includes banking, insurance, e-governance, logistics, and other digital services"
+    },
+    {
+     "name": "Sale of Services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from Sale of Services: Rs 1,177.68 lakhs (2026), Rs 860.04 lakhs (2025)"
+    },
+    {
+     "name": "Scrap Sales",
+     "share_of_revenue_pct": null,
+     "note": "Other Operating Revenue: Rs 2.25 lakhs (2026), Rs 1.93 lakhs (2025)"
+    },
+    {
+     "name": "Automated Teller Machine (ATM)",
+     "share_of_revenue_pct": null,
+     "note": "Capitalised additions to PPE mainly related to ATM purchased newly from OEM"
+    },
+    {
+     "name": "e-commerce solutions including bullion and jewellery",
+     "share_of_revenue_pct": null,
+     "note": "through Vakrangee Kendra on B2B and B2C basis"
+    },
+    {
+     "name": "data digitization",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "software and license",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "BFSI and ATM Services",
+     "share_of_revenue_pct": null,
+     "note": "Includes ATM, Insurance Services and Banking & financial services"
+    },
+    {
+     "name": "Assisted E-Commerce Service",
+     "share_of_revenue_pct": null,
+     "note": "Includes Online shopping, Pharmacy, Bill payment and recharge, logistics, bullion and Jewellery"
+    },
+    {
+     "name": "Data digitization, software and license",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "Citizens in rural, semi-urban and underserved communities (Bharat)",
+    "Banking and financial institution partners",
+    "Insurance partners",
+    "Government e-governance service users",
+    "E-commerce customers",
+    "Franchisees and Master Franchisees (local entrepreneurs)",
+    "Unserved and underserved rural, semi-urban, and urban customers across Bharat",
+    "Banks, insurers, NBFCs, payment networks, merchants, healthcare providers, logistics companies, education providers, government-linked service ecosystems",
+    "Underserved and semi-urban communities (Bharat)",
+    "Banks, insurers, lenders, financial institutions",
+    "Franchisees / Kendra entrepreneurs",
+    "Master franchisees",
+    "Government service seekers",
+    "ATM operators and WLA players",
+    "Retail customers at Vakrangee Kendras",
+    "Banks (private and PSU)",
+    "Insurers",
+    "Lenders",
+    "Merchants",
+    "Government agencies (e-governance)",
+    "Franchisees and Master Franchisees",
+    "Rural and semi-urban customers in Tier IV, V, VI markets",
+    "Unbanked and underbanked populations",
+    "Local entrepreneurs and franchisees",
+    "Rural and semi-urban customers in Bharat markets",
+    "Banks, insurers, lenders, service providers",
+    "White-label and brown-label ATM operators",
+    "Communities in Tier IV, V and VI locations",
+    "Local entrepreneurs (franchisees)",
+    "Banks and financial institutions",
+    "Insurance companies",
+    "NBFCs",
+    "Government for social security schemes",
+    "E-commerce and service partners",
+    "Customers and citizens in rural, semi-urban and underserved communities",
+    "Insurers and lenders",
+    "Digital and service partners",
+    "Retail customers in Tier IV, V, VI markets",
+    "Banks, insurers, lenders, billers, merchants, healthcare, travel, logistics partners",
+    "Government departments for citizen services",
+    "Unbanked/underbanked citizens in Tier IV-VI districts",
+    "Banks & financial institutions (BC model)",
+    "Regulated lenders",
+    "Merchants & platform partners (e-commerce)",
+    "Healthcare providers",
+    "Small businesses (lending enablement)",
+    "Rural and semi-urban citizens",
+    "Banks, insurers, lenders and service providers",
+    "Local franchisees and Master Franchisees",
+    "Government and regulators",
+    "Various PSU Banks and their Rural Regional banks",
+    "Consumers in Rural, Semi-Urban and Urban areas",
+    "Government of Philippines (for Land Titling project)",
+    "Banks",
+    "Government agencies",
+    "E-commerce platforms",
+    "End consumers at last mile",
+    "B2C segment",
+    "Unserved and underserved individuals in rural and urban areas",
+    "Socio-economic groups at the bottom of the pyramid",
+    "Rural citizens",
+    "Underserved markets",
+    "Citizens in rural India",
+    "Franchisees",
+    "Employees",
+    "Business Partners",
+    "Industry bodies",
+    "Shareholders and investors",
+    "Suppliers and vendors",
+    "Community",
+    "NGO, NPO and civil societies",
+    "Government and regulatory bodies",
+    "End customers at outlets",
+    "Unbanked and underbanked population in rural and semi-urban areas",
+    "Government departments",
+    "Retail customers",
+    "large number of customers spread across diverse industries and geographical areas"
+   ],
+   "geographies": [
+    {
+     "name": "India (32 States and Union Territories, 609 districts, 5,873 postal codes)",
+     "share_pct": null
+    },
+    {
+     "name": "India (PAN India)",
+     "share_pct": null
+    },
+    {
+     "name": "Tier IV, V, VI markets",
+     "share_pct": 84
+    },
+    {
+     "name": "Tribal, LWE and Aspirational districts",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Rural and semi-urban markets",
+     "share_pct": null
+    },
+    {
+     "name": "India - 32 States and Union Territories",
+     "share_pct": null
+    },
+    {
+     "name": "535 Master Franchisee districts",
+     "share_pct": null
+    },
+    {
+     "name": "~84% Tier IV-VI Kendra presence",
+     "share_pct": 84
+    },
+    {
+     "name": "India (32 States/UTs, 609 districts, 5,873 postal codes)",
+     "share_pct": 84.0,
+     "note": "~84% presence in Tier IV, V, VI markets"
+    },
+    {
+     "name": "Tier IV, V and VI markets",
+     "share_pct": 84
+    },
+    {
+     "name": "Tribal districts",
+     "share_pct": null
+    },
+    {
+     "name": "Left Wing Extremism (LWE) districts",
+     "share_pct": null
+    },
+    {
+     "name": "Aspirational districts",
+     "share_pct": null
+    },
+    {
+     "name": "India (32 States and Union Territories, 609 districts, 5,873 postal codes)",
+     "share_pct": 100
+    },
+    {
+     "name": "India (national footprint, focus on Tier IV-VI districts, LWE/tribal/aspirational districts)",
+     "share_pct": null
+    },
+    {
+     "name": "International (Vortex Engineering exports to MEA, Europe & Americas, APAC regions)",
+     "share_pct": null
+    },
+    {
+     "name": "Philippines",
+     "share_pct": null
+    },
+    {
+     "name": "India (32 States and Union Territories)",
+     "share_pct": 100
+    },
+    {
+     "name": "India (rural)",
+     "share_pct": null
+    },
+    {
+     "name": "Rural India",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Not specified in this part",
+     "capacity": "Not specified in this part"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "Vortex Engineering shipped 1,679 ATM machines in FY2026"
+    },
+    {
+     "location": "Vortex Engineering manufacturing infrastructure",
+     "capacity": "1,679 ATM shipments in FY2026"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "Vortex shipped 1,679 ATM machines in FY2026"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "ATM manufacturing capability through Vortex Engineering"
+    },
+    {
+     "location": "Not specified in text",
+     "capacity": "Vortex Engineering manufacturing capability for ATMs (conventional, Android, Mini, DBU-related products)"
+    },
+    {
+     "location": "Chennai",
+     "capacity": "Annual production capacity of over 12,000 ATMs"
+    },
+    {
+     "location": "Maran Nagar, Chennai (Vortex Engineering Private Limited - material subsidiary)",
+     "capacity": ""
+    },
+    {
+     "location": "Centralized Corporate Head Office in Mumbai",
+     "capacity": "100% business operations managed"
+    },
+    {
+     "location": "Plot No.93, Road No.16, MIDC, Marol, Andheri (East), Mumbai 400 093",
+     "capacity": "Land and building under finance lease for 51 years out of 95-year lease term"
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Financial inclusion / last-mile banking",
+    "Insurance distribution",
+    "E-governance services",
+    "Digital payments and assisted digital services",
+    "Banking automation and ATM infrastructure",
+    "Financial inclusion",
+    "Digital inclusion",
+    "Social inclusion",
+    "Last-mile banking and financial services",
+    "E-commerce and logistics",
+    "E-governance",
+    "Healthcare access",
+    "ATM infrastructure and banking automation",
+    "Lending / credit facilitation",
+    "Digital payments & assisted transactions",
+    "E-commerce & logistics",
+    "Government services delivery",
+    "ATM infrastructure & banking automation",
+    "Banking services",
+    "Insurance",
+    "E-commerce",
+    "ATM infrastructure",
+    "Financial inclusion in rural and semi-urban India",
+    "Banking correspondent services",
+    "Lending facilitation",
+    "ATM deployment and management",
+    "Digital payments and assisted services",
+    "Banking access",
+    "Assisted digital services",
+    "Clean energy adjacency (solar inverter, lithium-ion battery)",
+    "Digital services",
+    "Banking automation",
+    "Last-mile service delivery",
+    "Government social-security schemes",
+    "Lending",
+    "Investments",
+    "Digital payments",
+    "Insurance and pensions",
+    "E-governance and citizen services",
+    "E-commerce, healthcare, travel, utilities, education, agriculture",
+    "Financial inclusion / banking access",
+    "Credit/lending enablement",
+    "Government citizen services",
+    "Digital commerce (O2O)",
+    "Utility & bill payments",
+    "ATM infrastructure & technology",
+    "Rural and semi-urban India (Tier IV-VI markets)",
+    "Banking and financial services",
+    "Healthcare",
+    "ATM manufacturing and managed services",
+    "Digital Transactions",
+    "ATM Manufacturing and Monitoring",
+    "Digital governance",
+    "Rural banking",
+    "E-commerce enablement",
+    "BFSI",
+    "ATM services",
+    "Travel and utility payments",
+    "Government services",
+    "Logistics",
+    "Insurance penetration",
+    "Last-mile delivery",
+    "IT/ITES"
+   ],
+   "brands_or_certifications": [
+    "Vakrangee Kendra",
+    "BharatEasy",
+    "Vortex Engineering",
+    "Perfo\u00ae",
+    "ISO 9001:2015",
+    "ISO/IEC 20000-1:2018",
+    "ISO/IEC 27001:2022",
+    "ISO/IEC 27701",
+    "ISO 22301",
+    "ISO 50001",
+    "ISO 37001:2016",
+    "Sustainalytics ESG Global 50 Top Rated",
+    "S&P Global Sustainability Yearbook 2022 (Bronze Class)",
+    "BharatEasy Mobile Super App",
+    "RBI license for White Label ATMs",
+    "BC (Business Correspondent) Banking mandate",
+    "BharatEasy Super App",
+    "Sab Kaam Ek Dukaan",
+    "Ab Poori Duniya Pados mein",
+    "Make-in-India",
+    "Vortex",
+    "Perfo\u00ae monitoring system",
+    "Master Franchisee model",
+    "Mini ATM",
+    "Android ATM",
+    "Digital Banking Unit (DBU)",
+    "VKMS",
+    "Trackolap",
+    "ISO/IEC 27001",
+    "ISO 27701",
+    "ISO/IEC 20000-1",
+    "ISO 14001:2015",
+    "ISO 20400:2017",
+    "Vakrangee Kendras",
+    "Perfo monitoring software",
+    "VKMS (Vakrangee Kendra Management System)",
+    "Perfo (monitoring/analytics/incident management)",
+    "Vortex Engineering (ATM brand)",
+    "BC (Business Correspondent) model",
+    "WLAs (White Label ATMs)",
+    "PERFO (ATM monitoring platform)",
+    "ISO certifications (implied by 'global recognition' and 'certifications')",
+    "PERFO (proprietary remote ATM monitoring platform)",
+    "Vakrangee Kendra network",
+    "Green Consumer Certification from Tata Power",
+    "Integrated Reporting (voluntary adoption)",
+    "ESG Performance Targets",
+    "ISO 27001:2022",
+    "ISO 27701:2019",
+    "ISO 22301:2019",
+    "ISO 45001:2018",
+    "Green India Certificate for e-waste recycling",
+    "ISO 45001:2018 Occupational Health and Safety Management System",
+    "Green Power at Corporate Headquarters (Maharashtra Electricity Regulatory Commission approved Green tariff)",
+    "EPEAT certification for suppliers",
+    "Confederation of ATM Industry (CATMi) member",
+    "Business Correspondent Federation of India (BFCI) member",
+    "NPCI member",
+    "CSC e-Governance Services India Limited member",
+    "Nextgen Vakrangee Kendra"
+   ],
+   "raw_materials": [
+    "ATM components for Vortex manufacturing",
+    "Technology infrastructure and APIs",
+    "Cash logistics for ATM operations",
+    "ATM hardware components (for Vortex manufacturing)",
+    "Cash (for ATM operations)",
+    "Paper (minimized via paper-light initiatives)"
+   ],
+   "competitors_named": [
+    "Confederation of ATM Industry (CATMi)"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Focus shifting from reach to productivity, from transaction volume to service depth, and from network scale alone to stronger platform economics; emphasis on higher-margin BFSI and non-cash services (insurance, lending, account opening, deposits, mutual funds, NPA recovery), technology-enabled delivery (BharatEasy, Vortex Engineering, Perfo\u00ae), financial discipline, cash flow generation, debt-free balance sheet, selective capital allocation, responsible and profitable growth.",
+    "period": "FY2027 and beyond"
+   },
+   {
+    "statement": "Vortex Engineering plans to launch multiple new products to reimagine customer interaction with ATMs and bank branches, combining customer-centric design, flexible banking-automation architecture, intelligent monitoring, and service-rich interfaces.",
+    "period": "Coming year (FY2027)"
+   },
+   {
+    "statement": "Priorities are to improve yield per Kendra, expand higher-margin BFSI and non-cash services, strengthen partner integrations, scale BharatEasy as a phygital extension, leverage Vortex for banking automation and technology-led opportunities, maintain disciplined cash flow, capital allocation and governance, and evaluate selective strategic adjacencies subject to appropriate approvals and disclosure readiness.",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Focus on margin expansion, cash flow generation, working capital discipline, better revenue quality, high-margin BFSI services, recurring technology income, and responsible capital allocation.",
+    "period": "Longer-term"
+   },
+   {
+    "statement": "Strengthen high-margin BFSI, insurance and lending services",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Increase yield per Kendra through better product depth, customer conversion and franchisee training",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Improve revenue quality by balancing transaction-led, commission-led, product-led and recurring revenue streams",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Scale BharatEasy as a digital extension of the trusted physical network",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Leverage Vortex Engineering to expand banking automation, AMC, software and ATM infrastructure opportunities",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Maintain cash flow discipline, capital-light expansion and debt-free financial strength",
+    "period": "Next Phase"
+   },
+   {
+    "statement": "Technology agenda extended beyond individual applications into one architecture with shared controls and shared visibility connecting BharatEasy, Data and analytics, partner integrations, operating systems, Vortex and Perfo\u00ae.",
+    "period": "FY2025-26"
+   },
+   {
+    "statement": "Governed AI agenda in three tiers: Operational (dashboards, automated alerts, ticket routing, service monitoring, rule-based process support), In development (customer assistance, field productivity, anomaly detection, service recommendations, predictive maintenance), Exploratory (personalised service discovery, conversational interfaces, advanced decision support, broader generative-AI applications).",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Platform should scale only as fast as its reliability and governance can support.",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Transition from reach-led scale towards higher-margin services, digital integration, technology-led infrastructure and responsible growth with focus on profitable scale and disciplined platform economics",
+    "period": "FY2026 and beyond"
+   },
+   {
+    "statement": "Expanding partner-led model across insurance, lending, banking services, ATM and Vortex-enabled banking automation",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Growing technology and data infrastructure with modular architecture, product roadmaps, upgrades, R&D, and selective AI investment",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Expanding Vortex products and AMC with stage-gated product development, demand visibility, service readiness and cash discipline",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Focus on improving yield per Kendra, higher-margin services (account opening, insurance, lending, mutual funds, NPA recovery), recurring Vortex income (AMC, software, Perfo\u00ae), BharatEasy O2O integration, and stage-gated clean-energy adjacency (solar inverter, lithium-ion battery) with strict certification, pilot, channel, service and lifecycle conditions.",
+    "period": "FY2027 and beyond"
+   },
+   {
+    "statement": "Capital allocation prioritised towards technology/platform systems, Vortex Engineering (AMC, software, infrastructure), BharatEasy O2O layer, franchisee/field enablement, partner integration, balance sheet conservation, and approved adjacencies meeting return/risk/governance thresholds.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Deepen Kendra-level service productivity through higher-margin BFSI and non-cash services",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Improve yield per outlet through better product depth, customer conversion and field training",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Selectively expand ATM-enabled infrastructure where access gaps and returns justify deployment",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Scale Vortex through ATM manufacturing, AMC, Perfo\u00ae and banking automation opportunities",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Strengthen BharatEasy as the digital extension of the physical Kendra network",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Reinforce technical support, service uptime, field enablement and partner integration across the platform",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Deepen higher-value BFSI and non-cash services while preserving customer suitability and responsible conduct",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Improve service activation and repeat usage across existing Kendra network rather than relying only on outlet growth",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Strengthen district-level franchisee support, training, monitoring and issue resolution",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Use BharatEasy as digital extension of physical trust network and simplify O2O customer journeys",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Expand partner integrations and ensure consistent service-level governance",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Maintain strong privacy, cyber security, grievance and ethical-conduct outcomes",
+    "period": "Next phase"
+   },
+   {
+    "statement": "Continue serving Tier IV-VI and priority geographies through commercially sustainable access points",
+    "period": "Next phase"
+   },
+   {
+    "statement": "The next phase is not about reach alone; it is about improving the value created through that reach for customers, franchisees, partners, communities and shareholders. The Company's strategic response is to combine Kendra-led access with digital journeys, regulated partner products, Vortex-led infrastructure and stronger operating assurance to progressively improve yield and recurring income.",
+    "period": "FY2027 onwards"
+   },
+   {
+    "statement": "The industry is moving towards integrated service ecosystems rather than single-product channels. Institutions need lower-cost distribution, customers need trust and assistance, and operators need stronger visibility over fulfilment and service quality.",
+    "period": "Medium term"
+   },
+   {
+    "statement": "Prioritise profitable service activation and yield per Kendra over network expansion; increase recurring software, AMC and service income within ATM technology portfolio; launch new Vortex products for service-rich, digitally integrated ATM/branch interface; use data/analytics to improve partner performance, customer relevance, fraud monitoring and issue resolution; maintain debt-free discipline while investing selectively in technology, product capability and working capital; strengthen Master Franchisee and field-team accountability through transparent dashboards and service standards; deepen customer protection, privacy, cyber resilience and responsible sales.",
+    "period": "FY2027 (near- to medium-term)"
+   },
+   {
+    "statement": "The Board remains optimistic about the Company's growth prospects, supported by continued expansion of its service portfolio, entry into new business verticals including apparel retail, scaling up of high-margin financial services, and the integration and growth of Vortex Engineering's ATM manufacturing and banking technology business.",
+    "period": "FY2027 and beyond"
+   },
+   {
+    "statement": "Ambitious goal for the end of this fiscal year is to achieve complete 100% district coverage through master franchise network.",
+    "period": "FY2027"
+   },
+   {
+    "statement": "Vortex is well-positioned to capitalize on the growing demand for secure, energy-efficient, and next-generation ATM solutions.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Vortex is well-positioned to accelerate its growth trajectory by expanding its market share, strengthening its product portfolio, and capitalizing on the increasing demand for next-generation self-service banking and digital transaction solutions across India.",
+    "period": "Not specified"
+   },
+   {
+    "statement": "The Company actively monitors advancements in technology and regularly evaluates opportunities for adoption and integration. Continuous efforts are made to upgrade systems and processes in line with emerging technological trends.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Focus on quality enhancement and service excellence by embracing relevant technological improvements to drive operational efficiency and customer satisfaction.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Prioritising compliance with regulations to avoid legal pitfalls, fines, and reputational harm, while gaining competitive edge in heavily regulated industry through proactive measures demonstrating commitment to integrity and responsible operations.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Digital transformation offers gateway to unlocking new customer segments, optimising operations, and driving innovation through cutting-edge technologies; harnessing data analytics and digital platforms to maintain agility, make informed decisions, and establish competitive edge.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Achieving peak franchisee performance is a strategic opportunity resulting in heightened revenue generation, improved customer satisfaction, and broader market penetration; prioritising comprehensive training, robust support, and sustained motivation for franchisees to harness collective performance across network of over 22,900 Kendras.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Embracing sustainable practices and eco-friendly products to align with evolving customer and stakeholder expectations, positioning as industry leaders; integrating energy efficiencies, increasing renewable energy use (currently 13% from solar), expanding through power purchase agreements, adopting cleaner technologies, green IT practices, and sustainable procurement via Green Procurement Policy prioritizing EPEAT-certified products.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Intersection of financial, digital, and social inclusion offers significant opportunity to reach underserved markets, expand customer base, and stimulate revenue growth by delivering accessible financial services, leveraging digital technologies, and supporting social programs, aligning with governmental priorities.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Committed to using the most environmentally friendly practices to combat climate change, minimising environmental impact, and ensuring goods and services are offered in the most environmentally responsible way possible. Working towards lowering carbon footprint and improving health safety at corporate headquarters and all Next-Gen Vakrangee Kendras.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Business strategy mapped with sustainability initiatives along with United Nation's Sustainable Development Goals. Re-affirmed commitment towards sustainability by opting for 'Green Power' at Corporate Headquarters.",
+    "period": "Ongoing"
+   }
+  ],
+  "risks": [
+   "Long-term profitability challenges for standalone cash-led models",
+   "Digital payments growth reducing cash transaction volumes",
+   "Regulatory compliance, data privacy, cyber security, partner governance, customer protection, ethical conduct as service mix expands and platform becomes more digitally integrated",
+   "Partner decisions and market conditions affecting forward-looking statements",
+   "Transition from volume-led to yield-led economics requires deliberate shift in revenue streams",
+   "Higher-value financial services require customer suitability, process discipline, KYC compliance, and grievance support",
+   "Dependence on partner ecosystems for regulated product capabilities",
+   "Need for continuous field enablement, training, compliance, and product knowledge as services become more sophisticated",
+   "Standalone cash-led models face profitability and viability challenges as digital payments expand",
+   "Customer protection importance increases with transition to higher-value services",
+   "Product eligibility, charges, documentation, customer obligations and grievance routes must be communicated clearly",
+   "Profitability challenges for standalone models dependent on cash transactions (White Label ATMs only, Banking AEPS only, Money Transfer only)",
+   "Cyber-security and privacy risks",
+   "Business continuity risks",
+   "Fraud and ethics risks",
+   "Network governance consistency risks",
+   "Third-party integration risks",
+   "AI governance risks (privacy, accuracy, bias, security, human oversight)",
+   "Regulatory, policy and legal dependency changes affecting banking correspondents, payments, insurance or lending distribution, White Label ATMs, data, outsourcing, corporate reporting and certification",
+   "Partner concentration and third-party dependency on pricing, product availability, strategy, technology integration, fulfilment or settlement performance",
+   "Cyber security, privacy, fraud and data integrity risks from distributed endpoints, APIs, customer information and financial transactions",
+   "Cash-to-digital shift and ATM economics reducing cash-led transaction density",
+   "Franchisee conduct, service quality and responsible sales creating mis-selling, customer complaints or reputational harm",
+   "Service reliability, continuity and physical security risks from technology outages, partner interruption, field-service delays, extreme weather, cash theft, vandalism or skimming",
+   "Vortex product, supply-chain, warranty and lifecycle risk from component shortages, certification delays, cost inflation, quality defects, delivery slippage, warranty claims or weak after-sales capability",
+   "Technology obsolescence, AI and data-governance risk from rapid change reducing relevance of devices, platforms or customer journeys",
+   "Working capital, cash conversion and financial-control risk from growth in product, implementation and service activity increasing inventory and receivables",
+   "People and specialist-capability risk from expansion across BFSI, technology, field service, sales and compliance straining specialist capacity",
+   "ESG, climate and responsible-procurement risk from extreme weather, energy and water use, e-waste, supplier conduct and changing stakeholder expectations",
+   "API and cyber-supply-chain complexity transmitting failures or vulnerabilities across partners, vendors and customer journeys",
+   "Clean-energy product safety and lifecycle management for solar inverter and lithium-ion battery solutions",
+   "Export, currency and geopolitical exposure from potential Vortex export and new-market activity",
+   "Partner concentration and performance",
+   "Customer protection and responsible sales",
+   "Cyber and data exposure",
+   "Vortex quality and cash conversion (product quality, warranty, inventory, receivable, contract profitability)",
+   "Franchisee and service assurance",
+   "Resilience as platform advantage",
+   "Clean-energy stage gates (safety, certification, pilot, channel, service, lifecycle)",
+   "Cash-to-digital shifts",
+   "ATM and service economics",
+   "New adjacencies",
+   "Customer trust and data privacy",
+   "Cyber security",
+   "Regulatory compliance",
+   "Service reliability",
+   "Franchisee earnings sustainability",
+   "Partner governance",
+   "Employee capability",
+   "Responsible growth",
+   "Water consumption increase at corporate office",
+   "Waste generation not yet reducing",
+   "Environmental and climate-related operating risks",
+   "Energy transition and price volatility or supply disruption",
+   "Water availability and rising consumption",
+   "Waste and e-waste compliance, cost and reputational exposure",
+   "Technology footprint: rising electricity demand from digital infrastructure",
+   "Supplier environmental performance: indirect operational and reputational exposure",
+   "Reporting quality: loss of stakeholder trust from boundary inconsistent methodologies",
+   "Higher energy and component costs affecting ATM manufacturing, logistics and field service",
+   "Trade fragmentation and supply-chain disruption influencing electronic components, certification schedules and delivery timelines",
+   "Financial volatility affecting banks, NBFCs, insurers and technology partners",
+   "Regulatory and policy changes affecting BCs, payments, insurance, WLAs, data, outsourcing",
+   "Cybersecurity, privacy and fraud (attack, data loss, identity fraud, system disruption)",
+   "Partner concentration and dependency (strategy, pricing, integration, product availability, fulfilment)",
+   "Franchisee conduct and service quality (compliance, mis-selling, customer experience, brand risk)",
+   "Customer protection and responsible sales (unsuitable products, inadequate explanation)",
+   "Technology obsolescence (devices, platforms, customer journeys)",
+   "ATM product and supply chain (component shortages, certification delays, quality defects, warranty claims, cost inflation)",
+   "Working capital and cash conversion (inventory/receivable growth absorbing cash)",
+   "Business continuity (outages, extreme weather, third-party disruption)",
+   "People and capability (specialist capacity strain across technology, sales, field service, compliance)",
+   "Financial reporting and fraud (misstatement, unauthorized activity, control override)",
+   "ESG and climate (energy, water, waste, extreme weather, stakeholder expectations)",
+   "Export, currency and geopolitical (currency volatility, certification, sanctions, logistics, local-service challenges)",
+   "Legal and compliance (contracts, labour, tax, corporate/sectoral laws)",
+   "Economic conditions, demand and supply factors",
+   "Changes in government policy and regulation",
+   "Partner decisions",
+   "Competitive intensity",
+   "Technology change",
+   "Cybersecurity events",
+   "Supply-chain disruption",
+   "Product quality",
+   "Working-capital requirements",
+   "Input costs",
+   "Foreign-exchange movements",
+   "Geopolitical developments",
+   "Execution risks",
+   "Profitability & viability challenges for standalone cash-dependent models (only White Label ATMs, only Banking AEPS, only Money Transfer)",
+   "Rising corporate-office water consumption",
+   "Waste generation (dry and wet waste totalled 16,865 kg)",
+   "Need for stronger metering, renewable sourcing, authorised e-waste handling, supplier assessment and expansion of reporting coverage as Vortex's manufacturing footprint is more fully integrated",
+   "Rapid technological advancements",
+   "Heavy reliance on the franchisee model",
+   "Legal and regulatory risks",
+   "Financial reporting risks",
+   "Risks related to corporate accounting fraud",
+   "Cybersecurity threats and data leakage",
+   "Global and domestic demand and supply fluctuations",
+   "Input costs and availability",
+   "Changes in government regulations and tax laws",
+   "Economic developments within the country",
+   "Litigation and industrial relations",
+   "Financial risks",
+   "Operational risks",
+   "Sectoral risks",
+   "Sustainability risks (particularly ESG related risks)",
+   "Information risks",
+   "Cyber security risks",
+   "Cybersecurity threats: potential for sensitive data breaches, financial losses, reputational damage, erosion of customer trust, disruption of critical systems and networks causing operational downtime and impacting business continuity; non-compliance with data protection regulations can lead to legal consequences",
+   "Human rights violations: risks that could threaten reputation, incur legal consequences, erode customer trust",
+   "Climate change: detrimental effects of human activities on environment",
+   "Compliance risk: legal pitfalls, fines, reputational harm in heavily regulated industry",
+   "No significant risks/concerns arose from assessments of health and safety practices and working conditions of value chain partners",
+   "No significant risks/concerns arising from assessments at human rights due diligence",
+   "No significant risks/concerns arising from assessments of health & safety practices and working conditions",
+   "Cyber security and data privacy risks",
+   "Business continuity and disaster management risks",
+   "Regulatory changes in banking and financial services",
+   "Technology disruption and cybersecurity threats",
+   "Dependence on banking partners for business correspondent model",
+   "Competition from fintech companies and other BCs",
+   "Operational risks in managing large network of kendras",
+   "Currency exchangeability risk (Ind AS 21 amendments)",
+   "Supplier finance arrangement risks (Ind AS 7/107 amendments)",
+   "Pillar Two global minimum tax exposure (Ind AS 12 amendments)",
+   "Loan covenant compliance risk",
+   "Actuarial assumption risk for defined benefit obligations",
+   "Fair value measurement risk for financial instruments",
+   "Share-based payment valuation risk",
+   "Depreciation estimate risk for PPE",
+   "Provision and contingent liability estimation risk",
+   "Credit Risk",
+   "Liquidity Risk",
+   "Market Risk",
+   "Investment risk",
+   "Interest risk",
+   "Longevity risk",
+   "Salary risk",
+   "Credit risk from balances with banks and financial institutions",
+   "Credit risk in relation to financial guarantees given to banks for facilities availed by subsidiary",
+   "Market risk - Foreign exchange risk from overseas sales and purchases in various foreign currencies",
+   "Market risk - Interest rate risk from changes in market interest rates",
+   "Credit risk from customers - managed by analysing credit limits and creditworthiness on continuous basis",
+   "delay/non-transfer in transferring amount of Rs 7.52 lakhs pertaining to the financial year 2017-18, to the Investor Education and Protection Fund",
+   "accounting software audit trail feature not enabled throughout the year for all relevant transactions in one subsidiary",
+   "audit trail not preserved by the Company as per statutory requirements for record retention in one subsidiary"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "Banking automation and ATM technology (Android ATM, Mini ATM, Perfo\u00ae monitoring, AMC capabilities); shipped 1,679 ATMs in FY2026"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "ATM manufacturing, banking automation, Mini ATMs, Android ATMs, Perfo software, AMC opportunities, and technology-led infrastructure"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "Banking automation and ATM technology platform: ATM manufacturing (front-load/lobby, through-the-wall, Mini/Desktop/Mobile, Android ATMs), Perfo\u00ae multi-vendor monitoring software, AMC, implementation, field services, product design & R&D"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": null,
+    "business": "Banking automation, ATM/device monitoring, incident visibility, uptime and service intelligence, preventive maintenance"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "ATM manufacturing, banking automation, Mini ATM, Android ATM, Digital Banking Unit, AMC, Perfo\u00ae software, Make-in-India technology backbone"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "ATM manufacturing, banking automation, software solutions, AMC and field service, Perfo\u00ae monitoring software"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "ATM engineering, Android and Mini ATM products, backend units, Perfo monitoring software, analytics, incident management, AMC and field support"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "ATM manufacturing and technology services (conventional ATMs, Android ATMs, Mini ATMs, device backend units, DBU-related products, Perfo monitoring/analytics/incident management/implementation/integration/AMC/field support)"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": null,
+    "business": "Design, manufacturing, deployment, and lifecycle management of Automated Teller Machines (ATMs) and multi-vendor ATM management software solutions; annual production capacity of over 12,000 ATMs; deployed more than 15,000 ATMs across India and international markets; 9 patents in ATM and cash dispenser segment; proprietary PERFO platform for real-time monitoring, predictive maintenance, remote diagnostics, performance analytics, and centralized fleet management."
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": 100,
+    "business": "Material subsidiary; incorporated in September 2011"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": 100,
+    "business": "Provides an online digital platform to enable seamless services for consumers at home; operates O2O (Online to Offline) platform with Physical Kendra network and Digital Online Services"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": 100,
+    "business": "IIT-Madras incubated company based in Chennai; expertise in innovative ATM solutions and proprietary remote ATM monitoring software 'PERFO'; material subsidiary"
+   },
+   {
+    "name": "Vakrangee e-Solutions INC",
+    "holding_pct": 100,
+    "business": "Incorporated in Philippines in financial year 2009-10 for exploring e-Governance opportunities; executed Land Titling Computerization Project for Government of Philippines"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": 100,
+    "business": "Financial services"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Private Limited",
+    "holding_pct": 100,
+    "business": "Digital ventures"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": 74.87,
+    "business": "Engineering/ATM manufacturing"
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc.",
+    "holding_pct": 100,
+    "business": "E-solutions (foreign subsidiary)"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": null,
+    "business": "Material subsidiary as per SEBI (LODR) Regulations 2015; Date of incorporation: 07th September 2011; Place of incorporation: Mumbai; Statutory Auditors: M/s. R. R. Bajaj & Associates; Date of appointment: April 01, 2021"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": null,
+    "business": "Material subsidiary as per SEBI (LODR) Regulations 2015; Has manufacturing plant at Maran Nagar Chennai; Date of incorporation: 12th March, 2001; Place of incorporation: Chennai; Statutory Auditors: M/s. S.R. Batliboi & Associates LLP; Date of appointment: April 01, 2021"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": 100.0,
+    "business": "Wholly Owned Subsidiary; participates in Business Responsibility initiatives of listed entity"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": 100.0,
+    "business": "Wholly Owned Subsidiary; participates in Business Responsibility initiatives of listed entity"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": 74.87,
+    "business": "Wholly Owned Subsidiary; participates in Business Responsibility initiatives of listed entity"
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc., Philippines",
+    "holding_pct": 100.0,
+    "business": "Foreign Wholly Owned Subsidiary; does not participate in Business Responsibility initiatives of listed entity"
+   },
+   {
+    "name": "Vortex Engineering",
+    "holding_pct": null,
+    "business": "Part of the Group, included in consolidated statements"
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc.",
+    "holding_pct": null,
+    "business": "Philippines subsidiary"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": null,
+    "business": "Digital ventures"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": null,
+    "business": "Financial services"
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc.",
+    "holding_pct": 100.0,
+    "business": "Philippines subsidiary"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": 100.0,
+    "business": "India subsidiary"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": 100.0,
+    "business": "India subsidiary"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": 74.87,
+    "business": "India subsidiary"
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc.",
+    "holding_pct": 100,
+    "business": "Incorporated in Philippines"
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": 100,
+    "business": "Equity shares of Rs 10 each, fully paid up"
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": 100,
+    "business": "Equity shares of Rs 1 each, fully paid up"
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": 74.87,
+    "business": ""
+   },
+   {
+    "name": "Vakrangee e-Solutions Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Vakrangee Finserve Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Vakrangee Digital Ventures Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Vortex Engineering Private Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Debt-free balance sheet",
+    "amount_cr": 0,
+    "note": "Company maintains a debt-free status as of FY2026"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "Company remained debt-free in FY2026 with no long-term or short-term debt"
+   },
+   {
+    "lender_or_type": "Total Debt",
+    "amount_cr": 0,
+    "note": "Debt-free in FY2025 and FY2026"
+   },
+   {
+    "lender_or_type": "Debt-free balance sheet",
+    "amount_cr": 0,
+    "note": "Zero debt reported"
+   },
+   {
+    "lender_or_type": "Consolidated basis",
+    "amount_cr": 0,
+    "note": "Debt-free on a consolidated basis as reported for FY2026"
+   },
+   {
+    "lender_or_type": "Long-term debt",
+    "amount_cr": 0,
+    "note": "Nil long-term debt maintained in FY2026"
+   },
+   {
+    "lender_or_type": "Short-term debt",
+    "amount_cr": 0,
+    "note": "Nil short-term debt maintained in FY2026"
+   },
+   {
+    "lender_or_type": "Debt-free balance sheet",
+    "amount_cr": 0,
+    "note": "The Group entered FY2027 with a debt-free balance sheet"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "Group remained debt-free; debt-equity 0.00; net worth Rs. 22,335.4 lakh"
+   },
+   {
+    "lender_or_type": "Debt-free balance sheet",
+    "amount_cr": 0,
+    "note": "The Group continued to maintain a debt-free balance sheet as on March 31, 2026"
+   },
+   {
+    "lender_or_type": "Bank working capital limit",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limit in excess of five crore rupees, in aggregate, from Bank on the basis of security of current assets"
+   },
+   {
+    "lender_or_type": "Secured loans from banks",
+    "amount_cr": 0,
+    "note": "No non-current or current borrowings as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Non-Current borrowings",
+    "amount_cr": 0.0,
+    "note": "No borrowings as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 0.0,
+    "note": "No borrowings as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": 0,
+    "note": "The Company has repaid all of its borrowings during the current financial year"
+   },
+   {
+    "lender_or_type": "Foreign currency loans from various banks",
+    "amount_cr": null,
+    "note": "Availed to reduce overall interest cost"
+   }
+  ],
+  "auditor": {
+   "name": "Not specified in this part",
+   "opinion": "Not specified in this part",
+   "qualifications_or_emphasis": [
+    "The Company's financial statement for the financial year 2025-26 does not contain any audit qualification.",
+    "Delay/non-transfer of Rs 7.52 lakhs pertaining to FY 2017-18 to Investor Education and Protection Fund",
+    "Unable to comment on whether audit trail feature of payroll software was enabled and operated throughout the year due to absence of Service Organisation Control report from third-party service providers",
+    "Unable to comment whether audit trail has been preserved by the Company as per statutory requirements for record retention",
+    "delay/non-transfer of Rs 7.52 lakhs to Investor Education and Protection Fund for FY 2017-18",
+    "accounting software audit trail feature not enabled throughout the year for all relevant transactions in one subsidiary",
+    "audit trail not preserved as per statutory requirements in one subsidiary"
+   ],
+   "key_audit_matters": [
+    "Estimates involving capitalisation of capital expenditure and determining useful lives of Property, Plant and Equipment (mainly ATMs)",
+    "Expected Credit Loss allowance calculation requiring significant judgment",
+    "Estimates involving in Capitalisation of Capital Expenditure, and determining their useful lives",
+    "Expected Credit Loss"
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Life Insurance Corporation of India Limited",
+     "pct": null
+    },
+    {
+     "name": "Promoters",
+     "pct": 40.05
+    },
+    {
+     "name": "Public",
+     "pct": 55.36
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 4.13
+    },
+    {
+     "name": "Foreign Portfolio Investors",
+     "pct": 0.46
+    },
+    {
+     "name": "Financial Institutions/Banks",
+     "pct": 0.0
+    },
+    {
+     "name": "Vakrangee Holdings Private Limited",
+     "pct": 23.17
+    },
+    {
+     "name": "NJD Capital Private Limited",
+     "pct": 12.1
+    },
+    {
+     "name": "Jyoti Nandwana",
+     "pct": 4.76
+    },
+    {
+     "name": "Emmel Financial Services",
+     "pct": null
+    },
+    {
+     "name": "Vidhan Marketing Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "SNG Capital Trust Pvt Ltd",
+     "pct": null
+    },
+    {
+     "name": "BKG Securities Private Limited",
+     "pct": null
+    },
+    {
+     "name": "Yes Equities Private Limited",
+     "pct": null
+    }
+   ],
+   "director_changes": [
+    "Appointment of Master Franchisees in 532 districts across 32 States (as of March 31, 2026)",
+    "Mr. Shiv Narain Kaushik (DIN: 08204746) resigned as Non-Executive Independent Director with effect from July 04, 2025",
+    "Mr. Sandeep J. Gaware (DIN: 03596481) appointed as Non-Executive Independent Director with effect from July 25, 2025",
+    "Mr. Ajay Jangid resigned as Chief Financial Officer with effect from October 30, 2025",
+    "Mr. Aditya Jani appointed as Chief Financial Officer with effect from January 24, 2026",
+    "Mr. Vedant Dinesh Nandwana (DIN: 08420950) retires by rotation at forthcoming AGM and is eligible for re-appointment",
+    "Mr. Ajay Jangid ceased as Chief Financial Officer (upto October 30, 2025)",
+    "Mr. Aditya Jani appointed as Chief Financial Officer (w.e.f January 24, 2026)",
+    "Mr. Sandeep J Gaware appointed as Independent Director w.e.f. 25/07/2025",
+    "Mr. Vedant Dinesh Nandwana appointed as Managing Director w.e.f. 12/08/2024",
+    "Ms. Divya Dinesh Nandwana appointed as Executive Director w.e.f. 12/08/2024",
+    "Ms. Savita Dattatray Keni appointed as Independent Director w.e.f. 12/08/2024",
+    "Mr. Krishna Sham Sunder Lakundi appointed as Director w.e.f. 24/05/2024",
+    "Late Mr. Dinesh Nandwana Chairman Emeritus (w.e.f. 12.08.2024), Managing Director & Group CEO (up to 11.08.2024)",
+    "Mr. Amit Keval Sabarwal Director & Group CEO (w.e.f. 12.08.2024) up to 03.12.2024",
+    "Dr. Nishikant Hayatnagarkar Whole-Time Director (up to 11.08.2024)",
+    "Ms. Divya Nandwana Chairperson & Whole-time Director (w.e.f. 12.08.2024)",
+    "Mr. Vedant Nandwana Managing Director (w.e.f. 12.08.2024)",
+    "Mr. Ramesh Mulchand Joshi Non-Executive Independent Chairman (up to 11.08.2024)",
+    "Mrs. Sujata Chattopadhyay Independent Director (up to 30.03.2025)",
+    "Mr. Shiv Narain Kaushik Independent Director (up to 04.07.2025)",
+    "Mr. Sunil Agarwal Director (up to 11.08.2024)",
+    "Mr. Babulal Meena Independent Director (up to 11.08.2024)",
+    "Mr. Avinash Chandra Vyas Independent Director (up to 11.08.2024)",
+    "Mr. Ranbir Datt Nominee Director (up to 24.05.2024)",
+    "Mr. Hari Chand Mittal Independent Director",
+    "Mrs. Savita Keni Independent Director (w.e.f. 12.08.2024)",
+    "Mr. Sandeep Garware Independent Director (w.e.f. 25.07.2025)",
+    "Mr. L K Shamsunder Nominee Director (w.e.f. 24.05.2024)",
+    "Mr. Ajay Jangid Chief Financial Officer (up to 30.10.2025)",
+    "Mr. Aditya Jani Chief Financial Officer (w.e.f. 24.01.2026)",
+    "Mr. Sachin Khandekar Company Secretary and Compliance Officer (up to 15.06.2024)",
+    "Mr. Amit Gadgil Company Secretary and Compliance Officer (w.e.f. 12.08.2024)"
+   ],
+   "auditor_change": "M/s. S. K. Patodia & Associates appointed as statutory auditors until conclusion of 37th AGM to be held in 2027 (approved at AGM on September 27, 2022)",
+   "promoter_holding_pct": 40.05
+  },
+  "people": {
+   "employees": 601,
+   "key_management": [
+    {
+     "name": "Divya Nandwana",
+     "role": "Executive Chairperson"
+    },
+    {
+     "name": "Amit Gadgil",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Vedant Nandwana",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Aditya Jani",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Vedant Dinesh Nandwana",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Divya Dinesh Nandwana",
+     "role": "Executive Chairperson / Whole-time Director"
+    },
+    {
+     "name": "Rahul Mahajan",
+     "role": "Head \u2013 Private Banking & Insurance"
+    },
+    {
+     "name": "Mukesh Shukla",
+     "role": "Head \u2013 PSU & E-Governance"
+    },
+    {
+     "name": "Sumeet Singh Bais",
+     "role": "Head \u2013 ATM Business"
+    },
+    {
+     "name": "Ashish Ladhani",
+     "role": "Head \u2013 Technology"
+    },
+    {
+     "name": "S. Gopalakrishnan",
+     "role": "Chief Executive Officer - Vortex Engineering Private Limited (Subsidiary)"
+    },
+    {
+     "name": "Mandar Vesvikar",
+     "role": "Head of People Performance & Culture"
+    },
+    {
+     "name": "Mr. Ajay Nandwana",
+     "role": "Member - Corporate Social Responsibility Committee"
+    },
+    {
+     "name": "Ms. Divya Dinesh Nandwana",
+     "role": "Chairperson - Corporate Social Responsibility Committee, Member - Risk Management Committee, Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Vedant Dinesh Nandwana",
+     "role": "Member - Stakeholder Relationship Committee, Member - Corporate Social Responsibility Committee, Member - Risk Management Committee"
+    },
+    {
+     "name": "Ms. Savita Dattatray Keni",
+     "role": "Chairperson - Stakeholder Relationship Committee, Member - Risk Management Committee, Member - POSH Committee"
+    },
+    {
+     "name": "Mr. Hari Chand Mittal",
+     "role": "Chairperson - Risk Management Committee, Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Amit Gadgil",
+     "role": "Company Secretary & Compliance Officer, Member - Stakeholder Relationship Committee, Member - POSH Committee, Member - Corporate Social Responsibility Committee"
+    },
+    {
+     "name": "Ms. Jyoti Singh",
+     "role": "Member - POSH Committee"
+    },
+    {
+     "name": "Ms. Tanishqa Ghude",
+     "role": "Member - POSH Committee"
+    },
+    {
+     "name": "Ms. Divya Bharti",
+     "role": "Member - POSH Committee"
+    },
+    {
+     "name": "Ms. Nirali Mehta",
+     "role": "Member - Corporate Social Responsibility Committee"
+    },
+    {
+     "name": "Dr. Nishikant Hayatnagarkar",
+     "role": "Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Sandeep Gaware",
+     "role": "Member - Risk Management Committee, Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Ashish Ladani",
+     "role": "Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Chetan Gholekar",
+     "role": "Member - Information Security Committee"
+    },
+    {
+     "name": "Mr. Vedant Dinesh Nandwana",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Ms. Divya Dinesh Nandwana",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. Aditya Jani",
+     "role": "Chief Financial Officer (w.e.f January 24, 2026)"
+    },
+    {
+     "name": "Mr. Amit Gadgil",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Ms. Divya Dinesh Nandwana",
+     "role": "Executive Chairperson"
+    },
+    {
+     "name": "Mr. Amit Gadgil",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Divya Dinesh Nandwana",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Ms. Divya Dinesh Nandwana",
+     "role": "Executive Chairperson; Chairperson of Corporate Governance Committee, CSR Committee, ESG Committee"
+    },
+    {
+     "name": "Mr. Vedant Dinesh Nandwana",
+     "role": "Member of Corporate Governance Committee, CSR Committee, ESG Committee"
+    },
+    {
+     "name": "Mr. Hari Chand Mittal",
+     "role": "Member of Corporate Governance Committee, CSR Committee, ESG Committee"
+    },
+    {
+     "name": "Dhiraj Lalpuria",
+     "role": "Partner at S K Patodia & Associates LLP (Auditor)"
+    },
+    {
+     "name": "Divya Nandwana",
+     "role": "Chairperson & Whole-time Director"
+    },
+    {
+     "name": "Amit Gadgil",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Late Mr. Dinesh Nandwana",
+     "role": "Chairman Emeritus (w.e.f. 12.08.2024), Managing Director & Group CEO (up to 11.08.2024)"
+    },
+    {
+     "name": "Mr. Amit Keval Sabarwal",
+     "role": "Director & Group CEO (w.e.f. 12.08.2024) up to 03.12.2024"
+    },
+    {
+     "name": "Dr. Nishikant Hayatnagarkar",
+     "role": "Whole-Time Director (up to 11.08.2024)"
+    },
+    {
+     "name": "Ms. Divya Nandwana",
+     "role": "Chairperson & Whole-time Director (w.e.f. 12.08.2024)"
+    },
+    {
+     "name": "Mr. Vedant Nandwana",
+     "role": "Managing Director (w.e.f. 12.08.2024)"
+    },
+    {
+     "name": "Mr. Ajay Jangid",
+     "role": "Chief Financial Officer (up to 30.10.2025)"
+    },
+    {
+     "name": "Mr. Aditya Jani",
+     "role": "Chief Financial Officer (w.e.f. 24.01.2026)"
+    },
+    {
+     "name": "Mr. Sachin Khandekar",
+     "role": "Company Secretary and Compliance Officer (up to 15.06.2024)"
+    },
+    {
+     "name": "Mr. Amit Gadgil",
+     "role": "Company Secretary and Compliance Officer (w.e.f. 12.08.2024)"
+    },
+    {
+     "name": "Board of Directors",
+     "role": "Chief operating decision-maker responsible for allocating resources and assessing performance of operating segments"
+    }
+   ]
+  },
+  "other_notable": [
+   "23,087 Active Transacting Vakrangee Kendras (FY2026)",
+   "6,073 Vakrangee White Label ATMs (FY2026)",
+   "535 Master Franchisees (FY2026)",
+   "Rs. 53,971.20 Crores Annual Gross Transaction Value (GTV) (FY2026)",
+   "11.6 Crores Annual Number of Transactions (FY2026)",
+   "Total income: Rs. 26,136.2 lakh (FY2026)",
+   "EBITDA: Rs. 3,426.1 lakh (FY2026), up 22.7% YoY",
+   "EBITDA margin: 13.4% (FY2026), up 249 bps YoY",
+   "Profit after tax: Rs. 1,111.9 lakh (FY2026), up 79.3% YoY",
+   "Operating cash flow before tax: Rs. 63.7 crore (FY2026), turned positive from negative",
+   "Cash profit: Rs. 2,872.0 lakh (FY2026), up 25.4% YoY",
+   "5,873 postal codes served (FY2026)",
+   "~84% presence in Tier IV\u2013VI locations",
+   "2,950 women-owned Kendras",
+   "Zero reported customer-privacy complaints, zero identified data leaks/thefts/losses",
+   "95.2% renewable share of reported electricity",
+   "244.6 million A4 sheets avoided through paper-light delivery",
+   "1,591.5 inclusion training hours",
+   "168 new hires in FY2026",
+   "Founder Promoter and Chairman Emeritus Shri Dinesh Nandwana Ji passed away in January 2025",
+   "7th Integrated Annual Report for FY2025-26",
+   "CIN: L65990MH1990PLC056669",
+   "Gross Transaction Value (GTV) of Rs. 53,791.2 crore and 11.6 crore annual transactions in FY2026",
+   "Network of 23,087 active transacting Vakrangee Kendras across 32 States/UTs, 609 districts, 535 master franchisee districts, ~84% in Tier IV-VI markets",
+   "5,873 postal codes served, 6,073 ATMs deployed",
+   "Total income broadly stable at Rs. 26,136.2 lakhs in FY2026 vs Rs. 25,935.1 lakhs in FY2025",
+   "EBITDA increased 22.7% to Rs. 3,426.1 lakhs; EBITDA margin expanded from 11.0% to 13.4%",
+   "Profit after tax increased 79.3% to Rs. 1,111.9 lakhs; PAT margin improved to 4.4%",
+   "Cash profit increased 25.4% to Rs. 2,872.0 lakhs",
+   "Cash flow from operations before tax turned positive at Rs. 63.7 crore vs deficit of Rs. 25.1 crore in FY2025",
+   "Net worth increased to Rs. 22,335.4 lakhs from Rs. 21,166.9 lakhs",
+   "Master franchisee model enables capital-light scaling with local accountability",
+   "BharatEasy Mobile Super App launched as upgraded beta trial with O2O (Online to Offline) proposition",
+   "Strategic alliances across banking, insurance, lending, ATM, commerce, healthcare, education, travel, logistics, and government services",
+   "Responsible partner governance framework with 7-stage alliance lifecycle",
+   "23,087 active transacting Kendras across 609 districts in 32 States/UTs",
+   "~84% Kendra presence in Tier IV, V, VI markets",
+   "5,425 Kendras in Tribal, LWE and Aspirational districts",
+   "535 Master Franchisee districts",
+   "Annual Gross Transaction Value: \u20b953,791.2 crore (FY2026)",
+   "BFSI revenue contribution: 49.0% (FY2026) vs 47.7% (FY2025)",
+   "Vortex Engineering: 1,679 ATMs shipped in FY2026, EBITDA \u20b9127.1 lakh (vs \u20b910.9 lakh FY2025)",
+   "Total Income: \u20b926,136.2 lakhs (FY2026) vs \u20b925,935.1 lakhs (FY2025)",
+   "EBITDA: \u20b93,426.1 lakhs (FY2026) vs \u20b92,793.3 lakhs (FY2025), margin 13.4% vs 11.0%",
+   "PAT: \u20b91,111.9 lakhs (FY2026) vs \u20b9620.0 lakhs (FY2025), +79.3% YoY",
+   "Cash from Operations before tax: \u20b963.7 crore (FY2026) vs \u20b9(25.1) crore (FY2025)",
+   "ATM Gross Transaction Value: ~\u20b98,569.4 crore, ~3.0 crore transactions, 6,073 ATMs",
+   "Banking Gross Transaction Value: ~\u20b945,048.2 crore",
+   "Perfo\u00ae: multi-vendor monitoring, alerts, health visibility, incident workflows, analytics, performance intelligence",
+   "Android ATM and Mini ATM formats for cost-sensitive distributed banking environments",
+   "BharatEasy Super App: unified digital ecosystem for banking, insurance, money transfer, bill payments, recharges, loan products, mutual funds, travel, agri products, online shopping, healthcare, courier services",
+   "Zero reported customer-privacy complaints and zero identified leaks, thefts or loss of customer data in FY2026",
+   "Debt-free balance sheet status",
+   "Six-member Board with three Non-Executive Independent Directors (one woman), one Nominee Director (LIC), and two Executive Directors",
+   "Four Board meetings held in FY2025-26",
+   "Board ESG Committee formed with Divya Nandwana, Vedant Nandwana, and Hari Chand Mittal as members",
+   "Anti-Fraud Committee chaired by Savita Keni",
+   "Information Security Committee oversees AI governance",
+   "Comprehensive Code of Conduct for Prevention of Insider Trading (VL Code)",
+   "Registered Office: Vakrangee Corporate House, Plot No. 93, Road No. 16, M.I.D.C. Marol, Andheri (East), Mumbai, Maharashtra, 400093, India"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Vortex Engineering shipped 1,679 ATM machines in FY2026",
+    "value_cr": null
+   },
+   {
+    "statement": "1,679 Vortex ATM shipments in FY2026",
+    "value_cr": null
+   },
+   {
+    "statement": "Expanded partner-led model across insurance, lending, banking services",
+    "value_cr": null
+   },
+   {
+    "statement": "Vortex Engineering shipped 1,679 ATMs during FY2026",
+    "value_cr": null
+   },
+   {
+    "statement": "Insurance partner relationships expanded to Universal Sompo, Shriram General, SBI General, Bajaj General Insurance, Ageas Federal Life Insurance, IndiaFirst Life Insurance, Aditya Birla Health Insurance",
+    "value_cr": null
+   },
+   {
+    "statement": "Secured major ATM deployment mandates from Punjab & Sind Bank and UCO Bank for Vortex Engineering",
+    "value_cr": null
+   },
+   {
+    "statement": "Won multiple high-value software and technology solution contracts, further strengthening Vortex's digital banking capabilities",
+    "value_cr": null
+   },
+   {
+    "statement": "RBI authorization for the White Label ATM (WLA) business renewed until 31 March 2027",
+    "value_cr": null
+   },
+   {
+    "statement": "Signed agreements with various PSU Banks and their Rural Regional banks to carry out BC services in identified Rural, Semi-Urban and Urban areas.",
+    "value_cr": null
+   },
+   {
+    "statement": "First contract under Vakrangee e-Solutions INC was 'Land Titling Computerization Project' for the Government of Philippines, involving scanning, digitization and encoding of more than 15 million title deeds from 168 Districts.",
+    "value_cr": null
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Vortex Engineering ATM manufacturing and infrastructure",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Technology and data infrastructure including BharatEasy, Perfo\u00ae, cyber security",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Kendra network expansion and Master Franchisee support",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Technology and platform systems (scalable, secure, data-led)",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Vortex Engineering (banking automation, product innovation, AMC, software, Perfo\u00ae)",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "BharatEasy (O2O digital layer extending Kendra network)",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Franchisee and field enablement (training, service delivery, compliance, higher-value product adoption)",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Partner integration (banking, insurance, lending, service partner relationships)",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Vortex product development (Android/Mini ATM formats, service-rich kiosks, integrated monitoring, new Vortex products)",
+    "amount_cr": null,
+    "timeline": "FY2027 priorities"
+   },
+   {
+    "item": "Platform reliability, cyber and data controls, service integration, field capability",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Working capital for ATM product/service activity (inventory, receivables, vendor advances, milestone billing)",
+    "amount_cr": null,
+    "timeline": "As activity scales"
+   },
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "Financial year 2025-2026"
+   },
+   {
+    "item": "Capital expenditure primarily supports acquisition of environmentally friendly ATM machines (paperless, SMS acknowledgments, 'Go Green' initiatives)",
+    "amount_cr": 20.3044,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Integrating energy efficiencies into facilities, increasing renewable energy use (solar power), expanding through power purchase agreements with private renewable energy suppliers",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Adopting cleaner technologies, green IT practices, IT-enabled operational efficiencies, sustainable procurement through Green Procurement Policy prioritizing EPEAT-certified products",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   }
+  ],
+  "litigation": [
+   "The Company has filed a Petition before the Hon'ble National Company Law Tribunal, Mumbai Bench \u2013 IV (NCLT) on October 28, 2025 seeking consolidation of every 1,08,31,91,807 fully paid-up Equity Shares of face value of \u20b91/- each into 10,83,19,180 fully paid-up Equity Share of face value of \u20b910/-. The said petition is pending before the NCLT for further consideration.",
+   "No significant and material orders passed by Regulators, Securities Exchange Board of India, Stock Exchanges, Tribunal or Courts impacting going concern status and operations in future.",
+   "No application or processing initiated against the company under Insolvency and Bankruptcy Code, 2016 during FY 2025-26.",
+   "No pending litigations which would impact financial position",
+   "Pursuant to the Scheme of Arrangement sanctioned by NCLT Mumbai Bench vide Order dated May 19, 2023, the business of E-Governance and IT/ITES including certain assets, liabilities, and obligations including indirect tax liabilities stands transferred to VL E-Governance and IT Solutions Limited. The Honorable High Court of Rajasthan, Jaipur bench, vide its order dated November 17, 2025 permitted the resulting company to be substituted in place of the Company for all further proceedings.",
+   "The Group does not have any pending litigations which would impact its financial position except as referred in Note 44 to the Consolidated Financial Statements"
+  ],
+  "dividend_per_share": 0,
+  "related_party": [
+   {
+    "party": "Various related parties",
+    "nature": "All contracts, arrangements, and transactions entered into during the year were in the ordinary course of business and on an arm's length basis. No material related party transactions as defined under Section 188 of the Companies Act, 2013.",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (aggregate)",
+    "nature": "Purchases",
+    "amount_cr": 16.2936
+   },
+   {
+    "party": "Related parties (aggregate)",
+    "nature": "Sales",
+    "amount_cr": 7.2882
+   },
+   {
+    "party": "Related parties (aggregate)",
+    "nature": "Loans & advances given",
+    "amount_cr": 1.199
+   },
+   {
+    "party": "Related parties (aggregate)",
+    "nature": "Investments in related parties",
+    "amount_cr": 0.8106
+   },
+   {
+    "party": "Vakrangee e-Solutions Inc.",
+    "nature": "Investment in subsidiary",
+    "amount_cr": 0.96
+   },
+   {
+    "party": "Vakrangee Digital Ventures Limited",
+    "nature": "Investment in subsidiary",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Vakrangee Finserve Limited",
+    "nature": "Investment in subsidiary",
+    "amount_cr": 15.0
+   },
+   {
+    "party": "Vortex Engineering Private Limited",
+    "nature": "Strategic investment",
+    "amount_cr": 37.05
+   },
+   {
+    "party": "Vakrangee Finserve Limited",
+    "nature": "Sales of Support Services",
+    "amount_cr": 7.2
+   },
+   {
+    "party": "Vakrangee Digital Ventures Limited",
+    "nature": "Sales of Support Services",
+    "amount_cr": 0.0882
+   },
+   {
+    "party": "Vortex Engineering Private Limited",
+    "nature": "Purchase of Automated Teller Machines (ATM) Products/Services",
+    "amount_cr": 16.2936
+   },
+   {
+    "party": "Vortex Engineering Private Limited",
+    "nature": "Advances - Net of Creditors (Balance outstanding)",
+    "amount_cr": 1.199
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Remuneration",
+    "amount_cr": 2.0197
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Post-employment benefits",
+    "amount_cr": 0.245
+   },
+   {
+    "party": "Directors",
+    "nature": "Sitting Fees",
+    "amount_cr": 0.047
+   },
+   {
+    "party": "Vakrangee Digital Ventures Limited",
+    "nature": "Loan given to subsidiary (Purpose: to provide financial assistance and support to the subsidiary)",
+    "amount_cr": 0
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Delay/non-transfer of amount to Investor Education and Protection Fund",
+    "amount_cr": 0.0752
+   },
+   {
+    "nature": "Counter Guarantee in relation to Bank Guarantee to various parties",
+    "amount_cr": 2.5232
+   },
+   {
+    "nature": "Counter Guarantee in relation to Bank Guarantee to various parties on behalf of subsidiary company",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Demand raised by VAT/GST",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Claims against the company not acknowledged as debts",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Financial guarantees given to banks and other counter parties for facilities availed by subsidiary",
+    "amount_cr": null
+   }
+  ]
+ }
+}
