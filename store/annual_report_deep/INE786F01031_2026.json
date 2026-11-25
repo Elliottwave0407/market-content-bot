@@ -1,0 +1,1237 @@
+{
+ "isin": "INE786F01031",
+ "name": "Uttam Sugar Mills Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_32195_UTTAMSUGAR_2025_2026_A_19432972_07102026121052.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 793651,
+ "chunks": 20,
+ "chunks_ok": 17,
+ "facts": {
+  "business": {
+   "description": "Uttam Sugar Mills Limited is a sugar manufacturing company based in India.",
+   "products": [
+    {
+     "name": "Sugar",
+     "share_of_revenue_pct": null,
+     "note": "Inferred from company name 'Uttam Sugar Mills Limited' and tagline 'If it's sweet, it's Uttam.'"
+    },
+    {
+     "name": "Industrial Alcohol (Ethanol/ENA)",
+     "share_of_revenue_pct": null,
+     "note": "Sold 847.02 Lakhs bulk litres industrial alcohol (including Ethanol) during FY 2025-26"
+    },
+    {
+     "name": "Power (Co-generation)",
+     "share_of_revenue_pct": null,
+     "note": "Produced 2,175 Lakhs KWH of power; exported 1,006 Lakhs KWH to UPPCL/UPCL for Rs 5,717 Lakhs"
+    },
+    {
+     "name": "CO2 gas",
+     "share_of_revenue_pct": null,
+     "note": "Sold 55.54 Lakhs kg amounting to Rs 140 Lakhs during the year"
+    },
+    {
+     "name": "Potash",
+     "share_of_revenue_pct": null,
+     "note": "Sold 71.99 lakhs KG amounting to Rs 79 lakhs during the year"
+    },
+    {
+     "name": "Branded/Specialty Sugar",
+     "share_of_revenue_pct": null,
+     "note": "Products consisting of sachet, icing, invert, cubes (both white & brown)"
+    },
+    {
+     "name": "Co-generation power",
+     "share_of_revenue_pct": null,
+     "note": "Partly used for captive consumption and balance exported to U.P./Uttarakhand Power Corporation Ltd."
+    },
+    {
+     "name": "Ethanol",
+     "share_of_revenue_pct": null,
+     "note": "Distillery operations"
+    },
+    {
+     "name": "Sugar Production",
+     "share_of_revenue_pct": 73.92,
+     "note": "Manufacturing sugar by processing sugarcane through a highly controlled process"
+    },
+    {
+     "name": "Power Generation",
+     "share_of_revenue_pct": 2.72,
+     "note": "Generation of Power (Co-generation) using Bagasse"
+    },
+    {
+     "name": "Distillery and allied products",
+     "share_of_revenue_pct": 23.36,
+     "note": "Manufacturing of Industrial Alcohol and Ethanol, Liquid Carbon Dioxide and Potash"
+    },
+    {
+     "name": "Ethanol/Distillery products",
+     "share_of_revenue_pct": null,
+     "note": "Molasses utilized to produce distillery products"
+    },
+    {
+     "name": "Power",
+     "share_of_revenue_pct": null,
+     "note": "Bagasse utilized for power generation"
+    },
+    {
+     "name": "Organic manure/Potash",
+     "share_of_revenue_pct": null,
+     "note": "Press mud and ash utilized for manufacture of organic manure and potash"
+    },
+    {
+     "name": "Distillery products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Power (co-generated)",
+     "share_of_revenue_pct": null,
+     "note": "Sold 1045.80 Lakh kwh in FY 2024-25 and 1005.65 Lakh kwh in FY 2025-26"
+    },
+    {
+     "name": "Organic manure and Potash",
+     "share_of_revenue_pct": null,
+     "note": "From press mud and ash generated from incineration boilers"
+    },
+    {
+     "name": "Branded & Specialty Sugar",
+     "share_of_revenue_pct": null,
+     "note": "Includes Bura, Brown Sugar, Caster, Sachets, icing sugar, superfine, pharma sugar, cube sugar, invert syrup; packed in 80gm/500gm/1kg/2kg/5kg/10kg"
+    },
+    {
+     "name": "Molasses",
+     "share_of_revenue_pct": null,
+     "note": "By-product of sugar production; partly diverted for ethanol"
+    },
+    {
+     "name": "Bagasse",
+     "share_of_revenue_pct": null,
+     "note": "Used for co-generation of green power"
+    },
+    {
+     "name": "Press mud / Boiler ash",
+     "share_of_revenue_pct": null,
+     "note": "Converted into organic bio-compost and potash granules"
+    },
+    {
+     "name": "By-products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Industrial Alcohol",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Industrial alcohol (Distillery)",
+     "share_of_revenue_pct": 23.4,
+     "note": "Revenue of Rs 49,009.00 lakhs in FY2026"
+    },
+    {
+     "name": "Sugar (domestic and export)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Jaggery",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Renewable energy credits (REC)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Renewable Energy Certificates (REC)",
+     "share_of_revenue_pct": null,
+     "note": "Income from sale of REC is recognized on delivery to customers' account."
+    },
+    {
+     "name": "B Heavy Molasses",
+     "share_of_revenue_pct": null,
+     "note": "Valued by considering realizable value of C Heavy Molasses plus sugar sacrificed for producing B Heavy Molasses."
+    },
+    {
+     "name": "C Heavy Molasses",
+     "share_of_revenue_pct": null,
+     "note": "Used as reference for valuation of B Heavy Molasses."
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Uttarakhand",
+     "share_pct": null
+    },
+    {
+     "name": "National (India)",
+     "share_pct": 100
+    },
+    {
+     "name": "Local/Nearby areas",
+     "share_pct": 100
+    },
+    {
+     "name": "India (domestic)",
+     "share_pct": null
+    },
+    {
+     "name": "J&K, Himachal Pradesh, Punjab, Haryana, Delhi, Uttarakhand, Uttar Pradesh, Gujarat, Chandigarh, Rajasthan, Bihar, North East states, Madhya Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic market",
+     "share_pct": null
+    },
+    {
+     "name": "Export market",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Village Libberheri, Tehsil Roorkee, Distt. Haridwar, Uttarakhand, India",
+     "capacity": ""
+    },
+    {
+     "location": "Barkatpur, Khaikheri and Libberheri unit",
+     "capacity": "27000 TCD"
+    },
+    {
+     "location": "Libberheri Unit, Distt. Haridwar, Uttarakhand",
+     "capacity": "Sugar crushing; Distillery 50 KLPD; Co-generation; Ethanol"
+    },
+    {
+     "location": "Barkatpur Unit, Distt. Bijnor, Uttar Pradesh",
+     "capacity": "Sugar crushing; Distillery 250 KLPD; Co-generation; Ethanol"
+    },
+    {
+     "location": "Khaikheri Unit, Uttar Pradesh",
+     "capacity": "Sugar crushing; Co-generation"
+    },
+    {
+     "location": "Shermau Unit, Uttar Pradesh",
+     "capacity": "Sugar crushing; Co-generation"
+    },
+    {
+     "location": "Shermau Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Barkatpur Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Khaikheri Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Libberheri Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Libberheri (Sugar, Co-generation & Distillery)",
+     "capacity": ""
+    },
+    {
+     "location": "Barkatpur (Sugar, Co-generation & Distillery)",
+     "capacity": ""
+    },
+    {
+     "location": "Khaikheri (Sugar & Co-generation)",
+     "capacity": ""
+    },
+    {
+     "location": "Shermau (Sugar & Co-generation)",
+     "capacity": ""
+    },
+    {
+     "location": "Not specified in this section",
+     "capacity": "Not specified in this section"
+    },
+    {
+     "location": "Village Libberheri, Tehsil Roorkee, District Haridwar, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "Village Barkatpur, Tehsil Najibabad, District Bijnor, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Village Khaikheri, Tehsil & District Muzaffarnagar, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Village Shermau, Tehsil Nakur, District Saharanpur, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Village Barkatpur, Tehsil Nazibabad, District Bijnor, U.P.",
+     "capacity": ""
+    },
+    {
+     "location": "Village Khaikheri, Tehsil & District Muzzaffarnagar, U.P.",
+     "capacity": ""
+    },
+    {
+     "location": "Village Shermau, Tehsil Nakur, District Saharanpur, U.P.",
+     "capacity": ""
+    },
+    {
+     "location": "Libberheri",
+     "capacity": "7000 TCD"
+    },
+    {
+     "location": "Barkatpur",
+     "capacity": "8500 TCD"
+    },
+    {
+     "location": "Khaikheri",
+     "capacity": "5500 TCD"
+    },
+    {
+     "location": "Shermau",
+     "capacity": "6000 TCD"
+    },
+    {
+     "location": "Village Libberheri, Tehsil Roorkee, Distt. Haridwar (Uttarakhand)",
+     "capacity": ""
+    },
+    {
+     "location": "Village Barkatpur, Pudrikhurd Motipur, Tehsil Najibabad, Distt. Bijnor (U.P.)",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Tehsil Nigasan, Distt. Lakhimpur Khiri (U.P.)",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Libberheri",
+     "capacity": ""
+    },
+    {
+     "location": "Barkatpur",
+     "capacity": ""
+    },
+    {
+     "location": "Khaikheri",
+     "capacity": ""
+    },
+    {
+     "location": "Shermau",
+     "capacity": ""
+    },
+    {
+     "location": "7-C Ist Floor, J-Block Shopping Center, Saket, New Delhi",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "brands_or_certifications": [
+    "Uttam",
+    "NSI standard compliance",
+    "FSSAI compliance",
+    "Zero Liquid Discharge (ZLD) at Distillery",
+    "Code of Conduct & Ethics for Board",
+    "Whistle Blower and Vigil Mechanism Policy",
+    "Uttam Sugar (packaged sugar brand)",
+    "European Union Standard quality certification for sugar"
+   ],
+   "raw_materials": [
+    "Sugarcane",
+    "B Heavy molasses",
+    "C Heavy molasses",
+    "Syrup",
+    "Grains (for UDL subsidiary)",
+    "Bagasse",
+    "Molasses (by-product for distillery)",
+    "Syrup (for Industrial Alcohol)",
+    "Molasses",
+    "Press mud",
+    "Ash",
+    "Bagasse (for power generation)",
+    "Molasses (for distillery)",
+    "B-heavy molasses",
+    "Grain (maize, FCI rice)",
+    "Water",
+    "Chemicals",
+    "packing material",
+    "store & spares"
+   ],
+   "customers": [
+    "Oil Marketing Companies (OMCs)",
+    "UPPCL/UPCL",
+    "IRCTC",
+    "CCD",
+    "Starbucks",
+    "Mother Dairy",
+    "Flipkart",
+    "Blinkit",
+    "Zepto",
+    "U.P. / Uttarakhand Power Corporation Ltd.",
+    "Sugar customers across different product lines",
+    "Public Oil Marketing Companies for Ethanol blending under EBP",
+    "Uttar Pradesh Power Corporation Ltd (UPPCL) and Uttarakhand Power Corporation Limited for surplus power export",
+    "Dealers/Distributors (178 in FY2025-26, 129 in FY2024-25)",
+    "Farmers (sugarcane suppliers)",
+    "Institutional customers",
+    "Industry users (for distillery products)",
+    "Power distribution companies",
+    "Oil Marketing Companies (OMCs) for ethanol",
+    "State electricity grids for power export",
+    "Modern retail: Blinkit, Amazon, Flipkart, Zepto, Milk Basket, Leeford, Lots, Mother Dairy, More, Bikanerwala, IRCTC, CCD, Rsana, Dabur, Patanjali, Walmart, Swiggy, DMART",
+    "Institutional and retail trade for packaged sugar",
+    "Export markets (when permitted)",
+    "purchasing parties under power purchase agreement",
+    "customers for REC"
+   ],
+   "end_markets": [
+    "Sugar (domestic)",
+    "Ethanol blending programme (OMCs)",
+    "Power (grid export)",
+    "Branded/Specialty Sugar (General Trade, Modern Trade, HORECA, E-commerce)",
+    "Power distribution companies",
+    "Sugar market",
+    "Ethanol market",
+    "Sugar domestic market",
+    "Ethanol Blending Programme (EBP) for petrol blending",
+    "Power distribution companies (UPPCL, Uttarakhand Power Corporation)",
+    "Ethanol/Distillery market",
+    "Power/Energy market",
+    "Organic manure/Potash market",
+    "Distillery/alcohol market",
+    "Power market",
+    "Organic fertilizer market",
+    "Sugar: domestic retail, institutional, industrial",
+    "Ethanol: fuel blending (EBP program)",
+    "Power: state grid",
+    "By-products: agriculture (bio-compost, potash)",
+    "power",
+    "renewable energy certificates"
+   ],
+   "competitors_named": [
+    "Other sugar mills in Uttar Pradesh, Maharashtra, Karnataka",
+    "Gur and khandsari producers (unorganized sector)",
+    "Alternative crops: cotton, oilseeds"
+   ]
+  },
+  "borrowings": [
+   {
+    "lender_or_type": "Banks, NBFCs, Central Government, State Government, public financial institutions, co-operative society, public deposits, foreign lenders, body corporates, related parties, other lending/financial institutions",
+    "amount_cr": 1750,
+    "note": "Borrowing limit approved under Section 180(1)(c) of Companies Act, 2013"
+   },
+   {
+    "lender_or_type": "State Government of Uttarakhand",
+    "amount_cr": 0.5252,
+    "note": "Unsecured loan; interest not accounted for Rs 26.26 Lakh for quarter and year ended 31st March, 2026 and Rs 52.52 Lakh upto 31st March, 2026"
+   },
+   {
+    "lender_or_type": "Uttarakhand State Government (Unsecured)",
+    "amount_cr": 6.5668,
+    "note": "One-time assistance received in January 2008; principal unpaid since January 2011; interest not accounted after 31.03.2024 aggregating to Rs 52.52 lakh up to 31.03.2026"
+   },
+   {
+    "lender_or_type": "Punjab National Bank - Term Loan",
+    "amount_cr": 20.15,
+    "note": "Secured by first pari-passu charge on factory land/building at Libberheri, Barkatpur, Khaikheri, Shermau; first pari-passu charge on hypothecation of other fixed assets; third charge on current assets. ROI 9.45%, 4 installments of Rs 965.21 lakhs in FY2027-28"
+   },
+   {
+    "lender_or_type": "Zila Sahkari Bank Ltd., Ghaziabad - Term Loan",
+    "amount_cr": 15.92,
+    "note": "Secured by exclusive first charge on fixed assets financed by bank; first charge on other fixed assets at Barkatpur unit on pari-passu basis guaranteed by Managing Director. ROI 9.00%, 12 installments of Rs 958.75 lakhs in FY2027-28 and 12 of Rs 633.29 lakhs in FY2028-29"
+   },
+   {
+    "lender_or_type": "Punjab National Bank - Vehicle Loans",
+    "amount_cr": 0.39,
+    "note": "ROI 7.60%, 12 installments of Rs 22.25 lakhs in FY2027-28 and 10 of Rs 16.26 lakhs in FY2028-29"
+   },
+   {
+    "lender_or_type": "HDFC Bank Ltd. - Vehicle Loans",
+    "amount_cr": 0.2,
+    "note": "ROI 8.86%, 12 installments of Rs 18.75 lakhs in FY2027-28 and 12 of Rs 1.64 lakhs in FY2028-29"
+   },
+   {
+    "lender_or_type": "Cash Credit / Working Capital Demand Loan from Banks (Total)",
+    "amount_cr": 629.37,
+    "note": "Includes Punjab National Bank Rs 58.48 cr, HDFC Bank Rs 97.02 cr, State Bank of India Rs 0 cr, ICICI Bank Rs 89.99 cr, Axis Bank Rs 185.25 cr, IndusInd Bank Rs 74.63 cr, Yes Bank Rs 124.00 cr, others fully repaid"
+   },
+   {
+    "lender_or_type": "Financial Assistance from Uttarakhand State Government (Soft Loan)",
+    "amount_cr": 6.57,
+    "note": "Unsecured, repayable in quarterly installments w.e.f. January 2008, continues unpaid, waiver application pending. Interest accrued & due Rs 5.04 cr not provided for since management assessment"
+   },
+   {
+    "lender_or_type": "Loan from related party",
+    "amount_cr": 0.27,
+    "note": "Unsecured, repayable on demand, simple interest @10% annually"
+   },
+   {
+    "lender_or_type": "Preference Shares reclassified as financial liabilities (Non-current)",
+    "amount_cr": 0.49,
+    "note": "43,600 6.50% Non-Cumulative Redeemable Preference Shares and 9,000 10% Non-Cumulative Redeemable Preference Shares"
+   },
+   {
+    "lender_or_type": "Preference Shares reclassified as financial liabilities (Current)",
+    "amount_cr": 16.01,
+    "note": "60,000 6.50% and 825,000 10% Non-Cumulative Redeemable Preference Shares redeemed during year"
+   },
+   {
+    "lender_or_type": "Uttarakhand State Government",
+    "amount_cr": 6.5668,
+    "note": "Unsecured loan in the nature of one-time assistance received in January 2008; interest unpaid since January 2011; application for waiver filed; interest not accounted after 31.03.2024 aggregating to Rs 52.52 lakh up to 31.03.2026"
+   },
+   {
+    "lender_or_type": "Banks (Cash Credit Limits)",
+    "amount_cr": null,
+    "note": "Working capital limits sanctioned in excess of Rs 5 crore on pledge of sugar stocks; quarterly returns filed with banks are in agreement with books except for valuation difference of pledged sugar"
+   },
+   {
+    "lender_or_type": "Punjab National Bank",
+    "amount_cr": 29.84,
+    "note": "Term loan Rs 9.65 cr + Current maturity Rs 10.50 cr + Cash credit Rs 58.48 cr + Working capital demand loan"
+   },
+   {
+    "lender_or_type": "Indian Overseas Bank",
+    "amount_cr": 26.64,
+    "note": "Term loan Rs 19.87 cr + Current maturity Rs 6.77 cr + Cash credit Rs 12.95 cr"
+   },
+   {
+    "lender_or_type": "Zila Sahkari Bank Ltd., Ghaziabad",
+    "amount_cr": 24.55,
+    "note": "Term loan Rs 15.92 cr + Current maturity Rs 8.63 cr"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": 97.02,
+    "note": "Cash credit / Working capital demand loan"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited",
+    "amount_cr": 89.99,
+    "note": "Cash credit / Working capital demand loan"
+   },
+   {
+    "lender_or_type": "Yes Bank Limited",
+    "amount_cr": 124.0,
+    "note": "Cash credit / Working capital demand loan"
+   },
+   {
+    "lender_or_type": "Axis Bank Limited",
+    "amount_cr": 185.25,
+    "note": "Cash credit / Working capital demand loan"
+   },
+   {
+    "lender_or_type": "IndusInd Bank Limited",
+    "amount_cr": 74.63,
+    "note": "Cash credit / Working capital demand loan"
+   },
+   {
+    "lender_or_type": "Uttarakhand State Government",
+    "amount_cr": 6.57,
+    "note": "Soft loan of Rs 656.68 lakhs and interest accrued & due of Rs 503.63 lakhs, unpaid since January 2008"
+   },
+   {
+    "lender_or_type": "Vehicle loans from Banks",
+    "amount_cr": 1.25,
+    "note": "Secured by hypothecation of vehicles financed"
+   },
+   {
+    "lender_or_type": "Rajasthan State Industrial Development and Investment Corp.",
+    "amount_cr": 0.13,
+    "note": "Due to Rajasthan State Industrial Dev. And Investment Corp."
+   }
+  ],
+  "auditor": {
+   "name": "B.K. Kapur & Co., Chartered Accountants (FRN: 000852C)",
+   "qualifications_or_emphasis": [
+    "Title deeds of immovable property not in the name of the Company in one case; necessary action for registration pending",
+    "Interest on unsecured loan received from State Government of Uttarakhand not accounted for (Rs 26.26 Lakh for quarter/year ended 31st March 2026 and Rs 52.52 Lakh upto 31st March 2026)",
+    "Compliance certification is neither an assurance as to the future viability of the Company nor to the efficiency or effectiveness with which the Management has conducted the affairs of the Company.",
+    "Ensuring eligibility for appointment/continuity of every Director is responsibility of management; certificate based on verification",
+    "Emphasis of Matter regarding unsecured loan of Rs 656.68 Lakhs from State Government of Uttarakhand; interest not accounted after 31.03.2024 aggregating to Rs 52.52 lakh up to 31.03.2026",
+    "We, however, state that this is not an assurance as to the future viability of the Company. We further state that our reporting is based on the facts up to the date of the audit report and we neither give any guarantee nor any assurance that all liabilities falling due within a period of one year from the standalone balance sheet date, will get discharged by the Company as and when they fall due.",
+    "Emphasis of Matter regarding unsecured loan of Rs 656.68 lakh from State Government of Uttarakhand with unpaid interest of Rs 52.52 lakh up to 31.03.2026"
+   ],
+   "opinion": "Unmodified opinion",
+   "key_audit_matters": [
+    "Revenue recognition",
+    "Capitalization of property, plant and equipment",
+    "Valuation of Inventories",
+    "Investments in Subsidiary",
+    "Valuation of inventories"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mr. Shankar Lal Sharma (DIN: 09018381) as Whole Time Director for 3 years from 01.01.2027 to 31.12.2029",
+    "Re-appointment of Mr. Raj Kumar Adlakha (DIN: 00133256) as Managing Director for 3 years from 01.04.2027 to 31.03.2030",
+    "Re-appointment of Mr. Ravi Kumar (DIN: 02362615) as Independent Director for second tenure of 5 years from 10.08.2027 to 09.08.2032",
+    "Re-appointment of Mr. Shankar Lal Sharma as Whole-Time Director for a further period of three (3) years commencing from 01st January, 2027 to 31st December, 2029",
+    "Re-appointment of Mr. Raj Kumar Adlakha as Managing Director for a further period of three (3) years commencing from 1st April, 2027 to 31st March, 2030",
+    "Mr. G. S. Matta, Non-Executive Non-Independent Director and Mr. Jasbir Singh Non-Executive Independent Director re-appointed for further term of five years from 30th September, 2025 to 29th September, 2030",
+    "Mr. Ravi Kumar (DIN: 02362615) appointed as Non-Executive Independent Director for first tenure from 10th August, 2022 to 09th August, 2027; proposed re-appointment for second tenure of five years from 10th August 2027 to 09th August 2032",
+    "Mr. Shankar Lal Sharma (DIN: 09018381), Executive Director liable to retire by rotation and eligible for re-appointment",
+    "Mrs. Anju Sethi appointed as Independent Director w.e.f. 18th September, 2024",
+    "Mr. Ravi Kumar proposed to be re-appointed as Non-Executive Independent Director for second tenure of 5 years commencing from 10th August 2027 to 09th August 2032",
+    "Mr. Jasbir Singh re-appointed as Non-Executive Independent Director by shareholders in 30th AGM upto 29th September, 2030.",
+    "Mr. Ravi Kumar appointed as Non-Executive Independent Director by shareholders in 27th AGM upto 9th August, 2027. Proposed for re-appointment in this AGM for second term of 5 years upto 9th August, 2032.",
+    "Mrs. Anju Sethi appointed as Non-Executive Independent Director by shareholders in 29th AGM upto 17th September, 2029.",
+    "Mr. Gurbachan Singh Matta re-appointed as Non-Executive Non-Independent Director by shareholders in 30th AGM upto 29th September, 2030.",
+    "Mr. Raj Kumar Adlakha re-appointed as Managing Director by shareholders in 28th AGM upto 31st March, 2027. Proposed for re-appointment in this AGM for further term of 3 years upto 31st March, 2030.",
+    "Mr. Shankar Lal Sharma re-appointed as Executive Director by shareholders in 28th AGM upto 31st December, 2026. Proposed for re-appointment in this AGM for further term of 3 years upto 31st December, 2029.",
+    "Mr. Ravi Kumar (DIN: 02362615) appointed 10.08.2022",
+    "Mrs. Anju Sethi (DIN: 10746144) appointed 18.09.2024"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Raj Kumar Adlakha",
+     "pct": null
+    },
+    {
+     "name": "Promoters and Promoters Group",
+     "pct": 74.71
+    },
+    {
+     "name": "Uttam Adlakha & Sons Holdings Pvt. Limited",
+     "pct": 42.74
+    },
+    {
+     "name": "Lipi Boilers (P) Limited",
+     "pct": 9.22
+    },
+    {
+     "name": "Uttam Industrial Engineering (P) Limited",
+     "pct": 7.21
+    },
+    {
+     "name": "Raj Kumar Adlakha",
+     "pct": 5.6
+    },
+    {
+     "name": "Uttam Adlakha & Sons Holdings Private Limited",
+     "pct": 42.74
+    },
+    {
+     "name": "Lipi Boilers Private Limited",
+     "pct": 9.22
+    },
+    {
+     "name": "Uttam Industrial Engineering Pvt. Ltd.",
+     "pct": 7.21
+    },
+    {
+     "name": "Ranjan Adlakha",
+     "pct": 3.91
+    }
+   ],
+   "auditor_change": "B.K. Kapur & Co., Chartered Accountants appointed as Statutory Auditors for a term of five consecutive years from conclusion of 27th AGM till conclusion of 32nd AGM to be held in 2027",
+   "promoter_holding_pct": 74.71
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Raj Kumar Adlakha",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Whole Time Director (Executive Director)"
+    },
+    {
+     "name": "Mr. Ravi Kumar",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Rajesh Garg",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Ravi Kumar",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Whole Time Director / Executive Director"
+    },
+    {
+     "name": "Mr. G. S. Matta",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Jasbir Singh",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Rajesh Garg",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Sanjay Bhandari",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Rajesh Garg",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Whole-Time Director / Executive Director"
+    },
+    {
+     "name": "Mrs. Anju Sethi",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Not specified in this section",
+     "role": "Key Managerial Personnel (2 persons)"
+    },
+    {
+     "name": "Not specified in this section",
+     "role": "Board of Directors (5 male, 1 female)"
+    },
+    {
+     "name": "Mr. Raj Kumar Adlakha",
+     "role": "Managing Director (Promoter & Executive)"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Whole-Time Director (Non-Promoter & Executive)"
+    },
+    {
+     "name": "Mr. Gurbachan Singh Matta",
+     "role": "Director (Non-Executive & Non-Independent)"
+    },
+    {
+     "name": "Mr. Jasbir Singh",
+     "role": "Director (Non-Executive & Independent)"
+    },
+    {
+     "name": "Mr. Ravi Kumar",
+     "role": "Director (Non-Executive & Independent)"
+    },
+    {
+     "name": "Mrs. Anju Sethi",
+     "role": "Director (Non-Executive & Independent)"
+    },
+    {
+     "name": "Mr. Shankar Lal Sharma",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Narpat Singh",
+     "role": "Joint President \u2013 Barkatpur Unit"
+    },
+    {
+     "name": "Mr. Lokendra Singh Lamba",
+     "role": "Sr. Vice President - Libberheri Unit"
+    },
+    {
+     "name": "Mr. Sukvinder Jit Singh",
+     "role": "Sr. Vice President Shermau Unit"
+    },
+    {
+     "name": "Mr. I. Rajarathinam",
+     "role": "Vice President (Power Plant)"
+    },
+    {
+     "name": "Mr. Vikas Thakur",
+     "role": "Acting Unit Head \u2013 Khaikheri Unit"
+    },
+    {
+     "name": "Mr. J.P Tripathi",
+     "role": "Vice President (Distillery Barkatpur Unit)"
+    },
+    {
+     "name": "Mr. Rajendra Prasad Joshi",
+     "role": "Vice President (Distillery Libberheri Unit)"
+    },
+    {
+     "name": "Mr. J. N. Sharma",
+     "role": "Technical Advisor"
+    },
+    {
+     "name": "RAJ KUMAR ADLAKHA",
+     "role": "Managing Director (DIN 00133256)"
+    },
+    {
+     "name": "SHANKAR LAL SHARMA",
+     "role": "Executive Director (DIN 09018381)"
+    },
+    {
+     "name": "SANJAY BHANDARI",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "RAJESH GARG",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Managing Director",
+     "role": "Chief operating decision-maker responsible for allocating resources and assessing performance of operating segments"
+    },
+    {
+     "name": "Raj Kumar Adlakha",
+     "role": "Managing Director / Promoter"
+    },
+    {
+     "name": "Ranjan Adlakha",
+     "role": "Promoter"
+    },
+    {
+     "name": "Rajan Adlakha",
+     "role": "Promoter"
+    },
+    {
+     "name": "RAJ KUMAR ADLAKHA",
+     "role": "Managing Director"
+    },
+    {
+     "name": "SHANKAR LAL SHARMA",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Balram Adlakha",
+     "role": "Managing Director"
+    }
+   ],
+   "employees": 804
+  },
+  "dividend_per_share": 2.5,
+  "other_notable": [
+   "Final dividend of 25% (Rs. 2.50 per equity share of face value Rs. 10) recommended for FY 2025-26",
+   "Record date for dividend: 11th September 2026",
+   "Dividend payment date: 17th October 2026",
+   "AGM scheduled for 18th September 2026 at 12:00 Noon through VC/OAVM",
+   "Remote e-voting period: 15th September 2026 (9:00 am) to 17th September 2026 (5:00 pm)",
+   "Cut-off date for e-voting and dividend: 11th September 2026",
+   "Cost auditor: M/s. M. K. Singhal & Co., Cost Accountants (Firm Registration No. 00074), remuneration Rs. 3,75,000 plus taxes for FY 2026-27",
+   "Charge creation limit: Rs. 1750 crores under Section 180(1)(a)",
+   "Borrowing limit: Rs. 2000 crores under Section 180(1)(c)",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited",
+   "CIN: L99999UR1993PLC032518",
+   "Website: www.uttamsugar.in",
+   "Corporate Office: A-28, 11th Floor, CMA Tower, Sector-24, Noida-201301, Uttar Pradesh, India",
+   "AGM Notice for 31st AGM",
+   "Cut-off date for e-voting: 11th September, 2026",
+   "AGM through VC/OAVM",
+   "Scrutinizer: Mr. Naveen Kumar Rastogi, Practicing Company Secretary (Membership No. 3685)",
+   "E-voting service provider: NSDL",
+   "VC/OAVM provider: NIVIS CORPSERVE LLP through Cisco Webex",
+   "Revenue from Operations FY 2025-26: Rs 2,11,025.82 Lakhs (vs Rs 1,79,340.97 Lakhs previous year)",
+   "Profit Before Tax FY 2025-26: Rs 13,278.64 Lakhs (vs Rs 12,383.43 Lakhs previous year)",
+   "Profit After Tax FY 2025-26: Rs 10,002.61 Lakhs (vs Rs 9,041.16 Lakhs previous year)",
+   "EBITDA FY 2025-26: Rs 22,757.76 Lakhs (vs Rs 22,231.53 Lakhs previous year)",
+   "Sugar Season 2025-26: Cane crushed 301.51 Lakhs Qtls, Sugar produced 28.40 Lakhs Qtls, Recovery 9.42% (equivalent to C Hy 11.35%)",
+   "Sugar Season 2024-25: Cane crushed 401.68 Lakhs Qtls, Sugar produced 35.90 Lakhs Qtls, Recovery 8.94% (equivalent to C Hy 11.28%)",
+   "Alcohol production FY 2025-26: 876.89 Lakhs BL (vs 665.57 Lakhs BL previous year), increase of 32%",
+   "Power production FY 2025-26: 2,175 Lakhs KWH (vs 2,267 Lakhs KWH previous year)",
+   "CO2 gas sold FY 2025-26: 55.54 Lakhs kg for Rs 140 Lakhs (vs 49.01 Lakhs kg for Rs 135 Lakhs previous year)",
+   "Potash sold FY 2025-26: 71.99 lakhs KG for Rs 79 lakhs (vs 66.22 lakhs KG for Rs 100 lakhs previous year)",
+   "Overall cane crushing capacity now 27000 TCD across four units",
+   "SAP for SS 2025-26: UP Early Variety Rs 400/qtl, General Rs 390/qtl; Uttarakhand Early Rs 405/qtl, General Rs 395/qtl; Society Commission Rs 5.50/qtl",
+   "FRP for SS 2026-27: Rs 365/qtl for basic recovery 10.25%, premium Rs 3.56/qtl per 0.1% increase, reduction Rs 3.56/qtl per 0.1% decrease",
+   "Government prohibited sugar exports with immediate effect from 13th May 2026",
+   "BIS notified E22, E25, E27 & E30 standards; Excise duty exemption extended to these blends",
+   "E85 (85% ethanol) rollout initiated at 48 fuel pumps, scaling to 500 by Dec 2026 and 5000 by Dec 2027",
+   "All outstanding Preference Shares fully redeemed: 60,000 6.50% Non-Cumulative Redeemable Preference Shares and 8,25,000 10% Non-Cumulative Redeemable Preference Shares during year; additional 43,600 6.50% and 9,000 10% redeemed on 10th July 2026",
+   "Paid-up equity share capital as at 31st March 2026: Rs 38.14 Crores",
+   "Proposed borrowing limit enhancement to Rs 1,750 Crore under Section 180(1)(c); mortgage/charge creation limit enhancement to Rs 2,000 Crore under Section 180(1)(a)",
+   "Cost Auditor M/s M.K. Singhal & Co. re-appointed for FY 2026-27; remuneration to be ratified at AGM",
+   "Secretarial Auditor M/s N. K. Rastogi & Associates appointed for 5 years from conclusion of 30th AGM till 35th AGM",
+   "Company redeemed 60,000 6.50% Non-Cumulative Redeemable Preference shares and 8,25,000 10.00% Non-Cumulative Redeemable Preference shares during FY 2025-26",
+   "Final dividend declared on 6.50% NCRPS and 10.00% NCRPS of Face Value \u20b9100 for FY 2024-25 paid within due time",
+   "Final dividend of \u20b92.50 per equity share of face value \u20b910 for FY 2024-25 paid within due time",
+   "Cost Auditors M/s M.K. Singhal & Company re-appointed for FY 2026-27",
+   "Annual Return for FY ended 31st March 2026 uploaded on company website",
+   "Vigil Mechanism/Whistle Blower Policy in place",
+   "Nomination & Remuneration Committee and Audit Committee constituted as per regulations",
+   "CSR Committee constituted, CSR policy approved by Board",
+   "Risk Management Committee in place though not mandatory under Regulation 21",
+   "Business Responsibility Policy adopted though BRSR not mandatory",
+   "Compliance with Secretarial Standards of ICSI",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "Industrial relations remained cordial throughout the year",
+   "Maternity Benefit Act, 1961 complied with",
+   "POSH Policy formulated and Internal Complaints Committees set up",
+   "No material changes and commitments affecting financial position between 31st March 2026 and date of report",
+   "No change in nature of business during the year",
+   "Company not falling within top 1000 listed entities by market capitalization (Regulation 43A, 34(2)(f), 21)",
+   "Loan from State Government clarified as one-time assistance, no further demand since January 2008, waiver application filed",
+   "CSR obligation for FY 2025-26: Rs 307.99 Lakhs, fully spent"
+  ],
+  "outlook": [
+   {
+    "statement": "recovery and crushing has been increased gradually and is expected to further improve in the coming seasons",
+    "period": "coming seasons"
+   },
+   {
+    "statement": "There is adequate production capacity and steps are being taken to improve the cost efficiency. The impact of the above measures is also reflecting in the Audited accounts of the Company for the financial year under review. These measures are expected to go a long way in improving the performance of the Company.",
+    "period": "FY 2026-27 and coming season"
+   },
+   {
+    "statement": "The Company continued to focus on cane development activities, comprising of varietal replacement with proven high sugared varieties, change in pattern of sowing, ratoon management, encouraging use of Bio \u2013 fertilizers, Bio-pesticides, soil testing activities, crop protection etc. and modern agricultural practices due to which the recovery and crushing is expected to improve in the coming season.",
+    "period": "Coming season"
+   },
+   {
+    "statement": "UDL is also taking necessary steps, to expand its distillery capacity from 40 KLPD to 160 KLPD, to capitalize on the government's ethanol blending focus and increased production of ENA in the state of Uttarakhand.",
+    "period": "Future"
+   },
+   {
+    "statement": "Growing demand, favorable government policies, and the shift toward renewable energy make ethanol a strategic opportunity for business growth, environmental sustainability, and reduced carbon emissions.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Climate Change can have adverse impact on business and not having a correct strategy or its right implementation will severely affect the business continuity.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Target to determine details of total scope 3 emission and its intensity in the meantime.",
+    "period": "Future"
+   },
+   {
+    "statement": "Global growth is projected to slow to 2.5 percent in 2026, from 2.9 percent in 2025\u2014the lowest rate since the COVID-19 pandemic\u2014amid weaker prospects for economies dependent on energy imports and those directly affected by hostilities. Activity is expected to firm in 2027\u201328 as energy supplies recover, monetary easing resumes, and trade strengthens.",
+    "period": "2026-2028"
+   },
+   {
+    "statement": "India's growth being driven by strong domestic demand and consistent government spending. These factors have supported stable employment and helped contain inflation, which is expected to full 3.93% (retail inflation rate) and 4.78% (consumer food inflation rate) well within the target of Reserve Bank of India.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "India's manufacturing GVA growth strengthened with 7.72% in Q1 and 9.13% in Q2 of FY 2025-26; government aims to increase manufacturing contribution to GDP from 17% to 25% by 2030.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Global sugar production forecast down 1.2 million tons to 181.29 million tons in 2025-26; India production forecast to recover 3.6 million tons to 33.6 million tons.",
+    "period": "2025-26 (October-September)"
+   },
+   {
+    "statement": "Ethanol blending reached 20% average in December 2025, five years ahead of schedule; draft amendments for E85/E100 and higher blends (E22, E25, E27, E30) indicate policy direction for higher ethanol penetration.",
+    "period": "2025-26 onwards"
+   },
+   {
+    "statement": "Ethanol capacity has scaled to ~2000 crore litres with additional 400 crore litres expected by FY27; demand under E20 only ~1100 crore litres, leading to structural overcapacity and utilization of 65-75% for next three years.",
+    "period": "FY26-FY28"
+   },
+   {
+    "statement": "Sector transitioning into consolidation phase; focus shifting to brownfield capex, debottlenecking, and operational efficiencies.",
+    "period": "Near to medium term"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "bagasse based Co-generation Capacity of 122 MW (64 MW Exportable)",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "increased the capacity of its Distillery at Barkatpur Unit in phases from 75 KLPD to 250 KLPD by way of taking steps to increase the capacity and by installing the incineration boiler at Barkatpur unit",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "established Distillery at Libberheri Unit of the Company with the capacity 50 KLPD",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "enhanced the cane crushing capacity at Barkatpur, Khaikheri and Libberheri unit of the Company",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "Bagasse based Co-generation Capacity 122 MW (64 MW Exportable) by installation of Power Co-Generation facility at all four Sugar Factories",
+    "amount_cr": null,
+    "timeline": "Completed/Operational"
+   },
+   {
+    "item": "Increased the capacity of Distillery at Barkatpur Unit in phases from 75 KLPD to 250 KLPD by installing incineration boiler",
+    "amount_cr": null,
+    "timeline": "Completed/Operational"
+   },
+   {
+    "item": "Established Distillery at Libberheri Unit with capacity 50 KLPD",
+    "amount_cr": null,
+    "timeline": "Completed/Operational"
+   },
+   {
+    "item": "Enhanced cane crushing capacity at Barkatpur, Khaikheri and Libberheri unit. Overall cane crushing capacity now 27000 TCD",
+    "amount_cr": null,
+    "timeline": "Completed/Operational"
+   },
+   {
+    "item": "UDL expansion of distillery capacity from 40 KLPD to 160 KLPD",
+    "amount_cr": null,
+    "timeline": "Planned"
+   },
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 24.9188,
+    "timeline": "Season 2025-26"
+   },
+   {
+    "item": "Distillery unit expansion",
+    "amount_cr": 0.5683,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account and not provided for (Net of Advances)",
+    "amount_cr": 4.7,
+    "timeline": "As at 31st March 2026"
+   }
+  ],
+  "risks": [
+   "Irrational fixation of SAP by the State Government",
+   "Inadequate availability of sugarcane resulting into lower capacity utilization",
+   "Poor quality of sugarcane resulting in lower sugar recovery",
+   "Lower Sugar Price resulting into lower sugar sales realization",
+   "Excessive rains & floods damaging crop and reducing cane crush",
+   "Increase in SAP of Cane by Rs 30/-Qtls increasing cost",
+   "Government restriction on sugar export from 13th May till 30.09.2026",
+   "Lower sugar stock leading to export prohibition",
+   "Overcapacity concerns in ethanol industry",
+   "Feedstock diversification, pricing challenges, and uncertainty regarding post-E20 growth",
+   "Regulatory approval alone will not result in immediate nationwide availability of E100; vehicle launches, fuel pricing, ethanol distribution, retail infrastructure and consumer acceptance will determine adoption",
+   "Sugarcane shortfall due to adverse climatic conditions or crop disease affecting sugar production and profitability",
+   "Effect of climate change on agriculture produce, cyclic nature of sugar industry, farmers shifting to other crops and urbanization",
+   "Water being a finite resource posing risk to operations",
+   "Health & Safety risks leading to decreased productivity and increased costs",
+   "Climate Change adverse impact on business continuity",
+   "Regulatory risks in highly regulated Indian Sugar industry (pricing, export, import policies)",
+   "No independent assessment/evaluation of policies by external agency carried out",
+   "No dedicated anti-corruption or anti-bribery policy (governed by Code of Conduct)",
+   "No formal equal opportunity policy as per Rights of Persons with Disabilities Act, 2016",
+   "No transition assistance programs for retirement/termination",
+   "No assessment of value chain partners for health, safety, working conditions, human rights",
+   "No Life Cycle Perspective/Assessments (LCA) conducted for products",
+   "No significant social/environmental concerns identified from LCA or other means",
+   "No human rights due diligence conducted",
+   "No operations in water stressed areas",
+   "No operations in ecologically sensitive areas",
+   "No independent external assessments for environmental parameters",
+   "Conflict in the Middle East has triggered sharp increases in energy prices, renewed inflationary pressures, and fuelled expectations of tighter monetary policy.",
+   "Global growth projected to slow to 2.5% in 2026 from 2.9% in 2025.",
+   "Raw material risk: Sugarcane availability, quality, and cost impacted by weather, water, disease, labor, and farmer crop choices",
+   "Regulatory risk: Government controls on sugarcane pricing (FRP/SAP), sugar sales quotas, molasses movement, export restrictions, minimum selling price (MSP)",
+   "Sugar price risk: Domestic and international price volatility due to supply-demand, speculative trading, substitutes",
+   "Cyclical risk: Sugar cycle of surplus/shortage affecting prices and raw material costs",
+   "Environmental risk: Compliance with hazardous material handling and environmental regulations",
+   "Government policy risk: Unpredictable interventions on stock limits, export duties, pricing",
+   "Climatic & water risk: Sugarcane water-intensive; cultivation in drought-prone areas threatens sustainability",
+   "Finance risk: Dependence on timely working capital at competitive rates and long-term finance for capacity expansion",
+   "Competition from substitutes & gur: Diversion of cane to unorganized jaggery/khandsari; competition from alternative crops",
+   "Infrastructure constraints: Single-grade retail network (~1.03 lakh outlets), limited storage (~77.8 crore litres), reliance on 300+ centralized depots",
+   "Regional imbalance: Ethanol surplus in UP, Maharashtra, Karnataka vs deficit in southern/western states; logistics costs and margin pressure",
+   "Overcapacity: Ethanol capacity (~2000+ crore litres) far exceeds fuel (~1100 crore litres) and non-fuel (~350 crore litres) demand; only ~60% of offered ethanol absorbed",
+   "Material uncertainty about going concern",
+   "Impairment of financial and non-financial assets",
+   "Recoverability of trade receivables",
+   "Provisions for contingencies",
+   "Foreign currency exchange rate fluctuations",
+   "Supplier finance arrangements (though not applicable)",
+   "Unpaid financial assistance from Uttarakhand State Government of Rs 656.68 lakhs and interest accrued & due of Rs 503.63 lakhs since January 2008; application for waiver pending",
+   "Claims against the Company not acknowledged as debts: Excise duty/service tax/GST Rs 34.23 lakhs, Cane Purchase Tax Rs 207.45 lakhs, Administration Charges on Molasses Rs 280.96 lakhs, Corporate guarantee for subsidiary loan Rs 3,959.48 lakhs, pending court cases by/against ex-employees (amount not ascertainable), pending court cases under U.P.Z.A Act by Gaon Sabha at Khaikheri unit (amount not ascertainable)",
+   "Bank guarantees issued of Rs 1,331.10 lakhs",
+   "Credit risk from balances with banks",
+   "Liquidity risk",
+   "Revenue recognition risk",
+   "Inventory valuation risk",
+   "Capitalization of property, plant and equipment risk",
+   "Unsecured loan from State Government of Uttarakhand with unpaid interest",
+   "Default on loan from Uttarakhand State Government",
+   "internal financial control over financial reporting may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate",
+   "Material uncertainty about going concern: Management is aware of material uncertainties related to events or conditions that may cast significant doubt upon the Group's ability to continue as a going concern."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Uttam Distilleries Limited",
+    "holding_pct": 83.73,
+    "business": "40 KLPD Ethanol/ENA distillery (installed 48 KLPD) expandable upto 160 KLPD Ethanol/ENA plant based on all types Grains at Bahadarabad, Dist. Haridwar (Uttarakhand)"
+   },
+   {
+    "name": "Uttam Distilleries Limited",
+    "holding_pct": 83.73,
+    "business": "Distillery operations"
+   },
+   {
+    "name": "Uttam Distilleries Limited",
+    "holding_pct": 83.73,
+    "business": ""
+   },
+   {
+    "name": "Uttam Distilleries Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Uttam Distillery Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Uttam Distilleries Ltd.",
+    "holding_pct": null,
+    "business": "Distillery operations"
+   },
+   {
+    "name": "Subsidiary company (not named in this part)",
+    "holding_pct": null,
+    "business": "Availed loan with corporate guarantee from Uttam Sugar Mills Limited"
+   },
+   {
+    "name": "Uttam Distilleries Ltd.",
+    "holding_pct": null,
+    "business": "manufacture of Industrial Alcohol"
+   }
+  ],
+  "litigation": [
+   "No significant or material orders passed by Regulators or Courts or Tribunals impacting going concern status and Company's operations",
+   "No application made or proceeding pending under the Insolvency and Bankruptcy Code, 2016",
+   "No cases filed or pending pursuant to Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+   "No fines/penalties/settlements/compounding fees/imprisonment/punishment reported for FY2025-26 and FY2024-25",
+   "No complaints on corruption/conflict of interest against Directors/KMPs",
+   "No disciplinary action by law enforcement for bribery/corruption",
+   "No complaints on sexual harassment (POSH) in FY2025-26 and FY2024-25",
+   "No human rights complaints (sexual harassment, discrimination, child labour, forced labour, wages) in both years",
+   "No corrective action has been carried out for anti-competitive conduct since we do not have any cases pertaining to the same during the reporting cycle.",
+   "Disputed statutory dues of GST, Service Tax and Excise duty aggregating to Rs 292.93 Lakhs not deposited",
+   "Title deed dispute for freehold land at Khasra No.-122, Village Barkatpur, Pudrikhurd Motipur, Tehsil Najibabad, Distt. Bijnor (U.P.) - statutory procedures pending since 12th August 2004",
+   "Excise duty/service tax/GST claim of Rs 34.23 lakhs",
+   "Cane Purchase Tax claim of Rs 207.45 lakhs",
+   "Administration Charges on Molasses of Rs 280.96 lakhs (stay order granted by High Court of Uttarakhand)",
+   "Corporate guarantee for subsidiary loan of Rs 3,959.48 lakhs",
+   "Pending court cases by/against ex-employees (amount not ascertainable)",
+   "Pending court cases filed u/s 122B U.P.Z.A Act by Gaon Sabha at Khaikheri unit (amount not ascertainable)",
+   "Application for waiver of outstanding loan and interest from State Government of Uttarakhand pending with appropriate authority"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Power Purchase Agreement with Uttar Pradesh Power Corporation Ltd (UPPCL) and Uttarakhand Power Corporation Limited for surplus power export",
+    "value_cr": null
+   },
+   {
+    "statement": "Ethanol being supplied to Public Oil Marketing Companies for blending with Petrol under the Ethanol Blending Programme (EBP) of Central Government of India",
+    "value_cr": null
+   },
+   {
+    "statement": "Long-Term Offtake Agreement (LTOA) by OMCs for ethanol supply",
+    "value_cr": null
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties",
+    "nature": "Purchases",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Sales",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments",
+    "amount_cr": null
+   },
+   {
+    "party": "Promoters, directors, management, relatives",
+    "nature": "No materially significant related party transactions that may have potential conflict with interests of the Company at large",
+    "amount_cr": null
+   },
+   {
+    "party": "Companies where directors of the company is a director or a member",
+    "nature": "Trade receivables",
+    "amount_cr": 5.17
+   },
+   {
+    "party": "Companies where directors of the company is a director or a member",
+    "nature": "Trade receivables (Note No. 7)",
+    "amount_cr": 4.35
+   },
+   {
+    "party": "Uttam Adlakha & Sons Holdings Private Limited",
+    "nature": "Corporate guarantee for borrowings",
+    "amount_cr": null
+   },
+   {
+    "party": "Related party (refer note no.34 q)",
+    "nature": "Unsecured loan",
+    "amount_cr": 0.27
+   },
+   {
+    "party": "Managing Director",
+    "nature": "Personal guarantee for Zila Sahkari Bank term loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Uttam Adlakha & Sons Holdings Private Limited",
+    "nature": "Corporate guarantee for secured loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Unsecured loan from related party",
+    "amount_cr": 0.27
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed statutory dues of GST, Service Tax and Excise duty",
+    "amount_cr": 2.9293
+   },
+   {
+    "nature": "Excise duty/service tax/GST",
+    "amount_cr": 0.34
+   },
+   {
+    "nature": "Interest on Financial Assistance (Soft Loan) from Uttarakhand State Govt. not provided for",
+    "amount_cr": 0.53
+   },
+   {
+    "nature": "Cane Purchase Tax",
+    "amount_cr": 2.07
+   },
+   {
+    "nature": "Administration Charges on Molasses (stay order granted by High Court of Uttarakhand)",
+    "amount_cr": 2.81
+   },
+   {
+    "nature": "Corporate guarantee given to bank for loan availed by subsidiary company",
+    "amount_cr": 39.59
+   },
+   {
+    "nature": "Pending court cases by/against ex-employees",
+    "amount_cr": null
+   },
+   {
+    "nature": "Pending court cases filed u/s 122B U.P.Z.A Act by Gaon Sabha at Khaikheri unit",
+    "amount_cr": null
+   },
+   {
+    "nature": "Bank guarantees issued",
+    "amount_cr": 13.31
+   },
+   {
+    "nature": "Unsecured loan from State Government of Uttarakhand with unpaid interest",
+    "amount_cr": 0.5252
+   }
+  ]
+ }
+}

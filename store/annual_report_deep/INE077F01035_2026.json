@@ -1,0 +1,1379 @@
+{
+ "isin": "INE077F01035",
+ "name": "GOCL Corporation Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31107_GOCLCORP_2025_2026_A_16236893_02092026163843.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 779128,
+ "chunks": 20,
+ "chunks_ok": 20,
+ "facts": {
+  "business": {
+   "description": "GOCL Corporation Limited operates as an integrated Electronics Manufacturing Services (EMS) provider delivering end-to-end solutions across the product lifecycle, and focuses on unlocking value from strategically located real estate assets. The company is pursuing entry into the energy sector through the proposed acquisition of Hinduja National Power Corporation Limited (HNPCL).",
+   "products": [
+    {
+     "name": "Electronics Manufacturing Services (EMS)",
+     "share_of_revenue_pct": null,
+     "note": "End-to-end solutions including design, engineering, manufacturing, testing, fulfilment, ODM, box build integration, prototyping, direct fulfilment"
+    },
+    {
+     "name": "Realty",
+     "share_of_revenue_pct": null,
+     "note": "Commercial developments, land parcels, strategic investments; monetisation of Hyderabad land bank and Bangalore Ecopolis project"
+    },
+    {
+     "name": "Realty - Ecopolis Project",
+     "share_of_revenue_pct": null,
+     "note": "Mixed-use commercial project on 38.15 acres in Bengaluru, joint development with Hinduja Realty Ventures Limited. Early monetization by sale of entire project in progress; ~157.21 acres sold so far."
+    },
+    {
+     "name": "Realty - Kukatpally Land",
+     "share_of_revenue_pct": null,
+     "note": "Land monetization in progress at Kukatpally, Hyderabad."
+    },
+    {
+     "name": "Renting / Lease of Properties",
+     "share_of_revenue_pct": 50,
+     "note": "NIC Code 68100"
+    },
+    {
+     "name": "PCB Assembly",
+     "share_of_revenue_pct": null,
+     "note": "Small amount of hazardous waste generation, disposed through authorized vendor"
+    },
+    {
+     "name": "energetics products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "electronics business products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "rent income",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Products sold to customers with powder factor provisions",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of products to certain customers is subject to powder factor provisions based on blast output achieved at customer's site"
+    },
+    {
+     "name": "Detonators and other blasting devices",
+     "share_of_revenue_pct": null,
+     "note": "Discontinued operations"
+    },
+    {
+     "name": "Sale of products",
+     "share_of_revenue_pct": null,
+     "note": "Continuing operations"
+    },
+    {
+     "name": "Service income",
+     "share_of_revenue_pct": null,
+     "note": "Continuing operations"
+    },
+    {
+     "name": "Other operating revenue",
+     "share_of_revenue_pct": null,
+     "note": "Continuing operations"
+    },
+    {
+     "name": "Explosives",
+     "share_of_revenue_pct": null,
+     "note": "Through subsidiary IDL Explosives Limited"
+    },
+    {
+     "name": "Detonators and other blasting devices (Energetics Business)",
+     "share_of_revenue_pct": null,
+     "note": "Ceased operations at Kukatpally, Hyderabad; classified as discontinued operations"
+    },
+    {
+     "name": "Energetics products, commercial explosives and special products for Defence and Space",
+     "share_of_revenue_pct": null,
+     "note": "Part of Group's revenue streams"
+    },
+    {
+     "name": "Products (unspecified)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of products recognized at dispatch, delivery, or customer acceptance; export incentives accounted for; powder factor provision estimated based on blast output at customer site"
+    },
+    {
+     "name": "Electronics Manufacturing Services",
+     "share_of_revenue_pct": null,
+     "note": "Continuing operations"
+    },
+    {
+     "name": "Realty / Property Development",
+     "share_of_revenue_pct": null,
+     "note": "Continuing operations"
+    }
+   ],
+   "customers": [
+    "Automotive",
+    "Consumer Electronics",
+    "Electric Mobility (EV)",
+    "Internet of Things (IoT)",
+    "Aerospace & Defence",
+    "Industrial Electronics",
+    "Telecommunications",
+    "OEMs from concept to production (EMS)",
+    "PSU customers (former IDL Explosives business)",
+    "Automotive sector",
+    "Industrial sector",
+    "Aerospace sector",
+    "Defense sector",
+    "OEMs",
+    "Customers with powder factor agreements based on blast output"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "International (UK investment)",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    },
+    {
+     "name": "National (6 States)",
+     "share_pct": 100
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    },
+    {
+     "name": "Rest of the world",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "plants": [
+    {
+     "location": "Gummadidala, Hyderabad",
+     "capacity": "New 3-acre EMS facility with automated SMT production lines, MES, 3D SPI, 3D AOI"
+    },
+    {
+     "location": "Gummadidala, near Hyderabad",
+     "capacity": "EMS operations recently relocated"
+    },
+    {
+     "location": "Visakhapatnam, Andhra Pradesh (HNPCL - proposed merger)",
+     "capacity": "1,040 MW (2\u00d7520 MW) coal-based thermal power plant"
+    },
+    {
+     "location": "Gummadidala near Hyderabad",
+     "capacity": "EMS facilities fully operational following receipt of factory licence"
+    },
+    {
+     "location": "Gummadidala, Hyderabad",
+     "capacity": "Electronics Manufacturing Services (EMS)"
+    },
+    {
+     "location": "Kukatpally, Hyderabad",
+     "capacity": ""
+    },
+    {
+     "location": "Yelahanka, Bengaluru (Ecopolis)",
+     "capacity": ""
+    },
+    {
+     "location": "Kukatpally, Hyderabad",
+     "capacity": "Detonators and other blasting devices manufacturing operations (ceased)"
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Automotive",
+    "Consumer Electronics",
+    "Electric Mobility (EV)",
+    "Internet of Things (IoT)",
+    "Aerospace & Defence",
+    "Industrial Electronics",
+    "Telecommunications",
+    "Real Estate",
+    "Energy (planned)",
+    "commercial",
+    "IOT",
+    "industrial",
+    "defence",
+    "thermal power generation",
+    "electronics",
+    "Aerospace",
+    "Defense",
+    "Power",
+    "Energy",
+    "Space",
+    "Commercial explosives",
+    "property development"
+   ],
+   "brands_or_certifications": [
+    "Hinduja Group",
+    "Raffles London at The OWO (investment)",
+    "ISO 14001:2015",
+    "ISO 45001:2018",
+    "ISO 9001:2015",
+    "IPC 610",
+    "IPC 7711"
+   ],
+   "raw_materials": [
+    "Raw materials, components and other supplies held for use in the production of finished products",
+    "coating material",
+    "metals",
+    "acids and chemicals",
+    "coal and diesel",
+    "coal",
+    "diesel"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The proposed acquisition of HNPCL is expected to enhance the Company's operational scale, strengthen the resilience of its cash flows, and position GOCL to participate in India's expanding power ecosystem, while creating a strong platform for long-term shareholder value creation.",
+    "period": "Future (subject to regulatory approvals)"
+   },
+   {
+    "statement": "Thermal capacity requirement by 2034-35 is estimated at approximately 3,07,000 MW against 2,11,855 MW installed capacity as on 31.03.2023. Rising peak demand and policy tailwinds in India have renewed interest in thermal generation.",
+    "period": "By 2034-35"
+   },
+   {
+    "statement": "The Board will continue to strengthen the businesses that define the future while pursuing new avenues that complement the portfolio and broaden capabilities.",
+    "period": "Years ahead"
+   },
+   {
+    "statement": "GOCL-EMS aims to strengthen its position as an Original Design Manufacturing (ODM) solutions provider by moving up the value chain from manufacturing to product design and engineering services. Key priorities include increasing local value addition, developing indigenous product designs, expanding into high-growth sectors such as industrial electronics, defence, IOT, Automotive and e-Mobility, and leveraging India's growing electronics ecosystem.",
+    "period": "Over the next few years"
+   },
+   {
+    "statement": "HNPCL offers significant long-term growth potential through a planned 600 MW brownfield expansion. The existing large project site and coastal location also offer long-term options for FGD retrofits and ammonia/hydrogen pilot co-firing. The plant has a residual life of over 20 years, reasonable cost per MW, established infrastructure, and good payback visibility under stable operations.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "The Company is in the process of early monetization of the 'ecopolis' project by sale of the entire project. The OWO project in London, UK is receiving good response and holds potential for shareholders' value.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Indian economy projected to grow at 6.6% in FY 2026-27 driven by strong domestic fundamentals and continued policy support. EMS business benefited from India's strong electronics manufacturing momentum driven by PLI-led investments, expansion of domestic component ecosystem, semiconductor initiatives, increasing exports, and Make in India program.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Outlook and plans have been mentioned in the Board's Report.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Board of Directors approved a 'Scheme of Merger by Absorption' of Hinduja National Power Corporation Limited (HNPCL) with and into the Company with appointed date of April 1, 2025, subject to requisite statutory and regulatory approvals and sanction of the Hon'ble National Company Law Tribunal (NCLT). The Company has received no objection letters from the Stock Exchanges.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Company entered into an Agreement to Sell on March 27, 2026 with the SPVs of Tata Realty and Infrastructure Limited for the sale of the Company's property situated at Yelahanka, Bengaluru, known as 'Ecopolis' for approximately Rs 81,500 lakhs. The Company received an advance of Rs 100 lakhs during the year.",
+    "period": "Future"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "New EMS facility at Gummadidala, Hyderabad",
+    "amount_cr": null,
+    "timeline": "Commissioned during FY 2025-26"
+   },
+   {
+    "item": "600 MW brownfield expansion at HNPCL thermal power plant",
+    "amount_cr": null,
+    "timeline": "Planned"
+   },
+   {
+    "item": "Merger with Hinduja National Power Corporation Limited (HNPCL) operating a 1040 MW thermal power plant (520 MW X 2) near Visakhapatnam, Andhra Pradesh",
+    "amount_cr": null,
+    "timeline": "Subject to requisite approvals"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account (Net of capital advances)",
+    "amount_cr": 1.5,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account (Net of Capital advances)",
+    "amount_cr": 1.5,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "HNPCL has long-term supply contracts and high availability",
+    "value_cr": null
+   },
+   {
+    "statement": "Memorandum of Understanding on March 27, 2024 with Squarespace Builders Private Limited, Hyderabad for sale of Company's Scheduled Property of 264.50 acres of land at Kukatpally, Hyderabad for total consideration of Rs 341800 lakhs",
+    "value_cr": 3418.0
+   },
+   {
+    "statement": "Agreement to Sell on March 27, 2026 with SPVs of Tata Realty and Infrastructure Limited for sale of property at Yelahanka, Bengaluru (Ecopolis) for consideration of approximately Rs 81500 lakhs",
+    "value_cr": 815.0
+   },
+   {
+    "statement": "Sale of IDL Explosives Limited to Apollo Defence Industries Private Limited for an aggregate consideration of Rs 10,700 lakhs concluded on November 15, 2025.",
+    "value_cr": 107.0
+   },
+   {
+    "statement": "Sale of 7.71 acres of land forming part of JDA and 126 acres out of remaining portion of land at Kukatpally, Hyderabad to Squarespace Builders Private Limited. Total consideration for 264.50 acres was Rs 341,800 lakhs.",
+    "value_cr": 3418.0
+   },
+   {
+    "statement": "Agreement to Sell property at Yelahanka, Bengaluru (Ecopolis) to SPVs of Tata Realty and Infrastructure Limited for approximately Rs 81,500 lakhs. Advance of Rs 100 lakhs received.",
+    "value_cr": 815.0
+   },
+   {
+    "statement": "The Company had entered into a Memorandum of Understanding on March 27, 2024 with Squarespace Builders Private Limited, Hyderabad for sale of the Company's Scheduled Property of 264.50 acres of land situated at Kukatpally, Hyderabad, for a total consideration of H341800 [out of which 32 acres of land was under joint development agreement (JDA)].",
+    "value_cr": 3418.0
+   },
+   {
+    "statement": "Agreement to Sell entered on March 27, 2026 with SPVs of Tata Realty and Infrastructure Limited for sale of property at Yelahanka, Bengaluru (Ecopolis) for consideration of approximately Rs 81,500 lakhs",
+    "value_cr": 815
+   },
+   {
+    "statement": "Advance of Rs 100 lakhs received towards proposed sale of Ecopolis property",
+    "value_cr": 1
+   },
+   {
+    "statement": "Sale of entire equity shareholding in IDL Explosives Limited to Apollo Defence Industries Private Limited",
+    "value_cr": 107
+   },
+   {
+    "statement": "Agreement to Sell property situated at Yelahanka, Bengaluru (Ecopolis) to SPVs of Tata Realty and Infrastructure Limited",
+    "value_cr": 815
+   }
+  ],
+  "risks": [
+   "Thermal power plants face permission hurdles and local pushback",
+   "Tariff/regulatory issues need active management for HNPCL",
+   "Greenfield thermal plants require heavy capex and 6-10 years from planning to commissioning",
+   "Securing coal linkages, managing logistics, and obtaining clearances add delays and uncertainty",
+   "Deficiency noted in internal financial controls with reference to identification of related parties",
+   "Material related party transactions with HEIL and HNPCL identified subsequently, requiring remedial actions including shareholder approval and representation before regulatory authorities",
+   "Low price realization of finished products, increase in raw material costs, loss of business from major PSU customers (IDL Explosives)",
+   "Transition risk from EMS/Realty to thermal power generation business",
+   "Environmental and operational risks may result in regulatory penalties, operational disruptions, increased costs and reputational impact. Delays in obtaining approvals and licences may affect project timelines and business expansion.",
+   "The Company may encounter intense competition from both domestic and international players.",
+   "The Company is exposed to the risk of delays or shortfalls in loan recoveries, which may adversely affect cash flows, asset quality, profitability, and capital deployment.",
+   "Prolonged or unforeseen litigation, including tax and regulatory disputes, may adversely affect the Company's performance and reputation. Such proceedings may lead to financial penalties, operational disruptions and management distraction.",
+   "The integration of technology into the Company's operations increases its exposure to cybersecurity threats and IT failures.",
+   "Geopolitical frictions and strategic trade restrictions continue to fragment global freight routes. Delays in multi-modal transport corridors slow down the movement of critical industrial parts.",
+   "Rising cost of doing business due to rising wages, labour inflation, logistics and raw materials in key manufacturing regions.",
+   "Sub-par rainfall and the El Ni\u00f1o effect place severe stress on thermal power plants by causing acute cooling water shortages.",
+   "financial risks",
+   "operational risks",
+   "sectorial risks",
+   "sustainability (ESG) related risks",
+   "information risks",
+   "cyber security risks",
+   "Corporate guarantees amounting to Rs. 131610 lakhs were not processed as Related Party Transactions and prior approval of Audit Committee, Board of Directors and shareholders was not obtained as required under the relevant provisions of the Act and SEBI Regulations.",
+   "The Company has extended a loan to another company, with an outstanding balance of Rs. 228,190 Lakhs as of March 31, 2026. Assessing the recoverability of loans involves making significant judgments, particularly in cases where the loan may become unrecoverable due to an event or the recoverable amount may be less than the recorded value.",
+   "The Company encounters various tax challenges from local tax authorities in multiple jurisdictions encompassing a wide range of tax matters, both direct and indirect in nature. The complexities present involve considerable uncertainty, resolution timelines, and potential financial impact of taxation and litigation exposures.",
+   "Audit trail was not enabled at database level for accounting software to log any direct data changes and the Payroll Application does not have any audit trail feature.",
+   "Material weakness in internal controls with respect to identification, approval, and disclosure of related party transactions resulting in non-compliance with the Act and SEBI LODR Regulations",
+   "Company is not capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+   "Onerous contracts where expected economic benefits are lower than unavoidable costs of meeting obligations",
+   "Contingent liabilities relating to claims, litigations, assessments, fines and penalties",
+   "Impairment of financial assets based on expected credit losses",
+   "Impairment of non-financial assets when carrying amounts may not be recoverable",
+   "Credit risk",
+   "Liquidity risk",
+   "Market risk (interest rate, foreign currency, equity price)",
+   "Commodity price risk (raw materials: coating material, metals, acids and chemicals; fuel: coal and diesel)",
+   "Actuarial risks (investment, interest rate, longevity, salary) for defined benefit plans",
+   "Corporate guarantees amounting to Rs 131,610 lakhs were not processed as Related Party Transactions; prior approval of Audit Committee, Board and shareholders not obtained. Post-facto shareholders' approval process initiated.",
+   "Recoverability of inter-corporate loan to Hinduja Group Limited with outstanding balance of Rs 228,190 lakhs as of March 31, 2026.",
+   "Litigations and contingent liabilities from tax challenges in multiple jurisdictions involving considerable uncertainty and potential financial impact.",
+   "Cessation of detonators and other blasting devices manufacturing operations at Kukatpally, Hyderabad resulting in classification as discontinued operations.",
+   "Uncertainty in tax positions where regulations are subject to interpretation",
+   "Provisions for powder factor based on estimates of blast output at customer site",
+   "Impairment of financial assets based on expected credit losses and forward-looking estimates",
+   "Contingent liabilities from possible obligations arising from past events",
+   "Foreign currency risk hedged via forward currency contracts",
+   "Credit risk from counter-party failure to repay or service debt",
+   "Liquidity risk - inability to meet financial obligations as they become due",
+   "Market risk from changes in interest rates, foreign currency exchange rates, commodity prices, equity prices",
+   "Foreign currency exchange rate risk primarily with respect to USD",
+   "Interest rate risk on floating rate borrowings (though no exposure as at March 31, 2026)",
+   "Foreign currency risk from USD denominated financial instruments",
+   "Equity price risk from quoted equity instruments",
+   "Commodity price risk from fluctuation in prices of raw materials (coating material, metals, acids and chemicals) and fuel (coal and diesel)",
+   "Actuarial risks: investment risk, interest rate risk, longevity risk, salary risk",
+   "Litigation risks from various tax demands and claims",
+   "Regulatory risk: Coal India barred IDL Explosives Limited from contract awards for two years",
+   "Corporate guarantees to HNPCL and Hinduja Energy India Limited not processed as Related Party Transactions under Companies Act, 2013 and Regulation 23 of Listing Regulations; prior approval of Audit Committee, Board and shareholders not obtained. Post-facto shareholders' approval process initiated.",
+   "Scheme of Merger by Absorption of Hinduja National Power Corporation Limited with the Company pending statutory and regulatory approvals including NCLT sanction.",
+   "Implementation of Labour Codes (Code on Wages 2019, Industrial Relations Code 2020, Code on Social Security 2020, Occupational Safety Health and Working Conditions Code 2020) resulting in increase in gratuity liability by Rs 68.99 lakhs."
+  ],
+  "subsidiaries": [
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": null,
+    "business": "Explosives (divested during FY 2025-26)"
+   },
+   {
+    "name": "UK subsidiary",
+    "holding_pct": null,
+    "business": "Strategic investment in redevelopment of Old War Office, London (Raffles London at The OWO)"
+   },
+   {
+    "name": "HGHL Holdings Limited",
+    "holding_pct": null,
+    "business": "Based in United Kingdom. OWO project, a hospitality and residential project in London, UK. Reported profit of Rs. 2101 Lakhs (previous year Rs. 748 Lakhs)."
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": null,
+    "business": "Engaged in business of Explosives. Disinvested effective November 15, 2025. Reported loss of Rs. 2801 Lakhs up to Nov 15, 2025 (previous full year loss Rs. 1843 Lakhs) due to low price realization, increase in raw material costs, loss of business from major PSU customers."
+   },
+   {
+    "name": "Hinduja National Power Corporation Limited (HNPCL)",
+    "holding_pct": null,
+    "business": "Owns and operates a 1,040 MW (2\u00d7520 MW) coal-based thermal power plant near Visakhapatnam, Andhra Pradesh. Proposed Scheme of Merger with the Company. Reported income from operations of \u20b9293098 lakhs, net profit of \u20b926054 lakhs, net worth of \u20b9804034 lakhs in FY 2025-26."
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Explosives (disinvestment effective November 15, 2025)"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary (upto November 15, 2025)"
+   },
+   {
+    "name": "HGHL Holdings Limited, UK",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": null,
+    "business": "Wholly Owned Material Subsidiary (up to November 15, 2025)"
+   },
+   {
+    "name": "HGHL Holdings Ltd., UK",
+    "holding_pct": null,
+    "business": "Material Subsidiary"
+   },
+   {
+    "name": "HGHL Holdings Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Explosives manufacturing"
+   },
+   {
+    "name": "HGHL Holdings Limited",
+    "holding_pct": 100,
+    "business": "Holding company for downstream joint venture investments"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary (up to November 15, 2025); sold to Apollo Defence Industries Private Limited"
+   },
+   {
+    "name": "HGHL Whitehall S.A.R.L, Holdings Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary; Investment in Luxembourg"
+   },
+   {
+    "name": "Hinduja National Power Corporation Limited",
+    "holding_pct": null,
+    "business": "Fellow Subsidiary; proposed merger by absorption into the Company"
+   },
+   {
+    "name": "Hinduja Energy (India) Limited",
+    "holding_pct": null,
+    "business": "Fellow Subsidiary"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": null,
+    "business": "detonators and other blasting devices manufacturing operations"
+   },
+   {
+    "name": "HGHL Holdings Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary that obtained loans from Union Bank of India Hong Kong and Dubai branches supported by SBLCs from the company"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary disinvested during the year (ceased to be consolidated from November 15, 2025)"
+   },
+   {
+    "name": "57 Whitehall Investments S.\u00e0 r.l.",
+    "holding_pct": 10,
+    "business": "Downstream joint venture developing a residential and hospitality project outside India, held through HGHL Holdings Limited"
+   },
+   {
+    "name": "HGHL Holdings Limited",
+    "holding_pct": 100,
+    "business": "Investment in OWO Project through 57 Whitehall Investments S.A.R.L., Luxembourg"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 0,
+    "business": "Explosives manufacturing (subsidiary up to November 15, 2025)"
+   },
+   {
+    "name": "IDL Explosives Limited",
+    "holding_pct": 100,
+    "business": "Explosives"
+   }
+  ],
+  "auditor": {
+   "name": "Haribhakti & Co. LLP",
+   "opinion": "Unmodified Opinion with Emphasis of Matter",
+   "key_audit_matters": [
+    "Transactions involving provision of security and guarantees in favour of HEIL and HNPCL, subsequently considered as Material Related Party Transactions",
+    "Corporate guarantees aggregating Rs. 131,610 lakhs issued in favour of other entities were not processed as Related Party Transactions; prior approval of Audit Committee, Board and shareholders not obtained; ratified post-facto; post-facto shareholders' approval obtained on July 7, 2026",
+    "Revenue Recognition (Refer note 25 and 45 to the standalone financial statements)",
+    "Litigations and Contingent Liabilities (Refer note 37 to the standalone financial statements)",
+    "Recoverability of loan granted to Other Company (Refer note 15 to the standalone financial statements)",
+    "Accounting and Disclosure of the cessation of detonators and other blasting devices (Energetics Business) manufacturing operations at Kukatpally, Hyderabad resulting into classification of said business as discontinued operations as per Ind AS 105 (Refer Note No. 11 and 45 to Standalone Financial Statements)",
+    "Revenue Recognition (Refer note 27 and 48 to the Consolidated Financial Statements)",
+    "Litigations and Contingent Liabilities (Refer note 39 to the Consolidated Financial Statements)",
+    "Recoverability of loan granted to Other Company (Refer note 15 to the Consolidated Financial Statements)",
+    "Accounting and Disclosure of the cessation of detonators and other blasting devices (Energetics Business) manufacturing operations at Kukatpally, Hyderabad resulting into classification of said business as discontinued operations as per Ind AS 105 (Refer Note No. 16 and 48 to Consolidated Financial Statements)",
+    "Identification, approval and disclosure of related party transactions",
+    "Audit trail (edit log) facility not enabled at database level for accounting software",
+    "Payroll Application does not have any audit trail feature"
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter in respect of certain transactions involving the provision of security and guarantees in favour of HEIL and HNPCL, which were subsequently considered as Material Related Party Transactions. At the time of initiation, HEIL and HNPCL were not identified as related parties based on assessment of the relationship.",
+    "Transaction with HEIL and HNPCL which are related parties and being material related party transactions, the Company shall take remedial actions including obtaining necessary approval from shareholders",
+    "Corporate guarantees aggregating Rs. 131,610 lakhs not processed as Related Party Transactions; prior approvals not obtained; post-facto ratification and shareholder approval obtained",
+    "Emphasis of Matter: Corporate guarantees amounting to Rs. 131610 lakhs were not processed as Related Party Transactions and prior approval of Audit Committee, Board of Directors and shareholders was not obtained as required under the relevant provisions of the Act and SEBI Regulations. The transactions have been ratified by the Audit Committee and Board of Directors at their respective meetings held on May 29, 2026. Management has initiated the process of obtaining post-facto shareholders' approval. Based on management's internal assessment and legal advice, necessary adjustments and disclosures have been made. Pending regularisation, the outcome is not expected to have a material impact on the standalone financial statements. Opinion is not modified in respect of this matter.",
+    "Material weakness in internal financial controls with respect to identification, approval, and disclosure of related party transactions",
+    "Non-compliance with Section 177 of the Act for related party transactions",
+    "Company not capable of meeting its liabilities within one year from balance sheet date",
+    "Emphasis of Matter: Corporate guarantees amounting to Rs 131,610 lakhs were not processed as Related Party Transactions; prior approval of Audit Committee, Board of Directors and shareholders not obtained as required under Companies Act, 2013 and SEBI Listing Regulations. Ratified by Audit Committee and Board on May 29, 2026. Post-facto shareholders' approval process initiated. Outcome not expected to have material impact.",
+    "Material weakness in internal financial controls with respect to identification, approval and disclosure of related party transactions",
+    "Emphasis of matter regarding audit trail not enabled at database level and Payroll Application lacking audit trail feature",
+    "Other Matter: Did not audit financial statements of one subsidiary (foreign company) with total assets of Rs 97,158.61 lakhs and net assets of Rs 97,000.39 lakhs as at March 31, 2026"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. M. Vasudev Rao appointed as Non-Executive Director w.e.f. July 2, 2025",
+    "Mr. M. Vasudev Rao (DIN: 00042884) appointed as Non-Executive & Non-Independent Director",
+    "Mr. Sudhanshu Tripathi (DIN: 06431686) retired by rotation at the 64th AGM",
+    "Retirement of Mr. Sudhanshu Kumar Tripathi as Director effective August 02, 2025",
+    "Appointment of Mr. Mosalkanti Vasudev Rao as Non-Executive Director effective July 02, 2025",
+    "Mr. Amar Chintopanth became Chairperson of CSR Committee effective August 01, 2025",
+    "Mr. M. Vasudev Rao became Member of CSR Committee effective August 01, 2025",
+    "Mr. Sudhanshu K Tripathi, Non-Executive Director retired by rotation on August 01, 2025.",
+    "Mr. M. Vasudev Rao appointed as Non-Executive Director effective July 02, 2025",
+    "Mr. Sudhanshu K Tripathi retired by rotation at the 64th AGM held on August 01, 2025",
+    "Mr. M. Vasudev Rao appointed as Member of Risk Management Committee w.e.f. July 02, 2025",
+    "Re-appointment of Mr. Ravi Jain as Whole-Time Director & CFO proposed via Postal Ballot (Board meeting May 29, 2026)",
+    "Mr. M. Vasudev Rao was appointed on July 02, 2025",
+    "Mr. Sudhanshu Kumar Tripathi has retired as Director of the Company effective from August 02, 2025",
+    "Mrs. Manju Agarwal appointed as Independent Director from November 28, 2024",
+    "Mr. M. Vasudev Rao appointed as Non Executive Director from July 02, 2025",
+    "Mr. Sudhanshu Kumar Tripathi ceased as Chairman & Non Executive Director on August 01, 2025",
+    "Ms. Kanchan Chitale ceased as Independent Director on September 24, 2024",
+    "Mr. Ravi Jain appointed as Whole Time Director and Chief Financial Officer from July 04, 2024",
+    "Mr. Pankaj Kumar ceased as Managing Director and Chief Executive Officer on June 30, 2024",
+    "Mr. Ravi Jain appointed as Whole Time Director and Chief Financial Officer (Whole Time Director from July 04, 2024)",
+    "Re-appointment of Mr. M. Vasudev Rao (DIN: 00042884) as Director liable to retire by rotation proposed at AGM"
+   ],
+   "promoter_holding_pct": 67.82,
+   "top_shareholders": [
+    {
+     "name": "Hinduja Capital Limited (HCL) Mauritius (earlier Hinduja Power Limited, Mauritius)",
+     "pct": 67.82
+    },
+    {
+     "name": "Promoters",
+     "pct": 67.82
+    },
+    {
+     "name": "Foreign Portfolio Investors",
+     "pct": 5.08
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 1.25
+    },
+    {
+     "name": "Indian Public",
+     "pct": 19.32
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 2.87
+    },
+    {
+     "name": "Hinduja Capital Limited, Mauritius (Holding Company-Promoter)",
+     "pct": 67.82
+    },
+    {
+     "name": "Hinduja Capital Limited, Mauritius",
+     "pct": null
+    },
+    {
+     "name": "Hinduja Capital Limited, Mauritius",
+     "pct": 67.82
+    }
+   ],
+   "auditor_change": "No change. Haribhakti & Co. LLP appointed at 61st AGM in 2022 for five years until conclusion of 66th AGM."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Whole-Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Mr. A. Satyanarayana",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Debabrata Sarkar",
+     "role": "Chairman"
+    },
+    {
+     "name": "Ravi Jain",
+     "role": "Whole-Time Director & Chief Financial Officer"
+    },
+    {
+     "name": "A. Satyanarayana",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sudhanshu Tripathi",
+     "role": "Director (upto August 01, 2025)"
+    },
+    {
+     "name": "Amar Chintopanth",
+     "role": "Independent Director, Chairperson CSR Committee (effective August 01, 2025)"
+    },
+    {
+     "name": "Aditya Sapru",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Manju Agarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "M. Vasudev Rao",
+     "role": "Non-Independent Director (effective July 02, 2025)"
+    },
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Whole-Time Director & CFO (DIN: 09184688)"
+    },
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Whole-Time Director & Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Debabrata Sarkar",
+     "role": "Chairperson, Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mr. Aditya Sapru",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mr. Amar Chintopanth",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mrs. Manju Agarwal",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mr. M. Vasudev Rao",
+     "role": "Non-Executive & Non-Independent Director"
+    },
+    {
+     "name": "Mr. Kalyana Ram Putrevu",
+     "role": "Chief Operating Officer - Electronics Manufacturing Services"
+    },
+    {
+     "name": "Mr. Debabrata Sarkar",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Amar Chintopanth",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Aditya Sapru",
+     "role": "Director"
+    },
+    {
+     "name": "Mrs. Manju Agarwal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Mosalkanti Vasudev Rao",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Director"
+    },
+    {
+     "name": "Ravi Jain",
+     "role": "Whole Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Debarata Sarkar",
+     "role": "Chairman & Independent Director"
+    },
+    {
+     "name": "Mr. Aditya Sapru",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Amar Chintopanth",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Manju Agarwal",
+     "role": "Independent Director (from November 28, 2024)"
+    },
+    {
+     "name": "Mr. M. Vasudev Rao",
+     "role": "Non Executive Director (from July 02, 2025)"
+    },
+    {
+     "name": "Mr. Sudhanshu Kumar Tripathi",
+     "role": "Chairman & Non Executive Director (up to August 01, 2025)"
+    },
+    {
+     "name": "Ms. Kanchan Chitale",
+     "role": "Independent Director (up to September 24, 2024)"
+    },
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Whole Time Director and Chief Financial Officer (Whole time director from July 04, 2024)"
+    },
+    {
+     "name": "Mr. Pankaj Kumar",
+     "role": "Managing Director and Chief Executive Officer (up to June 30, 2024)"
+    },
+    {
+     "name": "Mr. Ravi Jain",
+     "role": "Whole Time Director and Chief Financial Officer (Whole Time Director from July 04, 2024)"
+    },
+    {
+     "name": "A.Satyanarayana",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 57
+  },
+  "dividend_per_share": 30,
+  "other_notable": [
+   "Divestment of IDL Explosives Limited completed during FY 2025-26",
+   "Monetisation of substantial part of Hyderabad land bank and initiation of Bangalore Ecopolis project monetisation",
+   "Proposed acquisition of Hinduja National Power Corporation Limited (HNPCL) - 1,040 MW operational thermal asset with 20+ years residual life, located near Vizag, Andhra Pradesh",
+   "Scheme of Merger approved by Board on December 15, 2025, subject to statutory and regulatory approvals",
+   "CSR expenditure of Rs. 104 Lakhs across 2 projects including renovation of Smt. Jamuna Parmanand Hinduja Mahila Ghat at Haridwar",
+   "More than 25 learning and development programmes conducted with 90%+ employee participation",
+   "Women employees constitute 20% of workforce",
+   "Zero complaints relating to sexual harassment received during FY 2025-26",
+   "Debt-free with Rs. 2300+ Cr cash and investments",
+   "65 years business legacy",
+   "Company exited Energetics business and disinvested wholly owned material subsidiary IDL Explosives Limited effective November 15, 2025",
+   "Scheme of Merger of HNPCL with the Company initiated during the year",
+   "Credit Rating: Infomerics assigned long-term rating IVR A / RWDI and short-term rating IVR A1 / RWDI",
+   "CSR spent: Rs. 33.00 lakhs during FY 2025-26; Rs. 67.12 lakhs transferred to CSR Unspent Account for ongoing project",
+   "Cost Audit not required for FY 2025-26 as EMS turnover below threshold under Section 148",
+   "Secretarial Audit Report contains qualification regarding security/guarantee transactions with HNPCL and HEIL requiring remedial actions including shareholder approval",
+   "Internal Auditor: Ernst & Young LLP for FY 2025-26",
+   "Unclaimed dividend of Rs. 550,664 (FY 2017-18) and 16,634 shares transferred to IEPF",
+   "Annual Return available at https://goclcorp.com/investorsroom/annualreturns/AC4109203_MGT-7_2025-26.pdf",
+   "Dividend Distribution Policy available at https://goclcorp.com/Policy/DividendDistribution.pdf",
+   "Remuneration Policy available at https://goclcorp.com/policy/Remuneration.pdf",
+   "CSR obligation for FY 2025-26: Rs 100.12 Lakhs; Total amount spent: Rs 33.00 Lakhs; Unspent amount transferred to Unspent CSR Account: Rs 67.12 Lakhs on March 30, 2026",
+   "R&D Expenditure FY 2025-26: Recurring Rs 79.38 Lakhs (8.13% of revenue from operations); Capital: Nil",
+   "Foreign Exchange FY 2025-26: Used/Outflow Rs 184.71 Lakhs; Earned/Inflow Rs 527.32 Lakhs",
+   "Scheme of Merger by Absorption of Hinduja National Power Corporation Limited (HNPCL) into GOCL Corporation Limited approved",
+   "Sale of subsidiary IDL Explosives Limited to Apollo Defence Industries Private Limited approved",
+   "Shifting of Registered Office from Telangana to Andhra Pradesh approved and forms filed",
+   "Implementation of MES (Manufacturing Execution System) SW application for technology absorption",
+   "No material contracts/arrangements with related parties not at arm's length basis; amounts below threshold under Section 188",
+   "Secretarial Audit conducted by Ravi & Subramanyam, Company Secretaries for FY ended March 31, 2026",
+   "Annual Secretarial Compliance Report confirms compliance with SEBI Regulations; no actions by SEBI/Stock Exchanges",
+   "The Company has discontinued its main operating business segment namely Energetics and Explosives. The major revenue during the year 2025-26 is from the sale of land.",
+   "Bangaluru: The Company is in the process of early monetization of the 'ecopolis' project by sale of the entire project.",
+   "Hyderabad: The Company has so far completed sale of about 157.21 acres of land and the sale consideration amounts have been temporarily deployed in inter corporate loans.",
+   "India Semiconductor Mission (ISM) launched by Government of India to strengthen domestic capabilities in design, manufacturing and ecosystem development.",
+   "Electronics Components Manufacturing Scheme expanded with an outlay of \u20b940,000 crore.",
+   "Production Linked Incentive (PLI) Scheme of \u20b91.91 lakh crore strengthens India's manufacturing base and electronics ecosystem.",
+   "National Electricity Plan (NEP) projects installed capacity to reach 874 GW by 2031-32.",
+   "Thermal capacity requirements (coal and lignite) estimated at approximately 3,07,000 MW by 2034-35.",
+   "Ministry of Power envisaged setting up additional minimum of 97,000 MW of coal and lignite-based thermal capacity.",
+   "Year-on-year equity investments in Indian real estate sector rose by 25% to reach a record USD 14.3 billion.",
+   "CPI inflation for FY 2026-27 projected at 5.1%.",
+   "GDP Growth Trend: 2023-24: 7.2%, 2024-25FRE: 7.1%, 2025-26PE: 7.7%.",
+   "Total installed generation capacity: 5,20,511 MW (47.7% fossil-fuel, 52.3% non-fossil fuel).",
+   "Peak Electricity Demand Trend: 2022-23 to 2025-26 data provided.",
+   "Coal demand for power sector projected to increase from ~784 million tonnes in FY23 to ~1,037 million tonnes by FY31.",
+   "India's per capita electricity consumption: ~1,200 kWh vs global average ~3,600 kWh.",
+   "No fines/penalties/punishment/award/compounding fees/settlement amount paid in FY 2025-26.",
+   "Anti-corruption/anti-bribery policy: Yes, Code of Conduct and Conflict of Interest Policies available at www.goclcorp.com.",
+   "Zero disciplinary actions for bribery/corruption against Directors/KMPs/employees/workers in FY 2025-26 and FY 2024-25.",
+   "Zero complaints regarding conflict of interest for Directors/KMPs in FY 2025-26 and FY 2024-25.",
+   "Accounts payable days: 51 (FY 2025-26), 55 (FY 2024-25).",
+   "Purchase concentration: Purchases from trading houses 11% (FY 2025-26) vs 69% (FY 2024-25); Number of trading houses 31 vs 70; Top 10 trading houses share 9% vs 2%.",
+   "Sales concentration: Sales to dealers/distributors Nil (FY 2025-26) vs 7% (FY 2024-25); Number of dealers/distributors Nil vs 12; Top 10 dealers share Nil vs 99%.",
+   "RPT share: Purchases Nil vs 4%; Sales 2% vs 12%; Loans & advances Nil vs 11%; Investments 78% vs 99%.",
+   "No awareness programmes for value chain partners in FY 2025-26.",
+   "Conflict of interest management: Code of Conduct, Corporate Governance Policies, Policy on Related Party Transactions; Board/senior management disclose interests; interested Directors abstain from discussions.",
+   "No sustainable sourcing policy; purchases agreement covers general ESG requirements.",
+   "Plastics, E-waste, Hazardous wastes disposed through authorized vendors.",
+   "Extended Producer Responsibility (EPR) not applicable."
+  ],
+  "related_party": [
+   {
+    "party": "Hinduja Energy (India) Limited (HEIL)",
+    "nature": "Provision of security and guarantee by the Company in connection with a loan facility of Rs.220 crore availed by HEIL during FY 2025-26, since fully repaid. Identified as related party subsequently.",
+    "amount_cr": 220
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited (HNPCL)",
+    "nature": "Provision of security and guarantee by the Company in connection with loan facilities availed by HNPCL aggregating to Rs.1096.10 crore during FY 2020-21, subsequently refinanced through loan facility of Rs.450 crore during FY 2024-25, with outstanding amount of Rs.379.15 crore as on date of approval of Report. Identified as related party subsequently. Scheme of Merger initiated.",
+    "amount_cr": 1096.1
+   },
+   {
+    "party": "Hinduja Energy (India) Limited (HEIL)",
+    "nature": "Material related party transaction",
+    "amount_cr": null
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited (HNPCL)",
+    "nature": "Material related party transaction; Scheme of Merger by Absorption approved",
+    "amount_cr": null
+   },
+   {
+    "party": "Hinduja Capital Limited, Mauritius",
+    "nature": "Holding Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited (HNPCL)",
+    "nature": "Corporate Guarantee extended by the Company",
+    "amount_cr": 1096.1
+   },
+   {
+    "party": "Hinduja Energy India Limited (HEIL)",
+    "nature": "Corporate Guarantee extended by the Company, secured by charge on Company's immovable properties",
+    "amount_cr": 220
+   },
+   {
+    "party": "Other Companies",
+    "nature": "Corporate guarantees",
+    "amount_cr": 1316.1
+   },
+   {
+    "party": "Other Companies",
+    "nature": "Loans and advances in the nature of loans",
+    "amount_cr": 2281.9
+   },
+   {
+    "party": "fellow subsidiaries",
+    "nature": "Corporate Guarantees/ Security given (including that of prior year)",
+    "amount_cr": 1316.1
+   },
+   {
+    "party": "fellow subsidiaries",
+    "nature": "Guarantee Commission Income earned during the current financial year on aforesaid Corporate Guarantees given",
+    "amount_cr": 18.087
+   },
+   {
+    "party": "Hinduja Group Limited",
+    "nature": "Inter Corporate Loan given",
+    "amount_cr": 2281.9
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Inter Corporate Loan (repaid during year)",
+    "amount_cr": 0
+   },
+   {
+    "party": "Hinduja Realty Ventures Limited (formerly Hinduja Estates Private Limited)",
+    "nature": "Joint Development Agreement for land at Kukatpally and Yelahanka",
+    "amount_cr": null
+   },
+   {
+    "party": "HGHL Holdings Limited",
+    "nature": "Amount due from wholly owned subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Sale of goods/capital goods",
+    "amount_cr": 9.09
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Sale of raw material",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Sale of scrap/fixed assets",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "HGHL Holdings Limited",
+    "nature": "Commission on corporate guarantee given",
+    "amount_cr": 5.27
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Commission on security provided for loan",
+    "amount_cr": 16.49
+   },
+   {
+    "party": "Hinduja Energy (India) Limited",
+    "nature": "Commission on corporate guarantee and security provided for loan",
+    "amount_cr": 1.65
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Other income",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Other income",
+    "amount_cr": 0.03
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Purchase of goods/other items",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "Ashok Leyland Limited",
+    "nature": "Sale of goods/services",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Reimbursement received towards managerial services",
+    "amount_cr": 1.09
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Reimbursement received towards IT & Infrastructure Services",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Marketing services fee paid",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Interest received on inter corporate loan",
+    "amount_cr": 4.28
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Inter corporate loan given",
+    "amount_cr": 46.5
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Inter corporate loan refunded",
+    "amount_cr": 137.54
+   },
+   {
+    "party": "Hinduja Capital Ltd., Mauritius",
+    "nature": "Dividend paid on equity shares",
+    "amount_cr": 36.1
+   },
+   {
+    "party": "A. Satyanarayana",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 0.45
+   },
+   {
+    "party": "Pankaj Kumar",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 1.13
+   },
+   {
+    "party": "Ravi Jain",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 2.18
+   },
+   {
+    "party": "Non executive directors",
+    "nature": "Sitting fees and commission",
+    "amount_cr": 2.19
+   },
+   {
+    "party": "IDL Explosives Limited",
+    "nature": "Inter corporate loan to Wholly owned subsidiary (up to November 15, 2025) for Working capital",
+    "amount_cr": 91.04
+   },
+   {
+    "party": "Hinduja Group Limited",
+    "nature": "Inter corporate loan to Other Company for General purpose - Repayment of borrowing",
+    "amount_cr": 2281.9
+   },
+   {
+    "party": "HGHL Whitehall S.A.R.L, Holdings Limited",
+    "nature": "Guarantee provided for Wholly owned subsidiary for Investment in Luxembourg",
+    "amount_cr": 1709.5
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Guarantee provided for Fellow Subsidiary to obtain loan from banks",
+    "amount_cr": 1096.1
+   },
+   {
+    "party": "Hinduja Energy (India) Limited",
+    "nature": "Guarantee provided for Fellow Subsidiary to obtain loan from banks",
+    "amount_cr": 220.0
+   },
+   {
+    "party": "57 Whitehall Investments S.A.R.L, Luxembourg",
+    "nature": "Loan given",
+    "amount_cr": 1015.02
+   },
+   {
+    "party": "IndusInd Finance Limited",
+    "nature": "Demand deposit given",
+    "amount_cr": 700.93
+   },
+   {
+    "party": "Hinduja Realty Ventures Limited (formerly Hinduja Estates Private Limited)",
+    "nature": "Joint Development Agreement for land at Kukatpally",
+    "amount_cr": null
+   },
+   {
+    "party": "Hinduja Capital Limited, Mauritius",
+    "nature": "Holding Company - Promoter (67.82% holding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Gulf Oil International Limited, Cayman Islands",
+    "nature": "Provided shortfall undertaking for loans to HGHL Holdings Limited",
+    "amount_cr": null
+   },
+   {
+    "party": "Prudent Electrol Trust",
+    "nature": "Political contribution of Rs 750 lakhs in previous year",
+    "amount_cr": 7.5
+   },
+   {
+    "party": "Hinduja Capital Limited, Mauritius",
+    "nature": "Dividend paid on equity shares",
+    "amount_cr": 36.1
+   },
+   {
+    "party": "Prabhat Ranjan",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 0.44
+   },
+   {
+    "party": "Pawan Kumar Tiwary",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Non executive directors and Independent director",
+    "nature": "Sitting fees and commission",
+    "amount_cr": 2.33
+   },
+   {
+    "party": "Gulf Oil Lubricants India Limited",
+    "nature": "Purchases",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Ashok Leyland Limited",
+    "nature": "Sales",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Other income",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Commission on security provided for Loan",
+    "amount_cr": 16.44
+   },
+   {
+    "party": "Hinduja Energy (India) Limited",
+    "nature": "Commission on corporate guarantee and security provided for Loan",
+    "amount_cr": 1.65
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Loan for which Security has been provided (Outstanding balance)",
+    "amount_cr": 394.96
+   },
+   {
+    "party": "Hinduja Energy (India) Limited",
+    "nature": "Loan for which Corporate Guarantee and Security has been provided (Outstanding balance)",
+    "amount_cr": 211.94
+   },
+   {
+    "party": "Hinduja National Power Corporation Limited",
+    "nature": "Corporate Guarantee extended",
+    "amount_cr": 1096.1
+   },
+   {
+    "party": "Hinduja Energy India Limited",
+    "nature": "Corporate Guarantee extended",
+    "amount_cr": 220
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Stand-By Letters of Credit (SBLC) based loan of USD 200 million availed by HGHL",
+    "amount_cr": null,
+    "note": "Collaterally secured by factory land parcel of the Company at Hyderabad. Fully repaid during the year."
+   },
+   {
+    "lender_or_type": "Secured Loans",
+    "amount_cr": 0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "short-term borrowings",
+    "amount_cr": 0,
+    "note": "No short-term borrowings as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Borrowings (including trade and other payables)",
+    "amount_cr": null,
+    "note": "Measured at amortised cost using effective interest method"
+   },
+   {
+    "lender_or_type": "Working capital demand loan",
+    "amount_cr": 0.0,
+    "note": "Floating rate instruments - no outstanding balance as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Total Debt",
+    "amount_cr": 0,
+    "note": "Total Debt (current and non-current borrowings) is nil as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 0.0,
+    "note": "As at March 31, 2026, long-term borrowings are nil"
+   },
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 0.6152,
+    "note": "As at March 31, 2026, short-term borrowings are Rs 61.52 lakhs"
+   },
+   {
+    "lender_or_type": "Union Bank of India (SBLCs for HGHL Holdings Limited)",
+    "amount_cr": 0,
+    "note": "SBLCs aggregating USD 150 million and USD 50 million provided in FY 2019-20 and FY 2021-22; loans fully prepaid during the year; land security replaced with 100% cash margin in form of fixed deposits on May 20, 2025; outstanding balance as at March 31, 2026 was Nil (March 31, 2025: Rs 110,583.29 lakhs equivalent to USD 127.81 million)"
+   },
+   {
+    "lender_or_type": "Consortium banks (Working capital facilities)",
+    "amount_cr": 0,
+    "note": "Working capital facilities closed/prepaid during the year; charges satisfied during current financial year"
+   },
+   {
+    "lender_or_type": "RBL Bank Limited, Yes Bank Limited, State Bank of India, IDBI Bank Limited (Buyer's Credit for IDL Explosives Limited)",
+    "amount_cr": 0,
+    "note": "Facilities availed by IDL Explosives Limited (subsidiary up to November 15, 2025); no longer reflected in consolidated financial statements as at March 31, 2026 due to disinvestment"
+   },
+   {
+    "lender_or_type": "Current borrowings (Interest accrued but not due)",
+    "amount_cr": 0.6152,
+    "note": "As at March 31, 2026: Rs 61.52 lakhs (March 31, 2025: Rs 38.62 lakhs)"
+   },
+   {
+    "lender_or_type": "Inter corporate loan to Hinduja Group Limited",
+    "amount_cr": 2281.9,
+    "note": "General Purpose - Repayment of borrowings"
+   },
+   {
+    "lender_or_type": "Inter corporate loan to IndusInd Finance Limited",
+    "amount_cr": 700.93,
+    "note": "Working capital"
+   },
+   {
+    "lender_or_type": "Inter corporate loan to 57 Whitehall Investments S.A.R.L., Luxembourg",
+    "amount_cr": 0,
+    "note": "Investment in OWO Project (fully repaid during the year)"
+   },
+   {
+    "lender_or_type": "Standby Letters of Credit (SBLCs) for HGHL Holdings Limited",
+    "amount_cr": 0,
+    "note": "USD 150 million and USD 50 million through Union Bank of India; loans fully prepaid during the year; land security replaced with 100% cash margin on May 20, 2025"
+   },
+   {
+    "lender_or_type": "Corporate Guarantee and collateral security to State Bank of India for Hinduja National Power Corporation Limited",
+    "amount_cr": 394.96,
+    "note": "Loan fully repaid through refinancing from PFC; mortgage over Company's land continues as security for refinanced facility"
+   },
+   {
+    "lender_or_type": "Corporate guarantee and security over properties for Hinduja Energy (India) Limited",
+    "amount_cr": 211.94,
+    "note": "Loan of Rs 22000 availed by HEIL; subsequently repaid during FY 2026-27"
+   }
+  ],
+  "litigation": [
+   "No proceedings under Insolvency and Bankruptcy Code, 2016",
+   "No significant or material orders passed by Regulators/Courts impacting going concern status",
+   "Prolonged or unforeseen litigation, including tax and regulatory disputes, may adversely affect the Company's performance and reputation.",
+   "Excise Duty disputes under Central Excise Act, 1944 pending at Commissioner (Appeals), Asst. Commissioner, and High Court for periods 1992-93, 1992-96, 1980-87, 2003-04",
+   "Service Tax disputes under Finance Act, 1994 pending at Central Excise and Service Tax Appellate Tribunal and Joint Commissioner for periods 2007-08 to 2014-15, 2017-18",
+   "Sales Tax disputes under Central Sales Tax Act, 1956 pending at Assistant Commissioner, Deputy Commissioner, Additional Commissioner, Commissioner, Joint Commissioner, Sales Tax Tribunal of Orissa, and High Court, Orissa for periods 2001-02, 2003-04, 2007-08, 2008-09, 2011-12, 2012-13, 1997-98, 2009-10, 1992-93, 1994-95, 1995-96, 1998-99, 1976-77 to 1983-84, 1984-85 to 1987-88, 1989-90 to 1990-91",
+   "Income Tax dispute under Income Tax Act, 1961 for AY 2021-22 pending at Assessing Officer (Excludes Income Tax demand for AY 2013-2014 of Rs. 4210.11 lakhs, for which High Court of Telangana has passed favourable order dated 14.06.2024 and Supreme Court dismissed special leave petition filed by Income Tax Department)",
+   "Claims, litigations, assessments, fines and penalties (contingent liabilities)",
+   "Provisions for indirect taxes and legal matters comprises of numerous separate cases that arise in the ordinary course of business",
+   "Competition Commission of India penalty case (appeal pending in Supreme Court)",
+   "Civil appeal against Sri Udasin Mutt dismissed by Supreme Court; application for use and occupation charges pending before Telangana Endowments Tribunal",
+   "Writ petitions/appeals pending with Orissa High Court and Orissa Sales Tax Tribunal for CST claims (AY 1984-85 to 1987-88, 1994-95, 1995-96, 1998-99)",
+   "Income tax appeals for AY 2013-2014 (High Court passed favorable order, Supreme Court dismissed SLP by IT department, order giving effect pending)",
+   "Various tax challenges from local tax authorities in multiple jurisdictions encompassing direct and indirect tax matters with considerable uncertainty, resolution timelines, and potential financial impact.",
+   "Corporate guarantees matter: Guarantees extended to HNPCL and Hinduja Energy India Limited not processed as Related Party Transactions; representation to SEBI and other regulatory authorities being evaluated.",
+   "Pending litigations disclosed in Note 39 to the consolidated financial statements",
+   "Provisions for indirect taxes and legal matters comprise numerous separate cases arising in ordinary course of business",
+   "Competition Commission of India penalty case (appeal in Supreme Court, interim stay granted)",
+   "Writ petitions/appeals with Orissa High Court and Orissa Sales Tax Tribunal for CST claims (AY 1984-85 to 1987-88, 1994-95, 1995-96, 1998-99)",
+   "Income tax appeals for AY 2013-2014 (High Court passed favourable order, Supreme Court dismissed SLP by IT department)",
+   "Coal India barred IDL Explosives Limited from contract awards for two years; High Court directed reconsideration; CIL maintained status quo; appeal filed by subsidiary"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Excise Duty under Central Excise Act, 1944",
+    "amount_cr": 0.099
+   },
+   {
+    "nature": "Service Tax under Finance Act, 1994",
+    "amount_cr": 13.5565
+   },
+   {
+    "nature": "Sales Tax under Central Sales Tax Act, 1956",
+    "amount_cr": 35.708
+   },
+   {
+    "nature": "Income Tax under Income Tax Act, 1961",
+    "amount_cr": 0.7763
+   },
+   {
+    "nature": "Claims, litigations, assessments, fines and penalties",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income tax demands (Capital gain, Transfer pricing, disallowance of expenses etc.)",
+    "amount_cr": 11.26
+   },
+   {
+    "nature": "Sales tax demands (non submission of C, F, H forms and Entry Tax matters)",
+    "amount_cr": 2.07
+   },
+   {
+    "nature": "Excise duty demands",
+    "amount_cr": 0.04
+   },
+   {
+    "nature": "Service tax demands (on corporate guarantee commission income from foreign subsidiaries)",
+    "amount_cr": 3.78
+   },
+   {
+    "nature": "Additional demands towards cost of land",
+    "amount_cr": 0.04
+   },
+   {
+    "nature": "Claims of workmen/ex-employees under minimum wages act",
+    "amount_cr": 1.3
+   },
+   {
+    "nature": "Other matters",
+    "amount_cr": 0.07
+   },
+   {
+    "nature": "Standby letter of credit (SBLC) for HGHL Holdings Limited",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Corporate guarantees extended to Hinduja National Power Corporation Limited (Rs 109,610 lakhs) and Hinduja Energy India Limited (Rs 22,000 lakhs) secured by charge on Company's immovable properties, not processed as Related Party Transactions",
+    "amount_cr": 1316.1
+   },
+   {
+    "nature": "Various tax challenges from local tax authorities in multiple jurisdictions (direct and indirect tax matters)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Possible obligation arising from past events, confirmed only by occurrence or non-occurrence of uncertain future events not wholly within Group's control, or present obligation where outflow is not probable or cannot be reliably estimated",
+    "amount_cr": null
+   },
+   {
+    "nature": "Sales tax demands (non submission of C,F,H forms and Entry Tax matters)",
+    "amount_cr": 2.07
+   },
+   {
+    "nature": "Service tax demands (on corporate guarantee commission income from Foreign subsidiaries)",
+    "amount_cr": 3.78
+   },
+   {
+    "nature": "Entry tax demands",
+    "amount_cr": 0.29
+   },
+   {
+    "nature": "Goods and service tax",
+    "amount_cr": 0.04
+   },
+   {
+    "nature": "Claims of workmen/ex-employees (minimum wage)",
+    "amount_cr": 1.3
+   },
+   {
+    "nature": "Other Matters",
+    "amount_cr": 0.07
+   },
+   {
+    "nature": "Standby letter of credit (SBLC) for HGHL Holdings Limited",
+    "amount_cr": 1709.5
+   },
+   {
+    "nature": "Corporate Guarantee to Hinduja National Power Corporation Limited",
+    "amount_cr": 1096.1
+   },
+   {
+    "nature": "Corporate Guarantee to Hinduja Energy India Limited",
+    "amount_cr": 220
+   }
+  ]
+ }
+}

@@ -1,0 +1,2155 @@
+{
+ "isin": "INE153A01019",
+ "name": "Mahanagar Telephone Nigam Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31475_MTNL_2025_2026_A_3468495_05092026110730.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 1360663,
+ "chunks": 25,
+ "chunks_ok": 21,
+ "facts": {
+  "business": {
+   "description": "Mahanagar Telephone Nigam Limited (MTNL) is a Navratna Central Public Sector Enterprise providing telecom services in Delhi and Mumbai. As per a Service Agreement dated 22.11.2024, BSNL has been entrusted with maintenance and operational activities of MTNL's telecom services w.e.f. 01.01.2025, while MTNL focuses on monetization of land/building assets to discharge loan liabilities.",
+   "products": [
+    {
+     "name": "Landline",
+     "share_of_revenue_pct": null,
+     "note": "Services being migrated to BSNL"
+    },
+    {
+     "name": "Broadband",
+     "share_of_revenue_pct": null,
+     "note": "Services being migrated to BSNL"
+    },
+    {
+     "name": "FTTH",
+     "share_of_revenue_pct": null,
+     "note": "Services being migrated to BSNL"
+    },
+    {
+     "name": "Leased Line",
+     "share_of_revenue_pct": null,
+     "note": "Services being migrated to BSNL"
+    },
+    {
+     "name": "Infrastructure Leasing (Tower Rent & Rental Income)",
+     "share_of_revenue_pct": null,
+     "note": "Generated Rs 507.14 crore in FY 2025-26"
+    },
+    {
+     "name": "GSM (Mobile)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Data Centre operations",
+     "share_of_revenue_pct": null,
+     "note": "Planning to expand to Tier II and Tier III cities"
+    },
+    {
+     "name": "Leased Circuits",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "ISDN",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Telecommunication Service",
+     "share_of_revenue_pct": 25.96,
+     "note": "NIC Code 6120, 6110"
+    },
+    {
+     "name": "Infrastructure Leasing",
+     "share_of_revenue_pct": 34.53,
+     "note": "NIC Code 6810"
+    },
+    {
+     "name": "Wireless Telecommunication Activities",
+     "share_of_revenue_pct": 1.15,
+     "note": "NIC Code 61201 & 61202"
+    },
+    {
+     "name": "Wired Telecommunication Activities",
+     "share_of_revenue_pct": 24.81,
+     "note": "NIC Code 61101 & 61104"
+    },
+    {
+     "name": "Basic & Other services",
+     "share_of_revenue_pct": 41.1,
+     "note": "Revenue Rs 364.37 crore in FY 2025-26"
+    },
+    {
+     "name": "Cellular",
+     "share_of_revenue_pct": 1.9,
+     "note": "Revenue Rs 16.91 crore in FY 2025-26"
+    },
+    {
+     "name": "Wireless (2G/3G)",
+     "share_of_revenue_pct": null,
+     "note": "Limited coverage and capacity; mobile services operation handed over to BSNL w.e.f. 01.04.2021 (Delhi) and 01.09.2021 (Mumbai); 4G services to be launched by BSNL"
+    },
+    {
+     "name": "Landline services",
+     "share_of_revenue_pct": null,
+     "note": "Provision for debtors outstanding >1 year up to 3 years based on ECL, 100% for >3 years"
+    },
+    {
+     "name": "Wireless services (GSM & CDMA)",
+     "share_of_revenue_pct": null,
+     "note": "100% provision for debtors outstanding >180 days"
+    },
+    {
+     "name": "Prepaid products",
+     "share_of_revenue_pct": null,
+     "note": "Processing fee on recharge coupons recognized over customer relationship period or coupon validity period, whichever is lower"
+    },
+    {
+     "name": "Prepaid calling cards/VCC/internet cards",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognized based on usage or expiry, whichever is earlier"
+    },
+    {
+     "name": "Telecom services (fixed-line, mobile, broadband)",
+     "share_of_revenue_pct": null,
+     "note": "Inferred from spectrum fees and network assets"
+    },
+    {
+     "name": "Telecom operations (voice, data, roaming)",
+     "share_of_revenue_pct": null,
+     "note": "Operations migrated to BSNL w.e.f. 01.01.2025 under SLA; revenue share model implemented for migrated customers"
+    },
+    {
+     "name": "Broadband/Internet services",
+     "share_of_revenue_pct": null,
+     "note": "Includes ADSL, VDSL & MES CPES equipment"
+    },
+    {
+     "name": "Activation & installation",
+     "share_of_revenue_pct": null,
+     "note": "Deferred and amortized over estimated customer relationship period"
+    },
+    {
+     "name": "Telecommunication services",
+     "share_of_revenue_pct": null,
+     "note": "Includes fixed-line, mobile (3G spectrum licence expiring 07.08.2028), broadband, and enterprise services"
+    },
+    {
+     "name": "Rental income from investment properties",
+     "share_of_revenue_pct": null,
+     "note": "Rs. 455.39 crore in FY2026 (Rs. 382.30 crore in FY2025) from leasing of leasehold land and buildings"
+    },
+    {
+     "name": "Fixed telephone income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 185.83 crore in FY2026"
+    },
+    {
+     "name": "Enterprise business",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 95.41 crore in FY2026"
+    },
+    {
+     "name": "Mobile services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 81.52 crore in FY2026"
+    },
+    {
+     "name": "Infrastructure Leasing Income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 507.14 crore in FY2026"
+    },
+    {
+     "name": "Others",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 86.47 crore in FY2026"
+    }
+   ],
+   "customers": [
+    "Retail customers in Delhi and Mumbai",
+    "Enterprise customers",
+    "Government departments",
+    "Retail subscribers (Landline, GSM, Broadband, FTTH)",
+    "Enterprise clients (Leased circuits, Data Centre)",
+    "Government/Institutional clients (DMRC, LIC, IITs, Banks, etc. for CETTM leasing/training)",
+    "Landline, Broadband, Mobile Services, FTTH, Leased Circuits, Enterprise services, MPLS, Industrial Training, Toll Free services, ISDN, EPABX, Universal Access Number users",
+    "BSNL (under Service Agreement for maintenance and operations)",
+    "Retail consumers",
+    "Enterprise customers in Delhi and Mumbai",
+    "Subscribers",
+    "Other service providers (for infrastructure leasing)",
+    "Operators covered under IUC/Roaming/MOU agreements",
+    "Subscribers in Delhi and Mumbai circles",
+    "Other telecom operators (roaming/IUC)",
+    "BSNL (revenue share from migrated customers)",
+    "Retail subscribers",
+    "IUC operators",
+    "Tenants of investment properties"
+   ],
+   "geographies": [
+    {
+     "name": "Delhi",
+     "share_pct": null
+    },
+    {
+     "name": "Mumbai",
+     "share_pct": null
+    },
+    {
+     "name": "Nepal (via UTL JV)",
+     "share_pct": null
+    },
+    {
+     "name": "Delhi & Maharashtra (Mumbai)",
+     "share_pct": null
+    },
+    {
+     "name": "Mumbai and Delhi",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India (Mumbai and Delhi circles)",
+     "share_pct": null
+    },
+    {
+     "name": "Foreign jurisdictions (subsidiaries)",
+     "share_pct": null
+    },
+    {
+     "name": "Nepal (via United Telecom Limited associate)",
+     "share_pct": null
+    },
+    {
+     "name": "Mauritius (via subsidiary)",
+     "share_pct": null
+    },
+    {
+     "name": "Delhi and Mumbai telecom circles",
+     "share_pct": null
+    }
+   ],
+   "competitors_named": [
+    "BSNL",
+    "Reliance Jio",
+    "Bharti Airtel",
+    "Vodafone Idea",
+    "Bharat Sanchar Nigam Limited (BSNL)",
+    "Reliance Communication Ltd.",
+    "Reliance Infratel Ltd."
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Telecommunications services in Delhi and Mumbai",
+    "Telecommunications services",
+    "Data centre services",
+    "Training and infrastructure leasing (CETTM)",
+    "Telecommunications",
+    "Digital services",
+    "Enterprise connectivity",
+    "Telecom services in Delhi and Mumbai",
+    "Infrastructure leasing",
+    "Residential telecommunications",
+    "Enterprise telecommunications",
+    "Government communications",
+    "Property leasing"
+   ],
+   "brands_or_certifications": [
+    "Navratna Company",
+    "CETTM ISO 9001:2015 certified",
+    "MTNL",
+    "BSNL (services agreement)",
+    "MTNL brand",
+    "3G Spectrum Licence (expiring 07.08.2028)",
+    "Government of India guaranteed bonds"
+   ],
+   "plants": [
+    {
+     "location": "Delhi",
+     "capacity": "Landline: 496,518; Broadband: 788,736; GSM: 1,900,000; Switches: 133; OFC Route Kms: 9,770.14; OFC Fiber Kms: 322,102.87"
+    },
+    {
+     "location": "Mumbai",
+     "capacity": "Landline: 750,000; Broadband: 50,000; GSM: 2,800,000; Switches: 205; OFC Route Kms: 6,881.84; OFC Fiber Kms: 220,483.91"
+    },
+    {
+     "location": "Delhi and NCR",
+     "capacity": "Active operations of services"
+    },
+    {
+     "location": "Mumbai including Thane District",
+     "capacity": "Active operations of services"
+    },
+    {
+     "location": "Delhi",
+     "capacity": "Telephone exchanges"
+    },
+    {
+     "location": "Mumbai",
+     "capacity": "Telephone exchanges"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "Telephone exchange equipment, air conditioning plants, towers, transceivers, switching centres, transmission & other network equipment, cables, lines & wires"
+    },
+    {
+     "location": "Various (telephone exchanges, BTS sites, towers)",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Delhi and Mumbai circles",
+     "capacity": "Extensive telecom network including exchanges, cables, towers, and spectrum assets"
+    }
+   ],
+   "raw_materials": [
+    "Stores and spares",
+    "Cables",
+    "Apparatus & plants",
+    "Subscriber telephone instruments",
+    "UPS/Batteries",
+    "ADSL, VDSL & MES CPES",
+    "Apparatus & plants (telephone exchange equipment, air conditioning plants)",
+    "Lines & wires",
+    "Low cost aerial optical fibre cable",
+    "Telecom equipment",
+    "Cables and wires",
+    "Spectrum licences",
+    "Network infrastructure components"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "MTNL is pursuing monetization program through Direct Sale/Transfer to Government Departments/Organizations and through auction process in open market. Sixteen (16) properties have been identified for monetization in the FY 2026-27.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Migration of MTNL's services has started for Landline, Broadband, FTTH and Leased Line services to BSNL. Certain customers in Delhi & Mumbai have been migrated to BSNL w.e.f. 01.04.2025 and Billing and Collection is done by BSNL for such Customers.",
+    "period": "Ongoing from 01.04.2025"
+   },
+   {
+    "statement": "MTML has acquired licence for 5G Services in Mauritius. Action on procurement of equipment has been started and it is expected to launch 5G Services in commercially important areas in due course.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Company is planning to expand Data Centre operations in other Tier II and Tier III cities in the near future.",
+    "period": "near future"
+   },
+   {
+    "statement": "MTNL and BSNL entered into a Services Agreement on 22.11.2024 effective 01.01.2025 for 10 years, under which BSNL undertakes maintenance and operational activities of MTNL's telecom services in Delhi and Mumbai. BSNL will invest CAPEX and OPEX for smooth operations. 4G services rollout in Delhi and Mumbai by BSNL. Revenue share from migrated customers recognized at Rs 156.51 crore (Delhi Rs 69.84 crore, Mumbai Rs 86.67 crore).",
+    "period": "FY 2025-26 onwards"
+   },
+   {
+    "statement": "BSNL will provide all telecom services in Delhi and Mumbai through leasing of operational assets or other appropriate model. MTNL will be left with land/building assets which it will continue to monetize to discharge its loan liabilities.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Migration of MTNL's services (Landline, Broadband, FTTH, Leased Line) to BSNL has started. Revenue share of MTNL arising from migrated customers approved and agreed; Rs 156 crores accounted as revenue share recoverable from BSNL during FY 2025-26.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Government of India approved allotment of spectrum to BSNL for providing 4G services in MTNL Delhi and Mumbai service areas.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Committee of Secretaries (CoS) constituted to examine matters such as asset monetization, AGR dues, debt restructuring, and merger of MTNL and BSNL.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Government approved monetization of lands and buildings with assistance from DIPAM to reduce debt burden; realized cash inflow of Rs. 418.76 crore from sale of properties resulting in positive EBIDTA during the year.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Company will manage payment of interest due on Sovereign Guarantee-backed bonds with Government support via additional soft loan of Rs 1829.69 crore during 2025-26.",
+    "period": "2025-26"
+   },
+   {
+    "statement": "Committee of Secretaries constituted to examine asset monetization, AGR dues, debt restructuring for merger of MTNL & BSNL; budgetary support of Rs. 1851 crores allocated for network upgradation by BSNL as precursor to operational integration.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Maintenance and running of MTNL wireless network taken over by BSNL from 01.04.2021 (Delhi) and 01.09.2021 (Mumbai) to improve quality and launch 4G services, likely to stabilize revenue streams.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The Company has evaluated the aforesaid amendments and, based on its preliminary assessment, does not expect any material impact on its standalone financial statements on adoption of the said amendments.",
+    "period": "Annual reporting periods beginning on or after April 1, 2026"
+   },
+   {
+    "statement": "Management is actively engaged in the process of monetisation of eligible assets. The generated proceeds will be directed towards BSNL/MTNL to address debt, capital expenditures (CAPEX), and other financial obligations.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The overdue project exceeding its original timelines are being regularised in due course.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The Group will be able to manage the payment of interest due on Sovereign Guarantee-backed bonds with the support of the Government of India in the form of an additional soft loan of Rs. 1829.69 crore during the year 2025-26.",
+    "period": "2025-26"
+   },
+   {
+    "statement": "Government approved providing 4G licenses to BSNL and an infusion of fresh capital by the Government in lieu of granting 4G license. The maintenance and running of MTNL wireless network has also been taken over by BSNL from 01.04.2021 (in the case of Delhi) and from 01.09.2021 (in the case of Mumbai) onwards to improve the quality of services and also the launching of 4G services of MTNL as and when BSNL launches which also is likely to stabilize the revenue streams.",
+    "period": "ongoing"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "BSNL will invest capital (CAPEX) and other resources (OPEX) for the smooth running of the entire operation in Delhi and Mumbai. The CAPEX and related OPEX will be part of BSNL Balance sheet and EBITDA.",
+    "amount_cr": null,
+    "timeline": "Ongoing from 01.01.2025"
+   },
+   {
+    "item": "MTML CAPEX for procurement of equipment is met from its own internal resources.",
+    "amount_cr": null,
+    "timeline": "Ongoing"
+   },
+   {
+    "item": "Data Centre expansion in Tier II and Tier III cities",
+    "amount_cr": null,
+    "timeline": "near future"
+   },
+   {
+    "item": "CAPEX allotment for FY 2025-26",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "BSNL to invest CAPEX for MTNL network maintenance and operations in Delhi and Mumbai",
+    "amount_cr": null,
+    "timeline": "10 years from 01.01.2025"
+   },
+   {
+    "item": "CAPEX for telecom operations in Delhi and Mumbai",
+    "amount_cr": null,
+    "timeline": "Ongoing; BSNL to take care of CAPEX as per Service Agreement"
+   },
+   {
+    "item": "Contractual commitments for acquisition of property, plant and equipment",
+    "amount_cr": null,
+    "timeline": "Refer note 51"
+   },
+   {
+    "item": "Contractual commitments for acquisition of intangible assets",
+    "amount_cr": null,
+    "timeline": "Refer note 51"
+   },
+   {
+    "item": "Network upgradation by BSNL",
+    "amount_cr": 1851,
+    "timeline": "As precursor to operational integration"
+   },
+   {
+    "item": "Property, plant and equipment additions",
+    "amount_cr": 42.55,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Capital work-in-progress additions",
+    "amount_cr": 8.34,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Investment property additions",
+    "amount_cr": 0.27,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Property, plant and equipment",
+    "amount_cr": 5.62,
+    "timeline": "As at 31 March 2026"
+   },
+   {
+    "item": "Other Repair & Maintenance",
+    "amount_cr": 20.4,
+    "timeline": "As at 31 March 2026"
+   },
+   {
+    "item": "BSNL shall also take care of CAPEX and OPEX for the smooth running of operations and ensure EBIDTA-neutral operations of The Group.",
+    "amount_cr": null,
+    "timeline": "w.e.f. 01.01.2025"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "MTNL and BSNL have entered into a \"SERVICE AGREEMENT\" on 22.11.2024 under which BSNL has been entrusted with the responsibility to undertake the maintenance and operational activities of MTNL's Telecom Services w.e.f. 01.01.2025.",
+    "value_cr": null
+   },
+   {
+    "statement": "28 Residential Quarters, GN Block, BKC, Mumbai \u2013 sold to NABARD at Rs 350.72 crore",
+    "value_cr": 350.72
+   },
+   {
+    "statement": "07 Residential Quarters at Khelgaon, Siri Fort, Delhi \u2013 sold to Bihar Govt. at Rs 68.43 crore",
+    "value_cr": 68.43
+   },
+   {
+    "statement": "MTNL and BSNL have entered into a Service Agreement on 22.11.2024 under which BSNL has been entrusted with the responsibility to undertake the maintenance and operational activities of MTNL's Telecom Services w.e.f. 01.01.2025. BSNL will invest capital (CAPEX) and other resources (OPEX) for smooth running of entire operation in Delhi and Mumbai.",
+    "value_cr": null
+   },
+   {
+    "statement": "Service Agreement entered on 22.11.2024 with BSNL, the entire telecom operations of MTNL in Delhi & Mumbai are being run by BSNL w.e.f. 01.01.2025",
+    "value_cr": null
+   },
+   {
+    "statement": "Services Agreement between MTNL and BSNL dated 22.11.2024 effective 01.01.2025 for 10 years for maintenance and operational activities of MTNL's telecom services",
+    "value_cr": null
+   },
+   {
+    "statement": "Service Agreement signed between MTNL and BSNL on 22.11.2024, effective 01.01.2025, for a period of 10 years unless revoked earlier by 6 months notice or extended by mutual consent. BSNL shall run MTNL's telecom services, undertake maintenance and running activities, and handle CAPEX and OPEX for EBITDA neutral operation.",
+    "value_cr": null
+   },
+   {
+    "statement": "Escrow agreement with Union Bank of India (largest lender) dated 04.11.2024 for 'Holding on Operation & Escrow Mechanism' to keep bank account operations running unhindered for six months at zero % cutback; extended twice for 6 months on 05.05.2025 and 03.11.2025; further extended for 3 months on 05.05.2026 valid till 04.08.2026.",
+    "value_cr": null
+   },
+   {
+    "statement": "Service Level Agreement (SLA) entered on 22.11.2024 with BSNL, superseding earlier agreement dated 18.08.2021, for BSNL to run entire telecom operations in Delhi and Mumbai w.e.f. 01.01.2025, take care of CAPEX and OPEX, and ensure EBIDTA-neutral operations.",
+    "value_cr": null
+   },
+   {
+    "statement": "Revenue share against migrated customers to BSNL amounting to Rs.156.51 Crore recognised by MTNL during current year.",
+    "value_cr": 156.51
+   },
+   {
+    "statement": "Contractual commitments for the acquisition of property, plant and equipment (refer note 55)",
+    "value_cr": null
+   },
+   {
+    "statement": "Contractual commitments for the acquisition of intangible assets (refer note 55)",
+    "value_cr": null
+   },
+   {
+    "statement": "Long-term operating leases for investment properties with rentals payable monthly, cancellable at option of lessee",
+    "value_cr": null
+   },
+   {
+    "statement": "Pursuant to the service level agreement (SLA) entered on 22.11.2024 (superseding the earlier agreement dated 18.08.2021) with BSNL, the entire telecom operations of The Group in Delhi and Mumbai shall be run by BSNL w.e.f. 01.01.2025.",
+    "value_cr": null
+   },
+   {
+    "statement": "Revenue share against the migrated customers to BSNL, amounting to Rs. 156.51 Crore, has been recognised by MTNL during the current year.",
+    "value_cr": 156.51
+   }
+  ],
+  "risks": [
+   "Approved Debt Resolution plan offered to Bank earlier was refused by Union Bank of India (UBI) (on behalf of JLM). Debt resolution plan is still to be finalized.",
+   "Banks are asking for debt resolution plan but the same is still to be finalized.",
+   "MTNL has requested DoT to intervene for extension of Escrow Agreement by another 12 months at 0% cutback from 04.08.2026 or till finalization of debt resolution plan.",
+   "Credit ratings for Long Term Bank Facilities, Long Term/Short Term Bank Facilities, and Short Term Bank Facilities are CARE D (default).",
+   "MTML incurred a loss of Rs 5.64 crores in FY 2025-26 as against loss of Rs 4.51 crores last year.",
+   "MTL closure proposal approved by MTNL Board, pending Presidential Approval and DIPAM/AM approval.",
+   "UTL Nepal JV non-operational since 2017 with huge losses and unpaid statutory dues; exit notice given in 2018 not effected; NVPL defaulted on payment instalments due Dec 2024 and Dec 2025; MTNL seeking voluntary liquidation/insolvency of UTL",
+   "Material weaknesses in internal financial controls as noted by Statutory Auditors for FY 2025-26",
+   "Company has incurred losses since 2009-10, limiting CSR funding",
+   "Non-compliance with SEBI LODR Regulations regarding Board composition and committee constitution",
+   "Financial Disincentive (FD) imposed by TRAI for non-compliance with Quality of Service Fault Clearance Parameters",
+   "Market & Technology Risk",
+   "Policy & Regulation Risk/Regulatory Compliance Risk",
+   "Operational Risk",
+   "Ongoing Concern Risk",
+   "Internal Control Failures and Integrity of Financial Information Risk",
+   "Information Technology & Systems Security Risk",
+   "Disaster Management and Business Continuity Risk",
+   "Greater Transparency and Entity Level Ethical & Governance Risk",
+   "Net Worth is negative at (-) 29974.84 Crore as on 31.03.2026",
+   "Long Term Bank Facilities rated CARE D",
+   "Long Term/Short Term Bank Facilities rated CARE D",
+   "Short Term Bank Facilities rated CARE D",
+   "Brickwork Ratings: BWR AA+ (CE) Rating Watch with Negative Implication",
+   "India Ratings: IND AAA (CE)/Stable Rating Watch with Negative Implication",
+   "CRISIL: CRISIL AAA (CE)/Watch Negative (Rating Watch with Negative Implications)",
+   "Market / Technology Risk",
+   "Policy & Regulation Risk / Regulatory Compliance Risk",
+   "Market/Technology risk: Rapidly evolving technology driven industry, need for constant upgradation, existing network obsolete, heavy debt burden and recurring losses",
+   "High capital expenditure requirements for spectrum acquisition and network expansion",
+   "Significant debt levels",
+   "Competition from OTT platforms reducing traditional voice and messaging revenues",
+   "Regulatory issues including AGR liabilities and spectrum pricing",
+   "Material weaknesses in internal financial controls as noted by statutory auditors",
+   "Continued losses and reduction of income",
+   "Negative net worth",
+   "Data breach incident: Defamation of FTS server in May-2025",
+   "Financial crunch and inability to invest in modernization, upgradation, and expansion of network",
+   "Tough competition from 4G services of competitors leading to churn of landline and broadband customers",
+   "Frequency authorization for spectrum in 900 MHz bands pending; 4G services in Delhi and Mumbai to be launched by BSNL instead of MTNL",
+   "Potential liability of Rs 1,718 crore for one-time spectrum charges for spectrum held beyond 4.4 MHz (subject to Supreme Court litigation outcome); alternatively Rs 455 crore",
+   "DoT challenging MTNL's adjustment of SUC and License fee amounting Rs 821.98 crore from excess pension payouts; risk of huge cash outflows if adjustment rejected",
+   "TRAI regulatory changes impacting revenue and requiring additional technology investment",
+   "Compliance risks under Companies Act 2013, SEBI LODR, IND AS, ICFR, GST; risk of heavy penalties and debarring from exchanges",
+   "Delay in payment to MSME vendors: Principal amount and interest due Rs 101.96 crore as on 31.03.2026",
+   "Government control: President of India may issue directives; certain matters reserved for President's approval",
+   "Procurement through GeM causing delays and operational competitiveness erosion",
+   "Intellectual Property risks: infringement and protection challenges",
+   "Stamp duty liability on registration of properties transferred by Government; inability to monetize/sell without payment",
+   "Asset and tower/fiber monetization valuation to be expedited",
+   "Ongoing litigations incurring financial risk contingent on outcomes",
+   "Contractual risks from breaches, misinterpretations, non-performance",
+   "AGR dues demands by DoT; deductions not allowed for want of documents",
+   "Financial/Liquidity/Debt Management Risk: Defaulted on bank borrowings; term loan defaults Rs 2,544.34 crore principal and Rs 501.43 crore interest; total outstanding term loans Rs 3,045.77 crore; overdraft facilities Rs 6,216.72 crore; total borrowings Rs 9,262.49 crore; all loan accounts declared NPA; current accounts frozen; unable to pay bond interest/redemption from July 2024; Government funding escrow account for bond payments; penal interest not fully accounted",
+   "Manpower risks: reduction due to retirement/resignation, weakening capabilities due to VRS, cost of turnover; VRS proposal submitted to GoI; non-operational HR activities with financial implication temporarily frozen",
+   "Net worth fully eroded: negative Rs 29,974.84 crore as on 31.03.2026; continuous losses since 2009-10 (except FY 2013-14); net cash loss during year; current liabilities exceed current assets substantially",
+   "Internal control failures: Statutory auditors reported material weakness in operating effectiveness of internal financial controls over financial reporting as at March 31, 2026",
+   "IT General Controls and Application Controls risks: CBCRM system (billing for post-paid wireless) old, installed 2005, running without AMC/support, system down in Mumbai; Wireline billing system old, running without AMC; Obsolete hardware infrastructure; Network security and audit; Lack of integrated ERP system; Cyber security; Data privacy risks",
+   "Disaster management and business continuity risk",
+   "Governance and ethical risk",
+   "market and completion risk",
+   "regulatory risk",
+   "operational risk",
+   "service quality risk",
+   "significant risk of going concern",
+   "Disputed claims from subscribers including operators under IUC/Roaming/MOU agreements",
+   "Cases involving suspension of revenue realization due to court proceedings",
+   "Wrong billing",
+   "Credit risk on trade receivables",
+   "Impairment of assets",
+   "Contingent liabilities",
+   "Default in repayment of bank instalments/interest amounting to Rs. 3,045.77 crores leading to all bank loan accounts becoming Non-performing assets as on 31.03.2026",
+   "Penal interest charged by some banks (UBI, PSB, IOB) and not provided for by others",
+   "Investment in United Telecom Limited (associate) impaired to nil due to negative net worth, no cash flows, and inability to repatriate funds",
+   "Physical share certificates of subsidiaries and associate not traceable",
+   "Significant trade receivables credit impaired (Rs. 1,070.75 crore as at 31 March 2026)",
+   "Overdue projects in CWIP exceeding original timelines",
+   "Title deeds of certain properties deposited with banks as security",
+   "Net worth fully eroded; continuous losses since 2009-10 (except FY 2013-14)",
+   "Defaulted in repayment of bank installments/interest of term loans amounting to Rs. 9,262.53 crores",
+   "Classified as 'Incipient Sick CPSE' by Department of Public Enterprises",
+   "Unsustainable debt levels; Committee of Secretaries reviewing options for merger with BSNL",
+   "Balances with DoT and BSNL subject to reconciliation and confirmation",
+   "Contingent liabilities of Rs. 5,370.09 crores for License Fee demands and Rs. 3,205.71 crores for one-time spectrum charges",
+   "Demand notes from DoT for additional spectrum (Rs. 1,155 crores and Rs. 4,252.83 crores) contested by MTNL",
+   "Revenue recognition from BSNL collections not independently verifiable; GST compliance issues",
+   "Unlinked credits of Rs. 52.56 crores overstating trade receivables and current liabilities",
+   "Non-compliance with Ind AS 109 for Expected Credit Loss on financial assets other than trade receivables",
+   "Penal interest on bank borrowings not fully accounted for",
+   "TDS on provisions not deducted; GST on electricity charges recovered from tenants not considered",
+   "Interest provision for MSME vendors not paid and subject to TDS deduction",
+   "The Holding Company's billing software has not been operating properly in the Delhi Unit and Mumbai Unit, and the Holding Company has not implemented sufficient alternative or manual procedures to ensure billing accuracy or safeguard against errors and fraud during this period, indicating a lack of effective internal controls over the billing process.",
+   "The Holding Company does not have appropriate internal control system for ensuring capitalization of Property, Plant and Equipment as and when the same is ready for use due to delayed issue of completion certificate by engineering department or due to delay in receipt of bills from the vendors for bought out items or due to delay of inventory issue slip by stores. Hence, the date of capitalization is not reliable. This could potentially result into delayed capitalization and corresponding impact on the operational results due to lower charge of depreciation.",
+   "The Holding Company does not have an appropriate internal control system for ensuring de-commissioning and de-capitalization of Property, Plant and Equipment in respect of assets which are no longer in use and held for disposal as scrap. This could potentially result into overstatement of gross block and corresponding impact on the operational results due to higher charge of depreciation and lower provision for impairment of assets.",
+   "The Holding Company does not have an appropriate internal control system to ensure that provisions made pending receipt of bills from vendors / contractors / operators / government departments at the quarter end and year end are duly reversed when actual bills are received and accounted for. This could potentially result in the same being accounted twice.",
+   "The Holding Company does not have an appropriate internal control system to track open purchase orders, work orders, agreements and contracts which have been entered with vendors / contractors / operators / government departments and are lying open. This could have a bearing on efficiency of operations and recording of financial liabilities and provisions pertaining to the same.",
+   "The Holding Company does not have an integrated ERP system. Different software packages used by the Holding company are interfaced through software links or manual intervention leaving gaps between them. This could potentially result into impaired financial reporting. In Mumbai Unit the Holding Company does not have an appropriate internal control system for reconciliation of Debtors between Billing software and Accounts, which could potentially result in some changes in the consolidated financial statements.",
+   "The Holding Company does not have an appropriate internal control system for reconciliation of vendors / contractors / operators / government departments, accounts which could potentially result in some changes in the consolidated financial statements.",
+   "The Holding Company does not have effective internal audit system so as to cover all major areas with extensive scope. The extent and depth of coverage, manner of conduct and reporting in respect of internal audit is very weak. This could potentially result into weak checks and balances and unreported financial irregularities ultimately resulting into distorted financial reporting.",
+   "The Holding Company does not have an appropriate internal control system for reconciliation of items of unlinked debits and credits because of receipts from the subscriber and the amount debited by the banks. This could potentially lead unreported financial adjustments ultimately resulting into distorted financial reporting.",
+   "The Holding Company does not have an appropriate internal control system for invoicing which are due and payable based on manual invoicing. The invoicing systems does not have reliability of measurement and reconciliation of items. This leads to multiple revisions and errors in invoicing. This could potentially lead errors in revenue recognition.",
+   "The Holding Company does not have appropriate internal control system for ensuring end use of issued inventory. The accounting is done based on the requisition statement of item and not actual installation or commission of item. This could potentially result into non-identification of pilferage and also early capitalization of equipment.",
+   "The Holding Company does not have an appropriate internal control system for ensuring billing and recovery of water and electricity charges from the lessee. This could potentially result in non-recovery and delayed recovery of such charges causing financial loss of the absolute expenses and finance cost on the delay in realization. This could also result in inaccurate expense values in the financial statements of the company.",
+   "The Holding company does not have appropriate internal control system towards renewals of the expired Rent/Lease agreements. Even though in some of the cases where lease agreements have been expired, company is receiving rentals on the terms and conditions mentioned in the expired agreement with the parties.",
+   "The Holding company does not have appropriate internal control towards the timely closure of workorders w.r.t landline & FTTH connections and creation of customer master for billing. This could potentially result in leakage and potential loss of revenue.",
+   "The Holding Company does not have appropriate internal control system for reconciliation of TDS refundable with form 26 AS and TDS certificate where applicable, which could potentially result in changes in consolidated financial statement.",
+   "In some cases, company is recognizing rentals on the terms and conditions mentioned in the expired agreements with the parties and not receiving any amount from such parties for more than one year. However, the company has not provided provision for doubtful debts for all such cases.",
+   "In Holding Company the Internal Financial Controls (IFC) configured within the Credit/ Collection & Sales Management System (CSMS) are editable by users without any corresponding edit log or change-tracking mechanism. Since no Edit Log is maintained for modifications made to these controls, it is not possible to verify or establish the integrity and accuracy of the data or configurations at any given point in time. The reliability of information generated from CSMS is therefore questionable.",
+   "Revenue disputes pending resolution",
+   "Regulatory changes affecting pension contributions",
+   "Technology obsolescence of network equipment",
+   "Foreign currency exchange risk",
+   "Default in repayment of bank instalment/interest amounting Rs. 3,045.77 crores, all loan accounts from banks have become Non-performing assets as on 31.03.2026",
+   "Significant credit impaired trade receivables of Rs. 1,025.35 crore (31 March 2026)",
+   "Negative net worth of associate United Telecom Limited, investment impaired to nil value",
+   "Physical share certificates of subsidiary companies not traceable",
+   "Overdue projects exceeding original timelines",
+   "High debt burden with total borrowings of Rs. 23,181.08 crore (non-current) plus current maturities of Rs. 3,045.77 crore",
+   "Penal interest charged by some banks",
+   "Letter of comfort from DoT valid only till 26.10.2022",
+   "Foreign currency risk exposure in USD and EURO",
+   "Interest rate risk on variable rate borrowings",
+   "Price risk (though not significant)",
+   "Contingent liabilities including income tax demands, sales tax/service tax/excise duty/municipal tax demands, claims not acknowledged as debts, pending arbitration/court cases, bank guarantees, directory disputes, land acquisition cases, license fee related liabilities, BTS related penalties",
+   "The Group has incurred a loss of Rs. 3,107.24 crores during the period under report and has been incurring continuous losses since year 2009-10 (except in FY 2013-14) and the net worth has been fully eroded for the year under report.",
+   "Certain lands and buildings capitalized in the books are pending registration/legal vesting in the name of The Group and the landed properties acquired from DOT have not been transferred in the name of The Group.",
+   "In Delhi one leasehold property and in Mumbai nine freehold and leasehold land properties have been encroached by various persons in respect of which matter is either pending in court or perusing with the various authorities for clearing the encroachment.",
+   "In Mumbai, the title deed of 3 properties are not traceable.",
+   "The Group has transactions with companies struck off under section 248 of the Companies Act, 2013.",
+   "Amounts recoverable from BSNL, DoT, and operators are subject to confirmation and reconciliation.",
+   "The Group has booked liability towards Sovereign Guarantee fee of Rs. 352.30 Crore payable to Government of India but was not able to make payment to DOT due to financial distress.",
+   "Reliance Communication Ltd. and Reliance Infratel Ltd. are under insolvency proceedings before the Hon'ble NCLT under IBC, 2016."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Mahanagar Telephone (Mauritius) Ltd (MTML)",
+    "holding_pct": 100,
+    "business": "Mobile Services, International Long Distance (ILD) Services and Internet Services in Mauritius. Offers 4G (LTE) services covering >90% population, launched e-SIM, acquired 5G licence. Turnover Rs 72.04 crore, loss Rs 5.64 crore in FY 2025-26. No debt liability. Managed by CEO, CFO and 10 officers on deputation from MTNL."
+   },
+   {
+    "name": "Millennium Telecom Ltd (MTL)",
+    "holding_pct": 100,
+    "business": "ICT related services including Wi-Fi solution, e-governance, Managed services, Turnkey ICT solution, GIS based services, capacity building. PAT Rs 0.74 crore, reserve and surplus Rs 3.88 crore, Net Worth Rs 6.75 crore as on 31.03.2026. Declared final dividend of Rs 0.28 crore for FY 2025-26. MTNL Board approved closure proposal pending approvals."
+   },
+   {
+    "name": "United Telecommunications Ltd (UTL), Nepal",
+    "holding_pct": 26.68,
+    "business": "Mobile/ILD/data services in Nepal (non-operational since 2017)"
+   },
+   {
+    "name": "Mahanagar Telephone Mauritius Limited (MTML)",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Millennium Telecom Ltd. (MTL)",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "MTNL STPI IT Services Ltd. (MSITS)",
+    "holding_pct": 50,
+    "business": "Joint Venture"
+   },
+   {
+    "name": "United Telecommunications Ltd. (UTL)",
+    "holding_pct": 26.68,
+    "business": "Associate"
+   },
+   {
+    "name": "Mahanagar Telephone Mauritius Ltd (MTML)",
+    "holding_pct": null,
+    "business": "Telecom"
+   },
+   {
+    "name": "United Telecom Limited (Nepal)",
+    "holding_pct": null,
+    "business": "Telecom"
+   },
+   {
+    "name": "MTNLSTPI IT Services Ltd. (MSITS)",
+    "holding_pct": null,
+    "business": "IT Services"
+   },
+   {
+    "name": "BSNL Tower Corporation Ltd",
+    "holding_pct": null,
+    "business": "Tower Infrastructure"
+   },
+   {
+    "name": "Millennium Telecom Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Unlisted Indian Subsidiary"
+   },
+   {
+    "name": "Mahanagar Telephone (Mauritius) Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Overseas Subsidiary"
+   },
+   {
+    "name": "Millennium Telecom Ltd. (MTL)",
+    "holding_pct": 100,
+    "business": "Wholly owned Indian Subsidiary"
+   },
+   {
+    "name": "Mahanagar Telephone (Mauritius) Limited (MTML)",
+    "holding_pct": 100,
+    "business": "Wholly owned Overseas Subsidiary"
+   },
+   {
+    "name": "United Telecommunications Ltd. (UTL), Nepal",
+    "holding_pct": 26.68,
+    "business": "Joint Venture"
+   },
+   {
+    "name": "Millennium Telecom Limited",
+    "holding_pct": null,
+    "business": "Telecom services (unquoted subsidiary, face value Rs. 10 each, 2,875,880 shares held)"
+   },
+   {
+    "name": "Mahanagar Telephone Mauritius Limited",
+    "holding_pct": null,
+    "business": "Telecom services (unquoted subsidiary, face value MUR Rs. 1 each, 673,717,949 shares held)"
+   },
+   {
+    "name": "Mahanagar Telephone Mauritius Limited",
+    "holding_pct": null,
+    "business": "Telecom operations outside India; total assets Rs.134.72 Crores, net assets Rs.109.91 Crores, total revenues Rs.72.04 Crores, net loss after tax Rs.(5.64) Crores, total comprehensive income Rs.2.64 Crores, net cash flow Rs.(3.00) Crores for year ended 31 March 2026"
+   },
+   {
+    "name": "Millennium Telecom Limited",
+    "holding_pct": null,
+    "business": "Subsidiary in India; total assets Rs.8.82 Crores, net assets Rs.6.76 Crores, total revenue Rs.1.06 Crores, net profit Rs.0.74 Crores, total comprehensive income nil, net cash flow Rs.0.74 Crores for year ended 31 March 2026"
+   },
+   {
+    "name": "Millenium Telecom Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Foreign subsidiary",
+    "holding_pct": null,
+    "business": "Telecommunications operations in foreign jurisdiction"
+   },
+   {
+    "name": "Millennium Telecom Limited",
+    "holding_pct": null,
+    "business": "Telecom services"
+   },
+   {
+    "name": "Mahanagar Telephone Mauritius Limited",
+    "holding_pct": null,
+    "business": "Telecom services"
+   },
+   {
+    "name": "MTNL STPI IT Services Limited",
+    "holding_pct": null,
+    "business": "IT services (Joint Venture)"
+   },
+   {
+    "name": "Millenium Telecom Limited",
+    "holding_pct": 100,
+    "business": "Information technology/data"
+   },
+   {
+    "name": "Mahanagar Telephone (Mauritius) Limited",
+    "holding_pct": 100,
+    "business": "Telecommunication service"
+   },
+   {
+    "name": "MTML Data Limited",
+    "holding_pct": 100,
+    "business": "Telecommunication service"
+   },
+   {
+    "name": "MTML International Limited",
+    "holding_pct": 100,
+    "business": "Telecommunication service"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "BSNL",
+    "nature": "Service Agreement for maintenance and operational activities of MTNL's Telecom Services; Revenue share from migrated customers",
+    "amount_cr": 156.51
+   },
+   {
+    "party": "MTML",
+    "nature": "Wholly owned subsidiary; officers on deputation from MTNL",
+    "amount_cr": null
+   },
+   {
+    "party": "MTL",
+    "nature": "Wholly owned subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "MTNLSTPI IT Services Ltd (MSITSL)",
+    "nature": "50:50 Joint Venture with Software Technology Parks of India (STPI)",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (details in Note No 49 & 65 of Standalone Financial Statements)",
+    "nature": "Transactions at arm's length basis in ordinary course of business; no material transactions under Section 188 during FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "BSNL",
+    "nature": "Receivable from BSNL",
+    "amount_cr": 4101.34
+   },
+   {
+    "party": "DoT",
+    "nature": "Amount recoverable from DoT",
+    "amount_cr": 129.71
+   },
+   {
+    "party": "Government of India",
+    "nature": "Promoter's Contribution (waiver of Government Guarantee Fees on bonds)",
+    "amount_cr": 62.3
+   },
+   {
+    "party": "Bharat Sanchar Nigam Limited (BSNL)",
+    "nature": "Receivable/Payable balances and revenue sharing under SLA",
+    "amount_cr": 4109.51
+   },
+   {
+    "party": "Department of Telecommunications (DoT)",
+    "nature": "Recoverable/Payable balances, license fees, spectrum charges, pension/GPF recoverables",
+    "amount_cr": 430.24
+   },
+   {
+    "party": "Government of India",
+    "nature": "Sovereign Guarantee fee liability, equity infusion, soft loans, budgetary support",
+    "amount_cr": 352.3
+   },
+   {
+    "party": "BSNL",
+    "nature": "Service agreement dated 22.11.2024 superseding earlier agreement dated 18.08.2021; entire telecom operations of Holding Company in Delhi and Mumbai to be run by BSNL w.e.f 01.01.2025; BSNL to take care of CAPEX and OPEX and ensure EBIDTA neutral operations",
+    "amount_cr": null
+   },
+   {
+    "party": "Government of India",
+    "nature": "Loan of Rs. 2980.92 crore for payment of Interest on Sovereign bonds; no interest terms stipulated",
+    "amount_cr": 2980.92
+   },
+   {
+    "party": "Department of Telecommunications (DOT)",
+    "nature": "Amount recoverable for GPF settlement of Rs. 6.52 crores for Combined Service Optees; payables towards license fees and spectrum usage charges adjusted with excess pension payouts recoverable from DOT; AGR computation difference under consideration",
+    "amount_cr": 6.52
+   },
+   {
+    "party": "Government of India",
+    "nature": "Pension contribution for absorbed combined service pension optees and deemed deputation officials",
+    "amount_cr": null
+   },
+   {
+    "party": "BSNL",
+    "nature": "Equivalent pay scales reference for pension contribution",
+    "amount_cr": null
+   },
+   {
+    "party": "Department of Telecommunications (DoT)",
+    "nature": "Officials on deemed deputation",
+    "amount_cr": null
+   },
+   {
+    "party": "MTNL Provident Fund Trust",
+    "nature": "Provident fund administration (prior to July 2020)",
+    "amount_cr": null
+   },
+   {
+    "party": "Recognised Provident Fund",
+    "nature": "Provident fund administration (from July 2020)",
+    "amount_cr": null
+   },
+   {
+    "party": "DoT (Department of Telecommunications)",
+    "nature": "Receivable from DoT / Amount recoverable from DoT",
+    "amount_cr": 129.71
+   },
+   {
+    "party": "Government of India",
+    "nature": "Promoter's Contribution - fair value of waiver of guarantee fee on debentures",
+    "amount_cr": 62.3
+   },
+   {
+    "party": "United Telecom Limited",
+    "nature": "Investment in associate (impaired to nil)",
+    "amount_cr": 35.85
+   },
+   {
+    "party": "IUC operators",
+    "nature": "Amount recoverable from IUC operators",
+    "amount_cr": 324.11
+   },
+   {
+    "party": "MTNL STPI IT Services Limited (MSISL)",
+    "nature": "Joint venture",
+    "amount_cr": 0.57
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Remuneration",
+    "amount_cr": 1.53
+   },
+   {
+    "party": "BSNL",
+    "nature": "Settlements: Amount recoverable from BSNL is Rs. 6,148.64 crores and amount payable is Rs. 2,047.30 crores. Net recoverable of Rs. 4,101.34 crores subject to reconciliation and confirmation. Service Level Agreement for running telecom operations.",
+    "amount_cr": 4101.34
+   },
+   {
+    "party": "Department of Telecommunications (DoT)",
+    "nature": "Settlements: Amount recoverable from DoT is Rs. 678.77 crores and amount payable is Rs. 1,108.37 crores. Net payable of Rs. 429.60 crores subject to reconciliation and confirmation. Various demands for license fees, spectrum charges, and OTSC.",
+    "amount_cr": -429.6
+   },
+   {
+    "party": "Government of India",
+    "nature": "Sovereign Guarantee fee liability of Rs. 352.30 Crore payable. Requested DoT for settlement through equity infusion. Additional soft loan of Rs. 1829.69 crore during 2025-26. Budgetary support of Rs. 1851 crores for network upgradation by BSNL.",
+    "amount_cr": 352.3
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Sovereign Guarantee Bonds",
+    "amount_cr": 24070.99,
+    "note": "Listed on Wholesale debt market segment of BSE Limited. CARE AAA (CE), Stable; BWR AA+ (CE) Rating Watch with Negative Implication; IND AAA (CE)/ Rating Watch with Negative Implication; CRISIL AAA (CE)/ Watch Negative"
+   },
+   {
+    "lender_or_type": "Long Term Bank Facilities",
+    "amount_cr": 2905.48,
+    "note": "CARE D rating"
+   },
+   {
+    "lender_or_type": "Long Term /Short Term Bank Facilities",
+    "amount_cr": 2752.48,
+    "note": "CARE D rating"
+   },
+   {
+    "lender_or_type": "Short Term Bank Facilities",
+    "amount_cr": 5980.95,
+    "note": "CARE D rating"
+   },
+   {
+    "lender_or_type": "Secured Loans Excluding Deposits",
+    "amount_cr": 3045.78,
+    "note": "Principal amount as on 31.03.2026"
+   },
+   {
+    "lender_or_type": "Unsecured Loans (LTL) Bond+STL+OD",
+    "amount_cr": 32378.73,
+    "note": "Principal amount as on 31.03.2026"
+   },
+   {
+    "lender_or_type": "Total Indebtedness",
+    "amount_cr": 35424.51,
+    "note": "Principal amount as on 31.03.2026"
+   },
+   {
+    "lender_or_type": "Bonds",
+    "amount_cr": 24070.99,
+    "note": "CARE AAA (CE), Stable"
+   },
+   {
+    "lender_or_type": "Long Term Bank Facilities",
+    "amount_cr": 2905.48,
+    "note": "CARE D"
+   },
+   {
+    "lender_or_type": "Long Term/Short Term Bank Facilities",
+    "amount_cr": 2752.48,
+    "note": "CARE D"
+   },
+   {
+    "lender_or_type": "Short Term Bank Facilities",
+    "amount_cr": 5980.95,
+    "note": "CARE D"
+   },
+   {
+    "lender_or_type": "Bonds (Brickwork)",
+    "amount_cr": 6500,
+    "note": "BWR AA+ (CE) Rating Watch with Negative Implication"
+   },
+   {
+    "lender_or_type": "Bonds (India Ratings)",
+    "amount_cr": 17570.99,
+    "note": "IND AAA (CE)/Stable Rating Watch with Negative Implication"
+   },
+   {
+    "lender_or_type": "Bonds (CRISIL)",
+    "amount_cr": 6500,
+    "note": "CRISIL AAA (CE)/Watch Negative"
+   },
+   {
+    "lender_or_type": "Long Term Borrowings including Current Maturities + Short Term Borrowings",
+    "amount_cr": 26226.85,
+    "note": "Paid up Debt Capital (Outstanding Debt) as on 31.03.2026"
+   },
+   {
+    "lender_or_type": "Term loans from banks",
+    "amount_cr": 3045.77,
+    "note": "Defaults: Rs 2,544.34 crore principal and Rs 501.43 crore interest; all accounts classified as NPA"
+   },
+   {
+    "lender_or_type": "Overdraft facilities from banks",
+    "amount_cr": 6216.72,
+    "note": "Outstanding"
+   },
+   {
+    "lender_or_type": "Total bank borrowings",
+    "amount_cr": 9262.49,
+    "note": "Aggregate of term loans and overdraft"
+   },
+   {
+    "lender_or_type": "Sovereign Guaranteed Bonds",
+    "amount_cr": null,
+    "note": "Unable to pay interest/redemption from July 2024; Government funding escrow account for payments; Debenture Trustees issuing Notice for Invocation of Guarantee to President of India"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": 4042.97,
+    "note": "Term Loan and Overdraft - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "Bank of India",
+    "amount_cr": 1216.37,
+    "note": "Term Loan and Overdraft - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "Punjab National Bank",
+    "amount_cr": 508.53,
+    "note": "Term Loan and Overdraft - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": 378.74,
+    "note": "Term Loan - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "UCO Bank",
+    "amount_cr": 291.51,
+    "note": "Term Loan - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "Indian Overseas Bank",
+    "amount_cr": 2625.03,
+    "note": "Overdraft - Principal and Interest overdue, 455 days delay"
+   },
+   {
+    "lender_or_type": "Punjab and Sindh Bank",
+    "amount_cr": 199.38,
+    "note": "Term Loan - Principal and Interest overdue, 641 days delay"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 23181.08,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 12244.18,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": null,
+    "note": "Transaction costs amortized over tenor using effective interest rate; borrowing costs directly attributable to acquisition/construction of qualifying assets capitalized (projects >Rs 30 cr generally take >1 year)"
+   },
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": 378.73,
+    "note": "Overdue instalments of Rs 313.90 crore, NPA date 28-09-2024, interest rate 12.10%"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": 104.52,
+    "note": "Overdue instalments of Rs 88.45 crore, NPA date 12-08-2024, interest rate 10.45%"
+   },
+   {
+    "lender_or_type": "Union Bank of India (e-Andhra Bank)",
+    "amount_cr": 93.45,
+    "note": "Overdue instalments of Rs 77.11 crore, NPA date 12-08-2024, interest rate 10.62%"
+   },
+   {
+    "lender_or_type": "Union Bank of India (e-Corporation Bank)",
+    "amount_cr": 99.68,
+    "note": "Overdue instalments of Rs 84.37 crore, NPA date 12-08-2024, interest rate 10.16%"
+   },
+   {
+    "lender_or_type": "Punjab & Sindh Bank",
+    "amount_cr": 103.34,
+    "note": "Overdue instalments of Rs 87.57 crore, NPA date 08-10-2024, interest rate 9.44%"
+   },
+   {
+    "lender_or_type": "Punjab National Bank (e-United Bank)",
+    "amount_cr": 40.52,
+    "note": "Overdue instalments of Rs 34.37 crore, NPA date 09-09-2024, interest rate 8.79%"
+   },
+   {
+    "lender_or_type": "Punjab National Bank (e-Oriental Bank of Commerce)",
+    "amount_cr": 232.51,
+    "note": "Overdue instalments of Rs 197.79 crore, NPA date 09-09-2024, interest rate 8.75%"
+   },
+   {
+    "lender_or_type": "Bank of India LCB",
+    "amount_cr": 240.87,
+    "note": "Overdue instalments of Rs 201.34 crore, NPA date 04-09-2024, interest rate 8.71%"
+   },
+   {
+    "lender_or_type": "UCO Bank",
+    "amount_cr": 291.5,
+    "note": "Overdue instalments of Rs 245.83 crore, NPA date 28-09-2024, interest rate 9.93%"
+   },
+   {
+    "lender_or_type": "Union Bank of India (e-Andhra Bank) - additional",
+    "amount_cr": 127.85,
+    "note": "Overdue instalments of Rs 106.54 crore, NPA date 12-08-2024, interest rate 10.45%"
+   },
+   {
+    "lender_or_type": "Punjab & Sindh Bank - additional",
+    "amount_cr": 96.04,
+    "note": "Overdue instalments of Rs 80.78 crore, NPA date 08-10-2024, interest rate 9.30%"
+   },
+   {
+    "lender_or_type": "Union Bank of India (e-Corporation Bank) - additional",
+    "amount_cr": 298.0,
+    "note": "Overdue instalments of Rs 248.91 crore, NPA date 12-08-2024, interest rate 10.54%"
+   },
+   {
+    "lender_or_type": "Bank of India CGO",
+    "amount_cr": 368.2,
+    "note": "Overdue instalments of Rs 298.20 crore, NPA date 04-09-2024, interest rate 9.85%"
+   },
+   {
+    "lender_or_type": "Union Bank of India - additional",
+    "amount_cr": 570.56,
+    "note": "Overdue instalments of Rs 479.20 crore, NPA date 12-08-2024, interest rate 10.46%"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8D (7.51%)",
+    "amount_cr": 524.6,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 06-03-2034"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8C (7.80%)",
+    "amount_cr": 2430.73,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 07-11-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8B (7.61%)",
+    "amount_cr": 999.24,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 24-08-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8A (7.59%)",
+    "amount_cr": 2349.68,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 20-07-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7E (7.75%)",
+    "amount_cr": 60.21,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 24-03-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7D (7.80%)",
+    "amount_cr": 343.5,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 24-02-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7C (7.78%)",
+    "amount_cr": 1537.05,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 10-02-2033"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7B (7.87%)",
+    "amount_cr": 2623.5,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption 01-12-2032"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7A (8.00%)",
+    "amount_cr": 5814.95,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure, redemption date not fully stated in extract"
+   },
+   {
+    "lender_or_type": "Debentures - Series 6 (6.85%)",
+    "amount_cr": 2137.82,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure"
+   },
+   {
+    "lender_or_type": "Debentures - Series 5 (7.05%)",
+    "amount_cr": 4359.8,
+    "note": "Government of India guaranteed, unsecured, listed, 10-year tenure"
+   },
+   {
+    "lender_or_type": "Debentures-Series 7A",
+    "amount_cr": null,
+    "note": "Government of India guaranteed, unsecured, listed, 8.00% Redeemable Non Convertible Debentures, tenure 10 years, redemption date 15th November 2032, semi-annual interest payment, no instalment due as on reporting date"
+   },
+   {
+    "lender_or_type": "Debentures-Series 6",
+    "amount_cr": null,
+    "note": "Government of India guaranteed, unsecured, listed, 6.85% Redeemable Non Convertible Debentures, tenure 10 years, redemption date 20th December 2030, semi-annual interest payment, no instalment due as on reporting date"
+   },
+   {
+    "lender_or_type": "Debentures-Series 5",
+    "amount_cr": null,
+    "note": "Government of India guaranteed, unsecured, listed, 7.05% Redeemable Non Convertible Debentures, tenure 10 years, redemption date 11th October 2030, semi-annual interest payment, no instalment due as on reporting date"
+   },
+   {
+    "lender_or_type": "Cash credit from banks",
+    "amount_cr": 6217.49,
+    "note": "As on 31 March 2026; includes NPA accounts: Union Bank of India (Rs 308.11 cr, NPA from 12-08-2024), Indian Overseas Bank (Rs 2625.79 cr, NPA from 03-02-2025), Union Bank of India (Rs 2440.80 cr, NPA from 12-08-2024), Punjab National Bank (Rs 235.50 cr, NPA from 10-09-2024), Bank of India (Rs 607.29 cr, NPA from 04-09-2024); total sanctioned limit Rs 5250 cr, overdue Rs 966.73 cr"
+   },
+   {
+    "lender_or_type": "Short term loans from Government of India",
+    "amount_cr": 2980.92,
+    "note": "Loan provided by Government of India for payment of interest on Sovereign Guarantee Bonds; terms do not stipulate interest payment, so no interest provided in financial statements"
+   },
+   {
+    "lender_or_type": "Current maturities of long-term borrowings",
+    "amount_cr": 3045.77,
+    "note": "As on 31 March 2026 (secured)"
+   },
+   {
+    "lender_or_type": "Term loans from banks",
+    "amount_cr": 3045.77,
+    "note": "Defaulted principal Rs. 2,145.73 crore and interest Rs. 501.45 crore; classified as NPA"
+   },
+   {
+    "lender_or_type": "Overdraft facilities from banks",
+    "amount_cr": 6217.49,
+    "note": "Outstanding"
+   },
+   {
+    "lender_or_type": "Sovereign Guarantee-backed bonds",
+    "amount_cr": 17571,
+    "note": "Approved by Union Cabinet for debt restructuring; waiver of guarantee fee"
+   },
+   {
+    "lender_or_type": "Soft loan from Government of India",
+    "amount_cr": 1829.69,
+    "timeline": "During 2025-26 for interest payment on bonds"
+   },
+   {
+    "lender_or_type": "Government of India",
+    "amount_cr": 2980.92,
+    "note": "Loan for payment of Interest on Sovereign bonds; does not stipulate terms regarding interest"
+   },
+   {
+    "lender_or_type": "Sovereign Guarantee Bonds",
+    "amount_cr": 17571,
+    "note": "Union Cabinet approved raising of Sovereign Guarantee bonds for MTNL with tenure of 10 years or more for Rs. 17,571 crores with waiver of guarantee fee to repay high-cost debt and restructure with new sustainable loan (F.NO.20-28/2022-PR dated August 2nd, 2022)"
+   },
+   {
+    "lender_or_type": "Bonds",
+    "amount_cr": 6500,
+    "note": "Raised funds by issuing Bonds for Rs.6,500 crore in FY 2020-21 in line with cabinet note"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": null,
+    "note": "Transaction costs amortized over tenor using effective interest rate"
+   },
+   {
+    "lender_or_type": "Banks (Term loans)",
+    "amount_cr": 3045.77,
+    "note": "All loan accounts from banks have become Non-performing assets as on 31.03.2026 due to default in repayment. Shown under current maturities. Secured by floating first pari passu charge on movable fixed assets and current assets."
+   },
+   {
+    "lender_or_type": "Debentures - Series 8D (7.51%)",
+    "amount_cr": 524.6,
+    "note": "55599 number of 7.51% Redeemable Non Convertible Debentures of Rs. 0.01 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8C (7.80%)",
+    "amount_cr": 2430.73,
+    "note": "257000 number of 7.80% Redeemable Non Convertible Debentures of Rs. 0.01 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8B (7.61%)",
+    "amount_cr": 999.24,
+    "note": "105500 number of 7.61% Redeemable Non Convertible Debentures of Rs. 0.01 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 8A (7.59%)",
+    "amount_cr": 2349.68,
+    "note": "248000 number of 7.59% Redeemable Non Convertible Debentures of Rs. 0.01 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7E (7.75%)",
+    "amount_cr": 60.21,
+    "note": "634 number of 7.75% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7D (7.80%)",
+    "amount_cr": 343.5,
+    "note": "3,615 number of 7.80% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7C (7.78%)",
+    "amount_cr": 1537.05,
+    "note": "16,176 number of 7.78% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7B (7.87%)",
+    "amount_cr": 2623.5,
+    "note": "27,579 number of 7.87% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 7A (8.00%)",
+    "amount_cr": 5814.95,
+    "note": "61,096 number of 8.00% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 6 (6.85%)",
+    "amount_cr": 2137.82,
+    "note": "21,386 number of 6.85% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Debentures - Series 5 (7.05%)",
+    "amount_cr": 4359.8,
+    "note": "43,614 number of 7.05% Redeemable Non Convertible Debentures of Rs. 0.10 crore each, guaranteed by Government of India"
+   },
+   {
+    "lender_or_type": "Variable rate borrowing",
+    "amount_cr": 12244.18,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Fixed rate borrowing",
+    "amount_cr": 23181.08,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Total borrowings",
+    "amount_cr": 35425.27,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Sovereign Guarantee backed bonds",
+    "amount_cr": null,
+    "note": "Interest payment supported by Government of India through additional soft loan of Rs. 1829.69 crore during 2025-26"
+   },
+   {
+    "lender_or_type": "Government of India",
+    "amount_cr": 1829.69,
+    "note": "Additional soft loan during 2025-26 for payment of interest due on Sovereign Guarantee-backed bonds"
+   }
+  ],
+  "auditor": {
+   "name": "M/s O. P. Bagla & CO LLP and M/s S.L. Chhajed & Co. LLP (Statutory Auditors); M/s R. M. Bansal & Co. (Cost Auditor); M/s R. P. Sehgal & Associates (Secretarial Auditor)",
+   "qualifications_or_emphasis": [
+    "Material weaknesses in internal financial controls described in Statutory Auditors' Report on Internal Financial Control under Section 143(3)(i) for FY 2025-26",
+    "One Half of the Board was not comprised of Independent Directors from 01.04.2025 to 31.03.2026. Also, there was no Independent Director including Woman Independent Director or Woman Director from 01.04.2025 to 14.04.2025.",
+    "The Board required 5 (Five) Independent Directors from 01.04.2025 to 08.05.2025 but it had only 2 (Two) Independent Directors on the Board during the period from 15.04.2025 to 08.05.2025. From 09.05.2025 to 31.03.2026, the Board required 6 (Six) Independent Directors but it had only 2 (Two) Independent Directors on the Board during the period.",
+    "The Audit Committee did not comprise of minimum 2 (Two) Independent Directors as Member/Chairman for the period from 01.04.2025 to 14.04.2025.",
+    "The Nomination & Remuneration Committee did not comprise of minimum 2 (Two) Independent Directors as Member/Chairman for the period from 01.04.2025 to 14.04.2025.",
+    "The Stakeholders Relationship Committee did not comprise of minimum 1(One) Independent Director as member for the period from 01.04.2025 to 14.04.2025.",
+    "The Enterprise Risk Management Committee did not comprise of minimum 1 (One) Independent Director as member for the period from 01.04.2025 to 14.04.2025.",
+    "Imposition of Financial Disincentive (FD) by Telecom Regulatory Authority of India (TRAI)",
+    "Material weaknesses described in Report on Internal Financial Control",
+    "Material weakness in operating effectiveness of internal financial controls over financial reporting as at March 31, 2026",
+    "Adverse opinion on standalone financial statements",
+    "Modified opinion on internal financial controls (Annexure C)",
+    "Title deeds of immovable properties not held in company's name (detailed in Annexure A)",
+    "Default in repayment of loans and interest to Union Bank of India (Rs. 4,042.97 Cr), Bank of India (Rs. 1,216.37 Cr), Punjab National Bank (Rs. 508.53 Cr), State Bank of India (Rs. 378.74 Cr), UCO Bank (Rs. 291.51 Cr), Indian Overseas Bank (Rs. 2,625.03 Cr), Punjab and Sindh Bank (Rs. 199.38 Cr)",
+    "Cash losses of Rs. 2,538.50 Crore in current year and Rs. 2,807.11 Crore in preceding year",
+    "Material uncertainty exists regarding company's ability to meet liabilities as and when they fall due within one year from balance sheet date",
+    "Audit trail not uniformly enabled in WFMS accounting software",
+    "Cost records not maintained for year ended March 31, 2026",
+    "Undisputed statutory dues arrears: GST (Rs. 22.41 Cr), License Fee (Rs. 530.70 Cr), Spectrum Charges (Rs. 41.18 Cr)",
+    "Disputed statutory dues: Service Tax Delhi (Rs. 71.01 Cr), GST Delhi (Rs. 288.51 Cr), Labour Cess Delhi (Rs. 9.14 Cr), Sales Tax Mumbai (Rs. 372.94 Cr), Service Tax Mumbai (Rs. 2.91 Cr), Income Tax Corporate Office (disputed demand Rs. 639.75 Cr and Rs. 19.90 Cr)",
+    "No dividend declared or paid during the year",
+    "Company has not revalued Property, Plant and Equipment or intangible assets during the year",
+    "No proceedings for benami property under Benami Transactions (Prohibition) Act",
+    "No funds advanced/loaned/invested to intermediaries or received from funding parties for ultimate beneficiaries",
+    "No whistle blower complaints received",
+    "No fraud noticed or reported during the year",
+    "No resignation of statutory auditors during the year",
+    "No CSR spending required under Section 135",
+    "Adverse opinion on financial statements due to numerous qualifications",
+    "Emphasis of matter paras in audit report",
+    "Non-compliance with SEBI guidelines regarding minimum number of independent directors",
+    "Non-compliance with TRAI parameters resulting in disincentive levied",
+    "Swachh Action Plan contribution of Rs. 0.22 Crore pending utilization",
+    "Billing of GSM Billing, Lease Circuit, IN CRM, IUC, GSM Prepaid not integrated with WFMS (accounting software)",
+    "Manual intervention prevalent in accounting transactions; adequate security measures for manual intervention need to be strengthened",
+    "Adverse opinion due to significance of matters in Basis for Adverse Opinion",
+    "Going concern basis of accounting used despite eroded net worth and defaults, relying on Government support",
+    "Revenue recognition from BSNL collections not independently verifiable",
+    "Multiple balances subject to reconciliation/confirmation with material impact unascertainable",
+    "Contingent liabilities significant and unresolved",
+    "Basis for Qualified Opinion: (xvii) Provision of Rs. 200 Crores recognized on amount recoverable for more than three years out of total recoverable from IUC Operators and Others of Rs. 709.09 Crores; ECL model requires comprehensive review for Ind AS 109 compliance",
+    "Basis for Qualified Opinion: (xviii) Non-compliance with Ind AS 116 \u2013 Leases; working with adequate supporting documents and relevant records not made available; accounting entries based on old data not updated with new leases, expired leases and rent revisions; impact unascertainable",
+    "Basis for Qualified Opinion: (xix) Penal Guarantee Fees of Rs. 352.30 Crore classified as Contingent Liability instead of provision; understatement of liabilities and expenses by Rs. 352.30 Crore and overstatement of profit by same amount",
+    "Basis for Qualified Opinion: (xx) Manual billing on average basis in certain units of Mumbai and Delhi due to software downtime; unable to comment on accuracy and completeness of revenue and receivables; impact not ascertained",
+    "Emphasis of Matter: (i) Share certificates of subsidiaries Millennium Telecom Limited and Mahanagar Telephone Mauritius Limited not provided; discrepancy in shares of United Telecom Limited (associate)",
+    "Emphasis of Matter: (ii) Loan from Government of India of Rs. 2980.92 crore for interest on Sovereign bonds does not stipulate interest terms; no interest provided (Note 32)",
+    "Emphasis of Matter: (iii) Pending dispute with Income Tax Department before Courts regarding deduction u/s 80IA; Contingency reserve of Rs. 243.22 Crores created (Note 67)",
+    "Emphasis of Matter: (iv) Service agreement with BSNL dated 22.11.2024: entire telecom operations in Delhi and Mumbai to be run by BSNL w.e.f 01.01.2025; BSNL to handle CAPEX and OPEX and ensure EBIDTA neutral operations (Note 78)",
+    "Emphasis of Matter: (v) Amount receivable from BSNL & Other Operators reflected as loans and other financial assets instead of bifurcating into trade receivables and other financial assets (Notes 16 & 20)",
+    "Emphasis of Matter: (vi) Amount recoverable from DOT for GPF settlement of Rs. 6.52 crores for Combined Service Optees; matter under review with DOT (Note 74(d))",
+    "Emphasis of Matter: (vii) Payables towards license fees and spectrum usage charges adjusted with excess pension payouts recoverable from DOT; matter under consideration (Note 87)",
+    "Emphasis of Matter: (viii) License agreement with DOT has no guidance on change in AGR calculation method due to Ind-AS migration; difference in AGR computation under consideration of DOT (Note 87)",
+    "Emphasis of Matter: (ix) Leasehold immovable properties transferred from DoT not mutated/renewed in MTNL name; classified as Right of Use assets (Note 62(A))",
+    "Emphasis of Matter: (x) Amount payable to GPF trust under reconciliation; adjustment to be recognized once completed (Note 84)",
+    "Emphasis of Matter: (xi) Title deeds for certain freehold and leasehold land in Holding Company's name but value not in books (Note 64)",
+    "Emphasis of Matter: (xii) Provisional income booked under Revenue from Operations due to non-functioning billing software in some areas of Delhi and Mumbai Units",
+    "Emphasis of Matter: (xiii) Holding company does not have requisite number of independent directors and women directors per Section 149 of Companies Act",
+    "Material Uncertainty Related to Going Concern: Accumulated losses, net worth fully eroded, net loss/cash loss in current and previous years, current liabilities exceed current assets; Revival plan approved by Union Cabinet including employee cost reduction, spectrum allotment, debt restructuring via sovereign guarantee bonds, asset monetization, and in-principle approval for merger of BSNL and MTNL",
+    "Material weaknesses in internal financial controls over financial reporting as at March 31, 2026, including: (i) billing software not operating properly in Delhi and Mumbai units with insufficient alternative procedures; (ii) lack of appropriate internal control for capitalization of PPE; (iii) lack of appropriate internal control for de-commissioning and de-capitalization of PPE; (iv) lack of appropriate internal control for reversal of provisions; (v) lack of appropriate internal control to track open purchase orders, work orders, agreements and contracts; (vi) lack of integrated ERP system and gaps in software interfaces; (vii) lack of appropriate internal control for reconciliation of vendor/contractor/operator/government department accounts; (viii) ineffective internal audit system; (ix) lack of appropriate internal control for reconciliation of unlinked debits and credits; (x) lack of appropriate internal control for manual invoicing; (xi) lack of appropriate internal control for ensuring end use of issued inventory; (xii) lack of appropriate internal control for billing and recovery of water and electricity charges from lessees; (xiii) lack of appropriate internal control for renewals of expired Rent/Lease agreements; (xiv) lack of appropriate internal control for timely closure of workorders for landline & FTTH connections and creation of customer master for billing; (xv) lack of appropriate internal control for reconciliation of TDS refundable with Form 26AS and TDS certificates; (xvi) recognition of rentals on expired agreements without provision for doubtful debts; (xvii) Internal Financial Controls in CSMS editable by users without edit log or change-tracking mechanism."
+   ],
+   "opinion": "Reported material weaknesses in Internal Financial Control under Section 143(3)(i) of Companies Act, 2013 for FY 2025-26",
+   "key_audit_matters": [
+    "Internal Financial Controls",
+    "Material weaknesses in internal controls",
+    "Internal Financial Controls over financial reporting",
+    "Basis for Adverse Opinion Paragraph (referred to but not detailed in this part)",
+    "Internal financial controls with reference to standalone financial statements - modified opinion expressed in Annexure C",
+    "Title deeds of immovable properties not held in the name of the Company (Delhi and Mumbai units)",
+    "Default in repayment of loans and interest to multiple banks",
+    "Material uncertainty related to going concern (accumulated losses, net worth eroded, current liabilities exceed current assets)",
+    "Non-maintenance of cost records as required under Section 148(1) of Companies Act 2013",
+    "Audit trail functionality not enabled uniformly across all functions and modules in accounting software (WFMS)",
+    "Undisputed statutory dues in arrears for more than six months (GST, License Fee, Spectrum Charges)",
+    "Disputed statutory dues (Service Tax, GST, Labour Cess, Sales Tax, Income Tax)",
+    "Physical verification of Property, Plant and Equipment not conducted for corporate office and RF feeder cables in Delhi Wireless unit",
+    "Internal Audit System not commensurate with size and nature of business",
+    "Billing software not operating properly in Delhi and Mumbai units",
+    "Lack of internal control over capitalization of Property, Plant and Equipment",
+    "Lack of internal control over de-commissioning and de-capitalization of assets held for disposal",
+    "Lack of internal control over reversal of provisions pending receipt of bills",
+    "Lack of internal control to track open purchase orders, work orders, agreements and contracts",
+    "Absence of integrated ERP system; gaps between software packages",
+    "Lack of internal control over reconciliation of vendor/contractor/operator/government department accounts",
+    "Ineffective internal audit system",
+    "Lack of internal control over reconciliation of unlinked debits and credits",
+    "Lack of internal control over manual invoicing reliability and reconciliation",
+    "Lack of internal control over end use of issued inventory",
+    "Lack of internal control over billing and recovery of water and electricity charges from lessees",
+    "Lack of internal control over renewals of expired Rent/Lease agreements",
+    "Lack of internal control over timely closure of workorders for landline & FTTH connections and creation of customer master for billing",
+    "Lack of internal control over reconciliation of TDS refundable with Form 26AS and TDS certificates",
+    "Recognition of rentals on expired agreements without provision for doubtful debts",
+    "Internal Financial Controls in CSMS editable by users without edit log or change-tracking mechanism",
+    "Net worth fully eroded; continuous losses and default on borrowings",
+    "Service Level Agreement with BSNL - revenue recognition issues",
+    "Dues to/receivable from BSNL (net Rs. 4,109.51 crore) subject to reconciliation",
+    "Balances with DoT (net payable Rs. 430.24 crore) subject to reconciliation",
+    "Accrued income of Rs. 26.53 crore without corresponding GST liability discharged",
+    "License fee calculation on IUC charges not per license agreement terms pre-2012-13",
+    "Impairment assessment under Ind AS 36 inadequate",
+    "Balance confirmations and reconciliations not complete for various parties",
+    "TDS reconciliation not performed",
+    "Unlinked credits of Rs. 52.56 crore overstating receivables and liabilities",
+    "Property, Plant and Equipment capitalization delays affecting CWIP and depreciation",
+    "One-time spectrum charges demand of Rs. 3,313.15 crore contested and sub-judice",
+    "GST liability on electricity charges recovered from tenants not considered",
+    "TDS on provisions not deducted under Income Tax Act",
+    "Interest provision for MSME vendors not paid and subject to TDS",
+    "Default on bank borrowings Rs. 9,262.53 crore with unquantified penal interest",
+    "Non-compliance with Ind AS 109 for Expected Credit Loss on all financial assets",
+    "Revenue Recognition: inherent risk around accuracy of revenue recorded given complexity of systems and impact of changing pricing models (Note 61)",
+    "Uncertain Taxation Matters: material uncertain tax matters under dispute involving significant judgment (Notes 54 and 67)",
+    "Contingent liabilities: numerous litigations pending before various forums requiring management judgment for estimation and disclosure (Note 54)",
+    "Significant receivables and payables balances including long-outstanding balances with Government of India, Department of Telecom and other private telecom operators; assessment of recoverability and completeness involving significant judgment and Ind AS 109 ECL application"
+   ]
+  },
+  "governance": {
+   "auditor_change": "Joint Statutory Auditors appointed by CAG for FY 2025-26; Board ratified appointment on 07.10.2025",
+   "promoter_holding_pct": 56.25,
+   "top_shareholders": [
+    {
+     "name": "Central Govt/State Govt(s)",
+     "pct": 56.25
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 13.43
+    },
+    {
+     "name": "Individual Shareholders holding nominal Share Capital Upto Rs. 2 lakh",
+     "pct": 19.92
+    },
+    {
+     "name": "Individual Shareholders holding nominal Share Capital in excess of Rs. 2 lakh",
+     "pct": 7.19
+    },
+    {
+     "name": "President of India",
+     "pct": 56.25
+    },
+    {
+     "name": "Life Insurance Corporation of India",
+     "pct": 13.12
+    },
+    {
+     "name": "Rajesh Kumar Sahu",
+     "pct": 0.34
+    },
+    {
+     "name": "Shailesh Babalal Shah",
+     "pct": 0.28
+    },
+    {
+     "name": "Red Bay Ltd",
+     "pct": 0.27
+    },
+    {
+     "name": "Shirynsh Kumar Jain",
+     "pct": 0.24
+    },
+    {
+     "name": "The New India Assurance Company Limited",
+     "pct": 0.22
+    },
+    {
+     "name": "Quadrature Trading VCC - Sub-Fund No. 1",
+     "pct": 0.19
+    },
+    {
+     "name": "Hitesh Ramji Javeri",
+     "pct": 0.17
+    },
+    {
+     "name": "Ravikumar Ramkishore Sanwalka",
+     "pct": 0.17
+    },
+    {
+     "name": "Jitendra Sampatlal Sanghavi",
+     "pct": 0.14
+    },
+    {
+     "name": "LIC including LIC Fortune Plus secured Fund",
+     "pct": 13.12
+    }
+   ],
+   "director_changes": [
+    "Ms. Deepika Mahajan and Shri. Vishwas Pathak re-appointed as Independent Directors w.e.f. 15.04.2025",
+    "Shri Sudhakararao Papa appointed Director (Technical) w.e.f. 09.05.2025",
+    "Vishwas Pathak re-appointed as Independent Director w.e.f. 15.04.2025",
+    "Deepika Mahajan re-appointed as Independent Director w.e.f. 15.04.2025",
+    "Sudhakararao Papa appointed as Director (Technical) w.e.f. 09.05.2025",
+    "Sunil Kumar Ranjan appointed as Government Nominee Director w.e.f. 13.01.2026",
+    "Shivendu Gupta ceased as Government Nominee Director w.e.f. 13.01.2026",
+    "Alok Shukla ceased as Government Nominee Director w.e.f. 08.07.2026",
+    "Sunil Kumar Ranjan ceased as Government Nominee Director w.e.f. 08.07.2026",
+    "Vishwas Pathak ceased as Independent Director w.e.f. 15.04.2026",
+    "Deepika Mahajan ceased as Independent Director w.e.f. 15.04.2026",
+    "Shyamal Misra appointed as Government Nominee Director w.e.f. 08.07.2026",
+    "K. Balaji appointed as Government Nominee Director w.e.f. 08.07.2026",
+    "Dr Kalyan Sagar Nippani entrusted with additional charge of Director (HR & EB) of MTNL w.e.f. 01.10.2024 apart from Regular Charge of Director (HR) of BSNL; also entrusted with additional charge of Director (Technical) from 01.08.2024 till 08.05.2025.",
+    "Shri Rajiv Kumar entrusted with additional charge of Director (Finance) of MTNL w.e.f. 02.12.2022 apart from Regular Charge of Director (Finance) of BSNL; additional charge of Director (Finance) BBNL also entrusted.",
+    "Shri Sudhakararao Papa entrusted with additional charge of Director (Technical) of MTNL w.e.f. 09.05.2025 apart from Regular Charge of Director (Enterprise Business) of BSNL.",
+    "Shri Vishwas Pathak and Ms. Deepika Mahajan ceased to be Independent Directors w.e.f. 15.04.2026.",
+    "Shri Shivendu Gupta ceased to be Government Nominee Director w.e.f. 13.01.2026.",
+    "Shri Sunil Kumar Ranjan appointed as Government Nominee Director w.e.f. 13.01.2026, Chairman of Audit Committee w.e.f. 16.04.2026, ceased w.e.f. 08.07.2026.",
+    "Shri Shyamal Misra appointed as Government Nominee Director w.e.f. 08.07.2026.",
+    "Shri K Balaji appointed as Government Nominee Director w.e.f. 08.07.2026.",
+    "Shri Alok Shukla ceased as Government Nominee Director w.e.f. 08.07.2026.",
+    "A. ROBERT J. RAVI appointed 15/07/2024",
+    "Dr. KALYAN SAGAR NIPPANI appointed 01/08/2024",
+    "SUDHAKARARAO PAPA appointed 09/05/2025",
+    "ALOK SHUKLA appointed 30/01/2025",
+    "SUNIL KUMAR RANJAN appointed 13/01/2026",
+    "VISHWAS PATHAK appointed 15/04/2025",
+    "DEEPIKA MAHAJAN appointed 15/04/2025",
+    "Holding company does not have requisite number of independent directors and women directors as per Section 149 of Companies Act",
+    "Mr.A Robert J Ravi appointed CMD from 15 July 2024",
+    "Mr. Kalyan Sagar Nippani appointed Director (HR & EB) from 01 October 2024",
+    "Mr. Sudhakararao Papa appointed Director (Technical) from 09 May 2025",
+    "Mr. Sunil Kumar Ranjan appointed Government Nominee Director from 13 January 2026",
+    "Mr. Shivendu Gupta ceased as Government Nominee Director on 13 January 2026",
+    "Mr. Alok Shukla appointed Government Nominee Director from 30 January 2025",
+    "Mr. Vishwas Pathak appointed Independent Director from 15 April 2025",
+    "Ms. Deepika Mahajan appointed Independent Director from 15 April 2025",
+    "Mr. Anirudh Prasad Singh appointed CFO from 28 May 2025",
+    "Mr. Mukesh Kumar Chauhan ceased as Executive Director, Delhi on 22 July 2025",
+    "Mr. Sandeep Gupta appointed CGM Delhi from 22 July 2025 up to 04 October 2025",
+    "Mr. Raghvendra Gupta appointed CGM Delhi from 04 October 2025",
+    "Mr. Harsh Vardhan Singh appointed CGM Mumbai from 20 Feb 2025 up to 26 July 2025",
+    "Mr. M. L. Meghwal appointed CGM Mumbai from 26 July 2025 up to 11 August 2025",
+    "Mr. Shashank Malviya appointed CGM Mumbai from 11 August 2025"
+   ],
+   "promoter_pledge_pct": 0
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Shri A. Robert J. Ravi",
+     "role": "Chairman & Managing Director (CMD)"
+    },
+    {
+     "name": "Dr Kalyan Sagar Nippani",
+     "role": "Director (HR&EB)"
+    },
+    {
+     "name": "Shri Rajiv Kumar",
+     "role": "Director (Finance)"
+    },
+    {
+     "name": "Shri Sudhakararao Papa",
+     "role": "Director (Technical)"
+    },
+    {
+     "name": "Shri Shyamal Misra",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Shri K. Balaji",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Shri Vasudev Singh",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Shri Ratan Mani Sumit",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Smt Deepa Chawla",
+     "role": "CVO BSNL (additional charge of CVO, MTNL)"
+    },
+    {
+     "name": "Ms. Deepika Mahajan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri. Vishwas Pathak",
+     "role": "Independent Director"
+    },
+    {
+     "name": "A. Robert J. Ravi",
+     "role": "Chairman & Managing Director (CMD)"
+    },
+    {
+     "name": "Rajiv Kumar",
+     "role": "Director (Finance)"
+    },
+    {
+     "name": "Dr Kalyan Sagar Nippani",
+     "role": "Director (HR & EB)"
+    },
+    {
+     "name": "Sudhakararao Papa",
+     "role": "Director (Technical)"
+    },
+    {
+     "name": "Sultan Ahmed",
+     "role": "CFO (Ceased w.e.f. 28.05.2025)"
+    },
+    {
+     "name": "Anirudh Prasad Singh",
+     "role": "CFO (Appointed w.e.f. 28.05.2025, Ceased w.e.f. 21.05.2026)"
+    },
+    {
+     "name": "Ratan Mani Sumit",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Robert J. Ravi",
+     "role": "CMD"
+    },
+    {
+     "name": "Sunil Kumar Ranjan",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Alok Shukla",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Vishwas Pathak",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Deepika Mahajan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shyamal Misra",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "K Balaji",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Raghvendra Gupta",
+     "role": "CGM (Delhi)"
+    },
+    {
+     "name": "Shashank Malviya",
+     "role": "CGM (Mumbai)"
+    },
+    {
+     "name": "Ratan Mani Sumit",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "A. ROBERT J. RAVI",
+     "role": "Chairman & Managing Director / CEO"
+    },
+    {
+     "name": "Shri Vasudev Singh",
+     "role": "CFO / GM(Finance)"
+    },
+    {
+     "name": "Shri Ratan Mani Sumit",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "A. Robert J. Ravi",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "CA Nitin Jain",
+     "role": "Partner, O P Bagla & Co LLP"
+    },
+    {
+     "name": "CA Vijit Baidmutha",
+     "role": "Partner, S.L. Chhajed & Co. LLP"
+    },
+    {
+     "name": "A. Robert J. Ravi",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Vasudev Singh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Nitin Jain",
+     "role": "Partner, O P Bagla & Co LLP"
+    },
+    {
+     "name": "Vijit Baidmutha",
+     "role": "Partner, S.L.Chhajed & Co. LLP"
+    },
+    {
+     "name": "Mr.A Robert J Ravi",
+     "role": "CMD"
+    },
+    {
+     "name": "Mr. Rajiv Kumar",
+     "role": "Director (Finance)"
+    },
+    {
+     "name": "Mr. Kalyan Sagar Nippani",
+     "role": "Director (HR & EB)"
+    },
+    {
+     "name": "Mr. Sudhakararao Papa",
+     "role": "Director (Technical)"
+    },
+    {
+     "name": "Mr. Sunil Kumar Ranjan",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Mr. Alok Shukla",
+     "role": "Government Nominee Director"
+    },
+    {
+     "name": "Mr. Vishwas Pathak",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Anirudh Prasad Singh",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Mr. Ratan Mani Sumit",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Vasudev Singh",
+     "role": ""
+    },
+    {
+     "name": "Ratan Mani Sumit",
+     "role": ""
+    }
+   ],
+   "employees": 2795
+  },
+  "other_notable": [
+   "Total Income (Standalone) FY 2025-26: Rs 1,468.81 crore (FY 2024-25: Rs 1,279.75 crore)",
+   "Net Loss (Standalone) FY 2025-26: Rs 3,102.94 crore (FY 2024-25: Rs 3,323.51 crore)",
+   "Revenue from Operations (Standalone) FY 2025-26: Rs 887.27 crore (FY 2024-25: Rs 1,060.54 crore)",
+   "Other Income (Standalone) FY 2025-26: Rs 581.54 crore (FY 2024-25: Rs 219.21 crore)",
+   "Finance Cost (Standalone) FY 2025-26: Rs 2,982.95 crore (FY 2024-25: Rs 2,918.03 crore)",
+   "Asset Monetization realized in FY 2025-26: Rs 419.15 crore",
+   "Infrastructure Leasing Income FY 2025-26: Rs 507.14 crore (Tower Rent Rs 51.75 crore, Rental Income Rs 455.39 crore)",
+   "Authorized Share Capital: Rs 10,000 Crores (65 Cr Preference Shares of Rs 100 each, 350 Cr Equity Shares of Rs 10 each)",
+   "Paid-up Equity Share Capital: Rs 630 Crores (63 Cr Equity Shares of Rs 10 each)",
+   "No dividend recommended for FY 2025-26 due to no operating profit",
+   "MTNLSTPI IT Services Ltd (MSITSL) - 50:50 JV: Revenue from Operations Rs 9.54 crore, PAT Rs 2.84 crore in FY 2025-26",
+   "Procurement from MSEs in FY 2025-26: Rs 21.28 crore (99.25% of total procurement Rs 21.44 crore)",
+   "Procurement from MSEs owned by Women Entrepreneurs: Rs 10.55 crore",
+   "Procurement through GeM: Rs 2.69 crore",
+   "Dividend recommended at 50% of paid-up share capital for FY 2025-26 vs 75% last three years, due to forthcoming Capex",
+   "CETTM Mumbai generated revenue of Rs 36.66 Crore in FY 2025-26 (Rs 34.56 Cr long lease rent, Rs 2.096 Cr short lease/hostel/other)",
+   "No CSR funding due to losses since 2009-10; only non-funding activities (SMS awareness campaigns)",
+   "Foreign exchange earnings: Rs 0.05 crore; expenditure: Nil in FY 2025-26",
+   "Cost Auditor: M/s R. M. Bansal & Co., fee Rs 1,12,100 inclusive of taxes for FY 2025-26; re-appointed for FY 2026-27",
+   "Secretarial Auditor: M/s R. P. Sehgal & Associates (Annual Secretarial Compliance Report); M/s Mritunjay Shekhar & Associates (Corporate Governance Certificate)",
+   "Board met 6 times in FY 2025-26",
+   "Independent Directors sitting fee: Rs 10,000 per meeting",
+   "No deposits accepted under Section 73/74",
+   "No loans/guarantees/investments under Section 186 during FY 2025-26",
+   "Integrity Pact MoU with Transparency International India; IEM: Shri Varanasi Udaya Bhaskar (Ex-CMD, BDL)",
+   "Vigilance Awareness Week observed 27 Oct - 2 Nov 2025",
+   "RTI FY 2025-26: Requests disposed 576, pending 76; Appeals disposed 74, pending 5",
+   "ICC (POSH): 2 meetings held in Delhi Unit; zero complaints received/disposed/pending in FY 2025-26",
+   "MTNL complies with Rights of Persons with Disabilities Act, 2016; 25 differently abled employees as on 31.03.2026",
+   "Group Health Insurance coverage up to Rs 8 Lakhs for employees/family",
+   "Contributory Group Health Insurance for retirees not eligible for CGHS; incentive Rs 30,000-60,000 for CGHS enrolment; ~25,040 retirees benefited",
+   "Annual Return for FY 2024-25 available at https://mtnl.in/ANNUAL%20RETURN%20OF%20MTNL%20FOR%20FY%202024-25.pdf",
+   "MTNL is a Public Sector Undertaking; all appointments including Independent Directors are done by the Administrative Ministry i.e. Department of Telecommunications (DoT), Ministry of Communications, Government of India.",
+   "As on 31.03.2026, MTNL had Four Executive Directors, Two Government Nominee Directors and Two Independent Directors including one Women Independent Director on its Board.",
+   "MTNL needs Four more Independent Directors for complying with Regulation 17(1) of SEBI (LODR) Regulations, 2015.",
+   "Fines levied by NSE and BSE for non-compliance: Rs. 32,45,000 (Reg 17(1)), Rs. 70,800 (Reg 18(1)), Rs. 70,800 (Reg 19(1)&(2)), Rs. 66,080 (Reg 20(2)), Rs. 66,080 (Reg 21(2)) for period 01.04.2025 to 31.12.2025/14.04.2025.",
+   "Fines levied for previous periods: Rs. 30,09,000 (FY 2024-25, Reg 17(1)), Rs. 7,08,000 (Reg 18(1)), Rs. 7,08,000 (Reg 19(1)&(2)), Rs. 94,400 (Reg 20(2)), Rs. 94,400 (Reg 21(2)).",
+   "Compliance status: Secretarial Standards - YES; Policies - YES; Website - YES; Disqualification of Directors - YES; Subsidiaries - NOT APPLICABLE (no material subsidiary); Preservation of Documents - YES; Performance Evaluation - NOT APPLICABLE (exempted for Government Companies); Related Party Transactions - YES; Disclosure of Events - YES; Prohibition of Insider Trading - YES; Actions by SEBI/Stock Exchanges - YES (fines detailed); Resignation of Statutory Auditors - NOT APPLICABLE; Additional Non-compliances - NOT APPLICABLE.",
+   "Total public shareholding: 43.7494% (275,621,260 shares) as on 31.03.2026",
+   "Promoter (President of India) holding: 56.25% (354,378,740 shares) with no change during FY 2025-26",
+   "Board composition as on 31.03.2026: 4 Executive Directors, 2 Government Nominee Directors, 2 Independent Directors (total 8 against required 12)",
+   "Board not in conformity with SEBI LODR Regulations 17: insufficient Independent Directors (2 vs required 6) and no Woman Independent Director from 01.04.2025 to 14.04.2025",
+   "6 Board meetings held during FY 2025-26",
+   "Independent Directors meeting held on 28.05.2025 and 12.02.2026",
+   "Sitting fees paid to Independent Directors: Deepika Mahajan Rs 160,000, Vishwas Pathak Rs 150,000",
+   "No remuneration paid to Whole-time Directors (CMD and Functional Directors) during FY 2025-26",
+   "Total managerial remuneration (A+B): Rs 310,000",
+   "KMP remuneration total: Rs 57,83,544 (Sultan Ahmed: Rs 9,11,089; Anirudh Prasad Singh: Rs 26,75,639; Ratan Mani Sumit: Rs 21,96,816)",
+   "No penalties/punishments/compounding of offences during FY 2025-26",
+   "CMD A. Robert J. Ravi also holds CMD position at BSNL and BBNL",
+   "All Directors appointed by Government of India",
+   "Familiarization programme for directors available at https://mtnl.in/directors.html",
+   "Audit Committee held 5 meetings during FY 2025-26; all recommendations accepted by Board.",
+   "Nomination & Remuneration Committee held 2 meetings during FY 2025-26; all recommendations accepted by Board.",
+   "Stakeholders Relationship Committee held 1 meeting during FY 2025-26; 2 complaints received and resolved.",
+   "CSR Committee: No meeting held during FY 2025-26; no specific amount earmarked for CSR due to losses since FY 2009-10; non-functioning CSR activities via SMS for awareness on COVID-19, Swachh Bharat, Pulse Polio, Digital Arrest fraud.",
+   "Enterprise Risk Management Committee held 2 meetings during FY 2025-26; all recommendations accepted by Board.",
+   "Share Transfer Committee comprises DGM (Budget & Banking) and Company Secretary; shares transferred only in dematerialized mode per SEBI LODR.",
+   "Special window for re-lodgement of physical share transfer requests operational from July 7, 2025 to January 6, 2026; another window from February 5, 2026 to February 4, 2027.",
+   "39th AGM held on October 31, 2025 via VC/OAVM; special resolutions passed for re-appointment of Independent Directors and modification of borrowing powers."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Refer Note No. 50 of Standalone Financial Statements for Contingent Liabilities, Pending Litigations etc.",
+    "amount_cr": null
+   },
+   {
+    "nature": "One-time spectrum charges for spectrum held beyond 4.4 MHz",
+    "amount_cr": 1718
+   },
+   {
+    "nature": "Alternative one-time spectrum charges liability",
+    "amount_cr": 455
+   },
+   {
+    "nature": "Adjustment of SUC and License fee from excess pension payouts challenged by DoT",
+    "amount_cr": 821.98
+   },
+   {
+    "nature": "AGR dues demands by DoT",
+    "amount_cr": null
+   },
+   {
+    "nature": "Stamp duty on registration of properties",
+    "amount_cr": null
+   },
+   {
+    "nature": "Ongoing litigations",
+    "amount_cr": null
+   },
+   {
+    "nature": "Service Tax (Delhi Units)",
+    "amount_cr": 71.01
+   },
+   {
+    "nature": "GST (Delhi Units)",
+    "amount_cr": 288.51
+   },
+   {
+    "nature": "Labour Cess (Delhi Units)",
+    "amount_cr": 9.14
+   },
+   {
+    "nature": "Sales Tax (Mumbai Basic Units)",
+    "amount_cr": 372.94
+   },
+   {
+    "nature": "Service Tax (Mumbai Basic Units)",
+    "amount_cr": 2.91
+   },
+   {
+    "nature": "Income Tax (Corporate Office) - A.Y. 1998-99 to 2006-07",
+    "amount_cr": 639.75
+   },
+   {
+    "nature": "Income Tax (Corporate Office) - A.Y. 2007-08 to 2009-10",
+    "amount_cr": 19.9
+   },
+   {
+    "nature": "License Fee and Spectrum Usage Charges demands from DoT (detailed list of 144 items)",
+    "amount_cr": 5370.09
+   },
+   {
+    "nature": "One-time charges for 2G spectrum held (OTC demand)",
+    "amount_cr": 3205.71
+   },
+   {
+    "nature": "Additional 1.4 MHz spectrum demand in 900 MHz band (Delhi & Mumbai)",
+    "amount_cr": 1155
+   },
+   {
+    "nature": "Spectrum allotment in 900/1800 MHz band demand",
+    "amount_cr": 4252.83
+   },
+   {
+    "nature": "Impact of revenue sharing on netting basis with BSNL up to FY 2011-12",
+    "amount_cr": 140.36
+   },
+   {
+    "nature": "Reliance Communication Ltd. recoverable (under insolvency)",
+    "amount_cr": 80.14
+   },
+   {
+    "nature": "Penal Guarantee Fees of Rs. 352.30 Crore classified as Contingent Liability instead of provision (Auditor states should be recognized as provision)",
+    "amount_cr": 352.3
+   },
+   {
+    "nature": "Pending dispute with Income Tax Department before Courts regarding deduction claimed u/s 80IA of Income Tax Act, 1961; Contingency reserve of Rs. 243.22 Crores created",
+    "amount_cr": 243.22
+   },
+   {
+    "nature": "Numerous litigations pending before various forums against Holding Company; management judgment required for estimating amount to be disclosed as contingent liability (Note 54)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Cases involving suspension of revenue realization due to proceedings in Court",
+    "amount_cr": null
+   },
+   {
+    "nature": "Disputed claims from subscribers (including operators under IUC/Roaming/MOU agreements)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Contractual commitments for acquisition of property, plant and equipment (refer note 55)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Contractual commitments for acquisition of intangible assets (refer note 55)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Title deeds of property having carrying value of Rs. 1.24 Crore deposited with bank as security",
+    "amount_cr": 1.24
+   },
+   {
+    "nature": "Title deeds of property having carrying value of Rs. 0.22 Crore deposited with bank as security",
+    "amount_cr": 0.22
+   },
+   {
+    "nature": "Leasehold properties mortgaged to Bank of India and Union Bank of India",
+    "amount_cr": 1.24
+   },
+   {
+    "nature": "Income Tax Demands disputed and under appeal",
+    "amount_cr": 283.69
+   },
+   {
+    "nature": "Sales Tax, Service Tax, Excise duty, Municipal Tax Demands Disputed and under Appeal",
+    "amount_cr": 850.64
+   },
+   {
+    "nature": "Interest to DDA on delayed payments/pending court cases/Tax cases",
+    "amount_cr": null
+   },
+   {
+    "nature": "Stamp duty payable on land and buildings acquired by the Parent",
+    "amount_cr": null
+   },
+   {
+    "nature": "Claims against the Parent not acknowledged as debts",
+    "amount_cr": 7297.11
+   },
+   {
+    "nature": "Pending arbitration/court cases",
+    "amount_cr": 1816.91
+   },
+   {
+    "nature": "Bank guarantee & Letter of Credit",
+    "amount_cr": 109.81
+   },
+   {
+    "nature": "Directory dispute",
+    "amount_cr": 79.97
+   },
+   {
+    "nature": "Pending court cases against land acquisition",
+    "amount_cr": 84.87
+   },
+   {
+    "nature": "License fee related contingent liability w.r.t. provisional assessment done by DOT",
+    "amount_cr": 20.85
+   },
+   {
+    "nature": "BTS related penalty imposed by DoT",
+    "amount_cr": 5370.09
+   },
+   {
+    "nature": "One Time Spectrum Charges (OTSC) demand by DOT for GSM and CDMA spectrum",
+    "amount_cr": 3205.71
+   },
+   {
+    "nature": "Estimated liability for OTSC as per industry related issue in litigation and TDSAT judgment",
+    "amount_cr": 455.15
+   },
+   {
+    "nature": "Arbitration award in matter of settlement of bonds with Canara Bank and Canfina",
+    "amount_cr": 472.6
+   },
+   {
+    "nature": "Claim by M/s. M & N Publications Limited for printing, publishing and supply of telephone directories (Delhi unit)",
+    "amount_cr": 77.06
+   },
+   {
+    "nature": "Refund ordered by TDSAT to UASL operator for rate discrepancies",
+    "amount_cr": 96.71
+   },
+   {
+    "nature": "Claims from M/s. BEST, Electricity supply provider for categorizing MTNL at Commercial tariff instead of Industrial tariff",
+    "amount_cr": 20.82
+   },
+   {
+    "nature": "ILD charges claimed by TCL for Mobile Services Delhi for period Oct-09 to March-10",
+    "amount_cr": 25.78
+   },
+   {
+    "nature": "Income Tax benefit under section 80IA for assessment years 2001-02 to 2006-07",
+    "amount_cr": 243.22
+   },
+   {
+    "nature": "License Fee and Spectrum Usage Charges demands by DOT (provision assessment order from 2006-07 to 2024-25)",
+    "amount_cr": 5370.09
+   },
+   {
+    "nature": "Demand for additional 1.4 MHz of reserved spectrum in 900 MHz Band in Mumbai and Delhi LSAs",
+    "amount_cr": 1155
+   },
+   {
+    "nature": "Demand for spectrum allotment in 900 MHz and 1800 MHz bands",
+    "amount_cr": 4252.83
+   }
+  ],
+  "litigation": [
+   "UTL Nepal JV exit dispute: Exit notice given 30.01.2018 not effected; NVPL defaulted on payment schedule (35% due 15.12.2024, 30% due 15.12.2025); MTNL sent reminder 20.04.2026 for EGM to approve voluntary liquidation/insolvency",
+   "Pending litigations referenced in Note No. 50 of Standalone Financial Statements",
+   "MTNL requested TRAI for withdrawal of Financial Disincentive (FD) imposed pursuant to Non Compliance with Quality of Service Fault Clearance Parameters",
+   "NSE and BSE imposed a total fine of Rs 65,67,880/- (including GST) for all four quarters of FY 2025-26 for non-compliance of Regulation 17(1)(b) of SEBI (LODR) Regulations, 2015 regarding composition of Board of Directors and Committees.",
+   "TRAI imposed multiple Financial Disincentives totalling Rs 59,00,000/- for non-compliance with Quality of Service Regulations for various quarters ending June 2024, September 2024, December 2023, and months April 2025 to August 2025.",
+   "Supreme Court case by Union of India against TDSAT judgment in favour of other telecom operators regarding one-time spectrum charges",
+   "DoT challenging MTNL's adjustment of SUC and License fee (Rs 821.98 crore) from excess pension payouts",
+   "AGR dues demands by DoT; deductions not allowed for want of TDS certificates and auditor counter signatures",
+   "Various litigations involving MTNL in respect of issues arising out of business operations",
+   "MSME vendor payment disputes referred to Micro and Small Enterprises Facilitation Council (MSEFC)",
+   "Pending litigations disclosed in standalone financial statements (Refer note no. 50)",
+   "Service Tax disputes for Delhi Units (2014-15 to June-17, 2005-06, 2000-03) pending at Commissioner of Central Excise and Service Tax",
+   "GST disputes for Delhi Units (2017-18 to 2020-21) pending at Special Commissioner of GST",
+   "Labour Cess dispute for Delhi Units (1996 to 2001) pending at Deputy Labour Commissioner",
+   "Sales Tax disputes for Mumbai Units (1996-97 to 2014-15) pending at Hon'ble High Court of Bombay and Maharashtra Sales Tax Tribunal, Mumbai",
+   "Service Tax disputes for Mumbai Units (2012-13 to 2016-17) pending at Custom Excise and Service Tax Appellate Tribunal",
+   "Income Tax disputes for Corporate Office (A.Y. 1998-99 to 2006-07) pending at Hon'ble High Court of Delhi",
+   "Income Tax disputes for Corporate Office (A.Y. 2007-08 to 2009-10) pending at Hon'ble Income Tax Appellant Tribunal and Commissioner of Income Tax (Appeal)",
+   "Encroachment matters for 9 properties in Mumbai pending before courts or with relevant authorities",
+   "One leasehold property in Delhi encroached",
+   "Cases involving suspension of revenue realization due to proceedings in Court",
+   "Legal options being explored from local counsel of Nepal for enforcing exit option in United Telecom Limited",
+   "One-time spectrum charges demand of Rs. 3,313.15 crore contested and sub-judice before Hon'ble Court",
+   "License fee demands of Rs. 5,370.09 crore under revision with DoT",
+   "Additional spectrum demand notes (Rs. 1,155 crore and Rs. 4,252.83 crore) contested with DoT",
+   "Reliance Communication Ltd. and Reliance Infratel Ltd. under insolvency proceedings before NCLT",
+   "AGR matter: MTNL not party to Supreme Court case; DoT disallowed deductions claimed in AGR",
+   "Pending dispute with Income Tax Department before Hon'ble Courts regarding deduction claimed u/s 80IA of Income Tax Act, 1961",
+   "Numerous litigations pending before various forums against Holding Company (Note 54)",
+   "Failure to pay Guarantee Fees by 30th April entails levy of Penal Guarantee Fees per Ministry of Telecommunications Letter No. F.No. 6-2/2023-PSF dated 09th September 2024",
+   "Disputed claims from subscribers (including operators under IUC/Roaming/MOU agreements)",
+   "Exit clause dispute with NVPL (local partner in Nepal) regarding United Telecom Limited - Indian partners exploring legal options in Nepal for enforcing exit option",
+   "Properties classified as held for sale with monetization process ongoing per Union Cabinet approval",
+   "Income Tax Demands disputed and under appeal",
+   "Sales Tax, Service Tax, Excise duty, Municipal Tax Demands Disputed and under Appeal",
+   "Interest to DDA on delayed payments/pending court cases/Tax cases",
+   "Stamp duty payable on land and buildings acquired by the Parent",
+   "Claims against the Parent not acknowledged as debts",
+   "Pending arbitration/court cases",
+   "Directory dispute",
+   "Pending court cases against land acquisition",
+   "License fee related contingent liability w.r.t. provisional assessment done by DOT",
+   "BTS related penalty imposed by DoT",
+   "Arbitration award against The Group for Rs. 160 crores with simple interest @6% P.A. from 21-10-1993 in matter of settlement of bonds with Canara Bank and Canfina. OMP filed before Hon'ble Delhi High Court to set aside the award. Next hearing proposed on 09.07.2026.",
+   "Contracts with M/s. M & N Publications Limited for printing, publishing and supply of telephone directories terminated prematurely. Arbitration awards partly in favour of MTNL. M/s. M & N Publications approached Bombay & Delhi High Courts against awards. MTNL also approached High Courts for balance amount due.",
+   "UASL operator approached Hon'ble TDSAT for rate discrepancies. TDSAT ordered refund of Rs. 96.71 crores. MTNL filed Civil Appeal and application for stay in Hon'ble Supreme Court. Review application disposed off by TDSAT. CWP filed in Supreme Court pending. UASL operator also filed appeal in Supreme Court.",
+   "MTNL Mumbai received claims from M/s. BEST for categorizing MTNL at Commercial tariff instead of Industrial tariff. MTNL approached Hon'ble Mumbai High Court and got stay on arrears claimed amounting to Rs. 20.82 crores.",
+   "ILD charges of Rs. 25.78 crores claimed by TCL for Mobile Services Delhi not paid due to alleged fraudulent calls. TCL filed case in Hon'ble TDSAT for recovery, decision awaited.",
+   "Income Tax benefit under section 80IA for financial years 1996-97 to 2005-06. Appellate authorities allowed claim to extent of 75%. Appeals for remaining claim before Hon'ble High Court of Delhi.",
+   "License fee on AGR: DOT assessed LF and SUC, disallowed certain deductions. Provision assessment order shows demand of Rs. 5370.09 crores. Assessment under revision. Supreme Court judgement on AGR not applicable to MTNL as MTNL was not a party.",
+   "Demand for additional 1.4 MHz spectrum in 900 MHz Band for Rs. 1155 crores. MTNL requesting withdrawal as spectrum not utilized.",
+   "Demand for Rs. 4252.83 crore for spectrum allotment in 900 MHz and 1800 MHz. MTNL requesting revision as per OM dated 02/08/2022 for budgetary support as equity infusion.",
+   "Reliance Communication Ltd. and Reliance Infratel Ltd. under insolvency proceedings before Hon'ble NCLT under IBC, 2016."
+  ],
+  "dividend_per_share": 0
+ }
+}

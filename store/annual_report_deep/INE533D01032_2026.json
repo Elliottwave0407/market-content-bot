@@ -1,0 +1,807 @@
+{
+ "isin": "INE533D01032",
+ "name": "Raj Rayon Industries Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31659_RAJRILTD_2025_2026_A_4665242_07092026112423.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 416276,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Raj Rayon Industries Limited specializes in the production of high-quality man-made fibers, manufacturing Polyester chips, Partially Oriented Yarn (POY) and Drawn Textured Yarn (DTY).",
+   "products": [
+    {
+     "name": "Polyester chips",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Partially Oriented Yarn (POY)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Drawn Textured Yarn (DTY)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Polyester Yarn (POY)",
+     "share_of_revenue_pct": null,
+     "note": "Main product; new POY plant being installed"
+    },
+    {
+     "name": "Synthetic Textiles Yarns",
+     "share_of_revenue_pct": null,
+     "note": "Besides producing micro fibre and regular POY of Denier range fine to coarse, the Company has the flexibility to produce various products like Full Dull, Semi Dull, Bright Yarns, Doped Dyed Yarn, recycled yarns, Fire Retardant and Anti Microbial yarns."
+    },
+    {
+     "name": "Chips",
+     "share_of_revenue_pct": 8.35,
+     "note": "NIC Code 131"
+    },
+    {
+     "name": "Polyester Texturised Yarn (PTY)",
+     "share_of_revenue_pct": 22.99,
+     "note": "NIC Code 131"
+    },
+    {
+     "name": "Polyester Yarn",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured through chemical reaction process using petrochemical products"
+    },
+    {
+     "name": "processed yarn",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Sale of products (Net of Discounts and Sales Return)",
+     "share_of_revenue_pct": 99.94,
+     "note": "Primary revenue source"
+    },
+    {
+     "name": "Sale of traded goods",
+     "share_of_revenue_pct": 0.06,
+     "note": "Minor revenue source"
+    }
+   ],
+   "plants": [
+    {
+     "location": "Survey No. 177/1/3, Village - Surangi, District - Silvassa, Dadra & Nagar Haveli (U.T.) - 396 230 (INDIA)",
+     "capacity": "Operations span across 25 acres land and 900,000 sq ft manufacturing plant"
+    },
+    {
+     "location": "Survey No 177/1/3, Village Surangi, Silvassa, DN: 396230",
+     "capacity": "Not specified; new POY production lines being installed"
+    },
+    {
+     "location": "Survey No. 177/1/3, Village - Surangi, Dist. - Silvassa, Dadra & Nagar Haveli (U.T.) - 396230 (including Survey No. 161/1, 161/2, 164/3 & 162/3, 177/1/4)",
+     "capacity": ""
+    },
+    {
+     "location": "Silvassa",
+     "capacity": ""
+    },
+    {
+     "location": "survey No. 177/1/3, Village Surangi, Dadra & Nagar Haveli, Silvassa-396230, India",
+     "capacity": ""
+    },
+    {
+     "location": "Factory premises (implied)",
+     "capacity": "Not specified"
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "geographies": [
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "National (13 States of India)",
+     "share_pct": 100
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "raw_materials": [
+    "PTA (Purified Terephthalic Acid)",
+    "cotton",
+    "polyester",
+    "Petrochemical products",
+    "Raw Materials (as per inventory note)"
+   ],
+   "end_markets": [
+    "apparel",
+    "home textiles",
+    "industrial applications",
+    "healthcare",
+    "infrastructure",
+    "automotive",
+    "defense",
+    "fashion",
+    "technical textiles",
+    "supplement and nutrition industry"
+   ],
+   "competitors_named": [
+    "Bangladesh",
+    "Vietnam",
+    "Turkey"
+   ],
+   "customers": [
+    "MSMEs",
+    "individuals",
+    "institutions",
+    "other diverse customer groups"
+   ],
+   "brands_or_certifications": [
+    "BIS Certified (POY Yarn)",
+    "ISO 45001:2018"
+   ]
+  },
+  "related_party": [
+   {
+    "party": "SVG Fashions Private Limited (SVG)",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 900
+   },
+   {
+    "party": "Rajwada Silk Mills LLP",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 5
+   },
+   {
+    "party": "Binaykia Synthetics Ltd",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 5
+   },
+   {
+    "party": "Deepak Synthetics Pvt. Ltd.",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 5
+   },
+   {
+    "party": "Venkateshwar Udyog & Finance Private Limited",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 5
+   },
+   {
+    "party": "Sunflag Filaments Limited",
+    "nature": "contract / arrangement / transactions/job work/Internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, Providing corporate Guarantee, Providing Securities to third party for any Borrowing or otherwise",
+    "amount_cr": 10
+   },
+   {
+    "party": "SVG Fashions Private Limited (SVG)",
+    "nature": "Promoter & Holding company where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 900
+   },
+   {
+    "party": "Binaykia Synthetics Ltd",
+    "nature": "Promoter Company where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 5
+   },
+   {
+    "party": "Deepak Synthetics Pvt. Ltd.",
+    "nature": "Promoter Company where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 5
+   },
+   {
+    "party": "Rajwada Silk Mills LLP",
+    "nature": "Promoter Entity where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 5
+   },
+   {
+    "party": "Venkateshwar Udyog & Finance Private Limited",
+    "nature": "Promoter Company where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 5
+   },
+   {
+    "party": "Sunflag Filaments Limited",
+    "nature": "Promoter Company where directors & their relatives are interested; contract/arrangement/transactions/job work/internal purchase/sale of goods and providing/availing services/using resources/entering into agreement for use of properties, providing corporate Guarantee, Providing Securities to third party for any Borrowing and availing inter corporate deposits",
+    "amount_cr": 10
+   },
+   {
+    "party": "Not specified",
+    "nature": "All related party transactions were on arm's length basis and in ordinary course of business; no materially significant transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Purchases",
+    "amount_cr": 0.0036
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Sales",
+    "amount_cr": 46.5523
+   },
+   {
+    "party": "",
+    "nature": "all the transactions with related parties are in compliance with section 177 and 188 of the Act and all the details have been disclosed in the financial statements as required by the applicable Accounting Standard. (Refer note no. 34 to the financial statements)",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (refer note 34)",
+    "nature": "Trade receivables balances",
+    "amount_cr": null
+   },
+   {
+    "party": "SVG Fashions Pvt Ltd",
+    "nature": "Holding Company; Sale of goods/services (Rs 4,655.23 lakhs); Purchase of goods/services (Rs 10.09 lakhs); Interest paid (Rs 101.44 lakhs); Loan taken (Rs 1,665 lakhs); Loan repaid (Rs 1,920 lakhs); Corporate guarantee taken (Rs 2,010 lakhs); Reimbursement of expenses (Rs 6.52 lakhs); Trade receivables (Rs 112.15 lakhs); Borrowings outstanding (Rs 3,121.52 lakhs); Corporate guarantee outstanding (Rs 50,725 lakhs)",
+    "amount_cr": 507.25
+   },
+   {
+    "party": "Sunflag Filaments Limited",
+    "nature": "Entity where KMP/Individual has control/significant influence; Purchase of goods/services (Rs 0.36 lakhs); Purchase of PPE (Rs 260.22 lakhs in prior year); Trade payables (Rs 3.54 lakhs in prior year)",
+    "amount_cr": 2.6
+   },
+   {
+    "party": "Sandiip Satyanarayan Agarwwal",
+    "nature": "Whole-Time Director and CFO (KMP); Personal guarantee for HDFC loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Rajkumar Satyanarayan Agarwal",
+    "nature": "KMP; Personal guarantee for HDFC loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Satyanarayan Agarwal",
+    "nature": "Relative of KMP; Personal guarantee for HDFC loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Binaykia Synthetics Limited",
+    "nature": "Entity where KMP/Individual has control/significant influence; Promoter holding 0.63%",
+    "amount_cr": null
+   },
+   {
+    "party": "Deepak Synthetics Private Limited",
+    "nature": "Entity where KMP/Individual has control/significant influence; Promoter holding 0.18%",
+    "amount_cr": null
+   },
+   {
+    "party": "Rajwada Silk Mills LLP",
+    "nature": "Entity where KMP/Individual has control/significant influence; Promoter holding 2.61%",
+    "amount_cr": null
+   }
+  ],
+  "auditor": {
+   "name": "Bagaria & Co. LLP, Chartered Accountants",
+   "opinion": "modified opinion",
+   "key_audit_matters": [
+    "Cannot audit and comment on the impact, if any, on the financial statement arising out of subsequent availability of any pending bank statements of inoperative bank accounts which are continuing in the name of the Company from prior to the Corporate Insolvency Resolution Process when the current management was not in charge of the affairs of the Company was not available for verification",
+    "Continuous non-compliance under Reg. 38 of SEBI LODR for Minimum Public Shareholding from June 2023 quarter till date of report",
+    "Fines paid for June 2024 quarter; fines unpaid for Sep 2024, Dec 2024, Mar 2025, Jun 2025, Sep 2025, Dec 2025, Mar 2026 quarters",
+    "Promoter/promoter group demat accounts frozen by BSE and NSE due to non-compliance",
+    "Capitalisation of Property, plant & equipment: Significant judgment and estimates involved with respect to capital expenditure classified under capital work in progress and determination of whether criteria for intended use of management has been met for capitalisation under Ind AS 16."
+   ],
+   "qualifications_or_emphasis": [
+    "Modified opinion regarding inability to verify pending bank statements of inoperative bank accounts from pre-CIRP period",
+    "Non-compliance with Minimum Public Shareholding requirements",
+    "Unpaid exchange fines for multiple quarters",
+    "Freezing of promoter demat accounts",
+    "disclaimer from the Auditors about non availability of Bank Statement for the period prior i.e. before the new management has taken over the Company's accounting",
+    "Management is in the process to obtain details of three inoperative bank accounts continuing in the name of the Company from prior to the Corporate Insolvency Resolution Process; unable to comment on impact on financial statements arising from subsequent availability of such pending bank statements. This matter was also subject to qualification in the prior year ended March 31, 2026.",
+    "The Company has not raised any funds on the pledge of securities held in its subsidiaries",
+    "The Company has not raised any money during the year by way of initial public offer / further public offer",
+    "The Company has not made preferential allotment of shares, private placement of shares or fully or partly convertible debentures during the year",
+    "No instance of fraud by or on the Company noticed or reported during the year",
+    "No report under sub section 12 of Section 143 of the Act has been filed in Form ADT-4",
+    "No whistle blower complaints received during the year",
+    "The Company is not a Nidhi Company",
+    "The Company has not entered into any non-cash transactions prescribed under Section 192 of the Act with directors or persons connected with them",
+    "The Company is not required to be registered under Section 45-IA of the Reserve Bank of India Act, 1934",
+    "There is no core investment company within the Companies in the Group",
+    "The Company has not incurred any cash losses during the financial year covered by our audit and in the immediately preceding financial year",
+    "There has been no resignation of the statutory auditors of the Company during the year",
+    "Nothing has come to our attention, which causes us to believe that any material uncertainty exists as on the date of the audit report indicating that Company is not capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+    "The company has incurred average net loss in the period of three immediately preceding financial years and hence, it is not required to spend any money under sub-section (5) of section 135 of the Act",
+    "Audit trail feature not enabled for direct changes to data in underlying database in SAP accounting software"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. CHINTAN DHAROD (upto 14th May, 2026) - Company Secretary and Compliance Officer",
+    "Ms. Ritu Shukla (w.e.f 15th May, 2026) - Company Secretary and Compliance Officer",
+    "Ms. Ritu Shukla appointed as Company Secretary and Compliance Officer w.e.f. 15th May, 2026 (after period under review)",
+    "Mr. Chintan Dharod resigned as Company Secretary and Compliance Officer from closing working hours of 14th May, 2026 (after period under review)",
+    "No changes in composition of Board of Directors during the period under review",
+    "Kailashnath Jeevan Koppikar appointed as Non-Executive Independent Director w.e.f. 07-02-2022",
+    "Mrs. Supriya Mahesh Pujari appointed as Non-Executive Independent Director w.e.f. 27-05-2023"
+   ],
+   "auditor_change": "M/s. Bagaria & Co. LLP re-appointed as Statutory Auditors in Board meeting held on 27th May, 2023 for remaining period of first term of five years till FY 2026-27; approved by members at 30th AGM on 30th September, 2023",
+   "promoter_holding_pct": 94.13,
+   "top_shareholders": [
+    {
+     "name": "Promoters (Indian)",
+     "pct": 94.13
+    },
+    {
+     "name": "Indian Public",
+     "pct": 5.63
+    },
+    {
+     "name": "Private Sector Corporate Bodies and others",
+     "pct": 0.12
+    },
+    {
+     "name": "NRI",
+     "pct": 0.08
+    },
+    {
+     "name": "ASSET RECONSTRUCTION COMPANIES",
+     "pct": 0.04
+    },
+    {
+     "name": "SVG Fashions Private Limited",
+     "pct": 84.88
+    },
+    {
+     "name": "Rajwada Silk Mills LLP",
+     "pct": 2.61
+    },
+    {
+     "name": "Satyanarayan Agarwal",
+     "pct": 1.35
+    },
+    {
+     "name": "Rajkumar Satyanarayan Agarwal",
+     "pct": 1.26
+    },
+    {
+     "name": "Sandiip Satyanarayan Agarwwal",
+     "pct": 1.25
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "RAJKUMAR SATYANARAYAN AGARWAL",
+     "role": "Managing Director-Chairperson"
+    },
+    {
+     "name": "SAPNA RAJKUMAR AGARWAL",
+     "role": "Non-Executive - Non Independent Director-Woman Director"
+    },
+    {
+     "name": "SANDIIP SATYANARAYAN AGARWWAL",
+     "role": "Whole Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "VINODKUMAR BAJRANGLAL DALMIA",
+     "role": "Non-Executive - Independent Director"
+    },
+    {
+     "name": "KAILASHNATH JEEVAN KOPPIKAR",
+     "role": "Non-Executive - Independent Director"
+    },
+    {
+     "name": "SUPRIYA MAHESH PUJARI",
+     "role": "Non-Executive Woman Independent Director"
+    },
+    {
+     "name": "CHINTAN DHAROD",
+     "role": "Company Secretary and Compliance Officer (upto 14th May, 2026)"
+    },
+    {
+     "name": "Ritu Shukla",
+     "role": "Company Secretary and Compliance Officer (w.e.f 15th May, 2026)"
+    },
+    {
+     "name": "Rajkumar Satyanarayan Agarwal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sapna Rajkumar Agarwal",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Sandiip Satyanarayan Agarwwal",
+     "role": "Whole Time Director and CFO"
+    },
+    {
+     "name": "Vinodkumar Bajranglal Dalmia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Kailashnath Jeevan Koppikar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Supriya Mahesh Pujari",
+     "role": "Woman Independent Director"
+    },
+    {
+     "name": "Ritu Shukla",
+     "role": "Company Secretary and Compliance Officer (appointed w.e.f. 15th May, 2026)"
+    },
+    {
+     "name": "RAJKUMAR SATYANARAYAN AGARWAL",
+     "role": "Managing Director"
+    },
+    {
+     "name": "SANDIIP SATYANARAYAN AGARWWAL",
+     "role": "Whole Time Director and CFO"
+    },
+    {
+     "name": "Mr. Rajkumar Satyanarayan Agarwal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Ms. Sapna Rajkumar Agarwal",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Sandiip Satyanarayan Agarwwal",
+     "role": "Whole Time Director and CFO"
+    },
+    {
+     "name": "Mr. Vinodkumar Bajranglal Dalmia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Kailashnath Jeevan Koppikar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Supriya Mahesh Pujari",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Mr. Chintan Dharod",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "MS. SAPNA RAJKUMAR AGARWAL",
+     "role": "Director"
+    },
+    {
+     "name": "MR. VINODKUMAR BAJRANGLAL DALMIA",
+     "role": "Director"
+    },
+    {
+     "name": "MR. KAILASHNATH JEEVAN KOPPIKAR",
+     "role": "Director"
+    },
+    {
+     "name": "MS. SUPRIYA MAHESH PUJARI",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Chintan Mukesh Dharod",
+     "role": "Company Secretary and Compliance Officer (till 14th May, 2026)"
+    },
+    {
+     "name": "RAJKUMAR SATYANARAYAN AGARWAL",
+     "role": "MANAGING DIRECTOR"
+    },
+    {
+     "name": "Rajkumar Agarwal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sandiip Agarwwal",
+     "role": "WTD & CFO"
+    },
+    {
+     "name": "Chintan Dharod",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sandiip Satyanarayan Agarwwal",
+     "role": "Whole-Time Director and CFO"
+    },
+    {
+     "name": "Rajkumar Satyanarayan Agarwal",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Chintan Mukesh Dharod",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 412
+  },
+  "other_notable": [
+   "33rd Annual General Meeting scheduled for Wednesday, 30th September, 2026 at 12.00 Noon through Video Conferencing / Other Audio-Visual Means",
+   "Cost Auditor M/s. C. Sahoo & Co. appointed for financial year ending 31st March, 2027 with remuneration of Rs. 1,00,000/- plus out of pocket expenses and applicable taxes",
+   "Related party transactions approved for period from October 01, 2026 to September 30, 2027",
+   "Company revived operations in 2023 under new management with further investments in buildings and new state of the art machinery",
+   "Registered Office: Survey No. 177/1/3, Village \u2013 Surangi, Dist-Silvassa, Dadra and Nagar Haveli (U.T.) - 396 230 (INDIA)",
+   "Corporate Office: A/13 Agarwal Golden Chambers, 3rd Floor, Veera Desai Road, off New Link Road, Andheri (W), Mumbai, Maharashtra 400053",
+   "Bankers: Bank of Baroda, HDFC Bank",
+   "Registrar and Share Transfer Agent: MUFG Intime India Pvt. Ltd. (Formerly known as Link Intime India Private Limited)",
+   "Listed on BSE Limited (Code: 530699) and National Stock Exchange of India Limited (Code: RAJRILTD)",
+   "CIN: L17120DN1993PLC000368",
+   "PAN: AAACR7820E, GSTIN: 26AAACR7820E1ZL",
+   "Cost Auditor M/s. C. Sahoo & Co. re-appointed for FY ending 31st March 2027 at remuneration of Rs. 1,00,000 plus out of pocket expenses and tax",
+   "Company categorized under TOP 1000 companies as per NSE market capitalization list for 31st March 2023; now under TOP 2000 companies for last two financial years ended 31st March 2024, 2025, 2026",
+   "Risk Management Committee formed on 27th May 2023; Woman Independent Director Ms. Supriya Mahesh Pujari appointed on 27th May 2023; Dividend Distribution Policy and Risk Management Policy adopted on 27th May 2023",
+   "Business Responsibility and Sustainability Report prepared and attached as part of Annual Report",
+   "No public deposits accepted during FY 2025-26",
+   "Four Board Meetings held during FY 2025-26 on 29/05/2025, 05/08/2025, 13/11/2025, 06/02/2026",
+   "Separate meeting of Independent Directors held on 27th February 2026",
+   "Five Board Committees: Audit Committee, Stakeholders Relationship Committee, Nomination and Remuneration Committee, Risk Management Committee, Management Committee",
+   "Mrs. Sapna Rajkumar Agarwal retires by rotation at ensuing AGM and is eligible for re-appointment",
+   "Secretarial Audit by Ms. Riddhi Shah (Company Secretary in Practice) for FY 2025-26; observations on MPS non-compliance",
+   "No fraud reported by auditor under Section 143(12) of Companies Act, 2013",
+   "Registered Office: SURVEY NO 177/1/3, VILLAGE SURANGI, SILVASSA DN 396230 IN",
+   "Company was under CIRP process; Approved Resolution Plan implemented and completed during FY 2022-23",
+   "Unpaid dividend from pre-IBC period not transferred to IEPF due to lack of records; no dividend declared post new management takeover",
+   "CSR expenditure of Rs. 5,00,000 spent on education (construction of building) through Shivanjali Shaikshanik Va Samajik Sanstha in Nashik, Maharashtra against obligation of Rs. 1,94,754 (excess spent Rs. 3,05,246)",
+   "Foreign exchange outgo: Rs. 3,812.64 lakhs (FY 2025-26) vs Rs. 12,081.45 lakhs (FY 2024-25); No foreign exchange earnings",
+   "Energy conservation measures: Air preheaters, air coolers, IE3 motors, natural ventilation design, new electrical panels, VFDs, LED lights, PTA tanker unloading (eliminating bag handling), night-time fan optimization, turbo vents",
+   "Technology absorption: HT power capacitor banks, direct melt transfer line bypassing chip making, new POY plant installation",
+   "Cost records maintained; Cost Audit report filed for FY 24-25",
+   "Internal Auditor submits quarterly reports to Audit Committee",
+   "Vigil mechanism/Whistle Blower Policy in place; no complaints received in FY 2025-26",
+   "Compliance with Maternity Benefit Act, 1961; Internal Complaints Committee constituted under POSH Act; no complaints received",
+   "Listed on BSE and NSE; shares in demat form via NSDL and CDSL",
+   "Annual Return as on 31st March 2026 to be placed on website: https://www.rajrayon.com/page.php?id=92",
+   "Nomination and Remuneration Policy available at: https://www.rajrayon.com/Pdf/Nomination%20and%20remuneration%20policy.pdf",
+   "Related Party Transaction Policy available at: https://www.rajrayon.com/Pdf/Policy%20_Related%20party%20transcation.pdf",
+   "Board consists of six members including CFO and three independent directors as on March 31, 2026",
+   "Directors have foregone remuneration as plan still under implementation",
+   "No employees drawing remuneration above prescribed limits",
+   "No bonus shares, sweat equity, differential voting rights, rights issue, deposits, share buyback, warrants, debentures, bonds, or NCDs issued",
+   "No change in nature of business; financial statements not revised; no failed corporate actions",
+   "Compliance with Secretarial Standards on Board and General Meetings",
+   "The Company was under IBC and still trying to be on its foot, the new Board members have also waived the remuneration in the year under review.",
+   "Total fees for all services paid by the Company, on a consolidated basis, to the statutory auditors are as follows: Audit Fees 11.09 Lakhs.",
+   "The Company does not have any subsidiary.",
+   "During Financial Year 2025-26, the Company have not given any Loans and advances in the nature of loans to firms/companies in which directors are interested.",
+   "The Company has not raised any funds through qualified institutions placement or preferential allotment during the year under review.",
+   "Number of complaints filed during the financial year NIL; Number of complaints disposed of during the financial year NIL; Number of complaints pending as on end of the financial year NIL (Sexual Harassment of Women at Workplace).",
+   "Status of Shareholder complaints received during the year: Opening balance at the beginning of the year: Nil; Received during the year: 0; Disposed during the year: 0; Closing balance at the end of the year: Nil.",
+   "The Company's internal audit function is empowered to examine the adequacy, relevance and effectiveness of control systems, compliance with laws, regulations and policies, plans and statutory requirements.",
+   "Sustainability initiatives at plants include: Efficient Water Recycling and Treatment (state-of-the-art Effluent Treatment Plant with Reverse Osmosis), Energy Recovery and Utilization (residual heat recovery for preheating atmospheric air), Innovative Cooling Solutions (waste vapors converted to chilled water via vapor absorption chillers), Power Saving Initiatives (energy-efficient motors and solar power panels), Sustainable Packaging Solutions (recycling paper tubes for reuse).",
+   "AGM Date: Wednesday, 30th September, 2026 at 12.00 noon via VC/OAVM",
+   "Financial Year: April 1, 2025 to March 31, 2026",
+   "Dividend: Not Declared for FY 2025-26",
+   "Listed on BSE (530699) and NSE (RAJRILTD)",
+   "ISIN: INE533D01032 (Equity), INE533D03020 (CCPS Class B - Unlisted)",
+   "Registrar & Transfer Agent: MUFG Intime India Pvt. Ltd. (formerly Link Intime India Private Limited)",
+   "Credit Rating (Ind-Ra, 18 July 2023): IND BBB/Stable/IND A3+ for Fund-based working capital; IND A3+ for Non-fund-based working capital; IND BBB/Stable for Term Loans; IND A3+ for Derivative limits. No change during year.",
+   "25,00,000 CCPS Class B of Rs.100 each allotted to SVG Fashions Private Limited on 10th June 2022"
+  ],
+  "outlook": [
+   {
+    "statement": "Your directors are continuously looking for avenues for future growth of the company.",
+    "period": "future"
+   },
+   {
+    "statement": "The Indian textile and apparel market continues to offer significant long-term growth potential supported by favourable demographics, rising consumption, increasing formalisation of retail, and policy support (PLI Scheme, PM MITRA Parks). The polyester segment is expected to benefit from balanced demand-supply and growing applications in apparel, home textiles, and industrial uses.",
+    "period": "medium to long term"
+   },
+   {
+    "statement": "The outlook for the Indian textile industry remains positive, supported by a strong domestic market, favorable government policies, and improving export prospects. The sector is expected to witness steady growth in the coming year.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Government\u2019s continued focus on strengthening the textile ecosystem through initiatives such as PLI Scheme, PM MITRA Parks, and National Technical Textiles Mission will enhance competitiveness, attract investments, and accelerate technology adoption.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Expected conclusion of Free Trade Agreements (FTAs) with key markets such as the UK and EU is likely to provide significant export opportunities and improve India\u2019s global market share.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Domestic demand is projected to rise owing to urbanization, increasing penetration of organized retail, and rapid growth of e-commerce platforms.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Growing awareness around sustainability and eco-friendly products will encourage companies to adopt greener processes, thereby opening new product categories and premium market segments.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Challenges relating to raw material price volatility, rising energy costs, global economic uncertainties, and compliance with evolving environmental and labor standards may continue to put pressure on margins.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Overall, the Indian textile industry is poised for steady growth in FY 2025-26, and your Company is well-prepared to leverage its strengths, expand its market presence, and create long-term value for stakeholders.",
+    "period": "FY 2025-26"
+   }
+  ],
+  "risks": [
+   "Non-compliance with Minimum Public Shareholding (MPS) requirements under Reg.38 of SEBI (LODR) from June 2023 quarter till date of report",
+   "Fines levied by BSE and NSE for non-compliance with MPS; unpaid fines for June 2025, September 2025, December 2025 quarters",
+   "Freeze of entire demat account(s) of promoter(s)/promoter group(s) by BSE and NSE due to non-compliance",
+   "Inability to audit impact of pending bank statements of inoperative bank accounts from pre-CIRP period",
+   "Volatility in raw material prices",
+   "Fluctuations in crude oil and commodity prices",
+   "Rising energy and logistics costs",
+   "Intense competition from other textile-producing countries",
+   "Increasing regulatory and compliance requirements relating to sustainability and environmental standards",
+   "Non-compliance with Minimum Public Shareholding (MPS) requirements under Reg. 38 of SEBI LODR since June 2023",
+   "Promoter/promoter group demat accounts frozen by BSE and NSE due to MPS non-compliance",
+   "Unpaid fines levied by stock exchanges for multiple quarters (Sep 2024 to Mar 2026)",
+   "Raw Material Price Volatility - The Company remains exposed to fluctuations in cotton, polyester, and other fiber prices, which are influenced by international trade dynamics, weather conditions, and government policies. Sudden price spikes can affect cost structures and margins.",
+   "Global Economic Uncertainty - A significant portion of India's textile output is export-oriented. Any slowdown in key markets such as the US and Europe, coupled with inflationary pressures and geopolitical tensions, may adversely affect demand for Indian textile products.",
+   "Foreign Exchange Risk - With considerable export revenues, the Company is exposed to currency fluctuations. Sharp movements in foreign exchange rates could impact profitability.",
+   "Competition - Indian manufacturers face intense competition from countries like Bangladesh, Vietnam, and Turkey, which enjoy cost advantages in labor and logistics. This increases pressure on pricing and profitability in international markets.",
+   "Regulatory and Compliance Challenges - Increasingly stringent global requirements on sustainability, environmental protection, and labor standards necessitate continuous investment in compliance. Failure to adapt may lead to loss of market access and reputational risk.",
+   "Operational Risks - Rising energy costs, logistics challenges, and dependence on migrant labor pose operational risks, especially for small and medium enterprises within the textile ecosystem.",
+   "Technological Obsolescence - Rapid technological changes in manufacturing, automation, and digital integration require continuous upgradation. Companies that lag behind may lose competitiveness.",
+   "Non-compliance with Minimum Public Shareholding (MPS) requirements under Reg. 38 of SEBI (LODR) from June 2023 quarter onwards",
+   "Fines levied by BSE and NSE for MPS non-compliance (unpaid for quarters September 2024 through December 2025)",
+   "Promoter demat accounts frozen by BSE and NSE due to MPS non-compliance",
+   "Changing regulations around human rights posing challenges",
+   "Waste management risk",
+   "Provision for doubtful recovery of TUFS Interest Subsidy (Rs 776.64 lakhs)",
+   "Provision for doubtful recovery of VAT Payment under Protest (Rs 250 lakhs as at March 31, 2025)",
+   "Trade receivables credit impaired (Rs 3.02 lakhs as at March 31, 2026)",
+   "Show cause notices from government authorities classified as possible obligations",
+   "Contingent liabilities from claims including legal, contractor, land access and other claims",
+   "Credit risk from trade receivables and financial transactions",
+   "Liquidity risk in meeting financial obligations",
+   "Market risk",
+   "Interest rate risk",
+   "Foreign currency risk primarily with respect to US Dollar (USD)",
+   "Interest rate risk on long-term debt obligations with floating interest rates",
+   "Price risk from investment in mutual funds classified as fair value through profit and loss",
+   "Liquidity risk managed through committed credit lines and rolling cash flow forecasts"
+  ],
+  "litigation": [
+   "Non-compliance with Minimum Public Shareholding (MPS) requirements under Reg.38 of SEBI (LODR) from June 2023 quarter till date of report",
+   "Fines levied by BSE and NSE for MPS non-compliance; unpaid fines for June 2025, September 2025, December 2025 quarters",
+   "Freeze of entire demat account(s) of promoter(s)/promoter group(s) by BSE and NSE due to non-compliance",
+   "No significant material orders passed by Regulators/Courts impacting going concern status",
+   "No application made/proceeding pending under Insolvency and Bankruptcy Code, 2016",
+   "No instance of one-time settlement with any Bank or Financial Institution",
+   "Non\u2013compliance under Reg. 38 of SEBI (LODR), Regulations, 2015 with the requirements pertaining to the Minimum Public Shareholding (MPS) requirements from the June 2023 quarter till the date of this report and the Company has paid fines levied under Standard Operating Procedure (SOP) for suspension and revocation of trading of specified securities of listed entities with both exchanges BSE and NSE till the June, 2024 quarter (days) wise.",
+   "The Company has yet not paid fines levied under Standard Operating Procedure (SOP) by both exchanges BSE and NSE from the quarter September, 2024, December, 2024 and March, 2025, June, 2025, September, 2025 and December, 2025.",
+   "BSE Ltd. and National Stock Exchange of India Limited on account of Non\u2013compliance under Reg.38 of SEBI (LODR), Regulations, 2015 read with Rule 19(2)(b) and 19(A) of the Securities Contract (Regulation) Rule, 1957 have freeze the entire promoters demat account(s) till the non-compliances continues.",
+   "Non-compliance under Reg. 38 of SEBI (LODR) Regulations, 2015 with Minimum Public Shareholding (MPS) requirements from June 2023 quarter till date of report",
+   "Fines levied under Standard Operating Procedure (SOP) by BSE and NSE for MPS non-compliance (unpaid for September 2024, December 2024, March 2025, June 2025, September 2025, December 2025 quarters)",
+   "Promoter demat accounts frozen by BSE and NSE due to MPS non-compliance",
+   "The Company does not have any pending litigation which would impact its financial position.",
+   "Pursuant to an application made by State Bank of India, the Hon'ble National Company Law Tribunal, Ahmedabad bench (Adjudicating Authority), vide its order dated 23rd January, 2020, had ordered the commencement of the corporate insolvency resolution (CIR) process in respect of the company under the provisions of the Insolvency and Bankruptcy Code, 2016 (the Code). Pursuant to its order dated 05th October, 2021 (NCLT Order), the Adjudicating Authority approved the resolution plan (Approved Resolution Plan) submitted by M/s SVG Fashions Private Limited (Resolution Applicant) (RA) for the Company under Section 31 of the Insolvency and Bankruptcy Code, 2016 (Code).",
+   "Legal claims against the Company in ordinary course of business",
+   "Contractor claims",
+   "Land access claims",
+   "Show cause notices from government authorities (disputed)",
+   "Demand notices raised against show cause notices",
+   "No benami property proceedings initiated or pending",
+   "No transactions with struck off companies",
+   "No charges or satisfaction pending registration with ROC beyond statutory period",
+   "Not declared wilful defaulter by any bank or financial institution"
+  ],
+  "dividend_per_share": 0,
+  "capex_plans": [
+   {
+    "item": "New POY production lines installation",
+    "amount_cr": null,
+    "timeline": "In process"
+   },
+   {
+    "item": "Direct melt transfer line to POY plant",
+    "amount_cr": null,
+    "timeline": "Already installed"
+   },
+   {
+    "item": "Cost Auditor remuneration for FY 2026-27",
+    "amount_cr": 0.01,
+    "timeline": "FY 2026-27"
+   },
+   {
+    "item": "Property, Plant & Equipment additions during FY2026",
+    "amount_cr": 148.37,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Capital Work in Progress as at March 31, 2026",
+    "amount_cr": 0.87,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "Property, Plant and Equipments",
+    "amount_cr": 0.4,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company does not have any subsidiary, joint venture or associate company"
+   },
+   {
+    "name": "SVG Fashions Private Limited",
+    "holding_pct": 84.88,
+    "business": "Holding Company"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "bank",
+    "amount_cr": null,
+    "note": "Working capital limits in excess of Rs. 5 crores sanctioned on the basis of security of current assets; term loans applied for the purpose for which they were obtained; no default in repayment of loans or interest; not declared wilful defaulter."
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 150.78,
+    "note": "Non-Current Borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 71.71,
+    "note": "Current Borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Overseas lenders such as banks and financial institutions (deferred payment arrangements/acceptances)",
+    "amount_cr": null,
+    "note": "For import of raw materials and property, plant and equipment; interest borne accounted as finance cost"
+   },
+   {
+    "lender_or_type": "Banks and financial institutions (secured borrowings)",
+    "amount_cr": null,
+    "note": "Property, Plant & Equipment hypothecated as security (refer note 16 & 18); Inventories and Trade Receivables also hypothecated as security"
+   },
+   {
+    "lender_or_type": "Bank of Baroda - Term Loan",
+    "amount_cr": 188.69,
+    "note": "Secured by hypothecation of entire PPE, equitable mortgage of factory land & building, hypothecation of current assets, pledge of FDR of Rs 3.70 Crores by SVG Fashions Pvt Ltd. 9.15% interest, 84 structured monthly installments from July 2023 to June 2030."
+   },
+   {
+    "lender_or_type": "HDFC - Term Loan",
+    "amount_cr": 188.69,
+    "note": "Secured by hypothecation of entire PPE, equitable mortgage of factory land & building, hypothecation of current assets, corporate guarantee of SVG Fashions Pvt Ltd, personal guarantees of Satyanarayan Agarwal, Sandiip Agarwwal, Rajkumar Agarwal. 8.50% interest, repayable in 72 months post 12-month moratorium (April 2026 to March 2032)."
+   },
+   {
+    "lender_or_type": "Bank of Baroda - Working Capital Loan",
+    "amount_cr": 2.58,
+    "note": "Secured by hypothecation of current assets, cash margin @15% for BG/LC, hypothecation of PPE, equitable mortgage of factory land & building, corporate guarantee of SVG Fashions Pvt Ltd. Interest rate 9.10% p.a."
+   },
+   {
+    "lender_or_type": "HDFC - Working Capital Loan",
+    "amount_cr": 2.58,
+    "note": "Secured by hypothecation of PPE, equitable mortgage of factory land & building, hypothecation of current assets, corporate guarantee of SVG Fashions Pvt Ltd, personal guarantees of promoters. Interest rate 8.5% p.a."
+   },
+   {
+    "lender_or_type": "SVG Fashions Pvt Ltd - Inter-Corporate Loan (Unsecured)",
+    "amount_cr": 31.22,
+    "note": "Interest rate 6.00% p.a. Outstanding balance as at March 31, 2026."
+   },
+   {
+    "lender_or_type": "Current Maturities of Long Term Borrowings",
+    "amount_cr": 37.91,
+    "note": "Included in Short Term Borrowings"
+   },
+   {
+    "lender_or_type": "Term Loans",
+    "amount_cr": 188.69,
+    "note": "Carrying amount as at March 31, 2026: Rs 18,869.44 lakhs; Contractual cash flows: Upto 1 year Rs 3,791.07 lakhs, More than 1 year Rs 15,078.37 lakhs"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 33.8,
+    "note": "Carrying amount as at March 31, 2026: Rs 3,379.83 lakhs; Contractual cash flows: Upto 1 year Rs 3,379.83 lakhs"
+   },
+   {
+    "lender_or_type": "Total Interest bearing loans and borrowings",
+    "amount_cr": 222.49,
+    "note": "As at March 31, 2026: Rs 22,249.27 lakhs (Note 16 and Note 18)"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Claims against the Company including legal, contractor, land access and other claims",
+    "amount_cr": null
+   },
+   {
+    "nature": "Show cause notices from government authorities (classified as possible obligations)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Contingent Liabilities",
+    "amount_cr": 0
+   }
+  ]
+ }
+}
