@@ -1,0 +1,848 @@
+{
+ "isin": "INE498A01018",
+ "name": "DCM  Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_32222_DCM_2025_2026_A_2664494_26102026172317.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 580014,
+ "chunks": 15,
+ "chunks_ok": 13,
+ "facts": {
+  "business": {
+   "description": "DCM Limited operates a Cast Iron Unit named 'DCM Engineering Products' located at village Asron, district Shaheed Bhagat Singh Nagar, Punjab - 144533.",
+   "products": [
+    {
+     "name": "Cast Iron Products (DCM Engineering Products)",
+     "share_of_revenue_pct": null,
+     "note": "Cost audit conducted for this unit"
+    },
+    {
+     "name": "Castings",
+     "share_of_revenue_pct": null,
+     "note": "Catering to various segments of the automotive industry including cars, multi-utility vehicles, tractors, light commercial vehicles, heavy commercial vehicles and earth moving equipment"
+    },
+    {
+     "name": "IT Infrastructure services",
+     "share_of_revenue_pct": null,
+     "note": "Specializing in networking, analytics, cloud and digital technologies through DCM Infotech Limited"
+    },
+    {
+     "name": "Cast Iron products",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured at DCM Engineering Products unit in Punjab"
+    },
+    {
+     "name": "Engineering Division products (implied iron scrap based)",
+     "share_of_revenue_pct": null,
+     "note": "No production in Engineering Division during FY 2025-26 due to lockout since October 22, 2019"
+    },
+    {
+     "name": "Cast iron components (cylinder heads, cylinder blocks, gear housings, brake drums, housings, clutch housings, flywheel housings)",
+     "share_of_revenue_pct": null,
+     "note": "No production due to lockout since October 22, 2019"
+    },
+    {
+     "name": "Textiles",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Grey iron casting",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Real Estate",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "IT Infrastructure Service",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Sale of product license",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 133.12 lakh in FY2026"
+    },
+    {
+     "name": "Sale of services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 7,022.35 lakh in FY2026"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "US market",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "plants": [
+    {
+     "location": "Village Asron, District Shaheed Bhagat Singh Nagar, Punjab - 144533",
+     "capacity": ""
+    },
+    {
+     "location": "Village Asron, District Shaheed Bhagat Singh Nagar (Punjab) - 144533",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Engineering Division (location not specified in text)",
+     "capacity": "Not specified; under lockout since October 22, 2019"
+    },
+    {
+     "location": "Village Asron, District Shaheed Bhagat Singh Nagar (Punjab)",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "customers": [
+    "Automotive industry segments",
+    "Automotive industry (passenger vehicles, commercial vehicles, industrial applications)"
+   ],
+   "end_markets": [
+    "Automotive",
+    "Real Estate",
+    "IT Services",
+    "Railways",
+    "Defence",
+    "Infrastructure",
+    "Capital goods"
+   ],
+   "raw_materials": [
+    "Iron scrap"
+   ]
+  },
+  "auditor": {
+   "name": "SS Kothari Mehta & Co. LLP",
+   "opinion": "The Auditors' Report on Annual Financial Statements for the financial year ended March 31, 2026 does not contain any qualification, reservation or adverse remark or disclaimer.",
+   "qualifications_or_emphasis": [
+    "Material uncertainty related to going concern",
+    "Material Uncertainty relating to Going Concern: Current liabilities exceed current assets by Rs 4,161.54 lakhs due to advance of Rs. 5,000 lakhs under JDA; management believes Company will continue as going concern with liquidity infusion and restructuring plans",
+    "Emphasis of Matter: Lockout at engineering business undertaking since October 22, 2019; no provision for wages aggregating Rs. 7,964 lakhs as management considers lockout legal and justified based on legal advice",
+    "Material Uncertainty Related to Going Concern",
+    "The Company has used fund raised on short-term basis aggregating to Rs. 4,161.54 lakh which have been used for long-term purposes",
+    "The Company has incurred cash losses of Rs. 299.98 lakh in the current financial year",
+    "Emphasis of Matter: Lockout at engineering business undertaking since October 22, 2019 - no provision for wages aggregating Rs 7,964 lakhs (FY 2024-25: Rs 525 lakh)",
+    "Material Uncertainty Relating to Going Concern: JDA development license suspended, termination notice issued, arbitration proceedings, current liabilities exceed current assets by Rs 259.09 lakhs",
+    "proper books of account as required by law relating to preparation of Consolidated Financial Statements have been kept so far as it appears from our examination of those books and the reports of the other auditors except for the matters stated in paragraph 2(i)(vi) below on reporting under Rule 11(g) of the Companies (Audit and Auditors) Rules, 2014",
+    "the Group and jointly controlled entities has used an accounting software for maintaining its books of account for the financial year ended March 31, 2026 which has a feature of recording audit trail (edit log) facility except audit trail functionality at the database level and the same has operated throughout the year for all relevant transactions recorded in the accounting software systems"
+   ],
+   "key_audit_matters": [
+    "Assessment of impairment of property, plant and equipment of Engineering Division (carrying value Rs. 2,110.15 lakh out of total Rs. 2,507.67 lakh) due to continuous losses and lockout since 2019",
+    "Material Uncertainty Related to Going Concern",
+    "Impairment assessment of property, plant and equipment of Engineering Division (carrying value Rs 2,111.57 lakh out of total Rs 2,507.66 lakh)",
+    "Material uncertainty relating to going concern due to JDA license suspension, termination notice, arbitration proceedings, and current liabilities exceeding current assets"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mr. Yuv Bharat Ram (DIN: 08558056) as Director, retiring by rotation",
+    "Re-appointment of Mr. Rahil Bharat Ram (DIN: 08839924) as Director, retiring by rotation",
+    "Re-appointment of Mr. Vinay Sharma (DIN: 08977564) as Managing Director for 3 years effective August 4, 2027 to August 3, 2030",
+    "Mr. Ajay Vir Jakhar (DIN:00156804) resigned from the position of Non-Executive Independent Director w.e.f. February 04, 2026",
+    "Maj. Gen. Shailendra Singh, SM (Retd.) appointed as Additional Director (Non-Executive & Independent) w.e.f. May 12, 2026",
+    "Mr. Yuv Bharat Ram (DIN:08558056) and Mr. Rahil Bharat Ram (DIN: 08839924) retire by rotation and offer themselves for re-appointment",
+    "Mr. Vinay Sharma (DIN: 08977564) re-appointed as Managing Director for a period of three (3) years with effect from August 4, 2027 up to August 3, 2030",
+    "Mr. Ajay Vir Jakhar resigned as Independent Director (Non-Executive) w.e.f. February 04, 2026",
+    "Ms. Pallavi Kanchan (DIN: 07545615) appointed as Additional Director (Non-Executive) of DCM Infotech w.e.f. February 5, 2026",
+    "Mr. Aditya Katoch (DIN: 05197924) appointed as Additional Director (Non-Executive) of DCM Infotech w.e.f. February 5, 2026",
+    "Mr. Arjit Gupta resigned as Company Secretary (KMP) and Compliance Officer w.e.f. December 12, 2025",
+    "Ms. Sonal Gupta appointed as Company Secretary (KMP) and Compliance Officer w.e.f. February 12, 2026",
+    "Mr. Ajay Vir Jakhar (DIN- 00156804), Non-Executive Independent Director of the Company, has resigned from the Board of the Company with effect from the closure of business hours of February 04, 2026, on account of pre-occupation and other personal commitments",
+    "Maj. Gen. Shailendra Singh, SM (Retd.) was appointed as Additional Director, designated as Independent Director of the Company with effect from May 12, 2026, to hold office for a term of 5 (five) years. The members of the Company, vide their special resolution dated July 15, 2026, passed through postal ballot, had approved the appointment of Maj. Gen. Shailendra Singh, SM (Retd.) as Director (Non-executive & Independent) of the Company",
+    "Mr. Arjit Gupta resigned as Company Secretary & Compliance Officer (KMP) w.e.f. December 12, 2025",
+    "Ms. Sonal Gupta appointed as Company Secretary & Compliance Officer (KMP) w.e.f. February 12, 2026",
+    "Mr. Ajay Vir Jakhar ceased as Non-Executive Independent Director w.e.f. close of business hours on February 04, 2026",
+    "Maj. Gen. Shailendra Singh, SM (Retd.) appointed as Director (Independent & Non-executive) for 5 consecutive years w.e.f. May 12, 2026"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Yuv Bharat Ram",
+     "pct": null
+    },
+    {
+     "name": "Mr. Rahil Bharat Ram",
+     "pct": null
+    },
+    {
+     "name": "Mr. Sumant Bharat Ram",
+     "pct": null
+    },
+    {
+     "name": "Promoters and Promoters Group",
+     "pct": 50.1
+    },
+    {
+     "name": "Individuals",
+     "pct": 30.9
+    },
+    {
+     "name": "NRIs, Trusts and NBFC's",
+     "pct": 8.09
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 3.31
+    },
+    {
+     "name": "Mutual fund, FPIs, FIs, Banks, Insurance Companies, Central Govt. and State Govt.(s)",
+     "pct": 3.35
+    },
+    {
+     "name": "Investor Education and Protection Fund (IEPF)",
+     "pct": 2.16
+    },
+    {
+     "name": "HUF, Clearing Member, foreign Company/OCB, Unclaimed or Suspense or Escrow Account",
+     "pct": 2.09
+    },
+    {
+     "name": "Mr. Sumant Bharat Ram",
+     "pct": 48.49
+    },
+    {
+     "name": "Mr. Sumant Bharat Ram",
+     "pct": 28.95
+    },
+    {
+     "name": "Mr. Yuv Bharat Ram",
+     "pct": 10.03
+    },
+    {
+     "name": "Mr. Rahil Bharat Ram",
+     "pct": 10.03
+    }
+   ],
+   "auditor_change": "M/s. V Kumar & Associates, Cost Accountants appointed as Cost Auditors for the financial year 2026-27",
+   "promoter_holding_pct": 50.1
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Jitendra Tuli",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Vinay Sharma",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Sumant Bharat Ram",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Kavita A Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Maj. Gen. Shailendra Singh, SM (Retd.)",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Aditya Katoch",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Shayam Sunder Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Yuv Bharat Ram",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Rahil Bharat Ram",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Ashwani Kumar Singhal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sonal Gupta",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Yuv Bharat Ram",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Rahil Bharat Ram",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Maj. Gen. Shailendra Singh, SM (Retd.)",
+     "role": "Additional Director (Non-Executive & Independent)"
+    },
+    {
+     "name": "Sonal Gupta",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Sonal Gupta",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Arjit Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sonal Gupta",
+     "role": "Company Secretary & Compliance Officer (w.e.f. February 12, 2026)"
+    },
+    {
+     "name": "Mr. Arjit Gupta",
+     "role": "Company Secretary & Compliance Officer (till December 12, 2025)"
+    },
+    {
+     "name": "Mr. Sumant Bharat Ram",
+     "role": "Promoter/Controller (48.49% shareholding)"
+    },
+    {
+     "name": "Jitendra Tuli",
+     "role": "Chairman"
+    },
+    {
+     "name": "Vinay Sharma",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Ashwani Kumar Singhal",
+     "role": "Chief Financial Officer"
+    }
+   ],
+   "employees": 218
+  },
+  "other_notable": [
+   "136th AGM scheduled for September 28, 2026 at 12:30 PM IST via VC/OAVM",
+   "Cost Auditor M/s. V Kumar & Associates (Firm Registration No. 100137) appointed for FY 2026-27 with remuneration of Rs. 5,000 plus GST and out-of-pocket expenses",
+   "E-voting period: September 25, 2026 (9:00 AM) to September 27, 2026 (5:00 PM)",
+   "Cut-off date for e-voting: September 21, 2026",
+   "Scrutinizer: M/s. Pragnya Pradhan & Associates, Company Secretaries (Firm Registration No. S2013DE213400)",
+   "Registered Office: Unit Nos. 2050-2052, 2nd Floor, Plaza-II, Central Square, 20 Manohar Lal Khurana Marg, Bara Hindu Rao, Delhi - 110006",
+   "CIN: L74899DL1889PLC000004",
+   "ISIN: INE498A01018",
+   "Scrip Code: 502820 (BSE), Trading Symbol: DCM (NSE)",
+   "Bankers: State Bank of India, HDFC Bank Limited, Punjab National Bank, Union Bank of India, Axis Bank",
+   "Share Transfer Agent: MCS Share Transfer Agent Limited, 179-180, 3rd Floor, DSIDC Shed, Okhla Industrial Area, Phase-I, New Delhi - 110020",
+   "Engineering Division lockout declared w.e.f. October 22, 2019 continues as on date",
+   "Real Estate Division: Joint Development Agreement signed on August 11, 2022 for 68.35 acres at Village Bir Hisar, Sector-23, Hisar, Haryana with GCD Prime",
+   "License No. 179 of 2022 suspended in April 2023 by Director General, Town and Country Planning, Haryana",
+   "Notice of forfeiture and termination of JDA issued on November 1, 2025",
+   "Advance of Rs. 5,000 lakhs received from Developer under JDA shown under current liabilities as on June 30, 2026",
+   "Current liabilities exceed current assets by Rs. 508 lakhs as at June 30, 2026",
+   "DCM Infotech turnover and other income: Rs. 74.09 Crores (previous year Rs. 70.43 Crores), PBT: Rs. 9.92 Crores (previous year Rs. 10.61 Crores)",
+   "Purearth Infrastructure Limited reported revenue from operations Rs. 115.79 Crores (previous year Rs. 222.35 Crores) and Profit after tax Rs. 31.65 Crores (previous year Rs. 119.57 Crores) for FY 2025-26",
+   "Shareholders approved material modification to related party transaction with Purearth via postal ballot during FY 2025-26",
+   "Extension of repayment period of book debts of about Rs. 12.02 Crores owed to Purearth by additional 36 months (from 66 months to 102 months)",
+   "Cost Auditor remuneration: upto Rs. 5,000/- plus GST and out of pocket expenses for audit of Cost Accounts pertaining to Cast Iron Unit",
+   "Board met five times during FY 2025-26: May 27, August 14, November 01, November 12, 2025 and February 12, 2026",
+   "No CSR spending required due to continued losses in last few years",
+   "Cost audit applicable for Cast Iron Unit - M/s. V Kumar & Associates appointed as Cost Auditors for FY 2026-27 at fee of Rs. 5,000 plus GST",
+   "Secretarial Audit conducted by M/s. Pragnya Pradhan & Associates for DCM Limited and DCM Infotech - no qualifications",
+   "No deposits accepted, no shares issued, no change in share capital during the year",
+   "No fraud reported by auditors under Section 143(12)",
+   "No proceedings under Insolvency and Bankruptcy Code, 2016",
+   "No one-time settlement with any Bank or Financial Institution",
+   "All obligations towards repayment of principal and interest on loans met",
+   "Internal Complaints Committee in place under Sexual Harassment Act - no cases reported",
+   "Members passed ordinary resolution through postal ballot on March 26, 2026 approving material related party transaction with Purearth",
+   "DCM Infotech paid final dividend of Rs. 3.50 per equity share of Rs. 10 each for FY ended March 31, 2025",
+   "DCM Infotech members passed special resolution to amend MoA at AGM held June 27, 2025",
+   "The approval given by the Department of Scientific & Industrial Research, Ministry of Science and Technology, Delhi for Recognition of in-house R&D Unit was expired on March 31, 2021. Due to continuation of lockout of Engineering Division of the Company w.e.f. October 22, 2019, the Company has not incurred any expenditure on R&D activities during the financial year 2025-26. The expenditure incurred on R&D during the previous year is also NIL.",
+   "Foreign Exchange Earned: Nil; Foreign Exchange Outgo: Nil for both FY 2025-26 and FY 2024-25",
+   "CSR obligation for FY 2025-26: Nil; Total CSR amount spent: Nil",
+   "Number of material contracts or arrangements or transactions at arm's length basis: 1",
+   "Number of contracts or arrangements or transactions not at arm's length basis: Nil",
+   "Board composition as on March 31, 2026: 9 Directors (1 Executive, 5 Non-Executive Non-Independent, 3 Non-Executive Independent)",
+   "Board meetings held during FY 2025-26: 5 (May 27, 2025; August 14, 2025; November 1, 2025; November 12, 2025; February 12, 2026)",
+   "Audit Committee meetings held during FY 2025-26: 4",
+   "Nomination and Remuneration Committee meetings held during FY 2025-26: 3",
+   "Share Transfer, Finance Facilities and Stakeholders' Relationship Committee meetings held during FY 2025-26: 4",
+   "Investor complaints during FY 2025-26: Opening balance 0, Received 4, Resolved 3, Closing balance 1",
+   "Sitting fees paid to Non-Executive Directors during FY 2025-26: Total Rs. 10.40 Lakhs",
+   "Remuneration of Mr. Vinay Sharma, Managing Director for FY 2025-26: Salary & Allowances Rs. 26.00 Lakhs, Perquisites Rs. 0, Retirement benefits Rs. 0.42 Lakhs, Total Rs. 26.42 Lakhs",
+   "Percentage increase in remuneration of Mr. Vinay Sharma (Executive Director): 42.29%",
+   "Percentage increase in median remuneration of employees: (0.06)%",
+   "Average percentile increase in salaries of employees other than managerial personnel: Nil",
+   "Company affirms that remuneration is as per the remuneration policy of the Company",
+   "No Stock Option Scheme for any Directors or employees",
+   "No dividend approved/recommended for FY 2025-26",
+   "Special resolution for appointment of Maj. Gen. Shailendra Singh passed via postal ballot on July 15, 2026 (99.75% votes in favour)",
+   "Company has not adopted non-mandatory requirements as specified in Part-E of Schedule II of SEBI Listing Regulations",
+   "Total fees paid to statutory auditors and network firms on consolidated basis: Rs. 19,83,000",
+   "Equity shares dematerialized: 98.04% (1,83,10,691 shares); Physical form: 1.96% (3,67,058 shares)",
+   "No GDRs/ADRs/warrants/convertible instruments outstanding as on March 31, 2026",
+   "Shareholder Agreement dated February 16, 2004 and Amendment and Supplementary Agreement dated February 11, 2021 with Purearth Infrastructure Limited, Tiara Investment Holdings Limited and others"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company is focused on providing recurring support to some of the existing, while also exploring the introduction of these solutions in the US market. DCM Infotech continues to pursue growth opportunities in automation, AI-led business transformation and IT operations and cybersecurity. It believes that, notwithstanding near-term economic uncertainties, the long-term growth drivers for digital transformation, automation, and AI-enabled enterprise solutions remain strong and continue to present significant opportunities for future growth.",
+    "period": "Future"
+   },
+   {
+    "statement": "The series of steps taken/to be taken for improvement by the Company would help to enlarge business operations and increase in productivity.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Holding Company believes that with the infusion of liquidity by focusing and managing its real estate assets/operation including sale/disposal of Holding Company's land pieces, presently not in use for business operation, and/or the Holding Company's plan of restructuring of its Engineering Business Undertaking as well as other interim measures to improve liquidity, the Holding Company will be able to continue its operations for the foreseeable future.",
+    "period": "foreseeable future"
+   },
+   {
+    "statement": "The casting and forging industry continues to offer long-term growth opportunities supported by increasing demand from automotive, railways, defence, infrastructure and capital goods sectors. Government initiatives aimed at strengthening domestic manufacturing are expected to support the engineering industry over the medium to long term.",
+    "period": "Medium to long term"
+   },
+   {
+    "statement": "The increasing adoption of electric vehicles (EVs) is reshaping the traditional casting industry. The transition towards lightweight vehicle designs and advanced manufacturing technologies, including giga casting, is expected to reduce the requirement for several conventional cast components used in internal combustion engine vehicles.",
+    "period": "Long term"
+   },
+   {
+    "statement": "though there exists some uncertainty but considering the various measures taken by Company in generating cash flows and the future plan given in note no. 33A and 33B of the Standalone Financial Statements, the Company may be capable of meeting its liabilities, existing at the date of balance sheet, as and when they fall due within a period of one year from the balance sheet date",
+    "period": "one year from the balance sheet date"
+   },
+   {
+    "statement": "The Company is evaluating and pursuing various options concerning its Engineering business/ operations. As and when anything is finalized, it shall seek requisite approvals from the Board and other stakeholders and make requisite intimations as required under applicable laws. In the interim, the Company is continuing with its endeavors to upkeep the factory and to rationalize the workmen force.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The management of the Holding Company believes that with infusion of liquidity by focusing /managing of its real estate operation and/or the Holding Company's plans of restructuring of its Engineering Business Undertaking as well as other interim measures to improve liquidity, the Company will be able to continue its operation for the foreseeable future.",
+    "period": "foreseeable future"
+   }
+  ],
+  "risks": [
+   "Continued situation of labour unrest at Engineering Division leading to lockout since October 22, 2019",
+   "Engineering Business Unit continued to make losses because of lower productivity and production constraints, primarily on account of industrial unrest",
+   "Inordinate delay in Real Estate project at Hisar and continuing breaches of obligations by Developer",
+   "Suspension of License No. 179 of 2022 by Director General, Town and Country Planning, Haryana",
+   "Legal disputes with Developer including arbitration proceedings and appeal filed in Delhi High Court",
+   "Current liabilities exceed current assets by Rs. 508 lakhs as at June 30, 2026",
+   "Inordinate delay and continuing breaches of obligations by Developer in real estate project",
+   "Material uncertainty related to going concern",
+   "Arbitration proceedings with Developer",
+   "Availability of consistent quality iron scrap affected during monsoon season",
+   "Commodity price risk for iron scrap",
+   "Lockout at Engineering Division since October 22, 2019 leading to no production",
+   "Potential impact on promoter shareholding from proceedings filed by Dr. Vinay Bharat Ram with ADM at New Delhi",
+   "Prolonged industrial unrest and lockout at Engineering Division since October 22, 2019",
+   "Rising input costs and increasing energy prices",
+   "Shortages of skilled manpower",
+   "Need for continuous investment in modern manufacturing technologies",
+   "Transition to electric vehicles reducing demand for conventional cast components",
+   "Legal disputes regarding Joint Development Agreement for Hisar land",
+   "Going concern uncertainty due to current liabilities exceeding current assets by Rs 4,161.54 lakhs",
+   "Material Uncertainty Related to Going Concern",
+   "The Company has incurred cash losses of Rs. 299.98 lakh in the current financial year",
+   "The Company has used fund raised on short-term basis aggregating to Rs. 4,161.54 lakh which have been used for long-term purposes",
+   "Negative net worth: Total equity of Rs. 416.18 lakh as at March 31, 2026 (down from Rs. 953.27 lakh)",
+   "Loss for the year after tax of Rs. 580.24 lakh",
+   "Accumulated losses in retained earnings of Rs. 2,668.27 lakh as at March 31, 2026",
+   "Continued industrial unrest and lockout at Engineering Division since October 22, 2019",
+   "Legal proceedings related to lockout before labour authorities",
+   "Suspension of development license for Hisar land project under JDA",
+   "Termination and forfeiture notice issued for JDA on November 1, 2025",
+   "Arbitration proceedings invoked by Developer under JDA",
+   "Section 9 petition filed by Developer under Arbitration and Conciliation Act, 1996",
+   "Current liabilities exceed current assets by Rs 259.09 lakhs as at March 31, 2026",
+   "Credit risk from trade receivables (Rs 9.65 lakh past due >180 days)",
+   "Liquidity risk - dependence on real estate operations and restructuring for liquidity",
+   "Interest rate risk on variable interest-bearing financial liabilities",
+   "Going concern uncertainty due to losses and liquidity position",
+   "Delay in development of Group Hisar land project leading to fund requirements for payment of outstanding debt, statutory dues, overheads",
+   "Engineering Business Undertaking of the Holding company remained in lockout since 29.10.2019",
+   "Unabsorbed depreciation and business losses under Income-tax Act, 1961 with deferred tax assets recognised only to the extent of deferred tax liability due to absence of reasonable certainty of taxable profits",
+   "Currency risk from exchange rate fluctuations affecting financial instruments denominated in USD",
+   "Interest rate risk on floating rate borrowings (though no borrowings outstanding as on balance sheet date)",
+   "Industrial unrest and lockout at Engineering Division since October 22, 2019, with workmen dues of Rs. 7964 lakh not provided for",
+   "Matter sub-judice before labour authorities regarding lockout legality"
+  ],
+  "subsidiaries": [
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": null,
+    "business": "IT Infrastructure services specializing in networking, analytics, cloud and digital technologies"
+   },
+   {
+    "name": "Purearth Infrastructure Limited",
+    "holding_pct": 16.56,
+    "business": "Construction and development of real estate project(s)"
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": null,
+    "business": "Material wholly owned subsidiary of listed entity DCM Limited"
+   },
+   {
+    "name": "Purearth Infrastructure Limited",
+    "holding_pct": null,
+    "business": "Associate Entity"
+   },
+   {
+    "name": "DCM Infotech Limited (earlier known as DCM Realty Investment and Consulting Limited)",
+    "holding_pct": null,
+    "business": "Material unlisted subsidiary; incorporated in Delhi on January 03, 1992"
+   },
+   {
+    "name": "Purearth",
+    "holding_pct": null,
+    "business": "Joint venture company; real estate development project"
+   },
+   {
+    "name": "Aggresar Leasing and Finance Private Limited",
+    "holding_pct": null,
+    "business": "Controlled by Mr. Sumant Bharat Ram (99.98% shareholding)"
+   },
+   {
+    "name": "Unison International IT Services",
+    "holding_pct": null,
+    "business": "Subsidiary of Aggresar Leasing and Finance Private Limited"
+   },
+   {
+    "name": "DCM Landmark Estates Limited",
+    "holding_pct": 100,
+    "business": "Real estate"
+   },
+   {
+    "name": "DCM Infinity Realtors Limited",
+    "holding_pct": 100,
+    "business": "Real estate"
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": 100,
+    "business": "Information technology"
+   },
+   {
+    "name": "DCM Engineering Limited",
+    "holding_pct": 100,
+    "business": "Engineering"
+   },
+   {
+    "name": "DCM Realty and Infrastructure Limited",
+    "holding_pct": 100,
+    "business": "Real estate and infrastructure"
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": null,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "DCM Landmark Estates Limited",
+    "holding_pct": null,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "DCM Infinity Realtors Limited",
+    "holding_pct": null,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "DCM Reality and Infrastructure Limited",
+    "holding_pct": null,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "Kalpatru Realty Private Limited",
+    "holding_pct": null,
+    "business": "Subsidiary of joint venture entity"
+   },
+   {
+    "name": "DCM Landmark Estates Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "DCM Realty and Infrastructure Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "DCM Engineering Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "DCM Infinity Realtors Limited",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "DCM Infotech Solution INC.",
+    "holding_pct": 100,
+    "business": "Step Down Subsidiary"
+   },
+   {
+    "name": "DCM Engineering Products Educational Society",
+    "holding_pct": 100,
+    "business": "Society"
+   },
+   {
+    "name": "Purearth Infrastructure Limited",
+    "holding_pct": 16.56,
+    "business": "Joint venture"
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": null,
+    "business": "IT services (office building at Flat No 607,608,609 in Navketan Complex, Secunderabad)"
+   },
+   {
+    "name": "DCM Landmark Estates Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Realty and Infrastructure Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Engineering Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Infotech Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Infinity Realtors Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Engineering Products Educational Society",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "DCM Infotech Solutions Inc, USA",
+    "holding_pct": 100,
+    "business": "wholly owned subsidiary of DCM Infotech Limited, incorporated on July 03, 2025"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Purearth Infrastructure Limited",
+    "nature": "Joint Venture entity / Related party transaction for purchase of Residential Units in project \"Amaryllis\", Central Delhi",
+    "amount_cr": 21.0
+   },
+   {
+    "party": "Purearth Infrastructure Limited",
+    "nature": "Associate Company - Material Related Party Transactions for granting further extension of repayment period of book debts of about Rs. 12.02 Crores by additional 36 months, including interest accrued/to be accrued aggregating to about Rs. 21 Crores",
+    "amount_cr": 21
+   },
+   {
+    "party": "Purearth Infrastructure Limited",
+    "nature": "Associate Entity",
+    "amount_cr": 20
+   },
+   {
+    "party": "Related parties (as per policy)",
+    "nature": "Contracts/arrangements/transactions in ordinary course of business and on arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Purearth",
+    "nature": "Joint venture company; related party as per Regulation 2(zb) of SEBI Listing Regulations",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Sumant Bharat Ram",
+    "nature": "Controls the Company by virtue of 48.49% shareholding; related party as per Regulation 2(zb)",
+    "amount_cr": null
+   },
+   {
+    "party": "Aggresar Leasing and Finance Private Limited",
+    "nature": "Controlled by Mr. Sumant Bharat Ram (99.98% shareholding); related party as per Regulation 2(zb)",
+    "amount_cr": null
+   },
+   {
+    "party": "Unison International IT Services",
+    "nature": "Subsidiary of Aggresar Leasing and Finance Private Limited, indirectly controlled by Mr. Sumant Bharat Ram; related party as per Regulation 2(zb)",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions with related parties are in compliance with sections 177 and 188 of the Act where applicable and the details have been disclosed in the notes to the standalone financial statements, as required by the applicable Indian accounting standards",
+    "amount_cr": null
+   },
+   {
+    "party": "DCM Emp Welfare Trust",
+    "nature": "Other advances",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Purearth Infrastructure Limited",
+    "nature": "Joint venture - purchase of residential units in project 'Amaryllis' under joint development agreement",
+    "amount_cr": 16.91
+   },
+   {
+    "party": "Related parties (employee related payable)",
+    "nature": "Employee related payable",
+    "amount_cr": 0.26
+   },
+   {
+    "party": "Related parties (interest expense)",
+    "nature": "Interest expenses payable",
+    "amount_cr": 0.96
+   },
+   {
+    "party": "Related parties (rent receipts)",
+    "nature": "Rent receipts",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (advance for conversion charges)",
+    "nature": "Advance for conversion charges",
+    "amount_cr": 0.02
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Purearth Infrastructure Limited",
+    "amount_cr": 21.0,
+    "note": "Book debts of about Rs. 12.02 Crores owed by the Company to Purearth for purchase of Residential Units in the project \"Amaryllis\", Central Delhi, including interest accrued/to be accrued thereon aggregating to about Rs. 21 Crores"
+   },
+   {
+    "lender_or_type": "Mortgage on land at Bara Hindu Rao/Kishanganj, Delhi for loans availed by joint venture company and body corporate",
+    "amount_cr": 0,
+    "note": "Outstanding amount of loans on which mortgage was created as on March 31, 2026 was Nil (previous year Rs. 74.00 Crores)"
+   },
+   {
+    "lender_or_type": "Nil outstanding debt instrument or fixed deposit",
+    "amount_cr": 0,
+    "note": "Company has nil outstanding debt instrument or any fixed deposit requiring credit rating"
+   },
+   {
+    "lender_or_type": "Short-term funds (majorly security deposit taken for Hisar Project)",
+    "amount_cr": 41.6154,
+    "note": "Used for long-term purposes by the Company (refer note 33B of the standalone financial statements)"
+   },
+   {
+    "lender_or_type": "Interest-bearing financial liabilities carrying variable interest rates",
+    "amount_cr": null,
+    "note": "Company has no borrowing as on 31.03.2026 as well as 31.03.2025 per capital management disclosure"
+   },
+   {
+    "lender_or_type": "Bank overdrafts",
+    "amount_cr": null,
+    "note": "Shown within borrowings in current liabilities in the balance sheet"
+   },
+   {
+    "lender_or_type": "Lease liabilities",
+    "amount_cr": 1.03,
+    "note": "Effective interest rate 8% with maturity between 2025-28"
+   },
+   {
+    "lender_or_type": "Deferred payment for residential units from Purearth Infrastructure Limited",
+    "amount_cr": 16.91,
+    "note": "Secured by equitable mortgage of 43.65 acres of land at Hisar, Haryana; interest 9.36%-11.87% p.a. till Oct 31, 2024, then 7.65% p.a. or FD rate for 2 years, whichever higher; repayment extended to 102 months"
+   },
+   {
+    "lender_or_type": "No borrowings outstanding",
+    "amount_cr": 0,
+    "note": "Group does not have borrowing as on 31.03.2026 as well as 31.03.2025"
+   }
+  ],
+  "litigation": [
+   "Lockout of Engineering Division opposed by workmen, matter sub-judice before competent labour authorities",
+   "Developer filed petition under Section 9 of Arbitration & Conciliation Act, 1996 before Divisional Bench of Hon'ble Delhi High Court seeking Stay of termination notice",
+   "Developer filed appeal against Judgement dated July 28, 2026 before Divisional Bench of Hon'ble Delhi High Court",
+   "Developer issued notice under Section 21 of Arbitration & Conciliation Act, 1996 invoking arbitration under terms of JDA",
+   "Arbitration proceedings commenced before Sole Arbitrator appointed with consent of parties",
+   "Developer filed application under Section 9 of Arbitration and Conciliation Act, 1996 seeking interim relief before Hon'ble Delhi High Court - dismissed vide order dated July 28, 2026",
+   "Sole Arbitrator appointed with consent of both parties for adjudication of dispute under JDA",
+   "Appeal filed by Developer pending",
+   "Dr. Vinay Bharat Ram has filed certain proceedings with ADM at New Delhi claiming certain rights against Mr. Sumant Bharat Ram that may potentially impact promoter shareholding",
+   "Developer filed Section 9 petition under Arbitration and Conciliation Act, 1996 before Hon'ble Delhi High Court seeking interim reliefs including stay of forfeiture notice and restraint on creating third-party rights over Project Land",
+   "Developer filed application before Hon'ble Delhi High Court seeking conversion of Section 9 petition into application under Section 17 before arbitral tribunal and continuation of interim protection",
+   "Matter pending adjudication before court",
+   "Central Excise duty dispute for 2002-2003, 2003-2004 pending at Supreme Court (Amount: Rs. 0.50 lakh)",
+   "Income Tax dispute for 1982-1983, 1989-1990 pending at ITAT/ AO (Amount: Rs. 442.48 lakh)",
+   "Property tax dispute with MCD - amount deposited under protest",
+   "VAT dispute - amount deposited under protest",
+   "Lockout at Engineering Division opposed by workmen before Labour Authorities - matter sub-judice",
+   "Developer filed Section 9 petition under Arbitration and Conciliation Act, 1996 before Delhi High Court seeking interim reliefs",
+   "Developer issued notice under Section 21 of Arbitration & Conciliation Act, 1996 invoking arbitration under JDA terms",
+   "Developer filed application before Delhi High Court seeking conversion of Section 9 petition into application under Section 17 before arbitral tribunal",
+   "Company issued notice on November 1, 2025 for termination and forfeiture of JDA",
+   "The Consolidated Financial Statements disclose the impact of pending litigations on consolidated financial position of the Group and its jointly controlled entities. Refer Note 35 to the Consolidated Financial Statements as at March 31, 2026.",
+   "Property tax dispute with MCD (amount deposited under protest)",
+   "Railway dispute against High court order (Rs 18.57 lakh)",
+   "Lockout at Engineering Division opposed by workmen before Labour Authorities, matter sub-judice",
+   "No proceedings initiated or pending for Benami property",
+   "No undisclosed income in tax assessments",
+   "Not declared willful defaulter by any bank or financial institution"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Advance of Rs. 5,000 lakhs received from Developer under JDA - forfeiture notice issued, arbitration proceedings ongoing",
+    "amount_cr": 500
+   },
+   {
+    "nature": "Wages pertaining to lockout period October 22, 2019 to March 31, 2026, aggregating to Rs. 7,964 lakhs (for year ended Rs. 525 lakh) - no provision made as management considers lockout legal and justified",
+    "amount_cr": 79.64
+   },
+   {
+    "nature": "Advance of Rs. 5,000 lakhs received under Joint Development Agreement for Hisar land - forfeiture notice issued, developer filed Section 9 petition and arbitration; no accounting impact recognized pending adjudication",
+    "amount_cr": 500
+   },
+   {
+    "nature": "Central Excise duty dispute for 2002-2003, 2003-2004 pending at Supreme Court",
+    "amount_cr": 0.005
+   },
+   {
+    "nature": "Income Tax dispute for 1982-1983, 1989-1990 pending at ITAT/ AO",
+    "amount_cr": 4.4248
+   },
+   {
+    "nature": "Workmen dues for lockout period October 22, 2019 to March 31, 2026",
+    "amount_cr": 79.64
+   },
+   {
+    "nature": "JDA termination and forfeiture dispute - advance of Rs 5,000 lakhs received under JDA shown under current liabilities, arbitration proceedings ongoing",
+    "amount_cr": 50
+   },
+   {
+    "nature": "Property tax deposited under protest with MCD",
+    "amount_cr": 0.35
+   },
+   {
+    "nature": "Railway dispute against High court order",
+    "amount_cr": 0.19
+   },
+   {
+    "nature": "Workmen dues for lockout period October 22, 2019 to March 31, 2026 not provided for",
+    "amount_cr": 79.64
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "The purchase of fully paid residential units by the Company from Purearth Infrastructure Limited in the project \"Amaryllis\", Central Delhi under agreements dated March 27, 2021 & April 17, 2021 on deferred payment basis for an aggregate amount of about Rs. 20 Crores.",
+    "value_cr": 20
+   },
+   {
+    "statement": "Joint Development Agreement dated August 11, 2022 with a party for development of its land situated at Hisar. The Developer is responsible to obtain and maintaining all the statutory approvals including development license.",
+    "value_cr": null
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}

@@ -1,0 +1,968 @@
+{
+ "isin": "INE137C01018",
+ "name": "Alphageo (India) Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30664_ALPHAGEO_2025_2026_A_6422005_26082026165803.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 596123,
+ "chunks": 15,
+ "chunks_ok": 15,
+ "facts": {
+  "business": {
+   "description": "Alphageo (India) Limited is a technology-driven seismic solutions company enabling exploration, resource assessment, and subsurface intelligence across India and international markets. It is India's largest onshore integrated seismic services company in the private sector, providing seismic data acquisition (2D, 3D, 3C), processing, interpretation, and related geophysical services.",
+   "products": [
+    {
+     "name": "2D Seismic Acquisition",
+     "share_of_revenue_pct": null,
+     "note": "Basin-scale frontier surveys from regional reconnaissance to detailed prospect evaluation"
+    },
+    {
+     "name": "3D Seismic Acquisition",
+     "share_of_revenue_pct": null,
+     "note": "Volumetric reservoir imaging for development decisions; first Indian private company to offer 3D acquisition"
+    },
+    {
+     "name": "3C (Three-Component) Seismic Acquisition",
+     "share_of_revenue_pct": null,
+     "note": "Full-wave acquisition capturing P-waves and S-waves simultaneously for lithology, fracture, and fluid information"
+    },
+    {
+     "name": "Seismic Data Processing & Interpretation",
+     "share_of_revenue_pct": null,
+     "note": "Pre-stack depth migration (PSDM), AVO inversion, structural and stratigraphic interpretation, prospect generation and evaluation"
+    },
+    {
+     "name": "Survey Design",
+     "share_of_revenue_pct": null,
+     "note": "Full geometry optimisation including modelling, fold analysis, and terrain-specific parameter selection"
+    },
+    {
+     "name": "Quality Assurance",
+     "share_of_revenue_pct": null,
+     "note": "Third-party QC for 2D/3D seismic data acquisition and processing"
+    },
+    {
+     "name": "Tape Transcription & Digitisation",
+     "share_of_revenue_pct": null,
+     "note": "Legacy data conversion into CGM/SEGY/LAS formats"
+    },
+    {
+     "name": "EM and Gravity/Magnetic Surveys (API)",
+     "share_of_revenue_pct": null,
+     "note": "Acquisition, processing and interpretation of electromagnetic and gravity/magnetic surveys"
+    },
+    {
+     "name": "Topographic Surveys with GPS/RTK",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Reservoir Data Analysis",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Seismic data acquisition",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Seismic data processing",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Seismic data interpretation",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Geophysical Seismic Data Acquisition, Processing, and Interpretation Services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Geophysical Seismic Data Acquisition, Processing and Interpretation Services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Seismic data acquisition, processing and interpretation services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognised on output basis measured by milestones reached, units delivered, efforts expended, number of transactions processed, etc."
+    },
+    {
+     "name": "Geophysical survey and related service",
+     "share_of_revenue_pct": 100,
+     "note": "Revenue from contracts: Geophysical survey and related service income"
+    },
+    {
+     "name": "Geophysical survey and related services",
+     "share_of_revenue_pct": null,
+     "note": "Includes seismic data acquisition, processing, interpretation, and reservoir characterisation"
+    },
+    {
+     "name": "Geophysical data acquisition, processing and interpretation services",
+     "share_of_revenue_pct": null,
+     "note": "For oil and gas exploration companies; also entered mineral exploration sector"
+    }
+   ],
+   "customers": [
+    "ONGC",
+    "Oil India Limited",
+    "JSC SMNGC",
+    "Private E&P companies bidding in OALP rounds",
+    "Government of India (National Seismic Programme)",
+    "Oil and Natural Gas Corporation Limited",
+    "oil and gas exploration companies",
+    "Two customers represent 10% or more of the group's total revenue for the years ended March 31, 2026 and March 31, 2025.",
+    "Two customers represents 10% or more of the group's total revenue for the years ended March 31, 2026 and Two customer represents 10% or more of the group's total revenue for the years ended March 31, 2025.",
+    "Public sector company in oil & gas exploration business",
+    "Major Indian Oil Companies",
+    "Internationally renowned Oil and Gas Companies"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "UAE (through subsidiary Alphageo International)",
+     "share_pct": null
+    },
+    {
+     "name": "Middle East and Africa (pursuing opportunities)",
+     "share_pct": null
+    },
+    {
+     "name": "Dubai, UAE",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    },
+    {
+     "name": "Other countries",
+     "share_pct": 0
+    },
+    {
+     "name": "Foreign operations",
+     "share_pct": null
+    },
+    {
+     "name": "Rest of the world",
+     "share_pct": null
+    }
+   ],
+   "competitors_named": [
+    "CGG (France)",
+    "Geofizyka Toru\u0144 (Poland)",
+    "Geophysical Institute of Israel"
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Oil & Gas Exploration & Production",
+    "Critical Minerals Exploration (lithium, nickel, copper)",
+    "Geothermal Energy Exploration",
+    "Carbon Sequestration Site Assessment",
+    "Upstream oil & gas exploration",
+    "Hydrocarbon exploration",
+    "Reservoir evaluation",
+    "oil and gas exploration",
+    "oil exploration and production sector",
+    "hydrocarbons",
+    "minerals",
+    "exploration of hydrocarbons",
+    "exploration of minerals",
+    "Oil & gas exploration",
+    "Mineral exploration"
+   ],
+   "plants": [
+    {
+     "location": "Various locations across India",
+     "capacity": "Operates from various locations depending on contract site and project requirements"
+    }
+   ],
+   "raw_materials": [
+    "Stores and spares",
+    "Fuel"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Medium-term outlook is favourable. Infrastructure spending, industrialisation, manufacturing expansion, digital adoption, and rising consumption remain key tailwinds. Make in India, PLI schemes, logistics modernisation, and energy transition investments should further sharpen industrial competitiveness.",
+    "period": "Medium-term"
+   },
+   {
+    "statement": "Near-term demand drivers (FY27-FY29): OALP Rounds IX and X expected to require seismic data before first well commitments; DSF Round III/IV operators using modern 3D data for well placement; ONGC National Seismic Programme continuation of frontier basin coverage; ONGC's maturing fields requiring 4D seismic for EOR; OIL India's exploration expansion in Rajasthan and Andaman; Critical Minerals Mission-led expansion of domestic exploration programmes.",
+    "period": "FY27-FY29"
+   },
+   {
+    "statement": "Medium-term demand drivers (FY30+): Hydrocarbon Vision 2047 target to double domestic production requires significant increase in exploration seismic; Geothermal energy potential (particularly Himalayan) remains largely unexplored; Carbon storage requires geological site assessment; International Middle East E&P capital spend expected to remain elevated.",
+    "period": "FY30+"
+   },
+   {
+    "statement": "Management's focus in near term: convert pending tender pipeline into confirmed project awards; maintain strict cost discipline until revenue visibility improves; selectively explore adjacencies in minerals, carbon storage site characterisation, or other applications of seismic technology.",
+    "period": "Near term"
+   },
+   {
+    "statement": "Upstream exploration will remain strategically important as India balances rising energy demand with security priorities. Continued policy backing under HELP and OALP, paired with a sharper focus on offshore and frontier plays, should sustain activity over the long term.",
+    "period": "Long term"
+   },
+   {
+    "statement": "In FY27, the government is expected to step up acreage offerings, seismic acquisition, and exploratory drilling across offshore and frontier basins, with particular emphasis on deepwater and ultra-deepwater plays in the Andaman, Krishna-Godavari, and other underexplored regions.",
+    "period": "FY27"
+   },
+   {
+    "statement": "Mineral exploration will remain a strategic priority as India advances infrastructure, manufacturing, clean energy, and technology-led industrial growth. Rising demand from EVs, renewables, semiconductors, electronics, aerospace, and defence should sustain activity over the long term.",
+    "period": "Long term"
+   },
+   {
+    "statement": "For seismic and exploration service providers, rising activity, growing offshore intensity, and sustained spending on basin evaluation are set to create durable opportunities across the upstream value chain.",
+    "period": "Long term"
+   },
+   {
+    "statement": "The Company has incurred losses primarily due to a decline in profit margins. Competitive pricing pressures in the industry have further impacted profitability.",
+    "period": "FY 2025-26"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "ONGC National Seismic Programme contract awarded in 2016 valued at approximately Rs 1,482 Crore (16x Alphageo's annual turnover at the time)",
+    "value_cr": 1482
+   },
+   {
+    "statement": "KG Basin 3D carpet survey - 2,010 sq. km for ~Rs 242 Crore",
+    "value_cr": 242
+   },
+   {
+    "statement": "ONGC's total NSP acquisition target: 40,835 LKM across 18 states and 26 basins",
+    "value_cr": null
+   },
+   {
+    "statement": "Oil India Limited, Rajasthan: 2D and 3D Seismic Data Acquisition of >250 Sq. Kms. of 3D Seismic Data and 60 LKM of 2D Seismic Data in Baghewala Area of Rajasthan",
+    "value_cr": null
+   },
+   {
+    "statement": "Oil and Natural Gas Corporation Limited, Tichna Jorhat: 3D Seismic Data Acquisition of 120 Sq. Kms. through Outsourcing in Tichna Area of A&AA Basin",
+    "value_cr": null
+   },
+   {
+    "statement": "Oil and Natural Gas Corporation Limited, Tripura: 2D Seismic Data Acquisition (Phase-II) >300 LKM in Long offset Regional 2D Seismic Data Acquisition in Tripura Area",
+    "value_cr": null
+   },
+   {
+    "statement": "Oil India Limited, Jodhpur, Rajasthan: Hiring of Services for 190 LKM of 2D and 250 Sq.km of 3D Seismic Data Acquisition in Cambay Basin Block CB-ONHP-2023/1 (OALP-IX) in the State of Gujarat",
+    "value_cr": null
+   },
+   {
+    "statement": "Alphageo Offshore Services Private Limited secured a significant order valued at Rs 34.98 crores (plus applicable taxes) from Oil India Limited, Rajasthan for acquiring 2D and 3D Seismic Data in Gujarat",
+    "value_cr": 34.98
+   },
+   {
+    "statement": "Under his leadership, contracts have been successfully executed with distinction and efficiency in the mineral exploration sector.",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Slow translation of policy intent into field-level commissioning of seismic surveys",
+   "Operators deferring survey commitments",
+   "Extended tender timelines",
+   "Volume of actionable work falling short of macro indicators",
+   "Limited new order inflows leading to holding pattern",
+   "Higher operating costs particularly crew readiness and equipment maintenance during low asset utilisation",
+   "Geopolitical flashpoints, crude price swings, trade disruptions, financial market volatility",
+   "Dependence on steady pipeline of survey contracts",
+   "Crude oil price volatility and geopolitical uncertainties may impact E&P investments and project execution timelines",
+   "Rapid technological advancements and competitive intensity may require continuous investment in capabilities and technology upgrades",
+   "Government preference for MSME-focused tender allocations may limit the Company's participation opportunities in certain public-sector contracts",
+   "Business performance remains linked to exploration spending cycles within the oil & gas sector",
+   "Project-based operations can result in uneven revenue visibility and equipment utilisation",
+   "Seasonality & Monsoon Disruptions: Operations in the North-East & other regions may be disrupted during the monsoon (June to Sep). Changes in weather patterns significantly affect operations, as the monsoon may extend into Nov/Dec",
+   "Regulatory, Clearance & Policy Delays: Environmental clearances, land access, auction delays",
+   "Technological & Talent Risk: Need to adopt the latest seismic technologies and retain skilled manpower",
+   "Order-Book Dependency & Revenue Fluctuation: Project-based revenue leads to lumpiness",
+   "Financial & Liquidity Risk: High working-capital requirements for mobilisation and exposure to delayed payments",
+   "Execution & Operational Risks: Complex terrains, logistical challenges in remote areas",
+   "Competition & Pricing Pressure: Pressure from international players and smaller competitors",
+   "Show Cause Notice received from Directorate of Enforcement on 03.02.2026 regarding provisional seizure of fixed deposit amounting to Rs 1601.08 lakhs alleging contravention under FEMA 1999; adjudication proceedings initiated",
+   "No CSR obligation for FY 2025-26 as Company ranked among top 3000 listed entities by market cap",
+   "Ongoing proceedings under the Foreign Exchange Management Act, 1999 (FEMA), fixed deposits aggregating to Rs 1,601.08 lakhs continue to remain under seizure/frozen from 2022-23 pursuant to actions by the Directorate of Enforcement; show cause notice received from adjudicating authority",
+   "Tax demand of Rs 1,644.78 lakhs received by Managing Director in FY 2024-25 pertaining to ongoing tax matter; aggregate exposure of Rs 2,246.31 lakhs (including existing demand of Rs 601.53 lakhs) disclosed as contingent liability",
+   "Credit risk from trade receivables and financing activities",
+   "Market risk including price risk from investments in mutual funds, bonds and debentures",
+   "Interest rate risk on term deposits with banks",
+   "Foreign currency risk (minimal exposure)",
+   "Liquidity risk",
+   "Salary cost inflation risk on defined benefit plan liability",
+   "Interest rate risk on plan assets (debt instruments)",
+   "Liquidated damages on account of present and future recoveries for committed periodical quantitative geophysical survey executions",
+   "Ongoing proceedings under the Foreign Exchange Management Act, 1999 (FEMA) with fixed deposits aggregating to Rs 1,601.08 lakhs remaining under seizure/frozen since 2022-23",
+   "Show cause notice received from adjudicating authority in January 2026 in relation to FEMA matter",
+   "Income Tax demand of Rs 601.53 lakhs on company for disallowance of excess depreciation on import of machinery (FY 2021-22)",
+   "Income Tax demand of Rs 1,644.78 lakhs on Managing Director in personal capacity relating to same matter, indemnified by company",
+   "Aggregate tax exposure of Rs 2,246.31 lakhs disclosed as contingent liability",
+   "Interest rate risk from volatility in asset values due to market fluctuations and impairment of assets due to credit losses",
+   "Salary cost inflation risk leading to higher defined benefit plan liabilities",
+   "Credit risk from trade receivables and intercorporate deposits",
+   "Price risk from investments in mutual funds, bonds and debentures",
+   "Competitive pricing pressures in the industry",
+   "Decline in profit margins"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Alphageo International",
+    "holding_pct": null,
+    "business": "UAE subsidiary pursuing opportunities in Middle East and Africa; expanding globally; reflecting Alphageo's capability to execute seismic exploration surveys beyond India and overseas hydrocarbon exploration initiatives"
+   },
+   {
+    "name": "Alphageo International Limited (AIL)",
+    "holding_pct": 100,
+    "business": "Wholly owned foreign subsidiary incorporated in the Jebel Ali Free Zone, Dubai. Classified as a material subsidiary as on March 31, 2026."
+   },
+   {
+    "name": "Alphageo Offshore Services Private Limited (AOSPL)",
+    "holding_pct": null,
+    "business": "Indian subsidiary engaged in seismic surveys, data acquisition, and other geophysical activities. Classified as a material subsidiary during the year under review in accordance with Regulations 16 and 24(1) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015."
+   },
+   {
+    "name": "Alphageo International Services Limited, Dubai",
+    "holding_pct": 100,
+    "business": "Geophysical Seismic Data Acquisition, Processing, and Interpretation Services"
+   },
+   {
+    "name": "Alphageo Offshore Services Private Ltd., India",
+    "holding_pct": 70,
+    "business": "Geophysical Seismic Data Acquisition, Processing, and Interpretation Services"
+   },
+   {
+    "name": "ALPHAGEO OFFSHORE SERVICES PRIVATE LIMITED",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Alphageo Offshore Services Private Limited",
+    "holding_pct": null,
+    "business": "Indian Material Subsidiary"
+   },
+   {
+    "name": "Alphageo International Limited, Dubai",
+    "holding_pct": null,
+    "business": "Foreign Material Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Alphageo International Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Alphageo Offshore Services Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Alphageo Inc",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Alphageo International Limited",
+    "holding_pct": 100,
+    "business": "Investment in companies and joint ventures and providing technical support services"
+   },
+   {
+    "name": "Alphageo Offshore Services Private Limited",
+    "holding_pct": 70,
+    "business": "Provision of services related to geophysical / geological / reservoir characterisation, etc. including data acquisition, processing, interpretation, etc."
+   },
+   {
+    "name": "Alphageo International Limited",
+    "holding_pct": 100.0,
+    "business": ""
+   },
+   {
+    "name": "Alphageo Offshore Services Private Limited",
+    "holding_pct": 70.0,
+    "business": ""
+   },
+   {
+    "name": "Agil Seismic Services Private Limited",
+    "holding_pct": null,
+    "business": "Associate company"
+   },
+   {
+    "name": "AGIL Seismic Services Private Limited",
+    "holding_pct": 26.32,
+    "business": "Provision of services related to geophysical / geological / reservoir characterisation, etc. including data acquisition, processing, interpretation, etc."
+   },
+   {
+    "name": "Aquila Drilling Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Ares Entertainment Private Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Majeti & Co., Chartered Accountants",
+   "opinion": "unmodified",
+   "qualifications_or_emphasis": [
+    "No qualifications, reservations, or adverse remarks in Statutory Auditors' Report on financial statements for year ended March 31, 2026",
+    "Secretarial Audit Report (Annexure-II) unmodified with no qualifications, reservations, or adverse remarks",
+    "Secretarial Audit of Material Subsidiary (Alphageo Offshore Services Private Limited) unmodified with no qualifications, reservations, or adverse remarks",
+    "We have not verified the correctness and appropriateness of financial records and books of accounts of the Company.",
+    "The Secretarial Audit report is neither an assurance as to the future viability of the company nor of the efficacy or effectiveness with which the management has conducted the affairs of the company.",
+    "Emphasis of Matter: Ongoing FEMA proceedings with fixed deposits of Rs 1,601.08 lakhs under seizure/frozen; show cause notice received from adjudicating authority",
+    "Emphasis of Matter: Tax demand of Rs 1,644.78 lakhs on Managing Director (indemnified by company) and aggregate exposure of Rs 2,246.31 lakhs disclosed as contingent liability",
+    "Emphasis of Matter: Ongoing proceedings under FEMA, 1999 where fixed deposits aggregating Rs 1,601.08 lakhs remain under seizure/frozen since 2022-23; show cause notice received in January 2026; management assesses no provision required",
+    "feature of recording audit trail (edit log) facility was not available for the accounting and maintaining the books of account relating to Fixed Asset Register, pay role, purchase"
+   ],
+   "key_audit_matters": [
+    "Accuracy of revenue recognition: Measurement of Liquidated damages/Contractual Deductions involves critical estimates under Ind AS 115",
+    "Accuracy of revenue recognition: Measurement of Liquidated damages / Contractual Deductions involves critical estimates under Ind AS 115"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "No changes in composition of Board of Directors during period under review",
+    "No changes in Key Managerial Personnel during year under review",
+    "Mr. Sashank Alla, Whole time Director (DIN: 07508061), liable to retire by rotation at ensuing 40th AGM; Board recommends reappointment",
+    "During the financial year ended March 31, 2026, the composition of the Board remained stable with no changes in its structure.",
+    "Appointment of Mr. Sashank Alla (DIN 07508061) as Whole-time director (36th AGM 2022-23)",
+    "Re-appointment of Mr. Mahendra Pratap (DIN 08591443) as Independent Director for second term of five years (37th AGM 2023-24)",
+    "Re-appointment of Mr. Vinay Kumar Verma (DIN 07603237) as Independent Director for second term of five years (37th AGM 2023-24)",
+    "Approval of remuneration of Mr. Dinesh Alla (DIN 01843423), Chairman and Managing Director for remaining period of 2 years effective August 21, 2024 (37th AGM 2023-24)",
+    "Approval for divestment of equity shareholding in subsidiaries/wholly-owned subsidiaries/material subsidiaries (38th AGM 2024-25)",
+    "Re-appointment of Mr. Sashank Alla (DIN: 07508061) as Whole Time Director for remaining period of Two (2) years w.e.f. September 29, 2026",
+    "Re-appointment of Mr. Dinesh Alla (DIN: 01843423) as Chairman and Managing Director for a term of Five (5) years w.e.f. August 21, 2026",
+    "Reappointment of Mr. Dinesh Alla as Chairman and Managing Director for 5 years from August 21, 2026 to August 20, 2031",
+    "Remuneration approval for Mr. Sashank Alla, Whole Time Director, for remaining tenure from September 29, 2026 to September 28, 2028"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Dinesh Alla",
+     "pct": null
+    },
+    {
+     "name": "Savita Alla",
+     "pct": null
+    },
+    {
+     "name": "Sashank Alla",
+     "pct": null
+    },
+    {
+     "name": "Promoter and promoter group",
+     "pct": 45.99
+    },
+    {
+     "name": "Resident individuals",
+     "pct": 42.8
+    },
+    {
+     "name": "Bodies corporate",
+     "pct": 4.4
+    },
+    {
+     "name": "Non-resident Indians",
+     "pct": 2.18
+    },
+    {
+     "name": "Investor Education and Protection Fund",
+     "pct": 1.61
+    },
+    {
+     "name": "HUF",
+     "pct": 2.05
+    },
+    {
+     "name": "Foreign portfolio investors",
+     "pct": 0.94
+    },
+    {
+     "name": "Mutual funds/financial institutions/banks",
+     "pct": 0.03
+    },
+    {
+     "name": "Dinesh Alla",
+     "pct": 15.08
+    },
+    {
+     "name": "Savita Alla",
+     "pct": 6.15
+    },
+    {
+     "name": "Aquila Drilling Private Limited",
+     "pct": 7.23
+    },
+    {
+     "name": "Dinesh Alla (HUF)",
+     "pct": 2.17
+    },
+    {
+     "name": "Sashank Alla",
+     "pct": 3.52
+    },
+    {
+     "name": "Anisha Alla",
+     "pct": 3.02
+    },
+    {
+     "name": "Rajesh Alla",
+     "pct": 1.99
+    },
+    {
+     "name": "Rajesh Alla (HUF)",
+     "pct": 1.36
+    },
+    {
+     "name": "Mrudula Alla",
+     "pct": 1.06
+    },
+    {
+     "name": "Kamala Alla Rajupet",
+     "pct": 3.6
+    },
+    {
+     "name": "Gopinath Reddy Rajupet",
+     "pct": 0.02
+    },
+    {
+     "name": "Athena Infracon (India) Private Limited",
+     "pct": 0.23
+    },
+    {
+     "name": "Alphageo Inc",
+     "pct": 0.56
+    },
+    {
+     "name": "Dinesh Alla HUF",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 45.99
+  },
+  "people": {
+   "employees": 127,
+   "key_management": [
+    {
+     "name": "Dinesh Alla",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Savita Alla",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Sashank Alla",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Raju Mandapalli",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mahendra Pratap",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Vinay Kumar Verma",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Dinesh Alla",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Mrs. Savita Alla",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Mr. Sashank Alla",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Raju Mandapalli",
+     "role": "Director - Non-Executive, Independent"
+    },
+    {
+     "name": "Mr. Mahendra Pratap",
+     "role": "Director - Non-Executive, Independent"
+    },
+    {
+     "name": "Mr. Vinay Kumar Verma",
+     "role": "Director - Non-Executive, Independent"
+    },
+    {
+     "name": "Mrs. Rohini Gade",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Sakshi Mathur",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Dinesh Alla",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Sashank Alla",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Rohini Gade",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Sakshi Mathur",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Savita Alla",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Sashank Alla",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Raju Mandapalli",
+     "role": "Non-Executive Independent Director, Chairman of Nomination and Remuneration Committee"
+    },
+    {
+     "name": "Mahendra Pratap",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Vinay Kumar Verma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Balaji Sundararajan",
+     "role": "Sr. Vice President"
+    },
+    {
+     "name": "Sakshi Mathur",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Savita Alla",
+     "role": "Director"
+    },
+    {
+     "name": "Raju Mandapalli",
+     "role": "Director"
+    },
+    {
+     "name": "Chairman & Managing Director",
+     "role": "Chief Operating Decision Maker"
+    },
+    {
+     "name": "Sashank Alla",
+     "role": "Whole Time Director"
+    }
+   ]
+  },
+  "other_notable": [
+   "36+ years of operations since 1990",
+   "Operated in 20+ Indian states across 26 sedimentary basins",
+   "Mastered 2D, 3D, and 3C survey formats",
+   "CSR initiatives: Project Nanhi Kali (50 girls supported across 12 schools in Visakhapatnam), Zila Parishad High Schools support (renovated classrooms, sanitation, lab equipment, sports material, audio speakers), Advocates for Babies in Crisis Society (medical care, nutritional supplements, neonatal/paediatric intensive care for orphaned infants)",
+   "Values: Accuracy, Integrity, Innovation, Safety, Partnership",
+   "Vision: Emerge as leading seismic services player with global operations",
+   "Mission: Industry's premier provider of cost-effective seismic services and geophysical solutions",
+   "Listed on BSE & NSE",
+   "Year founded: 1987",
+   "Standalone revenue increased to Rs 10,972.04 Lakh in FY26 from Rs 9,096.27 Lakh in previous year",
+   "Net loss widened to Rs 1,429.49 Lakh in FY26 from Rs 763.30 Lakh in previous year",
+   "India's crude oil import bill exceeded USD 120 billion in FY26",
+   "India imports over 85% of its crude oil",
+   "The Company has over three decades of experience and has built technical capabilities across onshore and transition-zone seismic operations.",
+   "The Company has worked extensively with leading upstream operators, including ONGC.",
+   "The Company follows a structured risk management approach focused on identifying, assessing, monitoring, and mitigating key business risks.",
+   "The Company has established a comprehensive risk management and control mechanism covering operational, financial, commercial and strategic risks.",
+   "The Company has adopted a policy for determining \"Material Subsidiary\" in terms of Regulation 16(c) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+   "The Company has not accepted any deposits covered under Chapter V of the Companies Act, 2013.",
+   "The Company has complied with all the applicable Secretarial Standards issued by the Institute of Company Secretaries of India (ICSI).",
+   "Unclaimed dividend for the financial year 2017-18 amounting to Rs 5.00 lakhs has been duly transferred to the Investor Education and Protection Fund of the Central Government.",
+   "Shares in respect of which dividends have not been paid or claimed for seven consecutive years or more are transferred to the Investor Education and Protection Fund (IEPF).",
+   "The Company's internal control systems are designed in line with the scale, nature, and complexity of its operations and focus on the prevention and timely detection of errors and irregularities.",
+   "Internal auditors conduct periodic audits across various locations and functional areas, and their findings are reviewed by the Audit Committee of the Board.",
+   "Cost audit and cost records not applicable to business activities",
+   "No loans or guarantees provided to any person/body corporate other than lien on fixed deposit for subsidiary's overdraft facility",
+   "All related party transactions in ordinary course of business, at arm's length basis, in compliance with Companies Act 2013 and SEBI LODR Regulations",
+   "No frauds reported by Statutory Auditors under Section 143(12)",
+   "No applications/proceedings under Insolvency and Bankruptcy Code 2016",
+   "No one-time settlements for loans from Banks/Financial Institutions",
+   "No complaints of sexual harassment received during year",
+   "Employee Stock Option Scheme 'Alphageo ESOS 2008': 235,067 options available for grant; no enforceable options outstanding as on March 31, 2026",
+   "Conservation of energy: Not applicable; Technology absorption: Nil",
+   "Foreign exchange earnings: Nil (2025-26), Nil (2024-25); Foreign exchange outgo: CIF value of imports Rs 30.52 lakhs (2025-26) vs Rs 3099.08 lakhs (2024-25); Expenditure in foreign currency Rs 74.42 lakhs (2025-26) vs Rs 94.16 lakhs (2024-25)",
+   "No significant/material orders passed by regulators/courts/tribunals impacting going concern status",
+   "Internal financial controls adequate and operating effectively; no deficiencies observed",
+   "Business Responsibility and Sustainability Report (BRSR) not applicable as Company ranked among top 3000 listed entities by market cap as on Dec 31, 2025",
+   "Annual Return for FY ended March 31, 2026 available on Company website",
+   "Compliance with Maternity Benefit Act 1961 confirmed",
+   "Whistle Blower Policy in place; no personnel denied access to Audit Committee Chairman",
+   "Board evaluation conducted via structured questionnaire covering Board functioning, committees, culture, ethics, governance, attendance, contribution",
+   "Independent Directors' separate meeting held to evaluate Non-Independent Directors, Board as whole, and Chairman",
+   "Board Familiarization Programme details in Corporate Governance Report and on website",
+   "Key skills, expertise, core competencies of Board including Independent Directors in Corporate Governance Report",
+   "CSR Policy on website; CSR Committee composition in Corporate Governance Report; supported ongoing projects from FY 2022-23, 2023-24, 2024-25 in education and healthcare; no new projects initiated in FY 2025-26 due to no CSR obligation",
+   "Risk management framework details in Management Discussion and Analysis Report",
+   "Code of Conduct compliance declaration by Chairman and Managing Director in Corporate Governance Report",
+   "Secretarial Standards compliance confirmed",
+   "Listing Agreements with BSE and NSE complied with",
+   "No industry-specific laws applicable as Company falls under service sector",
+   "CSR obligation and spending for FY 2025-26 was Nil.",
+   "Unspent CSR amounts from preceding years: FY 2024-25: Rs 2.52 lakhs, FY 2023-24: Rs 7.00 lakhs, FY 2022-23: Rs 0 lakhs.",
+   "Board met 4 times during FY 2025-26: May 26, 2025; August 12, 2025; November 14, 2025; February 11, 2026.",
+   "Audit Committee met 4 times during FY 2025-26 with same dates as Board meetings.",
+   "Independent Directors meeting held on February 11, 2026.",
+   "Board approved one business item through circular resolution dated April 9, 2025.",
+   "Median remuneration of employees increased by 25.27% in FY 2025-26.",
+   "Average percentage increase in salary of employees other than managerial personnel: 5.12%.",
+   "Nomination and Remuneration Committee met once on February 11, 2026",
+   "Stakeholders' Relationship Committee met four times during FY 2025-26 (May 26, 2025; August 12, 2025; November 14, 2025; February 11, 2026)"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Company remained debt-free, providing financial flexibility for future capital investment."
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 0.0,
+    "note": "No borrowings as at March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 0.0,
+    "note": "No borrowings as at March 31, 2026 and March 31, 2025"
+   }
+  ],
+  "dividend_per_share": 5,
+  "related_party": [
+   {
+    "party": "Alphageo Offshore Services Private Limited (subsidiary)",
+    "nature": "Lien on fixed deposit with bank to secure overdraft facility availed by subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Transactions in ordinary course of business and on arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Loan to subsidiary",
+    "amount_cr": 14.2757
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Lien to banker for overdraft facility given to subsidiary",
+    "amount_cr": 8.0
+   },
+   {
+    "party": "Dinesh Alla",
+    "nature": "Short term employee benefits (Remuneration)",
+    "amount_cr": 1.3409
+   },
+   {
+    "party": "Savita Alla",
+    "nature": "Short term employee benefits (Remuneration)",
+    "amount_cr": 0.792
+   },
+   {
+    "party": "Sashank Alla",
+    "nature": "Short term employee benefits (Remuneration)",
+    "amount_cr": 0.2899
+   },
+   {
+    "party": "Raju Mandapalli",
+    "nature": "Directors fees",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Mahendra Pratap",
+    "nature": "Directors fees",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Vinay Kumar Varma",
+    "nature": "Directors fees",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Trac",
+    "nature": "Rent",
+    "amount_cr": 0.036
+   },
+   {
+    "party": "Dinesh Alla (HUF)",
+    "nature": "Rent",
+    "amount_cr": 0.0558
+   },
+   {
+    "party": "Rajesh Alla (HUF)",
+    "nature": "Rent",
+    "amount_cr": 0.018
+   },
+   {
+    "party": "Aquila Drilling Private Limited",
+    "nature": "Shot hole drilling charges",
+    "amount_cr": 4.1488
+   },
+   {
+    "party": "Aquila Drilling Private Limited",
+    "nature": "Equipment hire charges",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Revenue from Contracts / Support services for seismic data acquisition",
+    "amount_cr": 0.1176
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Lien on fixed deposit with bank against OD facility taken",
+    "amount_cr": 8
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Loan given to subsidiary",
+    "amount_cr": 0
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Loan repaid by subsidiary",
+    "amount_cr": 14.0581
+   },
+   {
+    "party": "Alphageo Offshore Services Private Limited",
+    "nature": "Interest on loan given to subsidiary",
+    "amount_cr": 0.2135
+   },
+   {
+    "party": "Dinesh Alla",
+    "nature": "Short term employee benefits",
+    "amount_cr": 1.3409
+   },
+   {
+    "party": "Savita Alla",
+    "nature": "Short term employee benefits",
+    "amount_cr": 0.792
+   },
+   {
+    "party": "Sashank Alla",
+    "nature": "Short term employee benefits",
+    "amount_cr": 0.2899
+   },
+   {
+    "party": "Anisha Alla",
+    "nature": "Salary",
+    "amount_cr": 0.0602
+   },
+   {
+    "party": "Agil Seismic Services Private Limited",
+    "nature": "Shot hole drilling charges",
+    "amount_cr": 4.1488
+   },
+   {
+    "party": "Agil Seismic Services Private Limited",
+    "nature": "Investment in equity shares",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Athena Infracon (India) Private Limited",
+    "nature": "Rent",
+    "amount_cr": 0.0918
+   },
+   {
+    "party": "Athena Infracon (India) Private Limited",
+    "nature": "Equipment hire charges",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "Athena Infracon (India) Private Limited",
+    "nature": "Shot hole drilling charges",
+    "amount_cr": 4.0085
+   },
+   {
+    "party": "Rajesh Alla",
+    "nature": "Investment in equity shares",
+    "amount_cr": 0.0
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Provisional seizure of fixed deposit amounting to Rs 1601.08 lakhs by Directorate of Enforcement alleging contravention under FEMA 1999; Show Cause Notice received 03.02.2026; adjudication proceedings initiated",
+    "amount_cr": 16.0108
+   },
+   {
+    "nature": "FEMA proceedings - fixed deposits under seizure/frozen",
+    "amount_cr": 16.0108
+   },
+   {
+    "nature": "Tax demand on Managing Director (indemnified by company) and existing demand on company",
+    "amount_cr": 22.4631
+   },
+   {
+    "nature": "Income Tax demand on company for disallowance of excess depreciation on import of machinery (FY 2021-22)",
+    "amount_cr": 6.0153
+   },
+   {
+    "nature": "Income Tax demand on Managing Director in personal capacity relating to same matter, indemnified by company (FY 2024-25)",
+    "amount_cr": 16.4478
+   },
+   {
+    "nature": "Aggregate tax exposure (including above) disclosed as contingent liability",
+    "amount_cr": 22.4631
+   },
+   {
+    "nature": "FEMA proceedings - fixed deposits seized by Directorate of Enforcement",
+    "amount_cr": 16.0108
+   },
+   {
+    "nature": "Claims against the company not acknowledged as debts",
+    "amount_cr": 38.4745
+   },
+   {
+    "nature": "Income Tax demand for disallowance of excess depreciation on import of machinery (AY 2021-22) and Managing Director's personal tax demand indemnified by company",
+    "amount_cr": 22.4631
+   },
+   {
+    "nature": "FEMA contravention matter - Directorate of Enforcement provisionally seized fixed deposits",
+    "amount_cr": 16.0108
+   }
+  ],
+  "litigation": [
+   "Show Cause Notice received from Directorate of Enforcement on 03.02.2026 regarding provisional seizure of fixed deposit amounting to Rs 1601.08 lakhs alleging contravention under FEMA 1999; matter challenged before Hon'ble Appellate Tribunal, FEMA, New Delhi; adjudication proceedings initiated",
+   "Ongoing proceedings under FEMA 1999 with fixed deposits of Rs 1,601.08 lakhs under seizure/frozen since 2022-23; show cause notice received from adjudicating authority",
+   "Tax demand of Rs 1,644.78 lakhs on Managing Director in FY 2024-25 (indemnified by company); aggregate exposure of Rs 2,246.31 lakhs including existing demand of Rs 601.53 lakhs on company",
+   "Ongoing proceedings under the Foreign Exchange Management Act, 1999 (FEMA) with fixed deposits aggregating Rs 1,601.08 lakhs under seizure/frozen since 2022-23",
+   "Show cause notice dated 29 January 2026 from adjudicating authority in relation to FEMA matter",
+   "Income Tax demand of Rs 601.53 lakhs on company for disallowance of excess depreciation on import of machinery (FY 2021-22)",
+   "Income Tax demand of Rs 1,644.78 lakhs on Managing Director in personal capacity relating to same matter (FY 2024-25), indemnified by company",
+   "Income Tax Department demand of Rs 601.53 lakhs for disallowance of excess depreciation on import of machinery (FY 2021-22)",
+   "Managing Director received personal tax demand of Rs 1,644.78 lakhs in relation to same matter, indemnified by company",
+   "Directorate of Enforcement provisionally seized fixed deposits aggregating Rs 1,601.08 lakhs alleging FEMA contravention (FY 2022-23)",
+   "Show cause notice received from adjudicating authority dated 29 January 2026 in FEMA matter"
+  ]
+ }
+}

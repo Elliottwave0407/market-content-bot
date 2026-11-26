@@ -1,0 +1,758 @@
+{
+ "isin": "INE630Y01024",
+ "name": "Medico Remedies Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30829_MEDICO_2025_2026_A_5970283_29082026170015.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 265001,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Medico Remedies Limited is a pharmaceutical company with a manufacturing plant at Palghar, Maharashtra.",
+   "plants": [
+    {
+     "location": "Plot no. 7, 8 & 9, Dewan & Sons, Udyog Nagar, Lokmanya Nagar, Palghar West-401404",
+     "capacity": ""
+    },
+    {
+     "location": "Plot no. 7, 8 & 9, Dewan & Sons, Udyog Nagar, Lokmanya Nagar, Palghar [W]-401404",
+     "capacity": ""
+    },
+    {
+     "location": "Maharashtra (three manufacturing units)",
+     "capacity": ""
+    },
+    {
+     "location": "Palghar (Factory land and building No.7,8 & 9; No. 15 & 16)",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Antihypertensive",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Antidiabetics",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Antibiotics Diuretics",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Antimalarials",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "NSAIDS Tablets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Antiretrovirals",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Anti-Ulcer Drugs",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Antacids Tablets",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "External preparations (creams & ointments)",
+     "share_of_revenue_pct": null,
+     "note": "includes anti-infectives, antifungals, antibiotics, steroidal preparations"
+    },
+    {
+     "name": "B-Lactam products",
+     "share_of_revenue_pct": null,
+     "note": "independent manufacturing facility"
+    },
+    {
+     "name": "Manufactured goods",
+     "share_of_revenue_pct": null,
+     "note": "Sale of manufactured goods: Rs 19,663.56 lacs (FY2026), Rs 14,570.19 lacs (FY2025)"
+    },
+    {
+     "name": "Traded goods",
+     "share_of_revenue_pct": null,
+     "note": "Sale of traded goods: Rs 743.96 lacs (FY2026), Rs 296.06 lacs (FY2025)"
+    }
+   ],
+   "raw_materials": [
+    "Raw materials (opening stock Rs 1,456.19 lacs, purchases Rs 12,595.65 lacs, closing stock Rs 1,617.86 lacs in FY2026)",
+    "Packing material (opening stock included in raw material, purchases Rs 2,424.73 lacs in FY2026)"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Ms. Priyal Rishit Mehta",
+    "nature": "Professional Consultant, Related Party",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Ms. Shweta Harshit Mehta",
+    "nature": "Regulatory Deputy Manager, Related Party holding office or place of profit",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Ms. Priyal Rishit Mehta",
+    "nature": "Professional Consultant, immediate relative of Mr. Rishit Mehta, Mr. Haresh Mehta and Mrs. Rita Mehta",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Ms. Shweta Harshit Mehta",
+    "nature": "Regulatory Deputy Manager, immediate relative of Mr. Harshit Mehta, Mr. Haresh Mehta and Mrs. Rita Mehta",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "None",
+    "nature": "no Related Party transactions were undertaken or without prior approval of the Audit Committee during the Review period",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (unsecured, considered good)",
+    "nature": "Other financial assets - non-current",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loans and advances from related parties (interest-free, payable on demand) - current borrowings",
+    "amount_cr": 1.76
+   },
+   {
+    "party": "Haresh Mehta",
+    "nature": "Office Rent",
+    "amount_cr": 0.1375
+   },
+   {
+    "party": "Haresh Mehta",
+    "nature": "Unsecured Loan - Received",
+    "amount_cr": 0.75
+   },
+   {
+    "party": "Haresh Mehta",
+    "nature": "Reimbursement of Expenses",
+    "amount_cr": 0.0116
+   },
+   {
+    "party": "Harshit Mehta",
+    "nature": "Office Rent",
+    "amount_cr": 0.1375
+   },
+   {
+    "party": "Harshit Mehta",
+    "nature": "Unsecured Loan - Received",
+    "amount_cr": 0.95
+   },
+   {
+    "party": "Harshit Mehta",
+    "nature": "Unsecured Loan - Repaid",
+    "amount_cr": 1.03
+   },
+   {
+    "party": "Harshit Mehta",
+    "nature": "Reimbursement of Expenses",
+    "amount_cr": 0.0925
+   },
+   {
+    "party": "Rishit Mehta",
+    "nature": "Office Rent",
+    "amount_cr": 0.1375
+   },
+   {
+    "party": "Rishit Mehta",
+    "nature": "Unsecured Loan - Received",
+    "amount_cr": 0.25
+   },
+   {
+    "party": "Rishit Mehta",
+    "nature": "Reimbursement of Expenses",
+    "amount_cr": 0.0844
+   },
+   {
+    "party": "Rita Mehta",
+    "nature": "Office Rent",
+    "amount_cr": 0.1375
+   },
+   {
+    "party": "Shweta Mehta",
+    "nature": "Salary",
+    "amount_cr": 0.2616
+   },
+   {
+    "party": "Priyal Mehta",
+    "nature": "Professional Fees",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Kapurlal Tribhovandas Mehta Charitable Trust",
+    "nature": "Donation",
+    "amount_cr": 0.27
+   }
+  ],
+  "auditor": {
+   "name": "Soni Shah and Associates LLP, Chartered Accountants",
+   "opinion": "The observations and comments given by the Auditors in their report read together with notes to Accounts are self-explanatory and hence do not call for any further comments under section 134 of the Companies Act, 2013.",
+   "qualifications_or_emphasis": [
+    "Delayed filing of e-Form MR-1 vide SRN AC2423462 dated 26th February 2026 after payment of additional fees",
+    "Regulation 6(1) of SEBI (LODR) Regulations, 2015 read with Section 203 of the Companies Act 2013 - No Compliance Officer from 9th August 2025 up to 17th February 2026 (6 months, 9 days); SOP Notices received from BSE and NSE, fines paid",
+    "Company has not maintained proper records showing full particulars, including quantitative details and situation of Property, Plant and Equipment (PPE).",
+    "Quarterly returns/statements filed with banks for working capital limits are not in agreement with books of the company, although differences are not material.",
+    "Quantum Software used for maintaining inventory did not have an audit trail feature enabled, consequently no audit trail maintained for transactions recorded within this software for the whole year.",
+    "Previous auditor M/s V J Shah & Co retired by rotation; limited review for Q1 FY2026 undertaken by them",
+    "No material uncertainty regarding going concern for one year from balance sheet date",
+    "CSR spending met requirements under Section 135(5) of Companies Act, 2013"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Hasan Bohra resigned as Company Secretary w.e.f. 8th August 2025",
+    "Ms. Vidhi Shah appointed as Company Secretary w.e.f. 18th February 2026",
+    "Mr. Maheshkumar Darji (DIN: 11220436) appointed as Executive Director for three years from 30th July, 2025 to 29th July, 2028, approved by shareholders at 31st AGM on 8th September 2025.",
+    "Mr. Dayanand Mathapati (DIN: 10741417) resigned as Executive Director with effect from 9th April, 2025.",
+    "Mr. Hasan Bohra resigned as Company Secretary & Compliance Officer with effect from 8th August, 2025.",
+    "Ms. Vidhi Shah appointed as Company Secretary & Compliance Officer with effect from 18th February, 2026.",
+    "Re-appointment of Mr. Rishit Mehta as Whole-Time Director for 3 years from 18th September, 2026 to 18th September, 2029 proposed at 32nd AGM.",
+    "Re-appointment of Mr. Haresh Mehta as Chairman & Whole-Time Director for 3 years from 18th September, 2026 to 18th September, 2029 proposed at 32nd AGM.",
+    "Revision in remuneration of Mr. Harshit Mehta, Managing Director, from 1st October, 2026 for remaining tenure up to 17th September, 2028 proposed at 32nd AGM.",
+    "Mr. Hasan Bohra resigned as Company Secretary & Compliance Officer w.e.f. 8th August 2025",
+    "Ms. Vidhi Shah appointed as Company Secretary & Compliance Officer w.e.f. 18th February 2026",
+    "Mr. Dayanand Mathapati resigned w.e.f. close of business hours of 9th April 2025",
+    "Mr. Maheshkumar Darji was appointed as Executive Director w.e.f. 30th July, 2025",
+    "Mr. Hasan Bohra tendered his resignation as Company Secretary & Compliance Officer of the Company with effect from 8th August, 2025",
+    "Ms. Vidhi Shah was appointed as Company Secretary & Compliance Officer of the Company with effect from 18st February, 2026",
+    "Mr. Maheshkumar Darji appointed as Executive Director w.e.f. 30th July, 2025",
+    "Mr. Dayanand Mathapati ceased to be Director w.e.f. 9th April, 2025",
+    "Mr. Kunal Vora appointed 13/08/2024",
+    "Mr. Anuj Mody appointed 12/11/2024"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Haresh Mehta",
+     "pct": null
+    },
+    {
+     "name": "Mr. Rishit Mehta",
+     "pct": null
+    },
+    {
+     "name": "Mr. Haresh Kapurlal Mehta",
+     "pct": null
+    },
+    {
+     "name": "Mr. Harshit Haresh Mehta",
+     "pct": null
+    },
+    {
+     "name": "Mr. Rishit Haresh Mehta",
+     "pct": null
+    },
+    {
+     "name": "Ms. Rita Haresh Mehta",
+     "pct": null
+    },
+    {
+     "name": "Haresh K Mehta",
+     "pct": 20.22
+    },
+    {
+     "name": "Rishit H Mehta",
+     "pct": 12.65
+    },
+    {
+     "name": "Harshit H Mehta",
+     "pct": 10.39
+    },
+    {
+     "name": "Rita H Mehta",
+     "pct": 8.05
+    },
+    {
+     "name": "Ravi Goyal HUF",
+     "pct": 6.83
+    },
+    {
+     "name": "Shweta H Mehta",
+     "pct": 5.88
+    },
+    {
+     "name": "Priyal Mehta",
+     "pct": 4.19
+    }
+   ],
+   "auditor_change": "M/s. Shah Shroff & Associates appointed as Statutory Auditors from conclusion of 31st AGM till conclusion of 36th AGM. Ms. Shreya Shah appointed as Secretarial Auditor for 5 years from FY 2025-26 to FY 2029-30. M/s. Soni Shah and Associates LLP appointed as Internal Auditor.",
+   "promoter_holding_pct": 68.21
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Haresh Kapurlal Mehta",
+     "role": "Chairman & Whole-Time Director"
+    },
+    {
+     "name": "Mr. Harshit Haresh Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Rishit Haresh Mehta",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mrs. Rita Haresh Mehta",
+     "role": "Woman Non-Executive Director"
+    },
+    {
+     "name": "Mr. Maheshkumar Darji",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Deepak Maganlal Vekaria",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Bharat Nathalal Rathod",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Deepesh Rajesh Shah",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Kunal Tushar Vora",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Anuj Kishore Mody",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Vidhi Shah",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Haresh Kapurlal Mehta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Harshit Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Haresh Mehta",
+     "role": "Chairman & Whole-Time Director, Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Rishit Mehta",
+     "role": "Whole-Time Director (Production (Technical) and Quality Control)"
+    },
+    {
+     "name": "Ms. Vidhi Shah",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Haresh Mehta",
+     "role": "Chairman & Whole-Time Director, CFO"
+    },
+    {
+     "name": "Harshit Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Rishit Mehta",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Rita Mehta",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Deepak Vekaria",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Bharat Rathod",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Deepesh Shah",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Maheshkumar Darji",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Kunal Vora",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Anuj Mody",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Dayanand Mathapati",
+     "role": "Director (resigned w.e.f. 9th April 2025)"
+    },
+    {
+     "name": "Hasan Bohra",
+     "role": "Company Secretary (resigned w.e.f. 8th August 2025)"
+    },
+    {
+     "name": "Vidhi Shah",
+     "role": "Company Secretary (appointed w.e.f. 18th February 2026)"
+    },
+    {
+     "name": "Haresh Kapurlal Mehta",
+     "role": "Chairman & Whole-Time Director, CFO"
+    },
+    {
+     "name": "Harshit Haresh Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Rishit Haresh Mehta",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Rita Haresh Mehta",
+     "role": "Non-Independent, Non-Executive Director"
+    },
+    {
+     "name": "Deepak Maganlal Vekaria",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Bharat Nathalal Rathod",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Deepesh Rajesh Shah",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Kunal Tushar Vora",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Anuj Kishore Mody",
+     "role": "Independent, Non-Executive Director"
+    },
+    {
+     "name": "Vidhi Shah",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Shweta Mehta",
+     "role": "Deputy Manager - Regulatory Affairs"
+    },
+    {
+     "name": "Rajesh C. Chawda",
+     "role": "Chief Accountant"
+    },
+    {
+     "name": "Nilesh Misal",
+     "role": "H.O.D. - Production (General)"
+    },
+    {
+     "name": "Akhilesh Singh",
+     "role": "H.O.D. - Production (B-lactum)"
+    },
+    {
+     "name": "Ms. Rita Haresh Mehta",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Harshit Haresh Mehta",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Rishit Hareshbhai Mehta",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Deepesh Rajesh Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Deepak Maganlal Vekaria",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Bharat Nathalal Rathod",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Kunal Vora",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Anuj Mody",
+     "role": "Director"
+    },
+    {
+     "name": "Haresh Mehta",
+     "role": "Chairman & CFO"
+    },
+    {
+     "name": "Vidhi Ankit Shah",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Haresh Mehta",
+     "role": "Chairman and Whole Time Director - CFO"
+    },
+    {
+     "name": "Rishit Mehta",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Rita H Mehta",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Dayanand Mathapati",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mahesh Kumar Darji",
+     "role": "Additional Executive Director"
+    },
+    {
+     "name": "Bharat Rathod",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Deepak Vekaria",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Ramesh Rughani",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Deepesh Shah",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Kunal Vora",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Anuj Mody",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Haresh Sanghvi",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 105
+  },
+  "other_notable": [
+   "AGM scheduled for 22nd September 2026 at 4:00 PM through VC/OAVM",
+   "Register of Members and Share Transfer Books closed from 16th September 2026 to 22nd September 2026",
+   "Cut-off date for e-voting: 21st August 2026",
+   "Remote e-voting period: 19th September 2026 (9:00 AM) to 21st September 2026 (5:00 PM)",
+   "No unpaid/unclaimed dividend last year, Section 125 provisions not applicable",
+   "Annual Report available on company website https://medicoremedies.com/annual.html, BSE, NSE, and NSDL websites",
+   "Total Income for FY 2025-26: Rs. 21,231 Lakhs (Rs. 212.31 Crore); FY 2024-25: Rs. 15,363 Lakhs.",
+   "Profit After Tax for FY 2025-26: Rs. 1,311 Lakhs (Rs. 13.11 Crore); FY 2024-25: Rs. 1,009 Lakhs.",
+   "Total Turnover for FY 2025-26: Rs. 20,637 Lakhs; FY 2024-25: Rs. 15,094 Lakhs.",
+   "No dividend recommended for FY 2025-26.",
+   "No change in nature of business during FY 2025-26.",
+   "No public deposits accepted during FY 2025-26.",
+   "No material changes affecting financial position between end of FY and date of report.",
+   "Annual Return available at https://medicoremedies.com/annual.html",
+   "Board held six meetings during FY 2025-26.",
+   "CSR provisions applicable as net profit exceeded Rs. 5 crores in FY 2024-25; CSR Policy available at https://medicoremedies.com/csr.html.",
+   "Cost records maintained as per Section 148 of Companies Act, 2013.",
+   "Internal financial controls adequate and operating effectively; internal audits conducted quarterly.",
+   "No loans, guarantees or investments under Section 186 during FY 2025-26.",
+   "All related party transactions in ordinary course and at arm's length; no materially significant transactions; Form AOC-2 not required.",
+   "No change in share capital during FY 2025-26.",
+   "Energy conservation, technology absorption, foreign exchange earnings/outgo details in Annexure-IV.",
+   "Secretarial Auditor observations: Delayed filing of e-Form MR-1; vacancy in Compliance Officer position from 9th August 2025 to 17th February 2026 (6 months, 9 days) leading to SOP notices and fines from BSE and NSE.",
+   "No fraud reported by auditors under Section 143(12) during FY 2025-26.",
+   "Vigil Mechanism/Whistle Blower Policy in place; accessible at https://medicoremedies.com/pdf/Whistle%20Blower%20Policy.pdf",
+   "Insider Trading Code and Fair Disclosure Code adopted; available on company website.",
+   "Nomination and Remuneration Policy available at https://medicoremedies.com/pdf/policy-of-appointment-medico_final.pdf",
+   "32nd AGM to be held via VC/OAVM; e-voting through NSDL; Speaker registration open until 16th September 2026 (5:00 PM IST).",
+   "Scrutinizer: Ms. Shreya Shah, Practicing Company Secretary (Membership No. A39409).",
+   "Results with Scrutinizer's Report to be placed on website https://medicoremedies.com/general.html within two working days of 32nd AGM.",
+   "CSR Policy focuses on education & skill development, eradicating hunger, poverty & malnutrition, health & wellness and environment sustainability including biodiversity, energy & water conservation.",
+   "CSR obligation for FY 2025-26: Rs. 16.26 Lakhs; Amount spent: Rs. 27 Lakhs; Excess spent available for set off: Rs. 10.74 Lakhs.",
+   "CSR projects: Support towards education for backward class people - Development of Babaji Jadhav Smarak School (Thane, Maharashtra) Rs. 17 Lakhs; Support towards education for backward class people - Development of Ashram School (Palghar, Maharashtra) Rs. 10 Lakhs. Implementing agency: Kapurlal Tribhuvan das Charitable Trust (CSR00027321).",
+   "Credit Ratings: Long Term Bank Facilities - Crisil BBB-/Stable; Short Term Bank Facilities - Crisil A3.",
+   "Foreign Exchange Earnings (FOB): Rs. 1,79,00,69,400; Foreign Exchange Outgo: Expenses Rs. 95,76,466, Purchases Rs. 25,89,87,510.",
+   "Energy conservation: 300KW solar system installed; APFC panel for power factor >99.5%; MS lines replaced with PPRC; water quality improved; old air compressor replaced with new technology-based compressor.",
+   "Technology absorption: Zero discharge ETP system installed; solar panels planned for factory roof; no technology imported in last three years.",
+   "R&D: Talented and skillful experienced persons developing new formulations with stability and efficacy; improving existing formulations for cost effectiveness and shelf-life stability.",
+   "Compliance: Complied with all statutory requirements, Secretarial Standards (SS-1 & SS-2), SEBI LODR Regulations. No material non-compliances except delayed e-Form MR-1 filing and Compliance Officer vacancy.",
+   "Sexual Harassment: No complaints received during FY 2025-26; Internal Complaints Committee constituted.",
+   "Maternity Benefit Act, 1961 complied with for female employees.",
+   "No One-Time Settlement with Banks or Financial Institutions.",
+   "No dividend is declared for the financial year ended 31st March 2026",
+   "The Company has not issued or allotted any convertible instruments during FY 2025-26",
+   "The Company does not have any outstanding GDRs / ADRs / Warrants or any convertible instruments",
+   "No strictures or penalties have been imposed on the Company by the Stock Exchanges or by the Securities and Exchange Board of India or by any statutory authority on any matters related to capital markets during the last three years",
+   "Received SoP Notice from NSE and BSE for alleged non-compliance with Regulation 6(1) of LODR Regulations, 2015 - Compliance officer appointed for the period from 8th August 2025 up to 17th February 2026. Fine amounting to Rs. 63,720/- (inclusive of GST) paid to both exchanges on 24th February 2026. Waiver application rejected by NSE and BSE",
+   "No complaints of sexual harassment of women at workplace were filed during the financial year 2025-26",
+   "Total fees (excluding taxes and OPE) for all services paid by the Company, to M/s. Shah Shroff & Associates, Statutory Auditors, is Rs.5,00,000 /- (Rupees Five Lakhs Only)",
+   "The Company has been assigned following ratings for its outstanding term loan facilities: Long Term Bank Facilities - Crisil BBB-/Stable, Short Term Bank Facilities - Crisil A3",
+   "As on 31st March, 2026, 99.99% (8,29,81,200 Equity Shares) of the Company's equity shares were held in dematerialized form",
+   "The equity shares held by the promoter & promoter group in the Company have been fully dematerialized",
+   "The Company follows the period of 1st April, 2025 to 31st March, 2026 as the Financial Year",
+   "The 31st AGM of the Company was held on 8th September, 2025 through Video Conferencing (VC)/Other Audio Visual Means (OAVM)",
+   "Six Board Meetings were held during FY 2025-26 on: 8th May, 2025, 30th July, 2025, 8th August, 2025, 14th November, 2025, 12th February, 2026, 18th February, 2026",
+   "The average percentile increase in managerial remuneration stands at 107.39% primarily due to a structural salary normalization and expansion of responsibilities for Mr. Maheshkumar Darji during the FY 26",
+   "Remuneration paid during the year ended 31st March, 2026 is as per Remuneration policy of the Company",
+   "Company has installed ERP solutions program and implementation started to increase stringent controls on inventory & proper checks on system.",
+   "Global spending on medicines projected to grow at CAGR of 3-6% in next three years, reaching over US$ 3.8 Trillion by 2028.",
+   "India's pharma exports grew to $31.8 billion USD during year 2025-26."
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "As on 31st March, 2026, the Company does not have any Subsidiary, Joint venture or Associate Companies."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Listed Entity does not have any subsidiary during the Review period"
+   }
+  ],
+  "dividend_per_share": 0,
+  "capex_plans": [
+   {
+    "item": "install boiler and generator of high capacity",
+    "amount_cr": null,
+    "timeline": "planning"
+   },
+   {
+    "item": "increase capacities in existing plant as well as take over some existing units to cater the need of additional manufacturing capabilities",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "expand its manufactured product range",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "Purchase of fixed assets including CWIP and capital advances",
+    "amount_cr": 4.49,
+    "timeline": "FY2026"
+   }
+  ],
+  "litigation": [
+   "There were no significant and material orders passed by the regulators or courts or Tribunals impacting the going concern status and Company's operation in future.",
+   "The Company has not made any application nor any proceeding is pending against the company under IBC, 2016.",
+   "During the year under review, no application was made, nor was any proceedings initiated against the Company under the Insolvency and Bankruptcy Code, 2016. Further, no such proceeding was pending at the end of the financial year.",
+   "No Actions taken against the listed entity/ its promoters/ directors/ subsidiaries either by SEBI or by Stock Exchanges (including under the Standard Operating Procedures issued by SEBI through various circulars) under SEBI Regulations and circulars/ guidelines issued thereunder during the Review period except mentioned in para (a)",
+   "The Company does not have any pending litigations which would impact its financial position.",
+   "Income Tax; A total demand of Rs. 7.34 Lakhs (Income Tax along with accrued interest) for A.Y. 2010-11 is erroneously showing as outstanding to be payable on the Income Tax Portal. The company has already settled this demand by opting the Vivad-se-Vishwas Scheme and no demand is outstanding to be paid by the Company.",
+   "There is Outstanding demand alongwith interest on Income Tax website reflecting Rs.0.13 Lakhs pertaining to AY 2017-18 and AY 2023-24 and AY 2025-26."
+  ],
+  "risks": [
+   "Commodity price risk or foreign exchange risk - The Company hedges its foreign currency exposure in respect of its imports, borrowings and export receivables as per its laid policies and seek to minimize the effects of these risks by continuous monitoring and using derivative financial instruments to hedge risk exposures, wherever permissible and cost effective.",
+   "Unforeseen circumstances like natural calamities- floods, earthquakes, closure due to violence, war etc.",
+   "Keeping Up with Technology",
+   "Easy availability of Counterfeit Drugs",
+   "Challenging US generics pricing environment, driven by customer consolidation and higher competitive intensity, on account of faster pace of generic drug approvals by the USFDA.",
+   "Significant volatility in the forex market, especially for emerging market currencies, may adversely impact reported growth of these markets, even though they may be recording growth in local currency terms.",
+   "Interest rate fluctuations and high rates on inflation",
+   "Intellectual Property (IP) infringement and leakage",
+   "Delay in the government spending on infrastructure",
+   "Talent risk due to huge demand for talent globally and attrition",
+   "Interest rate risk on borrowings (Cash Credit 8.30% p.a., Packing Credit 8.20% p.a., Term Loan 8.40% p.a.)",
+   "Foreign exchange risk (Foreign exchange gain Rs 579.04 lacs in FY2026)",
+   "Credit risk on trade receivables (allowance for expected credit losses Rs 59.54 lacs as at March 31, 2026)",
+   "MSME payment delays (interest accrued and unpaid Rs 10.33 lacs as at March 31, 2026)",
+   "The Company is engaged in the business of commodity trading of Plates and Coils which involves a high level of dependence on the Infrastructure and other developments. Thus, demand in these sectors will have a direct impact on the business of the Company. A decline in the demand for Plates and Coils will adversely affect the business of the company."
+  ],
+  "outlook": [
+   {
+    "statement": "With rising export share, CARE Ratings has projected India's pharma industry to grow at about 11% in next two years to reach a size of over $60 billon. India's pharmaceuticals market (IPM) is expected to grow between 6 and 8 per cent on a year-on-year (YoY) basis in FY26. India Ratings and Research (Ind-Ra) has maintained a neutral outlook for the Indian pharmaceutical sector for FY26.",
+    "period": "FY26"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "TDS demand as per Traces website",
+    "amount_cr": 0.0321
+   },
+   {
+    "nature": "Income Tax demand for A.Y. 2010-11 (settled under Vivad-se-Vishwas Scheme)",
+    "amount_cr": 0.0734
+   },
+   {
+    "nature": "Outstanding demand along with interest on Income Tax website for AY 2017-18, AY 2023-24 and AY 2025-26",
+    "amount_cr": 0.0013
+   },
+   {
+    "nature": "Contingent liabilities (details not provided in the excerpt; Note 29(a) referenced)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income-tax and Tax deducted at source (disputed)",
+    "amount_cr": 0.1055
+   },
+   {
+    "nature": "Export obligation under advance license",
+    "amount_cr": 3.2546
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Cash Credit / Overdraft facility (secured)",
+    "amount_cr": 0.0,
+    "note": "Rate of interest 8.30% p.a., repayable on demand; balance nil as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Packing credit facility from bank (secured)",
+    "amount_cr": 16.79,
+    "note": "Rate of interest 8.20% p.a., repayable on demand; balance Rs 1,678.90 lacs as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Term loan (secured)",
+    "amount_cr": 0.36,
+    "note": "Rate of interest 8.40% p.a.; non-current portion Rs 28.63 lacs, current maturity Rs 7.31 lacs as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Loans and advances from related parties (unsecured, interest-free, payable on demand)",
+    "amount_cr": 1.76,
+    "note": "Balance Rs 176.00 lacs as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Sales Tax Deferment (unsecured)",
+    "amount_cr": 0.0,
+    "note": "Balance nil as at March 31, 2026 (Rs 24.71 lacs in FY2025)"
+   },
+   {
+    "lender_or_type": "Kotak Mahindra Bank",
+    "amount_cr": null,
+    "note": "Working capital facilities; quarterly returns filed for inventory, debtors, creditors with differences noted due to provisional basis and exclusion of certain current assets/liabilities"
+   }
+  ]
+ }
+}

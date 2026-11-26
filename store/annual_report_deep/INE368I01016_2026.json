@@ -1,0 +1,872 @@
+{
+ "isin": "INE368I01016",
+ "name": "Niraj Cement Structurals Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31414_NIRAJ_2025_2026_A_5283530_04092026182654.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 416088,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Niraj Cement Structurals Limited is a company engaged in cement structurals business.",
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "infrastructure",
+    "highways",
+    "expressways",
+    "roads",
+    "bridges",
+    "tunnels",
+    "construction",
+    "water supply",
+    "irrigation",
+    "civil construction"
+   ],
+   "products": [
+    {
+     "name": "Highways construction",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Bridges construction",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Water supply and drainage",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Irrigation projects",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Storm water drainage",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Contract Receipt",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from construction contracts"
+    },
+    {
+     "name": "Contract Receipt Joint Ventures",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from joint venture projects booked in company's books"
+    },
+    {
+     "name": "Other Operative revenues",
+     "share_of_revenue_pct": null,
+     "note": "Other operating revenue"
+    },
+    {
+     "name": "Contract Receipts",
+     "share_of_revenue_pct": 25.8,
+     "note": "Revenue from construction contracts"
+    },
+    {
+     "name": "Contract Receipts Joint Ventures",
+     "share_of_revenue_pct": 71.1,
+     "note": "Revenue from joint venture construction projects"
+    },
+    {
+     "name": "Consulting Income",
+     "share_of_revenue_pct": 0.3,
+     "note": "Consulting services revenue"
+    },
+    {
+     "name": "Charges for Co-working space with amenities",
+     "share_of_revenue_pct": 0.0,
+     "note": "Co-working space rental income"
+    }
+   ],
+   "customers": [
+    "Ministry of Road Transport & Highways",
+    "National Highways Authority of India (NHAI)",
+    "Public Works Dept of various State Governments",
+    "Central Government"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "raw_materials": [
+    "steel",
+    "cement",
+    "bitumen",
+    "fuel"
+   ],
+   "plants": [
+    {
+     "location": "C-55, TTC Industrial Area, Thane Belapur Road, Navi Mumbai \u2013 400705",
+     "capacity": "Given on rent to third parties, not operated by the Company"
+    }
+   ]
+  },
+  "related_party": [
+   {
+    "party": "M/s. NCSL-RYC JV",
+    "nature": "Material Related Party Transaction for Sale & Purchase of goods or service and/or on commission basis, receiving & rendering of services and other transactions of business",
+    "amount_cr": 100
+   },
+   {
+    "party": "M/s. Yojaka-Niraj JV",
+    "nature": "Material Related Party Transaction for Sale & Purchase of goods or service and/or on commission basis, receiving & rendering of services and other transactions of business",
+    "amount_cr": 300
+   },
+   {
+    "party": "NCSL-RYC JV",
+    "nature": "Joint Venture - Sale & Purchase of goods or service and/or on commission basis, receiving & rendering of services and other transactions of business",
+    "amount_cr": 100
+   },
+   {
+    "party": "Yojaka-Niraj JV",
+    "nature": "Joint Venture - Sale & Purchase of goods or service and/or on commission basis, receiving & rendering of services and other transactions of business",
+    "amount_cr": 300
+   },
+   {
+    "party": "Niraj-Babulnath JV",
+    "nature": "Joint Venture - Contract Receipt and Sub-Contract Charges",
+    "amount_cr": 121.2646
+   },
+   {
+    "party": "Niraj-Satish JV",
+    "nature": "Joint Venture - Contract Receipt and Sub-Contract Charges",
+    "amount_cr": 173.9806
+   },
+   {
+    "party": "NCSL-BNILLP JV",
+    "nature": "Joint Venture - Contract Receipt and Sub-Contract Charges",
+    "amount_cr": 267.57
+   },
+   {
+    "party": "Related parties under Section 2(76) of the Act",
+    "nature": "All RPTs entered were in the ordinary course of business and at arm's length basis, approved by Audit Committee including Independent Directors. Material RPTs approved by shareholders.",
+    "amount_cr": null
+   },
+   {
+    "party": "Not specified",
+    "nature": "Related Party Transaction",
+    "amount_cr": 0.04
+   },
+   {
+    "party": "Niraj Consulting Group Ltd",
+    "nature": "Subsidiary - Project Finance",
+    "amount_cr": 51.11
+   },
+   {
+    "party": "Niraj Build India Ltd",
+    "nature": "Subsidiary - Project Finance",
+    "amount_cr": 0
+   },
+   {
+    "party": "Subsidiary Companies",
+    "nature": "Loan from Subsidiary",
+    "amount_cr": 0.58
+   },
+   {
+    "party": "Niraj - SPPL JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 7.1137
+   },
+   {
+    "party": "Niraj- Mahavir JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 0.754
+   },
+   {
+    "party": "Niraj-Satish JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 87.9649
+   },
+   {
+    "party": "Niraj - BNILLP JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 133.8142
+   },
+   {
+    "party": "Niraj-Patel JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 26.1953
+   },
+   {
+    "party": "Niraj- Babulnath JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 62.0991
+   },
+   {
+    "party": "Niraj - Shivsai JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 0.9326
+   },
+   {
+    "party": "Niraj - Azamul Houque JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 10.5503
+   },
+   {
+    "party": "Niraj - Jandu JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 11.9495
+   },
+   {
+    "party": "Niraj- S and K JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 21.1366
+   },
+   {
+    "party": "Niraj Force JV",
+    "nature": "Contract Receipts",
+    "amount_cr": 37.545
+   },
+   {
+    "party": "Mr. Vishram Rudre (Managing Director)",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 0.0395
+   },
+   {
+    "party": "Mr. Sudhakar Tandale (Wholetime Director)",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 0.0367
+   },
+   {
+    "party": "Niraj - SPPL JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 6.9497
+   },
+   {
+    "party": "Niraj- Mahavir JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 0.5615
+   },
+   {
+    "party": "Niraj-Patel JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 25.6975
+   },
+   {
+    "party": "Niraj- Babulnath JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 59.0661
+   },
+   {
+    "party": "Niraj- BNILLP JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 130.1368
+   },
+   {
+    "party": "Niraj - Shivsai JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 0.9326
+   },
+   {
+    "party": "Niraj - Azamul Houque JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 10.5503
+   },
+   {
+    "party": "Niraj-Satish JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 83.8861
+   },
+   {
+    "party": "Niraj - Jandu JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 11.674
+   },
+   {
+    "party": "Niraj- S and K JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 19.7613
+   },
+   {
+    "party": "Niraj Force JV",
+    "nature": "Sub Contracting Charges",
+    "amount_cr": 36.1356
+   },
+   {
+    "party": "Mr. Vinaykumar Ghuwalewala (Chief Financial Officer)",
+    "nature": "Key Management Personnel - Salaries and Allowances",
+    "amount_cr": 0.141
+   },
+   {
+    "party": "Mr. Anil Anant Jha (Company Secretary)",
+    "nature": "Key Management Personnel - Salaries and Allowances",
+    "amount_cr": 0.072
+   },
+   {
+    "party": "Mr. Gulshan V. Chopra",
+    "nature": "Rent Expenses",
+    "amount_cr": 1.0316
+   },
+   {
+    "party": "Mrs. Pooja Gulshan Chopra",
+    "nature": "Rent Expenses",
+    "amount_cr": 0.2976
+   },
+   {
+    "party": "CAA & Co",
+    "nature": "Facility Management Services",
+    "amount_cr": 3.0
+   },
+   {
+    "party": "CAA & Co",
+    "nature": "Advance",
+    "amount_cr": 0.275
+   },
+   {
+    "party": "Niraj Consulting Group Limited",
+    "nature": "Loan Given - Subsidiary Company",
+    "amount_cr": 27.554
+   },
+   {
+    "party": "Niraj Build India Limited",
+    "nature": "Loan Given - Subsidiary Company",
+    "amount_cr": 23.5542
+   },
+   {
+    "party": "Niraj Consulting Group Limited",
+    "nature": "Interest income - Subsidiary Company",
+    "amount_cr": 1.8459
+   },
+   {
+    "party": "Niraj Build India Limited",
+    "nature": "Interest income - Subsidiary Company",
+    "amount_cr": 1.54
+   },
+   {
+    "party": "Niraj - SPPL JV",
+    "nature": "Joint Venture",
+    "amount_cr": 7.11
+   },
+   {
+    "party": "Niraj- Mahavir JV",
+    "nature": "Joint Venture",
+    "amount_cr": 0.75
+   },
+   {
+    "party": "Niraj-Satish JV",
+    "nature": "Joint Venture",
+    "amount_cr": 87.96
+   },
+   {
+    "party": "Niraj -BNILLPJV",
+    "nature": "Joint Venture",
+    "amount_cr": 133.81
+   },
+   {
+    "party": "Niraj-Patel JV",
+    "nature": "Joint Venture",
+    "amount_cr": 26.2
+   },
+   {
+    "party": "Niraj- Babulnath JV",
+    "nature": "Joint Venture",
+    "amount_cr": 62.1
+   },
+   {
+    "party": "Niraj - Shivsai JV",
+    "nature": "Joint Venture",
+    "amount_cr": 0.93
+   },
+   {
+    "party": "Niraj - Azamal Houque JV",
+    "nature": "Joint Venture",
+    "amount_cr": 10.55
+   },
+   {
+    "party": "Niraj - Jandu JV",
+    "nature": "Joint Venture",
+    "amount_cr": 11.95
+   },
+   {
+    "party": "Niraj- S and K JV",
+    "nature": "Joint Venture",
+    "amount_cr": 21.14
+   },
+   {
+    "party": "Niraj Force JV",
+    "nature": "Joint Venture",
+    "amount_cr": 37.55
+   },
+   {
+    "party": "Mr. Vishram Rudre",
+    "nature": "Managing Director - Remuneration",
+    "amount_cr": 0.4
+   },
+   {
+    "party": "Mr. Sudhakar Tandale",
+    "nature": "Wholetime Director - Remuneration",
+    "amount_cr": 0.37
+   },
+   {
+    "party": "Vinaykumar Ghuwalewala",
+    "nature": "CFO - Salary",
+    "amount_cr": 1.41
+   },
+   {
+    "party": "Mr. Anil Anant Jha",
+    "nature": "Company Secretary - Salary",
+    "amount_cr": 0.72
+   },
+   {
+    "party": "Mr. Gulshan V Chopra",
+    "nature": "Rent Expenses",
+    "amount_cr": 1.03
+   },
+   {
+    "party": "Mrs. Pooja Gulshan Chopra",
+    "nature": "Rent Expenses",
+    "amount_cr": 0.3
+   }
+  ],
+  "auditor": {
+   "name": "Chaturvedi Sohan & Co.",
+   "opinion": "unmodified opinion",
+   "key_audit_matters": [
+    "Adoption of Ind AS 115 \u2013 Revenue from Contracts with Customers"
+   ],
+   "qualifications_or_emphasis": [
+    "Joint venture accounting - turnover and costs booked in company books per JV agreements",
+    "GST search and seizure proceedings by DGGI, matter sub-judice, \u20b9108.40 lakhs deposited under protest",
+    "Balances subject to reconciliation and confirmation - trade payables, receivables, advances, GST, Income Tax",
+    "Provision for Expected Credit Loss of \u20b92,769.36 lakh against litigation/arbitration parties, \u20b9162.93 lakhs recovered",
+    "Income Tax Assets (Net) of \u20b92,068.82 lakhs pending appeal orders giving effect",
+    "Audit trail (edit log) feature not activated throughout the year for all relevant transactions",
+    "Need to strengthen internal audit system keeping in mind the size and nature of its business",
+    "Note No. 44: Company has booked turnover and costs related to joint venture entities in the books of account; projects executed by JV partners under supervision and control of the company.",
+    "Note No. 32: DGGI search and seizure operations at Mumbai office on 6th January 2021; matter sub-judice in Gujarat High Court; \u20b9108.40 Lakhs deposited under protest, no provision made.",
+    "Note No. 40: Balances of trade payables, trade receivables, advances received, advances given, GST liabilities/input credits, and Income Tax assets (Net of liabilities) are subject to reconciliation and confirmation.",
+    "Note No. 33: Provision for Expected Credit Loss (ECL) of \u20b92,769.36 lakh in previous year against litigation/arbitration; \u20b9162.93 Lacs recovered during the year and reduced from provision.",
+    "Note No. 35: Income Tax Assets (Net) of \u20b92,068.82 Lakhs shown under Other Non-Current Assets; appeal orders received in favour for most years, effect pending; management confident of rectification before end of FY 2026-27.",
+    "Company has used accounting software with audit trail feature but not activated throughout the year for all relevant transactions.",
+    "Accounting software audit trail (edit log) facility was not enabled for a portion of the year; enabled from 1st October 2023. No tampering observed where enabled."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Sudhakar Balu Tandale (DIN: 09083084) retires by rotation and offers himself for re-appointment",
+    "Mr. Sudhakar Balu Tandale (DIN: 09083084) liable to retire by rotation at ensuing AGM, eligible for reappointment",
+    "The changes in the composition of the Board of Directors that took place during the period under review were carried out in compliance with the provisions of the Act."
+   ],
+   "promoter_holding_pct": 24.89,
+   "top_shareholders": [
+    {
+     "name": "Promoters including Promoter Group",
+     "pct": 24.89
+    },
+    {
+     "name": "Body Corporate",
+     "pct": 44.81
+    },
+    {
+     "name": "Indian Public (Individuals)",
+     "pct": 27.13
+    },
+    {
+     "name": "Bylan-Niraj Infra Project Private Limited",
+     "pct": 21.44
+    },
+    {
+     "name": "Chem Logistics & Infra Pvt Ltd",
+     "pct": 19.6
+    },
+    {
+     "name": "Gulshan Vijaykumar Chopra",
+     "pct": 8.75
+    },
+    {
+     "name": "Dileep Kumar Singh",
+     "pct": 7.09
+    },
+    {
+     "name": "Bylan-Niraj Infra Project Private Limited",
+     "pct": 21.23
+    }
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Vishram Pandurang Rudre",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Sudhakar Balu Tandale",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mrs. Dimple Deepak Geruja",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ratan Umesh Sanil",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Partha Sarathi Raut",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Kavita Suresh Hindia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Vinaykumar Ghuwalewala",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Anil Anant Jha",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Anil Anant Jha",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Vishram Pandurang Rudre",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sudhakar Balu Tandale",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Vinaykumar Rajkumar Ghuwalewala",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Kavita Suresh Hindia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Anil Anant Jha",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Vinay Vinaykumar Rajkumar Ghuwalewala",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Vinaykumar Ghuwalewala",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Vishram P Rudre",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sudhakar B Tandale",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Gulshan Chopra",
+     "role": "Promoter/Director"
+    },
+    {
+     "name": "Pooja G. Chopra",
+     "role": "Promoter"
+    },
+    {
+     "name": "Aishwarya G. Chopra",
+     "role": "Promoter"
+    },
+    {
+     "name": "Siddhant G. Chopra",
+     "role": "Promoter"
+    },
+    {
+     "name": "Mr. Vishram Rudre",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Sudhakar Tandale",
+     "role": "Wholetime Director"
+    },
+    {
+     "name": "Mr. Anil Anant Jha",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 22
+  },
+  "other_notable": [
+   "28th Annual General Meeting scheduled for Monday, 28th September, 2026 at 11.00 a.m. through Video Conferencing (VC)/Other Audio Visual Means (OAVM)",
+   "Cost Auditor M/s. P.K. Verma & Co. appointed for FY 2026-27 with remuneration of \u20b9 1,00,000 plus taxes and reimbursement of out-of-pocket expenses",
+   "Board authorized to make investments, give loans, guarantees and security up to \u20b9 750 Crores over and above statutory limits under Section 186 of Companies Act, 2013",
+   "Register of Members closed from 20th September, 2026 to 28th September, 2026 (both days inclusive)",
+   "Remote e-voting period: 25th September, 2026 (9:00 A.M.) to 27th September, 2026 (5:00 P.M.)",
+   "Cut-off date for e-voting: 21st September, 2026",
+   "Scrutinizer: Mr. Abhaykumar J. Pal, Practicing Company Secretary (Membership No. FCS 13415 & CP No. 23812)",
+   "Registrar & Transfer Agents: MUFG Intime India Private Limited (Formerly Link Intime India Private Limited)",
+   "Bankers: ICICI Bank Limited, Bank of Maharashtra, IDBI Bank, HDFC Bank",
+   "Statutory Auditors: Chaturvedi Sohan & Co., Chartered Accountants (Firm Registration No.: 118424W)",
+   "Cost Auditor: Mr. Pawan Kumar Verma, Cost Accountants",
+   "Internal Auditor: Mr. Sanjay K Lodha, Chartered Accountants",
+   "Secretarial Auditor: Mr. Abhaykumar J. Pal, Practicing Company Secretary (FRN: S2020MH767400)",
+   "Registered Office: Unit No 820 to 825, The Epicentre, Dukes Horizon, ST Road, Chembur, Mumbai- 400088",
+   "CIN: L26940MH1998PLC114307",
+   "Scrip Code: 532986, Scrip Symbol: NIRAJ",
+   "Cost Auditor M/s. P.K. Verma & Co. (Registration No. 000511) appointed for FY 2026-27 at remuneration of \u20b9 1,00,000 plus applicable taxes and out of pocket expenses",
+   "Section 186 investment limit proposed to be increased from \u20b9 500 Crore to \u20b9 750 Crores",
+   "Preferential issue proceeds: \u20b9 90.82 crore utilised in FY 2024-25, balance \u20b9 12.74 crore utilised in Q1 FY 2025-26",
+   "Transfer to general reserve: \u20b9 2161.99 Lakhs for FY 2025-26",
+   "Authorized Share Capital: \u20b9 7,000 Lakhs (unchanged)",
+   "No dividend recommended for FY 2025-26",
+   "Secretarial Auditor: M/s. Abhay Kumar Pal & Co. appointed for 5 years (FY 2025-26 to FY 2029-30)",
+   "Internal Auditor: M/s. Sanjay K. Lodha & Associates re-appointed for FY 2026-27",
+   "No fraud reported by auditors under Section 143(12)",
+   "No significant/material orders by regulators/courts impacting going concern",
+   "CSR policy and initiatives detailed in Annexure 4",
+   "Whistle Blower Policy and Sexual Harassment Policy in place",
+   "Code of Conduct for Board and Senior Management posted on website",
+   "CSR obligation for FY 2025-26: \u20b9 26.81 Lakhs; Amount spent: \u20b9 27.55 Lakhs; Excess spent: \u20b9 0.74 Lakhs available for set off in succeeding financial years.",
+   "Foreign Exchange Earnings: NIL; Outgo: NIL for FY 2025-26.",
+   "Energy conservation: Steps taken for utilizing alternate sources of energy: NIL; Capital investment on energy conservation equipment: NIL.",
+   "Annual Return available at: https://niraj.co.in/annual-return/",
+   "CSR Policy available at: https://niraj.co.in/wp-content/uploads/2024/08/CSR_Policy-NCSL.pdf",
+   "The Company does not have any manufacturing facility.",
+   "Secretarial Audit conducted by Abhay Kumar Pal & Co. for FY ended 31st March 2026.",
+   "Board composition as on 31st March 2026: 6 Directors (2 Executive, 4 Non-Executive Independent including 2 Women Independent Directors)",
+   "Board met 4 times during FY 2025-26 with 100% attendance",
+   "Audit Committee met 4 times, Nomination & Remuneration Committee met 1 time, Stakeholders' Relationship Committee met 1 time, Independent Directors met 1 time",
+   "No investor complaints received during FY 2025-26",
+   "100% shareholding in dematerialized form as on 31st March 2026",
+   "No credit ratings obtained during FY 2025-26",
+   "No commodity price risk or foreign exchange risk exposure",
+   "No GDRs/ADRs/convertible instruments outstanding",
+   "Registered Office: Unit No. 820 to 825, Commercial Building, Wadhwa, Dukes Horizon, Off. Sion Trombay Road, Nr. R K Studio, D G Patil Road, Mumbai - 400088",
+   "Listed on BSE (532986) and NSE (NIRAJ), ISIN: INE368I01016",
+   "Registrar & Transfer Agent: MUFG Intime India Private Limited (Formerly Link Intime India Private Limited)",
+   "Preferential Issue in FY 2024-25 raised \u20b9103.56 crore (83,19,040 equity shares + 1,12,20,000 warrants at \u20b953/share), fully utilized by Q1 FY 2025-26",
+   "SEBI penalty of \u20b94 lakhs in FY 2023-24 for non-compliance relating to prior approval for Related Party Transaction",
+   "No penalty/structure in FY 2025-26 from stock exchanges/SEBI",
+   "Whistle Blower Policy and vigil mechanism established",
+   "No commodity hedging activities undertaken",
+   "No material subsidiary as on 31st March 2026",
+   "Sexual Harassment complaints: Nil filed, Nil pending during FY 2025-26",
+   "Total auditor fees: \u20b911.60 lakhs (\u20b911.00 lakhs company + \u20b90.60 lakhs subsidiaries)",
+   "Board accepted all committee recommendations in FY 2025-26",
+   "Certificate of Non-Disqualification of Directors obtained from Practicing Company Secretary",
+   "No agreements under Clause 5A of Schedule III SEBI Listing Regulations in FY 2025-26",
+   "No shares in Demat Suspense Account or Unclaimed Suspense Account as on 31st March 2026",
+   "Internal Auditor directly reports to Audit Committee"
+  ],
+  "outlook": [
+   {
+    "statement": "Company is deploying its resources in the best possible way to increase business volumes and plans to achieve increased turnover in the years to come.",
+    "period": "future years"
+   },
+   {
+    "statement": "The outlook for the infrastructure and construction sector stays positive, backed by sustained policy attention and growing public investment in core infrastructure. The Government has continued to drive infrastructure-led growth through sustained emphasis on highways, railways, urban infrastructure, logistics corridors and energy-transition projects. Initiatives such as the PM Gati Shakti programme, the development of industrial corridors, the expansion of metro networks and investment in logistics and warehousing are expected to boost construction activity and open up project-execution opportunities across the sector.",
+    "period": "FY 2026-27 and years ahead"
+   },
+   {
+    "statement": "Global output is projected to remain around 3.1% in FY 2026, with emerging markets continuing to contribute a significant share of overall growth. Strong economic momentum in Asia, particularly in India and China, alongside steady expansion in the United States, is likely to sustain global trade flows and industrial activity.",
+    "period": "FY 2026"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Niraj Consulting Group Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Niraj Build India Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Niraj Consulting Group Limited",
+    "holding_pct": 74.5,
+    "business": "Consulting"
+   },
+   {
+    "name": "Niraj Build India Limited",
+    "holding_pct": 74.5,
+    "business": "Construction/Infrastructure"
+   },
+   {
+    "name": "Not specified",
+    "holding_pct": null,
+    "business": "Investment in subsidiaries mentioned as use of preferential issue proceeds"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Niraj Consulting Group Ltd",
+    "holding_pct": 74.5,
+    "business": ""
+   },
+   {
+    "name": "Niraj Build India Ltd",
+    "holding_pct": 74.5,
+    "business": ""
+   },
+   {
+    "name": "Niraj Consulting Group Limited",
+    "holding_pct": 74.5,
+    "business": "Consulting services"
+   },
+   {
+    "name": "Niraj Consulting Group Limited",
+    "holding_pct": 74.5,
+    "business": ""
+   },
+   {
+    "name": "Niraj Build India Limited",
+    "holding_pct": 74.5,
+    "business": ""
+   }
+  ],
+  "risks": [
+   "Land Acquisition & Approval Delays",
+   "Volatility in Raw Material Prices",
+   "Execution and Project Management Risks",
+   "Financing and Payment Delays",
+   "Competitive Intensity",
+   "economic conditions affecting demand and supply",
+   "price conditions in the domestic and overseas markets",
+   "changes in Government regulations and tax structure",
+   "economic developments within India and in countries with business contacts",
+   "litigation",
+   "industrial relations",
+   "GST search and seizure proceedings by DGGI in January 2021, matter sub-judice in Gujarat High Court, \u20b9108.40 lakhs deposited under protest",
+   "Balances of trade payables, trade receivables, advances received, advances given, GST liabilities/input credits, and Income Tax assets subject to reconciliation and confirmation",
+   "Provision for Expected Credit Loss of \u20b92,769.36 lakh against parties with litigation/arbitration in progress, partially recovered \u20b9162.93 lakhs during year",
+   "Income Tax Assets (Net) of \u20b92,068.82 lakhs pending appeal orders giving effect from income tax department",
+   "Accounting software audit trail (edit log) feature not activated throughout the year for all relevant transactions",
+   "Trade receivables outstanding for over six months are slow moving and subject to outcome of arbitration and/or reconciliation proceedings arising out of various contractual obligations",
+   "Credit Risk: risk that a counterparty will not meet its obligations under a financial instrument or customer contract, leading to a financial loss. The Company is exposed to credit risk from its operating activities (primarily trade receivables) and from its financing activities.",
+   "Liquidity Risk: risk that the Company may not be able to meet its present and future cash and collateral obligations without incurring unacceptable losses.",
+   "Market Risk: risk that the fair value of future cash flows of a financial instrument will fluctuate because of changes in market conditions, comprising Interest Rate Risk and Equity Price Risk.",
+   "GST search and seizure proceedings by DGGI at Mumbai office on 6th January 2021, challenged via writ petition at Gujarat High Court, matter sub-judice, unable to comment on financial liabilities",
+   "Trade receivables outstanding over six months are slow moving and subject to arbitration/reconciliation proceedings from contractual obligations",
+   "Incomplete vendor information under MSMED Act 2006 prevents full disclosure compliance",
+   "Credit Risk: risk that a counterparty will not meet its obligations under a financial instrument or customer contract, leading to a financial loss. The Company is exposed to credit risk from its operating activities (primarily trade receivables) and from its financing activities, including deposits with banks, mutual funds and financial institutions, foreign exchange transactions and other financial instruments.",
+   "Market Risk: risk that the fair value of future cash flows of a financial instrument will fluctuate because of changes in market conditions. Market risk comprises Interest Rate Risk and Equity Price Risk."
+  ],
+  "litigation": [
+   "No significant or material orders were passed by the Regulators or Courts or Tribunals which impact the going concern status and Company's operation in future.",
+   "No proceeding pending under the Insolvency and Bankruptcy Code, 2016.",
+   "GST search and seizure proceedings by DGGI (January 2021), writ petition filed in Gujarat High Court, matter sub-judice",
+   "Income Tax appeals pending for multiple assessment years",
+   "Litigation/arbitration in progress for parties with Expected Credit Loss provision",
+   "Income Tax disputes for AY 2009-10 (Rs 445.49 lakh), 2010-11 (Rs 474.08 lakh), 2011-12 (Rs 431.74 lakh), 2012-13 (Rs 348.14 lakh) pending at CIT(A) Mumbai",
+   "Trade receivables outstanding for over six months are subject to the outcome of arbitration and/or reconciliation proceedings arising out of various contractual obligations",
+   "Disputed Payments against Contracts",
+   "Disputed Contract Receipts",
+   "DGGI search and seizure operations at Mumbai office on 6th January 2021 under CGST Act; writ petition filed with Gujarat High Court; matter sub-judice; \u20b9108.40 Lakhs deposited under protest.",
+   "Income Tax Demands totalling \u20b91,699.43 Lakhs for AY 2009-10 to 2012-13 pending at CIT (A) Mumbai.",
+   "Company's claim for work done, material supply, final bill claims, retentions, mobilisation/material advances given, receivables amounting to \u20b92,116.73 Lakhs under arbitration.",
+   "Provision for Expected Credit Loss (ECL) of \u20b92,769.36 lakh in previous year against parties where litigation/arbitration in progress; \u20b9162.93 Lacs recovered during the year.",
+   "The Company has disclosed the impact of pending litigations on its financial position in its Consolidated Financial Statements.",
+   "GST search and seizure proceedings by DGGI at Mumbai office on 6th January 2021, challenged via writ petition at Gujarat High Court, matter sub-judice",
+   "Trade receivables subject to arbitration and/or reconciliation proceedings from contractual obligations",
+   "Company's claim for work done, material supply, final bill claims, retentions, mobilisation/ material advances given, receivables, etc is amounting to \u20b92116.73 Lakhs, which is under arbitration.",
+   "Income Tax Demands for assessment years 2009-10, 2010-11, 2011-12, 2012-13 pending at CIT (A) Mumbai.",
+   "Provision for Expected Credit Loss (ECL) of \u20b92,769.36 lakh made in previous year against litigation/arbitration in progress; \u20b9162.93 lakh recovered during the year and reduced from provision.",
+   "Reversed contractual revenue and corresponding sub-contracting costs and other direct expenses in year ended 31st March 2026; corresponding disputed receipts and payments transactions still unsettled and reflected under Other Current Liabilities and Other Current Assets.",
+   "Income Tax Assets (Net) of \u20b92,068.82 Lakhs shown under Other Non-Current Assets; appeal orders received for most years in favour of company, appeal order giving effect pending from income tax department."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "GST search and seizure proceedings by DGGI",
+    "amount_cr": 1.084
+   },
+   {
+    "nature": "Income Tax appeals pending",
+    "amount_cr": 20.6882
+   },
+   {
+    "nature": "Income Tax disputes for AY 2009-10 to 2012-13 pending at CIT(A) Mumbai",
+    "amount_cr": 16.9943
+   },
+   {
+    "nature": "Disputed Payments against Contracts",
+    "amount_cr": 31.79
+   },
+   {
+    "nature": "Disputed Contract Receipts",
+    "amount_cr": 32.86
+   },
+   {
+    "nature": "Income Tax Demands",
+    "amount_cr": 16.9943
+   },
+   {
+    "nature": "GST search and seizure proceedings by DGGI, writ petition filed at Gujarat High Court, matter sub-judice",
+    "amount_cr": null
+   },
+   {
+    "nature": "Deposit under protest against disputed GST dues",
+    "amount_cr": 1.08
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 68.0435,
+    "note": "As on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Bank Overdraft / Cash credit",
+    "amount_cr": 0.38,
+    "note": "Secured"
+   },
+   {
+    "lender_or_type": "Capsave finance Private Limited",
+    "amount_cr": 67.67,
+    "note": "Short Term Borrowing, Secured"
+   },
+   {
+    "lender_or_type": "Loan from Subsidiary",
+    "amount_cr": 0.58,
+    "note": "Unsecured Loan"
+   },
+   {
+    "lender_or_type": "Long-Term Borrowings",
+    "amount_cr": 5.2,
+    "note": "As on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Short-Term Borrowings",
+    "amount_cr": 70.82,
+    "note": "As on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Bodies Corporate (Unsecured Long Term)",
+    "amount_cr": 5.2,
+    "note": "Long term borrowings from bodies corporate"
+   },
+   {
+    "lender_or_type": "Bank Overdraft / Cash Credit (Secured)",
+    "amount_cr": 0.38,
+    "note": "Against Fixed Deposit"
+   },
+   {
+    "lender_or_type": "Capsave Finance Private Limited (Secured Short Term)",
+    "amount_cr": 67.67,
+    "note": "Short term borrowing"
+   },
+   {
+    "lender_or_type": "Loan from Others (Short Term)",
+    "amount_cr": 2.78,
+    "note": "Unsecured short term loan"
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}

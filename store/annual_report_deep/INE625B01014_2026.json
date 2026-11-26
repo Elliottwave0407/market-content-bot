@@ -1,0 +1,1066 @@
+{
+ "isin": "INE625B01014",
+ "name": "Rana Sugars Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_32152_RANASUG_2025_2026_A_19944828_06102026121624.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 494645,
+ "chunks": 13,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "Rana Sugars Limited operates sugar manufacturing units with a total cane crushing capacity of 20,500 tonnes per day, distillery capacity of 335 kilolitres per day, and cogeneration capacity of 102 MW across four locations in Punjab and Uttar Pradesh.",
+   "products": [
+    {
+     "name": "Sugar",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Distillery products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cogeneration power",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Power (Co-generation)",
+     "share_of_revenue_pct": null,
+     "note": "Power sold Punjab: 166.29 Lakh units (2025-26), 228.64 (2024-25); Uttar Pradesh: 400.37 (2025-26), 241.56 (2024-25); Amount Punjab: 3131.15 Lakh (2025-26), 7661.27 (2024-25); Uttar Pradesh: 2074.16 (2025-26), 870.57 (2024-25)"
+    },
+    {
+     "name": "Distillery (Industrial Alcohol)",
+     "share_of_revenue_pct": null,
+     "note": "Production Punjab: 765.61 Lakh BL (2025-26), 599.09 (2024-25); Uttar Pradesh: 306.98 (2025-26), 303.73 (2024-25); Sales Punjab: 713.17 (2025-26), 587.73 (2024-25); Uttar Pradesh: 260.52 (2025-26), 314.56 (2024-25); Revenue Punjab: 63,582.02 Lakh (2025-26), 54,150.07 (2024-25); Uttar Pradesh: 26,810.63 (2025-26), 29,810.39 (2024-25)"
+    },
+    {
+     "name": "Electricity",
+     "share_of_revenue_pct": null,
+     "note": "Co-generation power plant operates on bagasse"
+    },
+    {
+     "name": "Industrial Alcohol",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Ethanol",
+     "share_of_revenue_pct": null,
+     "note": "Produced from molasses/sugarcane juice; key profit driver with government blending mandate"
+    },
+    {
+     "name": "Ethanol/Spirit",
+     "share_of_revenue_pct": null,
+     "note": "Produced from molasses and sugarcane juice/syrup; sold to OMCs for blending and industrial users"
+    },
+    {
+     "name": "Power (Cogeneration)",
+     "share_of_revenue_pct": null,
+     "note": "Bagasse-based cogeneration; surplus power sold to state distribution utilities in Punjab and Uttar Pradesh"
+    },
+    {
+     "name": "Co-generation of power",
+     "share_of_revenue_pct": null,
+     "note": "Power is used captively as well as exported to the State Grids of Punjab and Uttar Pradesh respectively."
+    },
+    {
+     "name": "power",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Distillery",
+     "share_of_revenue_pct": null,
+     "note": "Operating segment for distillery"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Punjab",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "North India",
+     "share_pct": 38.12
+    },
+    {
+     "name": "West India",
+     "share_pct": null
+    },
+    {
+     "name": "South India",
+     "share_pct": null
+    },
+    {
+     "name": "East India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Village Buttar Seviyan, Teh. Baba Bakala, Distt. Amritsar, Punjab",
+     "capacity": "Sugar: 7500 TCD, Distillery: -, Cogeneration: 46 MW"
+    },
+    {
+     "location": "Village Belwara, Teh. & Distt. Moradabad, Uttar Pradesh",
+     "capacity": "Sugar: 6500 TCD, Distillery: 110 KLPD, Cogeneration: 29 MW"
+    },
+    {
+     "location": "Village Karimganj, Teh. Shahabad, Distt. Rampur, Uttar Pradesh",
+     "capacity": "Sugar: 6500 TCD, Distillery: -, Cogeneration: 27 MW"
+    },
+    {
+     "location": "Village Lauhka, Teh. Patti, Distt. Tarn Taran, Punjab",
+     "capacity": "Sugar: -, Distillery: 225 KLPD, Cogeneration: Captive"
+    },
+    {
+     "location": "Punjab",
+     "capacity": ""
+    },
+    {
+     "location": "Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Buttar Seviyan",
+     "capacity": ""
+    },
+    {
+     "location": "Village Buttar Seviyan, Teh. Baba Bakala, Distt. Amritsar, Punjab",
+     "capacity": ""
+    },
+    {
+     "location": "Village Belwara, Teh. & Distt. Moradabad, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Village Karimganj, Teh. Shahabad, Distt. Rampur, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Village Lauhka, Teh. Patti, Distt. Tarn Taran, Punjab",
+     "capacity": ""
+    },
+    {
+     "location": "Moradabad district, Uttar Pradesh",
+     "capacity": "Sugar crushing capacity part of aggregate 20,500 TCD"
+    },
+    {
+     "location": "Rampur district, Uttar Pradesh",
+     "capacity": "Sugar crushing capacity part of aggregate 20,500 TCD"
+    },
+    {
+     "location": "Amritsar district, Punjab",
+     "capacity": "Sugar crushing capacity part of aggregate 20,500 TCD; Sugar beet processing 5,000 TCD"
+    },
+    {
+     "location": "District Amritsar (Punjab)",
+     "capacity": ""
+    },
+    {
+     "location": "District Moradabad (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "District Rampur (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Tarn Taran (Punjab)",
+     "capacity": ""
+    },
+    {
+     "location": "Belwara",
+     "capacity": ""
+    },
+    {
+     "location": "Shahbad",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "raw_materials": [
+    "Sugarcane",
+    "Sugar Beet",
+    "Bagasse",
+    "Agro-waste/biomass",
+    "Sulphur",
+    "Raw juice",
+    "Molasses",
+    "Molasses (C-heavy, B-heavy)",
+    "Sugarcane juice/syrup",
+    "Bagasse (for cogeneration)",
+    "Grains",
+    "Biomass",
+    "Sugarcane (implied by sugar manufacturing)",
+    "Molasses (implied by distillery/ethanol)",
+    "Process chemicals",
+    "Packing material",
+    "Cane",
+    "Raw material for power division"
+   ],
+   "end_markets": [
+    "Sugar",
+    "Power",
+    "Industrial Alcohol",
+    "Food and beverage",
+    "Pharmaceutical",
+    "Biofuel/ethanol blending",
+    "Confectionery and bakery",
+    "Dairy and frozen foods",
+    "Sugar: domestic consumption (household, food processing, beverages, confectionery, dairy, bakery, HORECA)",
+    "Ethanol: fuel blending (EBP programme), industrial (pharma, chemicals, personal care, beverages)",
+    "Power: state electricity grids",
+    "Domestic sugar market",
+    "Ethanol Blended Petrol (EBP) programme",
+    "Power utilities",
+    "Extra Neutral Alcohol (ENA)",
+    "Sugar market",
+    "Ethanol/alcohol market",
+    "Power distribution",
+    "Power market",
+    "Distillery market"
+   ],
+   "customers": [
+    "Food processing industry",
+    "Beverage industry",
+    "Bakery and confectionery sector",
+    "Dairy and frozen food sectors",
+    "Pharmaceutical industry",
+    "Oil marketing companies (for ethanol blending)",
+    "Oil Marketing Companies (OMCs) for ethanol blending",
+    "State distribution utilities for power",
+    "Sugar traders/wholesalers",
+    "Industrial users (pharmaceutical, chemical, beverage, food processing)",
+    "diverse customer base",
+    "State Utilities (for power)",
+    "Uttar Pradesh Power Corporation Limited (trade receivables charged exclusively to IREDA)"
+   ],
+   "competitors_named": [
+    "Brazil (global competitor)",
+    "Thailand (global competitor)",
+    "Other Indian sugar mills (implied)"
+   ],
+   "brands_or_certifications": [
+    "FSSAI certified"
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Mrs. Kirandeep Kaur",
+    "nature": "Administration Head, relative of Rana Ranjit Singh (Chairman), holding office or place of profit",
+    "amount_cr": 1.8
+   },
+   {
+    "party": "Rana Veer Pratap Singh",
+    "nature": "Managing Director, remuneration increase proposed",
+    "amount_cr": 3.6
+   },
+   {
+    "party": "Mrs. Kirandeep Kaur",
+    "nature": "Daughter in Law of Rana Ranjit Singh (Chairman cum Director and Promoter); Administration Head holding place of profit",
+    "amount_cr": 1.8
+   },
+   {
+    "party": "Rana Veer Pratap Singh",
+    "nature": "Managing Director and Promoter; remuneration revision approved",
+    "amount_cr": 3.6
+   },
+   {
+    "party": "Rana Ranjit Singh",
+    "nature": "Unsecured loan from promoter/director",
+    "amount_cr": 0.0457627
+   },
+   {
+    "party": "Related Parties as defined under Companies Act, 2013 and Regulation 23 of SEBI (LODR) Regulations, 2015",
+    "nature": "All transactions entered into with Related Parties during FY 2025-26 were on arm's length basis and in ordinary course of business, and do not attract provisions of Section 188 of Companies Act, 2013. No materially significant transactions with related parties during the financial year that may have potential conflict with interest of the Company at large.",
+    "amount_cr": null
+   },
+   {
+    "party": "Companies in which directors are interested",
+    "nature": "Loans and advances",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Related Parties (Loans)",
+    "nature": "Unsecured loans given",
+    "amount_cr": 24.62
+   },
+   {
+    "party": "Related Parties (Advances)",
+    "nature": "Other advances",
+    "amount_cr": 7.53
+   },
+   {
+    "party": "Private companies where director is member",
+    "nature": "Trade receivables",
+    "amount_cr": 69.79
+   },
+   {
+    "party": "Directors",
+    "nature": "Unsecured borrowings",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Intercorporate",
+    "nature": "Unsecured borrowings",
+    "amount_cr": 9.57
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Indian Renewable Energy Development Agency Limited (IREDA)",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Zila Sahkari Bank Limited Ghaziabad",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "U. P. State Co-operative Bank Limited",
+    "amount_cr": null,
+    "note": "Formerly known as Uttar Pradesh Cooperative Bank Limited"
+   },
+   {
+    "lender_or_type": "UCO Bank",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Promoter/Director unsecured loan",
+    "amount_cr": 0.0457627,
+    "note": "Outstanding from Rana Ranjit Singh as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Long-Term Bank facilities",
+    "amount_cr": null,
+    "note": "Credit rating IVR BBB-/Rating watch with Developing Implications by Infomerics Valuation and Rating Limited dated 10th December, 2025"
+   },
+   {
+    "lender_or_type": "Short-Term Bank Facilities",
+    "amount_cr": null,
+    "note": "Credit rating IVR A3 by Infomerics Valuation and Rating Limited dated 10th December, 2025"
+   },
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 100.97,
+    "note": "As of 31st March 2026; decreased from Rs. 129.54 crore as of 31st March 2025"
+   },
+   {
+    "lender_or_type": "Banks (working capital limits secured by current assets)",
+    "amount_cr": null,
+    "note": "The Company has been sanctioned working capital limits in excess of five crore rupees, in aggregate, from banks on the basis of security of current assets."
+   },
+   {
+    "lender_or_type": "Long Term Borrowings (Non-current)",
+    "amount_cr": 72.9693,
+    "note": "As per Balance Sheet as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings (Current)",
+    "amount_cr": 236.6771,
+    "note": "As per Balance Sheet as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities (Non-current)",
+    "amount_cr": 4.8548,
+    "note": "As per Balance Sheet as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities (Current)",
+    "amount_cr": 6.6626,
+    "note": "As per Balance Sheet as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "IREDA Limited (Term Loan)",
+    "amount_cr": 26.54,
+    "note": "Secured, pari passu first charge on fixed assets (excl. vehicles), 9.75% ROI, repayable till Mar 2029"
+   },
+   {
+    "lender_or_type": "Zila Sahakari Bank Ltd. Ghaziabad (Term Loans)",
+    "amount_cr": 16.74,
+    "note": "Secured, pari passu first charge on fixed assets (excl. vehicles), 11% ROI, monthly installments till 2029"
+   },
+   {
+    "lender_or_type": "Kotak Mahindra Prime Ltd (Vehicle Loan)",
+    "amount_cr": 0.17,
+    "note": "Secured by hypothecation of vehicle, 7.98% ROI, till Aug 2027"
+   },
+   {
+    "lender_or_type": "Union Bank of India (Term/Vehicle Loans)",
+    "amount_cr": 0.18,
+    "note": "Secured, various rates"
+   },
+   {
+    "lender_or_type": "UCO Bank (Vehicle Loans)",
+    "amount_cr": 0.22,
+    "note": "Secured by hypothecation of vehicles, 8.55-9.30% ROI"
+   },
+   {
+    "lender_or_type": "8% Non-Cumulative Redeemable Preference Shares (Liability Component)",
+    "amount_cr": 35.98,
+    "note": "Redeemable Apr 29, 2027 at par, 8% dividend non-cumulative"
+   },
+   {
+    "lender_or_type": "Directors (Unsecured)",
+    "amount_cr": 0.05,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Intercorporate (Unsecured)",
+    "amount_cr": 9.57,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Zila Sahakari Bank Ltd. Ghaziabad (Cash Credit)",
+    "amount_cr": 36.56,
+    "note": "Secured by pledge of crystal sugar & hypothecation of current assets at UP units, 9.50% ROI"
+   },
+   {
+    "lender_or_type": "UCO Bank (Cash Credit)",
+    "amount_cr": 8.18,
+    "note": "Secured by hypothecation of stocks & receivables at Punjab units, 12.50% ROI"
+   },
+   {
+    "lender_or_type": "Union Bank of India (OD against FD)",
+    "amount_cr": 1.72,
+    "note": "Secured against fixed deposit, 7.30% ROI"
+   },
+   {
+    "lender_or_type": "Uttar Pradesh State Co-operative Bank Ltd. (Cash Credit)",
+    "amount_cr": 171.84,
+    "note": "Secured by pledge of sugar stock & hypothecation of current assets, 9.50% ROI"
+   },
+   {
+    "lender_or_type": "ICICI Bank Ltd. (OD against FD)",
+    "amount_cr": 1.89,
+    "note": "Secured against fixed deposit, 7.65% ROI"
+   },
+   {
+    "lender_or_type": "Samunati Financial Intermediation (Cash Credit)",
+    "amount_cr": 0.0,
+    "note": "Outstanding nil as on Mar 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Obligations (Long-term)",
+    "amount_cr": 4.85,
+    "note": "Net of current maturities"
+   },
+   {
+    "lender_or_type": "Borrowings other than Redeemable Preference Share",
+    "amount_cr": 285.1856,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Redeemable Preference Share",
+    "amount_cr": 35.9783,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Working capital facilities",
+    "amount_cr": null,
+    "note": "From Uttar Pradesh Co-operative Bank Limited, Zila Sahakari Bank Limited Ghaziabad and UCO Bank"
+   },
+   {
+    "lender_or_type": "Lease liabilities",
+    "amount_cr": 11.4844,
+    "note": "As at March 31, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s Ashwani K. Gupta & Associates, Chartered Accountants",
+   "opinion": "No reservations, qualifications, adverse remarks or Modified opinion in the Audit Reports issued by them in respect of Financial Statements of the Company for the Financial Year 2025-26.",
+   "qualifications_or_emphasis": [
+    "Enforcement Directorate (ED) order dated 01.04.2025 for seizure of immovable property worth Rs. 22.02 Crore under Section 37A of FEMA, 1999; investigation related to GDR issuance in 2006; appeal filed, matter sub-judice.",
+    "Delay in filling vacancy of Director and resultant irregularity in composition of Board of Directors as per Regulation 17(1)(c) of SEBI LODR Regulations",
+    "Sales Tax of Rs. 820.52 lakhs was in arrears as at March 31, 2026 for a period of more than six months from the date they became payable.",
+    "Various disputed statutory dues pending at different forums as detailed in Annexure B (vii)(b)."
+   ],
+   "key_audit_matters": [
+    "Inventory Valuation of Finished Goods, By-Products and Work in Progress (carrying value Rs. 389.66 Crores as on March 31, 2026)",
+    "Contingent Liabilities - Contingencies related to Regulatory, Direct and Indirect tax matters"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Anil Singh Negi appointed as Non-Executive Independent Director w.e.f. 14th August, 2025",
+    "Mr. Gaurav Garg appointed as CFO/Whole-time Director w.e.f. 26th February, 2026",
+    "Mr. Basant Kumar Bajaj resigned as Non-Executive Director w.e.f. 15th May, 2025",
+    "Mr. Harneet Singh Oberoi resigned as Non-Executive Independent Director w.e.f. 15th November, 2025",
+    "Rana Veer Pratap Singh appointed as Managing Director effective from 10th April, 2024 for a period of 5 years",
+    "Remuneration revision for Rana Veer Pratap Singh approved effective from 1st April, 2027 till balance term of appointment",
+    "Mr. Basant Kumar Bajaj resigned as Non-Executive Independent Director w.e.f. May 15, 2025",
+    "Mr. Harneet Singh Oberoi resigned as Non-Executive Independent Director w.e.f. November 15, 2025",
+    "Mr. Anil Singh Negi appointed as Non-Executive Independent Director w.e.f. August 14, 2025",
+    "Mr. Gaurav Garg appointed as Whole-Time Director w.e.f. February 26, 2026 (already CFO since February 9, 2021)",
+    "Mr. Basant Kumar Bajaj resigned as Non-Executive Non-Independent Director w.e.f. May 15, 2025",
+    "Mr. Gaurav Garg appointed as Whole-time Director (CFO) w.e.f. February 26, 2026",
+    "Mr. Basant Kumar Bajaj resigned from directorship w.e.f. May 15, 2025",
+    "Mr. Anil Singh Negi joined Board as Independent Director on August 14, 2025",
+    "Mr. Harneet Singh Oberoi resigned from directorship w.e.f. November 15, 2025",
+    "Ms. Navpreet Kaur re-appointed as Independent Director for second term of 5 years w.e.f. November 9, 2023",
+    "Mr. Surjeet Kaushal appointed as Independent Director for 5 years w.e.f. October 1, 2023",
+    "Mr. Harneet Singh Oberoi appointed as Independent Director for 5 years w.e.f. June 30, 2024",
+    "Mr. Anil Singh Negi appointed as Independent Director for 5 years w.e.f. August 14, 2025",
+    "Mr. Anil Singh Negi appointed 14.08.2025",
+    "Mr. Gaurav Garg appointed 26.02.2026",
+    "Delay in filling Director vacancy during financial year causing irregularity in Board composition per Regulation 17(1)(c)"
+   ],
+   "top_shareholders": [
+    {
+     "name": "Rana Veer Pratap Singh",
+     "pct": null
+    },
+    {
+     "name": "Rana Ranjit Singh",
+     "pct": null
+    },
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 22.64
+    },
+    {
+     "name": "Individuals (Public)",
+     "pct": 68.96
+    },
+    {
+     "name": "Central Government/State Government",
+     "pct": 1.66
+    },
+    {
+     "name": "Hindu Undivided Family (HUF)",
+     "pct": 2.91
+    },
+    {
+     "name": "Non-Resident Indians (NRIs)",
+     "pct": 1.64
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 1.98
+    },
+    {
+     "name": "Mrs. Manminder Rana",
+     "pct": 11.68
+    },
+    {
+     "name": "Mrs. Sukhjinder Kaur",
+     "pct": 5.54
+    },
+    {
+     "name": "Mr. Rana Veer Pratap Singh",
+     "pct": 5.43
+    }
+   ],
+   "auditor_change": "M/s Ashwani K Gupta & Associates appointed as Statutory Auditors for second consecutive term of five years from conclusion of 31st AGM till conclusion of 36th AGM to be held in 2028",
+   "promoter_holding_pct": 22.64
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Rana Ranjit Singh",
+     "role": "Chairman & Non-Executive Director"
+    },
+    {
+     "name": "Rana Veer Pratap Singh",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Ms. Navpreet Kaur",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Surjeet Kaushal",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Anil Singh Negi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Gaurav Garg",
+     "role": "CFO/Whole-time Director"
+    },
+    {
+     "name": "Mr. Madhur Bain Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Rana Ranjit Singh",
+     "role": "Chairman cum Director and Promoter"
+    },
+    {
+     "name": "Rana Veer Pratap Singh",
+     "role": "Managing Director and Promoter"
+    },
+    {
+     "name": "Mrs. Kirandeep Kaur",
+     "role": "Administration Head"
+    },
+    {
+     "name": "Madhur Bain Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Gaurav Garg",
+     "role": "Whole-Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Rana Ranjit Singh",
+     "role": "Chairman & Non-Executive Director (Promoter)"
+    },
+    {
+     "name": "Rana Veer Pratap Singh",
+     "role": "Managing Director (Promoter)"
+    },
+    {
+     "name": "Mr. Gaurav Garg",
+     "role": "CFO/ Whole-time Director"
+    },
+    {
+     "name": "Rana Ranjit Singh",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Madhur Bain Singh",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Sh. Gaurav Garg",
+     "role": "Vigilance and Ethics Officer"
+    },
+    {
+     "name": "Gaurav Garg",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Navpreet Kaur",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Surjeet Kaushal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Anil Singh Negi",
+     "role": "Director"
+    },
+    {
+     "name": "RANAVEER PRATAP SINGH RANA",
+     "role": "Managing Director (DIN: 00076808)"
+    },
+    {
+     "name": "RANJIT SINGH",
+     "role": "Chairman (DIN: 00076770)"
+    },
+    {
+     "name": "Rana Veer Pratap Singh",
+     "role": "Managing Director (DIN 00076808)"
+    },
+    {
+     "name": "Rana Ranjit Singh",
+     "role": "Chairman (DIN 00076770)"
+    },
+    {
+     "name": "Managing Director",
+     "role": "Part of CODM (Chief Operating Decision Maker)"
+    },
+    {
+     "name": "Director",
+     "role": "Part of CODM"
+    },
+    {
+     "name": "Chief Financial Officer",
+     "role": "Part of CODM for corporate planning"
+    }
+   ],
+   "employees": 1006
+  },
+  "other_notable": [
+   "34th AGM scheduled for 30th September 2026 at 12:30 PM IST through VC/OAVM",
+   "Cost Auditor remuneration approved at Rs. 69,733 plus GST and out-of-pocket expenses for FY 2026-27",
+   "Remuneration increase proposed for Mrs. Kirandeep Kaur from Rs. 5,00,000 to Rs. 15,00,000 per month",
+   "Remuneration increase proposed for Rana Veer Pratap Singh from Rs. 25,00,000 to Rs. 30,00,000 per month with variable pay for 3 years from 01.04.2027",
+   "Registrar and Transfer Agent: Alankit Assignments Limited",
+   "Registered Office: SCO 49-50, Sector 8-C, Chandigarh-160009",
+   "CIN: L15322CH1991PLC011537",
+   "Cost Auditors: M/s Khushwinder Kumar & Co., Cost Accountants (Firm Registration No. 100123) appointed for FY 2026-27 at remuneration of Rs. 69,733/- exclusive of expenses plus GST",
+   "Secretarial Auditor: M/s A. Arora & Co., Practicing Company Secretary (Membership No. 2191, C.P. No. 993) appointed for five years from FY 2024-25 to 2029-30",
+   "CSR activities undertaken in promotion of Education, Sport, Health Care and Preventive Health Care",
+   "e-Voting Agency: Central Depository Services (India) Limited",
+   "Scrutiniser: CS Ajay Arora, Practicing Company Secretary",
+   "Net profit of Rs. 2,381.40 Lakhs retained for growth (no dividend recommended)",
+   "Authorised share capital: Rs. 220 crore (16 crore equity shares of Rs. 10 each, 6 crore preference shares of Rs. 10 each)",
+   "Paid-up capital: Rs. 153.56782 crore equity (15,35,67,820 shares) and Rs. 41.093424 crore preference (4,10,93,424 shares)",
+   "No change in share capital during FY 2025-26",
+   "No deposits accepted from public",
+   "MSME outstanding >45 days: Rs. 3,523.15 Lakhs as on March 31, 2026",
+   "Foreign exchange: CIF imports Rs. 991.41 Lakhs, expenditure in foreign currency Rs. 991.41 Lakhs, FOB exports nil",
+   "R&D expenditure: Rs. 4.50 Lakhs recurring (0.0026% of turnover)",
+   "Energy conservation: 100% agro-waste/biomass utilization, co-generation on bagasse",
+   "No frauds reported by auditors",
+   "No IBC proceedings initiated",
+   "No one-time settlement with banks/FIs",
+   "Zero sexual harassment complaints",
+   "CSR policy focuses on responsible growth and environmental sustainability",
+   "CSR obligation for FY 2025-26: Rs. 106.33 Lakhs (2% of average net profit of Rs. 5,316.54 Lakhs)",
+   "CSR amount spent in FY 2025-26: Rs. 141.56 Lakhs (excess of Rs. 35.23 Lakhs available for set-off)",
+   "CSR projects in livelihood enhancement, disaster management, preventive health care, armed forces veterans benefit, eradicating hunger, old age home, animal welfare, rural development, education, and sports",
+   "CSR implemented through Manjulika Human Welfare Society (CSR00094041), Rana Sugar Foundation (CSR00066666), Tata Memorial Centre (CSR00001287), and direct implementation",
+   "Board composition as on March 31, 2026: 2 Executive Directors, 1 Non-Executive Non-Independent Director (Chairperson), 3 Non-Executive Independent Directors (including 1 woman director)",
+   "Five Board Meetings held in FY 2025-26: May 30, 2025; August 14, 2025; November 14, 2025; February 13, 2026; February 26, 2026",
+   "Audit Committee met 5 times in FY 2025-26",
+   "Nomination and Remuneration Committee met 1 time in FY 2025-26",
+   "CSR Committee met 2 times in FY 2025-26: May 30, 2025 and March 31, 2026",
+   "Secretarial Audit conducted by A. ARORA & COMPANY for FY ended March 31, 2026",
+   "Company listed on National Stock Exchange of India Limited and BSE Limited",
+   "No dividend recommended by Board for FY 2025-26.",
+   "Total fees paid to Statutory Auditors for FY 2025-26: Rs. 11.89 lakhs (inclusive of taxes and other expenses) on consolidated basis.",
+   "Company has not issued any shares during the year.",
+   "No funds raised through preferential allotment during the year.",
+   "No outstanding GDRs/ADRs/Warrants or convertible instruments as at March 31, 2026.",
+   "No shares lying under Demat Suspense Account/Unclaimed Suspense Account as on March 31, 2026.",
+   "No complaints filed under SEBI Smart ODR Mechanism during the year.",
+   "No material financial/commercial transactions by Senior Management with personal interest conflicting with Company interest during FY 2025-26.",
+   "Board did not encounter any instance where it did not accept recommendation of any mandatorily required committee during FY 2025-26.",
+   "No cases filed under Sexual Harassment of Women at Workplace Act during FY 2025-26.",
+   "Company has complied with all mandatory requirements of SEBI (LODR) Regulations, 2015.",
+   "Independent Directors meeting held on March 31, 2026; all Independent Directors attended.",
+   "Performance evaluation of Board, Committees and individual Directors carried out for FY 2025-26 with high satisfactory results.",
+   "Code of Conduct for Board and Senior Management revised by Board on May 30, 2025; all Board members and senior management confirmed compliance for year ended March 31, 2026.",
+   "Vigil Mechanism/Whistle Blower Policy revised by Board on May 29, 2024.",
+   "CSR Committee met twice on May 30, 2025 and March 31, 2026.",
+   "Finance and Investment Committee met 9 times during FY 2025-26.",
+   "Stakeholders Relationship Committee met once on March 31, 2026.",
+   "Nomination and Remuneration Policy available on company website.",
+   "Related Party Transactions Policy available on company website.",
+   "Material Subsidiary Policy available on company website.",
+   "Vigil Mechanism/Whistle Blower Policy available on company website.",
+   "Credit rating details available on company website."
+  ],
+  "outlook": [
+   {
+    "statement": "The Company has embarked on a series of strategic and operational measures that is expected to result in the improvement in the present position. The inherent strengths of the Company, especially its reputation as a premium manufacturer and powerful brands are also expected to enable the Company to position itself during adversities. The Company has also strategically planned to address the issue of productivity and increase profits and has put in place measures to reduce cost and improve the bottom-line.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Company has taken various initiatives to maintain its leadership, improve market share and financial performance. It has been aggressively pursuing and implementing its strategies to improve financial performance.",
+    "period": "Future"
+   },
+   {
+    "statement": "The Company's financial year begins on April 01 and ends on March 31. Our tentative calendar for declaration of results for the financial year 2026-27 is as given below: Quarter Ending on June 30, 2026 - On or before 14th August, 2026; September 30, 2026 - On or before 14th November, 2026; December 31, 2026 - On or before 14th February, 2027; March 31, 2027 - On or before 30th May, 2027.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Indian cane sugar market valued at USD 55.40 billion in 2025, projected to reach USD 70.13 billion by 2031 at CAGR 4.01% (2026-2031). Government support for ethanol blending, abundant sugarcane, and steady food processing demand are key growth drivers.",
+    "period": "2026-2031"
+   },
+   {
+    "statement": "India expected to produce 33.6 million tonnes sugar in 2026-27, supported by favourable monsoons, improved yields, and increased cultivation area, reinforcing position as world's second-largest producer after Brazil.",
+    "period": "2026-27"
+   },
+   {
+    "statement": "Government evaluating possibility of increasing ethanol blending ratio beyond 20% through inter-ministerial committee; exploring additional applications including flex-fuel vehicles.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Industry demand for increase in Minimum Selling Price (MSP) of sugar under consideration; decision to be taken at appropriate time.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Global sugar production projected at 184.9 million tonnes in 2026/27, marginally lower than previous year; global exports forecast to decline slightly to 62.3 million tonnes.",
+    "period": "2026/27"
+   },
+   {
+    "statement": "Outlook for Sugar Season 2026\u201327 remains encouraging with India's sugar production projected to recover to approximately 33.6 million metric tonnes (raw value), reflecting an increase of around 12% over the revised estimate for the previous season, driven by better sugarcane yields, improved recovery, favourable weather conditions and higher cane availability in key producing States.",
+    "period": "Sugar Season 2026\u201327"
+   },
+   {
+    "statement": "Domestic sugar consumption is expected to remain strong, supported by sustained economic growth, rising per capita consumption, increasing demand from the food and beverage industry and continued expansion of organised retail.",
+    "period": "Sugar Season 2026\u201327"
+   },
+   {
+    "statement": "Government's continued emphasis on ethanol blending is expected to provide additional support to the industry's long-term growth by enabling sugar mills to optimise their product mix between sugar and ethanol depending upon market conditions.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Global sugar production is expected to grow from 181 Mt during the base period to 203 Mt by 2035, with 60% of the growth from Asia and 30% from Latin America.",
+    "period": "2035"
+   },
+   {
+    "statement": "International sugar prices are likely to remain under pressure as stock releases in India and Thailand offset shrinking production; real prices projected to ease slightly over the outlook period.",
+    "period": "2026-2035"
+   },
+   {
+    "statement": "India ethanol market projected to grow at CAGR of 13.95% from USD 3.43 Billion in 2025 to USD 11.78 Billion by 2034, driven by EBP programme, E20 mandate, National Biofuel Policy, and rising sugar surplus.",
+    "period": "2026-2034"
+   },
+   {
+    "statement": "With increased focus on ethanol, contribution from sugar segment will moderate in the times to come. This will help the company beat the cyclical nature of business that the sugar industry has traditionally been associated with.",
+    "period": "future"
+   },
+   {
+    "statement": "The company will engage deeper with farmers, operate plants at optimal capacity and strengthen its financial performance. The company will also introduce high sugar yielding varieties released by various sugarcane breeding institutes in the country.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Profitability of the Company may be adversely impacted in future due to business environment",
+   "Substantial decline in Sugarcane crushing by 27% in comparison to previous year",
+   "Fluctuations in commodity prices",
+   "Changes in the sales mix of sugar and allied products",
+   "Financial risks (including risk to assets)",
+   "Legislative and regulatory risks",
+   "Environmental risks (including natural disasters)",
+   "Operational risks (markets, production, technology, etc.)",
+   "Risks relating to employment and manpower",
+   "Individual large transactional risks",
+   "Enforcement Directorate (ED) order dated 01.04.2025 for seizure of immovable property worth Rs. 22.02 Crore under Section 37A of FEMA, 1999 for holding foreign exchange outside India in contravention to applicable FEMA Regulations. Investigation related to issuance of Global Depository Receipts (GDR) in 2006 and non-utilization of GDR proceeds. Appeal preferred before Appellate Authority, FEMA; matter is sub-judice.",
+   "Commodity price risk and foreign exchange risk are not hedged through derivatives.",
+   "Late submission of financial results for quarter ended December 31, 2024 leading to fines from BSE and NSE.",
+   "SEBI imposed penalty of Rs. 7 crore alleging violations of SEBI Act, PFUTP Regulations and LODR Regulations by Company, promoters and directors; appeal filed before SAT.",
+   "Mismatch between rising Fair and Remunerative Price (FRP) for sugarcane and relatively stagnant Minimum Support Prices (MSP) for sugar pressuring mill profitability",
+   "Climatic and biological risks (e.g., floods, red rot disease caused 15-25% production decline in UP during 2023-24)",
+   "Policy inconsistencies regarding use of sugarcane juice for ethanol creating uncertainty",
+   "Non-implementation of dual pricing policy recommended by CACP contributing to financial uncertainty",
+   "Low sugar export quota (1.5 million tonnes) limiting export opportunities and revenue planning",
+   "Stricter FSSAI regulations on sugar content in food/beverages (HFSS norms) may reduce demand",
+   "Rising health concerns encouraging demand for low-sugar/organic products",
+   "Global raw sugar prices under pressure due to ample supplies from Brazil and Thailand",
+   "Geopolitical conflicts (Middle East) and trade disruptions affecting global economic outlook",
+   "Delay in filling Director vacancy causing irregularity in Board composition per Regulation 17(1)(c) of SEBI LODR",
+   "Variability in monsoon rainfall",
+   "Changes in government policy relating to sugar exports and ethanol diversion",
+   "Fluctuations in international sugar prices",
+   "Sugar recovery trends",
+   "Timely availability of quality sugarcane",
+   "Climatic variations",
+   "Government policy changes",
+   "Availability of sugarcane",
+   "Lower cane availability impacting crushing and power cogeneration",
+   "Dependence on Climatic Conditions",
+   "Regulated Sugarcane Pricing",
+   "Working Capital Intensive Business",
+   "Rising Sugarcane Procurement Costs",
+   "Government Policy and Regulatory Changes",
+   "High Operating and Energy Costs",
+   "Inflationary Pressures",
+   "Changing Consumer Preferences and Global Market Dynamics",
+   "Varying consumer sentiments of customer for Ethanol",
+   "Excessive dependence on single variety (CO 0238) prone to red-rot pest",
+   "Climate factors, high or rising cane cost, policy driven constraints such as quota allocation leading to challenges in inventory holding and working capital pressure",
+   "Recovery closer to saturation level",
+   "Regulatory and Policy Risk (FRP/SAP, export regulations, ethanol procurement prices)",
+   "Climate Change and Agricultural Risk (rainfall, temperature, drought, floods, pests, diseases)",
+   "Sugarcane Availability Risk",
+   "Commodity Price Risk (sugar price volatility)",
+   "Working Capital and Liquidity Risk",
+   "Environmental and Sustainability Risk",
+   "Operational Risk (equipment failure, plant shutdowns, accidents, fire, supply chain interruptions)",
+   "Cogeneration subject to seasonal operation due to limited availability of bagasse and varying state-wise regulatory tariffs",
+   "Volatility in raw material prices especially grains and government policies about supply of FCI rice",
+   "Uncertainties exist with respect to the interpretation of complex tax regulations, changes in tax laws, and the amount and timing of future taxable income.",
+   "The cost of defined benefit plans (i.e. Gratuity benefit) is determined using actuarial valuations... a defined benefit obligation is highly sensitive to changes in these assumptions.",
+   "When the fair value of financial assets and financial liabilities recorded in the balance sheet cannot be measured based on quoted prices in active markets, their fair value is measured using valuation techniques including the Discounted Cash Flow (DCF) model... Changes in assumptions about these factors could affect the reported fair value of financial instruments.",
+   "The Company reviews the useful life of PPE at the end of each reporting period. This reassessment may result in change in depreciation expense in future periods.",
+   "High MSME payables increased from Rs 7.70 cr to Rs 35.23 cr",
+   "Significant trade receivables from related parties (Rs 69.79 cr)",
+   "Deferred tax liability increased to Rs 55.68 cr",
+   "Inventory of finished goods high at Rs 287.12 cr",
+   "Dependence on working capital loans secured by sugar stock pledge",
+   "Foreign currency risk (not material)",
+   "Interest rate risk (not material)",
+   "Commodity price risk for raw materials",
+   "Purchase tax demands on cane in Punjab",
+   "ED seizure of immovable properties worth Rs.22.02 Crore under FEMA",
+   "Impairment triggers for power division CGUs"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Order from Enforcement Directorate (ED), Jalandhar for seizure of immovable property worth Rs. 22.02 Crore under Section 37A of FEMA, 1999 for holding foreign exchange outside India in contravention to applicable FEMA Regulations. Appeal filed before Appellate Authority, FEMA, Delhi; matter sub-judice.",
+    "amount_cr": 22.02
+   },
+   {
+    "nature": "Enforcement Directorate investigation under FEMA Act, 1999 regarding GDR issuance in 2006 and non-utilization of proceeds; appeal pending before Appellate Authority, FEMA, Delhi",
+    "amount_cr": null
+   },
+   {
+    "nature": "Seizure of immovable property worth Rs. 22.02 Crore by Enforcement Directorate under FEMA, 1999; appeal filed, matter sub-judice",
+    "amount_cr": 22.02
+   },
+   {
+    "nature": "SEBI penalty of Rs. 7 crore (appeal filed before SAT)",
+    "amount_cr": 7
+   },
+   {
+    "nature": "Contingencies related to Regulatory, Direct and Indirect tax matters; litigations pending at various forums",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 0.0977
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 1.4146
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 20.1195
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 4.9799
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 2.8633
+   },
+   {
+    "nature": "Entry Tax under UP Tax on Entry of Goods Act",
+    "amount_cr": 8.6742
+   },
+   {
+    "nature": "GST",
+    "amount_cr": 0.9781
+   },
+   {
+    "nature": "GST",
+    "amount_cr": 1.0801
+   },
+   {
+    "nature": "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+    "amount_cr": 7.0
+   },
+   {
+    "nature": "Export Fees on Ethanol (Excise Department, State of Uttar Pradesh)",
+    "amount_cr": 12.3296
+   },
+   {
+    "nature": "Export Fees on Ethanol (Excise Department, State of Punjab)",
+    "amount_cr": 6.4118
+   },
+   {
+    "nature": "Drug Eradication Cess (Department of Agriculture, Government of Punjab)",
+    "amount_cr": 3.4643
+   },
+   {
+    "nature": "Cess on Sugar Cane (Department of Agriculture, Government of Punjab)",
+    "amount_cr": 0.6928
+   },
+   {
+    "nature": "Taxes deposited under protest/appeal",
+    "amount_cr": 11.43
+   },
+   {
+    "nature": "Purchase tax demand on cane for FY 2005-06",
+    "amount_cr": 1.404
+   },
+   {
+    "nature": "Purchase tax demand on cane for FY 2008-09",
+    "amount_cr": 2.9722
+   },
+   {
+    "nature": "Purchase tax demand on cane for FY 2010-11",
+    "amount_cr": 2.2762
+   },
+   {
+    "nature": "Purchase tax demand on cane for FY 2013-14",
+    "amount_cr": 3.8198
+   },
+   {
+    "nature": "ED seizure of immovable properties under FEMA",
+    "amount_cr": 22.02
+   }
+  ],
+  "litigation": [
+   "Order dated 01.04.2025 from Enforcement Directorate (ED), Jalandhar for seizure of immovable property worth Rs. 22.02 Crore under Section 37A of FEMA, 1999. Appeal filed before Appellate Authority, FEMA, Delhi; matter sub-judice.",
+   "Enforcement Directorate investigation under FEMA Act, 1999 regarding GDR issuance in 2006; appeal pending before Appellate Authority, FEMA, Delhi",
+   "SEBI final order dated 27.08.2024 prohibiting Rana Ranjit Singh and Rana Veer Pratap Singh from holding Director/KMP position in any other listed company for 2 years",
+   "Litigations pending by or against the Company mentioned at www.ranasugars.com",
+   "Enforcement Directorate (ED) order dated 01.04.2025 for seizure of immovable property worth Rs. 22.02 Crore under Section 37A of FEMA, 1999; investigation related to GDR issuance in 2006; appeal filed before Appellate Authority, FEMA; matter sub-judice.",
+   "SEBI imposed penalty of Rs. 7 crore alleging violations of Section 12A(b) and (c) of SEBI Act, Regulation 3 of PFUTP Regulations and Regulations 4(1), 4(2), 5, 33(1), 34(3) and 48 of LODR Regulations by Company, promoters and directors. Company filed appeal before SAT on October 10, 2024.",
+   "BSE imposed fine of Rs. 60,000 (excluding GST Rs. 10,800) for late submission of financial results for quarter ended December 31, 2024.",
+   "NSE imposed fine of Rs. 60,000 (excluding GST Rs. 10,800) for late submission of financial results for quarter ended December 31, 2024.",
+   "SEBI final order dated 27.08.2024 prohibited Promoter Directors (Rana Ranjit Singh and Rana Veer Pratap Singh) from holding Director/KMP position in any other listed company for 2 years; company has appealed to Securities Appellate Tribunal, matter sub-judice",
+   "Number of litigations pending at various forums related to regulatory, direct and indirect tax matters",
+   "Income Tax disputes for AY 2011-12, 2015-16, 2016-17, 2017-18, 2020-21 pending at CIT(A) Gurugram / CPC.",
+   "Entry Tax dispute for FY 2011-12 to 2017-18 pending at Hon'ble Supreme Court.",
+   "GST disputes for FY 2017-18 to 2021-22 pending at Goods and Services Tax Appellant Authority.",
+   "SEBI penalty of Rs. 700 lakhs pending at Securities Appellate Tribunal.",
+   "Export Fees on Ethanol disputes for FY 2019-20 to 2025-26 (UP) and FY 2025-26 (Punjab) pending at respective High Courts.",
+   "Drug Eradication Cess and Cess on Sugar Cane disputes for FY 2017-18 to 2025-26 pending at Hon'ble High Court of Punjab & Haryana.",
+   "Taxes deposited under protest/appeal: Rs 11.43 cr (Mar 2026) vs Rs 5.37 cr (Mar 2025)",
+   "Appeal filed with Punjab VAT Tribunal Chandigarh for FY 2008-09 purchase tax demand",
+   "Appeal preferred before Appellate Tribunal, FEMA, New Delhi against ED seizure order, listed for 12th August 2026"
+  ],
+  "capex_plans": [
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Approval of loan, investment and guarantee under Section 186 of the Companies Act, 2013",
+    "amount_cr": null,
+    "timeline": "Approved at AGM on 30-09-2025"
+   },
+   {
+    "item": "Approval of loans, investments, guarantee or security under section 185 of the Companies Act, 2013",
+    "amount_cr": null,
+    "timeline": "Approved at AGM on 30-09-2025"
+   },
+   {
+    "item": "Uttar Pradesh government allocation for sugar mill capacity expansion",
+    "amount_cr": 1870.0,
+    "timeline": "Not specified"
+   },
+   {
+    "item": "CWIP - Freehold Buildings",
+    "amount_cr": 4.83,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "CWIP - Plant & Machinery",
+    "amount_cr": 0.94,
+    "timeline": "As at March 31, 2026"
+   },
+   {
+    "item": "CWIP - Projects temporarily suspended (Freehold Buildings)",
+    "amount_cr": 1.22,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "No Subsidiary, Joint Venture or Associate Company during the year under review"
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company does not have any material unlisted subsidiary company as on the date of the report."
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiary, Joint Ventures or Associate company."
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}
