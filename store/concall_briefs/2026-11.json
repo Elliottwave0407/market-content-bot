@@ -142293,8 +142293,8 @@
 "reread": false,
 "coverage": {
 "facts_read": 16,
-"A": 11,
-"B": 4,
+"A": 9,
+"B": 6,
 "C": 1,
 "shown": 12
 },
@@ -142323,7 +142323,7 @@
 "demand": [
 {
 "cat": "demand",
-"grade": "A",
+"grade": "B",
 "statement": "Strong demand for cables and conductors driven by government grid investment and data center growth; planning further expansion beyond current",
 "value": null,
 "period": "current",
@@ -142410,20 +142410,20 @@
 {
 "cat": "other",
 "grade": "A",
-"statement": "Top 5 customers contribute ~40-50% revenue; existing clients include Bajaj Electricals, KEC, L&T; new customers added randomly",
-"value": "40-50%",
-"period": "current",
-"direction": "flat",
-"quote": "Actually, it should be around 40% to 50%."
-},
-{
-"cat": "other",
-"grade": "A",
 "statement": "H1 FY27 total income INR167.89 crores, up 38.25% YoY; net profit INR12.29 crores, margin 7.32%",
 "value": "167.89 crores; 12.29 crores; 7.32%",
 "period": "H1 FY27",
 "direction": "up",
 "quote": "Total income for H1 FY27 grew 38.25% year-on-year basis to INR167.89 crores. Our net profit stood at INR12.29 crores with a net profit margin of 7.32%."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Ultravolt (Birla) in retail house wiring segment; JD Cables not in that segment yet but allocated space for future retail entry",
+"value": null,
+"period": "current",
+"direction": "flat",
+"quote": "Firstly, I would like to say sir, actually the Ultravolt segment is completely different one. They are into house wiring and they are into retail segment and we are not yet entered that segment, but we will definitely plan in future."
 }
 ]
 }
@@ -149631,6 +149631,110 @@
 ]
 }
 },
+"526829|2026-11-25": {
+"code": "526829",
+"name": "Confidence Petroleum India Ltd",
+"day": "2026-11-25",
+"sector": "Energy",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 15,
+"A": 11,
+"B": 3,
+"C": 1,
+"shown": 8
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c939366b-7920-4def-95ea-d260e89f623b.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "B",
+"statement": "Management does not give formal full-year guidance but indicated H2 will be better than H1; last quarter's 10-15% QoQ growth aspiration maintained on bottom line.",
+"value": null,
+"period": "FY27",
+"direction": "up",
+"quote": "We do not give any guidance in terms of what the full-year numbers would look like, but you would have seen the growth trajectory that we have achieved in Q1 and Q2. We are almost, I would say, in terms of EBITDA, for H1, we have been trading at somewhere close to INR304 crores and with a PAT of somewhere close to INR132 crores."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "India LPG consumption grew from 26.3 MMT in FY20 to 35.04 MMT in FY26, making India the world's third largest LPG consumer.",
+"value": "35.04 million metric tons",
+"period": "FY26",
+"direction": "up",
+"quote": "India is already the world's third largest LPG consumer; consumption increased from about 26.3 million metric tons in FY20 to 35.04 million metric tons in FY26."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Q2 FY27 EBITDA margin improved sequentially to 7.2%, up 120 bps from Q1 FY27.",
+"value": "7.2%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "EBITDA grew 93% Y-o-Y to INR161 crores from INR83 crores in Q2 FY26, with an EBITDA margin improving sequentially to 7.2% and expansion of 120 basis points over Q1 FY27."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Over INR800 crores invested in capex over last five years; benefits now being realized.",
+"value": "INR800 crores",
+"period": "last five years",
+"direction": null,
+"quote": "With over INR800 crores invested in capex over the last five years, we are now realizing the benefits of these investments made."
+}
+],
+"pricing_cost": [
+{
+"cat": "pricing_cost",
+"grade": "B",
+"statement": "Long-term customer agreements use formula pricing linked to international LPG prices; company remains price competitive due to 30-year market experience and 169-guideline plants.",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "We have signed agreements with many people based on formulas, linking them to international prices, so they will continue with the company."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Geopolitical developments and Middle East supply disruptions causing LPG price volatility and longer procurement cycles from US imports.",
+"value": null,
+"period": "current",
+"direction": null,
+"quote": "During the quarter, the LPG industry continued to face challenges arising from the ongoing geopolitical developments and supply uncertainties in the Middle East, which resulted in volatility in international LPG prices and availability also."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "Net debt stands at ~INR820 crores; INR290 crores of other current assets are supplier advances for US imports, making effective net debt lower.",
+"value": "INR820 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Our debt has gone, the net debt stands at somewhere close to INR820 crores. But if you knock off that INR290 crores, so probably that, yes. You are right in saying that, yes, the numbers can be much lower."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "Other current assets jumped from INR449 crores to INR738 crores (INR298 crores increase), primarily advances to suppliers for US LPG procurement.",
+"value": "INR298 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "If you see the balance sheet, the other current assets have moved from INR449 crores to INR738 crores, which is INR298 crores jump. I would say the larger aspect is these are advances to the supplies"
+}
+]
+}
+},
 "532054|2026-11-25": {
 "code": "532054",
 "name": "KDDL Ltd-$",
@@ -150443,6 +150547,157 @@
 "period": "H1 FY27",
 "direction": "flat",
 "quote": "Now that export has become a little less due to the conflict, but at the same time, we have opened up some other markets which we were not catering to, such as Australia. We are exporting to Australia on regular basis now."
+}
+]
+}
+},
+"544192|2026-11-25": {
+"code": "544192",
+"name": "Le Travenues Technology Ltd",
+"day": "2026-11-25",
+"sector": "Consumer Services",
+"reader": "nemotron-3-ultra-550b-a55b v4",
+"reread": false,
+"coverage": {
+"facts_read": 26,
+"A": 19,
+"B": 3,
+"C": 4,
+"shown": 13
+},
+"src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/2e5ded4f-9b21-4a2d-8149-662d26967f61.pdf",
+"sections": {
+"guidance": [
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Hotel investment expected to remain in INR 10-12 crore range per quarter over next couple of quarters, not formal guidance",
+"value": "INR 10-12 crores",
+"period": "next couple of quarters",
+"direction": null,
+"quote": "Think of a similar range as this quarter, which is between INR 10 crores and INR 12 crores. Having said that, if the growth- if what we are seeing on the ground becomes more enticing or less enticing, either way we could move one way or the other, yes."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Hotel gross take rate expected to edge up over next 3-4 quarters but no specific guidance given for next year",
+"value": null,
+"period": "next 3-4 quarters",
+"direction": "up",
+"quote": "Over the next 3 to 4 quarters, you will see them edge up for sure. But I'm not giving any guidance right now on where we'll be next year. It's just that we will be higher. That is a certainty."
+},
+{
+"cat": "guidance",
+"grade": "A",
+"statement": "Hotel segment expected to continue investing for 2-3 years before profitability becomes priority, within guardrails of mid-single-digit EBITDA at company level",
+"value": null,
+"period": "2-3 years",
+"direction": null,
+"quote": "for 2 to 3 years, we expect to continue investing in getting to a scale where we become comfortable that profitability becomes more important. But in the short to medium term, I don't see why we would want to not keep doing what we are doing, which is done for growth. Within guardrails, we've always said that we do this within guardrails."
+}
+],
+"demand": [
+{
+"cat": "demand",
+"grade": "A",
+"statement": "International flight GTV grew 59% year-on-year, more encouraging than domestic",
+"value": "59%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "International travel has been more encouraging, with our international flight GTV growing 59% year-on-year."
+}
+],
+"margin": [
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Hotel contribution margin improved from -55% of revenue a year ago to -15% this quarter with contribution loss of INR 1.2 crores",
+"value": "-15%",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Contribution margin improved from minus 55% of revenue a year ago to minus 15%, with a contribution loss of INR 1.2 crores this quarter."
+},
+{
+"cat": "margin",
+"grade": "A",
+"statement": "Hotel segment expected to become one of highest contribution margin businesses alongside buses when settled in a couple of years",
+"value": null,
+"period": "a couple of years",
+"direction": "up",
+"quote": "when it becomes a settled business, it will be one of the highest -- this and buses end up being the highest contribution margin businesses for us because of the nature of this business, because of fragmented supply."
+}
+],
+"order_book": [
+{
+"cat": "order_book",
+"grade": "A",
+"statement": "Direct hotel supply increased to over 12,000 hotels across 1,100 towns from 10,000 last quarter",
+"value": "12,000 hotels",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "Out of the 70,000 hotels in India that we sell, we are now tied up directly with over 12,000 hotels across about 1,100 towns, up from 10,000 hotels last quarter."
+},
+{
+"cat": "order_book",
+"grade": "B",
+"statement": "Hotel GTV grew 2.6x Y-o-Y to INR 111 crores with 4.7 lakh room nights, 3.9x Y-o-Y growth and 50% sequential growth",
+"value": "INR 111 crores",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "In Q2, hotel GTV reached INR111 crores, up 39% sequentially and 2.6x year-on-year. Revenue grew more than six-fold year-on-year to INR8.1 crores, and our gross take rate exceeded 12% and became the highest in our business."
+}
+],
+"capex": [
+{
+"cat": "capex",
+"grade": "A",
+"statement": "Hotel investment of INR 11 crores this quarter including INR 1 crore above contribution margin and INR 10 crores below in people and technology",
+"value": "INR 11 crores",
+"period": "Q2 FY27",
+"direction": null,
+"quote": "we would have spent a further 10 crore in the people and technology line for hotels, taking the total investment in hotels to slightly north of INR 11 crores this quarter."
+}
+],
+"product_mix": [
+{
+"cat": "product_mix",
+"grade": "A",
+"statement": "Launched Smart Lock agentic AI product for flights that scans fares 24/7 and locks cheapest flight matching preferences with full premium refund if no match",
+"value": null,
+"period": "Q2 FY27",
+"direction": null,
+"quote": "Smart Lock is an agentic AI product that finds and locks the cheapest flights based on preferences. You can tell it your route, budget, and travel preferences. It scans the airfares 24/7 and locks the first flight that fits within that budget and matches your preferences. If nothing matches by the time scanning ends, you get your full premium back in ixigo money right away."
+}
+],
+"risk": [
+{
+"cat": "risk",
+"grade": "A",
+"statement": "Flight segment remains cautious near-term with capacity not returning as expected and 30% fare increase Y-o-Y impacting bookings",
+"value": "30%",
+"period": "near term",
+"direction": "down",
+"quote": "Flight remains challenging in the near term as capacity has not returned as quickly as we had expected, and we are seeing the impact of oil prices reflected in the 30% increase in fares Y-o-Y on several routes."
+}
+],
+"other": [
+{
+"cat": "other",
+"grade": "A",
+"statement": "AI system TARA handles 43 lakh queries, resolves 94% of chat queries and 82% of calls end-to-end without human intervention",
+"value": "43 lakh queries",
+"period": "Q2 FY27",
+"direction": "up",
+"quote": "TARA handled 43 lakh queries before and after the booking and now resolves 94% of chat queries without human intervention and 82% of customer calls end-to-end."
+},
+{
+"cat": "other",
+"grade": "A",
+"statement": "94% of hotel transactions involve travel to or from Tier 2 and 3 cities, and more than 9 out of 10 trips sold by train or bus",
+"value": "94%",
+"period": "Q2 FY27",
+"direction": null,
+"quote": "94% of our transactions involve travel to or from Tier 2 and 3 cities, and more than 9 out of 10 trips we sell out by train or bus."
 }
 ]
 }
