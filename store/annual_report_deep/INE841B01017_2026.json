@@ -1,0 +1,719 @@
+{
+ "isin": "INE841B01017",
+ "name": "Indbank Merchant Banking Services Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30798_INDBANK_2025_2026_A_9253436_28082026183806.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 297510,
+ "chunks": 8,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Indbank Merchant Banking Services Limited is a subsidiary of Indian Bank engaged in stock broking (institutional and individual clients), depository services, and merchant banking activities.",
+   "products": [
+    {
+     "name": "Stock Broking",
+     "share_of_revenue_pct": null,
+     "note": "Turnover of Rs.15771.07 crores in FY 2025-26"
+    },
+    {
+     "name": "Depository Services",
+     "share_of_revenue_pct": null,
+     "note": "93,633 DP accounts and 53,883 broking accounts"
+    },
+    {
+     "name": "Depository Participant operations",
+     "share_of_revenue_pct": null,
+     "note": "93633 accounts under DP operations"
+    },
+    {
+     "name": "Distribution of Mutual Fund & other investment products",
+     "share_of_revenue_pct": null,
+     "note": "Brokerage of Rs.56.21 lakhs during the year"
+    },
+    {
+     "name": "Merchant Banking",
+     "share_of_revenue_pct": null,
+     "note": "Registered with SEBI as a Merchant Banker"
+    },
+    {
+     "name": "Depository Participant (DP) Operations",
+     "share_of_revenue_pct": null,
+     "note": "Income Rs.337.39 lakhs in FY2025-26, up 4.46% from Rs.322.97 lakhs due to increase in off-market transactions"
+    },
+    {
+     "name": "Mutual Fund Distribution",
+     "share_of_revenue_pct": null,
+     "note": "Income Rs.56.21 lakhs in FY2025-26, up 121.56% from Rs.25.37 lakhs; Mutual Fund AUM grew from Rs.47 crore (31.03.2025) to Rs.63 crore (31.03.2026)"
+    },
+    {
+     "name": "Depository Participant services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Distribution of Mutual Fund products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Stock broking services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue recognised on trade date basis"
+    },
+    {
+     "name": "Issue management and underwriting",
+     "share_of_revenue_pct": null,
+     "note": "Fees accounted on completion of milestones specified in contract"
+    },
+    {
+     "name": "Financial advisory services",
+     "share_of_revenue_pct": null,
+     "note": "Fees accounted on completion of milestones specified in contract"
+    },
+    {
+     "name": "Distribution income from funds",
+     "share_of_revenue_pct": null,
+     "note": "Recognised on receipt of distribution letter or when right to receive is established"
+    },
+    {
+     "name": "Merchant Banking Services",
+     "share_of_revenue_pct": null,
+     "note": "Includes brokerage received, channel partner commissions, and other fee-based services"
+    },
+    {
+     "name": "Mutual Fund Investments",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Demat Services",
+     "share_of_revenue_pct": null,
+     "note": "Depositary Participants with NSDL & CDSL"
+    },
+    {
+     "name": "Merchant Banking Advisory Services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Bonds and other Investment products",
+     "share_of_revenue_pct": null,
+     "note": "Includes Capital Gain Bonds for tax exemption u/s 54EC"
+    },
+    {
+     "name": "Margin Trading Facility (MTF) & ETF",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Research Advisory Service",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "institutional clients",
+    "individual clients",
+    "retail customers",
+    "institutional and individual clients",
+    "Retail investors",
+    "Corporates (SMEs and large companies)",
+    "Secondary broking customers",
+    "Clients for depository services",
+    "Companies for issue management and underwriting",
+    "Clients for financial advisory services",
+    "Investors in funds for distribution",
+    "Indian Bank (Holding Company)",
+    "Universal Sompo General Insurance Company Limited",
+    "Life Insurance Corporation of India",
+    "General Insurance Corporation of India",
+    "Canara Bank",
+    "Punjab National Bank",
+    "Indian Overseas Bank",
+    "Oriental Insurance Corporation of India",
+    "UCO Bank",
+    "United India Insurance Corporation of India",
+    "Agricultural Insurance Corporation of India",
+    "NPS Trust of India",
+    "Small Industries Development Bank of India"
+   ],
+   "geographies": [
+    {
+     "name": "Tamil Nadu",
+     "share_pct": null
+    },
+    {
+     "name": "Maharashtra",
+     "share_pct": null
+    },
+    {
+     "name": "West Bengal",
+     "share_pct": null
+    },
+    {
+     "name": "Delhi",
+     "share_pct": null
+    },
+    {
+     "name": "Telangana",
+     "share_pct": null
+    },
+    {
+     "name": "Andhra Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala",
+     "share_pct": null
+    },
+    {
+     "name": "Gujarat",
+     "share_pct": null
+    },
+    {
+     "name": "Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Puducherry",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Odisha",
+     "share_pct": null
+    },
+    {
+     "name": "Chandigarh",
+     "share_pct": null
+    },
+    {
+     "name": "Rajasthan",
+     "share_pct": null
+    },
+    {
+     "name": "Madhya Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "capital markets",
+    "financial services",
+    "mutual fund distribution",
+    "Insurance",
+    "Banking",
+    "Government Entities",
+    "Mutual funds",
+    "Investment advisory"
+   ],
+   "brands_or_certifications": [
+    "NSE member",
+    "BSE member",
+    "NSDL Depository Participant",
+    "CDSL Depository Participant",
+    "SEBI registered Merchant Banker",
+    "AMFI registered for Mutual Fund distribution",
+    "Member of NSE & BSE (Equity and Derivatives Segments)",
+    "Registered with NSDL and CDSL as a Depository Participant",
+    "Registered with Association of Mutual Funds of India (AMFI)",
+    "IndFortune - Mobile App for online trading",
+    "IndWealth - Mobile App for Mutual Fund investments"
+   ],
+   "competitors_named": [
+    "Online Zero/discount brokerages"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Anand & Ponnappan, Chartered Accountants, Chennai",
+   "opinion": "No observation in the Audit Report",
+   "key_audit_matters": [
+    "Recognition of Revenue-Brokerage: High volume of transactions, dependence on automated IT systems, risks relating to accuracy, completeness, and cut-off of revenue recognition"
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter 1: Disputed income tax demands of Rs.1842.78 Lakhs relating to exemption under section 10(38) for AY 2007-08 to 2009-10; appeal filed with High Court of Madras; no provision made",
+    "Emphasis of Matter 2: Lease and hire purchase receivables of Rs.470.07 lakhs (12 accounts) from discontinued fund-based operations as at 1 April 2025; Rs.162.08 lakhs (2 accounts) written off during year; additional provision of Rs.24.00 lakhs made; balance 10 accounts fully provided",
+    "The company has not accepted any deposits from the public",
+    "The Maintenance of cost records has not been specified by the central government under sub-section (1) of section 148 of Companies Act,2013",
+    "The company has not defaulted in repayment of loans or other borrowings or in the payment of interest thereon to any lender",
+    "The company has not availed any term loans during the year",
+    "The company has not raised money by way of initial public offer or further public offer (including debt instrument) during the year",
+    "No fraud by the company or on the company has been noticed or reported during the year",
+    "The company is not a Nidhi company",
+    "All the related party transactions during the financial year are in compliance with Section 177 and 188 of Companies Act, 2013",
+    "The company has adequate internal audit system to commensurate the size of the company",
+    "The company has not entered into any non-cash transactions with directors or persons connected with its directors during the year",
+    "The company is not required to be registered under Section 45-IA of the Reserve Bank of India Act, 1935",
+    "The company has not incurred any cash losses in the financial year and in the immediately preceding financial year",
+    "There has been no resignation of the statutory auditors during the year",
+    "Nothing has come to our attention, which causes us to believe that any material uncertainty exists as on the date of the audit report that company is not capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+    "There are no unspent amount in respect of other than ongoing projects, required to be transferred to the Funds specified in Schedule VII to the Companies Act, 2013",
+    "There are no amount remaining unspent to the extent of its statutory obligation, in respect of ongoing projects"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Shri Tausif Inamdar ceased as CFO on 18.07.2025",
+    "Shri M S Balaji appointed as CFO from 19.07.2025",
+    "Shri Tausif Inamdar, Chief Financial Officer of the Company, was repatriated to Indian Bank with effect from 18th July 2025. Consequently, the Board of Directors, at its meeting held on 18th July 2025, upon the recommendations of the Nomination and Remuneration Committee and the Audit Committee, at their respective meetings held on the same day, appointed Shri M.S. Balaji as the Chief Financial Officer of the Company with effect from 19th July 2025.",
+    "Mr. Tausif Inamdar ceased (upto 20.07.2025)",
+    "Mr. M S Balaji appointed as CFO (from 11.07.2025)"
+   ],
+   "promoter_holding_pct": 64.84,
+   "top_shareholders": [
+    {
+     "name": "Indian Bank",
+     "pct": 64.84
+    },
+    {
+     "name": "Indian Bank",
+     "pct": null
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Shri Ashutosh Chaudhury",
+     "role": "Nominee Director - Indian Bank"
+    },
+    {
+     "name": "Shri Vaijnath Gavarshetty",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Devinder Kumar Singla",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri V A Prasanth",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Smt Padma R",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Sunil Jain",
+     "role": "Nominee Director - Indian Bank"
+    },
+    {
+     "name": "Shri V Haribabu",
+     "role": "President and Whole Time Director"
+    },
+    {
+     "name": "Shri Tausif Inamdar",
+     "role": "Chief Financial Officer (upto 18.07.2025)"
+    },
+    {
+     "name": "Shri M S Balaji",
+     "role": "Chief Financial Officer (from 19.07.2025)"
+    },
+    {
+     "name": "Smt. Chitra M A",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "V. Haribabu",
+     "role": "President and Whole Time Director"
+    },
+    {
+     "name": "Sunil Jain",
+     "role": "Nominee Director"
+    },
+    {
+     "name": "M.S. Balaji",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "V. Haribabu",
+     "role": "President & Whole Time Director"
+    },
+    {
+     "name": "M.S. Balaji",
+     "role": "VP & CFO"
+    },
+    {
+     "name": "Chitra MA",
+     "role": "VP- Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "G Vijayalakshmi",
+     "role": "Head-Admin"
+    },
+    {
+     "name": "K S Chandramouli",
+     "role": "AVP & Service Branch Head"
+    },
+    {
+     "name": "ST Rama Rao",
+     "role": "AVP- Surveillance"
+    },
+    {
+     "name": "G Ramnath",
+     "role": "Head- Accounts"
+    },
+    {
+     "name": "Ashif Ahamed M.S",
+     "role": "Head- IT"
+    },
+    {
+     "name": "R Sreeram",
+     "role": "Research Analyst"
+    },
+    {
+     "name": "ASHUTOSH CHOUDHURY",
+     "role": "DIRECTOR (DIN 09245804)"
+    },
+    {
+     "name": "SUNIL JAIN",
+     "role": "DIRECTOR (DIN 09665264)"
+    },
+    {
+     "name": "V HARIBABU",
+     "role": "PRESIDENT AND WHOLE TIME DIRECTOR (DIN 09523733)"
+    },
+    {
+     "name": "M S BALAJI",
+     "role": "VICE PRESIDENT & CFO"
+    },
+    {
+     "name": "CS. CHITRA M A",
+     "role": "COMPANY SECRETARY (A33512)"
+    },
+    {
+     "name": "Mr. V. Haribabu",
+     "role": "President and Whole-Time Director"
+    },
+    {
+     "name": "Mr. Sunil Jain",
+     "role": "Non-Executive Nominee Director"
+    },
+    {
+     "name": "Mr. M S Balaji",
+     "role": "Vice President & Chief Financial Officer"
+    },
+    {
+     "name": "Ms. M.A. Chitra",
+     "role": "Vice President (Company Secretary & Compliance Officer)"
+    },
+    {
+     "name": "Mr. V.A. Prasanth",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Padma.R",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Vaijinath Gavarshetty",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Devinder Kumar Singla",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ashutosh Choudhury",
+     "role": "Director (DIN 09245804)"
+    },
+    {
+     "name": "Sunil Jain",
+     "role": "Director (DIN 09665264)"
+    },
+    {
+     "name": "V Haribabu",
+     "role": "President and Whole Time Director (DIN 09523733)"
+    },
+    {
+     "name": "MS Balaji",
+     "role": "Vice President & CFO"
+    },
+    {
+     "name": "CS Chitra M A",
+     "role": "Company Secretary (A33512)"
+    }
+   ],
+   "employees": 95
+  },
+  "other_notable": [
+   "Gross income of Rs.2515.29 lakhs in FY 2025-26 vs Rs.2680.88 lakhs in FY 2024-25",
+   "Net profit of Rs.708.92 lakhs in FY 2025-26 vs Rs.828.28 lakhs in FY 2024-25",
+   "Paid up equity share capital: Rs.4437.82 lakhs",
+   "EPS (Basic and Diluted): Rs.1.61 in FY 2025-26 vs Rs.1.91 in FY 2024-25",
+   "37th AGM scheduled for 24th September 2026 at 11:30 AM IST through VC/OAVM",
+   "Book closure from 18th September 2026 to 24th September 2026",
+   "No unclaimed dividend as on March 31, 2026",
+   "Registrar and Share Transfer Agent: M/s. Cameo Corporate Services Limited",
+   "Statutory Auditors: M/s. Anand & Ponnappan, Chartered Accountants, Chennai",
+   "Secretarial Auditors: M/s. Shanmugam Rajendran & Associates LLP, Practising Company Secretaries, Chennai",
+   "Bankers: M/s. Indian Bank",
+   "CIN: L65191TN1989PLC017883",
+   "Reserves & Surplus stands at Rs. 5436.27 lakhs as on 31.03.2026.",
+   "CSR obligation for FY 2025-26 was Rs.18,57,588; amount spent Rs.18,57,600 including Rs.13,07,000 for solar power plant at Hindu Mission Health Services and Rs.5,50,600 to Prime Minister's National Relief Fund.",
+   "Company has not accepted any fixed deposits.",
+   "No material changes or commitments affecting financial position between end of financial year and date of report.",
+   "No significant and material orders passed by regulators or courts impacting going concern status.",
+   "Internal financial controls are adequate and operating effectively.",
+   "Risk Management Policy and CSR Policy are in place and available on company website.",
+   "Annual listing fees paid to NSE and BSE for 2025-26.",
+   "Secretarial Audit by Shanmugam Rajendran & Associates LLP reported no observations.",
+   "No complaints received under Sexual Harassment of Women at Workplace Act during FY 2025-26.",
+   "Ratio of remuneration of President & Whole Time Director to median employee remuneration is 6.31.",
+   "Percentage increase in remuneration: President & Whole Time Director 13.24%, Vice President & CFO 2.28%, Company Secretary & Compliance Officer 3.82%.",
+   "Median remuneration increase: 10.30%.",
+   "Average percentile increase in salaries of non-managerial employees: 6.53%; managerial remuneration: 7.79%.",
+   "Gross income of Rs.2515.29 lakhs for FY 2025-26 vs Rs.2680.88 lakhs in previous year",
+   "Stock Broking turnover of Rs.15771.07 crores for FY 2025-26 vs Rs.15709.18 crores in previous year",
+   "53883 accounts under broking operations",
+   "Mutual fund distribution brokerage of Rs.56.21 lakhs for FY 2025-26 vs Rs.25.37 lakhs in previous year",
+   "No dividend declared for year ended 31.03.2026",
+   "Shares listed on BSE (Scrip Code: 511473) and NSE (Symbol: INDBANK)",
+   "Registrar and Share Transfer Agent: Cameo Corporate Services Limited",
+   "96.09% of paid-up equity share capital held in dematerialised form as on 31 March 2026",
+   "No unclaimed dividend since 2008-09",
+   "Whistle-Blower Policy established",
+   "No related party transactions with potential conflict",
+   "No material non-compliance on capital markets matters",
+   "No subsidiary company",
+   "Statutory auditor fees: Rs.8.45 lakhs (Audit Fees: 4.95, Quarterly Limited Review: 1.50, Tax Audit: 1.10, Certification: 0.90)",
+   "No complaints received under Sexual Harassment of Women at Workplace Act",
+   "Demat suspense account: one shareholder for 300 shares at end of year",
+   "No loans or advances to firms/companies where directors are interested",
+   "No GDRs/ADRs/warrants/convertible instruments outstanding",
+   "No commodity price risk, hedging or foreign exchange risk hedging activities",
+   "No plant locations",
+   "No funds raised through preferential allotment or QIP",
+   "Corporate Governance compliance certified by Shanmugam Rajendran & Associates LLP",
+   "Code of Conduct compliance affirmed by Board and Senior Management",
+   "CEO/CFO certification provided for financial statements",
+   "Share capital: 44,378,200 equity shares of Rs.10 each, listed on BSE and NSE, no change during year",
+   "Reserves & Surplus: Rs.5436.27 lakhs as on 31.03.2026",
+   "Current liabilities decreased to Rs.2439.84 lakhs from Rs.2623.78 lakhs mainly due to decrease in credit balances in clients' accounts under Stock Broking",
+   "Current assets increased to Rs.10420.63 lakhs from Rs.10401.88 lakhs due to increase in trade receivables and cash & cash equivalents",
+   "Net investments increased to Rs.301.96 lakhs from Rs.182.86 lakhs",
+   "Non-current Other Financial Assets increased from Rs.649.09 lakhs to Rs.1210.90 lakhs due to increase in investments and margin money held with stock exchanges",
+   "Deferred tax assets decreased from Rs.163.80 lakhs to Rs.157.12 lakhs",
+   "Profit for the period: Rs.712.48 lakhs in FY2025-26 vs Rs.846.33 lakhs in FY2024-25",
+   "Total Comprehensive Income: Rs.708.92 lakhs in FY2025-26 vs Rs.828.28 lakhs in FY2024-25",
+   "EPS (Basic and Diluted): Rs.1.61 in FY2025-26 vs Rs.1.91 in FY2024-25"
+  ],
+  "outlook": [
+   {
+    "statement": "Your company will continue to focus its efforts to increase its activities under fee-based business in addition to concentrating on recovery of over dues and reduction of Non-Performing Assets, disinvestment of quoted and unquoted investments. Your company's involved management network, satisfied clientele, quality manpower and diligent internal control and cost control measures will enable your company to continue to report better performance in the coming years.",
+    "period": "coming years"
+   },
+   {
+    "statement": "Company will continue to focus on increasing fee-based business activities, recovery of overdues, reduction of Non Performing Assets, and disinvestment of quoted and unquoted investments. Management network, satisfied clientele, quality manpower, profitable expansion, and diligent internal control and cost control measures will enable better performance in coming years.",
+    "period": "coming years"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "Your Company has no subsidiary companies as on March 31, 2026."
+   },
+   {
+    "name": "Indbank Merchant Banking Services Ltd",
+    "holding_pct": null,
+    "business": "Stock Broking, Depository Participant operations, Distribution of Mutual Fund & other investment products and Merchant Banking"
+   },
+   {
+    "name": "Indbank Merchant Banking Services Ltd",
+    "holding_pct": null,
+    "business": "Merchant Banking, Stock Broking, Depository Participant services and allied activities"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Indian Bank",
+    "nature": "Holding Entity",
+    "amount_cr": 3.1779
+   },
+   {
+    "party": "Ind Bank Housing Limited",
+    "nature": "Fellow subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Indian Bank",
+    "nature": "Promoter and holding company (64.84% shareholding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Indian Bank",
+    "nature": "Holding Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Ind Bank Housing Ltd",
+    "nature": "Fellow Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Indbank Global Support Services Limited",
+    "nature": "Fellow Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Universal Sompo General Insurance Company Limited",
+    "nature": "Associate Company of Holding Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. V. Haribabu",
+    "nature": "President and Whole-Time Director",
+    "amount_cr": 0.3654
+   },
+   {
+    "party": "Ms. M.A. Chitra",
+    "nature": "Vice President (Company Secretary & Compliance Officer)",
+    "amount_cr": 0.1392
+   },
+   {
+    "party": "Mr. Tausif Inamdar",
+    "nature": "Former KMP (upto 20.07.2025)",
+    "amount_cr": 0.0681
+   },
+   {
+    "party": "Mr. M S Balaji",
+    "nature": "Vice President & CFO (from 11.07.2025)",
+    "amount_cr": 0.157
+   },
+   {
+    "party": "Non-executive Independent Directors",
+    "nature": "Sitting fees",
+    "amount_cr": 0.0624
+   },
+   {
+    "party": "Indian Bank",
+    "nature": "Parent company / Subsidiary relationship",
+    "amount_cr": null
+   },
+   {
+    "party": "Indian Bank, Cumballa Hill Branch",
+    "nature": "Fixed deposits held as security",
+    "amount_cr": 2.7017
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Indian Bank",
+    "amount_cr": null,
+    "note": "Interest paid on Borrowings: Rs.18.73 Lakhs"
+   },
+   {
+    "lender_or_type": "Bank overdraft",
+    "amount_cr": null,
+    "note": "Overdraft interest charged by bank for more utilization of OD limit in current year; finance cost increased from Rs.12.18 lakhs to Rs.18.73 lakhs"
+   },
+   {
+    "lender_or_type": "Bank overdraft",
+    "amount_cr": 0.01,
+    "note": "As at 31-03-2025"
+   },
+   {
+    "lender_or_type": "Banks (Overdraft)",
+    "amount_cr": 0.0,
+    "note": "Overdraft from banks repayable on demand, fully secured by fixed deposits held with respective banks. Outstanding as at 31-03-2026: Rs 0 lakh (Rs 0.62 lakh as at 31-03-2025)"
+   },
+   {
+    "lender_or_type": "Indian Bank (Bank Overdraft)",
+    "amount_cr": 0.0,
+    "note": "Outstanding borrowing as at 31-03-2026 is Nil; previous year Rs 0.62 lakhs. Interest paid during FY2026: Rs 18.73 lakhs"
+   },
+   {
+    "lender_or_type": "Borrowings (Other than Debt Securities)",
+    "amount_cr": 0.0062,
+    "note": "As at 31-3-2025: Rs 0.62 lakhs; As at 31-3-2026: Nil"
+   }
+  ],
+  "litigation": [
+   "There were no proceedings, either filed by the Company or against the Company under the Insolvency and Bankruptcy Code, 2016 during the year under review.",
+   "Disputed income tax demands amounting to Rs.1842.78 Lakhs regarding exemption under section 10(38) for assessment years 2007-08 to 2009-10; appeal filed with Hon'ble High Court of Madras",
+   "Income tax and interest disputes for assessment years 2007-08, 2008-09, 2009-10, 2014-15, 1992-93, 1998-99 pending at High Court - Madras, awaiting re-computation, or rectification proceedings",
+   "Sales tax/ Additional Sales tax, Penalty and Interest disputes for 1998-99 and 1995-96 pending at Commercial Tax Officer Tamil Nadu",
+   "Goods and Service tax - Excess Input tax disputes for 2018-19, 2019-20, 2020-21, 2021-22 pending at Appellate Deputy Commissioner (ST)(GST)",
+   "Income Tax appeals pending at Hon'ble High Court of Madras for AY 2007-08 to 2009-10 regarding exemption under section 10(38)",
+   "Income Tax Appellate Tribunal order dated January 25, 2022 for AY 1992-93 accepted company's submissions; Assessing Officer yet to pass giving effect order",
+   "Rectification application filed for AY 2014-15 assessment order dated November 25, 2016",
+   "GST appeals pending for FY 2018-19 to 2021-22",
+   "Sales Tax demand disputed in appeal",
+   "Civil suit against M/s Shreeji Investments for recovery of Rs 45.21 lakhs (Suit No.1854 of 2001) - City Civil Court, Bombay decreed in favour of Company on 11 January 2019; appeal filed 11 March 2024, delay condoned 2 September 2024, admitted 2 February 2026, pending final adjudication",
+   "TDS and advance tax disputes for AY 2007-08, 2008-09, 2009-10, 2010-11 pending before Hon'ble High Court of Madras; other years at various stages with Income Tax Department",
+   "Rectification order issued for AY 1996-97"
+  ],
+  "dividend_per_share": 0,
+  "risks": [
+   "Credit risk",
+   "Liquidity risk",
+   "Interest rate risk",
+   "Operational risk",
+   "Technology disruption from AI, Data Analytics and modern applications in broking business",
+   "Online Zero/discount brokerages posing serious threat and disruption",
+   "Credit risk on trade receivables with significant credit impaired amounts",
+   "Impairment losses on investments in unquoted equity instruments",
+   "Concentration risk with Indian Bank holding 64.84% shares",
+   "Regulatory changes in capital markets and merchant banking",
+   "Market price risk from FVTPL investments in listed securities",
+   "Credit risk from customers/counterparties failing to discharge obligations",
+   "Liquidity risk in meeting financial obligations",
+   "Interest rate risk (though company states no floating rate instruments)",
+   "Disputed tax demands (Income Tax, Sales Tax, GST)",
+   "Actuarial risks: investment risk, interest rate risk, longevity risk, salary risk for gratuity",
+   "Pending litigation with M/s Shreeji Investments for recovery of Rs 45.21 lakhs",
+   "TDS and advance tax receivable balances of Rs 1,322.21 lakhs under dispute for multiple assessment years",
+   "Lease and hire purchase receivables of Rs 470.07 lakhs fully provided due to uncertainty of recovery",
+   "Unquoted investments of Rs 870.80 lakhs fully provided due to diminution in value",
+   "Dividend Adjustment Account of Rs 15.93 lakhs with unidentifiable beneficial ownership",
+   "Revised ECL estimates with impact on future periods not determinable"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed income tax demands relating to exemption under section 10(38) for assessment years 2007-08 to 2009-10; appeal filed with Hon'ble High Court of Madras; provision not made as management believes liability may not arise based on legal advice",
+    "amount_cr": 18.4278
+   },
+   {
+    "nature": "Income tax and interest",
+    "amount_cr": 19.15
+   },
+   {
+    "nature": "Sales tax/ Additional Sales tax, Penalty and Interest",
+    "amount_cr": 0.26
+   },
+   {
+    "nature": "Goods and Service tax - Excess Input tax",
+    "amount_cr": 0.35
+   },
+   {
+    "nature": "Disputed Income Tax demands (AY 1992-93, 2007-08, 2008-09, 2009-10, 2014-15)",
+    "amount_cr": 19.8262
+   },
+   {
+    "nature": "Disputed Sales Tax demand",
+    "amount_cr": 0.2604
+   },
+   {
+    "nature": "Disputed GST Excess Input tax demand (FY 2018-19 to 2021-22)",
+    "amount_cr": 0.3713
+   },
+   {
+    "nature": "Civil suit against M/s Shreeji Investments for recovery of Rs 45.21 lakhs - appeal admitted on 2 February 2026, pending final adjudication",
+    "amount_cr": 0.4521
+   },
+   {
+    "nature": "TDS and advance tax receivable balances aggregating to Rs 1,322.21 lakhs under dispute for AY 1990-91 onwards, pending before High Court of Madras and Income Tax Department",
+    "amount_cr": 13.2221
+   }
+  ]
+ }
+}

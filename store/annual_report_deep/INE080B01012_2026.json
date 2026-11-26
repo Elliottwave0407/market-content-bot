@@ -1,0 +1,1370 @@
+{
+ "isin": "INE080B01012",
+ "name": "Kohinoor Foods Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31864_KOHINOOR_2025_2026_A_22137982_08092026155424.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 555531,
+ "chunks": 14,
+ "chunks_ok": 14,
+ "facts": {
+  "business": {
+   "description": "Kohinoor Foods Limited is a company listed on NSE and BSE with registered office in Faridabad, Haryana.",
+   "value_chain_position": "other",
+   "products": [
+    {
+     "name": "Rice",
+     "share_of_revenue_pct": null,
+     "note": "Core product; includes basmati and non-basmati varieties"
+    },
+    {
+     "name": "Packaged food",
+     "share_of_revenue_pct": null,
+     "note": "Includes ready-to-eat meals, snacks, and ethnic/global flavor products"
+    },
+    {
+     "name": "Food business (processed/packaged food)",
+     "share_of_revenue_pct": 30.9,
+     "note": "Contributed INR 490.95 million in FY2025-26"
+    },
+    {
+     "name": "Food Business (Processed & Packaged)",
+     "share_of_revenue_pct": null,
+     "note": "Contribution INR 490.95 million in FY26 vs INR 836.99 million in FY25"
+    },
+    {
+     "name": "Basmati Rice",
+     "share_of_revenue_pct": null,
+     "note": "Requires aging for 9-12 months before selling; high working capital requirement"
+    },
+    {
+     "name": "Ready to Eat Food",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Food",
+     "share_of_revenue_pct": 33.75,
+     "note": "NIC Code 1075"
+    },
+    {
+     "name": "Foods",
+     "share_of_revenue_pct": null,
+     "note": "Sales of Products: Rs 4,909.51 Lacs in FY2026 vs Rs 8,369.98 Lacs in FY2025"
+    },
+    {
+     "name": "Services",
+     "share_of_revenue_pct": 0.3,
+     "note": "Income from Product Development Services Rs 50.43 Lacs in FY2026"
+    }
+   ],
+   "customers": [
+    "Domestic consumers",
+    "International markets",
+    "Government procurement agencies (FCI)",
+    "Retail chains (supermarkets/hypermarkets)",
+    "E-commerce platforms",
+    "International export markets",
+    "E-commerce platforms (planned)"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "International (USA, UAE, etc.)",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "International export markets",
+     "share_pct": null
+    },
+    {
+     "name": "USA, UAE, Canada, Australia, Middle East, Singapore, Japan, Mauritius, European countries",
+     "share_pct": null
+    },
+    {
+     "name": "Global",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": null
+    },
+    {
+     "name": "Overseas markets",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic markets",
+     "share_pct": null
+    },
+    {
+     "name": "Export",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "Asia",
+     "share_pct": 74.1
+    },
+    {
+     "name": "Americas",
+     "share_pct": 20.2
+    },
+    {
+     "name": "Europe",
+     "share_pct": 1.3
+    },
+    {
+     "name": "Africa",
+     "share_pct": 0.4
+    },
+    {
+     "name": "Middle East",
+     "share_pct": 4.0
+    }
+   ],
+   "plants": [
+    {
+     "location": "42-43 Milestone, G.T. Karnal Road, Village Sultanpur, Bahalgarh, Sonepat (Haryana) \u2013 131 021",
+     "capacity": ""
+    },
+    {
+     "location": "Khewat no. 40//40, 48//48, 42-43 KM Stone G.T. Karnal Road, Village Hasamabad, Sultanpur PO Bahalgarh, District Sonipat, Haryana 131 021",
+     "capacity": ""
+    },
+    {
+     "location": "Survey No. 47/1, Village: Bharapar, Gandhidham Kutch, Ta- Gandhidham \u2013 Kutch \u2013 370230 (Gujarat) - under development",
+     "capacity": ""
+    },
+    {
+     "location": "Survey no. 352/1, Plot No. 04 Mithirohar, Near Gausala, Taluka: Gandhidham, Kutchh \u2013 370240 (Gujarat) - rent agreement, development under process",
+     "capacity": ""
+    },
+    {
+     "location": "50-51 Milestone, G.T. Karnal Road, Murthal, Sonepat (Haryana) \u2013 131 027 (sold under OTS to RCM Consumer Products Private Limited, approval via postal ballot dated 21 April 2025)",
+     "capacity": ""
+    },
+    {
+     "location": "Kandla Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Food factory",
+     "capacity": ""
+    },
+    {
+     "location": "Kandla, Gujarat",
+     "capacity": "Planning to operate on lease basis"
+    },
+    {
+     "location": "Murthal",
+     "capacity": ""
+    },
+    {
+     "location": "Kandla, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Amritsar",
+     "capacity": ""
+    },
+    {
+     "location": "Murthal, Haryana",
+     "capacity": ""
+    },
+    {
+     "location": "Bahalgarh, Sonipat",
+     "capacity": ""
+    },
+    {
+     "location": "42-43 Milestone, G. T. Karnal Road, Village Sultanpur, Bahalgarh, Sonepat, Haryana-131021",
+     "capacity": ""
+    },
+    {
+     "location": "Khewat No. 40//40, 48//48, 42-43 KM Stone G. T. Karnal Road, Village Hasamabad, Sultanpur PO Bahalgarh District Sonipat Haryana 131 021",
+     "capacity": ""
+    },
+    {
+     "location": "Survey No. 47/1, Village: Bharapar, Gandhidham Kutch, Ta-Gandhidham \u2013 Kutch - 370230",
+     "capacity": ""
+    },
+    {
+     "location": "50-51 Milestone, G.T.Karnal Road, Murthal, Dist. Sonepat (Haryana)-131027",
+     "capacity": ""
+    },
+    {
+     "location": "Sonepat",
+     "capacity": "New food factory with state of art R & D facility"
+    },
+    {
+     "location": "Bahalgarh, Sonepat",
+     "capacity": ""
+    },
+    {
+     "location": "Murthal Sonipat, Haryana",
+     "capacity": "Sold during the year for a consideration of Rs. 190 Crores"
+    },
+    {
+     "location": "Murthal, Sonipat, Haryana",
+     "capacity": ""
+    },
+    {
+     "location": "Murthal, Sonipat, Haryana",
+     "capacity": "Sold during the year for Rs 190 Crores"
+    }
+   ],
+   "raw_materials": [
+    "Paddy",
+    "Hybrid seeds",
+    "Open-pollinated varieties",
+    "Basmati paddy",
+    "Raw Material",
+    "Packing Materials"
+   ],
+   "end_markets": [
+    "Domestic retail",
+    "Export markets",
+    "Government procurement",
+    "Packaged food consumers",
+    "Food service",
+    "Packaged food",
+    "Rice",
+    "Processed food",
+    "Health-conscious consumers",
+    "Retail consumers",
+    "Global markets",
+    "Rice market",
+    "Domestic consumers",
+    "International export markets",
+    "food products",
+    "Domestic",
+    "Export"
+   ],
+   "brands_or_certifications": [
+    "Kohinoor",
+    "Empanelled with CAG and RBI",
+    "Kohinoor (established brand across rice, processed food, and packaged food categories)",
+    "Super Brand Award (thrice in series)",
+    "Reader's Digest Most Trusted Brand award (4 times in a row)",
+    "Power Brand Award",
+    "Guinness Book of World Record (for making World's Largest Biryani)",
+    "National award for Export Excellence",
+    "Brand Equity Award",
+    "APEDA awards",
+    "Kohinoor Basmati Brands"
+   ],
+   "subsidiaries": [
+    {
+     "name": "Rich Rice Raisers LLC",
+     "holding_pct": 25,
+     "business": "Joint venture company, operations closed"
+    }
+   ]
+  },
+  "auditor": {
+   "name": "M/s Arora and Choudhary, Chartered Accountant, New Delhi (Firm Registration No. 000870N)",
+   "opinion": "Observations with regard to management assessment of (a) the Company's ability to continue as going concern in view of continuous operational loss and negative net worth and due to financial constraint, material uncertainty exists about the company's ability to continue as going concern.",
+   "key_audit_matters": [
+    "Going concern assessment",
+    "Corporate guarantee liability for subsidiary",
+    "Interest not provided on revoked corporate guarantee",
+    "Company's ability to continue as going concern in view of continuous operational loss and negative net worth and due to financial constraint, material uncertainty exists",
+    "Company has not provided interest towards revoked corporate guarantee for loan given to wholly owned subsidiary in USA by PNB Hongkong, to the extent of Rs 318.43 Lacs for current year, Rs. 284.20 Lacs for previous year and Rs. 1528.28 Lacs from date of revocation up to 31-03-2026",
+    "Going concern assessment based on OTS sanction and payment, but material uncertainty exists due to continuous operational losses, negative net worth and financial constraints.",
+    "Non-provision of interest on revoked corporate guarantee for subsidiary's loan from PNB Hongkong (now PNB-Dubai) - Rs 318.42 lacs current year, Rs 284.20 lacs previous year, Rs 1528.27 lacs cumulative.",
+    "Non-provision for demands raised by various authorities (Income Tax, VAT etc.) pending before appellate forums.",
+    "Banks classified accounts as NPA and served recall notices under SARFAESI Act; OTS agreement entered and fully paid.",
+    "NCLT petitions under IBC Section 7 by Punjab National Bank and IDBI Bank disposed off after full OTS payment.",
+    "DRT proceedings and Ex-parte Interim Order by ICICI Bank; OTS fully paid.",
+    "Corporate guarantee invocation by PNB Hongkong for subsidiary loan; liability recognized Rs 4429.57 Lacs; OTS proposal submitted.",
+    "Sale of Rice Plant at Murthal Sonipat for Rs 190 Crores plus Rs 8 Crore land; gain recognized on entire plant.",
+    "Prior period adjustments for interest expense (Rs 844.87 lacs), revaluation surplus allocation error, and income tax expenses (Rs 547.31 lacs).",
+    "Matters described in the 'basis for qualified opinion' and 'emphasis of matter' paragraph are by their nature key audit matters.",
+    "Non-provision of interest on revoked corporate guarantee",
+    "Pending litigations and disputes",
+    "Sale of rice plant and land",
+    "Prior period adjustments and restatements",
+    "OTS with lenders and NOC status",
+    "Impairment assessment of assets",
+    "Balances subject to confirmation",
+    "Material weakness in internal control system for customer acceptance, credit evaluation, credit limit establishment, and acceptance of goods by customers and transfer of risk & reward at time of sales.",
+    "No internal control system for follow-up/recovery/adjustment of old outstanding receivables and payables including balance confirmation and reconciliation."
+   ],
+   "qualifications_or_emphasis": [
+    "Material uncertainty exists about the company's ability to continue as going concern due to continuous operational loss and negative net worth and financial constraints",
+    "Company has not provided interest towards revoked corporate guarantee for loan given to wholly owned subsidiary in USA by PNB Hongkong",
+    "Emphasis of Matters: (a) Going concern uncertainty due to continuous operational loss, negative net worth and financial constraints. (b) Non-provision of interest on revoked corporate guarantee for subsidiary loan.",
+    "Qualification: Going concern uncertainty due to continuous operational losses, negative net worth and financial constraints.",
+    "Qualification: Non-provision of interest on revoked corporate guarantee; aggregate un-provided amount not ascertainable with accuracy.",
+    "Emphasis: Non-provision for demands by authorities pending before appellate forums.",
+    "Emphasis: NPA classification and recall notices under SARFAESI Act; OTS fully paid.",
+    "Emphasis: NCLT petitions under IBC Section 7 disposed off after OTS payment.",
+    "Emphasis: DRT proceedings and Ex-parte Interim Order; OTS fully paid.",
+    "Emphasis: Corporate guarantee invocation and liability recognition; OTS proposal submitted.",
+    "Emphasis: OTS resolution plan sanctioned for INR 227.45 crores; fully paid; NOC from 4 of 6 lenders obtained.",
+    "Emphasis: Write-off of unrecoverable balances and write-back of non-payable balances.",
+    "Emphasis: Sale of Rice Plant at Murthal for Rs 190 Crores; gain recognized on entire plant.",
+    "Emphasis: Prior period tax expense Rs 547.31 lacs adjusted against earlier deposits.",
+    "Emphasis: Prior period adjustments for revaluation surplus allocation error and interest expense Rs 844.87 lacs.",
+    "Emphasis: Pending litigation - Port of Mumbai money suit (Rs 963 lacs), Municipal Corporation notice for Pinnacle Tower, vendor execution petition, SEBI show cause notice.",
+    "Emphasis: Management assessment of no impairment of assets as recoverable amount higher than carrying value.",
+    "Basis for Qualified Opinion: Material weakness in internal control system for (a) Customer acceptance; (b) Customer credit evaluation; (c) Establishing customer credit limit for sales; (d) Acceptance of goods by customers and transfer of risk & reward at the time of sales. This could potentially result in the company recognising revenue without establishing reasonable certainty of ultimate collection.",
+    "Material weakness: No internal control system for follow-up/recovery/adjustment of old outstanding receivables and payables including balance confirmation and reconciliation.",
+    "Emphasis of Matter: Balances of some debtors and creditors are subject to their confirmations (Note No. 47).",
+    "Emphasis of Matter: Corresponding figures for the previous year have been regrouped/rearranged wherever necessary to conform to current year classification (Note No. 48).",
+    "Material uncertainty exists about company's ability to continue as going concern due to continuous operational losses, negative net worth and financial constraints",
+    "Company has not provided interest towards revoked corporate guarantee for loan to subsidiary by PNB Hongkong (now PNB-Dubai) to the extent of Rs 318.42 lacs for current year, Rs 284.20 lacs for previous year and Rs 1528.27 lacs from date of revocation up to 31-03-2026",
+    "No provision made towards penal interest, penalties, any other debit or credit as may be done by lenders",
+    "Aggregate amount un-provided in books not ascertainable with accuracy due to absence of reconciliation and complete statement of account from banks",
+    "Company has not made provision for demands raised by various authorities (Income Tax, VAT etc.) as matters pending before appellate forums",
+    "Banks classified company's accounts as NPA and served recall notices under SARFAESI Act; company entered into OTS and paid full amount",
+    "Lead banker PNB filed petition under Section 7 of IBC, 2016 before NCLT Chandigarh; petition disposed off after full OTS payment",
+    "Secured creditor IDBI Bank filed petition under Section 7 of IBC, 2016 before NCLT Chandigarh; petition disposed off after full OTS payment",
+    "Ex-parte interim order from DRT-III Delhi in ICICI Bank vs Kohinoor Foods restraining transfer/alienation of hypothecated assets/immovable properties",
+    "Lead bank filed petition before DRT Delhi under section 19(4); company contesting matter",
+    "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for subsidiary loan; company recognized liability of Rs 4429.57 lacs and submitted OTS proposal",
+    "OTS resolution plan sanctioned for INR 227.45 crores by consortium lenders; company fully paid balance amount with interest; obtained NOC from 4 of 6 lenders",
+    "During year company wrote off some unrecoverable balances and wrote back some non-payable balances",
+    "Company sold rice plant at Murthal for Rs 190 crores and additional land for Rs 8 crores; sale deed of Rs 82.35 crores registered till 31 March 2026, another of Rs 80 crores registered in May 2026, balance land parcel of Rs 10.65 crores not yet registered",
+    "Income tax expenses for prior year of Rs 547.31 lacs pertain to tax demand of previous years",
+    "Error in allocation of revaluation surplus at Amritsar; previous year figures restated",
+    "Interest paid during year includes Rs 844.87 lacs pertaining to period 01-10-2024 to 31-03-2025 not provided in previous year; treated as prior period expense",
+    "SEBI show cause notice issued to directors and company; settlement and adjudication application filed",
+    "Management assessment that recoverable amount of assets higher than carrying value; no impairment recorded",
+    "Balances of some debtors and creditors subject to confirmation",
+    "Previous year figures regrouped/rearranged",
+    "Qualified opinion on internal financial controls due to material weaknesses identified.",
+    "Did not receive audit reports for subsidiary companies; impact not significant in consolidated financial statements.",
+    "Company has not incurred cash losses during the financial year covered by audit and immediately preceding financial year.",
+    "Company not required to spend on CSR for FY 2025-26 and FY 2026-27 due to losses in preceding three years computed under Section 198."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mr. Jugal Kishore Arora (DIN 00010704) as Whole time Director designated as Chairman for three years from 26 September 2026",
+    "Re-appointment of Mr. Satnam Arora (DIN 00010667) as Jt. Managing Director for three years from 26 September 2026",
+    "Re-appointment of Mr. Gurnam Arora (DIN 00010731) as Jt. Managing Director for three years from 26 September 2026",
+    "Mr. Satnam Arora (DIN 00010667) retires by rotation and offers himself for re-appointment",
+    "M/s N C Raj & Associates, Chartered Accountants, Statutory Auditors to complete tenure of 5 years on conclusion of forthcoming AGM",
+    "Board approved appointment of M/s Arora and Choudhary (Firm Registration No. 000870N) as Statutory Auditors for 5 years from conclusion of 37th AGM to 42nd AGM",
+    "Mr. Pradeep Goswami appointed as CFO w.e.f. 01.04.2025, resigned w.e.f. 17.11.2025",
+    "Mr. Prabhat Kumar appointed as CFO w.e.f. 18.11.2025",
+    "Re-appointment of Mr. Jugal Kishore Arora (DIN 00010704) as Whole-time Director designated as Chairman for 3 years from 26 September 2026",
+    "Re-appointment of Mr. Satnam Arora (DIN 00010667) as Jt. Managing Director for 3 years from 26 September 2026",
+    "Re-appointment of Mr. Gurnam Arora (DIN 00010731) as Jt. Managing Director for 3 years from 26 September 2026",
+    "Re-appointment of Mr. Jugal Kishore Arora as Chairman (Whole Time Director) for 3 years from 26 Sep 2026 to 25 Sep 2029",
+    "Re-appointment of Mr. Satnam Arora as Jt. Managing Director for 3 years from 26 Sep 2026 to 25 Sep 2029",
+    "Re-appointment of Mr. Gurnam Arora as Jt. Managing Director for 3 years from 26 Sep 2026 to 25 Sep 2029",
+    "Appointment of M/s Arora and Choudhary as Statutory Auditors for 5 years from conclusion of 37th AGM to 42nd AGM (replacing M/s N C Raj & Associates)",
+    "Satnam Arora (DIN 00010667) retires by rotation at ensuing AGM and offers himself for reappointment",
+    "Re-appointment and remuneration of Mr. Jugal Kishore Arora (DIN 00010704), Mr. Satnam Arora (DIN 00010667) and Mr. Gurnam Arora (DIN 00010731) for further period of three years starting from 1st October 2026",
+    "Mr. Pradeep Goswami appointed as CFO w.e.f. 01st April 2025, resigned w.e.f. closing of business hours on 17-11-2025",
+    "Mr. Prabhat Kumar appointed as CFO w.e.f. 18th November 2025",
+    "Board approved appointment of M/s Cheena & Associates, Cost Accountants as Cost Auditors for FY 2026-27 subject to ratification",
+    "Board approved appointment of M/s MANK and Associates, Company Secretary Firm as Secretarial Auditors for FY 2026-27",
+    "Board approved appointment of M/s N N A & Co, Chartered Accountants as Internal Auditor for FY 2026-27",
+    "Pradeep Goswami (CFO) appointed w.e.f. 01/04/2025, resigned on 17/11/2025",
+    "Prabhat Kumar (CFO) appointed w.e.f. 18/11/2025 in Board Meeting dated 13/02/2026",
+    "Deepak Kaushal (CS & Compliance Officer) appointed w.e.f. 14/08/2019"
+   ],
+   "auditor_change": "M/s Arora and Choudhary appointed as Statutory Auditors from conclusion of 37th AGM till conclusion of 42nd AGM",
+   "top_shareholders": [
+    {
+     "name": "Mr. Jugal Kishore Arora",
+     "pct": null
+    },
+    {
+     "name": "Mr. Satnam Arora",
+     "pct": null
+    },
+    {
+     "name": "Mr. Gurnam Arora",
+     "pct": null
+    },
+    {
+     "name": "Mr. Gurnam Arora",
+     "pct": 16.97
+    },
+    {
+     "name": "Mr. Satnam Arora",
+     "pct": 15.51
+    },
+    {
+     "name": "Mr. Jugal Kishore Arora",
+     "pct": 2.84
+    },
+    {
+     "name": "Promoter, Directors and Relatives",
+     "pct": 37.67
+    },
+    {
+     "name": "Foreign Companies",
+     "pct": 19.01
+    },
+    {
+     "name": "Individual Shareholders",
+     "pct": 40.18
+    },
+    {
+     "name": "Al Dahra International Investments LLC",
+     "pct": 19.01
+    },
+    {
+     "name": "Gurnam Arora",
+     "pct": 16.97
+    },
+    {
+     "name": "Satnam Arora",
+     "pct": 15.51
+    },
+    {
+     "name": "Jugal Kishore Arora",
+     "pct": 2.84
+    },
+    {
+     "name": "AL Dahra International Investments LLC",
+     "pct": 19.01
+    }
+   ],
+   "promoter_holding_pct": 37.67,
+   "promoter_pledge_pct": 0
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Jugal Kishore Arora",
+     "role": "Whole time Director designated as Chairman"
+    },
+    {
+     "name": "Mr. Satnam Arora",
+     "role": "Jt. Managing Director"
+    },
+    {
+     "name": "Mr. Gurnam Arora",
+     "role": "Jt. Managing Director"
+    },
+    {
+     "name": "Deepak Kaushal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Jugal Kishore Arora",
+     "role": "Chairman (Whole Time Director)"
+    },
+    {
+     "name": "Mr. Yash Pal Mahajan",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Sunil Sharma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Mani Chandra Bhandari",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Pradeep Goswami",
+     "role": "CFO (appointed 01.04.2025, resigned 17.11.2025)"
+    },
+    {
+     "name": "Mr. Prabhat Kumar",
+     "role": "CFO (appointed 18.11.2025)"
+    },
+    {
+     "name": "Mr. Deepak Kaushal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Jugal Kishore Arora",
+     "role": "Chairman & Whole-time Director"
+    },
+    {
+     "name": "Satnam Arora",
+     "role": "Jt. Managing Director"
+    },
+    {
+     "name": "Gurnam Arora",
+     "role": "Jt. Managing Director"
+    },
+    {
+     "name": "Satnam Arora",
+     "role": "Director (DIN 00010667)"
+    },
+    {
+     "name": "Jugal Kishore Arora",
+     "role": "Director (DIN 00010704)"
+    },
+    {
+     "name": "Gurnam Arora",
+     "role": "Director (DIN 00010731)"
+    },
+    {
+     "name": "Pradeep Goswami",
+     "role": "CFO (appointed 01/04/2025, resigned 17/11/2025)"
+    },
+    {
+     "name": "Prabhat Kumar",
+     "role": "CFO (appointed 18/11/2025)"
+    },
+    {
+     "name": "Mrs. Mani Chandra Bhandari",
+     "role": "Chairperson of CSR Committee"
+    },
+    {
+     "name": "Mr. Satnam Arora",
+     "role": "Member of CSR Committee"
+    },
+    {
+     "name": "Mr. Gurnam Arora",
+     "role": "Member of CSR Committee"
+    },
+    {
+     "name": "Mr. Jugal Kishore Arora",
+     "role": "Whole-time Director, designated as Chairman"
+    },
+    {
+     "name": "Mr. Satnam Arora",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Mr. Gurnam Arora",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Mr. Sunil Sharma",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Yash Pal Mahajan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Mani Chandra Bhandari",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Deepak Kaushal",
+     "role": "Company Secretary & Manager (Legal)"
+    },
+    {
+     "name": "Chashu Arora",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Prabhat Kumar",
+     "role": "CFO"
+    },
+    {
+     "name": "Jugal Kishore Arora",
+     "role": "Chairman"
+    },
+    {
+     "name": "Sunil Sharma",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Yash Pal Mahajan",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mani Chandra Bhandari",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Pradeep Goswami",
+     "role": "Chief Financial Officer (Appointed 01/04/2025, Resigned 17/11/2025)"
+    },
+    {
+     "name": "Prabhat Kumar",
+     "role": "Chief Financial Officer (Appointed 18/11/2025)"
+    },
+    {
+     "name": "Deepak Kaushal",
+     "role": "Company Secretary & Compliance Officer (Appointed 14/08/2019)"
+    },
+    {
+     "name": "Satnam Arora",
+     "role": "Jt. Mg. Director"
+    },
+    {
+     "name": "Gurnam Arora",
+     "role": "Jt. Mg. Director"
+    },
+    {
+     "name": "Prabhat Kumar",
+     "role": "C.F.O"
+    },
+    {
+     "name": "Satnam Arora",
+     "role": "Jt.Mg.Director"
+    },
+    {
+     "name": "Gurnam Arora",
+     "role": "Jt.Mg.Director"
+    }
+   ],
+   "employees": 111
+  },
+  "other_notable": [
+   "37th AGM scheduled for 30th September 2026 at 11:30 a.m. IST through VC/OAVM",
+   "Remote e-voting period: 27th September 2026 (9:00 am IST) to 29th September 2026 (5:00 pm IST)",
+   "Cut-off date for voting: 18th September 2026",
+   "Cost Auditor: M/s. Cheena & Associates appointed for FY 2026-27",
+   "NSDL providing e-voting and VC/OAVM facility",
+   "Deemed venue for AGM: Registered Office at Pinnacle Business Tower, 10th Floor, Shooting Range Road, Surajkund, Faridabad, Haryana - 121001",
+   "37th AGM scheduled for September 30, 2026 via VC/OAVM",
+   "Register of Members and Share Transfer books closed from 24th to 30th September 2026",
+   "Unpaid/unclaimed dividends for 7 years transferred to IEPF; shares with unpaid dividend for 7 consecutive years to be transferred to IEPF demat account",
+   "SEBI mandates PAN submission for all securities market participants",
+   "Physical share transfers prohibited since 1st April 2019; dematerialization advised",
+   "Cost auditor M/s Cheena & Associates appointed for FY ending March 31, 2027; remuneration to be ratified by shareholders",
+   "Reappointment of Mr. Jugal Kishore Arora (Chairman), Mr. Satnam Arora and Mr. Gurnam Arora (Jt. Managing Directors) for 3 years from 26th September 2026 to 25th September 2029",
+   "Proposed basic salary ranges: Chairman Rs. 9,00,000-75,000-12,00,000; Jt. MDs Rs. 8,50,000-75,000-11,50,000 per month",
+   "Perquisites capped at 50% of salary; total remuneration subject to Central Government approval if exceeding Schedule V limits",
+   "Company obtained Central Government approval for managerial remuneration vide letter dated 23rd October 2018",
+   "Past remuneration (FY25-26): Chairman Rs. 96 lakh, each Jt. MD Rs. 90 lakh",
+   "Shareholding as on 31st March 2023: Chairman 10,53,484; Satnam Arora 57,49,158; Gurnam Arora 62,89,204 equity shares",
+   "Directors are brothers; deemed interested in each other's reappointment/remuneration resolutions",
+   "M/s Arora and Choudhary: 40+ years experience, 4 offices, 50+ team, 7 partners, empanelled with CAG and RBI",
+   "Secretarial Auditor: M/s Mank and Associates, Company Secretaries",
+   "Internal Auditor: M/s N N A & Co., Chartered Accountants",
+   "Registrar & Transfer Agent: M/s Skyline Financial Services Pvt. Ltd., D-153A, 1st Floor, Okhla Industrial Area, Phase-I, New Delhi-110020",
+   "Listed on NSE and BSE; Depositories: NSDL and CDSL",
+   "Total turnover FY2025-26: INR 1,588.69 million (vs INR 875.93 million previous year)",
+   "Rice business: INR 963.70 million (vs INR 5.58 million previous year)",
+   "Food business: INR 490.95 million (vs INR 836.99 million previous year)",
+   "Food factory continued operations effectively despite liquidity constraints",
+   "37th AGM scheduled for 30th September 2026 at 11:30 a.m. IST via VC/OAVM",
+   "Cost auditor: M/s. Cheena & Associates for FY2026-27",
+   "Company CIN: L52110HR1989PLC070351",
+   "Registered Office: Pinnacle Business Tower, 10th Floor, Shooting Range Road, Surajkund, Faridabad, Haryana - 121001",
+   "37th AGM scheduled for 30 September 2026 via VC/OAVM",
+   "Register of Members closed 24-30 September 2026",
+   "Cut-off date for e-voting: 18 September 2026",
+   "Unpaid/unclaimed dividends transferred to IEPF after 7 years",
+   "Shares with unclaimed dividend for 7 consecutive years to be transferred to IEPF demat account",
+   "SEBI mandates PAN submission; physical shares to be dematerialized",
+   "Cost auditor M/s Cheena & Associates appointed for FY ending 31 March 2027",
+   "RTA: Skyline Financial Services Pvt. Ltd., D-153A, First Floor, Okhla Industrial Area, Phase-I, New Delhi-110020",
+   "Company website: www.kohinoorfoods.in",
+   "Global Ready-to-Eat food market valued at USD 189.1 billion in 2024, expected to reach USD 269.4 billion by 2033 (CAGR 4.01%)",
+   "Packaged food market valued at USD 6.34 trillion",
+   "Financial performance (Rs. Lakhs): Q1 FY27 Turnover 3,179; FY25 Turnover 9,140; FY24 Turnover 9,573; FY23 Turnover 8,425",
+   "FY26 Total Turnover 1,588.69 million; PBIDT 47.68 million; PBT 891.34 million; PAT 806.82 million",
+   "FY25 Total Turnover 875.93 million; PBIDT 51.91 million; PBT 3,582.76 million; PAT 3,525.13 million",
+   "Company has demonetized its rice manufacturing unit; buyer deposited INR 190 Crore to lenders; additional land demonetized for INR 8 Crore",
+   "Lender issued NOC against rice manufacturing unit; majority lenders issued NOC, remaining to issue in due course",
+   "Company planning to operate rice manufacturing unit on lease basis from Kandla, Gujarat",
+   "No material changes and commitments affecting financial position between March 31, 2026 and date of report",
+   "No change in nature of business during financial year ended March 31, 2026",
+   "No amount transferred to reserves for financial year ended March 31, 2026",
+   "No dividend recommended for financial year 2025-26",
+   "Credit rating as on March 31, 2026 is D",
+   "Consolidated financial statements prepared under Ind AS; joint venture Rich Rice Raisers LLC (25% shareholding) not consolidated as parent not in position to exercise control",
+   "Internal control systems and internal financial controls in place",
+   "Equity shares listed on BSE Limited and National Stock Exchange of India Limited",
+   "Paid up Share Capital: Rs. 370,715,300/- comprising 37,071,530 equity shares of Rs. 10/- each",
+   "Authorized capital increased from Rs. 75 Crore to Rs. 375 Crore (approved in 36th AGM on 30th September 2025)",
+   "Annual listing fee for FY 2026-27 paid to BSE and NSE"
+  ],
+  "outlook": [
+   {
+    "statement": "Company is gradually rebuilding momentum after a difficult phase marked by financial constraints, economic pressures, liquidity challenges, and the impact of the pandemic. Earned net profit of Rs. 210 lakh in quarter ended 30th September 2026 and is hopeful for better performance in future.",
+    "period": "FY2026-27 onwards"
+   },
+   {
+    "statement": "India rice market size estimated at USD 49.32 billion in 2026, growing to USD 62.09 billion by 2031 at 4.72% CAGR. Removal of September 2024 ban on non-basmati white rice exports has increased export opportunities.",
+    "period": "2026-2031"
+   },
+   {
+    "statement": "Packaged food market valued at USD 6.34 trillion in 2025, estimated to grow from USD 6.61 trillion in 2026 to USD 8.15 trillion by 2031 at 4.28% CAGR. Growth driven by urbanization, rising disposable income, demand for convenient nutrient-dense products, ethnic/global flavors, and health-focused products.",
+    "period": "2026-2031"
+   },
+   {
+    "statement": "Company aims to make Kohinoor Foods Ltd. a leading name in global food business, bring authentic Indian flavours worldwide, develop products, enhance operational efficiency, and execute strategies for sustainable growth.",
+    "period": "Ongoing/Long-term"
+   },
+   {
+    "statement": "Focused on business recovery and sustainable growth through initiatives: identifying investors for fund infusion, expanding global presence, expanding product portfolio, expanding customer base, leveraging market expertise, improving operational efficiencies, launching food products on domestic e-commerce platforms.",
+    "period": "2025-26 and beyond"
+   },
+   {
+    "statement": "Company is taking further steps to improve the earning position and is optimistic of earning good profits in coming years.",
+    "period": "future"
+   },
+   {
+    "statement": "During the quarter ended 30th September 2026, the Company has earned a Net Profit of Rs. 210 Lakh and is hopeful for better performance in its future.",
+    "period": "Q2 FY27"
+   },
+   {
+    "statement": "The management believes the company can continue as a going concern based on the sanction of revised/revival of one time settlement by the lenders, which has been fully paid, and interest shown by prospective investors.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The management of the Company believes that it can continue as a going concern, based on the sanction of revised / revival of one time settlement by the lenders, which has been fully paid by the company and the interest shown by Prospective Investors in the Company.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The company is planning to operate the rice manufacturing unit (on lease basis) from Kandla Gujarat to sustain its rice business.",
+    "period": "future"
+   },
+   {
+    "statement": "Actual results may differ from those expressed in the statement. Important factors that could influence the Company's operations include global and domestic demand and supply conditions affecting selling prices of finished goods, input availability and prices, changes in Government Regulations, Tax laws.",
+    "period": "Forward-looking"
+   },
+   {
+    "statement": "The company expects to notch up good numbers in the next financial year through some exciting product launches and expanding & streamlining the distribution network.",
+    "period": "next financial year"
+   },
+   {
+    "statement": "Steps are continuously being taken to promote the branded sales in overseas market. The company is exciting product launches and expanding & streamlining the distribution network in domestic as well as in International Market.",
+    "period": "future"
+   },
+   {
+    "statement": "Due to liquidity problem and banking restrictions, the exports were badly affected, during the year. However, the Company has strong Global Network and expect the exports to revive soon.",
+    "period": "future"
+   },
+   {
+    "statement": "The company continues to be going concern based on the sanction of revised / revival of One Time Settlement by lead Bank, which has been fully paid by the company.",
+    "period": "FY2026"
+   }
+  ],
+  "risks": [
+   "Climate change and extreme precipitation events affecting crop yields",
+   "Geopolitical uncertainty and evolving trade dynamics",
+   "Fluctuating demand and export policy changes (e.g., export bans)",
+   "Financial constraints and liquidity challenges",
+   "Concentration of procurement in few states creating regional disparities",
+   "Small landholdings restricting mechanization",
+   "High cost of hybrid seeds limiting accessibility",
+   "Domestic price floor reducing export competitiveness",
+   "Infrastructure development for climate resilience inconsistent across regions",
+   "Liquidity constraints",
+   "Financial challenges requiring fund infusion",
+   "Need to regain market share",
+   "Dependence on stakeholder confidence",
+   "Financial crisis and liquidity problems",
+   "Instability in overseas markets",
+   "Global political market hindrance",
+   "Impact of Covid-19 pandemic",
+   "Remuneration may exceed limits under Schedule V requiring Central Government approval",
+   "Company had no profits or inadequate profits during tenure of managerial personnel",
+   "Procurement risk due to dependence on monsoon and farm production vulnerability",
+   "High working capital requirement due to 9-12 months aging of Basmati rice",
+   "Intense competition from unorganized sector offering basmati in loose unbranded form",
+   "Macro-economic factors like recession, subdued demand and political uncertainty",
+   "Climate risks including extreme precipitation events and potential 20% decline in irrigated crop yields",
+   "Default in repayment of bank loans from March 2018 onwards, accounts classified as NPA",
+   "Legal proceedings including NCLT petitions, DRT cases, ED notices, CBI notices",
+   "Corporate guarantee liability for subsidiary Kohinoor Foods USA Inc. to PNB Dubai",
+   "Money suit by Board of Trustee of port of Mumbai for demurrage charges",
+   "Vendor execution petition in Faridabad District Court",
+   "Municipal Corporation notice for vacating premises at Pinnacle Tower, Surajkund Faridabad",
+   "SEBI Show Cause Notice under rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995",
+   "Auditor's observation on material uncertainty about company's ability to continue as going concern due to continuous operational loss and negative net worth",
+   "Continuous operational loss and negative net worth",
+   "Financial constraints",
+   "Material uncertainty exists about the company's ability to continue as going concern",
+   "Litigation in taxation, banking and rice business",
+   "Default in repayment of bank loans from March 2018 onwards",
+   "Banks classified the company's accounts as non-performing asset",
+   "Ex-parte interim order from Debt Recovery Tribunal-III, Delhi restraining the company from transferring/alienating hypothecated assets/immovable properties",
+   "Show Cause Notice under SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995",
+   "Notice from Directorate of Enforcement",
+   "Notice from Central Bureau of Investigation",
+   "Municipal Corporation notice for vacating premises",
+   "Vendor execution petition",
+   "Global and domestic demand and supply conditions affecting selling prices of finished goods",
+   "Input availability and prices",
+   "Changes in Government Regulations",
+   "Tax laws",
+   "Commodity price risk or foreign exchange risk and hedging risk (details in notes to financial statements)",
+   "Credit rating stands at D Rating with no change during the year",
+   "Material uncertainty exists about the company's ability to continue as going concern due to continuous operational losses, negative net worth and financial constraints.",
+   "The company has not provided interest towards revoked corporate guarantee for the loan given to its wholly owned subsidiary in USA by PNB Hongkong (now PNB-Dubai).",
+   "Banks have classified the company's accounts as non-Performing asset and served recall Notice under SARFAESI Act.",
+   "Legal proceedings including NCLT petitions, DRT cases, and SEBI show cause notice are pending.",
+   "The company has not made provision for demands raised by various authorities (Income Tax, VAT etc.) pending before appellate forums.",
+   "Balances of some debtors and creditors are subject to their confirmations (Note No. 47).",
+   "Material weakness in internal control system for customer acceptance, credit evaluation, establishing credit limits, acceptance of goods by customers and transfer of risk & reward at time of sales, potentially resulting in revenue recognition without reasonable certainty of ultimate collection.",
+   "No internal control system for follow-up/recovery/adjustment of old outstanding receivables and payables including balance confirmation and reconciliation.",
+   "Default in repayment of bank loans from March-2018 onwards; accounts classified as NPA; notices under SARFAESI Act; petitions under IBC filed by Punjab National Bank and IDBI Bank (disposed off after OTS payment); Ex-parte Interim Order from DRT-III, Delhi restraining asset disposal; Lead Bank petition before DRT Delhi",
+   "Credit risk from trade receivables and financing activities",
+   "Liquidity risk in meeting financial liabilities",
+   "Market risk including currency risk, price risk, interest rate risk",
+   "Commodity price fluctuations",
+   "Material uncertainty about ability to continue as going concern due to continuous operational losses, negative net worth and financial constraints",
+   "Non-provision for interest on revoked corporate guarantee for subsidiary loan",
+   "Pending litigations and disputes with tax authorities, banks, and other parties",
+   "Balances of debtors and creditors subject to confirmation",
+   "Material weakness in internal control system for customer acceptance, credit evaluation, credit limit establishment, and acceptance of goods by customers and transfer of risk & reward at time of sales, potentially resulting in revenue recognition without reasonable certainty of ultimate collection.",
+   "Default in repayment of bank loans from March-2018 onwards, accounts classified as NPA",
+   "Notices under SARFAESI Act received from banks",
+   "NCLT petitions filed by Punjab National Bank and IDBI Bank under IBC (disposed off after OTS payment)",
+   "Ex-parte Interim Order from Debt Recovery Tribunal-III, Delhi restraining asset transfers",
+   "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for loan to subsidiary Kohinoor Foods USA Inc.",
+   "Legal cases including money suit by Board of Trustee of Port of Mumbai for Rs 963.94 Lacs",
+   "SEBI Show Cause Notice to Directors and Company",
+   "Contingent liabilities for Income Tax, Sales Tax, VAT, Excise, Service Tax"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "Sachdeva Brothers Private Limited",
+    "holding_pct": null,
+    "business": "Subsidiary company"
+   },
+   {
+    "name": "Rich Rice Raisers Factory L.L.C.",
+    "holding_pct": null,
+    "business": "Joint venture company in Dubai, UAE"
+   },
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": 100,
+    "business": "Cater to markets of US & Canada; brand 'Kohinoor' well known in USA for quality rice and food items. Did not carry any business during current year as there is no export sales from KFL India to US & Canada; office closed due to no business."
+   },
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in USA"
+   },
+   {
+    "name": "Rich Rice Raisers LLC",
+    "holding_pct": 25,
+    "business": "Joint venture company, has closed its operation"
+   },
+   {
+    "name": "Kohinoor Foods USA, Inc.",
+    "holding_pct": 100,
+    "business": "Wholly Owned foreign Subsidiary"
+   },
+   {
+    "name": "Sachdeva Brothers Pvt. Ltd.",
+    "holding_pct": 100,
+    "business": "Indian Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Kohinoor Foods USA INC",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in USA"
+   },
+   {
+    "name": "Sachdeva Brothers Pvt. Ltd.",
+    "holding_pct": 100,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Rich Rice Raisers Factory LLC",
+    "holding_pct": 25,
+    "business": "Associate company in Dubai, U.A.E."
+   },
+   {
+    "name": "Sachdeva Brothers Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Kohinoor Foods USA Inc",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Sachdeva Brothers Pvt Ltd. India",
+    "holding_pct": null,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": null,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Sachdeva Brothers Pvt Ltd",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Sachdeva Brothers Pvt Ltd",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary in India"
+   },
+   {
+    "name": "Kohinoor Foods USA Inc.",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary in USA"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Punjab National Bank (erstwhile Oriental Bank of Commerce)",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Indian Bank (erstwhile Allahabad Bank)",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "ICICI Bank Ltd.",
+    "amount_cr": null,
+    "note": "Debt assigned to Prudent ARC Ltd vide assignment agreement dated 10.05.2024"
+   },
+   {
+    "lender_or_type": "IDBI Bank Ltd.",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Consortium Banks",
+    "amount_cr": 227.45,
+    "note": "One Time Settlement (O.T.S.) agreement for revised amount of INR 227.45 Crores; INR 200 Crores paid (INR 190 Crores by buyer of rice manufacturing unit and INR 10 Crores by company); INR 27.45 Crores to be paid by Sep-2025; INR 40.11 Crores of PNB-Dubai outstanding under O.T.S. consideration"
+   },
+   {
+    "lender_or_type": "Consortium Banks (Lead Bank)",
+    "amount_cr": 227.45,
+    "note": "One Time Settlement (OTS) sanctioned for INR 227.45 Crores. Company has paid INR 200 Crores (INR 190 Crores by buyer of rice manufacturing unit and INR 10 Crores by the Company). INR 40.11 Crores of PNB-Dubai outstanding, under consideration of OTS."
+   },
+   {
+    "lender_or_type": "PNB Hongkong (now PNB-Dubai)",
+    "amount_cr": 44.3,
+    "note": "Corporate guarantee invoked for loan to wholly owned subsidiary Kohinoor Foods USA Inc. Liability recognized at Rs.4429.57 Lacs. OTS proposal submitted for settlement."
+   },
+   {
+    "lender_or_type": "Secured Loans (Consortium Lenders)",
+    "amount_cr": 44.3,
+    "note": "Principal amount at year end. OTS sanctioned for INR 227.45 crores, fully paid during the year. NOC obtained from 4 out of 6 lenders."
+   },
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 102.97,
+    "note": "Principal amount at year end."
+   },
+   {
+    "lender_or_type": "Non-current Borrowings",
+    "amount_cr": 102.97,
+    "note": "As at 31-Mar-2026"
+   },
+   {
+    "lender_or_type": "Current Borrowings",
+    "amount_cr": 44.3,
+    "note": "As at 31-Mar-2026"
+   },
+   {
+    "lender_or_type": "Loan against Keyman Insurance Policy",
+    "amount_cr": 1.61,
+    "note": "Secured against Keyman Insurance policies of Directors"
+   },
+   {
+    "lender_or_type": "Loan from Directors",
+    "amount_cr": 101.37,
+    "note": "Interest free"
+   },
+   {
+    "lender_or_type": "Loan repayable on Demand from Banks (Working Capital)",
+    "amount_cr": 0.0,
+    "note": "Fully paid during the year under OTS; secured by hypothecation of inventory, book debts, current assets and first charge on fixed assets (excluding specific assets charged to term lenders)"
+   },
+   {
+    "lender_or_type": "Payable to Bank on account of revoked Corporate Guarantee (PNB Hongkong/Dubai for Kohinoor Foods USA Inc.)",
+    "amount_cr": 44.3,
+    "note": "OTS proposal submitted for settlement"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 102.9722,
+    "note": "As at 31.03.2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 44.2957,
+    "note": "As at 31.03.2026"
+   },
+   {
+    "lender_or_type": "Total borrowings (non-current + current)",
+    "amount_cr": 147.2679,
+    "note": "As at 31.03.2026"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 102.97,
+    "note": "As at 31-Mar-2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 44.3,
+    "note": "As at 31-Mar-2026"
+   },
+   {
+    "lender_or_type": "Secured Loans against Keyman Insurance Policy",
+    "amount_cr": 1.61,
+    "note": "Secured against Keyman Insurance policies of Directors"
+   },
+   {
+    "lender_or_type": "Unsecured Loans from Directors",
+    "amount_cr": 101.37,
+    "note": "Interest free"
+   },
+   {
+    "lender_or_type": "Loan repayable on Demand from Banks (Working Capital)",
+    "amount_cr": 0,
+    "note": "Fully paid during the year under OTS; balance was Rs 160.90 Cr in FY2025"
+   },
+   {
+    "lender_or_type": "Payable to Bank on account of revoked Corporate Guarantee (PNB Dubai)",
+    "amount_cr": 44.3,
+    "note": "OTS proposal submitted for settlement"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Direct exports of rice and food products to various countries have commenced.",
+    "value_cr": null
+   },
+   {
+    "statement": "The Company has already sold the said unit towards sanctioned One time Settlement terms and conditions to M/s. RCM Consumer Products Private Limited at a value of INR 190 Crores, towards its consideration, vide tri-partite Agreement dated 31-03-2025.",
+    "value_cr": 190
+   },
+   {
+    "statement": "Advance against Sale of Murthal Plant",
+    "value_cr": 75.5
+   },
+   {
+    "statement": "Sale of property, plant and equipment's",
+    "value_cr": 199.72
+   },
+   {
+    "statement": "Sold Rice Plant situated at Murthal Sonipat, Haryana for a consideration of Rs. 190 Crores and an additional piece of Land for Rs. 8 Crore",
+    "value_cr": 198
+   }
+  ],
+  "related_party": [
+   {
+    "party": "PNB Hongkong (now PNB-Dubai)",
+    "nature": "Corporate guarantee for loan granted to wholly owned subsidiary Kohinoor Foods USA Inc.",
+    "amount_cr": 44.2957
+   },
+   {
+    "party": "Related parties",
+    "nature": "All related party transactions were on arm's length basis and in the ordinary course of business",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "All contracts/arrangements/transactions entered during the financial year were in the ordinary course of business and on an arm's length basis. No material related party transactions as defined under Regulation 23 of SEBI (LODR), 2015.",
+    "amount_cr": null
+   },
+   {
+    "party": "Satnam Overseas (Exports)",
+    "nature": "Partnership Firm of Promoter/Directors",
+    "amount_cr": 6.35
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Remuneration",
+    "amount_cr": 1.81
+   },
+   {
+    "party": "Directors",
+    "nature": "Loan from Directors",
+    "amount_cr": 36.69
+   },
+   {
+    "party": "Directors",
+    "nature": "Repayment of Director's Loan",
+    "amount_cr": 8.26
+   },
+   {
+    "party": "Enterprises over which KMP exercise significant influence",
+    "nature": "Advance Received",
+    "amount_cr": 0.54
+   },
+   {
+    "party": "Subsidiary Companies",
+    "nature": "Expenses incurred on behalf",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Key Management Personnel and their Relatives",
+    "nature": "Remuneration",
+    "amount_cr": 1.81
+   },
+   {
+    "party": "Key Management Personnel and their Relatives",
+    "nature": "Loan from Directors received",
+    "amount_cr": 36.69
+   },
+   {
+    "party": "Key Management Personnel and their Relatives",
+    "nature": "Repayment of Director's Loan",
+    "amount_cr": 8.26
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for loan to Kohinoor Foods USA Inc.",
+    "amount_cr": 44.2957
+   },
+   {
+    "nature": "Interest not provided on revoked corporate guarantee for loan to subsidiary in USA",
+    "amount_cr": 15.2828
+   },
+   {
+    "nature": "Money suit by Board of Trustee of port of Mumbai for demurrage charges",
+    "amount_cr": null
+   },
+   {
+    "nature": "Vendor execution petition before Faridabad District & Session Judge",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax demands for AY 2012-13, 2016-17, 2017-18, 2023-24",
+    "amount_cr": 30.88
+   },
+   {
+    "nature": "Sales Tax demand on sale of REP Licenses",
+    "amount_cr": 1.22
+   },
+   {
+    "nature": "VAT Assessment Orders for AY 2008-09 and 2009-10",
+    "amount_cr": 7.4
+   },
+   {
+    "nature": "Excise & Taxation demand for cess on exports for years 2009-10 and 2010-11",
+    "amount_cr": 4.5
+   },
+   {
+    "nature": "Sales Tax assessment for AY 2011-12",
+    "amount_cr": 0.05
+   },
+   {
+    "nature": "Service Tax demand (CETSTAT order)",
+    "amount_cr": 2.59
+   },
+   {
+    "nature": "Corporate guarantee liability for Kohinoor Foods USA Inc. to PNB Hongkong (now PNB-Dubai)",
+    "amount_cr": 44.3
+   },
+   {
+    "nature": "Interest not provided on revoked corporate guarantee for current year",
+    "amount_cr": 3.18
+   },
+   {
+    "nature": "Interest not provided on revoked corporate guarantee for previous year",
+    "amount_cr": 2.84
+   },
+   {
+    "nature": "Interest not provided on revoked corporate guarantee from date of revocation up to 31-03-2026",
+    "amount_cr": 15.28
+   },
+   {
+    "nature": "Port of Mumbai demurrage charges",
+    "amount_cr": null
+   },
+   {
+    "nature": "Vendor execution petition",
+    "amount_cr": null
+   },
+   {
+    "nature": "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for loan to Kohinoor Foods USA Inc. Liability recognized Rs. 4429.57 Lacs (previous year Rs. 4088.18 Lacs). OTS proposal submitted for settlement.",
+    "amount_cr": 44.3
+   },
+   {
+    "nature": "Demand raised by various authorities (Income Tax, VAT etc.) pending before appellate forums. No provision made.",
+    "amount_cr": null
+   },
+   {
+    "nature": "Money suit by Board of Trustee of the port of Mumbai for recovery of Rs. 963 lacs towards alleged outstanding demurrage charges. Company filed counter claim of Rs. 1088 lacs.",
+    "amount_cr": 9.63
+   },
+   {
+    "nature": "Dues of Income Tax, Sales Tax, Goods and Service Tax (GST), VAT, Customs, Excise etc. which have not been deposited with the appropriate authorities on account of disputes (refer Note no. 37).",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 30.88
+   },
+   {
+    "nature": "Sales Tax - Delhi",
+    "amount_cr": 1.22
+   },
+   {
+    "nature": "VAT-Haryana",
+    "amount_cr": 7.4
+   },
+   {
+    "nature": "Excise & Taxation Department, Punjab",
+    "amount_cr": 4.56
+   },
+   {
+    "nature": "Service Tax",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Legal Cases against the Company",
+    "amount_cr": 9.64
+   },
+   {
+    "nature": "Bank Guarantees",
+    "amount_cr": 0.2
+   },
+   {
+    "nature": "Surety Bonds issued to Govt. Agencies under EPCG/Adv License scheme",
+    "amount_cr": 20.82
+   },
+   {
+    "nature": "Income Tax demand for AY 2017-18",
+    "amount_cr": 16.4249
+   },
+   {
+    "nature": "Income Tax demand for AY 2023-24",
+    "amount_cr": 0.8076
+   },
+   {
+    "nature": "VAT Assessment Orders for AY 2008-09 and 2009-10 (Murthal)",
+    "amount_cr": 7.4007
+   },
+   {
+    "nature": "Cess on exports demand for Year 2009-10, 2010-11 and AY 2011-12 (Punjab)",
+    "amount_cr": 4.5582
+   },
+   {
+    "nature": "Service Tax demand (net of relief and deposit)",
+    "amount_cr": 0.0012
+   },
+   {
+    "nature": "Money suit by Board of Trustee of Port of Mumbai for demurrage charges",
+    "amount_cr": 9.6394
+   },
+   {
+    "nature": "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for subsidiary loan",
+    "amount_cr": 44.2957
+   },
+   {
+    "nature": "Income Tax demands",
+    "amount_cr": 30.88
+   },
+   {
+    "nature": "VAT - Haryana",
+    "amount_cr": 7.4
+   },
+   {
+    "nature": "Service Tax",
+    "amount_cr": 0.0012
+   },
+   {
+    "nature": "Surety Bonds under EPCG/Adv License scheme",
+    "amount_cr": 20.82
+   }
+  ],
+  "litigation": [
+   "Lead Bank filed petition before NCLT Bench Chandigarh - disposed off as infructuous after OTS payment",
+   "One Consortium Bank filed petition before NCLT Bench Chandigarh - disposed off as infructuous after OTS payment",
+   "Company received ex-parte interim order from DRT-III, Delhi dated 25/06/2020 - petition withdrawn by lender after OTS payment",
+   "Notice from DRT-II, New Delhi - Lead Bank filed petition under section 19(4) - company contesting matter",
+   "Summon/notice from Directorate of Enforcement, Central Regional Office - documents submitted",
+   "Notice from Central Bureau of Investigation - documents submitted",
+   "Corporate guarantee invoked by PNB Hongkong (now PNB-Dubai) for loan to Kohinoor Foods USA Inc. - OTS proposal submitted to PNB Dubai",
+   "Money suit by Board of Trustee of port of Mumbai for demurrage charges - counter claim filed, matter pending",
+   "Vendor execution petition before Faridabad District & Session Judge - company approached High Courts and Supreme Court - stay granted, impugned order amount deposited",
+   "Municipal Corporation notice for vacating premises at Pinnacle Tower, Surajkund Faridabad - builder obtained interim stay from High Court, company filed petition in Civil Court",
+   "SEBI Show Cause Notice under rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995 - settlement and adjudication applications filed",
+   "Income Tax appeals pending before CIT(A), New Delhi/Income Tax Appellate Tribunal, New Delhi/Hon'ble Delhi High Court for AY 2012-13, 2016-17, 2017-18, 2023-24",
+   "Sales Tax appeal pending before Sales Tax Commissioner - Appeals, New Delhi for demand of Rs.1,22,00,000/- on sale of REP Licenses",
+   "VAT appeals pending before Appellate Authorities/Tribunal, Haryana for AY 2008-09 and 2009-10",
+   "Excise & Taxation appeals pending before Dy. Excise & Taxation Commissioner-Appeal, Punjab for cess on exports for years 2009-10 and 2010-11 (Rs.4,50,41,414/-) and Sales Tax assessment for AY 2011-12 (Rs.5,41,073/-)",
+   "Service Tax appeal before CETSTAT, New Delhi for demand of Rs.2,59,25,214/- (major relief of Rs.2,50,12,963/- granted)",
+   "Lead Bank petition before Hon'ble NCLT Bench Chandigarh (disposed off as infructuous after OTS payment)",
+   "Consortium Bank petition before Hon'ble NCLT Bench Chandigarh (disposed off as infructuous after OTS payment)",
+   "Ex-parte interim order from Debt Recovery Tribunal-III, Delhi restraining transfer/alienation of hypothecated assets/immovable properties (petition withdrawn by lender after OTS payment)",
+   "DRT-II, New Delhi petition by Lead Bank under section 19(4) (company contesting, OTS paid)",
+   "Directorate of Enforcement summons/notice to Director",
+   "Central Bureau of Investigation notice to Director",
+   "Port of Mumbai money suit for demurrage charges (counter claim filed, matter pending)",
+   "Vendor execution petition before Faridabad District & Session Judge (stay granted by Hon'ble High Court, matter pending)",
+   "Municipal Corporation notice for vacating Pinnacle Tower premises (interim stay by Hon'ble High Court Punjab and Haryana)",
+   "SEBI Show Cause Notice under Rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995 to Directors and Company (settlement and adjudication applications filed)",
+   "No proceedings pending against the Company under the Insolvency and Bankruptcy Code, 2016 during the year under review.",
+   "NCLT petition under Section 7 of IBC by Punjab National Bank - disposed off after full OTS payment.",
+   "NCLT petition under Section 7 of IBC by IDBI Bank - disposed off after full OTS payment.",
+   "DRT-III Delhi Ex-parte Interim Order in ICICI Bank vs Kohinoor Foods - restraining asset disposal; OTS fully paid.",
+   "Lead Bank petition before DRT Delhi under section 19(4) - OTS fully paid.",
+   "Corporate guarantee invocation by PNB Hongkong (now PNB-Dubai) for subsidiary loan - legal notice received; OTS proposal submitted.",
+   "Board of Trustee of Port of Mumbai money suit for Rs 963 lacs demurrage charges - counter claim of Rs 1088 lacs filed; pending.",
+   "Municipal Corporation notice for vacating Pinnacle Tower premises - builder obtained interim stay from High Court; company petition before civil judge.",
+   "Vendor execution petition before Faridabad District & Session Judge - company approached High Courts and Supreme Court; relief granted by Apex Court; amount deposited.",
+   "SEBI Show Cause Notice under rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995 - settlement and adjudication application filed.",
+   "Various tax demands (Income Tax, VAT) pending before appellate forums - no provision made.",
+   "Pending litigations disclosed in financial statements (Refer Note 37).",
+   "Dues of Income Tax, Sales Tax, GST, VAT, Customs, Excise etc. not deposited on account of disputes (Refer Note 37).",
+   "Income Tax appeals pending before CIT(A), ITAT, Delhi High Court for AY 2012-13, 2016-17, 2017-18, 2023-24",
+   "Sales Tax - Delhi",
+   "VAT-Haryana",
+   "Excise & Taxation Department, Punjab",
+   "Service Tax",
+   "Legal Cases against the Company",
+   "Petition by Punjab National Bank under Section 7 IBC (disposed off)",
+   "Petition by IDBI Bank under Section 7 IBC (disposed off)",
+   "Ex-parte Interim Order from DRT-III, Delhi in ICICI Bank vs Kohinoor Foods Ltd",
+   "Lead Bank petition before DRT Delhi under section 19(4)",
+   "Income Tax appeal for AY 2016-17: penalty order appeal pending with CIT (Appeals) though original demand deleted",
+   "Income Tax appeal filed before CIT (Appeals) on 13-04-2026 for AY 2017-18 against demand of Rs 1642.49 Lacs",
+   "Rectification u/s 154 filed on 22-04-2026 against intimation u/s 143(1) for AY 2023-24 with demand of Rs 80.76 Lacs",
+   "Sales Tax appeal pending before Sales Tax Commissioner - Appeals, New Delhi for demand of Rs 122.00 Lacs on sale of REP Licenses",
+   "VAT appeals pending before Tribunal, Chandigarh for AY 2008-09 (Rs 732.35 Lacs) and AY 2009-10 (Rs 7.72 Lacs) for Murthal",
+   "Appeals pending before Dy. Excise & Taxation Commissioner-Appeal, Punjab against cess on exports for Year 2009-10 and 2010-11 (Rs 450.41 Lacs) and AY 2011-12 (Rs 5.41 Lacs)",
+   "Service Tax matter: CETSTAT granted relief of Rs 250.13 Lacs against demand of Rs 259.25 Lacs; company deposited Rs 9.00 Lacs; contingent liability Rs 0.12 Lacs",
+   "Money suit by Board of Trustee of Port of Mumbai for recovery of Rs 963.94 Lacs demurrage charges; company filed counter claim of Rs 10.88 Cr",
+   "Municipal Corporation notice to Builder of Pinnacle Tower for vacating premises; builder obtained interim stay from High Court; company filed petition before civil judge",
+   "Vendor execution petition before Faridabad District & Session Judge; company approached High Courts and Supreme Court; Supreme Court allowed petition and directed to approach High Court; company deposited impugned amount",
+   "SEBI show cause notice under rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995 issued to directors and company; settlement and adjudication application filed",
+   "PNB Hongkong (now PNB-Dubai) invoked corporate guarantee for subsidiary loan; legal notice received; OTS proposal submitted",
+   "Lead bank PNB filed petition under Section 7 of IBC, 2016 before NCLT Chandigarh; disposed off after full OTS payment",
+   "IDBI Bank filed petition under Section 7 of IBC, 2016 before NCLT Chandigarh; disposed off after full OTS payment",
+   "Ex-parte interim order from DRT-III Delhi in ICICI Bank vs Kohinoor Foods restraining transfer/alienation of hypothecated assets/immovable properties",
+   "Lead bank filed petition before DRT Delhi under section 19(4); company contesting",
+   "Board of Trustee of the port of Mumbai filed money suit for recovery of Rs. 963.94 Lacs towards alleged outstanding demurrage charges; company filed counter claim of Rs. 10.88 Cr",
+   "Municipal Corporation notice to Builder of Pinnacle Tower for vacating premises; builder obtained interim stay from High Court",
+   "Vendor filed execution petition before Faridabad District & Session Judge; company approached High Courts and Supreme Court for stay",
+   "SEBI Show Cause Notice under rule 4 of SEBI (Procedure for Holding Inquiry and Imposing Penalties) Rules, 1995 issued to Directors and Company; settlement and adjudication application filed",
+   "Income Tax appeals pending for AY 2012-13, 2016-17, 2017-18, 2023-24",
+   "Sales Tax appeal pending before Commissioner Appeals, Delhi for Rs. 122.00 Lacs",
+   "VAT appeals pending before Tribunal, Chandigarh for AY 2008-09 and 2009-10",
+   "Excise & Taxation appeals pending before Dy. Commissioner Appeals, Punjab for years 2009-10, 2010-11, 2011-12",
+   "Service Tax matter: CETSTAT granted relief of Rs. 250.13 Lacs; contingent liability Rs. 0.12 Lacs"
+  ],
+  "dividend_per_share": 0
+ }
+}

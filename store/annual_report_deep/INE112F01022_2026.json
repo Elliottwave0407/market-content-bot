@@ -1,0 +1,832 @@
+{
+ "isin": "INE112F01022",
+ "name": "Lambodhara Textiles Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31277_LAMBODHARA_2025_2026_A_3464359_03092026183943.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 363179,
+ "chunks": 10,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "Lambodhara Textiles Limited is engaged in the purchase and sale of cotton, man-made fibre, and yarn. The company operates a works facility at Thazhabnihu, Palani.",
+   "products": [
+    {
+     "name": "Yarn (finished goods)",
+     "share_of_revenue_pct": null,
+     "note": "Purchased from related party Strike Right Integrated Services Limited"
+    },
+    {
+     "name": "Fiber (Raw material)",
+     "share_of_revenue_pct": null,
+     "note": "Sold to related party Strike Right Integrated Services Limited"
+    },
+    {
+     "name": "Cotton",
+     "share_of_revenue_pct": null,
+     "note": "Traded with related party Strike Right Integrated Services Limited"
+    },
+    {
+     "name": "Man Made Fibre",
+     "share_of_revenue_pct": null,
+     "note": "Traded with related party Strike Right Integrated Services Limited"
+    },
+    {
+     "name": "Customized fancy yarns",
+     "share_of_revenue_pct": null,
+     "note": "Niche segment; specialty fibre fancy yarns"
+    },
+    {
+     "name": "Textiles",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from operations includes textile manufacturing; specific product breakdown not provided."
+    },
+    {
+     "name": "Real Estate Rental",
+     "share_of_revenue_pct": null,
+     "note": "Income derived from commercial complex included in freehold land & building: Rs 195.75 lakhs in 2025-26 and Rs 170.54 lakhs in 2024-25."
+    },
+    {
+     "name": "Manufactured goods (synthetic fancy yarn)",
+     "share_of_revenue_pct": null,
+     "note": "Sale of manufactured goods: Rs 16,784.56 lakhs (FY2026), Rs 16,736.63 lakhs (FY2025)"
+    },
+    {
+     "name": "Traded goods",
+     "share_of_revenue_pct": null,
+     "note": "Sale of traded goods: Rs 5,217.42 lakhs (FY2026), Rs 4,976.12 lakhs (FY2025)"
+    },
+    {
+     "name": "Export incentives",
+     "share_of_revenue_pct": null,
+     "note": "Other operating revenue: Rs 29.71 lakhs (FY2026), Rs 34.15 lakhs (FY2025)"
+    },
+    {
+     "name": "Income from real estate",
+     "share_of_revenue_pct": null,
+     "note": "Other operating revenue: Rs 191.98 lakhs (FY2026), Rs 167.16 lakhs (FY2025)"
+    },
+    {
+     "name": "Income from power generation",
+     "share_of_revenue_pct": null,
+     "note": "Other operating revenue: Rs 1,571.94 lakhs (FY2026), Rs 1,252.56 lakhs (FY2025)"
+    },
+    {
+     "name": "Power Generation",
+     "share_of_revenue_pct": 6.5,
+     "note": "Segment revenue Rs 1,571.94 lakhs for FY2026"
+    },
+    {
+     "name": "Real Estate",
+     "share_of_revenue_pct": 0.8,
+     "note": "Segment revenue Rs 195.75 lakhs for FY2026"
+    }
+   ],
+   "customers": [
+    "Strike Right Integrated Services Limited",
+    "Customers across various countries around the world"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic market",
+     "share_pct": null
+    },
+    {
+     "name": "International market",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 95.6
+    },
+    {
+     "name": "Rest of the world",
+     "share_pct": 4.4
+    }
+   ],
+   "plants": [
+    {
+     "location": "826, Thazhabnihu, Palani - 624 618, India",
+     "capacity": ""
+    },
+    {
+     "location": "Kamudi, Ramnad District",
+     "capacity": "3.3 MW On-Ground Solar PV Power Project"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "4.75 MW Wind Energy (three Wind Mills)"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "1.0 MW Grid Tied Roof Top Solar Power Plant"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "1.4 MW Grid Tied Roof Top Solar Power Plant"
+    },
+    {
+     "location": "Unit I: 826, Thazhaiyuthu, Palani Taluk \u2013 624 618",
+     "capacity": ""
+    },
+    {
+     "location": "Windmill 1: SF No. 13/1(P), Koodankulam Village, Radhapuram Taluk, Tirunelveli District, Pincode: 627104 (SUZLON 1.25 MW)",
+     "capacity": "1.25 MW"
+    },
+    {
+     "location": "Windmill 2: SF No. 1051/1, Kundadam Village, Dharapuram Taluk, Tirupur District (SUZLON 1.50 MW)",
+     "capacity": "1.50 MW"
+    },
+    {
+     "location": "Windmill 3: SF No 447/3A, 447/3B, 448/3, 450/1, 450/2A1 and B, LTLWM, Alambadi Village, Kujiliamparai Taluk, Dindugal District, Pincode: 624620 (GAMESA 2.00 MW)",
+     "capacity": "2.00 MW"
+    },
+    {
+     "location": "Solar Ground Mounted: SF Nos. 114, 115 & 116, Lambodhara Solar Plant, Thavasikurichi Village, Kamuthi Taluk, Ramanathapuram District, Tamil Nadu \u2013 623603",
+     "capacity": "3.3 MW"
+    },
+    {
+     "location": "Solar Rooftop: No. 826, Thazhaiyuthu, Palani, Tamil Nadu \u2013 624618",
+     "capacity": "1.0 MW and 1.4 MW"
+    },
+    {
+     "location": "Commercial Complex: 1334, Avinashi Road, Peelamedu, Coimbatore \u2013 641004",
+     "capacity": ""
+    },
+    {
+     "location": "",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "Cotton",
+    "Man Made Fibre",
+    "Fiber",
+    "Cotton/natural fibre",
+    "Yarn",
+    "Fibre"
+   ],
+   "value_chain_position": "trader",
+   "end_markets": [
+    "Textile industry",
+    "Export markets"
+   ]
+  },
+  "orders_or_contracts": [
+   {
+    "statement": "Material related party transactions with Strike Right Integrated Services Limited for purchase of yarn up to Rs. 200 Crore per annum and sale of fiber up to Rs. 200 Crore per annum, from conclusion of 32nd AGM till conclusion of 33rd AGM (approx. 12 months)",
+    "value_cr": 400
+   },
+   {
+    "statement": "Purchase of Cotton/natural fibre, Man Made Fibre, Yarn and Sale of Cotton/natural fibre, Man Made Fibre, Yarn with Strike Right Integrated Services Limited for an amount not exceeding Rs. 200 Crores per annum each for purchase and sale.",
+    "value_cr": 200
+   },
+   {
+    "statement": "The company has given commercial complex on operating lease. These lease arrangements range for a period between 11 months and 6 years and include both cancellable and non-cancellable leases. Most of the leases are renewable for further period on mutually agreeable terms.",
+    "value_cr": null
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Strike Right Integrated Services Limited",
+    "nature": "Purchase of Yarn (finished goods) - Rs. 36,81,51,565 in FY 2025-26; Sale of Fiber (Raw material) - Rs. 21,87,60,329 in FY 2025-26; Proposed: Purchase up to Rs. 200 Crore per annum, Sale up to Rs. 200 Crore per annum",
+    "amount_cr": 586.91
+   },
+   {
+    "party": "Mrs. Bosco Giulia",
+    "nature": "Leased two vehicles to the Company and receives rent; Company has received unsecured loan from her and is repaying the same as per agreed terms.",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Narayanasamy Balu",
+    "nature": "Draws remuneration as Whole-time Director; related to Mr. Nishanth Balu (son).",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Nishanth Balu",
+    "nature": "Draws remuneration as Whole-time Director; related to Mr. Narayanasamy Balu (father).",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Radhakrishnan Santossh (CFO)",
+    "nature": "Related to Mrs. Bosco Giulia (wife).",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties as defined under Companies Act, 2013 and Regulation 23 of Listing Regulations",
+    "nature": "All transactions entered into with related parties during the financial year 2025-26 were in the ordinary course of business and on an arm's length pricing basis. Material contracts/arrangements disclosed in Form AOC-2 (Annexure-1).",
+    "amount_cr": null
+   },
+   {
+    "party": "Strike Right Integrated Services Limited",
+    "nature": "Venturer Company and holds 37.34% of the share capital of the Company and is part of the Promoter Group. Whole-Time Directors Mrs. Giulia Bosco and Mr. Balu Narayanasamy hold Directorship in it. Mrs. Bosco Giulia holds more than 2% of its paid-up share capital. Mr. R Santossh (CFO) and Mr. Nishanth Balu (WTD) are interested through their relatives.",
+    "amount_cr": 200
+   },
+   {
+    "party": "Whole Time Director and relative",
+    "nature": "Personal guarantee for term loans and working capital loans from Karur Vysya Bank and Bank of India; pledge of shares as collateral security",
+    "amount_cr": null
+   },
+   {
+    "party": "Strikeright Integrated Services Limited",
+    "nature": "Other Significant Influences",
+    "amount_cr": 58.69
+   },
+   {
+    "party": "Bosco Giulia",
+    "nature": "Key Managerial Personnel - Remuneration",
+    "amount_cr": 0.6
+   },
+   {
+    "party": "Santossh R",
+    "nature": "Key Managerial Personnel - Remuneration",
+    "amount_cr": 0.26
+   },
+   {
+    "party": "Nishanth Balu",
+    "nature": "Key Managerial Personnel - Remuneration",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Balu KN",
+    "nature": "Key Managerial Personnel - Remuneration",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "R Baba Chandrasekar",
+    "nature": "Non-Independent Director - Interest on unsecured loan",
+    "amount_cr": 0.36
+   },
+   {
+    "party": "Independent Directors (Vishnu Rajkumar Nischal, Krishnamoorthy Narendra, Mohan Ramaseshan)",
+    "nature": "Sitting fees",
+    "amount_cr": 0.01
+   }
+  ],
+  "auditor": {
+   "name": "M/s. C.S. Hanumantha Rao & Co. (Firm Registration No. 000216), Cost Accountants",
+   "opinion": "The report of the Statutory Auditors does not contain any qualifications, reservations, adverse remarks, or disclaimers.",
+   "key_audit_matters": [
+    "Revenue Recognition - risk of revenue being recorded before control is transferred",
+    "Litigations - Contingencies - ongoing litigations with various authorities and third parties with significant amounts involved"
+   ],
+   "qualifications_or_emphasis": [
+    "Discrepancies in physical stock verification not exceeding 10% in aggregate for each class of inventory.",
+    "GST dispute of Rs 7.24 lakhs for 2023-24 pending before Commissioner.",
+    "Quarterly returns filed with banks for working capital limits are materially in agreement with unaudited books of account."
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Strike Right Integrated Services Limited",
+     "pct": 37.34
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "pct": null
+    },
+    {
+     "name": "Promoters and Promoters Group",
+     "pct": 73.17
+    },
+    {
+     "name": "Public",
+     "pct": 23.27
+    },
+    {
+     "name": "Hindu Undivided Families",
+     "pct": 1.19
+    },
+    {
+     "name": "Investor Education and Protection Fund",
+     "pct": 1.09
+    },
+    {
+     "name": "Non-Resident Indians",
+     "pct": 0.66
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 0.42
+    },
+    {
+     "name": "Foreign Portfolio Investors",
+     "pct": 0.16
+    },
+    {
+     "name": "Clearing Member",
+     "pct": 0.02
+    },
+    {
+     "name": "Limited Liability Partnership",
+     "pct": 0.02
+    },
+    {
+     "name": "Trusts",
+     "pct": 0.0
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "pct": 35.83
+    },
+    {
+     "name": "Strike Right Integrated Services Limited",
+     "pct": 36.82
+    }
+   ],
+   "director_changes": [
+    "Re-appointment of Mrs. Bosco Giulia (DIN: 01898020) as Whole-time Director for 3 years w.e.f. 28th September 2026",
+    "Re-appointment of Mr. Narayanasamy Balu (DIN: 08173046) as Whole-time Director for 3 years w.e.f. 11th July 2026",
+    "Re-appointment of Mr. Nishanth Balu (DIN: 08418408) as Whole-time Director for 3 years w.e.f. 7th December 2026",
+    "Appointment of M/s. SSMN & Associates LLP as Secretarial Auditors to fill casual vacancy caused by resignation of M/s. MDS & Associates LLP",
+    "Re-appointment of Mr. Narayanasamy Balu as Whole-time Director for 3 years w.e.f. 11th July 2026 (subject to shareholder approval).",
+    "Re-appointment of Mr. Nishanth Balu as Whole-time Director for 3 years w.e.f. 7th December 2026 (subject to shareholder approval).",
+    "Appointment of M/s. SSMN & Associates LLP as Secretarial Auditors to fill casual vacancy caused by resignation of M/s. MDS & Associates LLP (effective 31st July 2026), to hold office until conclusion of AGM in 2027.",
+    "Re-appointment of Mr. Narayanasamy Balu (DIN: 08173046), Mrs. Bosco Giulia (DIN: 01898020) and Mr. Nishanth Balu (DIN: 08418408) as Whole-time Directors for a further period of 3 years w.e.f. 11th July 2026, 28th September 2026 and 7th December 2026 respectively.",
+    "Mr. Baba Chandrasekhar Ramakrishnan (DIN: 00125662) Non-Executive and Non-Independent Director retires by rotation at the ensuing AGM and offers himself for re-appointment.",
+    "Secretarial Auditors M/s. MDS & Associates LLP resigned w.e.f. 31st July 2026; M/s. SSMN & Associates LLP recommended for appointment to fill casual vacancy.",
+    "Appointment of Mr. Krishnamoorthy Narendra (DIN: 00412219) as an Independent Director for a term of five consecutive years with effect from 13th August 2024",
+    "Appointment of Mr. Vishnu Rajkumar Nischal (DIN: 01612434) as an Independent Director for a term of five consecutive years with effect from 13th August 2024",
+    "Mr. Ramaseshan Mohan appointed on 17-10-2024",
+    "Mr. Krishnamoorthy Narendra appointed on 13-08-2024",
+    "Mr. Vishnu Rajkumar Nischal appointed on 13-08-2024",
+    "Mr. Balu Nishanth appointed on 07-12-2023"
+   ],
+   "auditor_change": "M/s. SSMN & Associates LLP appointed as Secretarial Auditors replacing M/s. MDS & Associates LLP",
+   "promoter_holding_pct": 73.17
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mrs. Bosco Giulia",
+     "role": "Whole-Time Director (DIN: 01898020)"
+    },
+    {
+     "name": "Mr. Narayanasamy Balu",
+     "role": "Whole-Time Director (DIN: 08173046)"
+    },
+    {
+     "name": "Mr. Nishanth Balu",
+     "role": "Whole-Time Director (DIN: 08418408)"
+    },
+    {
+     "name": "Mr. Radhakrishnan Santossh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Baba Chandrasekhar Ramakrishnan",
+     "role": "Non-Executive and Non-Independent Director (DIN: 00125662)"
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "role": "Promoter and Whole-time Director"
+    },
+    {
+     "name": "Mr. Narayanasamy Balu",
+     "role": "Whole-time Director (Factory Manager)"
+    },
+    {
+     "name": "Mr. Nishanth Balu",
+     "role": "Whole-time Director (Assistant Factory Manager)"
+    },
+    {
+     "name": "Mr. Baba Chandrasekar Ramakrishnan",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mrs. Shanthi P",
+     "role": "Company Secretary and Nodal Officer for IEPF claims"
+    },
+    {
+     "name": "Bosco Giulia",
+     "role": "Whole-Time Director (DIN: 01898020)"
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Narayanasamy Balu",
+     "role": "Whole-Time Director cum Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Nishanth Balu",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. R Santossh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Shanthi P",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "role": "Whole-Time Director (Promoter Executive Director)"
+    },
+    {
+     "name": "Mr. Narayanasamy Balu",
+     "role": "Whole-Time Director (Non-Independent Executive Director)"
+    },
+    {
+     "name": "Mr. Nishanth Balu",
+     "role": "Whole-Time Director (Non-Independent Executive Director)"
+    },
+    {
+     "name": "Mr. R. Santossh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Shanthi P",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. P. Damodaran",
+     "role": "Admin Officer"
+    },
+    {
+     "name": "Mr. P. Muthukumar",
+     "role": "Production Quality Check Incharge (additional role assigned w.e.f. 26th March 2026)"
+    },
+    {
+     "name": "Mr. R. Sasikumar",
+     "role": "Manager \u2013 Accounts"
+    },
+    {
+     "name": "Mrs. Bosco Giulia",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. Balu Narayanasamy",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. Ramakrishnan Baba Chandrasekar",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Ramaseshan Mohan",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Krishnamoorthy Narendra",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Vishnu Rajkumar Nischal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Balu Nishanth",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Baba Chandrasekar Ramakrishnan",
+     "role": "Chairman"
+    },
+    {
+     "name": "Bosco Giulia",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Radhakrishnan Santossh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Shanthi P",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Whole Time Director",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Bosco Giulia",
+     "role": "Key Managerial Personnel / Whole Time Director"
+    },
+    {
+     "name": "Santossh R",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Balu K N",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Nishanth Balu",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "R Baba Chandrasekar",
+     "role": "Non-Independent Director"
+    },
+    {
+     "name": "Vishnu Rajkumar Nischal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Krishnamoorthy Narendra",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mohan Ramaseshan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Radhakrishnan",
+     "role": "Chief Financial Officer"
+    }
+   ],
+   "employees": 494
+  },
+  "other_notable": [
+   "AGM scheduled for 29th September 2026 at 11:00 AM through VC/OAVM",
+   "Cost Auditor remuneration of Rs. 37,500 for FY 2026-27 to be ratified",
+   "Secretarial Auditor remuneration of Rs. 1,00,000 for FY 2026-27",
+   "Strike Right Integrated Services Limited holds 37.34% share capital and is part of Promoter Group",
+   "Mrs. Bosco Giulia and Mr. Narayanasamy Balu hold directorship in Strike Right Integrated Services Limited",
+   "Mrs. Bosco Giulia holds more than 2% paid-up share capital in Strike Right Integrated Services Limited",
+   "Mr. Radhakrishnan Santossh (relative of Mrs. Bosco Giulia) and Mr. Nishanth Balu (relative of Mr. Narayanasamy Balu) are interested through their relatives",
+   "Proposed RPTs represent 84.05% of company's annual consolidated turnover (FY 2025-26) and 630.03% of related party's annual turnover (FY 2024-25)",
+   "Price for RPTs determined based on prevailing market prices on arm's length basis",
+   "No formal bidding process for selecting related party - based on management's commercial evaluation",
+   "Dividend recommended at 10% for FY 2025-26; Record Date: 22nd September 2026; payment within 30 days of declaration at AGM.",
+   "AGM to be held via VC/OAVM; Register of Members closed from 23rd to 29th September 2026 (both days inclusive).",
+   "RTA changed from MUFG Intime India Private Limited to Cameo Corporate Services Limited effective 5th August 2026.",
+   "Company has agreements with NSDL and CDSL effective 5th August 2026 for dematerialisation of shares.",
+   "Secretarial Audit remuneration for M/s. SSMN & Associates LLP: Rs. 1,00,000 (Rs. 1 Lakh) plus taxes and out-of-pocket expenses for FY 2026-27.",
+   "Financial Performance (Rs. Lakhs): FY 2025-26 - Total Revenue: 24,320.04, PBT: 1,179.72, PAT: 1,100.47, EPS: 10.60; FY 2024-25 - Total Revenue: 23,503.94, PBT: 1,164.42, PAT: 682.49, EPS: 6.58.",
+   "Foreign Investments or collaborations: Nil.",
+   "No stock options issued by the Company.",
+   "Company registered on SMART ODR Portal for investor grievance resolution.",
+   "Paid-up Equity Share Capital as on 31st March 2026: Rs 5,18,88,000 divided into 1,03,77,600 equity shares of Rs.5/- each. No fresh issue of shares during the year.",
+   "Unclaimed dividend for FY 2018-19 due for remittance to IEPF. Transferred Rs 77,963 and 4,604 equity shares of Rs 5/- each for FY 2017-18 to IEPF.",
+   "Annual Return for FY 2025-26 available on company website.",
+   "Company has complied with Secretarial Standards SS-1 and SS-2.",
+   "No frauds reported by Statutory Auditors under Section 143(12).",
+   "Declarations received from all Independent Directors confirming criteria of independence.",
+   "Nomination and Remuneration Policy available on company website.",
+   "No loans, guarantees or investments made under Section 186 of Companies Act, 2013.",
+   "No material changes and commitments affecting financial position between end of financial year and date of report.",
+   "Conservation of energy, technology absorption, foreign exchange earnings/outgo details in Annexure-2.",
+   "32nd AGM scheduled with e-voting period from 26th September 2026 (9:00 AM IST) to 28th September 2026 (5:00 PM IST), cut-off date 22nd September 2026.",
+   "Ms. Monika Nagaraj, FCS, Designated Partner of M/s. SSMN & Associates LLP appointed as Scrutinizer for e-voting.",
+   "Registrar and Share Transfer Agent: Cameo Corporate Services Limited.",
+   "E-voting facility provided through CDSL (Central Depository Services (India) Limited).",
+   "Special window for re-lodgement of share transfer deeds per SEBI circulars (July 2025-January 2026 and February 2026-February 2027).",
+   "Members holding old share certificates (Rs.10/- face value) requested to surrender for split share certificates (Rs.5/- face value).",
+   "CSR activities focused on promoting education; CSR obligation for FY 2025-26 was Rs. 28.95 Lakhs, spent Rs. 29.00 Lakhs.",
+   "Renewable energy capacity: 4.75 MW Wind, 3.30 MW Ground-Mounted Solar, 1.00 MW and 1.40 MW Rooftop Solar; meets up to 95% of power requirements.",
+   "Real estate assets: Commercial Complex (28,000 sq. ft. super built-up area), land parcels at Idigarai (1.72 acre, Rs.1.02 Cr), Siruvani (1.25 acre, Rs.0.17 Cr), Othakalmandapam (2.15 acre, Rs.0.59 Cr).",
+   "Foreign Exchange Earnings (FY 2025-26): Rs. 1,06,115 thousand; Outgo: Rs. 12,675 thousand (import raw material) + Rs. 689 thousand (foreign travel).",
+   "Textile Division Revenue FY 2025-26: Rs. 22,552.35 Lakhs (PBT Rs. 685.47 Lakhs); Power Generation Revenue FY 2025-26: Rs. 1,571.94 Lakhs.",
+   "Whistle Blower policy in place; no complaints received during the year.",
+   "Internal Financial Controls reported as adequate by Directors and Auditors.",
+   "Cost records maintained as per Section 148(1) of Companies Act, 2013.",
+   "Compliance with Maternity Benefit Act, 1961 and Sexual Harassment of Women at Workplace Act, 2013 (Nil complaints).",
+   "Equity shares listed on National Stock Exchange of India Limited (NSE).",
+   "The Company achieved Profit Before Tax of Rs. 1,179.72 Lakhs on a turnover of Rs. 23,795.62 Lakhs for the year ended 31st March 2026",
+   "Key Financial Ratios for 31.03.2026: Debtors Turnover 22.22, Inventory Turnover 13.18, Interest Coverage Ratio 2.36, Current Ratio 3.66, Debt Equity Ratio 0.32, Operating Profit Margin 16.56%, Net Profit Margin 4.62%, Return on Net Worth 8.91%",
+   "No complaints received from shareholders during the year ending 31st March 2026",
+   "99.125% of equity shares dematerialized as on 31st March 2026",
+   "The Company does not have any subsidiaries as defined under Regulation 16(1)(c) of the Listing Regulations",
+   "The Company does not have any Debt instruments or fixed deposit programme requiring Credit Rating",
+   "The provisions of Regulation 21 of the Listing Regulations (Risk Management Committee) are not applicable to the Company",
+   "No funds raised through preferential allotment or qualified institutional placement during the year",
+   "Certificate obtained confirming no directors disqualified by SEBI/MCA",
+   "All committee recommendations accepted by Board during the year",
+   "Total statutory auditor fees: Rs. 9.53 Lakhs on consolidated basis",
+   "Zero sexual harassment complaints filed, disposed, or pending during 2025-26",
+   "No loans/advances to firms where directors are interested",
+   "Company follows Accounting Standards under Section 133 of Companies Act, 2013",
+   "Complied with all mandatory corporate governance requirements (Regulations 17-27)"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company continues to take appropriate measures to improve operational efficiency, optimise utilisation of resources, strengthen cost-control measures and enhance overall business performance, as may be considered appropriate from time to time.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The measures undertaken by the Company are expected to contribute towards improvement in productivity and profitability. However, the expected increase in productivity and profits cannot be quantified in measurable terms, as it is dependent upon various internal and external factors, including market conditions, demand, costs and overall economic conditions.",
+    "period": "future"
+   },
+   {
+    "statement": "The Company is well-positioned for sustained growth, backed by its strong presence in the niche segment of customized fancy yarn and specialty fiber fancy yarn.",
+    "period": "Not specified"
+   },
+   {
+    "statement": "With the completion of key modernization initiatives, the Company now benefits from an enhanced production base and streamlined manufacturing processes, which are expected to drive higher operational efficiency and improve cost competitiveness in the coming years. The Company remains committed to sustainable operations and has significantly strengthened its renewable energy portfolio enabling it to meet approximately 95% of its power requirements through captive power generation.",
+    "period": "coming years"
+   }
+  ],
+  "risks": [
+   "The Company may experience loss or inadequacy of profits during the tenure of the Whole-time Directors owing to economic and business conditions, market uncertainties and other external factors beyond the control of the Company.",
+   "The Company has a structured risk management policy designed to safeguard the organisation from various risks through adequate and timely actions, anticipate, evaluate and mitigate risks to minimize impact on business.",
+   "Global economic environment remains dynamic with evolving market conditions and trade uncertainties, which may have an impact on the overall performance of the textile industry.",
+   "The Company is exposed to all the risks associated with this business in terms of market conditions, timing, inflation, long term economic conditions, etc.",
+   "Revenue recognition risk - risk of revenue being recorded before control is transferred",
+   "Litigation contingencies - ongoing litigations with various authorities and third parties with significant amounts involved",
+   "Discrepancies noticed on verification between physical stocks and book records were not exceeding 10% in aggregate for each class of inventory.",
+   "GST dispute of Rs 7.24 lakhs for 2023-24 pending before Commissioner.",
+   "Interest rate risk on floating rate borrowings (100% of borrowings at variable rate)",
+   "Foreign currency risk (unhedged exposure in USD and EUR)",
+   "Equity price risk on investments",
+   "Credit risk on trade receivables",
+   "Liquidity risk"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Mrs. Bosco Giulia",
+    "amount_cr": null,
+    "note": "Unsecured loan received by the Company, being repaid as per agreed terms."
+   },
+   {
+    "lender_or_type": "Banks (working capital limits)",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of Rs 5 Crore in aggregate at points of time during the year, on the basis of security of current assets."
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 38.8603,
+    "note": "As at 31st March 2026, long term borrowings stood at Rs 3,886.03 lakhs (including current maturities)."
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 7.4509,
+    "note": "As at 31st March 2026, short term borrowings stood at Rs 745.09 lakhs."
+   },
+   {
+    "lender_or_type": "Bank of India - FCNRB Term Loan IV",
+    "amount_cr": 0,
+    "note": "Secured by first charge on Roof Top Solar Power Plant. Outstanding as on 31.03.2026: Nil (Previous year: Rs 70.42 lakhs). Payable in 54 installments from Jun 2021."
+   },
+   {
+    "lender_or_type": "Bank of India - Term Loan V",
+    "amount_cr": 0,
+    "note": "Secured by residential apartment. Outstanding as on 31.03.2026: Nil (Previous year: Rs 2.88 lakhs). Payable in 137 installments from Apr 2014."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan I",
+    "amount_cr": 0,
+    "note": "Secured by first charge on Commercial Complex Land and building. Outstanding as on 31.03.2026: Nil (Previous year: Rs 321.05 lakhs). Payable in 98 installments from Dec 2018."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan III",
+    "amount_cr": 0,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Nil (Previous year: Rs 23.06 lakhs). Payable in 60 installments from Nov 2019."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan VI",
+    "amount_cr": 0,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Nil (Previous year: Rs 229.58 lakhs). Payable in 66 installments from Aug 2020."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan VII",
+    "amount_cr": 10.8419,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 1,084.19 lakhs (Previous year: Rs 1,158.33 lakhs). Payable in 84 installments from Feb 2023, last installment due Jan 2030."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan VIII",
+    "amount_cr": 0,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Nil (Previous year: Rs 203.41 lakhs). Payable in 84 installments from Dec 2023."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan IX",
+    "amount_cr": 8.0836,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 808.36 lakhs (Previous year: Rs 831.71 lakhs). Payable in 84 installments from Dec 2023, last installment due Nov 2030."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan X",
+    "amount_cr": 3.0911,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 309.11 lakhs (Previous year: Rs 318.05 lakhs). Payable in 84 installments from Dec 2023, last installment due Nov 2030."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan XI",
+    "amount_cr": 3.6555,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 365.55 lakhs (Previous year: Rs 369.68 lakhs). Payable in 84 installments from Jun 2024, last installment due May 2031."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan XII",
+    "amount_cr": 0.9543,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 95.43 lakhs (Previous year: Rs 96.50 lakhs). Payable in 84 installments from Jun 2024, last installment due May 2031."
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - FCNRB Term Loan XIII",
+    "amount_cr": 5.9472,
+    "note": "Secured by first charge on entire assets created out of term loan. Outstanding as on 31.03.2026: Rs 594.72 lakhs (Previous year: Rs 590.30 lakhs). Payable in 84 installments from Feb 2025, last installment due Feb 2032."
+   },
+   {
+    "lender_or_type": "Loans from Related Parties (Unsecured)",
+    "amount_cr": 5.0,
+    "note": "Outstanding as on 31.03.2026: Rs 500.00 lakhs (Previous year: Rs 501.48 lakhs)"
+   },
+   {
+    "lender_or_type": "Other Loans from Banks (Secured)",
+    "amount_cr": 0.9691,
+    "note": "Outstanding as on 31.03.2026: Rs 96.91 lakhs (Previous year: Rs 51.15 lakhs)"
+   },
+   {
+    "lender_or_type": "Current Maturities of Long-Term Debt (from Banks)",
+    "amount_cr": 7.4509,
+    "note": "Outstanding as on 31.03.2026: Rs 745.09 lakhs (Previous year: Rs 1,209.62 lakhs)"
+   },
+   {
+    "lender_or_type": "Non-Current Borrowings",
+    "amount_cr": 26.41,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Current Maturities of Long Term Debt",
+    "amount_cr": 7.45,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Total Borrowings (excl. interest accrued and unsecured loans)",
+    "amount_cr": 33.86,
+    "note": "100% at variable rate of interest as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loan from R Baba Chandrasekar (Director)",
+    "amount_cr": 5.03,
+    "note": "Outstanding as at 31st March 2026, interest paid Rs 36.25 lakhs during year"
+   },
+   {
+    "lender_or_type": "Bank overdraft facilities",
+    "amount_cr": 15.0,
+    "note": "Fixed rate facilities expiring within one year, available as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "banks",
+    "amount_cr": null,
+    "note": "borrowed on the basis of security of current assets; quarterly returns/statements filed with banks are in agreement with books of accounts"
+   }
+  ],
+  "dividend_per_share": 0.5,
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any Subsidiary, Joint venture or Associate Company."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiaries as defined under Regulation 16(1)(c) of the Listing Regulations."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company did not have any subsidiary or associate or joint venture during the year."
+   }
+  ],
+  "litigation": [
+   "There are no significant and material orders passed by the regulators or courts or tribunals impacting the going concern status and company's operation in future.",
+   "No applications have been made and no proceedings are pending against the Company under the Insolvency and Bankruptcy Code, 2016.",
+   "Ongoing litigations with various authorities and third parties - claims against the Company not acknowledged as debts disclosed in Note 40 to financial statements",
+   "GST dispute of Rs 7.24 lakhs for 2023-24 pending before Commissioner.",
+   "Cross Subsidy surcharge to TNGDCL - Rs 39.52 lakhs",
+   "Dispute with TNEB on Payment of tax on self-generation units - Rs 6.96 lakhs",
+   "Dispute under Appeal under GST Act, 2017 - Rs 7.24 lakhs",
+   "Dispute on Networking charges with TNEB - Rs 1.73 lakhs"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Claims against the Company not acknowledged as debts - ongoing litigations with various authorities and third parties",
+    "amount_cr": null
+   },
+   {
+    "nature": "GST demand under dispute",
+    "amount_cr": 0.0724
+   },
+   {
+    "nature": "Cross Subsidy surcharge to TNGDCL",
+    "amount_cr": 0.4
+   },
+   {
+    "nature": "Dispute with TNEB on Payment of tax on self-generation units",
+    "amount_cr": 0.07
+   },
+   {
+    "nature": "Dispute under Appeal under GST Act, 2017",
+    "amount_cr": 0.07
+   },
+   {
+    "nature": "Dispute on Networking charges with TNEB",
+    "amount_cr": 0.02
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Capital commitments",
+    "amount_cr": 0,
+    "timeline": "As at 31st March 2026, estimated value of contracts remaining to be executed on capital account is Nil (Previous year Rs 200 lakhs)"
+   }
+  ]
+ }
+}

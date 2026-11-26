@@ -1,0 +1,941 @@
+{
+ "isin": "INE681C01015",
+ "name": "Keynote Financial Services Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31424_KEYFINSERV_2025_2026_A_2274063_04092026190211.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 641395,
+ "chunks": 17,
+ "chunks_ok": 15,
+ "facts": {
+  "business": {
+   "description": "Keynote Financial Services Limited is a financial services company with subsidiaries including Keynote Capitals Limited and Keynote Fincorp Limited, engaged in lending, inter-corporate deposits, and investment activities.",
+   "value_chain_position": "service",
+   "products": [
+    {
+     "name": "Merchant Banking (ECM)",
+     "share_of_revenue_pct": null,
+     "note": "Focus on IPOs on main board, working actively on several mandates as BRLM"
+    },
+    {
+     "name": "Corporate Finance and Advisory",
+     "share_of_revenue_pct": null,
+     "note": "Concluded a few mandates during the year"
+    },
+    {
+     "name": "Services to Alternative Investment Funds (AIFs)",
+     "share_of_revenue_pct": null,
+     "note": "As mandated by SEBI"
+    },
+    {
+     "name": "Institutional Brokerage (via KCL)",
+     "share_of_revenue_pct": null,
+     "note": "KCL strengthened institutional brokerage with research team and institutional sales personnel"
+    },
+    {
+     "name": "FIKAA App (via KCL)",
+     "share_of_revenue_pct": null,
+     "note": "AI-driven app for women's financial independence through mutual fund investing, expanded into Gold"
+    },
+    {
+     "name": "Early stage venture/start-up investments (via KCL)",
+     "share_of_revenue_pct": null,
+     "note": "Minority investments in '50 Fin', 'Arthum'"
+    },
+    {
+     "name": "NBFC Lending (via KFIN)",
+     "share_of_revenue_pct": null,
+     "note": "Keynote Fincorp Limited is a Non-Banking Financial Company"
+    },
+    {
+     "name": "Merchant Banking / ECM Services",
+     "share_of_revenue_pct": null,
+     "note": "Book Running Lead Manager mandates"
+    },
+    {
+     "name": "Corporate Finance & Advisory",
+     "share_of_revenue_pct": null,
+     "note": "M&A, valuation services, ESOP advisory"
+    },
+    {
+     "name": "Due Diligence Services for AIFs",
+     "share_of_revenue_pct": null,
+     "note": "Issued more than 50 Due Diligence Certificates"
+    },
+    {
+     "name": "Investment banking services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Corporate advisory services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "ESOP advisory services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Financial services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from contracts with customers recognized when services are provided; includes interest income, dividend income, net gain on fair value changes, and sale of services"
+    },
+    {
+     "name": "Corporate finance",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 94.50 lakhs in FY2026 and Rs 267.57 lakhs in FY2025"
+    },
+    {
+     "name": "ESOP advisory",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 35.38 lakhs in FY2026 and Rs 76.00 lakhs in FY2025"
+    },
+    {
+     "name": "Merchant banking",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 575.22 lakhs in FY2026 and Rs 250.16 lakhs in FY2025"
+    },
+    {
+     "name": "Investment banking",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Broking business in commodities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Trading in securities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Corporate finance services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 94.50 lakhs (2026), Rs 267.57 lakhs (2025)"
+    },
+    {
+     "name": "Merchant banking services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 575.22 lakhs (2026), Rs 250.16 lakhs (2025)"
+    },
+    {
+     "name": "Other advisory services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 941.39 lakhs (2026), Rs 1,005.01 lakhs (2025)"
+    },
+    {
+     "name": "Brokerage and related activities",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 440.76 lakhs (2026), Rs 465.27 lakhs (2025)"
+    },
+    {
+     "name": "Merchant Banking & related activities",
+     "share_of_revenue_pct": null,
+     "note": "Segment: Income from Advisory Services"
+    },
+    {
+     "name": "Broking & related activities",
+     "share_of_revenue_pct": null,
+     "note": "Includes broking services to clients, advisory services, depository services etc."
+    },
+    {
+     "name": "Financing Activities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "Mid-market clients for ECM",
+    "Institutions (for KCL brokerage)",
+    "Women investors (for FIKAA app)",
+    "Alternative Investment Funds",
+    "Mid-market issuers",
+    "Alternative Investment Funds (AIFs)",
+    "Corporates seeking M&A, valuation, ESOP advisory",
+    "Related party",
+    "Non-related party"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Outside India",
+     "share_pct": null
+    }
+   ],
+   "end_markets": [
+    "Capital markets (ECM/IPO)",
+    "Corporate finance advisory",
+    "Institutional brokerage",
+    "Retail wealth management (women focus)",
+    "Alternative Investment Funds",
+    "Early-stage ventures/startups",
+    "NBFC lending",
+    "Equity Capital Markets",
+    "Primary Market (IPOs)",
+    "financial services",
+    "capital markets",
+    "Corporate finance",
+    "ESOP advisory",
+    "Merchant banking",
+    "Other advisory",
+    "Broking"
+   ],
+   "brands_or_certifications": [
+    "FIKAA (Financial Independence through Knowledge and Action)",
+    "BSE Member (KCL)",
+    "NSE Member (KCL)",
+    "CDSL Depository Participant (KCL)",
+    "SEBI Registered Merchant Banker",
+    "SEBI Registered AIF Services"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": null,
+    "business": "Wholly Owned Subsidiary Company"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": null,
+    "business": "Subsidiary Company"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": 57.14,
+    "business": "Non-Banking Financial Company (NBFC) / Financing activities"
+   },
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": 100,
+    "business": "Broking, Advisory and Proprietary Trading Activities"
+   },
+   {
+    "name": "Keynote Capitals Limited (KCL)",
+    "holding_pct": 100,
+    "business": "Integrated broking house, member of BSE and NSE, Depository Participant with CDSL; Institutional Brokerage, FIKAA app (AI-driven mutual fund platform for women), early-stage venture investments (50 Fin, Arthum)"
+   },
+   {
+    "name": "Keynote Fincorp Limited (KFIN)",
+    "holding_pct": null,
+    "business": "Non-Banking Financial Company (NBFC)"
+   },
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": null,
+    "business": "Subsidiary company; shares operating costs with parent"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": null,
+    "business": "Subsidiary company"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": null,
+    "business": "given unsecured loans and advances to various parties at the rate of interest ranging between 15% to 18% p.a, repayable on demand. Additionally, the said subsidiary have also lent interest free loans and advances to various parties, repayable on demand."
+   },
+   {
+    "name": "Keynote Capital Limited",
+    "holding_pct": null,
+    "business": "taken secured vehicle loans from banks and financial institutions"
+   },
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": null,
+    "business": "Subsidiary, BSE & NSE operations"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": null,
+    "business": "Subsidiary, creates statutory reserve under section 45-IC of RBI Act, 1934"
+   },
+   {
+    "name": "Keynote Capitals Limited",
+    "holding_pct": 100,
+    "business": "Financial services"
+   },
+   {
+    "name": "Keynote Fincorp Limited",
+    "holding_pct": 100,
+    "business": "Financial services"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Keynote Fincorp Limited",
+    "nature": "Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements",
+    "amount_cr": 15
+   },
+   {
+    "party": "Keynote Capitals Limited and Keynote Fincorp Limited",
+    "nature": "Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements between subsidiaries",
+    "amount_cr": 35
+   },
+   {
+    "party": "Keynote Fincorp Limited and Maple Leaf Trading and Services Private Limited",
+    "nature": "Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements between subsidiary and entity with common related parties",
+    "amount_cr": 35
+   },
+   {
+    "party": "Keynote Fincorp Limited",
+    "nature": "Subsidiary (57.14% holding); Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements on continuous basis",
+    "amount_cr": 15
+   },
+   {
+    "party": "Keynote Capitals Limited and Keynote Fincorp Limited",
+    "nature": "Transaction between wholly owned subsidiary and subsidiary; Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements on continuous basis",
+    "amount_cr": 35
+   },
+   {
+    "party": "Keynote Fincorp Limited and Maple Leaf Trading and Services Private Limited",
+    "nature": "Transaction between subsidiary and entity having common related parties; Loan facility(ies), financial assistance, inter-corporate deposits and/or other borrowing arrangements on continuous basis",
+    "amount_cr": 35
+   },
+   {
+    "party": "Item No. 6 related party",
+    "nature": "Loan given by listed entity",
+    "amount_cr": 0
+   },
+   {
+    "party": "Item No. 7 related party",
+    "nature": "Loan given by listed entity",
+    "amount_cr": 2.5960838
+   },
+   {
+    "party": "Item No. 8 related party",
+    "nature": "Loan given by listed entity",
+    "amount_cr": 1.155
+   },
+   {
+    "party": "Not Applicable",
+    "nature": "No contracts or arrangements or transactions at arm's length basis during FY2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Related party transactions reviewed/approved by Audit Committee, entered on arm's length basis; no materially significant transactions with potential conflict",
+    "amount_cr": null
+   },
+   {
+    "party": "Subsidiaries",
+    "nature": "Loans",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Receivables",
+    "amount_cr": 0.2642626
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Payable to employees",
+    "amount_cr": 0.065
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Recovery of common expenses",
+    "amount_cr": 0.1526
+   },
+   {
+    "party": "Keynote Capitals Limited",
+    "nature": "Sharing of operating costs recovered on mutually agreed basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Concept Communication Limited",
+    "nature": "Receiving of services",
+    "amount_cr": 0.0179
+   },
+   {
+    "party": "Mrs. Rinku Suchanti",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 0.3499
+   },
+   {
+    "party": "Mr. Vineet Suchanti",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 0.528
+   },
+   {
+    "party": "Mr Rakesh Choudhari",
+    "nature": "Managerial Remuneration",
+    "amount_cr": 1.8751
+   },
+   {
+    "party": "Mr Devin Joshi",
+    "nature": "Remuneration",
+    "amount_cr": 0.2356
+   },
+   {
+    "party": "Ms. Simran Kashela",
+    "nature": "Remuneration",
+    "amount_cr": 0.1024
+   },
+   {
+    "party": "Mr. Varun Suchanti",
+    "nature": "Remuneration",
+    "amount_cr": 0.1248
+   },
+   {
+    "party": "Mrs. Pushpa Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mrs. Rinku Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0004
+   },
+   {
+    "party": "Mr. Vineet Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0012
+   },
+   {
+    "party": "Mr. Vivek Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0582
+   },
+   {
+    "party": "Mr. Nirmal Suchanti",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Concept Production Limited",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0242
+   },
+   {
+    "party": "NSS Digital Media Limited",
+    "nature": "Dividend paid",
+    "amount_cr": 0.3112
+   },
+   {
+    "party": "Bela Properties Pvt Ltd",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0041
+   },
+   {
+    "party": "Dhanvirdhi Tieup Pvt Ltd",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0004
+   },
+   {
+    "party": "Nirmal Suchanti - HUF",
+    "nature": "Dividend paid",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Maple Leaf Trading and Services Ltd",
+    "nature": "Interest received",
+    "amount_cr": 0.6817
+   },
+   {
+    "party": "Maple Leaf Trading and Services Ltd",
+    "nature": "Brokerage received",
+    "amount_cr": 0.009
+   },
+   {
+    "party": "Maple Leaf Trading and Services Ltd",
+    "nature": "Loans and deposits given",
+    "amount_cr": 35.56
+   },
+   {
+    "party": "Maple Leaf Trading and Services Ltd",
+    "nature": "Loans and deposits repaid",
+    "amount_cr": 11.55
+   },
+   {
+    "party": "Mr. Vineet Suchanti",
+    "nature": "Reimbursement of expenses",
+    "amount_cr": 0.001
+   },
+   {
+    "party": "Mrs. Rinku Suchanti",
+    "nature": "Recovery of expenses",
+    "amount_cr": 0.001
+   }
+  ],
+  "auditor": {
+   "name": "S M S R & CO LLP",
+   "opinion": "No qualification, reservation, adverse remark or disclaimer given by the Auditors in their Report",
+   "qualifications_or_emphasis": [
+    "Delay in filing details of related party transactions with Stock Exchanges (subsequently completed with fine paid)",
+    "Stock Exchanges issued notice for non-compliance with Regulation 18(1) and 19(1)(2) of SEBI LODR; waiver of fine accepted after representation",
+    "Fine of Rs 5,000 per day for delayed disclosure of related party transactions under Regulation 23(9)",
+    "Fine of Rs 1,36,880 each for non-compliance with Regulation 18(1) (Audit Committee composition) and Regulation 19(1)(2) (Nomination and Remuneration Committee composition); waivers granted by stock exchanges",
+    "Emphasis on audit trail feature in accounting software operating throughout the year with no tampering",
+    "Pending litigations disclosed in Note 33",
+    "No long-term contracts with material foreseeable losses",
+    "No amounts required to be transferred to Investor Education and Protection Fund",
+    "Management representations on no funds advanced/loaned/invested to intermediaries or received from funding parties for ultimate beneficiaries",
+    "Reliance on other auditors for two subsidiaries",
+    "Quarter ended March 31, 2026 results are balancing figures between audited full year and unaudited nine-month figures"
+   ],
+   "key_audit_matters": [
+    "Accuracy of recognition, measurement, presentation and disclosure of revenues and other related balances in respect of contracts involving critical estimates, as per Ind AS 115 'Revenue from Contract with Customers'"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Reappointment of Mrs. Rinku Vineet Suchanti as Whole Time Director for 3 years from 1st July 2026 to 30th June 2029",
+    "Appointment of M/s. V K Beswal and Associates as Statutory Auditors for 5 years from conclusion of 33rd AGM until 38th AGM",
+    "Re-appointment of Mrs. Rinku Vineet Suchanti (DIN: 00012903) as Whole Time Director for 3 years w.e.f. 1st July, 2026",
+    "Appointment of M/s. V. K. Beswal & Associates as Statutory Auditors for 5 years from conclusion of 33rd AGM till conclusion of 38th AGM, replacing M/s. S M S R & Co LLP",
+    "Mr. Vineet Suchanti retires by rotation and offers himself for re-appointment; designated as Managing Director",
+    "Mrs. Rinku Vineet Suchanti re-appointed as Whole-Time Director for 3 years from 1st July 2026 to 30th June 2029",
+    "M/s. V K Beswal and Associates proposed as Statutory Auditors for 5 years from conclusion of 33rd AGM",
+    "Mr. Pankaj Joshi appointed as Non-Executive & Independent Director w.e.f. March 31, 2025",
+    "Mr. Riaz Taher Thingna appointed 28/03/2024",
+    "Mr. Ravindranath Cheerakuzhi Puthan Menon appointed 28/03/2024",
+    "Mr. Pankaj Sham Joshi appointed 31/03/2025",
+    "Mr. Rakesh Shriram Choudhari appointed 02/05/2024"
+   ],
+   "auditor_change": "M/s. V K Beswal and Associates appointed as new Statutory Auditors replacing S M S R & CO LLP",
+   "top_shareholders": [
+    {
+     "name": "Foreign shareholders",
+     "pct": 9.7
+    },
+    {
+     "name": "Mr. Vineet Suchanti",
+     "pct": 0.22
+    },
+    {
+     "name": "Mrs. Rinku Vineet Suchanti",
+     "pct": 0.07
+    },
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 71.88
+    },
+    {
+     "name": "Foreign Institutional Investors",
+     "pct": 9.26
+    },
+    {
+     "name": "Individuals (Public)",
+     "pct": 15.15
+    },
+    {
+     "name": "NSS Digital Media Limited",
+     "pct": 55.91
+    },
+    {
+     "name": "Vivek Nirmal Suchanti",
+     "pct": 10.45
+    },
+    {
+     "name": "India Max Investment Fund Limited",
+     "pct": 9.26
+    },
+    {
+     "name": "N S S Digital Media Limited",
+     "pct": 55.91
+    },
+    {
+     "name": "Concept Productions Limited",
+     "pct": 4.34
+    },
+    {
+     "name": "M/S. Bela Properties Private Ltd",
+     "pct": 0.73
+    },
+    {
+     "name": "Dhanvirdhi Tieup Private Limited",
+     "pct": 0.07
+    },
+    {
+     "name": "Vineet Nirmal Suchanti",
+     "pct": 0.22
+    },
+    {
+     "name": "Rita Vivek Suchanti",
+     "pct": 0.09
+    },
+    {
+     "name": "Rinku Vineet Suchanti",
+     "pct": 0.07
+    }
+   ],
+   "promoter_holding_pct": 71.88
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Vineet Suchanti",
+     "role": "Managing Director & CFO"
+    },
+    {
+     "name": "Mrs. Rinku Vineet Suchanti",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Riaz Thingna",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ravindranath Cheerakuzhi Puthan Menon",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Pankaj Joshi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Rakesh Choudhari",
+     "role": "Non-Executive and Non-Independent Director"
+    },
+    {
+     "name": "Ms. Simran P. Kashela",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Vineet Suchanti",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Rakesh Choudhari",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Vineet Suchanti",
+     "role": "Whole-Time Director (designated as Managing Director)"
+    },
+    {
+     "name": "Mrs. Rinku Vineet Suchanti",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Vineet Suchanti",
+     "role": "Managing Director & CFO"
+    },
+    {
+     "name": "Rinku Vineet Suchanti",
+     "role": "Director"
+    },
+    {
+     "name": "Riaz Thingna",
+     "role": "Director"
+    },
+    {
+     "name": "Ravindranath Cheerakuzhi Puthan Menon",
+     "role": "Director"
+    },
+    {
+     "name": "Pankaj Joshi",
+     "role": "Director"
+    },
+    {
+     "name": "Rakesh Choudhari",
+     "role": "Chief Executive Officer"
+    },
+    {
+     "name": "Simran Kashela",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Vineet Suchanti",
+     "role": "Executive Director [Whole-Time Director], Managing Director and CFO"
+    },
+    {
+     "name": "Mrs. Rinku Vineet Suchanti",
+     "role": "Executive Director [Whole-Time Director]"
+    },
+    {
+     "name": "Mr. Ravindranath Cheerakuzhi Puthan Menon",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mr. Riaz Thingna",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Mr. Pankaj Joshi",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Rinku Suchanti",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Vineet Suchanti",
+     "role": "Managing Director, Keynote Financial Services Limited; Director, Keynote Capitals Limited & Director, Keynote Fincorp Limited"
+    },
+    {
+     "name": "Mrs. Rinku Suchanti",
+     "role": "Whole Time Director, Keynote Financial Services Limited"
+    },
+    {
+     "name": "Ms. Simran Kashela",
+     "role": "Company Secretary, Keynote Financial Services Limited & Company Secretary, Keynote Capitals Limited"
+    },
+    {
+     "name": "Mr. Devin Joshi",
+     "role": "Chief Financial Officer, Keynote Capitals Limited"
+    },
+    {
+     "name": "Mr. Rakesh Choudhari",
+     "role": "Managing Director, Keynote Capitals Limited, Director, Keynote Fincorp Limited"
+    }
+   ],
+   "employees": 28
+  },
+  "dividend_per_share": 1,
+  "other_notable": [
+   "33rd AGM scheduled for September 28, 2026 at 11:00 AM IST through VC/OAVM",
+   "Dividend of 10% (Rs. 1/- per share) recommended for FY 2025-26",
+   "Record date for dividend: September 21, 2026",
+   "Remote e-voting period: September 25, 2026 (10:00 AM) to September 27, 2026 (5:00 PM)",
+   "Approval sought for investments/loans/guarantees up to Rs. 100 crores under Section 186",
+   "Bankers: Indian Bank, State Bank of India, ICICI Bank Limited, Punjab National Bank, Kotak Mahindra Bank Limited",
+   "Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "Registered Office: The Ruby, 9th floor, Senapati Bapat Marg, Dadar (West), Mumbai \u2013 400 028",
+   "Financial performance for FY 2025-26 (in Lakhs): Paid up share capital 556.66, Total Income 717.02, Expenses 898.11, Loss before tax -181.08, Loss after tax -165.96, EPS -2.98",
+   "Foreign shareholding as on 31st March 2026: 5,40,403 Equity Shares representing 9.70% of total capital",
+   "Maple Leaf Trading and Services Private Limited (formerly Bela Properties Private Limited) identified as entity having common related parties",
+   "E-voting and AGM procedures detailed for NSDL/CDSL platforms",
+   "Cut-off date for AGM speaker registration and queries: Monday, September 21, 2026",
+   "AGM to be held through VC/OAVM facility",
+   "Maple Leaf Trading and Services Limited ceased to be associate company pursuant to amalgamation with Bela Properties Private Limited effective February 06, 2026 (appointed date April 01, 2025)",
+   "Company approved enabling resolution for investments/loans/guarantees/securities up to Rs 100 crore under Section 186",
+   "Unclaimed dividend of Rs 1,83,783 for FY 2017-18 transferred to IEPF on 24th October 2025",
+   "6,204 equity shares transferred to IEPF during FY 2025-26 (6,203 on 21st Nov 2025, 1 on 3rd Dec 2025)",
+   "Foreign exchange earnings: Rs 10.28 lakhs (prev Rs 23.80 lakhs); Foreign exchange expenditure: Rs 3.18 lakhs (prev Rs 6.79 lakhs)",
+   "98.75% equity capital in dematerialized mode as on March 31, 2026",
+   "No CSR applicability; Risk Management policy not applicable",
+   "Board met 4 times; Audit Committee 4 times; NRC once; Stakeholders Relationship Committee once",
+   "Secretarial Audit by M. K. Saraswat & Associates LLP - no qualification/reservation/adverse remark",
+   "Vigil Mechanism/Whistle Blower Policy in place",
+   "Gender composition: Male 16, Female 12, Transgender 0 as on March 31, 2026",
+   "ISIN: INE681C01015; Listed on BSE (B segment) and NSE",
+   "Total revenue from sale of services for FY2025-26: Rs 705.10 lakhs (vs Rs 593.73 lakhs in FY2024-25)",
+   "Median remuneration of employees decreased by 14.93% in FY2025-26",
+   "Average percentile increase in salaries of non-managerial employees: 20.08%; managerial remuneration increase: NIL",
+   "Debtors Turnover: 13.71 times (vs 2.80 times previous year)",
+   "Interest Coverage Ratio: (31.05) times (vs 49.15 previous year) due to net loss on fair value of investments per Ind-AS",
+   "Current Ratio: 24.86 times (vs 22.72 times previous year)",
+   "Debt Equity Ratio: 0.01 times (unchanged)",
+   "Operating Profit Margin: (15.20)% (vs 48.45% previous year)",
+   "Net Profit Margin: (25)% (vs 35% previous year)",
+   "Return on Net Worth: -2.32% (vs 5.07% previous year)",
+   "Company follows Accounting Standards prescribed by ICAI; no different accounting treatment",
+   "SEBI notified comprehensive overhaul of Merchant Bankers Regulations in December 2025",
+   "Primary market: 109 mainboard IPOs raising ~Rs 1.76 lakh crore in FY26; mutual fund AUM ~Rs 73.7 lakh crore; demat accounts ~22.5 crore",
+   "Board met 4 times during FY 2025-26: May 29, 2025, August 14, 2025, November 14, 2025, February 12, 2026",
+   "Audit Committee met 4 times; Nomination and Remuneration Committee met 1 time (August 14, 2025); Stakeholders Relationship Committee met 1 time",
+   "Independent Directors meeting held on February 12, 2026",
+   "Sitting fees paid to Independent Directors: Rs 4,80,000; Remuneration to Whole-Time Directors: Rs 32,10,000",
+   "No stock options granted to directors",
+   "Shareholder complaints: Received 0, Resolved 0, Pending 0",
+   "AGM 2025-26 scheduled for September 28, 2026 at 11:00 a.m. via VC/OAVM",
+   "Book closure: September 22-28, 2026",
+   "Final dividend recommended by Board on May 29, 2026, subject to shareholder approval",
+   "Listed on BSE (512597) and NSE (KEYFINSERV); Face value Rs 10",
+   "Registrar: MUFG Intime India Private Limited",
+   "98.76% shares dematerialized as on March 31, 2026",
+   "No outstanding GDRs/ADRs/Warrants/Convertible Instruments",
+   "Special resolutions passed in last 3 AGMs include re-appointments, Section 185 approvals, related party transactions, secretarial auditor appointment",
+   "BSE Limited and NSE imposed fine of Rs 5,000 each under Regulation 23(9) of SEBI LODR; fines paid",
+   "Statutory Auditors' fees: Rs 5,25,000 for FY 2025-26",
+   "No complaints under Sexual Harassment of Women at Workplace Act",
+   "Certificate from M.K. Saraswat & Associates LLP confirming no director disqualified",
+   "Secretarial audit of subsidiaries by Uma Lodha & Co. - compliance confirmed",
+   "Company complies with all mandatory SEBI LODR requirements",
+   "Company is registered under section 45-IA of the Reserve Bank of India Act, 1934 as a Non-Banking Financial Company"
+  ],
+  "outlook": [
+   {
+    "statement": "Company is currently working actively on several mandates as BRLM which will fructify over the next 12-18 months",
+    "period": "next 12-18 months"
+   },
+   {
+    "statement": "The outlook for the current financial year remains optimistic with a strong IPO pipeline and structural drivers intact; however, near-term activity is likely to remain challenging due to domestic and global developments, particularly the trajectory of the West Asia conflict.",
+    "period": "Current financial year (FY27)"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Working actively on several mandates as BRLM for IPOs on main board",
+    "value_cr": null
+   },
+   {
+    "statement": "Currently working on several mandates as Book Running Lead Manager expected to fructify over the next 12\u201318 months.",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Net loss on standalone basis due to fair value changes of -150.38 lakhs",
+   "Decline in standalone total income from 1,063.43 lakhs to 717.02 lakhs",
+   "Decline in consolidated net profit from 1,456.99 lakhs to 665.88 lakhs",
+   "Cessation of associate company Maple Leaf Trading and Services Limited",
+   "Company size is a concern given the operating segment",
+   "Capital market volatility driven by geopolitical developments (West Asia conflict), crude prices, currency, and foreign portfolio flows",
+   "Regulatory changes: SEBI (Merchant Bankers) (Amendment) Regulations, 2025 effective January 2026 with enhanced net-worth and record-keeping obligations",
+   "The Company has incurred Rs 148.80 lakhs as cash losses in the financial year 2025-2026",
+   "Pending litigations: Income Tax Penalty u/s 271FA of Rs 8,12,500 for A.Y. 2023-2024 pending before Deputy Commissioner of Income Tax; Interest thereon of Rs 48,750; Maharashtra Property Tax of Rs 72,52,747 for period October 2011 to March 2021 pending before Asst. Assessor and Collector, G/North Ward",
+   "Credit risk from financial assets such as trade receivables, investments, balances with banks, loans & other receivables",
+   "Liquidity risk from mismatches in timing of cash flows",
+   "Market risk including foreign currency risk (net receivable INR 1,75,303 as at 31 March 2026) and interest rate risk",
+   "Price risk from FVTPL and FVOCI investments",
+   "Investment risk: Return on plan asset below discount rate creates plan deficit",
+   "Interest rate risk: Fall in discount rate increases present value of liability",
+   "Asset Liability Matching (ALM) Risk: Matching cash flow risk",
+   "Salary risk: Increase in salary more than assumed level increases plan's liability",
+   "Concentration Risk: All assets invested with insurance company, default would wipe out all assets",
+   "Credit risk from trade receivables, investments, balances with banks, loans & other receivables and other financial assets",
+   "Market risk including foreign currency risk, interest rate risk, and price risk from FVTPL and FVOCI investments"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Related party (Item No. 7)",
+    "amount_cr": 2.5960838,
+    "note": "Closing balance as of last financial year; 8% interest rate; unsecured; for business activities"
+   },
+   {
+    "lender_or_type": "Related party (Item No. 8)",
+    "amount_cr": 1.155,
+    "note": "Closing balance as of last financial year; 8% interest rate; unsecured; for business activities"
+   },
+   {
+    "lender_or_type": "Borrowings (unspecified)",
+    "amount_cr": 0.5028,
+    "note": "As per Balance Sheet as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Mercedez-Benz Financial Services India Pvt Ltd",
+    "amount_cr": 0.5028,
+    "note": "Security deposit against hypothecation of motor car; vehicle loan at 8.8405% p.a. repayable in 60 monthly installments of Rs 1,48,800; secured against respective movable assets; Rs 13.97 lakhs repayable within one year from 31 March 2027"
+   },
+   {
+    "lender_or_type": "Borrowings",
+    "amount_cr": 0.5028,
+    "note": "As at 31 March 2026: Rs 50.28 lakhs (Rs 0.5028 crore); within 12 months: Rs 13.97 lakhs; after 12 months: Rs 36.31 lakhs"
+   },
+   {
+    "lender_or_type": "Borrowings",
+    "amount_cr": 0.6307,
+    "note": "As at 31 March 2025: Rs 63.07 lakhs (Rs 0.6307 crore)"
+   },
+   {
+    "lender_or_type": "Borrowings (other than debt securities)",
+    "amount_cr": 4.1194,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "banks",
+    "amount_cr": 2.1919,
+    "note": "Term loans from banks at amortised cost"
+   },
+   {
+    "lender_or_type": "other parties",
+    "amount_cr": 1.9275,
+    "note": "Term loans from other parties at amortised cost"
+   },
+   {
+    "lender_or_type": "banks",
+    "amount_cr": 0.2328463,
+    "note": "Secured vehicle loan from banks at 8.18% p.a repayable in 60 monthly instalments of INR 1,46,611. Repay INR 16,29,041 within one year from 31 March 2026."
+   },
+   {
+    "lender_or_type": "financial institution",
+    "amount_cr": 0.0954517,
+    "note": "Secured vehicle loan from financial institution at 9.10% p.a., repayable in 60 monthly instalments of INR 31,210. Repay INR 2,98,933 within one year from 31 March 2027."
+   },
+   {
+    "lender_or_type": "financial institution",
+    "amount_cr": 0.3826768,
+    "note": "Secured vehicle loan from financial institution at 8.71% p.a., repayable in 60 monthly instalments of INR 98,827. Repay INR 8,86,863 within one year from 31 March 2027."
+   },
+   {
+    "lender_or_type": "financial institution",
+    "amount_cr": 1.0736182,
+    "note": "Secured vehicle loan from financial institution at 7.89% p.a., repayable in 60 monthly instalments of INR 2,26,460. Repay INR 19,39,580 within one year from 31 March 2027."
+   },
+   {
+    "lender_or_type": "financial institution",
+    "amount_cr": 0.5027978,
+    "note": "Holding Company secured vehicle loan from financial institution at 8.8405% p.a repayable in 60 monthly instalments of INR 1,48,800. Repay INR 13,96,799 within one year from 31 March 2027."
+   }
+  ],
+  "litigation": [
+   "Stock Exchanges issued notice regarding non-compliance with Regulation 18(1) and 19(1)(2) of SEBI LODR; waiver of fine accepted after representation",
+   "Income Tax Penalty u/s 271FA of Rs 8,12,500 for A.Y. 2023-2024 pending before Deputy Commissioner of Income Tax",
+   "Interest on Income Tax Penalty of Rs 48,750",
+   "Maharashtra Property Tax of Rs 72,52,747 for period October 2011 to March 2021 pending before Asst. Assessor and Collector, G/North Ward",
+   "Income tax matters under appeal (contingent liability of Rs 8.61 lakhs as at 31 March 2026)",
+   "Selective reduction of share capital as directed by Hon'ble National Company Law Tribunal, Mumbai Bench (NCLT) order dated January 9, 2025; paid-up share capital reduced from Rs 7,01,83,390 to Rs 5,56,66,370",
+   "Income Tax Penalty u/s 271FA for A.Y. 2023-24 pending before Deputy Commissioner of Income Tax",
+   "Maharashtra Municipal Property Tax for October 2011 to March 2021 pending before Asst. Assessor and Collector, G/North Ward",
+   "Income tax demands contested by the Holding Company - Keynote Financial Services Limited",
+   "Property tax dispute with Ruby Mills Limited / Brihanmumbai Mahanagar Palika",
+   "Selective Reduction of Share Capital as directed by the Hon'ble National Company Law Tribunal, Mumbai Bench (NCLT) in its order dated January 9, 2025"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax Penalty u/s 271FA",
+    "amount_cr": 0.08125
+   },
+   {
+    "nature": "Interest on Income Tax Penalty",
+    "amount_cr": 0.004875
+   },
+   {
+    "nature": "Maharashtra Property Tax",
+    "amount_cr": 0.7252747
+   },
+   {
+    "nature": "Demand in respect of income tax matters that may arise in respect of which the Company is in appeal",
+    "amount_cr": 0.0861
+   },
+   {
+    "nature": "Corporate guarantees given",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax Interest Thereon",
+    "amount_cr": 0.004875
+   },
+   {
+    "nature": "Maharashtra Municipal Property Tax",
+    "amount_cr": 0.7252747
+   },
+   {
+    "nature": "Demand in respect of income tax matters that may arise in respect of which the Group is in appeal",
+    "amount_cr": 0.0861
+   },
+   {
+    "nature": "Corporate guarantees given by the Holding Company on behalf of its subsidiary",
+    "amount_cr": 5.0
+   },
+   {
+    "nature": "Claims against the Group not acknowledged as debts",
+    "amount_cr": 0.7253
+   }
+  ]
+ }
+}

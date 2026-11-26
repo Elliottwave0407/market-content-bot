@@ -1,0 +1,581 @@
+{
+ "isin": "INE335W01016",
+ "name": "Ganges Securities Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29908_GANGESSECU_2025_2026_A_2410774_20072026182027.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 505282,
+ "chunks": 13,
+ "chunks_ok": 13,
+ "facts": {
+  "business": {
+   "description": "Ganges Securities Limited is an unregistered Core Investment Company (CIC) that invests and deals in securities, earning income from dividends, interest on loans, rental income, fixed deposits, and profit on sale of investments. Through its subsidiary Cinnatolliah Tea Limited, it is also engaged in tea manufacturing and processing.",
+   "products": [
+    {
+     "name": "Investment in securities",
+     "share_of_revenue_pct": null,
+     "note": "Standalone operations"
+    },
+    {
+     "name": "Tea manufacturing and processing",
+     "share_of_revenue_pct": null,
+     "note": "Through subsidiary Cinnatolliah Tea Limited"
+    },
+    {
+     "name": "Investment in equity shares (quoted and unquoted)",
+     "share_of_revenue_pct": null,
+     "note": "Carried at FVOCI; includes investments in Sutlej Textile & Industries Ltd., Avadh Sugar & Energy Ltd., Chambal Fertilisers & Chemicals Ltd., SIL Investments Ltd., Palash Securities Ltd., New India Retailing & Investments Ltd., and others."
+    },
+    {
+     "name": "Investment in bonds",
+     "share_of_revenue_pct": null,
+     "note": "7.09% GOI 2054 and 7.30% GOI 2053 carried at FVOCI."
+    },
+    {
+     "name": "Inter-corporate deposits (loans)",
+     "share_of_revenue_pct": null,
+     "note": "Unsecured loans to related parties (Other related parties) measured at amortised cost."
+    },
+    {
+     "name": "Rental income from investment property",
+     "share_of_revenue_pct": null,
+     "note": "Investment property comprises freehold land and building; rental income recognised in profit or loss."
+    },
+    {
+     "name": "tea",
+     "share_of_revenue_pct": null,
+     "note": "Harvested tea leaves from own gardens are measured at fair value less cost of sale at the point of harvest, and this cost is used for valuing finished goods."
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "value_chain_position": "other",
+   "end_markets": [
+    "Capital markets",
+    "Tea industry"
+   ],
+   "raw_materials": [
+    "purchased tea leaves",
+    "Tea seeds",
+    "Nursery upkeep",
+    "Land preparation materials",
+    "Green Tea Leaves"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The India capital market outlook remains positive, supported by strong economic fundamentals, favorable demographic trends, and continued regulatory reforms. The market generated a revenue of USD 3.8 Billion in 2025 and is projected to reach USD 6.8 Billion by 2034, growing at a compound annual growth rate of 6.27% from 2026-2034.",
+    "period": "2026-2034"
+   },
+   {
+    "statement": "Despite geopolitical tensions affecting traditional markets in the Middle East, the Indian tea industry remains resilient and optimistic. The Middle East - particularly the UAE, Iraq, Iran and Turkey - remained the primary engine of India's tea-export growth during the year, even amid regional volatility, and continues to account for a significant share of India's tea exports. Exporters have also selectively diversified into other markets, including China and North Africa, to broaden the export base. The Indian tea market is projected to reach revenue of approximately USD 20,459.8 million by 2033, at a CAGR of 6.8% over 2026-2033.",
+    "period": "2026-2033"
+   },
+   {
+    "statement": "The economic growth momentum of the country is largely dependent on ongoing global events that pose downside risk to growth. India is currently the third-largest middle-class market, after China and the United States and is expected to be the largest in another decade. Capital investment is expected to be the dominant growth driver for the Indian economy in medium term.",
+    "period": "Medium term"
+   }
+  ],
+  "risks": [
+   "Market risks in the form of reduction in value of investments and fall in return due to dip in investee company's performance",
+   "Delay in repayment by borrower companies affecting liquidity and redeployment scope",
+   "Exposure to fluctuation of economy and industry cycle",
+   "High volatility in the market along with higher inflation intensifying competition",
+   "Geopolitical tensions affecting traditional markets in the Middle East",
+   "Climate change reducing both tea yield and quality",
+   "Changes in weather pattern affecting timing of tea flushes making production less predictable",
+   "Rising cost of wages, fertilizers, chemicals, power and fuel, transportation and packaging",
+   "Labour shortages",
+   "Import competition",
+   "changes in Government regulations and tax-regime",
+   "economic developments within India and abroad",
+   "financial markets",
+   "Commodities price risk or foreign exchange risk and hedging: Not Applicable",
+   "Credit risk on financial assets (inter-corporate deposits, receivables) assessed via expected credit loss model.",
+   "Market risk on equity investments measured at FVOCI (quoted and unquoted).",
+   "Impairment risk on non-financial assets (investment property, PPE) reviewed at each reporting date.",
+   "Credit risk",
+   "Liquidity risk",
+   "Market risk (equity price risk)",
+   "Regulatory risk (very low)",
+   "The plan is defined benefit in nature which is sponsored by CTL and hence it underwrites all the risk pertaining to the plan. In particular, this exposes CTL, to actuarial risk such as adverse salary growth, change in demographic experience, inadequate return on underlying plan assets. This may result in an increase in cost of providing these benefits to employees in future.",
+   "Credit risk from receivables and counterparties",
+   "Liquidity risk from inability to settle obligations",
+   "Market risk from equity price fluctuations (quoted investments)",
+   "Interest rate risk from variable rate borrowings",
+   "Regulatory risk assessed as very low",
+   "Fraud risk identified in subsidiary (misappropriation by former CFO)"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Cinnatolliah Tea Limited",
+    "holding_pct": null,
+    "business": "Manufacture and sale of Tea"
+   },
+   {
+    "name": "Cinnatolliah Tea Limited",
+    "holding_pct": 100,
+    "business": "Tea business"
+   },
+   {
+    "name": "Cinnatolliah Tea Ltd.",
+    "holding_pct": null,
+    "business": "Equity shares of subsidiary carried at cost (unquoted), 2,61,75,396 shares of face value Rs 10 each."
+   },
+   {
+    "name": "Cinnatolliah Tea Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cinnatolliah Tea Limited",
+    "holding_pct": 100,
+    "business": "tea business"
+   },
+   {
+    "name": "Cinnatolliah Tea Limited (CTL)",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cinnatolliah Tea Limited (CTL)",
+    "holding_pct": null,
+    "business": "manufacturing and sale of tea and other related agricultural produce"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Company has no borrowings as on March 31, 2026. Debt-Equity Ratio is Nil."
+   },
+   {
+    "lender_or_type": "banks and financial institutions",
+    "amount_cr": 0,
+    "note": "The Company has not obtained any borrowings from banks and financial institutions, government or any other lenders."
+   },
+   {
+    "lender_or_type": "Fixed rate instruments",
+    "amount_cr": 0,
+    "note": "No variable rate borrowings as at 31 March 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s J K V S & Co. Chartered Accountants",
+   "opinion": "The Auditors' Report does not contain any qualification, reservation or adverse remark.",
+   "key_audit_matters": [
+    "Valuation in respect of investments: The Company holds a portfolio of quoted equity, unquoted equity investments, government bonds and others with an aggregate carrying value of Rs 54,140.90 Lakhs as at 31st March, 2026 representing 96.70% of total assets. Quoted securities are measured at fair value using Level 1 inputs, while unquoted investments are measured using Level 3 inputs including asset approach, recent transaction price and other unobservable inputs.",
+    "Valuation in respect of investments: The Company holds a portfolio of quoted equity, unquoted equity investments, government bonds and others with an aggregate carrying value of Rs 53,593.58 Lakhs as at 31st March, 2026 representing 92.28% of total assets. Quoted securities are measured at fair value using Level 1 inputs, while unquoted investments are measured using Level 3 inputs including asset approach, recent transaction price and other unobservable inputs."
+   ],
+   "qualifications_or_emphasis": [
+    "The title deeds of some immovable properties are not held in the name of the Company: Investment Property Freehold Land (carrying value Rs 2.47 lakhs) and PPE Freehold Land (carrying value Rs 15.00 lakhs) - erstwhile company, mutation process yet to commence pursuant to NCLT order for merger of Uttar Pradesh Trading Co. Ltd. with the Company.",
+    "Back-up of the books of account and other relevant books and papers in electronic mode is kept on servers physically located in India on daily basis - matters stated in paragraph 2(f) on reporting under rule 11(g) of the Companies (Audit and Auditors) Rules, 2014.",
+    "CARO qualification in subsidiary Cinnatolliah Tea Limited for paragraphs (xi)(a) and (xi)(b)",
+    "Audit trail not enabled at database level in subsidiary's accounting software"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Nandini Nopany [DIN: 00051362] retires by rotation at the forthcoming Annual General Meeting and being eligible offers herself for re-appointment.",
+    "Ms. Nandini Nopany, Director is retiring by rotation at the forthcoming AGM scheduled to be held on Tuesday, August 11, 2026 and being eligible offers herself for re-appointment.",
+    "There were no changes in the composition of Board of Directors during the period under review.",
+    "The changes in the composition of the Board of Directors that took place during the Period under Review were carried out in compliance with the provisions of the Act and other applicable laws.",
+    "Ms. Nandini Nopany (DIN: 00051362) retires by rotation and offers herself for re-appointment at AGM on August 11, 2026",
+    "Ms. Nandini Nopany retires by rotation at this Annual General Meeting and being eligible, offers herself for reappointment, as a Director. Accordingly, approval of the members by way of special resolution is required for her reappointment."
+   ],
+   "top_shareholders": [
+    {
+     "name": "Ms. Nandini Nopany",
+     "pct": null
+    },
+    {
+     "name": "Ms. Urvi Mittal",
+     "pct": null
+    },
+    {
+     "name": "Promoters",
+     "pct": 66.64
+    },
+    {
+     "name": "Individuals/HUF",
+     "pct": 24.34
+    },
+    {
+     "name": "Clearing Members/Market Maker/LLP/Trust",
+     "pct": 6.23
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 1.97
+    },
+    {
+     "name": "NRIs / OCBs / FIIs / Foreign Nationals",
+     "pct": 0.39
+    },
+    {
+     "name": "Unclaimed Shares",
+     "pct": 0.42
+    },
+    {
+     "name": "Mutual Funds, Financial Institutions, Banks, Insurance Companies, etc.",
+     "pct": 0.01
+    },
+    {
+     "name": "SIL Investments Ltd.",
+     "pct": 13.38
+    },
+    {
+     "name": "Mr. Chandra Shekhar Nopany [As Trustee of Shekhar Family Trust]",
+     "pct": 9.09
+    },
+    {
+     "name": "New India Retailing & Investment Ltd.",
+     "pct": 8.38
+    },
+    {
+     "name": "Navjeewan Medical Institute",
+     "pct": 6.21
+    },
+    {
+     "name": "Yashovardhan Investment & Trading Co. Ltd.",
+     "pct": 6.06
+    },
+    {
+     "name": "Hargaon Investment & Trading Co. Ltd.",
+     "pct": 5.69
+    },
+    {
+     "name": "Ms Nandini Nopany",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 66.64,
+   "auditor_change": "There has been no resignation of statutory auditors during the year."
+  },
+  "litigation": [
+   "No significant and material orders were passed by the regulators or courts or tribunals impacting the going concern status of the Company and/or its operations in future.",
+   "No proceedings are made or pending under the Insolvency and Bankruptcy Code, 2016.",
+   "Company had received notice from BSE Limited (BSE) deciding unfavourably on the waiver application and levying a fine of Rs 1,00,000/- for delayed appointment of Company Secretary and Compliance Officer in terms of Regulation 6(1) of the SEBI (LODR) Regulations, 2015. The Company has duly paid the complete fine Rs 100,000/- to BSE.",
+   "The Company does not have any pending litigations which would impact its financial position as on 31 March, 2026.",
+   "The Group does not have any pending litigations which would impact its financial position as on 31 March, 2026",
+   "Subsidiary company filed FIR against former CFO for misappropriation of funds (April 2022 - November 2024); matter pending before Court"
+  ],
+  "people": {
+   "employees": 2,
+   "key_management": [
+    {
+     "name": "Ms. Urvi Mittal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Vikash Goyal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Vijaya Agarwala",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Nandini Nopany",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Chaired last AGM"
+    },
+    {
+     "name": "Brij Mohan Agarwal",
+     "role": "Director"
+    },
+    {
+     "name": "Urvi Mittal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Vijaya Agarwala",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Vikash Goyal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Nandini Nopany",
+     "role": "Chairperson / Non-Executive Director"
+    },
+    {
+     "name": "Mrs. Urvi Mittal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Arun Kumar Newar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Dhiraj Ramakant Banka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Chhedi Lal Agarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Ms. Nandini Nopany",
+     "role": "Chairperson / Non-Executive Director"
+    },
+    {
+     "name": "Ms. Shruti Vora",
+     "role": "Non-Executive Director of subsidiary company"
+    },
+    {
+     "name": "Mr. Dilip Patodia",
+     "role": "Non-Executive Director of subsidiary company"
+    },
+    {
+     "name": "Mr. Dhiraj Ramkant Banka",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Harjinder Singh Kapoor",
+     "role": "Whole Time Director of subsidiary company"
+    },
+    {
+     "name": "Mr. Amit Swaika",
+     "role": "Chief Financial Officer of subsidiary company w.e.f 12.03.2025"
+    },
+    {
+     "name": "Mr. Chhedi Lal Agarwal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Brij Mohan Agarwal",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Priyankar Ghosh",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Mr. Amit Swaika",
+     "role": "Key Managerial Personnel"
+    },
+    {
+     "name": "Mrs. Vijaya Agarwala",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Nandini Nopany",
+     "role": "Director"
+    },
+    {
+     "name": "Ms Nandini Nopany",
+     "role": "Chairperson"
+    }
+   ]
+  },
+  "dividend_per_share": 0,
+  "other_notable": [
+   "The Company is an unregistered Core Investment Company (CIC) as on March 31, 2026.",
+   "Standalone Revenue from Operations for FY 2025-26: Rs 797.42 lakhs (Rs 7.97 crore); Profit After Tax: Rs 433.64 lakhs (Rs 4.34 crore).",
+   "Consolidated Revenue from Operations for FY 2025-26: Rs 3,610.90 lakhs (Rs 36.11 crore); Consolidated Profit After Tax: Rs 268.97 lakhs (Rs 2.69 crore).",
+   "No dividend recommended for the year under review.",
+   "Authorized Share Capital: Rs 35 crore; Issued and Subscribed Share Capital: Rs 10.003687 crore (1,00,03,687 equity shares of Rs 10 each).",
+   "The Company has not accepted any public deposits.",
+   "CSR provisions not applicable for the year under review.",
+   "No foreign exchange inflow or outflow during the year.",
+   "No complaints pertaining to sexual harassment received during the year.",
+   "Secretarial Audit Report for FY 2025-26 does not contain any qualification, reservation, adverse remark or disclaimer.",
+   "Internal Auditor: M/s M Parasrampuria & Co., Chartered Accountants.",
+   "Statutory Auditors: M/s J K V S & Co., Chartered Accountants, appointed for 5 years from 8th AGM till 13th AGM.",
+   "Secretarial Auditors: Messrs MR & Associates, Practicing Company Secretaries, appointed for 5 years from FY 2025-26 to 2029-30.",
+   "5 Board Meetings held during FY 2025-26.",
+   "Three Board Committees: Audit Committee, Nomination & Remuneration Committee, Stakeholders' Relationship Committee.",
+   "All related party transactions were on arm's length basis and in ordinary course of business.",
+   "No corporate guarantees given under Section 186 of the Companies Act, 2013.",
+   "Vigil mechanism/Whistle Blower Policy in place.",
+   "Annual Return available on company website.",
+   "India's tea production reached all-time high of 1,382.74 million kg in FY 2025-26; exports 282.11 million kg (7% growth); export earnings Rs 8,718.83 crore (12% increase).",
+   "NBFC sector expected to grow at CAGR of 18.5% between 2021 and 2026 per ResearchAndMarkets.com report.",
+   "Internal audit conducted as per Annual Audit Plan approved by Audit Committee",
+   "Statutory Auditors confirmed Internal Financial Controls over financial reporting are adequate and operating effectively",
+   "Audit Committee periodically reviews efficacy of Internal Financial Control Systems and risk mitigation process",
+   "Company has an adequate system of internal control commensurate with size, scale and complexity of operations",
+   "Employee-first approach with focus on well-being, safe work environment, performance-oriented culture",
+   "Five Board Meetings held during 2025-26 on May 14, 2025, June 27, 2025, August 13, 2025, November 14, 2025, and February 11, 2026",
+   "Board composition: 6 Directors (3 Independent Directors - 50%)",
+   "Independent Directors met on February 11, 2026 without management presence",
+   "Familiarization Programme for Independent Directors conducted",
+   "Performance Evaluation of Board, Committees and Individual Directors carried out and found satisfactory",
+   "Audit Committee: 5 meetings held, all members financially literate",
+   "Stakeholders' Relationship Committee: 3 meetings held, 2 complaints received and resolved during FY 2025-26",
+   "Nomination and Remuneration Committee: 1 meeting held",
+   "Remuneration: Managing Director Ms. Urvi Mittal - Rs 98,00,000; Non-Executive Directors sitting fees ranging Rs 20,000-47,500",
+   "Whistle Blower Policy in place",
+   "Policy on Sexual Harassment of Women at Workplace implemented",
+   "Registrar & Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "No dividend recommended for FY 2025-26",
+   "12th AGM scheduled for August 11, 2026 through VC/OAVM",
+   "Book closure from August 5, 2026 to August 11, 2026",
+   "Paid up capital: 1,00,03,687 equity shares of Rs 10 each",
+   "99.48% shares dematerialized (99,52,069 shares)",
+   "192 shareholders with 42,171 shares in Unclaimed Suspense Account as on March 31, 2026",
+   "Registrar & Share Transfer Agent: MUFG Intime India Pvt. Ltd (formerly Link Intime India Pvt. Ltd.)",
+   "Board authorised Company Secretary to approve transfer/transmission up to 1000 shares",
+   "No physical shares transferred/transmitted during FY 2025-26",
+   "No funds raised through preferential allotment or QIP",
+   "No GDRs/ADRs/Warrants/Convertible instruments issued",
+   "Secretarial Audit by MR & Associates confirms compliance with applicable laws",
+   "Corporate Governance Certificate by J K V S & CO confirms compliance with Listing Regulations",
+   "Whistle Blower Policy in place, no personnel denied access to Audit Committee",
+   "Code of Conduct for Prevention of Insider Trading and Fair Disclosure in place",
+   "Separate posts of Chairperson and Managing Director/CEO",
+   "Internal Auditor reports directly to Audit Committee",
+   "Company follows Secretarial Standards SS-1 and SS-2",
+   "Reconciliation of Share Capital Audit conducted quarterly",
+   "The Company is an unregistered Core Investment Company (CIC) as defined in the regulations made by the Reserve Bank of India and it continues to fulfil such criteria.",
+   "There are two core investment companies within the Group (as defined in the Core Investment Companies (Reserve Bank) Directions, 2016).",
+   "The Company has not declared any dividend in last year which has been paid in current year. Further, no dividend has been declared in current year."
+  ],
+  "related_party": [
+   {
+    "party": "Related parties",
+    "nature": "Loans to related parties",
+    "amount_cr": null
+   },
+   {
+    "party": "Other related parties",
+    "nature": "Inter-corporate deposits (unsecured loans)",
+    "amount_cr": 13.96
+   },
+   {
+    "party": "Related party (employee dues)",
+    "nature": "Employee related liabilities",
+    "amount_cr": 0.0796
+   },
+   {
+    "party": "Cinnatolliah Tea Limited",
+    "nature": "Wholly owned subsidiary - Investment in equity shares and dividend income",
+    "amount_cr": 26.1754
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Enterprise owned or significantly influenced by Key Management Personnel - Intercorporate deposits given and interest income",
+    "amount_cr": 13.96
+   },
+   {
+    "party": "Mrs. Urvi Mittal",
+    "nature": "Managing Director - Remuneration",
+    "amount_cr": 0.98
+   },
+   {
+    "party": "Mrs. Vijaya Agarwala",
+    "nature": "Company Secretary - Remuneration",
+    "amount_cr": 0.1739
+   },
+   {
+    "party": "Mrs. Nandini Nopany",
+    "nature": "Chairperson / Non-Executive Director - Sitting fees",
+    "amount_cr": 0.002
+   },
+   {
+    "party": "Mr. Arun Kumar Newar",
+    "nature": "Independent Director - Sitting fees",
+    "amount_cr": 0.0048
+   },
+   {
+    "party": "Mr. Dhiraj Ramakant Banka",
+    "nature": "Independent Director - Sitting fees",
+    "amount_cr": 0.0033
+   },
+   {
+    "party": "Mr. Chhedi Lal Agarwal",
+    "nature": "Independent Director - Sitting fees",
+    "amount_cr": 0.0048
+   },
+   {
+    "party": "Mr. Brij Mohan Agarwal",
+    "nature": "Non-Executive Director - Sitting fees",
+    "amount_cr": 0.0045
+   },
+   {
+    "party": "Other related parties",
+    "nature": "Inter-corporate deposits (unsecured)",
+    "amount_cr": 13.96
+   },
+   {
+    "party": "Ms. Urvi Mittal",
+    "nature": "Managing Director - Remuneration",
+    "amount_cr": 0.98
+   },
+   {
+    "party": "Mr. Harjinder Singh Kapoor",
+    "nature": "Whole Time Director of subsidiary - Remuneration",
+    "amount_cr": 0.6573
+   },
+   {
+    "party": "Ms. Nandini Nopany",
+    "nature": "Chairperson / Non-Executive Director - Sitting fees",
+    "amount_cr": 0.0053
+   },
+   {
+    "party": "Ms. Shruti Vora",
+    "nature": "Non-Executive Director of subsidiary - Sitting fees",
+    "amount_cr": 0.0005
+   },
+   {
+    "party": "Mr. Dilip Patodia",
+    "nature": "Non-Executive Director of subsidiary - Sitting fees",
+    "amount_cr": 0.0035
+   },
+   {
+    "party": "Mr. Arun Kumar Newar",
+    "nature": "Independent Director - Sitting fees",
+    "amount_cr": 0.0093
+   },
+   {
+    "party": "Mr. Dhiraj Ramkant Banka",
+    "nature": "Independent Director - Sitting fees",
+    "amount_cr": 0.0033
+   },
+   {
+    "party": "Ms. Urvi Mittal",
+    "nature": "Amount owed to related parties",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Mr. Harjinder Singh Kapoor",
+    "nature": "Amount owed to related parties",
+    "amount_cr": 0.0228
+   },
+   {
+    "party": "Related parties",
+    "nature": "Employee benefits expenses",
+    "amount_cr": 2.054
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Intercorporate loans given and interest income",
+    "amount_cr": 13.96
+   },
+   {
+    "party": "Mr. Priyankar Ghosh",
+    "nature": "Amount owed by KMP",
+    "amount_cr": 1.0186
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Total commitment in respect of uncalled capital on partly paid shares held as investment",
+    "amount_cr": 1.0451
+   }
+  ]
+ }
+}
