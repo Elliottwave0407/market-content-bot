@@ -1702,3 +1702,8 @@
 26 13:50:53 seen 539008 Tirupati Fincorp Ltd cat=Board Meeting early=True bse_time=19:20:45 dissem=19:20:45
 26 14:03:06 seen 539008 Tirupati Fincorp Ltd cat=Result early=False bse_time=19:32:34 dissem=19:32:34
 26 14:03:29 wait 539008 Tirupati Fincorp Ltd: numbers not yet on BSE
+26 14:04:47 pdf rule reader Tirupati Fincorp Ltd: rule: no results table page | ocr: rule: no results table page
+26 14:05:04 pdf pdf current col Tirupati Fincorp Ltd consolidated ok=False/3: revenue=5.66, other_income=154.69, total_income=162.85, total_expenses=824.15, finance_costs=166.2, depreciation=None, pbt=-661.3, tax=-207.93, pat=-453.37, eps=-8.53
+26 14:05:04 pdf pdf revenue + other income != total income, BSE-table override refused Tirupati Fincorp Ltd consolidated
+26 14:05:04 pdf pdf history mismatch Tirupati Fincorp Ltd consolidated cols=['September 30, 2026', 'June 30, 2026', 'September 30, 2025'] :: q-1: pdf rev 28.308 pat 35.098000000000006 | bse rev 55.86 pat 35.1 (Rs mn); q-4: pdf rev 0.593 pat -4.41
+26 14:05:04 pdf pdf has consolidated but it failed checks: not falling back to standalone Tirupati Fincorp Ltd
