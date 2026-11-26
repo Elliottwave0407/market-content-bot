@@ -1,4 +1,4 @@
-"""Verdict card PROTOTYPE v2 (five-column table + 5-quarter trend chart + verdict build-up + history). Not wired into production.
+"""Verdict card PROTOTYPE v3 layout, rating = Verdict v2.1 (five-column table + 5-quarter trend chart + how the verdict is built (v2 points) + tags + history). Not wired into production.
 usage: python3 scripts/verdict_card_v2.py [SYMBOL] [OUT_DIR]"""
 import sys, os, json
 from datetime import datetime
@@ -7,13 +7,17 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.ticker
 from matplotlib.patches import FancyBboxPatch
-import theme as T, verdict_v3 as v3
+import theme as T, verdict_v21 as v21
 
 SYM = sys.argv[1] if len(sys.argv) > 1 else "ACMESOLAR"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "."
 H = json.load(open(os.path.join(os.path.dirname(__file__), "..", "companydata", "_hist", SYM + ".json")))
 B = "C" if H["C"] else "S"
-NAME = H.get("name") or SYM
+NAME = H.get("name")
+if not NAME:
+    try: NAME = next((x["name"] for x in json.load(open("/home/claude/fingod-company-data/pages/index.json")) if x.get("sym") == SYM), None)
+    except Exception: NAME = None
+NAME = (NAME or SYM).replace(" Limited", " Ltd")
 Q = {datetime.strptime(k, "%Y-%m-%d"): v for k, v in H[B].items()}
 ks = sorted(Q)
 lab = lambda d: d.strftime("%b-%y")
@@ -26,20 +30,27 @@ def shift(d, m):
     mo += 1
     return min([k for k in ks if k.year == y and k.month == mo] or [None], default=None)
 
-def feats(d):
-    c, y, p = Q.get(d), Q.get(shift(d, 12)), Q.get(shift(d, 3))
-    if not c or not y or not c.get("revenue") or not y.get("revenue"):
+def mk(d):
+    q = Q.get(d)
+    if not q or q.get("revenue") in (None, 0) or q.get("ebitda") is None or q.get("pat") is None: return None
+    return {"revenue": q["revenue"] * 10, "ebitda": q["ebitda"] * 10, "pat": q["pat"] * 10, "basis": "c"}   # rating works in Rs million
+
+def rate_at(d):
+    c, pv, y = mk(d), mk(shift(d, 3)) if shift(d, 3) else None, mk(shift(d, 12)) if shift(d, 12) else None
+    if not (c and pv and y): return None
+    yp = mk(shift(d, 15)) if shift(d, 15) else None
+    try:
+        r = v21.rate21(c, pv, y, yp)
+    except Exception:
         return None
-    g = lambda a, b: (a / b - 1) * 100 if b and b > 0 else None
-    mg = lambda q: q["ebitda"] / q["revenue"] * 100
-    return {"y_rev": y["revenue"], "y_pat": y["pat"], "pat": c["pat"], "rev_y": g(c["revenue"], y["revenue"]), "eb_y": g(c["ebitda"], y["ebitda"]),
-            "mg": mg(c), "mg_y": mg(c) - mg(y), "mg_q": mg(c) - mg(p) if p and p.get("revenue") else None, "pat_y": g(c["pat"], y["pat"]),
-            "pm_y": c["pat"] / c["revenue"] * 100 - y["pat"] / y["revenue"] * 100, "oi_share": None, "conv": None}
+    return r if r.get("tier") else None
 
 cur = ks[-1]
-hist = [(d, v3.rate(feats(d)) if feats(d) else ("n/a", {}, None)) for d in ks[-8:]]
-tier, pil, why = [x for d, x in hist if d == cur][0]
-f = feats(cur)
+R = rate_at(cur)
+hist = [(d, rate_at(d)) for d in ks[-8:]]
+if R is None:
+    raise SystemExit("not enough history for " + SYM)
+tier = R["tier"]; m = R["m"]; parts = R["parts"]; tg = R["tags"]
 c0, c1, c4 = Q[cur], Q[shift(cur, 3)], Q[shift(cur, 12)]
 TC = T.RATING_COLORS.get(tier, T.MUTED)
 LIGHT = {"g": "#e3f3ea", "r": "#fbe6e4", "m": "#eef1f5"}
@@ -112,74 +123,77 @@ if nc:
 # ---- trend chart: last five quarters, sales / operating profit / net profit
 box(0.03, 5.85, 0.94, 3.65, T.PANEL, T.BORDER, r=0.008)
 txt(0.05, 6.13, "LAST 5 QUARTERS TREND", color=T.HEAD, fontsize=12.5, fontweight="bold")
-txt(0.95, 6.13, "₹ Crore", color=T.MUTED, fontsize=11, ha="right")
+txt(0.95, 6.13, "each line has its own scale  |  ₹ Crore", color=T.MUTED, fontsize=11, ha="right")
 rows = ks[-5:]
 labels = [lab(d) for d in rows]
 SER = [("Sales", "revenue", T.BLUE, "top"), ("Operating profit", "ebitda", T.AMBER, "bottom"), ("Net profit", "pat", T.GREEN, "bottom")]
-lx = 0.40
-for name_, k, col, where in SER:
-    box(lx, 6.045, 0.012, 0.17, col, r=0.003)
-    txt(lx + 0.018, 6.13, name_, color=T.TEXT, fontsize=12.5, fontweight="bold")
-    lx += 0.17
 ax = fig.add_axes([0.075, Y(9.18), 0.88, HH(2.65)], facecolor="none")
 ax.set_zorder(5)
-allv = [0.0]
-for name_, k, col, where in SER:
+ax.set_xlim(-0.95, len(rows) - 0.6); ax.set_ylim(0, 3)
+for bi, (name_, k, col, where) in enumerate(SER):      # each series in its own band, scaled on its own, so labels never collide
+    off = 2 - bi
     vals = [Q[d].get(k) for d in rows]
     pts = [(i, v) for i, v in enumerate(vals) if v is not None]
-    allv += [v for _, v in pts]
-    ax.plot([i for i, _ in pts], [v for _, v in pts], color=col, linewidth=3.2, marker="o", markersize=8, markerfacecolor=col, markeredgecolor=T.PANEL, markeredgewidth=1.5, zorder=3)
+    if not pts: continue
+    lo, hi = min(v for _, v in pts), max(v for _, v in pts)
+    nz = lambda v: off + (0.5 if hi == lo else 0.18 + 0.50 * (v - lo) / (hi - lo))
+    ax.axhline(off, color=T.BORDER, linewidth=0.8, zorder=1)
+    ax.plot([i for i, _ in pts], [nz(v) for _, v in pts], color=col, linewidth=3.2, marker="o", markersize=8, markerfacecolor=col, markeredgecolor=T.PANEL, markeredgewidth=1.5, zorder=3)
     for i, v in pts:
-        ax.annotate(f"{v:,.0f}", (i, v), xytext=(0, 11 if where == "top" else -11), textcoords="offset points", ha="center", va="bottom" if where == "top" else "top", color=col, fontsize=12, fontweight="bold", zorder=4)
-top, bot = max(allv), min(allv)
-span = (top - bot) or 1
-ax.set_ylim(min(0, bot - span * 0.12), top + span * 0.16)
-ax.set_xlim(-0.4, len(rows) - 0.6)
-ax.axhline(0, color=T.BORDER, linewidth=1.2, zorder=1)
-ax.grid(axis="y", color=T.BORDER, linewidth=0.6, alpha=0.9)
-ax.set_axisbelow(True)
+        ax.annotate(f"{v:,.0f}", (i, nz(v)), xytext=(0, 10), textcoords="offset points", ha="center", va="bottom", color=col, fontsize=12.5, fontweight="bold", zorder=4)
+    ax.text(-0.93, off + 0.45, name_.replace("Operating profit", "Op. profit"), color=col, fontsize=11, fontweight="bold", va="center", ha="left")
+ax.set_yticks([])
 ax.set_xticks(range(len(rows)))
 ax.set_xticklabels(labels, color=T.HEAD, fontsize=12, fontweight="bold")
-ax.tick_params(axis="y", colors=T.TEXT, labelsize=12, length=0)
 ax.tick_params(axis="x", length=0)
-ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:,.0f}"))
 for sp in ax.spines.values():
     sp.set_visible(False)
-# ---- bottom left: how the verdict is built
-box(0.03, 9.60, 0.55, 3.35, T.PANEL, T.BORDER, r=0.008)
-txt(0.05, 9.90, "HOW THE VERDICT IS BUILT  (each score out of 100)", color=T.HEAD, fontsize=12.5, fontweight="bold")
+# ---- bottom left: how the verdict is built (the v2 points that decide the tier)
+box(0.03, 9.65, 0.55, 3.30, T.PANEL, T.BORDER, r=0.008)
+txt(0.05, 9.93, "HOW THE VERDICT IS BUILT  (points earned out of the maximum)", color=T.HEAD, fontsize=12.5, fontweight="bold")
 sg = lambda x: "-" if x is None else f"{x:+,.0f}%"
-expl = {"growth": f"Sales {sg(f['rev_y'])}  |  Operating profit {sg(f['eb_y'])}  (YoY)",
-        "profit": f"Operating margin {f['mg']:.0f}%,  {f['mg_y']:+.1f} pp YoY",
-        "quality": f"Net profit {sg(f['pat_y'])} YoY,  net margin {f['pm_y']:+.1f} pp"}
-LAB = {"growth": "Growth", "profit": "Profitability", "quality": "Profit quality"}
-yy = 10.45
-for k in ("growth", "profit", "quality"):
-    s = pil.get(k, 0)
-    txt(0.05, yy, LAB[k], color=T.TEXT, fontsize=16, fontweight="bold")
-    bx, bw = 0.21, 0.30
-    box(bx, yy - 0.14, bw, 0.28, T.BORDER, r=0.006)
-    box(bx, yy - 0.14, max(0.006, bw * s / 100), 0.28, T.GREEN if s >= 55 else T.AMBER if s >= 35 else T.RED, r=0.006)
-    txt(0.56, yy, f"{s}", color=T.TEXT, fontsize=17, fontweight="bold", ha="right")
-    txt(0.05, yy + 0.38, expl[k], color=T.MUTED, fontsize=11.5)
-    yy += 0.80
-txt(0.05, 12.72, ("Held back by: " + why) if why else "No cap applied: verdict follows the three scores", color=T.AMBER if why else T.GREEN, fontsize=12, fontweight="bold")
-# ---- bottom right: history + tags
-box(0.60, 9.60, 0.37, 3.35, T.PANEL, T.BORDER, r=0.008)
-txt(0.62, 9.90, "LAST QUARTERS  (same rules every quarter)", color=T.HEAD, fontsize=12.5, fontweight="bold")
-hr = [h for h in hist if h[1][0] != "n/a"][-6:]
-for i, (d, (t, p_, w_)) in enumerate(hr):
-    yq = 10.40 + i * 0.36
-    txt(0.62, yq, lab(d), color=T.MUTED, fontsize=12.5, fontweight="bold")
-    box(0.70, yq - 0.15, 0.12, 0.30, T.RATING_COLORS.get(t, "#aab4c0"), r=0.008)
-    txt(0.76, yq, t, color="#ffffff", fontsize=11, fontweight="bold", ha="center")
+pp = lambda x: f"{x:+.1f} pp"
+grp = [("Sales", ["rev_yoy", "rev_qoq"], [22, 7], f"YoY {sg(m['rev_yoy'])}  |  QoQ {sg(m['rev_qoq'])}"),
+       ("Net profit", ["pat_yoy", "pat_qoq"], [23, 6], f"YoY {sg(m['pat_yoy'])}  |  QoQ {sg(m['pat_qoq'])}"),
+       ("Operating profit & margin", ["eb_yoy", "eb_qoq", "m_yoy", "m_qoq"], [11, 5, 14, 8], f"Op. profit YoY {sg(m['ebitda_yoy'])}, QoQ {sg(m['ebitda_qoq'])}  |  margin {pp(m['margin_yoy_pts'])} YoY, {pp(m['margin_qoq_pts'])} QoQ")]
+yy = 10.36
+for name_, keys, mx, line in grp:
+    got, tot = sum(parts.get(k, 0) for k in keys), sum(mx)
+    frac = got / tot if tot else 0
+    txt(0.05, yy, name_, color=T.TEXT, fontsize=15, fontweight="bold")
+    bx, bw = 0.31, 0.19
+    box(bx, yy - 0.13, bw, 0.26, T.BORDER, r=0.006)
+    box(bx, yy - 0.13, max(0.006, bw * frac), 0.26, T.GREEN if frac >= 0.6 else T.AMBER if frac >= 0.35 else T.RED, r=0.006)
+    txt(0.565, yy, f"{got:.0f} / {tot}", color=T.TEXT, fontsize=15, fontweight="bold", ha="right")
+    txt(0.05, yy + 0.36, line, color=T.MUTED, fontsize=11)
+    yy += 0.72
+txt(0.05, 12.50, f"Score {R['score']:.0f} of 100" + ("  |  Blockbuster by the explosive-growth rule" if R["v2_tier"] == "Blockbuster" and R["score"] < 80 else f"  |  {R['v2_tier']} on score") + (f"  |  final after v2.1 rules: {tier}" if tier != R["v2_tier"] else ""), color=T.TEXT, fontsize=12.5, fontweight="bold")
+rules = (R["caps"] or []) + (R["v21_notes"] or [])
+txt(0.05, 12.80, ("Held back by: " + "; ".join(rules[:2]) + (" (+%d more)" % (len(rules) - 2) if len(rules) > 2 else "")) if rules else "No cap applied", color=T.AMBER if rules else T.GREEN, fontsize=10.5, fontweight="bold")
+# ---- bottom right: tags + history
+box(0.60, 9.65, 0.37, 3.30, T.PANEL, T.BORDER, r=0.008)
+txt(0.62, 9.93, "TAGS  (do not change the verdict)", color=T.HEAD, fontsize=12.5, fontweight="bold")
+TAGC = {"Ahead": T.GREEN, "Building": T.GREEN, "In line": T.MUTED, "Mixed": T.MUTED, "Flat": T.AMBER, "Behind": T.RED, "Fading": T.RED}
+for j, (nm, val) in enumerate((("Versus expectation", tg.get("vs_expectation")), ("Momentum", tg.get("momentum")))):
+    yq = 10.38 + j * 0.46
+    txt(0.62, yq, nm, color=T.TEXT, fontsize=14, fontweight="bold")
+    val = val or "n/a"
+    box(0.82, yq - 0.17, 0.125, 0.34, TAGC.get(val, T.MUTED), r=0.008)
+    txt(0.8825, yq, val, color="#ffffff", fontsize=12.5, fontweight="bold", ha="center")
+txt(0.62, 11.38, "LAST QUARTERS", color=T.HEAD, fontsize=12.5, fontweight="bold")
+qs_ = [d for d in (shift(cur, 3 * k) for k in (3, 2, 1, 0)) if d] if all(shift(cur, 3 * k) for k in (3, 2, 1)) else [d for d in ks[-4:]]
+for i, d in enumerate(qs_):
+    yq = 11.78 + i * 0.30
+    r_ = rate_at(d); t_ = r_["tier"] if r_ else "n/a"
+    txt(0.62, yq, lab(d), color=T.MUTED, fontsize=12, fontweight="bold")
+    box(0.70, yq - 0.12, 0.12, 0.24, T.RATING_COLORS.get(t_, "#aab4c0"), r=0.008)
+    txt(0.76, yq, t_, color="#ffffff", fontsize=10.5, fontweight="bold", ha="center")
     if d == cur:
-        txt(0.835, yq, "latest", color=T.MUTED, fontsize=11)
-txt(0.62, 12.72, "Versus expectation: no guidance on file    Momentum: see QoQ", color=T.MUTED, fontsize=10.5)
+        txt(0.835, yq, "latest", color=T.MUTED, fontsize=10.5)
 txt(0.04, 13.50, "For educational purpose only. Not an investment advice.", color=T.MUTED, fontsize=11)
-txt(0.96, 13.50, "PROTOTYPE v2", color=T.AMBER, fontsize=10, ha="right")
+txt(0.96, 13.50, "PROTOTYPE  |  Verdict v2.1", color=T.AMBER, fontsize=10, ha="right")
 T.brand(fig, x_right=0.962, top=Y(0.32), h_in=0.62)
 T.frame(fig)
 os.makedirs(OUT, exist_ok=True)
-fig.savefig(os.path.join(OUT, f"verdict_v2_{SYM}.png"), facecolor=T.BG, dpi=150)
-print(SYM, lab(cur), tier, pil, why)
+fig.savefig(os.path.join(OUT, f"verdict_v21_{SYM}.png"), facecolor=T.BG, dpi=150)
+print(SYM, lab(cur), tier, "(v2:", R["v2_tier"] + ")", round(R["score"]), R["tags"], rules)
