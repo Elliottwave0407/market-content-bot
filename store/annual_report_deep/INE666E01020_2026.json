@@ -1,0 +1,783 @@
+{
+ "isin": "INE666E01020",
+ "name": "Andhra Cements Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29308_ACL_2025_2026_A_2344095_30052026133555.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 403703,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Andhra Cements Limited is a subsidiary of Sagar Cements Limited, engaged in cement manufacturing with registered office at Sri Durga Cement Works, Sri Durgapuram, Dachepalli, Palnadu District, Andhra Pradesh.",
+   "plants": [
+    {
+     "location": "Sri Durgapuram, Dachepalli - 522 414, Palnadu District, Andhra Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Sri Durga Cement Works, Sri Durgapuram, Dachepalli \u2013 522414, Palnadu Dist. (AP)",
+     "capacity": "1.82 MTPA cement grinding capacity (to be increased to 3.00 MTPA)"
+    },
+    {
+     "location": "Sri Durga Cement Works, Sri Durgapuram, Dachepalli \u2013 522414, Palnadu Dist. (AP)",
+     "capacity": "clinker manufacturing capacity from 1.65 MTPA to 2.30 MTPA and the cement grinding capacity from 1.82 MTPA to 3 MTPA"
+    },
+    {
+     "location": "Visaka Cement Works (VCW)",
+     "capacity": "stopped the production operations, as the plant falls under city limits"
+    },
+    {
+     "location": "Sri Durga Cement Works, Sri Durgapuram, Guntur, Andhra Pradesh - 522414",
+     "capacity": ""
+    },
+    {
+     "location": "Sri Durga Cements Works, Sri Durgapuram, Srinagar Post, Dachepalli Mandal, Palnadu Dist, AP - 522414",
+     "capacity": ""
+    },
+    {
+     "location": "Visaka Cement Works, Parlupalem Village, Durganagar Post, Visakhapatnam, AP \u2013 530029",
+     "capacity": ""
+    },
+    {
+     "location": "Andhra Pradesh (implied by company name and CIN)",
+     "capacity": "Not specified in provided text"
+    },
+    {
+     "location": "Sri Durga Cement Works, Dachepalli, Palnadu district, Andhra Pradesh",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "cement",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "clinker",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cement and clinker",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of cement and clinker was Rs 44,118 lakh in FY2026 and Rs 27,287 lakh in FY2025"
+    },
+    {
+     "name": "Cement and cement related products",
+     "share_of_revenue_pct": null,
+     "note": "Single product line"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Andhra Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Telangana",
+     "share_pct": null
+    }
+   ],
+   "end_markets": [
+    "Infrastructure",
+    "Housing",
+    "Industrial development"
+   ],
+   "raw_materials": [
+    "Limestone (captive mine)",
+    "Iron ore",
+    "Bauxite",
+    "Laterite",
+    "Coal",
+    "Pet Coke (domestic and imported)",
+    "Raw materials (inventory: Rs 162 lakh in 2026, Rs 237 lakh in 2025)",
+    "Fuels (inventory: Rs 2,621 lakh in 2026, Rs 142 lakh in 2025)",
+    "Limestone",
+    "Gypsum",
+    "Fly ash",
+    "Spare parts"
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Sagar Cements Limited",
+    "nature": "Material Related Party Transaction for aggregate value up to Rs.500 crores for a period of one year",
+    "amount_cr": 500
+   },
+   {
+    "party": "R V Consulting Services Private Limited",
+    "nature": "Material Related Party Transaction for aggregate value up to Rs.100 crores for a period of one year",
+    "amount_cr": 100
+   },
+   {
+    "party": "Sagar Cements Limited (SCL)",
+    "nature": "Holding Company (75% shareholding in ACL); Sale and Purchase of Goods and Services; Inter Corporate Deposits/Borrowings; Corporate Guarantee",
+    "amount_cr": 500
+   },
+   {
+    "party": "R V Consulting Services Private Limited (RV)",
+    "nature": "Promoter group of SCL; Mrs. S. Rachana (Director of ACL) holds directorship and shareholding in RV; Sale and Purchase of Plant & Machinery, equipment, civil works, electrical/instrumentation, repairs & maintenance and other Plant related Services",
+    "amount_cr": 100
+   },
+   {
+    "party": "Mrs. S. Rachana",
+    "nature": "director and major shareholder in R V Consulting Services Private Limited, whose transactions with the company have been reported under the related parties disclosure in the notes to the accounts",
+    "amount_cr": null
+   },
+   {
+    "party": "All Related party transactions",
+    "nature": "Prior approval of Audit Committee obtained",
+    "amount_cr": null
+   },
+   {
+    "party": "Sagar Cements Limited (Holding Company)",
+    "nature": "Financial support for going concern",
+    "amount_cr": null
+   },
+   {
+    "party": "Sagar Cements Limited",
+    "nature": "Holding Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Holding company",
+    "nature": "Financial guarantee provided by holding company",
+    "amount_cr": 6.18
+   },
+   {
+    "party": "Sagar Cements Limited (Holding Company)",
+    "nature": "Unsecured loans availed",
+    "amount_cr": 245.0
+   },
+   {
+    "party": "Sagar Cements Limited (Holding Company)",
+    "nature": "Corporate guarantee provided for term loans",
+    "amount_cr": null
+   },
+   {
+    "party": "Sagar Cements Limited (Holding Company)",
+    "nature": "Pledged 2,18,90,883 equity shares in favor of Axis Trustee Services Limited",
+    "amount_cr": null
+   },
+   {
+    "party": "R V Consulting Services Private Limited",
+    "nature": "Unsecured loan availed",
+    "amount_cr": 50.0
+   },
+   {
+    "party": "Savyasachi Constructions Private Limited",
+    "nature": "Unsecured loan availed",
+    "amount_cr": 70.0
+   },
+   {
+    "party": "RV Consulting Services Private Limited",
+    "nature": "Enterprise in which KMP of the Company exercise control",
+    "amount_cr": null
+   },
+   {
+    "party": "Panchavati Polyfibres Limited",
+    "nature": "Enterprise in which KMP of the Company is a director or member",
+    "amount_cr": null
+   },
+   {
+    "party": "Sagar Cements (M) Private Limited",
+    "nature": "Fellow Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "K. V. Vishnu Raju",
+    "nature": "Chairman (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Dr. S. Anand Reddy",
+    "nature": "Managing Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "S. Sreekanth Reddy",
+    "nature": "Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "V. H. Ramakrishnan",
+    "nature": "Independent Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Ravichandran Rajagopal",
+    "nature": "Independent Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "O Rekha",
+    "nature": "Independent Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Rachana Sammidi",
+    "nature": "Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "K Prasad",
+    "nature": "Chief Financial Officer (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "G Tirupati Rao",
+    "nature": "Company Secretary (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "S. Vanajatha",
+    "nature": "Mother of Dr. S. Anand Reddy and S. Sreekanth Reddy (Relative of KMP)",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Banker/Lender"
+   },
+   {
+    "lender_or_type": "YES Bank Limited",
+    "amount_cr": null,
+    "note": "Banker/Lender"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": null,
+    "note": "Banker/Lender"
+   },
+   {
+    "lender_or_type": "Sagar Cements Limited (Inter Corporate Deposits/Borrowings)",
+    "amount_cr": 150,
+    "note": "Interest rate 10% p.a., Unsecured, Repayable within 3 years from date of disbursement, Purpose: To fund modernization and expansion project to increase cement grinding capacity from 1.82 MTPA to 3.00 MTPA, and for other general corporate purposes"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": null,
+    "note": "Rated IND BBB/Rating watch with Negative implications by India Ratings as on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Fund-based Working Capital Limits",
+    "amount_cr": null,
+    "note": "Rated IND A3+/Rating watch with Negative implications by India Ratings as on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Non-Fund based Working Capital Limits",
+    "amount_cr": null,
+    "note": "Rated IND A3+/Rating watch with Negative implications by India Ratings as on 31st March 2026"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 1012.16,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 102.48,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (non-current)",
+    "amount_cr": 9.46,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (current)",
+    "amount_cr": 2.97,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Secured borrowings (refer notes 13A and 13B)",
+    "amount_cr": null,
+    "note": "Property, plant and equipment, inventories, and trade receivables are pledged against borrowings"
+   },
+   {
+    "lender_or_type": "State Bank of India (Term loan)",
+    "amount_cr": 561.09,
+    "note": "Secured, 9.80% interest, 31 quarterly instalments, secured by first pari-passu charge on immovable and movable fixed assets, project documents, mining lease rights, insurance contracts, and pledge of 2,18,90,883 equity shares by Sagar Cements Limited with corporate guarantee"
+   },
+   {
+    "lender_or_type": "Union Bank of India (Term loan)",
+    "amount_cr": 84.14,
+    "note": "Secured, 9.95% interest, 34 quarterly instalments"
+   },
+   {
+    "lender_or_type": "Yes Bank Ltd (Term loan)",
+    "amount_cr": 60.33,
+    "note": "Secured, 10.01% interest, 34 quarterly instalments"
+   },
+   {
+    "lender_or_type": "Sagar Cements Limited (Holding Company) - Loan 1",
+    "amount_cr": 20.0,
+    "note": "Unsecured, 10.00% interest, repayable in 9 equated quarterly instalments commencing June 30, 2028, for Debt Service Reserve Account"
+   },
+   {
+    "lender_or_type": "Sagar Cements Limited (Holding Company) - Loan 2",
+    "amount_cr": 40.0,
+    "note": "Unsecured, 10.00% interest, repayable at end of 3 years from April 6, 2024, for capex and general corporate purposes"
+   },
+   {
+    "lender_or_type": "Sagar Cements Limited (Holding Company) - Loan 3",
+    "amount_cr": 185.0,
+    "note": "Unsecured, 10.00% interest, 3 years from date of disbursement, for capacity expansion and modernization at Sri Durga Cement Works"
+   },
+   {
+    "lender_or_type": "R V Consulting Services Private Limited",
+    "amount_cr": 50.0,
+    "note": "Unsecured, 14.50% interest, repayable within 36 months from March 29, 2025, for business purposes"
+   },
+   {
+    "lender_or_type": "Savyasachi Constructions Private Limited",
+    "amount_cr": 70.0,
+    "note": "Unsecured, 14.50% interest, repayable at end of 3 years from March 29, 2025, for capex for modernization/expansion project and general corporate purposes"
+   },
+   {
+    "lender_or_type": "Cash credit facilities - State Bank of India",
+    "amount_cr": 44.08,
+    "note": "Secured, 10.85%-11.25% interest, repayable on demand, secured by first pari-passu charge on current assets, second pari-passu charge on movable PPE, negative lien on immovable PPE, corporate guarantee of Sagar Cements Limited"
+   },
+   {
+    "lender_or_type": "Cash credit facilities - Yes Bank",
+    "amount_cr": null,
+    "note": "Secured, 9.05%-10.80% interest, repayable on demand, secured by first pari-passu charge on current assets, second pari-passu charge on movable PPE, negative lien on immovable PPE, first pari-passu pledge on 2,18,90,883 shares held by Sagar Cements Limited"
+   },
+   {
+    "lender_or_type": "Sagar Cements Limited",
+    "amount_cr": 245.0,
+    "note": "Outstanding borrowings as at March 31, 2026 (Rs 24,500 lakhs)"
+   },
+   {
+    "lender_or_type": "RV Consulting Services Private Limited",
+    "amount_cr": 50.0,
+    "note": "Outstanding borrowings as at March 31, 2026 (Rs 5,000 lakhs)"
+   },
+   {
+    "lender_or_type": "Non-current borrowings (Fixed-rate)",
+    "amount_cr": 365.0,
+    "note": "As at March 31, 2026 (Rs 36,500 lakhs)"
+   },
+   {
+    "lender_or_type": "Non-current borrowings (Variable-rate, including current maturities)",
+    "amount_cr": 705.56,
+    "note": "As at March 31, 2026 (Rs 70,556 lakhs)"
+   },
+   {
+    "lender_or_type": "Current borrowings (Variable-rate)",
+    "amount_cr": 44.08,
+    "note": "As at March 31, 2026 (Rs 4,408 lakhs)"
+   },
+   {
+    "lender_or_type": "bank borrowings",
+    "amount_cr": null,
+    "note": "corporate guarantees for bank borrowings from Holding Company"
+   }
+  ],
+  "auditor": {
+   "name": "M/s B S R and Co., Chartered Accountants, Hyderabad",
+   "opinion": "The Auditors' Report does not contain any qualifications, reservations or adverse remarks and it is an unmodified one.",
+   "qualifications_or_emphasis": [
+    "We have not verified the correctness and appropriateness of financial records and Books of Accounts of the Company.",
+    "The compliance of the provisions of Corporate and other applicable laws, rules, regulations, standards is the responsibility of management. Our examination was limited to the verification of procedure on test basis.",
+    "The Secretarial Audit report is not an assurance as to the future viability of the Company or of the efficacy or effectiveness with which the management has conducted the affairs of the Company.",
+    "Going concern uncertainty due to losses and net current liabilities position",
+    "Emphasis of matter on going concern: Company incurred losses in current and previous year, accumulated losses as at 31 March 2026, current liabilities exceed current assets by Rs 9,521 lakhs. Management assessed going concern assumption considering future business plans, projected cash flows, undrawn bank credit facilities, cash balances, and holding company support (corporate guarantees and unconditional support letter). Auditor concludes no material uncertainty exists as on audit report date but states this is not assurance of future viability.",
+    "Predecessor auditor expressed unmodified opinion on 12 May 2025 for year ended 31 March 2025",
+    "Resignation of statutory auditors during the year; incoming auditor considered issues raised by outgoing auditors",
+    "Audit trail (edit log) facility not enabled at application level for certain master data fields in general ledger software; not enabled at database level for certain fields in tables relating to books of account; unable to comment on tampering",
+    "Absence of independent auditor's report for third-party leave records software from 1 January 2026 to 31 March 2026; unable to comment on audit trail for that period"
+   ],
+   "key_audit_matters": [
+    "Management's assessment of Going concern (Note 45)",
+    "Revenue Recognition - Discounts and Rebates (Notes 18 and 37)",
+    "Revenue recognition - discounts and rebates",
+    "Recoverability of deferred tax assets"
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Sagar Cements Limited",
+     "pct": 75
+    },
+    {
+     "name": "Promoter",
+     "pct": 75.0
+    },
+    {
+     "name": "Domestic Companies",
+     "pct": 11.01
+    },
+    {
+     "name": "Public \u2013 Individuals",
+     "pct": 12.74
+    },
+    {
+     "name": "Sagar Cements Limited",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 75,
+   "director_changes": [
+    "Mr. S.Sreekanth Reddy will be retiring by rotation at the ensuing Annual General Meeting and being eligible, offer himselves for re-appointment.",
+    "During the financial year 2025-26, none of the Independent Directors had resigned from his/her directorship",
+    "No special resolutions passed at 85th AGM",
+    "At 86th AGM, special resolution passed for shifting Registered Office from Andhra Pradesh to Telangana",
+    "At 84th AGM, eight special resolutions passed for appointments of Dr. S. Anand Reddy, Mr. K.V. Vishnu Raju, Mrs. O. Rekha, Mr. R. Rajagopal, Mr. V.H. Ramakrishnan and consents under sections 180(1)(c), 180(1)(a) and 186"
+   ],
+   "auditor_change": "Resignation of statutory auditors during the year; B S R and Co appointed as new auditors"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Dr. S. Anand Reddy",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. S. Sreekanth Reddy",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mrs. S. Rachana",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mrs. O. Rekha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ravichandran Rajagopal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. V.H. Ramakrishnan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. K.V. Vishnu Raju",
+     "role": "Chairman & Independent Director"
+    },
+    {
+     "name": "Mr. K. Prasad",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. G. Tirupati Rao",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Dr. S. Anand Reddy",
+     "role": "Director (also holds directorship in SCL)"
+    },
+    {
+     "name": "Mr. S. Sreekanth Reddy",
+     "role": "Director (also holds directorship in SCL)"
+    },
+    {
+     "name": "Mrs. S. Rachana",
+     "role": "Director (also holds directorship in SCL and RV Consulting Services Private Limited)"
+    },
+    {
+     "name": "Mr. K.V. Vishnu Raju",
+     "role": "Director (also holds directorship in SCL)"
+    },
+    {
+     "name": "Mr. Ravichandran Rajagopal",
+     "role": "Director (also holds directorship in SCL)"
+    },
+    {
+     "name": "Mrs. O. Rekha",
+     "role": "Director (also holds directorship in SCL)"
+    },
+    {
+     "name": "Mr. K. Prasad",
+     "role": "CFO (also holds position of CFO in SCL)"
+    },
+    {
+     "name": "G. Tirupati Rao",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "K.V. Vishnu Raju",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. S. Sreekanth Reddy",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. S. Anand Reddy",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Dr. S. Anand Reddy",
+     "role": "Executive Director (Managing Director)"
+    },
+    {
+     "name": "Mr. K.V. Vishnu Raju",
+     "role": "Chairman, Independent and Non-Executive Director"
+    },
+    {
+     "name": "K. Prasad",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ch. Subba Rao",
+     "role": "Vice-President (Operations)"
+    },
+    {
+     "name": "A. Narender Reddy",
+     "role": "Sr. GM (Operations)"
+    },
+    {
+     "name": "J. Naveen Kumar Reddy",
+     "role": "GM (Mines)"
+    },
+    {
+     "name": "K.S. Ramanuja Chary",
+     "role": "GM (Human Resource)"
+    },
+    {
+     "name": "S. Sreekanth Reddy",
+     "role": "Director"
+    },
+    {
+     "name": "K. V. Vishnu Raju",
+     "role": "Chairman"
+    },
+    {
+     "name": "V. H. Ramakrishnan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ravichandran Rajagopal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "O Rekha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rachana Sammidi",
+     "role": "Director"
+    },
+    {
+     "name": "K Prasad",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "G Tirupati Rao",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 180
+  },
+  "other_notable": [
+   "87th Annual General Meeting scheduled for 25th June 2026 at 11:30 AM through Video Conferencing",
+   "Cost Auditors: M/s Narasimha Murthy & Co., Cost Accountants, Hyderabad",
+   "Registrar & Share Transfer Agent: CIL Securities Ltd, Hyderabad",
+   "CIN: L26942AP1936PLC002379",
+   "Corporate Office: Plot No.111, Road No. 10, Jubilee Hills, Hyderabad - 500 033, Telangana",
+   "Cut-off date for e-voting: 18th June 2026",
+   "Remote e-voting period: 21st June 2026 (9:00 AM IST) to 24th June 2026 (5:00 PM IST)",
+   "Register of Members closure: 19th June 2026 to 25th June 2026",
+   "Cost Auditor remuneration: Rs.5,00,000 plus taxes and expenses for FY 2026-27",
+   "AGM scheduled via VC/OAVM; e-voting facilitated by KFIN Technologies.",
+   "SEBI SMART ODR Portal registered for investor grievance resolution.",
+   "Special Window for re-lodgement of physical share transfers open from July 07, 2025 to January 06, 2026, extended to February 04, 2027.",
+   "Mandatory PAN-Aadhaar linking and KYC updation for physical shareholders per SEBI circulars.",
+   "Cost Auditor M/s. Narasimha Murthy & Co appointed for FY 2026-27, remuneration subject to shareholder ratification.",
+   "During FY 2025-26, Sagar Cements Limited, promoter of the company, made an Offer for Sale (OFS) of equity shares through the stock exchange mechanism in compliance with SEBI guidelines and Rule 19A of the Securities Contracts (Regulation) Rules, 1957. SCL has divested part of its holdings, thereby reducing its stake from 90% to 75%. Consequently, the public shareholding in ACL increased to 25%, enabling our company to achieve the mandated Minimum Public Shareholding (MPS) requirement within the stipulated time period.",
+   "The Board of Directors of the Company, at its meeting held on March 30, 2026, has accorded its in-principle approval for the merger of our Company with its Holding Company viz., Sagar Cements Limited, which will be subject to necessary approvals as may be required from the regulatories and other concerned authorities.",
+   "Shifting of Registered Office from Sri Durga Cements Works, Sri Durgapuram, Srinagar Post, Dachepalli Mandal, Guntur District, PIN-522414, Andhra Pradesh to Plot No. 111, Road No. 10, Jubilee Hills, Hyderabad \u2013 500033, Telangana approved by shareholders at 86th AGM on 30th June, 2025 and Regional Director order dated May 4, 2026.",
+   "The new 6 stage preheater construction has been completed and commissioned on 23rd October, 2025.",
+   "During the financial year 2025-26, no funds were raised through Rights Issue, Preferential Issue etc.",
+   "Considering the losses incurred, no dividend is proposed for the year.",
+   "No transfer to any reserve is proposed and accordingly, the entire balance available in the Statement of Profit and Loss is retained in it.",
+   "The Company has received necessary declarations from all the Independent Directors of the Company in accordance with Section 149 (7) of the Companies Act 2013, that they meet the criteria of independence.",
+   "During the year 2025-26, six meetings of the board were held.",
+   "All Related Party Transactions entered into during the financial year were on an arm's length basis and in the ordinary course of business.",
+   "M/s. Narasimha Murthy & Co., Cost Accountants (FR No.000042), have been appointed as Cost Auditors of the company for the year ending 31st March 2027.",
+   "M/s. B S S & Associates, practicing Company Secretaries (Firm Registration No. 3744) who were appointed as Secretarial Auditors' of the Company by the Shareholders at their 86th Annual General Meeting held on June 30, 2025 for a term of five years.",
+   "The Secretarial Auditors' Report does not contain any qualification reservation, or adverse remarks.",
+   "In view of absence of required profit/net worth/turnover, the provisions of the Companies Act, 2013 relating to Corporate Social Responsibility are not applicable to the Company.",
+   "The Company has in terms of the provisions of Section 177(9) of the Companies Act, 2013 read with Rule 7 of the Companies (Meeting of Board and its Powers) Rules, 2014 and Regulation 22 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, formulated Whistle Blower Policy and Vigil Mechanism for Directors and employees.",
+   "No frauds were reported by the Auditors under Sub-Section 12 of Section 143 of the Companies Act, 2013.",
+   "There were no change in the nature of business of the company.",
+   "There is no revision of financial statement or the Report.",
+   "There were no material changes and commitments, affecting the financial position of the Company, which have occurred between the end of the financial year of the company to which the financial statements relates and the date of the report.",
+   "The company did not accept any deposits from public during the year.",
+   "The company did not donate any amount to political parties during the FY 2026.",
+   "Regarding the Sexual Harassment of Women at the workplace (Prevention, Prohibition & Redressal) Act, 2013, your company has an Internal Complaints Committee. No complaints were received or disposed of during the year under the above Act and no complaints were pending either at the beginning or at the end of the year.",
+   "During the financial year under review, the Company has initiated a structured DPDPA compliance programme.",
+   "All the properties of the Company have been adequately insured.",
+   "Your company is committed to keep the pollution at its plant with in the acceptable norms and as part of this commitment, it has, inter-alia, an adequate number of bag filters in the plant.",
+   "There was no such instance arose to transfer any amount to the Investor Education and Protection Fund.",
+   "Capital investment of Rs. 1.25 crores on energy conservation equipment during the year",
+   "Replaced 4/5 stage preheater with high efficiency 6 stage preheater with inline calciner, resulting in reduction of power consumption and fuel consumption",
+   "Replaced existing GRR Starters with VFDs to reduce power consumption on critical main Motors",
+   "Steps initiated to implement usage of AFR (Alternative Fuel and Raw Material), projects under implementation and likely to be commissioned in FY 2026-27",
+   "Foreign Exchange Outgo: Rs. 64.11 crores",
+   "No remuneration to any director except for sitting fee",
+   "Company Secretary remuneration increased by 8.46% to Rs. 28.20 lakhs in FY 2025-26",
+   "Median remuneration of employees increased by 5.82% in FY 2025-26",
+   "Average monthly salary of all employees (other than KMP): Rs. 0.70 lakhs",
+   "Market price on BSE: Rs. 40.60 on March 31, 2026 vs Rs. 23.45 on January 02, 1942 (73.13% change)",
+   "Market price on NSE: Rs. 40.50 on March 31, 2026 (Not Listed on January 02, 1942)",
+   "Key Financial Ratios for FY 2025-26: Debtors Turnover 32 days, Inventory Turnover 60 days, Interest Coverage Ratio (0.60), Current Ratio 1.04, Debt-Equity Ratio 13.81, Operating Profit Margin 0.06, Net Profit Margin (0.15), Return on Networth (0.60)",
+   "Demat suspense account opened for 51 unclaimed shares post capital reduction",
+   "Board held 6 meetings during FY 2025-26 on: 12th May 2025, 28th May 2025, 21st July 2025, 23rd October 2025, 21st January 2026, 30th March 2026",
+   "Independent Directors held separate meeting on 21st January 2026",
+   "Audit Committee met 6 times during FY 2025-26 on same dates as Board meetings",
+   "Nomination and Remuneration Committee met 1 time during FY 2025-26",
+   "No dividend recommended due to losses incurred",
+   "Paid-up share capital: Rs. 92,17,21,400 (9,21,72,140 equity shares of Rs.10 each)",
+   "99.53% shares held in dematerialized form"
+  ],
+  "capex_plans": [
+   {
+    "item": "Modernization and expansion project to increase cement grinding capacity from 1.82 MTPA to 3.00 MTPA",
+    "amount_cr": null,
+    "timeline": "Not specified"
+   },
+   {
+    "item": "modernization/expansion project to enhance the clinker manufacturing capacity from 1.65 MTPA to 2.30 MTPA and the cement grinding capacity from 1.82 MTPA to 3 MTPA and also to install a new 6 stage preheater system along with necessary modifications / replacement of the existing equipment's",
+    "amount_cr": 470.69,
+    "timeline": "expected to be completed by the end of September 2026"
+   },
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 1.25,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "AFR (Alternative Fuel and Raw Material) implementation projects",
+    "amount_cr": null,
+    "timeline": "Likely to be commissioned in FY 2026-27"
+   },
+   {
+    "item": "Property, plant and equipment additions",
+    "amount_cr": 284.55,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Right of use assets additions",
+    "amount_cr": 18.18,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capacity expansion and modernization of existing manufacturing facility at Sri Durga Cement Works",
+    "amount_cr": 470.69,
+    "timeline": ""
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "Details relating to future outlook, treats and opportunities have been given in detail in the Management Discussion and Analysis Report, which is part of the Directors' Report.",
+    "period": ""
+   },
+   {
+    "statement": "The medium-to long term outlook remains positive, with various industry houses pegging the sector growth at 7-8% per annum, at par with the GDP growth. The company is poised to capitalise on opportunities and continue to be a preferred brand for customers.",
+    "period": "Medium to long term"
+   },
+   {
+    "statement": "A brief slowdown is anticipated in FY 2026, but the sector is poised for robust growth driven by favourable demand fundamentals and structural industry shifts.",
+    "period": "FY 2026"
+   },
+   {
+    "statement": "The Board of Directors of the Company in their meeting on March 30, 2026 has accorded in-principle approval for the proposed merger of the Company with the Holding Company, Sagar Cements Limited, subject to necessary approval from the authorities concerned under section 230 and 232 of the Companies Act 2013.",
+    "period": "FY2026"
+   },
+   {
+    "statement": "Based on this assessment, the financial statements have been prepared on a going concern basis, with assets and liabilities recorded on the assumption that the Company will be able to realise its assets and discharge its liabilities in the normal course of business.",
+    "period": "foreseeable future"
+   }
+  ],
+  "risks": [
+   "The Company has formulated a Risk Management Policy. The Risk Management Policy, which inter-alia: a) define framework for identification, assessment, monitoring, mitigation and reporting of risks. b) ensures that all the current and future material risk exposures of the Company are identified, assessed, quantified, appropriately mitigated, minimized and managed i.e to ensure adequate systems for risk management.",
+   "Global and domestic supply and demand conditions affecting selling prices of finished goods",
+   "Input availability and prices",
+   "Changes in government policies and regulations",
+   "Tax laws",
+   "Economic developments within the country",
+   "Litigation and industrial relations",
+   "Going concern uncertainty due to losses incurred during the year and net current liabilities position as at 31 March 2026",
+   "Commodity price risk for coal and pet coke (major expenditure) driven by external market forces",
+   "Dependence on financial support from holding company (Sagar Cements Limited) for going concern basis",
+   "Revenue recognition risk due to high volume of transactions, diverse discount and rebate schemes, and complexity of credit notes",
+   "Recoverability of deferred tax assets given history of losses and significant judgement in forecasting future taxable profits",
+   "Going concern risk: accumulated losses, current liabilities exceed current assets by Rs 9,521 lakhs as at 31 March 2026",
+   "Cash losses incurred in current year (Rs 7,340 lakhs) and preceding year (Rs 10,262 lakhs)",
+   "Audit trail (edit log) facility not enabled at application level for certain master data fields in general ledger software",
+   "Audit trail at database level not enabled for certain fields in tables relating to books of account",
+   "Unable to comment on audit trail for third-party leave records software from 1 January 2026 to 31 March 2026 due to absence of independent auditor's report",
+   "Slight delay in one instance of income tax deposit",
+   "Labour cess due of Rs 26 lakhs outstanding as at balance sheet date",
+   "Labour cess of Rs 5 lakhs outstanding for more than six months as at 31 March 2026",
+   "Credit risk on trade receivables with ECL provision matrix",
+   "Inventory obsolescence risk (provision for slow/non-moving stores and spares: Rs 99 lakh in 2026, Rs 181 lakh in 2025)",
+   "Land restoration obligations for mines",
+   "Foreign exchange rate risks managed through derivative financial instruments",
+   "Deviation with respect to certain financial ratios compared to prescribed limits in loan sanction letters (waiver obtained from lenders)",
+   "High net debt to equity ratio of 13.71 as at March 31, 2026",
+   "Accumulated losses with retained earnings of negative Rs 64,686 lakh as at March 31, 2026",
+   "Dependence on related party loans from holding company Sagar Cements Limited",
+   "Market risk (currency risk and interest rate risk)",
+   "Credit risk",
+   "Liquidity risk",
+   "Deviations in compliance with certain financial ratios under borrowing arrangements (waivers obtained)",
+   "Actuarial risk (longevity risk, currency risk, interest rate risk, market risk) for gratuity plan",
+   "As at March 31, 2026, the Company incurred a net loss of ` 6,716 for the year (March 31, 2025: ` 15,211) and had accumulated losses of ` 64,686. The Company also reported negative operating cash flows of 2,515 during the year. As at March 31, 2026, the Company had a net current liability position of ` 9,521, with current liabilities of ` 28,454 exceeding current assets of ` 18,933. These events or conditions cast significant doubts on the Company's ability to continue as a going concern."
+  ],
+  "subsidiaries": [
+   {
+    "name": "The Company doesn't have any subsidiaries or joint ventures or associate Companies during the year.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "There was no subsidiary to the listed entity"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "As on 31.03.2026, the Company did not have any subsidiary"
+   }
+  ],
+  "litigation": [
+   "There are no significant and material orders passed by the Regulators / Courts which would impact the going concern status of the Company and its future operations.",
+   "No application has been admitted or any proceeding pending against the Company under the Insolvency and Bankruptcy Code, 2016.",
+   "No Actions taken against the listed entity/ its promoters/ directors/ subsidiaries either by SEBI or by Stock Exchanges under SEBI Regulations and circulars/guidelines issued thereunder",
+   "No instances of non-compliance on capital market matters during last three years",
+   "No penalties or strictures by Stock Exchanges, SEBI or other statutory authorities",
+   "No pending litigations which would impact financial position (per auditor's report under Rule 11)",
+   "No proceedings initiated or pending for holding benami property under Prohibition of Benami Property Transactions Act, 1988",
+   "Deposits against demand under dispute (considered doubtful): Rs 179 lakh",
+   "Claims/debts against the Company up to closing date addressed under NCLT approved resolution plan are not included in contingent liabilities; as per clause 3.3.13 of resolution plan, these liabilities stand extinguished",
+   "All direct and indirect tax liabilities relating to assessments of earlier years up to closing date stand extinguished as per NCLT approved resolution plan"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Deposits against demand under dispute (considered doubtful)",
+    "amount_cr": 1.79
+   },
+   {
+    "nature": "The Company has no contingent liabilities as at March 31, 2026 and as at March 31, 2025",
+    "amount_cr": 0
+   }
+  ]
+ }
+}
