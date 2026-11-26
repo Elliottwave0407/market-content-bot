@@ -1,0 +1,659 @@
+{
+ "isin": "INE542B01011",
+ "name": "AksharChem India Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30808_AKSHARCHEM_2025_2026_A_2475436_29082026113055.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 390554,
+ "chunks": 10,
+ "chunks_ok": 9,
+ "facts": {
+  "business": {
+   "description": "AksharChem (India) Limited is an integrated manufacturer of dye intermediates, pigments, and inorganic chemicals with backward integration into H-Acid. The company is a leading exporter of Vinyl Sulphone and CPC Green, and a fast-growing player in Precipitated Silica for tyre, rubber, and specialty applications.",
+   "products": [
+    {
+     "name": "Vinyl Sulphone",
+     "share_of_revenue_pct": null,
+     "note": "Reactive dye intermediate for textiles; capacity 7,800 tonnes at Mehsana"
+    },
+    {
+     "name": "H-Acid",
+     "share_of_revenue_pct": null,
+     "note": "Aromatic intermediate for direct dyes; capacity 2,400 tonnes at Mehsana"
+    },
+    {
+     "name": "CPC Green",
+     "share_of_revenue_pct": null,
+     "note": "Pigment used in printing inks, rubber, plastics, paints; capacity 1,200 tonnes at Mehsana"
+    },
+    {
+     "name": "Precipitated Silica",
+     "share_of_revenue_pct": 24,
+     "note": "Used in tyre/rubber reinforcement, animal feed, agro, specialty applications; capacity expanded to 18,000 MTPA at Dahej; ~24% of revenue"
+    },
+    {
+     "name": "Pigment Green 7",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "H Acid",
+     "share_of_revenue_pct": null,
+     "note": "Organic chemical"
+    },
+    {
+     "name": "Dyes",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Pigments",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Products using Acetanilide, CPC Blue & Sodium Silicate as principal raw materials",
+     "share_of_revenue_pct": null,
+     "note": "Principal Raw Material for company's products is Acetanilide, CPC Blue & Sodium Silicate"
+    }
+   ],
+   "customers": [
+    "Leading downstream companies across 30+ countries",
+    "Leading Indian tyre manufacturers",
+    "Customers in textile, printing ink, paint, plastics, tyre, rubber industries",
+    "Leading tyre manufacturers (for Silica business)",
+    "textile, inks, plastics and paints industries",
+    "tyre, rubber, agrochemical and animal feed industries",
+    "major tyre and rubber manufacturers of India",
+    "More than 85% of the company's customers have been transacting with the company for over five years"
+   ],
+   "geographies": [
+    {
+     "name": "Exports",
+     "share_pct": 57
+    },
+    {
+     "name": "Domestic",
+     "share_pct": 43
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    },
+    {
+     "name": "Europe",
+     "share_pct": null
+    },
+    {
+     "name": "Far East",
+     "share_pct": null
+    },
+    {
+     "name": "South East Asia",
+     "share_pct": null
+    },
+    {
+     "name": "China",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": null
+    },
+    {
+     "name": "Turkey",
+     "share_pct": null
+    },
+    {
+     "name": "Vietnam",
+     "share_pct": null
+    },
+    {
+     "name": "Sri Lanka",
+     "share_pct": null
+    },
+    {
+     "name": "Russia",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Mehsana, Gujarat",
+     "capacity": "Vinyl Sulphone 7,800 tonnes, H-Acid 2,400 tonnes, CPC Green 1,200 tonnes"
+    },
+    {
+     "location": "Dahej, Bharuch, Gujarat",
+     "capacity": "Precipitated Silica 18,000 MTPA (expanded from 12,000 MTPA)"
+    },
+    {
+     "location": "Village: Indrad, Chhatral-Kadi Road, Mahesana-382715, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Chhatral, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Dahej, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "166-169, Village Indrad, Kadi-Kalol Road, Dist. Mehsana \u2013 382 715, Gujarat (India)",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. D-2/CH/152, Dahej-2 Industrial Estate, G.I.D.C. Dahej \u2013 392 135 Gujarat (India)",
+     "capacity": ""
+    },
+    {
+     "location": "Village: Indrad, Chhatral-Kadi Road, Mehsana-382715, Gujarat (India)",
+     "capacity": "VS Plant (Dry zone mentioned)"
+    },
+    {
+     "location": "Dahej-2 Industrial Estate, G.I.D.C. Dahej, Gujarat (India)",
+     "capacity": ""
+    },
+    {
+     "location": "Village: Makdala, Taluka: Deodar, District: Banaskantha, Gujarat",
+     "capacity": "5.19 MWp (DC) / 3.85 MWp (AC) ground-mounted solar power plant for captive consumption"
+    }
+   ],
+   "raw_materials": [
+    "Petrochemical-based raw materials",
+    "Key raw materials sourced directly from manufacturers",
+    "crude oil",
+    "Acetanilide",
+    "CPC Blue",
+    "Sodium Silicate"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Textile",
+    "Printing Ink",
+    "Paint",
+    "Plastics",
+    "Tyre",
+    "Rubber",
+    "Animal feed",
+    "Agrochemicals",
+    "Specialty chemicals",
+    "Dyes & Pigments",
+    "Silica (tyre industry)",
+    "inks",
+    "paints",
+    "agrochemical"
+   ],
+   "brands_or_certifications": [
+    "AKSIL (Precipitated Silica brand)",
+    "ISO 9001",
+    "ISO 14001",
+    "ISO 45001",
+    "IATF certified",
+    "CARE A- (long-term rating)",
+    "CARE A2+ (short-term rating)",
+    "Sustainability assessment recognition for strong ESG performance",
+    "AksharChem (logo)",
+    "Pigment Green 7",
+    "Asaflow (Precipitated Silica)",
+    "Aksil (Precipitated Silica)",
+    "ISO 9001:2015",
+    "ISO 14001:2015",
+    "ISO 45001:2018",
+    "Three Star Export House",
+    "Trademark: Aksharchem",
+    "Trademark: Pigment Green 7",
+    "Trademark: Asaflow",
+    "Trademark: Aksil"
+   ],
+   "competitors_named": [
+    "China"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Cautiously optimistic for FY 2026-27; green shoots visible with gradual improvement in demand from paints & coatings, packaging, construction, automotive, tyres, and personal care industries; precipitated silica tailwinds strong due to EV/SUV/premium tyre demand, China-plus-one sourcing, and green tyre adoption",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Dye intermediates: signs of stabilisation and gradual recovery as textile exports improve with inventory normalisation in Europe and US; healthy domestic demand from apparel and home textiles",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Pigments: better positioned than dyes with resilient demand from paints, coatings, plastics, printing inks, packaging, construction, automotive refinishing; specialty/high-performance/environmentally compliant grades likely to outperform commodity pigments",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Precipitated silica: next growth engine driven by tyre applications (green tyres, fuel efficiency, EV/premium tyres) and non-tyre applications (industrial rubber, footwear, rice rollers, agrochemicals, animal feed, specialty chemicals); China-plus-one sourcing becoming permanent",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The Dyes & Pigments industry witnessed a gradual revival during the year, supported by favorable market conditions and enhanced demand across key customer segments. The Company's Silica business also remained stable, aided by improved capacity utilization and operational efficiencies. The Company expanded its market presence in Dyes intermediates by exploring and developing new customers in India and export markets, including Taiwan and South Korea, and for Silica business developing new export markets, including Sri Lanka, Russia, and Turkey. These efforts are expected to further strengthen the Company's global footprint and diversify its export base.",
+    "period": "FY 2025-26 and ongoing"
+   },
+   {
+    "statement": "The Company has entered in the new geography namely Turkey, Vietnam, Srilanka, Russia etc. The Company is regularly conducting Sales & Operations Planning Meeting for identifying the issues and resolving them in an efficient and timely manner. During the year the Operating Cash flow of the Company has improved by effective utilization of working capital. The Company is ensuring sustainable performance even though there remains high vulnerability in raw material prices. We believe that our performance will be back on track, once the situation of geopolitical instability and global economy start improving. Further, with increased capacity utilization, company is reaching out to all markets in tire and rubber industry with parallel efforts for increased capacity creation during the year. New products requirements as per various demands of customers are being studied to expand product portfolio in coming years.",
+    "period": "FY 2025-26 and coming years"
+   },
+   {
+    "statement": "The Central and State Rules under the Labour Codes are yet to be notified and, upon such notification, the Company will reassess and recognise the impact, if any, on employee benefit obligations in accordance with applicable accounting standards",
+    "period": "Post November 21, 2025"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Precipitated Silica capacity expansion",
+    "amount_cr": null,
+    "timeline": "Completed in FY 2025-26; capacity expanded from 12,000 to 18,000 MTPA (50% increase)"
+   },
+   {
+    "item": "Solar power installation",
+    "amount_cr": null,
+    "timeline": "7.93 MWp installed in FY 2025-26, meeting ~45% of electricity requirements"
+   },
+   {
+    "item": "Solar power plant at Indrad manufacturing facility",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Solar power plant at Dahej manufacturing facility",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Solar rooftop capacity enhancement at Dahej unit",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Ground-mounted solar power plant",
+    "amount_cr": 14.0741,
+    "timeline": "Commissioned November 12, 2025"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Secured approvals from leading Indian tyre manufacturers for Precipitated Silica",
+    "value_cr": null
+   },
+   {
+    "statement": "Commercial approvals from leading customers across dye intermediates, pigments, and inorganic chemicals",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Volatility in raw material and energy costs",
+   "Stringency in environmental and regulatory requirements",
+   "Geopolitical conflicts and trade restrictions (US tariffs, Russia-Ukraine war, Middle East conflict)",
+   "Global economic slowdown and weak demand conditions",
+   "Inflated raw material, energy, and interest costs",
+   "Industry-wide pricing and competitive pressures",
+   "Logistics bottlenecks and freight cost increases",
+   "REACH compliance and stricter environmental norms",
+   "Fire incident in Dry zone building of Vinyl Sulphone (VS) plant",
+   "China price mechanism, dumping/selling at lower rate by China makes it difficult to improve margins",
+   "Weak global demand and destocking of inventory",
+   "Declining chemical prices and increased competition from China",
+   "High vulnerability in raw material prices",
+   "Geopolitical instability and global economy slowdown",
+   "Partial stoppage of plant operations due to demand slowdown",
+   "Minimum operating margin not covering fixed overheads",
+   "commodity price risks due to fluctuation in prices of crude oil",
+   "foreign exchange risks as receivables are in U.S. Dollars",
+   "Credit risk from trade receivables and loans",
+   "Liquidity risk in meeting financial liabilities",
+   "Market risk from foreign exchange rates and interest rates",
+   "Interest rate risk on floating rate borrowings",
+   "Foreign currency risk on receivables in foreign currency",
+   "Price risk from investments in equity and mutual funds",
+   "Commodity price risk for Acetanilide, CPC Blue & Sodium Silicate",
+   "Fire incident risk at plants (VS Plant fire on 2nd May 2024)"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Net debt",
+    "amount_cr": null,
+    "note": "Net debt:equity ratio of 0.41 as of FY 2025-26"
+   },
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 17.8837,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 90.5811,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "State Bank of India / HDFC Bank",
+    "amount_cr": 108.4648,
+    "note": "Term Facilities and Working Capital Facilities; Borrowings (Non-Current) Rs. 1,788.37 Lakhs, Borrowings (Current) Rs. 9,058.11 Lakhs as at March 31, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. M. I. Prajapati & Associates LLP (formerly known as M/s. M. I. Prajapati & Associates), Cost Accountants, Ahmedabad (Firm Registration No. 101450)",
+   "opinion": "No observations (including any qualification, reservation, adverse remark or disclaimer) in their Audit Reports",
+   "key_audit_matters": [
+    "No key audit matters to communicate"
+   ],
+   "qualifications_or_emphasis": [
+    "Proper books of account maintained except for audit trail feature not enabled at application layer for payroll software from April 1, 2025 to March 31, 2026",
+    "Quarterly returns/statements filed with banks for working capital limits not in agreement with reviewed books of account for certain quarters, though differences are reconciled"
+   ]
+  },
+  "governance": {
+   "board_composition": "Five (50%+) Independent Directors and two women directors",
+   "director_changes": [
+    "Mr. Devalkumar Indrabal Suthar (DIN: 11511925) appointed as Whole Time Director, designated as Executive Director for three years effective May 21, 2026, subject to member approval",
+    "Mr. Ashok Dolatsinh Barot (DIN: 08366687), Executive Director, resigned effective close of business hours on May 21, 2026 due to health considerations",
+    "Changes in Board Directors were made in accordance with and as required under the provisions of the Companies Act, 2013.",
+    "After the close of the financial year Mr. Ashok Dolatsinh Barot was resigned as the director whereas Mr. Devalkumar Indrabal Suthar (DIN : 11511925) was appointed as a director of the company w.e.f. 21/05/2026.",
+    "Mr. Ashok D. Barot resigned w.e.f. 21st May, 2026",
+    "Mr. Devalkumar I. Suthar appointed on 21st May, 2026"
+   ],
+   "promoter_holding_pct": 62.7,
+   "top_shareholders": [
+    {
+     "name": "Investor Education and Protection Fund Authority Ministry of Corporate Affairs",
+     "pct": 2.56
+    },
+    {
+     "name": "Tarak V Vora",
+     "pct": 2.31
+    },
+    {
+     "name": "DIC Corporation",
+     "pct": 2.07
+    },
+    {
+     "name": "Pravinaben Vora",
+     "pct": 1.55
+    },
+    {
+     "name": "Saurabh Mittal",
+     "pct": 0.78
+    },
+    {
+     "name": "Hansika",
+     "pct": 0.5
+    },
+    {
+     "name": "Pranav Parekh",
+     "pct": 0.41
+    },
+    {
+     "name": "Tarak Vinaykumar Vora",
+     "pct": 0.4
+    },
+    {
+     "name": "Santoshkumar",
+     "pct": 0.4
+    },
+    {
+     "name": "Rakesh Mittal",
+     "pct": 0.39
+    }
+   ]
+  },
+  "people": {
+   "employees": 211,
+   "key_management": [
+    {
+     "name": "Paru M. Jaykrishna",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Munjal M. Jaykrishna",
+     "role": "Jt. Managing Director & CEO"
+    },
+    {
+     "name": "Mehul Naliyadhara",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mrs. Paru M. Jaykrishna",
+     "role": "Founder, Chairperson & Managing Director"
+    },
+    {
+     "name": "Mr. Munjal M. Jaykrishna",
+     "role": "Joint Managing Director & CEO"
+    },
+    {
+     "name": "Mr. Sachin M. Jaykrishna",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Jigar M. Patel",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Sameer S. Sinha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Maitri K. Mehta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Nirav K. Shah",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Keyur D. Gandhi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Devalkumar I. Suthar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Paru M. Jaykrishna",
+     "role": "Chairperson & Managing Director"
+    },
+    {
+     "name": "Mr. Sachin M. Jaykrishna",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Devalkumar I. Suthar",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Amit D. Soni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Mehul Naliyadhara",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Ashok D. Barot",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Mehul C. Naliyadhara",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Mehul C. Naliyadhara",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Rajesh Samal",
+     "role": "General Manager (Works)"
+    },
+    {
+     "name": "Mr. Sunil V. Rane",
+     "role": "General Manager (Accounts)"
+    },
+    {
+     "name": "Mr. Dakshesh N. Patel",
+     "role": "General Manager (Marketing)"
+    },
+    {
+     "name": "Ms. Bincy Mathew",
+     "role": "General Manager Corporate HR Admin"
+    },
+    {
+     "name": "Mr. Deval I. Suthar",
+     "role": "DGM \u2013 Accounts & Finance"
+    },
+    {
+     "name": "Mr. Munjal M. Jaykrishna",
+     "role": "Jt. Managing Director & CEO"
+    },
+    {
+     "name": "Mr. Amit D. Soni",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Mr. Mehul Naliyadhara",
+     "role": "Company Secretary & Compliance Officer / Nodal Officer"
+    },
+    {
+     "name": "Paru M. Jaykrishna",
+     "role": "Chairperson & Managing Director"
+    },
+    {
+     "name": "Amit D. Soni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mehul Naliyadhara",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Jigar M. Patel",
+     "role": "Independent Director"
+    }
+   ]
+  },
+  "other_notable": [
+   "Zero liquid discharge maintained across operations",
+   "Zero quality returns track record",
+   "Zero safety incidents in FY 2025-26",
+   "82% repeat business from customers",
+   "81% raw materials from long-term suppliers (25+ years relationships)",
+   "7.93 MWp solar capacity meeting ~45% of electricity needs",
+   "Greenbelt cover acts as carbon sink",
+   "All air emissions within regulatory limits with ambient air monitoring and electrostatic precipitators",
+   "Automated packaging technologies (small-bag and jumbo bagging) to minimize packaging waste",
+   "Water sourced from GIDC; treated water recycled for gardening and sanitation",
+   "Solid waste handled through government-approved entity",
+   "Supplier code of conduct covering worker welfare, ethical sourcing, responsible practices",
+   "Code of Conduct extends to supply chain partners with zero tolerance for breaches",
+   "HR Mobile Application implemented for paperless HR environment",
+   "Monthly employee recognition programme and improved dining facilities",
+   "Regular safety inspections, risk assessments, and training programs",
+   "Net worth of Rs 26,152.91 lakhs in FY 2025-26",
+   "Total income increased 7.5% to Rs 37,262.78 lakhs in FY 2025-26",
+   "EBITDA declined 2.16% to Rs 530.51 lakhs in FY 2025-26",
+   "Net loss of Rs 43.86 lakhs in FY 2025-26 vs profit of Rs 477.04 lakhs in FY 2024-25",
+   "Precipitated Silica sales ~14,009 MT at ~80% capacity utilization, near break-even",
+   "Direct sourcing strategy shifted from dealers to manufacturers for better quality and supply reliability",
+   "Inventory management and supply chain monitoring strengthened",
+   "Exports to 30+ countries across North America, South America, Europe, Asia Pacific, Middle East and Africa",
+   "37th Annual General Meeting scheduled for Tuesday, 22nd September, 2026 at 12:00 p.m. at Registered Office, 'Akshar House', Chhatral-Kadi Road, Indrad-382715, Mahesana, Gujarat",
+   "Final dividend declared for financial year ended March 31, 2026, record date September 15, 2026",
+   "Cost Auditor remuneration ratified at Rs. 45,000 plus applicable taxes and reimbursement of out-of-pocket expenses for FY 2026-27",
+   "Unclaimed dividend transfer to IEPF details provided for years 2018-19 to 2024-25",
+   "TDS on dividend applicable per Income Tax Act",
+   "Shares with unclaimed dividend for seven consecutive years to be transferred to IEPF Authority demat account",
+   "E-voting facility provided by NSDL, remote e-voting period: September 18, 2026 (09:00 am) to September 21, 2026 (05:00 pm)",
+   "Cut-off date for e-voting: September 15, 2026",
+   "SWAYAM self-service portal for investors launched by MUFG Intime India Private Limited",
+   "Mandatory updation of PAN, KYC, nomination and bank details for physical shareholders per SEBI regulations",
+   "Documents dispatch through electronic mode proposed",
+   "Revenue from operations: Rs. 37,243.00 lakhs (FY 2025-26) vs Rs. 34,626.52 lakhs (FY 2024-25)",
+   "Net loss: Rs. 43.86 lakhs (FY 2025-26) vs Net profit Rs. 477.04 lakhs (FY 2024-25)",
+   "Export turnover increased to Rs. 21,236.71 lakhs from Rs. 16,691.49 lakhs",
+   "Fire incident in VS plant on May 2, 2024; received Rs. 608 lakhs against claim of Rs. 610 lakhs",
+   "Credit rating: CARE A-; Negative for long term bank facilities, CARE A-; Negative/CARE A2+ for long term/short term fund based limits, CARE A2+ for short term non-fund based limits",
+   "Authorised Share Capital: Rs. 20,00,00,000 (2,00,00,000 equity shares of Rs. 10 each)",
+   "Paid-up Share Capital: Rs. 8,03,30,990 (80,33,099 equity shares of Rs. 10 each)",
+   "No CSR expenditure required as average net profit for preceding three years was negative",
+   "Board met 4 times during FY 2025-26",
+   "Five Independent Directors as on March 31, 2026: Mr. Jigar M. Patel, Ms. Maitri K. Mehta, Mr. Nirav K. Shah, Mr. Keyur D. Gandhi, Mr. Sameer S. Sinha",
+   "Secretarial Auditor: Mr. Bipin L. Makwana (Membership No. A15650) appointed for FY 2025-26 to FY 2029-30",
+   "Cost Auditor: M/s. M. I. Prajapati & Associates LLP (FRN-101450) for FY 2025-26 and FY 2026-27",
+   "Internal Auditor: M/s. Mahendra N. Shah & Co., Chartered Accountants for FY 2025-26",
+   "No loans, guarantees or investments under Section 186",
+   "All related party transactions in ordinary course of business and on arm's length basis; no materially significant transactions",
+   "No fraud reported by auditors under Section 143(12)",
+   "Annual Return available on company website",
+   "Vigil mechanism/whistle blower policy in place",
+   "CSR obligation for FY 2025-26 is Nil as average net profit for preceding three financial years was negative.",
+   "No CSR expenditure incurred during the year.",
+   "R&D Expenditure: Capital Nil, Revenue Rs 35.23 Lakhs (Total Rs 35.23 Lakhs, 0.09% of Turnover).",
+   "Foreign Exchange Earned: Rs 20,119.69 Lakhs; Foreign Exchange Outgo: Rs 855.17 Lakhs.",
+   "Revenue from operations: Rs 37,243.00 Lakhs (7.55% YoY growth).",
+   "Production volume: 21,792 MTPA; Capacity utilization: 74%.",
+   "Installed manufacturing capacity: 29,400 MTPA as of March 31, 2026."
+  ],
+  "dividend_per_share": 0.5,
+  "litigation": [
+   "No significant or material orders were passed by any regulator or court or tribunal which impacts the going concern status and Company's operations in future.",
+   "No application made or any proceeding pending under the Insolvency and Bankruptcy Code, 2016 during the year.",
+   "Sales Tax dispute of Rs 18.03 lakhs for 2004-05 pending at Ahmedabad VAT Tribunal",
+   "Income Tax disputes totaling Rs 228.185 lakhs for assessment years 2017-18 to 2021-22 pending at CIT (Appeal), Ahmedabad",
+   "No proceedings initiated or pending for holding benami property under Benami Transactions (Prohibition) Act, 1988",
+   "No transactions with companies struck off",
+   "No unrecorded transactions surrendered/disclosed as income in tax assessments",
+   "No charges or satisfaction pending registration with ROC beyond statutory period"
+  ],
+  "subsidiaries": [
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "According to the policy of the Company and applicable regulations under SEBI Listing Regulations, the Company have neither subsidiary nor material subsidiary at the financial year ended March 31, 2026."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company does not have any investment in any subsidiary company"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "",
+    "nature": "During the financial year 2025-26, there was no materially significant related party transaction that may have potential conflict with the interests of the Company at large. Transactions with related parties as per requirements of Ind AS 24 and which are not materially significant are disclosed in Notes to the Financial Statements.",
+    "amount_cr": null
+   },
+   {
+    "party": "CSR transactions with related parties",
+    "nature": "CSR activities",
+    "amount_cr": 0
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Sales Tax dispute under Gujarat VAT Act, 2003",
+    "amount_cr": 0.1803
+   },
+   {
+    "nature": "Income Tax disputes for various assessment years",
+    "amount_cr": 2.28185
+   }
+  ]
+ }
+}

@@ -1,0 +1,571 @@
+{
+ "isin": "INE179G01029",
+ "name": "Davangere Sugar Company Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30459_DAVANGERE_2025_2026_A_22636455_20082026173834.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 301997,
+ "chunks": 8,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Davangere Sugar Company Limited is an integrated sugar, ethanol, and co-generation power company. It manufactures sugar, ethanol from molasses/sugar syrup and grains, and generates power from bagasse.",
+   "products": [
+    {
+     "name": "Sugar",
+     "share_of_revenue_pct": null,
+     "note": "Capacity 4,750 TCD; production 137,840 quintals in FY26; recovery 9%; warehouses capacity 6 lakh quintals"
+    },
+    {
+     "name": "Ethanol",
+     "share_of_revenue_pct": null,
+     "note": "Installed capacity 65 KLPD (19,500 KLPD mentioned as target/expansion); uses Cane syrup, B-Heavy Molasses, C-Molasses, and grains; commercial production from Q1 FY23; expansion to 85 KLPD by Dec 2027"
+    },
+    {
+     "name": "Co-generation Power",
+     "share_of_revenue_pct": null,
+     "note": "Installed capacity 24.45 MW; generation 27,998,000 KWH in FY26; capacity utilization 58.91%"
+    },
+    {
+     "name": "Aviation",
+     "share_of_revenue_pct": null,
+     "note": "Revenue segment reported in revenue mix"
+    },
+    {
+     "name": "Others",
+     "share_of_revenue_pct": null,
+     "note": "Revenue segment reported in revenue mix"
+    },
+    {
+     "name": "Co-generation of power",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Distillery products",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "Oil Marketing Companies (OMCs) for ethanol",
+    "Power grid/utility for co-generation power",
+    "Sugar traders/consumers",
+    "Aviation sector customers",
+    "Domestic market",
+    "Merchant exporters"
+   ],
+   "geographies": [
+    {
+     "name": "Karnataka, India",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Kukkuwada village, 18 km from Davangere city, Karnataka",
+     "capacity": "Sugar: 4,750 TCD; Ethanol: 65 KLPD (expanding to 85 KLPD by Dec 2027); Co-generation: 24.45 MW"
+    },
+    {
+     "location": "Davangere, Karnataka",
+     "capacity": "Not specified in the provided text"
+    },
+    {
+     "location": "Kukkuwada, Karnataka",
+     "capacity": "substantial sugarcane crushing capacity"
+    },
+    {
+     "location": "Kukkuwada Village, Davangere Taluk & District, Karnataka State \u2013 577 525",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "Sugarcane",
+    "Molasses (B-Heavy, C-Molasses)",
+    "Cane syrup",
+    "Grains",
+    "Bagasse (for co-generation)"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Ethanol Blended Petrol (EBP) Program",
+    "Power distribution",
+    "Sugar market",
+    "Aviation fuel",
+    "Domestic sugar market",
+    "Ethanol production",
+    "Co-generation power",
+    "Ethanol Blended Petrol (EBP) Programme",
+    "Power sector"
+   ],
+   "brands_or_certifications": [
+    "ISO 9001: Quality Management System",
+    "ISO 14001: Environmental Management System",
+    "FSSAI: Food Safety and Standards Authority of India Compliance"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Strategic priorities: maximize operational efficiencies across sugar and bio-energy facilities; deepen ESG integration across all plant operations and supply chains; continue expanding into high-margin consumer and bio-fuel categories.",
+    "period": "Future"
+   },
+   {
+    "statement": "Company aims to expand ethanol production capacity from 65 KLPD to 85 KLPD by December 2027.",
+    "period": "By Dec 2027"
+   },
+   {
+    "statement": "National imperative towards sustainable energy driven by Government's Ethanol Blended Petrol (EBP) Program presents transformative opportunity; pivoting from traditional sugar manufacturer to integrated bio-energy and agribusiness solution provider.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Sugar production during Sugar Season (SS) 2026-27 is expected to recover by 3.6 million metric tonnes (raw value) to approximately 33.6 million metric tonnes, driven by consecutive favourable monsoon seasons, improved groundwater reserves, higher sugarcane yields and increased acreage under cultivation.",
+    "period": "SS 2026-27"
+   },
+   {
+    "statement": "The comparative economics of ethanol versus sugar production remain critical for 2026/27 planning. Recent geopolitical tensions have elevated global oil prices to approximately $100 per barrel. The government was evaluating increased ethanol blending mandates to reduce petroleum import dependence and support domestic producer capacity.",
+    "period": "2026/27"
+   },
+   {
+    "statement": "Raw sugar prices currently trade sub 14 c/lb, which is below cost of production for most countries, including India. Any ethanol policy modifications could materially affect India's sugar output and global market equilibrium in 2026/27.",
+    "period": "2026/27"
+   },
+   {
+    "statement": "World sugar balance for 2025-26 would be turning to a surplus after six deficit years. Accordingly, world prices may be expected to remain range bound, barring unforeseen weather challenges in major producing centers. Southwest monsoon forecast for 2026 is below par compared to long period average. El-Nino challenge could be a major threat to cane crop in lead producing States like Maharashtra and Karnataka. Sugar production should still be more than adequate to take care of domestic demand, while GOI's decision on sugar exports and diversion for ethanol would hinge on crop assessment, post monsoon.",
+    "period": "2025-26"
+   },
+   {
+    "statement": "TN sugar industry continues to suffer in successive years in solitude. Water storage in State reservoirs are much below capacity and last year levels. It is facing an imminent survival challenge that cries for instant State intervention with imaginative and comprehensive package support measures for its resurrection.",
+    "period": "2025-26"
+   },
+   {
+    "statement": "Amidst macro-level challenges outlined above, our company has all along fared reasonably well and relatively far better than most peers. It should be able to combat current headwinds on the strength of its strong liquidity, sustained improvement in operational efficiencies and overall financial standing.",
+    "period": "2025-26"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Ethanol capacity expansion from 65 KLPD to 85 KLPD",
+    "amount_cr": null,
+    "timeline": "By December 2027"
+   },
+   {
+    "item": "Rights Issue completed during FY26 increasing share capital from \u20b994 crores to \u20b9142 crores for strategic growth initiatives",
+    "amount_cr": 48,
+    "timeline": "FY26"
+   },
+   {
+    "item": "Multi Effect Evaporator sets in distillery units to concentrate spent wash",
+    "amount_cr": null,
+    "timeline": "In process"
+   },
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "Current year"
+   }
+  ],
+  "risks": [
+   "Fluctuating sugarcane availability",
+   "Evolving feedstock diversion policies",
+   "Shifting global commodity prices",
+   "Regulatory and policy changes",
+   "Climatic variability",
+   "Interest coverage ratio low at 0.16x in FY26",
+   "Economic developments",
+   "Pricing and demand and supply conditions in global and domestic markets",
+   "Changes in government regulations",
+   "Tax laws",
+   "Litigation",
+   "Industrial relations",
+   "Volatile world sugar prices",
+   "Raw sugar prices below cost of production for most countries including India",
+   "Excessive rainfall leading to lower cane availability and earlier mill closures",
+   "Regional variations in sugar prices complicating production decisions",
+   "Subdued global prices reflecting strong production expectations from Brazil, Thailand, and India",
+   "Moderating Domestic Sugar Demand: domestic sugar consumption is expected to grow at a modest 1.5%\u20132.0% CAGR over the next five years",
+   "Cyclical Nature of the Sugar Industry: influenced by fluctuations in sugar production, inventory levels and market demand",
+   "Dependence on Government Policies: relating to sugarcane pricing, export regulations, ethanol procurement prices and other regulatory measures",
+   "Climatic and Water Availability Risks: irregular monsoons, reduced river flows, depletion of groundwater resources and low storage levels in reservoirs",
+   "Challenges in Adoption of Modern Irrigation: high capital investment, delays in Government subsidy schemes and inadequate water availability during drought years",
+   "Emerging Technology Adoption: widespread adoption of AI and precision agriculture expected to take time due to technological, infrastructural and implementation challenges",
+   "Commodity price risk is one of the important risks for the Company as commodities form a major part of business."
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Consortium Banks",
+    "amount_cr": null,
+    "note": "State Bank of India, Canara Bank, Indian Bank, DDCC Bank, SVC Co-operative Bank Ltd listed as bankers"
+   },
+   {
+    "lender_or_type": "Promoter group (Mr. Ganesh Shivashankarappa Shamanur and Mr. Abhijith Ganesh Shamanur)",
+    "amount_cr": 40.12,
+    "note": "Outstanding loan to be converted/adjusted via preferential issue of convertible equity warrants at \u20b93.77 per warrant"
+   },
+   {
+    "lender_or_type": "FCCB (Foreign Currency Convertible Bonds)",
+    "amount_cr": null,
+    "note": "2% p.a. coupon rate, 5 years tenure, convertible to Equity; Source of funds for subscription amount received from issue of FCCB"
+   },
+   {
+    "lender_or_type": "Promoter (Unsecured Loan)",
+    "amount_cr": 40.12,
+    "note": "Outstanding unsecured loan due by the Company to the promoter proposed to be appropriated against subscription of Convertible Share Warrants"
+   },
+   {
+    "lender_or_type": "Bankers / Other Lenders",
+    "amount_cr": null,
+    "note": "Rate of interest at which the listed entity borrows: 11% p.a."
+   },
+   {
+    "lender_or_type": "unsecured promoter loan",
+    "amount_cr": 40.12,
+    "note": "Appropriated against issue of convertible share warrants"
+   },
+   {
+    "lender_or_type": "Directors",
+    "amount_cr": 150,
+    "note": "Approval for availing of Loan(s) from Directors up to Rs.150 Crores, with an option to Convert the same into Equity Shares, passed at AGM held on 30th September, 2025."
+   }
+  ],
+  "auditor": {
+   "name": "DGMS & Co, Chartered Accountants, Mumbai",
+   "opinion": "No qualifications or observations made by the Statutory Auditor in the said report."
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Abhijith Ganesh Shamanur (DIN: 03451918) retires by rotation and offers himself for re-appointment at 55th AGM",
+    "Appointment of M/s. D G M S & Co., Chartered Accountants as Statutory Auditors for a term of five consecutive years",
+    "Re-appointment of Mr. Abhijith Ganesh Shamanur (DIN: 03451918) as Director, liable to retire by rotation",
+    "Change in designation of Mr. Abhijith Ganesh Shamanur from Non-executive to Executive Director (Board Resolution dated 08th September 2025)",
+    "Mrs. Vinita Dilip Modak appointed as Additional Director (Non-Executive, Independent) w.e.f. 6th September, 2025 and regularised at 54th AGM on 30th September, 2025",
+    "Mrs. Hima Bindu Sagala appointed as Additional Director (Non-Executive, Independent) w.e.f. 6th September, 2025 and regularised at 54th AGM on 30th September, 2025",
+    "Mr. Achal Kapoor appointed as Additional Director (Non-Executive, Independent) w.e.f. 16th July, 2025 and regularised at 54th AGM on 30th September, 2025",
+    "Mr. Thappagondanahally Rajashekharappa ceased to be Independent Director w.e.f. 16th June, 2025 upon completion of tenure",
+    "Mr. Abhijith Ganesh Shamanur redesignated from Non-Executive Director to Executive Director w.e.f. 8th September, 2025",
+    "Mr. Thappagondanahally Rajashekharappa ceased to be an Independent Director w.e.f July 16, 2025",
+    "Mr. Achal Kapoor appointed as Independent Director w.e.f 16th July 2025",
+    "Ms. Uma Singh appointed as Company Secretary and Compliance Officer w.e.f 16th June 2025",
+    "Mr. Achal Kapoor was appointed as an Additional Director (Non-Executive, Independent) with effect from July 16, 2025, and subsequently approved as Non-Executive Independent Director at the AGM held on September 30, 2025",
+    "Ms. Uma Singh appointed as Company Secretary and Compliance Officer with effect from 16th June, 2025; resigned with effect from 15th May, 2026.",
+    "Mr. Vishwanath Patil appointed as Company Secretary and Compliance Officer with effect from 18th May, 2026.",
+    "Mr. Anandan Palaniappan resigned as General Manager \u2013 Distillery, Senior Managerial Personnel, with effect from close of business hours on 14th August 2025.",
+    "Mr. Sheshagiri Rao appointed as General Manager \u2013 Distillery and designated as Senior Management Personnel with effect from 14th August 2025.",
+    "Mr. Achal Kapoor appointed as Independent Director with effect from 16th July 2025.",
+    "Re-appointment of Ms. Vinita Dilip Modak and Ms. Hima Bindu Sagala as Independent Directors approved at AGM on 30th September 2025.",
+    "Change in Designation and Remuneration of Mr. Abhijith Ganesh Shamanur from Non-Executive Director to Executive Director approved at AGM on 30th September 2025.",
+    "Revision in Remuneration of Mr. Shamanur Shivashankarappa Ganesh, Managing Director, approved at AGM on 30th September 2025."
+   ],
+   "auditor_change": "Re-appointment of M/s. DGMS & Co., Chartered Accountants (Firm Registration No. 0112187W) as Statutory Auditors for five consecutive years from conclusion of 55th AGM to 60th AGM proposed",
+   "top_shareholders": [
+    {
+     "name": "Mr. Ganesh Shivashankarappa Shamanur",
+     "pct": null
+    },
+    {
+     "name": "Mr. Abhijith Ganesh Shamanur",
+     "pct": null
+    },
+    {
+     "name": "Mr. S. S. Ganesh",
+     "pct": 24.99
+    },
+    {
+     "name": "Mr. Abhijith Ganesh Shamanur",
+     "pct": 4.83
+    },
+    {
+     "name": "Abhijith Ganesh Shamanur",
+     "pct": null
+    },
+    {
+     "name": "Mr. Shamanur S. Ganesh",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 41.63
+  },
+  "people": {
+   "employees": 382,
+   "key_management": [
+    {
+     "name": "Mr. S.S. Ganesh",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Abhijith G. Shamanur",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Parameshwarappa Onkarappa",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Vishwanath Patil",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Shamanur S. Ganesh",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. S. S. Ganesh",
+     "role": "Promoter"
+    },
+    {
+     "name": "Mr. Abhijith Ganesh Shamanur",
+     "role": "Promoter"
+    },
+    {
+     "name": "Abhijith Ganesh Shamanur",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Swathi Shamanur",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Sri Shamanur Shivashankarappa Ganesh",
+     "role": "Chairman cum Managing Director"
+    },
+    {
+     "name": "Sri Abhijith Ganesh Shamanur",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mrs. Swathi Shamanur",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Ms. Hima Bindu Sagala",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sri Achal Kapoor",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Vinita Dilip Modak",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Parameshwarappa Onkarappa",
+     "role": "Chief Financial Officer (CFO)"
+    },
+    {
+     "name": "Ms. Uma Singh",
+     "role": "Company Secretary and Compliance Officer (ceased w.e.f. 15th May, 2026)"
+    },
+    {
+     "name": "Mr. Vishwanath Patil",
+     "role": "Company Secretary and Compliance Officer (appointed w.e.f. 18th May, 2026)"
+    },
+    {
+     "name": "Shamanur Shivashankarappa Ganesh",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Achal Kapoor",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Hima Bindu Sagala",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Vinita Dilip Modak",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Onkarappa P",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Uma Singh",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Abhijith Ganesh Shamanur",
+     "role": "Director"
+    },
+    {
+     "name": "Parameshwarappa Onkarappa",
+     "role": "CFO"
+    },
+    {
+     "name": "Swathi Shamanur",
+     "role": "Non-Executive - Non-Independent Director"
+    },
+    {
+     "name": "Hima Bindu Sagala",
+     "role": "Non-Executive - Independent Director"
+    },
+    {
+     "name": "Vinita Dilip Modak",
+     "role": "Non-Executive - Independent Director"
+    },
+    {
+     "name": "Achal Kapoor",
+     "role": "Non-Executive - Independent Director"
+    },
+    {
+     "name": "Revanasiddappa. M",
+     "role": "General Manager (Sugar)"
+    },
+    {
+     "name": "Prakash V.R",
+     "role": "General Manager (Cane)"
+    },
+    {
+     "name": "Devaraj .S",
+     "role": "General Manager (Co-gen)"
+    },
+    {
+     "name": "Sheshagiri Rao",
+     "role": "General Manager (Distillery Unit)"
+    },
+    {
+     "name": "Uma Singh",
+     "role": "Company Secretary and Compliance Officer (appointed 16th June 2025, resigned 15th May 2026)"
+    },
+    {
+     "name": "Vishwanath Patil",
+     "role": "Company Secretary and Compliance Officer (appointed 18th May 2026)"
+    }
+   ]
+  },
+  "other_notable": [
+   "CIN: L10721KA1970PLC001949",
+   "55th AGM scheduled for September 12, 2026 at 11:00 AM IST at Thogataveera Samudhaya Bhavana, M.C.C 'A' Block, Davangere -577004",
+   "Market capitalization \u20b953,338.66 lakhs on NSE as on March 31, 2026",
+   "Farmer network: 5,255 individuals as on March 31, 2026",
+   "Sugarcane cultivation area: 4,800 hectares (30,000 acres irrigated belt within 35 km radius)",
+   "Factory land area: 165 acres",
+   "Authorized share capital increase proposed from \u20b9200 crores to \u20b9450 crores",
+   "Approval sought for loans/investments/guarantees up to \u20b91,000 crores and investments up to \u20b91,200 crores under Section 186",
+   "Approval sought for overseas investments up to USD 100 million in wholly owned subsidiaries, JVs, etc.",
+   "Cost Auditor remuneration ratified at \u20b950,000 plus GST for FY 2026-27",
+   "Revenue mix FY26: Distillery \u20b913,354.47 lakhs, Sugar \u20b99,888.98 lakhs, Co-generation \u20b9709.51 lakhs, Aviation \u20b9104.46 lakhs, Others \u20b952.48 lakhs",
+   "Revenue mix FY25: Distillery \u20b915,039 lakhs, Sugar \u20b95,087 lakhs, Co-generation \u20b9623 lakhs, Aviation \u20b9750 lakhs, Others \u20b9177 lakhs",
+   "Proposed issue of 10,64,11,079 convertible equity warrants on preferential basis to promoter group for conversion/adjustment of outstanding loan of \u20b940.12 crore at \u20b93.77 per warrant",
+   "Relevant date for warrant pricing: August 13, 2026",
+   "Warrants exercisable within 18 months from allotment",
+   "Approval sought for dilution/disposal of shareholding in AUREVANT GLOBAL LTD to less than 100% or \u226450%, or cessation of control",
+   "Approval sought for disposal of >20% of AUREVANT's total assets",
+   "AGM scheduled with remote e-voting from September 9-11, 2026; cut-off date September 5, 2026",
+   "Scrutinizer: Ms. Ashwini Inamdar (FCS No. 9409 / CP No. 11226), Partner, M/s. Mehta & Mehta, Company Secretaries",
+   "E-voting services provided by NSDL",
+   "Authorized Share Capital proposed to be increased from Rs. 200 Crore to Rs. 450 Crore",
+   "Preferential issue of up to 10,64,11,079 Convertible Equity Warrants at Rs. 3.77 per warrant aggregating to Rs. 40.12 Crore to Promoter Group for conversion of outstanding unsecured loans",
+   "Board approval for loans/investments/guarantees/security up to Rs. 1,000 Crore (loans/guarantees/security) and Rs. 1,200 Crore (investments) under Section 186",
+   "Approval sought for overseas investments up to USD 100 Million in wholly owned subsidiaries, subsidiaries, step-down subsidiaries, joint ventures, associate companies and/or other overseas entities",
+   "Cost Auditor appointed: Mr. M. R. Krishna Murthy, Cost Accountants (Reg No. FCMA7658) for FY 2026-27 at fee of Rs. 50,000 plus GST and out of pocket expenses",
+   "Aurevant Global Ltd financials for FY 2025-26: Turnover Rs. 23,877.30 Lakhs, Profit After Tax Rs. 740.60 Lakhs, Net worth Rs. 50,481.35 Lakhs",
+   "55th Annual General Meeting scheduled for 12th September 2026 at 11.00 a.m. at Thogataveera Samudhaya Bhavana, M.C.C. 'a' block, Davangere \u2013 577 004",
+   "Proposed increase in Authorised Share Capital and alteration of Clause V of Memorandum of Association",
+   "Approval for making loans/investments/guarantees/securities in excess of limits under Section 186 of Companies Act, 2013",
+   "Approval for making investments in overseas wholly owned subsidiaries, subsidiaries, step-down subsidiaries, joint ventures and other overseas entities up to USD 100 Million",
+   "Issue of 10,64,11,079 Convertible Equity Warrants on preferential basis to Promoter Group by conversion/adjustment of outstanding loan into equity",
+   "Approval for transactions involving dilution of shareholding and/or disposal/transfer of assets of overseas wholly-owned subsidiary Aurevant Global Limited",
+   "Ratification of remuneration of Mr. M. R. Krishna Murthy, Cost Auditor, for financial year 2027-28",
+   "Valuation report by Akshat Jain, Registered Valuer (IBBI/RV/06/2022/15048) determining minimum price of Rs. 3.77 per share for preferential issue of Convertible Share Warrants",
+   "Relevant Date for valuation: August 14, 2026",
+   "Post-issue fully diluted share capital: 1,53,64,01,877 shares",
+   "Proposed allotment represents 6.93% of post-issue fully diluted share capital",
+   "Equity Shares listed on BSE Limited (Scrip Code: 543267) and National Stock Exchange of India Limited (Symbol: DAVANGERE)",
+   "Authorised share capital as on March 31, 2025: Rs. 200,00,00,000",
+   "Paid-up equity share capital as on March 31, 2025: Rs. 142,99,90,798 (face value Rs. 1 each)",
+   "Traded turnover on NSE during 240 trading days preceding Relevant Date: 344.88 crore Equity Shares (241.2% of equity shares of that class)",
+   "Closing price on last trading day preceding Relevant Date (August 13, 2026): Rs. 2.98",
+   "VWAP for 90 trading days preceding Relevant Date: Rs. 3.7663",
+   "VWAP for 10 trading days preceding Relevant Date: Rs. 3.1037",
+   "Highest/lowest traded price during 52 weeks preceding Relevant Date: Rs. 5.50 / Rs. 2.95",
+   "Rights issue of 48,91,46,178 equity shares at Rs. 3.05 per share (including premium of Rs. 2.05) during FY 2025-26",
+   "Paid-up share capital increased from Rs. 94,08,44,620 to Rs. 1,42,99,90,798",
+   "No dividend recommended for FY 2025-26",
+   "13 Board meetings held during FY 2025-26",
+   "Secretarial Auditor: M/s. CS. Prashanth D. Shedbal, Practicing Company Secretaries",
+   "Cost Auditor: Mr. Krishna Murthy, Cost Accountants (Firm Regn. No. FCMA7658)",
+   "Internal Auditor: M/s. B. Gangadhara & Co. (Mr. B. Gangadhar passed away on 30th November, 2025); Mr. B. N. Rajendrababu appointed w.e.f. 10th February, 2026",
+   "Valuation report by AksHATII, Registered Valuer for minimum price of Rs. 3.77 per warrant/share for preferential issue to promoter",
+   "Unsecured promoter loan of Rs. 40,11,69,768.24 to be appropriated against issue of 10,50,18,263 convertible share warrants",
+   "Paid-up share capital increased from 94,08,44,620 equity shares of Rs.1/- to 1,42,99,90,798 equity shares of Rs.1/- pursuant to allotment of 48,91,46,178 fully paid-up equity shares on rights basis",
+   "Authorized Share Capital increased from 150 Crores to 200 Crores in EGM held on 24th April 2026",
+   "Annual listing fees for 2025-26 paid to BSE and NSE with no outstanding dues",
+   "Vigil Mechanism and Whistle Blower Policy established",
+   "Code of Practices and Procedures for Fair Disclosure of UPSI adopted",
+   "Compliance with Code of Conduct affirmed by all directors, KMP and senior management for FY ending 31st March 2026"
+  ],
+  "subsidiaries": [
+   {
+    "name": "AUREVANT GLOBAL LTD",
+    "holding_pct": 100,
+    "business": "Overseas wholly-owned subsidiary"
+   },
+   {
+    "name": "Aurevant Global Ltd",
+    "holding_pct": 100,
+    "business": "Production of ethanol and sugar products in London, United Kingdom"
+   },
+   {
+    "name": "Aurevant Global Limited",
+    "holding_pct": null,
+    "business": "Overseas subsidiary"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company presently do not have any subsidiary in terms of provisions of Companies Act, 2013 as on 31st March 2026."
+   }
+  ],
+  "related_party": [
+   {
+    "party": "AUREVANT GLOBAL LTD",
+    "nature": "Wholly owned subsidiary; transactions include issuance of guarantees, creation of security by way of pledge over shares of AUREVANT, receivables from inter-company loans, charge/encumbrance on AUREVANT's assets, for securing bridge term loan facility up to USD 100 Million",
+    "amount_cr": 830
+   },
+   {
+    "party": "Aurevant Global Ltd",
+    "nature": "Subscription to Equity Shares of Aurevant to the extent of US 79.995 Millions; issuance of corporate guarantee(s); creation of security by way of pledge over shares held by the Company in Aurevant; pledge/assignment of receivables arising from inter-corporate loans; creation of charge, mortgage or other encumbrance by Aurevant over its assets; disposal of pledged shares or secured assets upon enforcement; payment of guarantee commission by Aurevant to the Company; execution of related agreements, deeds, security documents and other ancillary documents for Bridge Financing Facility up to USD 100 Million",
+    "amount_cr": null
+   },
+   {
+    "party": "Promoter / Promoter Group",
+    "nature": "Subscription to Convertible Share Warrants on preferential basis by conversion/adjustment of outstanding unsecured loan",
+    "amount_cr": 40.12
+   },
+   {
+    "party": "Aurevant Global Limited",
+    "nature": "Material Related Party Transaction(s) in connection with proposed bridge financing facility",
+    "amount_cr": null
+   },
+   {
+    "party": "Advaith Educational Trust (R)",
+    "nature": "CSR contribution for promotion of education (purchase of computers)",
+    "amount_cr": 0.2075
+   },
+   {
+    "party": "Promoters, directors, management, their subsidiaries or relatives",
+    "nature": "No transactions of material nature that may have potential conflict with the interests of Company at large. All related party transactions have been entered into in the Ordinary course of business and were placed periodically before the Audit Committee and the Board. All transactions with the related parties or others were on arm's length basis. The Company does not have any material related party transactions on FY 2025-26.",
+    "amount_cr": null
+   }
+  ],
+  "dividend_per_share": 0,
+  "litigation": [
+   "No application pending against the Company under Insolvency and Bankruptcy Code, 2016 as on the date of the Report",
+   "Company did not file any application under IBC during F.Y. 2025-26",
+   "Proceedings relating to the levy sugar price matter before the Hon'ble Supreme Court have concluded, and the judgment is awaited.",
+   "ISMA's challenge before the Hon'ble High Court of Delhi regarding REC sales by captive generating plants remains pending.",
+   "APTEL order setting aside TNERC Order on Parallel Operation Charges challenged before the Hon'ble Supreme Court by TNPDCL.",
+   "Review Petition (RP No. 10 of 2025) filed by SISMA-TN seeking review of Tariff Order No. 9 of 2025 remains pending before TNERC.",
+   "Writ Petition filed by SISMA-TN challenging TNERC order dated 23 December 2025 on revised tariff applicability."
+  ]
+ }
+}

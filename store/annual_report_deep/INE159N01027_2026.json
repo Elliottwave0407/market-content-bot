@@ -1,0 +1,592 @@
+{
+ "isin": "INE159N01027",
+ "name": "Viji Finance Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29932_VIJIFIN_2025_2026_A_1914381_21072026164144.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 423551,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Viji Finance Limited is a listed company holding its 32nd Annual General Meeting for FY 2025-26. The company is registered in Indore, Madhya Pradesh.",
+   "value_chain_position": "other",
+   "competitors_named": [
+    "Commercial Banks",
+    "Small Finance Banks",
+    "Fintech Companies",
+    "Housing Finance Companies",
+    "Other NBFCs"
+   ],
+   "end_markets": [
+    "Retail financing",
+    "MSME financing",
+    "Vehicle financing",
+    "Affordable housing finance",
+    "Rural and semi-urban credit penetration",
+    "Financial inclusion initiatives",
+    "Retail lending",
+    "Corporate lending",
+    "Agriculture",
+    "Industry",
+    "Services",
+    "Commercial Real Estate",
+    "Business Loans"
+   ],
+   "products": [
+    {
+     "name": "Loans and advances",
+     "share_of_revenue_pct": null,
+     "note": "Principal business is giving loans; interest income recognized on actual basis for financial instruments measured at amortized cost"
+    },
+    {
+     "name": "Term Loans",
+     "share_of_revenue_pct": null,
+     "note": "Gross loans of Rs 2,943.16 lakhs as at March 31, 2026; includes retail (Rs 1,269.33 lakhs) and corporate (Rs 1,673.83 lakhs) segments."
+    },
+    {
+     "name": "Gold/Property Secured Loans",
+     "share_of_revenue_pct": null,
+     "note": "Secured by tangible assets: Rs 43.13 lakhs as at March 31, 2026."
+    },
+    {
+     "name": "Unsecured Loans",
+     "share_of_revenue_pct": null,
+     "note": "Unsecured loans: Rs 2,900.03 lakhs as at March 31, 2026."
+    },
+    {
+     "name": "Business Loan",
+     "share_of_revenue_pct": null,
+     "note": "Gross exposure Rs 1,263.61 lakh with NPAs of Rs 271.72 lakh (21.50% of gross NPAs in sector) as of March 31, 2026"
+    },
+    {
+     "name": "Commercial Real Estate Loan",
+     "share_of_revenue_pct": null,
+     "note": "Direct exposure Rs 381.99 lakh as of March 31, 2026"
+    },
+    {
+     "name": "Agriculture and Allied Activities Loan",
+     "share_of_revenue_pct": null,
+     "note": "Exposure Rs 27.25 lakh as of March 31, 2026"
+    },
+    {
+     "name": "Industry Loan (Medium)",
+     "share_of_revenue_pct": null,
+     "note": "Exposure Rs 604.38 lakh as of March 31, 2026"
+    },
+    {
+     "name": "Services Loan",
+     "share_of_revenue_pct": null,
+     "note": "Exposure Rs 1,047.92 lakh as of March 31, 2026"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "brands_or_certifications": [
+    "RBI Certificate of Registration No. 03-00080 dated 29th October 1998"
+   ],
+   "customers": [
+    "Retail borrowers",
+    "Corporate borrowers"
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Mr. Vijay Kothari",
+    "nature": "Chairman & Managing Director, related party under Regulation 2(1)(zb) of SEBI Listing Regulations and Section 2(76) of Companies Act, 2013",
+    "amount_cr": 100
+   },
+   {
+    "party": "Mr. Vijay Kothari",
+    "nature": "Acceptance of unsecured loan by the Company",
+    "amount_cr": 100.0
+   },
+   {
+    "party": "Mr. Vijay Kothari",
+    "nature": "Unsecured Loan from Director",
+    "amount_cr": 5.1272
+   },
+   {
+    "party": "Mr. Vijay Kothari (DIN: 00172878)",
+    "nature": "Chairman & Managing Director of Company",
+    "amount_cr": 4.3055
+   },
+   {
+    "party": "Mr. Vijay Kothari (Chairman and Managing Director)",
+    "nature": "Material related party transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions in compliance with sections 177 and 188 of Companies Act, 2013; details disclosed in financial statements as per applicable accounting standards",
+    "amount_cr": null
+   },
+   {
+    "party": "Vijay Kothari (Director)",
+    "nature": "Unsecured loan from director, interest-free, for company growth; director consented and undertook funds are from own sources.",
+    "amount_cr": 5.1273
+   },
+   {
+    "party": "IFL Promoters Limited",
+    "nature": "Borrowing from financial institution, 18% interest, quarterly repayment, 12-month tenure.",
+    "amount_cr": 0.2465
+   },
+   {
+    "party": "Vijay Kothari",
+    "nature": "KMP (Chairman & Managing Director)",
+    "amount_cr": 5.1272
+   },
+   {
+    "party": "Stuti Sinha",
+    "nature": "KMP (Company Secretary)",
+    "amount_cr": 0.108
+   },
+   {
+    "party": "Siddhant Sharma",
+    "nature": "KMP (Chief Financial Officer)",
+    "amount_cr": 0.108
+   },
+   {
+    "party": "Nitesh Gupta",
+    "nature": "KMP (Whole Time Director) - resigned effective 08th December 2025",
+    "amount_cr": 0.1
+   }
+  ],
+  "auditor": {
+   "name": "Dharmendra K Agrawal & Co.",
+   "opinion": "The Auditors in their report have referred to the notes forming part of the Accounts which are self-explanatory and does not contain any qualification, reservation or adverse remark or disclaimer.",
+   "qualifications_or_emphasis": [
+    "The Company has not complied with the provisions of Regulation 31(1)(b) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as it delayed submission of the Shareholding Pattern to the Stock Exchanges for the quarter ended June 30, 2025 by 148 days and for the quarter ended September 30, 2025 by 54 days.",
+    "The Company has not complied with the provisions of Regulation 76 of the SEBI (Depositories and Participants) Regulations, 2018, as it failed to submit the Reconciliation of Share Capital Audit Report within the prescribed timelines for the quarters ended June 30, 2025 and September 30, 2025.",
+    "The Company has not complied with the requirement of uploading Know Your Customer (KYC) data to the Credit Information Companies (CICs) portal as mandated under the Master Direction \u2013 Know Your Customer (KYC) Direction, 2016.",
+    "The Company has not complied with the provisions of Section 124 of the Companies Act, 2013 read with the Investor Education and Protection Fund Authority (Accounting, Audit, Transfer and Refund) Rules, 2016, with respect to the timely transfer of eligible shares to the Investor Education and Protection Fund (IEPF) Authority. The Company has transferred a substantial portion of the eligible shares after the prescribed timeline. However, 13434 equity shares pending for transfer to the IEPF Authority.",
+    "The provision for standard asset made by the company is lower than the provision required under the applicable RBI prudential norms by 0.036%.",
+    "It is observed that during the year, the loan accounts of three Borrowers amount involved of Rs. 145.47 Lac was repaid by one of the director Mr. Vijay Kothari who is also guarantor in the respective borrowers account. The repayment has not been made by the borrower itself. The source of funds of the guarantor has not been independently verified. This may indicate stress in the borrower's financial position and potential risk of ever greening.",
+    "Deficiency in provision for standard assets: additional provision of Rs 0.98 lakh required against profit (Annexure 1)",
+    "Title deeds of immovable properties not held in company's name",
+    "Disputed income tax dues totaling Rs 59.13 lakh pending at various forums",
+    "The deferred tax has not been calculated in accordance with the requirements of Ind AS 12."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Prakash Muksiya appointed as Independent Director w.e.f. 24th June, 2026",
+    "Mr. Aryaman Kothari appointed as Additional cum Whole Time Director w.e.f. 14th July, 2026",
+    "Ms. Sakshi Chourasiya re-appointment as Independent Director for second term w.e.f. 25th October, 2026",
+    "Mr. Ashish Verma retires by rotation and offers himself for re-appointment",
+    "Mr. Aryaman Kothari (DIN: 09324877) appointed as Additional Director and Whole-time Director w.e.f. 14th July, 2026 for 3 years, subject to member approval.",
+    "Mr. Prakash Muksiya (DIN: 11786103) appointed as Additional Director and Independent Director w.e.f. 24th June, 2026 for 5 years, subject to member approval.",
+    "Ms. Sakshi Chourasiya (DIN: 09370037) proposed for re-appointment as Non-Executive Independent Director for second term of 5 years w.e.f. 25th October 2026 to 24th October 2031.",
+    "Mr. Ashish Verma (DIN: 07665222) proposed for re-appointment as Professional Non-Executive Director.",
+    "Mr. Aryaman Kothari (DIN: 09324877) proposed for appointment as Whole-time Director subject to approval of members.",
+    "Mr. Prakash Muksiya (DIN: 11786103) proposed for appointment as Non-Executive Independent Director subject to approval of members.",
+    "Mr. Nikhilkumar Ramaniklal Sanghvi (DIN: 11220684) appointed as Additional Director (Non-Executive Non-Independent) w.e.f. 08th September, 2025; ceased w.e.f. 08th December, 2025 due to non-receipt of shareholders' approval.",
+    "CA Anchit Garg (DIN: 10759438) appointed as Additional Director (Independent Non-Executive) w.e.f. 08th September, 2025; ceased w.e.f. 08th December, 2025 due to non-receipt of shareholders' approval.",
+    "Mr. Ashish Verma (DIN: 07665222) appointed as Additional Director (Professional Non-Executive Non-Independent) w.e.f. 08th December, 2025; regularized at 31st AGM held on 31st December, 2025.",
+    "Mr. Rajendra Sahay Shrivastava (DIN: 00021576) resigned as Independent Director w.e.f. closure of business hours on 08th September, 2025.",
+    "Mr. Aryaman Kothari (DIN: 09324877) resigned as Non-Executive Non-Independent Director w.e.f. closure of business hours on 03rd November, 2025.",
+    "Mr. Nitesh Gupta (DIN: 09248507) resigned as Whole-Time Director & KMP w.e.f. closure of business hours on 08th December, 2025.",
+    "Mrs. Sejal Riddhesh Shah (DIN: 11269204) appointed as Additional Director (Non-Executive Non-Independent) w.e.f. 24th June, 2026; resigned w.e.f. close of business hours of 14th July, 2026.",
+    "Mr. Prakash Muksiya (DIN: 11786103) appointed as Additional Director (Non-Executive Independent) w.e.f. 24th June, 2026.",
+    "Mr. Aryaman Kothari (DIN: 09324877) appointed as Additional Director (Promoter Non-Executive Director) w.e.f. 14th July, 2026.",
+    "Mr. Nitesh Gupta (DIN: 09248507) resigned as Whole-time Director of the Company with effect from the close of business hours on 08 December 2025.",
+    "Mr. Nikhilkumar Ramaniklal Sanghvi (DIN: 11220684) and CA Anchit Garg (DIN: 10759438) were appointed as Additional Directors in the categories of Non-Executive Non-Independent Director and Non-Executive Independent Director, respectively, with effect from 08th September, 2025. However, their offices ceased with effect from 08th December, 2025 due to non-receipt of shareholders' approval within the stipulated timeline prescribed under Regulation 17(1C) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+    "Mr. Rajendra Sahay Shrivastava (DIN: 00021576) resigned from the post of Non-Executive Independent Director of the Company w.e.f. the closure of business hours of 08th September, 2025.",
+    "Mr. Aryaman Kothari (DIN: 09324877) resigned from the position of Non-Executive Non-Independent Director of the Company with effect from the closure of business hours on 03rd November, 2025.",
+    "Mr. Nitesh Gupta (DIN: 09248507) resigned from the position of Whole-Time Director & Key Managerial Personnel of the company, with effect from the closure of business hours on 08th December, 2025.",
+    "Mr. Ashish Verma (DIN: 07665222) was appointed as an Additional Director in the category of Professional Non-Executive Non-Independent Director of the Company w.e.f. 08th December, 2025. Subsequently, he was regularized as Non-Executive Non-Independent Director pursuant to an Ordinary Resolution passed by the shareholders of the Company in their 31st Annual General Meeting held on 31st December, 2025.",
+    "CA Anchit Garg (DIN: 10759438) was appointed as Additional Director in the category of Non-Executive Independent Director with effect from 08th September, 2025. However, his office ceased with effect from 08th December, 2025 due to non-receipt of shareholder's approval within the stipulated timeline prescribed under Regulation 17(1C) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+    "Mr. Aryaman Kothari (DIN: 09324877), Non-Executive Director of the Company resigned from the Board w.e.f. 03rd November, 2025.",
+    "Mr. Nitesh Gupta (DIN: 09248507) resigned from the position of Whole-Time Director w.e.f. 08th December, 2025.",
+    "Mr. Ashish Verma (DIN: 07665222) was appointed as an Additional Director in the category of Professional Non-Executive Non-Independent Director of the Company with effect from 08th December, 2025.",
+    "Mr. Ashish Verma (DIN: 07665222) appointed as Professional Non-Executive Non-Independent Director on 08.12.2025.",
+    "Nitesh Gupta (DIN: 09248507) resigned as Whole-Time Director & Key Managerial Personnel effective closure of business hours on 08th December 2025"
+   ],
+   "promoter_holding_pct": 19.8,
+   "top_shareholders": [
+    {
+     "name": "Mr. Vijay Kothari",
+     "pct": 19.8
+    },
+    {
+     "name": "Aryaman Kothari",
+     "pct": 2.08
+    },
+    {
+     "name": "Vijay Kothari",
+     "pct": 26.61
+    },
+    {
+     "name": "Shilpa Kothari",
+     "pct": 18.29
+    },
+    {
+     "name": "Aryaman Kothari",
+     "pct": 2.78
+    }
+   ],
+   "auditor_change": "Dharmendra K Agarwal & Co., Chartered Accountants (FRN: 025525C), were appointed as Statutory Auditors in the 30th AGM held on 30th September, 2024 for a term of five consecutive years up to the conclusion of the 35th AGM to be held in calendar year 2029."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Vijay Kothari",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Ashish Verma",
+     "role": "Professional Non-Executive Director"
+    },
+    {
+     "name": "Sakshi Chourasiya",
+     "role": "Woman Independent Director"
+    },
+    {
+     "name": "Palak Malviya",
+     "role": "Woman Independent Director"
+    },
+    {
+     "name": "Prakash Muksiya",
+     "role": "Independent Director (w.e.f. 24th June, 2026)"
+    },
+    {
+     "name": "Aryaman Kothari",
+     "role": "Additional cum Whole Time Director (w.e.f. 14th July, 2026)"
+    },
+    {
+     "name": "Siddhant Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Stuti Sinha",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Vijay Kothari",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mrs. Shilpa Kothari",
+     "role": "Promoter"
+    },
+    {
+     "name": "Mr. Aryaman Kothari",
+     "role": "Additional Director & Whole-time Director (proposed)"
+    },
+    {
+     "name": "Mr. Prakash Muksiya",
+     "role": "Additional Director & Independent Director (proposed)"
+    },
+    {
+     "name": "Ms. Stuti Sinha",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Aryaman Kothari",
+     "role": "Whole Time Director (w.e.f. 14/07/2026)"
+    },
+    {
+     "name": "Mr. Siddhant Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Stuti Sinha",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Ashish Verma",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Siddhant Sharma",
+     "role": "Chief Finance Officer"
+    },
+    {
+     "name": "Mr. Vijay Kothari",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Ms. Sakshi Chourasiya",
+     "role": "Non-Executive Woman Independent Director"
+    },
+    {
+     "name": "Ms. Palak Malviya",
+     "role": "Non-Executive Woman Independent Director"
+    },
+    {
+     "name": "Mr. Ashish Verma",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Ms. Stuti Sinha",
+     "role": "Company Secretary & Compliance officer"
+    },
+    {
+     "name": "Mr. Nitesh Gupta",
+     "role": "Whole Time Director (resigned w.e.f. 08th December, 2025)"
+    },
+    {
+     "name": "Ms. Stuti Sinha",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Ashish Verma",
+     "role": "Non-Executive Non-Independent Director (appointed w.e.f. 08th December, 2025)"
+    },
+    {
+     "name": "Vijay Kothari",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Mr. Ashish Verma",
+     "role": "Professional Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Vijay Kothari",
+     "role": "Chairman & Managing Director (DIN: 00172878)"
+    },
+    {
+     "name": "Ashish Verma",
+     "role": "Director (DIN: 07665222)"
+    },
+    {
+     "name": "Stuti Sinha",
+     "role": "Company Secretary (Membership No. A42371)"
+    },
+    {
+     "name": "Ashish Verma",
+     "role": "Director"
+    },
+    {
+     "name": "Nitesh Gupta",
+     "role": "Whole Time Director (resigned effective 08th December 2025)"
+    }
+   ],
+   "employees": 3
+  },
+  "other_notable": [
+   "32nd AGM scheduled for 13th August, 2026 at 11:30 A.M. IST through VC/OAVM",
+   "Authorized Share Capital proposed to increase from Rs. 30 Crores to Rs. 75 Crores",
+   "Material Related Party Transaction approval sought with Mr. Vijay Kothari up to Rs. 100 Crores for FY 2026-27",
+   "Shares listed on BSE (537820), NSE (VIJIFIN), CSE (032181)",
+   "Registrar & Share Transfer Agent: Ankit Consultancy Private Limited",
+   "Bankers: ICICI Bank Limited, Yes Bank Limited",
+   "Internal Auditor: CA Shubham Chopra",
+   "Secretarial Auditor: R C Bagdi & Associates",
+   "No unpaid/unclaimed dividend remaining for transfer to IEPF as on notice date",
+   "Authorised Share Capital proposed to be increased from Rs. 30,00,00,000 (30 Crore equity shares of Re. 1 each) to Rs. 75,00,00,000 (75 Crore equity shares of Re. 1 each) by creation of additional 45,00,00,000 equity shares.",
+   "AGM scheduled for 13th August, 2026 via VC/OAVM; cut-off date for voting: 6th August, 2026; remote e-voting period: 10th August, 2026 (9:00 AM) to 12th August, 2026 (5:00 PM).",
+   "Scrutinizer for e-voting: Mr. L.N. Joshi, Practicing Company Secretary (FCS-5201, CP No. 4216).",
+   "Registrar and Share Transfer Agent: Ankit Consultancy Private Limited, 60 Pardeshipura, Electronic Complex, Indore (M.P.) 452010; Email: investor@ankitonline.com.",
+   "Investor grievance email: info@vijifinance.com.",
+   "E-voting facilitated through CDSL (www.evotingindia.com).",
+   "Financial Performance (Rs. lakhs): FY2025-26 Revenue 508.17, PBT 264.11, PAT 197.46; FY2024-25 Revenue 232.51, PBT 21.66, PAT 16.87; FY2023-24 Revenue 192.50, PBT 20.05, PAT 12.02.",
+   "Proposed remuneration for Mr. Aryaman Kothari: Rs. 2,50,000 per month plus perquisites.",
+   "Company has no foreign investments or collaborations.",
+   "Members can inspect Memorandum & Articles of Association at registered office on working days during business hours.",
+   "Recorded transcript of AGM to be made available on www.vijifinance.com.",
+   "Company classified as NBFC \u2013 Base Layer (NBFC-BL) under RBI Scale Based Regulation framework.",
+   "Paid-up Equity Share Capital as on March 31, 2026: Rs. 14.25 Crores (14,25,00,000 shares of Re. 1/- each).",
+   "Authorized Share Capital increased from Rs. 18 Crores to Rs. 30 Crores approved at 31st AGM on December 31, 2025.",
+   "Preferential issue of up to 12,75,00,000 convertible warrants at Rs. 2.80 per warrant (aggregating Rs. 35.70 Crores) approved; 8,85,00,000 warrants allotted on June 16, 2026 (Rs. 24.78 Crores); 25% upfront (Rs. 6.19 Crores) received.",
+   "3,04,00,000 warrants converted to equity shares on June 29, 2026 at Rs. 2.80 per share (balance 75% Rs. 2.10 per warrant, aggregating Rs. 6.384 Crores); paid-up capital increased to Rs. 17.29 Crores (17,29,00,000 shares).",
+   "5,81,00,000 warrants remain outstanding as on report date.",
+   "Rights Issue proceeds of Rs. 900 Lakhs (FY 2024-25) fully utilized; Preferential issue proceeds of Rs. 1,467.90 Lakhs (post FY 2025-26) partially utilized, balance to be deployed.",
+   "Provision for NPAs (Sub-standard Assets) as on March 31, 2026: Rs. 67.93 Lakhs.",
+   "Board met 9 times during FY 2025-26.",
+   "No suspicious transactions reported under KYC/AML during FY 2025-26.",
+   "Compliance with Fair Practices Code confirmed.",
+   "31st Annual General Meeting for FY 2024-25 held on 31st December, 2025; no Extra Ordinary General Meeting held during FY 2025-26.",
+   "Unpaid/unclaimed dividend of Rs. 0.33 lakh relating to FY 2017-18 transferred to IEPF during FY 2025-26.",
+   "2,66,963 equity shares pertaining to 108 folios transferred to IEPF Authority demat account after close of FY 2025-26 (dividend unpaid for 7+ years relating to FY 2017-18).",
+   "13,434 shares belonging to six shareholders could not be transferred to IEPF due to regulatory freeze on accounts.",
+   "20% of profit (Rs. 39.49 lakh) transferred to statutory reserve as per NBFC requirement.",
+   "Company has not accepted any deposits within meaning of Section 73 of Companies Act, 2013.",
+   "Investments made in ordinary course of business: 9,94,041 equity shares of Narmada Macplast Drip Irrigation Sys Ltd (closing carrying value Rs. 189.78 lakh as at 31 March 2026); equity shares of Soni Soya Products Limited (closing carrying value Rs. 5.02 lakh as at 31 March 2026; trading suspended, valued at previous year value).",
+   "Secretarial Auditor: Ramesh Chandra Bagdi & Associates, Practicing Company Secretaries, Indore (CP No. 2871) appointed for 5 years from FY 2025-26 to 2029-30.",
+   "Secretarial Audit Report qualifications: Delay in submission of Shareholding Pattern (Reg 31(1)(b)) by 148 days (Q1) and 54 days (Q2); Delay in submission of Reconciliation of Share Capital Audit Report (Reg 76) for Q1 and Q2; Non-compliance with KYC data upload to CICs portal; Delay in transfer of eligible shares to IEPF Authority (13,434 shares pending).",
+   "Internal Auditor: Mr. Shubham Chopra, Chartered Accountant.",
+   "Cost Audit not applicable.",
+   "CSR provisions not applicable as Company did not meet criteria under Section 135(1).",
+   "No employee drawing remuneration > Rs. 1.02 crore per annum or Rs. 8.5 lakh per month.",
+   "Vigil Mechanism/Whistle Blower Policy established; no person denied access to Audit Committee.",
+   "Independent Directors met once on 24th March 2026.",
+   "Board Committees: Audit Committee, Nomination and Remuneration Committee, Stakeholders Relationship Committee, Finance Committee, Preferential Allotment Committee.",
+   "Annual Secretarial Compliance Report submitted to stock exchanges within prescribed time.",
+   "Code of Conduct for Board members and senior management posted on website; all affirmed compliance.",
+   "The Company has complied with the provisions of Maternity Benefit Act, 1961 during the year under review.",
+   "Company's shares are listed on National Stock Exchange of India Limited (Symbol: VIJIFIN), BSE Limited (Scrip Code: 537820) and The Calcutta Stock Exchange Limited (Scrip Code: 032181).",
+   "The Company's assets are adequately insured against the loss of fire and other risk, as consider necessary by the Management from time to time.",
+   "The Company has appointed Ms. Stuti Sinha (ACS: 42371), Company Secretary of the Company, as Designated Person for the purpose of declaration of beneficial interest in the shares of the Company.",
+   "The Board of Directors, at its meeting held on March 24, 2026, approved (subject to shareholder approval at the EGM scheduled on April 23, 2026) the issuance and allotment of up to 12,75,00,000 warrants convertible into equivalent equity shares of face value Re.1/- each, at a price of Rs. 2.80/- per warrant, aggregating up to Rs. 35,70,00,000/-.",
+   "On application of the Company, The Registrar of Companies, Madhya Pradesh (Gwalior), vide its approval letter dated September 17, 2025, granted the Company an extension of three (3) months under Section 96 of the Companies Act, 2013 for holding the AGM.",
+   "During the financial year 2025-26, the Company had less than ten employees and, accordingly, the constitution of an Internal Committee under the provisions of the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 was not applicable.",
+   "The median remuneration of employees decreased by 8.71% during the financial year 2025\u201326.",
+   "The average increase in the salaries of employees other than managerial personnel during the financial year was 1.57%. There was no increase in the remuneration of managerial personnel during the financial year.",
+   "Return on Net Worth increased by 71% as compared to previous Financial Year due to increased turnover.",
+   "As of March 31, 2026, the Board of Directors comprises four (4) members: One (1) Executive Director, One (1) Non-Executive Non-Independent Director, Two (2) Non-Executive Independent Directors."
+  ],
+  "outlook": [
+   {
+    "statement": "The Company expects improvement in operational performance and profitability in the coming years.",
+    "period": "coming years"
+   },
+   {
+    "statement": "The Company remains optimistic about its future growth prospects, supported by its established presence in the financial services sector, prudent lending practices, and customer-centric approach. Going forward, the Company intends to focus on the following strategic priorities: Expansion of Geographic Presence: Strengthening its presence in existing markets while exploring opportunities in new geographical regions. Digital Transformation: Leveraging technology to enhance customer experience, streamline business processes, and improve operational efficiency. Product Diversification: Introducing innovative financial products and services to address the evolving requirements of customers and strengthen the Company's competitive position.",
+    "period": "future"
+   },
+   {
+    "statement": "With a view to supporting the Company's future growth and business expansion, and considering the prevailing uncertain economic environment, your Directors consider it prudent to conserve the Company's resources.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "India's medium- to long-term economic outlook remains positive, supported by favorable demographics, increasing urbanization, infrastructure development, digital adoption, and rising financial inclusion. The NBFC sector is expected to continue playing a vital role in meeting the financing needs of retail customers, MSMEs and underserved segments. The Company's strategic priorities include: Expanding its lending portfolio prudently; Maintaining high asset quality; Strengthening risk management practices; Enhancing digital capabilities; Improving operational efficiency; Diversifying funding sources; Maintaining adequate liquidity and capital buffers; Delivering sustainable value to all stakeholders.",
+    "period": "medium- to long-term"
+   }
+  ],
+  "risks": [
+   "economic slowdown",
+   "uncertainty of market",
+   "tough competition",
+   "strict compliances by regulatory authorities",
+   "Credit Risk: The Company's financial performance depends significantly on the quality of its loan portfolio. Economic slowdown, inflationary pressures, borrower-specific challenges or sectoral stress may adversely impact repayment capacity and asset quality.",
+   "Interest Rate Risk: Fluctuations in interest rates can affect borrowing costs, net interest margins, and profitability.",
+   "Liquidity Risk: Maintaining adequate liquidity remains critical, particularly during periods of market uncertainty or economic stress.",
+   "Competitive Risk: The Company faces competition from Commercial Banks, Small Finance Banks, Fintech Companies, Housing Finance Companies, Other NBFCs. Intense competition may exert pressure on lending yields, customer acquisition costs and market share.",
+   "Regulatory Risk: The NBFC sector operates under an evolving regulatory framework. Changes in RBI guidelines relating to capital adequacy, provisioning norms, governance standards, customer protection or liquidity requirements may influence business operations and compliance obligations.",
+   "Cyber Security and technology Risk: Increasing dependence on digital platforms exposes financial institutions to cyber threats, data breaches, operational disruptions and technology-related risks.",
+   "Macroeconomic and Geopolitical Risks: Global economic uncertainties, geopolitical developments, inflationary pressures, commodity price volatility and financial market disruptions may indirectly impact borrower behaviour, funding costs and overall credit demand.",
+   "Provision for standard asset made by the company is lower than the provision required under the applicable RBI prudential norms by 0.036%.",
+   "During the year, the loan accounts of three Borrowers amount involved of Rs. 145.47 Lac was repaid by one of the director Mr. Vijay Kothari who is also guarantor in the respective borrowers account. The repayment has not been made by the borrower itself. The source of funds of the guarantor has not been independently verified. This may indicate stress in the borrower's financial position and potential risk of ever greening.",
+   "Deficiency in provision for standard assets reported in Annexure 1 (additional provision of Rs 0.98 lakh required against profit)",
+   "Disputed income tax demands totaling Rs 59.13 lakh across multiple assessment years",
+   "Credit risk managed through limits on individual counterparties and industry concentrations, and monitoring exposures.",
+   "Credit risk: risk of loss due to customers or counterparties failing to discharge contractual obligations",
+   "Liquidity risk: risk of difficulty in meeting obligations associated with financial liabilities",
+   "Market risk: risk of fair value or future cash flow fluctuations due to changes in market variables such as interest rates and foreign exchange rates",
+   "Currency risk: not significantly exposed as all transactions are denominated in Indian rupees",
+   "Interest rate risk: not significantly exposed as loans and borrowings are primarily at fixed interest rates"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Viji Housing Finance Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "None",
+    "business": "The Company does not have any subsidiary company or associate company or any joint venture or Holding company."
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Mr. Vijay Kothari (Chairman & Managing Director)",
+    "amount_cr": 100.0,
+    "note": "Unsecured, interest-free loans accepted from time to time; aggregate limit not exceeding Rs. 100.00 Crores during FY 2026-27 and up to the date of the 33rd AGM. Previous FY 2025-26 aggregate transactions: Rs. 866.94 Lakhs (availed Rs. 430.55 Lakhs, repaid Rs. 436.39 Lakhs). Current FY 2026-27 up to Q1: Rs. 2387.06 Lakhs (availed Rs. 1349.69 Lakhs, repaid Rs. 1037.37 Lakhs)."
+   },
+   {
+    "lender_or_type": "Mr. Vijay Kothari (Director)",
+    "amount_cr": 5.1272,
+    "note": "Unsecured loan received from director; Amount received during year: Rs. 430.55 lakh; Outstanding amount: Rs. 512.72 lakh"
+   },
+   {
+    "lender_or_type": "Mr. Vijay Kothari (Chairman & Managing Director)",
+    "amount_cr": 4.3055,
+    "note": "Interest free Unsecured Loan taken & repaid during FY 2025-26. Loan taken: INR 430.55 Lakhs; Loan repaid: INR 436.39 Lakhs."
+   },
+   {
+    "lender_or_type": "Borrowings (Other than Debt Securities)",
+    "amount_cr": 7.2489,
+    "note": "As at 31 March 2026; reduced from Rs 12.5972 crore in prior year"
+   },
+   {
+    "lender_or_type": "Axis Bank Limited - Auto Loan (Toyota Fortuner)",
+    "amount_cr": 0.4447,
+    "note": "39 months tenure, 14.70% interest, monthly repayment, secured by vehicle hypothecation."
+   },
+   {
+    "lender_or_type": "Axis Bank Limited - Auto Loan (Mercedes Benz)",
+    "amount_cr": 1.4304,
+    "note": "45 months tenure, 14.60% interest, monthly repayment, secured by vehicle hypothecation."
+   },
+   {
+    "lender_or_type": "IFL Promoters Limited",
+    "amount_cr": 0.2465,
+    "note": "12 months tenure, 18% interest, quarterly repayment."
+   },
+   {
+    "lender_or_type": "Vijay Kothari (Director) - Unsecured",
+    "amount_cr": 5.1273,
+    "note": "12 months tenure, interest-free, quarterly repayment; director consented for company growth, funds from own sources."
+   },
+   {
+    "lender_or_type": "Bank Overdraft",
+    "amount_cr": 0,
+    "note": "Outstanding as at March 31, 2025: Rs 498.81 lakhs; nil as at March 31, 2026."
+   },
+   {
+    "lender_or_type": "Total Borrowings",
+    "amount_cr": 7.2489,
+    "note": "As at March 31, 2026; includes unsecured loan from Vijay Kothari of Rs 5.1272 crore"
+   },
+   {
+    "lender_or_type": "Vijay Kothari (KMP)",
+    "amount_cr": 5.1272,
+    "note": "Unsecured loan outstanding as at March 31, 2026"
+   }
+  ],
+  "dividend_per_share": 0,
+  "litigation": [
+   "BSE Limited and National Stock Exchange of India Limited issued advisory/show cause notices to the Company for failure to submit Reconciliation of Share Capital Audit Report within prescribed timelines for quarters ended June 30, 2025 and September 30, 2025.",
+   "13434 shares belonging to six shareholders could not be transferred to IEPF authority as the respective shareholder accounts/shares were frozen pursuant to regulatory actions.",
+   "No Significant or material orders passed by the Regulators or Courts or Tribunals which impact the going concern status and the Company's operation in future.",
+   "No application was made or any proceeding is pending under the Insolvency and Bankruptcy Code, 2016 during the year in respect of your Company.",
+   "The Company does not have any pending litigations which would impact its financial position.",
+   "Income tax disputes: 8 cases totaling Rs 59.13 lakh (Amount Involved = Amount Unpaid) pending at Assistant Director, Deputy Commissioner, Commissioner (Appeals), and Centralized Processing Center levels for FY 2013-14 through FY 2024-25",
+   "No proceedings initiated or pending for holding benami property under Benami Transactions (Prohibition) Act 1988",
+   "Company not declared wilful defaulter by any bank or financial institution",
+   "No transactions with companies struck off under Companies Act",
+   "No Scheme of Arrangements applied for under sections 230-237 of Companies Act 2013",
+   "No funds advanced/loaned/invested with understanding of intermediary lending to ultimate beneficiaries",
+   "No funds received with understanding of company lending to ultimate beneficiaries on behalf of funding parties",
+   "No trading or investment in cryptocurrency or virtual currency",
+   "No undisclosed income in books of accounts"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Preferential Allotment Committee of the Board of Directors, at its meeting held on June 16, 2026, allotted 8,85,00,000 (Eight Crore Eighty-Five Lakh) Convertible Warrants on a preferential basis to certain Non-Promoter Investors at an issue price of Rs. 2.80 per warrant, aggregating to Rs. 24.78 Crores.",
+    "value_cr": 24.78
+   },
+   {
+    "statement": "Preferential Allotment Committee of the Board of Directors, at its meeting held on June 29, 2026, approved the allotment of 3,04,00,000 (Three Crore Four Lakh) Equity Shares of face value of Re. 1 each pursuant to the conversion of an equivalent number of Convertible Warrants.",
+    "value_cr": null
+   },
+   {
+    "statement": "Preferential Allotment Committee, at its meeting held on July 10, 2026, approved the allotment of 1,86,00,000 (One Crore Eighty-Six Lakhs) equity shares to 3 (Three) warrant holders upon their exercise of conversion rights in respect of 1,86,00,000 (One Crore Eighty-Six Lakhs) warrants. The said warrant holders remitted the balance 75% of the issue price, aggregating to Rs. 3,90,60,000/- (Rupees Three Crore Ninety Lakhs Sixty Thousand only).",
+    "value_cr": 3.906
+   },
+   {
+    "statement": "The Board of Directors at its meeting held on 24th March, 2026 approved the issuance of up to 12,75,00,000 convertible warrants on a preferential basis to identified Non-Promoter/Public Investors at an issue price of Rs.2.80 per warrant, aggregating up to Rs. 35.70 crore, subject to shareholders' approval, stock exchange in-principle approvals, and other applicable statutory/regulatory approvals.",
+    "value_cr": 35.7
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income tax disputes",
+    "amount_cr": 0.5913
+   },
+   {
+    "nature": "Contingent Liabilities",
+    "amount_cr": 0
+   }
+  ]
+ }
+}

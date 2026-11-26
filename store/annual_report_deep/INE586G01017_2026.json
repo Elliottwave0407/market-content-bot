@@ -1,0 +1,1300 @@
+{
+ "isin": "INE586G01017",
+ "name": "GP Petroleums Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30150_GULFPETRO_2025_2026_A_8290922_03082026171335.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 631470,
+ "chunks": 16,
+ "chunks_ok": 16,
+ "facts": {
+  "business": {
+   "description": "GP Petroleums Limited specializes in the formulation, manufacturing and marketing of Industrial Lubricants, Automotive Lubricants, Rubber Process Oils, Transformer Oils, Greases, and other specialties under the brand name 'IPOL'. The company also trades in Bitumen, Base Oil and Fuel Oil.",
+   "products": [
+    {
+     "name": "Industrial Lubricants",
+     "share_of_revenue_pct": null,
+     "note": "Includes soluble cutting oils, neat cutting oils, EDM oils, semi-synthetic coolants, high-performance neat cutting oils, specialized greases, industrial cleaners, rust preventives"
+    },
+    {
+     "name": "Automotive Lubricants",
+     "share_of_revenue_pct": null,
+     "note": "Includes passenger car motor oil (PCMO), motorcycle oil (MCO), agricultural oils; co-branded Honda-Repsol lubricants"
+    },
+    {
+     "name": "Rubber Process Oils",
+     "share_of_revenue_pct": null,
+     "note": "Caters to Tyre (70% volume base) and Non-Tyre manufacturers; approved by all leading tyre manufacturers"
+    },
+    {
+     "name": "Transformer Oils",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Greases",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Bitumen",
+     "share_of_revenue_pct": null,
+     "note": "Trading segment; empanelled with HPCL and BPCL"
+    },
+    {
+     "name": "Base Oil",
+     "share_of_revenue_pct": null,
+     "note": "Trading segment"
+    },
+    {
+     "name": "Fuel Oil",
+     "share_of_revenue_pct": null,
+     "note": "Trading segment"
+    },
+    {
+     "name": "Trading (Bitumen and Others)",
+     "share_of_revenue_pct": 15.6,
+     "note": "Includes bitumen trading and base oil/fuel oil trading"
+    },
+    {
+     "name": "Rubber Process Oils (RPO)",
+     "share_of_revenue_pct": null,
+     "note": "Comprises aromatic, paraffinic, naphthenic oils, along with low PCA Rubber Process Oils like RAE, TRAE, etc., widely used across multiple industrial applications."
+    },
+    {
+     "name": "IPOL Super CS2 Grease",
+     "share_of_revenue_pct": null,
+     "note": "Advanced calcium sulphonate complex grease with water-resistant polymer technology"
+    },
+    {
+     "name": "Ester based high-performance cold forging oil",
+     "share_of_revenue_pct": null,
+     "note": "Specialty metal forming lubricant for severe cold forging, cold heading, extrusion, and forming operations"
+    },
+    {
+     "name": "High-performance soluble cutting oil for aluminum wire drawing",
+     "share_of_revenue_pct": null,
+     "note": "Offers excellent lubrication, cooling, and emulsion stability at high temperature"
+    },
+    {
+     "name": "Super long-life semi-synthetic cutting coolant oil",
+     "share_of_revenue_pct": null,
+     "note": "For die manufacturing, forging, and heavy-duty metalworking industries"
+    },
+    {
+     "name": "Non-chlorinated, stain-free neat cutting oil",
+     "share_of_revenue_pct": null,
+     "note": "For gear hobbling, gear shaping, broaching, threading, gun drilling, and critical machining applications"
+    },
+    {
+     "name": "Advanced thin-film, high flash point rust preventive",
+     "share_of_revenue_pct": null,
+     "note": "Long-lasting corrosion protection for metal components during storage and transportation"
+    },
+    {
+     "name": "Enhanco Biocut SS 242",
+     "share_of_revenue_pct": null,
+     "note": "New product developed"
+    },
+    {
+     "name": "IPOL CALX GREASE CB1 (Railway Wayside Lubrication)",
+     "share_of_revenue_pct": null,
+     "note": "Specialty graphited grease for railway wayside lubrication systems"
+    },
+    {
+     "name": "IPOL SG 680 HV Grease (Slip Seal Application)",
+     "share_of_revenue_pct": null,
+     "note": "High-viscosity specialty grease for slip seal lubrication in sponge iron rotary kilns"
+    },
+    {
+     "name": "Aluminium Complex Grease (Steel Mill)",
+     "share_of_revenue_pct": null,
+     "note": "Advanced aluminium complex grease for rolling mill applications"
+    },
+    {
+     "name": "IPOL SUPER CS2 FS Marine Grease",
+     "share_of_revenue_pct": null,
+     "note": "Calcium sulphonate complex marine grease for underwater propulsion and marine equipment"
+    },
+    {
+     "name": "ST CUT 401 (S)",
+     "share_of_revenue_pct": null,
+     "note": "Specialty metal forming lubricant for severe cold forging, cold heading, extrusion, and forming operations"
+    },
+    {
+     "name": "Rust Blok -RP 1133",
+     "share_of_revenue_pct": null,
+     "note": "Thin film, high flash point solvent based rust preventive for temporary corrosion protection"
+    },
+    {
+     "name": "Bitumen (traded by JV)",
+     "share_of_revenue_pct": null,
+     "note": "Traded by Amron Oil Resources Private Limited"
+    },
+    {
+     "name": "Industrial and Automotive Lubricants",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Lubricating Oils, Greases (Manufacturing)",
+     "share_of_revenue_pct": null,
+     "note": "Manufacturing segment revenue: Rs 53,567.66 lakhs in FY26, Rs 50,356.39 lakhs in FY25"
+    },
+    {
+     "name": "Base Oil, Fuel Oil, Bitumen (Trading)",
+     "share_of_revenue_pct": null,
+     "note": "Trading segment revenue: Rs 10,693.43 lakhs in FY26, Rs 10,628.02 lakhs in FY25"
+    },
+    {
+     "name": "manufactured goods",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "traded goods",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Lubricating Oils, Greases etc.",
+     "share_of_revenue_pct": null,
+     "note": "Manufacturing segment"
+    },
+    {
+     "name": "Base Oil, Fuel Oil, Bitumen",
+     "share_of_revenue_pct": null,
+     "note": "Trading segment"
+    }
+   ],
+   "customers": [
+    "Automotive OEMs and Auto ancillaries",
+    "Industrial OEMs & engineering industries",
+    "Rubber Industries (Tyre and Non-Tyre manufacturers)",
+    "Steel Tube Mills",
+    "Sugar Plants",
+    "TMT Bar (Saria) manufacturing",
+    "Ceramics, Plastics, Infrastructure, Textiles, Mining",
+    "Machine tool and injection molding machine industries",
+    "Distributors/channel partners (500+)",
+    "Direct customers (900+)",
+    "Top-tier tyre companies",
+    "Rubber components makers",
+    "Industrial end-users (machine tools, metalworking, automotive components, aerospace, defence, aluminium processing, infrastructure, forging, fasteners, home appliances, tube manufacturing, sugar industry)",
+    "OEMs (e.g., Bosch Rexroth Germany)",
+    "HPCL, BPCL",
+    "Channel partners/distributors",
+    "Replacement market (two-wheeler, agricultural, passenger vehicle, commercial vehicle)",
+    "automotive OEMs",
+    "industrial OEMs",
+    "auto component manufacturers",
+    "general engineering",
+    "metal processing",
+    "rubber and plastic product manufacturers",
+    "tyre companies",
+    "textiles",
+    "cement",
+    "sugar",
+    "mining sectors",
+    "bazaar market (automotive lubricants)",
+    "Hindustan Petroleum Corporation Limited (HPCL)",
+    "Bharat Petroleum Corporation Limited (BPCL)",
+    "Indian Oil Corporation Limited (IOCL)",
+    "infrastructure",
+    "road construction",
+    "industrial customers",
+    "railway",
+    "steel mill",
+    "marine equipment",
+    "die manufacturing",
+    "forging",
+    "heavy-duty metalworking industries"
+   ],
+   "geographies": [
+    {
+     "name": "India (PAN India)",
+     "share_pct": null
+    },
+    {
+     "name": "Exports to over 12 countries",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "Export (foreign tyre producers and rubber products manufacturers)",
+     "share_pct": null
+    },
+    {
+     "name": "International (exports)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Vasai, near Mumbai",
+     "capacity": "Blending capacity 80,000 KL per annum; Base oil storage capacity 15,000 KL"
+    },
+    {
+     "location": "Savli, Gujarat",
+     "capacity": "Manufacturing facility for value-added specialty bitumen products (acquisition in advanced stages of completion as of FY2025-26)"
+    },
+    {
+     "location": "Vasai, Valiv Village, Thane District, Maharashtra",
+     "capacity": "80,000 KL per annum"
+    },
+    {
+     "location": "Raliawas, Haryana",
+     "capacity": "warehouse facility including land (acquisition of adjoining land initiated)"
+    },
+    {
+     "location": "Savli, Gujarat",
+     "capacity": "manufacturing facility acquisition under completion for value-added specialty bitumen products"
+    },
+    {
+     "location": "Savli Plant",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. 5 to 14, Behind Dewan & Shah Industrial Estate, Valiv, Vasai East \u2013 401 208, Palghar, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Savli, Vadodara, Gujarat",
+     "capacity": "Manufacturing plant for specialty Bitumen products (under purchase agreement)"
+    },
+    {
+     "location": "Savli, Vadodara, Gujarat",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "Base oil",
+    "Additives and specialty chemicals",
+    "Base oils",
+    "Additives",
+    "Crude oil derivatives (for bitumen)",
+    "crude oil",
+    "bitumen"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Automotive",
+    "Industrial",
+    "Engineering",
+    "Rubber",
+    "Infrastructure",
+    "Steel tube mills",
+    "Sugar plants",
+    "TMT Bar manufacturing",
+    "Ceramics",
+    "Plastics",
+    "Textiles",
+    "Mining",
+    "Machine tools",
+    "Forging",
+    "Fasteners",
+    "Transmission tower manufacture",
+    "Home appliances",
+    "Automotive (OEM and aftermarket)",
+    "Industrial manufacturing",
+    "Infrastructure and road construction",
+    "Tyres and rubber products",
+    "Aerospace and defence",
+    "Metalworking and machining",
+    "Sugar industry",
+    "rubber and plastic",
+    "tyre",
+    "cement",
+    "sugar",
+    "infrastructure (bitumen)",
+    "road construction",
+    "railway",
+    "steel",
+    "marine",
+    "metalworking"
+   ],
+   "brands_or_certifications": [
+    "IPOL",
+    "Repsol (exclusive alliance since 2016)",
+    "Honda-Repsol co-branded lubricants",
+    "ISO certified",
+    "API, JASO, ACEA, ILSAC, SAE, ISO, ASTM, NLGI specifications",
+    "OEM approvals from leading national and international machine manufacturers",
+    "Repsol",
+    "Bosch Rexroth Germany approval for premium hydraulic oil",
+    "IS:73:2013 for bitumen",
+    "Repsol (exclusive licence)",
+    "ISO 9001:2015",
+    "ISO 45001:2018",
+    "ISO 14001:2015",
+    "IATF 16949:2016",
+    "ISO standards implied"
+   ],
+   "competitors_named": [
+    "Organized players",
+    "Multinationals",
+    "Local manufacturers"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "India's economic growth story, supported by continued industrialisation, infrastructure development and manufacturing expansion, presents significant opportunities. Global markets continue to offer new avenues for the IPOL brand and specialty products. Priorities: strengthen leadership in existing markets, expand into new geographies, improve operational efficiencies, embrace digital transformation, enhance sustainability initiatives, continue delivering superior value. Near-term headwinds: sharp increase in crude-linked raw material costs and currency weakness from geopolitical developments in Q4 FY2025-26, posing short-to-medium-term challenges.",
+    "period": "FY2026-27 and beyond"
+   },
+   {
+    "statement": "Prospects of growth in the lubricants industry are favorable, underpinned by increase in industrial activity, number of vehicles, infrastructure development, and increasing demand for high-quality lubricants. Slow but definite trend towards synthetic lubricants, specialty fluids, and custom lubricants. Gradual movement towards electric mobility could change demand pattern in conventional lubricants but present opportunities in thermal fluids and greases.",
+    "period": "Future"
+   },
+   {
+    "statement": "Industrial Lubricants outlook appears favorable due to increased industrial activities, infrastructure development, manufacturing activities, and increasing need for high-performance lubricants.",
+    "period": "Future"
+   },
+   {
+    "statement": "Rubber Process Oils prospects seem positive due to growth in demand from tyre and rubber industry, preference for performance and eco-friendly process oils, and potential in export markets.",
+    "period": "Future"
+   },
+   {
+    "statement": "Automotive Lubricants growth supported by robust Indian auto industry, rising vehicle ownership, larger registered vehicles, and increased importance of preventive maintenance.",
+    "period": "Future"
+   },
+   {
+    "statement": "Bitumen business expected to see sustained demand due to government focus on infrastructure (PM Gati Shakti, Bharatmala Pariyojana, National Infrastructure Pipeline).",
+    "period": "Future"
+   },
+   {
+    "statement": "Directors remain confident of the Company's long-term growth prospects. Backed by a strong balance sheet, a diversified product portfolio and a continued focus on innovation, operational excellence and customer satisfaction, the Company is well-positioned to capitalise on emerging opportunities and deliver sustainable value to all stakeholders.",
+    "period": "long-term"
+   },
+   {
+    "statement": "Diversification initiatives in bitumen segment (JV with West Coast Oils LLP, HPCL/BPCL/IOCL supply agreements, Savli facility acquisition) represent significant milestones and are expected to support long-term growth in India's expanding infrastructure sector.",
+    "period": "long-term"
+   },
+   {
+    "statement": "The Company undertakes no obligation to publicly update or revise any forward-looking statements, whether as a result of new information, future events or otherwise.",
+    "period": "future"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Acquire land adjoining warehouse facility at Raliawas, Haryana",
+    "amount_cr": null,
+    "timeline": "Approved by Board during FY2025-26"
+   },
+   {
+    "item": "Capacity expansion at Raliawas, Haryana facility",
+    "amount_cr": null,
+    "timeline": "Planned for future growth"
+   },
+   {
+    "item": "Acquisition of manufacturing facility (Plant) at Savli, Gujarat for specialty bitumen products",
+    "amount_cr": null,
+    "timeline": "Advanced stages of completion as of FY2025-26; statutory registrations and transfer formalities underway"
+   },
+   {
+    "item": "Acquisition of warehouse facility including land at Raliawas, Haryana and initiation for further acquisition of adjoining land",
+    "amount_cr": null,
+    "timeline": "During FY 2025-26"
+   },
+   {
+    "item": "Acquisition of manufacturing facility at Savli, Gujarat for value-added specialty bitumen products",
+    "amount_cr": null,
+    "timeline": "Currently under completion, statutory registrations and transfer formalities in progress"
+   },
+   {
+    "item": "Savli Plant (Capital Assets)",
+    "amount_cr": 13.79,
+    "timeline": "April 01, 2025 to March 31, 2026"
+   },
+   {
+    "item": "Capital Assets Purchased from Aspam Caravan Logistics Parks Pvt. Ltd.",
+    "amount_cr": 29.99,
+    "timeline": "April 01, 2025 to March 31, 2026"
+   },
+   {
+    "item": "Purchase of manufacturing plant at Savli, Vadodara, Gujarat from New Horizon Asphalt Pvt Ltd",
+    "amount_cr": 15.76,
+    "timeline": "Agreement executed on 27th Feb 2026; advance of Rs 13.79 Cr paid up to 31st March 2026"
+   },
+   {
+    "item": "Investment commitment towards Joint Venture (Amron Oil Resources Private Limited)",
+    "amount_cr": 5.0,
+    "timeline": "JV agreement dated May 06, 2025"
+   },
+   {
+    "item": "Purchase of manufacturing plant at Savli, Vadodara, Gujarat from New Horizon Asphalt Pvt Ltd",
+    "amount_cr": 15.76,
+    "timeline": "Agreement executed on 27th Feb 2026"
+   },
+   {
+    "item": "Investment commitment towards Joint Venture (Amron Oil Resources Private Limited)",
+    "amount_cr": 5.0,
+    "timeline": "JV Agreement dated May 06, 2025"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Received Letter of Acceptance (LOA) from Bharat Petroleum Corporation Limited (BPCL) for supply of bitumen",
+    "value_cr": null
+   },
+   {
+    "statement": "Existing empanelment with Hindustan Petroleum Corporation Limited (HPCL) successfully renewed for bitumen supply",
+    "value_cr": null
+   },
+   {
+    "statement": "Bulk Bitumen (VG-30) Supply Agreement with HPCL for supply of up to 50,000 MT over one-year period",
+    "value_cr": 223
+   },
+   {
+    "statement": "HPCL renewed agreement for further one year for balance tender quantity of 42,200 MT",
+    "value_cr": null
+   },
+   {
+    "statement": "BPCL awarded Letter of Allotment (LOA) as L1 bidder for 6,000 MT of VG30 and L2 bidder for 1,800 MT of VG40 Bulk Bitumen at Pipavav Port for one year",
+    "value_cr": 38
+   },
+   {
+    "statement": "Bulk bitumen supply agreement with Hindustan Petroleum Corporation Limited (HPCL) for supply of 50,000 MT of VG30 bitumen renewed for additional year for balance tender quantity of 42,200 MT",
+    "value_cr": null
+   },
+   {
+    "statement": "Letter of Award (LOA) from Bharat Petroleum Corporation Limited (BPCL) for supply of paving grade bulk bitumen at Pipavav Port",
+    "value_cr": null
+   },
+   {
+    "statement": "Letter of Allotment (LOA) from Indian Oil Corporation Limited (IOCL) for supply of bulk bitumen to Joint Venture Amron Oil Resources Private Limited",
+    "value_cr": null
+   },
+   {
+    "statement": "On May 06, 2025, the Company entered into a Joint Venture Agreement with West Coast Oils LLP in respect of Amron Oil Resources Private Limited, an existing company, to carry on the business of trading of specialty bitumen products and allied commodities.",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Geopolitical uncertainties and conflicts (Middle East)",
+   "Fluctuating raw material prices (crude-linked)",
+   "Currency weakness",
+   "Elevated input and commodity costs",
+   "Increasingly competitive business environment",
+   "Changing trade policies and global trade dynamics",
+   "Energy supply shocks",
+   "Financial stress in global markets",
+   "Volatile forex movement impacting profitability and margins",
+   "Unpredictable raw material prices",
+   "Changing consumer tastes towards advanced and high-end lubricants",
+   "Geopolitical volatility and supply chain disruptions affecting crude and base oil prices, freight costs, and raw material availability",
+   "High macroeconomic volatility limiting demand in automotive and industrial sectors",
+   "Shift towards cleaner transportation and electric vehicles altering lubricant demand dynamics",
+   "Growing pressure for sustainable production and eco-friendly products requiring R&D investment",
+   "Stricter emissions, sustainable production, quality, and waste management regulations",
+   "Competition from organized players, multinationals, and local manufacturers",
+   "One-time exceptional charges (e.g., labour code charge of Rs 3.26 Cr in FY2025-26)",
+   "changes in the price and availability of crude oil and base oil",
+   "foreign exchange movements",
+   "economic conditions in India and in the markets to which the Company exports",
+   "changes in government regulation, tax laws and other statutes",
+   "the pace of adoption of electric mobility",
+   "the outcome of contractual arrangements and joint venture operations",
+   "changes in economic conditions",
+   "government policies and regulations",
+   "taxation laws",
+   "market conditions",
+   "industry developments",
+   "competitive environment",
+   "other factors beyond the Company's control",
+   "Pending litigations disclosed in Note 40 to standalone financial statements",
+   "Disputed statutory dues: Service Tax (Rs 17.12 lakh), Professional Tax (Rs 0.63 lakh), Central Sales Tax/Local Sales Tax/VAT/Entry Tax (Rs 40.84 lakh), Income Tax (Rs 781.05 lakh), GST (Rs 17.42 lakh) - total Rs 857.06 lakh",
+   "Market risk including interest rate risk, currency risk, and commodity risk",
+   "Credit risk from counter parties not settling obligations",
+   "Liquidity risk",
+   "Interest Rate Risk",
+   "Foreign Currency Risk (USD, AED)",
+   "Credit Risk",
+   "Liquidity Risk"
+  ],
+  "subsidiaries": [
+   {
+    "name": "West Coast Oils LLP",
+    "holding_pct": null,
+    "business": "Joint venture for specialty bitumen segment"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": null,
+    "business": "Joint Venture with West Coast Oils LLP to manufacture, process, refine, stock, market and distribute specialty bitumen products including value-added grades for infrastructure and road construction sectors (established June 2025)"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": 50,
+    "business": "manufacture, process, market and distribute specialty bitumen products (Joint Venture with West Coast Oils LLP)"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": 50,
+    "business": "trading various grades of bitumen, catering to infrastructure, road construction and other industrial customers"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company is having no subsidiary or associate company"
+   },
+   {
+    "name": "Joint Venture",
+    "holding_pct": null,
+    "business": "Joint venture of GP Petroleums Limited"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": 50,
+    "business": "trading of specialty bitumen products and allied commodities"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": null,
+    "business": "Manufacturing and trading of specialty bitumen products and allied commodities (Joint Venture with West Coast Oils LLP)"
+   },
+   {
+    "name": "Joint Venture (unnamed)",
+    "holding_pct": null,
+    "business": "Joint venture included in consolidated financial statements"
+   },
+   {
+    "name": "Amron Oil Resources Pvt. Ltd.",
+    "holding_pct": 50,
+    "business": "Joint venture with M/s. West Coast Oils LLP"
+   },
+   {
+    "name": "Amron Oil Resources Private Limited",
+    "holding_pct": null,
+    "business": "manufacturing and trading of specialty bitumen products and allied commodities"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. J Mandal & Co. LLP",
+   "opinion": "Unmodified opinion on audited financial results for FY2025-26",
+   "key_audit_matters": [
+    "Provision for Doubtful Debts - The Company has recognized provisions against certain trade receivables where amounts are long-outstanding and are currently under legal dispute or arbitration. The determination of the adequacy of such provisions involves significant management judgment, particularly in estimating the likelihood of recovery, timing, and possible outcomes of legal proceedings.",
+    "Provision for Doubtful Debts - significant management judgment in estimating likelihood of recovery, timing, and possible outcomes of legal proceedings for long-outstanding trade receivables under legal dispute or arbitration"
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis on pending litigations disclosed in Note 40",
+    "No material foreseeable losses on long-term contracts",
+    "No delay in transferring amounts to Investor Education and Protection Fund",
+    "Management representations on fund advances/receipts to/from intermediaries and ultimate beneficiaries",
+    "Accounting software audit trail feature operated throughout the year without tampering",
+    "Joint venture financial statements unaudited, based on management-certified financial information; net profit/(loss) after tax of Rs 0.10 Lakhs for year ended March 31, 2026",
+    "Joint venture financial statements/financial information for the year ended 31st March 2026 are unaudited and have not been subjected to any audit procedures, including in respect of internal financial controls.",
+    "The Management has represented that no funds have been advanced or loaned or invested by the company or its joint venture to or in any other person or entities with the understanding that the intermediary shall lend or invest in other persons or entities identified by or on behalf of the company or its joint venture.",
+    "The Management has represented that no funds have been received by the company or its joint venture from any person or entities with the understanding that the company or its joint venture shall lend or invest in other persons or entities identified by or on behalf of the funding party."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-designation of Mr. Ayush Goel as Chairman & Managing Director",
+    "Elevation of Mr. Dilip U Vaswani as Additional Non-Executive Director",
+    "Appointment of Mr. Sukumaran Jeyakrishnan as Additional Non-Executive Independent Director",
+    "Mrs. Deepa Goel stepped down as Non-Executive Director",
+    "Mr. Ayush Goel re-designated from Chairman & Non-Executive Director to Chairman & Managing Director effective January 6, 2026",
+    "Mr. Sukumaran Jeyakrishnan appointed as Additional Director (Non-Executive Independent) w.e.f. May 27, 2026",
+    "Mr. Dilip Vaswani appointed as Additional Director (Non-Executive Non-Independent) w.e.f. May 27, 2026",
+    "Mr. Harshavardhan Sinha appointed as Additional Director (Non-Executive Non-Independent) w.e.f. July 24, 2026",
+    "Ms. Sandra Martyres appointed as Additional Director (Non-Executive Independent) w.e.f. July 24, 2026",
+    "Mrs. Deepa Goel resigned as Non-Executive Non-Independent Director (Promoter Group) w.e.f. close of business hours on May 27, 2026",
+    "Mr. Arjun Verma retires by rotation at ensuing AGM and offers himself for re-appointment",
+    "The is no changes in the composition of the Board of Directors during the period under review",
+    "Mr. Ayush Goel appointed as Managing Director w.e.f. 6th Jan 2026",
+    "Mr. Pradeep Kishore Mittal appointed as CEO (KMP) w.e.f. October 3, 2025, re-designated as CEO \u2013 Lubricants (SMP) w.e.f. January 6, 2026, resigned effective January 31, 2026",
+    "Mr. Farooque Warsi, Head \u2013 RPO & Exports, resigned effective January 9, 2026",
+    "Risk Management Committee reconstituted on November 14, 2025; Mrs. Stuti Kacker appointed Chairperson",
+    "Nomination and Remuneration Committee reconstituted w.e.f. January 6, 2026; Mrs. Deepa Goel appointed Member, Mr. Ayush Goel ceased as Member",
+    "Stakeholders' Relationship Committee reconstituted on January 6, 2026; Mr. Rajesh Mittal appointed Chairman, Mr. Ayush Goel appointed Member",
+    "Mr. Ayush Goel was appointed as the Managing Director of the Company, and an agreement was entered with him for a period of five years effective from January 06, 2026.",
+    "Mr. Pradeep Kishore Mittal (Chief Executive Officer) ceased employment with effect from January 31, 2026, and ceased to be a Member of the Risk Management Committee.",
+    "Mr. Dilip U. Vaswani (Senior Advisor \u2013 now Non-Executive Director) was inducted as Member of the Risk Management Committee.",
+    "Mr. Arjun Verma was appointed as the Whole Time Director of the Company for a period of five years effective from April 10, 2023.",
+    "Mrs. Stuti Kacker re-appointed as Non-Executive Independent Director for a period of 2 (Two) Years (AGM 2023-24).",
+    "Mr. Ashok Kumar Gupta appointed as Non-Executive Independent Director for a period of 2 (Two) Years (AGM 2023-24).",
+    "Mr. Mahesh Damle re-appointed as Independent Director for a period of 1 (One) Year (AGM 2022-23).",
+    "Mr. Bhaswar Mukherjee retired on February 11, 2025",
+    "Mr. Mahesh Damle retired on October 28, 2024",
+    "Mr. Ashok Kumar Gupta appointed w.e.f August 13, 2024",
+    "Mr. Rajesh Mittal appointed w.e.f January 18, 2025",
+    "Mr. Dilip U. Vaswani (DIN: 01944741) appointed as Additional Director (Non-Executive, Non-Independent) w.e.f. May 27, 2026",
+    "Mr. Harshavardhan Sinha (DIN: 09439148) appointed as Additional Director (Non-Executive, Non-Independent) w.e.f. July 24, 2026",
+    "Mr. Sukumaran Jeyakrishnan (DIN: 07234397) appointed as Additional Director (Independent Director) w.e.f. May 27, 2026",
+    "Ms. Sandra Martyres (DIN: 00798406) appointed as Additional Director (Independent Director) w.e.f. July 24, 2026",
+    "Mr. Arjun Verma (DIN: 10102249) retires by rotation and offers himself for re-appointment",
+    "Appointment of Mr. Dilip U. Vaswani (DIN: 01944741) as Additional Director (Non-Executive Non-Independent) w.e.f. May 27, 2026",
+    "Appointment of Mr. Harshavardhan Sinha (DIN: 09439148) as Additional Director (Non-Executive Non-Independent) w.e.f. July 24, 2026",
+    "Appointment of Mr. Harshavardhan Sinha as Non-Executive Non-Independent Director (Item No. 6)",
+    "Appointment of Mr. Sukumaran Jeyakrishnan as Non-Executive Independent Director for 2 years from May 27, 2026 (Item No. 7)",
+    "Appointment of Ms. Sandra Martyres as Non-Executive Independent Director for 2 years from July 24, 2026 (Item No. 8)"
+   ],
+   "auditor_change": "Statutory Auditors M/s. J Mandal & Co. LLP re-appointed; Internal Auditors and Cost Auditors re-appointed for FY2026-27",
+   "promoter_holding_pct": 37.05,
+   "top_shareholders": [
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 37.05
+    },
+    {
+     "name": "Indian Public",
+     "pct": 39.61
+    },
+    {
+     "name": "Foreign Company",
+     "pct": 16.71
+    },
+    {
+     "name": "Foreign Portfolio Investors (Corporate)",
+     "pct": 0.5
+    },
+    {
+     "name": "Other Corporate Bodies",
+     "pct": 1.19
+    },
+    {
+     "name": "NRI (Repat and Non Repat)",
+     "pct": 1.05
+    },
+    {
+     "name": "Clearing Member",
+     "pct": 0.04
+    },
+    {
+     "name": "HUF",
+     "pct": 1.97
+    },
+    {
+     "name": "Government Company",
+     "pct": 1.36
+    },
+    {
+     "name": "Investor Education and Protection Fund",
+     "pct": 0.38
+    },
+    {
+     "name": "Body Corporate \u2013 LLP",
+     "pct": 0.15
+    },
+    {
+     "name": "GP Global APAC Pte Ltd",
+     "pct": 36.84
+    },
+    {
+     "name": "Incubit Energy (Singapore) Pte. Ltd.",
+     "pct": 13.89
+    },
+    {
+     "name": "GP Global APAC Pte Ltd.",
+     "pct": 36.84
+    },
+    {
+     "name": "GP Global APAC Pte. Ltd.",
+     "pct": null
+    },
+    {
+     "name": "Incubit Energy (Singapore) Pte Ltd",
+     "pct": 13.89
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Ayush Goel",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Arjun Verma",
+     "role": "Executive Director & CFO"
+    },
+    {
+     "name": "Mr. Dilip Vaswani",
+     "role": "Non Executive Director"
+    },
+    {
+     "name": "Mr. Harshavardhan Sinha",
+     "role": "Non Executive Director"
+    },
+    {
+     "name": "Mr. Rajesh Mittal",
+     "role": "Non Executive Independent Director"
+    },
+    {
+     "name": "Mr. Ashok Kumar Gupta",
+     "role": "Non Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Stuti Kacker",
+     "role": "Non Executive Independent Director"
+    },
+    {
+     "name": "Mr. Sukumaran Jeyakrishnan",
+     "role": "Non Executive Independent Director"
+    },
+    {
+     "name": "Ms. Sandra Martyres",
+     "role": "Non Executive Independent Director"
+    },
+    {
+     "name": "Kanika Sehgal Sadana",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Arjun Verma",
+     "role": "Executive Director & Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Kanika Sehgal Sadana",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Pradeep Kishore Mittal",
+     "role": "Chief Executive Officer (CEO) \u2013 Key Managerial Personnel (appointed Oct 3, 2025, re-designated as CEO \u2013 Lubricants and SMP Jan 7, 2026, resigned Jan 31, 2026)"
+    },
+    {
+     "name": "Mr. Dilip Vaswani",
+     "role": "Senior Advisor \u2013 Senior Management Personnel (appointed Oct 3, 2025)"
+    },
+    {
+     "name": "Mr. Sunil Kumar Shetty",
+     "role": "Vice President \u2013 Human Resources & Administration (appointed Nov 17, 2025, designated SMP Jan 7, 2026)"
+    },
+    {
+     "name": "Mr. Tajendra Gupta",
+     "role": "Vice President \u2013 Automotive & Technology (appointed Nov 26, 2025, designated SMP Jan 7, 2026)"
+    },
+    {
+     "name": "Mr. Farooque Warsi",
+     "role": "Head \u2013 RPO & Exports (resigned Jan 9, 2026)"
+    },
+    {
+     "name": "Mr. Anil Keswani",
+     "role": "Chief Operating Officer - Bitumen & Terminalling (SMP) (appointed Apr 1, 2026)"
+    },
+    {
+     "name": "Mr. Ajay Navaratne",
+     "role": "Vice President \u2013 Rubber Process Oil (appointed Jul 1, 2026)"
+    },
+    {
+     "name": "Mr. Ashish Garg",
+     "role": "Vice President \u2013 Operations & Supply Chain Management (appointed May 7, 2026, designated SMP May 27, 2026, resigned Jun 30, 2026)"
+    },
+    {
+     "name": "Ayush Goel",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Arjun Verma",
+     "role": "Executive Director & CFO"
+    },
+    {
+     "name": "Kanika Sehgal Sadana",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Stuti Kacker",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Dilip U Vaswani",
+     "role": "Senior Advisor"
+    },
+    {
+     "name": "Mr. Jogesh Sharma",
+     "role": "Head \u2013 Industrial Lubricants & RPO"
+    },
+    {
+     "name": "Mr. Tajendra Gupta",
+     "role": "Vice President \u2013 Automotive & Technology"
+    },
+    {
+     "name": "Mr. Ashish Parab",
+     "role": "Head \u2013 Procurement, Imports & Business Development"
+    },
+    {
+     "name": "Mr. Sunil Kumar Shetty",
+     "role": "Vice President - Human Resources & Administration"
+    },
+    {
+     "name": "Mr. Arjun Verma",
+     "role": "Executive Director (Whole-Time Director) & CFO"
+    },
+    {
+     "name": "Mrs. Deepa Goel",
+     "role": "Director, Non-Executive"
+    },
+    {
+     "name": "Mrs. Stuti Kacker",
+     "role": "Director, Independent"
+    },
+    {
+     "name": "Mr. Rajesh Mittal",
+     "role": "Director, Independent"
+    },
+    {
+     "name": "Mr. Ashok Kumar Gupta",
+     "role": "Director, Independent"
+    },
+    {
+     "name": "Mr. Dilip U. Vaswani",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Ayush Goel",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mrs. Deepa Goel",
+     "role": "Director, Non Executive"
+    },
+    {
+     "name": "Mrs. Stuti Kacker",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ashok Kumar Gupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Rajesh Mittal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Kanika Sehgal Sadana",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Dilip U. Vaswani",
+     "role": "Additional Director (Non-Executive Non-Independent), former Senior Advisor"
+    },
+    {
+     "name": "Mr. Harshavardhan Sinha",
+     "role": "Additional Director (Non-Executive Non-Independent), Director and Significant Beneficial Owner of Incubit Energy (Singapore) Pte. Ltd."
+    },
+    {
+     "name": "Mr. Arjun Verma",
+     "role": "Whole Time Director designated as Executive Director and CFO"
+    },
+    {
+     "name": "Mr. Dilip U. Vaswani",
+     "role": "Senior Advisor (SMP) of the Company"
+    },
+    {
+     "name": "Mr. Harshavardhan Sinha",
+     "role": "Non-Executive Non-Independent Director (proposed)"
+    },
+    {
+     "name": "Mr. Sukumaran Jeyakrishnan",
+     "role": "Non-Executive Independent Director (proposed)"
+    },
+    {
+     "name": "Ms. Sandra Martyres",
+     "role": "Non-Executive Independent Director (proposed)"
+    }
+   ],
+   "employees": 258
+  },
+  "dividend_per_share": 0.5,
+  "other_notable": [
+   "43rd AGM scheduled for August 26, 2026 at 11:30 AM IST through VC/OAVM",
+   "Record Date for dividend: August 19, 2026",
+   "Final dividend recommended: \u20b90.50 per equity share (face value \u20b95) for FY2025-26",
+   "TDS applicable on dividend per Income-tax Act, 2025",
+   "KYC update mandatory for physical shareholders per SEBI Master Circular dated June 23, 2025",
+   "Physical shareholders without updated KYC eligible for payments only through electronic mode from April 1, 2024",
+   "CSR initiatives under 'We Care' program: healthcare, cancer care, rescue vehicle donation, dignified funeral services, road safety (helmet distribution)",
+   "Sustainability focus: resource efficiency, environmental footprint reduction, responsible governance",
+   "RTA: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "Annual Report available at www.gppetroleums.co.in and www.evoting.nsdl.com",
+   "Joint Venture Amron Oil Resources Private Limited established in June 2025 with West Coast Oils LLP for specialty bitumen",
+   "Technical services strengthened: Coolant Management Services for extending coolant life and reducing lubricant consumption",
+   "New product launches: synthetic ester-based water-miscible metalworking fluids, semi-synthetic coolants for aluminum parts, mild alkaline aqueous cleaners",
+   "Export business developing well with growing demand from foreign tyre producers",
+   "Distribution network expansion with new channel partners in strategic locations",
+   "Participation in major industrial exhibitions and increased digital engagement",
+   "Internal financial controls assessed as adequate and operating effectively as at 31 March 2026",
+   "No material weakness or significant deficiency identified in internal controls",
+   "POSH Internal Committee active; no complaints reported during the year",
+   "Revenue from operations increased to Rs 642.61 Cr from Rs 609.84 Cr (5.4% growth)",
+   "Manufacturing revenue increased from Rs 504 Cr to Rs 536 Cr",
+   "PBT (excl. one-time charge) Rs 38.6 Cr, up 8.9%; PAT Rs 26.47 Cr (marginal improvement)",
+   "Debt Equity Ratio improved to 0.07 from 0.10; Interest Coverage Ratio 50.39 (down from 73.35 due to higher interest cost)",
+   "Current Ratio 4.69; Operating Profit Margin 6.07%; Net Profit Margin 4.12%; Return on Net Worth 7.46%",
+   "Exceptional expense of Rs 326 lakhs recognised towards employee benefit obligations arising from implementation of Code on Wages",
+   "EBIDTA remained resilient at Rs 4,139.66 lakhs (after exceptional item) vs Rs 4,199.70 lakhs previous year",
+   "Revenue from Operations increased 5.4% to Rs 64,261.09 lakhs from Rs 60,984.41 lakhs",
+   "Profit After Tax increased marginally to Rs 2,647.49 lakhs from Rs 2,632.42 lakhs",
+   "Current Ratio: 4.69 in FY 2025-26 vs 4.91 in FY 2024-25",
+   "Debt Equity Ratio: 0.07 in FY 2025-26 vs 0.10 in FY 2024-25 (30% reduction in leverage)",
+   "Operating Profit Margin: 6.07% in FY 2025-26 vs 6.40% in FY 2024-25",
+   "Return on Equity: 7.46% in FY 2025-26 vs 8.00% in FY 2024-25",
+   "Repsol licensing arrangement renewed in 2022 for further term of five years",
+   "No fraud reported by Statutory Auditors or Secretarial Auditors during FY 2025-26",
+   "Internal Auditors: M/s. PNG & Co., Chartered Accountants (re-appointed for FY 2026-27)",
+   "Cost Auditor: Mr. Dilip Murlidhar Bathija, Cost Accountant (re-appointed for FY 2026-27)",
+   "Secretarial Auditors: M/s. Pusalkar & Co., Practising Company Secretaries (appointed for 5 years from 42nd AGM)",
+   "CSR Annual Report annexed",
+   "Vigil Mechanism/Whistle Blower Policy in place, no person denied access to Chairman of Audit Committee",
+   "POSH compliance: Internal Committee held 2 meetings, zero complaints received/disposed/pending",
+   "Maternity Benefit Act compliance: no employee availed maternity benefits during FY 2025-26",
+   "Participated in 100 Days' Investor Awareness and Services Campaign \u2013 Niveshak Shivir",
+   "Unclaimed dividends/shares transfer to IEPF process ongoing",
+   "The Company has adopted a Code of Conduct for Prevention of Insider Trading and Code of fair disclosure and inquiry in case of leak of Unpublished Price Sensitive Information",
+   "The Company has established a Vigil Mechanism and formulated a comprehensive Whistle Blower Policy",
+   "Business Responsibility and Sustainability Report (BRSR) is not applicable as the Company does not fall within the top 1,000 listed entities based on market capitalization",
+   "The Company did not accept or renew any deposits falling within the ambit of Chapter V of the Companies Act, 2013",
+   "No fraud has been reported by the Auditors under Section 143(12) of the Companies Act, 2013",
+   "The Company has complied with applicable Secretarial Standards (SS-1 and SS-2)",
+   "The Board met 7 times during the Financial Year 2025-26",
+   "Foreign Exchange Earnings: Export Sales Rs 17.21 crore; Foreign Exchange Outgo: Import of Raw Material Rs 21.65 crore, Royalty Rs 1.64 crore, Others Rs 0.13 crore",
+   "CSR obligation for FY 2025-26: Rs 69.90 lakh; Total amount spent: Rs 83.45 lakh; Excess amount for set off: Rs 9.14 lakh",
+   "CSR projects included promoting health care, education, and road safety initiatives in Haryana, Maharashtra, Delhi, and PAN India",
+   "Energy conservation measures included motor replacement, timer installation, solar panel relocation, air compressor relocation, and LED lighting installation",
+   "Technology absorption included installation of Tannas Oxidation Stability Tester for lubricant performance evaluation",
+   "Median remuneration of employees increased from Rs 6,18,777 (2024-25) to Rs 6,72,144 (2025-26), an 8.62% increase",
+   "Average percentage increase in salaries of employees other than managerial personnel: 10.82%",
+   "Remuneration of Mr. Arjun Verma (Executive Director & CFO): Rs 1,69,24,320 for FY 2025-26",
+   "Mr. Dilip U Vaswani (Senior Advisor) remuneration: Rs 18,00,000 per month",
+   "Mr. Pradeep Kishore Mittal (CEO) remuneration: Rs 12,50,000 per month (part year)"
+  ],
+  "related_party": [
+   {
+    "party": "New Horizons Asphalt Pvt. Ltd. (e-GP Global Asphalt Pvt. Ltd.)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 1.45
+   },
+   {
+    "party": "New Horizons Asphalt Pvt. Ltd. (e-GP Global Asphalt Pvt. Ltd.)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 1.26
+   },
+   {
+    "party": "New Horizons Asphalt Pvt. Ltd. (e-GP Global Asphalt Pvt. Ltd.)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Gulf Petrochem (India) Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 2.74
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.59
+   },
+   {
+    "party": "Amron Oil Resources Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.32
+   },
+   {
+    "party": "Nivaya Resources Pvt. Ltd. (Mumbai)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Avann Buildsys Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.13
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 1.5
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 3.1
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 29.99
+   },
+   {
+    "party": "New Horizons Asphalt Pvt. Ltd. (e-GP Global Asphalt Pvt. Ltd.)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 13.79
+   },
+   {
+    "party": "Avann Buildsys Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Amron Oil Resources Pvt. Ltd.",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.18
+   },
+   {
+    "party": "New Horizons Asphalt Pvt. Ltd. (e-GP Global Asphalt Pvt. Ltd.)",
+    "nature": "a Private Company in which Director or relative is a Member/Director",
+    "amount_cr": 0.25
+   },
+   {
+    "party": "Joint Venture",
+    "nature": "Unsecured loans granted and investments made",
+    "amount_cr": 0.1812
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Sales",
+    "amount_cr": 0.1453
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Purchase",
+    "amount_cr": 0.1256
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Rental Income",
+    "amount_cr": 0.0156
+   },
+   {
+    "party": "Gulf Petrochem (India) Pvt. Ltd.",
+    "nature": "Tank Rent Paid",
+    "amount_cr": 2.7361
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Private Limited",
+    "nature": "Godown Rent Paid",
+    "amount_cr": 0.59
+   },
+   {
+    "party": "Amron Oil Resources Pvt Ltd",
+    "nature": "Sales",
+    "amount_cr": 0.3178
+   },
+   {
+    "party": "Nivaya Resources Pvt. Ltd.",
+    "nature": "Rental Income",
+    "amount_cr": 0.0156
+   },
+   {
+    "party": "Avann Buildsys Private Limited",
+    "nature": "Office Rent Paid",
+    "amount_cr": 0.1298
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Private Limited",
+    "nature": "Security Deposit Paid",
+    "amount_cr": 1.5
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Private Limited",
+    "nature": "Security Deposit Refund",
+    "amount_cr": 3.1
+   },
+   {
+    "party": "Aspam Caravan Logistics Parks Private Limited",
+    "nature": "Capital Assets Purchased",
+    "amount_cr": 0
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Advance given for Savli Plant (Capital Assets)",
+    "amount_cr": 13.7908
+   },
+   {
+    "party": "Avann Buildsys Private Limited",
+    "nature": "Security Deposit Paid",
+    "amount_cr": 0
+   },
+   {
+    "party": "Avann Buildsys Private Limited",
+    "nature": "Security Deposit Refund",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Amron Oil Resources Private Limited",
+    "nature": "Loan to JV Including Interest",
+    "amount_cr": 0.1819
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Advance given for Material Purchase",
+    "amount_cr": 0
+   },
+   {
+    "party": "New Horizons Asphalt Pvt Ltd",
+    "nature": "Refund of Advance Given for Material",
+    "amount_cr": 0.25
+   },
+   {
+    "party": "Aspam Foundation",
+    "nature": "Contribution to CSR expenditure",
+    "amount_cr": 0.2878
+   },
+   {
+    "party": "GP Global APAC Pte Ltd.",
+    "nature": "Shareholder (36.84% holding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Incubit Energy (Singapore) Pte. Ltd.",
+    "nature": "Shareholder (13.89% holding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Prachi Goel",
+    "nature": "Promoter (0.21% holding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Nivaya Resources Private Limited",
+    "nature": "Promoter group entity",
+    "amount_cr": null
+   },
+   {
+    "party": "Amron Oil Resources Pvt. Ltd.",
+    "nature": "Joint Venture",
+    "amount_cr": 0.18
+   },
+   {
+    "party": "Aspam Foundation",
+    "nature": "CSR expenditure contribution",
+    "amount_cr": 0.2878
+   }
+  ],
+  "litigation": [
+   "No application was made, nor were any proceedings pending against the Company under the provisions of the Insolvency and Bankruptcy Code, 2016",
+   "No significant material orders have been passed by the Regulators or Courts or Tribunals which would impact the going concern status of the Company and its future operations",
+   "Trade receivables long-outstanding and currently under legal dispute or arbitration (mentioned in Key Audit Matters)",
+   "Service Tax dispute: Rs 17.12 lakh pending at High Court (July 2015 - March 2017)",
+   "Professional Tax dispute: Rs 0.63 lakh pending at Assistant Commissioner of Profession Tax (FY 2021-22)",
+   "Central Sales Tax/Local Sales Tax/VAT/Entry Tax dispute: Rs 40.84 lakh pending at Commissioner of Commercial Tax Tribunal (FY 2003-04 to FY 2014-15)",
+   "Income Tax disputes: Rs 704.44 lakh pending at CIT(A), National Faceless Centre (AY 2013-14, 2016-17, 2017-18) and Rs 76.61 lakh pending at Commissioner of Income Tax Rectification u/s 154 (AY 2016-17 & 2024-25)",
+   "GST dispute: Rs 17.42 lakh pending at Commissioner (Appeals) (FY 2017-18 to FY 2020-21)",
+   "Trade receivables under legal dispute or arbitration (long-outstanding amounts)",
+   "The Consolidated Financial Statements disclose the impact of pending litigations on its financial position in its Consolidated financial statements. Refer Note 40 to the Consolidated financial statements."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed statutory dues pending at various forums",
+    "amount_cr": 8.5706
+   },
+   {
+    "nature": "Sales Tax Matters",
+    "amount_cr": 0.2706
+   },
+   {
+    "nature": "Excise, Custom and Service Tax Matters",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Goods & Service Tax Matters",
+    "amount_cr": 0.1589
+   },
+   {
+    "nature": "Income tax Matters",
+    "amount_cr": 9.9894
+   },
+   {
+    "nature": "Guarantees given by Banks",
+    "amount_cr": 0.5232
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Long-term borrowings",
+    "amount_cr": 0.6851,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 19.2184,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (non-current)",
+    "amount_cr": 2.3994,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (current)",
+    "amount_cr": 0.9975,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Axis Bank (Cash Credit)",
+    "amount_cr": 18.8682,
+    "note": "Secured by exclusive charge on entire current assets and collateral charge on Plot Nos. 5-14 at Mauje Village Waliv, Taluka Vasai, District Thane and 804, Ackruti Star, MIDC Central Road, Andheri Mumbai"
+   },
+   {
+    "lender_or_type": "ICICI Bank (Overdraft)",
+    "amount_cr": 0,
+    "note": "Secured by Investment in Mutual Funds (marked under lien); facility sanctioned for Rs 15 Crores"
+   },
+   {
+    "lender_or_type": "HDFC Bank (Vehicle Term Loans)",
+    "amount_cr": 1.0353,
+    "note": "Four vehicle loans secured by hypothecation of respective vehicles; each repayable in 39 monthly installments of Rs 0.88 lakh"
+   },
+   {
+    "lender_or_type": "Banks (working capital limits)",
+    "amount_cr": 19.9034,
+    "note": "Secured against current assets; total borrowings as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities",
+    "amount_cr": 3.3969,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 0.6851,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 19.2184,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": 0.69,
+    "note": "Term Loan for Purchase of Vehicles secured by hypothecation of respective vehicles, repayable in 39 monthly installments of \u20b90.88 lakh each"
+   },
+   {
+    "lender_or_type": "ICICI Bank",
+    "amount_cr": 15,
+    "note": "Overdraft/Cash Credit facility secured by lien on mutual fund investments"
+   },
+   {
+    "lender_or_type": "Banks (working capital)",
+    "amount_cr": null,
+    "note": "Working capital loans secured by collateral of assets referred in note 24"
+   },
+   {
+    "lender_or_type": "Axis Bank (Cash Credit)",
+    "amount_cr": 18.8682,
+    "note": "Secured by exclusive charge on entire current assets and specific fixed assets"
+   },
+   {
+    "lender_or_type": "ICICI Bank (Overdraft)",
+    "amount_cr": 0,
+    "note": "Secured by Investment in Mutual Funds"
+   },
+   {
+    "lender_or_type": "Current Maturities of Long Term Debts",
+    "amount_cr": 0.3502,
+    "note": ""
+   }
+  ]
+ }
+}

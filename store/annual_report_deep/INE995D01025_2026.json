@@ -1,0 +1,765 @@
+{
+ "isin": "INE995D01025",
+ "name": "Chembond Material Technologies Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29438_CHEMBOND_2025_2026_A_10122225_24062026173253.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 501274,
+ "chunks": 13,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "Chembond Material Technologies Limited (formerly Chembond Chemicals Limited) has one subsidiary, Chembond Biosciences Limited. The company invests in R&D facilities and develops cutting-edge products.",
+   "value_chain_position": "manufacturer",
+   "plants": [
+    {
+     "location": "head office",
+     "capacity": ""
+    },
+    {
+     "location": "Alandi",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No. E-6/3 & 4, MIDC Tarapur, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "W-268, TTC Area, MIDC, Rabale, Navi Mumbai, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Unit 2, Gat no. 226, Alandi Markal Road, Pune, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "A-737/5, MIDC, Mahape, Navi Mumbai, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Tarapur",
+     "capacity": ""
+    }
+   ],
+   "products": [
+    {
+     "name": "Sale of Goods",
+     "share_of_revenue_pct": null,
+     "note": "Primary revenue source; Rs 20,943.35 lakhs in 2025-26"
+    },
+    {
+     "name": "Sales of Services",
+     "share_of_revenue_pct": null,
+     "note": "Minor revenue; Rs 0.90 lakhs in 2025-26"
+    },
+    {
+     "name": "Management Services Charges from Related Party",
+     "share_of_revenue_pct": null,
+     "note": "Other operating revenue; Rs 3.91 lakhs in 2025-26"
+    },
+    {
+     "name": "Specialty Chemicals",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Vitamins & Minerals",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Probiotic and Prebiotic Enzymes",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Feed Additives and Nutrition products",
+     "share_of_revenue_pct": null,
+     "note": "related to Animal Health"
+    },
+    {
+     "name": "Animal Health",
+     "share_of_revenue_pct": 16.9,
+     "note": "External sales of Rs 4,214.64 lakhs out of total Rs 25,007.40 lakhs in 2025-26"
+    },
+    {
+     "name": "Metal Treatment Chemicals",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Automotive Sealants",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Coatings",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Engineering Adhesives",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Paint Booth Solutions",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Biosciences",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Export (FOB Basis)",
+     "share_pct": null
+    },
+    {
+     "name": "Export (FOB)",
+     "share_pct": 1.6
+    }
+   ],
+   "raw_materials": [
+    "Raw Materials",
+    "Packing Materials"
+   ],
+   "end_markets": [
+    "Animal Health",
+    "Specialty Chemicals",
+    "automotive",
+    "industrial",
+    "biosciences"
+   ]
+  },
+  "risks": [
+   "In the opinion of the Board, no risk has been identified during FY 2025-26 that may materially threaten the existence of the Company.",
+   "Foreign exchange risk managed to the extent considered necessary",
+   "Contingent liabilities involving disputed income tax, service tax, GST demands and legal cases regarding product quality",
+   "Service tax demand of Rs 259.42 lakh for FY 2014-15 to FY 2017-18 (up to June 2017) pending before Dy. Commissioner (Audit)",
+   "GST demand of Rs 178.48 lakh for FY 2023-24 pending before Deputy Commissioner of State Tax, Maharashtra",
+   "Income tax demand of Rs 15.17 lakh for FY 2022-23 pending for rectification before Assistant Commissioner Circle 6(2)(1), Central Processing Center, Bengaluru",
+   "Audit trail feature not enabled at database level for accounting software to log direct data changes",
+   "Title deeds and lease agreements of immovable properties in process of transfer pursuant to composite scheme of arrangement",
+   "Credit risk from trade receivables and investments",
+   "Liquidity risk managed through working capital lines and monitoring funding options",
+   "Market risk including foreign exchange rate risk (USD, EUR), interest rate risk, and investment market value risk",
+   "Currency risk due to mismatch in sales, purchase, and expense currencies vs INR; no forward contracts used for hedging",
+   "Interest rate risk on investments, mitigated by investing in various tenors",
+   "Contingent liabilities include disputed income tax, service tax, GST demands, and a legal case by Davendra Feeds India Private Limited regarding inferior quality products",
+   "Sensitivity of defined benefit obligations to discount rate and salary growth assumptions",
+   "Liquidity risk managed through working capital lines from banks",
+   "Market risk including foreign exchange rate risk (EUR, USD), interest rate risk, and investment market value risk",
+   "Currency risk due to mismatch between transaction currencies (EUR, USD) and functional currency (INR)",
+   "No forward contracts to hedge foreign currency risks"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Chembond Biosciences Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Chembond Biosciences Limited",
+    "holding_pct": null,
+    "business": "WOS Company"
+   },
+   {
+    "name": "Chembond Biosciences Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Chembond Biosciences Limited",
+    "holding_pct": null,
+    "business": "Subsidiary company"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "",
+    "nature": "All related party transactions entered into by the Company during the financial year under review were undertaken in the ordinary course of business and on an arm's length basis.",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Party",
+    "nature": "Management Services Charges",
+    "amount_cr": 0.0391
+   },
+   {
+    "party": "Related Party",
+    "nature": "CSR Expenditure",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Party",
+    "nature": "Trade Receivables",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Party",
+    "nature": "Trade Payables",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Party",
+    "nature": "Loans and Advances",
+    "amount_cr": null
+   },
+   {
+    "party": "Chembond Biosciences Limited",
+    "nature": "Subsidiary",
+    "amount_cr": 1.1112
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Entity where KMP are interested",
+    "amount_cr": 2.676
+   },
+   {
+    "party": "Chembond Chemicals Ltd",
+    "nature": "Entity where KMP are interested",
+    "amount_cr": 0.0873
+   },
+   {
+    "party": "Chembond Distribution Ltd",
+    "nature": "Entity where KMP are interested",
+    "amount_cr": 0.1413
+   },
+   {
+    "party": "S and N Ventures Pvt Ltd",
+    "nature": "Entity where KMP are interested",
+    "amount_cr": 0.2032
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "KMP Remuneration",
+    "amount_cr": 4.3907
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Sales of Goods",
+    "amount_cr": 2.676
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Purchase of Goods",
+    "amount_cr": 0.1556
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "SubContract Expenses",
+    "amount_cr": 0.0051
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Rental Expenses",
+    "amount_cr": 0.018
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Corporate Guarantee Fees (Income)",
+    "amount_cr": 0.24
+   },
+   {
+    "party": "Chembond Water Technologies Ltd",
+    "nature": "Management Service Charges (Income)",
+    "amount_cr": 2.0
+   },
+   {
+    "party": "Chembond Chemicals Ltd",
+    "nature": "Sales of Goods",
+    "amount_cr": 0.0873
+   },
+   {
+    "party": "Chembond Chemicals Ltd",
+    "nature": "Purchase of Goods",
+    "amount_cr": 0.0098
+   },
+   {
+    "party": "Chembond Chemicals Ltd",
+    "nature": "Rental Expenses",
+    "amount_cr": 0.384
+   },
+   {
+    "party": "Chembond Distribution Ltd",
+    "nature": "Sales of Goods",
+    "amount_cr": 0.1413
+   },
+   {
+    "party": "Chembond Distribution Ltd",
+    "nature": "Purchase of Goods",
+    "amount_cr": 1.0974
+   },
+   {
+    "party": "Chembond Distribution Ltd",
+    "nature": "Rent Income",
+    "amount_cr": 0.0728
+   },
+   {
+    "party": "Chembond Biosciences Ltd",
+    "nature": "Sales of Goods",
+    "amount_cr": 1.1718
+   },
+   {
+    "party": "Chembond Biosciences Ltd",
+    "nature": "Purchase of Goods",
+    "amount_cr": 1.1112
+   },
+   {
+    "party": "Chembond Biosciences Ltd",
+    "nature": "SubContract Income",
+    "amount_cr": 1.0418
+   },
+   {
+    "party": "S and N Ventures Pvt Ltd",
+    "nature": "Royalty",
+    "amount_cr": 0.2032
+   },
+   {
+    "party": "KMP & Relatives",
+    "nature": "Employment Benefits",
+    "amount_cr": 4.4253
+   },
+   {
+    "party": "KMP & Relatives",
+    "nature": "Sitting Fees",
+    "amount_cr": 0.096
+   },
+   {
+    "party": "KMP & Relatives",
+    "nature": "Professional and consultancy charges",
+    "amount_cr": 0.2974
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Kastury & Talati, Chartered Accountants (Firm Reg. No. 104908W)",
+   "opinion": "There has been no modified opinion, qualification, reservation, adverse remark or disclaimer given by the Auditors in their Report during the year under review.",
+   "key_audit_matters": [
+    "Contingent liabilities",
+    "Contingent liabilities involving disputed income tax, service tax, GST demands and legal case regarding inferior quality products"
+   ],
+   "qualifications_or_emphasis": [
+    "Audit trail feature not enabled at database level for accounting software to log direct data changes (Note 49)",
+    "Title deeds and lease agreements of immovable properties in process of transfer pursuant to composite scheme of arrangement",
+    "Books of account maintained except for matters stated in paragraph 8(D)(vi) regarding audit trail",
+    "Audit trail feature not enabled at database level for accounting software",
+    "Modifications relating to maintenance of accounts and audit trail reporting under section 143(3)(b) and Rule 11(g)",
+    "audit trail feature is not enabled at the database level for accounting software to log any direct data changes"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Resignation received from SHBA & Co LLP (Firm Reg. No. 101046W / W100063) Statutory Auditors of the Company from the date of ensuing 50th AGM of the Company. Appointed M/s. Kastury & Talati, Chartered Accountants (Firm Reg. No. 104908W) as Statutory Auditor of the Company from the date of ensuing 50th AGM for a term of 5 years i.e. till the 55th AGM to be held in the year 2030.",
+    "Appointed Mr. Virendra Bhatt, Practicing Company Secretary (ACS No. 1157/ COP No. 124) as Secretarial Auditor of the Company for a period of five consecutive years commencing from financial year 2025-26 till financial year 2029-30.",
+    "Re-appointment of Mr. Sameer V. Shah (DIN:00105721) as the Chairman & Managing Director of the Company for a term of 3 years w.e.f. August 1, 2025 till July 31, 2028.",
+    "Appointed and Regularised Mr. Jaywant K. Tawade (DIN:08231696) as an Additional (Executive) Director of the Company w.e.f. May 31, 2025 for a period of three years.",
+    "Appointed and Regularised Mr. Kamal Tandon (DIN: 09664746) as an Independent Director of the Company for a period of five years w.e.f. July 16, 2025.",
+    "Mr Ashwin R. Nagarwadia (DIN:00466681), Non-executive Director resigned with effect from the end of the day on May 30, 2025 due to advancing age.",
+    "Dr. Prakash Trivedi completed his 2nd term of 5 consecutive years as an Independent Director and ceased to hold office with effect from May 21, 2025.",
+    "Mr. Nirmal V. Shah (DIN:00083853) stepped down from the position of Vice-Chairman and Managing Director, w.e.f. EOD May 30, 2025. He continues as a Non-executive Director of the Company.",
+    "Ashwin Nagarwadia resigned as Non-executive Director w.e.f. May 31, 2025",
+    "Prakash Trivedi retired as Independent Director w.e.f. May 21, 2025",
+    "Jaywant Tawade appointed as Executive Director w.e.f. May 31, 2025",
+    "Kamal Tandon appointed as Independent Director w.e.f. July 16, 2025",
+    "Appointment of Mr. Jayesh Shah as Director and Independent Director (2024 AGM)",
+    "Appointment of Mr. Jaywant Tawade as Director and Executive Director (2025 AGM)",
+    "Re-appointment of Mr. Sameer Shah as Chairman and Managing Director (2025 AGM)",
+    "Appointment of Mr. Kamal Tandon as Director and Independent Director (2025 AGM)",
+    "Appointment of Mrs. Gorsi Parekh as Director and Independent Director (Postal Ballot, result declared May 28, 2025)",
+    "Appointment of Mr. Mayank Shah as Director and Independent Director (Postal Ballot, result declared May 28, 2025)",
+    "Cessation of Mr. Prakash Trivedi as Member of CSR Committee w.e.f. May 21, 2025",
+    "Cessation of Mr. Ashwin Nagarwadia as Member of Risk Management Committee w.e.f. May 31, 2025",
+    "Cessation of Mr. Jayesh Shah as Member of Risk Management Committee w.e.f. July 25, 2025",
+    "Appointment of Mr. Mayank Shah as Member and Chairman of Risk Management Committee w.e.f. July 25, 2025",
+    "Appointment of Mr. Jaywant Tawade as Member of Risk Management Committee w.e.f. May 31, 2025",
+    "Appointment of Mr. Kamal Tandon as Member of Risk Management Committee w.e.f. July 25, 2025",
+    "Mr. Jaywant Tawade appointed as Executive Director for 3 years effective May 31, 2025"
+   ],
+   "auditor_change": "Resignation received from SHBA & Co LLP (Firm Reg. No. 101046W / W100063) Statutory Auditors of the Company from the date of ensuing 50th AGM of the Company. Appointed M/s. Kastury & Talati, Chartered Accountants (Firm Reg. No. 104908W) as Statutory Auditor of the Company from the date of ensuing 50th AGM for a term of 5 years i.e. till the 55th AGM to be held in the year 2030.",
+   "promoter_holding_pct": 68.08,
+   "top_shareholders": [
+    {
+     "name": "Ajay Chinubhai laloo",
+     "pct": 2.04
+    },
+    {
+     "name": "Zaki Abbas Nasser",
+     "pct": 1.64
+    },
+    {
+     "name": "Acadian Emerging Markets Micro-Cap Equity Master Fund",
+     "pct": 0.61
+    },
+    {
+     "name": "Ashok J Thawani",
+     "pct": 0.48
+    },
+    {
+     "name": "Awriga Capital Advisors LLP",
+     "pct": 0.4
+    },
+    {
+     "name": "Dena Bank",
+     "pct": 0.35
+    },
+    {
+     "name": "Shepherd's Hill Private Investment Fund",
+     "pct": 0.34
+    },
+    {
+     "name": "Manish Arvind Parikh HUF",
+     "pct": 0.32
+    },
+    {
+     "name": "Vrushal Trading Private Limited",
+     "pct": 0.31
+    },
+    {
+     "name": "Gokul Shrigopal Maheshwari",
+     "pct": 0.3
+    },
+    {
+     "name": "Sameer Vinod Shah",
+     "pct": 27.36
+    },
+    {
+     "name": "Padma Vinod Shah",
+     "pct": 12.57
+    },
+    {
+     "name": "Visan Holdings Pvt. Ltd.",
+     "pct": 9.75
+    },
+    {
+     "name": "Nirmal Vinod Shah",
+     "pct": 0.007
+    },
+    {
+     "name": "Ashwin Ratilal Nagarwadia",
+     "pct": 3.72
+    },
+    {
+     "name": "Bhadresh Shah",
+     "pct": 1.4
+    }
+   ]
+  },
+  "litigation": [
+   "During the year under review, there has been one pending litigation against the Company and its Directors whose order is yet to be received. The matter is explained in detail in the Corporate Governance Section of the Annual Report.",
+   "Davendra Feeds India Private Limited lodged FIR in June 2022 against Chembond Material Technologies Limited, Mr. Sameer Shah and 3 other current/ex-employees regarding damage caused by inferior quality products supplied in 2018-19. Company has disclaimed liability and is defending the action. Potential effect not estimable.",
+   "Rajkumar Mor of Mor Hatcheries lodged FIR in January 2023 against one of the Company's distributors in Haryana and Mr. Sameer Shah (Director in Chembond Biosciences Limited) regarding alleged defective supply of vitamin premix. Company has disclaimed liability and is defending the action. Potential effect not estimable.",
+   "Service tax demand of Rs 259.42 lakh for FY 2014-15 to FY 2017-18 (up to June 2017) pending before Dy. Commissioner (Audit)",
+   "GST demand of Rs 178.48 lakh for FY 2023-24 pending before Deputy Commissioner of State Tax, Maharashtra",
+   "Income tax demand of Rs 15.17 lakh for FY 2022-23 pending for rectification before Assistant Commissioner Circle 6(2)(1), Central Processing Center, Bengaluru",
+   "Davendra Feeds India Private Limited lodged FIR dated 24th June 2022 against Chembond Chemicals Limited (now Chembond Material Technologies Limited), Mr Sameer Shah (Chairman & Managing Director) and 3 other current & ex-employees regarding damage caused by inferior quality of products. Company has disclaimed liability and is defending the action.",
+   "Income Tax matter under Appeal (prior year: 14.39 lakhs)",
+   "TDS Default (prior year: 6.21 lakhs)",
+   "Service tax due as per final audit report and show cause notice (259.42 lakhs)",
+   "Income tax demands pending for rectification (15.17 lakhs current year, 178.48 lakhs prior year)",
+   "GST Demand on sale of Thane Plot - Dy Commissioner of State Tax (178.48 lakhs current year)",
+   "Davendra Feeds India Private Limited lodged FIR dated 24th June 2022 against Chembond Material Technologies Limited, Mr Sameer Shah (Chairman & Managing Director) and 3 other current & ex-employees for damage caused by inferior quality products",
+   "Rajkumar Mor of Mor Hatcheries lodged FIR dated 4th January 2023 against Chembond Biosciences Limited and Mr Sameer Shah (Director) for inferior quality products"
+  ],
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Sameer Shah",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Jaywant Tawade",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mrs. Rashmi Gavli",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Suchita Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sameer Shah",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Jaywant Tawade",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Rashmi Gavli",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Suchita Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sameer V. Shah",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Suchita Singh",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Sameer V. Shah",
+     "role": "Chairman & Managing Director (DIN: 00105721)"
+    },
+    {
+     "name": "Jayesh Shah",
+     "role": "Director (DIN: 00138346)"
+    },
+    {
+     "name": "Jaywant Tawade",
+     "role": "Executive Director (DIN: 08231696)"
+    },
+    {
+     "name": "Rashmi S. Gavli",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Nirmal V. Shah",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Jaywant K. Tawade",
+     "role": "Key Management Personnel / Executive Director"
+    },
+    {
+     "name": "Rashmi S. Gavli",
+     "role": "Key Management Personnel / Chief Financial Officer"
+    },
+    {
+     "name": "Suchita H. Singh",
+     "role": "Key Management Personnel / Company Secretary"
+    },
+    {
+     "name": "Jayesh Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Jayesh Shah",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Jaywant K. Tawade",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Rashmi S. Gavli",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Suchita H. Singh",
+     "role": "Key Management Personnel"
+    }
+   ],
+   "employees": 283
+  },
+  "other_notable": [
+   "The Company has not accepted any deposits within the meaning of Section 73 of the Act read with the Companies (Acceptance of Deposits) Rules, 2014 as amended from time to time.",
+   "Details of loans, guarantees and investments have been disclosed in the Financial Statements.",
+   "Mr. Jaywant Tawade (DIN:08231696) Executive Director, retires by rotation and being eligible, offers himself for re-appointment.",
+   "Mr. Sameer Shah, Chairman & Managing Director and Mr. Nirmal Shah, Non-executive Director are relatives (siblings). Apart from this none of the Directors of the Company are in any way related to each other.",
+   "All the Independent Directors of the Company have furnished a declaration to the effect that they meet the criteria of independence as provided in Section 149(6) of the Act and Regulation 16(1)(b) and Regulation 25 of the Listing Regulations.",
+   "Six (6) meetings of the Board were held during the year under review. The maximum gap between two Board Meetings did not exceed 120 days.",
+   "Based on the Company's performance during FY 2025-26 and pursuant to the recommendation of the NRC, the Board of Directors, at its meeting held on May 15, 2026, approved an incentive/performance-linked bonus of \u20b950.00 lakhs for Mr. Sameer Shah. The said amount shall be paid during FY 2026-27.",
+   "The NRC also recommended payment of commission to the Non-executive Directors for FY 2025-26, not exceeding 1% of the net profits of the Company computed in accordance with Section 198 of the Act. A total sum of \u20b93.60 lakhs collectively to the Non-executive Directors was approved by the Board. The commission shall be paid during FY 2026-27.",
+   "The Annual Return as provided under Section 92(3) read with Section 134(3)(a) of the Act as prescribed in Form No. MGT-7 of the Companies (Management and Administration) Rules, 2014, is available on the website of the company at https://chembond.in/annual-reports/.",
+   "The Company has established a robust Vigil Mechanism through its Whistle Blower Policy, which enables Directors and employees to report genuine concerns relating to unethical behaviour, actual or suspected fraud, violations of the Company's Code of Conduct, applicable laws, regulations, or internal policies.",
+   "Pursuant to the requirements of the Listing Regulations, the Company has constituted a Risk Management Committee to oversee the implementation and effectiveness of its risk management framework.",
+   "The Board of Directors on the recommendation of Audit Committee, at their meeting held on May 15, 2026 appointed M/s. Aatish & Associates, Cost & Management Accountants, Mumbai, (FRN: 006726/ Membership No. 30105) as the Cost Auditor to conduct audit of the cost records of the Company for FY 2026-27.",
+   "The relevant Cost Audit Report for the FY 2024-25 was filed with Ministry of Corporate Affairs on August 29, 2025 in Form CRA-4.",
+   "Mr. Virendra G. Bhatt, Practicing Company Secretary (C.P. No.: 124) has been appointed as Secretarial Auditor of the Company for a period of five (5) years from FY 2025-26 till FY 2029-30 and same was approved by shareholders at the 50th AGM held on August 14, 2025.",
+   "There are no qualification, reservation, adverse remark or disclaimer given by the Secretarial auditor in their report for the year under review.",
+   "During the year under review, the Statutory Auditor, Cost Auditor and Secretarial Auditor have not reported any instances of frauds committed in the Company by its officers or employees, to the Audit Committee under Section 143(12) of the Act details of which needs to be mentioned in this Annual Report.",
+   "In terms of Section 118(10) of the Act, the Company is complying with the Secretarial Standards issued by the Institute of Company Secretaries of India (ICSI) with respect to Meetings of Board of Directors and General Meetings and such systems were adequate and operating effectively.",
+   "The statement containing particulars of employees as required under Section 197 of the Act read with Rule 5(2) of the Companies (Appointment and Remuneration of Managerial Personnel) Rules, 2014, as amended, is annexed to this Report as Annexure 4.",
+   "Your Company has adopted CHEMBOND Employees Stock Option Scheme 2025 (CHEMBOND ESOP 2025) for granting options to eligible employees of your Company as approved by the Members of your Company at the 50th AGM held on August 14, 2025.",
+   "During FY 2025-26, the Company spent \u20b921.55 lakhs towards CSR activities through Visan Trust.",
+   "The Business Responsibility and Sustainability Report for the year ended March 31, 2026 as stipulated under Regulation 34(f) of the Listing Regulations is not applicable to the Company.",
+   "During the financial year under review, no complaint pertaining to sexual harassment was received by the ICC.",
+   "The Company is compliant with the applicable provisions of the Maternity Benefit Act, 1961 and has policies, systems and processes in place to ensure ongoing compliance.",
+   "All Directors and Senior Management Personnel have affirmed compliance with the Company's Code of Conduct for the fy 2025-26.",
+   "The Company has spent approx. \u20b9359.12 lakhs during the year under report on research and development.",
+   "During the year under review, the Company transferred the requisite shares to the demat account of the IEPF Authority in compliance with the applicable statutory provisions.",
+   "The Company undertook a 100-day investor awareness campaign Saksham Niveshak, as initiated by the Investor Education and Protection Fund Authority, Ministry of Corporate Affairs, during the period from July 28, 2025 to November 6, 2025.",
+   "The Company has also initiated actions under the second Saksham Niveshak Campaign which started from April 1, 2026.",
+   "Except as disclosed elsewhere in the Report, there have been no material changes and commitment affecting, the financial position of your Company, which have occurred between the end of the financial year of the Company and the date of this Report.",
+   "There are no such proceedings or appeals pending and no applications has been filed under Insolvency and Bankruptcy Code, 2016 during the year under review and from the end of the financial year upto the date of this report.",
+   "No such instance of one-time settlement or valuation was done while taking or discharging loan from the Banks/ Financial Institutions occurred during the year.",
+   "The Hon'ble National Company Law Tribunal, Mumbai Bench sanctioned the Composite Scheme of Arrangement between Chembond Chemicals Limited (Demerged Company/Transferee Company/Company) and Chembond Chemical Specialties Limited (Resulting Company or CCSL) and Chembond Clean Water Technologies Limited (Transferor Company No. 1 or CCWTL) and Chembond Material Technologies Private Limited (Transferor Company No. 2 or CMTPL) and Phiroze Sethna Private Limited (Transferor Company No. 3 or PSPL) and Gramos Chemicals (India) Private Limited (Transferor Company no. 4 or GCIPL) and their respective shareholders pursuant to",
+   "CSR obligation for FY 2025-26: \u20b921.53 lakhs; amount spent: \u20b921.55 lakhs through Visan Trust for child education/women empowerment in Palghar, Maharashtra",
+   "R&D expenditure FY 2025-26: Revenue \u20b9269.58 lakhs, Capital \u20b989.54 lakhs, Total \u20b9359.12 lakhs",
+   "Foreign exchange earnings (export of goods) FY 2025-26: \u20b9401.64 lakhs",
+   "ESOP 2025: 400,000 options approved; 23,688 and 10,550 options granted on 16-Jan-2026 at exercise prices \u20b9164 and \u20b9115 respectively",
+   "Median employee remuneration increase: 13.59%; non-KMP average salary increase: 24.01%; managerial remuneration increase: 18.54%",
+   "Company has established Vigil Mechanism/Whistle Blower Policy available at https://chembond.in/all-policies/",
+   "No complaints received under Sexual Harassment of Women at Workplace Act during FY 2025-26",
+   "No non-compliance with Corporate Governance requirements",
+   "No audit qualifications",
+   "Internal Auditors report directly to Audit Committee",
+   "Company has not issued any ADR/GDR/warrants/convertible instruments",
+   "Shares actively traded on BSE and NSE; 99.13% held in demat form as of March 31, 2026",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "Total fees paid to statutory auditor Kastury & Talati: \u20b917.11 lakhs for FY 2025-26 (including other services) and \u20b92.44 lakhs from one subsidiary",
+   "Certificate of Non-Disqualification of Directors issued by Virendra G. Bhatt, Practicing Company Secretary",
+   "Declaration on Compliance of Code of Conduct by Board Members and Senior Management for year ended March 31, 2026",
+   "CEO/CFO Certification issued for financial statements and cash flow statement for year ended March 31, 2026",
+   "Revenue from operations: Rs 21,014.12 lakh (2025-26) vs Rs 17,120.70 lakh (2024-25)",
+   "Profit for the year: Rs 775.88 lakh (2025-26) vs Rs 1,722.36 lakh (2024-25)",
+   "Total comprehensive income: Rs 795.46 lakh (2025-26) vs Rs 1,727.79 lakh (2024-25)",
+   "Basic/Diluted EPS: Rs 5.77 (2025-26) vs Rs 12.81 (2024-25)",
+   "Dividend paid: Rs 235.35 lakh (2025-26) vs Rs 470.69 lakh (2024-25)",
+   "Exceptional items: Rs (117.00) lakh (2025-26) vs Rs 154.74 lakh (2024-25)",
+   "No material fraud noticed or reported during the year",
+   "No whistle blower complaints received during the year",
+   "Company has not defaulted in repayment of loans or interest",
+   "Company is not declared willful defaulter by any bank/financial institution",
+   "No cash losses incurred in current or immediately preceding financial year"
+  ],
+  "capex_plans": [
+   {
+    "item": "energy conservation equipment",
+    "amount_cr": 1.5039,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Research & Development activities",
+    "amount_cr": 0.8954,
+    "timeline": "2025-26"
+   },
+   {
+    "item": "Research & Development activities",
+    "amount_cr": 0.3896,
+    "timeline": "2024-25"
+   },
+   {
+    "item": "Research & Development activities",
+    "amount_cr": 0.8954,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed liabilities in respect of income tax, service tax matters, GST demand and a case lodged against the Company with respect to inferior quality of products",
+    "amount_cr": null
+   },
+   {
+    "nature": "Service tax demand under Finance Act, 1994",
+    "amount_cr": 2.5942
+   },
+   {
+    "nature": "GST demand under Central Goods and Services Tax Act, 2017",
+    "amount_cr": 1.7848
+   },
+   {
+    "nature": "Income tax demand under Income Tax Act, 1961",
+    "amount_cr": 0.1517
+   },
+   {
+    "nature": "Service tax due as per final audit report and show cause notice",
+    "amount_cr": 2.5942
+   },
+   {
+    "nature": "Income tax demands pending for rectification",
+    "amount_cr": 0.1517
+   },
+   {
+    "nature": "GST Demand on sale of Thane Plot - Dy Commissioner of State Tax",
+    "amount_cr": 1.7848
+   },
+   {
+    "nature": "Case by Davendra Feeds India Private Limited regarding inferior quality products",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income tax matters under Appeal",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "TDS Default",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Income tax demands pending for rectification",
+    "amount_cr": 1.517
+   },
+   {
+    "nature": "FIR by Davendra Feeds India Private Limited against company and directors for inferior quality products",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "FIR by Rajkumar Mor of Mor Hatcheries against Chembond Biosciences Limited and director for inferior quality products",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Corporate Guarantee given to Bank of India on behalf of subsidiary",
+    "amount_cr": 0.0
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Total Bank Loan",
+    "amount_cr": 12,
+    "note": "Long term Rating \u2013 CRISIL BBB+/Watch Negative; Short term Rating \u2013 CRISIL A2/Watch Negative"
+   },
+   {
+    "lender_or_type": "Working capital limits from banks/financial institutions",
+    "amount_cr": null,
+    "note": "Sanctioned in excess of five crore rupees on basis of security of current assets; quarterly statements filed with banks are in agreement with books of accounts"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": 4.725,
+    "note": "Sanctioned credit facility"
+   },
+   {
+    "lender_or_type": "Bank of India",
+    "amount_cr": 1.0,
+    "note": "Sanctioned credit facility (cash credit 3.20 cr, letter of credit 2.096 cr, bank guarantee 0.4289 cr)"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 4.157,
+    "note": "As at 31/03/2026"
+   },
+   {
+    "lender_or_type": "Working Capital Loan from Banks",
+    "amount_cr": 4.157,
+    "note": "Secured by charge on Inventories, Trade Receivables & Bank Deposits"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 4.157,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 2.6463,
+    "note": "As at 31 March 2025"
+   },
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": 5.725,
+    "note": "Sanctioned credit facility"
+   },
+   {
+    "lender_or_type": "Bank of India",
+    "amount_cr": 5.0,
+    "note": "Sanctioned credit facility; utilised cash credit of Rs 4.157 crore at year end"
+   }
+  ],
+  "dividend_per_share": 2.0
+ }
+}

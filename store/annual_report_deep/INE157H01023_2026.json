@@ -1,0 +1,1319 @@
+{
+ "isin": "INE157H01023",
+ "name": "K.M.Sugar Mills Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29574_KMSUGAR_2025_2026_A_6481122_04072026194637.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 650590,
+ "chunks": 17,
+ "chunks_ok": 16,
+ "facts": {
+  "business": {
+   "description": "K.M. Sugar Mills Limited is an integrated sugar enterprise engaged in the manufacture of sugar, ethanol, and co-generated power from bagasse. The company operates sugar crushing, distillery, and power generation facilities in Ayodhya, Uttar Pradesh.",
+   "products": [
+    {
+     "name": "Sugar",
+     "share_of_revenue_pct": null,
+     "note": "White crystal sugar and raw sugar for domestic and export markets"
+    },
+    {
+     "name": "Ethanol",
+     "share_of_revenue_pct": null,
+     "note": "Produced through distillery operations; sales Rs. 5294 lacs in FY 2025-26"
+    },
+    {
+     "name": "Rectified Spirit",
+     "share_of_revenue_pct": null,
+     "note": "Produced by distillery division; production 91.12 Lacs BL in FY 2025-26"
+    },
+    {
+     "name": "Country Liquor",
+     "share_of_revenue_pct": null,
+     "note": "Production 13.79 Lacs cases, Sales 13.68 Lacs cases in FY 2025-26"
+    },
+    {
+     "name": "Power",
+     "share_of_revenue_pct": null,
+     "note": "25 MW bagasse-based co-generation power plant; supplied to UPPCL"
+    },
+    {
+     "name": "Distillery (Ethanol)",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 9,121 lakh (gross) for 2025-26"
+    },
+    {
+     "name": "Ethyl Alcohol",
+     "share_of_revenue_pct": null,
+     "note": "Allied business activity"
+    },
+    {
+     "name": "Power (using bagasse)",
+     "share_of_revenue_pct": null,
+     "note": "Allied business activity"
+    },
+    {
+     "name": "Distillery products",
+     "share_of_revenue_pct": null,
+     "note": "Raw material valued on FIFO basis"
+    },
+    {
+     "name": "Co-generation power",
+     "share_of_revenue_pct": null,
+     "note": "Raw material valued on FIFO basis"
+    },
+    {
+     "name": "Trading goods",
+     "share_of_revenue_pct": null,
+     "note": "Valued on FIFO basis"
+    },
+    {
+     "name": "Molasses",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 22.80 lakhs in FY2026"
+    },
+    {
+     "name": "Bagasse",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 3,055.15 lakhs in FY2026"
+    },
+    {
+     "name": "Industrial Alcohol",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 5,294.22 lakhs in FY2026"
+    },
+    {
+     "name": "Sanitizers",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Banked Power",
+     "share_of_revenue_pct": null,
+     "note": "Opening and closing stock disclosed"
+    },
+    {
+     "name": "Distillery",
+     "share_of_revenue_pct": null,
+     "note": "Primary business segment per Ind AS 108"
+    },
+    {
+     "name": "Electricity",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "Domestic sugar market",
+    "Export markets",
+    "Uttar Pradesh Power Corporation Limited (UPPCL)",
+    "Ethanol buyers (OMCs implied)",
+    "U.P. Power Corporation Limited (for surplus power)",
+    "Sugarcane growers/farmers in command area",
+    "Oil Marketing Companies (OMCs) for ethanol",
+    "Government undertakings for power",
+    "General market for sugar",
+    "State government entities for power and ethanol",
+    "Oil manufacturing companies for ethanol",
+    "General market for sugar and by-products",
+    "Sugar sold mostly on cash basis"
+   ],
+   "geographies": [
+    {
+     "name": "India (Domestic)",
+     "share_pct": null
+    },
+    {
+     "name": "Export markets",
+     "share_pct": null
+    },
+    {
+     "name": "Uttar Pradesh, India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Motinagar, District Ayodhya, Uttar Pradesh",
+     "capacity": "Sugar crushing: 9,500 TCD; Distillery: Ethanol 50 KLPD, Rectified Spirit 45 KLPD; Power: 25 MW co-generation"
+    },
+    {
+     "location": "Not specified in text",
+     "capacity": "Bagasse-based power generation plant (capacity not specified)"
+    },
+    {
+     "location": "Sugar Unit- District Ayodhya, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Distillery Unit- District Ayodhya, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Bihar",
+     "capacity": "Country liquor bottling unit (discontinued, plant and machinery moved to Distillery Unit)"
+    }
+   ],
+   "raw_materials": [
+    "Sugarcane",
+    "Bagasse (by-product used for power)",
+    "Molasses (by-product used for distillery)",
+    "Bagasse (for power generation)",
+    "Sugar cane",
+    "Molasses",
+    "Raw materials for distillery",
+    "Raw materials for co-generation",
+    "Other materials",
+    "Indigenous raw materials (100% of consumption)",
+    "Indigenous stores and packing material (100% of consumption)"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Sugar (domestic & export)",
+    "Ethanol (fuel blending)",
+    "Power (state utility)",
+    "Country Liquor",
+    "Sugar market",
+    "Power distribution (U.P. Power Corporation Limited)",
+    "Sugar",
+    "Ethanol blending",
+    "Power",
+    "Ethanol/Industrial alcohol market",
+    "Power sector",
+    "Country liquor market",
+    "Ethanol",
+    "Distillery products"
+   ],
+   "competitors_named": [
+    "Shree Renuka Sugars Limited"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The Company is committed to embedding a futuristic approach that integrates innovation, automation, and artificial intelligence into its operations to enhance productivity, optimize resource efficiency, reduce environmental impact, and create adaptive systems.",
+    "period": "Forward looking"
+   },
+   {
+    "statement": "The demerger of the Distillery Division into KM Spirits and Allied Industries Limited aims to unlock shareholder value by creating focused entities for sugar and distillery businesses, enabling better operational efficiency, independent growth strategies, and access to capital markets.",
+    "period": "Appointed date April 01, 2026"
+   },
+   {
+    "statement": "Sugarcane development initiatives expected to result in improved sugarcane yield and recovery, enhanced soil health and sustainability, reduction in cultivation cost through mechanization, increased adoption of scientific farming practices, better crop monitoring and timely advisory support to growers, and long-term improvement in cane quality and productivity.",
+    "period": "Future periods"
+   },
+   {
+    "statement": "Global sugar market projected to grow at ~1% CAGR (2024-2032), reaching 197.19 million tonnes by 2032. India projected to remain among fastest growing major economies with 6.4% real GDP growth in 2026. Industry seeks MSP revision, stable ethanol policy, liquidity support, export facilitation, and sustainability incentives.",
+    "period": "2025-26 and beyond"
+   },
+   {
+    "statement": "The Board of Directors approved the Scheme of Arrangement for the demerger of the Company's Distillery Division into its wholly owned subsidiary, KM Spirits and Allied Industries Limited, on a going concern basis. The Scheme received no-objection/observations from the Stock Exchanges. The Hon'ble NCLT, Allahabad Bench, approved the first motion application and directed convening of meetings of equity shareholders and unsecured creditors. The meeting of equity shareholders was held on May 30, 2026, wherein the Scheme was approved with requisite majority. The Scheme is subject to further necessary approvals, including final sanction of the Hon'ble NCLT and other regulatory authorities.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company expects increase in productivity and profits in due course. However, in view of the fact that Sugar Industry is a Govt. controlled industry, giving expected increase in measurable terms is not possible.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Sugar industry cyclicality affecting realisations and profitability",
+   "Higher cane price or higher production than demand",
+   "Foreign currency risk on foreign currency-denominated borrowings (mitigated via forward/swap contracts)",
+   "Regulatory and policy changes in sugar/ethanol sector",
+   "Commodity Price Risk",
+   "Foreign Exchange Risk",
+   "Interest rate risk on floating rate borrowings",
+   "Foreign currency risk (managed via forward/swap contracts; INR term loan converted to foreign currency for 180 days with hedging)",
+   "Regulatory risk (sugar and distillery businesses dependent on central/state government policies)",
+   "Commodity price risk (sugar industry cyclicality, cane price vs sugar realization mismatch)",
+   "Credit risk (mitigated: sugar sales mostly cash; ethanol/power sold to government entities)",
+   "Liquidity risk",
+   "Market risk",
+   "Climate change and water scarcity",
+   "US tariff of 24.99% on sugar/confectionery exports (April 2025)",
+   "Ethanol diversion shortfall (34 lakh tonnes vs 50 lakh tonnes target) due to OMC preference for grain-based ethanol",
+   "MSP stagnant at Rs 31/kg since 2019 while FRP at Rs 355/quintal creating financial stress",
+   "Valuation of inventory of sugar involves significant judgement in consideration of factors such as minimum sale price, monthly quota, fluctuation in selling prices and related government notifications.",
+   "Contingent liabilities estimation involves significant management judgement in interpreting pending litigation cases and may be subject to management bias.",
+   "Regulatory risk from central and state government policies affecting sugar and distillery business",
+   "Commodity price risk due to cyclical nature of sugar industry",
+   "Credit risk on trade receivables",
+   "Valuation of inventory of sugar involves significant judgement in consideration of factors such as minimum sale price, monthly quota, fluctuation in selling prices and related notifications of the Government",
+   "Contingent liabilities estimation involves significant degree of management judgement in interpreting the cases and may be subject to management bias",
+   "Regulatory risk: Sugar industry regulated by central and state governments; policies affect operations and profitability",
+   "Commodity price risk: Sugar industry cyclical; higher cane price or production affects profitability",
+   "Interest rate risk: Exposure to floating rate borrowings",
+   "Foreign currency risk: Term loan converted to foreign currency for 180 days with hedging",
+   "Credit risk: Trade receivables with provision for expected credit loss",
+   "Liquidity risk: Managed through cash credit facilities and term loans",
+   "Certain balances in trade receivables, advances, deposit accounts and trade payables are subject to reconciliation and confirmation",
+   "Loan from U.P. Government (Rs.14.50 lakhs) with interest dispute sub-judice before Allahabad High Court",
+   "Operations of country liquor bottling unit in Bihar discontinued per state government directions",
+   "Sugar industry is seasonal; cost of production worked out on annualized basis",
+   "Sugar Industry is a Govt. controlled industry"
+  ],
+  "subsidiaries": [
+   {
+    "name": "KM Spirits and Allied Industries Limited",
+    "holding_pct": 100,
+    "business": "Incorporated to manufacture all types of spirits; wholly owned subsidiary; yet to commence operations; investment of Rs. 5.00 Lacs; appointed as Resulting Company for demerger of Distillery Division"
+   },
+   {
+    "name": "Not specified",
+    "holding_pct": null,
+    "business": "The Company does not have any material subsidiaries."
+   },
+   {
+    "name": "K M Strategic Investments & Holding Pvt Ltd",
+    "holding_pct": null,
+    "business": "principal business activity"
+   },
+   {
+    "name": "Sonar Castings Limited",
+    "holding_pct": null,
+    "business": "ductile Iron project at West Bengal"
+   },
+   {
+    "name": "K.M. Spirits and Allied Industries Ltd",
+    "holding_pct": 99.99,
+    "business": "Yet to commence operations; intended to receive the demerged Distillery Division of K M Sugar Mills Limited"
+   },
+   {
+    "name": "KM Sprits and Allied Industries Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary company"
+   },
+   {
+    "name": "K M Spirits and Allied Industries Limited",
+    "holding_pct": null,
+    "business": "Total assets of Rs.5.49 lakhs as at 31st March, 2026, total revenues of Rs.0.30 lakhs and net cash flows amounting to Rs.0.20 lakhs for the year ended on that date"
+   },
+   {
+    "name": "KM Spirits and Allied Industries Ltd.",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Chamoli Hydro Power Pvt. Ltd.",
+    "holding_pct": null,
+    "business": "Hydro power"
+   },
+   {
+    "name": "K.M Shakar Karkhana Pvt Ltd.",
+    "holding_pct": null,
+    "business": "Sugar mill"
+   },
+   {
+    "name": "HH Foundation",
+    "holding_pct": null,
+    "business": "Foundation"
+   },
+   {
+    "name": "Sonar Casting Ltd.",
+    "holding_pct": null,
+    "business": "Casting"
+   },
+   {
+    "name": "K M Stratagic Investments & Holdings Pvt. Ltd.",
+    "holding_pct": null,
+    "business": "Investments & Holdings"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Punjab National Bank",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "HDFC Bank Ltd",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Yes Bank Ltd",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Foreign currency-denominated borrowings",
+    "amount_cr": null,
+    "note": "Exposure covered by foreign exchange forward contracts and currency swap contracts"
+   },
+   {
+    "lender_or_type": "Bankers/lenders (not individually named)",
+    "amount_cr": null,
+    "note": "Finance Committee reviews finances, investments, requirements of funds/loans and liaisoning with Banks/lenders; Members approved limits under Section 186(3) up to Rs. 400.00 Cr or 60% of paid-up capital/free reserves/securities premium or 100% of free reserves/securities premium, whichever is higher"
+   },
+   {
+    "lender_or_type": "Term loan (foreign currency)",
+    "amount_cr": 17.85,
+    "note": "Outstanding balance USD 21,04,941 (Rs 1,784.74 lakh) as on 31st March 2025; NIL as on 31st March 2026. INR term loan converted to foreign currency for 180 days with hedging during current financial year."
+   },
+   {
+    "lender_or_type": "Banks (working capital limits)",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of Rs.5 crore in aggregate during the year on the basis of security of current assets"
+   },
+   {
+    "lender_or_type": "Term loans",
+    "amount_cr": null,
+    "note": "Applied for the purpose for which the loans were obtained"
+   },
+   {
+    "lender_or_type": "State Bank of India - Working Capital",
+    "amount_cr": 133.62,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "Punjab National Bank - Working Capital",
+    "amount_cr": 44.92,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "HDFC Bank Ltd. - Working Capital",
+    "amount_cr": 25.91,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "Yes Bank Ltd. - Working Capital",
+    "amount_cr": 35.01,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "HDFC Bank - Term Loan",
+    "amount_cr": 9.38,
+    "note": "Secured by exclusive first charge on refinery assets, 7.16% interest, repayable in 6 quarterly installments of Rs.156.25 lakhs"
+   },
+   {
+    "lender_or_type": "BMW Financial Services Pvt. Ltd. - Car Loan",
+    "amount_cr": 0.92,
+    "note": "Secured by first charge on car, 7.77% interest, repayable in 2 monthly installments of Rs.4.68 lakhs"
+   },
+   {
+    "lender_or_type": "Total Debt (includes lease liabilities)",
+    "amount_cr": null,
+    "note": "Debt-Equity Ratio 0.64 as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Non-current Borrowings",
+    "amount_cr": 3.5331,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Current Borrowings",
+    "amount_cr": 246.2116,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "State Bank of India - GECL",
+    "amount_cr": 0,
+    "note": "Secured by second charge on entire fixed assets and current assets"
+   },
+   {
+    "lender_or_type": "State Bank of India - Turbine Term Loan",
+    "amount_cr": 0,
+    "note": "Secured by exclusive first charge on 15 MW turbine and pari passu first charge on entire fixed assets"
+   },
+   {
+    "lender_or_type": "State Bank of India - Term Loan",
+    "amount_cr": 0,
+    "note": "Secured by exclusive first charge on refinery assets and pari passu first charge on entire fixed assets"
+   },
+   {
+    "lender_or_type": "HDFC Bank Term Loan",
+    "amount_cr": 9.375,
+    "note": "Secured by exclusive first charge on refinery assets and pari passu first charge on entire fixed assets; 7.16% interest; repayable in 6 quarterly instalments of Rs.156.25 lakhs"
+   },
+   {
+    "lender_or_type": "BMW Financial Services Pvt. Ltd. - Car Loan",
+    "amount_cr": 0.917,
+    "note": "Secured by first charge on car financed; 7.77% interest; repayable in 2 monthly instalments of Rs.4.68 lakhs including EMI interest"
+   },
+   {
+    "lender_or_type": "State Bank of India - Working Capital",
+    "amount_cr": 133.619,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "Punjab National Bank - Working Capital",
+    "amount_cr": 44.9175,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "HDFC Bank Ltd. - Working Capital",
+    "amount_cr": 25.9066,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "Yes Bank Ltd. - Working Capital",
+    "amount_cr": 35.0097,
+    "note": "Secured by hypothecation and first pari passu charge on stocks and book debts"
+   },
+   {
+    "lender_or_type": "Term loans",
+    "amount_cr": 10.29,
+    "note": "As at 31 March 2026; maturity: less than 1 year Rs. 675.88 lakhs, 1-5 years Rs. 353.51 lakhs"
+   },
+   {
+    "lender_or_type": "Loans repayable on demand (Cash credit)",
+    "amount_cr": 239.45,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Total Borrowings",
+    "amount_cr": 249.74,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Floating rate borrowings from Bank, Government and others",
+    "amount_cr": 10.29,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Loan from U.P. Government",
+    "amount_cr": 0.15,
+    "note": "Interest dispute sub-judice before Allahabad High Court"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Mehrotra & Mehrotra, Chartered Accountants (FRN.000226C)",
+   "opinion": "The Auditor's Report for the financial year ended March 31, 2026, does not contain any qualification, reservation or adverse remark.",
+   "qualifications_or_emphasis": [
+    "Compliance certification is neither assurance of future viability nor of efficiency/effectiveness of management.",
+    "Investments made in non-cumulative preference shares and equity shares are not prejudicial to the interest of the company except that the investment made are in non-cumulative preference shares and equity shares.",
+    "Statements filed with banks for working capital limits are in agreement with books of account other than those set out in Note No.37.32 having difference because of statements filed with the lenders are based on provisional basis and also because of exclusion of certain current assets in the statement filed with lenders.",
+    "Title deeds of immovable properties (self-constructed buildings) are held in the name of the Company as at the balance sheet date."
+   ],
+   "key_audit_matters": [
+    "Valuation of inventory of sugar: Carrying value INR 37521.75 lakhs as on March 31, 2026, valued at lower of cost and net realizable value with significant judgement involved in minimum sale price, monthly quota, fluctuation in selling prices and government notifications.",
+    "Contingent Liabilities: Various litigations pending before various forums requiring management judgement for estimating amounts to be disclosed as contingent liability.",
+    "Valuation of inventory of sugar: Carrying value INR 37,521.75 lakhs as on March 31, 2026, valued at lower of cost and net realizable value with significant judgement involved in factors such as minimum sale price, monthly quota, fluctuation in selling prices and related Government notifications",
+    "Contingent Liabilities: Various litigations pending before various forums, management judgement required for estimating amounts to be disclosed as contingent liability"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Shri L.K. Jhunjhunwala, Chairman and Promoter, passed away on 14.03.2026",
+    "Smt. Naina Devi Jhunjhunwala appointed as Additional Director w.e.f 18.05.2026",
+    "Ms. Ritika Tandon appointed as Company Secretary w.e.f 07.08.2025",
+    "Shri L.K. Jhunjhunwala ceased as Director w.e.f. 14.03.2026 due to demise",
+    "Smt. Naina Devi Jhunjhunwala appointed as Additional Director w.e.f. 18.05.2026",
+    "Shri Bibhas Kumar Srivastav reappointed as Independent Director for additional term of 5 years w.e.f. February 01, 2026",
+    "Ms. Ritika Tandon appointed as Company Secretary and Compliance Officer w.e.f. 07.08.2025 in place of Mrs. Pooja Dua",
+    "Shri Aditya Jhunjhunwala, Shri Sanjay Jhunjhunwala, Shri S.C. Aggarwal recommended for reappointment as Whole-time Directors for further term of 3 years w.e.f. April 01, 2027",
+    "Approval sought for continuation of Mr. Sushil Solomon as Independent Non-Executive Director upon attaining age of 75 years",
+    "Shri L.K Jhunjhunwala ceased to be director w.e.f 14.03.2026 due to his demise",
+    "Shri Sushil Solomon re-appointed as Independent Director",
+    "Smt. Archna Agarwal appointed as Independent Director",
+    "Shri Narendra Mohan appointed as Independent Director",
+    "Shri Bibhas Kumar Srivastav re-appointed as Non-Executive and Independent Director",
+    "Shri L.K. Jhunjhunwala re-appointed by rotation",
+    "Mr. L K Jhunjhunwala ceased w.e.f. March 14, 2026 due to demise",
+    "Mrs. Naina Devi Jhunjhunwala appointed as Additional Director w.e.f. May 18, 2026",
+    "Shri L.K. Jhunjhunwala ceased to be a director w.e.f 14.03.2026 due to demise.",
+    "Shri L. K. Jhunjhunwala passed away on 14.03.2026",
+    "Ms. Ritika Tandon joined as Company Secretary w.e.f. 07.08.2025",
+    "Ms. Pooja Dua left as Company Secretary w.e.f. 07.08.2025",
+    "Smt. Madhu Mathur and Shri S. K. Gupta ceased to be directors on 21.08.2024 upon completion of tenure",
+    "Mrs. Archna Agrawal appointed w.e.f. 21.05.2025",
+    "Shri Narendra Mohan appointed w.e.f. 29.06.2025",
+    "Smt. Naina Devi Jhunjhunwala appointed as Additional Director (Non-Executive, Non-Independent) effective May 18, 2026",
+    "Proposed appointment of Smt. Naina Devi Jhunjhunwala as Whole Time Director for 3 years from 01.08.2026",
+    "Proposed re-appointment of Shri Aditya Jhunjhunwala as Managing Director for 3 years from April 01, 2027",
+    "Proposed re-appointment of Shri Sanjay Jhunjhunwala as Joint Managing Director for 3 years from April 01, 2027",
+    "Proposed re-appointment of Shri Subhash Chandra Aggarwala as Whole Time Director (Executive Director)",
+    "Shri S. C. Aggarwala and Shri Sanjay Jhunjhunwala retire by rotation and offered for re-appointment",
+    "Re-appointment of Shri Subhash Chandra Aggarwala (DIN: 02461954) as Whole Time Director designated as Executive Director cum CEO for 3 years effective April 01, 2027",
+    "Change in terms and conditions, including remuneration, for Mr. Vatsal Jhunjhunwala (son of Managing Director, related party under Section 2(76) of the Act) as Vice President for 3 years effective April 1, 2026",
+    "Continuation of Mr. Sushil Solomon (DIN 08553009) as Non-Executive Independent Director post attaining 75 years of age on 21.12.2026 for remaining term up to 05th August, 2029",
+    "On demise of Mr. Lakshmi Kant Jhunjhunwala on March 14, 2026, Mrs. Naina Devi Jhunjhunwala appointed as Additional Director on May 18, 2026.",
+    "Mr. Aditya Jhunjhunwala, Mr. Sanjay Jhunjhunwala and Mr. S.C. Aggarwala re-appointed as Whole-Time Directors for three years from April 01, 2027.",
+    "Mrs. Naina Devi Jhunjhunwala proposed to be appointed as Whole-Time Director from August 01, 2026.",
+    "Mr. Sushil Solomon continuation as Non-Executive Independent Director post attaining age of 75 years from 21.12.2026 up to 05.08.2029.",
+    "Mr. Vatsal Jhunjhunwala change in terms of appointment as Vice President from April 01, 2026 for three years.",
+    "Board unanimously recommends continuation of Shri Sushil Solomon's directorship beyond age 75 years via special resolution",
+    "Mrs. Naina Devi Jhunjhunwala appointed as Whole Time Director effective 28.07.2026, liable to retire by rotation",
+    "Mr. Aditya Jhunjhunwala re-appointed as Managing Director effective 19.09.2019, liable to retire by rotation",
+    "Mr. Sanjay Jhunjhunwala re-appointed as Joint Managing Director effective 19.09.2019, liable to retire by rotation",
+    "Mr. S. C. Aggarwala re-appointed as Executive Director cum-CEO effective 19.09.2019, liable to retire by rotation"
+   ],
+   "auditor_change": "M/s. Mehrotra & Mehrotra appointed at 49th AGM (Sept 29, 2022) for 5 years till conclusion of 54th AGM",
+   "top_shareholders": [
+    {
+     "name": "Shri L.K. Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Shri Aditya Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Shri Sanjay Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Smt. Naina Devi Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 56.51
+    },
+    {
+     "name": "Mr. L. K. Jhunjhunwala",
+     "pct": 15.55
+    },
+    {
+     "name": "L. K. Jhunjhunwala (HUF)",
+     "pct": 10.94
+    },
+    {
+     "name": "Marvel Business Pvt. Ltd.",
+     "pct": 13.12
+    },
+    {
+     "name": "Mr. Aditya Jhunjhunwala",
+     "pct": 5.75
+    },
+    {
+     "name": "Lakshmi Kant Jhunjhunwala",
+     "pct": 15.55
+    },
+    {
+     "name": "Lakshmi Kant Dwarkadas -HUF",
+     "pct": 10.94
+    },
+    {
+     "name": "Marvel Business Private Ltd.",
+     "pct": 13.12
+    },
+    {
+     "name": "Aditya Jhunjhunwala",
+     "pct": 5.75
+    },
+    {
+     "name": "Naina Jhunjhunwala",
+     "pct": 4.54
+    },
+    {
+     "name": "K M Vyapar Ltd.",
+     "pct": 2.48
+    },
+    {
+     "name": "Sanjay Jhunjhunwala",
+     "pct": 2.71
+    },
+    {
+     "name": "Mrs. Naina Devi Jhunjhunwala",
+     "pct": 20.09
+    },
+    {
+     "name": "Mr. Sanjay Jhunjhunwala",
+     "pct": 2.72
+    },
+    {
+     "name": "Mrs. Naina Devi Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Mr. Aditya Jhunjhunwala",
+     "pct": null
+    },
+    {
+     "name": "Mr. Sanjay Jhunjhunwala",
+     "pct": null
+    }
+   ],
+   "promoter_holding_pct": 56.51
+  },
+  "litigation": [
+   "No significant and material orders passed by regulators, courts, or tribunals impacting going concern status and future operations",
+   "No application made or any proceeding pending under the Insolvency and Bankruptcy Code, 2016 during the year",
+   "No instance of one-time settlement with any Bank or Financial Institution",
+   "Various litigations pending before various forums against the Company (details in Note 37.5 to financial statements).",
+   "Income Tax Act - Income Tax demand of Rs. 6.50 lakhs for 2017-2018 pending at Commissioner of Income Tax (Appeal)",
+   "Income Tax Act - Income Tax demand of Rs. 650.81 lakhs for 2014-2015 pending at Commissioner of Income Tax (Appeal)",
+   "Income Tax Act - Income Tax demand of Rs. 33.42 lakhs for 2019-2020 pending at Commissioner of Income Tax (Appeal)",
+   "Duties, taxes and penalty levied by Commissioner of Excise, Bihar (included in Other Provision of Rs. 451.85 lakhs)",
+   "Various litigations pending before various forums against the Company",
+   "Duties, taxes and penalty levied by Commissioner of Excise, Bihar",
+   "Cane Commissioner, Uttar Pradesh order dated 17.12.2021 for payment of 12% interest on late cane payment of sugar season 2013-14; appeal filed, no impact considered as interest amount indeterminate",
+   "Loan from U.P. Government (Rs.14.50 lakhs) - interest payable dispute sub-judice before Hon'ble Allahabad High Court",
+   "Sugar Price Equalization Fund matter - Rs.12.40 lakhs lying in reserve as on 31st March 2025"
+  ],
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. L.K. Jhunjhunwala",
+     "role": "Chairman (till 14.03.2026 due to demise)"
+    },
+    {
+     "name": "Mrs. Naina Devi Jhunjhunwala",
+     "role": "Additional Director (w.e.f 18.05.2026)"
+    },
+    {
+     "name": "Mr. Aditya Jhunjhunwala",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Sanjay Jhunjhunwala",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Mr. Subhash Chandra Aggarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Dr. Sushil Solomon",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Bibhas Kumar Srivastav",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Bakshi Ram",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Archna Agarwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Narendra Mohan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Arvind Kumar Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Pooja Dua",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Ritika Tandon",
+     "role": "Company Secretary (w.e.f 07.08.2025)"
+    },
+    {
+     "name": "Shri Aditya Jhunjhunwala",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Shri Sanjay Jhunjhunwala",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Shri S.C. Aggarwal",
+     "role": "Executive Director cum C.E.O."
+    },
+    {
+     "name": "Shri Arvind Kumar Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Ritika Tandon",
+     "role": "Company Secretary-cum-Compliance Officer"
+    },
+    {
+     "name": "Aditya Jhunjhunwala",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sanjay Jhunjhunwala",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "S. C. Agarwal",
+     "role": "Executive Director-cum-Chief Executive Officer"
+    },
+    {
+     "name": "Arvind Kumar Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ritika Tandon",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Prem Chandra Tiwari",
+     "role": "V.P. (Technical)"
+    },
+    {
+     "name": "Anil Kumar Pal",
+     "role": "V.P. (Production)"
+    },
+    {
+     "name": "Vivekanand Mishra",
+     "role": "G.M. (P&A)"
+    },
+    {
+     "name": "Ratendra Kumar Johri",
+     "role": "G.M. (System)"
+    },
+    {
+     "name": "Rajendra Kumar Gupta",
+     "role": "G.M. (Commercial)"
+    },
+    {
+     "name": "Rajiv Gupta",
+     "role": "Addl. G.M"
+    },
+    {
+     "name": "Himanshu Raina",
+     "role": "GM (HR)"
+    },
+    {
+     "name": "Anil Kumar Tripathi",
+     "role": "CGM (Cane)"
+    },
+    {
+     "name": "Arvind Singh",
+     "role": "G.M. (Cane Development)"
+    },
+    {
+     "name": "Ajay Srivastava",
+     "role": "G.M. (Engineering)"
+    },
+    {
+     "name": "Balmukund Srivastava",
+     "role": "G.M. (Finance)"
+    },
+    {
+     "name": "Prithu Srivastava",
+     "role": "Adl. G.M. (Admin)"
+    },
+    {
+     "name": "Abhishek Agarwal",
+     "role": "CGM"
+    },
+    {
+     "name": "Rajiv Tyagi",
+     "role": "GM - Production"
+    },
+    {
+     "name": "S.C. Aggarwal",
+     "role": "Executive Director cum CEO (DIN: 02461954)"
+    },
+    {
+     "name": "Arvind Kumar Gupta",
+     "role": "CFO"
+    },
+    {
+     "name": "Shri S.C. Agarwal",
+     "role": "Executive Director-cum-CEO"
+    },
+    {
+     "name": "Sh. Arvind Gupta",
+     "role": "CFO"
+    },
+    {
+     "name": "Ms. Ritika Tandon",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "S. C. Agarwal",
+     "role": "Executive Director (DIN-02461954)"
+    },
+    {
+     "name": "Aditya Jhunjhunwala",
+     "role": "Managing Director (DIN-01686189)"
+    },
+    {
+     "name": "A. K. Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "S. C. Agarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Shri L. K. Jhunjhunwala",
+     "role": "Chairman"
+    },
+    {
+     "name": "Shri S. C. Agarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mrs. Madhu Mathur",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri S. K. Gupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Sushil Solomon",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Bibhash Kumar Srivastava",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Dr. Bakshi Ram",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Archna Agrawal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Narendra Mohan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Aditya Jhunjhunwala",
+     "role": "Managing Director (DIN: 01686189)"
+    },
+    {
+     "name": "Sanjay Jhunjhunwala",
+     "role": "Joint Managing Director (DIN: 01777954)"
+    },
+    {
+     "name": "S. C. Agarwal",
+     "role": "Executive Director (DIN: 02461954)"
+    },
+    {
+     "name": "Shri Subhash Chandra Aggarwala",
+     "role": "Whole Time Director designated as Executive Director cum CEO (DIN: 02461954)"
+    },
+    {
+     "name": "Mr. Vatsal Jhunjhunwala",
+     "role": "Vice President (son of Managing Director)"
+    },
+    {
+     "name": "Mr. Sushil Solomon",
+     "role": "Non-Executive Independent Director (DIN 08553009)"
+    },
+    {
+     "name": "Ritika Tandon",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mrs. Naina Devi Jhunjhunwala",
+     "role": "Additional Director (proposed Whole-Time Director)"
+    },
+    {
+     "name": "Mr. S.C. Aggarwala",
+     "role": "Executive Director cum C.E.O."
+    },
+    {
+     "name": "Mr. Vatsal Jhunjhunwala",
+     "role": "Vice President"
+    },
+    {
+     "name": "Mr. Sushil Solomon",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Naina Devi Jhunjhunwala",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. S. C. Aggarwala",
+     "role": "Executive Director cum-CEO"
+    }
+   ],
+   "employees": 305
+  },
+  "other_notable": [
+   "Board did not recommend dividend for FY 2025-26 in view of future deployment of funds",
+   "Paid-up share capital: Rs. 18.40 Crores as at March 31, 2026",
+   "Market capitalisation: Rs. 2,430 million (NSE) and Rs. 2,460 million (BSE) as of 31st March 2026",
+   "CSR expenditure: Rs. 35.63 lacs spent in FY 2025-26; CSR obligation Rs. 81.20 lacs; excess CSR of Rs. 35.50 lacs carried forward",
+   "Scheme of Arrangement for demerger of Distillery Division approved by Board on 07.08.2025; NCLT first motion order dated 24.03.2026; shareholder/creditor meeting scheduled 30.05.2026",
+   "Secretarial Audit by M/s Amit Gupta & Associates (appointed 52nd AGM, Sept 29, 2025) - no qualifications",
+   "Cost Auditor: M/s. Aman Malviya & Associates for Sugar and Industrial Alcohol (FY 2025-26 and re-appointed for FY 2026-27)",
+   "MSME return filed within prescribed time",
+   "Listing fees paid for 2025-26 to BSE and NSE",
+   "Board met 5 times during FY 2025-26",
+   "Vigil Mechanism/Whistle Blower Policy in place; no cases reported",
+   "Anti-Sexual Harassment Policy in place; zero complaints received",
+   "Maternity Benefit Act compliance confirmed",
+   "Ind-AS adopted from April 01, 2017",
+   "Annual Return (MGT-7) available on company website",
+   "Company has bagasse-based power generation plant for captive consumption and surplus sale to U.P. Power Corporation Limited",
+   "Energy conservation measures implemented in FY 2025-26 include: replacement of tail bar coupling, installation of helical gear box, replacement of gun metal bearings with anti-friction bearings, installation of auto feed control valves, installation of agitators at Rhy tanks, installation of VFD for UGR pump, replacement of lighting with efficient lighting",
+   "Foreign exchange outgo: Rs. 142.87 lakhs in FY 2025-26 (Rs. 224.59 lakhs in FY 2024-25); Foreign exchange earnings: Nil",
+   "R&D expenditure: Nil",
+   "Board composition as on 31.03.2026: 3 Executive Directors (2 Promoter, 1 non-Promoter CEO), 5 Independent Non-Executive Directors, 1 Additional Director (Promoter Group)",
+   "Four Board meetings held during FY 2025-26: 26.05.2025, 07.08.2025, 10.11.2025, 10.02.2026",
+   "Five Board Committees: Audit, Nomination & Remuneration, Stakeholders' Relationship, CSR, Finance",
+   "Independent Directors met twice during FY 2025-26: 26.05.2025 and 07.08.2025",
+   "Annual performance evaluation conducted for Board, Committees, and individual Directors",
+   "Company has Whistle Blower Mechanism, Related Party Transaction Policy, CSR Policy, Board Diversity Policy, Familiarization Policy for Independent Directors",
+   "Code of Conduct for Board members and Senior Management affirmed",
+   "No material subsidiaries; Minutes of subsidiary Board meetings and significant transactions placed before Company's Board",
+   "Consolidated financial statements prepared per Ind AS-110 and Ind AS-28",
+   "Financial statements of subsidiaries reviewed by Audit Committee; Performance review reports placed before Board half-yearly",
+   "CSR Committee formed with three directors (two executive, one non-executive independent)",
+   "Independent Directors met on 26th May 2025 and 7th August 2025",
+   "One shareholders' complaint received and resolved during the year",
+   "No Employee Stock Option Schemes granted during the year",
+   "No resolution by circulation passed during the reporting period",
+   "No postal ballot conducted during the year",
+   "Business Responsibility Report not applicable (ranked 1986 at NSE based on average market cap July-Dec 2025)",
+   "Credit rating for Long-term Bank Facilities reassigned to IVR A- by Infomerics Valuation and Rating Private Limited",
+   "Cost auditor appointed: M/s. Aman Malviya & Associates for year ending 31-03-2027",
+   "Secretarial auditor appointed: M/s. Amit Gupta & Associates for 5 years",
+   "Internal auditor appointed: M/s. VAA & Associates for year ended 31st March 2026",
+   "Total fees paid to statutory auditors and network entities: Rs. 6,55,000",
+   "Company maintains website www.kmsugar.com",
+   "Quarterly results published in Financial Express and Jan Satta",
+   "AGM for FY 2025-26 scheduled for July 28, 2026 at 11:30 AM via VC/OAVM",
+   "Listing on BSE (532673) and NSE (KMSUGAR) with fees paid up to FY 2025-26",
+   "Registrar & Share Transfer Agent: MUFG Intime India Private Limited",
+   "Compliance Officer: Ms. Ritika Tandon",
+   "Shareholding pattern: 56.51% promoter, 43.49% public as of 31st March 2026",
+   "53,020 shareholders as of 31st March 2026",
+   "92,000,170 total shares outstanding",
+   "Anti-Sexual Harassment Policy in place with Internal Complaints Committee",
+   "Vigil Mechanism/Whistle Blower Policy established",
+   "Code of Conduct for Board and Senior Management affirmed",
+   "No non-compliances, penalties by Stock Exchanges/SEBI in last three years",
+   "No director debarred or disqualified by SEBI/MCA/Statutory Authorities",
+   "Board confirmed compliance with Corporate Governance norms",
+   "Financial statements prepared under Ind AS with historical cost convention",
+   "CSR Policy approved 30.10.2015, reviewed annually; amended per MCA circular 22.01.2021, to be approved by Board 08.06.2021.",
+   "CSR obligation for FY 2025-26: Rs 81.33 lakh; amount spent: Rs 35.63 lakh; excess spent for set-off: Rs 35.50 lakh.",
+   "CSR projects in FY 2025-26: Education of underprivileged students (New Delhi) Rs 4.50 lakh + Rs 10.00 lakh; Healthcare and sanitation (Ayodhya, UP) Rs 10.00 lakh + Rs 11.00 lakh + Rs 0.13 lakh."
+  ],
+  "capex_plans": [
+   {
+    "item": "Energy conservation investments",
+    "amount_cr": 1.42,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capital work in progress additions",
+    "amount_cr": 21.9,
+    "timeline": "FY2026"
+   },
+   {
+    "item": "Estimated amount of contracts remaining to be executed on capital account and not provided for",
+    "amount_cr": 5.38,
+    "timeline": "As at 31 March 2026"
+   },
+   {
+    "item": "Capital Expenditure (FY 2025-26)",
+    "amount_cr": 51.91,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (not individually named)",
+    "nature": "Contracts/arrangements/transactions in ordinary course of business on arm's length basis; no materially significant transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "K M Strategic Investments & Holding Pvt Ltd",
+    "nature": "investment in Optionally fully convertible Debentures (OFCD)",
+    "amount_cr": 23.5
+   },
+   {
+    "party": "Sonar Castings Limited",
+    "nature": "corporate guarantee for securing credit facilities",
+    "amount_cr": 61.7421
+   },
+   {
+    "party": "Sonar Castings Limited",
+    "nature": "investment in preference shares",
+    "amount_cr": 3.75
+   },
+   {
+    "party": "M/s Sonar Casting Ltd",
+    "nature": "Corporate Guarantee",
+    "amount_cr": 61.7412
+   },
+   {
+    "party": "M/s Sonar Casting Ltd",
+    "nature": "Investment in Pref. Shares",
+    "amount_cr": 51.35
+   },
+   {
+    "party": "M/s K M Strategic Investments & Holdings Private Limited",
+    "nature": "Investment in OFCD",
+    "amount_cr": 23.5
+   },
+   {
+    "party": "M/s K M Strategic Investments & Holdings Private Limited",
+    "nature": "Inter Corporate Deposit",
+    "amount_cr": 0
+   },
+   {
+    "party": "M/s Sonar Casting Ltd",
+    "nature": "Inter Corporate Deposit",
+    "amount_cr": 15.25
+   },
+   {
+    "party": "Entities where KMP and their relatives have substantial interest/significant influence",
+    "nature": "Unsecured Loan Provided",
+    "amount_cr": 18.25
+   },
+   {
+    "party": "Entities where KMP and their relatives have substantial interest/significant influence",
+    "nature": "Investment in Non-Cumulative Preference Shares",
+    "amount_cr": 1.75
+   },
+   {
+    "party": "Entities where KMP and their relatives have substantial interest/significant influence",
+    "nature": "Investment in Non-Cumulative Preference Shares",
+    "amount_cr": 4.0
+   },
+   {
+    "party": "Related party (unspecified)",
+    "nature": "Loan to related party",
+    "amount_cr": 15.25
+   },
+   {
+    "party": "Related party (unspecified)",
+    "nature": "Outstanding liability of related party",
+    "amount_cr": 4.74
+   },
+   {
+    "party": "Loan to a related party",
+    "nature": "Non-current loan",
+    "amount_cr": 15.25
+   },
+   {
+    "party": "Loan to a related party",
+    "nature": "Current loan",
+    "amount_cr": 0
+   },
+   {
+    "party": "Outstanding liability of related party",
+    "nature": "Current financial liability",
+    "amount_cr": 4.7409
+   },
+   {
+    "party": "Related party receivable",
+    "nature": "Trade receivables",
+    "amount_cr": 0
+   },
+   {
+    "party": "Sonar Casting Ltd.",
+    "nature": "Investment made, loans given/received back, interest received, corporate guarantee given, sale of goods",
+    "amount_cr": 61.74
+   },
+   {
+    "party": "K M Vyapar Ltd.",
+    "nature": "Investment made, rent paid, commission/fee paid",
+    "amount_cr": 4.0
+   },
+   {
+    "party": "Francoise Commerce Pvt. Ltd.",
+    "nature": "Sale of goods",
+    "amount_cr": 65.55
+   },
+   {
+    "party": "K M Strategic Investments and Holdings Pvt. Ltd.",
+    "nature": "Loans given/received back, interest received, sale of goods",
+    "amount_cr": 23.5
+   },
+   {
+    "party": "Shri Laxmi Public Charitable Trust",
+    "nature": "Hospital services taken, CSR paid",
+    "amount_cr": 0.43
+   },
+   {
+    "party": "H H Foundation",
+    "nature": "CSR paid",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Indian Sugar Exim Corporation Ltd.",
+    "nature": "MAEQ export quota sale charges received",
+    "amount_cr": 0.43
+   },
+   {
+    "party": "K M Particle Boards Pvt. Ltd.",
+    "nature": "Purchase of goods, sale of goods, lease land rent received",
+    "amount_cr": 18.31
+   },
+   {
+    "party": "Brahma Properties Pvt. Ltd.",
+    "nature": "Rent paid, purchase of goods",
+    "amount_cr": 2.43
+   },
+   {
+    "party": "Marvel Business Pvt. Ltd.",
+    "nature": "Rent paid",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Zar International Pvt. Ltd.",
+    "nature": "Rent paid",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Sri Shakti Credits Ltd.",
+    "nature": "Rent paid, sale of goods",
+    "amount_cr": 8.32
+   },
+   {
+    "party": "Concept Consulting",
+    "nature": "Commission/fee paid",
+    "amount_cr": 0.2
+   },
+   {
+    "party": "K.M Energy Pvt. Limited",
+    "nature": "Preference share redemption received",
+    "amount_cr": 3.39
+   },
+   {
+    "party": "Promising Logistics Pvt. Ltd.",
+    "nature": "Sale of held preference share",
+    "amount_cr": 3.85
+   },
+   {
+    "party": "Shri L. K. Jhunjhunwala",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 2.01
+   },
+   {
+    "party": "Shri Aditya Jhunjhunwala",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 5.3
+   },
+   {
+    "party": "Shri Sanjay Jhunjhunwala",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 2.02
+   },
+   {
+    "party": "Shri S. C. Agarwal",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 0.65
+   },
+   {
+    "party": "Shri Vatsal Jhunjhunwala",
+    "nature": "Remuneration including commission and PF, education fee paid",
+    "amount_cr": 1.35
+   },
+   {
+    "party": "Ms. Palak Jhunjhunwala",
+    "nature": "Remuneration including commission and PF, education fee paid",
+    "amount_cr": 1.1
+   },
+   {
+    "party": "Shri Arvind Kumar Gupta",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 0.26
+   },
+   {
+    "party": "Ms. Ritika Tandon",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "Ms. Pooja Dua",
+    "nature": "Remuneration including commission and PF",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "KMPs",
+    "nature": "Remuneration",
+    "amount_cr": null
+   },
+   {
+    "party": "K M Particle Boards Pvt. Ltd.",
+    "nature": "Sub-lease of 3 hectare leasehold land",
+    "amount_cr": null
+   },
+   {
+    "party": "Related party",
+    "nature": "Loan outstanding",
+    "amount_cr": 15.25
+   },
+   {
+    "party": "Mr. Vatsal Jhunjhunwala",
+    "nature": "Son of the Managing Director, related party under Section 2(76) of the Act, holding office/place of profit as Vice President",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Vatsal Jhunjhunwala",
+    "nature": "Son of the Managing Director Mr. Aditya Jhunjhunwala; Holding 499721 equity shares of the face value Rs. 2/- in the company under promoter group category.",
+    "amount_cr": 1.2
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax disputes (AY 2017-18, 2014-15, 2019-20)",
+    "amount_cr": 6.9073
+   },
+   {
+    "nature": "Corporate guarantees issued",
+    "amount_cr": 0.18
+   },
+   {
+    "nature": "Various litigations pending before various forums against the Company",
+    "amount_cr": null
+   },
+   {
+    "nature": "Corporate Guarantees issued",
+    "amount_cr": 0.1824
+   },
+   {
+    "nature": "Other Provision - duties, taxes and penalty levied by Commissioner of Excise, Bihar",
+    "amount_cr": 4.5185
+   },
+   {
+    "nature": "Claims against the Group not acknowledged as debts in respect of pending cases of employees under Labour laws",
+    "amount_cr": 0.73
+   },
+   {
+    "nature": "Claims against the Group not acknowledged as debts in respect of Criminal and Civil Cases",
+    "amount_cr": 0.25
+   },
+   {
+    "nature": "Bank guarantees given to the Central Government and oil manufacturing companies",
+    "amount_cr": 1.25
+   },
+   {
+    "nature": "Corporate guarantee given by the Group for loans sanctioned to Sonar Casting Ltd. (State Bank of India, Lead Bank for consortium)",
+    "amount_cr": 61.74
+   },
+   {
+    "nature": "Income Tax cases under appeal",
+    "amount_cr": 6.91
+   },
+   {
+    "nature": "Penalty levied by Competition Commission of India, Commissioner Excise, UP and Regulatory fee",
+    "amount_cr": 0.19
+   },
+   {
+    "nature": "Sugar Price Equalization Reserve - Rs.12.40 lakhs lying as on 31st March 2025",
+    "amount_cr": 0.12
+   },
+   {
+    "nature": "Loan from U.P. Government (Rs.14.50 lakhs) with interest dispute sub-judice",
+    "amount_cr": 0.15
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Export quota sale for exchange with domestic quota of another sugar mill",
+    "value_cr": 0.49
+   }
+  ]
+ }
+}
