@@ -150,7 +150,7 @@ for sp in ax.spines.values():
     sp.set_visible(False)
 # ---- bottom left: how the verdict is built (the v2 points that decide the tier)
 box(0.03, 9.65, 0.55, 3.30, T.PANEL, T.BORDER, r=0.008)
-txt(0.05, 9.93, "HOW THE VERDICT IS BUILT  (points earned out of the maximum)", color=T.HEAD, fontsize=12.5, fontweight="bold")
+txt(0.05, 9.93, "HOW THE VERDICT IS BUILT  (points earned; QoQ here is seasonally adjusted)", color=T.HEAD, fontsize=12.5, fontweight="bold")
 sg = lambda x: "-" if x is None else f"{x:+,.0f}%"
 pp = lambda x: f"{x:+.1f} pp"
 grp = [("Sales", ["rev_yoy", "rev_qoq"], [22, 7], f"YoY {sg(m['rev_yoy'])}  |  QoQ {sg(m['rev_qoq'])}"),
