@@ -2,6 +2,7 @@
 v2.1 = v2.0 plus two rules, both tested on Mar-26 and Jun-26 price reactions (scripts/verdict_v21_test.py):
   R1  a Blockbuster needs the margin not falling: margin down more than 1 pt QoQ, or any fall YoY, caps it at Excellent (such results reacted +3.0% against +6.5%).
   R1b a Blockbuster needs profit up at least 25% YoY (a turnaround from a loss base is not measured and is left to the existing Excellent cap).
+  R3  net profit down more than 10% QoQ (raw) steps the tier down one (any tier, floor Poor), unless the same quarter last year fell as much (seasonal). Tested on Mar-26, Jun-26 and a Sep-26 hold-out: rank correlation with price reaction rose in all three.
   R2  flat momentum: when sales, EBITDA and profit are all up less than 15% QoQ (seasonally adjusted), an Excellent or Blockbuster steps down one tier, never below Strong (flat-QoQ top tiers reacted +1% to +2%, moving ones +5% to +6%).
 plus two TAGS (they never change the tier):
   Versus expectation: acceleration of the YoY growth and margin change against the company's own previous quarter. Ahead / In line / Behind.
@@ -14,6 +15,7 @@ import quarter_rating as qr
 RATING_VERSION = "v2.1"
 ASC = ["Poor", "Weak", "Steady", "Strong", "Excellent", "Blockbuster"]
 FLAT_X = 15           # percent QoQ
+PAT_FALL = -10        # percent QoQ
 AHEAD, BEHIND = 25.0, -10.0
 
 def _g(a, b):
@@ -35,7 +37,7 @@ def tags(cur, prev, yago, yprev, m):
             out["vs_expectation"] = "Ahead" if s >= AHEAD else "Behind" if s <= BEHIND else "In line"
     return out
 
-def rate21(cur, prev, yago, yprev=None, older=None, **kw):
+def rate21(cur, prev, yago, yprev=None, older=None, r3=True, r3_guard=True, **kw):
     r = qr.rate6(cur, prev, yago, yprev, v11=True, v12=True, v2=True, older=older, **kw)
     if r.get("tier") is None: return r
     r["v2_tier"] = r["tier"]
@@ -46,5 +48,10 @@ def rate21(cur, prev, yago, yprev=None, older=None, **kw):
         k = 4; notes.append("profit growth under 25% (Blockbuster needs profit up at least 25%)")
     if k >= 4 and all(m.get(x) is not None for x in ("rev_qoq", "ebitda_qoq", "pat_qoq")) and all(m[x] < FLAT_X for x in ("rev_qoq", "ebitda_qoq", "pat_qoq")):
         k = max(3, k - 1); notes.append("sequential momentum is flat")
+    if r3:          # R3: a sharp sequential profit fall moves the tier down one, unless the same quarter last year fell as much (seasonal)
+        pq = _g(cur["pat"], prev["pat"])
+        ly = _g(yago["pat"], yprev["pat"]) if yprev else None
+        if pq is not None and pq < PAT_FALL and not (r3_guard and ly is not None and ly < PAT_FALL) and k > 0:
+            k -= 1; notes.append("net profit fell more than 10% QoQ")
     r["tier"] = ASC[k]; r["v21_notes"] = notes; r["tags"] = tags(cur, prev, yago, yprev, m); r["version"] = RATING_VERSION
     return r

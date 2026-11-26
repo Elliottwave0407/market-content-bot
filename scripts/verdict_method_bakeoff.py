@@ -15,11 +15,11 @@ for f in sorted(glob.glob(R + "prices/d/202[56]-*_N.csv.gz")):
             try: px[a[2]][d] = float(a[8])
             except Exception: pass
 dates = sorted(set(dates))
-MONN = {"MAR-2026": 2026 * 4, "JUN-2026": 2026 * 4 + 1}
+MONN = {"MAR-2026": 2026 * 4, "JUN-2026": 2026 * 4 + 1, "SEP-2026": 2026 * 4 + 2}
 filed = collections.defaultdict(dict)
 for l in open(R + "results_if/numbers.jsonl"):
     r = json.loads(l)
-    if r.get("isin") and r.get("filed") and r["to"][3:] in ("MAR-2026", "JUN-2026"):
+    if r.get("isin") and r.get("filed") and r["to"][3:] in MONN:
         try: filed[MONN[r["to"][3:]]].setdefault(r["isin"], dt.datetime.strptime(r["filed"][:11], "%d-%b-%Y").strftime("%Y-%m-%d"))
         except Exception: pass
 
