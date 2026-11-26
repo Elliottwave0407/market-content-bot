@@ -1,0 +1,800 @@
+{
+ "isin": "INE050B01023",
+ "name": "IL&FS Investment Managers Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30710_IVC_2025_2026_A_3453044_27082026152146.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 526765,
+ "chunks": 14,
+ "chunks_ok": 13,
+ "facts": {
+  "business": {
+   "description": "The Company operates in a single business segment, namely fund management and related advisory services, and is currently operating in a stabilisation phase while continuing to manage its existing fund management business in view of the ongoing resolution process of the IL&FS Group.",
+   "products": [
+    {
+     "name": "IFIN Realty Trust (IRT)",
+     "share_of_revenue_pct": null,
+     "note": "Fund life extended up to March 31, 2027; 11 outstanding investments with aggregate NAV ~\u20b93.7 crore; generated exits ~\u20b9170 crore in FY2026 (IFIN share 3%); distributed ~\u20b93.75 crore to investors"
+    },
+    {
+     "name": "IL&FS Realty Fund",
+     "share_of_revenue_pct": null,
+     "note": "Fund life extension sought up to March 31, 2027; 2 outstanding investments with aggregate NAV ~\u20b912.5 crore; distributed ~\u20b915.8 crore in FY2026 (IIML share ~3.23%); remaining investments under advanced litigation"
+    },
+    {
+     "name": "Tara III Funds",
+     "share_of_revenue_pct": null,
+     "note": "Umbrella comprises three funds; fund life expired March 31, 2026 with no extension; two India-based funds fully divested; offshore fund awaiting final tranche ~\u20b91.8 crore expected June 2026"
+    },
+    {
+     "name": "Infrastructure Debt Fund (IDF)",
+     "share_of_revenue_pct": null,
+     "note": "Managed through subsidiary IL&FS Infra Asset Management Limited; comprises five closed-ended schemes at various stages of maturity and resolution; focus on orderly wind-down, value preservation and maximisation of investor recoveries"
+    },
+    {
+     "name": "Fund management and related advisory services",
+     "share_of_revenue_pct": null,
+     "note": "Single business segment"
+    },
+    {
+     "name": "Investment Management/Advisory Services",
+     "share_of_revenue_pct": null,
+     "note": "Management/advisory fees are calculated on the applicable rates and bases as stipulated in the investment management/ advisory agreement between the Company and the funds. Revenue is recognised over time."
+    }
+   ],
+   "customers": [
+    "Investors in managed funds",
+    "Government of Andhra Pradesh (joint venture partner)",
+    "Fund investors",
+    "Third party money",
+    "various funds",
+    "leading Indian and International Institutions"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Mauritius",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": 100
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 0
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Infrastructure",
+    "Real Estate",
+    "Urban Infrastructure",
+    "Debt Funds",
+    "Private equity",
+    "Venture capital",
+    "Infrastructure debt fund",
+    "Real estate funds",
+    "private equity fund management"
+   ],
+   "brands_or_certifications": [
+    "SEBI (Mutual Funds) Regulations, 1996",
+    "SEBI (Alternative Investments Funds) Regulations, 2012"
+   ],
+   "plants": [
+    {
+     "location": "The Company does not have any plant or facility",
+     "capacity": ""
+    }
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The investment environment is expected to remain cautiously optimistic. Stable domestic economic conditions, coupled with increasing investor interest in technology-led and AI-enabled opportunities, are expected to support investment activity. However, global uncertainty and relatively tighter liquidity conditions may continue to result in a selective and disciplined approach towards capital deployment. Prevailing market conditions are expected to provide opportunities for divestments and value realisation, thereby enabling fund managers to achieve exits at appropriate valuations and maximise investor returns from the remaining portfolio assets under management.",
+    "period": "FY2026-27"
+   },
+   {
+    "statement": "The outlook for the Company is closely linked to the ongoing resolution process of its parent group and the monetisation of existing assets. In the near term, the Company is expected to continue operating in a maintenance and value preservation mode, focusing on: (a) Realisation of investments (b) Protection and maximisation of stakeholder value. The timing and outcome of divestment and resolution processes remain dependent on external factors and regulatory developments.",
+    "period": "Near term"
+   },
+   {
+    "statement": "Management expects that its liquid assets held by the Group as at March 31, 2026 will be adequately sufficient to meet the Group's existing and future obligations arising over the next 12 months. Management believes that use of the going concern assumption for preparation of these Consolidated Financial Statements is appropriate.",
+    "period": "next 12 months"
+   },
+   {
+    "statement": "The IL&FS Board has been working on a resolution plan, with a view to enable value preservation for stakeholders of IL&FS Group. The resolution plan, inter alia, involves sale of assets/businesses/companies owned by IL&FS. And in this regard, the IL&FS Board had on December 21, 2023 invited a public Expression of Interest (EoI) for sale of its entire stake in the Company. In response to the EOI, few prospective bidders have shown interest and the process is underway.",
+    "period": "ongoing"
+   }
+  ],
+  "risks": [
+   "Ongoing SFIO investigation of IL&FS Group and its potential impact on financial statements",
+   "Global geopolitical tensions and macroeconomic volatility",
+   "Tighter liquidity conditions affecting capital deployment",
+   "Delay in fund life extensions requiring investor consent thresholds",
+   "Pending litigation affecting exit of fund investments",
+   "Regulatory compliance delays (e.g., consolidated financial results submission)",
+   "Non-compliance with Companies Act provisions (board meetings, CFO appointment, gratuity) at subsidiary level",
+   "Delayed submission of consolidated Financial Results due to delay in receipt of limited reviewed financial results from subsidiary company, Andhra Pradesh Urban Infrastructure Asset Management Limited (APUIAML)",
+   "Gap between consecutive Board Meetings exceeded 120 days on certain occasions, not in compliance with Section 173(1) of the Companies Act, 2013 read with Secretarial Standard \u2013 1 (SS-1)",
+   "Office of the Chief Financial Officer fell vacant and was not filled within the stipulated period as required under Section 203 of the Companies Act, 2013",
+   "Delayed disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 with respect to notices received from Stock Exchanges",
+   "Company had not recorded changes pertaining to Key Managerial Personnel (KMP) and dividend-related events in the Structured Digital Database (SDD) maintained under SEBI (Prohibition of Insider Trading) Regulations, 2015",
+   "Chairperson of the Stakeholders' Relationship Committee was unable to attend the adjourned Annual General Meeting held during the financial year 2025-2026",
+   "Intimation pertaining to the appointment of Secretarial Auditor was submitted to the Stock Exchanges in PDF format within prescribed timelines; however, the XBRL filing was submitted beyond the timeline prescribed under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+   "Prolonged global geopolitical instability affecting capital flows",
+   "Volatility in financial markets impacting valuation and exits",
+   "Legal and regulatory uncertainties in ongoing resolution processes",
+   "Dependency on key personnel in a lean operating structure",
+   "Execution risk in asset monetisation and divestment processes",
+   "Compliance, legal, and employee continuity risks",
+   "Ongoing investigation by Serious Fraud Investigation Office (SFIO) against Infrastructure Leasing & Financial Services Limited (IL&FS) and its subsidiaries including the Company",
+   "Material uncertainty relating to going concern due to extended term of existing funds managed/advised by the Company ending during the year, resulting in no fee income",
+   "Foreign exchange risk (company engages in hedging activities to safeguard against foreign exchange risks)",
+   "management's assessment that despite no revenue from operations the Company will be able to meet its obligations over the next 12 months out of its earnings and liquid assets",
+   "projections of any evaluation of the internal financial controls with reference to the Consolidated Financial Statements to future periods are subject to the risk that the internal financial controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate",
+   "The Group has unused tax losses and unabsorbed depreciation under the head Business Loss, Long Term Capital Loss as per the Income Tax Act, 1961 as at March 31, 2026. Based on the probable uncertainty regarding the set off these losses, the Group has not recognized deferred tax asset in the Consolidated Financial Statements as at March 31, 2026.",
+   "Credit risk",
+   "Liquidity risk",
+   "Market risk",
+   "Foreign currency exchange rate risk (primarily USD)",
+   "Price risk (Mutual Funds and Equity Shares NAV movement)",
+   "Investigation by Serious Fraud Investigation Office (SFIO) against Infrastructure Leasing & Financial Services Limited (IL&FS), the Holding Company and its subsidiaries (including the Company) under Section 212(1) of the Companies Act, 2013",
+   "The Holding Company has not generated fee income following the Completion of the extended tenure of the existing Funds managed by it, and that certain subsidiaries of the Group have witnessed a significant decline in the revenue",
+   "The financial statements of its Joint Ventures IL&FS Milestone Realty Advisors Private Limited have been prepared on the basis that it does not continue as a going concern",
+   "Auditors of the Subsidiary Company has qualified for non-compliance with the provisions of the Companies Act, 2013"
+  ],
+  "subsidiaries": [
+   {
+    "name": "IL&FS Urban Infrastructure Managers Limited",
+    "holding_pct": null,
+    "business": "Asset Manager for the Pooled Municipal Debt Obligations (PMDO) Facility providing long-term financing for urban infrastructure projects across cities in India"
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited",
+    "holding_pct": 51,
+    "business": "Integrated urban infrastructure project development, programme management and financing solutions for Urban Local Bodies in Andhra Pradesh; joint venture with Government of Andhra Pradesh (49%)"
+   },
+   {
+    "name": "IL&FS Infra Asset Management Limited",
+    "holding_pct": null,
+    "business": "Asset Manager of the IL&FS Infrastructure Debt Fund established under SEBI (Mutual Funds) Regulations"
+   },
+   {
+    "name": "IL&FS AMC Trustee Limited",
+    "holding_pct": null,
+    "business": "Trustee of the IL&FS Infrastructure Debt Fund"
+   },
+   {
+    "name": "IL&FS Investment Advisors LLC",
+    "holding_pct": null,
+    "business": "Investment Manager to Tara India Fund III LLC; based in Mauritius"
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Infra Asset Management Limited",
+    "holding_pct": null,
+    "business": "Manages Infrastructure Debt Fund (IDF) comprising five closed-ended schemes"
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited",
+    "holding_pct": null,
+    "business": "Joint venture with Government of Andhra Pradesh, engaged in execution of multiple infrastructure projects across the State"
+   },
+   {
+    "name": "IL&FS Infra Asset Management Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Investment Advisors LLC",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Urban Infrastructure Managers Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "IL&FS AMC Trustee Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited (APUIAML)",
+    "business": "Subsidiary with unbilled revenue balances and qualifications on non-compliance with Companies Act provisions (Board meetings, CFO appointment) and gratuity provisions"
+   },
+   {
+    "name": "IL&FS Urban Infrastructure Managers Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Investment Advisors LLC",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Saffron Investment Trust",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited",
+    "holding_pct": 51,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Infra Asset Management Limited",
+    "holding_pct": 86.61,
+    "business": ""
+   },
+   {
+    "name": "IL&FS AMC Trustee Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "IL&FS Urban Infrastructure Managers Limited",
+    "holding_pct": 100,
+    "business": "Asset management services"
+   },
+   {
+    "name": "Andhra Pradesh Urban Infrastructure Asset Management Limited",
+    "holding_pct": 51,
+    "business": "Asset management services"
+   },
+   {
+    "name": "IL&FS AMC Trustee Limited",
+    "holding_pct": 100,
+    "business": "Trustee services"
+   },
+   {
+    "name": "IL&FS Infra Asset Management Limited",
+    "holding_pct": 86.61,
+    "business": "Asset management services"
+   },
+   {
+    "name": "IL&FS Investment Advisors LLC",
+    "holding_pct": 100,
+    "business": "Investment advisory services"
+   },
+   {
+    "name": "Saffron Investment Trust",
+    "holding_pct": null,
+    "business": "Investment trust"
+   },
+   {
+    "name": "Infrastructure Leasing & Financial Services Limited",
+    "holding_pct": null,
+    "business": "Holding Company of the Company"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Penalties for non-conducting Board Meetings in compliance with Companies Act, 2013 at APUIAML",
+    "amount_cr": null
+   },
+   {
+    "nature": "Penalties for delay in appointment of Chief Financial Officer at APUIAML",
+    "amount_cr": null
+   },
+   {
+    "nature": "Gratuity payable to employees who resigned during FY2024-25 at APUIAML",
+    "amount_cr": null
+   },
+   {
+    "nature": "Service Tax dispute",
+    "amount_cr": 9.186
+   },
+   {
+    "nature": "Service Tax dispute",
+    "amount_cr": 2.6662
+   },
+   {
+    "nature": "GST dispute",
+    "amount_cr": 0.4645
+   },
+   {
+    "nature": "Income Tax dispute",
+    "amount_cr": 0.0363
+   },
+   {
+    "nature": "Penalties and other consequences from non-conducting of Board Meetings in compliance with Companies Act, 2013 (APUIAML)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Penalties and other consequences from delay in appointment of Chief Financial Officer per Section 203(1) of Companies Act, 2013 (APUIAML)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Gratuity obligation for employees who resigned during FY 2024-25 per Payment of Gratuity Act, 1972 and Ind AS 19 (APUIAML)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income tax demand contested by the Group",
+    "amount_cr": 0.0363
+   },
+   {
+    "nature": "Service tax demand contested by the Group",
+    "amount_cr": 11.8522
+   },
+   {
+    "nature": "Uncalled commitments on units of Venture Capital Fund",
+    "amount_cr": 1.6477
+   },
+   {
+    "nature": "Claims not acknowledged as Debt",
+    "amount_cr": 0.2746
+   }
+  ],
+  "auditor": {
+   "name": "M/s. KKC & Associates LLP",
+   "opinion": "Qualified opinion on both Standalone and Consolidated Financial Statements",
+   "key_audit_matters": [
+    "Ongoing SFIO investigation of IL&FS Group and inability to comment on consequential impact on standalone financial statements",
+    "Ongoing SFIO investigation of IL&FS Group and inability to comment on consequential impact on consolidated financial statements",
+    "Unbilled Revenue Balances at APUIAML aggregating Rs. 1,036.61 lakhs (net off Rs. 921.02 lakhs as at March 31, 2026) with inadequate supporting documentation",
+    "Non-recognition of provision for penalties from non-conducting Board Meetings at APUIAML",
+    "Non-recognition of provision for penalties from delay in CFO appointment at APUIAML",
+    "Non-recognition of gratuity provision for resigned employees at APUIAML",
+    "In our professional judgment, we have determined that there is no key audit matter to be communicated in our report.",
+    "We have determined that there is no key audit matter to be communicated in our report"
+   ],
+   "qualifications_or_emphasis": [
+    "Qualification: Unable to comment on consequential impact of ongoing SFIO investigation on standalone financial statements",
+    "Qualification: Unable to comment on consequential impact of ongoing SFIO investigation on consolidated financial statements",
+    "Qualification (Component Auditor - APUIAML): Unable to determine adjustments required to carrying amount of unbilled revenue due to absence of adequate supporting documentation",
+    "Qualification (Component Auditor - APUIAML): Non-recognition of provision for penalties from non-conducting Board Meetings, presented as contingent liability",
+    "Qualification (Component Auditor - APUIAML): Non-recognition of provision for penalties from delay in CFO appointment, presented as contingent liability",
+    "Qualification (Component Auditor - APUIAML): Non-recognition of gratuity provision for resigned employees, presented as contingent liability",
+    "Statutory Auditors tendered resignation with effect from August 13, 2026",
+    "M/s C N K & Associates LLP, Chartered Accountants appointed as Statutory Auditors to fill casual vacancy, to hold office until conclusion of ensuing 40th Annual General Meeting",
+    "Board recommended appointment of M/s C N K & Associates LLP as Statutory Auditors for a term of five consecutive years commencing from conclusion of 40th AGM until conclusion of 45th AGM, subject to approval of Members",
+    "Secretarial Audit Report is neither an assurance as to the future viability of the company nor of the efficacy or effectiveness with which the management has conducted the affairs of the company",
+    "Basis for Qualified Opinion: Ongoing investigation by SFIO against IL&FS and its subsidiaries including the Company; unable to comment on consequential impact(s) upon conclusion of investigation",
+    "Material Uncertainty relating to Going Concern: Extended term of existing funds managed/advised by the Company ended during the year, resulting in no fee income; factors indicate material uncertainty that may cast significant doubt on Company's ability to continue as going concern",
+    "Regulation 20(3) non-compliance: Chairperson of Stakeholders' Relationship Committee was unable to attend the adjourned Annual General Meeting held during FY 2025-2026",
+    "draw attention to paragraph 5 of the Independent Auditor's Report and Note 33 to the Financial Statements, regarding management's assessment that despite no revenue from operations the Company will be able to meet its obligations over the next 12 months out of its earnings and liquid assets; and thus the management believes that the use of going concern basis is appropriate in the circumstances",
+    "Basis for Qualified Opinion: Ongoing investigation by Serious Fraud Investigation Office (SFIO) against Infrastructure Leasing & Financial Services Limited (Ultimate Holding Company) and its subsidiaries including the Group; unable to comment on consequential impact(s) upon conclusion of investigation (Note 33).",
+    "Basis for Qualified Opinion: Subsidiary Andhra Pradesh Urban Infrastructure Asset Management Limited (APUIAML) has unbilled revenue balances aggregating to Rs. 1,036.61 lakhs (net of write off of Rs 921.02 Lakhs) as at 31 March 2026, of which Rs. 600.81 Lakhs outstanding for more than one year; in absence of adequate supporting documentation, completed reconciliations, and sufficient appropriate audit evidence, unable to determine recoverability and whether adjustments required (Note 20).",
+    "Basis for Qualified Opinion: Qualification by Independent Auditor of subsidiary APUIAML: (5.1) Not recognised provision for penalties from non-conducting Board Meetings per Companies Act, 2013; presented as contingent liability; obligation may have met recognition criteria; other expenses and liabilities may be understated. (5.2) Not recognised provision for penalties from delay in appointment of Chief Financial Officer per Section 203(1) of Companies Act, 2013; presented as contingent liability; obligation may have met recognition criteria; other expenses and liabilities may be understated. (5.3) Not recognised provision for gratuity for employees who resigned during FY 2024-25 per Section 4(1) of Payment of Gratuity Act, 1972 and Ind AS 19; presented as contingent liability; obligation met recognition criteria; employee benefit expenses and liabilities may be understated.",
+    "Material Uncertainty relating to Going Concern: Holding Company has not generated fee income following completion of extended tenure of existing funds managed; certain subsidiaries witnessed significant decline in revenue; absence of immediate new fund raise; lower estimated future fee income indicates material uncertainty casting significant doubt on Group's ability to continue as going concern (Note 34). Management believes going concern assumption appropriate based on ability to meet obligations over next 12 months from earnings and liquid assets.",
+    "Emphasis of Matter: Joint Venture being consolidated has ceased operations; its financial statements not prepared on going concern basis but on realisable value basis (Note 35).",
+    "Other Matters: Did not audit financial statements of three subsidiaries (total assets Rs. 9,735.22 Lakhs, total revenue Rs. 5,626.33 Lakhs, net cash inflows Rs. 51.48 Lakhs) and one joint venture (share of net profit after tax Rs. 9.78 Lakhs); audited by other auditors.",
+    "Other Matters: Did not audit financial statements of one subsidiary incorporated outside India (total assets Rs. 5,130.70 Lakhs, total revenue Rs. 300.33 Lakhs, cash outflows Rs. 138.05 Lakhs); audited by other auditor per applicable framework, converted to Ind AS by management.",
+    "Other Matters: Did not audit financial statements of one subsidiary incorporated outside India (total assets Rs. 14.06 Lakhs, total revenue Rs. Nil, net cash outflow Rs. 7.89 Lakhs); unaudited, furnished by management after Ind AS conversion; not material to Group.",
+    "Report on Other Legal and Regulatory Requirements: Except for possible effect of matters in Para 3 to 5, proper books of accounts kept as required by law (Section 143(3)(b)).",
+    "Report on Other Legal and Regulatory Requirements: Holding Company and subsidiaries/joint venture incorporated in India have not paid/provided any remuneration to directors during current year; Section 197 not applicable (Section 143(3)(b)).",
+    "Rule 11(e) representations: No funds advanced/loaned/invested to intermediaries with understanding to lend/invest in Ultimate Beneficiaries or provide guarantee/security on their behalf (27.4). No funds received from Funding Parties with understanding to lend/invest in Ultimate Beneficiaries or provide guarantee/security on their behalf (27.5). Nothing has come to notice causing belief that representations contain material misstatement (27.6).",
+    "Rule 11(g): Accounting software used has audit trail (edit log) feature operating throughout year for all relevant transactions; audit trail not tampered with; preserved per statutory requirements. However, one subsidiary backed up audit trail records on weekly basis instead of daily basis as per proviso to Rule 3(1) of Companies (Accounts) Rules, 2014; limited volume of transactions; except for backup frequency, nothing indicates tampering or non-preservation (27.8).",
+    "CARO 2020: No qualifications or adverse remarks in CARO reports for Company and consolidated entities (28).",
+    "report under Section 143(3)(i) on the adequacy and operating effectiveness of the internal financial controls system with reference to the Consolidated Financial Statements in so far as it relates to three subsidiary companies, which are companies incorporated in India, is based on the corresponding reports of the auditors of such subsidiaries",
+    "report under Section 143(3)(i) on the adequacy and operating effectiveness of the internal financial controls with reference to consolidated financial statements does not include the internal financial controls with reference to financial statements of one Joint Venture company incorporated in India, since reporting under Section 143(3)(i) of the Act is not applicable to the said Joint Venture company",
+    "Auditors of the Subsidiary Company has qualified for non-compliance with the provisions of the Companies Act, 2013"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Kaushik Modak resigned as Nominee Director (Non-Executive) w.e.f. February 20, 2026",
+    "Ms. Jayashree Ramaswamy appointed as Additional Director (Nominee Director, Non-Executive) w.e.f. February 13, 2026",
+    "Mr. Gaurav Khungar retires by rotation at ensuing AGM and offered for re-appointment",
+    "Mr. Chitranjan Singh Kahlon's continuation as Non-Executive Independent Director upon attaining age 75 approved by Special Resolution via Postal Ballot on February 18, 2026",
+    "Mr. Harish Agrawal resigned as Company Secretary and KMP w.e.f. September 30, 2025",
+    "Mr. Prasad Chaoji appointed as Company Secretary and Compliance Officer w.e.f. October 1, 2025",
+    "Appointment of Mr. Prasad Prakash Chaoji as Company Secretary and Compliance Officer with effect from October 1, 2025",
+    "Mr Kaushik Modak resigned as Nominee Director (Non-Executive) with effect from February 20, 2026",
+    "Ms Jayashree Ramaswamy appointed as Nominee Director (Non-Executive) with effect from February 13, 2026, nominated by IL&FS",
+    "Ms Lubna Ahmad Usman appointed as Additional Nominee Director w.e.f 23.01.2025, reappointed as Nominee Director in AGM held on 25-07-2025",
+    "Vishwanath Giriraj re-appointed as Independent Director for second term of 5 years in AGM 25-07-2025",
+    "Mr Kaushik Modak resigned w.e.f February 20, 2026",
+    "Ms Jayashree Ramaswamy was appointed as on February 13, 2026",
+    "Mr Harish Agrawal resigned as the Company Secretary of the Company with effect from September 30, 2025",
+    "Mr Prasad Chaoji has been appointed as the Company Secretary & Compliance Officer of the Company with effect from October 1, 2025",
+    "Ms Lubna Usman was re-designated as Executive Director of the Company in category of Whole-time Director for the period of 3 years from January 1, 2025 till December 31, 2027",
+    "Ms. Jayashree Ramaswamy (DIN: 02235205) appointed as Additional Non-Executive Director (Nominee of Infrastructure Leasing and Financial Services Limited) w.e.f 13th February, 2026",
+    "Mr. Kaushik Modak (DIN: 01266560) ceased to be Director w.e.f. 20th February, 2026",
+    "Continuation of Mr Chitranjan Singh Kahlon (DIN: 02823501) as Independent Non-Executive Director beyond age of 75 years approved by shareholders via postal ballot on 18th February, 2026",
+    "Chitranjan Singh Kahlon - Chairman (DIN: 02823501)",
+    "Bharat Jain - Partner, KKC & Associates LLP (Membership No. 100583)",
+    "Lubna Usman - Whole-time Director and CEO & CFO (DIN: 08299976)",
+    "Prasad Chaoji - Company Secretary (Membership No. A29864)",
+    "Mr Munish Saraogi \u2013 Non-Executive Independent Director (from April 1, 2024)",
+    "Mr Kaushik Modak - Non-Executive Nominee Director (upto February 20, 2026)",
+    "Mr Gaurav Khungar \u2013 Non-Executive Nominee Director (from November 14, 2024)",
+    "Ms Jayashree Ramaswamy \u2013 Non-Executive Additional Director (from February 13, 2026)",
+    "Ms. Jayashree Ramaswamy (DIN: 02235205) appointed as Additional Director in the category of Nominee Director (Non-Executive) with effect from February 13, 2026",
+    "Mr. Gaurav Khungar (DIN 10802649) retires by rotation and being eligible, offers himself for re-appointment",
+    "Appointment of Ms. Jayashree Ramaswamy (DIN: 02235205) as Additional Director (Nominee Director, Non-Executive) with effect from February 13, 2026, nominated by Infrastructure Leasing & Financial Services Limited, the Holding Company.",
+    "Appointment of Mr. Gaurav Khungar (DIN: 10802649) as Additional Director (Nominee Director, Non-Executive) with effect from November 14, 2024, nominated by Infrastructure Leasing & Financial Services Limited, the Holding Company."
+   ],
+   "auditor_change": "M/s KKC & Associates LLP resigned as Statutory Auditors with effect from August 13, 2026 (subsequent to Board's Report date)",
+   "top_shareholders": [
+    {
+     "name": "Infrastructure Leasing and Financial Services Limited (IL&FS)",
+     "pct": null
+    },
+    {
+     "name": "Infrastructure Leasing & Financial Services Limited (IL&FS)",
+     "pct": null
+    },
+    {
+     "name": "Promoter",
+     "pct": 50.42
+    },
+    {
+     "name": "Individuals Public",
+     "pct": 43.39
+    },
+    {
+     "name": "Investor Education and Protection Fund",
+     "pct": 1.44
+    },
+    {
+     "name": "Non Resident Indians",
+     "pct": 1.62
+    },
+    {
+     "name": "Hindu Undivided Family",
+     "pct": 1.88
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 1.14
+    },
+    {
+     "name": "Infrastructure Leasing & Financial Services Limited",
+     "pct": 50.42
+    },
+    {
+     "name": "Infrastructure Leasing & Financial Services Limited, the Ultimate Holding Company",
+     "pct": 50.42
+    }
+   ],
+   "promoter_holding_pct": 50.42
+  },
+  "litigation": [
+   "Ongoing investigation by Serious Fraud Investigation Office (SFIO) against IL&FS and its subsidiaries including the Company",
+   "Summary of charges received from Ministry of Corporate Affairs in October 2024 pertaining to matters of the Company/Group",
+   "Pending income-tax matters before Hon'ble High Court of Bombay for IL&FS Milestone Realty Advisors Private Limited funds",
+   "Advanced stages of litigation for remaining investments in IL&FS Realty Fund",
+   "Active pursuit of exit of remaining investments in IFIN Realty Trust through litigation and/or negotiated settlement mechanisms",
+   "NCLT passed Order on October 1, 2018 under Sections 241 and 242 of Companies Act, 2013 for suspending existing Board of Directors of IL&FS, the Holding Company",
+   "NCLT Order dated April 26, 2019 granted exemption to IL&FS and its Group Companies from appointing Independent Directors and Woman Directors",
+   "NCLT Order dated February 11, 2019 categorized 169 IL&FS Group Entities into Green, Amber, Red Entities; Company and its subsidiaries categorized as Green Entities",
+   "SEBI vide order dated July 10, 2025 did not accede to Company's application for extension of time for submission of Consolidated Financial Results for quarter and year ended March 31, 2025",
+   "Waiver applications for penalties for delayed submission of financial results: approved by NSE on September 17, 2025 and BSE on October 16, 2025 for quarter/year ended March 31, 2025; for quarter ended June 30, 2025 and quarter/half year ended September 30, 2025, NSE did not accede and Company paid applicable penalty amounts; BSE response awaited",
+   "Remaining investments under advanced stages of litigation, awaiting judicial outcomes to progress toward final exit (IL&FS Realty Fund)",
+   "Fund Manager continues to actively pursue exit of remaining investments through litigation and/or negotiated settlement mechanisms (IFIN Realty Trust)",
+   "Ongoing investigation by Serious Fraud Investigation Office (SFIO) against Infrastructure Leasing & Financial Services Limited (IL&FS) and its subsidiaries including the Company",
+   "Summary of charges received from Ministry of Corporate Affairs in October 2024 pertaining to matters of Holding Company and its domestic subsidiaries",
+   "Service Tax demand of Rs 918.60 Lakhs for FY 2011-12 to 2014-15 pending before Customs, Excise and Service Tax Appellate Tribunal, Rs 34.45 Lakhs paid under dispute",
+   "Service Tax demand of Rs 266.62 Lakhs for FY 2015-16 to 2017-18 pending before Customs, Excise and Service Tax Appellate Tribunal, Rs 18.18 Lakhs paid under dispute",
+   "GST demand of Rs 46.45 Lakhs for FY 2021-22 pending before Appellate Authority, Pre-deposit of Rs 2.31 Lakhs for filing appeal",
+   "Income Tax demand of Rs 3.63 Lakhs for FY 2010-11 pending before Commissioner of Income Tax (Appeals), Refund of Rs 2.33 Lakhs adjusted against the demand",
+   "Ongoing investigation by Serious Fraud Investigation Office (SFIO) of Ministry of Corporate Affairs against Infrastructure Leasing & Financial Services Limited (Ultimate Holding Company) and its subsidiaries including the Group; summary of charges received from Ministry of Corporate Affairs in October 2024 pertaining to matters of the Group (Note 33)",
+   "Income tax demand contested by the Group",
+   "Service tax demand contested by the Group",
+   "Andhra Pradesh Urban Infrastructure Asset Management Limited (Subsidiary Company) has established contingencies for various scenarios, including: (a) Company filed appeal on November 25, 2024 by paying 10% advance (shown under Deposit - Others) against GST OIO dated August 31, 2024 received for FY 2017-18. The Department allotted Appeal No. 269-2024 (b) The payment of gratuity to employees who have resigned (c) Convening of Board Meeting beyond 120 days (d) The non-appointment of a Whole-time Chief Financial Officer (CFO)",
+   "The Ministry of Corporate Affairs (MCA), Government of India, has vide its letter dated October 1, 2018 initiated investigation by Serious Fraud Investigation Office (SFIO) against Infrastructure Leasing & Financial Services Limited (IL&FS), the Holding Company and its subsidiaries (including the Company) under Section 212(1) of the Companies Act, 2013. On December 3, 2018, MCA on the directions of the National Company Law Tribunal, Mumbai (NCLT) has impleaded various Group Companies of IL&FS (which includes the Company) as Respondents to the Petition filed by them on October 1, 2018. The Holding Company has received the \"Summary of Charges\" sent by the Ministry of Corporate Affairs through IL&FS, based on which the Ultimate Holding Company has submitted the necessary response"
+  ],
+  "people": {
+   "key_management": [
+    {
+     "name": "Ms. Lubna Usman",
+     "role": "Chief Executive Officer & Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Prasad Chaoji",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Prasad Prakash Chaoji",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Venu Velpuri",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms Lubna Usman",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Chitranjan Singh Kahlon",
+     "role": "Chairman (Non-Executive Independent Director)"
+    },
+    {
+     "name": "Munish Kumar Saraogi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Priya Prempal Shetty",
+     "role": "Non-Executive Director (Nominee)"
+    },
+    {
+     "name": "Gaurav Khungar",
+     "role": "Non-Executive Director (Nominee)"
+    },
+    {
+     "name": "Jayashree Ramaswamy",
+     "role": "Non-Executive Director (Nominee)"
+    },
+    {
+     "name": "Ms Lubna Usman",
+     "role": "Whole Time Director and Chief Executive Officer and Chief Financial Officer"
+    },
+    {
+     "name": "Mr Prasad Chaoji",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Lubna Usman",
+     "role": "Whole Time Director and Chief Executive Officer & Chief Financial Officer"
+    },
+    {
+     "name": "Chitranjan Singh Kahlon",
+     "role": "Independent Non-Executive Director (Chairperson)"
+    },
+    {
+     "name": "Priya Prempal Shetty",
+     "role": "Director"
+    },
+    {
+     "name": "Gaurav Khungar",
+     "role": "Director"
+    },
+    {
+     "name": "Munish Kumar Saraogi",
+     "role": "Director"
+    },
+    {
+     "name": "Jayashree Ramaswamy",
+     "role": "Additional Non-Executive Director (Nominee of IL&FS)"
+    },
+    {
+     "name": "Chitranjan Singh Kahlon",
+     "role": "Chairman"
+    },
+    {
+     "name": "Lubna Usman",
+     "role": "Whole-time Director and CEO & CFO"
+    },
+    {
+     "name": "Prasad Chaoji",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr Chitranjan S Kahlon",
+     "role": "Chairman & Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr Munish Saraogi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr Kaushik Modak",
+     "role": "Non-Executive Nominee Director"
+    },
+    {
+     "name": "Ms Priya Shetty",
+     "role": "Non-Executive Nominee Director"
+    },
+    {
+     "name": "Ms Lubna Usman",
+     "role": "Whole-time Director, CEO and CFO"
+    },
+    {
+     "name": "Mr Gaurav Khungar",
+     "role": "Non-Executive Nominee Director"
+    },
+    {
+     "name": "Ms Jayashree Ramaswamy",
+     "role": "Non-Executive Additional Director"
+    },
+    {
+     "name": "Prasad Chaoji",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Ms. Jayashree Ramaswamy",
+     "role": "Additional Director (Nominee Director, Non-Executive)"
+    },
+    {
+     "name": "Mr. Gaurav Khungar",
+     "role": "Additional Director (Nominee Director, Non-Executive)"
+    }
+   ],
+   "employees": 13
+  },
+  "dividend_per_share": 0.7,
+  "other_notable": [
+   "Interim dividend of \u20b90.50 per equity share declared and paid during FY2025-26",
+   "Final dividend of \u20b90.70 per equity share recommended for FY2025-26, aggregating \u20b92,198.23 lakhs",
+   "Record Date for final dividend and cut-off date for e-voting: September 15, 2026",
+   "40th AGM scheduled for September 22, 2026 at 11:00 a.m. IST through VC/OAVM",
+   "Remote e-voting period: September 19, 2026 (9:00 a.m.) to September 21, 2026 (5:00 p.m.)",
+   "IL&FS has re-initiated process for divestment of its shareholding in the Company, currently underway",
+   "Company's joint venture with Government of Andhra Pradesh continues to secure mandates and execute multiple infrastructure projects",
+   "Board met 8 times during FY2025-26 with gap not exceeding 120 days",
+   "No frauds reported by Statutory Auditors or Secretarial Auditor under Section 143(12)",
+   "Secretarial Audit observations: delayed submission of consolidated financial results for Q1 and Q2 FY2026 due to delay from APUIAML; Chairperson of Stakeholders' Relationship Committee absent at adjourned AGM; KMP changes and dividend events not recorded in Structured Digital Database",
+   "Final Dividend for FY 2024-25 proposed at \u20b90.28 per share (Face Value Rs. 2/-) approved at AGM on September 26, 2025",
+   "Interim Dividend for FY 2025-26 approved at \u20b90.50 per equity share (Face Value Rs. 2/-) on November 13, 2025",
+   "Foreign Exchange Earnings: Inflow USD 49,80,000 (INR 45,02,93,800); Outflow NIL",
+   "No change in authorised, issued, subscribed and paid-up equity share capital during the financial year",
+   "Unclaimed dividends transferred to IEPF: \u20b928,84,391.40 for year 2017-2018",
+   "Outstanding unclaimed dividends as on March 31, 2026: Final Dividend 2018-19 \u20b914,20,435.50 (due Nov 30, 2026); Final Dividend 2019-20 \u20b923,91,290.40 (due Jan 14, 2028); Final Dividend 2020-21 \u20b913,39,657.70 (due Dec 3, 2028); Final Dividend 2021-22 \u20b917,00,864.72 (due Nov 11, 2029); Final Dividend 2022-23 \u20b932,08,048.08 (due Oct 26, 2030); Final Dividend 2023-24 \u20b936,22,431.66 (due Oct 31, 2031); Final Dividend 2024-25 \u20b913,82,738.76 (due Nov 26, 2032); Interim Dividend 2025-26 \u20b928,34,087.00 (due Jan 13, 2033)",
+   "CSR provisions not applicable; NIL CSR obligation, NIL CSR expenditure, no unspent CSR amount",
+   "No complaint of sexual harassment received during the financial year",
+   "Maternity Benefit Act, 1961 not applicable",
+   "Company did not accept any deposits within meaning of Chapter V of Companies Act, 2013",
+   "Cost records maintenance not required under Section 148(1)",
+   "Annual Return as on March 31, 2026 available on Company's website",
+   "Company complies with all applicable secretarial standards issued by ICSI",
+   "Chairman did not receive any remuneration or commission from any subsidiary company",
+   "No disclosure required for: issue of equity shares with differential rights, issue of shares to employees, significant orders impacting going concern, voting rights not exercised by employees, IBC proceedings, one-time settlement of loans, revision of financial statements",
+   "Company has submitted request for surrender of its Certificate of Registration (CoR No: CA0851) to act as Corporate (Composite) Agent, acknowledged by IRDAI on March 6, 2025",
+   "During FY2026, IFIN Realty Trust generated exits aggregating to approximately \u20b9170 crore (IFIN share: 3%) and distributed approximately \u20b93.75 crore to investors",
+   "IL&FS Realty Fund distributed approximately \u20b915.8 crore to investors during FY2026; IIML share in distribution was approximately 3.23%",
+   "Tara III Funds: Two India-based funds fully divested; offshore fund awaiting final tranche of approximately \u20b91.8 crore expected in June 2026",
+   "Standalone Total Income: Rs. 5528.76 lakhs; Standalone Profit Before Tax and Exceptional Items: Rs. 4791.30 lakhs",
+   "Consolidated Total Income: Rs. 6553.18 lakhs; Consolidated Profit Before Tax and Exceptional Items: Rs. 900.10 lakhs",
+   "Average net profit for CSR calculation: -1,18,39,245/- (negative), resulting in NIL CSR obligation",
+   "Newly constituted IL&FS Board has re-initiated process for divestment of its holding in IIML, currently underway",
+   "Board met eight times during FY2026 on April 23, 2025, May 29, 2025, July 18, 2025, August 14, 2025, September 29, 2025, November 13, 2025, January 15, 2026 and February 13, 2026",
+   "Independent Directors met on March 27, 2026",
+   "Audit Committee met five times during FY2026 on May 29, 2025, July 18, 2025, August 14, 2025, November 13, 2025 and February 13, 2026",
+   "Nomination & Remuneration Committee met four times during FY2026 on May 29, 2025, September 29, 2025, January 15, 2026 and February 13, 2026",
+   "Stakeholders' Relationship Committee met once during FY2026 on February 13, 2026",
+   "CSR Committee met once during FY2026 on May 29, 2025",
+   "Share Transfer Committee meetings held on April 25, 2025, May 27, 2025, June 12, 2025, July 25, 2025, August 4, 2025, September 12, 2025, October 9, 2025, November 12, 2025, December 8, 2025, December 29, 2025 and February 9, 2026",
+   "During FY2026 the Company received 3 complaints from shareholders. All the complaints received during the year FY2026 were solved satisfactorily and no complaints were pending at the end of the year",
+   "Sitting fees: Board Meeting Rs 20,000/-, Audit Committee Meeting Rs 15,000/-, Nomination & Remuneration Committee Meeting Rs 10,000/-, Corporate Social Responsibility Committee Meeting Rs 10,000/-, Stakeholders' Relationship Committee Meetings Rs 10,000/-",
+   "Total sitting fees paid to Non-Executive Directors for FY2026: Rs 11,95,000",
+   "No commission paid to any Director during April 1, 2025 to March 31, 2026",
+   "No Options granted to Non-Executive Directors during the year",
+   "Familiarisation Programme for Independent Directors details available at https://iimlindia.com/familiarisation-programme/",
+   "Terms of appointment of Independent Directors available at https://iimlindia.com/term-of-appointment-of-independent-directors/",
+   "Managerial Remuneration Policy available at https://iimlindia.com/policies-guidelines/",
+   "Policy on Performance Evaluation of the Board of Directors available at https://iimlindia.com/policies-guidelines/",
+   "Ms Jayashree Ramaswamy is Nominee Director at Noida Toll Bridge Company Limited",
+   "Ms Lubna Usman is Nominee Director at IL&FS Engineering and Construction Company Limited",
+   "Ms Priya Prempal Shetty, Mr Gaurav Khungar and Ms Jayashree Ramaswamy are Nominee Directors of Infrastructure Leasing & Financial Services Limited (IL&FS)",
+   "None of the Directors are related to each other other than the three Nominee Directors of IL&FS",
+   "Company follows April-March as Financial Year",
+   "Equity shares listed on BSE (511208) and NSE (IVC)",
+   "ISIN: INE050B01023, CIN: L65999MH1986PLC147981",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly Link Intime India Private Limited)",
+   "99.02% shares held in dematerialised form (74.80% NSDL, 24.22% CDSL) as on March 31, 2026",
+   "Average daily turnover FY2026: NSE 3,22,510 shares (\u20b927,97,474), BSE 57,792 shares (\u20b95,02,399)",
+   "No outstanding GDRs/ADRs/Warrants/Convertible Instruments as on March 31, 2026"
+  ],
+  "related_party": [
+   {
+    "party": "",
+    "nature": "All Related Party Transactions entered into during the financial year were in the ordinary course of business and on an arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "No materially significant related party transactions entered during the year",
+    "nature": "",
+    "amount_cr": null
+   },
+   {
+    "party": "Infrastructure Leasing & Financial Services Limited [IL&FS]",
+    "nature": "Ultimate Holding Company",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS Financial Services Limited [IFIN]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS Securities Services Limited [ISSL]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS Realty Fund [IL&FSRF]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IFIN Realty Trust [IFINRT]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS IIDC Fund [IIDC Fund]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS Energy Development Corporation Limited [IEDCL]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS Township Urban Asset Limited [ITUAL]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "Tamil Nadu Water Investment Group Limited [TNWICL]",
+    "nature": "Fellow Subsidiaries",
+    "amount_cr": null
+   },
+   {
+    "party": "IL&FS (Ultimate Holding Company)",
+    "nature": "Rent paid",
+    "amount_cr": 1.3532
+   },
+   {
+    "party": "IL&FS (Ultimate Holding Company)",
+    "nature": "Repairs & Maintenance",
+    "amount_cr": 0.0014
+   },
+   {
+    "party": "IL&FS (Ultimate Holding Company)",
+    "nature": "Electricity Charges",
+    "amount_cr": 0.0132
+   },
+   {
+    "party": "IL&FS (Ultimate Holding Company)",
+    "nature": "Other Reimbursement (Paid)/Recovered",
+    "amount_cr": 0.0131
+   },
+   {
+    "party": "IL&FS (Ultimate Holding Company)",
+    "nature": "Dividend Payment",
+    "amount_cr": 20.135
+   },
+   {
+    "party": "IFIN (Fellow Subsidiary)",
+    "nature": "Service Charges Expenses",
+    "amount_cr": 0.015
+   },
+   {
+    "party": "IFIN (Fellow Subsidiary)",
+    "nature": "Other Reimbursement (Paid)/Recovered",
+    "amount_cr": 0.0507
+   },
+   {
+    "party": "IL&FSRF (Fellow Subsidiary)",
+    "nature": "Other Reimbursement (Paid)/Recovered",
+    "amount_cr": 0.1886
+   },
+   {
+    "party": "IFINRT (Fellow Subsidiary)",
+    "nature": "Other Reimbursement (Paid)/Recovered",
+    "amount_cr": 0.0147
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Sitting fees",
+    "amount_cr": 0.1195
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "The Company does not have any debt instruments or any fixed deposit programme or any scheme or proposal involving mobilization of funds",
+    "amount_cr": null,
+    "note": "No credit ratings obtained"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Group does not have any debt as at March 31, 2026 and March 31, 2025"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1333 @@
+{
+ "isin": "INE882A01013",
+ "name": "Maral Overseas Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30110_MARALOVER_2025_2026_A_6278044_31072026192144.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 540274,
+ "chunks": 14,
+ "chunks_ok": 14,
+ "facts": {
+  "business": {
+   "description": "Maral Overseas Limited is an integrated textile company with capabilities across yarns, fabrics and garments. Its yarn and fabric manufacturing operations are centred at the Maral Sarovar facility in Khargone, Madhya Pradesh, while garmenting operations are based in the NCR region.",
+   "products": [
+    {
+     "name": "Yarn",
+     "share_of_revenue_pct": 54.26,
+     "note": "Includes cotton, blended and specialised yarns; melange yarn operations ran at full capacity"
+    },
+    {
+     "name": "Fabric",
+     "share_of_revenue_pct": 26.36,
+     "note": "Increased output mix in favour of dyed fabric; 21.84% of yarn used internally for fabric division"
+    },
+    {
+     "name": "Garments",
+     "share_of_revenue_pct": 19.38,
+     "note": "18.14% of fabric used internally for garment division; one garment unit consolidated to optimise costs"
+    },
+    {
+     "name": "Garment",
+     "share_of_revenue_pct": null,
+     "note": "Active-wear, casual wear, athleisure, and sleepwear for both men and women."
+    },
+    {
+     "name": "Yarn (including melange, cotton, blended, aramid, recycled)",
+     "share_of_revenue_pct": null,
+     "note": "Produced at Sarovar and Noida plants; includes value-added blends like Bamboo, Modal, Tencel, Linen/Cotton, Aramid, recycled polyester"
+    },
+    {
+     "name": "Fabric (knitted: single jersey, interlock, rib, pique, seersucker, popcorn, waffle, stripe)",
+     "share_of_revenue_pct": null,
+     "note": "Developed with special finishes: Quick Dry, Wicking, Liquid Touch, UV Protection; supplied to global and domestic brands"
+    },
+    {
+     "name": "Melange Yarn",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Grey Yarn",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Dyed Yarn",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Knitted Fabric",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Spinning (melange)",
+     "share_of_revenue_pct": null,
+     "note": "Plant and Machinery (Spinning unit melange) useful life 15 years"
+    },
+    {
+     "name": "Textile Made-ups",
+     "share_of_revenue_pct": null,
+     "note": "Plant and Machinery (Textile Made-ups) useful life 9 years single shift"
+    },
+    {
+     "name": "Power generation",
+     "share_of_revenue_pct": null,
+     "note": "Plant and Machinery (Power) useful life 18-40 years"
+    },
+    {
+     "name": "Cotton/Other waste",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 6,460.16 lakh (FY2026), Rs 6,440.60 lakh (FY2025)"
+    },
+    {
+     "name": "Cotton (Traded)",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 61.19 lakh (FY2026), Rs 413.71 lakh (FY2025)"
+    },
+    {
+     "name": "Job charges (Services)",
+     "share_of_revenue_pct": null,
+     "note": "Sale of services revenue: Rs 833.52 lakh (FY2026), Rs 460.91 lakh (FY2025)"
+    },
+    {
+     "name": "Knitted Fabrics",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "leading corporates and brands across India and international markets",
+    "reputed global brands added in garment business",
+    "B2B export segment customers",
+    "leading international brands",
+    "leading domestic and global brands",
+    "large international clientele",
+    "Global brands",
+    "Indian brands",
+    "Premium global brands (e.g., Seer Sucker\u2013180 GSM, Single Jersey-180 GSM for a leading international apparel brand)",
+    "Domestic suppliers and brands",
+    "There are no customer having 10% or more of total revenue"
+   ],
+   "geographies": [
+    {
+     "name": "India (Domestic Market)",
+     "share_pct": 80
+    },
+    {
+     "name": "Exports",
+     "share_pct": 20
+    },
+    {
+     "name": "EU",
+     "share_pct": null
+    },
+    {
+     "name": "UK",
+     "share_pct": null
+    },
+    {
+     "name": "UAE",
+     "share_pct": null
+    },
+    {
+     "name": "Australia",
+     "share_pct": null
+    },
+    {
+     "name": "New Zealand",
+     "share_pct": null
+    },
+    {
+     "name": "Bangladesh (reduced dependence)",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "Europe",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    },
+    {
+     "name": "United States",
+     "share_pct": null
+    },
+    {
+     "name": "Bangladesh",
+     "share_pct": null
+    },
+    {
+     "name": "East Asia",
+     "share_pct": null
+    },
+    {
+     "name": "Americas",
+     "share_pct": null
+    },
+    {
+     "name": "Middle East",
+     "share_pct": null
+    },
+    {
+     "name": "Africa",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": 52.09
+    },
+    {
+     "name": "Export",
+     "share_pct": 47.91
+    },
+    {
+     "name": "US",
+     "share_pct": null
+    },
+    {
+     "name": "Japan",
+     "share_pct": null
+    },
+    {
+     "name": "China",
+     "share_pct": null
+    },
+    {
+     "name": "International (exports)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "North America",
+     "share_pct": null
+    },
+    {
+     "name": "Gulf & Middle east",
+     "share_pct": null
+    },
+    {
+     "name": "Far East & South east Asia",
+     "share_pct": null
+    },
+    {
+     "name": "Rest of the world",
+     "share_pct": null
+    },
+    {
+     "name": "US market",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Maral Sarovar, V. & P.O. Khalbujurg, Tehsil Kasrawad, Dist. Khargone - 451 660, Madhya Pradesh",
+     "capacity": "Yarn and fabric manufacturing; 15 MW captive solar capacity planned; melange yarn at full utilisation"
+    },
+    {
+     "location": "NCR Region (Garmenting operations)",
+     "capacity": "One garment unit consolidated; resources committed to other garment units scaled down"
+    },
+    {
+     "location": "Sarovar",
+     "capacity": "Yarn: 98,776 spindles; Fabric: 64 knitting machines, monthly capacity 650 tons; Garment: 1,948 sewing machines (consolidated from three to two facilities)"
+    },
+    {
+     "location": "Sarovar, V. & P.O. Khalbujurg, Tehsil Kasrawad, Distt. Khargone \u2013 451 660 (M.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Noida Unit, D-347, Sector-63, Noida \u2013 201307 (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Noida Unit, A-37, Sector-64, Noida \u2013 201301 (U.P.)",
+     "capacity": ""
+    },
+    {
+     "location": "Maral Sarovar V & P.O., Khalbujurg Tehsil, Kasrawad, Khargone, Madhya Pradesh- 451660",
+     "capacity": ""
+    },
+    {
+     "location": "Maral Sarovar, V & P.O. Khalbujurg, Tehsil Kasrawad, Khargone, Madhya Pradesh - 451660",
+     "capacity": "Spinning Unit-4 (LMW Double machines), Melange Unit (LMW SDDU, MBO line), Fabric unit, Garment unit; biomass-based Thermopack and boiler; solar PPA under process"
+    },
+    {
+     "location": "Noida: D-347, Sector-63 and A-37, Sector-64, Noida, Uttar Pradesh",
+     "capacity": "Fabric and garment manufacturing; rooftop solar (35 kW increased to 45 kW at D-347; 250 kW increased to 315 kW at A-37); highway lighting upgrades"
+    },
+    {
+     "location": "Maral Sarovar, V& P.O. Khalbujurg, Tehsil Kasrawad, Distt. Khargone, Madhya Pradesh \u2013 451660",
+     "capacity": ""
+    },
+    {
+     "location": "Maral Sarovar V. & P.O. Khalbujurg, Tehsil Kasrawad, Distt. Khargone-451660, Madhya Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "A-37, Sector 64, Noida, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "D-347, Sector-63, Noida-201307, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Maral Sarovar, V&P.O. Khalbujurg Tehsil Khasrawad, District Khargone, Madhya Pradesh, India",
+     "capacity": ""
+    },
+    {
+     "location": "Maral Sarovar, V. & P.O. Khalbujurg, Tehsil Kasrawad, Distt. Khargone - 451 660, Madhya Pradesh",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "cotton",
+    "biomass (replacing coal)",
+    "fibres",
+    "man-made fibres",
+    "dyes",
+    "organic fair-trade materials",
+    "recycled fibres",
+    "Man-made fibres (MMF)",
+    "Polyester (including recycled polyester fibre)",
+    "Spandex",
+    "Modal",
+    "Tencel",
+    "Bamboo",
+    "Linen",
+    "Aramid (including recycled Aramid yarn)",
+    "Biomass (for Thermopack/boiler)",
+    "Raw materials",
+    "embellishment",
+    "stores & spares",
+    "packing material",
+    "Other fibers",
+    "Dyes & Chemicals",
+    "Embellishments",
+    "Yarn (for consumption)",
+    "Fabric (for consumption)"
+   ],
+   "competitors_named": [
+    "Bangladesh",
+    "Vietnam",
+    "Pakistan"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "apparel",
+    "textiles",
+    "home textiles",
+    "global textile and fashion industry",
+    "fashion",
+    "athleisure",
+    "technical textiles",
+    "innerwear",
+    "outerwear",
+    "home furnishing",
+    "industrial segments",
+    "Lifestyle",
+    "Apparel (global and domestic brands)",
+    "Technical textiles (UV protection, quick dry, wicking, liquid touch finishes)",
+    "Sustainable/eco-friendly textiles (recycled polyester, recycled aramid, linen/cotton blends)",
+    "textile"
+   ],
+   "brands_or_certifications": [
+    "Rajiv Gandhi National Quality Award 1998",
+    "National Energy Conservation Award 2007, 2011",
+    "CITI's Birla Award for Excellence in Energy Conservation 2010",
+    "FICCI Safety Award 2013",
+    "CITI's Birla Award for Innovation 2014",
+    "EHS Excellence Award (Platinum) 2016-17",
+    "CITI's Birla Award for Excellence in Sustainability 2018",
+    "EKDKN Excellence in HR Training Silver Award 2017",
+    "National Safety Awards 2018",
+    "Achievement Award 2021 (TGI and WCA audits)",
+    "Suraksha Puraskar (Third-level Safety Award) 2022",
+    "Sarvashreshth Puraskar (Bronze Trophy)",
+    "HSE Award 2015",
+    "Achievement Award",
+    "Detox/TGI audit by Intertek",
+    "APEX India Occupational Health & Safety 2022 Platinum Award",
+    "Exceed Award 2017 (Trophy and Certificate)",
+    "APEX India Occupational Health & Safety Gold Award 2020",
+    "Kasturi Cotton",
+    "Tex-Eco Initiative",
+    "National Fibre Scheme",
+    "Production Linked Incentive (PLI) Scheme",
+    "Samarth 2.0",
+    "PM MITRA",
+    "Bharat Tex 2026"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Scale presence in EU and other FTA-enabled markets with focus and urgency; expand value-added portfolio building on success of melange and dyed yarn; sustain cost discipline, deepen operational efficiencies and convert improving productivity gains into stronger profitability as conditions improve",
+    "period": "FY2027 and FY2028"
+   },
+   {
+    "statement": "India\u2013EU FTA expected to be operational with ratification in 2026; Indian textile exports to EU could grow from ~US$7 billion to US$30 billion over medium term; Bangladesh graduation from LDC status in late 2026 to erode its duty-free access in EU over time",
+    "period": "Medium term"
+   },
+   {
+    "statement": "Proposed captive solar power plant (15 MW) expected to support portion of energy requirements through renewable energy, reduce dependence on conventional energy sources, lower carbon footprint, improve long-term energy cost efficiency and strengthen alignment with evolving ESG and regulatory expectations; CO2 emission reduction of 17,220 tonnes p.a. (37,622 tonnes in FY2027 with zero coal)",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Demand is expected to strengthen further, driven by a gradual recovery in key apparel markets such as the United States and European Union, alongside the continued momentum of the China+1 sourcing strategy. Finalisation of the India\u2013EU Free Trade Agreement and the rollover of the India\u2013UK Free Trade Agreement are expected to enhance export competitiveness further.",
+    "period": "FY2027 and beyond"
+   },
+   {
+    "statement": "In FY2027, the Indian economy is poised to achieve accelerated growth relative to the preceding year, with real GDP forecast to expand by 7% to 7.4%, buoyed by resilient private consumption. Strategic trade agreements with pivotal partners, including the United Kingdom, the United States, and the European Union, are anticipated to deepen bilateral commerce by enhancing market access for goods and services.",
+    "period": "FY2027"
+   },
+   {
+    "statement": "The global textile market is expected to grow to US$1,955.50 billion by 2034, with a CAGR of 7.11%. The industry is poised for sustained expansion, driven by innovation, digital integration, and a continued shift towards sustainable and resilient supply chains.",
+    "period": "by 2034"
+   },
+   {
+    "statement": "Demand is expected to strengthen further in FY2027, driven by recovery in key apparel markets such as the US and EU, along with the ongoing China+1 sourcing shift.",
+    "period": "FY2027"
+   },
+   {
+    "statement": "The finalisation of the India\u2013EU Free Trade Agreement (FTA), along with the rollover of the India\u2013UK FTA, is expected to provide a further boost, opening new avenues for growth and strengthening India's position in the global apparel market.",
+    "period": "Future"
+   },
+   {
+    "statement": "The continued emphasis on value-added products and prudent business decisions is expected to support performance in the coming years.",
+    "period": "Coming years"
+   },
+   {
+    "statement": "The sector's strong raw material base, skilled workforce, and growing domestic demand provide resilience. Maral has effectively navigated recent challenges and strengthened its operational resilience, positioning itself to capitalise on emerging opportunities across global value chains, supported by policy thrust, modern manufacturing investments, and deeper integration into export markets.",
+    "period": "Future"
+   },
+   {
+    "statement": "Focus on innovation, value addition, and sustainability; multiple developments progressed to bulk order stage; strong approval ratio across key global brands and domestic suppliers; sustainability adding significant value to portfolio (cotton/linen blends, recycled polyester developments).",
+    "period": "Ongoing / FY2026-27"
+   },
+   {
+    "statement": "Plan to install steam traps and condensate recovery system, regular monitoring of air/steam/water leakages, energy-efficient timer lighting, VFD on supply/return fans in preparatory humidification plant (Units 4 & 5), improve boiler steam ratio, reduce ETP treatment and chemical costs, install 20,000 Eco HLLD spindles with unique bolster design for energy saving, reduce frame size in four melange sampling ring frames (replace 30 kW motors with 11 kW, saving ~1.8 lakh units annually), recover condensates and reuse waste as boiler feed water.",
+    "period": "Next year (FY2026-27)"
+   },
+   {
+    "statement": "Upon notification of the related Rules to the New Labour Codes by the Central/State Government and any further clarification on other aspects of the New Labour Codes, the Company will evaluate and account for additional impact, if any, in subsequent periods.",
+    "period": "subsequent periods"
+   },
+   {
+    "statement": "The Company has been tightening operations, scaling value-added capacity and steadily restoring profitability, is well placed to participate in this next chapter from a position of strength. Further, these efforts coupled with gradual improvement in business operations would result in a sequential recovery in financial performance. Also, the continued emphasis on value-added products and prudent business decisions is expected to support performance in the coming years.",
+    "period": "coming years"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Captive solar power plant",
+    "amount_cr": null,
+    "timeline": "Planned; 15 MW capacity; CO2 reduction 17,220 tonnes p.a. (37,622 tonnes in FY2027 with zero coal)"
+   },
+   {
+    "item": "Dyed yarn de-bottlenecking / capacity expansion",
+    "amount_cr": null,
+    "timeline": "To align with emerging export opportunities from India-UK and India-EU FTAs (3-5 year window)"
+   },
+   {
+    "item": "Capacity expansion in dyed yarn (25% capacity expansion)",
+    "amount_cr": null,
+    "timeline": "Coming years"
+   },
+   {
+    "item": "Capacity expansion in Fabric Division",
+    "amount_cr": null,
+    "timeline": "Coming years"
+   },
+   {
+    "item": "Targeted de-bottlenecking measures between dyed and white fabric operations",
+    "amount_cr": null,
+    "timeline": "During FY2026"
+   },
+   {
+    "item": "Restructuring of garment manufacturing footprint from three to two facilities (vacating rented premises)",
+    "amount_cr": null,
+    "timeline": "During FY2026"
+   },
+   {
+    "item": "Modernization, replacement of machinery and capacity additions in Yarn Dying and fabric Dye house at Sarovar plant",
+    "amount_cr": 30.66,
+    "timeline": "Kept in abeyance due to financial constraints"
+   },
+   {
+    "item": "Critical machinery for improvement in efficiency in production of Fabric and Yarn division taken on long term lease",
+    "amount_cr": null,
+    "timeline": "During the year"
+   },
+   {
+    "item": "Energy conservation equipment (biomass-based Thermopack and boiler, optimized steam/utility pipelines, energy-efficient compressor, heat recovery systems) at Sarovar",
+    "amount_cr": 6.4,
+    "timeline": "FY2025-26 (completed)"
+   },
+   {
+    "item": "Solar power: PPA execution under process at Sarovar; rooftop solar capacity increased from 35 kW to 45 kW (D-347) and 250 kW to 315 kW (A-37) at Noida",
+    "amount_cr": null,
+    "timeline": "Ongoing / FY2026-27"
+   },
+   {
+    "item": "Install 20,000 Eco HLLD spindles with unique bolster design for energy saving",
+    "amount_cr": null,
+    "timeline": "Next year (FY2026-27)"
+   },
+   {
+    "item": "VFD compressors (200 CFM) at Noida (D-347 and A-37)",
+    "amount_cr": null,
+    "timeline": "FY2025-26 (completed) / FY2026-27 (planned)"
+   },
+   {
+    "item": "Steam traps, condensate recovery system, insulated steam pipelines, VFD on supply/return fans in humidification plant (Units 4 & 5)",
+    "amount_cr": null,
+    "timeline": "Next year (FY2026-27)"
+   },
+   {
+    "item": "Contractual commitments for the acquisitions of PPE",
+    "amount_cr": null,
+    "timeline": ""
+   },
+   {
+    "item": "Estimated value of contracts remaining to be executed on capital account (net of advances)",
+    "amount_cr": 2.4871,
+    "timeline": "As at 31st March 2026"
+   }
+  ],
+  "risks": [
+   "Geopolitical tensions and tariff-related disruptions in major markets",
+   "Uneven demand across geographies",
+   "Cotton price volatility",
+   "Elevated interest, energy and logistics costs",
+   "Evolving labour regulations and higher compliance obligations adding to employee-related costs",
+   "Bangladesh LDC graduation eroding duty-free access in EU over time",
+   "Structural tariff disadvantage relative to peers in Bangladesh, Vietnam, Pakistan (though narrowing via FTAs)",
+   "Raw material price volatility (cotton and other fibre prices)",
+   "Supply chain disruptions (geopolitical uncertainties and logistics constraints)",
+   "Pricing constraints (intense competition limiting pricing power and compressing margins)",
+   "Demand cyclicality (reliance on global retail and fashion cycles leading to order fluctuation and inventory imbalances)",
+   "Need for continuous innovation (rapid advancements in spinning technologies and evolving sustainability standards)",
+   "Policy and tariff risks (US tariff escalation, 50% tariff imposed by United States on selected Indian goods in August 2025)",
+   "Geopolitical tensions (Middle East conflicts, Iran\u2013Israel/US conflict, disruptions around Strait of Hormuz)",
+   "Financial market volatility (impact on market capitalisation)",
+   "Stringent compliance norms (labour regulations, environmental compliance, rising sustainability requirements)",
+   "Fluctuating demand patterns (dependence on global retail dynamics and evolving fashion trends)",
+   "Input cost volatility",
+   "Pricing competition",
+   "Supply chain disruptions",
+   "Raw material price volatility (particularly cotton)",
+   "Elevated logistics costs",
+   "Geopolitical uncertainties (Russia-Ukraine war, instability in Middle East impacting Strait of Hormuz, Iran-US/Israel tensions, Operation Sindoor)",
+   "Trade route disruptions, freight costs, and supply chain stability issues",
+   "Tariff-related uncertainties and elevated tariff regimes in key global markets",
+   "Uneven demand across key international markets",
+   "High US tariffs constraining garment exports",
+   "Shifting of garment sourcing to lower tariff regions",
+   "Indian Labour Codes leading to higher compliance and employee-related costs",
+   "Intense competitive pressures from highly fragmented industry structure",
+   "Uncertainty in international trade policies, tariffs, and regulatory barriers",
+   "Rising global instability and protectionist sentiment",
+   "Financial constraints limiting capital expenditure",
+   "Margin pressures due to persistent cost inflation",
+   "Risk is an inherent aspect of business",
+   "Company has adopted Risk Assessment and Mitigation Policy for identification, assessment and mitigation of risks",
+   "Risks categorized into External, Internal and Other Risks",
+   "Identified risks are systematically addressed through mitigating actions on a continuous basis",
+   "Energy cost volatility (fuel, power)",
+   "Environmental compliance (ETP treatment cost, chemical cost, effluent/pollution)",
+   "Foreign exchange exposure (adverse exchange rate movement)",
+   "Regulatory non-compliance (statutory, listing requirements)",
+   "Labour problems / industrial relations",
+   "Technology absorption risk (though N.A. for imported tech)",
+   "Dependence on key customers (global brands)",
+   "Raw material price fluctuations (cotton, polyester, spandex, specialty fibres)",
+   "Foreign Exchange Risk",
+   "Commodity Price Risk",
+   "Valuation of Deferred tax assets depends on probability of future taxable profits",
+   "Provisions and contingencies require judgement on timing and amount of cash outflows",
+   "Impairment of Property Plant and Equipment based on value in use and future cash flow projections",
+   "Fair value measurement of financial instruments involves judgement on liquidity risk, credit risk and volatility",
+   "Useful lives and residual values of property, plant and equipment based on management estimates",
+   "Trade disruptions caused by global headwinds affecting exporters",
+   "Salary risk: Actual salary increase will increase the Plan's liability. Increase in assumption of salary increase rate in future valuations will also increase the liability.",
+   "Investment risk: If Plan is funded, then assets liabilities mismatch & actual return on investment assets is lower than the discount rate assumed at the last valuation date, can impact the liability.",
+   "Discount rate risk: Reduction in discount rate in subsequent valuations can increase the plan's liability.",
+   "Mortality & disability risk: Actual deaths & disability cases proving lower or higher than assumed in the valuation can impact the liabilities.",
+   "Withdrawals: Actual withdrawals proving higher or lower than assumed withdrawals and change of withdrawal rates at subsequent valuations can impact Plan's liability.",
+   "demand fluctuations across key global markets",
+   "tariff-related uncertainties",
+   "geopolitical developments",
+   "subdued demand and pricing challenges in the grey yarn segment",
+   "cotton price volatility",
+   "elevated interest, energy and logistics costs",
+   "freight costs uncertain and elevated due to Russia\u2013Ukraine conflict and instability in the Middle East"
+  ],
+  "auditor": {
+   "name": "S S Kothari Mehta & Co. LLP, Chartered Accountants (Firm Registration No. 000756N/N500441)",
+   "opinion": "Unmodified",
+   "qualifications_or_emphasis": [
+    "The Statutory Auditor's Report does not contain any qualification, reservation or adverse remark, disclaimer or emphasis of matter",
+    "Secretarial audit report not an assurance of future viability or management efficacy",
+    "Verification limited to test check on random basis without detailed technical scrutiny",
+    "Management representation obtained for compliance of laws and events",
+    "Financial records and Books of Accounts not verified",
+    "Audit trail (edit log) facility enabled and preserved w.e.f 20.05.2024",
+    "Title documents for properties mortgaged with IFCI Limited verified based on annual possession certificate",
+    "No material discrepancies noticed on physical verification of Property, Plant and Equipment and Inventory",
+    "No proceedings initiated or pending under Benami Transactions (Prohibition) Act, 1988",
+    "No default in repayment of loans or interest to any lender",
+    "No fraud noticed or reported during the year",
+    "No whistle-blower complaints received during the year",
+    "Company has not incurred cash losses during the financial year covered by audit and immediately preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "Payment to statutory auditor: Statutory audit Fee Rs 21.00 lakh, Limited review Fee Rs 1.50 lakh, Out of pocket expenses Rs 6.75 lakh (FY2026); Rs 21.00 lakh, Rs 1.50 lakh, Rs 6.52 lakh (FY2025)"
+   ],
+   "key_audit_matters": [
+    "Verification of secretarial records, Board minutes, forms and returns",
+    "Compliance with Companies Act, 2013, SCRA, Depositories Act, FEMA, SEBI Regulations (LODR, ICDR, Share Based Benefits, NCS, RTA, Delisting, Buyback - mostly Not Applicable)",
+    "Board composition changes: appointment of Shri Suman Jyoti Khaitan as Independent Director (w.e.f. 4 Nov 2025), cessation of Smt. Archana Capoor (w.e.f. 5 Nov 2025)",
+    "Postal ballot approval for Khaitan appointment (20 Dec 2025)",
+    "AGM held 29 Aug 2025 via VC/OAVM, attended by all Directors, Statutory and Secretarial Auditors",
+    "No key audit matters identified for the current period."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Shri Suman Jyoti Khaitan (DIN: 00023370) appointed as Independent Director with effect from 4th November 2025 for a term of five consecutive years, approved by members on 20th December 2025 by Special Resolution through Postal Ballot",
+    "Smt. Archana Capoor (DIN: 01204170) completed her tenure towards second term and consequently ceased to be Independent Director with effect from close of business hours on 5th November 2025",
+    "Smt. Archana Capoor ceased to be Chairperson of the CSR Committee with effect from 5th November, 2025",
+    "Shri Amitabh Gupta was appointed as Chairperson of CSR Committee with effect from 6th November, 2025",
+    "Shri Ravi Jhunjhunwala (DIN-00060972) is liable to retire by rotation and being eligible offers himself for re-appointment at the 37th Annual General Meeting",
+    "Shri Suman Jyoti Khaitan (DIN: 00023370) appointed as Independent Director for 5 consecutive years w.e.f. 4th November 2025; approved by members via postal ballot on 20th December 2025",
+    "Smt. Archana Capoor (DIN: 01204170) ceased to be Independent Director due to completion of tenure on 5th November 2025",
+    "Smt. Archana Capoor ceased to be Chairperson & Member of Audit Committee, Stakeholders' Relationship Committee, CSR Committee, and Nomination and Remuneration Committee with effect from 5th November 2025 due to completion of her 2nd term as Independent Director.",
+    "Shri Raman Singh Sidhu appointed as Member and Chairperson of Audit Committee, Member of Stakeholders' Relationship Committee, Member and Chairperson of CSR Committee, and Member and Chairperson of Nomination and Remuneration Committee with effect from 6th November 2025.",
+    "Shri Amitabh Gupta appointed as Member and Chairperson of Stakeholders' Relationship Committee and Member and Chairperson of CSR Committee with effect from 6th November 2025.",
+    "Shri Suman Jyoti Khaitan appointed as Member of Audit Committee and Independent Director with effect from 4th November 2025 (approved via postal ballot on 20th December 2025).",
+    "Smt. Romi Jatta appointed as Independent Director with effect from 4th November 2025.",
+    "Shri Tarun Kumar Baldua resigned as President with effect from 30th August 2025.",
+    "Shri Mohit Maheshwari appointed as President (Yarn & Fabric) and Head of Sarovar Plant with effect from 1st September 2025.",
+    "Smt. Archana Capoor ceased to be Independent Director on completion of tenure of 5 years on 5th November 2025.",
+    "Shri Raman Singh Sidhu appointed on 1st August 2024.",
+    "Shri Amitabh Gupta appointed on 1st August 2024.",
+    "Smt. Romi Jatta appointed on 1st August 2024.",
+    "Shri Suman Jyoti Khaitan appointed on 4th November 2025.",
+    "Dr. Kamal Gupta ceased to be Independent Director w.e.f. 25.09.2024",
+    "Smt. Archana Capoor ceased to be Independent Director w.e.f. 05.11.2025",
+    "Shri Amitabh Gupta appointed as Independent Director w.e.f. 01.08.2024",
+    "Smt. Romi Jatta appointed as Independent Director w.e.f. 04.11.2025",
+    "Shri Suman Jyoti Khaitan appointed as Independent Director w.e.f. 04.11.2025",
+    "Shri Ravi Jhunjhunwala (DIN: 00060972) retires by rotation and offers himself for re-appointment at the 37th AGM on 25th August 2026",
+    "Restructuring of remuneration of Shri Shekhar Agarwal (DIN: 00066113), Chairman & Managing Director and CEO, effective 1st April 2026, by revising Basic Salary and consequential benefits, and restructuring allowances and perquisites, subject to limits under Section 197 and Schedule V of Companies Act, 2013.",
+    "Restructuring and 10% increase in remuneration of Shri Shantanu Agarwal (DIN: 02314304), Joint Managing Director, effective 1st April 2026, by revising Basic Salary and consequential benefits, and restructuring allowances and perquisites, subject to limits under Section 197 and Schedule V of Companies Act, 2013.",
+    "Re-appointment of Shri Ravi Jhunjhunwala (DIN: 00060972) as Non-Executive Director liable to retire by rotation at the 37th AGM"
+   ],
+   "auditor_change": "M/s. Manisha Gupta & Associates appointed as Secretarial Auditor for a term of 5 consecutive years from the conclusion of 36th AGM till the conclusion of 41st AGM to be held in the year 2030",
+   "top_shareholders": [
+    {
+     "name": "Shri Shekhar Agarwal",
+     "pct": 1.82
+    },
+    {
+     "name": "Shri Shantanu Agarwal",
+     "pct": 1.34
+    },
+    {
+     "name": "Promoters & Promoter Group",
+     "pct": 74.95
+    },
+    {
+     "name": "Individuals/HUF",
+     "pct": 19.33
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 5.31
+    },
+    {
+     "name": "Agarwal Trademart Private Limited",
+     "pct": 47.61
+    },
+    {
+     "name": "Agarwal Finestate Private Limited",
+     "pct": 17.82
+    }
+   ],
+   "promoter_holding_pct": 74.95,
+   "promoter_pledge_pct": 36.0
+  },
+  "people": {
+   "employees": 4863,
+   "key_management": [
+    {
+     "name": "Shekhar Agarwal",
+     "role": "Chairman & Managing Director and CEO"
+    },
+    {
+     "name": "Shantanu Agarwal",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Sandeep Singh",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Manoj Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mohit Maheshwari",
+     "role": "President (Yarn and Fabric)"
+    },
+    {
+     "name": "Naveen Maheshwari",
+     "role": "Senior Vice President and Head of Sarovar Plant"
+    },
+    {
+     "name": "Shri Shantanu Agarwal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Smt. Archana Capoor",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Amitabh Gupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Ravi Jhunjhunwala",
+     "role": "Director"
+    },
+    {
+     "name": "Shri Shekhar Agarwal",
+     "role": "Chairman & Managing Director and CEO"
+    },
+    {
+     "name": "Shri Shantanu Agarwal",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Shri Manoj Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Shri Sandeep Singh",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Shri Mohit Maheshwari",
+     "role": "President (Yarn & Fabric) and Head of Sarovar Plant"
+    },
+    {
+     "name": "Shri Naveen Maheshwari",
+     "role": "Sr. Vice President"
+    },
+    {
+     "name": "Sandeep Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shri Shekhar Agarwal",
+     "role": "Promoters having voting control / Director of the Company / Key Management Personnel"
+    },
+    {
+     "name": "Shri Shantanu Agarwal",
+     "role": "Promoters having voting control / Director of the Company / Key Management Personnel"
+    },
+    {
+     "name": "Dr. Kamal Gupta",
+     "role": "Independent Director (ceased w.e.f. 25.09.2024)"
+    },
+    {
+     "name": "Shri Priya Shankar Dasgupta",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Smt. Archana Capoor",
+     "role": "Independent Director (ceased w.e.f. 05.11.2025)"
+    },
+    {
+     "name": "Shri Raman Singh Sidhu",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shri Amitabh Gupta",
+     "role": "Independent Director (appointed w.e.f. 01.08.2024)"
+    },
+    {
+     "name": "Smt. Romi Jatta",
+     "role": "Independent Director (appointed w.e.f. 04.11.2025)"
+    },
+    {
+     "name": "Shri Suman Jyoti Khaitan",
+     "role": "Independent Director (appointed w.e.f. 04.11.2025)"
+    },
+    {
+     "name": "Shri Sandeep Singh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shri Ravi Jhunjhunwala",
+     "role": "Non-Executive Director"
+    }
+   ]
+  },
+  "other_notable": [
+   "Revenue from Operations: \u20b9980.87 Crore in FY2026 vs \u20b91,047.03 Crore in FY2025",
+   "Net Profit: \u20b93.26 Crore in FY2026 vs Net Loss of \u20b924.20 Crore in FY2025",
+   "EBITDA: \u20b971.19 Crore in FY2026 vs \u20b945.22 Crore in FY2025",
+   "Q4 FY2026 Net Profit: \u20b913.31 Crore vs \u20b9(0.23) Crore in Q4 FY2025",
+   "Capital Employed: \u20b9452.61 Crore",
+   "Debt/Net Worth: 75.53% / 24.47%",
+   "Book Value per share: \u20b926.23",
+   "Market Capitalisation: \u20b9143.60 Crore",
+   "Face Value per share: \u20b910",
+   "37th AGM scheduled for 25th August 2026 at 2:00 p.m. IST via VC/OAVM",
+   "India\u2013EU FTA signed on 27th January 2026",
+   "Zero-based budgeting implemented across functions",
+   "Substantial reduction in employee costs and tighter overhead controls",
+   "Supply chain re-engineered for speed and reliability with improvements in inventory turns and working capital efficiency",
+   "Sales function re-energised with stronger pipeline-development framework, improved forecasting and deeper engagement with key accounts",
+   "Strategic diversification of export markets with deliberate reduction in dependence on Bangladesh and ramp-up in alternative geographies",
+   "92% biomass usage in fuel mix; 23.5% expected renewable energy share",
+   "Water recycled in downstream activities: 96.90%",
+   "Total capacity utilisation: 71.28%",
+   "Special yarn production: 14.80%",
+   "Corporate Office: Bhilwara Towers, A-12, Sector-1, Noida - 201 301 (NCR-Delhi)",
+   "Registered Office & Works: Maral Sarovar, V. & P.O. Khalbujurg, Tehsil Kasrawad, Dist. Khargone - 451 660 (M.P.)",
+   "CIN: L17124MP1989PLC008255",
+   "BSE Scrip Code: 521018, NSE Symbol: MARALOVER",
+   "Part of LNJ Bhilwara Group",
+   "Substantially replaced coal with biomass as primary energy source to reduce carbon footprint significantly.",
+   "India\u2013EU Free Trade Agreement finalised; India\u2013UK Free Trade Agreement rolled over.",
+   "United States granted Bangladesh exemptions on certain apparel and textile exports using American-produced raw materials under a newly announced trade agreement.",
+   "Global textile market valued at US$1,065.45 billion in 2025; China largest exporter with ~32% global trade share; Vietnam 2nd largest exporter, followed by Bangladesh, Turkey and India.",
+   "Global headline inflation expected to decline from 4.1% in 2025 to 3.8% in 2026.",
+   "Global trade expanded by 3.8% in 2025.",
+   "India's industrial sector witnessed robust expansion with 7.8% growth in December 2025.",
+   "India Manufacturing PMI moderated to 53.9 in March 2026 from 56.9 in February 2026.",
+   "Net GST collections increased by 7.1% to \u20b919.34 Lakh Crore during FY2026.",
+   "RBI reduced repo rate from 6.25% in April to 5.50% in June 2025.",
+   "Annual inflation in India fell to 1.7% in FY2026 from 4.7% in previous year.",
+   "Urban unemployment improved, signalling strengthening labour market.",
+   "Revenue from Operations: \u20b9980.87 Crore (FY2026) vs \u20b91,047.03 Crore (FY2025)",
+   "Operational Profit: \u20b971.19 Crore (FY2026) vs \u20b945.22 Crore (FY2025)",
+   "Net Profit: \u20b93.26 Crore (FY2026) vs Net Loss of \u20b924.20 Crore (FY2025)",
+   "Return on Net Worth: 2.95% (FY2026) vs (22.22)% (FY2025)",
+   "Net Worth increased from \u20b9108.89 Crore (31st March 2025) to \u20b9110.74 Crore (31st March 2026)",
+   "Debt-Equity Ratio improved from 1.70 to 1.28 times",
+   "Interest Coverage Ratio improved from 1.57 to 3.00 times",
+   "Operating Profit Margin improved from 4.32% to 7.26%",
+   "Net Profit Margin improved from (2.31)% to 0.33%",
+   "Production: 16,160 MT grey yarn, 3,087 MT dyed yarn, 3,477 MT grey knitted fabric, 5,339 MT processed fabric, 2,807 MT m\u00e9lange yarn, 33.18 Lakh pieces garments",
+   "M\u00e9lange yarn production operated at full capacity",
+   "Exports (FOB value): \u20b9469.94 Crore (47.91% of turnover) vs \u20b9464.35 Crore (44.35%)",
+   "Board met 7 times during FY2026",
+   "36th AGM held on 29th August 2025 via VC/OAVM",
+   "Issued and paid-up share capital: \u20b971.508 Crore (4,15,08,000 Equity Shares of \u20b910 each + 30,00,000 9.25% RNCPS of \u20b9100 each)",
+   "30,00,000 RNCPS allotted in three tranches to Diplomat Leasing and Finance Private Limited (Promoter Group)",
+   "Dividend on RNCPS accrued (\u20b91.38 Crore) due to inadequate profits, payable cumulatively when profits suffice",
+   "No CSR obligation for FY2026 due to losses in preceding three financial years",
+   "Internal Auditors: GSA & Associates LLP (Sarovar Plant), Ashim & Associates (Garment Units)",
+   "Cost Auditor: K. G. Goyal & Co.",
+   "Secretarial Auditor: Manisha Gupta & Associates",
+   "Registrar & Share Transfer Agent: MCS Share Transfer Agent Limited",
+   "CSR obligation for the financial year 2025-26 was Not Applicable as average net profit was Nil"
+  ],
+  "related_party": [
+   {
+    "party": "Diplomat Leasing and Finance Private Limited",
+    "nature": "Promoter Group Company - Allotment of 9.25% Redeemable Non-Convertible Cumulative Preference Shares (RNCPS)",
+    "amount_cr": 30.0
+   },
+   {
+    "party": "Diplomat Leasing and Finance Private Limited",
+    "nature": "Promoter Group Company",
+    "amount_cr": 30.0
+   },
+   {
+    "party": "",
+    "nature": "Related party transactions are being done on an arm's length basis at prevailing market price and in the ordinary course of business and do not have any possible conflict with the interests of the Company.",
+    "amount_cr": null
+   },
+   {
+    "party": "Related party",
+    "nature": "Unsecured Loan",
+    "amount_cr": 20.0
+   },
+   {
+    "party": "Diplomat Leasing and Finance Private Limited",
+    "nature": "Promoter Group Company; issued 30,00,000 RNCPS aggregating to Rs 30 crore",
+    "amount_cr": 30.0
+   },
+   {
+    "party": "Related party (unsecured loan)",
+    "nature": "Unsecured loan from related party at MCLR+0.40%; Rs 2000 lakh prepaid during year",
+    "amount_cr": 20.0
+   },
+   {
+    "party": "Shri Shekhar Agarwal",
+    "nature": "Key Managerial Personnel & Close Members",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Shantanu Agarwal",
+    "nature": "Key Managerial Personnel & Close Members",
+    "amount_cr": null
+   },
+   {
+    "party": "Aadi Marketing Company Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Agarwal Finestate Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Bhilwara Technical Textiles Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "BMD Power Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "BMD Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Diplomat Leasing and Finance Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Essay Kalyan Nidhi Trust",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "MG Marketing and Trading Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Sita Nirman Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "SSSA Family Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Swami Vivekanand Educational Sports culture and welfare Society",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Shekhar Agarwal - HUF",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Shekhar Agarwal - Trust",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Shantanu Agarwal - HUF",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Zoongoo Commercial Co. Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "AKJ Apparels Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Asia Law Office",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Bhilwara Energy Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "BMD Renewable Energy Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "BSL Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Captain Trade & Agencies Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "HEG Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "RANDR Trustee Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "RLJ Family Trusteeship Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "RRJ Family Trustee Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "RSWM Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "SKLNJ Family Trusteeship Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "Agarwal Trademart Private Limited",
+    "nature": "Enterprises over which any person described in A-(i-iii) and B-(ix) is able to exercise significant influence over the reporting enterprises",
+    "amount_cr": null
+   },
+   {
+    "party": "MOL Employees gratuity fund Trust",
+    "nature": "Post-employment benefit plan",
+    "amount_cr": null
+   },
+   {
+    "party": "Maral Overseas Limited senior executive Trust superannuation",
+    "nature": "Post-employment benefit plan",
+    "amount_cr": null
+   },
+   {
+    "party": "M/s. K. G. Goyal & Co. (Firm Reg. No. 000017)",
+    "nature": "Cost Auditors remuneration for FY 2026-27",
+    "amount_cr": 0.01
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Bank of Baroda",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Central Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Canara Bank",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Export-Import Bank of India",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "UCO Bank",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "9.25% Redeemable Non-Convertible Cumulative Preference Shares (RNCPS)",
+    "amount_cr": 30.0,
+    "note": "Issued to Promoter Group on private placement basis"
+   },
+   {
+    "lender_or_type": "Banks/Financial Institutions",
+    "amount_cr": null,
+    "note": "Working capital limits in excess of 5 Crore rupees sanctioned during the year on the basis of security of current assets; quarterly returns/statements filed with banks are in agreement with books of account."
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": 102.497,
+    "note": "Non-current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": 238.8291,
+    "note": "Current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Preference Shares (RNCPS)",
+    "amount_cr": 30.0,
+    "note": "Non-current preference shares issued during the year"
+   },
+   {
+    "lender_or_type": "IFCI Limited",
+    "amount_cr": null,
+    "note": "Properties mortgaged as security for working capital facilities"
+   },
+   {
+    "lender_or_type": "Related party",
+    "amount_cr": 20.0,
+    "note": "Repayment of Unsecured Loan during the year"
+   },
+   {
+    "lender_or_type": "Term loans from banks (Project term loans)",
+    "amount_cr": 120.6269,
+    "note": "Maturity 2029 to 2033; Interest MCLR+1% to 3.95%"
+   },
+   {
+    "lender_or_type": "Term loans from banks (Covid Loan under ECLGS 1, 2 & 2 extension)",
+    "amount_cr": 7.5173,
+    "note": "Maturity 2026 to 2029; Interest MCLR+0.50% to 1.00%"
+   },
+   {
+    "lender_or_type": "Term loans from banks (Funded interest term loan - FITL)",
+    "amount_cr": 9.4182,
+    "note": "Maturity 2026 to 2026; Interest MCLR+1% to 4.80%"
+   },
+   {
+    "lender_or_type": "Term loans from financial institutions (Project term loans)",
+    "amount_cr": 1.4668,
+    "note": "Maturity 2025 to 2026; Interest MCLR+2.50%"
+   },
+   {
+    "lender_or_type": "Term loans from financial institutions (Covid Loan under ECLGS 1, 2)",
+    "amount_cr": 2.9487,
+    "note": "Maturity 2025 to 2029; Interest MCLR+1.00%"
+   },
+   {
+    "lender_or_type": "Term loans from financial institutions (Funded interest term loan - FITL)",
+    "amount_cr": 0.1262,
+    "note": "Maturity 2026 to 2026; Interest MCLR+1% to 2.50%"
+   },
+   {
+    "lender_or_type": "Unsecured loan from related party",
+    "amount_cr": 0.0,
+    "note": "MCLR+0.40%; Rs 2000 lakh prepaid during year"
+   },
+   {
+    "lender_or_type": "Working capital loan from banks - Cash Credit facilities",
+    "amount_cr": 108.5725,
+    "note": "Repayable on demand; secured by hypothecation of current assets"
+   },
+   {
+    "lender_or_type": "Working capital loan from banks - Export Credit facilities (INR)",
+    "amount_cr": 49.5536,
+    "note": "Repayable on demand"
+   },
+   {
+    "lender_or_type": "Working capital loan from banks - Export Credit facilities (Foreign currency)",
+    "amount_cr": 33.968,
+    "note": "Repayable on demand"
+   },
+   {
+    "lender_or_type": "Foreign Bill Purchase (FBP) Bill Discounting",
+    "amount_cr": 7.1279,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Supplier finance arrangements (Bill discounting for MSME suppliers through RXIL)",
+    "amount_cr": 0.0,
+    "note": "Up to 120 days extended repayment; Rs 1579.31 lakh in prior year"
+   },
+   {
+    "lender_or_type": "9.25% Redeemable Non-Convertible Cumulative Preference Shares (RNCPS)",
+    "amount_cr": 30.0,
+    "note": "Issued to Diplomat Leasing and Finance Private Limited (Promoter Group) in 3 tranches during Sep-Oct 2025"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": null,
+    "note": "Interest expenses are net of interest subsidy received/receivable under State Government subsidy scheme to the tune of Rs 565.58 Lakh for FY 2025-26 (PY Rs 557.99 Lakh)."
+   },
+   {
+    "lender_or_type": "Preference shares",
+    "amount_cr": null,
+    "note": "Dividend accrued on Preference shares Rs 138.37 lakh for FY 2025-26 (PY nil)."
+   },
+   {
+    "lender_or_type": "Lease liabilities",
+    "amount_cr": 32.4909,
+    "note": "Current lease liabilities Rs 469.88 lakh, Non-current lease liabilities Rs 2,779.21 lakh as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Term Loan",
+    "amount_cr": 142.1,
+    "note": "Non-current borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Working capital",
+    "amount_cr": 199.22,
+    "note": "Current borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Preference Shares",
+    "amount_cr": 30.0,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loan from related party",
+    "amount_cr": 0.0,
+    "note": "As at 31st March 2026 (was 20.00 crore as at 31st March 2025)"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company does not have any Joint Ventures, Subsidiaries and Associate Companies."
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiary."
+   },
+   {
+    "name": "Bhilwara Technical Textiles Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "BMD Private Limited",
+    "holding_pct": null,
+    "business": "manufacturing of automotive furnishing fabric"
+   },
+   {
+    "name": "Bhilwara Textiles Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "BMD UFK Private Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "litigation": [
+   "There was no significant and material order passed by the regulators or courts during the year under review",
+   "There was no proceeding pending under the Insolvency and Bankruptcy Code, 2016",
+   "There was no fraud detected which has been reported to the Audit Committee / Board of Directors as well as to the Central Government",
+   "Pending litigations disclosed in financial statements - Refer Note 36 to the Financial Statements.",
+   "Duty on Coal Import FY 2012 - Commissioner (Appeals) - Rs 5.56 Lakh",
+   "Duty on Coal Import FY 2012 - CESTAT - Rs 28.48 Lakh",
+   "Non/Part Realization of Exports Proceeds for Draw Back FY 2014 to 2019 - Commissioner of Customs, Mumbai - Rs 386.36 Lakh",
+   "Entry Tax FY 2016-2017 - Asst. Commissioner Sales Tax Gautam Budh Nagar - Rs 3.62 Lakh",
+   "Income tax appeals pending at various levels for disputed demands",
+   "Contested demands of Rs 337.98 lakh",
+   "Income tax matters in dispute",
+   "Excise / customs matters in dispute",
+   "Sales tax matters in dispute",
+   "Recall of certain DEPB benefits, in dispute",
+   "Labour cases involving claims for reinstatement, back wages etc.",
+   "GST related cases involving tax & Interest etc."
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Two qualities shortlisted for a premium global brand: Seer Sucker\u2013180 GSM (Cotton/Spandex) and Single Jersey-180 GSM (Cotton/Linen 70/30); bulk order received for High Spandex quality (Cotton/Spandex 90/10) in Solid & Print shades; approval received for Single Jersey Spandex (Cotton/Modal/Spandex 57/38/5, 160 GSM); approval for Interlock Spandex (Cotton/Spandex 87/13) and Flat Back Pique Rib (Cotton/Polyester 92/8); approval for Popcorn Flat Back Waffle Spandex and Self-Stripe Single Jerseys; Ottoman fabric developed with strong buyer visibility; Stripe development in Seersucker attracting buyer interest.",
+    "value_cr": null
+   },
+   {
+    "statement": "Export obligations under the Export Promotion Capital Goods Scheme, remaining to be fulfilled within the specified period",
+    "value_cr": 73.9774
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Duty on Coal Import FY 2012",
+    "amount_cr": 0.0556
+   },
+   {
+    "nature": "Duty on Coal Import FY 2012",
+    "amount_cr": 0.2848
+   },
+   {
+    "nature": "Non/Part Realization of Exports Proceeds for Draw Back FY 2014 to 2019",
+    "amount_cr": 3.8636
+   },
+   {
+    "nature": "Entry Tax FY 2016-2017",
+    "amount_cr": 0.0362
+   },
+   {
+    "nature": "Contested demands",
+    "amount_cr": 3.3798
+   },
+   {
+    "nature": "Income tax refundable - disputed demands with appeals pending at various levels",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income tax matters in dispute",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Excise / customs matters in dispute",
+    "amount_cr": 4.2323
+   },
+   {
+    "nature": "Sales tax matters in dispute",
+    "amount_cr": 0.0362
+   },
+   {
+    "nature": "Recall of certain DEPB benefits, in dispute",
+    "amount_cr": 0.3663
+   },
+   {
+    "nature": "Labour cases involving claims for reinstatement, back wages etc.",
+    "amount_cr": 2.0997
+   },
+   {
+    "nature": "GST related cases involving tax & Interest etc.",
+    "amount_cr": 0
+   }
+  ],
+  "dividend_per_share": 2.0
+ }
+}
