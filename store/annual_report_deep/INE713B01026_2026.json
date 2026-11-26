@@ -1,0 +1,720 @@
+{
+ "isin": "INE713B01026",
+ "name": "Suryalakshmi Cotton Mills Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31226_SURYALAXMI_2025_2026_A_9563907_03092026162127.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 353787,
+ "chunks": 9,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Suryalakshmi Cotton Mills Limited is one of India's leading integrated manufacturers of premium yarn and denim, with end-to-end manufacturing capabilities including spinning, dyeing, weaving and finishing. The company provides quality products for leading private labels, fashion brands and retail chains, serving customers in more than 29 countries worldwide.",
+   "products": [
+    {
+     "name": "Yarn",
+     "share_of_revenue_pct": null,
+     "note": "Portfolio includes 100% Spun Polyester Yarns, Polyester Cotton Combed/Carded blends, Polyester Viscose Yarn blend, 100% cotton OE and Ring Spun Yarns, Slub and Fancy yarns, Core spun Elastane, 2 fold yarns, Eli-twisted, Compact Yarns"
+    },
+    {
+     "name": "Denim",
+     "share_of_revenue_pct": null,
+     "note": "Portfolio includes Mercerized Denims (Stretch and Rigid), Coated Denims (Stretch and Rigid), Normal finish (Stretch and Rigid), Cotton/Polyester (Stretch and Rigid), Colour Denims (Yarn Dyed/Over Dyed Stretch & Rigid), Mill washed Denim (Stretch and Rigid), Denim Fabrics with Different Blends"
+    },
+    {
+     "name": "Fabric",
+     "share_of_revenue_pct": null,
+     "note": "Core skills/expertise identified: Cotton Markets - price trends / quality / procurement; Fashion trends / designs; Textile machinery \u2013 developments"
+    },
+    {
+     "name": "Cotton & blended yarns",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Denim fabric",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cotton",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Polyester Staple Fibre",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Viscose Staple Fibre",
+     "share_of_revenue_pct": null,
+     "note": "Raw material"
+    },
+    {
+     "name": "Dyes & Chemicals",
+     "share_of_revenue_pct": null,
+     "note": "Stores and spares"
+    },
+    {
+     "name": "Coal / Husk",
+     "share_of_revenue_pct": null,
+     "note": "Stores and spares"
+    },
+    {
+     "name": "Other Stores & Spares",
+     "share_of_revenue_pct": null,
+     "note": "Stores and spares"
+    },
+    {
+     "name": "Cotton & PV waste",
+     "share_of_revenue_pct": null,
+     "note": "By-product at realisable value"
+    },
+    {
+     "name": "Trading of Cotton/PSF",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 1,068.10 lakhs"
+    },
+    {
+     "name": "Sale of Waste",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 747.39 lakhs"
+    },
+    {
+     "name": "Job work income",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 0.84 lakhs"
+    },
+    {
+     "name": "Export Benefit entitlement",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 861.75 lakhs"
+    },
+    {
+     "name": "Packing & Forwarding collection charges",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 11.15 lakhs"
+    },
+    {
+     "name": "Scrap Sales",
+     "share_of_revenue_pct": null,
+     "note": "Revenue: Rs 27.23 lakhs"
+    }
+   ],
+   "customers": [
+    "Levi's",
+    "Kontoor",
+    "Amazon",
+    "Walmart",
+    "leading private labels, fashion brands and retail chains",
+    "Wrangler",
+    "Lee",
+    "fashion brands",
+    "private labels",
+    "retail chains"
+   ],
+   "geographies": [
+    {
+     "name": "Global",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "South American markets",
+     "share_pct": null
+    },
+    {
+     "name": "United Kingdom",
+     "share_pct": null
+    },
+    {
+     "name": "Spain",
+     "share_pct": null
+    },
+    {
+     "name": "Turkey",
+     "share_pct": null
+    },
+    {
+     "name": "Vietnam",
+     "share_pct": null
+    },
+    {
+     "name": "Egypt",
+     "share_pct": null
+    },
+    {
+     "name": "29 countries worldwide",
+     "share_pct": null
+    },
+    {
+     "name": "Within India",
+     "share_pct": null
+    },
+    {
+     "name": "Bangladesh",
+     "share_pct": null
+    },
+    {
+     "name": "Colombia",
+     "share_pct": null
+    },
+    {
+     "name": "Guatemala",
+     "share_pct": null
+    },
+    {
+     "name": "Venezuela",
+     "share_pct": null
+    },
+    {
+     "name": "Other Countries",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Amangallu Mandal, Amangallu, Ranga Reddy Dist., Telangana - 509 321",
+     "capacity": "Over 87,000 spindles in yarn division"
+    },
+    {
+     "location": "Addl. Amravati Indl. Area, Textile Park, Nandgaon Peth, Tuljapur Village, Talkhanda, Dist. Amravati, Maharashtra - 444 901",
+     "capacity": "Yarn division (spindles included in 87,000+ total)"
+    },
+    {
+     "location": "Ramtek Mauda Road, Village Nagardhan, Tehsil Ramtek, Nagpur Dist., Maharashtra - 440 010",
+     "capacity": "Denim division with annual manufacturing capacity of 40 million metres"
+    },
+    {
+     "location": "Amangal Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Ramtek Unit, Denim Division",
+     "capacity": ""
+    },
+    {
+     "location": "Amravati Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Amangallu Mandal, Amangallu, Ranga Reddy Dist., Telangana - 509 321",
+     "capacity": ""
+    },
+    {
+     "location": "Amravati Indl. Area, Textile Park, Nandgaon Peth, Tuljapur Village, Talkhanda, Dist. Amravati, Maharashtra - 444 901",
+     "capacity": ""
+    },
+    {
+     "location": "Ramtek Mauda Road, Village Nagardhan, Tehsil Ramtek, Nagpur Dist., Maharashtra - 440 010",
+     "capacity": ""
+    },
+    {
+     "location": "Telangana and Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Ramtek, Maharashtra",
+     "capacity": "50.12 Acres of Land in the Denim Division under conversion into non agricultural use"
+    },
+    {
+     "location": "Amaravati Unit -1 (Spinning Unit)",
+     "capacity": ""
+    },
+    {
+     "location": "Amaravati Unit -2 (Weaving Unit)",
+     "capacity": ""
+    },
+    {
+     "location": "Ramtek, Maharashtra",
+     "capacity": "40 million meters"
+    }
+   ],
+   "raw_materials": [
+    "cotton",
+    "polyester",
+    "viscose",
+    "elastane",
+    "recycled fibres",
+    "regenerative cotton",
+    "Liva Eco",
+    "Tencel",
+    "recycled polyester",
+    "blended fibres",
+    "Yarn",
+    "Polyester Staple Fibre",
+    "Viscose Staple Fibre"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "fashion",
+    "lifestyle",
+    "apparel",
+    "global textile and apparel supply chains",
+    "global brands",
+    "export markets",
+    "domestic market",
+    "export"
+   ],
+   "brands_or_certifications": [
+    "Better Cotton Chain of Custody Standard",
+    "Sedex (SMETA)",
+    "ISO 14001:2015",
+    "ISO 9001:2015",
+    "Global Organic Textile Standard (GOTS)",
+    "Global Recycled Standard (GRS) Version 7",
+    "Organic Content Standard (OCS) Version 3.0",
+    "Recycled Claim Standard (RCS) Version 2.0",
+    "Oeko-Tex Standard 100",
+    "Regenagri Chain of Custody Criteria \u2013 Single Site Certification Version 1.2",
+    "Amsler Slub (Switzerland)",
+    "Eli Twist for Compact (Germany)",
+    "Core Spun (Germany)",
+    "Cleankore (sustainable denim programme)",
+    "Indigood programme",
+    "Better cotton chain of custody standard V1.0",
+    "Single Site Certification",
+    "Sedex (SMETA) Version 7",
+    "Global Organic Textile Standard (GOTS) Version 7.0",
+    "Global Recycled Standard (GRS Version 4.0)",
+    "Organic Content Standard (OCS Version 3.0)",
+    "Recycled Claim Standard (RCS Version 2.0)",
+    "Regenagri Chain of Custody Criteria \u2013Textiles Version 1.2"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The Indian textile and denim industry presents significant long-term opportunities, supported by favourable demographics, rising consumption, policy support and India's growing role in global supply chains. Increasing demand for differentiated and sustainably manufactured products is expected to further strengthen opportunities for established and trusted manufacturers.",
+    "period": "long-term"
+   },
+   {
+    "statement": "One remains optimistic of an early and peaceful resolution of the prevailing geopolitical crisis that have disrupted global economic environment with increasing costs of production and spiraling ocean freight rates.",
+    "period": "near-term"
+   },
+   {
+    "statement": "The Company remains focused on strengthening and diversifying its export business. The Company proposes to further expand its presence in markets such as the United Kingdom, Spain, Turkey, Vietnam and Egypt, while continuing efforts to increase business with existing global customers. The Company continues to pursue its sustainability initiatives, which have received encouraging response from international customers. Further, product innovation remains a key area of focus and the Company continues to develop new fabric blends, finishes and weaves to offer a differentiated product mix and strengthen its market position.",
+    "period": "Future"
+   },
+   {
+    "statement": "Global GDP growth is projected to grow at 3.1% in CY 2026 and 3.2% in CY 2027, supported by demand across emerging markets and gradual improvement in trade activity. However, geopolitical tensions, tariff-related developments and volatility in commodity prices may continue to affect inflation and global trade.",
+    "period": "CY 2026 and CY 2027"
+   },
+   {
+    "statement": "India is expected to maintain healthy economic growth supported by domestic demand, infrastructure spending and improving \"Ease of doing business\" and policy-led investments. Continued focus on manufacturing, digitalisation, a general positive outlook for growth and infrastructure development is expected to support economic activity and capacity creation. GDP growth for FY 2026-27 is projected at 6.6%, demonstrating a stable and broad-based growth outlook. Global uncertainties, including geopolitical tensions and supply chain disruptions, may continue to influence the external environment.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The textile industry is expected to show a positive growth, supported by the growing demand for value-added products, increasing preference for sustainable textiles and expanding opportunities across domestic and international markets. Rising demand for premium denim fabrics, specialised yarns and faster product development cycles is expected to create opportunities for integrated manufacturers with strong operational and product development capabilities. Going forward, Suryalakshmi will continue to focus on strengthening its portfolio of premium yarns and denim fabrics, enhancing manufacturing efficiencies and expanding its presence across key markets. Through investments in innovation, product development and sustainable manufacturing practices, the Company aims to drive long-term growth while delivering solutions aligned with evolving customer and industry requirements.",
+    "period": "medium-term"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Modernisation programme across spinning operations - replaced older-generation ring frames at Amravati unit with advanced next-generation systems equipped with linked auto-coners and improved automation capabilities",
+    "amount_cr": 30.97,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Installation of next-generation Autocoro 10 machine at Ramtek denim division with individual drive technology and higher rotor speeds",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "modernize its machinery and production processes",
+    "amount_cr": null,
+    "timeline": "not specified"
+   },
+   {
+    "item": "Energy conservation equipments",
+    "amount_cr": 8.0,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capital Work-in-progress",
+    "amount_cr": 20.47,
+    "timeline": "As at March 31, 2026"
+   }
+  ],
+  "risks": [
+   "challenging global environment due to US tariff-related issues",
+   "US brands adopting cautious approach by reducing order volumes and postponing buying decisions",
+   "geopolitical developments and West Asia conflict affecting global market sentiment",
+   "increasing costs of production",
+   "spiraling ocean freight rates",
+   "prevailing geopolitical crisis disrupting global economic environment",
+   "tariff policies pursued by USA",
+   "disturbances in Bangladesh",
+   "changing market dynamics",
+   "Trend Related Risks",
+   "Raw Material Risks",
+   "Brand / Technology Risks",
+   "Operational / Quality Risks",
+   "Human Resources Risks",
+   "Regulatory Risks",
+   "Financial Risks",
+   "uncertainties in international trade",
+   "evolving global scenario and continued uncertainties in international markets",
+   "Geopolitical tensions",
+   "Tariff-related developments",
+   "Volatility in commodity prices",
+   "Supply chain disruptions",
+   "Fluctuations in energy prices",
+   "Volatility in capital flows",
+   "Trade-related uncertainties",
+   "Volatility in Raw Material Costs - Fluctuations in cotton prices and input costs continue to affect cost structures and margins across the textile value chain",
+   "Intense Export Competition - Competition from lower-cost manufacturing countries and duty-related factors in export markets continue to affect price competitiveness",
+   "Environmental Compliance Requirements - Compliance with water management and effluent treatment requirements involves ongoing capital and operating expenditure",
+   "Presence of Unorganised Segment - The fragmented unorganised sector continues to account for a large share of volumes, competing on price and affecting margins stability for organised players",
+   "Technology and Product Evolution Constraints - Need for product diversification and adoption of advanced processing technologies remains important to address changing market requirements",
+   "Dispersed Value Chain - Geographical dispersion across spinning, processing and garmenting operations continues to increase logistics costs and lead times",
+   "Trade and Tariff Barriers - Elevated import duties in key export markets continue to affect competitiveness",
+   "Evolving Global Compliance Requirements - Stringent sustainability and traceability requirements in developed markets are increasing compliance costs",
+   "Raw Material Availability - Variability in domestic cotton supply has led to firm input prices, creating cost pressures across the value chain",
+   "Cost Competitiveness - Higher energy, logistics and production costs compared to competing countries continue to affect margins",
+   "Delay in sale of assets held for sale (Garment Division) beyond one year due to events or circumstances beyond the Company's control",
+   "Interest rate risk",
+   "Foreign currency risk (mainly USD)",
+   "Other price risk (equity investments)",
+   "Credit risk (trade receivables)",
+   "Liquidity risk"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India, Industrial Finance Branch, Hyderabad",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Union Bank of India (erstwhile Andhra Bank), Somajiguda, Hyderabad",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Punjab National Bank, Oxford Plaza, S. D. Road, Secunderabad",
+    "amount_cr": null,
+    "note": "Banker"
+   },
+   {
+    "lender_or_type": "Long term borrowings",
+    "amount_cr": 78.8051,
+    "note": "Non-current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 179.025,
+    "note": "Current borrowings as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Acceptances",
+    "amount_cr": 44.7492,
+    "note": "Current acceptances as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Borrowings \u2013 Non-Current",
+    "amount_cr": 78.8051,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Borrowings \u2013 Current",
+    "amount_cr": 179.025,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Acceptances",
+    "amount_cr": 44.7492,
+    "note": "As at 31 March 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Brahmayya & Co., Chartered Accountants, Hyderabad",
+   "opinion": "The Auditors' Report to the shareholders for the year under review does not contain any qualification, reservation or adverse remark.",
+   "key_audit_matters": [
+    "Minimum Alternate Tax (MAT) Credit Entitlement \u2013 Deferred tax assets",
+    "Evaluation of uncertain tax positions"
+   ],
+   "qualifications_or_emphasis": [
+    "The Company neither declared nor paid any dividend during the year.",
+    "No fraud by the Company and no material fraud on the Company has been noticed or reported during the year.",
+    "The Company has not been declared a willful defaulter by any bank or financial institution or other lender.",
+    "The Company has not incurred cash losses in the financial year and also in the immediately preceding financial year.",
+    "There is no resignation of statutory auditors of the Company during the year.",
+    "The Company does not have subsidiaries, associates or joint ventures."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Sri Dhruv Vijai Singh ceased to be Independent Director w.e.f. 27.07.2026",
+    "Sri Venkata Phani Kiran Kumar Immaneni appointed as Independent Director w.e.f. 27.07.2026",
+    "Sri Paritosh Agarwal re-appointed as Managing Director w.e.f. 21 June, 2025",
+    "Sri Dhruv Vijai Singh completed second term as Independent Director w.e.f. close of business hours on 27 July, 2026",
+    "Sri Venkata Phani Kiran Kumar Immaneni appointed as Additional Director (Non-Executive & Independent) w.e.f. 27 July, 2026 for a first term of five consecutive years, subject to approval of Members",
+    "Sri L. N. Agarwal ceased as Stakeholders Relationship Committee Member w.e.f. 11 August, 2025",
+    "Dr. Malapally Chowda Reddy Balaji appointed as Stakeholders Relationship Committee Member w.e.f. 11 August, 2025",
+    "Smt Aruna Prasad to be appointed as Chairperson of Audit Committee and Nomination & Remuneration Committee w.e.f. 27 July, 2026",
+    "Sri Venkata Phani Kiran Kumar Immaneni to be appointed as Member of Audit Committee and Nomination & Remuneration Committee w.e.f. 27 July, 2026",
+    "Pursuant to the Board Resolution dated 25 May, 2026, Smt. Aruna Prasad will be appointed as Chairperson CSR Committee w.e.f. 27 July, 2026.",
+    "Appointment of Sri Venkata Phani Kiran Kumar Immaneni (DIN: 11737207) as Non-Executive Independent Director for 5 years effective 27 July 2026",
+    "Sri Paritosh Agarwal (DIN: 00008738) retires by rotation and offers himself for re-appointment",
+    "Sri Venkata Phani Kiran Kumar Immaneni (DIN: 11737207) appointed as Additional Director (Non-Executive Independent Director) effective 27 July 2026",
+    "Sri Paritosh Agarwal (DIN: 00008738) re-appointment by rotation as Managing Director"
+   ],
+   "promoter_holding_pct": 60.93,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 60.93
+    },
+    {
+     "name": "Indian Public",
+     "pct": 31.17
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 2.51
+    },
+    {
+     "name": "NBFC",
+     "pct": 1.46
+    },
+    {
+     "name": "Non-Resident Indians & NRI Non-Repatriation",
+     "pct": 0.77
+    },
+    {
+     "name": "Others (Clearing members, HUF)",
+     "pct": 1.93
+    },
+    {
+     "name": "Shri LN Agarwal",
+     "pct": 25.73
+    },
+    {
+     "name": "Paritosh Agarwal",
+     "pct": 10.48
+    },
+    {
+     "name": "Padmini Agarwal",
+     "pct": 6.89
+    },
+    {
+     "name": "Vedant Agarwal",
+     "pct": 6.0
+    },
+    {
+     "name": "LN Agarwal (HUF)",
+     "pct": 2.14
+    },
+    {
+     "name": "LN Agarwal (Family Trust)",
+     "pct": 8.97
+    },
+    {
+     "name": "Paritosh Agarwal (HUF)",
+     "pct": 0.71
+    },
+    {
+     "name": "Late Smt Satyabhama Bai",
+     "pct": 0.01
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Sri L. N. Agarwal",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Sri Paritosh Agarwal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sri R. Surender Reddy",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Smt Aruna Prasad",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Dr. Malapally Chowda Reddy Balaji",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sri Venkata Phani Kiran Kumar Immaneni",
+     "role": "Independent Director (appointed w.e.f. 27.07.2026)"
+    },
+    {
+     "name": "Sri Sudhir Bhansali",
+     "role": "President (Finance)"
+    },
+    {
+     "name": "Sri E. V. S. V. Sarma",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sri Santosh Kumar Agarwal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mun Mun Baid",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Sri L. N. Agarwal",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Sri E. V. S. V. Sarma",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Sri Prabal Bhattacharjya / Sri Vasudeo Tipre",
+     "role": "General Manager (Exports)"
+    },
+    {
+     "name": "Sri R. L. Narayana",
+     "role": "President, Amangal Unit"
+    },
+    {
+     "name": "Sri Siddhant Sharma",
+     "role": "Chief Executive Officer, Ramtek Unit, Denim Division"
+    },
+    {
+     "name": "Sri S. V. Murthy",
+     "role": "Chief Operating Officer, Amravati Unit"
+    },
+    {
+     "name": "L. N. Agarwal",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Paritosh Agarwal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Santosh Kumar Agarwal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Sri Siddhant Sharma",
+     "role": ""
+    },
+    {
+     "name": "Sri Santosh Kumar Agarwal",
+     "role": "CFO"
+    },
+    {
+     "name": "S K Agarwal",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "E.V.S.V. Sarma",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Dhruv Vijai Singh",
+     "role": "Director"
+    },
+    {
+     "name": "E.V.S.V. Sarma",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Sri L.N. Agarwal",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Sri Venkata Phani Kiran Kumar Immaneni",
+     "role": "Non-Executive Independent Director (appointed 27 July 2026)"
+    }
+   ],
+   "employees": 2188
+  },
+  "other_notable": [
+   "Company is a Government Recognised Export House",
+   "ISO 9001:2015 & ISO 14001:2015 certified",
+   "CIN: L17120TG1962PLC000923",
+   "Listed on BSE (Scrip code: 521200) and NSE (Symbol: SURYALAXMI)",
+   "Registrar and Transfer Agent: KFin Technologies Limited",
+   "63rd AGM scheduled for 30 September 2026 at 11:00 AM through VC/OAVM",
+   "Cut-off date for e-voting eligibility: 23 September 2026",
+   "Remote e-voting period: 25 September 2026 (09:00 Hours IST) to 29 September 2026 (17:00 Hours IST)",
+   "Register of members and share transfer books closed from 23 September 2026 to 30 September 2026 (both days inclusive)",
+   "Sustainability initiatives: Cleankore programme (close to 10 million yards of sustainable denim), Indigood programme (reduced freshwater consumption), 100% recycled polyester usage across polyester-based denim products, coal consumption reduced to negligible levels",
+   "Higg-based carbon footprint assessment frameworks implemented",
+   "Facilities rank amongst better-performing denim manufacturing facilities across benchmarked categories",
+   "Integrated manufacturing ecosystem with backward integration capabilities",
+   "Focus on value-added and speciality yarn portfolio",
+   "Advanced spinning infrastructure with modernisation investments",
+   "Long-standing customer relationships with leading global brands",
+   "Strong product customisation capabilities",
+   "The Board has not recommended any dividend for the year under review to conserve resources.",
+   "The Company has not accepted any deposits from the public during the year under review.",
+   "No Loans / Guarantees / Investments under Section 186 of the Companies Act, 2013 have been made during the year.",
+   "There have been no material changes and commitments affecting the financial position of the Company which have occurred between the end of the financial year and the date of this Report.",
+   "There has been no change in the nature of business of the Company.",
+   "During the year under review no Company has become its subsidiary, joint venture or associate Company.",
+   "During the year under review, there has been no one time settlement of loans taken from banks and financial institutions.",
+   "The Company has complied with the Secretarial Standards issued by the Institute of Company Secretaries of India.",
+   "The Company has in place a Whistle Blower policy for vigil mechanism.",
+   "The Company has in place an Anti-Sexual Harassment Policy in line with the requirements of the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. No complaints received, disposed off, or pending during the calendar year.",
+   "The Company has complied with all provisions of the Maternity Benefit Act, 1961 to the extent applicable.",
+   "The Board of Directors has adopted the Insider Trading Policy in accordance with the requirements of the SEBI (Prohibition of Insider Trading) Regulation, 2018.",
+   "Periodic Training programmes for developing a skilled workforce, personality development programmes, yoga camps, etc., encouragement of employee participation in district / state level sports events are regularly undertaken. An integrated woman focused program trains unskilled women to undertake skilled jobs at its units.",
+   "The equity shares of the Company are listed at BSE Limited and National Stock Exchange of India Limited. The applicable annual listing fees were paid before the due date. The annual custodian fees have also been paid to the depositories.",
+   "Cost Auditor appointed: M/s. S. Hariharan & Associates, Cost Accountants (Firm Registration No. 100486) for Financial Year 2026-27.",
+   "Secretarial Auditor appointed: M/s. K V C Reddy & Associates, Practising Company Secretaries (M. No. F9268) for a period of five years.",
+   "Internal Auditor appointed: M/s. K. Vijayaraghavan & Associates, LLP, Chartered Accountants.",
+   "Shareholding pattern as on 31 March, 2026: Promoters 60.93%, Indian Public 31.17%, Bodies Corporate 2.51%, Banks & Financial Institutions 0.35%, NBFC 1.46%, Non-Resident Indians & NRI Non-Repatriation 0.77%, Foreign Portfolio \u2013 Corp 0.21%, IEPF 0.61%, Unclaimed Suspense Account 0.06%, Others (Clearing members, HUF) 1.93%.",
+   "18767207 shares amounting to 99.80% of the Capital have been dematerialised by investors as on 31 March, 2026.",
+   "No outstanding Global Depository Receipts (GDRs) or American Depository Receipts (ADRs) or Warrants or any Convertible instruments.",
+   "ICRA Limited has reaffirmed the Company's ratings: Long-Term Fund Based \u2013 Cash Credit and Long-Term Fund Based \u2013 Term Loan facilities at \"[ICRA] BBB (Negative)\"; Short-Term Non-Fund Based facilities at \"[ICRA] A3+\"; Long-Term / Short-Term Unallocated facilities at \"[ICRA] BBB (Negative) / [ICRA] A3+\".",
+   "The Company has not entered into any material transaction with any of its related parties or entity belonging to the Promoter / Promoter Group which holds 10% or more shareholding in the Company during the year under review.",
+   "The Company does not have any subsidiary.",
+   "Total fees paid to Statutory Auditors (M/s. Brahmayya & Co.) for FY 2025-26: \u20b9 6.86 lakhs (Statutory Audit fees \u20b9 5.00 lakhs, Fees for other services \u20b9 0.86 lakhs, Tax Audit \u20b9 1.00 lakh).",
+   "CSR obligation for FY 2025-26: \u20b9 14.39 lakhs; Amount spent: \u20b9 16.04 lakhs; Excess amount available for set off in succeeding financial years: \u20b9 1.65 lakhs.",
+   "Foreign Exchange Earned (FOB Value of Exports) in 2025-26: \u20b9 15,184.79 lakhs; Foreign Exchange Used in 2025-26: \u20b9 2,990.81 lakhs (including Commission on export sales \u20b9 120.16 lakhs, Foreign Travel Expenses \u20b9 24.65 lakhs, Raw material \u20b9 0.85 lakhs, Plant & Machinery & Others \u20b9 1,219.41 lakhs, Stores & Spares \u20b9 956.04 lakhs, Foreign Technical and Consultancy Services \u20b9 10.63 lakhs, Others \u20b9 63.49 lakhs, Repayment of Principal (FCNR) \u20b9 500.00 lakhs, Repayment of Interest (FCNR) \u20b9 95.58 lakhs).",
+   "New Energy Efficient Wider width Air Jet Looms 26 No's imported from Japan (Toyota) & New Energy Efficient Latest Technology Auto Coro Machine from Germany, installed at spinning section in 2023 & 2026; technology fully absorbed.",
+   "Bio Mass (Rice Husk) has been utilized in place of Coal at Process boiler; Solar water heater for yarn conditioning plant.",
+   "Compliance status with Corporate Governance requirements: All applicable regulations (17 to 27, 46(2)(b) to (i)) complied with; Regulation 21 (Risk Management Committee) and Regulation 24 (Corporate Governance requirements with respect to subsidiary of listed entity) Not Applicable.",
+   "Revenue from Operations: \u20b979,471.80 Lakhs (FY 2025-26) vs \u20b979,176.46 Lakhs (FY 2024-25)",
+   "EBITDA: \u20b95,438.33 Lakhs (FY 2025-26) vs \u20b95,796.90 Lakhs (FY 2024-25)",
+   "PBT: \u20b9482.45 Lakhs (FY 2025-26) vs \u20b9552.24 Lakhs (FY 2024-25)",
+   "PAT: \u20b9311.54 Lakhs (FY 2025-26) vs \u20b9363.32 Lakhs (FY 2024-25)",
+   "India Denim Market valued at around USD 1.2 billion in 2025, projected to reach nearly USD 1.9 billion by 2034",
+   "MAT credit receivable as at March 31, 2026 is Rs. 790.00 Lakhs",
+   "Financial Statements prepared in accordance with Indian Accounting Standards (Ind AS) prescribed under Section 133 of the Companies Act, 2013",
+   "Company's operations aligned with 'Make in India' initiative",
+   "Sustainability focus through 3R framework - Reduce, Replace and Recycle",
+   "Median remuneration of employees decreased by 5.28% in FY 2025-26",
+   "No increase in managerial remuneration during the financial year except for Sri Santosh Kumar Agarwal (13.77% increase)",
+   "The Company has not accepted any deposit or amounts which are deemed to be deposits.",
+   "The Company has not given any loans or made any investments or given any guarantees or security to the parties covered under Sections 185 and 186 of the Act.",
+   "The Company did not raise any money by way of initial public offer or further public offer (including debt instruments) during the year."
+  ],
+  "litigation": [
+   "There were no significant and material orders passed by the Regulators/ Courts that would impact the going concern status of the Company and its future operations.",
+   "There was no instance of fraud during the year under review, which required the Statutory Auditors to report to the Audit Committee and / or Board under Section 143(12) of Act and Rules framed thereunder.",
+   "During the year under review, there were no applications filed for corporate insolvency resolution process, by a financial or operational creditor or by the company itself under the IBC before the NCLT.",
+   "The Company received show cause notices from BSE and NSE requiring it to explain why penalties aggregating to \u20b9 10,56,100/- should not be imposed for violation of Regulations 17(1) and 17(1A) of SEBI (LODR) Regulations, 2015. The Company on partial approval of the waiver application submitted has paid the above amount.",
+   "The Company operates in different states and is subject to periodic challenges by local tax authorities on a range of tax matters during the normal course of business including direct and indirect tax matters",
+   "Pending litigations on its financial position disclosed in financial statements \u2013 Refer Note 33.1",
+   "Goods and Service Tax dispute of Rs. 41.40 Lakhs for FY 2018-19 pending at Commissioner Appeals, CGST, Mumbai"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Pending litigations including direct and indirect tax matters",
+    "amount_cr": null
+   },
+   {
+    "nature": "Goods and Service Tax dispute",
+    "amount_cr": 0.414
+   }
+  ]
+ }
+}

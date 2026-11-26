@@ -1,0 +1,886 @@
+{
+ "isin": "INE430N01022",
+ "name": "Vishwaraj Sugar Industries Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31592_VISHWARAJ_2025_2026_A_9840520_05092026190211.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 284211,
+ "chunks": 8,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Vishwaraj Sugar Industries Limited is engaged in the production of sugar and maintains cost records as required under Section 148(1) of the Companies Act, 2013.",
+   "plants": [
+    {
+     "location": "Bellad-Bagewadi, Taluka Hukkeri, District Belagavi, Karnataka, India",
+     "capacity": ""
+    },
+    {
+     "location": "Karnataka (implied by Karnataka State Pollution Control Board consent)",
+     "capacity": "Cane crushing 11,000 TCD; Ethanol 250 KLPD (expanded from 150 KLPD new unit); Power 36.4 MW"
+    },
+    {
+     "location": "Bellad-Bagewadi, Taluk: Hukkeri, Dist. Belagavi-591305, Karnataka, India",
+     "capacity": ""
+    },
+    {
+     "location": "Bellad-Bagewadi, Taluk Hukkeri, District Belgaum, Karnataka 591305, India",
+     "capacity": "Sugar Manufacturing capacity of 11,000 TCD, Distillery of 250 KLPD and 36.40 MW power generation plant"
+    },
+    {
+     "location": "Navage Village, Belagavi District, Karnataka, India",
+     "capacity": "Sugar Manufacturing capacity of 10,000 TCD, Distillery of 100 KLPD and 20 MW power plant (in process of setting up)"
+    },
+    {
+     "location": "BelladBagewadi, Taluka Hukkeri, Belgaum \u2013 591305, Karnataka, India",
+     "capacity": ""
+    },
+    {
+     "location": "Bellad Bagewadi, Tq: Hukkeri, Dist: Belagavi, Karnataka",
+     "capacity": "Sugar: 11,000 MT/day cane crushing; Distillery: 100 KLPD Rectified Spirit, 50 KLPD Neutral Spirit, 250 KLPD Ethanol; Co-gen: 36.4 MW; IML: 5,000 CB; Vinegar: 75,000 Ltrs"
+    },
+    {
+     "location": "Bellad-Bagewadi, Taluka-Hukkeri, District-Belgaum-591305, Karnataka, India",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "sugar cane",
+    "Sugarcane",
+    "Bagasse",
+    "Lime",
+    "Sulphur",
+    "Molasses (B Heavy, C Heavy)",
+    "Syrup",
+    "Chemicals",
+    "Rectified Spirit (for vinegar)"
+   ],
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Sugar",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 24,859.02 lakhs in FY2026"
+    },
+    {
+     "name": "Co-generation (Power)",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 2,436.26 lakhs in FY2026; 36.4 MW capacity"
+    },
+    {
+     "name": "Distillery (Ethanol)",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 9,409.95 lakhs in FY2026; 250 KLPD capacity"
+    },
+    {
+     "name": "Vinegar",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 1,260.43 lakhs in FY2026"
+    },
+    {
+     "name": "IML",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue nil in FY2026"
+    },
+    {
+     "name": "Power (from bagasse)",
+     "share_of_revenue_pct": null,
+     "note": "The Company has been generating power from renewable sources (bagasse) and consuming captively and exporting the surplus to the grid."
+    },
+    {
+     "name": "Distillery (Ethanol/Alcohol)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Power",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Co-generation",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 2,436.26 lakhs in FY2026"
+    },
+    {
+     "name": "Distillery",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 9,409.95 lakhs in FY2026"
+    },
+    {
+     "name": "Vinegar Unit",
+     "share_of_revenue_pct": null,
+     "note": "Segment revenue Rs 1,260.43 lakhs in FY2026"
+    },
+    {
+     "name": "Ethanol",
+     "share_of_revenue_pct": null,
+     "note": "Includes Ethanol (Syrup) and Ethanol (B Heavy); 2025-26 turnover Rs 9,013.15 lakhs"
+    },
+    {
+     "name": "Rectified Spirit",
+     "share_of_revenue_pct": null,
+     "note": "2025-26 turnover Rs 184.60 lakhs"
+    },
+    {
+     "name": "Electricity",
+     "share_of_revenue_pct": null,
+     "note": "Co-generation unit; 2025-26 turnover Rs 2,311.93 lakhs"
+    },
+    {
+     "name": "Natural Alcoholic Vinegar",
+     "share_of_revenue_pct": null,
+     "note": "2025-26 turnover Rs 1,260.43 lakhs"
+    },
+    {
+     "name": "By-products (Molasses, Compost, Bagasse, Scrap, Boiler Ash, Liquid CO2)",
+     "share_of_revenue_pct": null,
+     "note": "Included in turnover"
+    }
+   ],
+   "customers": [
+    "Oil Marketing Companies (for ethanol)",
+    "Power grid (for co-generation export)",
+    "Processed food manufacturers",
+    "Beverage sector"
+   ],
+   "geographies": [
+    {
+     "name": "India (domestic)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "competitors_named": [
+    "Brazil (global competitor)",
+    "Egyptian sugar industry (referenced)",
+    "Local gur and khandsari producers"
+   ],
+   "end_markets": [
+    "Sugar (domestic consumption, beverages, processed foods)",
+    "Ethanol (blending with petroleum fuel)",
+    "Power (grid export)",
+    "Vinegar",
+    "Bio-CNG, bio-manure, chemicals (potential)",
+    "Sugar industry",
+    "Power sector",
+    "Sugar market",
+    "Ethanol blending (fuel)",
+    "Power distribution",
+    "Vinegar market",
+    "IML (bottling)"
+   ],
+   "brands_or_certifications": [
+    "ICRA credit rating [ICRA] BB (Stable)",
+    "Kasurth Certification (for vinegar)"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. P. G. Ghali & Co., Chartered Accountants",
+   "opinion": "Unqualified (no qualification, reservation or adverse remark)",
+   "qualifications_or_emphasis": [
+    "Some properties held by way of general power of attorney in the name of Mr. Mallikarjun Kadayya Pujar; sale deeds in process of completion due to technical issues",
+    "Company's 2% of 3-year average net loss is Rs 30.65 lakhs, hence not liable for CSR expenditure in reporting period; unspent Rs 34.14 lakhs from FY2024-25 carried forward",
+    "Non-Spending of CSR amount during the year 2024-25.",
+    "Emphasis of Matter: As more fully described in Note\u2026. to the standalone financial statements. The scope, duration or outcome of these matters are uncertain. Our opinion is not modified in respect of this matter.",
+    "Company has incurred cash loss of Rs 9.88 crore during FY2026 and Rs 20.91 crore in FY2025",
+    "Contingent liabilities as listed",
+    "No fraud noticed or reported during the year",
+    "No whistle-blower complaints received",
+    "All transactions with related parties in compliance with sections 177 and 188 of Companies Act",
+    "Title deeds of immovable properties not held in the name of the company; held via General Power of Attorney in the name of Shri Mallikarjun Kadayya Pujar, Whole Time Director"
+   ],
+   "key_audit_matters": [
+    "Non-spending of CSR amount during FY 2024-25",
+    "Allowance for Credit Losses: The Company determines the allowance for credit losses based on historical loss experience adjusted to reflect current and estimated future economic conditions.",
+    "Properties are being held by way of General Power of Attorney in the name of Shri. Mallikarjun Kadayya Pujar, Whole Time Director of the Company held on behalf of the Company.",
+    "Recovery of Advances: The Company has given advances to various parties including Directors in normal course of its operations; some advances outstanding since long time shall be recovered along with interest.",
+    "Obtaining an insurance in the manner prescribed under Payment of Gratuity Act, 1972: The company has not invested the Gratuity provision made in any manner prescribed under Payment of Gratuity Act, 1972."
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Mr. Kush Katti",
+     "pct": null
+    },
+    {
+     "name": "Mrs. Sneha Nitin Dev",
+     "pct": null
+    },
+    {
+     "name": "Nikhil Umesh Katti",
+     "pct": 11.73
+    },
+    {
+     "name": "Neomile Growth Fund - Series I",
+     "pct": 2.03
+    },
+    {
+     "name": "Ramesh Vishwanath Katti",
+     "pct": 3.05
+    },
+    {
+     "name": "Lava Ramesh Katti",
+     "pct": 2.98
+    },
+    {
+     "name": "Jayashree Ramesh Katti",
+     "pct": 2.89
+    },
+    {
+     "name": "Kush Ramesh Katti",
+     "pct": 2.63
+    },
+    {
+     "name": "Sheela Umesh Katti",
+     "pct": 2.62
+    },
+    {
+     "name": "Sneha Nithin Dev",
+     "pct": 1.03
+    },
+    {
+     "name": "Basavaraj S Uttur",
+     "pct": 0.46
+    },
+    {
+     "name": "Abhinandan Khemalapure",
+     "pct": 0.4
+    },
+    {
+     "name": "Abhinandan Dhanapal Khemalapure",
+     "pct": 0.58
+    },
+    {
+     "name": "Ramesh Shiralkar",
+     "pct": 0.01
+    },
+    {
+     "name": "Prasan Katti",
+     "pct": 0.01
+    }
+   ],
+   "director_changes": [
+    "Mr. Mallikarjun Pujar appointed as Whole-Time Director w.e.f. 16-07-2025",
+    "Mr. Mukesh Kumar, Whole-Time Director designated as Executive Director, resigned effective close of business hours June 30, 2025 on health grounds; confirmed no other material reason",
+    "Mr. Vishnukumar Kulkarni re-appointed as Independent Director for second term of 5 years w.e.f. July 17, 2025 (first term ended July 16, 2025)",
+    "Mrs. Vinita D. Modak appointed as Secretarial Auditor (Peer Reviewed) at 30th AGM held Sep 24, 2025",
+    "Mr. Mukesh Kumar resigned as a member of the Risk Management Committee with effect from June 30, 2025.",
+    "Mr. Mallikarjun Pujar appointed as additional director to hold office as Whole-Time Director w.e.f. July 16, 2025",
+    "Mr. Mukesh Kumar - Executive Director resigned w.e.f. June 30, 2025 due to health issue",
+    "Mr. Kush Katti retires by rotation",
+    "Ms. Sneha Nithin Dev retires by rotation"
+   ],
+   "auditor_change": "M/s. P. G. Ghali & Co. appointed as Statutory Auditors at 27th AGM to hold office till conclusion of 32nd AGM in 2027",
+   "promoter_holding_pct": 29.04
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Nikhil Umesh Katti",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mrs. Sneha Nitin Dev",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Kush Katti",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Mallikarjun Pujar",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Vishnukumar Kulkarni",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Shivanand Tubachi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Basavaraj Hagargi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Pratibha Munnolli",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sheshagiri Kulkarni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Priya Haria",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Nikhil Katti",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Kush Ramesh Katti",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Ms. Priya Haria",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Nikhil Umesh Katti",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mrs. Sneha Nithin Dev",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Mr. Mukesh Kumar",
+     "role": "Executive Director (part of the year)"
+    },
+    {
+     "name": "Mr. Lava Katti",
+     "role": "Chief Operating Officer"
+    },
+    {
+     "name": "Mrs. Shruti Katti",
+     "role": "Chief Administrative Officer"
+    },
+    {
+     "name": "Nikhil Katti",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Sneha Dev",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Kush Katti",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mallikarjun Pujar",
+     "role": "Executive Director (Whole-Time Director)"
+    },
+    {
+     "name": "Shivanand Tubachi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Basavaraj Hagaragi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Pratibha Munnolli",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Vishnukumar Kulkarni",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Priya Haria",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Kush Katti",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Sheshagiri H. Kulkarni",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mallikarjun Kadayya Pujar",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Nikhil U. Katti",
+     "role": "Managing Director (DIN: 02505734)"
+    },
+    {
+     "name": "Kush R Katti",
+     "role": "Wholetime Director (DIN: 02777189)"
+    },
+    {
+     "name": "CS. Priya Yash Haria",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sheela Umesh Katti",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Ramesh V Katti",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Nikhil U Katti",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Lava R Katti",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Kush R Katti",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Mukesh Kumar",
+     "role": "Director / Key Management Personnel"
+    },
+    {
+     "name": "Mallikarjun J Pujar",
+     "role": "Whole Time Director / Key Management Personnel"
+    },
+    {
+     "name": "Priya Dedhia",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Sheshagiri H. Kulkarni",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Sneha Nithin Dev",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Jayashree R Katti",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Shruti Nikhil Katti",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Mr. Kush Katti",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Sneha Nithin Dev",
+     "role": "Director"
+    }
+   ],
+   "employees": 944
+  },
+  "other_notable": [
+   "31st AGM scheduled for September 28, 2026 at 11:30 AM at Registered Office",
+   "Remote e-voting period: September 25, 2026 (9:00 AM) to September 27, 2026 (5:00 PM)",
+   "Cut-off date for e-voting: September 21, 2026",
+   "Register of Members closed from September 18, 2026 to September 28, 2026",
+   "Cost Auditor remuneration of Rs. 1,80,000 plus taxes and out-of-pocket expenses for FY 2026-27 proposed for ratification",
+   "Mr. Ramnath Sadekar appointed as Scrutinizer for AGM voting",
+   "Bigshare Services Private Limited is Registrar & Share Transfer Agent and e-voting service provider",
+   "Revenue from operations FY2026: Rs 37,681.01 lakhs (vs Rs 45,391.89 lakhs FY2025 per Director's Report; Rs 46,154.96 lakhs per MD&A)",
+   "EBITDA FY2026: Rs (374.76) lakhs (vs Rs 1,931.57/1,931.58 lakhs FY2025)",
+   "Loss after tax FY2026: Rs (2,817.14) lakhs (vs Rs (3,702.33/3,702.34) lakhs FY2025)",
+   "Basic & Diluted EPS FY2026: Rs (1.26) (vs Rs (1.74) FY2025)",
+   "Cane crushed FY2026: 7,86,007.98 MT; Sugar produced: 5,67,650 quintals; Ethanol: 21,208.52 KL; Power generated: 7,56,54,100 KWh (exported 4,59,47,500 KWh)",
+   "Segment results FY2026: Sugar loss Rs (14,233.86) lakhs; Co-generation profit Rs 744.21 lakhs; Distillery profit Rs 11,203.75 lakhs; IML profit Rs 200.03 lakhs; Vinegar profit Rs 879.61 lakhs",
+   "Total assets FY2026: Rs 82,775.47 lakhs; Total liabilities: Rs 82,775.47 lakhs",
+   "CSR unspent Rs 34.14 lakhs from FY2024-25 to be transferred to special account and spent within 3 years",
+   "Cost auditor appointed: M/s. S. K. Tikare & Co. for FY2026-27; remuneration subject to shareholder ratification",
+   "Secretarial Audit and Compliance Report by Mrs. Vinita D. Modak: no qualifications except non-spending of CSR amount FY2024-25",
+   "BRSR not applicable for FY2026 based on market capitalization",
+   "Internal financial controls deemed adequate and operating effectively by auditors and management",
+   "The Board of Directors met ten times during FY 2025-26.",
+   "The Company has complied with applicable Secretarial Standards issued by the Institute of Company Secretaries of India.",
+   "The Company complies with the provisions of the Maternity Benefit Act, 1961.",
+   "No employee was employed throughout FY 2025-26 drawing remuneration not less than Rs. 1.02 crore per annum.",
+   "No employee employed for part of FY 2025-26 drawing remuneration at a rate not less than Rs. 8.5 lakh per month.",
+   "CSR obligation for FY 2025-26 was Rs. 34.14 lakhs (carried forward from FY 2024-25), but NIL was spent.",
+   "Average net profit for CSR calculation (Section 135(5)) was Rs. (1,532.38) lakhs (a loss).",
+   "Foreign Exchange Earnings: NIL; Foreign Exchange Outgo: Rs. 87.61 lakhs.",
+   "No loans granted, investments made, guarantees given or securities provided under Sections 185 and 186 of the Companies Act, 2013.",
+   "No deposits accepted within the meaning of Sections 73 or 76 of the Companies Act, 2013.",
+   "No remuneration paid to Non-Executive Directors except sitting fees.",
+   "No shares held in trust for the benefit of employees.",
+   "No issue of debentures/warrants.",
+   "No transfer to Investor Education and Protection Fund (IEPF).",
+   "Vigil Mechanism policy accessible at www.vsil.co.in.",
+   "Annual Return for FY 2025-26 to be placed on website www.vsil.co.in.",
+   "CSR Policy available at https://vsil.co.in/wp-content/uploads/2018/01/CSR-Policy.pdf",
+   "Committees of the Board disclosed at https://vsil.co.in/wp-content/uploads/2024/06/Commites-of-the-Board.pdf",
+   "Board composition: 8 Directors (4 Executive, 4 Independent including 1 Woman Director) as on March 31, 2026",
+   "Board held 10 meetings during the year; gap between meetings did not exceed 120 days",
+   "Audit Committee met 4 times; Nomination and Remuneration Committee met 2 times; Risk Management Committee met 2 times",
+   "No dividend recommended for year ended March 31, 2026",
+   "Credit rating: ICRA Limited assigned [ICRA] BB (Stable) for long-term fund based cash credit, term loan and unallocated limits",
+   "Statutory Auditor fees: Rs. 5.00 lakhs for audit and Rs. 2.00 lakhs for other matters",
+   "Shares listed on BSE (542852) and NSE (VISHWARAJ); ISIN: INE430N01022",
+   "96.43% of equity shares held in dematerialized form as on March 31, 2026",
+   "No materially significant related party transactions during the year",
+   "No non-compliance with corporate governance requirements",
+   "Vigil Mechanism policy available on www.vsil.com",
+   "Related party transaction policy disclosed on www.vsil.co.in under 'investors'",
+   "No subsidiary company during financial year 2025-26",
+   "AGM scheduled for September 28, 2026 at registered office",
+   "Book closure: September 18, 2026 to September 28, 2026 (both days inclusive)",
+   "Registrar and Share Transfer Agent: Bigshare Services Private Limited",
+   "Certificate from Practising Company Secretary (Vinita D. Modak) certifying that none of the Directors on the Board for the Financial Year ending March 31, 2026 have been debarred or disqualified from being appointed or continuing as Directors.",
+   "Independent Auditors' Certificate Regarding Compliance of Conditions of Corporate Governance by M/s. P. G. Ghali & Co. for the year ended March 31, 2026 - Company has complied with the conditions of Corporate Governance as stipulated in the Listing Regulations.",
+   "CEO/CFO Certification by Kush Katti (Whole-Time Director) and Sheshagiri H. Kulkarni (CFO) for the year ended March 31, 2026 confirming financial statements compliance, no fraudulent transactions, internal controls effectiveness, and no significant deficiencies.",
+   "Compliance of Corporate Governance Requirements Specified in Regulation 17 to 27 and Regulation 46(2)(b) to (i) of Listing Regulations - all applicable regulations complied with; Regulation 21 (Risk Management) not applicable as company not among top 1000 listed entities by market capitalization.",
+   "No material Related Party Transactions during the year.",
+   "Title deeds of immovable properties are held in the name of the Company and are deposited with SVC Co-operative Bank Limited, Hubli; Pari-passu agreement entered by State Bank of India, Bank of India & SVC Bank.",
+   "Company has been generally regular in depositing undisputed statutory dues including Provident Fund, Employees State Insurance, Income-Tax, Duty of Customs, Duty of Excise, Value added Tax, GST, Cess and any other statutory dues."
+  ],
+  "outlook": [
+   {
+    "statement": "Cane crushing expected to increase to 10 lakh tons for 2026-27 season vs 8 lakh tons previous year due to good rain predictions.",
+    "period": "2026-27 season"
+   },
+   {
+    "statement": "New distillery unit (150 KLPD) to commence full capacity commercial production from 2026-27 season, operating ~250 days, production ~2.55 crore liters; distillery revenue expected to jump by Rs 200 crores.",
+    "period": "2026-27 season"
+   },
+   {
+    "statement": "Power production and vinegar turnover also expected to increase during 2026-27 season due to higher cane crushing.",
+    "period": "2026-27 season"
+   },
+   {
+    "statement": "Global sugar market projected to slip into deficit of 1.7-3.3 million metric tons in 2026/27; Brazil diverting more cane to ethanol; global sugar futures rallying.",
+    "period": "2026/27"
+   },
+   {
+    "statement": "India's gross sugar production forecast to recover to ~33.6 million metric tons; domestic prices at record highs; government considering duty-free imports and stricter stockholding limits.",
+    "period": "2026/27 marketing year"
+   },
+   {
+    "statement": "India advancing 20% ethanol blending targets, structurally diverting cane juice and molasses from sugar; integrated mill operating margins projected at 10-10.5%.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "no material uncertainty exists as on the date of the audit report that the Company is capable of meeting its liabilities existing at the balance sheet date as and when they fall due within a period of one year from the balance sheet date",
+    "period": "one year from balance sheet date"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "New distillery unit with capacity of 150 KLPD",
+    "amount_cr": null,
+    "timeline": "Consent of Operation received Jan 13, 2026; commenced operations Jan 2026; full commercial production from 2026-27 season"
+   },
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "New Plant at Navage Village, Belagavi District",
+    "amount_cr": null,
+    "timeline": "In process of setting up; distance certificate received from authority"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Could not participate in tenders floated by Oil Marketing Companies for ethanol production for season 2025-26 due to delayed Consent of Operation.",
+    "value_cr": null
+   },
+   {
+    "statement": "Corporate guarantee towards the Harvesting and Transportation Loan sanctioned to Sugarcane Harvesting & Transportation contractors from banks to the extent of Rs. 74.50 Crores & Rs. 33.00 Crores who are in agreement with the company for Harvesting & Transportation contract which is done in the normal course of business.",
+    "value_cr": 107.5
+   }
+  ],
+  "risks": [
+   "Water-intensive crop in drought-prone areas (Maharashtra, Karnataka)",
+   "Unpredictable weather and climate change reducing cane yields",
+   "Heavy government pricing controls causing farmer payment arrears",
+   "Low sugar recovery rates (~9.5-10%) vs global competitors",
+   "Aging seed varieties (e.g., Co-0238) with declining pest/disease resistance",
+   "Overproduction driving down local sugar prices",
+   "Rising expenses for labor, transport, fertilizers squeezing margins",
+   "State-mandated high cane prices (SAP/FRP) with controlled sugar sales",
+   "Commodity price fluctuations (raw material 60-70% of production cost)",
+   "Frequent government interventions, export bans, shifting ethanol-blending rules",
+   "Policy unpredictability for investments and long-term revenue",
+   "Seasonal crushing (4-7 months) leaving workers/machinery idle",
+   "Outdated technology reducing energy efficiency",
+   "Competition from local gur/khandsari units for raw cane",
+   "Delayed farmer payments straining future supply",
+   "Transport delays reducing sucrose content",
+   "Environmental strain from water intensity",
+   "No element of risk which may threaten the existence of the Company as per Risk Management Committee.",
+   "In the opinion of the Committee there is no element of risk which may threaten the existence of the Company.",
+   "Properties held by way of General Power of Attorney in the name of Shri. Mallikarjun Kadayya Pujar, Whole Time Director, on behalf of the Company; title deeds not yet converted in the name of the company by executing sale deed.",
+   "Advances given to various parties including Directors outstanding since long time shall be recovered along with interest.",
+   "Company has not invested the Gratuity provision in any manner prescribed under Payment of Gratuity Act, 1972.",
+   "Audit trail implementation is not effective and satisfactory.",
+   "Cash loss of Rs 9.88 crore during FY2026 and Rs 20.91 crore in FY2025",
+   "Contingent liabilities: Central Excise Belgaum Show Cause Notice Rs 4.87 crore, Central Excise Bangalore Appeals Rs 7.37 crore, High Court Karnataka Sugar Cess Appeal Rs 2.53 crore, Appellate Authority GST Belagavi Rs 1.44 crore",
+   "Credit risk from trade receivables",
+   "Market risk from interest rate fluctuations on variable rate borrowings",
+   "Foreign exchange rate risk (USD, EUR)",
+   "Commodity price risk",
+   "Contingent liabilities from court cases and tax disputes",
+   "Title deeds of immovable properties not held in company's name (held via GPA)"
+  ],
+  "related_party": [
+   {
+    "party": "Mr. Mallikarjun Kadayya Pujar (Whole-Time Director)",
+    "nature": "Properties held by way of general power of attorney in his name; authorized to execute sale deeds on behalf of company",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Trade Receivables",
+    "amount_cr": 0.82
+   },
+   {
+    "party": "Mr. Mukesh Kumar",
+    "nature": "Directors Remuneration",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "Mr. Kush Katti",
+    "nature": "Directors Remuneration",
+    "amount_cr": 0.42
+   },
+   {
+    "party": "Mrs. Sneha Nithin Dev",
+    "nature": "Directors Remuneration",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "Mr. Mallikarjun Pujar",
+    "nature": "Directors Remuneration",
+    "amount_cr": 0.0758
+   },
+   {
+    "party": "Mr. Lava Katti",
+    "nature": "Salary",
+    "amount_cr": 0.455
+   },
+   {
+    "party": "Mrs. Shruti Nikhil Katti",
+    "nature": "Salary",
+    "amount_cr": 0.455
+   },
+   {
+    "party": "Mr. Mallikarjun Pujar",
+    "nature": "Salary",
+    "amount_cr": 0.0357
+   },
+   {
+    "party": "Mr. Sheshagiri Kulkarni",
+    "nature": "Salary",
+    "amount_cr": 0.1007
+   },
+   {
+    "party": "Mrs. Priya Yash Haria",
+    "nature": "Salary",
+    "amount_cr": 0.0406
+   },
+   {
+    "party": "Mr. Ramesh V Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.1647
+   },
+   {
+    "party": "Mrs. Sheela Umesh Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.6317
+   },
+   {
+    "party": "Mrs. Jayashree R Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Mr. Nikhil Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.4952
+   },
+   {
+    "party": "Mr. Lava Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.7199
+   },
+   {
+    "party": "Mr. Kush Katti",
+    "nature": "Purchases",
+    "amount_cr": 1.66
+   },
+   {
+    "party": "Mrs. Shruti Nikhil Katti",
+    "nature": "Purchases",
+    "amount_cr": 0.1195
+   },
+   {
+    "party": "Mr. Mallikarjun Pujar",
+    "nature": "Purchases",
+    "amount_cr": 0.148
+   },
+   {
+    "party": "UR Agro Fresh Private Limited",
+    "nature": "Sales",
+    "amount_cr": 0.8608
+   },
+   {
+    "party": "UR Agro Fresh Private Limited",
+    "nature": "Receivables",
+    "amount_cr": 0.8153
+   },
+   {
+    "party": "UR Agro Fresh Private Limited",
+    "nature": "Advances Outstanding",
+    "amount_cr": 3.25
+   },
+   {
+    "party": "UK 27 Hospitality Services (India) Limited",
+    "nature": "Sales",
+    "amount_cr": 0.0138
+   },
+   {
+    "party": "UK 27 Hospitality Services (India) Limited",
+    "nature": "TA & DA Expenses",
+    "amount_cr": 0.0039
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Long-Term Fund Based Cash Credit & Term Loan and Unallocated Limits",
+    "amount_cr": null,
+    "note": "Rated [ICRA] BB (Stable) by ICRA Limited"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 131.34,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 289.24,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "SVC Bank Hubli - Term Loan",
+    "amount_cr": 130.8536,
+    "note": "Secured; 11.25% interest; repayable in 28 quarterly installments of Rs 189.30 lakhs; first charge on Sugar, Cogen & Distillery Unit assets"
+   },
+   {
+    "lender_or_type": "Belagavi DCC Bank & Bagalkot DCC Bank (Consortium) - Term Loan",
+    "amount_cr": 100.0,
+    "note": "Secured; 13.00% interest; repayable in 28 quarterly installments of Rs 357.15 lakhs; mortgage on leasehold property RS No 148A, 13 acres 28 guntas at Bellad Bagewadi"
+   },
+   {
+    "lender_or_type": "Belagavi DCC Bank - Bridge Loan",
+    "amount_cr": 20.0,
+    "note": "Secured; 13.00% interest; repayable within one year"
+   },
+   {
+    "lender_or_type": "Bagalkot DCC Bank - Bridge Loan",
+    "amount_cr": 25.0,
+    "note": "Secured; 13.25% interest; repayable in 28 quarterly installments of Rs 89.29 lakhs"
+   },
+   {
+    "lender_or_type": "State Govt of Karnataka - Interest Free Loan (conversion of Purchase Tax)",
+    "amount_cr": 27.8077,
+    "note": "Unsecured; 0% interest; repayable in 10 yearly installments of Rs 278.07 lakhs"
+   },
+   {
+    "lender_or_type": "Bank of India - Vehicle Loans",
+    "amount_cr": 0.4882,
+    "note": "Secured by hypothecation of vehicles; 9.05%-8.25% interest"
+   },
+   {
+    "lender_or_type": "State Bank of India - Vehicle Loans",
+    "amount_cr": 0.099,
+    "note": "Secured by hypothecation of vehicles; 8.35% interest"
+   },
+   {
+    "lender_or_type": "Bank of India, State Bank of India, SVC Bank - Working Capital (Cash Credit)",
+    "amount_cr": 244.5675,
+    "note": "Secured by pledge of sugar, other stock and receivables"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "No Subsidiary, Associate or Joint Venture",
+    "holding_pct": null,
+    "business": "None during the financial year under review."
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "There is no subsidiary Company."
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company is not required to prepare Consolidated financial statement"
+   }
+  ],
+  "litigation": [
+   "No significant and material order is passed by the Regulators or Courts or Tribunals impacting the going concern status and Company's operations in future.",
+   "No fraud has been reported by the Auditors to the Audit Committee of the Board.",
+   "No case of child labour, forced labour, involuntary labour, sexual harassment and discriminatory employment was reported in FY 2025-26.",
+   "No disclosure about any application made or proceeding pending under the Insolvency and Bankruptcy Code (IBC), 2016 during the year.",
+   "The company has disclosed the impact of pending litigations on its financial position in its Notes forming part of Ind AS financial statements Refer 'notes-48'.",
+   "Central Excise, Belgaum Show Cause Notice Rs 4.87 crore",
+   "Central Excise, Bangalore (Appeals) Rs 7.37 crore",
+   "High Court, Karnataka, Appeal for Sugar Cess Rs 2.53 crore",
+   "Appellate Authority (GST) Office of Joint Commissioner of Commercial Taxes, Belagavi Rs 1.44 crore",
+   "Central Excise, Belgaum Show Cause Notice - Rs 486.62 lakhs",
+   "Central Excise, Bangalore (Appeals) - Rs 736.54 lakhs",
+   "High Court, Karnataka, Appeal for Sugar Cess - Rs 252.80 lakhs",
+   "Appellate Authority (GST) Office of Joint Commissioner of Commercial Taxes, Belagavi - Rs 143.90 lakhs",
+   "Harvesting and Transportation (H & T Beed) cases dismissed to extent of Rs 64.49 lakhs; company has not appealed or written off, continued as receivable without ECL provision"
+  ],
+  "dividend_per_share": 0,
+  "contingent_liabilities": [
+   {
+    "nature": "Central Excise, Belgaum Show Cause Notice",
+    "amount_cr": 4.87
+   },
+   {
+    "nature": "Central Excise, Bangalore (Appeals)",
+    "amount_cr": 7.37
+   },
+   {
+    "nature": "High Court, Karnataka, Appeal for Sugar Cess",
+    "amount_cr": 2.53
+   },
+   {
+    "nature": "Appellate Authority (GST) Office of Joint Commissioner of Commercial Taxes, Belagavi",
+    "amount_cr": 1.44
+   },
+   {
+    "nature": "Court Cases (Other than H & T)",
+    "amount_cr": 16.1986
+   },
+   {
+    "nature": "Court Cases (H & T)",
+    "amount_cr": 3.3505
+   },
+   {
+    "nature": "Bank Guarantee",
+    "amount_cr": 1.0
+   },
+   {
+    "nature": "Central Excise, Belgaum Show Cause Notice",
+    "amount_cr": 4.8662
+   },
+   {
+    "nature": "Central Excise, Bangalore (Appeals)",
+    "amount_cr": 7.3654
+   },
+   {
+    "nature": "High Court, Karnataka, Appeal for Sugar Cess",
+    "amount_cr": 2.528
+   },
+   {
+    "nature": "Appellate Authority (GST) Office of Joint Commissioner of Commercial Taxes, Belagavi",
+    "amount_cr": 1.439
+   }
+  ]
+ }
+}

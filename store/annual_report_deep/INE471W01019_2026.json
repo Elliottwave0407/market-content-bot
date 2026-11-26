@@ -1,0 +1,800 @@
+{
+ "isin": "INE471W01019",
+ "name": "Palash Securities Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29773_PALASHSECU_2025_2026_A_2730595_13072026222713.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 560367,
+ "chunks": 15,
+ "chunks_ok": 15,
+ "facts": {
+  "business": {
+   "description": "Palash Securities Limited is a listed company with registered office in Hargaon, Sitapur (U.P.) and corporate office in Kolkata. The notice does not describe the company's business activities, products, or services.",
+   "value_chain_position": "other",
+   "products": [
+    {
+     "name": "Investment holdings",
+     "share_of_revenue_pct": null,
+     "note": "Equity investments in Sutlej Textiles, Avadh Sugar, SIL Investments, Magadh Sugar, Chambal Fertilisers, Ganges Securities, New India Retailing, SCM Investment, Manbhawani Investment, Manavta Holdings, Shree Vihar Properties, Birla Building, Moon Corporation, Oudh Trading, Modern Diagen, India Educational & Research, Pavapuri Trading"
+    },
+    {
+     "name": "Rental income",
+     "share_of_revenue_pct": null,
+     "note": "From investment property (freehold land and building)"
+    },
+    {
+     "name": "Interest income",
+     "share_of_revenue_pct": null,
+     "note": "On financial assets measured at amortised cost or FVTOCI using effective interest rate"
+    },
+    {
+     "name": "Dividend income",
+     "share_of_revenue_pct": null,
+     "note": "From equity investments designated at FVOCI"
+    },
+    {
+     "name": "Trading income",
+     "share_of_revenue_pct": null,
+     "note": "Gains/losses from financial assets held for trading"
+    },
+    {
+     "name": "Sale of goods",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of products recognized on transfer of control, risk and rewards (likely from former subsidiary Morton Foods Limited)"
+    },
+    {
+     "name": "food stuff",
+     "share_of_revenue_pct": null,
+     "note": "only reportable primary segment"
+    },
+    {
+     "name": "Canned fruits and vegetables, jams, jellies, squashes, juices",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured by Morton Foods Limited (associate since 18 Nov 2025)"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "end_markets": [
+    "Financial services",
+    "Textiles",
+    "Sugar",
+    "Fertilizers",
+    "Real estate",
+    "food"
+   ],
+   "customers": [
+    "Army Purchase Organisation"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Singhi & Co., Chartered Accountants (Firm Registration No: 302049E)",
+   "opinion": "There has been no qualification, reservation, adverse remark or disclaimer in the Auditor's Reports.",
+   "key_audit_matters": [
+    "No key audit matters reported for standalone financial statements",
+    "No key audit matters reported for current financial year"
+   ],
+   "qualifications_or_emphasis": [
+    "Advertisement of financial results for quarter ended December 31, 2025 published in Hindi newspaper did not contain QR code; QR code was provided in English newspaper advertisement",
+    "Emphasis of Matter: Associate company Morton Foods Limited (MFL) incurred net loss before tax of Rs. 1,668.76 Lakhs during year ended 31st March 2026 and net worth substantially eroded, indicating material uncertainty on MFL's ability to continue as going concern. Financial statements of MFL prepared on going concern basis. Opinion not modified.",
+    "Maintenance of books of accounts: proper books kept except matters stated in paragraph h.vi on reporting under Rule 11(g)",
+    "Audit trail: Holding company, subsidiaries and associate used accounting software with audit trail feature operating throughout the year except for associate Morton Foods Limited where database-level audit trail in SAP S/4 HANA ERP was enabled from 25 August 2025 (not maintained 1 April 2025 to 24 August 2025), and for TMI Payroll (SaaS) application, other auditor unable to obtain sufficient appropriate audit evidence regarding audit trail operation, restriction of access, database-level existence, non-editability, and preservation per statutory requirements as SOC 1 Type II report did not contain conclusive evidence",
+    "Morton Foods Limited (associate) incurred net loss of Rs 1,668.76 lakhs during year ended 31 March 2026, net worth substantially eroded, but consolidated on going concern basis based on positive outlook",
+    "Audit trail at database level for MFL's SAP S/4 HANA ERP was not enabled up to 24 August 2025, enabled effective 25 August 2025",
+    "No conclusive evidence available to confirm audit trail for TMI Payroll used by MFL from 1 January 2025"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Shalini Nopany (DIN: 00077299) retires by rotation and offers herself for re-appointment at the 12th AGM.",
+    "Mr. Chand Bihari Patodia ceased to be Managing Director and Key Managerial Personnel on completion of his term on 29th March, 2026.",
+    "Mr. Suraj Kumar Agrawal appointed as Managing Director and Key Managerial Personnel for a period of 3 years with effect from 30th March, 2026 subject to approval of shareholders.",
+    "Ms. Shalini Nopany (DIN: 00077299) will retire by rotation at the ensuing Annual General Meeting and being eligible has offered herself for re-appointment.",
+    "Mr. Chand Bihari Patodia (DIN:01389238) ceased to be Managing Director of the Company upon completion of his term on 29th March, 2026",
+    "Mr. Suraj Kumar Agrawal (DIN:03260442) appointed as Managing Director of the Company for a period of 3 (three) years with effect from 30th March, 2026",
+    "Mr. Chand Bihari Patodia (DIN: 01389238) ceased to be Managing Director and Key Managerial Person upon completion of his term on 29th March, 2026",
+    "Mr. Suraj Kumar Agrawal (DIN: 03260442) appointed as Managing Director and Key Managerial Person with effect from 30th March, 2026",
+    "Changes in the composition of Board of Directors during the period under review",
+    "Mr. Chand Bihari Patodia - Managing Director (upto 29 Mar 2026)",
+    "Mr. Suraj Kumar Agrawal - Managing Director (w.e.f. 30 Mar 2026)",
+    "Mr. Chand Bihari Patodia \u2013 Managing Director (upto 29 Mar 2026)",
+    "Mr. Suraj Kumar Agrawal \u2013 Managing Director (w.e.f. 30 Mar 2026)",
+    "Mr. Himanshu Bajaj \u2013 Director of a subsidiary (upto 20 Nov 2025)",
+    "Mr. Arpit Kumar \u2013 Director of a subsidiary (w.e.f. 18 Nov 2025)",
+    "Mr. Pradipta Kumar Sahoo \u2013 Whole-time Director of a subsidiary (w.e.f 1 April 2024)",
+    "Mr. Nirmal Kumar Sharma \u2013 Chief Financial Officer (w.e.f. 6 Nov 2025)",
+    "Mr. Shravan Kumar Jain \u2013 Chief Financial Officer of a subsidiary (from 7 Feb 2025 to 7 Aug 2025)",
+    "Mr. Ashishkumar Harimohan Srivastava \u2013 Non-Executive Director of a subsidiary (w.e.f. 7 Nov 2025)"
+   ],
+   "auditor_change": "M/s. Agrawal Subodh & Co. (Firm Registration No: 319260E) completes term at conclusion of 12th AGM; M/s. Singhi & Co. (Firm Registration No: 302049E) proposed for appointment for 5 years from conclusion of 12th AGM till conclusion of 17th AGM.",
+   "promoter_holding_pct": 72.18,
+   "top_shareholders": [
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 72.18
+    },
+    {
+     "name": "Indian Public",
+     "pct": 20.0
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 5.3
+    },
+    {
+     "name": "Mutual Funds, Financial Institutions, Banks, Insurance Companies, etc.",
+     "pct": 0.71
+    },
+    {
+     "name": "Trusts/Hindu Undivided Family",
+     "pct": 1.46
+    },
+    {
+     "name": "NRIs / OCBs / FIIs / Foreign Nationals/Clearing Members",
+     "pct": 0.18
+    },
+    {
+     "name": "Unclaimed Shares",
+     "pct": 0.17
+    },
+    {
+     "name": "Ganges Securities Ltd.",
+     "pct": 12.83
+    },
+    {
+     "name": "SCM Investment & Trading Co. Ltd.",
+     "pct": 10.79
+    },
+    {
+     "name": "New India Retailing & Investment Ltd.",
+     "pct": 10.71
+    },
+    {
+     "name": "RTM Investment & Trading Co. Ltd.",
+     "pct": 9.05
+    },
+    {
+     "name": "Deepshikha Trading Co. Pvt. Ltd.",
+     "pct": 6.89
+    },
+    {
+     "name": "Sonali Commercial Ltd.",
+     "pct": 5.62
+    },
+    {
+     "name": "Ronson Traders Ltd.",
+     "pct": 5.38
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Vikram Kumar Mishra",
+     "role": "Company Secretary (FCS: 11269)"
+    },
+    {
+     "name": "Ms. Shalini Nopany",
+     "role": "Director (DIN: 00077299)"
+    },
+    {
+     "name": "Mr. Suraj Kumar Agrawal",
+     "role": "Managing Director (w.e.f. 30th March, 2026)"
+    },
+    {
+     "name": "Mr. Deepak Kumar Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Vikram Kumar Mishra",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Chand Bihari Patodia",
+     "role": "Managing Director (upto 29th March, 2026)"
+    },
+    {
+     "name": "Ms. Shalini Nopany",
+     "role": "Chairperson (Non-Executive Director)"
+    },
+    {
+     "name": "Mr. Suraj Kumar Agrawal",
+     "role": "Managing Director (appointed 30th March, 2026)"
+    },
+    {
+     "name": "Mr. Chand Bihari Patodia",
+     "role": "Former Managing Director (ceased 29th March, 2026)"
+    },
+    {
+     "name": "Mr. Dinesh Kacholia",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Mr. Chhedi Lal Agarwal",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Mr. Arun Kumar Newar",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Khandelia",
+     "role": "Independent Non-Executive Director"
+    },
+    {
+     "name": "Mr. Vikram Kumar Mishra",
+     "role": "Company Secretary (Compliance Officer)"
+    },
+    {
+     "name": "Mr. Suraj Kumar Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Vikram Kumar Mishra",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Shalini Nopany",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Suraj Kumar Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Deepak Kumar Sharma",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Vikram Kumar Mishra",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shalini Nopany",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Shalini Nopany",
+     "role": "Chairperson / Non-Executive Director"
+    },
+    {
+     "name": "Mr. Arun Kumar Newar",
+     "role": "Independent / Non-Executive Director"
+    },
+    {
+     "name": "Mr. Chand Bihari Patodia",
+     "role": "Managing Director (upto 29 Mar 2026)"
+    },
+    {
+     "name": "Mr. Suraj Kumar Agrawal",
+     "role": "Managing Director (w.e.f. 30 Mar 2026)"
+    },
+    {
+     "name": "Mr. Chhedi Lal Agarwal",
+     "role": "Independent / Non-Executive Director"
+    },
+    {
+     "name": "Mr. Dinesh Kacholia",
+     "role": "Independent / Non-Executive Director"
+    },
+    {
+     "name": "Mr. Suresh Kumar Khandelia",
+     "role": "Independent / Non-Executive Director"
+    }
+   ],
+   "employees": 1
+  },
+  "other_notable": [
+   "12th AGM scheduled for August 5, 2026 at 11:00 A.M. IST through VC/OAVM.",
+   "Register of Members and Share Transfer Books closed from July 30, 2026 to August 5, 2026 (both days inclusive).",
+   "Remote e-voting period: August 1, 2026 (9:00 A.M.) to August 4, 2026 (5:00 P.M.). Cut-off date: July 29, 2026.",
+   "RTA: MUFG Intime India Private Limited (formerly Link Intime India Private Limited), Kolkata.",
+   "Proposed audit remuneration for M/s. Singhi & Co. for FY 2026-27: Rs. 7.50 Lakhs plus applicable taxes and out-of-pocket expenses.",
+   "Ms. Shalini Nopany holds directorships in 7 other public companies and committee positions in 2 companies.",
+   "Annual Report for FY 2025-26 available on www.birla-sugar.com, BSE, NSE, and NSDL websites.",
+   "The Company has not accepted any deposits from the public.",
+   "The Company has not issued any shares/securities during the Financial Year 2025-26.",
+   "The provisions of Section 135 of the Companies Act, 2013 relating to Corporate Social Responsibility are not applicable to the Company.",
+   "The provisions of Section 134(3)(m) of the Companies Act, 2013 do not apply to the Company. There was no foreign exchange inflow or outflow during the year under review.",
+   "There being no women employees in the Company as on 31st March, 2026, the provisions relating to the constitution of an Internal Committee under the Sexual Harassment of Women at Workplace Act, 2013 were not applicable.",
+   "During the year, the auditors have not reported any fraud under Section 143(12) of the Companies Act, 2013.",
+   "The Company has complied with the applicable Secretarial Standards specified by the Institute of Company Secretaries of India.",
+   "There has been no instance of any bank or financial institutions one-time settlement.",
+   "During the financial year 2025-26, on a standalone basis, the Company recorded Revenue from operations of Rs.372.34 lakhs as against Rs.604.38 lakhs in the previous financial year. The Profit after Tax for the year stood at Rs.236.08 lakhs compared with Rs.471.79 lakhs in the previous year.",
+   "On a consolidated basis, the Company reported Revenue from operations of Rs.4,923.85 lakhs during financial year 2025-26 as compared to Rs.4,883.01 lakhs in the previous financial year, reflecting growth over the last previous year. The consolidated Profit after Tax for the year stood at Rs.1,171.68 lakhs as against a loss of Rs.1,765.19 lakhs in financial year 2024-25, demonstrating a significant improvement in the financial performance of the Group.",
+   "During the financial year 2025-26, the production in Morton Foods Limited increased from 4,232 MT to 5,815 MT, representing an increase of approximately 37%. The increase in production was primarily attributable to higher execution of Defence tenders and the introduction of new products such as sugar, pickles, and other food items. Sales also increased significantly from Rs.4,523 lakhs to Rs.7,247 lakhs, registering a growth of approximately 60% over the previous year.",
+   "Despite the substantial increase in production and sales, the MFL's loss increased from Rs. 1,491 lakhs to Rs.1,669 lakhs, representing an increase of approximately 11%. The higher loss was mainly due to increase in the cost of goods sold as a percentage of sales from 46% to 56%, driven by higher raw material and procurement costs; and increase in salary cost and related costs during the year.",
+   "The Company has an adequate system of internal control implemented by the management towards achieving efficiency in operations, optimum utilization of resources and effective monitoring thereof and compliance with applicable laws.",
+   "Steps have been taken to inculcate a performance-oriented culture by focusing and laying more emphasis on the performance management system. It has been Company's endeavour to attract talent from the most reputed institutions to meet the requirements of various functions.",
+   "The provisions of Section 135 of the Companies Act, 2013 relating to Corporate Social Responsibility was not applicable to the Company during the financial year 2025-26.",
+   "During the financial year ended 31st March, 2026, no investor complaints were received by the Company. Consequently, no investor complaints remained pending as on 31st March, 2026.",
+   "The Company pays sitting fee of Rs.5,000/- per Board meeting and Rs.2,500/- per Committee meeting to each Director for attending such meetings.",
+   "Company has four subsidiaries as on 31st March 2026",
+   "Three material subsidiaries: Champaran Marketing Co. Ltd, Hargaon Investment & Trading Co. Ltd, OSM Investment & Trading Co. Ltd",
+   "Morton Foods Limited ceased to be material subsidiary and became Associate Company from 18th November 2025",
+   "No dividend recommended for FY 2025-26",
+   "Equity shares listed on BSE (540648) and NSE (PALASHSECU)",
+   "Registrar & Share Transfer Agent: MUFG Intime India Private Limited",
+   "99.66% shares dematerialized (99,69,227 shares)",
+   "No GDRs/ADRs/Warrants/Convertible instruments issued",
+   "No sexual harassment complaints received during FY 2025-26",
+   "Secretarial Audit by M/s. M R & Associates confirms compliance with all applicable laws",
+   "Certificate of Non-Disqualification of Directors issued by CS Atul Kumar Labh",
+   "Corporate Governance compliance certified by Agrawal Subodh & Co.",
+   "Code of Conduct compliance affirmed by all Directors, KMPs and Senior Management",
+   "Vigil Mechanism/Whistle Blower Policy in place with no denial of access to Audit Committee Chairman",
+   "Policy Against Sexual and Workplace Harassment with zero tolerance",
+   "Compliance with Secretarial Standards SS-1 and SS-2",
+   "Internal Auditor reports functionally to Audit Committee",
+   "Separate posts of Chairperson (Ms. Shalini Nopany) and Managing Director (Mr. Suraj Kumar Agrawal)",
+   "Morton Foods Limited ceased to be a material unlisted subsidiary and became an associate of Palash Securities Limited pursuant to its rights issue, as communicated vide letter dated November 18, 2025",
+   "Shareholders approved sale of 7,44,700 equity shares in Morton Foods Limited at Rs 25 per share through off-market transactions during FY 2025\u201326, reducing shareholding to 50% or below and cessation of control",
+   "As of 18th November 2025, aggregate shareholding in Morton Foods Limited reduced from 51.37% to 44.95% (direct 37.40% + indirect 7.55% through Hargaon Investment & Trading Co Ltd)",
+   "Morton Foods Limited became associate effective 18th November 2025; profit/loss for period from 18th November 2025 to 31st March 2026 considered in consolidation at 44.95% shareholding",
+   "The Company has neither declared nor paid dividend during the previous year. The Board of Directors of the Company have also not proposed dividend for the current year.",
+   "The Company is a Core Investment Company (CIC) as per RBI guidelines and it continues to fulfill the criteria of CIC. Further the company is an exempted or unregistered Core Investment Company (CIC) and it continues to fulfill such criteria.",
+   "As represented by the management, there are two Core Investment Companies within the Group.",
+   "The Company has not incurred cash losses during the financial year covered by our audit and the immediately preceding financial year.",
+   "There has been no resignation of the statutory auditors of the Company during the year.",
+   "The Company has used accounting software for maintaining its books of accounts for the financial year ended 31st March 2026, which has a feature of recording audit trail (edit log) facility and the same has operated throughout the year for all relevant transactions recorded in the software.",
+   "Title deeds of freehold land (Investment Property) with gross carrying value of \u20b99.89 lakhs are not held in the name of the company; mutation in the name of the erstwhile company is pending since 1 April 2015.",
+   "Registered office at Post Office Hargaon, District Sitapur, Uttar Pradesh 261121",
+   "Equity shares listed on NSE and BSE",
+   "Financial statements authorised for issue by Board of Directors on 15 May 2026",
+   "Functional and presentation currency is Indian Rupees, amounts rounded to nearest lakhs",
+   "Company operates entirely in India with all transactions denominated in Indian Rupees",
+   "No foreign currency transactions, foreign operations, or foreign currency monetary items",
+   "No supplier finance arrangements (reverse factoring/supply chain finance programs)"
+  ],
+  "outlook": [
+   {
+    "statement": "India's capital markets are witnessing deeper participation from retail investors, mutual funds, insurance companies and pension funds. The growing domestic investor base is reducing dependence on foreign portfolio flows and improving market resilience. Opportunities center on sustained domestic SIP inflows, rate cuts easing corporate margins, and global liquidity. Threats revolve around currency depreciation; US trade tariff volatility, and shifting geopolitical conditions.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "Global growth is projected at 3.3% in 2026, fully recovering from the April 2025 tariff-related downgrade and returning to its January 2025 level. Advanced economies (AEs) are expected to grow at 1.8%, driven largely by continued US resilience, while emerging market and developing economies (EMDEs) are projected to expand by 4.2%, slightly below initial expectations, reflecting lingering effects of tight financial conditions and trade uncertainty. Overall, growth stabilises but remains uneven and regionally divergent. Global inflation is projected to rise modestly to 3.8% in 2026, indicating that disinflation remains incomplete. Advanced-economy inflation is expected to stay elevated at 2.2%, reflecting persistent services and wage pressures, while EMDE inflation is projected at 4.8%, driven by domestic demand and food-price risks. Inflation dynamics suggest restrictive global monetary conditions are likely to persist.",
+    "period": "2026"
+   },
+   {
+    "statement": "The Indian economy in financial year 2026-27 is expected to remain resilient, despite challenging external environment characterised by elevated energy and commodity prices, rising logistics costs, volatility in global financial markets and uncertainties surrounding global trade policies. Growth prospects are supported by India's strong macroeconomic fundamentals, including robust domestic demand, relatively lower dependence on exports as a growth driver, and a stable policy environment. NBFCs are poised to play an increasingly critical role in driving India's economic growth by extending formal credit access to traditionally underserved segments, in alignment with national development goals. As customer expectations evolve and digital-first business models become more prevalent, incumbent NBFCs must rethink their operating strategies, while new entrants must carefully assess market dynamics before entry. With lending activity expected to scale, there is a growing need for stronger risk management practices and more robust governance frameworks across the sector. According to CRISIL Ratings, the assets under management (AUM) of nonbanking financial companies (NBFCs) will grow a steady 18-19% this fiscal and the next, driven by whetted consumption demand, and cross the Rs.50 lakh crore mark by March 2027. Growth will be driven by strong consumer demand, GST rationalization, and low inflation.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "The future of NBFCs in India is promising, with opportunities for growth driven by digitization, niche specialization, and focus on underserved markets. However, navigating the evolving regulatory landscape, embracing technology responsibly, and prioritizing customer experience will be crucial for success.",
+    "period": "future"
+   },
+   {
+    "statement": "The India capital market outlook remains positive, supported by strong economic fundamentals, favorable demographic trends, and continued regulatory reforms. Growing financial awareness, increasing disposable incomes, and expanding digital infrastructure will continue to drive retail participation. Foreign portfolio investment flows are expected to remain supportive as India maintains its position as a preferred emerging market investment destination.",
+    "period": "future"
+   },
+   {
+    "statement": "Based on the positive outlook towards the growth and the ability of the said associate to continue as a going concern in the foreseeable future, its financial statement/information has been consolidated on a going concern basis.",
+    "period": "foreseeable future"
+   }
+  ],
+  "risks": [
+   "The Company's business performance is inherently influenced by the operational and financial health of its portfolio companies.",
+   "The Company is exposed to specific risks that are particular to their respective businesses in which they operate, including market risk, credit risk, liquidity risk, interest rate risk, equity risk, operational risk, currency risk, regulatory and macro-economic",
+   "government regulations and tax-regime",
+   "economic developments within India and abroad",
+   "financial markets and other related and incidental factors",
+   "Credit risk from receivables and counterparties",
+   "Liquidity risk in meeting obligations",
+   "Market risk including equity price risk and interest rate risk",
+   "Associate Morton Foods Limited has incurred net loss before tax of Rs. 1,668.76 Lakhs and net worth substantially eroded, indicating material uncertainty on ability to continue as going concern",
+   "Loss of control over subsidiary Morton Foods Limited due to non-participation in rights issue",
+   "Credit risk on trade receivables",
+   "Market risk on equity investments measured at FVOCI and FVTPL",
+   "Interest rate risk on financial assets and borrowings",
+   "Liquidity risk on lease liabilities and borrowings",
+   "Loss of control over subsidiary MFL during the year (w.e.f. 17 Nov 2025) leading to derecognition of assets, liabilities, and non-controlling interest",
+   "Derecognition of deferred tax assets of Rs 450.53 lakhs recognised by MFL during year ended 31 March 2022",
+   "Exposure to interest and liquidity risk related to borrowings",
+   "Exposure to currency and liquidity risk related to trade payables",
+   "Credit risk from receivables",
+   "Liquidity risk",
+   "Market risk including equity price risk",
+   "Interest rate risk",
+   "Regulatory risk from Labour Codes"
+  ],
+  "subsidiaries": [
+   {
+    "name": "Champaran Marketing Co. Ltd.",
+    "holding_pct": null,
+    "business": "Registered NBFC primarily engaged in investment activities"
+   },
+   {
+    "name": "Hargaon Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Registered NBFC primarily engaged in investment activities"
+   },
+   {
+    "name": "OSM Investment & Trading Co. Ltd.",
+    "holding_pct": null,
+    "business": "Registered NBFC primarily engaged in investment activities"
+   },
+   {
+    "name": "Hargaon Properties Ltd.",
+    "holding_pct": null,
+    "business": "Engaged in investment of properties"
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": null,
+    "business": "Manufactures and markets canned fruits, vegetables and food products like jams, squashes, crushes, vegetable sauces, juices and breakfast cereals under the brand Morton since 1959. It has a manufacturing unit at Prayagraj. Became an associate company on 18th November 2025 due to reduction of shareholding from 51.37% to 44.95%."
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": null,
+    "business": "Food production including sugar, pickles, and other food items; execution of Defence tenders"
+   },
+   {
+    "name": "Champaran Marketing Co. Ltd",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "Hargaon Investment & Trading Co. Ltd",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "OSM Investment & Trading Co. Ltd",
+    "holding_pct": null,
+    "business": "Investment & Trading"
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": null,
+    "business": "Ceased to be a material subsidiary and became an Associate Company with effect from 18th November, 2025"
+   },
+   {
+    "name": "Hargaon Investment & Trading Co. Ltd",
+    "holding_pct": 100,
+    "business": "NBFC registered with RBI (registration Number 05.00201 dated 20th February, 1998), engaged in investment activities"
+   },
+   {
+    "name": "OSM Investment & Trading Co. Ltd",
+    "holding_pct": 100,
+    "business": "NBFC registered with RBI (registration Number 05.00288 dated 21st February, 1998), engaged in investment activities"
+   },
+   {
+    "name": "Champaran Marketing Co. Ltd",
+    "holding_pct": 100,
+    "business": "NBFC registered with RBI (registration Number 05.00192 dated 20th February, 1998), engaged in investment activities"
+   },
+   {
+    "name": "Hargaon Properties Limited",
+    "holding_pct": 100,
+    "business": "Step-down subsidiary; 56% held through Hargaon Investment & Trading Co. Ltd and 44% through Champaran Marketing Co. Ltd"
+   },
+   {
+    "name": "Champaran Marketing Company Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Hargaon Investment & Trading Company Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "OSM Investment & Trading Company Ltd.",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Morton Foods Ltd.",
+    "holding_pct": 44.95,
+    "business": "Associate (w.e.f. 18 Nov 2025); ceased to be subsidiary from 18 Nov 2025"
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": null,
+    "business": "Associate (was subsidiary up to 17th November 2025, thereafter became associate pursuant to loss of control)"
+   },
+   {
+    "name": "Champaran Marketing Company Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Hargaon Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "OSM Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Hargaon Properties Limited",
+    "holding_pct": null,
+    "business": "Step down Subsidiary"
+   },
+   {
+    "name": "Hargaon Properties Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": null,
+    "business": "food processing business"
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": 51.37,
+    "business": "Subsidiary (upto 17 Nov 2025)"
+   },
+   {
+    "name": "Champaran Marketing Company Limited",
+    "holding_pct": 100.0,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Hargaon Investment & Trading Company Limited",
+    "holding_pct": 100.0,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "OSM Investment & Trading Company Limited",
+    "holding_pct": 100.0,
+    "business": "Subsidiary"
+   },
+   {
+    "name": "Hargaon Properties Limited",
+    "holding_pct": 100.0,
+    "business": "Step down Subsidiary"
+   },
+   {
+    "name": "Morton Foods Limited",
+    "holding_pct": 44.95,
+    "business": "Food manufacturing (ceased to be subsidiary from 18 Nov 2025, became associate)"
+   },
+   {
+    "name": "Morton Foods Limited (MFL)",
+    "holding_pct": null,
+    "business": "manufacturing and sale of food stuff"
+   },
+   {
+    "name": "Champaran Marketing Company Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Hargaon Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "OSM Investment & Trading Company Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "litigation": [
+   "There is neither application nor any proceeding pending under the Insolvency and Bankruptcy Code 2016 during the year along with their status as at the end of the financial year.",
+   "No penalties or strictures imposed by Stock Exchanges or SEBI or any statutory authority on any matter related to capital markets for non-compliance during the last three years",
+   "The Company did not have any pending litigations which will impact its financial position as on 31 March, 2026.",
+   "The Consolidated Financial Statements disclose the impact of pending litigations as at 31st March 2026 on the consolidated financial position (Refer Note 39 to the Consolidated Financial Statement).",
+   "Sales tax demand pending due to non-receiving of 'F' forms from CFA agents for years 1993-94, 1996-97, 1997-98",
+   "Bank guarantees given to Army Purchase Organisation against Performance Bank Guarantee for years 2023 to 2026",
+   "Case filed by ESI authorities for recovery of contribution under section 45(b) of ESI Act, 1939 for year 1976-77, pending in Allahabad High Court"
+  ],
+  "dividend_per_share": 0,
+  "orders_or_contracts": [
+   {
+    "statement": "Sale of 7,44,700 equity shares held in Morton Foods Limited, a material subsidiary, in one or more tranches to Ganges Securities Limited and Uttam Commercial Limited at Rs 25 per share through off-market transactions during FY 2025-26, resulting in reduction of shareholding to 50% or below and cessation of control over the subsidiary.",
+    "value_cr": null
+   },
+   {
+    "statement": "Sale of 7,44,700 equity shares held in Morton Foods Limited, a material subsidiary, in one or more tranches to Ganges Securities Limited and Uttam Commercial Limited at Rs 25 per share through off-market transactions during FY 2025\u201326",
+    "value_cr": null
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related Parties as defined under Companies Act, 2013 and Regulation 23 of SEBI LODR",
+    "nature": "Transactions in ordinary course of business and on arm's length pricing basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Subsidiary (upto 17 Nov 2025) / Associate (w.e.f. 18 Nov 2025)",
+    "amount_cr": null
+   },
+   {
+    "party": "Champaran Marketing Company Limited",
+    "nature": "Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Hargaon Investment & Trading Company Limited",
+    "nature": "Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "OSM Investment & Trading Company Limited",
+    "nature": "Subsidiary",
+    "amount_cr": null
+   },
+   {
+    "party": "Mrs. Shalini Nopany",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.003
+   },
+   {
+    "party": "Mr. Arun Kumar Newar",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0055
+   },
+   {
+    "party": "Mr. Chhedi Lal Agarwal",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0055
+   },
+   {
+    "party": "Mr. Dinesh Kacholia",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0048
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0025
+   },
+   {
+    "party": "Mr. Vikram Kumar Mishra",
+    "nature": "Remuneration to KMPs",
+    "amount_cr": 0.1608
+   },
+   {
+    "party": "Morton Foods Limited",
+    "nature": "Investment in equity shares",
+    "amount_cr": 19.8675
+   },
+   {
+    "party": "Champaran Marketing Company Limited",
+    "nature": "Investment in equity shares / Amount owed by related parties",
+    "amount_cr": 1.9295
+   },
+   {
+    "party": "Hargaon Investment & Trading Company Limited",
+    "nature": "Investment in equity shares / Amount owed by related parties",
+    "amount_cr": 6.0913
+   },
+   {
+    "party": "OSM Investment & Trading Company Limited",
+    "nature": "Investment in equity shares / Amount owed by related parties",
+    "amount_cr": 2.6106
+   },
+   {
+    "party": "Related parties",
+    "nature": "Employee benefits expenses",
+    "amount_cr": 1.0538
+   },
+   {
+    "party": "Ms. Shalini Nopany",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.003
+   },
+   {
+    "party": "Mr. Chandra Shekhar Nopany",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.001
+   },
+   {
+    "party": "Ms. Urvi Mittal",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.001
+   },
+   {
+    "party": "Mr. Suresh Kumar Khandelia",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0043
+   },
+   {
+    "party": "Mr. Chand Bihari Patodia",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0013
+   },
+   {
+    "party": "Mr. Vinayak Vishwanath Kamath",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0015
+   },
+   {
+    "party": "Mr. Shounak Mitra",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.0013
+   },
+   {
+    "party": "Ms. Meena Jagtiani",
+    "nature": "Director's sitting fees",
+    "amount_cr": 0.001
+   },
+   {
+    "party": "Mr. Pradipta Kumar Sahoo",
+    "nature": "Remuneration to KMP",
+    "amount_cr": 0.7873
+   },
+   {
+    "party": "Mr. Shravan Kumar Jain",
+    "nature": "Remuneration to KMP",
+    "amount_cr": 0.1057
+   },
+   {
+    "party": "Mr. Vikram Kumar Mishra",
+    "nature": "Remuneration to KMP",
+    "amount_cr": 0.1608
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Investment Property / Capital Work-in-progress",
+    "amount_cr": 1.3121,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capital Work-in-Progress additions",
+    "amount_cr": 1.3121,
+    "timeline": "FY 2025-26"
+   },
+   {
+    "item": "Capital Work-in-Progress",
+    "amount_cr": 1.3121,
+    "timeline": "As on 31 March 2026"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "No borrowings from banks or financial institutions",
+    "amount_cr": 0,
+    "note": "The Company does not have any borrowings from banks and financial institutions at the balance sheet date"
+   },
+   {
+    "lender_or_type": "Borrowings (Other than Debt Securities)",
+    "amount_cr": 0.1,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Cash credit from a bank (ICICI Bank Ltd.)",
+    "amount_cr": 0,
+    "note": "Derecognised due to loss of control in subsidiary (Refer Note 45); carried interest rate of I-MCLR-6M + Spread of 2.10% p.a.; secured by hypothecation of entire current assets and first charge on movable PPE"
+   },
+   {
+    "lender_or_type": "Inter-corporate deposit from a body corporate",
+    "amount_cr": 0.1,
+    "note": "Carry interest at 9.00% p.a. (31 March 2025: 9.25% p.a.), repayable on demand"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Sales tax",
+    "amount_cr": 0.0074
+   },
+   {
+    "nature": "Bank guarantees outstanding",
+    "amount_cr": 1.279
+   },
+   {
+    "nature": "ESI authorities case for recovery of contribution",
+    "amount_cr": 0.0204
+   },
+   {
+    "nature": "Contingent liabilities of Morton Foods Limited (associate)",
+    "amount_cr": 2.9073
+   }
+  ]
+ }
+}
