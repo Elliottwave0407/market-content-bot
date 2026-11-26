@@ -1,0 +1,997 @@
+{
+ "isin": "INE110A01019",
+ "name": "BPL Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_32167_BPL_2025_2026_A_2277762_06102026151029.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 407110,
+ "chunks": 11,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "BPL Limited is a domestic manufacturer of Printed Circuit Boards (PCBs) serving 200+ customers across seven segments ranging from automation to electricals, with a manufacturing capacity of close to 6 lakh square metres.",
+   "products": [
+    {
+     "name": "Printed Circuit Boards (PCBs)",
+     "share_of_revenue_pct": null,
+     "note": "Core business; manufacturing capacity close to 6 lakh square metres"
+    },
+    {
+     "name": "PCB manufacturing",
+     "share_of_revenue_pct": null,
+     "note": "Includes higher-layer PCBs and IoT PCB category; manufacturing revenue was Rs 1,845.83 lakh in Q1 FY26-27"
+    },
+    {
+     "name": "Brand licensing",
+     "share_of_revenue_pct": 14,
+     "note": "Contributed Rs 293.49 lakh (14% of whole-company total income) in Q1 FY26-27, down 43% YoY"
+    },
+    {
+     "name": "Printed Circuit Boards",
+     "share_of_revenue_pct": null,
+     "note": "Central Government has prescribed maintenance of cost records for Printed Circuit Boards manufactured by the company"
+    },
+    {
+     "name": "Printed Circuit Board (Unpopulated)",
+     "share_of_revenue_pct": null,
+     "note": "Installed capacity 6,00,000 Sqm; Actual production 2,76,835 Sqm (2025-26), 2,57,987 Sqm (2024-25); Sales 2,86,814 Sqm for Rs 6,186.48 lakhs (2025-26), 2,57,987 Sqm for Rs 5,075.92 lakhs (2024-25)"
+    },
+    {
+     "name": "PCBs",
+     "share_of_revenue_pct": null,
+     "note": "Sale of products (Manufactured + Traded) Rs 6,186.48 lakhs in FY26"
+    },
+    {
+     "name": "Unpopulated Printed Circuit Boards (PCBs)",
+     "share_of_revenue_pct": null,
+     "note": "Single reportable segment"
+    }
+   ],
+   "customers": [
+    "200+ customers across seven segments ranging from automation to electricals",
+    "200+ customers across 7 industrial verticals"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Export",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "BPL Works, Palakkad 678 007, Kerala",
+     "capacity": ""
+    },
+    {
+     "location": "Doddaballapur 561 203, Bangalore District",
+     "capacity": "Close to 6 lakh square metres"
+    },
+    {
+     "location": "Not specified",
+     "capacity": "~6 lakh sq. m PCB manufacturing capacity"
+    },
+    {
+     "location": "Doddaballapur Industrial Area, Plot No28 B and 29, Doddaballapur, Bengaluru - 561 203",
+     "capacity": ""
+    },
+    {
+     "location": "Palakkad",
+     "capacity": ""
+    },
+    {
+     "location": "Plot No 28-B and 29 at Doddaballapur Industrial Area, Sy Nos 79, 92 and 93, KIADB of Veerapura Village, Kasaba Hobli, Doddaballapur Taluk, Bangalore District",
+     "capacity": "6,00,000 Sqm per annum"
+    },
+    {
+     "location": "Plot No 28-B and 29 at Doddaballapur Industrial Area situated in Sy Nos 79, 92 and 93, KIADB of Veerapura Village, Kasaba Hobli, Doddaballapur Taluk, Bangalore District",
+     "capacity": "Land admeasuring 3,40,627.85 sq fts (7.82 acres) and building plinth area of 16903.96 sq ft"
+    },
+    {
+     "location": "2 apartments (Flat No.3D) at the Complex named Sundale Apartments admeasuring 1940 sq ft located at Municipal No. 55 (No.55 & 56) at the Osborne Road, Ulsoor, Bangalore",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "automation",
+    "electricals",
+    "automotive",
+    "power conversion",
+    "lighting",
+    "industrial applications",
+    "IoT",
+    "electronics manufacturing"
+   ],
+   "brands_or_certifications": [
+    "Electronics Components Manufacturing Scheme (ECMS) approval",
+    "BPL brand"
+   ],
+   "raw_materials": [
+    "laminate",
+    "metals"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "India's increasing focus on electronics self-reliance, coupled with rising demand from automotive, power conversion, lighting and industrial automation is creating unprecedented demand for electronic components and PCBs. BPL is positioned for the next wave of growth.",
+    "period": "FY26-27 and beyond"
+   },
+   {
+    "statement": "The most recent quarter (Q1 FY26-27) shows growth continuing at the top line, with whole-company total income up 8.5% YoY to 2,154.22 Lakh \u2014 but margins have come under pressure, with COGS rising to 77% of income (from 71%) and EBITDA margin narrowing to 8% (from 19%).",
+    "period": "Q1 FY26-27"
+   },
+   {
+    "statement": "Over the next 2\u20133 years, the Company's strategic priorities include expanding to higher layer counts and greater design complexity, deploying AI-enabled production systems, introducing automated CAM, and adopting AI-enabled quality assurance across manufacturing.",
+    "period": "next 2\u20133 years"
+   },
+   {
+    "statement": "The Company will continue to move towards higher layer counts and more complex boards, and towards volume-based production from prototype stage.",
+    "period": "FY 2025-26 onwards"
+   },
+   {
+    "statement": "BPL remains committed to being an active participant in India's transformation into a global electronics manufacturing hub.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The Company has managed the Foreign Exchange risk with appropriate hedging activities in accordance with the policies of the Company. The Company used Forward Exchange Contracts to hedge against its Foreign Currency exposures relating to firm commitments. There were no materially uncovered exchange rate risks in the context of the Company's Foreign Exchange exposures.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company being a user of commodities is exposed to commodity price risk. But the Company has a risk management mechanism to ensure that there is nil or minimum impact on the Company in case if any risks materialize.",
+    "period": "FY 2025-26"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Order book averaging 95 days in FY 2025-26",
+    "value_cr": null
+   },
+   {
+    "statement": "Completed first export order in FY 2025-26",
+    "value_cr": null
+   },
+   {
+    "statement": "Order book of 95 days average in FY 2025-26",
+    "value_cr": null
+   },
+   {
+    "statement": "The Company entered a transaction of purchase of land measuring 892.52 cents situated at Palakkad from BPL Telecom (BTPL) for approximate value around Rs. 40 crores.",
+    "value_cr": 40
+   }
+  ],
+  "risks": [
+   "Volatile raw material markets",
+   "Margin pressure with COGS rising to 77% of income and EBITDA margin narrowing to 8% in Q1 FY26-27",
+   "Highly competitive and cost-sensitive environment",
+   "Global geopolitical developments impacting supply chains, logistics costs and raw material availability",
+   "Currency volatility (USD-INR) affecting imported raw material costs",
+   "Input cost inflation: certain input costs risen ~3x, supplier lead times extended from 4 to 7 weeks, some suppliers declining new orders",
+   "Global trade and logistics disruptions including freight availability and container shortages",
+   "Regulatory compliance for environmental and labour-law obligations",
+   "Customer concentration risk",
+   "Technology obsolescence in PCB manufacturing (multilayer capability, surface-finish techniques, automation)",
+   "Foreign Exchange risk",
+   "Commodity price risk",
+   "Internal financial controls over financial reporting needs to be improved",
+   "Undisputed customs duty of Rs.116.11 lakhs and interest of Rs.289.88 lakhs payable for more than six months",
+   "Various disputed tax demands pending at different forums",
+   "Actuarial Risk: Adverse Salary Growth Experience, Variability in mortality rates, Variability in withdrawal rates",
+   "Investment Risk: Value of assets certified by insurer may not be fair value",
+   "Liquidity Risk: Strain on cash flows if high-salary/long-duration employees resign/retire",
+   "Market Risk: Fluctuations in discount rate based on corporate/government bond yields",
+   "Legislative/Regulatory Risk: Amendments to Payment of Gratuity Act",
+   "Interest Rate Risk: Fall in bond yields increases defined benefit obligation",
+   "Salary inflation risk: Higher than expected salary increases increase defined benefit obligation",
+   "Demographic risks: Volatility due to mortality, attrition, disability, retirement",
+   "Credit risk of insurance company & asset liability mismatch risk of investments",
+   "Foreign exchange risk, interest rate risk, counterparty and concentration of credit risk, liquidity risk",
+   "Preference shares of Rs. 16,958.68 lacs due for redemption since August 2019 not yet redeemed",
+   "Going concern assumption for subsidiary BPL Power Projects (AP) Pvt Ltd no longer valid per auditor",
+   "Capital work in progress of Rs. 13.35 crores in subsidiary Bharat Energy Venture Private Limited pending transfer and capitalization",
+   "Undisputed customs duty of Rs. 116.11 lacs + interest Rs. 289.88 lacs outstanding over 6 months",
+   "Multiple disputed tax demands across Central Excise, Customs, Sales Tax/VAT, FEMA, Income Tax",
+   "Audit trail features not enabled for master data changes and privileged/administrative SQL database access",
+   "Internal financial controls over financial reporting need improvement per auditor",
+   "Credit risk on trade receivables and other financial assets",
+   "Liquidity risk - risk that the Group will not be able to settle or meet its obligations on time or at a reasonable price",
+   "Foreign exchange risk",
+   "Interest rate risk",
+   "Counterparty and concentration of credit risk",
+   "Actuarial risk (adverse salary growth experience, variability in mortality rates, variability in withdrawal rates)",
+   "Investment risk (for funded plans relying on insurers)",
+   "Market risk (discount rate fluctuations)",
+   "Legislative/Regulatory risk (amendments to Payment of Gratuity Act)",
+   "Salary inflation risk",
+   "Demographic risks (mortality, attrition, disability, retirement)",
+   "Subject to credit risk of the insurance company and asset liability mismatch risk of the investments, the Company will not be able to meet the past service liability on the valuation date that fall due during the first year.",
+   "Audit trail feature is not enabled for changes made in the master and using privileged/administrative access to the underlying SQL database for any changes performed."
+  ],
+  "auditor": {
+   "name": "M/s. MKUK & Associates, Chartered Accountants, Bangalore",
+   "opinion": "Qualified opinion on standalone financial statements regarding non-redemption of preference shares; emphasis of matter on consolidated financial statements regarding going-concern assessment of BPL Power Projects (AP) Private Limited",
+   "key_audit_matters": [
+    "Non-redemption of preference shares amounting to Rs 16,958.68 lakh due since August 2019",
+    "Going-concern assessment of subsidiary BPL Power Projects (AP) Private Limited",
+    "Revenue from Brand licensing agreement - Revenue from Brand licensing is accounted based on confirmation from the customer. Reconciliation is in progress to confirm the figures. Management has made representation on the adequacy and accuracy of the amount of revenue accounted.",
+    "Revenue from Brand licensing agreement - accounted based on confirmation from customer; reconciliation in progress; management representation on adequacy and accuracy",
+    "Capital Work in Progress - Project work in progress of subsidiary Bharat Energy Venture Private Limited amounting to Rs. 13.35 crores pending transfer to BPL Power Projects (AP) Pvt Ltd for capitalization; management represents fully recoverable and considered good"
+   ],
+   "qualifications_or_emphasis": [
+    "Qualification on standalone financial statements: non-redemption of preference shares",
+    "Emphasis of matter on consolidated financial statements: going-concern assessment of subsidiary",
+    "The company is yet to redeem preference shares amounting to Rs. 16,958.68 lacs, which was due for redemption in August 2019 due to inadequacy of profits as per applicable provisions of the Act.",
+    "Company has not revalued Property, Plant and Equipment and intangible assets during the year",
+    "No proceedings initiated or pending for holding benami property under Benami Transactions Act",
+    "Company has not accepted deposits from public",
+    "Cost records maintained for Printed Circuit Boards as prescribed by Central Government",
+    "Undisputed customs duty of Rs.116.11 lakhs and interest of Rs.289.88 lakhs payable for more than six months",
+    "Various disputed tax demands pending at different forums",
+    "Company has not defaulted in repayment of loans except Preference shares",
+    "Company has not been declared willful defaulter",
+    "No term loans taken during the year",
+    "Funds raised on short term basis not used for long-term purposes",
+    "No funds taken from any entity to meet obligations of subsidiaries",
+    "No loans raised on pledge of securities held in subsidiaries",
+    "No money raised by way of initial public offer or further public offer",
+    "No preferential allotment or private placement except under ESOP scheme",
+    "No fraud noticed or reported during the year",
+    "No report filed under section 143(12) in Form ADT-4",
+    "Whistle blower complaints considered in audit procedures",
+    "No material uncertainty exists regarding company's ability to meet liabilities",
+    "Company is not a Nidhi Company",
+    "Company in compliance with Section 177 and 188 for related party transactions",
+    "Adequate internal audit system commensurate with size and nature of business",
+    "No non-cash transactions with directors or persons connected with directors",
+    "Company not required to be registered under section 45-IA of RBI Act",
+    "One Core Investment Company within the Group",
+    "No cash losses incurred during current and preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "Qualified Opinion on Consolidated Financial Statements",
+    "Company yet to redeem preference shares amounting to Rs. 16,958.68 lacs due for redemption in August 2019",
+    "Financial statements of subsidiary BPL Power Projects (AP) Pvt Ltd prepared on going concern assumption; auditor views factors underlying going concern assumption no longer exist",
+    "Internal financial controls over financial reporting need improvement",
+    "Audit trail features not enabled for master data changes and privileged/administrative SQL database access",
+    "Audit trail feature is not enabled for changes made in the master and using privileged/administrative access to the underlying SQL database for any changes performed."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mrs. Anju Chandrasekhar (DIN: 00228746) retires by rotation and offers herself for re-appointment at the 62nd AGM on 25th September 2026",
+    "Dr. Chandan Juneja and Mr. Nowroz Jal Cama re-appointed as Independent Directors for five years from 30 June 2025 to 29 June 2030",
+    "Mr. C K Sabareeshan re-appointed as Independent Director for five years from 13 August 2026 to 12 August 2031 (post FY 2025-26, disclosed as subsequent event)",
+    "Mrs. Anju Chandrasekhar liable to retire by rotation at forthcoming AGM, offered herself for re-appointment",
+    "No inductions, retirements or resignations of Directors or KMP during FY 2025-26",
+    "No changes in the composition of the Board of Directors took place during the period under review.",
+    "In the Extra Ordinary General Meeting held on 26-06-2025, Mr. Ajith G Nambiar was re-appointed as Chairman & Managing Director for three years, Mr. Nowroz J Cama and Mr. Chandan Juneja were reappointed as an Independent Director for their second term."
+   ],
+   "auditor_change": "Board approved appointment of Madhwesh Prathap and Associates as Secretarial Auditor for five consecutive financial years from FY 2025-26 to FY 2029-30",
+   "promoter_holding_pct": 63.13,
+   "top_shareholders": [
+    {
+     "name": "Promoter Shareholding",
+     "pct": 63.13
+    },
+    {
+     "name": "Public - others",
+     "pct": 30.42
+    },
+    {
+     "name": "Bodies Corporates",
+     "pct": 3.85
+    },
+    {
+     "name": "NSDL and CDSL (dematerialized holding)",
+     "pct": 98.94
+    },
+    {
+     "name": "Electro Investment Pvt Ltd",
+     "pct": 47.17
+    },
+    {
+     "name": "Merino Finance Private Limited",
+     "pct": 6.28
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Ajit G Nambiar",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mrs. Anju Chandrasekhar",
+     "role": "Director, heading Corporate Affairs, HR, Legal, Administration and Secretarial functions"
+    },
+    {
+     "name": "Mr. Nowroz J Cama",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Chandan Juneja",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Sabareeshan CK",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Sukumar Rangachari",
+     "role": "Director"
+    },
+    {
+     "name": "Mrs. Divya Bharadwaj",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mrs. Karuna Balu",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ajit Gopal Nambiar",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Karuna Balu",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Divya Bhardwaj",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Divya Bhardwaj",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "CS Divya Bhardwaj",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Nowroz J Cama",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Karuna Balu",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Divya Bhardwaj",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ajit Gopal Nambiar",
+     "role": "Chairman & Managing Director (DIN: 00228857)"
+    },
+    {
+     "name": "Nowroz J Cama",
+     "role": "Director (DIN: 08772755)"
+    }
+   ],
+   "employees": 300
+  },
+  "other_notable": [
+   "62nd AGM scheduled for 25th September 2026 at 4:00 P.M. through VC/OAVM",
+   "Remote e-voting period: 21st September 2026 (9:00 A.M.) to 24th September 2026 (5:00 P.M.)",
+   "Cut-off date for e-voting: 18th September 2026",
+   "Registrar and Share Transfer Agent: KFIN Technologies Limited",
+   "Approval received under Government of India's Electronics Components Manufacturing Scheme (ECMS)",
+   "Capacity utilization peaked at 80% in FY 2025-26",
+   "Revenue growth of 15.20% year-on-year in FY 2025-26, significantly ahead of industry average of 8.47%",
+   "Indian PCB market estimated to grow at CAGR of 8.4%",
+   "No dividend recommended for FY 2025-26 due to loss",
+   "Loss of Rs 828.29 lakh adjusted against accumulated reserves",
+   "Paid-up equity share capital: Rs 48.97 crore (4,89,75,751 shares of Rs 10 each)",
+   "Paid-up preference share capital: Rs 169.59 crore (1,69,58,682 redeemable preference shares of Rs 100 each) overdue since August 2019",
+   "Company evaluating lawful means of preference share redemption including fresh issue subject to Section 55 of Companies Act, 2013",
+   "Credit rating: Company opted out of ratings for bank loan facilities in July 2022",
+   "Cost audit not applicable for FY 2025-26; cost records maintained",
+   "CSR not applicable for FY 2025-26 as Company incurred loss in previous year",
+   "No fraud reported during FY 2025-26",
+   "Foreign exchange earnings: Nil; Foreign exchange outgo: Rs 3,241.42 lakh in FY 2025-26",
+   "No significant capital investment in energy-conservation equipment due to working-capital constraints",
+   "R&D investments limited due to financial and manpower constraints",
+   "Workforce of ~300 employees with low attrition rate; competency-based training; partnerships with academic institutions",
+   "Internal control systems adequate and operating effectively subject to Statutory Auditor's Report",
+   "Vigil Mechanism/Whistle Blower Policy in place",
+   "No sexual harassment complaints received in FY 2025-26",
+   "Directors' & Officers' Liability Insurance with Board-approved coverage",
+   "Equity shares listed on NSE and BSE; annual listing fees paid for FY 2026-27",
+   "Annual Return available on Company website under Investor Relations",
+   "Safety, health and environmental measures maintained at manufacturing facilities",
+   "Application to Government of Telangana seeking change in usage of land from Thermal to Solar/Renewable energy",
+   "Company has made an application to Reserve Bank of India",
+   "Board's Report approved on 31st August 2026",
+   "Delay/Non filing of MGT 14 for Boards Report adopted in August 12,2025 and appointment of CS for 2024-25 was missed out inadvertently but currently filed and updated",
+   "Disclosure on Related Party Transaction made as better Corporate Governance for FY 2025-26",
+   "Joint venture with Kleer Industries Inc. USA is inactive and under liquidation process",
+   "Ramagundam Power Generation Private Limited is yet to commence operations",
+   "Market Capitalisation decreased from Rs 42,952 lakhs to Rs 18,733 lakhs (-56.38%)",
+   "Share price on BSE decreased from Rs 115.00 to Rs 38.25 (-66.74%)",
+   "Share price on NSE decreased from Rs 115.00 to Rs 38.17 (-66.81%)",
+   "No dividend proposed for equity and preference shares",
+   "62nd AGM scheduled for 25th September 2026 through Video Conference",
+   "Company has complied with Corporate Governance requirements as per SEBI LODR Regulations",
+   "Whistle-blower mechanism/Vigil mechanism in place",
+   "Registrar & Share Transfer Agent: KFIN Technologies Private Limited",
+   "Shares listed on BSE (500074) and NSE (BPL)",
+   "ISIN: INE110A01019",
+   "98.94% of Company's shares are held in electronic form (dematerialized).",
+   "The Company's shares are regularly traded on Bombay Stock Exchange Limited and the National Stock Exchange Limited.",
+   "Total fees for all services paid by the Company and its subsidiaries, on a consolidated basis, to the statutory auditor and all entities in the network firm/network entity: Rs. 13,09,692 (Internal Audit Fees: Rs. 6,00,000; Statutory Audit Fees: Rs. 6,00,000; Tax Audit Fees: Rs. 75,000; Other Services: Rs. 2,500; Reimbursement of Expenses: Rs. 32,192).",
+   "There were no sexual harassment cases reported to the company during the year.",
+   "The Company has not filed Annual Performance Report as required under Regulation 15 of Foreign Exchange Management (Transfer or Issue of Any Foreign Security) Regulations.",
+   "Form MGT.14 for Board's report approval (board meeting held on 13-08-2025) not filed with Ministry of Corporate Affairs as on report date i.e. 31-03-2026.",
+   "Form MGT.14 for Appointment of CS Divya Bhardwaj (event date 12-08-2024, due date 11-09-2024) filed on 03-09-2025 (beyond due date).",
+   "Secretarial Auditor unable to comment on Related Party Transactions with BPL Medical Technologies Private Limited for sale of PCBs during FY 24-25 and 25-26 not disclosed in Form AOC-2 forming part of Annual Report FY 24-25.",
+   "Seven days clear notice not given for one board meeting; independent directors were present and none objected.",
+   "Advised to exclusively record 'unanimous' decisions or details of voting in minutes of board and committee meetings.",
+   "Accounting software has audit trail (edit log) facility operated throughout the year for all relevant transactions, except audit trail features not enabled for changes made in the master and any changes made using privileged/administrative access to the underlying SQL database.",
+   "No amounts required to be transferred to the Investor Education and Protection Fund by the Company.",
+   "The Company did not have any long-term contracts including derivative contracts for which there were any material foreseeable losses.",
+   "Investment in BPL Medical Technologies Pvt. Ltd. (2,10,50,000 shares valued at Rs. 59.04 per share)",
+   "Other unquoted investments considered doubtful with full provision made"
+  ],
+  "capex_plans": [
+   {
+    "item": "Automated Optical Inspection (AOI) systems",
+    "amount_cr": null,
+    "timeline": "underway"
+   },
+   {
+    "item": "Surface finishing enhancements",
+    "amount_cr": null,
+    "timeline": "underway"
+   },
+   {
+    "item": "Process automation initiatives",
+    "amount_cr": null,
+    "timeline": "underway"
+   },
+   {
+    "item": "Manufacturing infrastructure upgrades",
+    "amount_cr": null,
+    "timeline": "underway"
+   },
+   {
+    "item": "Quality and inspection capability expansion",
+    "amount_cr": null,
+    "timeline": "underway"
+   },
+   {
+    "item": "Facility and utility modernization",
+    "amount_cr": null,
+    "timeline": "underway"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Bharat Energy Ventures Private Limited (BEVPL)",
+    "holding_pct": null,
+    "business": "Subsidiary; Ramagundam Power Generation Private Limited (formerly BPL Power Projects (AP) Private Limited) is an indirect subsidiary through BEVPL"
+   },
+   {
+    "name": "Kleer Industries Inc., USA",
+    "holding_pct": null,
+    "business": "Erstwhile overseas joint venture, inoperative for long period, in process of closure including regulatory formalities with RBI"
+   },
+   {
+    "name": "Bharat Energy Ventures Private Limited",
+    "holding_pct": 82.46,
+    "business": "Energy ventures"
+   },
+   {
+    "name": "Ramagundam Power Generation Private Limited (Formerly BPL Power Projects (AP) Private Limited)",
+    "holding_pct": 61.79,
+    "business": "Power generation"
+   },
+   {
+    "name": "BPL Medical Technologies Private Limited",
+    "business": "Related party transactions for sale of PCBs"
+   },
+   {
+    "name": "BPL Telecom Private Limited",
+    "business": "Rental transaction"
+   },
+   {
+    "name": "Bharat Energy Ventures Pvt. Ltd.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Bharat Energy Ventures Pvt. Ltd.",
+    "holding_pct": null,
+    "business": "Holding company of a Power generating company"
+   },
+   {
+    "name": "BPL Power Projects (AP) Pvt Ltd",
+    "holding_pct": null,
+    "business": "Financial statements prepared on going concern basis; auditor states factors underlying going concern assumption no longer exist"
+   },
+   {
+    "name": "Bharat Energy Venture Private Limited",
+    "holding_pct": null,
+    "business": "Project work in progress of Rs. 13.35 crores pending transfer to BPL Power Projects (AP) Pvt Ltd for capitalization"
+   },
+   {
+    "name": "Bharat Energy Ventures Private Limited",
+    "holding_pct": null,
+    "business": "Subsidiary of the Group"
+   },
+   {
+    "name": "BPL Power Projects (AP) Private Limited",
+    "holding_pct": null,
+    "business": "Step-down subsidiary of the Group with effect from 23rd March, 2023"
+   },
+   {
+    "name": "Bharat Energy Ventures Pvt Limited (BEVPL)",
+    "holding_pct": null,
+    "business": "a holding company of a Power generating company"
+   },
+   {
+    "name": "BPL Display Devices Limited",
+    "holding_pct": null,
+    "business": "now in liquidation"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Promoter group company",
+    "nature": "Inter-corporate borrowing",
+    "amount_cr": 96
+   },
+   {
+    "party": "BPL Medical Technologies Private Limited",
+    "nature": "Common Director",
+    "amount_cr": 0.6538084
+   },
+   {
+    "party": "BPL Medical Technologies Private Limited",
+    "nature": "Common Director",
+    "amount_cr": 0.0223838
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Entity in which Directors are interested",
+    "amount_cr": 0.7107041
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Entity in which Directors are interested",
+    "amount_cr": 0.2597817
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Entity in which Directors are interested",
+    "amount_cr": 0.00462
+   },
+   {
+    "party": "Electronic Research Private Limited",
+    "nature": "Common Director",
+    "amount_cr": 0.4014252
+   },
+   {
+    "party": "BPL Medical Technologies Private Limited",
+    "nature": "Sale of PCBs",
+    "amount_cr": null
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Rental transaction",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Advances to others",
+    "amount_cr": 58.22
+   },
+   {
+    "party": "Related Party",
+    "nature": "Security Deposits",
+    "amount_cr": 13.42
+   },
+   {
+    "party": "Related party",
+    "nature": "Advance to purchase of land",
+    "amount_cr": 31.35
+   },
+   {
+    "party": "Bharat Energy Ventures Private Limited",
+    "nature": "Company in which Directors have control / Subsidiary",
+    "amount_cr": 58.22
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 43.81
+   },
+   {
+    "party": "BPL Medical Technologies Pvt Ltd",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "BPL Techno Vision Pvt Ltd",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Electronic Research Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Dynamic Electronics Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 13.11
+   },
+   {
+    "party": "E R Computers Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 96.0
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Other Financial Assets",
+    "amount_cr": 31.35
+   },
+   {
+    "party": "Related Party",
+    "nature": "Long Term Borrowing - Loan from related party",
+    "amount_cr": 96.0
+   },
+   {
+    "party": "Related Party",
+    "nature": "Other Financial Liabilities - Loan from related Party",
+    "amount_cr": 1.47
+   },
+   {
+    "party": "Related Party",
+    "nature": "Other Current Financial Liabilities - Payable to related parties",
+    "amount_cr": 0.48
+   },
+   {
+    "party": "Related Party",
+    "nature": "Other Current Financial Liabilities - Interest accrued on amortized cost (EIR basis)",
+    "amount_cr": 9.52
+   },
+   {
+    "party": "Bharat Energy Ventures Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 58.22
+   },
+   {
+    "party": "BPL Telecom Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 31.35
+   },
+   {
+    "party": "BPL Medical Technologies Pvt Ltd",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "Electronic Research Private Limited",
+    "nature": "Company in which Directors have control",
+    "amount_cr": 0.2
+   },
+   {
+    "party": "Bharat Energy Ventures Pvt Limited (BEVPL)",
+    "nature": "Advance paid",
+    "amount_cr": 58.2208
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Legal proceedings including before Hon'ble High Court of Delhi, Hon'ble Supreme Court of India and Debt Recovery Tribunal; unsecured claimant obtained order from Division Bench of Hon'ble High Court of Delhi; Special Leave Petition dismissed 4 Dec 2025; execution proceedings initiated; DRT/ARCIL matter status disclosed in financial statements",
+    "amount_cr": null
+   },
+   {
+    "nature": "Outstanding redeemable preference shares of Rs 169.59 crore (1,69,58,682 shares of Rs 100 each) due for redemption since August 2019, classified under Current Liabilities",
+    "amount_cr": 169.59
+   },
+   {
+    "nature": "Central Excise Demand of duty on clearance of CTV parts / components / sub-assemblies in SKD condition to OEMs",
+    "amount_cr": 2.71
+   },
+   {
+    "nature": "Central Excise Demand of duty at Higher rate for clearance of CENVAT availed inputs",
+    "amount_cr": 0.2
+   },
+   {
+    "nature": "Central Excise Duty Exemption on DC Defibrillator",
+    "amount_cr": 0.56
+   },
+   {
+    "nature": "Central Excise Penalty due to Non inclusion of amortised cost in value of Plastic parts",
+    "amount_cr": 0.35
+   },
+   {
+    "nature": "Service Tax Demand of Service Tax & Penalty on manpower services provided by BPL to SBPL",
+    "amount_cr": 0.98
+   },
+   {
+    "nature": "Customs duty Entitlement to exemption for parts of Defibrillator",
+    "amount_cr": 3.28
+   },
+   {
+    "nature": "Customs duty Entitlement to exemption for parts of Defibrillator",
+    "amount_cr": 2.06
+   },
+   {
+    "nature": "Customs duty Entitlement to exemption for parts of Defibrillator",
+    "amount_cr": 0.93
+   },
+   {
+    "nature": "Customs duty Levy of duty on Bonded goods since abandoned",
+    "amount_cr": 0.33
+   },
+   {
+    "nature": "Sales tax/VAT Demand due to various disallowances",
+    "amount_cr": 10.03
+   },
+   {
+    "nature": "Sales tax/VAT Assessed Demand due to various disallowances",
+    "amount_cr": 1.96
+   },
+   {
+    "nature": "Sales tax/VAT Demand due to various disallowances",
+    "amount_cr": 1.39
+   },
+   {
+    "nature": "FEMA Demand u/s. 10(6) & 7",
+    "amount_cr": 1.4
+   },
+   {
+    "nature": "FEMA Demand for non submission of Bill of Entry to Banks",
+    "amount_cr": 0.5
+   },
+   {
+    "nature": "Income Tax Various Disallowances on assessment",
+    "amount_cr": 9.0
+   },
+   {
+    "nature": "Arbitral award by unsecured creditor; Rs 72 crores paid in Nov 2024; Rs 96 crores deposited; Review petition pending as on 31 March 2026",
+    "amount_cr": 96.0
+   },
+   {
+    "nature": "Application under Section 9 of IBC, 2016 filed by creditor before NCLT Cochin; proceedings pending as on 31 March 2026",
+    "amount_cr": null
+   },
+   {
+    "nature": "ARCIL claim based on Corporate Guarantee issued on behalf of BPL Display Devices Limited (in liquidation); matter pending before DRT",
+    "amount_cr": null
+   },
+   {
+    "nature": "Contingent Liabilities and Commitments per Note 26",
+    "amount_cr": 65.6
+   },
+   {
+    "nature": "Central Excise - Demand of duty on clearance of CTV parts/components/sub-assemblies in SKD condition to OEMs",
+    "amount_cr": 2.71
+   },
+   {
+    "nature": "Central Excise - Demand of duty at higher rate for clearance of CENVAT availed inputs",
+    "amount_cr": 0.2
+   },
+   {
+    "nature": "Central Excise - Duty exemption on DC Defibrillator",
+    "amount_cr": 0.56
+   },
+   {
+    "nature": "Central Excise - Penalty due to non-inclusion of amortised cost in value of plastic parts",
+    "amount_cr": 0.35
+   },
+   {
+    "nature": "Customs duty - Entitlement to exemption for parts of defibrillator (Kerala High Court)",
+    "amount_cr": 3.28
+   },
+   {
+    "nature": "Customs duty - Entitlement to exemption for parts of defibrillator (Karnataka High Court)",
+    "amount_cr": 2.06
+   },
+   {
+    "nature": "Customs duty - Entitlement to exemption for parts of defibrillator (CESTAT)",
+    "amount_cr": 0.93
+   },
+   {
+    "nature": "Customs duty - Levy of duty on bonded goods since abandoned",
+    "amount_cr": 0.33
+   },
+   {
+    "nature": "Sales tax/VAT - Demand due to various disallowances (West Bengal)",
+    "amount_cr": 10.03
+   },
+   {
+    "nature": "Sales tax/VAT - Assessed demand due to various disallowances (Delhi DCCT Appeals)",
+    "amount_cr": 1.96
+   },
+   {
+    "nature": "Sales tax/VAT - Demand due to various disallowances (Kerala High Court)",
+    "amount_cr": 1.39
+   },
+   {
+    "nature": "FEMA - Demand u/s 10(6) & 7",
+    "amount_cr": 1.4
+   },
+   {
+    "nature": "FEMA - Demand for non-submission of Bill of Entry to banks",
+    "amount_cr": 0.5
+   },
+   {
+    "nature": "Income Tax - Various disallowances on assessment",
+    "amount_cr": 9.0
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Central Excise",
+    "amount_cr": 3.83
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Customs",
+    "amount_cr": 6.61
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Service Tax",
+    "amount_cr": 0.0
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Sales Tax",
+    "amount_cr": 13.38
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Guarantees",
+    "amount_cr": 0.43
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - FEMA",
+    "amount_cr": 1.9
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Others",
+    "amount_cr": 22.04
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Income Tax",
+    "amount_cr": 9.0
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Provident Fund",
+    "amount_cr": 0.07
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt - Property Tax",
+    "amount_cr": 0.19
+   },
+   {
+    "nature": "Guarantees - LC/BG outstanding",
+    "amount_cr": 8.16
+   },
+   {
+    "nature": "Claim by ARCIL based on Corporate Guarantee issued on behalf of BPL Display Devices Limited (in liquidation), pending before DRT",
+    "amount_cr": null
+   },
+   {
+    "nature": "Application under Section 9 of the Insolvency and Bankruptcy Code, 2016 filed by an unsecured creditor before NCLT Kochi",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Promoter group company",
+    "amount_cr": 96,
+    "note": "Inter-corporate borrowing to meet urgent fund requirements for operations; exempt from definition of 'deposit' under Companies (Acceptance of Deposits) Rules, 2014"
+   },
+   {
+    "lender_or_type": "Preference shares",
+    "amount_cr": 169.5868,
+    "note": "Yet to be redeemed, due for redemption in August 2019 due to inadequacy of profits"
+   },
+   {
+    "lender_or_type": "Long term Borrowings",
+    "amount_cr": 96.0,
+    "note": "Non-current financial liabilities"
+   },
+   {
+    "lender_or_type": "Current Borrowings",
+    "amount_cr": 9.57,
+    "note": "Current financial liabilities"
+   },
+   {
+    "lender_or_type": "Union Bank of India (erstwhile Andhra Bank)",
+    "amount_cr": 10.0,
+    "note": "Secured Overdraft of Rs 10.00 Crores and Rs 9.00 Crores non-fund based LC limit; secured by mortgage of land and building at Osborne Road, Ulsoor, Bangalore and hypothecation of inventories and book debts"
+   },
+   {
+    "lender_or_type": "Loan repayable on demand",
+    "amount_cr": 105.57,
+    "note": "As at March 31, 2026 (Rs 10,557.22 lakhs)"
+   },
+   {
+    "lender_or_type": "Long-term borrowings (non-current)",
+    "amount_cr": 96.0,
+    "note": "As at March 31, 2026; zero as at March 31, 2025"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 9.57,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Banks - Demand loans",
+    "amount_cr": 9.57,
+    "note": "Secured borrowings as at 31-03-26"
+   },
+   {
+    "lender_or_type": "Related party",
+    "amount_cr": 96.0,
+    "note": "Long term borrowing as at 31-03-26"
+   },
+   {
+    "lender_or_type": "Related Party",
+    "amount_cr": 1.47,
+    "note": "Other Financial Liabilities as at 31-03-26"
+   },
+   {
+    "lender_or_type": "Union Bank of India (erstwhile Andhra Bank)",
+    "amount_cr": 10.0,
+    "note": "Secured Overdraft of Rs.10.00 (15.00) Crores and Rs 9.00 (13.00) Crores of non-fund based LC limited. Secured by mortgage of land and building at Doddaballapur and 2 apartments at Sundale Apartments, Bangalore, and hypothecation of inventories and book debts."
+   },
+   {
+    "lender_or_type": "Loan repayable on demand",
+    "amount_cr": 9.57,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Non-Convertible, Non-Cumulative 0.001% Preference Shares",
+    "amount_cr": 169.59,
+    "note": "1,69,58,682 shares of Rs. 100/- each allotted on 23rd September 2005. 1,41,24,682 shares redeemable in four equal installments at end of 11th, 12th, 13th and 14th year; balance 28,34,000 shares redeemable in ten equal installments from 31st March 2008. Company yet to redeem these preference shares."
+   }
+  ],
+  "litigation": [
+   "Legal proceedings before Hon'ble High Court of Delhi, Hon'ble Supreme Court of India and Debt Recovery Tribunal",
+   "Unsecured claimant obtained order from Division Bench of Hon'ble High Court of Delhi; Special Leave Petition dismissed 4 Dec 2025; review petition dismissed; execution proceedings initiated; Company filed objections",
+   "IBC application CP(IBC)/10/KOB/2026 filed by Morgan Securities and Credits Private Limited before NCLT Kochi in 2026; dismissed on 8 July 2026 (post financial year event)",
+   "Barring certain cases pending in Courts/ Consumer Forums, relating to disputes over the title to shares, in which the Company has been made a party",
+   "Supreme Court order dated 04-12-2025 as disclosed to stock exchanges",
+   "Central Excise Demand of duty on clearance of CTV parts / components / sub-assemblies in SKD condition to OEMs - Commissioner (Appeals)",
+   "Central Excise Demand of duty at Higher rate for clearance of CENVAT availed inputs - Commissioner Appeals",
+   "Central Excise Duty Exemption on DC Defibrillator - Commissioner (Appeals)",
+   "Central Excise Penalty due to Non inclusion of amortised cost in value of Plastic parts - CESTAT",
+   "Service Tax Demand of Service Tax & Penalty on manpower services provided by BPL to SBPL - Tribunal",
+   "Customs duty Entitlement to exemption for parts of Defibrillator - High Court of Kerala",
+   "Customs duty Entitlement to exemption for parts of Defibrillator - High Court of Karnataka",
+   "Customs duty Entitlement to exemption for parts of Defibrillator - CESTAT",
+   "Customs duty Levy of duty on Bonded goods since abandoned - CESTAT",
+   "Sales tax/VAT Demand due to various disallowances - State of West Bengal",
+   "Sales tax/VAT Assessed Demand due to various disallowances - DCCT (Appeals) Delhi",
+   "Sales tax/VAT Demand due to various disallowances - High Court of Kerala",
+   "FEMA Demand u/s. 10(6) & 7 - Special Director (A), Chennai",
+   "FEMA Demand for non submission of Bill of Entry to Banks - Tribunal",
+   "Income Tax Various Disallowances on assessment - Appeal before Income Tax Authorities",
+   "Unsecured creditor obtained arbitral award; Rs 72 crores paid Nov 2024; Rs 96 crores deposited; SLP dismissed Dec 2025; Review petition pending as on 31 March 2026",
+   "Creditor filed application under Section 9 of IBC, 2016 before NCLT Cochin; proceedings pending as on 31 March 2026",
+   "ARCIL lodged claim with DRT based on Corporate Guarantee for BPL Display Devices Limited (in liquidation); matter pending for orders",
+   "Central Excise demand of duty on clearance of CTV parts/components/sub-assemblies in SKD condition to OEMs - Rs. 271.48 lacs - Commissioner (Appeals)",
+   "Central Excise demand of duty at higher rate for clearance of CENVAT availed inputs - Rs. 19.88 lacs - Commissioner Appeals",
+   "Central Excise duty exemption on DC defibrillator - Rs. 56.42 lacs - Commissioner (Appeals)",
+   "Central Excise penalty due to non-inclusion of amortised cost in value of plastic parts - Rs. 34.72 lacs - CESTAT",
+   "Customs duty entitlement to exemption for parts of defibrillator - Rs. 328.48 lacs - High Court of Kerala",
+   "Customs duty entitlement to exemption for parts of defibrillator - Rs. 206.38 lacs - High Court of Karnataka",
+   "Customs duty entitlement to exemption for parts of defibrillator - Rs. 92.76 lacs - CESTAT",
+   "Customs duty levy of duty on bonded goods since abandoned - Rs. 33.33 lacs - CESTAT",
+   "Sales tax/VAT demand due to various disallowances - Rs. 1002.68 lacs - State of West Bengal",
+   "Sales tax/VAT assessed demand due to various disallowances - Rs. 195.75 lacs - DCCT (Appeals) Delhi",
+   "Sales tax/VAT demand due to various disallowances - Rs. 139.35 lacs - High Court of Kerala",
+   "FEMA demand u/s 10(6) & 7 - Rs. 140.00 lacs - Special Director (A), Chennai",
+   "FEMA demand for non-submission of Bill of Entry to banks - Rs. 50.00 lacs - Tribunal",
+   "Income tax various disallowances on assessment - Rs. 900.00 lacs - Appeal before Income Tax Authorities",
+   "An unsecured creditor obtained an arbitral award against the Company in the Supreme Court. Pursuant to Court directions, the company paid Rs.72 crores to the said creditor in November 2024. Further, the company was asked to deposit a sum of Rs.96 crores and the SLP filed by the Company was dismissed in December 2025. The company has filed a review petition against the said Order, which is currently pending hearing as on 31 March 2026.",
+   "Meanwhile, the said creditor has filed an application under Section 9 of the Insolvency and Bankruptcy Code, 2016 before the National Company Law Tribunal (NCLT), Cochin, for recovery of alleged dues. The Company has filed its objections, and related proceedings are also pending before NCLT Kochi as on 31 March 2026.",
+   "ARCIL has lodged a claim on the company with DRT based on a Corporate Guarantee issued on behalf of BPL Display Devices Limited, now in liquidation. The matter is pending for orders."
+  ]
+ }
+}

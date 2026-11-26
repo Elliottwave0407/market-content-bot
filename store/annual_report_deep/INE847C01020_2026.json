@@ -1,0 +1,953 @@
+{
+ "isin": "INE847C01020",
+ "name": "Rossell India Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30017_ROSSELLIND_2025_2026_A_8420694_27072026170259.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 463508,
+ "chunks": 12,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "Rossell India Limited is engaged in the production of Tea as indicated by the cost audit of tea products.",
+   "products": [
+    {
+     "name": "Tea",
+     "share_of_revenue_pct": null,
+     "note": "Cost audit conducted for tea product"
+    },
+    {
+     "name": "Black Tea",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Black Pepper",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cultivation and Manufacture of Tea",
+     "share_of_revenue_pct": 99.82,
+     "note": "NIC Code: 01271 / 10791 / 46306"
+    },
+    {
+     "name": "Bulk Tea",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "customers": [
+    "domestic and international markets",
+    "UK, Germany, Poland, UAE, Iraq, China, USA, Canada",
+    "institutional buyers",
+    "auction buyers",
+    "tea blending and packaging companies",
+    "branded tea manufacturers",
+    "exporters",
+    "End consumers",
+    "Enterprises that process or add value before retail",
+    "Instant tea manufacturers",
+    "Tea auction committees",
+    "Export organizations",
+    "Taylors of Harrogate (14.41% of total revenue in FY2026)",
+    "Taylors of Harrogate",
+    "Ahmad Tea FZ \u2013 LLC",
+    "Ahmed Mohamed Saleh Baeshen & Co.",
+    "Thompson Lloyd & Ewart Ltd."
+   ],
+   "geographies": [
+    {
+     "name": "India (Assam)",
+     "share_pct": null
+    },
+    {
+     "name": "Exports",
+     "share_pct": null
+    },
+    {
+     "name": "Assam, India",
+     "share_pct": null
+    },
+    {
+     "name": "National",
+     "share_pct": 74.91
+    },
+    {
+     "name": "International",
+     "share_pct": 25.09
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 74.9
+    },
+    {
+     "name": "Outside India",
+     "share_pct": 25.1
+    }
+   ],
+   "plants": [
+    {
+     "location": "Assam, India",
+     "capacity": "Seven (7) Tea Estates; total own crop production 66.86 lakh kgs (FY2025-26)"
+    },
+    {
+     "location": "Dikom Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Kharikatia Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Nagrijuli Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Romai Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Nokhroy Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Namsang Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Dhoedaam Tea Estate",
+     "capacity": ""
+    },
+    {
+     "location": "Dikom, Dist. Dibrugarh, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Romai, Dist. Dibrugarh, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Namsang, Dist. Dibrugarh, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Nokhroy, Dist. Tinsukia, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Dhoedaam, Dist. Tinsukia, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Nagrijuli, Dist. Baksa, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Kharikatia, Dist. Jorhat, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Assam (7 tea estates including Dhoedaam Tea Estate)",
+     "capacity": ""
+    },
+    {
+     "location": "Kharikatia Tea Estate, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Dhoedaam Tea Estate, Assam",
+     "capacity": ""
+    },
+    {
+     "location": "Assam, India",
+     "capacity": "Seven Tea Estates"
+    },
+    {
+     "location": "Namsang TE, Nokhroy TE, Dhoedaam TE, Dikom TE, Romai Tea Estates",
+     "capacity": ""
+    },
+    {
+     "location": "DIKOM",
+     "capacity": "Tea Bearing Area: 611 Hectares, Yield: 2,079 Kgs/Hectare"
+    },
+    {
+     "location": "NOKHROY",
+     "capacity": "Tea Bearing Area: 321 Hectares, Yield: 3,091 Kgs/Hectare"
+    },
+    {
+     "location": "NAGRIJULI",
+     "capacity": "Tea Bearing Area: 607 Hectares, Yield: 2,433 Kgs/Hectare"
+    },
+    {
+     "location": "ROMAI",
+     "capacity": "Tea Bearing Area: 309 Hectares, Yield: 2,536 Kgs/Hectare"
+    },
+    {
+     "location": "NAMSANG",
+     "capacity": "Tea Bearing Area: 309 Hectares, Yield: 2,280 Kgs/Hectare"
+    },
+    {
+     "location": "KHARIKATIA",
+     "capacity": "Tea Bearing Area: 489 Hectares, Yield: 1,629 Kgs/Hectare"
+    },
+    {
+     "location": "DHOEDAAM",
+     "capacity": "Tea Bearing Area: 885 Hectares, Yield: 1,639 Kgs/Hectare"
+    }
+   ],
+   "raw_materials": [
+    "Tea leaves (own crop and bought leaf)",
+    "own leaf",
+    "outsourced leaf",
+    "Green Leaf (harvested from own estates)",
+    "Bought Leaf from Small Tea Growers",
+    "Chemicals",
+    "Fertilizers",
+    "Packaging materials",
+    "General supplies",
+    "Bought leaf tea",
+    "Nano Urea",
+    "MOP (Muriate of Potash)",
+    "Lime (for waste denaturing)",
+    "Green Leaves",
+    "Green Leaves (own harvest and purchased)",
+    "Stores and Spare Parts"
+   ],
+   "competitors_named": [
+    "Mcleod Russell India Ltd.",
+    "Kenya",
+    "Sri Lanka",
+    "Nepal",
+    "Africa"
+   ],
+   "end_markets": [
+    "Domestic tea market",
+    "International tea market (UK, Germany, Poland, UAE, Iraq, China, USA, Canada)",
+    "domestic market",
+    "international markets (Europe, North America, Middle East, CIS & Russia, Asia Pacific)",
+    "Tea consumers",
+    "Tea processing/value-add enterprises",
+    "Tea industry",
+    "Instant tea manufacturers",
+    "Export tea market"
+   ],
+   "brands_or_certifications": [
+    "Rossell Tea brand",
+    "MRL standards compliance",
+    "Best ATEPFO Compliant Tea Estate 2025 (Dikom)",
+    "Best Tea Garden Compliant Factory 2025 (Kharikatia)",
+    "Rainforest Alliance",
+    "Trustea",
+    "FSSC 22000",
+    "FSSAI",
+    "Rainforest Alliance Certification",
+    "FSSAI compliance",
+    "Tea Board of India monitoring",
+    "Tea Board of India approvals"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Khandelwal Ray & Co., Chartered Accountants",
+   "opinion": "No qualification, reservation or adverse remark or disclaimer",
+   "qualifications_or_emphasis": [
+    "Secretarial Audit report does not contain any qualification, reservation or adverse remark or disclaimer",
+    "Statutory Auditors reported an instance of embezzlement of Funds at Romai Tea Estate aggregating to Rs 25.72 lakhs",
+    "Title deeds of two tea estates (Kharikatia and Dhoedaam) not in company's name - pending sale permission from Government of Assam authorities",
+    "Internal financial controls adequate and operating effectively subject to Note No. 46",
+    "Emphasis on embezzlement of Rs. 25.72 Lakhs at Romai Tea Estate by a staff member (Note No. 46), charged off pending proceedings; no fraud by company."
+   ],
+   "key_audit_matters": [
+    "Internal financial controls over financial reporting (refer Note No. 46 of Financial Statements)",
+    "Pending litigations impact (refer Note 42 to financial statements)",
+    "Embezzlement of fund at Romai Tea Estate by a staff member quantified at Rs. 25.72 Lakhs (Note No. 46)",
+    "Maintenance of cost records under Section 148(1) of Companies Act 2013",
+    "Regularity in depositing undisputed statutory dues",
+    "No default in repayment of loans or interest",
+    "Term loans applied for intended purpose",
+    "No funds raised on short-term basis used for long-term purposes",
+    "No funds taken to meet obligations of subsidiaries/associates/JVs",
+    "No loans raised on pledge of securities held in subsidiaries",
+    "No money raised by IPO/FPO or preferential allotment/private placement (except shares issued pursuant to Scheme of Amalgamation)",
+    "No fraud by company; embezzlement by staff member noted",
+    "No whistle-blower complaints received",
+    "Related party transactions in compliance with Sections 177 and 188",
+    "Internal audit system commensurate with size and nature of business",
+    "No non-cash transactions with directors or connected persons",
+    "Not a Nidhi Company or Core Investment Company (CIC)",
+    "No cash losses in current and immediately preceding financial year",
+    "No resignation of statutory auditors",
+    "No material uncertainty regarding ability to meet liabilities within one year",
+    "No unspent CSR amount under Section 135(5)"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mr. Harsh Mohan Gupta as Managing Director designated as Executive Chairman and Managing Director for 3 years from 1st April 2027 to 31st March 2030",
+    "Re-appointment of Ms. Samara Gupta as Whole Time Director for about 3 years from 9th February 2027 to 31st January 2030",
+    "Appointment of Mr. Digant Mahesh Parikh as Director w.e.f. 26th August 2026",
+    "Appointment of Mr. Digant Mahesh Parikh as Whole Time Director for about 3 years from 26th August 2026 to 31st July 2029",
+    "Mr. Harsh Mohan Gupta retires by rotation and offers himself for re-appointment",
+    "Re-appointment of Mr. Harsh Mohan Gupta (DIN: 00065973) as Managing Director designated as Executive Chairman and Managing Director for 3 years from 1st April 2027 to 31st March 2030",
+    "Re-appointment of Ms. Samara Gupta (DIN: 09801530) as Whole Time Director for about 3 years from 9th February 2027 to 31st January 2030",
+    "Appointment of Mr. Digant Mahesh Parikh (DIN: 00212589) as Director liable to retire by rotation w.e.f. 26th August 2026 and as Whole Time Director for about 3 years from 26th August 2026 to 31st July 2029",
+    "Re-appointment of Mr. Harsh Mohan Gupta as Managing Director (Executive Chairman) for 3 years from 1st April 2027",
+    "Re-appointment of Ms. Samara Gupta as Whole Time Director for ~3 years from 9th February 2027",
+    "Appointment of Mr. Digant Mahesh Parikh as Whole Time Director for ~3 years from 26th August 2026",
+    "Mr. Nirmal Kumar Khurana to cease as Director at 32nd AGM (not offering for re-appointment); continues as CFO & CS till 31st August 2026",
+    "Board re-appointed Mr. Harsh Mohan Gupta as Managing Director designated as Executive Chairman and Managing Director with effect from 01.04.2027 for a further period of three years, subject to approval of Members",
+    "Board re-appointed Ms. Samara Gupta as Whole Time Director with effect from 09.02.2027 for a further period of about three years, subject to approval of Members",
+    "Mr. Nirmal Kumar Khurana shall cease to be a Director and retire from office with effect from the conclusion of the ensuing Annual General Meeting",
+    "Re-appointment of Mr. Harsh Mohan Gupta as Executive Chairman and Managing Director for a further period of 3 years w.e.f. 1st April, 2027 to 31st March, 2030, subject to approval of Members at the ensuing AGM.",
+    "Mr. Nirmal Kumar Khurana shall cease to be a Director and retire from the office of Director (Finance) with effect from the conclusion of the ensuing AGM as he has not offered himself for re-appointment.",
+    "Re-appointment of Ms. Samara Gupta as Whole Time Director for a further period of about 3 years w.e.f. 9th February, 2027 to 31st January, 2030, subject to approval of Members at the ensuing AGM.",
+    "Changes in composition of Board of Directors during the period under review were carried out in compliance with the provisions of the Act."
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Harsh Mohan Gupta",
+     "pct": 30.0
+    },
+    {
+     "name": "Ms. Samara Gupta",
+     "pct": 9.53
+    },
+    {
+     "name": "Promoter Group",
+     "pct": 74.8
+    },
+    {
+     "name": "Harsh Mohan Gupta",
+     "pct": 30.0
+    },
+    {
+     "name": "Rishab Mohan Gupta",
+     "pct": 16.08
+    },
+    {
+     "name": "Vinita Gupta",
+     "pct": 9.66
+    },
+    {
+     "name": "Samara Gupta",
+     "pct": 9.54
+    },
+    {
+     "name": "Harsh Mohan Gupta & Son (HUF)",
+     "pct": 7.63
+    },
+    {
+     "name": "BMG Investments Pvt. Ltd.",
+     "pct": 1.62
+    },
+    {
+     "name": "Harvin Estates Pvt. Ltd.",
+     "pct": 0.28
+    }
+   ],
+   "auditor_change": "Statutory Auditor M/s. Khandelwal Ray & Co. re-appointed for second term of 5 years at 28th AGM (9th August 2022); Cost Auditor M/s. Shome & Banerjee re-appointed for FY2026-27 at remuneration of Rs 1.70 lakh plus taxes",
+   "promoter_holding_pct": 74.8,
+   "promoter_pledge_pct": 0
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "H. M. Gupta",
+     "role": "Executive Chairman (KMP \u2013 Managing Director and Chief Executive Officer)"
+    },
+    {
+     "name": "N. K. Khurana",
+     "role": "Director (Finance) and Company Secretary (KMP \u2013 Chief Financial Officer)"
+    },
+    {
+     "name": "Samara Gupta",
+     "role": "Whole Time Director (KMP)"
+    },
+    {
+     "name": "S. S. Sikand",
+     "role": "Chief Executive Officer, Rossell Tea Division"
+    },
+    {
+     "name": "Digant M. Parikh",
+     "role": "Senior Vice-President (Finance)"
+    },
+    {
+     "name": "Mr. Harsh Mohan Gupta",
+     "role": "Managing Director designated as Executive Chairman and Managing Director (Promoter Director since inception 1994, Managing Director since 1st May 1996, Executive Chairman since 1st February 2001)"
+    },
+    {
+     "name": "Ms. Samara Gupta",
+     "role": "Whole Time Director (Daughter of Mr. Harsh Mohan Gupta, part of promoter group)"
+    },
+    {
+     "name": "Mr. Digant Mahesh Parikh",
+     "role": "Senior Vice-president (Finance) since November 2011, proposed as Whole Time Director (Commerce graduate, MBA Finance, Intermediate ICWA)"
+    },
+    {
+     "name": "N K Khurana",
+     "role": "Director (Finance) and Company Secretary (FCS - 2173)"
+    },
+    {
+     "name": "Mr. Harsh Mohan Gupta",
+     "role": "Managing Director designated as Executive Chairman and Managing Director (CEO)"
+    },
+    {
+     "name": "Ms. Samara Gupta",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Digant Mahesh Parikh",
+     "role": "Senior Vice-President (Finance); appointed as Whole Time Director from 26th August 2026"
+    },
+    {
+     "name": "Mr. Nirmal Kumar Khurana",
+     "role": "Whole Time Director (till 32nd AGM); Chief Financial Officer and Company Secretary (till 31st August 2026)"
+    },
+    {
+     "name": "Mr. Harsh Mohan Gupta",
+     "role": "Executive Chairman and Managing Director"
+    },
+    {
+     "name": "Ms. Nayantara Palchoudhuri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Krishan Katyal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Rahul Bhatnagar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Nirmal Kumar Khurana",
+     "role": "Director (Finance) and Company Secretary"
+    },
+    {
+     "name": "Mr. Suneel Singh Sikand",
+     "role": "Chief Executive Officer \u2013 Rossell Tea Division"
+    },
+    {
+     "name": "Mr. Digant Mahesh Parikh",
+     "role": "Senior Vice-President (Finance)"
+    },
+    {
+     "name": "Harsh Mohan Gupta",
+     "role": "Executive Chairman and Managing Director & CEO"
+    },
+    {
+     "name": "Nirmal Kumar Khurana",
+     "role": "Director (Finance), CFO and Company Secretary"
+    },
+    {
+     "name": "Samara Gupta",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "S.S. Sikand",
+     "role": "CEO \u2013 Rossell Tea Division"
+    },
+    {
+     "name": "Digant M Parikh",
+     "role": "Senior Vice President (Finance)"
+    },
+    {
+     "name": "Vinita Gupta",
+     "role": "Executive Vice President"
+    },
+    {
+     "name": "Jatinder Singh Chahal",
+     "role": "Vice President (Production)"
+    },
+    {
+     "name": "Harsh Mohan Gupta",
+     "role": "Executive Chairman"
+    },
+    {
+     "name": "N K Khurana",
+     "role": "Director (Finance) and Company Secretary"
+    },
+    {
+     "name": "Board of Directors",
+     "role": "All members receive regular updates on diverse business operations"
+    },
+    {
+     "name": "Key Managerial Personnel (KMPs)",
+     "role": "Function as cohesive leadership team with Board"
+    },
+    {
+     "name": "Human Resource Officer / Senior Manager (Administration)",
+     "role": "Focal point for human rights concerns"
+    },
+    {
+     "name": "Welfare Officers",
+     "role": "Primary point of contact for grievances at tea estates"
+    },
+    {
+     "name": "Estate Manager",
+     "role": "Escalation point for grievances"
+    },
+    {
+     "name": "Chief Executive Officer",
+     "role": "Head office escalation for grievances"
+    },
+    {
+     "name": "Harsh Mohan Gupta",
+     "role": "Executive Chairman (Managing Director and CEO), DIN \u2013 00065973"
+    },
+    {
+     "name": "Nirmal Kumar Khurana",
+     "role": "Chief Financial Officer - Director (Finance), DIN \u2013 00123297"
+    },
+    {
+     "name": "Mausumi Pal Rana",
+     "role": "Partner, Khandelwal Ray & Co., Membership No. 056356"
+    },
+    {
+     "name": "Harsh Mohan Gupta",
+     "role": "Executive Chairman (Managing Director and CEO)"
+    },
+    {
+     "name": "Rahul Bhatnagar",
+     "role": "Director"
+    },
+    {
+     "name": "Nirmal Kumar Khurana",
+     "role": "Director (Finance) and Company Secretary (Chief Financial Officer)"
+    },
+    {
+     "name": "Digant M. Parikh",
+     "role": "Senior Vice President (Finance)"
+    },
+    {
+     "name": "Nirmal Kumar Khurana",
+     "role": "Director (Finance) and Company Secretary (CFO)"
+    },
+    {
+     "name": "Nayantara Palchoudhuri",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "K Katyal",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Rana Nirmal Kumar Khurana",
+     "role": "Director (Finance) and Company Secretary (Chief Financial Officer)"
+    }
+   ],
+   "employees": 7790
+  },
+  "dividend_per_share": 0.4,
+  "other_notable": [
+   "32nd AGM scheduled for 25th August 2026 at 11:00 A.M. through VC/OAVM",
+   "Dividend of Rs 0.40 per Equity Share of Rs 2 each declared for FY 2025-2026",
+   "Register of Members and Share Transfer Books closed from 19th August 2026 to 25th August 2026 for dividend payment",
+   "Unclaimed Suspense Account holds 1,950 Equity Shares belonging to 8 Members as on 31st March 2026",
+   "Cost Auditors M/s Shome & Banerjee appointed for tea product for FY ending 31st March 2027",
+   "Remote e-voting period: 21st August 2026 (9:00 A.M.) to 24th August 2026 (5:00 P.M.)",
+   "Cut-off date for e-voting: 18th August 2026",
+   "Scrutinizer: M/s. LABH & LABH Associates, Company Secretaries, Kolkata",
+   "Registrar and Share Transfer Agent: MUFG Intime India Private Limited (formerly CB Management Services Private Limited)",
+   "AGM scheduled for 25th August 2026 through VC/OAVM",
+   "Registered Office: Jindal Towers, Block 'B', 4th Floor, 21/1A/3, Darga Road, Kolkata - 700 017",
+   "CIN: L01132WB1994PLC063513",
+   "Special resolution proposed to enhance managerial remuneration limits: Managing Director/Whole Time Director from 5% to 7% of net profit (individual) and 10% to 14% (multiple); total managerial remuneration from 11% to 15% of net profit",
+   "Mr. Harsh Mohan Gupta remuneration: Salary Rs 11,00,000/month (range Rs 11-15 lakh), Commission up to 10% of net profits, Allowances/perquisites within ceilings",
+   "Ms. Samara Gupta remuneration: Salary Rs 5,00,000/month (range Rs 5-10 lakh), Commission up to 5% of net profits, Allowances/perquisites within ceilings",
+   "Mr. Digant Mahesh Parikh remuneration: Salary Rs 4,00,000/month (range Rs 4-6 lakh), Allowances/perquisites within ceilings (no commission mentioned)",
+   "Minimum remuneration provisions for all three directors in case of loss/inadequacy of profits",
+   "Audit Committee and Nomination & Remuneration Committee approvals obtained for all remuneration packages",
+   "SEBI Listing Regulations compliance for related party transactions (Mr. Gupta and Ms. Gupta are promoter group/related parties)",
+   "Total Income FY2025-26: Rs 23,099.49 lakhs (vs Rs 18,551.65 lakhs FY2024-25)",
+   "Profit After Tax FY2025-26: Rs 1,585.63 lakhs (vs Rs 1,968.84 lakhs FY2024-25)",
+   "Revenue from operations (tea & black pepper): Rs 22,069.27 lakhs (24.44% increase)",
+   "Own crop production: 66.86 lakh kgs across 7 estates (50.34 lakh kgs from 6 existing estates)",
+   "Exports: 12.43 lakh kgs (8% growth); higher volumes to UK, Germany, Poland",
+   "Average realization: Orthodox Rs 313.33/kg (industry avg Rs 281/kg); CTC Rs 307.40/kg (industry avg Rs 239.54/kg)",
+   "Turnover increased 25% to Rs 220.69 crores (highest to date)",
+   "CSR budget fully spent by 31st March 2026",
+   "Foreign Investments: 1,13,588 Equity Shares (0.30% of total) as on 31st March 2026",
+   "Share Capital: Rs 753.93 lakhs (3,76,96,475 Equity Shares of Rs 2 each)",
+   "Transfer to General Reserve: Rs 900 lakhs; Retained earnings: Rs 239.10 lakhs (net of OCI)",
+   "Acquisition of Dhoedaam Tea Estate increased the Company's crop base by approximately 34% without any addition to human resources at Head Office",
+   "Statutory Auditors reported embezzlement of funds at Romai Tea Estate by an employee aggregating to Rs 25.72 lakhs",
+   "Company has constituted a Risk Management Committee in accordance with Regulation 21 read with Regulation 3 of SEBI Listing Regulations",
+   "Company is a Member of the Tea Research Association, Kolkata; contribution of Rs 19.09 lakhs made during the year",
+   "Total foreign exchange used was Rs 1.60 lakhs; total foreign exchange earned by way of exports was Rs 5,536.96 lakhs",
+   "No dividend remaining unclaimed for seven years; no transfer to IEPF",
+   "Company has not accepted any deposits from the public",
+   "No application or proceeding pending under Insolvency and Bankruptcy Code, 2016",
+   "No one-time settlement against loans from Banks or Financial Institutions",
+   "Audit Committee meetings held on 28th May 2025, 5th August 2025, 11th November 2025, 10th February 2026.",
+   "Nomination and Remuneration Committee meeting held on 28th May 2025.",
+   "Stakeholders Relationship Committee meetings held on 28th May 2025, 7th August 2025, 11th November 2025, 10th February 2026.",
+   "CSR Committee meetings held on 28th May 2025 and 23rd March 2026.",
+   "Risk Management Committee meetings held on 14th October 2025 and 23rd March 2026.",
+   "32nd AGM scheduled for 25th August 2026 at 11:00 A.M. through VC/OAVM.",
+   "Book closure from 19th August 2026 to 25th August 2026.",
+   "Dividend payment within 30 days from date of 32nd AGM.",
+   "Listed on NSE (Symbol: ROSSELLIND) and BSE (Scrip Code: 533168).",
+   "Registrar: MUFG Intime India Private Limited, Kolkata.",
+   "99.28% equity shares held in dematerialized form as on 31st March 2026.",
+   "No unclaimed dividend for seven years as of current financial year.",
+   "Sitting fees revised upward at Board meeting on 28th May 2025: Board Rs 75,000, Audit Committee Rs 50,000, Other Committees Rs 25,000 per meeting per director.",
+   "No stock option plans.",
+   "No presentation made to institutional investors or analysts during the year.",
+   "Company email: corporate@rosselltea.com",
+   "Website: https://www.rossellindia.com/investor-information/",
+   "No dividend remained unclaimed for seven years during the year; no transfer of shares to IEPF demat account arose.",
+   "Unclaimed Suspense Account: 9 shareholders / 2,250 shares at beginning of FY 2025-26; 1 shareholder / 300 shares transferred during year; 0 shares transferred to IEPF; 8 shareholders / 1,950 shares at end of FY 2025-26. Voting rights on these shares remain frozen.",
+   "No penalties/strictures imposed by Stock Exchanges, SEBI or any statutory authority for non-compliance of capital market laws during last three years.",
+   "Whistle Blower Policy / Vigil Mechanism established; no personnel denied access to Audit Committee."
+  ],
+  "risks": [
+   "Wide fluctuation in profitability year on year due to seasonal nature of tea business",
+   "Adverse weather conditions (low rainfall, pest activity)",
+   "Escalating costs (wages, fuel)",
+   "Compliance with new MRL regime for exports to UK/Europe",
+   "Volatility from geopolitical conflicts (Middle East, Ukraine-Russia)",
+   "Uncertainty in business sentiments affecting productivity and profitability",
+   "market conditions",
+   "environmental factors",
+   "impact of the Code of Wages",
+   "other business-related matters",
+   "Black Tea is subject to price risk as price is determined by prevailing market conditions; cost plus pricing model has no role in determining such prices.",
+   "Geopolitical and Economic Risks: Ongoing wars (Russia\u2013Ukraine, West Asia), recent India\u2013Pakistan tensions, and global inflation have led to weaker demand, volatile pricing, and increased shipping costs.",
+   "Climatic Risks: El Ni\u00f1o-induced weather extremes continue to impact crop yields despite mitigation efforts such as afforestation, irrigation, and flood control systems.",
+   "Regulatory Risks: The EU's stricter Maximum Residue Limits (MRLs) for neonicotinoids and inconsistent chemical usage among small growers pose threats to export viability and domestic production.",
+   "Market and Trade Risks: Rising imports from Kenya and Nepal, sluggish global trade, and a price imbalance between Indian and African CTC teas continue to affect export competitiveness.",
+   "Water Management: Scarcity or waste risks disrupting operations.",
+   "Climate Change: Variations in weather patterns such as excessive rainfall or extreme heat pose significant risks to crop yield and quality.",
+   "Occupational Health & Safety: Tea cultivation and processing expose workers to various risks, including manual labour, machinery, and agrochemical use.",
+   "Product Quality & Traceability: Quality and trust define the brand; growing global demand for traceable and ethically produced tea.",
+   "Dependence on fossil fuels",
+   "Environmental impact from chemical use",
+   "Workplace safety hazards",
+   "Regulatory compliance requirements",
+   "Pending sale permission for tea estates from Government of Assam authorities",
+   "Cyber security policy not yet formally established",
+   "No independent external assurance on waste management data",
+   "Embezzlement of funds at Romai Tea Estate by a staff member amounting to Rs. 25.72 Lakhs, charged off as expenses pending criminal and civil proceedings.",
+   "Embezzlement of funds at Romai Tea Estate (Rs 25.72 lakh) pending criminal and civil proceedings",
+   "Interest rate risk: The defined benefit obligation calculated uses a discount rate based on government bonds. If bond yields fall, the defined benefit obligation will tend to increase.",
+   "Salary inflation risk: Higher than expected increases in salary will increase the defined benefit obligation",
+   "Demographic risk: This is the risk of variability of results due to unsystematic nature of decrements that include mortality, withdrawal, disability and retirement.",
+   "Market risk: Adverse weather conditions and uncertain tea market expose it to the risk that the fair value or future cash flows may adversely fluctuate.",
+   "Foreign Currency Risk: The Company undertakes significant transactions denominated in foreign currency with its customers in relation to Exports of Tea. This results in wide exposure to exchange rate fluctuations.",
+   "Interest Rate Risk: The Company is exposed to interest rate volatilities primarily with respect to its borrowings from banks.",
+   "Liquidity Risk: Liquidity risk is the risk that the Company may encounter difficulty, including seasonality, in meeting its obligations due to shortage of liquid assets.",
+   "Credit Risk: Credit risk is the risk that counter party will not meet its obligations leading to a financial loss to the Company."
+  ],
+  "outlook": [
+   {
+    "statement": "Orthodox market expected to remain firm with good demand from CIS and Middle East; CTC market may be similar to last year but marginally better for compliant quality tea; global tea production slightly lower; biggest challenge is protecting crop and containing escalating costs (wages, fuel) and compliance with new MRL regime for UK/Europe exports.",
+    "period": "2026 season"
+   },
+   {
+    "statement": "The year 2026 has started with mixed growing conditions, inadequate and delayed rainfall in Upper Assam and North Bank resulting in poor cropping during January to March 2026. Production in North India stands at 55 million kgs as compared to 63 million kgs last year. April production is likely to be at par with the previous year or maybe slightly better. Extreme and varying climatic conditions are impacting crop and production and leading to increased pest activity.",
+    "period": "2026"
+   },
+   {
+    "statement": "In India the Orthodox market has been quite buoyant since the start and we expect the same to remain firm during the course of the year with good demand from the CIS and Middle east. Also, as the production is lower in India and Sri Lanka will give a fillip to the prices.",
+    "period": "2026"
+   },
+   {
+    "statement": "The CTC market which opened higher due to the shortfall of crop till March has started dropping with more arrivals coming in from April. Inflationary pressures seem to be affecting the demand. Good quality and compliant CTC would continue to sell at remunerative prices and anything below good will decline in prices as arrivals increase.",
+    "period": "2026"
+   },
+   {
+    "statement": "We at Rossell Tea continue to be in touch with all our customers in UK, Germany and the Middle East. We have also established some new contacts with buyers in USA and Canada. We are very hopeful that with progress of the season, we would be able to procure more export orders from Germany, UAE, UK, and Saudi Arabia and also maybe from USA and Canada.",
+    "period": "2026"
+   },
+   {
+    "statement": "On the Global front, production in Sri Lanka for January to March 2026 period is lower by 2.00 million kgs from last year. Auction prices are marginally lower than the previous year but is still about Rs 10-20 more than the prevailing orthodox prices in India. Hence, this provides an opportunity for us to fill the gap. Africa which has been improving quality is lower this year by 12.00 million kgs till end February. It appears that Africa is shifting towards making more Orthodox teas too.",
+    "period": "2026"
+   },
+   {
+    "statement": "Looking ahead, we see the production in India being marginally higher though Global tea production may be slightly lower. CTC prices may be somewhat similar to last year but marginally better for us owing to our compliance and quality. The orthodox prices will be better than the previous year. The biggest challenge will be to protect the crop and rein in the escalating costs particularly wages and fuel. Another challenge for our exports to UK/Europe will be to remain compliant with new MRL regime of 2026.",
+    "period": "2026"
+   },
+   {
+    "statement": "Continued effort of moving towards green/clean energy, reducing dependence on fossil fuels",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "Phased replacement of halogen bulbs with energy efficient LED lights across all operational units",
+    "period": "Currently underway"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Orthodox manufacturing facility at Dhoedaam estate",
+    "amount_cr": null,
+    "timeline": "Set up during the year"
+   },
+   {
+    "item": "Solar plant at Dikom Tea Estate (367 kWp)",
+    "amount_cr": 0,
+    "timeline": "expected to be commissioned shortly"
+   },
+   {
+    "item": "Solar plant at Dhoedaam Tea Estate (400 kWp)",
+    "amount_cr": 0,
+    "timeline": "currently being installed"
+   },
+   {
+    "item": "New colour sorter for Dhoedaam Tea Estate",
+    "amount_cr": 0,
+    "timeline": "ordered"
+   },
+   {
+    "item": "Energy conservation equipment (Solar plants, Colour sorters and other equipment)",
+    "amount_cr": 5.53,
+    "timeline": "FY 2025-2026"
+   },
+   {
+    "item": "Solar power plant at Dikom TE and Dhoedaam TE (work in progress)",
+    "amount_cr": 2.587,
+    "timeline": "FY 2025-2026"
+   },
+   {
+    "item": "Solar power plant at Nagrijuli TE and Romai TE",
+    "amount_cr": 2.556,
+    "timeline": "FY 2024-2025"
+   },
+   {
+    "item": "240 KWp solar plant at Kharikatia Tea Estate (OPEX model with Tata Power Solar)",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Solar installations at Nagrijuli (CAPEX model), Romai and Dikom (underway)",
+    "amount_cr": null,
+    "timeline": "Underway"
+   },
+   {
+    "item": "Replacement of gas burners with advanced burners at Dikom Tea Estate",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Replacement of underground gas pipelines with above-ground pipelines at Dikom and Nokhroy estates",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Recalibration of gas burners at Nokhroy and Romai estates",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Installation of transparent (perpex) sheets for natural daylight",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Additional pruning machines for mechanization",
+    "amount_cr": null,
+    "timeline": "Completed"
+   },
+   {
+    "item": "Capital work-in-progress (projects in progress)",
+    "amount_cr": 9.8,
+    "timeline": "As at 31st March 2026"
+   },
+   {
+    "item": "Intangible assets under development",
+    "amount_cr": 0.03,
+    "timeline": "As at 31st March 2026"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "R V Enterprises Pte. Ltd.",
+    "holding_pct": null,
+    "business": "Investment in Singapore; 361,007 Ordinary shares and 34,52,359 Preference shares held; Book Value Rs 923.99 Lakhs after impairment"
+   },
+   {
+    "name": "Rossell Techsys Limited",
+    "holding_pct": null,
+    "business": "Subsidiary where directors hold directorship"
+   },
+   {
+    "name": "The Company has no Holding, Subsidiary, Associate Company or Joint Ventures as on the date of this Report",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "R V Enterprizes Pte. Ltd.",
+    "holding_pct": null,
+    "business": "Investment in ordinary and preference shares (FVTOCI, net of impairment)"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Mr. Harsh Mohan Gupta",
+    "nature": "Promoter Shareholder (30% holding); Remuneration paid; Dividend entitlement",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Samara Gupta",
+    "nature": "Promoter Shareholder (9.53% holding); Remuneration paid; Dividend entitlement",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Digant Mahesh Parikh",
+    "nature": "Holds 10 Equity Shares; Remuneration paid",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Purchases",
+    "amount_cr": 0
+   },
+   {
+    "party": "Related parties",
+    "nature": "Sales",
+    "amount_cr": 0
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loans & advances given",
+    "amount_cr": 0
+   },
+   {
+    "party": "Related parties",
+    "nature": "Investments in",
+    "amount_cr": 0
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions in compliance with Sections 177 and 188 of Companies Act 2013",
+    "amount_cr": null
+   },
+   {
+    "party": "Harvin Estates Pvt. Ltd.",
+    "nature": "Rent paid for office space and residential accommodation",
+    "amount_cr": 0.14
+   },
+   {
+    "party": "BMG Foundation",
+    "nature": "CSR contribution",
+    "amount_cr": 0.21
+   },
+   {
+    "party": "Mr. H.M. Gupta",
+    "nature": "Short-term employment benefits, post-employment benefits",
+    "amount_cr": 1.74
+   },
+   {
+    "party": "Mr. N.K. Khurana",
+    "nature": "Short-term employment benefits, post-employment benefits, long-term employee benefits",
+    "amount_cr": 0.98
+   },
+   {
+    "party": "Ms. Samara Gupta",
+    "nature": "Short-term employment benefits, post-employment benefits",
+    "amount_cr": 0.75
+   },
+   {
+    "party": "Mrs. Vinita Gupta",
+    "nature": "Short-term employment benefits, post-employment benefits",
+    "amount_cr": 0.61
+   },
+   {
+    "party": "Rossell India Employees' Gratuity Fund",
+    "nature": "Contribution as per actuarial valuation",
+    "amount_cr": 2.83
+   },
+   {
+    "party": "Rossell Tea Superannuation Fund",
+    "nature": "Contribution",
+    "amount_cr": 0.1
+   },
+   {
+    "party": "Non-Executive Directors (Ms. Nayantara Palchoudhuri, Mr. K Katyal, Mr. R Bhatnagar)",
+    "nature": "Sitting fees and commission",
+    "amount_cr": 0.44
+   }
+  ],
+  "litigation": [
+   "NCLT order dated 2nd August 2024 for amalgamation of BMG Enterprises Limited with Rossell India Limited (effective 13.08.2024)",
+   "NCLT order dated 10th April 2024 for amalgamation of Luxury Agro-Development Private Limited with Nyati Retreat Private Limited (effective 02.07.2024)",
+   "No significant or material order passed by any Regulators or Courts or Tribunals impacting the going concern status and Company's operations in future",
+   "Company has initiated criminal and civil proceedings against a staff member of Romai Tea Estate involved in embezzlement of funds; amount does not meet reporting threshold under Section 143(12) of the Act.",
+   "No fines, penalties, punishments, compounding fees, or settlement amounts incurred by Company, Directors, or KMPs during reporting period",
+   "No non-monetary imprisonment or punishment imposed",
+   "No disciplinary actions for bribery/corruption",
+   "No complaints regarding conflict of interest",
+   "No complaints on working conditions, health & safety, sexual harassment, discrimination, child labour, forced labour, wages, or other types",
+   "Pending litigations as at March 31, 2026 disclosed in Note 42 to financial statements",
+   "Criminal and civil proceedings initiated against a staff member for embezzlement of Rs. 25.72 Lakhs at Romai Tea Estate.",
+   "Criminal and civil proceedings initiated against a staff member for embezzlement of Rs 25.72 lakh at Romai Tea Estate"
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Agreement signed with Tata Power Solar for installation of additional solar plants at Dikom and Dhoedaam Tea Estates",
+    "value_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Bank loan facilities",
+    "amount_cr": 140.0,
+    "note": "Credit Rating: IND BBB+/Stable/IND A2+"
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": null,
+    "note": "Five tea estates mortgaged for credit facilities"
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": 37.48,
+    "note": "Non-current borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": 27.15,
+    "note": "Current borrowings as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "HDFC Bank Limited (Term Loan)",
+    "amount_cr": 47.47,
+    "note": "Secured by equitable mortgage of Namsang TE, Nokhroy TE, pending creation of equitable mortgage of Dhoedaam TE and hypothecation of movable machinery of Dhoedaam TE; interest 7.50% p.a.; repayment in 20 equal quarterly instalments from 31st March 2026"
+   },
+   {
+    "lender_or_type": "Cash Credit, Packing Credit and Demand Loans (Working Capital)",
+    "amount_cr": 17.16,
+    "note": "Secured by first pari passu charge: equitable mortgage on Dikom, Nokhroy, Romai Tea Estates and hypothecation of movable properties including stock and book debts"
+   },
+   {
+    "lender_or_type": "Current maturities of long-term borrowings",
+    "amount_cr": 10.0,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Banks",
+    "amount_cr": 64.63,
+    "note": "Borrowings as at 31st March 2026: Rs 6,462.98 Lakhs; change in interest rate by 100 basis points would lead to an impact of Rs 46.27 lakhs on term loan interest for the current year"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Claims against the Company not acknowledged as debts",
+    "amount_cr": 1.1
+   },
+   {
+    "nature": "Bank Guarantees outstanding",
+    "amount_cr": 0.06
+   }
+  ]
+ }
+}
