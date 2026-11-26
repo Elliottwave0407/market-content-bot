@@ -32,12 +32,23 @@ def claims_of(i):
     return {"total": len(L), "by_category": dict(by), "latest_guidance": [{"day": c["first_day"], "statement": c["statement"], "period": c.get("period")} for c in g], "ledger": "claims/%s.json" % i}
 qs = sorted({q for (_, q) in v.D})
 latest = max(qs)
+import verdict_v21 as v21, verdict_method_bakeoff as bake
 tiers = {}
-for q in qs:
-    if (v.D and any(k[1] == q - 4 for k in v.D)):
-        _, F = v.build(q)
-        for i, f in F.items():
-            t, pl, why = v3.rate(f); tiers[(i, q)] = (t, pl, why)
+for (i, q), c in v.D.items():
+    y, pv = v.D.get((i, q - 4)), v.D.get((i, q - 1))
+    if not (y and pv): continue
+    yp = v.D.get((i, q - 5))
+    try: r_ = v21.rate21(bake.mk(c), bake.mk(pv), bake.mk(y), bake.mk(yp) if yp else None)
+    except Exception: continue
+    if r_.get("tier"): tiers[(i, q)] = r_
+TAX = os.environ.get("TAXONOMY") or "/home/claude/fingod-company-data/taxonomy/business_groups.json"
+biz = {}
+if os.path.exists(TAX):
+    for g in json.load(open(TAX))["groups"]:
+        for sg in g["subgroups"]:
+            for m in sg["members"]:
+                peers = sg["members"] if sg["size"] >= 3 else [x for s2 in g["subgroups"] for x in s2["members"]]
+                biz[m["isin"]] = {"group": g["id"], "group_name": g["name"], "subgroup": sg["id"], "subgroup_name": sg["name"], "terms": sg["terms"], "peer_basis": "sub-group" if sg["size"] >= 3 else ("group" if len(peers) >= 3 else "no true peers"), "peers": [x for x in peers if x["isin"] != m["isin"]][:25]}
 def page(i):
     d = dict(ident[i]); rows = []
     expect = [q for q in range(latest - 5, latest + 1)]
@@ -46,15 +57,16 @@ def page(i):
         n = v.D.get((i, q))
         if not n: continue
         held.append(q)
-        t = tiers.get((i, q), (None, {}, None))
-        rows.append({"q": lab(q), "revenue": n["rev"], "ebitda": n["ebitda"], "pat": n["pat"], "margin_pct": round(n["ebitda"] / n["rev"] * 100, 1), "verdict_v3": t[0], "pillars": t[1], "capped_by": t[2] if len(t) > 2 else None})
+        t = tiers.get((i, q)) or {}
+        rows.append({"q": lab(q), "revenue": n["rev"], "ebitda": n["ebitda"], "pat": n["pat"], "margin_pct": round(n["ebitda"] / n["rev"] * 100, 1), "verdict": t.get("tier"), "verdict_version": "v2.1" if t else None, "tags": t.get("tags"), "verdict_notes": (t.get("caps") or []) + (t.get("v21_notes") or []) if t else None})
     calls = cc.get(d.get("scrip")) or cc.get("NSE:" + (d.get("sym") or "")) or []
     d["quarters"] = rows
     d["completeness"] = {"expected": [lab(q) for q in expect], "held": [lab(q) for q in expect if q in held], "missing": [{"q": lab(q), "reason": "not in results store (not filed, not fetched, or filer is half-yearly)"} for q in expect if q not in held], "concalls_found": len(calls), "concalls_read": sum(1 for c in calls if c["read"]), "latest_concall": max([c["day"] for c in calls], default=None)}
     d["annual_report"] = arf.get(i)
     d["claims"] = claims_of(i)
     d["completeness"]["annual_report_fy"] = (arf.get(i) or {}).get("fy")
-    d["note"] = "Verdict v3 is a prototype; peer-relative; not investment advice"
+    d["business_group"] = biz.get(i)
+    d["note"] = "Verdict v2.1 (tier + tags); business groups are v0 (machine-grouped from annual reports); not investment advice"
     return d
 if __name__ == "__main__":
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 20
