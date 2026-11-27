@@ -1,0 +1,590 @@
+{
+ "isin": "INE100E01012",
+ "name": "Prashant India Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6e0a40dd-a64c-4321-ac5a-1b135e377223.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 236619,
+ "chunks": 6,
+ "chunks_ok": 6,
+ "facts": {
+  "business": {
+   "description": "Prashant India Limited operates a Wind Power Division at Block No. 502P, Village Dhank, Tal. Upleta, Dist Rajkot - 360460 Gujarat and an Agro Division at Ruvapari Road, Bhavnagar-364001, Gujarat.",
+   "plants": [
+    {
+     "location": "Block No. 502P, Village Dhank, Tal. Upleta, Dist Rajkot - 360460 Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Ruvapari Road, Bhavnagar-364001, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Palsana (Textile Division)",
+     "capacity": "Non-operational since July 2023; land and building sold; remaining plant and machinery being disposed of as scrap"
+    },
+    {
+     "location": "Dhank (Wind Power Division)",
+     "capacity": "Plant and machinery disposed of; shareholders approved leasing the division; implementation in progress"
+    },
+    {
+     "location": "Agro Division",
+     "capacity": "Closed since 1998; plant and machinery sold as scrap in 2018-19; land and building in process of being sold"
+    },
+    {
+     "location": "Textile Division NA",
+     "capacity": ""
+    },
+    {
+     "location": "Wind Power Division At Vill. Dhank \u2014 360460, Tal. Upleta, Dist. Rajkot, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Agro Division Ruvapari Road, Bhavnagar \u2014 364001, Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "Palsana (Textile Division)",
+     "capacity": "Factory land & building sold; plant & machinery partly sold as scrap"
+    },
+    {
+     "location": "Vill. Dhank, Dist. Rajkot (Wind Farm Division)",
+     "capacity": "Plant & machinery sold as scrap for Rs.85 lacs"
+    },
+    {
+     "location": "Bhavnagar (Agro Division)",
+     "capacity": "Closed; land admeasuring 18113.10 sq. mtrs. (City Survey Nos. 301/A and 301/B)"
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Processing of yarn",
+     "share_of_revenue_pct": null,
+     "note": "Closed"
+    },
+    {
+     "name": "Wind power generation",
+     "share_of_revenue_pct": null,
+     "note": "Closed"
+    },
+    {
+     "name": "Oil extraction plant",
+     "share_of_revenue_pct": null,
+     "note": "Closed"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Surat",
+     "share_pct": null
+    },
+    {
+     "name": "Dhank",
+     "share_pct": null
+    }
+   ]
+  },
+  "auditor": {
+   "name": "M/s Ashish Bhoola & Co. (Chartered Accountants)",
+   "opinion": "Qualified opinion with Material Uncertainty related to Going Concern and Emphasis of Matter paragraphs",
+   "key_audit_matters": [
+    "Material uncertainty related to Going Concern (Note No. 1(b))",
+    "Employee Benefit Expenses recording system (Note No. 17)",
+    "Confirmations/Reconciliation of trade receivables, payables, loans and advances (Note No. 20(c))",
+    "Non-provision for interest to secured creditors, doubtful debtors, capital advances (Note 20(b))",
+    "Evaluation of uncertain tax positions",
+    "Allowance for doubtful debts / Provision for Expected Credit Loss",
+    "Company has incurred cash losses before exceptional items of Rs.385.89 lacs in the financial year and Rs.20.02 lacs in immediately preceding financial year",
+    "Company does not have adequate means to repay its secured loans and interest thereon",
+    "Accumulated losses have far exceeded entire capital plus reserves and Net Worth completely eroded since 1998",
+    "Current liabilities exceed current assets by substantial amount",
+    "Company has not made provisions for liabilities and doubtful assets to the extent of Rs.11542.49 lacs",
+    "Company was once declared 'Sick' and ordered to be wound up by BIFR"
+   ],
+   "qualifications_or_emphasis": [
+    "Material uncertainty related to Going Concern: net loss before exceptional items, accumulated losses exceeding capital and reserves, negative net worth since 1998, current liabilities exceeding current assets by Rs. 2753.63 lakhs, non-provision of certain liabilities and doubtful assets to the extent of Rs. 11542.49 lacs, non-operational divisions",
+    "Emphasis of Matter: Employee Benefit Expenses recording system needs advancement; company accounts on cash basis",
+    "Emphasis of Matter: Confirmations/reconciliation of trade receivables, trade and other payables, and loans and advances pending",
+    "General Notes: No provision for interest to secured creditors (Ficon & SPL, SPL, SPPL), sundry debtors doubtful of recovery, other non-current asset - capital advance",
+    "Auditor has issued qualified opinion, And Auditor's opinion is not modified in respect of such qualifications.",
+    "Material Uncertainty Related to Going Concern",
+    "Non provision of liabilities - Rs.11542.49 lakhs not provided for",
+    "Emphasis of Matter: Employee Benefit Expenses recording system needs advancement",
+    "Emphasis of Matter: Confirmations / Reconciliation of trade receivables, trade and other payables and loans and advances pending",
+    "Financial statements prepared on going concern basis despite multiple indicators of financial distress",
+    "Gratuity, leave encashment and bonus charged to profit & loss on cash basis contrary to Companies Act, 2013 and Ind AS 19",
+    "No term loans obtained during the year",
+    "No funds raised by way of public issue, preferential allotment or private placement",
+    "No fraud noticed or reported during the year",
+    "Internal audit system commensurate with size and nature of business; internal auditor reports considered by statutory auditor",
+    "Company not a Nidhi Company, not required to register under RBI Act 1934, not a Core Investment Company",
+    "CSR provisions not applicable",
+    "No resignation of statutory auditors during the year"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Harsukhbhai Mohanbhai Gondalia resigned as Non-Executive Non Independent Director w.e.f. close of business hours on May 29, 2025",
+    "Mr. Haribhai Becharbhai Malvia appointed as Non-Executive Non Independent Director w.e.f. July 1, 2025 and ceased w.e.f. close of business hours on December 30, 2025",
+    "Mr. Parth Mahendrakumar Pandya ceased as Independent Director w.e.f. close of business hours on August 14, 2026",
+    "Mr. Hiren Hasmukh Shah appointed as Independent Director w.e.f. May 31, 2025",
+    "Mrs. Nishtha Harivanshi Pamnani appointed as Independent Director w.e.f. May 31, 2025",
+    "Mr. Shyamalbhai J Mashruwala appointed as Additional Director (Non-Executive Non-Independent) w.e.f. August 29, 2026",
+    "Mr. Sarojnath Awadhesh Mishra ceased as Chief Financial Officer w.e.f. June 20, 2025",
+    "Mr. Vinod Pandurang Jadhav appointed as Chief Financial Officer w.e.f. June 24, 2025 and ceased w.e.f. May 18, 2026",
+    "Mr. Parth Pareshkumar Jariwala appointed as Chief Financial Officer w.e.f. August 14, 2026",
+    "Mr. Hiren Hasmukh Shah (DIN: 11104153) and Mrs. Nishtha Harivanshi Pamnani (DIN: 10881910) appointed as Independent Directors for five years w.e.f. May 31, 2025",
+    "Mr. Haribhai Becharbhai Malvia (DIN: 00042683) appointed as Non-Executive, Non-Independent Director w.e.f. July 1, 2025; resigned w.e.f. close of business hours on December 30, 2025",
+    "Mr. Harsukhbhai Mohanbhai Gondalia (DIN: 00014805) resigned as Non-Executive, Non-Independent Director w.e.f. close of business hours on May 29, 2025",
+    "Mr. Parth Mahendrakumar Pandya (DIN: 08825905), Independent Director, resigned w.e.f. close of business hours on August 14, 2026",
+    "Mr. Sarojnath Awadhesh Mishra resigned as CFO w.e.f. June 20, 2025",
+    "Mr. Vinod Pandurang Jadhav appointed as CFO w.e.f. June 24, 2025; resigned w.e.f. May 18, 2026",
+    "Mr. Shyamalbhai J Mashruwala (DIN: 11898766) appointed as Additional Director w.e.f. August 29, 2026, to hold office up to ensuing AGM",
+    "Mr. Prabhudas Mohanbhai Gondalia (DIN: 00014809) retires by rotation at ensuing AGM and offers himself for re-appointment",
+    "Harsukhbhai Mohanbhai Gondalia resigned w.e.f. close of business hours on 29.05.2025",
+    "Haribhai Becharbhai Malavia appointed w.e.f. 01.07.2025 and resigned w.e.f. close of business hours on 30.12.2025",
+    "Nishtha Harivanshi Pamnani appointed w.e.f. 31.05.2025",
+    "Hiren Hasmukh Shah appointed w.e.f. 31.05.2025",
+    "Parth Mahendrakumar Pandya appointed w.e.f. 27.08.2024 and ceased w.e.f. 14.08.2026",
+    "Vinod Pandurang Jadhav ceased to be CFO effective from 18.05.2026"
+   ],
+   "auditor_change": "Previous auditor SONI JHAWAR & CO. ceased office at AGM dated 28.06.2025; M/s. Ashish Bhoola & Co. appointed as Statutory Auditors at AGM held on 28.06.2025 for a term of 5 consecutive years till conclusion of 47th AGM in 2030.",
+   "promoter_holding_pct": 30.55,
+   "top_shareholders": [
+    {
+     "name": "Bridge International Pvt. Ltd.",
+     "pct": 11.13
+    },
+    {
+     "name": "Shantilon Pvt. Ltd.",
+     "pct": 9.39
+    },
+    {
+     "name": "Mayur P. Gondalia",
+     "pct": 6.55
+    },
+    {
+     "name": "P.M. Gondalia",
+     "pct": 4.0
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Prabhudas Mohanbhai Gondalia",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Ms. Swati Joshi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Parth Pareshkumar Jariwala",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Shyamalbhai J Mashruwala",
+     "role": "Additional Director (Non-Executive Non-Independent), appointed w.e.f. August 29, 2026"
+    },
+    {
+     "name": "Mr. Hiren Hasmukh Shah",
+     "role": "Independent Director (appointed May 31, 2025)"
+    },
+    {
+     "name": "Mrs. Nishtha Harivanshi Pamnani",
+     "role": "Independent Director (appointed May 31, 2025)"
+    },
+    {
+     "name": "Mr. Vinod Pandurang Jadhav",
+     "role": "Chief Financial Officer (appointed June 24, 2025; resigned May 18, 2026)"
+    },
+    {
+     "name": "Prabhudas Mohanbhai Gondalia",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Shobhaben Bharatbhai Ramani",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Parth Mahendrakumar Pandya",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Nishtha Harivanshi Pamnani",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Hiren Hasmukh Shah",
+     "role": "Independent Director"
+    },
+    {
+     "name": "P. M. Gondalia",
+     "role": "Managing Director (DIN - 00014809)"
+    },
+    {
+     "name": "Shobhaben B. Ramani",
+     "role": "Director (DIN - 08110725)"
+    },
+    {
+     "name": "Swati Joshi",
+     "role": "Company Secretary (M.No.: A65736)"
+    },
+    {
+     "name": "Prabhudas M. Gondalia",
+     "role": "Key Management Personnel"
+    },
+    {
+     "name": "Shobhaben B. Ramani",
+     "role": "Director"
+    },
+    {
+     "name": "CS Swati Joshi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sarojnath A. Mishra",
+     "role": "Ex CFO"
+    },
+    {
+     "name": "Vinod Jadhav",
+     "role": "Ex CFO"
+    },
+    {
+     "name": "Hardasbhai V. Gondalia",
+     "role": "Manager"
+    }
+   ],
+   "employees": 5
+  },
+  "other_notable": [
+   "43rd Annual General Meeting scheduled for Saturday, September 26, 2026 at 12:30 P.M. through Video Conference (VC) or Other Audio Visual Means (OAVM)",
+   "Registered Office: 4th Floor Office-407, Union Trade Centre, Udhana Darwaja, Nodh- 2107-2111, B/S Apple Hospital, Surat- 395002, Gujarat, India",
+   "Registrars and Transfer Agent: MCS Share Transfer Agent Ltd., 101, Shatdal Complex, Opp: Bata Show Room, Ashram Road, Ahmedabad - 380009",
+   "Bankers: State Bank of India, The Kalupur Commercial Co-Op. Bank Ltd.",
+   "Secretarial Auditor: Bhagat Associates (Practicing Company Secretary)",
+   "Scrutinizer for e-voting: Mr. JITENDRA RAMANLAL BHAGAT, Practicing Company Secretary",
+   "E-voting agency: National Securities Depository Limited (NSDL)",
+   "CIN: L68100GJ1983PLC006574",
+   "Scrip Code: 519014 (BSE Limited)",
+   "Registered office shifted from Palsana to Surat City within Gujarat, approved by shareholders via Postal Ballot (results declared October 14, 2025)",
+   "Alteration of Clause III(A) of Memorandum of Association to insert new Main Object Clause for leasing/renting properties, approved by shareholders via Postal Ballot",
+   "Company exempt from Corporate Governance provisions (Regulations 17-27, etc.) and Risk Management Committee as not in Top 1000 listed entities by market cap",
+   "CSR provisions not applicable (turnover < Rs. 1000 Cr, net profit before tax excluding exceptional income < Rs. 5 Cr, net worth < Rs. 500 Cr)",
+   "No deposits accepted under Section 73; inter-corporate loans/deposits exempt",
+   "Internal financial controls adequate; no material weaknesses observed",
+   "Cost records maintenance not applicable (threshold limits not satisfied)",
+   "Sexual Harassment Policy adopted; Internal Complaints Committee not required (employees < 10); no complaints received in CY or PY",
+   "Maternity Benefit Act, 1961 complied with; 5 total employees (4 male, 1 female); no female employee eligible for maternity leave",
+   "No application filed under IBC, 2016; no proceedings pending",
+   "No one-time settlement with Banks/FIs",
+   "No employee remuneration exceeding Rule 5(2) limits; no employees posted outside India drawing > Rs. 60 lacs p.a.",
+   "No voluntary revision of financial statements or board report for three preceding years",
+   "Accounting software has audit trail feature operating throughout the year; no tampering",
+   "No outstanding dues to MSME for more than 45 days as on year-end",
+   "Directors not disqualified under Section 164(2)(b) and 167",
+   "Vigil mechanism framed; accessible on website; employees can report to Chairman of Audit Committee",
+   "No change in share capital during FY 2025-26; paid-up equity share capital Rs. 4,23,54,430 (42,35,443 shares of Rs. 10 each)",
+   "No equity shares with differential rights, sweat equity shares, ESOPs, buy-back, or redemption of preference shares/debentures",
+   "Company has no subsidiary, associate or joint venture companies; consolidated financial statements not applicable.",
+   "No unpaid or unclaimed dividend as on 31/03/2026; no transfer to IEPF required.",
+   "Equity shares listed on BSE Limited; listing fees paid for FY 2026-27.",
+   "Secretarial Auditor: JITENDRA RAMANLAL BHAGAT, Company Secretary in Practice.",
+   "Internal Auditor: JAGDISH V RANA TAX CONSULTANT.",
+   "Company has complied with Secretarial Standards 1 and 2.",
+   "No shares lying in Demat Suspense Account or Unclaimed Suspense Account as of March 31, 2026.",
+   "BRSR not applicable.",
+   "All Inventories and Fixed Assets adequately insured.",
+   "Cordial industrial relations maintained.",
+   "Audit Trail software operative throughout the year with no tampering noticed.",
+   "Financial statements for FY ended 31.03.2026 approved at Board meeting held on 30.05.2026 were not signed by CFO (Vinod Pandurang Jadhav ceased as CFO effective 18.05.2026).",
+   "Corporate Governance provisions not applicable as paid up equity share capital (Rs.4.2354 crore) does not exceed Rs.10 crore and net worth (negative Rs.142.27 crore) does not exceed Rs.25 crore as on 31.03.2026",
+   "Paid up Equity Capital: Rs.423.54 lakhs (constant for FY 2023-24, 2024-25, 2025-26)",
+   "Net Worth: Negative Rs.14,589.63 lakhs (FY 2023-24), Negative Rs.14,544.52 lakhs (FY 2024-25), Negative Rs.14,227.13 lakhs (FY 2025-26)",
+   "Net loss of Rs.385.89 lakhs before exceptional items for year ending 31 March 2026",
+   "No dividend declared or paid during the year",
+   "No managerial remuneration paid other than sitting fees for attending Board/Committee meetings",
+   "Title deeds of immovable property at Bhavnagar (1515.98 sq. mtrs) not held in company's name",
+   "Company has not revalued PPE during the year",
+   "No benami property proceedings initiated or pending",
+   "No inventory held during the year",
+   "No working capital limits sanctioned in excess of Rs.5 crore",
+   "No investments, guarantees, security, loans or advances made during the year",
+   "Complied with Sections 185 and 186 of Companies Act",
+   "No deposits accepted from public",
+   "Turnover below threshold for cost records maintenance",
+   "Regular in depositing undisputed statutory dues with no outstanding dues >6 months as at 31-03-2026",
+   "No undisclosed income surrendered in tax assessments",
+   "Accounting software has audit trail (edit log) facility operating throughout the year without tampering",
+   "Financial statements presented in Rs.'000 (rounded to nearest thousands)",
+   "Revenue from operations: Rs.86.363 thousand (2025-26) vs Rs.1,144.880 thousand (2024-25)"
+  ],
+  "outlook": [
+   {
+    "statement": "The management's plan is to get rid of all debts and make the company debt free by disposing of the existing assets of the company, negotiating with the secured creditor for waiver of the debt against settlement of dues.",
+    "period": "Ongoing"
+   },
+   {
+    "statement": "The Management is striving hard to wipe out the past debt from the books of the company so that Company can raise long term fund form prospective Investor.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Management's plan is to get rid of all the debts and making the Company debt free by disposing of the existing assets of the Company, negotiating with secured creditors for waiver of debt against settlement of dues and thereafter to launch a new project finding out new investors.",
+    "period": "future"
+   },
+   {
+    "statement": "The management is of the opinion that if the Company is to be revived then it is imperative to make the Company clean and debt free. Once the Company becomes debt free then it opens the door of raising long term funds from prospective investors. At present, the Company is overburdened in the piles of debt and no one is coming forward to start business with the Company and the future of the Company remains blink. As such, the management is striving hard to wipe out the past debt from the books of the Company.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The Company proposes to offer its Land at Vill. Dhank on a long term lease rental basis for setting up Solar or Wind Power or any other Project. For the purpose, proposals are being invited through advertisement published in local newspapers.",
+    "period": "future"
+   }
+  ],
+  "risks": [
+   "Material uncertainty related to Going Concern: net loss before exceptional items, accumulated losses exceeding capital and reserves, negative net worth since 1998, current liabilities exceeding current assets by Rs. 2753.63 lakhs, non-provision of certain liabilities and doubtful assets to the extent of Rs. 11542.49 lacs, non-operational divisions",
+   "Employee benefit expense recording system needs advancement; company accounts for such liabilities on cash basis only",
+   "Confirmations/reconciliation of trade receivables, trade and other payables, and loans and advances pending",
+   "No provision for interest to secured creditors (Ficon & SPL, SPL, SPPL), sundry debtors doubtful of recovery, other non-current assets - capital advance",
+   "Ongoing litigation: Appeal filed by Procon Financial & Investment Private Limited before NCLAT challenging NCLT order",
+   "The discontinuation of both divisions has affected the Company's revenue and cash flows.",
+   "Material uncertainty related to going concern due to accumulated losses exceeding capital and reserves, negative net worth since 1998, current liabilities exceeding current assets by Rs.2753.63 lakhs, non-provision of liabilities and doubtful assets of Rs.11542.49 lakhs, and closure of all operational divisions",
+   "Non-provision of liabilities and assets to the extent of Rs.11542.49 lakhs",
+   "Uncertain tax positions across multiple jurisdictions and divisions",
+   "Allowance for doubtful debts / Provision for Expected Credit Loss",
+   "Employee benefit expense recording system needs advancement to ensure terminality, transaction trail and documentary evidences",
+   "Confirmations / Reconciliation of trade receivables, trade and other payables and loans and advances pending",
+   "Accumulated losses have far exceeded entire capital plus reserves and Net Worth completely eroded since year ended 31st March 1998",
+   "Current liabilities have exceeded current assets by substantial amount indicating financial distress and almost inability to meet financial obligations",
+   "Company has not made provisions on account of liabilities and doubtful assets to the extent of Rs.11542.49 lacs as on 31st March 2026",
+   "Secured creditors demanding recovery of dues; Net Realisable Value of assets offered as security is far lesser than liabilities accrued",
+   "Company was once declared 'Sick' and ordered to be wound up by BIFR; Hon'ble Gujarat High Court reversed BIFR's order and remanded matter back to BIFR; BIFR since dissolved and no such case pending before NCLT or similar authority",
+   "Company unable to settle dues unless substantial haircut accepted by secured creditors",
+   "Continuous defaults in repayment of loans and interest since Dec. 1998",
+   "All loans have become overdue for repayment since long",
+   "Company declared as Sick Industrial Company by BIFR in 2005; winding up order upheld by AAIFR in 2010; BIFR restored reference later; BIFR now dissolved; no winding up case pending at any forum",
+   "Notice from Collector and District Magistrate, Bhavnagar alleging non-compliance with conditions of allotment of land at Bhavnagar (Agro Division); management believes allegations not tenable",
+   "Appeal by a shareholder before NCLAT against dismissal of petition by NCLT Ahmedabad Bench; currently pending adjudication and sub judice",
+   "Balances of non-current financial assets, other non-current assets, trade receivables and trade payables subject to confirmation",
+   "Company has not made provision for interest to secured creditors (Ficon, SPL, SPPL) amounting to Rs.11,54,249.365 thousand; management plans to persuade strategic investors to waive interest",
+   "Sundry debtors doubtful of recovery Rs.733.030 thousand (suit filed)",
+   "Other non-current asset - Capital advance Rs.150.000 thousand (deposit to RIL, Hazira to be confirmed)",
+   "Total equity is negative; debt-equity ratio negative; return on equity negative"
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "As on March 31, 2026, the Company has no subsidiary, joint venture or associates."
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The company does not have subsidiaries, associates and joint ventures."
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Not specified in detail",
+    "nature": "All transactions with related parties entered during the year were reviewed and approved by the Audit Committee. Details provided in accompanying financial statements and Form AOC-2 annexed as Annexure-II.",
+    "amount_cr": null
+   },
+   {
+    "party": "Milan Textiles",
+    "nature": "Partnership firm in which relatives of director of the Company are partners. Providing property on Lease/rent at Palsana",
+    "amount_cr": 0.02135
+   },
+   {
+    "party": "Shantilon Poly Private Limited",
+    "nature": "Company in which relatives of director of the Company are Directors. Receipt for sale of land & building",
+    "amount_cr": 9.0
+   },
+   {
+    "party": "",
+    "nature": "All transactions with the related parties are in compliance with section 177 and 188 of the Companies Act, 2013 where applicable and the details have been disclosed in the Standalone Financial Statements, etc. as required by the accounting standards and Companies Act, 2013.",
+    "amount_cr": null
+   },
+   {
+    "party": "Ficon Shreeram Capital Market Ltd.",
+    "nature": "Loan transactions",
+    "amount_cr": 1144.1371
+   },
+   {
+    "party": "Shantilon Poly Pvt. Ltd.",
+    "nature": "Loan transactions",
+    "amount_cr": 347.4559
+   },
+   {
+    "party": "Milan Textiles",
+    "nature": "Lease rental income",
+    "amount_cr": 2.135
+   },
+   {
+    "party": "Sarojnath A.Mishra",
+    "nature": "Salary and bonus",
+    "amount_cr": 0.7513
+   },
+   {
+    "party": "Vinod Jadhav",
+    "nature": "Salary and bonus",
+    "amount_cr": 2.5082
+   },
+   {
+    "party": "CS Swati Joshi",
+    "nature": "Salary and bonus",
+    "amount_cr": 5.3957
+   },
+   {
+    "party": "Hardasbhai V.Gondalia",
+    "nature": "Salary and bonus",
+    "amount_cr": 1.5
+   },
+   {
+    "party": "Shantilon Poly Private Limited",
+    "nature": "Interest expenses",
+    "amount_cr": 346.434
+   },
+   {
+    "party": "Shantilon Poly Private Limited",
+    "nature": "Receipt for sale of land & building at Palsana",
+    "amount_cr": 900
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Interest to secured creditors - Ficon & SPL (calculated simple interest @ 13% p.a. since 31.12.1998) - Rs. 972,194.361 thousand",
+    "amount_cr": 9721.94
+   },
+   {
+    "nature": "Interest to secured creditor - SPL (calculated simple interest @ 12% p.a. since date of borrowings) - Rs. 30,333.920 thousand",
+    "amount_cr": 303.34
+   },
+   {
+    "nature": "Interest to secured creditor - SPPL (calculated simple interest @ 13% p.a. since date of borrowings) - Rs. 150,838.054 thousand",
+    "amount_cr": 1508.38
+   },
+   {
+    "nature": "Sundry debtors doubtful of recovery - Rs. 733.030 thousand",
+    "amount_cr": 7.33
+   },
+   {
+    "nature": "Other non current asset - Capital advance - Rs. 150 thousand",
+    "amount_cr": 0.015
+   },
+   {
+    "nature": "Liabilities and doubtful assets not provided for",
+    "amount_cr": 115.4249
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Other money for which the Company is contingently liable",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Appeal by shareholder before NCLAT (sub judice)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Interest to secured creditors not provided for (Ficon & SPL @13% since 31.12.1998)",
+    "amount_cr": 9721.94361
+   },
+   {
+    "nature": "Interest to secured creditor SPL @12% since date of borrowings",
+    "amount_cr": 300.38392
+   },
+   {
+    "nature": "Interest to secured creditor SPPL @13% since date of borrowings",
+    "amount_cr": 1508.88054
+   },
+   {
+    "nature": "Sundry debtors doubtful of recovery (suit filed)",
+    "amount_cr": 7.3303
+   },
+   {
+    "nature": "Other non-current asset - Capital advance (deposit to RIL, Hazira to be confirmed)",
+    "amount_cr": 1.5
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Secured creditors - Ficon & SPL",
+    "amount_cr": null,
+    "note": "Interest calculated simple interest @ 13% p.a. since 31.12.1998; no provision made"
+   },
+   {
+    "lender_or_type": "Secured creditor - SPL",
+    "amount_cr": null,
+    "note": "Interest calculated simple interest @ 12% p.a. since date of borrowings; no provision made"
+   },
+   {
+    "lender_or_type": "Secured creditor - SPPL",
+    "amount_cr": null,
+    "note": "Interest calculated simple interest @ 13% p.a. since date of borrowings; no provision made"
+   },
+   {
+    "lender_or_type": "Secured loans",
+    "amount_cr": 281.727145,
+    "note": "Defaulted in repayments since December 1998; principal and interest not provided for; details per note no. 10 to financial statements"
+   },
+   {
+    "lender_or_type": "Secured loans",
+    "amount_cr": null,
+    "note": "Auditor opinion: Company does not have adequate means to repay its secured loans and interest thereon"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 2817.27,
+    "note": "As per Balance Sheet: Borrowings under Current Liabilities - Financial liabilities"
+   },
+   {
+    "lender_or_type": "Ficon Shreeram Capital Market Ltd. (Ficon)",
+    "amount_cr": 1144.13709,
+    "note": "Secured by hypothecation of all movable current assets and first charge on land-building of Agro Division at Bhavnagar; overdue since long; default since Dec. 1998"
+   },
+   {
+    "lender_or_type": "Shantilon Pvt. Ltd. (SPL)",
+    "amount_cr": 1671.44845,
+    "note": "Multiple loans secured by first charge on movable plant-machineries of Textile Division, first charge on land at Vill. Dhank, first charge on immovable property; overdue since long; default since Dec. 1998"
+   },
+   {
+    "lender_or_type": "Shantilon Poly Pvt. Ltd. (SPPL)",
+    "amount_cr": 347.45591,
+    "note": "Secured by hypothecation of entire current assets including stocks & book debts of Textile Division; overdue since long; default since Dec. 1998"
+   },
+   {
+    "lender_or_type": "Shantilon Pvt. Ltd. (SPL) - Unsecured",
+    "amount_cr": 0.25,
+    "note": "Unsecured loan"
+   }
+  ],
+  "litigation": [
+   "Hon'ble NCLT, Ahmedabad Bench, by order dated August 25, 2025, dismissed waiver application under Section 244(1) and connected petition under Sections 241 and 242 filed by shareholder Procon Financial & Investment Private Limited. Order does not have material adverse impact.",
+   "Appeal filed by Procon Financial & Investment Private Limited before Hon'ble NCLAT, New Delhi, challenging NCLT order dated August 25, 2025. Matter pending adjudication.",
+   "Suit filed against debtors for recovery of deposits with RIL, Hazira",
+   "One of the shareholder, Procon Financial & Investment Private Limited filed petition before honorable NCLT AHMEDABAD, regarding validity of resolutions passed at AGM/ EOGM for sale of undertaking of the company. The said petition was disposed off in favor of the company. The petitioner has filed appeal against the said order of NCLT before NCLAT and matter is pending before NCLAT.",
+   "Multiple tax proceedings, legal proceedings including regulatory and other government/department proceedings, investigations by authorities and other financial obligatory positions",
+   "Uncertain tax positions in multiple jurisdictions and divisions subject to periodic challenges by local tax authorities",
+   "Trade receivables of Rs.733.030 thousand classified as 'Unsecured, considered doubtful - suits filed' and 'Disputed Trade receivables which have significant increase in credit risk'",
+   "Company was once declared 'Sick' and ordered to be wound up by BIFR; Hon'ble Gujarat High Court reversed BIFR's order and remanded matter back to BIFR; BIFR since dissolved and no such case pending before NCLT or similar authority",
+   "Secured creditors of the Company are demanding for the recovery of their due",
+   "One shareholder (holding <5%) filed petition against Company and promoters before NCLT Ahmedabad Bench; dismissed; appeal preferred before NCLAT, currently pending adjudication and sub judice",
+   "Notice from Collector and District Magistrate, Bhavnagar alleging non-compliance with conditions of allotment of land at Bhavnagar; management believes allegations not tenable and taking appropriate steps"
+  ],
+  "dividend_per_share": 0,
+  "orders_or_contracts": [
+   {
+    "statement": "Sale of factory land & building of Textile division at Palsana to Shantilon Poly Private Limited for Rs.10 crore. Sale deed executed on 15th July, 2025. Sale proceeds utilised to repay dues of secured creditors Shantilon Poly Private Limited and Shantilon Private Limited.",
+    "value_cr": 10
+   },
+   {
+    "statement": "Sale of plant and machinery of Wind Power Division at Vill. Dhank to a scrap vendor for Rs.85 lacs. Sale completed and proceeds utilised to meet running expenses.",
+    "value_cr": 0.85
+   }
+  ]
+ }
+}
