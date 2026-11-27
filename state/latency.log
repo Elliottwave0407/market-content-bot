@@ -1738,3 +1738,9 @@
 27 12:42:09 seen 530757 Midaas Fashions Limited cat=Board Meeting early=True bse_time=18:11:46 dissem=18:11:46
 27 13:08:15 seen 534422 Looks Health Services Ltd cat=Board Meeting early=True bse_time=18:37:35 dissem=18:37:35
 27 13:42:52 seen 511642 Wisec Global Ltd cat=Result early=False bse_time=19:12:08 dissem=19:12:08
+27 13:43:36 wait 511642 Wisec Global Ltd: confirming that no consolidated statement exists
+27 13:43:37 seen 511642 Wisec Global Ltd cat=Result early=False bse_time=19:12:48 dissem=19:12:48
+27 13:43:57 wait 511642 Wisec Global Ltd: confirming that no consolidated statement exists
+27 13:44:08 pdf pdf current col Wisec Global Ltd standalone ok=True/1: revenue=21.82, other_income=None, total_income=21.82, total_expenses=26.73, finance_costs=5.58, depreciation=0.1, pbt=-4.92, tax=None, pat=-4.92, eps=-0.04
+27 13:44:37 pdf rule reader Wisec Global Ltd: rule: cons: no revenue row; stan: does not reconcile [lakh] total_income=[21.0, None, 406.82] pbt=[None, None, None] tax=[0.0, 0.0, 0.0] pat=[-4.92, 10.92, -3.5] | ocr: rule: stan: does not reconcile 
+27 13:44:52 pdf pdf current col Wisec Global Ltd standalone ok=True/1: revenue=21.82, other_income=None, total_income=21.82, total_expenses=26.73, finance_costs=5.58, depreciation=0.1, pbt=-4.92, tax=None, pat=-4.92, eps=-0.04
