@@ -1,0 +1,835 @@
+{
+ "isin": "INE532U01012",
+ "name": "Southern Gas Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/3f8bd170-72c6-4c10-8563-81dd0982f1b0.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 386326,
+ "chunks": 10,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "The Southern Gas Limited is engaged in the industrial and medical gases sector, ensuring uninterrupted and reliable supply of high-quality gases to support critical industries such as healthcare, pharmaceuticals, engineering, manufacturing, fabrication, and infrastructure.",
+   "plants": [
+    {
+     "location": "Bengaluru, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Bhadravati, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Harihar, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Hubballi, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Mysuru, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Kozhikode, Kerala",
+     "capacity": ""
+    },
+    {
+     "location": "Kochi, Kerala",
+     "capacity": ""
+    },
+    {
+     "location": "Thiruvananthapuram, Kerala",
+     "capacity": ""
+    },
+    {
+     "location": "Tiruchirappalli, Tamil Nadu",
+     "capacity": ""
+    },
+    {
+     "location": "Udyogamandal, Kerala",
+     "capacity": ""
+    },
+    {
+     "location": "Karnataka Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Kerala Unit",
+     "capacity": ""
+    },
+    {
+     "location": "Southern India",
+     "capacity": ""
+    },
+    {
+     "location": "Bangalore, Bhadravati, Harihar, Hubli, Mysore, Kozhikode (Calicut), Udyogamandal (Cochin), Thiruvananthapuram (Trivandrum), Tiruchirappalli (Trichy)",
+     "capacity": ""
+    },
+    {
+     "location": "Goa (Regd. Office: Meera Classic, Phase II, Gogol, Borda, Margao - 403 602)",
+     "capacity": ""
+    },
+    {
+     "location": "Bangalore (10-F, Peenya Indl. Area, III Phase, Bangalore-560 058)",
+     "capacity": ""
+    },
+    {
+     "location": "Bhadravati (Opp. Surgithope, P.O. Kolathara, Paper Town P.O., Bhadravati-557 302)",
+     "capacity": ""
+    },
+    {
+     "location": "Calicut (P.O. Kolathara, Calicut - 673 655)",
+     "capacity": ""
+    },
+    {
+     "location": "Cochin (Udyogamandal P.O., 683 501)",
+     "capacity": ""
+    },
+    {
+     "location": "Hubli (Plot No. 274/1, Tarihal Road, Hubli - 580 030)",
+     "capacity": ""
+    },
+    {
+     "location": "Harihar (Plot No. C-2 (Special Type), Industrial Estate, Opp. Kirloskar Ltd., Post Harihar - 577 602)",
+     "capacity": ""
+    },
+    {
+     "location": "Mysore (Plot No. 293, Sy. No. 369, Hebbal Indl. Area, Mysore - 570 016)",
+     "capacity": ""
+    },
+    {
+     "location": "Trivandrum (Plot No. 42, Kinfra Small Industries Park, Thumba, Trivandrum - 695 586)",
+     "capacity": ""
+    },
+    {
+     "location": "Tiruchirappalli (S.F.No: 141/1A & 1C, Ayyampatti Main Road, Valavathankottai, Trichy - 620 015)",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "healthcare",
+    "pharmaceuticals",
+    "engineering",
+    "manufacturing",
+    "fabrication",
+    "infrastructure",
+    "industrial",
+    "Medical"
+   ],
+   "brands_or_certifications": [
+    "ISO certified"
+   ],
+   "products": [
+    {
+     "name": "Industrial and medical gases",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Oxygen",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Nitrogen",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Argon",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Dissolved Acetylene",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Carbon Dioxide",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Medical Oxygen",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Industrial Oxygen",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Hydrogen",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Other allied gases",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Liquid gases stored in cylinders",
+     "share_of_revenue_pct": null,
+     "note": "Main revenue source; includes cylinder maintenance and penalty/demurrage for delayed return of cylinders"
+    },
+    {
+     "name": "Liquid Nitrogen",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 81.04 lacs (FY2026), Rs 74.11 lacs (FY2025)"
+    },
+    {
+     "name": "Liquid Oxygen",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 212.05 lacs (FY2026), Rs 172.74 lacs (FY2025)"
+    },
+    {
+     "name": "Compressed Air",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 1.23 lacs (FY2026), Rs 1.67 lacs (FY2025)"
+    },
+    {
+     "name": "Nitrous Oxide",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 551.29 lacs (FY2026), Rs 518.28 lacs (FY2025)"
+    },
+    {
+     "name": "ACM",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 20.29 lacs (FY2026), Rs 17.74 lacs (FY2025)"
+    },
+    {
+     "name": "AHM",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 26.75 lacs (FY2026), Rs 7.69 lacs (FY2025)"
+    },
+    {
+     "name": "ANM",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 0 lacs (FY2026), Rs 0.02 lacs (FY2025)"
+    },
+    {
+     "name": "AOM",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 0.11 lacs (FY2026), Rs 0 lacs (FY2025)"
+    },
+    {
+     "name": "Helium",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 24.09 lacs (FY2026), Rs 30.62 lacs (FY2025)"
+    },
+    {
+     "name": "Freon gas",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 0 lacs (FY2026), Rs 0 lacs (FY2025)"
+    },
+    {
+     "name": "Zero air",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 2.04 lacs (FY2026), Rs 1.23 lacs (FY2025)"
+    },
+    {
+     "name": "Other Items (Manufactured)",
+     "share_of_revenue_pct": null,
+     "note": "Manufactured goods revenue: Rs 1.36 lacs (FY2026), Rs 1.54 lacs (FY2025)"
+    },
+    {
+     "name": "Calcium Carbide",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 0 lacs (FY2026), Rs 19.01 lacs (FY2025)"
+    },
+    {
+     "name": "Acetone",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 0 lacs (FY2026), Rs 0.02 lacs (FY2025)"
+    },
+    {
+     "name": "Cylinders",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 23.62 lacs (FY2026), Rs 15.76 lacs (FY2025)"
+    },
+    {
+     "name": "Lime Sludge",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 0.91 lacs (FY2026), Rs 0.71 lacs (FY2025)"
+    },
+    {
+     "name": "Other Items (Traded)",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods revenue: Rs 24.81 lacs (FY2026), Rs 19.13 lacs (FY2025)"
+    },
+    {
+     "name": "Gas Mixtures",
+     "share_of_revenue_pct": null,
+     "note": ""
+    }
+   ],
+   "customers": [
+    "hospitals",
+    "healthcare institutions",
+    "industrial sectors",
+    "steel",
+    "engineering",
+    "fabrication",
+    "chemicals",
+    "pharmaceuticals",
+    "food processing",
+    "electronics",
+    "automobiles",
+    "infrastructure",
+    "energy",
+    "various industrial customers",
+    "Industrial gas customers",
+    "Medical gas customers"
+   ],
+   "geographies": [
+    {
+     "name": "Southern India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic market only",
+     "share_pct": null
+    },
+    {
+     "name": "Goa",
+     "share_pct": null
+    },
+    {
+     "name": "Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala",
+     "share_pct": null
+    },
+    {
+     "name": "Tamil Nadu",
+     "share_pct": null
+    }
+   ],
+   "raw_materials": [
+    "Liquid Oxygen",
+    "Calcium Carbide",
+    "Ammonium Nitrate",
+    "Argon"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The Board remains optimistic about the future of the industrial and medical gases sector in India. With increasing investments in healthcare, manufacturing, infrastructure and industrial development, the Company is well positioned to capitalise on emerging opportunities. Focus will continue to be on operational excellence, customer satisfaction, financial discipline, sustainable growth and value creation for all stakeholders.",
+    "period": "FY 2026-27 onwards"
+   },
+   {
+    "statement": "The outlook for the industrial and medical gases industry continues to remain positive, supported by sustained growth in the healthcare sector, manufacturing activities, infrastructure development and industrial expansion across the country. The Company expects demand for its products to remain stable over the medium to long term and will continue to focus on operational excellence, cost optimization, customer satisfaction, quality assurance and prudent financial management.",
+    "period": "medium to long term"
+   }
+  ],
+  "risks": [
+   "pressure on profitability arising from prevailing market conditions and rising input costs",
+   "intense competition",
+   "fluctuations in raw material and energy prices",
+   "increasing transportation and logistics costs",
+   "changes in regulatory requirements",
+   "supply chain disruptions",
+   "delayed realization of receivables",
+   "changing customer requirements",
+   "pricing pressures",
+   "general macroeconomic uncertainties",
+   "Revenue recognition risk due to varied sales contract terms and customer acceptance conditions",
+   "Commodity price risk",
+   "Foreign exchange risk",
+   "Discount Rate: A fall in discount rate will increase the present value of the obligation.",
+   "Salary Increases: Higher than expected salary increases will increase the cost of benefits under the plan.",
+   "Attrition Rates: Deviations in actual attrition experience compared to the attrition assumption will change the level of benefits and therefore the cost of those benefits.",
+   "Mortality: Deviations in actual mortality experience compared to the mortality assumption will change the level of benefits and affect the cost of those benefits.",
+   "Regulatory Risk: Since the minimum benefits under the plan are set by law, there is risk that a change in law could require the employer to pay higher benefits, increasing the cost as well as the present value of obligation."
+  ],
+  "auditor": {
+   "name": "M/s. M. R. Hegde & Associates, Chartered Accountants, Margao, Goa",
+   "opinion": "The Auditors' Report for the Financial Year under review does not contain any qualification, reservation, adverse remark or disclaimer requiring explanation by the Board.",
+   "qualifications_or_emphasis": [
+    "The Secretarial Audit Report does not contain any qualification, reservation, adverse remark or disclaimer requiring any explanation by the Board under Section 204(3) of the Companies Act, 2013."
+   ],
+   "key_audit_matters": [
+    "Revenue Recognition"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Motilal Sanvlo Keny ceased as Non-Executive Director w.e.f. 06th Feb., 2026",
+    "Dr. Upendra Saulo Quenim Robolo appointed as Additional Director (Non-Executive, Non-Independent) w.e.f. 06th Feb., 2026",
+    "Mr. Shekhar Madhukar Nagwekar appointed as Chief Financial Officer w.e.f. 07th June, 2025",
+    "Mr. Roshan Varshney appointed as Company Secretary & Compliance Officer w.e.f. 13th August, 2025",
+    "Dr. Upendra Saulo Quenim Robolo (DIN: 11460238) appointed as Additional Director (Non-Executive, Non-Independent) w.e.f. 06th February 2026",
+    "Dr. Upendra Saulo Quenim Robolo (DIN: 11460238) appointed as Additional Director (Non-Executive) w.e.f. 06th February 2026",
+    "Mr. Motilal Sanvlo Keny (DIN: 06813111) ceased to be a Director w.e.f. close of business hours on 06th February 2026",
+    "Mrs. Yogita Gautam Pai Kakode (DIN: 01587954) retires by rotation at the ensuing AGM and has offered herself for re-appointment",
+    "Mrs. Yogita Gautam Pai Kakode ceased to be Non-Executive Director (upto 06.02.2026)",
+    "Mr. Motilal Sanvlo Keny ceased to be Non-Executive Director (upto 06.02.2026)",
+    "Dr. Upendra Saulo Quenim Robolo appointed as Additional Director (w.e.f. 06.02.2026)",
+    "Mr. Shashidhar Dattanand Haridas ceased as Chief Financial Officer (upto 06.06.2025)",
+    "Mr. Shekhar Madhukar Nagwekar appointed as Chief Financial Officer (w.e.f. 07.06.2025)",
+    "Ms. Nirzara Kesarwani ceased as Company Secretary & Compliance Officer (upto 31.05.2025)",
+    "Mr. Roshan Varshney appointed as Company Secretary & Compliance Officer (w.e.f. 13.08.2025)",
+    "Mr. Motilal Sanvlo Keny ceased to be a Director with effect from 06th February, 2026",
+    "Dr. Upendra Saulo Quenim Robolo appointed as Additional Director (Non-Executive Independent) with effect from 06th February, 2026",
+    "Mr. Motilal Sanvlo Keny ceased to be a Member of the Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee with effect from 06th February, 2026.",
+    "Dr. Upendra Saulo Quenim Robolo was appointed as a Member of the Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee with effect from 06th February, 2026.",
+    "Dr. Upendra Saulo Quenim appointed as Additional Director on 06/02/2026",
+    "Motilal S Keny - Non Executive Director (Till 06.02.2026)",
+    "Dr. Upendra Saulo Quenim Robolo - Non Executive Director (From 06.02.2026)",
+    "Sripad Patnekar - Independent Director (Till 24.09.2024)",
+    "Shashidhar Haridas - Chief Financial Officer (Till 06.06.2025)",
+    "Shekhar Nagwekar - Chief Financial Officer (From 07.06.2025)",
+    "Nirzara Kesarwani - Company Secretary (Till 31.05.2025)",
+    "Roshan Varshney - Company Secretary (From 13.08.2025)"
+   ],
+   "auditor_change": "M/s. Ankur Gandhi & Associates appointed as Secretarial Auditors for a term of five (5) consecutive financial years, commencing from Financial Year 2025-26 up to Financial Year 2029-30.",
+   "promoter_holding_pct": 66.8,
+   "top_shareholders": [
+    {
+     "name": "Promoter/Promoter Group",
+     "pct": 66.8
+    },
+    {
+     "name": "Insurance Companies",
+     "pct": 11.56
+    },
+    {
+     "name": "Individuals/HUF/Trust/Others",
+     "pct": 19.26
+    },
+    {
+     "name": "Banks",
+     "pct": 2.38
+    },
+    {
+     "name": "Smt. Yogita Gautam Pai Kakode",
+     "pct": 25.14
+    },
+    {
+     "name": "Shri Gautam Pai Kakode",
+     "pct": 25.22
+    },
+    {
+     "name": "Life Insurance Corpn. of India",
+     "pct": 6.67
+    },
+    {
+     "name": "M/s. Food & Beverages (India) Pvt. Ltd.",
+     "pct": 14.67
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Gautam Vithaldas Pai Kakode",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Yogita Gautam Pai Kakode",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Non-Executive Director (w.e.f. 06th Feb., 2026)"
+    },
+    {
+     "name": "Purushottam Sitaram Mantri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ninad Gurudas Kamat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Govind Vithal Kamat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shekhar Madhukar Nagwekar",
+     "role": "Chief Financial Officer (w.e.f. 07th June, 2025)"
+    },
+    {
+     "name": "Roshan Varshney",
+     "role": "Company Secretary & Compliance Officer (w.e.f. 13th August, 2025)"
+    },
+    {
+     "name": "Gautam Vithaldas Pai Kakode",
+     "role": "Managing Director (DIN: 02395512)"
+    },
+    {
+     "name": "Mrs. Yogita Gautam Pai Kakode",
+     "role": "Non-Executive, Non-Independent Director (DIN: 01587954)"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Additional Director (Non-Executive, Non-Independent) (DIN: 11460238)"
+    },
+    {
+     "name": "Mr. Shekhar Madhukar Nagwekar",
+     "role": "Chief Financial Officer (appointed w.e.f. 07th June 2025)"
+    },
+    {
+     "name": "Mr. Roshan Varshney",
+     "role": "Company Secretary and Compliance Officer (appointed w.e.f. 13th August 2025)"
+    },
+    {
+     "name": "Mr. Shashidhar Dattanand Haridas",
+     "role": "Chief Financial Officer (ceased w.e.f. close of business hours on 06th June 2025)"
+    },
+    {
+     "name": "Mrs. Nirzara Kesarwani",
+     "role": "Company Secretary and Compliance Officer (ceased w.e.f. close of business hours on 31st May 2025)"
+    },
+    {
+     "name": "Mr. Gautam Vithaldas Pai Kakode",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Sadananda Pai H.",
+     "role": "General Manager \u2013 Operations"
+    },
+    {
+     "name": "Mr. Shekhar Madhukar Nagwekar",
+     "role": "Sr. Manager \u2013 Finance (CFO)"
+    },
+    {
+     "name": "Mr. Bangari R",
+     "role": "Sr. Manager \u2013 Technical"
+    },
+    {
+     "name": "Mr. Prashila Wagle",
+     "role": "Sr. Manager \u2013 Business Development"
+    },
+    {
+     "name": "Mr. Satheesh Prabhu",
+     "role": "Plant Engineer"
+    },
+    {
+     "name": "Mr. Rejeesh P. P.",
+     "role": "Manager Sales & Marketing"
+    },
+    {
+     "name": "Mrs. Bina Kanekar",
+     "role": "Dy. Manager \u2013 Accounts"
+    },
+    {
+     "name": "Mrs. Mildred Barreto",
+     "role": "Secretary"
+    },
+    {
+     "name": "Mrs. Kavita Wagle",
+     "role": "Asst. Manager \u2013 Accounts"
+    },
+    {
+     "name": "Gautam Vithaldas Pai Kakode",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mrs. Yogita Gautam Pai Kakode",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Additional Director (Non-Executive Independent)"
+    },
+    {
+     "name": "Mr. Purushottam Sitaram Mantri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ninad Gurudas Kamat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Govind Vithal Kamat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Purushottam Sitaram Mantri",
+     "role": "Independent Director, Chairperson of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Non-Executive Director, Member of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee (appointed 06th February, 2026)"
+    },
+    {
+     "name": "Mr. Ninad Gurudas Kamat",
+     "role": "Independent Director, Member of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee"
+    },
+    {
+     "name": "Mr. Govind Vithal Kamat",
+     "role": "Independent Director, Member of Audit Committee and Nomination and Remuneration Committee"
+    },
+    {
+     "name": "Mr. Motilal Sanvlo Keny",
+     "role": "Non-Executive Director, Former Member of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee (ceased 06th February, 2026)"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Additional Director"
+    },
+    {
+     "name": "Adv. Ninad Gurudas Kamat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Purushottam Sitaram Mantri",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Govind Vithal Kamat",
+     "role": "Director"
+    },
+    {
+     "name": "Mrs. Yogita Gautam Pai Kakode",
+     "role": "Director"
+    },
+    {
+     "name": "Gautam V. Pai Kakode",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Shekhar Madhukar Nagwekar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Roshan Varshney",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Managing Director",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Yogita G Pai Kakode",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Upendra Saulo Quenim Robolo",
+     "role": "Non Executive Director"
+    },
+    {
+     "name": "Purushottam Mantri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ninad Gurudas Kamat",
+     "role": "Additional Director (Independent)"
+    },
+    {
+     "name": "Shekhar Nagwekar",
+     "role": "Chief Financial Officer"
+    }
+   ],
+   "employees": 93
+  },
+  "dividend_per_share": 60,
+  "other_notable": [
+   "Final dividend of \u20b960/- per equity share of face value \u20b9100/- each (60%) recommended for FY 2025-26",
+   "AGM scheduled for Monday, 28th September, 2026 at 10:30 A.M. at Registered Office",
+   "Register of Members and Share Transfer Books closed from Tuesday, 22nd September, 2026 to Monday, 28th September, 2026 (both days inclusive) for dividend payment",
+   "Company is ISO certified",
+   "Unclaimed dividends up to FY 2017-18 transferred to IEPF",
+   "SEBI mandated dividend payment only through electronic mode from 1st April 2024",
+   "62nd AGM for FY 2025-26",
+   "Registered Office: Meera Classic, Phase II, Gogol, Borda, Post Fatorda, Aquem, Salcete, Margao South Goa - 403602",
+   "Website: www.southerngasindia.com",
+   "Email: sglgoa@southerngasindia.com",
+   "RTA: Bigshare Services Pvt Ltd (www.bigshareonline.com)",
+   "Listed on BSE Limited",
+   "Remote e-voting period: 25th September 2026 (9:00 AM IST) to 27th September 2026 (5:00 PM IST)",
+   "Cut-off date for e-voting: 21st September 2026",
+   "Scrutinizer: M/s. Ankur Gandhi & Associates, Practicing Company Secretaries",
+   "Special window for transfer of shares lodged before 1st April 2019 open till 4th February 2027",
+   "SEBI mandated dematerialization for all service requests",
+   "Letter of Confirmation (LOC) requirement dispensed with effect from 2nd April 2026",
+   "Revenue from Operations: Rs 3,684.49 Lakhs (FY 2025-26) vs Rs 3,571.20 Lakhs (FY 2024-25)",
+   "Profit Before Tax: Rs 367.36 Lakhs (FY 2025-26) vs Rs 235.12 Lakhs (FY 2024-25)",
+   "Profit After Tax: Rs 270.41 Lakhs (FY 2025-26) vs Rs 181.15 Lakhs (FY 2024-25)",
+   "Total Comprehensive Income: Rs 283.30 Lakhs (FY 2025-26) vs Rs 175.31 Lakhs (FY 2024-25)",
+   "EPS (Basic & Diluted): Rs 1,259.15 (FY 2025-26) vs Rs 779.20 (FY 2024-25)",
+   "Transfer to General Reserve: Rs 20,00,000",
+   "Final Dividend recommended: Rs 60/- per equity share (60%) of face value Rs 100/- each, total payout Rs 13.50 Lakhs",
+   "No subsidiary, associate or joint venture companies as on 31st March 2026",
+   "No material related party transactions; all transactions in ordinary course and at arm's length",
+   "Internal Auditors: M/s. B. Rama Bhat & Associates (Karnataka Unit) and M/s. S B R V & CO (Kerala Unit) for FY 2026-27",
+   "Cost records and cost audit not applicable",
+   "No frauds reported by auditors under Section 143(12)",
+   "Annual Return available at www.southerngasindia.com",
+   "Secretarial Compliance Report obtained from M/s. Ankur Gandhi & Associates, no qualification/reservation/adverse observation",
+   "Company complied with Secretarial Standards SS-1 and SS-2",
+   "The Company has neither accepted nor renewed any deposits from the public within the meaning of Chapter V of the Companies Act, 2013 read with the Companies (Acceptance of Deposits) Rules, 2014 during the Financial Year under review.",
+   "The Company did not obtain any credit rating from any credit rating agency, as the same was not applicable to the Company's borrowings/facilities.",
+   "The Equity Shares of the Company are Listed on BSE Limited. The Company has paid annual listing fee to BSE Limited for the year 2025-26 and also for year 2026-27.",
+   "During the Financial Year under review, the Company has complied with the applicable provisions relating to transfer of unpaid/unclaimed dividend amounts to the IEPF Authority, wherever applicable.",
+   "There was no issue of equity shares with differential rights as to dividend, voting or otherwise.",
+   "There was no revision of the Financial Statements or the Board's Report under Section 131 of the Companies Act, 2013.",
+   "There were no instances relating to voting rights which are not directly exercised by the employees in respect of shares for the subscription/purchase of which loan was given by the Company.",
+   "There were no material changes affecting the Company's financial position except those disclosed elsewhere in this Annual Report.",
+   "The Company has complied with the applicable provisions of The Maternity Benefit Act, 1961 and has policies, systems and processes in place to ensure ongoing compliance.",
+   "The provisions relating to Business Responsibility and Sustainability Report under Regulation 34(2)(f) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 are not applicable to the Company.",
+   "The provisions of Section 135 of the Companies Act, 2013 relating to Corporate Social Responsibility were not applicable to the Company during the Financial Year under review.",
+   "During the Financial Year under review, the Company has not entered into any one-time settlement with any Bank or Financial Institution.",
+   "Number of complaints received under Sexual Harassment of Women at Workplace Act: Nil; Number of complaints disposed of: Nil; Number of complaints pending as on 31st March, 2026: Nil.",
+   "Foreign exchange earnings: NIL; Foreign exchange outgo: \u20b9 52,31,764.98 for the Financial Year ended 31st March, 2026.",
+   "No material expenditure was incurred on Research and Development during the Financial Year under review.",
+   "The Company did not import any technology during the Financial Year under review.",
+   "Company operates in a single reportable segment: Industrial and Medical Gases",
+   "Industrial relations remained cordial throughout the year",
+   "Revenue from Operations FY 2025-26: \u20b93,684.49 Lakhs (FY 2024-25: \u20b93,571.20 Lakhs)",
+   "Operating Profit Margin FY 2025-26: 11.11% (FY 2024-25: 8.33%)",
+   "Net Profit Margin FY 2025-26: 7.69% (FY 2024-25: 4.91%)",
+   "Return on Net Worth FY 2025-26: 11.01% (FY 2024-25: 7.44%)",
+   "Debtors Turnover FY 2025-26: 7.60 times (FY 2024-25: 7.12 times)",
+   "Inventory Turnover FY 2025-26: 25.08 times (FY 2024-25: 26.18 times)",
+   "Current Ratio FY 2025-26: 0.95 times (FY 2024-25: 1.01 times)",
+   "Interest Coverage Ratio FY 2025-26: - (FY 2024-25: 59.34 times)",
+   "Debt Equity Ratio FY 2025-26: - (FY 2024-25: -)"
+  ],
+  "capex_plans": [
+   {
+    "item": "energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "litigation": [
+   "During the Financial Year under review, no significant or material orders were passed by any Court, Tribunal, Statutory Authority or Regulator which would impact the going concern status of the Company or its future operations.",
+   "During the Financial Year under review, no application was made, nor were any proceedings pending against the Company under the Insolvency and Bankruptcy Code, 2016.",
+   "The Company has no pending litigations which entails potential outflow of funds",
+   "No proceedings have been initiated on or are pending against the Company for holding benami property under the Benami Transactions (Prohibition) Act, 1988",
+   "The Company has not been declared wilful defaulter by any bank or financial institution or government or any government authority",
+   "The company has no transactions with companies struck off under section 248 of the Companies Act, 2013 or section 560 of Companies Act, 1956"
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiary company within the meaning of the Companies Act, 2013."
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related Parties",
+    "nature": "All Related Party Transactions entered into during the Financial Year ended 31st March, 2026 were in the ordinary course of business and on an arm's length basis and were in compliance with the provisions of the Companies Act, 2013 and Regulation 23 of the SEBI LODR Regulations. There were no materially significant Related Party Transactions entered into by the Company during the Financial Year under review which had or could have had a potential conflict with the interests of the Company at large.",
+    "amount_cr": null
+   },
+   {
+    "party": "Directors & Entities in which Directors are interested",
+    "nature": "Security Deposits",
+    "amount_cr": 0.224
+   },
+   {
+    "party": "Malabar Oxygen Company(P) Ltd",
+    "nature": "Enterprises where significant influence exists",
+    "amount_cr": 0.1682
+   },
+   {
+    "party": "Bangalore Oxygen Company(P) Ltd",
+    "nature": "Enterprises where significant influence exists",
+    "amount_cr": 0.7473
+   },
+   {
+    "party": "Gautam V. Pai Kakode",
+    "nature": "Key Management Personnel - Managing Director",
+    "amount_cr": 0.6622
+   },
+   {
+    "party": "Yogita G Pai Kakode",
+    "nature": "Key Management Personnel - Director",
+    "amount_cr": 0.0012
+   },
+   {
+    "party": "Motilal S Keny",
+    "nature": "Key Management Personnel - Non Executive Director (Till 06.02.2026)",
+    "amount_cr": 0.0009
+   },
+   {
+    "party": "Dr. Upendra Saulo Quenim Robolo",
+    "nature": "Key Management Personnel - Non Executive Director (From 06.02.2026)",
+    "amount_cr": 0.0003
+   },
+   {
+    "party": "Purushottam Mantri",
+    "nature": "Key Management Personnel - Independent Director",
+    "amount_cr": 0.0012
+   },
+   {
+    "party": "Ninad Gurudas Kamat",
+    "nature": "Key Management Personnel - Additional Director (Independent)",
+    "amount_cr": 0.0012
+   },
+   {
+    "party": "Govind Vithal Kamat",
+    "nature": "Key Management Personnel - Independent Director",
+    "amount_cr": 0.0012
+   },
+   {
+    "party": "Saineel Pai Kakode",
+    "nature": "Relative of Managing Director",
+    "amount_cr": 0.048
+   },
+   {
+    "party": "Shashidhar Haridas",
+    "nature": "Key Management Personnel - Chief Financial Officer (Till 06.06.2025)",
+    "amount_cr": 0.0244
+   },
+   {
+    "party": "Shekhar Nagwekar",
+    "nature": "Key Management Personnel - Chief Financial Officer (From 07.06.2025)",
+    "amount_cr": 0.1212
+   },
+   {
+    "party": "Nirzara Kesarwani",
+    "nature": "Key Management Personnel - Company Secretary (Till 31.05.2025)",
+    "amount_cr": 0.0153
+   },
+   {
+    "party": "Roshan Varshney",
+    "nature": "Key Management Personnel - Company Secretary (From 13.08.2025)",
+    "amount_cr": 0.0505
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "No pending litigations which entails potential outflow of funds",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Guarantees issued by the bank on behalf of the Company",
+    "amount_cr": 0.5144
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Term Loans from Banks (Secured)",
+    "amount_cr": 0,
+    "note": "Long-term borrowings: Rs 0 lacs as at 31st March 2026 and 31st March 2025"
+   },
+   {
+    "lender_or_type": "Current maturities of long term borrowings",
+    "amount_cr": 0,
+    "note": "Short-term borrowings: Rs 0 lacs as at 31st March 2026 and 31st March 2025"
+   },
+   {
+    "lender_or_type": "Short Term Borrowings",
+    "amount_cr": 0,
+    "note": "Nil as at 31st March 2026 and 31st March 2025"
+   },
+   {
+    "lender_or_type": "Long Term Borrowings",
+    "amount_cr": 0,
+    "note": "Nil as at 31st March 2026 and 31st March 2025"
+   }
+  ]
+ }
+}

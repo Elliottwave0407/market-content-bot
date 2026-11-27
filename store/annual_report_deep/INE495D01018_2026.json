@@ -1,0 +1,708 @@
+{
+ "isin": "INE495D01018",
+ "name": "Coromandel Agro Products & Oils Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/90ef27c4-c959-43b3-9217-68b3b6324406.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 285527,
+ "chunks": 8,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Coromandel Agro Products and Oils Limited processes cottonseed to produce edible oils, de-oiled cakes, hulls, and linters. The company also operates a wind power project in Gujarat.",
+   "products": [
+    {
+     "name": "Edible Oils",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "De-oiled Cakes",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Hulls",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Linters",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cotton Seed",
+     "share_of_revenue_pct": null,
+     "note": "Energy consumption per unit of production reported for Cotton Seed"
+    },
+    {
+     "name": "Cotton Linters",
+     "share_of_revenue_pct": null,
+     "note": "Exported 466.100 M.T. worth Rs 169.85 lakhs in 2025-26"
+    },
+    {
+     "name": "Edible Oil",
+     "share_of_revenue_pct": null,
+     "note": "Produced from cottonseed processing"
+    },
+    {
+     "name": "Wind Power",
+     "share_of_revenue_pct": null,
+     "note": "Wind power generation project located in Gujarat"
+    },
+    {
+     "name": "de-oiled cake",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cotton seed oil",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cotton Seed Cake",
+     "share_of_revenue_pct": 33.6,
+     "note": "Revenue Rs 3,566.30 lakhs in FY2026"
+    },
+    {
+     "name": "Cotton Seed Hulls",
+     "share_of_revenue_pct": 13.3,
+     "note": "Revenue Rs 1,416.23 lakhs in FY2026"
+    },
+    {
+     "name": "Linters 1st Cut",
+     "share_of_revenue_pct": 1.9,
+     "note": "Revenue Rs 201.74 lakhs in FY2026"
+    },
+    {
+     "name": "Linters 2nd Cut",
+     "share_of_revenue_pct": 2.4,
+     "note": "Revenue Rs 251.24 lakhs in FY2026"
+    },
+    {
+     "name": "Cotton Seed Soap Stock",
+     "share_of_revenue_pct": 2.5,
+     "note": "Revenue Rs 262.31 lakhs in FY2026"
+    },
+    {
+     "name": "Cotton Seed Acid Oil",
+     "share_of_revenue_pct": 0.3,
+     "note": "Revenue Rs 35.19 lakhs in FY2026"
+    },
+    {
+     "name": "Cotton Seed Sludge Oil",
+     "share_of_revenue_pct": 0.0,
+     "note": "Revenue Rs 0.54 lakhs in FY2026"
+    },
+    {
+     "name": "Iron Scrap",
+     "share_of_revenue_pct": 0.0,
+     "note": "Revenue Rs 1.68 lakhs in FY2026"
+    },
+    {
+     "name": "Wind Turbine Generator Units",
+     "share_of_revenue_pct": 0.4,
+     "note": "Revenue Rs 38.47 lakhs in FY2026"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Andhra Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Telangana",
+     "share_pct": null
+    },
+    {
+     "name": "Gujarat",
+     "share_pct": null
+    },
+    {
+     "name": "Export market",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Export",
+     "share_pct": 1.6
+    },
+    {
+     "name": "Domestic",
+     "share_pct": 98.4
+    }
+   ],
+   "plants": [
+    {
+     "location": "Door No. 5/01, Main Road, Jandrapeta, Chirala Mandal, Bapatla District, Andhra Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Gujarat",
+     "capacity": ""
+    },
+    {
+     "location": "CAPOL Factory Premises, D.NO.5/01, Main Road, Jandrapet, Chirala Mandal, Bapatla District-523165 Andhra Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "CAPOL Factory Premises, 5/01, Main Road, Jandrapeta-523165, Chirala Mandal, Bapatla District, Andhra Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Jandrapet-523165, Chirala, Andhra Pradesh, India",
+     "capacity": ""
+    },
+    {
+     "location": "Jandrapet - 523165, Chirala, Andhra Pradesh, India",
+     "capacity": ""
+    },
+    {
+     "location": "Door No. 5/01, Main Road, Jandrapeta-523165, Chirala Mandal, Bapatla District, Andhra Pradesh",
+     "capacity": ""
+    }
+   ],
+   "raw_materials": [
+    "Cottonseed",
+    "Cotton Seed",
+    "Rice Husk",
+    "Diesel",
+    "Electricity",
+    "Cotton Seeds",
+    "Cotton Seed D.O.C.",
+    "Cotton Seed Exp. Washed Oil",
+    "Cotton Seed S.E. Crude Oil"
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Edible oil industry",
+    "Animal feed (de-oiled cakes)",
+    "Textile (linters)",
+    "Edible oil consumers",
+    "Processed food industry",
+    "Quick-service restaurants (QSRs)",
+    "Organised retail",
+    "Industrial food processing",
+    "Downstream processing industries (for by-products)",
+    "Edible oil",
+    "Animal feed",
+    "Power generation"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The outlook for the ensuing cotton season appears encouraging with weather predictions indicating prospects of a normal cotton crop. The Government of Telangana has reportedly encouraged farmers to cultivate cotton crop in larger areas, which may improve cottonseed availability and support better capacity utilization. The Company is planning to establish additional procurement centres in Telangana State and exploring the possibility of sourcing cottonseed from other States, subject to commercial viability, to continue plant operations during the off-season and improve overall operational efficiency.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "India's edible oil market is projected to grow at a CAGR of approximately 3.52% during FY2025\u2013FY2032, expanding from USD 19.86 billion in FY2024 to USD 26.19 billion by FY2032. The National Mission on Edible Oils \u2013 Oilseeds (NMEO-Oilseeds) aims to enhance domestic oilseed production from 39 million tonnes in 2022\u201323 to 69.7 million tonnes by 2030\u201331. The National Mission on Edible Oils \u2013 Oil Palm (NMEO-OP) has expanded oil palm cultivation to approximately 6.20 lakh hectares by November 2025. Together, these initiatives aim to enable India to meet nearly 72% of its edible oil requirements through domestic production by 2030\u201331.",
+    "period": "FY2025\u2013FY2032"
+   },
+   {
+    "statement": "The Company's wind power project located in Gujarat continued to encounter operational challenges arising from changing wind patterns and lower wind intensity in the region.",
+    "period": "FY2025-26"
+   },
+   {
+    "statement": "India's edible oil industry is expected to maintain a strong long-term growth trajectory, supported by favorable demographic trends, rising urbanization, increasing disposable incomes, and growing health consciousness among consumers.",
+    "period": "long-term"
+   },
+   {
+    "statement": "The increasing consumer shift toward healthier, premium, fortified, and ethically sourced edible oil variants presents significant opportunities for organized sector participants willing to invest in quality enhancement, branding, product innovation, and distribution infrastructure.",
+    "period": "long-term"
+   },
+   {
+    "statement": "The Government of India's National Mission on Edible Oils (NMEO) framework represents one of the most comprehensive and well-funded policy initiatives undertaken to reduce structural dependence on imported edible oils. The combined outlay under NMEO-Oilseeds and NMEO-Oil Palm exceeding \u20b921,000 crore aims to substantially increase domestic oilseed production and meet nearly 72% of India's edible oil demand domestically by 2030\u201331.",
+    "period": "by 2030\u201331"
+   },
+   {
+    "statement": "In the near term, however, geopolitical instability arising from the Strait of Hormuz crisis and continuing global conflicts may continue to exert upward pressure on edible oil prices, freight costs, logistics expenses, and energy inputs.",
+    "period": "near term"
+   },
+   {
+    "statement": "Increasing investment in research and development of high-yielding and climate-resilient oilseed varieties, including genome-editing-based seed technologies supported under NMEO-Oilseeds, is expected to improve agricultural productivity and long-term supply stability.",
+    "period": "long-term"
+   },
+   {
+    "statement": "The Production Linked Incentive (PLI) scheme for food processing is also expected to support value addition, strengthen branded edible oil manufacturing, and improve overall supply chain resilience within the industry.",
+    "period": "long-term"
+   }
+  ],
+  "risks": [
+   "Adverse climatic factors affecting cotton crop and availability of cottonseed",
+   "Heavy and continuous rains in major cotton growing regions impacting cotton arrivals and delaying cotton marketing activities",
+   "Lower cotton crop and poor availability of cottonseed leading to discontinuation of factory operations",
+   "Substantial increase in average procurement price of cottonseed",
+   "Changing wind patterns affecting wind power generation",
+   "Dependence on import of edible oils to meet domestic demand",
+   "Business risks identified by management, reviewed periodically by board",
+   "Iran\u2013Israel conflict and Strait of Hormuz crisis causing severe volatility in global crude oil, LNG, freight, and commodity markets",
+   "Significant increase in freight and logistics costs due to vessel rerouting and higher war-risk insurance premiums",
+   "Supply chain disruptions affecting global availability and shipment schedules of edible oils",
+   "Volatility in prices of soybean oil, sunflower oil, and palm oil",
+   "Escalation in energy and processing costs impacting refining and packaging operations",
+   "Inflationary impact on agricultural inputs including fertilisers and transportation",
+   "Increased pressure on working capital requirements due to higher inventory and import costs",
+   "Continuing Russia\u2013Ukraine conflict exerting pressure on global vegetable oil markets, particularly sunflower oil supplies",
+   "Sino\u2013US trade tensions contributing to volatility in global soybean and agricultural commodity markets",
+   "Indonesia's B40 biodiesel mandate reducing palm oil availability for food usage and tightening global palm oil supplies",
+   "Ageing plantations, lower productivity levels, and tight inventory conditions in Indonesia and Malaysia keeping palm oil prices structurally elevated",
+   "Changing wind patterns and lower wind intensity affecting wind power generation in Gujarat",
+   "Tighter cottonseed supply environment from lower-than-expected national cotton production constraining raw material availability and elevating procurement costs",
+   "Geopolitical and Global Supply Chain Risk: The Iran\u2013Israel conflict and the consequent disruption in the Strait of Hormuz represent one of the most significant near-term geopolitical risks affecting the global edible oil industry and commodity supply chains.",
+   "Import Dependency and Structural Supply Risk: India continues to import nearly 56\u201357% of its edible oil requirements, thereby exposing the domestic industry to global commodity price volatility, geopolitical developments, trade restrictions, and international logistics disruptions.",
+   "Raw Material Availability Risk \u2014 Cottonseed: Availability of cottonseed at competitive prices remains a key operational risk for the Company. Cottonseed supply is dependent upon national cotton production, climatic conditions, pest incidence, and farmer acreage allocation.",
+   "Commodity Price and Foreign Exchange Risk: Volatility in global prices of palm oil, soybean oil, sunflower oil, and other commodities, together with fluctuations in foreign exchange rates, particularly the Indian Rupee against the US Dollar, may materially affect import costs and operating margins.",
+   "Environmental and Regulatory Risk: Excessive monoculture farming, depletion of soil nutrients, groundwater stress, and increased dependence on chemical fertilizers and pesticides may create ecological and regulatory challenges over the long term. ESG considerations are becoming increasingly significant for investors, lenders, regulators, and consumers.",
+   "Company Risk Management Framework: Key determinants of the Company's business risk profile include ability to manage regulatory and policy changes; agro-climatic and raw material availability risks; operational efficiency and cost optimization; product diversity and market positioning; commodity price and foreign exchange risk management; supply chain resilience and procurement efficiency.",
+   "Credit risk on trade receivables",
+   "Liquidity risk",
+   "Dependence on cotton seed availability and pricing",
+   "Fluctuations in export turnover",
+   "Regulatory and tax disputes (Service Tax, GST)"
+  ],
+  "auditor": {
+   "name": "M/s. NATARAJA IYER & CO., Chartered Accountants",
+   "opinion": "Unmodified - does not contain any qualification, reservation or adverse remark",
+   "qualifications_or_emphasis": [
+    "This Certificate is neither an assurance as to the future viability of the Company nor of the efficacy or effectiveness with which the management has conducted the affairs of the Company.",
+    "Cost records maintained under Section 148(1) reviewed broadly; not examined in detail for accuracy or completeness",
+    "Undisputed statutory dues generally regular; no arrears >6 months as at 31.03.2026",
+    "Disputed dues: Duty of excise and service tax demand Rs 4,27,622 (paid Rs 2,13,811) pending at CESTAT, Hyderabad for period 01.01.2012 to 31.03.2012",
+    "No unrecorded transactions surrendered as income in tax assessments",
+    "No default in loan repayment or interest; not declared willful defaulter; no term loans availed during year; no short-term funds used for long-term purposes",
+    "No fraud noticed or reported; no ADT-4 filed; whistle-blower complaints received",
+    "Related party transactions compliant with Sections 177 and 188; disclosed in standalone financial statements",
+    "Internal audit system commensurate with size and nature of business; internal audit reports considered",
+    "No non-cash transactions with directors or connected persons",
+    "Not required to register under RBI Act Section 45-IA",
+    "No cash losses in current and immediately preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "No material uncertainty on going concern; company capable of meeting liabilities within one year",
+    "Section 135 (CSR) not applicable as criteria not fulfilled"
+   ],
+   "key_audit_matters": [
+    "Based on the audit performed there are no key audit matters to communicate as there are no significant audit judgements relating to areas in the Standalone Financial Statements that involved significant management judgement including accounting estimates that have been identified as having high estimation and uncertainty."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "CA. K. Satyanarayana, Chief Financial Officer, reappointed on 28-04-2025",
+    "Mr. Venkata Subramanya Ravi Vadlamani (DIN: 00495102) resigned as Non-executive Director with effect from 27-05-2025",
+    "Mr. CA Amara Rakesh Bhanu (DIN: 10808235) resigned as Non-executive and Independent Director with effect from 27-05-2025 due to personal reasons",
+    "Mr. Maddi Venkateswara Rao (DIN- 00013393) reappointed under retire by rotation under Article 122 of the Articles of Association in the 49th AGM",
+    "Mrs. Vangala Bhargavi appointed as Director under woman & Non-executive and Independent Category with effect from 15-10-2024, confirmed by shareholders at the 49th AGM held on 11-08-2025 by way of Special Resolution",
+    "Mrs. Maddula Durga Sushma appointed as Director under Non-executive and Independent Category with effect from 15-10-2024, confirmed by shareholders at the 49th AGM held on 11-08-2025 by way of Special Resolution",
+    "Smt. Dr. T. Anitha Devi appointed as Additional Director under Non-executive and Independent Category with effect from 09-07-2025, approved by shareholders in the 49th AGM held on 11-08-2025 by way of Special Resolution",
+    "Mr. Vadlamani Venkata Subramanya Ravi and Mr. Rakesh Bhanu Amara ceased as Committee Members with effect from 28th May 2025, consequent upon their resignations as Non-Executive Directors and Independent Directors respectively of the Company.",
+    "Mrs Dr. T.Anita Devi appointed as Independent Director (attended 3 meetings)",
+    "Mr. V.V.S.Ravi appointed as Non-Executive Director (attended 2 meetings)",
+    "Mr. Rakesh Bhanu Amara appointed as Independent Director (attended 2 meetings)",
+    "Smt. Takkella Anitha Devi appointed as Independent Woman Director (wef 07-07-2025)",
+    "Smt. R. Lakshmi Sarada ceased (up to 19-03-2025)",
+    "Sri. L. Shyama Prasad ceased (up to 19-03-2025)",
+    "Sri M. Ramesh ceased (up to 18-09-2024)",
+    "Mr. Meadem Sekhar (DIN- 02051004) retires by rotation and offers himself for re-appointment"
+   ],
+   "promoter_holding_pct": 25.6,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 25.6
+    },
+    {
+     "name": "Other Entities of the Promoters Group",
+     "pct": 47.43
+    },
+    {
+     "name": "Indian Public and others",
+     "pct": 14.62
+    },
+    {
+     "name": "Banks, Financial Institutions, State and Central Government",
+     "pct": 8.01
+    },
+    {
+     "name": "Investor Education and protection Fund (IEPF)",
+     "pct": 4.34
+    },
+    {
+     "name": "M/s. Maddi Lakshmaiah & Co., Ltd.",
+     "pct": 19.46
+    },
+    {
+     "name": "M/s. K.S.Subbaiah Pillai & Co., (India) Ltd.",
+     "pct": 15.3
+    },
+    {
+     "name": "Mr. Maddi Venkateswara Rao",
+     "pct": 13.36
+    },
+    {
+     "name": "VINSS Industries Private Limited",
+     "pct": 12.66
+    },
+    {
+     "name": "ICICI Bank Ltd.",
+     "pct": 6.27
+    },
+    {
+     "name": "Smt. Maddi Lalitha",
+     "pct": 6.15
+    }
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Shri Maddi Venkateswara Rao",
+     "role": "Chairman"
+    },
+    {
+     "name": "Shri CA. Meadem Sekhar",
+     "role": "Whole Time Director & CEO"
+    },
+    {
+     "name": "Smt C.A. Bhargavi Vangala",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Smt C.A. Maddula Durga Sushma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Smt Dr. T. Anitha Devi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "CA. Kothuri Satyanarayana",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "CS. Radha Rani Singhal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Maddi Venkateswara Rao",
+     "role": "Chairman (DIN: 00013393)"
+    },
+    {
+     "name": "Meadem Sekhar",
+     "role": "Whole Time Director & CEO (DIN: 02051004)"
+    },
+    {
+     "name": "Bhargavi Vangala",
+     "role": "Director"
+    },
+    {
+     "name": "Maddula Durga Sushma",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. T. Anitha Devi",
+     "role": "Director"
+    },
+    {
+     "name": "Meadem Sekhar",
+     "role": "Whole Time Director & CEO"
+    },
+    {
+     "name": "CA K.Satyanarayana",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs CS. Radha Rani Singhal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "CA. Meadem Sekhar",
+     "role": "Whole Time Director & CEO"
+    },
+    {
+     "name": "CA K. Satyanarayana",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Maddi Venkateswara Rao",
+     "role": "Director"
+    },
+    {
+     "name": "Vangala Bhargavi",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Maddula Durga Sushma",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Takkella Anitha Devi",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "MADDI VENKATESWARA RAO",
+     "role": "Chairman (Din No.00013393)"
+    },
+    {
+     "name": "MEADEM SEKHAR",
+     "role": "Whole Time Director & CEO (Din No. 02051004)"
+    },
+    {
+     "name": "KOTHURI SATYANARAYANA",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "RADHA RANI SINGHAL",
+     "role": "Company Secretary (M.No. A68523)"
+    },
+    {
+     "name": "Sri. M. Sekhar",
+     "role": "Whole Time Director & CEO"
+    },
+    {
+     "name": "Sri. K Satyanarayana",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Miss. Radha Rani Singhal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Sri. M. Venkateswara Rao",
+     "role": "Non-executive Director"
+    },
+    {
+     "name": "Smt. Vangala Bhargavi",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Smt. Maddula Durga Sushma",
+     "role": "Independent Woman Director"
+    },
+    {
+     "name": "Smt. Takkella Anitha Devi",
+     "role": "Independent Woman Director (wef 07-07-2025)"
+    },
+    {
+     "name": "Mr. Meadem Sekhar",
+     "role": "Director"
+    }
+   ],
+   "employees": 130
+  },
+  "dividend_per_share": 1.5,
+  "other_notable": [
+   "The Company processed 27,056 MT of cottonseed during FY 2025-26 as against 47,757 MT in the previous year",
+   "Average procurement price of cottonseed increased from Rs.27,530 per MT in the previous year to Rs.30,425 per MT during the current year",
+   "The Company exported 466.100 MT of Cotton Linters worth Rs. 169.85 lakhs during FY 2025-26 as against 1400.260 MT worth Rs. 468.86 lakhs in the previous year",
+   "Wind Power Project in Gujarat generated income of Rs.38.47 lakhs during FY 2025-26 as against Rs.34.78 lakhs in the previous year",
+   "The Board recommended a final dividend of Rs.1.50 per share (15%) on equity shares of Rs.10/- each for FY 2025-26, with total cash outflow of Rs.11,85,000/-",
+   "Cost Auditor M/s. Jithendra Kumar & Co. appointed for FY 2026-27 at remuneration of Rs.35,000/- per annum plus taxes and out-of-pocket expenses",
+   "Statutory Auditors: M/s. NATARAJA IYER & CO., Chartered Accountants, Hyderabad",
+   "Cost Auditors: M/s. Jithendra Kumar & Co., Cost Accountants, Vijayawada",
+   "Secretarial Auditors: M/s. K. Srinivasa Rao & Co., Company Secretaries, Guntur",
+   "Registrar & Share Transfer Agent: BIGSHARE SERVICES PRIVATE LIMITED, Hyderabad",
+   "Bankers: Canara Bank, Chirala",
+   "50th AGM scheduled for Saturday, 8th August, 2026 at 11.30 a.m. at CAPOL Factory Premises",
+   "Book closure from Sunday 2nd August, 2026 to Saturday 8th August, 2026 (both days inclusive)",
+   "Record date for dividend: Saturday 1st August, 2026",
+   "Dividend payment on or after August 12, 2026 if approved at AGM",
+   "Remote e-voting period: Wednesday, 5th August, 2026 at 09.00 hrs to Friday, 7th August, 2026 at 17.00 hrs",
+   "Cut-off date for e-voting: Saturday 1st August, 2026",
+   "Scrutinizer for e-voting: Mr. K. Srinivasa Rao, Partner of M/s. K. Srinivasa Rao & Co., Practicing Company Secretaries",
+   "CSR provisions not applicable during the year",
+   "Corporate Governance Report applicable from FY 2025-26 per SEBI LODR Regulation 15(2)",
+   "Vigil mechanism/Whistle Blower Policy posted on www.capol.in",
+   "No loans, guarantees, investments or securities given under Section 186",
+   "Registered office shifted from Hyderabad, Telangana to Chirala, Andhra Pradesh effective 28th April 2025",
+   "Cost audit applicable for FY 2025-26; conducted by M/s. Jithendra Kumar & Co, Cost Accountants",
+   "Cost Auditor's report for year ended 31.03.2026 has no qualifications, reservations or adverse remarks",
+   "No frauds reported by statutory, cost or secretarial auditors under Section 143(12)",
+   "No material changes and commitments affecting financial position between 31.03.2026 and report date",
+   "Internal auditors: PERAKAM ASSOCIATES for FY 2025-26; internal control system reported effective",
+   "Sexual Harassment Complaints: Received NIL, Disposed NIL, Pending beyond 90 days NIL",
+   "Internal Complaints Committee constituted under Sexual Harassment of Women at Workplace Act, 2013",
+   "Compliance affirmed with Maternity Benefit Act, 1961 including paid maternity leave, medical bonus, nursing breaks, cr\u00e8che facilities",
+   "Unclaimed dividends transfer to IEPF: 2020-21 due 16-10-2027, 2021-22 due 19-10-2028, 2023-24 due 12-09-2030, 2024-25 due 11-09-2031",
+   "No equity shares transferred to IEPF demat account during the year",
+   "Registrar and Share Transfer Agents: M/s Bigshare Services Private Limited, Hyderabad",
+   "Secretarial Standards compliance affirmed",
+   "Annual Secretarial Compliance Report by K. Srinivasa Rao & Co. for FY ended 31.03.2026: complied with all applicable SEBI regulations, no deviations",
+   "Secretarial Audit Report (Form MR-3) by K. Srinivasa Rao & Co. for FY ended 31.03.2026: complied with statutory provisions, proper board processes",
+   "Energy conservation measures: continuous conservation priority, R&D review, monitoring, fuel saving in boiler, eliminating steam leakages, employee training",
+   "Energy conservation impact: reduction in power consumption, fuel consumption, improved production performance",
+   "Electricity purchased: 27,25,920 units (Rs 2,76,10,791) in 2025-26 vs 43,84,790 units (Rs 3,65,66,215) in 2024-25",
+   "Diesel generation: NIL units in 2025-26 vs 473 units in 2024-25",
+   "Rice Husk consumption: 1,499.240 tonnes (Rs 40,49,729) in 2025-26 vs 1,986.334 tonnes (Rs 77,33,546) in 2024-25",
+   "Electricity per unit cotton seed: 100.75 units in 2025-26 vs 95.84 units in 2024-25",
+   "Rice Husk per unit cotton seed: 55.41 kgs in 2025-26 vs 43.41 kgs in 2024-25",
+   "No alternate energy sources utilized, no capital investment on energy conservation equipment",
+   "Technology absorption: LED lights installed, Energy Monitoring System installed, continuous product/process technology improvement",
+   "No imported technology",
+   "Foreign exchange earnings: Cotton Linters export 466.100 MT worth Rs 169.85 lakhs in 2025-26 vs 1,400.260 MT worth Rs 468.86 lakhs in 2024-25",
+   "Board core skills: Policy Making, Finance, Business Strategy, Risk Management, Corporate Governance, Value Creation, Marketing, Stakeholder Management, Operations & Process Optimization, Accounting Finance, Taxation, Corporate Laws, HR Management",
+   "Work, Health, Safety, Information Technology listed as other skills for all directors",
+   "Registered office shifted from Telangana to Andhra Pradesh effective 28-04-2025. New address: D.N0.5/01, Main Road, Jandrapet Chirala, Prakasam District, Chirala, Andhra Pradesh, India, 523155",
+   "Shareholder approval obtained on 12-08-2024 for shifting of registered office; Regional Director approved in April 2025",
+   "No trading occurred in the stock during the year 2025-26 on BSE",
+   "CSR provisions under Section 135 not applicable to the Company during the year",
+   "Company has adopted Whistle Blower Policy and established vigil mechanism",
+   "Compliance certificate from Practicing Company Secretary regarding corporate governance annexed as Annexure X",
+   "Management Discussion and Analysis Report included as Annexure IV",
+   "ISIN: INE49501018",
+   "CIN: L15143AP1975PLC120139",
+   "Listing on BSE Limited (Security Id: CORAGRO, Scrip Code: 507543)"
+  ],
+  "capex_plans": [
+   {
+    "item": "Energy conservation equipment",
+    "amount_cr": 0,
+    "timeline": "2025-26"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "The Listed entity have no subsidiaries/Material Subsidiaries",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The company has no subsidiary Company/ies"
+   },
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The company has no subsidiaries, associates or joint ventures"
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company has no subsidiaries"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties",
+    "nature": "All related party transactions entered during the financial year were on arm's length basis and in ordinary course of business; no transactions with potential conflict of interest; disclosure in Form AOC-2 not required; details in Notes forming part of Accounts",
+    "amount_cr": null
+   },
+   {
+    "party": "",
+    "nature": "There were no material transactions during the year. All non-material transactions entered into with related parties as defined under the Act and SEBI (LODR) Regulations 2015, during the financial year were in the ordinary course of business.",
+    "amount_cr": null
+   },
+   {
+    "party": "Sri M. Venkateswara Rao, Director",
+    "nature": "Personal guarantee for bank loan",
+    "amount_cr": null
+   },
+   {
+    "party": "M/s. Maddi Lakshmaiah & Co., Pvt. Ltd.",
+    "nature": "Entities in which Directors have control or significant influence - Payments towards Freight Charges",
+    "amount_cr": 0.2028
+   },
+   {
+    "party": "M/s. K.S.Subbaiah Pillai & Co., (India) Pvt. Ltd.",
+    "nature": "Entities in which Directors have control or significant influence - Payments towards Freight Charges",
+    "amount_cr": 0.2295
+   },
+   {
+    "party": "Sri. M. Sekhar",
+    "nature": "Key Managerial Personnel (Whole Time Director & CEO) - Remuneration",
+    "amount_cr": 0.18
+   },
+   {
+    "party": "Sri K. Satyanarayana",
+    "nature": "Key Managerial Personnel (Chief Financial Officer) - Remuneration",
+    "amount_cr": 0.18
+   },
+   {
+    "party": "Miss. Radha Rani Singhal",
+    "nature": "Key Managerial Personnel (Company Secretary) - Remuneration",
+    "amount_cr": 0.0336
+   },
+   {
+    "party": "Sri M. Venkateswara Rao",
+    "nature": "Non-executive Director - Sitting Fee",
+    "amount_cr": 0.004
+   },
+   {
+    "party": "Smt. Vangala Bhargavi",
+    "nature": "Independent Woman Director - Sitting Fee",
+    "amount_cr": 0.0052
+   },
+   {
+    "party": "Smt. Maddula Durga Sushma",
+    "nature": "Independent Woman Director - Sitting Fee",
+    "amount_cr": 0.0052
+   },
+   {
+    "party": "Smt. Takkella Anitha Devi",
+    "nature": "Independent Woman Director (wef 07-07-2025) - Sitting Fee",
+    "amount_cr": 0.0016
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Unsecured loans from directors",
+    "amount_cr": 0,
+    "note": "No loans received from any director during 2025-26"
+   },
+   {
+    "lender_or_type": "Public deposits",
+    "amount_cr": 0,
+    "note": "No deposits accepted from public or members; no outstanding deposits as on balance sheet date"
+   },
+   {
+    "lender_or_type": "Canara Bank - Loans repayable on demand (secured)",
+    "amount_cr": 15.9474,
+    "note": "Secured by hypothecation of raw materials, consumable stores, finished goods, book debts and first charge on fixed assets except land and windmill project assets; further secured by personal guarantee of Sri M. Venkateswara Rao, Director"
+   },
+   {
+    "lender_or_type": "Secured working capital loan (Short Term Borrowings)",
+    "amount_cr": 15.9474,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Secured Bank Overdraft facility (undrawn)",
+    "amount_cr": 9.0526,
+    "note": "Expiring within one year, as at 31st March 2026"
+   }
+  ],
+  "litigation": [
+   "No significant and material orders passed by regulators, courts or tribunals impacting going concern status",
+   "No application made or proceeding pending under Insolvency and Bankruptcy Code, 2016",
+   "The Company has submitted related party transaction disclosures for the half year ended 30.09.2022 under regulation 23(9) to the stock exchange in pdf mode on XBRL mode 03-11-2022 which is with in 15 days from the approval in Board Meeting dated 21-10-2022 and Submitted in XBRL mode on 26-11-2022 with a delay of 11 days. The Company has paid the fine of Rs.1,12,100/- imposed by the BSE on 25-01-2023 for Late submission of related party transaction disclosures for the half year ended 30.09.2022 under regulation 23(9) to the stock exchange",
+   "The company has disclosed the impact of pending litigations on its financial position in the standalone financial statements- Refer Note No.2.28 to the standalone financial statements.",
+   "Disputed statutory dues: Duty of excise and service tax demand Rs 4,27,622 (paid Rs 2,13,811) pending at CESTAT, Hyderabad for period 01.01.2012 to 31.03.2012",
+   "Service Tax matters in dispute (Rs 4.28 lakhs)",
+   "Goods and Services Tax in dispute (Rs 3.89 lakhs in FY2025, nil in FY2026)",
+   "Legal suit filed for disputed trade receivables from Government Party (Rs 2.68 lakhs as at 31-03-2026)",
+   "Disputed trade receivables from Government Parties (Rs 18.27 lakhs as at 31-03-2025)"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Disputed statutory dues - Duty of excise and service tax",
+    "amount_cr": 0.0427622
+   },
+   {
+    "nature": "Service Tax matters in dispute",
+    "amount_cr": 0.0428
+   },
+   {
+    "nature": "Goods and Services Tax in dispute",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Outstanding Bank Guarantees",
+    "amount_cr": 0
+   }
+  ]
+ }
+}
