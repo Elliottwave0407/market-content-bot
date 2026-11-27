@@ -1,0 +1,690 @@
+{
+ "isin": "INE686C01014",
+ "name": "Priya Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/83cce69d-6a7b-424c-8da6-25f6894aa2d6.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 272157,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Priya Limited reported no revenue from operations in FY 2025-26 and FY 2024-25. The company earned a profit of Rs. 434.40 Lakhs in 2025-26 primarily due to a notional gain of Rs. 803.39 Lakhs from the auction of office premises by the bank, with no business operations during the financial year.",
+   "value_chain_position": "other",
+   "geographies": [
+    {
+     "name": "Chennai",
+     "share_pct": null
+    },
+    {
+     "name": "Kolkata",
+     "share_pct": null
+    },
+    {
+     "name": "Mumbai",
+     "share_pct": null
+    }
+   ]
+  },
+  "auditor": {
+   "name": "JM & Associates",
+   "opinion": "Qualified",
+   "key_audit_matters": [
+    "Company's account declared as Non-Performing Asset (NPA) and received notice under Section 13(4) of SARFAESI Act for symbolic attachment of properties; accumulated losses exceed net worth resulting in negative net worth; bank accounts blocked; revenue from operations nil; branches closed and assets written off/sold in FY 2020-21; summons received from DRT Mumbai by three lender banks.",
+    "Properties in Mumbai, Kolkata, Chennai auctioned by Bank; auction proceeds information unavailable as of 31st March 2026; accounting adjustment between outstanding borrowings and value of assets sold recognized in current year; properties of Brent Properties Investment Pvt. Ltd. and Cheshire Properties Investment Pvt. Ltd. auctioned by Indian Bank for Rs.4.56 crore each (identified via Form 26AS FY 2024-25); Company's properties under collateral securities auctioned by Indian Bank for Rs. 9.03 crore (identified via Form 26AS).",
+    "For year ended 31st March 2026, loss of \u20b990.25 lakhs for quarter and profit of \u20b9434.50 lakhs for year; profit primarily due to Exceptional Items notional gain of Rs. 803.39 lakhs from auction of office premises by bank; no tax provision made on auction gain; management relies on Income Tax judgments that capital gains tax not applicable where capital asset appropriated towards security/guarantee and consideration not received by owner.",
+    "Bank of Maharashtra, Indian Bank and Union Bank of India declared company, promoters, directors and corporate guarantors as wilful defaulters; management has represented against the same.",
+    "During previous financial year, Company deposited Rs.175 lakhs in 'non-lien account' with Indian Bank as part of proposed One-Time Settlement of Rs. 22.81 crores including realization from auction of properties.",
+    "Auditor reassessed going concern; audit evidence supports management's use of going concern basis; financial statements reflect reasonable and fair assessment.",
+    "Aggregate provision of Rs. 3,953.81 lakhs for doubtful debtors (expected credit loss) as of March 31, 2026 relating to export sales; Management has not approached RBI & FEMA for approval of writing off; unable to comment on impact on profit/loss or net worth.",
+    "Casual vacancy for CFO w.e.f. 1st December 2022; Company could not appoint within prescribed six months; unable to comment on penal consequences impact.",
+    "VXL Instruments Limited (CIRP commencement 26.11.2024) and VXL Software Solutions Pvt. Ltd. (CIRP commencement 26.02.2025), both related parties, initiated CIRP under IBC 2016; may affect Company's financial position and future transactions.",
+    "Notional interest of \u20b9357.05 lakhs recognized during year ended March 31, 2026 on NPA accounts; cumulative outstanding interest payable \u20b92,763.82 lakhs as of 31st March 2026; no bank statements or confirmations obtained for NPA accounts regarding interest rates including penal interest; unable to determine accuracy and completeness of interest provision and outstanding liability; financial statements may be materially misstated in respect of finance costs and borrowings."
+   ],
+   "qualifications_or_emphasis": [
+    "Remark No.1: NPA classification, SARFAESI notice, negative net worth, nil revenue, branch closures, DRT summons.",
+    "Remark No.2: Property auctions by bank, unavailable proceeds info, accounting adjustments, related party property auctions (Brent, Cheshire at Rs.4.56 cr each), Company property auctions (Rs.9.03 cr).",
+    "Remark No.3: Operational loss vs reported profit due to notional gain (Rs.803.39 lakhs) from auction; no tax provision; reliance on tax judgments.",
+    "Remark No.4: Wilful defaulter declaration by three banks; management representation made.",
+    "Remark No.5: Rs.175 lakhs deposited in non-lien account for proposed OTS of Rs.22.81 crores.",
+    "Remark No.6: Going concern assessment - auditor concurs with management.",
+    "Remark No.7: Rs.3,953.81 lakhs provision for doubtful export debtors; no RBI/FEMA approval for write-off sought.",
+    "Remark No.8: CFO vacancy since Dec 2022 not filled within 6 months; penal consequences unquantified.",
+    "Remark No.9: Related parties VXL Instruments Ltd and VXL Software Solutions Pvt Ltd under CIRP.",
+    "Remark No.10: Notional interest provision Rs.357.05 lakhs on NPA; cumulative Rs.2,763.82 lakhs; lack of bank confirmations/statements; possible material misstatement of finance costs and borrowings.",
+    "Company's account declared as NPA with notice under Section 13(4) of SARFAESI Act for symbolic attachment of properties",
+    "Accumulated losses exceed net worth resulting in negative net worth; revenue from operations is nil",
+    "All branches closed except Mumbai; fixed assets written off/sold; maximum employees laid off",
+    "Summons received from Debts Recovery Tribunal (DRT) Mumbai by all three lender banks",
+    "Properties in Mumbai, Kolkata, Chennai auctioned by bank; auction proceeds information unavailable as of 31st March 2026",
+    "Properties of Brent Properties Investment Pvt. Ltd. and Cheshire Properties Investment Pvt. Ltd. auctioned by Indian Bank for Rs.4.56 crore each (FY 2024-25)",
+    "Company's properties under collateral securities auctioned by Indian Bank for Rs.9.03 crore (identified via Form 26AS)",
+    "Overall profit of Rs.434.50 lakhs primarily due to notional gain of Rs.803.39 lakhs from auction of office premises; operational loss incurred",
+    "No tax provision made on auction of property; management relies on IT judgments for capital gains exemption",
+    "Company, promoters, directors, corporate guarantors declared as wilful defaulters by three banks",
+    "Rs.175 lacs deposited in non-lien account with Indian Bank as OTS out of proposed Rs.22.81 crores",
+    "Going concern assessment reassessed; auditor finds going concern basis appropriate",
+    "Provision of Rs.3,953.81 lakhs for doubtful debtors (export sales); RBI & FEMA approval not sought for write-off",
+    "Casual vacancy for CFO since 1st December 2022; not filled within prescribed six months",
+    "Related parties VXL Instruments Limited and VXL Software Solutions Pvt. Ltd. under CIRP",
+    "Notional interest of Rs.357.05 lakhs recognized on NPA accounts; cumulative outstanding interest Rs.2,763.82 lakhs; no bank statements/confirmations obtained",
+    "Advance tax refund receivable Rs.47.58 lakhs for ten assessment years; refunded per IT records but not recorded due to unavailable bank statements",
+    "Unable to pay gratuity of Rs.66.25 lakhs due to unavailability of funds",
+    "Audit trail (edit log) facility not enabled at database level for payroll accounting software",
+    "Cash losses incurred in current year (Rs.368.88 lakhs) and preceding year (Rs.385.92 lakhs)",
+    "Default in payment of term loans from three banks; declared wilful defaulter",
+    "Future events may cause Company to cease as going concern",
+    "Basis of Adverse Opinion paragraph referenced",
+    "Internal financial controls over financial reporting were operating effectively as at March 31, 2026",
+    "Audit trail feature was not enabled at the database level to log in any direct data changes for accounting software used for maintaining books of accounts relating to payroll"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mrs. Hema Thakur resigned as Independent Director w.e.f. 25th May, 2026",
+    "Mr. Sushil Sakpal appointed as Independent Director on 13th August, 2025",
+    "Executive & Non-Independent Director retires by rotation at the ensuing AGM and being eligible has offered himself for re-appointment; Board recommends his re-appointment.",
+    "At the Board Meeting held on August 13, 2025, the Board approved the Appointment of Mr. Sushil Sakpal as Additional Independent Non-Executive Director; after members' approval in 38th AGM, designation changed to Independent Director.",
+    "Mrs. Hema Thakur \u2013 Non-Executive Independent Director retired from directorship w.e.f. 25th May, 2026.",
+    "Mr. Rakesh Kumar Jain resigned as Chief Financial Officer with effect from 30th November, 2022; vacancy not filled as of report date",
+    "Ms. Rajeshree Maruti Chougule served as Company Secretary and Compliance Officer from April 2, 2019 to February 14, 2022; subsequently appointed as Independent Director with effect from September 19, 2024",
+    "Mr. Anuj Bhargava retired from membership of Audit Committee w.e.f. 19th August, 2024",
+    "Mrs. Rajeshree Chougule appointed as member of Audit Committee w.e.f. 19th September, 2024",
+    "Mr. Sushil Sakpal appointed as Member of Audit Committee in Board meeting dated 13th August, 2025",
+    "Mr. Sushil Kaluram Sakpal appointed as Member of Nomination and Remuneration Committee in Board meeting dated 13th August, 2025",
+    "Mr. Sushil Kaluram Sakpal appointed as Independent Non-Executive Director and member of Stakeholders Relationship Committee",
+    "Changes in composition of Board of Directors occurred during the period under review in compliance with the Act",
+    "Casual vacancy for Chief Financial Officer w.e.f. 1st December 2022; new CFO not appointed within prescribed six months",
+    "Ms. Kalyani Joshi (Upto 31-05-2024) Company Secretary",
+    "Mr. Hussain Bohra (From 18-12-2024) Company Secretary"
+   ],
+   "auditor_change": "M/s. JM & Associates, Chartered Accountants appointed as Statutory Auditors for five financial years commencing from FY 2025-26 to FY 2029-30, subject to approval of Members",
+   "promoter_holding_pct": 74.45,
+   "top_shareholders": [
+    {
+     "name": "Arun Kumar Bhuwania",
+     "pct": 19.03
+    },
+    {
+     "name": "Saroj Bhuwania",
+     "pct": 18.04
+    },
+    {
+     "name": "Ashish Bhuwania",
+     "pct": 9.33
+    },
+    {
+     "name": "Priya International Limited",
+     "pct": 9.19
+    },
+    {
+     "name": "Aditya Bhuwania",
+     "pct": 8.67
+    },
+    {
+     "name": "Shruti Bhuwania",
+     "pct": 5.58
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Arunkumar Bhuwania",
+     "role": "Chairman & Director"
+    },
+    {
+     "name": "Mr. Aditya Bhuwania",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mrs. Rajeshree Chougule",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sushil Sakpal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Hussain Bohra",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Aditya Bhuwania",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Aditya Bhuwania",
+     "role": "Whole-time Director (Executive Director)"
+    },
+    {
+     "name": "Arunkumar Bhuwania",
+     "role": "Non-Executive Chairman (Promoter Director)"
+    },
+    {
+     "name": "Hema Thakur",
+     "role": "Independent/Non-Executive Director, Chairman of Audit Committee, Nomination & Remuneration Committee, and Stakeholders Relationship Committee"
+    },
+    {
+     "name": "Rajeshree Chougule",
+     "role": "Independent/Non-Executive Director"
+    },
+    {
+     "name": "Sushil Kaluram Sakpal",
+     "role": "Independent/Non-Executive Director"
+    },
+    {
+     "name": "Aditya Bhuwania",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Arun Kumar Bhuwania",
+     "role": "Director"
+    },
+    {
+     "name": "Hussain Bohra",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. A. K. Bhuwania",
+     "role": "Chairman"
+    },
+    {
+     "name": "Ms. Kalyani Joshi",
+     "role": "Company Secretary (Upto 31-05-2024)"
+    },
+    {
+     "name": "Mr. Hussain Bohra",
+     "role": "Company Secretary (From 18-12-2024)"
+    }
+   ]
+  },
+  "other_notable": [
+   "No revenue from operations in FY 2025-26 and FY 2024-25",
+   "Profit of Rs. 434.40 Lakhs in FY 2025-26 due to notional gain of Rs. 803.39 Lakhs from auction of office premises by bank",
+   "No business operations during the financial year",
+   "Registered office shifted to 205-206, 2nd Floor, Plot No. 293/299, Chartered House, Dr. Cawasji Hormasji Lane, Dhobi Talao, Mumbai 400002 w.e.f. 10th October, 2025",
+   "39th AGM scheduled for 30th September, 2026 at 10.00 A.M. at Daji Parab Sabhagruh, Mumbai",
+   "Share capital: Paid up equity capital Rs. 3,00,23,000; Authorized share capital Rs. 7,50,00,000 as on March 31, 2026",
+   "No dividend recommended for FY 2025-26",
+   "No deposits accepted from public",
+   "No amount transferred to reserves",
+   "Five board meetings held during FY 2025-26 on 10.05.2025, 29.05.2025, 13.08.2025, 10.10.2025, and 06.02.2026",
+   "Mr. Aditya Bhuwania retires by rotation and is eligible for re-appointment",
+   "Unclaimed dividend for 2018-19 held in separate bank account",
+   "ISIN: INE686C01014",
+   "Registrar and Share Transfer Agent: Bigshare Services Pvt. Ltd.",
+   "Bankers: Indian Bank, Bank of Baroda, Union Bank of India",
+   "Equity shares listed on BSE Limited (Scrip Code: 524580)",
+   "Statutory Auditors M/s. JM & Associates re-appointed for 5 years from conclusion of 38th AGM till 43rd AGM.",
+   "Internal Auditor M/s. Anand Mohril & Co., Cost Accountants appointed for FY 2025-26 (appointed 29th May 2025); also appointed for Q4 FY 2024-25 (Jan-Mar 2025) after resignation of previous internal auditor.",
+   "Secretarial Auditors M/s. SPRS & Co. LLP appointed for 5 years from FY 2025-26 to FY 2029-30.",
+   "Independent Directors confirmed compliance with independence criteria; registered with IICA databank; exempt from proficiency self-assessment test.",
+   "No Independent Director resigned before expiry of tenure during year under review.",
+   "Board concurred with management's going concern assessment based on available evidence.",
+   "Paid-up capital less than 10 Crores and Net worth less than 25 Crores; Corporate Governance provisions under Regulation 15(2) of SEBI LODR not applicable",
+   "CSR provisions under Section 135(1) not applicable",
+   "Cost records maintenance under Section 148(1) not required",
+   "No frauds reported by auditors under Section 143(12)",
+   "No change in nature of business during the year",
+   "No subsidiary/joint venture/associate companies",
+   "Equity shares listed on BSE Limited; de-listing from Calcutta Stock Exchange in process; trading status on CSE marked as 'suspended' and 'non-compliant'",
+   "Independent Directors meeting held on February 6, 2026, chaired by Mrs. Hema Thakur",
+   "Audit Committee: 5 meetings held during FY 2025-26",
+   "Nomination and Remuneration Committee: 2 meetings held during FY 2025-26",
+   "Stakeholders Relationship Committee: 1 meeting held on February 6, 2026",
+   "39th AGM held on September 30, 2025",
+   "No loans, guarantees or investments under Section 186",
+   "Compliance with Secretarial Standards (SS-1 and SS-2) confirmed",
+   "Internal financial controls reported as adequate and effective",
+   "Unclaimed dividend for FY 2017-18 transferred to IEPF",
+   "Sexual Harassment Act disclosure not applicable (total employees below 10)",
+   "All related party transactions on arm's length basis and in ordinary course of business",
+   "Whistle Blower Policy in place; no complaints received during year",
+   "No significant and material orders passed by Regulators or Courts impacting going concern",
+   "Conservation of Energy and Technology Absorption disclosure not applicable",
+   "No foreign exchange inflow or outflow during year",
+   "Business Responsibility Report not applicable (not in Top 1000 by market cap)",
+   "No applications/proceedings under IBC Code 2016",
+   "Annual Return available at https://www.priyagroup.biz/",
+   "Secretarial Audit conducted by M/s. SPRS And Co. LLP, Company Secretaries for FY 2025-26 to FY 2029-30",
+   "Internal Auditor for FY 2024-25 (Jan-Mar 2025): M/s. Anand Mohril & Co., Cost Accountants; for FY 2025-26: M/s. Anand Mohril & Co., Cost Accountants",
+   "Revenue from operations nil for current and previous financial year",
+   "Profit of Rs.434.50 lakhs in current year vs loss of Rs.391.71 lakhs previous year; EPS positive vs negative",
+   "Profit attributable to Exceptional Item (notional gain Rs.803.39 lakhs) from auction of office premises by bank",
+   "Operational losses continued during the year",
+   "Hardware business highly customer-specific; lost several key customers",
+   "Pursuing One Time Settlement (OTS) proposal with banks/lenders",
+   "Internal control systems considered appropriate for size, nature and present level of operations",
+   "Industrial relations harmonious and cordial",
+   "Audit trail (edit log) not enabled at database level for payroll accounting software",
+   "The Company has not declared dividend during the year.",
+   "The Company has used accounting software for maintaining its books of account, which has a feature of recording audit trail (edit log) facility and the same has operated throughout the year for all relevant transactions recorded in the software."
+  ],
+  "related_party": [
+   {
+    "party": "Director of the Company",
+    "nature": "Loan availed during FY 2021-22, FY 2022-23, FY 2023-24, FY 2024-25 & FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "Priya International Limited",
+    "nature": "Loan/expenses paid by during FY 2023-24, FY 2024-25 & FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "Brent Properties Investments Pvt Ltd",
+    "nature": "Loan availed during FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "VXL Instruments Limited",
+    "nature": "Related party; CIRP commenced 26.11.2024",
+    "amount_cr": null
+   },
+   {
+    "party": "VXL Software Solutions Pvt. Ltd.",
+    "nature": "Related party; CIRP commenced 26.02.2025",
+    "amount_cr": null
+   },
+   {
+    "party": "Priya International Limited",
+    "nature": "Loan/expenses paid during FY 2023-24, FY 2024-25 & FY 2025-26",
+    "amount_cr": null
+   },
+   {
+    "party": "VXL Instruments Limited",
+    "nature": "Related party, CIRP commenced 26.11.2024",
+    "amount_cr": null
+   },
+   {
+    "party": "VXL Software Solutions Pvt. Ltd.",
+    "nature": "Related party, CIRP commenced 26.02.2025",
+    "amount_cr": null
+   },
+   {
+    "party": "Brent Properties Investment Pvt. Ltd.",
+    "nature": "Corporate guarantor, properties auctioned by Indian Bank",
+    "amount_cr": 4.56
+   },
+   {
+    "party": "Cheshire Properties Investment Pvt. Ltd.",
+    "nature": "Corporate guarantor, properties auctioned by Indian Bank",
+    "amount_cr": 4.56
+   },
+   {
+    "party": "Brent Properties Investment Pvt. Ltd.",
+    "nature": "Corporate guarantee provider, properties auctioned by Indian Bank",
+    "amount_cr": null
+   },
+   {
+    "party": "Cheshire Properties Investment Pvt. Ltd.",
+    "nature": "Corporate guarantee provider, properties auctioned by Indian Bank",
+    "amount_cr": null
+   },
+   {
+    "party": "Directors",
+    "nature": "Loan from directors (interest-free, unsecured, repayable on demand)",
+    "amount_cr": 4.5294
+   },
+   {
+    "party": "Group Company",
+    "nature": "Loan from group company (secured and unsecured)",
+    "amount_cr": 9.6518
+   },
+   {
+    "party": "Related parties",
+    "nature": "Rent receivable",
+    "amount_cr": 0.7485
+   },
+   {
+    "party": "Priya International Ltd.",
+    "nature": "Net of Reimbursement of Services/Expenses incurred",
+    "amount_cr": 0.0074
+   },
+   {
+    "party": "VXL Software Private Limited",
+    "nature": "Net of Reimbursement of Services/Expenses incurred",
+    "amount_cr": 0
+   },
+   {
+    "party": "VXL Software Private Limited",
+    "nature": "Rent Income (Exclusive of GST)",
+    "amount_cr": 0
+   },
+   {
+    "party": "Ms. Kalyani Joshi (Upto 31-05-2024)",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0
+   },
+   {
+    "party": "Mr. Hussain Bohra (From 18-12-2024)",
+    "nature": "Short-term employee benefits",
+    "amount_cr": 0.0276
+   },
+   {
+    "party": "Mr. Aditya Bhuwania",
+    "nature": "Loan Taken During the year",
+    "amount_cr": 0.1116
+   },
+   {
+    "party": "VXL Software Solutions Pvt. Ltd.",
+    "nature": "Outstanding Receivable",
+    "amount_cr": 0.7485
+   },
+   {
+    "party": "Mr. Aditya Bhuwania",
+    "nature": "Loan Outstanding at the year end",
+    "amount_cr": 3.6594
+   },
+   {
+    "party": "Mr. Aditya Bhuwania",
+    "nature": "Outstanding Payable",
+    "amount_cr": 0.0318
+   },
+   {
+    "party": "Mr. A. K. Bhuwania",
+    "nature": "Loan Outstanding at the year end",
+    "amount_cr": 0.87
+   },
+   {
+    "party": "Priya International Limited",
+    "nature": "Outstanding Payable",
+    "amount_cr": 0.623
+   },
+   {
+    "party": "Brent Properties Investments Pvt Ltd.",
+    "nature": "Corporate Guarantee given on our behalf",
+    "amount_cr": 30.6265
+   },
+   {
+    "party": "Cheshire Properties Investments Pvt Ltd.",
+    "nature": "Corporate Guarantee given on our behalf",
+    "amount_cr": 30.6265
+   },
+   {
+    "party": "VXL Instruments Limited",
+    "nature": "Investment at Fair Value (Diminution provided Rs: 34.29 Lacs)",
+    "amount_cr": 0.3429
+   },
+   {
+    "party": "VXL Instruments Limited",
+    "nature": "Outstanding Receivable",
+    "amount_cr": 0.001
+   },
+   {
+    "party": "Ms. Kalyani Joshi (Upto 31-05-2024)",
+    "nature": "Outstanding Payable",
+    "amount_cr": 0
+   },
+   {
+    "party": "Mr. Hussain Bohra (From 18-12-2024)",
+    "nature": "Outstanding Payable",
+    "amount_cr": 0.0023
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Bank of Maharashtra, Indian Bank, Union Bank of India",
+    "amount_cr": null,
+    "note": "Declared company, promoters, directors and corporate guarantors as wilful defaulters; NPA classification; SARFAESI notices; symbolic attachment of properties; DRT proceedings"
+   },
+   {
+    "lender_or_type": "Indian Bank",
+    "amount_cr": null,
+    "note": "Auctioned properties of Brent Properties Investment Pvt. Ltd. and Cheshire Properties Investment Pvt. Ltd. for Rs.4.56 crore each; auctioned Company's properties under collateral securities for Rs.9.03 crore; non-lien account deposit of Rs.175 lakhs for proposed OTS of Rs.22.81 crores"
+   },
+   {
+    "lender_or_type": "Indian Bank, Bank of Maharashtra and Union Bank of India (consortium)",
+    "amount_cr": null,
+    "note": "Working capital loans; accounts classified as NPA; one-time settlement of proposed Rs.22.81 crore in process; Rs.1.75 crore deposited in No Lien Account with Indian Bank; notional interest of \u20b9357.05 lakhs recognized during year ended March 31, 2026; cumulative outstanding interest payable \u20b92,763.82 lakhs as of 31st March 2026"
+   },
+   {
+    "lender_or_type": "Director of the Company",
+    "amount_cr": null,
+    "note": "Loan availed during FY 2021-22 to FY 2025-26, subject to compliance of Companies Act provisions"
+   },
+   {
+    "lender_or_type": "Priya International Limited",
+    "amount_cr": null,
+    "note": "Loan/expenses paid during FY 2023-24, FY 2024-25 & FY 2025-26, subject to compliance of Companies Act provisions"
+   },
+   {
+    "lender_or_type": "Brent Properties Investments Pvt Ltd",
+    "amount_cr": null,
+    "note": "Loan availed during FY 2025-26, subject to compliance of Companies Act provisions"
+   },
+   {
+    "lender_or_type": "Bank of Maharashtra",
+    "amount_cr": null,
+    "note": "Declared company, promoters, directors and corporate guarantors as wilful defaulters; NPA classification; symbolic attachment of properties under SARFAESI Act"
+   },
+   {
+    "lender_or_type": "Indian Bank",
+    "amount_cr": null,
+    "note": "Declared company, promoters, directors and corporate guarantors as wilful defaulters; auctioned properties for Rs.4.56 crore each (Brent and Cheshire Properties) and Rs.9.03 crore (company's properties); OTS proposal of Rs.22.81 crores with Rs.175 lacs deposited"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": null,
+    "note": "Declared company, promoters, directors and corporate guarantors as wilful defaulters; NPA classification"
+   },
+   {
+    "lender_or_type": "Bank of Maharashtra (C/A)",
+    "amount_cr": 6.5844,
+    "note": "Principal: 328.81 lakhs, Interest: 329.63 lakhs, Total Default: 658.44 lakhs, Period of Default: 1 to 2830 days"
+   },
+   {
+    "lender_or_type": "Indian Bank (C/A)",
+    "amount_cr": 4.9514,
+    "note": "Principal: 219.49 lakhs, Interest: 275.65 lakhs, Total Default: 495.14 lakhs, Period of Default: 1 to 2799 days"
+   },
+   {
+    "lender_or_type": "Indian Bank (ADOVEXBIR A/C)",
+    "amount_cr": 16.5847,
+    "note": "Principal: 751.69 lakhs, Interest: 906.78 lakhs, Total Default: 1658.47 lakhs, Period of Default: 1 to 2832 days"
+   },
+   {
+    "lender_or_type": "Union Bank of India (L/C A/C)",
+    "amount_cr": 6.0777,
+    "note": "Principal: 254.10 lakhs, Interest: 353.67 lakhs, Total Default: 607.77 lakhs, Period of Default: 1 to 2854 days"
+   },
+   {
+    "lender_or_type": "Union Bank of India (ADOVEXBIR A/C)",
+    "amount_cr": 16.2493,
+    "note": "Principal: 726.84 lakhs, Interest: 898.09 lakhs, Total Default: 1624.93 lakhs, Period of Default: 1 to 2848 days"
+   },
+   {
+    "lender_or_type": "Bank of Maharashtra (Term Loan)",
+    "amount_cr": 3.2881,
+    "note": "Default since 01-07-2018, interest rate 12.75%, period of default 1 to 2830 days"
+   },
+   {
+    "lender_or_type": "Indian Bank (Term Loan)",
+    "amount_cr": 2.1949,
+    "note": "Default since 01-08-2018, interest rate 16.15%, period of default 1 to 2799 days"
+   },
+   {
+    "lender_or_type": "Indian Bank (ADOVEXBIR A/C)",
+    "amount_cr": 7.5169,
+    "note": "Default since 29-06-2018, interest rate 15.75%, period of default 1 to 2832 days"
+   },
+   {
+    "lender_or_type": "Union Bank of India (L/C A/C)",
+    "amount_cr": 2.541,
+    "note": "Default since 07-06-2018, interest rate 17.85%, period of default 1 to 2854 days"
+   },
+   {
+    "lender_or_type": "Union Bank of India (ADOVEXBIR A/C)",
+    "amount_cr": 7.2684,
+    "note": "Default since 13-06-2018, interest rate 15.95%, period of default 1 to 2848 days"
+   },
+   {
+    "lender_or_type": "Working Capital loan from banks (Secured)",
+    "amount_cr": 2.9884,
+    "note": "Secured against hypothecation of goods & book debts, equitable mortgage on properties, personal guarantee of two directors, corporate guarantee, pledge of promoter shares"
+   },
+   {
+    "lender_or_type": "Loan from Group Company (Secured)",
+    "amount_cr": 9.0288,
+    "note": "Secured loan from group company"
+   },
+   {
+    "lender_or_type": "Loan from Directors (Unsecured)",
+    "amount_cr": 4.5294,
+    "note": "Interest-free, unsecured, repayable on demand"
+   },
+   {
+    "lender_or_type": "Loan from Group Company (Unsecured)",
+    "amount_cr": 0.623,
+    "note": "Unsecured loan from group company"
+   },
+   {
+    "lender_or_type": "Indian Bank, Bank of Maharashtra, and Union Bank of India",
+    "amount_cr": null,
+    "note": "Accounts classified as NPA, symbolic attachment of properties, willful defaulter classification contested"
+   },
+   {
+    "lender_or_type": "Mr. Aditya Bhuwania",
+    "amount_cr": 3.6594,
+    "note": "Loan Outstanding at year end"
+   },
+   {
+    "lender_or_type": "Mr. A. K. Bhuwania",
+    "amount_cr": 0.87,
+    "note": "Loan Outstanding at year end"
+   }
+  ],
+  "litigation": [
+   "Notice under Section 13(4) of SARFAESI Act for symbolic attachment of properties received.",
+   "Summons from Debts Recovery Tribunal (DRT) Mumbai applied by all three lender banks (Bank of Maharashtra, Indian Bank, Union Bank of India).",
+   "Company, promoters, directors and corporate guarantors declared as wilful defaulters by Bank of Maharashtra, Indian Bank and Union Bank of India; management has represented against the declarations.",
+   "Corporate Insolvency Resolution Process (CIRP) initiated for related parties VXL Instruments Limited (commencement 26.11.2024) and VXL Software Solutions Pvt. Ltd. (commencement 26.02.2025).",
+   "Notice under Section 13(2) of SARFAESI Act, 2002 received from Indian Bank, Bank of Maharashtra and Union Bank of India in October 2018",
+   "Notice under Section 13(4) of SARFAESI Act received for symbolic attachment of properties",
+   "Banks have auctioned properties situated at Mumbai, Kolkata and Chennai",
+   "Company voluntarily handed over possession of one property situated at Mumbai to the Bank",
+   "Company, promoters, directors and corporate guarantors declared as willful defaulters by banks; management has represented against the same",
+   "Notice under Section 13(4) of SARFAESI Act for symbolic attachment of properties",
+   "Summons from Debts Recovery Tribunal (DRT) Mumbai applied by all three lender banks",
+   "Properties auctioned by banks following non-payment of dues",
+   "Company, promoters, directors, corporate guarantors declared as wilful defaulters by Bank of Maharashtra, Indian Bank, Union Bank of India; management represented against same",
+   "VXL Instruments Limited (CIRP commencement 26.11.2024) and VXL Software Solutions Pvt. Ltd. (CIRP commencement 26.02.2025) initiated Corporate Insolvency Resolution Process under IBC, 2016",
+   "There were no pending litigations which would impact the financial position of the Company.",
+   "Legal proceedings related to loan defaults and auction of mortgaged properties by banks",
+   "Notices under Sections 13(2) and 13(4) of the Securitization and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 from Indian Bank, Bank of Maharashtra, and Union Bank of India in October 2018",
+   "Accounts classified as Non-Performing Assets (NPA)",
+   "Symbolic attachment of properties due to non-repayment of recalled amounts",
+   "Banks declared the Company, its promoters, directors, and corporate guarantors as willful defaulters, classification formally contested by management",
+   "Properties located in Mumbai, Kolkata, and Chennai auctioned by banks",
+   "Properties of Brent Properties Investment Pvt. Ltd. and Cheshire Properties Investment Pvt. Ltd. invoked under corporate guarantees auctioned by Indian Bank",
+   "Company's properties invoked under collateral securities auctioned by Indian Bank",
+   "One-time settlement proposals submitted dated 26th November 2024 and 26th June 2025",
+   "Deposited Rs. 1.75 crore in a \"No Lien Account\" with Indian Bank against proposed settlement amount of Rs. 22.81 crore"
+  ],
+  "risks": [
+   "Company's accounts classified as NPA; negative net worth; accumulated losses exceed net worth.",
+   "Revenue from operations is nil due to blockage of bank accounts and financial constraints.",
+   "All branches closed except Mumbai branch in FY 2020-21; fixed assets written off/sold; substantial workforce laid off.",
+   "Properties auctioned by banks; auction proceeds information not fully received; accounting adjustments made based on available info.",
+   "Wilful defaulter classification by three banks; matter under representation/review.",
+   "Proposed One-Time Settlement of Rs.22.81 crores not yet completed; only Rs.175 lakhs deposited so far.",
+   "Aggregate provision of Rs.3,953.81 lakhs for doubtful export debtors; RBI/FEMA approval for write-off not obtained; regulatory compliance risk.",
+   "CFO vacancy since December 2022 not filled within statutory 6-month period; non-compliance with Companies Act; penal consequences unquantified.",
+   "Related parties under CIRP may affect Company's financial position and future transactions.",
+   "Notional interest provision on NPA accounts (Rs.357.05 lakhs for year, cumulative Rs.2,763.82 lakhs) without bank confirmations/statements; possible material misstatement of finance costs and borrowings.",
+   "No tax provision on notional gain from property auction (Rs.803.39 lakhs); tax implications subject to final determination by tax authorities.",
+   "Website non-functional; non-compliance with statutory/regulatory requirements.",
+   "Delays in filing/uploading disclosures on BSE portal (Board meeting outcomes, listing fees, Regulation 74(5) certificates, trading window intimations, registered office address).",
+   "Structured Digital Database entries made after event occurrence rather than within prescribed timelines.",
+   "Appointment of former Company Secretary as Independent Director in contravention of Section 149 and SEBI LODR Regulations.",
+   "Loans from Director, Priya International Limited, and Brent Properties Investments Pvt Ltd subject to Companies Act compliance review.",
+   "Indian Bank, Bank of Maharashtra and Union Bank have declared the company, promoters, directors and corporate guarantors as willful defaulters",
+   "Total liabilities exceeds total assets by Rs. 5,198.17 Lakhs",
+   "Business operations are nil",
+   "Non-compliance with various SEBI regulations and Companies Act provisions",
+   "Website of the Company is non-functional",
+   "Vacancy of Chief Financial Officer not filled since November 30, 2022",
+   "Delay in payment of listing fees of BSE Limited",
+   "Appointment of former Company Secretary as Independent Director in contravention of Section 149",
+   "Delay in uploading Board meeting outcomes on BSE portal",
+   "Registered office address not updated on BSE portal",
+   "Trading window closure intimations uploaded on starting dates instead of in advance",
+   "Internal Auditor and Secretarial Auditor appointment disclosures not included in BSE portal outcomes",
+   "Certificates under Regulation 74(5) uploaded beyond prescribed timeline",
+   "Financial Results for quarter ended September 30, 2025 not uploaded on BSE portal",
+   "Integrated Filing \u2013 Financials submitted beyond prescribed timelines",
+   "QR Code not provided in newspaper publications of financial results",
+   "Newspaper advertisement regarding special window for transfer and dematerialisation of physical securities not published",
+   "KYC letters not dispatched to physical shareholders",
+   "Letters containing web link/path for accessing Annual Report not dispatched to physical shareholders",
+   "Loans availed from Director, Priya International Limited, and Brent Properties Investments Pvt Ltd subject to compliance of Companies Act provisions",
+   "Continued non-operation of the business and classification of bank accounts as NPA",
+   "Actions taken by lenders in relation to the Company's assets",
+   "Outstanding liabilities towards banks and financial institutions",
+   "Proceedings initiated by lenders and disposal/realisation of the Company's assets",
+   "Loss of several key customers adversely affecting business and financial performance",
+   "Uncertainty about feasibility and timing of revival of hardware business",
+   "Outcome of One Time Settlement (OTS) discussions and related proceedings",
+   "Classification of bank accounts as NPA coupled with notices/proceedings from Debt Recovery Tribunal (DRT)",
+   "Future events or conditions may cause the Company to cease to continue as a going concern",
+   "The Company has been declared as Non-Performing Asset in earlier years and thus has not made any quarterly submissions to the bank in the current year.",
+   "The company has been declared as willful defaulter by any bank and Financial Institution or government or any government authority in the current financial year.",
+   "The Company has incurred cash losses in the current year as well as in the immediately preceding financial year amounting to Rs.368.88 lakhs and Rs.385.92 lakhs respectively.",
+   "we are unable to comment on the capability of the Company for meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date.",
+   "Default in repayment of loans and interest to multiple banks since 2018",
+   "Auction of mortgaged properties by lender banks",
+   "High trade receivables and advances considered doubtful with full provision for expected credit loss",
+   "Negative retained earnings indicating accumulated losses",
+   "Dependence on related party loans and director loans for funding",
+   "Credit risk from trade receivables, deposits with banks and loans given",
+   "Liquidity risk from trade payables and other financial liabilities",
+   "Market risk and price risk",
+   "Investment risk, interest rate risk, salary risk and longevity risk from defined benefit plans",
+   "Risk of salary increase higher than assumption",
+   "Discount rate changes impacting liability",
+   "Willful defaulter classification contested by management",
+   "Accounts classified as NPA with symbolic attachment of properties",
+   "Total liabilities exceeded total assets by Rs. 4,463.55 lakhs as of 31st March 2026",
+   "Bank accounts blocked leading to cessation of business operations",
+   "Properties auctioned by banks",
+   "Corporate guarantors' properties auctioned by banks"
+  ],
+  "outlook": [
+   {
+    "statement": "The company has again approached a consortium of three banks for one-time settlement letter dated November 26, 2024, discussion is in process. The company has deposited 1.75 crore in \"No Lien Account\" with Indian bank out of proposed Rs.22.81 crore as one-time settlement.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company does not presently foresee any immediate revival of its business operations. The future outlook would depend substantially upon the successful resolution of its outstanding liabilities and the resulting ability to revive its business operations.",
+    "period": "immediate future"
+   },
+   {
+    "statement": "The Company does not foresee any significant business opportunities in the immediate future. The Company's primary focus remains on resolving its outstanding financial obligations and pursuing appropriate settlement arrangements with its lenders.",
+    "period": "immediate future"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Priya International Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Aggregate provision for doubtful debtors (expected credit loss) relating to export sales",
+    "amount_cr": 39.5381
+   },
+   {
+    "nature": "Gratuity (statutory liability) outstanding",
+    "amount_cr": 0.6625
+   },
+   {
+    "nature": "Cumulative outstanding interest payable on NPA accounts",
+    "amount_cr": 27.6382
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}

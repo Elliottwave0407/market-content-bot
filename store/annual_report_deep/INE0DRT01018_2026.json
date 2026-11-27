@@ -1,0 +1,498 @@
+{
+ "isin": "INE0DRT01018",
+ "name": "Fabino Enterprises Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/30597cc4-3c9e-4f9e-a6c3-090291fa6cff.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 291732,
+ "chunks": 8,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "Fabino Enterprises Limited (formerly Fabino Life Sciences Ltd.) is an ISO 9001:2015 certified company.",
+   "value_chain_position": "other",
+   "brands_or_certifications": [
+    "ISO 9001:2015",
+    "Fabino",
+    "Keepshine"
+   ],
+   "products": [
+    {
+     "name": "Pharmaceutical formulations (tablets, ointments, syrups)",
+     "share_of_revenue_pct": null,
+     "note": "Marketed under brand 'Fabino' across allopathic and select herbal range"
+    },
+    {
+     "name": "Shampoo and hair-maintenance products",
+     "share_of_revenue_pct": null,
+     "note": "Marketed under brand 'Keepshine'"
+    },
+    {
+     "name": "Wellness and FMCG products (coffee, malt powder, protein powder, hair shampoo)",
+     "share_of_revenue_pct": null,
+     "note": "Exported by the Company"
+    },
+    {
+     "name": "Stock-in-Trade",
+     "share_of_revenue_pct": null,
+     "note": "Traded goods; inventory of Rs 93.15 lakhs (2026) and Rs 120.30 lakhs (2025); purchases of Rs 1,155.72 lakhs (2026) and Rs 1,635.66 lakhs (2025)"
+    }
+   ],
+   "customers": [
+    "Domestic market through own distribution network and sales force",
+    "International markets including Nepal"
+   ],
+   "geographies": [
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "International (Nepal and others)",
+     "share_pct": null
+    },
+    {
+     "name": "Export - USD",
+     "share_pct": null
+    },
+    {
+     "name": "Export - AED",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Sonipat, Haryana",
+     "capacity": "Processing centre"
+    },
+    {
+     "location": "Haryana",
+     "capacity": "Contract manufacturing facility"
+    }
+   ],
+   "end_markets": [
+    "Pharmaceutical",
+    "Wellness",
+    "FMCG"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "Upender Metaplast Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Upender Metaplast Private Limited",
+    "holding_pct": 99.998,
+    "business": "Trading activity indicated by consolidated financial statements (import purchases, direct/customs expenses, and revenue variance versus standalone) though Form AOC-1 shows Nil turnover and near-dormant profile for prior year; figures not updated for FY 2025-26"
+   },
+   {
+    "name": "Upendra Metaplast Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Mr. Atul Jain and Mrs. Vandana Jain",
+    "nature": "Proposed sale of subsidiary shares",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Related parties",
+    "nature": "All contracts/arrangements/transactions in ordinary course of business and on arm's length basis; no material transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties (loans and advances)",
+    "nature": "Unsecured loans from related parties",
+    "amount_cr": 0.9981
+   },
+   {
+    "party": "Atul Jain",
+    "nature": "Rent Payment",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Aditya Mahavir Jain",
+    "nature": "Loan Repaid by the Company",
+    "amount_cr": 1.3861
+   },
+   {
+    "party": "Aditya Mahavir Jain",
+    "nature": "Loan Received",
+    "amount_cr": 1.7219
+   },
+   {
+    "party": "Vaksons Industries Pvt Ltd",
+    "nature": "Loan Repaid by the Company",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Vaksons Industries Pvt Ltd",
+    "nature": "Loan Received",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Upender Metaplast Private Limited",
+    "nature": "Loan Given (Advances)",
+    "amount_cr": 0.6672
+   },
+   {
+    "party": "Upender Metaplast Private Limited",
+    "nature": "Loan Repayment",
+    "amount_cr": 0.598
+   },
+   {
+    "party": "Vandana Jain",
+    "nature": "Loan Repayment",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Kanchi Gehlot",
+    "nature": "Remuneration to CS",
+    "amount_cr": 0.003
+   },
+   {
+    "party": "Anand Katarmal",
+    "nature": "Remuneration to CS",
+    "amount_cr": 0.0143
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loans and advances from related parties",
+    "amount_cr": 1.5095
+   },
+   {
+    "party": "Aditya Mahavir Jain",
+    "nature": "Loan Repaid by the Company",
+    "amount_cr": 1.3906
+   },
+   {
+    "party": "Aditya Mahavir Jain",
+    "nature": "Loan Received",
+    "amount_cr": 2.1202
+   }
+  ],
+  "auditor": {
+   "name": "M/s. D G M S & Co., Chartered Accountants (Firm Registration No. 0112187W)",
+   "opinion": "Secretarial Audit Report: Company complied with statutory provisions; adequate board processes and compliance mechanism. No qualifications, reservations or adverse remarks in Auditor's Report and Secretarial Auditor's Report.",
+   "key_audit_matters": [
+    "Write-off of Trade Receivables under Litigation (Rs 71.55 lakh, including Rs 47.79 lakh of litigated receivables assessed unrecoverable)",
+    "Write-off of Expired Inventory (Rs 57.73 lakh on account of expiry of stock)",
+    "Write-off of Trade Receivables under Litigation aggregating Rs 71.55 lakhs (including Rs 47.79 lakhs litigated receivables)",
+    "Write-off of Expired Inventory amounting to Rs 57.73 lakhs"
+   ],
+   "qualifications_or_emphasis": [
+    "Cash losses of Rs 13.47 lakhs incurred during FY 2025-26",
+    "Undisputed statutory dues in arrears >6 months: Income Tax Act (Interest Rs 0.004 lakhs), Maharashtra Labour Welfare Fund (Rs 0.030 lakhs), ESI Act (Rs 0.037 lakhs)",
+    "Disputed income tax demands: Rs 95.18 lakhs (AY 2022-23) and Rs 37.15 lakhs (AY 2023-24) pending at CIT(A)",
+    "Company granted loans to other entities during the year; repayments generally regular; no overdue amounts"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mrs. Deepali Singla appointed as Additional Director (Non-executive Independent Director) w.e.f. December 26, 2025",
+    "Mr. Anand Katarmal ceased as Company Secretary & Compliance Officer up to July 07, 2026",
+    "Ms. Shipra Rathi appointed as Company Secretary and Compliance Officer",
+    "Ms. Vandana Jain appointed as Additional Executive Director on August 28, 2025",
+    "Mr. Nitin Mehra resigned as Additional Executive Director on August 28, 2025",
+    "Mrs. Deepali Singla appointed as Independent Director on December 26, 2025",
+    "Mr. Kuldeep Singh Solanki resigned as Independent Director on December 26, 2025",
+    "Anand Katarmal resigned as Company Secretary & Compliance Officer on July 7, 2026",
+    "Shipra Rathi appointed as Company Secretary & Compliance Officer on July 16, 2026",
+    "Ms. Kanchi Gehlot resigned as Company Secretary and Compliance Officer w.e.f. May 29, 2025",
+    "Mr. Anand Katarnal appointed as Company Secretary and Compliance Officer w.e.f. June 20, 2025",
+    "Ms. Vandana Jain (DIN: 00004347) appointed as Additional Executive Director w.e.f. August 28, 2025, regularized as Executive Director at AGM on September 22, 2025",
+    "Mr. Nitin Mehra (DIN: 08142337) resigned as Additional Executive Director w.e.f. August 28, 2025",
+    "Ms. Deepali Singla (DIN: 11442242) appointed as Additional Non-Executive Independent Director w.e.f. December 26, 2025",
+    "Mr. Kuldeep Solanki (DIN: 07109951) resigned as Non-Executive Independent Director w.e.f. December 26, 2025"
+   ],
+   "top_shareholders": [
+    {
+     "name": "R G Family Trust, Mr. Sameer Gupta and Mr. Sundeep Gupta",
+     "pct": 56.82
+    },
+    {
+     "name": "Aditya Mahavir Jain",
+     "pct": 52.38
+    },
+    {
+     "name": "Sushma Shekhar",
+     "pct": 8.29
+    }
+   ],
+   "auditor_change": "Re-appointment of M/s D G M S & Co as Statutory Auditors recommended for term from conclusion of 15th AGM till conclusion of 20th AGM (2031)",
+   "promoter_holding_pct": 52.38
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Aditya Mahavir Jain",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Pankaj Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Anand Katarmal",
+     "role": "Company Secretary & Compliance Officer (up to July 07, 2026)"
+    },
+    {
+     "name": "Shipra Rathi",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Aditya Mahavir Jain",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mr. Pankaj Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Shipra Rathi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Aditya Mahavir Jain",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Arihant Jain",
+     "role": "Director"
+    },
+    {
+     "name": "Anand Katarnal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Arihant Jain",
+     "role": "Director (DIN: 08280553)"
+    },
+    {
+     "name": "Aditya Mahavir Jain",
+     "role": "Managing Director (DIN: 09353344)"
+    },
+    {
+     "name": "Anand Katarmal",
+     "role": "Company Secretary & Compliance Officer (PAN: DTHPK1861G)"
+    },
+    {
+     "name": "Kanchi Gehlot",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Anand Katarmal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Vandana Jain",
+     "role": "Director"
+    },
+    {
+     "name": "Sumit Malik",
+     "role": "Director"
+    },
+    {
+     "name": "Pankaj Jain",
+     "role": "CFO"
+    },
+    {
+     "name": "Anand Katarmal",
+     "role": "Company Secretary"
+    }
+   ],
+   "employees": 3
+  },
+  "other_notable": [
+   "15th AGM scheduled on September 29, 2026 at 12:30 P.M. through VC/OAVM",
+   "Register of Members and Share Transfer Books closed from September 22, 2026 to September 28, 2026",
+   "Remote e-voting period: September 25, 2026 (9:00 A.M.) to September 28, 2026 (5:00 P.M.)",
+   "Cut-off date for e-voting: September 22, 2026",
+   "Scrutinizer: Mr. Vivek Rawal, Practicing Company Secretary (Membership No. A43231)",
+   "Registrar and Share Transfer Agent: Bigshare Services Private Limited",
+   "Secretarial Auditor: M/s JNG & Co.",
+   "Registered Office: Jeevan Vihar Extension, Near Shubham Garden, Murthal Road, Sonipat, Haryana-131001",
+   "Website: https://www.fabinolife.com/",
+   "Email: info@fabinolife.com",
+   "CIN: L24100HR2011PLC114093",
+   "Scrip code: 543444 (BSE)",
+   "Change in control: R G Family Trust, Mr. Sameer Gupta and Mr. Sundeep Gupta acquired 56.82% equity shares on April 28, 2026 via Share Purchase Agreement",
+   "Open offer triggered for up to 5,46,000 equity shares (26% of paid-up capital) at \u20b920 per share under SEBI SAST Regulations",
+   "Proposed sale of entire investment of 50,000 equity shares (Face Value Rs. 10 each) in subsidiary Upender Metaplast Private Limited to Mr. Atul Jain and Mrs. Vandana Jain",
+   "No dividend recommended for FY 2025-26",
+   "No amount transferred to IEPF in FY 2025-26",
+   "CSR provisions not applicable",
+   "Authorized share capital: Rs. 12,00,00,000 (1,20,00,000 equity shares of Rs. 10 each)",
+   "Paid-up capital: Rs. 2,10,00,000 (21,00,000 equity shares of Rs. 10 each)",
+   "Registrar and Transfer Agent: Bigshare Services Private Limited",
+   "Registered Office: Jeevan Vihar Extension Near, Shubham Garden, Murthal Road, Sonipat, Haryana-131001",
+   "Website: http://www.fabinolife.com",
+   "Listed on SME Platform of BSE Limited; exempt from Corporate Governance requirements",
+   "Vigil Mechanism/Whistle Blower Policy established and uploaded on website",
+   "Internal Audit carried out on half-yearly basis; internal financial controls adequate and effective",
+   "No frauds reported by Auditors during FY 2025-26",
+   "POSH compliance: Zero complaints received/resolved/pending in FY26",
+   "Gender composition as on March 31, 2026: Male 2, Female 1, Transgender 0",
+   "Median remuneration Rs. 1,41,540; 28.30% increase in FY 2025-26",
+   "No ESOP granted during FY 2025-26",
+   "Accounting software has audit trail feature operating throughout the year",
+   "Designated Person appointed for statutory compliance per Rule 9",
+   "No deposits accepted from public/shareholders",
+   "No FDI or downstream investment",
+   "Equity shares available for dematerialization through NSDL and CDSL",
+   "Company formerly known as Fabino Life Sciences Limited",
+   "Standalone revenue down 36.6% YoY to Rs 11.43 crore; Consolidated revenue up 15.5% to Rs 20.84 crore on subsidiary contribution",
+   "Standalone and Consolidated swung to net loss in FY 2025-26 (Standalone PAT: -Rs 0.36 crore; Consolidated PAT: -Rs 0.56 crore)",
+   "Cash loss for the year (standalone) of Rs 13.47 lakh per CARO 2020 disclosure",
+   "Write-off of trade receivables/loans & advances: Rs 71.55 lakh (incl. Rs 47.79 lakh litigated receivables)",
+   "Write-off of expired/obsolete inventory: Rs 57.73 lakh",
+   "Sundry balances written back (income): Rs 1.45 lakh",
+   "Form AOC-1 figures for subsidiary Upender Metaplast Private Limited not updated for FY 2025-26 and reflect prior year; consolidated statements indicate material trading activity inconsistent with nil-turnover profile",
+   "Company name changed from Fabino Life Sciences Limited to Fabino Enterprises Limited",
+   "Registered office: 105, 1st Floor, D-Block, Central Market, Prashant Vihar, Delhi - 110085; CIN: L24100HR2011PLC114093",
+   "Authorized capital: Rs 1,200 lakhs (1.2 crore equity shares of Rs 10 each); Issued/Subscribed/Paid-up: Rs 210 lakhs (21 lakh shares)",
+   "No IPO/FPO/preferential allotment/private placement during the year",
+   "No deposits accepted from public",
+   "No non-cash transactions with directors or connected persons",
+   "Not a Nidhi company; not required to register under RBI Act Section 45-IA",
+   "Internal audit system adequate and commensurate with size/nature of business",
+   "Accounting software with audit trail (edit log) facility operated throughout year for all relevant transactions; no tampering detected",
+   "Revenue from operations: Rs 1,142.79 lakhs (2026) vs Rs 1,803.60 lakhs (2025)",
+   "Net loss: Rs 35.97 lakhs (2026) vs Net profit: Rs 13.19 lakhs (2025)",
+   "EPS (Basic/Diluted): Rs (1.71) (2026) vs Rs 0.63 (2025)",
+   "Cash and cash equivalents: Rs 16.39 lakhs (2026) vs Rs 21.76 lakhs (2025)",
+   "Investment in Upendra Metaplast Private Limited: Rs 5.00 lakhs (unchanged)",
+   "Deferred tax asset increased to Rs 12.46 lakhs (2026) from Rs 0.84 lakhs (2025) due to timing difference on depreciation",
+   "Export incentives receivable: Duty Drawback Rs 31.40 lakhs, IGST Export Refund Rs 53.98 lakhs, RODTEP Rs 0.08 lakhs, ROSCTL Rs 40.47 lakhs (2026)"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company at the same time is in the process of scoping other viable projects and business opportunities.",
+    "period": "future"
+   },
+   {
+    "statement": "The Company believes it remains well-poised to capitalise on the healthy prospects of the pharmaceutical industry and to further solidify its position in the market. Strategic priorities include increasing order-taking appetite by augmenting working capital base, geographical diversification (currently supplying into Haryana, Delhi, parts of Punjab, Himachal Pradesh, Eastern Uttar Pradesh, Odisha, Jharkhand, parts of West Bengal, Andhra Pradesh and Nepal, and evaluating further expansion), digital marketing via social media and e-commerce channels, and capitalising on sector tailwinds including Biopharma SHAKTI initiative, GST rationalisation and rising health insurance penetration.",
+    "period": "FY 2026-27 and beyond"
+   }
+  ],
+  "dividend_per_share": 0,
+  "capex_plans": [
+   {
+    "item": "Capital expenditure incurred during the financial year",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "risks": [
+   "Operational and business risks reviewed continuously as part of risk management policy",
+   "Regulations and directives: Pharma manufacturing remains highly regulated, and compliance obligations increased further during FY 2025-26 with the rollout of the revised Schedule M manufacturing standards and continuing USFDA guidance on quality-data management, raising both compliance costs and the operational bar for manufacturers.",
+   "Cyber security and data protection: Cyber security threats remain a material concern across the industry; the pharmaceutical sector continues to rank among the industry verticals with the highest average cost of a data breach globally, making continued investment in data protection essential.",
+   "Geopolitical and macroeconomic risk: The conflict in the Middle East during FY 2025-26 added a new source of volatility to global commodity prices, freight costs and currency markets, with a direct bearing on input costs and export realisations for pharmaceutical companies with international exposure. Ownership of these risks rests with the CFO.",
+   "Financial risks: These pertain to the effective and efficient utilisation of financial resources \u2014 currency fluctuations, credit risk, liquidity risk and interest-rate movements \u2014 which can affect the Company's revenue, profitability and liquidity. Ownership of these risks rests with the CFO.",
+   "Operational risk: These pertain to business operations such as production capacity, quality assurance, customer demand and availability of raw materials, which can affect business continuity. Ownership of these risks rests with the Operations team.",
+   "Demand for skilled workforce: The industry continues to require a workforce with specialised knowledge and skills; addressing skill gaps through continuous training remains an ongoing challenge.",
+   "Supply chain disruption: Geopolitical developments during FY 2025-26, including the conflict in the Middle East, added fresh strain to global supply chains and input costs, prompting companies to pursue supply chain diversification and resilience measures.",
+   "Regulatory compliance: Evolving requirements, including the revised Schedule M manufacturing standards rolled out during the year, raise compliance costs even as they improve overall quality standards across the industry.",
+   "R&D costs: Developing new drugs and formulations remains expensive and time-consuming, requiring companies to continuously optimise resource allocation.",
+   "Pricing pressure: Continuing pressure from regulators and consumers to control product pricing can compress margins and constrain reinvestment in R&D and new product launches.",
+   "Cash losses of Rs 13.47 lakhs incurred during FY 2025-26",
+   "Trade receivables increased significantly to Rs 1,267.84 lakhs (2026) from Rs 861.56 lakhs (2025)",
+   "Trade payables increased to Rs 1,214.07 lakhs (2026) from Rs 646.65 lakhs (2025)",
+   "Disputed income tax demands of Rs 95.18 lakhs (AY 2022-23) and Rs 37.15 lakhs (AY 2023-24) pending at CIT(A)",
+   "Company not required to maintain cost records under Section 148(1)",
+   "No CSR spending required under Section 135",
+   "Write-off of trade receivables under litigation aggregating Rs 47.79 lakhs",
+   "Write-off of expired inventory amounting to Rs 57.73 lakhs",
+   "Credit and debit balances of unsecured loans, sundry creditors, sundry debtors, loans and advances subject to confirmation",
+   "Negative EBITDA and net loss in FY2026"
+  ],
+  "litigation": [
+   "No significant and material orders passed by Regulators/Courts/Tribunals impacting going concern status",
+   "No proceedings pending under Insolvency and Bankruptcy Code, 2016",
+   "Trade receivables of Rs 47.79 lakh under legal proceedings written off due to repeated postponement of hearings and uncertainty regarding recovery",
+   "No pending litigations as at 31st March 2026 which would impact financial position (per auditor)",
+   "Disputed income tax demands: Rs 95.18 lakhs (AY 2022-23) and Rs 37.15 lakhs (AY 2023-24) pending at CIT(A)",
+   "No benami property proceedings initiated or pending",
+   "No fraud noticed or reported during the year",
+   "No whistle blower complaints received",
+   "Legal proceedings initiated for trade receivables of Rs 47.79 lakhs with repeated postponement of hearings",
+   "Court Case Penalty of Rs 0.55 lakh incurred during FY2025-26",
+   "Legal Suit Expenses of Rs 0.07 lakh incurred during FY2025-26"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Long-Term Borrowings (Standalone)",
+    "amount_cr": 1.1125,
+    "note": "As at 31-Mar-2026; down from Rs 1.6123 crore at 31-Mar-2025"
+   },
+   {
+    "lender_or_type": "Long-Term Borrowings (Consolidated)",
+    "amount_cr": 1.6239,
+    "note": "As at 31-Mar-2026; down from Rs 1.7910 crore at 31-Mar-2025"
+   },
+   {
+    "lender_or_type": "Bajaj Finance Limited - Car Loan (Secured)",
+    "amount_cr": 0.1144,
+    "note": "Long-term borrowing"
+   },
+   {
+    "lender_or_type": "Related parties (Unsecured)",
+    "amount_cr": 0.9981,
+    "note": "Long-term borrowing"
+   },
+   {
+    "lender_or_type": "Others - Corporates (Unsecured)",
+    "amount_cr": 0,
+    "note": "Long-term borrowing; Rs 81.10 lakhs in 2025, nil in 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loan",
+    "amount_cr": null,
+    "note": "Interest paid on unsecured loan Rs 11.56 lakhs in FY2026"
+   },
+   {
+    "lender_or_type": "Car Loan",
+    "amount_cr": null,
+    "note": "Interest on car loan Rs 1.21 lakhs in FY2026"
+   },
+   {
+    "lender_or_type": "Bajaj Finance Limited - Car Loan",
+    "amount_cr": 0.1144,
+    "note": "Secured loan"
+   },
+   {
+    "lender_or_type": "Related parties",
+    "amount_cr": 1.5095,
+    "note": "Loans and advances from related parties"
+   },
+   {
+    "lender_or_type": "Corporates",
+    "amount_cr": 0.8722,
+    "note": "Loan and advances from Others - Corporates (as at 31 March 2025)"
+   },
+   {
+    "lender_or_type": "Unsecured loans",
+    "amount_cr": null,
+    "note": "Credit and Debit balances of unsecured loans are subject to confirmation"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax demand for AY 2022-23",
+    "amount_cr": 0.9518
+   },
+   {
+    "nature": "Income Tax demand for AY 2023-24",
+    "amount_cr": 0.3715
+   },
+   {
+    "nature": "GST Matter under Dispute for subsidiary Upender Metaplast Private Limited",
+    "amount_cr": 0.423804
+   }
+  ]
+ }
+}
