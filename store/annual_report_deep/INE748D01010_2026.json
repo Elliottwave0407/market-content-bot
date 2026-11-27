@@ -1,0 +1,737 @@
+{
+ "isin": "INE748D01010",
+ "name": "Prime Capital Market Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/187b8729-9a3d-41c5-9d35-1ea5c3460c0f.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 424597,
+ "chunks": 11,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Prime Capital Market Limited is a listed company holding its 32nd Annual General Meeting for FY 2025-26. The company's business activities are not described in the provided text.",
+   "value_chain_position": "other",
+   "products": [
+    {
+     "name": "Finance & Investments",
+     "share_of_revenue_pct": null,
+     "note": "Revenue includes interest on unsecured loan (\u20b975.31 Lakh), dividend on equity shares (\u20b90.34 Lakh), sale of equity shares (\u20b93,089.00 Lakh), trading in FNO segment (\u20b982.16 Lakh), and commission (\u20b911.00 Lakh)."
+    },
+    {
+     "name": "NBFC lending and investment activities",
+     "share_of_revenue_pct": null,
+     "note": "Operated in single segment: Finance & Investments"
+    },
+    {
+     "name": "Finance (NBFC) & Trading / Investment in Shares & Securities",
+     "share_of_revenue_pct": 99.66,
+     "note": "NIC Code 66110"
+    },
+    {
+     "name": "Loans and advances",
+     "share_of_revenue_pct": null,
+     "note": "Principal business is to give loans"
+    },
+    {
+     "name": "Investment in securities and debentures",
+     "share_of_revenue_pct": null,
+     "note": "Engaged primarily in financing and investment in securities, debentures and other products"
+    },
+    {
+     "name": "Trading",
+     "share_of_revenue_pct": null,
+     "note": "Sale of Trading reported as revenue"
+    },
+    {
+     "name": "Financing",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Investing in shares & other securities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Commodities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Capital market related activities",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Trading in Equity Shares",
+     "share_of_revenue_pct": null,
+     "note": "Sale of equity shares (quoted and unquoted)"
+    },
+    {
+     "name": "Trading in FNO Segment",
+     "share_of_revenue_pct": null,
+     "note": "Income from trading in Futures and Options segment"
+    },
+    {
+     "name": "Wholesale Finance - Loan against Shares (LAS)",
+     "share_of_revenue_pct": null,
+     "note": "Secured against shares; security cover monitored via Security Value at Risk (VaR) and impact cost"
+    },
+    {
+     "name": "Wholesale Finance - Loan against Property (LAP)",
+     "share_of_revenue_pct": null,
+     "note": "Secured against immovable property; collateral evaluation includes location, legal quality, marketability"
+    },
+    {
+     "name": "Investment in Credit Substitutes (Non-convertible debentures)",
+     "share_of_revenue_pct": null,
+     "note": "Separate delivery channel for financing; credit risk mitigated via collateral and borrower monitoring"
+    }
+   ],
+   "customers": [
+    "MSMEs",
+    "first-time borrowers",
+    "corporate anchors",
+    "Related parties",
+    "Corporate bodies",
+    "Individuals",
+    "Corporate borrowers in Financial Services sector"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "competitors_named": [
+    "banks",
+    "fintechs",
+    "digital-first NBFCs"
+   ],
+   "end_markets": [
+    "MSME financing",
+    "supply chain finance",
+    "dealer financing",
+    "vendor financing",
+    "factoring",
+    "working capital solutions",
+    "vehicle finance",
+    "consumer durables",
+    "personal loans",
+    "microfinance",
+    "Financial Services",
+    "Capital markets"
+   ],
+   "brands_or_certifications": [
+    "RBI registered Non-Deposit taking NBFC",
+    "RBI registered NBFC"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Rajesh Kumar Gokul Chandra & Associates, Chartered Accountants (FRN No. 323891E), now known as SGAJ & Associates",
+   "opinion": "No audit qualification, reservation however adverse remarks by Auditors for the year under review",
+   "key_audit_matters": [
+    "Valuation of Inventories of Unquoted Shares at cost subject to independent valuer",
+    "Balances of trade receivable, loans and advances, trade payable subject to confirmation",
+    "Employees Retirement Benefit - no actuarial valuation report obtained",
+    "Non-traded/suspended stock valued at last traded price",
+    "Advances against shares of Rs. 165.79 Lakh without interest",
+    "Based on the circumstances and facts of the audit and entity, there aren't key audit matters to be communicated in our report."
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter: Valuation of unquoted stock at cost subject to independent valuer",
+    "Emphasis of Matter: Balances subject to confirmation from respective parties",
+    "Emphasis of Matter: No actuarial valuation for employee retirement benefits",
+    "Emphasis of Matter: Non-traded/suspended stock valued at last traded price",
+    "Emphasis of Matter: Advances against shares of Rs. 165.79 Lakh without interest",
+    "Clarification on emphasis of matters, as disclosed on Page number 20-21 of the Report",
+    "The compliance by the Company of applicable financial laws such as direct and indirect tax laws and maintenance of financial records and books of accounts have not been reviewed in this audit since the same have been subject to review by the statutory financial auditors, tax auditors, and other designated professionals.",
+    "Emphasis of Matter 1: Note No 36 - Valuation of Inventories of Unquoted Shares valued at cost, subject to independent valuer; fair valuation under process.",
+    "Emphasis of Matter 2: Note No 39 - Balances of trade receivable, loans and advances, trade payable subject to confirmation from respective parties.",
+    "Emphasis of Matter 3: Note No 28 - No actuarial valuation report obtained for Employees Retirement Benefit; management observes no liability at present.",
+    "Emphasis of Matter 4: Note No 48 - Non-traded / suspended stock valued at last traded price; management opines value shown is fair value with no impact on Statement of Profit & Loss.",
+    "Emphasis of Matter 5: Note No 49 - Advances against shares of Rs. 165.79 Lakh without interest; management opines value shown is fair value with no impact on Statement of Profit & Loss.",
+    "The Company has used accounting software systems for maintaining its books of account for the financial year ended March 31, 2026 which did not have a feature of recording audit trail (edit log) facility throughout the year for all relevant transactions recorded in the respective software systems, hence we are unable to comment on audit trail features of the said software.",
+    "The above information is based on certain management estimates which has been relied upon by the auditors."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Adarsh Purohit (DIN: 02950960) retires by rotation and seeks re-appointment at the 32nd AGM.",
+    "Mr. Gwal Das Vyas, Independent Director, resigned post completion of his tenure (Resignation date: 5 Dec 2025)",
+    "Mr. Umang Bagaria appointed as Independent Director in place of Mr. Gwal Das Vyas (Appointment date: 5 Dec 2025)",
+    "Mr. Adarsh Purohit, Executive Director, retires by rotation at ensuing AGM and is eligible for re-appointment",
+    "Mr. Gwal Das Vyas, Independent Director, resigned from Board post completion of 2nd tenure of 5 years w.e.f. 5 December 2025",
+    "Mr. Umang Bagaria appointed as Independent Director w.e.f. 5 December 2025",
+    "Audit Committee re-constituted w.e.f. 5th December 2025: Mr. Gwal Das Vyas resigned from Membership; Mr. Umang Bagaria appointed as Member.",
+    "Nomination & Remuneration Committee re-constituted w.e.f. 5th December 2025: Mr. Gwal Das Vyas resigned from Chairmanship; Mr. Umang Bagaria appointed as Chairman.",
+    "Stakeholders' Relationship Committee re-constituted w.e.f. 5th December 2025: Mr. Gwal Das Vyas resigned from Chairmanship; Mr. Umang Bagaria appointed as Chairman.",
+    "Gwal Das Vyas (DIN: 01319377) cessation on 5th December 2025",
+    "Umang Bagaria (DIN: 10745203) appointment on 5th December 2025",
+    "Mr. Umang Bagaria appointed as Director w.e.f. 27/12/2025",
+    "BSE approved re-classification of Promoter category Shareholders as 'Public' during the year"
+   ],
+   "auditor_change": "Statutory Auditor M/s. Rajesh Kumar Gokul Chandra & Associates (now SGAJ & Associates) appointed for five consecutive years at 29th AGM held on 9th June 2023; ratification not required per Companies (Amendment) Act, 2017.",
+   "promoter_holding_pct": 0,
+   "top_shareholders": [
+    {
+     "name": "Virdhi Buildwell Limited",
+     "pct": 6.13
+    },
+    {
+     "name": "Satabdi Tracom Private Limited",
+     "pct": 3.8
+    },
+    {
+     "name": "Gulistan Vanijya Private Limited",
+     "pct": 3.32
+    },
+    {
+     "name": "Satabdi Tradelink Limited",
+     "pct": 3.13
+    },
+    {
+     "name": "Kamala Devi Acharya",
+     "pct": 2.61
+    },
+    {
+     "name": "Zenser Merchandise Pvt. Ltd.",
+     "pct": 2.5
+    },
+    {
+     "name": "Dinman Marketing Limited",
+     "pct": 2.48
+    },
+    {
+     "name": "Raj Kumar Sharma",
+     "pct": 2.1
+    },
+    {
+     "name": "Bhuwania Vinimay Pvt. Ltd.",
+     "pct": 2.08
+    },
+    {
+     "name": "Krishna Devi Purohit",
+     "pct": 1.88
+    },
+    {
+     "name": "VIRDHI BUILDWELL LIMITED",
+     "pct": 6.13
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Adarsh Purohit",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Umang Bagaria",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Anupam Shrivastava",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sunita Rani Parida",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shradha Purohit Agarwal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Surendra Singh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Adarsh Purohit",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Umang Bagaria",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Adarsh Purohit",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Adarsh Purohit",
+     "role": "Managing Director & CEO"
+    },
+    {
+     "name": "Surendra Singh",
+     "role": "CFO"
+    },
+    {
+     "name": "Shradha Purohit Agarwal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Shradha Purohit Agarwal",
+     "role": "Company Secretary, Compliance Officer"
+    },
+    {
+     "name": "Ms. Shradha Purohit Agarwal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Adarsh Purohit",
+     "role": "Managing Director (DIN: 02950960)"
+    },
+    {
+     "name": "Umang Bagaria",
+     "role": "Director (DIN: 10745203)"
+    },
+    {
+     "name": "Mr. Adarsh Purohit",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Anupam Shrivastava",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Gwal Das Vyasup",
+     "role": "Director"
+    },
+    {
+     "name": "Mrs. Sunita Parida",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Umang Bagaria",
+     "role": "Director (w.e.f. 27/12/2025)"
+    },
+    {
+     "name": "Mr. Surendra Singh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Shradha Purohit",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Umang Bagaria",
+     "role": "Director"
+    },
+    {
+     "name": "Archana Jhunjhunwala",
+     "role": "Director"
+    }
+   ],
+   "employees": 5
+  },
+  "other_notable": [
+   "32nd AGM scheduled for 28th September 2026 at 11:30 AM IST through VC/OAVM.",
+   "Authorized Share Capital proposed to increase from Rs. 11 Crore to Rs. 60 Crore (Ordinary Resolution, Item No. 3).",
+   "Register of Members and Share Transfer Books closed from 22nd September 2026 to 28th September 2026 (both days inclusive).",
+   "Cut-off date for e-voting: 21st September 2026.",
+   "E-voting period: 25th September 2026 (9:00 AM) to 27th September 2026 (5:00 PM).",
+   "Scrutinizer: CS Sanjay Kumar Vyas, Practicing Company Secretary (Membership No. 55689).",
+   "Registrar & Share Transfer Agent: Purva Sharegistry (India) Pvt. Ltd.",
+   "Bankers: Kotak Mahindra Bank, Syndicate Bank, Canara Bank.",
+   "Registered Office: OU-618, 6th Floor, Esplanade One, Rashulgarh, P.O Mancheswar, Dist. Khurda, Bhubaneswar, Orissa \u2013 751 010.",
+   "Corporate Office: P-27, Princep Street, 3rd Floor, Kolkata-700 072.",
+   "Company website: www.primecapitalmarket.in",
+   "CIN: L67120OR1994PLC003649",
+   "Scrip Code: 535514 (BSE)",
+   "Authorized Share Capital proposed to increase from \u20b911 Crore to \u20b960 Crore by creation of additional 49 Crore Equity Shares of \u20b910 each (Board approval: September 1, 2026)",
+   "Paid up Equity Share Capital as on March 31, 2026: \u20b910.001 Crore (1,00,00,100 Equity Shares of \u20b910 each)",
+   "No dividend proposed for FY 2025-26 due to meager profit",
+   "Company listed on BSE Limited, shares actively traded",
+   "Financial statements prepared under IND AS",
+   "Statutory Reserve: \u20b9Nil transferred during year under review as per RBI guidelines",
+   "Independent Directors: 3 as on March 31, 2026",
+   "Meeting of Independent Directors held on February 14, 2025",
+   "Board Evaluation conducted as per SEBI Guidance Note",
+   "RTA: Purva Sharegistry (India) Pvt. Ltd., Mumbai",
+   "Corporate Office: P-27, Princep Street, 3rd Floor, Kolkata-700 072",
+   "Company is a systemically important non-deposit taking NBFC.",
+   "Revenue from operations: \u20b93,246.81 lakh; Other income: \u20b911.00 lakh; Total income: \u20b93,257.81 lakh for FY 2025-26.",
+   "Net loss for the year; Return on Net Worth worsened primarily due to mark-to-market loss on FNO Segment of BSE.",
+   "No financial ratios showed significant changes (variation of 25% or more) compared to previous year.",
+   "Fine of Rs. 5,900 levied by BSE for delayed filing of Related Party Transactions under Regulation 23(9) of SEBI LODR Regulations, 2015.",
+   "No foreign exchange earnings or outgo during the year.",
+   "No public deposits accepted/held during the year.",
+   "CSR provisions not applicable to the Company.",
+   "Business Responsibility Report not applicable (not among top 500/1000 companies by turnover).",
+   "Maintenance of cost records not required.",
+   "No frauds reported by auditors under Section 143(12).",
+   "No cases of sexual harassment during the year.",
+   "Complied with Secretarial Standards SS-1 and SS-2.",
+   "Internal audit entrusted to M/s. Mahato Prabir & Associates, Chartered Accountant Firm, Kolkata (FRN - 325966E).",
+   "Secretarial Auditor: Mr. Sanjay Kumar Vyas, Company Secretaries in Practice (C.P. No. 21598).",
+   "Statutory Auditors appointed for five consecutive years at 29th AGM held on June 9, 2023.",
+   "Familiarization programme details available at https://www.primecapitalmarket.in/Company_Policies.aspx.",
+   "NRC Policy, Whistle Blower Policy, and other policies available on company website.",
+   "Company uses AI and advanced analytics for credit underwriting, customer acquisition, fraud detection, and risk management.",
+   "Zero NPA track record claimed.",
+   "Strong relationships with marquee corporate anchors.",
+   "Digital workflows and low cost-to-income structure.",
+   "Promoters re-classified as Public as per BSE Approval Letter dated May 8, 2025",
+   "Board met 7 times during FY 2025-26",
+   "Company listed on BSE Ltd.",
+   "Registered Office: OU-618, 6th Floor, Esplanade One, Rashulgarh, P.O Mancheswar, Dist. Khurda, Bhubaneswar, Orissa \u2013 751 010",
+   "Registrar and Transfer Agent: Purva Sharegistry (India) Pvt. Ltd., Mumbai",
+   "Registration Date: 28/06/1994",
+   "Secretarial Audit conducted for FY ended 31st March 2025 (report dated August 19, 2026)",
+   "Familiarization Programme for Independent Directors web-link: https://www.primecapitalmarket.in/Company_Policies.aspx",
+   "Remuneration Policy web-link: https://www.primecapitalmarket.in/Company_Policies.aspx",
+   "8.04% decrease in salaries of managerial personnel in FY 2025-26",
+   "Ratio of MD remuneration to median employee remuneration: 2.63:1",
+   "Ratio of CFO and CS remuneration to median employee remuneration: 1.00:1 each",
+   "Company is a Non-Banking Financial Company (implied by KYC/AML policy reference).",
+   "Registered Office shifted from State of Orissa, Bhubaneshwar to State of Maharashtra, Mumbai (approved in 31st AGM on 29th September 2025)."
+  ],
+  "risks": [
+   "Valuation of unquoted shares at cost subject to independent valuer confirmation",
+   "Balances of trade receivables, loans and advances, trade payables subject to confirmation",
+   "No actuarial valuation for employee retirement benefits",
+   "Non-traded/suspended stocks valued at last traded price",
+   "Advances against shares of \u20b9165.79 Lakh without interest pending settlement",
+   "Credit risk",
+   "Liquidity risk",
+   "Interest rate risk",
+   "Market risk (quoted investments exposed to stock price fluctuations)",
+   "Competition risk",
+   "Human resource risk",
+   "Operational risk",
+   "Information security risks",
+   "Regulatory risk",
+   "Macro-economic risks",
+   "Technology and cyber security risks",
+   "Margin pressure due to rising funding costs and competitive pricing",
+   "Risk management is embedded in the Company's operating framework; comprehensive approach includes periodic review, mitigating controls, and reporting mechanism; framework examined periodically by Board and Audit Committee.",
+   "Valuation of Inventories of Unquoted Shares valued at cost, subject to independent valuer; fair valuation under process",
+   "Balances of trade receivable, loans and advances, trade payable subject to confirmation from respective parties",
+   "No actuarial valuation report obtained for Employees Retirement Benefit; management observes no liability at present",
+   "Non-traded / suspended stock valued at last traded price; management opines value shown is fair value with no impact on Statement of Profit & Loss",
+   "Advances against shares of Rs. 165.79 Lakh without interest; management opines value shown is fair value with no impact on Statement of Profit & Loss",
+   "The company has granted loan or advance in the nature of loan repayable on demand amounting to Rs 1894.72 Lakh without specifying any terms or period of repayment which is 100% of the total loans granted out of which the company has granted loan amounting to Rs 64.25 Lakh in the nature of loan repayable on demand to promoters, related parties",
+   "The Company has used accounting software systems for maintaining its books of account for the financial year ended March 31, 2026 which did not have a feature of recording audit trail (edit log) facility throughout the year for all relevant transactions recorded in the respective software systems",
+   "Market risk (foreign currency risk, Interest rate risk, Equity price risk, Commodity Price risk)",
+   "Uncertain tax positions and outcomes",
+   "Pending litigation and contingent liabilities",
+   "Estimation uncertainty in useful life of assets",
+   "Inventory write-down risk",
+   "Trade receivable impairment risk",
+   "Fair valuation of unquoted equity shares (Level 3 hierarchy) not independently valued",
+   "Credit risk from lending portfolio",
+   "Liquidity risk from maturity mismatches",
+   "Market risk - interest rate risk on fixed rate borrowings",
+   "Market risk - price risk on mutual fund investments",
+   "Concentration risk in Financial Services sector (100% of loan portfolio)",
+   "Significant increase in credit risk triggered by 2-notch rating downgrade, legal proceedings, fraud, group stress, or 30+ days past due",
+   "Default risk when loans exceed 90 days past due",
+   "Investments/inventories in small cap illiquid stocks with thin or no trading, some suspended by stock exchanges, valued at last traded price without provision for possible losses",
+   "Interest-free loans and advances of Rs. 165.79 Lakh given"
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any Subsidiary, Associate and Joint Venture during the reporting period."
+   },
+   {
+    "name": "Not Any",
+    "holding_pct": null,
+    "business": "Not Applicable"
+   },
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company does not have any subsidiary company"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties as defined under Companies Act, 2013",
+    "nature": "Transactions in ordinary course of business and on arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Holding Company",
+    "nature": "Loans and advances in the nature of loans to subsidiaries; Loans and advances in the nature of loans to associates; Loans and advances in the nature of loans to Firms/Companies in which directors are interested; Investment by the loanee in the shares of parent Company",
+    "amount_cr": 0
+   },
+   {
+    "party": "Subsidiary",
+    "nature": "Loans and advances in the nature of loans to subsidiaries; Loans and advances in the nature of loans to associates; Loans and advances in the nature of loans to Firms/Companies in which directors are interested",
+    "amount_cr": 0
+   },
+   {
+    "party": "None",
+    "nature": "No contracts or arrangements not at arm's length basis; No material contracts or arrangements at arm's length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Promoters, Directors, Management, Subsidiaries or Relatives",
+    "nature": "No transactions with related party that may have potential conflict of interest",
+    "amount_cr": 0
+   },
+   {
+    "party": "Promoters, related parties as defined in clause (76) of section 2 of the Companies Act 2013",
+    "nature": "Loan or advance in the nature of loan repayable on demand",
+    "amount_cr": 0.6425
+   },
+   {
+    "party": "Symphony Suppliers Pvt Ltd",
+    "nature": "Group Companies",
+    "amount_cr": 0.0104
+   },
+   {
+    "party": "Nirnidhi Consultant Pvt Ltd",
+    "nature": "Group Companies",
+    "amount_cr": -1.9835
+   },
+   {
+    "party": "V B Industries Ltd",
+    "nature": "Group Companies",
+    "amount_cr": 0.016
+   },
+   {
+    "party": "JMD Medico Services Ltd",
+    "nature": "Group Companies",
+    "amount_cr": 0.358
+   },
+   {
+    "party": "JMD Sound Ltd",
+    "nature": "Group Companies",
+    "amount_cr": 0.0075
+   },
+   {
+    "party": "JMD Venture Ltd",
+    "nature": "Group Companies",
+    "amount_cr": 0
+   },
+   {
+    "party": "Ameeta Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.553
+   },
+   {
+    "party": "Anil Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.006
+   },
+   {
+    "party": "Mamta Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.1118
+   },
+   {
+    "party": "Krishna Devi Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.0107
+   },
+   {
+    "party": "Neha Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.3189
+   },
+   {
+    "party": "Madhav Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.0025
+   },
+   {
+    "party": "Shweta Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.1386
+   },
+   {
+    "party": "Sushil Kumar Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.0345
+   },
+   {
+    "party": "Meenakshi Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.11
+   },
+   {
+    "party": "Priyanka Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.22
+   },
+   {
+    "party": "Sourav Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0
+   },
+   {
+    "party": "Pawan Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.028
+   },
+   {
+    "party": "Mrs. Shradha Purohit",
+    "nature": "Company Secretary",
+    "amount_cr": 0.002
+   },
+   {
+    "party": "Adarsh Purohit",
+    "nature": "Managing Director",
+    "amount_cr": 0.02
+   },
+   {
+    "party": "Neha Adarsh Purohit",
+    "nature": "Relative of Directors and KMP",
+    "amount_cr": 0.275
+   },
+   {
+    "party": "Surendra Singh",
+    "nature": "Chief Financial Officer",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Parent (ownership or control)",
+    "nature": "Borrowings (Outstanding)",
+    "amount_cr": 1.6771
+   },
+   {
+    "party": "Parent (ownership or control)",
+    "nature": "Advances (Outstanding)",
+    "amount_cr": 0.6425
+   },
+   {
+    "party": "Parent (ownership or control)",
+    "nature": "Interest paid",
+    "amount_cr": 0.0277
+   },
+   {
+    "party": "Parent (ownership or control)",
+    "nature": "Interest received",
+    "amount_cr": 0.0221
+   },
+   {
+    "party": "Entities associated with directors and their relatives",
+    "nature": "Loans outstanding",
+    "amount_cr": 0.6425
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "Outlook for FY 2026-27 remains positive, with GDP growth projected at 6.8\u20137.2%, supported by sustained domestic demand, infrastructure investment, and continued policy support. Inflation expected to remain moderate. Macroeconomic environment expected to remain stable with strong external buffers, improving fiscal consolidation, and well-capitalised financial system.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "litigation": [
+   "No significant and material orders passed by the Regulators/Courts that would impact the going concern status of the Company and its future operations.",
+   "No application made by the Company nor any proceeding pending under the Insolvency and Bankruptcy Code, 2016.",
+   "No one-time settlement of loans taken from Banks or Financial Institutions.",
+   "No Instance of penalties, punishment or compounding of offences for Company, Directors, or Other Officers in Default",
+   "No strictures or penalties imposed on the Company or its Directors during current financial year.",
+   "During FY 2024-25, the Company paid SOP Fines of Rs. 0.059 Lakh for delayed filings of Regulation 23(9) of SEBI LODR Regulations, 2015.",
+   "The Company has disclosed the impact of pending litigation, if any, on its financial position in its financial statements.",
+   "The company is subject to legal proceedings and claims which have arisen in the ordinary course of business. Management does not reasonably expect these legal actions to have a material and adverse effect on results of operations or financial condition.",
+   "Initiation of legal proceedings against borrower that may result into significant cash outflow considered as qualitative criteria for significant increase in credit risk"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 1217.63,
+    "note": "Principal Amount Rs 1167.71 crore; Interest due but not paid Rs 49.92 crore as at end of financial year 2025-26"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "During the year under review, the Company has not borrowed any money and has not raised any funds."
+   },
+   {
+    "lender_or_type": "Non-Current Borrowings",
+    "amount_cr": 12.1763,
+    "note": "Opening Balance 20.00 Lakh, Amount Borrowed during the year 1,197.63 Lakh, Amount Repaid during the year 0, Closing Balance 1,217.63 Lakh"
+   },
+   {
+    "lender_or_type": "Corporate Bodies - Term Loan",
+    "amount_cr": 0.2,
+    "note": "Unsecured"
+   },
+   {
+    "lender_or_type": "Corporate Bodies - Loans Repayable on Demand",
+    "amount_cr": 11.9763,
+    "note": "Unsecured, interest rate approx. 9%, repayable on demand"
+   },
+   {
+    "lender_or_type": "Borrowings (Other than debt securities)",
+    "amount_cr": 1217.63,
+    "note": "Fixed rate loans as at March 31, 2026; no variable rate borrowings"
+   },
+   {
+    "lender_or_type": "Hi Klass Trading and Investment Ltd",
+    "amount_cr": 4.3144,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "JMD Ventures Ltd",
+    "amount_cr": 1.6771,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Visagar Financial Services Ltd",
+    "amount_cr": 1.7359,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Symptom Vinimay Pvt. Ltd",
+    "amount_cr": 0.9057,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Amluckie Investment Co Ltd",
+    "amount_cr": 0.5326,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Bahubali Properties Ltd",
+    "amount_cr": 0.5876,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Bankebihari Vincom Pvt. Ltd",
+    "amount_cr": 0.5309,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "CMS Finvest Ltd",
+    "amount_cr": 0.5311,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Turnkey Infrastructure Pvt. Ltd",
+    "amount_cr": 0.5342,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Kanupriya Commercial Pvt. Ltd",
+    "amount_cr": 0.2552,
+    "note": "Top borrowing as at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Corporate Loans",
+    "amount_cr": 12.1763,
+    "note": "Total borrowings as at 31st March 2026 (51.39% of total liabilities)"
+   }
+  ],
+  "dividend_per_share": 0,
+  "contingent_liabilities": [
+   {
+    "nature": "Contingent Liabilities & Commitments",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debt",
+    "amount_cr": 0
+   }
+  ]
+ }
+}

@@ -1,0 +1,635 @@
+{
+ "isin": "INE034B01019",
+ "name": "Gujarat Credit Corporation Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8cc66c65-ebfc-4613-830c-abd59f452594.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 462234,
+ "chunks": 12,
+ "chunks_ok": 11,
+ "facts": {
+  "business": {
+   "description": "Gujarat Credit Corporation Limited is a listed company. The provided text does not describe its business activities, products, customers, geographies, plants, raw materials, competitors, value chain position, end markets, or brands/certifications.",
+   "value_chain_position": "other",
+   "end_markets": [
+    "real estate",
+    "real estate development"
+   ],
+   "products": [
+    {
+     "name": "Loans and advances",
+     "share_of_revenue_pct": null,
+     "note": "Interest-free loans from related parties and others"
+    },
+    {
+     "name": "Investment in equity shares",
+     "share_of_revenue_pct": null,
+     "note": "Investments in associate company GCCL Infrastructure & Projects Ltd and other equity instruments"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India"
+    }
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Servashanti Properties Private Limited",
+    "nature": "Related Party Transactions up to a maximum aggregate value of Rs. 50,00,000/- (Fifty Lakh) per year for the financial year 2026-27, at arm's length basis and in the ordinary course of business",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "M/s. Servashanti Properties Private Limited",
+    "nature": "Common Director (Mr. Amam Shah)",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Servashanti Properties Private Limited",
+    "nature": "Company under Control of Key Managerial Personnel",
+    "amount_cr": 0.32
+   },
+   {
+    "party": "Amam Shreyans Shah, Managing Director",
+    "nature": "Key Managerial Personnel",
+    "amount_cr": 6.2345
+   },
+   {
+    "party": "Samrudhi Properties Private Limited",
+    "nature": "Company under Control of Key Managerial Personnel",
+    "amount_cr": 0.3369
+   },
+   {
+    "party": "Related Parties",
+    "nature": "All Related Party Transactions as defined under section 2(76) of the Act and read with Regulation 23 of the SEBI Listing Regulations entered during the FY 2025-26 were on an arm's length basis and in the ordinary course of business and do not attract the provisions of section 188 of the Act.",
+    "amount_cr": null
+   },
+   {
+    "party": "GCCL Infrastructure & Projects Limited",
+    "nature": "Associate Company",
+    "amount_cr": 2.8288
+   },
+   {
+    "party": "Key Managerial Personnel (Amam Shah, Shreyans S Shah, Binoti A Shah, Bahubhali S Shah, Priyanka S Jhaveri, Vipul R Patel, Apurva R Hathi)",
+    "nature": "Directors",
+    "amount_cr": 17.6817
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel (Samrudhi properties Pvt. Ltd., Servashanti properties Pvt. Ltd., Indian Chronicle Ltd)",
+    "nature": "Entities under KMP control",
+    "amount_cr": 0.99
+   },
+   {
+    "party": "Related parties",
+    "nature": "Commitments",
+    "amount_cr": 0
+   },
+   {
+    "party": "GCCL Infrastructure & Projects Limited",
+    "nature": "Associate Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Amam Shah",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Shreyans S Shah",
+    "nature": "Key Managerial Personnel",
+    "amount_cr": null
+   },
+   {
+    "party": "Binoti A Shah",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Bahubhali S Shah",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Priyanka S Jhaveri",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Vipul R Patel",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Apurva R Hathi",
+    "nature": "Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Samrudhi properties Pvt. Ltd.",
+    "nature": "Companies/LLP under control of Key Managerial Personnel",
+    "amount_cr": null
+   },
+   {
+    "party": "Servashanti properties Pvt. Ltd.",
+    "nature": "Companies/LLP under control of Key Managerial Personnel",
+    "amount_cr": null
+   },
+   {
+    "party": "Indian Chronicle Ltd",
+    "nature": "Companies/LLP under control of Key Managerial Personnel",
+    "amount_cr": null
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel",
+    "nature": "Other Income",
+    "amount_cr": 0.32
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel",
+    "nature": "Advance Received/(Repaid) (Net)",
+    "amount_cr": -0.3369
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Loan Received/(Repaid) (Net)",
+    "amount_cr": 6.2345
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Loan Received/(Repaid) (Net)",
+    "amount_cr": -4.9394
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel",
+    "nature": "Trade and Other Receivable",
+    "amount_cr": 0.3227
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel",
+    "nature": "Advance Received",
+    "amount_cr": 0.3369
+   },
+   {
+    "party": "Companies/LLP under control of Key Managerial Personnel",
+    "nature": "Payable in respect of Loans",
+    "amount_cr": 17.6817
+   },
+   {
+    "party": "Key Managerial Personnel",
+    "nature": "Payable in respect of Loans",
+    "amount_cr": 0.99
+   }
+  ],
+  "auditor": {
+   "name": "SORAB S ENGINEER & CO.",
+   "opinion": "The Auditor's Report does not contain any qualification, reservation or adverse remark.",
+   "qualifications_or_emphasis": [
+    "Auditors have raised no qualification on the financial statements for F.Y. 2025-26.",
+    "The Company is required to have an internal audit system under section 138 of the Act, it does not have the same.",
+    "The Holding Company does not have internal audit system as required under section 138 of the act.",
+    "The Associate Company does not have internal audit system as required under section 138 of the act."
+   ],
+   "key_audit_matters": [
+    "There are no key audit matters to communicate in our report."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Binoti Shah Jatinbhai (DIN: 07161243) as Director, liable to retire by rotation",
+    "Continuation of directorship of Bahubali Shantilal Shah (DIN: 00347465) as Non-Executive Director post attaining age of 75 years",
+    "Re-appointment of Amam Shreyans Shah (DIN: 01617245) as Managing Director for five years with effect from 4th September, 2026 to 3rd September 2031",
+    "Appointment of Vipul Ramanbhai Patel as Additional Non-Executive Independent Director on 03-09-2025",
+    "Appointment of Apurva Hathi as Additional Non-Executive Independent Director on 03-09-2025",
+    "Cessation of Laxminarayan Amritlal Patel as Director on 04-09-2025",
+    "Cessation of Vipul Raja as Director on 04-09-2025",
+    "Re-appointment of Priyank Shrirajbhai Jhaveri as Independent Director for 5 years on 30-09-2025",
+    "Change in designation of Vipul Ramanbhai Patel to Independent Director on 30-09-2025",
+    "Change in designation of Apurva Hathi to Independent Director on 30-09-2025",
+    "Mr. Vipul Ramanbhai Patel and Mr. Apurva Hathi hold the position of Independent Directors of the Company as on date. Due to an inadvertent technical glitch, their names were not registered in the Independent Director Databank prior to their initial appointment. However, this administrative omission has since been rectified, and both directors are duly registered in the Independent Director Databank as on date.",
+    "Mr. Vipul Ramanbhai Patel and Mr. Apurva Hathi have been appointed on the board of the company as Non-executive independent directors with effect from 3rd September, 2025",
+    "Mr. Laxminarayan Amritlal Patel and Mr. Vipul Raja both being Non-Executive Independent directors have resigned from the company with effect from 4th September, 2025",
+    "As on 31st March, 2026, there were 3 (three) members of Nomination and Remuneration Committee, all members were Independent Directors.",
+    "As on 31st March, 2026, there were 3 (three) members of Stakeholders' Relationship Committee (SRC). All members were Independent Directors."
+   ],
+   "top_shareholders": [
+    {
+     "name": "Mr. Bahubali Shantilal Shah",
+     "pct": null
+    },
+    {
+     "name": "Mr. Amam Shreyans Shah",
+     "pct": null
+    },
+    {
+     "name": "Amam Shreyans Shah",
+     "pct": null
+    },
+    {
+     "name": "Bahubali Shantilal Shah",
+     "pct": null
+    },
+    {
+     "name": "BAHUBALI SHANTILAL SHAH",
+     "pct": 8
+    },
+    {
+     "name": "AMAM SHREYANS SHAH",
+     "pct": 8
+    },
+    {
+     "name": "KIRTIBEN PATEL",
+     "pct": 3.2
+    },
+    {
+     "name": "GENUS EXPORTS LTD",
+     "pct": 3.2
+    },
+    {
+     "name": "LIPI MERCANTILE LTD",
+     "pct": 3.2
+    },
+    {
+     "name": "RAJESH KUMAR PATEL",
+     "pct": 3.2
+    },
+    {
+     "name": "GENUS COMMUTRADE LTD",
+     "pct": 3.2
+    },
+    {
+     "name": "ALFA FINCAPS LTD",
+     "pct": 3.2
+    },
+    {
+     "name": "PROMISE FINANCE LTD",
+     "pct": 2.8
+    },
+    {
+     "name": "SUKH SHANTI REALITIES PVT LTD",
+     "pct": 2.8
+    },
+    {
+     "name": "Bahubali S Shah",
+     "pct": 20.0
+    },
+    {
+     "name": "Aajkal Investment Pvt Ltd",
+     "pct": 6.67
+    },
+    {
+     "name": "Amam S Shah",
+     "pct": 3.33
+    },
+    {
+     "name": "Nirmam S Shah",
+     "pct": 3.33
+    },
+    {
+     "name": "Smruti S Shah",
+     "pct": 0.1
+    },
+    {
+     "name": "Shreyansh S Shah",
+     "pct": 0.0
+    }
+   ],
+   "promoter_holding_pct": 33.43,
+   "auditor_change": "No resignation of the statutory auditors during the year."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "AMAM SHREYANS SHAH",
+     "role": "Managing Director"
+    },
+    {
+     "name": "PRIYANK SHRIRAJBHAI JHAVERI",
+     "role": "Independent Director"
+    },
+    {
+     "name": "BINOTI SHAH JATINBHAI",
+     "role": "Director"
+    },
+    {
+     "name": "VIPUL RAMANBHAI PATEL",
+     "role": "Independent Director"
+    },
+    {
+     "name": "APURVA HATHI",
+     "role": "Independent Director"
+    },
+    {
+     "name": "BAHUBALI SHANTILAL SHAH",
+     "role": "Director (Non-Executive)"
+    },
+    {
+     "name": "PATEL HETAL HARESHKUMAR",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Amam Shreyans Shah",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Priyank Shrirajbhai Jhaveri",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Binoti Shah Jatinbhai",
+     "role": "Non-executive Director"
+    },
+    {
+     "name": "Bahubali Shantilal Shah",
+     "role": "Non-executive Director"
+    },
+    {
+     "name": "Vipul Ramanbhai Patel",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Apurva Hathi",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Patel Hetal Hareshkumar",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Amam Shah",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Patel Hetal Hareshkumar",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Binoti Shah Jatinbhai",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Bahubali Shantilal Shah",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Ms. Patel Hetal Hareshkumar",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Amam Shreyans Shah",
+     "role": "Chairman and Managing Director"
+    },
+    {
+     "name": "Amam Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Shreyans S Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Binoti A Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Bahubhali S Shah",
+     "role": "Director"
+    },
+    {
+     "name": "Priyanka S Jhaveri",
+     "role": "Director"
+    },
+    {
+     "name": "Vipul R Patel",
+     "role": "Director"
+    },
+    {
+     "name": "Apurva R Hathi",
+     "role": "Director"
+    },
+    {
+     "name": "CA. Chokshi Shreyas B.",
+     "role": "Partner (Auditor)"
+    },
+    {
+     "name": "CA. Chokshi Shreyas B.",
+     "role": "Partner, Sorab S Engineer & Co. (Auditor)"
+    },
+    {
+     "name": "Shreyans S Shah",
+     "role": "Key Managerial Personnel"
+    }
+   ],
+   "employees": 1
+  },
+  "other_notable": [
+   "33rd Annual General Meeting scheduled for Wednesday, 30th September, 2026 at 12:30 P.M. at Registered Office",
+   "Register of Members and Share Transfer books closed from 24th September, 2026 to 30th September, 2026 (both days inclusive)",
+   "Remote e-voting period: Sunday 27th September, 2026 at 09.00 A.M. to Tuesday 29th September, 2026 at 05.00 P.M.",
+   "Cut-off date for e-voting: Wednesday 23rd September, 2026",
+   "Statutory Auditors: SORAB S ENGINEER & CO., FRN: 11041700",
+   "Secretarial Auditor: M/S, GKV & ASSOCIATES",
+   "Registrar and Share Transfer Agent: BIGSHARE SERVICES PVT. LTD",
+   "Company website: www.gccl.co.in",
+   "BSE Scrip Code: 511441/GUJCRED",
+   "CIN: L72900GJ1993PLC020564",
+   "Paid-up equity share capital reconstituted at Rs. 3,00,00,000 after forfeiture of 2,20,00,000 equity shares approved by BSE on 25th March 2026",
+   "33rd AGM scheduled for 30th September 2026 at 12:30 p.m. at registered office",
+   "Company has associate company; consolidated financial statements prepared",
+   "No public deposits accepted during the year",
+   "No employee remuneration exceeding prescribed limits",
+   "Foreign exchange earnings and outgo: Nil",
+   "No R&D activity carried out",
+   "No energy conservation investments made",
+   "The Company complies with all applicable secretarial standards issued by the Institute of Company Secretaries of India.",
+   "The performance evaluation of the Directors was completed during the year under review.",
+   "The Company undertakes and makes necessary provision of an appropriate induction programme for new Director(s) and ongoing training for existing Directors.",
+   "During the period under review, as per the statutory auditors' report, no frauds by the Company or on the Company by its officers or employees has been noticed or reported during the year under sub-section (12) of section 143 of the Companies Act,2013.",
+   "M/s Sorab S Engineer & Co, Chartered Accountants, Ahmedabad (FRN: 110417W), were appointed as Statutory Auditors of the Company for term of 05 (Five) years to hold office from the conclusion of the 29th Annual General Meeting till the conclusion of the 34th Annual General Meeting of the Company to be held in the year 2027.",
+   "Pursuant to Provision of Section 138 of Companies Act, 2013, read with Companies (Accounts) Rules, 2014, the Board of Directors on recommendation of Audit Committee has appointed M/s. Dhruv M Patel & Associates, Chartered Accountants (FRN: 162705W) as an Internal Auditor of Company for F.Y. 2025-2026.",
+   "Pursuant to the provisions of Section 204 of the Companies Act, 2013, read with the Companies (Appointment and Remuneration of Managerial Personnel) Rules, 2014, the shareholders have appointed M/s. GKV & Associates (ICSI Firm Registration No.: S2018GJ565600) as the Secretarial Auditor of the Company for a term of five (5) consecutive years, commencing from the Financial Year 2025-26 up to the Financial Year 2029-30.",
+   "Pursuant to the provisions of Section 148 of the Companies Act, 2013 read with the Companies (Cost Records and Audit) Rules, 2014, as amended from time to time, the Company is not required to maintain Cost Records under said Rules.",
+   "The company has in place Internal Financial Control system, commensurate with size & complexity of its operations to ensure proper recording of financial and operational information & compliance of various internal controls & other regulatory & statutory compliances.",
+   "During the year under review, the company has 1 (one) associate company i.e. GCCL Infrastructure & Projects Limited. Additionally, the company does not have Subsidiary Company. Accordingly, no director has drawn remuneration or commission from holding/subsidiary Company.",
+   "The Business Responsibility and Sustainability Report for the year ended March 31st, 2026 as stipulated under Regulation 34 of the Listing Regulations is not applicable to the Company.",
+   "As the Company is not having net worth of Rupees Five Hundred Crores or more, or turnover of Rupees One Thousand Crores or more or a Net Profit of Rupees Five Crores or more during any financial year. The Company is not required to comply with the provisions of Section 135 of the Companies Act, 2013 with the regard to the formation of the CSR Committee and undertaking of Social Expenditure as required under the said Section.",
+   "All the insurable interests of your company are adequately insured.",
+   "During the year under review, your Company does not have any Subsidiaries, Associate or Joint Venture Company. During the year under review, the company has 1 (one) associate company i.e. GCCL Infrastructure & Projects Limited. Details mentioned in AOC-I part of Annexure I.",
+   "Pursuant to the approval of Resolution plan by the Hon'ble NCLT, the Company shall operate in two different business segments which shall change the nature of business operations.",
+   "All Related Party Transactions that were entered into during the financial year were on an arm's length basis, in the ordinary course of business and were in compliance with the applicable provisions of the Act and the Listing Regulations.",
+   "The particulars of loans, guarantees and investments, if any taken or given, have been disclosed in the Financial Statement for the F.Y. 2025-26.",
+   "In pursuance to Section 177 of the Companies Act, 2013, the Company has adopted a Vigil Mechanism /Whistle Blower Policy to deal with instance of fraud and mismanagement, if any.",
+   "Your Company has an elaborated Risk Management procedure and adopted systematic approach to mitigate risk associated with accomplishment of objectives, operations, revenues and regulations.",
+   "The Company has in place an Anti-Sexual Harassment Policy as per the requirements of The Sexual Harassment of Women at the Workplace (Prevention, Prohibition & Redressal) Act, 2013. During the financial year under review, the Company has complied with all the provisions of the POSH Act and the rules framed thereunder. Further details are as follows: a. Number of complaints of Sexual Harassment received in the Year Nil b. Number of Complaints disposed off during the year Nil c. Number of cases pending for more than ninety days Nil",
+   "During the year under the review, there were no applications made or proceedings pending in the name of the company under the insolvency and bankruptcy code, 2016.",
+   "During the year under the review, there has been no one time settlement of loans taken from banks and financial institutions.",
+   "The Company affirms that it has duly complied with all provisions of the Code on Social Security 2020, and has extended all statutory benefits to eligible women employees during the year.",
+   "Your directors state that no disclosure or reporting is required in respect of the following items as there were no transactions on these items during the year under review: 1. Issue of equity shares with differential rights as to dividend, voting or otherwise. 2. Issue of shares (sweat equity shares) to employees of the Company under ESOS. 3. During the Year under review, no significant or material orders were passed by the Regulators or Courts or Tribunals which impact the going concern status and Company operations in future. 4. During the year under review, there were no instances of non-exercising of voting rights in respect of shares purchased directly by employees under a scheme pursuant to Section 67(3) of the Act read with Rule 16(4) of Companies (Share Capital and Debentures) Rules, 2014 is furnished. 5. The Company has not issued any equity shares during the year under review and hence no information as per provisions of Section 62(1)(d) of the Act read with Rule 8(13) of the Companies (Share Capital and Debentures) Rules, 2014 is furnished.",
+   "The company has forfeited 2,20,00,000 equity shares of Rs. 10/- each, which were partly paid-up due to non-payment of call monies.",
+   "MGT-14 for appointment of Secretarial Auditor at Annual General Meeting for the five consecutive financial year.",
+   "Due to an inadvertent technical glitch, their names were not registered in the Independent Director Databank prior to their initial appointment. However, this administrative omission has since been rectified, and both directors are duly registered in the Independent Director Databank as on date.",
+   "The Company has formulated a Code of Fair Disclosure (Including Determination of Legitimate Purpose), Internal Procedures and Conduct for Regulating, Monitoring and Reporting of Trading by Designated Person(s) in accordance with provisions of SEBI (Prohibition of Insider Trading) Regulations, 2015.",
+   "The Company has developed a Related Party Transaction Policy which is uploaded on the website of the Company at https://www.gccl.co.in.",
+   "The Company has obtained a certificate from Practicing Company Secretary regarding compliance of conditions of Corporate Governance.",
+   "The shares are listed on BSE Limited However, Trading is suspended on BSE Limited.",
+   "During the Financial year, no shares were dematerialized.",
+   "As on 31st March, 2026, 22,29,790 Equity Shares were held in the dematerialized form. Approximately 74.32% of the equity shares have been dematerialized.",
+   "The Company does not have any outstanding GDRs / ADRs / Warrants / Any other Convertible Instruments as on 31st March, 2026.",
+   "During the FY 2025-26, the Company has not sought or passed any resolution through Postal Ballot.",
+   "During the Financial Year ended on 31ST March, 2026, the company has not called any Extra-ordinary General Meeting of the company.",
+   "No Special Resolution is proposed to be passed through postal ballot in ensuing Annual General Meeting.",
+   "The Company has adopted following non mandatory requirements as prescribed under Regulation 27(1) read with Part E of Schedule II of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+   "It is affirmed that no personnel have been denied access to Audit Committee during the FY 2025-26.",
+   "The Company has complied with the applicable mandatory requirements as specified under Regulation 15 of SEBI Listing Regulations.",
+   "The Company confirms compliance with Corporate Governance requirements specified in Regulations 17 to 27 of the SEBI Listing Regulations, as applicable.",
+   "The Company has also obtained a certificate either from the Statutory Auditor or Practicing Company Secretary regarding compliance of conditions of Corporate Governance."
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Execution of a Lease Agreement to lease out company-owned land to M/s. Servashanti Properties Private Limited effective April 1, 2026 for 11 months at Rs. 3,00,000 per month, total value not exceeding 50 lakhs during 2026-2027.",
+    "value_cr": 0.5
+   }
+  ],
+  "risks": [
+   "Company currently operates with zero business turnover",
+   "Dependence on lease arrangement for operational sustenance",
+   "Search & seizure operation was conducted by Income Tax Department at the Company's corporate office on 14th May, 2025 and the same was ended on 17th May, 2025 at 11:30 p.m.",
+   "The company has forfeited 2,20,00,000 equity shares of Rs. 10/- each, which were partly paid-up due to non-payment of call monies.",
+   "The Company has submitted annual audited standalone and consolidated financial result for the financial year 2025-26 beyond sixty days from the end of the financial year along with audit report.",
+   "The company has not appointed Chief Financial Officer of the company for the F.Y. 2025-26.",
+   "The Company has filed Form MGT-14 for appointment of Secretarial Auditor at the Board Meeting on delay.",
+   "Mr. Vipul Ramanbhai Patel and Mr. Apurva Hathi hold the position of Independent Directors of the Company as on date. Due to an inadvertent technical glitch, their names were not registered in the Independent Director Databank prior to their initial appointment.",
+   "Financial Market Volatility and Macroeconomic Pressures",
+   "Demand Cyclicality and Localization Variances",
+   "Competition from Alternative Asset Classes",
+   "Regulatory Complexities and Project Execution Risks",
+   "Persistent inflationary pressures",
+   "Interest rate volatility",
+   "Global geopolitical disruptions",
+   "Changes in development guidelines",
+   "Environmental clearance processes",
+   "Taxation frameworks and zoning regulations",
+   "Execution delays",
+   "Supply chain disruptions",
+   "Cyber security threats",
+   "The Company has formulated a Code of Fair Disclosure (Including Determination of Legitimate Purpose), Internal Procedures and Conduct for Regulating, Monitoring and Reporting of Trading by Designated Person(s) in accordance with provisions of SEBI (Prohibition of Insider Trading) Regulations, 2015, as amended, with a view to regulate trading in securities by the Directors and Designated Persons as identified therein.",
+   "The Code prescribes for the procedures and compliances applicable for the preservation of unpublished price sensitive information under the aforesaid SEBI Regulations.",
+   "To ensure strict compliance with ethical and legal standards across the Company a Vigil Mechanism/ Whistle Blower Policy is in place for directors and employees to report concerns about unethical behavior, actual or suspected fraud or violation of the Company's Code of Conduct or ethic policy.",
+   "The said mechanism also provides for adequate safeguards against victimization of director(s) / Employee(s) who avail of the mechanism and also provide for direct access to the Chairman of the Audit Committee in exceptional cases.",
+   "Interest rate risk arises from the sensitivity of financial assets and liabilities to changes in market rates of interest.",
+   "Credit risk is the risk that a counterparty will not meet its obligations under a financial instrument or customer contract, leading to a financial loss.",
+   "Liquidity risk is the risk that the Company may not be able to meet its present and future cash and collateral obligations without incurring unacceptable losses.",
+   "Market risk is the risk that the fair value of future cash flows of a financial instrument will fluctuate because of changes in market prices.",
+   "The Holding Company does not have internal audit system as required under section 138 of the act.",
+   "The Associate Company does not have internal audit system as required under section 138 of the act."
+  ],
+  "subsidiaries": [
+   {
+    "name": "GCCL Infrastructure & Projects Limited",
+    "holding_pct": 48.98,
+    "business": "Associate company"
+   },
+   {
+    "name": "GCCL Infrastructure & Projects Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "GCCL Construction and Realities Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "GCCL Infrastructure & Project Ltd",
+    "business": "Associate company"
+   },
+   {
+    "name": "GCCL Infrastructure & Projects Limited",
+    "holding_pct": null,
+    "business": "Associate Company"
+   }
+  ],
+  "litigation": [
+   "Search & seizure operation was conducted by Income Tax Department at the Company's corporate office on 14th May, 2025 and the same was ended on 17th May, 2025 at 11:30 p.m.",
+   "There were neither any instances of non-compliance by the Company nor there were any penalties or strictures imposed on the Company by the Stock Exchange/(s) or SEBI or any statutory authorities relating to the above during the last three years except as mentioned in MR-3",
+   "Therefore, the company has received direction or order, including any ad interim or interim orders, or any other communication from the authority.",
+   "Income Tax dispute of Rs 89.00 lakhs pending before Assessing Officer/National Faceless Assessment Centre for period 01-04-2019 to 15-05-2025.",
+   "Income Tax claims/disputes/demands not acknowledged as debts: Rs 89.00 lakhs as at March 31, 2026 (Previous year: Nil)",
+   "Income Tax demand of Rs 89 lakhs not acknowledged as debt"
+  ],
+  "outlook": [
+   {
+    "statement": "Global real GDP growth is projected to moderate to around 3.0%, constrained by rising trade frictions, persistent geopolitical and policy uncertainties, elevated market volatility, and divergent inflationary trends across major economies.",
+    "period": "Global Economic Outlook"
+   },
+   {
+    "statement": "India's economic journey over recent years has been characterized by remarkable resilience, structural transformation, and a steady ascent on the global stage. Having previously overtaken the United Kingdom to claim the fifth-largest economy spot, India advanced further to surpass Japan, solidifying its position as the fourth-largest economy in the world.",
+    "period": "Indian Economic Outlook"
+   },
+   {
+    "statement": "Real estate sector in India is expected to reach US$ 1 trillion in market size by 2030, up from US$ 200 billion in 2021 and contribute 13% to the country's GDP by 2026. The Indian real estate market is projected to experience a substantial increase, potentially reaching a value of US$ 5-7 trillion by the year 2047, with the possibility of surpassing US$ 10 trillion.",
+    "period": "Real Estate Sector"
+   }
+  ],
+  "dividend_per_share": 0,
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax dispute for period 01-04-2019 to 15-05-2025",
+    "amount_cr": 0.89
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 0.89
+   },
+   {
+    "nature": "Claims/Disputes/Demands not acknowledged as debts - Income Tax",
+    "amount_cr": 0.89
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Long Term Borrowing",
+    "amount_cr": 18.6717,
+    "note": "As at March 31, 2026; increased by Rs 6.2345 crore during the year"
+   },
+   {
+    "lender_or_type": "Related Parties (Unsecured Term Loans)",
+    "amount_cr": 18.6717,
+    "note": "Interest-free loans from related parties"
+   },
+   {
+    "lender_or_type": "Borrowings (Non-Current)",
+    "amount_cr": 18.6717,
+    "note": "As at March 31, 2026; none at fluctuating rate of interest"
+   },
+   {
+    "lender_or_type": "Borrowings (Non-Current)",
+    "amount_cr": 12.4372,
+    "note": "As at March 31, 2025; none at fluctuating rate of interest"
+   },
+   {
+    "lender_or_type": "Long Term Borrowing",
+    "amount_cr": 18.6717,
+    "note": "Consolidated Non-current Borrowings as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Related Parties (Unsecured Term Loans)",
+    "amount_cr": 18.6717,
+    "note": "Interest free"
+   },
+   {
+    "lender_or_type": "Non-Current Borrowings",
+    "amount_cr": 18.6717,
+    "note": "Fair value equals carrying amount; classified as Level 2 in fair value hierarchy"
+   },
+   {
+    "lender_or_type": "Borrowings (Total)",
+    "amount_cr": 18.6717,
+    "note": "As at March 31, 2026; none at fluctuating rate of interest"
+   }
+  ]
+ }
+}
