@@ -1,0 +1,890 @@
+{
+ "isin": "INE871H01011",
+ "name": "GSS Infotech Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31119_GSS_2025_2026_A_4707980_02092026172551.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 495731,
+ "chunks": 13,
+ "chunks_ok": 13,
+ "facts": {
+  "business": {
+   "description": "GSS Infotech Limited is an IT services company focused on the Healthcare sector, providing managed IT services leveraging next-gen technologies, with operations in the US and India.",
+   "customers": [
+    "Fortune 500 companies",
+    "Global 1000 Companies",
+    "KBRI",
+    "Yale University",
+    "farmers",
+    "agriculture sector"
+   ],
+   "geographies": [
+    {
+     "name": "US",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Overseas",
+     "share_pct": null
+    },
+    {
+     "name": "Worldwide",
+     "share_pct": null
+    },
+    {
+     "name": "APAC - India",
+     "share_pct": null
+    },
+    {
+     "name": "North America",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": null
+    },
+    {
+     "name": "United States of America",
+     "share_pct": null
+    },
+    {
+     "name": "Bangladesh",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    }
+   ],
+   "plants": [
+    {
+     "location": "Hyderabad, India",
+     "capacity": "Global Operations Command Centre (GOCC) and remote delivery centers"
+    },
+    {
+     "location": "Multiple new stores planned in strategic locations across India",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "Healthcare",
+    "Software exports",
+    "Healthcare IT",
+    "BPO services",
+    "IT infrastructure management",
+    "ecommerce",
+    "agriculture",
+    "food retail",
+    "financial services",
+    "manufacturing",
+    "Enterprise IT",
+    "Healthcare (HIPAA compliance mentioned)",
+    "Financial Services (Enterprise Risk Management expertise mentioned)",
+    "Auto Insurance Medical Claims Payment process"
+   ],
+   "brands_or_certifications": [
+    "SEI-CMMi Level-5",
+    "ISO 9001",
+    "ISO 27001",
+    "SSAE18 SOC TYPE II",
+    "ISO 9001:2008",
+    "ISO 27001:2005",
+    "Employee Stock Option Plan 2010 (ESOS 2010)",
+    "Polimeraas",
+    "SSAE 18",
+    "ISO 20001",
+    "HIPAA",
+    "ITIL"
+   ],
+   "products": [
+    {
+     "name": "ADMS (Application Development and Maintenance Services)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "IMS (Infrastructure Management Services)",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Healthcare services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Professional Services",
+     "share_of_revenue_pct": null,
+     "note": "major revenue contributor"
+    },
+    {
+     "name": "Software exports",
+     "share_of_revenue_pct": null,
+     "note": "All efforts geared to increase business of software exports in different products and markets"
+    },
+    {
+     "name": "Network Operations Center",
+     "share_of_revenue_pct": null,
+     "note": "Technology absorption activity"
+    },
+    {
+     "name": "Disaster Recovery Center",
+     "share_of_revenue_pct": null,
+     "note": "Technology absorption activity"
+    },
+    {
+     "name": "IT Infrastructure Management",
+     "share_of_revenue_pct": null,
+     "note": "Technology absorption activity"
+    },
+    {
+     "name": "Offshore Development Center using BOT delivery model",
+     "share_of_revenue_pct": null,
+     "note": "Technology absorption activity"
+    },
+    {
+     "name": "Software Testing Service using SaaS Model",
+     "share_of_revenue_pct": null,
+     "note": "Technology absorption activity"
+    },
+    {
+     "name": "BPO healthcare services",
+     "share_of_revenue_pct": null,
+     "note": "Rendered by wholly owned subsidiary in India"
+    },
+    {
+     "name": "AI-driven IT infrastructure management",
+     "share_of_revenue_pct": null,
+     "note": "Includes AI-powered monitoring, automated provisioning/deprovisioning, AI-based security measures, and L1 issue resolution automation via intelligent chatbot"
+    },
+    {
+     "name": "Healthcare AI solutions",
+     "share_of_revenue_pct": null,
+     "note": "AI-powered diagnostics, personalized treatment plans, and research applications"
+    },
+    {
+     "name": "E-commerce platform for food retail (Polimeraas)",
+     "share_of_revenue_pct": null,
+     "note": "Online marketplace and mobile app for fresh vegetables, fruits, and food items with omnichannel approach (online order, store pickup)"
+    },
+    {
+     "name": "LLM/ChatGPT-based solutions",
+     "share_of_revenue_pct": null,
+     "note": "Intelligent chatbots for customer interactions, knowledge management systems, content generation and curation"
+    },
+    {
+     "name": "Robotic Process Automation (RPA) services",
+     "share_of_revenue_pct": null,
+     "note": "Partnerships with leading RPA service providers for automating repetitive tasks across industries"
+    },
+    {
+     "name": "Cloud Migration Services",
+     "share_of_revenue_pct": null,
+     "note": "Includes assessment, migration roadmap, architecture design for public/private/hybrid cloud, and ongoing optimization"
+    },
+    {
+     "name": "Cybersecurity Solutions",
+     "share_of_revenue_pct": null,
+     "note": "Cloud-based security, AI-driven threat detection, multi-layered defense including network monitoring and vulnerability assessments"
+    },
+    {
+     "name": "Machine Learning & Analytics",
+     "share_of_revenue_pct": null,
+     "note": "Predictive analytics, ML-driven recommendation systems, fraud detection solutions"
+    },
+    {
+     "name": "Application Development",
+     "share_of_revenue_pct": null,
+     "note": "AI-driven testing automation, AI-powered deployment, AI-based application maintenance"
+    },
+    {
+     "name": "ADMS (Application Development and Management Services)",
+     "share_of_revenue_pct": null,
+     "note": "Part of innovative Delivery Framework"
+    },
+    {
+     "name": "BPO (Business Process Outsourcing)",
+     "share_of_revenue_pct": null,
+     "note": "Part of innovative Delivery Framework"
+    },
+    {
+     "name": "Strategic Sourcing Services",
+     "share_of_revenue_pct": null,
+     "note": "Part of innovative Delivery Framework"
+    },
+    {
+     "name": "IT & ITES services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from time and material, job contracts, fixed price maintenance, support services, fixed-price contracts, sale of distinct internally developed software, manufactured systems, third party software, third party hardware"
+    },
+    {
+     "name": "Software services",
+     "share_of_revenue_pct": null,
+     "note": "Sole operating segment per Ind AS 108"
+    }
+   ],
+   "raw_materials": [
+    "fresh vegetables",
+    "fruits",
+    "food items"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "Considerable opportunities arising from AI-led transformation, cloud adoption, cybersecurity, intelligent automation, data platforms and digital engineering; focus on deepening customer relationships, strengthening technology partnerships, exploring new markets and remaining agile.",
+    "period": "next phase"
+   },
+   {
+    "statement": "We are not only intending to leverage on our existing customer base to drive growth we will also be focusing on emerging technologies in the Business Intelligence and Analytics areas, which will be driving transformation and be within the demand circle.",
+    "period": "FY 2026-27"
+   },
+   {
+    "statement": "Global information technology industry projected to reach $5+ trillion in the coming year; GSS Infotech positioned to address diverse client needs through digital transformation solutions.",
+    "period": "coming year"
+   },
+   {
+    "statement": "GSS Infotech committed to fostering strategic partnerships, investing in top talent, expanding knowledge base, and staying agile to shape future of technology industry.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "Plans to leverage Chat GPT platform and LLMs for customer interactions, knowledge management, and content generation; addressing ethical considerations, data privacy, and security.",
+    "period": "future"
+   },
+   {
+    "statement": "Strategic focus on RPA through partnerships with leading service providers to drive operational excellence across industries.",
+    "period": "future"
+   },
+   {
+    "statement": "GSS Infotech commits to getting closer to agriculture segment, exploring exports, establishing direct relationships with farmers, and developing mobile app for e-commerce.",
+    "period": "future"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "GSS Infotech Inc",
+    "holding_pct": null,
+    "business": "US based wholly owned subsidiary"
+   },
+   {
+    "name": "GSS Infotech Inc (Delaware)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Polimeraas Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "GSS Healthcare IT Solutions Private Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "GSS IT Solutions Private Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Polimeraas Retail Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "GSS Infotech Inc (A Delaware Company)",
+    "holding_pct": 100,
+    "business": "Software exports / IT services"
+   },
+   {
+    "name": "Polimeraas Limited",
+    "holding_pct": 100,
+    "business": "Not specified in this part"
+   },
+   {
+    "name": "Polimeraas Retail Private Limited",
+    "holding_pct": 100,
+    "business": "Not specified in this part"
+   },
+   {
+    "name": "GSS IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "Not specified in this part"
+   },
+   {
+    "name": "GSS Healthcare IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "BPO healthcare services in India"
+   },
+   {
+    "name": "Polimeraas",
+    "holding_pct": null,
+    "business": "Brick-and-mortar business specializing in sale of fresh vegetables, fruits, and food items; recently acquired by GSS Infotech"
+   },
+   {
+    "name": "Material subsidiary (unnamed)",
+    "holding_pct": null,
+    "business": "Material subsidiary where independent director appointment on board is pending; auditor changed due to disqualification of earlier auditor"
+   },
+   {
+    "name": "Two Indian subsidiaries (names not specified)",
+    "holding_pct": null,
+    "business": "Not specified"
+   },
+   {
+    "name": "Foreign subsidiary (name not specified)",
+    "holding_pct": null,
+    "business": "Not specified"
+   },
+   {
+    "name": "GSS Infotech Inc (A Delaware Company)",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "GSS IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "GSS Healthcare IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "GSS Infotech CT Inc (Formerly known as System Dynamix Corporation)",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "Infovision Technologies, Inc",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "Infovista Technologies, Inc",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "Technovant Inc",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "Nexii Labs Inc",
+    "holding_pct": 100,
+    "business": "IT and ITES"
+   },
+   {
+    "name": "Polimeraas Ltd",
+    "holding_pct": 100,
+    "business": "Fruits & Veg"
+   },
+   {
+    "name": "Polimeraas Retail Private Ltd",
+    "holding_pct": 100,
+    "business": "Fruits & Veg"
+   },
+   {
+    "name": "Polimeraas Retail Private Limited",
+    "holding_pct": null,
+    "business": "wholly owned subsidiary"
+   },
+   {
+    "name": "GSS Infotech Inc (Delaware)",
+    "holding_pct": 100,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "GSS IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "GSS Healthcare IT Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "Polimeraas Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "Polimeraas Retail Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned Subsidiary"
+   },
+   {
+    "name": "GSS Infotech CT Inc (formerly System Dynamix Corporation)",
+    "holding_pct": null,
+    "business": "Step down Subsidiary"
+   },
+   {
+    "name": "Infovision Technologies, Inc",
+    "holding_pct": null,
+    "business": "Step down Subsidiary"
+   },
+   {
+    "name": "InfovistaTechnologies Inc",
+    "holding_pct": null,
+    "business": "Step down Subsidiary"
+   },
+   {
+    "name": "Technovant Inc",
+    "holding_pct": null,
+    "business": "Step down Subsidiary"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Rambabu & Co., Chartered Accountants",
+   "opinion": "The report of the Statutory Auditor has not made any adverse remarks in their Audit Report. The report of the Statutory Auditor does not contain any qualification, reservation, adverse remark or disclaimer.",
+   "key_audit_matters": [
+    "Non-compliance with Regulation 17(1) - Board composition including woman director",
+    "Non-compliance with Regulation 24 - Independent director on material subsidiary board",
+    "Non-compliance with Regulation 33 - Financial results submission",
+    "Non-compliance with Regulation 24A - Secretarial compliance report submission",
+    "Non-compliance with Regulation 6(1) - Appointment of qualified company secretary as compliance officer (two instances)",
+    "Impairment of investments in subsidiaries (Note 6.1 of standalone financial statements)",
+    "Conversion of loan/advances given to subsidiaries (Note 7.1 of standalone financial statements)"
+   ],
+   "qualifications_or_emphasis": [
+    "Fines imposed by BSE for non-compliances: Rs. 65,000 (Reg 17(1)), Rs. 5,900 (Reg 33), Rs. 2,360 (Reg 24A), Rs. 55,460 (Reg 6(1) - first instance), Rs. 51,920 (Reg 6(1) - second instance)",
+    "Company has paid all fines and appointed directors to address non-compliances",
+    "Pending compliances for conversion of warrants, forfeiture of warrants, conversion of preference shares (due dates lapsed)",
+    "Change in auditor of material subsidiary due to disqualification of earlier auditor",
+    "Emphasis of Matter: Concerns regarding conversion of loan/advances given to subsidiaries (Note 6.1); opinion not modified",
+    "Emphasis of Matter: Impairment of investments in subsidiaries (Note 6.1)",
+    "Emphasis of Matter: Conversion of loan/advances given to subsidiaries (Note 7.1)",
+    "Company is not a Nidhi Company",
+    "Compliance with Section 177 and 188 of Companies Act, 2013 for related party transactions",
+    "Adequate internal audit system commensurate with size and nature of business",
+    "No non-cash transactions with directors under Section 192",
+    "Not required to register under Section 45-IA of RBI Act, 1934",
+    "No core investment company within the Group",
+    "No cash losses in current and preceding financial year",
+    "No resignation of statutory auditors during the year",
+    "No material uncertainty on going concern basis for one year from balance sheet date",
+    "No unspent amount under Section 135(5) for CSR",
+    "No qualifications/adverse remarks in CARO report of subsidiary"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Appointment of Mr. Bhargav Marepally as Managing Director for 5 years effective 14th July 2026 (subject to approval)",
+    "Re-appointment of Mr. Chaitanya Challa as Independent Director for second term of 5 years effective 5th November 2026 (subject to approval)",
+    "Re-appointment of Mr. Rambabu Sampangi Kaipa, retiring by rotation",
+    "Ms. Barsha Agrawal (DIN: 11539716) is appointed as Non-Executive Non-Independent Director of the Company who is liable to retire by rotation w.e.f. February 12, 2026.",
+    "Mr. SaiKiran Satya Surya Raghavendra (DIN:02224296) was Non- Executive, Non-Independent Director of the company, has resigned from his position w.e.f 29th October,2025 due to his personal commitments.",
+    "Mrs. Nagajayanthi Das Juttur Raghavendra ceased to be Non-Executive Independent Director (remuneration Nil in 2025-26 vs 75,000 in 2024-25)",
+    "Mr. P.S. Phaninder Nath ceased as CFO w.e.f. 30th November 2024",
+    "Deeksha Verma ceased as CS w.e.f. 15th May 2024",
+    "Sonu Kumar Agrawal appointed as CFO",
+    "Company appointed a woman director (process ongoing per Secretarial Audit)",
+    "Change in auditor of material subsidiary due to disqualification of auditor during the year",
+    "Company appointed a director (woman director) to address non-compliance with Regulation 17(1)",
+    "Company in process of appointing independent director on board of material subsidiary to address non-compliance with Regulation 24",
+    "Ms. Barsha Agrawal appointed as Additional Director (Non-Executive, Non-Independent) w.e.f. 12th February 2026, approved by postal ballot",
+    "Mr. Saikiran Surya Satya Raghavendra Gundu resigned as Non-Executive, Non-Independent Director on October 29, 2025",
+    "Appointment of Ms. Barsha Agrawal as a Non-Executive, Non-Independent Director through postal ballot",
+    "Ms. Subbarathnamma Palepu (DIN: 09432984) appointed 04/09/2024",
+    "Ms. Barsha Agrawal (DIN: 11539716) appointed 12/02/2026",
+    "Mr. Saikiran Satya Surya Raghavendra Gundu (DIN: 02224296) ceased 29/10/2025"
+   ],
+   "auditor_change": "Change in auditor of the material subsidiary of the Company due to disqualification of auditor during the year",
+   "promoter_holding_pct": 12.71,
+   "top_shareholders": [
+    {
+     "name": "Promoter and Promoter Group",
+     "pct": 12.71
+    },
+    {
+     "name": "Individual shareholders holding nominal share capital up to Rs. 2 lakhs",
+     "pct": 33.82
+    },
+    {
+     "name": "Individual shareholders holding nominal share capital in excess of Rs. 2 lakhs",
+     "pct": 35.16
+    },
+    {
+     "name": "Bodies Corporate",
+     "pct": 9.42
+    },
+    {
+     "name": "Marepally Raghunadha Rao",
+     "pct": 12.58
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Bhargav Marepally",
+     "role": "CEO & Managing Director"
+    },
+    {
+     "name": "Prabhakara Rao Alokam",
+     "role": "Non-Executive, Independent Director"
+    },
+    {
+     "name": "Chaitanya Challa",
+     "role": "Non-Executive, Independent Director"
+    },
+    {
+     "name": "Subbarathnamma Palepu",
+     "role": "Non-Executive, Women Independent Director"
+    },
+    {
+     "name": "Rambabu Sampangi Kaipa",
+     "role": "Non-Executive Director, Non-Independent Director"
+    },
+    {
+     "name": "Barsha Agrawal",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Neha Pamnani",
+     "role": "Company Secretary in Practice (Secretarial Auditor)"
+    },
+    {
+     "name": "Mr. Bhargav Marepally",
+     "role": "Chief Executive Officer and Managing Director"
+    },
+    {
+     "name": "Mr. Sonu Kumar Agrawal",
+     "role": "Chief Financial Officer and Company Secretary"
+    },
+    {
+     "name": "Prabhakara Rao Alokam",
+     "role": "Director (Non-Executive Independent)"
+    },
+    {
+     "name": "Sonu Kumar Agrawal",
+     "role": "CFO"
+    },
+    {
+     "name": "Bhargav Marepally",
+     "role": "CEO & Managing Director, DIN: 00505098"
+    },
+    {
+     "name": "Mr. Bhargav Marepally",
+     "role": "CEO & Managing Director"
+    },
+    {
+     "name": "Mr. Sonu Kumar",
+     "role": "CFO"
+    },
+    {
+     "name": "Company Secretary",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Bhargav Marepally",
+     "role": "CEO & Managing Director (DIN: 00505098)"
+    },
+    {
+     "name": "Sonu Kumar Agrawal",
+     "role": "CFO & Company Secretary"
+    },
+    {
+     "name": "A. Prabhakara Rao",
+     "role": "Director (DIN: 02263908)"
+    },
+    {
+     "name": "A. Prabhakara Rao",
+     "role": "Director"
+    },
+    {
+     "name": "Bharghav Marepally",
+     "role": "CEO & Managing Director"
+    }
+   ],
+   "employees": 48
+  },
+  "other_notable": [
+   "23rd AGM scheduled for 25th September 2026 at 11:00 AM IST through VC/OAVM",
+   "Register of Members and Share Transfer Books closed from 19th September 2026 to 25th September 2026",
+   "Mr. Bhargav Marepally appointed as Managing Director without remuneration from the company; draws remuneration from subsidiary GSS Infotech Inc",
+   "Company is in process of obtaining Central Government approval for Mr. Bhargav Marepally's appointment as he is not a resident of India",
+   "Mr. Chaitanya Challa re-appointed as Independent Director without remuneration",
+   "Registrar & Share Transfer Agent: M/s. Bigshare Services Private Limited",
+   "Bankers: ICICI Bank and Axis Bank",
+   "CIN: L72200TG2003PLC041860",
+   "Registered Office: Wing-B, Ground Floor, N Heights, Plot No. 12, TSIIC Software Units Layout, Madhapur, Serilingampally Mandal, Rangareddy District, Hyderabad \u2013 500081, Telangana, India",
+   "The Board of Directors did not recommend dividend for the financial year ended 31 March 2026.",
+   "The Company's equity shares are listed on BSE Limited and National Stock Exchange of India Limited.",
+   "During the financial year 2025-26, the Company has not accepted any deposit within the meaning of Sections 73 and 74 of the Companies Act, 2013.",
+   "The closing balance of the retained earnings of the Company for FY 2026, after all appropriations and adjustments, was Rs (1,55,29,84,863).",
+   "Total investments carried at cost in subsidiaries as on 31st March 2026: Rs 3,53,88,45,128.",
+   "Exceptional Item: Cancellation of Debt Income of Rs 5212.51 Lakhs (Standalone and Consolidated) in FY 2025-26.",
+   "Consolidated Revenue from operations: Rs 8812.67 Lakhs (FY 2025-26) vs Rs 12,516.83 Lakhs (FY 2024-25).",
+   "Consolidated Profit for the year: Rs -5039.62 Lakhs (FY 2025-26) vs Rs -136.95 Lakhs (FY 2024-25).",
+   "Consolidated Basic EPS: Rs -19.27 (FY 2025-26) vs Rs -0.52 (FY 2024-25).",
+   "AGM scheduled with remote e-voting period from 22nd September 2026 (09:00 hrs) to 24th September 2026 (17:00 hrs), cut-off date 18th September 2026.",
+   "Mr. Rupesh Kothari, Practicing Company Secretary, appointed as Scrutinizer for e-voting process.",
+   "Annual accounts prepared on 'going concern' basis.",
+   "Proper Internal Financial Controls laid down by Directors were followed and are adequate and operating effectively.",
+   "Proper systems to ensure compliance with all applicable laws were in place and adequate and operating effectively.",
+   "Statutory Auditors M/s. Rambabu & Co appointed for second term of five consecutive years from conclusion of 21st AGM till conclusion of 26th AGM.",
+   "Secretarial Auditor: Ms. Neha Pamnani, Practicing Company Secretary (Membership No.: 44300, CP No: 24045).",
+   "Annual Secretarial Compliance Report by Ms. Neha Pamnani for year ended 31st March 2026.",
+   "Material unlisted subsidiary: Polimeraas Limited (requires Secretarial Audit under Section 204).",
+   "Draft annual return as on March 31, 2026 available on www.gssinfotech.com.",
+   "No material related party transactions during FY 2025-26; Form AOC-2 not required.",
+   "Investments in subsidiaries as at 31 March 2026: Total Rs. 3,53,88,45,128 (GSS Infotech Inc: Rs. 89,09,40,578; Polimeraas Limited: Rs. 2,64,27,04,750; GSS Healthcare IT Solutions Private Ltd: Rs. 99,900; GSS IT Solutions Private Ltd: Rs. 99,900; Polimeraas Retail Private Limited: Rs. 50,00,000).",
+   "No investments in Debt Instruments; No guarantees issued under Section 186.",
+   "ESOP: In-principal approval for 20,00,000 shares under GSS Infotech Limited Restricted Employee Stock Option Plan 2013; no shares granted during FY 2025-26.",
+   "NCLT Order dated 02.02.2024: Allotted 92,20,000 Equity Shares and 1,32,61,927 Preference Shares to shareholders of Polimeraas Agros Private Limited (Transferor company).",
+   "Vigil Mechanism / Whistle Blower Policy in place per Section 177(10) and Regulation 22 of SEBI LODR.",
+   "Quarterly Reconciliation of Share Capital Audit by independent Practicing Company Secretary.",
+   "Code on Insider Trading adopted per SEBI (PIT) Regulations, 2015.",
+   "Internal Financial Controls: Accounting policies in line with Ind AS; policies prescribed to subsidiaries; quarterly internal audit of standalone accounts.",
+   "Risk Management: Board regularly discusses significant business risks and mitigation processes.",
+   "Scheme of Merger of Polimeraas Agros Private Limited with GSS Infotech Limited approved by NCLT Hyderabad Bench Order dated 2nd February 2024.",
+   "No change in nature of business.",
+   "Cost records maintained as required under Companies Act, 2013.",
+   "Compliance with Secretarial Standard-1 and Secretarial Standard-2.",
+   "CSR Committee constituted on 04th September 2024; Company does not fall under Section 135 limits since most profit arises from overseas branch.",
+   "POSH Policy and Internal Complaints Committees constituted; zero complaints received during FY 2025-26.",
+   "Conservation of Energy: Operations consume very low levels of energy; technology center has latest energy management system based on human occupancy.",
+   "Foreign Exchange Earnings (Accrual basis) FY 2025-26: Rs. 1,23,17,676; FY 2024-25: Rs. 1,62,99,208. Foreign Exchange Expenditure: NIL for both years.",
+   "Subsidiary financial highlights (AOC-1): GSS Infotech Inc (USD) - Share capital 117.04, Reserves 20,181.70, Total assets 23,299.51, Turnover 8,222.16, PAT 334.68; Polimeraas Limited (INR) - Share capital 1,510.12, Reserves 5,980.45, Total assets 7,579.11, Turnover 0, PAT (78.45); Polimeraas Retail Private Limited (INR) - Share capital 50, Reserves 306.80, Total assets 164.11, Turnover 100.84, PAT (88.08); GSS IT Solutions Private Limited and GSS Healthcare IT Solutions Private Limited - no operations (figures not provided).",
+   "Median remuneration of all employees: Rs. 2,51,169 (12.63% increase from Rs. 2,23,008).",
+   "Average salary of employees other than KMP: Rs. 4,29,801 (16.35% increase).",
+   "Salary of CFO & CS (KMP): Rs. 14,34,708 (16.56% decrease from Rs. 17,19,360).",
+   "CEO & MD remuneration: Nil.",
+   "No employee in receipt of remuneration requiring disclosure under Section 134(3)(q) read with Rule 5(2).",
+   "Pending compliances: Conversion of warrants into equity shares, forfeiture of warrants, conversion of compulsorily redeemable preference shares into equity shares (due date lapsed).",
+   "ESOS 2010: 3,50,000 options approved; no options granted, forfeited, vested, or exercised during year ended 31st March 2025; 3,50,000 options outstanding at year end; Fair value method used under IND AS",
+   "Diluted EPS for year ended 31st March 2025: 0.42 (Standalone) per IND-AS 33",
+   "Registered office: Grd Floor, Wing-B, N heights, Plot No. 12, TSIIC Software Units Layout, Madhapur, Serilingampally Hyderabad, Rangareddi, Telangana - 500081",
+   "Secretarial Auditor: Neha Pamnani, ACS-44300, CP-24045, PR-4765/2023",
+   "Compliance with Secretarial Standards (ICSI), Policies adoption/updation, Website maintenance, Director disqualification (Section 164), Performance evaluation, Related party transactions (Audit Committee approval obtained), Disclosure under Regulation 30, Insider Trading Regulations compliance",
+   "Over 20 years of experience in Enterprise IT sector",
+   "Team of 350+ dedicated IT consultants"
+  ],
+  "risks": [
+   "At present, there exists no element of risk which threatens the existence of the Company.",
+   "Non-compliance with SEBI LODR Regulations (Board composition, woman director appointment, independent director on material subsidiary board)",
+   "Pending compliances: Conversion of warrants into equity shares, forfeiture of warrants, conversion of compulsorily redeemable preference shares into equity shares (due date lapsed)",
+   "Fines imposed by BSE for various non-compliances",
+   "Ethical considerations, data privacy, and security risks in AI/LLM implementation",
+   "Change in auditor of material subsidiary due to disqualification of earlier auditor",
+   "Increasing sophistication of cyber attacks",
+   "Evolving threat landscape",
+   "Non-compliance with SEBI Listing Regulations regarding composition of Board including failure to appoint woman director",
+   "Non-appointment of independent director of listed entity on the board of directors of material subsidiary",
+   "Pending compliances of conversion of warrants into equity shares, forfeiture of warrants, conversion of compulsorily redeemable preference shares into equity shares (due date lapsed)",
+   "Change in auditor of material subsidiary due to disqualification of auditor during the year; non-compliance with provisions/regulations per Master Circular on LODR compliance",
+   "Concerns regarding conversion of loan/advances given to subsidiaries (Note 6.1)",
+   "Market risk (interest rate risk and other price risk such as equity price risk and commodity/real estate risk)",
+   "Credit risk (primarily from trade receivables, deposits with banks and financial institutions)",
+   "Liquidity risk",
+   "Service tax demand for years 2010-12, 2012-13 & 2013-14 on e-Procurement contract executed in Bangladesh for Bangladesh Government, appeal filed before CESTAT, Bangalore",
+   "FEMA provisions relating to transfer of funds to WOS, application for compounding before RBI returned on procedural aspects, re-submission in process",
+   "Market risk comprising interest rate risk and other price risk (equity price risk and commodity/real estate risk)",
+   "Credit risk arising from trade receivables and deposits with banks/financial institutions",
+   "Liquidity risk managed through bank deposits and loans"
+  ],
+  "related_party": [
+   {
+    "party": "Related parties as defined under Section 2(76) of the Companies Act, 2013",
+    "nature": "Transactions in the ordinary course of business and on arms' length basis",
+    "amount_cr": null
+   },
+   {
+    "party": "Bharghav Marepally",
+    "nature": "CEO & Managing Director - Managerial remuneration",
+    "amount_cr": 3.3128
+   },
+   {
+    "party": "Mr. Bhargav Marepally",
+    "nature": "Repayment of Loan Received",
+    "amount_cr": 10.6331
+   },
+   {
+    "party": "Polimeraas Retail Private Limited",
+    "nature": "advance in the nature of loans granted to wholly owned subsidiary",
+    "amount_cr": 2.4816
+   },
+   {
+    "party": "GSS Infotech CT Inc",
+    "nature": "Trade advance received",
+    "amount_cr": 13.2261
+   },
+   {
+    "party": "GSS Infotech Inc",
+    "nature": "Investment in equity shares",
+    "amount_cr": 89.0941
+   },
+   {
+    "party": "Polimeraas Limited",
+    "nature": "Investment in equity shares",
+    "amount_cr": 264.2705
+   },
+   {
+    "party": "Polimeraas Limited",
+    "nature": "Amount payable",
+    "amount_cr": 0.0586
+   },
+   {
+    "party": "Polimeraas Retail Private Limited",
+    "nature": "Advances recoverable",
+    "amount_cr": 1.1637
+   },
+   {
+    "party": "GSS Infotech CT Inc",
+    "nature": "Sales to subsidiary",
+    "amount_cr": 5.4747
+   },
+   {
+    "party": "GSS Infotech CT Inc",
+    "nature": "Payment received as advances",
+    "amount_cr": 5.0521
+   },
+   {
+    "party": "Polimeraas Retail Private Limited",
+    "nature": "Advances to subsidiary",
+    "amount_cr": 2.4816
+   }
+  ],
+  "litigation": [
+   "No application has been made or any proceeding is pending under the Insolvency and Bankruptcy Code, 2016.",
+   "The Company has never made any One Time Settlement against the Loans obtained from Banks and Financial institutions.",
+   "No instances of fraud reported by Statutory Auditors and Secretarial Auditor under Section 143(12) of the Act.",
+   "Secretarial Audit observations: Non-compliance with SEBI LODR Regulation 17(1) regarding composition of Board (woman director) - fines imposed by BSE and NSE (Rs. 65,000 each), company acknowledges and appointed a director, in process of making payment. Non-compliance with SEBI LODR Regulation 24 regarding appointment of independent director of listed entity on the board of directors of material subsidiary - company acknowledges and is in process to ensure full compliance.",
+   "Received queries from BSE and National Stock Exchange of India Ltd; Company provided suitable replies",
+   "No action taken by SEBI or Stock Exchanges against listed entity/promoters/directors/subsidiaries except fines detailed in report",
+   "Pending litigations disclosed in consolidated financial statements (impact on consolidated financial position disclosed)",
+   "Service tax demand for years 2010-12, 2012-13 & 2013-14 on e-Procurement contract executed in Bangladesh for Bangladesh Government, appeal filed before CESTAT, Bangalore",
+   "Application for compounding before RBI for FEMA provisions relating to transfer of funds to WOS, returned on procedural aspects, re-submission in process",
+   "No proceedings initiated or pending for holding Benami property",
+   "No transactions with companies struck off",
+   "No charges or satisfaction yet to be registered with ROC beyond statutory period",
+   "Not declared willful defaulter by any bank or financial institution or government authority",
+   "No undisclosed income surrendered or disclosed in tax assessments under Income Tax Act, 1961",
+   "No funds advanced/loaned/invested to intermediaries for ultimate beneficiaries",
+   "No funds received from funding parties for ultimate beneficiaries",
+   "No fraud by the Company or material fraud on the Company noticed or reported",
+   "No report filed in Form ADT-4 under section 143(12)",
+   "No whistle blower complaints received",
+   "FEMA provisions relating to transfer of funds to WOS, application for compounding before RBI returned on procedural aspects, re-submission in process",
+   "Not declared willful defaulter by any bank, financial institution, government or government authority"
+  ],
+  "capex_plans": [
+   {
+    "item": "Establish multiple new stores in strategic locations across India for Polimeraas",
+    "amount_cr": null,
+    "timeline": "future"
+   },
+   {
+    "item": "Develop easy-to-use and intuitive mobile app for e-commerce platform",
+    "amount_cr": null,
+    "timeline": "future"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Partnership with KBRI and Yale University for AI-powered automation of L1 level issue resolution via intelligent chatbot",
+    "value_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 144.98,
+    "note": "As at 31 March 2026; Rs 14,498.13 Lakhs"
+   },
+   {
+    "lender_or_type": "Current borrowings (Financial Liabilities)",
+    "amount_cr": 1.32,
+    "note": "As at 31 March 2026; Rs 131.82 Lakhs"
+   },
+   {
+    "lender_or_type": "Unsecured loans - Others",
+    "amount_cr": 134.3482,
+    "note": "Non-current"
+   },
+   {
+    "lender_or_type": "Unsecured loans - From Directors",
+    "amount_cr": 10.6331,
+    "note": "Non-current"
+   },
+   {
+    "lender_or_type": "Current maturities of long-term debts",
+    "amount_cr": 13.2404,
+    "note": "Current"
+   },
+   {
+    "lender_or_type": "Long-term borrowings including current maturities",
+    "amount_cr": 158.2217,
+    "note": "As of March 31, 2026"
+   },
+   {
+    "lender_or_type": "Long-term borrowings including current maturities",
+    "amount_cr": 176.1833,
+    "note": "As of March 31, 2025"
+   },
+   {
+    "lender_or_type": "Short-term borrowings",
+    "amount_cr": 0,
+    "note": "As of March 31, 2026 and March 31, 2025"
+   },
+   {
+    "lender_or_type": "Total borrowings",
+    "amount_cr": 158.2217,
+    "note": "As of March 31, 2026"
+   },
+   {
+    "lender_or_type": "Total borrowings",
+    "amount_cr": 176.1833,
+    "note": "As of March 31, 2025"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 160.55,
+    "note": "As at 31 March 2026 (Rs 16,054.72 lakhs)"
+   },
+   {
+    "lender_or_type": "Directors (unsecured, interest free, repayable on demand)",
+    "amount_cr": 10.6331,
+    "note": "Unsecured loans from directors"
+   },
+   {
+    "lender_or_type": "Others (unsecured)",
+    "amount_cr": 149.9141,
+    "note": "Includes preference share capital of Polimeraas Limited converted into unsecured loans"
+   },
+   {
+    "lender_or_type": "Long term borrowings including current maturities",
+    "amount_cr": 160.55,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Long term borrowings including current maturities",
+    "amount_cr": 161.76,
+    "note": "As at 31 March 2025"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 0,
+    "note": "As at 31 March 2026 and 31 March 2025"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Service tax demand for years 2010-12, 2012-13 & 2013-14 on e-Procurement contract executed in Bangladesh for Bangladesh Government, appeal filed before CESTAT, Bangalore",
+    "amount_cr": 0.852
+   },
+   {
+    "nature": "Application for compounding before RBI for FEMA provisions relating to transfer of funds to WOS, returned on procedural aspects, re-submission in process",
+    "amount_cr": null
+   }
+  ]
+ }
+}
