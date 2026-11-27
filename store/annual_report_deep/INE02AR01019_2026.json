@@ -1,0 +1,663 @@
+{
+ "isin": "INE02AR01019",
+ "name": "Anmol India Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30969_ANMOL_2025_2026_A_20634842_01092026135511.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 218123,
+ "chunks": 6,
+ "chunks_ok": 6,
+ "facts": {
+  "business": {
+   "description": "Anmol India Limited is a coal trading company engaged in sourcing and supplying coal to thermal power generation and key industries such as steel, cement, paper, textiles, chemicals, and brick manufacturing across domestic and international markets.",
+   "products": [
+    {
+     "name": "Coal",
+     "share_of_revenue_pct": null,
+     "note": "Traded commodity; no revenue share breakdown provided"
+    },
+    {
+     "name": "Imported Coal (Thermal and Metallurgical)",
+     "share_of_revenue_pct": null,
+     "note": "High-quality thermal and metallurgical coal"
+    },
+    {
+     "name": "Coal (imported/traded)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from operations driven by higher trade volumes across key domestic and international markets"
+    },
+    {
+     "name": "Traded Goods",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from operations primarily from trading activities; inventory consists of closing stock of traded goods."
+    },
+    {
+     "name": "Coal & Other Traded Goods",
+     "share_of_revenue_pct": null,
+     "note": "Sale of Coal & Other Traded Goods constitutes the primary revenue from operations."
+    }
+   ],
+   "customers": [
+    "Thermal power generation",
+    "Steel industry",
+    "Cement industry",
+    "Paper industry",
+    "Textiles industry",
+    "Chemicals industry",
+    "Brick manufacturing",
+    "Sponge iron industry",
+    "Captive power plants",
+    "Brick kilns",
+    "Other energy-intensive manufacturing sectors",
+    "Steel sector",
+    "Cement sector",
+    "Power sector"
+   ],
+   "geographies": [
+    {
+     "name": "Domestic (India)",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "India (Pan-India, 100+ locations)",
+     "share_pct": null
+    },
+    {
+     "name": "International markets",
+     "share_pct": null
+    }
+   ],
+   "raw_materials": [
+    "Coal (sourced from domestic and international suppliers)",
+    "Imported coal sourced globally",
+    "Coal (imported)"
+   ],
+   "value_chain_position": "trader",
+   "end_markets": [
+    "Power generation",
+    "Steel",
+    "Cement",
+    "Paper",
+    "Textiles",
+    "Chemicals",
+    "Brick manufacturing",
+    "Power",
+    "Sponge iron",
+    "Brick kilns",
+    "Other energy-intensive industries"
+   ],
+   "brands_or_certifications": [
+    "SGS inspection",
+    "HRT inspection",
+    "Other internationally recognized inspection agencies"
+   ],
+   "competitors_named": [
+    "Domestic coal producers",
+    "Other international traders"
+   ]
+  },
+  "outlook": [
+   {
+    "statement": "The Government's continued emphasis on infrastructure creation, manufacturing expansion, power sector development, and economic growth is expected to sustain demand for coal across various industries. Coal is expected to remain an important component of the country's energy mix for the foreseeable future.",
+    "period": "Long-term"
+   },
+   {
+    "statement": "Strategic priorities will focus on strengthening market presence, expanding customer base, enhancing supply chain efficiency, leveraging technology for improved operational visibility, optimizing working capital, and maintaining financial discipline.",
+    "period": "Forward-looking"
+   },
+   {
+    "statement": "India's continued focus on infrastructure development, manufacturing expansion, urbanisation and energy security is expected to sustain demand for coal across key user industries including power, cement, steel, sponge iron, brick kilns and other energy-intensive sectors. Imported coal is expected to remain an integral component of India's energy and industrial ecosystem, with continued dependence on imported coking coal over the medium to long term.",
+    "period": "Medium to long term"
+   },
+   {
+    "statement": "Global coal demand is expected to remain broadly stable in 2026, with a marginal decline or near-flat trajectory, effectively maintaining consumption close to historically high levels. India's coal consumption is projected to grow by approximately 2-3% in 2026, driven by sustained industrial expansion, infrastructure development, and rising electricity demand.",
+    "period": "2026"
+   },
+   {
+    "statement": "The Company remains well-positioned to build on this momentum by leveraging its strong market presence, sourcing capabilities, and the sustained importance of imported coal in India's industrial ecosystem.",
+    "period": "Going forward"
+   }
+  ],
+  "risks": [
+   "Fluctuating global commodity prices",
+   "Evolving trade patterns",
+   "Supply chain disruptions",
+   "Changing energy market dynamics",
+   "Geopolitical developments",
+   "Changes in international trade flows",
+   "Freight rate fluctuations",
+   "Currency movements",
+   "Shifting energy policies across regions",
+   "Highly competitive and volatile commodity environment",
+   "Foreign exchange risk due to unhedged exchange rate fluctuations",
+   "International commodity price volatility",
+   "Freight cost fluctuations",
+   "Geopolitical developments affecting supply chain",
+   "Short-term volatility arising from international commodity prices, freight costs and geopolitical developments",
+   "Volatility in international coal prices, freight rates, and global commodity cycles impacting margins",
+   "High dependence on working capital due to inventory holding, import cycle and receivable periods",
+   "Dependence on efficient logistics infrastructure including railway rakes, port congestion and inland transport connectivity",
+   "Limited ability to pass on sudden cost increases immediately in a highly competitive trading environment",
+   "Concentration of demand in key industrial sectors (steel, cement, power) leading to exposure to sector-specific cyclicality",
+   "Profitability sensitive to foreign exchange fluctuations due to import-based business operations",
+   "Increasing environmental regulations and stricter emission norms impacting coal consumption patterns long term",
+   "Global transition towards renewable energy sources gradually reducing demand for thermal coal",
+   "Political instability, regulatory changes, or export restrictions in key coal-supplying countries affecting availability and pricing",
+   "Disruptions in global shipping routes, freight volatility and geopolitical tensions impacting supply chain continuity",
+   "Frequent policy changes in domestic coal and import regulations affecting trade flows and market dynamics",
+   "Slowdowns in core consuming industries (steel, cement, power) directly impacting demand for imported coal",
+   "Increased competition from domestic coal producers and other international traders putting pressure on margins",
+   "Uncertainty in global macroeconomic conditions affecting industrial production and overall coal demand",
+   "Management has floated MSME confirmations to all the suppliers during the year, however, response from most of them is still awaited."
+  ],
+  "related_party": [
+   {
+    "party": "Anmol Fincap Limited",
+    "nature": "Company in which Directors (Mr. Vijay Kumar and Mr. Chakshu Goyal) are interested (Directors and shareholders)",
+    "amount_cr": 25
+   },
+   {
+    "party": "Promoters, Key Managerial Personnel or other designated persons",
+    "nature": "All related party transactions were on an arm's length basis and in the ordinary course of business",
+    "amount_cr": null
+   },
+   {
+    "party": "Not specified",
+    "nature": "No material significant related party transactions during the year",
+    "amount_cr": null
+   },
+   {
+    "party": "Chakshu Goyal",
+    "nature": "Remuneration, Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan, Rent",
+    "amount_cr": null
+   },
+   {
+    "party": "Vijay Kumar",
+    "nature": "Remuneration, Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Tilak Raj Aggarwal",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Neelam Rani",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Prerna Goyal",
+    "nature": "Remuneration, Rent",
+    "amount_cr": null
+   },
+   {
+    "party": "Deepika",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Sahil Aggarwal",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Sharp Projects Pvt Ltd",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Coal Mantra Private Limited",
+    "nature": "Loan Given/ Interest/ Repayment of Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Anmol Fincap Limited",
+    "nature": "Loan Given/ Interest/ Repayment of Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Kapil",
+    "nature": "Interest on unsecured Loan, Repayment of unsecured Loan, Acceptance of Unsecured Loan",
+    "amount_cr": null
+   },
+   {
+    "party": "Chakshu Goyal",
+    "nature": "Unsecured loan from related party (Managing Director & CFO)",
+    "amount_cr": 2.9926
+   },
+   {
+    "party": "Deepika",
+    "nature": "Unsecured loan from related party",
+    "amount_cr": 2.3776
+   },
+   {
+    "party": "Kapil",
+    "nature": "Unsecured loan from related party",
+    "amount_cr": 6.7816
+   },
+   {
+    "party": "Neelam Rani",
+    "nature": "Unsecured loan from related party (Promoter)",
+    "amount_cr": 3.6821
+   },
+   {
+    "party": "Vijay Kumar",
+    "nature": "Unsecured loan from related party (Promoter, Whole Time Director)",
+    "amount_cr": 14.294
+   },
+   {
+    "party": "Anmol Fincap Limited",
+    "nature": "Unsecured loan from body corporate (Associate)",
+    "amount_cr": 1.0602
+   },
+   {
+    "party": "Share India Fincap Pvt Ltd",
+    "nature": "Unsecured loan from body corporate; also received loan of Rs 14,300 lakh during year, balance outstanding NIL",
+    "amount_cr": 9.6251
+   },
+   {
+    "party": "HPCL Mittal Energy Limited",
+    "nature": "Security deposit given; loan of Rs 15.86 lakh during year, balance outstanding Rs 15.86 lakh",
+    "amount_cr": 0.1586
+   },
+   {
+    "party": "CDSL",
+    "nature": "Security deposit given; loan of Rs 0.45 lakh during year, balance outstanding Rs 0.45 lakh",
+    "amount_cr": 0.0045
+   },
+   {
+    "party": "NSDL",
+    "nature": "Security deposit given; loan of Rs 0.45 lakh during year, balance outstanding Rs 0.45 lakh",
+    "amount_cr": 0.0045
+   },
+   {
+    "party": "Jio Infocomm (Reliance Jio)",
+    "nature": "Security deposit given; loan of Rs 0.03 lakh during year, balance outstanding Rs 0.03 lakh",
+    "amount_cr": 0.0003
+   },
+   {
+    "party": "Mr. Vijay Kumar",
+    "nature": "KMP (Managing Director)",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Tilak Raj",
+    "nature": "KMP (Director)",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Chakshu Goyal",
+    "nature": "KMP (Whole Time Director)",
+    "amount_cr": null
+   },
+   {
+    "party": "Mrs. Neelam Rani",
+    "nature": "KMP (Director)",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Kapil",
+    "nature": "KMP (Director, ceased due to death from 18 December 2025)",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Deepika",
+    "nature": "Relative of KMP",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Prerna Goyal",
+    "nature": "Relative of KMP",
+    "amount_cr": null
+   },
+   {
+    "party": "Sharp Projects Private Limited",
+    "nature": "Enterprise in which KMP/relative exercises significant influence",
+    "amount_cr": null
+   },
+   {
+    "party": "Anmol Fincap Limited (Formerly Mahja Doaba Consultants and Finvest Limited)",
+    "nature": "Enterprise in which KMP/relative exercises significant influence",
+    "amount_cr": null
+   },
+   {
+    "party": "CoalMantra Private Limited",
+    "nature": "Enterprise in which KMP/relative exercises significant influence",
+    "amount_cr": null
+   },
+   {
+    "party": "Offingo Private Limited",
+    "nature": "Enterprise in which KMP/relative exercises significant influence",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Axis Bank Limited",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Union Bank of India",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Yes Bank Limited",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Kotak Mahindra Bank Limited",
+    "amount_cr": null,
+    "note": "Listed as banker"
+   },
+   {
+    "lender_or_type": "Unsecured loans from related parties and body corporates",
+    "amount_cr": 40.8132,
+    "note": "Includes loans from directors, promoters, and associate company Anmol Fincap Limited and Share India Fincap Pvt Ltd"
+   },
+   {
+    "lender_or_type": "Bank borrowings (Working capital / Supplier's Credit)",
+    "amount_cr": 156.5004,
+    "note": "Secured by hypothecation of entire present and future tangible current assets and personally guaranteed by directors other than independent directors; includes facilities from Kotak Mahindra Bank, IDBI Bank, State Bank of India (including London, Hong Kong), Axis Bank Gift City, South Indian Bank"
+   },
+   {
+    "lender_or_type": "Working Capital loans from banks",
+    "amount_cr": null,
+    "note": "Primarily secured by hypothecation of entire present and future tangible current assets of the company and personally guaranteed by a director of the company."
+   }
+  ],
+  "auditor": {
+   "name": "M/s KR Aggarwal & Associates",
+   "opinion": "The Auditor's Report does not contain any qualification, reservation or any adverse remark",
+   "key_audit_matters": [
+    "Revenue Recognition - risk of fraud in revenue recognition due to pressure to achieve performance targets and timing of revenue recognition requiring judgement"
+   ],
+   "qualifications_or_emphasis": [
+    "No title deeds of immovable properties (land and buildings) held in the name of the Company as at balance sheet date.",
+    "Company has not revalued Property, Plant and Equipment or intangible assets during the year.",
+    "No proceedings initiated or pending for benami property.",
+    "No material discrepancies in physical verification of inventory and fixed assets.",
+    "Quarterly returns filed with banks for working capital limits are in agreement with books of account.",
+    "No default in repayment of loans or interest; not declared willful defaulter.",
+    "No term loans obtained during the year.",
+    "No funds raised on short-term basis used for long-term purposes.",
+    "No fraud noticed or reported; no whistle-blower complaints.",
+    "Related party transactions in compliance with Sections 177 and 188 of Companies Act.",
+    "Internal audit system commensurate with size and nature of business.",
+    "No cash losses in current or immediately preceding financial year.",
+    "No material uncertainty exists regarding ability to meet liabilities within one year from balance sheet date."
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Mr. Chakshu Goyal",
+     "pct": null
+    },
+    {
+     "name": "Mr. Vijay Kumar",
+     "pct": null
+    },
+    {
+     "name": "Mr. Tilak Raj",
+     "pct": null
+    },
+    {
+     "name": "Mr. Kapil",
+     "pct": null
+    },
+    {
+     "name": "Mrs. Neelam Rani",
+     "pct": null
+    },
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 50.2
+    },
+    {
+     "name": "Public",
+     "pct": 49.8
+    },
+    {
+     "name": "Chakshu Goyal",
+     "pct": 18.76
+    },
+    {
+     "name": "Tilak Raj (Promoter)",
+     "pct": 13.44
+    },
+    {
+     "name": "Vijay Kumar (Promoter)",
+     "pct": 8.23
+    },
+    {
+     "name": "Kapil",
+     "pct": 6.88
+    },
+    {
+     "name": "Neelam Rani (Promoter)",
+     "pct": 5.04
+    },
+    {
+     "name": "Other Shareholders",
+     "pct": 47.65
+    }
+   ],
+   "director_changes": [
+    "Mr. Chakshu Goyal retires by rotation and offers himself for re-appointment at the 28th AGM",
+    "Mr. Kapil ceased to be a Non-Executive Director w.e.f. 18th December, 2025 due to his unfortunate demise",
+    "Mr. Ripan Kumar Goyal appointed as Independent Director w.e.f. 30th December, 2025",
+    "Mrs. Bhupinder Preet Kaur resigned as Independent Director w.e.f. 30th September, 2025",
+    "Mr. Sanjeev Kumar resigned as Independent Director w.e.f. 17th March, 2026",
+    "Mr. Chakshu Goyal retires by rotation and offers himself for re-appointment",
+    "Reappointment of Mr. Bhupesh Goyal (DIN: 08126023) as Independent Director (AGM 2022-23)",
+    "Re-appointment of Mr. Chakshu Goyal as Whole Time Director for further period of five years (AGM 2023-24)",
+    "Appointment of Secretarial Auditor for five Financial Years (AGM 2024-25)",
+    "Re-appointment of Mr. Sanjeev Kumar and Mr. Sumit Goswami as Independent Directors for second term of five years from 27 February 2025 to 26 February 2030 (Postal Ballot 2025-26)",
+    "Appointment of Mr. Ripan Kumar Goyal as Independent Director (EGM 26 December 2025)",
+    "Resignation of Mr. Sanjeev Kumar as Independent Director with effect from 17th March, 2026",
+    "Appointment of Mr. Ripan Kumar Goyal as Member of CSR Committee with effect from 24th March, 2026",
+    "Mr. Kapil ceased to be director of the company due to death from 18 December 2025"
+   ],
+   "promoter_holding_pct": 50.2
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Vijay Kumar",
+     "role": "Managing Director & CFO"
+    },
+    {
+     "name": "Mr. Chakshu Goyal",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mrs. Neelam Rani",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Tilak Raj",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Rij Kir Goyal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Ridhima Garg",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Bhupesh Goyal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Ripan Kumar Goyal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Sumit Goswami",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Parabhjot Kaur",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mrs. Parabhjot Kaur",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Vijay Kumar",
+     "role": "Managing Director & CFO"
+    },
+    {
+     "name": "Neelam Rani",
+     "role": "Director (DIN: 00574938)"
+    },
+    {
+     "name": "Tilak Raj",
+     "role": "Director (DIN: 00574962)"
+    },
+    {
+     "name": "Chakshu Goyal",
+     "role": "Whole Time Director (DIN: 03126756)"
+    },
+    {
+     "name": "Bhupesh Goyal",
+     "role": "Independent Director (DIN: 08126023)"
+    },
+    {
+     "name": "Sumit Goswami",
+     "role": "Independent Director (DIN: 08708023)"
+    },
+    {
+     "name": "Ridhima Garg",
+     "role": "Director (DIN: 10791451)"
+    },
+    {
+     "name": "Ripan Kumar Goyal",
+     "role": "Independent Director (DIN: 11397750)"
+    },
+    {
+     "name": "Chakshu Goyal",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Prabhjot Kaur",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Tilak Raj",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Neelam Rani",
+     "role": "Director"
+    }
+   ]
+  },
+  "dividend_per_share": 0,
+  "other_notable": [
+   "Revenue from Operations: Rs. 1,416.57 Crore (FY 2025-26) vs Rs. 1,274.26 Crore (FY 2024-25)",
+   "EBITDA: Rs. 28.99 Crore (FY 2025-26) vs Rs. 25.67 Crore (FY 2024-25)",
+   "Profit After Tax (PAT): Rs. 11.31 Crore (FY 2025-26) vs Rs. 6.99 Crore (FY 2024-25), growth of 61.80%",
+   "EPS (Basic & Diluted): Rs. 1.99 (FY 2025-26) vs Rs. 1.23 (FY 2024-25)",
+   "No dividend recommended for FY 2025-26",
+   "No change in capital structure during the year",
+   "No public deposits accepted during the year",
+   "28th AGM scheduled for 26th September 2026 at Registered Office, Ludhiana",
+   "Special Resolution proposed for loan up to Rs. 25 Crore to Anmol Fincap Limited under Section 185",
+   "Audit Committee approved the related party transaction with Anmol Fincap Limited",
+   "Registrar and Share Transfer Agent: Bigshare Services Private Limited",
+   "Internal Auditor: Mrs. Komal Aggarwal",
+   "Secretarial Auditors: M/s Harsh Kumar Goyal & Associates",
+   "Foreign exchange expenditure of Rs. 359.62 Crores towards imports during FY 2025-26",
+   "Board met 17 times during FY 2025-26",
+   "Audit Committee met 4 times, Nomination and Remuneration Committee met 1 time, Stakeholders Relationship Committee met 4 times, CSR Committee met 6 times",
+   "No employees in receipt of remuneration exceeding limits under Rule 5(2) of Companies (Appointment and Remuneration of Managerial Personnel) Rules, 2014",
+   "Median remuneration of employees during FY 2025-26 was Rs. 3,72,000",
+   "Cost audit not applicable to the Company",
+   "Company has not constituted Internal Complaints Committee under Sexual Harassment of Women at Workplace Act, 2013 but has adopted a policy",
+   "No complaints received on sexual harassment during FY 2025-26",
+   "Annual Listing Fees paid to BSE Limited & National Stock Exchange of India Limited for FY 2025-26",
+   "Conservation of Energy and Technology Absorption particulars not applicable due to nature of activities",
+   "Secretarial Audit Report by M/s Harsh Goyal & Associates does not contain any qualification, observation or adverse remarks",
+   "Listed on BSE (542437) and NSE (ANMOL)",
+   "100% equity shares in dematerialized form as on 31.03.2026",
+   "Registrar & Share Transfer Agent: Bigshare Services Private Limited",
+   "Statutory Audit Fees: 2.25 Lacs, Tax Audit Fee: 0.25 Lacs, Total: 2.50 Lacs for FY 2025-26",
+   "Secretarial Auditor: Harsh Goyal & Associates (COP No. 2802)",
+   "No complaints filed/disposed/pending under Prevention of Sexual Harassment Act during FY 2025-26",
+   "Company uses future contracts to offset adverse movements in foreign exchange",
+   "No credit ratings obtained as company has not issued debt instruments or fixed deposit programme",
+   "Compliance with all mandatory requirements of Listing Regulations during FY 2025-26",
+   "All recommendations of Board Committees accepted by Board during the year",
+   "Certificate from Harsh Goyal & Associates confirming no directors debarred/disqualified by SEBI/MCA/RBI",
+   "Revenue from Operations: Rs 1,416.57 Crore in FY 2025-26 (Rs 1,274.26 Crore in FY 2024-25)",
+   "EBITDA: Rs 28.99 Crore in FY 2025-26 (Rs 25.67 Crore in FY 2024-25)",
+   "Profit After Tax: Rs 11.31 Crore in FY 2025-26 (Rs 6.99 Crore in FY 2024-25), 61% YoY growth",
+   "CSR obligation for FY 2025-26: Rs 39,55,126; Amount spent: Rs 39,76,000",
+   "CSR projects: Gopal Gaushala Society (Rs 5,01,000), Shri Gita Vridh Ashram (Rs 51,000), Hare Krishna Movement (Rs 21,000), Shree Raghunath Hospital (Rs 8,01,000), LOS Amigos Society (Rs 21,00,000), Shri Govind Gau Dham (Rs 4,01,000), Sewa Bharti (Rs 1,01,000)",
+   "1600 shares unclaimed in Demat Suspense Account/Unclaimed Suspense Account",
+   "Key Financial Ratios FY26: Debtors Turnover 19.99, Inventory Turnover 16.73, Interest Coverage 1.64, Current Ratio 1.68, Debt Equity 0.38, Operating Profit Margin 0.02%, Net Profit Margin 0.55%, Return on Net Worth 6.47%",
+   "Company does not have any subsidiary, joint venture, or associate during the year except investment in Anmol Fincap Limited (100 shares).",
+   "No intangible assets owned during the year.",
+   "Maintenance of cost records not specified by Central Government under Section 148(1).",
+   "No deposits accepted from public.",
+   "No preferential allotment or private placement during the year.",
+   "No non-cash transactions with directors or connected persons.",
+   "Not required to register under Section 45-IA of RBI Act; not a NBFC, housing finance, or Core Investment Company.",
+   "No amount unspent under CSR (Section 135(5)).",
+   "Revenue from operations: Rs 141,657.16 lakh (FY2026) vs Rs 127,426.09 lakh (FY2025).",
+   "Profit for the period: Rs 1,130.79 lakh (FY2026) vs Rs 698.77 lakh (FY2025).",
+   "Basic and diluted EPS: Rs 1.00 (FY2026) vs Rs 1.23 (FY2025).",
+   "Cash and cash equivalents: Rs 12,707.65 lakh (FY2026) vs Rs 13,759.64 lakh (FY2025).",
+   "Total equity: Rs 11,896.71 lakh (FY2026) vs Rs 10,746.76 lakh (FY2025).",
+   "CSR amount required to be spent during the year: Rs 49.42 lakh; Amount of Expenditure Incurred: Rs 49.93 lakh; Shortfall: NIL. Nature of CSR Activity: Contribution towards health care & Education.",
+   "Value of Imports on CIF Basis (Traded Goods): Rs 35,961.73 lakh (Current Year), Rs 47,158.96 lakh (Previous Year).",
+   "Expenditure in Foreign Currency: Nil.",
+   "Earnings Per Share (Basic & Diluted): Rs 1.99 (Current Year), Rs 1.23 (Previous Year).",
+   "Profit After Tax: Rs 1,130.79 lakh (Current Year), Rs 698.77 lakh (Previous Year)."
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The company neither has any subsidiary or associate company nor has entered into any joint venture with any other company."
+   },
+   {
+    "name": "Anmol Fincap Limited",
+    "holding_pct": null,
+    "business": "Investment in equity shares (100 shares) at cost; classified as associate."
+   }
+  ],
+  "litigation": [
+   "There are no significant/material orders passed by the Regulators or Courts or Tribunals impacting the going concern Status of the Company and its operations in future",
+   "Company has not made any application or any proceeding is pending under the Insolvency and Bankruptcy Code (IBC), 2016 during the Financial Year 2025-26",
+   "No penalties or strictures imposed by any Stock Exchange, SEBI or any statutory authority on any matter related to capital markets during the last three years",
+   "Pending litigations disclosed in financial statements - Refer Note 26 of notes to financial statements",
+   "No proceedings have been initiated against the company for holding any benami property under the Benami Transactions (Prohibition) Act, 1988.",
+   "The company has not been declared wilful defaulter by any bank or financial institution or other lender.",
+   "There is no struck off company associated with the company or any of the director of the company."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Letter of Credits",
+    "amount_cr": 118.03
+   }
+  ]
+ }
+}

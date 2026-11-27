@@ -1,0 +1,1351 @@
+{
+ "isin": "INE627H01017",
+ "name": "Cambridge Technology Enterprises Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31722_CTE_2025_2026_A_21828205_07092026175318.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 644852,
+ "chunks": 17,
+ "chunks_ok": 16,
+ "facts": {
+  "business": {
+   "description": "Cambridge Technology Enterprises Limited is a business and technology services company with more than 25 years in continuous operation, delivering custom AI solutions, data engineering, enterprise application development, and managed technology services to a diverse base of enterprise and Fortune 500 clients worldwide.",
+   "products": [
+    {
+     "name": "Artificial Intelligence and Machine Learning",
+     "share_of_revenue_pct": null,
+     "note": "Core practice area"
+    },
+    {
+     "name": "Agentic AI",
+     "share_of_revenue_pct": null,
+     "note": "Core practice area"
+    },
+    {
+     "name": "Data Engineering",
+     "share_of_revenue_pct": null,
+     "note": "Core practice area"
+    },
+    {
+     "name": "Enterprise Applications",
+     "share_of_revenue_pct": null,
+     "note": "Core practice area"
+    },
+    {
+     "name": "Data Annotation",
+     "share_of_revenue_pct": null,
+     "note": "Critical enabler for AI model training and generative AI development"
+    },
+    {
+     "name": "Artificial Intelligence & Agentic AI",
+     "share_of_revenue_pct": null,
+     "note": "Enterprise-grade integration of advanced AI models and agents into daily enterprise operations"
+    },
+    {
+     "name": "Cloud Migration & Transformation",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "SaaS & DevOps",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Managed Services",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Business Intelligence & Analytics",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "IoT & IIoT",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Cybersecurity",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Sale of software services",
+     "share_of_revenue_pct": 98.3,
+     "note": "Includes Export (Rs 5,30,598.35 thousand) and Domestic (Rs 32,267.38 thousand) for FY2026"
+    },
+    {
+     "name": "Sale of software licenses",
+     "share_of_revenue_pct": 1.7,
+     "note": "Revenue from channel partnership arrangements with Oracle, Atlassian, etc. for FY2026"
+    },
+    {
+     "name": "Sale of Services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from external customers - Sale of Services - Rs. 1,873,221.16 thousands for year ending 31 March 2025"
+    },
+    {
+     "name": "Sale of Products",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from external customers - Sale of Products - Rs. 115,989.49 thousands for year ending 31 March 2025"
+    }
+   ],
+   "customers": [
+    "enterprise clients",
+    "Fortune 500 clients",
+    "Enterprise and Fortune 500 clients globally",
+    "enterprises across sizes, industries, and geographies",
+    "healthcare, life sciences, animal health, pet nutrition sectors",
+    "energy/industrials, manufacturing, life sciences & pharmaceuticals, banking and financial Services (BFSI), security/access management",
+    "retail, pharma & life sciences, energy, banking/insurance, manufacturing, rapid prototyping, healthcare, automotive, telecommunication, identity & access management, logistics",
+    "Government entities",
+    "Others (private sector)",
+    "Cambridge Technology Inc. USA (related party, contributes 10%+ of revenue)",
+    "Others",
+    "Summit Energy Services, Inc.",
+    "Hill's Pet Nutrition, Inc.",
+    "Allied Universal",
+    "Takeda Pharmaceuticals U.S.A., Inc.",
+    "Iron Mountain Information Management, LLC",
+    "Vital Records Control",
+    "General Communication Inc.",
+    "BNY Investment Management"
+   ],
+   "geographies": [
+    {
+     "name": "US",
+     "share_pct": null
+    },
+    {
+     "name": "APAC",
+     "share_pct": null
+    },
+    {
+     "name": "United States",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Malaysia",
+     "share_pct": null
+    },
+    {
+     "name": "Philippines",
+     "share_pct": null
+    },
+    {
+     "name": "Qatar",
+     "share_pct": null
+    },
+    {
+     "name": "overseas markets",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": null
+    },
+    {
+     "name": "Singapore",
+     "share_pct": null
+    },
+    {
+     "name": "USA",
+     "share_pct": 90.8
+    },
+    {
+     "name": "India",
+     "share_pct": 7.3
+    },
+    {
+     "name": "Qatar",
+     "share_pct": 1.9
+    },
+    {
+     "name": "India",
+     "share_pct": 2.59
+    },
+    {
+     "name": "USA",
+     "share_pct": 95.73
+    },
+    {
+     "name": "Middle East",
+     "share_pct": 0.6
+    },
+    {
+     "name": "Other Countries",
+     "share_pct": 1.08
+    },
+    {
+     "name": "North America",
+     "share_pct": null
+    }
+   ],
+   "value_chain_position": "service",
+   "end_markets": [
+    "enterprise",
+    "Fortune 500",
+    "Clean Tech",
+    "Energy and Utilities",
+    "Healthcare and Life Sciences",
+    "Automotive",
+    "Financial Services and Insurance",
+    "Retail and E-Commerce",
+    "healthcare",
+    "life sciences",
+    "animal health",
+    "pet nutrition",
+    "energy/industrials",
+    "manufacturing",
+    "pharmaceuticals",
+    "banking and financial services",
+    "security/access management",
+    "retail",
+    "telecommunication",
+    "logistics",
+    "IT Services",
+    "Digital transformation services",
+    "Software license resale",
+    "Digital transformation",
+    "Software licensing",
+    "Energy Services",
+    "Security Services",
+    "Information Management",
+    "Records Control",
+    "Communication",
+    "Investment Management"
+   ],
+   "brands_or_certifications": [
+    "ISO/IEC 20000-1:2018",
+    "ISO/IEC 27001:2022",
+    "TISAX",
+    "SOC 2 Type 2",
+    "AWS partner",
+    "Confluent partner",
+    "Google partner",
+    "Oracle partner",
+    "Atlassian partner",
+    "Tricentis partner",
+    "ForgeRock partner",
+    "Oracle",
+    "ForgeRock",
+    "Atlassian"
+   ],
+   "plants": [
+    {
+     "location": "USA - Cambridge Technology Inc.: 120 SE 6th Avenue, Topeka, Kansas 66603; 5051 Peachtree Corners Circle, Suite 200, Norcross GA 30092; 245 First Street, Riverview, 18th Floor, Cambridge, MA 02142; 1400 Envoy Circle, Suite 1408, Louisville KY 40299",
+     "capacity": ""
+    },
+    {
+     "location": "USA - Cambridge Innovations Capital LLC: 1201 Hays Street, Tallahassee, FL 32301-2607",
+     "capacity": ""
+    },
+    {
+     "location": "USA - Cambridge Technology Financial Services, Inc.: 310 Alder Road, P.O. Box 841, Dover, Delaware 19904, County of Kent",
+     "capacity": ""
+    },
+    {
+     "location": "USA - Appshark Software Inc. (Wholly Owned Subsidiary): 3939 Belt Line Rd, Ste 575, Addison, Texas 75007",
+     "capacity": ""
+    },
+    {
+     "location": "Singapore - Cambridge Technology Investments Pte. Ltd: 7500A Beach Road, #14 302, The Plaza, Singapore (199591)",
+     "capacity": ""
+    },
+    {
+     "location": "Philippines - Cambridge Biz Serve Inc. (Step Down Subsidiary): 2F and 3F Floor, Filipino Gentiles, Juan Dela Cruz St. Toril, Davao City",
+     "capacity": ""
+    },
+    {
+     "location": "Malaysia - CT Asia SDN. BHD. (formerly known as CT Software Solutions SDN. BHD.): 17A-1, Jalan Camar 1/1, Taman Perling, 81200 Johor Bahru, Johor",
+     "capacity": ""
+    },
+    {
+     "location": "India - Capital Park, 4th Floor, Unit No. 403B & 404, Plot No. 1-98/4/1-13, 28 & 29, Survey No.72, Image Gardens Road, Madhapur, Hyderabad - 500 081, Telangana",
+     "capacity": ""
+    },
+    {
+     "location": "India - 91 Springboard Business Hub Pvt Ltd, 4th Floor, #175 & #176, Dollars Colony, Phase 4, JP Nagar, Bannerghatta Main Road, Bengaluru - 560 076, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "India - Level 4, A-Wing, Dynasty Business Park, Andheri Kurla Road, Andheri (E) Mumbai \u2013 400 059, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "India - Express Infrastructure Private Limited 5th,6th and 7th Floor, EA Chambers Tower II, Chennai, 600014, Tamil Nadu",
+     "capacity": ""
+    }
+   ]
+  },
+  "auditor": {
+   "name": "M/s. B R A N D & Associates LLP, Chartered Accountants (Firm registration No. 012344S/S200101)",
+   "opinion": "Unmodified",
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter \u2013 Standalone Financial Statements: The Company has significant investments in subsidiaries. Explanation by the Board: Where applicable, the downstream investments of the respective subsidiaries are expected to carry valuations that will not lead to any diminution in value of the Company's investment in subsidiaries. (Refer Note 5.1 of the standalone financial statements).",
+    "Emphasis of Matter \u2013 Consolidated Financial Statements: The Group has non-current investments which are valued at cost less impairment. Explanation by the Board: The Group is of the opinion that these investments carry value as stated in the consolidated financial statements. (Refer Note 5 of the consolidated financial statements).",
+    "The company had duly submitted the shareholding pattern pursuant to Regulation 31(1) of SEBI (LODR) Regulations, 2015 on BSE, however inadvertently missed filing the same on the NSE and pursuant to which the Company received intimation from the NSE in this regard. Thereafter Company completed the requisite filing and paid the applicable fine levied thereon.",
+    "Emphasis of Matter: The Company has significant investments in subsidiaries. Where applicable, the downstream investments of the respective subsidiaries are expected to carry valuations that will not lead to any diminution in value of Company's investment in subsidiaries. (Refer Note 5.1 of the standalone financial statements). Opinion not modified.",
+    "CARO qualifications: Cambridge Technology Enterprises Limited (Parent) - Clause 7; CTE Technology Solutions Private Limited (Subsidiary) - Clause 7, 17; R.P. Web Apps Private Limited (Subsidiary) - Clause 7, 17; FA Software Services Private Limited (Subsidiary) - Clause 7, 17, 19"
+   ],
+   "key_audit_matters": [
+    "Revenue recognition - Fixed price contracts where revenue is recognised using percentage of completion method"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Raj Kumar Sehgal's designation changed from Non-Executive Director to Executive Director and appointed as Whole-Time Director and Chief Financial Officer with effect from February 05, 2026",
+    "Mr. Dharani Swaroop Raghurama resigned from the position of Whole-Time Director and Chief Financial Officer and continued as Non-Executive and Non-Independent Director with effect from February 05, 2026",
+    "Mr. Vivek Kumar Singh appointed as Additional (Non-Executive and Independent) Director w.e.f. May 30, 2026, regularized by shareholders through Postal Ballot dated July 21, 2026",
+    "Mr. Srinivas Medepalli resigned as Non-Executive and Independent Director with effect from May 08, 2026",
+    "Ms. Manjula Aleti ceased to be Non-Executive and Independent Director on completion of her term on June 30, 2026",
+    "Mr. Stefan Hetges resigned as Non-Executive and Non-Independent Director with effect from July 24, 2026",
+    "Mr. Ashish Bhattad resigned as Company Secretary and Compliance Officer with effect from close of business hours of July 28, 2025",
+    "Ms. Priyanka Chugh appointed as Company Secretary and Compliance Officer with effect from August 12, 2025",
+    "Mr. Purnayya Puppala resigned as Chief Financial Officer with effect from close of business hours of October 10, 2025",
+    "Mr. Dharani Swaroop Raghurama appointed as Chief Financial Officer with effect from November 14, 2025",
+    "Mr. Sreenivasa Sastry Tumuluru appointed as Manager with effect from November 14, 2025",
+    "Mr. Sreenivasa Sastry Tumuluru ceased to be Manager with effect from March 30, 2026",
+    "Mr. Tarakad Narayanan Kannan was appointed as the Independent Director of the Company w.e.f. February 15, 2025",
+    "Ms. Priyanka Chugh was appointed as the Company Secretary of the Company w.e.f. August 12, 2025",
+    "Mr. Dharani Swaroop Raghurama ceased as Whole-Time Director and CFO w.e.f. February 05, 2026",
+    "Mr. Raj Kumar Sehgal appointed as Whole-Time Director and CFO w.e.f. February 05, 2026",
+    "Mr. Purnayya Puppala ceased as Chief Financial Officer w.e.f. October 10, 2025",
+    "The changes in the composition of the Board of directors that took place during the audit period were carried out in compliance with the provisions of the Act and Listing Regulations.",
+    "Mr. Dharani Swaroop Raghurama resigned from Whole-Time Director and CFO effective February 05, 2026, continued as Non-Executive and Non-Independent Director",
+    "Mr. Raj Kumar Sehgal designation changed from Non-Executive to Executive Director, appointed as Whole-Time Director and CFO effective February 05, 2026",
+    "Mr. Srinivas Medepalli resigned as Non-Executive and Independent Director effective May 08, 2026 due to personal reasons",
+    "Ms. Manjula Aleti ceased to be Non-Executive and Independent Director effective June 30, 2026 due to end of first term and unwillingness to continue for second term",
+    "Mr. Stefan Hetges resigned as Non-Executive and Non-Independent Director effective July 24, 2026",
+    "Mr. Vivek Kumar Singh appointed as Additional (Non-Executive and Independent Director) effective May 30, 2026, approved by shareholders via postal ballot dated July 21, 2026",
+    "Mr. Srinivas Medepalli, Independent Director, resigned from the Board prior to the expiry of his tenure after the close of the financial year under review. As stated in his resignation letter dated May 08, 2026, he stepped down due to personal reasons, confirming that there are no other material reasons for his resignation.",
+    "Mr. Vivek Kumar Singh (DIN: 09029741) was appointed as the Additional (Non - Executive and Independent) Director of the company w.e.f May 30, 2026 by the Board of Directors in their meeting held on May 30, 2026 and consequently received the approval for Appointment as Non - Executive and Independent Director of the company from the shareholders of the Company by passing the special resolution via postal Ballot dated July 21, 2026.",
+    "Mr. Dharani Swaroop Raghurama resigned from Whole-Time Director and CFO w.e.f. February 05, 2026, continued as Non-Executive Non-Independent Director",
+    "Mr. Raj Kumar Sehgal designation changed from Non-Executive Non-Independent to Whole-Time Director and CFO w.e.f. February 05, 2026 (approved by shareholders via Postal Ballot)",
+    "Mr. Stefan Hetges ceased as Non-Executive Non-Independent Director w.e.f. 24-07-2026",
+    "Ms. Manjula Aleti ceased as Non-Executive Independent Director w.e.f. 30-06-2026",
+    "Mr. Srinivas Medepalli ceased as Non-Executive Independent Director w.e.f. 08-05-2026",
+    "Mr. Vivek Kumar Singh appointed as Additional (Non-Executive Independent) Director w.e.f. May 30, 2026 (approved by shareholders via Postal Ballot)",
+    "Mr. Raj Kumar Sehgal appointed as Whole Time Director & CFO w.e.f. 05 February 2026",
+    "Mr. D.R.R Swaroop ceased as Whole Time Director & CFO up to 05 February 2026",
+    "Mr. Purnayya Puppala ceased as Chief Financial Officer up to 10 October 2025",
+    "Mrs Priyanka Chugh appointed as Company Secretary w.e.f. 02 June 2025",
+    "Mr. Ashish Bhattad ceased as Company Secretary up to 28 July 2025",
+    "Mr. Sreenivasa Sastry Tumuluru appointed as Manager from 14 November 2025 to 30 March 2026",
+    "Mr. Tarakad Narayanan Kannan appointed as Non-Executive - Independent Director w.e.f 15 February 2025",
+    "Mr. Raj Kumar Sehgal served as Non-Executive - Non Independent Director from 5th June 2025 to 5th February 2026",
+    "Mr. D.R.R Swaroop appointed as Non-Executive - Independent Director w.e.f 5th February 2026",
+    "Ms. Jayalakshmi Kumari Kanukollu (DIN: 03423518) retires by rotation and offers herself for re-appointment at the 27th AGM.",
+    "Appointment of M/s. S B C & Co, Chartered Accountants (Firm registration No. 004673S) as Statutory Auditors for five years from conclusion of 27th AGM till conclusion of 32nd AGM in 2031, replacing M/s. BRAND & Associates LLP whose term ends at this AGM."
+   ],
+   "auditor_change": "M/s. B R A N D & Associates LLP to retire at conclusion of ensuing AGM; Board approved appointment of M/s. S B C & Co., Chartered Accountants (FRN: 004673S) as Statutory Auditors for 5 years subject to member approval",
+   "top_shareholders": [
+    {
+     "name": "Promoter & Promoter Group",
+     "pct": 55.75
+    },
+    {
+     "name": "Cloud computing LLC",
+     "pct": 55.75
+    },
+    {
+     "name": "SmartShift AG",
+     "pct": 1.38
+    }
+   ],
+   "promoter_holding_pct": 55.75
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Raj Kumar Sehgal",
+     "role": "Whole-Time Director and Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Priyanka Chugh",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Nitin Tyagi",
+     "role": "Chief Executive Officer, Cambridge Technology Inc., USA"
+    },
+    {
+     "name": "Mr. Riaz Mohammad",
+     "role": "Vice President - Delivery"
+    },
+    {
+     "name": "Mr. Padmanava Debnath",
+     "role": "Head of Global Technology & India Operations"
+    },
+    {
+     "name": "Mr. Rajakrishnan Chandrasekharapanicker",
+     "role": "Vice President - Delivery"
+    },
+    {
+     "name": "Mr. Raj Kumar Sehgal",
+     "role": "Whole-Time Director and CFO"
+    },
+    {
+     "name": "Mr. Vivek Kumar Singh",
+     "role": "Non-Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Dharani Swaroop Raghurama",
+     "role": "Whole-Time Director and CFO (Till February 05, 2026)"
+    },
+    {
+     "name": "Mr. Purnayya Puppala",
+     "role": "Chief Financial Officer (Till October 10, 2025)"
+    },
+    {
+     "name": "Mr. Ashish Bhattad",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Priyanka Chugh",
+     "role": "Company Secretary (From August 12, 2025)"
+    },
+    {
+     "name": "Raj Kumar Sehgal",
+     "role": "Whole-Time Director and CFO"
+    },
+    {
+     "name": "Mr. Raj Kumar Sehgal",
+     "role": "Whole-Time Director and Chief Financial Officer (Executive Director)"
+    },
+    {
+     "name": "Mr. Dharani Swaroop Raghurama",
+     "role": "Non-Executive and Non-Independent Director (former Whole-Time Director and CFO)"
+    },
+    {
+     "name": "Ms. Jayalakshmi Kumari Kanukollu",
+     "role": "Non-Executive and Non-Independent Director"
+    },
+    {
+     "name": "Mr. Stefan Hetges",
+     "role": "Non-Executive and Non-Independent Director (resigned effective July 24, 2026)"
+    },
+    {
+     "name": "Mr. Lalpet Sridhar",
+     "role": "Non-Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Tarakad Narayanan Kannan",
+     "role": "Non-Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Srinivas Medepalli",
+     "role": "Non-Executive and Independent Director (resigned effective May 08, 2026)"
+    },
+    {
+     "name": "Ms. Manjula Aleti",
+     "role": "Non-Executive and Independent Director (ceased effective June 30, 2026)"
+    },
+    {
+     "name": "Mr. Vivek Kumar Singh",
+     "role": "Additional (Non-Executive and Independent Director) appointed effective May 30, 2026"
+    },
+    {
+     "name": "Ms. Priyanka Chugh",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Sai Krishna Kesireddy",
+     "role": "Senior Manager - Human Resources"
+    },
+    {
+     "name": "Mr. Prashanth Kumar Mettu",
+     "role": "Senior Manager - Administration & Facilities"
+    },
+    {
+     "name": "Mr. Sreenivasa Sastry Tumuluru",
+     "role": "General Manager Finance & Accounts"
+    },
+    {
+     "name": "Vivek Kumar Singh",
+     "role": "Non-Executive and Independent Director"
+    },
+    {
+     "name": "Raj Kumar Sehgal",
+     "role": "Wholetime Director & CFO"
+    },
+    {
+     "name": "Lalpet Sridhar",
+     "role": "Director"
+    },
+    {
+     "name": "Priyanka Chugh",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Allugunti Raj Kumar Sehgal",
+     "role": "Wholetime Director & CFO"
+    },
+    {
+     "name": "Mr. Raj Kumar Sehgal",
+     "role": "Whole Time Director & CFO (w.e.f. 05 February 2026)"
+    },
+    {
+     "name": "Mr. D.R.R Swaroop",
+     "role": "Whole Time Director & CFO (up to 05 February 2026)"
+    },
+    {
+     "name": "Mr. Purnayya Puppala",
+     "role": "Chief Financial Officer (up to 10 October 2025)"
+    },
+    {
+     "name": "Mrs Priyanka Chugh",
+     "role": "Company Secretary (w.e.f. 02 June 2025)"
+    },
+    {
+     "name": "Mr. Ashish Bhattad",
+     "role": "Company Secretary (Up to 28 July 2025)"
+    },
+    {
+     "name": "Mr. Sreenivasa Sastry Tumuluru",
+     "role": "Manager (from 14 November 2025 to 30 March 2026)"
+    },
+    {
+     "name": "Priyanka Chugh",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Ms. Jayalakshmi Kumari Kanukollu",
+     "role": "Non-Executive and Non Independent Director"
+    },
+    {
+     "name": "Mr. Raj Kumar Sehgal",
+     "role": "Whole \u2013 Time Director and CFO"
+    },
+    {
+     "name": "Mr. Dharani Swaroop Raghurama",
+     "role": "Non - Executive and Non - Independent Director"
+    },
+    {
+     "name": "Mrs. Jayalakshmi Kumari Kanukollu",
+     "role": "Non - Executive and Non - Independent Director"
+    },
+    {
+     "name": "Mr. Sridhar Lalpet",
+     "role": "Non - Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Tarakad Narayanan Kannan",
+     "role": "Non - Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Vivek Kumar Singh",
+     "role": "Non - Executive and Independent Director"
+    },
+    {
+     "name": "Mr. Riaz Mohammad",
+     "role": "Vice President \u2013 Delivery"
+    }
+   ],
+   "employees": 199
+  },
+  "other_notable": [
+   "No dividend recommended for FY 2025-26",
+   "No transfer to reserves proposed",
+   "Authorized share capital: Rs. 30 crores (3,00,00,000 equity shares of Rs. 10 each)",
+   "Paid-up capital: Rs. 19.63 crores (1,96,31,015 equity shares of Rs. 10 each)",
+   "No change in share capital during the year",
+   "CSR provisions not applicable as thresholds not met",
+   "BRSR not applicable as company not in top 1000 listed entities by market cap",
+   "Annual Listing Fees paid to BSE and NSE for FY 2025-26",
+   "No deposits accepted from public",
+   "Employee Stock Option Scheme in compliance with SEBI SBEB & SE Regulations, 2021",
+   "Board evaluation conducted for FY 2025-26 with satisfactory performance noted",
+   "7 Board Meetings held during FY 2025-26",
+   "Independent Directors meeting held on February 05, 2026",
+   "N2T1 AI Solutions Private Limited wholly owned subsidiary voluntarily struck off from register of companies with effect from March 31, 2026",
+   "R.P. Web Apps Private Limited ceased to be a subsidiary with effect from April 06, 2026",
+   "Secretarial Audit qualification: Company missed filing shareholding pattern on NSE for quarter ended December 31, 2025; filed subsequently and paid fine of Rs. 61,360",
+   "Internal Auditor changed from M/s. M. Anandam & Co to M/s. Aggarwal Monika, Chartered Accountants for FY 2026-27",
+   "No material changes affecting financial position between end of financial year and date of report",
+   "No significant orders by regulators/courts/tribunals impacting going concern status",
+   "No valuation required for one-time settlement or loan from banks/financial institutions",
+   "No application or proceeding under Insolvency and Bankruptcy Code, 2016",
+   "No revision of financial statements or Board's Report during the year",
+   "Maintenance of cost records under section 148 not required",
+   "Trading in securities not suspended",
+   "No issue of equity shares with differential rights",
+   "Auditors have not reported any matter under Section 143(12)",
+   "Employee Stock Option Schemes implemented through trust; trust is non-promoter and non-public shareholder not exercising voting rights",
+   "Secretarial Audit conducted for financial year ended March 31, 2026 by CS Kashinath Sahu (FCS:4790 CP:4807), Peer Review No: 2957/2023",
+   "Compliance Certificate under Regulation 17(8) of SEBI (LODR) Regulations, 2015 signed by Raj Kumar Sehgal, Whole-Time Director and CFO (DIN: 01570858) dated May 30, 2026",
+   "Registered Office: Capital Park, 4th Floor, Unit No. 403B & 404, Plot No. 1-98/4/1-13, 28 & 29, Survey No.72, Image Gardens Road, Madhapur, Hyderabad - 500081, Telangana, India",
+   "CIN: L72200TG1999PLC030997",
+   "The Company's Agentic AI methodology encompasses the full solution lifecycle from feasibility assessment and proof-of-concept design to production deployment and ongoing model refinement",
+   "Proprietary work in lightweight, modular agent orchestration research and development activity",
+   "Growing commercial interest from animal health and pet nutrition industries in purpose-built AI and ML solutions viewed as a nascent but commercially viable vertical",
+   "Revenue decreased by 13.83% to Rs 57.24 crores in FY 2025-26 from Rs 66.43 crores in FY 2024-25",
+   "Profit Before Tax decreased by 22.17% to Rs 3.77 crores from Rs 4.85 crores",
+   "Profit After Tax increased by 7.30% to Rs 2.73 crores from Rs 2.54 crores",
+   "Total Comprehensive Income increased by 18.68% to Rs 3.04 crores from Rs 2.56 crores",
+   "Reserves and Surplus increased from Rs 32.07 crores to Rs 35.11 crores",
+   "EPS increased to 1.39 from 1.30",
+   "Total Expenditure decreased by 16.26% to Rs 55.30 crores from Rs 66.04 crores",
+   "Employee Benefits Expense decreased by 9.00% to Rs 40.85 crores from Rs 44.89 crores",
+   "Finance Costs decreased by 14.79% to Rs 4.51 crores from Rs 5.29 crores",
+   "Other income decreased to Rs 1.83 crores from Rs 4.46 crores",
+   "Standalone Debt-Equity Ratio improved to 0.46 from 0.91 (49.30% reduction)",
+   "Standalone Interest Coverage Ratio/DSCR improved from (0.59) to (0.36) (38.17% improvement)",
+   "Consolidated Current Ratio improved from 1.63 to 2.31 (42% increase)",
+   "Consolidated Debt-Equity Ratio decreased from 1.27 to 0.91 (28% reduction)",
+   "Consolidated Operating Profit Margin turned positive to 5.18% from (17.97%)",
+   "Consolidated Net Profit Margin improved to 0.01 from (0.23)",
+   "Consolidated Return on Equity improved to 0.02 from (0.68)",
+   "Company maintains ISO/IEC 20000-1:2018, ISO/IEC 27001:2022, TISAX, and SOC 2 Type 2 certifications",
+   "Organisation-wide AI literacy programme implemented during the year",
+   "Headquartered in India with marketing and support from the US",
+   "Partnerships with AWS, Confluent, Google, Oracle, Atlassian, Tricentis",
+   "One separate meeting of the Independent Directors was held during FY 2025-26 on February 05, 2026, without the participation of the Non-Independent Directors and members of Management.",
+   "During FY 2025-26, seven (7) Board Meetings were held on May 29, 2025, August 12, 2025, August 18, 2025, November 14, 2025, December 23, 2025, February 05, 2026, and March 30, 2026.",
+   "The Company does not have net worth of rupees five hundred crore or more, or turnover of rupees one thousand crore or more or a net profit of rupees five crore or more for the financial year ended March 31, 2025. Hence, Corporate Social Responsibility provisions are not applicable to the Company.",
+   "Risk Management Committee is not applicable to the Company as it is not among the top 1000 listed entities by market capitalisation.",
+   "No Extraordinary General Meeting of the Members was held during FY 2025-26."
+  ],
+  "subsidiaries": [
+   {
+    "name": "CTE Technology Solutions Private Limited (formerly known as CTE Web Apps Private Limited)",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "FA Software Services Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "R.P. Web Apps Private Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Inc., USA",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Investments Pte. Ltd., Singapore",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Appshark Software, Inc., USA",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Innovation Capital LLC, USA",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge BizServe Inc., Philippines",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "CT Asia SDN. BHD., Malaysia (formerly known as CT Software Solutions SDN. BHD., Malaysia)",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Financial Services Inc., USA",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "CBIZ Information Technology LLC, Dubai",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Inc",
+    "business": "Software services (USA subsidiary)"
+   },
+   {
+    "name": "Appshark Software, Inc",
+    "business": "Software services (USA subsidiary)"
+   },
+   {
+    "name": "Cambridge Technology Inc.",
+    "holding_pct": 100,
+    "business": "Wholly owned foreign subsidiary in USA"
+   },
+   {
+    "name": "Cambridge Technology Investments Pte Ltd.",
+    "holding_pct": 100,
+    "business": "Wholly owned foreign subsidiary in Singapore"
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in India (formerly CTE Web Apps Private Limited)"
+   },
+   {
+    "name": "FA Software Services Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in India"
+   },
+   {
+    "name": "RP Web Apps Private Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary in India"
+   },
+   {
+    "name": "Appshark Software Inc.",
+    "holding_pct": 100,
+    "business": "Wholly owned foreign subsidiary in USA"
+   },
+   {
+    "name": "N2T1 AI Solutions Private Limited",
+    "holding_pct": 0,
+    "business": "Subsidiary struck off with effect from 27 March 2026"
+   },
+   {
+    "name": "Cambridge Technology Inc., USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited (formerly CTE Web Apps Private Limited)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "FA Software Services Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "R.P. Web Apps Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Investments Pte Ltd, Singapore",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge BizServe Inc, Philippines",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CT Asia SDN. BHD. (formerly CT Software Solutions SDN BHD), Malaysia",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Innovation Capital LLC, USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Appshark Inc., USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Financial Services Inc. USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "C B I Z Information Technology LLC",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited (formerly known as CTE Web Apps Private Limited)",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "RP Web Apps Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "N2T1 AI Solutions Private Limited upto 27th March 2026",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Appshark Software Inc., USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Investments Pte Limited, Singapore",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Innovations Capital LLC, USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Bizserve Inc., Philippines",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CT Asia SDN BHD, Malaysia",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Financial Services Inc, USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Inc., USA",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary; revised estimated useful life of certain intangible assets (software) from 5 years to 15 years effective FY 2025-26"
+   },
+   {
+    "name": "AppShark Software Inc.",
+    "holding_pct": null,
+    "business": "Subsidiary of the Group; availed Economic Injury Disaster Loan (EIDL) from U.S. Small Business Administration"
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited (formerly known as CTE Web Apps Private Limited)",
+    "holding_pct": null,
+    "business": "Subsidiary; had working capital facility from Kotak Mahindra Bank"
+   },
+   {
+    "name": "FA Software Services Private Limited",
+    "holding_pct": null,
+    "business": "Subsidiary; availed unsecured loans from NBFCs for business working capital purposes"
+   },
+   {
+    "name": "Cambridge Technology Inc., USA",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "FA Software Services Private Limited",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary (w.e.f March 15, 2024)"
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited (formerly CTE Web Apps Private Limited)",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "RP Web Apps Private Limited",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary (w.e.f July 31, 2023)"
+   },
+   {
+    "name": "N2T1 AI Solutions Private Limited",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary upto 27 March 2026"
+   },
+   {
+    "name": "Cambridge Technology Investments Pte Ltd., Singapore",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "Appshark Software Inc, USA",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary (w.e.f January 23, 2024)"
+   },
+   {
+    "name": "Cambridge Innovation Capital LLC, USA",
+    "holding_pct": null,
+    "business": "Step down subsidiary to Cambridge Technology Investments Pte Ltd., Singapore"
+   },
+   {
+    "name": "Cambridge Bizserve Inc., Philippines",
+    "holding_pct": null,
+    "business": "Step down subsidiary to Cambridge Technology Investments Pte Ltd., Singapore"
+   },
+   {
+    "name": "CT Asia SDN BHD, Malaysia",
+    "holding_pct": null,
+    "business": "Step down subsidiary to Cambridge Technology Investments Pte Ltd., Singapore"
+   },
+   {
+    "name": "Cambridge Technology Financial Services Inc, USA",
+    "holding_pct": null,
+    "business": "Step down subsidiary to Cambridge Technology Inc, USA (w.e.f 21 September 2023)"
+   },
+   {
+    "name": "CTE Technology Solutions Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "N2T1 AI Solutions Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Inc, USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Appshark Software Inc, USA",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Financial Services Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Investments PTE Ltd, Singapore",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Bizserve Inc, Philippines",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CT Asia, SDN BHD, Malaysia",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "CBIZ Information Technology LLC",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Innovations Capital LLC",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Technology Financial Services, Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Appshark Software Inc.",
+    "holding_pct": null,
+    "business": "Wholly Owned Subsidiary"
+   },
+   {
+    "name": "Cambridge Technology Investments Pte. Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Cambridge Biz Serve Inc.",
+    "holding_pct": null,
+    "business": "Step Down Subsidiary"
+   },
+   {
+    "name": "CT Asia SDN. BHD. (formerly known as CT Software Solutions SDN. BHD.)",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Cambridge Technology Inc., USA (CTI)",
+    "nature": "Wholly Owned Subsidiary",
+    "amount_cr": 51.98
+   },
+   {
+    "party": "Cambridge Technology Inc., USA (CTI)",
+    "nature": "Wholly Owned Subsidiary",
+    "amount_cr": 51.979416066
+   },
+   {
+    "party": "FA Software Services Private Limited",
+    "nature": "Common Directorship (Ms. Manjula Aleti)",
+    "amount_cr": 1.7822016
+   },
+   {
+    "party": "Subsidiaries",
+    "nature": "Loans granted (unsecured)",
+    "amount_cr": 361.85
+   },
+   {
+    "party": "FA Software Services Private Limited",
+    "nature": "Loan to subsidiary at 5.50% interest",
+    "amount_cr": 20.36
+   },
+   {
+    "party": "Cambridge Technology Inc. USA",
+    "nature": "Export Sales of Services",
+    "amount_cr": 51.98
+   },
+   {
+    "party": "RP Web Apps Private Limited",
+    "nature": "Working capital loan (unsecured, repayable on demand, 7.5% interest)",
+    "amount_cr": 0.06
+   },
+   {
+    "party": "CTE Web Apps Private Limited",
+    "nature": "Working capital loan (unsecured, repayable on demand, 7.5% interest)",
+    "amount_cr": 5.02
+   },
+   {
+    "party": "Subsidiary (unnamed)",
+    "nature": "Interest income on loan given",
+    "amount_cr": 0.72
+   },
+   {
+    "party": "Mr. Raj Kumar Sehgal",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.0064964
+   },
+   {
+    "party": "Mr. D.R.R Swaroop",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.1231644
+   },
+   {
+    "party": "Mr. Purnayya Puppala",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.0346447
+   },
+   {
+    "party": "Mrs. Priyanka Chugh",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.0134224
+   },
+   {
+    "party": "Mr. Ashish Bhattad",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.008789
+   },
+   {
+    "party": "Mr. Sreenivasa Sastry Tumuluru",
+    "nature": "Key Managerial Personnel - Remuneration to KMP",
+    "amount_cr": 0.0107841
+   },
+   {
+    "party": "FA Software Services Private Limited",
+    "nature": "Loan receivable assignment/transfer",
+    "amount_cr": 15.222576
+   },
+   {
+    "party": "Aglow Financial Services Private Limited",
+    "nature": "Assignee of loan receivable",
+    "amount_cr": 0.4
+   },
+   {
+    "party": "Holding company",
+    "nature": "Rental income on assets given on operating lease",
+    "amount_cr": 0
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "HDFC Bank",
+    "amount_cr": 32.23,
+    "note": "Delayed payment of interest of Rs 0.21 crore due on February 1, 2025, paid on April 2, 2025; defaulted on principal repayment of Rs 32.02 crore; borrowings repaid in full on October 08, 2025"
+   },
+   {
+    "lender_or_type": "Total borrowings",
+    "amount_cr": 73.32,
+    "note": "Declined from Rs. 86.24 crores as at previous year-end; net repayment of borrowings during the year"
+   },
+   {
+    "lender_or_type": "foreign currency loans",
+    "amount_cr": null,
+    "note": "closure/repayment of higher interest-bearing foreign currency loans during the year"
+   },
+   {
+    "lender_or_type": "INR-denominated debt",
+    "amount_cr": null,
+    "note": "refinancing the balance through INR-denominated debt"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 14.87,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 10.38,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - Rupee Term Loan (Loan Against Property)",
+    "amount_cr": 14.04,
+    "note": "Secured by mortgage of specified immovable property, 15-year tenure, 9.5% interest, outstanding Rs 1,40,445.41 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - Unsecured Loan",
+    "amount_cr": 0.26,
+    "note": "Rs 5,000 thousand availed, 36-month tenure, 13.5% interest, outstanding Rs 2,571.36 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Connect One Finserve India Private Limited (NBFC) - Unsecured Loan",
+    "amount_cr": 0.57,
+    "note": "Rs 10,000 thousand availed, 36-month tenure, 28% interest, outstanding Rs 5,657.44 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - DOD Drop Down Over Draft Facility",
+    "amount_cr": 4.39,
+    "note": "Rs 44,000 thousand availed, 15-year tenure, 9.5% interest, outstanding Rs 43,938.86 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "RP Web Apps Private Limited - Unsecured Loan (Related Party)",
+    "amount_cr": 0.06,
+    "note": "Repayable on demand, 7.5% interest, outstanding Rs 630.03 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "CTE Web Apps Private Limited - Unsecured Loan (Related Party)",
+    "amount_cr": 5.02,
+    "note": "Repayable on demand, 7.5% interest, outstanding Rs 50,249.11 thousand as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "HDFC Bank - FCNR Term Loans (I, II, III)",
+    "amount_cr": 0,
+    "note": "Fully repaid during the year; previous year outstanding: Term Loan I Rs 41,434.51 thousand, Term Loan II Rs 9,434.24 thousand, Term Loan III Rs 1,21,087.35 thousand"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 496.8,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 236.43,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank Limited - Rupee Term Loan (Loan Against Property)",
+    "amount_cr": 14.044541,
+    "note": "Secured by mortgage of specified immovable property; repayable over 15 years; interest rate 9.5% p.a.; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "U.S. Small Business Administration (SBA) - Cambridge Technology Inc.",
+    "amount_cr": 17.896315,
+    "note": "Economic Injury Disaster Loan of USD 20 million; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "U.S. Small Business Administration (SBA) - AppShark Software Inc.",
+    "amount_cr": 13.313365,
+    "note": "Economic Injury Disaster Loan; repayable over 30 years; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank Limited - Unsecured loan",
+    "amount_cr": 0.257136,
+    "note": "Rs. 5,000 thousands; repayable over 36 months; interest rate 13.5% p.a.; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Connect One Finserve India Private Limited (NBFC) - Unsecured loan",
+    "amount_cr": 0.565744,
+    "note": "Rs. 10,000 thousands; repayable over 36 months; interest rate 28% p.a.; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Midwest Regional Bank - AppShark Software Inc.",
+    "amount_cr": 1.412095,
+    "note": "Unsecured loan availed prior to acquisition; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Others - AppShark Software Inc.",
+    "amount_cr": 2.190911,
+    "note": "Unsecured loan availed prior to acquisition; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Karur Vysya Bank - DOD Drop Down Over Draft Facility",
+    "amount_cr": 4.393886,
+    "note": "Rs. 44,000 thousand; tenure 15 years; interest rate 9.5%; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Bank of America - Line of Credit (Cambridge Technology Inc.)",
+    "amount_cr": 16.398099,
+    "note": "Line of Credit utilisation; interest @ LIBOR daily floating rate plus 325 base points; outstanding as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Variable rate borrowings",
+    "amount_cr": 73.322859,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Fixed rate borrowings",
+    "amount_cr": 0.0,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Total borrowings",
+    "amount_cr": 73.322859,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 23.642752,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 49.680107,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current maturities of long term debt",
+    "amount_cr": 2.012924,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "CITI Bank",
+    "amount_cr": null,
+    "note": "Charges/satisfaction filings pending registration with ROC beyond statutory period"
+   },
+   {
+    "lender_or_type": "Kotak Bank",
+    "amount_cr": null,
+    "note": "Charges/satisfaction filings pending registration with ROC beyond statutory period"
+   },
+   {
+    "lender_or_type": "Secured borrowings",
+    "amount_cr": null,
+    "note": "Secured against book debts, fixed deposits, and corporate office building provided as lien"
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "Management remains focused on strengthening the Company's positioning through deeper engagement with existing accounts, expanding the addressable client base, diversifying technology and digital service offerings, and investing in emerging growth areas such as AI/automation-led solutions to build a more resilient, future-ready service portfolio and support sustainable long-term value creation.",
+    "period": "Medium to long term"
+   },
+   {
+    "statement": "Continued investments in product development, delivery capability enhancement, and client engagement are expected to further strengthen the Company's competitive positioning over the medium to long term.",
+    "period": "Medium to long term"
+   },
+   {
+    "statement": "The Company will continue to pursue measures aimed at optimizing operating costs, improving internal efficiencies, and better aligning resources with its long-term growth roadmap to support sustained recovery in margins and facilitate rebuilding of reserves.",
+    "period": "Forthcoming periods"
+   },
+   {
+    "statement": "The Company enters fiscal year 2026-27 with a well-defined strategic focus. Its portfolio of capabilities is closely aligned with the most significant demand trends in enterprise technology. The Agentic AI practice is now a formally structured and commercially active service line, expected to be a meaningful contributor to pipeline development over the coming quarters. Industry-specific solution development across healthcare, life sciences, animal health, and pet nutrition sectors represents a differentiated and commercially promising growth pathway. The Company's strengthened Oracle and Salesforce partnerships are expected to generate incremental commercial activity. The Company will continue to pursue disciplined investment, focused capability development, and the deepening of its long-term client relationships as its primary strategic priorities.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "During the year, we offered qualifying enterprise clients complimentary proof-of-concept engagements for Agentic AI use cases, generating a substantial pipeline and enabling prospective customers to evaluate the technology's applicability within their own operational environments.",
+    "value_cr": null
+   },
+   {
+    "statement": "Assignment/Transfer of loan receivable from FA Software Services Private Limited to Aglow Financial Services Private Limited for an aggregate consideration of Rs. 40,00,000/- (Rupees Forty Lakh only), excluding the right to receive interest accrued and payable on the Assigned Debt.",
+    "value_cr": 0.4
+   }
+  ],
+  "risks": [
+   "Cautious technology spending by clients",
+   "Elongated deal cycles",
+   "Pricing pressures across the portfolio",
+   "Subdued demand in the broader IT services market",
+   "Weaker execution across certain subsidiary entities",
+   "Completion and non-renewal of select client engagements/projects",
+   "Moderation in revenues from service-led offerings",
+   "Technology and Market Risk: Failure to keep pace with emerging paradigms could erode competitive positioning, particularly in AI, agentic and foundation model architectures",
+   "Client Concentration Risk: A portion of revenue is derived from a limited number of long-standing enterprise relationships; any material change in a key client's technology investment posture could affect short-term revenue predictability",
+   "Currency and Exchange Rate Risk: Significant proportion of revenues denominated in foreign currencies, primarily US Dollars; fluctuations in exchange rates can affect reported financial results",
+   "Talent Retention Risk: Competition for specialized AI, ML, and data engineering talent remains intense",
+   "Regulatory and Compliance Risk: Evolving data privacy regulations, AI governance frameworks, and sector-specific compliance requirements across jurisdictions",
+   "Macroeconomic Risk: Broader economic uncertainty in key markets, including the United States, may result in clients deferring or reducing technology investment",
+   "Rental deposit of Rs. 6,237.00 thousand for old Bangalore branch office under dispute at arbitration",
+   "Foreign currency exchange rate risk (primarily USD)",
+   "Interest rate risk on defined benefit obligations",
+   "Salary inflation risk on defined benefit obligations",
+   "Demographic risk on defined benefit obligations",
+   "Credit risk on financial instruments",
+   "Liquidity risk",
+   "Rental deposits of Rs. 6,237.00 thousand represent the deposit for the old office of the Bangalore branch, which is currently under dispute. The outcome of this dispute is pending at Arbitration.",
+   "Foreign currency exchange rate risk primarily relating to US Dollars",
+   "Interest rate risk on floating rate borrowings",
+   "Credit risk on trade receivables",
+   "Direct tax disputes with income tax authorities",
+   "Indirect tax disputes including GST and Service tax",
+   "Interest rate risk: If bond yields fall, defined benefit obligation will tend to increase",
+   "Salary inflation risk: Higher than expected increases in salary will increase defined benefit obligation",
+   "Demographic risk: Variability of results due to unsystematic nature of decrements",
+   "The Company has certain charges/satisfaction filings pending in respect of facilities from CITI Bank and Kotak Bank, which are yet to be registered with the Registrar of Companies. These filings are pending beyond the statutory period."
+  ],
+  "litigation": [
+   "NSE Regulation 31 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015: Company delayed the submission of the Shareholding Pattern on the NSE platform for quarter ended December 31, 2025. Fine: Rs. 61,360/-",
+   "NSE Regulation 33 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015: The Company did not submit Standalone & Consolidated Assets & Liabilities and Cash Flow Statement for quarter ended September 30, 2023. Fine: Rs. 2,47,800/-",
+   "BSE Regulation 33 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015: The Company did not submit Standalone & Consolidated Assets & Liabilities and Cash Flow Statement for quarter ended September 30, 2023. Fine: Rs. 70,800/-",
+   "The Company has disclosed the impact of pending litigations on its financial position in its standalone financial statements (Refer Note 38 of the Standalone financial statements).",
+   "Income tax disputes pending at CIT (Appeals) and ITAT for AY 2011-12 to AY 2021-22",
+   "Service tax dispute pending at CESTAT Hyderabad for FY 2007-08 to FY 2009-10",
+   "Rental deposit of Rs. 6,237.00 thousand for old Bangalore branch office under dispute at arbitration",
+   "Pending litigations as at 31 March 2026 disclosed in consolidated balance sheet along with Note 38 to the consolidated financial statements.",
+   "Rental deposits of Rs. 6,237.00 thousand represent the deposit for the old office of the Bangalore branch, which is currently under dispute. The outcome of this dispute is pending at Arbitration.",
+   "Ongoing disputes with income tax authorities in India relating to tax treatment of certain expenses, computation of allowances, characterisation of expenses and transfer pricing issues",
+   "Ongoing disputes with tax authorities primarily relating to characterisation and classification of certain items for indirect taxes",
+   "GST demand of Rs. 0.14 crore relating to mismatch of Input Tax Credit (ITC) claimed between GSTR-3B and GSTR-2A for FY 2017-18, appeal filed before Appellate Authority"
+  ],
+  "dividend_per_share": 0,
+  "contingent_liabilities": [
+   {
+    "nature": "Income tax disputes (AY 2011-12 to AY 2021-22)",
+    "amount_cr": 5.61
+   },
+   {
+    "nature": "Service tax dispute (FY 2007-08 to FY 2009-10)",
+    "amount_cr": 3.26
+   },
+   {
+    "nature": "Rental deposit dispute for old Bangalore branch office at arbitration",
+    "amount_cr": 0.62
+   },
+   {
+    "nature": "Pending litigations including income tax liabilities",
+    "amount_cr": null
+   },
+   {
+    "nature": "Rental deposit dispute for old Bangalore office",
+    "amount_cr": 0.6237
+   },
+   {
+    "nature": "Direct tax matters",
+    "amount_cr": 8.58
+   },
+   {
+    "nature": "Indirect taxes (Service tax)",
+    "amount_cr": 3.257618
+   },
+   {
+    "nature": "Indirect taxes (Goods and Service Tax)",
+    "amount_cr": 0.140851
+   },
+   {
+    "nature": "Income tax",
+    "amount_cr": 8.580007
+   },
+   {
+    "nature": "GST demand for FY 2017-18 (ITC mismatch)",
+    "amount_cr": 0.14
+   },
+   {
+    "nature": "Letter of comfort for subsidiary FA Software Services Private Limited",
+    "amount_cr": 7.0
+   }
+  ]
+ }
+}

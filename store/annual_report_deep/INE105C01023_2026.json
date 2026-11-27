@@ -1,0 +1,672 @@
+{
+ "isin": "INE105C01023",
+ "name": "3P Land Holdings Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_29615_3PLAND_2025_2026_A_4719663_07072026161236.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 446836,
+ "chunks": 12,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "3P Land Holdings Limited is a listed company with registered office in Thergaon, Pune and corporate office in Mumbai. The company appears to be engaged in fund management activities including granting and availing inter-corporate deposits to/from related parties.",
+   "value_chain_position": "other",
+   "customers": [
+    "Pudumjee Paper Products Ltd.",
+    "Pudumjee Paper Products Limited",
+    "Quality Tissue Converting Company Private Limited",
+    "Dipper Healthcare Private Limited",
+    "Group companies under common control (Pudumjee Paper Products Limited, Quality Tissue Converting Company Private Limited, Dipper Healthcare Private Limited, Biodegradable Products India Limited, AMJ Land Holdings Limited)"
+   ],
+   "geographies": [
+    {
+     "name": "Pune, Maharashtra",
+     "share_pct": null
+    },
+    {
+     "name": "Village Khairy, Tehsil Kareli, Narsinghpur, Madhya Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "end_markets": [
+    "Core Investment Company",
+    "Real Estate Leasing",
+    "industrial leasing",
+    "management services",
+    "Group companies",
+    "External customers in India"
+   ],
+   "plants": [
+    {
+     "location": "Thergaon, Pune 411033",
+     "capacity": ""
+    },
+    {
+     "location": "India",
+     "capacity": "Industrial land and buildings (investment property)"
+    }
+   ],
+   "products": [
+    {
+     "name": "Lending of investment in group companies",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Real estate leasing",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Interest income from loans to related parties",
+     "share_of_revenue_pct": null,
+     "note": "Rs 196.12 lakhs in FY2026"
+    },
+    {
+     "name": "Dividend income from equity investments",
+     "share_of_revenue_pct": null,
+     "note": "Rs 81.40 lakhs in FY2026"
+    },
+    {
+     "name": "Rental income from investment properties",
+     "share_of_revenue_pct": null,
+     "note": "Rs 30.26 lakhs in FY2026"
+    },
+    {
+     "name": "Lease of machinery income",
+     "share_of_revenue_pct": null,
+     "note": "Rs 9.45 lakhs in FY2026"
+    },
+    {
+     "name": "Marketing services income",
+     "share_of_revenue_pct": null,
+     "note": "Rs 150.00 lakhs in FY2026"
+    },
+    {
+     "name": "Lending of investments in group companies",
+     "share_of_revenue_pct": null,
+     "note": "Interest income from loan to associate company"
+    },
+    {
+     "name": "Sale of services",
+     "share_of_revenue_pct": null,
+     "note": "Services for sales and marketing"
+    },
+    {
+     "name": "Leasing of real estate",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 30.26 lakhs in 2025-26"
+    },
+    {
+     "name": "Leasing of machinery",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 9.45 lakhs in 2025-26"
+    },
+    {
+     "name": "Investment income (interest and dividend)",
+     "share_of_revenue_pct": null,
+     "note": "Interest income Rs. 196.12 lakhs, Dividend income Rs. 81.40 lakhs in 2025-26"
+    },
+    {
+     "name": "Marketing services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs. 150.00 lakhs in 2025-26"
+    }
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Granting Inter-Corporate Deposits (ICDs) in ordinary course of fund management activities on arm's length basis",
+    "amount_cr": 40
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Granting Inter-Corporate Deposits (ICDs) in ordinary course of fund management activities on arm's length basis",
+    "amount_cr": 10
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Acceptance/availing of Inter-Corporate Deposits (ICDs) in ordinary course of fund management activities on arm's length basis",
+    "amount_cr": 10
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Availing common services such as telephone, electricity, computers and administrative support services/reimbursement of expenses and payments and other operational services including purchase/sale of materials and allied services",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Providing Inter-Corporate Deposits (ICDs) in ordinary course of fund management activities on arm's length basis",
+    "amount_cr": 10
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Accepting/availing of Inter-Corporate Deposits (ICDs) in ordinary course of fund management activities on arm's length basis",
+    "amount_cr": 10
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Availing common services such as telephone, electricity, computers and administrative support services/reimbursement of expenses and payments and other operational services including purchase/sale of materials and allied services",
+    "amount_cr": 0.5
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Providing Inter-Corporate Deposits (ICDs), granting/availing loans, and providing/obtaining security and corporate guarantees",
+    "amount_cr": 40
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Providing Inter-Corporate Deposits (ICDs), granting loans, and providing/obtaining security and corporate guarantees",
+    "amount_cr": 10
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Promoter Group company; Real Estate Development; Mr. Arun Kumar Jatia is promoter of both and holds 2.54% equity in AMJ Land; Promoter group holds 73.30% in 3P Land Holdings",
+    "amount_cr": 10
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Promoter Group company; Manufacture of paper and hygiene products; 3P Land Holdings holds 14.28% equity in PPPL; Mr. Arun Kumar Jatia is promoter of both and holds 5.16% in 3P Land Holdings; Promoter group holds 73.30% in 3P Land Holdings",
+    "amount_cr": 10
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Part of Promoter Group; Company holds 14.28% equity shares in PPPL; Mr. Arun Kumar Jatia is promoter of both companies",
+    "amount_cr": null
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Associate Company (27.11% ownership); ICD given",
+    "amount_cr": 2.23
+   },
+   {
+    "party": "Pudumjee Paper Products Limited (PPPL)",
+    "nature": "Related party under section 2(76)(v); Leave & License Agreement for lease of real estate (land and buildings) at Pune; Supply of Services for sales and marketing",
+    "amount_cr": 1.5
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Loans/Advances Given",
+    "amount_cr": 1.23
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Leave and License Agreement for land admeasuring about 4.63 acres at Thergaon, Pune",
+    "amount_cr": null
+   },
+   {
+    "party": "associate",
+    "nature": "unsecured loans granted",
+    "amount_cr": 21.9871
+   },
+   {
+    "party": "related parties as defined in clause (76) of section 2 of the Companies Act, 2013",
+    "nature": "aggregate amount of loans granted",
+    "amount_cr": 19.7229
+   },
+   {
+    "party": "Associate Company (Biodegradable Products India Ltd.)",
+    "nature": "Long-term loan and interest receivable",
+    "amount_cr": 21.9871
+   },
+   {
+    "party": "Pudumjee Paper Products Limited (Group Company)",
+    "nature": "Corporate financial guarantee for credit facility",
+    "amount_cr": 180
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Loan given",
+    "amount_cr": 22.3
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Repayment of loan received",
+    "amount_cr": 1.0
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Interest charged",
+    "amount_cr": 1.96
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Reimbursement of Common Services and utilities charged",
+    "amount_cr": 0.0018
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Dividend received",
+    "amount_cr": 0.81
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Rent received (incl. gst)",
+    "amount_cr": 0.36
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Management services Provided",
+    "amount_cr": 1.77
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Reimbursement of Common Services and utilities paid",
+    "amount_cr": 0.03
+   },
+   {
+    "party": "Quality Tissue Converting Company Private Limited",
+    "nature": "Rent received (incl. gst)",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Quality Tissue Converting Company Private Limited",
+    "nature": "Sale of Machinery",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Dipper Healthcare Private Limited",
+    "nature": "Rent received (incl. gst)",
+    "amount_cr": 0.04
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Professional services Received",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Remuneration",
+    "amount_cr": 1.34
+   },
+   {
+    "party": "Biodegradable Products India Ltd. (Associate Company)",
+    "nature": "Loan given (including interest)",
+    "amount_cr": 21.9871
+   },
+   {
+    "party": "Biodegradable Products India Limited",
+    "nature": "Associate Company - Loan given, Interest charged, Reimbursement of services",
+    "amount_cr": 20.22
+   },
+   {
+    "party": "Pudumjee Paper Products Limited",
+    "nature": "Group Company - Dividend received, Rent received, Management services provided, Reimbursement of services, Corporate financial guarantee",
+    "amount_cr": 4.69
+   },
+   {
+    "party": "Quality Tissue Converting Company Private Limited",
+    "nature": "Group Company - Rent received, Sale of machinery",
+    "amount_cr": 0.07
+   },
+   {
+    "party": "Dipper Healthcare Private Limited",
+    "nature": "Group Company - Rent received",
+    "amount_cr": 0.04
+   },
+   {
+    "party": "AMJ Land Holdings Limited",
+    "nature": "Group Company - Professional services received",
+    "amount_cr": 0.05
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Remuneration (short-term, post-employment, other long-term benefits, sitting fees)",
+    "amount_cr": 1.34
+   }
+  ],
+  "auditor": {
+   "name": "J. M. Agrawal & Company",
+   "opinion": "No adverse remark or qualification in the Statutory Auditor's Report",
+   "key_audit_matters": [
+    "Investments in associate company \u2013 classification, measurement and impairment"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mrs. Vasudha Jatia (DIN: 06725426) retires by rotation and offers herself for re-appointment",
+    "Mrs. Vasudha Jatia (DIN: 06725426), Non Executive Director, retires by rotation at the ensuing AGM and offers herself for re-appointment",
+    "Mr. Romie Shivhari Halan Independent Director, was reappointed w.e.f. 01.09.2025 after completing his first term of five years on 31st August, 2025.",
+    "Mr. Upendra Goraksha Deglurkar Appointed w.e.f. 20th January, 2024",
+    "Mr. Sudhir Vithalrao Duppaliwar Appointed w.e.f. 02nd March, 2024",
+    "Appointment of Mr. Romie Shivhari Halan (Din: 02816976) as Non-Independent Non-executive Director for a period of five years with effect from 01st September, 2025 to 31st August, 2030"
+   ],
+   "promoter_holding_pct": 73.3,
+   "top_shareholders": [
+    {
+     "name": "Promoter Group & Related Parties",
+     "pct": 73.3
+    },
+    {
+     "name": "Mr. Arun Kumar Jatia",
+     "pct": 5.16
+    },
+    {
+     "name": "Promoter Group & related parties",
+     "pct": 73.3
+    },
+    {
+     "name": "AMJ Land Holdings Limited",
+     "pct": 27.24
+    },
+    {
+     "name": "Thacker & Co. Limited",
+     "pct": 19.61
+    },
+    {
+     "name": "Suma Commercial Private Limited",
+     "pct": 10.27
+    },
+    {
+     "name": "Yashvardhan Jatia Trust",
+     "pct": 9.01
+    },
+    {
+     "name": "Arunkumar M. Jatia",
+     "pct": 5.16
+    },
+    {
+     "name": "Arunkumar Mahabir Prasad Jatia",
+     "pct": 5.16
+    }
+   ],
+   "auditor_change": "M/s. J. M. Agrawal & Co. re-appointed at 57th AGM to hold office up to conclusion of 62nd AGM; M/s. Parikh and Associates appointed at 60th AGM for Secretarial Audit from FY 2025-26 to FY 2029-30"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Gautam Nandkishore Jajodia",
+     "role": "Chairman & Executive Director"
+    },
+    {
+     "name": "Mrs. Vasudha Jatia",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Bhavanisingh Shekhawat",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Romie Shivhari Halan",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Upendra Goraksha Deglurkar",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Sudhir Vithalrao Duppaliwar",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Jagadish Waman Patil",
+     "role": "Company Secretary, Compliance Officer & Chief Financial Officer"
+    },
+    {
+     "name": "Jagadish Waman Patil",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Arun Kumar Jatia",
+     "role": "Promoter, Executive Chairman (of Pudumjee Paper Products Limited)"
+    },
+    {
+     "name": "Mr. Gautam N. Jajodia",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Jagadish W. Patil",
+     "role": "Company Secretary and Chief Financial Officer"
+    },
+    {
+     "name": "Mr. J. W. Patil",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Mr. Gautam N. Jajodia",
+     "role": "Whole Time Director designated as Executive Director"
+    },
+    {
+     "name": "Mr. J. W. Patil",
+     "role": "Company Secretary and Chief Financial Officer"
+    },
+    {
+     "name": "GAUTAM N. JAJODIA",
+     "role": "Chairman & Executive Director"
+    },
+    {
+     "name": "BHAVANI SINGH SHEKHAWAT",
+     "role": "Independent Director"
+    },
+    {
+     "name": "JAGADISH WAMAN PATIL",
+     "role": "Company Secretary & C.F.O."
+    },
+    {
+     "name": "Mr. Gautam N. Jajodia",
+     "role": "Chairman and Executive Director"
+    },
+    {
+     "name": "Mrs. Vasudha Jatia",
+     "role": "Director (Non-executive)"
+    },
+    {
+     "name": "Mr. Bhavani Singh Shekhawat",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Mr. Romie Shivhari Halan",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Mr. Upendra Goraksha Deglurkar",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Mr. Sudhir V. Duppaliwar",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Mr. Jagadish W. Patil",
+     "role": "Company Secretary and CFO"
+    },
+    {
+     "name": "Mr. Bhavanisingh Shekhawat",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Gautam N. Jajodia",
+     "role": "Chairman & Executive Director"
+    },
+    {
+     "name": "Bhavani Singh Shekhawat",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Jagadish Waman Patil",
+     "role": "Company Secretary & C.F.O."
+    }
+   ],
+   "employees": 1
+  },
+  "other_notable": [
+   "61st Annual General Meeting scheduled for 1st August 2026 at 11:00 a.m. IST through Video Conference",
+   "Register of Members and Transfer Books closed from 24th July 2026 to 1st August 2026 (both days inclusive)",
+   "Remote e-voting period: 29th July 2026 (09:00 A.M.) to 31st July 2026 (05:00 P.M.)",
+   "Cut-off date for voting: 24th July 2026",
+   "Bankers: IDBI Bank Limited, Kotak Mahindra Bank Limited",
+   "Secretarial Auditors: Parikh & Associates",
+   "Registrar & Share Transfer Agents: Satellite Corporate Services Private Limited",
+   "CIN: L74999MH1999PLC013394",
+   "GSTIN: 27AAACP0487B1ZQ",
+   "Demat Stock Code: INE105C01023",
+   "Listed on BSE (Scrip Code: 516092) and NSE (Scrip Code: 3PLAND)",
+   "Annual General Meeting notice dated 16 May 2026 for FY 2025-2026",
+   "E-voting facility provided by NSDL",
+   "SEBI KYC and nomination mandates for physical shareholders",
+   "Scrutinizer appointed: Mr. Pankaj Bhanudas Yeole, Practicing Company Secretary",
+   "Speaker registration for e-AGM open from 23rd July 2026 to 25th July 2026",
+   "Registrar & Share Transfer Agent: Satellite Corporate Services Private Limited",
+   "Material RPT with AMJ Land Holdings Ltd: Accepting ICDs, granting/availing loans, providing/obtaining security and corporate guarantees for 5 years (FY2026-27 to FY2030-31) up to \u20b91,000 Lakhs outstanding at any time, interest 9-12% p.a., unsecured, repayable on demand, for working capital; proposed transaction value \u20b91,000 Lakhs (214.02% of 3P Land's consolidated turnover, 19.04% of AMJ Land's turnover).",
+   "Material RPT with AMJ Land Holdings Ltd: Sharing common services (telephone, electricity, computer, HR, reimbursement, sale/purchase of goods/services, administrative support) on continuous basis, omnibus approval sought, not exceeding \u20b950 Lakhs per FY plus taxes (10.70% of 3P Land's turnover, 19.04% of AMJ Land's turnover); cost allocation on actual usage basis without profit element.",
+   "Material RPT with Pudumjee Paper Products Ltd: Providing ICDs, granting/availing loans, providing/obtaining security and corporate guarantees for 5 years (FY2026-27 to FY2030-31) up to \u20b91,000 Lakhs outstanding, interest 9-12% p.a., unsecured, repayable on demand, for working capital; proposed transaction value \u20b91,000 Lakhs (856.11% of 3P Land's turnover, 4.95% of PPPL's turnover).",
+   "Material RPT with Pudumjee Paper Products Ltd: Accepting ICDs, granting/availing loans, providing/obtaining security and corporate guarantees for 5 years (FY2026-27 to FY2030-31) up to \u20b91,000 Lakhs outstanding, interest 9-12% p.a.; proposed transaction value \u20b91,000 Lakhs (856.11% of 3P Land's turnover, 4.95% of PPPL's turnover).",
+   "Previous transactions with PPPL in FY2025-26: Reimbursement of common services paid \u20b93.45 Lakhs, Lease rent received \u20b935.71 Lakhs, Dividend received \u20b981.40 Lakhs.",
+   "No previous transactions with AMJ Land Holdings in last financial year or current financial year up to quarter preceding approval.",
+   "Source of funds for ICDs/loans: Own internal accruals; no financial indebtedness incurred for lending.",
+   "Credit rating of related parties: Not availed; no defaults, NPA, wilful defaulter, insolvency proceedings, or Section 29A IBC disqualifications reported for related parties over last three financial years (FY2022-23 to FY2024-25).",
+   "Debt to Equity Ratio and Debt Service Coverage Ratio: Not applicable (N.A.) for both before and after transactions.",
+   "Company is a Core Investment Company under RBI Directions 2016",
+   "Land of about 16 acres at Village Khairy, Tehsil Kareli, Narsinghpur, Madhya Pradesh awaiting finalization of Narsinghpur Development Plan",
+   "Revenue increased by over 4% to \u20b9467.23 Lakhs in FY 2025-26",
+   "Proposed material RPT with Pudumjee Paper Products Ltd not exceeding \u20b950 Lakhs per financial year plus applicable taxes for sharing common services",
+   "ICD given to Biodegradable Products India Limited: \u20b9223 Lakhs at 10% interest, balance as on 31.03.2026 \u20b910 Lakhs",
+   "No public deposits accepted during the year",
+   "CSR provisions not applicable for FY 2025-26",
+   "No significant orders by regulators/courts/tribunals impacting going concern status",
+   "4 Board Meetings held during FY 2025-26",
+   "Risk Management Policy adopted on 17th May 2014",
+   "Whistle Blower Policy/Vigil Mechanism in place",
+   "No complaints under Sexual Harassment of Women at Workplace Act",
+   "Foreign exchange earnings and outgo: Nil",
+   "Conservation of energy and technology absorption: Not Applicable",
+   "The Company's revenue by way of earnings from interest and dividend constitutes nearly 60% of its total revenue which is essential for the Company to continue to maintain its classification as Core Investment Company under the Core Investment Companies (Reserve Bank) Directions 2016.",
+   "The profit after tax is about 46% of its total income.",
+   "Segment-wise financial performance is given in the Company's consolidated Accounts.",
+   "The existing controls of the Company are commensurate with the nature of the business and are always subjected to periodical review by Auditors and Audit Committee and are considered appropriate and adequate to the size of its operation.",
+   "Operating profit margin increased to 62.30% from 61.58% due to increase in rental income and interest income.",
+   "Net Profit Margin slightly decreased to 46.62% from 46.73% due to increase in tax.",
+   "Return on Net Worth slightly decreased to 4.87% from 4.92% due to increase in tax.",
+   "Current Ratio decreased to 7.16 from 10.50 mainly due to increase in employee benefit obligation.",
+   "The Company has adopted the Code of Conduct for its employees, including the Managing and Executive Directors, and a Code of Conduct for its Non-Executive Directors.",
+   "The Company has not issued any stock options or other convertible instruments.",
+   "No shares are held by any non executive directors.",
+   "None of the Directors is related to any other Director on the Board in terms of definition of 'relative' given under the Act.",
+   "The CFO & Executive Director have certified to the Board the accuracy of the financial statements and adequacy of internal controls for financial reporting.",
+   "Pursuant to Regulation 27(2) of the SEBI Listing Regulations, the Company submits a quarterly compliance report on Corporate Governance to the Stock Exchanges.",
+   "The Independent Directors met on 31st January, 2026 in the absence of non independent directors and members of management.",
+   "Familiarization Programme details for independent directors are uploaded on the website www.3pland.com/staticpages/files/PIL_FAMILIARISATION%20PROGRAMME.pdf.",
+   "Board Diversity Policy adopted, formulated by the Nomination & Remuneration Committee.",
+   "Sitting fees: Board Meeting Rs. 5000/-, Audit Committee Meeting Rs. 5000/-, Nomination and Remuneration Committee Meeting Rs. 1000/-, Stakeholders Relationship Committee Meeting Rs. 1000/-, Independent Directors Meeting Rs. 5000/-.",
+   "60th Annual General Meeting (AGM) held on 02nd August, 2025, through Video conference.",
+   "Four Board Meetings held during 2025-2026 on 10th May, 2025, 26th July, 2025, 25th October, 2025, and 31st January, 2026."
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Leave & License Agreement with Pudumjee Paper Products Ltd renewed for five years from 1st February 2026 on increased rent by about 120% over earlier agreement",
+    "value_cr": null
+   },
+   {
+    "statement": "Leave & License Agreement renewed from 1st February 2026 for a period of five years for lease of real estate (land and buildings) at Pune granted to Pudumjee Paper Products Ltd.",
+    "value_cr": null
+   },
+   {
+    "statement": "Supply of Services for sales and marketing to Pudumjee Paper Products Limited. Aggregate amount not exceeding \u20b9150 Lakhs per financial year plus applicable taxes.",
+    "value_cr": 1.5
+   },
+   {
+    "statement": "Approval for material related party transactions with Pudumjee Paper Products Limited for renewal of Leave and License Agreement in respect of land admeasuring about 4.63 acres together with structures standing thereon situated at Thergaon, Pune 411033",
+    "value_cr": null
+   },
+   {
+    "statement": "Corporate financial guarantee given to banks on behalf of Pudumjee Paper Products Limited for credit facility of Rs 180 crores (short term for 12 months, renewable)",
+    "value_cr": 180
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Biodegradable Products India Limited",
+    "holding_pct": 27.11,
+    "business": "Associate Company (under IND AS)"
+   },
+   {
+    "name": "Biodegradable Products India Limited",
+    "holding_pct": null,
+    "business": "associate company"
+   },
+   {
+    "name": "Biodegradable Products India Limited",
+    "holding_pct": null,
+    "business": "Associate Company"
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "The Company's land of about 16 acres at Village Khairy, Tehsil Kareli, Narsinghpur, Madhya Pradesh which is lying vacant, is within the vicinity of rapidly growing urbanization. This land is awaiting finalization of the Narsinghpur Development Plan after which it is proposed to be developed.",
+    "period": "Future"
+   }
+  ],
+  "risks": [
+   "The Government's contention has been that the land at Pune continues to be subject to applicability of repealed Urban Land Ceiling Act 1976 which matter is pending before the Government authorities pursuant to the directions of Hon'ble High Court of Bombay.",
+   "Other comprehensive income is negative in view of fall in market price of shares held in Pudumjee Paper Products Ltd, compared to last year.",
+   "Investments in associate company \u2013 classification, measurement and impairment",
+   "Credit risk from loans to associate and investments in associate and group companies",
+   "Market risk from equity investments measured at FVOCI (Pudumjee Paper Products Ltd)",
+   "Liquidity risk",
+   "Interest rate risk on plan assets for gratuity",
+   "Changes in government bond yields affecting defined benefit obligations",
+   "Market risk (interest rate risk, price risk)",
+   "Credit risk (corporate financial guarantee to group company)",
+   "Credit risk from loans to associate and group companies",
+   "Market risk (price risk from equity investments)",
+   "Interest rate risk",
+   "Asset volatility in defined benefit plans",
+   "Changes in bond yields affecting plan liabilities"
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Company continues to be debt free"
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Company has not taken any loans or other borrowings from any lender and there are no outstanding loans at the beginning of the year."
+   },
+   {
+    "lender_or_type": "None",
+    "amount_cr": 0,
+    "note": "The Company does not have any borrowings"
+   }
+  ],
+  "litigation": [
+   "The Government's contention has been that the land at Pune continues to be subject to applicability of repealed Urban Land Ceiling Act 1976 which matter is pending before the Government authorities pursuant to the directions of Hon'ble High Court of Bombay.",
+   "There were no instances of non compliance by the Company, nor were any penalties or strictures imposed on the Company by Stock Exchanges, SEBI or any statutory authority on any matter relating to capital markets during the last three years.",
+   "Sales tax dispute of Rs. 179.31 lakhs pending at Hon. High Court, Madhya Pradesh",
+   "Sales Tax claims of Rs 179.31 lakhs not acknowledged as debts",
+   "Income Tax claims of Rs 116.92 lakhs not acknowledged as debts (against various pending appeals)",
+   "Sales Tax claims of Rs. 179.31 lakhs not acknowledged as debts",
+   "Income Tax claims of Rs. 116.92 lakhs against various pending appeals not acknowledged as debts",
+   "No proceedings have been initiated or pending against the Company for holding any benami property under the Benami Transaction (Prohibition) Act 1988 or rules made thereunder."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Sales tax dispute",
+    "amount_cr": 1.7931
+   },
+   {
+    "nature": "Corporate financial guarantee to banks on behalf of Pudumjee Paper Products Limited for credit facility of Rs 180 crores",
+    "amount_cr": 180
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debts for Sales Tax",
+    "amount_cr": 1.79
+   },
+   {
+    "nature": "Claims against the Company not acknowledged as debts for Income Tax (against various pending appeals)",
+    "amount_cr": 1.17
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}

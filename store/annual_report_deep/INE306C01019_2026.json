@@ -1,0 +1,1201 @@
+{
+ "isin": "INE306C01019",
+ "name": "Energy Development Company Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30795_ENERGYDEV_2025_2026_A_2473175_28082026182624.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 566257,
+ "chunks": 15,
+ "chunks_ok": 12,
+ "facts": {
+  "business": {
+   "description": "Energy Development Company Limited operates hydroelectric power projects, including the Harangi Hydro Electric Project in Karnataka.",
+   "products": [
+    {
+     "name": "Hydroelectric power generation",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from operations reported on standalone and consolidated basis"
+    },
+    {
+     "name": "Hydro Electric Power",
+     "share_of_revenue_pct": null,
+     "note": "Generation division revenue `1,892.83 Lakhs in FY 2025-26"
+    },
+    {
+     "name": "Infrastructure/Contract",
+     "share_of_revenue_pct": null,
+     "note": "Contract division"
+    },
+    {
+     "name": "Trading",
+     "share_of_revenue_pct": null,
+     "note": "Trading division"
+    },
+    {
+     "name": "Electricity from Hydro Power Plants",
+     "share_of_revenue_pct": null,
+     "note": "Saleable electricity generated: 43.30 million units (previous year 23.10 million units)"
+    },
+    {
+     "name": "Electricity from Wind Mills",
+     "share_of_revenue_pct": null,
+     "note": "Saleable electricity generated: 5.01 million units (previous year 4.96 million units)"
+    },
+    {
+     "name": "Sale of Power",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of electricity generated under long term/mid-term PPAs, short-term contracts, or merchant basis"
+    },
+    {
+     "name": "Operations and Maintenance Services",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from third party power plant under operations and maintenance"
+    },
+    {
+     "name": "Construction Contracts",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from construction contracts recognized based on completion of performance obligation"
+    },
+    {
+     "name": "Hydro power",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 1,722.63 lakhs in FY2026; 43.30 million units generated and sold"
+    },
+    {
+     "name": "Wind power",
+     "share_of_revenue_pct": null,
+     "note": "Revenue of Rs 170.20 lakhs in FY2026; 5.01 million units generated and sold"
+    },
+    {
+     "name": "Power (Electricity)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of electricity generated, accounted on delivery to grid under PPAs and short-term contracts"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "Karnataka, India",
+     "share_pct": null
+    },
+    {
+     "name": "Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Kerala",
+     "share_pct": null
+    },
+    {
+     "name": "Uttarakhand",
+     "share_pct": null
+    },
+    {
+     "name": "Arunachal Pradesh",
+     "share_pct": null
+    },
+    {
+     "name": "Hassan District, Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Chitradurga, Karnataka",
+     "share_pct": null
+    },
+    {
+     "name": "Kodagu, Karnataka (Harangi Hydro Electric Project location)",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "plants": [
+    {
+     "location": "Harangi Hydro Electric Project, Village - Hulugunda, Taluka - Somawarpet, District - Kodagu, Karnataka - 571 233",
+     "capacity": ""
+    },
+    {
+     "location": "Karnataka",
+     "capacity": "9 MW Harangi Hydro Electric Power Plant"
+    },
+    {
+     "location": "Karnataka",
+     "capacity": "6 MW Harangi Hydro Electric Power Plant"
+    },
+    {
+     "location": "Karnataka",
+     "capacity": "Wind Mills"
+    },
+    {
+     "location": "Kerala",
+     "capacity": "15 MW Karikkayam Hydro Electric Project (Ayyappa Hydro Power Limited)"
+    },
+    {
+     "location": "Kerala",
+     "capacity": "7 MW Ullunkal Hydro Electric Project (EDCL Power Projects Limited)"
+    },
+    {
+     "location": "Uttarakhand",
+     "capacity": "6.5 MW Burthing Small Hydro Electric Project (Eastern Ramganga Valley Hydel Projects Company Private Limited)"
+    },
+    {
+     "location": "Uttarakhand",
+     "capacity": "5.0 MW Phuliabagar Small Hydro Electric Project (Eastern Ramganga Valley Hydel Projects Company Private Limited)"
+    },
+    {
+     "location": "Uttarakhand",
+     "capacity": "5.5 MW Balighat Small Hydro Electric Project (Sarju Valley Hydel Projects Company Private Limited)"
+    },
+    {
+     "location": "Hassan District, Karnataka",
+     "capacity": "1.5 MW Wind mill"
+    },
+    {
+     "location": "Chitradurga, Karnataka",
+     "capacity": "1.5 MW Wind mill"
+    },
+    {
+     "location": "Ullunkal (through subsidiary EDCL Power Projects Limited)",
+     "capacity": "7 MW Hydro Electric Project"
+    },
+    {
+     "location": "Karikkayam (through subsidiary Ayyappa Hydro Power Limited)",
+     "capacity": "15 MW Hydro Electric Project"
+    },
+    {
+     "location": "Village \u2013 Hulugunda, Taluka \u2013 Somawarpet, Dist. \u2013 Kodagu, Karnataka \u2013 571 233",
+     "capacity": ""
+    },
+    {
+     "location": "Rangapur Kawal, Arsikere, District \u2013 Hassan, Karnataka \u2013 573 103",
+     "capacity": ""
+    },
+    {
+     "location": "K-73, Elkurnahalli, Jogimatti Wind Zone, Chitradurga- District, Karnataka",
+     "capacity": ""
+    },
+    {
+     "location": "Harangi-II SHP (6MW)",
+     "capacity": "6 MW"
+    },
+    {
+     "location": "Harangi Hydro Electric Project",
+     "capacity": "9MW"
+    },
+    {
+     "location": "Harangi-II SHP",
+     "capacity": "6MW"
+    },
+    {
+     "location": "Arunachal Pradesh",
+     "capacity": "660 MW approximately (aggregate capacity of erstwhile subsidiaries)"
+    },
+    {
+     "location": "Uttarakhand",
+     "capacity": "660 MW approximately (aggregate capacity of erstwhile subsidiaries)"
+    },
+    {
+     "location": "Harangi Hydro Electric Project",
+     "capacity": "9 MW"
+    },
+    {
+     "location": "Karikayam SHP",
+     "capacity": "15 MW"
+    },
+    {
+     "location": "Harangi-II SHP",
+     "capacity": "6 MW"
+    },
+    {
+     "location": "Harangi Hydroelectric Project, Village \u2013 Hulugunda, Taluka \u2013 Somawarpet, District \u2013 Kodagu, Karnataka \u2013 571 233",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "end_markets": [
+    "Power sector",
+    "Power generation",
+    "Infrastructure development",
+    "Construction",
+    "Power trading",
+    "Power distribution utilities",
+    "Grid operators",
+    "Third party power plant owners"
+   ],
+   "customers": [
+    "Kerala State Electricity Board (KSEB)",
+    "State Electricity Regulatory Commission",
+    "Grid operators",
+    "Third party power plant owners",
+    "Electricity Board",
+    "Third party power plant operators"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": 100,
+    "business": "Operating the 15 MW Karikkayam Hydro Electric Project in Kerala. Revenue from operations `2,180.48 Lakhs in FY 2025-26."
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": 100,
+    "business": "Operating the 7 MW Ullunkal Hydro Electric Project in Kerala. Revenue from operations `552.10 Lakhs in FY 2025-26."
+   },
+   {
+    "name": "EDCL \u2013 Arunachal Hydro Project Private Limited",
+    "holding_pct": 100,
+    "business": "Yet to undertake any project."
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Executing 6.5 MW Burthing Small Hydro Electric Project and 5.0 MW Phuliabagar Small Hydro Electric Project in Uttarakhand. DPR approved for both."
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Executing 5.5 MW Balighat Small Hydro Electric Project in Uttarakhand. DPR approved."
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": null,
+    "business": "Owns and operates 7 MW Ullunkal Hydro Electric Project; produced 23.07 million units during 2025-26 (19.66 million units in 2024-25)"
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": null,
+    "business": "Owns and operates 15 MW Karikkayam Hydro Electric Project; produced 52.96 million units during 2025-26 (40.67 million units in 2024-25)"
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": 100,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": 100,
+    "business": "Power projects"
+   },
+   {
+    "name": "EDCL-Arunachal Hydro Project Energy Development Company Limited Pvt. Ltd.",
+    "holding_pct": 100,
+    "business": "Hydro project (yet to commence operations)"
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Pvt. Ltd.",
+    "holding_pct": 51,
+    "business": "Hydel projects (yet to commence operations)"
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Pvt. Ltd.",
+    "holding_pct": 51,
+    "business": "Hydel projects (yet to commence operations)"
+   },
+   {
+    "name": "Subsidiary companies (not individually named)",
+    "holding_pct": null,
+    "business": "Received unsecured interest-free loans from the Company"
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": 100.0,
+    "business": "Generation of electricity"
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": 100.0,
+    "business": "Generation of electricity"
+   },
+   {
+    "name": "EDCL Arunachal Hydro Project Private Limited",
+    "holding_pct": 100.0,
+    "business": "Yet to undertake any project"
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Private Limited",
+    "holding_pct": 51.0,
+    "business": "Generation of electricity"
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Pvt. Ltd.",
+    "holding_pct": 51.0,
+    "business": "Generation of electricity"
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": null,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "EDCL Arunachal Hydro Project Private Limited",
+    "holding_pct": null,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": null,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Hydro power project"
+   },
+   {
+    "name": "EDCL Arunachal Hydro Project Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "EDCL Seppa Riang Power Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Beyong Hydro Electric Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Dunkho Hydro Electric Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Jung Power Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Kawa Power Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Lada Hydro Electric Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Marjingla Hydro Electric Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Nire Hydro Electric Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Seppa Pachuk Power Private Limited",
+    "holding_pct": null,
+    "business": "Hydro electric power generation"
+   },
+   {
+    "name": "EDCL Power Projects Limited",
+    "holding_pct": null,
+    "business": "Holds 8% non-cumulative redeemable preference shares (Rs 396.67 lakhs)"
+   },
+   {
+    "name": "Eastern Ramganga Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Holds 10% non-cumulative redeemable preference shares (Rs 1,368.00 lakhs)"
+   },
+   {
+    "name": "Sarju Valley Hydel Projects Company Private Limited",
+    "holding_pct": null,
+    "business": "Holds 10% non-cumulative redeemable preference shares (Rs 836.00 lakhs)"
+   },
+   {
+    "name": "EDCL Arunachal Hydro Project Private Limited",
+    "holding_pct": null,
+    "business": "Actuarial valuation not applicable"
+   },
+   {
+    "name": "Ayyappa Hydro Power Limited",
+    "holding_pct": null,
+    "business": "Subsidiary with gratuity fund"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Indian Bank",
+    "amount_cr": null,
+    "note": "Principal Banker"
+   },
+   {
+    "lender_or_type": "The Ratnakar Bank Limited",
+    "amount_cr": null,
+    "note": "Principal Banker"
+   },
+   {
+    "lender_or_type": "Yes Bank Limited",
+    "amount_cr": null,
+    "note": "Principal Banker"
+   },
+   {
+    "lender_or_type": "Unsecured loans obtained in earlier years",
+    "amount_cr": null,
+    "note": "Outstanding as at 31st March, 2026; no stipulations for repayment of principal and interest"
+   },
+   {
+    "lender_or_type": "Bank working capital limits",
+    "amount_cr": null,
+    "note": "Sanctioned working capital limits in excess of five crore rupees, in aggregate, from bank on the basis of security of certain current assets"
+   },
+   {
+    "lender_or_type": "Borrowings (Current)",
+    "amount_cr": 17.91,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Borrowings (Current)",
+    "amount_cr": 23.4,
+    "note": "As at 31st March 2025"
+   },
+   {
+    "lender_or_type": "Lease liabilities (Non-current)",
+    "amount_cr": 0.1,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (Non-current)",
+    "amount_cr": 0.1,
+    "note": "As at 31st March 2025"
+   },
+   {
+    "lender_or_type": "Lease liabilities (Current)",
+    "amount_cr": 0.02,
+    "note": "As at 31st March 2026"
+   },
+   {
+    "lender_or_type": "Lease liabilities (Current)",
+    "amount_cr": 0.02,
+    "note": "As at 31st March 2025"
+   },
+   {
+    "lender_or_type": "Working capital facilities",
+    "amount_cr": null,
+    "note": "Secured against property, plant and equipment"
+   },
+   {
+    "lender_or_type": "Cash credit from bank (secured)",
+    "amount_cr": 0.1654,
+    "note": "Secured by hypothecation of entire stocks and other movables, book debts, and equitable mortgage of immovable properties at 9MW Harangi Hydro Electric Project"
+   },
+   {
+    "lender_or_type": "From bodies corporate (related parties, unsecured)",
+    "amount_cr": 14.5442,
+    "note": ""
+   },
+   {
+    "lender_or_type": "From others (unsecured)",
+    "amount_cr": 3.2,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 79.0564,
+    "note": "As at 31st March, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 58.3078,
+    "note": "As at 31st March, 2026"
+   },
+   {
+    "lender_or_type": "Working capital facilities",
+    "amount_cr": null,
+    "note": "Secured against property, plant and equipment of Parent Company (Note 5.3)"
+   },
+   {
+    "lender_or_type": "Term loan",
+    "amount_cr": null,
+    "note": "Secured against property, plant and equipment of subsidiary company (Note 5.4)"
+   },
+   {
+    "lender_or_type": "Indian Renewable Energy Development Agency Ltd. (IREDA)",
+    "amount_cr": 58.4733,
+    "note": "Term loan secured by assets of 15 MW Karikayam SHP and receivables of 6 MW Harangi-II SHP; corporate guarantee and pledge of shares; repayable in quarterly installments from June 2025; effective interest rate 10.35%"
+   },
+   {
+    "lender_or_type": "8% Non-cumulative redeemable preference shares",
+    "amount_cr": 3.9667,
+    "note": "Issued by EDCL Power Projects Limited; redeemable within 20 years from 11 Feb 2015; held by Startrack Vinimay Private Limited"
+   },
+   {
+    "lender_or_type": "10% Non-cumulative redeemable preference shares",
+    "amount_cr": 22.04,
+    "note": "Issued by Eastern Ramganga Valley Hydel Projects Company Private Limited (Rs 13.68 cr) and Sarju Valley Hydel Projects Company Private Limited (Rs 8.36 cr); redeemable within 20 years from 12 Mar 2015; held by Essel Infraprojects Limited"
+   },
+   {
+    "lender_or_type": "Cash credit from bank",
+    "amount_cr": 0.1654,
+    "note": "Unsecured, repayable on demand; secured by hypothecation of stocks, movables, book debts and equitable mortgage of Harangi Hydro Electric Project properties"
+   },
+   {
+    "lender_or_type": "Bodies corporate",
+    "amount_cr": 49.5188,
+    "note": "Unsecured; includes Rs 20 cr loan with Rs 17.15 cr outstanding, interest of Rs 7.9281 cr not recognised pending finalisation of terms"
+   },
+   {
+    "lender_or_type": "Others",
+    "amount_cr": 3.2,
+    "note": "Unsecured, repayable on demand"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. A L P S & Co., Chartered Accountants",
+   "opinion": "adverse",
+   "key_audit_matters": [
+    "Loans granted to wholly owned subsidiaries - terms of repayment under determination, considered good and recoverable as financial support",
+    "Investment in equity shares and preference shares of wholly owned subsidiaries - strategic in nature, no adjustment in carrying value considered necessary",
+    "Recovery of outstanding balances of trade receivables and loans - considered good for recovery pending recovery",
+    "Reconciliation of outstanding balances with customers and/or suppliers in progress",
+    "Remuneration paid to one director pending approvals - considered recoverable and good for recovery",
+    "Income tax demand notices for assessment years 2011-12 to 2020-21 amounting to `18,817.47 Lakhs - challenged through appellate process, demands stayed, `1,235.03 Lakhs deposited till March 31, 2024",
+    "Subsidiaries EDCL Power Projects Ltd and Ayyappa Hydro Power Ltd received assessment orders and demand notices aggregating to `4,285.09 Lakhs and `59.10 Lakhs respectively - appeals filed, matters pending",
+    "Non-determination of terms and conditions of repayment and recoverable amount in respect of outstanding loans of Rs 3,007.08 Lakhs given to two wholly owned subsidiary companies (Note 16.3)",
+    "Impairment in the value of investments aggregating to Rs 5,600.00 Lakhs in two wholly owned subsidiaries (Note 7.5)",
+    "Outstanding trade receivables of Rs 198.24 Lakhs, loan of Rs 313.50 Lakhs, interest accrued of Rs 2.28 Lakhs, and security deposits/retention money of Rs 32.00 Lakhs doubtful of recovery (Notes 13.4, 16.4, 17.2)",
+    "Payment of remuneration amounting to Rs 40.20 Lakhs to a director shown as recoverable (Note 17.3)",
+    "Non-reconciliation of certain debit and credit balances including loans, advances, creditors, with confirmation thereof (Note 52)",
+    "Income Tax demand notices and interest/penalty pending appeals (Note 53(a))",
+    "Recognition of Deferred tax assets (Refer note no. 10 to the standalone financial statements) - Deferred tax assets pertaining to unused tax credits aggregating to Rs 101.27 Lakhs as on 31st March, 2026, has been continued in the books of accounts in this year. Recognition of deferred tax assets is based on expected utilization and/or reversal thereof considering the management's projection of future taxable income of the Company.",
+    "Recognition of Deferred tax assets (Refer note no. 11 to the consolidated financial statements) - Deferred tax assets pertaining to unused tax credits aggregating to Rs 101.28 Lakhs as on 31st March, 2026, has been continued in the books of accounts in this year. Recognition of deferred tax assets is based on expected utilization and/or reversal thereof considering the management's projection of future taxable income of the Parent Company."
+   ],
+   "qualifications_or_emphasis": [
+    "Adverse opinion on standalone and consolidated financial statements for FY ended March 31, 2026",
+    "Adverse opinion: Standalone financial statements do not give a true and fair view due to significance of matters described in Basis for Adverse Opinion.",
+    "Overall impact with respect to above matters, except in case of doubtful recoveries, even though likely to be material, are not ascertainable.",
+    "Emphasis of Matter: Attention is drawn to note 36 to the standalone financial statements dealing with the provision for impairment against investments, and various other outstanding balances aggregating to Rs 688.32 Lakhs recognised during the year ended 31st March, 2026 and included under 'Exceptional items'. Amount finally recoverable and/or valuation thereof with respect to these amounts as such have not been ascertained by the management and therefore cannot be commented upon by us.",
+    "Basis for Adverse Opinion: Non-provision of investments, loans, trade and other receivables; demand for income tax raised by Income Tax Authorities pending resolution.",
+    "Qualified opinion on the adequacy and operating effectiveness of the internal control with reference to the standalone financial statements of the Company.",
+    "Accounting software audit trail (edit log) not maintained for records edited or modified (old records replaced); audit trail not enabled for direct changes at database level; payroll processing, property, plant and equipment and intangible assets records maintained manually.",
+    "The Company did not have an appropriate internal control system in relation to granting of loans to subsidiary and/or other companies and making recoveries against the trade and other receivables, including ascertaining economic substance and business rationale of the transactions, establishing segregation of duties and determining credentials of the counter parties (refer note no. 13, 16 and 17 to the standalone financial statements)",
+    "With respect to inter corporate deposits, the Company did not have appropriate system to evaluate the creditworthiness of the parties and recoverability of monies given including interest thereon (refer note no. 16) and related party transactions especially with respect to remuneration paid to one of the director of the Company (refer note no. 17.3) and also ensuring the compliances with respect to provisions of the Act so that these are not considered to be prejudicial to the interest of the Company",
+    "Non-availability of confirmation and reconciliation thereof of certain debit and credit balances including loans, advances, creditors, etc.(refer note no. 52 to the standalone financial statements)",
+    "Basis for Adverse Opinion: Non-provision of loans, trade and other receivables; demand for income tax raised by Income Tax Authorities pending resolution.",
+    "Emphasis of Matter: Provision for impairment against various other outstanding balances aggregating to Rs 565.73 Lakhs recognised during the year ended 31st March, 2026 and included under Exceptional items. Amount finally recoverable with respect to these amounts as such have not been ascertained by the management.",
+    "Key audit matters in relation to two subsidiary companies and one associate company have not been reported in the absence of audited financial statements of those companies.",
+    "Qualified opinion on internal financial controls due to material weaknesses identified."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Disha Kumari Singh (DIN: 09092385) retires by rotation and offers herself for re-appointment at the 31st AGM",
+    "Mr. Aman Jain (DIN: 08187995) re-appointed as Independent Director for 2nd consecutive term of 5 years effective June 30, 2025",
+    "Mrs. Pankaja Kumari Singh (DIN: 00199454) re-appointed as Director liable to retire by rotation",
+    "Ms. Disha Kumari Singh (DIN: 09092385) liable to retire by rotation at ensuing AGM, offers herself for re-appointment",
+    "Re-appointment of Mr. Aman Jain (DIN: 08187995) as an Independent Director for the 2nd consecutive term of 5 years effective from June 30, 2025, approved at AGM on September 27, 2025",
+    "During the year under review, there was no change in the composition of the Board of Directors of the Company",
+    "Mr. Vishal Sharma ceased as Non-Executive Independent Director w.e.f 27th September, 2024",
+    "Ms. Neha Purohit ceased as Non-Executive Independent Director w.e.f 30th September, 2024",
+    "Mr. Prakash Chandra Gupta appointed and ceased as Non-Executive Independent Director (w.e.f 23rd August, 2024 to 30th September, 2024)",
+    "Ms. Vandana appointed as Non-Executive Independent Director w.e.f 23rd August, 2024",
+    "Mr. Nitin Dutt Sharma appointed as Non-Executive Director w.e.f 23rd August, 2024, ceased w.e.f 7th November, 2024, then appointed as Non-Executive Chairperson w.e.f 8th November, 2024",
+    "Ms. Vijayshree Binnani ceased as Company Secretary w.e.f 3rd September, 2024",
+    "Ms. Sneha Naredi appointed as Company Secretary w.e.f 15th November, 2024",
+    "Ms. Disha Kumari Singh (DIN: 09092385) retires by rotation and offers herself for re-appointment"
+   ],
+   "auditor_change": "M/s. ALPS & Co. appointed as Statutory Auditors for 5 years from conclusion of 27th AGM (Sept 30, 2022) till conclusion of 32nd AGM (2027)",
+   "top_shareholders": [
+    {
+     "name": "Mrs. Pankaja Kumari Singh",
+     "pct": null
+    },
+    {
+     "name": "Promoters",
+     "pct": 58.14
+    },
+    {
+     "name": "Indian Public",
+     "pct": 38.86
+    },
+    {
+     "name": "Corporate Bodies",
+     "pct": 1.97
+    },
+    {
+     "name": "NRI / OCBs",
+     "pct": 0.98
+    },
+    {
+     "name": "Sarvam Caps Private Limited",
+     "pct": 24.84
+    },
+    {
+     "name": "Late Mr. Amar Singh",
+     "pct": 19.47
+    },
+    {
+     "name": "Mrs. Pankaja Kumari Singh",
+     "pct": 8.73
+    },
+    {
+     "name": "Ms. Pankaja Kumari Singh",
+     "pct": 8.73
+    },
+    {
+     "name": "Startrack Vinimay Private Limited",
+     "pct": 3.84
+    },
+    {
+     "name": "Sterlite Merchants LLP",
+     "pct": 1.23
+    },
+    {
+     "name": "Mr. Sanjiv Saraf",
+     "pct": 0.02
+    }
+   ],
+   "promoter_holding_pct": 58.14
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Satyendra Pal Singh",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Prabir Goswami",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Sneha Naredi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mrs. Pankaja Kumari Singh",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Aman Jain",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Disha Kumari Singh",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Dharam Vir Sharma",
+     "role": "Director"
+    },
+    {
+     "name": "Ms. Vandana",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Nitin Du Sharma",
+     "role": "Chairperson (Non-Executive)"
+    },
+    {
+     "name": "Mr. Satyendra Pal Singh",
+     "role": "Whole-time Director (Executive Director)"
+    },
+    {
+     "name": "Ms. Sneha Naredi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mrs. Pankaja Kumari Singh",
+     "role": "Promoter & Non-Executive Director"
+    },
+    {
+     "name": "Ms. Disha Kumari Singh",
+     "role": "Promoter & Non-Executive Director"
+    },
+    {
+     "name": "Mr. Nitin Du Sharma",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Aman Jain",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Dharam Vir Sharma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Vandana",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. M. Siva Subramaniam",
+     "role": "General Manager (Projects)"
+    },
+    {
+     "name": "Mr. Avinash R. Saliyan",
+     "role": "Manager"
+    },
+    {
+     "name": "Mr. K. Harisha",
+     "role": "Assistant Manager"
+    },
+    {
+     "name": "Satyendra Pal Singh",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Nitin Du Sharma",
+     "role": "Chairperson"
+    },
+    {
+     "name": "Prabir Goswami",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Sneha Naredi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Nitin Du Sharma",
+     "role": "Chairperson (DIN: 09446669)"
+    },
+    {
+     "name": "Satyendra Pal Singh",
+     "role": "Executive Director (DIN: 01055370)"
+    },
+    {
+     "name": "Pankaja Kumari Singh",
+     "role": "Director (DIN: 00199454)"
+    },
+    {
+     "name": "Aman Jain",
+     "role": "Director (DIN: 08187995)"
+    },
+    {
+     "name": "Sneha Naredi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ms. Pankaja Kumari Singh",
+     "role": "Promoter and Non-Executive Director"
+    },
+    {
+     "name": "Mr. Dharam Veer Sharma",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Ms. Disha Kumari Singh",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Nitin Dutt Sharma",
+     "role": "Non-Executive Chairperson"
+    }
+   ],
+   "employees": 29
+  },
+  "other_notable": [
+   "31st Annual General Meeting scheduled for September 26, 2026 at 12:30 PM at Registered Office, Harangi Hydro Electric Project, Karnataka, with VC/OAVM facility",
+   "Cost Auditor M/s. N. Radhakrishnan & Co. re-appointed for FY 2026-27 at remuneration of Rs 60,000 plus taxes and out-of-pocket expenses",
+   "Register of Members and Share Transfer Books closed from September 21, 2026 to September 26, 2026 for AGM",
+   "Unclaimed dividend for FY 2018-19 can be claimed until November 3, 2026 before transfer to IEPF",
+   "Remote e-voting period: September 23, 2026 (09:00 AM) to September 25, 2026 (05:00 PM); Cut-off date: September 19, 2026",
+   "Scrutinizer for e-voting: Ms. Sweety Sharma, Practicing Company Secretary (ACS-35080, CP No.13098)",
+   "Registrar and Share Transfer Agent: Niche Technologies Private Limited, 3A Auckland Place, 7th Floor, Room No. 7A & 7B, Kolkata - 700 017",
+   "Shares listed on BSE Limited and National Stock Exchange of India Limited",
+   "CIN: L85110KA1995PLC017003",
+   "Paid-up equity share capital as at March 31, 2026: `47.50 crore, no change in capital structure during FY",
+   "No amount transferred to any reserve during the year",
+   "No dividend recommended for FY 2025-26 due to loss",
+   "Company has 5 subsidiaries and 1 associate as on March 31, 2026",
+   "Consolidated financial statements prepared without considering financial results of 2 subsidiaries (Eastern Ramganga Valley Hydel Projects Company Pvt Ltd, Sarju Valley Hydel Projects Company Pvt Ltd) and 1 associate (Arunachal Hydro Power Ltd) due to non-availability of information",
+   "Board comprised of 6 Non-executive Directors and 1 Whole-time Executive Director as on March 31, 2026; 3 Independent Directors",
+   "Board met 5 times during FY 2025-26",
+   "No fraud reported by Statutory Auditors under Section 143(12) of Companies Act, 2013",
+   "Cost Audit Report for FY ended March 31, 2025 had no qualification, reservation, or adverse remark",
+   "Secretarial Auditor re-appointed for 5 years from conclusion of 30th AGM (Sept 27, 2025) till conclusion of 35th AGM (2030)",
+   "No complaints of sexual harassment received during the year",
+   "Company complied with Maternity Benefit Act, 1961",
+   "Unpaid Dividend Account for FY 2017-18 closed and balance transferred to IEPF",
+   "No deposits accepted under Chapter V of Companies Act, 2013",
+   "No equity shares with differential rights issued",
+   "No remuneration/commission to Whole-time Director from subsidiaries",
+   "No significant/material orders by regulatory authority/court/tribunal impacting going concern status",
+   "No material changes/commitments/significant events between end of FY and date of report",
+   "No application/proceeding under Insolvency and Bankruptcy Code, 2016",
+   "No one-time settlement with any Bank or Financial Institution",
+   "Contract Division earned no revenue during the year (previous year: Nil)",
+   "Trading Division did not indulge in trading activities during the year",
+   "Net profit/(loss) before tax stood at Rs (294.29) Lakhs (previous year profit of Rs (5,889.99) Lakhs)",
+   "Significant changes in key financial ratios: Debt service coverage ratio increased 148.72% due to increase in Revenue; Return on equity ratio improved 85.76% due to decrease in exceptional items; Inventory turnover ratio increased 125.11% due to increase in Revenue; Trade receivables turnover ratio increased 377.64% due to decrease in receivables due to impairment; Trade payables turnover ratio increased 43.84% due to increase in Purchases; Net capital turnover ratio decreased 84.26% due to increase in Working capital; Net profit ratio improved 94.01% due to increase in Revenue; Return on capital employed increased 35155% due to increase in earnings",
+   "No complaints received under Whistle Blower Policy or Sexual Harassment Policy during the year",
+   "No non-compliance related to capital markets during the year except fines for delayed submission of quarterly un-audited financial results for quarters ended September 30, 2023 and June 30, 2024",
+   "No funds raised through preferential allotment or qualified institutions placement during the year",
+   "No credit rating obtained for any debt instrument, fixed deposit programme or other fund mobilisation scheme",
+   "The Company has adopted the non-mandatory requirements of the LODR Regulations relating to the Board, Modified opinion(s) on Audit Report and Separate Post of Chairperson and Executive Director.",
+   "As on March 31, 2026, the Company has only 1 associate Company namely, Arunachal Hydro Power Limited. The name of the said associate company has since been struck-off by the Registrar of Companies, Shillong.",
+   "The financial statements of two subsidiary companies viz. Eastern Ramganga Valley Hydel Projects Company Pvt. Ltd. and Sarju Valley Hydel Projects Company Pvt. Ltd. for the year ended March 31, 2026 have not been made available to the Parent Company.",
+   "The financial statements of the associate company Arunachal Hydro Power Limited for the year ended 31st March, 2026 have not been made available to the Parent Company. Financial statements for 2023, 2024, 2025 also not available.",
+   "Secretarial Audit observed delay in filing of certain e-forms and non-filing of e-forms AOC-4 and MGT-7 due to be filed during the year under the Companies Act, 2013.",
+   "The Company has complied with the mandatory requirements of LODR Regulations relating to Corporate Governance.",
+   "Company has not declared or paid any dividend and has not proposed any dividend during the year",
+   "No cash losses incurred in current financial year or immediately preceding financial year",
+   "Internal audit system commensurate with size and nature of business",
+   "No fraud noticed or reported during the year",
+   "No whistle blower complaints received during the year",
+   "Company is not a Nidhi Company",
+   "No resignation of statutory auditors during the year",
+   "CSR expenditure not applicable as per criteria under section 135 of the Act",
+   "Directors' remuneration in accordance with section 197 read with Schedule V to the Act",
+   "No funds advanced/loaned/invested to intermediaries for ultimate beneficiaries; no funds received from funding parties for lending/investing on their behalf",
+   "No long-term contracts including derivative contracts with material foreseeable losses",
+   "No delay in transferring amounts to Investor Education and Protection Fund",
+   "Title deeds of immovable properties held in name of Company",
+   "No benami property proceedings initiated or pending",
+   "No revaluation of property, plant and equipment or intangible assets during the year",
+   "Inventories physically verified at reasonable intervals; discrepancies not 10% or more in aggregate",
+   "Cost records prima-facie made and maintained as per section 148(1) of the Act"
+  ],
+  "outlook": [
+   {
+    "statement": "EDCL plans to add to its capacity in the coming years.",
+    "period": "coming years"
+   },
+   {
+    "statement": "Non-fossil fuel generation contribution is likely to reach around 44.7% of the total gross electricity generation by 2029\u201330.",
+    "period": "by 2029\u201330"
+   },
+   {
+    "statement": "Your Company's main focus area is the generation of electricity, infrastructure development by way of contract or own projects & trading of renewable energy products.",
+    "period": "Not specified"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "Long term power purchase agreement for most of the projects with the State Utilities confirms the sale of generation of electricity.",
+    "value_cr": null
+   },
+   {
+    "statement": "Entire generation from the units of above mentioned subsidiaries was sold to the Kerala State Electricity Board (KSEB) under Long term Power Purchase Agreements (PPA).",
+    "value_cr": null
+   },
+   {
+    "statement": "Agreement dated 9th November, 2015 for transfer of 76% of the Company's investment in various erstwhile wholly owned subsidiaries undertaking hydel power plants in Arunachal Pradesh and Uttarakhand having aggregate capacity of 660 MW approximately",
+    "value_cr": null
+   },
+   {
+    "statement": "Sale of electricity generated is accounted for on delivery to the grid under long term/ mid-term Power Purchase Agreement (PPA) read with the regulations of State Electricity Regulatory Commission and/or short term contracts/ merchant basis",
+    "value_cr": null
+   },
+   {
+    "statement": "Agreement dated 9th November, 2015, for transfer of 76% of the Parent Company's investment in various erstwhile wholly owned subsidiaries undertaking hydel power plants in the State of Arunachal Pradesh and Uttarakhand having aggregate capacity of 660 MW approximately",
+    "value_cr": null
+   },
+   {
+    "statement": "Sale consideration of Rs 4,994.52 Lakhs pertaining to the Arunachal Pradesh Undertaking recoverable from M/s Smart Hydel Power Limited, assigned to M/s Sarvottam Caps Private Limited and M/s Startrack Vinimay Private Limited against Rs 2,541.26 Lakhs and Rs 2,453.26 Lakhs respectively",
+    "value_cr": 49.9452
+   },
+   {
+    "statement": "Power purchase agreement (PPA) with Kerala State Electricity Board (KSEB) signed as approved by Kerala State Electricity Regulatory Commission (KSERC). Tariff provisionally approved at Rs. 4.16 per unit subject to determination of cost of projects and Capacity Utilisation Factor (CUF).",
+    "value_cr": null
+   }
+  ],
+  "risks": [
+   "Time in clearances \u2013 Stringent norms and cumbersome procedures for getting environmental and forest clearances leads to delays in obtaining clearances for projects",
+   "Land acquisition \u2013 The process of land acquisition for infrastructure work as well as for the projects' components including submergence is quite cumbersome and time consuming",
+   "Geological uncertainties \u2013 Various components of hydro projects face geological surprises which result in delays and increase in project cost",
+   "Inter-state and International disputes \u2013 Inter-state river disputes and border area issues may delay or abandon hydro projects",
+   "Natural calamities \u2013 Land slides, hill slope collapses, road blocks, floods and cloud bursts cause severe setbacks in construction schedules",
+   "Unexpected complexities \u2013 Unexpected complexities and delays in clearances / execution due to reasons beyond one's control may cause variation / escalations in estimates",
+   "Hydro power schemes are capital intensive, have long gestation period and require huge investments",
+   "State governments demanding higher share of free power and other incentives leading to higher tariffs",
+   "economic conditions affecting global and domestic demand-supply",
+   "changes in Government regulations",
+   "tax regimes",
+   "economic developments in India",
+   "litigation and industrial relations",
+   "The nature of business of Company does not involve any risk / require hedging activities.",
+   "The Company did not have an appropriate internal control system in relation to granting of loans to subsidiary and/or other companies and making recoveries against the trade and other receivables, including ascertaining economic substance and business rationale of the transactions, establishing segregation of duties and determining credentials of the counter parties",
+   "With respect to inter corporate deposits, the Company did not have appropriate system to evaluate the creditworthiness of the parties and recoverability of monies given including interest thereon and related party transactions especially with respect to remuneration paid to one of the director of the Company and also ensuring the compliances with respect to provisions of the Act so that these are not considered to be prejudicial to the interest of the Company",
+   "Non-availability of confirmation and reconciliation thereof of certain debit and credit balances including loans, advances, creditors, etc.",
+   "Impairment of investments in subsidiaries and associates",
+   "Trade receivables outstanding for considerable period with uncertain recovery",
+   "Net worth of subsidiaries completely eroded",
+   "Current liabilities exceeding current assets in subsidiaries",
+   "Pending litigation and contingencies",
+   "Significant impairment provisions for investments, loans, trade receivables, and other balances in subsidiaries and associate",
+   "High contingent liabilities including income tax demands of Rs 18,727.38 lakhs and corporate guarantee of Rs 5,847.33 lakhs to IREDA",
+   "Loans to subsidiaries and associate with undetermined repayment terms and recoverability",
+   "Outstanding balances from related parties and other bodies corporate pending recovery determination",
+   "Provision for impairment against various other outstanding balances aggregating to Rs 565.73 Lakhs recognised during the year ended 31st March, 2026 and included under Exceptional items. Amount finally recoverable with respect to these amounts as such have not been ascertained by the management.",
+   "Key audit matters in relation to two subsidiary companies and one associate company have not been reported in the absence of audited financial statements of those companies.",
+   "Material weaknesses in internal financial controls: inappropriate internal control system for making recoveries against trade and other receivables; lack of appropriate system to evaluate creditworthiness of parties for inter corporate deposits and recoverability of monies given including interest thereon; internal financial controls of one subsidiary not operating effectively resulting in non-provision of interest expense; non-availability of confirmation and reconciliation of certain debit and credit balances including loans, advances, creditors, etc.",
+   "Adverse opinion on consolidated financial statements due to significance of matters described in Basis for Adverse Opinion section.",
+   "Consolidated financial statements do not comply with Indian Accounting Standards.",
+   "Matters described in Basis for Adverse Opinion may have an adverse effect on the functioning of the Group and its associate.",
+   "Impairment of investments in associates and subsidiaries (Arunachal Pradesh and Uttarakhand undertakings)",
+   "Credit impaired trade receivables of Rs 3,174.68 Lakhs as at 31st March 2026",
+   "Provision for impairment in value of capital work-in-progress of Rs 2,971.24 Lakhs",
+   "Pending transfer formalities of undertakings in Uttarakhand",
+   "Uncertainty in recovery of trade receivables outstanding for considerable period (Rs 198.24 Lakhs)",
+   "Dependence on Power Purchase Agreements and regulatory framework",
+   "Trade receivables outstanding for considerable period (Rs 457.87 lakhs trading, Rs 11.93 lakhs generating)",
+   "Security deposits outstanding for considerable period (Rs 95.93 lakhs)",
+   "Loan to associate Arunachal Hydro Power Limited (Rs 588.72 lakhs) considered doubtful and fully impaired",
+   "Loan to other body corporate (Rs 586.50 lakhs) outstanding for considerable period, no provision made pending recovery outcome",
+   "Interest of Rs 792.81 lakhs on loan from body corporate not recognised pending finalisation of terms",
+   "Remuneration of Rs 40.20 lakhs paid to director considered recoverable since 2023, held in trust",
+   "Advances due from directors and related parties (Rs 40.94 lakhs)",
+   "Retention money/security deposits of Rs 56.00 lakhs outstanding for considerable period, no provision made",
+   "Negative retained earnings (Rs -12,004.12 lakhs) and negative other equity (Rs -4,359.30 lakhs)",
+   "Negative non-controlling interest (Rs -661.16 lakhs)"
+  ],
+  "related_party": [
+   {
+    "party": "Wholly owned subsidiaries",
+    "nature": "Loans granted",
+    "amount_cr": null
+   },
+   {
+    "party": "Wholly owned subsidiaries",
+    "nature": "Investment in equity shares and preference shares",
+    "amount_cr": null
+   },
+   {
+    "party": "Wholly owned subsidiaries",
+    "nature": "Trade receivables",
+    "amount_cr": null
+   },
+   {
+    "party": "Director",
+    "nature": "Remuneration paid pending approvals",
+    "amount_cr": null
+   },
+   {
+    "party": "One of the Directors",
+    "nature": "Amount paid during 2022-23 considered recoverable due to inadequate profit",
+    "amount_cr": 0.402
+   },
+   {
+    "party": "Subsidiary companies",
+    "nature": "Unsecured loans given (interest free, no repayment terms)",
+    "amount_cr": 31.1852
+   },
+   {
+    "party": "Associate company",
+    "nature": "Loans outstanding",
+    "amount_cr": 5.8872
+   },
+   {
+    "party": "Ayyappa Hydro Power Limited",
+    "nature": "Subsidiary - Loan given (net)",
+    "amount_cr": 1.78
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Loan given (net)",
+    "amount_cr": 0.65
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Repayment of borrowings (net)",
+    "amount_cr": 4.25
+   },
+   {
+    "party": "Ayyappa Hydro Power Limited",
+    "nature": "Subsidiary - Payment of expenses on behalf",
+    "amount_cr": 0.0556
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Payment of expenses on behalf",
+    "amount_cr": 0.0683
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Payment of expenses by subsidiary on behalf of company",
+    "amount_cr": 0.2796
+   },
+   {
+    "party": "Ayyappa Hydro Power Limited",
+    "nature": "Subsidiary - Payment of expenses by subsidiary on behalf of company",
+    "amount_cr": 0.0248
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Expenses reimbursed to company by subsidiary",
+    "amount_cr": 0.0619
+   },
+   {
+    "party": "EDCL Power Projects Limited",
+    "nature": "Subsidiary - Expenses reimbursed to subsidiary by company",
+    "amount_cr": 0.2386
+   },
+   {
+    "party": "Ayyappa Hydro Power Limited",
+    "nature": "Subsidiary - Expenses reimbursed to subsidiary by company",
+    "amount_cr": 0.026
+   },
+   {
+    "party": "Ms. Vijayshree Binnani",
+    "nature": "KMP - Remuneration",
+    "amount_cr": 0.0678
+   },
+   {
+    "party": "Ms. Sneha Naredi",
+    "nature": "KMP - Remuneration",
+    "amount_cr": 0.024
+   },
+   {
+    "party": "Mr. Satyendra Pal Singh",
+    "nature": "KMP - Remuneration",
+    "amount_cr": 0.3742
+   },
+   {
+    "party": "Mr. Prabir Goswami",
+    "nature": "KMP - Remuneration",
+    "amount_cr": 0.1763
+   },
+   {
+    "party": "Mr. Nitin Dutt Sharma",
+    "nature": "KMP - Sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Ms. Vandana",
+    "nature": "KMP - Sitting fees",
+    "amount_cr": 0.022
+   },
+   {
+    "party": "Mr. Satyendra Pal Singh",
+    "nature": "KMP - Sitting fees",
+    "amount_cr": 0.014
+   },
+   {
+    "party": "Mr. Aman Jain",
+    "nature": "KMP - Sitting fees",
+    "amount_cr": 0.022
+   },
+   {
+    "party": "Mr. Dharam Veer Sharma",
+    "nature": "KMP - Sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Ms. Disha Kumari Singh",
+    "nature": "KMP - Other advances outstanding",
+    "amount_cr": 0.402
+   },
+   {
+    "party": "Directors of Parent Company and its subsidiaries",
+    "nature": "Advances due from directors and private companies in which director is a director or member",
+    "amount_cr": 0.4094
+   },
+   {
+    "party": "Director of Parent Company",
+    "nature": "Remuneration considered recoverable and held in trust",
+    "amount_cr": 0.402
+   },
+   {
+    "party": "Arunachal Hydro Power Limited",
+    "nature": "Loan to associate (considered doubtful)",
+    "amount_cr": 5.8872
+   },
+   {
+    "party": "Startrack Vinimay Private Limited",
+    "nature": "Holds entire 1,10,00,000 8% non-cumulative redeemable preference shares",
+    "amount_cr": null
+   },
+   {
+    "party": "Essel Infraprojects Limited",
+    "nature": "Holds entire 22,04,000 10% non-cumulative redeemable preference shares",
+    "amount_cr": null
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income tax demand for assessment years 2011-12 to 2020-21",
+    "amount_cr": 188.1747
+   },
+   {
+    "nature": "Income tax demand for EDCL Power Projects Ltd for assessment years 2013-14 to 2021-22",
+    "amount_cr": 42.8509
+   },
+   {
+    "nature": "Income tax demand for Ayyappa Hydro Power Ltd for assessment years 2015-16 to 2020-21",
+    "amount_cr": 0.591
+   },
+   {
+    "nature": "Demand notices aggregating to Rs 18,727.38 Lakhs pertaining to Income Tax Assessment Order for Assessment Years 2011-2012 to 2020-2021; Interest and Penalty levied till 31st March 2026 amounts to Rs 24,047.65 Lakhs. Appeals pending before Income Tax Appellate Tribunal, New Delhi.",
+    "amount_cr": 427.75
+   },
+   {
+    "nature": "Income Tax demand and interest & penalty",
+    "amount_cr": 427.7503
+   },
+   {
+    "nature": "Service Tax demand",
+    "amount_cr": 0.1541
+   },
+   {
+    "nature": "Demand from Income Tax Authorities pertaining to AY 2011-2012 to AY 2020-2021",
+    "amount_cr": 187.2738
+   },
+   {
+    "nature": "Service tax matters under disputes and pending in appeal",
+    "amount_cr": 0.1541
+   },
+   {
+    "nature": "Interest if any payable from the date of demand in respect of direct and indirect tax matters",
+    "amount_cr": 240.4765
+   },
+   {
+    "nature": "Corporate guarantee given to IREDA in respect of term loan availed by one of the subsidiary company",
+    "amount_cr": 58.4733
+   }
+  ],
+  "litigation": [
+   "Income tax demand notices for assessment years 2011-12 to 2020-21 amounting to `18,817.47 Lakhs challenged through appellate process, matters pending",
+   "EDCL Power Projects Ltd received assessment orders for assessment years 2013-14 to 2021-22 with demand notices aggregating to `4,285.09 Lakhs, appeals filed before CIT(Appeals), matter pending",
+   "Ayyappa Hydro Power Ltd received assessment orders for assessment years 2015-16 to 2020-21 with demand notices aggregating to `59.10 Lakhs, appeals filed before CIT(Appeals), matter pending",
+   "Arunachal Hydro Power Limited (associate) name struck off from Register of Companies by ROC Shillong for non-filing of financial statements and annual return",
+   "Income Tax demand notices aggregating to Rs 18,727.38 Lakhs for AY 2011-12 to 2020-21; Interest and Penalty of Rs 24,047.65 Lakhs till 31st March 2026. Appeals pending before Income Tax Appellate Tribunal, New Delhi.",
+   "Income Tax demand of Rs 18,727.38 Lakhs and interest & penalty of Rs 24,047.65 Lakhs for FY 2010-2011 to FY 2019-2020 pending at CIT(Appeals)",
+   "Service Tax demand of Rs 15.41 Lakhs for FY 2007-2008 pending at CESTAT",
+   "Undisputed TDS dues unpaid: Rs 6.46 Lakhs (March 2014), Rs 3.43 Lakhs (March 2015), Rs 2.56 Lakhs (March 2023)",
+   "Pending matters related to recovery of trade receivables outstanding for considerable period",
+   "Contingencies/claims/litigations against the Company",
+   "Proceedings with income tax authorities for AY 2011-2012 to AY 2020-2021",
+   "Service tax matters under disputes and pending in appeal",
+   "Pending litigations (other than those already recognized in the consolidated financial statements) having material impact on the financial position of the Group have been disclosed in the consolidated financial statements as required in terms of accounting standards and provisions of the Act - refer note no. 44(A) to the consolidated financial statements.",
+   "No proceedings initiated or pending for holding benami property under Benami Transactions (Prohibition) Act, 1988",
+   "Not declared a wilful defaulter by any bank, financial institution, government, or government authority"
+  ],
+  "dividend_per_share": 0
+ }
+}

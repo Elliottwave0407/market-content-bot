@@ -1,0 +1,540 @@
+{
+ "isin": "INE318D01020",
+ "name": "Zenith Steel Pipes & Industries Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31829_ZENITHSTL_2025_2026_A_28210494_07092026234654.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 262273,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Zenith Steel Pipes & Industries Ltd is engaged in the manufacturing of steel pipes and operates multiple manufacturing units across India.",
+   "plants": [
+    {
+     "location": "Khopoli Unit, Tal. Khopoli-410203, Dist. Raigad, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Murbad Unit, Survey (Gut) No. 440/441 Village Nhave, Taluka Murbad, Dist. Thane, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Tarapur Unit, G-38/39, Tarapur Industrial Area, Tarapur-401506, Dist.-Palghar, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Trichy Unit, SH No.71, Survey No. 782, Village: Kalugar, Thogainmalai, Taluka: Kulithalai-639120, Dist. Karur, Tamilnadu",
+     "capacity": ""
+    },
+    {
+     "location": "Khopoli",
+     "capacity": ""
+    },
+    {
+     "location": "Khopoli",
+     "capacity": "factory at Khopoli has remained under lock-out since December 2013"
+    },
+    {
+     "location": "Khopoli Unit, Tal Khopoli, Dist. Raigad, Maharashtra-410203",
+     "capacity": ""
+    },
+    {
+     "location": "Tarapur Unit, G-38/39, M.I.D.C., Tarapur, Dist. Palghar Maharashtra- 401506",
+     "capacity": ""
+    },
+    {
+     "location": "Murbad Unit, Survey (Gut) No.440/441, Nhave, Kakadpada, Murbad District, Thane, Maharashtra",
+     "capacity": ""
+    },
+    {
+     "location": "Trichy Mobile Unit, SH No.71, Survey No. 782, Village: Kalugar Thogainmala, Taluka: Kulithalai, Dist.: Karur-639120, Tamil Nadu",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "geographies": [
+    {
+     "name": "Exports",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ],
+   "products": [
+    {
+     "name": "Steel Pipes",
+     "share_of_revenue_pct": null,
+     "note": "Single reportable segment"
+    }
+   ],
+   "customers": [
+    "construction",
+    "infrastructure",
+    "oil and gas",
+    "water transmission",
+    "engineering",
+    "automotive",
+    "mining",
+    "industrial activities"
+   ],
+   "raw_materials": [
+    "steel",
+    "scrap",
+    "coking coal",
+    "iron ore"
+   ],
+   "end_markets": [
+    "construction",
+    "infrastructure",
+    "oil and gas",
+    "water supply",
+    "transportation",
+    "industrial projects"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "ZENITH USA INC",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Zenith (USA) Inc.",
+    "holding_pct": 100,
+    "business": "Develop overseas market for the Company"
+   },
+   {
+    "name": "Zenith Middle East FZ LLC",
+    "holding_pct": 100,
+    "business": "Develop overseas market for the Company"
+   },
+   {
+    "name": "Zenith (USA)Inc.",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Zenith Middle East FZLLC",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Zenith USA",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Zenith Middle East",
+    "holding_pct": 100,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "ZENITH USA INC",
+    "nature": "Wholly Owned Subsidiary - Sale of goods or services",
+    "amount_cr": 30
+   },
+   {
+    "party": "BIRLA PRECISION TECHNOLOGIES LIMITED",
+    "nature": "Group Company - Giving or availing Loans",
+    "amount_cr": 60
+   },
+   {
+    "party": "BIRLA BOMBAY PRIVATE LIMITED",
+    "nature": "Group Company - Giving or availing Loans",
+    "amount_cr": 50
+   },
+   {
+    "party": "Key managerial personnel and relatives",
+    "nature": "Material, financial and commercial transactions where they have personal interest",
+    "amount_cr": null
+   },
+   {
+    "party": "Tribus Real Estate Pvt. Ltd.",
+    "nature": "MOU for taking over Company's secured bank loans; assignment of debt",
+    "amount_cr": 158.9492
+   },
+   {
+    "party": "Invent Assets Securitization & Reconstruction Private Limited",
+    "nature": "Assignment of debt from Consortium of Banks; subsequent assignment to India SME Asset Reconstruction Company Limited",
+    "amount_cr": 193.19
+   },
+   {
+    "party": "India SME Asset Reconstruction Company Limited",
+    "nature": "Assignee of debt from Invent Assets Securitization & Reconstruction Private Limited",
+    "amount_cr": 193.19
+   },
+   {
+    "party": "Tribus Real Estate Pvt. Ltd.",
+    "nature": "MOU for takeover and settlement of existing bank borrowings",
+    "amount_cr": 158.9492
+   },
+   {
+    "party": "Invent Assets Securitisation & Reconstruction Private Limited",
+    "nature": "Assignment of debt to India SME Asset Reconstruction Company Limited",
+    "amount_cr": 0
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "State Bank of India",
+    "amount_cr": null,
+    "note": "Loan assigned to Invent Assets Securitization And Reconstruction Private Limited After that Assigned to India SME Asset Reconstruction Company Limited"
+   },
+   {
+    "lender_or_type": "Axis Bank",
+    "amount_cr": null,
+    "note": ""
+   },
+   {
+    "lender_or_type": "Consortium of banks led by State Bank of India",
+    "amount_cr": null,
+    "note": "Loan account sold to Asset Reconstruction Company; NPA status"
+   },
+   {
+    "lender_or_type": "Public Deposits",
+    "amount_cr": 48.45,
+    "note": "Outstanding deposits unpaid/unclaimed as at end of year: Principal Rs. 2152.61 lakh, Interest Rs. 4844.62 lakh; default in repayment"
+   },
+   {
+    "lender_or_type": "Consortium of Banks",
+    "amount_cr": 193.19,
+    "note": "Outstanding dues of Rs. 19,319.00 lakhs as on 31.01.2014; action initiated under SARFAESI Act; symbolic possession of Khopoli unit properties; loan assigned to Invent Assets Securitization and Reconstruction Private Limited (31.03.2018) and then to India SME Asset Reconstruction Company Limited; matter pending before DRT, Pune"
+   },
+   {
+    "lender_or_type": "Tribus Real Estate Pvt. Ltd.",
+    "amount_cr": 158.9492,
+    "note": "MOU for taking over Company's secured bank loans amounting to Rs. 15,894.92 lakhs; assignment of debt by Invent Assets Securitization & Reconstruction Private Limited to India SME Asset Reconstruction Company Limited; Rs. 9,295.00 lakhs principal outstanding payable for full and final settlement"
+   },
+   {
+    "lender_or_type": "Public Deposits",
+    "amount_cr": null,
+    "note": "Non-repayment of public deposits and interest thereon on due dates; non-maintenance of prescribed liquid assets; non-compliance with CLB orders (Note No. 35)"
+   },
+   {
+    "lender_or_type": "Consortium of Banks",
+    "amount_cr": 193.19,
+    "note": "Outstanding dues as on 31.01.2014, assigned to Invent Assets Securitization and Reconstruction Private Limited, then to India SME Asset Reconstruction Company Limited"
+   },
+   {
+    "lender_or_type": "Public deposits",
+    "amount_cr": 0,
+    "note": "Non-repayment on due dates, non-maintenance of liquid assets, non-compliance with CLB orders"
+   }
+  ],
+  "auditor": {
+   "name": "M/S. D E V A M & ASSOCIATES LLP",
+   "opinion": "Qualified opinion on Standalone Financial Statements",
+   "key_audit_matters": [
+    "Non-compliance with Section 74 and Companies (Acceptance of Deposits) Rules, 2014 regarding public deposits",
+    "Balances of Trade Payables, Trade Receivables, Loans & Advances, Deposits, Borrowings subject to reconciliation and confirmation",
+    "Provision of Rs. 41.07 lakhs for non-operating current bank accounts frozen by regulatory authorities",
+    "Accumulated losses exceeding share capital and reserves; net worth fully eroded - material uncertainty on going concern",
+    "Inventory valuation at Rs. 594.51 lakhs using weighted average cost method without adequate supporting documentation",
+    "Evaluation of income tax provision",
+    "Net realizable value (NRV) of Inventory",
+    "Allowance for credit losses",
+    "Investment impairment assessment",
+    "Evaluation of income tax provision - material tax positions and litigations requiring significant judgement",
+    "Allowance for credit losses - significant judgment in calculating expected credit losses"
+   ],
+   "qualifications_or_emphasis": [
+    "Material non-compliance with Companies Act, 2013 and Deposits Rules",
+    "Unable to verify accuracy, completeness, recoverability/payability of balances without confirmations/reconciliations",
+    "Unable to determine adjustments for frozen bank accounts",
+    "Going concern basis not adequately supported due to material uncertainty",
+    "Unable to determine adjustments for inventory carrying amount",
+    "Prosecution filed by ROC for non-compliance of CLB order on depositor payments",
+    "Non-compliance with section 74 of Companies Act, 2013 on deposit repayment and liquid assets",
+    "SEBI ban from capital market for GDR violations; SAT reduced penalty to Rs. 25 lakh; SEBI appeal pending in Supreme Court",
+    "NCLT petition by Regional Director against company/directors/KMPs; SFIO investigation",
+    "Delayed filing of scrutinizer report/voting results for AGM FY 2024-25 (Reg 44(3))",
+    "Delayed newspaper advertisement for Q2 FY25 results (Reg 47)",
+    "Statutory auditor issued qualified audit report for year ended 31st March 2026",
+    "Accumulated losses exceed share capital & reserves; net worth fully eroded as on 31st March 2026; material uncertainty on going concern",
+    "Non-compliance with Section 74 and other applicable provisions of the Companies Act, 2013 read with the Companies (Acceptance of Deposits) Rules, 2014 regarding non-repayment of public deposits and interest, non-maintenance of prescribed liquid assets, and non-compliance with CLB orders (Note No. 35)",
+    "Balances relating to Trade Payables, Trade Receivables, Loans, Advances, Deposits, Intergroup balances, Current Liabilities, Borrowings from others, etc., are subject to reconciliation and confirmation; management has not sent direct balance confirmations (Note No. 43)",
+    "Provision of Rs. 41.07 lakhs for non-operative current bank accounts frozen by regulatory authorities; absence of bank statements and year-end balance confirmations (Note No. 50)",
+    "Significant accumulated losses exceeding share capital and reserves; net worth fully eroded as at 31 March 2026, indicating material uncertainty on going concern basis (Note No. 47)",
+    "Inventories valued at Rs. 594.51 lakhs using weighted average cost method; inadequate information and supporting documentation to verify valuation basis, quantities, condition, and cost allocation (Note No. 49)",
+    "MOU with Tribus Real Estate Pvt. Ltd. for taking over secured bank loans amounting to Rs. 15,894.92 lakhs; assignment of debt to India SME Asset Reconstruction Company Limited; proposed development arrangement for Khopoli land & building (Note No. 45)",
+    "SEBI order dated 31.03.2021 prohibiting access to securities market for three years for GDR violations; appellate authority modified order on 21.02.2023; SEBI filed civil appeal before Supreme Court admitted on 02.01.2024 (Note No. 48)",
+    "Consortium of Banks initiated action under SARFAESI Act for recovery of Rs. 19,319.00 lakhs as on 31.01.2014; symbolic possession of Khopoli unit properties on 29.05.2014; loan assigned to Invent Assets Securitization and Reconstruction Private Limited (31.03.2018) and then to India SME Asset Reconstruction Company Limited; matter pending before DRT, Pune, next hearing 30.06.2026 (Note No. 46)",
+    "Write back of provisions for expenses/balances totaling Rs. 2034.15 lakhs during FY 2025-26 recognized under Other Income as 'Provision Written Back' (Note No. 51)",
+    "Suspected fraud identified in Q3 FY 2025-26 involving unauthorized access to bank payment process by a consultant; estimated amount ~Rs. 758 lakhs relating to prior periods; recovered land and residential properties aggregating Rs. 131.07 lakhs accounted under Exceptional Item and Other Receivables; investigation ongoing (Note No. 65)",
+    "Non-compliance with Section 74 of Companies Act, 2013 regarding public deposits",
+    "Balances subject to reconciliation and confirmation for trade payables, receivables, loans, advances, deposits, intergroup balances, current liabilities, borrowings",
+    "Frozen bank accounts with provision of Rs.41.07 lakhs - unable to verify completeness and accuracy",
+    "Net worth fully eroded - material uncertainty on going concern basis",
+    "Inventory valuation of Rs.594.51 lakhs not verifiable due to lack of supporting documentation",
+    "Emphasis: MOU with Tribus Real Estate for settlement of bank borrowings of Rs.15,894.92 lakhs",
+    "Emphasis: SEBI debarment order and Supreme Court appeal",
+    "Emphasis: SARFAESI Act proceedings for Rs.19,319 lakhs with symbolic possession of Khopoli properties",
+    "Emphasis: Provision write-backs of Rs.2,034.15 lakhs (Holding) and Rs.338.14 lakhs (subsidiary)",
+    "Emphasis: Suspected fraud of ~Rs.758 lakhs with recovery of Rs.131.07 lakhs",
+    "Emphasis: Coverage of consolidated revenue, assets and profits per Regulation 33(3)(h)",
+    "Material weaknesses in internal financial controls: no delegation of authority matrix, no risk control matrix, secretarial compliance lapses, no overhead allocation system, no balance confirmation system",
+    "The Holding Company does not have an approved delegation of authority matrix, which leads to uncertainties regarding decision-making authority and responsibility within the organization.",
+    "The Holding Company does not have a Risk Control Matrix (RCM).",
+    "The Holding Company has certain control lapses in regards to secretarial compliance.",
+    "The Holding Company does not have an appropriate internal control system for identification and allocation of overheads to inventory.",
+    "The Holding Company does not have a system to obtain balance confirmations from all parties.",
+    "The Holding Company has used an accounting software for maintaining its books of account for the year ended 31 March 2026, which has a feature of recording audit trail (edit log) facility except in respect of three units, where the accounting software did not have the audit trail feature."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Bhavika Sharma resigned as Non-Executive Independent Director w.e.f. 24th August, 2026",
+    "Mrs. Aradhana Nayak appointed as Additional Director (Non-Executive & Independent) w.e.f. 24th August, 2026",
+    "Mr. Prakhar Agarwal resigned as Company Secretary w.e.f. 06th Feb. 2026",
+    "Mr. Uday Anant Sawant appointed as Company Secretary w.e.f. 10th Feb. 2026",
+    "Mrs. Aradhana Nayak (DIN: 08536989) appointed as Additional Independent Director w.e.f. 24.08.2026, proposed for Independent Director for term up to 5 years",
+    "Mr. Purushottam Digambar Sonavane (DIN: 08405653) details provided for re-appointment",
+    "Prakhar Agarwal resigned as Company Secretary w.e.f. 06.02.2026",
+    "Uday Anant Sawant appointed as Company Secretary w.e.f. 10.02.2026",
+    "Bhavika Sharma (upto 24.08.2026) Independent Director",
+    "Mrs. Bhavika Sharma (DIN: 08846865) ceased as Independent Director w.e.f. 24.08.2026",
+    "Mrs. Aradhana Nayak (DIN: 08536989) appointed as Independent Director w.e.f. 24.08.2026"
+   ],
+   "auditor_change": "M/s. D E V A M & Associates LLP to be appointed as Statutory Auditors for five consecutive years until conclusion of 68th AGM",
+   "promoter_holding_pct": 15.64,
+   "top_shareholders": [
+    {
+     "name": "Promoters/Directors and their Associate companies",
+     "pct": 15.64
+    },
+    {
+     "name": "Resident Individual (Public) holding nominal share capital in excess of Rs. 2 Lakhs",
+     "pct": 46.05
+    },
+    {
+     "name": "Resident Individual (Public)",
+     "pct": 25.8
+    },
+    {
+     "name": "Corporate Bodies (Public)",
+     "pct": 8.13
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mrs. Minal Umesh Pote",
+     "role": "Whole-time Director"
+    },
+    {
+     "name": "Mr. Girvanesh Balasubramanan",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Uday Anant Sawant",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Minal Umesh Pote",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "B. Girvanesh",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Uday Anant Sawant",
+     "role": "Company Secretary (appointed w.e.f. 10.02.2026)"
+    },
+    {
+     "name": "Uday Anant Sawant",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Minal Pote",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Uday Anant Sawant",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Purushottam Sonavane",
+     "role": "Director"
+    },
+    {
+     "name": "Amit Surana",
+     "role": "Partner, D E V A M & Associates LLP (Statutory Auditor)"
+    }
+   ],
+   "employees": 111
+  },
+  "other_notable": [
+   "64th AGM scheduled for 30th September 2026 at 03:00 PM through VC/OAVM",
+   "Cost Auditor M/s. Y.R. Doshi & Co. remuneration ratified at Rs. 75,000 p.a. for year ending 31st March 2026",
+   "Secretarial Auditor M/s. Pimple & Associates (CP No. 21773) proposed for appointment for 5 years from FY 2026-27 to 2030-31",
+   "Material Related Party Transactions approved for period from 64th AGM to 65th AGM (2027)",
+   "Remote e-voting period: 27th September 2026 (9:00 AM) to 29th September 2026 (5:00 PM)",
+   "Cut-off date for e-voting: 23rd September 2026",
+   "Revenue from operations (standalone) Rs. 4997.31 lakh for FY 2025-26 vs Rs. 11,909.25 lakh previous year",
+   "Net Profit (standalone) Rs. 310.34 lakh for FY 2025-26 vs Rs. 17.88 lakh previous year",
+   "Exports turnover increased to Rs. 2138.26 lakh for FY 2025-26 from Rs. 1956.37 lakh previous year",
+   "No dividend recommended for year ended March 31, 2026",
+   "No change in nature of business during the year",
+   "No shares allotted during the year",
+   "No ESOP shares allotted or options granted during FY 2025-26",
+   "Six Board meetings held during FY 2025-26",
+   "Cost Auditor M/s. Y.R. Doshi & Co. appointed for FY 2026-27 at remuneration Rs. 75,000 p.a.",
+   "Secretarial Auditor M/s. Pimple & Associates appointed for five consecutive financial years from April 1, 2026",
+   "Internal Auditor: M/s. Bookkeeping 360",
+   "Company does not qualify for CSR provisions under Section 135(1)",
+   "Vigil Mechanism/Whistle Blower Policy in place",
+   "Internal Complaints Committee constituted under Sexual Harassment Act; no complaints filed during year",
+   "Annual Return available on company website www.zenithsteelpipes.com",
+   "The factory at Khopoli has remained under lock-out since December 2013",
+   "The Company had approximately 178 employees, including employees engaged on contract basis",
+   "Industrial relations have generally remained cordial at other locations",
+   "The Company operates in a single reportable segment, namely Pipes",
+   "Revenue from operations stood at Rs. 4,997.31 Lakhs as against Rs. 11,909.25 Lakhs in FY 2024-25, representing a decline of approximately 58.04%",
+   "Profit for the year increased to Rs. 311.09 Lakhs as compared with Rs. 22.51 Lakhs in FY 2024-25",
+   "Basic and diluted EPS improved to Rs. 0.2186 per share from Rs. 0.0158 per share in FY 2024-25",
+   "Current Ratio: 0.22 (2025-26) vs 0.22 (2024-25)",
+   "Debt Equity Ratio: (0.87) (2025-26) vs (0.84) (2024-25) - negative ratio reflects negative net equity position",
+   "Debt Coverage Ratio: 3.48 (2025-26) vs 1.92 (2024-25)",
+   "Return on Equity Ratio: (1.25%) (2025-26) vs (0.09%) (2024-25)",
+   "Net Profit Ratio: 6.21% (2025-26) vs 0.15% (2024-25)",
+   "Return on Capital Employed: (1.45%) (2025-26) vs (0.10%) (2024-25)",
+   "Statutory Audit Fees including reimbursement of Expenses: Rs. 10,38,000",
+   "Cost Audit Fees: Rs. 75,000",
+   "No investor complaints received during FY 2025-26",
+   "Company website: www.zenithsteelpipes.com",
+   "One Stakeholders Relationship Committee Meeting held on 10th February, 2026",
+   "No Extra Ordinary General Meeting held during FY 2025-26",
+   "No resolutions transacted through Postal Ballot during FY 2025-26",
+   "No materially significant related party transactions during FY 2025-26",
+   "No policy adopted during FY 2025-26",
+   "No complaint filed under Sexual Harassment of Women at Workplace Act during the year",
+   "Company does not fall under top 1000 listed entities by market cap; Regulation 21 not applicable",
+   "99.36% of equity capital held in dematerialized form as on March 31, 2026",
+   "No outstanding GDRs/ADRs/Warrants or convertible instruments",
+   "Certificate of Compliance with Code of Conduct for Board and Senior Management signed by Purushottam Sonavane",
+   "Director & CFO Certification by Minal Pote (Whole time Director) and B. Girvanesh (CFO) for FY 2025-26",
+   "Certificate of Non-Disqualification of Directors issued by Pimple & Associates",
+   "Certificate on Corporate Governance issued by Pimple & Associates stating compliance except observations in secretarial audit report",
+   "Form AOC-2: No contracts/arrangements/transactions not at arm's length basis",
+   "Independent Auditors' Report: Qualified Opinion on standalone financial statements for year ended 31 March 2026",
+   "Company has not maintained proper records showing full particulars including quantitative details and situation of Property, Plant and Equipment and intangible assets",
+   "Title deeds of Free Hold Property (Gross carrying value Rs. 329.50 lakhs) held in name of Tungabhadra Holdings Pvt Ltd since 2010, disputed under land regulatory authorities records",
+   "Company has been defaulting in payments to banks since August 2012",
+   "No working capital limits sanctioned in excess of Rs. 5 crore from banks/financial institutions on security of current assets",
+   "No investments in, guarantees to, or loans to related parties during the year",
+   "No loans, guarantees or securities to parties under Section 185; complied with Section 186 for investments made",
+   "Statutory dues in arrears exceeding six months: TDS Rs. 30.24 lakhs, Provident Fund Rs. 28.19 lakhs, Professional Tax Rs. 1.19 lakhs, Maharashtra Labour Welfare Fund Rs. 0.01 lakhs, Dividend Distribution Tax Rs. 359.08 lakhs, Interest on DDT Rs. 549.39 lakhs"
+  ],
+  "risks": [
+   "Lock-out at Khopoli unit continuing since November 2013",
+   "Possession of immovable assets at Khopoli unit under SARFAESI Act contested in DRT court",
+   "Company's accounts turned NPA; State Bank of India sold loan account to Asset Reconstruction Company",
+   "Accumulated losses exceeding share capital and reserves; net worth fully eroded as at 31 March 2026",
+   "Material uncertainty casting significant doubt on ability to continue as going concern",
+   "Non-compliance with Section 74 and Companies (Acceptance of Deposits) Rules, 2014 regarding public deposits",
+   "Balances of Trade Payables, Trade Receivables, Loans & Advances, Deposits, Borrowings subject to reconciliation and confirmation",
+   "Certain current bank accounts non-operating and frozen by regulatory authorities",
+   "SEBI ban from capital market for three years (order dated 30.03.2021) in GDR issue matter",
+   "Prosecution filed by Registrar of Companies for non-compliance with Company Law Board order on depositor payments",
+   "Petition filed by Regional Director, Western Region, Mumbai before NCLT under Sections 221/222/241/242/246 r.w. 339; SFIO investigation ongoing",
+   "Delayed filing of scrutinizer report, voting results, and newspaper advertisements with stock exchanges",
+   "Raw Material and Steel Price Risk: Volatility in steel, scrap and other input prices can affect margins",
+   "Demand Risk: Demand for steel pipes is influenced by infrastructure, construction, oil and gas and industrial activity. Any slowdown in these sectors may affect sales and capacity utilisation",
+   "Import and Competition Risk: Increased imports and competitive pricing may put pressure on domestic realisations",
+   "Working Capital and Liquidity Risk: The Company's financial performance is sensitive to the availability and efficient deployment of working capital",
+   "Geopolitical and Supply Chain Risk: Global conflicts, trade restrictions, shipping disruptions and changes in commodity flows may affect availability and cost of materials",
+   "Regulatory Risk: Changes in taxation, environmental requirements, trade policies, tariffs and other government regulations may affect operations and costs",
+   "Substitution by alternative materials in certain applications may also affect demand",
+   "Foreign currency risk through sales and purchases from overseas suppliers in foreign currencies",
+   "Prosecution filed by Registrar of Companies, Mumbai for non-compliance of order of Hon'ble Company Law Board dated 18.08.2014 regarding defaulted payment to depositors",
+   "Non-compliance with section 74 of Companies Act, 2013 regarding non-repayment of deposits and interest, maintenance of liquid assets, and non-compliance with Company Law Board orders",
+   "Violation of SEBI Act, 1992 and SEBI Regulations for issue of GDR; SEBI banned company from capital market for three years (order dated 31.03.2021); appeal filed; SAT reduced penalty to Rs. 25.00 Lakh and debarment period; SEBI filed civil appeal in Supreme Court against SAT order",
+   "Regional Director, Western Region, Mumbai filed petition before NCLT Mumbai against company, directors/KMPs under Sections 221/222/241/242/246 r.w. 339 of Companies Act, 2013; SFIO investigating affairs of company",
+   "Delayed filing of scrutinizer report and voting result of AGM for FY 2024-25 with stock exchanges per Regulation 44(3) of SEBI (LODR), 2015",
+   "Delayed filing of newspaper advertisement for financial results for quarter ended 30.09.2024 per Regulation 47 of SEBI (LODR), 2015",
+   "Accumulated losses exceeding share capital & reserve; net worth fully eroded as on 31st March, 2026 indicating material uncertainty about ability to continue as going concern",
+   "Non-compliance with Section 74 of Companies Act, 2013 regarding public deposits",
+   "Balances subject to reconciliation and confirmation for trade payables, receivables, loans, advances, deposits, intergroup balances, current liabilities, borrowings",
+   "Frozen bank accounts with provision of Rs.41.07 lakhs",
+   "Net worth fully eroded with accumulated losses exceeding share capital and reserves - material uncertainty on going concern",
+   "Inventory valuation of Rs.594.51 lakhs not verifiable due to lack of supporting documentation",
+   "Suspected fraud of approximately Rs.758 lakhs involving unauthorized bank payment access by consultant",
+   "SEBI debarment order and ongoing Supreme Court appeal",
+   "Bank recovery proceedings under SARFAESI Act for Rs.19,319 lakhs with symbolic possession of Khopoli properties",
+   "Material weaknesses in internal financial controls including no delegation of authority matrix, no risk control matrix, secretarial compliance lapses, no overhead allocation system, no balance confirmation system"
+  ],
+  "litigation": [
+   "Prosecution filed by Registrar of Companies, Mumbai for non-compliance with Company Law Board order dated 18.08.2014 regarding defaulted payments to depositors",
+   "Petition filed by Regional Director, Western Region, Mumbai before NCLT under Sections 221/222/241/242/246 r.w. 339 of Companies Act, 2013 on 08.04.2022",
+   "Serious Fraud Investigation Office (SFIO) investigating affairs of the company",
+   "SEBI order dated 31.03.2021 banned company from capital market for three years in GDR issue matter; SAT partly allowed appeal reducing penalty from Rs. 10 crore to Rs. 25 lakh and debarment period to penalty undergone",
+   "Matter subjudice in DRT court regarding physical possession of Khopoli unit immovable property under SARFAESI Act",
+   "Company filed writ petition before Hon'ble High Court challenging SFIO investigation and petition by Regional Director",
+   "Prosecution filed by Registrar of Companies, Mumbai for non-compliance of Company Law Board order dated 18.08.2014 regarding defaulted payment to depositors",
+   "Non-compliance with section 74 of Companies Act, 2013 and Companies (Acceptance of Deposits) Rules, 2014 regarding non-repayment of deposits and interest",
+   "SEBI order dated 31.03.2021 banning company from capital market for three years for GDR violations; SAT partly allowed appeal reducing penalty to Rs. 25 lakh and debarment period; SEBI filed civil appeal in Supreme Court against SAT order",
+   "Petition filed by Regional Director, Western Region, Mumbai before NCLT Mumbai against company, directors/KMPs under Sections 221/222/241/242/246 r.w. 339 of Companies Act, 2013; SFIO investigation ongoing",
+   "Customs Duty disputes: 1985-86 (High Court, Rs. 3.45 lakhs), 1998-99 (Tribunal, Rs. 82.00 lakhs)",
+   "Central Excise Duty dispute: 1995-96 (Commissioner Appeal, Rs. 129.78 lakhs)",
+   "Central Sales Tax dispute: 1995-96 (Tribunal, Rs. 78.88 lakhs)",
+   "Maharashtra Value Added Tax disputes: 2006-07 (Joint Commissioner Appeal, Rs. 439.30 lakhs), 2007-08 (Joint Commissioner Appeal, Rs. 2,577.63 lakhs), 2011-12 (Tribunal, Rs. 50.98 lakhs), 2012-13 (Joint Commissioner Appeal, Rs. 330.80 lakhs)",
+   "Income Tax disputes: 2013-14 (CIT Appeal, Rs. 21.02 lakhs), 2017-18 (CIT Appeal, Rs. 35.43 lakhs)",
+   "Consortium of Banks recovery action under SARFAESI Act for Rs. 19,319.00 lakhs as on 31.01.2014; symbolic possession of Khopoli unit properties; matter pending before DRT, Pune, next hearing 30.06.2026",
+   "SEBI order dated 31.03.2021 prohibiting access to securities market for three years for GDR violations; appellate modification on 21.02.2023; SEBI civil appeal before Supreme Court admitted 02.01.2024",
+   "Non-compliance with CLB orders regarding public deposits",
+   "SEBI order dated 31.03.2021 prohibiting access to securities market for 3 years for GDR violations; appeal filed, appellate authority modified order on 21.02.2023; SEBI filed civil appeal in Supreme Court on 07.08.2023 admitted on 02.01.2024",
+   "Consortium of Banks initiated SARFAESI Act action for recovery of Rs.19,319 lakhs; symbolic possession of Khopoli properties on 29.05.2014; application for physical possession filed; matter pending before DRT Pune, next hearing 30.06.2026",
+   "Non-compliance with Section 74 of Companies Act, 2013 regarding public deposits - CLB orders passed",
+   "Suspected fraud of ~Rs.758 lakhs identified in Q3 FY 2025-26 involving unauthorized bank payment access by consultant",
+   "The Consolidated financial statement disclose the impact of pending litigations as at 31 March 2026 on its financial position in its Consolidated Financial Statements (Refer Note No. 34 to the Consolidated Financial Statements)"
+  ],
+  "dividend_per_share": 0,
+  "outlook": [
+   {
+    "statement": "The outlook for FY 2026-27 remains cautiously optimistic. India's economic growth is expected to remain resilient, supported by domestic demand, infrastructure spending and continued investment in productive capacity. The construction sector is expected to witness a gradual recovery, with industry estimates indicating revenue growth of approximately 6%\u20138% in FY 2026-27. Steel demand is also expected to strengthen, with industry estimates indicating growth of approximately 9%\u201310% in FY 2026-27, supported by higher government capital expenditure in roads, railways and other infrastructure-intensive sectors. At the same time, elevated coking coal and iron ore costs and volatility in steel prices remain key monitorable factors. The Company will continue to focus on improving capacity utilisation, enhancing operational efficiency, strengthening working-capital management, controlling costs and improving profitability.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Customs Duty disputes",
+    "amount_cr": 0.8545
+   },
+   {
+    "nature": "Central Excise Duty dispute",
+    "amount_cr": 1.2978
+   },
+   {
+    "nature": "Central Sales Tax dispute",
+    "amount_cr": 0.7888
+   },
+   {
+    "nature": "Maharashtra Value Added Tax disputes",
+    "amount_cr": 33.9871
+   },
+   {
+    "nature": "Income Tax disputes",
+    "amount_cr": 0.5645
+   },
+   {
+    "nature": "SEBI order for violations relating to GDR issue - debarment from securities market",
+    "amount_cr": 0
+   },
+   {
+    "nature": "Consortium of Banks recovery action under SARFAESI Act for outstanding dues",
+    "amount_cr": 193.19
+   },
+   {
+    "nature": "Non-compliance with Section 74 of Companies Act, 2013 regarding public deposits",
+    "amount_cr": 0
+   }
+  ]
+ }
+}

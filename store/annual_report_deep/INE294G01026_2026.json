@@ -1,0 +1,755 @@
+{
+ "isin": "INE294G01026",
+ "name": "Raj Oil Mills Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_31523_ROML_2025_2026_A_9101153_05092026155222.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 370614,
+ "chunks": 10,
+ "chunks_ok": 10,
+ "facts": {
+  "business": {
+   "description": "Raj Oil Mills Limited is a listed company proposing to change its name to Raj Consumer Care Limited.",
+   "value_chain_position": "manufacturer",
+   "products": [
+    {
+     "name": "Edible oils and consumer care products",
+     "share_of_revenue_pct": null,
+     "note": "Inferred from crushing/filtration operations and name change to Raj Consumer Care Limited"
+    },
+    {
+     "name": "Various manufactured/packed products",
+     "share_of_revenue_pct": null,
+     "note": "Company manufactures/packs a large range of products having different energy & fuel requirements"
+    },
+    {
+     "name": "Edible Oil",
+     "share_of_revenue_pct": 100,
+     "note": "Only segment reported; Revenue from Operations stood at \u20b9151.37 crore in FY26"
+    },
+    {
+     "name": "Raw Materials",
+     "share_of_revenue_pct": null,
+     "note": "Valued at weighted average method"
+    },
+    {
+     "name": "Packing Material",
+     "share_of_revenue_pct": null,
+     "note": "Valued at weighted average method"
+    },
+    {
+     "name": "Finished Goods",
+     "share_of_revenue_pct": null,
+     "note": "Valued at cost of raw materials plus fixed production overheads allocated on normal capacity basis"
+    }
+   ],
+   "end_markets": [
+    "Consumer care",
+    "Edible oils",
+    "edible oil",
+    "food essentials",
+    "Domestic sales",
+    "Export sales"
+   ],
+   "brands_or_certifications": [
+    "RCCL (proposed brand name)"
+   ],
+   "customers": [
+    "consumers across urban and rural markets",
+    "traditional trade",
+    "modern trade",
+    "e-commerce platforms",
+    "quick commerce platforms",
+    "Government Corporation"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": 100
+    },
+    {
+     "name": "Domestic",
+     "share_pct": null
+    },
+    {
+     "name": "Export",
+     "share_pct": null
+    },
+    {
+     "name": "Local (India)",
+     "share_pct": 100
+    }
+   ],
+   "plants": [
+    {
+     "location": "Manor, Palghar, Maharashtra",
+     "capacity": "Not specified"
+    },
+    {
+     "location": "Ten Village (Manor), Palghar, Maharashtra- 401103",
+     "capacity": ""
+    },
+    {
+     "location": "Factory Building/Refinery",
+     "capacity": "Not specified"
+    }
+   ],
+   "raw_materials": [
+    "Raw Materials",
+    "Traded goods",
+    "Packing Materials",
+    "Consumables",
+    "Chemicals",
+    "Stores and spares",
+    "Base oils",
+    "Crude oil"
+   ]
+  },
+  "borrowings": [
+   {
+    "lender_or_type": "bank(s) or Financial or other Institution(s), Mutual Fund(s), Non-Resident Indians (NRIs), Foreign Institutional Investors (FIIs) or Security Trustee(s) or body(ies) corporate or person(s)",
+    "amount_cr": 50,
+    "note": "Maximum borrowing facility to be secured by creation of charges on assets under Section 180(1)(a)"
+   },
+   {
+    "lender_or_type": "Related parties (Promoter group and Directors)",
+    "amount_cr": 1.6,
+    "note": "Unsecured loan obtained during Financial Year 2025-26"
+   },
+   {
+    "lender_or_type": "Banks and financial institutions",
+    "note": "Working capital limits in excess of Rs. 5 crores availed on basis of security of current assets; no material discrepancies in quarterly statements submitted to banks"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 0.0,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 25.5383,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Secured Financial Creditors",
+    "amount_cr": 178.78,
+    "note": "Amount payable as per Resolution Plan: Rs. 17,878 lakh; Amount paid as on April 1, 2025: Rs. 4,792 lakh"
+   },
+   {
+    "lender_or_type": "Unsecured Financial Creditors",
+    "amount_cr": 58.11,
+    "note": "Amount payable as per Resolution Plan: Rs. 5,811 lakh; Amount paid as on April 1, 2025: Rs. 251 lakh"
+   },
+   {
+    "lender_or_type": "Inter-corporate Deposits",
+    "amount_cr": 0.98,
+    "note": "Amount payable as per Resolution Plan: Rs. 98 lakh; Amount paid as on April 1, 2025: Rs. 5 lakh"
+   },
+   {
+    "lender_or_type": "Public Deposits",
+    "amount_cr": 5.36,
+    "note": "Amount payable as per Resolution Plan: Rs. 536 lakh; Amount paid as on April 1, 2025: Rs. 536 lakh; Outstanding as on March 31, 2026: Rs. 44.76 lakh"
+   },
+   {
+    "lender_or_type": "Unsecured Operational Creditors",
+    "amount_cr": 24.4,
+    "note": "Amount payable as per Resolution Plan: Rs. 2,440 lakh; Amount paid as on April 1, 2025: Rs. 122 lakh; Outstanding as on March 31, 2026: Rs. 12.97 lakh"
+   },
+   {
+    "lender_or_type": "Statutory Liabilities",
+    "amount_cr": 346.69,
+    "note": "Amount payable as per Resolution Plan: Rs. 34,669 lakh; Amount paid as on April 1, 2025: Rs. 347 lakh"
+   },
+   {
+    "lender_or_type": "Workmen & Employees Dues",
+    "amount_cr": 2.42,
+    "note": "Amount payable as per Resolution Plan: Rs. 242 lakh; Amount paid as on April 1, 2025: Rs. 85 lakh"
+   },
+   {
+    "lender_or_type": "Cash Credit Facility (Secured)",
+    "amount_cr": 1.2091,
+    "note": "Secured against hypothecation of all inventories (net of trade payables) & trade receivables up to 120 days; Repayable in 5 years (60 months); Rate of interest: RLLR + Spread, reset annually; Regular repayment of principal and interest made"
+   },
+   {
+    "lender_or_type": "Loan - Directors (Unsecured)",
+    "amount_cr": 11.96,
+    "note": "Outstanding balance as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Loan - Others (Unsecured)",
+    "amount_cr": 12.3692,
+    "note": "Includes borrowings from Mukhi Industries Limited (Rs 1,222.50 lakhs) and Rubberwala Housing & Infrastructure Limited (Rs 14.42 lakhs); Outstanding balance as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Non-current borrowings from Banks (Secured)",
+    "amount_cr": 0,
+    "note": "Nil as at March 31, 2026; Rs 10.35 lakhs as at March 31, 2025"
+   },
+   {
+    "lender_or_type": "Long term borrowings",
+    "amount_cr": 0.0,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Short term borrowings",
+    "amount_cr": 25.5383,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Current maturities of long term borrowings",
+    "amount_cr": 0.1023,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Lease Liabilities",
+    "amount_cr": 0.7929,
+    "note": "As at March 31, 2026"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. Vinod C. Subramaniam & Co. (Cost Auditor), M/s. Kailash Chand Jain & Co. (Chartered Accountants for name change certificate), M/s. S.K Jain & Co. (Practicing Company Secretaries for Corporate Governance certificate)",
+   "opinion": "The Auditor's Report do not contain any qualifications, reservations, adverse remarks or disclaimer.",
+   "qualifications_or_emphasis": [
+    "There are no modified opinions in audit report.",
+    "Emphasis of Matter: Outstanding payments as per NCLT in relation to operational creditors and public fixed deposit holders as on March 31, 2026. The Company has an outstanding amount payable of Rs. 57.73 lakhs as on March 31, 2026 pertaining to unsecured operational creditors & public fixed deposits. Cheques issued were returned due to non-traceability of parties. Company filed application to NCLT seeking directions for payments."
+   ],
+   "key_audit_matters": [
+    "Revenue recognition - significant auditor attention required due to volume of transactions, industry knowledge needed, and key judgements in identification of performance obligations, determination of transaction price including variable consideration (rebates, discounts), and assessment of satisfaction of performance obligations"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Atikurraheman Daudbhai Mukhi (DIN: 05191543) retires by rotation and offers himself for re-appointment",
+    "Mr. Amir Atikurrehman Mukhi (DIN: 08352099) retires by rotation and offers himself for re-appointment",
+    "Mr. Humayun Ahmed Shafi Ahmed Shaikh resigned as Whole Time Director w.e.f August 06, 2025",
+    "Mrs. Needa Altaf Mukhi resigned as Whole Time Director w.e.f August 06, 2025",
+    "Mr. Arun Dash resigned as Independent Director w.e.f August 13, 2025",
+    "Mr. Siraj Umar Furniturewala resigned as Independent Director w.e.f August 13, 2025",
+    "Mrs. Kiran Raghavendra Awasthi re-appointed as Non-Executive Independent Director for second term of 5 years from February 13, 2026 to February 12, 2031",
+    "Mr. Rishang Sanjay Jain re-appointed as Non-Executive Independent Director for second term of 5 years from February 13, 2026 to February 12, 2031",
+    "Mr. Unmesh Breed re-appointed as Non-Executive Independent Director for second term of 5 years from June 24, 2026 to June 25, 2031",
+    "Mr. Amir Atikurrehman Mukhi re-appointed as Whole Time Director for 5 years from December 26, 2025 to December 25, 2030",
+    "Mr. Atikurraheman Daudbhai Mukhi re-appointed as Managing Director on November 12, 2024",
+    "Resignation of Mr. Humayun Ahmed Shafi Ahmed Shaikh (DIN: 00254836) as Whole Time Director w.e.f. closure of business hours on 06th August, 2025",
+    "Resignation of Mrs. Needa Altaf Mukhi (DIN: 07664451) as Whole Time Director w.e.f. closure of business hours on 06th August, 2025",
+    "Resignation of Mr. Siraj Umar Furniturewala (DIN: 00177667) as Independent Director w.e.f. closure of business hours on 13th August, 2025",
+    "Resignation of Mr. Arun Dash (DIN: 09657537) as Independent Director w.e.f. closure of business hours on 13th August, 2025",
+    "Re-appointment of Mrs. Kiran Raghavendra Awasthi (DIN: 09066721) as Independent Director for second term of 5 years w.e.f. February 13, 2026",
+    "Re-appointment of Mr. Rishang Sanjay Jain (DIN: 09065828) as Independent Director for second term of 5 years w.e.f. February 13, 2026",
+    "Re-appointment of Mr. Unmesh Breed (DIN: 09211149) as Independent Director for second term of 5 years w.e.f. June 24, 2026",
+    "Four Directors resigned from the Board as part of transition in management and control",
+    "Board and Committees reconstituted in line with change in management and control",
+    "Mrs. Needa Altaf Mukhi and Mr. Humayun Ahmed Shafi Ahmed Shaikh resigned on 6th August, 2025",
+    "Mr. Arun Dash and Mr. Siraj Umar Furniturewala resigned on 13th August, 2025",
+    "Mr. Arun Dash and Mr. Siraj Umar Furniturewala resigned on August 13, 2025.",
+    "Mr. Rishang Sanjay Jain appointed as chairperson of Stakeholders Relationship Committee w.e.f. August 13, 2025.",
+    "The Stakeholders Relationship Committee was reconstituted on August 13, 2025.",
+    "Mrs. Kiran Raghavendra Awasthi re-appointed as Non-Executive - Independent Director for second term of five years from February 13, 2026 to February 12, 2031 via postal ballot dated February 08, 2026.",
+    "Mr. Rishang Sanjay Jain re-appointed as Non-Executive - Independent Director for second term of five years from February 13, 2026 to February 12, 2031 via postal ballot dated February 08, 2026.",
+    "Mr. Unmesh Breed re-appointed as Non-Executive - Independent Director for second term of five years from June 24, 2026 to June 25, 2031 via postal ballot dated February 08, 2026.",
+    "New Board constituted pursuant to NCLT order dated April 19, 2018 approving resolution plan",
+    "Humayun Shafi Ahmed Shaikh ceased as Whole time Director w.e.f August 06, 2025",
+    "Needa Altaf Mukhi ceased as Whole time Director w.e.f August 06, 2025",
+    "Siraj Umar Furniturewala ceased as Independent Non Executive Director w.e.f August 13, 2025",
+    "Arun Das ceased as Independent Non Executive Director w.e.f August 13, 2025"
+   ],
+   "auditor_change": "M/s. Vinod C. Subramaniam & Co. appointed as Cost Auditor for FY ending March 31, 2027",
+   "promoter_holding_pct": 75,
+   "top_shareholders": [
+    {
+     "name": "Promoters",
+     "pct": 75
+    },
+    {
+     "name": "Rubberwala Housing and Infrastructure Limited",
+     "pct": null
+    },
+    {
+     "name": "Mukhi Industries Limited",
+     "pct": null
+    },
+    {
+     "name": "Mukhi Industries Limited",
+     "pct": 37.5
+    },
+    {
+     "name": "Rubberwala Housing & Infrastructure Limited",
+     "pct": 10.01
+    },
+    {
+     "name": "Tabrez Shafiahmed Shaikh",
+     "pct": 7.7
+    },
+    {
+     "name": "Parvez Shafee Ahmed Shaikh",
+     "pct": 7.7
+    },
+    {
+     "name": "Humayun Ahmed Shafi Ahmed Shaikh",
+     "pct": 7.7
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Parvez Shafee Ahmed Shaikh",
+     "role": "Chairman"
+    },
+    {
+     "name": "Priya Pandey",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Parvez Shafee Ahmed Shaikh",
+     "role": "Chairman & Whole Time Director"
+    },
+    {
+     "name": "Mr. Atikurraheman Daudbhai Mukhi",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Tabrez Shafi Ahmed Shaikh",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Amir Atikurrehman Mukhi",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. Sanjay K. Samantaray",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Priya Pandey",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Parvez Shafee Ahmed Shaikh",
+     "role": "Chairman & Whole Time Director"
+    },
+    {
+     "name": "Atikurraheman Daudbhai Mukhi",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Tabrez Shafiahmed Shaikh",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Humayun Ahmed Shafi Ahmed Shaikh",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Amir Atikurrehman Mukhi",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Needa Altaf Mukhi",
+     "role": "Additional - Whole Time Director"
+    },
+    {
+     "name": "Sanjay K. Samantaray",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Priya Pandey",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Parvez Shafee Ahmed Shaikh",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Atikurraheman Daudbhai Mukhi",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Tabrez Shafiahmed Shaikh",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Amir Atikurrehman Mukhi",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Mr. Huzefa Dawood Ghadiali",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Kiran Raghavendra Awasthi",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Rishang Sanjay Jain",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Unmesh Breed",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Tabrez Shafiahmed Shaikh",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Huma Fahim Ahmed Shaikh",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Amir Atikurrehman Mukhi",
+     "role": "Whole-Time Director"
+    },
+    {
+     "name": "Atikurraheman Daudbhai Mukhi",
+     "role": "Managing Director & Whole-Time Director"
+    },
+    {
+     "name": "Atikurraheman D. Mukhi",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Parvez Shafee Ahmed Shaikh",
+     "role": "Whole Time Director & Chairman"
+    },
+    {
+     "name": "Sanjay Samantaray",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. U V G Nayak",
+     "role": "Interim Resolution Professional (IRP)"
+    },
+    {
+     "name": "Mr. Rajendra M. Ganatra",
+     "role": "Resolution Professional (RP)"
+    },
+    {
+     "name": "Parvez Shafee Ahmed Shaikh",
+     "role": "Chairman and Whole-time director"
+    },
+    {
+     "name": "Amir Atikurrehman Mukhi",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Tabrez Shafiahmed Shaikh",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Sanjay Kumar Samantaray",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Huzefa Dawood Ghadiali",
+     "role": "Independent Non Executive Director"
+    },
+    {
+     "name": "Kiran Raghavendra Awasthi",
+     "role": "Independent Non Executive Director"
+    },
+    {
+     "name": "Rishang Sanjay Jain",
+     "role": "Independent Non Executive Director"
+    },
+    {
+     "name": "Unmesh Breed",
+     "role": "Independent Non Executive Director"
+    }
+   ],
+   "employees": 165
+  },
+  "other_notable": [
+   "24th AGM scheduled for September 28, 2026 at 11:30 A.M. through VC/OAVM",
+   "Proposed name change from 'Raj Oil Mills Limited' to 'Raj Consumer Care Limited' with consequential alterations to MOA and AOA",
+   "Ratification of remuneration of M/s. Vinod C. Subramaniam & Co., Cost Accountants for FY 2026-27 at Rs. 1,00,000 plus applicable taxes and out of pocket expenses",
+   "Approval sought for creation of charges on assets up to \u20b950 crore under Section 180(1)(a)",
+   "Register of Members and Share Transfer Books closed from September 22, 2026 to September 28, 2026",
+   "Remote e-voting period: September 25, 2026 (9:00 A.M.) to September 27, 2026 (5:00 P.M.)",
+   "Cut-off date for voting eligibility: September 21, 2026",
+   "Scrutinizer: M/s. S.K Jain & Co., Practicing Company Secretaries",
+   "RTA: Bigshare Services Pvt. Ltd.",
+   "E-voting agency: National Securities Depository Limited (NSDL)",
+   "Company proposes to change name from 'Raj Oil Mills Limited' to 'Raj Consumer Care Limited' approved by Board on July 27, 2026 and CRC on August 17, 2026",
+   "Certificate from M/s. Kailash Chand Jain & Co. confirms compliance with Regulation 45 of SEBI LODR for name change",
+   "Preferential allotment of 10,00,000 Equity Shares and 10,00,000 Convertible Warrants on July 27, 2026 increased paid-up capital to Rs. 15,98,86,840",
+   "No dividend declared for FY 2025-26 to conserve resources for future expansion",
+   "Business Responsibility and Sustainability Report not applicable for FY 2025-26",
+   "Foreign Exchange Earnings and Outgo: Nil for both FY 2025-26 and FY 2024-25",
+   "Board met 5 times during FY 2025-26 with maximum gap not exceeding 120 days",
+   "Company making payments to fixed deposit holders per NCLT Resolution Plan dated April 19, 2018; outstanding public deposits as on March 31, 2026: Rs. 44,76,411",
+   "After FY end, Company paid Rs. 3,66,854 to non-traceable fixed deposit holders",
+   "Independent Directors met separately on February 11, 2026 for performance evaluation of Non-Independent Directors, Board, Chairman and information flow quality",
+   "Board carried out annual evaluation of its own performance, Independent Directors and committees based on criteria by Nomination and Remuneration Committee",
+   "Company complies with Maternity Benefit Act, 1961; no non-compliance reported; female employees less than 50 so cr\u00e8che facilities not required",
+   "Gender-wise employee composition as on March 31, 2026: Male 154, Female 11, Transgender 0, Total 165",
+   "Inter-se transfers among Promoter Group on 22 May 2025 involving 41,16,756 equity shares (27.47% of total share capital)",
+   "Preferential allotment of 10,00,000 Equity Shares and 10,00,000 Convertible Warrants to non-promoters on 27th July 2026; paid-up capital increased from \u20b914,98,86,840 to \u20b915,98,86,840",
+   "Board approved name change to \"RAJ CONSUMER CARE LIMITED\" on 27th July 2026; name approved by CRC on 17th August 2026",
+   "No one-time settlement of loans from banks/financial institutions during the year",
+   "No case of sexual harassment reported during 2025-26",
+   "Vigil Mechanism/Whistle Blower Policy in place; no personnel denied access to Audit Committee",
+   "No fraud reported requiring statutory auditor reporting under Section 143(12)",
+   "CSR provisions not applicable as company does not fall under threshold under Section 135",
+   "Company maintains cost records as per Section 148 of Companies Act, 2013",
+   "Secretarial Audit conducted by M/s. S.K. Jain & Co. for FY ended March 31, 2026; company complied with statutory provisions",
+   "Electricity purchased: 1.84 lakh units (\u20b930.99 lakh) in FY 2025-26 vs 1.83 lakh units (\u20b929.65 lakh) in FY 2024-25",
+   "Own generation through DG: 764 units (\u20b95.48 lakh) in FY 2025-26 vs 548 units (\u20b95.01 lakh) in FY 2024-25",
+   "Furnace oil/LSHS/LDO/HSD consumption: 6042 litres (\u20b95.48 lakh) in FY 2025-26 vs 5000.46 litres (\u20b94.54 lakh) in FY 2024-25",
+   "Remuneration ratios: Executive Directors' remuneration to median employee remuneration ranges from 6.11 to 24.33",
+   "Percentage increase in remuneration: Most executive directors 39.27%, CFO 13.71%, CS 10.19%",
+   "Median remuneration increase: 12.48%",
+   "Average salary increase: KMPs (other than Chairman, MD, WTD) 11.95%, non-KMPs 2.26%",
+   "No employees drawing salary \u2265 \u20b91.02 crore p.a. or \u20b98.5 lakh per month",
+   "Company complied with Secretarial Standards SS-1 and SS-2",
+   "No agreements subsisting as specified in SEBI LODR Second Amendment Regulations, 2023",
+   "Revenue from Operations stood at \u20b9151.37 crore in FY26, registering 32.26% year-on-year growth over \u20b9114.45 crore in FY25",
+   "Profit Before Tax stood at \u20b94.95 crore in FY26, compared with \u20b92.80 crore in FY25, registering approximately 77% growth",
+   "EPS increased to 3.11 in FY26 from 1.80 in FY25",
+   "Debtors Turnover improved to 15.37 from 9.95 (54.49% change) due to revenue growth and decrease in average trade receivable",
+   "Interest Coverage Ratio improved to 9.43 from 3.87 (143.67% change) due to decrease in finance cost and increase in profit",
+   "Net Profit Margin improved to 3.08% from 2.36% (30.88% change) due to growth in profit and revenue from operations",
+   "Return on Net Worth changed to 652.04% from -69.53% due to increase in profit and change in net worth position",
+   "Board met 5 times during FY26 with maximum gap less than 120 days",
+   "Audit Committee met 4 times during FY26",
+   "Nomination and Remuneration Committee met 2 times during FY26",
+   "Company has robust ERP and supplementary IT systems integral to internal control framework",
+   "Internal Financial Controls framework documented and embedded in business processes, tested annually by management and audited by statutory auditors",
+   "The Company has not declared any dividend for the FY 2025-26.",
+   "The Company has not made any payment of Dividend historically.",
+   "There is no unclaimed/unpaid dividend liable to transfer to Investor Education and Protection Fund (IEPF).",
+   "Statutory Auditor Fees for FY 2025-26: Audit Fees Rs. 7,50,000; Tax Audit Fees Rs. 2,50,000; Other Services Nil; Reimbursement of Expenses Nil; Total Rs. 10,00,000 (Rs. 10 Lakhs).",
+   "No complaints received under the Sexual Harassment of Women at Workplace Act during FY 2025-26."
+  ],
+  "outlook": [
+   {
+    "statement": "The proposed change of name is being undertaken in consonance with the new strategy and the business plan to carry on the business more advantageously under the new brand name of RCCL.",
+    "period": "Future"
+   },
+   {
+    "statement": "India's economic growth remained robust during the year, supported by strong domestic demand, resilient private consumption and sustained public investment. The outlook remains resilient, with consumption, investment, infrastructure spending and structural reforms expected to support medium-term growth, although geopolitical tensions, trade uncertainties and energy price volatility remain key risks.",
+    "period": "medium-term"
+   },
+   {
+    "statement": "ROML remains focused on building sustainable growth by strengthening its presence in the edible oil and food essentials market. The Company expects continued opportunities from evolving consumer preferences, increasing demand for branded products, rural and urban consumption growth, and the expanding adoption of organised retail, E-Commerce and Quick Commerce. Going forward, ROML will continue to focus on expanding market reach, strengthening its distribution network, improving manufacturing and supply chain efficiencies, and enhancing brand and consumer engagement. The Company will also leverage digital platforms and data-driven insights to respond more effectively to changing consumption patterns and emerging market opportunities. The Company remains committed to prudent cost management, operational efficiency and disciplined execution while navigating factors such as commodity price volatility, competitive intensity, inflationary pressures and changing market conditions.",
+    "period": "Going forward"
+   }
+  ],
+  "risks": [
+   "Certain Fixed Deposit holders are not traceable and the Company has not been able to make payment for those Fixed Deposit Holders.",
+   "Geopolitical tensions",
+   "Trade uncertainties",
+   "Energy price volatility",
+   "Elevated energy prices",
+   "Tighter financial conditions",
+   "Softer global demand",
+   "commodity price volatility",
+   "competitive intensity",
+   "inflationary pressures",
+   "changing market conditions",
+   "availability and volatility in the prices of raw materials",
+   "changes in consumer demand and market conditions",
+   "competitive dynamics",
+   "changes in governmental policies, laws and regulations",
+   "taxation and regulatory regimes",
+   "foreign exchange fluctuations",
+   "interest rates",
+   "supply chain disruptions",
+   "economic and business conditions in India and other markets in which the Company operates",
+   "Business risk evaluation and management is an ongoing process within the Company. The assessment is periodically examined by the Board.",
+   "Non-traceability of unsecured operational creditors and public fixed deposit holders leading to returned cheques",
+   "Pending application to NCLT for directions on outstanding payments to non-traceable parties",
+   "Edible Oil - Timely availability and also non-availability of good quality base oils from across the globe could negate the qualitative and quantitative production of the various products of the Company. Volatility in prices of crude oil and base oil is another major risk for this segment."
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Outstanding Public Deposits as per NCLT Resolution Plan",
+    "amount_cr": 0.4476411
+   },
+   {
+    "nature": "Income Tax disputes",
+    "amount_cr": 1.6584
+   },
+   {
+    "nature": "GST dispute",
+    "amount_cr": 0.56
+   },
+   {
+    "nature": "Sales Tax (VAT & CST) disputes",
+    "amount_cr": 125.0544
+   },
+   {
+    "nature": "Provident Fund disputes",
+    "amount_cr": 0.7204
+   },
+   {
+    "nature": "Outstanding payments to non-traceable unsecured operational creditors and public fixed deposit holders",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income Tax",
+    "amount_cr": 1.6584
+   },
+   {
+    "nature": "GST",
+    "amount_cr": 0.56
+   },
+   {
+    "nature": "VAT & CST",
+    "amount_cr": 125.0136
+   },
+   {
+    "nature": "Provident Fund",
+    "amount_cr": 0.7204
+   }
+  ],
+  "litigation": [
+   "Company filed Application to Hon'ble NCLT seeking directions for payments to non-traceable unsecured operational creditors and public fixed deposits (letter dated September 30, 2022)",
+   "There are no significant and material orders passed by the Regulators/Courts that would impact the going concern status of the Company and its future operations.",
+   "There were no instances of non-compliance, penalties or strictures imposed on the Company by the Stock Exchanges, SEBI or any statutory authority on any matter related to the capital markets during the last three financial years.",
+   "Income Tax disputes pending at Honorable Supreme Court for FY 2008-09 (Rs 28.19 lakhs), FY 2009-10 (Rs 108.75 lakhs), FY 2012-13 (Rs 0.50 lakhs), FY 2017-18 (Rs 15.12 lakhs), FY 2018-19 (Rs 7.25 lakhs), FY 2019-20 (Rs 6.03 lakhs)",
+   "GST dispute of Rs 56.00 lakhs for 2023-24 pending at Goods and Services Tax Appellate Tribunal",
+   "Sales Tax (VAT & CST) disputes pending at Honorable Supreme Court for multiple financial years from FY 03-04 to FY 17-18 totalling Rs 12,505.44 lakhs",
+   "Provident Fund disputes pending at National Company Law Tribunal for FY 2008-09 to FY 2017-18 (Rs 60.86 lakhs) and FY 2002-03 to FY 2012-13 (Rs 11.18 lakhs)",
+   "NCLT matter regarding outstanding payments to unsecured operational creditors and public fixed deposit holders (Rs 57.73 lakhs outstanding as on March 31, 2026)",
+   "Corporate Insolvency Resolution Process (CIRP) initiated by NCLT order dated July 10, 2017",
+   "NCLAT stay proceedings on NCLT order dated July 2, 2018, disposed off March 20, 2019",
+   "Application to NCLT for directions on payments to non-traceable unsecured operational creditors and public fixed deposit holders (letter dated September 30, 2022)",
+   "Income Tax disputes pending at Honorable Supreme Court for multiple assessment years (FY 2008-09 to FY 2019-20)",
+   "GST dispute pending at Goods & Service Tax Appellate tribunal for FY 2023-24",
+   "VAT & CST disputes pending at Honorable Supreme Court for multiple financial years (FY 03-04 to FY 17-18)",
+   "Provident Fund disputes pending at National Company Law Tribunal for FY 2008-09 to FY 2017-18 and FY 2002-03 to FY 2012-13",
+   "Income Tax Department raised demand of \u20b9338.63 crores, reduced to \u20b92.58 crores by NCLT during CIRP, challenged in Supreme Court; rectification order passed as per NCLT order dated 27.09.2024"
+  ],
+  "dividend_per_share": 0,
+  "related_party": [
+   {
+    "party": "M/s. Rubberwala Housing & Infrastructure Limited",
+    "nature": "Promoter Company - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "M/s. Mukhi Industries Limited",
+    "nature": "Promoter Company - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Amir Atikurrehman Mukhi",
+    "nature": "Whole-Time Director - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Atikurraheman Daudbhai Mukhi",
+    "nature": "Whole-Time Director - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Humayun Ahmed Shafi Ahmed Shaikh",
+    "nature": "Whole-Time Director - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Parvez Shafee Ahmed Shaikh",
+    "nature": "Chairman & Whole-Time Director - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Tabrez Shafiahmed Shaikh",
+    "nature": "Whole-Time Director - Unsecured loan given to the Company",
+    "amount_cr": 1.6
+   },
+   {
+    "party": "Related Parties as defined under the Companies Act, 2013 and Regulation 23 of the Listing Regulations",
+    "nature": "All transactions entered into with the Related Parties during the financial year were on arm's length basis and ordinary course of business as per the provisions of Section 188 of the Companies Act, 2013.",
+    "amount_cr": null
+   },
+   {
+    "party": "Mukhi Industries Limited",
+    "nature": "Enterprise in which directors have significant influence; Borrowings obtained and repaid; Outstanding balance",
+    "amount_cr": 12.225
+   },
+   {
+    "party": "Rubberwala Housing & Infrastructure Limited",
+    "nature": "Enterprise in which directors have significant influence; Outstanding borrowing balance",
+    "amount_cr": 0.1442
+   },
+   {
+    "party": "Parvez Shafee Ahmed Shaikh",
+    "nature": "Chairman and Whole-time director; Director's remuneration; Borrowings obtained and repaid; Outstanding balance",
+    "amount_cr": 11.96
+   },
+   {
+    "party": "Tabrez Shafiahmed Shaikh",
+    "nature": "Whole time Director; Director's remuneration; Borrowings repaid; Outstanding balance",
+    "amount_cr": 0
+   },
+   {
+    "party": "Atikurraheman Daudbhai Mukhi",
+    "nature": "Managing Director; Director's remuneration; Borrowings obtained and repaid",
+    "amount_cr": 0
+   },
+   {
+    "party": "Amir Atikurrehman Mukhi",
+    "nature": "Whole time Director; Director's remuneration",
+    "amount_cr": 0
+   },
+   {
+    "party": "Humayun Shafi Ahmed Shaikh",
+    "nature": "Whole time Director (ceased w.e.f August 06, 2025); Director's remuneration; Borrowings obtained and repaid; Outstanding balance",
+    "amount_cr": 0
+   },
+   {
+    "party": "Needa Altaf Mukhi",
+    "nature": "Whole time Director (ceased w.e.f August 06, 2025); Director's remuneration",
+    "amount_cr": 0
+   },
+   {
+    "party": "Sanjay Kumar Samantaray",
+    "nature": "Chief Financial Officer; Salary expense",
+    "amount_cr": 0.503
+   },
+   {
+    "party": "Priya Pandey",
+    "nature": "Company Secretary; Salary expense",
+    "amount_cr": 0.1101
+   },
+   {
+    "party": "Huzefa Dawood Ghadiali",
+    "nature": "Independent Non Executive Director; Director's sitting fees",
+    "amount_cr": 0.0075
+   },
+   {
+    "party": "Siraj Umar Furniturewala",
+    "nature": "Independent Non Executive Director (ceased w.e.f August 13, 2025); Director's sitting fees",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Kiran Raghavendra Awasthi",
+    "nature": "Independent Non Executive Director; Director's sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Rishang Sanjay Jain",
+    "nature": "Independent Non Executive Director; Director's sitting fees",
+    "amount_cr": 0.01
+   },
+   {
+    "party": "Unmesh Breed",
+    "nature": "Independent Non Executive Director; Director's sitting fees",
+    "amount_cr": 0.0075
+   },
+   {
+    "party": "Arun Das",
+    "nature": "Independent Non Executive Director (ceased w.e.f August 13, 2025); Director's sitting fees",
+    "amount_cr": 0.005
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company has no material subsidiary."
+   }
+  ]
+ }
+}
