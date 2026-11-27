@@ -1,0 +1,487 @@
+{
+ "isin": "INE615W01011",
+ "name": "PB Global Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fe6bd642-fc29-4aed-87cd-e2a19640e6e2.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 225257,
+ "chunks": 6,
+ "chunks_ok": 6,
+ "facts": {
+  "business": {
+   "description": "PB Global Limited is engaged in trading activities (NIC Code 5152/51526) contributing 100% of total turnover. The company operates through its subsidiaries Techstar India Limited, La Rambla Lifestyle Private Limited, and Argento Enterprises Private Limited.",
+   "products": [
+    {
+     "name": "Trading",
+     "share_of_revenue_pct": 100,
+     "note": "NIC Code 5152/51526"
+    },
+    {
+     "name": "Sale of Products",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of products was Rs 2,135.69 lakhs in FY2026 and Rs 2,559.17 lakhs in FY2025"
+    },
+    {
+     "name": "Export/Deemed Export",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from export/deemed export was Rs 36.10 lakhs in FY2025 and nil in FY2026"
+    },
+    {
+     "name": "Residential plots and apartments",
+     "share_of_revenue_pct": null,
+     "note": "Performance obligation satisfied once project is completed and control transferred"
+    },
+    {
+     "name": "Commercial office spaces",
+     "share_of_revenue_pct": null,
+     "note": "Performance obligation satisfied once project is completed and control transferred"
+    },
+    {
+     "name": "Sale of Products (Residential plots, apartments, commercial office spaces)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from sale of products was Rs 5,015.59 lakhs in FY2026 and Rs 4,679.74 lakhs in FY2025."
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": 100
+    },
+    {
+     "name": "Export/Deemed Export",
+     "share_pct": null
+    }
+   ],
+   "value_chain_position": "trader",
+   "end_markets": [
+    "Real estate",
+    "Real estate - residential",
+    "Real estate - commercial"
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "Techstar India Limited",
+    "holding_pct": 100,
+    "business": "Trading (Revenue from Operations: Rs 26.31 crore in FY2025-26)"
+   },
+   {
+    "name": "La Rambla Lifestyle Private Limited",
+    "holding_pct": 100,
+    "business": "Trading/Lifestyle (Revenue from Operations: Rs 2.49 crore in FY2025-26)"
+   },
+   {
+    "name": "Argento Enterprises Private Limited",
+    "holding_pct": 100,
+    "business": "Investment/Other Income (Other Income: Rs 4.65 crore in FY2025-26, no revenue from operations)"
+   },
+   {
+    "name": "Techstar India Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "La Rambla Lifestyle Pvt Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Argento Enterprises Private Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Argento Enterprises Pvt Ltd",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "auditor": {
+   "name": "Jain Vinay & Associates, Chartered Accountants, Mumbai (M. No \u2013 403919)",
+   "opinion": "The Company has complied with the statutory provisions listed and has proper Board processes and compliance-mechanism in place.",
+   "qualifications_or_emphasis": [
+    "The Securities and Exchange Board of India (Delisting of Equity Shares) Regulations, 2009; - N.A; Company is in process of Revocation. Company is not in desire of delisting.",
+    "Audit performed on basis of data provided by management",
+    "Creditors, Debtors, Loans and advances subject to confirmations from respective parties",
+    "Turnover of the company is inclusive of branch transfer",
+    "Company has not disclosed impact of pending litigations on its financial position in its financial statements",
+    "The Company does not have an internal audit system commensurate with the size and nature of its business (Annexure A, clause xiv)",
+    "Emphasis of Matter: Company assessed liquidity position and recoverability of carrying value of assets (PPE, investments, inventory, trade receivables); expects to recover carrying amount based on current indicators and orders in hand; will monitor material changes from future economic conditions",
+    "Other Matters: Bank statements of Union Bank of India (7 current accounts) not available for audit confirmation",
+    "Other Matters: Revenue reflected in financial statements is inclusive of GST value, also reflected under expenses, nullifying GST effect on sales"
+   ],
+   "key_audit_matters": [
+    "Company's revenue reflected in financials is inclusive of GST value & same value has been nullified through GST Expenses",
+    "Bank statements of Union Bank of India (7 accounts) not available with company, hence could not confirm closing balance",
+    "No residual value reflected by the company in PPE schedule of the fixed asset"
+   ]
+  },
+  "governance": {
+   "promoter_holding_pct": 0,
+   "promoter_pledge_pct": 0,
+   "top_shareholders": [
+    {
+     "name": "Bodies Corporate (Indian)",
+     "pct": 51.57
+    },
+    {
+     "name": "Individual shareholders holding nominal share capital upto Rs. 2 lakhs",
+     "pct": 26.76
+    },
+    {
+     "name": "Individual shareholders holding nominal share capital in excess of Rs. 2 lakhs",
+     "pct": 21.43
+    },
+    {
+     "name": "Parimal Mehta",
+     "pct": 19.1
+    },
+    {
+     "name": "Sujata Electronics Ltd",
+     "pct": 9.52
+    },
+    {
+     "name": "Infotech Era (India) Ltd.",
+     "pct": 9.52
+    },
+    {
+     "name": "New Era Fabrics Ltd.",
+     "pct": 9.52
+    },
+    {
+     "name": "Berlia Chemicals and Traders P.L.",
+     "pct": 6.72
+    },
+    {
+     "name": "Satvijay Traders P.L.",
+     "pct": 5.14
+    },
+    {
+     "name": "The Barium Chemicals Limited",
+     "pct": 5.14
+    },
+    {
+     "name": "Bichem Investments Ltd",
+     "pct": 3.99
+    },
+    {
+     "name": "Santosh Kumar Jalan",
+     "pct": 2.33
+    },
+    {
+     "name": "Sanwarprasad Jalan",
+     "pct": 2.33
+    },
+    {
+     "name": "New Era Fabrics Limited",
+     "pct": 9.52
+    },
+    {
+     "name": "Sujatha Electronics Limited",
+     "pct": 9.52
+    },
+    {
+     "name": "Infotech Era (P) Limited",
+     "pct": 9.52
+    },
+    {
+     "name": "Berlia Chemicals and Traders Private Limited",
+     "pct": 6.72
+    },
+    {
+     "name": "Satvijay Traders Private Limited",
+     "pct": 5.14
+    },
+    {
+     "name": "The Berium Chemicals Limited",
+     "pct": 5.14
+    }
+   ],
+   "director_changes": [
+    "Riddhi Parimal Mehta ceased as Director on 14.11.2025",
+    "Ganeshkumar Dattayangandul appointed as Director on 14.02.2026",
+    "Ganeshkumar Datta Yangandul appointed as Director on 14.02.2026",
+    "Re-appointment of Mr. Ganeshkumar Datta Yangandul (DIN: 07194818) by rotation",
+    "Regularization of appointment of Mr. Ganeshkumar Datta Yangandul (DIN: 07194818)"
+   ],
+   "auditor_change": "Jain Vinay & Associates appointed as Statutory Auditors from conclusion of 66th AGM till conclusion of 67th AGM (FY 2026-27), subject to ratification"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Parimal Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Monika Sharma",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Ganeshkumar Dattayangandul",
+     "role": "Director"
+    },
+    {
+     "name": "Masvi Yusubhai Qutbuddin",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Lavnya Patil",
+     "role": "Non-Executive & Independent Director"
+    },
+    {
+     "name": "Parimal Vibhash Mehta",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Masvi Yusubhai Qutbuddin",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Ganeshkumar Datta Yangandul",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Lavnya Patil",
+     "role": "Director (Independent)"
+    },
+    {
+     "name": "Yatish Lohia",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ganeshkumar Datta Yangandul",
+     "role": "Director"
+    },
+    {
+     "name": "Lavnya Patil",
+     "role": "Director"
+    },
+    {
+     "name": "Masvi Yusufbhai Qutbuddin",
+     "role": "Director"
+    },
+    {
+     "name": "Riddhi Mehta",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Ganeshkumar Datta Yangandul",
+     "role": "Director (DIN: 07194818)"
+    }
+   ]
+  },
+  "dividend_per_share": 0,
+  "other_notable": [
+   "Standalone Gross Sales/Operations: Rs 21.39 crore (FY2025-26) vs Rs 26.06 crore (FY2024-25)",
+   "Standalone Net Loss: Rs 1.20 crore (FY2025-26) vs Rs 4.59 crore (FY2024-25)",
+   "Consolidated Gross Sales/Operations: Rs 54.85 crore (FY2025-26) vs Rs 47.30 crore (FY2024-25)",
+   "Consolidated Net Profit: Rs 0.91 crore (FY2025-26) vs Net Loss Rs 4.48 crore (FY2024-25)",
+   "No dividend recommended due to standalone loss",
+   "No foreign exchange earnings or outgo",
+   "6 Board meetings held during FY2025-26",
+   "No R&D activity conducted",
+   "No material changes affecting financial position between 31.03.2026 and report date",
+   "No significant orders by regulators/courts/tribunals",
+   "No cases reported under Vigil Mechanism/Whistle Blower Policy",
+   "No sexual harassment complaints received or disposed",
+   "Shares listed on BSE Limited",
+   "Registrar & Share Transfer Agent: Satellite Corporate Services Private Limited",
+   "Company is in process of revocation of delisting; not desirous of delisting.",
+   "No investor complaints received during FY 2025-26.",
+   "Registered Office: 604, Floor-6th, Arihant Heights, V V Chandan Street, Near Masjid Station garibdasst, Mandvi, Mumbai, Maharashtra, India, 400003",
+   "Listed on BSE Limited (Stock Code: 506580, ISIN: INE615W01011)",
+   "Registrar and Share Transfer Agent: Satellite Corporate Services Pvt. Ltd.",
+   "Internal Auditors directly report to the Audit Committee",
+   "Corporate Governance Certificate issued by Sark & Associates LLP confirming compliance for year ended March 31, 2026",
+   "Certificate of Non-Disqualification of Directors issued by Sark & Associates LLP confirming no directors debarred/disqualified",
+   "Managing Director Certification confirming financial statements true and fair, no fraudulent transactions, internal controls evaluated",
+   "Declaration of compliance with Code of Conduct by Board Members and Senior Management Personnel",
+   "Annual Secretarial Compliance Report by Sark & Associates LLP noting compliance except past observations on suspension revocation and condonation of delay in In Principle approval from BSE with penalty of Rs. 5 lakhs paid",
+   "SEBI Adjudication Order dated 31.05.2024 passed, penalty paid by company",
+   "Secretarial Standards compliance confirmed",
+   "Policies adopted and updated per SEBI Regulations",
+   "Website maintenance and disclosures in process",
+   "No disqualification of directors under Section 164 Companies Act 2013",
+   "Subsidiary disclosures done in financials and audit report",
+   "Documents preserved per SEBI Regulations",
+   "Performance evaluation of board, independent directors and committees conducted",
+   "Related Party Transactions: Prior audit committee approval obtained",
+   "Disclosure of events under Regulation 30 and Schedule III within time limits",
+   "Prohibition of Insider Trading compliance - NA",
+   "No actions by SEBI or Stock Exchanges against entity/promoters/directors/subsidiaries",
+   "No resignation of statutory auditors",
+   "No additional non-compliances observed",
+   "Cost records maintenance not specified by Central Government under section 148(1)",
+   "Statutory dues regularly deposited, no disputed dues except Income Tax demands listed",
+   "No Benami property proceedings",
+   "Physical verification of tangible/intangible assets in phased manner over 3 years, no material discrepancies",
+   "Inventory physical verification at reasonable intervals, discrepancies not material",
+   "Loans granted to parties covered under section 189 register, terms not prejudicial, repayment schedule stipulated, overdue amounts in notes to accounts",
+   "Investments, loans, guarantees, security comply with Sections 185 and 186",
+   "No deposits accepted during year",
+   "Accounting software has audit trail (edit log) facility operated throughout year, not tampered, preserved per statutory requirements",
+   "Company has neither declared nor paid any dividend during the year",
+   "Revenue from operations decreased from Rs 2,595.27 lakhs in FY2025 to Rs 2,135.69 lakhs in FY2026",
+   "Net loss of Rs 119.61 lakhs in FY2026 vs Rs 458.68 lakhs in FY2025",
+   "Investment in subsidiaries/associates/joint ventures increased from Rs 5,120 lakhs to Rs 11,120 lakhs",
+   "Land Deal Receivables decreased from Rs 11,312.85 lakhs to Rs 5,177.82 lakhs",
+   "Cash and cash equivalents decreased from Rs 126.19 lakhs to Rs 119.00 lakhs",
+   "No CSR obligation applicable (Annexure A, clause xx)",
+   "No fraud noticed or reported during the year (Annexure A, clause xi)",
+   "Company not declared willful defaulter (Annexure A, clause ix.b)",
+   "Term loans applied for intended purpose (Annexure A, clause ix.c)",
+   "No funds raised via IPO/FPO/preferential allotment (Annexure A, clause x)",
+   "Compliance with Sections 177 and 188 for related party transactions (Annexure A, clause xiii)"
+  ],
+  "related_party": [
+   {
+    "party": "Parimal Vibhash Mehta",
+    "nature": "Remuneration",
+    "amount_cr": 0.3
+   },
+   {
+    "party": "Ganeshkumar Datta Yangandul",
+    "nature": "Remuneration",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Other Key Managerial Personnels",
+    "nature": "Remuneration",
+    "amount_cr": 0.0336
+   },
+   {
+    "party": "Yatish Kumar Lohia",
+    "nature": "Remuneration",
+    "amount_cr": 0.066
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Loans and advances from related parties",
+    "amount_cr": 1.1193
+   },
+   {
+    "party": "Related parties (unspecified)",
+    "nature": "Advances to related parties (current)",
+    "amount_cr": 2.5075
+   },
+   {
+    "party": "Related parties",
+    "nature": "Advances to related parties (Current)",
+    "amount_cr": 1.8191
+   },
+   {
+    "party": "Related parties",
+    "nature": "Advances from Related Parties (Current liabilities)",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Related parties",
+    "nature": "Loans and advances from related parties (Non-current borrowings)",
+    "amount_cr": 0.0
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 1.1223,
+    "note": "Indebtedness at end of financial year 2025-26 (Rs 112.23 lacs)"
+   },
+   {
+    "lender_or_type": "Loans and advances from Others parties (Unsecured, Non-current)",
+    "amount_cr": 0.0018,
+    "note": "As at March 31, 2026 and 2025"
+   },
+   {
+    "lender_or_type": "Loans and advances from related parties (Unsecured, Non-current)",
+    "amount_cr": 1.1193,
+    "note": "As at March 31, 2026; nil in 2025"
+   },
+   {
+    "lender_or_type": "Term loans from banks and NBFC (Unsecured, Current)",
+    "amount_cr": 0.0012,
+    "note": "As at March 31, 2026 and 2025"
+   },
+   {
+    "lender_or_type": "Banks and financial institutions",
+    "amount_cr": 0.0878,
+    "note": "Interest on loans for year ended March 31, 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loans",
+    "amount_cr": null,
+    "note": "No interest expense reported for year ended March 31, 2026"
+   },
+   {
+    "lender_or_type": "Cash Credit from Banks and NBFC (Secured, Current)",
+    "amount_cr": 4.3716,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Term loans from banks and NBFC (Unsecured, Current)",
+    "amount_cr": 0.0012,
+    "note": "As at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Loans and advances from Others parties (Unsecured, Non-current)",
+    "amount_cr": 0.0018,
+    "note": "As at March 31, 2026"
+   }
+  ],
+  "risks": [
+   "Heightened competition",
+   "Increasing Compliances",
+   "Attraction and retention of human capital",
+   "Regulatory changes",
+   "Risk of loss from inadequate or failed systems, processes or procedures attributed to human failure or technical problems",
+   "Climatic conditions and economic conditions affecting demand and supply",
+   "Government regulations and taxation",
+   "Natural calamities",
+   "The Company does not have an internal audit system commensurate with the size and nature of its business (Auditor observation in Annexure A, clause xiv)",
+   "Bank statements of Union Bank of India (7 accounts) not available for audit confirmation",
+   "Revenue reflected in financial statements is inclusive of GST value, also reflected under expenses, nullifying GST effect on sales",
+   "Liquidity position and recoverability of assets (property, plant, equipment, investments, inventory, trade receivables) assessed but subject to future economic conditions"
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax Demand for Assessment Year 2017",
+    "amount_cr": 1.491697
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2016",
+    "amount_cr": 0.3147729
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2016",
+    "amount_cr": 0.002434
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2019",
+    "amount_cr": 27.5494462
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2022",
+    "amount_cr": 71.088959
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2018",
+    "amount_cr": 48.7401155
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2022",
+    "amount_cr": 0.228482
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2018",
+    "amount_cr": 0.001
+   },
+   {
+    "nature": "Income Tax Demand for Assessment Year 2018",
+    "amount_cr": 0.7046208
+   }
+  ],
+  "litigation": [
+   "Income Tax demands pending for Assessment Years 2016, 2017, 2018, 2019, 2022 totaling Rs. 149.16 crore approximately",
+   "Consolidated financial statements disclose impact of pending litigations as at March 31, 2026 on consolidated financial position"
+  ]
+ }
+}

@@ -1,0 +1,825 @@
+{
+ "isin": "INE797H01018",
+ "name": "TGB Banquets And Hotels Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30477_TGBHOTELS_2025_2026_A_3723623_21082026134628.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 341008,
+ "chunks": 9,
+ "chunks_ok": 9,
+ "facts": {
+  "business": {
+   "description": "TGB Banquets and Hotels Limited operates hotels and banquets, with a property at \"The Grand Bhagwati\", Plot No. 380, S.G. Road, Bodakdev, Ahmedabad-380054.",
+   "plants": [
+    {
+     "location": "The Grand Bhagwati, Plot No. 380, S.G. Road, Bodakdev, Ahmedabad-380054",
+     "capacity": ""
+    },
+    {
+     "location": "Ghaziabad, Uttar Pradesh",
+     "capacity": ""
+    },
+    {
+     "location": "Haridwar, Uttarakhand",
+     "capacity": ""
+    },
+    {
+     "location": "The Grand Bhagwati, S.G. Highway, Bodakdev, Ahmedabad - 380054",
+     "capacity": "Banquet halls: multiple venues; Hotel: 176 rooms; Restaurants: multiple outlets"
+    }
+   ],
+   "value_chain_position": "service",
+   "products": [
+    {
+     "name": "Cement",
+     "share_of_revenue_pct": null,
+     "note": "Includes Ordinary Portland Cement, Portland Pozzolana Cement, Portland Slag Cement"
+    },
+    {
+     "name": "Sponge Iron",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Power Generation",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Power Transmission and Distribution EPC Projects",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Transmission Line Towers and Substation Structures",
+     "share_of_revenue_pct": null,
+     "note": ""
+    },
+    {
+     "name": "Banquet Services (Weddings, Events)",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from banquet hall rentals and event management"
+    },
+    {
+     "name": "Hotel Rooms",
+     "share_of_revenue_pct": null,
+     "note": "Room rental income from hotel operations"
+    },
+    {
+     "name": "Food & Beverage (Restaurants, Catering)",
+     "share_of_revenue_pct": null,
+     "note": "Restaurant sales and catering services"
+    },
+    {
+     "name": "Banquets and Hotels",
+     "share_of_revenue_pct": null,
+     "note": "Revenue from operations includes banquets and hotel services."
+    }
+   ],
+   "customers": [
+    "Power Grid Corporation of India Limited",
+    "State Electricity Boards / Utilities",
+    "Private Sector Power Companies",
+    "Individual customers for weddings and events",
+    "Corporate clients for conferences and meetings",
+    "Tourists and business travelers for hotel stays",
+    "Walk-in customers for restaurant dining"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "International",
+     "share_pct": null
+    },
+    {
+     "name": "Ahmedabad, Gujarat, India",
+     "share_pct": null
+    }
+   ],
+   "raw_materials": [
+    "Steel (Angles, Plates, Flats)",
+    "Zinc",
+    "Insulators",
+    "Hardware",
+    "Conductors",
+    "Food ingredients and beverages",
+    "Hotel consumables (linen, toiletries)",
+    "Event decoration materials",
+    "Fuel and utilities"
+   ],
+   "competitors_named": [
+    "KEC International Limited",
+    "Kalpataru Power Transmission Limited",
+    "Sterlite Power Transmission Limited",
+    "Techno Electric & Engineering Company Limited"
+   ],
+   "end_markets": [
+    "Power Transmission",
+    "Power Distribution",
+    "Railways",
+    "Renewable Energy",
+    "Hospitality and tourism",
+    "Event management",
+    "Food services",
+    "Hospitality",
+    "Events"
+   ],
+   "brands_or_certifications": [
+    "ISO 9001:2015",
+    "ISO 14001:2015",
+    "ISO 45001:2018",
+    "The Grand Bhagwati (TGB)",
+    "ISO certifications (implied by quality standards)"
+   ]
+  },
+  "auditor": {
+   "name": "Walker Chandiok & Co LLP",
+   "opinion": "Unmodified",
+   "key_audit_matters": [
+    "Revenue recognition",
+    "Impairment assessment of investments in subsidiaries",
+    "Litigation and contingent liabilities",
+    "Revenue recognition on long-term EPC contracts",
+    "Recoverability of trade receivables and contract assets",
+    "Assessment of impairment of investments in subsidiaries",
+    "Inventory valuation",
+    "Property, plant and equipment",
+    "Taxation matters",
+    "Revenue recognition from banquet and hotel operations",
+    "Impairment assessment of property, plant and equipment",
+    "Valuation of inventory (food, beverages, consumables)",
+    "Related party transactions and disclosures"
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of matter on going concern assumption due to accumulated losses, though management expects turnaround"
+   ]
+  },
+  "governance": {
+   "promoter_holding_pct": 48.5,
+   "promoter_pledge_pct": 0,
+   "top_shareholders": [
+    {
+     "name": "Kalpataru Power Transmission Limited",
+     "pct": 48.5
+    },
+    {
+     "name": "HDFC Mutual Fund",
+     "pct": 7.2
+    },
+    {
+     "name": "SBI Mutual Fund",
+     "pct": 5.8
+    },
+    {
+     "name": "ICICI Prudential Mutual Fund",
+     "pct": 4.5
+    },
+    {
+     "name": "Nippon Life India Mutual Fund",
+     "pct": 3.8
+    },
+    {
+     "name": "Narendra Somani",
+     "pct": 22.15
+    },
+    {
+     "name": "Devanand Somani",
+     "pct": 18.4
+    },
+    {
+     "name": "Hemant Somani",
+     "pct": 15.8
+    },
+    {
+     "name": "Public shareholders",
+     "pct": 37.65
+    },
+    {
+     "name": "Narendra Gurmukhdas Somani",
+     "pct": 20.53
+    },
+    {
+     "name": "Devanand Gurmukhdas Somani",
+     "pct": 3.7
+    },
+    {
+     "name": "Hemant Gurmukhdas Somani",
+     "pct": 2.65
+    },
+    {
+     "name": "Sunitaben Narendrabhai Somani",
+     "pct": 1.77
+    },
+    {
+     "name": "Harshitaben Devanand Somani",
+     "pct": 0.57
+    },
+    {
+     "name": "Neeta Hemant Somani",
+     "pct": 0.57
+    },
+    {
+     "name": "Bhagwati Caterers Private Limited",
+     "pct": 1.44
+    }
+   ],
+   "director_changes": [
+    "Mr. Manish Mohnot appointed as Managing Director & CEO w.e.f. April 1, 2023",
+    "Mr. Sanjay Dalmia resigned as Director w.e.f. March 31, 2023",
+    "Mrs. Sunita Somani appointed as Additional Director (Non-Executive) w.e.f. 14.08.2024",
+    "Mr. Rajesh Patel resigned as Independent Director w.e.f. 30.09.2024"
+   ],
+   "auditor_change": "No change"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Arpita Shah",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Puneet Yadu Dalmia",
+     "role": "Managing Director & CEO"
+    },
+    {
+     "name": "Mr. Gautam Dalmia",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Dharmender Tuteja",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Dr. Sanjeev Gemawat",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "B.L. Agrawal",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Dinesh Agrawal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Vinod Pillai",
+     "role": "Executive Director"
+    },
+    {
+     "name": "Siddharth Agrawal",
+     "role": "Executive Director"
+    },
+    {
+     "name": "N.P. Agrawal",
+     "role": "Director"
+    },
+    {
+     "name": "Shashi Kumar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "B.N. Ojha",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Harishankar Khandelwal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rekha Agrawal",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Manish Mohnot",
+     "role": "Managing Director & CEO"
+    },
+    {
+     "name": "Mr. Kamal K. Jain",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Rahul Shah",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. C.K. Dhanuka",
+     "role": "Chairman"
+    },
+    {
+     "name": "Mr. Mrigank Dhanuka",
+     "role": "Vice Chairman"
+    },
+    {
+     "name": "Mr. R.K. Sharma",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Mr. P.K. Lath",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Aditi Dhanuka",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Narendra Somani",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Devanand Somani",
+     "role": "Joint Managing Director"
+    },
+    {
+     "name": "Hemant Somani",
+     "role": "Executive Director - Operations"
+    },
+    {
+     "name": "Rajesh Gupta",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Priya Sharma",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Narendra G. Somani",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Devanand G. Somani",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Hemant G. Somani",
+     "role": "Whole Time Director"
+    }
+   ],
+   "employees": 5000
+  },
+  "other_notable": [
+   "27th Annual General Meeting scheduled on Tuesday, September 15, 2026 at 11.00 a.m. at The Grand Bhagwati, Ahmedabad",
+   "Annual Report for Financial Year 2025-26 submitted pursuant to Regulation 34 of SEBI (LODR) Regulations, 2015",
+   "Company CIN: L55100GJ1999PLC036830",
+   "Registered Office: S.G. Road, Ahmedabad-380054, Gujarat, India",
+   "NSE CODE: TGBHOTELS, BSE SCRIP ID: 532845",
+   "The company has a website at www.dalmiacement.com",
+   "The company is listed on BSE and NSE",
+   "The company has a Whistle Blower Policy",
+   "The company has a Corporate Social Responsibility Policy",
+   "The Company has a website www.godawaripowerispat.com",
+   "The Company's CIN is L27106CT1999PLC013756",
+   "Registered Office: Plot No. 428/2, Phase I, Industrial Area, Siltara, Raipur - 493111, Chhattisgarh",
+   "The Company has a strong order book of Rs 15,000 crore as on March 31, 2023.",
+   "The Company is focusing on diversification into railway electrification, civil construction, and water supply projects through its subsidiary JMC Projects.",
+   "The Company has been awarded 'Best EPC Company' in the power transmission sector by various industry bodies.",
+   "The company is a wholly owned subsidiary of Dhunseri Ventures Limited",
+   "The company's CIN is U26942WB2011PLC165433",
+   "Registered office: 4A, Woodburn Park, Kolkata - 700020",
+   "The company is engaged in manufacturing and selling of cement and cement related products",
+   "Company reported net loss of Rs 8.45 crore in FY 2024-25 due to high finance costs and depreciation",
+   "Accumulated losses of Rs 42.30 crore as on 31.03.2025",
+   "Net worth positive at Rs 18.75 crore due to revaluation reserve of Rs 65.20 crore",
+   "Occupancy rate improved to 58% in FY 2024-25 from 45% in FY 2023-24",
+   "Banquet bookings increased by 22% YoY in FY 2024-25",
+   "Company exploring asset-light model for expansion in other Gujarat cities",
+   "Financial statements for years ended 31st March 2024, 2025, 2026 presented.",
+   "Revenue from operations reported for multiple years.",
+   "Detailed breakdown of expenses including cost of materials consumed, employee benefits, finance costs, depreciation, and other expenses.",
+   "Profit before tax and profit after tax figures provided for each year.",
+   "Earnings per share (basic and diluted) disclosed.",
+   "Segment reporting includes banquets and hotels.",
+   "Related party transactions disclosed.",
+   "Contingent liabilities and commitments mentioned.",
+   "Auditor's report includes key audit matters and emphasis of matter paragraphs.",
+   "Authorised share capital: 5,00,00,000 equity shares of Rs. 10 each (Rs. 50,00,00,000) as at 31st March 2026 and 2025.",
+   "Issued, subscribed and paid-up capital: 2,92,86,400 equity shares of Rs. 10 each (Rs. 29,28,64,000) as at 31st March 2026 and 2025.",
+   "No shares with differential rights, sweat equity, or employee stock options issued.",
+   "No change in promoter shareholding during the year.",
+   "Company has no borrowings from banks or financial institutions as per the disclosed data.",
+   "No contingent liabilities disclosed in the provided text.",
+   "No related party transactions disclosed in the provided text.",
+   "No capex plans or orders/contracts disclosed in the provided text.",
+   "No auditor details, opinion, or key audit matters disclosed in the provided text.",
+   "No dividend per share disclosed in the provided text.",
+   "No employee count or key management personnel names disclosed in the provided text.",
+   "The company has complied with the number of layers of companies as per Section 2(87) of the Companies Act, 2013.",
+   "No charges or satisfaction yet to be registered with Registrar of Companies beyond the statutory period.",
+   "The company is not a declared wilful defaulter by any bank or financial institution.",
+   "No transactions with struck off companies.",
+   "No scheme of arrangements approved during the year.",
+   "No undisclosed income.",
+   "No crypto currency or virtual currency transactions.",
+   "No registration of charges or satisfaction pending beyond statutory period."
+  ],
+  "subsidiaries": [
+   {
+    "name": "Dalmia Cement (Bharat) Limited",
+    "holding_pct": 100,
+    "business": "Cement manufacturing"
+   },
+   {
+    "name": "Dalmia Power Limited",
+    "holding_pct": 100,
+    "business": "Power generation"
+   },
+   {
+    "name": "Alsthom Industries Limited",
+    "holding_pct": 100,
+    "business": "Refractory products"
+   },
+   {
+    "name": "Dalmia DSP Limited",
+    "holding_pct": 100,
+    "business": "Cement manufacturing"
+   },
+   {
+    "name": "Murli Industries Limited",
+    "holding_pct": 100,
+    "business": "Cement and paper manufacturing"
+   },
+   {
+    "name": "DPVL Ventures LLP",
+    "holding_pct": 100,
+    "business": "Investment"
+   },
+   {
+    "name": "Himshikhar Investment Limited",
+    "holding_pct": 100,
+    "business": "Investment"
+   },
+   {
+    "name": "Dalmia Bharat Refractories Limited",
+    "holding_pct": 100,
+    "business": "Refractory products"
+   },
+   {
+    "name": "OCL Global Limited",
+    "holding_pct": 100,
+    "business": "Trading"
+   },
+   {
+    "name": "OCL China Limited",
+    "holding_pct": 100,
+    "business": "Trading"
+   },
+   {
+    "name": "Godawari Green Energy Limited",
+    "holding_pct": null,
+    "business": "Power Generation"
+   },
+   {
+    "name": "Godawari Energy Limited",
+    "holding_pct": null,
+    "business": "Power Generation"
+   },
+   {
+    "name": "Hira Ferro Alloys Limited",
+    "holding_pct": null,
+    "business": "Ferro Alloys"
+   },
+   {
+    "name": "Ardent Steel Limited",
+    "holding_pct": null,
+    "business": "Pellet Plant"
+   },
+   {
+    "name": "JMC Projects (India) Limited",
+    "holding_pct": 100,
+    "business": "Civil construction and infrastructure EPC"
+   },
+   {
+    "name": "Bikaner-Khetri Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Khetri-Narela Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Lakadia-Vadodara Transmission Project Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Udupi Kasargode Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Kallam Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Gadag Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Rajgarh Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "MP Power Transmission Package-I Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "MP Power Transmission Package-II Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS1 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS2 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS3 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS4 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS5 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS6 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS7 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS8 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS9 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS10 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS11 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS12 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS13 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS14 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS15 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS16 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS17 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS18 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS19 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "KPS20 Transmission Limited",
+    "holding_pct": 100,
+    "business": "Power transmission (SPV)"
+   },
+   {
+    "name": "Dhunseri Ventures Limited",
+    "holding_pct": 100,
+    "business": "Manufacturing and selling of cement and cement related products"
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "The Company is in the process of setting up a 1.5 MTPA Pellet Plant and a 0.6 MTPA Beneficiation Plant at an estimated cost of Rs. 1,521 Crore. The Company has incurred a capital expenditure of Rs. 1,523 Crore as on 31st March, 2024 and the balance amount is proposed to be funded through internal accruals and debt.",
+    "period": "FY2024-25"
+   },
+   {
+    "statement": "The Company expects to benefit from the Government of India's focus on power transmission and distribution infrastructure, including the Revamped Distribution Sector Scheme (RDSS) and Green Energy Corridors.",
+    "period": "FY 2023-24 and beyond"
+   },
+   {
+    "statement": "The Company aims to enhance occupancy rates and average room rates in the hotel segment, increase banquet bookings, and improve restaurant covers. Focus on cost optimization and operational efficiency to improve margins.",
+    "period": "FY 2025-26"
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "1.5 MTPA Pellet Plant and 0.6 MTPA Beneficiation Plant",
+    "amount_cr": 1521,
+    "timeline": "FY2024-25"
+   },
+   {
+    "item": "Capacity expansion at manufacturing facilities",
+    "amount_cr": null,
+    "timeline": "FY 2023-24"
+   },
+   {
+    "item": "Renovation and upgradation of banquet halls, hotel rooms, and restaurant facilities",
+    "amount_cr": null,
+    "timeline": "Ongoing, FY 2025-26"
+   },
+   {
+    "item": "Kitchen equipment and furniture upgrades",
+    "amount_cr": null,
+    "timeline": "FY 2025-26"
+   }
+  ],
+  "orders_or_contracts": [
+   {
+    "statement": "The Company secured new orders worth Rs 10,000 crore during FY 2022-23.",
+    "value_cr": 10000
+   },
+   {
+    "statement": "The order book as on March 31, 2023 stood at Rs 15,000 crore.",
+    "value_cr": 15000
+   }
+  ],
+  "risks": [
+   "Fluctuation in raw material prices (steel, zinc)",
+   "Delay in project execution due to right-of-way issues, forest clearances, and local agitations",
+   "Counterparty credit risk from state utilities",
+   "Foreign exchange fluctuation risk",
+   "Interest rate risk on borrowings",
+   "Seasonality in banquet and hotel business",
+   "Competition from new hotels and banquet halls in Ahmedabad",
+   "Rising food and labor costs",
+   "Dependence on local market (Ahmedabad)",
+   "Regulatory changes in hospitality sector",
+   "Economic downturn affecting discretionary spending on events and travel"
+  ],
+  "related_party": [
+   {
+    "party": "JMC Projects (India) Limited",
+    "nature": "Subsidiary - EPC contracts, reimbursement of expenses",
+    "amount_cr": null
+   },
+   {
+    "party": "Kalpataru Power Transmission Limited",
+    "nature": "Joint Venture - Sale of goods/services",
+    "amount_cr": null
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Remuneration",
+    "amount_cr": null
+   },
+   {
+    "party": "Narendra Somani (Promoter/Director)",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 1.8
+   },
+   {
+    "party": "Devanand Somani (Promoter/Director)",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 1.2
+   },
+   {
+    "party": "Hemant Somani (Promoter/Director)",
+    "nature": "Remuneration and perquisites",
+    "amount_cr": 1.2
+   },
+   {
+    "party": "TGB Foods Pvt Ltd (Entity under common control)",
+    "nature": "Purchase of food materials and services",
+    "amount_cr": 12.45
+   },
+   {
+    "party": "TGB Bakers & Confectioners (Entity under common control)",
+    "nature": "Purchase of bakery products",
+    "amount_cr": 3.2
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Claims against the Company not acknowledged as debts (Sales Tax, Service Tax, GST, Customs Duty, Income Tax, Entry Tax, etc.)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Guarantees given by the Company on behalf of subsidiaries / joint ventures",
+    "amount_cr": null
+   },
+   {
+    "nature": "Income tax demands under appeal",
+    "amount_cr": 2.35
+   },
+   {
+    "nature": "Service tax/GST demands under dispute",
+    "amount_cr": 1.8
+   },
+   {
+    "nature": "Legal cases filed by ex-employees and vendors",
+    "amount_cr": 0.75
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Banks (Working Capital)",
+    "amount_cr": null,
+    "note": "Secured by hypothecation of stocks, book debts, and movable fixed assets"
+   },
+   {
+    "lender_or_type": "Banks (Term Loans)",
+    "amount_cr": null,
+    "note": "Secured by mortgage of immovable properties and hypothecation of movable fixed assets"
+   },
+   {
+    "lender_or_type": "Non-Convertible Debentures",
+    "amount_cr": null,
+    "note": "Secured by mortgage of immovable properties and hypothecation of movable fixed assets"
+   },
+   {
+    "lender_or_type": "Commercial Paper",
+    "amount_cr": null,
+    "note": "Unsecured"
+   },
+   {
+    "lender_or_type": "HDFC Bank - Term Loan",
+    "amount_cr": 45.2,
+    "note": "Secured against property at The Grand Bhagwati"
+   },
+   {
+    "lender_or_type": "ICICI Bank - Working Capital",
+    "amount_cr": 28.5,
+    "note": "Cash credit facility secured by inventory and receivables"
+   },
+   {
+    "lender_or_type": "Axis Bank - Vehicle Loans",
+    "amount_cr": 2.1,
+    "note": "Secured against vehicles"
+   },
+   {
+    "lender_or_type": "Unsecured loans from promoters/directors",
+    "amount_cr": 15.75,
+    "note": "Interest-free, repayable on demand"
+   },
+   {
+    "lender_or_type": "Banks or Financial Institutions",
+    "amount_cr": null,
+    "note": "No such Borrowings and hence N/A"
+   }
+  ],
+  "litigation": [
+   "Various tax disputes (Sales Tax, Service Tax, GST, Customs Duty, Income Tax, Entry Tax) pending at different appellate levels",
+   "Arbitration proceedings with clients / contractors related to project disputes",
+   "Income tax appeals for AY 2018-19 to 2022-23 pending at CIT(A)",
+   "GST audit objections for FY 2019-20 to 2021-22 under adjudication",
+   "Labor court cases: 12 cases filed by former employees for wrongful termination and dues",
+   "Civil suits: 3 cases by vendors for payment disputes",
+   "No proceedings pending against the company under this law as a better of proceedings"
+  ],
+  "dividend_per_share": 4.0
+ }
+}
