@@ -1,0 +1,475 @@
+{
+ "isin": "INE079N01019",
+ "name": "Shri Kalyan Holdings Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e7c48ddb-6474-4a68-bc7c-4ef34555adea.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 256110,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Shri Kalyan Holdings Limited is a Non-Banking Financial Company (NBFC) as indicated by the Schedule to the Balance Sheet of a NBFC in the annual report.",
+   "value_chain_position": "service",
+   "products": [
+    {
+     "name": "Financing and investment activities",
+     "share_of_revenue_pct": null,
+     "note": "Single reportable business segment"
+    },
+    {
+     "name": "Stockbroking services",
+     "share_of_revenue_pct": null,
+     "note": "Includes proprietary trading and client trading"
+    },
+    {
+     "name": "Depository participant services",
+     "share_of_revenue_pct": null,
+     "note": "Registered with CDSL"
+    },
+    {
+     "name": "Research analyst and investment advisory services",
+     "share_of_revenue_pct": null,
+     "note": "Registered with SEBI"
+    },
+    {
+     "name": "Individual Loans",
+     "share_of_revenue_pct": null,
+     "note": "Outstanding principal of Rs 10.00 lakhs as at March 31, 2026"
+    },
+    {
+     "name": "Corporate Loans",
+     "share_of_revenue_pct": null,
+     "note": "Outstanding principal of Rs 867.87 lakhs as at March 31, 2026"
+    }
+   ],
+   "customers": [
+    "MSMEs",
+    "retail borrowers",
+    "under-banked populations",
+    "transportation sector",
+    "housing sector",
+    "infrastructure sector",
+    "financially weaker sections",
+    "bank-excluded customers",
+    "rural credit borrowers",
+    "retail customers (including high net worth individuals)",
+    "mutual funds",
+    "corporate clients",
+    "Individual borrowers",
+    "Corporate borrowers",
+    "Related parties (e.g., Ruby Buildcon Pvt. Ltd.)"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "competitors_named": [
+    "banks",
+    "other NBFCs"
+   ],
+   "end_markets": [
+    "MSMEs",
+    "transportation",
+    "housing",
+    "infrastructure",
+    "rural credit",
+    "financially weaker sections",
+    "capital markets",
+    "financial services",
+    "Retail (Consumer) lending",
+    "Corporate lending"
+   ],
+   "brands_or_certifications": [
+    "NBFC-ICC registration with RBI",
+    "BSE listed (Scrip Code: 532083)",
+    "SEBI registered stockbroker",
+    "CDSL depository participant",
+    "SEBI registered research analyst",
+    "SEBI registered investment advisor",
+    "Member of BSE and NSE"
+   ]
+  },
+  "auditor": {
+   "name": "M/s Rajvanshi & Associates",
+   "opinion": "The Auditors' Report does not contain any qualification, reservation or adverse remark.",
+   "qualifications_or_emphasis": [
+    "Several SEBI regulations noted as 'Not applicable to the Company during the Audit Period': (c) Issue of Capital and Disclosure Requirements, (d) Share Based Employee Benefits and Sweat Equity, (e) Issue and Listing of Non-Convertible Securities, (g) Delisting of Equity Shares",
+    "No material uncertainty on going concern",
+    "No cash losses in current and preceding year",
+    "No resignation of statutory auditors",
+    "No non-cash transactions with directors",
+    "Company registered under RBI Act 45-IA as NBFC",
+    "CSR provisions not applicable",
+    "No subsidiaries/associates/JVs"
+   ],
+   "key_audit_matters": [
+    "Impairment of financial assets (expected credit loss) - Ind AS 109 requires the Company to recognise impairment loss allowance towards its financial assets using the expected credit loss (ECL) approach involving significant estimation in grouping of borrowers, staging of loans, determining macro-economic factors, and estimation of losses for loan products with no/minimal historical defaults.",
+    "Fair Valuation of Investments - The Company's investments (other than investment in Subsidiary and Associates) are measured at fair value at each reporting date. Valuation of certain assets such as unquoted equity and bonds requires significant judgement as a result of quoted prices being unavailable and limited liquidity in these markets."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Re-appointment of Mrs. Arushi Jain (DIN: 08828057), who retires by rotation and, being eligible, offers herself for re-appointment.",
+    "Mrs. Arushi Jain (DIN: 08828057), Non-Executive, Non-Independent Director, retires by rotation at the ensuing Annual General Meeting and, being eligible, has offered herself for re-appointment.",
+    "Mr. Rajendra Kumar Chhipa appointed as Chief Financial Officer and Key Managerial Personnel with effect from August 14, 2025.",
+    "Mr. Hemang Jain appointed as General Manager with effect from August 14, 2026.",
+    "Mr. Rajendra Kumar Chhipa was appointed as Chief Financial Officer with effect from August 14, 2025.",
+    "Mr. Hemang Jain appointed as General Manager on 14.08.2026.",
+    "Mr. Pramod Kumar Gupta appointed w.e.f. 14/02/2024",
+    "Mr. Vivek Patni appointed w.e.f. 14/11/2024",
+    "Mr. Jinendra Kumar Jain ceased w.e.f. 22/04/2024",
+    "Mr. Devendra Kumar Patni ceased w.e.f. 31/03/2024",
+    "Mr. Gaurav Srivastava ceased w.e.f. 19/06/2024",
+    "Re-appointment of Mrs. Arushi Jain (DIN: 08828057), a director liable to retire by rotation (Resolution No. 2 in AGM Notice)."
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year",
+   "promoter_holding_pct": 60.65,
+   "top_shareholders": [
+    {
+     "name": "Jinendra Kumar Jain (HUF)",
+     "pct": 11.38
+    },
+    {
+     "name": "Jinendra Kumar Jain",
+     "pct": 12.43
+    },
+    {
+     "name": "Kusum Jain",
+     "pct": 8.61
+    },
+    {
+     "name": "Kavita Jain",
+     "pct": 7.53
+    },
+    {
+     "name": "Bhupendra Kumar Jain",
+     "pct": 7.69
+    },
+    {
+     "name": "Rajendra Kumar Jain",
+     "pct": 6.98
+    },
+    {
+     "name": "Sunita Jain",
+     "pct": 6.03
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Rajendra Kumar Jain",
+     "role": "Chairman and Whole-Time Director"
+    },
+    {
+     "name": "Mr. Bhupendra Kumar Jain",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Pramod Kumar Gupta",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mrs. Arushi Jain",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Vivek Patni",
+     "role": "Non-Executive Independent Director"
+    },
+    {
+     "name": "Mr. Rajendra Kumar Chhipa",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "CS Shikha Agarwal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Rajendra Kumar Jain",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Bhupendra Kumar Jain",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Shikha Agarwal",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Rajendra Kumar Chhipa",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Rajendra Kumar Jain",
+     "role": "Chairman and Whole-Time Director (DIN: 00168151)"
+    },
+    {
+     "name": "Pramod Kumar Gupta",
+     "role": "Independent Director, Chairman of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee (DIN: 10504388)"
+    },
+    {
+     "name": "Vivek Patni",
+     "role": "Independent Director, Member of Audit Committee, Nomination and Remuneration Committee, and Stakeholders' Relationship Committee (DIN: 10834752)"
+    },
+    {
+     "name": "Arushi Jain",
+     "role": "Non-Independent Non-Executive Director, Member of Nomination and Remuneration Committee and Stakeholders' Relationship Committee (DIN: 08828057)"
+    },
+    {
+     "name": "Rajendra Kumar Jain",
+     "role": "Chairman and Whole-Time Director"
+    },
+    {
+     "name": "Shikha Agarwal",
+     "role": "Company Secretary and Compliance Officer"
+    },
+    {
+     "name": "Rajendra Kumar Jain",
+     "role": "Chairman & Whole-time Director"
+    },
+    {
+     "name": "Rajendra Kumar Chhipa",
+     "role": "Chief Financing Officer"
+    },
+    {
+     "name": "Shikha Agarwal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Rajendra Kumar Chhipa",
+     "role": "Chief Finance Officer (w.e.f. 14.08.2025)"
+    },
+    {
+     "name": "Mrs. Shikha Agarwal",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Ashok Kumar Jain",
+     "role": "Chief Finance Officer (till 12.03.2025)"
+    },
+    {
+     "name": "Mrs. Arushi Jain",
+     "role": "Director (DIN: 08828057), liable to retire by rotation"
+    }
+   ],
+   "employees": 4
+  },
+  "other_notable": [
+   "34th Annual General Meeting scheduled for Tuesday, September 29, 2026 at 03:00 P.M. at Registered Office, Jaipur.",
+   "Register of Members and Share Transfer Books closed from Wednesday, September 23, 2026 to Tuesday, September 29, 2026 (both days inclusive).",
+   "Remote e-voting period: Saturday, 26th September, 2026 (10:00 A.M.) to Monday, 28th September, 2026 (5:00 P.M.).",
+   "Cut-off date for e-voting: Tuesday, 22nd September, 2026.",
+   "Statutory Auditors: M/s Rajvanshi & Associates, Chartered Accountants, Jaipur (FRN 005069C).",
+   "Secretarial Auditors: M/s V.M. & Associates, Company Secretaries, Jaipur (FRN: P1984RJ039200).",
+   "Internal Auditors: M/s Shah Surendera & Associates, Chartered Accountants, Jaipur (FRN 004666C).",
+   "Principal Banker: Indian Bank, Jaipur.",
+   "Registrar and Share Transfer Agent: M/s Beetal Financial and Computer Services (P) Limited, New Delhi.",
+   "CIN: L67120RJ1993PLC061489.",
+   "Revenue from operations declined to Rs 4.46 lakh in FY 2025-26 from Rs 151.12 lakh in FY 2024-25.",
+   "Loss before tax of Rs 81.40 lakh and loss after tax of Rs 64.79 lakh in FY 2025-26 compared to profit before tax of Rs 105.28 lakh and profit after tax of Rs 81.47 lakh in FY 2024-25.",
+   "Decline primarily attributable to loss on fair-value changes and impairment on financial instruments.",
+   "No dividend recommended for FY 2025-26 due to loss and to conserve resources.",
+   "Paid-up share capital stood at Rs 9,98,77,500 with no change during the year.",
+   "Board met 4 times during FY 2025-26.",
+   "Statutory Auditors M/s. Rajvanshi & Associates appointed for 5 years till conclusion of 37th AGM in 2029.",
+   "Secretarial Auditor M/s V. M. & Associates appointed for 5 years from FY 2025-26 to FY 2029-30.",
+   "Internal Auditors M/s. Shah Surendra & Associates re-appointed for FY 2026-27.",
+   "No frauds reported by auditors under Section 143(12).",
+   "No significant and material orders passed by regulators impacting going concern status.",
+   "Loans, guarantees, investments by NBFC in ordinary course of business exempted from Section 186 of Companies Act.",
+   "No material related party transactions during the year.",
+   "Code of Conduct adopted and affirmed by all Board members and senior management.",
+   "No material changes affecting financial position between end of financial year and date of report except appointment of General Manager.",
+   "Annual return available on company website.",
+   "Internal financial controls confirmed adequate and effective by Statutory Auditors.",
+   "Risk Management Policy implemented covering liquidity, interest rate, and strategic risks.",
+   "Board performance evaluation conducted as per Companies Act and SEBI regulations.",
+   "Zero sexual harassment complaints received during FY 2025-26.",
+   "Total women employees: 2; none availed maternity leave during the year.",
+   "No public deposits accepted as per RBI Master Direction.",
+   "Cost records and cost audit not applicable.",
+   "Conservation of energy: operations involve normal electricity consumption; using LED lighting, low-power computers, digital communication; no alternate energy sources; no material capital investment on energy conservation.",
+   "Technology absorption: upgraded IT systems, adopted updated financial/accounting software, cloud-based applications, digital communication, electronic document management, process automation tools.",
+   "Revenue from operations: \u20b94.46 lakh in FY 2025-26 vs \u20b9151.12 lakh in FY 2024-25",
+   "Net loss after tax: \u20b964.79 lakh in FY 2025-26 vs net profit after tax of \u20b981.47 lakh in FY 2024-25",
+   "Net worth: \u20b9948.83 lakh as at March 31, 2026 vs \u20b91,013.61 lakh as at March 31, 2025",
+   "Return on Net Worth: (6.83%) in FY 2025-26 vs 8.04% in FY 2024-25",
+   "No technology imported during the last three financial years including FY 2025-26",
+   "No specific R&D expenditure incurred during FY 2025-26",
+   "Foreign exchange earnings and outgo: NIL",
+   "Corporate Governance provisions not applicable (paid up equity share capital not exceeding Rs.10 Crore and Net Worth not exceeding Rs.25 Crore, and listed on SME Exchange)",
+   "CSR provisions not applicable (net worth below Rs.500 crore, turnover less than Rs.1000 crore, net profit before tax less than Rs.5 crore)",
+   "No credit rating or external rating obtained during the year",
+   "Vigil Mechanism/Whistle Blower Policy established and functioning effectively, no complaints reported",
+   "Zero investor complaints received, pending, or unresolved during FY 2025-26",
+   "Uniform Listing Agreement with BSE Limited since December 08, 2015, listing fee for 2026-27 paid",
+   "Three lines of defence model instituted for internal controls",
+   "Secretarial Audit conducted for FY 2025-26 by external auditor",
+   "No remuneration was paid to the Directors during FY 2025-26.",
+   "Median remuneration of comparable employees in the financial year 2025-26: NIL.",
+   "Average % increase in the salary of comparable employees other than Managerial Personnel: NIL.",
+   "Average % increase in the Salary of the Key Managerial Personnel: NIL.",
+   "There is no increase in the salaries of the employees other than managerial personnel due to the accumulated losses suffered by the Company during the past years.",
+   "The Company has not declared any dividend during the year.",
+   "The company has used accounting software for maintaining its books of account which has a feature of recording audit trail (edit log) facility and the same has been operated throughout the year for all transactions recorded in the software and the audit trail feature has not been tampered with.",
+   "In respect of loans and advances in the nature of loans, the aggregate amount of loans, where any instalment is overdue for more than 90 days as at 31 March 2026 is Rs. 61.74 Lacs.",
+   "The Company does not have any inventory.",
+   "The Company does not hold immovable property."
+  ],
+  "risks": [
+   "Liquidity Risk: Funding Risk, Time Risk, Call Risk",
+   "Interest Rate Risk",
+   "Strategic Risk",
+   "Interest rate volatility",
+   "Economic cycles",
+   "Credit risk",
+   "Market risk",
+   "Operational risk",
+   "High cost of funds",
+   "Slow industrial growth",
+   "Stiff competition from banks and NBFCs",
+   "Risk of rising non-performing assets (NPAs)",
+   "Revenue dependent on asset valuations and market conditions",
+   "The Company has defaulted in compliance with regulation 31(4) of SEBI (SAST) Regulations with regard to the yearly disclosure by promoter for the financial year ended March 31, 2026.",
+   "The Company failed to file the Shareholding Pattern under Regulation 31 of SEBI LODR for the quarter and half-year ended September 30, 2025 within the prescribed time period.",
+   "The Company has not complied with various regulations of SEBI LODR Regulations w.r.t timely updation of its Website.",
+   "The Company failed to comply with BSE Circular No. 20241018-44 dated October 18, 2024 with regard to submission of Quarterly and yearly Structured Digital Database (SDD) certificate certified by a Practising Company Secretary during the financial year ended March 31, 2026.",
+   "The Company has not complied with Regulation 3(5) of the SEBI PIT Regulations as few of the entries were captured in the SDD software after the UPSI became public.",
+   "The Company has defaulted in compliance with various applicable provisions of the Companies Act, 2013 and Secretarial Standards issued by ICSI, with regard to conduct of board and general meetings, maintenance of minutes, signing of various documents and maintenance of the Company's records.",
+   "The Company has been imposed with a fine under regulation 31 of SEBI LODR Regulations, 2015 by Bombay Stock Exchange (BSE) for delay in submission of the Shareholding Pattern for the quarter and half-year ended on September 30, 2025.",
+   "Credit risk from loan receivables",
+   "Market price risk from FVTPL and FVOCI investments",
+   "Liquidity risk",
+   "Interest rate risk (though not significantly exposed as no borrowings from banks/financial institutions)",
+   "Foreign currency risk (considered insignificant and not hedged)"
+  ],
+  "litigation": [
+   "The Company has defaulted in compliance with Regulation 31(4) of the SEBI (Substantial Acquisition of Shares and Takeovers) Regulations, 2011 with regard to the yearly disclosure by the promoters for the financial year ended March 31, 2026.",
+   "The Company failed to file the Shareholding Pattern under Regulation 31 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 for the quarter and half-year ended September 30, 2025 within the prescribed time period.",
+   "The Company has not complied with various provisions of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 with respect to timely updation of its website.",
+   "The Company failed to comply with BSE Circular No. 20241018-44 dated October 18, 2024 with regard to submission of quarterly and annual Structured Digital Database (SDD) compliance certificates certified by a Practising Company Secretary during the financial year ended March 31, 2026.",
+   "The Company has not complied with Regulation 3(5) of the SEBI (Prohibition of Insider Trading) Regulations, 2015 as certain entries were captured in the Structured Digital Database after the Unpublished Price Sensitive Information became generally available.",
+   "The Company has defaulted in compliance with various applicable provisions of the Companies Act, 2013 and the Secretarial Standards issued by the Institute of Company Secretaries of India with regard to conduct of Board and General Meetings, maintenance of minutes, signing of various documents and maintenance of the Company's records.",
+   "No application has been made and no proceedings are pending against the Company under the Insolvency and Bankruptcy Code, 2016",
+   "There were no significant and material orders passed by the Regulators or Courts or Tribunals during the year impacting the going concern status and the operations of the Company",
+   "The company does not have any pending litigations which would impact its financial position in its financial statements.",
+   "No proceedings have been initiated or pending against the company for holding any benami property under the Benami Transactions (Prohibition) Act, 1988 and rules made thereunder.",
+   "The company is not declared as wilful defaulter by any bank or financial Institution or other lender during the current financial year or previous financial year.",
+   "There is no any transactions with the Companies struck off under Section 248 of the Companies Act, 2013 or Section 560 of Companies Act, 1956 for the year ended March 31, 2026 and year ended March 31, 2025."
+  ],
+  "outlook": [
+   {
+    "statement": "The long-term outlook for the NBFC sector in India remains positive, supported by economic growth, increasing financial inclusion, technological advancement and continued regulatory and policy support. The Company intends to maintain a cautious and prudent approach considering market volatility, credit risk, interest-rate movements and the evolving regulatory environment. During FY 2026\u201327, the Company will focus on diversification of risk, preservation of asset quality, efficient utilisation of resources, strengthening of internal controls and adoption of technology-enabled processes. The Company remains cautiously optimistic about its outlook for FY 2026\u201327.",
+    "period": "FY 2026-27"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "None",
+    "holding_pct": null,
+    "business": "The Company does not have any subsidiary, associate and Joint Venture as on March 31, 2026"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (details in Note No. 30 of Standalone Financial Statements)",
+    "nature": "All contracts/arrangements/transactions entered during FY 2025-26 were in compliance with section 188 of the Act, Regulation 23 of Listing regulations and IND AS-24. All transactions were in the ordinary course of business and on arm's length basis and not material under the Act and SEBI Listing Regulations.",
+    "amount_cr": null
+   },
+   {
+    "party": "Ruby Buildcon Pvt. Ltd.",
+    "nature": "Companies/Firms controlled by KMP/Relatives",
+    "amount_cr": 0.5174
+   },
+   {
+    "party": "Kalyan Vihar Buildhome Pvt. Ltd.",
+    "nature": "Companies/Firms controlled by KMP/Relatives",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Key Managerial Persons (Mr. Ashok Kumar Jain, Mrs. Shikha Agarwal, Mr. Rajendra Kumar Chhipa)",
+    "nature": "Remuneration paid",
+    "amount_cr": 0.091
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Borrowings (other than Debt Security)",
+    "amount_cr": 0.3719,
+    "note": "As at March 31, 2026 per balance sheet (Rs 37.19 lakhs)"
+   },
+   {
+    "lender_or_type": "HDFC Bank (Secured Vehicle Loan)",
+    "amount_cr": 0.2930561,
+    "note": "Repayable in EMIs up to FY 2029-30, secured against respective vehicle"
+   },
+   {
+    "lender_or_type": "IDFC FIRST Bank (Secured Vehicle Loan)",
+    "amount_cr": 0.1494,
+    "note": "Repayable in EMIs up to FY 2029-30, secured against respective vehicle"
+   },
+   {
+    "lender_or_type": "Related Parties (Unsecured Demand Loan)",
+    "amount_cr": 0.339,
+    "note": "Outstanding as at March 31, 2025; repaid fully in FY 2025-26"
+   },
+   {
+    "lender_or_type": "Term Loans",
+    "amount_cr": 0.3719,
+    "note": "Outstanding as of 31-03-2026 per NBFC Schedule (Rs. in Lacs: 37.19). Debts include term loan from bank and loans repayable on demand from related party and others."
+   },
+   {
+    "lender_or_type": "Debentures (Secured)",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Debentures (Unsecured)",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Deferred Credits",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Inter-corporate loans and borrowing",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Commercial Paper",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Public Deposits",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   },
+   {
+    "lender_or_type": "Other loans - Related Parties",
+    "amount_cr": 0,
+    "note": "Nil outstanding as per NBFC Schedule."
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Capital-Work-in Progress (CWIP)",
+    "amount_cr": 0,
+    "timeline": "FY 2025-26",
+    "note": "The company does not have any Capital-Work-in Progress (CWIP)."
+   }
+  ]
+ }
+}
