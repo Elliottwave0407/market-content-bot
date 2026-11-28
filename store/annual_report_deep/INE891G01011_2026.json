@@ -1,0 +1,600 @@
+{
+ "isin": "INE891G01011",
+ "name": "Lime Chemicals Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/accddce3-d7ac-4265-ad52-07a237640ce4.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 246418,
+ "chunks": 7,
+ "chunks_ok": 7,
+ "facts": {
+  "business": {
+   "description": "Lime Chemicals Limited is a listed company engaged in manufacturing and trading of chemicals and minerals, with related party transactions involving purchase/sales of manufactured products and raw materials.",
+   "products": [
+    {
+     "name": "manufactured products and raw materials",
+     "share_of_revenue_pct": null,
+     "note": "Referenced in related party transactions with Himachal Polyolefins Limited"
+    },
+    {
+     "name": "Calcium Carbonate",
+     "share_of_revenue_pct": 94.65,
+     "note": "NIC code 20299"
+    },
+    {
+     "name": "Calcium Carbonate (Ground calcium carbonate (GCC) and precipitated calcium carbonate (PCC))",
+     "share_of_revenue_pct": null,
+     "note": "Used in paper, paints, plastics, adhesives, construction, toothpaste, pharmaceuticals, PVC, rubber, polymer, cable, leather"
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "brands_or_certifications": [
+    "ISO 9001"
+   ],
+   "customers": [
+    "paper industry",
+    "paints industry",
+    "plastics industry",
+    "adhesives",
+    "construction",
+    "toothpaste",
+    "pharmaceuticals",
+    "PVC products",
+    "rubber",
+    "polymer",
+    "cable",
+    "leather"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "Domestic",
+     "share_pct": 100
+    },
+    {
+     "name": "Export",
+     "share_pct": 0
+    }
+   ],
+   "plants": [
+    {
+     "location": "Kala Amb, Dist. Jagadhri, Haryana State",
+     "capacity": "land acquired, manufacturing plant may be installed on need basis"
+    }
+   ],
+   "raw_materials": [
+    "limestone",
+    "lime stone",
+    "calcite powder",
+    "stearic acid"
+   ],
+   "end_markets": [
+    "paper",
+    "paints",
+    "plastics",
+    "adhesives",
+    "construction",
+    "personal care products",
+    "rubber & plastics",
+    "paint and other value added products",
+    "Tooth Paste",
+    "Pharmaceuticals",
+    "PVC products",
+    "Rubber",
+    "Plastic",
+    "Polymer",
+    "Cable",
+    "Leather"
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Himachal Polyolefins Limited",
+    "nature": "Associate Company promoted by the promoters of the Company",
+    "amount_cr": 30.0
+   },
+   {
+    "party": "Himachal Polyolefins Limited",
+    "nature": "Inter Corporate Deposits",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Himachal Polyolefins Limited",
+    "nature": "Corporate Guarantee/ provide security for borrowing",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "WestPoint Chemicals & Minerals Pvt. Ltd.",
+    "nature": "Associate Company promoted by the promoters of the Company",
+    "amount_cr": 1.0
+   },
+   {
+    "party": "Dr. Akbarali Virani",
+    "nature": "Director of the Company",
+    "amount_cr": 2.4
+   },
+   {
+    "party": "Mr. Ahmed H. Dawoodani",
+    "nature": "Managing Director of the Company",
+    "amount_cr": 1.0
+   },
+   {
+    "party": "Silvo Liacal Chemicals Limited",
+    "nature": "Associate Company promoted by the promoters of the Company",
+    "amount_cr": 5.0
+   },
+   {
+    "party": "Promoters, Directors, Management or their relatives",
+    "nature": "transactions detailed in Notes part of the Accounts may be considered as related party transactions",
+    "amount_cr": null
+   },
+   {
+    "party": "Related parties",
+    "nature": "Transactions entered into by the Company with related parties are in compliance with sections 177 and 188 of the Act, where applicable. Details disclosed in financial statements as required under Ind AS 24.",
+    "amount_cr": null
+   },
+   {
+    "party": "Himachal Polyolefins Limited",
+    "nature": "Associate Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Westpoint Chemicals & Minerals Pvt. Ltd.",
+    "nature": "Associate Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Silvo Liacal Chemicals Ltd.",
+    "nature": "Associate Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Sahid Investment & Trading Co. Pvt. Ltd.",
+    "nature": "Associate Company",
+    "amount_cr": null
+   },
+   {
+    "party": "Lime Naturals & Herbal LLP",
+    "nature": "Associate",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri A. H. Dawoodani",
+    "nature": "Managing Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Smt. S. A. Dawoodani",
+    "nature": "Non-Executive Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Akbar Ali Virani",
+    "nature": "Director (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Amol Patil",
+    "nature": "Chief Finance Officer (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Neha Botadra",
+    "nature": "Company Secretary (KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Shri Rahim Ahmed Dawoodani",
+    "nature": "Son of Shri A. H. Dawoodani (Relative of KMP)",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Yasmeen Ahmed Dawoodani",
+    "nature": "Daughter of Shri A. H. Dawoodani (Relative of KMP)",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Dr. Akbarali Virani (Director)",
+    "amount_cr": 2.4,
+    "note": "Outstanding borrowing as on April 1, 2025"
+   },
+   {
+    "lender_or_type": "Mr. Ahmed H. Dawoodani (Managing Director)",
+    "amount_cr": 1.0,
+    "note": "Maximum borrowing limit for FY 2026-27"
+   },
+   {
+    "lender_or_type": "Secured Loans",
+    "amount_cr": 0.1,
+    "note": "Principal Amount Rs 9.61 lakhs at end of financial year"
+   },
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 5.04,
+    "note": "Principal Amount Rs 503.74 lakhs at end of financial year"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 0.0457,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 4.7309,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Term loan (Secured) - Vehicle",
+    "amount_cr": 0.0457,
+    "note": "Secured against Hypothecation of the Vehicle; non-current portion Rs 4.57 lakhs (2026), Rs 9.61 lakhs (2025)"
+   },
+   {
+    "lender_or_type": "Deposits (ICD) - Unsecured",
+    "amount_cr": 0.275,
+    "note": "Current borrowing Rs 27.50 lakhs (2026 and 2025)"
+   },
+   {
+    "lender_or_type": "Term loan (Secured) - Current Maturity",
+    "amount_cr": 0.0504,
+    "note": "Current maturity of long term loan Rs 5.04 lakhs (2026), Rs 4.60 lakhs (2025)"
+   },
+   {
+    "lender_or_type": "Loans taken from Related Parties",
+    "amount_cr": 4.4055,
+    "note": "Current borrowing Rs 440.55 lakhs (2026), Rs 471.63 lakhs (2025)"
+   },
+   {
+    "lender_or_type": "Loans taken from others",
+    "amount_cr": 0,
+    "note": "Nil"
+   },
+   {
+    "lender_or_type": "banks or financial institutions",
+    "amount_cr": 5,
+    "note": "working capital limits sanctioned in excess of \u20b95 crore on security of current assets"
+   }
+  ],
+  "auditor": {
+   "name": "M/s. R.A. Kuvadia & CO., Chartered Accountants, Mumbai",
+   "opinion": "There are no qualifications, reservations or adverse remarks made by the Statutory Auditors of the Company in their report.",
+   "key_audit_matters": [
+    "Trade Payables \u2013 Completeness and Ageing: As at March 31, 2026, the Company had trade payables amounting to approximately Rs.643.80 lakhs. Assessment of nature of trade payables and completeness, accuracy, ageing and cut-off required significant auditor attention."
+   ],
+   "qualifications_or_emphasis": [
+    "Emphasis of Matter: Note 31B(d) regarding Non recognition of liability of Rs.37.00 lakhs payable to MSME vendor & provision of interest of Rs.3 lakhs thereon as required under the Micro, Small and Medium Enterprise Development Act, 2006 on account of dispute between parties. Opinion not modified in respect of this matter."
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Mrs. Shahnaz Ahmed Dawoodani",
+     "pct": null
+    },
+    {
+     "name": "Promoters (Individuals/HUF and Bodies Corporate)",
+     "pct": 29.27
+    },
+    {
+     "name": "Devanshi Parimal Merchant",
+     "pct": 12.3
+    },
+    {
+     "name": "Sparrow Asia Diversified Opportunities Fund",
+     "pct": 7.38
+    },
+    {
+     "name": "Parimal Rameshchandra Merchant",
+     "pct": 6.15
+    },
+    {
+     "name": "Ashraf Aziz Makani",
+     "pct": 6.15
+    },
+    {
+     "name": "Ahmed H. Dawoodani",
+     "pct": 10.21
+    },
+    {
+     "name": "Shahnaz A. Dawoodani",
+     "pct": 6.48
+    },
+    {
+     "name": "Rahim Dawoodani",
+     "pct": 10.62
+    }
+   ],
+   "director_changes": [
+    "Mr. Avinash Jhaveri ceased as Chairman w.e.f. 04-08-2026",
+    "Mr. Samir Kumar Das appointed as Independent Director w.e.f. 04-08-2026",
+    "Ms. Rakhi Upadhyay appointed as Independent Director w.e.f. 04-08-2026",
+    "Mr. Zaryab Ahmed Sayyed re-designated from Independent Director to Non-Executive Non-Independent Director",
+    "Mrs. Shahnaz A. Dawoodani, the Director of the Company shall retire by rotation at the forthcoming Annual General Meeting and offer herself for re-appointment.",
+    "Mr. Avinash Jhaveri ceased as Independent Chairman w.e.f 04-08-2026",
+    "Mr. Samir Kumar Das appointed as Independent Chairman w.e.f 04-08-2026",
+    "Ms. Rakhi Upadhyay appointed as Independent Director w.e.f 04-08-2026",
+    "Re-appointment of Mrs. Shahnaz A. Dawoodani, who retires by rotation.",
+    "Appointment of Mr. Samir Kumar Das as Director of the Company.",
+    "Appointment of Ms. Rakhi Upadhyay as Director of the Company.",
+    "Appointment of Mr. Zaryab A. Sayyed as Non-Independent Director"
+   ],
+   "promoter_holding_pct": 29.27,
+   "promoter_pledge_pct": 0.0,
+   "auditor_change": "No resignation of statutory auditors during the year"
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. A. H. Dawoodani",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mrs. S. A. Dawoodani",
+     "role": "Director"
+    },
+    {
+     "name": "Dr. Akbar Virani",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Zaryab Ahmed Sayyed",
+     "role": "Non-Executive Non-Independent Director"
+    },
+    {
+     "name": "Mr. Rahim Narsingdani",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Samir Kumar Das",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Rakhi Upadhyay",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Neha Botadra",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Samir Kumar Das",
+     "role": "Chairman"
+    },
+    {
+     "name": "Ahmed H. Dawoodani",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Shahnaz A. Dawoodani",
+     "role": "Non-Independent Director"
+    },
+    {
+     "name": "Dr. Akbar J. Virani",
+     "role": "Non-Independent Director"
+    },
+    {
+     "name": "Zaryab A. Sayyed",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Samir Kumar Das",
+     "role": "Independent Chairman"
+    },
+    {
+     "name": "Rakhi Upadhyay",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rutuja Shinde",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "A.H. Dawoodani",
+     "role": "Managing Director (DIN 00934276)"
+    },
+    {
+     "name": "S.A. Dawoodani",
+     "role": "Director (DIN 02324234)"
+    },
+    {
+     "name": "Avinash Jhaveri",
+     "role": "Chairman (DIN 03494110)"
+    },
+    {
+     "name": "A.H. Dawoodani",
+     "role": "Managing Director"
+    },
+    {
+     "name": "S.A. Dawoodani",
+     "role": "Director"
+    },
+    {
+     "name": "Avinash Jhaveri",
+     "role": "Chairman"
+    },
+    {
+     "name": "Shri A. H. Dawoodani",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Smt. S. A. Dawoodani",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Shri Akbar Ali Virani",
+     "role": "Director"
+    },
+    {
+     "name": "Amol Patil",
+     "role": "Chief Finance Officer"
+    }
+   ]
+  },
+  "other_notable": [
+   "Cost Auditor remuneration fixed at Rs. 25,000 for FY 2026-27",
+   "Corporate guarantee/security up to Rs. 5 Crores for associate/group entities",
+   "Related party transactions approved for period April 1, 2026 to March 31, 2027 and up to 15 months between AGMs",
+   "All related party transactions stated to be at arm's length and in ordinary course of business",
+   "Annual General Meeting scheduled for September 30, 2026 at 11:00 AM at Registered Office",
+   "Registered Office shifted from Navi Mumbai to Mumbai as per Resolution passed by Members through Postal Ballot on 21st April 2026.",
+   "Company is listed with BSE Limited and has paid listing fees for FY 2026-27.",
+   "No dividend recommended due to loss and brought forward losses.",
+   "No fixed deposits accepted or outstanding.",
+   "No fraud reported by Auditors u/s 143(12).",
+   "Sexual harassment complaints received: Nil; disposed off: Nil.",
+   "No female employees on payroll during the year.",
+   "Annual Return accessible at http://www.limechem.com.",
+   "Registrar and Transfer Agent: Bigshare Services Pvt. Ltd.",
+   "ISIN: INE891G01011",
+   "Register of Members and Share Transfer Books closed from September 27, 2026 to September 29, 2026 for AGM.",
+   "Remote e-voting period: September 27, 2026 (9:00 A.M.) to September 29, 2026 (5:00 P.M.).",
+   "Cut-off date for e-voting: September 23, 2026.",
+   "Scrutinizer for e-voting: Amosh Archapelly and Associates, Practicing Company Secretaries.",
+   "Secretarial Auditor: Amosh Archapelli and Associates, Company Secretaries in practice.",
+   "Company has complied with Secretarial Standards SS1 and SS2.",
+   "Vigil Mechanism / Whistle Blower Policy established.",
+   "Code of Conduct for Prevention of Insider Trading adopted.",
+   "Policy on prevention of sexual harassment at workplace adopted with Internal Complaints Committee (ICC) set up.",
+   "Maternity Benefit Act compliance confirmed.",
+   "Loans and advances under Section 186 made with prior approval of Audit Committee and Shareholders (details in Note No. 38 of Financial Statements).",
+   "All Related Party Transactions in ordinary course of business and at arm's length basis; no material subsidiary.",
+   "Risk Management Committee constituted; no material risk identified threatening existence.",
+   "Corporate Governance Report and Management Discussion and Analysis Report voluntarily provided.",
+   "Board meetings held on 30/05/2025, 14/08/2025, 14/11/2025, 14/02/2026 and 13/03/2026.",
+   "Audit Committee meetings held four times during the year.",
+   "Company is exempted from Corporate Governance report under Regulation 15(2) of SEBI LODR but voluntarily reports",
+   "No remuneration paid to Managing Director or other directors",
+   "Foreign Exchange used for importing raw material: Nil; Foreign Exchange earned (export): Nil",
+   "Energy conservation measures: realigned power consuming sections to remove bottleneck and ensure uninterrupted quality power supply at minimum cost",
+   "Technology absorption: structured approach for conservation of energy and resources with employee engagement",
+   "3 forms filed with late filing fees with Registrar of Companies during the year",
+   "92% of total paid-up equity capital is dematerialized as on 31-03-2026",
+   "Statutory Audit Fees: Rs 3,35,000; Tax Audit and other fees: Rs 50,000",
+   "Company has not declared dividend for the year ended 31st March, 2026",
+   "Company has not accepted any deposits within the meaning from Section 73 to 76 of the Act",
+   "Company has not made any investments, provided guarantee or security or granted any loans or advances in the nature of loans during the year",
+   "Company has not raised moneys by way of initial public offer or further public offer (including debt instruments)",
+   "Company has not made any preferential allotment or private placement of shares or convertible debentures during the year",
+   "No fraud by the Company or on the Company has been noticed or reported during the course of the audit",
+   "No whistle-blower complaints received by the Company during the year",
+   "Company has an internal audit system commensurate with the size and nature of its business",
+   "Company has used accounting software with audit trail (edit log) facility operating throughout the year for all relevant transactions",
+   "Audit trail has been preserved by the Company as per statutory requirements for record retention",
+   "Central Government has not prescribed maintenance of Cost records per Section 148 of Companies Act, 2013",
+   "Provisions of Section 135 of the Act (CSR) are not applicable to the company",
+   "Company has not defaulted in repayment of loans/dues to banks and financial institutions",
+   "Company has not been declared a willful defaulter by any bank or financial institution or government authority",
+   "Term loan borrowed by the company was applied for the purpose for which the same was obtained",
+   "No funds raised on short term basis have been utilized for long term purposes",
+   "Company has not taken any funds from any entity or person on account of or to meet the obligations of its subsidiaries",
+   "Company has not raised loans during the year on the pledge of securities held in its subsidiaries",
+   "Company has not entered into any non-cash transactions with directors or persons connected with him",
+   "Company is not a Nidhi Company",
+   "Company is not required to be registered under Section 45-IA of the Reserve Bank of India Act, 1934"
+  ],
+  "outlook": [
+   {
+    "statement": "During the year under review, the gross income has decreased from Rs. 1027.59 lakhs to Rs.751.92 lakhs from the previous year registering decrease of 26.83% in revenue. The Company has incurred loss of Rs. 14.49 lakhs during the year against profit of Rs. 20.05 lakhs in the previous year.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company is highly competitive in selection of raw material from high quality limestone. The Company gives importance to satisfaction of customers and their support in the long term. There are inherent opportunities available to the Company to which it is catering for many decades such as personal care products, rubber & plastics, paint and other value added products and optimistic to achieve good results.",
+    "period": "2025-26"
+   }
+  ],
+  "risks": [
+   "At present the Company has not identified any element of risk which may threaten the existence of the Company.",
+   "unfavourable limestone mining and stringent regulations",
+   "limestone reserves concentrated in few places and situated far from production facilities",
+   "import of good quality limestone contributes to higher production cost",
+   "competition from other big players and unorganized players in calcium carbonate industry",
+   "litigations including civil cases, excise and customs related cases",
+   "Non recognition of liability of Rs.37.00 lakhs payable to MSME vendor & provision of interest of Rs.3 lakhs thereon as required under the Micro, Small and Medium Enterprise Development Act, 2006 on account of dispute between parties",
+   "Trade payables completeness and ageing requiring significant auditor attention",
+   "Company has incurred cash losses in the current year as well as the previous year",
+   "Pending litigations including Income Tax, Provident Fund, and GST disputes",
+   "Market risk: foreign exchange risk and commodity price risk",
+   "Credit risk: counterparty default risk on trade receivables, cash, deposits, investments",
+   "Liquidity risk: current liabilities exceed current assets; working capital negative Rs 380.23 lakhs (2026) and Rs 421.99 lakhs (2025); reliance on Executive Directors for funding",
+   "Going concern risk: erosion of 100% of net worth; accumulated losses; management expects to wipe off losses by rationalisation of expenses and increasing revenue",
+   "Regulatory risk: reference made to BIFR under SICA (repealed); not yet made reference under new law",
+   "Statutory dues overdue: various tax demands under dispute",
+   "MSME interest liability not provided: Rs 3.00 lakh for year and Rs 33.85 lakhs cumulative"
+  ],
+  "litigation": [
+   "There were no significant and material orders passed by the regulators or courts or tribunals impacting the going concern status and company's operations in future.",
+   "civil cases",
+   "excise and customs related cases filed by and against the Company",
+   "Income Tax/FBT Rs.57.27 lakhs for AY 2006-2007 pending at Rectification before ITO ward 6(3)-2 Mumbai",
+   "Employees PF & Misc. Provisions Act, 1952 - Provident Fund Rs.40.05 lakhs for Feb. 2008 to May 2008 pending at EPF Appellate Tribunal, Mumbai",
+   "Employees PF & Misc. Provisions Act, 1952 - Provident Fund Rs.28.88 lakhs for March 2000 to June 2009 pending at Bombay High Court",
+   "Employees PF & Misc. Provisions Act, 1952 - Provident Fund Rs.14.95 lakhs for January 2010 to May 2016 pending at CGIT Chandigarh",
+   "The Goods & Service Tax Act, 2017 - GST Rs.184.52 lakhs (Incl. Interest & Penalty) for FY 2020-2021, 2021-22 & 2022-23 pending at Office of the Joint Commissioner of, State Tax (Appeals), App-F-001, Raigad",
+   "The Goods & Service Tax Act, 2017 - GST Rs.144.23 lakhs for FY 21-22 pending at Writ Petition with High Court of Chandigarh",
+   "Disputed Income Tax Demand Rs 57.27 lakhs (AY 2006-07 and others) under appeal",
+   "Disputed GST Demand Maharashtra Rs 184.52 lakhs (including interest & penalty) - appeal filed with Commissioner Appeals SGST",
+   "Disputed GST Demand Himachal Pradesh Rs 144.23 lakhs - Writ Petition filed in High Court of Himachal Pradesh, stay obtained",
+   "Disputed Employees P.F. Rs 108.26 lakhs",
+   "Interest under MSMED Act Rs 33.85 lakhs not accounted for (disputed)"
+  ],
+  "capex_plans": [
+   {
+    "item": "manufacturing plant at Kala Amb, Haryana",
+    "amount_cr": null,
+    "timeline": "on need basis"
+   },
+   {
+    "item": "Capital Goods",
+    "amount_cr": 0.6015,
+    "timeline": "As at March 31, 2026 and March 31, 2025"
+   }
+  ],
+  "dividend_per_share": 0,
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax/FBT",
+    "amount_cr": 0.5727
+   },
+   {
+    "nature": "Provident Fund",
+    "amount_cr": 0.4005
+   },
+   {
+    "nature": "Provident Fund",
+    "amount_cr": 0.2888
+   },
+   {
+    "nature": "Provident Fund",
+    "amount_cr": 0.1495
+   },
+   {
+    "nature": "GST (Incl. Interest & Penalty)",
+    "amount_cr": 1.8452
+   },
+   {
+    "nature": "GST",
+    "amount_cr": 1.4423
+   },
+   {
+    "nature": "Disputed Income Tax Demand",
+    "amount_cr": 0.5727
+   },
+   {
+    "nature": "Disputed Goods & Service Tax (GST) Demand",
+    "amount_cr": 3.2875
+   },
+   {
+    "nature": "Disputed Employees P.F.",
+    "amount_cr": 1.0826
+   },
+   {
+    "nature": "Interest Under MSMED Act",
+    "amount_cr": 0
+   }
+  ]
+ }
+}
