@@ -1,0 +1,345 @@
+{
+ "isin": "INE241B01010",
+ "name": "Mehta Securities Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/7d40327e-a152-4e6d-9a79-0dc277f86b5e.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 217316,
+ "chunks": 6,
+ "chunks_ok": 6,
+ "facts": {
+  "business": {
+   "description": "Mehta Securities Limited is a listed company engaged in securities business.",
+   "value_chain_position": "service",
+   "end_markets": [
+    "capital markets",
+    "Capital market",
+    "Equity markets",
+    "equity market"
+   ],
+   "products": [
+    {
+     "name": "Stock Broking Services",
+     "share_of_revenue_pct": null,
+     "note": "Operates in the Indian brokerage industry, shifting from percentage-led to flat brokerage & subscription-based model"
+    },
+    {
+     "name": "Shares and Securities Broking",
+     "share_of_revenue_pct": 0,
+     "note": "No transactions in revenue from operations due to voluntary/temporary disablement from NSE since 2021"
+    }
+   ],
+   "customers": [
+    "Retail investors",
+    "Traders"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "India",
+     "share_pct": 100
+    }
+   ],
+   "competitors_named": [
+    "Groww",
+    "Zerodha",
+    "Angel One"
+   ],
+   "brands_or_certifications": [
+    "NSE member (Cash & FO segment)",
+    "BSE listed"
+   ]
+  },
+  "auditor": {
+   "name": "M/s. Asim Ravindra & Associates, Chartered Accountants",
+   "opinion": "No qualification, reservation or adverse remarks; notes are self-explanatory",
+   "key_audit_matters": [
+    "Key Audit Matters in our professional judgement have been properly addressed in the audit process of Financial Statements and does not deserve our separate opinion"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "CS Mahesh Moteevaras (Resigned W.e.f. 01.07.2026)",
+    "Mr. Mahesh K. Moteevaras, Company Secretary & Compliance Officer designated as Key Managerial Personnel had resigned w.e.f. 01.07.2026.",
+    "No changes in composition of Board of Directors during the period under review; all changes carried out in compliance with the Act",
+    "Mr. Shrikant S. Kolhar (DIN: 02107316) appointed as Non-Executive Independent Director on 01.04.2025",
+    "Mr. Sarvadaman R. Bhatt (DIN: 10561661) appointed as Non-Executive Independent Director on 01.04.2025",
+    "Mr. Dhaval D. Sheth (DIN: 02418261) appointed as Non-Executive Non-Independent Director on 14.02.2025",
+    "Mr. Dhaval D. Sheth (DIN: 02418261) retires by rotation and offers himself for re-appointment at the 32nd AGM"
+   ],
+   "auditor_change": "Statutory Auditors M/s. Asim Ravindra & Associates appointed for five years from 28th AGM to 33rd AGM (FY 2026-27); recommended for approval at 32nd AGM for FY 2025-26. Internal Auditors changed: M/S. P.P. Patel & Brothers resigned w.e.f. 04.02.2026; M/S. Trivedi Parikh & Shah appointed w.e.f. 06.02.2026 for FY 2025-26.",
+   "promoter_holding_pct": 73.63,
+   "top_shareholders": [
+    {
+     "name": "Bhavna D Mehta",
+     "pct": 28.95
+    },
+    {
+     "name": "Vishwesh D Mehta",
+     "pct": 21.92
+    },
+    {
+     "name": "Chirag D Mehta",
+     "pct": 11.9
+    },
+    {
+     "name": "Darshan V Mehta-Huf",
+     "pct": 6.97
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Bhavna D. Mehta",
+     "role": "Chairperson & Managing Director"
+    },
+    {
+     "name": "Shrikant S. Kolhar",
+     "role": "Independent Director (NED)"
+    },
+    {
+     "name": "Sarvadaman R. Bhatt",
+     "role": "Independent Director (NED)"
+    },
+    {
+     "name": "Dhaval D. Sheth",
+     "role": "Director (NE & NI)"
+    },
+    {
+     "name": "Mr. Mitesh Sheth",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Dhaval D. Sheth",
+     "role": "Director"
+    },
+    {
+     "name": "Mahesh K. Moteevaras",
+     "role": "Company Secretary & Compliance Officer (resigned w.e.f. 01.07.2026)"
+    },
+    {
+     "name": "Bhavna D. Mehta",
+     "role": "Chairperson & Managing Director (DIN: 01590958)"
+    },
+    {
+     "name": "Dhaval D. Sheth",
+     "role": "Director (DIN: 02418261)"
+    },
+    {
+     "name": "Shrikant S. Kolhar",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Sarvadaman R. Bhatt",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Bhavna D. Mehta",
+     "role": "Chairperson & Managing Director (DIN: 01590958)"
+    },
+    {
+     "name": "Mr. Dhaval D. Sheth",
+     "role": "Director (DIN: 02418261)"
+    },
+    {
+     "name": "Mr. Mahesh Motivaras",
+     "role": "Company Secretary (M. No. A63815)"
+    },
+    {
+     "name": "Mr. Shrikant S. Kolhar",
+     "role": "Non-Executive Independent Director (DIN: 02107316)"
+    },
+    {
+     "name": "Mr. Sarvadaman R. Bhatt",
+     "role": "Non-Executive Independent Director (DIN: 10561661)"
+    },
+    {
+     "name": "Mahesh Motivaras",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mitesh Sheth",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mrs. Bhavna D. Mehta",
+     "role": "Chairperson and Managing Director"
+    }
+   ],
+   "employees": 5
+  },
+  "other_notable": [
+   "32nd AGM scheduled on 25th September 2026 at 11:30 a.m. at Registered Office, Ahmedabad",
+   "E-voting period: 22nd September 2026 (9:00 a.m.) to 24th September 2026 (5:00 p.m.)",
+   "Cut-off date for e-voting: 18th September 2026",
+   "Register of Members and Transfer Books closed from 19th September 2026 to 25th September 2026",
+   "RTA: M/s. Purva Sharegistry (India) Pvt. Ltd., Mumbai",
+   "Listed on BSE Limited (Scrip Code: 511738)",
+   "ISIN: INE241B01010",
+   "CIN: L67120GJ1994PLC022740",
+   "AGM scheduled for Friday, 25th September, 2026 at 11:30 a.m. at Registered Office, Ahmedabad.",
+   "Register of Members and Transfer Books closed from 19th September, 2026 to 25th September, 2026.",
+   "Remote e-voting period: 22nd September, 2026 (9:00 a.m.) to 24th September, 2026 (5:00 p.m.).",
+   "Cut-off date for voting: 18th September, 2026.",
+   "Scrutinizer: CS Sanjay Dayalji Kukadia, Practicing Company Secretary.",
+   "RTA: M/s Purva Sharegistry (India) Pvt. Ltd., Mumbai.",
+   "E-voting agency: National Securities Depository Limited (NSDL).",
+   "Company does not fall under CSR criteria under Section 135 of Companies Act, 2013.",
+   "No change in share capital during the year; Authorized Capital Rs. 3.50 Cr, Paid-up Capital Rs. 3.0894 Cr.",
+   "No material changes and commitments affecting financial position between 31st March 2026 and date of report.",
+   "No subsidiaries, joint ventures or associate companies.",
+   "Company not involved in manufacturing activity; Conservation of Energy, Technology Absorption, Foreign Exchange Earnings/Outgo not required",
+   "No related party contracts/arrangements not at arm's length; Form AOC-2 not applicable",
+   "Secretarial Audit by M/s. Rohit Bajpai & Associates (FRN: M.No.18490, COP No.6559) for FY 2025-26; no adverse observations; appointed for five years FY 2025-26 to FY 2029-30",
+   "Cost Audit not required under Section 148(1)",
+   "Business Responsibility Report not applicable for FY ended 31st March 2026",
+   "CSR not applicable under Section 135; no CSR policy, committee, or spend",
+   "Board met 6 times in FY 2025-26; all 4 directors attended all meetings",
+   "Audit Committee met 6 times; all 4 members attended all meetings",
+   "Nomination & Remuneration Committee met 3 times; all 4 members attended all meetings",
+   "Stakeholders Relationship Committee met 4 times; all 4 members attended all meetings",
+   "Independent Directors met on 06.02.2026 without non-independent directors/management",
+   "Board evaluation carried out; Board expressed satisfaction with overall functioning",
+   "Secretarial Standards SS-1 & SS-2 duly followed",
+   "No loans, guarantees, or investments under Section 186 exceeding limits",
+   "Declarations of independence received from all Independent Directors; no change in circumstances affecting status",
+   "No fixed deposits accepted during the year",
+   "Equity shares available for dematerialization on NSDL and CDSL",
+   "Corporate Governance provisions under Regulation 15(2)(a) not mandatorily applicable (paid-up capital \u2264 Rs 10 crore, net worth \u2264 Rs 25 crore as on 31st March 2025); Companies Act provisions continue to apply",
+   "Certificate from CS Rohit Bajpai confirming no director debarred/disqualified by SEBI/MCA",
+   "No shares in Demat Suspense/Unclaimed Suspense Account",
+   "One woman employee; Internal Complaints Committee not required under POSH Act; Maternity Benefit Act not applicable",
+   "No employee with salary above Rs 1.02 crore per annum or Rs 8.5 lakh per month; no employee earning more than MD/WTD/Manager and holding \u22652% equity",
+   "Financial year aligned 1st April to 31st March per Section 2(41)",
+   "Vigil Mechanism established for Directors and employees; policy on website",
+   "Internal Financial Control details included in Management Discussion & Analysis Report",
+   "Risk Management Committee not statutorily required; Audit Committee evaluates risk management system regularly",
+   "Policy on Directors' appointment and remuneration available on website",
+   "Management Discussion & Analysis annexed as Annexure-C",
+   "Secretarial Audit Report annexed as Annexure-B",
+   "Particulars of employees under Section 197(12) in Annexure-D",
+   "Corporate Governance certificate annexed as Annexure-E",
+   "Non-debarment certificate annexed as Annexure-F",
+   "Company is exempted from Corporate Governance provisions under SEBI LODR Regulation 15(2)(a) as paid-up equity share capital does not exceed Rs 10 crore and net worth does not exceed Rs 25 crore",
+   "Nominal Capital: Rs 350 Lakh",
+   "Registered Office: 002, Law Garden Apart., Scheme-1, Opp. Law Garden Ellisbridge, Ahmedabad-380006",
+   "No employee with salary above Rs 1.02 crore per annum or Rs 8.50 lakh per month",
+   "No increase in salaries of employees or managerial personnel for FY 2025-26",
+   "Company has not declared or paid any dividend during the year",
+   "No CSR liability under Section 135 of Companies Act",
+   "No investments in subsidiary company, no consolidated financial statements required",
+   "Cash profit in current and immediately preceding financial year"
+  ],
+  "outlook": [
+   {
+    "statement": "The Company is confident that it would be able to take advantage of emerging opportunities in the coming years.",
+    "period": "coming years"
+   },
+   {
+    "statement": "India expected to be one of the top three economic powers in the world over the next 10-15 years; increasing per-capita GDP, opportunity to cross-sell services, opening of financial sectors with innovative products, low retail penetration, extensive distribution reach, strong brand recognition, changing demographic profile favoring young, adequate capitalization to support medium-term growth plans.",
+    "period": "Medium to long term"
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "directors",
+    "amount_cr": null,
+    "note": "During the year under review, the Company has not made any borrowings from banks or any financial institutions or other parties except loans from directors."
+   },
+   {
+    "lender_or_type": "Borrowing (other than debt securities)",
+    "amount_cr": 1.15,
+    "note": "As per Balance Sheet as at 31st March 2026 (Rs 115.00 lakh)"
+   },
+   {
+    "lender_or_type": "Related Party (Mehta Integrated Finance Limited)",
+    "amount_cr": 1.15,
+    "note": "Borrowing (Related Party)"
+   },
+   {
+    "lender_or_type": "Bhavna D. Mehta (interest free)",
+    "amount_cr": 1.15,
+    "note": "Borrowing repayable as on 31/03/2026"
+   }
+  ],
+  "risks": [
+   "Regulatory Changes",
+   "Execution risk",
+   "Higher exposure to semi-formal and informal sector",
+   "Competition from local and multinational players",
+   "Inflationary pressure, slowdown in policy making and reduction in household saving in financial products",
+   "Attraction and retention of human Capital",
+   "Increasing competition from local and global players",
+   "Online fraud & Scams",
+   "Lack of Financial Knowledge",
+   "Geopolitical tensions",
+   "Raising crude oil prices",
+   "Rising US bond yields",
+   "Scams in the banking sector",
+   "Market risk",
+   "Credit risk",
+   "Liquidity risk",
+   "Market risk: risk of loss of future earnings, fair values or future cash flows from changes in price of financial instruments (interest rates, foreign currency exchange rates, equity prices)",
+   "Credit risk: risk of financial loss if customer or counterparty fails to meet contractual obligations, arising from receivables, investments, inter-corporate deposits, financial guarantees, cash with banks, and credit exposure to clients",
+   "Liquidity risk: risk that the Company will not be able to meet financial obligations as they become due",
+   "Currency risk: Company has no foreign currency denominated assets, exposure is NIL",
+   "Interest rate risk: investments primarily in variable rate interest instruments, exposure is insignificant",
+   "Price risk: risk that value of financial instruments will fluctuate due to changes in market prices, from investments in Mutual Funds, listed Equity Shares, Bonds classified at cost"
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (as per Accounting Standard-18)",
+    "nature": "Transactions disclosed in notes to accounts",
+    "amount_cr": null
+   },
+   {
+    "party": "Mehta Integrated Finance Limited",
+    "nature": "Borrowing (Related Party)",
+    "amount_cr": 1.15
+   },
+   {
+    "party": "Mehta Integrated Finance Limited",
+    "nature": "Short Term Advance from related party",
+    "amount_cr": 0.3894
+   },
+   {
+    "party": "Shreeji Enterprises",
+    "nature": "Investment in Partnership Firm (25% share)",
+    "amount_cr": 2.7963
+   },
+   {
+    "party": "Bhavna D. Mehta",
+    "nature": "Business Dealings/Repayment",
+    "amount_cr": 0.0
+   },
+   {
+    "party": "Bhavna D. Mehta",
+    "nature": "Borrowing (interest free)",
+    "amount_cr": 0.08
+   },
+   {
+    "party": "Mehta Integrated Finance Limited",
+    "nature": "Advance repayment",
+    "amount_cr": 0.0722
+   }
+  ],
+  "litigation": [
+   "No significant and material orders passed by Regulators, Courts or Tribunals impacting going concern status",
+   "No application made or proceedings pending under Insolvency and Bankruptcy Code, 2016",
+   "No instance of fraud during the year requiring reporting under Section 143(12)",
+   "No dues of Excise duty and Income Tax which have not been deposited on account of any dispute",
+   "The Company has disclosed the impact of pending litigations on its financial position in its Ind AS Financial Statements"
+  ],
+  "capex_plans": [
+   {
+    "item": "Purchase of fixed assets",
+    "amount_cr": 0.0032,
+    "timeline": "FY2026"
+   }
+  ]
+ }
+}
