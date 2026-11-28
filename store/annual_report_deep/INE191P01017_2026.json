@@ -1,0 +1,560 @@
+{
+ "isin": "INE191P01017",
+ "name": "GCM Capital Advisors Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f71cf691-6ec3-480e-9aa5-0db68e1f3471.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 341080,
+ "chunks": 9,
+ "chunks_ok": 8,
+ "facts": {
+  "business": {
+   "description": "GCM Capital Advisors Limited is a listed company holding its 13th Annual General Meeting for FY 2025-26.",
+   "value_chain_position": "other",
+   "products": [
+    {
+     "name": "Finance & Investments in Shares & Securities",
+     "share_of_revenue_pct": 100,
+     "note": "NIC Code 66110"
+    },
+    {
+     "name": "Sale of Equity Shares",
+     "share_of_revenue_pct": 38.2,
+     "note": "Revenue of Rs 87.17 lakh in FY2026"
+    },
+    {
+     "name": "Interest on ICDs & Other Deposits",
+     "share_of_revenue_pct": 61.8,
+     "note": "Revenue of Rs 140.76 lakh in FY2026"
+    },
+    {
+     "name": "Professional & Advisory Services",
+     "share_of_revenue_pct": 0,
+     "note": "No revenue in FY2026; Rs 10.00 lakh in FY2025"
+    },
+    {
+     "name": "Investments in equity shares",
+     "share_of_revenue_pct": null,
+     "note": "Carried at fair value through OCI"
+    },
+    {
+     "name": "Loans and advances",
+     "share_of_revenue_pct": null,
+     "note": "Includes loans to related parties and others, some interest-bearing, some not"
+    },
+    {
+     "name": "Derivative trading (F&O)",
+     "share_of_revenue_pct": null,
+     "note": "Exposure to futures & options contracts"
+    }
+   ],
+   "end_markets": [
+    "capital market",
+    "Capital markets",
+    "Corporate lending (ICDs)",
+    "corporate lending"
+   ],
+   "customers": [
+    "Non-corporate clients (ICD borrowers)",
+    "Counterparties for share trading",
+    "Clients for professional and advisory services"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": 100
+    },
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ]
+  },
+  "auditor": {
+   "name": "S P M L & Associates",
+   "opinion": "The Auditor's Report does not contain any qualification, reservation, adverse remark, except as given below, or disclaimer.",
+   "qualifications_or_emphasis": [
+    "Certain balances of trade receivables, trade payables, and loans and advances are subject to confirmation, reconciliation, and consequential adjustments, if any.",
+    "The Company is engaged in Investments and trading of shares and securities and other financial activities and meets the criteria specified under Section 45-IA of the Reserve Bank of India Act, 1934, requiring registration as a Non-Banking Financial Company (NBFC). However, the Company has not obtained such registration from the Reserve Bank of India.",
+    "During current and past years / periods, the Company has given various advances (recoverable in cash / kind) totaling to INR 641.70 Lakhs (gross value) \u2014 shown under 'Other financial assets (current)'. The management has explained us that these advances were given for the purpose of acquiring of shares / securities, however, such acquisition is majorly long pending as on balance sheet date.",
+    "Based on our review, it is observed that interest income is not recognized on some of outstanding loans and advances given to various parties as interest income could not be crystallized from such parties.",
+    "Emphasis of Matters addressed on Page No. 21",
+    "The Company is engaged in Investments and trading of shares and securities and other financial activities and meets the criteria specified under Section 45-IA of the Reserve Bank of India Act, 1934, requiring registration as a Non-Banking Financial Company (NBFC). However, the Company has not obtained such registration from the Reserve Bank of India",
+    "appointment of internal auditor is required in accordance with Section 138 of the Companies Act, 2013. However, in the opinion of management the Internal Audit is not required due to the size & nature of business. Therefore, no internal audit is undertaken or report is made available to us for the year under audit. However, we are not provided with the report of Internal Auditors of the Company and therefore, we are not in a position to comment on clause (xiv) of the Order.",
+    "Auditors have solely relied on management's representation regarding advances of Rs 408.90 lakh given for acquisition of shares/securities pending as on balance sheet date",
+    "Auditors have solely relied on management's representation regarding the value of current assets, loans and advances, and other receivables if realized in ordinary course of business",
+    "Auditors have relied on management's representation that the company does not have any transactions with companies struck off under section 248 of the Companies Act, 2013 or section 560 of Companies Act, 1956"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Manish Baid (DIN: 00239347) retires by rotation and seeks re-appointment at the 13th AGM.",
+    "Laxmi Narayan Sharma resigned as Independent Director on 18th April 2025",
+    "Mr. Laxmi Narayan Sharma (DIN: 00356855) has resigned from Directorship w.e.f. 18th April 2025, following completion of 2nd term of 5 years",
+    "Mr. Laxmi Narayan Sharma resigned from the Board w.e.f. 18 April 2025",
+    "Mrs. Akshaya Suved Chavan appointed as Independent Director w.e.f. 29th August 2024",
+    "Stakeholders' Relationship Committee was re-constituted w.e.f. 18th April 2025 wherein Mr. Laxmi Narayan Sharma has resigned from Board and Committee and in his place, Board has appointed Mrs. Akshaya Suved Chavan as Chairperson of the Committee",
+    "Mr. Laxmi Narayan Sharma ceased to be Non-Executive Director",
+    "Mr. Akshaya Suved Chavan appointed as Non-Executive Director"
+   ],
+   "auditor_change": "Statutory Auditor M/s. S P M L & Associates appointed for five consecutive years at 10th AGM (28th September 2023) till conclusion of 15th AGM; ratification not required per Companies (Amendment) Act, 2017.",
+   "promoter_holding_pct": 0.12,
+   "top_shareholders": [
+    {
+     "name": "Individual / HUF (Promoters)",
+     "pct": 0.12
+    },
+    {
+     "name": "GCM Securities Limited",
+     "pct": 35.95
+    },
+    {
+     "name": "GCM Commodity & Derivatives Ltd.",
+     "pct": 2.94
+    },
+    {
+     "name": "Pranesh Trades Private Limited",
+     "pct": 4.13
+    },
+    {
+     "name": "CNM Finvest Private Limited",
+     "pct": 4.01
+    },
+    {
+     "name": "Joydip Roy",
+     "pct": 1.99
+    },
+    {
+     "name": "Fraternize Dealcomm Pvt. Limited",
+     "pct": 1.53
+    },
+    {
+     "name": "One Tree Hill Properties",
+     "pct": 1.36
+    },
+    {
+     "name": "Vinay Kumar Tekriwal HUF",
+     "pct": 1.2
+    },
+    {
+     "name": "Aryadeep Infrahomes Private Limited",
+     "pct": 0.87
+    },
+    {
+     "name": "Vinay Kumar Tekriwal",
+     "pct": 0.53
+    },
+    {
+     "name": "GCM Commodity & Derivatives Ltd",
+     "pct": 2.94
+    },
+    {
+     "name": "Global Capital Markets Ltd.",
+     "pct": 0.03
+    },
+    {
+     "name": "Inderchand Baid",
+     "pct": 0.03
+    },
+    {
+     "name": "Saroj Baid",
+     "pct": 0.03
+    },
+    {
+     "name": "Manish Baid",
+     "pct": 0.03
+    },
+    {
+     "name": "Samir Baid",
+     "pct": 0.03
+    }
+   ],
+   "promoter_pledge_pct": 0
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Manish Baid",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Urmi Bose",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Suman Das",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Akshaya Suved Chavan",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rohit Pandey",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Neha Sarawagi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Manish Baid",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Neha Sarawagi",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Rohit Pandey",
+     "role": "CFO"
+    },
+    {
+     "name": "Ms. Neha Sarawagi",
+     "role": "Company Secretary, Compliance Officer"
+    },
+    {
+     "name": "Manish Baid",
+     "role": "Managing Director (DIN: 00239347)"
+    },
+    {
+     "name": "Urmi Bose",
+     "role": "Director (DIN: 07245298)"
+    },
+    {
+     "name": "Mr. Manish Baid",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Suman Das",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mrs. Urmi Bose",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Akshaya Suved Chavan",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Rakshit Anchan",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Neha Sarawgi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Rohit Pandey",
+     "role": "Chief Financial Officer (as per Note 36.1)"
+    }
+   ],
+   "employees": 14
+  },
+  "other_notable": [
+   "13th AGM scheduled for 22nd September 2026 at 11:30 AM IST through VC/OAVM.",
+   "Registered Office: 805, Raheja Center, 214, Free Press Journal Marg, Nariman Point, Mumbai-400021.",
+   "Registrar & Share Transfer Agent: S. K. Infosolutions Private Limited, Kolkata.",
+   "Bankers: ICICI Bank Limited.",
+   "E-voting period: 19th September 2026 (9:00 am) to 21st September 2026 (5:00 pm).",
+   "Cut-off date for e-voting: 15th September 2026.",
+   "Register of Members and Share Transfer Books closed from 16th September 2026 to 22nd September 2026 (both days inclusive).",
+   "Scrutinizer for e-voting: CS Kriti Daga, Practicing Company Secretary (Membership No. A26425).",
+   "Annual Report available at www.gcmcap.com, www.bseindia.com, and https://nsdl.co.in.",
+   "Paid up Equity Share Capital as on March 31, 2026 was \u20b9 16.94 Crore consisting of 1,69,40,000 Equity Shares of \u20b9 10/- each.",
+   "The Company's Equity Shares are listed in the SME Segment of BSE Limited.",
+   "Financial statements prepared in accordance with Indian Accounting Standards (IND AS).",
+   "No audit qualification in the standalone financial statements except as stated on Page 22 of the Report.",
+   "The Company does not have any Subsidiary, Associate and Joint Venture during the reporting period.",
+   "Secretarial Audit conducted by Mrs. Kriti Daga, Company Secretaries in Practice (C. P. No. 14023) for FY 2025-26.",
+   "Internal Audit entrusted to M/s A. K. Das & Co., Chartered Accountant Firm, Kolkata (FRN \u2013 325204E).",
+   "Independent Directors meeting held on February 14, 2026.",
+   "Board evaluation carried out for FY 2025-26.",
+   "Vigil Mechanism / Whistle Blower Policy adopted and disclosed on website.",
+   "Policy for determining material Subsidiary Companies available on website.",
+   "Policy on dealing with Related Party Transactions available on website.",
+   "Familiarization Programme for Independent Directors available on website.",
+   "Annual Return attached as Annexure IV",
+   "No case of sexual harassment during the year under review",
+   "Conservation of Energy, Technology Absorption, Adoption and Innovation reported as NIL",
+   "Business Responsibility Report not applicable (not among top 500 or 1000 Companies by turnover)",
+   "No foreign exchange earnings/outgoings",
+   "No public deposits accepted",
+   "Maintenance of cost records not required",
+   "Statutory Auditors' Report does not contain any qualification, reservation, adverse remark or disclaimer except an 'Emphasis of Matters'",
+   "No frauds reported by Statutory Auditors, Internal Auditors and Secretarial Auditors",
+   "Compliance with Secretarial Standards affirmed",
+   "Corporate Governance: Company listed on SME Exchange of BSE, voluntarily complying with Regulations 17, 17A, 18, 19, 20, 21, 22, 23, 24, 24A, 25, 26, 27 and clauses (b) to (i) of sub-regulation (2) of regulation 46 and para C, D and E of Schedule V of SEBI LODR Regulations, 2015",
+   "No application made or proceeding pending under Insolvency and Bankruptcy Code, 2016",
+   "No one time settlement of loans from Banks or Financial Institutions",
+   "No failure to implement any corporate action",
+   "No material development in Human Resources, Industrial Relations front",
+   "CSR Initiatives not applicable",
+   "No penalties/strictures imposed by SEBI or any other statutory authority on any matter related to capital market during the last three years",
+   "All related party transactions were in ordinary course of business and on arm's length basis",
+   "No material related party transactions",
+   "Secretarial Audit conducted by KRITI DAGA, Practicing Company Secretaries",
+   "Board of Directors duly constituted with proper balance of executive directors, non-executive directors and independent directors including one woman director",
+   "Company has complied with Secretarial Standard SS-1 and SS-2",
+   "No specific event/action having major bearing on Company's affairs during audit period",
+   "Total share capital: 16,940,000 equity shares",
+   "Promoter shareholding unchanged at 39.03% during FY 2025-26",
+   "Board met 5 times during FY 2025-26",
+   "Audit Committee met 2 times during FY 2025-26",
+   "Nomination & Remuneration Committee re-constituted w.e.f. 18th April 2025",
+   "Median remuneration of employees increased by 8.49% in FY 2025-26",
+   "Managerial personnel salaries increased by 177.35% in FY 2025-26",
+   "CFO remuneration: Rs 5.59 lakh; Company Secretary remuneration: Rs 2.28 lakh",
+   "Managing Director and all Non-Executive Directors received nil remuneration",
+   "Company has Board diversity policy and familiarization programme for Independent Directors",
+   "Website for policies and familiarization programme: http://www.gcmcap.com/company-policies.html",
+   "Nomination & Remuneration Committee met once on 18th April 2025 during the financial year ended 31st March 2026",
+   "Stakeholders' Relationship Committee generally meets once a month",
+   "One meeting of Stakeholders' Relationship Committee was held on 14th April 2025 during financial year 2025-26",
+   "Independent Directors met on February 14, 2026"
+  ],
+  "risks": [
+   "Being a share broking firm, the Company is exposed to credit, liquidity and interest rate risk.",
+   "Investment in Stock Market, both in Quoted and Unquoted Shares, have the risk of change in the price and value, both in term of up and down and thus can affect the profitability of the Company.",
+   "market risk",
+   "competition risk",
+   "credit risk",
+   "liquidity and interest rate risk",
+   "human resource risk",
+   "operational risk",
+   "information security risks",
+   "regulatory risk",
+   "macro-economic risks",
+   "Regulatory Overhang in Derivatives: increased margin requirements, contract lot size increases, and hikes in Securities Transaction Tax (STT) on options and futures have significantly compressed profit margins for active derivative traders",
+   "Macroeconomic Headwinds: Escalating geopolitical tensions and global energy shocks are driving up import bills, putting pressure on the Indian Rupee and ballooning the Balance of Payments deficit",
+   "SME Market Normalization: Following the speculative boom in SME listings, heightened regulatory scrutiny and cooling retail enthusiasm pose risks for small businesses relying on the markets for easy, quick capital",
+   "Global VUCA Conditions: Ongoing global market volatility, driven by shifting monetary policies abroad and changing multilateral trade relationships",
+   "The Company is engaged in Investments and trading of shares and securities and other financial activities and meets the criteria specified under Section 45-IA of the Reserve Bank of India Act, 1934, requiring registration as a Non-Banking Financial Company (NBFC). However, the Company has not obtained such registration from the Reserve Bank of India",
+   "Internal financial controls over financial reporting were operating reasonably as at March 31, 2026, with certain areas requiring strengthening based on the internal control over financial reporting criteria established by the Company considering the essential components of internal control stated in the Guidance Note on Audit of Internal Financial Controls Over Financial Reporting issued by the ICAI. Certain areas for further strengthening have been observed and suggested to the Company. These includes, (i) enabling of audit log feature on the accounting software of the Company; (ii) critical monitoring of the position, repayment and settlement of loans and advances given etc. In some instances, certain controls are being exercised through informal procedures, and formalization and documenting of such controls would further strengthen the overall control environment, so as to commensurate with the size and nature of business operations of the Company.",
+   "Credit risk on loans and advances (ICDs) and other financial assets",
+   "Expected Credit Loss (ECL) provisioning volatility",
+   "Concentration of lending to corporate entities via ICDs",
+   "Pending acquisition of shares/securities against advances given (Rs 408.90 lakh gross)",
+   "Legal ownership of vehicles (PPE) held in names of directors/individuals on behalf of company",
+   "Income tax demand of Rs 76.43 lakh for AY 2017-18 under dispute",
+   "Market risk from equity and derivative exposures",
+   "Credit risk from loans, advances, and trade receivables",
+   "Liquidity risk in meeting financial obligations",
+   "Currency risk",
+   "Weakness in internal control design commensurate with growing business size",
+   "Balances of trade receivables, trade payables, and loans and advances subject to confirmation and reconciliation"
+  ],
+  "litigation": [
+   "There are no significant and material orders passed by the Regulators/Courts that would impact the going concern status of the Company and its future operations.",
+   "There were no prosecution initiated and no fines or penalties were imposed during the year under review under the Act, SEBI Act, SCRA, Depositories Act, Listing Agreement, Rules, Regulations and Guidelines framed under these Acts against/ on the Company, its Directors and Officers.",
+   "No Instance of Penalty, Punishment or Compounding of Offences for Company, Directors, or Other Officers in Default",
+   "Income Tax Act, 1961 Income Tax CIT (Appeal) 2017-18 76.43",
+   "Income tax demand of Rs 76.43 lakh for AY 2017-18 under section 147 assessment proceedings",
+   "During FY 2024-25, the Company opted under 'Vivaad Se Vishwaas Scheme' to settle various old tax dispute matters; matters settled as on 31 March 2026"
+  ],
+  "outlook": [
+   {
+    "statement": "The management remains focused on improving operational efficiency, expanding revenue streams and exercising tighter control over costs, with the objective of strengthening the Company's overall financial performance in the coming years. These efforts are also aimed at progressively reducing the Company's reliance on external sources of finance and building a more self-sustaining operational and financial structure going forward.",
+    "period": "coming years"
+   },
+   {
+    "statement": "The Indian capital market is experiencing robust expansion, driven by rising retail investor participation, digital transformation of financial services, and strong domestic economic fundamentals.",
+    "period": "2026"
+   }
+  ],
+  "subsidiaries": [
+   {
+    "name": "Not Any",
+    "holding_pct": null,
+    "business": "N.A."
+   },
+   {
+    "name": "GCM Commodity & Derivatives Limited",
+    "holding_pct": 100,
+    "business": "Wholly Owned Subsidiary"
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Holding Company",
+    "nature": "Loans and advances in the nature of loans to subsidiaries by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Holding Company",
+    "nature": "Loans and advances in the nature of loans to associates by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Holding Company",
+    "nature": "Loans and advances in the nature of loans to Firms/Companies in which directors are interested by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Subsidiary",
+    "nature": "Loans and advances in the nature of loans to subsidiaries by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Subsidiary",
+    "nature": "Loans and advances in the nature of loans to associates by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Subsidiary",
+    "nature": "Loans and advances in the nature of loans to Firms/Companies in which directors are interested by name and amount",
+    "amount_cr": 0
+   },
+   {
+    "party": "Holding Company",
+    "nature": "Investment by the loanee in the shares of parent Company and subsidiary Company has made a loan or advance in the nature of loan",
+    "amount_cr": 0
+   },
+   {
+    "party": "GCM Securities Limited",
+    "nature": "Holding Company (35.95% shareholding)",
+    "amount_cr": null
+   },
+   {
+    "party": "GCM Commodity & Derivatives Ltd",
+    "nature": "Promoter group entity (2.94% shareholding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Global Capital Markets Ltd.",
+    "nature": "Promoter group entity (0.03% shareholding)",
+    "amount_cr": null
+   },
+   {
+    "party": "Inderchand Baid, Saroj Baid, Manish Baid, Samir Baid",
+    "nature": "Promoters (0.03% each)",
+    "amount_cr": null
+   },
+   {
+    "party": "GCM Commodity & Derivatives Limited",
+    "nature": "Other Current Liabilities",
+    "amount_cr": 0.015
+   },
+   {
+    "party": "GCM Securities Limited",
+    "nature": "Loan & Advances",
+    "amount_cr": 0.253
+   },
+   {
+    "party": "Chello Commotrade Private Limited",
+    "nature": "Loan & Advances",
+    "amount_cr": 0.218
+   },
+   {
+    "party": "Matarani Commotrade Private Limited",
+    "nature": "Loan & Advances",
+    "amount_cr": 0.199
+   },
+   {
+    "party": "Blue Lagoon Trading Pvt. Ltd.",
+    "nature": "Loan & Advances",
+    "amount_cr": 0.79
+   },
+   {
+    "party": "Rupasi Traders Private Limited",
+    "nature": "Loan & Advances",
+    "amount_cr": 1.525
+   },
+   {
+    "party": "Manish Baid",
+    "nature": "Other Current Liabilities",
+    "amount_cr": -0.005
+   },
+   {
+    "party": "Shilpa Baid",
+    "nature": "Debtors",
+    "amount_cr": 0.0207
+   },
+   {
+    "party": "Shilpa Baid",
+    "nature": "Remuneration",
+    "amount_cr": 0.12
+   },
+   {
+    "party": "Mr. Rakshit Anchan",
+    "nature": "Salary & Perquisites",
+    "amount_cr": 0.0419
+   },
+   {
+    "party": "Ms. Neha Sarawgi",
+    "nature": "Salary & Perquisites",
+    "amount_cr": 0.0228
+   },
+   {
+    "party": "Mr. Rohit Pandey",
+    "nature": "Salary & Perquisites",
+    "amount_cr": 0.0559
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Secured Loans",
+    "amount_cr": 0.8039,
+    "note": "Principal amount at end of financial year 2025-26; no unsecured loans or deposits"
+   },
+   {
+    "lender_or_type": "Non-Current Borrowings",
+    "amount_cr": 0.6063,
+    "note": "Opening Balance 28.96 lakh, Amount Borrowed during the year 56.45 lakh, Amount Repaid during the year 24.78 lakh, Closing Balance 60.63 lakh"
+   },
+   {
+    "lender_or_type": "Short-term Borrowings",
+    "amount_cr": 0.1976,
+    "note": "Opening Balance 21.63 lakh, Amount Borrowed during the year 19.76 lakh, Amount Repaid during the year 21.63 lakh, Closing Balance 19.76 lakh"
+   },
+   {
+    "lender_or_type": "ICICI Bank Limited - Car Loan (Mercedes Benz E220d)",
+    "amount_cr": 0.2394,
+    "note": "Secured against hypothecation of vehicle; 10.25% p.a.; 21 monthly installments remaining as on 31 March 2026"
+   },
+   {
+    "lender_or_type": "BMW Financial Services Limited - Car Loan (BMW 3 Series 330Li)",
+    "amount_cr": 0,
+    "note": "Fully repaid as on 31 March 2026; was Rs 14.50 lakh in FY2025"
+   },
+   {
+    "lender_or_type": "Bank of Baroda - Car Loan (Skoda Monte Carlo)",
+    "amount_cr": 0.1752,
+    "note": "Secured against hypothecation of vehicle; 8.35% p.a.; 81 monthly installments remaining as on 31 March 2026"
+   },
+   {
+    "lender_or_type": "Bank of Baroda - Car Loan (Toyota Camry)",
+    "amount_cr": 0.3893,
+    "note": "Secured against hypothecation of vehicle; 8.35% p.a.; 81 monthly installments remaining as on 31 March 2026"
+   },
+   {
+    "lender_or_type": "Vehicle loans from banks/financial institutions",
+    "amount_cr": null,
+    "note": "Secured by hypothecation of respective vehicles; charge not yet registered with ROC"
+   },
+   {
+    "lender_or_type": "Borrowings (as per financial instruments)",
+    "amount_cr": 0.8039,
+    "note": "Carrying amount as on 31.03.2026"
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Income Tax",
+    "amount_cr": 0.7643
+   },
+   {
+    "nature": "Tax dispute under Income-tax Act, 1961 for AY 2017-18 (FY 2016-17)",
+    "amount_cr": 0.7643
+   }
+  ],
+  "capex_plans": [
+   {
+    "item": "Purchase of 2 new cars (vehicles)",
+    "amount_cr": 0.6594,
+    "timeline": "FY2026"
+   }
+  ]
+ }
+}

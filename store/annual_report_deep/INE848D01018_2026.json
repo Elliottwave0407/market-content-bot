@@ -1,0 +1,450 @@
+{
+ "isin": "INE848D01018",
+ "name": "V B Desai Financial Services Ltd",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/e02d4aa9-9492-4d71-bb3b-6b67f8c34c2b.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 188288,
+ "chunks": 5,
+ "chunks_ok": 5,
+ "facts": {
+  "business": {
+   "description": "V.B. Desai Financial Services Limited is a Category I Merchant Banker registered with SEBI.",
+   "value_chain_position": "service",
+   "brands_or_certifications": [
+    "SEBI Registration No. INM 000002731",
+    "SEBI registered Category I Merchant Banker",
+    "Registered Category - I Merchant Banker with SEBI"
+   ],
+   "products": [
+    {
+     "name": "Merchant Banking activities",
+     "share_of_revenue_pct": 72.11,
+     "note": "NIC code 64990"
+    },
+    {
+     "name": "Interest Income",
+     "share_of_revenue_pct": 27.89,
+     "note": "NIC code 64990"
+    },
+    {
+     "name": "Merchant Banking and related services",
+     "share_of_revenue_pct": null,
+     "note": "Income comprises fees received on advisory services, merchant banking activities, valuation and ESOP advisory, due diligence of AIF placement memorandum"
+    },
+    {
+     "name": "Merchant Banking and financial services",
+     "share_of_revenue_pct": null,
+     "note": "Single segment as per IND AS 108"
+    }
+   ],
+   "end_markets": [
+    "capital market",
+    "financial services"
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    }
+   ]
+  },
+  "related_party": [
+   {
+    "party": "Aarayaa Advisory Services Private Limited",
+    "nature": "Professional fees for rendering services",
+    "amount_cr": 3.0
+   },
+   {
+    "party": "Desai Investments Private Limited",
+    "nature": "Inter corporate loan and Investments and in equity shares",
+    "amount_cr": 2.0
+   },
+   {
+    "party": "VBD Capital Advisors Private Limited",
+    "nature": "Professional fees for rendering services",
+    "amount_cr": 0.25
+   },
+   {
+    "party": "Related Parties",
+    "nature": "All transactions with the Related Parties as defined under the Companies Act, 2013 read with Rules framed thereunder were in the ordinary course of business and at arm's length basis.",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Inter Corporate Deposit (Loans and Advances)",
+    "amount_cr": 0.9704
+   },
+   {
+    "party": "Desai Investments Pvt. Ltd.",
+    "nature": "Enterprise in which KMP/Relatives of KMP can exercise significant influence",
+    "amount_cr": 1.8296
+   },
+   {
+    "party": "Aarayaa Advisory Services Pvt. Ltd.",
+    "nature": "Enterprise in which KMP/Relatives of KMP can exercise significant influence",
+    "amount_cr": null
+   },
+   {
+    "party": "VBD Capital Advisors Pvt. Ltd.",
+    "nature": "Enterprise in which KMP/Relatives of KMP can exercise significant influence",
+    "amount_cr": null
+   },
+   {
+    "party": "Raj Pradip Shroff HUF",
+    "nature": "Relative of a Director",
+    "amount_cr": null
+   },
+   {
+    "party": "KMP (Key Management Personnel)",
+    "nature": "Remuneration paid",
+    "amount_cr": 0.2265
+   },
+   {
+    "party": "KMP (Key Management Personnel)",
+    "nature": "Director's Sitting Fees",
+    "amount_cr": 0.0383
+   },
+   {
+    "party": "Enterprises in which KMP/Relatives of KMP can exercise significant influence",
+    "nature": "Interest received on loans and advances",
+    "amount_cr": 0.097
+   },
+   {
+    "party": "Enterprises in which KMP/Relatives of KMP can exercise significant influence",
+    "nature": "Professional Fees Paid",
+    "amount_cr": 1.8296
+   },
+   {
+    "party": "Enterprises in which KMP/Relatives of KMP can exercise significant influence",
+    "nature": "Net Loans and Advances given/(returned) - Outstanding balance",
+    "amount_cr": 0.9704
+   },
+   {
+    "party": "Enterprises in which KMP/Relatives of KMP can exercise significant influence",
+    "nature": "Interest receivable on loans and advances given - Outstanding balance",
+    "amount_cr": 0.5518
+   },
+   {
+    "party": "Enterprises in which KMP/Relatives of KMP can exercise significant influence",
+    "nature": "Trade Payable - Outstanding balance",
+    "amount_cr": 0.2147
+   }
+  ],
+  "auditor": {
+   "name": "M/s. N.S. SHETTY & CO., Chartered Accountants, Mumbai",
+   "opinion": "There has been no qualification, reservation, adverse remark, or disclaimer given by the Auditors in their Report.",
+   "key_audit_matters": [
+    "Based on the circumstances and facts of the Audit, there are no key audit matters to be reported."
+   ]
+  },
+  "governance": {
+   "top_shareholders": [
+    {
+     "name": "Desai Investments Private Limited",
+     "pct": 17.04
+    },
+    {
+     "name": "DESAI INVESTMENTS PVT. LTD.",
+     "pct": 17.04
+    },
+    {
+     "name": "SOM HOLDING & TRAD CO. PVT LTD.",
+     "pct": 4.29
+    },
+    {
+     "name": "DESAI INDUSTRIAL FINANCE PVT. LTD.",
+     "pct": 3.31
+    },
+    {
+     "name": "MUKESH THAKORLAL SHROFF",
+     "pct": 3.83
+    },
+    {
+     "name": "DHARTI J SHROFF",
+     "pct": 5.77
+    },
+    {
+     "name": "JITENDRA R. SHROFF HUF",
+     "pct": 2.01
+    },
+    {
+     "name": "NEPTUNE STEEL STRIPS LIMITED",
+     "pct": 2.31
+    },
+    {
+     "name": "DEV ASHOK KARVAT",
+     "pct": 2.07
+    },
+    {
+     "name": "SRIHARI SIRDESHPANDE",
+     "pct": 1.69
+    },
+    {
+     "name": "VINOD CHANDRA BHATT",
+     "pct": 1.35
+    },
+    {
+     "name": "Promoters and Persons Acting in concert",
+     "pct": 42.27
+    },
+    {
+     "name": "Indian Public",
+     "pct": 52.18
+    },
+    {
+     "name": "Bodies Corporates/LLP",
+     "pct": 2.37
+    },
+    {
+     "name": "Banks & Financial Institutions/FPI",
+     "pct": 0.94
+    },
+    {
+     "name": "Hindu Undivided Family",
+     "pct": 1.47
+    },
+    {
+     "name": "Clearing Members",
+     "pct": 0.55
+    },
+    {
+     "name": "NRIs/OCBs",
+     "pct": 0.22
+    },
+    {
+     "name": "Desai Investments Pvt. Ltd.",
+     "pct": 17.04
+    },
+    {
+     "name": "Mrs. Dharati J. Shroff",
+     "pct": 5.77
+    },
+    {
+     "name": "Som Holding & Trad Co. Pvt Ltd",
+     "pct": 4.29
+    },
+    {
+     "name": "Mukesh Thakorlal Shroff",
+     "pct": 3.83
+    },
+    {
+     "name": "Neptune Steel Strips Limited",
+     "pct": 2.31
+    },
+    {
+     "name": "Jitendra R. Shroff Huf",
+     "pct": 2.01
+    }
+   ],
+   "director_changes": [
+    "Mr. Nilesh R. Doshi - Chairman (DIN 00249715) up to 29-07-2026",
+    "Mr. Suraj R. Vishwakarma (DIN 07661216) from 17-08-2026",
+    "Mr. Shashank S. Vijayakar (upto 09.08.2026) as CFO",
+    "Mr. Hemendra J. Shroff (from 17.08.2026) as CFO",
+    "Mr. Manoj T. Shroff , Director of the Company shall retire by rotation at the forthcoming Annual General Meeting and offer himself for re-appointment.",
+    "Mr. Nilesh R. Doshi ceased as Independent Chairman up to 29-07-2026",
+    "Mr. Hemendra J. Shroff appointed as Executive Director from 17-08-2026",
+    "Mr. Sagar Yadav appointed as Independent Chairman from 17-08-2026",
+    "Mr. Suraj R. Vishwakarma appointed as Independent Director from 17-08-2026"
+   ],
+   "promoter_holding_pct": 42.27,
+   "promoter_pledge_pct": 0,
+   "auditor_change": "The Members of the Company at the 37th Annual General Meeting held on 22nd September 2023, have approved the appointment of M/s. N.S. Shetty & Co., Chartered Accountants as Statutory Auditors of the Company for a period of five (5) years to hold office from the conclusion of the 37th Annual General Meeting till the conclusion of 42nd AGM of the Company to be held in the year 2028."
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Mr. Pradip R. Shroff",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Mr. Hemendra J. Shroff",
+     "role": "Executive Director cum Chief Financial Officer (from 17.08.2026)"
+    },
+    {
+     "name": "Mr. Kamlesh M. Gagavani",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Pradip R. Shroff",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Manoj T. Shroff",
+     "role": "Director"
+    },
+    {
+     "name": "Hemendra J. Shroff",
+     "role": "Director"
+    },
+    {
+     "name": "Kamlesh M. Gagavani",
+     "role": "CFO"
+    },
+    {
+     "name": "Sagar Yadav",
+     "role": "Chairman"
+    },
+    {
+     "name": "Nilesh Doshi",
+     "role": "Director"
+    },
+    {
+     "name": "Rachana Vijayakar",
+     "role": "Director"
+    },
+    {
+     "name": "Jitendra Shroff",
+     "role": "Director"
+    },
+    {
+     "name": "Sanjay Kapadia",
+     "role": "Director"
+    },
+    {
+     "name": "Suraj Ravishchandra Vishwakarma",
+     "role": "Director"
+    },
+    {
+     "name": "Mr. Shashank S. Vijayakar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Mr. Kamlesh M. Gagavani",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Hemendra J. Shroff",
+     "role": "Chief Financial Officer (from 17-08-2026)"
+    },
+    {
+     "name": "Nilesh R Doshi",
+     "role": "Chairman"
+    },
+    {
+     "name": "Pradip R Shroff",
+     "role": "Managing Director"
+    },
+    {
+     "name": "Hemendra Shroff",
+     "role": "Director"
+    },
+    {
+     "name": "Kamlesh M Gagavani",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Shashank S. Vijayakar",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Kamlesh Gagavani",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Jitendra R Shroff",
+     "role": "Director"
+    }
+   ],
+   "employees": 5
+  },
+  "other_notable": [
+   "AGM scheduled for 17th September 2026 at 11.30 a.m. through VC/OAVM",
+   "Remote e-voting period: 14th September 2026 (9:00 A.M.) to 16th September 2026 (5:00 P.M.)",
+   "Cut-off date for e-voting: September 10, 2026",
+   "Registrar & Share Transfer Agent: Purva Sharegistry (India) Pvt. Ltd.",
+   "Bankers: HDFC Bank Ltd.",
+   "Gross Income for FY 2025-26: Rs. 393.58 lakhs (18.27% increase YoY)",
+   "Profit after tax for FY 2025-26: Rs. 86.90 lakhs (55.68% increase YoY)",
+   "No dividend recommended for FY 2025-26",
+   "Foreign Exchange Earnings: Rs. 29.27 lakhs; Outgo: Nil",
+   "Register of members and Share Transfer Books closed from September 11, 2026 to September 16, 2026 (both days inclusive)",
+   "Company is exempted from Corporate Governance Report under Regulation 15(2) of SEBI LODR but voluntarily provides it",
+   "Business Responsibility Report not applicable",
+   "Secretarial Audit conducted by Amosh Archapelly and Associates, Practicing Company Secretaries",
+   "Internal Complaints Committee (ICC) constituted under Sexual Harassment of Women at Workplace Act; Nil complaints received in FY 2025-26",
+   "No female employees on payroll during FY 2025-26",
+   "Vigil Mechanism / Whistle Blower Policy established",
+   "Code of Conduct for Prevention of Insider Trading adopted",
+   "Risk Management Committee constituted",
+   "Annual Return as at March 31, 2025 uploaded on www.vbdesai.com",
+   "Board meetings held on 06/05/2025, 21/07/2025, 05/11/2025 & 05/02/2026",
+   "Scrutinizer for e-voting: Amosh Archapelly and Associates, Practicing Company Secretaries",
+   "Results of e-voting to be placed on www.vbdesai.com and NSDL website, and forwarded to BSE Limited",
+   "Company is exempted from Corporate Governance report under Regulation 15(2) of SEBI LODR but voluntarily reports",
+   "Total audit fees: Rs. 2.00 Lakhs",
+   "Financial results published in The Free Press Journal and Navshakti dailies",
+   "92% shares held in dematerialized form as on 31st March 2026",
+   "No outstanding GDR/Warrants/Convertible Instruments",
+   "Registrar & Transfer Agent: Purva Sharegistry (India) Pvt. Ltd.",
+   "Stock Code: BSE Limited \u2013 511110",
+   "ISIN: INE848D01018",
+   "AGM scheduled for 17th September 2026 at 11.30 a.m.",
+   "Book closure: 11-09-2026 to 16-09-2026",
+   "Secretarial Audit conducted by Amosh Archapelli, HARIHARAN & ASSOCIATES, Practicing Company Secretaries",
+   "No strictures or penalties imposed by SEBI/Stock Exchange/regulatory authority in last three years",
+   "Whistle Blower Policy in place",
+   "Code of Business Conduct and Ethics for Board and Senior Management in place",
+   "All Board members and senior management affirmed compliance with Code of Conduct for year ended 31st March 2026",
+   "The Company has neither declared nor paid the dividend during the year.",
+   "The Company has not accepted any deposits within the meaning from section 73 to 76 of the Act.",
+   "The Company has not raised any money by way of initial public offer or further public offer (including debt instruments) and not availed any term loans from banks or financial institutions during the year.",
+   "No material fraud by the Company or on the Company by its officers or employees has been noticed or reported during the year.",
+   "The Company has not incurred cash losses in the financial year and in the immediately preceding financial year.",
+   "The Company is exempt from complying with Sec.135 of Companies Act, 2013.",
+   "The Company has used an accounting software for maintaining its books of account which has a feature of recording audit trail (edit log) facility and the same has operated throughout the year for all relevant transactions recorded in the software.",
+   "Company has elected reduced income tax rate of 22% plus surcharge and cess under Section 115BAA of Income Tax Act",
+   "No transactions with strike-off companies during the year",
+   "Additional disclosures under Schedule III of Companies Act, 2013 are either NIL or Not Applicable",
+   "Gratuity plan is non-funded with adequate provision as per actuarial valuation",
+   "Provision for trade receivables calculated using Expected Credit Loss (ECL) method based on average bad debts from 2015-16 to 2017-18",
+   "Pre-existing provision of Rs. 17.51 Lakhs for credit impaired receivables considered adequate, no additional provision made",
+   "Working capital of Rs. 222.30 Lakhs as on March 2026 (Rs. 134.99 Lakhs as on March 2025)",
+   "Executive Directors provide funding whenever working capital is required",
+   "Foreign exchange earnings from Professional Fees: Rs. 29.27 Lakhs (2025-26), Rs. 39.95 Lakhs (2024-25)",
+   "Government of India notified four Labour Codes on November 21, 2025 - no material impact on financial statements"
+  ],
+  "risks": [
+   "At present the Company has not identified any element of risk which may threaten the existence of the Company.",
+   "Financial services companies operate in increasingly complex, competitive and continuously evolving legislative and regulatory environment due to increasing globalization, integration of world markets, newer and more complex products & transactions and an increasingly stringent regulatory framework.",
+   "Market risk",
+   "Credit risk",
+   "Liquidity risk",
+   "Foreign currency risk"
+  ],
+  "subsidiaries": [
+   {
+    "name": "",
+    "holding_pct": null,
+    "business": "The Company does not have Subsidiary or Joint Ventures."
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Secured Loans excluding deposits",
+    "amount_cr": 0,
+    "note": "Indebtedness at the beginning and end of the financial year is zero."
+   },
+   {
+    "lender_or_type": "Unsecured Loans",
+    "amount_cr": 0,
+    "note": "Indebtedness at the beginning and end of the financial year is zero."
+   },
+   {
+    "lender_or_type": "Deposits",
+    "amount_cr": 0,
+    "note": "Indebtedness at the beginning and end of the financial year is zero."
+   }
+  ],
+  "outlook": [
+   {
+    "statement": "The financial services sector has shown rapid growth with an improvement in the economic environment. Company will continue to capitalize the growing economic opportunities and looks forward in view of the reposed confidence of Investors in the capital market. With strengthening of the economy and stable economic environment, the Indian capital market is expected to perform well. The management will continue to focus on Merchant Banking activities and Advisory Services and endeavor to deliver best solutions to the clients to their satisfaction.",
+    "period": "2025-26"
+   }
+  ],
+  "litigation": [
+   "The company does not have any pending litigations which would impact its financial position."
+  ]
+ }
+}
