@@ -1,0 +1,795 @@
+{
+ "isin": "INE931D01020",
+ "name": "Samtex Fashions Ltd-$",
+ "fy": 2026,
+ "src": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/c0886835-5cdb-4dfb-a7e4-62a97efcbe48.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 353343,
+ "chunks": 9,
+ "chunks_ok": 9,
+ "facts": {
+  "business": {
+   "description": "Samtex Fashions Limited is a government recognised export house engaged in men's fashion technology.",
+   "plants": [
+    {
+     "location": "Khasra No. 62 D1/3 Industrial Area, Rajarampur, Sikandrabad, Bulandshahr, Uttar Pradesh - 203205",
+     "capacity": ""
+    },
+    {
+     "location": "Khasra No 62, D 1/3 Industrial Area, Rajarampur, Sikandrabad, Bulandshahr, UP 203205",
+     "capacity": "Not operational; manufacturing facilities not set up due to absence of orders"
+    },
+    {
+     "location": "Khasra No. 60, D1/3, Industrial Area, Rajarampur, Sikandrabad, Bulandshahr, UP- 203205",
+     "capacity": ""
+    },
+    {
+     "location": "NSEZ, Noida (originally); shifted outside NSEZ during FY 2017-18",
+     "capacity": ""
+    },
+    {
+     "location": "Samalkha",
+     "capacity": ""
+    }
+   ],
+   "value_chain_position": "manufacturer",
+   "brands_or_certifications": [
+    "Govt. Recognised Export House"
+   ],
+   "products": [
+    {
+     "name": "Ready Made Garments",
+     "share_of_revenue_pct": null,
+     "note": "No manufacturing activities have been carried on; commencement of manufacturing activities at the new premises is not able to setup and start in absence of orders."
+    },
+    {
+     "name": "ready-made garments",
+     "share_of_revenue_pct": null,
+     "note": "No manufacturing activity since March 2019"
+    },
+    {
+     "name": "food grains",
+     "share_of_revenue_pct": null,
+     "note": "Trading activity"
+    }
+   ],
+   "geographies": [
+    {
+     "name": "India",
+     "share_pct": null
+    },
+    {
+     "name": "USA (New York)",
+     "share_pct": null
+    },
+    {
+     "name": "New York",
+     "share_pct": null
+    }
+   ]
+  },
+  "auditor": {
+   "name": "M/s Kapil Kumar & Co., Chartered Accountants",
+   "opinion": "Qualified/Adverse (multiple qualifications and emphasis of matter paragraphs)",
+   "key_audit_matters": [
+    "Impairment testing of fixed assets not done as per Ind AS 36; depreciation not charged on PPE",
+    "Long outstanding trade receivables of Rs 552.93 lacs not provided for; no expected credit loss recognized",
+    "Employee benefit costs not recognized as per Ind AS 19",
+    "Corporate guarantee of Rs 807.46 crores for subsidiary SSA International Limited classified as NPA; SARFAESI notice received; wilful defaulter declaration",
+    "Petition by consortium bankers before Debt Restructuring Tribunal-II, Delhi; wilful defaulter declaration by IDBI Bank",
+    "Physical verification of fixed assets and inventory not provided",
+    "Long outstanding loans and advances; recoverability uncertain",
+    "Inventories of Rs 25.32 lacs not used for long period; possible obsolescence",
+    "Deferred tax assets of Rs 132.28 Lacs with no probable certainty of future taxable income",
+    "GST input tax credit balances not confirmed with online portal",
+    "Trade payables outstanding long period; subject to confirmation",
+    "Confirmation of security deposits, government authority balances, bank balances, bank FDRs not provided",
+    "Bank accounts debit freeze by EPF department; ongoing litigations with Income Tax Department",
+    "Unaudited financial statements of Lina Global Inc (wholly owned subsidiary of SSA International Ltd) with total assets of Rs.358.98 crores and revenue from operations of Rs. Nil",
+    "Internal financial controls not adequate commensurate with size and nature of business",
+    "Trade receivables long overdue without impairment allowance",
+    "No impairment testing of fixed assets despite no business activity",
+    "Audit trail feature not enabled in accounting software"
+   ],
+   "qualifications_or_emphasis": [
+    "Impairment testing of PPE not done; depreciation not charged",
+    "Trade receivables Rs 552.93 lacs long overdue; no ECL provision",
+    "Ind AS 19 not followed for employee benefits",
+    "Corporate guarantee Rs 807.46 cr for subsidiary NPA; SARFAESI notice; wilful defaulter notice",
+    "Consortium bankers petition before DRT-II; IDBI Bank wilful defaulter declaration",
+    "Physical verification of fixed assets and inventory not provided",
+    "Loans and advances long outstanding; recoverability uncertain",
+    "Inventories Rs 25.32 lacs long unused; possible obsolescence",
+    "Deferred tax assets Rs 132.28 lacs; no certainty of future taxable income",
+    "GST ITC balances not confirmed with portal",
+    "MSME classification of trade payables based on management knowledge",
+    "Trade payables long outstanding; subject to confirmation",
+    "Security deposits, government balances, bank balances, FDRs not confirmed",
+    "Bank accounts debit freeze by EPF; Income Tax litigations with Rs 118.67 lacs under protest",
+    "Samtex Fashions Limited: Mr. Atul Mittal, Managing Director, signed financial statements in capacity of Managing Director and Chief Financial Officer, which is not as per Regulation 78 of Table F Schedule I of the Act.",
+    "SSA International Limited: The Company has not appointed Internal Auditor as required under Section 138 of the Act.",
+    "Arlin Foods Limited: No qualifications reported.",
+    "Non-recognition of impairment and non-charge of depreciation on property, plant and equipment",
+    "Unconfirmed and long-outstanding trade receivables \u2014 ECL not recognised (Rs 552.93 lacs)",
+    "Non-recognition and remeasurement of employee benefit costs per Ind AS 19",
+    "Material uncertainty related to going concern (accumulated losses, negative net worth, no business activity)",
+    "Corporate guarantee of Rs 807.46 crores for subsidiary SSA International Limited (NPA); SARFAESI notice; wilful defaulter declaration",
+    "Ongoing petition by consortium bankers before Debt Restructuring Tribunal-II, Delhi",
+    "Insufficient audit evidence for physical verification of fixed assets and inventory",
+    "Long-outstanding loans and advances without recovery confirmation or justification",
+    "Inventories of Rs 25.32 lacs not used for long period; possible obsolescence",
+    "Deferred tax assets of Rs 132.28 lacs with no probable certainty of future taxable income",
+    "GST input tax credit balances not confirmed with online portal",
+    "Trade payables outstanding for long period and subject to confirmation",
+    "Bank accounts on debit freeze by EPF department; litigation with EPF and Income Tax Department; Rs 118.67 lacs deposited under protest",
+    "Audit trail feature not enabled in accounting software",
+    "Material uncertainty exists that company is not capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+    "Company does not have adequate internal financial controls system with reference to standalone financial statements commensurate with the size of the Company and its nature of business. A material weakness in internal financial controls exists as at 31st March 2026",
+    "Company does not have an adequate internal audit system as the company is not in operations since past many years",
+    "Trade receivables which are long overdue and not provided for allowance for expected credit loss have not been recognized on these financial assets",
+    "Impairment testing has not been done during the year for fixed assets",
+    "IDBI Bank has declared the main borrower (M/s SSA International Ltd), its directors and Guarantors (including M/s Samtex Fashions Ltd) as willful defaulters in terms with RBI Guidelines",
+    "Non-performing assets declared by bank for subsidiary SSA International Ltd; non-provision of interest on loans",
+    "Unconfirmed and long-outstanding trade receivables; ECL not recognized",
+    "Absence of details of sale proceeds of PPE by NARCL and consortium banks",
+    "Material uncertainty related to going concern",
+    "No business activity undertaken during the year",
+    "Corporate guarantee of Rs 807.46 crores for subsidiary's loans; SARFAESI notice received; willful defaulter declaration",
+    "Confirmation of balances not available for trade payables, security deposits, government authorities, bank balances, FDRs, bank loans",
+    "Long-outstanding loans and advances without recovery confirmation",
+    "No physical verification of fixed assets and inventory",
+    "Inventory of Rs 25.32 lacs not used for long period, possible damage/obsolescence",
+    "Classification of trade payables to MSME and others not verified",
+    "Deferred tax assets of Rs 92.53 lacs recognized without probable certainty of future taxable income",
+    "Bank accounts on debit freeze by EPF department; ongoing litigations with Income Tax Department; Rs 118.67 lacs deposited under protest",
+    "Modified opinion on consolidated financial statements due to reliance on unaudited subsidiary financial statements",
+    "Qualified/adverse opinion on internal financial controls operating effectiveness",
+    "CARO adverse clauses for SSA International Ltd (3(1)(a)(A), 3(1)(c), 3(ii)(b), 3(ix)(a)&(b), 3(xiv), 3(xvii)) and Arlin Foods Ltd (3(1)(a)(A), 3(xiv))",
+    "Management representation on audit trail feature insufficient",
+    "Confirmation of balances of trade debtors, loans and advances, trade payables, security deposits, balances with government authorities have not been provided to us, we are unable to comment on the possible impact, it any, arising out of the said matters."
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Mr. Atul Mittal re-appointed as Chairman and Managing Director for 5 years w.e.f. 30th August, 2025",
+    "Mr. Atul Mittal (DIN: 00223366) retires by rotation at ensuing AGM, offers himself for re-appointment",
+    "The Board of Directors of Samtex Fashions Limited is duly constituted with proper balance of Executive, Non-Executive, Women and Independent Directors. The changes in the composition of the Board of Directors that took place during the period under review were carried out in compliance with the provisions of the Act.",
+    "SSA International Limited: No changes in the composition of the Board of Directors took place during the period under review.",
+    "Arlin Foods Limited: During the year, the changes in the Constitution of Board of Directors were carried out in accordance with the provisions of the Act.",
+    "Appointment of Mrs. Pankila (DIN: 10752243) as Non-Executive Independent Director at 31st AGM (2023-24).",
+    "Appointment of Ms. Shweta Gautam (DIN: 10679234) as Non-Executive Independent Director at 31st AGM (2023-24).",
+    "Re-appointment of Mr. Atul Mittal (DIN: 00223366) as Chairman and Managing Director at 32nd AGM (2024-25).",
+    "Mr. Atul Mittal retiring by rotation at ensuing AGM, eligible for re-appointment."
+   ],
+   "auditor_change": "M/s Kapil Kumar & Co. re-appointed as Statutory Auditors for 5 years from conclusion of 29th AGM (30th September, 2022) till conclusion of 34th AGM (2027)",
+   "promoter_holding_pct": 49.11,
+   "top_shareholders": [
+    {
+     "name": "Promoter's Holding",
+     "pct": 49.11
+    },
+    {
+     "name": "Indian Public",
+     "pct": 31.06
+    },
+    {
+     "name": "Corporate Bodies",
+     "pct": 11.63
+    },
+    {
+     "name": "NRI/OCBs",
+     "pct": 5.22
+    },
+    {
+     "name": "Others (Trust, HUF and Clearing Members)",
+     "pct": 2.9
+    },
+    {
+     "name": "Mutual Funds/UTI",
+     "pct": 0.07
+    },
+    {
+     "name": "Rita Mittal",
+     "pct": 5.85
+    },
+    {
+     "name": "Atul Mittal",
+     "pct": 3.49
+    }
+   ]
+  },
+  "people": {
+   "key_management": [
+    {
+     "name": "Atul Mittal",
+     "role": "Chairman and Managing Director, Chief Financial Officer"
+    },
+    {
+     "name": "Preeti Saxena",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Pankila Bhardwaj",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Shweta Gautam",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Rinki Rani",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Mr. Atul Mittal",
+     "role": "Chairman & Managing Director (also designated as Chief Financial Officer)"
+    },
+    {
+     "name": "Mrs. Pankila Bhardwaj",
+     "role": "Chairperson, Audit Committee"
+    },
+    {
+     "name": "Ms. Shweta Gautam",
+     "role": "Member, Audit Committee"
+    },
+    {
+     "name": "Mrs. Preeti Saxena",
+     "role": "Member, Audit Committee"
+    },
+    {
+     "name": "Mr. Debananda Nayak",
+     "role": "Internal Auditor (Proprietor of D S Nayak & Associates)"
+    },
+    {
+     "name": "Atul Mittal",
+     "role": "Chairman & Managing Director"
+    },
+    {
+     "name": "Mrs. Preeti Saxena",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mrs. Pankila",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Shweta Gautam",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Rinki Rani",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mr. Atul Mittal",
+     "role": "Chairman & Managing Director, Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Rinki Rani",
+     "role": "Company Secretary & Compliance Officer"
+    },
+    {
+     "name": "Atul Mittal",
+     "role": "Managing Director & CFO (DIN-00223366)"
+    },
+    {
+     "name": "Atul Mittal",
+     "role": "Managing Director & CFO"
+    },
+    {
+     "name": "Rinki Rani",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Atul Mittal",
+     "role": "Chairman, Managing Director & CFO"
+    }
+   ],
+   "employees": 1
+  },
+  "other_notable": [
+   "33rd AGM scheduled for 29th September 2026 at 01:00 PM IST through VC/OAVM",
+   "Registered office proposed to shift from Khasra No. 62 D1/3 Industrial Area, Rajarampur, Sikandrabad, Bulandshahr, UP-203205 to Plot No. 163, Udhyog Vihar Extension, Greater Noida, Gautam Buddha Nagar, UP-201310 effective 1st October 2026",
+   "Registrar and Transfer Agent: M/s Beetal Financial & Computer Services Pvt. Ltd.",
+   "Listed on BSE Limited (Scrip Code: 521206)",
+   "Statutory Auditors: M/s Kapil Kumar & Co., Chartered Accountants",
+   "Secretarial Auditors: M/s DMK Associates, Company Secretaries",
+   "Internal Auditors: D S Nayak & Associates",
+   "Bankers: State Bank of India, Tolstoy Marg, New Delhi",
+   "No manufacturing or business operations during FY 2025-26",
+   "Standalone Revenue from operations: Nil; Total Income: Rs 0.14 lakhs; Net Loss: Rs 31.82 lakhs",
+   "Consolidated Revenue from operations: Nil; Total Income: Rs 7.69 lakhs; Net Loss: Rs 37.09 lakhs",
+   "Issued, subscribed and paid-up share capital: Rs 14.90 crore (7,45,00,000 equity shares of Rs 2 each)",
+   "No dividend recommended due to no earnings",
+   "No change in nature of business",
+   "No fresh investments, loans or guarantees during the year",
+   "No public deposits accepted",
+   "No CSR committee required (provisions not applicable)",
+   "Whistleblower Policy and Vigil Mechanism established",
+   "Secretarial Audit conducted by M/s DMK Associates for Company and SSA International Limited; by M/s Vijay Jain & Co. for Arlin Foods Limited",
+   "Internal Auditor appointed: Mr. Debananda Nayak (D S Nayak & Associates)",
+   "Board Evaluation conducted; Independent Directors meeting held on February 10, 2026",
+   "Familiarisation Programme for Independent Directors conducted; details on website",
+   "Credit rating suspended since FY 2016-17",
+   "Shares listed on BSE Limited; ISIN: INE931D01020",
+   "Registered Office: Khasra No 62 D1/3 Industrial Area, Rajarampur Sikandrabad Bulandshahr UP-203205",
+   "CIN: L17112UP1993PLC022479",
+   "Number of employees in Samtex Fashions Limited is below ten; provisions of Internal Complaints Committee not applicable. Sexual harassment complaints received: NIL; disposed-off: NIL; pending >90 days: NIL.",
+   "Provisions of Maternity Benefit Act 1961 not applicable to Samtex Fashions Limited during the year.",
+   "Trading Office in USA (New York) not operational during the year.",
+   "Samtex Fashions Limited: No manufacturing activities carried on; commencement of manufacturing at new premises not set up due to absence of orders.",
+   "SSA International Limited: Manufacturing units closed in previous years; units under possession of State Bank of India pursuant to SARFAESI Act notice.",
+   "Arlin Foods Limited: No business activity undertaken during the year and earlier years.",
+   "Samtex Fashions Limited: Internal Financial Control System adequate relevant to existing operations; Internal Auditor appointed for general periodical audit.",
+   "Financial statements prepared in accordance with Indian Accounting Standards (Ind AS) notified by MCA under Section 133 of Companies Act, 2013.",
+   "Company under financial stress during FY 2025-26; Chairman & Managing Director decided not to receive any salary.",
+   "BSE levied fine of Rs. 1,43,960 (including 18% GST) on 21.11.2024 for non-compliance with SRC constitution under Regulation 20(2)/(2A); fine withdrawn by BSE on 04.12.2024 after company's clarification.",
+   "Statutory Audit Fee for FY 2025-26: Rs. 1.80 lakhs.",
+   "Internal Auditor: M/s. D S Nayak & Associates, Practicing Company Secretaries, re-appointed for FY 2025-26.",
+   "Certificate of Non-Disqualification of Directors obtained from CS Ankit Tiwari, Proprietor M/s Ankit Tiwari & Co., Practicing Company Secretaries.",
+   "Corporate Governance Certificate obtained from CS Ankit Tiwari, Proprietor M/s Ankit Tiwari & Co., Practicing Company Secretaries.",
+   "CEO/CFO Certification by Mr. Atul Mittal, CFO, on financial reporting and internal controls at Board meeting held on 28.05.2026.",
+   "Reconciliation of Share Capital Audit conducted quarterly by Mr. Ankit Tiwari, Company Secretary in Practice.",
+   "Quarterly Corporate Governance compliance reports filed with Stock Exchanges within stipulated time.",
+   "No shares in demat suspense account or unclaimed suspense account.",
+   "Policy for determining Material Subsidiary available on company website.",
+   "No loans or advances extended by Company or subsidiaries to firms/companies where Directors hold interest during the year.",
+   "Corporate Governance compliance certified by Ankit Tiwari & Co., Company Secretaries for year ended 31 March 2026",
+   "Managing Director & CFO certification under Regulation 17(8) of SEBI LODR for year ended 31 March 2026",
+   "No manufacturing activity undertaken throughout the year ended 31 March 2026",
+   "Company has not carried out physical verification of fixed assets or inventory during the year",
+   "No working capital limits sanctioned by banks/financial institutions during the year",
+   "No fresh loans granted to parties under Section 189 during the year",
+   "No loans to directors in contravention of Section 185; no investments through more than two layers in contravention of Section 186",
+   "No public deposits accepted under Sections 73-76",
+   "Cost records not required under Section 148(1)",
+   "Undisputed statutory dues regularly deposited; no arrears >6 months",
+   "No unrecorded transactions surrendered/disclosed in tax assessment",
+   "No default in repayment of dues to financial institutions, banks, government or debenture holders",
+   "No term loans taken during the year",
+   "No funds raised on short-term basis"
+  ],
+  "outlook": [
+   {
+    "statement": "Your Board is exploring new avenues to revive the Company.",
+    "period": "future"
+   },
+   {
+    "statement": "The Indian economy remains optimistic supported by strong fundamentals such as political stability, heightened government focus on public capital expenditure, a gradual rise in private capital expenditure and growing credit demand. India's growth trajectory is expected to surpass other economies in the foreseeable future. Accordingly, the Company has an optimistic approach.",
+    "period": "foreseeable future"
+   }
+  ],
+  "risks": [
+   "No manufacturing operations since March 2019",
+   "Subsidiary SSA International Limited declared NPA by lenders/banks",
+   "Corporate guarantee of Rs 807.46 crores for SSA International Limited invoked; notice u/s 13(2) of SARFAESI Act received",
+   "IDBI Bank declared SSA International Ltd, its directors and guarantors (including Samtex Fashions Ltd) as wilful defaulters",
+   "Consortium bankers filed petition before Debt Restructuring Tribunal-II, Delhi (O.A 530/18 dated 24/05/2018)",
+   "Long outstanding trade receivables of Rs 552.93 lacs not provided for; no expected credit loss recognized",
+   "Long outstanding loans and advances; recoverability uncertain",
+   "Deferred tax assets of Rs 132.28 Lacs with no probable certainty of future taxable income",
+   "Bank accounts put on debit freeze by EPF department (now operational per management)",
+   "Ongoing litigations with Income Tax Department; Rs 118.67 lacs deposited under protest",
+   "Fixed assets and inventory not physically verified by auditors",
+   "Impairment testing of fixed assets not done as per Ind AS 36; depreciation not charged on PPE",
+   "Employee benefit costs not recognized as per Ind AS 19",
+   "GST input tax credit balances not confirmed with online portal",
+   "Trade payables and other balances subject to confirmation",
+   "The Company has no operational activities during the year so there were no operational risks. However, the Company intends to revive the business and to look forward. Considering the same, various risks and concern connected to the Industry and other operational environment may be faced by the Company.",
+   "Increase in input prices as well as increase in conversion cost. Inflationary pressure both within the country and globally have bearing on the outlook of the textile and clothing industry.",
+   "The Company does not have any commodity price risks.",
+   "Material uncertainty related to going concern due to accumulated losses, negative net worth, current liabilities exceeding current assets, and no business activity during the year",
+   "Non-recognition of impairment and non-charge of depreciation on property, plant and equipment",
+   "Unconfirmed and long-outstanding trade receivables with no expected credit loss recognized",
+   "Non-recognition and remeasurement of employee benefit costs as per Ind AS 19",
+   "Corporate guarantee of Rs 807.46 crores for subsidiary SSA International Limited classified as NPA; notice under SARFAESI Act received; declared wilful defaulter by IDBI Bank",
+   "Ongoing litigation with consortium bankers before Debt Restructuring Tribunal-II, Delhi",
+   "Insufficient audit evidence for physical verification of fixed assets and inventory",
+   "Long-outstanding loans and advances without recovery confirmation or justification",
+   "Inventories of Rs 25.32 lacs not used for long period; possible obsolescence or decline in selling price",
+   "Deferred tax assets of Rs 132.28 lacs with no probable certainty of future taxable income",
+   "Trade payables outstanding for long period and subject to confirmation",
+   "Bank accounts put on debit freeze by EPF department; litigation with EPF and Income Tax Department; Rs 118.67 lacs deposited under protest for Income Tax",
+   "TDS defaults of Rs 6.21 lacs on TRACES website",
+   "Provident fund default of Rs 7.07 lacs per order dated 03/03/2020",
+   "Audit trail feature not enabled in accounting software",
+   "Material uncertainty exists that company is not capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date",
+   "Company does not have adequate internal financial controls system with reference to standalone financial statements commensurate with the size of the Company and its nature of business. A material weakness in internal financial controls exists as at 31st March 2026",
+   "Company does not have an adequate internal audit system as the company is not in operations since past many years",
+   "Trade receivables which are long overdue and not provided for allowance for expected credit loss have not been recognized on these financial assets",
+   "Impairment testing has not been done during the year for fixed assets",
+   "IDBI Bank has declared the main borrower (M/s SSA International Ltd), its directors and Guarantors (including M/s Samtex Fashions Ltd) as willful defaulters in terms with RBI Guidelines",
+   "Material uncertainty related to going concern due to losses, eroded net worth, current liabilities exceeding current assets, and no business activity",
+   "Non-performing assets declared by banks for subsidiary SSA International Ltd",
+   "Corporate guarantee of Rs 807.46 crores for subsidiary's secured loans",
+   "Notice under SARFAESI Act for revocation of corporate guarantee",
+   "IDBI Bank declared subsidiary, directors and guarantors (including Samtex) as willful defaulters",
+   "Unconfirmed and long-outstanding trade receivables with no ECL recognized",
+   "Absence of details of sale proceeds of property, plant and equipment by NARCL and consortium banks",
+   "Non-recognition of impairment and depreciation on property, plant and equipment",
+   "Non-recognition and remeasurement of employee benefit costs per Ind AS 19",
+   "Unconfirmed balances for trade payables, security deposits, government authorities, bank balances, FDRs, and bank loans",
+   "Long-outstanding loans and advances without recovery confirmation",
+   "No physical verification of fixed assets and inventory",
+   "Inventory not used for long period, possible damage/obsolescence",
+   "Classification of trade payables to MSME and others not verified",
+   "Deferred tax assets recognized without probable certainty of future taxable income",
+   "Bank accounts on debit freeze by EPF department",
+   "Ongoing litigations with Income Tax Department",
+   "No business activity carried on during the year",
+   "Production facilities not used for a long period",
+   "Impairment testing of fixed assets not done",
+   "Trade receivables long overdue with no expected credit loss allowance",
+   "Majority of employees left the company",
+   "Internal financial controls not adequate",
+   "Negative net worth",
+   "High borrowings relative to assets",
+   "The accounts of the holding company has been declared Non Performing Assets (NPAs) by the banks as the holding company had defaulted in repayment obligations of interest and principal due to consortium bankers during the earlier years.",
+   "The wholly owned Subsidiary of the company, namely, M/S SSA International Ltd has been declared Non Performing Assets (NPAs) by the banks.",
+   "The company has also received the notice u/s 13(2) of the SARFAESI Act, 2002 from consortium of banks for revocation of its Corporate Guarantee.",
+   "IDBI Bank has declared the main borrower (M/s SSA International Ltd), its directors and Guarantors (including M/s Samtex Fashions Ltd) as willful defaulters in terms with RBI Guidelines.",
+   "The consortium bankers have filed a petition against the holding company and its subsidiary M/s SSA International Limited regarding recovery of the outstanding dues, before the Debt Restructuring Tribunal-II, Delhi.",
+   "Confirmation of balances of trade debtors, loans and advances, trade payables, security deposits, balances with government authorities have not been provided to us, we are unable to comment on the possible impact, it any, arising out of the said matters.",
+   "The management of Holding Company has confirmed that it has come to their knowledge through newspaper advertisement that the consortium member banks have executed auction of its assets at Samalkha plant. However, in absence of any information regarding the sale of assets i.e. detail of assets sold by bank, value at which the said sale transaction has been undertaken, bank wise utilization of amount received against said sale, the holding company has not taken into consideration the said transaction while preparing its financial statements as on 31.03.2025."
+  ],
+  "subsidiaries": [
+   {
+    "name": "SSA International Limited",
+    "holding_pct": 100,
+    "business": "No manufacturing activities in the plants; already declared Non Performing Asset (NPA) by lenders/banks. Manufacturing unit at 67th Milestone, Samalkha District, Panipat, Haryana taken over by bank. Consortium member banks transferred assets to National Assets Reconstruction Company Limited (NARCL)."
+   },
+   {
+    "name": "Arlin Foods Limited",
+    "holding_pct": 100,
+    "business": "Not operational."
+   },
+   {
+    "name": "SSA International Limited (Formerly known as Sam Buildcon Limited)",
+    "holding_pct": 100,
+    "business": "Manufacturing units closed in previous years; manufacturing units under possession of State Bank of India pursuant to notice under Section 13(4) of SARFAESI Act; no sector specific laws applicable."
+   },
+   {
+    "name": "Arlin Foods Limited",
+    "holding_pct": 100,
+    "business": "The Company has not undertaken any business activity during the year and earlier years; no sector specific laws applicable."
+   },
+   {
+    "name": "SSA International Limited",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "Arlin Foods Limited (earlier name Sam Buildcon Limited)",
+    "holding_pct": 100,
+    "business": ""
+   },
+   {
+    "name": "SSA International Limited",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary; main borrower of secured loans guaranteed by Samtex Fashions Limited; classified as NPA by banks; declared wilful defaulter by IDBI Bank"
+   },
+   {
+    "name": "Arlin Foods Ltd",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary; received loan of Rs 16.23 lacs (unsecured, interest-free, no repayment schedule); investment of Rs 1.5 crore by Samtex Fashions Limited"
+   },
+   {
+    "name": "SSA International Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary; declared NPA by banks; subject to SARFAESI proceedings; corporate guarantee of Rs 80,746 lacs given by Samtex"
+   },
+   {
+    "name": "Arlin Foods Limited",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary"
+   },
+   {
+    "name": "Yogendra Worsted Limited",
+    "holding_pct": null,
+    "business": "Investment of Rs 60 lacs fully impaired"
+   },
+   {
+    "name": "Lina Global INC",
+    "holding_pct": null,
+    "business": "Wholly owned subsidiary of SSA International Ltd"
+   },
+   {
+    "name": "SSA International Ltd",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary with its own wholly owned subsidiary Lina Global Inc"
+   },
+   {
+    "name": "Arlin Foods Ltd",
+    "holding_pct": null,
+    "business": "Subsidiary company"
+   },
+   {
+    "name": "Lina Global Inc",
+    "holding_pct": 100,
+    "business": "Wholly owned subsidiary of SSA International Ltd"
+   },
+   {
+    "name": "SSA International Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Yogendra Worsted Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Express Warehousing Limited",
+    "holding_pct": null,
+    "business": ""
+   }
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (not specified)",
+    "nature": "All transactions with related parties are of previous years which were in the ordinary course of business and on arm's length basis; no fresh transactions during the year",
+    "amount_cr": null
+   },
+   {
+    "party": "Related Parties",
+    "nature": "Omnibus approvals obtained from Audit Committee and Board for transactions during FY 2025-26; no material Related Party Transaction during the year ended March 31, 2026.",
+    "amount_cr": null
+   },
+   {
+    "party": "Arlin Foods Ltd",
+    "nature": "Loan/advance to wholly owned subsidiary",
+    "amount_cr": 0.1623
+   },
+   {
+    "party": "SSA International Limited",
+    "nature": "Corporate guarantee for secured loans",
+    "amount_cr": 807.46
+   },
+   {
+    "party": "SSA International Limited",
+    "nature": "Investment in wholly owned subsidiary",
+    "amount_cr": 37.2
+   },
+   {
+    "party": "Arlin Foods Limited",
+    "nature": "Wholly owned subsidiary company",
+    "amount_cr": 1.5001
+   },
+   {
+    "party": "Atul Mittal",
+    "nature": "Director",
+    "amount_cr": 2.748
+   },
+   {
+    "party": "Bloomingdale Vendors Pvt Ltd",
+    "nature": "Enterprises under control of KMP/Relative",
+    "amount_cr": 0.0017
+   },
+   {
+    "party": "Gartex Overseas Pvt Ltd",
+    "nature": "Key personnels are related to management of related party",
+    "amount_cr": 0.45
+   },
+   {
+    "party": "SSR Apparels Pvt Ltd",
+    "nature": "Key personnels are related to management of related party",
+    "amount_cr": 0.15
+   },
+   {
+    "party": "Express Warehousing LTD",
+    "nature": "Key personnels are related to management of related party",
+    "amount_cr": 1.01738
+   },
+   {
+    "party": "Express Warehousing LTD",
+    "nature": "Security Deposits",
+    "amount_cr": 3.25
+   },
+   {
+    "party": "Atul Mittal",
+    "nature": "Director - Borrowings",
+    "amount_cr": 284.8
+   },
+   {
+    "party": "Bloomingdale Vendors Pvt Ltd",
+    "nature": "Key personnels are related to management of related party - Receivables",
+    "amount_cr": 0.17478
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Corporate guarantee for secured loans taken by wholly owned subsidiary SSA International Limited",
+    "amount_cr": 807.46
+   },
+   {
+    "nature": "Demand notice from State Bank of India (lead bank) under SARFAESI Act for debt amounting to Rs. 632,05,29,655/- against SSA International Limited",
+    "amount_cr": 632.05
+   },
+   {
+    "nature": "Petition filed by consortium bankers before Debt Restructuring Tribunal-II, Delhi (O.A 530/18 dated 24/05/2018) for recovery of outstanding dues against holding Company and subsidiary SSA International Limited",
+    "amount_cr": null
+   },
+   {
+    "nature": "IDBI Bank declared main borrower (SSA International Ltd), its directors and guarantors (including Samtex Fashions Ltd) as wilful defaulters",
+    "amount_cr": null
+   },
+   {
+    "nature": "Ongoing litigations with Income Tax Department; Rs 118.67 lacs deposited under protest for different financial years",
+    "amount_cr": 1.1867
+   },
+   {
+    "nature": "Bank accounts put on debit freeze by EPF department (litigation ongoing)",
+    "amount_cr": null
+   },
+   {
+    "nature": "Certain cases filed by or against Samtex Fashions Limited, currently pending with various Courts; financial impact cannot be ascertained during pendency.",
+    "amount_cr": null
+   },
+   {
+    "nature": "Certain disputes cases filed by or against SSA International Limited, currently pending with various Courts; financial impact cannot be ascertained during pendency.",
+    "amount_cr": null
+   },
+   {
+    "nature": "Certain disputes cases filed by or against Arlin Foods Limited, currently pending with various Courts; however, as informed, these cases will not have major impact on the Company.",
+    "amount_cr": null
+   },
+   {
+    "nature": "SSA International Limited received demand notice from State Bank of India for debt amounting to Rs. 632,05,29,655/- under SARFAESI Act, 2002; matter challenged in court and under dispute; IDBI Bank took possession of SSA property at Village Patti Kalyana, Tehsil Samalkha, District Panipat on 12.03.2021; Samtex Fashions Limited gave corporate guarantee for this loan.",
+    "amount_cr": 632.05
+   },
+   {
+    "nature": "Corporate guarantee for secured loans of subsidiary SSA International Limited",
+    "amount_cr": 807.46
+   },
+   {
+    "nature": "Disputed Income Tax demands",
+    "amount_cr": 1.6629
+   },
+   {
+    "nature": "TDS defaults on TRACES website",
+    "amount_cr": 0.0621
+   },
+   {
+    "nature": "Provident fund dues/damages per EPF order dated 03/03/2020",
+    "amount_cr": 0.0707
+   },
+   {
+    "nature": "Income Tax demands for A.Y. 2000-01 (Rs 59.02 lacs), A.Y. 2001-02 (Rs 60.66 lacs), A.Y. 2003-04 (Rs 5.80 lacs), A.Y. 2007-08 (Rs 40.80 lacs); appeals dismissed for first two, SLP being filed; latter two before Appellate Authority",
+    "amount_cr": 1.6628
+   },
+   {
+    "nature": "Corporate guarantee for secured loans taken by SSA International Ltd from financial institutions",
+    "amount_cr": 807.46
+   },
+   {
+    "nature": "Pending litigations impact disclosed in note no. 30",
+    "amount_cr": null
+   },
+   {
+    "nature": "Bank Guarantees issued & outstanding",
+    "amount_cr": 0.6002
+   },
+   {
+    "nature": "Entry Tax",
+    "amount_cr": 0.4157
+   },
+   {
+    "nature": "Income Tax (AY 2006-07)",
+    "amount_cr": 0.0363
+   },
+   {
+    "nature": "Income Tax (AY 2007-08)",
+    "amount_cr": 0.0694
+   },
+   {
+    "nature": "Income Tax (AY 2010-11)",
+    "amount_cr": 0.5045
+   },
+   {
+    "nature": "Income Tax (AY 2011-12)",
+    "amount_cr": 0.0729
+   },
+   {
+    "nature": "Income Tax (AY 2012-13)",
+    "amount_cr": 0.1453
+   },
+   {
+    "nature": "Income Tax (AY 2013-14)",
+    "amount_cr": 13.816
+   },
+   {
+    "nature": "Income Tax (AY 2015-16)",
+    "amount_cr": 2.6173
+   },
+   {
+    "nature": "Income Tax (AY 2016-17)",
+    "amount_cr": 5.8429
+   }
+  ],
+  "litigation": [
+   "SSA International Limited received demand notice from State Bank of India (lead bank) under SARFAESI Act for debt of Rs. 632,05,29,655/-; matter challenged in court, counter claims filed",
+   "Notices from SBI lead bank and other member banks for possession of properties and declaring promoters as wilful defaulters",
+   "IDBI Bank took possession of SSA International Limited property at Village Patti Kalyana, Tehsil Samalkha, District Panipat on 12.03.2021",
+   "Consortium bankers filed petition before Debt Restructuring Tribunal-II, Delhi (O.A 530/18 dated 24/05/2018) for recovery of outstanding dues against holding Company and subsidiary SSA International Limited",
+   "IDBI Bank declared SSA International Ltd, its directors and guarantors (including Samtex Fashions Ltd) as wilful defaulters per RBI Guidelines",
+   "Bank accounts of Company put on debit freeze by EPF department (now operational per management)",
+   "Several litigations ongoing with Income Tax Department; Rs 118.67 lacs deposited under protest for different financial years",
+   "Samtex Fashions Limited: Certain cases filed by or against the Company, currently pending with various Courts; financial impact cannot be ascertained.",
+   "SSA International Limited: Complaint CC No. 1897/2025 filed by Registrar of Companies, NCT of Delhi & Haryana, before Hon'ble Court of Ld. ACJM (Special Acts), Central, Tis Hazari, Delhi, against the Company and its officers in default for non-filing of Cost Audit Report for FY 2017-18. Next hearing date: September 18, 2026. Writ petition filed on 31st January 2026 in matter of SSA International Limited & Ors. vs. State Bank of India against impugned order dated 19 January 2026 passed by Ld. Chairperson, DRAT, Delhi. Caveat petition received on 29 January 2026.",
+   "Arlin Foods Limited: Certain disputes cases filed by or against the Company, currently pending with various Courts; however, as informed, these cases will not have major impact on the Company.",
+   "SSA International Limited challenged SBI's SARFAESI action in court; matter still under dispute with counter claims filed.",
+   "IDBI Bank took possession of SSA International Limited property at Village Patti Kalyana, Tehsil Samalkha, District Panipat on 12.03.2021.",
+   "Further notices from SBI Lead bank and other Member banks for possession of properties and declaring promoters as willful defaulters received.",
+   "Consortium bankers filed petition against company and subsidiary SSA International Limited before Debt Restructuring Tribunal-II, Delhi (O.A 530/18 dated 24/05/2018)",
+   "IDBI Bank declared main borrower (SSA International Ltd), its directors and guarantors (including Samtex Fashions Ltd) as wilful defaulters per RBI guidelines",
+   "Notice u/s 13(2) of SARFAESI Act 2002 from consortium of banks for revocation of corporate guarantee",
+   "Litigation with EPF department; bank accounts put on debit freeze",
+   "Several litigations with Income Tax Department; Rs 118.67 lacs deposited under protest for different financial years",
+   "Disputed Income Tax demands aggregating Rs 166.29 lacs pending before appellate authorities",
+   "TDS defaults of Rs 6.21 lacs on TRACES website; rectification u/s 154 in process",
+   "Order under Section 8 of EPF Act dated 03/03/2020 for default in provident fund dues/damages of Rs 7.07 lacs",
+   "IDBI Bank has declared the main borrower (M/s SSA International Ltd), its directors and Guarantors (including M/s Samtex Fashions Ltd) as willful defaulters in terms with RBI Guidelines",
+   "Income Tax appeals for A.Y. 2000-01 and 2001-02 dismissed by High Court; SLP being filed before Supreme Court",
+   "Income Tax liabilities for A.Y. 2003-04 and 2007-08 before Appellate Authority",
+   "Consortium bankers filed petition against holding company and subsidiary SSA International Ltd before Debt Restructuring Tribunal-II, Delhi (O.A 530/18 dated 24/05/2018)",
+   "IDBI Bank declared main borrower (SSA International Ltd), its directors and guarantors (including Samtex Fashions Ltd) as willful defaulters per RBI Guidelines",
+   "IDBI Bank took possession of premises of SSA International Ltd at Village Patti Kalyan, Tehsil Samalkha, District Panipat, Haryana under SARFAESI Act",
+   "Bank accounts of holding company put on debit freeze by EPF department",
+   "Pending litigations impact disclosed in note no. 30 of consolidated Ind AS financial statements",
+   "The Company had filed litigations with the Customs, Excise, Service Tax Apellate Tribunal and had already deposited duties under protest, where as the litigations have been decided in the favour of the company and refund of the duties already deposited are being filed and received in the due course.",
+   "The consortium bankers have filed a petition against the holding company and its subsidiary M/s SSA International Limited regarding recovery of the outstanding dues, before the Debt Restructuring Tribunal-II, Delhi, and the company has received an intimation vide O.A 530/18 dated 24/05/2018."
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 6.3056,
+    "note": "As per Balance Sheet as at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Unsecured loans from related parties",
+    "amount_cr": 6.3056,
+    "note": "Includes Rs 274.80 lacs from Atul Mittal (Director)"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 6.9,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 556.36,
+    "note": "As at 31 March 2026"
+   },
+   {
+    "lender_or_type": "Unsecured Loans from related parties",
+    "amount_cr": 6.4056,
+    "note": "Non-current"
+   },
+   {
+    "lender_or_type": "Unsecured Other loans",
+    "amount_cr": 0.495,
+    "note": "Non-current"
+   },
+   {
+    "lender_or_type": "Secured Loans repayable on demand from Banks - CC Account",
+    "amount_cr": 552.0257,
+    "note": "Current"
+   },
+   {
+    "lender_or_type": "Secured Loans repayable on demand from Banks - EPC Account",
+    "amount_cr": 4.2134,
+    "note": "Current"
+   },
+   {
+    "lender_or_type": "Unsecured Other loans",
+    "amount_cr": 0.12,
+    "note": "Current"
+   },
+   {
+    "lender_or_type": "Long term loans recalled by banks",
+    "amount_cr": 26.3345,
+    "note": "Current financial liabilities"
+   }
+  ]
+ }
+}

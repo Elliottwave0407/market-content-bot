@@ -1,0 +1,905 @@
+{
+ "isin": "INE891B01012",
+ "name": "DCM Financial Services Limited",
+ "fy": 2026,
+ "src": "https://nsearchives.nseindia.com/annual_reports/AR_30676_DCMFINSERV_2025_2026_A_2961325_26082026182815.pdf",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "chars": 519922,
+ "chunks": 14,
+ "chunks_ok": 14,
+ "facts": {
+  "business": {
+   "description": "DCM Financial Services Limited is a financial services company with a subsidiary Global IT Options Limited. The company reported no income from business operations, only other income.",
+   "value_chain_position": "service",
+   "products": [
+    {
+     "name": "Finance and Leasing",
+     "share_of_revenue_pct": 100,
+     "note": "Single segment; revenue from operations stood at Rs. 0 during the year"
+    }
+   ],
+   "plants": [
+    {
+     "location": "Not Applicable",
+     "capacity": ""
+    }
+   ]
+  },
+  "subsidiaries": [
+   {
+    "name": "Global IT Options Limited",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Global IT Options Limited",
+    "holding_pct": 90,
+    "business": "Subsidiary company with share capital of Rs 1,00,000, reserves & surplus of Rs (80,99,990), total assets of Rs 19,81,230, investments of Rs 1,50,408, turnover of Rs 0, profit after tax of Rs (29,559) for year ended 31.03.2026"
+   },
+   {
+    "name": "Global IT Options Limited",
+    "holding_pct": null,
+    "business": "Material subsidiary; incorporated on 31/05/1995 in New Delhi; statutory auditors M/s. V Sahai Tripathi & Co., Chartered Accountants (FRN: 000262N) appointed on 30.09.2022"
+   },
+   {
+    "name": "Global IT Options Ltd",
+    "holding_pct": null,
+    "business": ""
+   },
+   {
+    "name": "Global IT Options Limited",
+    "holding_pct": 90,
+    "business": ""
+   }
+  ],
+  "contingent_liabilities": [
+   {
+    "nature": "Outstanding fixed deposits aggregating to Rs. 4066.99 lacs payable; court-appointed committee for verification and payment",
+    "amount_cr": 40.6699
+   },
+   {
+    "nature": "Dispute with NBCC Ltd. regarding claim of Rs. 288.29 lacs on account of increase in super area and other expenditure; arbitration award given; both parties filed objections in Delhi High Court; decision pending.",
+    "amount_cr": 2.8829
+   },
+   {
+    "nature": "RBI winding up petition CP No 296/2004 - court order restricting bank account operations",
+    "amount_cr": null
+   },
+   {
+    "nature": "Pending payment to debenture holders from 1995-96 private placement",
+    "amount_cr": null
+   },
+   {
+    "nature": "Pending payment to deposit holders under court-approved scheme from 10.08.2017",
+    "amount_cr": null
+   },
+   {
+    "nature": "Dispute with NBCC Ltd. regarding claim of Rs. 288.29 lacs on account of increase in super area and other expenditure; arbitration award granted NBCC Rs. 41.06 lacs and DCM Financial Services Rs. 78.97 lacs with interest @ 10% payable by both parties; both parties have filed objections in Delhi High Court",
+    "amount_cr": 2.8829
+   },
+   {
+    "nature": "Pending litigation impact on financial position disclosed in Note 29",
+    "amount_cr": null
+   },
+   {
+    "nature": "Suit filed by Central Bank of India (Trustee for Non-Convertible Debentures B-Series) for recovery of Rs 4,421.78 lacs (including interest Rs 1,553.61 lacs and principal Rs 2,867.96 lacs) before Hon'ble Bombay High Court; stayed by Hon'ble High Court of Delhi",
+    "amount_cr": 44.2178
+   },
+   {
+    "nature": "Claim of MS Shoes arbitration award",
+    "amount_cr": 5.13
+   },
+   {
+    "nature": "Claim of NBCC - pending arbitration",
+    "amount_cr": 2.88
+   },
+   {
+    "nature": "Dispute with NBCC Ltd regarding claim of Rs 288.29 lacs on account of increase in super area and other expenditure, pending in arbitration",
+    "amount_cr": 2.8829
+   },
+   {
+    "nature": "Arbitration award - NBCC Ltd awarded Rs 41.06 lacs, DCM Financial Services awarded Rs 78.97 lacs, with interest @ 10% payable by both parties. Both parties filed objections in Delhi High Court.",
+    "amount_cr": 0.4106
+   },
+   {
+    "nature": "Deposit of Rs 1,950.00 lacs with Hon'ble Delhi High Court by promoter DCM Services Ltd - no clarity on whether company would have to issue shares, refund amount, or have no liability",
+    "amount_cr": 19.5
+   },
+   {
+    "nature": "Suit by Central Bank of India (debenture trustee) for recovery of Rs 4,421.78 lacs including interest of Rs 1,553.61 lacs, pending in Bombay High Court, stayed by Delhi High Court",
+    "amount_cr": 44.2178
+   },
+   {
+    "nature": "Interest on debentures not provided since 1998, approx Rs 4,822.30 lacs",
+    "amount_cr": 48.223
+   },
+   {
+    "nature": "Interest on fixed deposits not provided per CLB order @10% p.a., approx Rs 11,588.66 lacs cumulative",
+    "amount_cr": 115.8866
+   },
+   {
+    "nature": "Interest on inter-corporate deposits not provided, approx Rs 54.33 lacs",
+    "amount_cr": 0.5433
+   },
+   {
+    "nature": "Dispute with builder M/s NBCC Ltd. regarding claim of Rs. 288.30 lacs on account of increase in super area and certain other expenditure, pending in arbitration.",
+    "amount_cr": 2.883
+   },
+   {
+    "nature": "Arbitration award between NBCC Ltd. (Claimant) and DCM Financial Services Limited (Respondent) - NBCC awarded Rs. 41.06 lacs, DCM awarded Rs. 78.97 lacs, with interest @ 10% payable by both parties. Both parties have filed objections in Delhi High Court.",
+    "amount_cr": 0.4106
+   }
+  ],
+  "auditor": {
+   "name": "M/s. V Sahai Tripathi & Co., Chartered Accountants",
+   "qualifications_or_emphasis": [
+    "Non-provision of interest of Rs. 1,683 Lakhs on Debentures and Fixed Deposits as per One Man Committee scheme; interest of Rs. 7.35 lakhs paid during the year accounted as finance cost instead of prior period item per Ind AS 8.",
+    "Debenture Redemption Reserve of Rs. 2,014.98 Lakhs for 'B' series debentures not created due to insufficient profits.",
+    "Value of assets charged as security may have been depleted; depletion not ascertained; to the extent of shortfall, liability is unsecured but shown as secured.",
+    "Balance confirmations not received for security deposits, trade receivables, some bank balances, FD balances, rent receivables, other advances, borrowings, balances payable to related parties, and other receivables/payables; time-barred debts not separately ascertained and written off or provided for.",
+    "Contingent liability: dispute with NBCC Ltd. regarding claim of Rs. 288.29 lacs pending in arbitration; award given with amounts awarded to both parties; both parties filed objections in Delhi High Court; decision pending.",
+    "Non-provision of Rs. 1,683 Lakhs interest on Debentures and Fixed Deposits as per One Man Committee scheme",
+    "Debenture redemption reserve of Rs. 2,014.98 Lakhs not created due to insufficient profits",
+    "Value of assets charged as security may have been depleted; shortfall not ascertained",
+    "Balance confirmations not received for security deposits, trade receivables, bank balances, borrowings, related party balances and other receivables/payables",
+    "Time barred debts under Limitations Act not separately ascertained and written off or provided for",
+    "Material uncertainty related to going concern: net loss of Rs. 102.27 lakhs, current liabilities exceed total assets by Rs. 4,800.17 lakhs, accumulated loss of Rs. 9,336.30 lakhs, total liabilities exceed total assets by Rs. 5,114.08 lakhs",
+    "Company not carrying on any business; CoR as NBFC rejected by RBI in 2004",
+    "Revival dependent on One Man Committee scheme implementation and disposal of disputed building",
+    "Deposit of Rs. 1,950.00 lacs with Hon'ble Delhi High Court by promoter DCM Services Ltd; no financial impact recorded due to lack of clarity on share issuance or refund",
+    "Basis for Qualified Opinion paragraph referenced",
+    "Emphasis of Matter paragraph referenced",
+    "Company has not established internal financial controls over financial reporting on criteria based on essential components per ICAI Guidance Note - Disclaimer of Opinion on internal financial controls",
+    "Material uncertainty related to going concern",
+    "Default in repayment of dues to financial institutions, banks, debenture holders and ICDs",
+    "Unpaid matured public fixed deposits Rs 4,066.99 Lakhs and unpaid matured debentures Rs 1,602.81 Lakhs",
+    "Fresh Restructuring Scheme pending before Hon'ble Delhi High Court since 2004",
+    "Interest of Rs 1,683 Lakhs on Debentures and Fixed Deposits not provided in consolidated financial statements as per One-Man Committee scheme",
+    "Debenture redemption reserve of Rs 2,014.98 Lakhs not created due to insufficient profits",
+    "Value of assets charged as security may have been depleted over time, shortfall not ascertained",
+    "Balance confirmations not received for various assets and liabilities, time barred debts not ascertained",
+    "Contingent liability regarding dispute with NBCC Ltd for Rs 288.29 lacs pending arbitration",
+    "Emphasis of Matter: Company earned net loss of Rs 102.27 lacs, current liabilities exceeded total assets by Rs 4,800.17 lacs, accumulated loss Rs 9,336.30 lacs, total liabilities exceeded total assets by Rs 5,114.08 lacs. Company not carrying on any business, RBI rejected NBFC registration in 2004.",
+    "Basis for Qualified Opinion and Emphasis of Matter paragraphs referenced",
+    "CARO qualifications in paragraphs 3(v), 3(ix)(a), 3(ix)(d), 3(ix)(e), 3(xiv)(a), 3(xvii) and 3(xix)",
+    "Disclaimer of opinion on internal financial controls - company has not established internal financial control over financial reporting on criteria based on essential components stated in ICAI Guidance Note"
+   ],
+   "opinion": "Qualified Opinion",
+   "key_audit_matters": [
+    "No key audit matters to be communicated in the report",
+    "Going concern uncertainty - decision on revival to be taken by Hon'ble Delhi High Court",
+    "Successful implementation of One Man Committee scheme including Phase-I and Phase-II payments and realisability of funds from disposal of fixed assets especially Building under dispute with NBCC",
+    "Deposit of Rs 1,950.00 lacs with Hon'ble Delhi High Court by promoter DCM Services Ltd - no financial impact recorded due to lack of clarity on share issuance, refund, or liability"
+   ]
+  },
+  "governance": {
+   "director_changes": [
+    "Ms. Richa Kathuria resigned as Independent Director on 11.08.2026",
+    "Ms. Snehlata Kaim appointed as Additional Director (Non-Executive Independent) w.e.f. 11.08.2026",
+    "Mr. Sanjay Sahni re-appointed as Independent Director for second term of five consecutive years from December 18, 2025 to December 17, 2030",
+    "Mr. Kaushal Kashyap (DIN: 07683753) Director will be retiring by rotation at the ensuing Annual General Meeting and being eligible, offers himself for re-appointment. The Board recommends his re-appointment.",
+    "An Independent Director was re-appointed during the year; the Board opined that the Independent Director re-appointed is a person of integrity and possesses requisite expertise, experience, and proficiency.",
+    "Ms. Richa Kathuria re-appointed 06.10.2024",
+    "Mrs. Nidhi Deveshwar re-appointed 29.11.2023",
+    "Mr. Kaushal Kashyap re-appointed 18.12.2020",
+    "Mr. Sanjay Sahni re-appointed 18.12.2025",
+    "Ms. Ruchi Chordia appointed 12.08.2023, re-appointed 15.09.2023",
+    "Ms. Honey Agarwal appointed 30.08.2024, re-appointed 27.09.2024",
+    "Ms. Richa Kathuria (DIN: 07632571) resigned from the post of Independent Director on 11.08.2026.",
+    "Ms. Snehlata Kaim (DIN: 06882968) was appointed as an Additional Director (Non-Executive Independent) w.e.f. 11.08.2026.",
+    "Mr. Honey Agarwal appointed as Independent Director w.e.f. 30.08.2024"
+   ],
+   "promoter_holding_pct": 39.5,
+   "top_shareholders": [
+    {
+     "name": "Indian Promoters",
+     "pct": 39.5
+    },
+    {
+     "name": "Indian Public",
+     "pct": 49.37
+    },
+    {
+     "name": "Banks, Financial Institutions, Insurance Companies",
+     "pct": 5.97
+    },
+    {
+     "name": "NRI's",
+     "pct": 2.43
+    },
+    {
+     "name": "Corporate Bodies",
+     "pct": 1.37
+    },
+    {
+     "name": "Any Other (HUF/Firm/Foreign Companies)",
+     "pct": 1.11
+    },
+    {
+     "name": "Mutual Fund and UTI",
+     "pct": 0.08
+    },
+    {
+     "name": "Other Financial Institutions",
+     "pct": 0.13
+    },
+    {
+     "name": "Foreign Company/Institutions/OCB's",
+     "pct": 0.04
+    },
+    {
+     "name": "DCM Services Ltd",
+     "pct": 28.71
+    },
+    {
+     "name": "Intellect Capital Services Ltd",
+     "pct": 9.38
+    },
+    {
+     "name": "Punjab & Sind Bank",
+     "pct": 5.97
+    }
+   ],
+   "auditor_change": "No resignation of statutory auditors during the year"
+  },
+  "litigation": [
+   "Court-appointed committee (Justice Anil Kumar, later Sh. Laxmi Kant Gaur) for resolution of outstanding fixed deposit holders and debenture holders",
+   "RBI petition for winding up (CP No 296/2004) heard on 6th March 2006; Hon'ble High Court directed Company shall not operate bank accounts without court permission; order still in operation.",
+   "Dispute with NBCC Ltd. regarding claim of Rs. 288.29 lacs pending in arbitration; award given; both parties filed objections in Delhi High Court; decision pending.",
+   "Ongoing litigation and disputes with creditors as outlined in Note 39; balance confirmations not obtained due to litigation.",
+   "RBI winding up petition CP No 296/2004 - Hon'ble High Court, Delhi directed company shall not operate bank accounts without court permission (order still in operation)",
+   "Non-convertible debentures issued 1995-96 - pending payment to debenture holders, matter went to Hon'ble High Court, Delhi, scheme approved 10.08.2017",
+   "Pending payment to deposit holders under approved scheme",
+   "Dispute with NBCC Ltd. regarding office premises purchased in 1995; claim of Rs. 288.29 lacs pending in arbitration; award granted NBCC Rs. 41.06 lacs and DCM Financial Services Rs. 78.97 lacs with interest @ 10%; both parties filed objections in Delhi High Court",
+   "One Man Committee appointed by Hon'ble High Court of Delhi in 2015 (Justice Anil Kumar, replaced by Mr. Laxmi Kant Gaur in 2021) to scrutinize depositors and claimants; scheme of payments for debenture holders and fixed depositors under implementation",
+   "Fresh Scheme of Arrangement for reorganization of share capital and compromise with creditors filed before Hon'ble Delhi High Court on 24th September 2004",
+   "One Man Committee appointed by Hon'ble High Court of Delhi on 3rd September 2015 to scrutinize depositors and claimants",
+   "Phase-I and Phase-II repayment schedule approved by Hon'ble High Court on 10th August 2017",
+   "Modified arrangement on 18th May 2019 to pay 100% principal to verified claimants",
+   "Matter regarding payment to fixed depositors, debenture-holders and other sums covered under court-approved schedule",
+   "Central Bank of India (Trustee for Non-Convertible Debentures B-Series) filed suit for recovery of Rs 4,421.78 lacs before Hon'ble Bombay High Court on 14th October 1999; stayed by Hon'ble High Court of Delhi vide order dated September 14, 2005; status unchanged as at March 31, 2026",
+   "Disputes pending between NBCC and the Petitioner Company with regard to the said property which is pending adjudication before Shri S.K. Kaul, Sole Arbitrator appointed by NBCC in terms of Agreement dated 9th Dec, 1995 and is now fixed for final arguments. The claim of NBCC is for an amount of Rs.288 Lacs.",
+   "Central Bank of India has also claimed some amount in a suit filed before the Hon'ble Bombay High Court.",
+   "Punjab and Sind Bank had filed recovery proceedings in the year 2000 before the Debt Recovery Tribunal for Rs. 1,217 Lacs.",
+   "Dispute with NBCC Ltd regarding claim of Rs 288.29 lacs pending in arbitration since 1995",
+   "Arbitration award given in FY 2020-21: NBCC awarded Rs 41.06 lacs, DCM awarded Rs 78.97 lacs with 10% interest. Both parties filed objections in Delhi High Court (NBCC in Dec 2020, DCM not yet listed)",
+   "RBI appeal against Appellate Authority order pending in Delhi High Court regarding rejection of NBFC Certificate of Registration",
+   "Fresh Restructuring Scheme filed before Hon'ble Delhi High Court on 24th September 2004, pending approval",
+   "One-Man Committee appointed by Hon'ble High Court of Delhi on 3rd September 2015, report submitted 22nd April 2016, recommendations accepted 10th August 2017",
+   "Mr. Laxmi Kant Gaur appointed as One-Man Committee on 29th July 2021 in place of Justice Anil Kumar",
+   "Company filed Fresh Scheme of Arrangement before Hon'ble Delhi High Court on 24th September 2004 for reorganization of share capital and compromise with creditors",
+   "Justice Anil Kumar appointed as One Man Committee vide order dated 3rd September 2015",
+   "Hon'ble High Court of Delhi accepted One Man Committee recommendations on 10th August 2017",
+   "Building under dispute with NBCC",
+   "Deposit of Rs 1,950.00 lacs with Hon'ble Delhi High Court by promoter DCM Services Ltd",
+   "Application before Hon'ble Company Law Board on 22nd July 2004 for fresh repayment schedule for fixed depositors, debenture-holders and other creditors",
+   "Central Bank of India (debenture trustee) filed suit for recovery of Rs 4,421.78 lacs in Bombay High Court, stayed by Delhi High Court",
+   "Scheme of arrangement and restructuring pending before Hon'ble Delhi High Court",
+   "Disputes pending between NBCC and the Petitioner Company with regard to the NBCC property which is pending adjudication before Shri S.K. Kaul, Sole Arbitrator appointed by NBCC in terms of Agreement dated 9th Dec, 1995 and is now fixed for final arguments. The claim of NBCC is for an amount of Rs 288.00 lacs.",
+   "Claim of MS Shoes arbitration award* 513.00 lacs (not active as at March 31, 2026).",
+   "The company moved an application before the Hon'ble Company Law Board, New Delhi on 22nd July 2004 under Regulation 44 of the Company Law Regulations, 1991 proposing a fresh repayment schedule to fixed depositors of the Company.",
+   "The Hon'ble Delhi High Court did not approve the company's first scheme filed in May 2000, though approved by the secured and unsecured creditors in their respective meetings convened pursuant to the orders of the Hon'ble Court, yet the Hon'ble Court did not accord sanction to the scheme on technical grounds. An application for review had been filed before the Hon'ble Delhi High Court on 30th May 2003, which is not yet to be listed for hearing and which is hereinafter, wherever applicable, referred to as the \"Old scheme under review\".",
+   "The company filed a fresh Scheme of Arrangement for the reorganization of the share capital of the company and for compromise with the secured and unsecured creditors of the company, hereinafter referred to as the \"Fresh Restructuring Scheme\" before the Hon'ble Delhi High Court at New Delhi on 24th September 2004.",
+   "Dispute with builder M/s NBCC Ltd. regarding claim of Rs. 288.30 lacs pending in arbitration.",
+   "Arbitration award between NBCC Ltd. and DCM Financial Services Limited - both parties filed objections in Delhi High Court.",
+   "Punjab & Sind Bank filed recovery proceedings in year 2000 before Debt Recovery Tribunal for Rs. 1,217 lacs.",
+   "Central Bank of India claimed some amount in a suit filed before Hon'ble Bombay High Court.",
+   "RBI preferred an appeal before Hon'ble Delhi High Court against order of appellate authority regarding rejection of CoR."
+  ],
+  "people": {
+   "key_management": [
+    {
+     "name": "Mrs. Nidhi Deveshwar",
+     "role": "Chairperson & Whole-time Director"
+    },
+    {
+     "name": "Ms. Somali Trivedi",
+     "role": "Company Secretary & Chief Financial Officer"
+    },
+    {
+     "name": "Ms. Nidhi Deveshwar",
+     "role": "Wholetime Director"
+    },
+    {
+     "name": "Ms. Somali Trivedi",
+     "role": "Company Secretary & CFO"
+    },
+    {
+     "name": "Mr. Vikram Dogra",
+     "role": "Vice President"
+    },
+    {
+     "name": "Mrs. Nidhi Deveshwar",
+     "role": "Chairperson & Whole time Director"
+    },
+    {
+     "name": "Mrs. Somali Trivedi",
+     "role": "Company Secretary & CFO"
+    },
+    {
+     "name": "Mr. Vikram Dogra",
+     "role": "Vice President - Operations"
+    },
+    {
+     "name": "Mr. Ajit Kumar",
+     "role": "Executive Accounts"
+    },
+    {
+     "name": "Mr. Rajender Prasad",
+     "role": "Accounts Assistant"
+    },
+    {
+     "name": "Mr. Hari Bahadur",
+     "role": "Office Assistant"
+    },
+    {
+     "name": "Nidhi Deveshwar",
+     "role": "Chairperson & Whole-Time Director (DIN: 09505480)"
+    },
+    {
+     "name": "Somali Trivedi",
+     "role": "Chief Financial Officer"
+    },
+    {
+     "name": "Nidhi Deveshwar",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Richa Kalra",
+     "role": "Director"
+    },
+    {
+     "name": "Somali Trivedi",
+     "role": "Company Secretary"
+    },
+    {
+     "name": "Mrs. Nidhi Deveshwar",
+     "role": "Whole Time Director"
+    },
+    {
+     "name": "Ms. Richa Kathuria",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Kaushal Kashyap",
+     "role": "Non-Executive Director"
+    },
+    {
+     "name": "Mr. Sanjay Sahni",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Ms. Ruchi Chordia",
+     "role": "Independent Director"
+    },
+    {
+     "name": "Mr. Honey Agarwal",
+     "role": "Independent Director (appointed w.e.f. 30.08.2024)"
+    },
+    {
+     "name": "Nidhi Deveshwar",
+     "role": "Whole Time Director (DIN: 09505480)"
+    },
+    {
+     "name": "Richa Kalra",
+     "role": "Director (DIN: 07632571)"
+    },
+    {
+     "name": "Somali Trivedi",
+     "role": "Company Secretary (M.No. A-47631)"
+    },
+    {
+     "name": "Mrs. Nidhi Deveshwar",
+     "role": "Whole time Director"
+    },
+    {
+     "name": "Mrs. Somali Tiwari",
+     "role": "Company Secretary and CFO"
+    }
+   ],
+   "employees": 6
+  },
+  "other_notable": [
+   "No dividend declared for FY 2025-26 due to losses",
+   "No change in share capital during FY 2025-26",
+   "Authorised Capital: Rs. 65,00,00,000 (6,50,00,000 Equity Shares of Rs.10/- each)",
+   "Paid-up share capital: Rs. 221,250,540 (22,125,054 Equity Shares of Rs.10/- each)",
+   "Financial statements prepared as per Indian Accounting Standards (IND-AS)",
+   "No deposits accepted during FY 2025-26 under Section 73 of Companies Act, 2013",
+   "35th AGM scheduled for September 24, 2026 at 01:00 P.M. at Sarita Sadan, New Delhi",
+   "Register of Members and Share Transfer Books closed from September 19, 2026 to September 24, 2026",
+   "E-voting period: September 21, 2026 (09:00 A.M.) to September 23, 2026 (05:00 P.M.)",
+   "Cut-off date for e-voting: September 18, 2026",
+   "Scrutinizer: M/s. Jain P & Associates, Practicing Company Secretaries",
+   "Registrar & Share Transfer Agent: MCS Share Transfer Agent Limited",
+   "Annual Return for FY ended 31st March 2026 available at https://dfslonline.in/mgt.html",
+   "11 Board Meetings held during FY 2025-26; dates: 24.04.2025, 29.05.2025, 14.07.2025, 08.08.2025, 30.08.2025, 15.10.2025, 12.11.2025, 08.12.2025, 05.01.2026, 09.02.2026, 13.03.2026.",
+   "Separate meeting of Independent Directors held on March 09, 2026.",
+   "Audit Committee composition as at March 31, 2026: Mr. Sanjay Sahni (Chairperson), Mrs. Nidhi Deveshwar, Ms. Richa Kathuria.",
+   "Nomination & Remuneration Committee composition as at March 31, 2026: Ms. Honey Agarwal (Chairperson), Ms. Richa Kathuria, Mr. Sanjay Sahni.",
+   "Stakeholders' Relationship Committee composition as at March 31, 2026: Ms. Honey Agarwal (Chairperson), Mrs. Nidhi Deveshwar, Ms. Richa Kathuria.",
+   "Board annual evaluation carried out per criteria/framework by Nomination & Remuneration Committee; evaluation parameters included education, knowledge, experience, expertise, skills, behavior, leadership qualities, engagement, independence of judgment, decision making ability.",
+   "Board Diversity policy formalized by Nomination and Remuneration Committee.",
+   "Statutory Auditors appointed at EGM on January 20, 2023 for 5 consecutive years till conclusion of 36th AGM for FY ending March 31, 2027.",
+   "Secretarial Auditor: M/s. Jain P & Associates, Company Secretaries appointed for 5 consecutive years from FY 2025-26 to 2029-30; Secretarial Audit for FY 2025-26 conducted by Ms. Preeti Mittal.",
+   "Internal Auditor: M/s. STVG & Co., Chartered Accountants.",
+   "Cost Auditor not required as Company does not fall under criteria under Section 148(1).",
+   "No fraud reported by Statutory Auditors under Section 143(12).",
+   "No material related party transactions during FY 2025-26; all transactions on arm's length basis reported in Form AOC-2 (Annexure-B).",
+   "No material changes and commitments affecting financial position between end of FY and date of report.",
+   "No change in nature of business during the year.",
+   "No material orders passed by regulators/courts/tribunals impacting going concern status.",
+   "No applications or proceedings under Insolvency and Bankruptcy Code, 2016 during FY 2025-26 or as on date of report.",
+   "No one-time settlement of loans from banks/financial institutions during the year.",
+   "Conservation of energy, technology absorption, foreign exchange earnings and outgo: all NIL.",
+   "Risk Management Committee provisions not applicable; company maintains risk check in normal course; no element of risk threatening existence identified.",
+   "CSR provisions not applicable as Company does not meet criteria under Section 135.",
+   "Vigil Mechanism/Whistle Blower Policy in place; no protected disclosures received during the year; policy accessible at http://dfslonline.in/policy/5.pdf",
+   "Internal Complaints Committee constituted under Sexual Harassment Act; no complaints filed during the year.",
+   "Corporate Governance Report forms integral part of Annual Report.",
+   "Internal Financial Control system assessed as adequate and operating effectively as on 31st March 2026 by Statutory Auditors.",
+   "Personnel relations remained cordial; 6 permanent employees on rolls.",
+   "Remuneration details: Ms. Nidhi Deveshwar (Wholetime Director) ratio to median remuneration 0.52:1; remuneration Rs. 4,03,800, change -0.05%. Ms. Somali Trivedi (CS & CFO) remuneration Rs. 8,36,880, increase 16.72%. Mr. Vikram Dogra (VP) remuneration Rs. 29,95,422, decrease -9.04%. Median remuneration increase 14.16%. Average percentile increase in salaries of non-managerial employees 10.08%; managerial remuneration increase Nil.",
+   "Remuneration Policy accessible at https://dfslonline.in/policy/17.pdf",
+   "Familiarization Programmes for Independent Directors policy accessible at https://dfslonline.in/policy/9.pdf",
+   "Shares listed at BSE, NSE, and Calcutta Stock Exchange; Annual Listing Fees for FY 2026-27 paid.",
+   "Code of Conduct for Board Members and Senior Management laid down per SEBI LODR.",
+   "Code of Practices for Fair Disclosure of UPSI and Code of Conduct for Designated Persons per SEBI PIT Regulations; all Board Members, KMPs, Senior Management affirmed compliance.",
+   "Regulation 32 disclosure not applicable.",
+   "Director's Responsibility Statement included per Section 134(3).",
+   "Credit Rating disclosure not applicable.",
+   "Maternity Benefit Act compliance: no requirement during the year.",
+   "Special window for transfer and dematerialisation of physical securities per SEBI Circular dated January 30, 2026 open from February 05, 2026 to February 04, 2027.",
+   "No transactions requiring disclosure for: issue of equity shares with differential rights, issue of shares to employees under any scheme, fraud reported by auditors, scheme for purchase of own shares by employees, payment of remuneration from holding/subsidiary companies to Managing Director.",
+   "No contracts or arrangements not at arm's length basis",
+   "Material related party transactions at arm's length basis referenced as per Annexure-1",
+   "Secretarial audit by Jain P & Associates confirms compliance with statutory provisions except noted litigation matters",
+   "Secretarial compliance report confirms compliance with SEBI regulations, no actions by SEBI or stock exchanges",
+   "Certificate of non-disqualification of directors issued",
+   "Company has adopted 12 governance policies including Code of Conduct, Related Party Transactions, Whistle-blower, POSH, etc.",
+   "Statutory auditor: M/s. V Sahai Tripathi & Co., Internal auditor: M/s. STVG & Co.",
+   "Board comprises 6 directors: 1 Whole time Director, 1 Non-Executive Director, 4 Independent Directors",
+   "Board composition as on 31st March 2026: Six Directors comprising One Whole Time Director, One Non-Executive Director and Four Non-Executive Independent Directors."
+  ],
+  "related_party": [
+   {
+    "party": "Related parties (various)",
+    "nature": "Balances payable to related parties",
+    "amount_cr": null
+   },
+   {
+    "party": "DCM Services Ltd",
+    "nature": "Significant Influence - ICD payable and equity shares to be issued",
+    "amount_cr": 9.2194
+   },
+   {
+    "party": "DCM International Ltd",
+    "nature": "Significant Influence - balance payable",
+    "amount_cr": 2.8157
+   },
+   {
+    "party": "DCM Anubhavi Marketing Pvt. Ltd.",
+    "nature": "Significant Influence - balance payable",
+    "amount_cr": 0.3184
+   },
+   {
+    "party": "Global IT Options Ltd.",
+    "nature": "Subsidiary Company - services procured",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "Mrs. Nidhi Deveshwar",
+    "nature": "Key Management Personnel (Whole time Director) - remuneration",
+    "amount_cr": 0.04038
+   },
+   {
+    "party": "Mrs. Somali Trivedi",
+    "nature": "Key Management Personnel (Company Secretary & CFO) - remuneration",
+    "amount_cr": 0.083688
+   },
+   {
+    "party": "Directors",
+    "nature": "Directors Sitting Fees",
+    "amount_cr": 0.125
+   },
+   {
+    "party": "DCM Services Ltd",
+    "nature": "Inter-corporate deposit payable (current borrowings)",
+    "amount_cr": 7.3924
+   },
+   {
+    "party": "DCM Services Ltd",
+    "nature": "Term loan payable (non-current borrowings)",
+    "amount_cr": 1.827
+   },
+   {
+    "party": "DCM International Limited",
+    "nature": "Inter-corporate deposit payable (current borrowings)",
+    "amount_cr": 2.8157
+   },
+   {
+    "party": "DCM Anubhavi Market Private Limited",
+    "nature": "Inter-corporate deposit payable (current borrowings)",
+    "amount_cr": 0.3184
+   },
+   {
+    "party": "DCM Services Ltd",
+    "nature": "ICD payable",
+    "amount_cr": 7.3924
+   },
+   {
+    "party": "DCM Services Ltd",
+    "nature": "Equity shares to be issued",
+    "amount_cr": 1.827
+   },
+   {
+    "party": "DCM International Limited",
+    "nature": "Balance payable",
+    "amount_cr": 2.8157
+   },
+   {
+    "party": "DCM Anubhavi Marketing Private Limited",
+    "nature": "Balance payable",
+    "amount_cr": 0.3184
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Remuneration",
+    "amount_cr": 0.1241
+   },
+   {
+    "party": "Key Management Personnel",
+    "nature": "Director Sitting Fees",
+    "amount_cr": 0.125
+   },
+   {
+    "party": "Subsidiary - Global IT Options Limited",
+    "nature": "Services procured",
+    "amount_cr": 0.005
+   },
+   {
+    "party": "DCM Services Limited",
+    "nature": "Significant Influence Exist",
+    "amount_cr": 7.3924
+   },
+   {
+    "party": "DCM International Limited",
+    "nature": "Significant Influence Exist",
+    "amount_cr": 2.8157
+   },
+   {
+    "party": "DCM Anubhavi Marketing Private Limited",
+    "nature": "Significant Influence Exist",
+    "amount_cr": 0.3184
+   },
+   {
+    "party": "Mrs. Nidhi Deveshwar",
+    "nature": "Key Management Personnel - Whole time Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Mrs. Somali Tiwari",
+    "nature": "Key Management Personnel - Company Secretary and CFO",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Richa Kathuria",
+    "nature": "Independent Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Kaushal Kashyap",
+    "nature": "Non-Executive Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Sanjay Sahni",
+    "nature": "Independent Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Ms. Ruchi Chordia",
+    "nature": "Independent Director",
+    "amount_cr": null
+   },
+   {
+    "party": "Mr. Honey Agarwal",
+    "nature": "Independent Director (appointed w.e.f. 30.08.2024)",
+    "amount_cr": null
+   }
+  ],
+  "borrowings": [
+   {
+    "lender_or_type": "Debenture holders (including 'B' series debentures)",
+    "amount_cr": 20.1498,
+    "note": "Debenture Redemption Reserve of Rs. 2,014.98 Lakhs not created due to insufficient profits; repayments being made per High Court order and One Man Committee recommendations."
+   },
+   {
+    "lender_or_type": "Fixed Depositors",
+    "amount_cr": null,
+    "note": "Interest of Rs. 1,448 Lakhs payable under Phase-2 of One Man Committee scheme; waived further interest payment; repayments commenced."
+   },
+   {
+    "lender_or_type": "Banks and financial institutions (secured borrowings)",
+    "amount_cr": null,
+    "note": "Value of assets charged as security may have been depleted; depletion not ascertained."
+   },
+   {
+    "lender_or_type": "DCM Services Ltd - ICD payable",
+    "amount_cr": 7.3924,
+    "note": "Subject to confirmation and reconciliation as at March 31, 2026"
+   },
+   {
+    "lender_or_type": "Debentures and Fixed Deposits",
+    "amount_cr": null,
+    "note": "Interest of Rs 1,683 Lakhs payable under One Man Committee scheme not provided in financial statements; Rs 7.35 lakhs paid during current year but accounted as finance cost instead of prior period item"
+   },
+   {
+    "lender_or_type": "Financial institutions, banks, debenture holders, Inter Corporate Deposits",
+    "amount_cr": null,
+    "note": "Defaulted in repayment; matter sub-judice with Hon'ble Delhi High Court under Fresh Restructuring Scheme filed 24th September 2004"
+   },
+   {
+    "lender_or_type": "SBI Home Finance Ltd",
+    "amount_cr": 0.25,
+    "note": "Unsecured term loan; Rs 25 lacs to be settled by allotment of shares at Rs 30/share (face value Rs 10 + premium Rs 20) per Fresh Restructuring Scheme and One Man Committee decision"
+   },
+   {
+    "lender_or_type": "DCM Services Ltd",
+    "amount_cr": 1.827,
+    "note": "Unsecured term loan (non-current); acquired Pressman Leasing loan (55% of Rs 410 lacs = Rs 226 lacs) and fully paid in earlier years"
+   },
+   {
+    "lender_or_type": "Debentures (Secured) - A Series and B Series",
+    "amount_cr": 16.0281,
+    "note": "Secured against mortgage/hypothecation/charge on assets; B Series secured against land/premises at Pirangut, Pune; total allotted Rs 2,818.04 lacs; Rs 1,216.73 lacs redeemed till March 31, 2026; balance Rs 1,602.81 lacs shown as current borrowings; interest provision not made (approx Rs 4,822.30 lacs up to March 31, 2017); maturity interest restricted to Rs 235 lacs payable in Phase 2 per One Man Committee"
+   },
+   {
+    "lender_or_type": "Fixed Deposits from Public",
+    "amount_cr": 40.6699,
+    "note": "Unsecured; principal outstanding Rs 5,631 lacs as at Dec 31, 2015 per One Man Committee; maturity interest Rs 1,448 lacs payable in Phase 2; repayments ongoing per scheme; entire balance shown as current borrowings"
+   },
+   {
+    "lender_or_type": "Inter-Corporate Deposits (Related Parties)",
+    "amount_cr": 10.5265,
+    "note": "Payable to DCM International Ltd (Rs 281.57 lacs), DCM Services Ltd (Rs 739.24 lacs), DCM Anubhavi Market Pvt Ltd (Rs 31.84 lacs); 100% principal being paid to verified claimants"
+   },
+   {
+    "lender_or_type": "Inter-Corporate Deposits (Others)",
+    "amount_cr": 0,
+    "note": "Settled at Rs 27.17 lacs per One Man Committee; interest waived; Rs 13.65 lacs written back (Sushma Finance, time-barred); Rs 13.51 lacs paid (Khandelwal Cable Ltd); no amount pending as on March 31, 2026"
+   },
+   {
+    "lender_or_type": "Punjab & Sind Bank",
+    "amount_cr": 8.03,
+    "note": "As per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "Indusind Bank",
+    "amount_cr": 5.77,
+    "note": "As per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "Pressman Limited",
+    "amount_cr": 4.1,
+    "note": "As per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "SBI Homes Finance Ltd",
+    "amount_cr": 0.25,
+    "note": "To be paid in shares, as per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "SIDBI",
+    "amount_cr": 0.36,
+    "note": "As per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "ICD & BRD lenders",
+    "amount_cr": 0.27,
+    "note": "As per one-man committee as at 31st December 2015"
+   },
+   {
+    "lender_or_type": "Total Borrowings (measured at amortised cost)",
+    "amount_cr": 69.3015,
+    "note": "Includes borrowings from banks, debenture-holders & financial institutions under restructuring scheme"
+   },
+   {
+    "lender_or_type": "Punjab & Sind Bank",
+    "amount_cr": 8.03,
+    "note": "Principal outstanding as per One-Man Committee as at 31st December 2015: Rs 803.00 lacs. Payment schedule: Phase-I 70% (Rs 562 lacs), Phase-II 30% (Rs 241 lacs). Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "IndusInd Bank",
+    "amount_cr": 5.77,
+    "note": "Principal outstanding as per One-Man Committee as at 31st December 2015: Rs 577.00 lacs. Payment schedule: Phase-I 70% (Rs 404 lacs), Phase-II 30% (Rs 173 lacs). Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "SBI Home Finance Ltd",
+    "amount_cr": 0.25,
+    "note": "Principal outstanding Rs 25.00 lacs to be discharged by issuance of equity shares at face value Rs 10/- at premium Rs 20/- per share within two years from effective date of scheme."
+   },
+   {
+    "lender_or_type": "Pressman Leasing",
+    "amount_cr": 4.1,
+    "note": "Principal outstanding Rs 410.00 lacs. Payment: 55% cash (Phase-I Rs 158 lacs, Phase-II Rs 68 lacs), 45% equity shares (Rs 184 lacs). Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "DCM Services Ltd (Promoter)",
+    "amount_cr": 7.3924,
+    "note": "ICD payable, balance subject to confirmation and reconciliation"
+   },
+   {
+    "lender_or_type": "Non-current borrowings",
+    "amount_cr": 2.077,
+    "note": "As at 31.03.2026"
+   },
+   {
+    "lender_or_type": "Current borrowings",
+    "amount_cr": 67.2246,
+    "note": "As at 31.03.2026"
+   },
+   {
+    "lender_or_type": "SBI Home Finance Ltd",
+    "amount_cr": 0.25,
+    "note": "Unsecured term loan, to be settled by allotment of shares worth Rs 25 lacs at Rs 30/share per court scheme"
+   },
+   {
+    "lender_or_type": "DCM Services Ltd",
+    "amount_cr": 1.827,
+    "note": "Unsecured term loan (non-current), acquired Pressman Leasing debt"
+   },
+   {
+    "lender_or_type": "Debentures (A Series and B Series)",
+    "amount_cr": 16.0281,
+    "note": "Secured debentures, B Series secured by land at Pune; maturity interest restricted to Rs 235 lacs per scheme; entire balance shown as current due to ongoing KYC and repayments"
+   },
+   {
+    "lender_or_type": "Fixed Deposits from Public",
+    "amount_cr": 40.67,
+    "note": "Unsecured, maturity interest Rs 1,448 lacs not recorded in books; entire balance shown as current"
+   },
+   {
+    "lender_or_type": "Inter-corporate deposits (related parties)",
+    "amount_cr": 10.5265,
+    "note": "From DCM Services Ltd, DCM International Ltd, DCM Anubhavi Market Pvt Ltd"
+   },
+   {
+    "lender_or_type": "Debenture-holders",
+    "amount_cr": 27.88,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. Payment schedule: Phase-I Rs 1,956.00 Lacs, Phase-II Rs 832.00 Lacs. Payments being made from FY 2017-18 to 2025-26."
+   },
+   {
+    "lender_or_type": "Fixed Depositors",
+    "amount_cr": 70.79,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. Payment schedule: Phase-I Rs 4,082.00 Lacs, Phase-II Rs 2,997.00 Lacs. Payments being made from FY 2017-18 to 2025-26."
+   },
+   {
+    "lender_or_type": "Small Industries Development Bank of India (SIDBI)",
+    "amount_cr": 0.363,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. Payment schedule: Phase-I Rs 25.41 Lac, Phase-II Rs 10.89 Lac. Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "Punjab & Sind Bank (PSB)",
+    "amount_cr": 8.03,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. Payment schedule: Phase-I Rs 562.00 Lacs, Phase-II Rs 241.00 Lacs. Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "IndusInd Bank",
+    "amount_cr": 5.77,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. Payment schedule: Phase-I Rs 404.00 Lacs, Phase-II Rs 173.00 Lacs. Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "SBI Home Finance Ltd",
+    "amount_cr": 0.25,
+    "note": "Amount due as decided by one-man committee as at 31st December, 2015. To be discharged by issuance of Equity shares worth Rs 25.00 Lacs within two years from effective date of scheme as per SEBI guidelines."
+   },
+   {
+    "lender_or_type": "Pressman Leasing",
+    "amount_cr": 4.1,
+    "note": "Amount due as decided by one-man committee. Payment schedule: Cash - Phase-I Rs 158.00 Lacs, Phase-II Rs 68.00 Lacs; Equity shares - Rs 184.00 Lacs. Payment made during FY 2017-18 and 2019-20."
+   },
+   {
+    "lender_or_type": "DCM Services Limited",
+    "amount_cr": 7.3924,
+    "note": "ICD payable, balance outstanding subject to confirmation and reconciliation as at March 31, 2026."
+   },
+   {
+    "lender_or_type": "DCM International Limited",
+    "amount_cr": 2.8157,
+    "note": "Balance outstanding subject to confirmation and reconciliation as at March 31, 2026."
+   },
+   {
+    "lender_or_type": "DCM Anubhavi Marketing Private Limited",
+    "amount_cr": 0.3184,
+    "note": "Balance outstanding subject to confirmation and reconciliation as at March 31, 2026."
+   }
+  ],
+  "risks": [
+   "RBI winding up petition (CP No 296/2004) with court order restricting bank account operations still in force",
+   "Pending payment to debenture holders from 1995-96 private placement",
+   "Pending payment to deposit holders under court-approved scheme from 2017",
+   "Balances payable to related parties subject to confirmation and reconciliation",
+   "Material uncertainty exists that may cast significant doubt on the Company's ability to continue as a going concern",
+   "Company is not carrying on any business and its Certificate of Registration as NBFC was rejected by RBI in 2004",
+   "Revival completely dependent on successful implementation of One Man Committee scheme and realizability of funds from disposal of fixed assets under dispute with NBCC",
+   "Current liabilities exceeded total assets by Rs. 4,800.17 lakhs as on 31st March 2026",
+   "Accumulated loss of Rs. 9,336.30 lakhs as on 31st March 2026",
+   "Total liabilities exceeded total assets by Rs. 5,114.08 lakhs as on 31st March 2026",
+   "Intensifying regulatory & compliance pressures from RBI",
+   "Funding costs & liquidity squeeze due to lack of access to low-cost CASA deposits",
+   "Asset quality & credit stress in microfinance and unsecured lending segments",
+   "Adapting to digital ecosystems requires significant capital and tech investment",
+   "Material uncertainty exists that may cast significant doubt on the Company's ability to continue as a going concern due to rejection of NBFC license, sub-judice borrowings, and cash losses",
+   "Company has not established internal financial controls over financial reporting as per ICAI criteria",
+   "Defaulted in repayment of dues to financial institutions, banks, debenture holders, and ICDs; matter sub-judice with Hon'ble Delhi High Court",
+   "Unpaid matured public fixed deposits of Rs 4,066.99 Lakhs and unpaid matured debentures of Rs 1,602.81 Lakhs outstanding as at March 31, 2026",
+   "Value of assets charged in favour of debentures may have been depleted over time; shortfall, if any, makes liability unsecured",
+   "Supplementary trust deed for debenture repayment plans not prepared by trustees",
+   "Provision of interest on debentures up to 31st March 2017 not provided (approx Rs 4,822.30 lacs) due to Fresh Restructuring Scheme",
+   "Central Bank of India suit for recovery of Rs 4,421.78 lacs (including interest Rs 1,553.61 lacs) stayed by Delhi High Court; no provision made",
+   "Fixed deposit interest liability not provided (approx Rs 11,588.66 lacs up to March 31, 2017) due to Fresh Restructuring Scheme",
+   "Certain fixed deposits appear suspect due to lack of identification or claims; payment only after evidence established",
+   "Inter-corporate deposit interest liability not provided (approx Rs 54.33 lacs up to March 31, 2017) due to Fresh Restructuring Scheme",
+   "Bank balances subject to confirmation and not operative; provision for impairment of Rs 7.75 lacs made",
+   "Restricted bank balances and deposits cannot be operated without prior approval of Hon'ble Delhi High Court",
+   "Non-current assets held for sale subject to final approval and confirmation by Hon'ble Delhi High Court",
+   "Debenture and fixed deposit repayments dependent on KYC norms and claim verification; entire balances shown as current borrowings",
+   "If the fresh restructuring scheme is not accepted and cannot be implemented for any reason the total liability before the proposed restructuring scheme including those for which no provision has been made and has been quantified under appropriate heads, shall become payable.",
+   "Company is not carrying on any business operations",
+   "Current liabilities exceeded total assets by Rs 4,800.17 lacs as of March 31, 2026",
+   "Accumulated loss of Rs 9,336.30 lacs as of March 31, 2026",
+   "Total liabilities exceeded total assets by Rs 5,114.08 lacs as of March 31, 2026",
+   "RBI rejected Certificate of Registration as NBFC in 2004",
+   "Balance confirmations not received for various assets and liabilities",
+   "Time barred debts under Limitations Act not separately ascertained and written off",
+   "Value of assets charged as security may have been depleted over time",
+   "Interest of Rs 1,683 Lakhs on Debentures and Fixed Deposits not provided in financial statements",
+   "Debenture redemption reserve of Rs 2,014.98 Lakhs not created due to insufficient profits",
+   "Revival dependent on court-supervised restructuring scheme and One Man Committee implementation",
+   "Realisability of funds from disposal of fixed assets, especially Building under dispute with NBCC",
+   "No clarity on whether Rs 1,950 lacs deposited with Delhi High Court by promoter DCM Services Ltd would require share issuance, refund, or create no liability",
+   "Company has not established internal financial controls over financial reporting per ICAI criteria",
+   "CARO qualifications in paragraphs 3(v), 3(ix)(a), 3(ix)(d), 3(ix)(e), 3(xiv)(a), 3(xvii) and 3(xix)",
+   "Provision for interest on debentures and fixed deposits not made due to pending restructuring scheme",
+   "Value of assets charged to debenture holders may have depleted, unsecured to extent of shortfall",
+   "Bank balances subject to confirmation and not operative, with impairment provisions",
+   "Rent receivable and dividend receivable fully provided for as doubtful",
+   "Litigation with Central Bank of India (debenture trustee) pending in Bombay High Court, stayed by Delhi High Court",
+   "Fixed deposits contain suspect deposits lacking identification or claims",
+   "Inter-corporate deposits interest not provided, some written back as time-barred",
+   "Non-current assets held for sale subject to Delhi High Court approval",
+   "If the Fresh Restructuring Scheme is not accepted and cannot be implemented for any reason the total liability before the proposed restructuring scheme including those for which no provision has been made and has been quantified under appropriate heads, shall become payable.",
+   "The Company's application to RBI for Certificate of Registration (CoR) as a NBFC had been rejected by the RBI in year 2004.",
+   "The Company is not carrying on any business as to comply with the directives of the Reserve Bank of India the company ceased to accept deposits from September 1997.",
+   "The Company's current liabilities exceeded its total assets by Rs 4,800.17 lacs as on 31st March, 2026.",
+   "The accumulated loss as on 31st March, 2026 stands to Rs. 9,336.30 lacs.",
+   "The Company's total liabilities exceeded its total assets by Rs. 5,114.08 lacs as on 31st March, 2026.",
+   "Balance confirmation of security deposits provided, trade receivables, some bank balances, FD balances with bank, rent receivables, other advances, borrowings, balances payable to related parties and other receivables and payables have not been received from the parties/persons concerned.",
+   "Time barred debts under the Limitations Act have not been separately ascertained and written off or provided for."
+  ],
+  "outlook": [
+   {
+    "statement": "The NBFC outlook for FY 2025-26 projects a steady loan book growth of 15-17%. While softer borrowing costs from RBI rate cuts will help margins, elevated credit costs and stricter RBI regulations will weigh on near-term profitability, prompting lenders to focus on secured segments like gold and property loans.",
+    "period": "FY 2025-26"
+   },
+   {
+    "statement": "The Company contends that the Scheme of One Man Committee shall be implemented in full and other aspect of fresh restructuring scheme such issuance of equity to SBI Home Finance Limited and Pressman Leasing, would be approved/decided upon by the Hon'ble Delhi High Court and accordingly the decision on revival of Company would be taken by Hon'ble Delhi High Court.",
+    "period": "foreseeable future"
+   },
+   {
+    "statement": "Adequate finances and opportunities would be available in the foreseeable future to enable the company to start operating on a profitable basis.",
+    "period": "foreseeable future"
+   },
+   {
+    "statement": "Continuity and revival of the Company is completely dependent on successful implementation of scheme of One Man Committee including Schedule of payments under Phase-I and Phase-II and realisability of funds from disposal of Fixed Assets especially Building under dispute with NBCC.",
+    "period": "ongoing"
+   },
+   {
+    "statement": "The Company contends that the Scheme of One Man Committee shall be implemented in full and other aspect of fresh restructuring scheme such issuance of equity to SBI HOME FINANCE LTD and Pressman Leasing would be approved/decided upon by the Hon'ble Delhi High Court and accordingly the decision on revival of Company would be taken by Hon'ble Delhi High Court and Adequate finances and opportunities would be available in the foreseeable future to enable the company to start operating on a profitable basis.",
+    "period": "foreseeable future"
+   }
+  ],
+  "dividend_per_share": 0
+ }
+}
